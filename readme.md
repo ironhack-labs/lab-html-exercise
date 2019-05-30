@@ -46,8 +46,7 @@ The `starter-code` folder contains the `index.html` file with all the necessary 
 
 It might seem like a joke, but this is our goal in this iteration:
 
-
-![](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_06db77fa3374dba38c0755b969a96e9d.gif)
+![gif](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_06db77fa3374dba38c0755b969a96e9d.gif)
 
 
 <br><br>
@@ -72,7 +71,7 @@ We could try to represent this part of the website with the following:
 
 ```htmlmixed
 <header>
-      <div>
+    <div>
         <div>
           <img class="blackHeart" src="LINK TO IMAGE GOES HERE" alt="black heart">
           <span> Nifty Penguin Magic </span>
@@ -87,12 +86,12 @@ We could try to represent this part of the website with the following:
             <li> <a href="#"> Support </a> </li>
           </ul>
         </nav>
-      </div>
+    </div>
 
-      <div>
-        <!-- add logo, search bar and buttons (or links and style them as buttons later)        -->
-      </div>
-    </header>
+    <div>
+    <!-- add logo, search bar and buttons (or links and style them as buttons later)        -->
+    </div>
+</header>
 ```
 
 When done, you should get something similar to this:
