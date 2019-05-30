@@ -77,29 +77,29 @@ However, remember, on the image above styles are already applied so our final re
 
 We could try to represent this part of the website with the following:
 
-```htmlmixed
+```html
 <header>
-      <div>
+    <div>
         <div>
-          <img class="blackHeart" src="LINK TO IMAGE GOES HERE" alt="black heart">
-          <span> Nifty Penguin Magic </span>
+            <img class="blackHeart" src="LINK TO IMAGE GOES HERE" alt="black heart">
+            <span> Nifty Penguin Magic </span>
         </div>
         <nav>
-          <ul>
-            <li> <a href="#"> npm Enterprise </a> </li>
-            <li> <a href="#"> Products </a> </li>
-            <li> <a href="#"> Solutions </a> </li>
-            <li> <a href="#"> Resources </a> </li>
-            <li> <a href="#"> Docs </a> </li>
-            <li> <a href="#"> Support </a> </li>
-          </ul>
+            <ul>
+                <li> <a href="#"> npm Enterprise </a> </li>
+                <li> <a href="#"> Products </a> </li>
+                <li> <a href="#"> Solutions </a> </li>
+                <li> <a href="#"> Resources </a> </li>
+                <li> <a href="#"> Docs </a> </li>
+                <li> <a href="#"> Support </a> </li>
+            </ul>
         </nav>
-      </div>
+    </div>
 
-      <div>
-        <!-- add logo, search bar and buttons (or links and style them as buttons later)        -->
-      </div>
-    </header>
+    <div>
+    <!-- add logo, search bar and buttons (or links and style them as buttons later)        -->
+    </div>
+</header>
 ```
 
 When done, you should get something similar to this:
