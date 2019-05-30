@@ -46,11 +46,18 @@ The `starter-code` folder contains the `index.html` file with all the necessary 
 
 It might seem like a joke, but this is our goal in this iteration:
 
-![gif](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_06db77fa3374dba38c0755b969a96e9d.gif)
+<!--
+![](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_06db77fa3374dba38c0755b969a96e9d.gif) -->
+
+![](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_a00f9aadceb92aed72cd6b1158c3fd01.png)
+![](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_abbbad2549a71232f29c725f6ef59731.png)
+![](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_c497a8394cb74b0f576e16c6fd2fb894.png)
 
 
-<br><br>
-The very first step is deciding **how to structure the page and picking the correct *semantic* tags**. In general, picking the right tags will make your job easier in the next step when the time comes to do some styling.
+
+<br>
+
+The very first step is deciding **how to structure the page and picking the correct *semantic* tags**. In general, choosing the right tags will make your job easier in the next step when the time comes to do some styling.
 
 Our recommendation is to try to keep it as simple as possible. Try to identify the different sections, and add `id`'s or `classes` to each `<div>`, `<section>`, `<ul>`, or `<header>` block elements to identify these elements. Here is suggested guideline but you might have something on your mind that is different from this - bring it up.
 
@@ -71,7 +78,7 @@ We could try to represent this part of the website with the following:
 
 ```htmlmixed
 <header>
-    <div>
+      <div>
         <div>
           <img class="blackHeart" src="LINK TO IMAGE GOES HERE" alt="black heart">
           <span> Nifty Penguin Magic </span>
@@ -86,12 +93,12 @@ We could try to represent this part of the website with the following:
             <li> <a href="#"> Support </a> </li>
           </ul>
         </nav>
-    </div>
+      </div>
 
-    <div>
-    <!-- add logo, search bar and buttons (or links and style them as buttons later)        -->
-    </div>
-</header>
+      <div>
+        <!-- add logo, search bar and buttons (or links and style them as buttons later)        -->
+      </div>
+    </header>
 ```
 
 When done, you should get something similar to this:
@@ -188,7 +195,7 @@ nav a {
 }
 ```
 
-*Help*:
+*Useful information*:
 - *form label color*: rgba(0,0,0,.05)
 - *form input color*: rgba(0,0,0,.05)
 - *form button background color*: #fb3e44
@@ -209,7 +216,7 @@ Make sure to use flexbox at any time where you need to position elements on a sp
 
 In this section, as you can see everything is *centered*. You can add some flexbox rules to the *id* you attached to this section such is *display: flex;* and *justify-content: center;*. But this is just the beginning - you still have to set *align-items* and *flex-direction*.
 
-*Help*:
+*Useful information*:
 - suggested height for this section: 600px
 - background color: rgba(232,217,217,.3)
 - "See plans" button background color: #FB3B49
@@ -224,7 +231,7 @@ In this section, as you can see everything is *centered*. You can add some flexb
 
 This section has pretty much the same layout as the previous - some code to be reused :wink:.
 
-*Help*:
+*Useful information*:
 - *heading background color*: rgba(255,204,53,.4)
 - to get the transform of the yellow background in the left-hand direction use: *transform: skew(9deg,0deg);*
 - to get it in the opposite direction of the letters, the way we need it on the page, use: *font-style: italic;*
@@ -239,7 +246,7 @@ Again use a lot of flexbox to get the right position of elements - direction, ju
 
 ![](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_7b69fd57e04d20183daed40e39b2001f.png)
 
-*Help*: 
+*Useful information*: 
 - color of the letters in each heading in this section: #ED1C24
 - "Create an Org" box shadow: 8px 8px 0 rgba(128,83,35,.2)
 - "Create an Org" letters color: white
