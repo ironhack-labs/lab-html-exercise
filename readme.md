@@ -7,8 +7,9 @@
 In this exercise, the goal is to apply as many as possible of the concepts you've just learned:
 
 - when and how to use different HTML tags,
-- how to structure HTML page and add the content to it using *block and inline elements*, and 
-- how to style it.
+- how to structure HTML page and add the content to it using *block and inline elements*, 
+- how to use flexbox to position elements on the page and
+- how to style the page.
 
 ## Getting started
 
