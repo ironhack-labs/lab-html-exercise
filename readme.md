@@ -11,7 +11,7 @@ In this exercise, the goal is to apply as many as possible of the concepts you'v
 - how to use flexbox to position elements on the page and
 - how to style the page.
 
-## Getting started
+## Getting started (and hand in)
 
 Follow these **[guidelines](https://docs.google.com/presentation/d/1I7-9zlELCSTqDevrfEfi_S6bf0BoByqOPqMw6QWUDgc/edit?usp=sharing)** on how to *start and hand in* the exercise so your TAs can check it.
 
@@ -46,9 +46,6 @@ The `starter-code` folder contains the `index.html` file with all the necessary 
 ### Part I - pure HTML (no styles applied)
 
 It might seem like a joke, but this is our goal in this iteration:
-
-<!--
-![](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_06db77fa3374dba38c0755b969a96e9d.gif) -->
 
 ![](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_a00f9aadceb92aed72cd6b1158c3fd01.png)
 ![](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_abbbad2549a71232f29c725f6ef59731.png)
@@ -257,6 +254,6 @@ Again use a lot of flexbox to get the right position of elements - direction, ju
 
 In this exercise, you've built a clone of a piece of the npm home page. This site is very complexed so if you managed to make it look anything like the original, good job! :trophy:
 
-This concludes the HTML / CSS module. Next up is JavaScript, so get some rest, drink some coffee, and get ready to learn the muscles that make things move on a web page.
+This concludes the HTML / CSS module. We are proud of you! 
 
-We are proud of you! Happy coding! :heart: 
+*The Ironhack team :heart:* 
