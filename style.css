@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+/*** Global ***/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins';
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 75px 0;
+}
+
+.center {
+  margin: 0 auto;
+  text-align: center;
+}
+
+/*** Header ***/
+.header > div {
+  padding: 10px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+}
+
+.header img {
+  width: 20px;
+  margin-right: 1rem;
+}
+
+/*** Navigation ***/
+.nav-bar {
+  width: 600px;
+}
+
+.nav-bar ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-bar li {
+  margin-right: 1rem;
+  flex-grow: 1;
+}
+
+.nav-bar li a {
+  text-decoration: none;
+  color: black;
+  font-family: 'Poppins';
+}
+
+.npm-image {
+  position: relative;
+  margin: 0 20px;
+}
+
+.npm-image img {
+  width: 70px;
+  height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-50%,-50%);
+}
+
+.header form {
+  display: flex;
+  width: 80%;
+}
+
+.search-icon {
+  background-color: rgba(0,0,0,.05);
+}
+
+.search-icon img {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.header form input {
+  background-color: rgba(0,0,0,.05);
+  width: 85%;
+  padding: 8px;
+  border: none;
+  height: 30px;
+  font-size: 14px;
+}
+
+.header form button {
+  background-color: #fb3e44;
+  color: white;
+  width: 80px;
+  padding: 10px;
+  border: none;
+  font-size: 0.8rem;
+}
+
+.header-links {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.header-links a {
+  text-decoration: none;
+  color: black;
+  border: 1px solid #9a9a9a;
+  border-radius: 0;
+  padding: 0.5rem 1rem;
+}
+
+.login a {
+  border: none;
+}
+
+/*** Hero Section ***/
+.hero-section {
+  background-color: rgba(232,217,217,0.3);
+  height: 500px;
+}
+
+.hero-section h1 {
+  font-size: 5rem;
+  margin: 40px 0;
+  text-align: center;
+}
+
+.hero-section article {
+  max-width: 27em;
+}
+
+.hero-section p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.hero-links {
+  padding: 4rem 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-links a {
+  margin: 0 2rem;
+}
+
+.see-plans a {
+  padding: 20px 80px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  background-color: #FB3B49;
+  box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+}
+
+.see-plans a:hover {
+  background-color: red;
+  box-shadow: none;
+  transition: 0.5s;
+}
+
+.join-for-free a {
+  padding: 20px 80px;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  background-color: #ffffff;
+  box-shadow: none;
+  border: 1px solid rgba(138,138,138,.06);
+}
+
+/*** Section 1 ***/
+.section-one {
+  height: 600px;
+}
+
+.section-one img {
+  max-width: 16rem;
+  display: block;
+  margin: 0 auto 40px auto;
+}
+
+.yellow-background {
+  margin-bottom: 2rem;
+}
+
+.relative {
+  position: relative;
+  max-width: 53rem;
+}
+
+.yellow-background:before {
+  content: "";
+  position: absolute;
+  width: 108%;
+  height: 100%;
+  z-index: -1;
+  left: -5%;
+  top: -6%;
+  background-color: rgba(255,204,53,.4);
+  transform: skew(9deg,0deg);
+}
+
+.yellow-background span {
+  font-size: 2.25rem;
+  font-weight: 600;
+}
+
+.section-one article {
+  max-width: 50rem;
+}
+
+/*** Section 2 ***/
+.section-two {
+  margin: 0 auto;
+  width: 80%;
+  padding-top: 0;
+}
+
+.boxes {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.section-two img {
+  height: 2rem;
+}
+
+.box {
+  width: 20%;
+}
+
+.box h3 {
+  margin: 12px 0;
+  color: red;
+}
+
+.bottom-link {
+  margin: 4rem auto;
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.bottom-link a {
+  text-decoration: none;
+  padding: 1.2rem 7rem;
+  text-align: center;
+  color: #ffffff;
+  background-color: #000;
+  box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.bottom-link a:hover {
+  box-shadow: none;
+  background-color: #333;
+}
+
