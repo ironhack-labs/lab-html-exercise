@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Poppins';
+}
+
+h1 {
+  font-size: 78px;
+  font-weight: 700;
+}
+
+p {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+button {
+  font-family: 'Poppins';
+  font-size: 14px;
+}
+
+.blackHeart {
+  width: 20px;
+  margin-right: 1rem;
+}
+
+header > div {
+  padding: 10px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+}
+
+nav {
+  max-width: 550px;
+  width: 100%;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #ED1C24;
+}
+
+.logo {
+  height: 25px;
+  padding: 20px auto;
+}
+
+.search img {
+  height: 20px;
+}
+
+.search {
+  background-color: rgba(0,0,0,.05);
+  display: flex;
+}
+
+#search {
+  width: 60vw;
+  border: none;
+  background-color: rgba(0,0,0, 0.0);
+  font-size: 16px;
+  font-family: 'Poppins'
+}
+
+.search button {
+  background-color: #fb3e44;
+  height: 40px;
+  width: 100px;
+  color: white;
+}
+
+
+.search img {
+  align-self: center;
+  padding: 5px 15px;
+}
+
+.join-login button {
+  width: 70px;
+  height: 30px;
+  background-color: transparent;
+  border: none;
+}
+
+.join-login button:first-of-type {
+  border: 1px solid rgba(0,0,0,.4);
+}
+
+.join-login button:hover {
+  background-color: rgba(0,0,0,.05);
+}
+#search-box {
+  border-bottom: 2px inset rgba(0,0,0,.1);
+}
+
+#build {
+  min-height: 600px;
+  background-color: rgba(232,217,217,.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100%;
+  text-align: center;
+}
+
+#build p {
+  width: 100%;
+  max-width: 550px;
+  text-align: center;
+}
+
+#build button {
+  height: 70px;
+  width: 260px;
+  margin: 40px 20px;
+  font-size: 20px;
+  border: none;
+}
+
+#plans {
+  background-color: #FB3B49;
+  box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+  color: white;
+}
+
+#company {
+  min-height: 600px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+#company img {
+  height: 230px;
+}
+
+.skew {
+  background-color: rgba(255,204,53,.4);
+  transform: skew(9deg,0deg);
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+#company h2 {
+  transform: skew(-9deg,0deg);
+  font-size: 34px;
+  text-align: center;
+  margin: 0 auto;
+  font-weight: 500;
+}
+
+#company p {
+  width: 55%;
+  font-size: 16px;
+  text-align: center;
+  margin: 0 auto;
+  color: rgba(232,217,217,)
+}
+
+.featured {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  margin: 0 10%;
+}
+
+.featured > article {
+  margin: 5px 20px;
+}
+
+.featured > article > img {
+  height: 30px;
+}
+
+.featured > article > h4 {
+  color: #ED1C24;
+  margin: 15px auto;
+}
+
+.featured > article > p {
+  font-size: 16px;
+}
+
+#create {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+  border: none;
+}
+
+#create button {
+  background-color: black;
+  box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+  color: white;
+  height: 70px;
+  width: 500px;
+  font-size: 20px;
+  border: none;
+  margin: 0 auto;
+}
+
+#org {
+  padding-bottom: 50px;
+}
+
+
+
+@media only screen and (max-width: 850px) {
+  #menu {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .logo {
+    margin-bottom: 30px;
+  }
+  nav {
+    margin: 0;
+    padding: 0;
+  }
+  nav a {
+    padding: 0 10px;
+  }
+  #search-box {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .search {
+    margin-bottom: 30px;
+  }
+  #build h1 {
+    font-size: 3em;
+  }
+  #build > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin: 0 auto;
+  }
+  #company img {
+    padding: 40px 0;
+  }
+  #company p {
+    padding: 40px 0;
+  }
+  .featured {
+    flex-direction: column;
+  }
+}
