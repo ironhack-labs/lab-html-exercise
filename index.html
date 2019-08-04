@@ -1,63 +1,84 @@
-NPM Clone
-<body>
-    <header>
-        <div>
+<!DOCTYPE html>
+<html lang="en"> 
+    <head>
+        <title>NPM Clone</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="./Style.css">
+    </head>
+    <body>
+        <header>
             <div>
-                Penguin Magic 
+                <div>
+                    <img class="blackHeart" src="/Users/juliana/IronHack/NPM_Clone/lab-html-exercise/images/black-heart.png" alt="black heart">
+                    <span> Nifty Penguin Magic </span>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#"> npm Enterprise </a> </li>
+                        <li><a href="#"> Products </a></li>
+                        <li><a href="#"> Solutions </a></li>
+                        <li><a href="#"> Resources </a></li>
+                        <li><a href="#"> Docs </a></li>
+                        <li><a href="#"> Support </a></li>
+                    </ul>
+                    
+                </nav>
+
             </div>
-            <nav>
-                <ul>
-                    <li>npm Enterprise</li>
-                    <li>Products</li>
-                    <li>Solutions </li>
-                    <li>Resources </li>
-                    <li>Docs </li>
-                    <li>Support </li>
-                </ul>
-                
-            </nav>
-
-        </div>
-        <div>
-            <form>Search</form> 
-            <button>Join</button>
-            <button>Log In</button>> 
-        </div>
-
-    </header> 
-    <section>
-        <h1>Build amazing things</h1>
-        <article>
-            Essential JavaScript development tools that help you go to market faster and build powerful applications using modern open source code. 
-        </article> 
-        <div>
-            <a href="">See plans </a> 
-            <a href="">Join for free</a> 
-        </div>
-    </section>
-    <section>
-        <h2>Bring the best of open source to your company</h2>
-        <article>
-            npm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it. Create an Org and get more out of the tools your team already knows and loves.
-        </article>
-    </section>
-    <section>
-        <div>
-            <h3>Zero configuration</h3>
-            Create an org, add your team, and start collaborating. Nothing to configure, set up, or manage.
-        </div>
-        <div>
-            <h3>Team management </h3>
-            Control who has access to what modules within your team namespace using straightforward team management capabilities. 
-        </div>
-        <div>
-            <h3>Familiar features </h3>
-            npm Orgs has 100% parity with all the public npm registry features your developers already use. </div>
-
-        <div>
-            <h3>npm audit </h3>
-            Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer. 
-        </div>
-        Create an Org 
-    </section>
-</body>
+            <div class="search-bar">
+                <!-- add logo, search bar and buttons (or links and style them as buttons later)   -->   
+                <img class= "npm-logo" src="/Users/juliana/IronHack/NPM_Clone/lab-html-exercise/images/npm-logo.png" alt="npm Logo">  
+                <form>
+                    <img class="glass" src="/Users/juliana/IronHack/NPM_Clone/lab-html-exercise/images/magnifying-glass.png" alt="Glass">
+                    <label for="Search"></label>
+                    <input type="text" placeholder="Search packages" name = "Search">
+                    <button type="submit">Search</button>
+                </form> 
+                <button class="join">Join</button>
+                <button class="login">Log In</button> 
+            </div>
+        </header> 
+        <section class="intro">
+            <h1>Build amazing things</h1>
+            <article>
+                <p>Essential JavaScript development tools that help you go to market faster and build powerful applications using modern open source code. </p>
+            </article> 
+            <div class="intro-buttons">
+                <a href=""><button class="see-plans-button">See plans </button> </a> 
+                <a class="join-for-free" href="">Join for free</a> 
+            </div>
+        </section>
+        <section class="mid">
+            <img src="/Users/juliana/IronHack/NPM_Clone/lab-html-exercise/images/triangle-hexagon.svg" alt="Triangle Hexagon">
+            <h2>Bring the best of open source to your company</h2>
+            <article>
+                <p>npm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it. Create an Org and get more out of the tools your team already knows and loves.</p>
+            </article>
+        </section>
+        <section class="end">
+            <div class="cards">
+                <div>
+                    <img src="/Users/juliana/IronHack/NPM_Clone/lab-html-exercise/images/zero-configuration.svg" alt="Arrow in a screen">
+                    <h3>Zero configuration</h3>
+                    <p>Create an org, add your team, and start collaborating. Nothing to configure, set up, or manage.</p>
+                </div>
+                <div>
+                    <img src="/Users/juliana/IronHack/NPM_Clone/lab-html-exercise/images/team-management.svg" alt="Interligated computers">
+                    <h3>Team management </h3>
+                    <p>Control who has access to what modules within your team namespace using straightforward team management capabilities. </p>
+                </div>
+                <div>
+                    <img src="/Users/juliana/IronHack/NPM_Clone/lab-html-exercise/images/familiar-features.svg" alt="Familiar Features">
+                    <h3>Familiar features </h3>
+                    <p>npm Orgs has 100% parity with all the public npm registry features your developers already use. </p>
+                </div>
+                <div>
+                    <img src="/Users/juliana/IronHack/NPM_Clone/lab-html-exercise/images/npm-audit.svg" alt="Audit">
+                    <h3>npm audit </h3>
+                    <p>Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer.</p> 
+                </div>
+            </div>
+            <a href=""> Create an Org </a>
+        </section>
+    </body>
+</html> 
