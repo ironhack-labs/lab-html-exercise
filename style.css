@@ -1,0 +1,168 @@
+/* form label color: rgba(0,0,0,.05)
+form input color: rgba(0,0,0,.05)
+form button background color: #fb3e44
+form button letters color: white */
+
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body {
+  font-family: 'Poppins';
+}
+
+h1 {
+  font-size: 5em;
+  font-weight: 900; /* not working */
+}
+
+h2 {
+ font-size: 2.3em;
+ background-color: rgba(255,204,53,.4);
+ transform: skew(9deg,0deg);
+ font-style: italic;
+ padding: 0 20px;
+}
+
+h3 {
+
+ }
+
+header > div {
+  padding: 0 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+}
+
+nav {
+  width: 600px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+
+.blackHeart {
+  width: 20px;
+  margin-right: 1rem;
+}
+
+/* .lower-header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  border ADD SHADOW
+}*/
+
+.npm-text-logo {
+    width: 60px;
+    margin-right: 1rem;
+}
+
+.magnifying-glass {
+    width: 20px;
+    background-color: rgba(0,0,0,.05);
+    border: 10px solid  rgba(0,0,0,.05);
+}
+
+/*searchbar: mag glass backgorund color and position wrong, text wrong size and font?*/
+.searchbar {
+  font-family: 'Poppins';
+  font-size: 1em;
+}
+
+.searchbar #search {
+    background-color: rgba(0,0,0,.05);
+    border: none;
+    height: 40px;
+    width: 800px;
+    margin: 10px 0;
+}
+
+.searchbar #placeholder {
+    padding-left: 10px;
+}
+
+.searchbar #search-button {
+    background-color: #fb3e44;
+    border: none;
+    height: 40px;
+    width: 80px;
+    margin: 10px 0;
+    color: white;
+}
+
+#join-btn {
+    text-decoration: none;
+}
+
+#login-btn {
+    text-decoration: none;
+
+}
+
+#introduction {
+  display: flex;
+  justify-content: flex-start; /*center, as given in instructions, put items too low - why??*/
+  align-items: center;
+  flex-direction: column;
+  height: 600px;
+  background-color: rgba(232,217,217,.3);
+}
+
+.intro-text {
+  width: 40%;
+  text-align: center;
+  font-size: 1.2em;
+  margin-bottom: 80px;
+}
+
+.plans-and-join-btns a {
+  font-size: 1.3em;
+  font-weight: bold; /*does not work*/
+  text-decoration: none;
+  text-align: center;
+  margin: 10px;
+}
+
+.plans-and-join-btns #plans-btn {
+  background-color: #FB3B49;
+  padding: 20px 60px;
+  color: white;
+  box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+}
+
+.plans-and-join-btns #join-btn {
+  background-color: #FB3B49;
+  padding: 20px 60px;
+  color: black;
+  background-color: white;
+ }
+
+#company-description {
+  display: flex;
+  justify-content: center; /*center, as given in instructions, put items too low - why??*/
+  align-items: center;
+  flex-direction: column;
+  height: 500px;
+}
+
+#company-description img {
+  width: 300px;
+  padding: 20px;
+}
+
+.company-description-text {
+  width: 58%;
+  text-align: center;
+}
