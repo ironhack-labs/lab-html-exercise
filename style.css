@@ -1,0 +1,310 @@
+/*
+*   Stylesheet for npm clone
+*
+*   Site Colors
+*   gray        #F2F2F2
+*   faded red   #F8F4F4
+*   red         #FB3B49
+*   yellow      #FFEBB5
+*/
+
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap');
+
+
+/* Global Styling */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', 'Open Sans', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+a, a:link, a:visited {
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover, a:active {
+    color: #FB3B49;
+}
+
+h1, h2, h3, h4 {
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 3.8rem;
+}
+
+h3 {
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+
+h4 {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.highlight {
+    background-color: #FFEBB5;
+}
+
+.highlight:before,
+.highlight:after {
+    content: "";
+    z-index: -1;
+    width: 45px;
+    height: 57px;
+    position: absolute;
+    top: 0;
+    background-color: #FFEBB5;
+    transform: skewX(10deg);
+}
+
+.highlight:before {
+    left: -27px;
+}
+
+.highlight:after {
+    right: -27px;
+}
+ul.menu {
+    list-style-type: none;
+}
+
+header,
+section {
+    margin: 0 40px;
+}
+
+.bg-red {
+    background-color: #F8F4F4;
+}
+
+/* Global Buttons */
+a.btn,
+button.btn {
+    display: inline-block;
+    background-color: #FFF;
+    text-align: center;
+    border: none;
+    outline: none;
+}
+
+a.btn-sm,
+button.btn-sm {
+    padding: 7px 19px;
+    font-weight: 400;
+}
+
+a.btn-lg,
+button.btn-lg {
+    padding: 13px 60px;
+    font-weight: 700;
+}
+
+a.btn-red,
+button.btn-red {
+    background-color: #FB3B49;
+    color: #fff;
+    box-shadow: 5px 5px 0px #FAD0D2;
+}
+
+a.btn-red:hover,
+button.btn-red:hover {
+    cursor: pointer;
+    color: #000;
+}
+
+a.btn-black,
+button.btn-black {
+    background-color: #000;
+    color: #fff;
+    box-shadow: 5px 5px 0px #E5DDD4;
+}
+
+a.btn-black:hover,
+button.btn-black:hover {
+    background-color: #FB3B49;
+}
+
+
+/* Header */
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border-bottom: 1px solid #E5DDD4;
+}
+
+#navbar ul li {
+    margin: 0 15px;
+}
+
+.blackHeart img {
+    width: 20px;
+    margin-right: 20px;
+}
+
+#topbar {
+    padding: 15px 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: stretch;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+}
+
+#topbar .logo {
+    flex: 1;
+    flex-basis: 60px;
+    max-width: 60px;
+    width: 60px;
+    margin-right: 20px;
+}
+
+#topbar .logo img {
+    width: 100%;
+    margin-top: 12px;
+}
+
+#topbar .searchbar {
+    flex: 16;
+    margin-right: 20px;
+}
+
+#topbar .searchbar form {
+    display: flex;
+}
+
+#topbar .searchbar input {
+    width: 100%;
+    background-color: #F2F2F2;
+    border: 1px solid #F2F2F2;
+    font-size: .9rem;
+    letter-spacing: 1px;
+    padding-left: 43px;
+}
+
+#topbar .searchbar button {
+    box-shadow: none;
+}
+
+#topbar .searchbar:before {
+    content: "";
+    width: 39px;
+    height: 39px;
+    display: block;
+    position: absolute;
+    background-image: url(images/magnifying-glass.png);
+    background-repeat: no-repeat;
+    background-size: 17px;
+    background-position: center center;
+}
+
+#topbar .accountaccess {
+    flex: 1;
+}
+
+.accountaccess ul {
+    display: flex;
+    width: 160px;
+    justify-content: space-evenly;
+}
+
+.accountaccess ul li a {
+    padding: 3px 19px;
+}
+
+.accountaccess ul .join {
+    border: 1px solid #bbb;
+}
+
+.accountaccess ul .join:hover {
+    border: 1px solid #FB3B49;
+    background-color: #FB3B49;
+    color: #fff;
+}
+
+
+/* Navigation */
+nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/* Section specific */
+#hero {
+    padding: 100px 0 120px;
+    text-align: center;
+    border-top: 1px solid #ccc;
+}
+
+#hero article {
+    width: 430px;
+    margin: 30px auto 50px;
+    font-size: 1rem;
+}
+
+#hero .cta a:first-child {
+    margin-right: 30px;
+}
+
+#openSource {
+    padding: 60px 0;
+    text-align: center;
+}
+
+#openSource img {
+    width: 250px;
+}
+
+#openSource h3 {
+    display: table;
+    margin: 40px auto;
+    position: relative;
+}
+
+#openSource article {
+    width: 700px;
+    margin: 0 auto 90px;
+    font-size: 1rem;
+}
+
+#orgBenefits {
+    padding-bottom: 170px;
+    text-align: center;
+}
+
+#orgBenefits .flex {
+    display: flex;
+    justify-content: space-between;
+    max-width: 80%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#orgBenefits .flex .item {
+    margin-right: 50px;
+    margin-bottom: 100px;
+}
+
+#orgBenefits h4 {
+    margin: 10px 0 30px;
+    color: #FB3B49;
+}
+
+#orgBenefits img {
+    width: 30px;
+}
+
+#orgBenefits a.btn {
+    margin: 0 auto;
+    padding: 13px 120px;
+}

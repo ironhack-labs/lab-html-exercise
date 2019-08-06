@@ -13,12 +13,12 @@
 
     <header>
             <div id="navbar">
-                <div>
-                    <img class="blackHeart" src="images/black-heart.png" alt="black heart">
+                <div class="blackHeart">
+                    <img src="images/black-heart.png" alt="black heart">
                     <span>Nifty Penguin Magic</span>
                 </div>
                 <nav>
-                    <ul>
+                    <ul class="menu">
                         <li> <a href="#">npm Enterprise</a> </li>
                         <li> <a href="#">Products</a> </li>
                         <li> <a href="#">Solutions</a> </li>
@@ -33,15 +33,15 @@
                 <div class="logo">
                     <a href="/"><img src="images/npm-logo.png" alt="npm logo"></a>
                 </div>
-                <div id="searchbar">
+                <div class="searchbar">
                     <form>
                         <input type="text" placeholder="Search packages">
-                        <button type="submit">Search</button>
+                        <button type="submit" class="btn btn-sm btn-red">Search</button>
                     </form>
                 </div>
-                <div id="accountaccess">
-                    <ul>
-                        <li><a href="#">Join</a></li>
+                <div class="accountaccess">
+                    <ul class="menu">
+                        <li><a href="#" class="join">Join</a></li>
                         <li><a href="#">Log In</a></li>
                     </ul>
                 </div>
@@ -49,48 +49,48 @@
         </header>
 
         <!-- Section 1 | Build Amazing Things -->
-        <section id="hero">
+        <section id="hero" class="bg-red">
             <h2>Build amazing things</h2>
             <article>Essential JavaScript development tools that help you go to market faster and build powerful applications using modern open source code.</article>
             <div class="cta">
-                <a href="#" class="btn btn-red">See plans</a>
-                <a href="#">Join for free</a>
+                <a href="#" class="btn btn-lg btn-red">See plans</a>
+                <a href="#" class="btn btn-lg">Join for free</a>
             </div>
         </section>
 
         <!-- Section 2 | Bring the best of open source to your company -->
-        <section>
+        <section id="openSource">
             <img src="images/triangle-hexagon.svg" alt="Triangle hexagon icon">
-            <h3>Bring the best of open source to your company</h3>
+            <h3 class="highlight">Bring the best of open source to your company</h3>
             <article>npm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it. Create an Org and get more out of the tools your team already knows and loves.</article>
         </section>
 
         <!-- Section 3 | Benefits for Organizations -->
-        <section>
+        <section id="orgBenefits">
             <div class="flex">
                 <div class="item">
                     <img src="images/zero-configuration.svg" alt="mouse cursor hovering over a rounded rectangle">
                     <h4>Zero configuration</h4>
-                    <p>Create an org, add your team, and start collaborating. Nothing to configure, set up, or manage.</p>
+                    Create an org, add your team, and start collaborating. Nothing to configure, set up, or manage.
                 </div>
                 <div class="item">
                     <img src="images/team-management.svg" alt="Three people icons connected with lines">
                     <h4>Team management</h4>
-                    <p>Control who has access to what modules within your team namespace using straightforward team management capabilities.</p>
+                Control who has access to what modules within your team namespace using straightforward team management capabilities.
                 </div>
                 <div class="item">
-                    <img src="images/familiar-features.svg alt="four rounded rectangles balancing on a seesaw"">
+                    <img src="images/familiar-features.svg" alt="four rounded rectangles balancing on a seesaw">
                     <h4>Familiar features</h4>
-                    <p>npm Orgs has 100% parity with all the public npm registry features your developers already use.</p>
+                npm Orgs has 100% parity with all the public npm registry features your developers already use.
                 </div>
                 <div class="item">
                     <img src="images/npm-audit.svg" alt="binocular icon">
                     <h4>npm audit</h4>
-                    <p>Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer.</p>
+                    Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer.
                 </div>
             </div>
 
-            <a href="#" class="btn btn-black">Create an Org</a>
+            <a href="#" class="btn btn-lg btn-black">Create an Org</a>
         </section>
 
 </body>
