@@ -1,7 +1,4 @@
-/* form label color: rgba(0,0,0,.05)
-form input color: rgba(0,0,0,.05)
-form button background color: #fb3e44
-form button letters color: white */
+/*whole page*/
 
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
@@ -23,15 +20,19 @@ h2 {
 }
 
 h3 {
-
+  color: #ED1C24;
+  font-size: 1em;
+  font-weight: 900;
  }
 
+ /*upper header*/ 
 header > div {
   padding: 0 25px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid lightgray;
+  flex-direction: row;
 }
 
 nav {
@@ -50,19 +51,13 @@ nav a {
   color: black;
 }
 
-
 .blackHeart {
   width: 20px;
   margin-right: 1rem;
 }
 
-/* .lower-header-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
-  border ADD SHADOW
-}*/
+/*lower header*/
+
 
 .npm-text-logo {
     width: 60px;
@@ -72,7 +67,6 @@ nav a {
 .magnifying-glass {
     width: 20px;
     background-color: rgba(0,0,0,.05);
-    border: 10px solid  rgba(0,0,0,.05);
 }
 
 /*searchbar: mag glass backgorund color and position wrong, text wrong size and font?*/
@@ -89,11 +83,14 @@ nav a {
     margin: 10px 0;
 }
 
-.searchbar #placeholder {
+.searchbar placeholder {
     padding-left: 10px;
+    font-family: 'Poppins';
+    font-size: 1.2em;
 }
 
 .searchbar #search-button {
+    font-family: 'Poppins';
     background-color: #fb3e44;
     border: none;
     height: 40px;
@@ -102,14 +99,27 @@ nav a {
     color: white;
 }
 
+.join-login-links button a {
+  text-decoration: none;
+  font-family: 'Poppins';
+  font-size: 1.4em;
+  color: black;
+}
+
 #join-btn {
-    text-decoration: none;
+  width: 80px;
+  height: 40px;
+  border: 1px solid black;
 }
 
 #login-btn {
-    text-decoration: none;
-
+  width: 80px;
+  height: 40px;
+  background-color: white;
+  border: none;
 }
+
+/*section 1*/
 
 #introduction {
   display: flex;
@@ -137,7 +147,7 @@ nav a {
 
 .plans-and-join-btns #plans-btn {
   background-color: #FB3B49;
-  padding: 20px 60px;
+  padding: 20px 70px;
   color: white;
   box-shadow: 8px 8px 0 rgba(251,59,73,.2);
 }
@@ -147,7 +157,10 @@ nav a {
   padding: 20px 60px;
   color: black;
   background-color: white;
+  border: none;
  }
+
+ /*section 2*/
 
 #company-description {
   display: flex;
@@ -166,3 +179,47 @@ nav a {
   width: 58%;
   text-align: center;
 }
+
+/* section 3*/
+
+#benefits-and-create-org img {
+  width: 35px;
+}
+
+#benefits-and-create-org {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  height: 500px;
+  margin-top: 50px;
+}
+
+#benefits {
+  width: 85%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+
+.benefit-container {
+  margin: 0 30px;
+}
+
+#create-org-btn {
+  background-color: black;
+  width: 450px;
+  height: 60px;
+  box-shadow: 8px 8px 0 rgba(128,83,35,.2)
+}
+
+#create-org-btn a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.8em;
+  font-family: 'Poppins';
+  font-weight: 900; /*bold font weight not working*/
+}
+
+
