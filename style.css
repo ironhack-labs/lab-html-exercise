@@ -8,7 +8,7 @@ body {
 
 h1 {
   font-size: 5em;
-  font-weight: 900; /* not working */
+  font-weight: bold; /* not working */
 }
 
 h2 {
@@ -22,7 +22,8 @@ h2 {
 h3 {
   color: #ED1C24;
   font-size: 1em;
-  font-weight: 900;
+  font-weight: 900; /*not working*/
+  margin-bottom: 35px;
  }
 
  /*upper header*/ 
@@ -32,7 +33,6 @@ header > div {
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid lightgray;
-  flex-direction: row;
 }
 
 nav {
@@ -58,45 +58,59 @@ nav a {
 
 /*lower header*/
 
+.lower-header-container {
+  box-shadow: 0 4px 8px -8px grey;
+}
 
-.npm-text-logo {
-    width: 60px;
-    margin-right: 1rem;
+#npm-text-logo {
+  width: 60px;
+  margin-right: 1rem;
 }
 
 .magnifying-glass {
     width: 20px;
     background-color: rgba(0,0,0,.05);
+    padding: 11px;
 }
 
 /*searchbar: mag glass backgorund color and position wrong, text wrong size and font?*/
 .searchbar {
-  font-family: 'Poppins';
-  font-size: 1em;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 85%;
 }
 
 .searchbar #search {
-    background-color: rgba(0,0,0,.05);
-    border: none;
-    height: 40px;
-    width: 800px;
-    margin: 10px 0;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1em;  
+  background-color: rgba(0,0,0,.05);
+  border: none;
+  height: 40px;
+  width: 90%; /*I would like to make this stretch across the header, which adjusts based on device screen size, but can't figure out how to do this */
+  margin: 10px 0;
 }
 
-.searchbar placeholder {
-    padding-left: 10px;
-    font-family: 'Poppins';
-    font-size: 1.2em;
+.searchbar input {
+  padding-left: 10px;
+  font-size: 1em;
 }
 
 .searchbar #search-button {
-    font-family: 'Poppins';
-    background-color: #fb3e44;
-    border: none;
-    height: 40px;
-    width: 80px;
-    margin: 10px 0;
-    color: white;
+  font-family: 'Poppins';
+  background-color: #fb3e44;
+  border: none;
+  height: 40px;
+  width: 90px;
+  color: white;
+}
+
+.join-login-links {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .join-login-links button a {
