@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap');
+
+/***** ROOT/BODY *****/
+
+html {
+    background-color: rgba(232, 217, 217, .3);
+    box-sizing: border-box;
+    font-size: 16px; /* 16px = 1rem */
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/***** FONTS  *****/
+
+h1 { font-size: 5rem; }
+h2 { font-size: 4rem; }
+h3 { font-size: 3rem; }
+h4 { font-size: 2rem; }
+h5 { font-size: 1.5rem; }
+h6 { font-size: 1.25rem; }
+
+p {
+    font-size: 1.25rem; /* 1.25rem = 20px */
+}
+
+/* MULTIPLE USAGE CONTAINER */
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-block {
+    max-width: 1200px;
+}
+
+/***** HEADER *****/
+
+header {
+    background-color: #fff;
+}
+
+header > div {
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-top {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; /* @TODO: UPDATE WRAPPING */
+}
+
+.header-top-left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+
+.header-top-right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* NAVIGATION */
+
+nav {
+    width: 600px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.blackHeart {
+    max-width: 40px;
+    max-height: 40px;
+    margin-right: 1rem;
+}
+
+.header-bar {
+    flex: 1;
+    width: 100%;
+    height: 60px;
+    padding: 10px 25px 0;
+    margin: 0 0  010px;
+    border-top: 1px solid lightgray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* @TODO: UPDATE WRAPPING */
+}
+
+.header-bar .logo {
+    max-width: 60px;
+    max-height: 30px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+/* SEARCH */
+
+.header-bar .search-bar {
+    background-color: lightgray;
+    margin-left: 20px;
+    height: 40px;
+    flex: 8 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header-bar .search-bar #search {
+    flex: 1 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.header-bar .search-bar #search 
+.search-icon, .search-input {
+    background-color: #f4f4f4;
+}
+
+.header-bar .search-bar #search .search-icon {
+    height: 30px;
+    width: 30px;
+    padding: 5px 10px;
+    border: 5px solid #f4f4f4;
+    margin: auto;
+}
+
+.header-bar .search-bar #search 
+.search-input, button {
+    font-size: 1rem; /* Overwrite default */
+    border: none;
+}
+
+.header-bar .search-bar #search .search-input {
+    height: 50px;
+    flex: 1 auto;
+    display: flex;
+    align-items: center;
+}
+
+.header-bar .search-bar #search button {
+    background-color: #FB3B49;
+    color: #fff;
+    width: 100px;
+}
+
+/* SIGNUP/SIGNIN */
+
+.header-bar .sign-links {
+    flex: 1 auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.header-bar .sign-links a {
+    text-decoration: none;
+    color: initial;
+}
+
+.header-bar .sign-links a:hover {
+    background-color: #f4f4f4;
+}
+
+.header-bar .sign-links .join {
+    padding: 10px 30px;
+    border: 1px solid #555;
+}
+
+.header-bar .sign-links .login {
+    padding: 10px 20px;
+}
+
+/***** SECTION 1: HERO *****/
+
+#hero {
+    background-color: rgba(232, 217, 217, .3);
+    min-height: 90vh; /* 90% viewport height */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#hero .flex-container h1, article {
+    flex: 1;
+}
+
+#hero .flex-container h1 {
+    margin: 20px 0;
+    font-size: 5rem; /* @TODO: UPDATE FONT SIZING */
+}
+
+#hero .flex-container article {
+    width: 45%;
+    font-size: 1.25rem; /* @TODO: UPDATE FONT SIZING */
+}
+
+#hero .flex-container .button-container {
+    width: 60%;
+    flex: 1;
+    display: flex;
+    margin: 40px 0;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; /* @TODO: UPDATE WRAPPING */
+}
+
+#hero .flex-container .button-container p {
+    font-size: 1.5rem;
+}
+
+#hero .flex-container .see-plans, .join-for-free {
+    max-width: 50%;
+    margin: 0 40px;
+    border: none;
+    flex: 1 ;
+}
+
+#hero .flex-container .button-container .red-shadow {
+    background-color: #FB3B49;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+    color: #fff;
+}
+
+#hero .flex-container .button-container .white {
+    background-color: #fff;
+}
+
+/***** SECTION 2: BENEFITS *****/
+
+#benefits {
+    background-color: #fff;
+    min-height: 100vh; /* 100% device viewport height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#benefits .flex-container {
+    padding: 60px 0;
+}
+
+#benefits .flex-container .hexagon-icon {
+    min-width: 260px;
+    min-height: 240px;
+    padding: 40px 0;
+    margin: 0 0 40px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+#benefits .flex-container .teaser-block {
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#benefits .flex-container .teaser-block h2, article {
+    text-align: center;
+}
+
+#benefits .flex-container .teaser-block h2 {
+    font-size: 2.25rem;
+    font-weight: 600;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    font-style: italic;
+}
+
+#benefits .flex-container .teaser-block article {
+    font-size: 1rem;
+    width: 87.5%;
+    margin: 20px 0 40px ;
+    flex: 1;
+    display: flex;
+}
+
+#benefits .flex-container .teaser-block .heading-transform {
+    background-color: #FFEBB9;
+    transform: skew(9deg,0deg);
+    width: 100%;
+}
+
+/* SERVICE BOXES */
+
+#benefits .flex-container .service-boxes {
+    max-width: 100%;
+    margin: 35px 0;
+    flex: 1 1 auto;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+    flex-wrap: wrap; /* @TODO: UPDATE WRAPPING */
+}
+
+#benefits .flex-container .service-boxes .service-box {
+    width: 25%;
+    padding: 20px;
+    flex: 1;
+}
+
+#benefits .service-boxes .service-box h5 {
+    font-size: 1rem;
+    color: #ED1C24;
+}
+
+#benefits .flex-container .service-boxes .service-box p {
+    font-size: 1rem;
+}
+
+#benefits .flex-container .service-boxes .service-box img {
+    width: 50px;
+    height: 50px;
+}
+
+#benefits .flex-container .orgs-button {
+    background-color: #000;
+    color: #fff;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    margin-top: 20px;
+    height: 60px;
+    width: 33.33%;
+    flex: 1 auto;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
