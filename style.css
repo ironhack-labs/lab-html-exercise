@@ -1,0 +1,111 @@
+/* 
+    form label color: rgba(0,0,0,.05)
+    form input color: rgba(0,0,0,.05)
+    form button background color: #fb3e44
+    form button letters color: white */
+
+
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body {
+   font-family: 'Poppins';
+}
+
+* {
+   box-sizing: border-box;
+   padding: 0;
+   margin: 0;
+}
+
+header>div {
+   padding: 0 25px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   border-bottom: 1px solid lightgray;
+}
+
+nav {
+   width: 600px;
+}
+
+nav ul {
+   list-style-type: none;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+nav a {
+   text-decoration: none;
+   color: black;
+}
+
+.blackHeart {
+   width: 20px;
+   margin-right: 1rem;
+}
+
+/* In this section, as you can see everything is centered. You can add some flexbox rules to the id you attached to this section such is display: flex; and justify-content: center;. But this is just the beginning - you still have to set align-items and flex-direction.
+
+Useful information:
+
+    suggested height for this section: 600px
+    background color: rgba(232,217,217,.3)
+    "See plans" button background color: #FB3B49
+    "See plans" button box shadow: 8px 8px 0 rgba(251,59,73,.2)
+ */
+
+#hero-section {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   height: 600px;
+   background-color: rgba(232, 217, 217, .3);
+   width: 97%;
+   margin: 0 auto;
+}
+
+.central>h2 {
+   font-size: 5em;
+   font-weight: 900;
+   text-align: center;
+}
+
+.central>h4 {
+   width: 40%;
+   margin: 0 auto;
+   font-size: 1.2em;
+   text-align: center;
+}
+
+.hero-btn {
+   margin-top: 2.5rem;
+   display: flex;
+   justify-content: space-between;
+}
+
+.hero-btn ul {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+}
+
+
+.hero-btn li {
+   list-style-type: none;
+}
+
+
+
+.hero-btn a {
+   text-decoration: none;
+}
+
+
+.see-plans {
+   background-color: #FB3B49;
+   box-shadow: 8px 8px 0 rgba(251, 59, 73, .2);
+   color: white;
+}
