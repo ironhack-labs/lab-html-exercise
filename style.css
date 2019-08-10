@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap');
+
+body {
+  font-family: 'Poppins';
+}
+
+h1, h2, h3, h4 {
+    margin: 0;
+}
+
+/*Headings*/
+
+h1 {
+    font-size: 5rem;
+    font-weight: 700;
+}	
+
+h2 {
+    font-size: 2.25rem;
+    font-weight: 600;
+}	
+
+h3 {
+    font-size: 1em;
+    font-weight: bold;
+    color: #fb3e44;
+}	
+
+p {
+    font-size: 1rem;
+    font-weight: 200;
+    color: #333;
+    line-height: 1.5;
+}
+
+/* Header */
+
+header > div {
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+  }
+  
+nav {
+   width: 600px;
+}
+  
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.blackHeart {
+    width: 20px;
+    margin-right: 1rem;
+}
+
+form{
+    background-color: rgba(0,0,0,.05);
+}
+form input{
+    color: rgba(0,0,0,.05);
+    width: 90%;
+    background-color:transparent;
+    border: none;
+    padding: 10px;
+    font-size: .875rem;
+}
+
+form button{
+    background-color: #fb3e44;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: .875rem;
+}
+
+.npm-logo{
+    width: 50px;
+    margin-right: 1rem;
+}
+
+.magnifying-glass{
+    width: 15px;
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 8px;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form {
+    flex-grow: 0.95;
+}
+.login-button {
+    border: none;
+    font-weight: 600;
+    font-size: .875rem;
+}
+
+.join-button {
+    padding: 5px 10px 5px 10px;
+    background-color: transparent;
+    font-weight: 600;
+    font-size: .875rem;
+}
+
+.searchbar{
+    padding: 10px 25px 10px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Section 1 */
+
+#section-one {
+    height: 600px;
+    background-color: rgba(232,217,217,.3);
+}
+
+.section-one-div{
+    width: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    margin-right: auto;
+    margin-left: auto;
+    height: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    box-sizing: border-box;
+}
+
+#section-one article {
+    font-size: 1.25em;
+    width: 40%;
+    text-align: center;
+}
+
+.section-one-buttons {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+.section-one-buttons button{
+    padding: 20px;
+    border: none;
+    display: inline-block;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.25em;
+    min-width: 250px;
+}
+
+.see-plans-button{
+    background-color: #FB3B49;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+    color: white;
+}
+
+/* Section 2 */
+
+#section-two {
+    height: 600px;
+}
+
+.section-two-div{
+    width: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    margin-right: auto;
+    margin-left: auto;
+    height: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    box-sizing: border-box;
+}
+
+.triangle-hexagon{
+    width: 256px;
+}
+
+#section-two .h2-positioning{
+    position: relative;
+}
+
+#section-two .h2-background {
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+    position: absolute;
+    top: 0;
+    width: 108%;
+    height: 100%;
+    z-index: -1;
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    left: -5%;
+    top: -6%;
+}
+
+#section-two h2 {
+    text-align: center;
+}
+
+#section-two article {
+    width: 55%;
+    text-align: center;
+}
+
+/* Section 3 */
+
+/* #section-three {
+} */
+
+#section-three > div {
+    display: flex;
+    width: 90%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-right: auto;
+    margin-left: auto;
+    box-sizing: border-box;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.npm-services {
+    box-sizing: border-box;
+    width: 25%;
+    padding-left: 2rem;
+    padding-right: 2rem;    
+}
+
+.npm-services h3 {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.npm-services img {
+    width: 40px;
+}
+
+.create-org-button {
+    background-color: black;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.25em;
+    min-width: 350px;
+    padding: 20px; 
+}
+
+.create-org {
+    display: flex;
+    justify-content: center;
+}
