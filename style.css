@@ -2,110 +2,251 @@
     form label color: rgba(0,0,0,.05)
     form input color: rgba(0,0,0,.05)
     form button background color: #fb3e44
-    form button letters color: white */
+    form button letters color: white 
+    
+    */
 
-
-@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url("https://fonts.googleapis.com/css?family=Poppins");
 
 body {
-   font-family: 'Poppins';
+  font-family: "Poppins";
 }
 
 * {
-   box-sizing: border-box;
-   padding: 0;
-   margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-header>div {
-   padding: 0 25px;
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   border-bottom: 1px solid lightgray;
+header {
+  border: none;
+}
+
+.head {
+  border-bottom: 1px solid lightgray;
+  padding: 15px;
+}
+
+header > div {
+  padding: 0 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+  margin: 0 auto;
 }
 
 nav {
-   width: 600px;
+  width: 600px;
 }
 
 nav ul {
-   list-style-type: none;
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 nav a {
-   text-decoration: none;
-   color: black;
+  text-decoration: none;
+  color: black;
 }
 
 .blackHeart {
-   width: 20px;
-   margin-right: 1rem;
+  width: 20px;
+  margin-right: 1rem;
 }
 
-/* In this section, as you can see everything is centered. You can add some flexbox rules to the id you attached to this section such is display: flex; and justify-content: center;. But this is just the beginning - you still have to set align-items and flex-direction.
+/* Nav Bar section */
 
-Useful information:
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  margin: 10px auto;
+}
 
-    suggested height for this section: 600px
-    background color: rgba(232,217,217,.3)
-    "See plans" button background color: #FB3B49
-    "See plans" button box shadow: 8px 8px 0 rgba(251,59,73,.2)
- */
+.logo {
+  height: 20px;
+}
+
+.see-more {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-bar-btn li {
+  list-style-type: none;
+  padding-left: 15px;
+}
+
+.nav-bar-btn a {
+  text-decoration: none;
+  color: black;
+}
+
+.join {
+  border: 1px solid black;
+  padding: 5px 1.3em;
+}
+
+form {
+  display: flex;
+  border: none;
+}
+
+input[type="text"] {
+  border: none;
+  font-size: 1em;
+  background-image: url(/images/magnifying-glass.png);
+  background-size: 1em;
+  background-position: 0.5em;
+  background-repeat: no-repeat;
+  padding: 12px 925px 12px 40px;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+button {
+  background-color: #fb3e44;
+  color: white;
+  padding: 10px 2em;
+  font-size: 1em;
+}
+
+/* Hero Section */
 
 #hero-section {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   flex-direction: column;
-   height: 600px;
-   background-color: rgba(232, 217, 217, .3);
-   width: 97%;
-   margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 600px;
+  background-color: rgba(232, 217, 217, 0.3);
+  width: 95%;
+  margin: 0 auto;
 }
 
-.central>h2 {
-   font-size: 5em;
-   font-weight: 900;
-   text-align: center;
+.central > h2 {
+  font-size: 5em;
+  font-weight: 900;
+  text-align: center;
 }
 
-.central>h4 {
-   width: 40%;
-   margin: 0 auto;
-   font-size: 1.2em;
-   text-align: center;
+.central > h4 {
+  width: 40%;
+  margin: 0 auto;
+  font-size: 1.2em;
+  text-align: center;
 }
+
+/* Hero Section Buttons */
 
 .hero-btn {
-   margin-top: 2.5rem;
-   display: flex;
-   justify-content: space-between;
+  margin-top: 5.5rem;
 }
 
 .hero-btn ul {
-   display: flex;
-   flex-direction: row;
-   justify-content: space-evenly;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
-
 
 .hero-btn li {
-   list-style-type: none;
+  list-style-type: none;
+  padding: 0 2em;
 }
-
-
 
 .hero-btn a {
-   text-decoration: none;
+  text-decoration: none;
+  font-size: 1.3em;
+  padding: 15px 3.5em;
 }
 
-
 .see-plans {
-   background-color: #FB3B49;
-   box-shadow: 8px 8px 0 rgba(251, 59, 73, .2);
-   color: white;
+  background-color: #fb3b49;
+  box-shadow: 8px 8px 0 rgba(251, 59, 73, 0.2);
+  color: white;
+}
+
+.join-for-free {
+  background-color: white;
+  color: black;
+}
+
+/* Open Source Info Section */
+
+#open-source {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 7rem;
+  /* width: 70%: */
+}
+
+#open-source img {
+  width: 250px;
+  margin-bottom: 5rem;
+}
+
+#open-source h2 {
+  font-size: 2.2em;
+  background-color: rgba(255, 204, 53, 0.4);
+  transform: skew(9deg, 0deg);
+  font-style: italic;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+#open-source p {
+  width: 49%;
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+/* Feature set + ORG Section */
+
+#feature-set {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 15rem;
+}
+
+.feat-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.feat-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  align-items: baseline;
+  padding: 1.5em;
+  margin-bottom: 5em;
+}
+
+.feat-box > img {
+  height: 35px;
+}
+
+.feat-title {
+  color: #ed1c24ed;
+  font-size: 1.2em;
+  padding: 1em 0;
+  font-weight: 600;
+}
+
+.org a {
+  background-color: black;
+  color: white;
+  box-shadow: 8px 8px 0 rgba(128, 83, 35, 0.2);
+  margin: 15px auto;
+  padding: 10px 8em;
 }
