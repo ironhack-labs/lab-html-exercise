@@ -1,83 +1,187 @@
 /* This File will contain the style for the index.html */
 
-@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url("https://fonts.googleapis.com/css?family=Poppins");
 
-body{
-    font-family: "Poppins";   
+body {
+  font-family: "Poppins";
 }
 
-label{
-    color: rgba(0, 0, 0, 0.05);
+label {
+  color: rgba(0, 0, 0, 0.05);
 }
 
-input{
-    color: rgba(0, 0, 0, 0.05);
-    margin: 20px;
-    width: 200px;
+input {
+  color: rgba(0, 0, 0, 0.05);
+  margin: 20px;
+  width: 200px;
 }
 
-button{
-    color: white;
-    font: 14px;
+button {
+  color: white;
+  font-size: 20px;
 }
 
-.search{
-    background-color: #fb3e44;
-    padding: 8px 16px;
+.search {
+  background-color: #fb3e44;
+  padding: 8px 16px;
 }
 
-.join{
-    color: rgba(0, 0, 0, 0.7);
-    margin: 0px 16px 0px 0px;
-    padding: 4px 16px;
+.join {
+  color: rgba(0, 0, 0, 0.7);
+  margin: 0px 16px 0px 0px;
+  padding: 4px 16px;
+  font-size: 14px;
+  background-color: white;
 }
-.login{
-    color: rgba(0, 0, 0, 0.7);
-    padding: 4px;
+.login {
+  color: rgba(0, 0, 0, 0.7);
+  padding: 4px;
+  border: none;
+  color: black;
 }
 
 /* How can I know the padding, margin, width and heigth by default????  */
 header > div {
-    padding: 0 25px;
-    display: flex;
+  padding: 0 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+}
+
+nav {
+  width: 600px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+.blackHeart {
+  width: 20px;
+  margin-right: 1rem;
+}
+
+.LogoNpm {
+  width: 5em;
+  margin-right: 1rem;
+  padding-top: 3px;
+  flex-grow: 0;
+}
+.lupa {
+  margin: 10px;
+  width: 3em;
+  margin-right: 1rem;
+}
+.test {
+  display: flex;
+  padding: 0px 32px;
+}
+
+#FirstSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 600px;
+  background-color: rgba(232, 217, 217, 0.3);
+}
+
+#FirstSection .articulo {
+  width: 400px;
+  text-align: center;
+}
+
+#FirstSection > div >button{
+
     justify-content: space-between;
+    padding: 20px;
+    margin: 20px;
+    width: 250px;
+}
+
+#FirstSection .plans {
+  background-color: #fb3b49;
+  box-shadow: 8px 8px 0 rgba(251, 59, 73, 0.2);
+}
+#FirstSection .free {
+  border: none;
+  color: black;
+}
+
+#SecondSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 600px;
+}
+
+#SecondSection .hexagon {
+  width: 16em;
+}
+
+#SecondSection h3 {
+  background-color: rgba(255, 204, 53, 0.4);
+  transform: skew(9deg, 0deg);
+}
+
+#SecondSection .articulo {
+  width: 800px;
+  text-align: center;
+}
+
+#ThirdSection{
+    justify-content: center;
     align-items: center;
-    border-bottom: 1px solid lightgray;
+    box-sizing: border-box;
+    text-align: center;
 }
 
-nav{
-    width: 600px;
+#ThirdSection .imagenes{
+  display: flex;
+  justify-content: space-between;
 }
 
-nav ul{
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+#ThirdSection h4{
+    color: #ed1c24;
 }
 
-nav a{
-    text-decoration: none;
-    color: black;
+#ThirdSection div{
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
-.blackHeart{
-    width: 20px;
-    margin-right: 1rem;
+#ThirdSection img{
+    width: 4em;
 }
 
-.LogoNpm{
-    width: 5em;
-    margin-right: 1rem;
-    padding-top: 3px;
-    flex-grow: 0;
+#ThirdSection button{
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    color: white;
+    background-color: black;
+    font-size: 20px;
+    padding: 20px;
+    margin-top: 20px;
+    display: inline-block;
 }
-.lupa{
-    margin: 10px;
-    width: 3em;
-    margin-right: 1rem;
+
+h1 {
+  /*  define font-family here  */
+  font-size: 5em;
+  text-align: center;
 }
-.test{
-    display: flex;
-    padding: 0px 32px;
+
+h3 {
+  font-size: 2em;
+  text-align: center;
+  font-weight: bold;
 }
