@@ -30,13 +30,12 @@
             <img class="LogoNpm" src="images/npm-logo.png" alt="logo Npm">
             <!-- Esto sera para la busqueda del header -->
             <!-- Este div aqui es para probar como va, al principio no estaba -->
-            <div class="test">
-                <form action="">
-                    <img class="lupa" src="images/magnifying-glass.png" alt="lupa">
-                    <input type="search" placeholder="Search packages">
-                    <button class="search" type="submit">Search</button>
-                </form>
-            </div>
+            <form id="search" method="GET" action="/search">
+                <img class="lupa" src="images/magnifying-glass.png" alt="lupa">
+                <input type="search" placeholder="Search packages">
+                <button class="search" type="submit">Search</button>
+            </form>
+
             <!-- Puede que en vez de a sea button -->
             <button class="join">Join</button>
             <button class="login">Log in</button>

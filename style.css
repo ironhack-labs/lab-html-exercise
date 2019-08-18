@@ -13,7 +13,8 @@ label {
 input {
   color: rgba(0, 0, 0, 0.05);
   margin: 20px;
-  width: 200px;
+  width: 800px;
+  
 }
 
 button {
@@ -31,7 +32,8 @@ button {
   margin: 0px 16px 0px 0px;
   padding: 4px 16px;
   font-size: 14px;
-  background-color: white;
+  border: 1px solid lightgray;
+  font-weight: bold;
 }
 .login {
   color: rgba(0, 0, 0, 0.7);
@@ -77,13 +79,15 @@ nav a {
   flex-grow: 0;
 }
 .lupa {
-  margin: 10px;
-  width: 3em;
+  margin-top: 10px;
+  width: 1.5em;
   margin-right: 1rem;
 }
-.test {
+form{
   display: flex;
   padding: 0px 32px;
+  align-items: center;
+  display: inline-flex;
 }
 
 #FirstSection {
@@ -100,12 +104,11 @@ nav a {
   text-align: center;
 }
 
-#FirstSection > div >button{
-
-    justify-content: space-between;
-    padding: 20px;
-    margin: 20px;
-    width: 250px;
+#FirstSection > div > button {
+  justify-content: space-between;
+  padding: 20px;
+  margin: 20px;
+  width: 250px;
 }
 
 #FirstSection .plans {
@@ -139,45 +142,46 @@ nav a {
   text-align: center;
 }
 
-#ThirdSection{
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
-    text-align: center;
+#ThirdSection {
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  text-align: center;
 }
 
-#ThirdSection .imagenes{
+#ThirdSection .imagenes {
   display: flex;
   justify-content: space-between;
 }
 
-#ThirdSection h4{
-    color: #ed1c24;
+#ThirdSection h4 {
+  color: #ed1c24;
 }
 
-#ThirdSection div{
-    padding-left: 2rem;
-    padding-right: 2rem;
+#ThirdSection div {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
-#ThirdSection img{
-    width: 4em;
+#ThirdSection img {
+  width: 4em;
 }
 
-#ThirdSection button{
-    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
-    color: white;
-    background-color: black;
-    font-size: 20px;
-    padding: 20px;
-    margin-top: 20px;
-    display: inline-block;
+#ThirdSection button {
+  box-shadow: 8px 8px 0 rgba(128, 83, 35, 0.2);
+  color: white;
+  background-color: black;
+  font-size: 20px;
+  padding: 20px;
+  margin-top: 20px;
+  display: inline-block;
 }
 
 h1 {
   /*  define font-family here  */
   font-size: 5em;
   text-align: center;
+  font-weight: bold;
 }
 
 h3 {
@@ -185,3 +189,5 @@ h3 {
   text-align: center;
   font-weight: bold;
 }
+
+
