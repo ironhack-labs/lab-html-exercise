@@ -41,7 +41,7 @@ So let's get started!
 
 ### Starter Code
 
-The `starter-code` folder contains the `index.html` file with all the necessary text already provided. Also, in the starter-code, you can find the `images` folder with all the required images to successfully finish the exercise.
+You are provided with `index.html` file that contains all the necessary text so you don’t have to spend any time on typing it from the website. Also, you’ve been given the `images` folder with all the required images to successfully finish the exercise.
 
 ### Part I - pure HTML (no styles applied)
 
