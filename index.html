@@ -34,8 +34,8 @@
             </div>
             <button type="button"> Search </button><br>
         </form>
-            <a href="https://www.npmjs.com/signup"> Join </a>
-            <a href="https://www.npmjs.com/login"> Log In </a>
+            <a href="https://www.npmjs.com/signup" id="join"> Join </a>
+            <a href="https://www.npmjs.com/login" id="login"> Log In </a>
         </div>
     </header>
 
@@ -47,13 +47,13 @@
                 <p> Essential JavaScript development tools that help you go to market faster and build powerful applications using modern open source code. </p>
         </article>
         <div>
-            <a href="https://www.npmjs.com/products"> See Plans </a>
-            <a href="https://www.npmjs.com/signup"> Join for free </a>
+            <a href="https://www.npmjs.com/products" id="plans"> See Plans </a>
+            <a href="https://www.npmjs.com/signup" id="free"> Join for free </a>
         </div>
     </section>
 
     <section id="second-section">
-        <img class="hexagon" src="images/triangle-hexagon.svg" alt="Triangle Hexagon">
+        <img id="hexagon" src="images/triangle-hexagon.svg" alt="Triangle Hexagon">
         <heading>
             <h2> Bring the best of open source to your company </h2>
         </heading>
@@ -63,34 +63,36 @@
     </section>
 
     <section id="third-section">
-        <div>
-            <img class="pointer" src="images/zero-configuration.svg" alt="Zero configuration symbol">
-            <heading>
-                <h3>Zero configuration</h3>
-            </heading>
-            <p> Create an org, add your team, and start collaborating. Nothing to configure, set up, or manage. </p>
-        </div>
-        <div>
+        <div id="main-div">
+            <div class="other-divs">
+             <img class="pointer" src="images/zero-configuration.svg" alt="Zero configuration symbol">
+                <heading>
+                    <h3>Zero configuration</h3>
+                </heading>
+             <p> Create an org, add your team, and start collaborating. Nothing to configure, set up, or manage. </p>
+            </div>
+            <div class ="first-div"=>
             <img class="team" src="images/team-management.svg" alt="Team management symbol">
-            <heading>
-                <h3>Team management</h3>
-            </heading>
-            <p> Control who has access to what modules within your team namespace using straightforward team management capabilities. </p>
+                <heading>
+                        <h3>Team management</h3>
+                 </heading>
+             <p> Control who has access to what modules within your team namespace using straightforward team management capabilities. </p>
         </div>
-        <div>
-            <img class="balance" src="images/familiar-features.svg" alt="Familiar features symbol">
-            <heading>
-                <h3>Familiar features</h3>
-            </heading>
-            <p> npm Orgs has 100% parity with all the public npm registry features your developers already use. </p>
-        </div>
-        <div>
-            <img class="glasses" src="images/npm-audit.svg" alt="NPM audit symbol">
-            <heading>
-                <h3>npm audit</h3>
-            </heading>
-            <p> Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer. </p>
-            <a href="https://www.npmjs.com/signup?next=/org/create"> Create an Org </a>
+         <div class="first-div">
+             <img class="balance" src="images/familiar-features.svg" alt="Familiar features symbol">
+                <heading>
+                   <h3>Familiar features</h3>
+                 </heading>
+                <p> npm Orgs has 100% parity with all the public npm registry features your developers already use. </p>
+          </div>
+         <div class="first-div">
+             <img class="glasses" src="images/npm-audit.svg" alt="NPM audit symbol">
+             <heading>
+                  <h3>npm audit</h3>
+             </heading>
+             <p> Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer. </p>
+             <a href="https://www.npmjs.com/signup?next=/org/create" id="org-button"> Create an Org </a>
+         </div>
         </div>
     </section>
 </body>
