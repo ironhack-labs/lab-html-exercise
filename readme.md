@@ -11,7 +11,7 @@ In this exercise, the goal is to apply as many as possible of the concepts you'v
 - how to use flexbox to position elements on the page and
 - how to style the page.
 
-## Getting started
+## Getting started (and hand in)
 
 Follow these **[guidelines](https://docs.google.com/presentation/d/1I7-9zlELCSTqDevrfEfi_S6bf0BoByqOPqMw6QWUDgc/edit?usp=sharing)** on how to *start and hand in* the exercise so your TAs can check it.
 
@@ -250,17 +250,9 @@ Again use a lot of flexbox to get the right position of elements - direction, ju
 - "Create an Org" letters color: white
 
 
-## Hand in 
-
-The best way to submit your work is by making a Pull Request (and the process is described in the GitHub lessons as well as in these **[guidelines](https://docs.google.com/presentation/d/1I7-9zlELCSTqDevrfEfi_S6bf0BoByqOPqMw6QWUDgc/edit?usp=sharing)**).
-Your TAs will check up your work and provide feedback. However, you don't have to wait to finish everything in order to follow the step listed in the guidelines. In a moment when you've made a first significant step in working on this assessment, we advise you to make a pull request. Starting from that moment, every change you make will be automatically added to that pull request and will be visible to your TAs for a checkup.
-
-Important: Notify your TAs via email or Slack direct message when you make a pull request, so they are aware of it and can go and check it.
-
-
 ## Summary
 
-In this exercise, you've built a clone of a piece of the npm home page. This site is very complex so if you managed to make it look anything like the original, good job! :trophy:
+In this exercise, you've built a clone of a piece of the npm home page. This site is very complexed so if you managed to make it look anything like the original, good job! :trophy:
 
 This concludes the HTML / CSS module. We are proud of you! 
 
