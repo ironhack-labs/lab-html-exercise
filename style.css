@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body {
+  font-family: 'Poppins';
+}
+
+/*                  Header                  */
+header > div {
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+}
+  
+/*        Nav bar        */
+nav {
+    width: 600px;
+}
+  
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+nav a {
+    text-decoration: none;
+    color: black;
+}
+  
+.blackHeart {
+    width: 20px;
+    margin-right: 1rem;
+}
+
+/*        Search bar       */
+.search {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.logo {
+    width: 80px;
+    margin: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.magnifying-glass {
+    background-color: rgb(242, 242, 242);
+    width: 23px;
+    height: 23px;
+    margin-right: 9px 0 9px 0;
+    padding: 9.1px;
+}
+
+#search-bar {
+    width: 875px;
+    height: 40px;
+    margin: 9px 0 9px 0;
+    background-color: rgb(242, 242, 242);
+    font-size: 14px;
+    font-weight: lighter;
+    color: rgba(0,0,0,.05);
+    border: none;
+}
+
+#search-button {
+    background-color: #fb3e44;
+    color: white;
+    margin: 9px 0 9px 0;
+    height: 42px;
+    width: 90px;
+    font-size: 15px;
+    font-weight: lighter;
+    border: none;
+    cursor: pointer;
+}
+
+#search-button:hover{
+    background-color: rgb(250, 5, 21);
+}
+
+.join-button {
+    color: rgb(47, 79, 79);
+    text-decoration: none;
+    border-width: 1px;
+    border-style: solid;
+    border-color:  rgba(0,0,0,.3);
+    padding: 5px 18px;
+    text-align: center;
+    margin: 0px;
+}
+
+.join-button:hover {
+    box-shadow: 2px 2px 2px rgb(230, 230, 230);
+    color: black;
+}
+
+.login-button {
+    color: rgb(47, 79, 79);
+    text-decoration: none;
+    text-align: center;
+    margin: 0px;
+}
+
+.login-button:hover {
+    color: black;
+    font-weight: 900;
+}
+
+/*                 Section 1                */
+#build {
+    height: 600px;
+    background-color: rgba(232,217,217,.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#build h1 {
+    font-size: 80px;
+    font-weight: 900;
+    margin: 0px;
+}
+
+#build article {
+    font-size: 19px;
+    width: 37%;
+    text-align: center;
+    margin: 10px 50px 50px 50px;
+}
+
+.plans-button {
+    background-color: #FB3B49;
+    padding: 13px 61px;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+    margin: 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: 900;
+    text-align: center;
+}
+
+.plans-button:hover {
+    background-color: rgb(250, 5, 21);
+}
+
+.join-free-button {
+    text-decoration: none;
+    background-color: white;
+    margin: 20px;
+    padding: 13px 61px;
+    color: black;
+    font-weight: 900;
+}
+
+.join-free-button:hover {
+    font-weight: 900;
+    box-shadow: 2px 2px 2px rgb(230, 230, 230);
+}
+
+/*                 Section 2                */
+  #open-source {
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#open-source img {
+    width: 19%;
+    margin: 50px;
+    
+}
+
+#open-source h2 {
+    width: 68%;
+    font-size: 35px;
+    text-align: center;
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+    font-style: italic;
+    font-weight: 900;
+    margin: 20px;
+}
+
+#open-source article {
+    text-align: center;
+    font-size: 15.5px;
+    width: 56%;
+}
+
+/*                 Section 3                */
+
+  #nmp-org {
+      height: 260px;
+      margin: 140px 120px 0 120px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+  }
+  
+  #nmp-org h3 {
+      color: #ED1C24;
+      font-weight: 900;
+      margin: 10px 0 30px 0;
+  }
+
+  .box {
+      width: 21%;
+  }
+
+  .box img {
+      width: 15%;
+  }
+
+  .box article {
+      font-size: 15px;
+  }
+
+/*               Footer button              */
+    footer {
+        height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+  
+    .create-org {
+      background-color: black;
+      padding: 23px 170px;
+      box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+      color: white;
+      font-size: 23px;  
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .create-org:hover{
+        background-color: rgb(51, 51, 51);
+    }
