@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body {
+  font-family: 'Poppins';
+}
+
+/* header */
+
+.header-upper-container { 
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+    font-size: 12px;
+    line-height: 0.5px;
+}
+
+.black-heart {
+    width: 20px;
+    margin-right: 1rem;
+}
+
+nav {
+    width: 600px;
+}
+
+nav ul { 
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a { 
+    text-decoration: none;
+    color: black;
+}
+
+.header-lower-container { 
+    font-size: 15px;
+    padding: 0 25px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+}
+
+.npm-logo { 
+    width: 60px;
+    margin-right: 0.5rem;
+}
+
+.search-icon { 
+    display: flex;
+    justify-content: center;
+    padding: .6rem .4rem 0 .4rem;
+    width: 20px;
+}
+
+form {
+    display: flex;
+    margin: .5rem;
+    border-style: none;
+    background: rgba(232,217,217,.3);
+    font: rgba(0,0,0,0.5);
+}
+
+form ::placeholder { 
+    font-family: 'Poppins';
+    font-size: 15px; 
+}
+
+form input { 
+    line-height: 2rem;
+    border-style: none;
+    background: none;
+    width: 800px;
+    font: rgba(0,0,0,0.5); 
+} 
+
+form button { 
+    font-family: 'Poppins';
+    font-size: 15px; 
+    background-color: #fb3e44;
+    color: white;
+    line-height: 2rem;
+    padding: .2rem 1.2rem;
+}
+
+.border {
+    border: 0.5px solid rgba(0,0,0,0.5)
+}
+
+.header-lower-container a { 
+    display: flex;
+    color: rgba(0,0,0,0.5);
+    padding: 0.2rem 0.7rem;
+    margin: 0px 10px;
+    text-decoration: none;
+}
+    
+/* section 1 */
+
+#section-one { 
+    background-color: rgba(232,217,217,.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 600px;
+
+}
+
+h1 {
+    font-size: 80px;
+    margin: 53.6px 0px;
+}
+
+#section-one article { 
+    text-align: center;
+    font-size: 20px;
+    margin-top: 0.2em;
+}
+
+#section-one > div { 
+    display: flex;
+    align-items: center;
+    width: 500px;
+    margin: 50px;
+    
+}
+
+#section-one a { 
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    width: 300px;
+    padding: 10px;
+}
+
+
+#section-one .red { 
+    background-color:  #fb3e44;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+    color: white;
+    text-emphasis: bold;
+}
+
+/* section 2 */
+
+#section-two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 600px;
+}
+
+.hexagon { 
+    position: relative;
+    top: -50px;
+    width: 16rem;
+    line-height: 1.15;
+}
+
+h2 { 
+    width: 900px;
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 1.15;
+    text-align: center;
+
+}
+
+#section-two article { 
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 0.2em;
+
+}
+
+/* section 3 */
+
+#section-three { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+}
+
+.container { 
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 70%;
+    padding: 20px 0px;
+}
+
+.col {
+    display: block; 
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: 40%;
+}
+
+.col img { 
+    height: 2rem;
+} 
+
+h3 { 
+    color: #ED1C24;
+    text-align: left;
+    margin-top: 1rem;
+    font-weight: 700;
+    font-size: 1rem;
+
+}
+
+.col p { 
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+}
+
+.org-link { 
+    text-decoration: none;
+    text-align: center;
+    width: 20%;
+    padding: 10px;
+    color: white;
+    background: black;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    text-emphasis: bold;
+}
