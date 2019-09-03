@@ -37,12 +37,12 @@ nav a {
     color: black;
 }
 
-.header-lower-container { 
+.header-lower-container {
+    display: flex; 
     font-size: 15px;
     padding: 0 25px;
-    display: flex;
     flex-wrap: nowrap;
-    justify-content: flex-start;
+    justify-content: space-around;
     align-items: center;
     border-bottom: 1px solid lightgray;
 }
@@ -53,14 +53,10 @@ nav a {
 }
 
 .search-icon { 
-    display: flex;
-    justify-content: center;
-    padding: .6rem .4rem 0 .4rem;
     width: 20px;
 }
 
 form {
-    display: flex;
     margin: .5rem;
     border-style: none;
     background: rgba(232,217,217,.3);
@@ -94,7 +90,6 @@ form button {
 }
 
 .header-lower-container a { 
-    display: flex;
     color: rgba(0,0,0,0.5);
     padding: 0.2rem 0.7rem;
     margin: 0px 10px;
