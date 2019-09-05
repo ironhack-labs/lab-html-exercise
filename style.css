@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+body {
+  font-family: 'Poppins';
+}
+
+
+/*The Header and the navbar*/
+/*Useful information:
+form label color: rgba(0,0,0,.05)
+form input color: rgba(0,0,0,.05)
+form button background color: #fb3e44
+form button letters color: white*/
+
+header > div {
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+  }
+  
+  nav {
+    width: 600px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .blackHeart {
+    width: 20px;
+    margin-right: 1rem;
+  }
+
+  /*logo, search bar and buttons*/
+  .logo {
+    width: 80px;
+    margin-right: 1rem; 
+  }
+
+  .magnifying {
+    width: 22px;
+    height: 22px;
+    padding: 11px;
+    background: rgba(15, 15, 15, 0.05);
+  }
+
+  
+/*Search Bar*/
+.search {
+  color: rgba(0,0,0,.05);
+  font-size: 26px;
+}
+
+.search input {
+  width: 2000px;
+  height: 45px;
+  background: rgba(15, 15, 15, 0.05);
+  border: 0;
+  text-indent: 12px;
+ 
+}
+
+/*buttons*/
+.links_list {
+  list-style: none; 
+}
+
+.links {
+  display: inline;  
+}
+
+.links a {
+  text-decoration: none;
+}
+
+.button_search {
+  background-color: #fb3e44;
+  border: none;
+  color: white;
+  padding: 11px 15px;
+  font-size: 22px;
+}
+
+.button1 {
+  border: solid 2px;
+  padding: 11px 20px; 
+  color: grey;
+  border-color: #aaa;
+}
+
+.button2 {
+  border: none;
+  padding: 11px 11px 10px 30px; 
+  color: grey;
+  border-color: #aaa;
+}
+
+.position {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+/*section 1*/
+
+/*Useful information:
+suggested height for this section: 600px
+background color: rgba(232,217,217,.3)
+"See plans" button background color: #FB3B49
+"See plans" button box shadow: 8px 8px 0 rgba(251,59,73,.2)*/
+
+#section1 {
+  background-color: rgba(232,217,217,.3);
+  height: 900px;
+}
+
+.title {
+  font-weight: bolder;
+  font-size: 120px;  
+  margin-bottom: unset;
+}
+
+.article {
+  font-size: 32px;
+  width: 890px;
+  text-align: center;
+}
+
+.button3 {
+  background-color: #fb3e44;
+  border: none;
+  padding: 30px 90px;
+  margin-right: 50px;
+  box-shadow: 5px 5px 5px #e7aaac;
+  color: white;  
+}
+
+.button4 {
+  background-color: white;
+  border: none;
+  padding: 30px 90px;
+  color: black;
+}
+
+.position1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+  
+/*section 2*/
+
+/*Useful information:
+heading background color: rgba(255,204,53,.4)
+to get the transform of the yellow background in the left-hand direction use: transform: skew(9deg,0deg);
+to get it in the opposite direction of the letters, the way we need it on the page, use: font-style: italic;
+to additionally fine-tune the position of each element, use margin property.*/
+
+#section2 {
+  height: 900px;
+  margin-bottom: 50px;
+}
+
+.triangle-hexagone {
+  width: 350px;
+  height: 350px;
+  margin: 30px;
+}
+
+.title2 {
+  background-color:rgba(255,204,53,.4);
+  transform: skew(9deg,0deg);
+  padding-right: 90px;
+  padding-left: 90px;
+  font-weight: bolder;
+  font-size: 55px;
+  font-style: italic;
+}
+
+.article2 {
+  font-size: 22px;
+  font-weight: lighter;
+  width: 1050px;
+  text-align: center;
+}
+
+.position2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+  
+
+/*section 3*/
+/*Useful information:
+color of the letters in each heading in this section: #ED1C24
+"Create an Org" box shadow: 8px 8px 0 rgba(128,83,35,.2)
+"Create an Org" letters color: white*/
+
+#section3 {
+  height: 900px;
+}
+
+.image_size {
+  width: 50px;
+  height: 50px;
+}
+
+.title3 {
+  color: #ED1C24;
+  font-size: 22px; 
+  font-weight: bold;
+}
+
+.size_zone {
+  width: 350px;
+  font-size: 22px;
+}
+.position3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px;
+  margin-bottom: 60px;
+}
+
+.button5 {
+  background-color: black;
+  border: none;
+  padding: 30px 250px;
+  box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+  font-size: 32px;
+  font-weight: bold;
+  color: white;  
+  align-items: center;
+}
+
+.position4 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  
+}

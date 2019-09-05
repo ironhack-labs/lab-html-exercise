@@ -28,7 +28,6 @@ Our goal is to get as close as possible to this:
 ![](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_7c45ec577a3e16793ae4e0abfeb80df9.png)
 
 
-
 You can see the larger version of this picture [here](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_7c45ec577a3e16793ae4e0abfeb80df9.png). If you're struggling to see the details, feel free to zoom in to 200%.
 Although it doesn't look too complicated, we will have to apply quite a few styles on our web page: set a background color on different elements, set a font weight (bold, normal), and position elements using our newly acquired skills in flexbox.  
 
