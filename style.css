@@ -1,6 +1,6 @@
 /*------------- IMPORTS -------------*/
 
-@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600&display=swap');
 
 
 /*------------- RESET -------------*/
@@ -29,6 +29,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+	box-sizing: border-box;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -58,5 +59,125 @@ table {
 
 body {
 	font-family: 'Poppins';
-	background-color: 
+	background-color: #f8f4f3;
+	font-size: 14px;
+	width: 940px;
+	margin: 0 auto;
+}
+
+
+header {
+	background-color: #fff;
+}
+
+header > div {
+	display: flex;
+	justify-content: space-around;
+}
+
+.header-nav {
+	border-bottom: 1px solid #e8e8e8;
+	justify-content: space-between;
+	height: 39px;
+	padding: 15px 20px 10px 20px;
+	font-size: 9px;
+}
+
+.header-control {
+	border-bottom: 1px solid #d1d1d1;
+	height: 36px;
+	padding: 4px 20px 4px 20px;
+	font-size: 9px;
+	justify-content: space-around;
+}
+
+.heart {
+	padding-right: 18px;
+}
+
+.nav-list {
+	display: flex;
+}
+
+.nav-list li{
+	margin-right: 12px;
+}
+
+.nav-list li a {
+	text-decoration: none;
+	color: #000;
+	font-weight: 500;
+}
+
+.header-control a {
+	height: 100%;
+}
+.header-control img {
+	height: 100%;
+	padding: 6px 10px 6px 0;
+}
+
+.header-control form {
+	background-color: #f2f2f2;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.header-control form input, button {
+	align-self: center;
+}
+
+.header-control form button {
+	height: 100%;
+	color: #fff;
+	background-color: #fb3c43;
+	font-family: 'Poppins';
+	font-weight: normal;
+	font-size: 9px;
+	border: 0;
+	padding: 0 11px;
+}
+
+.header-control form input {
+	border: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #f2f2f2;
+	padding: 0;
+	
+}
+
+.header-control form .mag-glass {
+	height: 100%;
+	width: 20px;
+	text-align: center;
+	margin: 0 5px 0 10px;
+}
+
+.log-buttons {
+	display: flex;
+}
+.log-buttons a {
+	
+	text-decoration: none;
+	color: #000;
+	width: 41px;
+	height: initial;
+	display: block;
+	align-self: center;
+	text-align: center;
+	padding: 5px 0;
+
+}
+
+a.btn-login {
+	margin-left : 5px;
+	margin-right: 5px;
+}
+
+a.btn-join {
+	border: 1px inset #ccc;
+	margin-left: 20px;
+	font-weight: 600;
 }

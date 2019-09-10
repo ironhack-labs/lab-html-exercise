@@ -8,8 +8,8 @@
   </head>
   <body>
     <header>
-      <div>
-        <div class="fun-quote">Nifty Penguin Magic</div>
+      <div class="header-nav">
+        <div class="fun-quote"><span class="heart">❤</span>Neverending Pun Machine</div>
         <nav>
           <ul class="nav-list">
             <li><a href="#">npm Enterprise</a></li>
@@ -21,18 +21,20 @@
           </ul>
         </nav>
       </div>
-      <div>
+      <div class="header-control">
         <a href="#"><img src="./images/npm-logo.png" alt="npm"/></a>
         <form action="/search" method="post">
-          <input
-            type="text"
-            name="search-field"
-            placeholder="Search packages"
-          />
+            <label class="mag-glass" for="serarch-field"><img src="./images/magnifying-glass.png" alt="search icon"></label>
+            <input
+                type="text"
+                name="search-field"
+                placeholder="Search packages"
+            />
           <button type="submit">Search</button>
         </form>
-        <a href="#" class="btn-link">Join</a
-        ><a href="#" class="btn-link">Log In</a>
+        <div class="log-buttons">
+            <a href="#" class="btn-join">Join</a><a href="#" class="btn-login">Log In</a>
+        </div>     
       </div>
     </header>
     <section class="storefront">
