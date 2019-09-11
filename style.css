@@ -65,6 +65,11 @@ body {
 	margin: 0 auto;
 }
 
+h1 {
+	font-size: 50px;
+	font-weight: 700;
+}
+/*------------- HEADER -------------*/
 
 header {
 	background-color: #fff;
@@ -180,4 +185,61 @@ a.btn-join {
 	border: 1px inset #ccc;
 	margin-left: 20px;
 	font-weight: 600;
+}
+
+/*------------- STOREFRONT -------------*/
+
+.storefront {
+	display: flex;
+	flex-direction: column; 
+	align-items: center;
+}
+
+.storefront article {
+	text-align: center;
+	width: 75%;
+	padding: 75px 0 0 0;
+}
+
+.storefront article h1 {
+	padding: 25px;
+}
+
+.storefront article p {
+	width: 410px;
+	padding: 20px;
+	line-height: 1.3em;
+	display: inline-block;
+}
+
+.storefront > div {
+	display: flex;
+	padding-bottom: 75px; 
+}
+
+.storefront .btn-plans, .btn-free {
+	text-decoration: none;
+	width: 160px;
+	margin: 15px;
+	padding: 15px 0;
+	text-align: center;
+	font-weight: 500;
+	font-size: 12px;
+}
+
+a.btn-plans {
+	background-color: #f63a49;
+	color: #fff;
+	box-shadow: 5px 5px #f9d2d5;
+}
+
+a.btn-free {
+	background-color: #fff;
+	color: #000;
+}
+
+/*------------- ORG PLAN -------------*/
+
+.org-plan {
+	background-color: #fff;
 }
