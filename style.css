@@ -69,6 +69,17 @@ h1 {
 	font-size: 50px;
 	font-weight: 700;
 }
+
+h2 {
+	font-size: 24px;
+	font-weight: 500;
+}
+
+h3 {
+	font-weight: 700;
+	color: #fb3c43;
+}
+
 /*------------- HEADER -------------*/
 
 header {
@@ -78,10 +89,11 @@ header {
 header > div {
 	display: flex;
 	justify-content: space-around;
+	border-bottom: 1px solid lightgray;
 }
 
 .header-nav {
-	border-bottom: 1px solid #e8e8e8;
+	
 	justify-content: space-between;
 	height: 39px;
 	padding: 15px 20px 10px 20px;
@@ -89,7 +101,6 @@ header > div {
 }
 
 .header-control {
-	border-bottom: 1px solid #d1d1d1;
 	height: 36px;
 	padding: 4px 20px 4px 20px;
 	font-size: 9px;
@@ -142,6 +153,10 @@ header > div {
 	font-size: 9px;
 	border: 0;
 	padding: 0 11px;
+}
+
+.header-control form button:hover {
+	cursor: pointer
 }
 
 .header-control form input {
@@ -228,7 +243,7 @@ a.btn-join {
 }
 
 a.btn-plans {
-	background-color: #f63a49;
+	background-color: #fb3c43;
 	color: #fff;
 	box-shadow: 5px 5px #f9d2d5;
 }
@@ -242,4 +257,76 @@ a.btn-free {
 
 .org-plan {
 	background-color: #fff;
+	display: flex;
+	flex-direction: column;
+}
+
+.about-us {
+	text-align: center;
+	margin: 30px 0;
+}
+
+.about-us > img {
+	width: 168px;
+	margin: 20px 0;
+}
+
+.about-us h2 {
+	position: relative;
+	z-index: 1;
+	margin: 20px 0;
+}
+
+.yellow-highlight {
+	position: absolute;
+	line-height: 1.25;
+	width: 65%;
+    height: 100%;
+	z-index: -1;
+	left: 17%;
+    top: -6%;
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+}
+
+.about-us p {
+	font-size: 10px;
+	width: 52%;
+	text-align: center;
+	margin: 0 auto;
+	line-height: 1.5;
+}
+
+.features {
+	display: flex;
+	justify-content: space-evenly;
+	margin: 30px;
+}
+
+.feature {
+	margin: 30px;
+	width: 18%;
+	font-size: 10px;
+	line-height: 1.5;
+}
+
+.feature img {
+	width: 25px;
+}
+
+.feature h3 {
+	padding: 10px 0 20px 0;
+}
+
+a.btn-create-org {
+	display: block;
+	align-self: center;
+	text-decoration: none;
+	background-color: #000;
+	color: #fff;
+	font-size: 12px;
+	font-weight: 500;
+	box-shadow: 5px 5px #f2f2f2;
+	padding: 15px 100px;
+	margin-bottom: 30px;
 }
