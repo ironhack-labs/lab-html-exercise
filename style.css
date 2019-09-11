@@ -1,73 +1,37 @@
-/*------------- IMPORTS -------------*/
+/*
+	1.IMPORTS
+	2.DEFAULTS
+	3.HEADER
+	4.STOREFRONT
+	5.ORG PLAN
+		5.1.ABOUT US
+		5.2.FEATURES
+*/
+
+
+
+/*------------- 1.IMPORTS -------------*/
 
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600&display=swap');
 
+@import url(./reset.css);
 
-/*------------- RESET -------------*/
-
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-	box-sizing: border-box;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-/*------------- DEFAULTS -------------*/
+/*------------- 2.DEFAULTS -------------*/
 
 body {
 	font-family: 'Poppins';
-	background-color: #f8f4f3;
+	background-image: radial-gradient(circle , #666 10%, #eee 80%);
 	font-size: 14px;
 	width: 940px;
 	margin: 0 auto;
 }
 
+h1, h3 {
+	font-weight: 700;
+}
+
 h1 {
 	font-size: 50px;
-	font-weight: 700;
 }
 
 h2 {
@@ -76,11 +40,10 @@ h2 {
 }
 
 h3 {
-	font-weight: 700;
 	color: #fb3c43;
 }
 
-/*------------- HEADER -------------*/
+/*------------- 3.HEADER -------------*/
 
 header {
 	background-color: #fff;
@@ -88,12 +51,10 @@ header {
 
 header > div {
 	display: flex;
-	justify-content: space-around;
-	border-bottom: 1px solid lightgray;
+	border-bottom: 1px solid #d3d3d3;
 }
 
-.header-nav {
-	
+.header-nav {	
 	justify-content: space-between;
 	height: 39px;
 	padding: 15px 20px 10px 20px;
@@ -104,7 +65,6 @@ header > div {
 	height: 36px;
 	padding: 4px 20px 4px 20px;
 	font-size: 9px;
-	justify-content: space-around;
 }
 
 .heart {
@@ -115,11 +75,8 @@ header > div {
 	display: flex;
 }
 
-.nav-list li{
-	margin-right: 12px;
-}
-
 .nav-list li a {
+	margin-right: 12px;
 	text-decoration: none;
 	color: #000;
 	font-weight: 500;
@@ -137,15 +94,9 @@ header > div {
 	background-color: #f2f2f2;
 	width: 100%;
 	display: flex;
-	justify-content: space-between;
-}
-
-.header-control form input, button {
-	align-self: center;
 }
 
 .header-control form button {
-	height: 100%;
 	color: #fff;
 	background-color: #fb3c43;
 	font-family: 'Poppins';
@@ -156,7 +107,7 @@ header > div {
 }
 
 .header-control form button:hover {
-	cursor: pointer
+	cursor: pointer;
 }
 
 .header-control form input {
@@ -171,24 +122,21 @@ header > div {
 .header-control form .mag-glass {
 	height: 100%;
 	width: 20px;
-	text-align: center;
 	margin: 0 5px 0 10px;
 }
 
 .log-buttons {
 	display: flex;
 }
+
 .log-buttons a {
-	
 	text-decoration: none;
 	color: #000;
 	width: 41px;
 	height: initial;
-	display: block;
 	align-self: center;
 	text-align: center;
 	padding: 5px 0;
-
 }
 
 a.btn-login {
@@ -202,9 +150,10 @@ a.btn-join {
 	font-weight: 600;
 }
 
-/*------------- STOREFRONT -------------*/
+/*------------- 4.STOREFRONT -------------*/
 
 .storefront {
+	background-color: #f8f4f3;
 	display: flex;
 	flex-direction: column; 
 	align-items: center;
@@ -213,7 +162,7 @@ a.btn-join {
 .storefront article {
 	text-align: center;
 	width: 75%;
-	padding: 75px 0 0 0;
+	padding-top: 55px;
 }
 
 .storefront article h1 {
@@ -222,14 +171,14 @@ a.btn-join {
 
 .storefront article p {
 	width: 410px;
-	padding: 20px;
+	padding: 15px 15px 30px 15px;
 	line-height: 1.3em;
 	display: inline-block;
 }
 
 .storefront > div {
 	display: flex;
-	padding-bottom: 75px; 
+	padding-bottom: 70px; 
 }
 
 .storefront .btn-plans, .btn-free {
@@ -253,13 +202,15 @@ a.btn-free {
 	color: #000;
 }
 
-/*------------- ORG PLAN -------------*/
+/*------------- 5.ORG PLAN -------------*/
 
 .org-plan {
 	background-color: #fff;
 	display: flex;
 	flex-direction: column;
 }
+
+		/*--------- 5.1.ABOUT US ---------*/
 
 .about-us {
 	text-align: center;
@@ -297,6 +248,8 @@ a.btn-free {
 	line-height: 1.5;
 }
 
+		/*--------- 5.2.FEATURES ---------*/
+
 .features {
 	display: flex;
 	justify-content: space-evenly;
@@ -319,7 +272,6 @@ a.btn-free {
 }
 
 a.btn-create-org {
-	display: block;
 	align-self: center;
 	text-decoration: none;
 	background-color: #000;
