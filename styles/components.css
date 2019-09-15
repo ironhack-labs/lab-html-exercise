@@ -1,0 +1,130 @@
+@import "colors.css";
+
+
+.btn {
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    color: var(--color, var(--white));
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.btn.lead {
+    font-size: 1.25rem;
+    font-weight: 600;
+    min-width: 250px;
+    padding: 1.25rem var(--p-x, 1.25rem) 1.25rem var(--p-x, 1.25rem);
+    background-color: rgba(var(--bg), 1);
+    transition: background-color 200ms;
+}
+
+.btn.lead:hover {
+    background-color: rgba(var(--shade), 1);
+    transition: background-color 200ms;
+}
+
+.btn.skew-fill {
+    box-shadow: 8px 8px 0 rgba(var(--bg), 0.2);
+    transition: box-shadow 250ms ease-in-out;
+}
+
+.btn.skew-fill:hover {
+    box-shadow: none;
+    transition: box-shadow 250ms ease-in-out;
+}
+
+.btn.wide {
+    --p-x: 10rem;
+}
+
+.btn.red { 
+    --bg: var(--_red);
+    --shade: var(--_red-shade);
+}
+
+.btn.black { 
+    --bg: var(--_black);
+    --shade: var(--_black-shade);
+}
+
+.btn.white { 
+    --color: var(--black);
+    --bg: var(--_white);
+    --shade: var(--_white-shade);
+}
+
+/** Links */
+
+    .link {
+        transition: color 150ms ease-in;
+        
+        -webkit-user-select: none; /* Chrome/Safari */        
+        -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* IE10+ */
+
+    }
+
+    .link:hover {
+        color: rgba(var(--_black), 0.5);
+        transition: color 150ms ease-in;
+    }
+
+
+/** Icons */ 
+
+    .icon-sm {
+        width: 0.8rem;
+        height: 0.8rem;
+    }
+
+    .icon-md {
+        width: 1rem;
+        height: 1rem;
+    }
+
+    .icon-lg {
+        width: 1.3rem;
+        height: 1.3rem;
+    }
+
+/** Input Groups  */
+
+    .input-group{
+        display: table;
+        border-collapse: collapse;
+        width:100%;
+    }
+    .input-group > div{
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    .input-group-prepend{
+        background-color: rgba(var(--_black), 0.05);
+        color: rgba(var(--_black), 0.1);
+        padding: 0 12px
+    }
+
+    .input-group-append{
+        background-color: rgba(var(--_black), 0.05);
+        color: rgba(var(--_black), 0.1);
+        padding: 0 12px
+    }
+
+    .input-group-area{
+        width:100%; 
+    }
+
+    .input-group input{
+        background-color: rgba(var(--_black), 0.05);
+        display: block;
+        width: 100%;
+        padding: 12px;
+    }
+
+    .input-group input::placeholder{
+        font-family: "Fira Mono", "Andale Mono", "Consolas", monospace;
+        color: rgba(var(--_black), 0.5);
+    }

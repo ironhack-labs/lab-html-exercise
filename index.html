@@ -15,28 +15,40 @@
         <input type="button" class="btn lead white" value="Join for free"></input>
         <input type="button" class="btn lead skew-fill black wide" value="Create an Org"> -->
 
-        <header class="bg-white">
-            <div class="header-wraper gradient">
+        <header class="bg-white shadow-sm">
+            <div class="header-wraper gradient-border"></div>
+            <div class="header-wraper border-b-sm">
                 <div class="header-container my-5">
                     <div class="npm-expansions">
-                        <span class="icon-sm">❤</span>
+                        <span class="icon-sm mr-7 link">❤</span>
+                        <p id="npm-expansions-txt" class="pointer link"></p>
                     </div>
                     <nav>
                         <ul>
-                            <li class="mr-5"><a href="">npm Enterprise</a></li>
-                            <li class="mr-5"><a href="">Products</a></li>
-                            <li class="mr-5"><a href="">Solutions</a></li>
-                            <li class="mr-5"><a href="">Resources</a></li>
-                            <li class="mr-5"><a href="">Docs</a></li>
-                            <li class="mr-5"><a href="">Support</a></li>
+                            <li class="mr-5 link"><a href="">npm Enterprise</a></li>
+                            <li class="mr-5 link"><a href="">Products</a></li>
+                            <li class="mr-5 link"><a href="">Solutions</a></li>
+                            <li class="mr-5 link"><a href="">Resources</a></li>
+                            <li class="mr-5 link"><a href="">Docs</a></li>
+                            <li class="mr-5 link"><a href="">Support</a></li>
                         </ul>
                     </nav>
                 </div>
                 
             </div>
-            <div class="header-wraper">
+            <div class="header-wraper border-b-sm">
                 <div class="header-container">
-                
+                    <div class="brand mr-3">
+                        <a href="">
+                            <svg viewBox="0 0 780 250">
+                                <path fill="#231F20" d="M240,250h100v-50h100V0H240V250z M340,50h50v100h-50V50z M480,0v200h100V50h50v150h50V50h50v150h50V0H480z M0,200h100V50h50v150h50V0H0V200z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="input-group m-2">
+                        <div class="input-group-prepend"><img class="icon-lg" src="/assets/magnifying-glass.png"></div>
+                        <div class="input-group-area"><input type="text" placeholder="Search Packages"></div>
+                    </div>
                 </div>
             </div>
         </header>

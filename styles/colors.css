@@ -38,29 +38,31 @@
     }
 
 
-/** Defaults */
-    li {
-        transition: color 150ms ease-in;
-    }
-
-    li:hover {
-        color: rgba(var(--_black), 0.5);
-        transition: color 150ms ease-in;
-    }
-
 /*! Misc */
 
-    .gradient-border {
-        border-width: 3px 0 0;
-        border-top-style: solid;
+.border-b-sm {
+    border-bottom: solid 1px rgba(var(--_black), 0.1);
+}
 
-        -o-border-image: linear-gradient(139deg, #fb8817, #ff4b01, #c12127, #e02aff) 3;
-        border-image: linear-gradient(139deg, #fb8817, #ff4b01, #c12127, #e02aff) 3;
+.shadow-sm {
+    box-shadow: 0 4px 13px -3px rgba(var(--_black), 0.1);
+}
 
-        border-image-outset: 0;
-        border-image-repeat: stretch;
-        border-image-slice: 3;
-        border-image-source: linear-gradient(139deg, rgb(251, 136, 23), rgb(255, 75, 1), rgb(193, 33, 39), rgb(224, 42, 255));
-        border-image-width: 1;
+.pointer {
+    cursor: pointer;
+}
 
-    }
+.gradient-border {
+    border-top-width: 3px 0 0;
+    border-top-style: solid;
+
+    -o-border-image: linear-gradient(139deg, #fb8817, #ff4b01, #c12127, #e02aff) 3;
+    border-image: linear-gradient(139deg, #fb8817, #ff4b01, #c12127, #e02aff) 3;
+
+
+    border-image-outset: 0;
+    border-image-repeat: stretch;
+    border-image-slice: 3;
+    border-image-source: linear-gradient(139deg, rgb(251, 136, 23), rgb(255, 75, 1), rgb(193, 33, 39), rgb(224, 42, 255));
+    border-image-width: 1;
+}
