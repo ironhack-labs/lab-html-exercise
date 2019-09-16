@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
-  <head></head>
+  <head>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
   <body>
     <header>
-      <div>
-        <div>
+      <div id="header-contents">
+        <div id="blackheart-logo">
           <img
-            class="blackHeart"
+            class="blackheart"
             src="./images/black-heart.png"
             alt="black heart"
           />
@@ -22,33 +24,47 @@
           </ul>
         </nav>
       </div>
-      <div class="header-content">
-        <img src="./images/npm-logo.png" alt="icon" />
-        <img src="./images/magnifying-glass.png" alt="icon" />
-        <form>
-          <input type="text" placeholder="Search packages" />
-          <button type="submit">Search</button>
-          <a href="#Join">Join</a>
-          <a href="#Log-In">Log In</a>
+      <div class="header-elements">
+        <img class="logo" src="./images/npm-logo.png" alt="Logo icon" />
+        <form class="search-bar">
+          <div class="search-icon-wrapper">
+            <div class="mglass-icon">
+              <img
+                class="magnifyingglass"
+                src="./images/magnifying-glass.png"
+                alt="Magnifying glass icon"
+              />
+            </div>
+            <input
+              class="search-field"
+              type="text"
+              placeholder="Search packages"
+            />
+          </div>
+          <button class="submit-search" type="submit">Search</button>
         </form>
+        <a href="#Join" class="join-button">Join</a>
+        <a href="#Log-In" class="log-in-button">Log In</a>
       </div>
     </header>
     <section class="npm-individuals">
       <h1>Build amazing things</h1>
-      <article>
+      <article class="js-dev-tools">
         <p>
           Essential JavaScript development tools that help you go to market
           faster and build powerful applications using modern open source code.
         </p>
       </article>
       <div class="subscription-plans">
-        <a href="#plans">See plans</a>
-        <a href="#join-for-free">Join for free</a>
+        <a href="#plans" class="plan-button">See plans</a>
+        <a href="#join-for-free" class="join-ff-button">Join for free</a>
       </div>
     </section>
     <section class="npm-companies">
-      <img src="./images/triangle-hexagon.svg" alt="Geometrical icon" />
-      <h3>Bring the best of open source to your company</h3>
+      <div class="hexagon-icon">
+        <img src="./images/triangle-hexagon.svg" alt="Geometrical icon" />
+      </div>
+      <h2>Bring the best of open source to your company</h2>
       <article>
         <p>
           npm is the tool used by over 11,000,000 JavaScript developers around
@@ -59,9 +75,9 @@
       </article>
     </section>
     <section class="npm-features">
-      <div class="zero-configuration">
+      <div class="zero-configuration npm-feature">
         <img src="./images/zero-configuration.svg" alt="Mouse arrow" />
-        <h5>Zero configuration</h5>
+        <h3>Zero configuration</h3>
         <article>
           <p>
             Create an org, add your team, and start collaborating. Nothing to
@@ -69,9 +85,9 @@
           </p>
         </article>
       </div>
-      <div class="team-management">
+      <div class="team-management npm-feature">
         <img src="./images/team-management.svg" alt="User triangle" />
-        <h5>Team management</h5>
+        <h3>Team management</h3>
         <article>
           <p>
             Control who has access to what modules within your team namespace
@@ -79,9 +95,9 @@
           </p>
         </article>
       </div>
-      <div class="familiar-features">
+      <div class="familiar-features npm-feature">
         <img src="./images/familiar-features.svg" alt="Balanced libra" />
-        <h5>Familiar features</h5>
+        <h3>Familiar features</h3>
         <article>
           <p>
             npm Orgs has 100% parity with all the public npm registry features
@@ -89,9 +105,9 @@
           </p>
         </article>
       </div>
-      <div class="npm-audit">
+      <div class="npm-audit npm-feature">
         <img src="./images/npm-audit.svg" alt="Binoculars" />
-        <h5>npm audit</h5>
+        <h3>npm audit</h3>
         <article>
           <p>
             Enjoy the security auditing features built into the npm client, a
@@ -99,6 +115,8 @@
           </p>
         </article>
       </div>
+    </section>
+    <section class="org-button">
       <a href="#Create-an-Org">Create an Org</a>
     </section>
   </body>
