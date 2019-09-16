@@ -47,7 +47,12 @@
 
     .btn.red-hot {
         --bg: var(--_red-hot);
-        --shade: var(--_red-shade-hot);
+        --shade: var(--_red-hot);
+    }
+
+    .btn.red-search {
+        --bg: var(--_red-search);
+        --shade: var(--_red-search);
     }
 
     .btn.black { 
@@ -59,6 +64,33 @@
         --color: var(--black);
         --bg: var(--_white);
         --shade: var(--_white-shade);
+    }
+
+
+    .join-btn {
+        font-weight: 500;
+        padding: 7px 15px;
+        color: rgba(var(--_black), 0.7);
+
+        transition: color 150ms ease-in;
+    }
+    
+    .join-btn.border {
+        font-weight: 600;
+        border: solid 1px var(--gray);
+
+        transition: all 150ms ease-in;
+    }
+    
+    .join-btn:hover {
+        color: rgba(var(--_black), 0.5);
+        transition: color 150ms ease-in;
+    }
+
+    .join-btn.border:hover {
+        color: rgba(var(--_black), 0.5);
+        border-color: rgba(var(--_gray), 0.5);
+        transition: all 150ms ease-in;
     }
 
 
@@ -111,9 +143,8 @@
     }
     
     .input-group-prepend {
-        background-color: rgba(var(--_black), 0.05);
-        color: rgba(var(--_black), 0.1);
-        padding: 0 12px
+        background-color: rgba(var(--_black), 0.05);        
+        padding: 0 0 0 10px;
     }
 
     .input-group-append {

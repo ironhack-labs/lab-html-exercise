@@ -46,8 +46,9 @@ searchBarHTML.addEventListener("keyup", e => {
         results = data.results.slice(0, 10);
         results.forEach(result => {
             
-            let resultContainer = document.createElement("div");
+            let resultContainer = document.createElement("a");
             resultContainer.classList.add("rs-container", "border-b-sm", "p-3", "py-3")
+            resultContainer.setAttribute("href", `https://www.npmjs.com/package/${result.name[0]}`);
 
             let rsMeta = document.createElement("div");
             rsMeta.classList.add("rs-meta");
@@ -77,6 +78,12 @@ searchBarHTML.addEventListener("keyup", e => {
                 npmQueryContainer.append(resultContainer);
             }
         })
-        
     })
 });
+
+
+function searchPkg() {
+    if(searchBarHTML.value !== "") {
+        location.assign(`https://www.npmjs.com/search?q=${searchBarHTML.value}`); 
+    }
+  }
