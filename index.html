@@ -1,5 +1,8 @@
 
 <html>
+    <head>
+        <link rel="stylesheet" href="./style.css">
+    </head>
     <body>
         <header>
             <div>
@@ -21,7 +24,16 @@
                     </ul>
                 </nav>
             </div>
-            <div>
+            <div class="topnav">
+                <img class="logo" src="/Users/fernando/Downloads/lab-html-exercise-master/images/npm-logo.png" alt="logo">
+                <div class="search-container">
+                        <input type="text" class="search-box-input" placeholder="&#x1F50D  Search Packages" name="search">
+                        <button class= "search-box-button" type="search">Search</button>
+                </div>
+                <div class="links">
+                    <a class="join-button" href="#"> Join </a>
+                    <a href="#"> Log in </a>
+                </div>
                 <!-- add the logo and search bar and the rest afterwards -->
             </div>
         </header>
@@ -29,14 +41,14 @@
         <!-- section MainPicture -->
         <section id="mainpicture">
             <h1> Build Amazing Things </h1>
-            <article>
+            <article class="essentialjava">
                 <p>Essential JavaScript development tools that help you go to market faster and build powerful applications
                     using modern open source code. </p>
             </article>
     
             <div>
-                <a href="#"> See Plans </a>
-                <a href="#"> Join for free </a>
+                <a class="seePlans" href="#"> See Plans </a>
+                <a class="joinForFree" href="#"> Join for free </a>
             </div>
     
         </section>
