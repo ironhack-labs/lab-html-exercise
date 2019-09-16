@@ -39,15 +39,42 @@ const npmQueryContainer = document.getElementById("npm-search-results-container"
 
 searchBarHTML.addEventListener("keyup", e => {
     let result = [];
+    
     fetchNPM(searchBarHTML.value).then(data => {
+        npmQueryContainer.innerHTML = "";
+
         results = data.results.slice(0, 10);
         results.forEach(result => {
-            let h3 = document.createElement("h3");
+            
+            let resultContainer = document.createElement("div");
+            resultContainer.classList.add("rs-container", "border-b-sm", "p-3", "py-3")
+
+            let rsMeta = document.createElement("div");
+            rsMeta.classList.add("rs-meta");
+
             let p = document.createElement("p");
-            let rsMeta = document.createElement("")
-
+        
             if(results.indexOf(result) < 5) {
+                let h3 = document.createElement("h3");
+                let rsVersion = document.createElement("div");
+                rsVersion.classList.add("rs-version");
+                let pVersion = document.createElement("p");
 
+                h3.innerText = result.name[0];
+                p.innerText = result.description[0];
+                pVersion.innerText = result.version[0];
+
+                rsVersion.prepend(pVersion);
+                rsMeta.prepend(h3, p);
+
+                resultContainer.prepend(rsMeta, rsVersion);
+                npmQueryContainer.prepend(resultContainer);
+
+            } else {
+                p.innerText = result.name[0];
+                rsMeta.prepend(p);
+                resultContainer.prepend(rsMeta);
+                npmQueryContainer.append(resultContainer);
             }
         })
         
