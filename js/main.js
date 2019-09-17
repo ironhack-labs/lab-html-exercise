@@ -6,9 +6,8 @@ async function getTxt(url) { // Fetches a text document & returns content
     return data;
 }
 
-const getRandomArrayElement = async array => { // Selects random element from an array
-    let result = await array[Math.floor(Math.random() * array.length)];
-    return result;
+const getRandomArrayElement = array => { // Selects random element from an array
+    return array[Math.floor(Math.random() * array.length)];
 }
 
 async function fetchNPM(keyword) { // Performs query on NPM Registry & returns data 
@@ -30,13 +29,9 @@ const expansionsHTML = document.getElementById("npm-expansions-txt");
 let txtArr = [];
 
 getTxt("./assets/npm-expansions/expansions.txt").then(data => {
-    txtArr = data.split("\r\n");
-    console.log("textArr: " + txtArr);
-    let item = getRandomArrayElement(txtArr).then(returnedItem => {
-        expansionsHTML.innerText = returnedItem;
-    })
-    console.log("item: " + item);
-    
+    txtArr = data.split("\n");
+    let item = getRandomArrayElement(txtArr);
+    expansionsHTML.innerText = item;
 });
 
 expansionsHTML.addEventListener("click", e => {
