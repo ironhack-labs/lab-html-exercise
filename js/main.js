@@ -30,7 +30,9 @@ let txtArr = [];
 
 getTxt("./assets/npm-expansions/expansions.txt").then(data => {
     txtArr = data.split("\r\n");
+    console.log("textArr: " + txtArr);
     let item = getRandomArrayElement(txtArr);
+    console.log("item: " + item);
     expansionsHTML.innerText = item;
 });
 
