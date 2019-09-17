@@ -11,7 +11,7 @@ const getRandomArrayElement = array => { // Selects random element from an array
 }
 
 async function fetchNPM(keyword) { // Performs query on NPM Registry & returns data 
-    let response = await fetch(`http://npmsearch.com/query?q=${keyword}`);
+    let response = await fetch(`https://npmsearch.com/query?q=${keyword}`);
     let data = await response.json();
     return data;
 }
@@ -24,7 +24,6 @@ const assignPage = url => { //Redirects to given url
 // == FUNCTIONALITY ==
 
 
-window.addEventListener("DOMContentLoaded", e => {
 // Adds NPM Expansions functionality, three-word thingies that randomly appear in the header of the npmjs.com
 const expansionsHTML = document.getElementById("npm-expansions-txt");
 let txtArr = [];
@@ -96,5 +95,3 @@ function searchPkg() {
         location.assign(`https://www.npmjs.com/search?q=${searchBarHTML.value}`); 
     }
 }
-});
-
