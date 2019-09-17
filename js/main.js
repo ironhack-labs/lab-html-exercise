@@ -14,6 +14,11 @@ async function fetchNPM(keyword) {
     return data;
 }
 
+const assignPage = url => {
+    location.assign(url);
+};
+
+
 const expansionsHTML = document.getElementById("npm-expansions-txt");
 let txtArr = [];
 
@@ -30,8 +35,6 @@ expansionsHTML.addEventListener("click", e => {
         expansionsHTML.innerText = item;
     }
 });
-
-
 
 
 const searchBarHTML = document.getElementById("search-npm-packages");

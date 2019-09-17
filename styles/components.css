@@ -14,7 +14,7 @@
 
     .btn.lead {
         font-size: 1.25rem;
-        font-weight: 600;
+        font-weight: 700;
         min-width: 250px;
         padding: 1.25rem var(--p-x, 1.25rem) 1.25rem var(--p-x, 1.25rem);
         background-color: rgba(var(--bg), 1);
@@ -28,12 +28,12 @@
 
     .btn.skew-fill {
         box-shadow: 8px 8px 0 rgba(var(--bg), 0.2);
-        transition: box-shadow 250ms ease-in-out;
+        transition: box-shadow 250ms, background-color 200ms;
     }
 
     .btn.skew-fill:hover {
         box-shadow: none;
-        transition: box-shadow 250ms ease-in-out;
+        transition: box-shadow 250ms, background-color 200ms;
     }
 
     .btn.wide {
@@ -110,6 +110,11 @@
         transition: color 150ms ease-in;
     }
 
+    .link.light-red {
+        font-weight: 600;
+        text-decoration: underline;
+        color: var(--light-red);
+    }
 
 /** Icons */ 
 
@@ -128,6 +133,10 @@
         height: 1.3rem;
     }
 
+    .icon-xl {
+        width: 2rem;
+        height: 2rem;
+    }
 /** Input Groups  */
 
     .input-group {
@@ -162,12 +171,12 @@
         padding: 12px;
     }
 
-    .input-group input[type=text]{
+    .input-group input[type=text] {
+        font-family: "Fira Mono", "Andale Mono", "Consolas", monospace;
         background-color: rgba(var(--_black), 0.05);
     }
 
     .input-group input::placeholder{
-        font-family: "Fira Mono", "Andale Mono", "Consolas", monospace;
         color: rgba(var(--_black), 0.5);
     }
 
@@ -202,3 +211,35 @@
     .flex-space-between {
         justify-content: space-between;
     }
+
+
+
+    .hero {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 93rem;
+    }
+
+    h1.lead {
+        font-size: 5rem;
+        font-weight: 700;
+    }
+
+    .hero-body {
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 40%;
+    }
+
+    .hero-body h3 {
+        font-size: 1.25rem;
+        line-height: 1.875rem;
+    }
+
+    .hero-body > span {
+        line-height: 24px;
+    }
+
