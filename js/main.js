@@ -1,24 +1,29 @@
-async function getTxt(url) {
+// == UTILS ==
+
+async function getTxt(url) { // Fetches a text document & returns content
     let response = await fetch(url);
     let data = await response.text();
     return data;
 }
 
-const getRandomArrayElement = array => {
+const getRandomArrayElement = array => { // Selects random element from an array
     return array[Math.floor(Math.random() * array.length)];
 }
 
-async function fetchNPM(keyword) {
+async function fetchNPM(keyword) { // Performs query on NPM Registry & returns data 
     let response = await fetch(`http://npmsearch.com/query?q=${keyword}`);
     let data = await response.json();
     return data;
 }
 
-const assignPage = url => {
+const assignPage = url => { //Redirects to given url
     location.assign(url);
 };
 
 
+// == FUNCTIONALITY ==
+
+// Adds NPM Expansions functionality, three-word thingies that randomly appear in the header of the npmjs.com
 const expansionsHTML = document.getElementById("npm-expansions-txt");
 let txtArr = [];
 
@@ -35,7 +40,7 @@ expansionsHTML.addEventListener("click", e => {
     }
 });
 
-
+// Adds search bar functionality.
 const searchBarHTML = document.getElementById("search-npm-packages");
 const npmQueryContainer = document.getElementById("npm-search-results-container");
 
@@ -83,7 +88,7 @@ searchBarHTML.addEventListener("keyup", e => {
     })
 });
 
-
+// Adds search button functionality.
 function searchPkg() {
     if(searchBarHTML.value !== "") {
         location.assign(`https://www.npmjs.com/search?q=${searchBarHTML.value}`); 
