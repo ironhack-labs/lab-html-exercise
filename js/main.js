@@ -26,7 +26,6 @@ getTxt("./assets/npm-expansions/expansions.txt").then(data => {
     txtArr = data.split("\r\n");
     let item = getRandomArrayElement(txtArr);
     expansionsHTML.innerText = item;
-
 });
 
 expansionsHTML.addEventListener("click", e => {
