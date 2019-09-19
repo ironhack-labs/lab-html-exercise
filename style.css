@@ -35,24 +35,21 @@ nav a {
 }
 
 h1 {
-    font-size: 4em;
+    font-size: 4.3em;
     margin: 0 0 20px 0;
 }
 
 h2 {
-    font-size: 2.5em;
+    font-size: 2em;
 }
 
-section {
+#top {
+    background-color: rgba(232, 217, 217, 0.3);
     display: flex;
     flex-flow: column wrap;
     align-items: center;
     height: 500px;
     justify-content: center;
-}
-
-#top {
-    background-color: rgba(232, 217, 217, 0.3);
 }
 
 .top-article {
@@ -86,4 +83,42 @@ section {
     height: 20px;
     text-align: center;
     text-decoration: none;
+}
+
+#middle {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    height: 500px;
+    justify-content: center;
+}
+
+#middle > img {
+    height: 200px;
+    width: 200px;
+}
+
+#middle > h2 {
+    background-color: rgba(255, 204, 53, 0.4);
+    transform: skew(9deg,0deg);
+    font-style: italic;
+}
+
+.mid-article {
+    text-align: center;
+    font-size: 0.75em;
+    width: 575px; 
+}
+
+.div-container {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    height: 500px;
+    padding: 0 25px 0 25px;
+}
+
+.benefit-box > img {
+    height: 30px;
+    width: 30px;
 }
