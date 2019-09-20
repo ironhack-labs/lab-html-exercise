@@ -1,0 +1,287 @@
+/* Import fonts */
+@import url(https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800);
+@import url('https://fonts.googleapis.com/css?family=Fira+Mono');
+
+
+/* Tripoli reset code */
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-size: 1em;
+  outline: none;
+}
+
+code,
+kbd,
+samp,
+pre,
+tt,
+var,
+textarea,
+input,
+select,
+isindex,
+listing,
+xmp,
+plaintext {
+  font: inherit;
+  font-size: 1em;
+  white-space: normal;
+}
+
+dfn,
+i,
+cite,
+var,
+address,
+em {
+  font-style: normal;
+}
+
+th,
+b,
+strong,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+a,
+img,
+a img,
+iframe,
+form,
+fieldset,
+abbr,
+acronym,
+object,
+applet,
+table {
+  border: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption,
+th,
+td,
+center {
+  text-align: left;
+  vertical-align: top;
+}
+
+body {
+  line-height: 1;
+  background: white;
+  color: black;
+}
+
+q {
+  quotes: """";
+}
+
+ul,
+ol,
+dir,
+menu {
+  list-style: none;
+}
+
+sub,
+sup {
+  vertical-align: baseline;
+}
+
+a {
+  color: inherit;
+}
+
+hr {
+  display: none;
+}
+
+/* we don't need a visual hr in layout */
+
+font {
+  color: inherit !important;
+  font: inherit !important;
+  color: inherit !important;
+}
+
+/* disables some nasty font attributes in standard browsers */
+
+marquee {
+  overflow: inherit !important;
+  -moz-binding: none;
+}
+
+blink {
+  text-decoration: none;
+}
+
+nobr {
+  white-space: normal;
+}
+
+
+/* My code below */
+
+body {
+  font-family: 'Poppins';
+}
+
+#gradient-top-border {
+  display: block;
+  position: relative;
+  height: 0.15em;
+  width: 100%;
+  background-image: linear-gradient(to right, orange , rgb(197, 61, 197));
+}
+
+header > .header-line1, header > .header-line2 {
+  padding: 18px 2em;
+  font-size: 0.9em;
+  letter-spacing: 0.015625em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+}
+
+nav {
+  width: 550px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 0.88em;
+  font-weight: bolder;
+}
+
+.black-heart {
+  width: 20px;
+  height: 9px;
+  margin-right: 1.4rem;
+}
+
+.header-line2 img {
+  height: 23px;
+  width: auto;
+  position: relative;
+  top: 5px;
+  margin-right: 0;
+}
+
+.header-line2 > form {
+  width: 145vh;
+  padding: 5px 0 10px 15px;
+  margin: 0;
+  position: relative;
+  right: 15px;
+}
+
+.header-line2 > form img {
+  position: relative;
+  top: 10px;
+  height: 20px;
+  width: auto;
+  padding: 0 5px;
+}
+
+.header-line2 > form > input {
+  border: 0 none;
+  font-family: "Fira Mono", "Andale Mono", "Consolas", monospace;
+  background-color: rgba(0,0,0,0);
+}
+
+.header-line2 #search-box {
+  /* font-size: 0.8em; */
+  color: rgba(75, 75, 75, 0.8);
+  width: 130vh;
+}
+
+.header-line2 > form {
+  background-color: rgba(0,0,0,.05);
+}
+
+.header-line2 form .button {
+  background-color: #fb3e44;
+  color: white;
+  position: absolute;
+  padding: 11px;
+  bottom: 1px;
+  /* left: 1px; */
+}
+
+.white-button-black-border {
+  color: rgb(51, 50, 50);
+  font-weight: 700;
+  padding: 0.6em 1em;
+  margin-left: 0;
+  border: 1px solid rgb(51, 51, 51);
+}
+
+.login {
+  color: rgb(51, 50, 50);
+}
+
+#home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #f3f0f0;
+}
+
+h1 {
+  padding-top: 60px;
+  font-size: 5em;
+  font-weight: 700;
+  line-height: 2.5em;
+}
+
+.width-container {
+  width: 600px;
+  /* height: 400px; */
+}
+
+article {
+  font-size: 1.3em;
+  letter-spacing: 0.03em;
+  line-height: 1.5em;
+}
+
+.home-btns {
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.2em;
+}
+
+.btn-red-dropshadow {
+  color: white;
+  background-color: #fb3e44;
+  padding: 1em 3.5em;
+  margin: 20px 5px;
+}
+
+#open-source {
+  background-color: #f7f7f7;
+}
