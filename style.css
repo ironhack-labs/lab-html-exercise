@@ -43,6 +43,10 @@ h2 {
     font-size: 2em;
 }
 
+h3 {
+    color: #ed1c24
+}
+
 #top {
     background-color: rgba(232, 217, 217, 0.3);
     display: flex;
@@ -67,9 +71,14 @@ h2 {
     margin-top: 20px;
 }
 
+.top-buttons > a {
+    font-size: 1.25em;
+}
+
 .plans {
-    padding: 30px;
-    width: 100px;
+    padding-top: 35px;
+    padding-bottom: 10px;
+    width: 200px;
     background-color: #FB3B49;
     color: white;
     box-shadow: 8px 8px 0 rgba(251,59,73,.2);
@@ -79,7 +88,7 @@ h2 {
 
 .join {
     padding: 40px;
-    width: 100px;
+    width: 120px;
     height: 20px;
     text-align: center;
     text-decoration: none;
@@ -90,6 +99,7 @@ h2 {
     flex-flow: column wrap;
     align-items: center;
     height: 500px;
+    margin-bottom: 64px;
     justify-content: center;
 }
 
@@ -100,6 +110,8 @@ h2 {
 
 #middle > h2 {
     background-color: rgba(255, 204, 53, 0.4);
+    width: 800px;
+    text-align: center;
     transform: skew(9deg,0deg);
     font-style: italic;
 }
@@ -110,15 +122,52 @@ h2 {
     width: 575px; 
 }
 
+#bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
 .div-container {
     display: flex;
-    flex-flow: row;
-    justify-content: space-around;
-    height: 500px;
-    padding: 0 25px 0 25px;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 64px 32px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.benefit-box {
+    height: 200px;
+    width: 250px;
+    padding: 80px 32px 0 32px;
 }
 
 .benefit-box > img {
     height: 30px;
     width: 30px;
+}
+
+.create-org {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 64px;
+    margin-bottom: 128px; 
+}
+
+.create-org > a {
+    background-color: black;
+    box-shadow: 8px 8px 0 rgba(128,83,350,0.2);
+    text-align: center;
+    vertical-align: center;
+    color: white;
+    text-decoration: none;
+    width: 360px;
+    font-size: 1.5em;
+    padding-top: 10px;
+    padding-bottom: 10px; 
 }
