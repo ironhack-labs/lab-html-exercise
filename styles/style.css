@@ -158,6 +158,12 @@ header > .header-line1, header > .header-line2 {
   border-bottom: 1px solid rgba(212, 210, 210, 0.5);
 }
 
+.black-heart {
+  width: 20px;
+  height: 10px;
+  margin-right: 1.4rem;
+}
+
 nav {
   width: 85vh;
   padding-right: 8px;
@@ -175,12 +181,6 @@ nav a {
   color: black;
   font-size: 1em;
   font-weight: 500;
-}
-
-.black-heart {
-  width: 20px;
-  height: 10px;
-  margin-right: 1.4rem;
 }
 
 .header-line2 img {
@@ -222,6 +222,8 @@ nav a {
   font-family: "Fira Mono", "Andale Mono", "Consolas", monospace;
 }
 
+/* I had trouble aligning the button with the text input box as well as 
+consistent styling between browsers. I'm sure there is a better solution... */
 .header-line2 form .button {
   background-color: #fb3e44;
   color: white;
@@ -265,7 +267,6 @@ h1 {
 
 .width-container {
   width: 600px;
-  /* height: 400px; */
 }
 
 article {
@@ -328,6 +329,7 @@ article {
   font-size: 2.25em;
   font-weight: 600;
   text-align: center;
+  /* I'm sure there's a better solution! */
   transform: skewX(-9deg);
 }
 
