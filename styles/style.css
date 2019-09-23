@@ -1,5 +1,5 @@
 /* Import fonts */
-@import url(https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800);
+@import url(https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800);
 @import url('https://fonts.googleapis.com/css?family=Fira+Mono');
 
 
@@ -144,21 +144,23 @@ body {
   position: relative;
   height: 0.15em;
   width: 100%;
-  background-image: linear-gradient(to right, orange , rgb(197, 61, 197));
+  background-image: linear-gradient(to right, rgb(233, 152, 1), red , rgb(197, 61, 197));
 }
 
 header > .header-line1, header > .header-line2 {
-  padding: 18px 2em;
+  padding: 18px 32px;
   font-size: 0.9em;
-  letter-spacing: 0.015625em;
+  letter-spacing: 0.015em;
   display: flex;
+  flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid lightgray;
+  border-bottom: 1px solid rgba(212, 210, 210, 0.5);
 }
 
 nav {
-  width: 550px;
+  width: 85vh;
+  padding-right: 8px;
 }
 
 nav ul {
@@ -171,13 +173,13 @@ nav ul {
 nav a {
   text-decoration: none;
   color: black;
-  font-size: 0.88em;
-  font-weight: bolder;
+  font-size: 1em;
+  font-weight: 500;
 }
 
 .black-heart {
   width: 20px;
-  height: 9px;
+  height: 10px;
   margin-right: 1.4rem;
 }
 
@@ -185,21 +187,23 @@ nav a {
   height: 23px;
   width: auto;
   position: relative;
-  top: 5px;
+  top: 3px;
   margin-right: 0;
 }
 
 .header-line2 > form {
   width: 145vh;
+  height: 28px;
   padding: 5px 0 10px 15px;
   margin: 0;
-  position: relative;
-  right: 15px;
+  position: absolute;
+  left: 120px;
+  background-color: rgba(0,0,0,.05);
 }
 
 .header-line2 > form img {
   position: relative;
-  top: 10px;
+  top: 8px;
   height: 20px;
   width: auto;
   padding: 0 5px;
@@ -207,39 +211,41 @@ nav a {
 
 .header-line2 > form > input {
   border: 0 none;
-  font-family: "Fira Mono", "Andale Mono", "Consolas", monospace;
   background-color: rgba(0,0,0,0);
 }
 
 .header-line2 #search-box {
-  /* font-size: 0.8em; */
   color: rgba(75, 75, 75, 0.8);
-  width: 130vh;
-}
-
-.header-line2 > form {
-  background-color: rgba(0,0,0,.05);
+  width: 128vh;
+  font-size: 13px;
+  font-weight: 300px;
+  font-family: "Fira Mono", "Andale Mono", "Consolas", monospace;
 }
 
 .header-line2 form .button {
   background-color: #fb3e44;
   color: white;
   position: absolute;
-  padding: 11px;
+  padding: 13px 16px;
   bottom: 1px;
-  /* left: 1px; */
+  right: 1px;
+  font-family: 'Poppins';
+  font-size: 16px;
+}
+
+.buttons > a {
+  padding: 0.3em 1em;
+  margin: 0;
 }
 
 .white-button-black-border {
-  color: rgb(51, 50, 50);
-  font-weight: 700;
-  padding: 0.6em 1em;
-  margin-left: 0;
-  border: 1px solid rgb(51, 51, 51);
+  color: rgb(87, 84, 84);
+  font-weight: 600;
+  border: 1px solid rgb(87, 84, 84);
 }
 
 .login {
-  color: rgb(51, 50, 50);
+  color: rgb(87, 84, 84);
 }
 
 #home {
@@ -251,7 +257,7 @@ nav a {
 }
 
 h1 {
-  padding-top: 60px;
+  padding-top: 55px;
   font-size: 5em;
   font-weight: 700;
   line-height: 2.5em;
@@ -264,7 +270,7 @@ h1 {
 
 article {
   font-size: 1.3em;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.02em;
   line-height: 1.5em;
 }
 
@@ -272,16 +278,101 @@ article {
   display: flex;
   justify-content: center;
   font-weight: 700;
-  font-size: 1.2em;
+  font-size: 1.3em;
+}
+
+.home-btns-padding {
+  padding: 1em 3.4em;
+  margin: 50px 20px 60px 20px;
 }
 
 .btn-red-dropshadow {
   color: white;
   background-color: #fb3e44;
-  padding: 1em 3.5em;
-  margin: 20px 5px;
+  box-shadow: 8px 8px rgba(226, 12, 12, 0.2)
 }
 
-#open-source {
+.btn-white-noborder {
+  background-color: white;
+  color: black;
+}
+
+
+.lt-bg {
   background-color: #f7f7f7;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+
+#open-source > img {
+  display: block;
+  padding: 60px;
+  margin: 0 auto;
+  width: 260px;
+  height: auto;
+}
+
+.yellow-skewed-background {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: 2.2em;
+  width: 74%;
+  padding: 0 0;
+  margin: 0 auto;
+  background-color: rgba(255,204,53,.4);
+  transform: skewX(9deg);
+}
+
+#open-source h2 {
+  font-size: 2.25em;
+  font-weight: 600;
+  text-align: center;
+  transform: skewX(-9deg);
+}
+
+#open-source > article {
+  width: 800px;
+  font-size: 1rem;
+  text-align: center;
+  margin: 40px auto;
+}
+
+.features-container {
+  display: flex;
+  justify-content: center;
+}
+
+.features-box {
+  width: 15%;
+  margin: 40px 3%;
+}
+
+.features-box img {
+  height: 32px;
+  width: auto;
+  padding-bottom: 20px;
+}
+
+.features-box h3 {
+  color: red;
+  font-weight: 700;
+  padding-bottom: 40px;
+}
+
+.features-box p {
+  line-height: 1.5em;
+}
+
+.btn-blackbg-white {
+  display: block;
+  font-size: 1.2em;
+  font-weight: 700;
+  text-align: center;
+  color: white;
+  background-color: black;
+  padding: 20px 60px;
+  width: 250px;
+  margin: 20px auto;
+  box-shadow: 8px 8px rgba(0,0,0,0.15);
 }
