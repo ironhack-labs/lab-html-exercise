@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+/*-----------------------------------------Reset css---------------------------------------------*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*---------------------------------------------Fin del reset css-----------------------------------------------*/
+
+body {
+    font-family: 'Poppins';
+    min-width: 1200px;
+}
+
+    header{
+        width: 100%;
+        height: 112px;
+        margin-top: 2px;
+        background-color:  rgb(212, 203, 203);
+    }
+
+        #header-top{
+            background-color: white;
+            display: flex;
+            justify-content: space-between;
+            height: 55px;
+        }
+
+            #header-top div{
+                display: flex;
+                width: 15%;
+                margin-left: 2%;
+            }
+
+                #header-top div img{
+                    height: 15px;
+                    width: 30px;
+                    margin-top: 20px;
+                }
+
+                #header-top div p{
+                    font-size: 0.9em;
+                    height: 15px;
+                    margin-top: 21px;
+                    margin-left: 5%;
+                    font-weight: 800;
+                }
+            
+            #header-top nav{
+                padding-top: 15px;
+                width: 40%;
+                margin-right: 3%;
+            }
+                #header-top nav ul{
+                    display: flex;
+                    justify-content: space-between;
+                    height: 20px;
+                    margin-top: 8px;
+                }
+
+                    #header-top nav ul li a{
+                        font-weight: 800;
+                        color: black;
+                        text-decoration: none;
+                    }
+
+        #header-bottom{
+            background-color: white;
+            margin-top: 2px;
+            height: 55px;
+            display: flex;
+        }
+
+            #npm-logo{
+                margin-left: 1.7%;
+                margin-top: 12px;
+            }
+
+                #header-bottom div img{
+                    height: 30px;
+                    width: 70px;
+                }
+
+            form{
+                height: 50px;
+                width: 76%;
+                display: flex;
+                margin-top: 2px;
+                margin-left: 1%;
+            }
+               
+                form div{
+                    height: 31px;
+                    width: 30px;
+                    margin-top: 6px;
+                    padding-top: 5px;
+                }
+
+                    form #form-div img{
+                        height: 20px;
+                        width: 20px;
+                        display: block;
+                        margin: 3px auto 0 auto;
+                    }
+
+                form input{
+                    background-color: rgb(212, 203, 203);
+                    height: 30px;
+                    width: 90%;
+                    margin-top: 6px;
+                }
+
+                form button{
+                    background-color: rgb(238, 63, 63);
+                    margin-top: 6px;
+                    height: 36px;
+                    border: none;
+                    padding-bottom: 3px;
+                    font-weight: 600;
+                }
+
+            #header-bottom #joinLogIn{
+                width: 15%;
+                height: 50px;
+                margin-top: 2px;
+                display: flex;
+            }
+
+                #join{
+                    width: 30%;
+                    height: 28px;
+                    margin-left: 17%;
+                    margin-top: 9px;
+                    border: solid;
+                    border-width: 1px;
+                }
+
+                    #join a{
+                        text-decoration: none;
+                        font-size: 0.8em;
+                        display: block;
+                        float: left;
+                        margin-top: 8px;
+                        margin-left: 28%;
+                        font-weight: 600;
+                        color: black;
+                    }
+
+                #logIn{
+                    width: 30%;
+                    height: 28px;
+                    margin-top: 9px;
+                }
+
+                    #logIn a{
+                        text-decoration: none;
+                        font-size: 0.8em;
+                        display: block;
+                        float: left;
+                        margin-top: 8px;
+                        margin-left: 20%;
+                        font-weight: 600;
+                        color: black;
+                    }
+
+    #section1{
+        background-color: rgb(236, 221, 224);
+        padding-top: 100px;
+        padding-bottom: 120px;
+    }
+
+        #section1 h1{;
+            font-size: 5em;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        #section1 p{
+            width: 40%;
+            text-align: center;
+            line-height: 1.5em;
+            margin: 70px auto 0 auto;
+            font-size: 1.25em;
+        }
+
+        #section1 div{
+            display: flex;
+            height: 65px;
+            justify-content: center;
+            width: 43%;
+            margin: 0 auto 0 auto;
+            margin-top: 30px;
+        }
+
+
+            #see-plans{
+                background-color: rgb(238, 63, 63);
+                width: 15%;
+                -webkit-box-shadow: 6px 6px 5px 0px rgba(212,167,208,1);
+                -moz-box-shadow: 6px 6px 5px 0px rgba(212,167,208,1);
+                box-shadow: 6px 6px 5px 0px rgba(212,167,208,1);
+            }
+ 
+                #see-plans a{
+                    display: block;
+                    float: left;
+                    margin-top: 22px;
+                    text-decoration: none;
+                    font-weight: 800;
+                    font-size: 1.2em;
+                    color: white;
+                }
+
+            #join-for-free{
+                background-color: white;
+                width: 15%;
+            }
+
+                #join-for-free a{
+                    display: block;
+                    float: left;
+                    margin-top: 22px;
+                    text-decoration: none;
+                    font-weight: 800;
+                    font-size: 1.2em;
+                    color: black;
+                }
+
+    #section2{
+        margin-top: 30px;
+        padding-top: 40px;
+        padding-bottom: 50px;
+    }
+
+        #section2 div{
+            width: 20%;
+            height: 245px;
+            margin: 0 auto 0 auto;
+        }
+
+        #section2 h3{
+            background-color: rgb(243, 218, 171);
+            margin: 50px auto 0 auto;
+            text-align: center;
+            font-weight: 800;
+            width: 60%;
+            font-size: 2em;
+            line-height: 1.5em;
+        }
+
+        #section2 p{
+            margin: 25px auto 0 auto;
+            width: 55%;
+            text-align: center;
+            font-size: 1.1em;
+            line-height: 1.2em;
+        }
+
+    footer{
+        margin-top: 30px;
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+
+        #footer-div{
+            display: flex;
+            width: 90%;
+            margin: 0 auto 0 auto;
+            justify-content: space-between;
+        }
+
+            .container{
+                width: 18%;
+            }
+
+                .container img{
+                    width: 18%;
+                    height: 36px;
+                }
+
+                .container h4{
+                    color: red;
+                    margin-top: 10px;
+                    font-weight: 800;
+                }
+
+                .container p{
+                   margin-top: 15px;
+                }
+
+        #footer-button{
+            background-color: black;
+            margin: 50px auto 0 auto;
+            width: 25%;
+            height: 50px;
+            -webkit-box-shadow: 5px 5px 6px 1px rgba(161,143,143,1);
+            -moz-box-shadow: 5px 5px 6px 1px rgba(161,143,143,1);
+            box-shadow: 5px 5px 6px 1px rgba(161,143,143,1);
+        }
+
+            #footer-button a{
+                color: white;
+                text-decoration: none;
+                font-size: 1.3em;
+                display: block;
+                float: left;
+                margin-top: 15px;
+                margin-left: 96px;
+                font-weight: 800;
+            }
