@@ -1,12 +1,14 @@
-<!DOCTYPE html>
+<!doctype html>
 
-<html lang="en">
+<html lang="en"></html>
 
 <head>
   <meta charset="UTF-8" />
   <title>NPM | clone</title>
   <link rel="icon" href="./images/npm-logo-s.png" type="image/x-icon" />
-  <link rel="stylesheet" href="./style.css" type="text/css" />
+  <link rel="stylesheet" href="./reset.css" />
+  <link rel="stylesheet" href="./style.css" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
 </head>
 
 <body>
@@ -27,12 +29,12 @@
     <div class="header-control">
       <a href="#"><img src="./images/npm-logo.png" alt="npm" /></a>
       <form action="/search" method="post">
-        <label class="mag-glass" for="serarch-field"><img src="./images/magnifying-glass.png" alt="search icon"></label>
+        <label class="mag-glass" for="serarch-field"><img src="./images/magnifying-glass.png"></label>
         <input type="text" name="search-field" placeholder="Search packages" />
         <button type="submit">Search</button>
       </form>
       <div class="log-buttons">
-        <a href="#" class="btn-join">Join</a><a href="#" class="btn-login">Log In</a>
+        <a class="btn-join" href="#">Join</a><a class="btn-login" href="#">Log In</a>
       </div>
     </div>
   </header>
@@ -45,12 +47,12 @@
       </p>
     </article>
     <div>
-      <a href="#" class="btn-plans">See plans</a><a href="#" class="btn-free">Join for free</a>
+      <a class="btn-plans" href="#">See plans</a><a class="btn-free" href="#">Join for free</a>
     </div>
   </section>
   <section class="org-plan">
     <div class="about-us">
-      <img src="./images/triangle-hexagon.svg" alt="Best open source" />
+      <img src="./images/triangle-hexagon.svg" alt="Hexagon created with six triangles" />
       <h2>Bring the best of open source to your company<span class="yellow-highlight"></span></h2>
       <p>
         npm is the tool used by over 11,000,000 JavaScript developers around
@@ -61,7 +63,7 @@
     </div>
     <div class="features">
       <article class="feature">
-        <img src="./images/zero-configuration.svg" alt="zero configuration" />
+        <img src="./images/zero-configuration.svg" alt="arrow pointing to a text field" />
         <h3>Zero configuration</h3>
         <p>
           Create an org, add your team, and start collaborating. Nothing to
@@ -69,7 +71,7 @@
         </p>
       </article>
       <article class="feature">
-        <img src="./images/team-management.svg" alt="team management" />
+        <img src="./images/team-management.svg" alt="linked people" />
         <h3>Team management</h3>
         <p>
           Control who has access to what modules within your team namespace
@@ -77,7 +79,7 @@
         </p>
       </article>
       <article class="feature">
-        <img src="./images/familiar-features.svg" alt="familiar features" />
+        <img src="./images/familiar-features.svg" alt="two stacks on a balance" />
         <h3>Familiar features</h3>
         <p>
           npm Orgs has 100% parity with all the public npm registry features
@@ -85,7 +87,7 @@
         </p>
       </article>
       <article class="feature">
-        <img src="./images/npm-audit.svg" alt="npm auditing" />
+        <img src="./images/npm-audit.svg" alt="binoculars" />
         <h3>npm audit</h3>
         <p>
           Enjoy the security auditing features built into the npm client, a
@@ -93,7 +95,7 @@
         </p>
       </article>
     </div>
-    <a class="btn-create-org" href="">Create an Org</a>
+    <a class="btn-create-org" href="#">Create an Org</a>
   </section>
 </body>
 

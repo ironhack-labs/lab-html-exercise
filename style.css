@@ -14,40 +14,31 @@
 
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600&display=swap');
 
-@import url(./reset.css);
-
 /*------------- 2.DEFAULTS -------------*/
 
 body {
-	font-family: 'Poppins';
-	background-image: radial-gradient(circle , #666 10%, #eee 80%);
-	font-size: 14px;
-	width: 940px;
+	width: 940px; /*Supplied site snapshot width*/
 	margin: 0 auto;
+	font-family: 'Poppins';
+	font-size: 14px;
+	background-image: radial-gradient(circle, #666 10%, #eee 80%);
 }
 
-h1, h3 {
-	font-weight: 700;
-}
+h1,
+h3 { font-weight: 700; }
 
-h1 {
-	font-size: 50px;
-}
+h1 { font-size: 50px; }
 
 h2 {
 	font-size: 24px;
 	font-weight: 500;
 }
 
-h3 {
-	color: #fb3c43;
-}
+h3 { color: #fb3c43; }
 
 /*------------- 3.HEADER -------------*/
 
-header {
-	background-color: #fff;
-}
+header { background-color: #fff; }
 
 header > div {
 	display: flex;
@@ -67,76 +58,64 @@ header > div {
 	font-size: 9px;
 }
 
-.heart {
-	padding-right: 18px;
-}
+.heart { padding-right: 18px; }
 
-.nav-list {
-	display: flex;
-}
+.nav-list { display: flex; }
 
 .nav-list li a {
 	margin-right: 12px;
+	font-weight: 500;
 	text-decoration: none;
 	color: #000;
-	font-weight: 500;
 }
 
-.header-control a {
-	height: 100%;
-}
+.header-control a { height: 100%; }
+
 .header-control img {
 	height: 100%;
 	padding: 6px 10px 6px 0;
 }
 
 .header-control form {
-	background-color: #f2f2f2;
-	width: 100%;
 	display: flex;
+	width: 100%;
+	background-color: #f2f2f2;
 }
 
 .header-control form button {
-	color: #fff;
-	background-color: #fb3c43;
+	border: 0;
+	padding: 0 11px;
 	font-family: 'Poppins';
 	font-weight: normal;
 	font-size: 9px;
-	border: 0;
-	padding: 0 11px;
+	color: #fff;
+	background-color: #fb3c43;
 }
 
-.header-control form button:hover {
-	cursor: pointer;
-}
+.header-control form button:hover { cursor: pointer; }
 
 .header-control form input {
-	border: 0;
 	width: 100%;
-	height: 100%;
-	background-color: #f2f2f2;
+	border: 0;
 	padding: 0;
-	
+	background-color: #f2f2f2;
 }
 
 .header-control form .mag-glass {
-	height: 100%;
 	width: 20px;
 	margin: 0 5px 0 10px;
 }
 
-.log-buttons {
-	display: flex;
-}
+.log-buttons { display: flex; }
 
 .log-buttons a {
-	text-decoration: none;
-	color: #000;
+	align-self: center;
 	width: 41px;
 	height: initial;
-	align-self: center;
-	text-align: center;
 	padding: 5px 0;
+	text-align: center;
+	text-decoration: none;
+	color: #000;
 }
 
 a.btn-login {
@@ -145,35 +124,33 @@ a.btn-login {
 }
 
 a.btn-join {
-	border: 1px inset #ccc;
 	margin-left: 20px;
+	border: 1px inset #ccc;
 	font-weight: 600;
 }
 
 /*------------- 4.STOREFRONT -------------*/
 
 .storefront {
-	background-color: #f8f4f3;
 	display: flex;
 	flex-direction: column; 
 	align-items: center;
+	background-color: #f8f4f3;
 }
 
 .storefront article {
-	text-align: center;
 	width: 75%;
 	padding-top: 55px;
+	text-align: center;
 }
 
-.storefront article h1 {
-	padding: 25px;
-}
+.storefront article h1 { padding: 25px; }
 
 .storefront article p {
+	display: inline-block;
 	width: 410px;
 	padding: 15px 15px 30px 15px;
 	line-height: 1.3em;
-	display: inline-block;
 }
 
 .storefront > div {
@@ -181,33 +158,33 @@ a.btn-join {
 	padding-bottom: 70px; 
 }
 
-.storefront .btn-plans, .btn-free {
-	text-decoration: none;
+.storefront a {
+	text-align: center;
 	width: 160px;
 	margin: 15px;
 	padding: 15px 0;
-	text-align: center;
 	font-weight: 500;
 	font-size: 12px;
+	text-decoration: none;
 }
 
 a.btn-plans {
-	background-color: #fb3c43;
 	color: #fff;
+	background-color: #fb3c43;
 	box-shadow: 5px 5px #f9d2d5;
 }
 
 a.btn-free {
-	background-color: #fff;
 	color: #000;
+	background-color: #fff;
 }
 
 /*------------- 5.ORG PLAN -------------*/
 
 .org-plan {
-	background-color: #fff;
 	display: flex;
 	flex-direction: column;
+	background-color: #fff;
 }
 
 		/*--------- 5.1.ABOUT US ---------*/
@@ -230,21 +207,22 @@ a.btn-free {
 
 .yellow-highlight {
 	position: absolute;
-	line-height: 1.25;
 	width: 65%;
     height: 100%;
 	z-index: -1;
 	left: 17%;
-    top: -6%;
+	top: -6%;
+	transform: skew(9deg, 0deg);
+	line-height: 1.25;
     background-color: rgba(255,204,53,.4);
-    transform: skew(9deg,0deg);
+
 }
 
 .about-us p {
-	font-size: 10px;
-	width: 52%;
 	text-align: center;
+	width: 52%;
 	margin: 0 auto;
+	font-size: 10px;
 	line-height: 1.5;
 }
 
@@ -263,22 +241,18 @@ a.btn-free {
 	line-height: 1.5;
 }
 
-.feature img {
-	width: 25px;
-}
+.feature img { width: 25px; }
 
-.feature h3 {
-	padding: 10px 0 20px 0;
-}
+.feature h3 { padding: 10px 0 20px 0; }
 
 a.btn-create-org {
 	align-self: center;
-	text-decoration: none;
-	background-color: #000;
-	color: #fff;
-	font-size: 12px;
-	font-weight: 500;
-	box-shadow: 5px 5px #f2f2f2;
 	padding: 15px 100px;
 	margin-bottom: 30px;
+	font-size: 12px;
+	font-weight: 500;
+	text-decoration: none;
+	color: #fff;
+	background-color: #000;
+	box-shadow: 5px 5px #f2f2f2;
 }
