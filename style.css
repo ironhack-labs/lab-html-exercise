@@ -14,6 +14,18 @@ header > div {
     align-items: center;
     border-bottom: 1px solid lightgray;
 }
+header a {
+    text-decoration: none;
+}
+#join {
+    color: black;
+    border: 3px solid #F2F2F2;
+    padding: 4px;
+    margin-left: 10px;
+}
+#logIn {
+    color:black;
+}
 nav {
     width: 600px;
 }
@@ -30,22 +42,36 @@ nav a{
 }
 
 .searchBar label{
-    color: rgba(0, 0, 0, 0.05);
+    color:rgba(0, 0, 0, 0.05);
 }
 .searchBar input {
     color: rgba(0, 0, 0, 0.05);
+    width: 830px;
+    background-color: #F2F2F2;
+    margin-right: -4;
+    padding: 8px;
+    border: none;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 .searchBar > form > a {
     background-color: #fb3e44;
     color: white;
     text-decoration: none;
+    padding: 7px;
+    margin-left: 0;
 }
 
 .blackHeart {
     width: 20px;
     margin-right: 1rem;
 }
-
+#magnifying-glass {
+    width: 20px;
+}
+#npmLogo {
+    width: 60px;
+}
 
 #characteristics {
     display: flex;
@@ -59,20 +85,60 @@ nav a{
     display: flexbox;
     flex-direction: row;
 }
+#characteristics h1 {
+    font-size: 4.5em;
+    padding-bottom: 20px;
+}
+#characteristics article {
+    justify-content: center;
+    width: 400px;
+    padding-bottom: 30px;
+}
 #seePlans {
     background-color: #FB3B49;
     color: white;
+    text-decoration: none;
+    margin: 20px;
+    padding: 10px;
     box-shadow: 8px 8px 0 rgba(251, 59, 73, .2);
 }
+#joinForFree {
+    text-decoration: none;
+    color: black;
+    margin: 20px;
 
-
-
+}
 #company {
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+
+#company img {
+    width: 500px;
+}
+
+#company h2 {
+    background-color: rgba(255, 204, 53, .5);
+    transform: skew(9deg,0deg);
+    font-style: italic;
 }
 
 #benefits {
     display: flex;
     flex-direction: row;
+}
+
+#benefits img {
+    width: 60px;
+}
+
+#benefits h4 {
+    color: #ed1c24;
+}
+
+#benefits a{
+    box-shadow: 8px 8px 0 rgba(128, 83, 35, .2);
+    text-decoration: none;
+    color: white;
 }
