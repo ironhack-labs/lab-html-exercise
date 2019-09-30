@@ -3,6 +3,10 @@
 body {
   font-family: 'Poppins';
 }
+* {
+    margin: 0;
+    padding: 0;
+  }
 header > div {
     padding: 0 25px;
     display: flex;
@@ -25,7 +29,50 @@ nav a{
     color: black;
 }
 
+.searchBar label{
+    color: rgba(0, 0, 0, 0.05);
+}
+.searchBar input {
+    color: rgba(0, 0, 0, 0.05);
+}
+.searchBar > form > a {
+    background-color: #fb3e44;
+    color: white;
+    text-decoration: none;
+}
+
 .blackHeart {
     width: 20px;
     margin-right: 1rem;
+}
+
+
+#characteristics {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 600px;
+    background-color: rgba(232, 217, 217, .3);
+    align-items: center;
+}
+#characteristics div {
+    display: flexbox;
+    flex-direction: row;
+}
+#seePlans {
+    background-color: #FB3B49;
+    color: white;
+    box-shadow: 8px 8px 0 rgba(251, 59, 73, .2);
+}
+
+
+
+#company {
+    display: flex;
+    flex-direction: column;
+}
+
+#benefits {
+    display: flex;
+    flex-direction: row;
 }
