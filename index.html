@@ -2,9 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>module lab html</title>
+  <title>lab-html exercise</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!--Header-->
     <header>
         <div>
             <div>
@@ -22,66 +24,95 @@
                 </ul>
             </nav>
         </div>
-    
-        <div>
+         
+        
         <!-- add logo, search bar and buttons (or links and style them as buttons later)        -->
+        <div id="deeper-div">
+           
+            <div class="logo">
             <img class="npmLogo" src="images/npm-logo.png" alt="npm logo">
-            <form action="some-url" method="get">
-                <img class="magnifyingGlass" src="images/magnifying-glass.png" alt="magnifying glass">
-                <label for="searchPackages"></label>
-                <input type="text" id="searchPackages" name="searchPackages" placeholder="Search packages">
+            </div>
+            
+                <form action="some-url" method="get"> 
+             
+            <div class="grey-input">
+                <div class="input-slot">
+                        <img class="magnifyingGlass" src="images/magnifying-glass.png" alt="magnifying glass">
+                        <label for="searchPackages"></label>
+                        <input type="text" id="searchPackages" name="searchPackages" placeholder="Search packages">
+                </div>
                 <button>Search</button>
+            </div>
             </form>
-            <a  href="#" class="join-btn">Join</a>
-            <a href="#" class="login-btn">Log in</a>
+           
+            <div class="div-buttons">
+                    <a  href="#" class="join-btn">Join</a>
+                    <a href="#" class="login-btn">Log in</a>
+                    </div>
+                    
+            </div>
+          
         </div>
-        <!--Header-->
     </header>
+    
     <!--Section1-->
     <section id="general-information">
-        <h1>Build amazing thing</h1>
-        <article><p>Essential JavaScript development tools that help you go to market faster 
-            and build powerful applications using modern open source code.</p></article>
-            <div>
-                <a href="#">See plans</a>
-                <a href="#">Join for free</a>
+        <div>
+            <h1>Build amazing things</h1>
+        
+            <article>
+                 <p>Essential JavaScript development tools that help you<br> go to market faster 
+                    and build powerful<br> applications using modern open source code.</p>
+            </article>
+            
+            <div class="button-container">
+                <a href="#" class="see-plansbtn">See plans</a>
+                <a href="#" class="join-freebtn">Join for free</a>
             </div>
     </section>
-   <!--Section2-->
+   
+    <!--Section2-->
     <section id="explanations">
-        <img src="images/triangle-hexagon.svg">
+        <div>
+            <img src="images/triangle-hexagon.svg" class="img-hexagon">
+        </div>
         <h2>Bring the best open source to your company</h2>
         <article><p>npm is the tool used by over 11,000,000 JavaScript developers around the world. Your 
-            developers already use it. Your company depends on it. 
-            Create an Org and get more out of the tools your team alreday 
+            developers<br> already use it. Your company depends on it. 
+            Create an Org and get more out of the tools your<br> team alreday 
             knows and loves.</p>
         </article>
     </section> 
+    
     <!--Section3--> 
     <section id="arguments">
+        <div class="arguments-bloc">
         <div class="zero-configuration">
             <img src="images/zero-configuration.svg">
             <h4>Zero configuration</h4>
-            <p>Create an org, add your team, and start collaborating.
-                Nothing to configure, set up, or manage
+            <p>Create an org, add your<br> team, and start<br> collaborating.
+                Nothing to<br> configure, set up, or<br> manage.
             </p>
         </div>
         <div class="team-management">
             <img src="images/team-management.svg">
             <h4>Team management</h4>
-            <p>Control who has access to what modules whithin your team namespace using straightforward team management capabilities</p>
+            <p>Control who has access<br> to what modules whithin<br> your team namespace<br> using straightforward<br> team management<br> capabilities.</p>
         </div>
         <div class="familiar-features">
             <img src="images/familiar-features.svg">
             <h4>Familiar features</h4>
-            <p>npm Orgs has 100% parity whith all public npm registry features your developers already use.</p>
+            <p>npm Orgs has 100% parity<br> whith all public npm<br> registry features your<br> developers already use.</p>
         </div>
         <div class="npm-audit">
             <img src="images/npm-audit.svg">
             <h4>npm audit</h4>
-            <p>Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer</p>
+            <p>Enjoy the security<br> auditing features built<br> into the npm client, a<br> zero-friction way to make<br> open source software<br> safer.</p>
         </div>
-        <a href="#">Create an Org</a>
+        </div>
+        <div class="create-btn-container">
+        <a href="#" class="create-btn">Create an Org</a>
+        </div>
     </section>
 </body>
 </html>
