@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body {
+    font-family: 'Poppins';
+    font-size: 14px;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header>div {
+    height: 6vh;
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+}
+
+nav {
+    width: 600px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+#black-heart {
+    width: 20px;
+    margin-right: 1rem;
+}
+
+#logo {
+    width: 60px;
+    margin: 20px 0 20px 0;
+}
+
+.logo-searchbar form {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.logo-searchbar form label,
+input {
+    color: rgba(0, 0, 0, .05);
+    background-color: rgb(243, 241, 241);
+    padding: 8px;
+    border: none;
+    line-height: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.logo-searchbar form input {
+    width: 90%;
+}
+
+.logo-searchbar label img {
+    width: 1em;
+    vertical-align: -3px;
+}
+
+.logo-searchbar form button {
+    padding: 8px 16px;
+    background-color: #fb3e44;
+    color: white;
+    border: none;
+    line-height: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.logo-searchbar a {
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    color: rgba(0, 0, 0, .6);
+}
+
+.logo-searchbar #join {
+    border: 0.5px solid rgba(0, 0, 0, .6);
+    padding: 4px 16px;
+}
+
+/* section 1 */
+#intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    min-height: 600px;
+    background-color: rgba(232, 217, 217, .3);
+}
+
+
+#intro h1 {
+    font-weight: bold;
+    font-size: 4.7rem;
+}
+
+#intro article {
+    width: 33%;
+    text-align: center;
+    font-size: 1.3em;
+    line-height: 1.5;
+    margin-top: 2rem;
+}
+
+#intro .intro-buttons {
+    margin: 5% auto;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+#intro #seeplans,
+#joinfree {
+    padding: 1em 3em;
+    text-decoration: none;
+}
+
+#intro #seeplans {
+    color: white;
+    background-color: #FB3B49;
+    box-shadow: 8px 8px 0 rgba(251, 59, 73, .2);
+    margin-right: 3em;
+}
+
+#intro #joinfree {
+    background-color: white;
+    color: black;
+}
+
+/* section 2 */
+#description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    min-height: 500px;
+}
+
+#description img {
+    max-width: 20%;
+    margin: 3rem auto
+}
+
+#description h2 {
+    background-color: rgba(255, 204, 53, .4);
+    transform: skew(9deg, 0deg);
+    font-style: italic;
+    font-weight: bold;
+    font-size: 2.2rem;
+    margin-top: 2rem;
+    padding: 0.4rem 2rem 0 2rem;
+    line-height: 2.3rem;
+}
+
+#description article {
+    width: 60%;
+    text-align: center;
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin: 2rem auto 5rem;
+}
+
+/* section 3 */
+#features {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    min-height: 500px;
+    padding-bottom: 7rem;
+}
+
+.wrap-features {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 4rem 2rem;
+    margin: 0 auto;
+}
+
+.feature {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 2rem;
+}
+
+.feature img {
+    max-width: 2.5rem;
+}
+
+.feature h3 {
+    color: #ED1C24;
+    font-size: 1rem;
+    margin: 1.3rem auto 2rem 0;
+}
+
+.feature p {
+    text-align: left;
+    font-size: 1rem;
+}
+
+#features a {
+    width: 28%;
+    padding: 20px;
+    color: white;
+    background-color: black;
+    text-decoration: none;
+    box-shadow: 8px 8px 0 rgba(128, 83, 35, .2);
+    font-size: 20px;
+    font-weight: bold;
+}
