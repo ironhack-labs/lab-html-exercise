@@ -1,0 +1,229 @@
+/* 
+form label color: rgba(0,0,0,.05)
+form input color: rgba(0,0,0,.05)
+form button background color: #fb3e44
+form button letters color: white 
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  font-family: 'Poppins';
+}
+
+/* delete me when pictures became smaller */
+img {
+    width: 200px;
+}
+
+h1 {
+    font-size: 80px;
+    /* text-align: center; */
+    margin: 50px;
+    /* padding-top: 137px; */
+}
+
+h2 {
+    font-size: 20px;
+    font-style: bold;
+}
+
+h3 {
+    font-size: 16px;
+    color: red;
+    margin: 16px 0 32px 0;
+}
+
+.background {
+    background-color: rgba(232,217,217,.3);
+}
+
+.content-panel {
+    background-color: white;
+    max-width: 1500px;
+
+}
+
+article {
+    font-size: 16px;
+    max-width: 30em;
+    margin: 16px 0;
+}
+
+#hero{
+    /* text-align: center; */
+    flex-direction: column;
+    padding: 4rem 0;
+    height: 600px;
+    
+}
+
+.container {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    display:flex;
+    
+    
+}
+
+.center {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.product-container {
+    width: 20%
+}
+
+.product-container img {
+    height: 32px;
+    width: auto;
+    
+}
+
+.flex-col {
+    padding: 64px 32px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.flex-row {
+    padding: 64px 32px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+   ;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 20px;
+    font-size: 20px;
+    /* justify-content: space-around;
+    font-style: bold; */
+}
+
+.cta { 
+    background-color: #FB3B49;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+    color: white;
+}
+
+.standard {
+    background-color: white;
+    color: black;
+}
+
+
+
+header {
+    font-size: .875rem;
+    padding: 0px 32px;
+}
+
+header > div {    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+    padding: 16px 4px;
+    margin: 0;
+    line-height: 0em;
+}
+
+nav {
+    width: 600px;
+    margin: 1em 0 1em 0;
+
+
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.blackHeart {
+    width: 20px;
+    margin-right: 1rem;
+}
+
+.logo {
+    width: 10%;
+    height: auto;
+
+}
+
+.welcome {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+form{
+    display: flex;
+    height: 40px;
+}
+
+form button {
+    background-color: #fb3e44;
+    font-size: 14px;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    letter-spacing: 0.3px;
+    
+}
+
+form input {
+    background-color: rgba(0,0,0,.05);
+    /* width: 70%; */
+    font-size: 14px;
+    letter-spacing: 0px;
+    border: none;
+    padding: 8px;
+    border-radius: 0; 
+    /* outline: none; */
+  
+}
+
+form span {
+    background-color: rgba(0,0,0,.05);
+    border: none;
+    border-radius: 0; 
+    align-content: left;
+    display: block;
+}
+
+form span img{
+    width: 20px;
+    display: inline-block;
+    padding: 10px 10px;
+    text-align: center;
+
+}
+
+.login {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+#benefits {
+    text-align: left;
+}
