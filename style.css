@@ -16,27 +16,53 @@ body {
   font-family: 'Poppins';
 }
 
-/* delete me when pictures became smaller */
-img {
-    width: 200px;
-}
-
 h1 {
     font-size: 80px;
-    /* text-align: center; */
-    margin: 50px;
-    /* padding-top: 137px; */
-}
-
-h2 {
-    font-size: 20px;
-    font-style: bold;
+    margin: 40px;
 }
 
 h3 {
     font-size: 16px;
     color: red;
     margin: 16px 0 32px 0;
+}
+
+
+article {
+    font-size: 16px;
+    margin: 16px 0;    
+    font-weight: 400;
+}
+
+article a {
+    color: red;
+    text-decoration: none;
+}
+
+hr {
+    color: #f00;
+    background-color: #f00;
+    height: 2px;
+    border: none;
+}
+
+#explanation span {
+    font-size: 36px;
+    font-weight: 700;
+    display: block;
+    margin: 64px 0 32px 0;
+}
+
+/* big font size */
+.bfs {
+    font-size: 20px;
+}
+
+#explanation img{
+    width: auto;
+    height: 230px;
+    text-align: center;
+    margin-top: 64px;
 }
 
 .background {
@@ -46,29 +72,21 @@ h3 {
 .content-panel {
     background-color: white;
     max-width: 1500px;
-
+    padding: 16px 96px;
 }
 
-article {
-    font-size: 16px;
-    max-width: 30em;
-    margin: 16px 0;
+#explanation div {
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
 #hero{
-    /* text-align: center; */
     flex-direction: column;
-    padding: 4rem 0;
-    height: 600px;
-    
+    padding: 4rem 0;    
 }
 
-.container {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    display:flex;
-    
-    
+#hero article {
+    max-width: 30em;
 }
 
 .center {
@@ -78,17 +96,20 @@ article {
 }
 
 .product-container {
-    width: 20%
+    width: 20%;
 }
 
 .product-container img {
     height: 32px;
     width: auto;
-    
+}
+
+.flex {
+    display: flex;
 }
 
 .flex-col {
-    padding: 64px 32px;
+    padding: 50px 32px;
     flex-direction: column;
     justify-content: center;
 }
@@ -98,33 +119,11 @@ article {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-   ;
 }
-
-.btn {
-    text-decoration: none;
-    padding: 20px;
-    font-size: 20px;
-    /* justify-content: space-around;
-    font-style: bold; */
-}
-
-.cta { 
-    background-color: #FB3B49;
-    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
-    color: white;
-}
-
-.standard {
-    background-color: white;
-    color: black;
-}
-
-
 
 header {
     font-size: .875rem;
-    padding: 0px 32px;
+    padding: 0px 0px;
 }
 
 header > div {    
@@ -132,7 +131,7 @@ header > div {
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid lightgray;
-    padding: 16px 4px;
+    padding: 10px 32px;
     margin: 0;
     line-height: 0em;
 }
@@ -140,8 +139,6 @@ header > div {
 nav {
     width: 600px;
     margin: 1em 0 1em 0;
-
-
 }
 
 nav ul {
@@ -156,16 +153,15 @@ nav a {
     color: black;
 }
 
-
 .blackHeart {
     width: 20px;
     margin-right: 1rem;
 }
 
 .logo {
-    width: 10%;
+    width: 70px;
     height: auto;
-
+    margin-right: 15px;
 }
 
 .welcome {
@@ -176,7 +172,7 @@ nav a {
 
 form{
     display: flex;
-    height: 40px;
+    flex-grow: 1;
 }
 
 form button {
@@ -187,19 +183,16 @@ form button {
     padding: 8px 16px;
     text-align: center;
     letter-spacing: 0.3px;
-    
 }
 
 form input {
     background-color: rgba(0,0,0,.05);
-    /* width: 70%; */
+    width: 100%;
     font-size: 14px;
     letter-spacing: 0px;
     border: none;
     padding: 8px;
-    border-radius: 0; 
-    /* outline: none; */
-  
+    border-radius: 0;
 }
 
 form span {
@@ -214,16 +207,72 @@ form span img{
     width: 20px;
     display: inline-block;
     padding: 10px 10px;
-    text-align: center;
-
-}
-
-.login {
-    display: flex;
-    justify-content: flex-end;
-
+    text-align: center;    
 }
 
 #benefits {
     text-align: left;
+}
+    
+/* Button global */
+.btn {
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* Button varieties */
+.cta { 
+    background-color: #FB3B49;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+    min-width: 250px;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 20px;
+    color: white;
+    margin: 0 25px;
+}
+
+.standard {
+    background-color: white;
+    font-weight: 700;
+    min-width: 250px;
+    font-size: 20px;
+    padding: 20px;
+    color: black;
+    margin: 0 25px;
+}
+
+.create {
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: black;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    padding: 20px;
+    min-width: 300px;
+}
+
+.block-login{
+    margin-left: 20px;
+}
+
+.login {
+    padding: 4px;
+    margin-right: 1em;
+    font-size: 14px;
+    color: black;
+    text-decoration: none;
+    list-style: none;
+    color: rgba(0,0,0,.7); 
+}
+
+.signup {
+    border: 1px solid #9a9a9a;
+    padding: 4px 16px;
+    margin: 0 16px 0 0;
+    color: rgba(0,0,0,.7);
+    font-size: 14px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    line-height: 1.5;
 }
