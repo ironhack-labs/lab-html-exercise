@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+/******************* Header ********************/
+
+body {
+  font-family: 'Poppins';
+}
+
+input {
+    color: black;
+}
+
+header > div {
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+}
+
+nav {
+    width: 600px;
+}
+
+nav ul {
+    list-style: none; /* no dots for the list-points */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none; 
+    color: black;
+}
+
+.black-heart {
+    width: 20px;
+    margin-right: 1rem;
+}
+
+.hexagon {
+    width: 200px;
+    margin: 0px 500px; /* bad solution to center an image, but I didn´t know how I get the picture in the center with flex box  ¯|_(ツ)_|¯  */
+}
+
+.symbol {
+    width: 30px;
+}
+
+.npm-logo {
+    width: 70px;
+    margin-right: 1rem;
+}
+
+.glass {
+    width: 25px;
+    position: relative;
+    top: 6px;
+    left: 33px;
+}
+
+::placeholder{
+    color: rgb(73, 71, 71);
+}
+
+#search {
+    width: 800px;
+    height: 30px;
+}
+
+#search-button {
+    border: none;
+    height: 30px;
+}
+
+form label {
+    color: rgba(0,0,0,.05);
+}
+
+
+
+form button {
+    background-color: #fb3e44;
+    color: white;
+    height: 30px;
+}
+
+.small-buttons {
+    text-decoration: none;
+    color: black;
+    padding: 6px 20px;
+}
+
+#join-button {
+    border: 2px solid black;
+}
+
+/******************* Section 1 ********************/
+
+h1 {
+    font-size: 60px;
+    font-weight: bold;
+    height: 0px;
+}
+/*
+.section1 > div {
+    height: 100px;
+    width: 400px;
+} */
+
+
+.section1 div article {
+    margin: 50px;
+}
+.section1 {
+    background-color: rgba(232,217,217,.3); 
+}
+
+.flex-box {
+    height: 600px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+#plans {
+    background-color: #FB3B49;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 40px;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+    margin: 10px;
+}
+
+#join {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 40px;
+    margin: 10px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+
+}
+
+h2 {
+    background-color: rgba(255,204,53,.4);
+    padding: 15px 30px;
+    margin: 15px 300px;
+    font-weight: 900;
+}
+
+h3 {
+    color: #ED1C24;
+}
+.flex-articles {
+    margin: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    justify-content: center;   
+}
+
+.flex-articles > article {
+    width: 250px;
+    margin: 30px;
+}
+
+.org-button {
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    background-color: black;
+    text-decoration: none;
+    font-weight: 900;
+    padding: 5px 30px;
+    color: white;
+    display: flex;
+    margin: 50px 500px;
+    justify-content: center;
+}
