@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,700&display=swap');
 
 body {
     font-family: 'Poppins';
@@ -7,6 +7,15 @@ body {
 h1 {
     font-size: 5rem;
     font-weight: 700;
+}
+
+h2 {
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+    padding: 0 40px;
+    font-style: italic;
+    font-size: 2.5rem;
+    margin: 0 auto;
 }
 
 /* Header */
@@ -113,7 +122,6 @@ a#join {
     align-items: center;
     height: 600px;
     background-color: rgba(232,217,217,.3);
-    margin-bottom: 100px;
 }
 
 #presentation h1 {
@@ -158,4 +166,29 @@ a#join {
 #presentation button#plans a {
     color: white;
 
+}
+
+/* Section 2 - open-source */
+
+#open-source {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    height: 600px;
+    margin: 50px auto;
+}
+
+#open-source img {
+    width: 300px;
+    height: 250px;
+    margin-bottom: 50px;
+}
+
+#open-source article {
+    width: 60%;
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+    font-weight: 300;
 }
