@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body {
+    font-family: 'Poppins';
+}
+
+header > div{
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+}
+
+nav{
+    width: 600px;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+
+nav a{
+    text-decoration: none;
+    color: black;
+}
+
+.blackHeart {
+    width: 20px;
+    margin-right: 1rem;
+}
+
+.logo{
+    width: 4rem;
+    margin-top: 10px;
+    /*why it won't line in the middle of the height??*/
+}
+
+.second-nav{
+    padding: 10px 20px;
+}
+
+.second-nav a{
+    background-color: white;
+    color: black;
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+#join-click{
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    padding: 4px 18px;
+}
+
+.second-nav form{
+    width: 65rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    background-color: rgb(244, 244, 245);
+}
+
+#search-image{
+    width: 1rem;
+    height: 1rem;
+    /*padding: auto 10px;
+    ^^doesn't work when auto is set*/
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#search-button{
+    background-color:  #FB3B49;
+    color: white;
+    height: 100%;
+    width: 90px;
+    margin-left: 0px;
+    border-style: none;
+}
+
+.second-nav input{
+    font-size: 1rem;
+    border-style: none;
+    background-color: rgb(244, 244, 245);
+    width: 90%;
+    height: 100%;
+    border-right: 0px;
+    padding-left: 10px;
+}
+
+.layout{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+}
+
+#section-1{
+    background-color: rgb(232,217,217,0.3);
+}
+
+
+#section-1 h1{
+    font-size: 5em;
+    font-weight: 1000;
+    /*can it be even thicker?*/
+    line-height: 0.5em;
+}
+
+#section-1 article{
+    width:25em;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+#section-1 div{
+    width: 35em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 3em 0px 0px;
+}
+
+.see-plans-click{
+    background-color: #FB3B49;
+    color:white;
+    font-size: 1.2em;
+    font-weight: 1000;
+    text-decoration: none;
+    text-align: center;
+    box-shadow: 8px 8px rgb(251,59,73, 0.2);
+    padding: 15px 60px; 
+}
+  
+.join-for-free-click{
+    background-color: white;
+    color:black;
+    font-size: 1.2em;
+    font-weight: 1000;
+    text-decoration: none;
+    text-align: center;
+    padding: 15px 50px;     
+}
+
+#section-2 img{
+    width: 15em;
+    margin-bottom: 20px;
+}
+
+#section-2 h2{
+    font-style: italic;
+    background-color: rgba(255,204,53,.4);
+    font-size: 2em;
+    transform: skew(9deg,0deg);
+    padding: 0 35px;
+}
+#section-2 article{
+    /*padding: 0px 300px;
+    padding and margin are not the best choices for the horizontal fine tune
+    coz when resize the browser, the paragraph will be very narrow*/
+    width: 40em;
+    text-align: center;
+}
+
+#section-3 > div{
+    /*not necessary to use > ??*/   /*wrap & wrap*/
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    /*why is this box so small???*/
+}
+
+#section-3 img{
+    width: 2.5em;
+    height: 2.5em;
+}
+
+#section-3 article{
+    width: 14em;
+    padding: 20px 30px 50px;
+}
+
+#section-3 h3{
+    font-size: 1rem;
+    font-weight: 1000;
+    color: #ED1C24;
+}
+
+#section-3 .create-button{
+    background-color: black;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 1000;
+    text-decoration: none;
+    box-shadow: 8px 8px rgba(177, 114, 119, 0.2);
+    padding: 1rem 8rem;
+}
+
+
