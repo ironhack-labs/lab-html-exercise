@@ -18,6 +18,14 @@ h2 {
     margin: 0 auto;
 }
 
+h3 {
+    color: #ED1C24;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: 50px 0 30px;
+    text-align: left;
+}
+
 /* Header */
 
 header > div {
@@ -191,4 +199,57 @@ a#join {
     font-size: 1.1rem;
     margin-bottom: 40px;
     font-weight: 300;
+}
+
+/* Section 3 - features */
+
+#features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+#features .container {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    margin-bottom: 50px;
+}
+
+#features .container div {
+    text-align: center;
+    width: 15%;
+    margin: 40px;
+    position: relative;
+}
+
+#features .container div img {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 0;
+}
+
+#features .container div p {
+    font-size: 1.1rem;
+    font-weight: 300;
+    line-height: 1.5;
+    text-align: left;
+}
+
+#features button {
+    border: none;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    background-color: black;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 20px;
+    width: 420px;
+    min-width: 250px;
+}
+
+#features button a {
+    color: white;
+    text-decoration: none;
 }
