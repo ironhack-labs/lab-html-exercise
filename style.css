@@ -16,6 +16,11 @@
 
 /*------------- 2.DEFAULTS -------------*/
 
+:root {
+	--red-accent : #fb3c43;
+	--grey-background : #f2f2f2;
+}
+
 body {
 	width: 940px; /*Supplied site snapshot width*/
 	margin: 0 auto;
@@ -34,7 +39,7 @@ h2 {
 	font-weight: 500;
 }
 
-h3 { color: #fb3c43; }
+h3 { color: var(--red-accent); }
 
 /*------------- 3.HEADER -------------*/
 
@@ -79,7 +84,7 @@ header > div {
 .header-control form {
 	display: flex;
 	width: 100%;
-	background-color: #f2f2f2;
+	background-color: var(--grey-background);
 }
 
 .header-control form button {
@@ -89,7 +94,7 @@ header > div {
 	font-weight: normal;
 	font-size: 9px;
 	color: #fff;
-	background-color: #fb3c43;
+	background-color: var(--red-accent);
 }
 
 .header-control form button:hover { cursor: pointer; }
@@ -98,7 +103,7 @@ header > div {
 	width: 100%;
 	border: 0;
 	padding: 0;
-	background-color: #f2f2f2;
+	background-color: var(--grey-background);
 }
 
 .header-control form .mag-glass {
@@ -170,7 +175,7 @@ a.btn-join {
 
 a.btn-plans {
 	color: #fff;
-	background-color: #fb3c43;
+	background-color: var(--red-accent);
 	box-shadow: 5px 5px #f9d2d5;
 }
 
@@ -254,5 +259,5 @@ a.btn-create-org {
 	text-decoration: none;
 	color: #fff;
 	background-color: #000;
-	box-shadow: 5px 5px #f2f2f2;
+	box-shadow: 5px 5px var(--grey-background);
 }
