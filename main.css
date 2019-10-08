@@ -1,3 +1,178 @@
-body{
-    background-color: red;
-  }
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700');
+
+html, body{
+    margin:0;
+    padding: 0;
+    font-size: 16px;
+}
+
+body {
+  font-family: 'Poppins';
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Header */
+#header{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 13px -3px rgba(0, 0, 0, 0.1);
+}
+
+#header > div{
+    border-bottom: 1px solid #ddd;
+
+    display:flex;
+    align-items: center;
+    padding: 6px 36px;
+}
+
+#header .topbar img{
+    width: 20px;
+    margin-right: 36px;
+}
+
+#header .topbar nav {
+    margin-left: auto;
+}
+
+#header .topbar nav ul{
+    list-style-type: none;
+}
+
+#header .topbar nav ul li{
+    display: inline-block;
+    margin-left: 16px;
+}
+
+#header .search-bar{
+    justify-content: space-between;
+}
+
+#header .search-bar h1{
+    margin: 0;
+}
+
+#header .search-bar h1 img{
+    width: 70px;
+}
+
+#header .search-bar form{
+    width: 85%;
+    background-color: #f2f2f2;
+    display: flex;
+    align-items: center;
+}
+
+
+#header .search-bar form input{
+    background-color: #f2f2f2;
+    flex: 100%;
+    border: 0;
+    margin: 0;
+    height: 40px;
+    padding-left: 16px;
+}
+
+#header .search-bar form button {
+    margin-left: auto;
+    height: 40px;
+    border: 0;
+    border-radius: 0;
+    background-color: #fb3e44;
+    padding: 10px 16px;
+    color: white;
+}
+
+#header .search-bar form label{
+    display: flex;
+    align-items: center;
+    padding-left: 16px;
+}
+
+#header .search-bar form label img{
+    width: 18px;
+    opacity: 0.75;
+}
+
+/* Hero */
+#hero{
+    background-color: rgba(232,217,217,.3);
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#hero .container{
+    text-align: center;
+    max-width: 1024px;
+    padding: 64px 8px;
+}
+
+#hero .container h2{
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 1.15;
+}
+
+#hero .container p, 
+#hero .container div {
+    max-width: 544px;
+    margin: 0 auto;
+}
+
+.large-text{
+    font-size: 20px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+#hero-ctas {
+    padding: 64px 32px; 
+    display: flex;
+    justify-content: space-between;
+}
+
+.cta-btn {
+    font-weight: 700;
+    padding: 20px;
+    font-size: 20px;
+    min-width: 250px;
+    text-align: center;
+    display: inline-block;
+    box-sizing: border-box;
+    height: 64px;
+    line-height: 1.25;
+    -webkit-font-smoothing: antialiased;
+    transition: all ease 0.3s;
+}
+
+.shadow-btn{
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+}
+
+.shadow-btn:hover{
+    box-shadow: none;
+}
+
+.red-btn{
+    background-color: #fb3e44;
+    color: white;
+}
+
+.red-btn:hover{
+    background-color: #cc0413;
+}
+
+.white-btn{
+    background-color:white;
+    color: #000;
+    border: 1px solid rgba(138,138,138,.06);
+}
+
+.white-btn:hover{
+    background-color: #f7f7f7;
+}

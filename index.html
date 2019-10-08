@@ -6,19 +6,16 @@
     <title>NPM Clone</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
 </head>
 <body>
 
     <header id="header">
-        <div>
-            <div>
-                <img src="./images/black-heart.png" alt="Black heart icon">
-                <span>Nifty Penguin Magic</span>
-            </div>
-
-            <nav id="header-nav">
-                <ul id="header-menu">
+        <div class="topbar">
+            <img src="./images/black-heart.png" alt="Black heart icon">
+            <span>Nifty Penguin Magic</span>
+            
+            <nav>
+                <ul>
                     <li><a href="#">npm Enterprise</a></li>
                     <li><a href="#">Products</a></li>
                     <li><a href="#">Solutions</a></li>
@@ -29,13 +26,11 @@
             </nav>
         </div>
         
-        <div>
+        <div class="search-bar">
             <h1><a href="#"><img src="./images/npm-logo.png" alt="NPM Logo"></a></h1>
             <form method="" action="">
-                <div>
-                    <label for="search"><img src="./images/magnifying-glass.png" alt="Search icon"></label>
-                    <input type="text" id="search" placeholder="Search packages">
-                </div>
+                <label for="search"><img src="./images/magnifying-glass.png" alt="Search icon"></label>
+                <input type="text" id="search" placeholder="Search packages">
                 <button type="submit">Search</button>
             </form>
             
@@ -45,10 +40,14 @@
     </header>
     
     <section id="hero">
-        <h2>Build amazing things</h2>
-        <p class="large-text">Essential JavaScript development tools that help you go to market faster and build powerful applications using modern open source code. </p>
-        <a href="#" class="cta-btn red-btn">See Plans</a>
-        <a href="#">Join for free</a>
+        <div class="container">
+            <h2>Build amazing things</h2>
+            <p class="large-text">Essential JavaScript development tools that help you go to market faster and build powerful applications using modern open source code. </p>
+            <div id="hero-ctas">
+                <a href="#" class="cta-btn shadow-btn red-btn">See Plans</a>
+                <a href="#" class="cta-btn white-btn">Join for free</a>
+            </div>
+        </div>
     </section>
 
     <section id="intro">
