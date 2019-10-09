@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body {
+  font-family: 'Poppins', "Helvetica", "sans-serif";
+}
+
+header > div {
+  padding: 0px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul{
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 600px;
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+.black-heart {
+  width: 20px;
+  margin-right: 1rem;
+  margin-left : 20px;
+}
+
+.nav-bar{
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin: 0 30px;
+  border-bottom: 1px solid lightgray;
+}
+/* - - - - END NAV BAR - - - - */
+/* - - - - START SEARCH/NPM BAR - - - */
+#npm{}
+
+.npm{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 10px 30px;
+}
+
+.npm-logo {
+  width: 60px;
+  margin-left : 20px;
+}
+
+.search-image {
+  width: 23px;
+  position: absolute;
+  padding: 9px 15px;
+}
+
+.largebar {
+  width: 65vw;
+  background-color: rgba(0,0,0,.05);
+  border: none;
+  height: 40px;
+  text-indent: 35px;
+  margin-left: 5px;
+
+}
+
+.largebar::placeholder {
+ color: rgba(0,0,0,.05);
+}
+
+.search-button {
+  background-color: #fb3e44;
+  border: none;
+  text-align: center;
+  display: inline-block;
+  padding: 13px 20px;
+  color: white;
+}
+
+.join-button {
+  padding: 2px 10px;
+  margin: 0px 10px 0px 20px;
+  border: 1px solid lightgray;
+}
+.login-button {
+  padding: 2px 10px;
+}
+
+/* - - - - END SEARCH BAR - - - - */
+/* - - - - START PRODUCTS SECTION - - */
+#products{}
+
+.products{
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  background: rgba(232,217,217,.3);
+  box-shadow: 0 8px 6px -6px lightgrey inset;
+}
+
+#join{}
+#login{}
+
+h1 {
+  font-size: 5em;
+  text-align: center;
+  font-weight: bold;
+}
+
+.products article{
+  margin:0 30vw 50px;
+}
+
+.products div{
+  display: flex;
+  justify-content: center;
+}
+
+.products-button {
+  padding: 15px 60px;
+  margin:0 20px 150px;
+  font-weight: bold;
+}
+
+.button-red {
+  background: #FB3B49;
+  text-decoration: none;
+  color: white;
+  box-shadow: 6px 6px 0px RGBA(251, 59, 75, 0.2);
+}
+
+.button-white {
+  background: white;
+  color: black;
+  text-decoration: none;
+}
+
+/* - - - - END PRODUCTS SECTION - - - */
+/* - - - - START SOLUTION SECTION - - */
+#solution {}
+
+.solution {
+  display: flex;
+   flex-direction: column;
+   height:500px;
+}
+
+.hexagon {
+    margin: 0px auto;
+    width: 160px;
+  padding: 50px 0px;
+}
+
+
+h2 {
+   font-size: 1.6em;
+   background: rgba(255,204,53,.4);
+   transform: skew(9deg,0deg);
+   font-style: italic;
+   margin: 10px 24%;
+   text-align: center;
+}
+
+.box {
+   margin: 30px 24%;
+   text-align: center;
+}
+
+/* - - - - END SOLUTIONS SECTION - - - */
+/* - - - - START RESOURCES SECTION - - */
+#resources {}
+
+.resources {
+     display: flex;
+     justify-content: space-around;
+     flex-direction: row;
+     margin:80px 80px 40px;
+     padding: 0 30px;
+}
+
+.resources-img {
+  width: 25px;
+}
+
+h3 {
+  color: #ED1C24;
+  }
+
+/* - - - - END RESOURCES SECTION - - - */
+/* - - - - START DOCS SECTION - - */
+#docs{}
+
+.docs-button {
+  display: flex;
+  justify-content: center;
+  background: black;
+  text-decoration: none;
+  color: white;
+  width: 300px;
+  margin: 60px auto;
+  padding: 10px 0px;
+  font-weight: bold;
+  box-shadow: 6px 6px 0px RGBA(128,83,35,.2);
+}
+
+/* - - - - END DOCS SECTION - - - */
+/* - - - - START BONUS SECTION - - */
+
+.zoom {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.zoom:hover {
+	-webkit-transform: scale(1.5);
+	transform: scale(1.5);
+}
+
+.zoom2{
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.zoom2:hover {
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+.solution img {
+  -webkit-transition: all 2s ease;
+  transition: all 2s ease;
+}
+ 
+.solution img:hover {
+  -webkit-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+}
