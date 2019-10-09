@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Poppins';
+  margin: 0;
+  padding: 0;
+}
+
+/*header styles*/
+#header {
+  box-shadow: 0 4px 13px -3px rgba(0, 0, 0, 0.10196);
+}
+#header > div {
+  padding: 16px 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+}
+nav {
+  width: 600px;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+nav ul li {
+  margin-right: 1rem;
+}
+.blackHeart {
+  width: 20px;
+  margin-right: 1rem;
+}
+#header a {
+  color: #000;
+  letter-spacing: 0.015625em;
+  text-decoration: none;
+  font-size: .875rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#header a:hover {
+  color: dimgrey;
+}
+#header div:nth-child(2) {
+  padding: 8px 2rem;
+}
+.npm-logo {
+  width: 70px;
+  margin-right: 1rem;
+}
+form {
+  font-size: 14px;
+  display: flex;
+  flex-flow: row wrap;
+  flex-grow: 1;
+  margin-right: 1rem;
+}
+form > div, input {
+  display: flex;
+  flex-flow: row wrap;
+  flex-grow: 1;
+}
+form span {
+  width: 35px;
+  height: 40px;
+  background-color: rgba(0,0,0,.05);
+}
+form img {
+  width: 20px;
+  height: 20px;
+  padding: 10px 10px 10px 15px;
+}
+form input {
+  font-family: "Fira Mono", "Andale Mono", "Consolas", monospace;
+  background-color: rgba(0,0,0,.05);
+  font-size: 14px;
+  border: none;
+  height: 40px;
+  padding-left: 10px;
+}
+form button {
+  background-color: #fb3e44;
+  color: white;
+  padding: 0 16px;
+  font-size: 14px;
+  letter-spacing: 0.3px;
+  border: none;
+  cursor: pointer;
+}
+.form__join-btn, .form__login-btn {
+  color: rgba(0,0,0,.7)!important;
+  font-weight: 600;
+  padding: 0.25rem 1rem;
+}
+.form__join-btn {
+  border: 1px solid #9a9a9a;
+  border-radius: 0;
+}
+.form__join-btn:hover {
+  background-color: #dedede6b;
+}
+.form__login-btn {
+  transition: opacity .15s ease-in;
+}
+
+/*Section 1 styles*/
+#intro {
+  height: 600px;
+  background-color: rgba(232,217,217,.3);
+  display: flex;
+  justify-content: center;
+}
+.section__container {
+  width: 65%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+}
+#intro h1 {
+  font-size: 5rem;
+  font-weight: bold;
+  margin: 0;
+}
+#intro p {
+  width: 526px;
+  font-size: 1.25rem;
+  text-align: center;
+  margin-top: 35px;
+}
+#intro .section__container > div {
+  margin-top: 64px;
+  display: flex;
+  flex-direction: row;
+  width: 545px;
+  justify-content: space-between;
+}
+.intro__btn-1, .intro__btn-2 {
+  box-sizing: border-box;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 15px;
+  width: 250px;
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  transition: 0.3s;
+}
+.intro__btn-1 {
+  background-color: #FB3B49;
+  box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+  color: white;
+}
+.intro__btn-1:hover {
+  background-color: #AF0000;
+  box-shadow: none;
+}
+.intro__btn-2 {
+  background-color: white;
+  color: black;
+}
+.intro__btn-2:hover {
+  background-color: #e6e6e6;
+}
+
+/*Section 2 styles*/
+#engage .section__container{
+  padding: 64px 0;
+}
+#engage img {
+  width: 256px;
+  height: 230px;
+}
+.h2-highlight {
+  position: relative;
+  margin: 65px 0 32px;
+  transform: skew(9deg,0deg);
+  background-color: rgba(255,204,53,.4);
+  font-style: italic;
+  padding: 0 13px;
+}
+#engage span {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+
+}
+#engage .section__container p {
+  width: 768px;
+  text-align: center;
+  color: #333;
+  font-weight: 400;
+  margin: 0;
+}
+
+/*Section 3 styles*/
+#features {
+  padding-bottom: 64px;
+}
+#features .section__container {
+  margin: 64px auto;
+  width: 82%;
+}
+#features .section__container > div {
+  display: flex;
+  flex-direction: row;
+}
+.features-box {
+  padding: 0 32px;
+  width: 244px;
+}
+.features-box img{
+  height: 32px;
+
+}
+.features-box h3 {
+  color: #ED1C24;
+  margin: 16px 0 32px;
+  font-size: 1rem;
+}
+.features-box p {
+  color: #333;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.features__btn {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  text-decoration: none;
+  margin: 0 auto;
+  padding: 20px;
+  width: 400px;
+  font-size: 20px;
+  line-height: 23px;
+  background-color: black;
+  color: white;
+  box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+  transition: 0.3s;
+}
+.features__btn:hover {
+  background-color: #000000c7;
+  box-shadow: none;
+}
