@@ -113,9 +113,8 @@ form button {
 /*Section 1 "intro" styles*/
 #intro {
   height: 600px;
+  width: 100%;
   background-color: rgba(232,217,217,.3);
-  display: flex;
-  justify-content: center;
 }
 .section__container {
   width: 65%;
@@ -136,7 +135,7 @@ form button {
   text-align: center;
   margin-top: 35px;
 }
-#intro .section__container > div {
+#intro > div {
   margin-top: 64px;
   display: flex;
   flex-direction: row;
@@ -207,18 +206,17 @@ form button {
 /*Section 3 "features" styles*/
 #features {
   padding-bottom: 64px;
+  width: 100%;
 }
-#features .section__container {
-  margin: 64px auto;
-  width: 82%;
-}
-#features .section__container > div {
+#features > div {
   display: flex;
   flex-direction: row;
+  width: 82%;
+  margin: 64px 0;
 }
 .features-box {
   padding: 0 32px;
-  width: 244px;
+  box-sizing: border-box;
 }
 .features-box img{
   height: 32px;
