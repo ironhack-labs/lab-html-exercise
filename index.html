@@ -23,19 +23,19 @@
                     <li> <a href="#"> Docs </a> </li>
                     <li> <a href="#"> Support </a> </li>
                 </ul>
-            </nav>
+            </nav> 
         </div>  
         <div>
           <img class="logoNpm"  src="/Users/fran/Documents/IronHack/npm-exercise/lab-html-exercise/images/npm-logo.png" alt="logoNpm">
-          <form action="search" method="post" class="searchBar">
-            <img class="magnifying-glass"src="/Users/fran/Documents/IronHack/npm-exercise/lab-html-exercise/images/magnifying-glass.png" alt="
-                magnifying glass">
-            <input type="search" id="search" placeholder="Search packages">
-            <button type="submit" id="search"> Search</button>
-          </form>              
-          <div>
-            <a href="#">Join</a>
-            <a href="#">Log In</a>
+        <form class="searchBar" action="" name="search" method="POST" >
+          <label id="search" for="search"><img src="/Users/fran/Documents/IronHack/npm-exercise/lab-html-exercise/images/magnifying-glass.png" alt="
+            magnifying glass" class="magnifyingGlass"></label>
+          <input class="lettersSearch" id="search" type="text" placeholder="Search packages"> 
+          <button class="searchButton" type="submit" id="search">Search</button>               
+        </form>
+        <div class="buttons">
+            <a class="buttonJoin"href="#">Join</a>
+            <a class="buttonLogIn"href="#">Log In</a>
           </div>
         </div>
     </header>
@@ -81,12 +81,12 @@
 
       <div>
         <img src="/Users/fran/Documents/IronHack/npm-exercise/lab-html-exercise/images/npm-audit.svg" alt="npm-audit">
-        <h4>npn audit</h4>
+        <h4>npm audit</h4>
         <p>Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer. </p>
       </div>
       <a href="#">Create an Org</a>
     </section>
-    
+
   </body>
 </html>
 
