@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+/*------------------- Page-------------------*/
+html {
+  font-size: 16px
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #F8F4F4;
+  margin: 0;
+}
+
+.tight-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.h4 {
+  font-size: 1.25rem
+}
+
+/*------------------- Header -------------------*/
+
+header>div {
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+  box-shadow: 0 4px 13px -3px rgba(0, 0, 0, 0.10196);
+
+}
+
+.header-shadow {
+  box-shadow: 0 4px 13px -3px rgba(0, 0, 0, 0.10196);
+  position: relative;
+}
+
+.pre-nav {
+  display: flex;
+  background-color: #fff;
+  border-bottom: 1px solid;
+  justify-content: space-between;
+  flex-direction: row;
+  border-top-style: solid;
+  border-width: 3px 0 0;
+  padding: 1px, 0, 1px, 0;
+}
+
+.btn-access {
+  display: block;
+}
+
+#logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding-top: 3px;
+
+}
+
+.main-nav {
+  display: flex;
+  background-color: #fff;
+  border-bottom: 1px solid;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  border-top: 1px solid rgba(0, 0, 0, .1);
+  border-bottom: 1px solid rgba(0, 0, 0, .1);
+  padding: 7px 29px;
+}
+
+.nav-link {
+  color: #000;
+  font-weight: 500;
+  font-size: 14px;
+  text-decoration: none;
+  margin: 0 5px
+}
+
+#btn-join {
+  background-color: white;
+  color: black;
+  border: 1px solid rgb(190, 190, 190);
+  padding: 6px 12px;
+}
+
+#btn-log-in {
+  background-color: white;
+  color: black;
+  padding-top: 6px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.blackHeart {
+  width: 20px;
+  margin-right: 1rem;
+}
+
+/*Search*/
+
+.search-input {
+  font-family: "Fira Mono", "Andale Mono", "Consolas", monospace;
+  font-size: 14px;
+  letter-spacing: 0px;
+  border: none;
+  height: 40px;
+  padding-left: 10px;
+  border-radius: 0;
+  width: calc(100% - 10px);
+  -webkit-appearance: none;
+  background-color: rgba(0, 0, 0, .05);
+  min-width: 1000px;
+}
+
+.search-bar {
+  display: flex;
+  flex-direction: row;
+}
+
+.search-icon {
+  height: auto;
+  background-color: rgba(0, 0, 0, .05);
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+}
+
+.btn-search {
+  border: 0px;
+  background-color: #fb3e44;
+  color: #fff;
+  font-weight: 300;
+  padding: 0 20px;
+  font-size: 1rem;
+}
+
+
+/*------------------- Section 1 -------------------*/
+.home-header {
+  width: 100%;
+  text-align: center;
+  background-color: #F8F4F4;
+  padding-top: 6%;
+  padding-bottom: 6%;
+  ;
+}
+
+.header-title {
+  font-size: 5rem;
+  font-weight: 700;
+  margin-top: 0%;
+}
+
+.mb-3 {
+  margin-bottom: 2.5rem !important
+}
+
+.white-container {
+  background-color: #fff;
+  padding: 5rem 0;
+  padding-left: 2%;
+  padding-right: 2%;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.mb-5 {
+  margin-bottom: 5rem
+}
+
+.centered-text {
+  max-width: 500px;
+  margin: 0 auto
+}
+
+.btn {
+  min-width: 250px;
+  padding: 20px;
+  font-weight: 700;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-red {
+  background-color: rgb(251, 59, 73);
+  box-shadow: 8px 8px 0 rgba(251, 59, 73, .2);
+  color: #fff;
+}
+
+.btn-white {
+  background-color: #fff;
+  color: #000;
+}
+
+.mr-3 {
+  margin-right: 2rem;
+}
+
+/*------------------- Section 2 -------------------*/
+
+.white-container {
+  background-color: #fff;
+  padding: 5rem 0;
+  padding-left: 2%;
+  padding-right: 2%;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.underlined-title {
+  position: relative;
+  font-size: 2.25rem;
+  font-weight: 600;
+  transform: skew(9deg, 0deg);
+  font-style: italic;
+}
+
+.underlined-title::before {
+  content: "";
+  position: absolute;
+  width: 108%;
+  height: 100%;
+  z-index: -1;
+  left: -5%;
+  top: -6%;
+  background-color: rgba(255, 204, 53, .4);
+  transform: skew(9deg, 0deg);
+}
+
+.tight-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.underlined-title {
+  position: relative;
+  font-size: 2.25rem;
+  font-weight: 600;
+  transform: skew(9deg, 0deg);
+  font-style: italic;
+}
+
+.px-5 {
+  padding: 0 5rem;
+}
+
+.grey-paragraph {
+  color: #333;
+  font-weight: 400;
+}
+
+/*------------------- Section 3 -------------------*/
+
+.icon-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.icon-box {
+  max-width: 23%;
+}
+
+.icon-title {
+  color: #ED1C24;
+  font-weight: 700;
+  display: block;
+}
+
+.icon {
+  max-width: 100%;
+  height: 2rem;
+}
+
+.btn-black {
+  background-color: #000;
+  box-shadow: 8px 8px 0 rgba(128, 83, 35, .2);
+  color: #fff;
+}
