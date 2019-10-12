@@ -40,37 +40,42 @@ header > div {
       width: 70px;
       margin-right: 1rem;
   }
-  
+  .searchBar{ /*padre*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
 /*lupa de la barra buscadoras gris*/
-  .magnifyingGlass{
-      width: 50px;
-      height: 50px;
+  .magnifyingGlass{ /*hijo de searchBar*/
+      width: 30px;
+      height: 30px;
       background: rgba(0,0,0,.05);
+      margin-top: 6px; 
+      align-items: center;
+      padding: 11px;
     }
+/*barra de busqueda gris con lupa*/
 
-    .lettersSearch{
+    .lettersSearch{/*hijo de searchBar*/
         border:none;
-        width: 300px;
+        width: 600px;
         height: 50px;
         font-size: 1em;
         background: rgba(0,0,0,.05);
-        margin: auto;
+        margin:5px 0;
+        align-items: ceenter;
     }
-/*barra de busqueda gris con lupa*/
-  .searchBar{
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: stretch;
-      }
+
 /*boton rojo Search*/
-  .searchButton{
+  .searchButton{/*hijo de serachBar*/
       font-size: 1em;
       background-color: #fb3e44;
-      padding: 15px;
+      padding: 10px;
       color: white;
-      width:80px;
+      width:82px;
       height:50px;
+      align-items: center;
   }
 /*botones finales del header*/
   .buttonJoin{
@@ -81,6 +86,7 @@ header > div {
      padding:5px 15px;
      background-color: white; 
      width:80px;
+     align-items: center;
   }
 
   .buttonLogIn{
@@ -90,6 +96,7 @@ header > div {
     padding:5px 15px;
     background-color: white; 
     width:80px; 
+    align-items: center;
   }
 
   .flexNavBar{
