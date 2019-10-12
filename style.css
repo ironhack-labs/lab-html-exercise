@@ -9,23 +9,24 @@
 
 body {
         font-family: 'Poppins', Arial, Helvetica, sans-serif;
-        font-size: 11px;
+        font-size: 12px;
 }
 
-/* Headers */
+/* h1, h2, h3 */
 h1 {
-        font-size: 6em;
+        font-size: 5em;
         text-align: center;
         font-weight: bold;
+        
 }
 
 h2 {
-        font-size: 5em;
+        font-size: 2em;
         text-align: center;
 }
 
 h3 {
-        font-size: 4.2em;
+        font-size: 1.5em;
         text-align: center;
 }
 
@@ -62,16 +63,25 @@ nav a {
 
 /* Search bar */
 .search {
+
         display: flex;
         align-items: center;
-        border-bottom: 1px solid grey;
+        align-content: center;
         margin: 5px;
 }
 
 .npmImg {
         margin: 7.5px 20px;
         width: 100px;
-        margin-inline-start: 1rem;
+}
+
+.searchIcon {
+        width: 25px;
+        margin: 5px;
+}
+
+.searchBar {
+     
 }
 
 .searchBar label {
@@ -83,7 +93,52 @@ nav a {
 .searchBar img {
         width: 25px;
         margin: 5px;
-        padding-bottom: 0px;
+}
+
+.searchBar input {
+        margin: 0px 5px 0px 35px;
+        line-height: 40px;
+        width: 400px;
+        position: relative;
+        border-style: none;
+        background-color: rgba(0, 0, 0, .05)
+}
+
+.searchLink button {
+
+        background-color: #fb3e44;
+        border: none;
+        padding: 10px;
+        font-size: 12px;
+        color: white;
+
+
+}
+
+.rightButtuns {
+        align-self: flex-end;
+        float: right;
+        flex-wrap: nowrap;
+
+}
+
+.joinLink {
+        float: left;
+        margin: 20px 0px 15px;
+        padding: 7px 15px;
+        border: 1px solid black;
+        text-decoration: none;
+        font-size: 12px;
+        color: black;
+}
+
+.logInLink {
+        float: left;
+        margin: 20px 0px 15px;
+        padding: 7px 15px;
+        text-decoration: none;
+        font-size: 12px;
+        color: black;
 }
 
 
@@ -101,26 +156,40 @@ nav a {
         background-color: rgba(232, 217, 217, .3);
 
 }
+
 .sectionOne h1 {
-        padding-top: 5%;
-        padding-bottom: 5%;
-        font-weight: bold;
-        font-size: 5em;
+        width: 60%;
+        padding: 25px 100px;
+        
+}
+
+.sectionOne article {
+        width: 50%;
         text-align: justify;
+        font-size: 1.7em;
+        padding: 25px 50px;
+        margin: 10px;
 }
+
+.seeLinks {
+        padding: 25px 100px;
+}
+
 .seeLinks a {
-        align-items: flex-start;
-        margin: 5% 5%;
+        text-decoration: none;
+        font-size: 1.3em;
 }
-.seeLinks a {
-        margin: 5% 5%;
-        padding: 5% 10%;
-        font-size: 2em;
+
+.joinButton {
+        margin-left: 25px;
+        color: black;
 }
+
 .seeButton {
-        padding-top: 5%;
-        padding-bottom: 5%;
-        font-style: none;
+        margin-right: 25px;
+        color: white;
+        padding: 15px 60px 15px 60px;
+        text-decoration: none;
         background-color: #FB3B49;
         box-shadow: 8px 8px 0 rgba(251, 59, 73, .2);
 }
@@ -129,7 +198,95 @@ nav a {
 
 .sectionTwo {
 
+        display: flex;
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 2% 0%;
+        height: 400px;
+}
+
+.sectionTwo img {
+        padding: 50px;
+        width: 15%;
+}
+
+.sectionTwo h2 {
+        background-color: rgb(240, 240, 187);
+        width: 65%;
+        margin: auto;
+        margin-bottom: 25px;
+
+}
+
+.sectionTwo article {
+        text-align: justify;
+        font-size: 1.3em;
+        width: 55%;
+        margin: auto;
+        padding-bottom: 40px;
 }
 
 /* sectionThree */
+
+.sectionThree {
+        padding-top: 50px;
+        height: 500px;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 2% 0%;
+
+}
+
+.groupInfo {
+        display: flex;
+        text-align: center;
+        align-items: flex-start;
+        flex-direction: row;
+
+}
+
+.groupInfo div {
+        margin: 10px;
+        width: 25%;
+        text-align: left;
+        align-items: flex-start;
+        flex-direction: column;
+
+}
+
+.groupInfo img {
+        width: 20%;
+        height: 20%;
+        margin-bottom: 5px;
+
+}
+
+.groupInfo h3 {
+        border: 4px solid goldenrod;
+        color: #f83339;
+        padding: 2px;
+        margin-bottom: 5px;
+
+}
+
+.groupInfo p {
+        font-size: 1.3em;
+        text-align: justify;
+}
+
+.sectionThree a {
+        text-decoration: none;
+        padding: 10px;
+        width: 40%;
+        margin: 80px 35px 35px;
+        background-color: black;
+        box-shadow: 8px 8px 0 rgba(128, 83, 35, .2);
+        color: white;
+        font-size: 1.3rem;
+
+
+}
 }
