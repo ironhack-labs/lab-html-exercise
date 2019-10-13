@@ -14,7 +14,7 @@ header > div {
   }
 
   header{
-    display:flex;
+    
 
   }
   
@@ -37,7 +37,8 @@ header > div {
   .logo{
     display:flex;
     flex-direction:row;
-    justify-content: space-between;
+    justify-content: left;
+    align-content: space-evenly;
   }
 
   .navbar{
@@ -51,7 +52,33 @@ header > div {
   .blackHeart {
     width: 20px;
     margin-right: 1rem;
+    
   }
+
+  .search-bar{
+    display:flex;
+    flex-direction: row;
+    justify-content: right;
+    
+    
+    
+  }
+
+  .search-btn{
+    background-color:#FB3B49;
+    color:#fff;
+  }
+
+  .search-bar a{
+    text-decoration: none;   /*Why does the text decoration on the link does not disappear?*/
+  }
+  button a{
+    text-decoration: none;
+  }
+
+
+
+  
 
   #main-section{
       height:600px;
