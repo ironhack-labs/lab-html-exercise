@@ -35,26 +35,68 @@ nav a {
 
 .logo {
     width: 50px;
-    margin-right: 1rem;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3px 0;
 }
 
 .magnify {
     width: 20px;
+    background-color: rgba(0,0,0,.05);
+    padding: 8px 0 7px 7px;
 }
 
 .search-bar {
-    padding: 12px 20px;
-    box-sizing: border-box;
+    padding: 11px 10px;
+    width: 800px;
+    background-color: rgba(0,0,0,.05);
+    border: none;
+}
+
+#search-button {
+    padding: 11px 10px;
+    background-color: #fb3e44;
+    border: none;
+    color: white;
 }
 
 .header-operations {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .header-operations form{
     display: flex;
     align-items: center;
+}
+
+.header-operations div a {
+    text-decoration: none; 
+}
+
+.customer-account {
+    display: flex;
+    width: 150px;
+    justify-content: flex-end;
+}
+
+.customer-account a {
+    margin: 0 0 0 15px;
+}
+
+#join {
+    color: grey;
+    border: 1px solid grey;
+    padding: 0 8px;
+}
+
+#login {
+    color: grey;
 }
 
 .content-section {
@@ -72,7 +114,7 @@ nav a {
 }
 
 #section-1 h1 {
-    font-size: 40px;
+    font-size: 70px;
     font-weight: bolder;
 }
 
@@ -88,7 +130,12 @@ nav a {
 }
 
 .cta button {
+    width: 150px;
+}
 
+.content-button {
+    height: 40px;
+    font-weight: bolder;
 }
 
 #section-2 {
@@ -103,10 +150,60 @@ nav a {
     font-weight: bolder;
     background-color: rgba(255,204,53,.4);
     transform: skew(9deg, 0deg);
+    font-style: italic;
+    padding: 0 15px;
 }
 
 #section-2 article {
     width: 50%;
 }
 
+.showcase {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin: 10px 70px 30px 70px;
+}
 
+.showcase div img{
+    height: 30px;
+}
+
+.showcase div article{
+    width: 250px;
+}
+
+.showcase div h3 {
+    color: #ED1C24;
+}
+
+.advantages {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 100px;
+} 
+
+.red-button {
+    background-color: #FB3B49;
+    color: white;
+    box-shadow: 8px 8px 0 rgba(58, 53, 53, 0.2);
+    border: none;
+}
+
+.black-button {
+    width: 300px;
+    background-color: black;
+    color: white;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    border: none;
+}
+
+.white-button {
+    background-color: white;
+    color: black;
+    border: none;
+}
