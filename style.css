@@ -34,6 +34,19 @@ header > div {
     color: black;
   }
   
+  .logo{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+  }
+
+  .navbar{
+    display:flex;
+    flex-direction: row;
+    align-items: flex-start;
+    
+    
+  }
   
   .blackHeart {
     width: 20px;
@@ -43,18 +56,24 @@ header > div {
   #main-section{
       height:600px;
       background-color:rgba(232,217,217,.3);
-      
       display:flex;
-  flex-direction:column;
-  align-content:left;
-  justify-content: center;
-  padding-left:200px;
+      flex-direction:column;
+      align-content:center;
+      justify-content: center;
+  }
   
+  .container-main{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-content: center;
+    align-items: center;
+  }
       
       
       
 
-}
+
 
 .ft-container{
   display: flex;
@@ -75,30 +94,31 @@ header > div {
 
 }
   
-.btn-container{
-  display:flex;
-  flex-direction: row;
-  align-content: center;
-  justify-content: center;    /* I don´t really understand why I can´t align my buttons in a row without one of them getting compressed*/
-}
+
+  .button{
+    padding:10px 20px;
+    width:10%;
+    font-style:bolder;
+    font-weight:800;
+    margin:10px;
   
-
- #main-section .join-btn{
-    
-    background-color#fff;
-    color:black;
-    padding:10px 15px;
-    
   }
-
-  #main-section .plans-btn{
+  .button-plans{
     background-color:#FB3B49;
-    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
-    padding:10px 15px;
-    width:10%
-    
+    box-shadow:8px 5px 0 rgba(251,59,73,.2);
+    color:white;
+   
+  }
+  
+  .cta-buttons{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    padding-top:20px;
+    align-items:flex-end;
     
   }
+  
 
   #call-to-action h2{
       background-color:rgba(255,204,53,.4);

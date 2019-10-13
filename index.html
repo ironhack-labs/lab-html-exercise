@@ -10,15 +10,18 @@
    <body>
     
 <header>
-    
+  <div class="logo">
      <div>
        <img class="heart-icon" src="images/black-heart.png" alt="heart">
      </div>
      <div>
        <p>Nifty Penguin Magic </p>
     </div>
-    
- <nav>
+  </div> 
+ <nav class="navbar">
+  
+    <img class="npm-logo" src="images/npm-logo.png" alt="npm logo">
+  
   <ul>
     <li><a href="#"> Enterprise</a></li>
     <li><a href="#">Products</a></li>
@@ -28,10 +31,10 @@
     <li><a href="#">Support</a></li>
   </ul>
  </nav>  
-</div>
+
       
    <div>
-    <img class="npm-logo" src="images/npm-logo.png" alt="npm logo">
+    
     <img class="search-icon" src="images/magnifying-glass.png" alt="">
 
    
@@ -43,28 +46,20 @@
 </header>
 
 <section class="main" id="main-section">
-  <div>
+   <div class="container-main">
     <h1>Build amazing things</h1>
+    <p>Essential Javascript development tools that help you go to Market faster and build powerful applications using open source code</p>
   </div>
-  <div>
-    <article>Essential JavaScript development tools that help you go to market faster and build powerful applications using modern open source code. </article>
-  </div>
-  <div class="btn-container">
-    <div>
-        <form method="get" action="/page2">
-          <a href="#"></a><button class="plans-btn" type="submit"></a>See plans</button></a>
-      </form>
-    </div>
-   
-    <!-- <a href="#"><input class="plans-btn" type="button" value="See plans"></a> -->
-  
-  <div>
-      <form method="get" action="/page2">
-        <button class="join-btn" type="submit">Join for free</button>
-      </form>
-    <!-- <a href="#"><input  class="join-btn" type="button" value="Join for free"></a> -->
-  </div>
-  </div>
+
+  <div class="cta-buttons">
+      
+    <button type="button" class="button button-plans">See plans</button>
+
+
+<button type="button" class="button button-join">Join for free</button>
+
+
+</div>
 
 
 </section>
@@ -111,6 +106,7 @@
    
 
   </div>
+</section>
     
    <div class="container-2">
       <button id="submit">Create an Org</button>
