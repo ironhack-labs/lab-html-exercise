@@ -77,7 +77,7 @@ header > div {
       border:none;
       width: 100%;
       height: 50px;
-      font-size: 1em;
+      font-size: 1.3em;
       background: rgba(0,0,0,.05);
       margin:auto;
       align-items: flex-start;
@@ -150,6 +150,11 @@ h1{
   font-weight: 900;
   margin: 80px 0 0 0;
 }
+@media screen and (max-width:950px) {
+  h1{font-size: 3.9rem;
+    font-weight: 900;  
+  }
+}
 
 #buildAmazing article{
   width: 585px;
@@ -198,41 +203,86 @@ h1{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 600px;
-  background-color: rgba(232,217,217,.3);
+  height: 800px;
   padding: 200px auto;
 }
 
 #hexagon img{
-  width: 260px;
-  height: 360px;
-  margin: 20px;
+  width: 360px;
+  height: 460px;
+  margin-top: 40px;
 }
 
 #hexagon article{
+  display: flex;
+  flex-direction: row;
+  align-content:center;
   text-align: center;
-  width:780px;
-  margin: 10px 0 70px 0;
+  width: ;
+  
 }
 
 #hexagon p{
-  font-size: 1rem;
-  font-weight: 100;
+  font-size: 1.5rem;
   text-align: center;
+  display:flex;
+  flex-direction: column;
+  align-content: center;
+  margin: 10px 370px 60px 370px;
+}
+@media screen and (max-width:950px) {
+  #hexagon p{font-size: 1.2rem;
+    margin: 20px 100px 50px 100px;
+}
 }
 
+@media screen and (max-width:1440px) {
+  #hexagon p{font-size: 1.35rem;
+    margin: 20px 100px 50px 100px;
+}
+}
 h3{
   display: flex;
   flex-wrap: wrap;
+  align-content: center;
+  text-align: center;
   background-color: rgba(255,204,53,.4);
   padding: 1px 30px 0 30px;
   transform: skew(9deg, 0deg);
   font-style: italic;
-  font-size: 2.3rem;
+  font-size: 3.6rem;
+  font-weight: 700;
   height: 48px;
-  margin-bottom: 20px;
+  margin-bottom: 60px;
 }
 
+@media screen and (max-width:950px) {
+  h3{text-decoration-line: underline;
+    text-decoration-color: rgba(255,204,53,.4);
+    background-color: transparent;
+    font-size: 2.3rem;
+    text-align: center;
+    font-weight: 700;
+    padding: 1px 30px 0 30px;
+    font-style: italic;
+    height: 48px;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width:1440px) {
+  h3{text-decoration-line: underline;
+    text-decoration-color: rgba(255,204,53,.4);
+    background-color: transparent;
+    font-size: 2.8rem;
+    text-align: center;
+    font-weight: 700;
+    padding: 1px 30px 0 30px;
+    font-style: italic;
+    height: 48px;
+    margin-bottom: 20px;
+  }
+}
 /*Section 3 (Plans)*/
 #plans{
   display:flex;
