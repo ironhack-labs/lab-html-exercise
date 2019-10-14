@@ -40,7 +40,6 @@ header > div {
 .headerDos{
   padding: 0 25px;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid lightgray;
@@ -48,16 +47,17 @@ header > div {
 .logoNpm {
   display:flex;
   width: 70px;
-  margin-right: 1rem;
+  margin: 15px;
 }
 
 
   .searchBar{ /*padre*/
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 80%;
+    width: auto;
+    padding: 5px 0;
+    flex-grow: 1;
     
     
   }
@@ -79,8 +79,8 @@ header > div {
       height: 50px;
       font-size: 1em;
       background: rgba(0,0,0,.05);
-      margin:5px 0;
-      align-content: center;
+      margin:auto;
+      align-items: flex-start;
   }
 
 /*boton rojo Search*/
@@ -89,72 +89,192 @@ header > div {
       font-size: 19px;
       font-weight: 100;
       text-align: center;
-      border: rgba(0,0,0,.05) solid 1px;
+      border: none;
       background-color: #fb3e44;
       padding: 15px 25px;
-      margin: 5px 30px 5px 0;
+      margin: 3px 25px 3px 0;
       color: white;
       width:auto;
-      height:50px;
+      height:52px;
       align-items: center;
   }
 /*botones finales del header*/
 .buttons{
     display:flex;
-
-    justify-content: center;
+    justify-content: space-around;
     text-align: center;
     font-size: 17px;
-    margin: 5px 5px;
+    margin: auto;
 }
   .buttonJoin{
      text-decoration: none;
      font-weight: 900;
      color: rgb(61, 59, 59);
      border:rgb(109, 98, 98) 1px solid;
-     margin:5px;
+     margin:auto;
      padding:7px 4px;
      background-color: white; 
      width:70px;
-     align-items: flex-end;
+     align-items: flex-start;
   }
 
   .buttonLogIn{ 
     text-decoration: none;
     font-weight: 700;
     color: rgb(76, 82, 81);
-    margin:5px;
+    margin:auto;
     padding:5px 15px;
     background-color: white; 
     width:80px; 
-    align-items: center;
+    align-items: flex-start;
   }
 
-  .flexNavBar{
-
-  }
-
-.searchBar{
-
-}
-
-.magnifying-glass{
-
-}
 
 /*Section 1(buildAmazing*/
 
-h1{
+#buildAmazing{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  height: 600px;
+  background-color: rgba(232,217,217,.3);
+  padding: 200px auto;
+}
 
+h1{
+  display:flex;
+  align-content: flex-end;
+  font-size: 5.5rem;
+  font-weight: 900;
+  margin: 80px 0 0 0;
+}
+
+#buildAmazing article{
+  width: 585px;
+  margin-top: 1px;
+}
+
+#buildAmazing p{
+  font-size: 1.4em;
+  font-weight: 100;
+  text-align: center;
+}
+
+.sectionOneButtons{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 600px;
+  margin-bottom:  50px;
+  padding: 50px;
+}
+
+.sectionOneButtons a{
+  text-decoration: none;
+  font-size: 1.5rem;
+  size: 20px 50px;
+}
+
+.plansButton{
+  color: white;
+  background-color: #FB3B49;
+  box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+  padding: 15px 60px;
+  margin-left: 0px;
+}
+
+.joinForFree{
+  color: black;
+  margin-right: 40px;
 }
 
 /*Section 2 (Hexagon)*/
-h3{
 
+#hexagon{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  background-color: rgba(232,217,217,.3);
+  padding: 200px auto;
+}
+
+#hexagon img{
+  width: 260px;
+  height: 360px;
+  margin: 20px;
+}
+
+#hexagon article{
+  text-align: center;
+  width:780px;
+  margin: 10px 0 70px 0;
+}
+
+#hexagon p{
+  font-size: 1rem;
+  font-weight: 100;
+  text-align: center;
+}
+
+h3{
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgba(255,204,53,.4);
+  padding: 1px 30px 0 30px;
+  transform: skew(9deg, 0deg);
+  font-style: italic;
+  font-size: 2.3rem;
+  height: 48px;
+  margin-bottom: 20px;
 }
 
 /*Section 3 (Plans)*/
+#plans{
+  display:flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
 
-h4{
+#plans div{
+  width: 250px;
+  height: 200px;
+  display:flex;
+  flex-direction: column;
+  align-content: center;
+  margin: 75px 5px;
+}
 
+#plans img{
+  width: 35px;
+  height: 35px;
+}
+
+#plans h4{
+  color: #ed1c24;
+  font-weight: 900;
+  font-size: 1.3em;
+}
+
+#plans nav{
+  display: flex;
+  justify-content: center;
+  flex-direction: center;
+  justify-self:center;
+  align-self: center;
+}
+
+#plans nav a{
+  color:white;
+  font-size: 1.2rem;
+  text-align: center;
+  background-color: black;
+  padding: 13px 150px;
+  margin: 70px 0 100px 0;
+  box-shadow: 8px 8px 0 rgba(128,83,35,.2);
 }
