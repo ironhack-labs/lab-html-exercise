@@ -11,7 +11,7 @@ body {
   font-family: 'Poppins';
 }
 
-header > div {
+.heart-bar {
     padding: 0 25px;
     display: flex;
     justify-content: space-between;
@@ -49,30 +49,54 @@ nav a {
 .mag-glass {
     width: 23px;
     position: absolute;
-    padding: 9px 15px;
+    padding: 10px 15px;
 }
 
-form input {
-/* color: rgba(0,0,0,.05); The color stays white when there is an input */
-   color: black;
-   width: 800px;
-   height: 30px;
+.nav-button {
+    background-color: white;
+    border: 1px solid #000000;
+    color: black;
+    font-size: 1em;
+    letter-spacing: 0.5px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 10px 0 20px;
+    padding: 3px 8px;
+}
+
+.nav-button-login {
+    background-color: white;
+    color: black;
+    font-size: 1em;
+    letter-spacing: 0.5px;
+    text-align: center;
+    text-decoration: none;
+    padding: 3px 8px;    
 }
 
 form button {
     background: #fb3e44;
     color: white;
-    height: 30px;
-
+    height: 40px;
+    border: none;
+    text-align: center;
+    padding: 10px 15px;
 }
 
 .npm-bar {
-    padding: 0 25px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
-    border-bottom: 1px solid lightgray;
-    margin: 25px 10px;
+    margin: 10px 30px;
+}
+
+.search-bar {
+    width: 65vw;
+    background-color: rgba(0,0,0,.05);
+    border: none;
+    height: 40px;
+    text-indent: 35px;
+    margin-left: 5px;
 }
 
 #plans {
@@ -122,7 +146,7 @@ form button {
 }
 
 #company {
-    height: 600px;
+/*  height: 600px;*/
     display: flex;
     justify-content: space-between;
     text-align: center;
@@ -154,8 +178,8 @@ form button {
     display: flex;
     justify-content: space-around;
     flex-direction: row;
-    margin: 80px 80px 40px;
-    padding: 0 30px;
+    margin: 50px 50px 40px; 
+    padding: 50px 30px;
 }
 
 #createorg img {
