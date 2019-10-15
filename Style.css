@@ -135,17 +135,14 @@ header > div {
 #buildAmazing{
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
   align-items: center;
+  justify-content: space-between;
   align-content: center;
   height: 600px;
   background-color: rgba(232,217,217,.3);
-  padding: 200px auto;
 }
 
 h1{
-  display:flex;
-  align-content: flex-end;
   font-size: 5.5rem;
   font-weight: 900;
   margin: 80px 0 0 0;
@@ -156,24 +153,21 @@ h1{
   }
 }
 
-#buildAmazing article{
-  width: 585px;
-  margin-top: 1px;
-}
 
 #buildAmazing p{
   font-size: 1.4em;
   font-weight: 100;
   text-align: center;
+  width: 585px;
+  margin-bottom: 15px;
+
 }
 
 .sectionOneButtons{
   display:flex;
-  flex-direction: row;
-  align-items: center;
   justify-content: space-between;
   width: 600px;
-  margin-bottom:  50px;
+  margin-bottom:  350px;
   padding: 50px;
 }
 
@@ -188,11 +182,12 @@ h1{
   background-color: #FB3B49;
   box-shadow: 8px 8px 0 rgba(251,59,73,.2);
   padding: 15px 60px;
-  margin-left: 0px;
 }
 
 .joinForFree{
   color: black;
+  background-color: white;
+  padding: 15px 60px;
   margin-right: 40px;
 }
 
@@ -286,35 +281,53 @@ h3{
 /*Section 3 (Plans)*/
 #plans{
   display:flex;
-  justify-content: space-evenly;
   flex-direction: row;
-  flex-wrap: wrap;
+  justify-content: space-evenly;
+  flex-wrap: wrap;/*No tocar?*/
+ 
 }
 
 #plans div{
-  width: 250px;
+  width: 350px;
   height: 200px;
-  display:flex;
-  flex-direction: column;
+  flex-direction: column;/*No tocar*/
+  justify-content: center;
   align-content: center;
-  margin: 75px 5px;
+  flex-wrap: wvrap;
+  margin: 5px auto;
+}
+@media screen and (max-width:1500px) {
+#plans div{
+  width: 40%;
+  flex-direction: column;/*No tocar*/
+  justify-content: center;
+  align-content: flex-start;
+  flex-wrap: wvrap;
+  margin: 30px auto;
+}
 }
 
 #plans img{
-  width: 35px;
-  height: 35px;
+  width: 65px;
+  height: 65px;
+  margin: 10px 0;
 }
 
 #plans h4{
   color: #ed1c24;
   font-weight: 900;
-  font-size: 1.3em;
+  font-size: 1.4em;
 }
 
-#plans nav{
+#plans div, p{
+  margin-bottom: 100px;
+  font-size: 1.1em
+}
+
+#plans nav {
   display: flex;
   justify-content: center;
-  flex-direction: center;
+  flex-direction: row;
   justify-self:center;
   align-self: center;
 }
@@ -325,6 +338,6 @@ h3{
   text-align: center;
   background-color: black;
   padding: 13px 150px;
-  margin: 70px 0 100px 0;
+  margin: 70px 0 80px 0;
   box-shadow: 8px 8px 0 rgba(128,83,35,.2);
 }
