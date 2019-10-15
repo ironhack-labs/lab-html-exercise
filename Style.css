@@ -32,28 +32,18 @@ header > div {
   
   
   .blackHeart {
-    width: 20px;
+    width: 25px;
     margin-right: 1rem;
   }
 
-
-.headerDos{
-  padding: 0 25px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid lightgray;
-}
-.logoNpm {
-  display:flex;
-  width: 70px;
-  margin: 15px;
-}
+ .logoNpm {
+   width: 70px;
+   margin: 15px;
+ }
 
 
   .searchBar{ /*padre*/
     display: flex;
-    justify-content: center;
     align-items: center;
     width: auto;
     padding: 5px 0;
@@ -67,25 +57,21 @@ header > div {
       width: 30px;
       height: 30px;
       background: rgba(0,0,0,.05); 
-      align-items: center;
       padding: 11px;
     }
 /*barra de busqueda gris con lupa*/
 
   .lettersSearch{/*hijo de searchBar*/
-      display: flex;
       border:none;
       width: 100%;
       height: 50px;
       font-size: 1.3em;
       background: rgba(0,0,0,.05);
       margin:auto;
-      align-items: flex-start;
   }
 
 /*boton rojo Search*/
   .searchButton{/*hijo de serachBar*/
-      display: flex;
       font-size: 19px;
       font-weight: 100;
       text-align: center;
@@ -96,12 +82,10 @@ header > div {
       color: white;
       width:auto;
       height:52px;
-      align-items: center;
   }
 /*botones finales del header*/
 .buttons{
     display:flex;
-    justify-content: space-around;
     text-align: center;
     font-size: 17px;
     margin: auto;
@@ -115,7 +99,6 @@ header > div {
      padding:7px 4px;
      background-color: white; 
      width:70px;
-     align-items: flex-start;
   }
 
   .buttonLogIn{ 
@@ -126,26 +109,23 @@ header > div {
     padding:5px 15px;
     background-color: white; 
     width:80px; 
-    align-items: flex-start;
   }
 
 
 /*Section 1(buildAmazing*/
 
-#buildAmazing{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  align-content: center;
-  height: 600px;
-  background-color: rgba(232,217,217,.3);
+ #buildAmazing{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   height: 600px;
+   background-color: rgba(232,217,217,.3);
 }
 
-h1{
-  font-size: 5.5rem;
-  font-weight: 900;
-  margin: 80px 0 0 0;
+  h1{
+   font-size: 5.5rem;
+   font-weight: 900;
+   margin: 80px 0 0 0;
 }
 @media screen and (max-width:950px) {
   h1{font-size: 3.9rem;
@@ -154,76 +134,62 @@ h1{
 }
 
 
-#buildAmazing p{
-  font-size: 1.4em;
-  font-weight: 100;
-  text-align: center;
-  width: 585px;
-  margin-bottom: 15px;
-
+  #buildAmazing p{
+   font-size: 1.4em;
+   font-weight: 100;
+   text-align: center;
+   width: 585px;
+   margin-bottom: 15px;
 }
 
-.sectionOneButtons{
-  display:flex;
-  justify-content: space-between;
-  width: 600px;
-  margin-bottom:  350px;
-  padding: 50px;
+  .sectionOneButtons{
+   display:flex;
+   justify-content: space-between;
+   width: 600px;
+   margin-bottom:  350px;
+   padding: 50px;
 }
 
-.sectionOneButtons a{
-  text-decoration: none;
-  font-size: 1.5rem;
-  size: 20px 50px;
+  .sectionOneButtons a{
+   text-decoration: none;
+   font-size: 1.5rem;
+   size: 20px 50px;
 }
 
-.plansButton{
-  color: white;
-  background-color: #FB3B49;
-  box-shadow: 8px 8px 0 rgba(251,59,73,.2);
-  padding: 15px 60px;
+  .plansButton{
+   color: white;
+   background-color: #FB3B49;
+   box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+   padding: 15px 60px;
 }
 
-.joinForFree{
-  color: black;
-  background-color: white;
-  padding: 15px 60px;
-  margin-right: 40px;
+ .joinForFree{
+   color: black;
+   background-color: white;
+   padding: 15px 60px;
+   margin-right: 40px;
 }
 
 /*Section 2 (Hexagon)*/
 
-#hexagon{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 800px;
-  padding: 200px auto;
+  #hexagon{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   height: 800px;
+   padding: 200px auto;
 }
 
-#hexagon img{
-  width: 360px;
-  height: 460px;
-  margin-top: 40px;
+  #hexagon img{
+   width: 360px;
+   height: 460px;
+   margin-top: 40px;
 }
 
-#hexagon article{
-  display: flex;
-  flex-direction: row;
-  align-content:center;
-  text-align: center;
-  width: ;
-  
-}
-
-#hexagon p{
-  font-size: 1.5rem;
-  text-align: center;
-  display:flex;
-  flex-direction: column;
-  align-content: center;
-  margin: 10px 370px 60px 370px;
+  #hexagon p{
+   font-size: 1.5rem;
+   text-align: center;
+   margin: 10px 500px 60px 500px;
 }
 @media screen and (max-width:950px) {
   #hexagon p{font-size: 1.2rem;
@@ -236,19 +202,19 @@ h1{
     margin: 20px 100px 50px 100px;
 }
 }
-h3{
-  display: flex;
-  flex-wrap: wrap;
-  align-content: center;
-  text-align: center;
-  background-color: rgba(255,204,53,.4);
-  padding: 1px 30px 0 30px;
-  transform: skew(9deg, 0deg);
-  font-style: italic;
-  font-size: 3.6rem;
-  font-weight: 700;
-  height: 48px;
-  margin-bottom: 60px;
+
+  h3{
+   display: flex;
+   flex-wrap: wrap;
+   align-content: center;
+   background-color: rgba(255,204,53,.4);
+   padding: 1px 30px 0 30px;
+   transform: skew(9deg, 0deg);
+   font-style: italic;
+   font-size: 3.6rem;
+   font-weight: 700;
+   height: 48px;
+   margin-bottom: 60px;
 }
 
 @media screen and (max-width:950px) {
@@ -281,28 +247,21 @@ h3{
 /*Section 3 (Plans)*/
 #plans{
   display:flex;
-  flex-direction: row;
   justify-content: space-evenly;
-  flex-wrap: wrap;/*No tocar?*/
+  flex-wrap: wrap;
+  margin: 5px 100px;
+
  
 }
 
 #plans div{
-  width: 350px;
-  height: 200px;
-  flex-direction: column;/*No tocar*/
-  justify-content: center;
-  align-content: center;
-  flex-wrap: wvrap;
-  margin: 5px auto;
+  width: 300px;
+  height: 300px;
+  margin: 50px 50px;
 }
-@media screen and (max-width:1500px) {
+@media screen and (max-width:1900px) {
 #plans div{
   width: 40%;
-  flex-direction: column;/*No tocar*/
-  justify-content: center;
-  align-content: flex-start;
-  flex-wrap: wvrap;
   margin: 30px auto;
 }
 }
@@ -328,7 +287,6 @@ h3{
   display: flex;
   justify-content: center;
   flex-direction: row;
-  justify-self:center;
   align-self: center;
 }
 
