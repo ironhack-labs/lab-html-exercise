@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,600,900&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-size: 4em;
+    font-weight: 900;
+}
+
+h2 {
+    font-size: 1.8em;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 1.125em;
+    font-weight: 600;
+}
+
+header>div {
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+}
+
+nav {
+    width: 600px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.black-heart {
+    width: 20px;
+    margin-right: 1rem;
+}
+
+.logo {
+    margin-right: 1rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 40px;
+}
+
+.logo img {
+    margin-top: 5px;
+    height: 20px;
+}
+
+#lower-navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+
+#lower-navbar > form {
+    background-color: rgba(0,0,0,.05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+    height: 40px;
+    border: none;
+}
+
+#lower-navbar > form > img {
+    width: 20px;
+    padding: 0 0 0 15px;
+}
+
+#lower-navbar > form > input {
+    height: 40px;
+    padding: 5px 15px;
+    border: 0;
+    background: none;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 1em;
+    box-sizing: border-box;
+    border-bottom: 2px solid rgba(0,0,0,.00);
+    border-top: 2px solid rgba(0,0,0,.00);
+}
+
+#lower-navbar > form > input:focus {
+    border-bottom: 2px solid #fb3e44;
+    outline: none;
+}
+
+#lower-navbar > form > button {
+   background-color: #fb3e44;
+   color: white;
+   height: 100%;
+   border: none;
+   font-size: 1em;
+   padding: 0 20px;
+   font-weight: 400;
+   cursor: pointer;
+}
+
+#lower-navbar .account-actions {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+#lower-navbar .account-actions a    {
+    padding: 5px 20px;
+    text-decoration: none;
+    color: black;
+    line-height: 30px;
+}
+
+#lower-navbar .account-actions a:hover    {
+    opacity: 0.7;
+}
+
+#lower-navbar .account-actions a:first-child    {
+    border: 1px solid black;
+    margin-left: 40px;
+}
+
+#lower-navbar .account-actions a:last-child    {
+    padding: 5px 0;
+    margin-left: 20px;
+}
+
+/* form label color: rgba(0,0,0,.05)
+form input color: rgba(0,0,0,.05)
+form button background color: #fb3e44
+form button letters color: white */
+
+.hero-block {
+    height: 600px;
+    background-color: rgba(232,217,217,.3);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+}
+
+.hero-block h1 {
+   margin-top: 0;
+   padding-top: 100px;
+}
+
+.hero-block article {
+    width: 40%;
+ }
+
+.hero-block div {
+    margin: 60px 0;
+}
+
+.hero-block div a {
+    text-decoration: none;
+    padding: 10px 60px;
+    background-color: white;
+    margin: 0 20px;
+    font-weight: 600;
+    color: black;
+}
+
+.hero-block div a:first-child {
+    background-color: #FB3B49;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+    color: white;
+    transition: 0.5s;
+}
+
+.hero-block div a:first-child:hover {
+    box-shadow: 1px 1px 0 rgba(251,59,73,.2);
+    opacity: 0.7;
+}
+
+/* suggested height for this section: 600px
+background color: rgba(232,217,217,.3)
+"See plans" button background color: #FB3B49
+"See plans" button box shadow: 8px 8px 0 rgba(251,59,73,.2) */
+
+.description-block{
+    padding: 100px 0;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    text-align: center;
+}
+
+.description-block img{
+    width: 15%;
+    margin-bottom: 30px;
+}
+
+.description-block h2{
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+    font-style: italic;
+    padding: 0 20px;
+    line-height: 1;
+}
+
+.description-block article{
+    width: 60%;
+}
+/* heading background color: rgba(255,204,53,.4)
+to get the transform of the yellow background in the left-hand direction use: transform: skew(9deg,0deg);
+to get it in the opposite direction of the letters, the way we need it on the page, use: font-style: italic;
+to additionally fine-tune the position of each element, use margin property. */
+
+.feature-block{
+    padding: 20px 150px;
+}
+
+.features   {
+    display: flex;
+    /* height: 400px; */
+    /* flex-wrap: wrap; */
+    align-content: stretch; 
+}
+
+.features > .feature {
+    padding: 10px 30px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+
+}
+
+.feature h3{
+    color: #ED1C24;
+    margin-top: 5px;
+}
+
+.feature p {
+    font-size: 0.95em;
+}
+
+.feature div:first-child    {
+    height: 50px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.feature img{
+    width: 30px;
+}
+
+.feature-block .call-to-action {
+    text-align: center;
+    padding: 50px 10px; 
+}
+
+.feature-block .call-to-action a {
+    box-shadow: 8px 8px 0 rgba(128,83,35,0.2);
+    color: white;
+    background-color: black;
+    padding: 10px 60px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.feature-block .call-to-action a:hover {
+    box-shadow: 1px 1px 0 rgba(128,83,35,0.2);
+    opacity: 0.7;
+}
+/* color of the letters in each heading in this section: #ED1C24
+"Create an Org" box shadow: 8px 8px 0 rgba(128,83,35,.2)
+"Create an Org" letters color: white */
