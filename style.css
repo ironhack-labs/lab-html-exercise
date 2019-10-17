@@ -6,6 +6,7 @@
 	5.ORG PLAN
 		5.1.ABOUT US
 		5.2.FEATURES
+	6.UTILS
 */
 
 
@@ -19,6 +20,7 @@
 :root {
 	--red-accent : #fb3c43;
 	--grey-background : #f2f2f2;
+	--light-gray : #d3d3d3;
 }
 
 body {
@@ -45,9 +47,11 @@ h3 { color: var(--red-accent); }
 
 header { background-color: #fff; }
 
+.fun-quote:hover {cursor: pointer}
+
 header > div {
 	display: flex;
-	border-bottom: 1px solid #d3d3d3;
+	border-bottom: 1px solid var(--light-gray);
 }
 
 .header-nav {	
@@ -130,8 +134,13 @@ a.btn-login {
 
 a.btn-join {
 	margin-left: 20px;
-	border: 1px inset #ccc;
+	border: 1px solid #9a9a9a;
 	font-weight: 600;
+}
+
+a.btn-join:hover { 
+	opacity: .5;
+	transition: opacity 150ms ease-in;
 }
 
 /*------------- 4.STOREFRONT -------------*/
@@ -179,9 +188,22 @@ a.btn-plans {
 	box-shadow: 5px 5px #f9d2d5;
 }
 
+a.btn-plans:hover {
+	background-color: #d13137;
+	box-shadow: none;
+	transition: all 150ms ease-in;
+}
+
 a.btn-free {
 	color: #000;
 	background-color: #fff;
+	border: 1px solid #fff;
+}
+
+a.btn-free:hover {
+	background-color: #f7f7f7;
+	border: 1px solid #f2f2f2;
+	transition: all 150ms ease-in;
 }
 
 /*------------- 5.ORG PLAN -------------*/
@@ -260,4 +282,17 @@ a.btn-create-org {
 	color: #fff;
 	background-color: #000;
 	box-shadow: 5px 5px var(--grey-background);
+}
+
+a.btn-create-org:hover {
+	background-color: #333;
+	box-shadow: none;
+	transition: all 150ms ease-in;
+}
+
+/*------------- 6.UTILS -------------*/
+
+.gray-text-hover:hover { 
+	color: var(--light-gray);
+	transition: color 150ms ease-in;
 }
