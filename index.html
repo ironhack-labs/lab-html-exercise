@@ -1,98 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./style.css" />
     <title>NPM Clone</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <header>
+      <div>
         <div>
-            <div>
-                <img class="blackHeart" src="images/black-heart.png" alt="Black Heart">
-                <span>Nifty Penguin Magic</span>
-            </div>
-            <nav>
-                <ul>
-                    <li> <a href="#"> npm Enterprise </a> </li>
-                    <li> <a href="#"> Products </a> </li>
-                    <li> <a href="#"> Solutions </a> </li>
-                    <li> <a href="#"> Resources </a> </li>
-                    <li> <a href="#"> Docs </a> </li>
-                    <li> <a href="#"> Support </a> </li>
-                </ul>
-            </nav>
+          <img
+            class="blackHeart"
+            src="images/black-heart.png"
+            alt="Black Heart"
+          />
+          <span>Nifty Penguin Magic</span>
         </div>
+        <nav>
+          <ul>
+            <li><a href="#"> npm Enterprise </a></li>
+            <li><a href="#"> Products </a></li>
+            <li><a href="#"> Solutions </a></li>
+            <li><a href="#"> Resources </a></li>
+            <li><a href="#"> Docs </a></li>
+            <li><a href="#"> Support </a></li>
+          </ul>
+        </nav>
+      </div>
 
-        <div >
-            <img class="npm-logo" src="images/npm-logo.png" alt="Npm Logo">
-        
+      <div>
+        <img class="npm-logo" src="images/npm-logo.png" alt="Npm Logo" />
 
-                <form class="form-header" action="/some-url" method="get">
-                    <label for="icon"><img class="glass-icon" src="images/magnifying-glass.png" alt="Glass"></label>
-                    <input type="text" id="search" placeholder="Search packages">
-                    <button>Search</button>
-                </form>
-                        <button class="button-join" type="button">Join</button>
-                        <button class="button-login" type="button">Log In</button>
-               
-        </div>
-
+        <form class="form-header" action="/some-url" method="get">
+          <label for="icon"
+            ><img
+              class="glass-icon"
+              src="images/magnifying-glass.png"
+              alt="Glass"
+          /></label>
+          <input type="text" id="search" placeholder="Search packages" />
+          <button>Search</button>
+        </form>
+        <button class="button-join" type="button">Join</button>
+        <button class="button-login" type="button">Log In</button>
+      </div>
     </header>
 
     <section id="section-1">
-        <h2>Build amazing things</h2>
-        <p class="text-1">Essential JavaScript development tools that help you <br> go to market faster and build powerful applications <br> using modern open source code.</p>
-        <div class="buttons">
-        <a href='#' class="link-btn-1">See plans</a>
-        <a href='#' class="link-btn-2">Join for free</a>
-        </div>
-        <p class="text-2"><span>Open source power, superior safety and collaboration.</span><br> 
-            <a href="#" class="link-npm-enterprise">npm Enterprise</a> now offers package filtering, SSO & vulnerability <br> reporting features, making enterprise Javascript more secure & <br> streamlining the developer experience. <br>
-            <a href="#" class="link-learn-more">Learn more >></a></p>
+      <h2>Build amazing things</h2>
+      <p class="text-1">
+        Essential JavaScript development tools that help you <br />
+        go to market faster and build powerful applications <br />
+        using modern open source code.
+      </p>
+      <div class="buttons">
+        <a href="#" class="link-btn-1">See plans</a>
+        <a href="#" class="link-btn-2">Join for free</a>
+      </div>
+      <p class="text-2">
+        <span>Open source power, superior safety and collaboration.</span><br />
+        <a href="#" class="link-npm-enterprise">npm Enterprise</a> now offers
+        package filtering, SSO & vulnerability <br />
+        reporting features, making enterprise Javascript more secure & <br />
+        streamlining the developer experience. <br />
+        <a href="#" class="link-learn-more">Learn more >></a>
+      </p>
     </section>
 
     <section id="section-2">
-        <img class="triangle-hexagon" src="images/triangle-hexagon.svg" alt="triangle hexagon">
-        <h3>Bring the best of open source to your company</h3>
-        <p>npm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers <br> already use it. Your company depends on it. Create an Org and get more out of the tools your <br> team already knows and loves.</p>
+      <img
+        class="triangle-hexagon"
+        src="images/triangle-hexagon.svg"
+        alt="triangle hexagon"
+      />
+      <h3>Bring the best of open source to your company</h3>
+      <p>
+        npm is the tool used by over 11,000,000 JavaScript developers around the
+        world. Your developers <br />
+        already use it. Your company depends on it. Create an Org and get more
+        out of the tools your <br />
+        team already knows and loves.
+      </p>
     </section>
 
     <section id="section-3">
+      <article class="container">
+        <img src="images/zero-configuration.svg" alt="zero config" />
+        <h4>Zero configuration</h4>
+        <p class="text">
+          Create an org, add your team, and start collaborating. Nothing to
+          configure, set up, or manage.
+        </p>
+      </article>
+      <article class="container">
+        <img src="images/team-management.svg" alt="team management" />
+        <h4>Team management</h4>
+        <p class="text">
+          Control who has access to what modules within your team namespace
+          using straightforward team management capabilities.
+        </p>
+      </article>
+      <article class="container">
+        <img src="images/familiar-features.svg" alt="familiar features" />
+        <h4>Familiar features</h4>
+        <p class="text">
+          npm Orgs has 100% parity with all the public npm registry features
+          your developers already use.
+        </p>
+      </article>
+      <article class="container">
+        <img src="images/npm-audit.svg" alt="npm audit" />
+        <h4>npm audit</h4>
+        <p class="text">
+          Enjoy the security auditing features built into the npm client, a
+          zero-friction way to make open source software safer.
+        </p>
+      </article>
 
-        <article class="container">
-            <img src="images/zero-configuration.svg" alt="zero config">
-            <h4>Zero configuration</h4>
-            <p class="text">Create an org, add your team, and start collaborating. Nothing to configure, set up, or manage.</p>
-        </article>
-        <article class="container">
-                <img src="images/team-management.svg" alt="team management">
-                <h4>Team management</h4>
-                <p class="text">Control who has access to what modules within your team namespace using straightforward team management capabilities.</p>
-        </article>
-        <article class="container">
-                <img src="images/familiar-features.svg" alt="familiar features">
-                <h4>Familiar features</h4>
-                <p class="text">npm Orgs has 100% parity with all the public npm registry features your developers already use.</p>
-        </article>
-        <article class="container">
-            <img src="images/npm-audit.svg" alt="npm audit">
-            <h4>npm audit</h4>
-            <p class="text">Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer.</p>
-        </article>
-     
-        <!-- <div>
+      <!-- <div>
             <a href='#' class="link-btn-org">Create an Org</a>
         </div> -->
     </section>
 
-        <div class="link-btn-org">
-            <a href='#'>Create an Org</a>
-        </div>
-        
-</body>
+    <div class="link-btn-org">
+      <a href="#">Create an Org</a>
+    </div>
+  </body>
 </html>
-
