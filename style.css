@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+/*
+form label color: rgba(0,0,0,.05)
+form input color: rgba(0,0,0,.05)
+form button background color: #fb3e44
+form button letters color: white
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins';
+  font-size: 16px;
+}
+
+header > div {
+  padding: 0 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+}
+
+nav {
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 10px 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  padding: 0 10px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.heart-container {
+  white-space: nowrap;
+}
+
+.blackHeart {
+  width: 20px;
+  margin-right: 1rem;
+}
+
+#search-container {
+  padding: 4px 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+}
+
+#logo {
+  height: 25px;
+  margin: 0 0.5%;
+}
+
+#search-container form {
+  background-color: #f7f7f7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 1%;
+  overflow: hidden;
+  height: 40px;
+}
+
+#search-input {
+  background-color: #f7f7f7;
+  border-style: none;
+  font-family: 'Fira Mono';
+  padding-left: 10px;
+  font-weight: 300;
+  height: calc(100% - 10px);
+  width: 65vw;
+}
+
+@media (max-width: 1000px) {
+  #search-input {
+    width: 200px;
+  }
+}
+
+.mag-glass {
+  width: 17px;
+}
+
+.search-btn {
+  letter-spacing: 0.3px;
+  background-color: #fb3e44;
+  color: white;
+  height: 100%;
+  padding: 3px 7px;
+  display: flex;
+  align-items: center;
+}
+
+#search-container a {
+  text-decoration: none;
+}
+
+.join-btn {
+  border: 1px solid darkgray;
+  padding: 2px 12px;
+  color: black;
+  margin: 0 1.5% 0 3%;
+}
+
+.log-in-btn {
+  color: black;
+  margin: 0 1.5%;
+  white-space: nowrap;
+}
+
+#introduction {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  height: 600px;
+  background-color: rgba(232, 217, 217, 0.3);
+  text-align: center;
+  padding: 10px;
+}
+
+#introduction h1 {
+  font-size: 5em;
+  font-weight: 900;
+}
+
+#introduction .intro-text {
+  width: 27em;
+  font-size: 1.2em;
+}
+
+#introduction .btn-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 530px;
+  height: 180px;
+  font-weight: 600;
+}
+
+@media (max-width: 1000px) {
+  #introduction .btn-container {
+    flex-direction: column;
+  }
+}
+
+#introduction .plans-btn {
+  background-color: #fb3b49;
+  box-shadow: 8px 8px 0 rgba(251, 59, 73, 0.2);
+  text-decoration: none;
+  color: white;
+  padding: 16px 60px;
+}
+
+#introduction .join-free-btn {
+  color: black;
+  text-decoration: none;
+  padding: 16px 60px;
+  background-color: white;
+}
+
+#middle {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  height: 500px;
+  padding: 20px;
+}
+
+#middle .hex-pic {
+  width: 260px;
+  padding: 20px;
+}
+
+#middle .features-p {
+  text-align: center;
+  font-weight: 100;
+  padding: 20px;
+  width: 38em;
+}
+
+#middle .h2-container {
+  background-color: rgba(255, 204, 53, 0.4);
+  transform: skewX(15deg);
+}
+
+#middle h2 {
+  transform: skewX(-15deg);
+  font-size: 2em;
+  font-weight: bold;
+  white-space: nowrap;
+  border-bottom: 5px, solid, rgba(255, 204, 53, 0.4);
+  padding: 20px 50px;
+  text-align: center;
+}
+
+#features .features-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 500px;
+  padding: 60px 80px 40px 80px;
+}
+
+@media (max-width: 1000px) {
+  #features .features-container {
+    flex-direction: column;
+    height: 850px;
+  }
+}
+
+#features h3 {
+  color: #ed1c24;
+}
+
+.feat-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-content: flex-start;
+  padding: 40px;
+  height: 400px;
+}
+
+.feat-img {
+  width: 50px;
+}
+
+.create-btn-container {
+  padding: 50px 0;
+}
+
+.create-btn {
+  box-shadow: 8px 8px 0 rgba(128, 83, 35, 0.2);
+  color: white;
+  background-color: black;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  width: 300px;
+  padding: 10px 60px;
+  margin: 10px auto 100px auto;
+}
