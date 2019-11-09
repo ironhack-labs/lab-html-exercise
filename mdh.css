@@ -1,0 +1,170 @@
+/* tags */
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body {
+  font-family: 'Poppins';
+}
+
+h1 { font-size:4.5em; }
+h2 { font-size:2em; }
+h3 { font-size:0.9em; }
+h4 { font-size:0.85em; }
+h5 { font-size:0.8em; }
+h6 { color:darkgrey; }
+
+header { position:relative;height:50px; }
+#header-image { width:20px;margin-right:1rem; } /* the div to contain the heart image */
+
+img { width:100%;height:100%; } /* make the image fit */
+a { /* link look */
+  margin:0px;
+}
+
+#search-bar-links {
+  position:absolute;right:0px;
+}
+#search-bar-form {
+  width:100%;
+}
+.search { 
+  background:none;
+  margin-bottom:7px;border:none;width:100%; 
+}
+#search-bar-links a { 
+  padding:5px;
+  border:1px solid lightgrey; 
+  /* background:white; */
+} /* overriding having a border */
+#npm-search-bar {
+  background:white;
+  height:36px;
+  margin:10px 0px 10px 0px;
+  border-top:1px solid #dddddd;
+  border-bottom:1px solid #dddddd;
+}
+#search-bar {
+  background:rgba(0,0,0,.05);
+  position:absolute;
+  height:30px;
+  /* width:100%; */
+  left:60px;
+  right:135px;
+}
+.search-bar-link { margin-right:10px; }
+.red-background-no-border-white-text {
+  background:#FB3B49;color:white;border:0px;margin:0px;
+}
+
+#search-button {
+  border:0px;margin:0px;padding:8px 12px;
+  background:#FB3E44;
+  color:white;
+}
+#npm-log-image { width:40px;margin-left:10px;margin-right:5px;margin-top:5px; }
+#magnifying-glass-image { width:20px;margin-left:10px;margin-right:5px; }
+
+.menu { 
+  position:absolute;
+  right:0px; /* obvious choice to get it at the right hand side */
+  top:0px; /* need this to make it align to the top (not the bottom) */
+}
+.menu li { /* that's the suggestion from stackoverflow, works fine */
+  display:inline;
+}
+
+nav { display:flex;flex-direction:row;}
+
+nav ul { 
+  list-style:none; 
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+nav a {
+  text-decoration:none;
+  color:black;
+}
+
+heading { width:60%; }
+
+/* CLASSes */
+/* flex classes */
+.flex-row-center { display:flex;flex-direction:row;align-items:center;}
+
+/* IDs */
+.header-first-row { height:40px; }
+
+#section-build-amazing-things {
+  position:relative;
+  top:38px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  /*height:600px;*/
+  margin-bottom:50px;
+  background:rgba(232,217,217,.3);
+}
+heading { width:65%;text-align:center; }
+#lightgrey-background { background:rgba(0,0,0,.05); }
+.text-center-width-30-percent {
+  width:42%;
+  text-align:center;
+}
+.text-normal-size {
+  font-size:1.3em;
+}
+.width-40-percent {
+  width:48%;
+  text-align:center;
+}
+#build-amazing-things-links {
+  display:flex;
+  flex-direction:row;
+  justify-content:space-evenly;
+  margin-top:2px;
+  padding:50px 0px 100px;
+}
+#build-amazing-things-links a {
+  padding:15px 45px 15px;
+}
+#see-plans-link { box-shadow: 8px 8px 0 rgba(251,59,73,.2);}
+#join-link { background:white; }
+#section-bring-the-best { 
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+#triangle-hexagon-image { width:200px; }
+
+#heading-bring-the-best {
+  background:rgb(255,204,53,.4);
+  transform: skew(9deg,0deg);
+  font-style:italic;
+  margin:10px;
+}
+#section-characteristics {
+  margin-top:100px;
+  display:flex;
+  flex-direction:row;
+  justify-content:space-evenly;
+}
+#characteristics {
+  display:flex;
+  flex-direction:column;
+}
+.characteristics-image { width:40px;height:40px; }
+.title { color:#ED1C24; }
+
+.centered {
+  display:flex;
+  justify-content:center;
+}
+#create-an-org {
+  color:white;
+  box-shadow:8px 8px 0 rgba(128,83,35,.2);
+  background:black;
+  padding:15px 10% 15px;
+  border:0px;
+  font-size:1em;
+}
