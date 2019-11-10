@@ -1,12 +1,23 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins");
 
+@media (max-width: 900px) {
+
+  .btbtn {
+    float: left;
+    display: block!important;
+  }
+  .btbtn div {
+    margin: 3em;
+    min-width: 400px;
+  }
+
+}
+
 body {
   font-family: "Poppins";
   margin: 0px;
 }
-h1 {
-  font-size: 300px;
-}
+
 /* The Header and the Navbar part with the list*/
 
 header > div {
@@ -26,6 +37,9 @@ nav ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  letter-spacing: 0.015625em;
+  font-size: 0.875rem;
+  font-weight: 500;
 }
 
 nav a {
@@ -86,12 +100,7 @@ nav a {
 
 /*The links*/
 
-.linkbtn {
-  padding: 8px;
-}
-
 .linkbtn a {
-  font-size: 0.875em;
   color: rgba(0, 0, 0, 0.7);
   text-decoration: none;
   padding: 8px 0;
@@ -105,6 +114,7 @@ nav a {
   border: 1px solid #9a9a9a;
   padding: 4px 16px;
   margin: 0 16px 0 0;
+  font-weight: 600;
 }
 
 .linkbtn #join:hover {
@@ -119,18 +129,21 @@ nav a {
 
 #build-things {
   background-color: rgba(232, 217, 217, 0.3);
-  height: 600px;
+  height: 100%;
+  font-weight: bold;
 }
 
 .buildthings h1 {
   font-size: 5em;
-  font-weight: 800;
+  font-weight: bold;
 }
 
 #build-things article {
-  font-size: 1.25em;
+  font-size: 1.25rem;
   padding: 0 18%;
-  font-weight: 300;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
 }
 
 .buildthings {
@@ -147,6 +160,9 @@ nav a {
 
 .btbtn {
   padding: 60px 0;
+  display:flex;
+  justify-content: center;
+  float: inline-end;
 }
 
 .btbtn a {
@@ -159,6 +175,7 @@ nav a {
 }
 
 .btbtn #redbtn {
+  font-weight: 700!important;
   background-color: #fb3b49;
   color: white;
   box-shadow: 8px 8px 0 rgba(251, 59, 73, 0.2);
@@ -170,6 +187,7 @@ nav a {
 }
 
 .btbtn #whitebtn {
+  font-weight: 700!important;
   background-color: white;
   color: black;
   box-shadow: none;
@@ -208,12 +226,14 @@ nav a {
   font-style: italic;
   margin: 0 0;
   padding: 0 5%;
+  font-size: 2.25rem;
+  font-weight: 600;
 }
 
 .opensource article {
   text-align: center;
-  font-size: 1em;
-  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.5;
   margin: 30px 7%;
 }
 
