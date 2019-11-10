@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body {
+  font-family: 'Poppins';
+}
+
+/* start provided code by Ironhack */
+header > div {
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+}
+  
+nav {
+    width: 600px;
+}
+  
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+nav a {
+    text-decoration: none;
+    color: black;
+}
+  
+  
+.blackHeart {
+    width: 20px;
+    margin-right: 1rem;
+}
+/* end provided code by Ironhack */
+
+
+/* search bar */
+/* struggled a lot with the box model and flexbox. */
+/* eventually decided to take a look at the assignment of the other students */
+/* Monika's assignment was kinda similar to mine so decided to copy paste
+   some of the parts I couldn't figure out (shoutout to Monika, will buy you a coffee) */
+/* will take another look at the parts I struggled with after the deadline */
+.npm-logo {
+    width: 70px;
+}
+.search {
+    display: flex;
+    align-items: flex-start;
+}
+
+.search img {
+    width: 15px;
+    height: 15px;
+    background-color: rgba(232,217,217,.3);
+    padding: 12px 4px 10px 16px;
+}
+
+.search input {
+    font-size: 14px;
+    height: 38px;
+    width: 1000px;
+    background-color: rgba(232,217,217,.3);
+    border: none;
+    padding: 0 0 0 10px;
+}
+
+.search button {
+    font-size: 14px;
+    background-color: #fb3e44;
+    color: white;
+    border: none;
+    padding: 12px 16px 9px;
+}
+/* end of search bar */
+
+/* section 1, a lot of trial and error for the different box/font sizes */
+#section-1 {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    height: 600px;
+    background-color: rgba(232,217,217,.3);
+}
+
+h1 {
+    font-size: 70px;
+    text-align: center;
+    height: 17%;
+}
+
+#section-1 article {
+    width: 22%;
+    text-align: center;
+    height: 20%;
+}
+
+.link-btn1 {
+    background-color: #fb3e44;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 30px;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+}
+.link-btn2 {
+
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 75px;
+}
+/* section 2, same problems as section 1 */
+
+#section-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 600px;
+    padding: 40px 0px 0px 0px;
+
+}
+
+h2 {
+background-color:rgba(255,204,53,.4);
+transform: skew(9deg,0deg);
+font-style: italic;
+margin: 60px 20px 20px 20px;
+text-align: center;
+width: 35%;
+}
+
+#section-2 article {
+    width: 35%;
+    text-align: center;
+    padding: 10px 20px 40px 20px;
+}
+/* section 3, again a lot of trial and error. Really have to practice on both these subjects */
+#section-3 {
+    height: 600px;
+}
+
+.blocks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;  
+}
+
+.blocks div {
+    height: 150px;
+    width: 350px;
+    padding: 20px 20px 20px 20px;
+    margin: 100px 0px 200px 0px;
+}
+
+h3 {
+    color: #ED1C24;
+}
+
+.blocks img {
+    height: 25px;
+    width: 25px;
+}
+
+.link-btn3 a {
+    display: flex;
+    justify-content: center;
+    color: white;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    background-color: black;
+    padding: 16px 0px;
+    text-decoration: none;
+    margin: 0 40%;
+}
