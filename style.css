@@ -1,291 +1,319 @@
-                    @import url('https://fonts.googleapis.com/css?family=Poppins');
-                    body {
-                        font-family: 'Poppins', sans-serif;
-                        font-size: 16px;
-                    }
-                    
-                    h1,
-                    h2,
-                    h3,
-                    h4,
-                    h5,
-                    h6 {
-                        font-family: 'Poppins', sans-serif;
-                    }
-                    
-                    h1 {
-                        font-size: 5em;
-                        font-weight: 700;
-                    }
-                    
-                    h2 {
-                        font-size: 4em;
-                    }
-                    
-                    h3 {
-                        font-size: 2.25em;
-                        font-weight: 600;
-                    }
-                    
-                    h4 {
-                        font-size: 1em;
-                    }
-                    
-                    h5 {
-                        font-size: 0.8em;
-                    }
-                    /*Header part with the Menu*/
-                    
-                    header>div {
-                        padding: 0 25px;
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-                        border-bottom: 1px solid lightgray;
-                    }
-                    
-                    nav {
-                        width: 600px;
-                    }
-                    
-                    nav ul {
-                        list-style: none;
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-                    }
-                    
-                    nav a {
-                        text-decoration: none;
-                        color: black;
-                    }
-                    
-                    .blackHeart {
-                        width: 20px;
-                        margin-right: 1rem;
-                    }
-                    /*End of Header part with the Menu*/
-                    /*Header part with search field and search button*/
-                    
-                    .npmlogo {
-                        width: 70px;
-                        margin: 16px 0;
-                    }
-                    
-                    .searchform {
-                        display: flex;
-                        align-items: center;
-                        padding: 8px 0;
-                    }
-                    
-                    .searchform img {
-                        width: 18px;
-                        height: 18px;
-                        background-color: rgba(0, 0, 0, .05);
-                        padding: 12px 4px 10px 16px;
-                    }
-                    
-                    .searchform input {
-                        font-family: "Fira Mono", "Andale Mono", "Consolas", monospace;
-                        font-size: 0.875em;
-                        letter-spacing: 0px;
-                        height: 40px;
-                        width: 980px;
-                        background-color: rgba(0, 0, 0, .05);
-                        border: none;
-                        padding: 0 0 0 10px;
-                    }
-                    
-                    .searchform button {
-                        font-family: 'Poppins';
-                        font-size: 0.875em;
-                        background-color: #fb3e44;
-                        color: white;
-                        border: none;
-                        padding: 10px 16px 9px;
-                    }
-                    /*2 links*/
-                    
-                    .linkbtn {
-                        padding: 0 0 0 16px;
-                        margin: 0 0 2px 8px;
-                    }
-                    
-                    .linkbtn a {
-                        font-size: 0.875em;
-                        color: rgba(0, 0, 0, .7);
-                        text-decoration: none;
-                        padding: 8px 0;
-                    }
-                    
-                    .linkbtn a:hover {
-                        color: #9a9a9a7c;
-                    }
-                    
-                    .linkbtn #join {
-                        border: 1px solid #9a9a9a;
-                        padding: 4px 16px;
-                        margin: 0 16px 0 0;
-                    }
-                    
-                    .linkbtn #join:hover {
-                        border: 1px solid #9a9a9a7c;
-                    }
-                    
-                    .linkbtn #login {
-                        padding: 4px;
-                        margin: 0;
-                    }
-                    /*End of two links*/
-                    /* End of Header part with search field and search button*/
-                    /*Section 1*/
-                    
-                    #section1 {
-                        height: 600px;
-                        background-color: rgba(232, 217, 217, .3);
-                    }
-                    
-                    #section1 article {
-                        font-size: 1.25em;
-                        padding: 0 18%;
-                        font-weight: 300;
-                    }
-                    
-                    .amazingsection {
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        flex-direction: column;
-                        text-align: center;
-                        padding: 64px 8px;
-                        margin: 0 18%;
-                    }
-                    /*Buttons*/
-                    
-                    .sec1buttons {
-                        padding: 60px 0;
-                        margin: 0 12%;
-                    }
-                    
-                    .sec1buttons a {
-                        font-size: 1.25em;
-                        font-weight: 700;
-                        text-decoration: none;
-                        padding: 17px 76px;
-                        min-width: 680px;
-                        text-align: center;
-                    }
-                    
-                    .sec1buttons #redbutton {
-                        background-color: #FB3B49;
-                        color: white;
-                        box-shadow: 8px 8px 0 rgba(251, 59, 73, .2);
-                    }
-                    
-                    .sec1buttons #redbutton:hover {
-                        background-color: rgb(206, 15, 28);
-                        box-shadow: none;
-                    }
-                    
-                    .sec1buttons #whitebutton {
-                        background-color: white;
-                        color: black;
-                        box-shadow: none;
-                        margin: 0 0 0 40px;
-                    }
-                    
-                    .sec1buttons #whitebutton:hover {
-                        background-color: rgb(252, 252, 252);
-                        border: 1px solid rgb(238, 238, 238);
-                    }
-                    /*End of Buttons*/
-                    /*End of Section 1*/
-                    /*Section 2*/
-                    
-                    #section2 {
-                        height: 600px;
-                    }
-                    
-                    .opensourcesection img {
-                        height: 230px;
-                        padding: 0 0 61px 0;
-                    }
-                    
-                    .opensourcesection {
-                        text-align: center;
-                        padding: 64px 8px 8px;
-                        margin: 0 15%;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        flex-direction: column;
-                    }
-                    
-                    .opensourcesection h3 {
-                        background-color: rgba(255, 204, 53, .4);
-                        transform: skew(9deg, 0deg);
-                        font-style: italic;
-                        margin: 0 0;
-                        padding: 0 5%;
-                    }
-                    
-                    .opensourcesection article {
-                        text-align: center;
-                        font-size: 1em;
-                        font-weight: 300;
-                        margin: 30px 7%;
-                    }
-                    /*End of Section 2*/
-                    /*Section 3*/
-                    
-                    #section3 {
-                        height: 600px;
-                    }
-                    
-                    .blocksection {
-                        display: flex;
-                        justify-content: space-between;
-                        flex-direction: row;
-                        justify-content: center;
-                        padding: 64px 32px;
-                        margin: 0 4%;
-                    }
-                    
-                    .blocksection div {
-                        padding: 0 32px;
-                    }
-                    
-                    .blocksection h4 {
-                        color: #ED1C24;
-                        font-weight: 700;
-                    }
-                    
-                    .blocksection img {
-                        height: 32px;
-                    }
-                    
-                    .blocksection p {
-                        font-size: 1em;
-                        font-weight: 300;
-                    }
-                    /*Button*/
-                    
-                    .sec3button a {
-                        display: flex;
-                        justify-content: center;
-                        font-size: 1.25em;
-                        font-weight: 700;
-                        background-color: #000;
-                        color: white;
-                        text-decoration: none;
-                        box-shadow: 8px 8px 0 rgba(128, 83, 35, .2);
-                        padding: 16px 0px;
-                        margin: 0 35%;
-                    }
-                    
-                    .sec3button a:hover {
-                        background-color: rgb(46, 46, 46);
-                        box-shadow: none;
-                        /*End of Button*/
-                        /*End of Section 3*/
-                    }
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-size: 5em;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 4em;
+}
+
+h3 {
+    font-size: 2.25em;
+    font-weight: 600;
+}
+
+h4 {
+    font-size: 1em;
+}
+
+h5 {
+    font-size: 0.8em;
+}
+
+
+/*Header part with the Menu*/
+
+header>div {
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+}
+
+nav {
+    width: 600px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.blackHeart {
+    width: 20px;
+    margin-right: 1rem;
+}
+
+
+/*End of Header part with the Menu*/
+
+
+/*Header part with search field and search button*/
+
+.npmlogo {
+    width: 70px;
+    margin: 16px 0;
+}
+
+.searchform {
+    display: flex;
+    align-items: center;
+    padding: 8px 0;
+}
+
+.searchform img {
+    width: 18px;
+    height: 18px;
+    background-color: rgba(0, 0, 0, .05);
+    padding: 12px 4px 10px 16px;
+}
+
+.searchform input {
+    font-family: "Fira Mono", "Andale Mono", "Consolas", monospace;
+    font-size: 0.875em;
+    letter-spacing: 0px;
+    height: 40px;
+    width: 980px;
+    background-color: rgba(0, 0, 0, .05);
+    border: none;
+    padding: 0 0 0 10px;
+}
+
+.searchform button {
+    font-family: 'Poppins';
+    font-size: 0.875em;
+    background-color: #fb3e44;
+    color: white;
+    border: none;
+    padding: 10px 16px 9px;
+}
+
+
+/*2 links*/
+
+.linkbtn {
+    padding: 0 0 0 16px;
+    margin: 0 0 2px 8px;
+}
+
+.linkbtn a {
+    font-size: 0.875em;
+    color: rgba(0, 0, 0, .7);
+    text-decoration: none;
+    padding: 8px 0;
+}
+
+.linkbtn a:hover {
+    color: #9a9a9a7c;
+}
+
+.linkbtn #join {
+    border: 1px solid #9a9a9a;
+    padding: 4px 16px;
+    margin: 0 16px 0 0;
+}
+
+.linkbtn #join:hover {
+    border: 1px solid #9a9a9a7c;
+}
+
+.linkbtn #login {
+    padding: 4px;
+    margin: 0;
+}
+
+
+/*End of two links*/
+
+
+/* End of Header part with search field and search button*/
+
+
+/*Section 1*/
+
+#section1 {
+    height: 600px;
+    background-color: rgba(232, 217, 217, .3);
+}
+
+#section1 article {
+    font-size: 1.25em;
+    padding: 0 18%;
+    font-weight: 300;
+}
+
+.amazingsection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 64px 8px;
+    margin: 0 18%;
+}
+
+
+/*Buttons*/
+
+.sec1buttons {
+    padding: 60px 0;
+    margin: 0 12%;
+}
+
+.sec1buttons a {
+    font-size: 1.25em;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 17px 76px;
+    min-width: 680px;
+    text-align: center;
+}
+
+.sec1buttons #redbutton {
+    background-color: #FB3B49;
+    color: white;
+    box-shadow: 8px 8px 0 rgba(251, 59, 73, .2);
+}
+
+.sec1buttons #redbutton:hover {
+    background-color: rgb(206, 15, 28);
+    box-shadow: none;
+}
+
+.sec1buttons #whitebutton {
+    background-color: white;
+    color: black;
+    box-shadow: none;
+    margin: 0 0 0 40px;
+}
+
+.sec1buttons #whitebutton:hover {
+    background-color: rgb(252, 252, 252);
+    border: 1px solid rgb(238, 238, 238);
+}
+
+
+/*End of Buttons*/
+
+
+/*End of Section 1*/
+
+
+/*Section 2*/
+
+#section2 {
+    height: 600px;
+}
+
+.opensourcesection img {
+    height: 230px;
+    padding: 0 0 61px 0;
+}
+
+.opensourcesection {
+    text-align: center;
+    padding: 64px 8px 8px;
+    margin: 0 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.opensourcesection h3 {
+    background-color: rgba(255, 204, 53, .4);
+    transform: skew(9deg, 0deg);
+    font-style: italic;
+    margin: 0 0;
+    padding: 0 5%;
+}
+
+.opensourcesection article {
+    text-align: center;
+    font-size: 1em;
+    font-weight: 300;
+    margin: 30px 7%;
+}
+
+
+/*End of Section 2*/
+
+
+/*Section 3*/
+
+#section3 {
+    height: 600px;
+}
+
+.blocksection {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    justify-content: center;
+    padding: 64px 32px;
+    margin: 0 4%;
+}
+
+.blocksection div {
+    padding: 0 32px;
+}
+
+.blocksection h4 {
+    color: #ED1C24;
+    font-weight: 700;
+}
+
+.blocksection img {
+    height: 32px;
+}
+
+.blocksection p {
+    font-size: 1em;
+    font-weight: 300;
+}
+
+
+/*Button*/
+
+.sec3button a {
+    display: flex;
+    justify-content: center;
+    font-size: 1.25em;
+    font-weight: 700;
+    background-color: #000;
+    color: white;
+    text-decoration: none;
+    box-shadow: 8px 8px 0 rgba(128, 83, 35, .2);
+    padding: 16px 0px;
+    margin: 0 35%;
+}
+
+.sec3button a:hover {
+    background-color: rgb(46, 46, 46);
+    box-shadow: none;
+    /*End of Button*/
+    /*End of Section 3*/
+}
