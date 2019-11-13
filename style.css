@@ -1,0 +1,191 @@
+/* Stylesheet for the NPM Clone landing page
+    Tomasz Walasek
+    BootCamp November 2019
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body {
+  font-family: 'Poppins';
+}
+
+header > div {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+}
+  
+nav {
+    width: 600px;
+}
+  
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: right;
+}
+  
+nav a {
+    text-decoration: none;
+    color: black;
+}
+  
+.black-heart {
+    width: 20px;
+    margin-right: 1rem;
+}
+
+#npm-logo {
+    width: 100px;
+    padding-top: 10px;
+}
+
+#search-frm {
+    padding-top: 15px;
+    display: flex;
+}
+
+#eye-glass {
+  width: 16px;
+  color: rgba(0,0,0,.05);
+  background-color:rgba(0,0,0,.1); 
+  border: none;
+  padding: 2px 2px 2px 2px;
+}
+
+#search-inp {
+  background-color:rgba(0,0,0,.1); 
+  color: black;
+  border: none;
+}
+
+#search-btn {
+  background-color: #fb3e44;
+  color: white;
+  border: none;
+}
+
+#search-inp, #search-btn {
+  vertical-align: middle;
+  height: 20px;
+}
+
+
+#join {
+  border: 2px solid rgba(0,0,0,.1);
+  text-decoration: none;
+  margin-right: 2rem;
+  padding: .25rem;
+  color: #9a9a9a;
+  font-size: smaller;
+}
+
+#login {
+  text-decoration: none;
+  border: none;
+  color: #9a9a9a;
+  font-size: smaller;
+}
+
+
+section {
+  height: 380px;
+}
+
+#sec1 {
+  background-color: rgba(232,217,217,.3);
+}
+
+#sec1, #sec2 {
+  display: flex;
+  justify-content: space-between; 
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+#sec3 > div {
+  display: flex;
+  justify-content: space-between; 
+  flex-direction: column;
+  align-items: center;
+}
+
+#sec3 > div > div {
+  display: flex;
+  justify-content: space-evenly; 
+  flex-direction: row;
+  align-items: top;
+}
+
+#see-plans-btn {
+  background-color: #FB3B49;
+  border: none;
+  box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+  color: white;
+  font-size: larger;
+}
+
+#join-free-btn {
+  background-color: transparent;
+  border: none;
+  font-size: larger;
+}
+
+h1 {
+  font-size: 45px;
+  font-weight: bold;
+}
+
+article, #sec-1-art, #sec-1-buttons {
+  width: 400px;
+  padding-bottom: 60px;
+}
+
+#sec-1-buttons {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+}
+
+h2 {
+  background-color: rgba(255,204,53,.4);
+  transform: skew(9deg,0deg);
+  font-style: italic;
+  padding: 0px 30px 0px 30px;
+}
+
+#sec2 > img {
+  width: 180px;
+  padding-bottom: 40px;
+}
+
+#sec3 > div > div > div{
+  width: 250px;
+  margin: 0px 20px 0px 20px;
+}
+
+#sec3 img {
+  width: 40px;
+  height: 40px;
+
+}
+
+h3 {
+  color:  #ED1C24;
+}
+
+#create-org-btn {
+  box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+  border: none;
+  background-color: black;
+  color: white;
+  height: 30px;
+  width: 300px;
+  font-size: larger;
+  margin-top: 40px;
+}
