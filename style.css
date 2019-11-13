@@ -5,7 +5,20 @@ body {
 }
 
 h1 {
-  font-size: 4em;
+  font-size: 4.5em;
+  margin: 100px 0 25px 0;
+}
+
+h2 {
+  font-size: 2em;
+  font-weight: bold;
+  transform: skew(-9deg, 0deg);
+  margin: 0px;
+}
+
+h3 {
+  color: #ed1c24;
+  margin-top: 5px;
 }
 
 .body-background {
@@ -63,7 +76,7 @@ nav a {
 }
 
 .searchBar input {
-  width: 940px;
+  width: 930px;
   height: 40px;
   background-color: rgba(0, 0, 0, 0.05);
   border: none;
@@ -94,7 +107,8 @@ nav a {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  background-color: rgba(232,217,217,.3);
+  background-color: rgba(232, 217, 217, 0.3);
+  padding-bottom: 80px;
 }
 
 #section1 article {
@@ -113,14 +127,81 @@ nav a {
 .seePlansButton {
   padding: 8px 55px;
   color: white;
-  background-color: #FB3B49;
+  background-color: #fb3b49;
   text-decoration: none;
-  box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+  box-shadow: 8px 8px 0 rgba(251, 59, 73, 0.2);
 }
 
 .joinForFreeButton {
   padding: 8px 55px;
   color: black;
   background-color: white;
+  text-decoration: none;
+}
+
+#section2 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 80px;
+}
+
+#section2 img {
+  width: 230px;
+  margin: 80px auto 80px auto;
+}
+
+#section2 article {
+  width: 620px;
+  text-align: center;
+  font-size: small;
+  padding: 30px 0;
+}
+
+.headerBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 800px;
+  height: 40px;
+  background-color: rgba(255, 204, 53, 0.4);
+  transform: skew(9deg, 0deg);
+}
+
+#section3 > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#section3 img {
+  width: 30px;
+}
+
+.sec3Container {
+  width: 250px;
+  padding: 0 15px;
+}
+
+.articleContainer {
+  height: 40px;
+}
+
+.createAnOrgBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  box-shadow: 8px 8px 0 rgba(128, 83, 35, 0.2);
+  width: 300px;
+  height: 40px;
+  text-align: center;
+  margin: 50px auto 100px auto;
+}
+
+.createAnOrgBox a {
+  color: white;
   text-decoration: none;
 }
