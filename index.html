@@ -25,9 +25,9 @@
   <!-- Add your site or application content here -->
 
   <header id="header">
-      <div id="upperHeader">
-          <img src="images/black-heart.png" id="miniIcon">
+      <div id="upperHeader" class="headerBox">
         <div id="nameSwitcher">
+            <img src="images/black-heart.png" id="miniIcon">
             <a href="#">Nifty Penguin Magic</a>
         </div>
         <nav>
@@ -41,25 +41,25 @@
             </ul>
         </nav>
       </div>
-      <div id="lowerHeader">
+      <div id="lowerHeader" class="headerBox">
           <img src="images/npm-logo.png" id="mainLogo">
           <form>
-              <img src="images/magnifying-glass.png">
-              <input type="text">
+              <img src="images/magnifying-glass.png" id="searchLogo">
+              <input type="text" placeholder="Search packages" id="searchField">
+              <input type="submit" id="searchButton">
           </form>
-          <button>Search</button>
           <div id="regMenue">
-              <a href="#">Join</a>
+              <a href="#" class="highlitedBtn">Join</a>
               <a href="#">Log In</a>
           </div>
       </div>
   </header>
   <section id="plans">
       <h1>Build amazing things</h1>
-      <p id="subHeadline">
+      <p>
         Essential JavaScript development tools that help you go to market faster and build powerful applications using modern open source code. 
       </p>
-      <div id="container">
+      <div id="planContainer">
           <a href="#" id="mainCTA">See plans</a>
           <a href="#" id="secCTA">Join for free</a>
       </div>
