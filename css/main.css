@@ -136,7 +136,6 @@
 
   #upperHeader{
     padding-top: 20px;
-    
   }
 
   #navigation {
@@ -151,15 +150,14 @@
     letter-spacing: 0.015625em;
   }
 
+  #logoContainer {
+    width: 100px;
+    height: auto;
+  }
+
   #mainLogo {
       width: 70px;
       height: 22px;
-  }
-
-  #searchLogo {
-      height: 20px;
-      margin-left: 10px;
-      margin-right: 10px;
   }
 
   #lowerHeader {
@@ -167,41 +165,63 @@
     align-items: center;
     padding-top: 8px;
     padding-bottom: 8px;
+    height: 46px;
   }
 
   #lowerHeader > form {
     display:block;
-    background-color: lightgrey;
+    background-color: #F2F2F2;
     display: flex;
     align-items: center;
+    width: calc(100% - 270px);
+    height: 40px;
+    
   }
 
+  #searchLogo {
+    height: 20px;
+    width: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
   #searchField {
-    height: 30px;
-    width: 1000px;
+    height: 40px;
+    width: calc(100% - 120px);
   }
 
   #searchButton {
-    height: 30px;
-    background-color: red;
+    height: 40px;
+    width: 100px;
+    background-color: #fb3e44;
+    color: white;
     padding-right: 10px;
     padding-left: 10px;
   }
 
   #regMenue {
-    width: 80px;
-   
+    width: 150px;
+    margin-left: 20px;
     display: flex;
     justify-content: space-between;
+    line-height: 1.0;
     align-items: center;
   }
 
   #regMenue > a {
-    height: 30px;
+    width: 45%;
+    text-align: center;
+    display: block;
+    padding: 8px 0px 8px 0px;
+    transition: opacity .25s ease-in;
+  }
+
+  #regMenue > a:hover {
+    color: #9a9a9a;
   }
 
   .highlitedBtn {
-      border: 1px solid grey;
+      border: 1px solid #9a9a9a;
+      
   }
 
   #plans {
