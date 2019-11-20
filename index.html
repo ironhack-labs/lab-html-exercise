@@ -8,100 +8,127 @@
     <link rel="stylesheet" href="./Assets/reset.css" />
     <link rel="stylesheet" href="./Assets/style.css" />
     <link
-      href="https://fonts.googleapis.com/css?family=Fira+Mono|Poppins:400,500,600|Source+Sans+Pro:300,400,600&display=swap"
+      href="https://fonts.googleapis.com/css?family=Fira+Mono|Poppins:400,500,600,700&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
-    <header>
-      <div>
-        <div>
-          <!-- heart and random phrases -->
-          <img class="black-heart" src="./Assets/images/black-heart.png" alt="black-heart">
-          <span>
-            Not Partially Meaningful
-            <!-- random phrases here -->
-          </span>
+    <!-- <div class="flex-stuff"> -->
+      <header>
+        <div class="rainbow-line"></div>
+        <div class="header-container-01">
+          <div class="heart-and-phrases-and-nav truncate">
+            <!-- heart and random phrases -->
+            <span class="heart">❤</span>
+            <span class="phrase">
+              Ninja Pokemon master                  </span>
+            <nav>
+              <ul>
+                <li><a href="#">npm Enterprise</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Solutions</a></li>
+                <li><a href="#">Resources</a></li>
+                <li><a href="#">Docs</a></li>
+                <li><a class="last" href="#">Support</a></li>
+              </ul>
+            </nav>
+          </div>
         </div>
-        <nav>
-          <ul>
-            <li><a href="#">npm Enterprise</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">Solutions</a></li>
-            <li><a href="#">Resources</a></li>
-            <li><a href="#">Docs</a></li>
-            <li><a href="#">Support</a></li>
-          </ul>
-        </nav>
-      </div>
-      <div>
-        <!-- npm, search bar, buttons -->
-        <img class="logo" src="" alt="" />
-        <form action="" method="post">
-          <!-- label for seach bar here? -->
-          <input type="search" name="search-bar" id="" />
-          <input type="submit" value="Search" />
-        </form>
-        <div>
-          <!-- buttons join | login -->
-          <a href="http://" target="_blank">Join</a>
-          <a href="http://" target="_blank">Log in</a>
+        <div class="header-container-02">
+          <!-- npm, search bar, buttons -->
+          <img class="logo" src="./Assets/images/npm-logo.png" alt="npm logo" />
+          
+          <form class="form" action="" method="post">
+              <img class="search" src="./Assets/images/magnifying-glass.png" alt="" />
+            <!-- label for seach bar here? -->
+            <input type="search" name="search-bar" id="" />
+            <input type="submit" value="Search" />
+          </form>
+          <div>
+            <!-- buttons join | login -->
+            <a href="http://" target="_blank">Join</a>
+            <a href="http://" target="_blank">Log in</a>
+          </div>
         </div>
-      </div>
-    </header>
-    <section>
-      <h1>Build amazing things</h1>
+      </header>
+      
+      <section id="sectionOne">
+        <h1>Build amazing things</h1>
+        <article>
+          Essential JavaScript development tools that help you go to market
+          faster and build powerful applications using modern open source code.
+        </article>
+        <div>
+          <a href="http://" target="_blank">See plans</a>
+          <a href="http://" target="_blank">Join for free</a>
+        </div>
+      </section>
+      <section id="sectionTwo">
+        <!-- exagon thing -->
+        <img
+          src="./Assets/images/triangle-hexagon.svg"
+          alt="pink jewel-like or shaded hexagon"
+        />
+      </section>
+      <h2>Bring the best of open source to your company</h2>
       <article>
-          Essential JavaScript development tools that help you go to market faster and build powerful applications using modern open source code.
+        npm is the tool used by over 11,000,000 JavaScript developers around the
+        world. Your developers already use it. Your company depends on it.
+        Create an Org and get more out of the tools your team already knows and
+        loves.
       </article>
-      <div>
-        <a href="http://" target="_blank">See plans</a>
-        <a href="http://" target="_blank">Join for free</a>
-      </div>
-    </section>
-    <section>
-      <!-- exagon thing -->
-      <img src="./Assets/images/triangle-hexagon.svg" alt="pink jewel-like or shaded hexagon">
-    </section>
-    <h2>Bring the best of open source to your company</h2>
-    <article>
-        npm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it. Create an Org and get more out of the tools your team already knows and loves.
-    </article>
-    <section>
-      <div>
-        <!-- little icons outer -->
+      <section id="sectionThree">
         <div>
-          <!-- little icons card 1.. -->
-          <img src="./Assets/images/zero-configuration.svg" alt="icon meaning easy to use">
-          <h3>Zero configuration</h3>
-          <article>
-            Create an org, add your team, and start collaborating. Nothing to configure, set up, or manage.
-              Team management
+          <!-- little icons outer -->
+          <div>
+            <!-- little icons card 1.. -->
+            <img
+              src="./Assets/images/zero-configuration.svg"
+              alt="icon meaning easy to use"
+            />
+            <h3>Zero configuration</h3>
+            <article>
+              Create an org, add your team, and start collaborating. Nothing to
+              configure, set up, or manage. Team management
             </article>
+          </div>
+          <div>
+            <!-- little icons card 2 -->
+            <img
+              src="./Assets/images/team-management.svg"
+              alt="icon meaning connected people"
+            />
+            <h3>Team management</h3>
+            <article>
+              Control who has access to what modules within your team namespace
+              using straightforward team management capabilities.
+            </article>
+          </div>
+          <div>
+            <!-- little icons card 3 -->
+            <img
+              src="./Assets/images/familiar-features.svg"
+              alt="icon suggesting a stack of features"
+            />
+            <h3>Familiar features</h3>
+            <article>
+              npm Orgs has 100% parity with all the public npm registry features
+              your developers already use.
+            </article>
+          </div>
+          <div>
+            <!-- little icons card 4 -->
+            <img src="./Assets/images/npm-audit.svg" alt="icon of binoculars" />
+            <h3>npm audit</h3>
+            <article>
+              Enjoy the security auditing features built into the npm client, a
+              zero-friction way to make open source software safer.
+            </article>
+          </div>
         </div>
-        <div>
-          <!-- little icons card 2 -->
-          <img src="./Assets/images/team-management.svg" alt="icon meaning connected people">
-          <h3>Team management</h3>
-          <article>
-              Control who has access to what modules within your team namespace using straightforward team management capabilities.
-          </article>
-        </div>
-        <div>
-          <!-- little icons card 3 -->
-          <img src="./Assets/images/familiar-features.svg" alt="icon suggesting a stack of features">
-          <h3>Familiar features</h3>
-          <article>npm Orgs has 100% parity with all the public npm registry features your developers already use.</article>
-        </div>
-        <div>
-          <!-- little icons card 4 -->
-          <img src="./Assets/images/npm-audit.svg" alt="icon of binoculars">
-          <h3>npm audit</h3>
-          <article>Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer.</article>
-        </div>
-      </div>
-      <!-- buttom -->
-      <a href="http://">Create an Org</a>
-    </section>
+        <!-- buttom -->
+        <a href="http://">Create an Org</a>
+      </section>
+    <!-- </div> -->
   </body>
 </html>

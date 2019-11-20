@@ -3,3 +3,151 @@ font-family: 'Source Sans Pro', sans-serif;
 font-family: 'Fira Mono', monospace;
 font-family: 'Poppins', sans-serif;
 */
+
+/* 
+  articles: font-size: 1.25em
+  buttons see plans, join for free 1.25 em
+
+  join, log in .875
+
+  header stuff: .875
+
+*/
+/* page-wide styling */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f8f4f3;
+  font-family: 'poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.15em;
+}
+
+.truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+header {
+  background-color: white;
+  font-size: 0.875em;
+}
+
+h1 {
+  font-size: 5em;
+  font-weight: 700;
+}
+
+h2 {
+font-size: 2.25em;
+}
+
+/* header styling */
+
+header > .rainbow-line {
+  background-color: white;
+  border-image-repeat: stretch;
+  border-image-slice: 3;
+  border-image-source: linear-gradient(93deg, rgb(251, 136, 23), rgb(255, 75, 1), rgb(193,33,39), rgb(224,42,255));
+  border-image-width: 1.3;
+  border-top-style: solid;
+  border-top-width: 3px;
+  color: black;
+  text-size-adjust: 100%;
+  padding: 0 14px;
+}
+
+/* upper-div from header */
+
+header .header-container-01 {
+  /* display: flex; */
+  /* justify-content: space-between; */
+  padding: 1rem 0.25rem;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+}
+.heart-and-phrases-and-nav {
+  padding: 0px 32px;
+  display: flex;
+}
+
+nav ul {
+  display: flex;
+  margin: 0px;
+  vertical-align: baseline;
+}
+
+nav ul li {
+  display: block;
+  margin-right: 1rem;
+}
+
+nav a {
+  white-space: nowrap;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  min-width: 100%;
+}
+
+nav a .last {
+  margin-right: 0;
+}
+
+.heart {
+  padding-right: 1em;
+  margin-right: 1em;
+  font-size: 14px
+}
+
+.phrase {
+  white-space: nowrap;
+  text-align: left;
+  flex-grow: 1;
+  margin-right: 2rem;
+  text-decoration: none;
+}
+
+/* bottom div from header */
+
+.header-container-02 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 32px;
+  width: 100%;
+  height: 51px;
+  overflow: hidden;
+  border-bottom: 1px solid lightgray;
+}
+
+.header-container-02 .logo {
+max-width: 8%;
+height: auto;
+display: block;
+padding: 3px;
+margin: 1rem 1rem 0 0;
+}
+
+header .header-container-02 .search {
+  max-width: 2.4%;
+  height: auto;
+  display: block;
+}
+
+ #sectionOne {
+   margin: 100px;
+}
+/*
+#sectionTwo {
+  background-color: white;
+}
+
+#sectionThree {
+  background-color: white;
+} */
