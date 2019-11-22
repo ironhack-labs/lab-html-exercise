@@ -2,7 +2,6 @@
 
 body {
   font-family: 'Poppins';
-  width: 100%;
 }
 
 header > div {
@@ -38,43 +37,60 @@ header > div {
   .logo {
       width: 70px ;
   }
+
+  .magnifying-glass {
+    width: 25px;
+    background-color: rgba(0,0,0,.05);
+    height: 36px;
+    display: flex;
+    align-items: center;
+    padding: 3px;
+    box-sizing: border-box;
+  }
+
+  .magnifying-glass img {
+    width: 100%;
+  }
    
   .search {
       height: 50px;
+      display: flex;
+      align-items: center;
   }
   .search-input {
       background-color: rgba(0,0,0,.05);
       width: 1050px;
       height: 36px;
       border: none;
-      margin-top: 8px;
       font-size: 14px;
+      padding-left: 10px;
   }
 
   .b-search {
       width: 80px;
-      height: 34px;
+      height: 36px;
       border: none;
       background-color: #FB3B49;
       color: white;
+      font-size: 15px;
   }
 
   .join {
-    width: 60px;
-    height: 25px;
+    width: 64px;
+    height: 34px;
     border: 1px solid #9a9a9a;
     background-color:white;
     color:#9a9a9a;
     text-decoration: none;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .login {
     color:#9a9a9a;
     text-decoration: none;
     text-align: center;
-  }
-  .magnifying-glass {
-    width: 20px;
   }
 
   #section1 {
@@ -90,7 +106,7 @@ header > div {
       font-weight: bold;
       margin: 0.67em;
   }
-  #section1 div {
+  #section1 .container-align {
         text-align: center;
         font-size: 1.25rem;
         font-weight: 400;
@@ -152,7 +168,11 @@ header > div {
         transform: skew(9deg,0deg);
      }
 
-     #section2 article {
+     .div-span span {
+       padding: 0 25px;
+     }
+
+     #section2 p {
         text-align: center;
         font-size: 1rem;
         font-style: normal;
@@ -160,18 +180,14 @@ header > div {
         width: 810px;
         margin-top: 30px;
      }
-
+    
      #section3 {
-        display: flex;
-        justify-content: center;
-        height: 300px;
-        align-items: center;
-        flex-direction: row;
-        justify-content: space-between;
-        margin: 10px 120px;
+       display: flex;
+       justify-content: center;
+       flex-direction: column;
      }
 
-     #section3 div {
+     #section3 .cards-subjects div {
          width: 250px;
      }
 
@@ -184,14 +200,20 @@ header > div {
          color: #ED1C24;
      }
 
-     #org {
+     .cards-subjects {
+      display: flex;
+     
+      align-items: center;
+      justify-content: space-between;
+      margin: 10px 120px;
+     }
+
+     .org {
+        height: 100px;
         display: flex;
         justify-content: center;
-        height: 100px;
-        align-items: center;
-        flex-direction: row;
-        justify-content: space-between;
-        margin: 20px 490px 100px 490px;
+        margin-top: 80px;
+        margin-bottom: 150px;
      }
      .button-org {
          background-color: black;
@@ -203,4 +225,7 @@ header > div {
          font-weight: 700;
          font-size: 1.28rem;
          text-align: center;
+         display: flex;
+         justify-content: center;
+         align-items: center;
      }
