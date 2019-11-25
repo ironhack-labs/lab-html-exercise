@@ -2,6 +2,7 @@
 
 body {
     font-family: 'Poppins';
+    min-width:800px;
 }
 
 header > div {
@@ -40,12 +41,16 @@ nav a {
     width:70px;
 }
 
-.magnifying {
+.magnifying-container{
     background-color: rgba(0,0,0,.05);
-    padding-top: 14px;
-    padding-right: .25rem;
-    padding-left: 1rem;
-    width:15px;
+    height: 40px;
+}
+
+.magnifying {
+    width: 15px;
+    padding: 9px;
+    padding-top: 13px;
+    padding-bottom: 0px;
 }
 
 #search > input{
@@ -55,8 +60,8 @@ nav a {
     height: 40px;
     padding-left: 10px;
     border-radius: 0;
-    /*width: calc(100% - 10px);*/
     background-color: rgba(0,0,0,.05);
+    min-width: 423px;
 }
 
 .submit{
@@ -111,6 +116,7 @@ section{
     display:flex;
     flex-direction:column;  
     justify-content: center;
+    padding:4rem;
 }
 
 #section-1{
@@ -119,16 +125,41 @@ section{
 
 
 h1, h2{
-    font-size:2.5rem;
-    margin-top: 0.67em;
-    margin-bottom: 0.67em;
+    font-size:4rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     text-align:center;
+    
 }
+
+h2{
+    font-size: 2.25rem;   
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+    font-style: italic;
+}
+
+h2:before{
+    content: "";
+    position: absolute;
+    width: 108%;
+    height: 100%;
+    z-index: -1;
+    left: -5%;
+    top: -6%;
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+}
+    
 
 article{
     font-size: 1.25rem;
     text-align: center;
-    
+}
+
+.article-smaller{
+    font-size: 1rem;
 }
 
 .section-content{
@@ -137,7 +168,7 @@ article{
     margin-bottom: 1rem;
 }
 
-.section-1-content{
+.section-content-70{
     width: 70%;
 }
 
@@ -179,23 +210,26 @@ article{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+.padding-header{
+    padding:1rem;
+}
+
+.padding-content{
     padding:2rem;
 }
 
-.flex-container-2{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding:2rem;
+.padding-top-0{
     padding-top:0;
 }
 
-.flex-container > div{
+.flex-container .quarter{
     padding-left:1rem;
     padding-right:1rem;
 }
 
-.flex-container img {
+.flex-container .quarter img {
     height: 2rem;
     max-width: 100%;
 }
@@ -207,3 +241,8 @@ h3 {
     margin-bottom: 0;
     font-weight: 700;
 }
+
+.justify-center{
+    justify-content:center;
+}
+
