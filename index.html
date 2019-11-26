@@ -3,10 +3,11 @@
     <head>
         <meta charset="utf-8">
         <title>npn | build amazing things</title>
+        <link rel="stylesheet" type="text/css" href="style.css" />
     </head>
     <body>
         <header>
-            <div>
+            <div id="upper-header">
                 <div>
                     <img class="blackHeart" src="images/black-heart.png" alt="black heart">
                     <span> Neverending Pun Machine </span>
@@ -23,14 +24,13 @@
                 </nav>
             </div>
         
-            <div>
+            <div id="lower-header">
                 <img id="npm-logo" src="images/npm-logo.png" alt="npm-logo">
-                <img id="magnifying-glass" src="images/magnifying-glass.png" alt="magnifying-glass image">
                 <input type="text" placeholder="Search packages">
-                <button type="submit"> Search </button>
+                <button onclick="location.href=index.html" type="submit"> Search </button>
                 <div>
                     <a href="#"> Join </a> 
-                    <a href="#"> Log In </a> 
+                    <a href="#" style="border:none;"> Log In </a> 
                 </div>    
             </div>
         </header>
