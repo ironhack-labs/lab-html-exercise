@@ -4,7 +4,7 @@ body {
   font-family: 'Poppins';
 }
 
-header > div {
+header>div {
   padding: 0 1rem;
   display: flex;
   justify-content: space-between;
@@ -26,48 +26,49 @@ nav ul {
   list-style: none;
   display: flex;
   justify-content: space-evenly;
-  align-items: center;  
+  align-items: center;
 }
 
 nav a {
   text-decoration: none;
   color: black;
-  
+
 }
 
-.logo{
+.logo {
   width: 70px;
   height: 22px;
-  
+
 }
 
-.lupa{
+.lupa {
   width: 20px;
   height: 20px;
   align-self: center;
   padding: 0 4px 0 16px;
 }
+
 label {
-  background: rgba(0,0,0,.05);
+  background: rgba(0, 0, 0, .05);
   height: 40px;
   display: flex;
   align-self: center;
-  
+
 }
 
-.formulario{
+.formulario {
   display: flex;
 }
 
-#search{
-  background: rgba(0,0,0,.05);
+#search {
+  background: rgba(0, 0, 0, .05);
   border: none;
   width: 920px;
   height: 40px;
   margin: 10px 0;
 }
 
-button{
+button {
   background: #fb3e44;
   color: white;
   width: 80px;
@@ -77,16 +78,105 @@ button{
   font-weight: 600;
 }
 
-.no-borde{
+.no-borde {
   color: grey;
   text-decoration: none;
   margin: 0 10px;
 }
 
-.borde{
+.borde {
   border: 1px solid grey;
   padding: 4px 15px;
   margin: 0 10px;
   color: rgb(39, 37, 37);
   text-decoration: none;
+}
+
+#build {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  background: rgba(232, 217, 217, .3)
+}
+
+h1 {
+  font-size: 80px;
+  margin: 53px 0;
+}
+
+.articulo1 {
+  font-size: 20px;
+  text-align: center;
+}
+
+.enlaces1 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 64px 32px;
+}
+
+.see-plans {
+  width: 15%;
+  padding: 20px;
+  background: #FB3B49;
+  text-align: center;
+  box-shadow: 8px 8px 0 rgba(251, 59, 73, .2);
+  margin-right: 25px;
+}
+
+.see-plans a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.join-for-free {
+  width: 15%;
+  padding: 20px;
+  background: white;
+  text-align: center;
+  margin-left: 25px;
+}
+
+.join-for-free a{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+#bring{
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 64px 8px 8px 8px;
+}
+
+.hexagono{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.hexagono > img{
+  width: 256px;
+  height: 230px;
+  
+}
+h2{
+  font-size: 36px;
+  background:rgba(255,204,53,.4);
+  transform: skew(9deg,0deg);
+  font-style: italic;
+  margin: 0 60px;
+  padding: 0 30px;
+  margin-top: 64px;
+  height: 45px;
+}
+.articulo2{
+  text-align: center;
+  padding-top: 34px;
+  
 }
