@@ -2,7 +2,7 @@
 
 body {
   font-family: 'Poppins';
-  background-color: rgb(248, 244, 244);
+  background-color: rgb(255, 255, 255);
 }
 html, body {
   margin: 0;
@@ -43,7 +43,7 @@ nav a {
   align-items: center;
 }
 #lower-header input{
-  width:1080px;
+  width:1070px;
   height:38px;
   background-color: rgb(248, 244, 244);
   margin:10px 0;
@@ -62,19 +62,140 @@ nav a {
   border:none;
   color:rgb(255, 255, 255);
   cursor:pointer;
-  margin-right:2.6em;
+  margin-right:1.3rem;
   font-size:15px;
 }
 #lower-header a{
   text-decoration: none;
   color: black;
   margin-left:0.5rem;
-  border:1px solid black;
+  border:1px solid rgb(0, 0, 0);
   padding:2px 10px;
 }
-
 #npm-logo{
   width: 70px;
   height:22.4333px;
   margin-right: 1rem;
+}
+ #general-information{
+   height:690px;
+   display:flex;
+   justify-content: center;
+   flex-direction: column;
+   align-items: center;
+   background-color: rgb(248, 244, 244);
+} 
+ #general-information h1{
+   font-size:5rem;
+   font-weight: bold;
+   margin: 1em 0;
+   line-height: 1.15;
+   display: block;
+  }
+
+#general-information span{
+text-align: center;
+display:flex;
+max-width: 27em;
+line-height: 1.5;
+font-size: 1.25rem;
+font-weight: 400;
+}
+#general-information button{
+  width:250px;
+  height: 70px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  background-color: rgb(251, 62, 68);
+  box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+  margin-top: 80px;
+  margin-right: 2.5rem;
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+#general-information a{
+  color:rgb(0, 0, 0);
+  text-align: center;
+  background-color:rgb(255, 255, 255);
+  padding:20px 60px;
+  font-weight: 700;
+  font-size: 1.25rem;
+  text-decoration: none;
+  border: 1px solid rgba(138,138,138,.06);
+
+}
+#more-information{
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height:650px;
+  background-color: rgb(255, 255, 255);
+  margin-bottom: 5rem;
+}
+#more-information img{
+width:256px;
+height:230px;
+
+}
+#more-information h2{
+  font-size: 2.25rem;
+  font-weight: 600;
+  text-align: center;
+  background-color: rgba(255,204,53,.4);
+  transform: skew(9deg,0deg);
+  padding:0 20px;
+  font-style: italic;
+  margin-top:65px;
+  
+}
+#more-information span{
+  text-align: center;
+  display:flex;
+  max-width: 45em;
+  line-height: 1.5;
+  font-size: 1rem;
+  font-weight: 400;
+  
+}
+#npm-features{
+  height:550px;
+  background-color: rgb(255, 255, 255);
+  }
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#npm-features img{
+  width:39px;
+  height:32px;
+} 
+.npm-features-box{
+width:270px;
+height:262px;
+background-color: white;
+margin-right:20px ;
+}
+h3{
+  color:rgb(237, 28, 36);
+  font-weight: 700;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  line-height: 1.15;
+}
+#npm-features button{
+  text-decoration: none;
+  background-color: rgb(0, 0, 0);
+  width:380px;
+  height:63px;
+  color:hsl(0, 0%, 100%);
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.25rem;
+  margin:auto;
+  margin-top:70px;
+  display:block;
+  box-shadow: 8px 8px 0 rgba(128,83,35,0.2);
   }
