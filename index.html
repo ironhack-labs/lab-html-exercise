@@ -1,26 +1,98 @@
-NPM Clone
-Nifty Penguin Magic 
-npm Enterprise 
-Products 
-Solutions 
-Resources 
-Docs 
-Support 
-Search 
-Join
-Log In
-Build amazing things
-Essential JavaScript development tools that help you go to market faster and build powerful applications using modern open source code. 
-See plans 
-Join for free
-Bring the best of open source to your company
-npm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it. Create an Org and get more out of the tools your team already knows and loves.
-Zero configuration
-Create an org, add your team, and start collaborating. Nothing to configure, set up, or manage.
-Team management 
-Control who has access to what modules within your team namespace using straightforward team management capabilities. 
-Familiar features 
-npm Orgs has 100% parity with all the public npm registry features your developers already use. 
-npm audit 
-Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer. 
-Create an Org 
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>npm | build amazing things</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+
+    <header>
+        <div id="header1">
+            <div>
+                <img class="blackHeart" src="https://raw.githubusercontent.com/doveriko/lab-html-exercise/master/images/black-heart.png" alt="black heart">
+                <span> Nifty Penguin Magic </span>
+            </div>
+            <nav>
+                <ul>
+                    <li> <a href="https://www.npmjs.com/products/enterprise"> npm Enterprise </a> </li>
+                    <li> <a href="https://www.npmjs.com/products"> Products </a> </li>
+                    <li> <a href="https://www.npmjs.com/solutions"> Solutions </a> </li>
+                    <li> <a href="https://www.npmjs.com/resources"> Resources </a> </li>
+                    <li> <a href="https://docs.npmjs.com/"> Docs </a> </li>
+                    <li> <a href="https://www.npmjs.com/support"> Support </a> </li>
+                </ul>
+            </nav>
+        </div>
+    
+        <div id="header2">
+            <div>
+                <img class="logo" src="https://raw.githubusercontent.com/doveriko/lab-html-exercise/master/images/npm-logo.png" alt="NPM logo">
+                <form method="GET" action="/search">
+                    <input type="text" placeholder="Search packages" id="search-box">
+                    <input type="button" value="Search" id="search-button">
+                </form>
+            </div>
+            <nav>
+                <ul>
+                    <li><a class="join" href="https://www.npmjs.com/signup">Join</a></li>
+                    <li><a class="login" href="https://www.npmjs.com/login">Log In</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- SECTION 1 -->
+    <section id="section1">
+        <article>
+            <h1>Build amazing things</h1>
+            <p>Essential JavaScript development tools that help you go to market faster and build powerful applications using modern open source code.</p>
+        </article>
+        <div>
+            <button class="plans"><a href="https://www.npmjs.com/products/">See plans</a></button>
+            <button class="free"><a href="https://www.npmjs.com/signup/">Join for free</a></button>
+        </div>
+    </section>
+
+    <!-- SECTION 2 -->
+    <section id="section2">
+        <img class="triangle-hexagon" src="https://static.npmjs.com/attachments/cjsdu27d721czsp74i05n4iey-best-open.svg" alt="triangle hexagon">
+        <article>
+            <h2>Bring the best of open source to your company</h2>
+            <p>npm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it. Create an Org and get more out of the tools your team already knows and loves.</p>
+        </article>
+    </section>
+
+    <!-- SECTION 3 -->
+    <section id="section3">
+        <span class="features">
+        <div>
+            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNS45OSAyMS4yMSI+PHRpdGxlPnplcm8tY29uZmlndXJhdGlvbjwvdGl0bGU+PGcgaWQ9IkxheWVyXzIiIGRhdGEtbmFtZT0iTGF5ZXIgMiI+PGcgaWQ9IkxheWVyXzItMiIgZGF0YS1uYW1lPSJMYXllciAyIj48cGF0aCBkPSJNMjMsMTkuMzZsLTMuNzktNC41OUwyMi41OCwxNGEuNTUuNTUsMCwwLDAsLjQzLS41LjU0LjU0LDAsMCwwLS4zMy0uNTZMMTMuNDcsOC44NGEuNTYuNTYsMCwwLDAtLjU5LjA4LjU5LjU5LDAsMCwwLS4xOS41NkwxNSwxOS4zYS41OS41OSwwLDAsMCwuNS40NEEuNTcuNTcsMCwwLDAsMTYsMTkuNGwxLjQxLTMuMTksMy43OSw0LjU5QTEuMTMsMS4xMywwLDAsMCwyMywxOS4zNloiLz48cGF0aCBkPSJNMi4xNCwxMS4zMkEyLjE0LDIuMTQsMCwwLDEsMCw5LjE4di03QTIuMTQsMi4xNCwwLDAsMSwyLjE0LDBIMjMuODVBMi4xNCwyLjE0LDAsMCwxLDI2LDIuMTR2N2EyLjE0LDIuMTQsMCwwLDEtMS42NiwyLjA5bC0yLjExLS43MWgxLjYzYTEuMzgsMS4zOCwwLDAsMCwxLjM4LTEuMzh2LTdBMS4zOCwxLjM4LDAsMCwwLDIzLjg1Ljc2SDIuMTRBMS4zOCwxLjM4LDAsMCwwLC43NiwyLjE0djdhMS4zOCwxLjM4LDAsMCwwLDEuMzgsMS4zOGg4LjU1bC4yNi43NloiLz48L2c+PC9nPjwvc3ZnPg==" alt="zero-configuration">
+            <h3>Zero configuration</h3>
+            <p>Create an org, add your team, and start collaborating. Nothing to configure, set up, or manage.</p>
+        </div>
+        <div>
+            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyOS40IDI3LjM4Ij48dGl0bGU+dGVhbS1tYW5hZ2VtZW50PC90aXRsZT48ZyBpZD0iTGF5ZXJfMiIgZGF0YS1uYW1lPSJMYXllciAyIj48ZyBpZD0iTGF5ZXJfMi0yIiBkYXRhLW5hbWU9IkxheWVyIDIiPjxwYXRoIGQ9Ik0xNC43NSw1LjIxYy0zLjQ1LDAtMy4zNi01LjQuMTEtNS4yQzE4LjE0LjE5LDE4LDUuMjEsMTQuNzUsNS4yMVptLS4wNi0uODloLjI1bC4yMiwwLC4yLS4wNkExLjY4LDEuNjgsMCwwLDAsMTUuNzMsNGgwYTIuNzMsMi43MywwLDAsMCwuMzUtLjMzLDEuODcsMS44NywwLDAsMCwuMzMtLjc1LDEuODgsMS44OCwwLDAsMCwwLS41OGgwYTIuNDIsMi40MiwwLDAsMC0uMS0uMzYsMi44MiwyLjgyLDAsMCwwLS4yMS0uMzhMMTYsMS41YTIuODUsMi44NSwwLDAsMC0uMjUtLjI1QTIsMiwwLDAsMCwxNS40LDEsMS43LDEuNywwLDAsMCwxNC44MS45aC0uMjdsLS4wNi4yMiwwLS4yMmExLjc4LDEuNzgsMCwwLDAtLjU0LjE3LDIuMjYsMi4yNiwwLDAsMC0uMjYuMTYsMS4zOCwxLjM4LDAsMCwwLS4zLjI5bC4xMS4yLS4xMy0uMThhMS44MywxLjgzLDAsMCwwLS4yMy4zOCwyLDIsMCwwLDAtLjEyLjQyLDIsMiwwLDAsMCwwLC40OSwyLDIsMCwwLDAsLjExLjQyLDIuNjQsMi42NCwwLDAsMCwuMi4zN2wuMDguMDlhMi4yMSwyLjIxLDAsMCwwLC4yNi4yNCwxLjgsMS44LDAsMCwwLC4zNS4yMWwuMDUsMGgwQTEuMzgsMS4zOCwwLDAsMCwxNC42OSw0LjMyWiIvPjxwYXRoIGQ9Ik0xMS43MywxMC4wNWMtMS42OSwwLTEuNDktMi4zMi0xLjMyLTMuNDlhMy4wNywzLjA3LDAsMCwxLDEuMTgtMmMuNjktLjQ4LDEuMjguMzEuNTcuN2EyLjYsMi42LDAsMCwwLS4zOC4zNmwuMTIuMXYuMWwtLjE0LS4xNmEyLjI4LDIuMjgsMCwwLDAtLjQ0LDFsMCwuMmMwLC42NSwwLDEuMywwLDEuOTRsMCwuMTNoMGwwLDBoMGwuMDkuMTEuMDgsMCwwLS4xMS4xLS4wOCwwLC4yMS4xMywwaDYuMDhsLjEzLDAsLjA4LDBoMGwuMDUsMEwxOC4wOCw5bDAsMGgwbDAtLjA3LDAtLjEyYTIwLDIwLDAsMCwwLDAtMmgwQTQuNzQsNC43NCwwLDAsMCwxOCw2LjE1YTMuMTcsMy4xNywwLDAsMC0uMjctLjQ3bC0uMTQuMS4wOS0uMTdjLS4xOC0uMjItLjY4LS40OS0uNzQtLjc3LS4xMi0uNTUuNDEtLjYuNzctLjQyYTMuMTUsMy4xNSwwLDAsMSwxLjM1LDIuODFjMCwxLjI0LjE2LDIuNzEtMS40NSwyLjgyQzE1LjY3LDEwLjE5LDEzLjY4LDEwLjA1LDExLjczLDEwLjA1WiIvPjxwYXRoIGQ9Ik00LjQ1LDIyLjQ4Yy0zLjQ2LDAtMy4zNi01LjQxLjExLTUuMjFDNy44NCwxNy40NSw3LjcsMjIuNDgsNC40NSwyMi40OFptMC0uOWguMjRhMi4xNywyLjE3LDAsMCwwLC40Mi0uMTEsMiwyLDAsMCwwLC43Mi0uNTQsMS43LDEuNywwLDAsMCwuMzMtMS4zM2gwYTIuNDIsMi40MiwwLDAsMC0uMS0uMzYsMi44MiwyLjgyLDAsMCwwLS4yMS0uMzhsLS4wOC0uMDlhMi44NSwyLjg1LDAsMCwwLS4yNS0uMjUsMiwyLDAsMCwwLS4zNy0uMjEsMiwyLDAsMCwwLS40Mi0uMTJsLS4xNywwSDQuMjNsLS4wNS4yMiwwLS4yMmExLjcsMS43LDAsMCwwLS41NC4xNywyLjI2LDIuMjYsMCwwLDAtLjI2LjE2LDIuMTMsMi4xMywwLDAsMC0uMzEuMjlsLjEyLjItLjEzLS4xOGEyLjE0LDIuMTQsMCwwLDAtLjIzLjM4LDIsMiwwLDAsMC0uMTIuNDIsMi42OCwyLjY4LDAsMCwwLDAsLjQ5LDIuOSwyLjksMCwwLDAsLjEyLjQyLDIuMDgsMi4wOCwwLDAsMCwuMi4zNmwwLDB2MGgwbDAsLjA1LjI1LjI1YTIuMzgsMi4zOCwwLDAsMCwuNDEuMjNoMGEyLjU0LDIuNTQsMCwwLDAsLjM3LjFINC40WiIvPjxwYXRoIGQ9Ik0xLjQzLDI3LjMxQy0uMjYsMjcuMzEtLjA2LDI1LC4xMSwyMy44MmEzLDMsMCwwLDEsMS4xOC0yYy42OS0uNDgsMS4yOC4zMi41Ny43YTIuMjIsMi4yMiwwLDAsMC0uMzguMzdsLjEyLjA5VjIzbC0uMTQtLjE2YTIuNTUsMi41NSwwLDAsMC0uMy41LDQuMjgsNC4yOCwwLDAsMC0uMTUuNTFsMCwuMjFWMjZsMCwuMTRIMWwuMTIuMTUsMCwwdjBsLjExLDBINy40NWwuMTQsMCwuMTEtLjA1LjA4LS4wNywwLS4wNWgwbDAtLjA3LDAtLjEyYTIwLDIwLDAsMCwwLDAtMi4wNWgwYTIuNzMsMi43MywwLDAsMC0uMTUtLjU2LDIuNDIsMi40MiwwLDAsMC0uMjYtLjQ3TDcuMywyM2wuMTEtLjE0Yy0uMTgtLjIyLS43LS41MS0uNzYtLjgtLjE0LS42Ny41NS0uNTcuODktLjMzYTMuMTQsMy4xNCwwLDAsMSwxLjIyLDIuNTJjLjA2LDEuMjYuMjMsMi45LTEuNDIsM0M1LjM5LDI3LjQ2LDMuMzgsMjcuMzEsMS40MywyNy4zMVoiLz48cGF0aCBkPSJNMjUuMDUsMjIuNDhjLTMuNDUsMC0zLjM2LTUuNDEuMTEtNS4yMUMyOC40NCwxNy40NSwyOC4zLDIyLjQ4LDI1LjA1LDIyLjQ4Wm0tLjA1LS45aC4yNGEyLjE3LDIuMTcsMCwwLDAsLjQyLS4xMWwuMi0uMS4xOC0uMTFoMGEzLjUxLDMuNTEsMCwwLDAsLjM0LS4zMywxLjg4LDEuODgsMCwwLDAsLjIxLS4zNmgwYTIuNzgsMi43OCwwLDAsMCwuMTItLjM4bC0uMTcsMGguMThsLS4xLDAsLjEsMGExLjYsMS42LDAsMCwwLDAtLjQ5aDBhMi4xMiwyLjEyLDAsMCwwLS4xLS4zNiwyLjgyLDIuODIsMCwwLDAtLjIxLS4zOGwtLjA4LS4xLS4yNS0uMjRhMiwyLDAsMCwwLS4zNy0uMjEsMiwyLDAsMCwwLS40Mi0uMTJsLS4xNywwaC0uMjdsLS4wNi4yMiwwLS4yMmExLjc4LDEuNzgsMCwwLDAtLjU0LjE3LDIuMjYsMi4yNiwwLDAsMC0uMjYuMTYsMi4wNiwyLjA2LDAsMCwwLS4zLjI5bC4xMS4yLS4xMy0uMThhMi4xNCwyLjE0LDAsMCwwLS4yMy4zOCwxLjY3LDEuNjcsMCwwLDAtLjEyLjkxLDIsMiwwLDAsMCwuMTEuNDIsMS43NSwxLjc1LDAsMCwwLC4yOS40N2wuMjUuMjRhMiwyLDAsMCwwLC4zNS4ybC4wNSwwaDBhMi4wOSwyLjA5LDAsMCwwLC40My4xMUgyNVoiLz48cGF0aCBkPSJNMjIsMjcuMzFjLTEuNjksMC0xLjQ5LTIuMzItMS4zMi0zLjQ5YTMuMDcsMy4wNywwLDAsMSwxLjE4LTJjLjY5LS40OCwxLjI4LjMyLjU3LjdhMi42NSwyLjY1LDAsMCwwLS4zOC4zN2wuMTIuMDlWMjNsLS4xNC0uMTZhMy4xLDMuMSwwLDAsMC0uMjkuNSwyLjI5LDIuMjksMCwwLDAtLjE1LjUxbDAsLjIxVjI2bDAsLjE0aDBsLjExLjE1LDAsMHYwbC4xMSwwaDYuMTlsLjE0LDAsLjEyLS4wNS4wNy0uMDcsMC0uMDVoMGwwLS4wNywwLS4xMmEyMCwyMCwwLDAsMCwwLTIuMDVoMGE1LjEyLDUuMTIsMCwwLDAtLjE1LS41Niw0LjMxLDQuMzEsMCwwLDAtLjI2LS40N2wtLjE1LjFMMjgsMjIuOWMtLjE5LS4yMi0uNzEtLjUxLS43Ny0uOC0uMTQtLjY3LjU1LS41Ni45LS4zM2EzLjE3LDMuMTcsMCwwLDEsMS4yMiwyLjUyYy4wNSwxLjI2LjIyLDIuOS0xLjQzLDNDMjYsMjcuNDYsMjQsMjcuMzEsMjIsMjcuMzFaIi8+PHBhdGggZD0iTTE0Ljc0LDE3LjQ2Yy0uNzksMC0uNDUtMi40LS40NS0yLjg0cy0uMzMtMi44NS40NS0yLjgzLjQ1LDIuMjkuNDUsMi43NFMxNS41MywxNy40NiwxNC43NCwxNy40NloiLz48cGF0aCBkPSJNMTAuNiwxOS44NGMtLjc4LDAtLjM0LS43MywwLTFzLjk1LS41NSwxLjQyLS44MmwxLjcxLTFjLjI0LS4xNC42OS0uNTMsMS0uNTEuNzQuMDUuMzguNjksMCwuOTRhMTMuMjYsMTMuMjYsMCwwLDEtMS4zNy44bC0xLjc5LDFjLS4yNi4xNS0uNjguNTEtMSwuNTFaIi8+PHBhdGggZD0iTTE4Ljg3LDE5Ljg0Yy0uMzMsMC0uNzQtLjM2LTEtLjUxbC0xLjcxLTFjLS40Ny0uMjctMS0uNTEtMS40Mi0uODJzLS43Ni0uOTIsMC0xYy4yOSwwLC43MS4zNC45My40N2wxLjY5LDFjLjUuMjgsMSwuNTQsMS41MS44NlMxOS42NywxOS44NCwxOC44NywxOS44NFoiLz48L2c+PC9nPjwvc3ZnPg==" alt="team-management">
+            <h3>Team management </h3>
+            <p>Control who has access to what modules within your team namespace using straightforward team management capabilities. </p>
+        </div>
+        <div>
+                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyOS41OSAyMi43NSI+PGRlZnM+PHN0eWxlPi5jbHMtMXtmaWxsOm5vbmU7c3Ryb2tlOiMwMDA7c3Ryb2tlLW1pdGVybGltaXQ6MTA7fTwvc3R5bGU+PC9kZWZzPjx0aXRsZT5mZWF0dXJlLXBhcml0eTwvdGl0bGU+PGcgaWQ9IkxheWVyXzIiIGRhdGEtbmFtZT0iTGF5ZXIgMiI+PGcgaWQ9IkxheWVyXzItMiIgZGF0YS1uYW1lPSJMYXllciAyIj48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik0yOS41OSwxNi42MkgwIi8+PHJlY3QgeD0iMC4zMSIgd2lkdGg9IjExLjkzIiBoZWlnaHQ9IjYuODgiIHJ4PSIyLjQyIi8+PHJlY3QgeD0iMC4zMSIgeT0iOCIgd2lkdGg9IjExLjkzIiBoZWlnaHQ9IjYuODgiIHJ4PSIyLjQyIi8+PHJlY3QgeD0iMTYuMzUiIHdpZHRoPSIxMS45MyIgaGVpZ2h0PSI2Ljg4IiByeD0iMi40MiIvPjxyZWN0IHg9IjE2LjM1IiB5PSI4IiB3aWR0aD0iMTEuOTMiIGhlaWdodD0iNi44OCIgcng9IjIuNDIiLz48cG9seWxpbmUgcG9pbnRzPSIxNC40NyAxOS4wNCAxNS45IDIxLjM3IDE2Ljc1IDIyLjc1IDEyLjIgMjIuNzUgMTQuNDggMTkuMDQiLz48L2c+PC9nPjwvc3ZnPg==" alt="familiar-features">
+                <h3>Familiar features </h3>
+                <p>npm Orgs has 100% parity with all the public npm registry features your developers already use. </p>
+            </div>    
+        <div>
+            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNi45OCAyMS4yNiI+PGRlZnM+PHN0eWxlPi5jbHMtMXtmaWxsLXJ1bGU6ZXZlbm9kZDt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPm5wbS1hdWRpdDwvdGl0bGU+PGcgaWQ9IkxheWVyXzIiIGRhdGEtbmFtZT0iTGF5ZXIgMiI+PGcgaWQ9IkxheWVyXzItMiIgZGF0YS1uYW1lPSJMYXllciAyIj48cGF0aCBkPSJNMCwxNS41M1Y1LjgxYTUuODIsNS44MiwwLDAsMSwxMS42My0uMDhoMy44MUE1Ljc3LDUuNzcsMCwxLDEsMjcsNS44MXY5LjcyYTUuNzcsNS43NywwLDAsMS0xMS41NCwwVjExLjg5SDExLjYzdjMuNjRBNS44Miw1LjgyLDAsMCwxLDAsMTUuNTNabTE2Ljc0LS4wOUE0LjUyLDQuNTIsMCwwLDAsMjEuMTcsMjBhNC4zOCw0LjM4LDAsMCwwLDQuNDItNC40Miw0LjExLDQuMTEsMCwwLDAtMS4zLTMuMTIsNC4zOCw0LjM4LDAsMCwwLTYuMjQsMCw0LjYyLDQuNjIsMCwwLDAtMS4zMSwzWm0tMTUuMzUsMGE0LjQzLDQuNDMsMCwxLDAsOC44NS4wOSw0LjE1LDQuMTUsMCwwLDAtMS4zLTMuMTIsNC4zOSw0LjM5LDAsMCwwLTYuMjUsMCw0LjI1LDQuMjUsMCwwLDAtMS4zLDNaIi8+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJNNi45NCwxMi4wNmMxLjgyLjc4LDMuMjEsMi42OSwxLjgyLDQuNTFaIi8+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJNMjIuNTYsMTIuMDZjMS44Mi43OCwzLjIxLDIuNjksMS44Miw0LjUxWiIvPjwvZz48L2c+PC9zdmc+" alt="">
+            <h3>npm audit</h3>
+            <p>Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer. </p>
+        </div>
+        </span>
+        <span class="button">
+            <button>Create an Org</button>
+        </span>
+            
+    </section>
+
+  </body>
+</html>
