@@ -9,14 +9,13 @@
 
     <header>
         <!-- Top Div -->
-        <div>
+        <div id="header-top">
             <div>
                 <img class="blackHeart" src="./images/black-heart.png" alt="black heart">
                 <span> Nifty Penguin Magic </span>
             </div>
             <nav>
                 <ul>
-                    <li> <a href="#"> npm Enterprise </a> </li>
                     <li> <a href="#"> Products </a> </li>
                     <li> <a href="#"> Solutions </a> </li>
                     <li> <a href="#"> Resources </a> </li>
@@ -27,20 +26,18 @@
         </div>
 
         <!-- Bottom Div -->
-        <div>
-            <div id="logo">
-                <img src="images/npm-logo.png" alt="npm logo">
-            </div>
+        <div id="header-bottom">
+            <img id="logo" src="images/npm-logo.png" alt="npm logo">
             <div id="search-bar">
                 <img src="images/magnifying-glass.png" alt="magnifier icon">
                 <form>
-                    <input id="search">
+                    <input id="search" type="search" placeholder="Search packages">
                     <button id="search-submit">Search</button>
                 </form>
             </div>
-            <div id="login-buttons">
-                <a href="#">Join</a>
-                <a href="#">Log in</a>
+            <div id="top-buttons">
+                <a id="join-btn" href="#">Join</a>
+                <a id="login-btn" href="#">Login</a>
             </div>
         </div>
     </header>
