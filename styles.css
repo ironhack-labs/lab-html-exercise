@@ -44,30 +44,26 @@ nav a {
 
 
 #header-container-2 {
-	padding-left: 2rem;
+	padding-left: .5rem;
 	padding-right: 2rem;
-    margin-right: auto;
-    margin-left: auto;
-	max-width: 96rem;
+  margin-right: auto;
+  max-width: 96rem;
 	display: flex;
 	flex-direction: row;
-	justify-items: center;
-	justify-content: space-between;
-	/* flex-wrap: wrap; */
+	justify-content: flex-start;
+	flex-wrap: wrap;
 }
 
-.npm-logo {
-	
+.npm-logo {	
 	width: 70px;
 	padding-top: 3px;
 	flex-grow: 0;
 	margin-top: 1rem;;
 	margin-right: 1rem;
 	overflow: hidden;
-	/* flex: 1 1 auto; */	
 }
 
-.header-search {
+.header-form {
 	color: #000;
 	padding-top: .5rem;
 	padding-bottom: .5rem;
@@ -76,32 +72,43 @@ nav a {
 	flex-direction: row;
 }
 
-.header-search div {
+.header-form div {
 	display: flex;
 	flex-direction: row;
 }
+
+.header-form span {
+	padding-top: 14px;
+	padding-right: .25rem;
+	padding-left: 1rem;
+	background-color: rgba(0,0,0,.05);
+	float: left;
+	display: block;
+	}
 
 .m-glass {
 	height: 15px;
 	width: 15px;
 	overflow: hidden;
+	color: #000;
 }
 
-.header-search input {
+.header-form input {
 	background-color: rgba(0,0,0,.05);
 	font-family: "Fira Mono", "Andale Mono", "Consolas", monospace;
 	font-size: 14px;
+	font-weight: 300;
 	letter-spacing: 0px;
-	border: none;
 	height: 40px;
+	width: 50rem;
 	padding-left: 10px;
-	border-radius: 0;
-	-webkit-appearance: none;
+	border: none;
 }
 
-.header-search button {
+.header-form button {
 	background-color: #fb3e44;
 	color: white;
+	border: none;
 	font-family: 'Poppins';
 	letter-spacing: 0.3px;
 	font-size: .875rem;
@@ -109,16 +116,33 @@ nav a {
 	align-self: flex-end;
 }
 
-/* .header-search label {
-	background-color: rgba(0,0,0,.05);	
-	padding: 14px .25rem 0 .5rem;
-	white-space: nowrap;
-	align-self: center;
- } */
+.join-login {
+	align-items: flex-end;
+	padding-top: .5rem;
+	padding-bottom: .5rem;
+	padding-left: 1rem;
+	margin-top: .5rem;
+  margin-left: auto;
+	text-align: right;
+	font-weight: 600;
+}
 
+.join-login a {
+	font-size: .875rem;
+	text-decoration: none;
+	/* margin-right: 1rem; */
+	padding: .35rem 1rem;
+	color: rgba(0,0,0,.7);
+	line-height: 1.5;
+}
 
+#header-join {
+	border: 1px solid #9a9a9a;
+	font-weight: bold;
+	margin-left: 1rem;
+	color: rgba(0,0,0,.8);
+}
 
-/* form label color: rgba(0,0,0,.05) */
 
 #section1 {
 	background-color: rgba(232,217,217,.3);
