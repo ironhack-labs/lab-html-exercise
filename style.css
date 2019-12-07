@@ -8,26 +8,49 @@ body {
 
 /* General styling */
 h1 {
-    font-size: 6vw; /* %age of viewport width */
+    font-size: 5em; /* 6vw %age of viewport width */
     margin:50px 0;
     font-weight: 700;
 }
 
+h2 {
+    font-size:2rem;
+    font-weight:600;
+}
+
+h3 {
+    font-size:1rem;
+    color:#ED1C24;
+}
+
 .condensed-text {
-    max-width: 30rem;
+    max-width: 33rem;
     font-size: 20px;
     text-align: center;
 }
 
 .condensed-text-small {
-    max-width: 30rem;
+    max-width: 32rem;
     font-size: 16px;
     text-align: center;
+}
+
+.wide-text-small {
+    max-width: 49rem;
+    font-size: 16px;
+    text-align: center;
+    color:#333;
 }
 
 .red-link {
     text-decoration: underline;
     color:#FB3B49;
+    font-weight: 500;
+}
+
+.yellow-skewed {
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
 }
 
 /* Header top div */
@@ -107,7 +130,7 @@ h1 {
 #search-bar button {
     box-sizing: content-box;
     font-family: 'Poppins';
-    font-size: 1.5vw;
+    font-size: 80%;
     width:10%;
     height:40px;
     background-color:#fb3e44;
@@ -136,7 +159,7 @@ h1 {
 
 /* SECTION 1 */
 #section1 {
-    height: 600px;
+    height: 730px;
     background-color: rgba(232,217,217,.3);
 }
 
@@ -145,6 +168,7 @@ h1 {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    padding-top:60px;
 }
 
 #section1-buttons {
@@ -152,7 +176,7 @@ h1 {
     justify-content: center;
     flex-direction: row;
     align-items: center;
-    margin:2.5rem 0;
+    margin:3.5em 0;
 }
 
 #section1-buttons a {
@@ -160,6 +184,7 @@ h1 {
     padding:1rem 4rem;
     text-decoration: none;
     margin:0 1.5rem;
+    font-weight: 600;
 }
 
 #plans-btn {
@@ -171,4 +196,62 @@ h1 {
 #joinfree-btn {
     background-color:white;
     color:black;
+}
+
+/* SECTION 2 */
+#section2 .inside-container {
+    padding:20px 0 60px 0;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#section2 img {
+    width:16rem;
+    margin:2rem 0;
+}
+
+#section2 .yellow-skewed {
+    padding: 0px 30px;
+    margin: 30px 0px 20px 0;
+}
+
+#section2 .yellow-skewed h2 {
+    font-style: italic;
+    margin:0;
+}
+
+/* SECTION 3 */
+#section3 {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+#section3 .inside-container {
+    display: flex;
+    flex-direction: row;
+    max-width:65rem;
+}
+
+#section3 article {
+    padding:30px;
+}
+
+#section3 article img {
+    height:32px;
+}
+
+#create-org-btn {
+    display: block;
+    font-family: Poppins;
+    font-size:20px;
+    font-weight: 600;
+    padding:15px 80px;
+    background-color: black;
+    color:white;
+    text-decoration: none;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
 }
