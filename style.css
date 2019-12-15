@@ -4,8 +4,10 @@ body {
   font-family: 'Poppins';
 }
 
+/* Header */
+
 header > div {
-    padding: 0 25px;
+    padding: 0px 25px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -33,6 +35,10 @@ nav a {
     margin-right: 1rem;
 }
 
+.search-row {
+    padding: 12px 25px;
+}
+
 .npmLogo {
     width:40px;
     margin-right: 1rem;
@@ -44,33 +50,45 @@ form > label {
 
 .magnifyingGlass
 {
-    width: 20px;
-    margin-right: 30px;
+    width: 15px;
+    padding-top: 15px;
 }
+
+.search-bar-background {
+    background-color: rgb(242, 242, 242);
+    width: 300px;
+    height: 100px;
+    padding: 10px;
+} 
 
 .search {
     color: rgba(0,0,0,.05);
     background-color: rgb(242, 242, 242);
     border: none;
-    padding: none;
+    padding: 10px;
     margin: none;
+    width: 900px;
 }
 
 .searchButton {
     background-color: #fb3e44;
     color: white;
     border: none;
+    padding: 15px;
 }
 
 .join {
     border: 1px solid black;
     color: black;
+    padding: 9px 15px;
 }
 
 .login {
     border: none;
     color: black;
 }
+
+/* Intro section */
 
 #intro {
     display: flex;
@@ -115,6 +133,8 @@ h1 {
     width: 200px;
 }
 
+/* About section */
+
 #about {
     display: flex;
     justify-content: center;
@@ -141,11 +161,14 @@ h1 {
     width: 30px;
 }
 
+/* Structure section */
+
 #structure {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 30px;
 }
 
 #structure-container {

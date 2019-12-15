@@ -3,6 +3,7 @@
     <head>
         <link rel="stylesheet" href="./style.css">
     </head>
+
     <body>
         <header>
             <div>
@@ -10,6 +11,7 @@
                     <img class="blackHeart" src="images/black-heart.png" alt="Black heart logo">
                     <span>Nifty Penguin Magic</span>
                 </div>
+
                 <nav>
                     <ul>
                         <li><a href="#">npm Enterprise</a></li>
@@ -21,18 +23,21 @@
                     </ul>
                 </nav>
             </div>
-            <div>
+
+            <div class="search-row">
                 <a href="https://npmjs.com"><img class="npmLogo" src="images/npm-logo.png" alt="NPM logo"></a>
-                <img class="magnifyingGlass" src="images/magnifying-glass.png" alt="Magnifying glass">
                 <form action="/#" method="get">
-                    <label for="search"></label>
-                    <input type="text" class="search" name="search" placeholder="Search packages">
+                    <span class="search-bar-background">
+                        <label for="search"><img class="magnifyingGlass" src="images/magnifying-glass.png" alt="Magnifying glass"></label>
+                        <input type="text" class="search" name="search" placeholder="Search packages">
+                    </span>
                     <button type="submit" class="searchButton">Search</button>
                     </form>
                     <button type="submit" class="join">Join</button>
                     <button type="submit" class="login">Login</button>
             </div>
         </header>
+
         <section id="intro">
             <h1>Build amazing things</h1>
             <article>
