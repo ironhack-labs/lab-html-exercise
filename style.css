@@ -1,89 +1,124 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
 body {
-    font-family: 'Poppins';
-    font-size: 20px;
-}
-
-h1 {
-    font-size: 4rem;
-    font-weight: 900;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    margin: 0 auto;
 }
 
 
-/* Navigation bar section */
-
-.upper-div {
-    padding: 0 25px;
+.center {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid lightgray;
+    flex-direction: column;
+    flex-basis: 50%;
+    text-align: center;
 }
 
-.navbar {
-    width: 700px;
-
+.header {
+    font-size: 0.875rem;
+    margin: 0 5%;
 }
 
-.navbar-ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 
-}
-
-.navbar-ul a {
-    text-decoration: none;
-    color: black;
-
-}
+/************************** NAVIGATION upper part *************************************/
 
 .black-heart {
     width: 20px;
     margin-right: 1rem;
 }
 
-/* lower div */
+.upper-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 20px;
+    border-bottom: 1px solid lightgray;
+}
+
+.navbar {
+    flex-basis: 40%;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+
+}
+
+.navbar-ul a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+
+
+
+/*************************** NAVIGATION lower part ***********************************8*/
+.logo {
+    display: flex;
+    margin-right: 20px;
+}
 
 .npm-logo {
-    width: 70px;
+    width: 50px;
     height: 30px;
-    margin-right: 1rem;
+    margin: auto;
+}
+
+.magglass {
+    display: flex;
 }
 
 .magglass-img {
+    margin: auto;
     width: 30px;
-    height: 36px;
+    height: 35px;
     padding: 4px 10px;
     background-color: rgba(0, 0, 0, .05);
 }
 
-
 .lower-div {
     display: flex;
-    justify-content: flex-start;
-    padding: 15px 25px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.search-field {
+    flex-basis: 90%;
+    display: flex;
     align-items: center;
 }
 
-.search {
-    width: 1300px;
-    font-size: 1rem;
-    padding: 10px;
-    border: none;
-    background-color: rgba(0, 0, 0, .05);
+.search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
 }
 
-.search-bar {
-    margin: 0;
+
+.form {
+    flex: 1;
+}
+
+.search-row {
+    display: flex;
+}
+
+.search-row input {
+    background-color: rgba(0, 0, 0, .05);
+    border: none;
+    flex: 1;
+    font-size: 1rem;
+    padding: 10px 15px;
 }
 
 .search-btn {
     font-size: 1rem;
     padding: 10px 15px;
-    margin-left: 0;
     background-color: #fb3e44;
     border: none;
     color: white;
@@ -91,113 +126,125 @@ h1 {
     text-decoration: none;
 }
 
-.join-btn {
-    text-align: justify;
-    margin-left: 50px;
+.login-btn {
+    display: flex;
+    justify-content: flex-end;
+    flex-basis: 10%;
 }
 
-.join-btn a {
+.login-btn a {
     text-decoration: none;
-    padding: 3px 10px;
+    padding: 10px 15px;
     color: black;
 }
 
 .join {
-    border: 1px solid grey;
+    border: 1px solid rgb(204, 204, 204);
 }
 
 
-/* INTRO */
 
+
+
+/* **********************************INTRO *******************************************/
 
 #intro {
-    height: 600px;
     background-color: rgba(232, 217, 217, .3);
     display: flex;
-    align-items: center;
-    flex-direction: column;
+    justify-content: center;
 }
 
+.intro-text {
+    margin: 10px auto 20px;
+    padding: 80px 20px;
+}
 
+.intro-text h1 {
+    font-size: 5rem;
+    font-weight: 800;
+    line-height: 1.25;
+}
 
-.intro-art {
-    margin-top: 0;
-    text-align: center;
-    width: 30%;
-    line-height: 2;
+.intro-text article {
+    line-height: 1.25;
 }
 
 .intro-links {
-    width: 30%;
-    margin-top: 60px;
+    margin-top: 80px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .intro-links a {
-    padding: 20px 70px;
-    text-decoration: none;
     font-weight: bold;
+    padding: 20px 70px;
+    text-decoration: none;   
 }
 
-.plans-btn {
+.plans-btn a {
     background-color: #FB3B49;
     box-shadow: 8px 8px 0 rgba(251, 59, 73, .2);
     color: white;
 }
 
-.join-for-free-btn {
+.join-for-free-btn a {
     color: black;
+    background-color: #fff;
 }
 
-/* NPM motto */
+
+
+
+
+
+/************************** NPM motto section **************************************/
 
 #npm-motto {
     display: flex;
-    align-items: center;
-    flex-direction: column;
-
+    justify-content: center;
 }
 
-#npm-motto h2 {
+.npm-motto-content {
+    padding: 30px;
+    margin: 50px auto;
+}
+
+.npm-motto-content h2 {
     background-color: rgba(255, 204, 53, .4);
     transform: skew(9deg, 0deg);
     font-style: italic;
-    font-size: 45px;
+    font-size: 2rem;
     font-weight: 600;
-    padding: 3px 20px;
     margin-top: 80px;
 
 }
-
 
 .triangle-img {
     height: 300px;
     margin-top: 50px;
 }
 
-.motto-art {
-    width: 50%;
-    text-align: center;
-    letter-spacing: 1;
-    margin-bottom: 100px;
-}
 
-/* GENERAL INFO */
+/***************************** GENERAL INFO *****************************************/
+
 #general-info {
-    padding: 0 10px 160px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   padding: 30px;
+   margin-bottom: 50px;
 }
 
 .features {
+    width: 70%;
     display: flex;
-    justify-content: space-between;
-    margin: 0 95px;
-    padding: 80px 40px;
+    justify-content: space-around;
+    align-content: center;
+    margin: 70px auto; 
 }
 
 .feature-div {
-    width: 20%;
-    padding: 0 40px;
+    flex-basis: 20%;
 }
 
 .features img {
@@ -208,14 +255,18 @@ h1 {
     color: #ED1C24;
 }
 
+.feature-div p {
+    font-size: 0.875rem;
+    line-height: 1.5;
+}
+
 .org-btn {
     display: flex;
-    justify-content: center;
-    
+    justify-content: center;   
 }
 
 .org-btn a {
-    width: 570px;
+    flex-basis: 30%;
     padding: 20px;
     background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
