@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins');
 
 html, body {
     margin: 0;
@@ -6,14 +5,56 @@ html, body {
 }
 
 body {
-font-family: 'Poppins';
+    font-family: 'Poppins';
+    font-size: 20px;
+    line-height: 3.5em;
+    font-weight: 300;
+    flex-wrap: nowrap;
+}
+
+h1 {
+    font-family: 'Poppins: 400 900';
+    font-size: 9em;
+    text-align: center;
+    font-weight: 900;
+    font-weight: bolder;
+    line-height: 1em;
+}
+
+h2 {
+    font-size: 5em;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 4em;
+    color: white;
+    text-shadow: #020819 8px -20px 9px;
+}
+
+h3 {
+    font-size: 4.2em;
+    text-align: center;
+    line-height: 1em;
+}
+
+h4 {
+    font-size: 1.5em;
+    letter-spacing: 0.4px;
+    line-height: 1em;
+    margin-bottom: 15px;
+}
+
+h5 {
+    font-size: 1.2em;
+    line-height: 1em;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 header > div {
     padding: 0 25px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: normal;
     border-bottom: 1px solid lightgray;
 }
 
@@ -26,6 +67,7 @@ nav ul {
     display: flex;
     justify-content: space-between;
     align-items: right;
+    font-size: 15px;
 }
 
 nav a {
@@ -41,30 +83,29 @@ nav a {
 .search-bar {
     display: flex;
     justify-content: flex-start;
+    flex-wrap: nowrap;
 }
 
+
 .npm-logo {
-    width: 55px;
-    padding-top: 20px;
-    padding-bottom: 20px;   
+    width: 95px;
+    padding: 20px;
 }
 
 .magnify-img {
-    width: 20px;
-    padding: 15px;
+    width: 25px;
+    padding-top: 25px;
+    padding-left: 10px;
     position: absolute;
-}
-
-.search-form {
-    justify-content: flex-start;
 }
 
 .search-window {
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-left: 30px;
-    width: 800px;
-    height: 20px;
+    padding-left: 50px;
+    width: 1200px;
+    height: 25px;
+    font-size: 15px;
     text-align: left;
     margin: 5px;
     background-color: rgba(0,0,0,.05);
@@ -78,23 +119,23 @@ nav a {
     font-size: 1em;
     letter-spacing: 0.5px;
     height: auto;
-    text-align: center;
+    text-align: right;
     text-decoration: none;
     padding: 10px 20px;
     margin-left: -10px;
-    margin-right: 20px;
+    margin-right: 30px;
 }
 
 #join-btn {
     background-color: white;
     color: black;
-    border: 1px solid black;
-    height: auto;
+    border: 1px solid grey;
     font-size: 1em;
     letter-spacing: 0.5px;
-    text-align: center;
     text-decoration: none;
     padding: 10px 20px;
+    height: 45px;
+    margin: 12px;
 }
 
 #login-btn {
@@ -103,8 +144,21 @@ nav a {
     font-size: 1em;
     height: auto;
     letter-spacing: 0.5px;
-    text-align: center;
     text-decoration: none;
-    padding: 10px 20px;
+    padding: 10px;
+    margin-left: 20px;
     border: none;
+}
+
+
+
+.second-section {
+    display: flex;
+    justify-content: center;
+
+}
+#build-things {
+    
+    text-align: center;
+
 }
