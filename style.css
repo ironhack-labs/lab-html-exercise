@@ -9,24 +9,31 @@ html, body {
     padding: 0;
 }
 
+/* ====== Headline styles ========== */
 h1 {
-    font-size: 5em;
+    font-size: 80px;
+    font-weight: bolder;
     text-align: center;
 }
 
 h2 {
-    font-size: 2em;
+    font-size: 24px;
+    font-weight: bolder;
     font-style: italic;
     text-align: center;
     background-color: rgba(255, 204, 53, .4);
     transform: skew(9deg, 0deg);
+    width: 600px;
 }
 
 h3 {
-    font-size: 1em;
+    font-size: 16px;
+    font-weight: bolder;
     text-align: left;
     color: #ED1C24;
 }
+
+/* ========== Header styles ========= */
 
 header>div {
     padding: 0 25px;
@@ -45,6 +52,7 @@ nav ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: 14px;
 }
 
 nav a {
@@ -58,52 +66,63 @@ nav a {
     margin-right: 1rem;
 }
 
+.penguin {
+    font-size: 14px;
+}
+
 .logo {
     width: 85px;
     padding: 8px 0px 0px;
-    margin: 8px 16px 8px 0px;
+    margin: 8px 0px 8px 0px;
 }
 
-.search-bar {
-   display: flex;
-   justify-content: flex-start;
-   align-items: center;
+/* ======== Search bar styles ============ */
+.search-container {
+    display: flex;
+    width: 100%;
 }
 
+/* Style the form label a.k.a magnifying glass */
 .form-label {
     width: 20px;
+    padding: 10px;
     background-color: rgba(0, 0, 0, .05);
-    padding: 10px 5px 10px 10px;
-    margin: 5px 0px 0px 0px;
-}
-
-.form-input {
-    width: 600px;
-    background-color: rgba(0, 0, 0, .05);
-    padding: 10px 10px 10px 5px;
-    border: none;
-    margin: 0px 0px 10px 0px;
-}
-
-.form-button {
-    width: 60px;
-    height: 20px;
-    background-color: #fb3e44; 
-    color: white;
     text-align: center;
     border: none;
-    padding: 10px 10px 25px 10px;
-    margin: 5px 0px 0px 0px; 
 }
+
+/* Style the input field */
+.form-input {
+    width: 700px;
+    background-color: rgba(0, 0, 0, .05);
+    font-size: 14px;
+    font-family: 'Poppins';
+    border: none;
+}
+
+/* Style the search button */
+.form-button {
+    width: 60px;
+    height: 40px;
+    background-color: #fb3e44;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    padding: 10px;
+    border: none;
+}
+
+/* ======== Join and Login buttons ========= */
 
 .join-btn {
     width: 60px;
     height: 20px;
     background-color: white;
+    font-size: 14px;
     text-align: center;
     text-decoration: none;
-    padding: 5px 10px;
-    margin: 5px;
+    padding: 5px 20px;
+    margin: 0px;
     border: 1px solid black;
 }
 
@@ -111,6 +130,7 @@ nav a {
     width: 60px;
     height: 20px;
     background-color: white;
+    font-size: 14px;
     text-align: center;
     text-decoration: none;
     padding: 5px 10px;
@@ -119,7 +139,9 @@ nav a {
 }
 
 
-/*---------SECTIONS:---------*/
+/* ============= SECTIONS =================*/
+
+/* ----- SECTION 1: "Intro" ----- */
 
 /*modified for flexbox*/
 #intro {
@@ -133,18 +155,20 @@ nav a {
 
 #intro .section-text {
     text-align: center;
-    margin: 0px 0px 40px 0px;
+    font-size: 16px;
+    margin: 0px 0px 50px 0px;
 }
 
 .see-plans-btn {
     width: 130px;
     height: 30px;
     background-color: #FB3B49;
+    font-size: 16px;
     color: white;
     text-align: center;
     text-decoration: none;
     padding: 10px 30px;
-    margin: 20px 10px 0px 0px;
+    margin: 20px 15px 0px 0px;
     box-shadow: 8px 8px 0 rgba(251, 59, 73, .2);
 }
 
@@ -152,14 +176,19 @@ nav a {
   width: 130px;
   height: 30px;
   background-color: white;
+  font-size: 16px;
+  font-weight: bolder;
+  color: black;
   text-align: center;
   text-decoration: none;
   padding: 10px 30px;
-  margin: 20px 0px 0px 10px;
+  margin: 20px 0px 0px 15px;
 }
 
+/* ------- SECTION 2: "About NPM" ----- */
+
 /*modified for flexbox*/
-#open-source {
+#about {
     height: 600px;
     display: flex;
     justify-content: center;
@@ -173,10 +202,13 @@ padding: 10px;
 margin: 20px;
 }
 
-#open-source .section-text {
+#about .section-text {
     text-align: center; 
+    font-size: 16px;
     margin: 20px 0px 20px 0px;
 }
+
+/* ----- SECTION 3: "Features" ----- */
 
 /*modified for flexbox*/
 #features {
@@ -195,6 +227,35 @@ margin: 20px;
     padding: 0 auto;
 }
 
+#features .text {
+    text-align: left;
+    font-size: 14px;
+    margin: 0 auto;
+}
+
+.container {
+    width: 200px;
+    margin: 0px 20px 30px 20px;
+    /*padding: 50px 0;*/
+
+}
+
+.create-org-btn {
+    width: 260px;
+    height: 30px;
+    background-color: black;
+    font-size: 16px;
+    font-weight: bolder;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 30px;
+    margin: 40px 10px 0px 0px;
+    box-shadow: 8px 8px 0 rgba(128, 83, 35, .2);    
+}
+
+/* Image classes (out of use! replaced by multi-selector #featues img) */
+
 /*.zero-configuration {
     width: 80px;
 }
@@ -210,28 +271,3 @@ margin: 20px;
 .npm-audit {
     width: 80px;
 }*/
-
-#features .text {
-    text-align: left;
-    margin: 0 auto;
-}
-
-.container {
-    width: 200px;
-    margin: 0px 50px 30px 50px;
-    /*padding: 50px 0;*/
-
-}
-
-.create-org-btn {
-    width: 260px;
-    height: 30px;
-    background-color: black;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    padding: 10px 30px;
-    margin: 30px 10px 0px 0px;
-    box-shadow: 8px 8px 0 rgba(128, 83, 35, .2);    
-}
-
