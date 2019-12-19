@@ -8,11 +8,11 @@ body {
 /* ++++++ Header styling ++++++ */
 
 header > div {
-    padding: 0 25px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid lightgray;
+    padding: 0 25px;
   }
 
   nav {
@@ -31,19 +31,21 @@ header > div {
     color: black;
   }
 
-  .searchBar{
-    background-color: rgba(0,0,0,.05);
+  .search-bar{
+    background-color: rgba(240, 240, 240);
+    width: 100%;
   }
 
   form input{
     padding: 5px;
-    background-color: rgba(0,0,0,.05);
+    background-color: rgba(240, 240, 240);
     border: none;
+    width: 100%;
   }
 
-  .searchCTA{
-    width: 100px;
+  .search-cta{
     font-size: 15px;
+    width: 100px;
     color: white;
     text-decoration: none;
     background-color: #fb3e44;
@@ -52,40 +54,48 @@ header > div {
     border-radius: 1%;
   }
 
-  .navCTAs{
+  .nav-ctas{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    align-items: center;
+    margin: 5px 25px;
   }
   
-  .joinLink{
+  .join-link{
+    display: flex;
+    align-items: center;
+    height: 35px;
     color: black;
     text-decoration: none;
     padding: 4px 20px;
     border: solid 0.5px black;
+    margin-left: 30px;
   }
 
-  .logInLink{
+  .login-link{
+    width: 50px;
     color: black;
     text-decoration: none;
-    padding: 4px 25px;
+    padding-left: 20px;
+    text-align: justify;
   }
-
   
-  .blackHeart {
+  .black-heart {
     width: 25px;
     margin-right: 1rem;
   }
 
-  .npmLogo{
+  .npm-logo{
     width: 75px;
     padding: 10px;
+    margin-right: 20px;
   }
 
-  .magnifyingGlass{
+  .magnifying-glass{
     width: 20px;
     height: 20px;
-    padding-top: 10px;
+    padding: 12px;
   }
 
   form{
@@ -108,7 +118,7 @@ header > div {
     text-align: center;
   }
 
-  .mainArticle{
+  .main-article{
     width: 40%;
     text-align: center;
   }
@@ -119,10 +129,10 @@ header > div {
     align-items: center;
   }
 
- .seePlan{
+ .see-plan{
     color: white;
-    text-decoration: none;
     background-color: #fb3e44;
+    text-decoration: none;
     border-style: none;
     padding: 10px 50px;
     margin: 50px 15px 100px 15px;
@@ -130,7 +140,7 @@ header > div {
     border-radius: 1%;
   }
 
-.joinForFree{
+.join-for-free{
     color: black;
     text-decoration: none;
     background-color: white;
@@ -150,24 +160,22 @@ header > div {
     padding-bottom: 100px
   }
 
-.triangleExagone{
+.triangle-hexagon{
     height: 250px;
     padding: 80px 0;
   }
 
 h3{
-    padding-right: 15px;
-    padding-bottom: -10px;
-    padding-left: 15px;
-    font-size: 30px;
+    padding: 0px 20px;
+    font-size: 25px;
     border-style: none;
     background-color: #F9EE9F;
-}
+  }
 
-.secondaryArticle{
-    width: 60%;
+.secondary-article{
+    width: 50%;
     text-align: center;
-}
+  }
 
 /* ++++++ Tertiary Section Styling styling ++++++ */
 
@@ -190,7 +198,7 @@ p{
     width: 250px;
 }
 
-.tertiaryImage{
+.tertiary-image{
     height: 20px;
 }
 
@@ -204,7 +212,7 @@ footer{
     padding: 40px 0;
 }
 
-.createAnOrg{
+.create-org{
     color: white;
     text-decoration: none;
     background-color: black;
