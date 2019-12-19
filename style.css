@@ -5,35 +5,34 @@ html, body {
 }
 
 body {
+    flex-wrap: nowrap;
     font-family: 'Poppins';
     font-size: 20px;
-    line-height: 2.5em;
     font-weight: 300;
-    flex-wrap: nowrap;
+    line-height: 2.5em;
 }
 
 h1 {
     font-family: 'Poppins', sans-serif;
     font-size: 4.5em;
-    text-align: center;
     line-height: 1em;
+    text-align: center;
 }
 
 h5 {
-    text-align: left;
-    font-size: 1.2em;
-    margin-top: 0;
-    margin-bottom: 30px;
     color:#ED1C24;
-
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    margin-top: 0;
+    text-align: left;
 }
 
 header > div {
-    padding: 0 25px;
-    display: flex;
-    justify-content: space-between;
     align-items: normal;
     border-top: 1px solid lightgray;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 25px;
 }
 
 nav {
@@ -41,99 +40,99 @@ nav {
 }
 
 nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
     align-items: right;
+    display: flex;
     font-size: 15px;
+    justify-content: space-between;
+    list-style: none;
 }
 
 nav a {
-    text-decoration: none;
     color: black;
+    text-decoration: none;
 }
 
 .blackHeart {
-    width: 20px;
     margin-right: 1rem;
+    width: 20px;
 }
 
 .search-bar {
     display: flex;
-    justify-content: flex-start;
     flex-wrap: nowrap;
+    justify-content: flex-start;
 }
 
 .npm-logo {
-    width: 95px;
     padding: 20px;
+    width: 95px;
 }
 
 .magnify-img {
-    width: 25px;
     padding-top: 25px;
     padding-left: 10px;
     position: absolute;
+    width: 25px;
 }
 
 .search-window {
-    padding-top: 20px;
-    padding-bottom: 15px;
-    padding-left: 50px;
-    width: 1200px;
-    height: 25px;
-    font-size: 15px;
-    text-align: left;
-    margin: 5px;
     background-color: rgba(0,0,0,.05);
     border: none;
+    height: 25px;
+    font-size: 15px;
+    margin: 5px;
+    padding-bottom: 15px;
+    padding-left: 50px;
+    padding-top: 20px;
+    text-align: left;
+    width: 1200px;
 }
 
 #search-btn {
     background-color: #fb3e44;
-    color: white;
     border: none;
+    color: white;
     font-size: 1em;
-    letter-spacing: 0.5px;
     height: auto;
-    text-align: right;
-    text-decoration: none;
-    padding: 17px 20px;
+    letter-spacing: 0.5px;
     margin-left: -10px;
     margin-right: 30px;
-}
+    padding: 17px 20px;
+    text-align: right;
+    text-decoration: none;
+}   
 
 #join-btn {
-    background-color: white;
-    color: black;
+    background-color: white;   
     border: 1px solid lightgray;
+    color: black;
     font-size: 1em;
-    letter-spacing: 0.5px;
-    text-decoration: none;
-    padding: 10px 20px;
     height: 55px;
-    margin: 10px;
+    letter-spacing: 0.5px;
+    margin: 10px;   
+    padding: 10px 20px;
+    text-decoration: none;
 }
 
 #login-btn {
     background-color: white;
+    border: none;
     color: black;
     font-size: 1em;
     height: auto;
     letter-spacing: 0.5px;
-    text-decoration: none;
-    padding: 10px;
     margin-left: 15px;
-    border: none;
+    padding: 10px;
+    text-decoration: none;   
 }
 
 .second-section {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    height: 600px;
-    margin: 0px 40px;
     background-color: rgba(232,217,217,.3);
+    display: flex;
+    height: 600px;
+    justify-content: center;
+    margin: 0px 40px;
+    text-align: center;
 }
 
 #build-things {
@@ -142,23 +141,23 @@ nav a {
 }
 
 #text1 {
-    margin: 0 600px ;
     line-height: 1.5em;
+    margin: 0 600px;
 }
 
 .link-btn {
-    font-weight: bold;
-    font-size: 20px;
-    height: 70px;
-    width: 200px;
-    margin: 40px 15px 40px 15px;
     border: none;
+    font-size: 20px;
+    font-weight: bold;
+    height: 70px;
+    margin: 40px 15px 40px 15px;
+    width: 200px;
 }
 
 #plans {
     background-color: #FB3B49;
-    color: white;
     box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+    color: white;
 }
 
 #free {
@@ -169,56 +168,56 @@ nav a {
 .bring-out {
     display: flex;
     flex-direction: column;
-    text-align: center;
-    justify-content: center;
     height: 600px;
+    justify-content: center;
     margin: 20px;
+    text-align: center;
 }
 
-#hexagon {
-    width: 300px;
-    margin-top: 50px;
+#hexagon {    
     margin-bottom: 40px;
-    }
+    margin-top: 50px;
+    width: 300px;
+}
 
 #title {
+    background-color: rgba(247, 227, 110, 0.986);
     font-family: 'Poppins semi-bold';
     font-size: 50px;
+    font-style: italic;
     margin-left: 40px;
     margin-right: 40px;
-    background-color: rgba(247, 227, 110, 0.986);
-    transform: skew(9deg,0deg);
-    font-style: italic;
+    transform: skew(9deg,0deg);    
 }
 
 #text2 {
+    color: grey;
+    line-height: 1.5em;
     margin-left: 400px;
     margin-right: 400px;
-    line-height: 1.5em;
-    color: grey;
 }
 
 .create-org{
     display: flex;
-    text-align: center;
     height: 450px;
     margin: 20px 180px;
+    text-align: center;
 }
 
 .container {
-    margin: 50px 20px;
-    padding-left: 20px;
-    padding-right: 20px;
+    color: grey;
     flex-direction: row;
     justify-content: space-between;
     line-height: 1.5em;
+    margin: 50px 20px;
+    padding-left: 20px;
+    padding-right: 20px;
     text-align: left;
-    color: grey;
-}
+}   
 
 .create-org img {
-    width: 50px;
     padding-bottom: 20px;
+    width: 50px;
 }
 
 #people-triangle {
@@ -230,16 +229,16 @@ nav a {
 }
 
 #create-btn {
+    background-color: black;
+    border: none;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    color: white;
     display: block;
-    font-weight: bold;
     font-size: 30px;
+    font-weight: bold;
     height: 80px;
-    width: 580px;
+    margin-bottom: 40px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 40px;
-    border: none;
-    background-color: black;
-    color: white;
-    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    width: 580px;
 }
