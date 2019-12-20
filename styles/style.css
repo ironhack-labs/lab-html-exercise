@@ -1,135 +1,294 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url("https://fonts.googleapis.com/css?family=Poppins");
 
 body {
-  font-family: 'Poppins';
+  font-family: "Poppins";
 }
 
 header > div {
-    padding: 0 25px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid lightgray;
-  }
+  padding: 0 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+}
+
+nav {
+  width: 600px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+.blackHeart {
+  width: 20px;
+  margin-right: 1rem;
+}
+
+.logo {
+  width: 50px;
+  margin-right: 1rem;
+}
+
+/* Empieza el formato al buscador*/
+
+#buscador {
+  flex-direction: row;
+  justify-content: start;
+}
+
+.formulario {
+  background-color: rgba(0, 0, 0, 0.05);
+  height: 26px;
+
+  width: 74%;
+  white-space: nowrap;
+  position: relative;
+}
+
+/* Por qué al dar formato a la imagen también aparece el input? */
+
+.formulario img {
+  width: 16px;
+  margin: 5px 0 0 5px;
+}
+
+.formulario input {
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  width: 97%;
+  height: 25px;
+  position: absolute;
+  margin-left: 5px;
+}
+
+.boton-buscador {
+  color: white;
+  background-color: #fb3e44;
+  text-align: center;
+  margin-left: 0;
+  border: 10px solid #fb3e44;
+}
+
+#botones-barra {
+  margin-left: 50px;
+  display: flex;
+  width: 100px;
+}
+
+#botones-barra .boton1 {
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  text-align: center;
+  height: 30px;
+  font-size: 12px;
+}
+
+#botones-barra .boton1 a {
+  text-decoration: none;
+  color: black;
+}
+
+/* comienza la seccion uno  */
+
+#parte1 {
+  height: 600px;
+  width: 0 auto;
+  background-color: rgba(232, 217, 217, 0.3);
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+}
+
+#parte1 h1 {
+
+  font-size: 62px;
+  text-align: center;
+  padding-top: 70px;
+  margin: 0 auto;
   
-  nav {
-    width: 600px;
-  }
+
+}
+
+#parte1 article {
+  margin-top: 15px;
+}
+
+#parte1 article, p {
+  width: 350px;
+  height: 100px;
+  text-align: center;
+  padding-right: 100px;
   
-  nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  nav a {
+}
+
+.boton-1 {
+  background-color: #fb3e44;
+  width: 180px;
+  height: 50px;
+  margin-right: 35px;
+  float: left;
+  box-shadow: 8px 8px 0 rgba(251, 59, 73, 0.2);
+  text-decoration: none;
+  font-size: 16px;
+
+}
+
+.boton-1 a{
+    text-decoration: none;
+    color: white;
+    
+    
+}
+
+.boton-2 a{
     text-decoration: none;
     color: black;
-  }
-  
-  
-  .blackHeart {
-    width: 20px;
-    margin-right: 1rem;
-  }
-
-  .logo  {
-
-    width: 50px;
-    margin-right: 1rem;
-  }
-
-  form{
-
-    background-color: rgba(0,0,0,.05);
-    margin-top: 10px;
-    margin-bottom: 10px;
-    width: 900px;
-    height: 26px;
-    border: 1px solid black;
-  
-    
-  }
-
-  input[type="text"]{
-    
-      padding: 0 0 2px 0;
-      
-      margin: 3px 0 2px 12px;
-      border: 0;
-      width: 800px;
-      height: 19px;
-      position: absolute;
-      
-      
-
-  }
+}
 
 
 
-  
+#botones-parte1 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 800px;
+  padding-left: 370px;
+}
 
-  form > img{
 
-    margin-top: 10px;
-    margin-left: 10px;
-    width: 16px;
-
-  }
-
-  .boton-buscador{
-      color: white;
-      background-color: #fb3e44;
-      text-align: center;
-      margin-left:-100px;
-      border: 8px solid #fb3e44;
-      
-      
-  }
-
-  #botones-barra {
-
- 
- 
-    display: flex;
-  }
-
-  #botones-barra .boton1{
-
-    border: 1px solid black;
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: -50px;
-    margin-right: 10px;
-    padding: 5px 15px 5px 15px ;
+/* Desconozco por qué el coror blanco queda grisaceo */
+.boton-2 {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    width: 180px;
+    height: 50px;
+    margin-right: 40px;
     position: relative;
-  }
-
-  #botones-barra > p > a{
-
     font-size: 16px;
-    text-decoration: none;
-    color: black;
+  
+ 
+  }
+  
+
+  
+
+/* Commienza la sección 2 */
+
+#parte2 {
+  height: 600px;
+  width: 0 auto;
+  background-color: white;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+#parte2 svg {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+#texto-subrayado {
+  background-color: rgba(255, 204, 53, 0.4);
+  transform: skew(9deg, 0deg);
+  font-style: italic;
+  width: 50%;
+  text-align: center;
+  height: 50px;
+  position: relative;
+  padding-top: -50px;
+}
+
+#texto-subrayado h2 {
+  position: relative;
+  padding-bottom: 30px;
+}
+
+#parte2 article,
+p {
+  height: 90px;
+  margin-bottom: 90px;
+
+  width: 430px;
+}
+
+
+#parte3 div{
+
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+
+}
+
+/* coomienzo de la seccion parte 3 */
+
+
+#parte3 .cuadrados{
+
+    
+  
+    border: 1px solid black;
+    width: 240px;
+    margin: 0;
     position: relative;
-    text-align: center;
+    height: 240px;
+}
 
+
+
+#parte3 h3{
+
+    color:  #ED1C24;
+    border: 3px solid #AA7843;
+    position: absolute;
+    margin-top: 40px;
+    padding-right: 30px;
+    font-size: 16px;
+
+
+    
+}
+
+#parte3 p{
+
+    font-size: 13px;
+    padding: 3px 20px 3px 20px;
+    margin-top: 30px;
+}
+
+#parte3 svg {
+  width: 30px;
+  float: left;
+  margin-bottom: 30px;
+  margin-right: 150px;
+ 
   
+}
 
+#crear{
+    
+    background-color: black;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    color: white;
+    position: relative;
+    width: 300px;
+    height: 50px;
+    margin-top: 70px;
+    font-size: 16px;
 
+    
+}
 
-
-  }
-
-  #botones-barra > p{
-
-
-    margin-top: 20px;
-
-  
-
-
-
-
-  }
