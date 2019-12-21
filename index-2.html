@@ -2,69 +2,116 @@
 <html>
     <head>
         <title>NPM Clone</title>
-    </head>
+        <link rel="stylesheet" href="style.css">
+        </head>
 <body>
-    <header>
-        <!-- first row with Logo and Navbar-->
-
-        <div class="header-first-row">
-            <div><img src="images/black-heart.png" />
-                <span>Nifty Penguin Magic </span>>
+    <div class="inner-body">
+        <header>
+            <!-- first row with Logo and Navbar-->
+    
+            <div class="header-first-row">
+                <img src="images/black-heart.png" />
+                <span>Nifty Penguin Magic </span>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#">npm Enterprise </a>
+                        </li>
+                        <li>
+                            <a href="#">Products</a>
+                        </li>
+                        <li>
+                            <a href="#">Solutions</a>
+                        </li>
+                        <li>
+                            <a href="#">Resources</a>
+                        </li>
+                        <li>
+                            <a href="#">Docs</a>
+                        </li>
+                        <li>
+                            <a href="#">Support</a>
+                        </li>
+                    </ul>
+                </nav>
+    
             </div>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#">npm Enterprise </a>
-                    </li>
-                    <li>
-                        <a href="#">Products</a>
-                    </li>
-                    <li>
-                        <a href="#">Solutions</a>
-                    </li>
-                    <li>
-                        <a href="#">Resources</a>
-                    </li>
-                    <li>
-                        <a href="#">Docs</a>
-                    </li>
-                    <li>
-                        <a href="#">Support</a>
-                    </li>
-                </ul>
-            </nav>
-
-        </div>
-        
-        <!-- second row: NPM logo + searchbar + Register/Login-->
-        <div class="header-second-row"> 
             
-            <img id="npm-logo" src="./images/npm-logo.png" />
-            
-            <div class="searchbar">
-                <img id="search-logo" src="images/magnifying-glass.png" />
-                <form id="search" method="GET" action="/search" class"search-form">
-                    <input class="text-input" id="search-input" type="search" name="search-text" placeholder="Search packages" />
-                    <button class="button" type="submit">Search</button>
-                </form>
+            <!-- second row: NPM logo + searchbar + Register/Login-->
+            <div class="header-second-row"> 
+                
+                <img id="npm-logo" src="./images/npm-logo.png" />
+                
+                <div class="searchbar">
+                    <img id="search-logo" src="images/magnifying-glass.png" />
+                    <form id="search" method="GET" action="/search" class"search-form">
+                        <input class="text-input" id="search-input" type="search" name="search-text" placeholder="Search packages" />
+                        <button class="button cta shadow" type="submit">Search</button>
+                    </form>
+                </div>
+    
+                <div class="login-register">
+                    <a href="#" class="button framed">Join</a>
+                    <a href="#" class="button">Login</a>
+                </div>
+    
             </div>
+            
+        </header>
+        <main>
+            <section class="content first">
+                <div class="center"><h1 class="subheadline">Build amazing things</h1></div>
+                <div class="center"><span class="text">Essential JavaScript development tools that help you go to market faster and build powerful applications using modern open source code. </span></div>
+                <div class="center"><div class="button cta shadow"><a href="#">See plans</a></div></div>
+                <div class="center"><div class="button"><a href="#">Join for free</a></div></div>
+            </section>
+    
+            <section class="content-wrapper second">
+                <div class="center"><img src="images/triangle-hexagon.svg" /></div>
+                <div class="center"><h2 class="subheadline">Bring the best of open source to your company</h2></div>
+                <div class="center"><span class="text small">Enpm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it. Create an Org and get more out of the tools your team already knows and loves. </span></div>
+            </section>
+    
+            <section class="usp-wrapper">
+                <div class="usp" id="usp-1">
+                    <div><img src="images/zero-configuration.svg"></div>
+                    <h3 class="usp-hl">Zero configuration</h3>
+                    <div class="text small">Create an org, add your team, and start collaborating. Nothing to configure, set up, or manage.</div>
+                </div>
+                <div class="usp" id="usp-2">
+                    <div><img src="images/team-management.svg"></div>
+                    <h3 class="usp-hl">Team management</h3>
+                    <div class="text small">Control who has access to what modules within your team namespace using straightforward team management capabilities. 
+                    </div>
+                </div>
+                <div class="usp" id="usp-3">
+                    <div><img src="images/familiar-features.svg"></div>
+                    <h3 class="usp-hl">Familia features</h3>
+                    <div class="text small">npm Orgs has 100% parity with all the public npm registry features your developers already use. 
+                    </div>
+                </div>
+                <div class="usp" id="usp-3">
+                    <div><img src="images/npm-audit.svg"></div>
+                    <h3 class="usp-hl">npm audit</h3>
+                    <div class="text small">Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer.  
+                    </div>
+                </div>
+                
+            </section>
+            <section class="footer-cta">
+                <div class="button black shadow"><a href="#">Create an Org</a></div>
+            </section>
+    
+    
+        </main>
+        <footer>
+    
+    
+        </footer>
 
 
-        </div>
-
-        
-        
-    </header>
-    <main>
-        <section class="content">
-
-        </section>
-
-    </main>
-    <footer>
-
-
-    </footer>
+    </div>
+    
 
 </body>
 </html>

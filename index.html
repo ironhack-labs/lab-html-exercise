@@ -1,26 +1,116 @@
-x NPM Clone
-x Nifty Penguin Magic 
-x npm Enterprise 
-x Products 
-x Solutions 
-x Resources 
-x Docs 
-X Support 
-Search 
-Join
-Log In
-Build amazing things
-Essential JavaScript development tools that help you go to market faster and build powerful applications using modern open source code. 
-See plans 
-Join for free
-Bring the best of open source to your company
-npm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it. Create an Org and get more out of the tools your team already knows and loves.
-Zero configuration
-Create an org, add your team, and start collaborating. Nothing to configure, set up, or manage.
-Team management 
-Control who has access to what modules within your team namespace using straightforward team management capabilities. 
-Familiar features 
-npm Orgs has 100% parity with all the public npm registry features your developers already use. 
-npm audit 
-Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer. 
-Create an Org 
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>NPM Clone</title>
+        <link rel="stylesheet" href="style.css">
+        </head>
+<body>
+    <div class="inner-body">
+        <header>
+            <!-- first row with Logo and Navbar-->
+    
+            <div class="header first-row">
+                <img src="images/black-heart.png" />
+                <span>Nifty Penguin Magic </span>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#">npm Enterprise </a>
+                        </li>
+                        <li>
+                            <a href="#">Products</a>
+                        </li>
+                        <li>
+                            <a href="#">Solutions</a>
+                        </li>
+                        <li>
+                            <a href="#">Resources</a>
+                        </li>
+                        <li>
+                            <a href="#">Docs</a>
+                        </li>
+                        <li>
+                            <a href="#">Support</a>
+                        </li>
+                    </ul>
+                </nav>
+    
+            </div>
+            
+            <!-- second row: NPM logo + searchbar + Register/Login-->
+            <div class="header second-row"> 
+                
+                <img id="npm-logo" src="./images/npm-logo.png" />
+                
+                <div class="searchbar">
+                    <img id="search-logo" src="images/magnifying-glass.png" />
+                    <form id="search" method="GET" action="/search" class"search-form">
+                        <input class="text-input" id="search-input" type="search" name="search-text" placeholder="Search packages" />
+                        <button class="button cta" type="submit">Search</button>
+                    </form>
+                </div>
+    
+                <div class="login-register">
+                    <a href="#" class="button framed">Join</a>
+                    <a href="#" class="button">Login</a>
+                </div>
+    
+            </div>
+            
+        </header>
+        <main>
+            <section class="first">
+                <div class="center"><h1 class="subheadline">Build amazing things</h1></div>
+                <div class="center text">Essential JavaScript development tools that help you go to market faster and build powerful applications using modern open source code.</div>
+                <div class="center buttons"><a href="#" class="button size-l cta shadow bold">See plans</a><a href="#" class="button size-l bold">Join for free</a></div>
+            </section>
+    
+            <section class="second">
+                <img src="images/triangle-hexagon.svg" />
+                <div class="center"><h2 class="subheadline highlight">Bring the best of open source to your company</h2></div>
+                <div class="center"><span class="text small">npm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it. Create an Org and get more out of the tools your team already knows and loves. </span></div>
+            </section>
+    
+            <section class="third">
+                <div class="usp" id="usp-1">
+                    <div class="usp-image"><img src="images/zero-configuration.svg"></div>
+                    <h3 class="red">Zero configuration</h3>
+                    <div class="text small">Create an org, add your team, and start collaborating. Nothing to configure, set up, or manage.</div>
+                </div>
+                <div class="usp" id="usp-2">
+                    <div class="usp-image"><img src="images/team-management.svg"></div>
+                    <h3 class="red">Team management</h3>
+                    <div class="text small">Control who has access to what modules within your team namespace using straightforward team management capabilities. 
+                    </div>
+                </div>
+                <div class="usp" id="usp-3">
+                    <div class="usp-image"><img src="images/familiar-features.svg"></div>
+                    <h3 class="red">Familia features</h3>
+                    <div class="text small">npm Orgs has 100% parity with all the public npm registry features your developers already use. 
+                    </div>
+                </div>
+                <div class="usp" id="usp-3">
+                    <div class="usp-image"><img src="images/npm-audit.svg"></div>
+                    <h3 class="red">npm audit</h3>
+                    <div class="text small">Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer.  
+                    </div>
+                </div>
+                
+            </section>
+            <section class="footer-cta">
+                <a href="#" class="center button black shadow size-xl">Create an Org</a>
+            </section>
+    
+    
+        </main>
+        <footer>
+    
+    
+        </footer>
+
+
+    </div>
+    
+
+</body>
+</html>

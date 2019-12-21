@@ -1,0 +1,278 @@
+
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: Poppins, sans-serif;
+    height: 100%;
+    margin: 0;
+}
+.inner-body{
+    max-width: 80%;
+    height: 100%; 
+    display: block;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: auto; 
+}
+
+a {
+    
+    text-decoration: none !important;
+    font-size: 14px;
+
+}
+
+h1 {
+    font-size: 5rem;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 2.25rem;
+}
+
+h3 {
+    font-weight: 700;
+}
+
+.subheadline{
+    font-family: sans-serif;
+    margin: 0; 
+
+}
+.highlight {
+    background-color: rgba(255, 215, 0, 0.2);
+}
+
+.red{
+    color: crimson; 
+}
+
+
+.center{
+    display: block; 
+    margin: 0 auto; 
+}
+
+.button{
+    font-style: normal;
+    background-color: white;
+    color: #333;
+    padding: 10px 0.5em;
+    font-weight: bold;
+    min-width: 80px;
+    vertical-align: middle;
+    text-align: center;
+}
+.shadow{
+    box-shadow: 5px 5px 0px 0px rgba(0,0,0,0.1)
+}
+.size-l{
+
+    width: 200px;
+}
+
+.size-xl{
+
+    width: 400px;
+}
+
+.framed{
+    border: 1px solid gray;
+}
+
+.cta {
+    background-color: red;
+    color: white;
+}
+
+.black{
+    background-color: black;
+    color: white;
+}
+.bold{
+    font-weight: bolder;
+}
+
+
+header {
+    display: flex;
+    z-index: 99;
+    flex: 1 1 20%;
+    flex-direction: column;
+    height: 120px;
+    box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.2);
+}
+
+.header.first-row{
+    border-bottom: 1px solid lightgray;
+}
+
+
+header > div {
+    height: 60px;
+    display: flex;
+    flex: 1 1 50%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.1em;
+}
+
+header > div > span{
+    flex: 1 1; 
+}
+
+header > div > img{
+    height: 40%; 
+    margin: 1em; 
+
+}
+
+header > div > div {
+
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
+.searchbar{
+    flex: 1 1; 
+    background-color: lightgray;
+    height: 80%; 
+    margin: 0 5px; 
+
+}
+.searchbar > form {
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 90%;
+    height: 100%    
+}
+
+.searchbar > form > input{
+    flex: 1 1 80%;
+    height: 100%;    
+    background-color: unset;
+    border: unset;
+    font-size: 18px;
+}
+.searchbar > img {
+    margin: 10px;
+    height: 60%;
+}
+
+
+
+
+nav > ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    
+}
+nav > ul > li {
+    margin: 5px;
+    height: 100%;
+}
+
+nav > ul > li > a{
+    margin: 5px;
+    font-style: unset;
+    font-weight: bold;
+    color: black; 
+   
+    height: 100%;
+    
+}
+
+.login-register{
+    height: 100%;
+}
+
+main {
+    flex: 1 1 70%:
+}
+
+main > section {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 33%;
+    height: 100%;
+    padding:5% 10%;
+    
+}
+section > *{
+    margin-bottom: 50px !important;
+}
+
+section.first{
+    height: auto;
+    background-color: rgba(255, 236, 239, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  
+}
+
+.first .text{
+    width: 50%;
+}
+.first .buttons {
+    display: flex;
+    height: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+}
+
+
+section.third{
+    padding:5% 10%;
+}
+
+
+section.second{
+    height: 500px;
+}
+section.third{
+    flex-direction: row;
+    
+}
+.usp{
+    flex: 1 1 0px;
+    padding: 2rem;
+    text-align: left;
+}
+.usp-image{
+    height: auto;
+    width: 25%;
+}
+
+footer {
+    flex: 1 1 10%
+}
+
+
+.image {
+    height: 100%;
+}
+
+img {
+    height: 100%;
+}
+
+.center{
+    margin: 0 auto; 
+}
