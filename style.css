@@ -6,16 +6,11 @@ body {
 
 header > div {
   padding: 0 25px;   
-  border: 1px solid red; /* TO SUBSTITUTE FOR border-bottom */
+  border-bottom: 1px solid lightgray;
   display: flex ;
   justify-content: space-between;
+  align-items: center;
 }
-
-/* What's bellow --> TO DELETE */
-header > div > div, nav, img, form {
-    border: 1px solid green;
-}
-/* What's above --> TO DELETE */
 
 nav {
     width: 600px;
@@ -38,11 +33,45 @@ nav {
     margin-right: 1rem;    
   }
 
-/* CSS 2 The Header and the Navbar*/
+/*   --> CSS 2 The Header and the Navbar (non guided part) <--   */
 .nmp-logo {
     width: 50px;
     height: 25px;
 }
 
 
+/*  ???? form label color: rgba(0,0,0,.05) ???? What for do I need a label?   */
+.input-text {
+    background-image: url(images/magnifying-glass.png);
+    background-repeat: no-repeat;
+    background-size: contain; /* Resize the background image to make sure the image is fully visible */
+    padding-left:20px;
+    color: rgba(0,0,0,.05);
+    width: 80%;
+    background-color: rgba(244, 244, 253, 0.616);
+}
 
+.input-button {
+    background-color: #fb3e44;
+    color: white;
+}
+
+.join {
+    border: 1px solid black;
+    padding: 5px;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.login {
+    text-decoration: none;
+}
+
+
+/* Why doesn't the form element align center as the image and the div(class=join-login) do?  */
+form {
+    width: 80%;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
