@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body {
+  font-family: 'Poppins';
+}
+
+header > div {
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+    height: 48px;
+}
+
+nav {
+    width: 600px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+section{
+	padding: 0 25px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.magnify-glass {
+    font-size: 14px;
+    padding-top: 10px;
+}
+
+.magnify-glass-before{
+    background-image: url(images/magnifying-glass.png);
+    background-position-y: 10px;
+    background-position-x: 14px;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+}
+
+form{
+	color:black;
+	border:none;
+    width: 80%;
+    background-color: #ececec;
+}
+
+form label{
+	background-color: #ececec;
+	color:black;	
+	border:none;	
+}
+form input{
+	background-color: #ececec;
+	color:black;	
+	border:none;	
+}
+form button{
+	background-color: #fb3e44;
+	color: white;
+	border:none;
+    cursor: pointer;
+}
+
+.form-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 0px;
+    height: 40px;
+}
+
+.input-search {
+    flex-grow: 1;
+    text-align: end;
+}
+
+.header-join{
+    border-style: solid;
+    border-color: rgba(168, 169, 174, 0.5);
+    border-width: 1px;
+    cursor: pointer;
+    padding: 7px 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.header-log{
+    cursor: pointer;
+}
+
+.blackHeart {
+    width: 20px;
+    background-image:url("images/black-heart.png");
+    margin-right: 1rem;
+}
+
+.img-logo-npm{
+    height:20px;
+    margin-right: 10px
+}
+
+.container {
+    width: 50%;
+    margin: 35px auto;
+    font-size: 14px;
+    text-align: center;
+}
+
+.container-open{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.hexagon {
+    width:150px;
+}
+
+.dark-background {
+    background-color: #f5d3f45c;
+    color: black;
+}
+
+#team {
+    padding: 20px 0;
+    margin: 0 auto;
+}
+
+#team p {
+    width: 60%;
+    margin: 10px auto;
+}
+
+#team hr {
+    margin: 20px auto 30px auto;
+    width: 40%;
+}
+
+h3 {
+    text-align: center;
+    font-size: 45px;
+}
+
+.article-illustrator{
+    width:30px;
+}
+
+.h3-bring {
+    font-size: 25px;
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+    font-style: italic;
+    margin:0 20%;
+}
+
+.article-bring{
+    display: flex;
+    justify-content: space-between;
+    align:center;
+    margin-bottom: 35px;
+}
+
+.link-btn {
+    background-color: #FB3E4A;;
+    color: white;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 80px;
+    display: inline-flex;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+    cursor: pointer;
+
+}
+
+.link-btn-white {
+    background-color:unset;
+    color: black;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 80px;
+    display: inline-flex;
+    cursor: pointer;
+}
+
+.create-an-org-button{
+    display: inline-flex;
+    background-color: #020819;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    color: white;
+    cursor: pointer;
+}
+
+#general-information .container {
+	display: flex;
+	flex-direction: column;
+    text-align: left;
+}
+
+.container-article{
+    margin: 30px;
+}
+
+h4 {
+    color: #fb3e44;
+    font-weight: bold;
+}
+
+.centre-create{
+    text-align: center;
+}
+
+
+
+@media screen and (max-width: 640px) {
+
+	body {
+	  font-size: 12px;
+	}
+	.container {
+		font-size: 11px;
+	}
+	
+	h3 {
+		font-size: 25px;
+	}
+
+	.h3-bring {
+		font-size: 20px;
+	}
+
+	.link-btn {
+		font-size: 12px;
+		letter-spacing: 0.3px;
+	}
+
+	.link-btn-white {
+		font-size: 12px;
+		letter-spacing: 0.3px;
+	} 
+}
