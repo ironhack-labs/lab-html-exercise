@@ -19,7 +19,7 @@ Follow these **[guidelines](https://docs.google.com/presentation/d/1I7-9zlELCSTq
 
 ### Introduction
 
-In this exercise, you will clone the landing page of the **NPM website**. NPM stands for a Node Package Manager, and you will be using it heavily throughout this course. The version you will be cloning is the one in that you see in the following image. If you want, you can visit the [official page](https://www.npmjs.com/) to pick up some of their styles, but this is not necessary; you’ll see that the NPM page has been updated, but that’s okay. You already have all the assets for the version in the image in the starter code you will download.
+In this exercise, you will clone the landing page of the **NPM website**. NPM stands for a Node Package Manager, and you will be using it heavily throughout this course. The version you will be cloning is the one in that you see in the following image. If you want, you can visit the [official page](https://www.npmjs.com/) to pick up some of their styles, but this is not necessary; you’ll see that the NPM page has been updated, but that’s okay. You already have all the assets for this version in the images folder as well as the necessary text in the `index.html`.
 
 Our goal is to get as close as possible to this:
 
@@ -35,9 +35,7 @@ We will divide our work into two parts:
 
 So let's get started!
 
-### Starter Code
-
-The `starter-code` folder contains the `index.html` file with all the necessary text already provided. Also, in the starter-code, you can find the `images` folder with all the required images to successfully finish the exercise.
+**The assets we provided contain the `index.html` file with all the necessary text, as well as the `images` folder with all the required images to successfully finish the exercise.**
 
 ### Part I - pure HTML (no styles applied)
 
