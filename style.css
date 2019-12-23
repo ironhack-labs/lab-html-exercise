@@ -14,7 +14,7 @@ header > div {
     border-bottom: 1px solid lightgray;
   }
 
-  article{
+  article {
     text-align: center;
   }
   
@@ -47,7 +47,7 @@ header > div {
   h1 {
       padding-top: 68px;
       text-align: center;
-      font-size: 40px;
+      font-size: 70px;
       font-weight: 900;
   }
 
@@ -62,11 +62,10 @@ header > div {
   }
 
   .magnifyingGlass {
-    width: 26px;
-   
-    background-color: #f2f2f2;
-    height: 26px;
-
+    width: 17px;
+    height: 17px;
+    align-self: center;
+    padding: 6px;
   }
 
   .flex-container{
@@ -75,24 +74,29 @@ header > div {
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
-	align-content: center;
+  align-content: center;
+  overflow: hidden; 
+  
   }
 
   .nested-flex-container{
-    display: flex;
+  display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	align-items: center;
-	align-content: center;
+	align-items: stretch;
+  align-content: center;
+  background-color: #f2f2f2;
+  overflow: hidden; 
   }
 
   #srchcontainer { 
     border: transparent;
+    width: fit-content;
     }
 
   #section-one {
-    padding: 0 25px;
+    /*padding: 0 25px;*/
     height: 600px;
     align-content: center;
     background-color: rgba(232,217,217,.3);
@@ -104,18 +108,50 @@ header > div {
   #section-two {
     padding: 0 25px;
     height: 600px;
-    align-content: center;
     text-align: center;
-    align-self: center;
-    align-items: center;
-
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: center;
   }
+
+  #section-three-top-div{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      align-items: center;
+      align-content: center;
+      height: 600px;
+  }
+
+  #section-three{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-around;
+      align-items: flex-start;
+      align-content: stretch;
+    }
+
+    .section-three-article{
+      width: 250px;
+      margin: 30px;
+    }
+
+    .section-three-h{
+      color: #ED1C24;
+    }
+  
 
   #srchcontainer {
     width: 650px;
     color: rgba(0,0,0,.05);
     background-color: #f2f2f2;
     height: 26px;
+    padding-top: 5px;
 }
 
   #searchButton{
@@ -125,7 +161,29 @@ header > div {
     color: white;
     display: inline-block;
     width: 56px;
-    height: 26px;
+    height: 36px;
+    align-items: center;
+  align-content: center;
+    
+  }
+
+  #createAnOrgButton{
+    margin-top: 55px;
+    text-align: center;
+    background-color: black;
+    border: none;
+    color: white;
+    align-self: center;
+    display: inline-block;
+    width: 280px;
+    height: 40px;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    padding-top: 12px;
+  }
+
+  #createAnOrgButton a {
+    color: white;
+    align-self: center;
   }
 
   #joinButton {
@@ -133,27 +191,48 @@ header > div {
     border-style: solid;
     border-width: 1px;
     border-color: black;
-    /*padding: 14px 31px;*/
     display: inline-block;
     align-content: center;
     text-align: center;
     height: 20px;
     width: 40px;
+    padding-top: 6px;
+    margin-top: 8px;
+
   }
 
 #heading-section2{
-    text-align: center;
-    margin-top: 45px;
-    text-align: center;
-    
+  /*background-color: rgba(255,204,53,.4);*/
+  font-size: 25px;
+  align-self: center;
+  text-align: center;
+  font-weight: bold;
+  transform: translateY(130%);
 }
 
-#heading-section2-skew{
-    background-color: rgba(255,204,53,.4);
-    width: 600px;
-    /*transform: skewX(25deg); */
-    display: inline-block;
+#heading-section2-div{
+  align-self: center;
+  text-align: center;
+  /*padding: 5px 10px;*/
+  margin-top: 40px;
+  display: inline-block;
+  
+}
 
+#heading-section2-div:after {
+  content: " ";
+  position: inherit;
+  display: inline-block;
+  width: 900px;
+  height: 30px;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background: rgba(255,204,53,.4);
+  /*transform-origin: bottom left;*/
+  -ms-transform: skew(20deg);
+  -webkit-transform: skew(20deg);
+  transform: skew(20deg);
 }
 
   #loginButton {
@@ -161,12 +240,8 @@ header > div {
     padding: 15px 32px;
     display: inline-block;
     align-content: center;
+    padding-top: 6px;
   }
-
- /* #searchButtonDiv{
-    background-color: #fb3e44;
-    color: white;
-  }*/
 
   #sectionOneButtons {
     display: flex;
@@ -179,7 +254,7 @@ header > div {
   } 
 
   #sectionOneArticle {
-      margin-top: 40px;
+      margin-top: 5px;
       text-align: center;
       width: 440px;
       display: inline-block;
@@ -188,8 +263,8 @@ header > div {
   #sectionTwoArticle {
     margin-top: 40px;
     text-align: center;
-    width: 440px;
-    
+    width: 780px;
+    align-self: center;
 }
 
   #seePlansButton{
@@ -222,13 +297,15 @@ header > div {
       text-align: center;
       margin-top: 55px;
       width: 150px;
-      
-      
-
   }
 
   .smallIcon {
       width: 20px;
+  }
+
+  #joinLoginButtons{
+    width: 100px;
+    margin-left: 1rem;
   }
 
 
