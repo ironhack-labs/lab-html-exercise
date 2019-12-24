@@ -149,3 +149,50 @@ form {
     text-align: center;  
 }
 
+#bottom img {
+    width: 7.5%;
+    height: 7.5%;
+}
+
+#bottom {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid blue; /* TO DELETE */
+}
+
+#bottom > div {
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid red; /* TO DELETE */
+}
+
+/* Whats below TO DELETE  */
+#bottom > div > div {
+    border: 1px solid green;
+} 
+/* Whats above TO DELETE  */
+
+#bottom .bottom-up {
+    justify-content: space-around; /*it seems it is not working*/
+    align-content: space-around;
+}
+
+#bottom .bottom-down {
+    justify-content: center;
+    align-items: center;
+}
+
+#bottom h4 {
+    color: #ED1C24;
+}
+
+.bottom-down a {
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    width: 20%;
+    text-align: center;
+}
