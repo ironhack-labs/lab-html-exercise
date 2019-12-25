@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
     <title>NPM Clone</title>
 </head>
 <body>
     <header>
-        <div class="top">
+        <div class="upper">
             <div id = "npm"> 
                 <img class="blackheart" src="images/black-heart.png" alt="Black Heart"> 
                 <span>Nifty Penguin Magic</span> 
@@ -24,10 +25,10 @@
             </nav>
         </div>
         <div class = "lower"> 
-            <img src="images/npm-logo.png" alt="logo">
-            <form>
-                <img src="images/magnifying-glass.png" alt="search">
-                <input type="text" value="Search packages">
+            <img class ="logo" src="images/npm-logo.png" alt="logo">
+            <form class ="search">
+                <label class ="magglass"></label>
+                <input type="text" class="searchfield" value="Search packages">
                 <input type="button" value="Submit">
             </form> 
             <a href="#">Join</a>
@@ -38,8 +39,8 @@
         <h1>Build amazing things</h1>
         <article>Essential JavaScript development tools that help you go to market faster and build powerful applications using modern open source code.</article>
         <div>
-            <a href="#">See plans</a>
-            <a href="#">Join for free</a>
+            <a href="#" id="plan">See plans</a>
+            <a href="#" id="joinfree">Join for free</a>
         </div>
     </section>
 
