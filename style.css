@@ -33,14 +33,14 @@ nav {
     margin-right: 1rem;    
   }
 
-/*   --> CSS 2 The Header and the Navbar (non guided part) <--   */
+
 .nmp-logo {
     width: 50px;
     height: 25px;
 }
 
 
-/*  ???? form label color: rgba(0,0,0,.05) ???? What for do I need a label?   */
+/*  ???? form label color: rgba(0,0,0,.05) ???? Why do I need a label?   */
 .input-text {
     background-image: url(images/magnifying-glass.png);
     background-repeat: no-repeat;
@@ -58,7 +58,7 @@ nav {
 
 .join {
     border: 1px solid black;
-    padding: 5px;
+    padding: 5px 10px;
     margin-right: 10px;
     text-decoration: none;
 }
@@ -67,8 +67,6 @@ nav {
     text-decoration: none;
 }
 
-
-/* Why doesn't the form element align center as the image and the div(class=join-login) do?  */
 form {
     width: 80%;
     margin: 10px;
@@ -110,11 +108,13 @@ form {
     background-color:  #FB3B49;
     box-shadow: 8px 8px 0 rgba(251,59,73,.2);
     color: white;
+    margin-right: 10px;
 }
 
 .free {
     background-color: white;
     color: black;
+    margin-left: 10px;
 }
 
 
@@ -138,14 +138,14 @@ form {
     background-color: rgba(255,204,53,.4);
     transform: skew(9deg,0deg);
     font-style: italic;
-    width: 65%;
+    width: 45%;
     font-size: 25px;
     font-weight: bold;
     text-align: center;  
 }
 
 #middle p {
-    width: 60%;   
+    width: 40%;   
     text-align: center;  
 }
 
@@ -158,21 +158,14 @@ form {
     height: 600px;
     display: flex;
     flex-direction: column;
-    border: 1px solid blue; /* TO DELETE */
-}
+    margin-top: 30px;
+   }
 
 #bottom > div {
     height: 300px;
     display: flex;
     flex-direction: row;
-    border: 1px solid red; /* TO DELETE */
 }
-
-/* Whats below TO DELETE  */
-#bottom > div > div {
-    border: 1px solid green;
-} 
-/* Whats above TO DELETE  */
 
 #bottom .bottom-up {
     justify-content: space-around; /*it seems it is not working*/
@@ -180,8 +173,14 @@ form {
 }
 
 #bottom .bottom-down {
-    justify-content: center;
-    align-items: center;
+   /* justify-content: center;
+    align-items: center; */
+    position: relative;
+    top: 0;
+    left: 50%;
+    margin-left: -180px;
+    height: 45px;
+    line-height: 45px;
 }
 
 #bottom h4 {
