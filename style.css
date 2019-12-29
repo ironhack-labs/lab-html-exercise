@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body {
+  font-family: 'Poppins';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER ///////////////////////////////////////////// */
+header {
+    box-shadow: 0px 6px  rgb(0, 0, 0,0.1);
+}
+
+header > div {
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+    padding: 5px 10px 5px 5px;
+  }
+  
+/* NAV /////////// */
+  nav {
+    width: 600px;
+    margin: 10px 0px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav a {
+    font-size: 0.8em;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .blackHeart {
+    width: 20px;
+    margin-right: 1rem;
+  }
+
+/* SEARCH AREA ///////////////////////////////////////// */
+  .logo {
+    margin-left: 10px;
+    width: 50px;
+}
+
+/* SEARCH BAR //////////// */
+.search-area {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin: 5px 30px 5px 10px;
+    background-color: rgba(0,0,0,.05);
+}
+.search-area img {
+    width: 20px;
+    margin: 0px 10px;
+    vertical-align: middle;
+    box-sizing: border-box;
+}
+
+.search-area input {
+    outline: none;
+    background-color: rgba(0,0,0,.00);
+    width: 170px;
+    height: 40px;
+    font-family: 'Poppins';
+    margin: 0px;
+    border: none;
+    list-style: none;
+}
+
+.search-area button {
+    background-color: #fb3e44;
+    width: 80px;
+    font-family: 'Poppins';
+    outline: none;
+    color: white;
+}
+
+/* JOIN LOG IN //////// */
+.join-buttons {
+    display: flex;
+    flex-direction: row;
+    height: 32px;
+}
+
+.join-buttons button {
+    font-size: 13px;
+    background-color: white;
+    width: 70px;
+    font-family: 'Poppins';
+    color: black;
+    border: 1px solid rgba(0,0,0,.09) ;
+    margin: 0px 3px;
+}
+.join-buttons  button:focus {
+    outline: 1px solid black;
+    box-shadow: none;
+}
+
+/* SECTION 1 /////////////////////////////////////*/
+.section1 {
+    height: 430px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(232,217,217,.3);
+    padding-bottom: 40px;
+}
+
+.section1 h1 {
+    font-size: 3.6em;
+    /* font-weight: bolder; Not possible*/
+}
+
+.section1 article {
+    width: 390px;
+    text-align: center;
+}
+
+.section1 button {
+    width: 200px;
+    font-family: 'Poppins';
+    font-size: 13px;
+    font-weight: bold;
+    background-color: white;
+    color: black;
+    /* box-shadow: 8px 8px 0 rgba(251,59,73,.2); */
+    padding: 10px 25px ;
+    border: none;
+    margin: 0px 10px;
+}
+
+.section1 button:focus {
+    background-color: #FB3B49;
+    color: white;
+    outline: 0px solid black;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+}
+
+/* SECTION 2 /////////////////////////////////////*/
+.section2 {
+    height: 430px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0px;
+    
+}
+
+.section2 img {
+    width: 190px;
+}
+
+.section2 h3 {
+    font-size: 1.5em;
+    width: 650px;
+    text-align: center;
+    background-color: rgba(255,204,53,.4)
+}
+
+.section2 quote {
+    max-width: 450px;
+    font-size: 13px;
+    text-align: center;
+    color: rgba(0,0,0,.5);
+}
+
+/* SECTION 3 /////////////////////////////////////*/
+.section3 div{
+    display: flex;
+    align-content: space-evenly;
+    flex-direction: row;
+}
+
+.service-box {
+    font-size: 1em;
+    text-align: left;
+    margin: 50px 5% 0 5%;
+    padding: 20px;
+    width: 210px;
+}
+
+.service-box h4 {
+    color: #ED1C24;
+}
+
+.service-box p {
+    margin: 20px 0px;
+    font-size: 0.6em;
+}
+
+.service-box img {
+    padding-bottom: 10px;
+    width: 45px;
+}
+
+/* Create an Org /////////////// */
+.section3 button {
+    display:flex;
+    justify-content: center;
+    width: 270px;
+    font-family: 'Poppins';
+    font-size: 13px;
+    background-color: rgb(21, 21, 22);
+    color: white;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    padding: 10px 25px ;
+    border: none;
+    text-align: center;
+    margin: 40px auto 100px auto;
+}
