@@ -147,13 +147,45 @@ header img {
 
 /*Section 2=====================================================================*/
 
+#section2{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
 #section2 h2{
     background-color: rgba(255, 204, 53, .4);
     transform: skew(9deg, 0deg);
     font-style: italic;
+    width: 650px;
+    text-align: center;
+    font-size: 26px;
+}
+
+#hexagon{
+    width: 200px;
+    margin: 30px;
+    margin-top: 55px;
+}
+
+#section2 article{
+    margin-top: 10px;
+    text-align: center;
+    margin-left: 200px;
+    margin-right: 200px;
+    font-size: 12px;
+    width:580px;
 }
 
 /*Section3=========================================================================*/
+
+#section3{
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
 
 #section3 h4{
     color: #ed1c24;
@@ -163,4 +195,20 @@ header img {
     box-shadow: 8px 8px 0 rgba(128, 83, 35, .2);
     color: white;
     background-color: black;
+    margin-top: 100px;
+}
+
+#section3 img{
+    width: 30px;
+}
+
+#zero-config, #team-management, #familiar-features, #npm-audit{
+    width: 180px;
+    height: 200px;
+    margin: 20px;
+}
+
+#main{
+    display: flex;
+    justify-content: space-around;
 }
