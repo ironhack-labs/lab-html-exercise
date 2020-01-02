@@ -27,41 +27,42 @@
 </div>
 
     <div class="npm-search">
-        <h1>
+        <h2 class="npm">
             npm 
-        </h1>
+        </h2>
         <span>
             <img class="magnifyingglass"  src="images\magnifying-glass.png" alt="glass"> 
         </span> 
         <form class="searching" action="search" method="post">
-                    <input  class="packages" placeholder="Search Packages" type="text">
+                    <input placeholder="Search Packages" type="text" class="packages">
                     <button type="submit">search</button>
         </form>
-
-                <ul>   
-                    <li> <a href="join">Join</a></li>
-                    <li> <a href="log-in">Log In</a></li>
-                </ul>
+        <form class="Join" action="search" method="post">
+            <button type="submit">Join</button>
+            <input placeholder="Log in" type="text" class="login">
+            
             </div>
         </div>        
     </header>
 
     <!--section 1-->
-    <section>
-        <h2>
+    <section class="build" id="products">
+        <h1>
         Build amazing things
-        </h2>
-        <article>
-        Essential JavaScript development tools that help you go to market faster and build powerful applications using modern open source code. 
+        </h1>
+        <article class="expect">
+        Essential JavaScript development tools that help you go to market faster and build powerful applications using modern open source code.
         </article>
         <div>
         <a href="plans">See plans</a>
         <a href="Join">Join for free</a>
         </div>
+    </section>
 
         <!--section 2-->
+        <section>
         <div>
-            <img src="images\triangle-hexagon.svg" alt="hexagon">
+            <img class="hex" src="images\triangle-hexagon.svg" alt="hexagon">
             <h2>
                 Bring the best of open source to your company   
             </h2>
@@ -69,8 +70,10 @@
                 npm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it. Create an Org and get more out of the tools your team already knows and loves.     
             </article>
         </div>
+    </section>
 
         <!--section 3-->
+        <section>
         <div>
             <img src="images\zero-configuration.svg" alt="zeuro-conf">
             <h3>
