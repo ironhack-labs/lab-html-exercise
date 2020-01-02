@@ -21,20 +21,20 @@
         </nav>
     </div>
 
-  
-    <div id="div2">
 
+    <div id="npm-searchbar">
         <img class="npmLogo" src="images/npm-logo.png" alt="npm logo" />
-
-        <form action="/some-url" method="get">
-            <label> <img class="searchBar" src="images/magnifying-glass.png" alt="magnifying-glass" /></label>
-            <input type="text" name="Search" placeholder="Search packages">
-            <button type="submit">Search</button>
-        </form>
-
-        <a class="jo" href="#">Join</a>
-        <a href="#">Log In</a>
-
+        <div id="searchbar">
+            <img class="lupa" src="images/magnifying-glass.png" alt="magnifying-glass" />
+            <form class="form" action="/some-url" method="get">
+                <input class="input" type="text" name="Search" placeholder="Search packages">
+            </form>
+            <button class="button" type="submit">Search</button>
+        </div>
+        <div class="register">
+            <a class="jo" href="#">Join</a>
+            <a href="#">Log In</a>
+        </div>
     </div>
 </header>
 
@@ -55,7 +55,6 @@
     </section>
     <section id="bringthebest">
 
-
         <img class="triangle" src="images/triangle-hexagon.svg" alt="triangle hexagon">
 
         <article>
@@ -68,8 +67,9 @@
             </p>
         </article>
     </section>
+
     <section id="createAnOrg">
-        <div>
+        <div class="org-container">
             <article>
                 <img src="images/zero-configuration.svg">
                 <h4>Zero configuration</h4>
@@ -97,7 +97,7 @@
     </section>
 </body>
 <footer>
-    <h2>Create an Org </h2>
+    <a class="create" href="#">Create an Org </a>
 </footer>
 
 </html>

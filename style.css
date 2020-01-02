@@ -4,149 +4,152 @@ body {
     font-family: 'Poppins';
 }
 
-header>div {
+html {
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 25px;
+}
 
+header>div {
     padding: 0 25px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid lightgray;
-    border: none;
 }
 
 nav {
     width: 600px;
-
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    justify-content: flex-end;
-    border: none;
-    font-size: 10px;
-    margin-right: 20px;
+    justify-content: space-between;
+    align-items: center;
 }
 
 nav a {
     text-decoration: none;
     color: black;
-    padding: 7px 7px 2px 7px;
-    display: flex;
-    float: left;
-    justify-content: flex-end;
-
 }
 
 .blackHeart {
     width: 20px;
     margin-right: 1rem;
-    margin-left: 40px;
-}
-
-span {
-    font-size: 10px;
 }
 
 /* solo cambiar desde aqui */
 
-
-header .div2 {
-    display: inline;
-
+#npm-searchbar {
+    border-bottom: none;
+    margin-top:
 }
 
 .npmLogo {
-    width: 80px;
-    margin-left: 22px;
-    display: flex-start;
+    width: 110px;
+    margin-left: 20px;
 }
 
-.searchBar {
-    width: 25px;
-    display: flex;
-    align-content: center;
-}
-
-form {
+.lupa {
+    width: 50px;
+    padding: 6px 8px;
     background-color: rgba(0, 0, 0, .05);
-    color: rgba (0, 0, 0, .05);
-    display: flex;
 }
+
+#searchbar {
+    background-color: rgba(0, 0, 0, .05);
+    width: 0em;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*?????*/
 
 form input {
-    background-color: rgba(0, 0, 0, .05);
-
-}
-
-form button {
-    background-color: #fb3e44;
-    color: white;
-    display: flex;
     border: none;
-    text-align: center;
+    background-color: rgba(0, 0, 0, .05);
+    width: 1400px;
+    height: 60px;
+    font-size: 20px;
 }
 
-#div2 .jo {
-    border: 1px solid lightgrey;
+.button {
+    background-color: #fb3e44;
+    border: none;
+    font-family: 'poppins';
+    font-size: 1.4em;
+    color: white;
+    width: 500px;
+    height: 60px;
+
+
 }
 
-
-#div2 a {
-    margin: auto;
+#npm-searchbar a {
+    margin: auto 20px;
     text-decoration: none;
     color: black;
-    display: flex;
-    align-content: flex-end;
 }
 
-section {
-    margin-bottom: 100px;
+.register {
+    font-size: 1.3em;
+}
+
+.jo {
+    border: 1px solid grey;
+    padding: 10px 40px;
 }
 
 #amazingThings {
-    height: 900px;
+    height: 600px;
+    width: auto;
     background-color: rgba(232, 217, 217, .3);
-    margin: 10px 20px;
+
     padding: 100px 150px;
-    position: relative;
+    border-top: 5px solid rgba(167, 160, 160, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .text {
     font-size: 1.8em;
     text-align: center;
-    margin: 40px 200px;
+    margin-top: 20px;
+    margin-bottom: 70px;
+
 }
 
-#amazingThings div {
+#amazingThings>div {
     display: flex;
-    justify-content: center;
-    margin-top: 80px;
-    height: 60px;
-    text-align: center;
 }
 
 .seePlans {
-    width: 500px;
+    width: 400px;
+    height: 90px;
     margin-left: auto;
     margin-right: 35px;
-    padding: 75px 0;
-    font-weight: bold;
+    padding: 10px 60px;
     text-decoration: none;
     color: white;
     font-size: 2.3em;
     background-color: #FB3B49;
-    box-shadow: 8px 8px 0 rgba(251, 59, 73, .2);
+    box-shadow: 15px 15px 0 rgba(251, 59, 73, .2);
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .join {
-    width: 500px;
+    width: 400px;
+    height: 100px;
     margin-right: auto;
     margin-left: 35px;
-    padding: 75px 0;
+    padding: 10px 60px;
     font-weight: bold;
     text-decoration: none;
     color: black;
@@ -157,25 +160,16 @@ section {
     justify-content: center;
 }
 
-
-
 h1 {
-    font-size: 8em;
+    font-size: 6em;
     font-family: 'poppins Condensed';
     font-family: sans-serif;
-    text-align: center;
-    margin-bottom: 80px;
-}
-
-#amazingThings>article {
-    text-align: center;
-    font-size: 20px;
-
+    margin-bottom: 60px;
+    margin-top: 60px;
 }
 
 #bringthebest {
     height: 600px;
-    position: static;
     margin-top: 130px;
     background-color: rgba (255, 204, 53, .4);
     transform: skew (9deg, 0deg);
@@ -200,71 +194,82 @@ h3 {
     margin: 60px auto;
 }
 
-}
-
 #bringthebest>article {
     text-align: center;
-    font-size: 15px;
-    text-align: center;
-    margin-top: 20px;
-    margin-left: 250px;
-    margin-right: 250px;
+    font-size: 12px;
+    margin-top: auto 20px auto auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 #bringthebest p {
-    margin: auto 720px;
+    margin: auto 330px;
+    font-size: 2.4em;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
 }
 
 #createAnOrg {
-    position: relative;
-    margin-top: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 200px 200px;
 }
 
-#createAnOrg article {
-    margin: 40px 40px;
-    padding: auto;
+.org-container {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    line-height: 1.7;
+    max-width: 2400px;
+    margin-bottom: 100px;
+    margin-top: 300px;
+}
 
+.org-container p {
+    padding-right: 100px;
+    font-size: 1.8em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 
 #createAnOrg img {
+    display: flex;
     width: 80px;
-    margin-top: 120px;
-    margin-left: 40px;
-}
-
-
-h2 {
-    font-size: 2.5em;
-    font-family: sans-serif;
-    text-align: center;
-    color: white;
-    background-color: black;
-    width: 500px;
-    margin: auto;
-    padding: 30px 110px;
-    box-shadow: 12px 12px rgba(232, 217, 217, .3);
-
 }
 
 h4 {
     color: #ED1C24;
     font-size: 1.8em;
-    font-weight: bolder;
-    margin: 40px 40px;
 }
 
-#createAnOrg div {
+footer {
     display: flex;
-    align-items: center;
-    margin: 70px 100px;
-
-
+    justify-content: center;
+    margin-bottom: 120px;
 }
 
-#createAnOrg p {
-
-    margin: 40px 10px;
-    font-size: 1.5em;
-    padding: 0px 20px;
+.create {
+    font-size: 3em;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    background: black;
+    width: 700px;
+    padding: 30px 110px;
+    box-shadow: 12px 12px rgba(58, 35, 35, 0.3);
+    margin-bottom: 120px;
+    margin-top: 80px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
 }
