@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body {
+  font-family: 'Poppins';
+}
+
+header > div {
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+  }
+  
+  nav {
+    width: 600px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .blackHeart {
+    width: 20px;
+    margin-right: 1rem;
+  }
+
+  h1 {
+    margin: 0px;
+    font-size: 5em;
+    font-weight: 900;
+    text-align: center;
+  }
+
+  form {
+    color: rgba(0,0,0,.05);
+  }
+  input[type=text] {
+    width: 90%; 
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-right: 0px;
+    margin-left: 10px;
+    font-size: 16px;
+    background-color: rgba(0,0,0,.05);
+    background-image: url("./images/magnifying-glass.png");
+    background-position: 10px 10px; 
+    /* background-repeat: no-repeat; */
+    padding: 10px 0px 10px 0px;
+  }
+  .search {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-grow: 1;
+  }
+
+  .searchform {
+    flex-grow: 6;  
+    border-right:0px;
+    margin-right: 0px;
+  }
+
+  .search button {
+    padding: 13px;
+    margin: 10px 0px;
+    border-left: 0px;
+    background-color: #fb3e44;
+    text-align: center;
+    color: white;
+  }
+
+  .npm-logo {
+
+    font-weight: bold;
+    line-height: 18px;
+  }
+
+  .joinlink {
+    box-sizing: border-box;
+    border: 2px solid #ccc;   
+    padding: 10px 20px;
+    margin: 0px 10px 0px 0px;
+    text-decoration: none;
+    color: black;
+  }
+
+  .joinfree button{
+    font-size: 1em;
+    padding: 10px 40px;
+    margin: 20px;
+    color: black;
+    background-color: white;
+   }
+
+  .loginlink{
+    margin: 10px;
+    text-decoration: none;
+    color: black;
+  }
+
+  #plans {
+      padding: 0;
+      margin: 0 auto;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 600px;
+      background-color: rgba(232,217,217,.3);
+  }
+
+  #plans p {
+    width: 30%;
+    margin: 10px auto;
+  }
+
+  .see-plans button{
+   font-size: 1em;
+   padding: 10px 40px;
+   margin: 20px;
+   color: white;
+   background-color: #FB3B49;
+   box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+  }
+  #tool-info {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    text-align: center;
+  }
+
+  #tool-info article {
+    width: 60%;
+    margin: 10px auto;
+  }
+  #tool-info img {
+    width: 250px;
+    height: 180px;
+    align-content: center;
+  }
+  #tool-info h2{
+      width:100%;
+      transform: skew(9deg,0deg);
+      text-align: center;
+      font-size: 2em;
+      font-style: italic;
+  }
+  #tool-info mark{
+    padding: 0 30px;
+    background-color: rgba(255,204,53,.4);  
+  }
+
+  #features {
+    height: 500px;
+    margin: 30px 10%;
+  }
+  #features > div {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+  }
+
+  #features > div > article {
+    margin: 0 10px 0 10px;
+    width: 25%; 
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: left;
+  }
+
+  #features img {
+    width: 50px;
+    height: 80px;
+    align-content: center;    
+  }
+
+  #features button{
+      width: 40%;
+      text-align: center;
+      background-color: black;
+      font-size: 1em;
+      padding: 10px 40px;
+      margin: 30px 30% ;
+      color: white;   
+  }
+
+  #features h4{
+      color: red;
+      font-weight: bold;
+  }
