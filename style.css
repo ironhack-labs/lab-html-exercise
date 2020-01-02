@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body {
+  font-family: 'Poppins';
+  width: 1200px;
+  font-weight: 100;
+}
+
+/* to reset margin and padding */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* HEADER */
+
+/* section 1 */
+header > div {
+  padding: 0 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+  font-size: 15px;
+}
+
+.bhtitle{
+  padding: 7px;
+}
+
+nav {
+  width: 600px;
+  justify-content: flex-end;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+.blackHeart {
+  width: 20px;
+  margin-right: 1rem;
+}
+
+/* section 2 */
+.search {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.logo {
+  width: 60px;
+  align-items: center;
+  margin: 15px; 
+}
+
+.searchbar input {
+  color: rgba(0, 0, 0, 0.05);
+  background-color: rgba(0, 0, 0, 0.05);
+  background-image: url(images/magnifying-glass.png);
+  background-size: 17px;
+  background-position: 8px;
+  background-repeat: no-repeat;
+  font-family: 'Poppins';
+  width: 750px;
+  padding: 10px 30px;
+  margin: 5px 0;
+  border: none; 
+  align-items: center;
+  justify-content: space-around;
+}
+
+.searchbar button {
+  background-color: #fb3e44;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  align-items: center;
+  box-shadow: none;
+  font-family: 'Poppins';
+}
+
+.upper-btns {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.link-btn-join {
+  text-decoration: none;
+  color: black;
+  border: 1px solid grey;
+  padding: 5px 15px;
+  margin: 10px 15px 10px 40px;
+}
+
+.link-btn-login {
+  text-decoration: none;
+  color: grey;
+  padding: 5px;
+}
+
+/* section 3 */
+#build {
+  height: 400px;
+  background-color: rgba(232, 217, 217, 0.3);
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 75px 0;
+  margin: 0 auto;
+}
+
+.body-btn {
+  display: flex;
+  padding: 30px 0;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  font-weight: bold;
+}
+
+.text-dark {
+  text-align: center;
+  padding: 40px 0 20px 0;
+  font-size: 16px;
+}
+
+.link-btn-plans {
+  background-color: #FB3B49;
+  color: white;
+  box-shadow: 8px 8px 0 rgba(251, 59, 73, 0.2);
+  padding: 10px 50px;
+  font-weight: bold;
+  text-decoration: none;
+  align-items: center;
+  margin: 10px 40px 10px 10px;
+}
+
+.link-btn-free {
+  color: black;
+  background-color: white;
+  padding: 10px 50px;
+  text-decoration: none;
+  font-weight: bold;
+  align-items: center;
+  margin: 10px 40px 10px 10px;
+}
+
+h1 {
+  font-size: 4em;
+  text-align: center;
+  line-height: 0.5em;
+  font-weight: 1400;
+}
+
+/* section 4 */
+#hexagon {
+  height: 400px;
+  background-color: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#hexagon .article {
+  color: black;
+  font-size: 34px;
+}
+
+.triangle-hexagon {
+  width: 270px;
+  margin: 40px 0;
+}
+
+h2 {
+  font-size: 1.8em;
+  font-style: italic; 
+  font-weight: bold;
+  text-align: center;
+  line-height: 1em;
+  padding: 1px 20px;
+  background-color: rgba(255, 204, 53, 0.4);
+  transform: skew(9deg, 0deg);
+  margin: 20px 0px;
+}
+
+.text-light {
+  text-align: center;
+  font-size: 0.9em;
+}
+
+/* section 5 */
+.light-bg {
+  height: 400px;
+  display: flex;
+  justify-content: space-around;
+}
+
+#characts {
+  display: flex;
+  height: 400px;
+  justify-content: center;
+  align-items: baseline;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.container {
+  width: 270px;
+  margin: 20px 10px;
+  flex-direction: column;
+  padding: 60px 0;
+  align-items: baseline;
+  text-align: left;
+  line-height: 1.5em;
+  font-size: 0.9em;
+  justify-content: space-around;
+}
+
+h3 {
+  color: #ED1C24;
+  font-size: 1em;
+  text-align: left;
+  font-weight: 900;
+  line-height: 1.5em;
+}
+
+.container img{
+  width: 22px;
+}
+
+.link-btn-create {
+  box-shadow: 8px 8px 0 rgba(128, 83, 35, 0.2);
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  width: 80px;
+  padding: 20px 90px;
+  justify-content: center;
+  align-items: center;
+  margin: 140px 0;
+}
