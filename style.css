@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body {
+  font-family: 'Poppins';
+}
+
+/* ----- Header Section ----- */
+
+header > div {
+  padding: 0 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+}
+
+nav {
+  width: 600px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+.blackHeart {
+  width: 20px;
+  margin-right: 1rem;
+}
+
+.bottomnav{
+  display: flex;
+  margin-left: 1rem;
+  border: none;
+}
+.logo {
+  width: 60px;
+}
+
+.searchbar{
+  background-color: rgba(0,0,0,.05);
+  width: 70%;
+  height: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-grow: 2;
+  margin: auto 10px;
+}
+
+.searchbar input{
+  background-color: transparent;
+  color:black;
+  border: none;
+  flex-grow: 2;
+}
+.search{
+  width: 20px;
+  
+}
+
+.searchbar button{
+  background-color: #fb3e44;
+  color:white;
+  border: none;
+  align-self: stretch;
+  
+}
+
+.bottomnav div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.join{
+  
+  text-decoration: none;
+  color: rgba(0,0,0, 0.7);
+  border: 1px solid rgba(0,0,0,0.5);
+  padding: 2px 10px;
+  margin: 10px;
+}
+
+.login{
+  text-decoration: none;
+  color: rgba(0,0,0, 0.7);
+  margin: 10px;
+}
+
+/* ----- Jumbotron section ----- */
+
+#jumbotron{
+  height: 600px;
+  background-color: rgba(232,217,217,.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#jumbotron h1{
+  font-size: 4rem;
+}
+
+#jumbotron article{
+  width: 30%;
+  font-weight: bold;
+  text-align: center;
+}
+
+#jumbotron > div {
+  width: 30%;
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.plans{
+  background-color: #fb3b49;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 50px;
+  box-shadow: 8px 8px 0 rgba(251, 59, 73, .2);
+}
+
+.joinfree{
+  text-decoration: none;
+  font-weight: bold;
+  background-color: white;
+  color: black;
+  padding: 10px 50px;
+}
+
+/* ----- Advert section ----- */
+
+#advert{
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#advert img{
+  width: 250px;
+  margin: 30px;
+}
+
+#advert h2{
+  height: 40px;
+  width: 60%;
+  text-align: center;
+  font-size: 2rem;
+  font-style: italic;
+  font-weight: bold;
+  background-color: rgba(255,204,53,.4);
+  transform: skew(9deg,0deg);
+}
+
+#advert article{
+  width: 50%;
+  text-align: center;
+}
+
+/* ----- Features section ------ */
+
+#features{
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;  
+}
+
+.cardrow{
+  margin: 0 50px;
+  display: flex;
+  justify-content: space-evenly;
+  
+}
+
+.card{
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  
+ 
+}
+
+.card img{
+  width: 30px;
+}
+
+.card h3{
+  color: #ed1c24;
+}
+
+#features a{
+  padding: 10px 100px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  background-color: black;
+  color: white;
+  box-shadow: 8px 8px 0 rgba(128, 83, 35,.2);
+  margin: 0 auto;
+}
