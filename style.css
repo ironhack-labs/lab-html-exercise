@@ -2,8 +2,10 @@
 
 body {
   font-family: 'Poppins';
-  margin: 30px 50px ;
+  margin: 30px 50px;
   border:  1px  solid #f0f2f5;
+  width: 90%;
+  height: 90%;
 }
 
 header > div {
@@ -41,16 +43,22 @@ header > div {
 
   .searching {
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-items: space-between;
+    
   }
+
   .searching input placeholder {
     color: rgba(0,0,0,.05);  
   }
 
   .searching input {
     background-color: #E8E8E8;
-    width: 1300px;
-    height: 40px;
-  }
+    width: 800px;
+    height: 45px;
+    padding-left: 2em;
+    }
 
   .searching button {
     background-color: #fb3e44;
