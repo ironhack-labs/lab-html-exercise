@@ -143,29 +143,40 @@ nav a {
 
 #features{
     display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    text-align: center;
+    flex-direction: column;
+    padding-bottom: 30px;
 }
 
+.featcon{
+  display:flex;
+  padding: 40px;
+  margin: 20px;
+}
+
+.featcon > div{
+  margin: 20px;
+  padding: 8px;
+}
 #features h3{
   color:  #ED1C24;
+  margin-bottom: 9px;
 }
 
 #features > div img{
     height: 30px;
 }
 
-#features > div > div{
-  display: flex;
-  flex-direction: column;
-}
 
 .org{
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  width: 500px;
+  text-align: center;
   background-color:black;
   color: white;
-  padding: 8px;
-  height: 30px; 
+  box-sizing: border-box; 
+  padding: 30px;
   box-shadow: 8px 8px 0 rgba(128,83,35,.2);
 }
 
