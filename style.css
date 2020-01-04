@@ -18,7 +18,7 @@ header {
 }
 
 header > div {
-  padding: 0 25px;
+  padding: 0 25px 0px 25px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -52,19 +52,22 @@ nav a {
 }
 
 .magglass {
-  width: 20px;
-  background-image: url(images/magnifying-glass.png);
-  background-image: url();
+  display: flex;
+  height: 1.55rem;
   background-color: rgba(0,0,0,.05);
+  padding: 10px;
 }
 
 .search {
+  display: flex;
   padding: 10px;
   margin: 20px;
 }
 
 .searchfield {
-  width: 600px;
+  padding: 10px;
+  display: flex;
+  width: 1400px;
   height: 1.5rem;
   background-color: rgba(0,0,0,.05);
 }
@@ -72,13 +75,24 @@ nav a {
 #searchbutton{
   color: white;
   background-color: #FB3B49;
-  padding: 5px 20px; 
-  height: 2rem;
+  align-self: center;
+  text-align: center;
+  margin: 0 auto;
+  padding: 17px;
 }
 
 .lower {
   display: flex;
   align-items: center;
+}
+
+#ljoin{
+  border: 1px black solid;
+  padding: 9px 20px 9px 20px;
+}
+
+#login{
+  padding: 9px 20px 9px 20px;
 }
     
 #join {
@@ -137,10 +151,21 @@ nav a {
 
 #info h1{
     background-color: rgba(255,204,53,.4);
+    align-self: center;
+    width: 700px;
     transform: skew(9deg,0deg);
     font-style: italic;
 }
 
+.jl{
+  align-items: flex-end
+}
+
+#info article{
+  width: 650px;
+  align-self: center;
+  margin-top: 20px
+}
 #features{
     display: flex;
     flex-direction: column;
