@@ -46,7 +46,7 @@ Create an Org
 
             <div>
                 <img class="blackHeart" src="./images/black-heart.png" alt="black heart" />
-                <span> Nifty Penguin Magic </span>
+                <span>Nifty Penguin Magic</span>
             </div>
 
             <nav>
@@ -69,13 +69,19 @@ Create an Org
             <article>
                 <img src="./images/magnifying-glass.png" alt="glass"/>
                 <form action="/some-url" method="post">
-                    <label for="search"></label>
-                    <input style="border:none" class="form-background" type="text" id="search" name="search" placeholder="Search packages">
-                    <input class="search-button" id="search-red" type="button" value="Search">
+                    <div class="pre-search-box">
+                        <div class="search-box">
+                            <label for="search"></label>
+                            <input style="border:none" type="text"  id="input-search" name="search" placeholder="Search packages">
+                        </div>
+                        <div>
+                            <input class="search-button" id="input-button" type="button" value="Search">
+                        </div>
+                    </div>
                 </form>
             </article>
 
-            <a class="border-join" href="#" >Join </a>
+            <a class="border-join" href="#" >Join</a>
             <a href="#">Log In</a>
         </div>
 
@@ -85,10 +91,10 @@ Create an Org
 
     <section id="section-1">
 
-        <h2>Build amazing things</h2>
+        <h1>Build amazing things</h1>
 
         <article>
-            <p> Essential JavaScript development tools that help you go to market faster and build powerful applications using modern open source code. </p>
+            <p>Essential JavaScript development tools that help you go to market faster and build powerful applications using modern open source code. </p>
         </article>
 
         <div>
@@ -102,7 +108,7 @@ Create an Org
 
     <section id="section-2">
         <img class="hexagon" src="./images/triangle-hexagon.svg" alt="hexagon" />
-        <h3> Bring the best of open source to your company </h3>
+        <h3>Bring the best of open source to your company</h3>
         <article>
             <p>npm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it. Create an Org and get more out of the tools your team already knows and loves.</p>
         </article>
@@ -146,7 +152,11 @@ Create an Org
             </div>
         </div>
         
-        <a href="#" class="create-org">Create an org</a>
+        <div id="pre-anchor-div">
+            <div id="anchor-div">
+                <a href="#" class="create-org">Create an org</a>
+            </div>
+        </div>
 
     </section>
 

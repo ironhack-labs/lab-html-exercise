@@ -51,7 +51,7 @@ header > div {
 
 #lower-div > article {
     border: 2px solid black;
-    padding: 10px 10px;
+    padding: 10px 0px 10px 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -66,20 +66,6 @@ header > div {
     height: 20px;
 }
 
-.form-background {
-    background: transparent;
-    width: 850px;
-    height: 25px;
-}
-
-.search-button{
-    background: #fb3e44;
-    color: white;
-    padding: 10px 30px;
-}
-
-/* Here I ran into the red search button problem */
-
 #lower-div a {
     font-size: 1em;
     text-decoration: none;
@@ -89,6 +75,31 @@ header > div {
 .border-join {
     border: 1px solid black;
     padding: 5px 15px;
+}
+
+.pre-search-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.search-box{
+    display: flex;
+    align-items: center;
+}
+
+#input-search{
+    background: transparent;
+    width: 850px;
+    height: 25px;
+}
+
+#input-button {
+    background: #fb3e44;
+    color: white;
+    padding: 10px 30px;
+    width: 100px;
+    height: 40px;  
 }
 
 /* Section 1 css*/
@@ -102,8 +113,9 @@ header > div {
     background-color: rgba(232,217,217,.3);
 }
 
-#section-1 h2 {
+#section-1 h1 {
     font-size: 60px;
+    font-weight: 900;
     display: flex;
     justify-content: center;
 }
@@ -136,7 +148,11 @@ header > div {
 }
 
 .join-for-free {
+    padding: 10px 30px;
+    background-color: white;
     color: black;
+    border: 1px solid white;
+    font-weight: bolder;
 }
 
 /* Section 2 css*/
@@ -191,22 +207,24 @@ header > div {
     margin-left: 23px;
 }
 
-/*
-#section-3 a {
-    background-color: black;
-    color: white;
-    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
-    text-decoration: none;
-    width: 220px;
-    height: 50px;
+#pre-anchor-div{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
 }
-*/
 
-#section-3 .create-org{
+#anchor-div{
     background-color: black;
-    color: white;
     box-shadow: 8px 8px 0 rgba(128,83,35,.2);
-    text-decoration: none;
-    width: 220px;
+    width: 400px;
     height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#section-3 a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
 }
