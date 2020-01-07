@@ -79,7 +79,8 @@ nav a {
   margin-right: 1rem;
 }
 
-#resume {
+#resume,
+#general-information {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -127,4 +128,31 @@ nav a {
   background-color: white;
   font-weight: bold;
   padding: 10px 50px;
+}
+
+#general-information {
+  background-color: white;
+  justify-content: flex-start;
+  padding-top: 80px;
+}
+
+#general-information > img {
+  width: 200px;
+}
+
+#general-information > h2 {
+  width: 60%;
+  font-size: 1.9em;
+  margin-top: 60px;
+  text-align: center;
+  background-color: rgba(255, 204, 53, 0.4);
+  transform: skew(9deg, 0deg);
+  font-style: italic;
+}
+
+#general-information > article {
+  width: 52%;
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 1em;
 }
