@@ -1,10 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins");
 
-/* form label color: rgba(0,0,0,.05)
-form input color: rgba(0,0,0,.05)
-form button background color: #fb3e44
-form button letters color: white */
-
 html,
 body {
   margin: 0;
@@ -21,18 +16,41 @@ header > div {
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid lightgray;
+  height: 50px;
+}
+
+header > div:last-child {
+  box-shadow: 0 2px 2px rgba(108, 105, 105, 0.2);
 }
 
 header > div:last-child > img {
-  width: 100px;
+  width: 50px;
+}
+
+.subscribeLinks {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 180px;
+}
+
+.subscribeLinks > a {
+  cursor: pointer;
+}
+
+.subscribeLinks > a:first-child {
+  border: 1px solid black;
+  padding: 2px 20px;
 }
 
 form {
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: left;
   position: relative;
+  padding-left: 20px;
 }
 
 form > label {
@@ -41,21 +59,33 @@ form > label {
 }
 
 form > input {
-  width: 80%;
-  color: rgba(0, 0, 0, 0.05);
+  width: 88%;
   background-color: rgba(0, 0, 0, 0.05);
   border: none;
+  outline: none;
+  padding-left: 40px;
+}
+
+form > button {
+  background-color: #fb3e44;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 0.9em;
 }
 
 input::placeholder {
   font-family: "Poppins";
-  padding-left: 25px;
+  font-size: 1em;
 }
 
 label > img {
   position: absolute;
-  width: 30px;
-  left: 30%;
+  width: 18px;
+  left: 3%;
+  top: 30%;
 }
 
 nav {
