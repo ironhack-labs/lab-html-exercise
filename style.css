@@ -35,8 +35,8 @@ nav a {
     color: black;
 }
 
-.left-side-nav {
-    align-items: flex-start;
+form label, input  {
+    color: rgba(0,0,0,.05);
 }
 
 .searchBar {
@@ -46,8 +46,17 @@ nav a {
 
 .search-middle {
     background-color: lightgray;
+}
 
+.search-button {
+    background-color: #fb3e44;
+    color: white;
+    text-decoration: none;
+}
 
+.join-box {
+    border-radius: auto;
+    border-color: black;
 }
 
 h1 {
@@ -69,6 +78,14 @@ h1 {
     border: 60px;
 }
 
+#introduction a {
+    font-weight: bolder;
+    padding: 15px 60px 15px 60px;
+    margin: 30px;
+    width: 100px;
+    height: 100px; 
+}
+
 a {
     text-decoration: none;
     color: black;
@@ -78,17 +95,10 @@ a {
     background-color: #FB3B49;
     box-shadow: 8px 8px 0 rgba(251, 59, 73, 0.2);
     color: white;
-    width: 100px;
-    height: 100px;
-    padding: 15px 30px 15px 30px;
-    margin: 30px;
-    font-weight: bolder;
 }
 
 .join-button {
     background-color: white;
-    padding: 15px 30px 15px 30px;
-    font-weight: bolder;
 }
 
 article {
@@ -96,6 +106,7 @@ article {
     height: 250px;
     text-align: center;
     margin: 0 350px;
+    font-size: 20px;
 }
 
 #about {
@@ -121,20 +132,24 @@ h3 {
     background-color: black;
     color: white;
     display: flex;
-    align-self: baseline;
-}
+    width: 130px;
+    height: 50px;
+    padding: 0 100px 0 100px;
+    align-items: center;
+    text-align: center;
+}    
 
 #information {
     align-content: center;
     text-align: left;
-    height: 700px;
-    margin: 0 30px 0 30px;
-
+    height: 600px;
+    margin: 50px 60px 0 60px;
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-direction: row;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: space-around;
 }
 
 .container {
