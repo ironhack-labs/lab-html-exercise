@@ -36,48 +36,58 @@ nav a {
     color: black;
 }
 
+.logo {
+    width: 60px;
+    margin-right: 1rem;
+}
+
 form label, input  {
     color: rgba(0,0,0,.05);
-    border: none;
+    border: none; 
     background-color: #f1f1f1;
-    flex-grow: 2;
+    font-size: 15px;
 }
 
-form {
+form, .searchBar{
     background-color: #f1f1f1;
+    font-size: 20px;
+    padding-left: 5px;
 }
-
 
 .searchBar {
-    width: 20px;
-    margin-right: 1rem;
-    background-color:#f1f1f1;
+    width: 15px;
+}
 
+.main-search {
+    padding: 10px 700px 10px 19px;
 }
 
 .second-header {
+    height: 70px;
     display: flex;
-    height: 50px;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-evenly;
+	align-items: center;
+    align-content: flex-start;
 }
 
 .search-button {
     background-color: #fb3e44;
     color: white;  
     border: 1px solid #fb3e44;
-    padding: 10px 15px;
+    padding: 10px 20px 10px 20px;
 }
 
 .join-box {
     background-color: white; 
     padding: 5px 15px;   
     border: 1px solid black;
-    flex-grow: 1;
+    margin-left: 15px;
 }
 
 .logIn {
     padding: 0 15px;
-    align-self: flex-end;
-    flex-grow: 1;
 }
 
 h1 {
@@ -187,13 +197,6 @@ h3 {
     padding: 30px 50px 30px 50px;
 }
   
-
-.logo {
-    width: 50px;
-    margin-right: 1rem;
-}
-
-
 .triangle-hexagon {
     width: 250px;
 }
