@@ -5,7 +5,7 @@
   </head>
   <body>
     <header>
-      <div>
+      <div class="nav-bar-top">
         <div>
           <img
             class="blackHeart"
@@ -26,14 +26,27 @@
         </nav>
       </div>
 
-      <div>
-        <img src="images/npm-logo.png" alt="NPM Clone logo" />
-        <img src="images/magnifying-glass.png" alt="Magnifying glass" />
-        <input type="text" name="search" placeholder="Search packages" />
-        <button>Search</button>
+      <div class="nav-bar-bottom">
+        <img class="logo" src="images/npm-logo.png" alt="NPM Clone logo" />
+        <form id="search-form" method="GET" action="/search">
+          <div class="search-box">
+            <img
+              class="magnifying-glass"
+              src="images/magnifying-glass.png"
+              alt="Magnifying glass"
+            />
+            <input
+              type="text"
+              id="search-form"
+              name="search"
+              placeholder="Search packages"
+            />
+          </div>
+          <button type="submit">Search</button>
+        </form>
         <div class="login">
-          <a href="#" class="link-btn">Join</a>
-          <a href="#" class="link-btn">Log In</a>
+          <a href="#" class="link-btn-1">Join</a>
+          <a href="#" class="link-btn-2">Log In</a>
         </div>
       </div>
     </header>
@@ -46,14 +59,14 @@
           faster and build powerful applications using modern open source code.
         </p>
       </article>
-      <div class="information">
-        <a href="#" class="link-btn">See plans</a>
-        <a href="#" class="link-btn">Join for free</a>
+      <div class="join">
+        <a href="#" class="link-btn-3">See plans</a>
+        <a href="#" class="link-btn-4">Join for free</a>
       </div>
     </section>
 
     <section id="hexagon">
-      <img src="images/triangle-hexagon.svg" alt="Hexagon" />
+      <img class="hexagon" src="images/triangle-hexagon.svg" alt="Hexagon" />
       <h2>Bring the best of open source to your company</h2>
       <article>
         <p>
@@ -66,8 +79,8 @@
     </section>
 
     <section id="services">
-      <div>
-        <div>
+      <div class="service-boxes">
+        <div class="service-box">
           <img src="images/zero-configuration.svg" alt="Zero configuration" />
           <h3>Zero configuration</h3>
           <p>
@@ -75,7 +88,7 @@
             configure, set up, or manage.
           </p>
         </div>
-        <div>
+        <div class="service-box">
           <img src="images/team-management.svg" alt="Team Management" />
           <h3>Team management</h3>
           <p>
@@ -83,7 +96,7 @@
             using straightforward team management capabilities.
           </p>
         </div>
-        <div>
+        <div class="service-box">
           <img src="images/familiar-features.svg" alt="Familiar features" />
           <h3>Familiar features</h3>
           <p>
@@ -91,7 +104,7 @@
             your developers already use.
           </p>
         </div>
-        <div>
+        <div class="service-box">
           <img src="images/npm-audit.svg" alt="npm audit" />
           <h3>npm audit</h3>
           <p>
@@ -100,7 +113,7 @@
           </p>
         </div>
       </div>
-      <a href="#" class="link-btn">Create an Org</a>
+      <a href="#" class="link-btn-5">Create an Org</a>
     </section>
   </body>
 </html>
