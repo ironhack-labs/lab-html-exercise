@@ -35,8 +35,33 @@ nav a {
   margin-right: 1rem;
 }
 
+#logo {
+  display: flex;
+  align-items: center;
+}
+
+.npm-logo {
+  width: 40px;
+  height: 20px;
+}
+
+.search-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: rgba(240, 240, 240);
+  width: 100%;
+
+}
+
+form image {
+  width: 40px;
+  height: 20px;
+}
+
 form label {
   color: rgba(0,0,0,.05);
+  width: 750px;
 }
 form input{
   color: rgba(0,0,0,.05); 
@@ -44,37 +69,127 @@ form input{
 form button {
   background-color: #fb3e44;
   color: white;
+  border: none;
 }
 
-#section_one {
-  height: 600px ;
+#join {
+  border: 1px solid black;
+  color: black;
+  border-color:black ;
+  text-decoration: none;
+  padding: 5px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 10px;
+}
+
+#login{
+  color: black;
+  text-decoration: none;
+}
+
+
+.section-one {
+  height: 500px ;
   background-color: rgba(232,217,217,.3); 
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
+  flex-direction: column;
   justify-content: center;
-  align-items: stretch;
-  align-content: stretch;
+  align-items: center;
+  align-content: center; 
+}
+.section-one h1 {
+  font-weight: bolder;
+  font-size: 70px;
+}
+.section-one article {
+  width: 35%;
+  text-align: center;
+}
+.section-one div {
+  width: 35%;
+  justify-content: space-between;
+}
+
+#see {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  background-color: #FB3B49;
+  box-shadow: 3px 3px 0 rgba(251,59,73,.2);
+  border: none;
+  padding: 10px 50px 10px 50px;
   
 }
-.button {
-  background-color: #FB3B49;
-  box-shadow: 8px 8px 0 rgba(251,59,73,.2) ;
+
+#join{
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  background-color: white;
+  border: none;
+  padding: 10px 50px 10px 50px;
+  
 }
 
-#section_two {
+
+.section-two {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.triangle-hexagon {
+  width: 200px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+h1 span {
+  background-color: rgb(248, 224, 188);
+  width: 200px;
+}
+
+.section-two article {
+width: 60%;
+justify-content: center;
+align-items: center;
+align-content: center;
 
 }
 
-.heading {
-  background-color: rgba(255,204,53,.4);
 
+.section-three {
+  width: 1100px;
+  display: flex;
+  align-content: center;
+  align-items: center ;
+  justify-content: space-between;
+  flex-direction: row;
 }
 
-#section_three {
 
+
+.sectionthreeimage {
+  width: 30px;
 }
 
-.h4 {
+.section-three h4 {
   color: #ED1C24;
+}
+
+
+.create-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#create {
+  color: white;
+  text-decoration: none;
+  background-color: black;
+  padding: 13px 90px 13px 90px;
+  box-shadow: 3px 3px 0 rgba(251,59,73,.2);
 }
