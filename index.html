@@ -9,30 +9,43 @@
 
     <!-- header -->  
       <header>
-            <img src="images/black-heart.png" alt="Logo: black heart">
-            <span>Nifty Penguin Magic</span>
-      </header>
+        <div>
+          <div>
+              <img class="blackHeart" src="images/black-heart.png" alt="Logo: black heart">
+              <span>Nifty Penguin Magic</span>
+          </div>
 
-    <!-- navigation -->
-      <nav>
-          <ul>
-            <li><a href="index.html" target="_self">npm Enterprise</a></li>
-            <li><a href="/products.html" target="_self">Products</a></li>
-            <li><a href="/solutions.html" target="_self">Solutions</a></li>
-            <li><a href="/resources.html" target="_self">Resources</a></li> 
-            <li><a href="/docs.html" target="_self">Docs</a></li>
-            <li><a href="/support.html" target="_self">Support</a></li> 
-            <img src="images/npm-logo.png" alt="npm logo">
-            <!-- search form-->
-            <img src="images/magnifying-glass.png" alt="symbol of a magnifying-glass">
-            Search 
-            <li><a href="/join.html" target="_self">Join</a></li>
-            <li><a href="/login.html" target="_self">Log In</a></li>
-          </ul>
-      </nav>
+
+      <!-- navigation -->
+        <div>
+          <nav>
+            <ul>
+              <li><a href="index.html" target="_self">npm Enterprise</a></li>
+              <li><a href="/products.html" target="_self">Products</a></li>
+              <li><a href="/solutions.html" target="_self">Solutions</a></li>
+              <li><a href="/resources.html" target="_self">Resources</a></li> 
+              <li><a href="/docs.html" target="_self">Docs</a></li>
+              <li><a href="/support.html" target="_self">Support</a></li> 
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div>
+        <div>
+              <img src="images/npm-logo.png" alt="npm logo">
+              <!-- search form with button -->
+              <img src="images/magnifying-glass.png" alt="symbol of a magnifying-glass">
+              Search 
+          <div>    
+            <a href="/join.html" target="_self">Join</a>
+            <a href="/login.html" target="_self">Log In</a>
+          </div>
+        </div>
+      </div>
+    </header>
 
     <!-- section amazing things -->  
-      <section>
+      <section id="amazing-things">
         <h1>Build amazing things</h1>
         <article>Essential JavaScript development tools that help you go to market faster and build powerful applications using modern open source code.</article>
         <a href="/plans.html" target="_self">See plans</a> 
@@ -41,41 +54,40 @@
       </section>
 
     <!-- section best open source -->  
-      <section>
-         
+    <section id="open-source">
         <h2>Bring the best of open source to your company</h2>
         <article>npm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it. Create an Org and get more out of the tools your team already knows and loves.</article>
-      </section>
+    </section>
 
-    <!-- section zero configuration -->  
-      <section>
-        <h3>Zero configuration</h3>
-        Create an org, add your team, and start collaborating. Nothing to configure, set up, or manage.
-        <img src="images/zero-configuration.svg" alt="symbol of three persons linked to another">
-      </section>
+    <!-- section four features: zero configuration; team management; familiar features; npm audit -->  
+    <section id="four-features">
+      <div>
+        <article>
+          <img src="images/zero-configuration.svg" alt="symbol of three persons linked to another">
+          <h3>Zero configuration</h3>
+          <p>Create an org, add your team, and start collaborating. Nothing to configure, set up, or manage.</p>
+        </article>
+   
+        <article>
+          <img src="images/team-management.svg" alt="symbol of four rectangles on a balanced seesaw"> 
+          <h3>Team management</h3>
+          <p>Control who has access to what modules within your team namespace using straightforward team management capabilities.</p>
+        </article> 
 
-    <!-- section team management -->  
-    <section>
-        <h3>Team management</h3>
-        Control who has access to what modules within your team namespace using straightforward team management capabilities.
-        <img src="images/team-management.svg" alt="symbol of four rectangles on a balanced seesaw">
-      </section> 
-
-    <!-- section familiar features -->  
-      <section>
-        <h3>Familiar features</h3>
-        npm Orgs has 100% parity with all the public npm registry features your developers already use.
-        <img src="images/familiar-features.svg" alt="symbol of binoculars">
-      </section>   
-
-    <!-- section npm audit -->  
-      <section>
-        <img src="images/npm-audit.svg" alt="symbol of an arrow pointing to a rectangle"> 
-        <h3>npm audit</h3>
-        Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer. 
+        <article>
+          <img src="images/familiar-features.svg" alt="symbol of binoculars">
+          <h3>Familiar features</h3>
+          <p>npm Orgs has 100% parity with all the public npm registry features your developers already use.</p>
+        </article>
+ 
+        <article>
+          <img src="images/npm-audit.svg" alt="symbol of an arrow pointing to a rectangle"> 
+          <h3>npm audit</h3>
+          <p>Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer.</p>
+        </article>
         <a href="/create.html" target="_self">Create an Org</a>       
-      </section>  
-       
+      </div>  
+    </section> 
     <!-- footer/ optional --> 
     <!-- 
       <footer>
