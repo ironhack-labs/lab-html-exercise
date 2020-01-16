@@ -51,12 +51,13 @@ nav a {
 .search-icon {
     width: 30px;
     height: 100%;
-    padding-top: 3px;
+
 }
 
 .search-form {
     background-color: rgba(0, 0, 0, .05);
-    width: 80%;
+    width: 70%;
+    /** would be nice to add some media query for smaller screens **/
 }
 
 .search-form-container {
@@ -72,7 +73,7 @@ nav a {
 
 .search-form-container input,
 select {
-    background-color: rgba(0, 0, 0, .05);
+    background-color: rgba(0, 0, 0, .005);
     color: black;
     border: none;
     height: 20px;
@@ -85,8 +86,8 @@ select {
 .search-form-container button {
     color: white;
     background-color: red;
+    border: none;
     padding: 10px 20px;
-    margin-top: -10px;
     margin-left: 5px;
     font-size: 1rem;
 }
@@ -116,7 +117,7 @@ select {
     display: flex;
     justify-content: center;
     background-color: rgba(232, 217, 217, .3);
-    margin: 0 -5%;
+    margin: 0 -10%;
     text-align: center;
     height: 600px;
 }
@@ -152,6 +153,7 @@ select {
 #amazing-things button {
     background-color: #FB3B49;
     box-shadow: 8px 8px 0 rgba(251, 59, 73, .2);
+    border: none;
     color: white;
     padding: 10px;
     font-size: 1rem;
@@ -210,19 +212,21 @@ select {
 
 #four-features img {
     width: 25%;
+    max-height: 150px;
 }
 
 #four-features h3 {
     color: #ED1C24;
     font-size: 1.125rem;
-    margin: 5px 0 -5px 0;
 }
 
 #four-features button {
     box-shadow: 8px 8px 0 rgba(128, 83, 35, .2);
     background-color: black;
+    border: none;
     color: white;
     padding: 10px 30px;
+    margin-top: 30px;
     font-size: 1rem;
 }
 
