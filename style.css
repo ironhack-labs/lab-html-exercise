@@ -4,16 +4,16 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
 body {
-  font-family: 'Poppins';
-  margin: 0 5% 50px 5%;
-  font-size: 1rem;
+    font-family: 'Poppins';
+    margin: 0 5% 50px 5%;
+    font-size: 1rem;
 }
 
 h1 {
     font-size: 4rem;
 }
 
-header > div {
+header>div {
     padding: 0 25px;
     display: flex;
     justify-content: space-between;
@@ -21,23 +21,23 @@ header > div {
     border-bottom: 1px solid lightgray;
     margin: 0 -5%;
 }
-  
+
 nav {
     width: 600px;
 }
-  
+
 nav ul {
     list-style: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-  
+
 nav a {
     text-decoration: none;
     color: black;
 }
-  
+
 .black-heart {
     width: 20px;
     margin-right: 1rem;
@@ -48,13 +48,15 @@ nav a {
     margin: 15px 10px 10px 0;
 }
 
-.search-icon{
+.search-icon {
     width: 30px;
     height: 100%;
+    padding-top: 3px;
 }
 
 .search-form {
-    background-color: rgba(0,0,0,.05);
+    background-color: rgba(0, 0, 0, .05);
+    width: 80%;
 }
 
 .search-form-container {
@@ -62,26 +64,32 @@ nav a {
     flex-flow: row nowrap;
     justify-content: center;
     padding: 15px;
-  }
-  
-  .search-form-container label {
+}
+
+.search-form-container label {
     margin: 5px;
-  }
-  
-  .search-form-container input, select {
-    background-color: rgba(0,0,0,.05);
+}
+
+.search-form-container input,
+select {
+    background-color: rgba(0, 0, 0, .05);
+    color: black;
     border: none;
     height: 20px;
     outline: none;
-    padding: 3px;
+    padding: 5px;
     width: 100%;
-  }
-  
-  .search-form-container button {
+    font-size: 1rem;
+}
+
+.search-form-container button {
     color: white;
     background-color: red;
-    padding: 9px;
-  }
+    padding: 10px 20px;
+    margin-top: -10px;
+    margin-left: 5px;
+    font-size: 1rem;
+}
 
 .container {
     display: flex;
@@ -91,13 +99,23 @@ nav a {
 
 .login-join {
     align-content: flex-end;
-    margin-left: 200px;
+}
+
+.login-join a {
+    text-decoration: none;
+    color: black;
+}
+
+.join {
+    border: 1px solid black;
+    padding: 5px 20px;
+    margin-right: 5px;
 }
 
 #amazing-things {
     display: flex;
     justify-content: center;
-    background-color: rgba(232,217,217,.3);
+    background-color: rgba(232, 217, 217, .3);
     margin: 0 -5%;
     text-align: center;
     height: 600px;
@@ -127,13 +145,13 @@ nav a {
     padding: 0 30px;
 }
 
-.amazing-things-links > a {
+.amazing-things-links>a {
     color: black;
 }
 
 #amazing-things button {
     background-color: #FB3B49;
-    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+    box-shadow: 8px 8px 0 rgba(251, 59, 73, .2);
     color: white;
     padding: 10px;
     font-size: 1rem;
@@ -142,7 +160,7 @@ nav a {
 #amazing-things button a {
     color: white;
 }
- 
+
 #open-source {
     display: flex;
     justify-content: center;
@@ -159,8 +177,8 @@ nav a {
 }
 
 #open-source h2 {
-    background-color: rgba(255,204,53,.4);
-    transform: skew(9deg,0deg);
+    background-color: rgba(255, 204, 53, .4);
+    transform: skew(9deg, 0deg);
     font-style: italic;
     font-size: 2rem;
 }
@@ -186,7 +204,7 @@ nav a {
     flex-direction: column;
     align-items: flex-start;
     width: 19%;
-    padding: 0 3%; 
+    padding: 0 3%;
     margin: 0;
 }
 
@@ -197,14 +215,14 @@ nav a {
 #four-features h3 {
     color: #ED1C24;
     font-size: 1.125rem;
-    margin: -10px 0 -5px 0;
+    margin: 5px 0 -5px 0;
 }
 
 #four-features button {
-    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    box-shadow: 8px 8px 0 rgba(128, 83, 35, .2);
     background-color: black;
     color: white;
-    padding: 10px;
+    padding: 10px 30px;
     font-size: 1rem;
 }
 
