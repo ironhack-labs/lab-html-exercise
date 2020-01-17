@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,600,700,900&display=swap');
 
 /* Useful information
 form label color: rgba(0,0,0,.05)
@@ -11,11 +11,49 @@ html, body {
 }
 body {
   font-family: 'Poppins';
-  font-size: 0.8em;
+  font-size: 10px;
+  font-weight: 400;
 }
 
+h1 {
+    font-size:5em;
+    text-align:center;
+    font-weight: 700;
+  }
+  
+  h2 {
+    font-size:4em;
+    text-align:center;
+    font-weight: 700;
+  }
+  
+  h3 {
+    font-size:3em;
+    text-align:center;
+    font-weight: 600;
+  }
+  
+  h4 {
+    font-size:2em;
+    text-align:center;
+    font-weight: 600;
+  }
+  
+  h5 {
+    font-size:1.2em;
+    text-align:center;
+    font-weight: 600;
+  }
+
+  h6 {
+    font-size:1em;
+    text-align:left;
+    font-weight: 600;
+    color: #fb3e44;
+  }
+
 /* --- Header --- */
-/* First line */
+
 header > div {
     padding: 0 25px;
     display: flex;
@@ -44,32 +82,28 @@ nav ul {
 nav a {
     text-decoration: none;
     color: black;
+    font-weight: 700;
 }
 
-/* Form */
 form {
     background-color: rgba(185, 185, 185, 0.40);
-    width: 1000px;
-    height: 35px;
     display: flex;
-    justify-content: space-between; 
-    align-items: center;    
+    justify-content: flex-start; 
+    align-items: center;  
 }
-  
+
 input {
     border: none;
     background: none;
-    width: 1000px;
-    display: flex;
-    justify-content: flex-start;
-    padding: 0 1em;
+    width:1050px;
+    text-align: left;
 }
 
 button {
     color: white;
     background-color: #fb3e44;
     height: 35px;
-    padding: 0 10px;
+    padding: 0 15px;
 }
 
 .loupe {
@@ -92,4 +126,102 @@ button {
 #join {
     border: 1px solid black;
     padding: 5px 15px 5px 15px;
+    font-weight: 600;
+}
+
+/* --- Section 1 Build --- */
+#build {
+    height: 600px;
+    background-color: rgba(232,217,217,.3);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#build article {
+    width: 350px;
+    text-align: center;
+    font-size: 0.8rem;
+    margin: 0 0 30px 0;
+}
+
+.cta a {
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    font-size: 13px;
+    margin: 30px 10px;
+    padding: 10px 45px;
+    background-color: white;
+}
+
+#cta-plans {
+    background-color: #FB3B49;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+    color: white;
+}
+
+/* --- Section 2 Bring --- */
+#bring {
+    height: 600px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#bring h3 {
+    background-color: rgba(255,204,53,.4);
+    padding: 0 30px;
+    transform: skew(9deg,0deg);
+    font-style: italic;
+}
+
+#bring img {
+    width: 190px;
+    margin-bottom: 50px;
+}
+
+#bring article {
+    width: 490px;
+    text-align: center;
+}
+
+/* --- Section 3 Create --- */
+
+#create {
+    height: 600px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#create article {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#create img {
+    width: 20px;
+}
+
+#create div {
+    width: 150px;
+    margin: 0 50px;
+}
+
+.create-btn {
+    background-color: black;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    color: white;
+    width: 100px;
+    padding: 15px 100px;
+    text-decoration: none;
+    font-weight: 600;
+    text-align: center;
+    font-size: 13px;
 }
