@@ -1,11 +1,40 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
+*{
+  margin:0;
+  padding:0;
+}
+
 body {
   font-family: 'Poppins';
 }
 
+
+h1{
+  font-size: 4em;
+  font-weight: 600;
+}
+
+h2{
+  font-size: 2.2em;
+  font-weight: bold;
+  background-color: rgba(255,204,53,.4);
+  width: 63%;
+  text-align: center;
+  margin-top: 50px;
+  transform: skew(9deg,0deg);
+  font-style: italic;
+}
+
+h3{
+  color: #ED1C24;
+  font-size: 1em;
+  margin-bottom: 20px;
+  display: flex;
+}
+
 header > div {
-    padding: 0 25px;
+    padding: 20px 25px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -34,7 +63,7 @@ header > div {
   }
 
   .search-bar-container{
-      padding: 5px 25px;
+      padding: 15px 25px;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -47,9 +76,11 @@ header > div {
 
   .search-bar{
       background-color: rgba(0,0,0,.05);
-      width: 750px;
+      width: 1000px;
+      height: 40px;
       display:flex;
       align-content: center;
+      align-items: center;
   }
 
   .search-bar input{
@@ -61,7 +92,8 @@ header > div {
   .search-bar > button{
      background-color: #fb3e44;  
      color: white;   
-     padding: 0 15px;
+     font-size: 0.7em;
+     padding: 13px 15px;
   }
 
   .search-bar img{
@@ -88,4 +120,86 @@ header > div {
   #section-1{
       height: 600px;
       background-color: rgba(232,217,217,.3);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
   }
+  
+
+
+#section-1 article{
+  width: 30%;
+  text-align: center;
+  margin: 40px 0;
+}
+
+#section-1 a{
+  text-decoration:none;
+  padding: 15px 50px;
+  margin: 0 20px;
+  font-weight: bold;
+}
+
+.seePlans-btn{
+  background-color: #FB3B49;
+  color: white;
+  box-shadow: 6px 6px rgba(251,59,73,0.2);
+}
+
+.joinFree-btn{
+  background-color: white;
+  color: black
+}
+
+#section-2{
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#section-2 img{
+  height: 30%;
+}
+
+#section-2 article{
+  width: 53%;
+  text-align: center;
+  margin: 40px 0;
+}
+
+
+#section-3{
+  height: 400px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#section-3 img{
+  width:10%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.advantages-img{
+  height: 40px;
+}
+
+.advantages{
+  width: 17%;
+  margin:0 20px;
+}
+
+#section-3 a{
+  text-decoration: none;
+  color:white;
+  background-color: black;
+  box-shadow:8px 8px 0 rgba(128,83,35,.2);
+  padding:10px 100px;
+}
