@@ -16,7 +16,7 @@
         <div>
             <div>
                 <img id="heart" src="./images/black-heart.png">
-                <span id="text-logo">Nifty Penguin Magic</span>
+                <span id="text-logo">New PHP Menace</span>
             </div>
             <nav>
                     <ul>
@@ -32,16 +32,22 @@
 
         <!-- div for search bar and some buttons -->
         <div>
+        <div id="inputOuter" class="flex">
             <img id="logo" src="./images/npm-logo.png">
-            <img id="glass" src="./images/magnifying-glass.png">
-            <form action="" method="POST">
-                <input type="text" placeholder="Search Packages">
-                <input type="button" value="Search">
-            </form>
-            <div id="register-buttons">
-                <a href="">Join</a>
-                <a href="">Log In</a>
-            </div>
+                <form id="input-form" class="flex" action="" method="POST">
+                    <div id=searchbar>
+                        <span><img id="glass" src="./images/magnifying-glass.png"></span>
+                        <input id="s-inner" type="text" placeholder="Search Packages">
+                    </div>
+                    <input id="searchButton" type="button" value="Search">
+                </form>
+
+            
+        </div>
+        <div id="register-buttons">
+            <a style="border: 1px solid darkgrey; padding: 10px;" href="">Join</a>
+            <a href="">Log In</a>
+        </div>
         </div>
 
     </header>
