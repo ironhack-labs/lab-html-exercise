@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
-/*form label color: rgba(0,0,0,.05)
-form input color: rgba(0,0,0,.05)
-form button background color: #fb3e44
-form button letters color: white */
-
 body {
   font-family: 'Poppins';
 }
@@ -55,10 +50,11 @@ header > div {
   .search-bar {
       background-color:rgba(0,0,0,.05) ;
       display: flex;
-      justify-content: flex-end;
+      justify-content: flex-start;
       align-items: center;
       width: 100%;
-      margin: 0 10px;
+      height: 40px;
+      margin-left: 10px;
   }
 
   .search-bar form #search {
@@ -68,7 +64,7 @@ header > div {
     width: 100%;
   }
 
-  .search-bar form #search-btn {
+  #search-btn {
       font-family:'Poppins';
       color: white;
       background-color: #fb3e44;
@@ -77,10 +73,6 @@ header > div {
       padding: 10px 14px;
   }
 
-.search-bar form {
-    display: flex;
-    justify-content: space-between;
-}
 
 .btn-container {
     width: 15%;
@@ -101,4 +93,114 @@ header > div {
     color: black;
     text-align: center;
     padding: 3px 15px;
+}
+
+#section-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(232,217,217,.3);
+  height: 600px;
+}
+
+#section-1 h1 {
+  font-size: 5em;
+}
+
+#section-1 .text {
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.section-1 article {
+  margin-bottom: 20px;
+  width: 30%;
+}
+
+#section-1 .btn-container-2 {
+  width: 25%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  margin: 20px;
+}
+
+#section-1 #see-plans {
+  background-color: #FB3B49;
+  text-decoration: none;
+  color: white;
+  font-size: 1.4em;
+  padding: 10px 30px;
+  box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+}
+
+#section-1 #join-free {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5em;
+  padding: 10px 30px;
+}
+
+#section-2 div{
+  width: 200px;
+}
+
+#section-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+}
+
+#section-2 article {
+  width: 35%;
+  text-align: center;
+}
+
+#section-2 h2 {
+  font-size: 2em;
+  font-style: italic;
+  background-color: rgba(255,204,53,.4);
+  transform: skew(9deg,0deg);
+  padding: 0 20px;
+}
+
+#section-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 600px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.service-box-img {
+  width: 30px;
+}
+
+.service-box {
+  width: 20%;
+  margin: 20px;
+}
+
+.service-box h3 {
+  color: #ED1C24;
+}
+
+#section-3 a {
+  color:white;
+  background-color: black;
+  width: 25%;
+  font-size: 1.2em;
+  text-align: center;
+  text-decoration: none;
+  padding: 20px 0;
+  box-shadow: 8px 8px 0 rgba(128,83,35,.2);
 }
