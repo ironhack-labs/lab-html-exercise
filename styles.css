@@ -15,7 +15,7 @@ a {
 header > div {
     padding: 0 25px;
     display: flex;
-    /* justify-content: space-between; */
+    justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid lightgray;
   }
@@ -44,11 +44,45 @@ header > div {
   /* Search bar */
 
   .search_bar {
-    height:50px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    height:60px;
   }
 
-  .search_bar > img {
-    width: 50px;
+  .npm_logo {
+    width: 70px;
+  }
+
+  .magnifying_glass {
+    width:25px;
+    margin: 0 20px;
+  }
+
+  .search_bar > form {
+    display: flex;
+    align-items: center;
+    margin:0;
+    width:85%;
+    height:80%;
+    background-color: rgba(0,0,0,.05);
+    font-size: 1rem;
+  }
+
+  .search_bar input[type="text"]{
+    height: 80%;
+    width: 90%;
+    border:0;
+    background-color: rgba(0,0,0,0);
+  }
+
+  .search_btn {
+    margin:0;
+    width:10%;
+    height:100%;
+    background-color: #fb3e44;
+    color: white;
+    cursor: pointer;
   }
 
   /* Section one */
@@ -65,7 +99,6 @@ header > div {
   }
 
   .section_one > h1 {
-      /* width:70%; */
       font-size: 5rem;
       font-weight: 800;
   }
@@ -116,6 +149,11 @@ header > div {
     
   }
 
+  .section_two > article {
+    width: 50%;
+    text-align: center;
+  }
+
   .section_two > img {
     width: 300px;
   }
@@ -138,5 +176,18 @@ header > div {
   }
 
   .box div {
-    width:23%;
+    width:20%;
+  }
+
+  .box h2 {
+    color: #ED1C24;
+  }
+
+  .create_org_btn {
+    background-color:black;
+    color:white;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    margin: 50px 20px;
+    padding: 10px 100px;
+
   }
