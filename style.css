@@ -7,7 +7,7 @@
 
 body {
     font-family: "Poppins";
-    padding:30px;
+    padding:30px 60px;
 }
 
 header > div {
@@ -39,9 +39,13 @@ header > div {
     margin-right: 1rem;
   }
 
+  #header-nav, #header-search {
+      padding: 10px 35px 10px 25px;
+  }
+
   #header-search {
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between
   }
 
   #header-search img {
@@ -82,17 +86,23 @@ header > div {
       
   }
 
+  #header-btns{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 150px;
+  }
+
   .small-btn {
       text-decoration: none;
       color: black;
-      padding: 5px 10px;
-      margin: 0 5px;
   }
 
   #join {
       border: 1px solid;
+      padding: 5px 20px;
   }
-  #top, #mid {
+  #top, #mid, #bottom {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -118,7 +128,7 @@ header > div {
   }
 
   .topSection-btns {
-      width: 37%;
+      width: 38%;
       padding: 45px 0;
       display: flex;
       justify-content: space-between;
@@ -161,4 +171,44 @@ header > div {
       text-align: center;
       padding: 45px 0;
       width: 970px;
+  }
+
+  #bottom {
+      width: 100%;
+  }
+
+  .small-icon {
+      width: 45px;
+  }
+
+  #feat {
+      display: flex;
+      justify-content: space-around;
+      align-items: baseline;
+      padding: 95px;
+  }
+
+  .features {
+      padding: 5px 25px;
+      width: 19%;
+  }
+
+  .features h3 {
+      color: #ed1c24;
+      margin-bottom: 30px;
+  }
+
+  .features p {
+      font-size: 20px;
+  }
+
+  #bottom button {
+      background-color: #000;
+      color: #fff;
+      font-size: 20px;
+      font-weight: bold;
+      padding: 20px 200px;
+      margin-bottom: 25px;
+      border: none;
+      box-shadow: 8px 8px 0 rgba(128, 83, 35, 0.2);
   }
