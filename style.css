@@ -92,14 +92,16 @@ header > div {
   #join {
       border: 1px solid;
   }
+  #top, #mid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-around;
+  }
 
   #top {
       height: 600px;
       background-color: rgba(232, 217, 217, 0.3);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      align-content: space-around;
   }
 
   #top h1 {
@@ -139,4 +141,24 @@ header > div {
   .transparent-btn {
       background-color: #fff;
       color: #000;
+  }
+
+  #mid img {
+      height: 290px;
+      padding: 90px 0;
+  }
+
+  #mid h2 {
+      font-size: 45px;
+      background-color: rgba(255, 204, 53, 0.4);
+      padding: 0px 55px;
+      transform: skew(9deg, 0deg);
+      font-style: italic;
+  }
+
+  #mid article {
+      font-size: 20px;
+      text-align: center;
+      padding: 45px 0;
+      width: 970px;
   }
