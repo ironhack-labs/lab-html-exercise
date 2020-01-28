@@ -33,12 +33,13 @@ Create an Org
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>npm-clone</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <div id="header-nav">
             <div class="heart">
-                <img src="./images/black-heart.png" alt="black-heart" class="backHeart">
+                <img src="./images/black-heart.png" alt="black-heart" class="blackHeart">
                 <span>Nifty Penguin Magic</span>
             </div>
 
@@ -55,17 +56,16 @@ Create an Org
         </div>
 
         <div id="header-search">
-            <img src="./images/npm-logo.png" alt="npm-logo">
+            <img src="./images/npm-logo.png" alt="npm-logo" id="logo">
 
-            <img src="./images/magnifying-glass.png" alt="magnifying-glass">
-
-            <form action="/php" class="search">
-                <input type="search" name="search" id="search-bar" placeholder="Search packages">
-                <button type="submit">Search</button>
+            <form class="search">
+                <label for="search"> <img src="./images/magnifying-glass.png" alt="magnifying-glass" id="search-icon"> </label>
+                <input type="text" name="search" id="search-bar" placeholder="Search packages">
+                <button type="submit" name="search">Search</button>
             </form>
 
             <div id="header-btns">
-                <a href="#" class="small-btn">Join</a>
+                <a href="#" class="small-btn" id="join">Join</a>
                 <a href="#" class="small-btn">Log In</a>
             </div>
         </div>
@@ -104,7 +104,7 @@ Create an Org
     </section>
 
     <section id="bottom">
-        <div>
+        <div class="features">
             <img src="./images/zero-configuration.svg" alt="zero-configuration">
 
             <h3>
@@ -116,7 +116,7 @@ Create an Org
             </p>
         </div>
 
-        <div>
+        <div class="features">
             <img src="./images/team-management.svg" alt="team-management">
 
             <h3>
@@ -128,7 +128,7 @@ Create an Org
             </p>
         </div>
 
-        <div>
+        <div class="features">
             <img src="./images/familiar-features.svg" alt="familiar-features">
 
             <h3>
@@ -140,8 +140,8 @@ Create an Org
             </p>
         </div>
 
-        <div>
-            <img src="./images/npm-audit.svg" alt="npm-audit">
+        <div class="features">
+            <img src="./images/npm-audit.svg" alt="npm-audit">  <!--58px x 45px -->
 
             <h3>
                 npm audit
@@ -152,7 +152,7 @@ Create an Org
             </p>
         </div>
 
-        <button id="create">Create an Org</button>
+        <button id="create" type="submit">Create an Org</button>
     </section>
 </body>
 </html>
