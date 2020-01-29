@@ -1,8 +1,28 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,900&display=swap');
 
 body, a {
   font-family: 'Poppins';
   text-decoration: none;
+}
+
+#build {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 600px;
+    justify-content: center;
+    background-color: rgb(248 244 244);
+}
+
+.top-section-container {
+ 
+    margin: 0 35% 40px 35%;
+}
+
+h1 {
+    font-size: 70px;
+    font-weight: black;
+    
 }
 
 header > div {
@@ -47,7 +67,7 @@ header > div {
 
   .search-container {
       display: flex;
-      /* justify-content: space-evenly; */
+      /* justify-content: space-between; */
       background-color: rgb(242, 242, 242);
       width: 80%;
   }
@@ -61,12 +81,12 @@ header > div {
 
  .logo-search-bar {
      padding: 10px 25px;
-     justify-content: space-between;
+     /* justify-content: space-between; */
  }
 
  .search-container button {
      color: white;
-     background-color: black;
+     background-color: #fb3e44;
      padding-left: 2rem;
      padding-right: 2rem;
      font-family: 'Poppins';
@@ -87,4 +107,24 @@ header > div {
 
  .join-button {
      border: 1px solid lightgray;
+ }
+
+ .plans-button {
+    color: white;
+    background-color: #fb3e44;
+    padding: 1rem 3rem;
+    font-family: 'Poppins';
+    font-size: 14px;
+    margin: 20px;
+    box-shadow: 7px 7px 4px pink;
+ }
+
+ .freejoin-button {
+     color: black;
+     background-color: white;
+     padding: 1rem 3rem;
+     font-family: 'Poppins';
+     font-size: 14px;
+     margin: 20px;
+     
  }
