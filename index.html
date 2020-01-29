@@ -2,40 +2,46 @@
 <html>
 
     <head>
+        <link rel="icon" type="image/png" href="https://static.npmjs.com/58a19602036db1daee0d7863c94673a4.png">
         <title>NPM Clone</title>
+        <link rel="stylesheet" type="text/css" href="./styles.css">
     </head>
 
     <header>
+        <div>
+            <div>
+                <img class="blackHeart" src="./images/black-heart.png" alt='black-heart'>
+                <span>Nifty Penguin Magic</span>
+            </div>
 
-        <div>
-            <img src="./images/black-heart.png" alt='black-heart'>
-            <span>Nifty Penguin Magic</span>
+            <nav>
+                <ul>
+                    <li><a href="#">Enterprise</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Solutions</a></li>
+                    <li><a href="#">Resources</a></li>
+                    <li><a href="#">Docs</a></li>
+                    <li><a href="#">Support</a></li>
+                </ul>
+            </nav>
         </div>
-
-        <nav>
-            <ul>
-                <li>npm Enterprise</li>
-                <li>Products</li>
-                <li>Solutions</li>
-                <li>Resources</li>
-                <li>Docs</li>
-                <li>Support</li>
-            </ul>
-        </nav>
-
-        <div>
-            <img src="./images/npm-logo.png" alt='npm-logo'>
-        </div>
-        <div>
-            <label for="site-search"><img src="./images/magnifying-glass.png" alt='magnifying-glass'></label>
-            <input type="search" id="site-search" name="q"
-            aria-label="Search packages">
-            <button>Search</button>
-        </div>
-        <div>
-            <a href="#">Join</a>
-            <a href="#">Log In</a>
-        </div>
+        
+            
+       
+        <div class="logo-search-bar">
+            <img class='npm-logo' src="./images/npm-logo.png" alt='npm-logo'>
+            <span class="search-container">
+                <label for="site-search"><img class="mag-glass" src="./images/magnifying-glass.png" alt='magnifying-glass'></label>
+                <input type="search" id="site-search" name="q"
+                aria-label="Search packages" placeholder="Search packages">
+                <button>Search</button>
+            </span>
+            <span class="join-login-buttons">
+                <a class='join-button' href="#">Join</a>
+                <a class="login-button" href="#">LogIn</a>
+            </span>
+        </div>        
+               
     </header>
 
     <body>
