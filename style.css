@@ -28,14 +28,19 @@ nav a {
     color: black;
   }
 
+h1{
+  font-size: 70px;
+}
+
 .npm-logo{
       width: 70px;
   }
 
 .magnifying-glass{
       width: 28px;
-      position: fixed;
+      position: static;
       margin-top: 10px;
+      height: 30px;
   }
   
 .blackHeart {
@@ -94,3 +99,114 @@ nav a {
     margin: 0px;
     font-size: 1.3em;
     }
+
+#section-1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 600px;
+  background-color: #e8d9d9;
+}
+
+#section-1 article{
+  width: 400px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+#section-1 button{
+  margin: 1em 1em;
+  font-size: 1.3em;
+  font-weight : bold;
+  margin-top: 2em;
+}
+
+.see-plans{
+  background-color: #FB3B49;
+  box-shadow: 8px 8px 0 #fb3b49;
+  color: white;
+  text-decoration: none;
+  padding: 10px 40px;
+  margin-top: 200px;
+}
+
+.join-free{
+  background-color: #fff;
+    color: #000;
+    box-shadow: none;
+    border: 1px solid rgba(138,138,138,.06);
+    padding: 10px 40px;
+    margin-top: 200px;
+  }
+
+#section-2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 5em;
+}
+
+#section-2 img{
+  margin: 5em;
+  max-width: 16rem;
+}
+
+#section-2 heading{
+  background-color:  rgba(255,204,53,.4);
+  transform: skew(9deg,0deg);
+  font-style: italic;
+  padding: 0 30px;
+  font-size: 1.5em;
+}
+
+#section-2 article {
+  box-sizing: border-box;
+  max-width: 780px;
+  text-align: center;
+  margin-top: 1em;
+}
+
+.boxes{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 2em 7em;
+}
+
+.boxes-set {
+  box-sizing: border-box;
+  margin: 15px 0;
+  width: 20%;
+}
+
+#section-3 img {
+  width: 40px;
+}
+
+#section-3 h3{
+  color: #ED1C24;
+}
+
+.create-button{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+}
+
+.create{
+  padding: 20px;
+  font-size: 1.3em;
+  width: 450px;
+  font-weight: 500;
+  text-align: center;
+  background-color: black;
+  color: white;
+  border: 0;
+  box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+  margin-bottom: 4em;
+}
