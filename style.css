@@ -4,7 +4,7 @@ body {
   font-family: 'Poppins';
 }
 
-header>div {
+header>.nav {
   padding: 0 25px;
   display: flex;
   justify-content: space-between;
@@ -28,6 +28,24 @@ nav a {
   color: black;
 }
 
+.logoSearchButtons {
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0 0 0 25px;
+}
+
+.searchBarButton {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: 85%;
+  min-width: 0px;
+  max-width: 1900px;
+}
+
 .blackHeart {
   width: 20px;
   margin-right: 1rem;
@@ -35,43 +53,123 @@ nav a {
 
 .logo {
   width: 70px;
+  display: flex;
 }
 
 .searchIcon {
-  width: 15px;
+  width: 30px;
+  margin: 5px;
 }
 
 .searchBar {
   background: rgba(0,0,0,.05);
-  width: 400px;
+  padding: 3px 0 3px 3px;
+  width: 100%;
+  margin: 15px 0 15px 15px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
 
 #searchForm {
-
+ width: 100%;
+ height: 40px;
 }
 
 #searchForm input {
   border: none;
   background: none;
+  width: 100%;
+  height: 40px;
+  font: 400 16px Poppins;
 }
 
 .searchButton {
   border: none;
   background: #fb3e44;
   width: 100px;
-  height: 40px;
+  height: 50px;
   color: white;
+  border: 1px solid darkgrey;
+  font: 400 16px Poppins;
 }
 
 .joinLogIn {
   display: flex;
-  justify-content: space-evenly;
   align-items: center;
+  margin-left: 5px;
+ 
+}
+
+.joinLogIn #join {
+  border: 2px solid darkgrey;
 }
 
 .joinLogIn a {
-  border: 2px solid black;
+  width: 100px;
+  padding: 3px;
+  height: 40px;
+  margin: 5px;
+  display:flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-decoration: none;
+  color: darkslategray;
+}
+
+#build-amazing-things {
+  background: rgba(232,217,217,.3);
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#build-amazing-things h1 {
+  font-size: 55px;
+  text-align: center;
+  font-weight: 600;
+  width: 600px;
+  margin: 10px 0;
+}
+
+#build-amazing-things article {
+  width: 400px;
+  height: 100px;
+  padding: 5px;
+  font-weight: 550;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.see-plans-join {
+  width: 400px;
+  display: flex;
+  align-items: space-evenly;
+  flex-direction: row;
+  margin-top: 10px;
+}
+
+.see-plans-join a {
+  font-weight: 600;
+  width: 200px;
+  padding: 3px;
+  height: 50px;
+  margin: 5px;
+  display:flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+}
+
+#see-plans {
+  background: #fb3b49;
+  box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+  color: white;
+
 }

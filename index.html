@@ -9,7 +9,7 @@
 
 <body>
     <header>
-        <div>
+        <div class="nav">
             <div>
                 <img class="blackHeart" src="images/black-heart.png" alt="black heart" />
                 <span> Nifty Penguin Magic </span>
@@ -25,29 +25,36 @@
                 </ul>
             </nav>
         </div>
-        <div>
+        <div class="logoSearchButtons">
             <!-- add logo, search bar and buttons (or links and style them as buttons later)        -->
+            <div class="searchBarButton">
+                <img class="logo" src="images/npm-logo.png" alt="logo" />
 
-            <img class="logo" src="images/npm-logo.png" alt="logo" />
-            <img class="searchIcon" src="images/magnifying-glass.png" alt="magnifying glass" />
-            <form><input type="search" name="search" placeholder="Search packages"></form>
-            <button type="submit">Search</button>
+                <div class="searchBar">
+                    <img class="searchIcon" src="images/magnifying-glass.png" alt="magnifying glass" />
+                    <form action="" method="" id="searchForm">
+                        <input type="search" name="search" placeholder="Search packages">
+                </div>
+
+                <button type="submit" class="searchButton">Search</button>
+                </form>
+            </div>
+
             <!-- add Sign up and Sign In anchor tags-->
-            <div>
-                <a href="#"> Join </a>
+            <div class="joinLogIn">
+                <a href="#" id="join"> Join </a>
                 <a href="#"> Log in </a>
             </div>
         </div>
     </header>
-    <section id="1-build-amazing-things">
+    <section id="build-amazing-things">
         <h1>Build amazing things</h1>
         <article>
             Essential JavaScript development tools that help you go to market faster and build powerful applications
-            using
-            modern open source code.
+            using modern open source code.
         </article>
-        <div>
-            <a href="#"> See plans </a>
+        <div class="see-plans-join">
+            <a href="#" id="see-plans"> See plans </a>
             <a href="#"> Join for free </a>
         </div>
     </section>
