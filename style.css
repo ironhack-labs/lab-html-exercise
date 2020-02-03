@@ -31,44 +31,81 @@ header > div {
     width: 20px;
     margin-right: 1rem;
   }
+.npmlogo {
+  width: 80px;
+  height: auto;
+}
+.magnifying-glass {
+  width: 20px;
+  height: auto;
+  background-color: rgba(0,0,0,.05);
+  padding: 7px 10px;
+}
+#buttons {
+  height: 50px;
+}
+#buttons input {
+  width: 950px;
+  background-color: rgba(0,0,0,.05);
+  padding: 10px;
+  border: none;
+}
+#buttons button {
+  color:white;
+  background-color: #fb3e44;
+  border: 1px solid #fb3e44;
+  padding: 10px;
+}
+#buttons a {
+  font-size: 13px;
+  text-decoration: none;
+  color: black;
+}
 #up-section{
-    height: 600px;
-    background-color: rgba(232, 217, 217, .3);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-.plans{
-    box-shadow: 8px 8px 0 rgba(251, 59, 73, .2);
-    text-decoration: none;
-    color: white;
-    background-color: #FB3B49;
-    padding: 5px 35px;
-    text-decoration: none;
-    display: flex;;
-    justify-content: left;
-}
-.join{
-    text-decoration: none;
-}
-.search-bar {
-    width: 50px;
-}
-#up-section div {
-    border: 5px solid #FB3B49;
-    padding: 5px 35px;
-    flex-direction: row;
+  height: 600px;
+  background-color: rgba(232, 217, 217, .3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 #up-section h1{
-    border: 5px solid brown;
     font-size: 75px;
+    font-weight: bold;
 }
 #up-section > article {
-    border: 5px solid yellow;
-    margin: 25px;
-    width: 450px;
-    text-align: center;;
+    width: 475px;
+    height: auto;
+    padding: 5px 0px 20px 0px;
+    text-align: center;
+    font-size: 20px;
+}
+#up-section div {
+  padding: 5px 40px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: space-between;
+}
+.join {
+  margin: 15px;
+  padding: 10px 55px;
+  text-decoration: none;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+}
+.plans{
+  margin: 15px;
+  box-shadow: 8px 8px 0 rgba(251, 59, 73, .2);
+  color: white;
+  background-color: #FB3B49;
+  padding: 10px 55px;
+  text-decoration: none;
+  display: flex;;
+  justify-content: left;
 }
 #mid-section {
     height: 600px;
@@ -78,30 +115,62 @@ header > div {
     flex-direction: column;
 }  
 #mid-section img {
-    height: 150px;
+    height: 200px;
     width: auto;
+    margin-bottom: 25px;
 }
 #mid-section h3 {
   font-size: 35px;
+  background-color: rgba(255,204,53,.4);
+  transform: skew(9deg,0deg);
+  font-style: italic;
+  padding: 0px 40px;
 }
 #mid-section > article {
   text-align: center;
   width: 675px;
   font-size: 14px;
 }
-#footer-section {
-  height: 600px;
-  width: auto;
+#footer-section .table{
+  margin: 50px 80px;
   display: flex;
-  justify-content: center;
   flex-direction: row;
   align-items: flex-start;
-  justify-content: space-evenly
+  justify-content: space-evenly;
 }
 #footer-section img {
   height: 25px;
 }
 #footer-section h4 {
   color: #ED1C24;
-  border: 1px solid brown;
+  text-align: justify;
 }
+#footer-section .zero-configuration {
+  margin: 0px 35px 0px 0px;
+}
+#footer-section .team-management {
+  margin: 0px 0px 0px 40x;
+}
+#footer-section .familiar-features {
+  margin: 0px 0px 0px 40px;
+}
+#footer-section .npm-audit {
+  margin: 0px 0px 0px 40px;
+}
+#footer-section .create {
+  display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+  align-content: stretch;
+  margin-bottom: 25px;
+}
+#footer-section a {
+  text-decoration: none;
+  padding: 20px 150px;
+  box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+  color: white;
+  background-color: black;
+}
+
