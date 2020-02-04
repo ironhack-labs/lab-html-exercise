@@ -1,0 +1,224 @@
+/* ------Font family------- */
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+/* General global style rules */
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins';
+}
+
+.debug {
+  border: 1px solid red;
+  z-index: 10;
+}
+
+/* ------Main style rules------  */
+
+/* 
+form label color: rgba(0,0,0,.05)
+form input color: rgba(0,0,0,.05)
+form button background color: #fb3e44
+form button letters color: white
+ */
+
+/* header */
+header > div {
+  padding: 0 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+}
+
+nav {
+  width: 600px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+.blackHeart {
+  width: 20px;
+  margin-right: 1rem;
+}
+
+header > div.bottom-nav {
+  padding: 5px 25px;
+}
+
+#npm-logo {
+  left: 0.25rem;
+  position: relative;
+  width: 50px;
+}
+
+.magnifying-glass {
+  left: 1rem;
+  position: relative;
+  width: 18px;
+}
+
+form {
+  right: 1rem;
+  position: relative;
+  width: 1150px;
+}
+
+.bottom-nav input {
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 8px 0;
+  width: 1020px;
+}
+
+.bottom-nav .submit-btn {
+  background-color: #fb3e44;
+  color: #ffffff;
+  height: 15px;
+  right: 4px;
+  padding: 5px 8px 7px 8px;
+  position: relative;
+  text-decoration: none;
+  width: 50px;
+}
+
+.join-btn {
+  border: 1px solid rgb(201, 200, 200);
+  color: #000000;
+  height: 30px;
+  letter-spacing: 0.5px;
+  margin: 10px;
+  padding: 3px 15px;
+  text-align: center;
+  text-decoration: none;
+  width: 100px;
+}
+
+.login-btn {
+  color: #000000;
+  text-decoration: none;
+}
+
+#build-section,
+#middle-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#build-section {
+  background-color: rgba(232, 217, 217, 0.3);
+  height: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#build-section h1 {
+  font-size: 3.5rem;
+  margin-top: 5rem;
+}
+
+#build-section .section-text {
+  margin: 50px auto;
+  padding-top: 10px;
+  width: 39%;
+}
+
+#build-section a {
+  font-size: 0.75rem;
+  font-weight: bold;
+  margin-top: 4rem;
+  padding: 15px 40px;
+  text-decoration: none;
+}
+
+#build-section .plans {
+  background-color: #fb3e44;
+  box-shadow: 8px 8px 0 rgba(251, 59, 73, 0.2);
+  color: #ffffff;
+  margin-right: 10px;
+}
+
+#build-section .join {
+  background-color: #ffffff;
+  margin-left: 10px;
+}
+
+#middle-section {
+  height: 550px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#middle-section h2 {
+  background-color: rgba(255, 204, 53, 0.4);
+  font-style: italic;
+  margin-top: 3rem;
+  transform: skew(9deg, 0deg);
+  padding: 0 20px;
+}
+
+#middle-section .middle-text {
+  margin: 0 auto;
+  width: 55%;
+}
+
+#middle-section img {
+  height: 150px;
+  margin-top: 4rem;
+}
+
+#features .cta {
+  margin: 0 auto;
+}
+
+#features > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 65%;
+}
+
+#features .features-content {
+  margin: 0 20px;
+}
+
+#features img {
+  height: 15px;
+}
+
+#features h4 {
+  color: #ed1c24;
+}
+
+#features p {
+  font-size: 15px;
+}
+
+#features .cta-btn {
+  display: flex;
+  justify-content: center;
+  background-color: #000000;
+  box-shadow: 8px 8px 0 rgba(128, 83, 35, 0.2);
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: bold;
+  height: 20px;
+  margin: 70px auto;
+  padding: 10px 0;
+  text-decoration: none;
+  width: 300px;
+}
