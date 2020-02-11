@@ -30,7 +30,8 @@ ul {
   
 .navbar-link-list {
     display: flex;
-    justify-content: space-between;   
+    justify-content: space-between;  
+    align-items: center; 
 }
 
 .navbar-link-list li {
@@ -39,6 +40,18 @@ ul {
   
 .navbar-link-list a {
     color: black;
+}
+
+.navbar-link-list__join-button {
+    display: inline-block;
+    padding: 5px 25px;
+    border-radius: 5px;
+    box-shadow: inset 2px 2px 2px 2px rgba(0,0,0,.05);
+}
+
+.navbar-link-list__join-button:hover {
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,.05);
+
 }
 
 .black-heart {
@@ -56,7 +69,7 @@ ul {
     display: flex;
     justify-content: space-between;
     background-color: rgba(0,0,0,.05);
-    width: 70%;
+    width: 65%;
     height: 60%;
 }
 
@@ -72,6 +85,7 @@ ul {
 }
 .search-bar__input {
     position: absolute;
+    font-family: monospace;
     top: 50%;
     height: 100px;
     margin-top: -50px;
