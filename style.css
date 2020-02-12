@@ -27,7 +27,8 @@ header > div {
   }
 
   h4 {
-      text-align: center;
+      text-align: left;
+      color: red;
   }
   .text {
       text-align: center;
@@ -83,16 +84,35 @@ header > div {
       
   }
 
-
   .iconSize {
       max-width: 80px;
   }
+
+  .blk-bttn {
+    background-color: black; 
+    border: none;
+    color: white;
+    padding: 10px 40px;
+    margin-right: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+  }
+div .blk-bttn{
+  padding: 10px 70px 20px;
+  display: flex;
+  justify-content: center;
+  
+  
+  
+}
 
   .red-bttn {
   background-color: red; 
   border: none;
   color: white;
-  padding: 10px 40px;
+  padding: 10px 70px;
   margin-right: 15px;
   text-align: center;
   text-decoration: none;
@@ -104,33 +124,44 @@ header > div {
   background-color: white;
   border: none;
   color: black;
-  padding: 10px 40px;
+  padding: 10px 70px;
   margin-left: 15px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
 }
-.login-bttn {
-  background-color: white;
-  border: none;
-  color: black;
-  padding: 1px 1px;
-  margin-left: 15px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 10px;
-}
-
 
 .bttn-positions {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 60px;
 }
 #features {
     display: flex;
     direction: row;
-    justify-items: center;
+    justify-items: space;
+    margin-top: 150px;
+    padding: 10px;
+    
 }
+
+#features img {
+
+  width: 50px;
+}
+
+#features div {
+  width: 200 px;
+  padding: 20px 50px 20px;
+
+}
+form [type = text]{
+  
+    background-color: #f0f0f0;
+    background-image: url("mages/magnifying-glass.png");
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding-left: 560px;
+  }
