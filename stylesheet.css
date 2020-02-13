@@ -107,6 +107,126 @@ nav a {
   margin-right: 1rem;
 }
 
-#amazingThings {
+.triangleHexagon {
+  width: 15em;
+  margin: 0 auto;
+}
+
+#container {
   background-color: rgba(232,217,217,.3);
+  display: flex;
+  height: 600px;
+  margin: 0 auto;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#container > article {
+  display: flex;
+	flex-direction: row;
+	justify-content: center;
+  padding: 10px 500px;
+}
+
+#container > article p {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.joining-buttons {
+  display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+  align-content: stretch;
+}
+
+.joining-buttons > li {
+  list-style-type: none;
+}
+
+.joining-buttons a {
+  text-decoration: none;
+}
+
+.see-plans-button {
+  background-color: #fb3b49;
+  color: white;
+  box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+  padding: 10px 30px 10px 30px;
+  margin: 0px 100px 0px 0px;
+}
+
+.join-button {
+  color: black;
+}
+
+h1 {
+  font-size: 4.2em;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2em;
+  text-align: center;
+  background-color: rgba(255,204,53,.4);
+  transform: skew(9deg,0deg);
+  font-style: italic;
+  margin: 1em 400px;
+}
+
+h3 {
+  color: #ED1C24;
+}
+
+#bringTheBest {
+  display: flex;
+  height: 600px;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#bringTheBest > article {
+  display: flex;
+	flex-direction: row;
+	justify-content: center;
+  padding: 10px 500px;
+}
+
+#zeroConfig {
+  display: flex;
+  height: 500px;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: stretch;
+	align-content: stretch;
+}
+
+#zeroConfig > div {
+  display: flex;
+  margin: 0px 10em;
+}
+
+#zeroConfig > div > article {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 3em;
+}
+
+#icons {
+  width: 2em;
+}
+
+.create-org {
+  display: flex;
+  text-decoration: none;
+  background-color: black;
+  color: white;
+  box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+  padding: 20px;
+  justify-content: center;
+  margin: 15px 40em 0px 40em;
 }
