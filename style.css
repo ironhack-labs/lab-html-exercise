@@ -62,15 +62,19 @@ ul {
 .npm-logo {
     display: block;
     width: 90px;
+    margin: 0px 30px 0px 0px;
 }
 
 #search-bar {
-    position: relative;
     display: flex;
-    justify-content: space-between;
     background-color: rgba(0,0,0,.05);
-    width: 65%;
-    height: 60%;
+    width: 80%;
+    padding: 10px;
+}
+
+form {
+    display: flex;
+    width: 100%;
 }
 
 #search-bar:focus-within {
@@ -84,27 +88,19 @@ ul {
     padding: 3px;
 }
 .search-bar__input {
-    position: absolute;
     font-family: monospace;
-    top: 50%;
-    height: 100px;
-    margin-top: -50px;
-    width: 90%;
-    left: 40px;
-    display: block;
+    width: 100%;
     background: rgba(0,0,0,0);
     color: black;
     border: 0px;
 }
 
 .search-bar__button {
-    position: absolute;
     display: block;
     background: #fb3e44;
     color: white;
     margin: 0px;
     border: 0px;
-    padding: 0.5rem, 2rem;
     height: 100%;
     width: 125px;
 }
