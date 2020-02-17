@@ -35,19 +35,14 @@ nav a {
 .top {
     display: flex;
     flex-direction: row;
-    align-content: center;
+    align-content: space-between;
 }
 
-.login {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-content: center;
-}
+
 
 .npm-logo {
     width: 80px;
+    padding-right: 20px;
 }
 
 form {
@@ -61,10 +56,30 @@ form {
     background-color: #d1cad8;
 }
 
+.search {
+display: flex;
+justify-content: center;
+box-sizing: border-box;
+background-color: black;
+border: 1px solid #17212e;
+width: 60px;
+align-items: center;
+align-content: center;
+color: white;
+margin: auto;
+padding: 10px;
+margin-right: 10;
+background: none;
+width: auto
+
+}
+ 
+
 .search-box input {
     width: 100%;
     background: none;
     padding-left: 20px;
+    
 }
 
 .magnifying-glass {
@@ -129,6 +144,8 @@ section.org {
     justify-content: space-around;
     align-items: center;
     align-content: stretch;
+    width: 600px;
+    margin: auto;
 }
 
 section.bring1 {
@@ -188,25 +205,41 @@ section.bring>heading>h1 {
     box-shadow: 8px 8px 0 rgba(251, 59, 73, .2);
 }
 
-.join {
-    box-sizing: border-box;
-    border: 1px solid #17212e;
-    width: 90px;
+.join-login {
+    display: flex;
+	flex-direction: row;
+    align-content: space-between;
+    width: 40px;
 }
 
+.join  {
+width: 90px;
+display: flex;
+color: black;
+ 
+}
+
+.login {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+}
 .link-btn {
     display: flex;
     justify-content: center;
     box-sizing: border-box;
     background-color: black;
     border: 1px solid #17212e;
-    width: 600px;
+    width: 360px;
     box-shadow: 8px 8px 0 rgba(128, 83, 35, .2);
     align-items: center;
     align-content: center;
     color: white;
     margin: auto;
     padding: 20px;
+    margin-top: 60px;
 }
 
 .icon {
