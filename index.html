@@ -22,16 +22,15 @@
     <div class="top">
         <img class="npm-logo" src="images/npm-logo.png" alt="npm-logo" />
 
-        <div class="search-box">
+        <form class="search-box">
             <img class="magnifying-glass" src="images/magnifying-glass.png" alt="magnifying-glass" />
-            <input type="search" value="Search packages">
-        </div>
-        <form class="search">
-            <input type="button" value="Search">
+            <input type="search" placeholder="Search packages">
+            <input class="search" type="button" value="Search">
         </form>
+            
         <div class="login">
             <button class="join" href="/Join">Join</a>
-            <a href="/login">Sign In</a>
+                <a href="/login">Sign In</a>
         </div>
     </div>
 </header>
@@ -64,7 +63,7 @@
     </section>
 
     <section class="org" id="org">
-        <div class="configuration"><img src="images/zero-configuration.svg" class="zero-configuration"
+        <div class="configuration"><img src="images/zero-configuration.svg" class="icon"
                 alt="zero-configuration">
 
             <heading>
@@ -74,7 +73,7 @@
             </heading>
 
         </div>
-        <div class="team"><img src="images/team-management.svg" class="team-management" alt="team-management">
+        <div class="team"><img src="images/team-management.svg" class="icon" alt="team-management">
             <heading>
                 <h3 style="color: #ED1C24">Team management</h3>
             </heading> Control who has access to what modules within your team namespace using straightforward team
@@ -83,7 +82,7 @@
         </div>
 
 
-        <div class="familiar"><img src="images/familiar-features.svg" class="familiar-features">
+        <div class="familiar"><img src="images/familiar-features.svg" class="icon">
             <heading>
                 <h3 style="color: #ED1C24">Familiar features</h3> npm Orgs has 100% parity with all the public npm
                 registry features your
@@ -91,7 +90,7 @@
             </heading>
         </div>
 
-        <div class="audit"><img src="images/npm-audit.svg" alt="npm-audit." class="npm-audit">
+        <div class="audit"><img src="images/npm-audit.svg" alt="npm-audit." class="icon">
             <heading>
                 <h3 style="color: #ED1C24">npm audit</h3> Enjoy the security auditing features built into the npm
                 client, a zero-friction way
@@ -102,5 +101,5 @@
     </section>
 
 
-    <a class="link-btn" href="#"> Create an Org </a>
+    <div class="link-btn" href="#"> Create an Org </div>
 </body>

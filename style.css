@@ -43,27 +43,33 @@ nav a {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+    align-content: center;
 }
 
 .npm-logo {
     width: 80px;
 }
 
+form {
+    margin: 0;
+}
+
 .search-box {
     position: relative;
     width: 100%;
+    display: flex;
+    background-color: #d1cad8;
 }
 
 .search-box input {
-    padding-left: 60px;
     width: 100%;
+    background: none;
+    padding-left: 20px;
 }
 
 .magnifying-glass {
     width: 20px;
-    position: absolute;
-    left: 5px;
-    top: 5px;
+    margin-right: -20px;
 }
 
 .button {
@@ -86,13 +92,14 @@ nav a {
 }
 
 .triangle-hexagon {
-    width: 90px;
+    width: 190px;
     align-self: center;
 }
 
 .portada h1 {
     font-size: 2.5em;
     align-self: center;
+    text-align: center;
 }
 
 .portada a {
@@ -106,12 +113,22 @@ section.org {
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
-    align-content: space-around;
-    text-align: left;
+    align-content: space-between;
+    text-align: inherit;
 }
 
 .org>h3 {
     font-style: #ED1C24;
+}
+
+.bring {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: stretch;
 }
 
 section.bring1 {
@@ -122,6 +139,7 @@ section.bring1 {
     background-color: rgba(255, 204, 53, .4);
     font-size: 1, 5rem;
     text-align: center;
+    font-weight: bold;
 }
 
 section.bring {
@@ -135,7 +153,7 @@ section.bring {
 section.bring2 {
     display: flex;
     justify-content: space-around;
-    width: 600px;
+    width: 300px;
     flex-direction: column;
     text-align: center;
 }
@@ -187,20 +205,10 @@ section.bring>heading>h1 {
     align-items: center;
     align-content: center;
     color: white;
+    margin: auto;
+    padding: 20px;
 }
 
-.zero-configuration {
-    width: 20px;
-}
-
-.familiar-features {
-    width: 20px;
-}
-
-.team-management {
-    width: 20px;
-}
-
-.npm-audit {
-    width: 20px;
+.icon {
+    width: 25px;
 }
