@@ -36,9 +36,8 @@ nav a {
     display: flex;
     flex-direction: row;
     align-content: space-between;
+    padding-right: 0;
 }
-
-
 
 .npm-logo {
     width: 80px;
@@ -53,38 +52,26 @@ form {
     position: relative;
     width: 100%;
     display: flex;
-    background-color: #d1cad8;
 }
 
-.search {
-display: flex;
-justify-content: center;
-box-sizing: border-box;
-background-color: black;
-border: 1px solid #17212e;
-width: 60px;
-align-items: center;
-align-content: center;
-color: white;
-margin: auto;
-padding: 10px;
-margin-right: 10;
-background: none;
-width: auto
-
-}
- 
-
-.search-box input {
-    width: 100%;
+.search-box>input[type="text"] {
+    width: 80%;
     background: none;
-    padding-left: 20px;
-    
+    padding-left: 34px;
+    background-color: #d1cad8;
+    border: none;
+}
+
+.search-box>input[type="button"] {
+    width: 20%;
+    background: black;
+    color: white;
 }
 
 .magnifying-glass {
-    width: 20px;
-    margin-right: -20px;
+    z-index: 1;
+    width: 34px;
+    margin-right: -34px;
 }
 
 .button {
@@ -207,25 +194,24 @@ section.bring>heading>h1 {
 
 .join-login {
     display: flex;
-	flex-direction: row;
-    align-content: space-between;
-    width: 40px;
-}
-
-.join  {
-width: 90px;
-display: flex;
-color: black;
- 
-}
-
-.login {
-    display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-content: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
+
+.join-login>a {
+    text-decoration: none;
+    color: black;
+    height: 100%;
+    margin: 10px;
+    min-width: 50px;
+}
+
+.join-login>a:not(:last-child) {
+    border: 1px solid black;
+}
+
 .link-btn {
     display: flex;
     justify-content: center;
