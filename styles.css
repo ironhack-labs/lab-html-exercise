@@ -65,6 +65,24 @@ nav a {
 	justify-content: center;
 	align-content: center;
 	align-items: center;
+	padding: 40px 0;
+}
+
+/*heading background color: rgba(255,204,53,.4)
+to get the transform of the yellow background in the left-hand direction use: transform: skew(9deg,0deg);
+to get it in the opposite direction of the letters, the way we need it on the page, use: font-style: italic;
+to additionally fine-tune the position of each element, use margin property.*/
+
+#bring-the-best h2 {
+	background-color: rgba(255,204,53,.4);
+	transform: skew(9deg,0deg);
+	font-style: italic;
+	font-size: 2.25rem;
+}
+
+#bring-the-best > img{
+	height: 256px;
+	width: 256px;
 }
 
 #formContainer.headerDivs {
