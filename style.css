@@ -6,19 +6,22 @@ form input color: rgba(0,0,0,.05)
 form button background color: #fb3e44
 form button letters color: white
 */
+
+/* General page styles */
+
 body {
   font-family: 'Poppins';
 }
 
 h1 {
-  font-size: 4em;
-  font-weight: bold;
+  font-size: 4rem;
+  font-weight: 700;
   text-align: center;
-  margin-bottom : 0px
+  margin-bottom : 0;
 }
 
 h2 {
-  font-size: 2.2em;
+  font-size: 2.2rem;
   text-align: center;
   background-color: rgba(255,204,53,.4);
   transform: skew(9deg,0deg);
@@ -27,10 +30,35 @@ h2 {
 }
 
 h3 {
-  font-size: 1em;
+  font-size: 1rem;
   font-weight: bold;
   margin : 0 0 25px 0;
   color : #ED1C24;
+}
+
+a {
+  text-decoration: none;
+  font-family: "Poppins";
+  font-size: 1rem;
+}
+
+button:hover { 
+  opacity: 0.7; 
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+/* Header styles */
+
+header {
+  max-width:1600px;
+  margin: auto;
+}
+
+header a {
+  color:black;
 }
 
 header > div {
@@ -57,21 +85,14 @@ nav a {
   color: black;
 }
 
-nav a:hover { 
-  opacity: 0.7; 
+nav a:hover {
+  opacity: 0.7;
 }
 
 .blackHeart {
   width: 20px;
   margin-right: 1rem;
 }
-
-/*header .under-nav {
-  display: flex;
-  flex-wrap:no-wrap;
-  padding: 5px;
-  border-bottom: none;
-}*/
 
 .logo-npm {
   width:70px;
@@ -80,38 +101,39 @@ nav a:hover {
 
 .magnifying-glass {
   width:20px;
-  padding: 10px;
+  padding: 12px;
 }
 
-header .under-nav .search {
+header .search {
   width: 100%;
 }
 
 header .search-panel {
   display:flex;
   justify-content: space-between;
+  align-items: center;
   background-color: rgb(242, 242, 242);
+}
+
+header .search-panel .left-side {
+  display:flex;  
 }
 
 header .search-bar {
   border: none;
   background-color: rgb(242, 242, 242);
-  letter-spacing: 1px;
-  padding: 2px;
-  text-align:left;
+  letter-spacing: 2px;
 }
 
 header .search-btn {
   background-color: #fb3e44;
   color: white;
   border: none;
-  padding:8px;
+  padding:12px;
+  width: 100px;
   font-family: "Poppins";
+  font-weight: bold;
   font-size: 0.9rem;
-}
-
-header .search-btn:hover { 
-  opacity: 0.7; 
 }
 
 header .links {
@@ -122,39 +144,21 @@ header .links {
 header .links .join {
   border: 1px solid #cccccc;
   background-color: white;
-  font-family: "Poppins";
-  font-size: 1rem;
   margin-right: 5px;
-}
-
-a {
-  text-decoration: none;
-  color:black;
-  font-family: "Poppins";
-  font-size: 1rem;
-}
-
-header .links .join:hover { 
-  opacity: 0.7; 
+  margin-left: 20px;
 }
 
 header .links .login {
   border: none;
   background-color: white;
-  font-family: "Poppins";
-  font-size: 1rem;
   margin-left: 5px;
   width: 65px;
-  text-decoration: none;
-  color:black;
 }
 
-header .links .login:hover { 
-  opacity: 0.7; 
-}
+/* Section 1 styles */
 
 #general-information {  
-  height: 500px;
+  min-height: 450px;
   background-color: rgba(232,217,217,.3);
   padding: 0 25px;
   border: 1px;
@@ -169,9 +173,13 @@ header .links .login:hover {
 }
 
 #general-information .text {
-  width: 40%;
+  max-width: 500px;
   text-align: center;
   margin: 30px;
+}
+
+#general-information a {
+  color:black;
 }
 
 #general-information .see-plans-btn {
@@ -181,18 +189,12 @@ header .links .login:hover {
   width: 200px;
   box-shadow: 8px 8px 0 rgba(251,59,73,.2);
   padding:8px;
-  font-family: "Poppins";
-  font-size: 1rem;
   font-weight: bold;
   margin: 20px;
 }
 
 #general-information .see-plans-btn a {
   color: white;
-}
-
-#general-information .see-plans-btn:hover { 
-  opacity: 0.7; 
 }
 
 #general-information .join-for-free-btn {
@@ -204,12 +206,10 @@ header .links .login:hover {
   margin: 20px;
 }
 
-#general-information .join-for-free-btn:hover { 
-  opacity: 0.7; 
-}
+/* Section 2 styles */
 
 #npm-for-your-company {
-  height: 600px;
+  min-height: 550px;
   background-color: white;
   padding: 0 25px;
   margin: 0 auto;
@@ -230,17 +230,17 @@ header .links .login:hover {
 #npm-for-your-company .npm-for-your-company-text {
   text-align: center;
   font-size: 0.9em;
-  width: 70%;
+  max-width: 600px;
 }
+
+/* Section 3 styles */
 
 #structure .icons{
   margin: auto;
-  width: 80%;
   display: flex;
   flex-direction: row;
-  flex-wrap: no-wrap;
-  align-items: center;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 #structure svg {
@@ -251,8 +251,9 @@ header .links .login:hover {
 
 #structure div div {
   text-align: left;
-  padding: 0 30px 30px 30px;
+  width: 200px;
   height: 300px;
+  padding: 0 20px 0;
 }
 
 #structure .create-an-org-link {
@@ -260,21 +261,20 @@ header .links .login:hover {
   justify-content: center;
 }
 
-#structure .create-an-org {
-  background-color: black;
-  color: white;
+#structure a {
+  color:white;
+}
+
+#structure .create-an-org-btn {
   border: 1px;
+  background-color: black;
   width: 300px;
   box-shadow: 8px 8px 0 rgba(128,83,35,.2);
   padding:8px;
-  text-decoration: none;
-  font-family: "Poppins";
-  font-size: 1rem;
   font-weight: bold;
-  text-align: center;
   margin: 50px;
 }
 
-#structure .create-an-org:hover { 
+#structure .create-an-org-btn:hover { 
   opacity: 0.7; 
 }
