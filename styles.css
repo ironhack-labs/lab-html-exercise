@@ -44,9 +44,61 @@ nav a {
   border-bottom: 1px solid lightgray;
 }
 
+
+#formContainer.headerDivs {
+	display: flex;
+	align-items: center;
+	padding: .5rem 25px;
+}
+
+#searchForm {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 0;
+	justify-content: space-between;
+}
+
+#join a {
+	margin: 1rem;
+	text-decoration: none;
+	color: black;
+}
+
+#join > a {
+	border: 1px solid lightgray;
+}
+
+.formContainer #searchBar {
+	display: flex;
+	background-color: rgba(0,0,0,.05);
+	align-items: center;
+	height: 100%;
+}
+
+.formContainer #searchBar > #search {
+	border-style: none;
+	background: none;
+}
+
+.blackHeart {
+  width: 20px;
+  margin-right: 1rem;
+}
+
+.npm-logo {
+	width: 80px;
+	margin-right: 1em;
+}
+
+.magGlass {
+	width: 15px;
+	height: 15px;
+}
+
 #build {
 	display: flex;
 	height: 600px;
+	width: 100%;
 	background-color: rgba(232,217,217, .3);
 }
 
@@ -123,54 +175,37 @@ div.container {
 	width: 256px;
 }
 
-#formContainer.headerDivs {
+
+/*color of the letters in each heading in this section: #ED1C24
+"Create an Org" box shadow: 8px 8px 0 rgba(128,83,35,.2)
+"Create an Org" letters color: white*/
+
+#services div img{
+	width: 68px;
+	height: 68px;
+}
+
+#services div h3{
+	color: #ed1c24;
+}
+
+#services > div {
 	display: flex;
-	align-items: center;
-	padding: .5rem 25px;
+	flex-wrap: wrap;
+	justify-content: space-around;
 }
 
-#searchForm {
-	display: flex;
-	justify-content: center;
-	margin-bottom: 0;
-	justify-content: space-between;
+#orgButton {
+	color: white;
+	background-color: black;
+	border: none;
+  	padding: 15px 32px;
+  	text-align: center;
+  	text-decoration: none;
+  	display: inline-block;
+	box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+	font-weight: 700;
 }
 
-#join a {
-	margin: 1rem;
-	text-decoration: none;
-	color: black;
-}
-
-#join > a {
-	border: 1px solid lightgray;
-}
-
-.formContainer #searchBar {
-	display: flex;
-	background-color: rgba(0,0,0,.05);
-	align-items: center;
-	height: 100%;
-}
-
-.formContainer #searchBar > #search {
-	border-style: none;
-	background: none;
-}
-
-.blackHeart {
-  width: 20px;
-  margin-right: 1rem;
-}
-
-.npm-logo {
-	width: 80px;
-	margin-right: 1em;
-}
-
-.magGlass {
-	width: 15px;
-	height: 15px;
-}
 
 
