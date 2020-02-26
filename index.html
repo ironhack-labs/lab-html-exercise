@@ -3,6 +3,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NPM Clone</title>
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <header>
@@ -28,18 +29,40 @@
       </div>
 
       <div>
-        <!-- add logo, search bar and buttons (or links and style them as buttons later) -->
+        <img class="npm-logo" src="/images/npm-logo.png" alt="npm logo" />
+
+        <div class="search-form">
+          <img
+            class="search-icon"
+            src="/images/magnifying-glass.png"
+            alt="search icon"
+          />
+          <form id="search-bar" action="#" method="GET or POST">
+            <input
+              type="text"
+              id="search-text"
+              name="search-text"
+              placeholder="Search packages"
+            />
+            <input type="submit" value="Search" />
+          </form>
+        </div>
+        <a class="nav-button-1" href="#"> Join</a>
+        <a class="nav-button-2" href="#"> Log in</a>
       </div>
     </header>
-    <section>
-      <h1>Build amazing things</h1>
-      <article>
-        Essential JavaScript development tools that help you go to market faster
-        and build powerful applications using modern open source code
-      </article>
-      <div>
-        <a href="#"> See plans</a>
-        <a href="#"> Join for free</a>
+
+    <section class="section-1">
+      <div class="section-content">
+        <h1 class="headline-1">Build amazing things</h1>
+        <article>
+          Essential JavaScript development tools that help you go to market
+          faster and build powerful applications using modern open source code
+        </article>
+        <div class="section-1-links">
+          <a class="see-plans-bt" href="#"> See plans</a>
+          <a class="join-bt" href="#"> Join for free</a>
+        </div>
       </div>
     </section>
     <section>
