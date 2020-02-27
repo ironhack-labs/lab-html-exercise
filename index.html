@@ -32,13 +32,14 @@
  			<span><img src="./images/npm-logo.png" class="npm-logo" alt="npm logo"></span>
  			<form id="searchForm" method="GET" action="/search">
  				<div id="searchBar">
- 					<span><img src="./images/magnifying-glass.png" class="magGlass" alt="magnifying glass"></span>
- 					<input type="text" id="search" placeholder="Search Packages">
+ 					<span><img src="./images/magnifying-glass.png" id="magGlass" alt="magnifying glass"></span>
+ 					<input type="search" placeholder="Search Packages">
  				</div>
  				<button type="submit">Search</button>
  			</form>
- 			<div id="join">
- 				<a href="#">Join</a>
+
+ 			<div id="joinLog">
+ 				<a href="#" id="join">Join</a>
  				<a href="#">Log in</a>
  			</div>
  		</div>
@@ -113,8 +114,8 @@
  					<p>Enjoy the security
  					auditing features built into the npm client, a zero-friction way to make open source software safer.</p>
  				</div>
- 				<button id="orgButton">Create an Org</button>
  		</div>
+ 		<button id="orgButton">Create an Org</button>
  		</section>
 
 
