@@ -3,18 +3,25 @@
 /* GENERAL*/
 body {
   font-family: 'Poppins';
+  
 }
-
 
 
 /* HEADER AND NAVBAR*/
 
-header > div {
+header > div{
     padding: 0 25px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    white-space: nowrap;
+    
+  
+  }
+
+  .header-class {
     border-bottom: 1px solid lightgray;
+
   }
   
 
@@ -40,69 +47,101 @@ header > div {
     margin-right: 1rem;
   }
 
+  header {
+    border: none;
+    box-shadow: 0 4px 13px -3px rgba(0, 0, 0, 0.10196);
+  }
+
 /* SUB-HEADING */
 
+
+
   .npm-logo {
-    width: 75px;
+    width: 70px;
     margin-right: 1rem;
-  }
-
-  .search-logo {
-      width: 20px;
-      padding: 8px;
-  }
-
-
-
-  .header-sub-search-bar-container {
-      
-      display: flex;
-      justify-content: space-evenly;
-      align-content: center;
-      margin: 10px 0px;
-      padding-left: 10px;
-      
   }
 
   .form {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-
+    width: 90%;
+    margin: 0 30px 0 10px;
+    
   }
 
-  .form img, input {
-    background-color: rgba(0,0,0,.05);
-  }
-
-  .form button {
-      padding: 10px 13px 10px 13px;
-      border: none;
-      background-color: red;
-      color: white;
+  .search-logo {
+      width: 20px;
+      background-color: rgba(0,0,0,.05);
+      padding: 12.55px 15px 12.55px 15px ;
+      
   }
 
   .search-bar {
-    padding: 10px 0px 10px 0px;
+    width: 100%;
+    margin: 10px 0;
+    padding: 13.15px 0 ;
     border: none;
-    width: 60vw;
+    background-color: rgba(0,0,0,.05);
+    font-family: "Fira Mono", "Andale Mono", "Consolas", monospace;
+    font-size: 16px;
+  }
+
+  
+
+  .form img, input {
     
-    
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-items: center;
+      align-content: center;
+  
+  }
+
+  .form button {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: center;
+    padding: 12.1px 20px;
+    border: none;
+    background-color: red;
+    color: white;
+    font-family: "poppins";
+    font-size: 14px;
+  }
+
+
+  .header-sub-button-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
   }
 
   .header-sub-button-link a {
     text-decoration: none;
   }
-
+  
   .button-join {
-    padding: 3px 13px 3px 13px;
+    padding: 5px 15px 5px 15px; 
     border: 1px solid black;
     color: black;
-    margin: 0px 20px 0px 20px;
+    margin-right: 20px;
+    
+  }
+  
+  .button-log{
+      white-space: nowrap;
+      color: black;
+      padding: 5px 0px 5px 5px;
   }
 
-  .button-log{
-      color: black;
-  }
+  
 
   /* SECTION 1 */
 
