@@ -2,7 +2,10 @@
 
 body {
   font-family: "Poppins";
+  min-width: 375px;
 }
+
+/********************** HEADER *********************/
 
 header > div {
   padding: 0 25px;
@@ -38,10 +41,12 @@ nav a {
   margin-right: 1rem;
 }
 
+/********************** Search Form  *********************/
+
 .search-form {
   display: flex;
   align-items: center;
-  width: 85%;
+  flex: 0.9 1 auto;
 }
 
 .search-icon {
@@ -55,35 +60,42 @@ nav a {
 #search-bar {
   margin-block-start: 1em;
   margin-block-end: 1em;
-  width: 100%;
+  flex: 1 1 auto;
 }
 
 #search-bar input#search-text {
   background-color: rgba(0, 0, 0, 0.05);
-  width: 95%;
   padding: 15px;
   border: 0;
+  width: -webkit-fill-available;
 }
 
 #search-bar input[type="submit"] {
+  position: absolute;
   background-color: #fb3e44;
   color: white;
   padding: 15px;
   border: 0;
-  margin-left: -5px;
+  margin-left: -70px;
 }
+
+/********************** NAV *********************/
 
 a.nav-button-1 {
   color: #333;
   text-decoration: none;
   border: solid #333 1px;
   padding: 10px 15px;
+  margin: 0 10px;
 }
 
 a.nav-button-2 {
   color: #333;
   text-decoration: none;
+  margin: 0 10px;
 }
+
+/********************** SECTION 1 *********************/
 
 h1.headline-1 {
   display: flex;
@@ -136,6 +148,8 @@ a.join-bt {
   margin: 0 1.5rem;
 }
 
+/********************** SECTION 2 *********************/
+
 .triangle-hexagon {
   width: 300px;
   display: flex;
@@ -166,6 +180,8 @@ h2.headline-2 {
   margin: 0 6%;
 }
 
+/********************** SECTION 3 *********************/
+
 .section-content.teasers {
   display: flex;
 }
@@ -195,4 +211,58 @@ h2.headline-2 {
   background-color: black;
   padding: 15px 100px;
   text-decoration: none;
+}
+
+/************** MEDIA QUERIES *****************/
+
+@media (max-width: 600px) {
+  .slogan {
+    display: none;
+  }
+  nav ul {
+    display: block;
+  }
+
+  nav ul li {
+    margin: 0 10px;
+  }
+  nav {
+    margin-left: -15%;
+    width: 400px;
+  }
+
+  header > div {
+    display: block;
+  }
+
+  .npm-logo {
+    margin: 20px 0;
+  }
+
+  .login-links {
+    margin: 20px 0;
+  }
+  .section-1-links {
+    flex-direction: column;
+  }
+  a.see-plans-bt {
+    margin: 15px 50px;
+    padding: 15px 30px;
+  }
+
+  a.join-bt {
+    margin: 15px 50px;
+    padding: 15px 30px;
+  }
+
+  .section-content.teasers {
+    display: block;
+    max-width: 375px;
+  }
+
+  h2.headline-2 {
+    padding: 0 20px;
+    margin: 2rem 0;
+    margin: 2rem 1rem;
+  }
 }
