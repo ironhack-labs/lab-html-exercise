@@ -13,6 +13,7 @@ auditing features built into the npm client, a zero-friction way to make open so
   <head>
     <title>lab-html-exercise</title>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
   </head>
   <body>
     <header>
@@ -21,6 +22,7 @@ auditing features built into the npm client, a zero-friction way to make open so
           <img src="images/black-heart.png" alt="heart_symbol">
           <span>Neverending Pun Machine</span>
         </div>
+
         <nav class="nav-bar">
           <ul>
             <li><a href="#">npm Enterprise</a></li>
@@ -32,6 +34,7 @@ auditing features built into the npm client, a zero-friction way to make open so
           </ul>
         </nav>
       </div>
+
       <div class="head-second">
         <div class="logo-npm">
           <img src="images/npm-logo.png" alt="npm_logo">
@@ -39,33 +42,38 @@ auditing features built into the npm client, a zero-friction way to make open so
         <div class="search-bar">
           <img src="images/magnifying-glass.png" alt="img_search">
           <input type="search" id="search" placeholder="Search packages">
-          <input type="button" value="Search">
+          <input type="button" id="button-search" value="Search">
           <a href="#" class="join">Join</a>
           <a href="#" class="login">Log In</a>
         </div>
       </div>
     </header>
+
     <section class="build-things">
       <h1>Build amazing things</h1>
+
       <article>
         Essential JavaScript development tools that help you go to market faster and build powerful applications using modern open source code.
       </article>
+
       <div class="nav-section1">
-        <a href="#">See plans</a>
-        <a href="#">Join for free</a>
+        <div class="nav-button see-plans">
+          <a href="#">See plans</a>
+        </div>
+        <div class="nav-button join-free">
+          <a href="#">Join for free</a>
+        </div>
       </div>
     </section>
+
     <section class="bring-best">
-      <article>
-        <div>
-          <img src="images/triangle-hexagon.svg" alt="logo-b">
-        </div>
-        <h2>Bring the best of open source to your company</h2>
-        <p>npm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it. Create an Org and get more out of the tools your team already knows and loves.</p>
-      </article>
+      <img src="images/triangle-hexagon.svg" alt="logo-b">
+      <h2>Bring the best of open source to your company</h2>
+      <p>npm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it. Create an Org and get more out of the tools your team already knows and loves.</p>
     </section>
+
     <section class="features">
-        <div>
+        <div class=features-box>
             <div class="content">
                 <img src="images/zero-configuration.svg" alt="zero-configuration">
                 <h3>Zero configuration</h3>
@@ -87,9 +95,10 @@ auditing features built into the npm client, a zero-friction way to make open so
                 <p>Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer.</p>
             </div>
         </div>
+
         <div class="nav-section3">
             <a href="#">Create an Org</a>
         </div>
-        </section>
+    </section>
   </body>
 </html>
