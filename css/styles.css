@@ -1,37 +1,104 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
-
+@import url('https://fonts.googleapis.com/css?family=Fira+Mono&display=swap');
 body {
-  font-family: 'Poppins';
+	font-family: 'Poppins';
 }
 header > div {
-    padding: 0 25px;
-    display: flex;
-    justify-content: space-between;
+	padding: 0 25px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid lightgray;
+}
+nav {
+	width: 600px;
+}
+nav ul {
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+nav a {
+	text-decoration: none;
+	color: black;
+}
+.blackHeart {
+	height: 20px;
+	margin-right: 1rem;
+}
+#magic {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+#searchBar {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 10px 25px;
+}
+.npm-logo{
+    width: 5%;
+    height: auto;
+	padding: 0 25px 0 0;
+}
+#formulario {
+	padding:  0px 0px 0px 25px;
+	background-color: rgba(0,0,0,.05);
+	border: none;
+    width: 80%;
+    height: auto;
+}
+#formulario form {
+	display: flex;
     align-items: center;
-    border-bottom: 1px solid lightgray;
-  }
-  
-  nav {
-    width: 600px;
-  }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
     justify-content: space-between;
+}
+#formulario form img {
+    width: 20px;
+}
+#formulario input {
+    border: none;
+	background-color: rgba(0,0,0,0);
+    height: 40px;
+    width: 90%;
+}
+#formulario form input::placeholder{
+    color: black;
+	font-size: 16px;
+	font-family: 'Fira Mono';
+	padding-left: 10px;
+    text-align: left;
+}
+#formulario form button{
+    font-family: 'Poppins';
+	background-color: #fb3e44;
+	color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+}
+#botones {
+    display: flex;
+    justify-content: flex-end;
     align-items: center;
-  }
-  
-  nav a {
+    width: 15%;
+}
+#botones a {
     text-decoration: none;
     color: black;
-  }
-  
-  .blackHeart {
-    width: 20px;
-    margin-right: 1rem;
-  }
-  #magic {
-    display: flex;
-    justify-content: flex-start;
-  }
+}
+#botones #unir {
+    border: solid 1px black;
+    border-radius: 2px;
+    padding: 5px 20px;
+    background-color: white;
+    margin-right: 20px;
+}
+#botones #entrar {
+    border: none;
+    padding: 5px 20px;
+    background-color: white;
+}
+
