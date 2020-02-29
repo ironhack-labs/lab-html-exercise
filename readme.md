@@ -13,7 +13,16 @@ In this exercise, the goal is to apply as many as possible of the concepts you'v
 
 ## Getting started
 
-Follow these **[guidelines](https://docs.google.com/presentation/d/1I7-9zlELCSTqDevrfEfi_S6bf0BoByqOPqMw6QWUDgc/edit?usp=sharing)** on how to _start and hand in_ the exercise so your TAs can check it.
+1. [Fork](https://gist.github.com/ironhack-edu/dd3635de73a6ef07ef337bf184eda985#step-1-fork-the-repository) this repo
+2. [Clone](https://gist.github.com/ironhack-edu/dd3635de73a6ef07ef337bf184eda985#step-2-clone-the-repository) this repo
+
+Whenever you create a first significant change, you should make your first commit.
+
+3. Follow these [guidelines to add, commit and push changes](https://gist.github.com/ironhack-edu/dd3635de73a6ef07ef337bf184eda985#step-3-add-commit-and-push-the-changes).
+
+In the end of this document, you will find guidelines on how to submit the exercise.
+
+**Keep in mind that you don't have to wait to fully finish the exercise to make a pull request. You only have to make a pull request once. After that, every time when you make a commit, it will be automatically added and shown in the pull request.**
 
 ## Instructions
 
@@ -86,7 +95,7 @@ We could try to represent this part of the website with the following:
   </div>
 
   <div>
-    <!-- add logo, search bar and buttons (or links and style them as buttons later)        -->
+    <!-- add logo, search bar and buttons (or links and style them as buttons later) -->
   </div>
 </header>
 ```
@@ -235,12 +244,15 @@ _Useful information_:
 - "Create an Org" box shadow: 8px 8px 0 rgba(128,83,35,.2)
 - "Create an Org" letters color: white
 
-## Hand in
+## Submission
 
-The best way to submit your work is by making a Pull Request (and the process is described in the GitHub lessons as well as in these **[guidelines](https://docs.google.com/presentation/d/1I7-9zlELCSTqDevrfEfi_S6bf0BoByqOPqMw6QWUDgc/edit?usp=sharing)**).
-Your TAs will check up your work and provide feedback. However, you don't have to wait to finish everything in order to follow the step listed in the guidelines. In a moment when you've made a first significant step in working on this assessment, we advise you to make a pull request. Starting from that moment, every change you make will be automatically added to that pull request and will be visible to your TAs for a checkup.
+If you didn't [add, commit and push the changes](https://gist.github.com/ironhack-edu/dd3635de73a6ef07ef337bf184eda985#step-3-add-commit-and-push-the-changes) you made, this is the last call. :smile:
 
-Important: Notify your TAs via email or Slack direct message when you make a pull request, so they are aware of it and can go and check it.
+And at the same time, if you didn't [create a pull request](https://gist.github.com/ironhack-edu/dd3635de73a6ef07ef337bf184eda985#step-4-create-a-pull-request) this is the time for that as well.
+
+Your TAs will check up your work and provide feedback.
+
+**Once again, a friendly reminder**: You don't have to wait to finish everything in order to follow the steps listed in the [guidelines](https://gist.github.com/ironhack-edu/dd3635de73a6ef07ef337bf184eda985). In a moment when you've made a first significant step in working on this assessment, we advise you to make a pull request. Starting from that moment, every change you make will be automatically added to that pull request and will be visible to your TAs for a checkup.
 
 ## Summary
 
