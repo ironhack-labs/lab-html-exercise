@@ -1,3 +1,6 @@
+<head>
+    <link rel="stylesheet" href="style/index.css">
+</head>
 <header>
     <div>
       <div>
@@ -16,22 +19,24 @@
       </nav>
     </div>
   
-    <div>
-      <img src="images/npm-logo.png" alt="npm logo">
+    <div class="search">
+      <img class="logoNpm" src="images/npm-logo.png" alt="npm logo">
       <form action="/" method="post">
-        <input type="text" name="search" id="search" placeholder="search">
+        <input type="text" name="search" id="search" placeholder="Search packages">
         <button for="search">Search</button>
     </form>
-          <a href="">Join</a>
-          <a href="">Login</a>
+          <a class="join" href="">Join</a>
+          <a class = "login" href="">Login</a>
     </div>
   </header>
-  <section>
+  <section class="build">
       <h1>Build amazing things</h1>
       <p>Essential JavaScript development tools that help you go to market faster and build powerful applications using
         modern open source code.</p>
-        <button>See plans</button>
-        <button>Join for free</button>
+        <div id="buttons">
+        <a class="see">See plans</a>
+        <a class="join">Join for free</a>
+    </div>
   </section>
   <section>
       <img src="images/triangle-hexagon.svg" alt="triangle hexagon">
