@@ -70,7 +70,10 @@ header > div {
     text-align: center;
   }
     .build {
-        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
         height: 600px;
         background-color: rgba(232,217,217,.3);
     }
@@ -79,29 +82,83 @@ header > div {
     font: weight 800;
     }
     .build > p {
-    margin: 0 auto;
     width: 32em;
     font-size: 1.2em;
     letter-spacing: 0.1em;
+    text-align: center;
     }
     #buttons {
         display: flex;
         align-items: center;
         justify-content: space-between;
         width: 32em;
-        margin: 0 auto;
+        margin-top: 1em;
+        text-align: center;
+        
     }
     .see {
         font-size: 1em;
+       font-weight: 200;
         background-color: #FB3B49;
         box-shadow: 8px 8px 0 rgba(251,59,73,.2);
         font-family: "Poppins";
         border: 1px solid #FB3B49;
         color: white;
-        width: 7em;
-        padding: 1em;
+        width: 11em;
+        padding: 0.5em;
     }
     .join {
-        width: 7em;
+        font-weight: bold;
+        width: 11em;
         border: 0px;
+    }
+    .open {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        height: 600px;
+    }
+    .open > img {
+        width: 180px;
+    }
+    .open > h3 {
+        background-color: rgba(255,204,53,.4);
+        font-size: 2em;
+        transform: skew(9deg,0deg);
+        font-style: italic;
+    }
+    .open > p {
+        width: 35em;
+        text-align: center;
+    }
+    .box > article > img {
+        width: 45px;
+    }
+    .box {
+        display: flex;
+        justify-content: space-around;
+    }
+    .box >article > h5 {
+        color:#ED1C24;
+    }
+    .box > article > p {
+        width: 13em;
+        font-size: 1em;
+    }
+    #submit {
+        background-color: black;
+        box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+        color: white;
+        margin: 3em auto;
+        display: block;
+        width: 16em;
+        font-size: 2em;
+        padding: 0.5em;
+        border: 0px;
+    }
+    #submit > a {
+        text-decoration: none;
+        color: white;
+        font-family: "Poppins";
     }
