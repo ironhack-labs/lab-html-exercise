@@ -1,6 +1,6 @@
-
+<!DOCTYPE html>
+<html>
 <head>
-    ...
     <link rel="stylesheet" href="./style.css">
   </head>
 
@@ -23,8 +23,8 @@
     </ul>
 </nav> 
 </div>
-<div>
-    <img class="npm-Logo" src="./images/npm-logo.png" alt="npm logo" /> <br>
+<div id="npm-lower-nav-bar">
+    <img class="npm-logo" src="./images/npm-logo.png" alt="npm logo" />
     <img class="magnifying-glass" src="./images/magnifying-glass.png" alt="magnifying glass" />
     <form class="searchbar">
         <label></label>
@@ -41,16 +41,17 @@
 <section id="section1">
     
     <h1>Build amazing things</h1>
-<article>Essential JavaScript development tools that help you go to market faster and build powerful applications using
+<article class="introduction">Essential JavaScript development tools that help you go to market faster and build powerful applications using
 modern open source code.</article>
-<div> <button class="see-plans"><a href="#">See plans</a></button> <a href="#">Join for free</a> </div>
+<div> <button class="see-plans"><a href="#">See plans</a></button> 
+    <button class="join-for-free"><a href="#">Join for free</a></button> </div>
 
 </section>
 
 <section id="section2">
     <img class="triangle-hexagon" src="./images/triangle-hexagon.svg" alt="triangle hexagon" />
 <h2>Bring the best of open source to your company</h2> 
-<article>npm is the tool used by
+<article class="npm-introduction">npm is the tool used by
 over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it.
 Create an Org and get more out of the tools your team already knows and loves.</article>
 </section>
@@ -81,13 +82,13 @@ what modules within your team namespace using straightforward team management ca
 <h3>npm audit</h3>
 <p>Enjoy the security
 auditing features built into the npm client, a zero-friction way to make open source software safer.</p>
-</div>
+</div> 
 
- <button>Create an Org</button>
+ 
 </section>
-
-
+<button class="create-an-org">Create an Org</button>
 
 
 
 </body>
+</html>
