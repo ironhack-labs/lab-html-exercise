@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,700");
+
+/* What ******************************** Values *************************** Abbreviation **/
+/* form label color:                       rgba(0,0,0,.05)                    --flc        */
+/* form input color:                       rgba(0,0,0,.05)                    --fic        */
+/* form button background color:           #fb3e44                            --fbbc       */
+/* form button letters color:              white                              --fblc       */
+/* section 1 background color:             rgba(232,217,217,.3)               --s1bc       */
+/* "See plans" button background color:    #FB3B49                            --spbgc      */
+/* "See plans" button box shadow:          8px 8px 0 rgba(251,59,73,.2)       --spbbs      */
+/* section 2 heading background color:     rgba(255,204,53,.4)                --s2hbc      */
+/* section 3 heading letters color:        #ED1C24                            --s3hlc      */
+/* "Create an Org" box shadow:             8px 8px 0 rgba(128,83,35,.2)       --cobs       */
+
+/*******************************************************************************************/
+
+/************************************* General **********************************************/
+:root {
+	--flc: rgba(0, 0, 0, 0.05);
+	--fic: rgba(0, 0, 0, 0.05);
+	--fbbc: #fb3e44;
+	--fblc: white;
+	--s1bc: rgba(232, 217, 217, 0.3);
+	--spbgc: #fb3b49;
+	--spbbs: 8px 8px 0 rgba(251, 59, 73, 0.2);
+	--s2hbc: rgba(255, 204, 53, 0.4);
+	--s3hlc: #ed1c24;
+	--cobs: 8px 8px 0 rgba(128, 83, 35, 0.2);
+}
+
+body {
+	font-family: "Poppins";
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+/************************************* Header **********************************************/
+
+/************************ Nav-Bar-Menu **********************/
+header > div {
+	padding: 0 25px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid lightgray;
+}
+
+nav {
+	width: 600px;
+}
+
+nav ul {
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.nav-btn li:hover {
+	opacity: 0.5;
+}
+.blackHeart {
+	width: 20px;
+	margin-right: 1rem;
+}
+
+/************************ Nav-Bar-Search **********************/
+.nav-bar-search {
+	display: flex;
+	justify-content: space-between;
+}
+.npm-logo {
+	width: 60px;
+	margin-right: 1rem;
+}
+.magnifying-glass {
+	background-color: var(--fic);
+	width: 15px;
+	padding: 15px;
+	margin-right: 0;
+	border: 0;
+}
+form {
+	display: flex;
+	width: 90%;
+}
+input {
+	background-color: var(--fic);
+	border-style: none;
+	border-width: 0;
+	width: 100%;
+	font-size: 1em;
+}
+
+button {
+	background-color: var(--fbbc);
+	color: var(--fblc);
+	border-width: 0;
+	font-size: 1em;
+	padding: 0 1%;
+}
+
+button:hover {
+	background-color: var(--fblc);
+	color: var(--fbbc);
+	border: 1px solid var(--fbbc);
+}
+/************************ Nav-Bar-Search-Btn **********************/
+.nav-bar-search-btn {
+	width: 8%;
+}
+.nav-bar-search-btn ul {
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+}
+
+.white-btn-border {
+	border: 1px solid black;
+	padding: 3px 9px;
+}
+.white-btn-border:hover {
+	opacity: 0.5;
+}
+.nav-bar-search-btn ul li:nth-child(2):hover {
+	opacity: 0.5;
+}
+
+/************************************* Section 1 **********************************************/
+#section-1 {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	background-color: var(--s1bc);
+	height: 600px;
+}
+h1 {
+	/*font-family: "Poppins-bold";*/
+	font-size: 90px;
+	font-weight: bold;
+	margin-bottom: 0;
+}
+#section-1 article {
+	width: 26%;
+	text-align: center;
+	font-size: 20px;
+}
+
+/************************ Section 1 Btns **********************/
+#section-1-btns {
+	margin-bottom: 100px;
+}
+
+a.red-btn-shadow {
+	background-color: var(--spbgc);
+	color: white;
+	box-shadow: var(--spbbs);
+	font-weight: bold;
+	padding: 15px 50px;
+	margin-right: 20px;
+}
+
+a.red-btn-shadow:hover {
+	background-color: var(--fblc);
+	color: var(--fbbc);
+	border: 1px solid var(--fbbc);
+}
+a.white-btn-noborder {
+	background-color: white;
+	font-weight: bold;
+	padding: 15px 50px;
+}
+
+a.white-btn-noborder:hover {
+	background-color: var(--fic);
+}
+/************************************* Section 2 **********************************************/
+#section-2 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	height: 600px;
+}
+.hexagon {
+	width: 250px;
+	margin-bottom: -50px;
+	margin-top: 50px;
+}
+
+#section-2-bg-h2 {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	height: 80px;
+	width: 700px;
+}
+#section-2-bg {
+	position: absolute;
+	top: 25px;
+	width: 90%;
+	height: 40%;
+	background-color: var(--s2hbc);
+	transform: skew(15deg);
+}
+#section-2 article {
+	width: 38%;
+	text-align: center;
+	margin-top: -70px;
+}
+
+/************************************* Section 3 **********************************************/
+
+#section-3 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	height: 600px;
+}
+
+#section-3-4-para {
+	display: flex;
+	width: 60%;
+}
+#section-3-4-para div {
+	width: 60%;
+	padding: 2%;
+}
+.zero,
+.team,
+.fam,
+.audit {
+	width: 20px;
+}
+#section-3-4-para h3 {
+	color: var(--s3hlc);
+}
+
+#create-org {
+	margin-top: -10%;
+}
+a#create-org-btn {
+	background-color: black;
+	color: white;
+	box-shadow: var(--cobs);
+	font-weight: bold;
+	padding: 15px 100px;
+	margin-top: -107px;
+}
+a#create-org-btn:hover {
+	background-color: var(--fic);
+	color: black;
+}
