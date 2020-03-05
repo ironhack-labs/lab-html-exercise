@@ -3,39 +3,42 @@
   <head>
     <title>npm clone</title>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="images/npm-node-js-javascript-package-manager-scalable-vector-graphics-png-favpng-gsUx7sPa6Fwx3W3KwLrd3qHs6.ico" type="image/x-icon"/>
   </head>
   <body>
-    <header>
-        <div>
+    <header id="navbar">
+        <div class="topheader">
           <div>
-            <img class="TBD" src="images/black-heart.png" alt="black heart" />
+            <img class="blackHeart" src="images/black-heart.png" alt="black heart" />
             <span> Nifty Penguin Magic </span>
           </div>
           <nav>
             <ul>
-              <li><a href="#"> npm Enterprise </a></li>
-              <li><a href="#"> Products </a></li>
-              <li><a href="#"> Solutions </a></li>
-              <li><a href="#"> Resources </a></li>
-              <li><a href="#"> Docs </a></li>
-              <li><a href="#"> Support </a></li>
+              <li><a href="https://www.npmjs.com/products/enterprise"> npm Enterprise </a></li>
+              <li><a href="https://www.npmjs.com/products"> Products </a></li>
+              <li><a href="https://www.npmjs.com/products"> Solutions </a></li>
+              <li><a href="https://www.npmjs.com/resources/"> Resources </a></li>
+              <li><a href="https://docs.npmjs.com/"> Docs </a></li>
+              <li><a href="https://www.npmjs.com/support"> Support </a></li>
             </ul>
           </nav>
         </div>
-        <div>
-            <div>
-                <img class="TBD" src="images/npm-logo.png" alt="npm-logo"/>
-                <form action="/search" method="get">
-                    <span>
-                        <img src="images/magnifying-glass.png" alt="search-logo"/>
-                        <input type="text" name="search" id="search" placeholder= "Search packages">
-                    </span>
-                    <button type="submit">Search</button>
-                </form>
-            <div>
-                <a href="#"> Join </a>
-                <a href="#"> Log In </a>
-            </div>
+
+
+        <div class="bottomheader">
+          <form action="/search" method="get">
+            <a href="https://www.npmjs.com/"><img class="npmlogo" src="images/npm-logo.png" alt="npm-logo"/></a>
+            <span class="searchbar">
+              <img class="magglass" src="images/magnifying-glass.png" alt="search-logo"/>
+              <input class="forminput" type="text" name="search" id="search" placeholder= "Search packages">
+              <button class="searchbutton" type="submit">Search</button>
+            </span>  
+          </form>
+          <div class="join-login">
+            <a class="joinborder" href="https://www.npmjs.com/signup"> Join </a>
+            <a href="https://www.npmjs.com/login"> Log In </a>
+          </div>
         </div>
       </header>
 
@@ -44,14 +47,15 @@
           <article>Essential JavaScript development tools that help you go to market faster and build powerful applications using
             modern open source code.</article>
         <div>
-            <a href="#"> See plans </a>
-            <a href="#"> Join for free </a>
+            <a class="see-plans" href="https://www.npmjs.com/products"> See plans </a>
+            <a class= "join" href="https://www.npmjs.com/signup"> Join for free </a>
         </div>
       </section>
+
       <section id="value-prop">
         <img src="images/triangle-hexagon.svg" alt="npm-hexagon"/>
         <h2>Bring the best of open source to your company</h2>
-        <article>npm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it. Create an Org and get more out of the tools your team already knows and loves.</article>
+        <p>npm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it. Create an Org and get more out of the tools your team already knows and loves.</p>
       </section>
 
       <section id="features">
@@ -78,8 +82,10 @@
                 <p>Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer.</p>
               </div>
           </article>
-          <span><a href="#"> Create an Org </a></span>
+          <a href="https://www.npmjs.com/signup"> Create an Org </a>
       </section>
+      <section class="karl">site cloned by Karl</section>
+      
   </body>
 </html>
 

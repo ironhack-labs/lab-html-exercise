@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:500,600,700,800');
+
+/*
+form label color: rgba(0,0,0,.05)
+form input color: rgba(0,0,0,.05)
+form button background color: #fb3e44
+form button letters color: white
+intro background + final button shadow: rgba(232,217,217,.3)
+button shadow color: #f4d2d3
+*/
+
+/* Main font formatting */
+
+body {
+  font-family: 'Poppins';
+  margin: 5px 0px 5px 0px;
+}
+
+h1 {
+  font-size: 4em;
+  text-align: center;
+  font-weight: 800;
+
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+h3 {
+  text-align: left;
+  color: #ED1C24;
+  font-size: .9rem;
+}
+
+p {
+  font-size: .9rem;
+}
+
+
+/* Header Images */
+.blackHeart {
+  width: 20px;
+  margin-right: 1rem;
+}
+
+.npmlogo {
+  width: 60px;
+  padding: 10px 10px 0px 8px;
+}
+
+.magglass{
+  width: 20px;
+  padding: 0px 5px;
+}
+
+
+
+/* "Top" Header */
+
+#navbar .topheader {
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+    font-size: .8em;
+    font-weight: 600;
+  }
+  
+nav {
+    width: 600px;
+  }
+  
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+nav a {
+    text-decoration: none;
+    color: black;
+  }
+
+
+/* "Bottom" Header */
+
+/* Couldn't get this section in a way I wanted it. Magnifying glass if off-centre, and input field does not span the page properly. I will do some more research on positioning the week before the course */
+
+.bottomheader {
+    padding: 5px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    height: auto;
+}
+
+.searchbar {
+  height: 32px;
+  background-color: #f7f4f4;
+
+
+}
+
+
+.bottomheader ::placeholder {
+  color: #808B96;
+  font-family: monospace;
+}
+
+.bottomheader form {
+  height: 32px;
+  display: flex;
+  align-items: center;
+  
+}
+
+.bottomheader form input {
+    background-color: #f7f4f4;
+    text-decoration: none;
+    border-style: none;
+    height: 23px;
+    padding-left: 5px;
+    width: 400px;
+  }
+  
+
+
+.searchbutton {
+  text-decoration: none;
+  font-family: "Poppins"; 
+  border: none;
+  background-color: #fb3e44;
+  color: white;
+  padding: 0px 20px 0px 20px;
+  height: 32px;
+}
+
+.join-login {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 180px;
+}
+
+.join-login a {
+  font-size: .8em;
+  color: black;
+  letter-spacing: 0.5px;
+  text-align: center;
+  text-decoration: none;
+  width: 85px;
+  padding: 5px 0px;
+}
+
+.joinborder {
+  border: 2px solid rgba(0,0,0,.05);
+}
+
+#intro {
+  background-color: #f7f4f4;
+  padding: 20px 0 50px 0;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#intro h1 {
+  padding-top: 20px;
+}
+
+#intro article {
+  text-align: center;
+  font-weight: 500;
+  width: 465px;
+  padding-bottom: 60px;
+}
+
+ #intro > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  margin: 10px 10px;
+}
+
+  #intro > div a {
+    text-decoration: none;
+    margin: 0px 20px;
+    padding: 8px 0px;
+    font-weight: 600;
+    width: 200px;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+
+  #intro .see-plans {
+    background-color: #FB3B49;
+    color: white;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+  }
+
+
+  #intro .join {
+    background-color: white;
+    color: black;
+  }
+
+  #value-prop {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #value-prop img {
+    margin: 70px 0px 35px 0px;
+    width: 200px;
+  }
+
+  #value-prop h2 {
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+    font-style: italic;
+    padding: 0px 30px;
+    margin-bottom: 30px;
+  }
+
+  #value-prop p {
+    text-align: center;
+    width: 650px;
+  }
+
+  #features {
+    margin: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  #features > article {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+  }
+
+  #features > article > div {
+    padding: 0px 20px;
+    width: 200px;
+  }
+  #features img {
+    width: 25px;
+  }
+
+  #features a {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 8px 60px;
+    box-shadow: 8px 8px rgba(128,83,35,.2);
+    margin-bottom: 80px;
+  }
+
+  .karl {
+    text-align: right;
+    margin-right: 7px;
+    font-size: .8rem;
+  }
