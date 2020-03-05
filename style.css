@@ -131,11 +131,14 @@ nav a {
   font-size: 1.1em;
 }
 
-#presentation{
+#presentation, #main-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+#presentation {
   height: 600px;
   background-color: rgba(232,217,217,.3)
 }
@@ -177,4 +180,58 @@ nav a {
 #main-content img {
   width: 200px;
   margin: 40px;
+}
+
+#main-content h2 {
+  background-color: RGBA(255,204,53,.4);
+  transform: skew(9deg, 0deg);
+  font-style: italic;
+  padding: 0 20px;
+}
+
+#main-content p {
+  width: 60%;
+  font-size: 0.9em;
+  text-align: center;
+}
+
+#features .container {
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+  margin: 100px auto 50px auto;
+}
+
+#features .container div {
+  width: 200px;
+}
+
+#features .container > div > img {
+  width: 30px;
+  margin: 0;
+}
+
+#features p {
+  text-align: justify;
+  font-size: 0.8em;
+}
+
+#features h5 {
+  color: #ED1C24;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+#features .btn-slot {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#features .btn-slot a {
+  background-color: black;
+  box-shadow: 8px 8px 0 rgba(128, 83, 35, .2);
+  color: white;
+  padding: 10px 90px;
+  font-weight: bold;
+  font-size: 0.8em;
 }
