@@ -11,13 +11,15 @@
         <meta name="author" content="Robert Bozsik">
         <meta name="keywords" content="HTML, CSS, Ironhack, lab">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+        
         <link rel="stylesheet" href="styles.css">
+        
     </head>
 
     <body>
         <header>
-            <div>
+            <!-- navigation -->
+            <div class="navigation">
                 <div>
                     <img class="black-heart" src="images/black-heart.png" alt="pictogram of a black heart" />
                     <span> Nifty Penguin Magic </span>
@@ -33,33 +35,38 @@
                     </ul>
                 </nav>
             </div>
-
-            <div>
-                <img src="images/npm-logo.png" alt="npm logo" />
-                <img src="images/magnifying-glass.png" alt="pictogram of a magnifying glass" />
+            
+            <!-- search -->
+            <div class="search">
+                <img id="npm-logo" src="images/npm-logo.png" alt="npm logo" />
+                
                 <form action="" method="">
+                    <img id="search-picto" src="images/magnifying-glass.png" alt="pictogram of a magnifying glass" />
                     <label for="search"> </label>
-                    <input id="search" type="search" placeholder="Search packages">
-                    <button type="button"> Search </button>
+                    <input id="search" type="text" placeholder="Search packages">
+                    <button type="button" id="search-button"> Search </button>
                 </form>
+                
                 <div>
-                    <a href="#"> Join </a> <!-- <button type="button"> Join </button> -->
-                    <a href="#"> Log In </a> <!-- <button type="button"> Log In </button> -->
+                    <a href="#" id="join-button"> Join </a> <!-- <button type="button"> Join </button> -->
+                    <a href="#" id="log-in-button"> Log In </a> <!-- <button type="button"> Log In </button> -->
                 </div>
             </div>
         </header>
 
+        <!-- section1 -->
         <section id="section1">
             <h1> Build amazing things </h1>
             <article> 
                 <p> Essential JavaScript development tools that help you go to market faster and build powerful applications using modern open source code. </p>
             </article>
             <div>
-                <a href="#"> See plans </a>
-                <a href="#"> Join for free </a>
+                <a href="#" id="see-plans-button"> See plans </a>
+                <a href="#" id="join-for-free-button"> Join for free </a>
             </div>
         </section>
 
+        <!-- section2 -->
         <section id="section2">
             <img src="images/triangle-hexagon.svg" alt="pictogram of a triangle hexagon" />
             <h2> Bring the best of open source to your company </h2>
@@ -68,28 +75,31 @@
             </article>
         </section>
 
+        <!-- section3 -->
         <section id="section3">
-            <div>
+            <div class="container">
                 <img src="images/zero-configuration.svg" alt="a pictogram of an arrow" />
                 <h3> Zero configuration </h3>
                 <p> Create an org, add your team, and start collaborating. Nothing to configure, set up, or manage. </p>
             </div>
-            <div>
+            <div class="container">
                 <img src="images/team-management.svg" alt="a pictogram of team management" />
                 <h3> Team management </h3>
                 <p> Control who has access to what modules within your team namespace using straightforward team management capabilities. </p>
             </div>
-            <div>
+            <div class="container">
                 <img src="images/familiar-features.svg" alt="a pictogram of familiar features" />
                 <h3> Familiar features </h3>
                 <p> npm Orgs has 100% parity with all the public npm registry features your developers already use. </p>
             </div>
-            <div>
+            <div class="container">
                 <img src="images/npm-audit.svg" alt="a pictogram of an binoculars" />
                 <h3> npm audit </h3>
                 <p> Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer. </p>
             </div>
-            <a href="#"> Create an Org </a>
         </section>
+        <div id="create-an-org-div">
+            <a href="#" id="create-an-org-button"> Create an Org </a>
+        </div>
     </body>
 </html>
