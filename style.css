@@ -23,9 +23,10 @@ nav ul {
   align-items: center;
 }
 
-nav a {
+a {
   text-decoration: none;
   color: black;
+  background-color: white;
 }
 
 .blackHeart {
@@ -50,7 +51,7 @@ nav a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 2rem;
+  padding: 10px 1rem 10px 2rem;
 }
 
 .search-img {
@@ -67,11 +68,13 @@ nav a {
 	background-color: rgba(0,0,0,0);
 	border: none;
 	font-size: 1em;
+  font-family: 'Poppins';
+  letter-spacing: 0.5px;
 }
 
 .search-container form {
 	display: flex;
-	flex-grow: 1;
+	flex-grow: 1; 
 }
 
 .search-container button {
@@ -80,6 +83,7 @@ nav a {
 	float: right;
 	width: 100px;
 	font-size: 1em;
+  letter-spacing: 0.5px;
 }
 
 .nav-btns {
@@ -87,4 +91,129 @@ nav a {
 	width: 200px;
 	display: flex;
 	justify-content: space-around;
+  padding-left: 10px;
+}
+
+.nav-btns a {
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 7px 15px;
+}
+
+#join-btn {
+  font-weight:  500;
+  border: 1px solid lightgray;
+  color: rgba(0,0,0);
+  border-radius: 0;
+}
+
+#npm-motto {
+  height: 472px;
+  background-color: rgba(232,217,217,.3);
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  padding: 4em 15em;
+
+}
+
+h1 {
+  font-size: 70px;
+  font-weight: bolder;
+}
+
+article {
+  margin: 0 11em 3em;
+  text-align: center;
+  color: #A9A9A9;
+}
+
+#npm-motto div {
+  margin-bottom: 3em;
+  display: flex;
+  justify-content: space-between;
+  width: 432px;
+}
+
+#npm-motto a {
+  letter-spacing: 0.5px;
+  width: 150px;
+  font-size: 0.75rem;
+  padding: 15px 15px;
+  text-align: center;
+}
+
+#npm-motto article {
+  color: black;
+}
+
+.red-btn {
+  box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+  background-color: #fb3e44;
+  color: white;
+}
+
+#about-npm {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 15em 4em;
+}
+
+.triangle-hexagon {
+  width: 250px;
+  margin-top: 4em;
+  margin-bottom: 3em;
+}
+
+#about-npm div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#about-npm article {
+  margin: 0 11em 3em;
+  font-size: 0.7rem;
+}
+
+#about-npm h2 {
+  background-color: rgba(255,204,53,.4);
+  transform: skew(9deg,0deg);
+  font-style: italic;
+}
+
+#npm-features img {
+  width: 40px;
+}
+
+#npm-features {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 0 10em;
+}
+
+#npm-features article {
+  width: 20%;
+  margin: 0;
+  text-align: left;
+  padding: 16px;
+  font-size: 12px
+}
+
+#npm-features h3 {
+  color: #ED1C24;
+  font-weight: bolder;
+}
+
+#npm-features a {
+  box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+  color: white;
+  background-color: black;
+  padding: 16px 128px;
+  margin-bottom: 2em;
+  margin-top: 2em;
 }
