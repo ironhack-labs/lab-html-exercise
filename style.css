@@ -10,16 +10,24 @@ body {
     font-family: 'Poppins';
 
 }
-
+h1, h2, h3{
+    margin-bottom: 0.5em;
+}
 
 h1{
     font-size: 4.5rem;
-    margin-bottom: 0.5em;
+    
 }
 
 h2{
     font-size: 2rem;
-    margin-bottom: 0.5em;
+    
+}
+h3{
+    font-size: 1.5rem;
+}
+p{
+    font-size: 0.9rem;
 }
 
 header{
@@ -169,7 +177,40 @@ box-shadow: 8px 8px 0 rgba(251,59,73,.2);
 }
 
 #features{
+    padding: 40px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
     
+}
+
+#features > div{
+    width: 20%;
+    padding: 0px 1rem 1rem;
+    font-size: .9rem;
+}
+
+#features > div > img{
+    width: 40px;
+    height: 40px;
+    
+}
+#features h3{
+    
+    padding: .5em 0;
+    color: #ED1C24;
+    margin: 0;
+}
+#features button{
+    width: 35%;
+    height: 50px;
+    background-color: black;
+    color: white;
+    line-height: 50px;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    margin: 30px 0;
+    font-size: 1rem;
 }
 
 
