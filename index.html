@@ -3,70 +3,77 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
     <title>npm | build amazing things</title>
   </head>
   <body>
     <!-- header -->
+
     <header>
       <div>
-        <h4>
-          <img src="images/black-heart.png" alt="black heart" /> Nifty Penguin
-          Magic
-        </h4>
+        <div>
+          <img
+            class="blackHeart"
+            src="images/black-heart.png"
+            alt="black heart"
+          />
+          <span>Nifty Penguin Magic</span>
+        </div>
+
+        <nav>
+          <ul>
+            <li><a href="#">npm Enterprise</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Solutions</a></li>
+            <li><a href="#">Resources</a></li>
+            <li><a href="#">Docs</a></li>
+            <li><a href="#">Support</a></li>
+          </ul>
+        </nav>
       </div>
 
-      <!-- nav -->
-      <nav>
-        <ul>
-          <li><a href="#">npm Enterprise</a></li>
-          <li><a href="#">Products</a></li>
-          <li><a href="#">Solutions</a></li>
-          <li><a href="#">Resources</a></li>
-          <li><a href="#">Docs</a></li>
-          <li><a href="#">Support</a></li>
-        </ul>
-      </nav>
-
       <!-- Searchbar -->
-      <div>
-        <img src="images/npm-logo.png" alt="npm logo" />
+      <div class="container">
+        <img class="logo" src="images/npm-logo.png" alt="npm logo" />
 
-        <form class="slot-search" id="search" method="GET" action="/search">
-          <div class="search-container">
-            <img src="images/magnifying-glass.png" alt="" />
-            <input
-              type="search"
-              name="search"
-              placeholder="Search packages"
-              element="input"
-            />
-            <button type="submit">Search</button>
+        <form class="inputrow" method="GET" action="/search">
+          <div>
+            <img class="search-icon" src="images/magnifying-glass.png" alt="" />
           </div>
+          <input type="search" class="search" placeholder="Search packages"
+          name="search" element="input"" />
+          <button type="submit" class="s-button">Submit</button>
         </form>
 
-        <div class="">
-          <a href="#">Sign Up</a>
-          <a href="#">Sign In</a>
+        <div class="btns-container">
+          <a class="ghost-bnt" href="#">Join</a>
+          <a class="log-in" href="#">Log in</a>
         </div>
       </div>
     </header>
 
     <!-- section 1 -->
-    <section>
+    <section id="hero-container">
       <h1>Build amazing things</h1>
       <article>
-        <h3>
+        <span>
           Essential JavaScript development tools that help you go to market
-          faster and build powerful applications using modern open source code.
-        </h3>
+          faster and build powerful applications using modern open source
+          code.</span
+        >
       </article>
-      <div><a href="#"> See plans </a> <a href="#">Join for free</a></div>
+      <div class="btns-container-hero">
+        <a class="btn-red" href="#"> See plans </a>
+        <a class="btn-white" href="#">Join for free</a>
+      </div>
     </section>
 
     <!-- section 2 -->
-    <section>
+    <section class="section2">
       <img src="images/triangle-hexagon.svg" alt="Hexagon" />
+
       <h2>Bring the best of open source to your company</h2>
+
       <article>
         <p>
           npm is the tool used by over 11,000,000 JavaScript developers around
@@ -78,8 +85,8 @@
     </section>
 
     <!-- section 3 -->
-    <section>
-      <div>
+    <section class="container2" id="structure">
+      <div class="box">
         <img src="images/zero-configuration.svg" alt="" />
         <h3>Zero configuration</h3>
         <p>
@@ -87,7 +94,7 @@
           configure, set up, or manage.
         </p>
       </div>
-      <div>
+      <div class="box">
         <img src="images/team-management.svg" alt="" />
         <h3>Team management</h3>
         <p>
@@ -95,7 +102,7 @@
           using straightforward team management capabilities.
         </p>
       </div>
-      <div>
+      <div class="box">
         <img src="images/familiar-features.svg" alt="" />
         <h3>Familiar features</h3>
         <p>
@@ -103,17 +110,16 @@
           your developers already use.
         </p>
       </div>
-      <div>
+      <div class="box">
         <img src="images/npm-audit.svg" alt="" />
         <h3>npm audit</h3>
         <p>
           Enjoy the security auditing features built into the npm client, a
           zero-friction way to make open source software safer.
         </p>
-        <div>
-          <a href="#">Create an Org</a>
-        </div>
       </div>
+
+      <a class="btn-black" href="#">Create an Org</a>
     </section>
   </body>
 </html>
