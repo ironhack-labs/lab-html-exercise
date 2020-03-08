@@ -1,23 +1,9 @@
 ![logo_ironhack_blue 7](https://user-images.githubusercontent.com/23629340/40541063-a07a0a8a-601a-11e8-91b5-2f13e4e6b441.png)
 
-# Module Exercise: HTML & CSS
-
-## Learning Goals
-
-In this exercise, the goal is to apply as many as possible of the concepts you've just learned:
-
-- when and how to use different HTML tags,
-- how to structure HTML page and add the content to it using _block and inline elements_,
-- how to use flexbox to position elements on the page and
-- how to style the page.
-
-## Getting started
-
-1. [Fork](https://gist.github.com/ironhack-edu/dd3635de73a6ef07ef337bf184eda985#step-1-fork-the-repository) this repo
-2. [Clone](https://gist.github.com/ironhack-edu/dd3635de73a6ef07ef337bf184eda985#step-2-clone-the-repository) this repo
-
-Whenever you create a first significant change, you should make your first commit.
-
+NPM Clone Nifty Penguin Magic npm Enterprise Products Solutions Resources Docs Support Search Join Log In Build amazing
+things Essential JavaScript development tools that help you go to market faster and build powerful applications using
+modern open source code. See plans Join for free 
+ 
 3. Follow these [guidelines to add, commit and push changes](https://gist.github.com/ironhack-edu/dd3635de73a6ef07ef337bf184eda985#step-3-add-commit-and-push-the-changes).
 
 In the end of this document, you will find guidelines on how to submit the exercise.
