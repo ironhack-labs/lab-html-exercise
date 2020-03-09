@@ -5,6 +5,7 @@
         <meta charset="utf-8">
         <title>NPM Clone</title>
         <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,600i,700,800&display=swap" rel="stylesheet">
     </head>
 
     <body>
@@ -26,35 +27,35 @@
                 </nav>
             </div>
             <div>
-                <img src="images/npm-logo.png" alt="npm Logo">
+                <img src="images/npm-logo.png" class="logo" alt="npm Logo">
                 <form action="" method="post">
                     <div>
-                        <label for="search"><img src="images/magnifying-glass.png" alt="Search"></label>
-                        <input type="text" name="search" id="search">
+                        <label for="search"><img src="images/magnifying-glass.png" alt="Search" class="magnify"></label>
+                        <input type="text" name="search" id="search" placeholder="Search packages">
                     </div>
-                    <div><button type="submit">Search</button></div>
+                    <button type="submit">Search</button>
                 </form>
-                <div>
-                    <a href="#">Join</a>
-                    <a href="#">Login</a>
+                <div class="buttons">
+                    <a href="#" class="button">Join</a>
+                    <a href="#">Log In</a>
                 </div>
             </div>
         </header>
 
         <section id="presentation">
-            <img src="images/triangle-hexagon.svg" alt="hexagon">
             <h1>Build amazing things</h1>
             <article>
                 <p>Essential JavaScript development tools that help you go to market faster and build powerful applications using
                     modern open source code.</p>
             </article>
-            <div>
-                <a href="#">See plans</a>
+            <div class="buttons">
+                <a href="#" class="important">See plans</a>
                 <a href="#">Join for free</a>
             </div>
         </section>
 
         <section id="open-source">
+            <img src="images/triangle-hexagon.svg" alt="hexagon" class="w250">
             <h2>Bring the best of open source to your company</h2>
             <article>
                 <p>npm is the tool used by
@@ -66,31 +67,31 @@
         <section id="formula">
             <div>
                 <div>
-                    <img src="images/zero-configuration.svg" alt="Zero configuration Icon">
+                    <img src="images/zero-configuration.svg" alt="Zero configuration Icon" class="icon">
                     <h3>Zero configuration</h3>
                     <p>Create an org, add
                         your team, and start collaborating. Nothing to configure, set up, or manage.</p>
                 </div>
                 <div>
-                    <img src="images/team-management.svg" alt="Team management Icon">
+                    <img src="images/team-management.svg" alt="Team management Icon" class="icon">
                     <h3>Team management</h3>
                     <p>Control who has access to
                         what modules within your team namespace using straightforward team management capabilities.</p>
                 </div>
                 <div>
-                    <img src="images/familiar-features.svg" alt="Familiar features Icon">
+                    <img src="images/familiar-features.svg" alt="Familiar features Icon" class="icon">
                     <h3>Familiar features</h3>
                     <p>npm Orgs
                         has 100% parity with all the public npm registry features your developers already use.</p>
                 </div>
                 <div>
-                    <img src="images/npm-audit.svg" alt="npm audit Icon">
+                    <img src="images/npm-audit.svg" alt="npm audit Icon" class="icon">
                     <h3>npm audit</h3>
                     <p>Enjoy the security
                         auditing features built into the npm client, a zero-friction way to make open source software safer.</p>
                 </div>
             </div>
-            <a href="#">Create an Org</a>
+            <a href="#" class="black-button">Create an Org</a>
         </section>
     </body>
 </html>

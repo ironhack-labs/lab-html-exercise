@@ -1,5 +1,249 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,600,600i,700,800');
+
+body, input, button {
+    font-family: 'Poppins';
+}
 
 body {
-  font-family: 'Poppins';
+    background: #fff;
+    padding: 0 50px 50px;
+    font-size: 10px;
+}
+
+/* ----- HEADINGS ---------------------------------------------- */
+
+h1 {
+    margin: 0;
+    font-size: 8em;
+    font-weight: 800;
+}
+
+h2 {
+    background: rgba(255,204,53,0.4);
+    font-style: italic; 
+    transform: skew(9deg,0deg);
+    font-size: 4em;
+    padding: 0 50px;
+}
+
+h3 {
+    color: #ED1C24;
+    font-size: 1.8em;
+}
+
+/* ----- HEADER ---------------------------------------------- */
+
+header {
+    box-shadow: 0 3px 4px -4px #000;
+}
+
+header > div {
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+    font-size: 1.5em;
+}
+
+nav {
+    width: 600px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+}
+
+.black-heart{
+    width: 20px;
+    margin-right: 1rem;
+}
+
+img.logo {
+    height: 25px;
+}
+
+header form {
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    width: calc(100% - 60px);
+    margin: 10px 30px;
+}
+
+header form > div {
+    background: #eee;
+    line-height: 1.5em;
+    padding: 5px 20px;
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+
+}
+
+.magnify {
+    opacity: 0.5;
+    width: 25px;
+    margin-right: 1rem;
+    line-height: 1.5em;
+    position: relative;
+    top: 10px;
+}
+
+header form input {
+    border: 0;
+    background: none;
+    color: rgba(0,0,0,0.5);
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 1.15;
+    height: 40px;
+    width: 100%;
+}
+
+header button {
+    background: #fb3e44;
+    border: 0;
+    color: #fff;
+    padding: 16px 20px;
+    height: 52px;
+    line-height: 1.5em;
+    letter-spacing: 0.3px;
+    font-size: 1em;
+}
+
+header .buttons {
+    display: flex;
+    justify-content: center;
+}
+
+header .buttons a {
+    padding: 5px 15px;
+    margin: 10px 10px;
+    color: #000;
+    text-decoration: none;
+    width: 50px;
+    text-align: center;
+}
+
+header .buttons a.button {
+    border: 1px solid #000;
+}
+
+/* ----- SECTION :: PRESENTATION ---------------------------------------------- */
+
+#presentation {
+    background: rgba(232,217,217,.3);
+    height: 600px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#presentation article {
+    font-size: 2em;
+    width: 30%;
+    margin: 3em 0;
+}
+
+#presentation .buttons {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+
+#presentation .buttons a {
+    background: rgb(255,255,255);
+    color: rgb(0,0,0);
+    font-size: 1.8em;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 1em 2em;
+    display: inline-block;
+    width: 150px;
+    letter-spacing: 0.5px;
+}
+
+#presentation .buttons .important {
+    background: #fb3e44;
+    box-shadow: 8px 8px 0 rgba(251, 62, 68, 0.2);
+    color: #fff;
+}
+
+/* ----- SECTION :: OPEN-SOURCE ---------------------------------------------- */
+
+#open-source {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#open-source article {
+    font-size: 1.9em;
+    text-align: center;
+    width: 50%;
+}
+
+/* ----- SECTION :: FORMULA ---------------------------------------------- */
+
+#formula {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#formula div {
+    display: flex;
+    justify-content: center;
+	flex-wrap: nowrap;
+    align-items: start;
+    margin-bottom: 2em;
+}
+
+#formula div > div {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    padding: 0 3em;
+    width: 250px;
+}
+
+#formula .icon {
+    width: 40px;
+}
+
+#formula p {
+    font-size: 1.6em;
+}
+
+/* ----- MISC ---------------------------------------------- */
+
+
+::placeholder { color: rgba(0,0,0,0.5); }
+
+.w250 { width: 250px; }
+
+.black-button {
+    background: #000;
+    box-shadow: 8px 8px 0 rgba(128,83,35,0.2);
+    color: #fff;
+    font-size: 1.8em;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    width: 300px;
 }
