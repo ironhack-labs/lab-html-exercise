@@ -70,18 +70,18 @@ p {
     font-weight: 600;
   }
   
-nav {
+  #navbar nav {
     width: 600px;
   }
   
-nav ul {
+  #navbar nav ul {
     list-style: none;
     display: flex;
     justify-content: space-around;
     align-items: center;
   }
   
-nav a {
+  #navbar nav a {
     text-decoration: none;
     color: black;
   }
@@ -89,9 +89,7 @@ nav a {
 
 /* "Bottom" Header */
 
-/* Couldn't get this section in a way I wanted it. Magnifying glass if off-centre, and input field does not span the page properly. I will do some more research on positioning the week before the course */
-
-.bottomheader {
+#navbar .bottomheader {
     padding: 5px 25px;
     display: flex;
     justify-content: space-between;
@@ -100,38 +98,36 @@ nav a {
     height: auto;
 }
 
-.searchbar {
-  height: 32px;
-  background-color: #f7f4f4;
-
-
-}
-
-
-.bottomheader ::placeholder {
+#navbar .bottomheader ::placeholder {
   color: #808B96;
   font-family: monospace;
 }
 
-.bottomheader form {
+
+#navbar .bottomheader form {
   height: 32px;
+  background-color: #f7f4f4;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  
+  flex-grow: 1;
+  margin: 0px 12px;
 }
 
-.bottomheader form input {
+#navbar .bottomheader form input {
     background-color: #f7f4f4;
     text-decoration: none;
     border-style: none;
     height: 23px;
     padding-left: 5px;
-    width: 400px;
+    flex-grow: 1;
+    margin-right: 5px;
+  
   }
   
 
 
-.searchbutton {
+#navbar .searchbutton {
   text-decoration: none;
   font-family: "Poppins"; 
   border: none;
@@ -141,14 +137,14 @@ nav a {
   height: 32px;
 }
 
-.join-login {
+#navbar .join-login {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 180px;
 }
 
-.join-login a {
+#navbar .join-login a {
   font-size: .8em;
   color: black;
   letter-spacing: 0.5px;
@@ -158,7 +154,7 @@ nav a {
   padding: 5px 0px;
 }
 
-.joinborder {
+#navbar .joinborder {
   border: 2px solid rgba(0,0,0,.05);
 }
 
