@@ -6,15 +6,17 @@
   <head>
     <title>Html Exercise</title>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
   </head>
+  
   <body>
     <header>
-        <div id='header-bar'>
+        <div>
             <div>
-                <img class='black-heart' src='images/black-heart.png' alt='Black heart'>
+                <img class='blackHeart' src='images/black-heart.png' alt='Black heart'>
                 <span>Nifty Penguin Magic</span>
             </div>
-            <nav class='nav-bar'>
+            <nav>
                 <ul>
                     <a href='#'><li>npm Enterprise</li></a>
                     <a href='#'><li>Products</li></a>
@@ -24,19 +26,23 @@
                     <a href='#'><li>Suport</li></a>
                 </ul> 
             </nav> 
-            <div>
-                <img class='npm-logo' src='images/npm-logo.png'> 
+        </div>
+        <div class='container1'>
+            <img class='npm-logo' src='images/npm-logo.png'>
+            
+            
+                <form class='searchBar' action="/search-bar" method='GET'>
+                <span><img class='mag-glass' src='images/magnifying-glass.png'></span>
+                <input type='text' placeholder="Search packages">
                 
-                <form action="/search-bar" method='GET'>
-                    <img class='mag-glass' src='images/magnifying-glass.png'>
-                    <label placeholder="Search pachages"></label>
-                    <input type='text'>
-                    <button type ='submit'>Search</button>
                 </form>
-            </div>
+                <button type ='submit'>Search</button>
+                
+        
+       
             <div class='nav-links'>
-               <a href='#'>Join</a>
-               <a href='#'>Log In</a>
+                <a href='#'>Join</a>
+                <a href='#'>Log In</a>
             </div>
         </div>
     </header>
