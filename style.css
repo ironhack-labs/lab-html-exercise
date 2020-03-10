@@ -66,10 +66,11 @@ nav a {
   height:40px;
   background-color: transparent;
   border: none;
-  width:calc(100% - 45px);
+  width:calc(100% - 55px);
   font-family: "Fira Mono", "Andale Mono", "Consolas", monospace;
   font-size: 16px;
   letter-spacing: 0px;
+  padding-left:10px;
 
 
 }
@@ -111,22 +112,26 @@ nav a {
 }
 
 h1{
-  font-size: 60px;
+  font-size: 80px;
   font-weight: 1000;
   margin:20px;
 }
 
 #section-1 article {
   text-align: center;
-  width:400px;
+  width:550px;
   line-height: 2;
-  font-weight: bold;
+  font-size:20px;
 }
 
 #section-1 a{
-  padding:14px 55px;
+  padding:14px 70px;
   text-decoration: none;
   color:black;
+  background-color: white;
+  margin: 0 20px;
+  font-weight: bold;
+  font-size: 20px;
   
 }
 
@@ -134,11 +139,13 @@ h1{
   background-color: #FB3B49;
   color: white;
   box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+  font-size: 20px;
 
 }
 
 .container2{
   padding:40px;
+  margin:25px 0;
 }
 
 #section-2{
@@ -173,4 +180,47 @@ h1{
   font-style: italic;
   padding: 0 10px;
   height:1.23em;
+}
+
+#section-3 img{
+  height: 35px;
+  width: 35px;
+}
+
+#section-3 > div{
+  display:flex;
+  flex-direction:row;
+  flex-wrap: nowrap;
+  margin: 0 40px;
+  padding:15px;
+  justify-content: center;
+}
+
+#section-3 span{
+  display:flex;
+  justify-content: center;
+  margin:25px;
+}
+
+#section-3 a{
+  text-decoration: none;
+  color:white;
+  background-color: black;
+  padding: 15px 150px;
+  box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+  margin-bottom:20px;
+}
+
+#section-3 h3{
+  color:#ED1C24;
+  font-weight:bolder;
+}
+
+.padding{
+  padding:20px;
+
+}
+
+#section-3 p{
+  width:250px;
 }
