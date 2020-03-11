@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>NPM - Ironhack exercise Miguel Valle</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -25,17 +25,19 @@
             </nav>
         </div>
 
-        <div>
+        <div id="search">
             <img class="npm-logo" src="images/npm-logo.png" alt="npm logo">
             
             <form>
-                <img class="magnifying-glass" src="images/magnifying-glass.png" alt="magnifying glass">
-                <input type="text" placeholder="Search packages">
-                <input type="button" value="Search">
+                <span>
+                    <label for="glass"><img class="magnifying-glass" src="images/magnifying-glass.png" alt="magnifying glass"></label>
+                    <input class="text" type="text" placeholder="Search packages">
+                </span>
+                <button type="button">Search</button>
             </form>
             
-            <a href="#">Join</a>
-            <a href="#">Log In</a>
+            <a id="join" href="#">Join</a>
+            <a id="login" href="#">Log In</a>
         </div>
     </header>
 
@@ -45,8 +47,8 @@
             Essential JavaScript development tools that help you go to market faster and build powerful applications using modern open source code.  
         </article>
         <div>
-            <a href="#">See plans</a>
-            <a href="#">Join for free </a>
+            <a id="seeplans" href="#">See plans</a>
+            <a id="joinforfree" href="#">Join for free </a>
         </div>
         
     </section>
