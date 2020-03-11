@@ -12,20 +12,6 @@ body {
     border-bottom: 1px solid lightgray;
   }
   
-  .header-on-top {
-    display: flex;
-  }
-
-  .npm-search-bar {
-    display: flex;
-    align-items: center;
-  }
-
-  .npm-search {
-    display: flex;
-    justify-content: center;
-  }
-
   h1 {
     font-size: 90px;
     color: black;
@@ -50,6 +36,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0;
   }
   
   nav a {
@@ -58,43 +45,48 @@ body {
   }
   
   input {
-    width: 1000px;
     height: 3.2rem;
     font-size: 12pt;
     background-color: rgba(0,0,0,.05);
     border-color:  rgba(0,0,0,.05);
+    flex-grow: 1;
   }
 
   button {
     width: 130px;
-    height: 3.2rem;
+    height: 3.4rem;
     font-size: 12pt;
     color:white;
     background-color: black;
   }
 
+  .signup-and-login {
+    display: flex;
+    align-items: center;
+  }
+
   .sign-up {
-    width: 130px;
-    height: 3.4rem;
+    box-sizing: border-box;
     font-size: 12pt;
     border: 1px solid rgb(192,192,192);
     color: black;
     background-color: white;
-    margin: 1rem;
     padding: 12px 30px;
+    margin-left: 2rem;
+    margin-right: 2rem;
   }
 
   .sign-in {
-    width: 100px;
-    height:50px;
+    box-sizing: border-box;
     font-size: 12pt;
     color: black;
     background-color: white;
   }
 
+
   .signup-for-free {
     width: 100px;
-    height: 2em;
+    height: 2rem;
     font-size: 14pt;
     border: 1px solid rgb(220,20,60);
     color:white;
@@ -108,7 +100,7 @@ body {
 
   .learn-Pro {
     width: 100px;
-    height: 2em;
+    height: 2rem;
     font-size: 14pt;
     border: 1px solid purple;
     color:white;
@@ -121,26 +113,24 @@ body {
   }
 
   .text {
-      margin-bottom: 30pt;
-      margin-top: 5pt;
+    margin-bottom: 30pt;
+    margin-top: 5pt;
   }
 
   img.blackheart {
     height: 1rem;
     margin-left: 0.5rem;
-    display: flex;
-    align-items: center;
   }
 
   img.npm-logo {
     height: 1.5rem;
     padding-right: 2rem;
   }
-
+  
   img.magnifying-glass {
-    width:30px;
-    height: 30px;
-    padding: 0.8rem;
+    width:1.5rem;
+    height: 1.5rem;
+    padding: 0.95rem;
     background-color: rgba(0,0,0,.05) ;
   }
 
@@ -197,6 +187,7 @@ body {
     height: 10px;
     margin-bottom: 5px;
 }
+
   .color-block-bottom {
       background-color: orangered;
       height: 10px;
@@ -205,6 +196,27 @@ body {
 
 
   /* modified for flexbox */
+  .header-on-top {
+    display: flex;
+    align-items: center;
+  }
+
+  .npm-search-bar {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+  }
+
+  .npm-search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .form {
+    display: flex;
+    flex-grow: 1;
+  }
   
   #services > div {
     display: flex;
