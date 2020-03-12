@@ -12,6 +12,7 @@ body {
 
 .nav-bar{
     /* border: 1px solid burlywood; */
+    border-bottom: 1px solid lightgray;
     height: 20px;
     width: auto;
     padding: 8px 0px 8px 0px; 
@@ -70,6 +71,7 @@ hr {
     display: flex;
     align-items: center;
     justify-content: space-between;
+   
 }
 
 .search-bar {
@@ -108,7 +110,15 @@ hr {
 
 .form-field {
     width: 100%;
-    height: 22px;
+    height: 28px;
+}
+
+.mag-glass {
+    padding: 8px;
+}
+
+.form-field {
+    background-color: rgba(0,0,0,.05);
 }
 
 .search-button {
@@ -129,10 +139,13 @@ hr {
 /* ----Main---- */
 
 .build {
+    background-color: rgba(232,217,217,.3);
     display: flex;
 	flex-direction: column;
 	align-items: center;
-    width: 370px;
+    width: auto;
+    height: 400px;
+    padding: 30px;
     margin: auto;
 }
 
@@ -147,4 +160,108 @@ hr {
 .tools {
     text-align: center;
     width: 450px;
+}
+
+.plan {
+    width: 500px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.plan a {
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.2em;
+    padding: 15px 50px;
+}
+
+.see-plan {
+    color: white;
+    background-color: #fb3e44;
+    box-shadow: 10px 10px pink;
+}
+
+.join-free {
+    color: black;
+    background-color: white;
+}
+
+/* ----Second section---- */
+
+.best {
+    background-color: white;
+    display: flex;
+	flex-direction: column;
+	justify-content: center;
+    width: auto;
+    height: 300px;
+    padding: 30px;
+    margin: auto;
+    align-items: center;
+}
+
+.best img {
+    height: 150px;
+}
+
+.best > p {
+    font-size: 1.5em;
+    background-color: yellow;
+}
+
+.world {
+    text-align: center;
+    width: 450px;
+}
+
+.world >p {
+    font-size: 0.8em;
+}
+
+/* ----third section---- */
+
+.funcs > div {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.func-article {
+    width: 200px;
+    margin: 20px;
+}
+
+.func-article img {
+    height: 30px;
+}
+
+.func-article p {
+    font-size: 0.6em;
+    text-align: start;
+}
+
+.func-article h6 {
+    color: #fb3e44;
+    font-weight: bolder;
+}
+
+/* ----Last section---- */
+
+.create {
+    width: auto;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 25px 0 150px;
+}
+
+.create a {
+    font-size: 1.2em;
+    text-align: center;
+    text-decoration: none;
+    padding: 15px 90px;
+    color: white;
+    background-color: black;
+    box-shadow: 10px 10px grey;
 }
