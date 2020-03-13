@@ -48,14 +48,14 @@
         Essential JavaScript development tools that help you go to market faster and build powerful applications using modern open source code.
       </article>
       <div>
-        <form id="see-plans" action="/some-url" method="get">
-          <input type="submit" value="See plans"/>
-        <form id="join-for-free" action="/some-url" method="get">
-          <input type="submit" value="Join for free"/>
+        <form action="/some-url" method="get">
+          <input id="see-plans" type="submit" value="See plans"/>
+        <form action="/some-url" method="get">
+          <input id="join-for-free" type="submit" value="Join for free"/>
       </div>
     </section>
 
-    <section>
+    <section class="bring-section">
       <img id="hexagon" src="images/triangle-hexagon.svg" alt="triangle-hexagon">
       <heading id="bring-heading">Bring the best of open source to your company</heading>
       <article id="bring-paragraph">npm is the tool used by
@@ -64,37 +64,40 @@
       </article>
     </section>
 
-    <section>
-      <div>
-        <img class="zero-configuration-img" src="images/zero-configuration.svg" alt="zero-configuration">
-        <heading>Zero configuration</heading>
-        <p>Create an org, add
-          your team, and start collaborating. Nothing to configure, set up, or manage.
-        </p>
-      </div>
-      <div>
-        <img class="team-management-img" src="images/team-management.svg" alt="team-management">
-        <heading>Team management</heading>
-        <p>Control who has access to
-          what modules within your team namespace using straightforward team management capabilities.
-        </p>
-      </div>
-      <div>
-        <img class="familiar-features-img" src="images/familiar-features.svg" alt="familiar-features">
-        <heading>Familiar features</heading>
-        <p>npm Orgs
-          has 100% parity with all the public npm registry features your developers already use.
-        </p>
-      </div>
-      <div>
-        <img class="npm-audit-img" src="images/npm-audit.svg" alt="npm-audit">
-        <heading>npm audit</heading>
-        <p>Enjoy the security
-          auditing features built into the npm client, a zero-friction way to make open source software safer.
-        </p>
-      </div>
-      <form id="create-org" action="/some-url" method="get">
-        <input type="submit" value="Create an org"/>
+    <section class="last-section">
+      <div class="characteristics">
+        <div class="make-colums">
+          <img class="zero-configuration-img" src="images/zero-configuration.svg" alt="zero-configuration">
+          <heading>Zero configuration</heading>
+          <p>Create an org, add
+            your team, and start collaborating. Nothing to configure, set up, or manage.
+          </p>
+        </div>
+        <div class="make-colums">
+          <img class="team-management-img" src="images/team-management.svg" alt="team-management">
+          <heading>Team management</heading>
+          <p>Control who has access to
+            what modules within your team namespace using straightforward team management capabilities.
+          </p>
+        </div>
+        <div class="make-colums">
+          <img class="familiar-features-img" src="images/familiar-features.svg" alt="familiar-features">
+          <heading>Familiar features</heading>
+          <p>npm Orgs
+            has 100% parity with all the public npm registry features your developers already use.
+          </p>
+        </div>
+        <div class="make-colums">
+          <img class="npm-audit-img" src="images/npm-audit.svg" alt="npm-audit">
+          <heading>npm audit</heading>
+          <p>Enjoy the security
+            auditing features built into the npm client, a zero-friction way to make open source software safer.
+          </p>
+        </div>
+      </div>  
+      <form action="/some-url" method="get">
+        <input id="create-org" type="submit" value="Create an org"/>
+      </form>
     </section>
   </body>
 </html>
