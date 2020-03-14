@@ -46,14 +46,14 @@ header > div {
     text-decoration: none;
     padding: 10px 30px;
     margin: 18px auto auto 0;
-    border-style: none;
-    
+    border-style: none;  
 }
 
 .second-header {
     padding: 0 25px;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 0 3px 3px -2px #d0d4d6;
 }
 
 .logo {
@@ -71,5 +71,126 @@ header > div {
     background-color: white;
     text-decoration: none;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+}
+
+.join-link {
+  margin: 0 15px 0 0;
+  border-style: solid;
+  border-width: 1px;
+  padding: 5px 15px
+}
+
+#Build {
+  position: static;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  height: 600px;
+  background-color: rgba(232,217,217,.3);
+}
+
+#Build h1{
+  font-size: 3.5em;
+  font-weight: bold;
+  margin: 120px 0 5px 0;
+}
+
+#Build article {
+  width: 22%;
+  text-align: center;
+}
+
+.build-red-link {
+  background-color: #FB3B49;
+  font-weight: bold;
+  color: white;
+  box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+  text-decoration: none;
+  padding: 10px 40px;
+}
+
+.build-link {
+  background-color: white;
+  font-weight: bold;
+  color:black;
+  text-decoration: none;
+  padding: 10px 40px;
+}
+
+#Build div {
+  width: 22%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;  
+  margin: 60px;
+}
+
+#Open-source {
+  position: static;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  height: 600px;
+  margin: 0 0 60px 0;
+}
+
+#Open-source h2 {
+  font-size: 2em;
+  background-color:rgba(255,204,53,.4);
+  transform: skew(9deg,0deg);
+  font-style: italic;
+  margin: 30px 10px 10px 10px;
+  padding: 0 20px;
+}
+
+#Open-source article {
+  width: 42%;
+  text-align: center;
+}
+
+.logo-rosa {
+  position: static;
+  margin: 100px 0 50px 0;
+}
+
+
+#create {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.create-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+}
+
+#create h3 {
+  color: #ED1C24;
+}
+
+.little-logo-create {
+  width: 40px;
+}
+
+#create p {
+  width: 61%
+}
+
+#create a {
+  color: white;
+  background-color: black;
+  box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+  text-decoration: none;
+  font-weight:bold;
+  padding: 10px 100px;
+  margin: 0 0 100px 0;
 }
