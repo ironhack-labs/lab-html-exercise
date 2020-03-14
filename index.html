@@ -4,33 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NPM Clone</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <div>
-            <img class="blackheart" src="./images/black-heart.png" alt="black heart">
-            <span>Nifty Penguin Magic</span>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#">npm Enterprise</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">Solutions</a></li>
-                <li><a href="#">Resources</a></li>
-                <li><a href="#">Docs</a></li>
-                <li><a href="#">Support</a></li>
-            </ul>
-        </nav>
-        <div>
-            <img class="npm-logo" src="./images/npm-logo.png" alt="npm logo">
-            <form action="/search" method="post">
-                <img src="./images/magnifying-glass.png" alt="magnifying glass logo">
-                <input type="text" name="searchInput" id="searchInput" placeholder="Search packages">
-                <button type="submit">Search</button>
-            </form>
             <div>
-                <a href="#">Join</a>
-                <a href="#">Log In</a>
+                <img class="blackHeart" src="./images/black-heart.png" alt="black heart">
+                <span>Nifty Penguin Magic</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">npm Enterprise</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Solutions</a></li>
+                    <li><a href="#">Resources</a></li>
+                    <li><a href="#">Docs</a></li>
+                    <li><a href="#">Support</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="searchDiv">
+            <img class="npm-logo" src="./images/npm-logo.png" alt="npm logo">
+            <form class="searchForm" action="/search" method="post">
+                <label for="searchInput">
+                    <img class="magnifying-glass-logo" src="./images/magnifying-glass.png" alt="magnifying glass logo">
+                </label>
+                <input type="text" name="searchInput" id="searchInput" placeholder="Search packages">
+                <button id="submitSearchButton" type="submit">Search</button>
+            </form>
+            <div id="loginActions">
+                <a id="joinButton" href="#">Join</a>
+                <a id="loginButton" href="#">Log In</a>
             </div>
         </div>
     </header>
