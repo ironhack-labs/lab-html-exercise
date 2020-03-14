@@ -36,9 +36,7 @@ nav a {
 
 .npmLogo {
   width: 100px;
-  margin-top: 1rem;
-  margin-right: 1rem;
-  margin-bottom: 1rem;
+  margin: 1rem 1rem 1rem 0;
 }
 
 .searchContainer {
@@ -95,6 +93,7 @@ nav a {
 .extraButtons {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   padding: 0 1rem 3rem 1rem;
 }
 
@@ -144,9 +143,40 @@ nav a {
   width: 550px;
 }
 
-#featuresSection {
+.features {
+	align-content: stretch;
   align-items: center;
-  color: blue;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+}
+
+.featureImg {
+  width: 20px;
+}
+
+#featureTitle {
+  color: #ED1C24;
+  font-weight: bold;
+  margin: 0.5rem 0.5rem 0.5rem 0;
+}
+
+#featuresSection ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.createButton {
+  background: black;
+  box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+  color: white;
+  cursor: pointer;
+  margin: 1.5rem;
+  padding: 1rem;
+  text-align: center;
+  text-decoration: none;
+  width: 300px;
 }
