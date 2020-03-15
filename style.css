@@ -7,7 +7,16 @@ form button letters color: white
 
 body {
   font-family: 'Poppins';
+  font-size: 10px;
+  line-height: 3.5em;
+  font-weight: 300;
 }
+
+body {
+  margin: 0 10% 0;
+  padding: 0;
+}
+
 
 header > div {
   padding: 0 25px;
@@ -38,6 +47,14 @@ nav a {
   margin-right: 1rem;
 }
 
+.fullbar {
+  display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: center;
+	align-content: stretch;
+}
+
 .logo {
   width: 60px;
   margin-right: 1rem;
@@ -45,20 +62,78 @@ nav a {
 
 .magnifyingglass {
   width: 20px;
-  margin-right: 1rem;
+  margin-right: 6px;
+  padding: 4px;
+}
+
+.form {
+border: transparent;
+padding: 4px;
+margin: 0;
+background-color: transparent;
+width: 100%;
+height: 100%;
+outline: none;
+}
+
+.bar-buttons {
+  display: flex;
+	justify-content: flex-start;
+	align-items: center;
+  width: 80%;
+  height: 27px;
+  background-color: rgba(0,0,0,.05);
 }
 
 .search {
   display: flex;
+  align-items: center;
   justify-content: center;
+  background-color: #fb3e44;
+  color: white;
+  font-family: 'Poppins';
+  font-size: 1em;
+  letter-spacing: 0.5px;
+  text-align: center;
+  text-decoration: none;
 }
 
-.link-bar {
+.bar-buttons2 {
   display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
-  background-color: white;
+	justify-content: flex-end;
+  width: 8%;
+  height: 27px;
+  
 }
+
+.join-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color:white;
+  outline: none;
+  color: black;
+  font-family: 'Poppins';
+  font-size: 1em;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+.login-button {
+  display: flex;
+  align-items: center;
+  outline: none;
+  justify-content: center;
+  background-color:white;
+  color: black;
+  font-family: 'Poppins';
+  font-size: 1em;
+  letter-spacing: 0.5px;
+  text-align: center;
+  border: transparent;
+}
+
+
 
 /*section */
 .grey-background {
@@ -67,30 +142,81 @@ nav a {
   position: center;
   padding: 0 25px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;  
 }
+
+.service-box {
+margin: 0 30% 0;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+	align-items: center;
+}
+
+.seeplans-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #fb3e44;
+  color: white;
+  font-family: 'Poppins';
+  font-size: 1em;
+  letter-spacing: 0.5px;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 10px;
+  width: 48%;
+}
+
+.joinforfree-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: white;
+  color: black;
+  font-family: 'Poppins';
+  font-size: 1em;
+  letter-spacing: 0.5px;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 10px;
+  width: 48%;
+}
+
 /*section1*/
 .white-background {
-  background-color:rgba(232,217,217,.3);
+  background-color:white;
   height: 600px;
   position: center;
   padding: 0 25px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center; 
 }
+
+
+
+.service-box2 {
+  margin: 0 25% 0;
+  }
 
 .triangle-hexagon {
   height: 300px;
-  position: center;
-  padding: 0 25px;
-  display: flex;
-  justify-content: center;
+  display: block;
+  margin: 0 auto 0;
+  
 }
 
 /*section2*/
 .nobackground {
-  background-color:rgba(232,217,217,.3);
-  height: 600px;
+  background-color:white;
+  height: 300px;
   padding: 0 25px;
   display: flex;
   justify-content: center;
@@ -105,25 +231,10 @@ nav a {
 }
 
 
-
-
-.link-btn {
-  display: flex;
-  -ms-flex-item-align: column;
-  justify-content: center;
-  background-color: #fb3e44;
-  color: white;
-  font-family: 'Poppins';
-  font-size: 2em;
-  letter-spacing: 0.5px;
-  text-align: center;
-  text-decoration: none;
-  padding: 10px 30px;
-}
-
 .text {
+  margin: 0 30% 0;
   font-size: 1em;
-  font-weight: 100;
+  font-weight: 50;
   text-align: center;
   margin: 20px 0;
   font-family: 'Poppins';
@@ -140,19 +251,42 @@ nav a {
 .title2 {
   font-size: 2em;
   font-weight: 100;
-  text-align: center;
+  text-align: left;
   margin: 20px 0;
   font-family: 'Poppins';
-  color: :#fb3e44;
+  color:#fb3e44;
+}
+
+.container {
+  font-size: 1em;
+  font-weight: 100;
+  margin: 20px 0;
+  font-family: 'Poppins';
+  color: black;
+
 }
 
 /*section 3*/
 
-.link-black {
+.last-white-background {
+  background-color:white;
+  height: 150px;
+  padding: 0 25px;
   display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
+  align-items: center;
+  justify-content: center;
+  
+
+}
+
+.org-btn {
   background-color: black;
   color: white;
+  font-family: 'Poppins';
+  font-size: 1em;
+  letter-spacing: 0.5px;
+  padding: 10px 10px;
+  width: 30%;
+}
   
 }

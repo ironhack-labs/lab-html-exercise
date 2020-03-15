@@ -15,12 +15,10 @@ auditing features built into the npm client, a zero-friction way to make open so
   <meta charset="UTF-8">
   <title>lab-html-exercise</title>
   <link rel="stylesheet" href="style.css">
-
 </head>
-<body>
+
 <!-- partial:index.partial.html -->
-<!DOCTYPE html>
-<html>
+<body>
 <header>
   <div>
     <div>
@@ -38,39 +36,46 @@ auditing features built into the npm client, a zero-friction way to make open so
       </ul>
     </nav>
   </div>
-  <div>
+  <div class="fullbar">
     <img class="logo" src="images/npm-logo.png" alt="logo" />
     <!-- add logo, search bar and buttons (or links and style them as buttons later) -->
-    <button type="search">Search
-      <div class="slotformcontainersearch">
-        <img class="magnifyingglass" src="images/magnifying-glass.png" alt="magnifying-glass" />
-        <input type="text" placeholder="Search packages">
-        <a class="link-bar" href="#"> Join </a>
-        <a class="link-bar" href="#"> Login </a>
+    <div class="bar-buttons">
+    <img class="magnifyingglass" src="images/magnifying-glass.png" alt="magnifying-glass" />
+    <input class="form" type="text" placeholder="Search packages"/>
+    </div>
+    <button class="search" type="search">Search</button>
+      <div class="bar-buttons2">
+        <button class="join-button" type="search">Join</button>
+        <button class="login-button" type="search">Login</button>
       </div>
     
   </div>
 </header>
-  
+
+
+
   <section class="grey-background" id="Build-amazing-things">
+    <article><p class="title"> Build amazing things </p></article>
     <article class="service-box">
-      <p class="title"> Build amazing things </p>
       <p class="text"> Essential JavaScript development tools that help you go to market faster and build powerful applications using
         modern open source code. </p>
-      <a class="link-btn" href="#"> See plans </a>
-      
+    <article class="buttons">
+      <button class="seeplans-btn"> See plans </button>
+      <button class="joinforfree-btn"> Join for free </button>
     </article>
-    <article class="service-box">
-      <a class="link-btn" href="#"> Join for free </a>
     </article>
+    
   </section>
 
   <section1 class="white-background" id="Bring-the-best-of-open-source-to-your-company">
-    <article class="service-box">
+
+    <article>
       <img class="triangle-hexagon" src="images/triangle-hexagon.svg" alt="triangle hexagon" />
       <p class="title"> Bring the best of open source to your company </p>
-      <p class="text"> npm is the tool used by
-        over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it.
+    </article>
+
+    <article class="service-box2">
+      <p class="text"> npm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it.
         Create an Org and get more out of the tools your team already knows and loves. </p>
     </article>
   </section1>
@@ -80,39 +85,35 @@ auditing features built into the npm client, a zero-friction way to make open so
     <article class="container">
       <img class="imageoptions" src="images/zero-configuration.svg" alt="zero configuration" />
       <p class="title2"> Zero configuration! </p>
-      <p class="text"> Create an org, add your team, and start collaborating. Nothing to configure, set up, or manage. </p>
+      <p class="text3"> Create an org, add your team, and start collaborating. Nothing to configure, set up, or manage. </p>
     </article>
 
     <article class="container">
       <img class="imageoptions"src="images/team-management.svg" alt="team management" />
-      <p class="title2"> team management </p>
-      <p class="text"> Control who has access to what modules within your team namespace using straightforward team management capabilities. </p>
+      <p class="title2"> Team management </p>
+      <p class="text3"> Control who has access to what modules within your team namespace using straightforward team management capabilities. </p>
     </article>
 
     <article class="container">
       <img class="imageoptions"src="images/familiar-features.svg" alt="familiar features" />
-      <p class="title2"></p> Familiar features </p>
-      <p class="text"> npm Orgs has 100% parity with all the public npm registry features your developers already use. </p>
+      <p class="title2"> Familiar features </p>
+      <p class="text3"> npm Orgs has 100% parity with all the public npm registry features your developers already use. </p>
     </article>
     
     <article class="container">
       <img class="imageoptions"src="images/npm-audit.svg" alt="npm audit" />
       <p class="title2"> npm audit </p>
-      <p class="text"> Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer. </p>
+      <p class="text3"> Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer. </p>
     </article>
   </section2>
 
-  <section3 class="white-background" id="Bring-the-best-of-open-source-to-your-company">
-    <article class="container">
-      <a class="link-black" href="#"> Create an Org!</a>
-    </article>
+  <section3 class="last-white-background" id="Bring-the-best-of-open-source-to-your-company">
+    
+      <button class="org-btn"> Create an Org </button>
+    
   </section3>
 
  
-
-
-</html>
-<!-- partial -->
   
 </body>
 </html>
