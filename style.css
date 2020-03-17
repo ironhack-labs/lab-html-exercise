@@ -4,6 +4,15 @@ body {
     font-family: 'Poppins';
 }
 
+* {
+    font-family: 'Poppins';
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
 header > div {
     padding: 0 25px;
     display: flex;
@@ -28,9 +37,75 @@ nav a {
     color: black;
 }
 
+h1 {
+    font-size: 5rem ;
+}
+
+
 .blackheart {
     width: 20px;
     margin-right: 1rem;
+}
+
+.npm-logo {
+    width: 70px;
+    margin-right: 1rem;
+}
+
+.magnifying-glass {
+    width: 18px;
+    height: 18px;
+    margin: 5px;
+}
+
+.buttons {
+    display: flex;
+    min-width: 160px;
+    justify-content: center;
+}
+
+.button {
+    border: 1px solid lightgray;
+    background-color: white;
+    padding: 5px 14px;
+    margin: 5px;
+    font-size: smaller;
+    width: 60px;
+    text-align: center;
+}
+
+.no-border {
+    border: none;
+}
+
+#container-search form {
+    display: flex;
+    width: 100%;    
+    margin: 5px;
+    align-items: center;
+    background-color: rgba(0,0,0,.05);
+    margin-right: 30px;
+}
+
+#container-search form input {
+    width: 100%;
+    border: none;
+    background-color:transparent;
+    height: 30px;
+    
+}
+
+#container-search form button {
+    height: 40px;
+    width: 100px;
+    background-color: #fb3e44;
+    border: 1px;
+    color: white;
+}
+
+
+#search-form label {
+    color: rgba(0,0,0,.05);
 }
 
 /*Hero section*/
@@ -40,4 +115,6 @@ nav a {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    height: 600px;
+    background-color: rgba(232,217,217,.3);
 }
