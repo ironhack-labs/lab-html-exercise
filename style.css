@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,600,800&display=swap');
 
 body {
     font-family: 'Poppins';
@@ -38,7 +38,15 @@ nav a {
 }
 
 h1 {
-    font-size: 5rem ;
+    font-size: 5rem;
+    font-weight: 800;
+    margin: 0;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    font-style: italic  ;
 }
 
 
@@ -58,13 +66,13 @@ h1 {
     margin: 5px;
 }
 
-.buttons {
+.buttons-search {
     display: flex;
     min-width: 160px;
     justify-content: center;
 }
 
-.button {
+.button-join {
     border: 1px solid lightgray;
     background-color: white;
     padding: 5px 14px;
@@ -110,11 +118,61 @@ h1 {
 
 /*Hero section*/
 
-#hero {
+.container-section {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     height: 600px;
+}
+
+#hero {
     background-color: rgba(232,217,217,.3);
+    box-shadow: 0 4px 5px lightgrey inset;
+}
+
+#hero article {
+    width: 430px;
+    text-align: center;
+    margin: 20px;
+}
+
+.buttons-hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 420px;
+}
+
+.button-plans {
+    background-color: #FB3B49;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+    color: white;
+    padding: 10px 50px;
+    font-weight: bold;
+}
+
+.button-join-hero {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    padding: 10px 50px;
+}
+
+/*About Section*/
+
+#about img {
+    width: 200px;
+    margin-bottom: 50px;
+}
+
+#about h2 {
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+    padding: 0 30px;
+}
+
+#about article {
+    width: 780px;
+    text-align: center;
 }
