@@ -8,47 +8,50 @@
     <body>
         <header id="header"> 
             <!-- div superior (header), va a contener el menu nav-->
-            <div>
-                <!-- Imagen de corazoncito -->
-                <img src="./images/black-heart.png" alt="Black Heart" />
-                <!-- Texto de imagen de corazoncito -->
-                <p>Neverending Pun Machine</p>
-
+            <div class="header-upper">
+                <div>
+                    <!-- Imagen de corazoncito -->
+                    <img class="blackheart" src="./images/black-heart.png" alt="Black Heart" />
+                    <!-- Texto de imagen de corazoncito -->
+                    <span>Neverending Pun Machine</span>
+                </div>
                 <!-- Menu -->
                 <nav>
                     <!-- Lista de menu -->
                     <ul>
-                        <li>npm Enterprise</li>
-                        <li>Products</li>
-                        <li>Solutions</li>
-                        <li>Resources</li>
-                        <li>Docs</li>
-                        <li>Support</li>
+                        <li><a href="#"> Enterprise </a></li>
+                        <li><a href="#"> Products </a></li>
+                        <li><a href="#"> Solutions </a></li>
+                        <li><a href="#"> Resources </a></li>
+                        <li><a href="#"> Docs </a></li>
+                        <li><a href="#"> Support </a></li>
                     </ul>
                 </nav>
             </div>
 
             <!-- div inferior (header), la barra de busqueda-->
-            <div>
-                <!-- Logo npm-->
-                <img src="./images/npm-logo.png" alt="npm logo"/>
-
+            <di v class="header-lower">
+                <!-- Logo npm -->
+                <img class="npm-logo" src="./images/npm-logo.png" alt="npm logo" />
                 <!-- Imagen Lupita -->
-                <img src="./images/magnifying-glass.png" alt="lupa busqueda"/>
+                <img class="lupita" src="./images/magnifying-glass.png" alt="lupa busqueda"/>
 
                 <!-- Barra de busqueda-->
-                <form action="//" method="GET">
-                    <input type="text" name="search-bar" id="search-bar" />
+                <form class="form-search-bar" action="//" method="GET">
+                    <input type="text" name="search-bar" id="search-bar" placeholder="Search packages"/>
                 </form>
 
                 <!-- Boton de busqueda-->
-                <button type="submit">Search</button>
+                    <button type="submit">Search</button>
 
-                <!-- Link join-->
-                <a href="#" target="">Join</a>
+                <!-- div para botones -->
+                <div class="header-lower-links">
+                    <!-- Link join-->
+                    <a class="w-border" href="#" target="">Join</a>
 
-                <!-- Link login-->
-                <a href="#" target="">Log In</a>
+                    <!-- Link login-->
+                    <a href="#" target="">Log In</a>
+                </div>
 
             </div>
         </header>
