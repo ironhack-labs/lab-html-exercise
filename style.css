@@ -13,6 +13,29 @@ a {
     color: black;
 }
 
+a:hover {
+    color:  #fb3e44;
+}
+
+h1 {
+    font-size: 5rem;
+    font-weight: 800;
+    margin: 0;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    font-style: italic;
+}
+
+h3 {
+    font-size: 1.2rem;
+    font-weight: 100;
+}
+
+/*Nav  header*/
+
 header > div {
     padding: 0 25px;
     display: flex;
@@ -37,18 +60,9 @@ nav a {
     color: black;
 }
 
-h1 {
-    font-size: 5rem;
-    font-weight: 800;
-    margin: 0;
-}
 
-h2 {
-    font-size: 2rem;
-    font-weight: 600;
-    font-style: italic  ;
-}
 
+/*Search header*/
 
 .blackheart {
     width: 20px;
@@ -82,8 +96,18 @@ h2 {
     text-align: center;
 }
 
-.no-border {
+.button-login {
     border: none;
+    background-color: white;
+    padding: 5px 14px;
+    margin: 5px;
+    font-size: smaller;
+    width: 60px;
+    text-align: center;
+}
+
+a.no-border:hover {
+    color: #fb3e44;
 }
 
 #container-search form {
@@ -109,6 +133,7 @@ h2 {
     background-color: #fb3e44;
     border: 1px;
     color: white;
+    cursor: pointer;
 }
 
 
@@ -152,12 +177,22 @@ h2 {
     font-weight: bold;
 }
 
+a.button-plans:hover {
+    color: black;
+}
+
 .button-join-hero {
     background-color: white;
     color: black;
     font-weight: bold;
     padding: 10px 50px;
 }
+
+a.button-join:hover {
+    background-color: #FB3B49;
+    color: white;
+}
+
 
 /*About Section*/
 
@@ -175,4 +210,51 @@ h2 {
 #about article {
     width: 780px;
     text-align: center;
+}
+
+/*Infos Section*/
+
+.infos-box {
+    display: flex;
+    margin: 0 90px;
+    justify-content: space-around;
+}
+
+.divs-infos {
+    display: flex;
+    flex-direction: column;
+}
+
+#infos img {
+    width: 40px;
+    margin-bottom: 20px;
+}
+
+#infos h3 {
+    color: #ED1C24;
+    margin: 0 0 30px 0;
+    font-weight: 600;
+}
+
+#infos p {
+    width: 240px;
+    margin-top: 0;
+}
+
+.container-button-create {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+.button-create {
+    width: 300px;
+    height: 45px;
+    background-color: black;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
 }
