@@ -17,6 +17,12 @@ body {
     text-align: center;
         
   }
+
+  h3 {
+    font-size: 1em;
+    text-align: center;
+    color: #FB3B49
+  }
   div {
     padding: 0 25px;
     display: flex;
@@ -52,23 +58,71 @@ body {
     width: 50px;
     margin-right: 1rem;
   }
-
+  .magGlass {
+    width: 30px;
+    margin-right: 1rem;
+  }
+  .triHexagon {
+    width: 200px;
+    margin-top: 2rem;
+  }
   .npm {
     width: 100px;
     margin-right: 1rem;
   }
 
   .btn-search {
-    background-color: black;
+    background-color: #FB3B49;
     color: white;
     font-size: 1em;
     letter-spacing: 0.5px;
     text-align: center;
     text-decoration: none;
     padding: 10px 30px;
-    margin-left: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
   }
+  .formSch {
+    background-color:rgba(232,217,217,.3);  
+  }
+.schField {
+  background-color:rgba(232,217,217,.3);
+  font-size: 16px;
+  letter-spacing: 0px;
+  border: none;
+  height: 40px;
+  padding-left: 10px;
+  border-radius: 0;
+  width: max-content; 
+  }
+  
+.btn-Join {
+  background-color: white;
+  color: black;
+  font-size: 1em;
+  border: 1px solid black;
+  letter-spacing: 0.5px;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 30px;
+  margin-top: 1em;
+  margin-left: 1em;
+  margin-bottom: 1em;
+    
+}
 
+.btn-LogIn {
+  background-color: white;
+  color: black;
+  font-size: 1em;
+  letter-spacing: 0.5px;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 30px;
+  margin-left: 1em;
+  margin-bottom: 1em;
+
+}
   .btn-see {
     background-color: #FB3B49;
     box-shadow: 8px 8px 0 rgba(251,59,73,.2);
@@ -79,8 +133,9 @@ body {
     text-decoration: none;
     padding: 10px 30px;
     margin-right: 1em;
+    margin-bottom: 2em;
   }
-  .btn-join {
+  .btn-JoinFr {
     background-color: white;
     color: black;
     font-size: 1em;
@@ -89,13 +144,42 @@ body {
     text-decoration: none;
     padding: 10px 30px;
     margin-left: 1em;
+    margin-bottom: 2em;
   }
-  .build-background {
+
+  .btn-org {
+    background-color: black;
+    color: white;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    font-size: 1em;
+    padding: 10px 30px;
+    width: 300px;
+    letter-spacing: 0.5px;
     text-align: center;
+    text-decoration: none;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+
+  .build-background {
     display: flex;
-    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
     justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    text-align: center;
     background-color:rgba(232,217,217,.3);
+  }
+  .bring-background {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    
   }
 
   .container {
@@ -104,13 +188,28 @@ body {
     padding: 75px 0;
   }
   .service-box {
-
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
     width: 600px;
     text-align: center;
-    border: 2px solid #EEE;
-    box-sizing: border-box;
-    margin: 50px 5% 0 5%;
-    padding: 20px;
+
+    }
+
+  .box-four {
+    width: 300px;
+  }
+    .endsection {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      
     }
 }
 
