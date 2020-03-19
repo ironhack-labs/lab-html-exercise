@@ -5,8 +5,34 @@ html, body {
     padding: 0;
 }
 
+h1, h2, h3 {
+    font-weight: 900;
+}
+
+h1 {
+    font-size: 8em;
+    margin: 10px;  
+}
+
+h2 {
+    font-size: 3em;
+    background-color: rgba(255, 204, 53, .4);
+    transform: skew(9deg,0deg);
+    padding: 0px 50px;
+    font-style: italic;
+}
+
+h3 {
+    font-size: 1.2em;
+    color: #ed1c24;
+}
+
 body {
   font-family: 'Poppins';
+}
+
+header {
+    box-shadow: 0 0 6px 3px rgba(0,0,0,0.28);
 }
 
 header > div {
@@ -51,7 +77,7 @@ nav a {
 
 .searchImg {
     width: 20px;
-    margin: 5px;
+    margin: 5px 15px;
     padding-top: 5px;
 }
 
@@ -62,7 +88,7 @@ nav a {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex;
-    margin: 10px 0;
+    margin: 7px 0;
 }
 
 .searchBar div {
@@ -74,6 +100,7 @@ nav a {
 
 .searchBar input {
     font-family: 'Poppins';
+    font-size: 1em;
     color: black;
     margin: 0;
     width: 1450px;
@@ -83,21 +110,134 @@ nav a {
 
 .searchBar button {
     background-color: #fb3e44;
+    font-size: 1em;
     color: white;
     border-style: none;
-    margin: 0;
     padding: 10px 20px;
+}
+
+.J-Li {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .J-Li a {
     text-decoration: none;
     color: black;
-    margin: 15px;
 }
 
 .join {
-    padding: 5px 15px;
+    padding: 4px 17px;
     border-style: solid;
     border-color: black;
     border-width: 1px;
+    margin-right: 20px;
+}
+
+#intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    background-color: rgba(232, 217, 217, .3);
+    padding: 70px;
+}
+
+.intro-text {
+    width: 47%;
+    text-align: center;
+    margin: 30px;
+    font-size: 1.9em;
+    font-weight: 600;
+}
+
+.intro-btn {
+    width: 45%;
+    margin:30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.intro-btn a {
+    font-size: 1.9em;
+    padding: 20px 90px;
+    font-weight: 900;
+    margin: 0 auto;
+}
+
+.seeplans-btn {
+    background-color: #fb3b49;
+    text-decoration: none;
+    color: white;
+    box-shadow: 8px 8px 0 rgba(251, 59, 73, .2);
+}
+
+.joinfree-btn {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+}
+
+#company {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    margin-bottom: 50px;
+}
+
+.triangle-hexagon {
+    width: 400px;
+    margin: 20px 0 50px 0;
+}
+
+.company-text {
+    text-align: center;
+    width: 60%;
+    font-size: 1.3em;
+}
+
+#npm-features {
+    padding-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#npm-features article {
+    font-size: 1.2em;
+}
+
+#npm-features > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+    width: 85%;
+    margin-bottom: 60px;
+}
+
+.features-art > div {
+    width: 18%;
+    margin: 50px;
+}
+
+.features-img {
+    width: 50px;
+}
+
+.create-org {
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.6em;
+    color:white;
+    background-color: black;
+    box-shadow: 8px 8px 0 rgba(128, 83, 35, .2);
+    padding: 20px;
+    width: 27%;
 }
