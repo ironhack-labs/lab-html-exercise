@@ -17,13 +17,16 @@ a{
 
 nav {
   width: 600px;
+  margin-right: -10px;
 }
 
 nav ul {
   list-style: none;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  /*align-items: center;*/
+  width: 64%;
+  float: right;
 }
 
 nav a {
@@ -34,8 +37,9 @@ nav a {
 nav li {
 	flex-grow: .5;
 	padding: 2px;
-	display: block;
+	display: inline-block;
 }
+
 
 img {
 	width: 40px;
@@ -46,10 +50,6 @@ h1{
 	justify-content: center;
 }
 
-form, input {
-	border: 0px;
-	background-color: #f2f2f2;
-}
 form{
 	margin: 5px 10px;
 	flex: 1 1 auto;
@@ -60,10 +60,26 @@ form img{
 	margin-bottom: 0px;
 	width: 15px;
 }
+form, input {
+	border: 0px;
+	background-color: #f2f2f2;
+}
+
+input{
+	width: 40%;
+}
 
 .blackHeart {
   width: 20px;
   margin-right: 1rem;
+}
+
+#login a{
+	color: black;
+}
+#login a:first-child{
+	border: .5px solid grey;
+	padding: 0 10px
 }
 
 #section1{
@@ -138,10 +154,18 @@ article{
 
 #secBoxes{
 	display: flex;
-	margin-bottom: 20px;
+	margin: 10px 60px 60px; 
+	
 }
+
+#secBoxes img{
+	width: 25px;
+}
+
 #secBoxes div{
-	width: 75%;
+	text-align: left;	
+	padding-right: 10px;
+	/*display: flex;*/
 }
 
 #section3 h4{
