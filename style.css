@@ -16,6 +16,11 @@ header > div {
     border-bottom: 1px solid lightgrey;
 }
 
+.nifty {
+    font-size: 10px;
+    letter-spacing: 0.5px;
+}
+
 nav {
     width: 600px;
 }
@@ -23,13 +28,16 @@ nav {
 nav ul {
     list-style: none;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-around;
+    align-items: flex-end;
 }
 
 nav a {
     text-decoration: none;
     color: black;
+    font-size: 10px;
+    letter-spacing: 0.5px;
+    display: flex;
 }
 
 .blackHeart {
@@ -52,9 +60,11 @@ nav a {
 }
 
 .searchbar {
-    height: 80%;
+    height: 60%;
+    width: 60%;
     margin-left: -50px;
     display: flex;
+    justify-content: space-between;
     border:  lightgrey solid;
     border-width: 1px;
     border-radius: 5px;
@@ -62,16 +72,22 @@ nav a {
     background-color: rgba(0,0,0,.05);
 }
 
+.bar {
+    display: flex;
+    width: 80%;
+}
+
 .searching {
     width: 15px;
     height: 15px;
-    margin-left: 0.5rem;
     align-self: center;
     background-color: rgba(0,0,0,.05);
+    padding-left: 5px;
 }
 
 .searchbar input {
     height: 100%;
+    width: 100%;
     float: left;
     display: block;
     color: black;
@@ -84,18 +100,146 @@ nav a {
 
 .searchbar button {
   height: 100%;
-  width: 100px;
+  width: 20%;
   font-size: 11px;
   border: none;
   float: left;
   color: white;
   background-color: #fb3e44;
+  letter-spacing: 0.5px;
+  text-align: center;
 }
 
 .little-buttons {
-    
+    width: 20%;
+    height: 100%;
+    margin-left: -20px;
     display: flex;
+    justify-content: space-around;
+    align-items: center;
     flex-direction: row;
-    justify-content: flex-end;
+}
 
+.little-buttons a {
+    text-decoration: none;
+    font-size: 11px;
+    color: black;
+    letter-spacing: 0.5px;
+    text-align: center;
+    padding: 5px 10px 5px 10px;
+    width: 30%;
+}
+
+.little-buttons a.join {
+    border: lightgrey inset;
+    border-radius: 5px;
+}
+
+#Intro-join {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+    margin-top: -100px;
+    background-color: rgba(232,217,217,.3);
+}
+
+#Intro-join h1 {
+    font-size: 50px;
+    font-weight: 100%;
+}
+
+#Intro-join article {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    margin-top: -20px;
+}
+
+.text p {
+    text-align: center;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+}
+
+.join-link {
+    width: 40%;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.join-link a {
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+}
+
+a.see-plans {
+    padding: 10px 50px 10px 50px;
+    text-align: center;
+    background-color: #FB3B49;
+    font-weight: bold;
+    color: white;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+}
+
+a.join-free {
+    color: black;
+    font-weight: bold;
+}
+
+#company-product {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10%;
+}
+
+.triangle {
+    width: 200px;
+    margin-bottom: 15px;
+    margin-top: -20px;
+}
+
+#company-product h2 {
+    width: 600px;
+    text-align: center;
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+    font-style: italic;
+}
+
+.npm-tool {
+    width: 500px;
+    font-size: 12px;
+    text-align: center;
+}
+
+#product-car div {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#product-car img {
+    width: 30px;
+    margin-right: 0.5rem;
+}
+
+.npm-services {
+    text-align: left;
+    font-size: 10px;
+    width: 500px;
+    margin: 20px;
+    width: 50%;
+}
+
+.npm-services p {
+    width: 200px;
 }
