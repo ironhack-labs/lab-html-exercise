@@ -1,8 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
+* {
+    font-family: 'Poppins';
+ }
 
 body {
   font-family: 'Poppins';
 }
+
+h1 {
+    font-size: 4.5em ;
+    font-weight: 1000 ;
+}
+
+/* HEADER */
 
 header > div {
     padding:  0 25px ;
@@ -10,6 +20,13 @@ header > div {
     justify-content: space-between;
     align-items: center ;
     border-bottom: 1px solid lightgray;
+}
+
+#header-welcome {
+    font-weight: 600;
+    font-size: 0,8em;
+    /* Shadow not working. Also there's an horizontal line that shouldn't be there. */
+    box-shadow: 10 10 5 black;
 }
 
 nav {
@@ -21,6 +38,11 @@ nav ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+#user-buttons {
+    display: flex;
+    flex-wrap: nowrap;
 }
 
 nav a{
@@ -37,6 +59,10 @@ nav a{
 .search-box {
     display: flex;
     justify-content: space-between;
+    width: 85% ;
+    height: 40px ;
+    padding: 8px 2px 8px 0 ;
+    margin: 5px 5px 5px 0px;
 }
 
 #npmLogo {
@@ -44,19 +70,16 @@ nav a{
     height: 20px ;
 }
 
-.search-box {
-    width: 90% ;
-    background-color: rgba(0,0,0,.05) ;
-    padding: 8px 2px 8px 0 ;
-    margin: 10px 15px 10px 13px;
-}
-
 #magnifyingGlass {
     width: 18px;
+    height: 24px;
+    background-color: rgba(0,0,0,.05);
+    padding: 8px 12px ;
 }
 
 .search-box form {
     width: 100% ;
+    background-color: rgba(0,0,0,.05) ;
     display: flex ;
     justify-content: space-between ;
 }
@@ -64,4 +87,83 @@ nav a{
     width: 100%;
     border: none;
     background: none ;
+}
+
+#search-button {
+    border: none;
+    background-color: #fb3e44 ;
+    color: white;
+    padding-left: 11px ;
+    padding-right: 11px ;
+}
+
+/* The user buttons don't have the right spacing */
+#user-buttons a {
+    text-decoration: none;
+    padding: 7px;
+    color: black ;
+}
+
+#join-button {
+    border: 1px solid black;
+    padding-right: 13px ;
+}
+
+/* SECTION 1 */
+
+#section1 {
+    background-color: rgba(0,0,0,.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#section1 p {
+    font-size: 1.2em;
+    width: 40% ;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 25px ;
+}
+
+#section1-links { 
+    margin: 35px auto 95px auto;
+}
+#section1 a {
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 8px 42px 8px 42px ;
+}
+
+#see-plans {
+    color: white;
+    background-color: #fb3e44;
+    margin-right: 15px;
+    box-shadow: 5px 5px 1px rgba(0,0,0,.15);
+
+}
+
+#join4free {
+    color: black;
+    background-color: white ;
+    margin-left: 15px;
+}
+
+/* SECTION 2 */
+
+#section2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#offset-hexagon {
+    width: 185px;
+}
+
+/* SECTION 3 */
+
+#structure img {
+    width: 50px ;
 }

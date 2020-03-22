@@ -17,7 +17,6 @@
 
                 <nav>
                     <ul>
-                        <!-- Links don't have a proper value -->
                         <li> <a href="https://www.npmjs.com/"> npm Enterprise </a></li>
 
                         <li> <a href="https://www.npmjs.com/"> Products </a></li>
@@ -40,15 +39,16 @@
                     <img id="magnifyingGlass" src="./images/magnifying-glass.png" alt="">
 
                     <form action="" method="">
-                        <input type="search" placeholder="Search packages">
+                        <input type="search" placeholder="Search packages" id="search-input">
 
-                        <input type="button" value="Search">
+                        
                     </form>
+
+                    <input type="button" value="Search" id="search-button">
                 </div>
 
-                <div class="user-buttons">
-                    <!-- Links don't have a proper value -->
-                    <a href="https://www.npmjs.com/"> Join </a>
+                <div id="user-buttons">
+                    <a href="https://www.npmjs.com/" id="join-button"> Join </a>
 
                     <a href="https://www.npmjs.com/"> Log In </a>
                 </div>
@@ -67,15 +67,15 @@
             </article>
 
             <div id="section1-links">
-                <a href="https://www.npmjs.com/"> See Plans </a>
+                <a href="https://www.npmjs.com/" id="see-plans"> See Plans </a>
 
-                <a href="https://www.npmjs.com/"> Join for free </a>
+                <a href="https://www.npmjs.com/" id="join4free"> Join for free </a>
             </div>
         </section>
 
         <!-- Section 2 -->
         <section id="section2">
-            <img src="./images/triangle-hexagon.svg" alt="Offset Hexagon">
+            <img src="./images/triangle-hexagon.svg" alt="Offset Hexagon" id="offset-hexagon">
 
             <h2> Bring the best of open source to your company </h2>
 
@@ -88,7 +88,7 @@
         <section id="section3">
             <div id="structure">
                 <div class="structure-box">
-                    <img src="./images/zero-configuration.svg" alt="Zero configuration">
+                    <img src="./images/zero-configuration.svg" alt="Zero configuration" id="img3-1">
 
                     <h4> Zero Configuration </h4>
 
@@ -96,7 +96,7 @@
                 </div>
 
                 <div class="structure-box">
-                    <img src="./images/team-management.svg" alt="Team management">
+                    <img src="./images/team-management.svg" alt="Team management" id="img3-2">
 
                     <h4> Team management</h4>
 
@@ -104,7 +104,7 @@
                 </div>
 
                 <div class="structure-box">
-                    <img src="./images/familiar-features.svg" alt="Familiar features">
+                    <img src="./images/familiar-features.svg" alt="Familiar features" id="img3-3">
 
                     <h4> Familiar features</h4>
 
@@ -112,7 +112,7 @@
                 </div>
 
                 <div class="structure-box">
-                    <img src="./images/npm-audit.svg" alt="npm audit">
+                    <img src="./images/npm-audit.svg" alt="npm audit" id="img3-4">
 
                     <h4> npm audit </h4>
 
