@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body {
+    font-family: 'Poppins';
+}
+
+header > div {
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+  }
+  
+nav {
+    width: 600px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.blackHeart {
+    width: 20px;
+    margin-right: 1rem;
+}
+
+.logo {
+    width: 5%;
+    padding: 0.5em;
+}
+
+/* TÄSSÄ ALAOSA YLÄREUNASTA                 */
+
+form { /* you can click the looking-glass image to focus the search bar!  */
+    height: 2em;
+    padding: 5px;
+    width: 82%;
+    box-sizing: content-box;
+    background-color: rgba(0,0,0,.05);
+
+}
+
+form img {
+    height: 1.5em;
+    padding-top: 2px;
+}
+
+.search-bar {
+    height: 2em;
+    padding: 0px 10px;
+    width: 88%;
+    background-color: rgba(0,0,0,0);
+    border-style: none;
+}
+
+.search-button {
+    position: relative;  /*yes, this is a dirty hack*/
+    right: -18px;
+    top: -6px;
+    background-color: #fb3e44;
+    color: white;
+    border-style: none;
+    height: 3em;
+    padding: 0px 10px 0px 10px;
+
+}
+
+.under-nav {
+    display: flex;
+    justify-content: space-around; /* oli space between äsken*/ 
+    align-items: center;
+    padding: 5px;
+    margin-right: 1%;
+}
+
+.under-nav a {
+    text-decoration: none;
+    color: rgb(53, 53, 53);
+    padding: 5px 10px 5px 10px;
+}
+
+#join-button {
+    border-style: solid;
+    border-color: gray;
+}
+/* siinä oli yläreuna. seuraavaksi osiot top, mid, bottom */
+
+#top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /*FLEX-START??*/
+    text-align: center; /* tää on arpeellienen pitää olla!*/
+    align-items: center;
+    padding: 0;
+    height: 600px;
+    background-color: rgba(232,217,217,.3);
+}
+
+h1 {
+    font-size: 5em;
+    font-weight: bolder;
+
+}
+
+#top p {
+    /*text-align: center;*/
+    width: 60%;
+    margin-top: -20px;
+    margin-bottom: 40px;
+
+}
+
+.top-button {
+    background-color:white;
+    width: 150px;
+    padding: 10px 20px;
+    font-size: 1.5em;
+    display: inline-flex;
+    justify-content: space-around;
+    margin: 0 10px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+
+}
+
+#see-plans {
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+    background-color: #fb3e44;
+    color: white;
+}
+
+
+/* middle section starts here */
+
+#middle {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 4%
+}
+
+h2 { /* tää on ainut instannsi joten sama muokata tähän!*/
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+    font-style: italic;
+    padding-right: 3%;
+    padding-left: 3%;
+
+}
+
+#middle article {
+    width: 750px;
+}
+
+#middle svg {
+    height: 15em;
+}
+
+/* bottom section*/
+
+#bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* tää ei tunnu tekevän mitään*/
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+h3 {
+    color: #ED1C24;
+    font-weight: bold;
+}
+
+.info-box {
+    padding: 10px;
+    width: fit-content;
+    /*text-align: left;/*/
+}
+
+.info-box svg {
+    height: 1.5em;
+}
+
+/*  bottom with button */
+
+footer {
+    height: 300px;
+}
+
+footer button {
+    /*margin: auto;*/
+    background-color: black;
+    color: white;
+    font-size: 1.1em;
+    border: none;
+
+    width: 340px;
+    padding: 10px 20px;
+    margin-top: 5%;
+    margin-left: 36%;
+    
+
+    /*display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;           so i guess this stuff doesn't work with buttons??                              */     
+
+    /*margin: 0 10px;*/
+    text-decoration: none;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2)
+}
