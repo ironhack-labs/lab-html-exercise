@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html>
     <head>
-
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles.css"> 
     </head>
     <body>
         <!-- HEADER -->
-        <header class="header">
-            <div class="header-top">
+        <header>
+            <div>
                 <div>
                   <img class="blackHeart" src="./images/black-heart.png" alt="black heart" />
                   <span>Neverending Pun Machine </span>
                 </div>
 
-                <nav class="navOptions">
+                <nav>
                   <ul>
                     <li><a href="#">npm Enterprise</a></li>
                     <li><a href="#">Products</a></li>
@@ -24,10 +25,10 @@
                 </nav>    
             </div>
 
-            <div class="header-bottom" action="">
-                <form class="searchForm">
+            <div>
+                <form class="searchForm" action="">
                     <img src="images/npm-logo.png" alt="npm logo"/>
-                    <input type="text" placeholder="Search packages">
+                    <input class="searchInputField" type="text" placeholder="Search packages">
                     <button>Search</button>
                 </form>
             
@@ -39,43 +40,58 @@
         </header>
         <main>
             <!-- SECTION "BUILD AMAZING THINGS" -->
-            <section class="section-amazingThings">
-                <h2>Build amazing things</h2>
-                <p>Essential JavaScript development tools that help you go to market faster and build powerful applications using modern open source code.</p>
-                <button class="btn-seePlans" onclick="">See plans</button>
-                <button class="btn-joinForFree" onclick="">Join for free</button>
+            <section id="section-amazingThings">
+                <div>
+                    <h2>Build amazing things</h2>
+                </div>
+                <div>
+                    <p>Essential JavaScript development tools that help you go to market faster and build powerful applications using modern open source code.</p>
+                </div>
+                <div>
+                    <button class="btn-seePlans" onclick="">See plans</button>
+                    <button class="btn-joinForFree" onclick="">Join for free</button>
+                </div>
+
             </section>
 
             <!-- SECTION "BRING THE BEST OF OPEN SOURCE..." -->
-            <section class="section-bringTheBest">
+            <section id="section-bringTheBest">
                 <img src="./images/triangle-hexagon.svg" alt="triangle hexagon"/>
-                <h3>Bring the best of open source to your company</h3>
-                <p>npm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it. Create an Org and get more out of the tools your team already knows and loves.</p>
+                <div>
+                    <h3>Bring the best of open source to your company</h3>
+                </div>
+                <div>
+                    <p>npm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it. Create an Org and get more out of the tools your team already knows and loves.</p>
+                </div>
             </section>
 
             <!-- SECTION "FEATURE CARDS" -->
-            <section class="section-featureCards">
+            <section id="section-featureCards">
                 <div class="cards">
-                    <img src="./images/zero-configuration.svg" alt="zero configuration icon">
-                    <h4>Zero configuration</h4>
-                    <p>Create an org, add your team, and start collaborating. Nothing to configure, set up, or manage.</p>
+                    <div class="card">
+                        <img src="./images/zero-configuration.svg" alt="zero configuration icon">
+                        <h4>Zero configuration</h4>
+                        <p>Create an org, add your team, and start collaborating. Nothing to configure, set up, or manage.</p>
+                    </div>
+                    <div class="card">
+                        <img src="./images/team-management.svg" alt="team management icon">
+                        <h4>Team management</h4>
+                        <p>Control who has access to what modules within your team namespace using straightforward team management capabilities.</p>
+                    </div>
+                    <div class="card">
+                        <img src="./images/familiar-features.svg" alt="familiar features icon"/>
+                        <h4>Familiar features</h4>
+                        <p>npm Orgs has 100&#37; parity with all the public npm registry features your developers already use.</p>
+                    </div>
+                    <div class="card">
+                        <img src="./images/npm-audit.svg" alt="npm audit icon">
+                        <h4>npm audit</h4>
+                        <p>Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer.</p>
+                    </div>
                 </div>
-                <div class="cards">
-                    <img src="./images/team-management.svg" alt="team management icon">
-                    <h4>Team management</h4>
-                    <p>Control who has access to what modules within your team namespace using straightforward team management capabilities.</p>
+                <div class="btn-featureCardArea">
+                    <button class="btn-createOrg" onclick="">Create an Org</button>
                 </div>
-                <div class="cards">
-                    <img src="./images/familiar-features.svg" alt="familiar features icon"/>
-                    <h4>Familiar features</h4>
-                    <p>npm Orgs has 100&#37; parity with all the public npm registry features your developers already use.</p>
-                </div>
-                <div class="cards">
-                    <img src="./images/npm-audit.svg" alt="npm audit icon">
-                    <h4>npm audit</h4>
-                    <p>Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer.</p>
-                </div>
-                <button class="btn-createOrg" onclick="">Create an Org</button>
             </section>
         </main>
     </body>

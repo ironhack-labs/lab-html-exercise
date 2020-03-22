@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins';
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    box-shadow: 0 3px 3px rgba(0,0,0,0.05);
+    background: rgba(255, 255, 255, 1);
+    animation-name: fadeInDown;
+}
+
+main {
+    position: relative;
+    top: 100px;
+}
+
+
+/* HEADER SECTION */
+header > div {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    
+}
+
+.blackHeart {
+    width: 20px;
+    margin-right: 1rem;
+}
+
+header > div > nav {
+    width: 600px;
+}
+
+header > div > nav > ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header > div > nav > ul > li > a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+.searchForm {
+    display: flex;
+    align-content: center;
+    height: 40px;
+    margin:  0 10px;
+}
+
+.searchForm > img {
+    margin: 10px;
+    height: 20px;
+    align-content: center;
+}
+
+.searchInputField {
+    width: calc(100vw - 400px);
+    background-image: url('./images/magnifying-glass.png');
+    background-size: 20px;
+    background-repeat: no-repeat;
+    text-indent: 40px;
+    background-color: rgba(0,0,0,.05);
+    border: none;
+    background-position: 10px center;
+}
+
+.searchInputField:focus {
+    background-image:none;
+    text-indent:0px;
+}
+
+.searchForm > button {
+    padding: 0 20px;
+    background-color:#fb3e44;
+    color: white;
+    border: none;
+}
+
+.loginArea > button {
+    padding: 5px 15px;
+    background-color: white;
+}
+
+.btn-join {
+    border-style: solid;
+    margin: 0 10px;
+}
+
+.btn-logIn {
+    border: none;
+}
+
+/* SECTION BUILD AMAZING THINGS */
+#section-amazingThings {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    height: 600px;
+    background-color: rgba(232,217,217,.3);
+}
+
+#section-amazingThings > div {
+    display: flex;
+    justify-content: center;
+}
+
+#section-amazingThings > div > h2 {
+    font-size: 4.5em;
+    font-weight: 900;
+    text-shadow: 4px 0px black;
+    letter-spacing: 4px;
+    margin: 20px;
+}
+
+#section-amazingThings > div > p {
+    font-size: 1.2em;
+    font-weight: 800;
+    text-align: center;
+    width: 500px;
+    margin: 20px;
+}
+
+#section-amazingThings > div > button {
+    padding: 15px 60px;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 20px;
+}
+
+.btn-seePlans {
+    background-color:#FB3B49;
+    color: white;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+}
+
+.btn-joinForFree {
+    background-color: white;
+    border: none;
+}
+
+/* BRING THE BEST OF OPEN SOURCE... */
+#section-bringTheBest {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    height: 500px;
+}
+
+#section-bringTheBest > img {
+    height: 200px;
+    margin: 0 50px 50px 50px;
+}
+
+#section-bringTheBest > div  {
+    display: flex;
+    justify-content: center;
+}
+
+#section-bringTheBest > div > h3 {
+    display: inline-block;
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+    font-style: italic;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 1.8em;
+    padding: 0 20px;
+    margin: 10px;
+}
+
+#section-bringTheBest > div > p {
+    display: inline-block;
+    width: 580px;
+    text-align: center;
+    font-size: 12px;
+    margin: 10px;
+}
+
+
+/* FEATURE CARDS... */
+
+#section-featureCards {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 60px;
+}
+
+.card {
+    width: 250px;
+    padding: 0 20px 10px 20px;
+}
+
+.card > img {
+    width: 40px;
+}
+
+.card > h4 {
+    color: #ED1C24;
+    margin: 10px 0 20px 0;
+}
+
+.card > p {
+    font-size: 14px;
+}
+
+.btn-featureCardArea {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-createOrg {
+    display: inline;
+    background-color: black;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    color: white;
+    padding: 10px 100px 10px;
+    justify-content: center;
+}
+
+
