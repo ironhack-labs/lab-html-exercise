@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body {
+  font-family: "Poppins";
+}
+
+a {
+    color: black;
+}
+
+/* 
+form label color: rgba(0,0,0,.05)
+form input color: rgba(0,0,0,.05)
+form button background color: #fb3e44
+form button letters color: white 
+*/
+
+header > div {
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+  }
+
+nav {
+    width: 600px;
+  }
+  
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+nav a {
+    text-decoration: none;
+    color: black;
+  }
+  
+.nav-image-top {
+    width: 20px;
+    margin-right: 1rem;
+  }
+
+/* Need to adjust magnifying glass bg color */
+.nav-image-bot {
+    height: 20px;
+    margin-right: 1rem;
+}
+
+.nav-top-left {
+    display: flex;
+	flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+	justify-content: space-between;
+}
+
+.nav-bottom-right {
+    list-style: none;
+    display: flex;
+	justify-content: space-around;
+    align-items: center;
+}
+
+#nav-join {
+    border: 1px solid gray;
+    padding: 10px 18px;
+}
+
+#nav-login {
+    padding: 12px 18px;
+}
+
+/* Need to adjust flexbox for form & search fields */
+#form-input[type=text] {
+    background-color: rgba(0,0,0,.05);
+    padding: 6px;
+    border: none;
+    font-size: 16px;
+    width: 950px;
+    height: 30px;
+}
+
+
+
+#form-button {
+    background-color: #fb3e44; /* Green */
+    border: none;
+    color: white;
+    padding: 12px 18px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+/* First Section */
+#top-heading {
+    font-size: 72px;
+    font-style: bold;
+}
+
+#top-section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    height: 600px;
+    background-color: rgba(232,217,217,.3);
+  }
+
+#top-copy-container {
+    width: 30%;
+    margin-top: 25px;
+}
+
+.top-buttons {
+    list-style: none;
+    display: flex;
+	justify-content: space-between;
+    align-items: center;
+    margin-top: 56px;
+    border: none;
+    padding: 5px 30px;
+    text-align: center;
+}
+
+#see-plans-button {
+    background-color: #FB3B49;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+    padding: 12px 48px;
+    color: white;
+}
+
+
+/* Second Section */
+#diamond {
+    height: 200px;
+    margin-bottom: 50px;
+}
+
+#mid-heading {
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+    font-size: 36px;
+    font-style: italic;
+}
+
+#mid-section {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    height: 600px;
+}
+
+#mid-copy-container {
+    width: 50%;
+    margin-top: 25px;
+}
+
+
+/*Third Section*/
+#bottom-section {   
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+    align-content: stretch;
+    margin-bottom: 150px;
+}
+
+#grid {
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+    align-content: stretch;
+    padding: 50px;
+    margin-bottom: 100px;
+}
+
+.grid-item {
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+    align-content: stretch;
+    padding: 25px;
+    padding: 0 25px 25px 25px;
+    height: 200px;
+}
+
+.grid-heading {
+    color: red;
+}
+
+.grid-image {
+    height: 35px;
+}
+
+.grid-paragraph {
+    width: 250px;
+}
+
+#create-an-org-button {
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    margin-bottom: 50px;
+    background-color:black;
+    padding: 12px 150px;
+    color: white;
+}
