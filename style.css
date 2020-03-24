@@ -71,12 +71,14 @@ nav a {
   align-items: center;
   color: rgba(0, 0, 0, 0.05);
   background-color: rgb(236, 236, 236);
+  box-sizing: content-box;
 }
 .SearchBar input {
   width: 950px;
   padding: 15px 0;
   background-color: rgb(236, 236, 236);
   border: none;
+  
 }
 .SearchBar button {
   background-color: #fb3e44;
@@ -91,9 +93,11 @@ nav a {
   flex-direction: column;
   align-items: center;
   background-color: rgb(241, 234, 234);
+  padding: 50px 0 80px 0;
 }
 body h1 {
   font-size: 4.5em;
+  font-weight: 900;
   
 }
 body h2 {
@@ -106,34 +110,46 @@ body h2 {
 }
 
 #presentation article {
-  width: 40%;
+  width: 33%;
   text-align: center;
   font-size: 1.1em;
 }
-
+.butt{
+  
+  display: flex;
+  justify-content: center;
+  align-items:;
+  padding: 80px;
+}
 .butt a{
+  padding: 50px;
+  
+  
+  
+  
   margin: 20px;
 }
+/*cant center the buttons*/
 
 #presentation div {
-  justify-content: space-evenly;
+  justify-content: space-between;
   padding: 20px;
   margin: 20px;
   text-decoration: none;
-  width: 40%;
+  width: 35%;
   flex-wrap: wrap;
   
 }
 #plans {
   background-color: #fb3e44;
   color: white;
-  padding: 15px 50px;
+  padding: 15px 60px;
   text-decoration: none;
   box-shadow: 5px 5px 2px rgb(255, 176, 176);
 }
 #join {
   color: black;
-  padding: 15px 50px;
+  padding: 15px 60px;
   text-decoration: none;
   
 }
@@ -147,6 +163,7 @@ body h2 {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  padding: 50px 0 0 0;
   
 
 }
@@ -158,9 +175,7 @@ body h2 {
 #sales img{
   margin: 10px 0 0 0;
 }
-section{
-  padding: 50px;
-}
+
 
 #features{
   display: flex;
@@ -178,10 +193,10 @@ body h3{
   font-size: 0.9em;
   font-weight: bolder;
 }
-#features div{
+.features{
   width: 170px;
-  padding: 40px;
-  margin: 40px;
+  padding: 25px;
+  
   
   
 }
