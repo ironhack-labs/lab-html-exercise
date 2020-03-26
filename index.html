@@ -1,11 +1,11 @@
-<!DOCTYPE>
+<!DOCTYPE html>
 
 <html>
 
     <head>
         <title>Lab HTML & CSS exercise</title>
         <meta charset="UTF-8"/>
-        <link rel = "stylesheet" href = ./style.css />
+        <link rel = "stylesheet" href = "./style.css" />
         <link rel="img" href="./images/">
     </head>
 
@@ -13,50 +13,54 @@
 
         <header>
 
-            <div>
+            <div class="first-div">
                 <div>
-                    <div>
-                        <img src="./images/black-heart.png" alt="black heart">
-                        <span>Nifty Penguin Magic</span>
-                    </div>
-
-                    <nav>
-                        <ul>
-                            <li><a href="#">Enterprise</a></li>
-                            <li><a href="#">Products</a></li>
-                            <li><a href="#">Solutions</a></li>
-                            <li><a href="#">Resources</a></li>
-                            <li><a href="#">Docs</a></li>
-                            <li><a href="#">Support</a></li>
-                        </ul>
-                    </nav>
+                    <img src="./images/black-heart.png" alt="black heart" class="blackHeart">
+                    <span>Nifty Penguin Magic</span>
                 </div>
-                
-                <div>
-                    <img src = "./images/npm-logo.png" alt="npm logo">
 
-                    <form>
-                        <img src="./images/magnifying-glass.png" alt="magnifying glass image for search">
-                        <input type="text" id="search-bar" placeholder="Search packages">
-                        <button type="submit">Search</button>
-                    </form>
-                    <a href="#">Join in</a>
+                <nav>
+                    <ul class="ul-order">
+                        <li><a href="#">npm Enterprise</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">Solutions</a></li>
+                        <li><a href="#">Resources</a></li>
+                        <li><a href="#">Docs</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </nav>
+            </div>
+                
+            <div class="second-div">
+
+                <img src = "./images/npm-logo.png" alt="npm logo" class="npm-logo">
+                <form>
+                    <img src="./images/magnifying-glass.png" alt="magnifying glass image for search" class="search-img">
+                    <input id="search-bar" type="text" placeholder="Search packages" style="text-indent: 17px;">
+                    <button type="submit">Search</button>
+                </form>
+                <div class="margin-join-log">
+                    <a href="#" class="join-in">Join</a>
                     <a href="#">Log in</a>
                 </div>
             </div>
+            
 
         </header>
 
         <!--Section 1-->
             <section id = "introduction">
 
-                <h1>Build amazing things</h1>
+                <h1><span>Build amazing things</span></h1>
 
                 <article>
 
-                    <p>Essential JavaScript development tools that help you go to the market faster and buuild powerful applications using modern open source code.</p>
-                    <a href="#">See plans</a>
-                    <a href="#">Join for free</a>
+                    <p>Essential JavaScript development tools that help you go to the market faster and build powerful applications using modern open source code.</p>
+
+                    <div class="a-flex">
+                        <a href="#" class="see-plans">See plans</a>
+                        <a href="#" class="join"><strong>Join for free</strong></a>
+                    </div>
 
                 </article>
 
@@ -65,8 +69,9 @@
         <!--Section 2-->
         <section id = "general-information">
 
-            <img src="./images/triangle-hexagon.svg" alt="triangle-hexagon image">
-            <h2>Bring the best of open source to your company</h2>
+            <img src="./images/triangle-hexagon.svg" alt="triangle-hexagon image" class="general-img">
+
+            <h2><span>Bring the best of open source to your company</span></h2>
 
             <article>
 
@@ -79,11 +84,11 @@
         <!--Section 3-->
         <section id = "features">
 
-            <div>
+            <div class="first-features">
                 <article>
 
                     <img src="./images/zero-configuration.svg" alt="zero configuration image">
-                    <h3>Zero configuration</h3>
+                    <h3><span>Zero configuration</span></h3>
                     <p>Create an Org, add your team, and start collaborating. Nothing to configure, set up, or manage.</p>
 
                 </article>
@@ -91,7 +96,7 @@
                 <article>
 
                     <img src="./images/team-management.svg" alt="team management image">
-                    <h3>Team management</h3>
+                    <h3><span>Team management</span></h3>
                     <p>Control who has access to what modules within your team namespace using straightforward team management capabilities.</p>
 
                 </article>
@@ -99,7 +104,7 @@
                 <article>
 
                     <img src="./images/familiar-features.svg" alt="familiar features image">
-                    <h3>Familiar features</h3>
+                    <h3><span>Familiar features</span></h3>
                     <p>npm Orgs has 100% parity with all the public npm registry features your developers already use.</p>
 
                 </article>
@@ -107,14 +112,14 @@
                 <article>
 
                     <img src="./images/npm-audit.svg" alt="npm audit image">
-                    <h3>npm audit</h3>
+                    <h3><span>npm audit</span></h3>
                     <p>Enjoy the security auditing features built into the npm client, a zero-friction way to make an open source software safer.</p>
 
                 </article>
 
             </div>
 
-            <div>
+            <div class="org-box">
                 <a href="#">Create an Org</a>
             </div>
 
