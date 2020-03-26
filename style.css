@@ -1,5 +1,207 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins');
+    @import url('https://fonts.googleapis.com/css?family=Poppins');
 
 body {
-  font-family: 'Poppins';
+    font-family: 'Poppins';
+}
+
+header > div {
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+}
+
+nav {
+    width: 600px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+  
+.blackHeart {
+    width: 20px;
+    margin-right: 1rem;
+}
+
+.npm-logo {
+    width: 50px;
+    margin-right: 1rem;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-line > .search-bar > #npm-search {
+    padding-left: 0.6em;
+    width: 800px;
+    height: 40px;
+    border: none;
+    background-color: rgba(0,0,0,.05);
+    letter-spacing: 0.2em;
+}
+
+.mag-glass {
+    display: flex;
+    height: 1em;
+}
+
+.search-line a {
+    text-decoration: none;
+    padding: .8em 2.5em;
+    margin: 0;
+}
+
+.search-line #join-button {
+    border: 1px solid black;
+    padding: 3px 1em;
+}
+
+.search-line > .search-bar > #search-button {
+    background-color: #fb3e44;
+    color: white;
+    height: 40px;
+    border: none;
+    padding: 0 1em;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.search-line #login-button {
+    color: black;
+    text-decoration: none;
+    padding: 3px 1em;
+}
+
+.first-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 600px;
+    background-color: rgba(232,217,217,.3);
+}
+
+.first-section h1 {
+    font-size: 5em;
+    font-weight: bold;
+    display: flex;
+    margin: 0;
+}
+
+.first-section > article {
+    display: flex;
+    margin: 3%;
+    text-align: center;
+    width: 35%;
+}
+
+.first-section > div {
+    display: flex;
+    justify-content: space-between;
+    width: 35%;
+}
+
+.first-section > div a {
+    padding: 20px 50px;
+    text-decoration: none;
+    text-align: center;
+}
+
+#see-plans-button {
+    color: white;  
+    background-color: #FB3B49;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+    font-weight: bold;
+}
+
+#join-button {
+    color: black;
+    font-weight: bold;
+    background-color: white;
+    /* --> Use to understand button's size*/
+}
+
+.second-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 500px;
+}
+
+.second-section h2{
+    transform: skew(9deg,0deg);
+    font-style: italic;
+    background-color: rgba(255,204,53,.4);
+    display: flex;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    margin-bottom: 0px;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.second-section svg {
+    display: flex;
+    width: 20%;
+    margin-top: 3%;
+}
+
+.second-section > article {
+    display: flex;
+    margin-top: 0px;
+    text-align: center;
+    width: 65%;
+}
+
+.third-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+
+.third-section div {
+    width: 18%;
+    height: 45%;
+    padding: 2%;
+}
+
+.third-section > div svg {
+    display: flex;
+    width: 30px;
+}
+
+.third-section > div h4 {
+    color: #ED1C24;
+    display: flex;
+}
+
+.create-org {
+    background-color: black;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    width: 25%;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-bottom: 100px;
+    position: relative;
+    left: 37.5%;
 }
