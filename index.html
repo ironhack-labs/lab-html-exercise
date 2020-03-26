@@ -7,6 +7,15 @@
         <meta charset="UTF-8"/>
         <link rel = "stylesheet" href = "./style.css" />
         <link rel="img" href="./images/">
+        <style>
+            #search-bar {
+                background-image: url('./images/magnifying-glass.png');
+                position: left;
+                padding-left: 30px;
+                background-size: 20px;
+                background-repeat: no-repeat;
+            }
+        </style>
     </head>
 
     <body>
@@ -35,8 +44,8 @@
 
                 <img src = "./images/npm-logo.png" alt="npm logo" class="npm-logo">
                 <form>
-                    <img src="./images/magnifying-glass.png" alt="magnifying glass image for search" class="search-img">
-                    <input id="search-bar" type="text" placeholder="Search packages" style="text-indent: 17px;">
+                    <!--<img src="./images/magnifying-glass.png" alt="magnifying glass image for search" class="search-img">-->
+                    <input type="text" id="search-bar" placeholder="Search packages">
                     <button type="submit">Search</button>
                 </form>
                 <div class="margin-join-log">
