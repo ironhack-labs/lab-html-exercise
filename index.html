@@ -12,7 +12,7 @@ auditing features built into the npm client, a zero-friction way to make open so
 <html>
     <head>
         <meta charset="utf-8">
-        <title>IronSkydive</title>
+        <title>npm</title>
         <link rel="stylesheet" href="style.css">
     </head>
   <body>
@@ -34,76 +34,91 @@ auditing features built into the npm client, a zero-friction way to make open so
             </nav>
             </div>
         
-            <div>
+            <div id="form-container">
             <img class="npm-logo" src="images/npm-logo.png" alt="npm logo" />
-            <form>
-                <input type="text" placeholder="Search packages" name="Search">
-                <button type="submit">Search</button>          
+            <form class="form">
+                <input class="form-label" type="text" placeholder="Search packages" name="Search">
+                <button class="form-btn" type="submit">Search</button>          
             </form>
             <div>
-                <a class ="link.btn" href="#"></a> Join </a>
-                <a class ="link.btn" href="#"></a> Log in</a>
+                <a class ="link-btn-form" href="#"> Join </a>
+                <a class ="link-btn" href="#"> Log in</a>
             </div>
             </div>
         </header>
         
-        <section class="part1">
-            <h1>Build amazinh things</h1> 
-            <article>Essential JavaScript development tools that help<br>
+        <!-- SECTION 1-->
+
+        <section class="container" id="first-section">
+            <h1>Build amazing things</h1> 
+            <article>
+                <p class="text">
+                    Essential JavaScript development tools that help<br>
                     you go to market faster and build powerful<br>
                     applications using modern open source code
+                </p>
             </article>   
-            <div>
-                <a class ="link.btn red" href="#"></a> See plans </a>
-                <a class ="link.btn" href="#"></a> Join for free </a>
+            <div class="btn">
+                <a href="#" class ="link-btn red"> See plans </a>
+                <a href="#" class ="link-btn"> Join for free </a>
             </div>
         </section>
 
-        <section class="part2">
-            <img class ="triangle-hexagon" src="images/triangle-hexagon.svg" />
+        <!-- SECTION 2-->
+
+        <section class="container">
+            <img id ="triangle-hexagon" src="images/triangle-hexagon.svg" />
             <h2>Bring the best open source to your company</h2>
             <article>
-                npm is the tool usewd by over 11,000,000 JavaScript developers around the world. You developers
+                <p class="text">
+                    npm is the tool usewd by over 11,000,000 JavaScript developers around the world. You developers
                 <br>alreday use it. Your company depends on it. Create an Org and get more out of the tools your
                 <br>team already knows and loves.
+                </p>
             </article>
         </section>
 
-        <section class="part3">
-            <div>
-                <article>
+        <!-- SECTION 3-->
+
+        <section id="global-box-3">
+            <div id="global-box">
+                <article class="container-box">
                     <img src="images/zero-configuration.svg" alt="zero configuration" />
                     <h4>Zero configuration</h4>
-                    <p>Create and org. add you team<br>and start collaborating.<br> 
-                    Nothing to configure, set up, or<br>manage. 
+                    <p class="text">
+                        Create and org. add you team<br>and start collaborating.<br> 
+                         Nothing to configure, set up, or<br>manage. 
                     </p>
                 </article> 
                 
-                <article>
+                <article class="container-box">
                     <img src="images/team-management.svg" alt="team team management" />
                     <h4>Team Management</h4>
-                    <p>Control who has access to<br>what modules within your<br>
-                    team namespace using<br>straightforward team<br>management capabilities 
+                    <p class="text">
+                        Control who has access to<br>what modules within your<br>
+                         team namespace using<br>straightforward team<br>management capabilities 
                     </p>
                 </article>
 
-                <article>
+                <article class="container-box">
                     <img src="images/familiar-features.svg" alt="Familiar features" />
                     <h4>Familiar features</h4>
-                    <p>npm Orgs 100% parity with<br>all the public npm registry<br>
+                    <p class="text">npm Orgs 100% parity with<br>all the public npm registry<br>
                         features your developers<br>already use.
                     </p>
                 </article>
 
-                <article>
+                <article class="container-box">
                     <img src="images/npm-audit.svg" alt="npm audit" />
                     <h4>npm audit</h4>
-                    <p>Enjoy the security auditing<br>features built into npm<br>
+                    <p class="text">Enjoy the security auditing<br>features built into npm<br>
                         client, a zero-friction way to<br> make open source software<br>safer.
                     </p>
                 </article>
             </div>
-            <a class ="link.btn black" href="#"></a> Create an Org </a>
+            <div>
+                <a class ="link-btn-black" href="#"> Create an Org </a>
+            </div>            
         </section>
     </body>
 </html>
