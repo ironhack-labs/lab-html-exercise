@@ -8,27 +8,29 @@ body {
 }
 
 header > div {
-    padding: 0 25px;
+    padding: 0 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: 0.8em;
     border-bottom: 1px solid lightgray;
   }
   
 nav {
     width: 600px;
+    font-size: 0.7em;
   }
   
 nav ul {
-    list-style: none;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    list-style: none;
+    height: 10px;
   }
   
 nav a {
-    text-decoration: none;
     color: black;
+    text-decoration: none;
   }
   
 .blackHeart {
@@ -37,23 +39,23 @@ nav a {
   }
 
 #second-bar img {
-    width: 30px;
+    width: 40px;
 }
 
 #second-bar {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+	justify-content: space-between;
 }
 
 #build-amazing {
     display: flex;
-    justify-content: center;
-    flex-direction: column;
-    height: 600px;
-    background-color: rgba(232,217,217,3);
     align-items: center;
-    padding: 20px 0 20px 0;
+    flex-direction: column;
+    height: 400px;
+    background-color: rgba(232,217,217,.3);
+    align-items: center;
+    padding: 80px 0 20px 0;
+    font-weight: bold;
   }
 
   .see-plans {
@@ -61,22 +63,41 @@ nav a {
     box-shadow: 8px 8px 0 rgba(251,59,73,.2);
     color: white;
     text-decoration: none;
-    padding: 12px 40px 12px 40px;
+    padding: 12px 50px 12px 50px;
+    font-size: 0.8em;
+    margin-right: 40px;
+    margin-bottom: 50px;
   }
 
   .log-in {
       text-decoration: none;
-      color: black;;
+      color: black;
+      font-size: 0.8em;
+      font-weight: bold;
+      margin-left: 40px;
+      margin-bottom: 50px;
+      background-color: white;
+      padding: 12px 50px 12px 50px;
   }
+
+#build-amazing article {
+    margin: 10px auto 50px auto;
+}
 
 #build-amazing h1 {
       font-size: 55px;
+      margin: 20px auto 20px auto;
+      font-weight: 900;
   }
 
+#build-amazing div {
+    margin: 10px auto 10px auto;
+
+}
+
 #bring-best {
-    padding-bottom: 30px;
-    padding-top: 100px;
-    justify-content: center;
+    padding-bottom: 20px;
+    padding-top: 80px;
     flex-direction: column;
     text-align: center;
   }
@@ -85,18 +106,21 @@ nav a {
     background-color: rgba(255,204,53,.4);
     transform: skew(9deg,0deg);
     font-style: italic;
-    padding: 0 10px 0 10px;
+    text-align: center;
+    width: 600px;
+    margin: auto;
   }
 
   #bring-best article {
-      padding-top: 5px;
       text-align: center;
       font-size: 0.8em;
+      margin-top: 20px;
   }
 
   #bring-best img {
       width: 180px;
       padding-bottom: 20px;
+      margin-top: 5px;
   }
 
 #four-menu {
@@ -110,23 +134,28 @@ nav a {
 
  #four-menu img {
      width: 20px;
+     padding-left: 10px;
  } 
 
  #four-menu h3 {
     color: #ED1C24;
     font-size: small;
+    padding-left: 10px;
  }
 
  #four-menu p {
      font-size: 0.8em;
+     padding: 10px 10px 10px 10px;
+     text-align: left;
  }
 
-#Org {
+#org {
     text-align: center;
     background-color: black;
-    background-size: length;
     color: white;
     font-size: 0.8em;
     line-height: 40px;
+    width: 300px;
+    margin: auto;    
     box-shadow: 8px 8px 0 rgba(128,83,35,.2);
 }
