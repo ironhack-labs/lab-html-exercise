@@ -29,34 +29,92 @@ nav ul {
     flex-wrap: wrap;
   }
   
+  nav ul li {
+    padding-left: 15px;
+    font-weight: bold;
+  }
+
 nav a {
     color: black;
     text-decoration: none;
   }
-  
+
 .blackHeart {
-    width: 20px;
+    width: 15px;
     margin-right: 1rem;
   }
 
+.text-after-bheart {
+  font-size: 0.7em;
+}
+
 #second-bar img {
-    flex-grow: 1;
     width: 40px;
+}
+
+.image1 {
+  flex-grow: 1;
+  padding-top: 8px;
+  padding-right: 8px;
+  max-width: 5%;
+}
+
+.slot-form {
+  flex-grow: 9;
+}
+
+.item3 {
+  flex-grow: 1;
+  max-width: 8%;
+}
+
+.join-link {
+  padding-right: 5px;
+  padding-left: 5px;
+  border: 1px solid gray;
+  outline-style: hidden;
+}
+
+.log-link {
+  padding-left: 10px;
+
 }
 
 #second-bar {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    justify-content: center;
 }
+
+.slot-form-container {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.search-input {
+    background-image: url(images/magnifying-glass.png);
+    background-position: 5px center;
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-color: #f2f2f2;
+    padding-left: 30px;
+    border-style: none;
+    width: 88%;
+}
+
 .slot-form-container button {
     background-color: #fb3e44;
     color: white;
     border-style: hidden;
     padding: 5px 10px 5px 10px;
+    margin-left: -2px;
 }
 
 .slot-form-container input {
     color: rgba(0,0,0,.05);
+    width: 88%;
+    height: 22px;   
+    font-size: 0.8em;
 }
 
 .join-log a {
