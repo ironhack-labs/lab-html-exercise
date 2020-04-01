@@ -29,9 +29,16 @@ nav a {
     margin-right: 1rem;
 }
 .buscar {
-    width: 1590px;
+    display: flex;
     padding: 5px;
+    flex-grow: 1;
+    padding: 2px;
+    align-content: center;
+    flex-wrap: nowrap;
     
+}
+.recuadro {
+    width: 95%;
 }
 
 .npm {
@@ -42,31 +49,39 @@ nav a {
 .lupa {
     width: 15px;
     position: absolute;
-    left: 80px;
+    left: 72px;
     padding: 2px;
     
 }
+
 .container {
     display: flex;
     width: 100%;
     height: 30px;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    
+    flex-wrap: nowrap;
     
 }
 .container button {
+    
     background-color: #fb3e44;
     color: white;
     padding: 5px;
     border: none;
+    align-self: flex-end;
+    margin-left: 5px;
 
 }
 .container a {
+   
     text-decoration: none;
     border-width: 2px;
     border-style: solid;
     border-color: #eee;
     color: black;
+    
 
 }
 /*-------------------SECCION 1----------------*/
