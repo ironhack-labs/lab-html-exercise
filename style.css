@@ -29,7 +29,7 @@ nav a {
 }
   
 .blackHeart {
-    width: 20px;
+    width: 30px;
     margin-right: 1rem;
 }
 
@@ -43,18 +43,28 @@ nav a {
     align-items: center;
 }
 
-.search-line > .search-bar > #npm-search {
-    padding-left: 0.6em;
-    width: 800px;
-    height: 40px;
-    border: none;
+.search-line > .search-and-magnify {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     background-color: rgba(0,0,0,.05);
+    width: 950px;
+    height: 40px;
+    margin: 5px 0px;
+}
+
+.search-line > .search-and-magnify > .search-bar > #npm-search {
+    width: 800px;
     letter-spacing: 0.2em;
+    border: none;
+    background-color: inherit;
 }
 
 .mag-glass {
     display: flex;
-    height: 1em;
+    height: 50%;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 .search-line a {
@@ -68,7 +78,7 @@ nav a {
     padding: 3px 1em;
 }
 
-.search-line > .search-bar > #search-button {
+.search-line > .search-and-magnify > .search-bar > #search-button {
     background-color: #fb3e44;
     color: white;
     height: 40px;
