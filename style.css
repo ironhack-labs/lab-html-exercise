@@ -93,19 +93,20 @@ input{
 }
 
 #building {
-  height: 600px;
+  height: 650px;
   display: flex;
   align-items: center ;
   align-content: space-around;
   justify-content: center;
   flex-flow: column wrap;
-  margin: 0;
+  height: 650px;
   background-color: rgba(232,217,217,.3);
   
 }
 
 #building h2{
-  font-size:  5em;
+  font-size:  5.5em;
+  
 }
 
 #building p{
@@ -113,6 +114,7 @@ input{
   font-weight: 20;
   justify-self: center;
   margin-bottom: 50px;
+  width: 35em;
   
 }
 
@@ -125,4 +127,72 @@ input{
   box-shadow: 10px 10px 5px #ff9498;
   padding: 20px 40px 20px 40px;
     
+}
+
+#general{
+  height: 600px;
+  display: flex;
+  align-items: center ;
+  align-content: center;
+  justify-content: center;
+  flex-flow: column wrap;
+  
+  
+}
+
+#general .exagono{
+  margin: 0;
+  padding-bottom: 20px;  
+  width: 15em;
+}
+
+#general h2{
+  background-color: rgba(255,204,53,.4);
+  transform: skew(9deg,0deg);
+  font-style: italic;
+  font-size: 2em;
+}
+
+#general article{
+  font: 1.2em;
+  width: 40em;
+  justify-content: center;
+	align-items: center;
+}
+
+.container{
+  width: 1200px;
+  margin: 0;
+  padding: 75px;
+}
+
+#general-information .container{
+  display:flex;
+  flex-direction: column;
+  width: 250px;
+}
+
+
+#general-information{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#general-information h3{
+  color: #ED1C24;
+}
+
+#general-information svg{
+  width: 20px;
+  margin-right: 1rem;
+}
+
+.create{
+  box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+  color: white;
+  background-color: black;
+  border: 1px solid black;
+  box-sizing: border-box;
+  text-decoration: none; 
+  padding: 10px 150px 10px 150px;
 }
