@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body {
+    font-family: 'Poppins';
+    margin: 0.5em 5em;
+}
+
+/* Header --> not fully mobile responsive, how can I do ? */
+header>div {
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+}
+
+nav {
+    width: 600px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.blackHeart {
+    width: 20px;
+    margin-right: 1rem;
+}
+
+#below-header>img {
+    width: 5em;
+    display: flex;
+    align-items: center;
+}
+
+#loupe {
+    width: 1.6em;
+    height: 1.6em;
+}
+
+#below-header {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.btn-join {
+    color: black;
+    text-decoration: none;
+    border: 0.05em solid black;
+    margin-left: 1em;
+}
+
+.btn-login {
+    color: black;
+    text-decoration: none;
+    border: none;
+}
+
+.header-btn a {
+    padding: 0.1em 1em;
+}
+
+.search-bar {
+    display: flex;
+    background-color: rgba(0, 0, 0, .05);
+    text-align: center;
+    padding: 0;
+    margin: 0.5em 0em;
+    align-items: center;
+    width: 75%;
+}
+
+.search-bar input {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    height: 3em;
+    width: 100%;
+}
+
+#search-btn {
+    background: #fb3e44;
+    color: white;
+    width: 10%;
+    height: 3em;
+}
+
+/*Section target*/
+#target {
+    background-color: rgba(232, 217, 217, .3);
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    ;
+    align-items: center;
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: 100000;
+    text-align: center;
+}
+
+#target p {
+    width: 50%;
+    text-align: center;
+}
+
+.seeplans-btn {
+    background-color: #FB3B49;
+    box-shadow: 8px 8px 0 rgba(251, 59, 73, .2);
+    color: white;
+    width: 10em;
+    height: 3em;
+    border: none;
+    margin-right: 2em;
+}
+
+.join-btn {
+    background-color: white;
+    color: black;
+    width: 10em;
+    height: 3em;
+    border: none;
+}
+
+#target-btn {
+    font-weight: bold;
+    /*seems not to take into accound bold*/
+    display: flex;
+    padding: 2em;
+    margin: 1em;
+}
+
+/*section npm-definition*/
+#npm-definition {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3em;
+    margin: 0;
+}
+
+#npm-definition img {
+    width: 15em;
+    padding-bottom: 2em;
+}
+
+#npm-definition p {
+    width: 50%;
+    text-align: center;
+    font-size: 11px;
+}
+
+#npm-definition h2 {
+    background: rgba(255, 204, 53, .4);
+    transform: skew(9deg, 0deg);
+    font-style: italic;
+    padding: 0em 1em;
+}
+
+/*section features*/
+#features {
+    display: flex;
+    flex-direction: column;
+    padding-top: 0em;
+    padding-bottom: 2em;
+    justify-content: center;
+}
+
+#features-list {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0;
+}
+
+#features img {
+    width: 2em;
+}
+
+#features p {
+    font-size: 11px;
+}
+
+#features h2 {
+    font-size: 12px;
+    color: #ED1C24;
+    font-style: bold;
+    /*same, bold is not working*/
+}
+
+#features div {
+    padding: 2em
+}
+
+#features a {
+    background: black;
+    color: white;
+    box-shadow: 8px 8px 0 rgba(128, 83, 35, .2);
+    text-decoration: none;
+    align-self: center;
+    padding: 1em 5em;
+    margin-top: 0em;
+}
