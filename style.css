@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body {
+  font-family: 'Poppins';
+  letter-spacing: 0.2px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Top of header - given by Ironhack */
+header > div {
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+}
+
+nav {
+    width: 600px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.blackHeart {
+    width: 20px;
+    margin-right: 1rem;
+}
+
+/* Bottom of header */
+
+/*
+form label color: rgba(0,0,0,.05)
+form input color: rgba(0,0,0,.05)
+form button background color: #fb3e44
+form button letters color: white
+*/
+.nav-bottom {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+.npm-logo {
+    flex-grow: 0;
+    width: 70px;
+    margin-right: 2rem;
+}
+
+.search {
+    background-color: rgba(0,0,0,.05);
+    flex-grow: 1;
+    margin: 16px auto;
+}
+
+.magnifying-glass {
+    height: 25px;
+    width: 25px;
+    vertical-align: middle;
+    padding: 0 0.5rem 0 1rem;
+}
+
+.search input {
+    border: none;
+    background-color: transparent;
+    font-family: 'Poppins';
+    letter-spacing: 0.3px;
+    font-size: 16px;
+    vertical-align: middle;
+    width: calc(100% - 151px);
+}
+
+.search button {
+    background-color: #fb3e44;
+    color: white;
+    border: 1px solid #d1d1d1;
+    padding: 0.75rem 1rem;
+    font-family: 'Poppins';
+    letter-spacing: 0.3px;
+    font-size: 16px;
+}
+
+.connexion-buttons {
+    flex-grow: 0;
+    margin-left: 2rem;
+}
+
+.connexion-buttons a {
+    text-decoration: none;
+    color: black;
+    padding: 7px 17px;
+}
+
+.connexion-buttons :first-child {
+    border: 1px solid #000;
+}
