@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
 
 body {
-  font-family: 'Poppins';
-  letter-spacing: 0.2px;
-  margin: 0;
-  padding: 0;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.2px;
+    margin: 0;
+    padding: 0;
 }
 
 /* Top of header - given by Ironhack */
@@ -75,7 +76,7 @@ form button letters color: white
 .search input {
     border: none;
     background-color: transparent;
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     letter-spacing: 0.3px;
     font-size: 16px;
     vertical-align: middle;
@@ -87,7 +88,8 @@ form button letters color: white
     color: white;
     border: 1px solid #d1d1d1;
     padding: 0.75rem 1rem;
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
     letter-spacing: 0.3px;
     font-size: 16px;
 }
@@ -105,4 +107,52 @@ form button letters color: white
 
 .connexion-buttons :first-child {
     border: 1px solid #000;
+}
+
+/* Introduction section */
+
+#introduction {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 600px;
+    background-color: rgba(232,217,217,.3);
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+#introduction h1 {
+    font-size: 77px;
+    font-weight: 700;
+}
+
+#introduction article {
+    width: 37%;
+    font-size: 20px;
+}
+
+.introduction-buttons {
+    width: 35%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 0;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#introduction a {
+    text-decoration: none;
+    padding: 1rem 4.25rem;
+}
+
+.see-plans {
+    background-color: #FB3B49;
+    color: white;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+}
+
+.join-free {
+    background-color: white;
+    color: black;
 }
