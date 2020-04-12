@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
 body {
     font-family: 'Poppins', sans-serif;
@@ -109,16 +109,21 @@ form button letters color: white
     border: 1px solid #000;
 }
 
-/* Introduction section */
+/* Multi-section elements */
 
-#introduction {
+.flex-container {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     height: 600px;
-    background-color: rgba(232,217,217,.3);
     text-align: center;
+}
+
+/* Introduction section */
+
+#introduction {
+    background-color: rgba(232,217,217,.3);
     padding-bottom: 60px;
 }
 
@@ -128,7 +133,7 @@ form button letters color: white
 }
 
 #introduction article {
-    width: 37%;
+    max-width: 35rem;
     font-size: 20px;
 }
 
@@ -155,4 +160,28 @@ form button letters color: white
 .join-free {
     background-color: white;
     color: black;
+}
+
+/* Open source section */
+
+#open-source img {
+    width: 270px;
+    margin-bottom: 70px;
+}
+
+#open-source heading {
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+}
+
+#open-source h2 {
+    transform: skew(-9deg,0deg);
+    font-size: 37px;
+    font-weight: 600;
+    margin: -6px 50px;
+}
+
+#open-source article {
+    max-width: 50rem;
+    padding: 20px 0;
 }
