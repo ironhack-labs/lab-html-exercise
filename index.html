@@ -1,71 +1,79 @@
-
 <! Doctype html >
+<html>
 
 <head>
-    <title>Lab HTML and CSS - Exercise</title>
+    <title>Lab HTML/CSS - Exercise</title>
+    <link rel="stylesheet" href="./style.css"/>
 </head>
+
 
 <body>
 
     <! –– Header ––>
 
         <header>
+            
 
-            <div>
-                
-                <div>       
-                    <img class="blackHeart" src="./images/black-heart.png" alt="black heart" />
-                    <span>Nifty Penguin Magic</span> 
+            <! –– First row ––>
+
+                <div class="first-row">
+                    <div>       
+                        <img class="blackHeart" src="./images/black-heart.png" alt="black heart" />
+                        <span>Nifty Penguin Magic</span> 
+                    </div>
+
+                    <nav>
+                        <ul>
+                            <li><a href="#"> npm Enterprise </a></li>
+                            <li><a href= "#"> Products </a></li>
+                            <li><a href="#"> Solutions </a></li>
+                            <li><a href="#"> Resources</a></li>
+                            <li><a href="#"> Docs</a></li>
+                            <li><a href="#"> Support</a></li>
+                        </ul>   
+                    </nav>
                 </div>
 
-                <nav>
-                    <ul>
-                        <li><a href="#"> npm Enterprise </a></li>
-                        <li><a href= "#"> Products </a></li>
-                        <li><a href="#"> Solutions </a></li>
-                        <li><a href="#"> Resources</a></li>
-                        <li><a href="#"> Docs</a></li>
-                        <li><a href="#"> Support</a></li>
-                    </ul>   
-                </nav>
 
-            </div>
 
-             
-            
-            <div>
-            <!-- add logo, search bar and buttons (or links and style them as buttons later) -->   
 
-                <div>
+            <! –– Second row ––>
+
+                <div class="second-row">
+                    
                     <div>
                         <img class="logo" src="./images/npm-logo.png" alt="npm logo" />
                     </div>
 
-                    <div>
-                        <form id= "search" action="/search" method="POST">
-                            <div>
-                                <img class="search" src="./images/magnifying-glass.png" alt="magnifying-glass">
-                                <input type="search" name="q" placeholder="Search packages">
-                                <button type="submit">Search</button>
-                            </div>
-                        </form>
+                    <div class="search-container">
 
                         <div>
-                            <a href="#"> Join</a>
-                            <a href="#"> Log In</a>
+                            <img class="magnifying-glass" src="./images/magnifying-glass.png" alt="magnifying-glass">
                         </div>
+
+                        <form id= "form-search" action="/search" method="POST">
+                            <input type="search" name="q" placeholder="Search packages">
+                            <button type="submit">Search</button>
+                        </form>
+
                     </div>
 
-
+                    <nav>
+                        <ul>
+                            <li><a href="#"> Join</a></li>
+                            <li><a href="#"> Log In</a></li>
+                        </ul>
+                    </nav>
+                        
                 </div>
-            </div>
 
         </header>
 
 
 
     <! –– Section 1 ––>
-        <section id="section-1">
+
+        <section id="first-section">
 
             <h1>Build amazing things</h1>
             
@@ -74,16 +82,20 @@
                 modern open source code.
             </article>
 
-            <div>
-                <a href="#"> See plans</a>
-                <a href="#"> Join for free</a>
-            </div>
+            <nav>
+                <ul>
+                    <li><a id="red-button" href="#">See plans</a></li>
+                    <li><a id="white-button" href="#">Join for free</a></li>
+                </ul>
+            </nav>
+
             
         </section>
 
 
 
-    <! –– Section 2 ––>
+
+        <! –– Section 2 ––>
         <section id="section-2">
 
             <div>
@@ -149,4 +161,11 @@
                     
         </section>
 
+
+
+
+
+
 </body>
+
+</html>
