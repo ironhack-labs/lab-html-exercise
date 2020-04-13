@@ -9,15 +9,15 @@ body {
     margin-right: 1rem;
 }
 .nav {
-    border: 3px solid orange;
+    /* border: 3px solid orange; */
 }
 
 span {
-    border:3px solid pink;
+    /* border:3px solid pink; */
     align-items: left;
 }
 .navTop {
-    border:3px solid red;
+    /* border:3px solid red; */
     padding: 0 25px;
     display: flex;
     justify-content: space-between;
@@ -26,7 +26,7 @@ span {
 }
 ul {
     list-style: none;
-    border:3px solid purple;
+    /* border:3px solid purple; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -42,7 +42,7 @@ ul a {
 
 .navBottom {
     
-    border:3px solid red;
+    /* border:3px solid red; */
     padding: 0 25px;
     display: flex;
     justify-content: space-between;
@@ -64,7 +64,12 @@ ul a {
 }
 
 #magnifying {
+    height: auto;
     width: 25px;
+}
+
+.navBottom {
+    margin: 5px;
 }
 
 #searchBar {
@@ -92,23 +97,30 @@ ul a {
 }
 
 .mainContainer, .main2Container {
-    border:3px solid blue;
+    /* border:3px solid blue; */
     height: 600px;
-    background-color: rgba(232,217,217,.3);
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+.mainContainer {
+    background-color: rgba(232,217,217,.3);
+}
+
+/* .main2Container {
+    
+} */
+
 h1{
     font-size: 65px;
-    border:3px solid brown;
+    /* border:3px solid brown; */
     margin-top: auto;
 }
 
 #main1p {
     margin-top: .5em;
-    border:3px solid yellow;
+    /* border:3px solid yellow; */
     width:33%;
     text-align: center;
 }
@@ -126,6 +138,7 @@ h1{
 #plans {
     background-color: #FB3B49;
     color: white;
+    font-weight: bold;
     border: none;
     width: 150px;
     height: 50px;
@@ -135,17 +148,18 @@ h1{
 
 #join {
     border: none;
+    font-weight: bold;
     width: 150px;
     height: 50px;
-    background-color: rgb(248, 244, 244) ;
+    background-color: white;
 }
 
 .main2Container {
-    border:3px solid lightblue;
+    /* border:3px solid lightblue; */
 }
 
 h2 {
-    border:3px solid burlywood;
+    /* border:3px solid burlywood; */
     padding:2px 10px;
     background-color: rgba(255,204,53,.4);
     transform: skew(9deg,0deg);
@@ -158,21 +172,21 @@ h2 {
 }
  
 #main2p {
+    /* border:3px solid yellow; */
     margin-bottom: auto;
     margin-top: .5em;
-    border:3px solid yellow;
     width:40%;
     text-align: center;
 }
 
 .featuresContainer {
-    border:3px solid darkblue;
+    /* border:3px solid darkblue; */
     display: flex;
     justify-content: center;
 }
 
 .features {
-    border: 3px solid red;
+    /* border: 3px solid red; */
     margin: 0 20px;
     width: 20%;
     display: flex;
@@ -192,7 +206,7 @@ h5 {
 }
 
 .createContainer {
-    border: 3px solid black;
+    /* border: 3px solid black; */
     width: 600px;
     margin: 0 auto;
     display: flex;
@@ -200,6 +214,7 @@ h5 {
 }
 #create {
     box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    margin: 40px auto;
     color: white;
     background-color: black;
     height: 50px;
