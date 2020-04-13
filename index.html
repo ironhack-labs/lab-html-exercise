@@ -26,20 +26,14 @@
         </div>
 
         <div class='navBottom'>
-                <img id='logo' src="./images/npm-logo.png" alt="npm logo">
+            <img id='logo' src="./images/npm-logo.png" alt="npm logo">
+            <div class='searchContainer'>
                 <img id='magnifying' src="./images/magnifying-glass.png" alt="magnifying-glass">
                 <input id ='searchBar' type="text" placeholder="Search packages">
-                <form id='searchButton'>
-                    <input type="submit" value='Search'>
-                </form>
-
-                <form id='joinButton'>
-                    <button type="submit">Join</button>
-                </form>
-
-                <form id='loginButton'>
-                    <button type="submit">Log in</button>
-                </form>
+                <button id='searchButton' type='submit'>Search</button>
+            </div>
+                    <button id='joinButton' type="submit">Join</button>
+                    <button id='loginButton' type="submit">Log in</button>
         </div>  
     </div>     
 
@@ -47,16 +41,12 @@
         <h1>
             Build amazing things
         </h1>
-            <p>
+            <p id='main1p'>
                 Essential JavaScript development tools that help you go to market faster and build powerful applications using modern open source code.
             </p>
         <div class='links'>
-            <form id='plans' action="https://www.npmjs.com">
-                <button type="submit">See plans</button>
-             </form>
-             <form id='join' action="https://www.npmjs.com/signup">
-                <button type="submit">Join for free</button>
-             </form>
+            <a href="http://www.npmjs.com/"><button id='plans' type ='submit'>See plans</button></a>
+            <a href="http://www.npmjs.com/signup"><button id='join' type='submit'>Join for free</button></a> 
         </div>
     </div>
 
@@ -65,7 +55,7 @@
         <h2>
             Bring the best of open source to your company
         </h2>
-        <p>
+        <p id='main2p'>
             npm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it. Create an Org and get more out of the tools your team already knows and loves.
         </p>
     </div>
@@ -101,9 +91,5 @@
                     </form>
                 </div>
     </div>
-        
-
-
-
         </body>
         </html>

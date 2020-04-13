@@ -39,8 +39,15 @@ ul a {
     padding: 5px;
 }
 
+
+
 .navBottom {
+    
     border:3px solid red;
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #logo {
@@ -48,28 +55,116 @@ ul a {
 
 }
 
-#magnifying {
-    width:30px;
+.searchContainer {
+    background-color: rgba(0,0,0,.05);
+    width: 80%;
+    height: 30px;
+    padding:3px 8px;
+    display: flex;
+    justify-content: space-between;
 }
 
-.mainContainer {
+#magnifying {
+    width: 25px;
+}
+
+#searchBar {
+    width: 90%;
+    border-width: 0px;
+    background-color: rgb(242, 242, 242);
+    color: rgb(85, 85, 85);
+}
+
+#searchButton {
+    background-color: #fb3e44;
+    color: white;
+}
+
+#joinButton {
+    border: 1px solid gray;
+    border-radius: none;
+    width: 50px;
+    height: 25px;
+}
+
+#loginButton {
+    border: none;
+
+}
+
+
+.mainContainer, .main2Container {
     border:3px solid blue;
+    height: 600px;
+    background-color: rgba(232,217,217,.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    font-size: 65px;
+    border:3px solid brown;
+    margin-top: auto;
+}
+
+#main1p {
+    margin-top: .5em;
+    border:3px solid yellow;
+    width:33%;
+    text-align: center;
+}
+
+.links {
+    /* border: 3px solid red; */
+    width: 33%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: auto;
+
+}
+
+#plans {
+    background-color: #FB3B49;
+    color: white;
+    border: none;
+    width: 150px;
+    height: 50px;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+    
+}
+
+#join {
+    border: none;
+    width: 150px;
+    height: 50px;
+    background-color: rgb(248, 244, 244) ;
 }
 
 .main2Container {
     border:3px solid lightblue;
 }
 
-p {
-    border:3px solid yellow;
-}
-
-h1{
-    border:3px solid brown;
-}
-
 h2 {
     border:3px solid burlywood;
+    padding:2px 10px;
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+    font-style: italic;
+
+}
+#hexagon {
+    margin-top: auto;
+    width: 150px;
+}
+ 
+#main2p {
+    margin-bottom: auto;
+    margin-top: .5em;
+    border:3px solid yellow;
+    width:40%;
+    text-align: center;
 }
 
 .featuresContainer {
