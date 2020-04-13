@@ -1,0 +1,147 @@
+/* FONTS */
+
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+/* GENERAL */
+
+body {
+    font-family: 'Poppins';
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+a,
+button {
+    text-decoration: none;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.btn {
+    letter-spacing: 0.3px;
+    font-size: .875rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    border: 0 none transparent;
+    color: rgba(0, 0, 0, .7);
+}
+
+.btn.red {
+    border-color: #fb3e44;
+    background-color: #fb3e44;
+    color: #FFF;
+}
+
+.btn.bordered {
+    border: 1px solid;
+}
+
+
+/* HEADER */
+
+header>div {
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+}
+
+header>div>div {
+    flex: 1 1 auto;
+}
+
+nav {
+    width: 600px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* header nav top */
+
+.blackHeart {
+    width: 20px;
+    margin-right: 1rem;
+}
+
+
+/* header > navBar */
+
+.search-navbar {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.npm-logo {
+    margin-right: 1rem;
+    margin-top: 1rem;
+    flex-grow: 0;
+}
+
+.npm-logo img {
+    padding-top: 3px;
+    width: 70px;
+}
+
+.search-form {
+    width: 50%;
+    background-color: rgba(0, 0, 0, .05);
+}
+
+.search-form form,
+.search-form form>div {
+    display: flex;
+}
+
+.search-form form>div {
+    flex-grow: 1;
+}
+
+.search-form form>div>input {
+    font-size: 14px;
+    letter-spacing: 0px;
+    border: none;
+    height: 40px;
+    padding-left: 10px;
+    border-radius: 0;
+    width: calc(100% - 10px);
+    -webkit-appearance: none;
+    background-color: transparent;
+}
+
+.search-form form>div>img {
+    width: 15px;
+    padding-top: 6px;
+    padding-right: 0.55rem;
+    padding-left: 1rem;
+}
+
+.btn-users-actions {
+    flex-grow: 0;
+    margin-left: 1.2rem;
+}

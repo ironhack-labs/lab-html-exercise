@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>NPM Clone</title>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
@@ -26,22 +27,23 @@
             </nav>
         </div>
 
-        <div>
-            <div>
-                <img class="blackHeart" src="images/npm-logo.png" alt="npm-logo" />
+        <div class="search-navbar">
+            <div class="npm-logo">
+                <h1 class="sr-only">npm</h1>
+                <a href="#0"><img src="images/npm-logo.png" alt="npm-logo" /></a>
             </div>
-            <div>
-                <div><img src="images/magnifying-glass.png" alt="magnifying-glass"></div>
-                <div>
-                    <form action="">
-                        <input type="text" placeholder="Search packages">
-                        <button type="submit">Search</button>
-                    </form>
-                </div>
-                <div>
-                    <a href="#0">Join</a>
-                    <a href="#0">Log In</a>
-                </div>
+            <div class="search-form">
+                <form action="" method="POST">
+                    <div>
+                        <img src="images/magnifying-glass.svg" alt="magnifying-glass" class="img-fluid">
+                        <input type="text" placeholder="Search packages" />
+                    </div>
+                    <button type="submit" class="btn red">Search</button>
+                </form>
+            </div>
+            <div class="btn-users-actions">
+                <a href="#0" class="btn bordered">Join</a>
+                <a href="#0" class="btn">Log In</a>
             </div>
         </div>
     </header>
