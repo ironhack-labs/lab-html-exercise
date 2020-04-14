@@ -36,7 +36,6 @@
 
 
 
-
             <! –– Second row ––>
 
                 <div class="second-row">
@@ -45,25 +44,22 @@
                         <img class="logo" src="./images/npm-logo.png" alt="npm logo" />
                     </div>
 
-                    <div class="search-container">
-
-                        <div>
-                            <img class="magnifying-glass" src="./images/magnifying-glass.png" alt="magnifying-glass">
-                        </div>
-
-                        <form id= "form-search" action="/search" method="POST">
-                            <input type="search" name="q" placeholder="Search packages">
-                            <button type="submit">Search</button>
-                        </form>
-
+                    <div>
+                        <img class="magnifying-glass" src="./images/magnifying-glass.png" alt="magnifying-glass">
                     </div>
 
-                    <nav>
-                        <ul>
-                            <li><a href="#"> Join</a></li>
-                            <li><a href="#"> Log In</a></li>
-                        </ul>
-                    </nav>
+                    <form class="search-container" action="/search" method="POST">
+                            <input class="search-box" type="search" id="fseacrh" name="search" placeholder="Search packages">
+                            <input class="search-button" type="submit" value="Search">
+                    </form>
+                   
+
+                        <nav>
+                            <ul>
+                                <li><a href="#"> Join</a></li>
+                                <li><a href="#"> Log In</a></li>
+                            </ul>
+                        </nav>
                         
                 </div>
 
