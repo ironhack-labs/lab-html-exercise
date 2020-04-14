@@ -1,11 +1,13 @@
 /* FONTS */
 
-@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,700');
 
 /* GENERAL */
 
 body {
     font-family: 'Poppins';
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
 }
 
 .sr-only {
@@ -24,6 +26,10 @@ button {
     text-decoration: none;
 }
 
+a {
+    color: #000;
+}
+
 .img-fluid {
     max-width: 100%;
     height: auto;
@@ -40,6 +46,10 @@ button {
     color: rgba(0, 0, 0, .7);
 }
 
+.btn:hover {
+    cursor: pointer;
+}
+
 .btn.red {
     border-color: #fb3e44;
     background-color: #fb3e44;
@@ -53,12 +63,43 @@ button {
 
 /* HEADER */
 
+header {
+    position: relative;
+    box-shadow: 0 4px 13px -3px rgba(0, 0, 0, 0.1);
+}
+
+header:before {
+    display: block;
+    position: absolute;
+    top: 0;
+    height: 3px;
+    width: 100%;
+    background: rgb(251, 136, 23);
+    background: linear-gradient(90deg, rgba(251, 136, 23, 1) 0%, rgba(255, 75, 1, 1) 33%, rgba(193, 33, 39, 1) 66%, rgba(224, 42, 255, 1) 100%);
+    content: "";
+}
+
 header>div {
-    padding: 0 25px;
+    padding: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid lightgray;
+}
+
+header>div>div>a {
+    font-size: 0.85rem;
+}
+
+header>div>div>a:hover {
+    opacity: .5;
+}
+
+header>div:first-child {
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 header>div>div {
@@ -66,7 +107,7 @@ header>div>div {
 }
 
 nav {
-    width: 600px;
+    flex-grow: 0;
 }
 
 nav ul {
@@ -74,6 +115,21 @@ nav ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 1rem;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    letter-spacing: .015625em;
+    font-size: .875rem;
 }
 
 nav a {
@@ -86,6 +142,7 @@ nav a {
 
 .blackHeart {
     width: 20px;
+    margin-left: 0;
     margin-right: 1rem;
 }
 
@@ -96,32 +153,32 @@ nav a {
     padding: .4rem 2rem;
 }
 
-.npm-logo {
+.search-navbar .npm-logo {
     margin-right: 1rem;
-    margin-top: 1rem;
+    margin-top: .8rem;
     flex-grow: 0;
 }
 
-.npm-logo img {
+.search-navbar .npm-logo img {
     padding-top: 0px;
     width: 70px;
 }
 
-.search-form {
+.search-navbar .search-form {
     width: 50%;
     background-color: rgba(0, 0, 0, .05);
 }
 
-.search-form form,
-.search-form form>div {
+.search-navbar .search-form form,
+.search-navbar .search-form form>div {
     display: flex;
 }
 
-.search-form form>div {
+.search-navbar .search-form form>div {
     flex-grow: 1;
 }
 
-.search-form form>div>input {
+.search-navbar .search-form form>div>input {
     font-size: 14px;
     letter-spacing: 0px;
     border: none;
@@ -133,14 +190,83 @@ nav a {
     background-color: transparent;
 }
 
-.search-form form>div>img {
+.search-navbar .search-form form>div>img {
     width: 15px;
     padding-top: 6px;
     padding-right: 0.55rem;
     padding-left: 1rem;
 }
 
-.btn-users-actions {
+.search-navbar .btn-users-actions {
     flex-grow: 0;
     margin-left: 1.2rem;
+}
+
+
+/* MAIN  */
+
+
+/* HERO SECTION */
+
+.hero-section {
+    background-color: rgba(232, 217, 217, .3);
+    display: table;
+    padding: 4rem 2rem;
+}
+
+.hero-section>div {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.hero-section h1 {
+    font-size: 5rem;
+    margin: .67em auto;
+    font-weight: bold;
+    width: 100%;
+    max-width: 90%;
+}
+
+.hero-section p {
+    max-width: 50%;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    margin: 2rem auto 0;
+    font-weight: 400;
+}
+
+.hero-section .buttons {
+    padding: 4rem 2rem;
+    margin: 0 auto;
+    width: 55%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.hero-section .buttons .btn {
+    transition: .25s;
+    display: block;
+    min-width: 200px;
+    padding: 1.15rem;
+    font-weight: 700;
+    font-size: 1.25rem;
+    background-color: #FFFFFF;
+    border-color: #FFFFFF;
+}
+
+.hero-section .buttons .btn.red {
+    background-color: #fb3e44;
+    border-color: #fb3e44;
+    box-shadow: 8px 8px 0 rgba(251, 59, 73, .2);
+    border: 1px solid rgba(138, 138, 138, .06)
+}
+
+.hero-section .buttons .btn:hover {
+    box-shadow: none;
+    background-color: #f7f7f7;
+}
+
+.hero-section .buttons .btn.red:hover {
+    background-color: #cc0413;
 }
