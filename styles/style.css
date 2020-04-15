@@ -214,7 +214,7 @@ nav a {
     padding: 4rem 2rem;
 }
 
-.hero-section>div {
+.hero-section>article {
     text-align: center;
     vertical-align: middle;
 }
@@ -269,4 +269,92 @@ nav a {
 
 .hero-section .buttons .btn.red:hover {
     background-color: #cc0413;
+}
+
+
+/* ORG SECTION */
+
+.org-section {
+    background-color: #FFF;
+    display: table;
+    padding: 2rem 2rem 4rem;
+}
+
+.org-section>article {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.org-section img {
+    max-width: 250px;
+    margin: 2rem auto;
+}
+
+.org-section div {
+    position: relative;
+    z-index: 1;
+    margin: 0 auto;
+    max-width: 90%;
+}
+
+.org-section div h2 {
+    font-size: 2.25rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.org-section div:before {
+    position: absolute;
+    content: "";
+    width: 108%;
+    height: 100%;
+    background-color: rgba(255, 204, 53, .4);
+    top: -6%;
+    left: -4%;
+    z-index: -1;
+    transform: skew(9deg, 0deg);
+}
+
+.org-section p {
+    max-width: 65%;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin: 2rem auto 0;
+    font-weight: 400;
+}
+
+
+/* TIPS SECTION */
+
+
+/* TODO: Make this class on reusable mixin .tips-section and .org-section  */
+
+.tips-section {
+    background-color: #FFF;
+    display: table;
+    padding: 2rem 2rem 4rem;
+}
+
+.tips-section>div {
+    text-align: left;
+    max-width: 90%;
+    display: flex;
+    margin: 0 auto;
+    vertical-align: middle;
+    justify-content: space-between;
+}
+
+.tips-section>div img {
+    max-width: 32px;
+    margin: 0 auto 0 0;
+}
+
+.tips-section>div h5 {
+    font-size: 1.25rem;
+    color: #ED1C24;
+    font-weight: 600;
+}
+
+.tips-section>div p {
+    max-width: 60%;
 }
