@@ -56,6 +56,12 @@ a {
     color: #FFF;
 }
 
+.btn.black {
+    border-color: #000000;
+    background-color: #000000;
+    color: #FFF;
+}
+
 .btn.bordered {
     border: 1px solid;
 }
@@ -210,13 +216,11 @@ nav a {
 
 .hero-section {
     background-color: rgba(232, 217, 217, .3);
-    display: table;
     padding: 4rem 2rem;
 }
 
 .hero-section>article {
     text-align: center;
-    vertical-align: middle;
 }
 
 .hero-section h1 {
@@ -276,13 +280,11 @@ nav a {
 
 .org-section {
     background-color: #FFF;
-    display: table;
     padding: 2rem 2rem 4rem;
 }
 
 .org-section>article {
     text-align: center;
-    vertical-align: middle;
 }
 
 .org-section img {
@@ -326,35 +328,62 @@ nav a {
 
 /* TIPS SECTION */
 
-
-/* TODO: Make this class on reusable mixin .tips-section and .org-section  */
-
 .tips-section {
     background-color: #FFF;
-    display: table;
     padding: 2rem 2rem 4rem;
 }
 
 .tips-section>div {
-    text-align: left;
-    max-width: 90%;
+    max-width: 100%;
+    margin: 0 auto 2rem;
     display: flex;
-    margin: 0 auto;
-    vertical-align: middle;
-    justify-content: space-between;
+    padding: 0 2rem;
+    justify-content: center;
+}
+
+.tips-section>div:last-child {
+    text-align: center;
+}
+
+.tips-section>div>article {
+    flex-grow: 0;
+    width: 25%;
+    text-align: left;
+    align-items: center;
+    margin-right: 2rem;
 }
 
 .tips-section>div img {
-    max-width: 32px;
-    margin: 0 auto 0 0;
+    height: 2rem;
+    max-width: 100%;
+    display: block;
+    margin: 0;
 }
 
 .tips-section>div h5 {
-    font-size: 1.25rem;
+    font-size: 1rem;
     color: #ED1C24;
     font-weight: 600;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
 }
 
 .tips-section>div p {
-    max-width: 60%;
+    font-weight: 400;
+    color: #333;
+}
+
+.tips-section div .btn.black {
+    transition: .25s;
+    display: block;
+    min-width: 300px;
+    padding: .5rem 1.15rem;
+    font-weight: 600;
+    font-size: 1rem;
+    box-shadow: 8px 8px 0 #e4ddd5;
+}
+
+.tips-section div .btn.black:hover {
+    box-shadow: none;
+    background-color: #333;
 }
