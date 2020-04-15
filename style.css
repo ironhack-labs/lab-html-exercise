@@ -9,7 +9,14 @@ header > div {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid lightgray;
+}
+
+header {
+    margin: 0 30px;
+}
+
+#top-header-bar {
+    box-shadow: inset 0 -7px 16px -20px black;
 }
 
 .black-heart {
@@ -35,8 +42,9 @@ nav a {
 
 .npm-logo {
     width: 60px;
-    margin: 15px 20px;
+    margin: 15px 30px 15px 0;
 }
+
 .magnifying-glass {
     width: 15px;
     padding: 10px 15px;
@@ -85,4 +93,62 @@ header #search-btn {
 
 .login-link #join-link {
     border: 1px inset rgb(200, 200, 200);
+}
+
+/* Section 1 */
+
+#intro-section {
+    background-color: #f8f4f4;
+    height: 500px;
+    margin: 0 30px 0 30px;
+    padding: 40px;
+    box-shadow: inset 0 7px 16px -20px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 100px 0;
+}
+
+#intro-section h1 {
+    font-size: 90px;
+    font-weight: 900;
+    margin: 0;
+}
+
+#intro-section article {
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+    font-size: large;
+    text-align: center;
+}
+
+#intro-section div {
+    display: flex;
+    justify-content: space-evenly;
+    width: 400px;
+}
+
+#intro-section div a {
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 30px;
+}
+
+#see-plans-link {
+    background-color:#fb3b49;
+    color: white;
+    box-shadow: 5px 5px rgba(251, 59, 73, 0.3);
+}
+
+#join-for-free-link {
+    background-color: white;
+    color: black;
+}
+
+/* Section 2 */
+
+#hexagon-section img {
+    width: 300px;
 }
