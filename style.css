@@ -32,8 +32,39 @@ header > div {
     margin-right: 1rem;
   }
 
- input[type="text"] {
-background-image: url("./images/magnifying-glass.png");
+ .npm-logo {
+   width: 80px;
+   margin-right: 1rem;
+ }
+ .magnifying-glass {
+   width: 30px;
+   margin: auto;
+ }
+ input[type=text] {
+   padding: 12px 20px;
+   border: none;
+   background-color: beige;
+   margin-top: 5px;
+   margin-bottom: 5px;
+   /* esto de abajo no funciona */
+   background-image: url("./images/magnifying-glass.png");
+   background-position: 10px 10px;
+   background-repeat: no-repeat;
+   padding: 12px 20px 12px 20px;
+   
+ }
+
+ input[placeholder] {
+   text-align: right;
+ }
+
+ .button1 {
+   background-color: red;
+   border: none;
+   color: white;
+   padding: 12px 26px;
+   text-align: center;
+   font-size: 16px;
  }
 
  /* avanzar a la sección 1 por bloqueo en este div */
@@ -47,8 +78,22 @@ background-image: url("./images/magnifying-glass.png");
      align-content: center;
      height: 600px;
      background-color: rgba(232,217,217,3);
+     text-align: center;
      
      
+ }
+
+ .contenedor2 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 600px;
+
+  text-align: center;
+
  }
 
  h1 {
@@ -61,22 +106,76 @@ background-image: url("./images/magnifying-glass.png");
      margin: auto;
 
  }
+ .ul-section-one {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  justify-content: space-between;
+ }
  .see-plans {
+     text-decoration: none;
+      
      background-color: red;
-     box-shadow: 8px 8px 0rgba(251,59,73,2);
-     max-width: 16rem;
-     padding: 1rem 2rem 1rem 2rem;
+    
      color: white;
-     font-weight: 700;
-     display: block;
-     box-sizing: border-box;
-     margin-right: 23rem;
-     margin-top: 3rem;
+
+     font-size: 24px;
+
+     padding: 1em 2em 1em 2em;
+
+    
+     
 
  }
  
  .join-for-free {
      color: black;
      text-decoration: none;
-     display: inline-block;
+     background-color: white;
+     font-size: 24px;
+     padding: 1em 2em 1em 2em;
+ }
+
+ .triangle-hexagon {
+   width: 200px;
+
+
+ }
+
+ h2 {
+   font-size: 2rem;
+
+ }
+ .widthp2 {
+  width: 700px;
+  margin: auto;
+ }
+
+ /* en esta sección me sale un cuadrado partido rojo en medio de los links de see plans y join for free*/
+ 
+ .zero-configuration {
+   width: 40px;
+ }
+ .team-management {
+   width: 40px;
+ }
+ .familiar-features {
+   width: 40px;
+ }
+ .npm-audit {
+   width: 40px;
+ }
+
+ .contenedor3 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: space-between;
+  align-content: space-around;
+ 
+ }
+
+ .divsection3  {
+   max-width: 250px;
  }
