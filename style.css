@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap');
 
 * {
@@ -9,8 +9,14 @@
 
 body {
   font-family: 'Poppins';
+  color: #000;
+  font-size: 16px;
 }
 
+a {
+  text-decoration: none;
+  color: #000;
+}
 
 /* HEADER STYLES */
 
@@ -45,11 +51,18 @@ nav a {
 
 .npmLogo {
   width: 50px;
+  margin-right: 20px;
 }
 
 .search-container {
-  width: 80%;
+  width: 100%;
   background: rgba(0, 0, 0, .05);
+}
+
+.header-container-left {
+  display: flex;
+  align-items: center;
+  width: 88%;
 }
 
 form {
@@ -74,12 +87,79 @@ input[type="text"]:focus {
   outline: none;
 }
 
-form .btn-search {
+form button {
   background-color: #FB3E44;
+  color: white;
   font-family: 'Poppins';
   font-size: 14px;
   letter-spacing: 0.3px;
-  color: white;
   padding: 8px 20px;
   border: none;
+}
+
+.header-buttons {
+  width: 10%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header-buttons .btn {
+  font-size: 14px;
+  letter-spacing: 0.3px;
+  padding: 4px 16px;
+  border: none;
+}
+
+.header-buttons .btn-join {
+  border: 1px solid #000;
+}
+
+/* HERO SECTION */
+
+#section-hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  background: rgba(232, 217, 217, .3);
+}
+
+h1 {
+  font-size: 5rem;
+  font-weight: 900;
+  margin-bottom: 40px;
+}
+
+#section-hero>article {
+  font-size: 1.4rem;
+  max-width: 600px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-btn {
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  padding: 15px 60px;
+  border: none;
+}
+
+.hero-btn-plans {
+  background: #FB3E44;
+  color: #fff;
+  margin-right: 40px;
+  box-shadow: 8px 8px 0 rgba(251, 59, 73, .2)
+}
+
+.hero-btn-join {
+  background: #fff;
 }
