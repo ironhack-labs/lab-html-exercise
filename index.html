@@ -66,18 +66,16 @@
 
     <!-- HERO SECTION -->
     <section id="section-hero">
-      <h1>Build amazing things</h1>
+      <h1 class="hero-header">Build amazing things</h1>
       <article>
         <p>
           Essential JavaScript development tools that help you go to market
           faster and build powerful applications using modern open source code.
         </p>
       </article>
-      <div>
-        <div class="hero-buttons">
-          <a href="#" class="hero-btn hero-btn-plans">See plans</a>
-          <a href="#" class="hero-btn hero-btn-join">Join for free</a>
-        </div>
+      <div class="hero-buttons">
+        <a href="#" class="hero-btn hero-btn-plans">See plans</a>
+        <a href="#" class="hero-btn hero-btn-join">Join for free</a>
       </div>
     </section>
 
@@ -88,7 +86,9 @@
         src="./images/triangle-hexagon.svg"
         alt="triangle background image"
       />
-      <h3>Bring the best of open source to your company</h3>
+      <h2 class="intro-header">
+        Bring the best of open source to your company
+      </h2>
       <article>
         <p>
           npm is the tool used by over 11,000,000 JavaScript developers around
@@ -99,61 +99,63 @@
       </article>
     </section>
 
-    <!-- FEATURED SECTION -->
-    <div class="feature-container">
-      <div class="feature__box">
-        <img
-          class="feature__box-img"
-          src="./images/zero-configuration.svg"
-          alt="Zero configuration"
-        />
-        <h4 class="feature__box-header">Zero configuration</h4>
-        <p class="feature__box-text">
-          Create an org, add your team, and start collaborating. Nothing to
-          configure, set up, or manage.
-        </p>
+    <!-- FEATURES SECTION -->
+    <section id="section-features">
+      <div class="feature-container">
+        <div class="feature__box">
+          <img
+            class="feature__box-img"
+            src="./images/zero-configuration.svg"
+            alt="Zero configuration"
+          />
+          <h4 class="feature__box-header">Zero configuration</h4>
+          <p class="feature__box-text">
+            Create an org, add your team, and start collaborating. Nothing to
+            configure, set up, or manage.
+          </p>
+        </div>
+
+        <div class="feature__box">
+          <img
+            class="feature__box-img"
+            src="./images/team-management.svg"
+            alt="Team management"
+          />
+          <h4 class="feature__box-header">Team management</h4>
+          <p class="feature__box-text">
+            Control who has access to what modules within your team namespace
+            using straightforward team management capabilities.
+          </p>
+        </div>
+
+        <div class="feature__box">
+          <img
+            class="feature__box-img"
+            src="./images/familiar-features.svg"
+            alt="Familiar features"
+          />
+          <h4 class="feature__box-header">Familiar features</h4>
+          <p class="feature__box-text">
+            npm Orgs has 100% parity with all the public npm registry features
+            your developers already use.
+          </p>
+        </div>
+
+        <div class="feature__box">
+          <img
+            class="feature__box-img"
+            src="./images/npm-audit.svg"
+            alt="npm audit"
+          />
+          <h4 class="feature__box-header">npm audit</h4>
+          <p class="feature__box-text">
+            Enjoy the security auditing features built into the npm client, a
+            zero-friction way to make open source software safer.
+          </p>
+        </div>
       </div>
 
-      <div class="feature__box">
-        <img
-          class="feature__box-img"
-          src="./images/team-management.svg"
-          alt="Team management"
-        />
-        <h4 class="feature__box-header">Team management</h4>
-        <p class="feature__box-text">
-          Control who has access to what modules within your team namespace
-          using straightforward team management capabilities.
-        </p>
-      </div>
-
-      <div class="feature__box">
-        <img
-          class="feature__box-img"
-          src="./images/familiar-features.svg"
-          alt="Familiar features"
-        />
-        <h4 class="feature__box-header">Familiar features</h4>
-        <p class="feature__box-text">
-          npm Orgs has 100% parity with all the public npm registry features
-          your developers already use.
-        </p>
-      </div>
-
-      <div class="feature__box">
-        <img
-          class="feature__box-img"
-          src="./images/npm-audit.svg"
-          alt="npm audit"
-        />
-        <h4 class="feature__box-header">npm audit</h4>
-        <p class="feature__box-text">
-          Enjoy the security auditing features built into the npm client, a
-          zero-friction way to make open source software safer. Create an Org
-        </p>
-      </div>
-
-      <a href="#" class="btn">Create an Org</a>
-    </div>
+      <a href="#" class="feature-btn">Create an Org</a>
+    </section>
   </body>
 </html>
