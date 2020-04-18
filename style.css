@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins';
+}
+
+
+/* HEADER STYLES */
+
+header>div {
+  padding: 10px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+}
+
+nav {
+  width: 600px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+.blackHeart {
+  width: 20px;
+  margin-right: 1rem;
+}
+
+.npmLogo {
+  width: 50px;
+}
+
+.search-container {
+  width: 80%;
+  background: rgba(0, 0, 0, .05);
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+label .fa-search {
+  padding: 0 20px;
+  color: rgb(151, 151, 151);
+}
+
+input[type="text"] {
+  background-color: transparent;
+  font-family: 'Fira Mono', monospace;
+  font-size: 16px;
+  border: none;
+}
+
+input[type="text"]:focus {
+  outline: none;
+}
+
+form .btn-search {
+  background-color: #FB3E44;
+  font-family: 'Poppins';
+  font-size: 14px;
+  letter-spacing: 0.3px;
+  color: white;
+  padding: 8px 20px;
+  border: none;
+}

@@ -8,6 +8,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
     />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
 
@@ -21,10 +22,10 @@
             src="./images/black-heart.png"
             alt="black heart"
           />
-          <span> Nifty Penguin Magic </span>
+          <span>Nifty Penguin Magic</span>
         </div>
         <!-- MAIN NAV -->
-        <nav id="header-nav">
+        <nav>
           <ul>
             <li><a href="#"> npm Enterprise </a></li>
             <li><a href="#"> Products </a></li>
@@ -41,8 +42,15 @@
         <!-- SEARCH FORM -->
         <div class="search-container">
           <form action="">
-            <span><i class="fa fa-search"></i></span>
-            <input type="text" placeholder="Search packages" name="search" />
+            <div>
+              <label for="search"><i class="fa fa-search"></i></label>
+              <input
+                type="text"
+                placeholder="Search packages"
+                name="search"
+                id="search"
+              />
+            </div>
             <button type="submit" class="btn-search">Search</button>
           </form>
         </div>
