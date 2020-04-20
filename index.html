@@ -1,70 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>NPM</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
-  <title>NPM</title>
-</head>
-
-<body>
-  <header class="header">
-    <div class="header-top">
-      <div>
-        <img class="heart" src="images/black-heart.png" alt="black header" />
-        <span>Nifty Penguin Magic</span>
-      </div>
-      <nav class="nav-bar">
-        <ul>
-          <li><a href="#"> npm Enterprise</a></li>
-          <li><a href="#"> Products</a></li>
-          <li><a href="#"> Solutions</a></li>
-          <li><a href="#"> Resources</a></li>
-          <li><a href="#"> Docs</a></li>
-          <li><a href="#"> Support</a></li>
-        </ul>
-      </nav>
-    </div>
-    <div class="header-bottom">
-      <div class="logo-image-container">
-        <img src="images//npm-logo.png" alt="npm logo" class="logo" />
-      </div>
-
-      <form action="search" class="search-bar" method="GET">
-        <div class="input-container">
-          <input class="search" type="text" id="input" placeholder="Search packages" />
-          <img src="/images/magnifying-glass.png" class="input-img">
+  <body>
+    <header class="header">
+      <div class="header-top">
+        <div>
+          <img class="heart" src="images/black-heart.png" alt="black header" />
+          <span>Nifty Penguin Magic</span>
         </div>
-        <button class="general-btn search-btn" type="submit">Search</button>
-      </form>
-
-      <div class="button-container">
-        <ul>
-          <li><a class="link-btn active" href="#">Join</a></li>
-          <li><a class="link-btn" href="#">Log in</a></li>
-        </ul>
+        <nav class="nav-bar">
+          <ul>
+            <li><a href="#"> npm Enterprise</a></li>
+            <li><a href="#"> Products</a></li>
+            <li><a href="#"> Solutions</a></li>
+            <li><a href="#"> Resources</a></li>
+            <li><a href="#"> Docs</a></li>
+            <li><a href="#"> Support</a></li>
+          </ul>
+        </nav>
       </div>
+      <div class="header-bottom">
+        <div class="logo-image-container">
+          <img src="images//npm-logo.png" alt="npm logo" class="logo" />
+        </div>
 
-    </div>
-  </header>
+        <form action="search" class="search-bar" method="GET">
+          <div class="input-container">
+            <input
+              class="search"
+              type="text"
+              id="input"
+              placeholder="Search packages"
+            />
+            <img src="/images/magnifying-glass.png" class="input-img" />
+          </div>
+          <button class="general-btn search-btn" type="submit">Search</button>
+        </form>
 
-  <section class="container hero"> 
-    <h1 class="hero-title">Build amazing things</h1>
-    <p class="hero-text">
-      Essential JavaScript development tools that help you go to market faster and build powerful applications using
-      modern open source code.
-    </p>
-    <div class="hero-buttons">
-      <a href="" class="hero-btn plans">See plans</a>
-      <a href="" class="hero-btn btn join">Join for free</a>
-    </div>
-  </section>
-</body>
+        <div class="button-container">
+          <ul>
+            <li><a class="link-btn active" href="#">Join</a></li>
+            <li><a class="link-btn" href="#">Log in</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
 
+    <section class="container hero">
+      <h1 class="title">Build amazing things</h1>
+      <p class="text">
+        Essential JavaScript development tools that help you go to market faster
+        and build powerful applications using modern open source code.
+      </p>
+      <div class="hero-buttons">
+        <a href="" class="hero-btn plans">See plans</a>
+        <a href="" class="hero-btn btn join">Join for free</a>
+      </div>
+    </section>
 
+    <section class="container about">
+      <div class="about-image-container">
+        <img class="about-image" src="./images/triangle-hexagon.svg" alt="" />
+      </div>
+      <h2 class="title about">Bring the best of open source to your company</h2>
+      <p class="text">
+        npm is the tool used by over 11,000,000 JavaScript developers around the
+        world. Your developers already use it. Your company depends on it.
+        Create an Org and get more out of the tools your team already knows and
+        loves.
+      </p>
+    </section>
+  </body>
 
-<!-- 
+  <!-- 
 
   NPM Clone Nifty Penguin Magic npm Enterprise Products Solutions Resources Docs Support Search Join Log In Build amazing
 things Essential JavaScript development tools that help you go to market faster and build powerful applications using
@@ -76,7 +90,4 @@ what modules within your team namespace using straightforward team management ca
 has 100% parity with all the public npm registry features your developers already use. npm audit Enjoy the security
 auditing features built into the npm client, a zero-friction way to make open source software safer. Create an Org
 
--->
-</html>
-
-
+--></html>
