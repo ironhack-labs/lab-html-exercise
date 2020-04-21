@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
 body {
-  font-family: 'Poppins';
+  font-family: "Poppins";
+  font-size: 100%;
 }
 
 header > div {
@@ -21,6 +22,7 @@ nav ul{
   display:flex;
   justify-content:space-between;
   align-items:center;
+  flex-wrap:wrap;
 }
 
 nav a {
@@ -34,26 +36,28 @@ nav a {
 }
 
 .lign-2 {
-  padding:0 25px;
+  padding:5px 25px;
   border-bottom:1px solid lightgray;  
-  justify-content:space-between;
-  align-items:center;
+  display:flex;
+  flex-wrap: wrap;
 }
 
 .logo {
-  width:70px;
+  width:80px;
   margin-right:1rem;
 }
 
-.glass {
+.loop {
   width:18px;
-  margin:12px 4px 0 16px;
+  padding:10px;
 }
 
 .lign-2 form {
-  width:800px;
-  height:40px;
+  width:75%;
   background-color:rgba(0,0,0,.05);
+  display:flex;
+  align-items:center;
+  border:0;
 }
 
 .lign-2 input {
@@ -62,22 +66,80 @@ nav a {
   border:none;
   height:40px;
   align-self: flex-end;
+  font-size:1rem;
+  width:100%;
 }
 
 .lign-2 button {
   background-color:#fb3e44;
   color:white;  
   height:40px;
+  padding:0 20px;
+  font-size:1rem;
 }
 
-.lign-2 ul {
-  list-style:none;
+#buttons {
   display:flex;
-  justify-content:space-between;
-  align-items:center;
 }
 
 .lign-2 a {
   text-decoration:none;
-  color:grey;
+  color:black;
 }
+
+#join {
+  border:1px solid black;
+  padding:4px 20px;
+  width:40px;
+}
+
+#login {
+  padding:4px 15px;
+  width:50px;
+}
+
+#heading {
+  height:100%;
+  background-color: rgba(232,217,217,0.3);
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items:center;
+}
+
+h1 {
+  font-style: "Poppins Bold 900";
+  font-size:5rem;
+  text-align: center;
+}
+
+#heading article {
+  width:35%;
+  text-align: center;
+  font-size:16px;
+}
+
+#heading div {
+  margin:5% 0 10% 0;
+  display:flex;
+  flex-wrap: wrap;
+}
+#heading a {
+  text-decoration:none;
+}
+
+#plans {
+  background-color: #FB3B49;
+  color:white;
+  box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+  padding:10px 40px;
+  margin-right: 20px;
+}
+
+#joinfree {
+  background-color: white;
+  color:black;
+  padding:10px 40px;
+  margin-left:20px;
+}
+
