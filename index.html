@@ -12,10 +12,10 @@
 
         <header>
 
-            <div class="nav1">
+            <div class="upper-div">
                 <div>
                     <img src="images/black-heart.png" alt="black-heart img" id="heart">
-                    <span>Neverending Pun Machine</span>
+                    <span> Nifty Penguin Magic </span>
                 </div>
                 <nav>
                     <ul>
@@ -29,26 +29,25 @@
                 </nav>
             </div>
 
-            <div class="nav2">
+            <div class="lower-div">
 
-                <a href="https" target="_blank">
-                    <img src="images/npm-logo.png" alt="npm logo" id="logo">
+            <!--npm logo-->
+                <a href="https" target="_blank" id="npm-logo">
+                    <img src="images/npm-logo.png" alt="npm logo">
                 </a>
 
-                <!--search bar-->
-                <form action="submit" method="post">
-                    <div>
-                        <label for="search-bar">
-                            <img src="images/magnifying-glass.png" alt="magnifying glasses img">
+            <!--search bar w/ button-->
+                <form action="/search" method="get">
+                    <div id="search-bar">
+                        <label for="search-input">
+                            <img src="images/magnifying-glass.png" alt="magnifying glasses img" id="search-glasses">
                         </label>
-                        <input type="text" placeholder="Search packages" id="search-bar">
+                        <input type="text" placeholder="Search packages">
                     </div>
-                    <div id="search-button">
-                        <input type="button" value="Search">
-                    </div>
+                    <button type="submit" id="search-button">Search</button>
                 </form>
 
-                <!--subscription/log in links-->
+            <!--subscription/log links-->
                 <div class="subscribe">
                     <a href="#" id="join-link">Join</a>
                     <a href="#">Log In</a>
@@ -118,7 +117,9 @@
                     auditing features built into the npm client, a zero-friction way to make open source software safer.</p>
             </div>
 
-            <a href="#" id="org-link">Create an Org</a>
+            <button>
+                <a href="#" id="org-link">Create an Org</a>
+            </button>
 
         </section>
 
