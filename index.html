@@ -14,7 +14,10 @@
 
             <div class="upper-div">
                 <div>
-                    <img src="images/black-heart.png" alt="black-heart img" id="heart">
+                    <img
+                        id="heart" 
+                        src="images/black-heart.png" 
+                        alt="black-heart img">
                     <span> Nifty Penguin Magic </span>
                 </div>
                 <nav>
@@ -32,23 +35,29 @@
             <div class="lower-div">
 
             <!--npm logo-->
-                <a href="https" target="_blank" id="npm-logo">
-                    <img src="images/npm-logo.png" alt="npm logo">
+                <a href="https" target="_blank">
+                    <img 
+                        id="npm-logo" 
+                        src="images/npm-logo.png" 
+                        alt="npm logo">
                 </a>
 
             <!--search bar w/ button-->
-                <form action="/search" method="get">
+                <form action="/search" method="get" id="head-form">
                     <div id="search-bar">
-                        <label for="search-input">
-                            <img src="images/magnifying-glass.png" alt="magnifying glasses img" id="search-glasses">
+                        <label>
+                            <img 
+                                id="glasses"
+                                src="images/magnifying-glass.png" 
+                                alt="magnifying glasses img">
                         </label>
                         <input type="text" placeholder="Search packages">
                     </div>
-                    <button type="submit" id="search-button">Search</button>
+                    <button type="submit">Search</button>
                 </form>
 
             <!--subscription/log links-->
-                <div class="subscribe">
+                <div class="head-subscribe">
                     <a href="#" id="join-link">Join</a>
                     <a href="#">Log In</a>
                 </div>     
@@ -63,12 +72,11 @@
 
             <h1>Build amazing things</h1>
             <article>Essential JavaScript development tools that help you go to market faster and build powerful applications using modern open source code.</article>
-
             <div class="main-links">
                 <a href="#" id="plans-link">See plans</a>
                 <a href="#" id="join-free-link">Join for free</a>
             </div>
-
+    
         </section>
 
 <!--    section 2       ---------------------------->
