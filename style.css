@@ -5,6 +5,7 @@ body {
   background-color: rgba(232,217,217,.3);
 }
 
+/*----------------------- Navigation --------------------------*/
 
 header > div {
     
@@ -88,11 +89,13 @@ nav a {
     
 }
 
+/*----------------------- Section 1 --------------------------*/
+
 #ourplans {
     
     height: 600px;
     display: flex;
-    justify-content: center;
+    justify-content: center; /* horizontal */
     align-items: center;
     flex-direction: column;
 }
@@ -105,11 +108,12 @@ nav a {
 #ourplans p {
     font-size: 1em;
     width: 400px;
-
-
+    position: relative;
+    bottom: 20px;
 }
 
 #plans {
+    margin: 5px;
     text-decoration: transparent;
     color: white;
     padding: 15px 40px;
@@ -118,18 +122,14 @@ nav a {
 }
 
 #join {
+    margin: 5px;
     color: black;
     padding: 15px 40px;
     text-decoration: transparent;
     box-shadow: 8px 8px 0 rgba(251,59,73,.2);
-}
-
-#sec1buttons {
-    margin: 50px;
-}
+    }
 
 /*----------------------- Section 2 --------------------------*/
-
 #triangle {
     width: 200px;
     margin-right: 1rem;
@@ -143,24 +143,16 @@ nav a {
 }
 
 article {
-    position: static;
     font-size: 1em;
     width: 530px;
     margin-bottom: 50px;
-   
 }
 
 h4 {
-    
     background-color: rgba(255,204,53,.4);
     font-size: 2em;
     font-style: italic;
     transform: skew(9deg,0deg);
-
-    border-style: solid;
-    border-color: black;
-
-
 }
 
 /*----------------------- Section 3 --------------------------*/
