@@ -7,9 +7,9 @@
 
 <body>
     <header> <!--the header will contain 2 divs--> 
-        <div> <!--this div contain the 'nav' and dropdown menu-->  
+        <div> <!--this div contain the 'nav'-->  
             <div>
-                <img class="bheart" src="./images/black-heart.png" alt="black heart" />
+                <img class="bheart" src="./images/black-heart.png" alt="black heart"/>
                 <span>Nifty Penguin Magic</span>
             </div>
     
@@ -28,19 +28,21 @@
         <div> <!--this div contain 'search' and 'login'-->
             <img class="npmlogo" src="./images/npm-logo.png" alt="npm logo">
             <img class="searchlogo" src="./images/magnifying-glass.png" alt="Search">
+            
+            
             <div id="searchbox">
-                
-
                 <form action="/some-url" method="post">
                     <label for="search"></label>
-                    <input type="text" name="search" id="seachbox" placeholder="Search packages">
+                    
+
+                    <input type="text" name="search" id="searchline" placeholder="Search packages">
+                    <button id="search" type="submit">Search</button>
                 </form>
 
-            
+
             <div id="login">
                 <a href="https://www.npmjs.com/signup">Join</a>
                 <a href="https://www.npmjs.com/login">Log In</a>
-
             </div>    
             </div>
             
@@ -118,7 +120,7 @@
         <div>
             <a href="https://www.npmjs.com/org/create" id="createorg">Create an Org</a>
         </div>
-    </section> 
+    </section>
     
     <footer id="footernav"> <!--Optinal 'footer' as can be copied from npm website.-->
         <img id="footerlogo" src="images/Footer Logo.png" alt="npm logo">

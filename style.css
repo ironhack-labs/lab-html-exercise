@@ -5,74 +5,40 @@ body {
   background-color: rgba(232,217,217,.3);
 }
 
-/*----------------------- Navigation --------------------------*/
+/*---------------------- Navigation---------------------*/
+
 
 header > div {
-    
     padding: 0 25px;
     border-bottom: 1px solid lightgray;
+    border-radius: 5px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: white;
 }
-
-header #login {
-    
-    font-size: 14px;
-    width: 120px;
-    padding: 5px;
-    justify-content: space-evenly;
-    display: flex;
-    align-items: center;
-    
-    
-
-}
-
-#searchbox {
-    
-    display: flex;
-    justify-content: left;
-    border-style: solid;
-    border-color: black;
-    
-
-}
-
-#seachbox {
-    
-    width: 700px;
-    height: 30px;
-    background-color: lightgray;
-    font-family: 'Poppins';
-    font-size: 14px;
-    display: flex;
-    justify-content: center;
-    justify-content: left;
-}
-
-nav {
-    width: 600px;
-  }
-
-nav ul {
-    
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-nav a {
-    text-decoration: none;
-    color: black;
-
-  }
 
 .bheart {
     width: 20px;
     margin-right: 1rem;
   }
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 550px;
+    text-decoration: none;
+    color: black;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+/*---------------------- Search-----------------------*/
 
 .npmlogo {
     width: 80px;
@@ -82,11 +48,54 @@ nav a {
     width: 20px;
 }
 
-#searchbox a {
+#searchbox {
+    display: flex;
+    justify-content: left;
+}
+
+#searchline {
+    width: 800px;
+    height: 40px;
+    background-color: lightgray;
+    font-family: 'Poppins';
+    font-size: 16px;
+    position: relative;
+    right: 20px;
+    top: 10px;
+}
+
+#search {
+    color: white;
+    height: 40px;
+    width: 80px;
+    position: relative;
+    right: 25px;
+    top: 7px;
+    background-color: #FB3B49;
+    font-family: 'Poppins';
+    font-size: 14px;
+
+}
+
+#login a {
     text-decoration: none;
     color: black;
+    border-width: 1px;
+    border-style: solid;
+    border-color: lightgray;
+    position: relative;
+    left: 10px;
+    font-size: 14px;
+    width: 60px;
+    padding: 5px;
+    text-align: center;
     
-    
+}
+
+header #login {
+    justify-content: space-evenly;
+    display: flex;
+    align-items: center;
 }
 
 /*----------------------- Section 1 --------------------------*/
@@ -199,6 +208,7 @@ h4 {
 /*----------------------- Footer Styles --------------------------*/
 
 #threeboxes {
+    border-top: 1px solid gray;
     position: relative;
     top: 60px;
     height: 400px;
