@@ -6,10 +6,9 @@
 <header>
     <div>
       <div>
-        <img class="blackHeart" src="/images/black-heart.png" alt="black heart" />
+        <img class="blackHeart" src="images/black-heart.png" alt="black heart" />
         <span> Nifty Penguin Magic </span>
       </div>
-      <hr>
       <nav class=nav-bar>
         <ul class=nav-bar-ul>
           <li><a href="#"> npm Enterprise </a></li>
@@ -22,59 +21,69 @@
       </nav>
     </div>
   
-    <div>
-        <img class=npm src="/images/npm-logo.png" alt="NPM logo">
-        <img class=lupa src="/images/magnifying-glass.png" alt="lupa">
-        <form action="/some-url" method="post">
-        <input type="text" id="search" placeholder="Search packages">
+    <div class=nav-bar-2>
+        <img class=npm src="images/npm-logo.png" alt="NPM logo">
+        
+        <form action="/some-url" method="GET" class="buscador">
+        <img class=lupa src="images/magnifying-glass.png" alt="lupa">
+        <label for="search"></label>
+        <input type="search" id="search" placeholder="Search packages">
         <button type="submit">Search</button>
         </form>
-        <a href=# class=link-btn>Join</a>
-        <a href=# class=link-btn>Log in</a>
+
+        <a href=# class=link-btn-header1>Join</a>
+        <a href=# class=link-btn-header2>Log in</a>
     </div>
 </header>
 
-<section>
-    <h1>Build amazing things</h1>
-    <article>Essential JavaScript development tools that help you go to market faster and build powerful applications using
+<section id=first-section class=red-background>
+    <h1><strong>Build amazing things</strong></h1>
+    <article>Essential JavaScript development tools that help you <br>go to market faster and build powerful applications <br>using
         modern open source code.
     </article>
+  <div class=botones>
     <div>
         <a href=# class=link-btn>See plans</a>
-        <a href=# class=link-btn2>Join for free</a>  
     </div>
+    <div>
+        <a href=# class=link-btn2>Join for free</a> 
+  </div>
 </section>
  
-<section id=section1 class=dark-background>
+<section id=second-section class=white-background>
     <img class=hexagono src="images/triangle-hexagon.svg" alt="hexágono">
     <h2>Bring the best of open source to your company</h2>
     <article>
-        npm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it.
-Create an Org and get more out of the tools your team already knows and loves.
+        npm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers <br>already use it. Your company depends on it.
+Create an Org and get more out of the tools your <br>team already knows and loves.
     </article>
 </section>
 
-<section>
+<section id=third-section>
     <div class=service-box>
-        <img src="/images/zero-configuration.svg" alt="flechita clic" class="img">
+        <img src="images/zero-configuration.svg" alt="flechita clic" class="img">
         <h3>Zero configuration</h3>
-        <p>Create an org, add your team, and start collaborating. Nothing to configure, set up, or manage.</p>
+        <p>Create an org, add your team, <br>and start collaborating. <br>Nothing to configure, set up, or <br>manage.</p>
     </div>
     <div class=service-box>
-        <img src="/images/team-management.svg" alt="conexion team" class="img">
+        <img src="images/team-management.svg" alt="conexion team" class="img">
         <h3>Team management</h3>
-        <p>Control who has access to what modules within your team namespace using straightforward team management capabilities.</p>
+        <p>Control who has access to <br>what modules within your <br>team namespace using <br>straightforward team <br>management capabilities.</p>
     </div>
     <div class=service-box>
-        <img src="/images/familiar-features.svg" alt="cajitas báscula" class="img">
+        <img src="images/familiar-features.svg" alt="cajitas báscula" class="img">
         <h3>Familiar features</h3>
-        <p>npm Orgs has 100% parity with all the public npm registry features your developers already use.</p>
+        <p>npm Orgs has 100% parity with <br>all the public npm registry <br>features your developers <br>already use.</p>
     </div>
     <div class=service-box>
-        <img src="/images/npm-audit.svg" alt="prismáticos" class="img">
+        <img src="images/npm-audit.svg" alt="prismáticos" class="img">
         <h3>npm audit</h3>
-        <p>Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer.</p>
+        <p>Enjoy the security auditing <br>features built into the npm <br>client, a zero-friction way to <br>make open source software <br>safer.</p>
     </div>
+</section>
+<section id=fourth-section class=fourth-section>
     <button type="submit">Create an Org</button> 
 </section>
+
+
        
