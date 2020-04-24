@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body {
+  font-family: 'Poppins';
+}
+/* Blue	rgb(67, 163, 230);
+Dark Blue	rgb(25, 33, 41);
+Text	rgb(0, 0, 0); */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2 {
+    font-family: "Ubuntu", sans-serif;
+  }
+h1{
+    text-align:center;
+    margin-top: 25px;
+    font-size: 4.2em;
+    line-height: 1em;
+    padding-bottom: 5px;
+
+}
+h2{
+    text-align:center;
+    background color: rgba(255,204,53,.4);
+    margin-top: 70px;
+    font-size: 2.5em;
+    line-height: 1em;
+
+}
+
+header > div {
+  padding: 0 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+}
+
+nav {
+  width: 600px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+.link{
+  background-color:#FB3B49;
+  color: white;
+  box-shadow: 8PX 8PX 0 rgba(251,59,73,.2);
+  font-family: 'Poppins';
+  font-size: 0.8em;
+  border-radius:12px 0 12px 0;
+  letter-spacing: 0.3px;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 30px;
+
+}
+.link-blanc{
+  background-color:whitesmoke;
+  color:black;
+  box-shadow: 8PX 8PX 0 rgba(251,59,73,.2);
+  font-family: 'Poppins';
+  font-size: 0.7em;
+  border-radius:12px 0 12px 0;
+  letter-spacing: 0.3px;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 30px;
+}
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+  border-radius: 40px;
+}
+
+.searchTerm {
+  width: 100%;
+  padding: 5px;
+  height: 20px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.searchTerm:focus{
+  color:darkred
+}
+
+
+.searchButton {
+  width: 50px;
+  height: 36px;
+  background-color: #ED1C24;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+  width: 80%;
+text-align: right;
+box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.blackHeart {
+  width: 20px;
+  margin-right: 1rem;
+}
+.form{
+    text-align: center;
+}
+
+.btn{
+    background-color:#FB3B49;
+    color: white;
+    border-radius: 40px;
+    box-shadow: 8PX 8PX 0 rgba(251,59,73,.2);
+    font-family: "Roboto Condensed";
+    font-size: 1.5em;
+    letter-spacing: 0.5px;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 30px;
+}
+.boutton{
+  background-color:white;
+  color: black;
+  border-radius: 40px;
+  box-shadow: 8PX 8PX 0 rgba(251,59,73,.2);
+  font-family: "Roboto Condensed";
+  font-size: 1.5em;
+  letter-spacing: 0.5px;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 30px;
+}
+#premier{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 600px;
+  background-color: rgba(232, 217,217,.3);
+}
+#deuxieme{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 600px;
+  
+
+}
+
+.contenair {
+    width: 1200px;
+    margin: 0 auto ;
+    padding: 75px 0;
+}
+.text{
+    font-size: 1.5em;
+    font-weight: 80px;
+    text-align: center;
+    width: 500px;
+    height: 150px;
+    margin: auto;
+    padding: 50px;
+    
+  }
+  .logo{
+      text-align: center;
+      width: 150px;
+      height: 150px;
+  }
+  .logo-search{
+    width: 45px;
+    height: 25px;
+    padding-right: 20px;
+    padding-top: 10px;
+  }
+  #team .fenetre {
+    font-size: 1.5em;
+    font-weight: 200px;
+    text-align: center;
+    
+  }
+  #team {
+    padding: 75px 0;
+    margin: 0 auto;
+  }
+  
+  #team p {
+    width: 60%;
+    margin: 10px auto;
+  }
+  #team > div {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+  
+  }
+  
+  /* modified for flexbox */
+  #team > div > article {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .fenetre{
+    color: #ED1C24;
+  }
+  .icon{
+    height: 50px;
+    width: 30px;
+  }
+  .paragraphe{
+    font-size: 0.9em;
+    font-weight: 25px;
+    text-align: left;
+    margin: 20px 0;
+  }
+  .org{
+    justify-content: center;
+    width: 200px;
+    height: 50px;
+    background-color:rgb(8, 8, 8);
+    color:white;
+    box-shadow: 8PX 8PX 0 rgba(251,59,73,.2);
+    font-family: 'Poppins';
+    font-size: 0.8em;
+    border-radius:2px 2px 2px 2px;
+    letter-spacing: 0.3px;
+    text-align: center;
+    text-decoration: none; 
+    padding: 25px 15px 30px;
+    margin-top: 25px;
+
+
+    
+  }

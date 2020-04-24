@@ -1,82 +1,106 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Page Title</title>
+    <meta charset="utf-8">
+<title>Npm exo</title>
+<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <nav>
-        <div>
-            <img src="black-heart.png" alt="black-heart">
-        <p>Nitty Penguin Magic</p>
-        </div>
-        <ul>
-            <li>npm production</li>
-            <li>Product</li>
-            <li>Solutions</li>
-            <li>Ressource</li>
-            <li>Docs</li>
-            <li>Support</li>
-        </ul>
-    </nav>
+    
     <header>
-    <img src="nmp-logo.png" alt="npm logo">
-    <div class="search-container">
-        <form action="/action_page.php">
-          <input type="text" placeholder="Search.." name="search">
-          <button type="submit"><i class="fa fa-search"></i></button>
-        </form>
         <div>
-            <FORM>
-                <INPUT Type="BUTTON" Value="Homepage" Onclick="window.location.href='https://www.computerhope.com/'">
-                    <INPUT Type="BUTTON" Value="Homepage" Onclick="window.location.href='https://www.computerhope.com/'">
-                </FORM>
+          <div>
+            <img class="blackHeart" src="images/black-heart.png" alt="black heart" />
+            <span> Nifty Penguin Magic </span>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="#"> Npm Enterprise </a></li>
+              <li><a href="#"> Products </a></li>
+              <li><a href="#"> Solutions </a></li>
+              <li><a href="#"> Resources </a></li>
+              <li><a href="#"> Docs </a></li>
+              <li><a href="#"> Support </a></li>
+            </ul>
+          </nav>
         </div>
-
-      </div>
-
-    </header>
-    <section>
-        <h1> Build amazing things</h1> 
-        <article>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ad tenetur eveniet hic suscipit a ex neque mollitia iure, eius reiciendis quidem porro dolorum, ipsa dicta earum sequi sapiente dolores!
-            </p>
-        </article>
-        <div>
-            <FORM>
-                <INPUT Type="BUTTON" Value="Homepage" Onclick="window.location.href='https://www.computerhope.com/'">
-                    <INPUT Type="BUTTON" Value="Homepage" Onclick="window.location.href='https://www.computerhope.com/'">
-                </FORM>
-        </div>
-    </section>
-    <section>
-    <img src="triangle-hexagon.svg" alt="nmp logo">
-    <h2>Bring you best opensource to your compagnie</h2>
-    <article>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas ipsam itaque quibusdam nesciunt corrupti quo porro necessitatibus minima, nemo vitae distinctio in neque facilis vel dignissimos sint, modi ratione aliquid?
-    </article>
-    </section>
-    <section>
-        <div>
-            <h3></h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, ex corporis tenetur aspernatur quis soluta ratione ipsam illum delectus quod quas repellat nostrum provident, sequi dolorem, debitis voluptate impedit iusto.</p>
-        </div>
-
-        <div>
-            <h3></h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, ex corporis tenetur aspernatur quis soluta ratione ipsam illum delectus quod quas repellat nostrum provident, sequi dolorem, debitis voluptate impedit iusto.</p>
-        </div>
-
-        <div>
-            <h3></h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, ex corporis tenetur aspernatur quis soluta ratione ipsam illum delectus quod quas repellat nostrum provident, sequi dolorem, debitis voluptate impedit iusto.</p>
-        </div>
-
-        <div>
-            <h3></h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, ex corporis tenetur aspernatur quis soluta ratione ipsam illum delectus quod quas repellat nostrum provident, sequi dolorem, debitis voluptate impedit iusto.</p>
+    <div>
+        <div class="wrap">
+            <div class="search">
+                <img class="logo-search"src="images/npm-logo.png" />
+               <input type="text" class="searchTerm"  placeholder="Search package">
+               <button type="submit" class="searchButton">
+                 <i class="fa fa-search"> <img src="images/magnifying-glass.png" width="25" height="25"/></i>
+              </button>
+             
+         </div>
+            </div>
+            <INPUT class="link" Type="BUTTON" Value="See plan " Onclick="window.location.href='https://www.computerhope.com/'">
+                <INPUT class="link-blanc" Type="BUTTON" Value="Join for free " Onclick="window.location.href='https://www.computerhope.com/'">
+         </div>
             
         </div>
+      </header>
+    <section id="premier">
+            
+            <article class=container>
+
+            <h1> Build amazing things</h1>
+            <p class="text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ad tenetur eveniet hic suscipit a ex neque mollitia iure, eius reiciendis quidem porro dolorum, ipsa dicta earum sequi sapiente dolores!
+            </p>
+        
+            <FORM class="form">
+                <INPUT class="btn" Type="BUTTON" Value="See plan " Onclick="window.location.href='https://www.computerhope.com/'">
+                    <INPUT class="boutton" Type="BUTTON" Value="Join for free " Onclick="window.location.href='https://www.computerhope.com/'">
+                </FORM>
+            </article>
+            
+        
+    </section>
+    <section id="deuxieme">
+        <div class="logo">
+            <img src="images/triangle-hexagon.svg" alt="nmp logo" >
+        </div>
+        <article  class="container">
+            
+        <h2>Bring you best opensource to your compagnie</h2>   
+     <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas ipsam itaque quibusdam nesciunt corrupti quo porro necessitatibus minima, nemo vitae distinctio in neque facilis vel dignissimos sint, modi ratione aliquid?
+         </p>
+
+    </article>
+    </section>
+    <section id="team">
+        <div>
+        <article>
+            <img class="icon" src="images/zero-configuration.svg" alt="nmp logo" >
+            <h3 class="fenetre">Zero cofiguration</h3>
+            <p class="paragraphe">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, ex corporis tenetur aspernatur quis soluta ratione ipsam illum delectus quod quas repellat nostrum provident, sequi dolorem, debitis voluptate impedit iusto.</p>
+        </article>
+
+     <article>
+        <img class="icon" src="images/team-management.svg" alt="nmp logo" >
+        <h3 class="fenetre">Team management</h3>
+        <p class="paragraphe">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, ex corporis tenetur aspernatur quis soluta ratione ipsam illum delectus quod quas repellat nostrum provident, sequi dolorem, debitis voluptate impedit iusto.</p>
+        </article>
+
+    <article>
+        <img class="icon" src="images/familiar-features.svg" alt="nmp logo" >
+        <h3 class="fenetre">Familiar feature</h3>
+        <p class="paragraphe">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, ex corporis tenetur aspernatur quis soluta ratione ipsam illum delectus quod quas repellat nostrum provident, sequi dolorem, debitis voluptate impedit iusto.</p>
+        </article>
+
+    <article>
+        <img class="icon" src="images/npm-audit.svg" alt="nmp logo" >
+        <h3 class="fenetre">Npm audit</h3>
+        <p class="paragraphe">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, ex corporis tenetur aspernatur quis soluta ratione ipsam illum delectus quod quas repellat nostrum provident, sequi dolorem, debitis voluptate impedit iusto.</p>
+        </article>
+        </div>
+        <div >
+
+            <INPUT class="org" Type="BUTTON" Value="Create an org " Onclick="window.location.href='https://www.computerhope.com/'">
+        </div>
+        
     </section>
 
     </body>
