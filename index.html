@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>npm | build amazing things</title>
+    <link rel="stylesheet" href="/index.css">
 </head>
 <body>
     <!--Header Section-->
     <header> 
-        <div class="header-high">
-            <div class="logo">
-                <p><img src="/images/black-heart.png" alt="Little black heart">Neverending Pun Machine</p>
+        <div>
+            <div>
+                <p><img src="/images/black-heart.png" alt="Little black heart" class="black-heart">Neverending Pun Machine</p>
             </div>
             <nav>
                 <ul>
@@ -22,34 +23,36 @@
                 </ul>
             </nav>
         </div>
-        <div class="header-low">
-            <img src="/images/npm-logo.png" alt="NPM Logo">
-            <form action="/some-url" method="POST">
-                <img src="/images/magnifying-glass.png" alt="Magnifying glass">
+        <div>
+            <img src="/images/npm-logo.png" alt="NPM Logo" class="npm-logo">
+            <form action="/some-url" method="POST" class="search-bar">
+                <img src="/images/magnifying-glass.png" alt="Magnifying glass" class="magn-glass">
+                <label for="src-package">Search Packages</label>
                 <input type="text" name="search-package" id="src-package"> 
                 <button type="submit">Search</button>
             </form>
-            <a href="#">Join</a>
-            <a href="#">Log in</a>
+
+            <a href="#" class="join">Join</a>
+            <a href="#" class="log-in">Log in</a>
         </div>
     </header>
-
+    
     <!--Section One-->
     
-    <section>
+    <section id="one" >
         <h1>Build amazing things</h1>
         <article>
-            <p>Essential Javascript development tools tha help you go to market faster and build powerful applications using modern open source code.</p>
+            <p>Essential Javascript development tools that help you go to market faster and build powerful applications using modern open source code.</p>
         </article>
         <div>
-            <a href="#">See plans</a>
+            <a href="#" class="red-button">See plans</a>
             <a href="#">Join for free</a>
         </div>
     </section>
 
     <!--Section Two-->  
 
-    <section>
+    <section id="two">
         <img src="/images/triangle-hexagon.svg" alt="Hexagon shape">
         <h2>Bring the best of open source to your company</h2>
         <article>
@@ -57,9 +60,9 @@
         </article>
     </section>
 
-    <!--Section Two-->  
+    <!--Section Three-->  
 
-    <section>
+    <section id="three">
         <div>
             <img src="images/zero-configuration.svg" alt="Cursor on a screen"/>
             <h3>Zero configuration</h3>
@@ -84,11 +87,7 @@
             <p>Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer.</p>
         </div>
 
-        <a href="#">Create an Org</a>
+        <a href="#" class="org">Create an Org</a>
     </section>
-
-
-
-
 </body>
 </html>
