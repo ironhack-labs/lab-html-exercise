@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
+body {
+  font-family: "Poppins";
+}
+
+header>div {
+  padding: 0 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid lightgray;
+}
+
+.blackHeart {
+  width: 20px;
+  margin-right: 1rem;
+}
+
+nav {
+  width: 600px;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  /* WHY USING ALIGN ITEMS INSTEAD OF FLEX FLOW ? because row and nowrap are default flex value*/
+  justify-content: space-between;
+  list-style: none;
+}
+
+.clean-link {
+  text-decoration: none;
+  color: black;
+}
+
+.search-header {
+  height: 55px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+}
+
+.npm-logo {
+  height: 20px;
+  margin-right: 20px;
+}
+
+.magnifier {
+  height: 20px;
+  padding: 0 5px;
+}
+
+header>div>form {
+  display: flex;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.05);
+  color: rgba(0, 0, 0, 0.05);
+  margin: 0;
+}
+
+.search-field {
+  width: 780px;
+  height: 35px;
+  background-color: rgba(0, 0, 0, 0);
+  color: rgba(0, 0, 0, 0.65);
+  padding-right: 35px;
+  border: none;
+}
+
+.search-btn {
+  background-color: #fb3e44;
+  color: white;
+  height: 40px;
+  padding: 0 20px;
+  margin: 1px solid rgba(0, 0, 0, 1);
+  position: relative;
+}
+
+.join-login {
+  position: absolute;
+  right: 35px;
+}
+
+.join {
+  text-align: center;
+  border: 1px solid rgb(154, 154, 154);
+  padding: 5px 12px;
+  color: rgb(48, 79, 79);
+}
+
+.logIn {
+  padding: 5px 10px;
+  margin-left: 10px;
+  color: rgb(48, 79, 79);
+}
+
+/*Section 1*/
+
+#build {
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(232, 217, 217, .3);
+}
+
+#build h1 {
+  font-weight: bold;
+  font-size: 4.5em;
+  margin-bottom: 40px;
+}
+
+#build article {
+  width: 35%;
+  font-size: 1em;
+  height: auto;
+  line-height: 2em;
+  text-align: center;
+  margin-bottom: 40px;
+
+}
+
+#build>div {
+  width: 35%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+}
+
+.plan-btn {
+  background-color: #FB3B49;
+  box-shadow: 8px 8px 0 rgba(251, 59, 73, .2);
+  color: white;
+  padding: 15px 50px;
+}
+
+.join-btn {}
