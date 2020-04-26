@@ -4,7 +4,7 @@ body {
   font-family: "Poppins";
 }
 
-header>div {
+header > div {
   padding: 0 25px;
   display: flex;
   align-items: center;
@@ -52,7 +52,7 @@ nav ul {
   padding: 0 5px;
 }
 
-header>div>form {
+header > div > form {
   display: flex;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.05);
@@ -96,7 +96,7 @@ header>div>form {
   color: rgb(48, 79, 79);
 }
 
-/*SECTION 1 AND 2*/
+/*SECTION 1, 2, 3*/
 
 .background {
   height: 600px;
@@ -109,7 +109,7 @@ header>div>form {
 /*Section 1*/
 
 #build {
-  background-color: rgba(232, 217, 217, .3);
+  background-color: rgba(232, 217, 217, 0.3);
 }
 
 #build h1 {
@@ -125,28 +125,27 @@ header>div>form {
   line-height: 2em;
   text-align: center;
   margin-bottom: 40px;
-
 }
 
-#build>div {
+#build > div {
   width: 35%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-
 }
 
 .plan-btn {
-  background-color: #FB3B49;
-  box-shadow: 8px 8px 0 rgba(251, 59, 73, .2);
+  background-color: #fb3b49;
+  box-shadow: 8px 8px 0 rgba(251, 59, 73, 0.2);
   color: white;
   padding: 15px 50px;
 }
 
-.join-btn {}
+.join-btn {
+}
 
 /*SECTION 2*/
-
+/*Improve H2 highlighting*/
 .polyedre {
   height: 200px;
   margin-bottom: 40px;
@@ -168,4 +167,43 @@ header>div>form {
   text-align: center;
   font-weight: lighter;
   font-size: 0.9em;
+}
+
+/* SECTION 3*/
+
+.all-features {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 0 40px;
+}
+
+.features-logo {
+  width: 30px;
+}
+
+.features-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 20%;
+  margin: 0 25px;
+}
+
+.features-box h3 {
+  color: #ed1c24;
+  font-weight: bold;
+}
+
+.features-box article {
+  font-weight: 500;
+}
+
+.createAnOrg {
+  background-color: black;
+  box-shadow: 8px 8px 0 rgba(128, 83, 35, 0.2);
+  padding: 5px 50px;
+  color: white;
 }
