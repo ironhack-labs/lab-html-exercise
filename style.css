@@ -1,14 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
+
 body {
   font-family: 'Poppins';
 }
+
 header > div {
     padding: 0 25px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid lightgray;
+    border-radius: 5px;
+    background-color: white;
   }
 
   .blackHeart {
@@ -19,8 +23,11 @@ header > div {
   nav ul {
     list-style: none;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
+    width: 550px;
+    text-decoration: none;
+    color: black;
   }
 
   nav a {
@@ -28,9 +35,6 @@ header > div {
     color: black;
   }
 
-  nav {
-    width: 600px;
-  }
   
 /*--------- Search -------------------*/
 
@@ -41,17 +45,23 @@ header > div {
 
   .searchlogo {
       width: 20px;
+      background-color: rgba(0,0,0,.05);
+      height: 40px;
+      width: 40px; 
+      position: relative;
+      top: -15px;
+      right: -104px;
   }
 
   #searchbox {
       display: flex;
-      justify-content: left;
+      justify-content: flex-end;
   }
 
   #searchline {
-      width: 1100px;
+      width: 800px;
       height: 40px;
-      background-color: light-gray;
+      background-color: rgba(0,0,0,.05);
       font-family: "Poppins";
       font-size: 16px;
       position: relative;
@@ -75,12 +85,13 @@ header > div {
     text-decoration: none;
     color: black;
     border: 1px solid lightgray;
-    position: relative;
-    left: 10px;
+    display: flex;
+    justify-content: center;
+    
+    
     font-size: 14px;
     width: 60px;
     padding: 5px;
-    text-align: center;
   }
 
   header #login{
@@ -103,7 +114,7 @@ header > div {
   }
 
   #first h1 {
-      font-size: 48px;
+      font-size: 3em;
       width: 500px;
   }
 
@@ -127,7 +138,6 @@ header > div {
     margin: 5px;
     text-decoration: transparent;
     color: black;
-    background-color: white;
     padding: 15px 60px;
     box-shadow: 8px 8px 0 rgba(251,59,73,.2)
   }
@@ -152,13 +162,19 @@ header > div {
       background-color: rgba(255,204,53,.4);
       transform: skew(15deg,0deg);
       font-style: italic;
-      margin: property; 
+      margin: property;
+      padding-left: 20px;  
+      padding-right: 20px;
+
   }
 
   #second article{
     font-size: 1em;
     width: 530px;
     margin-bottom: 50px; 
+    display: flex;
+    align-content: center;
+    text-align: center;
   }
 
   /*----------------------- Section 3 --------------------------*/
@@ -183,29 +199,35 @@ header > div {
   #third article {
     width: 250px;
     position: relative;
-    bottom: 200px;
+    bottom: 2px;
+    font-size: 15px;
+    text-align: left;
   }
 
   h3 {
       font-size: 1em;
       color:#ED1C24;
+      margin-bottom: 10px;
+      text-align: left;
   }
 
 
-  #third img {
+  #sec3box img {
       position: relative;
-      top: 20px;
-      width: 30px;
+      top: 5px;
+      width: 40px;
+      margin-bottom: 10px;
   }
 
   #third a {
       position: relative;
-      left: 500px;
+      left: 570px;
       background-color: black;
       color: white;
       padding: 15px 80px;
       text-decoration: transparent;
-      box-shadow: 8px 8px 0 rgba(251,59,73,.2)
+      box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+      bottom: 20px;
   }
 
 
