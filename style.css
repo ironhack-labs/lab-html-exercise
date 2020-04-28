@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+header>div {
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+    height: 50px;
+}
+
+nav {
+    width: 600px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.img-heart {
+    width: 20px;
+    margin-right: 1rem;
+}
+
+.img-logo {
+    width: 90px;
+}
+
+form {
+    border: 1px solid rgba(0, 0, 0, .05);
+    display: flex;
+    align-items: center;
+}
+
+form img {
+    width: 14px;
+    padding: 0 10px;
+}
+
+form input {
+    color: rgba(0, 0, 0, .05);
+    width: 800px;
+    padding: 10px 0px;
+    opacity: 0.7;
+    border: none;
+}
+
+form,
+input {
+    background-color: #f2f2f2;
+}
+
+form button {
+    background-color: #fb3e44;
+    color: white;
+    padding: 10px 15px;
+}
+
+.header-links {
+    display: flex;
+    justify-content: space-between;
+    width: 130px;
+}
+
+.header-links a {
+    padding: 5px 10px;
+}
+
+.header-links a:first-child {
+    box-shadow: inset 1px .2px 2px 0px black;
+}
+
+/*
+COLORES
+form label color: rgba(0,0,0,.05)
+form input color: rgba(0,0,0,.05)
+form button background color: #fb3e44
+form button letters color: white
+*/
+
+
+/*  SECTION 1  */
+
+#section-cover {
+    display: flex;
+    justify-content: center;
+    height: 600px;
+    background-color: rgba(232, 217, 217, .3);
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+#section-cover h1 {
+    font-size: 70px;
+    margin-top: -50px;
+    font-weight: bolder;
+    /*Intentona de engrosar la fuente*/
+    text-shadow: 0px 2px, 2px 0px, 2px 2px;
+}
+
+#section-cover article {
+    width: 50%;
+    line-height: 2em;
+    font-weight: bold;
+}
+
+.section-cover-links {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1.5em;
+}
+
+.btn-plans {
+    background-color: #FB3B49;
+    box-shadow: 8px 8px 0 rgba(251, 59, 73, .2);
+    color: white;
+}
+
+.btn-join {
+    background-color: white;
+}
+
+.btn-join,
+.btn-plans {
+    padding: 20px 70px;
+    font-weight: 900;
+}
+
+
+/*  SECTION 2  */
+
+#section-quote {
+    display: flex;
+    justify-content: center;
+    height: 500px;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 100px;
+}
+
+#section-quote img {
+    width: 30%;
+}
+
+#section-quote h2 {
+    background-color: rgba(255, 204, 53, .4);
+    transform: skew(9deg, 0deg);
+    font-style: italic;
+    padding: 0 25px;
+}
+
+#section-quote article {
+    width: 60%;
+    line-height: 2em;
+}
+
+
+/*  SECTION 3  */
+
+#section-features {
+    padding: 100px 0;
+}
+
+.div-features {
+    margin: 40px 0;
+    ;
+    display: flex;
+}
+
+.div-features div {
+    justify-content: space-evenly;
+    padding: 10px 30px;
+}
+
+.div-features img {
+    width: 40px;
+}
+
+.div-features h4 {
+    color: #ED1C24;
+    font-weight: bold;
+
+}
+
+.btn-features {
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    color: white;
+    background-color: black;
+    font-size: 1em;
+    padding: 15px 100px;
+    box-shadow: 8px 8px 0 rgba(128, 83, 35, .2);
+}
