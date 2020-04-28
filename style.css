@@ -1,10 +1,21 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
-
+/*---------initialize-------------------*/
 body {
   font-family: 'Poppins';
     margin:0;
     padding:0;
 }
+
+/*---------reuse style-------------------*/
+#general-information,
+#specific-information{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:600px;
+}
+
 /*---------header of nav---------------- */
 header > div {
     padding: 0 25px;
@@ -87,11 +98,6 @@ header > div {
 
    /*-------------general information-----------*/
    #general-information{
-       display:flex;
-       flex-direction: column;
-       justify-content: center;
-       align-items: center;
-       height:600px;
        background:rgba(232,217,217,.3);
    }
 
@@ -124,4 +130,22 @@ header > div {
        color:#000;
        background:#fff;
        margin-left:25px;
+   }
+   /*-------------specific information-----------*/
+   .triangle-hexagon-image{
+       width:25%;
+       margin-top:30px;
+   }
+
+   h2{
+       font-size:40px;
+       background:rgba(255,204,53,.4);
+       transform: skew(9deg,0deg);
+       font-style: italic;
+       margin-top:60px;
+   }
+
+   .specific-information-address{
+       width:55%;
+       text-align: center;
    }
