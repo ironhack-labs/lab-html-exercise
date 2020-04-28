@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900');
+body {
+    font-family: 'Poppins';
+}
+
+header > div {
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+}
+
+nav{
+    width: 600px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+}
+
+#blackheart {
+    width: 20px;
+    margin-right: 1em;
+}
+
+#blackheart-sidetext{
+    font-size: 0.7em;
+}
+
+/*----- Logo - Search Bar - Login/Join section------------*/
+
+.log-search-section{
+    display: flex;   
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+    align-content: center;
+    padding: 5px 25px;
+    
+}
+
+#npm-logo{
+    width: 60px;
+    height: auto;
+    /*flex-basis:auto;
+    flex: 0 1 auto;*/
+}
+
+#searchbar{
+    color: rgb(140, 136, 136); 
+    background-color:#f2f2f2;
+    background-image: url("images/magnifying-glass.png");
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    background-position: 1% 50%;
+    width: 850px; 
+    height: 33px;
+    border: none;
+    outline: none;
+    padding-left: 30px;
+    
+}
+
+.search-button{
+    background-color: #fb3e44;
+    color: white;
+    border: none;
+    padding: 0px 0px;
+    height: 35px;
+    width: 65px;
+    outline: none;
+    float: right;
+   
+}
+
+.join-button {
+    background-color: white;
+    border: 1px solid grey;
+    box-shadow: 0 -1px 1px 0 rgba(0,0,0,0.2);
+    color: black;
+    padding: 4px 15px;
+    margin-right: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+.log-in{
+    text-decoration: none;
+    font-size:0.9em;
+    color: black;
+}
+
+
+/* POSIBLE
+@media only screen and (max-width : 700px)
+{
+	
+	.log-search-section
+	{
+		width: 85%;
+		margin: 5px auto;
+	}
+    #searchbar {
+        flex-direction: row;
+        width: 57%;
+    }
+    .search-button {
+        width: 28%;
+        margin-top: 0;
+        float: right;
+    }  
+}
+*/
+/*------------END Logo - Search Bar - Login/Join section -----
+
+--------------INTRO SECTION 1 -----------------------------*/
+
+.sections{
+    
+    display: flex;
+	flex-wrap: nowrap;
+    height: 600px;
+    
+}
+
+#section-one{
+    background-color:rgba(232,217,217,.3);
+    align-items: center;
+    align-content:center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 4.2em; 
+    text-align: center;
+    font-weight: bolder;
+}
+
+#section-one-title{
+    height: auto;
+   
+    
+}
+
+#section-one-text{
+    text-align: center;
+    width: 30%;
+    margin-top: -50px;
+    font-size: 0.95em;
+    
+}
+
+.section-one-buttons{
+    justify-content:space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 32px;
+    border: none;
+    text-align: center;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+#button-plans{
+    background-color:#FB3B49;
+    color: white;
+    padding: 12px 55px;
+    box-shadow: 5px 5px 0 rgba(251,59,73,.2);
+    margin-right: 25px;
+    text-decoration: none;
+    
+}
+
+#button-free{
+    background-color:rgb(255, 255, 255);
+    color: black;
+    padding: 12px 55px;
+    text-decoration: none;
+}
+
+/*------------END SECTION ONE -----
+
+-------------- SECTION 2 -----------------------------*/
+
+#section-two{
+    background color: rgba(255,204,53,.4);
+    align-items: center;
+    align-content:center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#hexagon{
+    width: 30%; 
+    height: 30%;
+}
+
+h2{
+    font-size: 1.8em; 
+    text-align: center;
+    font-weight: 600;
+    background-color: rgb(254, 234, 184);
+    padding: 0 25px 0 25px;
+    transform: skew(9deg,0deg);
+    font-style: italic;
+    margin-top: 40px;
+}
+
+#section-two-text{
+    font-size: 0.8em;
+    text-align: center;
+    width: 45%;
+    
+}
+/*-------------- END SECTION 2 -----------------------------*/
+
+/*-------------- SECTION 3 -----------------------------*/
+
+#section-three{
+
+    align-items: baseline;
+    align-content:center;
+    flex-direction: row;
+    justify-content: center;
+
+} 
+
+h3{
+    color: #ED1C24;
+    font-size: 0.8rem;
+    
+}
+
+.products {
+    width: 300px;
+    margin-right: -60px;
+
+}
+
+.products p{
+    font-size: 0.8rem;
+    width: 200px;
+    
+}
+.products img{
+    width:10%; 
+}
+
+.create-org{
+    display:flex;
+    align-items: center;
+    align-content:center;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+#button-create{
+    background-color:rgb(0, 0, 0);
+    border: none;
+    color: white;
+    padding: 12px 100px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    flex-wrap: nowrap;
+    order: 0;
+    margin-top: -700px;
+    
+}
+
+/* VER COMO SOLUCIONAR EL TEMA DE LOS MÁRGENES NEGATIVOS - 
+
