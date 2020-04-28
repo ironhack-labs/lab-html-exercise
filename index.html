@@ -3,10 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>clone NPM website</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
     <header id="header">
-      <div>
+      <div class="nav-container">
         <div>
           <img class="blackHeart" src="images/black-heart.png" alt="black heart" />
           <span> Nifty Penguin Magic </span>
@@ -23,16 +24,16 @@
         </nav>
       </div>
     
-      <div>
-        <img src="images/npm-logo.png" alt="npm logo">
+      <div class="input-container">
+        <img src="images/npm-logo.png" alt="npm logo" class="logo-image">
         <form action="#" class="form">
-          <label for="search"><img src="images/magnifying-glass.png" class="glass"></label>
-          <input type="text" placeholder="Search packages">
-          <button type="submit" id="btn-search">Search</button>
+          <label for="search" class="glass-label"><img src="images/magnifying-glass.png" class="glass-image"></label>
+          <input type="text" placeholder="Search packages" class="text-input">
+          <button type="submit" class="btn-search">Search</button>
         </form>
-        <div>
-          <a href="#join-for-free">Join</a>
-          <a href="#join-for-free">Log in</a>
+        <div class="link-container">
+          <a href="#join-for-free" class="join-link">Join</a>
+          <a href="#join-for-free" class="login-link">Log in</a>
         </div>
       </div>
     </header>
