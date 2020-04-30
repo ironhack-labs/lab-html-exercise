@@ -7,8 +7,9 @@
     <link href="./stylesheet.css" type="text/css" rel="stylesheet">
     <title>npm</title>
 </head>
+
 <body>
-    <div class='nav'>
+    <header class='nav'>
         <div class='navTop'>
             <div id ='navLeft'>
             <img id ='blackHeart' src="./images/black-heart.png" alt="black heart">
@@ -32,63 +33,62 @@
                 <input id ='searchBar' type="search" placeholder="Search packages">
                 <button id='searchButton' type='submit'>Search</button>
             </div>
-                    <button id='joinButton' type="submit">Join</button>
-                    <button id='loginButton' type="submit">Log in</button>
+                <button id='joinButton' type="submit">Join</button>
+                <button id='loginButton' type="submit">Log in</button>
         </div>  
-    </div>     
+    </header>     
 
-    <div class='mainContainer'>
+    <section class='mainContainer'>
         <h1>
             Build amazing things
         </h1>
-            <p id='main1p'>
+            <article id='main1p'>
                 Essential JavaScript development tools that help you go to market faster and build powerful applications using modern open source code.
-            </p>
+            </article>
         <div class='links'>
             <a href="http://www.npmjs.com/"><button id='plans' type ='submit'>See plans</button></a>
             <a href="http://www.npmjs.com/signup"><button id='join' type='submit'>Join for free</button></a> 
         </div>
-    </div>
+    </section>
 
-    <div class='main2Container'>
+    <section class='main2Container'>
         <img id ='hexagon' src="./images/triangle-hexagon.svg" alt="hexagon">
-        <h2>
-            Bring the best of open source to your company
-        </h2>
+        <h2>Bring the best of open source to your company</h2>
         <p id='main2p'>
             npm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it. Create an Org and get more out of the tools your team already knows and loves.
         </p>
-    </div>
+    </section>
         
-    <div class='featuresContainer'>
+    <section class='featuresContainer'>
 
-                <div class='features'>
-                    <img class='icon' src="./images/zero-configuration.svg" alt="zero-configuration">
-                    <h5>Zero configuration</h5>
-                    <p>Create an org, add your team, and start collaborating. Nothing to configure, set up, or manage.</p>
-                </div>
+        <div class='features'>
+            <img class='icon' src="./images/zero-configuration.svg" alt="zero-configuration">
+            <h5>Zero configuration</h5>
+            <p>Create an org, add your team, and start collaborating. Nothing to configure, set up, or manage.</p>
+        </div>
         
-                <div class='features'>
-                    <img class='icon' src="./images/team-management.svg" alt="team-management">
-                    <h5>Team management</h5>
-                    <p>Control who has access to what modules within your team namespace using straightforward team management capabilities.</p>
-                </div>
+        <div class='features'>
+            <img class='icon' src="./images/team-management.svg" alt="team-management">
+            <h5>Team management</h5>
+            <p>Control who has access to what modules within your team namespace using straightforward team management capabilities.</p>
+        </div>
         
-                <div class='features'>
-                    <img class='icon' src="./images/familiar-features.svg" alt="familiar-features">
-                    <h5>Familiar features</h5>
-                    <p>npm Orgs has 100% parity with all the public npm registry features your developers already use.</p>
-                </div>
-                <div class='features'>
-                    <img class= 'icon' src="./images/npm-audit.svg" alt="npm-audit">
-                    <h5>npm audit</h5>
-                    <p>Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer.</p>
-                </div>      
-    </div>
+        <div class='features'>
+            <img class='icon' src="./images/familiar-features.svg" alt="familiar-features">
+            <h5>Familiar features</h5>
+            <p>npm Orgs has 100% parity with all the public npm registry features your developers already use.</p>
+        </div>
+
+        <div class='features'>
+            <img class= 'icon' src="./images/npm-audit.svg" alt="npm-audit">
+            <h5>npm audit</h5>
+            <p>Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer.</p>
+        </div>      
+    </section>
 
     <div class='createContainer'> 
         <a href="http://www.npmjs.com/"><button id='create' type ='submit'>Create an Org</button></a>
     </div>
 
-        </body>
-        </html>
+</body>
+</html>
