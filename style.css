@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
-body {
+body, button, input {
   font-family: 'Poppins';
 }
 
@@ -33,19 +33,14 @@ nav a {
   margin-right: 1rem;
 }
 
-#bottom-header{
-	display:flex;
-}
-
 #searchbar{
 	background-image: url(images/magnifying-glass.png);
-	background-size: 25px;
+	background-size: 1.2em;
+	background-position: 15px 50%;
 	background-repeat: no-repeat;
-	padding:1px;
-	margin-right: 2px;
 	background-color: rgba(0,0,0,.05);
 	height:30px;
-	text-indent: 25px;
+	text-indent: 40px;
 }
 
 .npm-logo{
@@ -57,12 +52,11 @@ nav a {
 	padding:2px;
 }
 
-#bottom-header-button{
+#bottom-header-search-button{
 	background-color: #fb3e44;
 	color:white;
 	height:40px;
 	width:75px;
-	margin-left: 0px;
 	margin-right:8px;
 	border:none;
 }
@@ -74,25 +68,7 @@ nav a {
 
 #join-button{
 	border: 1px solid lightgray;
-	padding-top: 2px;
-	padding-bottom: 2px;
-	padding-right: 12px;	
-	padding-left: 12px;
-}
-
-#section1{
-	display:flex;
-	align-content: center;
-	flex-direction: column;
-	align-items: center;
-	height:600px;
-	background-color: rgba(232,217,217,.3)
-}
-
-#section1 h1{
-	font-size:75px;
-	height:45px;
-
+	padding: 2px 12px 2px 12px;
 }
 
 article{
@@ -101,32 +77,49 @@ article{
 	text-align: center;
 }
 
+#section1{
+	display:flex;
+	align-content: center;
+	flex-direction: column;
+	align-items: center;
+	height:500px;
+	background-color: rgba(232,217,217,.3);
+}
+
+#section1 > *{
+	padding:20px;
+}
+
+#section1 h1{
+	margin-top:65px;
+	font-size:60px;
+	height:45px;
+}
+
 #section1-article{
 	width:28%;
 	text-align: center;
-	padding:10px;
 }
 
-#article1-links{
+#section1-links{
 	width:28%;
-	padding:10px;
 	padding-right: 0px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
 
-#article1-links button{
+#section1-button{
 	background-color: #FB3B49;
 	color:white;
 	height:40px;
-	width:30%;
+	width:45%;
 	border:none;
 	box-shadow: 8px 8px 0 rgba(251,59,73,.2);
-
+	font-size:100%;
 }
 
-#article1-links a{
+#section1-link{
 	text-decoration: none;
 	color:black;
 	margin-right: 50px;
@@ -138,8 +131,8 @@ article{
 	flex-direction: column;
 	align-items: center;
 	height:300px;
-	padding-top: 50px;
-	padding-bottom: 50px;
+	margin-top: 50px;
+	margin-bottom: 70px;
 }
 
 #section2 h3{
@@ -154,8 +147,16 @@ article{
 	height:175px;
 	width:175px;
 }
+
 #section2 article {
-	width:50%;
+	margin-right: 25%;
+	margin-left: 25%;
+}
+
+#section3{
+	display:flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 #boxes{
@@ -180,15 +181,12 @@ article{
 	left:16px;
 }
 
-#boxes h4{
-	color: #ED1C24;
+#zero-configuration-box{
+	margin-top: 25px;
 }
 
-#org-button-div{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	align-content: center;
+#boxes h4{
+	color: #ED1C24;
 }
 
 #org-button{
@@ -196,7 +194,8 @@ article{
 	box-shadow: 8px 8px 0 rgba(128,83,35,.2);
 	color:white;
 	height:40px;
-	width:250px;
+	width:350px;
 	border:none;
 	font-weight: bold;
+	margin-bottom:40px;
 }
