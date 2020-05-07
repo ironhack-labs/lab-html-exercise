@@ -2,6 +2,7 @@
 
 body {
     font-family: 'Poppins';
+    max-width: 2000px;
   }
 
 /*
@@ -40,20 +41,22 @@ nav a {
     margin-right: 1rem;
   }
 
-#search-bar {
+.search-bar {
     display: flex;
     border-bottom: 1px solid lightgray;
     justify-content: flex-start;
     margin: 0;
     height: 4em;
+    padding: 0 25px;
 }
 
 .npm-logo {
     width: 65px;
-    padding: 1em 0;
     margin-right: 1em;
     flex-shrink: 1;
 }
+
+/* Search bar */
 
 .magnifying-glass {
     width: 1.2em;
@@ -64,12 +67,10 @@ nav a {
 
 .form-style {
     display: flex;
-    width: 1100px;
-    margin: -4px;
-    padding:0.3em;
+    width: 100%;
+    margin: 0;
     justify-content:flex-start;
 }
-
 
 .search-pack {
     background-color: rgba(0,0,0,.05);
@@ -81,16 +82,16 @@ nav a {
 }
 
 .searchbttn {
-    background-color: red;
+    background-color:#fb3e44;
     color: white;
     width: 10%;
     font-size: medium;
+    font-weight: 200;
 }
 
 #links {
     display: flex;
-    padding: 0.6em 0;
-    margin-left: 2em;
+    margin-left: 3em;
 }
 
 #links a {
@@ -103,4 +104,62 @@ nav a {
 
 #links .login {
     border: none;
+}
+
+/* Section 1 */
+
+#section-one {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 600px;
+  background-color: rgba(232,217,217,.3);
+  box-sizing: content-box;
+  margin: 0 10px;
+  padding: 5px;
+}
+
+#section-one h1 {
+  margin-top: 0;
+  font-size: 4em;
+  font-weight: 900;
+  color:black;    
+  text-shadow: 3px 0 currentColor;
+  letter-spacing: 0.5px;
+}
+
+#section-one h3 {
+  width: 40%;
+  margin-right: 30%;
+  margin-left: 30%;
+  margin-bottom: 3em;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+#section-one .see-plans {
+  text-decoration: none;
+  color: white;
+  font-size: small;
+  font-weight: 900;
+  text-shadow: 1px 0 currentColor;
+  letter-spacing: 0.5px;
+  background-color: #FB3B49;
+  box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+  padding: 1em 5em;
+  margin-right: 20px;
+}
+
+#section-one .join-for-free {
+  text-decoration: none;
+  color:currentColor;
+  font-size: small;
+  font-weight: 900;
+  text-shadow: 1px 0 currentColor;
+  letter-spacing: 0.5px;
+  background-color: white;
+  padding: 1em 5em;
+  margin-left: 20px;
 }
