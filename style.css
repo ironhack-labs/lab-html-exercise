@@ -1,14 +1,20 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins");
 
 *,
-::before,
+*::before,
 *::after {
   box-sizing: border-box;
+}
+
+*a {
+  text-decoration: none;
 }
 
 body {
   font-family: "Poppins";
 }
+
+/* Header Styling */
 
 header > div {
   padding: 0 25px;
@@ -39,30 +45,117 @@ nav a {
   margin-right: 1rem;
 }
 
+/* 2nd header div */
+
+
 form > input {
-    color: rgba(0, 0, 0, 1);
+  color: rgba(0, 0, 0, 1);
 }
 
 form > button {
-    background-color: #fb3e44;
-    color: white;
+  background-color: #fb3e44;
+  color: white;
 }
+
+/* Buttons Styling */
+
+.btn {
+  text-decoration: none;
+  padding: .7em 3em;
+  color: #000;
+}
+ 
+.red {
+  background-color: #fb3b49;
+  box-shadow: 8px 8px 0 rgba(251, 59, 73, 0.2);
+  color: white;
+}
+
+.black {
+  background-color: #000;
+  color: #fff;
+  box-shadow: 8px 8px 0 rgba(128, 83, 35, 0.2);
+}
+
+.long {
+  padding: .7em 7em;
+}
+
+/* Sections Styling */
 
 #section1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 600px;
-    background-color: rgba(232, 217, 217, .3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 600px;
+  background-color: rgba(232, 217, 217, 0.3);
 }
 
-.button {
-    background-color: #FB3B49;
-    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+#section1 > h1 {
+  font-size: 3.5rem;
+  margin: 1rem auto;
 }
 
-.button > a {
-    color: white;
-    text-decoration: none;
+#section1 > article {
+  max-width: 50%;
+  text-align: center;
+  margin: 0 0 3em;
+}
+
+#section2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 600px;
+}
+
+#section2 > img {
+  max-width: 25%;
+}
+
+#section2 > h2 {
+  background-color: rgba(255, 204, 53, .4);
+  transform: skew(9deg,0deg);
+  font-style: italic;
+  margin-top: 2em;
+  padding: 0 1em;
+}
+
+#section2 > article {
+  max-width: 50%;
+  text-align: center;
+}
+
+#section3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 3em 0;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3em;
+  max-width: 80%;
+}
+
+.col {
+  width: 100%;
+}
+
+.col + .col {
+  margin-left: 1.5em;
+}
+
+.col > h3 {
+  color: #ED1C24
+}
+
+.col > img {
+  max-width: 50px;
 }
