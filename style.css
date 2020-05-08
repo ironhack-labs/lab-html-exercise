@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
 body {
-    font-family: 'Poppins';
-    max-width: 2000px;
+  font-family: 'Poppins';
+  max-width: 2000px;
   }
 
 /*
@@ -108,7 +108,7 @@ nav a {
 
 /* Section 1 */
 
-#section-one {
+.section-one {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -119,7 +119,7 @@ nav a {
   padding: 5px;
 }
 
-#section-one h1 {
+.section-one h1 {
   margin-top: 0;
   font-size: 4em;
   font-weight: 900;
@@ -128,7 +128,7 @@ nav a {
   letter-spacing: 0.5px;
 }
 
-#section-one h3 {
+.section-one h3 {
   width: 40%;
   margin-right: 30%;
   margin-left: 30%;
@@ -138,7 +138,7 @@ nav a {
   justify-content: center;
 }
 
-#section-one .see-plans {
+#sec-one .see-plans {
   text-decoration: none;
   color: white;
   font-size: small;
@@ -151,7 +151,7 @@ nav a {
   margin-right: 20px;
 }
 
-#section-one .join-for-free {
+.section-one .join-for-free {
   text-decoration: none;
   color:currentColor;
   font-size: small;
@@ -163,7 +163,9 @@ nav a {
   margin-left: 20px;
 }
 
-#section-two {
+/* Section 2 */
+
+.section-two {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -173,7 +175,7 @@ nav a {
   padding: 10px;
 }
 
-#section-two img {
+.section-two img {
   width: 40%;
   height: 40%;
   margin-bottom: 2em;
@@ -190,7 +192,71 @@ nav a {
   letter-spacing: 0.5px;
 }
 
-#section-two p {
+#sec-two p {
   text-align: center;
   padding: 0 10px;
+}
+
+/* Section 3 */
+
+.section-three {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: center;
+  flex-wrap: wrap;
+  width: 1500px;
+  margin: auto;
+}
+
+
+.section-three div { 
+  width: 80%;
+  flex: 1 0 10px;
+  justify-content: space-around;
+  align-items: center;
+}
+.first{
+  margin-left: 120px;
+}
+
+}.last{
+  margin-right: 120px;
+}
+
+#sec-three img {
+  width: 30px;
+}
+
+.red-head {
+  color: #ED1C24;
+  font-weight: 900;
+  text-shadow: 1px 0 currentColor;
+  letter-spacing: 0.5px;
+}
+
+
+#sec-three div { 
+  flex: 2 0 10px;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 10px;
+}
+
+#sec-three .break {
+  display: flex;
+  flex-basis: 100%;
+  height: 10em;
+  align-items: center;
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+}
+.button {
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+  box-sizing: content-box;
+  padding: 15px 120px;
 }
