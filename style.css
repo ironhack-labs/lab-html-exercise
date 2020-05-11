@@ -1,0 +1,92 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 16px;
+    margin: 0 50px;
+}
+
+
+/* Format the two header areas */
+header {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    margin: 0 20px;
+}
+
+.topheader {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.topheader span {
+    margin-right: 20px;
+}
+
+
+/* Format the navigation bar */
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav li {
+    list-style-type: none;
+    padding: 0 10px;
+    font-weight: 700;
+}
+
+nav li a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* Format the subheader, search bar and user-interaction buttons */
+.subheader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #f2f2f2;
+    padding: 10px 0;
+}
+
+.subheader img {
+    width: 80px;
+    flex-shrink: 0;
+}
+
+/* How do I properly format the search bar? */
+.subheader input {
+    background-color: #f2f2f2;
+    border: none;
+}
+
+.subheader .search {
+    padding: 12px 20px;
+    margin: 0;
+    background-color: #fb3b49;
+    color: white;
+    border: none;
+}
+
+.subheader .join {
+    padding: 5px 20px;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.subheader .login {
+    border-style: none;
+    padding: 5px 20px;
+    background-color: white;
+}
+
+
+/* Format the General Information section */
