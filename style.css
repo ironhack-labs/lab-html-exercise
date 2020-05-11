@@ -1,19 +1,26 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins');
+/* @import url('https://fonts.googleapis.com/css?family=Poppins'); */
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+ /* general */
 html, body {
     margin: 0;
     padding: 0;
   }
 
 body {
-  font-family: 'Poppins';
-  font-size: 10px;
-  line-height: 3em;
+    font-family: 'Poppins';
+    font-size: 10px;
+    line-height: 1em;
 }
 
-h1 {
-    text-align: center;
+.link-btn {
+    text-decoration: none;
+    color: black;
 }
+
+/* header general */
 
 header > div {
     padding: 0 25px;
@@ -21,8 +28,23 @@ header > div {
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid lightgray;
+
+  }
+
+  /* header top part */
+  
+  .header-top {
+    font-size: 1.2em;
+    height: 60px;
+    display: flex;
+    align-items: flex-end;
   }
   
+  .header-top div, nav ul{
+    margin-bottom: 0px;
+    padding-bottom: 20px;
+  }
+
   nav {
     width: 600px;
   }
@@ -32,12 +54,12 @@ header > div {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-weight: bolder;
   }
   
   nav a {
     text-decoration: none;
     color: black;
+    font-weight: 600;
   }
   
   .blackHeart {
@@ -45,28 +67,84 @@ header > div {
     margin-right: 1rem;
   }
 
-  .logoNpm {
+
+ /* header down part */
+
+  #logoNpm {
     width: 60px;
     margin-right: 1rem; 
   }
 
-  .header-top {
-    font-size: 1.1em;
+  #magnifier {
+    width: 18px; 
   }
 
   .search input {
     background-color: rgba(0,0,0,.05);
     color: rgba(0,0,0,.05);
     border: none;
+    height: 30px;
+    margin: 5px 0px 5px 3px;
+    padding-left: 20px;
   }
 
   .search button {
     background-color: #fb3e44;
     color: white;
     border: none;
+    height: 33px;
   }
 
-  form label color: rgba(0,0,0,.05)
-form input color: rgba(0,0,0,.05)
-form button background color: #fb3e44
-form button letters color: white
+  /* section 1 */
+
+  h1 {
+    font-size: 7em;
+    line-height: 1em;
+    font-weight: 800;
+    text-align: center;
+    padding-top: 0;
+    margin-top: 0px
+}
+
+  #plans {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto; 
+    height: 600px;
+    background-color: rgba(232, 217, 217, .3);
+  }
+
+  #plans article {
+    font-size: 1.8em;
+    line-height: 1.5em;
+    max-width: 500px;
+    text-align: center;
+  }
+
+  #plans div {
+    font-size: 1.8em;  
+    font-weight: 600;
+    margin-top: 90px;
+  }
+
+ #link-plans {
+    background-color: #FB3B49;
+    border: none;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+    color: white;
+    padding: 15px 60px;
+  }
+
+  #link-join-free {
+    background-color: white;
+    border: none;
+    padding: 15px 60px;
+  }
+
+
+
+
+
+ 
