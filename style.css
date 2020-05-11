@@ -12,6 +12,8 @@
 
 body {
   font-family: "Poppins";
+  margin: 0;
+  padding: 0;
 }
 
 /* Header Styling */
@@ -22,6 +24,7 @@ header > div {
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid lightgray;
+  max-height: 100px;
 }
 
 nav {
@@ -47,9 +50,28 @@ nav a {
 
 /* 2nd header div */
 
+.secondaryNavBar {
+  /* justify-content: center; */
+  padding: 1rem;
+}
 
-form > input {
+.secondaryNavBar > img {
+  max-width: 70px;
+}
+
+.secondaryNavBar > form {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.searchbar {
+  display: flex;
   color: rgba(0, 0, 0, 1);
+  flex-grow: .9;
+  border: none;
+  background-color: rgb(238, 238, 238);
+  
 }
 
 form > button {
@@ -57,28 +79,64 @@ form > button {
   color: white;
 }
 
+.searchbar > img {
+  max-height: 18px;
+  align-self: center;
+  padding-left: 1em;
+}
+
+.searchbar > input {
+  background-color: inherit;
+  border: none;
+  font-family: inherit;
+  flex-grow: 1;
+  padding-left: .7em;
+  font-size: 1rem;
+}
+
 /* Buttons Styling */
 
 .btn {
   text-decoration: none;
+  margin: .5em;
   padding: .7em 3em;
   color: #000;
+  font-family: "Poppins";
+  border: none;
+  cursor: pointer;
 }
- 
+
+.border {
+  border: 1px solid rgb(151, 151, 151);
+}
+
 .red {
   background-color: #fb3b49;
-  box-shadow: 8px 8px 0 rgba(251, 59, 73, 0.2);
-  color: white;
+  color: #fff;
 }
 
 .black {
   background-color: #000;
   color: #fff;
+}
+
+.white {
+  background-color: #fff;
+  color: #000;
+}
+
+.shadow {
   box-shadow: 8px 8px 0 rgba(128, 83, 35, 0.2);
 }
 
 .long {
   padding: .7em 7em;
+}
+
+/* Typography */
+
+.bold {
+  font-weight: bold;
 }
 
 /* Sections Styling */
@@ -89,7 +147,7 @@ form > button {
   align-items: center;
   flex-direction: column;
   height: 600px;
-  background-color: rgba(232, 217, 217, 0.3);
+  background-color: rgba(201, 173, 173, 0.3);
 }
 
 #section1 > h1 {
@@ -112,7 +170,7 @@ form > button {
 }
 
 #section2 > img {
-  max-width: 25%;
+  max-width: 15%;
 }
 
 #section2 > h2 {
@@ -133,7 +191,7 @@ form > button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 3em 0;
+  margin: 5em 0 3em;
 }
 
 .row {
