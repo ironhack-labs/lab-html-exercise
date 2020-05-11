@@ -40,6 +40,12 @@ header > div {
     align-items: flex-end;
   }
   
+  .header-top div {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; 
+  }
+
   .header-top div, nav ul{
     margin-bottom: 0px;
     padding-bottom: 20px;
@@ -98,12 +104,12 @@ header > div {
   /* section 1 */
 
   h1 {
-    font-size: 7em;
+    font-size: 7.5em;
     line-height: 1em;
     font-weight: 800;
     text-align: center;
     padding-top: 0;
-    margin-top: 0px
+    margin-top: 0px;
 }
 
   #plans {
@@ -126,23 +132,60 @@ header > div {
   #plans div {
     font-size: 1.8em;  
     font-weight: 600;
-    margin-top: 90px;
+    margin-top: 66px;
+    display: flex;
+    justify-content: space-between;
+    width: 490px;
   }
 
  #link-plans {
     background-color: #FB3B49;
-    border: none;
     box-shadow: 8px 8px 0 rgba(251,59,73,.2);
     color: white;
-    padding: 15px 60px;
+    padding: 25px 68px;
+    border: none;
   }
 
   #link-join-free {
     background-color: white;
+    padding: 25px 60px;
     border: none;
-    padding: 15px 60px;
   }
 
+  /* section 2 */
+
+  #general-info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto; 
+    height: 600px;
+  }
+
+  section img {
+    width: 250px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+  }
+ 
+h2 {
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+    font-style: italic;
+    font-size: 3.5em;
+    line-height: 1em;
+    font-weight: 600;
+    padding: 2px 25px;
+}
+
+#general-info article {
+    font-size: 1.6em;
+    line-height: 1.5em;
+    max-width: 760px;
+    text-align: center;
+    margin-top: 12px;
+}
 
 
 
