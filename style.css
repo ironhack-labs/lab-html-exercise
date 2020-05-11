@@ -37,55 +37,81 @@ nav a {
   margin-right: 1rem;
 }
 
+
+.secondheader {
+    padding: 8px 0px;
+}
+
 .npmLogo {
     width: 50px;
-    margin-right: 10px;
 }
 
 .magnifyingGlass {
-    width: 15px;
+    max-width: 15px;
+    flex: 0;
+    height: 16px;
+    padding: 0px 8px;
+}
+
+.magnifying-glass-container {
+    display: flex;
+    align-items: center;
+}
+
+.second-logo {
+    display: flex;
+    align-items: center;
+    margin-right: 16px;
+}
+.second-search {
+    display: flex;
+    flex: 1;
+    margin-right: 24px;
+    background-color: rgba(0,0,0,0.05);
+
+}
+
+.second-buttons {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex: 0;
+}
+
+.searchbar {
+    justify-content: flex-start;
+    display: flex;
 }
 
 .slot-form {
-    display: flex;
-    padding: 10px 0;
-    margin: 0 10px;
-    width: 100%;
-}
-.slot-form-container {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 25px;
-    display: flex;
+    flex: 1;
 }
 
-.slot-form-container label {
-    background-color: rgba(0,0,0,.05);
+.searchbar label {
     border-left: none;
-    padding: 10px 5px 5px;
 }
 
-.slot-form-container input {
-    background-color: rgba(0,0,0,.05);
+.searchbar input {
     border: none;
-    width: 95%;
+    height: 3em;
+    flex: 1;
+    background: transparent;
 }
 
-.slot-form-container button {
+.searchbar button {
     background-color: #fb3e44;
     color: white;
     border: none;
-    padding: 0 10px;
 }
+
 
 .link-btn-join {
     color: #000;
     text-decoration: none;
     border: 2px inset #e2dfdf;
     padding: 2px 12px;
-    margin: 0px 30px;
+    margin-right: 8px;
 }
 .link-btn-login {
     color: #000;
@@ -149,7 +175,7 @@ nav a {
     font-style: italic;
     margin-top: 50px;
     font-size: 2em;
-    padding: 0 40px;
+    padding: 0px 40px;
 }
 .section2 p {
     width: 45%;
@@ -165,15 +191,18 @@ nav a {
 
 .section3 {
     display: flex;
-    align-items: center;
+    align-items: baseline;
     flex-direction: row;
     justify-content: space-around;
     margin: 90px;
+    margin-bottom: 0px;
+
 }
 .section3 div {
     margin: 50px;
     display: flex;
     flex-direction: column;
+    margin-bottom: 100px;
 
 }
 
@@ -184,24 +213,27 @@ nav a {
     font-style: solid;
     
 }
+
+.button-org-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
 .link-btn-createanorg {
     box-shadow: 8px 8px 0 rgba(128,83,35,.2);
     color: white;
     background-color: black;
     text-decoration: none;
-    margin-bottom: 30px;
-    font-size: 20px;
-    padding: 20px;
+    font-size: 19px;
+    padding: 12px 80px;
     font-weight: bold;
-    display: flex;
-    margin-bottom: 20px;
-    width: 15%;
+    text-align: center;
 }
 .section3pics {
     width: 50px;
 }
 .section3 p {
     font-size: 12px;
-    width: 90%;
-    
+    width: 90%;    
 }

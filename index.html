@@ -25,25 +25,29 @@
                 </nav>
             </div>
 
-            <div>
+            <div class="secondheader">
     <!-- add logo, search bar and buttons (or links and style them as buttons later) -->
-                <img class="npmLogo" src="./images/npm-logo.png" alt="npm logo" />
-                <img class="magnifyingGlass" src="./images/magnifying-glass.png" alt="magnifying glass" />
-                <form class="slot-form" action="/register" method="post">
-                    <div class="slot-form-container">
-                        <label for="search"></label>
-                        <input type="text" placeholder="Search packages"></input>
+                <div class="second-logo"> 
+                    <img class="npmLogo" src="./images/npm-logo.png" alt="npm logo" />
+                </div>
+
+                <div class="second-search">
+                    <div class="magnifying-glass-container"> 
+                        <img class="magnifyingGlass" src="./images/magnifying-glass.png" alt="magnifying glass"/>
                     </div>
-                    <div class="slot-form-container">
-                        <button type="submit">Search</button>
-                    </div>
-                    <div class="slot-form-container">
-                        <a href="#" class="link-btn-join">Join</a>
-                    </div>
-                    <div class="slot-form-container">
-                        <a href="#" class="link-btn-login">Log in</a>
-                    </div>
-                </form>
+                    <form class="slot-form" action="/register" method="post">
+                        <div class="searchbar">
+                            <label for="search"></label>
+                            <input type="text" placeholder="Search packages"></input>
+                            <button type="submit">Search</button>
+                        </div>
+                    </form>
+                </div>
+                
+                <div class="second-buttons">
+                    <a href="#" class="link-btn-join">Join</a>
+                    <a href="#" class="link-btn-login">Log in</a>
+                </div>
 
             </div>
         </header>
@@ -106,7 +110,9 @@
                 <p>Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer.</p>
             </div>
         </section>   
-                <a href="#" class="link-btn-createanorg">Create an Org</a>
+        <div class="button-org-container">
+            <a href="#" class="link-btn-createanorg">Create an Org</a>
+        </div>
         
     </body>
 </html>
