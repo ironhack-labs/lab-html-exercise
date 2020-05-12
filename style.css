@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700;900&display=swap');
+
 html {
     margin: 0;
     padding: 0;
 }
 
 body {
-    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     font-size: 16px;
     margin: 0 50px;
 }
@@ -68,7 +70,7 @@ nav li a {
     border: none;
 }
 
-.subheader .search {
+.subheader .search-button {
     padding: 12px 20px;
     margin: 0;
     background-color: #fb3b49;
@@ -76,17 +78,68 @@ nav li a {
     border: none;
 }
 
-.subheader .join {
+.subheader .join-button {
     padding: 5px 20px;
     background-color: white;
     border: 1px solid black;
 }
 
-.subheader .login {
+.subheader .login-button {
     border-style: none;
     padding: 5px 20px;
     background-color: white;
 }
 
 
-/* Format the General Information section */
+/* Format the layout of all sections */
+.container {
+    display: relative;
+    padding-top: 30px;
+    margin: 0 auto;
+}
+
+
+/* Format the general information section */
+.dark-background {
+    background-color: #f8f4f4;
+}
+
+h1 {
+    font-size: 5rem;
+    font-weight: 900;
+    text-align: center;
+}
+
+.subtitle {
+    width: 500px;
+    font-size: 1.4rem;
+    text-align: center;
+    margin: 20px auto;
+    
+}
+
+.general-information-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.see-plans-button {
+    padding: 20px 80px;
+    border: none;
+    background-color: #fb3b49;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 900;
+    margin: 50px 20px 150px 0;
+    box-shadow: 10px 10px #fad0d2;
+}
+
+.join-for-free-button {
+    padding: 20px 80px;
+    border: none;
+    background-color: white;
+    color: black;
+    font-size: 1.3rem;
+    font-weight: 900;
+    margin: 50px 0 150px 20px;
+}
