@@ -1,5 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins");
 
+:root {
+  --clr-dark: #000;
+  --clr-light: #fff;
+  --clr-accent: #fb3e44;
+  --font-stack: "Poppins", sans-serif;
+}
+
 *,
 *::before,
 *::after {
@@ -11,12 +18,18 @@
 }
 
 body {
-  font-family: "Poppins";
+  font-family: var(--font-stack);
   margin: 0;
   padding: 0;
 }
 
-/* Header Styling */
+/* Typography */
+
+.bold {
+  font-weight: bold;
+}
+
+/* Header Styling - 1st div */
 
 header > div {
   padding: 0 25px;
@@ -48,7 +61,7 @@ nav a {
   margin-right: 1rem;
 }
 
-/* 2nd header div */
+/* Header Styling - 2nd div */
 
 .secondaryNavBar {
   /* justify-content: center; */
@@ -67,7 +80,7 @@ nav a {
 
 .searchbar {
   display: flex;
-  color: rgba(0, 0, 0, 1);
+  color: #000;
   flex-grow: .9;
   border: none;
   background-color: rgb(238, 238, 238);
@@ -76,7 +89,7 @@ nav a {
 
 form > button {
   background-color: #fb3e44;
-  color: white;
+  color: var(--clr-light);
 }
 
 .searchbar > img {
@@ -111,17 +124,17 @@ form > button {
 }
 
 .red {
-  background-color: #fb3b49;
-  color: #fff;
+  background-color: var(--clr-accent);
+  color: var(--clr-light);
 }
 
 .black {
   background-color: #000;
-  color: #fff;
+  color: var(--clr-light);
 }
 
 .white {
-  background-color: #fff;
+  background-color: var(--clr-light);
   color: #000;
 }
 
@@ -133,13 +146,9 @@ form > button {
   padding: .7em 7em;
 }
 
-/* Typography */
-
-.bold {
-  font-weight: bold;
-}
-
 /* Sections Styling */
+
+/* Section 1 */
 
 #section1 {
   display: flex;
@@ -160,6 +169,8 @@ form > button {
   text-align: center;
   margin: 0 0 3em;
 }
+
+/* Section 2 */
 
 #section2 {
   display: flex;
@@ -186,6 +197,8 @@ form > button {
   text-align: center;
 }
 
+/* Section 3 */
+
 #section3 {
   display: flex;
   flex-direction: column;
@@ -211,7 +224,7 @@ form > button {
 }
 
 .col > h3 {
-  color: #ED1C24
+  color: var(--clr-accent);
 }
 
 .col > img {
