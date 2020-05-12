@@ -51,7 +51,7 @@ header > div {
   }
 
   nav {
-    width: 600px;
+    width: 400px;
   }
   
   nav ul {
@@ -75,13 +75,24 @@ header > div {
 
  /* header down part */
 
+  .header-down {
+    min-height: 45px;
+    max-height: 100px;
+    font-size: 1.2em;
+    box-shadow: 0px 7px 10px  rgba(0,0,0,.1);;
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+  }
+
   #logoNpm {
     width: 60px;
-    margin-right: 1rem; 
   }
 
   #magnifier {
     width: 18px; 
+    position: relative;
+    left: 2rem;
   }
 
   .search input {
@@ -89,16 +100,41 @@ header > div {
     color: rgba(0,0,0,.05);
     border: none;
     height: 30px;
-    margin: 5px 0px 5px 3px;
-    padding-left: 20px;
+    min-width: 100px;
+    margin: 5px 0px 5px 0px;
+    padding-left: 45px;
+    font-family: monospace;
+    font-size: 0.8rem;
+    color:  rgba(0,0,0,.3);
+    position: relative;
+
   }
 
   .search button {
     background-color: #fb3e44;
     color: white;
     border: none;
-    height: 33px;
+    height: 30px;
+    padding: 0px 15px;
+    font-size: 1.1em;
+    position: relative;
   }
+
+  #join-btn {
+    background-color: white;
+    border-top: 1px solid darkgray;
+    border-left: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+    padding: 10px 18px;
+    font-weight: 500;
+  }
+
+  #logIn-btn {
+    background-color: white;
+    border: 1px solid white;
+    padding: 10px 18px;
+}
 
   /* section 1 */
 
@@ -194,7 +230,7 @@ h2 {
  }
 
 #selling-points {
-    margin: 70px 300px 120px 300px;
+    margin: 70px auto;
 }
 
 #selling-points img {
