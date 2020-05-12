@@ -91,7 +91,7 @@ nav li a {
 }
 
 
-/* Format the general information section */
+/* Format the general-information section */
 #general-information {
     padding: 50px 50px;
 }
@@ -141,10 +141,67 @@ nav li a {
 }
 
 
-/* Format the more details section */
+/* Format the more-details section */
 #more-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 50px 50px;
 }
 
+.hexagon {
+    width: 20%;
+    margin: 40px auto;
+}
 
+#more-details h2 {
+    background-color: #ffebb5;
+    color: black;
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+}
 
+.npm-description {
+    width: 60%;
+    font-size: 1.4rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+#more-details > .feature-container {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 100px 10px 50px 10px;
+}
+
+#more-details > .feature-container > article {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 30px 40px;
+    width: 280px;
+    font-size: 1.4rem;
+}
+
+.feature-container > article > img {
+    width: 50px;
+}
+
+.feature-container > article > h3 {
+    color: #f03739;
+    font-weight: 700;
+}
+
+#more-details button {
+    padding: 20px 130px;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 900;
+    box-shadow: 10px 10px #e5ddd4;
+}
