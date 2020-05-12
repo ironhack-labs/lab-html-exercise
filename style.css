@@ -50,13 +50,14 @@ nav li a {
 }
 
 
-/* Format the subheader, search bar and user-interaction buttons */
+/* Format the subheader */
 .subheader {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     border-top: 1px solid #f2f2f2;
-    padding: 10px 0;
+    padding: 12px 0;
 }
 
 .subheader img {
@@ -64,20 +65,34 @@ nav li a {
     flex-shrink: 0;
 }
 
-/* How do I properly format the search bar? */
-.subheader input {
-    background-color: #f2f2f2;
-    border: none;
+
+/* Format the search bar */
+.subheader > .search-bar {
+    display: flex;
+    flex-grow: 1;
+    margin: 0 20px;
 }
 
-.subheader .search-button {
+.subheader > .search-bar input {
+    background-color: rgba(242,242,242,0.5);
+    background-image: url(images/magnifying-glass.png);
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: left;
+    border: none;
+    padding: 12px 40px;
+    width: 100%;
+}
+
+.subheader > .search-bar .search-button {
     padding: 12px 20px;
-    margin: 0;
     background-color: #fb3b49;
     color: white;
     border: none;
 }
 
+
+/* Format the user interaction buttons */
 .subheader .join-button {
     padding: 5px 20px;
     background-color: white;
@@ -88,6 +103,11 @@ nav li a {
     border-style: none;
     padding: 5px 20px;
     background-color: white;
+}
+
+.subheader a {
+    text-decoration: none;
+    color: black;
 }
 
 
@@ -130,6 +150,12 @@ nav li a {
     box-shadow: 10px 10px #fad0d2;
 }
 
+.see-plans-button a {
+    text-decoration: none;
+    color: white;
+}
+
+
 .join-for-free-button {
     padding: 20px 80px;
     border: none;
@@ -138,6 +164,11 @@ nav li a {
     font-size: 1.3rem;
     font-weight: 900;
     margin: 50px 0 70px 20px;
+}
+
+.join-for-free-button a {
+    text-decoration: none;
+    color: black;
 }
 
 
@@ -155,11 +186,13 @@ nav li a {
 }
 
 #more-details h2 {
+    text-align: center;
     background-color: #ffebb5;
     color: black;
     font-size: 3rem;
     font-weight: 700;
-    text-align: center;
+    transform: skew(9deg,0deg);
+    font-style: italic;
 }
 
 .npm-description {
@@ -204,4 +237,9 @@ nav li a {
     font-size: 1.3rem;
     font-weight: 900;
     box-shadow: 10px 10px #e5ddd4;
+}
+
+#more-details button a {
+    text-decoration: none;
+    color: white;
 }
