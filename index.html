@@ -25,15 +25,17 @@
             <div> <!-- Contiene logo-->
                 <img class="logo" src="images/npm-logo.png" alt="logo">
             </div>
-            <div> <!-- Contiene lupa, input y search-->
-                <form class="searchBar" action="/some-url" method="get">
+            <form class="searchBar"> <!-- Contiene lupa, input y search-->
+                <div class="searchBarInput">
                     <img class="lense" src="images/magnifying-glass.png" alt="lense">
                     <input class="input" type="text" id="search" placeholder="Search packages">
-                    <button class="searchButton" type="submit">Search</button>
-                </form>
-            </div> <!-- Contiene join y login-->
-            <button type="submit">Join</button>
-            <button type="subtmit">Log In</button>
+                </div>
+                <button class="searchButton" type="submit">Search</button>
+            </form> 
+            <div class="navButtons"> <!-- Contiene join y login-->
+                <button class="joinButt" type="submit">Join</button>
+                <button class="loginButt" type="subtmit">Log In</button>
+            </div>
         </div>
     </header>
 
@@ -43,8 +45,8 @@
             modern open source code.
         </article>
         <div>
-            <button type="submit">See plans</button>
-            <button type="submit">Join for free</button>
+            <button class="plansButt" type="submit">See plans</button>
+            <button class="joinFreeButt" type="submit">Join for free</button>
         </div>
     </section>
 

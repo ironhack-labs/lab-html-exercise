@@ -1,6 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap');
 
 body {
+    font-family: 'Poppins';
+    font
+}
+
+button {
     font-family: 'Poppins';
 }
 
@@ -11,51 +16,116 @@ header > div {
     align-items: center;
     border-bottom: 1px solid lightgray;
 }
-
+/*First div*/
 nav {
     width: 600px;
 }
-
 nav ul {
     list-style: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
 nav a {
     text-decoration: none;
     color: black;
 }
-
 .blackHeart {
     width: 20px;
     margin-right: 1rem;
 }
 
+/*Second div*/
+.secondDiv {
+    padding: 10px 25px;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0 5px 10px -5px lightgray;
+}
 .logo {
     width: 70px;
     height: 20px;
+    margin: 0 10px;
 }
-
+.searchBar {
+    width: 85%;
+    display: flex;
+    margin: 0 10px;
+}
+.searchBarInput {
+    background-color: #f2f2f2;
+    display: flex;
+    flex-grow: 1;
+}
 .lense {
     width: 18px;
     height: 18px;
     display: flex;
+    margin: 10px;
 }
-
-.searchBar {
-    padding-top: 1rem;
-    display: flex;
-    position: relative;
+.input {
+    color: black;
+    background-color: #f2f2f2;
+    border: none;
+    flex-grow: 1;
 }
-
 .searchButton {
     background-color: #fb3e44;
     color: white;
     padding: .5rem 1rem;
+    border: none;
+}
+.navButtons {
+    display: flex;
+}
+.joinButt {
+    background-color: white;
+    border: 1px solid #cccccc;
+    padding: 5px 14px;
+    margin: 0 10px;
+}
+.loginButt {
+    border: none;
+    background-color: white;
+    margin: 0 10px;
+    white-space: nowrap;
 }
 
-.input {
-    color: rgba(0,0,0,.05);
+
+#intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 600px;
+    justify-content: center;
+    background-color: rgba(232,217,217,.3);
+}
+#intro > h1 {
+    font-size: 4em;
+    margin: 0;
+}
+#intro article {
+    width: 41%;
+    text-align: center;
+    margin: 3em 0;
+}
+#intro div {
+    width: 41%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.plansButt {
+    background-color: #FB3B49;
+    border: none;
+    box-shadow: 5px 5px 0 rgba(251,59,73,.2);
+    color: white;
+    padding: 1em 4em;
+    font-weight: bold;
+}
+
+.joinFreeButt {
+    border: none;
+    background-color: transparent;
+    font-weight: bold;
 }
