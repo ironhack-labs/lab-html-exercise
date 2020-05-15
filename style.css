@@ -2,7 +2,7 @@
 
 body {
     font-family: 'Poppins';
-    font
+    margin: 0;
 }
 
 button {
@@ -48,7 +48,7 @@ nav a {
     margin: 0 10px;
 }
 .searchBar {
-    width: 85%;
+    width: 50em;
     display: flex;
     margin: 0 10px;
 }
@@ -121,11 +121,68 @@ nav a {
     box-shadow: 5px 5px 0 rgba(251,59,73,.2);
     color: white;
     padding: 1em 4em;
-    font-weight: bold;
 }
 
 .joinFreeButt {
     border: none;
     background-color: transparent;
     font-weight: bold;
+}
+
+#description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 450px;
+    margin: 3em 0;
+}
+#description h1 {
+    font-size: 2em;
+    font-weight: lighter;
+    font-style: italic;
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+    padding: 10px 30px;
+}
+#description article {
+    text-align: center;
+    margin: 0 20em;
+}
+.hexagon {
+    width: 10em;
+    height: 10em;
+}
+
+#advantages {
+    margin: 3em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-around;
+    height: 400px;
+}
+
+#advantages h3 {
+    color: #ED1C24;
+    font-weight: lighter;
+}
+
+#advantages img {
+    width: 1.8em;
+}
+
+#advantages > div {
+    display: flex;
+}
+
+#advantages > div > div {
+    padding: 2em;
+}
+
+.createOrg {
+    background-color: black;
+    color: white;
+    box-shadow: 5px 5px 0 rgba(128,83,35,.2);
+    padding: 1em 7em;
 }
