@@ -48,18 +48,28 @@ body {
 
   .magnifier {
       height: 15px;
-      padding-top: 5px;
-      padding-left: 5px;
+      padding-left: 10px;
+      position: absolute;
+      top: 12.5%;
+      
+      
   }
 
   .search-bar {
-      width: 1020px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  .search-bar-design {
+      width: 950px;
+      height: 34px;
       border: none;
       background-color: rgba(0,0,0,.05);
-      margin-right: 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+      position: relative;
+      padding-left: 35px;
+      font-family: 'Poppins';
+      font-size: 0.8em;
   }
 
   .search-button {
@@ -92,6 +102,7 @@ body {
       flex-direction: column;
       justify-content: space-evenly;
       align-items: center;
+      margin-top: 6px;
   }
 
   h1 {
