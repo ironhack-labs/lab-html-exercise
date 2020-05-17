@@ -1,0 +1,500 @@
+@import url('https://fonts.googleapis.com/css?family=Fira Mono');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+html, body {
+    font-family: 'Poppins';
+    margin: 0 auto;
+    height: 100%;
+}
+
+/* --------- header section 1 styling ---------- */
+.headernote {
+    background-color: #231f20;
+    justify-content: center;
+    height: 5rem;  
+}
+
+.bgline {
+    height: 12px;
+    width: 100%;
+    display:flex;
+    align-self: flex-start;
+}
+
+.headernote a {
+    color: white;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.npmimage {
+    width: 75px;
+    padding-right: 15px;
+    padding-top: 27px;
+    height: 27px;
+}
+
+.gitlogo {
+    width: 30px;
+    padding-left: 20px;
+    height: 30px;
+    padding-bottom: 10px;
+    padding-top: 20px;
+}
+
+/* --------- header section 2 styling ---------- */
+
+header>div {
+    padding: 0 25px;
+    background-color: white;
+    display:flex;
+}
+
+span a{
+    font-size: 15px;
+    font-weight: 300;
+    text-decoration: none;
+    color: black;
+}
+
+.heartnav {
+    align-items: center;
+    display: flex;
+}
+nav {
+    width: 600px;
+    display:flex;
+    justify-content: flex-end;
+    margin-left: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    font-size: 15px;
+    
+}
+
+nav ul li {
+    padding-left: 15px;  
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.blackHeart {
+    width: 30px;
+}
+/* --------- search bar area styling ---------- */
+.searchbar {
+    border-top: 1px solid rgba(0,0,0, 0.1);
+    padding-top: 10px;
+}
+
+.searchlogo {
+    width: 80px;
+    height: 22px;
+    padding: 20px;
+    margin-top: 10px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+
+.searchmagnify {
+    background-color: #ededed;
+    margin-top: 10px;
+    width: 30px;
+    height: 20px;
+    padding: 15px 20px 17px 20px;
+    display: flex;
+    align-items: center;
+}
+
+input#search {
+    align-items: center;
+    background-size: contain;
+    background-color: #ededed;
+    background-repeat: no-repeat;
+    border: 0;
+    display: flex;
+    font-family: 'Fira Mono';
+    font-size: 14px;
+    height: 50px; 
+    margin-top: 10px;
+    text-indent: 20px;
+    width: 60%;
+}
+
+.searchbutton {
+    margin-top: 10px;
+    background-color: #231f20;
+    color: white;
+    font-family: 'Poppins';
+    font-size: 15px;
+    font-weight: bold;
+    width: 120px;
+    height: 52px;
+    border: 0;
+    cursor: pointer;
+}
+
+.signup {
+    color: #231f20;
+    background: transparent;
+    padding: 10px;
+    margin: 10px;
+    margin-left: 20px;
+    border: 1px solid lightgrey;
+    font-size: 15px;
+    width: 100px;
+    height: 52px;
+    cursor: pointer;
+}
+
+.signin {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #231f20;
+    font-size: 15px;
+    margin-left: 10px;
+    cursor: pointer;
+
+}
+
+input#search:focus {
+    background-image: none;
+    text-indent: 0px
+}
+/* --------- section 1 ---------- */
+.section1 {
+    background-image: url('/Users/g/Desktop/IRONHACK/PROJECTS/lab-html-exercise/images/npmbackground.png');
+    color: white;
+    padding-top: 15px;
+    flex-direction: column;
+    
+}
+
+.section1 h1 {
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 600;
+    width: 800px;
+    margin: 0 auto;
+    padding-top: 100px;
+    padding-bottom: 30px;
+}
+
+.section1 p {
+    text-align: center;
+    font-family: 'Arimo';
+    width: 550px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    line-height: 1.5;
+}
+
+.section1 h3 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+    width: 500px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+
+.section1buttons {
+      text-align: center;
+      padding-bottom: 50px;
+      
+}
+
+#button1 {
+    margin-right: 20px;
+    color: white;
+    font-family: 'Poppins';
+    padding: 15px;
+    background-color: #c12127;
+    width: 250px;
+    border: 0;
+    border-bottom: 5px solid #fa8717;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    font-size: 15px;
+    font-weight: 600;
+}
+
+#button2 {
+    margin-left: 20px;
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+    font-family: 'Poppins';
+    background-color: #e81aa8;
+    padding: 15px;
+    width: 250px;
+    border: 0;
+    border-bottom: 5px solid #b30ad2;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+
+/* --------- section 2 ---------- */
+
+.section2 {
+     padding-top: 15px;
+     box-sizing: border-box;
+     display: block;
+     flex-direction: column;
+     margin-right: auto;
+     margin-left: auto;
+     padding-top: 4rem;
+     text-align: center;
+     margin-bottom: 4rem;
+     max-width: 32 rem;
+     line-height: 1.5;
+     font-weight: 100;
+     color: #333;
+}
+
+.section2 img {
+    width:110px;
+    height:100px;
+    padding-bottom: 20px;
+}
+
+.section2 p {
+    text-align: center;
+    font-family: 'Arimo';
+    width: 550px;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+.section2 h3 {
+    text-align: center;
+    font-size: 2.25em;
+    font-weight: 600;
+    width: 500px;
+    color: #333;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+
+
+.littleimages {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: left;
+    margin: 0 auto;
+    max-width: 70rem;
+}
+
+.littleimages a {
+    font-family: 'Poppins';
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    border-radius: 9999px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    letter-spacing: .1em;
+    cursor: pointer;
+    display: inline-block;
+}
+
+#button2-2 {
+    margin-top: 20px;
+}
+
+.littleimages h4 {
+    font-family: 'Poppins';
+    font-weight: 500;
+    color: #333;
+    
+}
+
+.littleimages img {
+    width: 70px;
+    height: 70px;
+}
+
+#littleimages {
+    font-size: 14px;
+    font-weight: 100;
+    font-family: 'Arimo';
+    color: #333;
+    line-height: 1.5;
+}
+
+.img1, .img2, .img3, .img4 {
+    padding: 50px;
+}
+
+/* --------- section 3 ---------- */
+
+.section3 {
+    background-image: url('/Users/g/Desktop/IRONHACK/PROJECTS/lab-html-exercise/images/background2.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    color: #fff;
+    padding-top: 15px;
+    flex-direction: column;
+}
+
+.section3 div {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 32rem;
+    line-height: 1.5;
+    display: block;
+    text-align: center;
+}
+
+.section3 h1 {
+    display:block;
+    margin-top: 0;
+    line-height: 1.25;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+.section3 p {
+    font-family: 'Arimo', sans-serif;
+    line-height: 1.5;
+    font-weight: 100;
+}
+
+/* --------- section 4 ---------- */
+
+.section4 {
+    text-align: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    background-color: #fff;
+    box-sizing: border-box;
+    display: block;
+    color: #333;
+    line-height: 1.15;
+}
+
+.section4wrap {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 64rem;
+    display: block;
+    text-align: center;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+.section4imgdiv {
+    margin-right: auto;
+    margin-left: auto;
+    margin: 2rem;
+    max-width: 32rem;
+}
+
+.section4 img {
+    width: 100%;
+    max-width: 100%;
+    border-style: none;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+.section4 h1 {
+    font-family: Poppins,sans-serif;
+    text-align: center;
+    display:flex;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 2.25rem;
+    margin-bottom: 2rem;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 0;
+    max-width: 32rem;
+    line-height: 1.25;
+    box-sizing: border-box;
+}
+
+/* --------- footer ---------- */
+footer{
+    flex: 0 0 auto;
+    background-color: transparent;
+    color: black;
+    text-align: left;
+    list-style-type: none;
+    font-family: 'Poppins';
+    border-top:1px solid rgba(0, 0, 0, .1);
+    
+}
+
+
+.imgdiv {
+    width: 10%;
+    min-width: 0;
+    min-height: 0;
+    
+}
+footer img {
+    width:100px;
+    padding-top: 3rem;
+}
+
+footer ul {
+        list-style-type: none;
+        text-align: left;
+}
+
+footer h3 {
+    font-size: 17px;
+    letter-spacing: 1.3px;
+    color: #333333;
+    display: block;
+    font-size: 1.17em;
+    margin-left: 40px;
+    font-weight: bold;
+   
+}
+
+.footercontent {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+    line-height: 2.5;
+    padding: 1rem;
+    max-width: 96rem;
+}
+
+.footercontent a {
+    text-decoration: none;
+        color: rgba(0, 0, 0, .7);
+        font-weight: 400;
+        line-height: 2;
+        font-family: 'Poppins';
+}

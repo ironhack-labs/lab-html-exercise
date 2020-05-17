@@ -3,9 +3,166 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+      <link rel="stylesheet" type="text/css" href="style.css">
 
+    <title>npm clone</title>
+</head>
+<!------- Header & Navbar ------->
+<header>
+<!------- First header ------->
+    <div class ="headernote">
+        <img class="npmimage" src="/Users/g/Desktop/IRONHACK/PROJECTS/lab-html-exercise/images/logo white.png" alt="npm">
+         <a href="https://github.blog/2020-04-15-npm-has-joined-github/">is now a part of github</a>
+        <img class="gitlogo" src="/Users/g/Desktop/IRONHACK/PROJECTS/lab-html-exercise/images/gitlogowhite.png" alt="github">
+    </div>
+<!------- Second header ------->
+    <img class="bgline" src="/Users/g/Desktop/IRONHACK/PROJECTS/lab-html-exercise/images/npmbackground.png" alt="">
+    <div>
+        <div class="heartnav">
+            <img class="blackHeart" src="/Users/g/Desktop/IRONHACK/PROJECTS/lab-html-exercise/images/black-heart.png" alt="black heart" />
+            <span><a href="https://www.npmjs.com/">Nordic Panda Moor</a> </span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="https://www.npmjs.com/"> Products </a></li>
+                <li><a href="https://www.npmjs.com/"> Pricing </a></li>
+                <li><a href="https://www.npmjs.com/"> Documentation </a></li>
+                <li><a href="https://www.npmjs.com/"> Community </a></li>
+            </ul>
+        </nav>
+    </div>
+<!------- Third header ------->
+    <div class="searchbar">
+        <a href="https://www.npmjs.com/"><img class="searchlogo"
+                src="/Users/g/Desktop/IRONHACK/PROJECTS/lab-html-exercise/images/npm-logo.png" alt=""></a>
+        <img class="searchmagnify" src="/Users/g/Desktop/IRONHACK/PROJECTS/lab-html-exercise/images/magnify.svg" alt="">
+        <input type="text" id="search" name="search" onchange="hideIcon(this);" Placeholder="Search packages" />
+        <a href="https://www.npmjs.com/"><button class="searchbutton" type="submit">Search</button></a>
+        <a href="https://www.npmjs.com/"><button class="signup">Sign Up</button></a>
+       <a class="signin" href="https://www.npmjs.com/">Sign In</a>
+    </div>         
+    </header>
+<body>
+<!------- Section 1 ------->
+<section class="section1">
+    <div>
+        <h1>Build amazing things</h1>
+        <p>We're npm, Inc., the company behind Node package manager, the npm Registry, and npm CLI. We offer those to the community
+for free, but our day job is building and selling useful tools for developers like you.</p>
+        <h3>Take your JavaScript development up a notch</h3>
+        <p>Get started today for free, or step up to npm Pro to enjoy a premium JavaScript development experience, with features
+like private packages.</p>   
+    </div>
+<div class="section1buttons">
+    <button id="button1">Sign up for free</button>
+    <button id="button2">Learn about pro</button>
+</div>
+</section>
+<!------- Section 2 ------->
+<section> 
+    <div class="section2">
+        <img src="/Users/g/Desktop/IRONHACK/PROJECTS/lab-html-exercise/images/new triangle.png">
+        <h3>Bring the best of open source to you, your team, and your company</h3>
+        <p>Relied upon by more than 11 million developers worldwide, npm is committed to making JavaScript development elegant,
+productive, and safe. The free npm Registry has become the center of JavaScript code sharing, and with more than one
+million packages, the largest software registry in the world. Our other tools and services take the Registry, and the
+work you do around it, to the next level.</p>
+    </div>
+    <div class="littleimages">
+        <div id="littleimages" class="img1 container">
+            <img class="npmfree" src="/Users/g/Desktop/IRONHACK/PROJECTS/lab-html-exercise/images/npmfree.png" alt="">
+            <h4>npm Free</h4>
+            <p>Become a contributing member of the open source JavaScript community. Create public packages, publish updates, audit
+your dependencies, and more.</p>
+            <a href="https://www.npmjs.com/">Learn more</a>
+        </div>
+
+        <div id="littleimages" class="img2 container">
+            <img src="/Users/g/Desktop/IRONHACK/PROJECTS/lab-html-exercise/images/npmpro.png" alt="">
+            <img src="/Users/g/Desktop/IRONHACK/PROJECTS/lab-html-exercise/images/npm teams.png" alt="">        
+            <h4>npm Pro & Teams</h4>
+            <p>For next-level JavaScript developers who want more capabilities. Pro and Teams add the ability to build private packages
+for you, your team, or for customers.</p>
+            <a id="button2-2" href="https://www.npmjs.com/">Learn more</a>
+        </div>
+
+        <div id="littleimages" class="img3 container">
+            <img src="/Users/g/Desktop/IRONHACK/PROJECTS/lab-html-exercise/images/npm enterprise.png" alt="">
+            <h4>npm Enterprise</h4>
+            <p>For very large teams and business-critical projects, npm Enterprise delivers features that organizations with hundreds
+of developers need, like SSO and enhanced security.</p>
+            <a href="https://www.npmjs.com/">Learn more</a>
+        </div>
+
+        <div id="littleimages" class="img4 container">
+            <img src="/Users/g/Desktop/IRONHACK/PROJECTS/lab-html-exercise/images/npmpkgsafe.png" alt="">
+            <h4>npm PkgSafe</h4>
+            <p>Our security team's unique insights into JavaScript vulnerabilities and threats are delivered as free and premium
+features, as well as services for resellers and others.</p>
+            <a href="https://www.npmjs.com/">Learn more</a>
+        </div>    
+    </div>
+</section>
+<!------- Section 3 ------->
+<section class="section3">
+    <div>
+        <h1>We ❤ open source</h1>
+        <p>At npm, Inc., we're proud to dedicate teams of full-time employees to operating the npm Registry, enhancing the CLI,
+improving JavaScript security, and other projects that support and nurture a vibrant open source community.
+        </p>
+    </div>
+</section>
+<!------- Section 4 ------->
+<section class="section4">
+    <h1>Gratefully serving everyone from solo devs to the Fortune 500</h1>
+    <div class="section4wrap"> 
+        <div class="section4imgdiv">
+            <img src="/Users/g/Desktop/IRONHACK/PROJECTS/lab-html-exercise/images/logos.png" alt="">
+        </div>
+    </div>
+</section>
+<!------- Footer ------->
+<footer>
+    <div class="footercontent">
+        <div class="imgdiv">
+            <img src="/Users/g/Desktop/IRONHACK/PROJECTS/lab-html-exercise/images/npm-2-logo-black-and-white.png"
+                alt="">
+        </div>
+        <div>
+        <h3>Help</h3>
+            <ul>
+                <li><a href="https://www.npmjs.com/">Documentation</a></li>
+                <li><a href="https://www.npmjs.com/">Community</a></li>
+                <li><a href="https://www.npmjs.com/">Resources</a></li>
+                <li><a href="https://www.npmjs.com/">Advisories</a></li>
+                <li><a href="https://www.npmjs.com/">Status</a></li>
+                <li><a href="https://www.npmjs.com/">Contact</a></li>
+            </ul>
+        </div>
+    <div>
+        <h3>About</h3>
+            <ul>
+                <li><a href="https://www.npmjs.com/">Company</a></li>
+                <li><a href="https://www.npmjs.com/">Blog</a></li>
+                <li><a href="https://www.npmjs.com/">Careers</a></li>
+                <li><a href="https://www.npmjs.com/">Webinars</a></li>
+                <li><a href="https://www.npmjs.com/">Press</a></li>
+                <li><a href="https://www.npmjs.com/">Newsletter</a></li>
+            </ul>
+    </div>
+    <div>
+        <h3>Terms & Policies</h3>
+            <ul>
+                <li><a href="https://www.npmjs.com/">Policies</a></li>
+                <li><a href="https://www.npmjs.com/">Terms of Use</a></li>
+                <li><a href="https://www.npmjs.com/">Code of Conduct</a></li>
+                <li><a href="https://www.npmjs.com/">Privacy</a></li>
+            </ul>
+         </div>
+    </div>
+</footer>
+ <div>
+     <img class="bgline" src="/Users/g/Desktop/IRONHACK/PROJECTS/lab-html-exercise/images/npmbackground.png" alt="">
+ </div>
 </body>
 </html>
