@@ -5,7 +5,7 @@ body {
   }
 
   header > div {
-    padding: 0 25px;
+    padding: 0 25px 10px 25px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -15,6 +15,10 @@ body {
   h1 {
       font-size: 4em;
       margin: 5rem 0 2rem 0;
+  }
+
+  h3 {
+      color: #fb3e44;
   }
 
   a {
@@ -85,7 +89,7 @@ body {
      border: lightgrey solid 1px;
   }
 
-  div span {
+  .logobar div span {
      border: lightgrey solid 1px;
      padding: 10px 20px 10px 20px;
      margin: 0 20px 0 0;
@@ -125,4 +129,61 @@ body {
      font-family: Poppins;
      font-size: 1em;
      box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+}
+
+#second {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+#second img {
+    width: 150px;
+    margin: 5rem 0 2rem;
+}
+
+#second h2 {
+    background-color: rgba(255,204,53,.4);
+    padding: 0 2rem;
+    transform: skew(9deg,0deg);
+    font-style: italic;
+}
+
+#second article {
+    width: 600px;
+    text-align: center;
+    margin: 0 0 5rem 0;
+}
+
+#third {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#third div {
+    width: 200px;
+    margin: 2rem;
+}
+
+#third div span {
+   font-size: 14px;
+}
+
+#third img {
+    height: 30px;
+}
+
+#third > span {
+    flex-basis: 100%;
+}
+
+#third button {
+    background-color: black;
+    margin: 5rem 0 10rem 0;
+    padding: 1rem 8rem 1rem 8rem;
+    font-family: Poppins;
+    font-size: 1em;
+    color: white;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
 }
