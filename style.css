@@ -14,6 +14,18 @@ header > div {
 
 nav {
   width: 600px;
+  margin: auto;
+  padding-left: 10%;
+}
+
+#hdr-menu{
+  display: flex;
+  flex-direction: row;
+  height: 10%;
+}
+
+#hdr-menu  div {
+   padding-top:1%;
 }
 
 nav ul {
@@ -32,8 +44,63 @@ nav a {
   width: 20px;
   margin-right: 1rem;
 }
+/* search bar */
+
+#srch-bar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 8%;
+}
+#srch-bar > img {
+  width: 5%;
+}
+#srchTab{
+  width:70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #f7f2f2;
+}
+#srchTab img{
+  width: 30px;
+  height: 30px;
+  padding-top: 1%;
+  padding-left: 1%;
+}
+
+#srchText{
+  padding: 0 0 0 0;
+  margin: auto;
+  width: 100%;
+  height: 90%;
+  box-sizing: border-box;
+  border: none;
+  background-color: #f7f2f2;  
+}
+#srchBtn{
+  border: 2px solid #eee;
+  background-color: #FB3B49;
+  color:white;
+  box-sizing: border-box;
+  padding: 0 20px 0 20px;   
+}
+
+#joinBtn{
+  padding: 0 20px 0 20px;
+  background-color: white;
+  text-decoration: none;
+  border-style: groove;
+}
+
+#loginBtn{
+  text-decoration: none;
+  border-style: none;
+  background-color: white;
+}
+
 /* Section 1 with 2 buttons */
-#secPlans{
+#sec-plans{
   text-align: center;
   padding: 0 25% 0 25%;
   width: 50%;
@@ -41,10 +108,10 @@ nav a {
   background-color:  rgba(232,217,217,.3);
 }
 
-#secPlans h1{
+#sec-plans h1{
    font-size: 4em ;
 }
-#secPlans p{
+#sec-plans p{
   font-size: 2em ;
   padding: 0 10% 0 10%;
   margin: auto auto auto auto;
@@ -64,31 +131,31 @@ nav a {
     text-decoration: none;
   }
  
-  #secplansbtns {
+  #sec-plansbtns {
     display: flex; 
      flex: auto; 
      flex-direction: row; 
      justify-content: center;
   }
   /* section with hexagon picture*/
-  #secHex h2{
+  #sec-hex h2{
     background-color:  rgba(255,204,53,.4);
     transform: skew(9deg,0deg);
     font-style: italic;
     text-align: center;
     margin: 10px 15% 10px 15%;
   }
-  #secHex p{
+  #sec-hex p{
     padding: 0 20% 5% 20%;
     font-size: 0.9em;
   }
-  #secHex img{
+  #sec-hex img{
     width: 15%;
     height: 200px;
     margin: auto;
   }
 
-  #secHex{
+  #sec-hex{
     display: flex;
     justify-content: space-around;
     flex-direction: column;
@@ -121,4 +188,18 @@ nav a {
      flex: auto; 
      flex-direction: row; 
      justify-content: center;
+     border: 2px solid #eee;
+     background-color: black;
+     box-sizing: border-box;
+     box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+     margin: auto;
+     width: 30%;
+     padding: 20px 0 20px 0;
+ }
+ 
+
+  #secfeaturesbtn a {
+    color: white;  
+    text-decoration: none;
   }
+  
