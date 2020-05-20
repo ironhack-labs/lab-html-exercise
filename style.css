@@ -15,6 +15,10 @@ header > div
     align-items: center;
     border-bottom: 1px solid lightgray;
   }
+  span
+  {
+    font-weight: bold;
+  }
   
   nav 
   {
@@ -59,14 +63,15 @@ header > div
     background-color: rgba(0,0,0,.05);
     padding: 5px;
   }
-  #search
+  #search-input
   {
     width: 920px;
     height: 30px;
-    /*padding: 1px 1px 1px 10px;*/
     border-width:0px;
     border:none;
-    background-color: rgba(0,0,0,.05);
+    background-color: rgba(121, 66, 66, 0.0);
+    font-family: "Fira Mono", "Andale Mono", "Consolas", monospace;
+    font-size: 14px;
 
   }
 #button-search
@@ -79,8 +84,18 @@ header > div
 }
 #join
 {
-    margin: 2px;
+    margin: 5px;
+    padding: 5px 10px;
     border: 1px solid rgba(0,0,0,.05);
+    font-size: 14px;
+    font-weight: bold;
+}
+#login
+{
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 14px;
+
 }
 .link
 {
@@ -100,7 +115,6 @@ header > div
     align-items: center;
     height: 600px;
     background-color: rgba(232,217,217,.3);
-    /*padding: 60px 0px 30px 0px;*/
     margin-top: 10px;
 }
 h1
@@ -132,8 +146,9 @@ h1
 {
     text-decoration: none;
     color: black;
+    font-weight: ;
     padding: 10px 40px;
-    margin: 50 px 30px;
+    margin: 50px 30px;
     text-align: center;
     background-color: white;
 }
@@ -146,21 +161,23 @@ h1
     flex-direction: column;
     align-items: center;
     height: 600px;
-    margin-top: 10px;
+    /*margin-top: 10px;*/
 }
 .triangle
 {
     width: 200px;
     height: 200px;
     margin-top: 0px;
+    padding-top: 0px;
 }
 h2
 {
     background-color: rgba(255,204,53,.4);
     transform: skew(9deg,0deg);
     font-style: italic;
-    margin: 50px;
+    margin: 30px;
     padding: 0px 30px;
+    font-size: 30px;
 }
 #p2
 {
@@ -168,4 +185,49 @@ h2
     display: block;
     text-align: center;
     padding-bottom: 50px;
+    font-size: 14px;
+}
+
+/* SECTION 3 */
+section div ul
+{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    
+    
+}
+section div ul li
+{
+    width: 225px;
+    height: 105px;
+    margin: 0px 20px 180px 0px;
+}
+.img-section3
+{
+    width: 40px;
+    height: 40px;
+}
+h4
+{
+    color: #ED1C24;
+    margin: 16px 0px;
+}
+
+
+#createanorg
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  margin: 0px 500px;
+  height: 40px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  box-shadow: 8px 8px 0 rgba(128,83,35,.2) ;
+
 }
