@@ -1,3 +1,10 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>NPM CLONE</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
 <header>
     <div>
       <div>
@@ -15,64 +22,73 @@
         </ul>
       </nav>
     </div>
-  <div>
-    <form> <img src="/images/magnifying-glass.png"  alt="search"/>
-  <input type="text" name="search bar" placeholder="search packages">
+
+  <div class="search-bar">
+    <img class="logo" src="images/npm-logo.png" alt="logo">
+    <form class="form">
+        <img class="magnifying-glass" src="images/magnifying-glass.png"  alt="search">
+  <input id="input-search" type="text" placeholder="search packages">
+<button type="submit" id="btn-search">Search</button>
   </form>
-  <button><input type="button" value="search"></button>
-     <div>
-       <a href="#">Join</a>
-       <a href="#">Log in</a>
+  <a class="join" href="#">Join</a>
+<a class="login" href="#">Log in</a>
      </div>
     </div>
+</header>
     
     
-    <section id="section1"> 
+    <section id="sectionone"> 
     <h1>Build amazing things</h1>
-      <article>Essential JavaScript development tools that help you go to market faster and build powerful applications using
-modern open source code.
-      <div>
-            <a href="#">See plans</a>
-            <a href="#">Join for free</a>
+      <article class="building">
+          Essential JavaScript development tools that help you go to market faster and build powerful applications using
+modern open source code
+      </article>
+      <div class="links">
+            <a id="plans"href="#">See plans</a>
+            <a id="join" href="#">Join for free</a>
         </div>
-     </article>
-    </section>
-    <section id="section2">
-    <img class="hexagon" src=lab-html-exercise\images\triangle-hexagon.svg alt="triangle-hexagon">
+     </section>
+   
+ <section id="sectiontwo">
+    <img class="hexagon" src="images/triangle-hexagon.svg" alt="triangle-hexagon">
       <h3>Bring the best of open source to your company.</h3> 
-      <article> npm is the tool used by
+      <article class="npm"> npm is the tool used by
 over 11,000,000 JavaScript developers around the world.Your developers already use it. Your company depends on it.Create an Org and get more out of the tools your team already knows and loves.</article>
-      
-    </section>
-    <section id="section3"> 
-      <div>
-      <img class="zero configuration" src=lab-html-exercise\images\zero-configuration.svg alt="Zero-configuration">
-        <h5>Zero configuration</h5> 
+       </section>
+    <section class="sectionthree"> 
+      <div class="last-div">
+      <img class="zero-configuration" src=images/zero-configuration.svg alt="Zero-configuration">
+        <h5 class="benefits">Zero configuration</h5> 
         <p>Zero configuration Create an org, add
 your team, and start collaborating. Nothing to configure, set up, or manage.</p>
       </div>
-      <div>
-      <img class="team management" src=lab-html-exercise\images\team-management.svg alt="Team management">
-        <h5>Team management</h5>
+      <div class="last-div">
+      <img class="team-management" src=images/team-management.svg alt="Team management">
+        <h5 class="benefits">Team management</h5>
         <p>Team management Control who has access to
 what modules within your team namespace using straightforward team management capabilities.</p>
       </div>
-      <div>
-      <img class ="familiar features" src=lab-html-exercise\images\familiar-features.svg
+      <div class="last-div">
+      <img class="familiar-features" src=images/familiar-features.svg
            alt= "familiar features">
-        <h5>Familiar features</h5>
-        <p> Familiar features npm Orgs
-has 100% parity with all the public npm registry features your developers already use. npm audit Enjoy the security
-auditing features built into the npm client, a zero-friction way to make open source software safer. Create an Org</p>
+        <h5 class="benefits">Familiar features</h5>
+        <p> Familiar features npm Orgs has 100% parity with all the public npm registry features your developers already use. npm audit Enjoy the security
+auditing features built into the npm client, a zero-friction way to make open source software safer. </p>
       </div>
-      <div>
-      <img class="npm audit" src=lab-html-exercise\images\npm-audit.svg alt="familiar features">
-        <h5>Npm audit</h5>
+      <div class="last-div">
+      <img class="npm-audit" src=images/npm-audit.svg alt="npm-audit">
+        <h5 class="benefits">Npm audit</h5>
         <p>npm audit Enjoy the security
 auditing features built into the npm client, a zero-friction way to make open source software safer. Create an Org</p>
       </div>
-      <div>
-      <a href="#">create an Org</a>
-      </div>
-    </section>
+</section>
+
+      <footer>
+          <button class="create" type="submit">
+      <a href="#">Create an Org</a>
+    </button>
+</footer>
+       
+</body>
+</html>
             
