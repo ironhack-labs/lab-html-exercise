@@ -13,15 +13,18 @@ auditing features built into the npm client, a zero-friction way to make open so
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>NPM-HTML exercise</title>
+    <link href="/style.css" rel="stylesheet"/>
 </head>
 <body>
-
+  <header class="header" id="header">
+    <div>
+    <div id="logo" class="logo">
+      <img src="images/black-heart.png" alt="black-heart"/>
+      <h5>Neverending Pun Machine</h5>
+    </div>
     <nav class="nav-bar">
-      <div id="logo" class="logo">
-        <img src="images/black-heart.png" alt="black-heart"/>
-        <h5>Neverending Pun Machine</h5>
-      </div>
+     
         <ul class="nav-bar-ul">
           <li><a href="#npmentreprise">npm Entreprise</a></li>
           <li><a href="#products">Products</a></li>
@@ -30,15 +33,19 @@ auditing features built into the npm client, a zero-friction way to make open so
           <li><a href="#support">Support</a></li>
         </ul>
       </nav>
-      <header class="header" id="header">
+    </div>
+    <div>
         <img src="/images/npm-logo.png" alt="logo-npm"/>
         <form action="" method="">
-          <input type="text" name="search" id="search"/>
-          <button type="submit">Search</button>
+          <img src="/images/magnifying-glass.png" alt="search"/>
+          <input type="text" name="search" id="search" placeholder="Search for packages"/>
+          <button type="submit"  >Search</button>
           </form>
+          <div class="buttons-log">
           <a href="#join" >Join</a>
           <a href="#login">Log In</a>
-
+          </div>
+    </div>
 
       </header>
 
@@ -46,11 +53,12 @@ auditing features built into the npm client, a zero-friction way to make open so
         <h1>Build amazing things</h1>
         <p>Essential JavaScript development tools that help you go to market faster and build powerful applications using
           modern open source code</p>
-          <div class="red-button">
+          <div class="middle-buttons">          <div class="red-button">
             <a href="#seeplans">See plans</a>
           </div>
           <div class="join">
             <a href="#join">Join for free</a>
+          </div>
           </div>
       </section>
 
@@ -67,35 +75,38 @@ auditing features built into the npm client, a zero-friction way to make open so
 
     <footer>
       <section>
-        <article>
+        <div class="footer">
+        <div class="footer-article">
           <img src="/images/zero-configuration.svg" alt="zero-configuration"/>
           <a href="#zero-configuration">zero configuration</a>
           <p>Create an org, add
             your team, and start collaborating. Nothing to configure, set up, or manage.</p>
-        </article>
-        <article>
+          </div>
+        <div class="footer-article">
           <img src="/images/team-management.svg" alt="team management"/>
           <a href="#teammanagement">Team management</a>
           <p>Control who has access to
             what modules within your team namespace using straightforward team management capabilities.</p>
-        </article>
-        <article>
+          </div>
+        <div class="footer-article">
           <img src="/images/familiar-features.svg" alt="familiar features"/>
           <a href="#features">Familiar features</a>
           <p>Familiar features npm Orgs
             has 100% parity with all the public npm registry features your developers already use.</p>
-        </article>
-        <article>
+          </div>
+        <div class="footer-article">
           <img src="/images/npm-audit.svg" alt="npm audit"/>
           <a href="#audit">npm audit</a>
           <p>Enjoy the security
             auditing features built into the npm client, a zero-friction way to make open source software safer.</p>
-        </article>
-      </section>
-    </footer>
+          </div>
+          </div>
+     
     <div id="createorg" class="createorg">
         Create an Org
     </div>
+  </section>
+</footer>
     
 </body>
 </html>
