@@ -50,10 +50,19 @@ nav a {
     
 }
 .topbar-logo{
+    display: flex;
     height: 25px;
+    flex-grow: 1;
 }
 .topbar-find-logo{
+    display: flex;
     height: 100%;
+    flex-grow: 1;
+}
+.topbar-find-input{
+    display: flex;
+    font-size:2rem;
+    flex-grow: 1;
 }
 
 form {
@@ -71,6 +80,15 @@ input, label {
     width:100%;
        
 }
+input[type="text"]
+{
+    font-size:1rem;
+}
+textarea:focus, input:focus, select:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+} 
 
 ::placeholder{
    font-size: 1rem; 
@@ -93,7 +111,7 @@ label{
     justify-content:space-around;
 }
 .btn{
-    padding:5px 15px;
+    padding:0px 15px;
    
 }
 .border{
@@ -168,13 +186,14 @@ label{
     flex-direction:column;
     justify-content:center;
     align-items:center;
-    margin: 0 35px ;
-    height: 350px;
+    margin: 0 auto ;
+    min-height: 350px;
 
 }
 .features-card-container{
     display: flex;
-    margin: 10px 20px;
+    justify-self: center;
+    margin: 0 auto;
     flex-wrap: wrap;
    
 }
