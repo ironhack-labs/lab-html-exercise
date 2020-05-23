@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins';
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+  }
+
+header > div {
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+}
+
+nav {
+    width: 600px;
+}
+  
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+nav a {
+    text-decoration: none;
+    color: black;
+  }
+  
+.blackHeart {
+    width: 20px;
+    margin-right: 1rem;
+  }
+.topbar{
+    display: flex;
+    border-bottom: none;
+    
+    
+}
+.topbar-logo{
+    height: 25px;
+}
+.topbar-find-logo{
+    height: 100%;
+}
+
+form {
+    display: flex;
+    width:100%;
+    background:rgba(0,0,0,.05);
+    margin:5px 10px;
+     
+}
+
+input, label {
+    background:rgba(0,0,0,.05); 
+    height: 30px;
+    border:none;
+    width:100%;
+       
+}
+
+::placeholder{
+   font-size: 1rem; 
+}
+
+label{
+    width:30px;   
+}
+.topbar-button {
+    background:#fb3e44;
+    color:#ffff;
+    box-shadow: none;
+    height: 30px;
+    font-size: 1rem; 
+    padding:5px 10px;
+}
+.topbar-login{
+    display: flex;
+    width:200px;
+    justify-content:space-around;
+}
+.btn{
+    padding:5px 15px;
+   
+}
+.border{
+    border:1px solid #828282;
+    border-radius:5px;
+}
+.wrapper{
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    background:rgba(232,217,217,.3);
+    height:600px;
+    padding: 0 25px;
+}
+.wrapper-title{
+    font-size: 3rem;
+    margin:0;
+}
+.wrapper-description{
+    width: 400px;
+    text-align: center;
+}
+.wrapper-actions{
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    width: 400px;
+    margin: 0 auto;
+}
+.wrapper-btn{
+    width: 50%;
+    text-align:center;
+    padding:5px;
+}
+.red{
+    background:#FB3B49;
+    color:#fff;
+    box-shadow:8px 8px 0 rgba(251,59,73,.2)
+}
