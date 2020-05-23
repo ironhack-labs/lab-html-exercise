@@ -45,9 +45,7 @@ nav a {
   }
 .topbar{
     display: flex;
-    border-bottom: none;
-    
-    
+    border-bottom: none;    
 }
 .topbar-logo{
     display: flex;
@@ -58,26 +56,33 @@ nav a {
     display: flex;
     height: 100%;
     flex-grow: 1;
+    padding:5px;
 }
 .topbar-find-input{
     display: flex;
     font-size:2rem;
     flex-grow: 1;
+    padding:5px
 }
 
 form {
     display: flex;
     width:100%;
     background:rgba(0,0,0,.05);
-    margin:5px 10px;
+    margin:10px 20px;
+    height: 40px;
+    justify-content: center;
+    align-items:center;
+    
      
 }
 
 input, label {
-    background:rgba(0,0,0,.05); 
+    background-color:transparent; 
     height: 30px;
     border:none;
     width:100%;
+    margin:0 5px
        
 }
 input[type="text"]
@@ -90,6 +95,7 @@ textarea:focus, input:focus, select:focus {
     outline: 0;
 } 
 
+
 ::placeholder{
    font-size: 1rem; 
 }
@@ -101,9 +107,16 @@ label{
     background:#fb3e44;
     color:#ffff;
     box-shadow: none;
-    height: 30px;
+    height: 40px;
     font-size: 1rem; 
     padding:5px 10px;
+}
+
+button[type="submit"]:link {
+    cursor: pointer;
+}
+.topbar-button:click {
+    border:none;
 }
 .topbar-login{
     display: flex;
@@ -220,3 +233,8 @@ label{
     font-size: 0.8rem;
 }
 
+
+
+
+
+  
