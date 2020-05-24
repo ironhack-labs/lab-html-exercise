@@ -78,7 +78,7 @@ We could try to represent this part of the website with the following:
 ```html
 <header>
   <div>
-    <div>
+    <div class="image-container>
       <img class="blackHeart" src="LINK TO IMAGE GOES HERE" alt="black heart" />
       <span> Nifty Penguin Magic </span>
     </div>

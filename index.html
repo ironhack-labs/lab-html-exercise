@@ -3,35 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
-    <header>
+    <header class="header">
         <div class="tcontainer">
-          <div>
-            <img class="blackHeart" src="./images/black-heart.png" alt="black heart" />
-            <span> Nifty Penguin Magic </span>
-          </div>
-          <nav>
-            <ul>
-              <li><a href="#"> npm Enterprise </a></li>
-              <li><a href="#"> Products </a></li>
-              <li><a href="#"> Solutions </a></li>
-              <li><a href="#"> Resources </a></li>
-              <li><a href="#"> Docs </a></li>
-              <li><a href="#"> Support </a></li>
-            </ul>
-          </nav>
+            <div>
+                <img class="blackHeart" src="./images/black-heart.png" alt="black heart"/>
+                <span class="tcontainer-text"> Nifty Penguin Magic </span>
+                <span>
+            </div>
+                <nav>
+                    <ul>
+                     <li><a href="#"> npm Enterprise </a></li>
+                     <li><a href="#"> Products </a></li>
+                     <li><a href="#"> Solutions </a></li>
+                     <li><a href="#"> Resources </a></li>
+                     <li><a href="#"> Docs </a></li>
+                     <li><a href="#"> Support </a></li>
+                     </ul>
+                </nav>
         </div>
-      
         <div class="bcontainer"> 
-            <img src="./images/npm-logo.png" alt="npm-logo"><br>
-            <img src="./images/magnifying-glass.png" alt="maginfying glass">
-            <input type="text" placeholder="Search packages">
-            <input type="button" value="Search"><br>
+            <div class="in-bcontainer">
+                <span class="logo-container">
+                    <img src="./images/npm-logo.png" alt="npm-logo" id="logo">
+                </span>
+                <div class="searchbar">
+                    <span class="magni-container">
+                        <img src="./images/magnifying-glass.png" alt="maginfying glass" id="magni">
+                    </span> 
+                    <input type="search" placeholder="Search packages" id="search-bar">
+                    <input type="button" value="Search" id="search-btn">
+                </div>
             <a href="#">Join</a>
             <a href="#">Login</a>
-          </div>
       </header>
       <section id="planning">
           <h1>Build amazing things</h1>
@@ -80,7 +87,5 @@
         </div>
         <a href="#">Create an Org</a>
       </section>
-
-
 </body>
 </html>
