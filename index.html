@@ -28,16 +28,12 @@
             <img class="npm-logo" src="images/npm-logo.png" alt="npm-logo"/>
             <img class="magnifying-glass" src="images/magnifying-glass.png" alt="magnifying-glass"/>
             <form id="search" action="/search" method="get">
-              <input type="search" name="search-bar" id="search-bar">
+              <input type="text" name="search-bar" id="search-bar" placeholder="Search packages">
               <button type="submit" id="search-button">Search</button>
             </form>
             <div>
-              <form id="join-button" action="/some-url" method="get">
-                <input type="submit" value="Join"/>
-              </form>
-              <form id="login-button" action="/some-url" method="get">
-                <input type="submit" value="Log In"/>
-              </form>
+              <button id="join-button">Join</button>
+              <button id="login-button">Log in</button>
             </div>
         </div>
     </header>
