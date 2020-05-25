@@ -3,7 +3,21 @@
 body {
   font-family: 'Poppins';
 }
+h1 {
+        font-size:4.5em; 
+        letter-spacing: 0em;
+}
+h2 {
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+    font-style: italic;
+    padding: 0 12px;
+}
+h4 {
+    color: #ED1C24;
+}
 #first-div {
+    margin: 0 30px;
     padding: 0.5px;
     display: flex;
     justify-content: space-between;
@@ -27,16 +41,138 @@ nav a {
     width: 20px;
     margin-right: 1rem;
 }
-header > #search-logo {
+#search-logo {
     padding: 0.5px;
+    margin: 10px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center; 
 }
 #magnifying-glass {
     width: 20px;
-    margin-right: 1rem;
+    height: 20px;
+    background-color: rgba(0,0,0,.05);
+    padding: 6px;
 }
 #npm-logo {
-    
+    width: 60px;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px
+}
+form input, label {
+    width:900px;
+    height: 30px;
+    background-color: rgba(0,0,0,.05);
+    border: 2px hidden #eee;
+}
+form button {
+    background-color: #fb3e44;
+    border: 2px hidden #eee;
+    color: white;
+    height: 32px;
+}
+form {
+    display: flex;
+    flex-wrap: wrap;
+}
+.header-button1 {
+    background-color: white;
+    border: 2px solid #eee;
+    width: 100px;
+    padding: 5px;
+    margin-left: 20px;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+.header-button2 {
+    background-color: white;
+    border: 2px hidden #eee;
+    width: 100px;
+    padding: 5px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+#npm-Enterprise {
+    background-color: rgba(232,217,217,.3);
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.see-plans-button {
+    padding: 10px 80px;
+    background-color: #FB3B49;
+    box-shadow: 6px 6px 0 rgba(251,59,73,.2);
+    border: 2px hidden #eee;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    margin-right: 10px;
+}
+.join-for-free {
+    padding: 10px 80px;
+    border: 2px hidden #eee;
+    background-color: white;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    margin-left: 10px;
+}
+#npm-Enterprise article {
+    width: 500px;
+    margin-bottom: 80px;
+    text-align: center;
+    line-height: 2em;
+}
+#about {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#about-image {
+    width: 150px;
+    height: 150px;
+}
+#about article {
+    width: 800px;
+    text-align: center;
+}
+#products > div {
+    margin: 0 70px;
+    display: flex;
+    justify-content: space-between;
+}
+#products{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#products > div > article {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.product-icon {
+    width: 50px;
+    height: 50px;
+}
+.create-button {
+    padding: 10px 80px;
+    background-color: black;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    color: white;
+    border: 2px hidden #eee;
+    text-align: center;
+    text-decoration: none;
+    margin: 50px 0;
 }
