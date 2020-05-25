@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 html {
     line-height: 1.15;
@@ -27,19 +26,32 @@ body {
     color: black;
   }
   .blackHeart {
-    width: 20px;
+    width: 1.5rem;
     margin-right: 1rem;
   }
   #search-bar {
       background-color: rgba(0,0,0,.05);
-      
+      width: 89%;
+      transition-duration: 0.3s;
+  }
+  #search-bar:focus{
+      width: 90%;
+      height: 45px;
+      border: 0.5px solid #BABABA;
   }
   #search-btn {
       background-color: #fb3e44;
       color: white;
       border: none;
       font-size: 0.9rem;
-      padding: 0 1.5rem
+      padding: 0 1.5rem;
+      transition-duration: 0.3s;
+  }
+  #search-btn:hover{
+      background-color: white;
+      color: black;
+      border: 2px solid red;
+      padding: 0 1.8rem;
   }
   #logo{ 
     height: 1rem;
@@ -64,6 +76,7 @@ body {
 .logo-container{
     display: flex;
     align-items: center;
+    padding-left: 5px;
 }
 
 .magni-container{
@@ -82,13 +95,13 @@ body {
   align-content: space-between;
   width: 100%;
 }
-
 .searchbar input[type=search] {
   width: 80%;
   padding-left: 2rem;
   font-size: 1rem;
   border: none;
 }
+
 .in-bcontainer a {
   padding: 10px;
   text-decoration: none;
