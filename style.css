@@ -33,13 +33,19 @@ header > div {
     margin-right: 1rem;
   }
 
+#npm-area {
+    padding: 10px;
+    box-shadow: 0 2px 2px -2px;
+  }
+
 .npm-logo {
   width: 70px;
-  
 }
 
 .magnifying-glass {
   width: 20px;
+  background-color:rgba(0,0,0,.05);
+  padding: 11px;
 }
 
 #search-bar {
@@ -55,20 +61,32 @@ header > div {
   color: white;
   background-color: #fb3e44;
   border: none;
-  padding: 14px 25px;
+  padding: 11px 25px;
   font-size: 1.1em;
+}
+
+#search-area {
+  display: flex;
+	flex-direction: row;
+  align-items: center;
 }
 
 #join-button {
   background-color: white;
-  border: 1px solid black;
-  padding: 14px 25px;
+  border-style: groove;
+  padding: 9px 20px;
 }
 
 #login-button {
   background-color: white;
   border: none;
   padding: 14px 25px;
+}
+
+#join-area {
+  display: flex;
+  align-items: center;
+  align-content: space-between;
 }
 
 .build-section {
