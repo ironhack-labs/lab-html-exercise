@@ -5,17 +5,17 @@
     <link rel="stylesheet" href="Style.css" />
   </head>
   <body>
-    <header class="header">
-      <div>
-        <div>
+    <header>
+      <div class="cnt-th">
+        <div class="cnt-tp-blackheart">
           <img
             class="blackHeart"
-            src="images/black-heart.png"
+            src="../lab-html-exercise/images/black-heart.png"
             alt="black heart"
           />
-          <span>Neverending Pun Machine</span>
+          <span> Nifty Penguin Magic </span>
         </div>
-        <nav>
+        <nav class="cnt-tp-nav">
           <ul>
             <li><a href="#"> npm Enterprise </a></li>
             <li><a href="#"> Products </a></li>
@@ -26,26 +26,34 @@
           </ul>
         </nav>
       </div>
-      <a href="https://www.npmjs.com/">
-        <img
-          class="npm-logo"
-          src="images/npm-logo.png"
-          alt="npm logo"
-        />
-      </a>
-      <div>
-        <span>
+
+      <div class="header-down">
+        <!-- add logo, search bar and buttons (or links and style them as buttons later) -->
+        <div class="npm-logo">
+          <img
+            src="images/npm-logo.png"
+            alt="npm-logo"
+            id="npm-logo"
+          />
+        </div>
+        <div class="search-icon">
           <img
             src="images/magnifying-glass.png"
-            alt=""
-            width="15"
-            height="15"
+            alt="magnifying-glass"
+            id="search-icon"
           />
-        </span>
-        <input type="search" placeholder="Search packages" />
-        <button>Search</button>
-        <button>Join</button>
-        <button>Log In</button>
+        </div>
+        <div class="search-bar">
+          <input
+            type="search"
+            name="search-bar"
+            placeholder="Search packages"
+            id="search-bar"
+          />
+          <input type="button" value="Search" id="search-button" />
+          <input type="button" value="Join" a href="#" id="join-header" />
+          <input type="button" value="Log in" a href="#" id="login" />
+        </div>
       </div>
     </header>
     <section id="section-1">
@@ -60,10 +68,7 @@
       </div>
     </section>
     <div class="background">
-      <img
-        src="images/triangle-hexagon.svg"
-        alt=""
-      />
+      <img src="images/triangle-hexagon.svg" alt="" />
     </div>
     <section id="section-2">
       <h3><b>Bring the best of open source to your company</b></h3>
@@ -76,10 +81,7 @@
     </section>
     <section id="section-3" class="grid">
       <div>
-        <img
-          src="images/zero-configuration.svg"
-          alt=""
-        />
+        <img src="images/zero-configuration.svg" alt="" />
         <h4>
           <b>Zero configuration</b>
         </h4>
@@ -89,10 +91,7 @@
         </p>
       </div>
       <div>
-        <img
-          src="images/team-management.svg"
-          alt=""
-        />
+        <img src="images/team-management.svg" alt="" />
         <h4>
           <b>Team management</b>
         </h4>
@@ -102,10 +101,7 @@
         </p>
       </div>
       <div>
-        <img
-          src="images/familiar-features.svg"
-          alt=""
-        />
+        <img src="images/familiar-features.svg" alt="" />
         <h4>
           <b>Familiar features</b>
         </h4>
@@ -115,10 +111,7 @@
         </p>
       </div>
       <div>
-        <img
-          src="images/npm-audit.svg"
-          alt=""
-        />
+        <img src="images/npm-audit.svg" alt="" />
         <h4>
           <b>npm audit</b>
         </h4>
