@@ -2,16 +2,21 @@
 
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
-
+/*** **  **  ***/
 /*** Common  **/
+/*** ***** ***/
 
 
-body {
+body, html {
     background-color: white;
     font-family: "Poppins";
 }
 
+
+/*** ** ***** **  ***/
 /*** Header & Nav **/
+/*** ** *** **  ***/
+
 
 header > div {
     padding: 0 25px;
@@ -82,7 +87,7 @@ form button {
     border: none;
 }
 
-.join-button {
+.button-join {
     border: 1px solid lightgray;
     color: black;
     font-weight: 500;
@@ -92,12 +97,12 @@ form button {
 
 }
 
-.join-button a {
+.button-join a {
     text-decoration: none;
     color: black;
 }
 
-.login-button {
+.button-login {
     color: black;
     font-weight: 500;
     margin: 0 20 auto;
@@ -105,13 +110,16 @@ form button {
     text-align: center;
 }
 
-.login-button a {
+.button-login a {
     text-decoration: none;
     color: black;
 }
-/*** Section 1  - Introduction & Sign-up **/
 
-#intro-signup  {
+/*** ************** *********** ********  ***/
+/*** Section 1  - Introduction & Sign-up **/
+/*** ********* ********* ***********  ***/
+
+#signup  {
     height: 600px;
     display: flex;
     justify-content: center;
@@ -126,20 +134,18 @@ h1 {
     margin: 0 auto ;
 }
 
-.intro-text {
+.text-intro {
     width: 520px;
     display: flex;
     flex-wrap: wrap;
     text-align: center;
     font-size: 1.2em;
     margin: 40px;
-
 }
 
-.intro-buttons {
+.buttons-container {
     display: flex;
     flex-direction: row;
-
 }
 
 .button-plans {
@@ -153,7 +159,6 @@ h1 {
     align-items: center;
     justify-content: center;
     font-weight: bold;
-
 }
 
 .button-plans a {
@@ -178,7 +183,9 @@ h1 {
     color: rgba(0, 0, 0, 0.911);
 }
 
+/*** *******  ********  ***/
 /***  Section 2 - Pitch **/
+/*** ******  ******  ***/   
 
 #pitch {
     height: 600px;
@@ -187,7 +194,6 @@ h1 {
     align-items: center ;
     flex-direction: column;
     margin-bottom: 50px;
-      
 }
 
 .img-pitch {
@@ -203,10 +209,9 @@ h3 {
     text-align: center;
     margin: 70px 10px 5px 10px;
     font-size: 2em;
-    
 }
 
-.pitch-text {
+.text-pitch {
     width: 700px;
     font-size: 0.9em;
     display: flex;
@@ -215,39 +220,43 @@ h3 {
     margin-top: 25px; 
 }
 
-/*** Section 3  - Assets description **/
 
-#assets-desc div {
+/*** ******* *************** ********  ***/
+/*** Section 3  - Features description **/
+/*** ******* ************* ********  ***/
+
+#features div {
     height: 200px;
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
 }
 
 h5 {
     color: #ED1C24;
+    font-size: 0.9em;
+    margin: 10px 0px 10px 0px;
 }
 
-.asset-container {
+.features-container {
     display: flex;
     flex-direction: column;
-
-    width: 250px;
+    justify-content: flex-start;
 }
 
-.img-asset {
+.img-feature {
     height: 25px;
+    align-self: flex-start;
 }
 
-.asset-text {
+.text-feature {
     width: 220px;
+    height: 100px;
     font-size: 0.9em;
     display: flex;
     flex-wrap: wrap;
-    text-align: left;
 }
 
-.create-button {
+.button-create {
     box-shadow: 8px 8px 0 rgba(128,83,35,.2);
     color: white;
     background-color: black;
@@ -255,9 +264,14 @@ h5 {
     height: 3.2em;
     font-weight: bold;
     font-size: 1em;
-    margin: 0 auto;
-
-
+    margin: 70px auto;
 }
 
+.button-create a{
+    text-decoration: none;
+    color: white;
+}
+
+/*** **  **  ***/
 /***  Footer **/
+/*** **** ***/
