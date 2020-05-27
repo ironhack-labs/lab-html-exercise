@@ -4,12 +4,12 @@
     </head>
     <body>
         <header class="hearder">
-            <div>
+            <div class="header-nav">
                 <div>
-                    <img src="images/black-heart.png" alt="black-heart"> 
+                    <img class="blackHeart" src="images/black-heart.png" alt="black-heart"/> 
                     <span> Nifty Penguin Magic</span>
                 </div>
-                <nav class="navigation"> 
+                <nav> 
                     <ul>
                         <li> <a href="#structure">npm Entreprise</a></li>
                         <li><a href="#team">Products</a></li>
@@ -20,16 +20,17 @@
                     </ul>
                 </nav>
             </div>
-            <div>
-                <img src="images/npm-logo.png" alt="npm-logo">
-                <img src="images/magnifying-glass.png" alt="magnifying-glass"/>
-                <div class="sign in/up">
-                    <a href="#inconnu"> Join</a> 
-                    <a href="#inconnu"> Log In</a>
-                    <form action="/search" method="POST">
-                        <input type="text" id="search" placeholder="Search packages"/>
-                        <button type="submit">Search</button>
-                    </form>
+            <div class="header-search">
+                <img id="npm-image" src="images/npm-logo.png" alt="npm-logo">
+               
+                <form class="search-form" action="/search" method="POST">
+                    <img id="search-image"src="images/magnifying-glass.png" alt="magnifying-glass"/>
+                    <input type="text" id="search" placeholder="Search packages"/>
+                    <button type="submit">Search</button>
+                </form>
+                <div>
+                    <button  id= "join" href="#inconnu"> Join</button> 
+                    <button id="login" href="#inconnu"> Log In</button>
                 </div>
             </div>      
         </header>
