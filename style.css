@@ -31,9 +31,9 @@ header > div {
 }
 
 .img-search {
-    width: 20px;
-    margin-top: 1rem;
+    height: 20px;
     background-color: lightgrey;
+    margin: 0 10px;
 
 }
 
@@ -55,6 +55,8 @@ nav a {
 
 form {
     background-color: lightgrey;
+    display: flex;
+    align-items: center;
     
 }
 
@@ -66,33 +68,46 @@ form label {
 form input {
     color: rgba(0, 0, 0, .05);
     background-color: lightgrey;
+    height: 25px;
+    border: none;
 }
 
 form button {
     color: white;
     background-color: #fb3e44;
+    font-weight: 500;
+    width: 70px;
+    text-align: center;
+    height: 32px;
+    border: none;
 }
 
 .join-button {
-    border: 1px solid grey;
-    font-weight: 100;
-    color: rgba(0, 0, 0, .05);
+    border: 1px solid lightgray;
+    color: black;
+    font-weight: 500;
     margin: 0 20 auto;
+    width: 60px;
+    text-align: center;
 
 }
 
 .join-button a {
     text-decoration: none;
-    color: rgba(0, 0, 0, .05);
+    color: black;
 }
 
 .login-button {
-    color: rgba(0, 0, 0, .05);
+    color: black;
+    font-weight: 500;
+    margin: 0 20 auto;
+    width: 60px;
+    text-align: center;
 }
 
 .login-button a {
     text-decoration: none;
-    color: rgba(0, 0, 0, .05);
+    color: black;
 }
 /*** Section 1  - Introduction & Sign-up **/
 
@@ -106,19 +121,24 @@ form button {
 }
 
 h1 {
-    font-size: 5em;
+    font-size: 6em;
     font-weight: 800;
+    margin: 0 auto ;
 }
 
 .intro-text {
-    width: 400px;
+    width: 520px;
     display: flex;
     flex-wrap: wrap;
     text-align: center;
+    font-size: 1.2em;
+    margin: 40px;
 
 }
 
 .intro-buttons {
+    display: flex;
+    flex-direction: row;
 
 }
 
@@ -127,8 +147,13 @@ h1 {
     background-color: #fb3e44;
     box-shadow: 10px 5px 5px rgb(192, 124, 134) ;
     height: 50px;
-    width: 180px;
-    /*text-align: center;*/
+    width: 240px;
+    margin: 20px 20px 20px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+
 }
 
 .button-plans a {
@@ -140,7 +165,12 @@ h1 {
     color: rgba(0, 0, 0, 0.918);
     background-color: white;
     height: 50px;
-    width: 180px;
+    width: 240px;
+    margin: 20px 20px 20px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
 }
 
 .button-signup a {
@@ -201,7 +231,7 @@ h5 {
 .asset-container {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+
     width: 250px;
 }
 
