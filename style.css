@@ -31,17 +31,29 @@ body {
       width: 20px;
       margin-right: 1rem;
     }
-  
-  form > label{
-    color: rgba(0,0,0,.05);
-  }
-  form > input{
-    color: rgba(0,0,0,.05);
-  }
-  form > button{
-    backgroud-color: #fb3e44;
-    font-color: white;
-  }
+
+    .npmLogo {
+      width: 100px;
+      margin-right: 1rem;
+    }
+
+    .magniGlass {
+      width: 40px;
+      
+    }
+    .headLabel{
+      color: rgba(0,0,0,.05);
+    }
+
+    body > header > div >form > input{
+      color: rgba(0,0,0,.05);
+    }
+
+    .headButton{
+      backgroud-color: #fb3e44;
+      font-color: white;
+    }
+    
   
   #section1{
     display: flex;
@@ -52,6 +64,26 @@ body {
     background-color: rgba(232,217,217,.3)
   }
   
+  #section1 > h1{
+    font-size: 80px;
+  }
+
+  #section1 > article{
+    margin-left: 200px;
+    font-size: 17px;
+    margin: 0px 680px;
+    text-align: center;
+
+  }
+
+  #section1 > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+
+  }
+
   .buttons{
     flex-direction: row;
     justify-content: center;
@@ -59,6 +91,18 @@ body {
   .plans{
     background-color: #FB3B49;
     box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+    border-width: 0 20px;
+  }
+
+  .JoinFree{
+    background-color: white;
+    font-weight: bold;
+    border-width: 0 20px;
+
+  }
+
+  .Triangle{
+    width: 200px;
   }
   
   #section2{
@@ -73,19 +117,22 @@ body {
   #section2 > h2 {
     background-color: rgba(255,204,53,.4);
     transform: skew(9deg,0deg);
+    font-size: 40px;
     
   }
   #section2 > article {
-    text-align: justify;
-    margin: 0 180px 0 180px;
+    margin-left: 200px;
+    font-size: 17px;
+    margin: 0px 500px;
+    text-align: center;
   }
   
-  #section3 > article > div > h4 {
+  h4 {
     color: #ED1C24;
   }
   
   
-  #section3 > article {
+  #section3{
     display: flex;
     justify-content: space-evenly;
   }
@@ -97,10 +144,17 @@ body {
     width: 370px;
   }
   
+  .S3Img{
+    width: 50px;
+    justify-content: flex-start;
+
+  }
+
+
   .create {
-    display: flex;
-    justify-content: center;
-    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
-    color: white;
-    background-color: black;
+  margin: 0px 850px;
+  box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+  color: white;
+  background-color: black;
+  
     }
