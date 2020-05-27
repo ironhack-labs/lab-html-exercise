@@ -1,46 +1,233 @@
 /***   **/
 
-
+@import url('https://fonts.googleapis.com/css?family=Poppins');
 
 
 /*** Common  **/
 
-fonts 
-background
-body
+
+body {
+    background-color: white;
+    font-family: "Poppins";
+}
 
 /*** Header & Nav **/
-img-logo
 
-nav
+header > div {
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid grey;
+}
+.img-heart {
+    width: 20px;
+    margin-right: 1rem;
+}
 
-search-container
-search-button
-join-button
-login-button
+.img-logo {
+    width: 60px;
+    margin-right: 1rem;
+}
 
+.img-search {
+    width: 20px;
+    margin-top: 1rem;
+    background-color: lightgrey;
+
+}
+
+nav {
+    width: 600px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+form {
+    background-color: lightgrey;
+    
+}
+
+form label {
+    color: rgba(0, 0, 0, .05);
+    background-color: lightgrey;
+}
+
+form input {
+    color: rgba(0, 0, 0, .05);
+    background-color: lightgrey;
+}
+
+form button {
+    color: white;
+    background-color: #fb3e44;
+}
+
+.join-button {
+    border: 1px solid grey;
+    font-weight: 100;
+    color: rgba(0, 0, 0, .05);
+    margin: 0 20 auto;
+
+}
+
+.join-button a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, .05);
+}
+
+.login-button {
+    color: rgba(0, 0, 0, .05);
+}
+
+.login-button a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, .05);
+}
 /*** Section 1  - Introduction & Sign-up **/
 
-#intro-signup
-background 
-h1
-intro-text
-button-plans
-button-signup
+#intro-signup  {
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(232, 217, 217, .3);
+}
+
+h1 {
+    font-size: 5em;
+    font-weight: 800;
+}
+
+.intro-text {
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+
+}
+
+.intro-buttons {
+
+}
+
+.button-plans {
+    color: white;
+    background-color: #fb3e44;
+    box-shadow: 10px 5px 5px rgb(192, 124, 134) ;
+    height: 50px;
+    width: 180px;
+    /*text-align: center;*/
+}
+
+.button-plans a {
+    text-decoration: none;
+    color: white;
+}
+
+.button-signup {
+    color: rgba(0, 0, 0, 0.918);
+    background-color: white;
+    height: 50px;
+    width: 180px;
+}
+
+.button-signup a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.911);
+}
 
 /***  Section 2 - Pitch **/
 
-#pitch
-img-pitch
-h3
-pitch-text 
+#pitch {
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    flex-direction: column;
+    margin-bottom: 50px;
+      
+}
+
+.img-pitch {
+    height: 240px;
+    margin: 0 auto;
+}
+
+h3 {
+    background-color: rgba(255, 204, 53, .4);
+    width: 810px;
+    transform: skew(9deg,0deg);
+    font-style: italic;
+    text-align: center;
+    margin: 70px 10px 5px 10px;
+    font-size: 2em;
+    
+}
+
+.pitch-text {
+    width: 700px;
+    font-size: 0.9em;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-top: 25px; 
+}
 
 /*** Section 3  - Assets description **/
 
-#assets-desc
-img-asset
-h5
-asset-text
-creat-button
+#assets-desc div {
+    height: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+h5 {
+    color: #ED1C24;
+}
+
+.asset-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 250px;
+}
+
+.img-asset {
+    height: 25px;
+}
+
+.asset-text {
+    width: 220px;
+    font-size: 0.9em;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+.create-button {
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    color: white;
+    background-color: black;
+    width: 22em;
+    height: 3.2em;
+    font-weight: bold;
+    font-size: 1em;
+    margin: 0 auto;
+
+
+}
 
 /***  Footer **/
