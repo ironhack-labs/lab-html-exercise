@@ -3,6 +3,13 @@
 body {
   font-family: 'Poppins';
 }
+
+.header > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
 .header-nav{
     padding: 0 25px;
     display: flex;
@@ -14,7 +21,14 @@ body {
   .header-search{
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+  }
 
+  .header-search div{
+      margin-right: 15px;
+    display: flex;
+    align-items: center;
 
   }
   
@@ -52,14 +66,18 @@ body {
 }
   .search-form input {
       background-color: rgba(0,0,0,.05);
-      border-color: rgba(0,0,0,.05);
-      outline: none;
+      border: none;
       height: 30px;
-      width: 60%;
+      width: 80%;
   }
 
   .search-form{
+      display: flex;
       flex-grow: 1;
+      align-items: center;
+      margin-bottom: 0px;
+      margin-left: 20px;
+
   }
 
  .search-form button {
@@ -70,13 +88,21 @@ body {
 
 #join {
     height: 20px;
-    margin-left: 20px;
+    margin-right: 20px;
+    text-decoration: none;
+    color: rgb(47, 74, 92);
+    outline-style: solid;
+    outline-width: thin;
+    outline-color: rgba(0,0,0,.09);
+    padding: 5px 10px;
+    
 }
 
 #login {
     height: 20px;
     margin-left: 15px;
-    border: none;
+    text-decoration: none;
+    color: rgb(47, 74, 92);
     
 }
 
