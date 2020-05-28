@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
+/*
+* {
+  box-sizing: border-box;
+}
+*/
+
 body {
   font-family: 'Poppins';
 }
@@ -190,13 +196,13 @@ color: seashell;
 .box { 
   width: 700px;
   font-size: 12px;
-  margin: 0 auto;
   padding: 75px 0;
   background-color: white;
-  align-self: center;
-
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
      }
+    
 .zeroconfig,
 .teammana,
 .famfeat,
@@ -204,6 +210,7 @@ color: seashell;
   width: 25px;
   background-color: white;
   height: 25px;
+
     }
 
 
@@ -215,7 +222,7 @@ color: tomato;
   display: flex;
   margin-top: -130px;
   align-items: flex-start;
-  justify-content: space-between;
+  justify-content: center;
   background-color: white;
 
   }
