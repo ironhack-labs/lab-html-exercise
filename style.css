@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body {
+  font-family: 'Poppins';
+}
+
+header > div {
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+  }
+  
+  nav {
+    width: 600px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .blackHeart {
+    width: 20px;
+    margin-right: 1rem;
+  }
+
+  /* barra de procura - log in e join */
+  .npmLogo {
+    width: 60px;
+  }
+
+  .magnifyningGlass{
+    width: 20px;
+    position: relative;
+    left: 80px;
+  }
+
+  .npmSearchLine{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .searchBox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 7px;
+    width: 1080px;
+    position: relative;
+    left: 50px;
+  }
+
+  .searchBox input {
+    color: rgba(14, 13, 13, 0.418);
+    width: 200%;
+    position: relative;
+    left: 0px;
+    padding: 9px;
+    background-color:rgba(232,217,217,.3);
+    
+  }
+
+  .searchBox button{
+    background-color: #fb3e44;
+    color: white;
+    width: 12%;
+    padding: 10.5px;
+    position: relative;
+    
+  }
+
+  .joinBtn{
+    background-color: transparent;
+    color:black;
+    width: 40px;
+    position: relative;
+    border: 1px solid black;
+    text-align: center;
+    left: 70px;
+    font-size: 0.85em;
+    padding: 2px 10px;
+    text-decoration: none;
+    
+  }
+
+  .loginBtn{
+    background-color: transparent;
+    color: black;
+    width: 80px;
+    padding: 1px;
+    position: relative;
+    font-size: 0.85em;
+    text-decoration: none;
+    left: 95px;
+  }
+
+  /* Section 1 */
+
+  #plans{
+      display: flex;
+      background-color:rgba(232,217,217,.3);
+      height: 600px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+
+  #plans h1{
+    font-size: 5rem;
+    margin-bottom: 40px;
+  }
+
+  #plans article > p{
+      text-align: center;
+      width: 400px;
+      margin: 0 0 0 30px;
+  }
+
+  #plans div{
+        display:flex;
+        justify-content: space-around;
+        margin: 30px 10px;
+
+    }
+
+  .seePlansBtn{
+    background-color: #FB3B49;
+    color:white;
+    text-decoration: none;
+    padding: 15px 60px;
+    margin: 5px 10px;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+    
+  }
+
+  .joinFreeBtn{
+    background-color: transparent;
+    color:black;
+    text-decoration: none;
+    padding: 15px 60px;
+    margin: 5px 10px;
+    
+}
+
+/* Section 2 */
+
+.hexagon{
+    width: 230px;
+    margin: 0px 0px 80px 0px;
+}
+
+
+#yourCompany{
+    display: flex;
+    height: 600px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+#yourCompany h2{
+    font-size: 2rem;
+    margin-bottom: 40px;
+    background-color:rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+    font-style: italic;
+    margin: 20px 0px 20px 0px;
+}
+
+#yourCompany article > p{
+    text-align: center;
+    width: 500px;
+    margin: 20px 0px 20px 0px;
+}
+
+/* Section 3*/
+
+#creatOrg{
+    display: flex;
+    height: 600px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.imgZeroConfig, .imgTeamManagement, .imgFamiliarFeatures, .imgNpmAudit {
+    width:40px;
+    display: flex;
+    align-items: left;
+}
+.secContainer{
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items:flex-start;
+    margin: 0px 40px;
+}
+
+.divContainer{
+    display:flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    width: 100%;
+    padding: 0px 20px;
+}
+#creatOrg article > p{
+    width: 50px;
+    font-size: 0.7em;
+    font-weight: 100;
+    text-align: center;
+    margin: 20px 0px;
+}
+
+.divContainer h5{
+    color: #ED1C24;
+}
+
+.text{
+    width: 70%;
+}
+
+.orgBtn{
+    background-color: black;
+    color:white;
+    text-decoration: none;
+    padding: 15px 80px;
+    margin: 60px 10px;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    font-size: 0.9em;
+    font-style: bold;
+    position: relative;
+    left: 550px;
+}
