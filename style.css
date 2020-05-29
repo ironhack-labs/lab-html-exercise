@@ -6,7 +6,7 @@ body {
     padding: 0;
 }
 
-header > div {
+header>div:first-child {
     padding: 0 25px;
     display: flex;
     justify-content: space-between;
@@ -38,12 +38,24 @@ nav a {
 .searchArea {
     border-bottom: none;
     display: flex;
-    justify-content: space-between; 
+    align-items: center;
+    padding: 6px 0px;
+}
+
+.npmLogo{
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .npmLogo img {
-      width: 80px;
-      padding-top: 10px;
+      width: 60%;
+}
+
+.container__search{
+    align-content: center;
+    width: 75%;
 }
 
 .searchBar > div {
@@ -69,12 +81,12 @@ nav a {
 } 
 
  .searchText input {
-     background-color: rgb(226, 226, 226);
-     color: rgba(0, 0, 0, 0.5);
-     width: 950px;
-     height: 35px;
-     border-style: none;
-     font-size: 1em;
+    background-color: rgb(226, 226, 226);
+    color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 35px;
+    border-style: none;
+    font-size: 1em;
  }
 
 form button {
@@ -89,7 +101,11 @@ form button {
 }
 
 .userButtons {
-    width: 200px;
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-end;
 }
 .userButtons ul {
     list-style: none;
@@ -101,7 +117,8 @@ form button {
 
 .userButtons a {
     text-decoration: none;
-    color: black
+    color: black;
+    margin-right: 1em;
 }
 
 .joinButton {
@@ -124,8 +141,10 @@ form button {
 }
 
 h1 {
-    font-size: 75px;
+    font-size: 4.5em;
     display: flex;
+    margin-block-start: 0em;
+    margin-block-end: 0;
 }
 
 #title article {
@@ -133,11 +152,14 @@ h1 {
     font-size: 20px;
     text-align: center;
     display: flex;
-    padding-bottom: 0;
-    ;
 }
 
-#title ul {
+#title p {
+    margin-block-start: 2em;
+    margin-block-end: 2em;
+}
+
+#title div {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -147,7 +169,8 @@ h1 {
 #title a {
     text-decoration: none;
     color: black;
-    font-size: 25px;
+    font-size: 20px;
+    margin-top: 2em;
     
 }
 
@@ -156,7 +179,11 @@ h1 {
     box-shadow: 8px 8px 0 rgba(251, 59, 73, .2);
     color: white;
     box-sizing: border-box;
-    padding: 10px 30px;
+    padding: 15px 55px;
+    margin-right: 4em;
+}
+
+#title .buttonB {
 }
 
 
@@ -165,12 +192,11 @@ h1 {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    height: 600px;
+    height: 500px;
 }
 
 #company img {
-    width: 200px;
-    height: 200px;
+    width: 11em;
 }
 
 h2 {
@@ -202,16 +228,12 @@ h3{
 }
 
 .service-box{
-    font-size: 15px;
-    border: none;
-    margin: 25% 5px 0 5px;
-    padding: 20px;
-    width: 20%;
-    display: flex;
-    justify-content: start;
-    align-items: flex-start;
-    flex-direction: column;
+    padding-right: 2%;
+    padding-left: 2%;
     padding-bottom: 100px;
+    width: 17%;
+    display: flex;
+    flex-direction: column;
 }
 
 #structure a {
