@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>npm | build amazing things</title>
+    <link rel="stylesheet" href="./styles.css">
 </head>
 
 <body>
     <header id="header">
-        <div>
+        <div class="top-header">
             <div class="pun-master">
                 <img class="blackHeart" src="./images/black-heart.png" alt="black heart" />
                 <span> Nifty Penguin Magic </span>
@@ -26,18 +27,18 @@
             </nav>
         </div>
 
-        <div>
+        <div class="bottom-header">
             <!-- add logo, search bar and buttons (or links and style them as buttons later) -->
-            <img src="./images/npm-logo.png" alt="npm logo">
-
-            <form>
-                <img src="./images/magnifying-glass.png" alt="magnifying glass">
+            <img class="npmLogo" src="./images/npm-logo.png" alt="npm logo">
+            
+            <form class="search-bar">
+                <label for=""><img src="./images/magnifying-glass.png" alt="magnifying glass"></label>
                 <input type="text" name="search" placeholder="Search packages">
                 <button class="search-btn">Search</button>
             </form>
             <div class="nav-btn">
-                <a href="#">Join</a>
-                <a href="#">Log In</a>
+                <a class="btn" href="#">Join</a>
+                <a class="link" href="#">Log In</a>
             </div>
         </div>
     </header>
