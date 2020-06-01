@@ -1,7 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins');
-
 body {
     font-family: 'Poppins';
+    font-size: 15px;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 /* Header Upper Div */
@@ -9,9 +10,12 @@ body {
 header > div {
   padding: 0 25px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid lightgray;
+}
+
+.upper-header-div {
+  justify-content: space-between;
 }
 
 nav {
@@ -30,22 +34,94 @@ nav a {
   color: black;
 }
 
+h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  letter-spacing: 0.1rem;
+}
+
 .heart {
   width: 20px;
   margin-right: 1rem;
 }
 
+.btn_header {
+  background-color: #FB3B49;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+}
+
+/* Header Lower Div */
+
+.logo {
+  padding-top: 8px;
+  flex-grow: 0;
+  margin-right: 2rem;
+  width: 70px;
+  box-sizing: border-box;
+
+
+}
+
+.lower-header-div {
+  display: flex;
+  box-sizing: border-box;
+  padding-left: 2rem;
+  padding-right: 0;
+}
+
+.search-bar {
+  display: inline;
+  padding: 5px;
+  border-style: none;
+  background-color: transparent;
+  justify-content: flex-start;
+}
+.input {
+  width: 1450px;
+}
+
+.glass {
+  max-width: 15px;
+}
+
+.acess_btns {
+  padding-left: 30px;
+  padding-right: 0;
+  justify-content: flex-end;
+}
+
+.acess_btns a {
+  text-decoration: none;
+  text-transform: none;
+  color: black;
+  padding: 0px 15px;
+  width: 20px;
+  align-content: flex-end;
+}
+
+#join_btn {
+  border: 1px solid black;
+  padding: 5px 20px 5px 20px;
+}
 /* Section 1 */
+
+.p1 {
+  max-width: 450px;
+  text-align: center;
+  margin-bottom: 50px;
+}
 
 #sector-1 {   /* Works for Section 2 & 3 too */
     display: flex;
-    justify-content: center;
-    height: 600px;
+    height: 450px;
     background-color: rgba(232, 217, 217, .3);
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
 
 #sector-1 a {
     text-decoration: none;
@@ -53,28 +129,118 @@ nav a {
 
 #sector-1 .plans {
     background-color: #FB3B49;
-    box-shadow: 8px 8px 0 rgba(251, 59, 73, .2);
+    box-shadow: 6px 6px 0 rgba(251, 59, 73, .2);
     color: white;
+    padding: 10px 60px;
+    margin-right: 13px;
+    font-weight: 600;
 }
 
 #sector-1 .join {
     color: black;
+    background-color: white;
+    padding: 10px 60px;
+    font-weight: 600;
+    margin-left: 13px;
 }
 /* Section 2 */
 
-#sector h2 {
-    background-color: rgba(255, 204, 53, .4);
+.p2 {
+  max-width: 550px;
+  align-self: center;
+  font-size: 0.8remrem;
+}
+
+#sector-2 h2 {
+    background-color: rgb(255,235,181);
     transform: skew(9deg, 0deg);
     font-style: italic;
+    font-weight: 600;
     margin: auto;
-    padding: 0 30px;
+    padding: 0px 15px;
+    text-align: center;
+}
+
+#sector-2 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 30px 100px;
+  flex-direction: column;
+  margin: 60px 0;
 }
 
 /* Section 3 */
+
+h3 {
+  font-size: 0.9rem;
+  color: #FB3B49
+}
+
+#sector-3 {
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
 
 #sector-3 a {
     color: white;
     background-color: black;
     box-shadow: 8px 8px 0 rgba(128, 83, 35, .2);
     text-decoration: none;
+    max-width: 100px;
+    align-self: center;
+}
+
+#sector-3 p {
+  font-size: 0.8rem;
+}
+
+.box-container {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  padding: 0 200px
+}
+
+.content-box {
+  display: inline-block;
+  max-width: 200px;
+  margin: 0px 15px;
+}
+
+.btn_org {
+  margin: 60px 0;
+  padding: 7px 60px;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+.little-pics {
+  width: 50px;
+}
+
+/* FOOTER */
+footer {
+  background-color: black;
+  color: white;
+  font-size: 0.8rem;
+  padding: 15px 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  
+}
+
+footer a {
+  text-decoration: none;
+  text-transform: none;
+  color: white;
+  max-width: 230px;
+}
+
+footer a:hover {
+  background-color: white;
+  color: black;
 }
