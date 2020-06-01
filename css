@@ -1,0 +1,294 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font: Roboto;  
+  font-size: 10px;
+  line-height: 3.5em;
+  font-weight: 300;
+}
+
+/* CSS multiselector example */
+
+h1 {
+  font-size: 9em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h2{
+  font-size: 5em;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 4em;
+ 
+}
+
+h3{
+  font-size: 4.2em;
+  text-align: center;
+  Line-height: 1em;
+}
+h4{
+  font: Roboto Condensed;
+  font-size: 1.5em;
+  Letter-spacing: 0.4px;
+  Line-height: 1em;
+  margin-bottom:15px;
+}
+h5{
+  font-size: 1.2em;
+  line-height: 1em;
+}
+h6 {
+  @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:700|Roboto:100,300,700');
+  /*  define font-family here  */
+}
+
+.nav-bar {
+  background-color:#192129;
+  color:white;
+  padding-top: 14px;
+  padding-bottom:14px;
+
+}
+.nav-bar a {
+  color:white;
+  text-decoration: none;
+  font-size:2em;
+}
+.nav-bar ul {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  
+}
+
+.header-background {
+  background-image: url("https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/ironhack-skydive-background.jpg");
+  background-position: 0 0;
+  background-repeat: no repeat;
+  background-size:cover;
+  height: 750px;
+  margin-top:-60px
+}
+
+.header-text-h2 {
+  color:white;
+  text-shadow: 8px -20px 9px #020819;
+ 
+}
+
+.Quote{
+  font-size:2.5em;
+  position: absolute;
+  left: 10%;
+  bottom:100 px;
+}
+
+#general-information {
+  background-color:#192129;
+  color:white;
+  display: flex;
+  justify-content: space-evenly;
+  Font-size: 2em;
+  Font-weight: 100;
+  Text-Align: center;
+}
+
+#general-information .container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 2%;
+}
+
+.link-btn{
+  background-color: rgb(67, 163, 230);
+  color: white;
+  font-family : Roboto Condensed;
+  font-size: 2em;
+  Letter-Spacing: 0.5px;
+  text-align: center;
+  text-decoration: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left:30px;
+  padding-right:30px;
+}
+
+#structure .service-box {
+  font-size:1.7em;
+  text-align:center;
+  border: 2px solid #eee;
+  border-radius: 20px;
+  box-sizing: border-box;
+  box-shadow: 2px 2px 10px 0 #eee;
+  margin-top: 50px; 
+  margin-right: 5%; 
+  margin-bottom: 0; 
+  margin-left: 5%;
+  padding: 20px;
+  width: 40%;
+}   
+ #structure .service-box img {
+   width: 125px;
+  }
+
+#structure div {
+  
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#team {
+  background-color:#192129;
+  padding: 75px 0;
+  margin: 0 auto;
+  Color:white;
+}
+#team p {
+  width:60%;
+  text-align:center;
+  margin: 10px auto;
+}
+
+#team hr {
+ margin-top:20px;
+ margin-right:auto;
+ margin-bottom:30px;
+ margin-left: auto;
+ width: 40%;
+}
+
+#team .section-text {
+  font-size:1.9em; 
+  text-align:center;
+}
+
+#team .member-name {
+   font-size:1.5em; 
+   font-weight: 700; 
+}
+#team img {
+  width:250px; 
+  height: 180px;
+}
+
+#team div {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#team > div > article {
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+}
+/* section 4 */
+
+#Schedule .schedule-table {
+margin-top: 0;
+margin-right: auto;
+margin-bottom: 40px;
+margin-left: auto;
+font-size: 1.5em;  
+}
+
+.schedule-table th,
+td {
+border-style: solid;
+border-width: 1px;
+border-color: black;
+padding-top:5px;
+padding-bottom:5px;
+padding-left:10px;
+padding-right:10px;
+text-align: center;
+}
+
+.slot-form-container{
+width: 40%;
+margin-top: 18px;
+margin-right: auto;
+margin-bottom: 0;
+margin-left: auto;
+font-size: 1.5em;
+text-align: center;
+}
+.slot-form-container label{
+  line-height: 15px;
+  margin: 5px;
+}
+.slot-form-container input{
+height: 20px;
+outline: none;
+padding: 3px;
+width: 100%;
+}
+.slot-form-container select{
+height: 30px;
+outline: none;
+padding: 3px;
+width: 100%;
+margin-bottom:10px;
+}
+
+.slot-form-container button{
+  border-weight: 1px;
+  border-style: solid;
+  border-color: black;
+  border-color: black;
+  background-color: white;
+  padding: 9px;
+  margin-top: 15px;
+  margin-bottom:15px;
+}
+/* footer */
+
+.dark-background {
+  background-color:#192129;
+  text-align:center;
+  font-size:1.9em;
+  color: white;
+  padding-top:40px;
+  padding-bottom: 40px;
+  padding-left:100px;
+  padding-right:100px;
+  margin-bottom:25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.address {
+   font-style: normal;
+   font-size: 1.5em; 
+   margin-bottom:30px;
+   margin-left:200px;
+}
+
+.dark-background a {
+  color: rgb(67, 163, 230);
+  text-decoration: none;
+  font-size:1.5em;
+}
+
+.dark-background ul {
+list-style: none;
+padding:0;
+}
+.map-frame {
+  height: 375px;
+  width: 60%;
+}
+
+.dark-background h5 {
+  margin-top:0;
+  margin-bottom:0;
+}
