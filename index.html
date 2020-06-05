@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 
 <html>
+    <head>
+        <link rel="stylesheet" href="./style.css" />
+    </head>
     <body>
         <header>
             <div>
@@ -20,21 +23,34 @@
                 </nav>
             </div>
               
-            <div>
+            <div class="logo-seach-bar">
                 <!-- add logo, search bar and buttons (or links and style them as buttons later) -->
                 
-                <div>
-                    <img class=logo src="images/npm-logo.png" alt="npm logo">
-                    <ul>
-                        <li><a href="#">Join</a></li>
-                        <li><a href="#">Log In</a></li>
-                    </ul>
+                
+                    <img class="logo" src="images/npm-logo.png" alt="npm logo">
+                    
+                    <div class="sear-bar-form">
+                        <form class="search-bar" action="register" method="post">
+                            <div class=searchBar>
+                                <label for="searchbar"></label>
+                                <input type="search" placeholder="Search Packages">                              
+
+                            </div>
+                        
+
+                    
+                        </form>
+                    </div>
+                    <div class="join-log">
+                        <ul>
+                            <li><a href="#">Join</a></li>
+                            <li><a href="#">Log In</a></li>
+                        </ul>
+                    </div>
+            </div>
 
                 </div>
-                <div>
-                    Search 
-                    <img src="images/magnifying-glass.png" alt="search"></div>
-            </div>
+                
         </header>
 
         <!--Section 1-->
@@ -44,10 +60,10 @@
                 Essential JavaScript development tools that help you go to market faster and build powerful applications using
                 modern open source code
             </article>
-            <ul>
-                <li><a href="#">See plans</a></li>
-                <li><a href="#">Join for free</a></li>
-            </ul>
+            <div class="link-btn">
+            <a href="#" class="see-plans">See plans</a>
+            <a href="#" class="join">Join for free</a>
+            </div>
 
         </section>
 
@@ -63,8 +79,9 @@
 
 
         <!--Section 3-->
-        <section id="features"></section>
-            <div>
+        <section id="features">
+            <div class="features-box">
+            <div class="container">
                 <img src="images/zero-configuration.svg" alt="zero configuration">
                 <h3>Zero configuration</h3>
                 <p> 
@@ -72,28 +89,31 @@
                 </p>
             </div>
 
-            <div>
+            <div class="container">
                 <img src="images/team-management.svg" alt="Team Management">
                 <h3>Team management</h3> 
                 <p>Control who has access to what modules within your team namespace using straightforward team management capabilities.
                 </p>
             </div>
 
-            <div>
+            <div class="container">
                 <img src="images/familiar-features.svg" alt="Familiar Features">
                 <h3>Familiar features</h3> 
                 <p>npm Orgs has 100% parity with all the public npm registry features your developers already use.
                 </p>
             </div>
 
-            <div>
-                <img src="images/npm-audit.svg" alt="NPM audit"
+            <div class="container">
+                <img src="images/npm-audit.svg" alt="NPM audit">
                 <h3>npm audit</h3>
                 <p>Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer.
                 </p>
             </div>
-            
-            <span>Create an Org</span>
+            </div>
+            <form>
+                <button type="submit">Create an Org</button>
+            </form>
+        </section>
  
             
 
