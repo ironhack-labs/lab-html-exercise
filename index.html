@@ -11,14 +11,14 @@
 
 <body>
   <header class="header">
-    <div class="nav-container">
-        <div>
-            <img src="images/black-heart.png" alt="heart">
+    <div>
+        <div class="fun-msg">
+            <img class="blackheart" src="images/black-heart.png" alt="heart">
             <p>Neverending Pun Machine</p>
         </div>
         <nav class="nav">
             <ul class="nav-items">
-                <li class="nav-item">NPM enterprise</li>
+                <li class="nav-item">npm Enterprise</li>
                 <li class="nav-item">Products</li>
                 <li class="nav-item">Solutions</li>
                 <li class="nav-item">Resources</li>
@@ -32,16 +32,18 @@
         <form class="search-bar">
             <img src="images/magnifying-glass.png" alt="search icon" class="search-img">
             <input type="text" value="Search packages" class="search-input">
-            <button type="submit" class="search-button">Search</button>
+            <button type="submit" class="search-btn">Search</button>
         </form>
         <div class="account-btns-container">
-            <a href="#">Join</a>
+            <a href="#" class="with-border">Join</a>
             <a href="#">Log in</a>
         </div>
     </div>
   </header>
 
-  <section class="general-info">
+
+  <!--1st section-->
+  <section class="section-col general-info">
     <h1>Build amazing things</h1>
     <article>
         <p>
@@ -50,14 +52,16 @@
         </p>
     </article>
     <div>
-        <a href="#">See plans</a>
+        <a href="#" class="highlight">See plans</a>
         <a href="#">Join for free</a>
     </div>
   </section>
 
-  <section class="branding">
+
+<!-- 2nd section -->
+  <section class="section-col branding">
     <img src="images/triangle-hexagon.svg"/>
-    <h2>Bring the best of open source to your company</h2>
+    <h2><span>Bring the best of open source to your company</span></h2>
     <article>
         <p>
             npm is the tool used by over 11,000,000 JS developers around the world. Your developers 
@@ -67,6 +71,8 @@
     </article>
   </section>
 
+
+<!-- 3rd section -->
   <section class="features">
     <div>
         <img src="images/zero-configuration.svg" alt="zero-configuration">

@@ -1,4 +1,182 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
 html, body {
     margin: 0;
     padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.header > div {
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+}
+
+.header > div > .fun-msg {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav {
+    width: 600px;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+}
+
+.nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.blackheart {
+    width: 20px;
+    margin-right: 1rem;
+}
+
+.search-bar-container {
+    display: flex;
+    margin-top: 1rem;
+}
+.header > .search-bar-container {
+    padding-bottom: 1rem;
+}
+
+.npm-logo {
+    width: 100px;
+}
+
+.search-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgba(0,0,0,.05);
+    height: 3rem;
+    width: 80%;
+    
+}
+
+.search-img {
+    width: 30px;
+    padding: 0 1rem;
+}
+
+.search-input {
+    border: none;
+    background-color: rgba(0,0,0,0);
+    font-family: 'Poppins' ;
+    letter-spacing: 3px;
+    width: 100%;
+    font-size: 1.25rem;
+}
+
+.search-btn {
+    background-color: #fb3e44;
+    color: #fff;
+    border: none;
+    height: 100%;
+    width: 100px;
+    font-family: 'Poppins';
+    font-size: 1rem;
+}
+
+.account-btns-container {
+    display: flex;
+    align-items: center;
+}
+
+.account-btns-container a {
+    text-align: center;
+    padding: 0.5rem 1.5rem;
+    color: black;
+    text-decoration: none;
+}
+
+.account-btns-container .with-border {
+    border: black 1px solid;
+}
+
+/* Here startes the styling for the first section*/
+.section-col {
+    height: 600px;
+    background-color: rgba(232,217,217,.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.general-info > h1 {
+    font-size: 5rem;
+    font-weight: 900;
+    padding: 0;
+    margin: 2rem;
+}
+
+.general-info article {
+    width: 40%;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+ 
+.general-info div {
+    margin-top: 25px;
+    height: 6rem;
+    width: 32.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.general-info a {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding: 1rem 4rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.general-info .highlight {
+    background-color: #FB3B49;
+    color: white;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+}
+
+.branding {
+    margin-top: 100px;
+    background-color: white;
+}
+
+.branding img {
+    width: 300px;
+}
+
+.branding h2 {
+    margin: 5rem 0 1rem 0;
+    font-size: 2.25rem;
+    font-weight: 900;
+    background: rgba(255,204,53, 0.4);
+    transform: skew(9deg, 0deg);
+    font-style: italic;
+    width: 50%;
+    text-align: center;
+}
+
+.branding article {
+   width: 40%; 
+   text-align: center;
+   line-height: 1.75rem;
 }
