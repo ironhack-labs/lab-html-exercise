@@ -9,6 +9,11 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+.page-width {
+    width: 95%;
+    margin: 0 auto;
+}
+
 .header > div {
     padding: 0 25px;
     display: flex;
@@ -48,6 +53,7 @@ body {
 .search-bar-container {
     display: flex;
     margin-top: 1rem;
+    box-shadow:  0 5px 3px -3px rgba(0, 0, 0, .1);
 }
 .header > .search-bar-container {
     padding-bottom: 1rem;
@@ -63,8 +69,11 @@ body {
     align-items: center;
     background-color:rgba(0,0,0,.05);
     height: 3rem;
-    width: 80%;
-    
+    width: 75%;
+}
+
+.search-bar input:focus {
+    outline: none;
 }
 
 .search-img {
@@ -107,7 +116,7 @@ body {
     border: black 1px solid;
 }
 
-/* Here startes the styling for the first section*/
+/* Here startes the styling for the 1st section*/
 .section-col {
     height: 600px;
     background-color: rgba(232,217,217,.3);
@@ -125,7 +134,7 @@ body {
 }
 
 .general-info article {
-    width: 40%;
+    width: 50%;
     text-align: center;
     font-size: 1.5rem;
     font-weight: 600;
@@ -155,6 +164,8 @@ body {
     box-shadow: 8px 8px 0 rgba(251,59,73,.2);
 }
 
+
+/*Styling Section 2*/
 .branding {
     margin-top: 100px;
     background-color: white;
@@ -171,12 +182,58 @@ body {
     background: rgba(255,204,53, 0.4);
     transform: skew(9deg, 0deg);
     font-style: italic;
-    width: 50%;
+    width: 65%;
     text-align: center;
 }
 
 .branding article {
-   width: 40%; 
+   width: 50%; 
    text-align: center;
    line-height: 1.75rem;
+}
+
+
+/*Styling section 3*/
+.features {
+    display: flex;
+    flex-direction: column;
+}
+
+.features > div {
+    margin:100px auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    
+}
+
+.features > div > div {
+    
+    display: flex;
+    flex-direction: column;
+    margin: 0 1rem -50px 1rem;
+}
+
+.features h3 {
+    margin-top: 20px;
+    color:  #ED1C24;
+    font-weight: 900;
+}
+
+.features img {
+    width: 50px;
+    height: 50px;
+}
+
+.features > a {
+    text-align: center;
+    margin:0 auto 50px auto;
+    width: 450px;
+    line-height: 15px;
+    padding: 1rem 0;
+    background-color: #000;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    box-shadow:  8px 8px 0 rgba(128,83,35,.2);
 }
