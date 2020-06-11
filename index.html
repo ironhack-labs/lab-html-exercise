@@ -1,94 +1,111 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="style.css">
-  <title>npm | build amazing things</title>
-</head>
-<header>
-  <div>
-    <div>
-      <img class="blackHeart" src="./images/black-heart.png" alt="black heart" />
-      <span> Nifty Penguin Magic </span>
-    </div>
-    <nav>
-      <ul>
-        <li><a href="#"> npm Enterprise </a></li>
-        <li><a href="#"> Products </a></li>
-        <li><a href="#"> Solutions </a></li>
-        <li><a href="#"> Resources </a></li>
-        <li><a href="#"> Docs </a></li>
-        <li><a href="#"> Support </a></li>
-      </ul>
-    </nav>
-  </div>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>npm | build amazing things</title>
+  </head>
 
-  <div>
-      <img src="./images/npm-logo.png" alt="npm logo">
-    
-    <!-- add logo, search bar and buttons (or links and style them as buttons later) -->
-    
-      <form action="" method="GET">
-        <img src="./images/magnifying-glass.png" alt="magnifying glass">
-        <input type="search" name="search" placeholder="Search packages" value="">
-        <button>Search</button>
-      </form>
-      <a href="#">Join</a>
-      <a href="#">Log in</a>
-    
-    
-  </div>
-</header>
-<body>
-  <!-- section1 -->
-  <section id="amazing-things">
-    <article>
-      <h5>Build amazing things</h5>
-    </article>
-    <div>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio rem, voluptate necessitatibus dolor autem eligendi praesentium. Temporibus laudantium deserunt aspernatur unde ipsum fugiat, ullam reiciendis quidem vero dolorum veniam voluptates.</p>
-      <button><a href="#">See plans</a></button>
-      <a href="#">Join for free</a>
-    </div>
-  </section>
-  <!-- section2 -->
-  <section id="open-source">
-    <img src="./images/triangle-hexagon.svg" alt="triangle hexagon">
-    <article>
-      <h3>Bring the best of open source to your company</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla a magni provident voluptate omnis aliquam obcaecati sapiente sed nesciunt eum libero magnam, porro, id saepe laborum totam voluptas odio voluptatem.</p>
-    </article>
-  </section>
-  <!-- section3  -->
-  <section id="todos">
-    <article>
-      <div>
-        <img src="./images/zero-configuration.svg" alt="zero configuration">
-        <h1>Zero configuration</h1>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum provident officia </p>
+  <body>
+    <header>
+      <div class= "container-header">
+        <div class=header-top>
+          <div>
+            <img class="blackHeart" src="images/black-heart.png" alt="black heart" />
+            <span>Nifty Penguin Magic</span>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="#">npm Enterprise</a></li>
+              <li><a href="#">Products</a></li>
+              <li><a href="#">Solutions</a></li>
+              <li><a href="#">Resources</a></li>
+              <li><a href="#">Docs</a></li>
+              <li><a href="#">Support</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
-    </article>
-    <article>
-      <div>
-        <img src="./images/team-management.svg" alt="team management">
-        <h1>Team managemet</h1>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum provident officia </p>
+      <div class="container-header">
+        <div id="header-search">
+          <img class="logo" src="images/npm-logo.png" alt="NPM Logo"></img>
+          <form action="#" method="get" class="search-form">
+            <img class="logo" src="images/magnifying-glass.png" />
+            <input type="text" id="search" name="search" value="Search packages" />
+            <button type="submit">Search</button>
+          </form>
+          <div>
+            <a href="#" class="link-button">Join</a>
+            <a href="#">Log in</a>
+          </div>
+        </div>
       </div>
-    </article>
-    <article>
-      <div>
-        <img src="./images/familiar-features.svg" alt="familiar features">
-        <h1>Familiar features</h1>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum provident officia </p>
+    </header>
+
+  <!--Section amazing things-->
+    <section id="amazing">
+        <h1>Build amazing things</h1>
+        <article>
+          <p>
+            Essential JavaScript development tools that help you go to market faster and build powerful applications using
+            modern open source code.
+          </p>
+        </article>
+        <div>
+          <a href="#" class="see-link">See plans</a>
+          <a href="#" class= "join-link">Join for free</a>
+        </div>
+    </section>
+
+    <!--Section Open source-->
+    <section id="open-source">
+        <img src="images/triangle-hexagon.svg" alt="triangle-hexagon"/>
+        <div class="background-open-source">
+          <h2>Bring the best of open source to your company</h2>
+        </div>
+        <article>
+          <p>
+            npm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it.
+            Create an Org and get more out of the tools your team already knows and loves.
+          </p>
+        </article>
+    </section>
+  
+    <!--Section assets-->
+    <section id="assets">
+      <div class= "assets-container">
+        <div class="assets">
+          <img src="images/zero-configuration.svg" alt="zero configuration"/>
+          <h4>Zero configuration</h4>
+          <p>
+            Create an org, add your team, and start collaborating. Nothing to configure, set up, or manage.
+          </p>
+        </div>
+        <div class="assets">
+          <img src="images/team-management.svg" alt="team management"/>
+          <h4>Team management</h4>
+          <p>
+            Control who has access to what modules within your team namespace using straightforward team management capabilities.
+          </p>
+        </div>
+        <div class="assets">
+          <img src="images/familiar-features.svg" alt="familiar features"/>
+          <h4>Familiar features</h4>
+          <p>
+            npm Orgs has 100% parity with all the public npm registry features your developers already use.
+          </p>
+        </div>
+        <div class="assets">
+          <img src="images/npm-audit.svg" alt="npm audit">
+          <h4>npm audit</h4>
+          <p>
+            Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer.
+          </p>
+        </div>
       </div>
-    </article>
-    <article>
-      <div>
-        <img src="./images/npm-audit.svg" alt="npm audit">
-        <h1>Npm audit</h1>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum provident officia </p>
+      <div class=assets-container-link>
+        <a href="#">Create an Org</a>
       </div>
-    </article>
-  </section>
-</body>
+    </section>
+  </body>
 </html>

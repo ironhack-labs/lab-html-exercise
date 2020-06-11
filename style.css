@@ -1,15 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url("https://fonts.googleapis.com/css?family=Poppins");
 
 body {
-  font-family: 'Poppins';
-}
-
-header > div {
-  padding: 0 25px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid lightgray;
+  font-family: "Poppins";
 }
 
 nav {
@@ -31,4 +23,190 @@ nav a {
 .blackHeart {
   width: 20px;
   margin-right: 1rem;
+}
+
+.container-header {
+  border-bottom: 1px solid lightgray;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 95%;
+}
+
+.logo {
+  height: 25px;
+  margin: 10px 0;
+}
+
+#header-search {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 95%;
+}
+
+#header-search a {
+  background-color: transparent;
+  color: black;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+.link-button {
+  border: 1px solid black;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  color: rgba(0, 0, 0, 0.05);
+  background-color: #dbdbda;
+  margin: 10px 20px;
+  padding-left: 20px;
+}
+
+.search-form input {
+  flex-grow: 1;
+  height: 35px;
+  border: none;
+  background-color: transparent;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.5);
+  padding-left: 10px;
+}
+
+.search-form button {
+  padding: 15px 20px;
+  background-color: #fb3e44;
+  color: white;
+  border: none;
+  font-size: 20px;
+  margin-left: 7px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+}
+
+#amazing {
+  height: 600px;
+  background-color: rgba(232, 217, 217, 0.3);
+}
+
+#amazing h1 {
+  font-weight: bold;
+  font-size: 7em;
+  margin: 30px 0;
+}
+
+#amazing article {
+  width: 40%;
+  font-size: 1.6em;
+  text-align: center;
+}
+
+#amazing div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 40%;
+  margin: 60px 0;
+}
+
+#amazing a {
+  font-size: 1.6em;
+  box-sizing: border-box;
+  padding: 15px 65px;
+  text-decoration: none;
+}
+
+.see-link {
+  background-color: #fb3b49;
+  box-shadow: 8px 8px 0 rgba(251, 59, 73, 0.2);
+  color: white;
+}
+
+.join-link {
+  background-color: white;
+  color: black;
+}
+
+#open-source img {
+  height: 250px;
+}
+
+.background-open-source {
+  transform: skew(19deg, 0deg);
+  width: 55%;
+  max-width: 80%;
+}
+
+#open-source h2 {
+  background-color: rgba(255, 204, 53, 0.4);
+  font-size: 2.2em;
+  text-align: center;
+  font-style: italic;
+  width:95%;
+}
+
+#open-source article {
+  align-items: center;
+  width: 55%;
+  font-size: 1em;
+  text-align: center;
+}
+
+#open-source p {
+  text-align: center;
+}
+
+.assets-container {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  margin-top: 50px;
+}
+
+#assets .assets {
+  box-sizing: border-box;
+  min-width: 300px;
+  width: 25%;
+  padding: 0 25px;
+}
+
+#assets h4 {
+  color: #ed1c24;
+}
+
+#assets  p {
+  font-size: 1.2em;
+}
+
+#assets img {
+  height: 30px;
+}
+
+.assets-container-link {
+  margin: 90px;
+}
+
+.assets-container-link a {
+  background-color: black;
+  color: white;
+  box-shadow: 8px 8px 0 rgba(128, 83, 35, 0.2);
+  font-size: 1.6em;
+  text-decoration: none;
+  padding: 10px 90px;
 }
