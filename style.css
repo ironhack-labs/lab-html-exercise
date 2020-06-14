@@ -1,123 +1,203 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
-
-
 body {
     margin: 0;
     padding: 0;
     font-family: Poppins;
     font-size: 14px;
-    line-height: 2.5e    
+    line-height: 2.5e
 }
 
-header > div {
+header>div {
     padding: 0 25px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #e8e2e2;
-  }
-  
-  nav {
+}
+
+nav {
     width: 600px;
-  }
-  
-  nav ul {
+}
+
+nav ul {
     list-style: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-  
-  nav a {
+}
+
+nav a {
     text-decoration: none;
     color: black;
-  }
-  
-  .blackheart {
+}
+
+.blackheart {
     width: 20px;
     margin-right: 1rem;
-  }
+}
 
-  .npm {
-      width: 50px;
-  }
+.npm {
+    width: 50px;
+}
 
-  .search-bar {
-      margin-top: 2.5px;
-      margin-bottom: 5px;
-      height: 50px;
-  }
+.search-bar {
+    margin-top: 2.5px;
+    margin-bottom: 5px;
+    height: 50px;
+    margin-bottom: 0;
+}
 
-  .search-bar-form {
-      display: flex;
-      height: 30px;
-    
+.search-bar-form {
+    display: flex;
+    height: 30px;
+}
 
-  }
+.search {
+    position: absolute;
+    width: 15px;
+    margin-top: 7px;
+    margin-left: 3px;
+    z-index: 1;
+}
 
-  .search {
-      position: absolute;
-      width: 15px;
-      margin-top: 7px;
-      margin-left: 3px;
-      z-index: 1;
-  }
+#search-bar {
+    height: auto;
+    background-color: rgba(0, 0, 0, .05);
+    padding-left: 30px;
+    width: 65vw;
+    border: none;
+}
 
-  #search-bar {
-      height: auto;
-      background-color: rgba(0,0,0,.05);
-      padding-left: 30px;
-      width: 65vw;
-      border: none;
-  }
+.search-button {
+    background-color: #fb3e44;
+    border: none;
+    color: white;
+    font-size: 0.9em;
+    width: 60px;
+}
 
-  .search-button {
-      background-color: #fb3e44;
-      border: none;
-      color: white;
-      font-size: 0.9em;
-      width: 60px;
-  }
+.link-access a {
+    text-decoration: none;
+    font-size: .9em;
+    color: black;
+    justify-content: space-between;
+    padding: 3px 10px 3px 10px;
+}
 
-  .link-access a {
-      text-decoration: none;
-      font-size: .9em;
-      color: black;
-      justify-content: space-between;
-      padding: 3px 10px 3px 10px;
+.join-link {
+    border: 1px solid rgba(32, 32, 32, 0.438);
+}
 
-  }
+#intro {
+    background-color: rgba(232, 217, 217, .3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 600px;
+}
 
-  .join-link {
-      border: 1px solid rgba(32, 32, 32, 0.438);
-      
-  }
+h1 {
+    font-size: 7em;
+    font-weight: 900;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
 
-  #intro {
-      background-color: rgba(232,217,217,.3);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      height: 600px;
+.intro-article {
+    font-size: 2em;
+    text-align: center;
+}
 
+#intro div {
+    font-size: 2em;
+    text-align: center;
+    margin-top: 50px;
+}
 
-  }
+.intro-buttons a {
+    justify-content: space-between;
+}
 
-  h1 {
-      font-size: 9em;
-      font-weight: 900;
-      text-align: center;
-      margin-top: 200px;
-  }
+.plans {
+    text-decoration: none;
+    background-color: #FB3B49;
+    color: white;
+    margin-right: 250px;
+    padding: 10px 50px 10px 50px;
+    box-shadow: 8px 8px 0 rgba(251, 59, 73, .2);
+}
 
-  article {
-      font-size: 2em;
-      text-align: center;
-  }
+.join-free {
+    text-decoration: none;
+    color: black;
+}
 
-  #intro div {
-      font-size: 2em;
-      text-align: center;
-      margin-top: 30px;
+#info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 600px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
 
-  }
+.triangle {
+    width: 350px;
+    margin-top: 100px;
+}
+
+h2 {
+    font-size: 2.5em;
+    text-align: center;
+    padding: 5px 50px 5px 50px;
+    background-color: rgba(255, 204, 53, .4);
+    transform: skew(9deg, 0deg);
+    font-style: italic;
+}
+
+.info-article {
+    font-size: 1.1em;
+    text-align: center;
+    margin: auto 25% 200px 25%;
+}
+
+#offers {
+    height: 600px;
+    margin: 10px 0 auto 0;
+}
+
+.container {
+    width: 18.5%;
+    float: left;
+    margin: 100px 1% 100px 1%;
+}
+
+.configuration {
+    margin-right: 10%;
+}
+
+.audit {
+    margin-left: 10%;
+}
+
+.img-offers {
+    width: 50px;
+    height: 50px;
+}
+
+#offers h3 {
+    font-size: 1.5em;
+    color: #ED1C24;
+}
+
+.create {
+    font-size: 1.5em;
+    margin-left: 37.5%;
+    text-align: center;
+    width: 25%;
+    background-color: black;
+    color: white;
+    padding: 10px 10px 10px 10px;
+    box-shadow: 8px 8px 0 rgba(128, 83, 35, .2);
+}
