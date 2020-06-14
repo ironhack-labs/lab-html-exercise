@@ -1,0 +1,228 @@
+/*form label color: rgba(0,0,0,.05)
+form input color: rgba(0,0,0,.05)
+form button background color: #fb3e44
+form button letters color: white */
+
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body {
+    margin: 0 0;
+    font-family: "Poppins";
+}
+
+/*header styling */
+
+#logo{
+      height:50px;
+      margin: 0; 
+}
+
+.npmlogo {
+    width:50px;
+  height:20px;
+}
+
+header > div {
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray; 
+}
+
+nav {
+    width: 600px;
+}
+
+ nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+}
+      
+nav a {
+        text-decoration: none;
+        color: black;
+}
+      
+.blackHeart {
+        width: 30px;
+        margin-right: 1rem;
+}   
+
+/* Buttons header */
+
+.searchButton {
+    background-color: #fb3e44;
+     color: white;
+     margin: 0 45px 3px 0;
+     height: 40px;
+     width: 90px;
+}
+.searchTerm { 
+    margin-left: 10px;
+    background-color: rgba(0,0,0,.05);
+    width: 80%;
+    height: 30px;
+}
+
+.buttonborder { 
+    height: 30px;
+    border: 1px solid black;
+    width: 70px;
+    background-color: white;
+    bottom: 3px;
+}
+.buttonnoborder {
+    height: 30px;
+    width: 70px;
+    border:none;
+    background-color: white;
+    bottom: 3px;
+}
+/* Section 1 - Homepage styling */
+
+.homepage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 600px;
+    text-align: center;
+    background-color: rgba(232,217,217,.3);
+}
+.homepage p {
+    position: relative;
+    bottom: 40px;
+    font-size: 1.3em;
+    line-height: 1.5em;
+    weight: 300;
+}
+.homepage > div {
+    position: relative;
+    top: 0px;
+}
+.homepage > div > button {
+    position: relative;
+    bottom: 30px;
+    font-size: 1.3em;
+    line-height: 0.2em;
+    font-weight: 100%;
+    height: 60px;
+    width: 200px;
+    margin: 20px 30px;
+    padding: 20px 30px;
+}
+
+  h1 {
+    font-size: 6em;
+    text-align: center;
+    position: relative;
+    top: 20px;
+  }
+
+/* Section 1 - Homepage Buttons */
+
+.seeplansButton{
+    text-align:center;
+    background-color: #FB3B49;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+}
+
+.joinforfree {
+    font-size: 1.5em;
+    weight: 300;
+    height: 50px;
+    width: 200px;
+    background-color: white;
+    color: black;
+    font-style: bold;
+    border: none;
+}
+  
+/* Section 2 - Heading styling */
+
+h2 {
+    background-color: rgba(255,204,53,.4);
+    padding: 5px 10px;
+    margin: 0 20px;
+    transform: skew(9deg,0deg);
+    font-style: italic;
+    width: 50%;
+    text-align: center;
+    font-size: 1.8em;
+    position: relative;
+    line-height: 1em;
+    top: 40px;  
+  }
+
+  #heading { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 700px;
+    width: 100%;
+    text-align: center;
+}
+
+
+#heading img {
+      height: 250px;
+      width: 250px;
+  }
+
+
+  .text {
+    margin-top: 70px;
+    font-size: 1em;
+    font-weight: 100px;
+    text-align: center;
+    margin: 80px 0;
+  }
+  
+/* Section 3 - Squares */
+  
+.service-box {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    padding: 0 40px;
+}
+.service-box img {
+    width: 35px;
+  }
+  
+h4 { 
+    color: #FB3B49;
+  }
+#items {
+    position: relative;
+    left: 10%;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    bottom: 55px;
+}
+#items p {
+    font-size: 1em;
+    line-height: 1.4em;
+    margin: 0px 0px;
+}
+
+.org {
+    position: relative;
+    left: 37%;
+    width: 400px;
+    height: 60px;
+    background-color: black;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    color: white;
+    text-align: center;
+    margin: 20px; 
+    font-size: 1.3em;
+    bottom: 20px;
+}
