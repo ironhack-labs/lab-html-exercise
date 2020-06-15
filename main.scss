@@ -365,3 +365,38 @@ body {
     font-family: 'Poppins';
 }
 
+.header {
+    &__section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid lightgray;
+        padding: 1rem 2.5rem;
+    }
+
+    &__icon {
+        width: 20px;
+        margin-right: 1rem;
+    }
+
+    &__subtitle-text {
+        font-size: 1.3rem;
+    }
+}
+
+.navigation {
+
+    width: 50rem;
+
+    &__list {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__link {
+        text-decoration: none;
+        color: black;
+        font-size: 1.4rem;
+    }
+}
