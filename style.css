@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
+.debug {
+  outline: 1px dotted red;
+}
+
+body {
+  font-family: "Poppins";
+}
+
+header > div {
+  padding: 0 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+}
+
+nav {
+  width: 600px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+.blackHeart {
+  width: 20px;
+  margin-right: 1rem;
+}
+
+.heading {
+  background-color: rgba(255, 204, 53, 0.4);
+  font-style: italic;
+  transform: skew(9deg, 0deg);
+  width: 600px;
+  text-align: center;
+}
+
+/* 
+ * -------------
+ * Search Section 
+*/
+.searchSection {
+  margin-top: 5px;
+  padding: 5px 10px;
+}
+
+.logo {
+  width: 80px;
+  margin-right: 10px;
+}
+
+.searchForm {
+  position: relative;
+  margin: 0px;
+}
+
+.glass {
+  width: 20px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
+.searchInput {
+  padding: 5px;
+  padding-left: 30px;
+  border: none;
+  background-color: #f2f2f2;
+  width: 940px;
+  color: #b2b2b2;
+  /* revisar */
+}
+
+.searchInput::placeholder {
+  color: #b2b2b2;
+}
+
+.searchButton {
+  padding: 5px;
+  background-color: #fb3e44;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.joinButton {
+  box-shadow: 2px 2px 0 rgba(138, 128, 129, 0.2);
+  background-color: white;
+  width: 55px;
+  cursor: pointer;
+  padding: 5px;
+  border-color: rgba(204, 197, 198, 0.678);
+}
+.loginButton {
+  border: none;
+  cursor: pointer;
+  background-color: white;
+}
+
+/* 
+ * ------------
+ * Section 1 (banner, see plans, etc)
+*/
+
+#section1 {
+  text-align: center;
+  background-color: rgba(232, 217, 217, 0.3);
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.section1Title {
+  font-size: 70;
+  margin: 0px;
+  margin-bottom: 20px;
+}
+
+.section1Text {
+  width: 400px;
+  margin: auto;
+  font-size: 1em;
+  font-weight: 100;
+  text-align: center;
+}
+
+.section1Buttons {
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  margin-top: 50px;
+  width: 500px;
+}
+
+.seePlansButton {
+  box-shadow: 8px 8px 0 rgba(251, 59, 73, 0.2);
+  background-color: #fb3b49;
+  color: white;
+  border: none;
+  /* padding: 20px; */
+  width: 180px;
+  height: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.joinForFreeButton {
+  width: 180px;
+  border: none;
+  height: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: rgba(232, 217, 217, 0.3);
+}
+
+/* 
+ * ------------
+ * Section 2
+*/
+#section2 {
+  text-align: center;
+  width: 600px;
+  margin: auto;
+  margin-top: 100px;
+}
+
+#section2 img {
+  width: 250px;
+  height: 180px;
+  margin-top: 20px;
+}
+
+/* 
+ * ------------
+ * Section 3
+*/
+
+#section3 {
+  width: 940px;
+  margin: auto;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+#section3 h4 {
+  color: #ed1c24;
+  width: 200px;
+  text-align: left;
+}
+
+#section3 img {
+  width: 30px;
+}
+
+#section3 p {
+  font-size: 13;
+}
+
+.section3InfoContainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.section3InfoContainer article {
+  width: 200px;
+}
+
+.createOrgButton {
+  display: block;
+  cursor: pointer;
+  box-shadow: 8px 8px 0 rgba(128, 83, 35, 0.2);
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 20px;
+  margin: auto;
+  width: 350px;
+  font-size: 16;
+  margin-top: 50px;
+}
