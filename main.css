@@ -318,19 +318,38 @@ html {
 body {
   font-family: 'Poppins'; }
 
+h1, h2, h3, h4, h5 {
+  margin: 0; }
+
+.btn {
+  border: 1px solid black;
+  border-radius: 0;
+  padding: 1rem 2rem; }
+  .btn--red {
+    border-color: #fb3e44;
+    background-color: #fb3e44;
+    color: white; }
+
 .header__section {
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid lightgray;
-  padding: 1rem 2.5rem; }
+  padding: 1.5rem 2.5rem; }
 
 .header__icon {
-  width: 20px;
+  width: 2rem;
   margin-right: 1rem; }
 
 .header__subtitle-text {
   font-size: 1.3rem; }
+
+.header__logo {
+  width: 5rem;
+  margin-right: 2rem; }
+
+.header__search-container {
+  flex: 1 1 auto; }
 
 .navigation {
   width: 50rem; }
@@ -343,3 +362,40 @@ body {
     text-decoration: none;
     color: black;
     font-size: 1.4rem; }
+
+.search {
+  flex: 1 1 auto;
+  align-items: center;
+  margin-right: 2rem;
+  background-color: rgba(0, 0, 0, 0.05); }
+  .search__container {
+    display: flex;
+    align-items: center;
+    flex-grow: 1; }
+  .search__icon {
+    margin-left: 1rem;
+    width: 2rem;
+    height: auto;
+    align-self: center; }
+  .search__input {
+    padding: 1.5rem;
+    flex-grow: 1;
+    font-size: 1.3rem;
+    outline: none;
+    border: none;
+    background-color: transparent; }
+  .search__form {
+    display: flex;
+    flex-grow: 1; }
+  .search__btn {
+    font-size: 1.4rem; }
+
+.login {
+  display: flex;
+  font-size: 1.3rem; }
+  .login a {
+    text-decoration: none;
+    color: black;
+    padding: 1rem; }
+  .login__signup-btn {
+    border: 1px solid black; }

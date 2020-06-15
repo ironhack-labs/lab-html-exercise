@@ -27,13 +27,13 @@
             </div>
             <div class="header__section">
                 <img src="./images/npm-logo.png" alt="" class="header__logo">
-                <form action="/register" method="POST" class="search"></form>
-                    <div class="search__container">
+                <div class="search">
+                    <form action="/register" method="POST" class="search__form">
                         <img src="./images/magnifying-glass.png" class="search__icon">
-                        <input type="text" name="search" class="search__input" id="search">
+                        <input type="text" placeholder="Search packages" name="search" class="search__input" id="search">
                         <button type="submit" class="search__btn btn btn--red">Search</button>
-                    </div>
-                </form>
+                    </form>
+                </div>
                 <div class="login">
                     <a href="#" class="login__signup-btn">Sign Up</a>
                     <a href="#" class="login__signin-btn">Sign In</a>
