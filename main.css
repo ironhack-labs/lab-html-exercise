@@ -324,11 +324,15 @@ h1, h2, h3, h4, h5 {
 .btn {
   border: 1px solid black;
   border-radius: 0;
-  padding: 1rem 2rem; }
+  padding: 1rem 2rem;
+  text-decoration: none;
+  color: black; }
   .btn--red {
     border-color: #fb3e44;
     background-color: #fb3e44;
     color: white; }
+  .btn--white {
+    border: 1px solid white; }
 
 .header__section {
   display: flex;
@@ -399,3 +403,58 @@ h1, h2, h3, h4, h5 {
     padding: 1rem; }
   .login__signup-btn {
     border: 1px solid black; }
+
+.section-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 10rem auto; }
+  .section-1__heading {
+    font-size: 8rem;
+    font-weight: 800;
+    margin-bottom: 3rem; }
+  .section-1__text {
+    font-size: 2rem;
+    width: 40%;
+    margin-bottom: 3rem; }
+  .section-1__btn {
+    display: inline-block;
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding: 1.5rem 3rem; }
+  .section-1__btn:first-child {
+    margin-right: 2rem; }
+  .section-1 .btn--red {
+    box-shadow: 8px 8px 0 rgba(251, 59, 73, 0.2); }
+
+.section-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5rem auto;
+  max-width: 120rem;
+  text-align: center; }
+  .section-2__img {
+    max-width: 30rem;
+    height: auto;
+    margin-bottom: 5rem; }
+  .section-2__heading {
+    font-size: 4rem;
+    margin-bottom: 3rem;
+    padding: 0 2rem;
+    font-style: italic;
+    position: relative; }
+    .section-2__heading::before {
+      content: "";
+      position: absolute;
+      top: 5%;
+      left: -5%;
+      width: 110%;
+      height: 90%;
+      background-color: rgba(255, 204, 53, 0.4);
+      z-index: -1; }
+  .section-2__text {
+    font-size: 2rem;
+    max-width: 100rem; }
