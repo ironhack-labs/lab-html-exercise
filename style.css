@@ -49,14 +49,6 @@ nav a {
 }
 
 
-.magnifying-glass {
-  box-sizing: border-box;
-  width: 20px;
-  background-color: rgba(0,0,0,.05);
-  position: relative;
-  left: 4px;
-}
-
 /* 
   background-image: url("images/magnifying-glass.png");
   background-position: 10px 10px;
@@ -64,23 +56,32 @@ nav a {
   padding: 12px 20px 12px 40px;
 */
 
-input {
-  box-sizing: border-box;
-  width: 900px;
-  padding: 7px;
+form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+form > label > img {
+  width: 15px;
   background-color: rgba(0,0,0,.05);
+  padding: 7px;
+  margin-top: 7px;
+}
+
+form > input {
   border: none;
+  background-color: rgba(0,0,0,.05);
+  padding: 7px;
+  width: 1000px;
 }
 
 form > button {
-  box-sizing: border-box;
   background-color: #fb3e44;
   color: white;
   width: 70px;
   padding: 7px;
   border: none;
-  position: relative;
-  right: 5px;
 }
 
 .join {
