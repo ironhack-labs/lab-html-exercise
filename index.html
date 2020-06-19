@@ -3,16 +3,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NPM Clone</title>
+    <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
     <header>
-        <div>
+        <div class="header">
             <div>
                 <img class="blackheart" src="images/black-heart.png" alt="black heart"/>
                 <span>Nifty Penguin Magic</span>
             </div>
             <nav>
-                <ul>
+                <ul class="nav-ul">
                     <li><a href="#">npm Enterprise</a></li>
                     <li><a href="#">Products</a></li>
                     <li><a href="#">Solutions</a></li>
@@ -22,34 +23,34 @@
                 </ul>
             </nav>
         </div>
-       <div>
-           <img src="images/npm-logo.png" alt="main-logo"/>
+       <div class="container">
+           <img src="images/npm-logo.png" alt="main-logo" class="npm"/>
            <form action="#">
-               <div>
+               <div class="icon-input">
                    <img src="images/magnifying-glass.png" alt="glass"/>
                    <input type="text" placeholder="Search packages"/>
                </div>
-               <button type="submit">Search</button>
+               <button class="btn" type="submit">Search</button>
            </form>
-           <div>
-               <a href="#">Join</a>
-               <a href="#">Log In</a>
+           <div class="container-links">
+               <a href="#" class="join-link">Join</a>
+               <a href="#" class="login-link">Log In</a>
            </div>
        </div>
        </header>
-       <section>
+       <section class="first-section">
            <h1>Build amazing things</h1>
            <article>
             Essential JavaScript development tools that help you go to market faster and build powerful applications using
             modern open source code.
            </article>
-           <div>
-               <a href="#">See plans</a>
-               <a href="#">Join for free</a>
+           <div class="information">
+               <a href="#" class="plans">See plans</a>
+               <a href="#" class="join">Join for free</a>
            </div>
        </section>
    
-       <section>
+       <section class="second-section">
            <img src="images/triangle-hexagon.svg" alt="triangle-hexagon"/>
            <h3>Bring the best of open source to your company</h3>
            <article>
@@ -58,25 +59,25 @@
            </article>
        </section>
 
-       <section>
-           <div>
+       <section class="third-section">
+           <div class="features">
                <div>
-                   <img src="images/zero-configuration.svg" alt="zero-config"/>
+                   <img src="images/zero-configuration.svg" alt="zero-config" class="main-icons"/>
                    <h4> Zero configuration</h4>
                    <p>
                     Create an org, add your team, and start collaborating. Nothing to configure, set up, or manage.</p>
                </div>
                <div>
-                   <img src="images/team-management.svg" alt="management"/>
+                   <img src="images/team-management.svg" alt="management" class="main-icons"/>
                    <h4> Team management </h4>
                    <p>Control who has access to what modules within your team namespace using straightforward team management capabilities</p>
                </div>
                <div>
-                   <img src="images/familiar-features.svg" alt="familiar-teatures"/>
+                   <img src="images/familiar-features.svg" alt="familiar-teatures" class="main-icons"/>
                    <p>npm Orgs has 100% parity with all the public npm registry features your developers already use</p>
                </div>
                <div>
-                   <img src="images/npm-audit.svg" alt="npm-audit"/>
+                   <img src="images/npm-audit.svg" alt="npm-audit" class="main-icons"/>
                    <h4>npm audit</h4>
                    <p>Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer.</p>
                </div>
