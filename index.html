@@ -6,12 +6,15 @@
     </head>
 
     <body>
+
         <header>
             <div>
                 <div>
-                    <img src="images/black-heart.png" alt="black heart" />
+                    <img class="blackHeart" src="images/black-heart.png" alt="black heart" />
                     <span>Nifty Penguin Magic</span>
                 </div>
+
+                <!-- Navbar-->
                 <nav>
                     <ul>
                         <li><a href="#""> npm Enterprise </a></li>
@@ -24,16 +27,18 @@
                 </nav>
             </div>
 
-            <div>
-                <img src="images/npm-logo.png" alt="npm logo" />
+            <div class="container">
+                <img class="logo" src="images/npm-logo.png" alt="npm logo" />
+                
                 <!-- Search bar-->
-                <form action="#" method="#">
-                    <img src="images/magnifying-glass.png" alt="magnifyingglass" />
+                <form  class="searchbar" action="#" method="#">
+                    <label><img src="images/magnifying-glass.png" alt="magnifyingglass" /></label>
                     <input type="text" placeholder="Search packages" id="search" />
-                    <button type="submit">Search</button>
+                    <button type="submit" class="btn">Search</button>
                 </form>
-                <div>
-                    <a href="#">Join</a>
+
+                <div class="log-in">
+                    <a class="join" href="#">Join</a>
                     <a href="#">Log In</a>
                 </div>
             </div>
