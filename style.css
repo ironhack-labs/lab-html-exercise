@@ -8,6 +8,9 @@ body {
 }
 
 /* Header - General */
+header {
+    box-shadow: 0px 5px 5px #aaa;
+}
 header > div {
     padding: 0 25px;
     display: flex;
@@ -33,14 +36,14 @@ nav a {
 }
 
 .blackHeart {
-    width: 20px;
+    width: 25px;
     margin-right: 1rem;
 }
 
 /* Header - Second part */
 .npmLogo {
     width: 60px;
-    padding-top: 10px;
+    padding: 10px 10px 0px 0px;
 }
 
 form {
@@ -64,7 +67,7 @@ form label {
 
 form input {
     background-color: rgba(0,0,0,.05);
-    width: 1000px;
+    width: 970px;
     border: none;
     font-family: 'Poppins';
     padding:0;
@@ -73,29 +76,35 @@ form input {
 form button {
     background-color: #fb3e44;
     color: white;
+    font-size: 0.9em;
     border: none;
     font-family: 'Poppins';
-    padding: 0 15px;
+    padding: 0 25px;
+    margin-right: 10px;
 }
 
 .headerBtn a {
     text-decoration: none;
     color: rgb(115,115,115);
-    padding: 2px 10px;
+    padding: 2px 15px;
+    margin-left: 5px;
 }
 
 .joinBtn {
     border: 1px solid lightgray;
 }
 
-/* Section 1 */
-
-#section1 {
+/* Sections - General */
+.section {
     height: 600px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+/* Section 1 */
+
+#section1 {
     background-color: rgba(232,217,217,.3);
 }
 
@@ -106,48 +115,40 @@ h1 {
 }
 
 #section1 > article {
-    width: 400px;
+    width: 440px;
     text-align: center;
 }
 
 #section1 > div {
-    width: 400px;
+    width: 440px;
     text-align: center;
     margin: 50px 0px;
 }
 
 #section1 a {
     text-decoration: none;
-    padding: 15px 50px;
+    padding: 13px 55px;
 }
 
 .plansBtn {
     background-color: #FB3B49 ;
     box-shadow: 8px 8px 0 rgba(251,59,73,.2);
     color: white;
-    margin-right: 10px;
+    margin-right: 30px;
 }
 
 .joinforfreeBtn {
     color: black;
+    background-color: white;
 }
 
 /* Section 2 */
-
-#section2 {
-    height: 600px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.hexagon {
+#section2 .hexagon {
     width: 200px;
     margin-bottom: 20px;
 }
 
-h2 {
+#section2 h2 {
     font-size: 2em;
     background-color: rgba(255,204,53,.4);
     transform: skew(9deg,0deg);
@@ -159,4 +160,37 @@ h2 {
 #section2 > article {
     width: 700px;
     text-align: center;
+}
+
+/* Section 3 */
+#section3 .fourColumns {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.column {
+    width: 200px;
+}
+.smallImage {
+    width: 50px;
+}
+
+.column h3 {
+    color: #ED1C24;
+    font-weight: bold;
+}
+
+.createOrg {
+    margin: 50px 0px;
+}
+
+.createOrg a {
+    background-color: black;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    padding: 10px 100px;
+    text-decoration: none;
+    color: white;
 }
