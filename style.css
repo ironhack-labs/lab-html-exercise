@@ -12,6 +12,7 @@ header > div {
     border-bottom: 1px solid lightgray;
 }
 
+/* Header top */
 nav {
     width: 600px;
 }
@@ -33,6 +34,7 @@ nav a {
     margin-right: 1rem;
 }
 
+/* Header bottom */
 .container {
     display: flex;
     justify-content: space-between;
@@ -69,7 +71,7 @@ label img {
     background-color: rgba(0,0,0,0.05);
     border: none;
     flex: 1 1 auto;
-    font-family: 'Source Sans Pro', 'Lucida Grande', sans-serif;
+    font-family: 'Fira Mono', 'Andale Mono', 'Consolas', monospace;
 }
 
 .btn {
@@ -77,6 +79,8 @@ label img {
     color: white;
     border: none;
     padding: 10px 20px;
+    font-size: 17px;
+    letter-spacing: 0.5px;
 }
 
 .log-in {
@@ -94,6 +98,123 @@ label img {
 
 .join {
     border: 1px solid black;
-    padding: 5px 15px;
+    padding: 5px 20px;
+}
+
+/* First section */
+#first-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 600px;
+    background-color: rgba(232, 217, 217, 0.3);
+}
+
+#first-section h1 {
+    font-size: 60px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+#first-section article {
+    width: 400px;
+    text-align: center;
+}
+
+.btn-first {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.plans-btn {
+    background-color: #FB3B49;
+    padding: 10px 50px;
+    text-decoration: none;
+    color: white;
+    box-shadow: 8px 8px 0 rgba(251, 59, 73, 0.2);
+}
+
+.join-btn {
+    text-decoration: none;
+    color: black;
+    padding-right: 35px;
+    font-weight: bold;
+}
+
+/* Second section */
+#second-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 500px;
+}
+
+#second-section img {
+    width: 200px;
+    padding-top: 10px;
+}
+
+#second-section > h2 {
+    background-color: rgba(255, 204, 53, 0.4);
+    padding: 0px 35px; 
+    transform: skew(9deg, 0deg);
+    font-style: italic;
+    margin: 45px 0px 15px 0px;
+}
+
+#second-section article {
+    width: 500px;
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+/* Third section */ 
+.items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-bottom: 50px;
+}
+
+.items > div {
+    margin: 0px 30px;
+}
+
+.items > div > h4 {
+    color: #ED1C24;
+    font-weight: bold;
+}
+
+.items > div > img {
+    width: 40px;
+}
+
+.items > div > p {
+    font-size: 16px;
+}
+
+.container-btn {
+    width: 100%;
+    text-align: center;
+    height: 70px;
+}
+
+.link {
+    background-color: black;
+    color: white;
+    box-shadow: 8px 8px 0 rgba(128, 83, 35, 0.2);
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 100px;
+    margin-bottom: 10px;
 }
 
