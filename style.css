@@ -10,8 +10,15 @@ header > div {
   align-items: center;
   border-bottom: 1px solid lightgray;
 }
-span  {
-  text-align: left;
+.nifty-npm {
+ display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	align-content: stretch;
+  font-size: bold;
+ ;
 }
 nav {
   width: 600px;
@@ -28,38 +35,60 @@ nav a {
   text-decoration: none;
   color: black;
 }
-
 .blackHeart {
   width: 20px;
-  margin-right: 1rem;
+  margin-right: 1em;
 }
-button {
- background-color: #fb3e44;
- color: white;
+.logo    {
+    width: 45px;
+    height:25px;
 }
-input {  
+
+.contenedor     {   
+  display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: space-around;                        }
+ .buscador    {  
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: space-around
+  }
+.form       {
   background-color: rgba(232,217,217,.3);
   color: rgba(0,0,0,.05);
-  width: 700px;
+  width: 700px ;
+ }
+button    {
+  background-color: #fb3e44;
+color: white;
+   }
+.contenedor  a {
+  color: grey;
+ text-decoration: none;
 }
-label  {
-  color: rgba(0,0,0,.05);
-}
+
+
+
+
+
+
+
+
 .cabecera   {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
 }
-.contenedor   {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-  
-}
+
+
 .container  {
   display: flex;
   justify-content: center;
@@ -90,6 +119,7 @@ label  {
   }
 h1   {
   font-size:50px;
+  font-weight: bolder;
 }
 .texto   {
   text-align: center;
@@ -105,7 +135,12 @@ h1   {
 	align-content: stretch;
   margin-top: 40px;
 }
-.textotool   {
+.Triangle-Hexagon  {
+  width: 200px;
+  height:200px;
+  margin-bottom: 25px;
+}
+.texttool   {
   text-align: center;
   margin:1px 295px;
   font-size: 12px;
@@ -116,25 +151,35 @@ h2    {
 }
 
 .General-Information {
- display: flex;
+  display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
-	justify-content: center;
-	align-items: baseline;
-    align-content: center;
+	justify-content: space-around;
+	align-items: center;
+	align-content: space-between;
+  margin-left: 50px;
+  margin-right: 50px;
+
  }    
 h4  {
 color: #ED1C24;
 }
 .caja  {
   text-align: left;
- 
+ margin-top: 100px;
+ width: 300px;
+ height:200px;
+}
+.caja img {
+  width: 20px;
+  height:20px;
 }
 p    {
   font-size: 10px;
-  text-align: left;
+  text-align: center;
 }
-.item   {
+.create    { 
+  font-size: white;
   background: black;
   color: white;
   text-align: center;
@@ -144,7 +189,7 @@ p    {
 	justify-content: center;
 	align-items: flex-end;
 	align-content: center;
-  margin: 20px 400px;
+  margin: 20px 40px;
   width: 290px;
   height: 50px;
 }
