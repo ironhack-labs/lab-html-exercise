@@ -1,72 +1,108 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url("https://fonts.googleapis.com/css?family=Poppins");
 
+html,
 body {
-    font-family: 'Poppins';
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-family: "Poppins";
 }
 
-header>div {
-    padding: 0 25px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid lightgray;
+header > div {
+  padding: 0 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+  font-size: 1em;
+}
+
+.search-bar {
+  box-shadow: 0 4px 13px -3px rgba(0, 0, 0, 0.10196);
+  box-sizing: border-box;
+  height: 56px;
 }
 
 nav {
-    width: 600px;
+  width: 600px;
 }
 
 nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 nav a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
 .blackHeart {
-    width: 20px;
-    margin-right: 1rem;
+  width: 20px;
+  margin-right: 1em;
 }
 
 form {
-    background-color: rgba(0, 0, 0, .05);
-    display: flex;
+  background-color: rgba(0, 0, 0, 0.05);
+  height: 40px;
+  box-sizing: border-box;
+  border: 0;
+  display: flex;
+  width: 82%;
+  font-size: 1em;
+  font-weight: 300;
+  position: absolute;
+  left: 109px;
 }
 
-
-
-input[type=text] {
-    border: none;
-    background-color: rgba(0, 0, 0, 0);
-    font-size: 14px;
-    letter-spacing: 0px;
-    border: none;
-    height: 40px;
-    padding-left: 10px;
-    border-radius: 0;
-    width: calc(100% - 10px);
-
-}
-
-::placeholder {
-    color: rgba(0, 0, 0, .05);
-
+input {
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  font-size: 1rem;
+  letter-spacing: 0px;
+  border: none;
+  height: 40px;
+  padding-left: 10px;
+  border-radius: 0;
+  width: calc(100% - 119px);
+  box-sizing: border-box;
 }
 
 form button {
-    background-color: #fb3e44;
-
+  background-color: #fb3e44;
+  border: none;
+  border-width: 0;
+  width: 83px;
+  box-sizing: border-box;
+  color: white;
+  padding: 0;
+  margin-left: 1px;
 }
 
 .npm-logo {
-    width: 70px;
+  width: 70px;
+  margin-right: 1em;
 }
 
 .magnifying-glass {
-    width: 20px;
+  width: 15px;
+  padding: 14px 4px 11px 16px;
+}
+
+.navbar-btn a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 1em;
+}
+
+.navbar-btn a:hover {
+  opacity: 0.5;
+}
+
+#join-btn {
+  border: 1px solid rgb(154, 154, 154);
+  padding: 4px 16px;
+  margin-right: 16px;
 }
