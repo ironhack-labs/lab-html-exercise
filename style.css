@@ -5,33 +5,48 @@ body {
 }
 
 header > div {
-    padding: 0 25px;
+    padding: 10px 25px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid lightgray;
-  }
+}
 
-  nav {
+header .search-form {
+    display: flex;
+    margin-bottom: 0;
+    width: 85%;
+}
+
+header input {
+    color: black;
+}
+
+header a{
+    text-decoration: none;
+    color: black;
+}
+
+nav {
     width: 600px;
-  }
+}
 
-  nav ul {
+nav ul {
     list-style: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
+}
 
-  nav a {
+nav a {
     text-decoration: none;
     color: black;
-  }
-  
-  .blackHeart {
+}
+      
+.blackHeart {
     width: 20px;
     margin-right: 1rem;
-  }
+}
 
 .logo {
     width: 80px;
@@ -41,16 +56,18 @@ header > div {
     width: 30px;
 }
 
-.form label {
+.search-form label {
     color: rgba(0,0,0,.05);
 }
-.form input {
+.search-form input {
     color: rgba(0,0,0,.05);
     width: 100%;
+
 }
-.form button {
+.search-form button {
     background-color: #fb3e44;
-    color: white
+    color: white;
+    border: none;
 }
 
 #intro {
@@ -80,6 +97,7 @@ header > div {
     color: white;
     padding: 10px 60px;
     margin-right: 50px;
+    border: none;
 }
 
 #intro a{
@@ -118,16 +136,14 @@ header > div {
     width: 200px;
 }
 
-#section-three {
+#section-three > div {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    flex-direction: row;
-    
+    justify-content: center;
 }
-#section-three div {
-    padding: 10px 10px;
-    width: 10%;
+
+.description {
+    width: 13%;
 }
 
 #section-three h3 {
@@ -141,7 +157,9 @@ header > div {
     box-shadow: 8px 8px 0 rgba(128,83,35,.2);
     background-color: black;
     color: white;
-    width: 120%;
+    width: 15%;
     padding: 10px 40px;
+    font-size: 23px;
+    margin-top: 10px;
 }
 
