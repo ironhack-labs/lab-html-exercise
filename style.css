@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
 
 body {
   font-family: 'Poppins';
@@ -19,7 +20,7 @@ header > div {
 
 nav {
   width: 600px;
-  font-weight: 900;
+  font-weight: 400;
 }
 
 nav ul {
@@ -49,12 +50,13 @@ nav a {
 }
 
 
-/* 
-  background-image: url("images/magnifying-glass.png");
+.search {
+  background-image: url("./images/magnifying-glass.png");
   background-position: 10px 10px;
   background-repeat: no-repeat;
   padding: 12px 20px 12px 40px;
-*/
+  background-size: 18px;
+}
 
 form {
   display: flex;
@@ -62,12 +64,12 @@ form {
   align-items: center;
 }
 
-form > label > img {
+/* form > label > img {
   width: 15px;
   background-color: rgba(0,0,0,.05);
   padding: 7px;
   margin-top: 7px;
-}
+} */
 
 form > input {
   border: none;
@@ -80,6 +82,7 @@ form > button {
   background-color: #fb3e44;
   color: white;
   width: 70px;
+  height: 39px;
   padding: 7px;
   border: none;
 }
@@ -120,7 +123,7 @@ form > button {
 }
 
 #introduction h1 {
-  font-weight: 900;
+  font-weight: 700;
   font-size: 60px;
 }
 
@@ -185,6 +188,7 @@ form > button {
   background-color: rgba(255,204,53,.4);
   transform: skew(9deg,0deg);
   font-style: italic;
+  padding: 0 30px;
 }
 
 #product article {
@@ -195,13 +199,20 @@ form > button {
 }
 
 #development {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: baseline;
   height: 600px;
-  position: relative;
-  top: 100px;
+  width: 100vw;
+}
+
+.features {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 60px;
+  flex-wrap: wrap;
+}
+
+.features > div {
+  min-width: 200px;
+  padding: 0 30px;
 }
 
 .icon-development {
@@ -227,13 +238,12 @@ form > button {
   border: none;
   padding: 15px;
   width: 300px;
-  position: absolute;
-  top: 350px;
-  right: 600px;
+  margin-left: 50%;
+  transform: translateX(-50%);
 }
 
 #development button a {
   text-decoration: none;
   color: white;
-  font-weight: 900;
+  font-weight: 700;
 }
