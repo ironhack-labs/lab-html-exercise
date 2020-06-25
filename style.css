@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+/*-----------GENERAL SETTING-------------*/
+
+html {
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+.greenish-bg {
+	background-color: rgba(232,217,217,.3);
+}
+
+body {
+  font-family: 'Poppins';
+  font-size: 14px;
+  margin: 0;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+
+/*--------- HEADER -----------*/
+
+header > div {
+	padding: 0 25px;
+	height: 56px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid lightgray;
+  }
+  
+  nav {
+	width: 600px;
+  }
+  
+  nav ul {
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+  }
+  
+  nav a {
+	text-decoration: none;
+	color: black;
+  }
+  
+  .blackHeart {
+	width: 20px;
+	margin-right: 1rem;
+  }
+
+  .logo{
+	  width: 70px;
+  }
+
+  #lower-header {
+	  display: flex;
+	  justify-content: space-between;
+	  align-items: center;
+  }
+
+  form {
+	display: flex;
+	flex-grow: 1;
+	flex-direction: row;
+	margin: 0 25px;
+	font-size: 14px;
+	font-family: 'Poppins';
+  }
+
+  form *, .login-section button {
+	font-size: 14px;
+	font-family: 'Poppins';
+  }
+
+  label {
+	height: 40px;
+	width: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+
+  .m-glass {
+	width: 20px;
+	margin-left: 10px;
+  }
+
+  input {
+	height: 40px;
+	border: none;
+	flex-grow: 1;
+  }
+
+  input, input:focus {
+	outline: none;
+  }
+
+  #search-btn {
+	color: white; 
+	background-color: #fb3e44;
+	border: solid 2px #fb3e44;
+	width: 80px;
+  }
+
+  
+  .login-section button {
+	height: 30px;
+	width: 65px;
+	background-color: white;
+	border: none;
+	}
+
+	#join {
+		border: 2px solid black;
+	}
+  
+	
+	/*-------------MAIN--------------*/
+
+	main section{
+		padding: 64px 8px;
+	}
+
+	/*-----------Section 1------------- */
+
+	h1 {
+		font-size: 5rem;
+		font-weight: 600;
+		text-align: center;
+		margin-top: 20px;
+	}
+
+	.hero article {
+		width: 525px; 
+		text-align: center;
+		margin: auto;
+		line-height: 1.5;
+		font-size: 20px;
+	}
+
+	.cta-btns-container {
+		display: flex;
+		justify-content: center;
+		padding: 64px 30px 50px 30px;
+	}
+
+	.cta-btns-container button {
+		width: 250px;
+		height: 65;
+		font-weight: bolder;
+		font-family: 'Poppins';
+		font-size: 20px;
+		background-color: transparent;
+		border: none;
+	}
+
+	#see-plans-btn {
+		color: white; 
+		background-color: #fb3e44;
+		box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+	}
+
+	/*-----------Section 2------------- */
+
+	.section-two {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.section-two img {
+		width: 256px;
+ }
+	h2 {
+		font-size: 36px;
+		text-align: center;
+		margin-top: 64px;
+	}
+
+	.section-two article {
+		width: 770px;
+		text-align: center;
+		font-size: 16px;
+	}
+
+	/*-----------Section 3------------- */
+
+	.section-three {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-content: center;
+	}
+
+	.specs-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 64px;
+		padding: 0 30px;
+	}
+
+	h3 {
+		font-size: 16px;
+		color: #ED1C24;
+	}
+
+	.specs {
+		padding: 0 30px;
+	}
+
+	.specs img {
+		width: 40px;
+	}
+
+	.section-three button {
+		margin: auto;
+		background-color: black;
+		width: 300px;
+		height: 65px;
+		font-weight: bolder;
+		font-family: 'Poppins';
+		font-size: 20px;
+		border: none;
+		color: white;
+		box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+	}
+
