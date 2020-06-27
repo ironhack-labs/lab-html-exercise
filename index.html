@@ -1,87 +1,94 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title></title>
+        <title>npm</title>
+        <link rel="stylesheet" href="./style.css" />
     </head>
 <body>
-<header> <! header with two divs for nav and another one with search bar and button and login)>
-    <div> <!Main nav div>
-        <img src="black-heart.png" alt="black heart"/>
+<header id="header"> 
+    <!-- <!Main nav div> -->
+    <div> 
+        <div>
+        <img class="black-heart" src="./images/black-heart.png" alt="black heart"/>
+        <span> Nifty Penguin Magic </span>
+        </div>
+        <nav class="navigation">
+            <ul>
+                <li><a href="#">npm Enterprise</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Solutions</a></li>
+                <li><a href="#">Resources</a></li>
+                <li><a href="#">Docs</a></li>
+                <li><a href="#">Support</a></li>
+            </ul>
+        </nav>
     </div>
-    <nav>
-        <ul>
-            <li><a href="#">npm Enterprise</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">Solutions</a></li>
-            <li><a href="#">Resources</a></li>
-            <li><a href="#">Docs</a></li>
-            <li><a href="#">Support</a></li>
-        </ul>
-    </nav>
-    
-    <div><!searchbar div>
-        <img src="npm-logo" alt="npm logo"/>
-        <img src="magnifying=glass.png" alt="search emoji">
-        <form action="" method=""></form>
-            <input type="text" name="search" placeholder="search packages">
+    <!-- <!searchbar div> -->
+    <div class="searchbar-container">
+        <img class="npm-logo"src="./images/npm-logo.png" alt="npm-logo"/>
+        <img class="magnifying-glass" src="./images/magnifying-glass.png" alt="search emoji">
+        <form action="#" method="#" ></form>
+            <input class="search-bar" type="text" name="search" placeholder="search packages">
             <button>search</button>
         </form>
+        <div class="header-searchbar">
         <ul>
-            <li><a href="joinlink">Join in</a></li>
-            <li><a href="signinlink">Sigh in</a></li>
-        </ul>         
+            <li ><a class="join-sign-button" href="joinlink">Join in</a></li>
+            <li><a class="join-sign-button"href="signinlink">Sigh in</a></li>
+        </ul>
+        </div>       
     </div>
 </header>
 
-<section> <!first>
+<section id="general-info"> 
     <h1>Build Amazing things</h1>
     <article>
         <p>Essential Javascript development tools that help you go to market faster and build powerful 
             appreciations using modern open source code.</p>
-    </article>
-    <div>
-        <a href="joinlink">See plands</a>
+        </article>
+    <div class="general-info-buttons">
+        <a class="see-plan-button" href="joinlink">See plans</a>
         <a href="signinlink">Join for free</a>
     </div>
 </section>
 
-<section>
-    <img src="triangle-hexagon.svg" alt="hexagon"/>
+<section id="general-info2">
+    <img src="./images/triangle-hexagon.svg" alt="hexagon"/>
     <h2>Bring the best of open source to your company</h2>
     <article>
         <p>Relied upon by more than 11 million developers worldwide, npm is committed to making JavaScript
              development elegant, productive, and safe. The free npm Registry has become the center of 
-             JavaScript code sharing, and with more than one million packages, the largest software registry i
-             n the world. Our other tools and services take the Registry, and the work you do around it, to 
-             the next level.</p>
+             JavaScript code sharing, and with more than one million packages, the largest software registry in
+            the world.</p>
     </article>
 </section>
 
-<section>
-    <div>
+<section id="links-to-product-dept-info">
+    <div class="links-to-product-dept-info2">
+        <img src="./images/zero-configuration.svg" alt="zero-configuration-img">
         <h3>Zero configuration</h3>
         <p>Become a contributing member of the open source JavaScript community.
              Create public packages, publish updates, audit your dependencies, and more.</p>
     </div>
-    <div>
+    <div class="links-to-product-dept-info2">
+        <img class="links-to-product-dept-info2" src="./images/team-management.svg" alt="zero-configuration-img">
         <h3>npm Pro & Team</h3>
         <p>For next-level JavaScript developers who want more capabilities. 
             Pro and Teams add the ability to build private packages for you, your team, or for customers.</p>
     </div>
-    <div>
+    <div class="links-to-product-dept-info2">
+        <img src="./images/familiar-features.svg" alt="zero-configuration-img">
         <h3>npm enterprise</h3>
         <p>For very large teams and business-critical projects, npm Enterprise delivers features that 
             organizations with hundreds of developers need, like SSO and enhanced security.</p>
     </div>
-    <div>
+    <div class="links-to-product-dept-info2">
+        <img src="./images/npm-audit.svg" alt="zero-configuration-img">
         <h3>npm PkgSafe</h3>
         <p>Our security team's unique insights into JavaScript vulnerabilities and threats are 
             delivered as free and premium features, as well as services for resellers and others.</p>
     </div>
 </section>
-
-<footer>
-
-</footer>
+<div class="create-org-container"><a class="org-button" href="#">Create an Org</a></div>
 </body>
 </html>
