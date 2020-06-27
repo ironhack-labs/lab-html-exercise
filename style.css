@@ -1,0 +1,212 @@
+/*for header:
+    label color: rgba(0,0,0,.05)
+    input color: rgba(0,0,0,.05)
+    button background color: #fb3e44
+*/
+
+/*for main
+    background color: rgba(232,217,217,.3)
+    "See plans" button background color: #FB3B49
+    "See plans" button box shadow: 8px 8px 0 rgba(251,59,73,.2)
+*/
+
+/*for more-info
+    heading background color: rgba(255,204,53,.4)
+*/
+
+/*for specs
+    headings color: #ED1C24
+    "Create an Org" box shadow: 8px 8px 0 rgba(128,83,35,.2)
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,800;1,300&display=swap');
+
+body {
+  font-family: 'Poppins';
+  margin: 0 30px 40px;
+}
+
+h1{
+    font-size: 4em;
+    font-weight: 700;
+}
+
+h2{
+    font-size: 2.5em;
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+    font-style: italic;
+}
+
+h3{
+    font-size: 1em;
+    color: #ED1C24;
+}
+
+/*header*/
+
+header > div{
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgrey;
+}
+
+nav{
+    width: 600px;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+}
+
+.blackheart {
+    width: 20px;
+    margin-right: 1rem;
+}
+
+.second-bar{
+    height: 50px;
+}
+
+.npm-logo{
+    width: 60px;
+    margin-right: 1rem;
+}
+
+.search-bar{
+    display: flex;
+    align-items: center;
+}
+
+.lupa{
+    width: 15px;
+    background-color: rgb(0, 0, 0, 0.05);
+    padding: 9px;
+}
+
+.search-bar input{
+    background-color: rgb(0, 0, 0, 0.05);
+    width: 1000px;
+    height: 30px;
+    border: none;
+    margin: 0;
+}
+
+.search-bar button{
+    background-color: #fb3e44;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    margin: 0;
+}
+
+.enter-btn a{
+    text-decoration: none;
+    margin: 10px;
+    color: black;
+}
+
+#join{
+    border: 1px solid black;
+    padding: 6px 20px;
+}
+
+
+/*main and more-info*/
+
+main{
+    background-color: rgba(232,217,217,.3);
+}
+
+main, .more-info{
+    height: 600px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*main*/
+
+main article{
+    width: 440px;
+    margin: 0 0 60px;
+}
+
+main a{
+    width: 440px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 15px 55px;
+    margin: auto 20px;
+    
+}
+
+#plans-btn{
+    background-color: #FB3B49;
+    color: white;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+}
+
+#join-btn{
+    background-color: white;
+    color: black;
+}
+
+
+/*more-info section*/
+
+#hexagon{
+    width: 250px;
+    margin-bottom: 30px;
+}
+
+.more-info p{
+    width: 740px;
+}
+
+/*specs section*/
+
+.specs {
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.specs img{
+    width: 80px;
+}
+
+.specs div{
+    width: 250px;
+}
+
+.create-btn{
+    width: 350px;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    background-color: black;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    padding: 10px;
+    margin: auto;
+}
+
+.create-btn a{
+    color: white;
+    text-decoration: none;
+}
