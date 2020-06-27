@@ -96,9 +96,7 @@ We could try to represent this part of the website with the following:
 
   <div>
     <!-- add logo, search bar and buttons (or links and style them as buttons later) -->
-  </div>
 </header>
-```
 
 When done, you should get something similar to this:
 ![](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_92cd0c6386e916d28cc1621b2eabd35d.png)
