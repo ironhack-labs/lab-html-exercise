@@ -1,110 +1,113 @@
 <!DOCTYPE html>
-<html>
     <head>
         <title>npm | build amazing things</title>
-        <meta charset="UFT-8"/>
+        <meta charset="UFT-8">
         <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
         <header>
-            <!-- Nav Bar -->
+            <!-- Div nifty and Nav -->
             <div>
                 <div>
-                <img class="black-heart" src="/images/black-heart.png" alt="black heart">
+                    <img class ="black-heart" src="images/black-heart.png" alt="black heart">
                     <span>Nifty Penguin Magic</span>
                 </div>
+
                 <nav>
                     <ul>
-                        <li><a href="#npm-enterprise"> npm Enterprise </a></li>
-                        <li><a href="#products"> Products </a>
-                        <li><a href="#solutions"> Solutions </a></li>
-                        <li><a href="#resources"> Resources </a></li>
-                        <li><a href="#docs"> Docs </li>
-                        <li><a href="#support"> Support </a></li>
+                        <li><a href="#">npm Enterprise</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">Solutions</a></li>
+                        <li><a href="#">Resources</a></li>
+                        <li><a href="#">Docs</a></li>
+                        <li><a href="#">Support</a></li>
                     </ul>
                 </nav>
             </div>
             
-            <!-- Search bar -->
-            <div id="search-bar">
-                <img class="navbar-logos" src="/images/npm-logo.png" alt="npm logo">
-                <img class="navbar-logos" src="images/magnifying-glass.png" alt="magnifying glass">
-                <form class="form">
-                    <input type="text" placeholder="Search packages">
-                    <button> Search </button>
+            <!-- Search bar div -->
+            <div class="search-bar">
+                <img class="npm-logo" src="images/npm-logo.png" alt="npm logo"> 
+                <img class="mag-glass" src="images/magnifying-glass.png" alt="magnifying glass">
+
+                <form>
+                    <input type="text" name="search" placeholder="Search packages">
+                    <button type="submit">Search</button>
                 </form>
-                <button class="border-button"> Join </button>
-                <button class="white-button"> Log In </button>
-            </div>
+
+                <div>
+                    <a class="join" href="#">Join</a>
+                    <a class="log-in" href="#">Log In</a>
+                </div>
+            </div>       
         </header>
 
-        <!-- Section 1: npm Enterprise-->
-        <section id="npm-enterprise">
-            <h1> Build amazing things </h1>
-            <p>
-                Essential JavaScript development tools that help you go to market faster and build
-                powerful applications using modern open source code.
-            </p>
+        <!-- Section 1 -->
+        <section id="build-amazing-things">
+            <h1>Build amazing things</h1>
+            <article> 
+                Essential JavaScript development tools that help you go to market faster and build powerful applications using
+                modern open source code.
+            </article>
 
-            <div id="enterprise-buttons">
-                <button class="red-button"> See Plans </button>
-                <button class="white-button"> Join for free </button>
+            <div class="s1-buttons">
+                <a class="see-plans" href="#">See plans</a>
+                <a class="join-for-free" href="#">Join for free</a>
             </div>
         </section>
 
-        <!-- Section 2: Products Section-->
-        <section id="products">
-            <img src="images/triangle-hexagon.svg" alt="triangle-hexagon">
-            <h3> Bring the best open source to your company </h3>
+        <!-- Section 2 -->
+        <section id="bring-the-best">
+            <img class="hexagon" src="images/triangle-hexagon.svg" alt="hexagon">
+            <h2>Bring the best of open source to your company</h2>
             <article>
-                <p> 
-                    npm is the tool used by over 11,000,000 JavaScript developers around the world. Your 
-                    developers already use it. Your company depends on it. Create an Org and get more out 
-                    of the tools your team already knows and loves.
-                </p>
+                npm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers already use it. Your 
+                company depends on it. Create an Org and get more out of the tools your team already knows and loves.
             </article>
         </section>
 
-        <!-- Section 3: Solutions -->
+        <!-- Section 3 -->
         <section id="solutions">
-            <div id="zero-configuration">
-                <img src="images/zero-configuration.svg" alt="zero-configuration">
-                <h4> Zero configuration </h4>
-                <p>
-                    Create an org, add your team, and start collaborating. Nothing to configure, set up, or manage.
-                </p>
-            </div>
 
-            <div id="team-management">
-                <img src="images/team-management.svg" alt="team-management">
-                <h4> Team management </h4>
-                <p>
-                    Control who has access to what modules within your team namespace using straightforward 
-                    team management capabilities.
-                </p>
-            </div>
+            <div class="sol-versions"> 
 
-            <div id="familiar-features">
-                <img src="images/familiar-features.svg" alt="familiar-features">
-                <h4> Familiar features </h4>
-                <p>
-                    npm Orgs has 100% parity with all the public npm registry features your developers already use. 
-                </p>
-            </div>
+                <div class="card">
+                    <img src="images/zero-configuration.svg" alt="zero configuration">
+                    <h4>Zero configuration</h4>
+                    <p>Create an org, add your team, and start collaborating. Nothing to configure, set up, or manage.</p>
+                </div>
 
-            <div id="npm audit">
-                <img src="images/npm-audit.svg" alt="npm-audit">
-                <h4> npm audit </h4>
-                <p>
-                    Enjoy the security auditing features built into the npm client, a zero-friction way to make open 
-                    source software safer.  
-                </p>
-            </div>
+                <div class="card">
+                    <img src="images/team-management.svg" alt="team management">
+                    <h4>Team management</h4>
+                    <p>
+                        Control who has access to what modules within your team namespace using straightforward team management
+                        capabilities.
+                    </p>
+                </div>
 
-            <button class="black-button">Create an Org</button>
+                <div class="card">
+                    <img src="images/familiar-features.svg" alt="familiar features">
+                    <h4>Familiar features</h4>
+                    <p>
+                        npm Orgs has 100% parity with all the public npm registry features your developers already use.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <img src="images/npm-audit.svg" alt="npm audit"> 
+                    <h4>npm audit</h4>
+                    <p>
+                        Enjoy the security auditing features built into the npm client, a zero-friction way to make open source 
+                        software safer.
+                    </p>
+                </div>
+            </div>
+            <div class="create-an-org">
+                <a href="#">Create an Org</a>
+            </div>
+            
         </section>
 
-
     </body>
-</html>

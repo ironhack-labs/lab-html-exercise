@@ -1,14 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
 body {
-  font-family: "Poppins";
+  font-family: 'Poppins', sans-serif;
 }
 
-h1 {
-    font-size: 80px;
+a {
+    text-decoration: none;
+    color:black;
 }
 
-/* Header */
+/* HEADER */
+
 header > div {
     padding: 0 25px;
     display: flex;
@@ -21,66 +23,165 @@ nav {
     width: 600px;
 }
 
-nav ul {
-    list-style: none;
+ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-nav a {
-    text-decoration: none;
-    color: black;
+    list-style: none;
 }
 
 .black-heart {
     width: 20px;
-    margin-right: 1rem;
+    margin-right: 1em;
 }
 
-#search-bar{
-    height: 
+.search-bar {
+    padding: 5px 12px 5px 20px;
+    justify-content: center;
 }
 
- .form {
-    color: rgba(0,0,0,.05);
- }
+input {
+    background-color: rgba(0,0,0,.05);
+    color: rgba(0,0,0,.5);
+    width: 1000px;
+    padding: 10px;
+    border: none;
+}
 
- .form input{
-     color: rgba(0,0,0,.05);
- }
+form {
+    display: flex;
+}
 
- .form button{
-     background-color: #fb3e44;
-     color: white;
-     margin-left:0;
+form button {
+    background-color: #fb3e44;
+    color: white;
+    padding: 10px 15px;
+    margin-right: 20px;
+    border: none;
+}
 
- }
+.npm-logo {
+    width: 70px;
+    margin-right: 10px;
+}
 
- .border-button {
-     background-color: transparent;
-     border-width: 1px;
- }
+.mag-glass {
+    width: 18px;
+    height: 18px;
+    background-color: rgba(0,0,0,.05);
+    padding: 8.5px;
+}
 
- /* Section 1 Npm Enterprise */
+.join {
+    border: 1px solid gray;
+    padding: 2px 12px;
+    margin-right: 20px;
+}
 
- #npm-enterprise {
-     display: flex;
-     justify-content: center;
-     flex-direction: column;
-     align-items: center;
-     height: 600px;
-     background-color: rgba(232,217,217,.3);
- }
+.log-in {
+    padding: 2px 10px;
+}
 
+/* SECTION 1 */
 
-.red-button{
-     background-color: #FB3B49;
-     box-shadow: 8px 8px 0 rgba(251,59,73,.2);
-     color: white;
- }
+#build-amazing-things {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 600px;
+    background-color: rgba(232,217,217,.3);
+}
 
- .white-button {
-     border: none;
-     background-color: transparent;
- }
+h1 {
+    font-size: 80px;
+}
+
+#build-amazing-things article {
+    width: 430px;
+    text-align: center;
+}
+
+.s1-buttons {
+    margin: 10px;
+    padding: 40px;
+}
+
+.see-plans {
+    color: white;
+    background-color: #FB3B49;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+    padding: 10px 40px;
+    margin: 15px;
+}
+
+.join-for-free {
+    background-color: white;
+    color: black;
+    padding: 10px 40px;
+    margin: 15px;
+}
+
+/* SECTION 2 */
+
+#bring-the-best {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding: 60px;
+}
+
+.hexagon {
+    height: 200px;
+    margin-bottom: 30px;
+}
+
+h2 {
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+    font-style: italic;
+    padding: 0px 20px;
+}
+
+#bring-the-best article {
+    width: 780px;
+    text-align: center;
+}
+
+/* SECTION 3 */
+
+#solutions {
+    padding: 100px 100px 30px 100px;
+}
+
+#solutions img {
+    height: 40px;
+}
+
+.sol-versions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+h4 {
+    color: #ED1C24;
+}
+
+.create-an-org {
+    display: flex;
+    justify-content: center;
+}
+
+.create-an-org a {
+    background-color: black;
+    color:white;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    padding: 10px 90px;
+}
+
+.card {
+    width: 250px;
+}
