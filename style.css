@@ -1,0 +1,275 @@
+  /* ---------------------------------------------------------------
+  ----------------------------- GLOBAL --------------------------
+  ------------------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body {
+  font-family: 'Poppins';
+}
+
+/* -----Colors -----
+red color: #FB3B49
+section1 background color:  rgba(232,217,217,.3)
+box-shadoow red:  rgba(251,59,73,.2);
+yellow color: rgba(255,204,53,.4);
+black shadow color: rgba(128,83,35,.2);
+*/
+
+  /* ---------------------------------------------------------------
+  ----------------------------- HEADER -----------------------------
+  ------------------------------------------------------------------*/
+
+
+header > div {
+    padding: 0 25px;
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    border-bottom: 1px solid lightgray;
+    height:55px;
+   
+  }
+
+  
+nav {
+    min-width: 600px;
+    
+  }
+  
+nav ul {
+    list-style:none;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    }
+  
+nav a {
+    text-decoration:none;
+    color:black;
+    margin:0px 7px;
+  }
+  
+.blackHeart {
+    width: 20px;
+    margin-right: 10px;
+  }
+  
+.logo {
+    width: 80px;
+    margin-right: 10px;
+  }
+  
+form .search-bar {
+     display: flex;
+     height:40px;
+     margin-right: 10px;
+  }
+  
+form{
+     width:100%;
+  }
+
+.magnifying-glass {
+    width: 20px;
+    display:none;
+}
+
+
+form input {
+    background-color: rgba(0,0,0,.05);
+    background-image:url(images/magnifying-glass.png); 
+    background-size: 15px;
+    background-repeat: no-repeat; 
+    background-position: 10px;
+    width: 100%;
+    padding-left:40px;
+    padding-right:30px;
+    font-size:15px;
+    letter-spacing:.5px;
+    border-style:none;
+  }
+  
+form  button {
+    position:right;
+    flex-direction:flex-end;
+    background-color: #FB3B49;
+    color: white;
+    font-weight:light;
+    border-style:none;
+    padding: 12px 18px;
+  
+  }
+
+.search-links {
+    min-width:200px;
+}
+
+.join {
+    color: black;
+    text-decoration: none;
+    padding: 3px 15px;
+    border: 1px solid lightgray;
+}
+
+.login {
+    color: black;
+    text-decoration: none;
+    margin: 0 0 0 10px;
+}
+
+
+  /* ---------------------------------------------------------------
+  ----------------------------- SECTION 1 --------------------------
+  ------------------------------------------------------------------*/
+#section1 {
+    display: flex; 
+    height:600px;
+    background-color: rgba(232,217,217,.3);
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+    flex-wrap:wrap;
+  }
+
+h1 {
+    font-size:5em;
+    text-align: center;
+    width:900px;
+    height: 90px;
+    margin-bottom:60px;
+  }
+  
+.description {
+    max-width:450px;
+    text-align:center;
+    height: 50px;
+    flex-wrap:wrap;
+  }
+  
+  
+.section1-btn {
+    display: flex; 
+    min-width:270px;
+  
+  }
+  
+  
+.plans-btn {
+    background-color: #FB3B49;
+    box-shadow:8px 8px 0 rgba(251,59,73,.2);
+    color: white;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    text-align: center;
+    text-decoration: none;
+    padding: 12px 50px;
+    margin: 100px 15px;
+  }
+  
+.join-btn {
+    background-color: white;
+    color:black;
+    font-weight:900;
+    letter-spacing: 0.5px;
+    text-align: center;
+    text-decoration: none;
+    padding: 12px 50px;
+    margin: 100px 15px;
+  }
+
+/* ---------------------------------------------------------------
+ ----------------------------- SECTION 2 --------------------------
+------------------------------------------------------------------*/
+
+#section2 {
+    height:600px;
+    display: flex;
+    justify-content:center;
+    flex-direction:column;
+    align-items:center;
+    text-align: center;
+  
+  }
+  
+.hexagon-img {
+    width: 275px;
+    padding: 20px 0px;
+  }
+  
+.npm-explanation {
+    font-family: 'Poppins';
+    font-size:14px;
+    width:700px;
+  }
+  
+#features {
+     display:flex;
+     flex-direction:column;
+     align-items:center;
+  }
+  
+  h3 {
+    width:900px;
+     font-family: 'Poppins';
+     font-style: italic;
+     font-size:32px;
+     height: 20px;
+     background-color: rgba(255,204,53,.4);
+     transform: skew(9deg,0deg);
+     margin:50px 0px 20px 0px;
+     padding: 0px 20px 15px 20px;
+ }
+
+ /* ---------------------------------------------------------------
+  ----------------------------- SECTION 3 --------------------------
+  ------------------------------------------------------------------*/
+
+#section3 {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+ }
+
+ #section3 div{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    align-content:space-between;
+    margin-left: 150px;  
+    margin-right: 150px;  
+  }
+
+  #section3 article{
+     display:flex;
+     flex-direction:column;
+     align-items:center;
+  }
+
+#section3 h4 {
+    color: #FB3B49;
+  }
+  
+.features p {
+    font-size:14px;
+    width:200px;
+  }
+  
+.section3-images {
+    width: 35px;
+  
+  }
+
+.btn-org {
+    width:200px;
+    background-color: black;
+    text-decoration: none;
+    box-shadow:8px 8px 0 rgba(128,83,35,.2);
+    color: white;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    text-align: center;
+    text-decoration: none;
+    padding: 12px 50px;
+    margin: 50px 100px
+}
