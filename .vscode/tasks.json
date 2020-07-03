@@ -1,0 +1,32 @@
+{
+	// See https://go.microsoft.com/fwlink/?LinkId=733558
+	// for the documentation about the tasks.json format
+	"version": "2.0.0",
+	"tasks": [
+        {
+            "type": "shell",
+            "label": "run_notworking1",
+            "command": "python",
+            "args": [
+                "Program.py"
+            ],
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "type": "shell",
+            "label": "run_notworking2",
+            "command": "python ${relativeFile}",
+            "problemMatcher": []
+        },
+        {
+            "type": "shell",
+            "label": "run_working",
+            "command": "python Program.py",
+            "problemMatcher": []
+        }
+    ]
+}
