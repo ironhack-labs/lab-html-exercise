@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Poppins");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap");
 
 html,
 body {
@@ -8,7 +8,7 @@ body {
   font-family: "Poppins";
 }
 
-header > div {
+header>div {
   padding: 0 25px;
   display: flex;
   justify-content: space-between;
@@ -17,7 +17,7 @@ header > div {
   font-size: 1em;
 }
 
-.search-bar {
+.search-navbar {
   box-shadow: 0 4px 13px -3px rgba(0, 0, 0, 0.10196);
   box-sizing: border-box;
   height: 56px;
@@ -50,7 +50,7 @@ form {
   box-sizing: border-box;
   border: 0;
   display: flex;
-  width: 82%;
+  width: 83%;
   font-size: 1em;
   font-weight: 300;
   position: absolute;
@@ -105,4 +105,58 @@ form button {
   border: 1px solid rgb(154, 154, 154);
   padding: 4px 16px;
   margin-right: 16px;
+}
+
+#section-1 {
+  height: 600px;
+  background-color: rgba(232, 217, 217, 0.3);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+#section-1 h1 {
+  font-size: 80px;
+  font-weight: 600;
+}
+
+#section-1 a {
+  padding: 20px 20px;
+  height: 22px;
+  width: 210px;
+  border: none;
+  font-size: 22px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#section-1 article {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  width: 29%;
+  text-align: center;
+}
+
+#red-btn {
+  background-color: #fb3b49;
+  color: white;
+  box-shadow: 8px 8px 0 rgba(251, 59, 73, 0.2);
+  margin-right: 42px;
+}
+
+#white-btn {
+  background-color: white;
+  color: black;
+}
+
+.section1-btn {
+  display: flex;
+  text-align: center;
+  margin: 64px 0px;
+}
+
+.section1-btn a:hover {
+  opacity: 0.5;
 }
