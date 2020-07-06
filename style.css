@@ -121,7 +121,7 @@ form button {
   font-weight: 600;
 }
 
-#section-1 a {
+.btn-section a {
   padding: 20px 20px;
   height: 22px;
   width: 210px;
@@ -151,14 +151,19 @@ form button {
   color: black;
 }
 
-.section1-btn {
+.btn-section {
   display: flex;
+  flex-direction: row;
   text-align: center;
   margin: 64px 0px;
 }
 
-.section1-btn a:hover {
+.btn-section a:hover {
   opacity: 0.5;
+}
+
+#red-btn:hover {
+  box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.0);
 }
 
 #section-2 {
@@ -179,7 +184,6 @@ form button {
   width: 921px;
   text-align: center;
   margin-top: 60px;
-
 }
 
 #section-2 article {
@@ -192,4 +196,73 @@ form button {
 
 .triangle-hexagon {
   width: 256px;
+}
+
+.features {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+
+#section-3 img {
+  height: 32px;
+}
+
+#section-3 h3 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+  color: #ed1c24;
+  margin: 16px 0 32px 0;
+}
+
+#section-3 p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.features div {
+  width: 14%;
+  height: 70%;
+  margin: 0 32px;
+
+
+}
+
+.btn-section3 {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+
+}
+
+
+#create-btn {
+  align-self: center;
+  background-color: #000000;
+  color: white;
+  box-shadow: 8px 8px 0 rgba(128, 83, 35, 0.2);
+  width: 24%;
+  padding: 20px 20px;
+  height: 22px;
+  border: none;
+  font-size: 22px;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+
+}
+
+
+#create-btn:hover {
+  box-shadow: 8px 8px 0 #ffff;
 }
