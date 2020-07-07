@@ -8,46 +8,68 @@ body {
 
 #pun-and-nav {
 	display: flex;
-	flex-direction: row;
-	justify-content: flex-end;
 	align-items: center;
+	justify-content: space-between;
 	margin: 0 auto;
+}
+
+aside {
+	width: 750px;
 }
 
 .nav-bar ul {
 	display: flex;
 	justify-content: flex-end;
+	list-style: none;
 }
 
 .nav-bar ul li {
-	list-style: none;
 	margin-right: 20px;
 }
 
-.nav-bar ul li a, #search-bar a {
+.nav-bar a, #search-bar a {
 	text-decoration: none;
 	color: black;
 }
 
 aside img {
-	height: 10px;
+	width: 20px;
+	margin-right: 10px;
 }
 
 #search-bar {
 	display: flex;
+	align-items: center;
 }
 
 #search-bar img {
-	height: 20px;
+	height: 30px;
+	padding: 10px;
+	margin-right: 5px;
 }
 
 #search {
-	background-color: lightgrey;
+	background-color: #f2f2f2;
+	display: flex;
+	align-items: center;
+	font-size: 1.2em;
+	margin: 0 20px;
 }
 
 #search form input {
-	background-color: none;
-	width: 700px;
+	background-color: transparent;
+	width: 900px;
+	font-size: 1em;
+	box-shadow: none;
+	border: none;
+}
+
+#search form button {
+	color: white;
+	background-color: #fb3e44;
+	padding: 10px;
+	font-size: 0.9em;
+
 }
 
 #join {
