@@ -1,9 +1,11 @@
 
-@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 body {
   font-family: 'Poppins';
 }
+
+/*Header (Nav- and search bar) */
 
 header > div {
     padding: 0 25px;
@@ -92,4 +94,52 @@ nav a {
 #magnifyingGlass {
     width: 20px;
     padding: 0 10px;
+}
+
+/* Start of Section 1 */
+
+#first-pitch-container {
+    display: flex;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(232,217,217,.3);
+}
+
+#first-pitch-container h1 {
+    font-size: 80px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+#first-pitch-container > div {
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+#first-pitch-container p {
+    font-size: 20px;
+    margin: 30px;
+}
+
+#first-pitch-container a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 20px 70px;
+    margin: 20px 0 0 0;
+}
+
+#plans-button {
+    background-color: #FB3B49;
+    color: white;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+}
+
+#join-for-free-button {
+    background-color: white;
+    color: black;
 }
