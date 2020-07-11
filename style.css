@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap');
+
 
 body {
 	font-family: Poppins;
@@ -30,6 +32,10 @@ aside {
 .nav-bar a, #search-bar a, .links {
 	text-decoration: none;
 	color: black;
+}
+
+input {
+	font-family: Fira Mono, monospace;
 }
 
 aside img {
@@ -145,10 +151,42 @@ h2 {
 	background-color: #ffebb5;
 	width: 1000px;
 	height: 50px;
-	transform: skew(10deg);
+	transform: skew(9deg);
 }
 
+#detail-articles {
+	display: flex;
+	justify-content: space-between;
+}
 
+article {
+	width: 300px;
+}
+
+article img {
+	width: 50px;
+}
+
+h3 {
+	color: #ed1c24;
+	margin-bottom: 30px;
+}
+
+#org-link {
+	display: flex;
+	justify-content: center;
+	background-color: #000;
+	width: 400px;
+	padding: 15px 0;
+	box-shadow: 8px 8px 0 rgba(128,83,35,0.2);
+	margin: auto;
+	margin-top: 50px;
+}
+
+#org-link a {
+	color: #fff;
+	font-weight: bold;
+}
 
 
 
