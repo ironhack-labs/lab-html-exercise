@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>npm | build amazing things</title>
 	<link rel="stylesheet" href="style.css" />
+	<link rel="stylesheet" href="utilities.css">
 </head>
 
 <body>
@@ -31,15 +32,21 @@
 				<img src="images/npm-logo.png" alt="npm logo" />
 			</div>
 			<div id="search-box">
-				<span>
-					<img src="images/magnifying-glass.png" alt="search icon" />
-				</span>
-				<input type="search" name="search" placeholder="Search packages" />
-				<button type="submit" class="btn-search">Search</button>
+				<form id="search" action="/search" method="GET">
+					<div id="search-box-content">
+						<span>
+							<img src="images/magnifying-glass.png" alt="search icon" />
+						</span>
+						<input type="search" name="search" placeholder="Search packages" />
+						<button type="submit" class="s primary">Search</button>
+					</div>
+				</form>
 			</div>
 			<div id="authentification">
-				<a href="#" class="btn-signup">Sign Up</a>
-				<a href="#">Sign In</a>
+				<div id="authentification-content">
+					<a href="#" class="s inline mr-m">Sign Up</a>
+					<a href="#">Sign In</a>
+				</div>
 			</div>
 		</div>
 	</header>
