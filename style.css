@@ -43,24 +43,35 @@ header {
 }
 
 nav {
+	border-bottom: 1px solid lightgray;
+}
+
+#nav-content {
 	padding: 0 25px;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	border-bottom: 1px solid lightgray;
 }
 
 nav ul {
-	width: 600px;
 	list-style: none;
 	display: flex;
-	justify-content: space-between;
 	align-items: center;
+	padding: 0px;
 }
 
 nav a {
 	text-decoration: none;
 	color: black;
+}
+
+nav span {
+	flex-grow: 1;
+	min-width: 15em;
+}
+
+nav li {
+	flex-shrink: 0;
 }
 
 header nav img {
