@@ -4,53 +4,56 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="./node_modules/normalize.css/normalize.css">
   <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
 
 
-  <nav class="grid">
-    <ul class="grid top-nav align">
-      <li><img src="./images/black-heart.png" alt="black-heart" id="heart"></li>
-      <li>Nifty Penguin Magic</li>
-      <li>npm Enterprise</li>
-      <li>Products</li>
-      <li>Solutions</li>
-      <li>Resources</li>
-      <li>Docs</li>
-      <li>Support</li>
-    </ul>
-    <div class="grid bottom-nav align">
-      <div><img src="./images/npm-logo.png" alt="npm-logo" id="logo"></div>
-      <div class="search-bar grid align radius">
-        <img src="./images/magnifying-glass.png" alt="magnifying-glass" id="search">
-        <p>Search packages</p>
+  <nav class="nav-bar flex nowrap column justify">
+    <div class="flex top">
+      <div class="flex align">
+        <img id="heart" src="images/black-heart.png" alt="black heart">
+        <p>Neverending Pun Machine</p>
+      </div>
+      <ul class="flex align links">
+        <li>npm Enterprise</li>
+        <li>Products</li>
+        <li>Solutions</li>
+        <li>Resources</li>
+        <li>Docs</li>
+        <li>Support</li>
+      </ul>
+    </div>
+    <div class="flex bottom align">
+      <img id="logo" src="/images/npm-logo.png" alt="npm-logo">
+      <div class="search-bar flex align">
+        <img src="/images/magnifying-glass.png" alt="magnifying-glass" id="search">
+        <input type="text">
         <button>Search</button>
       </div>
-      <div class="register">
-        <a href="#" class="button highlight align center radius">Join</a>
-        <a href="#" class="button align center radius">Log In</a>
+      <div class="register flex justify align">
+        <a href="#" class="link highlight radius">Join</a>
+        <a href="#" class="link">Log In</a>
       </div>
     </div>
   </nav>
 
 
-  <header class="grid align">
-    <div class="content grid">
+  <header class="flex align center">
+    <div class="content align-center">
       <h1 class="center">Build amazing things</h1>
       <p class="center">Essential JavaScript development tools that help you go to market faster and build powerful applications using modern open source code.</p>
-      <div class="hero-ctas grid">
-        <a href="#" class="button primary align center radius">See plans</a>
-        <a href="#" class="button align center radius">Join for free</a>
+      <div class="hero-ctas flex align-center justify">
+        <a href="#" class="link primary align center radius">See plans</a>
+        <a href="#" class="link align center radius">Join for free</a>
       </div>
     </div>
   </header>
 
 
-  <section class="grid center">
-    <div class="content grid">
+  <section class="flex align center">
+    <div class="content align-center">
       <img src="./images/triangle-hexagon.svg" alt="triangle-hexagon">
       <h2>Bring the best of open source to your company</h2>
       <p>npm is the tool used by
@@ -60,34 +63,33 @@
   </section>
 
 
-  <section class="grid">
-    <div class="usps content grid">
-    <div class="grid usp">
-      <img src="./images/zero-configuration.svg" alt="zero-configuration">
-      <h3>Zero configuration</h3>
-      <p>your team, and start collaborating. Nothing to configure, set up, or manage.</p>
+  <section class="justify-around align-center flex column">
+    <div class="usps grid flex row align-center">
+      <div class="grid usp">
+        <img src="./images/zero-configuration.svg" alt="zero-configuration">
+        <h3>Zero configuration</h3>
+        <p>your team, and start collaborating. Nothing to configure, set up, or manage.</p>
+      </div>
+      <div class="grid usp">
+        <img src="/images/team-management.svg" alt="team-management">
+        <h3>Team management</h3>
+        <p>Control who has access to
+          what modules within your team namespace using straightforward team management capabilities.</p>
+      </div>
+      <div class="grid usp">
+        <img src="./images/familiar-features.svg" alt="">
+        <h3>Familiar features</h3>
+        <p>npm Orgs
+          has 100% parity with all the public npm registry features your developers already use.</p>
+      </div>
+      <div class="grid usp">
+        <img src="./images/npm-audit.svg" alt="npm-audit">
+        <h3>npm audit</h3>
+        <p>Enjoy the security
+          auditing features built into the npm client, a zero-friction way to make open source software safer.</p>
+      </div>
     </div>
-    <div class="grid usp">
-      <img src="/images/team-management.svg" alt="team-management">
-      <h3>Team management</h3>
-      <p>Control who has access to
-        what modules within your team namespace using straightforward team management capabilities.</p>
-    </div>
-    <div class="grid usp">
-      <img src="./images/familiar-features.svg" alt="">
-      <h3>Familiar features</h3>
-      <p>npm Orgs
-        has 100% parity with all the public npm registry features your developers already use.</p>
-    </div>
-    <div class="grid usp">
-      <img src="./images/npm-audit.svg" alt="npm-audit">
-      <h3>npm audit</h3>
-      <p>Enjoy the security
-        auditing features built into the npm client, a zero-friction way to make open source software safer.</p>
-    </div>
-  </div>
-
-  <a href="#" class="black button radius">Create an org</a>
+    <a href="#" class="black button radius align-center">Create an org</a>
   </section>
 
 
