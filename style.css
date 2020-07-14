@@ -1,5 +1,101 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
 body {
-  font-family: 'Poppins';
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;  
+  /* Variables */
+  --lable: rgba(0,0,0,0.05);
+  --input: rgba(0,0,0,0.05);
+  --button-bg: #fb3e44;
+  --button-fg: white;
+}
+
+/* Header and navbar */
+
+header > div {
+  padding: 0 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+}
+
+nav {
+  width: 600px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+.blackHeart {
+  width: 20px;
+  margin-right: 1rem;
+}
+
+#search-bar {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#search-bar>form {
+  display: flex;
+  flex-grow: 2;
+  padding: 0.5rem 0;
+  height: 2rem;
+}
+
+#npm-logo{
+  height: 1rem;
+}
+
+#search-bar form #search {
+  flex-grow: 2;
+  background-color: var(--input);
+  border: none;
+}
+
+#search-bar form #magnifying-glass {
+  height: 1rem;
+  width: 1rem;
+  margin-left: 1rem;
+  padding: 0.5rem;
+  background-color: var(--input);
+}
+
+#search-bar form #magnifying-glass img {
+  height: 1rem;
+}
+
+#search-bar form .button {
+  margin-right: 1rem;
+}
+
+.button {
+  color: black;
+  text-decoration: none;
+  padding: 0.25rem 1rem;  
+}
+
+.button:hover {
+  background-color: black;
+  color: white;
+}
+
+.button:first-child {
+  border: 1px solid black;
+  border-radius: 2px;
+}
+
+.red {
+  border: none;
+  background-color: var(--button-bg);
+  color: var(--button-fg);
 }

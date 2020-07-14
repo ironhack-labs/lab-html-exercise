@@ -10,9 +10,11 @@
 <body>
   <header>
     <div>
-      <nav>
+      <div>
         <img class='blackHeart' src='./images/black-heart.png' alt='black heart icon'>
         <span>NPM Clone Nifty Penguin Magic</span>
+      </div>
+      <nav>
         <ul>
           <li><a href='#'>npm Enterprise</a></li>
           <li><a href='#'>Products</a></li>
@@ -21,28 +23,41 @@
           <li><a href='#'>Docs</a></li>
           <li><a href='#'>Support</a></li>
         </ul>
-        <img src='./images/npm-logo.png' alt='npm logo'>
-        <img src='./images/magnifying-glass.png' alt='magnifying glass'>
-        <input type='text' name='search' id='search'>
-        <a href='#'>Search</a>
-        <a href='#'>Join</a>
-        <a href='#'>Log In</a>
       </nav>
     </div>
-    <h1>Build amazing things</h1>
-    <p>Essential JavaScript development tools that help you go to market faster and build powerful applications using
-modern open source code.</p>
-    <a href='#'>See plans</a>
-    <a href='#'>Join for free</a>
+    <div id='search-bar'>
+      <img id='npm-logo' src='./images/npm-logo.png' alt='npm logo'>
+
+      <form action=''>
+        <div id='magnifying-glass'>
+          <img src='./images/magnifying-glass.png' alt="">
+        </div>
+        <input type='text' name='search' id='search'>
+        <button type='submit' value='search' class='button red'>Search</button>
+      </form>
+      <div>
+        <a href='#' class='button'>Join</a>
+        <a href='#' class='button'>Log In</a>
+      </div>
+    </div>
   </header>
   <main>
+    <section id='intro-section'>
+      <h1>Build amazing things</h1>
+      <article>Essential JavaScript development tools that help you go to market faster and build powerful applications using
+  modern open source code.</article>
+      <div>
+        <a href='#'>See plans</a>
+        <a href='#'>Join for free</a>  
+      </div>
+    </section>
     <section id='main-section'>
       <img id='hexagon' src='./images/triangle-hexagon.svg' alt=''>
       <h2>Bring the best of open source to your company</h2>
-      <p>
+      <article>
         npm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it.
         Create an Org and get more out of the tools your team already knows and loves.
-      </p>
+      </article>
     </section>
     <section id='feature-section'>
       <article class='feature'>
