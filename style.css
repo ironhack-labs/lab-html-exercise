@@ -12,6 +12,10 @@ body {
   --intro-bg: rgba(232,217,217,.3);
   --main-bg: white;
   --main-header-bg: rgba(255,204,53,.4);
+  --feature-button-bg: black;
+  --feature-button-sh: rgba(128,83,35,.2);
+  --feature-button-fg: white;
+  --feature-header-fg: #ed1c24;
   --see-plans-button-bg: #fb3b49;
   --see-plans-button-sh: rgba(251,59,73,.2);
 }
@@ -86,6 +90,10 @@ nav a {
   margin: -0.25rem 0;
 }
 
+.nav-btn {
+  font-weight: bold;
+}
+
 .nav-btn,
 .button {
   color: black;
@@ -95,6 +103,11 @@ nav a {
 
 .button {
   padding: 0.5rem 2rem;
+}
+
+#intro-section .button {
+    background-color: white;
+  margin: 0 1rem;
 }
 
 .nav-btn:hover,
@@ -112,10 +125,10 @@ nav a {
 }
 
 .button.big {
-  padding: 1rem 3rem;
+  padding: 1rem 4rem;
 }
 
-.button.shadow {
+#intro-section .button.shadow {
   background-color: var(--see-plans-button-bg);
   box-shadow: 8px 8px 0 var(--see-plans-button-sh);
 }
@@ -139,12 +152,15 @@ nav a {
 
 #intro-section h1 {
   font-size: 4rem;
+  font-weight: bold;
+  margin: 0;
 }
 
 #intro-section article {
   width: 400px;
   padding: 1rem;
   text-align: center;
+  margin: 2rem 0;
 }
 
 #intro-section div {
@@ -171,4 +187,45 @@ nav a {
 #main-section article {
   width: 50%;
   text-align: center;
+}
+
+/* Section-3 */
+
+#feature-section {
+  display: flex;
+  flex-direction: column;
+  padding: 0 3rem;
+}
+
+#feature-section .features {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+#feature-section .features>.feature {
+  padding: 0 2rem;
+}
+
+#feature-section .features>.feature h4 {
+  color: var(--feature-header-fg);
+}
+
+#feature-section .features img {
+  height: 2rem;
+}
+
+#feature-section .button.shadow {
+  margin: 3rem 0;
+  width: 300px;
+  align-self: center;
+  text-align: center;
+  background-color: var(--feature-button-bg);
+  box-shadow: 8px 8px 0 var(--feature-button-sh);
+  color: var(--feature-button-fg);
+}
+
+/* Footer */
+footer {
+  margin: 7rem 0;
 }
