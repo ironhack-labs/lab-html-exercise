@@ -78,19 +78,28 @@ nav a {
   margin-right: 1rem;
 }
 
+.nav-btn,
 .button {
   color: black;
   text-decoration: none;
-  padding: 0.25rem 1rem;  
+  transition: all 0.25s;
+}
+.button {
+  padding: 0.25rem 1rem;
 }
 
-.button:hover {
-  background-color: black;
-  color: white;
+.nav-btn:hover,
+.button:hover, 
+.button:first-child:hover {
+  color: lightgray;
+  border-color: lightgray;
+
 }
 
 .button:first-child {
-  border: 1px solid black;
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
   border-radius: 2px;
 }
 
