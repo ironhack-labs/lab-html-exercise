@@ -1,12 +1,19 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
 body {
+  padding: 0;
+  margin: 0;
   font-family: 'Poppins', Arial, Helvetica, sans-serif;  
   /* Variables */
   --lable: rgba(0,0,0,0.05);
   --input: rgba(0,0,0,0.05);
-  --button-bg: #fb3e44;
-  --button-fg: white;
+  --search-button-bg: #fb3e44;
+  --search-button-fg: white;
+  --intro-bg: rgba(232,217,217,.3);
+  --main-bg: white;
+  --main-header-bg: rgba(255,204,53,.4);
+  --see-plans-button-bg: #fb3b49;
+  --see-plans-button-sh: rgba(251,59,73,.2);
 }
 
 /* Header and navbar */
@@ -48,34 +55,35 @@ nav a {
 #search-bar>form {
   display: flex;
   flex-grow: 2;
-  padding: 0.5rem 0;
+  margin: 1rem 2rem;
+  padding: 0.25rem 0;
   height: 2rem;
+  background-color: var(--input);
 }
 
 #npm-logo{
-  height: 1rem;
+  height: 1.5rem;
 }
 
 #search-bar form #search {
   flex-grow: 2;
-  background-color: var(--input);
+  background-color: transparent;
   border: none;
 }
 
 #search-bar form #magnifying-glass {
-  height: 1rem;
-  width: 1rem;
-  margin-left: 1rem;
-  padding: 0.5rem;
-  background-color: var(--input);
+  height: 1.5rem;
+  width: 1.5rem;
+  margin-left: 0.25rem;
+  padding: 0.25rem;
 }
 
 #search-bar form #magnifying-glass img {
-  height: 1rem;
+  height: 1.5rem;
 }
 
 #search-bar form .button {
-  margin-right: 1rem;
+  margin: -0.25rem 0;
 }
 
 .nav-btn,
@@ -84,27 +92,83 @@ nav a {
   text-decoration: none;
   transition: all 0.25s;
 }
+
 .button {
-  padding: 0.25rem 1rem;
+  padding: 0.5rem 2rem;
 }
 
 .nav-btn:hover,
 .button:hover, 
-.button:first-child:hover {
+.button.boarderd:hover {
   color: lightgray;
   border-color: lightgray;
-
 }
 
-.button:first-child {
+.button.boarderd {
   border-width: 1px;
   border-style: solid;
   border-color: black;
   border-radius: 2px;
 }
 
+.button.big {
+  padding: 1rem 3rem;
+}
+
+.button.shadow {
+  background-color: var(--see-plans-button-bg);
+  box-shadow: 8px 8px 0 var(--see-plans-button-sh);
+}
+
 .red {
   border: none;
-  background-color: var(--button-bg);
-  color: var(--button-fg);
+  background-color: var(--search-button-bg);
+  color: var(--search-button-fg);
+}
+
+/* Section 1 */
+#intro-section,
+#main-section {
+  height: 600px;
+  background-color: var(--intro-bg);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+#intro-section h1 {
+  font-size: 4rem;
+}
+
+#intro-section article {
+  width: 400px;
+  padding: 1rem;
+  text-align: center;
+}
+
+#intro-section div {
+  margin: 1rem;
+}
+
+/* Section 2 */
+#main-section  {
+  background-color: var(--main-bg);
+}
+
+#hexagon {
+  width: 200px;
+}
+
+#main-section h2 {
+  font-size: 2rem;
+  background-color: var(--main-header-bg);
+  transform: skew(9deg, 0deg);
+  font-style: italic;
+  padding: 0 2rem;
+}
+
+#main-section article {
+  width: 50%;
+  text-align: center;
 }
