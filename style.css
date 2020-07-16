@@ -1,11 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
 * {
     margin: 0;
     padding: 0;
   }
 
 body {
-    font-family: verdana, sans-serif;
-    padding: 10px 0 50px 0;
+    font-family: 'Poppins', verdana, sans-serif;
+    padding: 0px 0 50px 0;
 }
 
 ul {
@@ -26,14 +28,15 @@ button {
 
 header {
     margin: 0 30px 0 30px;
-
+    background-color: white;
+    width: 96%;
 }
 
 #header-top {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 15px 10px 15px 10px;
+    padding: 15px 10px 10px 10px;
     border-bottom: 1.2px solid #ededed;
 }
 
@@ -41,16 +44,22 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    font-size: 0.8em;
+    font-weight: bold;
+    margin-right: 18px;
 }
 
 #left-header {
     display: flex;
     flex-direction: row;
-    align-items: center;    
+    align-items: center; 
+    margin-left: 15px;   
 }
 
 #left-header p {
-    margin: 0 15px 0 15px;
+    margin: 0 15px 0 25px;
+    font-size: 0.8em;
+    font-weight: bold;
 }
 
 #left-header img {
@@ -64,12 +73,14 @@ header {
     justify-content: space-evenly;
     align-items: center;
     padding: 7px 0 7px 0;
+    box-shadow: 0px 15px 9px -14px rgba(128,83,35,.2);
 }
 
 #header-bottom img {
     width: 60px;
     height: 20px;
     margin-right: 18px;
+    margin-left: 15px;
 }
 
 .form-search {
@@ -78,7 +89,7 @@ header {
 }
 
 .form-search button {
-    background-color: #fb3b49;
+    background-color: #fb3e44;
     color: white;
     height: 35px;
     width: 75px;
@@ -96,7 +107,7 @@ header {
     border: none;
     background-color: #f2f2f2;
     padding: 2px 10px 2px 10px;
-    width: 800px;
+    width: 850px;
     height: 30px;
 }
 
@@ -113,12 +124,12 @@ header {
 #sec-one {
     display: flex;
     flex-direction: column;
-    background-color: #f8f4f4;
+    background-color:rgba(232,217,217,.3);
     align-items: center;
     justify-content: center;
-    width: auto;
+    width: 96%;
     margin: 0 30px 0 30px;
-    height: 530px;
+    height: 550px;
 }
 
 #sec-two {
@@ -134,15 +145,22 @@ header {
 }
 
 #sec-two h2 {
-    font-size: 2.1em;
-    text-align: center;  
-    background-color: #ffebb5;
-    width: 800px;
+    display: flex;
+    font-size: 2em;
+    justify-content: center;  
+    align-items: center; 
+    background-color: rgba(255,204,53,.4);
+    width: 820px;
+    height: 34px;
+    transform: skew(9deg,0deg);
+    font-style: italic;
+    padding: 6px 0 0 0;
 }
 
 #sec-two p {
     text-align: center;
     margin: 30px 0 30px 0;
+    font-size: 0.9em;
 }
 
 #sec-three {
@@ -153,23 +171,25 @@ header {
 }
 
 #sec-three div {
-    width: 200px;
-    height: 160px;
+    width: 220px;
+    height: auto;
 }
 
 #sec-three h3 {
-    color: red;
-    font-size: 1em;
+    color: #ED1C24;
+    font-size: 0.9em;
     margin: 10px 0 25px 0;
 }
 
 #sec-three p {
     font-size: 0.9em;
+    line-height: 1.5;
 }
 
 footer {
     display: flex;
     justify-content: center;
+    margin: 40px 0 0 0;
 }
 
 footer button {
@@ -180,24 +200,25 @@ footer button {
     font-weight: bold;
     width: 370px;
     height: 55px;
-    box-shadow: 8px 8px 0px -1px #e6dfd7; 
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
 }
 
 h1 {
-    font-size: 5em;
+    font-size: 4.6em;
     margin: 10px;
 }
 
 #sec-one p {
-    font-size: 1.2em;
+    font-size: 1.1em;
     text-align: center;
-    margin: 30px;
+    margin: 30px 30px 60px 30px;
 }
 
 #red-btn {
-    background-color: #fb3b49;
+    background-color: #FB3B49;
     color: white;
-    box-shadow: 8px 8px 0px -1px #F8D0D1; 
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+
 }
 
 #white-btn {
@@ -209,6 +230,7 @@ h1 {
     padding: 15px 50px 15px 50px;
     font-weight: bold;
     font-size: 1.2em;
+    width: 220px;
     margin: 0 20px 0 20px;
 }
 
@@ -216,6 +238,7 @@ h1 {
     background-color: white;
     width: 58px;
     height: 28px;
+    margin-right: 18px;
 }
 
 #join-btn {
