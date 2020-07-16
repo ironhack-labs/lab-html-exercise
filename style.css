@@ -4,7 +4,7 @@ body {
   font-family: 'Poppins';
 }
 
-header > div {
+header > .container1 {
   padding: 0 25px;
   display: flex;
   justify-content: space-between;
@@ -33,30 +33,61 @@ nav a {
   margin-right: 1rem;
 }
 
-.glass {
-  height: 30px;
-  background-color: rgba(0,0,0,.05);
-}
 
 .searchbar {
-  width: auto;
+  margin-top:5px;
+width:80%;
   height: 30px;
   background-color: rgba(0,0,0,.05);
   border-color: rgba(0,0,0,.05);
+background-image: url('images/magnifying-glass.png');
+background-size: contain;
+background-repeat: no-repeat;
+text-indent: 20px
+
 
   }
 
+  :focus {
+  	background-image: none;
+    text-indent: 0px;
+
+  }
   .search {
     height:30px;
+    width:auto;
+    margin-top : 5px;
 background-color :  #fb3e44;
 color: white;
+border-style:none;
+margin-left: -32px;
 
   }
 
   .logo {
+width:auto;
     height:30px;
+    margin: 5px;
   }
 
   .join {
-    width:30px;
+    margin: 5px;
+    border-style: groove;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-color: rgba(0,0,0,.05);
+    text-decoration: none;
+    color: grey;
   }
+.container-search {
+  margin:5px;
+  display:inline-flex;
+  width:100%;
+
+}
+
+.login {
+margin-top : 7px;
+  text-decoration: none;
+  color: grey;
+}
