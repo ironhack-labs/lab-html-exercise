@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
-body{
+html, body{
+    margin: 0 auto;
+    padding: 0;
     font-family: 'Poppins';
 }
 
@@ -34,9 +36,13 @@ header > div{
     border-bottom: 1px solid lightgray;
 }
 
-#search-bar{
-    padding-top: 6px;
-    padding-bottom: 6px;
+header a{
+    text-decoration: none;
+    color: black
+}
+/*#region nav-bar*/
+#nav-bar{
+    font-weight: bold;
 }
 
 nav {
@@ -50,18 +56,15 @@ nav ul {
     align-items: center;
 }
 
-header a{
-    text-decoration: none;
-    color: black
-}
-
-#nav-bar{
-    font-weight: bold;
-}
-
 #nav-bar img{
     width: 20px;
     margin-right: 1rem;
+}
+/*#endregion*/
+/*#region search-bar*/
+#search-bar{
+    padding-top: 6px;
+    padding-bottom: 6px;
 }
 
 #logo{
@@ -70,20 +73,26 @@ header a{
 
 form{
     margin: 0 30px 0 15px;
-    width: 100%;
 
     display: flex;
     justify-content: space-between;
+    flex-grow: 1;
 }
 
 input{
-    padding: 8px 1em;
+    padding: 8px 40px;
     margin: 0;
-    width: 100%;
+
+    flex-grow: 1;
 
     outline: none;
     border: none;
     background-color:#f0f0f0;
+    background-image: url(images/magnifying-glass.png);
+    background-size: 26px;
+    background-position-y: center;
+    background-position-x: 6px;
+    background-repeat: no-repeat;
 }
 
 #searcher button{
@@ -95,10 +104,11 @@ input{
     border: none;
     
     font-family: 'Poppins';
+
+    outline: none;
 }
 
 #logger{
-    width: 160px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -111,6 +121,15 @@ input{
     padding: 2px 14px;
     font-weight: bold;
 }
+
+#loginBut{
+    width: 60px;
+    text-align: right;
+}
+/*#endregion*/
+
+
+
 /*#endregion*/
 /*#region Main*/
 /*#region sec-1*/
@@ -139,13 +158,15 @@ input{
     }
 
     .butLink{
-
         padding: 10px 68px;
 
         text-decoration: none;
         font-family: 'Poppins';
         font-size: 18px;
         font-weight: bold;
+        
+        border:none;
+        outline: none;
     }
 
     #plansBut{
@@ -181,6 +202,52 @@ input{
     width: 660px;
 
     font-size: 14px;
+}   
+/*#endregion*/
+/*region sec-3*/
+#sec-3{
+    width: 1000px;
+    margin: 20px auto 0 auto;
+
+    display: flex;
+    justify-content: column;
+    flex-wrap: wrap;
+}
+
+#sec-3 > div{
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+#sec-3 img{
+    width: 34px;
+}
+
+.container{
+    width: 220px
+}
+
+.container p{
+    font-size: 14px;
+}
+
+.container h3{
+    color: #fb3e44;
+    font-size: 14px;
+    weight: bolder;
+
+    margin-top: 4px;
+}
+
+#sec-3 button{
+    margin: 46px auto 30px auto;
+    width: 340px;
+
+    background-color: black;
+    color: white;
+    box-shadow: 6px 6px rgba(0, 0, 0, .2);
 }
 /*endregion*/
 /*#endregion*/
