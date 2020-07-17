@@ -1,93 +1,94 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
 body {
-  font-family: 'Poppins';
+	font-family: 'Poppins';
+
 }
 
 header > .container1 {
-  padding: 0 25px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid lightgray;
+	padding: 0 25px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid lightgray;
 }
 
 nav {
-  width: 600px;
+	width: 600px;
 }
 
 nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 nav a {
-  text-decoration: none;
-  color: black;
+	text-decoration: none;
+	color: black;
 }
 
 .blackHeart {
-  width: 20px;
-  margin-right: 1rem;
+	width: 20px;
+	margin-right: 1rem;
 }
 
-
 .searchbar {
-  margin-top:5px;
-width:80%;
-  height: 30px;
-  background-color: rgba(0,0,0,.05);
-  border-color: rgba(0,0,0,.05);
-background-image: url('images/magnifying-glass.png');
-background-size: contain;
-background-repeat: no-repeat;
-text-indent: 20px
+	width: 83%;
+	height: 30px;
+	background-color: rgba(0, 0, 0, 0.05);
+	border-color: rgba(0, 0, 0, 0.05);
+	background-image: url('images/magnifying-glass.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	text-indent: 20px;
+}
 
+:focus {
+	background-image: none;
+	text-indent: 0px;
+}
+.search {
+	height: 30px;
+	width: auto;
+	background-color: #fb3e44;
+	color: white;
+	border-style: none;
+	margin-left: -32px;
+}
 
-  }
+.logo {
+	width: auto;
+	height: 30px;
+}
 
-  :focus {
-  	background-image: none;
-    text-indent: 0px;
-
-  }
-  .search {
-    height:30px;
-    width:auto;
-    margin-top : 5px;
-background-color :  #fb3e44;
-color: white;
-border-style:none;
-margin-left: -32px;
-
-  }
-
-  .logo {
-width:auto;
-    height:30px;
-    margin: 5px;
-  }
-
-  .join {
-    margin: 5px;
-    border-style: groove;
-    padding-left: 8px;
-    padding-right: 8px;
-    border-color: rgba(0,0,0,.05);
-    text-decoration: none;
-    color: grey;
-  }
+.join {
+	border-style: groove;
+	padding-left: 8px;
+	padding-right: 8px;
+	border-color: rgba(0, 0, 0, 0.05);
+	text-decoration: none;
+	color: grey;
+}
 .container-search {
-  margin:5px;
-  display:inline-flex;
-  width:100%;
-
+	margin: 5px;
+	display: inline-flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
 }
 
 .login {
-margin-top : 7px;
-  text-decoration: none;
-  color: grey;
+	text-decoration: none;
+	color: grey;
+	margin-right: 20px;
+}
+
+.title {
+width: 100%;
+text-align: center;
+font-size: 80px;
+font-weight: 600;
+
 }
