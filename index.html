@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lab Exercise - Adrian Paniagua Sanchez</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -15,77 +15,95 @@
     <header>
         <div class="header-container">
             <div class="nav-bar-container">
-                <img class="blackheart" src="images/black-heart.png" alt="black heart">
-                <span class="">Nifty Penguin Magic</span>
 
-                <nav class="nav-bar-list">
-                    <ul>
-                        <li>
-                            <a href="#">npm Enterprise</a>
-                        </li>
-                        <li>
-                            <a href="#">Products</a>
-                        </li>
-                        <li>
-                            <a href="#">Solutions</a>
-                        </li>
-                        <li>
-                            <a href="#">Resources</a>
-                        </li>
-                        <li>
-                            <a href="#">Docs</a>
-                        </li>
-                        <li>
-                            <a href="#">Support</a>
-                        </li>
-                    </ul>
-                </nav>
+                <div class="company-container">
+                    <img class="blackheart-image" src="images/black-heart.png" alt="black heart">
+                    <span class="name-company">Nifty Penguin Magic</span>
+                </div>
+
+                <div class="list-container">
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="#">npm Enterprise</a>
+                            </li>
+                            <li>
+                                <a href="#">Products</a>
+                            </li>
+                            <li>
+                                <a href="#">Solutions</a>
+                            </li>
+                            <li>
+                                <a href="#">Resources</a>
+                            </li>
+                            <li>
+                                <a href="#">Docs</a>
+                            </li>
+                            <li>
+                                <a href="#">Support</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
-
 
 
             <div class="search-bar">
 
                 <div class="logo-container">
-                    <img class="" src="images/npm-logo.png" alt="npm logo">
+                    <img class="logo-image" src="images/npm-logo.png" alt="npm logo">
                 </div>
 
+                <div class="form-container">
+                    <label for="name"></label>
+                    <input type="text" id="input-text" name="name" placeholder="Search packages">
 
-                <img class="" src="images/magnifying-glass.png" alt="magnifying glass">
-                <label for="name"></label>
-                <input type="text" id="name" name="name" placeholder="Search packages">
-                <button type="submit">Search</button>
+                    <div class="glass-image-position">
+                        <img class="glass-image" src="images/magnifying-glass.png" alt="magnifying glass">
+                    </div>
 
-                <ul>
-                    <li>
-                        <a href="#">Join</a>
-                    </li>
-                    <li>
-                        <a href="#">Log in</a>
-                    </li>
-                </ul>
+                    <button type="submit" class="search-button">Search</button>
+                </div>
+
+                <div class="buttons-container">
+                    <ul>
+                        <li>
+                            <a class="active-button" href="#">Join</a>
+                        </li>
+                        <li>
+                            <a href="#">Log in</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-
         </div>
     </header>
 
     <!-- Section 1 -->
 
     <section id="section01">
-
+        <div class="title-container"></div>
         <h1>Build amazing things</h1>
-        <p>Essential JavaScript development tools that help you go to market faster and build powerful applications
-            using
-            modern open source code.</p>
-        <a href="#">See plans</a>
-        <a href="#">Join for free</a>
+        </div>
+
+        <div class="paragraph-container">
+            <p>Essential JavaScript development tools that help you go to market faster and build powerful applications
+                using
+                modern open source code.</p>
+        </div>
+
+        <div class="cta-container">
+            <a href="#">See plans</a>
+            <a href="#">Join for free</a>
+        </div>
     </section>
 
     <!-- Section 2 -->
 
     <section id="section02">
-        <img class="" src="images/triangle-hexagon.svg" alt="">
+        <img class="section02-image" src="images/triangle-hexagon.svg" alt="">
         <h1>Bring the best of open source to your company</h1>
+
         <p>npm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers already use
             it. Your
             company depends on it.
@@ -98,36 +116,40 @@
     <section id="section03">
 
         <article class="service-box">
-            <img src="images/zero-configuration.svg" alt="configuration image">
+            <img class="service-image" src="images/zero-configuration.svg" alt="configuration image">
             <h3>Zero configuration</h3>
             <p>Create an org, add your team, and start collaborating. Nothing to configure, set up, or manage.</p>
         </article>
 
         <article class="service-box">
-            <img src="images/team-management.svg" alt="team image">
+            <img class="service-image" src="images/team-management.svg" alt="team image">
             <h3>Team management</h3>
             <p>Control who has access to what modules within your team namespace using straightforward team management
                 capabilities.</p>
         </article>
 
         <article class="service-box">
-            <img src="images/familiar-features.svg" alt="features imafge">
+            <img class="service-image" src="images/familiar-features.svg" alt="features imafge">
             <h3>Familiar features</h3>
             <p>npm Orgs has 100% parity with all the public npm registry features your developers already use.</p>
         </article>
 
         <article class="service-box">
-            <img src="images/npm-audit.svg" alt="audit image">
+            <img class="service-image" src="images/npm-audit.svg" alt="audit image">
             <h3>npm audit</h3>
             <p>Enjoy the security auditing features built into the npm client, a zero-friction way to make open source
                 software safer.</p>
         </article>
 
-
-        <a href="">Create an Org</a>
-
     </section>
 
+    <!-- Section 4 -->
+
+    <section id="section04">
+        <footer>
+            <a href="#">Create an Org</a>
+        </footer>
+    </section>
 </body>
 
 </html>
