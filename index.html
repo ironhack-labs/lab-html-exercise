@@ -1,10 +1,12 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="style.css" />
       <title>npm | build amazing things</title>
  </head>
+ <body>
  <header>
+
     <div>
       <div>
         <img class="blackHeart" src="images/black-heart.png" alt="black heart" />
@@ -21,58 +23,81 @@
         </ul>
       </nav>
     </div>
-  
     <div>
-      <!-- add logo, search bar and buttons (or links and style them as buttons later) -->
-      <img class="logo" src="images/npm-logo.png" alt="npm-logo" />
-      <img class="search" src="images/magnifying-glass.png" alt="magnifyng" />
-      <input type="text" placeholder="Search.." name="search">
-      <button type="submit">Submit</button>
-      <button type="button">Join</button>
-      <button type="button">Log in</button>
+        <!-- add logo, search bar and buttons (or links and style them as buttons later) -->
+        <img class="logo" src="images/npm-logo.png" alt="npm-logo" />
+        <div class="menu2">
+        <input type="text" placeholder="Search.." name="search">
+        <button type="submit">Submit</button>
+        <button type="button">Join</button>
+        <button type="button">Log in</button>
+        
+        </div>
+      </div>
     </div>
-    <div>
-        <section id="Slider">
+
+      
+</header>
+    <div class="backslider center tc pad padd">
+        <section id="slider">
             <h1> Build Amazing Things</h1>
-            <p>Essential Javascript development tools that help you go to the market faster and build powerful aplications using modern open source code</p>
-            <button type="button">See plans</button>
-            <button type="button">Join for free</button>
+            <p>Essential Javascript development tools that help <br> you go to the market faster and build powerful <br> aplications using modern open source code</p>
+            <div class="cta1 flex flex-wrap">
+                <div class="ctasize ctapad ctapos">
+                    <a href="#" class="db mw5-ns center pv3 ph4 npm-btn-red npm-shadow-big b no-underline white npm-title">See plans</a>
+                  </div>
 
-        </section>
+                  <div class="ctasize ctapad ctapos">
+                    <a href="#" class="db mw5-ns center pv3 ph4 npm-shadow-big b no-underline black npm-title">Join for free</a>
+                  </div>
+        </div>
+         </section>
+    </div>
 
-        <div>
+        <div class="backsecond center tc pad padd" >
             <section id="features">
                 <img class="gem" src="images/triangle-hexagon.svg" alt="gem" />
-                <h1> Bring the open source to your company</h1>
-                <p>Relied upon by more than 11 million developers worldwide, npm is committed to making JavaScript development elegant, productive, and safe. The free npm Registry has become the
-                    center of JavaScript code sharing, and with more than one million packages, the largest software registry in the world. Our other tools and services take the Registry, and the work you do around it, to the next level.</p>
-                <button type="button">See plans</button>
-                <button type="button">Join for free</button>
-    
+                
+                <h2> Bring the open source to your company</h2>
+                <div>
+                <p>npm is the tool used by over 11,000,000 JavaScript developers<br> around the world.<br> Your developers already use it.<br> Your company depends on it. Create an Org and get more out of the tools your team already knows and loves.</p>
+            </div>
             </section>
 
 
     </div>
 
-    <div>
+    <div class=" row backsecond center tc pad padd">
         <section id="value">
-            <img class="values" src="images/zero-configuration.svg" alt="zero-configuration" />
-            <h2> Zero configuration</h2>
+            <div class="column">
+                <img class="values" src="images/zero-configuration.svg" alt="zero-configuration" />
+            <h3> Zero configuration</h3>
             <p>Become a contributing member of the open source JavaScript community. Create public packages, publish updates, audit your dependencies, and more.</p>
+            
+            </div>
+            <div class="column">
             <img class="values" src="images/team-management.svg" alt="team-management" />
-            <h2> Team management</h2>
+            <h3> Team management</h3>
             <p>For next-level JavaScript developers who want more capabilities. Pro and Teams add the ability to build private packages for you, your team, or for customers.</p>
+            </div>
+            <div class="column">
             <img class="values" src="images/familiar-features.svg" alt="familiar-features" />
-            <h2> Familiar features</h2>
+            <h3> Familiar features</h3>
             <p>For very large teams and business-critical projects, npm Enterprise delivers features that organizations with hundreds of developers need, like SSO and enhanced security.</p>
+            </div>
+            <div class="column">
             <img class="values" src="images/npm-audit.svg" alt="npm-audit" />
-            <h2> Npm audit</h2>
+            <h3> Npm audit</h3>
             <p>Our security team's unique insights into JavaScript vulnerabilities and threats are delivered as free and premium features, as well as services for resellers and others.</p>
-            <button type="button">Create an org</button>
-
+            </div>
+            </div>
+            <!--<button type="button">Create an org</button>  --> 
+            <div class="mt4 mt0-l bw1 w-30-ns center tc">
+				<a href="#" class="button-askew-fill bf fs4 bw">Create an Org</a>
+            </div>
+            
+        <!-- test -->
+            
         </section>
-  </header>
-  <body>
-
     </body>
 </html>
