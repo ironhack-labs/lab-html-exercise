@@ -4,15 +4,16 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>NPM Clone</title>
+		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
 		<header>
-			<nav>
+			<div>
 				<div class="branding">
 					<img src="images/black-heart.png" alt="black-heart" />
-					<p>Nifty Penguin Magic</p>
+					<span>Nifty Penguin Magic</span>
 				</div>
-				<div class="navbar">
+				<nav class="navbar">
 					<ul class="nav-items">
 						<li class="item"><a href="#">npm Enterprise</a></li>
 						<li class="item"><a href="/products">Products</a></li>
@@ -21,12 +22,12 @@
 						<li class="item"><a href="/docs">Docs</a></li>
 						<li class="item"><a href="/support">Support</a></li>
 					</ul>
-				</div>
-			</nav>
+				</nav>
+			</div>
 
 			<div class="menu">
 				<img src="images/npm-logo.png" alt="npm-logo" class="npm-logo" />
-				<form action="/search" method="POST">
+				<form action="/search" method="POST" class="search-bar">
 					<input type="search" name="search" id="search" placeholder="Search packages" />
 					<button type="submit">Search</button>
 				</form>
