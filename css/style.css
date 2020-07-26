@@ -1,0 +1,194 @@
+/* General */
+
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+:root {
+    --orange: #fb3e44;
+}
+
+html {
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+body.footer-fixed {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+body.footer-fixed main {
+    flex: 1;
+}
+
+h1 {
+    font-size: 6rem;
+    font-weight: bold;
+    margin: 0 auto 30px auto;
+}
+
+h2 {
+    font-size: 3.4rem;
+}
+
+h3 {}
+
+h4 {}
+
+p {
+    font-size: 1.6rem;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.btn-orange {
+    background-color: var(--orange);
+    color: white;
+    padding: 7px 15px;
+    border: none;
+}
+
+.btn-transparent {
+    background-color: transparent;
+    color: black;
+    padding: 5px 15px;
+    border: 1px solid black;
+}
+
+.btn-white {
+    background-color: white;
+}
+
+
+/* Header */
+
+.header-top {
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+}
+
+nav {
+    min-width: 400px;
+    max-width: 600px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.black-heart {
+    width: 20px;
+    margin-right: 1rem;
+}
+
+.header-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 25px;
+}
+
+.header-bottom img {
+    height: 25px;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+.search-bar img {
+    background-color: rgba(0, 0, 0, .05);
+    padding: 2.5px;
+}
+
+.search-input {
+    width: 90%;
+    height: 30px;
+    padding: 0 10px;
+    border: none;
+    background-color: rgba(0, 0, 0, .05);
+}
+
+.sign-in a {
+    margin-left: 10px;
+}
+
+
+/* JOIN SECTION */
+
+#join {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 600px;
+    padding: 40px auto;
+    background-color: rgba(232, 217, 217, .3);
+}
+
+#join p {
+    width: 440px;
+    text-align: center;
+}
+
+#join .buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 440px;
+    margin-top: 15px;
+}
+
+#join a {
+    width: 200px;
+    height: 30px;
+    text-align: center;
+    font-size: 1.6rem;
+    padding: 9px 0 9px 0;
+}
+
+#join .btn-orange {
+    box-shadow: 8px 8px 0 rgba(251, 59, 73, .2);
+}
+
+
+/* MIDDLE SECTION */
+
+#middle-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+}
+
+#middle-section img {
+    height: 300px;
+    margin: 20px auto;
+}
+
+#middle-section h2 {
+    background-color: rgba(255, 204, 53, .4);
+}
+
+#middle-section p {
+    max-width: 780px;
+    text-align: center;
+}
