@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arimo&display=swap");
+
+body {
+  font-family: "Poppins";
+}
+
+header > div {
+  padding: 0 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+}
+
+nav {
+  width: 600px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+.headerSecond {
+  padding: 0;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.npmLogo {
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 65px;
+    margin-right: 1rem;
+}
+
+/* ----------- Search Form ------------ */
+
+.searchWrapper {
+    flex-grow: 4;
+    width: 100%;
+}
+
+.searchForm {
+    width: 100%;
+    padding: 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.searchForm label {
+    position: relative;
+    flex-grow: 1;
+}
+
+.searchForm label:before {
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: 0;
+    bottom: 0;
+    width: 20px;
+    background: url(./images/magnifying-glass.png) center / contain no-repeat;
+  }
+  
+  .searchForm input {
+    padding: 10px 30px;
+    width: 100%;
+    border:0px;
+    background-color: rgba(0,0,0,.05);
+  }
+
+  .searchButton {
+    padding: 6px 10px;
+    margin-left: 5px;
+    margin-right: 30px;
+    font-size: 15px;
+    background-color: #fb3e44;
+    color: #fff;
+    border: 0px;
+    font-family: "Poppins";
+  }
+
+  /* ------- Login/Signup ------- */
+
+  .loginButtons {
+    padding: 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+  }
+
+  .loginButtons .joinButton {
+	background-color:#fff;
+	border:1px solid #bbb;
+	color:#000;
+	font-size:15px;
+	padding:2px 15px;
+	text-decoration:none;
+}
+.loginButtons .joinButton:hover {
+	background-color:#ccc;
+}
+
+.loginButtons .loginButton {
+	background-color:#fff;
+	border:0px;
+	color:#000;
+	font-size:15px;
+	padding:6px 15px;
+	text-decoration:none;
+}
+    
+
