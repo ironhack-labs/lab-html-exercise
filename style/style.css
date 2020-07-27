@@ -34,7 +34,7 @@ nav a {
 }
 
 .npm-logo {
-    width: 70px;
+    width: 5%;
 }
 
 .magnifying-glass {
@@ -76,30 +76,39 @@ nav a {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    height: 600px;
+    min-height: 600px;
     background-color: rgba(232,217,217,.3);
 }
 
 #plans-presentation h1 {
     font-weight: bolder;
-    font-size: 5em;
-    margin: 0 20px;
+    font-size: 5rem;
+    margin: 0 auto 40px;
 }
 
 #plans-presentation article {
-    width: 450px;
+    width: 35%;
     text-align: center;
     margin: 0 0 50px;
 }
 
+.sub-register {
+    display: flex;
+    justify-content: center;
+    width: 45%;
+}
 .sub-register a {
     padding: 10px 65px;
     font-weight: bold;
     margin: 0 20px;
 }
 
-.shadow { 
+.pink-shadow { 
     box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+}
+
+.grey-shadow { 
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
 }
 
 .red-button {
@@ -113,7 +122,7 @@ nav a {
     border: none;
 }
 
-.black a {
+.black-letters a {
     color: black;
 }
 
@@ -126,13 +135,13 @@ nav a {
 
 #open-source-presentation img {
     height: 250px;
-    margin: 100px auto 30px;
+    margin: 50px auto 30px;
 }
 
 #open-source-presentation h2 {
     font-weight: bolder;
     font-style: italic;
-    font-size: 2.2em;
+    font-size: 2.2rem;
     background-color: rgba(255,204,53,.4);
     transform: skew(9deg, 0deg);
     padding: 0 25px;
@@ -142,4 +151,42 @@ nav a {
     width: 55%;
     text-align: center;
     margin: auto 50px 150px;
+}
+
+#features-list > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.features-container > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.features-container div {
+    width: 20%;
+    margin: 0 20px 50px;
+}
+
+.features-container img {
+    width: 15%;
+    float: left;
+}
+
+.features-container h3 {
+    color: #ED1C24;
+} 
+
+#features-list a {
+    padding: 10px 100px;
+    margin: 0 auto 100px;
+}
+
+.black-button {
+    background-color: black;
+    color: white;
+    border: none;
 }
