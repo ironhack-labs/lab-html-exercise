@@ -5,9 +5,9 @@ body {
 }
 
 h1 {
-    font-size: 4rem;
+    font-size: 5rem;
     text-align: center;
-    font-weight: 700;
+    font-weight: bold;
     
 }
 
@@ -78,27 +78,36 @@ header > div {
 
   }
 .search-line {
-       display: flex;
+    display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin-top: 10px;
 }
   .magnifying-glass {
-    width: 30px;
+    width: 20px;
+    background-color: rgba(0,0,0,.05);
+    padding: 12.5px;
       }
 
+    
   .search-box input {
       color: rgba(0,0,0,.05);
-      padding: 10px 20px;
+      padding: 15px 30px;
       margin-right: 0px;
-      width: 500px;
+      width: 700px;
+      border: none;
+      background-color:rgba(0,0,0,.05);
+      float: left;
+      
   }
 
   .search-box button {
       background-color: #fb3e44;
       color: white;
       border-style: none;
-      padding: 10px 20px;
-      margin-left: 0px;
+      padding: 15px 30px;
+      float: left;
+      
   }
 
   #build-things { 
@@ -113,9 +122,9 @@ header > div {
 
   #build-things article {
       text-align: center;
-      line-height: 3rem;
+      line-height: 2.5rem;
       font-size: 1.5rem;
-      padding: 50px 200px;
+      padding: 50px 300px;
       letter-spacing: 0.5px;
       word-spacing: 1px;
 
@@ -169,13 +178,15 @@ header > div {
 
   #zero-configuration {
       margin-bottom: 100px;
+      padding: 0 30px;
   }
 
   #features {
       padding: 50px;
       display: flex;
       flex-direction: row;
-      justify-content: space-between;
+      justify-content: space-around;
+      align-items: baseline;
   }
 
   #features div {
@@ -183,16 +194,16 @@ header > div {
   }
 
   .create-org-btn {
-      background-color: black;
-      color: white;
-      text-decoration: none;
-      box-shadow:  8px 0 rgba(128,83,35,.2);
-      padding: 10px 100px;
-      margin: 0 auto;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    box-shadow:  8px 8px 0 rgba(128,83,35,.2);
+    padding: 10px 130px;
+    margin: 0 auto;
   }
 
   .org-btn {
       text-align: center;
       margin: 80px 0 80px;
-
+      
   }
