@@ -1,12 +1,15 @@
 /* @import url('https://fonts.googleapis.com/css?family=Poppins'); */
 
+/* Import of the Poppins family with differents weights using google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,600;0,700;1,500&display=swap');
 
 
+/* General  changes*/
 body {
   font-family: 'Poppins';
 }
 
+/* The css for the header and navigation bar */
 header > div {
     padding: 0 25px;
     display: flex;
@@ -35,39 +38,39 @@ header > div {
     width: 20px;
     margin-right: 1rem;
   }
-
+/* css for the search bar */
   .bar {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     height: 50px;
   }
-
   .npm {
-      width: 70px;
-      margin-top: 10px;
+    width: 70px;
+    margin-top: 10px;
   }
-  #search-bar {
+  .search-bar {
     background-color: rgba(0,0,0,.05);
     width: 75%;
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
-
   .search-img {
     width: 25px;
     margin-left: 15px;
     
   }
-  #search-bar input {
+  .search-bar input {
     background-color: rgba(0,0,0,.0);
     color: rgba(0,0,0,.5);
     font-size: 1em;
     border: none;
-    margin-right: 800px;
+    width: 100%;
+    font-family: monospace;
+    position: relative;
   }
-  #search-bar button {
+  .search-bar button {
     background-color: #fb3e44;
     color:white;
     border: none;
@@ -76,21 +79,23 @@ header > div {
     width: 85px;
     height: 40px;
   }
-  #login {
+  /* css fot the buttons in nav bar */
+  .login {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  #login a{ 
+  .login a{ 
       color: black;
       text-decoration: none;
   }
-  #join {
+  .join {
       border: 1px solid black;
       padding: 7px 20px;
       margin-right: 30px;
   }
 
+  /* css for the first section */
   #intro {
     background-color: rgba(232,217,217,.3);
     height: 600px;
@@ -114,11 +119,12 @@ header > div {
     width: 600px;
     margin-bottom: 100px;
   }
+  /* css for the buttons */
   #intro a{
     text-decoration: none;
     padding: 20px 60px;
   }
-  #see-plans {
+  .see-plans {
     background-color: #FB3B49;
     color: white;
     box-shadow: 8px 8px 0 rgba(251,59,73,.2);
@@ -127,7 +133,7 @@ header > div {
     text-align: center;
     margin-right: 20px;
   }
-  #join-free{
+  .join-free{
     background-color: white;
     color: black;
     text-align: center;
@@ -136,16 +142,19 @@ header > div {
     margin-left: 20px;
   }
 
+  /* css for the second section */
   #presentation {
-    height: 400px;
+    height: 500px;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 80px;
+    margin-bottom: 150px;
   }
-  #logo-2 {
-      width: 150px;
+  .hexagon {
+      width: 250px;
+      margin-bottom: 30px;
+      padding-top: 60px;
   }
   #presentation h2{
       font-size: 2em;
@@ -160,13 +169,19 @@ header > div {
       text-align: center;
   }
 
+  /* css for the third section */
   .zero, .team, .familiar, .audit {
-      width: 40px;
+      height: 40px;
   }
   .blocks h3 {
-      color: #ED1C24;
+    color: #ED1C24;
   }
- .blocks{
+  #charac > div {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+ .blocks {
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -176,25 +191,16 @@ header > div {
     width: 300px;
     padding: 0 50px;
   }
-  #charac > div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  #create {
-    display: flex;
-    justify-content: center; 
-    align-items: center;
+  .create a{
     background-color: black;
-    width: 25%;
-    margin: 50px 530px 80px; 
+    width: 20%;
     padding: 20px 50px;
     box-shadow: 8px 8px 0 rgba(128,83,35,.2);
-  }
-
-  #create a{
-      color: white;
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 1.5em;
+    margin-top: 30px;
+    margin-bottom: 150px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.5em;
+    text-align: center;
   }
