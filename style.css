@@ -1,103 +1,239 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
 body {
-  font-family: 'Poppins';
+    font-family: 'Poppins';
 }
 
-header > div {
+header>div {
     padding: 0 25px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid lightgray;
-  }
-  
-  nav {
+}
+
+nav {
     width: 600px;
-  }
-  
-  nav ul {
+}
+
+nav ul {
     list-style: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-  
-  nav a {
-    text-decoration: none;
-    color: black;
-  }
-  
-  .blackHeart {
-    width: 20px;
-    margin-right: 1rem;
-  }
-
-  .logo {
-    width: 70px;
-  }
-  .search-bar-section {
-    display: flex;
-    flex-direction: row;
-    padding:10px;
-  }
-
-
-
-  /*To check & change from here*/
-
-label, #search-bar {
-background-color: rgb(235, 231, 231);
-} 
-
-#search-bar{
-    width: 800px;
 }
 
-label, input {
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.blackHeart {
+    width: 20px;
+    margin-right: 1rem;
+}
+
+.logo {
+    width: 10%;
+    display: block;
+    text-align: center;
+}
+
+.logo img {
+    display: inline-block;
+    max-width: 70px;
+}
+
+.login-buttons {
+    width: 20%;
+    display: flex;
+    text-align: right;
+}
+
+.login-buttons a {
+    text-decoration: none;
+    color: black;
+}
+
+.login-buttons div {
+    display: block;
     padding: 15px;
 }
 
+.search-bar-section {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+/* section search bar */
+
+.search-form {
+    display: flex;
+    width: 70%;
+}
+
+label,
+#search-bar {
+    background-color: rgb(235, 231, 231);
+    border: none;
+    height: 40px;
+}
+
+#search-bar {
+    width: 800px;
+}
+
+label,
+input {
+    padding: 15px;
+}
 
 input {
-    color: rgba(0,0,0,.05);
-  }
+    color: rgba(0, 0, 0, .05);
+}
 
-
-
- .form-container-button {
+.form-container-button {
     background-color: #fb3e44;
-    color: white;  
-  }
+    color: white;
+    border: none;
+}
 
-  /*To here*/
+.join-button div {
+    border: 1px solid rgba(0, 0, 0, 0.274);
+    text-decoration: none;
+    color: black;
+}
 
-  #headline {
+.login div {
+    text-decoration: none;
+    color: black;
+}
+
+/* section 1 : Intro */
+
+
+#headline {
     display: flex;
     text-align: center;
+    padding: 50px 15px;
     justify-content: stretch;
     align-items: stretch;
     flex-direction: column;
+    background-color: rgba(232, 217, 217, .3);
 }
 
-    h1 {
-        font-size: 40px;
-    }
+h1 {
+    font-size: 60px;
+    font-weight: bold;
+}
 
 .headline-links {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     width: 200px;
     margin: auto;
 }
 
-.headline-article {
-    width: 500px;
-    margin: auto; 
+.see-plans-button {
+    display: block;
+    min-width: 200px;
+    padding-top: 20px;
+    text-decoration: none;
+    background-color: #FB3B49;
+    box-shadow: 8px 8px 0 rgba(251, 59, 73, .2);
+    color: white;
+    font-weight: bold;
+    height: 50px;
+    margin: 15px;
 }
 
-.headline-link {
+.join-for-free-button {
+    display: block;
+    min-width: 200px;
+    padding-top: 20px;
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    height: 50px;
+    margin: 15px;
+}
+
+.headline-article {
+    width: 500px;
+    margin: auto;
+}
+
+/* section 2 : diamond */
+
+.logo-diamond {
+    padding: 30px;
+    height: 180px;
+}
+
+.diamond-headline {
     display: inline-block;
+    font-size: 30px;
+    font-weight: bold !important;
+    border-color: #FFE4B5;
+    background-color: #FFE4B5;
+    padding: 0 30px;
+}
+
+.diamond-text {
+    font-size: 15px;
+}
+
+#diamond {
+    text-align: center;
+    padding: 20px 0 120px 0;
+}
+
+/* section 3 : boxes */
+
+#boxes {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.content-boxes {
+    display: flex;
+    flex-direction: row;
+}
+
+.card {
+    text-align: left;
+    padding: 0 20px;
+    width: 25%;
+}
+
+h3 {
+    color: red;
+}
+
+.button-location {
+    padding: 50px;
+    display: block;
+    margin: auto;
+    width: 400px;
+}
+
+.create-org-button {
+    text-decoration: none;
+    display: block;
     width: 200px;
-    margin: 10px;
+    padding-top: 20px;
+    text-decoration: none;
+    background-color: black;
+    box-shadow: 8px 8px 0 grey;
+    color: white;
+    font-weight: bold;
+    height: 50px;
+    margin: 15px;
+    text-align: center;
+    font-size: 15px;
+    width: 400px;
+
+
 }
