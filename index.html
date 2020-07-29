@@ -28,16 +28,22 @@
             </nav>
             </div>
             <!--Header with Logo and buttons-->
-            <div>
+            <div class="searchform">
+                
                 <img class="logo" src="/Users/sophiahammer/Desktop/Prework/lab-html-exercise/images/npm-logo.png" alt="Logo"/>
-                <img class="lupe" src="/Users/sophiahammer/Desktop/Prework/lab-html-exercise/images/magnifying-glass.png" alt="Lupe"/>
-                <form action="/search" method="get">
+                
+                <form class="slot-form" action="/search" method="get">
+                    <img class="lupe" src="/Users/sophiahammer/Desktop/Prework/lab-html-exercise/images/magnifying-glass.png" alt="Lupe"/>
                     <input type="text" placeholder="Search packages">
-                    <button type="submit">Search</button>
-                    <a href="#">Join</a>
-                    <a href="#">Log in</a>
+                    <button class="search-btn" type="submit">Search</button>
+
                 </form>
+                
+                <a href="#">Join</a>
+                <a href="#">Log in</a>
+                
             </div>
+           
         </header>
 
         <!--Section 1-->
@@ -67,35 +73,38 @@
 
         <!--Section 3-->
         <section id="Create-org">
-            <div>
-                <img class="zeroconfiguration" src="/Users/sophiahammer/Desktop/Prework/lab-html-exercise/images/zero-configuration.svg" alt="icon zeroconfiguration">
+            <div class="box">
+                <img class="icon" src="/Users/sophiahammer/Desktop/Prework/lab-html-exercise/images/zero-configuration.svg" alt="icon zeroconfiguration">
                 <h3> Zero configuration</h3>
                 <p>Zero configuration Create an org, add
                     your team, and start collaborating. Nothing to configure, set up, or manage.</p>
             </div>
 
-            <div>
-                <img class="teammanagement" src="/Users/sophiahammer/Desktop/Prework/lab-html-exercise/images/team-management.svg" alt="icon teammanagement">
+            <div class="box">
+                <img class="icon" src="/Users/sophiahammer/Desktop/Prework/lab-html-exercise/images/team-management.svg" alt="icon teammanagement">
                 <h3> Team management</h3>
                 <p>Control who has access to
                     what modules within your team namespace using straightforward team management capabilities.</p>
             </div>
 
-            <div>
-                <img class="familiar-features" src="/Users/sophiahammer/Desktop/Prework/lab-html-exercise/images/familiar-features.svg" alt="icon familiar features">
+            <div class="box">
+                <img class="icon" src="/Users/sophiahammer/Desktop/Prework/lab-html-exercise/images/familiar-features.svg" alt="icon familiar features">
                 <h3>Familiar features</h3>
                 <p>npm Orgs
                     has 100% parity with all the public npm registry features your developers already use.</p>
             </div>
 
-            <div>
-              <img class="npm-audit" src="/Users/sophiahammer/Desktop/Prework/lab-html-exercise/images/npm-audit.svg" alt="icon npm audit"> 
+            <div class="box">
+              <img class="icon" src="/Users/sophiahammer/Desktop/Prework/lab-html-exercise/images/npm-audit.svg" alt="icon npm audit"> 
               <h3>npm audit</h3>
               <p>Enjoy the security
                 auditing features built into the npm client, a zero-friction way to make open source software safer. </p>
             </div>
 
-            <button class="create-org">Create an Org</button>
+            <div>
+                <button class="create-btn">Create an Org</button>
+            </div>
+            
         </section>
         
 

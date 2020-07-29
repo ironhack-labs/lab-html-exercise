@@ -4,6 +4,21 @@ body {
   font-family: 'Poppins';
   font-size: 10px;
 }
+h1 {
+    font-size: 9em;
+    text-align: center;
+    font-weight: bold;
+}
+h2{
+    font-size:5em;
+    text-align:center;
+    background-color: rgba(255, 204, 53, .4);
+}
+h3{
+    font-size:4em;
+    text-align: center;
+    color: red;
+}
 header > div {
     padding: 0 25px;
     display: flex;
@@ -11,20 +26,7 @@ header > div {
     align-items: center;
     border-bottom: 1px solid lightgray;
   }
-  h1 {
-      font-size: 9em;
-      text-align: center;
-  }
-  h2{
-      font-size:5em;
-      text-align:center;
-      background-color: rgba(255, 204, 53, .4);
-  }
-  h3{
-      font-size:4em;
-      text-align: center;
-      color: red;
-  }
+  
   nav {
     width: 600px;
   }
@@ -47,9 +49,41 @@ header > div {
   }
 /*  the code before this was given by Ironhack to style the upper div of the header*/
 
+.searchform {
+    display: flex;
+    justify-content: space-between;
+}
 
+.logo {
+    width: 70px;
+    height: 22.422;
+}
+
+.lupe {
+    width: 60px; 
+    margin: 10px;
+}
+div a {
+    text-decoration: none;
+    color: black; 
+}
+
+.slot-form {
+    padding-right: 100px;  
+}
+
+.search-btn {
+    background-color: #FB3B49;
+    text-decoration: none;
+    color:white;
+    border-color: red;
+    padding: 10px 10px 10px 10px;
+}
+
+
+/*  Style section 1*/
   #amazingthings {
-
+      margin: 50px;
       display: flex;
       justify-content: center;
       flex-direction: column;
@@ -67,6 +101,7 @@ header > div {
   }
   .link-btn {
       background-color: #FB3B49;
+      padding: 10px;
       box-shadow: 8px 8px rgba(251, 59, 73, .2); 
       text-decoration: none;
       color: black;
@@ -75,7 +110,10 @@ header > div {
     text-decoration: none;
     color: black;
 }
+
+/* Style section 2*/
 #bring-yourcompany {
+    margin: 60px;
     height: 600px;
       display: flex;
       justify-content: center;
@@ -85,3 +123,32 @@ header > div {
 #bring-yourcompany .sectiontwo{
     height: 600px;
 }
+
+.hexagonrose {
+    width: 300px;
+}
+/* Style section 3*/
+#create-org {
+    margin: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+ .icon {
+     width: 60px;
+ }
+
+ .create-btn {
+     background-color: black;
+     color: white;
+     display: flex;
+     justify-content: center;
+     align-items: center; 
+ }
+
+ .box {
+     float: left;
+     padding: 20px; 
+ }
+
+
