@@ -9,6 +9,10 @@ body {
 	font-family: "Poppins";
 }
 
+header {
+	border-bottom: 1px solid #d3d3d3;
+}
+
 header .branding img {
 	width: 20px;
 	margin-right: 1rem;
@@ -48,17 +52,41 @@ nav a {
 	margin-right: 1rem;
 }
 
-.menu form label {
-	color: rgba(0, 0, 0, 0.05);
+.menu form {
+	display: flex;
+	justify-content: start;
+}
+
+.menu #searchbar-icon {
+	width: 23px;
+	position: absolute;
+	padding: 9px 15px;
 }
 
 .menu form input {
 	color: rgba(0, 0, 0, 0.05);
+	border: none;
+	background-color: #f8f4f4;
+	width: 1000px;
 }
 
 .menu form button {
 	background-color: #fb3e44;
 	color: white;
+	border: none;
+	width: 70px;
+	height: 30px;
+}
+
+.menu .btn-group a {
+	text-decoration: none;
+	color: #0e0e0e;
+}
+
+.menu .btn-group a:nth-child(1) {
+	border: #080807 solid 1px;
+	padding: 4px 15px;
+	margin-right: 15px;
 }
 
 .general-information {
@@ -97,11 +125,14 @@ nav a {
 	background-color: #fb3b49;
 	padding: 10px 40px;
 	box-shadow: 8px 8px 0 rgba(251, 59, 73, 0.2);
+	font-weight: bold;
 }
 
 .general-information a:nth-child(2) {
 	color: black;
 	font-weight: bold;
+	background-color: #ffffff;
+	padding: 10px 40px;
 }
 
 .goal {
@@ -131,19 +162,14 @@ nav a {
 	width: 780px;
 }
 
-/*TODO Need to work on Margin of the Elements and Flexbox*/
 .features-section {
 	height: 600px;
 }
 
 .features {
 	display: flex;
-	flex-wrap: nowrap;
-	justify-content: space-between;
-	align-content: stretch;
-}
-
-.features .feature {
+	justify-content: space-around;
+	align-items: center;
 }
 
 .features img {
@@ -155,14 +181,23 @@ nav a {
 	color: #ed1c24;
 }
 
-#create-org {
+.feature-description {
+	width: 250px;
+}
+
+#create-org-div {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 250px;
+}
+
+#create-org {
+	width: 200px;
 	box-shadow: 8px 8px 0 rgba(128, 83, 35, 0.2);
 	background-color: #080807;
 	color: white;
+	text-align: center;
+	margin-top: 80px;
 	padding: 10px 100px;
 	text-decoration: none;
 }
