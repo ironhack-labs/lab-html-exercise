@@ -34,18 +34,36 @@ nav a {
 }
 
 
-/* my code */
+/* CSS for SEARCH BAR */
 
-.logo {
+.npmlogo {
   width: 60px;
   margin-right: 1rem;
 }
 
-.form {
+/*.form {
   display: flex;
   justify-content: center;
   align-items: center;
+}*/
+.action-bar {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+}
 
+.action-bar .search-bar button {
+  float: right;
+  padding: 6px;
+  margin: 8px 16px 8px 0;
+  background: #fb3e44;
+  color: white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
 }
 
 .magnifying {
@@ -69,6 +87,7 @@ nav a {
 }
 
 
+
 /* #First Section */
 /* Why #First-Section alone is working, same for .light-background but not " #First-Section .lightbackgroung " */
 
@@ -76,11 +95,150 @@ nav a {
   background-color: rgba(232,217,217,.3);
   height: 600px; 
   text-align: center;
-  padding: 35px; 
+  padding: 0 0 0 5px; 
 }
+
+#first-section {
+  display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+
 
 h1 {
   font-size: 4em; 
 }
 
+.first-article {
+  width: 400px;
+  margin-bottom: 50px;
+}
+
+.link-part {
+  display: flex; 
+  flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	align-content: center;
+}
+
+.plan {
+  background-color: #fb3e44;
+  box-shadow:  rgba(251,59,73,.2) 8px 8px;
+  color: white;
+  font-size: 1em;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 40px; 
+  margin-right: 30px;
+}
+
+.joinfree {
+  background-color: white;
+  color: black;
+  font-size: 1em;
+  font-weight: bolder;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 40px; 
+  margin-left: 30px;
+}
+
+
+/* #Second Section */
+
+#second-section {
+  display: flex; 
+  flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	align-content: center;
+}
+
+.logo-triangle {
+  width: 250px;
+  margin-top: 80px;
+  margin-bottom: 40px;  
+}
+
+h2 {
+  background-color: rgba(255,204,53,.4);
+  height: 39px; 
+  padding: 0px 40px;
+  transform: skew(9deg,0deg);
+  color: black;
+  font-style: italic;
+  /* font height does not seem to work */
+  font-weight: bolder;
+  text-align: center;
+  font-size: 2em; 
+  letter-spacing: 1px; 
+}
+
+.second-article {
+  width: 780px;
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 16px; 
+}
+
+/* #Third Section */
+
+/* #third-section {
+  margin: 40px 80px; 
+  display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: center;
+} */
+
+#third-section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.npm-features {
+  margin: 78px 0 40px 0; 
+  display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: left;
+} 
+
+
+.img-features {
+  width: 35px;
+}
+
+h3 {
+  font-size: 14px; 
+  color: #ED1C24;
+  font-weight: bolder;
+}
+
+.p-features {
+  font-size: 13px; 
+  width: 260px; 
+  font-weight: light;
+}
+
+.org-button {
+    box-shadow: 6px 6px 1px rgba(128,83,35,.2);
+    background-color: black;
+    cursor:pointer;
+    color:#ffffff;
+    font-size:15px;
+    padding: 8px 85px;
+    text-decoration:none;
+    font-size: 13px;
+  }
 
