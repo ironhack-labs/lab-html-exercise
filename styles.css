@@ -41,10 +41,13 @@ nav a {
 
 header .header-search {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
     border-bottom: 1px solid lightgray;
     padding: 5px 25px;
+    box-shadow: 0px 7px 10px -1px rgba(50, 50, 50, 0.51);
     
 
 }
@@ -70,7 +73,7 @@ form label, input {
 
 }
 .header-search form {
-    width: 70%;
+  
 }
 
 .header-search form button {
@@ -83,5 +86,132 @@ form label, input {
 }
 .header-search .links a {
     text-decoration: none;
-    margin-left:  15px ;
+    margin:0 0 0 15px ;
+    color: black;
+    
+
 }
+
+#build {
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+    align-items: center;
+    background-color: #f7f4f4;
+    height: 600px;
+    margin: 0 40px;
+    
+
+}
+
+h1{
+    font-size: 5.5em;
+    font-weight: 700;
+    margin-top: 90px;
+    margin-bottom: 30px;
+}
+ h3{
+    width: 500px;
+    font-weight: 400;
+    font-size: 1.1em;
+    text-align: center;
+    line-height: 1.5em;
+ }
+.buttons-box {
+    width: 30%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    
+
+}
+.buttons-box button{
+    border: none;
+    margin: 50px 15px;
+    padding: 15px 65px;
+    font-weight: 800;
+    font-size: 1.1em;
+}
+
+button.h3.plans {
+    background-color: #fa3b49;
+    color: white;
+    box-shadow: 5px 5px 2px 1px rgba(251,208,210,1);
+}
+
+button.h3.join {
+    background-color: white;
+}
+
+#description {
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+    align-items: center;
+}
+#description img{
+    height: 250px;
+    margin: 50px;
+}
+
+
+
+#description h2 {
+    font-size: 2em;
+    font-weight: 500;
+    font-style: italic;
+    margin: 0 auto;
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+    padding: 0 60px;
+}
+
+#description h4 {
+    font-size: 1em;
+    font-weight: 400;
+    width: 45%;
+    text-align: center;
+}
+
+#options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 70px;
+
+}
+#options .option img{
+    height: 40px;
+    margin: 0 0 10px 20px;
+}
+#options .options-box{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 40px 130px;
+}
+
+#options .options-box .option{
+    width: 22%;
+}
+
+.option h5{
+    margin: 0;
+    color:#fb3e44 ;
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+#options button{
+    font-family: 'Poppins';
+    border: 0;
+    background-color: black;
+    color: white;
+    padding: 15px 80px;
+    margin: 40px 0 60px 0 ;
+    box-shadow: 5px 5px 2px 1px lightgrey;
+    font-size: 1.1em;
+}
+
