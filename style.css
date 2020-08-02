@@ -77,7 +77,6 @@ body {
   .search_bar button{
     background-color:  #fb3e44;
     color: white;
-    border-radius: 0;
     border: none;
     padding: 8px 32px;
     font-family: 'Poppins';
@@ -138,6 +137,115 @@ body {
     padding: 0 15% 0 15%;
   }
 
+  h1 {
+    font-size: 60px;
+    margin-bottom: 40px;
+    text-align: center;
+   }
+
   article {
- text-align: center;
+    text-align: center;
+    width: 45%;
+    margin-bottom: 50px;
+  }
+ 
+  .CTA_buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+  }
+
+  .CTA_buttons a{
+    background-color:  #fb3e44;
+    color: white;
+    padding: 15px 35px;
+    margin-left: 24px;
+    text-decoration: none;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+    font-weight: 700;
+  }
+  
+  .CTA_buttons :last-child{
+   background-color: transparent;
+   color: black;
+   box-shadow: none;
+  }
+
+  /* Section 2 */
+
+  #arti_section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 600px;
+    padding: 0 15% 0 15%;
+  }
+
+  #arti_section img{
+    width: 200px;
+    margin-bottom: 50px;
+  }
+
+  h3{
+    font-size: 30px;
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+    font-style: italic;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  /* Section 3 */
+
+#detail_section{
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 5% 0 5%;
+  height: 500px;
+}
+  .Cards{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+   
+  }
+
+  .Cards div {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
+    width: 200px;
+    margin-bottom: 60px;
+  }
+
+  .Cards div img{
+    height: 30px;
+    margin-bottom: 20px;
+    
+  }
+
+  h5{
+    color:  #ED1C24;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+ 
+  
+  #detail_section  a{
+    background-color:  black;
+    color: white;
+    padding: 15px 100px;
+    margin-left: 24px;
+    text-decoration: none;
+    box-shadow:  8px 8px 0 rgba(128,83,35,.2);
+    font-weight: 700;
+    text-align: center;
   }
