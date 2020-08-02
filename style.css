@@ -40,49 +40,97 @@ nav a{
 }
 
 .searchbar {
+    display:flex;
     justify-content: flex-start;
+    
 }
+
 .barra{
-    background-color: rgba(0,0,0,.05);
-    border:none;
-    height: 40px;
-    width:1000px; 
-    /* width: calc(100% - 10px); */
-    position: relative;
-    flex-wrap: wrap;
+    width:100%;
 }
 
+/*Parte principal*/
 
 
-.redbutton {
-    background-color: red;
-    padding: 15px 20px;
-    color: white;
-    margin-right: 50px;
-    text-decoration: none;
-    box-shadow: 10px 5px 5px black;;
-}
+
+
 
 #principal{
+    height: 600px;
     display: flex;
-    align-items: center;
     flex-direction: column;
-    width: 600px;
-    margin-left:auto;
+    align-items: center;
+    background-color: rgba(232,217,217,.3);
+}
+
+#principal>h1 {
+    font-size: 5em;
+    margin-bottom: 15px;
+}
+
+#principal>article{
+    font-size: 25px;
+    width:55%;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+
+.botones{
+    border:1px solid black;
+    padding: 15px 50px;
+    color: white;    
+    margin-right: 50px;
+    text-decoration: none;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+}
+
+.redbutton {
+    background-color: #FB3B49;
+
+}
+
+.whitebutton{
+    background-color:rgb(218, 206, 170);
+    color:black;
+}
+
+
+/*Segunda sección*/
+
+#hexagono{
+    width: 20%;
+    padding-top:50px ;
+    display: block;
+    margin-left: auto;
     margin-right: auto;
 }
 
-#principal>h1{
-    font-size: 60px;
-    margin-bottom: -10px;
-}
-#principal p{
-    font-size: 20px;
-    width: 400px;
+#subtitulo{
+    background-color: rgba(255,204,53,.4);
+    margin-left:auto;
+    margin-right:auto;
+    text-align: center;
+    width: 66%;
 }
 
-#botones{
-    padding: 0 20px;
-    flex
-    margin:15px
+#texto2{
+    margin-left:auto;
+    margin-right:auto;
+    text-align: center;
+    width: 50%;
 }
+
+/*tarjetas*/
+
+.tarjetas{
+display:flex;
+justify-content: space-around;
+flex-direction: row;
+}
+
+.image-card{
+    width:20px;
+    
+}
+
