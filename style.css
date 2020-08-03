@@ -1,0 +1,289 @@
+@import url(" https://fonts.googleapis.com/css?family=Poppins");
+
+body {
+  font-family: "Poppins";
+}
+.blackHeart {
+  height: 10px;
+  width: 20px;
+  margin-right: 1rem;
+  margin-top: 5px;
+}
+.config-header {
+  padding: 0 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+}
+.config-heart{
+  display: flex;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+nav ul li {
+  padding: 5px;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+}
+.logo {
+  width: 55px;
+  height: 15px;
+}
+.glass {
+  width: 20px;
+  height: 20px;
+}
+.search-package {
+  display: flex;
+  background-color: #f2f2f2;
+  align-items: center;
+  padding-left: 10px;
+}
+.config-search {
+  padding: 0.5em 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.bt-bar {
+  border: none;
+  background: none;
+  width: 80em;
+  color: rgba(0, 0, 0, 0.05);
+  padding: 6px 0;
+}
+.sch-bt {
+  background-color: #fb3e44;
+  color: white;
+  padding: 7px 12px;
+}
+.bt-join {
+  height: 23px;
+  padding: 0 15px;
+  background-color: white;
+  border: 1px solid grey;
+  text-decoration: none;
+  color: grey;
+}
+.bt-log {
+  height: 23px;
+  width: 50px;
+  background-color: white;
+  border: none;
+  text-decoration: none;
+  color: grey;
+}
+.build-sec {
+  height: 600px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(232, 217, 217, 0.3);
+}
+.build-sec h1 {
+  font-size: 6em;
+  margin-top: -0.5em;
+  font-weight: 900;
+}
+.build-sec p {
+  /* margin-top: -40px; */
+  margin-bottom: 80px;
+  width: 425px;
+}
+.plans-bt {
+  background-color: #fb3b49;
+  box-shadow: 8px 8px 0 rgba(251, 59, 73, 0.2);
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 0.8em 3.5em;
+  margin: 1em;
+}
+.join-bt {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 0.8em 3.5em;
+  background-color: white;
+  margin: 1em;
+}
+#hexagone {
+  margin-top: 3em;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+.img-hex {
+  width: 12em;
+  margin-bottom: 15px;
+}
+#hexagone h2 {
+  font-size: 30px;
+  font-weight: bold;
+  background-color: rgba(255, 204, 53, 0.4);
+  transform: skew(9deg, 0deg);
+  margin-bottom: 0px;
+  font-style: italic;
+  padding: 0 1em;
+}
+#hexagone h5 {
+  margin-top: 30px;
+  width: 49em;
+  color: grey;
+}
+#square-sec {
+  margin-top: 5em;
+}
+#square-sec img {
+  width: 30px;
+}
+.config-square {
+  padding: 0 2em;
+}
+#square-sec h4 {
+  color: #ed1c24;
+}
+#square-sec h6 {
+  color: grey;
+}
+#square-sec figure {
+  margin: 3em;
+  text-align: center;
+}
+#square-sec a {
+  background-color: black;
+  margin-top: 20px;
+  color: white;
+  text-decoration: none;
+  padding: 1em 7em;
+  font-weight: bold;
+}
+@media (max-width: 1620px) {
+  .bt-bar {
+    width: 70em;
+  }
+}
+
+@media (max-width: 1440px) {
+  .bt-bar {
+    width: 60em;
+  }
+}
+
+@media (max-width: 1290px) {
+  .bt-bar {
+    width: 40em;
+  }
+}
+
+@media (max-width: 1005px) {
+  .bt-bar {
+    width: 20em;
+  }
+  .config-header div h5 {
+    font-size: 1rem;
+  }
+  nav ul li {
+    font-size: small;
+  }
+  #hexagone h5 {
+    width: 29em;
+  }
+}
+
+@media (max-width: 950px) {
+  .config-header div span {
+    font-size: 0.75rem;
+  }
+  nav ul {
+    justify-content: center;
+  }
+  nav ul li {
+    font-size: x-small;
+  }
+  .build-sec header h1 {
+    font-size: 4em;
+  }
+}
+
+@media (max-width: 665px) {
+  .config-header div span {
+    font-size: 0.55rem;
+  }
+  .build-sec header h1 {
+    font-size: 3em;
+  }
+  nav ul li {
+    font-size: xx-small;
+  }
+}
+
+@media (max-width: 620px) {
+  .bt-bar {
+    width: 10em;
+  }
+  #hexagone h5 {
+    width: 14em;
+  }
+}
+
+@media (max-width: 485px) {
+  .plans-bt {
+    padding: 0.4em 1em;
+  }
+  .join-bt {
+    padding: 0.4em 1em;
+  }
+  .build-sec p {
+    width: 225px;
+  }
+  .logo {
+    width: 25px;
+  }
+  .search-package {
+    padding-left: 0;
+    font-size: x-small;
+  }
+  .sch-bt {
+    padding: 3px 6px;
+  }
+  .bt-join {
+    padding: 0 5px;
+    font-size: x-small;
+  }
+  .bt-log {
+    width: 40px;
+    font-size: x-small;
+  }
+  #square-sec a {
+    padding: 0.5em 3em;
+  }
+  .config-header div h5 {
+    font-size: 0.35rem;
+  }
+  nav ul li {
+    font-size: 6px;
+  }
+  .buttons{
+    margin-bottom: 3px;
+  }
+}
+
+@media (max-width: 400px) {
+ .config-header nav{
+    width: 160px;
+    margin-right: 1em;
+  }
+ 
+}
