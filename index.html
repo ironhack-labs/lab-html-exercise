@@ -4,15 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NPM Clone</title>
-    <link href="https://fonts.googleapis.com/css?family=Arimo|Poppins:400,600,700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
       <div>
         <div>
           <img class="blackHeart" src="/images/black-heart.png" alt="black heart" />
-          <span class="title"> Nifty Penguin Magic </span>
+          <span> Nifty Penguin Magic </span>
         </div>
         <nav>
           <ul>
@@ -27,11 +26,13 @@
       </div>
       <!-- add logo, search bar and buttons (or links and style them as buttons later) -->
       <div>
-        <img src="/images/npm-logo.png" alt="npm" />
-        <img src="/images/magnifying-glass.png" alt="magnifying-glass" />
-        <input type="search" />
-        <button title="Search">Search</button>
-        <div>
+        <img class="npm-logo" src="/images/npm-logo.png" alt="npm" />
+        <form class="form">
+          <label class="label" for="search"><img class="mag-glass" src="/images/magnifying-glass.png" alt="magnifying-glass" /></label>
+          <input type="search" placeholder="Search packages" />
+          <button title="Search" class="search">Search</button>
+        </form>
+        <div class="login">
           <a href="#">Join</a>
           <a href="#">Log In</a>
         </div>
