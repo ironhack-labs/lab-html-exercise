@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
-
+/* general styles */
 body {
   font-family: 'Poppins';
 }
 h1{
-    font-size: 3em;
+    margin: 20px;
+    font-size: 4.5em;
     font-weight: 900;
 }
 h2 {
@@ -16,6 +17,9 @@ h2 {
 }
 h3 {
     color: #ED1C24;
+}
+p {
+    font-size: 12px;
 }
 /* header styles */
 header > div {
@@ -29,6 +33,7 @@ nav {
     width: 600px;
 } 
 nav ul {
+    font-size: 12px;
     font-weight: bold;
     list-style: none;
     display: flex;
@@ -43,25 +48,29 @@ nav a {
     width: 20px;
     margin-right: 1rem;
 }
+header label {
+    margin: 5px 0;
+    height: 37px;
+    background-color: rgb(226, 223, 223);
+}
 .search-bar {
     display: flex;
     justify-content: center;
-    line-height: 50px;
+    line-height: 20px;
 }
 .npm-logo {
     width: 75px;
     margin: 0 10px;
 }
 .magnifying-glass {
-    margin: 20px 0 0;
-    width: 37px;
-    height: 37px;
-    background-color: rgb(226, 223, 223);
+    margin: 8px 8px 0 8px;
+    width: 20px;
+    height: 20px;
 }
 .search {
     color: rgba(0, 0, 0, 0.5);
     background-color: rgb(226, 223, 223);
-    width: 850px;
+    width: 700px;
     line-height: 35px;
     border: none;
 }
@@ -74,6 +83,7 @@ button {
     line-height: 35px;
 }
 .join {
+    font-size: 12px;
     text-align: center;
     border: black 2px solid;
     margin: auto 3%;
@@ -83,27 +93,36 @@ button {
     color: black;
 }
 .log-in {
+    font-size: 12px;
     color: black;
     text-decoration: none;
 }
 /* section 1 styles */
 .section-1 {
+    height: 400px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: start;
+    align-content: center;
     flex-direction: column;
 }
 .section-1 article {
     width: 100%;
-    margin: 0 auto 75px;
+    height: 400px;
+    padding-bottom: 20px;
+    margin: 0 auto;
     text-align: center;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
     background-color: rgba(232,217,217,.3);
 }
+.section-1 article > p {
+    font-size: 20px;
+}
 .see-plans {
+    padding: 8px 50px;
+    margin: auto 75px;
     border: none;
     background-color: #fb3e44;
     box-shadow: 8px 8px 0 rgba(251,59,73,.2);
@@ -111,14 +130,15 @@ button {
     text-decoration: none;
 }
 .join-free {
-    border: none;
+    padding: 8px 50px;
     font-weight: bold;
     color: black;
-    border-color: white;
+    background-color: white;
     text-decoration: none;
 }
 /* section 2 styles */
 .section-2 {
+    margin-bottom: 150px;
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -127,6 +147,7 @@ button {
 }
 .hexagon {
     width: 200px;
+    margin:75px auto 50px auto;
 }
 .section-2 > article {
     width: 50%;
@@ -139,16 +160,32 @@ button {
 .section-3 > div{
     display: flex;
     align-content: center;
-    align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+}
+.section-3 article {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 .s-3-img{
-    width: 50px;
+    width: 60px;
+    height: 60px;
+}
+.create-org {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .section-3 a {
+    padding: 8px 100px;
+    width: 10%;
     text-align: center;
     color: white;
     background-color: black;
     text-decoration: none;
-    box-shadow: 8px 8px 0 rgba(128,83,35,.2)
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
 }
