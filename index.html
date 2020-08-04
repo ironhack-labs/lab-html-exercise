@@ -3,16 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style.css" rel="stylesheet" />
     <title>NPM Landing page</title>
 </head>
 <body>
     <header class="header">
         <div>
             <div>
-                <img src="images/black-heart.png" alt="black heart" />
-                Neverendig Pun Machine
+                <img class="blackheart" src="images/black-heart.png" alt="black heart" />
+                <span> Nifty Penguin Magic </span>
             </div>
-            <nav class="navbar">
+            <nav>
                 <ul>
                     <li>
                         <a herf="#">npm Entreprise</a>
@@ -39,15 +40,16 @@
             
             <img class="logo" src="images/npm-logo.png" alt="logo npm">
             <form>
+                <img class="search-icon" src="images/magnifying-glass.png" alt="" />
                 <input type="search" name="search" placeholder="Search packages" />
                 <button type="submit">Search</button>
             </form>
-            <ul>
+            <ul class="sub-bar__list">
                 <li>
-                    <a href="/join">Join</a>
+                    <a href="#">Join</a>
                 </li>
                 <li>
-                    <a href="/join">Login</a>
+                    <a href="#" class="link-invers">Login</a>
                 </li>
             </ul>
         </div>
@@ -57,17 +59,17 @@
         <h1>
             Build amazing things
         </h1>
-        <articke>
+        <article>
             <p>Essential Javascript developpement tools that help you go to market faster and build powerfull applications using modern open source code.</p>
-        </articke>
+        </article>
         <div>
             <a href="#" class="links-btn">See plans</a>
-            <a href="#" class="links-btn">Join for free</a>
+            <a href="#" class="links-btn reverse">Join for free</a>
         </div>
     </section>
 
     <section id="bring">
-        <img src="images/triangle-hexagon.svg" alt="triangle hexagon" />
+        <img class="hexagone" src="images/triangle-hexagon.svg" alt="triangle hexagon" />
         <h2>Bring the best of open source to your company</h2>
         <article>
             <p>
@@ -79,7 +81,7 @@
     <section id="org">
         <div>
             <article>
-                <img src="images/zero-configuration.svg" alt="zero configuration" />
+                <img class="" src="images/zero-configuration.svg" alt="zero configuration" />
                 <h3>Zero configuration</h3>
                 <p>
                     Create an org, add your team, and start collaborating.<br />
