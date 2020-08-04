@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css?family=Poppins");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400;1,600;1,700&display=swap");
 
 body {
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
 }
 
 header > div {
@@ -51,7 +51,7 @@ form {
 
 label {
   width: 2%;
-  display: flex;,
+  display: flex;
   align-items: center;
   padding-left: 8px;
 }
@@ -83,60 +83,108 @@ button {
 }
 
 .subheader > nav > a {
-    padding: 5px 25px;
+  padding: 5px 25px;
 }
 
-.subheader > nav a:first-child{
-    border: 1px solid black
+.subheader > nav a:first-child {
+  border: 1px solid black;
 }
 
-/*suggested height for this section: 600px
-background color: rgba(232,217,217,.3)
-"See plans" button background color: #FB3B49
-"See plans" button box shadow: 8px 8px 0 rgba(251,59,73,.2)*/
-
-#hero-section{
-    height: 600px;
-    background-color:rgba(232,217,217,.3) ;
-    text-align: center;
-     display: flex;
-    flex-direction: column;
-    justify-content: center;
+.center-section {
+  height: 600px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-h1{
-    font-size: 50px;
-    font-weight: bold;
-    margin: 0;;
+#hero-section {
+  background-color: rgba(232, 217, 217, 0.3);
 }
 
-#hero-section > article{
-    width: 30%;
-    margin: 0 auto;
+h1 {
+  font-size: 78px;
+  font-weight: bold;
+  margin: 0;
 }
 
-.hero-btn{
-    padding-top: 36px;
-    display: flex;
-    width: 30%;
-    margin: 0 auto;
-    justify-content: space-between;
+#hero-section > article {
+  width: 30%;
+  margin: 0 auto;
 }
 
-.hero-btn a{
-    padding: 1em 4em;
-    text-decoration: none;
-    font-weight: bold;
+.hero-btn {
+  padding-top: 36px;
+  display: flex;
+  width: 30%;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.btn {
+  padding: 1em 4em;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .plans {
-    color: #ffffff;
-    background-color: #FB3B49;
-    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+  color: #ffffff;
+  background-color: #fb3b49;
+  box-shadow: 8px 8px 0 rgba(251, 59, 73, 0.2);
 }
 
-.join{
-    background-color: #ffffff;
-    color: #000000;
+.join {
+  background-color: #ffffff;
+  color: #000000;
 }
 
+#quote-section > img {
+  width: 18%;
+  margin: 0 auto;
+}
+
+#quote-section > article {
+  width: 47%;
+  margin: 0 auto;
+}
+
+h2 {
+  background-color: rgba(255, 204, 53, 0.4);
+  transform: skew(9deg, 0deg);
+  font-style: italic;
+  width: fit-content;
+  margin: 40px auto 20px auto;
+  padding: 0 25px;
+  font-weight: 600;
+}
+
+#specs-section {
+  padding: 4em 8em;
+}
+
+.specs {
+  display: flex;
+  justify-content: space-around;
+}
+
+.specs > div {
+  width: 20%;
+}
+
+.specs > div > img {
+  height: 25px;
+}
+
+h3 {
+  color: #ed1c24;
+}
+
+.btn-big {
+  display: block;
+  background-color: #000000;
+  color: #ffffff;
+  box-shadow: 8px 8px 0 rgba(128, 83, 35, 0.2);
+  margin: 80px auto;
+  text-align: center;
+  width: 20%;
+}
