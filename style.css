@@ -36,6 +36,7 @@ header > div {
   #div1 {
     display: flex;
     padding: 15px 15px;
+    justify-content: space-between;
   }
 
   .npm {
@@ -61,21 +62,85 @@ header > div {
 
   #top {
       display: flex;
-      justify-content: center;
+      text-align: center;
       height: 600px;
       background-color: rgba(232, 217, 217, .3);
+      flex-direction: column;
+      justify-content: center;
+  }
+
+  #top h1 {
+    display: flex;
+    margin: 30;
+    font-weight: bold;
+    font-size: 4em;
+    text-align: center;
+    justify-content: center;
+  }
+
+  #top article {
+    display: flex;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+  }
+
+  #top ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 1em;
+    flex-wrap: wrap;
   }
 
   #middle {
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
     height: 600px;
-    background-color: rgba(232, 217, 217, .3);
   }
 
-  #middle > article {
+  #middle img {
+    height: 300px;
+    width: 300px
+  }
+
+  #middle h1 {
     background-color: rgba(255, 204, 53, .4);
     transform: skew(9deg,0deg);
     font-style: italic;
-    margin: 0;
+    margin: 50;
+  }
+
+  #middle article {
+    display: flex;
+    text-align: center;
+    margin: 10px;
+    font-size: 0.8em;
+    width: 500px;
+  }
+
+  #bottom {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    padding: 20px;
+  }
+
+  #bottom img {
+    width: 30px;
+    margin-right: 1rem;
+  }
+
+  #bottom h3 {
+    color: #ED1C24;
+  }
+
+  #bottom button{
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    padding: 20px;
   }
