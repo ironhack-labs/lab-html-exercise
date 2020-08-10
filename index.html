@@ -22,21 +22,23 @@
                     </ul>
                 </nav>
             </div>
-            <div>
-                <img class="logo" src="images/npm-logo.png" alt="logo"/>
-            </div>
-            <div></div>
-                <img class="magnify" src="images/magnifying-glass.png" alt="magnifying glass"/>
-                <input type="text" placeholder="Search..."/>
-                <input type="button" value="Search">
-            </div>
-            <div>
-                <input type="button" value="Join"/>
-                <input type="button" value="Log In"/>
+            <div class="search-level">
+                <div>
+                    <img class="logo" src="images/npm-logo.png" alt="logo"/>
+                </div>
+                <div class="seach-bar">
+                    <img class="magnify" src="images/magnifying-glass.png" alt="magnifying glass"/>
+                    <input id="searchbar" type="text" placeholder="      Search packages"/>
+                    <input id="searchbutton" type="button" value="Search">
+                </div>  
+                <div class="search-level-buttons">
+                    <input id="join-button" type="button" value="Join"/>
+                    <input id="log-in-button" type="button" value="Log In"/>
+                </div>
             </div>
         </header>
         <section id="top-section">
-            <div>
+            <div>           
                 <h1>
                     Build amazing things
                 </h1>
@@ -49,9 +51,9 @@
                     </p>
                 </article>
             </div>  
-            <div>
-                <input type="button" value="See plans"/>
-                <input type="button" value="Join for free">
+            <div class="top-section-buttons">
+                <input id="left-button" type="button" value="See plans"/>
+                <input id="right-button" type="button" value="Join for free">
             </div>
         </section>
         <section id="mid-section">
@@ -68,6 +70,7 @@
                 </article>
         </section>
         <section id="bottom-section">
+            <article class="group-of-four">
             <div>
                 <img src="images/zero-configuration.svg" alt="zero-configuration"/>
                 <h4>
@@ -108,7 +111,11 @@
                     a zero-friction way to make open source software safer. 
                 </p>
             </div>
-            <input type="button" value="Create an Org"/>
+            </article>
+            <div class="create-button">
+                <input id="create-button" type="button" value="Create an Org"/>
+            </div>
+
         </section>
     </body>
 </html>
