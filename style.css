@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body{
+    font-family: 'Poppins';
+}
+
+header > div{
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+}
+
+nav{
+    width: 600px;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+}
+
+.blackheart {
+    width:20px;
+    margin-right: 1rem;
+}
+
+.form-container{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    font-family: 'Poppins';
+    justify-content: space-evenly;
+}
+
+
+form label{
+    background-color: rgba(0,0,0,.05);
+    margin-right: -5.5px;
+    padding-bottom: 5px;
+    padding-top: 1px;
+    align-self: center;
+}
+form button{
+    float: right;
+    background-color: #fb3e44;
+    height: fit-content;
+    padding: 7px 8px;
+    font-size: 0.8em;
+    margin: 8px 0;
+    color: white;;
+}
+
+form input{
+    padding: 6px;
+    margin-bottom: 8px;
+    border:none;
+    background-color: rgba(0,0,0,.05);
+    width: 600px;
+    font-size: 0.8em;
+    height: auto;
+    font-family: Poppins;
+}
+
+
+
+.magnify{
+    margin-top: 8px;
+    height:20px;
+    width:20px;
+}
+
+.logo{
+    margin-top: 0.7%;
+    width:8%;
+    height: 8%;
+    margin-right: 2%;
+}
+
+.header-links{
+    justify-content: space-evenly;
+}
+
+.join{
+    border: 1px solid lightgray;
+    padding:3px 13px;
+    color: black;
+    text-decoration: none;
+}
+
+.login{
+    color: darkgray;
+    margin-left: 5px;
+    text-decoration: none;
+}
+
+#section1{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 600px;
+    background-color: rgba(232,217,217,.3);
+}
+
+#section1 > div{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    width:40%;
+    align-items: center;
+    margin-top: 5%;
+}
+
+
+.seeplans{
+    border: 1px hidden;
+    padding: 20px 40px;
+    width: auto;
+    background-color: #FB3B49;
+    color: white;
+    font-family: 'Poppins';
+    text-decoration: none;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+}
+
+#section1 h1{
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+#section1 article{
+    text-wrap: wrap;
+    width:35%;
+    text-align: center;
+
+}
+
+.joinforfree{
+    text-decoration: none;
+    color:  black;
+    border: 1px hidden;
+    padding: 20px 40px;
+    background-color: white;
+}
+
+#section2{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 600px;
+    background-color: white;
+
+}
+
+#section2 img{
+    width: 40%;
+    height: 30%;
+}
+
+#section2 h2{
+    background-color: rgba(255,204,53,.4);
+    padding: 0px 30px;
+    transform: skew(9deg, 0deg);
+    font-weight: 900;
+    font-style: italic;
+    font-size: 2em;
+    margin-top: 3%;
+}
+
+#section2 article{
+    text-wrap: wrap;
+    width:55%;
+    text-align: center;
+    margin-top: 0%;
+}
+
+
+#section3 > div{
+    display: flex;
+    width: auto;
+    height: 600px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    margin-top: 5%;
+}
+
+#section3 img {
+    width:40px;
+    height: 50px;
+    
+}
+
+#section3 div{
+    margin: 0 5%;
+
+}
+
+#section3 > div > div > h3{
+    color: #ED1c24;
+}
+
+#section3 .button-org{
+    align-content: flex-start;
+    height: 40px;
+    justify-content: center;
+    margin-bottom: 10%;
+    margin-top: -10%;
+}
+
+#section3 > div> button{
+    background-color: black;
+    color: white;
+    padding: 18px 90px;
+    font-family: 'Poppins';
+    font-size: 1.3em;
+    align-self: center;
+    text-align: center;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+}
+
+
+@media screen and (max-width:500px){
+    #section3 > div{
+        flex-wrap: wrap;
+        margin-top: 10%;
+    }
+
+    #section1{
+        height:100%;
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 10%;
+    }
+
+    #section1 h1{
+        flex-wrap: wrap;
+        text-align: center;
+
+    }
+
+    .joinforfree{
+        padding: 5% 15%;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+
+    #section1 > div{
+        justify-content: space-around;
+        margin-bottom: 15%;
+    }
+
+
+    .nav{
+        width:100%;
+        display: flex;
+        align-items: center;
+
+    }
+
+    #section3 .button-org{
+        align-content: flex-start;
+        height: 20px;
+        justify-content: center;
+        margin-bottom: 10%;
+        margin-top: 60%;
+    
+    }
+}
+
