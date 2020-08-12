@@ -3,8 +3,8 @@
 body {
   font-family: 'Poppins';
 }
-/*header and nav*/
 
+/*header and nav*/
 header > div {padding: 0 25px;
 display: flex;
 justify-content: space-between;
@@ -30,12 +30,14 @@ color:black;
 }
 
 /*search bar logo npm*/
-#search-bar{width: 600px;
+#search-bar{
 display: flex;
 justify-content: space-between;
 align-items: center;
 align-content: center;
-margin-top: 5px;
+padding-top: 5px;
+padding-bottom: 5px;
+
 }
 
 .npm-logo {
@@ -44,31 +46,55 @@ margin-top: 5px;
 
 .magnifying-glass{
     width:20px;
-    background-color: rgba(0,0,0,.005);
+    height: 20px; 
+    padding: 5px;
 
 }
 
-#form-search button{
+#form-search{
+    width: 100%;
+    display: flex;
+    background-color: rgba(0,0,0,.05);
+    justify-content: space-between;
+    line-height: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+#search-button{
     border: none;
     background-color: #fb3e44;
     color: white;
-    padding: 10px;
-    margin-bottom:5px;
+    padding: 5px;
 }
 
 #search-bar input{
+    text-align: left;
+    width: 100%;
     background-color: rgba(0,0,0,.005);
     border:none;
-    padding:10px;
-    margin-bottom: 5px;
-    width: 70%;
+    padding-left: 10px;
+}
+
+.join-login{
+    width: 150px;
 }
 
 .btn-join{
-    border-style: groove solid solid solid;
+    width: 60px;
+    border-style: groove groove groove groove;
     background-color: white;
-    padding: 1px 10px;
+    padding: 5px;
+    margin-right: 5px;
+    font-size: 13px;
 
+}
+
+.join-login a{
+    text-decoration: none;
+    font-size: 13px;
+    color: black;
+    text-align: center;
 }
 
 /*first section*/

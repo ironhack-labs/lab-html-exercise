@@ -23,17 +23,19 @@
             </div>
 
             <!--logo, search bar(form)and buttons-->
-            <div id="search-bar" >
+            <div id="search-bar">
 
                 <img class="npm-logo" src="https://raw.githubusercontent.com/ironhack-labs/lab-html-exercise/06f6124f5e3232d861ff975de5348f81839217a6/images/npm-logo.png" alt="npm logo"/>     
-                <img class="magnifying-glass" src="https://raw.githubusercontent.com/ironhack-labs/lab-html-exercise/06f6124f5e3232d861ff975de5348f81839217a6/images/magnifying-glass.png" alt="magnifying glass"/>
+               
                 
                 <form id="form-search" action="/search" method="POST">
+                    <img class="magnifying-glass" src="https://raw.githubusercontent.com/ironhack-labs/lab-html-exercise/06f6124f5e3232d861ff975de5348f81839217a6/images/magnifying-glass.png" alt="magnifying glass"/>
                     <input type="text" name="q" placeholder="Search packages"/>
-                    <button type="submit">Search</button>
+                    <button id="search-button" type="submit">Search</button>
                 </form>
 
                 <div class="join-login">
+                    
                     <button class="btn-join" type="submit">Join</button>
                     <a href="#">Log In</a>
                 </div>
@@ -121,6 +123,6 @@
                 </form>
             </div>
         </section>
-        
+
     </body>
     </html>
