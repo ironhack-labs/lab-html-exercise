@@ -4,6 +4,12 @@ body {
   font-family: 'Poppins';
 }
 
+html, body {
+  margin:0;
+  padding:0;
+}
+
+/*Navbar*/
 header > div {
     padding: 0 25px;
     display: flex;
@@ -34,9 +40,9 @@ header > div {
   }
 
 /*Header*/  
-.header {
+#header {
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
       height:70px;
   }
 
@@ -46,61 +52,57 @@ header > div {
 
 #search-form {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  width: 80%;
+  width: 100%;
   height: 50px;
+}
+
+form > label {
+  display: flex;
+  align-items: center;
+}
+
+label > img {
+  height: 30px;
+  padding: 10px;
+  background-color:rgba(0,0,0,.05);
 }
 
 form > input {
   background-color: rgba(0,0,0,.05);
-  width: 100%;
+  width: 85%;
   height: 50px;
   border: none;
   font-size: 1.2em;
-  padding-left: 20px;
+  padding-left: 10px;
 } 
 
 form > button {
-  background-color: #FB3B49;
+  background-color:  #fb3e44;
   color: white;
-  border: 1px solid black;
   height: 50px;
-  padding-left: 100px;
-  
-  
+  padding: 12px 30px;
+  border: none; 
+  font-size: 1.2em;
 }
 
-.search-button {
-  background-color: #FB3B49;
-  color: white;
-  padding: 12px 20px;
-}
-
-form img {
-  height: 30px;
-  padding:10px 20px;
-  background-color:rgba(0,0,0,.05);
-  
-}
-
-.tbc {
+.header-buttons {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   width: 10%;
-  height: 70px;
 }
 
-.header-button {
-  padding: 10px 28px;
+.header-link {
+  padding: 8px 20px;
   color: #837979;
   text-decoration: none;
   font-weight: bolder;
 }
 
-.border-button {
-  border: 1px solid black;
+.button-border {
+  border: 1px solid #837979;
 }
 
 /*Section1*/
@@ -176,7 +178,6 @@ h1 {
   background-color: rgba(255,204,53,0.4);
   padding-left: 100px;
   padding-right: 100px;
-  
 }
 
  #openSource article p {
@@ -198,7 +199,7 @@ h1 {
 #features > div {
   display: flex;
   flex-direction: row;
-  width: 80%;
+  width: 90%;
   margin: auto; 
 }
 
@@ -223,8 +224,7 @@ h1 {
   width: 25%;
   margin: 20px auto;
   padding: 10px;
-  box-shadow: 8px 8px 0 rgba(128,83,35,.2);
-
+  box-shadow: 8px 8px 0 rgba(128,83,35,0.2);
 }
 
 
