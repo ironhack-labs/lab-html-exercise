@@ -14,6 +14,7 @@ html,body{
     padding: 0 20px;
     border-bottom: 2px solid rgb(236, 227, 227);
     margin: 0 30px 10px 30px;
+    height: 80px;
 }
 .black-heart{
     width: 40px;
@@ -103,7 +104,7 @@ input{
     border-top: 1.8px solid rgba(3, 3, 3, 0.432);
     padding: 7px 25px;
     border-radius: 0 0 5px 5px;
-    box-shadow: 1px 0px 1px 1px rgba(0, 0, 0, 0.247);
+    box-shadow: 1px 0px 1px 1px rgba(65, 64, 64, 0.247);
     margin-right: 15px;
 }   
 .link-two{
@@ -118,14 +119,15 @@ input{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        /* justify-content: space-between; */
         align-items: center;
         margin: 0 30px;
-        padding-bottom: 150px;
+        padding-bottom: 80px;
         padding-top: 0px;
+        box-shadow:  inset 0px 7px 10px -5px rgba(141, 137, 137, 0.466)
     }
     h1{
         font-size: 5em;
+        line-height: 5px;
         /* font-family: 'Poppins';
         font-weight: 900; */
     }
@@ -137,6 +139,7 @@ input{
     }
     .section-one-links a{
         text-decoration: none;
+        font-size: 1.2em;
     }
     .plans-link{
         background-color: #FB3B49;
@@ -144,7 +147,6 @@ input{
         padding: 25px 90px;
         margin-right: 15px;
         color: white;
-        font-size: 1.2em;
     }
     .join-link{
         background-color: #fff;
@@ -156,5 +158,78 @@ input{
 /* end of section one */
 
 /* section two */
-   
+   #section-two{
+       height: 550px;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       padding: 80px;
+       margin-bottom: 80px;
+   }
+   .hexagon{
+       width: 300px;
+       padding-bottom: 20px;
+   }
+   h2{
+       font-size: 3em;
+       background-color: rgba(255,204,53,.4);
+       padding: 0 30px;
+       transform: skew(9deg,0deg);
+       font-style: italic;
+       line-height: 48px;
+   }
+   #section-two p{
+       text-align: center;
+       font-size: 1.1em;
+   }
 /* end of section two */
+
+/* section three */
+#section-three{
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: flex-start;
+}
+#section-three img{
+    width: 40px;
+    padding: 0 0 8px 0;
+}
+.boxes{
+    width: 340px;
+    padding: 0 20px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+h3{
+    color: #ED1C24;
+}
+#section-three p{
+    font-size: 1.1em;
+    margin: 10px 0 0 0;
+}
+.org{
+    display: flex;
+    width: 400px;
+    height: 60px;
+    padding: 10px 45px;
+    background-color: black;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    margin: 70px 0 40px 0;
+    align-items: center;
+    justify-content: center;
+}
+.org > a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+}
+
+
+
+/* end of section three */
