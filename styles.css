@@ -12,8 +12,8 @@ html,body{
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
-    border: 2px solid rgb(236, 227, 227);
-    margin-bottom: 10px;
+    border-bottom: 2px solid rgb(236, 227, 227);
+    margin: 0 30px 10px 30px;
 }
 .black-heart{
     width: 40px;
@@ -61,10 +61,17 @@ html,body{
 .magnifying-glass{
     position: absolute;
     width: 20px;
-    margin-left: 200px;
+    margin-left: 140px;
 }
 .form label{
     background-color: rgba(0,0,0,.05);
+}
+input{
+    text-indent: 30px;
+}
+::placeholder{
+    font-size: 1.2em;
+    font-family: 'Poppins';
 }
 .text{
     width: 100em;
@@ -72,8 +79,6 @@ html,body{
     position: relative;
     background-color: rgba(0,0,0,.05);
     padding: 20px 20px 20px;
-    padding-left: 40px;
-    margin-left: 40px;
     border: none;
 }
 .button{
@@ -83,23 +88,73 @@ html,body{
     border: 1px solid rgba(139, 136, 136, 0.247);
     font-size: 0.9em;
 }
-.links{
-    width: 240px;
+.header-links{
+    width: 250px;
     display: flex;
 }
-.links a{
+.header-links a{
     text-decoration: none;
     justify-content: center;
     align-items: center;
+    color: black;
 }
 .link-one{
     border: 1px solid rgba(0, 0, 0, 0.247);
     border-top: 1.8px solid rgba(3, 3, 3, 0.432);
-    padding: 7px 20px;
-    border-radius: 1px;
+    padding: 7px 25px;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 1px 0px 1px 1px rgba(0, 0, 0, 0.247);
     margin-right: 15px;
 }   
 .link-two{
-    /* margin-left: 10px; */
     align-self: center;
 }
+/***** end of header ******/
+
+/* section one */
+    #section-one{
+        background-color: rgba(232,217,217,.3);
+        height: 550px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* justify-content: space-between; */
+        align-items: center;
+        margin: 0 30px;
+        padding-bottom: 150px;
+        padding-top: 0px;
+    }
+    h1{
+        font-size: 5em;
+        /* font-family: 'Poppins';
+        font-weight: 900; */
+    }
+    .description{
+        margin-bottom: 80px;
+        text-align: center;
+        font-size: 1.2em;
+        
+    }
+    .section-one-links a{
+        text-decoration: none;
+    }
+    .plans-link{
+        background-color: #FB3B49;
+        box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+        padding: 25px 90px;
+        margin-right: 15px;
+        color: white;
+        font-size: 1.2em;
+    }
+    .join-link{
+        background-color: #fff;
+        padding: 25px 90px;
+        margin-left: 15px;
+        color: black;
+    }
+
+/* end of section one */
+
+/* section two */
+   
+/* end of section two */
