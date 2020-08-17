@@ -38,9 +38,20 @@ header > div {
       margin-right: 1rem; 
   }
 
+#search-packs{
+  position: relative;
+  
+}
+
+#search-packs input{
+  width: 70%;
+}
+
   .mag-glass{
       width: 20px; 
-      position: relative;
+      position: absolute;
+      top: 0px; 
+      left: 0px; 
   }
   
 #build{
@@ -106,18 +117,42 @@ text-decoration: none;
   width: 20px;
 }
 
-   #create{
-    height: 600px;
+#create-section{
+  height: 600px;
+  background-color: rgba(232,217,217,.3);
+}
+
+   .container{
+    
     display: flex; 
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    background-color: rgba(232,217,217,.3);
+     
+    }
+
+   .container h3{
+     color: #ED1C24;
+     font-size: 0.9em; 
    }
 
-   #create p{
-     font-size: 0.9em;
+   .container p{
+     font-size: 0.7em;
    }
 
    .info-box{
-     margin: 10px 50px; 
+    margin: 0px 50px; 
    }
+
+   .btn-footer{
+    margin: 50px auto 0 auto;
+    text-align: center;
+   }
+   .create-org{
+    background-color: black; 
+    color: white; 
+    padding: 10px 100px; 
+    text-decoration: none; 
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    font-size: 0.9em; 
+    }
+   

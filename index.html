@@ -1,5 +1,7 @@
 
-<head> <link rel="stylesheet" href="style.css"></head>
+<head> <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
 <header>
     <div>
       <div>
@@ -23,10 +25,12 @@
         <img class="mag-glass" src="images\magnifying-glass.png" alt="magnyfying glass"/>
         <form action="/form/submit" method="GET" id="search-packs">
             <label for="search"></label>
-            <input type="text" name="text" class="search" placeholder="Search Packages">
+            <input type="search" name="search" class="search" placeholder="Search Packages">
             <input type="submit" name="submit" class="submit" value="Search">
-          </form>
-          <div>
+            <img class="mag-glass" src="images\magnifying-glass.png" alt="magnyfying glass"/>
+           </form>
+         
+            <div>
             <a href="#" class="join-btn">Join</a>
             <a href="#" class="login-btn">Log In</a>
           </div>
@@ -57,7 +61,8 @@ modern open source code.</p>
       </article>
     </section>
     
-    <section id="create">
+    <section  id=create-section>
+      <article class="container">
       <div class="info-box">
         <img class="info-icon" src="images\zero-configuration.svg" alt="zero configuration"/>
           <h3>
@@ -89,6 +94,10 @@ modern open source code.</p>
         <p>Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer.</p>
       </div>
 
-      <a href="#" class="create-org">Create an Org</a>
+      </article>
 
-    </section>
+      <footer class=btn-footer>
+      <a href="#" class="create-org">Create an Org</a>
+      </footer>
+      </section>
+      
