@@ -1,10 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 html,body{
     padding: 0;
     margin: 0;
     font-family: 'Poppins';
-    /* font-weight: 900; */
 }
 /******** header *******/
 /* top row */
@@ -12,10 +11,10 @@ html,body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
     border-bottom: 2px solid rgb(236, 227, 227);
-    margin: 0 30px 10px 30px;
+    margin: 0 25px 0 25px;
     height: 80px;
+    padding: 10px 0 0 0;
 }
 .black-heart{
     width: 40px;
@@ -27,8 +26,12 @@ html,body{
     padding: 20px;
     align-items: center;
 }
+.black-heart>p{
+    font-size: 1.1em;
+    font-weight: 500;
+}
 .nav-bar{
-    width: 650px;
+    width: 680px;
 }
 .nav-bar ul{
     margin-right: 1rem;
@@ -43,6 +46,8 @@ html,body{
 .nav-bar a{
     text-decoration: none;
     color: black;
+    font-size: 1.1em;
+    font-weight: 500;
 }
 /* bottom row */
 .bottom-row{
@@ -50,15 +55,19 @@ html,body{
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 10px 50px;
+    padding: 15px 10px 15px 40px;
 }
 .image-logo{
     width: 80px;
+    position: relative;
+    margin-left: 15px;
 }
 .form{
-    width: 1500px;
+    width: 1600px;
     display: flex;
     justify-content: center;
+    position: absolute;
+    margin-left: 75px;
 }
 .magnifying-glass{
     position: absolute;
@@ -72,11 +81,11 @@ input{
     text-indent: 30px;
 }
 ::placeholder{
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-family: 'Poppins';
 }
 .text{
-    width: 100em;
+    width: 102em;
     height: 10px;
     position: relative;
     background-color: rgba(0,0,0,.05);
@@ -89,32 +98,37 @@ input{
     border: 1px solid rgba(139, 136, 136, 0.247);
     font-size: 1.1em;
     padding: 0 30px 0 0;
+    font-weight: 400;
 }
 .header-links{
     width: 250px;
     display: flex;
+    font-size: 1.1em;
 }
 .header-links a{
     text-decoration: none;
     justify-content: center;
     align-items: center;
     color: black;
-    font-size: 1.1em;
+    font-weight: 400;
 }
 .link-one{
     border: 1px solid rgba(0, 0, 0, 0.247);
     border-top: 1.8px solid rgba(3, 3, 3, 0.432);
     padding: 7px 25px;
-    border-radius: 0 0 5px 5px;
+    border-radius: 5px;
     box-shadow: 1px 0px 1px 1px rgba(65, 64, 64, 0.247);
     margin-right: 20px;
 }   
 .link-two{
     align-self: center;
 }
+span{
+    color: rgb(94, 91, 91);
+}
 /***** end of header ******/
 
-/* section one */
+/***** section one *****/
     #section-one{
         background-color: rgba(232,217,217,.3);
         height: 550px;
@@ -128,20 +142,20 @@ input{
         box-shadow:  inset 0px 7px 10px -5px rgba(141, 137, 137, 0.466)
     }
     h1{
-        font-size: 5em;
-        line-height: 5px;
-        /* font-family: 'Poppins';
-        font-weight: 900; */
+        font-size: 5.1em;
+        line-height: 5.4px;
+        font-weight: 700;
     }
     .description{
         margin-bottom: 80px;
         text-align: center;
-        font-size: 1.2em;
-        
+        font-size: 1.4em;
+        font-weight: 400;
     }
     .section-one-links a{
         text-decoration: none;
-        font-size: 1.2em;
+        font-size: 1.3em;
+        font-weight: 700;
     }
     .plans-link{
         background-color: #FB3B49;
@@ -156,10 +170,9 @@ input{
         margin-left: 15px;
         color: black;
     }
+/***** end of section one *****/
 
-/* end of section one */
-
-/* section two */
+/***** section two *****/
    #section-two{
        height: 550px;
        display: flex;
@@ -184,10 +197,11 @@ input{
    #section-two p{
        text-align: center;
        font-size: 1.1em;
+       color: rgb(94, 91, 91);
    }
-/* end of section two */
+/***** end of section two *****/
 
-/* section three */
+/***** section three *****/
 #section-three{
     height: 400px;
     display: flex;
@@ -214,6 +228,7 @@ h3{
 #section-three p{
     font-size: 1.1em;
     margin: 10px 0 0 0;
+    color: rgb(94, 91, 91);
 }
 .org{
     display: flex;
@@ -231,7 +246,4 @@ h3{
     color: white;
     font-size: 1.5em;
 }
-
-
-
-/* end of section three */
+/***** end of section three *****/
