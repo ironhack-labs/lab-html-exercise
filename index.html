@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>NPM Clone</title>
+        <link rel="stylesheet" href="./style.css"/>
     </head>
     <body>
         <header>
@@ -21,20 +22,22 @@
                     </ul>
                 </nav>
             </div>
-            <div>
+            <div class="logomenu">
                 <div>
                     <img class="logo" src="images/npm-logo.png" alt="logo">
                 </div>
                 <div>
                     <form action="#" method="GET">
-                        <img src="images/magnifying-glass.png">
-                        <input type="text" placeholder="Select packages">
-                        <button type="button"> Search </button> 
+                        <div class="searchbar">
+                            <img src="images/magnifying-glass.png">
+                            <input type="text" class="placeholder" placeholder="Select packages">
+                            <button type="button" class="buttonsearch"> Search </button>
+                        </div>
                     </form>
                 </div>
                 <div>
-                    <a href="#"> Join</a>
-                    <a href="#"> Log In</a>
+                    <a href="#" class="buttonjoin"> Join</a>
+                    <a href="#" class="buttonlogin"> Log In</a>
                 </div>
             </div>
         </header>
