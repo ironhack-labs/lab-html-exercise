@@ -28,6 +28,11 @@ header > div {
   nav a {
     text-decoration: none;
     color: black;
+    transition: color 2s;
+  }
+
+  nav a :hover {
+      color: rgb(158, 158, 158);
   }
   
   .blackHeart {
@@ -36,8 +41,8 @@ header > div {
   }
 
 .second-header {
-    margin-top:15px;
-    padding-bottom: 25px;
+    margin-top:7px;
+    padding-bottom: 10px;
 }
 
 .search-bar {
@@ -46,6 +51,9 @@ header > div {
     flex-direction: row;
     align-content: center;
     justify-content: center;
+    width: calc(70% - 10px);
+
+    
 }
 
 .second-header > img {
@@ -56,6 +64,7 @@ header > div {
     margin: 15px;
     width: 15px;
     height: 15px;
+    
 }
 
 form {
@@ -65,6 +74,8 @@ form {
     flex-direction: row;
     align-content: center;
     justify-items: center;
+    width:100%;
+    
 }
 
 .search-bar input {
@@ -90,19 +101,19 @@ form {
     border: none;
     background-color: white;
     height: 45px;
-    width: 54.25px;
+    width: 80px;
 }
 
 .join-button {
     background-color: white;
     height: 45px;
-    width: 54.25px;
+    width: 80px;
 }
 
 h1 {
     text-align: center;
     font-size: 5rem;
-    font-weight: 600;
+    font-weight: bolder;
 }
 
 .first-section {
@@ -115,8 +126,9 @@ h1 {
 }
 
 .first-section article {
+    width: 500px;
     text-align: center;
-    margin: 0 350px 40px 350px;
+    margin: 0 auto 40px auto;
 }
 
 .buttons-div {
@@ -171,11 +183,12 @@ h1 {
 }
 
 .second-section article {
-    margin: 0 300px 20px 300px;
+    width:500px;
+    margin: 20px auto 20px auto;
 }
 
 .third-section {
-    margin:20px 75px;
+    margin:70px 20px 20px 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
