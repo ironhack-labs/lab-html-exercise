@@ -1,6 +1,7 @@
 <!DOCTYPE HTML>
 <html lang = "en">
 <head>
+    <link rel="stylesheet" href="style.css">
   <title>NPM Clone</title>
   <meta charset = "UTF-8" />
 </head>
@@ -8,46 +9,44 @@
     
 <!-- begin header nav section-->
 
-    <header>
-        <div>
-            <div>
-                <img src="images/black-heart.png" alt="black heart icon">
-                <span>Nifty Penguin Magic</span>
-            </div>
-    
-            <nav>
-               <ul>
-                   <a href="#"><li>npm Enterprise</li></a>
-                   <a href="#"><li>Products</li></a>
-                   <a href="#"><li>Solutions</li></a>
-                   <a href="#"><li>Resources</li></a>
-                   <a href="#"><li>Docs</li></a>
-                   <a href="#"><li>Support</li></a>
-               </ul>
-            </nav>
-        </div>
-        
-
-        <div>
-            <img src="images/npm-logo.png" alt="npm logo">
-            <form action="" method="POST"> 
-                <img src="images/magnifying-glass.png" alt="magnifying-glass">
-                <input type="text" placeholder=" Search Packages">
-                <input type="button" value="search">
-            </form>
-            <div>
-                
-                <a href="#"><button>Join</button></a>
-                <a href="#"><button>Log In</button></a>
-                
-                
-                
-            </div>
-            
-        </div>
+<header>
+    <div class="header">
+      <div>
+        <img class="blackHeart" src="images/black-heart.png" alt="black heart" />
+        <span> Nifty Penguin Magic </span>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#"> npm Enterprise </a></li>
+          <li><a href="#"> Products </a></li>
+          <li><a href="#"> Solutions </a></li>
+          <li><a href="#"> Resources </a></li>
+          <li><a href="#"> Docs </a></li>
+          <li><a href="#"> Support </a></li>
+        </ul>
+      </nav>
+    </div>
   
+    <div class="second-header">
+        <img src="images/npm-logo.png" alt="npm logo">
 
-    </header>
+        <div class="search-bar">
+            <form action="" method="POST">
+                <img src="images/magnifying-glass.png" alt="magnifying glass">
+                <input type="search" placeholder="Search Packages">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+
+
+
+        <div>
+            <button class="join-button">Join</button>
+            <button class="login-button">Log In</button>
+        </div>
+    </div>
+  </header>
+  
 
 <!-- end header nav section-->
 
