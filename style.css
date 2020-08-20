@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
-body {
+html, body {
   font-family: 'Poppins';
+  margin: 0;
+  padding:0;
 }
 
 header > div {
@@ -39,6 +41,7 @@ header > div {
 }
 
 .search-bar {
+
     display: flex;
     flex-direction: row;
     align-content: center;
@@ -56,7 +59,8 @@ header > div {
 }
 
 form {
-    background-color:rgb(195,195,195);
+
+    background-color:rgb(195,195,195,0.5);
     display: flex;
     flex-direction: row;
     align-content: center;
@@ -77,7 +81,7 @@ form {
 }
 
 .search-bar button {
-    background-color: red;
+    background-color: #FB3B49;
     color: white;
     border: none;
 }
@@ -95,4 +99,46 @@ form {
     width: 54.25px;
 }
 
+h1 {
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 600;
+}
 
+.first-section {
+    background-color:rgb(232,217,217,.3);
+    height:600px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-content: center;
+}
+
+.first-section article {
+    text-align: center;
+    margin: 0 350px 40px 350px;
+}
+
+.buttons-div {
+    text-align: center;
+    
+    height:75px;
+}
+
+.see-plans-button {
+    background-color: #FB3B49;
+    color: white;
+    border: none;
+    width: 150px;
+    height:50px;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+    margin:10px;
+}
+
+.join-for-free-button {
+    border: none;
+    width: 150px;
+    height:50px;
+    background-color: rgb(232,217,217,.3) ;
+    margin: 10px;
+}
