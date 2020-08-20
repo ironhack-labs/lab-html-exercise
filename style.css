@@ -34,52 +34,48 @@ nav a {
 }
 
 header > div:last-child {
-    padding: 10px 25px;
-    justify-content: space-around;
+  padding: 10px 25px;
+  justify-content: space-around;
 }
 
 #flexContainer {
-    display: flex;
     justify-content: space-between;
 }
 
+
 #imgDiv {
-    flex: 1 1 auto;
-    align-items: stretch;
+  max-width: 70px;
 }
 
 #imgDiv img{
-    max-width: 100%;
-    width: 50%;
-    margin: 0;
+  max-width: 100%;
+  margin-top: 7px;
 }
 
 #formDiv {
-    flex-grow: 8;
-}
-
-#flexContainerLinks {
-    flex-grow: 0;
+  flex-grow: 1;
+  margin: 0 30px;
 }
 
 form {
-    display: flex;
-    margin: 0;
-    max-width: 100%;
+  display: flex;
+  margin: 0;
+  max-width: 100%;
 }
 
-form input, form button {
-    border: none;
-    padding: 20px;
+form input,
+form button {
+  border: none;
+  padding: 20px;
 }
 
 form input {
-    background-color: rgb(239, 239, 239);
-    flex-grow: 8;
+  background-color: rgb(239, 239, 239);
+  flex-grow: 8;
 }
 
 form button {
-    background-color: rgb(255, 31, 31);
-    color: white;
-    float: right;
+  background-color: rgb(255, 31, 31);
+  color: white;
+  float: right;
 }
