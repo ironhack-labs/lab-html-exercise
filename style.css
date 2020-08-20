@@ -1,19 +1,232 @@
-.first-section{
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body {
+  font-family: 'Poppins';
+}
+*{
+    margin:0;
+    padding:0;
+}
+header {
     width:100%;
-    height: 400px;
+    
 }
-.second-section{
+
+.first-div{
     width:100%;
-    height: 400px;
+    display:inline-flex;
+    height:50%;
+    border-bottom: 1px solid lightgray;
+    
 }
-.third-section{
+
+.heart{
+    width:20px;
+    height:10px;
+}
+
+.inner-first-div{
+    width:50%;
+}
+
+.inner-second-div{
+    width:50%;
+    text-align: right;
+    height: 10px;
+
+}
+ul{
+    list-style-type:none;
+    display:inline-flex;
+    margin-right: 20px;
+    align-items: center;  
+}
+ul > li{
+    padding: 10px;  
+}
+
+.slogan-wrapper{
+    display:inline-flex;
+    align-items:center;
+    padding:10px;
+    margin-left:20px;
+}
+.slogan-wrapper>p{
+    margin-left: 20px;
+}
+.second-div{
     width:100%;
-    height: 400px;
+    display:inline-flex;
+    height:50%;
+    align-content: center;
+    list-style: none;
 }
-section{
-    text-align:center;
+.npm-wrapper{
+    width:3em;
+    height: 70%;
+    margin-top: 5%;
+    size : 3em;
 }
-section>img{
-    width: 200px;
-    height: 400px;
+input{
+    width: 1400px;
+    height:40px;
+    border:none;
+}
+
+button,a{
+    height:40px;
+    width: 70px;   
+}
+li > a{
+    height:40px;    
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+
+}
+
+.magnifying-glass-wrapper{
+    align-items: center;
+    width:40px;
+    height:40px;
+    float:left;
+}
+.magnifying-glass-img{
+    height: 40px;
+}
+.input-line{
+    background-color: rgba(0,0,0,.05);
+    margin-top: 10px;
+    margin-bottom:10px;
+}
+.red-button {
+    color: white;
+    background-color: #fb3e44;
+    height: 60px;
+    width: 100px;
+}
+.button-line{
+    padding-left : 0px;
+}
+li > input {
+    background: transparent;
+}
+nav > ul > li > a{
+    text-decoration: none;
+    color : black;
+}
+.join-border {
+    border : 1px solid lightgray;
+}
+#first-section {
+    height: 600px;
+    background-color: rgba(232,217,217,.3);
+    text-align: center;
+
+}
+h1 {
+ font-size: 3em;
+ padding-top: 2.5em;
+}
+.article-one {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5em;
+    
+}
+
+.see-plans {
+    background-color: #FB3B49;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+    width: 50%; 
+    color: white;
+    text-align: center;
+}
+#first-section > div > button {
+   
+    padding-top: 1.2em;
+    padding-bottom: 1.2em;
+}
+
+#first-section > div {
+    align-items: center;
+    justify-content: left;
+    width: 388.984px;
+    display: inline-flex;
+    margin-top: 5em;
+  
+}
+.article-one > div ,button{
+    border: none;
+}
+.join-for-free {
+    margin-left: 5%;
+    width: 50%;
+}
+
+#second-section {
+    height: 600px;
+   text-align: center;
+    flex: relative;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-top: 1.8em;
+    background-color:  rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+    font-style: italic;
+    margin-left: 25em;
+    margin-right: 19em;
+    align-items: center;
+    width: 37%;
+}
+
+.triangle-hexagon {
+    width: 180px;
+    height: 180px;
+    margin-top: 3em;
+}
+
+.article-two {
+    text-align: center;
+    line-height: 1.6em; 
+    width: 25%;
+    margin-top: 3em;
+    display: inline-block;
+}
+.article-wrapper> div > img{
+    width: 30px;
+    height: 30px;
+}
+.org-button {
+    background-color: black;
+    color: white;
+    width: 500px;
+    height: 50px;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+}
+.article-wrapper{
+    height: 100px; 
+    display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+    padding: 50px;
+}
+.article-wrapper > div{
+    width: 20%;
+    
+}
+#third-section{
+    height: 600px;
+}
+.article-wrapper h3{
+    color: #ED1C24;
+}
+.button-wrapper{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    margin-top: 8.5em;
 }

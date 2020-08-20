@@ -19,87 +19,95 @@ auditing features built into the npm client, a zero-friction way to make open so
 </head>
 
 <body>
-    <header>
-        <div>
-            <div>
-                <!-- img   -->
-                <img class="heart" src="images/black-heart.png" alt="black-heart" />
-                <span> Nitty Penguin Magic </span>
+    <header>                  
+        <!--First Div-->
+        <div class="first-div">
+            <div class="inner-first-div">
+                <div class="slogan-wrapper">
+                    <img class="heart" src="images/black-heart.png" alt="black-heart">
+                    <p>Nifty Penguin Magic</p>
+                </div>               
             </div>
-            <nav>
-                <ul>
-                    <li><a href="#"> npm Enterprise </a></li>
-                    <li><a href="#"> Products </a></li>
-                    <li><a href="#"> Solutions </a></li>
-                    <li><a href="#"> Resources </a></li>
-                    <li><a href="#"> Docs </a></li>
-                    <li><a href="#"> Support </a></li>
-                </ul>
-            </nav>
-        </div>
-        <img src="images/npm-logo.png" alt="npm">
 
-        <div>
-            <!-- add logo, search bar and buttons (or links and style them as buttons later) -->
-            <form>
-                <img src="images/magnifying-glass.png" alt="magnifying-glass">
-                <input type="text" placeholder="Search packages">
-                <button type="submit"> Search </button>
-            </form>
+            <div class="inner-second-div">
+                <nav>
+                    <ul>
+                        <li><a href="#"> npm Enterprise </a></li>
+                        <li><a href="#"> Products </a></li>
+                        <li><a href="#"> Solutions </a></li>
+                        <li><a href="#"> Resources </a></li>
+                        <li><a href="#"> Docs </a></li>
+                        <li><a href="#"> Support </a></li>
+                    </ul>
+                </nav>
+            </div>            
         </div>
+    <!--First Div-->
 
-        <div>
-            <a href="#"> Join </a>
-            <a href="#"> Log In </a>
-        </div>
-
-        </div>
-
+    <!--Second Div-->
+    <div class="second-div">
+        <ul>
+            <li><img class="npm-wrapper" src="images/npm-logo.png" alt="npm"></li>
+            <li class="input-line">
+                <div class="magnifying-glass-wrapper"><img class="magnifying-glass-img" src="images/magnifying-glass.png" alt="magnifying-glass"></div>
+                <input type="text"placeholder="Search Packages">                                
+            </li>    
+            <li class="button-line"><button class="red-button" type="button">Search</button> </li>     
+            <li><a class="join-border">Join</a></li>
+            <li><a>Login</a></li>
+        </ul>                                    
+    </div>
+    <!--Second Div-->
     </header>
+
+
     <!--Section1-->
     <section id="first-section">
         <heading>
             <h1>Build amazing things</h1>
         </heading>
 
-        <article>
-            <p> Essential JavaScript development tools that help
-                <!--br-->
+        <article class="article-one">
+            <p><bold> Essential JavaScript development tools that help
+                <br>
                 you go to market faster and build powerful
-                <!--br-->
-                applications using modern open source code. </p>
+                <br>
+                applications using modern open source code.</bold> </p>
         </article>
 
         <div>
-            <a href="#"> See plans </a>
-            <a href="#"> Join for free </a>
+            <button class="see-plans" type="button">See plans</button>
+            <button class="join-for-free" type="button">Join for free</button>
         </div>
 
     </section>
+
+
     <!--Section2-->
     <section id="second-section">
 
-        <img src="images/triangle-hexagon.svg" alt="triangle-hexagon">
+        <img class="triangle-hexagon" src="images/triangle-hexagon.svg" alt="triangle-hexagon">
 
         <heading>
             <h2>
                 <bold> Bring the best of open source to your company </bold>
             </h2>
         </heading>
-        <article>
-            <p> npm is the tool used by over 11,000,000 JavaScript developers around the world.
-                <!--br--> Your developers already use it.
+        
+        <article class="article-two">
+            npm is the tool used by over 11,000,000 JavaScript developers around the world.
+               Your developers already use it.
                 Your company depends on it. Create an org and get more out of the tools
-                <!--br--> your team already knows and loves.</p>
-        </article>
+                your team already knows and loves.
+        </article> 
+   
 
     </section>
     <!--Section3-->
     <section id="third-section">
-        <div>
+        <div class="article-wrapper">
             <div>
                 <img src="images/zero-configuration.svg" alt="Arrow">
-
                 <heading>
                     <h3>
                         <bold> Zero configuration </bold>
@@ -158,11 +166,14 @@ auditing features built into the npm client, a zero-friction way to make open so
                     client, a zero-friction way to
                     <!--br--> make open source software
                     <!--br--> safer.</p>
-
             </div>
         </div>
-
-        <a href="#"> Create an Org </a>
+        <div class="button-wrapper">
+            <button class="org-button" type="button"> Create an Org</button>
+        </div>
+            
+        
+        
 
     </section>
 
