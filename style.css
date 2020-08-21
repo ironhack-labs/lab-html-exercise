@@ -9,6 +9,8 @@ header > div {
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid lightgray;
+    flex-wrap: wrap;
+    
   }
   
  nav {
@@ -23,7 +25,8 @@ header > div {
   }
   
  
-  nav a { text-decoration: none;
+  nav a { 
+    text-decoration: none;
     color: black;
   }
   
@@ -43,19 +46,45 @@ header > div {
     margin-left: 0.5rem;
   }
 
-  header form{
+  .search-bar{
     background-color: rgba(0,0,0,.05);
-    width: 70%;
+    width: 72%;
     display: flex;
     justify-content: space-between;
+    height: 40px;
 
   }
-  #search{
-      width: 95%;
-      background-color: rgba(0,0,0,.05);
-      border:none;
+  .search-bar-items{
+    display: flex;
+    align-items: center;
+    width: 85%;
   }
-  header form button{
+  #search{
+    background: none;
+    border: none;
+    width: 95%;
+    
+
+  } 
+  .search-bar-button{
     background-color: #fb3e44;
     color: white;
+    border: none;
+    padding: 8px 32px;
+
   }
+  .join-login{
+    padding-left: 2rem;
+    display: flex;
+    
+  }
+  .join-login a{
+    padding: 6px 28px;
+    text-decoration:none;
+    color: black;
+  }
+  .join-button{
+    border: 1px solid #cccccc;
+  }
+
+  .login-button{}

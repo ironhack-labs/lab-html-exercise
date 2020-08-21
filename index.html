@@ -37,15 +37,18 @@ auditing features built into the npm client, a zero-friction way to make open so
         <div>
           <!-- add logo, search bar and buttons (or links and style them as buttons later) -->
           <img class="npm-logo" src="images/npm-logo.png" alt="npm logo" />
-          <form action="#" method="get">
+          
+          <form action="#" method="get" class="search-bar" >
+            <div class="search-bar-items">
             <img class="magnifying-glass" src="images/magnifying-glass.png" alt="magnifying glass" />
             <input type="text" name="" id="search" placeholder="Search packages">
-            <button type="submit">Search</button>
-
-        </form>
-        <div>
-            <a href="#">Join</a>
-            <a href="#">Log In</a>
+            
+            </div>
+          <button type="submit" class="search-bar-button">Search</button>
+          </form>
+        <div class="join-login">
+            <a href="#" class="join-button">Join</a>
+            <a href="#" class="login-button">Log In</a>
         </div>
         </div>
       </header>
@@ -53,7 +56,7 @@ auditing features built into the npm client, a zero-friction way to make open so
           <h1>Build amazing things</h1>
           <article>Essential JavaScript development tools that help you go to market faster and build powerful applications using
             modern open source code.</article>
-          <div>
+          <div >
             <a href="#">See plans</a>
             <a href="#">Join for free</a>
           </div>
