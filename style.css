@@ -2,6 +2,12 @@
 
 body {
   font-family: "Poppins";
+  text-align: center;
+  margin: 0;
+}
+
+button {
+  font-family: "Poppins";
 }
 
 header > div {
@@ -39,14 +45,16 @@ header > div:last-child {
 }
 
 #flexContainer {
-    justify-content: space-between;
+  justify-content: space-between;
+  box-shadow: 1px 2px 3px lightgrey;
+  position: relative;
 }
 
 #imgDiv {
   max-width: 70px;
 }
 
-#imgDiv img{
+#imgDiv img {
   max-width: 100%;
   margin-top: 7px;
 }
@@ -74,9 +82,8 @@ form input {
 }
 
 form button {
-  background-color: rgb(255, 31, 31);
+  background-color: #fb3e44;
   color: white;
-  float: right;
 }
 
 #flexContainerLinks {
@@ -91,4 +98,102 @@ form button {
 
 #flexContainerLinks a:nth-of-type(1) {
   border: 1px solid black;
+}
+
+h1 {
+  margin: 0;
+  font-size: 100px;
+}
+
+#firstSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(232, 217, 217, 0.3);
+  height: 600px;
+}
+
+#firstSection article {
+  font-size: 25px;
+  padding: 20px 0;
+}
+
+#firstSection div {
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+  font-size: 25px;
+  padding: 20px 0;
+}
+
+#firstSection a {
+  padding: 10px 50px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#firstSection a:nth-of-type(1) {
+  color: white;
+  background-color: #fb3b49;
+  box-shadow: 8px 8px 0 rgba(251, 59, 73, 0.2);
+}
+
+#firstSection a:nth-of-type(2) {
+  color: black;
+  background-color: white;
+}
+
+#secondSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 500px;
+  padding: 30px 0;
+}
+
+#secondSection * {
+  margin: 0;
+  padding: 20px 0;
+}
+
+#secondSection h2 {
+  font-size: 40px;
+  background-color: rgba(255, 204, 53, 0.4);
+  transform: skew(14deg, 0deg);
+  font-style: italic;
+  padding: 0 40px;
+}
+
+#thirdSection {
+  margin: 50px 0;
+}
+
+#divContainer {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  justify-content: space-around;
+  padding: 40px 0;
+}
+
+h3 {
+  color: #ed1c24;
+}
+
+#divContainer div {
+  width: 250px;
+}
+
+#divContainer img {
+  max-width: 70px;
+}
+
+#thirdSection button {
+  border: none;
+  background-color: black;
+  color: white;
+  padding: 18px 180px;
+  box-shadow: 8px 8px 0 rgba(128,83,35,.2);
 }
