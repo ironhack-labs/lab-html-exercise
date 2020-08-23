@@ -17,8 +17,8 @@ auditing features built into the npm client, a zero-friction way to make open so
 
     <body>
         <header class="header">
-            <div class="menu">
-                <div class="company-name">
+            <div>
+                <div class="underlined-menu">
                     <img src="images/black-heart.png" alt="black heart icon">
                     <span>Nifty Penguin Magic</span>
                 </div>
@@ -32,14 +32,14 @@ auditing features built into the npm client, a zero-friction way to make open so
                         <li><a class="nav-bar-item" href="#support">Support</a></li>
                     </ul>
                 </nav>
+                </div>
             </div>
 
-            <div class="menu">
-                <img src="images/npm-logo.png" alt="npm logo">
+            <div id="search-menu">
+                <img src="images/npm-logo.png" alt="npm logo" id="logo-img">
                 <form action="" method="get" class="search-form">
                     <label for="search"></label>
-                    <img src="images/magnifying-glass.png" alt="searching icon">
-                    <input type="text" id="search-form" name="search" placeholder="Search packages">
+                    <input type="text" id="search" name="search" placeholder="        Search packages">
                     <button type="submit">Search</button>
                 </form>
                 <div class="acces-area">
@@ -50,7 +50,7 @@ auditing features built into the npm client, a zero-friction way to make open so
         </header>
 
          <!-- Section 1 -->
-        <section id="general-information" class="grey-background">
+        <section id="general-information">
             <h1>Build amazing things</h1>
             <article>
                 <p>Essential Javascript development tools that help you to go to market faster and build powerful applications using modern open source code.</p>
@@ -62,7 +62,7 @@ auditing features built into the npm client, a zero-friction way to make open so
         </section>
 
         <!-- Section 2 -->
-        <section id="value-message" class="white-background">
+        <section id="value-message">
             <img src="images/triangle-hexagon.svg" alt="triangle-hexagon icon">
             <h2>Bring the best of open source to your company</h2>
             <article id="value-message-text">
@@ -71,7 +71,7 @@ auditing features built into the npm client, a zero-friction way to make open so
         </section>
 
         <!-- Section 3 -->
-        <section id="product" class="white-background">
+        <section id="product">
             <div>
                 <article class="service-box">
                     <img src="images/zero-configuration.svg">
@@ -82,7 +82,7 @@ auditing features built into the npm client, a zero-friction way to make open so
                 <article class="service-box">
                     <img src="images/team-management.svg">
                     <h3>Team management</h3>
-                    <p>Control whohas access to what modules within your team namespace using straightforward team management capabilities.</p>
+                    <p>Control who has access to what modules within your team namespace using straightforward team management capabilities.</p>
                 </article>
 
                 <article class="service-box">
@@ -96,8 +96,9 @@ auditing features built into the npm client, a zero-friction way to make open so
                     <h3>npm audit</h3>
                     <p>Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer.</p>
                 </article>
-
-            <button class="product-btn">Create an org</button>
+            </div>
+            <div>
+                <button class="product-btn">Create an org</button>
             </div>
         </section>
 
