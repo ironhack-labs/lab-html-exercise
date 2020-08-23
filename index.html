@@ -7,7 +7,7 @@
       <span> Nifty Penguin Magic </span>
     </div>
     <nav>
-      <ul>
+      <ul class="navigation">
         <li><a href="#"> npm Enterprise </a></li>
         <li><a href="#"> Products </a></li>
         <li><a href="#"> Solutions </a></li>
@@ -18,13 +18,18 @@
     </nav>
   </div>
 
-  <div>
+  <div class="div-search">
     <img class="npm-logo" src="/Users/alekstana/Desktop/IronhackPrework/lab-html-exercise/images/npm-logo.png" alt="NPM logo" />
-  
-    
+    <section class="search-bar">
     <form action="/some-url" method="POST"><label for="search">
       <img class="magnifying-glass" src="/Users/alekstana/Desktop/IronhackPrework/lab-html-exercise/images/magnifying-glass.png" alt="magnifying glass" />
-      <input type="text" id="search"><button type="submit">Search</button></form> 
+      <input type="text" placeholder="Search packages" name="search" id="input-search">
+    
+      <button type="submit" id="search-button"><i class="search-field">Search</i></button></form> 
+    </section>
+      <button id="button-join">Join</button>
+      <button id="button-login">Login</button>
+    
   </div>
 </header>
 
@@ -70,7 +75,7 @@
     </article>
   </div>
 </section>
-<div id="button-create-an-org">
+<div class="container">
 <button type="submit" id="create-an-org">Create an Org</button>
 </div>
 </html>
