@@ -62,7 +62,7 @@ form label, input {
 }
 
 form input {
-    width: 2000px;
+    width: 1000px;
 }
 
 form button {
@@ -88,15 +88,19 @@ form button {
  }
 
  .log-in {
+    border: 0px;
+     margin: 0px 10px; 
+     background-color: white;
+    
+ }
+
+ .join-account {
      border-radius: 0%;
      width: 80px;
      height: 40px;
      margin: 0px 10px;
- }
-
- .join-account {
-     border: 0px;
-     margin: 0px 10px;
+     background-color: white;
+    
  }
 
 #section-one {
@@ -106,6 +110,7 @@ form button {
     flex-direction: column;
     height: 600px;
     background-color: rgba(232, 217, 217, .3);
+    padding: 0px 0px 50px 0px;
 }
 
 #section-one h1 {
@@ -141,12 +146,14 @@ form button {
     height: 80px;
     border: 0px;
     margin: 25px 25px;
+    background-color: rgba(232, 217, 217, .3);
 }
 
 .join a {
     text-decoration: none;
     color: black;
     font-size: 25px;
+    
 }
 
 #section-two {
@@ -182,23 +189,28 @@ form button {
     display: flex;
     justify-content: space-around; 
     align-items: center;
-    flex-direction: row;
+    flex-direction: column;
     height: 600px;
     width: 1500px;
-    margin: 0px 750px;   
+    margin: 100px 200px;   
 }
 
 #section-three > div {
+    display: flex;
    margin: 0px 20px;
+   flex-direction: row;
+   width: 1500px;
 }
 
 #section-three h3 {
     color: #ed1c24;
     font-size: 25px;
+    padding: 0px 20px;
 }
 
 #section-three p {
     font-size: 20px;
+    padding: 0px 20px;
 }
 
 #section-three img {
@@ -212,11 +224,15 @@ form button {
     background-color: black;
     display: flex;
     flex-direction: column;
-    width: 100px;
+    padding: 25px 10px 10px 45px;
+    width: 250px;
+    height: 80px;
+    margin: 0px 25px;
     box-shadow: 8px 8px 0 rgba(128,83,35,.2);
 }
 
 #section-three button a {
     color: white;
     text-decoration: none;
+   
 }
