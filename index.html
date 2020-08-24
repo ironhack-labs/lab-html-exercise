@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <div class="flex">
+        <div>
           <div>
             <img class="blackHeart" src="./images/black-heart.png" alt="black heart" />
             <span> Nifty Penguin Magic</span>
@@ -24,31 +24,32 @@
             </ul>
           </nav>
         </div>
-        <div id="searchSection" class="flex">
-            <img src="./images/npm-logo.png" alt="npm logo" class="npmLogo">
+        <div>
+            <img src="./images/npm-logo.png" alt="npm logo">
             <form action="/search" method="GET" id="search">
-              <img src="./images/magnifying-glass.png" alt="" class="searchImg">
+              <label for="search">
+                <img src="./images/magnifying-glass.png" alt="">
+              </label>
             <input type="search" name="q" placeholder="Search packages">
             <button type="submit">Search</button>
           </form>
-          <div class="flex">
+          <div>
             <a href="#" class="join">Join</a>
             <a href="#" class="login">Log In</a>
           </div>
         </div>
       </header>
-      <main>
-        <section id="buildAmazingThings" class="sectionFlex">
+        <section id="buildAmazingThings">
           <h1>Build amazing things</h1>
           <article>
             <p>Essential JavaScript development tools that help you go to market faster and build powerful applications using modern open source code.</p>
             </article>
           <div>
-            <a href="#" class="button">See plans</a>
-            <a href="#" class="free">Join for free</a>
+            <a href="#">See plans</a>
+            <a href="#">Join for free</a>
           </div>
         </section>
-        <section id="bestOpenSource" class="sectionFlex">
+        <section id="bestOpenSource" >
           <img src="./images/triangle-hexagon.svg" alt="triangle hexagon">
           <h2>Bring the best of open source to your company </h2>
           <article>
@@ -78,6 +79,5 @@
           </div>
           <a href="#" class="blackButton">Create an Org</a>
         </section>
-      </main>
 </body>
 </html>
