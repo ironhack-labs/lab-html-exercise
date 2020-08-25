@@ -1,3 +1,192 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
 body {
-    background-color: red;
+  font-family: "Poppins";
+  text-align: center;
+  margin: 0;
+}
+
+button {
+  font-family: "Poppins";
+}
+
+header > div {
+  padding: 0 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+}
+
+nav {
+  width: 600px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+.blackHeart {
+  width: 20px;
+  margin-right: 1em;
+}
+
+.npm-logo {
+    width: 70px;
+    margin: 1em 0.5em 1em 1em;
   }
+
+.magnifying-glass {
+    width: 20px;
+    margin: 0 0.5em;
+    
+  }
+.form{
+    background-color: rgba(0,0,0,.05);
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+  }
+.search-bar-items{
+    display: flex;
+    align-items: center;
+    width: 90%;
+  }
+.placeholder{
+    background: none;
+    border: none;
+    width: 100%;
+  } 
+.form-button{
+    background-color: #fb3e44;
+    color: white;
+    border: none;
+    padding: 5px 15px;
+  }
+.links{
+    display: flex;
+  }
+.links a{
+    padding: 5px 25px;
+    text-decoration:none;
+    color: black;
+  }
+.link-join{
+    border: 1px solid #cccccc;
+  }
+/* SECTION 1 */
+
+h1 {
+  margin: 0;
+  font-size: 100px;
+}
+/* puts h1, article and div in column*/
+.sec1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(232, 217, 217, 0.3);
+  height: 600px;
+}
+
+.sec1 article {
+  font-size: 25px;
+  padding: 20px 0;
+}
+
+/* puts flex in divs*/
+.sec1 div {
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+  font-size: 25px;
+  padding: 20px 0;
+}
+
+.sec1 a {
+  padding: 10px 50px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+.sec1 a:nth-of-type(1) {
+  color: white;
+  background-color: #fb3b49;
+  box-shadow: 8px 8px 0 rgba(251, 59, 73, 0.2);
+}
+
+.sec1 a:nth-of-type(2) {
+  color: black;
+  background-color: white;
+}
+
+/* SECTION2 */
+
+.sec2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 400px;
+  padding: 30px 0;
+}
+/* only affects relation with other sections*/
+.sec2 * {
+  margin: 0;
+  padding: 20px 0;
+}
+
+.sec2 h2 {
+  font-size: 40px;
+  background-color: rgba(255, 204, 53, 0.4);
+  /* Because skew puts box and h2 sideways I use italic to make it look normal again (otherwise italic makes it sideways)*/
+  transform: skew(14deg, 0deg);
+  font-style: italic;
+  padding: 0 40px;
+}
+
+/* SECTION3 */
+
+.sec3 {
+  margin: 50px 0;
+}
+
+/* apply flex to all 4divs inside*/
+.container {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  justify-content: space-around;
+  padding: 40px 0;
+}
+
+h3 {
+  color: #ed1c24;
+}
+/* target each div*/
+.container div {
+  width: 250px;
+}
+
+.container img {
+  max-width: 70px;
+}
+
+.sec3 button {
+  border: none;
+  background-color: black;
+  color: white;
+  padding: 18px 180px;
+  box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+}
