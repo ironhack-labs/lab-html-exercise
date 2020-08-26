@@ -14,16 +14,17 @@ Rosana tested-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>npm|building amazing things</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <div>
             <div>
-                <img class="black-heart" src="images/black-heart.png" alt="black heart logo">
+                <img class="blackHeart" src="images/black-heart.png" alt="black heart logo">
                 <span>Nifty Penguin Magic</span>
             </div>
-            <nav>
-                <ul>
+            <nav class="nav-bar">
+                <ul class="nav-bar-ul">
                     <li><a href="#">npm Enterprise</a></li>
                     <li><a href="#">Products</a></li>
                     <li><a href="#">Solutions</a></li>
@@ -33,23 +34,81 @@ Rosana tested-->
                 </ul>
             </nav>
         </div>
-        <div>
-            <div>
-                <img class="logo" src="images/npm-logo.png" alt="npm logo">
+        <div class="bottom-header">
+            <div class="npmLogo">
+                <img src="images/npm-logo.png" alt="npm logo">
             </div>
-            <div id="searchbar">
-                <img class="magnifying-glass" src="images/magnifying-glass.png" alt="magnifying glass">
+            <div class="searchbar">
                 <form action="#" method="GET">
+                    <img class="magnifying-glass" src="images/magnifying-glass.png" alt="magnifying glass">
                     <input type="text" id="search-input" placeholder="Search packages" name="query">
-                    <input type="submit" value="Search">
+                    <button type="submit">Search</button>
                 </form>
             </div>
-            <div>
-                <a href="#">Join</a>
+            <div class="buttons">
+                <a class="join" href="#">Join</a>
                 <a href="#">Log in</a>
             </div>
         </div>
     </header>
+
+    <!--Join Section-->
+    <section id="join">
+        <div>
+            <h1>Build amazing things</h1>
+        </div>
+        <div>
+            <p class="text">Essential JavaScript development tools that help you go to market faster and build
+                        powerful applications using modern open source code.</p>
+        </div>
+        <div>
+            <a href="#" class="link-btn">See plans</a>
+            <a href="#" class="link-btn">Join for free</a>
+        </div>
+
+    </section>
+
+    <!--About section-->
+    <section id="about">
+        <img id="about img" src="images/triangle-hexagon.svg" alt="triangles hexagon">
+        <div>
+            <h2>Bring the best of open source to your company</h2>
+        </div>
+        <div>
+            <p>npm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company
+            depends on it. Create an Org and get more out of the tools your team already knows and loves.</p>
+        </div>
+    </section>
+
+    <!--Create org section-->
+    <section id="create-org">
+        <div>
+            <article class="service-box">
+                <img src="images/zero-configuration.svg" alt="zero configuration logo">
+                <h4>Zero configuration</h4>
+                <p>Create an org, add your team, and start collaborating. Nothing to configure, set up, or manage.</p>
+            </article>
+            <article class="service-box">
+                <img src="images/team-management.svg" alt="team management logo">
+                <h4>Team management</h4>
+                <p>Control who has access to what modules within your team namespace using straightforward team management capabilities.</p>
+            </article>
+            <article class="service-box">
+                <img src="images/familiar-features.svg" alt="familiar features logo">
+                <h4>Familiar features</h4>
+                <p>npm Orgs has 100% parity with all the public npm registry features your developers already use.</p>
+            </article>
+            <article class="service-box">
+                <img src="images/npm-audit.svg" alt="npm audit logo">
+                <h4>npm audit<h4>
+                <p>Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer.
+                </p>
+            </article>
+            <article class="create-btn">
+                <a href="#">Create an Org</a>
+            </article>
+        </div>
+    </section>
 
 </body>
 </html>
