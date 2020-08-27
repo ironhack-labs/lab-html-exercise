@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NPM Landing Page Clone</title>
+    <link rel="stylesheet" href="./style.css" />
 </head>
 
 <body>
     <header>
-        <div class="header-top">
-            <div class="heart-npm">
+        <div class="headerTop">
+            <div class="heartNpm">
                 <img class="blackHeart" src="images/black-heart.png" alt="black heart" />
                 <span> Nifty Penguin Magic </span>
             </div>
@@ -25,15 +26,15 @@
                 </ul>
             </nav>
         </div>
-        <div class="header-bottom">
-            <img src="images/npm-logo.png" alt="npm logo">
-            <img src="images/magnifying-glass.png" alt="magnifying glass">
-            <form action="">
-                <input type="text" placeholder="Search packages" />
-                <button type="submit">Search</button>
+        <div class="headerBottom">
+            <img class="npmLogo" src="images/npm-logo.png" alt="npm logo">
+            <form class="searchForm" action=""> <span class="iconAndSearch">
+                    <img class="magnifyingGlass" src="images/magnifying-glass.png" alt="magnifying glass">
+                    <input class="searchBar" type="search" placeholder="Search packages" /></span>
+                <button class="searchButton" type="submit">Search</button>
             </form>
-            <a href="#">Join</a>
-            <a href="#">Log In</a>
+            <a href="#" class="joinLink">Join</a>
+            <a href="#" class="logInLink">Log In</a>
         </div>
     </header>
 
