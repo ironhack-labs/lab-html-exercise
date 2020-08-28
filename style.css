@@ -90,38 +90,38 @@ nav a {
 }
 
 .joinLink {
-    padding: 8px 15px;
+    padding: auto 15px;
     border: 1px solid #cccccc;
     margin: auto 16px;
 }
 
 .logInLink {
-    padding: 4px;
+    padding: auto 4px;
 }
 
 /* Sections overall */
 section {
-    display: flex;
     height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Section 1: general-info */
 
 #general-info {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     background-color: rgba(232, 217, 217, .3)
 }
 
-#general-info h1 {
+#general-info>h1 {
     font-size: 84px;
     font-weight: 800;
     margin-top: 10px;
     margin-bottom: 0px;
 }
 
-#general-info p {
+#general-info>article {
     font-size: 20px;
     width: 550px;
     text-align: center;
@@ -150,19 +150,14 @@ section {
     margin-left: 20px;
 }
 
-/* Section 1: business-benefits */
-#business-benefits {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-#business-benefits img {
+/* Section 2: business-benefits */
+#business-benefits>img {
     width: 250px;
+    margin-top: 40px;
     margin-bottom: 25px;
 }
 
-#business-benefits h2 {
+#business-benefits>h2 {
     font-size: 35px;
     font-style: italic;
     background-color: rgba(255, 204, 53, .4);
@@ -171,7 +166,30 @@ section {
     margin-bottom: 10px;
 }
 
-#business-benefits p {
+#business-benefits>article {
     text-align: center;
     width: 650px;
+}
+
+/* Section 3: create-org */
+.createOrgBlurbSection {
+    flex-direction: row;
+    justify-content: center;
+}
+
+#create-org img {
+    width: 50px;
+}
+
+#create-org h3 {
+    color: #ED1C24;
+}
+
+.createOrgLink {
+    color: #fff;
+    background-color: #000;
+    box-shadow: 8px 8px 0 rgba(128, 83, 35, .2);
+    text-decoration: none;
+    padding: 20px 100px;
+    margin-bottom: 50px;
 }
