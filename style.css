@@ -3,6 +3,7 @@
 /* Overall */
 body {
     font-family: 'Poppins';
+    background-color: #fff;
 }
 
 /* Header Overall */
@@ -39,23 +40,18 @@ nav a {
 
 /* Header Bottom */
 .headerBottom {
-    background-color: #fff;
     padding: 10px 32px;
+    align-items: center;
 }
 
 .headerBottom a {
     text-decoration: none;
     color: #0E0E0E;
-    opacity: 1;
-    background-color: transparent;
-}
-
-.headerBottom a:hover {
-    transition: opacity .15s ease-in;
 }
 
 .npmLogo {
     width: 70px;
+    margin: 16px 32px;
 }
 
 .magnifyingGlass {
@@ -63,13 +59,10 @@ nav a {
     padding: 10px 4px auto 16px;
 }
 
-.searchForm {
-    width: auto;
-}
-
 .iconAndSearch {
     padding: 10px;
     background: rgba(0, 0, 0, .05);
+    flex-grow: 3;
 }
 
 .searchBar {
@@ -79,7 +72,7 @@ nav a {
         "Andale Mono",
         "Consolas",
         monospace;
-    background: none;
+    background: transparent;
     border: none;
     padding-left: 10px;
     width: 600px;
@@ -93,12 +86,58 @@ nav a {
     color: #fff;
     padding: 13px 15px;
     border-style: none;
-    border-width: 0;
-    margin-left: 0;
+    margin-left: -10px;
 }
 
 .joinLink {
     padding: 8px 15px;
     border: 1px solid #cccccc;
-    border-radius: 0;
+    margin: auto 16px;
+}
+
+.logInLink {
+    padding: 4px;
+}
+
+/* Section 1: general-info */
+
+#general-info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 600px;
+    background-color: rgba(232, 217, 217, .3)
+}
+
+#general-info h1 {
+    font-size: 84px;
+    font-weight: 800;
+    margin-bottom: 0px;
+}
+
+#general-info p {
+    font-size: 20px;
+    width: 550px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.generalInfoLinks {
+    flex-direction: row;
+    justify-content: center;
+}
+
+.seePlansLink {
+    color: #fff;
+    text-decoration: none;
+    background-color: #FB3B49;
+    box-shadow: 8px 8px 0 rgba(251, 59, 73, .2);
+    padding: 15px 30px;
+}
+
+.joinLink {
+    color: #000;
+    text-decoration: none;
+    border: none;
 }
