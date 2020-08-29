@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+ 
+* {
+    box-sizing: border-box;
+}
+body {
+  font-size: 16px;
+  font-family: 'Poppins';
+}
+
+/* HEADER */
+header > div {
+  margin: 0 auto;
+  width: 90%;
+  padding: 0 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav a {
+  font-size: 20px;
+  margin-left:1rem;
+  text-decoration: none;
+  color: black;
+}
+header .blackHeart {
+  height: 15px;
+  margin-right: 2rem;
+}
+header #niftyPenguinMagic {
+  font-size:20px;
+}
+header .npmLogo {
+  height: 30px;
+}
+header .searchLogo {
+ width: 20px;
+ margin-left: 1rem;
+}
+
+header .searchSection {
+  height:4rem;
+}
+
+header input[type="text"] {
+  flex-grow: 1;
+  margin-left: 2rem;
+  padding-left: 2.5rem;
+  border: none;
+  font-size: 2rem;
+  background-image: url(/images/magnifying-glass.png);
+  background-size: 2rem;
+  background-position: 0px; /* This makes the image align */
+  background-repeat: no-repeat;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0.05)
+}
+header .searchSection > button {
+  margin-left: 2.5rem;
+  font-size: 20px;
+  cursor: pointer;
+
+}
+
+
+header #searchButton {
+  background-color: #fb3e44;
+  padding: 0.75rem 1.2rem; 
+  border: 1px rgba(0, 0, 0, 0.05) solid;
+  color:white;
+
+}
+header #joinButton {
+  padding: 0.4rem 1.2rem;
+  border: 1px rgb(161, 161, 161) solid;
+  color: rgb(42, 55, 100);
+}
+header #loginButton {
+  margin-left: 2rem;
+  border: 0;
+  padding: 0;
+  color: rgb(42, 55, 100);
+}
+
+/* Section 1 */
+
+#section1 {
+  width: 100%;
+  height: 600px;
+  background-color: rgba(232,217,217,.3);
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#section1 h1{
+  font-size: 70px;
+}
+#section1 > article, #section1 > div {
+  width: 30%;
+  height: 300px;
+}
+
+#section1 > article {
+  text-align: center;
+  font-size: 20px;
+}
+#section1 > div {
+  display:flex;
+  justify-content: space-between;
+  position:relative;
+}
+#section1 button {
+  cursor: pointer;
+}
+#section1 #buttonS1SeePlans {
+  border: 1px rgb(161, 161, 161) solid;
+  color: white;
+  font-size: 20px;
+  background-color: #FB3B49;
+  padding: 0;
+  box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+  height:50px;
+  width: 225px;
+}
+#section1 #buttonS1Join {
+  border: 0;
+  font-size: 20px;
+  padding: 0;
+  height:50px;
+  width: 225px;
+
+}
+
+/* Section 2 */
+
+#section2 {
+  height: 600px;
+  width: 100%;
+  background-color: rgba(232,217,217,.3);
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  font-style: italic;
+}
+#section2 img {
+  width: 20%;
+}
+#section2 h1 {
+  margin-top: 75px;
+  font-size: 30px;
+  text-align: center;
+  background-color: rgba(255,204,53,.4);
+  transform: skew(9deg,0deg);
+  padding: 0 30px;
+}
+#section2 article {
+  width: 40%;
+  font-style: normal;
+  text-align: center;
+  font-size: 20px;
+}
+
+/* Section 3 */
+
+
+#section3 {
+  width: 100%;
+  background-color: rgba(232,217,217,.3);
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 700px;
+
+}
+#section3 > #s3container {
+  margin-top: 125px;
+  width: 75%;
+  display:flex;
+}
+#section3 > #s3container > div {
+  width: 25%;
+  padding: 0 30px;
+}
+#section3 h2 {
+  color: #ED1C24;
+}
+#section3 img {
+  height: 60px;
+}
+#section3 button {
+  margin-top: 75px;
+  color:white;
+  font-size: 20px;
+  background-color: black;
+  box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+  border:none;
+  padding: 10px 100px;
+  cursor: pointer;
+
+}
