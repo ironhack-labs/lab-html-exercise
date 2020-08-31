@@ -44,12 +44,14 @@ nav a {
     width: 100px;
 }
 
-.join-login {
-    list-style: none;
+.join-login a {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    flex-direction: row;
     text-decoration: none;
+    color: black;
+    align-items: center;
+    list-style: none;
 }
 
 form {
@@ -70,17 +72,13 @@ form button {
     background-color: #fb3e44;
     color: white;
     border: none;
+    padding: 10px 20px;
 }
 
 form input {
     background-color: #F8F8F8;
     border: none;
     width: 100%;
-}
-
-.join-login {
-    text-decoration: none;
-    color: black;
 }
 
 h1 {
@@ -101,15 +99,8 @@ h1 {
 #home article {
     font-size: 1em;
     text-align: center;
-    width: 45%;
+    width: 30%;
     margin: 10px auto;
-}
-
-#home div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
 }
 
 .see-plans {
@@ -127,6 +118,12 @@ h1 {
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
+    text-decoration: none;
+}
+
+#home a {
+    padding: 18px 70px;
+    margin-top: 50px;
 }
 
 .join {
@@ -140,6 +137,7 @@ h1 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-top: 60px;
 }
 
 #open-source img {
@@ -168,10 +166,23 @@ h2 {
 
 #benefits > div {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-direction: row;
+    align-items: flex-start;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 1000px;
+}
+
+#benefits {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    margin: 100px;
+}
+
+.benefit-square {
+    width: 400px;
+    margin: 10px 10px;
 }
 
 .link-btn {
