@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Poppins");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
 
 body {
   font-family: "Poppins";
@@ -13,8 +13,9 @@ h6 {
   font-family: "Poppins";
 }
 
-h1{
-    
+h1 {
+  font-size: 6em;
+  font-weight: 700;
 }
 
 header > div {
@@ -58,7 +59,7 @@ nav a {
 }
 
 .search {
-  background-color: lightgray;
+  background-color: #f2f2f2;
   display: flex;
   flex-grow: 1;
   margin: 0 20px;
@@ -89,7 +90,7 @@ nav a {
 .search-bar input {
   margin-left: 6px;
   flex-grow: 1;
-  background-color: lightgray;
+  background-color: #f2f2f2;
   border: none;
   font-family: "Poppins";
   font-size: 0.95em;
@@ -112,3 +113,122 @@ nav a {
   display: flex;
   align-items: center;
 }
+
+#landing-page {
+  background-color: rgba(232, 217, 217, 0.3);
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#landing-page h1 {
+  margin-bottom: 30px;
+}
+
+#landing-page article {
+  width: 50%;
+  text-align: center;
+  font-size: 1.3em;
+  margin-bottom: 30px;
+}
+
+.button-div {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#landing-page a {
+  text-decoration: none;
+  padding: 18px 24px;
+  font-size: 1.2em;
+  font-weight: bolder;
+  width:180px;
+  text-align:center;
+  margin: 0 40px;
+}
+
+#plans-button {
+    color:white;
+    background-color: #FB3B49;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+}
+
+#free-join-button {
+    background-color: white;
+    color: black;
+}
+
+#general-information {
+    margin: 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#general-information img {
+    width:30%;
+    margin-bottom: 60px;
+}
+
+#general-information h2 {
+    font-size: 2em;
+    font-weight: 700;
+    font-style: italic;
+    background-color: rgba(255,204,53,0.4);
+    transform: skew(9deg,0deg);
+    padding: 0 40px;
+}
+
+#general-information article {
+    width: 50%;
+    text-align: center;
+}
+
+#npm-perks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.div-holder {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 10% 40px;
+}
+
+#npm-perks img {
+    height: 32px;
+}
+
+.container {
+    margin: 20px;
+    width: 19%
+}
+
+.container h3 {
+    color: #ED1C24;
+    font-weight: 700;
+    font-size: 1em;
+    margin-bottom: 30px;
+}
+
+.container p {
+    font-size: 0.9em;
+}
+
+#create-org-button {
+    color: white;
+    background-color:black;
+    padding: 12px 100px;
+    box-shadow: 8px 8px 0 rgba(128,83,35, 0.2);
+    text-decoration: none;
+    font-weight: 700;
+    font-size:1.3em;
+    margin-bottom: 60px;
+}
+
