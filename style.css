@@ -37,7 +37,8 @@ nav a {
 /* Bottom Header */
 #bottom-header {
   align-items: center;
-  justify-content: space-between;
+  display: flex;
+  justify-content: normal;
   margin-top: 8px;
   padding-bottom: 10px;
 }
@@ -58,7 +59,11 @@ nav a {
   display: flex;
   flex-direction: column;
   height: 600px;
-  justify-items: center;
+}
+
+#top-section div {
+  display: flex;
+  justify-content: center;
 }
 
 #top-section h1 {
@@ -132,16 +137,16 @@ nav a {
 
 /* Bottom Section */
 .info-square {
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  margin: 70px 20px 20px 20px;
-  justify-content: space-evenly;
+  max-width: 300px;
+  margin: 20px 30px;
+  padding: 0 10px;
+  text-align: left;
+  display: inline-block;
 }
 
 .info-square img {
-  height: 30px;
-  width: 30px;
+  height: 32px;
+  width: 32px;
 }
 
 #bottom-section h3 {
@@ -159,9 +164,10 @@ nav a {
   box-shadow: 8px 8px 0 rgba(128, 83, 35, 0.2);
   color: white;
   display: flex;
-  flex-direction: row;
+  font-size: 20px;
+  font-weight: 600;
   height: 40px;
   margin: 20px auto 100px auto;
-  text-align: center;
+  text-align: right;
   width: 400px;
 }
