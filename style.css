@@ -6,11 +6,11 @@ body {
 
 /* Top Header */
 #top-header {
-  padding: 0 25px;
-  display: flex;
-  justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid lightgray;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 25px;
 }
 
 nav {
@@ -18,28 +18,28 @@ nav {
 }
 
 nav ul {
-  list-style: none;
+  align-items: center;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  list-style: none;
 }
 
 nav a {
-  text-decoration: none;
   color: black;
+  text-decoration: none;
 }
 
 #black-heart {
-  width: 20px;
   margin-right: 1rem;
+  width: 20px;
 }
 
 /* Bottom Header */
 #bottom-header {
+  align-items: center;
+  justify-content: space-between;
   margin-top: 8px;
   padding-bottom: 10px;
-  justify-content: space-between;
-  align-items: center;
 }
 
 #npm-logo {
@@ -47,97 +47,96 @@ nav a {
 }
 
 #magnifying-glass {
-  width: 20px;
   height: 20px;
+  width: 20px;
 }
 
 /* Top Section */
 #top-section {
+  align-content: center;
   background-color: rgb(232, 217, 217, 0.3);
-  height: 600px;
   display: flex;
   flex-direction: column;
+  height: 600px;
   justify-items: center;
-  align-content: center;
 }
 
 #top-section h1 {
-  text-align: center;
   margin: 0 auto 40px auto;
+  text-align: center;
 }
 
 #top-section p {
-  width: 500px;
-  text-align: center;
   margin: 0 auto 40px auto;
+  text-align: center;
+  width: 500px;
 }
 
 #top-section button {
+  height: 75px;
   position: relative;
   text-align: center;
-  height: 75px;
 }
 
 #see-plans {
   background-color: #fb3b49;
-  color: white;
   border: none;
-  width: 150px;
-  height: 50px;
   box-shadow: 8px 8px 0 rgba(251, 59, 73, 0.2);
-  margin: 10px;
-  font-weight: 600;
+  color: white;
   font-size: 1em;
+  font-weight: 600;
+  height: 50px;
+  margin: 10px;
+  width: 150px;
 }
 
 #join-for-free {
-  font-weight: 600;
-  border: none;
-  width: 150px;
-  height: 50px;
   background-color: rgb(232, 217, 217, 0.3);
-  margin: 10px;
+  border: none;
   font-size: 1em;
+  font-weight: 600;
+  height: 50px;
+  margin: 10px;
+  width: 150px;
 }
 
 /* Middle Section */
 #middle-section {
-  display: flex;
-  flex-direction: column;
   align-content: center;
+  display: flex;
+  font-size: 14px;
+  flex-direction: column;
   justify-content: center;
   text-align: center;
-  font-size: 14px;
 }
 
 #middle-section img {
+  align-self: center;
   height: 200px;
   width: 200px;
-  align-self: center;
 }
 
 #middle-section h2 {
-  font-weight: 700;
-  font-size: 24px;
-  margin: 20px 250px;
   background-color: rgba(255, 204, 53, 0.4);
-  transform: skew(9deg, 0deg);
+  font-size: 24px;
+  font-weight: 700;
   font-style: italic;
+  margin: 20px 250px;
+  transform: skew(9deg, 0deg);
 }
 
 #middle-section p {
+  margin: 20px auto;
   width: 500px;
-  margin: 20px auto 20px auto;
 }
 
 /* Bottom Section */
 .info-square {
-  margin: 70px 20px 20px 20px;
-  margin: 70px 70px 20px 120px;
+  align-items: center;
   display: flex;
   flex-direction: row;
+  margin: 70px 20px 20px 20px;
   justify-content: space-evenly;
-  align-items: center;
 }
 
 .info-square img {
@@ -156,13 +155,13 @@ nav a {
 }
 
 #create-org {
-  display: flex;
-  flex-direction: row;
-  margin: 20px auto 100px auto;
-  width: 400px;
-  height: 40px;
   background-color: black;
   box-shadow: 8px 8px 0 rgba(128, 83, 35, 0.2);
   color: white;
+  display: flex;
+  flex-direction: row;
+  height: 40px;
+  margin: 20px auto 100px auto;
   text-align: center;
+  width: 400px;
 }
