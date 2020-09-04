@@ -36,15 +36,16 @@ nav a {
 
 /* Bottom Header */
 #bottom-header {
-  align-items: center;
   display: flex;
-  justify-content: normal;
-  margin-top: 8px;
-  padding-bottom: 10px;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: baseline;
+	align-content: stretch;
 }
 
 #npm-logo {
-  width: 100px;
+  width: 70px;
 }
 
 #magnifying-glass {
@@ -131,7 +132,7 @@ nav a {
 
 /* Bottom Section */
 .info-square {
-  max-width: 300px;
+  max-width: 250px;
   margin: 20px 30px;
   padding: 0 10px;
   text-align: left;
@@ -149,19 +150,18 @@ nav a {
 }
 
 #bottom-section p {
-  padding: 0 10px 0 0;
   text-align: left;
 }
 
 #create-org {
+  color: white;
   background-color: black;
   box-shadow: 8px 8px 0 rgba(128, 83, 35, 0.2);
-  color: white;
-  display: flex;
-  font-size: 20px;
-  font-weight: 600;
-  height: 40px;
-  margin: 20px auto 100px auto;
-  text-align: right;
-  width: 400px;
+  font-size: 22px;
+  font-weight: 700;
+  height: 75px;
+  margin: 20px 30px;
+  position: relative;
+  text-align: center;
+  width: 225px;
 }
