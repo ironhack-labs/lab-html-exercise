@@ -61,6 +61,11 @@ nav a {
   align-content: center;
 }
 
+#top-section h1 {
+  text-align: center;
+  margin: 0 auto 40px auto;
+}
+
 #top-section p {
   width: 500px;
   text-align: center;
@@ -68,6 +73,7 @@ nav a {
 }
 
 #top-section button {
+  position: relative;
   text-align: center;
   height: 75px;
 }
@@ -97,16 +103,38 @@ nav a {
 /* Middle Section */
 
 /* Bottom Section */
+.info-square {
+  margin: 70px 20px 20px 20px;
+  margin: 70px 70px 20px 120px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
 
-/* Create an Org */
+.info-square img{
+  height: 30px;
+  width: 30px;
+}
+
+#bottom-section h3 {
+  color: #ed1c24;
+  text-align: left;
+}
+
+#bottom-section p {
+  padding: 0 10px 0 0;
+  text-align: left;
+}
+
 #create-org {
   display: flex;
   flex-direction: row;
   margin: 20px auto 100px auto;
-  color: white;
-  text-align: center;
   width: 400px;
   height: 40px;
   background-color: black;
   box-shadow: 8px 8px 0 rgba(128, 83, 35, 0.2);
+  color: white;
+  text-align: center;
 }
