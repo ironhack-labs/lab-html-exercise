@@ -37,15 +37,15 @@ nav a {
 /* Bottom Header */
 #bottom-header {
   display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: flex-start;
-	align-items: baseline;
-	align-content: stretch;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
 }
 
 #npm-logo {
-  width: 70px;
+  width: 100px;
 }
 
 #magnifying-glass {
@@ -78,7 +78,7 @@ nav a {
   width: 500px;
 }
 
-#top-section button {
+button {
   font-size: 22px;
   font-weight: 700;
   height: 75px;
@@ -107,6 +107,7 @@ nav a {
   font-size: 14px;
   flex-direction: column;
   justify-content: center;
+  margin: 75px auto;
   text-align: center;
 }
 
@@ -114,6 +115,7 @@ nav a {
   align-self: center;
   height: 200px;
   width: 200px;
+  margin: 0 0 30px 0;
 }
 
 #middle-section h2 {
@@ -121,16 +123,22 @@ nav a {
   font-size: 24px;
   font-weight: 700;
   font-style: italic;
-  margin: 20px 250px;
+  margin: 20px 600px;
   transform: skew(9deg, 0deg);
 }
 
 #middle-section p {
-  margin: 20px auto;
-  width: 500px;
+  margin: 24px auto;
+  width: 700px;
 }
 
 /* Bottom Section */
+#bottom-section {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
 .info-square {
   max-width: 250px;
   margin: 20px 30px;
@@ -146,22 +154,22 @@ nav a {
 
 #bottom-section h3 {
   color: #ed1c24;
-  text-align: left;
 }
 
-#bottom-section p {
-  text-align: left;
-}
-
+/* Create Org Button */
 #create-org {
-  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#create-org-button {
   background-color: black;
   box-shadow: 8px 8px 0 rgba(128, 83, 35, 0.2);
-  font-size: 22px;
+  color: white;
+  font-size: 20px;
   font-weight: 700;
-  height: 75px;
-  margin: 20px 30px;
-  position: relative;
-  text-align: center;
-  width: 225px;
+  height: 70px;
+  margin: 50px 30px;
+  width: 420px;
 }
