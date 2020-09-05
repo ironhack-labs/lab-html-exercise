@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+html, body {
+    margin: 0;
+    padding: 0;
+  }
+
+body {
+    font-family: 'Poppins';
+}
+
+h1{
+    font-size: 4rem;
+    font-weight: 1000;
+    margin-bottom: 10px;
+}
+
+h2{
+    font-size: 2.5rem;
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+    font-style: italic;
+    margin-bottom: 15px;
+    padding: 0px 40px;
+}
+
+h3{
+    font-size: 1.2rem;
+    color: #ed1c24;
+    margin-top: 4px;
+}
+
+
+header>div {
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+}
+
+nav {
+    width: 600px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover {
+    color: gray;
+    transition-duration: 200ms;
+}
+
+.blackHeart {
+    width: 20px;
+    margin-right: 1rem;
+}
+
+/* Segona part header */
+#second-header {
+    padding: 8px 25px 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+}
+
+#logo-img {
+    padding: 2px;
+    margin-top: 6px;
+}
+
+form {
+    padding: 0px;
+    margin: 0px;
+    position: absolute;
+    margin-left: 60px;
+}
+
+form label {
+    color: rgba(0, 0, 0, .05);
+}
+
+form input {
+    color: rgba(0, 0, 0, .05);
+    height: 30px;
+    width: 980px;
+    padding-left: 32px;
+    background-image: url(./images/magnifying-glass.png);
+    background-size: 20px 20px;
+    background-position: left;
+    background-position-x: 8px;
+    background-repeat: no-repeat;
+    border: none;
+    background-color: rgb(243, 239, 239);
+    margin-left: 20px;
+}
+
+form button {
+    background-color: #fb3e44;
+    color: white;
+    height: 32px;
+    border: none;
+    position: absolute;
+    font-family: 'Poppins';
+}
+form ::placeholder {
+    font-family: 'Fira Mono';
+}
+
+.sesion-buttons {
+    align-items: flex-end;
+    margin-right: 10px;
+}
+
+.header-buttons {
+    background-color: white;
+    padding: 2.5px 13px;
+    font-family: 'Poppins';
+}
+
+.header-buttons a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Poppins';
+}
+
+.header-buttons:hover {
+    border-color: gray;
+    transition-duration: 200ms;
+}
+
+.header-buttons a:hover {
+    color: gray;
+    transition-duration: 200ms;
+}
+
+.first-section-buttons {
+    padding: 5px 25px;
+    font-family: 'Poppins';
+}
+
+.first-section-buttons a{
+    text-decoration: none;
+    font-family: 'Poppins';
+    font-weight: 700;
+    color: black;
+    font-size: 1.1rem;
+}
+
+
+.bt-plans {
+    background-color: #fb3b49;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+}
+
+.bt-join {
+    background-color: white;
+}
+
+.bt-border {
+    border: solid 1px rgb(68, 67, 67);
+}
+
+.bt-no-border {
+    border: none;
+}
+
+#first-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 600px;
+    background-color: rgba(232,217,217,.3);
+}
+
+#first-section article p{
+    width: 400px;
+    text-align: center;
+}
+
+
+#first-section-buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-top: 15px;
+    width: 330px;
+}
+
+#second-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#second-section img {
+    width: 200px;
+    align-items: center;
+    padding-top: 0px;
+    margin: 30px 0px 30px;
+}
+
+#second-section article p{
+    width: 740px;
+    text-align: center;
+    margin-bottom: 60px;
+    font-size: 0.9rem;
+}
+
+#third-section {
+    display: flex;
+    margin-top: 80px;
+    flex-direction: column;
+    align-items: center;
+}
+
+#items{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 0px 30px;
+    width: 83%;
+}
+
+#third-section img {
+    width: 30px;
+    height: 25px;
+    margin-bottom: 0px;
+}
+
+.item-element {
+    width: 100%;
+    padding: 0px 20px;
+}
+
+.item-element p{
+    font-size: 0.9rem;
+}
+
+.third-section-buttons{
+    padding: 5px 10px;
+    font-family: 'Poppins';
+    background-color: black;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+}
+
+.third-section-buttons a {
+    text-decoration: none;
+    font-weight: 700;
+    color: white;
+    font-size: 1.1rem;
+}
+
+#third-section button {
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    width: 300px;
+    height: 50px;
+}
+
