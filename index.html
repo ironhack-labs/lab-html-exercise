@@ -27,18 +27,14 @@
         </nav>
       </div>
 
-      <div>
+      <div class="main-search"> 
         <img class="logo" src="./images/npm-logo.png" alt="logo" />
-        <img
-          class="magnifying-glass"
-          src="./images/magnifying-glass.png"
-          alt="magnifying glass"
-        />
-        <form action="/some url" method="get">
-          <input type="submit" value="Search" />
+        <form class="main-search-form" action="/some url" method="get">
+          <input class="barra-buscar" type="text" placeholder="Search packages">
+          <input class="boton-buscar" type="submit" value="Search" />
         </form>
-        <a href="#"> Join </a>
-        <a href="#"> Log In </a>
+        <a class="boton-borde" href="#"> Join </a>
+        <a class="boton-sin-borde" href="#"> Log In </a>
       </div>
     </header>
 
@@ -54,7 +50,7 @@
           faster and build powerful applications using modern open source code.
         </p>
       </article>
-      <div>
+      <div class="section-one-div">
         <a class="see-plans" href="#"> See plans </a>
         <a class="join-for-free" href="#"> Join for free </a>
       </div>
@@ -82,7 +78,9 @@
     <!-- section 3 -->
 
     <section id="section-three">
-      <div>
+      <div class="section-three-items">
+
+      <div class="items">
         <img
           class="zero-configuration"
           src="./images/zero-configuration.svg"
@@ -95,7 +93,7 @@
         </p>
       </div>
 
-      <div>
+      <div class="items">
         <img
           class="team-managemet"
           src="./images/team-management.svg"
@@ -108,7 +106,7 @@
         </p>
       </div>
 
-      <div>
+      <div class="items"> 
         <img
           class="familiar-features"
           src="./images/familiar-features.svg"
@@ -121,7 +119,7 @@
         </p>
       </div>
 
-      <div>
+      <div class="items">
         <img class="npm-audit" src="./images/npm-audit.svg" alt="npm audit" />
         <h3>npm audit</h3>
         <p>
@@ -129,6 +127,8 @@
           zero-friction way to make open source software safer.
         </p>
       </div>
+    </div>
+
       <a class="create-an-org" href="#"> Create an Org </a> 
     </section>
   </body>

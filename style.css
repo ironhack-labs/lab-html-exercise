@@ -45,6 +45,62 @@ nav a {
   margin-right: 1rem;
 }
 
+/* search */
+
+.main-search {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 5px;
+}
+.main-search-form {
+  flex: 1;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-right: 20px;
+}
+
+.barra-buscar {
+  flex: 1;
+  font-family: "Poppins";
+  background-color: lightgray;
+  padding-left: 40px;
+  color: darkgray;
+  border: none;
+}
+.main-search-form:after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  width: 20px;
+  height: 20px;
+  background-image: url("./images/magnifying-glass.png");
+  background-size: cover;
+}
+
+.boton-buscar {
+  background-color: #fb3e44;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  font-family: "Poppins";
+}
+.boton-borde {
+  text-decoration: none;
+  color: black;
+  margin-right: 20px;
+  border: 1px solid black;
+  padding: 5px 10px;
+}
+
+.boton-sin-borde {
+  text-decoration: none;
+  color: black;
+}
+
 /* section 1 */
 
 #section-one {
@@ -54,9 +110,14 @@ nav a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 200px;
+  padding: 0 200px;
 }
-
+.section-one-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
 .see-plans {
   font-size: 16px;
   font-weight: bold;
@@ -100,7 +161,7 @@ h1 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 200px;
+  padding: 0 200px;
 }
 
 h2 {
@@ -130,9 +191,19 @@ h2 {
   background-color: white;
   display: flex;
   justify-content: space-between;
-  align-items: left;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 200px;
+}
+.section-three-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
   flex-direction: row;
-  padding: 200px;
+}
+
+.section-one-items .items {
+  padding: 10px;
 }
 
 h3 {
@@ -174,4 +245,8 @@ h3 {
   padding-left: 30px;
   padding-right: 30px;
   margin: 30px;
+}
+
+input:focus {
+  outline: none;
 }
