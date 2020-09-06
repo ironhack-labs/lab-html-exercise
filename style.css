@@ -4,6 +4,16 @@ body {
   font-family: 'Poppins';
 }
 
+h1 {
+    font-size: 50px;
+    font-weight: bold
+}
+
+h2 {
+    font-size: 35px;
+    font-weight: bold
+}
+
 header > div {
     padding: 0 25px;
     display: flex;
@@ -43,12 +53,14 @@ header > div {
   
   .logo-npm {
     width: 80px;
-    margin: 0px;
+    margin-left: 20px;
   }
   
   .search-bar {
     display: flex;
+    justify-content: center;
     align-items: center;
+    align-content: center;
     width: 80%;
   }
   
@@ -93,3 +105,60 @@ header > div {
     border-shadow: 5px;
   }
   
+  .top-section {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      height: 600px;
+      background-color: rgba(232,217,217,.3);
+  }
+
+  article {
+        width: 60%;
+        text-align: center;
+        font-size: 18px;
+        padding: 0px 0px;
+        margin: 10px;
+  }
+
+  .links > div {
+        display: inline-flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px;  
+        font-size: 20px; 
+  }
+
+  .see-plans-btn {
+      text-decoration: none;
+      background-color: #FB3B49;
+      color: white;
+      padding: 15px 20px;
+      box-shadow: rgba(251,59,73,.2);
+  }
+
+  .join-btn {
+      text-decoration: none;
+      color: black;
+  }
+
+  .middle-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 600px;
+  }
+  .triangle-hexagon {
+      width: 50%;
+      height: 200px;
+  }
+
+  .middle-section > h2 {
+      background-color: rgba(255,204,53,.4);
+      transform: skew(9deg,0deg);
+      font-style: italic;
+  }
