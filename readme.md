@@ -261,3 +261,18 @@ In this exercise, you've built a clone of a piece of the npm home page. This sit
 This concludes the HTML / CSS module. We are proud of you!
 
 _The Ironhack team :heart:_
+
+
+    align-items: stretch;
+    align-content: stretch;
+  }
+  
+  #npm-logo {
+    width: 100px;
+  }
+  
+  #magnifying-glass {
+    height: 20px;
+    width: 20px;
+  }
+  */
