@@ -87,6 +87,7 @@ nav a {
    display: block;
    position: absolute;
    left: 5px;
+   top: 10px;
    
 
 }
@@ -132,5 +133,133 @@ nav a {
 .join {
     border: 1px solid lightslategray;
     border-radius: 0;
+}
 
+#top-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 0 auto;
+    background-color: rgba(232,217,217,.3);
+    height: 600px;
+    border-width: 2px solid #eee;
+    border-radius: 20px;
+    box-shadow:2px 2px 10px 0 #eee;
+}
+
+#top-section > h1 {
+    font-size: 80px;
+    margin: 0 auto;
+    font-weight: 700;
+    
+}
+
+#top-section > article {
+    width: 490px;
+    height: 90px;
+    margin: 30px;
+    text-align: center;
+}
+
+.link-btn {
+    display: flex;
+    justify-content: space-between;
+    width: 490px;
+    height: 61px;
+
+}
+
+.plans-btn{
+    background-color:#FB3B49;
+    box-shadow:8px 8px 0 rgba(251,59,73,.2);
+    color:white;
+    width: 150px;
+    height: 24px;
+    padding-right: 16px;
+    padding-bottom: 16px;
+    text-decoration: none;
+    padding: 16px 32px;
+    text-align: center;
+    font-weight: 700;
+
+}
+
+.join-free{
+    background-color: white;
+    color: black;
+    width: 150px;
+    height: 24px;
+    padding-right: 16px;
+    padding-bottom: 16px;
+    text-decoration: none;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration-style: solid;
+    font-weight: 700;
+}
+#mid-section {
+    height: 400px;
+    padding: 64px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#mid-section {
+    height: 600px;
+}
+#mid-section > img{
+    width: 250px;
+    margin-bottom: 32px;
+    display: flex;
+}
+#mid-section > h2 {
+    font-size:32px;
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+    font-style: italic;
+}
+
+#mid-section > article {
+    text-align: center;
+    width: 700px;
+}
+#lower-section {
+    height: 500px;
+    margin: 50px;
+    display:flex;
+    justify-content:space-around;
+    flex-direction:row;
+    flex-wrap:wrap;  
+}
+
+}
+#lower-section > div {
+    width: 25%;
+    padding-right: 8px;
+      
+}
+#lower-section img {
+    width:50px;
+}
+#lower-section h4 {
+   color:#ED1C24;
+   font-weight: 600;
+}
+#lower-section p{
+    text-align: left;
+    width: 250px;
+}
+
+#lower-section a{
+    width: 150px;
+    height: 30px;
+    background-color: black;
+    color:white;
+    padding: 18px 140px;
+    text-align: center;
+    font-size: 20px;
+    text-decoration:none;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
 }
