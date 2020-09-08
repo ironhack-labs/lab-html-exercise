@@ -2,6 +2,7 @@
 
 body {font-family: "Poppins";
 }
+/* Header CSS */
 header > div {
     padding:0.25px;
     display:flex;
@@ -31,74 +32,53 @@ nav a {
     margin-right: 1rem;
 }
 .topnav {
-    height: 60px;
-    max-width: 96rem;
-    padding-left: 2rem;
-    padding-right:2rem;
-    display:flex;
-    flex-wrap: wrap;
-    justify-content:space-between;
+    display: flex;
+    justify-content: space-around;
     align-items: center;
-    border-bottom: 1px solid lightgray;
+    flex-direction: row;
+    height: 70px;
     position: relative;
-    box-sizing: border-box;
 }
 
 .npmlogo { 
     width: 70px;
+    position: absolute;
+    left:10px;
     margin-right:2rem;
     padding-top: 8px;
 }
 
-.topnav {
-    width: 100%;
-    height: 52px;
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    flex-direction: row;
-}
-
 #search-box {
-    width: 777px;
-    height: 52px;
-    padding: 8px 0;
-    display: flex;
-    justify-content: center;
-    position: relative;
+ position: relative;
+ left: 70px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ width: 777px;
+ height: 52px;
+ padding-top: 8px;
+ padding-bottom: 8px;
     
 }
 
-.search-bar input{ 
-    width: 598px;
+#search-box input{ 
+    width: 777px;
     height: 32px;
-    padding-left: 20px;
-    position: static;
+    padding-left: 35px;
     background-color: rgba(0,0,0,.05);
     border-width: 0;
     letter-spacing: 3px;
     margin:5px 0;
-
-}
-#search-box > span{
-   width: 18px;
-   height: 30px;
-   padding: 10px 4px 0 16px;
-   display: block;
-   position: absolute;
-   left: 5px;
-   top: 10px;
-   
-
+    position: relative;
 }
 #search-box img {
     width: 18px;
     height: 18px;
-    display: flex;
-    justify-content: flex-start;
+    position: absolute;
+    left: 8px;
 }
 
-.search-bar  button {
+#search-box  button {
     letter-spacing: 0.3px;
     font-weight: bold;
     background-color: #fb3e44;
@@ -115,8 +95,6 @@ nav a {
     height: 32px;
     display: flex;
     justify-content:space-between;
-    flex-direction: row;
-    align-items: center;
     padding: 5px 15px
 }
 
@@ -133,7 +111,10 @@ nav a {
 .join {
     border: 1px solid lightslategray;
     border-radius: 0;
+    font-weight: 500;
 }
+/* End of Header */
+
 
 #top-section {
     display: flex;
@@ -219,6 +200,8 @@ nav a {
     background-color: rgba(255,204,53,.4);
     transform: skew(9deg,0deg);
     font-style: italic;
+    padding-right:30px;
+    padding-left:30px;
 }
 
 #mid-section > article {
