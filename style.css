@@ -92,6 +92,7 @@ button:hover {
 .nav-link {
     font-size: 0.65rem;
     font-weight: 600;
+    flex-wrap: wrap;
     display: flex;
     justify-content: space-evenly;
     padding-left: 0.5rem;
@@ -126,7 +127,7 @@ button:hover {
     height: 2rem;
     justify-content: space-between;
     align-items: center;
-    flex: 2 1 auto;
+    flex: 2 1 30vw;
     background: #eee;
     border: 1px solid transparent;
     position: relative;
@@ -171,7 +172,7 @@ button:hover {
 
 .join-button {
     padding: 0.25rem 1rem;
-    margin: 0rem 1rem 0rem 1.5rem;
+    margin: 0.25rem 1rem 0.25rem 1.5rem;
     border: 1px solid black;
     color: black;
     background-color: white;
@@ -274,4 +275,11 @@ button:hover {
     color: white;
     box-shadow: 7px 7px rgba(0, 0, 0, 0.15);
     margin: 1rem 0rem 2rem 0rem;
+}
+
+@media only screen and (max-width: 800px) {
+
+    .intro-section p {
+        width: 80vw;
+    }
 }
