@@ -11,10 +11,6 @@ body {
     font-size: 10px;
 }
 
-header{
-    width: 100%;
-}
-
 .header-nav {
     padding: 10px 25px 0px 25px;
     display: flex;
@@ -62,6 +58,7 @@ header{
     display: flex;
     flex-direction: row;
     align-items: center;
+    
   }
 
   .search-bar{
@@ -162,3 +159,84 @@ header{
     background-color: white;
     color: black;
   }
+
+  #description{
+    height: 540px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.triangle-hexagon{
+    width: 220px;
+    padding-top: 40px;
+}
+
+h2{
+    font-size: 3em;
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+    font-style: italic;
+}
+
+#description article{
+    font-size: 1.3em;
+    text-align: center;
+    width: 640px;
+    padding-bottom: 30px;
+}
+
+#features{
+    height: 520px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.boxes{
+    width: 1000px;
+    padding: 0 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.feature{
+    width: 200px;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+h3{
+    font-size: 1.3em;
+    color: red;
+    font-weight: bold;
+}
+
+.feature p{
+    font-size: 1.3em;
+}
+
+.feature-image{
+    height: 40px;
+}
+
+#features a{
+    width: 350px;
+    font-size: 1.6em;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px 0;
+    background-color: black;
+    color: white;
+    margin-bottom: 30px;
+}
