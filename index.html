@@ -11,7 +11,7 @@
             <div>
                 <div>
                     <img class="blackHeart" src="/Users/joaouva/Desktop/Ironhack/Prework/lab_html_exercise/lab-html-exercise/images/black-heart.png" alt="black-Heart">
-                    <span>Nifty Penguin Magic</span>
+                    <span class="span-text">Nifty Penguin Magic</span>
                 </div>
                 <nav>
                     <ul>
@@ -26,11 +26,15 @@
             </div>
 
 <!--Search bar and buttons-->
-            <div>
-                <div><img src="/Users/joaouva/Desktop/Ironhack/Prework/lab_html_exercise/lab-html-exercise/images/npm-logo.png" alt="npm logo"></div>
-                <div></div><img src="/Users/joaouva/Desktop/Ironhack/Prework/lab_html_exercise/lab-html-exercise/images/magnifying-glass.png" alt="magnifying-glass"></div>
-                <div class="searchbar"> <input type="text" placeholder="Search Packages"> <button type="button">Search</button> </div>
-                <div><a href="#"> Join </a> <a href="#"> Log In </a></div>
+            <div class="bar_npmlogo">
+                <div><img class="npm-logo" src="/Users/joaouva/Desktop/Ironhack/Prework/lab_html_exercise/lab-html-exercise/images/npm-logo.png" alt="npm logo"></div>
+                <div class=search-bar>
+                    <img class="mag-glass" src="/Users/joaouva/Desktop/Ironhack/Prework/lab_html_exercise/lab-html-exercise/images/magnifying-glass.png" alt="magnifying-glass">
+                    <input type="text" placeholder="Search Packages" class="search"> 
+                    <button class= button-search type="button">Search</button>
+                </div>
+                <button class="join"><a href="#"> Join </a></button> 
+                <button class="log-in"><a href="#"> Log In </a></button>
             </div>
         </header>
 
@@ -43,7 +47,9 @@
                 <article>Essential JavaScript development tools that help you go to market faster and build powerful applications using
                     modern open source code. 
                 </article>
-                <div><a href="#"> See plans </a> <a href="#"> Join for free </a></div>
+                <div class=top-section-bottom>
+                <button class="seeplans-button"><a href="#"> See plans </a></button>
+                <a href="#"> Join for free </a></div>
             </section>
             
 <!--Section2-->
