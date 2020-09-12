@@ -4,11 +4,6 @@ body {
   font-family: "Poppins";
 }
 
-h1{
-  font-size: 5em;
-}
-
-
 /*header & Nav*/
 header > div {
     padding: 0 25px;
@@ -53,6 +48,8 @@ header > div {
     width: 78%;
     right: 10px;
     align-items: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
   }
   .search{
     border: none;
@@ -65,11 +62,11 @@ header > div {
   }
   .mag-glass{
     position: absolute;
-    top: 4px;
-    right: 3px;
-    bottom: 4px;
-    left: 6px;
-    width: 20px;
+    top: 8px;
+    right: 8px;
+    bottom: 3px;
+    left: 8px;
+    width: 18px;
   }
   .button-search{
     background-color:#fb3e44;
@@ -81,7 +78,8 @@ header > div {
   }
 
   [type=text]{
-    color: rgba(0,0,0,0.5);  
+    color: rgba(0,0,0,0.5); 
+    padding-left: 40px; 
   }
   
   .join {
@@ -89,23 +87,29 @@ header > div {
     background-color: white;
     padding: 4px 20px 4px 20px;
     font-size: 1em;
+    } 
+    .join a{
+      text-decoration: none;
+      color: black;
     }
+
   .log-in{
     background-color: white;
     border: none;
     padding-right: 30px;
     font-size: 1em;
   }
-.bar_npmlogo{
-  border:none;
-}
+  .log-in a{
+    text-decoration: none;
+    color: black;
+  }
 
 /* 1Section*/
 
 #top-section{
   display: flex;
   justify-content: center;
-  background-color: rgba(232,217,217,217.3);
+  background-color: rgba(232,217,217,.3);
   align-items: center;
   flex-direction: column;
   height: 600px;
@@ -113,6 +117,7 @@ header > div {
 #top-section h1{
   position: relative;
   bottom: 70px;
+  font-size: 5em;
 }
 
 #top-section article{
@@ -121,7 +126,7 @@ header > div {
   bottom: 90px;
   text-align: center;
 }
-.top-section-bottom{
+.top-section-buttons{
   width: 100%;
   text-align: center;
 }
@@ -131,8 +136,81 @@ header > div {
   width: 15%;
   font-size: 1em;
   padding: 15px 20px 15px 20px;
-  color: white;
   Position: relative;
   right: 40px;
   box-shadow: 8px 8px rgba(251,59,72,.2);
+}
+.seeplans-button a{
+  text-decoration: none;
+  color: white;
+}
+
+.join-link {
+  text-decoration: none;
+  color: black;
+}
+
+/*2nd Section - middle section*/
+#middle-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 600px;
+}
+.triangle-hexagon{
+  width: 250px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+#middle-section h3{
+  font-size:2em;
+  background-color: rgba(255, 204, 53, .4);
+  transform:skew(9deg,0deg);
+  font-style: italic;
+  
+}
+#middle-section article{
+  width: 50%;
+  text-align: center;
+}
+
+/*3rd section: bottom section*/
+
+#bottom-section{
+  display: flex;
+  justify-content: space-evenly;
+  padding-top:90px;
+  height: 600px;
+}
+
+#bottom-section img{
+  height:30px;
+  padding-bottom: 0px;
+}
+
+#bottom-section h4{
+  font-size: 1em;
+  color: #ED1C24;
+}
+#bottom-section p{
+  width: 200px;
+}
+.createanorg{
+  background-color: black;
+  box-shadow: 8px 8px 0 rgba(128, 83, 35, .2);
+  width: 25%;
+  height: 8%;
+  top: 185%;
+  position: absolute;
+  text-align: center;
+}
+.createanorg a{
+  text-decoration: none;
+  color: white;
+  font-size: 1.2em;
+  font-weight: bold;
 }
