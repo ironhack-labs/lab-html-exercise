@@ -1,54 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NPM Clone</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <header>
         <div>
             <div>
-            <img class="blackHeart" src="images/black-heart.png" alt="black heart" />
-            <span> Nifty Penguin Magic </span>
+                <img class="blackHeart" src="images/black-heart.png" alt="black heart" />
+                <span> Nifty Penguin Magic </span>
             </div>
             <nav>
-            <ul>
-                <li><a href="#"> npm Enterprise </a></li>
-                <li><a href="#"> Products </a></li>
-                <li><a href="#"> Solutions </a></li>
-                <li><a href="#"> Resources </a></li>
-                <li><a href="#"> Docs </a></li>
-                <li><a href="#"> Support </a></li>
-            </ul>
+                <ul>
+                    <li><a href="#"> npm Enterprise </a></li>
+                    <li><a href="#"> Products </a></li>
+                    <li><a href="#"> Solutions </a></li>
+                    <li><a href="#"> Resources </a></li>
+                    <li><a href="#"> Docs </a></li>
+                    <li><a href="#"> Support </a></li>
+                </ul>
             </nav>
         </div>
-        
+
         <div>
             <!-- add logo, search bar and buttons (or links and style them as buttons later) -->
             <img src="images/npm-logo.png" alt="" class="logo">
-            <img src="images/magnifying-glass.png" alt="">
-            <input type="search" placeholder="Search packages">
-            <button>Search</button>
-            <button>Join</button>
-            <button>Log In</button>
+            <form action="" class="">
+                <img src="images/magnifying-glass.png" alt="">
+                <input type="search" placeholder="Search packages">
+                <button>Search</button>
+            </form>
+            <div>
+                <a href="#">Join</a>
+                <a href="#">Log In</a>
+            </div>
         </div>
     </header>
-    
+
     <!-- SECTION 1 -->
     <section id="section1">
         <h1>Build Amazing Things</h1>
-        <p>Essential JavaScript development tools that help you go to market faster and build powerful applications using
-            modern open source code.</p>
-        <a href="#">See plans</a>
-        <a href="#">Join for free</a>
+        <article>
+            Essential JavaScript development tools that help you go to market faster and build powerful applications using modern open source code.
+        </article>
+        <div>
+            <a href="#">See plans</a>
+            <a href="#">Join for free</a>
+        </div>
     </section>
 
     <!-- SECTION 2 -->
     <section id="section2">
         <img src="images/triangle-hexagon.svg" alt="">
         <h1>Bring the best of open source to your company</h1>
-        <p>npm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it. Create an Org and get more out of the tools your team already knows and loves.</p>
+        <article>
+            npm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers already use
+            it. Your company depends on it. Create an Org and get more out of the tools your team already knows and
+            loves.
+        </article>
     </section>
 
     <!-- SECTION 3 -->
@@ -62,7 +76,8 @@
             <article class="features-box">
                 <img src="images/team-management.svg" alt="">
                 <h4>Team Management</h4>
-                <p>Control who has access to what modules within your team namespace using straightforward team management capabilities.</p>
+                <p>Control who has access to what modules within your team namespace using straightforward team
+                    management capabilities.</p>
             </article>
             <article class="features-box">
                 <img src="images/familiar-features.svg" alt="">
@@ -72,11 +87,15 @@
             <article class="features-box">
                 <img src="images/npm-audit.svg" alt="">
                 <h4>npm audit</h4>
-                <p>Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer. </p>
+                <p>Enjoy the security auditing features built into the npm client, a zero-friction way to make open
+                    source software safer. </p>
             </article>
         </div>
-        <a href="#" class="">Create an Org</a>
+        <div>
+            <a href="#" class="">Create an Org</a>
+        </div>
     </section>
 
 </body>
+
 </html>
