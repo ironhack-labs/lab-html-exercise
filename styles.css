@@ -19,6 +19,10 @@ button {
   outline: none;
 }
 
+article {
+  text-align: center;
+}
+
 /* header */
 
 header > div {
@@ -108,7 +112,8 @@ input {
   background-color: rgba(232, 217, 217, 0.3);
 }
 
-.top-section-container {
+.top-section-container,
+.middle-section-container {
   margin: 0 10rem;
   display: flex;
   flex-direction: column;
@@ -121,8 +126,7 @@ h1 {
   margin: 5rem 0 0;
 }
 
-article {
-  text-align: center;
+.top-section article {
   margin-top: 3rem;
 }
 
@@ -151,4 +155,30 @@ article {
   background-color: #ffffff;
   color: black;
   margin-left: 15px;
+}
+
+/* middle section */
+
+.middle-section {
+  height: 600px;
+}
+
+.middle-section img {
+  width: 160px;
+  margin-top: 7rem;
+  margin-bottom: 3rem;
+}
+
+.skew {
+  transform: skew(9deg, 0deg);
+  background-color: rgba(255, 204, 53, 0.4);
+}
+.skew h2 {
+  margin: 0;
+  padding: 0 30px;
+  transform: skew(-9deg, 0deg);
+}
+
+.middle-section article {
+  margin-top: 2rem;
 }
