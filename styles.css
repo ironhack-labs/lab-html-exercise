@@ -1,3 +1,21 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Poppins";
+}
+
+a {
+  text-decoration: none;
+}
+
+/* header */
+
 header > div {
   padding: 0 25px;
   display: flex;
@@ -18,11 +36,64 @@ nav ul {
 }
 
 nav a {
-  text-decoration: none;
   color: black;
 }
 
 .blackHeart {
   width: 20px;
   margin-right: 1rem;
+}
+
+.header-bottom {
+  padding: 5 25px;
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  height: 20px;
+}
+
+form {
+  display: flex;
+  width: 80%;
+}
+form img {
+  margin: 4px 0;
+  padding: 10px;
+  height: 38px;
+  width: 38px;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+form button {
+  background-color: #fb3e44;
+  padding: 0 12px;
+  margin: 4px;
+  border: none;
+  color: white;
+  outline: none;
+  cursor: pointer;
+}
+
+input {
+  margin: 4px 0;
+  padding: 10px 0;
+  background-color: rgba(0, 0, 0, 0.05);
+  border: none;
+  outline: none;
+  font-size: medium;
+  flex-grow: 2;
+}
+
+.header-bottom a {
+  text-decoration: none;
+  color: #868484;
+  cursor: pointer;
+  font-size: small;
+}
+
+.join-btn {
+  padding: 3px 12px;
+  border: 1px solid #cccccc;
 }
