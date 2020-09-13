@@ -33,17 +33,73 @@ header > div {
     margin-right: 1rem;
   }
 header {
-    padding: 2px;
-    font-size: 13px;
+    padding: 0 25px;
+    font-size: 13px;   
 }
-.logo {
+
+#form {
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#searchpackages {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 10px 0;
+}
+
+#logo {
     width: 50px;
-    margin-right: 1rem;
+    margin-right: 10px;
+    margin-left: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #magnifying {
     width: 20px;
-    margin-right: 1rem;
+    margin-right: 1px;
+    margin-top: 8px;
+    margin-left: 15px;
+}
+
+input[type=text] {
+display: flex;
+width: auto;
+padding: 6px 11rem;
+margin: 0px 0px;
+background-color: #F2F2F2;
+justify-content: center;
+align-items: center;
+margin-top: 2px;
+border: none;
+}
+
+#search {
+  background-color: #fb3b49;
+  color: white;
+  padding: 6px 15px 6px 15px;
+  position: relative;  
+  margin-right: 1em;
+}
+
+#searchbox {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+#searchbox img {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+#joinlogin {
+  margin-right: 1.5rem;
 }
 
 #jointop {
@@ -51,23 +107,26 @@ header {
     color: black;
     padding: 5px 15px 5px 15px;
     border: 2px solid black;
+    border-bottom: 2px solid #F2F2F2;
+    border-right: 2px solid #F2F2F2;
+    border-left: 2px solid #F2F2F2;
+    border-top: 2px solid rgb(87, 85, 85);
+    margin: 4px;
 }
 
 #login {
     text-decoration: none;
     color: black; 
+    margin: 4px;
+    bottom: 50px;
+    right: 20px;
 }
-
-#search {
-    background-color: #fb3b49;
-    color: white;
-}
-
 
   h1 {
       text-align: center;
       font-size: 3em;
       font-weight: 900;
+      letter-spacing: 3px;
   }
 
   #build {
@@ -79,9 +138,7 @@ header {
      align-items: center;
      flex-direction: column;
      line-height: 1.5em;
-     
   } 
-  
   
   #seeplans {
       background-color: #fb3b49;
@@ -117,7 +174,8 @@ h2 {
     background-color: rgba(255,204,53,.4);
     transform: skew(9deg,0deg);
     font-style: italic;
-    margin: 30px 60px 30px 60px;
+    margin: 30px;
+    padding: 0 30px 0 30px;
 }
 
  #bring {
@@ -129,4 +187,48 @@ h2 {
     align-items: center;
 }  
 
+#bring article {
+  margin: 0 16% 8% 16%;
+  font-size: 80%;
+}
+
+#offer {
+  text-align: center;
+  display: flex;
+  font-size: 80%;
+  justify-content: center;
+  margin: 0px 30px 100px 50px;
+  text-align: left;
+}
+
+#offer h3 {
+  color: #ED1C24;
+  font-weight: bold;
+}
+
+#offer img {
+  width: 30px;
+  margin-right: 1rem;
+  display: flex;
+}
+
+#createorg {
+  background-color: black;
+  margin: 10px 280px 100px 350px;
+  box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+  padding: 15px 100px 15px 100px;
+  font-weight: bolder;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+}
+
+#offer div {
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  align-items: left;
+  margin: 0px 40px 0px 25px;
+  font-size: 12px;
+}
 
