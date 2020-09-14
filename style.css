@@ -14,46 +14,51 @@ header>div {
     border-bottom: 1px solid lightgray;
 }
 
-header .searchbar {
+header .search-bar {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-evenly;
     align-items: center;
     border-bottom: 1px solid lightgray;
+    padding: 5px 0;
+}
+
+header .bar {
+    display: flex;
+    align-items: center;
 }
 
 header input[type="text"] {
-    width: 800px;
-    height: 40px;
-    background-color: #E0E0E0;
+    width: 75vw;
+    height: 25px;
+    background-color: #F5F5F5;
+    border: none;
+    outline: none;
 }
 
-header .submit-btn {
+header .search-btn {
     color: white;
     background-color: #FB3B49;
     border: none;
-    padding: 15.5px;
+    padding: 8px;
 }
 
 header .join-btn {
     text-decoration: none;
     color: #000;
     background-color: #fff;
-    padding: 7px 15px;
-    border: 1px solid black;
-    height: 20px;
-    margin: 0 20px 0 30px;
-    font-size: 0.9rem;
+    border: 1.3px solid #e0e0e0;
+    padding: 4px 20px;
 }
 
 header .log-btn {
     text-decoration: none;
+    padding: 4px 20px;
     color: #000;
-    background-color: #fff;
-    padding: 7px 15px;
-    /* border: 1px solid black; */
-    height: 20px;
-    margin: 0 10px 0 10px;
-    font-size: 0.9rem;
+}
+
+header .search-btns {
+    display:flex;
+    align-items: center;
 }
 
 nav {
@@ -87,15 +92,15 @@ h2 {
 }
 
 .magnifying-glass {
-    width: 20px;
-    margin-right: 1rem;
-    position: absolute;
-    left: 95px;
+    background-color: #F5F5F5;
+    height: 17px;
+    padding: 5px;
 }
 
 .triangle-hexagon {
     width: 25%;
     padding: 40px 0;
+    margin-left: 0;
 }
 
 .img-three {
@@ -104,7 +109,7 @@ h2 {
 
 .npm {
     width: 3%;
-    margin-right: 10px;
+    margin-right: 0px;
 }
 
 #one {
@@ -192,6 +197,7 @@ h2 {
     color: white;
     background-color: #000;
     padding: 10px 90px;
+    text-decoration: none;
 }
 
 #three .container {
