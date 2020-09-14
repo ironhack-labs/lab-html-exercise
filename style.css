@@ -49,8 +49,9 @@
             
             form input {
                 background-color: rgba(0, 0, 0, 0);
-                width: 85%;
+                width: 100%;
                 border: none;
+                margin-left: 10px;
             }
             
             form button {
@@ -71,9 +72,13 @@
                 border: 1px solid rgba(0, 0, 0, .5);
             }
             
-            #frontpage {
-                height: 600px;
+            .grey-background {
                 background-color: rgba(232, 217, 217, .3);
+            }
+            
+            #frontpage,
+            #secondary {
+                height: 600px;
                 display: flex;
                 justify-content: center;
                 flex-direction: column;
@@ -83,6 +88,7 @@
             h1 {
                 font-size: 4.5em;
                 margin-bottom: 20px;
+                text-align: center;
             }
             
             #frontpage article {
@@ -110,4 +116,64 @@
             
             .join {
                 color: black;
+            }
+            
+            #secondary img {
+                height: 40%;
+                margin-bottom: 40px;
+                margin-top: 20px;
+            }
+            
+            h2 {
+                font-size: 2.25em;
+                background-color: rgba(255, 204, 53, .4);
+                padding: 0 50px;
+                font-style: italic;
+                transform: skew(9deg, 0deg);
+                text-align: center;
+            }
+            
+            #secondary article {
+                width: 55%;
+                text-align: center;
+            }
+            
+            .big-box {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            .box img {
+                height: 30px;
+            }
+            
+            .box {
+                width: 18%;
+                margin: 20px;
+            }
+            
+            #benefits {
+                margin-top: 60px;
+                margin-bottom: 40px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            
+            h4 {
+                color: #ED1C24;
+            }
+            
+            #benefits a {
+                color: white;
+                background-color: black;
+                padding: 20px 150px;
+                text-decoration: none;
+                font-size: 1.2em;
+                font-weight: bolder;
+                margin-top: 40px;
+                box-shadow: 8px 8px 0 rgba(128, 83, 35, .2);
             }
