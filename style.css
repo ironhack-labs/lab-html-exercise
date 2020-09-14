@@ -1,8 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
+html, body{
+  margin: 0;
+  padding: 0;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
-}
+  }
 
 header > div {
     padding: 0 25px;
@@ -12,27 +17,76 @@ header > div {
     border-bottom: 1px solid lightgray;
   }
   
-  nav {
+nav {
     width: 600px;
   }
   
-  nav ul {
+nav ul {
     list-style: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    align-content: center;
   }
   
-  nav a {
+nav a {
     text-decoration: none;
     color: black;
   }
   
-  .blackHeart {
+.blackHeart {
     width: 20px;
     margin-right: 1rem;
   }
 
-  .inits {
-    float: left;
+  .search-heading{
+    padding: 5px 25px 5px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid darkgray;
   }
+
+.acronym {
+  width: 70px;
+  margin-right: 1rem;
+}
+
+.searchbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.magnifier{
+  height: 25px;
+  padding: 4px;
+  background-color: rgba(0,0,0,0.05);
+}
+
+.searchbar input{
+  height: 25px;
+  width: 50vw;
+  border: none;
+  padding: 5px;
+  background-color: rgba(0,0,0,0.05);
+ }
+
+.searchbar button {
+  height: 35px;
+  width: 60px;
+  border: none;
+  color: white;
+  background-color: #fb3e44;
+}
+
+ .join{
+  padding: 0px 25px;
+  text-decoration: none;
+  border: 1px solid black;
+}
+
+.login{
+ padding: 0px 25px;
+ text-decoration: none;
+}
