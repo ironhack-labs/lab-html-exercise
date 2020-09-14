@@ -7,7 +7,7 @@
         <header>
             <div>
                 <div>
-                    <img src="./images/black-heart.png" alt="NPM Clone">Nifty Penguin Magic
+                    <img class="black-heart" src="./images/black-heart.png" alt="Black heart">Nifty Penguin Magic
                 </div>
                 <nav>
                     <ul>
@@ -22,21 +22,21 @@
             </div>    
             <div>
                 <div>
-                    <img src="./images/npm-logo.png" alt="NPM-logo">
+                    <img class="npm-logo" src="./images/npm-logo.png" alt="NPM-logo">
                 </div>
                 <form method="POST" action="/search">
-                    <img src="./images/magnifying-glass.png" alt="">
-                    <input type="text" placeholder="Search Packages">
+                    <label for="search-input"><img src="./images/magnifying-glass.png" alt=""></label>
+                    <input type="text" id="search-input" name="search-input" placeholder="Search Packages">
                     <button type="submit">Search</button>
                 </form>
-                <div>
+                <div class="login">
                     <a href="#">Join</a>
                     <a href="#">Log In</a>
                 </div>
             </div>         
         </header>
         <main>
-            <section>
+            <section id="build">
                 <h1>Build amazing things</h1>
                 <article>
                     Essential JavaScript development tools that help you go to market faster and build powerful applications using modern open source code.
@@ -46,7 +46,7 @@
                     <a href="#">Join for free</a>
                 </div>
             </section>
-            <section>
+            <section id="open-source">
                 <img src="./images/triangle-hexagon.svg" alt="">
                 <h2>Bring the best of open source to your company</h2>
                 <article>
