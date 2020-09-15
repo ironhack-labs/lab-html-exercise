@@ -26,32 +26,43 @@
                 </nav>
             </div>
 
-            <div>
-                <img src="./images/npm-logo.png" alt="npm">
-                <form action="" method="POST">
-                    <label for="search" ><img src="./images/magnifying-glass.png" alt="search"></label>
-                    <input type="text" name="search" id="search" placeholder="Search packages">
-                    <button>Search</button>
-                </form>
-                <button class="join" type="button">
-                    Join
-                </button>
-                <button class="log-in" type="button">
-                    Log in
-                </button>
+            <div id="header-bottom"> 
+                <div id="search-bar">
+                    <img class="npm-logo" src="./images/npm-logo.png" alt="npm">
+                    <form id="search-form" action="" method="POST">
+                        <label>
+                        <img src="./images/magnifying-glass.png" alt="search">
+                        </label>
+                        <input type="text" name="search" id="search" placeholder="Search packages">
+                        <button>Search</button>
+                    </form>
+                </div>
+
+                <div id="sign-in">
+                    <button class="join" type="button">
+                        Join
+                    </button>
+                    <button class="log-in" type="button">
+                        Log in
+                    </button>
+                </div>
             </div>
         </header>
 
-        <section id="cta">
+        <section id="cta-session">
             <h1>
                 Build amazing things
             </h1>
-            <p>
-                Essential JavaScript development tools that help you go to market faster and build powerful applications using
-modern open source code.
-            </p>
-            <a href="">See plans</a>
-            <a href="">Join for free</a>
+            <div id="cta-container">
+                <p>
+                    Essential JavaScript development tools that help you go to market faster and build powerful applications using
+    modern open source code.
+                </p>
+                <div id="cta-buttons">
+                    <a class="button-red" href="">See plans</a>
+                    <a class="button-white" href="">Join for free</a>
+                </div>
+            </div>
         </section>
 
         <section id="key-value">
@@ -63,9 +74,11 @@ modern open source code.
         </section>
 
         <section id="benefits">
-            <div>
+            <div id="benefits-articles">
                 <article>
-                    <img src="./images/zero-configuration.svg" alt="Zero configuration">
+                    <div>
+                        <img src="./images/zero-configuration.svg" alt="Zero configuration">
+                    </div>
                     <h4>
                         Zero configuration
                     </h4>
@@ -75,7 +88,9 @@ modern open source code.
                 </article>
 
                 <article>
-                    <img src="./images/team-management.svg" alt="Team management">
+                    <div>
+                        <img src="./images/team-management.svg" alt="Team management">
+                    </div>
                     <h4>
                         Team management
                     </h4>
@@ -84,7 +99,9 @@ modern open source code.
                 </article>
 
                 <article>
-                    <img src="./images/familiar-features.svg" alt="Familiar features">
+                    <div>
+                        <img src="./images/familiar-features.svg" alt="Familiar features">
+                    </div>
                     <h4>
                         Familiar features
                     </h4>
@@ -94,7 +111,9 @@ modern open source code.
                 </article>
 
                 <article>
-                    <img src="./images/npm-audit.svg" alt="npm audit">
+                    <div>
+                        <img src="./images/npm-audit.svg" alt="npm audit">
+                    </div>
                     <h4>
                         npm audit
                     </h4>
@@ -104,7 +123,7 @@ modern open source code.
                 </article>
             </div>
 
-            <div>
+            <div id="benefits-button">
                 <a href="">Create an Org</a>
             </div>
         </section>
