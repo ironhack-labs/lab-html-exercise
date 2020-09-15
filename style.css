@@ -96,7 +96,7 @@ form{
 
 .buildthings{
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-direction: column;
   height: 600 px;
@@ -107,13 +107,18 @@ form{
   font-size: 5em;
   text-align: center;
   font-weight: 900;
-  margin-bottom: -.25rem;
+  margin-top: 10px;
+  margin-bottom: .25em;
 }
 
 .buildthings article{
   width: 75%;
   margin-top: 0;
   text-align: center;
+}
+
+.buttons{
+  margin-bottom: 25px;
 }
 
 .plans{
@@ -139,7 +144,7 @@ form{
   border: none;
   background-color: white;
   height: 50px;
-  
+
 
 }
 
@@ -147,4 +152,32 @@ form{
   text-decoration: none;
   color: black;
   font-weight: 800;
+}
+
+.opensource{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 25px;
+}
+
+.opensource h3{
+  font-size: 1.5em;
+  font-weight: 800;
+  background-color: rgba(255,204,53,.4);
+  width: 60%;
+  text-align: center;
+  transform:skew(9deg,0deg);
+  font-style: italic;
+  margin: 5px 0px;
+}
+.opensource img{
+  width: 150px;
+  margin-bottom: 25px;
+}
+
+.opensource article{
+  width: 75%;
+  text-align: justify;
 }
