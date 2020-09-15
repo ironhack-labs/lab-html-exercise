@@ -4,7 +4,7 @@
 
 
 
-/*-------------------------general configuration----------------------*/
+/*-------------------------------general configuration----------------------------*/
 
 body {
   font-family: 'Poppins';
@@ -34,9 +34,24 @@ h3 {
   font-size: 2em;
 }
 
+.link-btn {
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 30px;
+}
 
+.button {
+  background-color: white;
+  border: none;
+  color:black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
 
-/*-------------------------image format----------------------*/
+/*-------------------------------image format----------------------------*/
 
 
 
@@ -59,15 +74,15 @@ h3 {
 }
 
 .section-3-div img{
-  
   width: 80px;
 }
 
 
 
 
-/*-------------------------specific configuration----------------------*/
+/*-------------------------------specific configuration----------------------------*/
 
+/*---------------header-------------*/
 header > div {
   padding: 0 25px;
   display: flex;
@@ -108,37 +123,85 @@ nav a {
   justify-content: space-around;
 }
 
-
-
-
-
-
-
-main > section{
-
-  padding: 25px;
-  display: flex;
-
+#caja-2 button{
+  background-color: #f4511e;
+  color: white;
+  padding: 12px 32px;
+  font-size: 15px;
 }
 
+
+
+/*-----------------------main----------------------*/
+main > section{
+  padding: 25px;
+  display: flex;
+}
+/*---------------section-1-------------*/
 #section-1{
-  background-color: rgba(2,217,217,.3);
+  height: 600px;
+  display: flex;
   flex-direction: column;
   align-items: center;
 }
+#section-1 article{
+  padding: 50px 50px;
+  font-size: 1.5em;
 
+}
+#section-1 div{
+  padding: 50px 0;
+}
 
+#hyperlink-3{
+  background-color: #f4511e;
+  color: white;
+  padding: 12px 50px;
+  font-size: 15px;
+}
+#hyperlink-4{
+  padding: 12px 50px;
+  font-size: 18px;
+}
+
+/*---------------section-2-------------*/
 #section-2{
-  background-color: rgba(2,217,5,.3);
   flex-direction: column;
   align-content: space-around;
 }
 
-#section-3{
-  
-  flex-direction: row;
-  background-color: rgba(2,4,217,.3);
+
+#section-2 h2{
+  background-color: rgba(255,204,53,.4);
+  margin: 0.67em 0;
 }
+/*---------------section-3-------------*/
+#section-3 {
+  flex-direction: row;
+
+}
+
+.section-3-div{
+  padding: 30px;
+}
+
+.section-3-div article{
+ text-align: left;
+ padding: 10px 0;
+}
+
+.section-3-div h3{
+  color: red;
+  text-align: left;
+}
+
+#section-3 button{
+    background-color: black;
+    color: white;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    padding: 15px 40px;
+  }
+  
 
 
 
