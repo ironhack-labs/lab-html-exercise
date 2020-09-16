@@ -69,13 +69,7 @@ h3 {
   width: 25px;
   margin-right: 3rem;
 }
-.triangle-hexagon{
-  width: 400px;
-}
 
-.section-3-div img{
-  width: 80px;
-}
 
 
 
@@ -136,6 +130,7 @@ nav a {
 main > section{
   padding: 25px;
   display: flex;
+  
 }
 /*---------------section-1-------------*/
 #section-1{
@@ -165,29 +160,39 @@ main > section{
 }
 
 /*---------------section-2-------------*/
-#section-2{
+#section-2 {
+
   flex-direction: column;
-  align-content: space-around;
+  align-items: center;
 }
 
-
+.triangle-hexagon{
+  width: 400px;
+}
 #section-2 h2{
   background-color: rgba(255,204,53,.4);
   margin: 0.67em 0;
+  width: fit-content;
 }
-/*---------------section-3-------------*/
-#section-3 {
-  flex-direction: row;
+#section-2 article{
+  width:  700px;
+}
 
-}
+/*---------------section-3-------------*/
+
 
 .section-3-div{
-  padding: 30px;
+  height:300px; 
+  width:400px;
+  padding: 20px 20px;
+}
+.section-3-div img{
+  width: 70px;
 }
 
 .section-3-div article{
- text-align: left;
- padding: 10px 0;
+  padding: 10px 0;
+  text-align: left;
 }
 
 .section-3-div h3{
@@ -195,13 +200,36 @@ main > section{
   text-align: left;
 }
 
-#section-3 button{
-    background-color: black;
-    color: white;
-    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
-    padding: 15px 40px;
-  }
-  
+
+#section-3 button {
+  background-color: black;
+  color: white;
+  font-size: 1.1em;
+  box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+  height:50px; 
+  width:200px;
+}
+
+/*--flexbox--*/
+
+#section-3 {
+  flex-direction: column;
+
+}
+
+.container-section-3{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+ 
+}
+
+.container-section-3-button{
+  display: flex;
+  justify-content: center;
+}
+
+
 
 
 
