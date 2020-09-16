@@ -2,18 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>npm</title>
 </head>
 <body>
     <header>
         <div>
             <div>
-                <img src="images/black-heart.png" alt="black-heart">
+                <img src="images/black-heart.png" alt="black-heart" class="blackHeart">
                 <span>Nifty Penguin Magic</span>
             </div>
-            <nav class="nav-bar">
-                <ul class="nav-bar-ul">
+            <nav>
+                <ul>
                     <li><a href="#">npm Enterprise</a></li>
                     <li><a href="#">Products</a></li>
                     <li><a href="#">Solutions</a></li>
@@ -23,16 +23,16 @@
                 </ul>
             </nav>
         </div>
-        <div>
-            <img src="images/npm-logo.png" alt="npm-logo">
+        <div class="search-bar">
+            <img src="images/npm-logo.png" alt="npm-logo" class="logo">
             <form action="" method="">
-                <label for="site-search"></label>
-                <img src="images/magnifying-glass.png" alt="glass"><input type="search" id="site-search" placeholder="Search Packages">
+                <label for="site-search"><img src="images/magnifying-glass.png" alt="glass" class="glass"></label>
+                <input type="search" id="site-search" placeholder="Search Packages"> 
                 <button>Search</button>
             </form>
             <div class="but-on">
-                <a href="#">Join</a>
-                <a href="#">Log In</a>
+                <span><a href="#">Join</a></span>
+                <span><a href="#">Log In</a></span>
             </div>
         </div>
     </header>
@@ -40,12 +40,14 @@
     <section id="banner">
         <h1>Build Amazing Things</h1>
         <article class="text">Essential Javascript development tools that help you go to market faster and build powerful applications using modern open source code.</article>
-        <a href="#">See plans</a>
-        <a href="#">Join for free</a>
+        <div class="banner-button">
+        <button class="button-plans"><a href="#">See plans</a></button>
+        <button class="button-free"><a href="#">Join for free</a></button>
+        </div>
     </section>
 
     <section id="company">
-        <img src="images/triangle-hexagon.svg" alt="triangle-hexagon">
+        <img src="images/triangle-hexagon.svg" alt="triangle-hexagon" class="triangle">
         <h2>Bring the best of open source to your company</h2>
         <article class="description">Npm is the tool used by over 11,000,000 Javascript developers around the world.Your developers already use it. Your company depends on it.Create an Org and get more out of the tools your team already know and loves</article>
     </section>
@@ -72,10 +74,9 @@
                 <h4>npm audit</h4>
                 <p>Enjoy the securiting auditing features built into the npm client, a zero-friction way to make open source software safe.</p>
             </div>
-
-            <a href="#">Create an Org</a>
-
+            
             </div>
+            <span class="org"><a href="#">Create an Org</a></span>
     </section>
 </body>
 </html>
