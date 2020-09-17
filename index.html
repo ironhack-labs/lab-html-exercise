@@ -5,13 +5,14 @@
 <head>
 <meta charset="utf-8">
 <title>NPM Clone</title>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <!--HEADER INCLUDES NAVBAR, SEARCH FORM AND JOIN/LOGIN BUTTONS -->
-    <header class="header">
+<header class="header">
         <div id="navwrapper">
             <div >
-                <img class ="blackheart" src="./images/black-heart.png" alt="Black Heart Icon" /> <span>Nifty Penguin Magic</span>    
+                <img class ="blackHeart" src="./images/black-heart.png" alt="Black Heart Icon" /> <span>Nifty Penguin Magic</span>    
             </div>
             <nav class="nav-bar">
                 <ul>
@@ -20,40 +21,52 @@
                     <li> <a class="nav-bar-item" href="#products">Solutions</a></li>
                     <li> <a class="nav-bar-item" href="#products">Resources</a></li>
                     <li> <a class="nav-bar-item" href="#products">Docs</a></li>
-                    <li> <a class="nav-bar-item" href="#products">Support</a></li>∫
+                    <li> <a class="nav-bar-item" href="#products">Support</a></li>
                  
                 </ul>
             </nav>
         </div>
-        <div class="search-wrapper">
+        <!--Search wrapper includes npm logo, search bar, one buttton and 2 links-->
+        <div class="second-wrapper">
+            <!--npm logo  -->
             <img class="npm-logo" src="./images/npm-logo.png" alt="npm logo" /><br>
-            
-            <form class="search-form" action="/search" method="post">
+            <!--form with searchbar and button -->
+            <div class="search-bar-wrapper"> 
+            <form action="/search" method="GET">
                 <div class="search-bar">
-                    <img src="./images/magnifying-glass.png" alt="Search glass">
-                    <input type="text" name="search" placeholder="Search packages">
-                    <label>Search</label>
-                    <input type="button" value="Search">
+                    
+                        <img class="glass-img" src="./images/magnifying-glass.png" alt="Search glass">
+                    
+                    <input
+                    type="search" id="search-text-input" name="search" placeholder="Search packages">
                 </div>
+                    <!--Search button  -->
+                </div>
+                    <input  id="search-button" type="button" value="Search">
+            </div>      
             </form>
+            </div>
             <a href="#">Join</a>
             <a href="#">Log In</a>    
-        </div>
+            </div>
+           
     </header>
+
+
     <!--SECTION 1 BASIC INFORMATION-->
     <section id="section-1" class="section">
-        <heading class="heading" id="heading-sec1">
+        <heading id="heading-sec1" class="heading" >
             <h1>Build amazing things</h1>
         </heading>
-        <article class="article">
+        <article id="article-sec1">
             <p>Essential JavaScript development tools that help you go to market faster and build powerful applications using
                 modern open source code.</p>        
         </article>
-        <div class="links">
-            <a href="#">See plans</a>
-            <a href="#">Join for free</a>  
+        <div id="links-sec1">
+            <a id="link1-sec1" href="#">See plans</a>
+            <a id="link2-sec1" href="#">Join for free</a>  
         </div>
-
+    </section>
     <!--SECTION 2 ADVERTISING -->
         <section id="section-2" class="section">
             <div class="central-img">
