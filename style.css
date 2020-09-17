@@ -21,17 +21,19 @@ h1,h2,h3,h4,h5,h6{
 
 h1 {
   font-size: 6em;
-  margin-bottom: 20px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-weight: bold;
 }
 
 h2 {
-  font-size: 3.5em;
+  font-size: 3em;
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
 h3 {
-  font-size: 2em;
+  font-size: 1.1em;
 }
 
 .link-btn {
@@ -50,28 +52,6 @@ h3 {
   text-decoration: none;
   display: inline-block;
 }
-
-/*-------------------------------image format----------------------------*/
-
-
-
-.blackHeart {
-  width: 20px;
-  margin-right: 1rem;
-}
-
-.npm{
-  width: 55px;
-  margin-right: 2rem;
-}
-
-.search-icon{
-  width: 25px;
-  margin-right: 3rem;
-}
-
-
-
 
 
 /*-------------------------------specific configuration----------------------------*/
@@ -101,27 +81,56 @@ nav a {
   color: black;
 }
 
-#cajapadre-header-2{
-  display: flex;
-  align-content: center;
-  padding: 15px 15px;
+.blackHeart {
+  width: 20px;
+  margin-right: 1rem;
 }
 
-#caja-1{
+.npm{
+  width: 70px;
+  margin-right: 2rem;
+}
+
+.search-icon{
+  width: 20px;
+  background-color: #e9e9e9;
+}
+
+
+
+.container-header2{
   display: flex;
   justify-content: space-around;
 }
+
 
 #caja-2{
   display: flex;
-  justify-content: space-around;
+  align-items: center;
+
+}
+#caja-2 div{
+  display: flex;
+  align-items: center;
+  height: 44px;
+  padding: 0 5px;
+  background-color: #e9e9e9;
 }
 
-#caja-2 button{
+
+#gsearch{
+  height: 42px;
+  width: 1300px;
+  margin-right: 3px;
+  background-color: #e9e9e9;
+  border: none;
+}
+
+
+#caja-2 a{
   background-color: #f4511e;
   color: white;
-  padding: 12px 32px;
-  font-size: 15px;
+  margin: 5px 0;
 }
 
 
@@ -130,34 +139,47 @@ nav a {
 main > section{
   padding: 25px;
   display: flex;
-  
+  align-items: center;
 }
+
 /*---------------section-1-------------*/
 #section-1{
   height: 600px;
+  background-color: rgba(232,217,217,.3); 
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-items: center;
 }
 #section-1 article{
   padding: 50px 50px;
   font-size: 1.5em;
-
 }
 #section-1 div{
-  padding: 50px 0;
+  width: 570px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#section-1 article{
+  width: 650px;
+  margin-bottom: 20px;
 }
 
 #hyperlink-3{
-  background-color: #f4511e;
+  background-color: #FB3B49;
   color: white;
-  padding: 12px 50px;
-  font-size: 15px;
+  box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+  padding: 20px 75px;
+  font-size: 20px;
 }
 #hyperlink-4{
-  padding: 12px 50px;
-  font-size: 18px;
+  background-color: white;
+  padding: 20px 75px;
+  font-size: 20px;
+  font-weight: bold;
 }
+
+
 
 /*---------------section-2-------------*/
 #section-2 {
@@ -167,15 +189,16 @@ main > section{
 }
 
 .triangle-hexagon{
-  width: 400px;
+  width: 350px;
+  padding: 80px 0px;
 }
 #section-2 h2{
   background-color: rgba(255,204,53,.4);
   margin: 0.67em 0;
-  width: fit-content;
+  width: 1200px;
 }
 #section-2 article{
-  width:  700px;
+  width:  800px;
 }
 
 /*---------------section-3-------------*/
@@ -183,7 +206,7 @@ main > section{
 
 .section-3-div{
   height:300px; 
-  width:400px;
+  width:270px;
   padding: 20px 20px;
 }
 .section-3-div img{
@@ -198,33 +221,38 @@ main > section{
 .section-3-div h3{
   color: red;
   text-align: left;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 
 #section-3 button {
   background-color: black;
   color: white;
-  font-size: 1.1em;
+  font-size: 1.2em;
+  font-weight: bold;
   box-shadow: 8px 8px 0 rgba(128,83,35,.2);
   height:50px; 
-  width:200px;
+  width:400px;
 }
 
 /*--flexbox--*/
 
 #section-3 {
   flex-direction: column;
-
+  margin-top: 100px;
 }
 
 .container-section-3{
+  width: 1700px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
- 
 }
 
 .container-section-3-button{
+  margin-top: 10px;
   display: flex;
   justify-content: center;
 }
