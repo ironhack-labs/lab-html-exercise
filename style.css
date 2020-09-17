@@ -43,7 +43,6 @@ nav a:hover {
 
 .logo-search {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     height: 55px;
 }
@@ -53,7 +52,17 @@ nav a:hover {
     margin: 3px 0 0 0;
 }
 
+.form-holder {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    flex-wrap: nowrap;
+    width: calc(85% - 80px);
+    padding: 0 10px;
+}
+
 #search-icon{
+    display: inline-flex;
     width: 23px;
     vertical-align: middle;
 }
@@ -63,15 +72,21 @@ nav a:hover {
     color: white;
     padding: 15px; auto;
     border: none;
+    display: inline-flex;
+}
+
+.search-form {
+    margin: 0 auto;
+    width: 100%;
 }
 
 .search-form input[type="search"] {
-    width: 500px;
-    height: 45px;
     background-color: rgba(0,0,0,.05);
+    height: 45px;
     border: none;
     font-size: 15px;
-    /*width: calc(100% - 10px);*/
+    display: inline-flex;
+    width: calc(100% - 120px);
 }
 
 .search-form label {
