@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NPM Clone</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
@@ -26,19 +26,20 @@
           </nav>
         </div>
       
-        <div>
-          <img class="logo" src="/images/npm-logo.png" alt="npm logo">
-          <form action="">
-              <span id="search-icon"></span><img src="/images/magnifying-glass.png" alt="search icon"></span>
-              <input type="text" name="search" placeholder="Search packages">
-              <button type="button">Search</button>
-          </form>
+        <div class="logo-search">
+          <img src="/images/npm-logo.png" alt="npm logo">
+            <form action="search" method="POST" class="search-form">
+                <label>
+                    <img id="search-icon" src="/images/magnifying-glass.png" alt="search icon">
+                </label>
+                    <input type="search" name="search" placeholder="Search packages">
+                <button type="button">Search</button>
+            </form>
 
-          <div id="login">
-            <a id="join-btn" href="#join-free">Join</a>
-            <a id="login-btn" href="#see-plans">Log in</a>
-          </div>
-
+            <div id="login">
+                <a id="join-btn" href="#join-free">Join</a>
+                <a id="login-btn" href="#see-plans">Log in</a>
+            </div>
         </div>
     </header>
 
@@ -49,8 +50,8 @@
                 modern open source code.</p>
         </article>
 
-        <div>
-            <a href="#login-btn" id="#see-plans">See plans</a>
+        <div id="main-buttons">
+            <a href="#login-btn" id="see-plans">See plans</a>
             <a href="#join-btn" id="join-free">Join for free</a>
         </div>
     </section>
@@ -87,8 +88,8 @@
         </div>
 
         <div>
-            <h3>npm audit</h3>
             <img src="/images/npm-audit.svg" alt="npm audit icon">
+            <h3>npm audit</h3>
             <p class="feature-text">Enjoy the security
                 auditing features built into the npm client, a zero-friction way to make open source software safer.</p>
         </div>
@@ -99,6 +100,3 @@
 
 </body>
 </html>
-
-
-
