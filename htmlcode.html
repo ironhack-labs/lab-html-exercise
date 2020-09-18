@@ -1,51 +1,69 @@
 
-<header>
-    <div>
-        <img class="blackHeart" src="images/black-heart.png" alt="black heart" />
-        <span> Nifty Penguin Magic </span>
-      </div>
-      <nav>
-        <ul>
-          <li><a href="#"> npm Enterprise </a></li>
-          <li><a href="#"> Products </a></li>
-          <li><a href="#"> Solutions </a></li>
-          <li><a href="#"> Resources </a></li>
-          <li><a href="#"> Docs </a></li>
-          <li><a href="#"> Support </a></li>
-        </ul>
-      </nav>
+<link rel="stylesheet" href="./style.css" />
+<header id="header">
+    <div class="div1">
+        <div class="div2">
+            <div>
+                <img class="blackHeart" src="images/black-heart.png" alt="black heart" />
+            </div>
+            <span> Nifty Penguin Magic </span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#"> npm Enterprise </a></li>
+                <li><a href="#"> Products </a></li>
+                <li><a href="#"> Solutions </a></li>
+                <li><a href="#"> Resources </a></li>
+                <li><a href="#"> Docs </a></li>
+                <li><a href="#"> Support </a></li>
+            </ul>
+        </nav>
+        
     </div>
   
-    <div>
-        <img class="npmlogo" src="images/npm-logo.png" alt="npm logo" /><br>
+    <div class="div3">
+        <div class="div4">
+        <div>
+            <img class="npmlogo" src="images/npm-logo.png" alt="npm logo" />
+        </div>
+        <div>
         <img class="magnifying-glass" src="images/magnifying-glass.png" alt="magnifying glass" />
+        </div>
         <form action="/some-url">
-            <input type="text" placeholder="Search packages">
-            <button type="submit">Search</button>
+            <input class="input" type="text" placeholder="Search packages">
+        </div>
+        <div class="div5">
+            <button class="button" type="submit">Search</button>
         </form>
-        <a href="#">Join</a>
-        <a href="#">Log In</a>
+        <a id="join" href="#">Join</a>
+        <a id="login" href="#">Log In</a>
+        </div>
 
-      <!-- add logo, search bar and buttons (or links and style them as buttons later) -->
+      
     </div>
   </header>
 
-  <section class="section1">
+  <section id="section1">
     <h1>Build amazing things</h1>  
-    <article>Essential JavaScript development tools that help you go to market faster and build powerful applications using
+    <article> Essential JavaScript development tools that help you go to market faster and build powerful applications using
         modern open source code.</article>
-        <a href="#">See plans</a>
-        <a href="#">Join for free</a>
+        <div class="div6">
+        <a class="seeplans-link" href="#">See plans</a>
+        <a class="joinforfree-link" href="#">Join for free</a>
+        </div>
   </section>
 
-  <section class="section2">
+  <section id="section2">
+    <div>
     <img class="triangle-hexagon" src="images/triangle-hexagon.svg" alt="triangle hexagon" />
+    </div>
     <h3>Bring the best of open source to your company</h3>
     <article>npm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it.
         Create an Org and get more out of the tools your team already knows and loves.</article>
   </section>
 
-  <section class="section3">
+  <section id="section3">
+    <div class="div7">
      <div>
         <img class="zero-configuration" src="images/zero-configuration.svg" alt="zero configuration" /> 
         <h5>Zero configuration</h5>
@@ -71,7 +89,9 @@
         <h5>npm audit</h5>
         <p>Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer.</p>
      </div> 
-
+    </div>
+    <div class="div8">
      <a href="#">Create an Org</a>
+    </div>
 
   </section>
