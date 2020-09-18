@@ -32,3 +32,117 @@ header > div {
     width: 20px;
     margin-right: 1rem;
   }
+
+  .box {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    size: 100px;
+  }
+
+  /* Here start search bar  - header*/
+
+  #search-bar {
+    padding: 5px 30px;
+    display: flex;
+
+}
+
+.npm-logo {
+    width: 70px;
+    margin-right: 10px;
+
+}
+
+
+.bar {
+    flex: auto;
+    display: flex;
+
+}
+
+.magnifying-glass {
+    width: 20px;
+    display: none;
+}
+
+.search{
+    flex:1;
+    margin-right: 30px;
+    display:flex;
+}
+.search:before {
+
+    content:'';
+    background:url(images/magnifying-glass.png) center/ 80% no-repeat;
+    width:25px;
+    background-color: rgba(237, 237, 237, 0.884);
+}
+.search1 {
+    flex: auto;
+    background-color: rgba(237, 237, 237, 0.884);
+    border: none;
+}
+
+.searchbutton {
+    width: 60px;
+    border:none;
+    background-color: #fb3e44;
+    color: white;
+    cursor: pointer;
+}
+
+.join,.login{
+    width:60px;
+    cursor: pointer;
+}
+
+.login {
+  border: none;
+  cursor: pointer;
+}
+
+/* Here start section 1 */
+
+#section-inicial {
+justify-content: center;
+display: flex;
+align-items: center;
+height: 600px;
+flex-direction: column;
+background-color: rgba(232,217,217,.3);
+
+
+}
+
+.title {
+    font-size: 80px;
+}
+.information {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.see-plans {
+background-color: #FB3B49;
+box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+color: white;
+border: none;
+font-size: 30px;
+padding: 15px 32px;
+margin-right: 60px;
+cursor: pointer;
+outline: none;
+}
+
+.join-for-free {
+border-style: none;
+font-size: 30px;
+margin-top: 60px;
+background-color: transparent;
+font-weight: bold;
+cursor: pointer;
+outline: none;
+}
