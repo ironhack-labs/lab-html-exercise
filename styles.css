@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body {
+  font-family: 'Poppins';
+  font-size: 1em;
+  padding: 0;
+  margin: 0;
+}
+
+/* HEADER -top */
+
+header > div{
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+    font-weight: 600;
+}
+
+.blackHeart{
+  width: 1.25em;
+  margin-right: 1em;
+
+}
+nav{
+  width: 37.5em;
+}
+nav ul{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+nav a{
+  text-decoration: none;
+  color: black;
+}
+
+/* HEADER - bottom  */
+.logo{
+  width: 4.375em;
+  margin-top:10px;
+  margin-bottom: 10px;
+  flex:1
+}
+form{
+ display: flex;
+ justify-content: center;
+ height: 35px;
+ flex:80;
+ margin:8px 15px;
+}
+header input{
+  background-image: url(images/magnifying-glass.png);
+  background-size: 15px;
+  background-repeat: no-repeat;
+  background-position: center left 10px;
+  background-color:rgba(0,0,0,.05);
+  text-indent: 40px;
+  flex:8;
+  border-style: none;
+}
+#btn-search{
+  background-color: #fb3e44;
+  color: white;
+  opacity:0.8;
+  flex:0.5;
+  border-style: none;
+ 
+}
+.a-header a{
+  text-decoration: none;
+  color: black;
+  flex:2;
+}
+
+.a-join{
+  border: 1px solid black;
+  padding: 0px 20px;
+}
+.a-login{
+  padding-left:20px;
+}
+/* SECTION 1 */
+.layout{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 37.5em;
+}
+#presentation {
+  background-color:rgba(232,217,217,.3);
+}
+#presentation h1{
+  font-size: 4em;
+  font-weight: 900;
+  margin: 0;
+}
+#presentation article{
+  width: 33%;
+  text-align: center;
+  line-height: 2;
+  font-size: 1em;
+  font-weight: 500;
+}
+#presentation > article > div{
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.a-seePlan{
+  background-color:#FB3B49;
+  color: white;
+  width: 45%;
+  box-shadow: 8px 8px 0 rgba(251,59,73,.2) ;
+}
+.a-joinForFree{
+  background-color:white ;
+  color: black;
+  width: 45%;
+}
+#presentation a{
+  text-decoration: none;
+  font-weight: 700;
+  padding: 5px;
+}
+
+/* SECTION 2 */
+#presentation .layout{
+  height: auto;
+}
+#presentation2 img{
+  height: 15.625em;
+}
+#presentation2 h2{
+  background-color: rgba(255,204,53,.4) ;
+  padding-left: 40px;
+  padding-right: 40px;
+  transform: skew(9deg,0deg);
+  font-style: italic;
+  font-size: 1.5em;
+  margin-top: 50px;
+}
+#presentation2 article{
+  width: 33%;
+  text-align: center;
+  line-height: 2;
+}
+
+/* SECTION 3  */
+.npm-organisation{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  
+}
+.org-unit{
+  width: 20%;
+  margin: 0 1em 1em 1em;
+}
+.npm-organisation img{
+  width: 3em;
+  height: 3em;
+}
+.npm-organisation h3{
+  color: #ED1C24;
+}
+#btn-createAnOrg{
+  background-color: black;
+  color: white;
+  font-size: 1.25em;
+  font-weight: 600;
+  box-shadow:  8px 8px 0 rgba(128,83,35,.2);
+  width: 20%;
+  height: 3.1em;
+  margin: 3.125em auto;
+}
+
+
