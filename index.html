@@ -4,8 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NPM | build amazing things</title>
-    <link rel="shortcut icon" type="image/jpg" href="/images/npm-favicon.ico" />
+    <title>npm | build amazing things</title>
+    <link rel="shortcut icon" type="image/jpg" href="images/favicon.ico" />
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -25,11 +27,11 @@
                 </ul>
             </nav>
         </div>
-        <div>
-            <img src="images/npm-logo.png" alt="npm logo black">
-            <img src="images/magnifying-glass.png" alt="magnifying glass">
+        <div class="search">
+            <img class="logo" src="images/npm-logo.png" alt="npm logo black">
             <form action="someurl">
-                <input type="text" placeholder="Search packages">
+                <label for="search"><img src="images/magnifying-glass.png" alt="magnifying glass"></label>
+                <input id="search" type="text" placeholder="Search packages">
                 <button type="submit">Search</button>
             </form>
             <a href="#">Join</a>
