@@ -29,27 +29,28 @@
         <!--Search wrapper includes npm logo, search bar, one buttton and 2 links-->
         <div class="second-wrapper">
             <!--npm logo  -->
-            <img class="npm-logo" src="./images/npm-logo.png" alt="npm logo" /><br>
-            <!--form with searchbar and button -->
-            <div class="search-bar-wrapper"> 
+            <div class="div1">
+            <img id="npm-logo" src="./images/npm-logo.png" alt="npm logo" /><br>
+            </div>
+        
+            <div class="div2"> 
             <form action="/search" method="GET">
-                <div class="search-bar">
-                    
-                        <img class="glass-img" src="./images/magnifying-glass.png" alt="Search glass">
-                    
-                    <input
-                    type="search" id="search-text-input" name="search" placeholder="Search packages">
-                </div>
-                    <!--Search button  -->
-                </div>
+                    <!--Glass image-->
+                    <img class="glass-img" src="./images/magnifying-glass.png" alt="Search glass">
+                    <!--Search bar-->
+                    <input class="search-bar"
+                    type="search"  name="search" placeholder="Search packages">
+                   <!--Search button  -->
                     <input  id="search-button" type="button" value="Search">
-            </div>      
+                
             </form>
             </div>
-            <a href="#">Join</a>
-            <a href="#">Log In</a>    
+            <div class="div3">
+            <a  id="div3-sub1" href="#">Join</a>
+            <a  id="div3-sub2"href="#">Log In</a>    
             </div>
-           
+        </div>  
+         <!--CAMBIAR HASTA AQUI -->  
     </header>
 
 
