@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+html, body {
+    margin: 10px;
+    padding: 0;
+}
+
+    body {
+    font-family: 'Poppins';
+    }
+
+    .container-centered {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        }
+    
+    h1, h3, h4 {
+        font-family: 'Poppins';
+        font-weight: 900;
+    }
+
+    h1 {
+        font-size: 4em;
+        margin: 5px;
+    }
+
+    h3 {
+        font-size: 2em;
+        margin: 5px;
+        background-color: rgba(255,204,53,.4);
+        transform: skew(9deg,0deg);
+        font-style: italic;
+        padding: 0 20px;
+    }
+
+    h4 {
+        font-size: 1em;
+        color: #ED1C24;
+        margin: 5px 0 0;
+    }
+        
+    /* header */
+
+    /* nav */
+
+    header > div {
+        padding: 0 25px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid lightgray;
+    }
+    
+        nav {
+            width: 600px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .blackHeart {
+            width: 20px;
+            margin-right: 1rem;
+        }
+
+        /* search line */
+
+        .row-two {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            width: 70px;
+            margin-right: 1rem;
+        }
+
+        form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 7px;
+            width: auto;
+        }
+
+        form img {
+            background-color: rgb(242, 242, 242);
+            height: 25px;
+            padding: 10px;
+        }
+
+        form input {
+            color: rgba(0,0,0,.05);
+            background-color: rgb(242, 242, 242);
+            font-family: 'Poppins';
+            font-size: 1em;
+            border: none;
+            padding: 10px 0;
+        }
+
+        form button {
+            background-color: #fb3e44;
+            color: white;
+            border: 1px solid rgb(242, 242, 242);
+            font-family: 'Poppins';
+            font-size: 1em;
+            padding: 10px;
+        }
+
+        .links {
+            width: 150px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .join, .log-in {
+            color: gray;
+            text-decoration: none;
+            padding: 5px 15px;
+        }
+
+        .join {
+            border: 1px solid gray;
+        }
+
+/* section 1 */
+    
+#first {
+    background-color: rgba(232,217,217,.3);
+    height: 600px;
+}
+
+    #first article, #first div {
+        width: 400px;
+        height: 100px;
+    }
+    
+    #first article {
+        padding: 40px;
+        font-size: 1em;
+    }
+    
+    #first div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+    }
+    
+    #first a {
+        color: black;
+        text-decoration: none;
+        padding: 15px 40px;
+        font-weight: bold;
+    }
+    
+    .plans {
+        background-color: #FB3B49;
+        box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+    }
+
+/* section 2 */
+
+#second {
+    height: 400px;
+}
+
+#second img {
+    margin: 50px;
+}
+
+#second article {
+    width: 600px;
+    font-size: 1em;
+}
+
+/* section 3 */
+
+#third {
+    height: 500px;
+    margin-top: 80px;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 40px;
+}
+
+.box div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    width: 250px;
+}
+
+.box img {
+    height: 30px;
+}
+
+#third a {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 15px 80px;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    margin: 30px auto 60px;
+    display: block;
+    width: fit-content;
+}
