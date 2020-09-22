@@ -52,8 +52,8 @@ body {
     text-align: right;
   }
 
-  .grow1 {
-    flex-grow: 1;
+  .search-form {
+    display:flex;
   }
 
   .form {
@@ -75,12 +75,18 @@ body {
     padding: 10px;
   }
 
-  .label {
+  .btn {
     border-color: rgba(0,0,0,.05);
-    padding: 10px;
-    text-align: right;
-    margin-left: auto;
+    padding: 0 10px;
+    color: black;
+    text-decoration: none;
   }
+
+  .btn-border{
+    border: 1px  solid black;
+    
+  }
+
 
   .section1 {
     display: flex; 
@@ -94,7 +100,8 @@ body {
   }
 
   h1{
-    font-size: 6em;
+    font-size: 5em;
+    margin: 0;
   }
 
   article{
@@ -154,30 +161,29 @@ body {
 
   .section3 {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    text-align: left;
-    justify-content: space-evenly;
-    align-items: stretch;
+    flex-direction: column;
     height: 600px;
+  }
+
+  .section-center{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
 
   h3 {
     color: #ED1C24;
-    font-size: 1.5em;
+    font-size: 1em;
   }
 
   p{
     font-size: 1em;
     width: 250px;
-    position:relative;
   }
 
   .icons{
-    width: 60px;
+    width: 40px;
     align-items: left;
-    align-items: stretch;
-    position:relative;
     display:block;
   }
 
@@ -189,5 +195,11 @@ body {
   color: #fff;
   text-align: center;
   justify-content: space-evenly;
-  position:absolute;
+}
+
+.box{
+  padding: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
 }
