@@ -1,20 +1,41 @@
-/* form label color: rgba(0,0,0,.05)
-form input color: rgba(0,0,0,.05)
-form button background color: #fb3e44
-form button letters color: white */
 
+/* @import url('https://fonts.googleapis.com/css?family=Poppins'); */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800;900&display=swap');
 
-
-@import url('https://fonts.googleapis.com/css?family=Poppins');
+html, body{
+  margin: 0;
+  padding: 0;
+} 
 
 body {
   font-family: 'Poppins';
+  
 }
 
-body{
+
+h1{
+  font-size: 5em;
   margin: 0;
-  padding: 0;
+  
 }
+
+h3{
+  font-size: 2.1em;
+  background-color: rgba(255,204,53,.4);
+  transform: skew(9deg,0deg);
+  font-style: italic;
+  padding-left:  50px;
+  padding-right:  50px;
+}
+
+h4{
+  font-size: 1.2em;
+  color: red;
+}
+
+
+
+
 
 a{text-decoration: none;}
 ul{list-style: none;}
@@ -50,7 +71,6 @@ nav a {
 
 .bottom-header{
  justify-content: space-between;
- 
  
 }
 
@@ -112,3 +132,113 @@ align-items: center
 .login{
   border: none
 }
+
+/* sections */
+.slex{
+  display: flex;
+  flex-direction: column; 
+  height: 600px;
+  
+}
+
+
+#section1, #section2 {
+  justify-content: space-evenly;
+  align-items: center ;
+  text-align: center;
+  padding: 50px 0;
+}
+
+section button{
+  margin-top: 20px;
+  border: none;
+  height: 60px;
+  font-size: 1.2em;
+  
+}
+
+.shadow{
+  box-shadow: 8px 8px 0 rgba(128,83,35,.2)
+}
+
+
+
+#section1{
+  background-color: rgba(232,217,217,.3);
+  
+}
+
+#section1 article{
+  font-size: 1.3em;
+}
+
+#section1 article,.flex-butts{
+  width: 550px;
+  
+  align-items: center;
+}
+
+.flex-butts{
+  display: flex;
+  justify-content: space-between;
+}
+
+.butt-1{
+  width: 45%;
+  font-size: 1.2em;
+}
+
+
+.butt-plans{
+background-color:#FB3B49 ;
+}
+
+.butt-join{
+background-color: white;
+}
+
+
+#section2 article{
+width: 790px;
+}
+
+.hexagon{
+  width: 200px;
+  height: auto;
+}
+
+
+#section3 {
+  justify-content: space-evenly;
+  align-items: center ;
+  margin: 0 5% ;
+}
+
+.flex-4{
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: baseline;
+  justify-content: space-evenly;
+}
+
+
+.box-3{
+width: 20%  
+
+}
+
+.box-3 img{
+width: 50px;
+height: auto;
+}
+
+.box-3{
+
+}
+
+
+.org-butt{
+  width:33%;
+  background-color: black;
+}
+
