@@ -62,34 +62,68 @@ header .header-hover-fx:hover {
 
 #search {
   width: 80%;
-  background-color: rgba(0, 0, 0, .05);
+  background-color: transparent;
+  background-image: url(../images/magnifying-glass.png);
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  background-position: 1% center;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
- #search img {
+ /* #search img {
   color: rgba(0, 0, 0, .05);
   width: 20px;
   height: 20px;
   margin: auto;
   padding: .5rem;
-} 
+}  */
 
 #search input {
   border: none;
-  background-color: rgba(0, 0, 0, .01);
+  background-color: rgba(0, 0, 0, .05);
   width: 90%;
   height: 40px;
   font-size: 1rem;
   font-family: 'Monospace';
 }
 
+#search input::placeholder {
+  padding-left: 40px;
+  letter-spacing: 1px;
+  word-spacing: .2em;
+}
+
+#search input:focus {
+  padding-left: 40px;
+}
+
+#search input:focus::placeholder {
+  color: transparent;
+}
+
 #search button {
   border: none;
   width: 10%;
-  height: 45px;
+  height: 40px;
   color: white;
   background-color: #fb3e44;
-  font-size: 1rem;
+  font-size: 1.1em;
+  transition: all .7s ease;
 } 
+
+#search button:hover {
+  border: 1px solid grey;
+  background-color: white;
+  color: #fb3e44;
+}
+
+#user-links a {
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+#join {
+  border: 2px inset grey;
+}
