@@ -8,12 +8,15 @@
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<!--HEADER INCLUDES NAVBAR, SEARCH FORM AND JOIN/LOGIN BUTTONS -->
+<!--HEADER -->
 <header class="header">
+    <!--Navegation-->
         <div id="navwrapper">
+            <!--mini heart img-->
             <div >
                 <img class ="blackHeart" src="./images/black-heart.png" alt="Black Heart Icon" /> <span>Nifty Penguin Magic</span>    
             </div>
+            <!--navegation bar-->
             <nav class="nav-bar">
                 <ul>
                     <li> <a class="nav-bar-item" href="#npmenterprise"> npm Enterprise </a> </li>
@@ -26,13 +29,14 @@
                 </ul>
             </nav>
         </div>
-        <!--Search wrapper includes npm logo, search bar, one buttton and 2 links-->
+        <!--Logo, search bar and links-->
         <div class="second-wrapper">
             <!--npm logo  -->
             <div class="div1">
             <img id="npm-logo" src="./images/npm-logo.png" alt="npm logo" /><br>
             </div>
         
+            <!--form-->
             <div class="div2"> 
             <form action="/search" method="GET">
                     <!--Glass image-->
@@ -45,24 +49,28 @@
                 
             </form>
             </div>
+            <!--links-->
             <div class="div3">
             <a  id="div3-sub1" href="#">Join</a>
             <a  id="div3-sub2"href="#">Log In</a>    
             </div>
         </div>  
-         <!--CAMBIAR HASTA AQUI -->  
+         
     </header>
 
 
     <!--SECTION 1 BASIC INFORMATION-->
     <section id="section-1" class="section">
+        <!--Heading-->
         <heading id="heading-sec1" class="heading" >
             <h1>Build amazing things</h1>
         </heading>
-        <article id="article-sec1">
+        <!--article-->
+        <article id="article-sec1" class="article">
             <p>Essential JavaScript development tools that help you go to market faster and build powerful applications using
                 modern open source code.</p>        
         </article>
+        <!--links-->
         <div id="links-sec1">
             <a id="link1-sec1" href="#">See plans</a>
             <a id="link2-sec1" href="#">Join for free</a>  
@@ -70,13 +78,16 @@
     </section>
     <!--SECTION 2 ADVERTISING -->
         <section id="section-2" class="section">
+            <!--image-->
             <div class="central-img">
-                <img src="./images/triangle-hexagon.svg" alt="Hexagonal image"/>
+                <img src="./images/triangle-hexagon.svg" alt="Hexagonal image" />
             </div>
+            <!--heading-->
             <heading class="heading" id="heading-sec2">
                 <h1>Bring the best of open source to your company</h1>
             </heading>
-            <article class="article">
+            <!--article-->
+            <article class="article" id="article-sec2">
                 <p>npm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it.
                     Create an Org and get more out of the tools your team already knows and loves.</p>
             </article>
@@ -85,6 +96,8 @@
 
     <!--SECTION 3 FEATURES INFORMATION -->
     <section id="section-3" class="section">
+        <div class="s3aparts">
+        <!--sub-section-->
         <div class="sec-3-apart">
             <div>
                 <img src="./images/zero-configuration.svg"  
@@ -93,6 +106,7 @@
             <h3>Zero configuration</h3>
             <p>Create an org, add your team, and start collaborating. Nothing to configure, set up, or manage.</p>
         </div>
+        <!--sub-section-->
         <div class="sec-3-apart">
             <div>
                 <img src="./images/team-management.svg" alt="Team management image"/>
@@ -101,6 +115,7 @@
             <p>Control who has access to
                 what modules within your team namespace using straightforward team management capabilities.</p>
         </div>
+        <!--sub-section-->
         <div class="sec-3-apart">
             <div>
                 <img src="./images/familiar-features.svg" alt="Familiar features image"/>
@@ -108,23 +123,24 @@
             <h3>Familiar features</h3>
             <p>npm Orgs has 100% parity with all the public npm registry features your developers already use.</p>
         </div>
+        <!--sub-section-->
         <div class="sec-3-apart">
             <div>
                 <img src="./images/npm-audit.svg" alt="Binoculars image"/>
             </div>
             <h3>npm audit </h3>
-            <p>njoy the security
+            <p>Enjoy the security
                 auditing features built into the npm client, a zero-friction way to make open source software safer.</p>
         </div>
+    </div>
+    <!--Last button-->
+    <div id="s3buttons">
         <div id="last-button">
             <a href="#">Create an Org</a>
         </div>
-
+    </div>
     </section>
 
 
-
-
-    </section>
 </body>
 </html>
