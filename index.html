@@ -9,28 +9,41 @@
   <title>npm | Clone</title>
 </head>
 <body>
-
+            <!-- HEADER -->
   <header>
-    <nav>
-      <div class="navbar-brand">
-        <span><img src="images/black-heart.png" alt="black-heart"></span>
-        <h2>Nifty Penguin Magi</h2>
+    <div>
+      <div>
+        <img class="blackheart" src="images/black-heart.png" alt="black-heart">
+        <span>Nifty Penguin Magi</span>
       </div>
-      <ul class="navbar-list">
-        <li><a href="#">npm Enterprise</a></li>
-        <li><a href="#">Products</a></li>
-        <li><a href="#">Solutions</a></li>
-        <li><a href="#">Resources</a></li>
-        <li><a href="#">Docs</a></li>
-        <li><a href="#">Support</a></li>
-      </ul>
-    </nav>
+      <nav>
+        <ul class="navbar-list">
+          <li><a href="#">npm Enterprise</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Solutions</a></li>
+          <li><a href="#">Resources</a></li>
+          <li><a href="#">Docs</a></li>
+          <li><a href="#">Support</a></li>
+        </ul>
+      </nav>
+    </div>
 
-    <form id="search-bar">
-      <img src="images/npm-logo.png" alt="npm-logo">
-      <input type="text">
-      <button id="search">Search</button>
-    </form>
+    <hr>
+
+    <div>
+      <div>
+        <img id="npmlogo" src="images/npm-logo.png" alt="npm-logo">
+      </div>
+      <form id="search" action="/search" method="GET">
+        <span id="glass-icon"><img src="./images/magnifying-glass.png" alt="magnifying-glass"></span>
+        <input type="search" name="search" placeholder="Search packages">
+        <button id="search-btn" type="button">Search</button>
+      </form>
+      <div id="user-links">
+        <a href="/signup">Join</a>
+        <a href="/login">Log In</a>
+      </div>
+    </div>
   </header>
   
 </body>
