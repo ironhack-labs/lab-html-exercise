@@ -13,35 +13,33 @@
   <header>
     <div>
       <div>
-        <img class="blackheart" src="images/black-heart.png" alt="black-heart">
-        <span>Nifty Penguin Magi</span>
+        <img class="blackheart header-hover-fx" src="images/black-heart.png" alt="black-heart">
+        <span class="header-hover-fx">Nifty Penguin Magi</span>
       </div>
       <nav>
         <ul class="navbar-list">
-          <li><a href="#">npm Enterprise</a></li>
-          <li><a href="#">Products</a></li>
-          <li><a href="#">Solutions</a></li>
-          <li><a href="#">Resources</a></li>
-          <li><a href="#">Docs</a></li>
-          <li><a href="#">Support</a></li>
+          <li><a class="header-hover-fx" href="#">npm Enterprise</a></li>
+          <li><a class="header-hover-fx" href="#">Solutions</a></li>
+          <li><a class="header-hover-fx" href="#">Products</a></li>
+          <li><a class="header-hover-fx" href="#">Resources</a></li>
+          <li><a class="header-hover-fx" href="#">Docs</a></li>
+          <li><a class="header-hover-fx" href="#">Support</a></li>
         </ul>
       </nav>
     </div>
 
-    <hr>
-
     <div>
-      <div>
-        <img id="npmlogo" src="images/npm-logo.png" alt="npm-logo">
+      <div id="header-down">
+        <a href="/"><img id="npmlogo" src="images/npm-logo.png" alt="npm-logo"></a>
       </div>
       <form id="search" action="/search" method="GET">
-        <span id="glass-icon"><img src="./images/magnifying-glass.png" alt="magnifying-glass"></span>
-        <input type="search" name="search" placeholder="Search packages">
-        <button id="search-btn" type="button">Search</button>
+        <span><img src="./images/magnifying-glass.png" alt="magnifying-glass"></span>
+        <input type="text" name="search" placeholder="Search packages">
+        <button type="submit">Search</button>
       </form>
       <div id="user-links">
-        <a href="/signup">Join</a>
-        <a href="/login">Log In</a>
+        <a class="header-hover-fx" href="/signup">Join</a>
+        <a class="header-hover-fx" href="/login">Log In</a>
       </div>
     </div>
   </header>

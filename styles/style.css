@@ -1,2 +1,95 @@
 /* font h1: font-family: 'Poppins', sans-serif; */
 /* font p: font-family: 'Arimo', sans-serif; */
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+header > div {
+  padding: 0 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+}
+
+nav {
+  width: 600px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.blackheart {
+  width: 27px;
+  margin-right: 1rem;
+}
+
+header .header-hover-fx {
+  font-size: 0.8rem;
+  color: #000;
+  letter-spacing: 0.02em;
+  transition: opacity .15s ease;
+}
+
+header .header-hover-fx:hover {
+  opacity: 0.5;
+}
+
+#header-down {
+  margin: 20px 0; 
+}
+
+#npmlogo {
+  width: 80px;
+  height: 25px;
+  margin-left: .7rem;
+} 
+
+#search {
+  width: 80%;
+  background-color: rgba(0, 0, 0, .05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ #search img {
+  color: rgba(0, 0, 0, .05);
+  width: 20px;
+  height: 20px;
+  margin: auto;
+  padding: .5rem;
+} 
+
+#search input {
+  border: none;
+  background-color: rgba(0, 0, 0, .01);
+  width: 90%;
+  height: 40px;
+  font-size: 1rem;
+  font-family: 'Monospace';
+}
+
+#search button {
+  border: none;
+  width: 10%;
+  height: 45px;
+  color: white;
+  background-color: #fb3e44;
+  font-size: 1rem;
+} 
