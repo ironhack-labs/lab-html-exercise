@@ -1,7 +1,10 @@
+/* Introduced by lab instructions*/
+
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
 body {
   font-family: 'Poppins';
+  font-size: 12px; /* added */
 }
 
 header > div {
@@ -13,8 +16,8 @@ header > div {
 }
 
 nav {
-    width: 600px;
-}
+    width: 500px;
+} /* modified for more accurate appearance */
 
 nav ul {
     list-style: none;
@@ -23,42 +26,212 @@ nav ul {
     align-items: center;
 }
 
-nav a {
+a {
     text-decoration: none;
-}
+    color: black;
+} /* modified from nav a {} */
 
 .blackheart {
     width: 20px;
     margin-right: 1rem;
 }
 
-/* Introduced by lab instructions; other useful information:
+/* Introduced by myself */
 
-HEADER:
-form label color: rgba(0,0,0,.05)
-form input color: rgba(0,0,0,.05)
-form button background color: #fb3e44
-form button letters color: white
+#bottom-header {
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+}
 
-SECTION 1: In this section, as you can see everything is centered. You can add some flexbox
-rules to the id you attached to this section such is display: flex; and justify-content: center;.
-But this is just the beginning - you still have to set align-items and flex-direction.
-suggested height for this section: 600px
-background color: rgba(232,217,217,.3)
-"See plans" button background color: #FB3B49
-"See plans" button box shadow: 8px 8px 0 rgba(251,59,73,.2)
+#npmlogo {
+    height: 1rem;
+}
+
+.divform {
+    background-color: rgba(0, 0, 0, 0.05);
+    border: none;
+    padding-left: 0.7rem;
+    margin-left: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.divform img {
+    height: 1.2rem;
+    padding-right: 0.5rem;
+}
+
+.divform form {
+    display: flex;
+    justify-content: space-between;
+}
+.divform > form > input {
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    font-family: monospace;
+    width: 797px;
+}
+
+.divform > form > button {
+    background-color: #fb3e44;
+    color: white;
+    border: none;
+    padding: 0.3rem 0.8rem;
+    font-family: 'Poppins';
+    text-align: center;
+    font-size: smaller;
+}
+
+.smallbtn {
+    background-color: white;
+    font-family: 'Poppins';
+    text-align: center;
+    margin-left: 1rem;
+}
+
+#joinbtn {
+    border: 1px solid black;
+    padding: 0.3rem 0.8rem;
+    margin-left: 1.5rem;
+}
+
+
+/* ---------- SECTION 1 ---------- */
+
+.section-1 {
+    background-color: rgba(232, 217, 217, 0.3);
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-1 > h1 {
+    font-size: 4rem;
+    text-align: center;
+    font-weight: bolder;
+    position: relative;
+    top: -50px
+}
+
+.section-1 > article {
+    font-size: 1rem;
+    text-align: center;
+    width: 40%;
+    margin: 0 0 30px 0;
+    position: relative;
+    top: -40px;
+}
+
+.mediumbtn {
+    background-color: white;
+    padding: 1rem 4.5rem;
+    font-family: 'Poppins';
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 10px 20px 0 20px;
+}
+
+#seeplansbtn {
+    background-color: #fb3b49;
+    box-shadow: 8px 8px 0 rgba(251, 59, 73, 0.2);
+    color: white;
+}
+
+
+/* ---------- SECTION 2 ---------- */
+
+.section-2 {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.section-2 > img {
+    height: 11rem;
+    padding: 20px 0;
+}
+
+.section-2 > h2 {
+    background-color: rgba(255, 204, 53, 0.4);
+    padding: 0 30px;
+    transform: skew(9deg,0deg);
+    font-style: italic;
+    font-size: 1.8rem;
+    margin: 30px 0;
+}
+
+.section-2 > article {
+    font-size: 0.9rem;
+    text-align: center;
+    width: 60%;
+    padding: 10px 0;
+}
+
+
+
+/* ---------- SECTION 3 ---------- */
+
+.section-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 60px 0;
+}
+
+.boxes {
+    width: 80%;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.individual-box {
+    width: 20%;
+}
+
+.individual-box > img {
+    height: 1.2rem;
+}
+
+.individual-box > h3 {
+    color: #ED1C24;
+    font-size: 0.8rem;
+    text-align: left;
+}
+
+.individual-box > article {
+    text-align: left;
+    font-size: 1rem;
+}
+
+.bigbtn {
+    background-color: black;
+    box-shadow: 8px 8px 0 rgba(128, 83, 35, 0.2);
+    padding: 0.9rem 7rem;
+    color: white;
+    font-family: 'Poppins';
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* Other useful information given by lab:
 
 SECTION 2: pretty much the same layout as the previous - some code to be reused
-heading background color: rgba(255,204,53,.4)
-to get the transform of the yellow background in the left-hand direction use: transform: skew(9deg,0deg);
-to get it in the opposite direction of the letters, the way we need it on the page, use: font-style: italic;
+
 to additionally fine-tune the position of each element, use margin property.
 Use a lot of flexbox to get the right position of elements - direction, justify-content, align-items.
 Inspect elements to get the right size of the font for each of them.s
-
-SECTION 3:
-color of the letters in each heading in this section: #ED1C24
-"Create an Org" box shadow: 8px 8px 0 rgba(128,83,35,.2)
-"Create an Org" letters color: white
 
 */
