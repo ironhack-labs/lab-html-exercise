@@ -35,26 +35,196 @@ header > div {
 
   /*the below is mine */
 
- .search img {
-    width: 60px;
+  .search {
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: left;
+    /*border-bottom: 1px solid lightgray;
+    list-style: none;
+    border: 2px solid #eee;
+    border-radius: 20px;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 10px 0 #eee;
+    margin: 50px 5% 0;
+    padding: 20px;
+    width: 70%;  */
+  }
+
+.logo {
+  width: 60px;
+}
+
+ .searchform img {
+    width: 30px;
     margin-right: 1rem;
   }
 
-  header button {
-      background:red;
-
+  .search button {
+    background:#FB3B49;
+    border: none;
+    color: white;
+    padding: 0 10px;
   }
 
-  .login {
-      list-style:none;
-      display:flex;
-      flex-direction:row;
-      padding: 10px 20px;
+  .search ul {
+    list-style: none;
+    display: flex;
   }
 
-  .login li{
-    border: 1px solid black;
+  .search a {
+    text-decoration: none;
+    color:gray; 
+  }
+
+
+  .join-btn {
+    color:gray;
+    border: 2px solid lightgray;
+    text-align: center;
+    padding: 0 20px 0 20px ;
+    
+  }
+
+  .login-btn {
+    text-align: center;
+    padding: 0 20px ;
+  }
+
+  .search form {
+    background: lightgray;
+    border: none;
+    display: flex;
+    align-items: left;
+    justify-content: space-between;
+    flex-direction: row;
+    
+  }
+
+
+/* start section 1 specifics */
+
+#aboutus {
+  display: flex;
+  justify-content: center;
+  align-items: center; /*this is what is causing the buttons to not display correctly */
+  flex-direction: column;
+  height: 600px;
+  background: rgba(232,217,217,.3);
+  text-align: center;
+  }
+
+#aboutus article {
+  width: 50%;
+  text-align: center;
+}
+
+#aboutus h1{
+  font-size: 40;
+}
+
+.login {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  }
+
+.login ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.login a {
+  text-decoration: none;
+  }
+
+.login article {
+  width: 1200px;
+  padding: 0px 72px;
 }
 
 
-  
+.plans-btn {
+  background: #FB3B49;
+  color: white; 
+  box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+}
+
+.plans-btn a {
+  color: white; 
+}
+
+.join-btn2 a {
+  color: black;
+}
+
+#aboutus div {
+  padding: 40px;
+}
+
+
+
+/* start section 2 specifics*/
+
+#bring {
+  display: flex;
+  justify-content: center;
+  align-items: center; /*this is what is causing the buttons to not display correctly */
+  flex-direction: row;
+  height: 400px;
+  text-align: center;
+}
+
+#bring div {
+  width: 60%;
+  }
+
+#bring img {
+  height:100px;
+}
+
+#bring h2 {
+  background: rgba(255,204,53,.4);
+  transform: skew(9deg,0deg);
+  margin: 50px auto;
+}
+
+/* start section 2 specifics */
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 75px 0;
+}
+.service-box {
+  text-align: left;
+  padding: 20px;
+  width: 40%;    
+}
+
+#fourpart img{
+  height: 25px;
+}
+
+#fourpart > div {
+  display: flex;
+  justify-content: center;
+  flex-flow: row nowrap;
+  margin: auto auto 40px auto;
+}
+
+#fourpart h3 {
+  color: #ED1C24;
+}
+
+
+.org-btn {
+  color:white;
+  background: black;
+  text-align: center;
+  padding: 0 76px ;
+  box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+  line-height: 10px;
+}
