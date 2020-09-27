@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100vw;
+    font-size: 100%;
+    font-family: "Poppins", "Arial", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.head-bar {
+    width: 100%;
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+}
+
+#blackheart {
+    width: 20px;
+    margin-right: 1rem;
+}
+
+nav {
+    width: 600px;
+}
+
+nav a {
+    color: black;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+}
+
+.footer-bar {
+    display: grid;
+    margin: 5px;
+    grid-template-areas: "logo img input button1 button button";
+    grid-template-columns: 1fr 80% 2fr 2fr;
+}
+
+.footer-bar img {
+    width: 100px;
+    padding: 1rem;
+    margin-left: 5px;
+    grid-area: logo;
+}
+
+form {
+    width: 100%;
+    background-color: rgba(0,0,0,.05);
+    display: flex;
+    align-items: center;
+    grid-area: "img input button";
+}
+
+#glass {
+    width: 50px;
+}
+
+form input {
+    border: none;
+    background-color: rgba(0,0,0,.0);
+    width: 80%;
+}
+
+form button {
+    border: none;
+    grid-area: button1;
+}
