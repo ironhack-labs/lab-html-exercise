@@ -17,7 +17,7 @@ a {
 
 .head-bar {
     width: 100%;
-    padding: 0 25px;
+    padding: 10px 25px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -28,6 +28,12 @@ a {
     width: 20px;
     margin-right: 1rem;
 }
+
+header span {
+    font-size: .8rem;
+    font-weight: 600;
+}
+
 
 nav {
     width: 600px;
@@ -40,23 +46,23 @@ nav a {
 nav ul {
     display: flex;
     list-style: none;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     color: black;
+    font-size: .8rem;
+    font-weight: 600;
 }
 
 .footer-bar {
-    display: grid;
+    display: flex;
+    align-items: center;
     margin: 5px;
-    grid-template-areas: "logo img input button1 button button";
-    grid-template-columns: 1fr 80% 2fr 2fr;
 }
 
 .footer-bar img {
     width: 100px;
-    padding: 1rem;
+    padding: 15px 1rem 5px;
     margin-left: 5px;
-    grid-area: logo;
 }
 
 form {
@@ -64,7 +70,6 @@ form {
     background-color: rgba(0,0,0,.05);
     display: flex;
     align-items: center;
-    grid-area: "img input button";
 }
 
 #glass {
@@ -74,10 +79,41 @@ form {
 form input {
     border: none;
     background-color: rgba(0,0,0,.0);
-    width: 80%;
+    width: 90%;
+    margin: 10px 0;
+    font-size: .9rem;
 }
 
 form button {
     border: none;
-    grid-area: button1;
+    text-align: center;
+    padding: 15px 20px;
+    background-color: rgba(251,62,68, 1);
+    color: white;
+    height: 100%;
+    font-size: .9rem;
+}
+
+.button-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 30px;
+    background-color: white;
+    color: black;
+    margin: 0;
+    font-size: .9rem;
+    font-weight: 500;
+}
+
+#button01 {
+    border: 1px solid black;
+    margin-left: 25px;
+    margin-right: 5px;
+    letter-spacing: .03rem;
+}
+
+#button02 {
+    margin-right: 20px;
 }
