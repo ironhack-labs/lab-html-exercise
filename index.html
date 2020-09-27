@@ -8,7 +8,7 @@
             <!-- first row of header. nav -->
             <div>
                 <div>
-                    <img class="black-heart" src="./images/black-heart.png" alt="black-heart"/>
+                    <img class="blackheart" src="./images/black-heart.png" alt="black-heart"/>
                     <span> Nifty Penguin Magic </span>
                 </div>
                 <nav class="nav-bar">
@@ -34,20 +34,21 @@
                     </ul>
                 </nav>
             </div>
-            <!-- second row of header. search bar -->
-                <img class="npm-logo" src="./images/npm-logo.png" alt="npm-logo">
-                <div>
-                    <form action="#" method="POST">
-                        <img class="magnifying-glass" src="./images/magnifying-glass.png" alt="magnifying-glass">
+            <div class="second-row-header">
+                <img src="./images/npm-logo.png" alt="npm-logo">
+                <div class="search">
+                    <form class="search-bar" action="#" method="POST">
+                        <label for="search">
+                            <img class="magnifying-glass" src="./images/magnifying-glass.png" alt="magnifying-glass" />                    
+                        </label>
                         <input type="text" name="search" id="search" placeholder="Search packages">
-                        <button type="submit">Search</button>
                     </form>
+                    <button type="submit">Search</button>
                 </div>
-                <div>
-                    <a href="#">Join</a>
-                    <a href="#">Log in</a>
+                <div class="login-or-join">
+                    <a id="join" href="#">Join</a>
+                    <a id="login" href="#">Log in</a>
                 </div>
-            <div>
             </div>
         </header>
         <section id="join-us">
