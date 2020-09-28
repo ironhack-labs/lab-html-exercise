@@ -60,17 +60,13 @@ body {
   }
 
   .magnifying-glass{
-    width: 20px;
+    width: 19px;
   }
 
   .logo {
     width: 60px;
   }
 
-  ::placeholder {
-    color: red;
-    border:0px;
-  }
 
   .search-bar {
       display: flex;
@@ -78,7 +74,6 @@ body {
       justify-content: space-between;
       padding:3px;
       width: 80%;  
-      
   }
 
   .search-bar-div{
@@ -90,7 +85,8 @@ body {
 
   label {
     background-color:rgba(0,0,0,.0);
-    padding:0px 10px 0px 10px;
+    padding:0px 0px 0px 10px;
+    display: flex;
   }
 
   input {
@@ -98,9 +94,11 @@ body {
       border: 0px;
       padding:12px;
       width: 100%;
-      
   }
 
+  text:focus, input:focus{
+    outline: none;
+}
   .header-row2-buttons {
       display: flex;
       align-items: center;
