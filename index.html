@@ -7,13 +7,14 @@
     <title>Document</title>
 </head>
 <body>
+<!--  header  -->
     <header class="header">
         <div>
             <div>
-                <img src="./images/black-heart.png" alt="Black-heart"/>
+                <img class="black-heart"src="./images/black-heart.png" alt="Black-heart"/>
                 <span>Nifty Penguin Magic</span>
             </div>
-            <nav class="nav-bar">
+            <nav>
                 <ul>
                     <li> <a href="#">Enterprise</a></li>
                     <li> <a href="#">Products</a></li>
@@ -24,17 +25,20 @@
                 </ul>
             </nav>
         </div>
-        <div class="">
-            <img class="black-heart" src="./images/npm-logo.png" alt="NPM logo">
-            <img class="magnifying-glass" src="./images/magnifying-glass.png" alt="magnifying glass">
+        <div class="search-container">
+            <img class="npm-logo" src="./images/npm-logo.png" alt="NPM logo">
             <form action="get">
               <input type="text" name="text" id="search-input" placeholder="Search packages"/>
-                <button>Search</button>
+              <button>Search</button>
             </form>
-            <a href="">Join</a>
-            <a href="">Log in</a>
+            <div class="join-log-container">
+                <a href="#" class="link join-btn">Join</a>
+                <a href="#" class="link log-btn">Log in</a>
+            </div>
         </div>
     </header>
+
+<!-- building amazing things section -->
     <section id="section-1">
         <h1>Build amazing things</h1>
         <article>Essential JavaScript development tools that help you go to market faster and build powerful applications using
@@ -44,6 +48,8 @@
             <a href="#">Join for free</a>
         </div>
     </section>
+
+<!-- bring to your company section -->
     <section id="section-2"> 
         <img class="hexagon" src="./images/triangle-hexagon.svg" alt="triangle hexagon">
         <h1>Bring the best of open source to your company</h1>
@@ -51,6 +57,8 @@
             over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it.
             Create an Org and get more out of the tools your team already knows and loves.</article>
     </section>
+
+<!-- create an org section -->
     <section id="section-3">
         <div>
             <div>
