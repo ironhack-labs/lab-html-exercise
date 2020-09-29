@@ -3,11 +3,12 @@
 body {
     font-family: 'Poppins';
   }
-  header > div {
+ header > div {
       padding:0 25px;
       display: flex;
       justify-content: space-between;
       align-items: center;
+      border-bottom: 1px solid lightgray;
   }
   nav {
       width: 600px;
@@ -26,27 +27,79 @@ body {
       width: 20px;
       margin-right: 1rem;
   }
-  hr {
-      border-color: white;
-  }
-  #bottom-header span {
-      display: flex;
-      justify-content: flex-start;
-      margin-left: 20px;
-  }
 .lupe {
-    width: 2em;
-    position: relative;
+    width: 20px;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, .05);
 }
 .npm-logo {
-    width: 4em;
+    width: 3.5em;
     margin-right: 1em;
+    padding: 5px;
 }
-#bottom-header input {
-    width: 1900px;
-    padding: 0.5em;
-    padding-left: 2em;
-    margin-left: 0 auto;
-    background-color: rgba(0,0,0,.05);
-    position: relative;
+.logo-search {
+    display: flex;
+    flex-direction: row;
+}
+.logo-search input {
+    width: 2000px;
+    padding: 8px;
+    border-style: none;
+    background-color: rgba(0, 0, 0, .05);
+}
+#bottom-header {
+    padding:5px 0;
+    display: flex;
+    align-items: center;
+}
+#bottom-header button {
+    background-color: #fb3e44;
+    color: white;
+    padding: 8px 10px;
+    border-style: none;
+}
+.join {
+    margin: auto 2em auto 2em;
+    border: 1px solid black;
+    padding: 5px 15px;
+    text-decoration: none;
+    color: black;
+}
+.login {
+    padding: 5px 15px;
+    margin: auto 2em auto 2em;
+    text-decoration: none;
+    color: black;
+}
+#section1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 600px;
+    background-color: rgba(232,217,217,.3);
+}
+.seeplans {
+    background-color: #FB3B49;
+    box-shadow:  8px 8px 0 rgba(251,59,73,.2);
+    text-decoration: none;
+    margin: 50px;
+    padding: 1em 2em;
+    color: white;
+}
+.joinforfree {
+    background-color: white;
+    text-decoration: none;
+    margin: 50px;
+    padding: 1em 2em;
+    color: black;
+}
+h2 {
+    font-size: 80px;
+    margin: 0 auto;
+}
+#section1 p {
+   margin: 4em;
+   text-align: center;
+   font-size: 25px;
 }
