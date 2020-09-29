@@ -18,11 +18,15 @@ form button letters color: white
 /* header */
 /* upper div *//* upper div */
 header > div {
-    padding: 0 25px;
+    padding: 0px 25px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid lightgray;
+}
+
+header {
+    box-shadow: 0px 3px 10px rgb(226, 226, 226);
 }
 
 nav {
@@ -47,29 +51,11 @@ nav a {
     margin-right: 1rem;
 }
 
+
 /* bottom div *//* bottom div */
 
-
 .headerBottomDiv {
-    width: full-width;
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    padding-top: 0px;
-}
-
-.headerBottomDiv a {
-    display: flex;
-    justify-content: end;
-    text-decoration: none;
-    color: black;
-    margin-right: 0px;
-}
-
-.joinLink {
-    border: 1px solid black;
-    width: 70px;
-    height: 30px;
+    padding: 8px 25px 8px 25px;
 }
 
 .logo {
@@ -78,28 +64,68 @@ nav a {
 
 .searchContainer {
     position: relative;
-    padding: 25px;
-    justify-content: space-between;
-    flex-direction: row;
+    display: flex;
+    justify-content: flex-start;
+    min-width: 100px;
+    margin-right: 26px;
+    text-decoration: none;
 }
 
-.searchContainer img {
-    position: absolute;
-    width: 20px;
+.searchContainer input:focus {
+    outline: none;
 }
 
-.searchContainer button {
-    position: absolute;
+.searchContainer button:focus {
+    outline: none;
+}
+
+.searchBar {    
+    padding: 13px 795px 13px 45px;
+    width: 100%;
+    font-size: 1em;
+    background-color: rgb(241, 241, 241);
     border: none;
-    background-color: red;
-    height: 32px;
+    border-radius: 0;
+    position: relative;
+    letter-spacing: 0.5px;
 }
 
 .searchContainer input {
-    border: none;
-    background-color: rgb(236, 236, 236);
-    width: 700px;
-    height: 30px;
+    color: rgba(0,0,0,.05);
+}
+
+.searchContainer input::placeholder {
+    color: rgba(0,0,0,.05);
+}
+
+.searchButton {
+    border: 1px solid red;
+    padding: 10px 18px 10px 20px;
+    position: relative;
+    background-color:#fb3e44;
+    color: white;
+    font-size: 1em;
+}
+
+.searchIcon {
+    width: 19px;
+    position: absolute;
+    margin-top: 13px;
+    margin-left: 13px;
+}
+
+
+.joinLink {
+    color: black;
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 3px 16px;
+    margin-right: 12px;
+}
+
+.loginLink {
+    color: black;
+    text-decoration: none;
 }
 
 /* section 1 */
