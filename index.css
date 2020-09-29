@@ -43,9 +43,16 @@ input {
   color: rgba(0, 0, 0, .05)
 }
 
-button {
+#btnPlans {
   background-color: #fb3e44;
-  color: white
+  color: white;
+  box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+}
+
+#btnJoin{
+  background-color: #f8f3f3;
+  color: black;
+  box-shadow: 8px 8px 0 rgba(251,59,73,.2);
 }
 
 h1 {
@@ -78,11 +85,6 @@ h5 {
   line height: 1em
 }
 
-#f7f4f4 {
-  background-color: #f7f4f4;
-  text-align: center;
-}
-
 .search {
   display: flex;
   flex-direction: row;
@@ -109,4 +111,13 @@ h5 {
 #npmlogo {
   height: 40px;
   margin: 10px;
+}
+
+#pinkArea {
+  background-color: #f7f4f4;
+  text-align: center;
+  display: flex;
+  flex-flow: column nowrap;  /* short for flex direction and wrap */
+  justify-content: center;
+  height: 600px;
 }
