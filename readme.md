@@ -107,7 +107,7 @@ You're ready to move to the next iteration. :raised_hands:
 
 #### HTML 2 | Content Sections
 
-Take a look at the image with market HTML elements on it one more time, and you can see we have three sections below the header. Create `section` tags and give each of them `id`s so you can identify them quickly.
+Take a look at the image with marked HTML elements on it one more time, and you can see we have three sections below the header. Create `section` tags and give each of them `id`s so you can identify them quickly.
 
 The content for each of these sections is already in the _index.html_ but you have to organize it properly making sure there are headings, paragraphs, divs, etc.
 
