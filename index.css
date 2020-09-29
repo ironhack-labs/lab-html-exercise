@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
 body {
@@ -86,26 +85,25 @@ h5 {
 
 .search {
   display: flex;
-  /* align-items: center; */
-  /* justify-content: space-around; */}
-/*
-  .search input {
-    color: white;
-    padding: 0.5rem;
-  } */
-/*
-  input:focus {
-    outline: none;
+  flex-direction: row;
+  flex-wrap: nowrap: wrap;
+  /* align-items: center;
+  justify-content: space-around; */
 }
-
-::-webkit-search-cancel-button {
-  -webkit-appearance: none;
-} */
 
 .searchBox {
   border: 0;
   padding: 0.5rem 0.5rem 0.5rem 0;
   flex: 1;
+}
+
+.searchContainer {
+  display: inline-flex;
+  position: relative;
+  border: 1px solid #ccc;
+  overflow: hidden;
+  width: 60%;
+  margin: 10px;
 }
 
 #npmlogo {
