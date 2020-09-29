@@ -11,7 +11,7 @@ h1 {
   }
   
   h2 {
-    font-size: 2.7em;
+    font-size: 2.3em;
     font-style: italic;
     text-align: center;
     text-transform: uppercase;
@@ -83,7 +83,7 @@ header > div {
       width: 100px;
       height: 60px;
       color: white;
-      background-color: red;
+      background-color: #fb3e44;
   }
 
   #joinlog {
@@ -93,26 +93,131 @@ header > div {
 
 /* ||||||||||||||||| Section 1 - Build Amazing Things ||||||||||||||||| */
 
-.article-section1 {
+.amazing {
+    height: 600px;
+    background-color: rgba(232,217,217,.3);
     text-align: center;
-    font-size: 1.7em;
-  }
-
-#article-section1 {
-    max-width: 40%;
-    justify-content: center;
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+    align-content: stretch;
+    padding: 0;
 }
 
-.triangle-hexagon {
-    width: 400px;
-    
+.amazing-quote {
+    width: 40%;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    padding: 0 0 20px 0;
 }
-
-#triangle-hexagon
+.plans-btn {
+    box-shadow: 4px 6px 0px 0px #f5c1c1;
+    border: none;
+    background-color:#FB3B49;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-size:17px;
+    font-weight:bold;
+    padding:20px 60px;
+    text-decoration:none;
+}
+.join-btn {
+    padding: 20px 60px;
+    border: none;
+    outline: none;
+    font: inherit;
+    color: inherit;
+    background: none;
+    cursor: pointer;
+}
 
 
 /* ||||||||||||||||| Section 2 - Bring the best ||||||||||||||||| */
 
+.bring-best {
+    text-align: center;
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+    align-content: stretch;
+}
 
+    .bring-best-styling {
+        height: 105px;
+        transform: skew(9deg,0deg); /* Equal to: translateX(10px) or translate(10px, 0) */
+        background-color: rgba(255,204,53,.4);
+    }
+
+    .triangle {
+        width: 25%;
+        padding-top: 40px;
+    }
+
+    .bring-styling {
+        width: 60%;
+        width: 40%;
+        font-size: 1.2em;
+        font-weight: normal;
+        text-align: center;
+    }
 
 /* ||||||||||||||||| Section 3 - Services display ||||||||||||||||| */
+
+
+
+.service-img {
+    height: 25px;
+}
+
+.servicebox {
+    width: 270px;
+    height: 270px;
+    padding: 20px;
+    border: red;
+    border-style: solid;
+    border-width: 8px;
+    border
+}
+
+#structure {
+    width: 1400px;
+    margin: 0 auto;
+    padding: 75px 0;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+    align-content: stretch;
+  }
+
+  #structure2 {
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+    align-content: stretch;
+  }
+
+    .create-btn {
+    width: 400px;
+    height: 60px;
+    box-shadow: 8px 8px grey;
+    border: none;
+    background-color:rgb(7, 7, 7);
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-size:17px;
+    font-weight:bold;
+    text-decoration:none;
+}
