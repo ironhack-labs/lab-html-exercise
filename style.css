@@ -1,32 +1,58 @@
-/* **global** */
-@import url('https://fonts.googleapis.com/css?family=Poppins');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800');
 
 body {
   font-family: 'Poppins';
 }
 
 /* COLOR PALETTE
-form label color: rgba(0,0,0,.05)
-form input color: rgba(0,0,0,.05)
+Header:
+form label color: rgba(0,0,0,.15)
+form input color: rgba(0,0,0,.15)
+search bar color: rgb(241, 241, 241)
 form button background color: #fb3e44
 form button letters color: white
+border color: lightgray
+text: black
+box shadow color: rgb(226, 226, 226)
+
+
+Section 1:
+sections background color: rgba(232,217,217,.3);
+"See plans" button background color: #FB3B49
+"See plans" button box shadow: 8px 8px 0 rgba(251,59,73,.2)
+
+Section 2:
+heading background color: rgba(255,204,53,.4)
+section background color: white
+
+Section 3:
+sections background color: rgba(232,217,217,.3);
+color of the letters in each heading in this section: #ED1C24
+"Create an Org" color: rgba(128,83,35,.2)
+"Create an Org" letters color: white
 */
 
-/* **individual** */
 
-/* header */
-/* upper div *//* upper div */
+
+/* header *//* header *//* header */
+
+/* top div *//* top div */
+
+header {
+    box-shadow: 0px 3px 10px rgb(226, 226, 226);
+}
+
+.blackHeart {
+    width: 20px;
+    margin-right: 1rem;
+}
+
 header > div {
     padding: 0px 25px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid lightgray;
-}
-
-header {
-    box-shadow: 0px 3px 10px rgb(226, 226, 226);
 }
 
 nav {
@@ -46,11 +72,6 @@ nav a {
     color: black;
 }
 
-.blackHeart {
-    width: 20px;
-    margin-right: 1rem;
-}
-
 
 /* bottom div *//* bottom div */
 
@@ -58,16 +79,18 @@ nav a {
     padding: 8px 25px 8px 25px;
 }
 
-.logo {
+.npmLogo {
     width: 70px;
 }
+
+/* all search container styling */
 
 .searchContainer {
     position: relative;
     display: flex;
     justify-content: flex-start;
     min-width: 100px;
-    margin-right: 26px;
+    margin-right: 15px;
     text-decoration: none;
 }
 
@@ -79,8 +102,17 @@ nav a {
     outline: none;
 }
 
+.searchContainer input {
+    color: rgba(0,0,0,.15);
+    width: 930px;
+}
+
+.searchContainer input::placeholder {
+    color: rgba(0,0,0,.15);
+}
+
 .searchBar {    
-    padding: 13px 795px 13px 45px;
+    padding: 13px 10px 13px 45px;
     width: 100%;
     font-size: 1em;
     background-color: rgb(241, 241, 241);
@@ -88,14 +120,6 @@ nav a {
     border-radius: 0;
     position: relative;
     letter-spacing: 0.5px;
-}
-
-.searchContainer input {
-    color: rgba(0,0,0,.05);
-}
-
-.searchContainer input::placeholder {
-    color: rgba(0,0,0,.05);
 }
 
 .searchButton {
@@ -114,6 +138,7 @@ nav a {
     margin-left: 13px;
 }
 
+/* header bottom div links */
 
 .joinLink {
     color: black;
@@ -128,7 +153,8 @@ nav a {
     text-decoration: none;
 }
 
-/* section 1 */
+/* section 1 *//* section 1 */
+
 #introPlans {
     height: 600px;
     background-color: rgba(232,217,217,.3);
@@ -185,7 +211,8 @@ nav a {
     margin-right: 50px;
 }
 
-/* section 2 */
+/* section 2 *//* section 2 */
+
 #aboutNMP {
     display: flex;
     justify-content: center;
@@ -216,7 +243,8 @@ nav a {
     width: 250px;
 }
 
-/* section 3 */
+/* section 3 *//* section 3 */
+
 #keyFeatures {
     background-color: rgba(232,217,217,.3);
 }
