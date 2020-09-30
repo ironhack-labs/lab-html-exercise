@@ -40,7 +40,8 @@ label {
 }
 
 input {
-  color: rgba(0, 0, 0, .05)
+  /* color: rgba(0, 0, 0, .05); */
+  /* background-color: #ffffff; */
 }
 
 h1 {
@@ -142,6 +143,11 @@ h5 {
   border: 0;
   padding: 0.5rem 0.5rem 0.5rem 0;
   flex: 1;
+  color: rgba(0, 0, 0, .05);
+}
+/* area inside of input color change to gray */
+.searchContainer input[type="text"], textarea {
+  background-color : #f3f3f3;
 }
 
 .searchContainer button {
