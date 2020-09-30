@@ -4,49 +4,180 @@ body {
   font-family: 'Poppins';
 }
 
+
+/*HEADER*/
+
 header > div {
     padding: 0 25px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid lightgray;
-  }
-
-  nav {
+}
+  
+nav {
     width: 600px;
-  }
-
-  nav ul {
+}
+  
+nav ul {
     list-style: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-
-  nav a {
+}
+  
+nav a {
     text-decoration: none;
     color: black;
-  }
-
-  .blackHeart {
+}
+  
+.blackHeart {
     width: 20px;
     margin-right: 1rem;
+}
+
+form {
+    display:flex;
+    flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-end;
+	align-items: center;
+	align-content: stretch;
+}
+
+.npm {
+  width: 50px;
+  margin-right: 1rem;    
+}
+
+.glass {
+  width: 20px;
+} 
+
+  form button{
+      background-color:#fb3e44;
+      color: white;
+      border: none;
+
   }
 
-    form {
-      display:flex;
-      flex-direction: row;
-      justify-content: space-between;
+
+  /*SECTION 1*/
+
+  #beginning {
+      height: 600px;
+      background-color: rgba(232,217,217,.3);
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h1 {
+    font-size: 4em;
+    text-align: center;
+    }
+
+    article {
+        text-align: center;
+        padding-bottom: 100px;
+    }
+
+    .join {
+        background-color: white;
+        color: black;
+        padding: 10px 60px;
+
+
+    }
+
+    .plans {
+        color: white;
+        background-color:#FB3B49;
+        padding: 10px 60px;
+        box-shadow: 8px 8px 0 rgba(251,59,73,.2);    
+    }
+
+  
+
+    #beginning a {
+        text-decoration: none;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #beginning div {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    /*SECTION 2*/
+
+    #middle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+     }
+
+     .hexagon {
+         width: 10%;
+         padding: 30px;
+       }
      
-      
-  }
+       #middle h2 {
+           background-color: rgba(255,204,53,.4);
+           transform: skew(9deg,0deg);
+           font-style: italic;
+           width: 600px;
+           text-align: center;
+       }
 
-  .npm {
-    width: 50px;
-    margin-right: 1rem;    
-  }
+       #middle article {
+            text-align: center;
+            padding-bottom: 120px;;
+           
+       }
 
-  .glass {
-    width: 20px;
-    margin-right: 1rem;
-  }
+       /*SECTION 3*/
+
+       #end h3 {
+           color: #ED1C24;
+           font-weight: bold;
+        }
+       
+
+       #end a {
+           background-color: black;
+           width: 200px;
+           text-decoration: none;
+           color: white;
+           padding: 10px 60px;
+           display:flex;
+           justify-content: space-evenly;
+           align-items: center;  
+        }
+
+        #end img {
+            width: 40px;
+        }
+
+        #end > div {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;     
+        }
+
+        #end article{
+            text-align: left;
+        }
+
+        .service-box {
+            border-radius: 20px;
+            box-sizing: border-box;
+            padding: 50px;
+            width: 60%;
+          }
