@@ -3,31 +3,87 @@
 body {
   font-family: 'Poppins';
 }
-header > div {
-    padding: 0 25px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid lightgray;
-  }
+
+header>div {
+  padding: 0 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+}
+
+nav {
+  width: 600px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+.blackHeart {
+  width: 20px;
+  margin-right: 1rem;
+}
+
+header>second-bar {
+  padding: 0 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  max-height: 25px;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+form {
+  display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: space-around;
+}
+form button {
+  background-color: #fb3e44;
+  color: white;
+  border: none;
+  height: 30px;
+}
+
+form label {
+  background-color: rgba(0, 0, 0, .05);
+  padding-left: 20px;
+  padding-right: 20px;
+ height: 30px;
+}
+
+form input {
+  width: 900px;
+  background-color: rgba(0, 0, 0, .05);
+  border: none;
+  height: 30px;
+}
+
+#search-icon {
+  max-height: 20px;
+  display: flex;
+  padding-top:5px;
   
-  nav {
-    width: 600px;
-  }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  nav a {
-    text-decoration: none;
-    color: black;
-  }
-  
-  .blackHeart {
-    width: 20px;
-    margin-right: 1rem;
-  }
+}
+#links {
+  display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: stretch;
+}
