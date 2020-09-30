@@ -9,90 +9,163 @@ has 100% parity with all the public npm registry features your developers alread
 auditing features built into the npm client, a zero-friction way to make open source software safer. Create an Org
 <html>
 <!-- LINK HTML-CSS -->
+
     <head>
         <link rel="stylesheet" href="styles.css">
     </head>
-    <nav class="nav-bar">
-        <div>
+    <body id="body">
+
+        <header class="header">
+
             <div>
-                <img class="blackHeart" src="C:\Users\PC\Desktop\lab-html-exercise\images\black-heart.png" alt="black heart" />
-                <span> Nifty Penguin Magic </span>
+
+                <div>
+                    <img class="blackHeart" src="C:\Users\PC\Desktop\lab-html-exercise\images\black-heart.png" alt="black heart" />
+                    <span> Nifty Penguin Magic </span>
+                </div>
+
+                <nav>
+                    <ul>
+                        <li><a href="#"> npm Enterprise</a></li>
+                        <li><a href="#"> Products </a></li>
+                        <li><a href="#"> Solutions </a></li>
+                        <li><a href="#"> Resources </a></li>
+                        <li><a href="#"> Docs </a></li>
+                        <li><a href="#"> Support </a></li>
+                    </ul>
+                </nav>
+
             </div>
-            <nav>
-                <ul>
-                    <li><a href="#"> npm Enterprise</a></li>
-                    <li><a href="#"> Products </a></li>
-                    <li><a href="#"> Solutions </a></li>
-                    <li><a href="#"> Resources </a></li>
-                    <li><a href="#"> Docs </a></li>
-                    <li><a href="#"> Support </a></li>
-                </ul>
-            </nav>
-        </div>
-    
-        <div>
-            <img class="npm-logo" src="C:\Users\PC\Desktop\lab-html-exercise\images\npm-logo.png" alt="npm-logo">
-            <div class="search">
-                <input type="text" placeholder="enter your search">
-                <button> Search </button>
+            
+            <div id="search-bar">
+
+                <img class="npm-logo" src="C:\Users\PC\Desktop\lab-html-exercise\images\npm-logo.png" alt="npm-logo">
+
+                    <form action="#" method="GET" class="search-form">
+                        <img class="glass" src="C:\Users\PC\Desktop\lab-html-exercise\images\magnifying-glass.png" alt="magnifying-glass">
+                        <input type="search" placeholder="Search packages" class="search">
+                        <button class="nav-button"> Search </button>
+                    </form>
+
+                <div>
+                    <a href="#" class="join-button"> Join </a>
+                    <a href="#" class="log-button"> Log In </a>
+                </div>
+                
             </div>
-            <img class="glass" src="C:\Users\PC\Desktop\lab-html-exercise\images\magnifying-glass.png" alt="magnifying-glass">
-            <ul><a href="#"> Join Log In</a></ul>
-        </div>
-    </nav>
+        </header>
+
 
 <!-- 1ST SECTION -->
-    <section>
-        <header>
+
+
+        <section id="section-head">
+
             <h1> Build amazing things </h1>
-        </header>
-        <article> Essential JavaScript development tools that help you go to market faster and build powerful applications using modern open source code.</article>
-        <ul><a href="#"> See plans Join for free </a></ul>
-    </section>
+
+            <article id="description-product"> Essential JavaScript development tools that help you</br>
+                go to market faster and build powerful applications</br>using modern open source code.</article>
+
+            <div>
+                <a href="#" class="plans-button"> See plans </a>
+                <a href="#" class="join-button"> Join for free </a>
+            </div>
+
+        </section>
+
+
 <!-- 2ND SECTION -->
-    <section>
-        <img src="C:\Users\PC\Desktop\lab-html-exercise\images\triangle-hexagon.svg" alt="triangle-hexagon">
-        <h2> Bring the best of open source to your company </h2>
-        <article>
-            npm is the tool used by over 11.000.000 JavaScript developers around the world. Your developers
-            already use it. Your company depends on it. Create an Org and get more out of the tools your
-            team already knows and loves
-        </article>
-    </section>
+
+
+        <section id="section-mid">
+
+            <img src="C:\Users\PC\Desktop\lab-html-exercise\images\triangle-hexagon.svg" alt="triangle-hexagon">
+
+            <h2> Bring the best of open source to your company </h2>
+
+            <article>
+                npm is the tool used by over 11.000.000 JavaScript developers around the world. Your developers</br>
+                already use it. Your company depends on it. Create an Org and get more out of the tools your</br>
+                team already knows and loves</br>
+            </article>
+
+        </section>
+
+
 <!-- 3RD SECTION -->
-    <section>
-        <img src="C:\Users\PC\Desktop\lab-html-exercise\images\zero-configuration.svg" alt="zero-configuration">
-        <h3> Zero configuration </h3>
-        <article>
-            Creat an org, add your team, and start collaborating. Nothing to configure, set up, or manage
-        </article>
-    </section>
-<!-- 4TH SECTION -->
-    <section>
-        <img src="C:\Users\PC\Desktop\lab-html-exercise\images\team-management.svg" alt="team-management">
-        <h3> Team management </h3>
-        <article>
-            Control who has access to waht modules within your team namespace using straightforward team management capabilities
-        </article>
-    </section>
-<!-- 5TH SECTION-->
-    <section>
-        <img src="C:\Users\PC\Desktop\lab-html-exercise\images\familiar-features.svg" alt="familiar-features">
-        <h3> Familiar features </h3>
-        <article>
-            npm Orgs has 100% parity with all the public npm registery features your developers use
-        </article>
-    </section>
-<!-- 6TH SECTION -->
-    <section>
-        <img src="C:\Users\PC\Desktop\lab-html-exercise\images\npm-audit.svg" alt="npm-audit">
-        <h3> npm audit </h3>
-        <article>
-            Enjoy the security auditing features built into the npm client. a zero-friction way to make open source software safer.
-        </article>
-    </section>
-<!-- 7TH SECTION -->
-    <nav>
-        <ul><a href="#"> Create an Org </a></ul>
-    </nav>
+        <section id="section-low">
+
+
+            <section id="zero-configuration">
+
+                <img src="C:\Users\PC\Desktop\lab-html-exercise\images\zero-configuration.svg" alt="zero-configuration">
+    
+                <h3> Zero configuration </h3>
+    
+                <article>
+                    Creat an org, add your team,</br>
+                    and start collaborating.</br>
+                    Nothing to configure, set up, or manage</br>
+                </article>
+            </section>
+    
+    
+            <section id="team-management">
+    
+                <img src="C:\Users\PC\Desktop\lab-html-exercise\images\team-management.svg" alt="team-management">
+    
+                <h3> Team management </h3>
+    
+                <article>
+                    Control who has access to</br>
+                    waht modules within your</br>
+                    team namespace using</br>
+                    straightforward team</br>
+                    management capabilities</br>
+                </article>
+    
+            </section>
+    
+    
+            <section id="familiar-features">
+    
+                <img src="C:\Users\PC\Desktop\lab-html-exercise\images\familiar-features.svg" alt="familiar-features">
+    
+                <h3> Familiar features </h3>
+    
+                <article>
+                    npm Orgs has 100% parity with</br>
+                    all the public npm registery</br>
+                    features your developers</br>
+                    already use</br>
+                </article>
+    
+            </section>
+    
+    
+            <section id="npm-audit">
+    
+                <img src="C:\Users\PC\Desktop\lab-html-exercise\images\npm-audit.svg" alt="npm-audit">
+    
+                <h3> npm audit </h3>
+    
+                <article>
+                    Enjoy the security auditing</br>
+                    features built into the npm</br>
+                    client. a zero-friction way to</br>
+                    make open source software safer.</br>
+                </article>
+    
+            </section>
+    
+        </section>
+
+        
+
+        <div id="org-button">
+            <ul><a href="#" class="button-org"> Create an Org </a></ul>
+        </div>
+
+
+    </body>
 </html>

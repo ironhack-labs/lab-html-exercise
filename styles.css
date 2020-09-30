@@ -3,8 +3,18 @@ html,
 /*FONT OF THE FULL HTML*/
 body{
     font-family: 'Poppins';
+    margin: 0 0 40px;
+    padding: 0;
 }
+
 /*NAV BAR AND HEADER*/
+header > div {
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+}
 nav {
     width: 600px;
 }
@@ -21,4 +31,203 @@ nav a {
 .blackHeart {
    width: 20px;
    margin-right: 1rem; 
+}
+.join-button {
+    height: 20rem;
+    width: 40rem;
+    padding: 0.2rem;
+    margin: 0 0.5rem;
+    text-decoration: none;
+    border: 1px solid darkgrey;
+    text-align: center;
+    color: black;
+}
+.log-button {
+    height: 20rem;
+    width: 40rem;
+    padding: 0.2rem 0;
+    margin: 0;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+}
+.npm-logo {
+    padding: 8px 0 0 0;
+    position: relative;
+    margin-right: 4rem;
+    width: 80px;
+}
+.glass {
+    height: 1rem;
+    margin-right: 0;
+    padding: 0.5rem;
+}
+.search-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-basis: auto;
+    flex-shrink: 1;
+}
+.search {
+    border-style: none;
+    height: 2rem;
+    margin: 0;
+    flex-basis: 750px;
+    flex-shrink: 1;
+}
+#search-bar {
+    padding: 1em 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#search-bar button {
+    background-color: #fb3b49;
+    color: white;
+    border-style: none;
+    height: 2rem;
+    width: 25%;
+    float: right;
+    border-left: 0px;
+}
+/* 1ST SECTION */
+
+#section-head {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(232,217,217,0.3);
+    height: 600px;
+}
+#section-head h1 {
+    font-size: 5em;
+    font-weight: 1000;
+    margin: 15px
+}
+#section-head article {
+    font-size: 1.5em;
+    margin: 15px
+}
+.plans-button {
+    background-color: #fb3b49;
+    color: white;
+    box-shadow: 8px 8px 0 rgba(251,58,73,0.2);
+    border-radius: none;
+}
+.join-button {
+    background-color: white;
+    color: black;
+    border-style: none;
+}
+#description-product {
+    text-align: center;
+}
+
+/* 2ND SECTION */
+
+#section-mid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px
+}
+
+#section-mid img {
+    width: 200px;
+    margin-right: 4rem;
+    margin: 30px
+}
+
+#section-mid h2 {
+    background-color: rgba(255,204,53,.4);
+    width: 600px;
+    text-align: center;
+    transform: skew(9deg,0deg);
+    font-style: italic;
+    margin: 10px
+}
+
+#section-mid article {
+    text-align: center;
+    margin: 20px
+}
+
+/* SECTION LOW */
+#section-low {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#zero-configuration {
+    justify-content: space-evenly;
+    margin: 50px 100px;
+}
+#zero-configuration img {
+    width: 50px;
+    margin-right: 2rem;
+}
+#zero-configuration h3 {
+    color: #ED1C24;
+}
+
+/* 4TH SECTION */
+
+#team-management {
+    justify-content: space-evenly;
+    margin: 100px;
+}
+#team-management img {
+    width: 50px;
+    margin-right: 2rem;
+}
+#team-management h3 {
+    color: #ED1C24;
+}
+
+/* 5TH SECTION */
+
+#familiar-features {
+    justify-content: space-evenly;
+    margin: 100px;
+}
+#familiar-features img {
+    width: 50px;
+    margin-right: 2rem;
+}
+#familiar-features h3 {
+    color: #ED1C24;
+}
+
+/* 6TH SECTION */
+
+#npm-audit {
+    justify-content: center;
+    margin: 100px;
+}
+#npm-audit img {
+    width: 50px;
+    margin-right: 2rem;
+}
+#npm-audit h3 {
+    color: #ED1C24;
+}
+
+#org-button {
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    background-color: black;
+    margin: 100px;
+    width: 700px;
+}
+.button-org {
+    color: white;
 }
