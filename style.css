@@ -13,6 +13,7 @@ header > div {
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid lightgray;
+    margin: 0 30px;
 }
   
 nav {
@@ -36,30 +37,51 @@ nav a {
     margin-right: 1rem;
 }
 
-form {
-    display:flex;
-    flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: flex-end;
-	align-items: center;
-	align-content: stretch;
-}
-
 .npm {
   width: 50px;
   margin-right: 1rem;    
+}
+
+
+input {
+    
+    background-color:rgb(223, 223, 223);
+    border: none;
+    width: 1400px; 
+    height: 30px;
 }
 
 .glass {
   width: 20px;
 } 
 
-  form button{
+.join {
+    text-decoration: none;
+    color: black;
+    border: 1px solid lightgray;
+    padding: 4px 16px;
+    margin-right: 24px;
+}
+
+.log-in {
+    text-decoration: none;
+    color: black;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+form button {
       background-color:#fb3e44;
       color: white;
       border: none;
-
-  }
+      padding: 7.5px;
+}
 
 
   /*SECTION 1*/
@@ -70,7 +92,7 @@ form {
       display: flex;
       justify-content: center;
       flex-direction: column;
-      align-items: center;
+      align-items: space-between;
     }
 
     h1 {
@@ -83,10 +105,11 @@ form {
         padding-bottom: 100px;
     }
 
-    .join {
+    .join-free {
         background-color: white;
         color: black;
         padding: 10px 60px;
+        margin-left: 20px;
 
 
     }
@@ -95,7 +118,8 @@ form {
         color: white;
         background-color:#FB3B49;
         padding: 10px 60px;
-        box-shadow: 8px 8px 0 rgba(251,59,73,.2);    
+        box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+        margin-right: 20px;    
     }
 
   
@@ -150,16 +174,6 @@ form {
         }
        
 
-       #end a {
-           background-color: black;
-           width: 200px;
-           text-decoration: none;
-           color: white;
-           padding: 10px 60px;
-           display:flex;
-           justify-content: space-evenly;
-           align-items: center;  
-        }
 
         #end img {
             width: 40px;
@@ -181,3 +195,19 @@ form {
             padding: 50px;
             width: 60%;
           }
+
+          #footer {
+              text-align: center;
+              margin-bottom: 30px;
+          }
+
+          #footer a {
+                background-color: black;
+                width: 200px;
+                text-decoration: none;
+                color: white;
+                padding: 10px 60px; 
+                
+             }
+     
+          
