@@ -1,8 +1,15 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 body {
     font-family: 'Poppins';
+    margin: 0;
   }
+
+/* header menu */
+
+header {
+  box-shadow: 0px 0.6em .6em rgba(0,0,0,.3);
+}
 
 header > div {
   padding: 0 25px;
@@ -12,15 +19,15 @@ header > div {
   border-bottom: 1px solid lightgray;
 }
 
-nav {
-  width: 600px;
-}
-
 nav ul {
   list-style: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+nav ul li:not(:first-child) {
+  margin-left: 1.3em;
 }
 
 nav a {
@@ -31,4 +38,188 @@ nav a {
 .black-heart {
   width: 20px;
   margin-right: 1rem;
+}
+
+/* header action bar */
+
+.head-action-bar {
+  display: flex;
+  padding: 0.6em 25px;
+}
+
+.logo {
+  height: 1.5em;
+  flex: 0 0 auto;
+}
+
+.search-form {
+  flex: 1 0 auto;
+  background-color: rgba(0,0,0,0.05);
+  display: flex;
+  margin-left: 1em;
+}
+
+.search-form label {
+  flex: 0 0 auto;
+  padding: 0 0.6em;
+  display: flex;
+  align-items: center;
+}
+
+.magnifying-glass {
+  height: 1em;
+}
+
+.search-form input {
+  flex: 1 0 auto;
+  border: 1px solid transparent;
+  background-color: transparent;
+  font-family: 'Poppins';
+  font-size: 1rem;
+  line-height: 2.5em;
+}
+
+.search-form button {
+  background-color: #fb3e44;
+  color: white;
+  border: none;
+  padding: 0 1em;
+  font-family: 'Poppins';
+  font-size: 1rem;
+}
+
+.button-join {
+  flex: 0 0 auto;
+  margin-left: 1em;
+  text-decoration: none;
+  color: black;
+  border: 1px solid black;
+  padding: 0.3em 1em;
+}
+
+.button-login {
+  flex: 0 0 auto;
+  margin-left: 1em;
+  text-decoration: none;
+  color: black;
+}
+
+/* 1st section */
+
+.hero-section {
+  background-color: rgba(232, 217, 217, .3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6em 1em;
+}
+
+.hero-section h1 {
+  font-size: 4rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.hero-section p {
+  max-width: 27em;
+  font-size: 1.3rem;
+  text-align: center;
+  margin: 2em 0;
+}
+
+.hero-section a {
+  font-weight: bold;
+  font-size: 1.3rem;
+  padding: 1.1em 4em;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.button-pricing {
+  background-color: #FB3B49;
+  color: white;
+  box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+}
+
+.button-freejoin {
+  background-color: white;
+  color: black;
+  margin-left: 2em;
+}
+
+/* 2nd section */
+
+.motto-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5em 1em;
+}
+
+.motto-section h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  background-color: rgba(255,204,53,.4);
+  transform: skew(9deg,0deg);
+  padding: 0.1em 1em 0 1em;;
+  line-height: 1;
+  margin: 2em 0 1em 0;
+
+}
+
+.motto-section h1 span {
+  transform: skew(-9deg,0deg);
+  display: block;
+}
+
+.motto-section p {
+  max-width: 45em;
+  font-size: 1rem;
+  text-align: center;
+  margin: 0;
+}
+
+.the-cube-image {
+  height: 17em;
+}
+
+/* 3rd section */
+
+.advantages {
+  display: flex;
+  flex-direction: column;
+  padding: 2em 6em;
+  margin: 0 auto;
+  max-width: 70em;
+}
+
+.advantages ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: minmax(0,1fr) minmax(0,1fr) minmax(0,1fr) minmax(0,1fr);
+  grid-gap: 2em;
+}
+
+.advantages img {
+  height: 2rem;
+}
+
+.advantages h2 {
+  color: #ED1C24;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.advantages a {
+  box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+  color:white;
+  font-weight: bold;
+  background-color: black;
+  font-size: 1.3rem;
+  padding: 1.1em 6em;
+  text-decoration: none;
+  margin: 2em auto;
+  display: inline-block;
 }
