@@ -2,9 +2,11 @@
 
 body {
   font-family: 'Poppins';
-  padding: 10px;
-  margin: 10px;
+  padding: 20px;
+  margin: 20px;
 }
+
+/* header */
 header > div {
     padding: 0 25px;
     display: flex;
@@ -40,6 +42,7 @@ nav a {
 }
 /*  */
 
+/* searc hbar */
 .search-container {
     padding: 5px 25px;
     display: flex;
@@ -58,7 +61,7 @@ form button {
     background-color: #fb3e44;
     color: white;
     border: 1px solid #D3D3D3;
-    height: 30px;
+    height: 36px;
     padding: 0px;
     width: 60px;
     font-size: 11px;
@@ -69,7 +72,7 @@ form  label, input{
 }
 
 #search-input {
-    height: 20px;
+    height: 26px;
     width: 100%;
     padding: 5px 10px 5px 40px;
     color: black;
@@ -94,6 +97,9 @@ form  label, input{
     white-space: nowrap;
 }
 
+/* section 1 */
+
+
 #section-1{
     height: 600px;
     background-color: rgba(232,217,217,0.3);
@@ -101,14 +107,16 @@ form  label, input{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    box-shadow: inset 0px 5px 3px -3px rgba(142, 142, 142, 0.35);
+    
 }
 
 #section-1 h1{
-    /* padding-bottom: 10%; */
     height: 80px;
     width: 780px;
     text-align: center;
     font-size: 60px;
+    font-weight: 900;
  
 }
 #section-1 article{
@@ -147,6 +155,8 @@ form  label, input{
     padding-top: 10px;
     margin-top: 10px;   
 }
+
+/*  section 2 */
 #section-2{
     height: 600px;
     display: flex;
@@ -156,7 +166,7 @@ form  label, input{
 }
 
 .hexagon{
-    width: 160px;
+    width: 222px;
     margin-bottom: 60px;
 }
 #section-2 h1{
@@ -174,4 +184,43 @@ form  label, input{
     margin: 0px 10px 10px 10px;
     width: 586px;
     font-size: small;
+}
+/* section 3 */
+#section-3{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+.blocks-container{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.blocks-section-3{
+    width: 246px;
+   
+}
+#section-3 img{
+    width: 30px;
+}
+#section-3 h4{
+    color: #ED1C24;
+}
+
+#section-3 a{
+    width: 292px;
+    text-align: center;
+    font-weight: 900;
+    height: 30px;
+    font-size: 13px;
+    text-decoration: none;
+    background-color: black;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    color: white;
+    padding-top: 12px;
+    margin-top: 16px;
+    margin-bottom: 12px;
+    
 }
