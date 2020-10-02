@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="style.css" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NPM Clone</title>
@@ -9,7 +10,7 @@
 <header>
     <!-- Erste Headerzeile -->
     <div>
-        <div><img src="images/black-heart.png" alt="a black heart" /> Nifty Penguin Magic</div>
+        <div><img src="images/black-heart.png" alt="a black heart" class="blackHeart" /> Nifty Penguin Magic</div>
         <nav>
             <ul>
                 <li><a href="#">npm Enterprise</a></li>
@@ -22,15 +23,16 @@
         </nav>
     </div>
     <!-- Zweite Headerzeile -->
-    <div>
-        <a href="#"><img src="images/npm-logo.png" alt="the npm logo which is simply the lower case letters npm" /></a>
+    <div class="headerTwo">
+        <img src="images/npm-logo.png" alt="the npm logo which is simply the lower case letters npm" class="npmLogo" />
+
         <form>
-            <img src="images/magnifying-glass.png" alt="a magnifying glass icon" />
+            <img src="images/magnifying-glass.png" alt="a magnifying glass icon" class="magnifying-glass" />
                 <input type="search" name="search" id="search" placeholder="Search packages">
-            <button type="submit">Search</button>
+            <button type="submit" class="redbutton">Search</button>
         </form>
-        <a href="" class="linkbutton">Join</a>
-        <a href="" class="linkbutton">Log In</a>
+        <a href="" class="linkbutton buttonbox">Join</a>
+        <a href="" class="linkbutton">Log&nbsp;In</a>
     </div><!-- Search Join Log In  -->
 </header>    
  <section id="one">
@@ -39,8 +41,8 @@
     modern open source code.
     </article>
     <div>
-    <a href="#"class="linkbutton redbutton">See plans</a>
-    <a href="#" class="link">Join for free</a>
+    <a href="#"class="redbutton">See plans</a>
+    <a href="#" class="whitebutton">Join for free</a>
     </div>
  </section>   
  <section id="two">
@@ -54,24 +56,24 @@
     Zero configuration 
     <div>
         <div class="box">
-            <img src="images/triangle-hexagon.svg">
+            <img src="images/zero-configuration.svg">
             <h3>Zero configuration</h3>
             <p>Create an org, add
                 your team, and start collaborating. Nothing to configure, set up, or manage.</p>
         </div>
         <div class="box">
-            <img src="images/triangle-hexagon.svg">
+            <img src="images/team-management.svg">
             <h3>Team management</h3>
             <p>Control who has access to what modules within your team namespace using straightforward team management capabilities.
             </p>
         </div>
         <div class="box">
-            <img src="images/triangle-hexagon.svg">
+            <img src="images/familiar-features.svg">
             <h3>Familiar features</h3>
             <p>npm Orgs has 100% parity with all the public npm registry features your developers already use.</p>
         </div>
         <div class="box">
-            <img src="images/triangle-hexagon.svg">
+            <img src="images/npm-audit.svg">
             <h3>npm audit</h3>
             <p>Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer.</p>
         </div>

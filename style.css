@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700;800;900&display=swap');
+body {
+  font-family: "Poppins", "Courier New", sans-serif;
+}
+/* == HEADER == */
+header > div {
+  padding: 0 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+}
+nav {
+  width: 600px;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+}
+.blackHeart {
+  width: 20px;
+  margin-right: 1rem;
+}
+/* 2nd header line */
+.headerTwo  {
+}
+.npmLogo {
+  height: 2rem;
+  padding: 0.5rem;
+}
+.headerTwo form {
+  width: 100%;
+  height: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.05);
+  margin: .6rem 2rem .6rem 1rem;
+  padding: .1rem 0;
+}
+.magnifying-glass {
+  height: 1rem;
+  padding: .2rem;
+}
+#search {
+  /* This is not an accessible font color/background color combination :( 
+      Also I didn't understand the "form label color: rgba(0,0,0,.05)
+form input color: rgba(0,0,0,.05)" part of the explanation. Is there a typo? Or should I have stacked the colors? */
+  width: 100%;
+  height: 2rem;
+  color:#555555;
+  background-color: transparent;
+  border: none;
+}
+.redbutton {
+  letter-spacing: .08rem;
+  padding: 0.6rem 0.8rem;
+  border: 0;
+  margin: 0;
+  color: white;
+  background-color: #fb3e44;
+}
+.linkbutton {
+  padding: 0.1rem 0 0.1rem 1rem;
+  text-decoration: none;
+  margin: .4rem 0 .4rem 0;
+}
+.buttonbox {
+    border: 1px solid black;
+    padding: 0.1rem 1rem;
+}
+/* == SECTIONS == */
+/* ONE */
+#one {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 600px;
+    /* It's not needed, but I hate it whenever "overflow: hidden" happens to cut of vital information on my small mobile screen */
+    overflow: visible;
+    background-color: rgba(232,217,217,.3);
+}
+h1 {
+    font-size: 6.4rem;
+    font-weight: 800;
+    margin:0;
+}
+#one article {
+    width: 600px;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight:500;
+}
+
+#one a {
+  text-decoration:none;
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding: 1.4rem 3rem;
+  margin: 1.2rem;
+}
+
+#one .redbutton {
+  background-color: #fb3e44;
+  box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+}
+#one .whitebutton {
+  color: black;
+  background-color: white;;
+}
+/* TWO */
+/* THRE */
