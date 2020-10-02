@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700;800;900&display=swap");
 body {
   font-family: "Poppins", "Courier New", sans-serif;
 }
@@ -12,6 +12,7 @@ header > div {
 }
 nav {
   width: 600px;
+  font-weight: 500;
 }
 nav ul {
   list-style: none;
@@ -28,7 +29,9 @@ nav a {
   margin-right: 1rem;
 }
 /* 2nd header line */
-.headerTwo  {
+.headerTwo {
+  /* source: https://markusstange.wordpress.com/2009/02/15/fun-with-box-shadows/ */
+  box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.5);
 }
 .npmLogo {
   height: 2rem;
@@ -41,25 +44,24 @@ nav a {
   justify-content: space-between;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.05);
-  margin: .6rem 2rem .6rem 1rem;
-  padding: .1rem 0;
+  margin: 0.6rem 2rem 0.6rem 1rem;
+  padding: 0.1rem 0;
 }
 .magnifying-glass {
   height: 1rem;
-  padding: .2rem;
+  padding: 0.2rem;
 }
 #search {
-  /* This is not an accessible font color/background color combination :( 
-      Also I didn't understand the "form label color: rgba(0,0,0,.05)
+  /* I didn't understand the "form label color: rgba(0,0,0,.05)
 form input color: rgba(0,0,0,.05)" part of the explanation. Is there a typo? Or should I have stacked the colors? */
   width: 100%;
   height: 2rem;
-  color:#555555;
+  color: #555555;
   background-color: transparent;
   border: none;
 }
 .redbutton {
-  letter-spacing: .08rem;
+  letter-spacing: 0.08rem;
   padding: 0.6rem 0.8rem;
   border: 0;
   margin: 0;
@@ -69,38 +71,38 @@ form input color: rgba(0,0,0,.05)" part of the explanation. Is there a typo? Or 
 .linkbutton {
   padding: 0.1rem 0 0.1rem 1rem;
   text-decoration: none;
-  margin: .4rem 0 .4rem 0;
+  margin: 0.4rem 0 0.4rem 0;
 }
 .buttonbox {
-    border: 1px solid black;
-    padding: 0.1rem 1rem;
+  border: 1px solid black;
+  padding: 0.1rem 1rem;
 }
 /* == SECTIONS == */
 /* ONE */
 #one {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 600px;
-    /* It's not needed, but I hate it whenever "overflow: hidden" happens to cut of vital information on my small mobile screen */
-    overflow: visible;
-    background-color: rgba(232,217,217,.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 600px;
+  /* It's not needed, but I hate it whenever "overflow: hidden" happens to cut of vital information on my small mobile screen */
+  overflow: visible;
+  background-color: rgba(232, 217, 217, 0.3);
 }
 h1 {
-    font-size: 6.4rem;
-    font-weight: 800;
-    margin:0;
+  font-size: 6.4rem;
+  font-weight: 800;
+  margin: 0;
 }
 #one article {
-    width: 600px;
-    text-align: center;
-    font-size: 1.4rem;
-    font-weight:500;
+  width: 600px;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 500;
 }
 
 #one a {
-  text-decoration:none;
+  text-decoration: none;
   font-size: 1.6rem;
   font-weight: 600;
   padding: 1.4rem 3rem;
@@ -109,11 +111,76 @@ h1 {
 
 #one .redbutton {
   background-color: #fb3e44;
-  box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+  box-shadow: 8px 8px 0 rgba(251, 59, 73, 0.2);
 }
-#one .whitebutton {
+.whitebutton {
   color: black;
-  background-color: white;;
+  background-color: white;
 }
 /* TWO */
-/* THRE */
+#two {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 600px;
+  overflow: visible;
+}
+#two img {
+  height: 200px;
+}
+h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  background-color: rgba(255, 204, 53, 0.4);
+  padding: 0 3rem;
+  transform: skew(9deg, 0deg);
+  font-style: italic;
+  margin-top: 4rem;
+  margin-bottom: 0;
+}
+#two article {
+  font-size: 1.2rem;
+  width: 800px;
+  text-align: center;
+}
+/* THREE */
+#three {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 600px;
+  overflow: visible;
+  margin: 0 4%;
+}
+.flexcontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.box {
+  width: 18%;
+}
+.box p {
+  font-size: 1.2rem;
+}
+#three img {
+  height: 1.5rem;
+}
+h3 {
+  color: #ed1c24;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.blackbutton {
+  text-decoration: none;
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding: 1.4rem 13rem;
+  margin: 1.2rem;
+  background-color: black;
+  box-shadow: 8px 8px 0 rgba(128, 83, 35, 0.2);
+}
