@@ -1,180 +1,208 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
-
 body {
-  font-family: 'Poppins';
+    font-family: 'Poppins';
 }
 
-header > div {
+header>div {
     padding: 0 25px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid lightgray;
-  }
-  
-  nav {
+}
+
+nav {
     width: 600px;
-  }
-  
-  nav ul {
+}
+
+nav ul {
     list-style: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-  
-  nav a {
+}
+
+nav a {
     text-decoration: none;
     color: black;
-  }
-  
-  .blackHeart {
+}
+
+.blackHeart {
     width: 20px;
     margin-right: 1rem;
-  }
-  
-  #search a {
-    text-decoration: none;
+}
+
+.search {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    height: 40px
+}
+
+.logo {
+    width: 50px;
+    height: 45%;
+    align-self: left;
+}
+
+header form input {
+    color: rgba(0, 0, 0, .05);
+    width: 1205px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, .05);
+    border-style: none;
+    border-width: 0px;
+    background-image: url("images/magnifying-glass.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-indent: 50px;
+}
+
+header form button {
+    background-color: #fb3e44;
+    color: white;
+    height: 40px;
+    border-style: none;
+    margin-left: 0px
+}
+
+.join-btn {
     color: black;
-  }
+    height: 33px;
+    width: 50px;
+    background-color: white;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    text-align: center;
+    text-decoration: none;
+}
 
-  form.search-form input[type=text] {
-    padding: 10px;
-    font-size: 17px;
-    border: 1px solid grey;
-    float: left;
-    width: 100%;
-    background: rgba(0,0,0,.05);
-  }
+.login-btn {
+    color: black;
+    height: 33px;
+    background-color: white;
+    border-style: none;
+    text-align: center;
+    text-decoration: none
+}
 
-  .logo{
-    width: 100px;
-    margin-right: 1rem; 
-  }
-  .magnifying-glass {
-    width: 20px;
-    margin-right: 1rem;
-  }
+#intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 600px;
+    background-color: rgba(232, 217, 217, .3);
+}
 
-    #intro{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        height: 600px;
-        background-color: rgba(232,217,217,.3);
-    }
+#intro h1 {
+    font-size: 5em;
+}
 
-    #intro h1{
-        font-size: 5em;
-    }
+#intro article {
+    text-align: center;
+    width: 29%;
+    margin: 10px auto;
+}
 
-    #intro article{
-        text-align: center;
-        width: 29%;
-        margin: 10px auto;
-    }
+#links {
+    padding: 100px;
+    width: 29%;
+    display: flex;
+    justify-content: space-between;
+}
 
-    #links{
-        padding: 100px;
-        width: 29%;
-        display: flex;
-        justify-content: space-between;
-        }
+#links a {
+    text-decoration: none;
+}
 
-    #links a{
-        text-decoration: none;
-    }
+#links .plans-btn {
+    color: white;
+}
 
-    #links .plans-btn{
-        color: white;
-    }
+.plans-btn {
+    background-color: #FB3B49;
+    color: white;
+    font-size: 2em;
+    letter-spacing: 0.5px;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 30px;
+    box-shadow: 8px 8px 0 rgba(251, 59, 73, .2);
+}
 
-    .plans-btn{
-        background-color:#FB3B49;
-        color: white;
-        font-size: 2em;
-        letter-spacing: 0.5px;
-        text-align: center;
-        text-decoration: none;
-        padding: 10px 30px;
-        box-shadow: 8px 8px 0 rgba(251,59,73,.2);
-    }
+.join-free-btn {
+    color: black;
+    letter-spacing: 0.5px;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 30px;
+}
 
-    .join-btn{
-        color: black;
-        letter-spacing: 0.5px;
-        text-align: center;
-        text-decoration: none;
-        padding: 10px 30px;
-    }
+#middle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 600px;
+}
 
-    #middle{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        height: 600px;
-    }
+.triangle-hexagon {
+    height: 200px;
+    margin: 20px;
+}
 
-    .triangle-hexagon{
-        height: 200px;
-        margin: 20px;
-    }
+#middle h2 {
+    background-color: rgba(255, 204, 53, .4);
+    transform: skew(9deg, 0deg);
+    font-style: italic;
+    width: 60%;
+    text-align: center;
+    font-size: 2em;
+}
 
-    #middle h2{
-        background-color: rgba(255,204,53,.4);
-        transform: skew(9deg,0deg);
-        font-style: italic;
-        width: 60%;
-        text-align: center;
-        font-size: 2em;
-    }
+#middle article {
+    text-align: center;
+    width: 55%;
+    margin: 10px auto;
+}
 
-    #middle article{
-        text-align: center;
-        width: 55%;
-        margin: 10px auto;
-    }
+#create {
+    margin-left: 55px;
+    width: 95%;
+}
 
-    #create{
-        margin-left: 55px;
-        width: 95%;
-    }
+#create>div {
+    display: flex;
+    justify-content: space-evenly;
+}
 
-    #create > div{
-        display: flex;
-        justify-content: space-evenly;
-    }
+#create>div>article {
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    width: 280px;
+}
 
-    #create > div > article {
-        display: flex;
-        justify-content: left;
-        flex-direction: column;
-        width: 280px;
-      }
+#create h3 {
+    color: #ED1C24;
+}
 
-      #create h3{
-          color: #ED1C24;
-      }
-    #create img{
-        width: 45px;
-    }
+#create img {
+    width: 45px;
+}
 
-    .create-btn{
-        background-color:black;
-        color: white;
-        font-size: 1.5em;
-        letter-spacing: 0.5px;
-        text-align: center;
-        text-decoration: none;
-        padding: 10px 30px;
-        box-shadow: 8px 8px 0 rgba(128,83,35,.2);
-        margin: 30px;
-    }
-
-
-
-
-
-
+.create-btn {
+    background-color: black;
+    color: white;
+    font-size: 1.5em;
+    letter-spacing: 0.5px;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 30px;
+    box-shadow: 8px 8px 0 rgba(128, 83, 35, .2);
+    margin-top: 90px;
+    margin-bottom: 50px;
+}
