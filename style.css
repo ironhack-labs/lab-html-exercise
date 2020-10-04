@@ -101,30 +101,35 @@ nav a {
 }
 
 #cover {
-    display: flex;
+    display:flex;
     flex-direction: column;
+    text-align: center;
     align-items: center;
-    height: 700px;
+    box-sizing: border-box;
     background-color: rgba(232,217,217,.3);
+    padding: 20px 20px 100px 20px;
+    width: 100%;
 }
 h1 {
     font-size: 7em;
     text-align: center;
     margin: 150px 0 50px 0;
+
 }
 
 #cover article {
     font-size: 1.4em;
-    width: 600px;
+    width: 35%;
     text-align: center;
-    margin-bottom: 100px;
+    margin-bottom: 60px;
 }
 
 .plans {
-    padding: 16px 50px 16px 50px;
+    padding: 20px 60px 20px 60px;
     text-decoration: none;
     color: white;
     background-color:#FB3B49 ;
+    font-size: 1.2em;
     margin: 50px;
     box-shadow: 8px 8px 0 rgba(251,59,73,.2);
 }
@@ -133,6 +138,8 @@ h1 {
     text-decoration: none;
     color: black;
     font-weight: 900;
+    font-size: 1.2em;
+    padding: 20px 60px 20px 60px;
 }
 
 #description {
@@ -141,6 +148,7 @@ h1 {
     align-items: center;
     height: 700px;
     padding-top: 80px;
+    margin-bottom: 50px
 }
 #description img{
     width: 300px;
@@ -151,14 +159,16 @@ h2 {
     font-size: 2.7em;
     background-color: rgba(255,204,53,.4);
     transform: skew(9deg,0deg);
-    height: 50px;
     font-style: italic;
-    margin-top: 60px;
+    width: 57%;
+    box-sizing: content-box;
+    margin-top: 100px;
     background-size: cover;
 }
 
 #description article{
-    width: 950px;
+    width: 50%;
+    box-sizing: content-box;
     text-align: center;
     font-size: 1.2em;
 }
@@ -174,35 +184,50 @@ h3 {
     display:flex;
     flex-direction: row;
     justify-content: space-evenly;
+    margin-bottom: ;
 }
 
+#features {
+    margin-bottom: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 #features p{
     font-size: 1.4em;
 }
 .content-box > div {
     display:flex;
     flex-direction: column;
-    width: 350px;
-    height: 500px;
+    width: 25%;
+    margin: 0 25px 0 25px;
     margin-bottom: 0;
 }
-
+ .content-box {
+     box-sizing: content-box;
+     margin-bottom: 60px;
+ }
 .content-box img {
     height: 50px;
     width: 50px;
 }
 
+.orglink a{
+    color:white;
+    text-decoration: none;
+    
+}
 .orglink{
     justify-content: center;
     text-align: center;
-    margin-bottom: 200px;
-}
-#features a{
-    font-size: 1.4em;;
-    padding: 25px 200px 25px 200px;
-    margin: 100px;
+    flex-direction: column;
+    font-size: 1.4em;
     text-decoration: none;
-    color: white;
     background-color: black;
-    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+    color:white;
+    height: 60px;
+    padding-top: 25px;
+    width: 35%;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2)
 }
+
