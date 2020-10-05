@@ -23,69 +23,77 @@
       </nav>
     </div>
   
-    <div>
-        <img class="logo" src="images/npm-logo.png" alt="npm logo">
-        <img class="mag-glass" src="images/magnifying-glass.png" alt="mag-glass">
-        <form class="searchBar" action="/register" method="post">
-          <input type="email" placeholder="Introduce tu email">
+    <div id="content">
+      <div class="box1">
+         <img class="logo" src="images/npm-logo.png" alt="npm logo">
+      </div>
+      <div class="box2">
+        <form class="searchBar" action="/register" method="post">      
+          <img class="mag-glass" src="images/magnifying-glass.png" alt="magnifying-glass">
+          <input type="text" placeholder="Search Packages" autocomplete="off">
+          <button type="submit"> Search </button>
         </form>
-          <div>
-            <a href="#" class="link-btn"> Search </a>
-            <a href="#" class="link-btn2"> Join Log In </a>
-          </div>
+      </div>
+      <div class="box1">
+        <a href="#" class="join"> Join</a>
+        <a href="#" class="login"> Log In </a>
+      </div>
     </div>
   </header>
 
 <!-- seccion 1 -->
-<section>
+<section id="section1">
   <heading> 
-    <h1 clas="build"> Build amazing things </h1>
+    <h1> Build amazing things </h1>
   </heading>
-  <article class="Essential"> Essential JavaScript development tools that help you go to market faster and build powerful applications using
-modern open source code. </article>
-  <div>
-    <link id="plans"> See plans </link>
-    <link id="join"> Join for free </link>
+  <div class="smallbox">
+    <article>Essential JavaScript development tools that help you go to market faster and build powerful applications using
+  modern open source code. </article>
+    <div>
+      <a id="plans"> See plans </a>
+      <a id="join"> Join for free </a>
+    </div>
   </div>
 </section>
 
 <!-- seccion 2 -->
-<section>
-  <img class="hexa">
-  <heading class="Bring"> Bring the best of open source to your company </heading>
-  <article class="tool"> npm is the tool used by
+<section class="section2">
+  <img src="images/triangle-hexagon.svg">
+  <heading><h1> Bring the best of open source to your company </h1></heading>
+  <div class="smallbox2">
+    <article> npm is the tool used by
 over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it.
 Create an Org and get more out of the tools your team already knows and loves. </article>
+  </div>
 </section>
 
-<!-- footer -->
-<div>
-  <h3 class="tit-footer"> Zero configuration 
-  </h3>
-  <article class="art-footer"> Create an org, add
-your team, and start collaborating. Nothing to configure, set up, or manage. 
-</article>
+<!-- seccion 3 -->
+<div class="seccion3">
+  <div class="minibox">
+    <img src="images/zero-configuration.svg">
+    <header> Zero configuration </header>
+    <article> Create an org, add
+  your team,<br>and start collaborating.<br>Nothing to configure, set up, or<br> manage. </article>
+  </div>
+  <div class="minibox">
+    <img src="images/team-management.svg">
+    <header> Team management </header> 
+    <article> Control who has access to<br>what modules within your<br>team namespace using<br>straightforward team<br>management capabilities. </article>
+  </div>
+  <div class="minibox">
+    <img src="images/familiar-features.svg">
+    <header> Familiar features </header>
+    <article> npm Orgs
+  has 100% parity with<br>all the public npm registry<br>features your developers<br>already use. </article>
+  </div>
+  <div class="minibox">
+    <img src="images/npm-audit.svg">
+    <header> npm audit </header>
+    <article> Enjoy the security
+  auditing<br>features built into the npm<br>client, a zero-friction way to<br>make open source software<br>safer. </article>
+  </div>
 </div>
-<div>
-  <h3 class="footer"> Team management 
-  </h3> 
-  <article class="art-footer"> Control who has access to
-what modules within your team namespace using straightforward team management capabilities. 
-</article>
-</div>
-<div>
-  <h3 class="footer"> Familiar features 
-  </h3>
-  <article class="art-footer"> npm Orgs
-has 100% parity with all the public npm registry features your developers already use. 
-</article>
-</div>
-<div>
-  <h3 class="footer"> npm audit 
-  </h3>
-  <article class="art-footer"> Enjoy the security
-auditing features built into the npm client, a zero-friction way to make open source software safer. 
-</article>
-</div>
-<button class="org"> Create an Org </button>
+<div class="create">
+    <button class="org"> Create an Org </button>
+  </div>
 </body>
