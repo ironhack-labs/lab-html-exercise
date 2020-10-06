@@ -7,7 +7,7 @@
     </head>
     <body>
         <header class="header">
-            <div >
+            <div class="upper-head" >
                 <div >
                   <img class="black-heart" src="./images/black-heart.png" alt="black-heart">
                   <span>Nifty Penguin Magic</span>
@@ -24,15 +24,18 @@
 
                 </nav>
             </div>
-            <div class="lower-head">
-               <img src="./images/npm-logo.png" alt="npm-logo">
-               <img src="./images/magnifying-glass.png" alt="magnifying-glass">
+            <div class="lower-head" >
+               <img class="npm-logo" src="./images/npm-logo.png" alt="npm-logo">
                <form action="">
-                   <input type="text" placeholder="Search packages" >
+                   <label for="search"> <img src="./images/magnifying-glass.png" alt="magnifying-glass"></label>
+                   <input name="search" type="text" placeholder="Search packages" >
                    <button type="submit">Search</button>
                </form>
-               <a href="#">Join</a>
-               <a href="#">Log In</a>
+               <div class="sign-in">
+                <a class="join-btn" href="#">Join</a>
+                <a class="Log-in-btn" href="#">Log In</a>
+               </div>
+ 
             </div>
         </header>
         <section id="hero">
