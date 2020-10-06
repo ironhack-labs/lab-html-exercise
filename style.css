@@ -48,7 +48,7 @@ form > div {
 }
 
 .search-bar {
-    width: 100%;
+    width: 85%;
     padding: 5px;
 }
 
@@ -57,13 +57,16 @@ form > div {
     align-items: center;
     width: 20px;
     height: 20px;
+    padding: 2px;
+    border: none;
+    background-color: rgba(0, 0, 0, .05);
 }
 
 .search-bar input {
     width: 100%;
     align-items: center;
     justify-content: space-between;
-    border: 1px solid white;
+    border: none;
     background-color: rgba(0, 0, 0, .05);
     padding: 4px;
 }
@@ -74,6 +77,8 @@ form > div {
     background-color: #fb3e44;
     display: flex;
     float: left;
+    height: 100%;
+    padding: 2px;
 }
 
 #join {
@@ -82,7 +87,7 @@ form > div {
     display: flex;
     float: left;
     text-decoration: none;
-    padding: 2px;
+    padding: 1px 6px;
     font-weight: lighter;
 }
 
@@ -105,6 +110,18 @@ form > div {
     background-color: rgba(232, 217, 217, 3);
 }
 
+.intro-class {
+    max-width: 40%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+.btn-intro{
+    display: flex;
+    justify-content: space-around;
+}
+
 h1 {
     font-size: 90px;
     font-weight: bolder;
@@ -113,17 +130,9 @@ h1 {
 
 .text {
     font-size: 1em;
-    font-weight: 100;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    align-content: center;
-    margin: 20px;
 }
 
 .link-btn {
-    display: flex;
     align-items: center;
     justify-content: center;
 }
@@ -162,6 +171,13 @@ h1 {
     width: 250px;
 }
 
+.description-class {
+    max-width: 53%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
 h2 {
     font-size: 35px;
     font-weight: bolder;
@@ -184,7 +200,13 @@ h2 {
     text-align: left;
     margin: 50px 5% 0 5%;
     padding: 10px;
+    display: flex;
+}
+
+.service-box article {
     width: 20%;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .service-box img {
@@ -206,6 +228,13 @@ h2 {
     text-decoration: none;
     align-items: center;
     flex-wrap: wrap;
-    padding: 4px 40px;
+    padding: 10px 100px;
     box-shadow: 8px 8px 0 rgba(128,83,35,.2)
+}
+
+.org-btn {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
 }
