@@ -4,47 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>npm_website</title>
+    <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
    <header>
-       <div class="header">
-          <h3><img src="file:///home/javier/Escritorio/ironhack/Ejercicios/lab-html-exercise/images/black-heart.png" alt="dark_heart"</img>Neverending Pun machine</h3>
-       </div>
-    <nav>
-        <div class="nav-bar">
-            <ul>
-                <li><a href="#Enterprise">npm Enterprise</a></li>
-                <li><a href="#Products">Products</a></li>
-                <li><a href="#Solutions">Solutions</a></li>
-                <li><a href="#Resources">Resources</a></li>
-                <li><a href="#Docs">Docs</a></li>
-                <li><a href="#Support">Support</a></li>
-            </ul>
+
+    <!-- Parte superior de la barra de la web-->
+
+    <div>
+        <div>
+          <img class="blackHeart" src="file:///home/javier/Escritorio/ironhack/Ejercicios/lab-html-exercise/images/black-heart.png" alt="black-heart" />
+          <span> Nifty Penguin Magic </span>
         </div>
-    </nav>
+        <nav>
+          <ul>
+            <li><a href="#"> npm Enterprise </a></li>
+            <li><a href="#"> Products </a></li>
+            <li><a href="#"> Solutions </a></li>
+            <li><a href="#"> Resources </a></li>
+            <li><a href="#"> Docs </a></li>
+            <li><a href="#"> Support </a></li>
+          </ul>
+        </nav>
+      </div>
+
+    <!-- Aquí empieza la barra de búsqueda y login-->
+
     <div class="search-bar">
-        <img src="file:///home/javier/Escritorio/ironhack/Ejercicios/lab-html-exercise/images/magnifying-glass.png" alt="magnifying_glass">
-        <form action="search" action="post">
-            <input type="search" placeholder="Search packages">
+        <img class="logo" src="file:///home/javier/Escritorio/ironhack/Ejercicios/lab-html-exercise/images/npm-logo.png" alt="logo-npm">
+        <img class="glass" src="file:///home/javier/Escritorio/ironhack/Ejercicios/lab-html-exercise/images/magnifying-glass.png" alt="magnifying_glass"> 
+        <form action="search" action="post"> 
+        <input type="text" class="buscar-texto" placeholder="    Search packages ">
         </form>
+        <button type="submit" class="button-search">Search</button>
+        <div class="acceso">
+        <a href="#Join" class="join-button">Join</a>
+        <a href="Login" class="login-button">Log In</a>
+        </div>
     </div>
-    <div class=button-search">
-        <button type="submit">Search</button>
-    </div>
-    <div class="login">
-        <button type="submit">Join</button>
-        <button type="submit">Log In</button>
     </div>
     <form
     </header>
+
+    <!-- Primera sección de la web (introducción)-->
+
 <section>
-    <div class="Intro">
+    <div class="intro">
     <h1>Build amazing things</h1>
-    <h3>Essential JavaScript development tools that help you go to market faster and build powerful applications using modern open source code</h3>
-        <a href="#Plans">See Plans</a>
-        <a href="#Join">Join Free</a>
+    <text class="parrafo">
+    <p>Essential JavaScript development tools that help you go to market faster and build powerful applications using modern open source code</p>
+    </text>
+        <div class="botones-intro">
+                <a href="#Plans" class="button-plans">See Plans</a>
+                 <a href="#Join" class="button-join">Join Free</a>
+            </div>
     </div>
+    </div>
+    </section>
 </section>
+
+    <!-- Segunda sección de la web (descripción)-->
+
 <section>
     <div class="main-part">
         <img src="file:///home/javier/Escritorio/ironhack/Ejercicios/lab-html-exercise/images/triangle-hexagon.svg" alt="hexagon"</img>
@@ -52,6 +72,9 @@
             <p>npm is the tool used by over 11.000.000 JavaScript developers around the world. Your developers already use it. Your company depends on it. Create and Org and get more out the tools your team already knows and loves.</p>
     </div>
 </section>
+
+    <!-- Tercera sección de la web (categorías)-->
+
 <section>
     <div class="services-box">
         <article>
