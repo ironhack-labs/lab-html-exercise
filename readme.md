@@ -6,7 +6,7 @@
 
 In this exercise, the goal is to apply as many as possible of the concepts you've just learned:
 
-- when and how to use different HTML tags,
+- when and how to use different HTML tags - you will learn about this a lot,
 - how to structure HTML page and add the content to it using _block and inline elements_,
 - how to use flexbox to position elements on the page and
 - how to style the page.
@@ -141,10 +141,10 @@ Refresh the page in Chrome, and if your _style.css_ is linked properly, the page
 Before we move forward, add at the very top of your _style.css_ file the following lines:
 
 ```css
-@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url("https://fonts.googleapis.com/css?family=Poppins");
 
 body {
-  font-family: 'Poppins';
+  font-family: "Poppins";
 }
 ```
 
