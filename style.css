@@ -36,9 +36,46 @@ header > div {
       color: white;
       border: 0;
   }
-  .mag-glass {
-      width: 30px;
+  .second-row {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      text-align: center;
   }
+  .search-bar {
+    width: 70%;  
+  }
+  .search-bar input {
+      background-color: rgba(0,0,0,.05);
+      border: 0;
+      width: 70%;
+  }
+  .mag-glass {
+      width: 10px;
+      background-color: rgba(0,0,0,.05);
+      border: 1px rgba(0,0,0,.05) solid;
+      justify-content: center;
+      padding: 2px;
+  }
+  .registration {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+  }
+  #join {
+      text-decoration: none;
+      color: black;
+      border: 1px solid black;
+      margin: 20px;
+      padding: 1px 15px;
+  }
+#log-in {
+    text-decoration: none;
+      color: black;
+      margin: 20px;
+      padding: 1px 15px;
+}
   #intro {
       display: flex;
       flex-direction: column;
@@ -97,17 +134,26 @@ h1 {
 #detail {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    align-content: center;
 }
 #detail h3 {
     color:#ED1C24;
 }
-#create {
+.cta {
     display: flex;
     justify-content: center;
     background-color: black;
     box-shadow: 8px 0 rgba(128,83,35,.2);
     color: white;
 }
+#create {
+    width: 200px;
+    height: 25px;
+}            
+body .cta {
+    display: flex;
+    justify-content: center;
+}
+
+
