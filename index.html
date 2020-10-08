@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>npm Website</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
     <header>
@@ -24,20 +25,22 @@
             </ul>
           </nav>
         </div>
+        <div class="form-login">
         <div>
             <img class="logo" src="./images/npm-logo.png" alt="logo" />
         </div>
         <div>
-            <form action="">
-            <img class="search-icon" src="./images/magnifying-glass.png" alt="search" />
-            <input type="search"  placeholder="Search for packages" className="new-city-search" onChange={handleChange} />
+            <form action="/register" method="get" >
+            <input type="search" placeholder="Search for packages" class="search-form" />
             <button type="submit" class="search-button">Search</button>
             </form> 
+            
           </div>
-            <div>
-            <a href="#" target="_blank"> Join </a>
-            <a href="#" target="_blank"> Sing in </a>
+            <div class="user-sing">
+            <a href="#" target="_blank" class="join"> Join </a>
+            <a href="#" target="_blank" class="sing-in"> Sing in </a>
           </div>
+        </div>
         </header>
 <section id="first-section">
   <h1>
