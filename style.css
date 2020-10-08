@@ -16,19 +16,36 @@ body {
     width: 600px;
 }
   
-.nav ul {
+.nav-ul {
     list-style: none;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
+    flex-direction: row;     
 }
   
-.nav a {
+.nav-a {
     text-decoration: none;
     color: black;
+}
+
+.nav-ul li {
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    
 }
   
 .blackHeart {
     width: 20px;
     margin-right: 1rem;
   }
+
+.magnifyingGlass {
+    width: 20px;
+}
+
+.button {
+    background-color: #fb3e44;
+    color: white;
+}

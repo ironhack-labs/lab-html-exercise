@@ -10,9 +10,9 @@
 <header>
     <div>
         <div>
-            <img class="blackHeart" src="images/black-heart.png" alt="black black-heart"/>NPM
+            <img class="blackHeart" src="images/black-heart.png" alt="black black-heart"/>
    <span>Nifty Penguin Magic</span>
-        <ul>
+        <ul class="nav-ul">
             <li><a href="#">npm Enterprise</a></li>
             <li><a href="#">Products</a></li>
             <li><a href="#">Solutions</a></li>
@@ -21,14 +21,16 @@
             <li><a href="#">Support</a></li>
         </ul>
     </div>
-    <nav>
-        <img class="magnifyingGlass" src="images/magnifying-glass.png"/>
-        <form action="/search" method="post"></form> <label for="Search packages"></label> <input type="text" name="search" id="search" placeholder="Search packages"><br>Search 
-        <a href="#">Join</a> <a href="#">Log In</a>
-        
+    <nav class="nav">
+        <p>NPM</p> <img class="magnifyingGlass" src="images/magnifying-glass.png"/>
+       
+        <label for="Search packages" ></label>
+        <input type="text" name="search" id="search" placeholder="Search packages" >
+        <form action="search" method="post"></form>
+        <button type="submit" class="button">Search</button>
          
         
-
+        <a href="#">Join</a> <a href="#">Log In</a>                 
     </nav> 
         </div> 
 
@@ -45,7 +47,9 @@ modern open source code.</p>
 </article>
 
 <!-- Div -->
-<div>See plans Join for free</div>  
+<div>
+    <a herf="#">See plans</a> <a href="#">Join for free</a> 
+</div>  
  
  <!-- Section 2 -->
  <h2>Bring the best of open source to your company</h2>
