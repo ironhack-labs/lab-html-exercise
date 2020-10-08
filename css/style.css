@@ -1,0 +1,222 @@
+/* General */
+
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+:root {
+  --form-label-color: rgba(0,0,0,0.5);
+  --form-input-color: rgba(0,0,0,0.5);
+  --form-button-bg-color: #fb3e44;
+  --form-button-ltr-color: white;
+  --section1-bg-color: rgba(232,217,217,0.3);
+  --see-plans-bg-btn-color: #fb3b49;
+  --see-plans-bs-btn-color: 8px 8px 0 rgba(251,59,73,0.2);
+}
+
+body {
+  font-family: 'Poppins';
+}
+
+/* Header */
+
+header > div {
+  padding: 0 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+header >div:first-child {
+  border-bottom: 1px solid lightgray;
+}
+header > div span {
+  font-weight: bold;
+}
+.main-navigator {
+  width: 600px;
+}
+.main-navigator ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-navigator a {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+.blackHeart {
+  width: 20px;
+  margin-right: 1rem;
+}
+.search-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+  align-items: center;
+  width:100vw;
+  margin: 0.5rem 2rem;
+}
+.search-div img {
+  height: 30px;
+  margin: 0 1.2rem;
+}
+.search-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+  align-items: stretch;
+}
+.search-bar .lupa {
+  background-color: gainsboro;
+  color: var(--form-label-color);
+  height: 15px;
+  width: 15px;
+  padding: 1rem;
+  margin: 0;
+}
+.search-bar input {
+  background-color: gainsboro;
+  color: var(--form-input-color);
+  padding: 1rem;
+  border: none;
+  width:67vw;
+}
+.search-bar button {
+  background-color: var(--form-button-bg-color);
+  color: var(--form-button-ltr-color);
+  border: 1px solid lightgray;
+  box-shadow: none;
+  padding: 0.9rem 1.2rem;
+}
+#join-btn {
+  text-decoration: none;
+  color: cadetblue;
+  border: 1px solid lightgray;
+  padding: 0.3rem 1rem;
+  margin: 0 2vw;
+}
+#login-btn {
+  text-decoration: none;
+  color: cadetblue;
+  margin: 0 1vw 0 0;
+}
+
+/* Section 1 */
+
+#section-one {
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+align-items: center;
+height: 85vh;
+background-color: var(--section1-bg-color);
+margin: 0 0 2rem 0;
+}
+#heading-section1 {
+  width: 60vw;
+  text-align: center;
+  font-weight: 700;
+  font-size: 6.5rem;
+}
+#article-section1 {
+  width: 40vw;
+  text-align: center;
+  font-size: 1.8rem;
+}
+#div-section1 {
+  display:flex;
+  justify-content: space-evenly;
+  width: 40vw;
+}
+#div-section1 a:first-child {
+  background-color: var(--see-plans-bg-btn-color);
+  box-shadow: var(--see-plans-bs-btn-color);
+  font-weight: 300;
+  text-decoration: none;
+  color: var(--form-button-ltr-color);
+  padding: 1.2rem 6rem;
+}
+#div-section1 a:last-child {
+  font-weight: 900;
+  text-decoration: none;
+  text-shadow: 0 0 1rem 0 black;
+  color: black;
+  background-color: white;
+  padding: 1.2rem 6rem;
+}
+
+/* Section 2 */
+
+#section-two {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--section1-bg-color);
+  margin: 2rem 0;
+  }
+  #section-two img {
+    height: 33vh;
+  }
+  #heading-section2 {
+    width: 55vw;
+    text-align: center;
+    background-color: rgba(255,204,53,0.4);
+    font-weight: 700;
+    font-size: 2.5rem;
+    font-style: italic;
+    transform: skew(9deg,0deg);
+  }
+  #article-section2 {
+    width: 40vw;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  /* Section 3 */
+
+#section-three {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--section1-bg-color);
+  margin: 2rem 0;
+  }
+ #container-divs-s3 {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   margin:5rem;
+ }
+ #container-divs-s3 div{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 2rem;
+ } 
+ #container-divs-s3 div img {
+   height: 5vh;
+   margin: 1rem 0;
+ }
+ #container-divs-s3 div .heading{
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: red;
+  margin: 1rem 0
+}
+ #container-divs-s3 div p {
+   text-align: left;
+   margin: 1rem 0;
+ }
+ #last-btn {
+   margin: 5rem;
+   padding: 1.2rem 9.2rem;
+   text-decoration: none;
+   background-color: black;
+   color: white;
+   box-shadow: 8px 8px 0 rgba(128,83,35,0.2);
+ }
