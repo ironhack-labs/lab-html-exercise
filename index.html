@@ -23,17 +23,20 @@
             </ul>
           </nav>
         </div>
-         
-        <img src="https://raw.githubusercontent.com/ElCapChaser/lab-html-exercise/master/images/npm-logo.png" alt="company logo">
+         <div class="searchArea">
+        <img src="https://raw.githubusercontent.com/ElCapChaser/lab-html-exercise/master/images/npm-logo.png" alt="company logo" class='companyLogo'>
       
-            <img src="https://raw.githubusercontent.com/ElCapChaser/lab-html-exercise/master/images/magnifying-glass.png" alt="search logo">
-              <form action="/some-url" method="get" class='form'>
+            <img src="https://raw.githubusercontent.com/ElCapChaser/lab-html-exercise/master/images/magnifying-glass.png" alt="search logo" class="searchLogo">
+              <form action="/some-url" method="get" class='form searchBar' id='searchBar'>
                <label for="search"></label>
                <input type="text" id="search" name="search" placeholder="Search packages">
                <button type="submit"> Search </button>
             </form>
-              <a href="#"> Join </a>
-              <a href="#"> Login </a>   
+           <div class='joinLinks'> 
+             <a href="#"> Join </a> </div>
+           <div class='joinLinks'> <a href="#"> Login </a> </div>
+           </div>
+        </div>
          </header>
         
         <section id="section-plans"> 
@@ -75,8 +78,12 @@
             <img src="https://raw.githubusercontent.com/ElCapChaser/lab-html-exercise/master/images/npm-audit.svg" alt="npm audit image" class="section-details">
             <h3>npm audit</h3>
             <p>Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer.</p>
-            <button type="button">Create an org</button>
           </div>
+            
         </section>
+        <section class='button-create'>
+          <button type="button" id="create-button">Create an org</button> 
+      </section>
+      
 </body>
 </html>
