@@ -2,7 +2,6 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  margin: 0;
 }
 
 header > div {
@@ -57,76 +56,176 @@ nav a {
 }
 
 .logo {
-    width: 70px;
+    width: 80px;
+    padding: 15px;
+    margin: 100px,auto;
 }
 
-.btn {
-    background-color: transparent;
-    border: none;
-    padding: 10px 30px;
-}
-
-.btn-red {
+.btn-search {
     background-color: #fb3e44;
     color: #fff;
+    margin-left: 0;
+    margin-top:20px;
+    margin-bottom:20px ;
+    padding: 10px;
+    margin-right: 10px;
+    border-color: #fb3e44;
+    height: 50px;
+    width: 100px;
+    font-size: medium;
 }
 
-.btn-white { 
-    border: 1px solid #000;
-    background-color: #fff;
+.btn-join  { 
+    text-decoration: none;
+    border: black 0.5px solid;
+    color:black;
+    font-weight: bold;
+    font-size:1em;
+    margin:10px;
+    padding-top:10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.btn-login {
+    border: none;
+    text-decoration: none;
     color: #000;
+    font-weight: bold;
+    width: 70px;
+    margin-left: 15px;
+
 }
 
-section {
+#section-1 {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
     height: 600px;
+    background-color: rgba(232,217,217,.3);
+    padding-bottom: 90px;
 }
 
-h1,h2,h3 {
+h1, h2, h4 {
     text-align: center;
 }
 
 h1 {
     font-size: 5rem;
+    font-weight: bold;
+}
+
+#main-p {
+    display:flex;
+    font-size: 1.2em;
+    text-align: center;
+    margin-right: 200px;
+    margin-left: 200px;
+    align-items: stretch;
+    align-content: center;
+    width: 500px;
+}
+
+.btns-section-1 {
+    width: 600px;
+    display:flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: stretch;
+    align-content: center;
+    margin-top: 40px;
+}
+
+.btn-plans {
+    text-decoration: none;
+    background-color: #FB3B49;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+    color: #fff;
+    border-color: #fb3e44;
+    height: 50px;
+    width: 200px;
+    font-size: medium;
+    line-height: 40px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.btn-join-free {
+    text-decoration: none;
+    color: #000;
+    background-color: #fff;
+    border-color: #fff;
+    height: 50px;
+    width: 200px;
+    font-size: medium;
+    line-height: 40px;
+    text-align: center;
+}
+
+#section-2 {
+    padding-top: 50px;
+    height: 500px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.triangle-hexagon {
+    width: 250px;
+    margin:30px;
+    height: 250px;
+    width: 500px;
 }
 
 h2 {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     background-color: rgba(255,204,53,.4);
     transform: skew(9deg,0deg);
     font-style: italic;
 }
 
-h3 {
+#npm-p {
+    font-size: 1rem;
+        display:flex;
+    text-align: center;
+    margin-right: 200px;
+    margin-left: 200px;
+    align-items: stretch;
+    align-content: center;
+    width: 500px;
+}
+
+.services {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+    align-content: stretch;
+}
+
+.container {
+        padding:50px;
+    width: 200px;
+}
+
+.icon {
+    width: 40px;
+}
+
+h4 {
     color: #ED1C24;
+    line-height: 1em;
+    font-size: 0.8em;
 }
 
-#section-1 {
-    background-color: rgba(232,217,217,.3);
-}
-
-.likn-btn {
-    text-decoration: none;
-    color: #000;
-    padding: 20px 45px;
-}
-
-.likn-btn-red {
-    background-color: #FB3B49;
-    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
-    color: #fff;
-}
-
-.triangle-hexagon {
-    width: 250px;
-}
-
-.zero-configuration {
-    width: 30px;
+.txt {
+    font-size: 0.8rem;
 }
 
 .section-3 div {
@@ -135,8 +234,17 @@ h3 {
 
 .btn-black {
     width: 20%;
-    padding: 20px 70px;
     background-color: #000;
     box-shadow: 8px 8px 0 rgba(128,83,35,.2);
     color: #fff;
+    border: none;
+    margin: auto;
+    display:flex;
+    width: 400px;
+    height: 60px;
+    justify-content: center;
+	align-items: center;
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 1em;
 } 
