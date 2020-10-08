@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>NPM Clone<title>
 </head>
 <body>
     <header>
@@ -23,66 +24,59 @@
                 </ul>
             </nav>
         </div>
-    
         <div>
-            <img class="npm-log" src="images/npm-logo.png" alt="npm logo" />
-            <img class="magnifying-glass" src="images/magnifying-glass.png" alt="magnifying-glass" />
-            <form class="form-inline" id="search-form">
-                <div class="form-group">
-                    <input type="search" class="search-form" id="input" placeholder="Search packages"
-                        autofocus="off" size="14" autocomplete="off" />
-                    <button type="submit">Search</button>
-                </div>
-            </form>
-            <a class="link-btn" href="#"> Join </a>
-            <a class="link-btn" href="#"> Log in </a>
+            <img class="npm-logo" src="images/npm-logo.png" alt="npm logo" />
+                <form class="search-bar" action="#" method="POST">
+                    <label for="search">
+                        <img class="glass" src="images/magnifying-glass.png" alt="magnifying glass">
+                    </label>
+                    <input id="search" type="text" placeholder="search packages">
+                    <button class="btn btn-red">Search</button>
+                </form>
+                        <a class="link-btn white" href="#"> Join </a><a class="link-btn btn white" href="#"> Log in </a>
         </div>
     </header>
 
-    //section1
     <section id="section-1">
         <h1> Build amazing things </h1>
         <article> Essential JavaScript development tools that help you go to market faster and build powerful applications using
         modern open source code. </article>
         <div>
-        <a class="link-btn" href="#"> See plans </a>  
-        <a class="link-btn" href="#"> Join for free </a>
+        <a class="link-btn likn-btn-red" href="#">See plans</a> <a class="likn-btn" href="#">Join for free</a>
         </div>
     </section>
 
-    //section2
     <section id="section-2">
         <img class="triangle-hexagon" src="images/triangle-hexagon.svg" alt="triangle hexagon logo" />
-        <h3>
+        <h2>
             Bring the best of open source to your company
-        </h3>
+        </h2>
         <article>
-            npm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it.
-            Create an Org and get more out of the tools your team already knows and loves.
+           <p> npm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it.
+            Create an Org and get more out of the tools your team already knows and loves.</p>
         </article>
     </section>
 
-    //section3
     <section id="section-3">
         <div>
-            <article class="container">
+            <div class="container">
                 <img class="zero-configuration" src="images/zero-configuration.svg" alt="zero configuration icon" />
                 <h3> Zero configuration </h3>
                 <p class="text"> Create an org, add your team, and start collaborating. Nothing to configure, set up, or manage. </p>
-            </article>
+            </div>
             
-            <article class="container">
+            <div class="container">
                 <img class="team-management" src="images/team-management.svg" alt="team management icon" />
                 <h3> Team management </h3>
                 <p class="text"> Control who has access to what modules within your team namespace using straightforward team management capabilities. </p>
-            </article>
+            </div>
             
-            <article class="container">
+            <div class="container">
                 <img class="familiar-features" src="images/familiar-features.svg" alt="familiar features icon" />
                 <h3> Familiar features </h3>
                 <p class="text"> npm Orgs has 100% parity with all the public npm registry features your developers already use. </p>
                 <a class="link-btn" href="#"> Register </a>
-            </article>
+            </div>
 
             <article class="container">
                 <img class="npm-audit" src="images/npm-audit.svg" alt="npm audit icon" />
@@ -91,7 +85,8 @@
                 </p>
             </article>
         </div>
-        <a class="link-btn" href="#"> Create an Org </a>
+        <a class="link-btn black" href="#"> Create an Org </a>
+        <button class="btn-black">Create on Org</button>
     </section>
 </body>
 </html>
