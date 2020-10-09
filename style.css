@@ -24,7 +24,7 @@ h3 {
 
 /*----Header1----*/
 
-header > div {
+header .header {
     padding: 0 25px;
     display: flex;
     justify-content: space-between;
@@ -54,30 +54,38 @@ header > div {
   }
 
 /*----Header2----*/
+header .npm-bar {
+  padding: 15px 25px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+}
 
   .npm-logo {
     width: 70px;
-    margin-right: 1rem;
   }
 
+.search-bar {
+  display: flex;
+  margin-left: 3%;
+}
+
+/*Search bar*/
+  .search-bar input {
+    background-color: rgba(0,0,0,.05);
+    border: 0;
+    padding: 10px 10px 10px 40px;
+    width: 800px;
+}
   .glass {
     width: 20px;
-    margin-right: 1rem;
-    padding: 0;
+    margin-left: 10px;
+    margin-top: 7px;
+    position: absolute;
   }
 
-  .npm-bar {
-      padding: 15px;
-  }
-
-  .search-packages {
-      background-color: rgba(0,0,0,.05);
-      border: 0;
-      padding: 10px;
-      width: 800px;
-      margin-right: 5rem;
-  }
-
+  /*Button "Search"*/
   .search-bar button {
     background-color: #fb3e44;
     color: white;
@@ -85,22 +93,30 @@ header > div {
     padding: 10px;
 }
 
-.npm-bar a {
-    border: 1px solid grey;
-    color: black;
-    padding: 10px;
-    text-decoration: none;
+/*Buttons "Join" and "Log in"*/
+
+.buttons-log {
+display: flex;
+justify-content: flex-end;
 }
 
+.npm-bar a {
+  text-decoration: none;
+  color: black;
+  border: 1px solid grey;
+  padding: 10px 20px 10px 20px;
+}
 
 /*----Section1----*/
 
 .introduction-background{
     background-color:rgba(232,217,217,.3);
     height: 600px;
-    border: 2px solid blue;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
-    /*-----border to indicate the limits of the section-----*/
 
 
 #introduction {
@@ -108,81 +124,103 @@ header > div {
     margin: 0 auto;
 }
 
+#introduction h1 {
+  text-align: center;
+  line-height: 2em;
+  display: flex;
+  justify-content: center;
+}
+
 #introduction article {
     text-align: center;
-    width: 42%;
-    margin: 10px auto;
     line-height: 2em;
+    display: flex;
+    justify-content: center;
+
 }
 
 .introduction-background > div {
     margin: 0 auto;
     padding: 25px 0px;
-    text-align: center;
+    display: flex;
 }
 
 .introduction-background > div > a {
     text-decoration: none;
 }
 
-#see-plans .plans {
+.plans a {
+  text-decoration: none;
+  color: black;
+}
+
+.plans button{
     color: white;
     background-color: #FB3B49;
     box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+    padding: 15px 50px;
+    border: none;
 }
 
 /*----Section2----*/
 
 .description-background {
   height: 600px;
-  border: 2px solid blue;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex: column;
 }
-    /*-----border to indicate the limits of the section-----*/
 
-.description-background > h2 {
-  background-color: rgba(255,204,53,.4);
-  font-style: "italic";
-  margin: auto 300px;
-  padding: 8px;
-  transform: skew(9deg,0deg);
+.description-background {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
+
+.description-background > h2{
+  background-color: rgba(255,204,53,.4);
+  font-style: "italic"; 
+  transform: skew(9deg,0deg);
+  padding: 8px;
+}
+
 
 #description article {
   text-align: center;
-  width: 800px;
-  margin: 10px auto;
   line-height: 2em;
-  justify-content: center;
+  display: flex;
 }
 
 .triangle-hexagon {
   width: 200px;
-  justify-content: center;
-  margin: 0 460px 50px 540px;;
+  margin-bottom: 60px;
 }
 
 /*----Section3----*/
 
 .container {
-  width: 1000px;
-  margin: 0 auto;
-  padding: 75px 0px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 #services > div {
   display:flex;
   justify-content: space-between;
-  flex-direction: row;
-  align-content: flex-start;
+  margin: 10px 20px;
+  align-items: baseline;
 }
 
 .steps {
   text-align: left;
-  margin: 40px 0 0 0;
   padding: 20px;
-  width: 40%;
+}
+
+.steps p{
+  line-height: 1.5em;
 }
 
 .steps img {
@@ -193,12 +231,9 @@ header > div {
   background-color: black;
   box-shadow: 8px 8px 0 rgba(128,83,35,.2);
   padding: 20px 60px;
-  margin: 15px 350px 0px;
-  text-align: center;
 }
 
 .create-org a {
   text-decoration: none;
   color: white;
-  text-align: center;
 }
