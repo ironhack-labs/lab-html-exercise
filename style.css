@@ -1,264 +1,199 @@
 
-  @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:700|Roboto:100,300,700');
+ @import url('https://fonts.googleapis.com/css?family=Poppins');
 
-  html, body {
-    margin: 0;
-    padding: 0;
+ body {
+   font-family: 'Poppins';
+ }
+ 
+ header > div {
+   padding: 0 25px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   border-bottom: 1px solid lightgray;
+ }
+ 
+ nav {
+   width: 600px;
+ }
+ 
+ nav ul {
+   list-style: none;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+ }
+ 
+ nav a {
+   text-decoration: none;
+   color: black;
+ }
+ 
+ .blackHeart {
+   width: 20px;
+   margin-right: 20px;
+ }
+ 
+ .logo {
+    width: 50px;
+    margin-right: 1rem;
   }
-  
-  body {
-    font-size: 10px;
-    font-family: "Roboto";
-    line-height: 3.5em;
-    font-weight: 300;
+ 
+   .magnifying-glass {
+    width: 15px;
+    margin-right: 0rem;
   }
-  
-    
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-family:"Roboto Condensed";
-  }
-  
-  h1{
-    font-size: 9em;
-    text-align: center;
-    text-transform: uppercase;
-  }
-  h2{
-    font-size: 5em;
-    text-align: center;
-    text-transform: uppercase;
-    line-height: 4em;
+ 
+ #search {
+    background-color: #fb3e44;
+    border: none;
+    padding: 13px;
+    margin-right: 40px;
     color: white;
-    text-shadow: #020819 8px -20px 9px ;
-  }
-  h3{
-    font-size: 4.2em;
-    text-align: center;
-    line-height: 1em;
-  }
-  h4{
-    font-size: 1.5em;
-    line-height: 0.4px;
-    line-height: 1em;
-    margin: 15px;
-  }
-  h5{
-    font-size: 1.2em;
-    line-height: 1em;
-    margin-top:0px;
-    margin-bottom:0px;
-  }
-  
-  .nav-bar {
-    background-color:rgba(25, 33, 41,1);
-    padding: 14px 14px;
-   
-  }
-  .nav-bar a {
-    color: white;
-    text-decoration: none;
-    font-size: 2em;
-  }
-  .nav-bar-ul{
-    width: 1200px;
-    margin: 0 auto;
-    display:flex;
-    justify-content: space-evenly;
-  }
-  .nav-bar-ul li {
-    list-style-type: none;
-    text-align:center;
-  }
-  .header{
-    background-image: url('https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/ironhack-skydive-background.jpg');
-    background-position: 0 0;
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
-    height: 650px;
-    padding:50px 0;
-    }
-  
-  .quote {
-    font-size: 2.5em;
-    position: absolute;
-    left: 10%;
-    bottom: 100px;
-  }
-  .container{
-    width: 1200px;
-    margin: 0 auto;
-    padding: 75px 0;
-  }
-  .dark-background{
-    background-color:rgba(25, 33, 41,1);
-    color:white;
-    
-  }
-  .text {
-    font-size: 2em;
-    font-weight: 100;
-    text-align:center;
-    margin:20px 0px;
-  }
-  .link-btn {
-    background-color: blue;
-    color:white;
-    font-family: "Roboto Condensed";
-    font-size: 2em;
-    letter-spacing: 0.5px;
-    text-align: center;
-    text-decoration: none;
-    padding:10px 30px;
-  }
-  .service-box{
-    font-size: 1.9em;
-    text-align: center;
-    width: 1200px;
-    margin: 0 auto;
-    padding: 75px 0;
-    border: 2px solid #eee;
-    border-radius: 20px;
-    box-sizing: border-box;
-    box-shadow: 2px 2px 10px 0 #eee;  
-    Margin: 50px 5% 0 5%;
-    padding: 20px;
-    width: 40%;
-  }
-  .service-box img {
-     width:125px;
-  }
-  
-  #team .section-text {
-    font-size:1.9em;
-    text-align: center;
-    
-  }
-   
-  #team .member-name {
-     font-size:1.5em;
-    font-weight: 700;
-  }
-  #team > div{
+    font-size: 13px;
+ }     
+ #form {
+    background-color: rgba(0,0,0,.05);
+    width: 100%;
+    margin-left:-20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: none;
+    background-position: 10px;
+       padding-left: 30px;
+    height:40px;
+ }
+ 
+ .btnJoinLog {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 10px;
+    border: 1px solid gray;
+   padding: 0 5px 0px 5px;
+    font-size: 13px;
+    display: flex;
   }
-  #team > div > article {
+ 
+   .btnJoinLog a {
+    text-decoration: none;
+    color: gray;
+  }
+   #join {
+    margin: 0 10px 0px 10px;  
+ }
+ 
+   #login {
+    margin: 0 0 0px 10px;
+    border-right: 1px;
+    text-align: center;
+   }
+ 
+ #build{
     display: flex;
     justify-content: center;
+   background-color: rgba(232,217,217,.3);
+   align-items: center;
     flex-direction: column;
-    align-items: center;
-  } 
-  
-  #team img {
-    width:250px;
-    height:180px;
-  }
-  
-  .address{
-    font-style:normal;
-    font-size: 0.8em;
-    margin-bottom: 30px;
-  }
-  .footer{
     text-align: center;
-    font-size:1.9em;
-    padding: 40px 100px;
-    margin-bottom: 25px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    height: 600px;
     
-  } 
-  .footer a {
-    color: blue;
-    text-decoration: none;
-    list-style: none;
-  
-  } 
-  .footer ul {
-    list-style: none;
-    padding: 0;
   }
-  
-  .list-style{
-     list-style: none;
-      padding: 0px;
+ 
+ #build-article{
+   width:400px;
+   margin:0 0 30px 0 ;
+ }
+ #see-plans{
+   background-color: #FB3B49;
+   color: white;
+   padding: 10px 50px 10px 50px;
+   box-shadow: 8px 8px 0      rgba(251,59,73,.2); 
+ }
+ 
+ #join-free{
+   color: black;
+ }
+ 
+ #btns a{
+   text-decoration: none;
+   margin: 20px ;
+    
+ }
+ 
+ h1{
+    font-size: 60px;
+    font-weight: bold;
+ }
+ 
+ #tri-hex {
+    width: 200px;
+    margin: 20px;
   }
-  
-  #general-information{
-    display: flex;
-    justify-content: space-evenly;
-  }
-  #general-information .container{
-    display: flex;
+ #bring{
+     display: flex;
+    justify-content: center;
+   align-items: center;
+   margin: 30px 0 0 10px;
     flex-direction: column;
-    align-items: center;
-    width: 370px;
-  }
-  
-  #structure > div{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    flex-wrap: wrap;  
-  }
-  #team{
-    padding: 75px 0;
-    margin: 0 auto;
-  }
-  #team p{
-    width: 60%;
-    margin: 10px auto;
-  }
-  #team hr{
-    margin:20px auto 30px auto;
-    width: 40%;
-  }
-  #schedule
-  
-  .schedule-table {
-    margin: 0 auto 40px auto;
-    font-size: 1.5em;
-  }
-  .schedule-table th,td {
-    border-width: 1px;
-    border-bottom-style: solid;
-    color: black;
-    padding: 5px 10px;
-    text-align:center;
-  }
-  .map-frame{
-    height: 375px;
-    width: 60%;
-  }
-  
-  .slot-form-container{
-    width: 40%;
-    margin:18px auto 0 auto;
-    font-size: 1.5em;
     text-align: center;
+    height: 200px;
+ }
+ 
+ h2{
+   margin:20px 0 0px 0 ;
+     background-color: rgba(255,204,53,.4);
+   transform: skew(9deg,0deg);
+   font-style: italic;
+ }
+ 
+ #bring-article{
+   width:500px;
+   font-size:10px;
+   margin:10px 0 30px 0 ;
+ }
+ 
+ #columns img {
+    width: 30px;
+    height: auto;
+   align-items: center;
   }
-  .slot-form-container label { 
-    line-height: 15px;
-    margin: 5px;
+ 
+ #columns {
+   width:700px;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   flex-wrap: nowrap;
+   align-items: center;
+   margin:auto auto 50px auto;
+ 
+ }
+ 
+ h3 {
+   color:#ED1C24;
+   font-size:10px;
+   font-weight: bolder;
+ }
+ p {
+    font-size: 10px;
+      margin: 0 20px 0 0;
   }
-  slot-form-container input, select {
-    height: 20px;
-    outline: none;
-    padding: 3px;
-    width: 100%;
-  }
-  
-  .slot-form-container button {
-    color: black;
-    border: 1px solid black;
-    background-color: white;
-    padding: 9px;
-    margin-top: 15px;
-  }
+ 
+ #btnCreate{
+   display:flex;
+   text-align:center;
+   padding: 10px 70px 10px 70px;
+   margin: 20px;
+   background-color: black;
+   color:#ED1C24;
+   box-shadow:8px 8px 0 rgba(128,83,35,.2);
+   margin:auto auto 50px auto;
+   
+ }
+ 
+ #btnCreate a{
+   color: white;
+   text-decoration: none;
+   font-family: 'Poppins'
+ }
