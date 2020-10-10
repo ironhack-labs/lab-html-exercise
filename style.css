@@ -3,8 +3,12 @@
 body {
     font-family: 'Poppins';
     padding: 0 50px 0 50px;
+    min-width: 700px;
 }
 
+header {
+    min-width: 1100px;
+}
 header > div {
     padding: 0 25px;
     display: flex;
@@ -148,7 +152,8 @@ h1 {
     align-items: center;
     height: 700px;
     padding-top: 80px;
-    margin-bottom: 50px
+    margin-bottom: 50px;
+    box-sizing: content-box;
 }
 #description img{
     width: 300px;
@@ -156,11 +161,11 @@ h1 {
 }
 
 h2 {
-    font-size: 2.7em;
+    font-size: 2.5em;
     background-color: rgba(255,204,53,.4);
     transform: skew(9deg,0deg);
     font-style: italic;
-    width: 57%;
+    width: 53%;
     box-sizing: content-box;
     margin-top: 100px;
     background-size: cover;
@@ -184,7 +189,6 @@ h3 {
     display:flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin-bottom: ;
 }
 
 #features {
@@ -205,7 +209,7 @@ h3 {
 }
  .content-box {
      box-sizing: content-box;
-     margin-bottom: 60px;
+     margin-bottom: 100px;
  }
 .content-box img {
     height: 50px;
