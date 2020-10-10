@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NPM Clone</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="footer-fixed">
@@ -33,11 +34,13 @@
             <img class="logo" src="images/npm-logo.png" alt="NPM logo">
             <form class="search-bar" action="#">
                 <img src="images/magnifying-glass.png" alt="magnifying glass">
-                <input type="text" placeholder="Search packages">
+                <input class="search-input" type="text" placeholder="Search packages">
                 <input class="btn-orange" type="button" value="Search">
             </form>
-            <a class="btn-transparent" href="#">Join</a>
-            <a href="#">Log In</a>
+            <div class="sign-in">
+                <a class="btn-transparent" href="#">Join</a>
+                <a href="#">Log In</a>
+            </div>
         </div>
         <!-- End header bottom -->
     </header>
@@ -46,9 +49,9 @@
     <!-- JOIN SECTION -->
 
     <section id="join">
-        <div class="container">
-            <h1>Build amazing things</h1>
-            <p>Essential JavaScript development tools that help you go to market faster and build powerful applications using modern open source code.</p>
+        <h1>Build amazing things</h1>
+        <p>Essential JavaScript development tools that help you go to market faster and build powerful applications using modern open source code.</p>
+        <div class="buttons">
             <a class="btn-orange" href="#">See plans</a>
             <a class="btn-white" href="#">Join for free</a>
         </div>
@@ -57,7 +60,7 @@
 
     <!-- MIDDLE SECTION -->
 
-    <section id="middle-section" class="container">
+    <section id="middle-section">
         <img src="images/triangle-hexagon.svg" alt="hexagon">
         <h2> Bring the best of open source to your company</h2>
         <article>
@@ -68,26 +71,28 @@
 
     <!-- INFORMATION SECTION -->
 
-    <section id="info" class="container">
-        <div class="info-container">
-            <img src="images/zero-configuration.svg" alt="zero config logo">
-            <h3>Zero configuration</h3>
-            <p>Create an org, add your team, and start collaborating. Nothing to configure, set up, or manage.</p>
-        </div>
-        <div class="info-container">
-            <img src="images/team-management.svg" alt="managment logo">
-            <h3>Team management</h3>
-            <p>Control who has access to what modules within your team namespace using straightforward team management capabilities.</p>
-        </div>
-        <div class="info-container">
-            <img src="images/familiar-features.svg" alt="features logo">
-            <h3>Familiar features</h3>
-            <p>npm Orgs has 100% parity with all the public npm registry features your developers already use.</p>
-        </div>
-        <div class="info-container">
-            <img src="images/npm-audit.svg" alt="audit logo">
-            <h3>npm audit</h3>
-            <p>Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer.</p>
+    <section id="info">
+        <div>
+            <div class="info-container">
+                <img src="images/zero-configuration.svg" alt="zero config logo">
+                <h3>Zero configuration</h3>
+                <p>Create an org, add your team, and start collaborating. Nothing to configure, set up, or manage.</p>
+            </div>
+            <div class="info-container">
+                <img src="images/team-management.svg" alt="managment logo">
+                <h3>Team management</h3>
+                <p>Control who has access to what modules within your team namespace using straightforward team management capabilities.</p>
+            </div>
+            <div class="info-container">
+                <img src="images/familiar-features.svg" alt="features logo">
+                <h3>Familiar features</h3>
+                <p>npm Orgs has 100% parity with all the public npm registry features your developers already use.</p>
+            </div>
+            <div class="info-container">
+                <img src="images/npm-audit.svg" alt="audit logo">
+                <h3>npm audit</h3>
+                <p>Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer.</p>
+            </div>
         </div>
         <a href="#" class="btn-black">Create an Org</a>
     </section>
