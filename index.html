@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>NPM - Neverending Pun Machine</title>
 </head>
 <body>
@@ -13,7 +14,7 @@
 
         <div>
 
-            <img src="./images/black-heart.png" alt="Nitty-Penguin-Magic">
+            <img class="blackHeart" src="./images/black-heart.png" alt="Nitty-Penguin-Magic">
 
             <span> Nitty Penguin Magic</span> 
 
@@ -41,28 +42,42 @@
     </div>  
 
     <div>
-        <nav class="search-bar"><a href="#"><img src=".//images/npm-logo.png" alt="npm-logo"></a>
+        <nav class="search-bar">
             
-            <form action="sear"></form>
+            <a href="#">
+                <img class="logo" src=".//images/npm-logo.png" alt="npm-logo">
+            </a>
+            
+            <form action="search">
+                    
+                    <!-- <input type="image" id="search-image" alt="Search-logo"
+                    src="./images/magnifying-glass.png"> -->
+
+                    <input class="search-div" type="text" type="image" placeholder="Search packages">
+
+
+            
+                
+                <a href="#"></a>
+                    <button class="red-button search-button" type="submit">
+                        Search
+                    </button>
+                </a>
+                
+
+            </form>
     
-            <button class="red-button" type="submit">
-                Search
-            </button>
-    
+           <div class="users">
     
             <a href="#">
-                <div class="red-button">Search</div>
+                <div class="border-button join-button">Join</div>
             </a>
     
     
             <a href="#">
-                <div class="border-button">Join</div>
+                <div class="white-button login-button">Log In</div>
             </a>
-    
-    
-            <a href="#">
-                <div class="white-button">Log In</div>
-            </a>
+            </div>
     
         </nav>
     </div>
@@ -81,14 +96,18 @@
         </article> 
 
 
-        <a href="#">
-            <div>See plans</div>
-        </a>
+        <div class="main-buttons">
+     
+                <div class="red-button">
+                    <a href="#">See plans</a>
+                </div>
 
 
-        <a href="#">
-            <div>Join for free</div>
-        </a>
+                <div class="white-button">
+                    <a href="#">Join for free</a>
+                </div>
+      
+        </div>
 
 
     </main>
@@ -99,7 +118,7 @@
 
         <img src="images/triangle-hexagon.svg" alt="Hexagon">
 
-        <h3 class="claim">Bring the best of open source to your company</h3>
+        <h2 class="claim">Bring the best of open source to your company</h2>
 
         <p> 
             npm is the tool used by
@@ -108,9 +127,9 @@
         </p>
 
 
-
+        <div class="information">
         <div class="services">
-            <img src="../lab-html-exercise/images/zero-configuration.svg" alt="zero-configuration">
+            <img class="icons" src="./images/zero-configuration.svg" alt="zero-configuration">
                 <h4>
                    Zero configuration
                 </h4>
@@ -126,26 +145,32 @@
 
 
         <div class="services">
-            <img src="./images/team-management.svg" alt="Team-management">
+            <img class="icons" src="./images/team-management.svg" alt="Team-management">
             <h4 class="titles-red">Team management</h4>
             <p>Control who has access to
                 what modules within your team namespace using straightforward team management capabilities. </p>
         </div>
+
+
         <div class="services">
-            <img src="./images/familiar-features.svg" alt="Familiar features">
+            <img class="icons" src="./images/familiar-features.svg" alt="Familiar features">
             <h4 class="titles-red">Familiar features</h4>
             <p>npm Orgs
                 has 100% parity with all the public npm registry features your developers already use.</p>
         </div>
+
+
         <div class="services">
-            <img src="./images/npm-audit.svg" alt="npm-audit">
+            <img class="icons" src="./images/npm-audit.svg" alt="npm-audit">
             <h4 class="titles-red">npm audit</h4>
             <p>Enjoy the security
                 auditing features built into the npm client, a zero-friction way to make open source software safer.</p>
         </div>
+    </div>
 
-        <a href="#">
-            <div class="bigButton">Create an Org</div>
+
+     
+            <div class="black-button">   <a href="#">Create an Org</a></div>
         </a>
        
     </section>
