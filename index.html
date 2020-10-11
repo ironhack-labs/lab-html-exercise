@@ -6,7 +6,7 @@
         <title>npm Clone from Git-Hannah</title>
     </head>
     <body>
-        <header>
+        <header class="header">
             <div>
                 <div>
                     <img class="blackHeart" src="images/black-heart.png" alt="Black Heart">
@@ -24,20 +24,24 @@
                  </nav>
             </div>
         
-            <div >
-                <img class="npmLogo" src="images/npm-logo.png" alt="npm Logo">
-                
-                <form class="form" action="search-page">                    
-                    <label for="search-icon"><img class="magnifying-glass-img" type="image" src="images/magnifying-glass.png" alt="magnifying glass"></label>
-                    <input type="text" placeholder="Search packages" name="search">                                  
-                </form>
-              
-                <button class ="button" type="submit">Search</button> 
-
-            <div>
-                <a href="#">Join</a>
-                <a href="#">Log In</a>               
-            </div>    
+            <div class="action-bar">
+                <div><!--Could not manage to put image inside input (search bar)...-->
+                    <img class="npmLogo" src="images/npm-logo.png" alt="npm Logo">
+                </div>  
+                <div>
+                    <form class="form" action="search-page">                    
+                        <label> <img class="magnifying-glass-img" src="images/magnifying-glass.png" alt="magnifying glass">
+                        </label>
+                        <input name="search" type="text" placeholder="Search packages">                                  
+                    </form>
+                </div>
+                <div>
+                    <button class ="button" type="submit">Search</button> 
+                </div>
+                <div>
+                    <a href="#" class="join-btn">Join</a>
+                    <a href="#" class="log-in-btn">Log In</a>               
+                </div>    
 
             </div>
 
@@ -72,48 +76,47 @@ faster and build powerful applications <br> using modern open source code.
 
         </section>
 
-        <!--section 3 Features, Create an Org-->
+        <!--section 3 Features-->
         <section id="features" class="section-3">
-                <div class="feature-elements">
-                  <img class="feature-logo" src="images/zero-configuration.svg" alt="zero configuartion">
-                    <h3>Zero configuration</h3>
-                    <p>Create an org, add your team, and start collaborating. Nothing to configure, set up, or manage. </p>
-                </div>
+            <div class="feature-elements">
+                <img class="feature-logo" src="images/zero-configuration.svg" alt="zero configuartion">
+                <h3>Zero configuration</h3>
+                <p>Create an org, add your team, and start collaborating. Nothing to configure, set up, or manage. </p>
+            </div>
 
-                <div class="feature-elements">
-                  <img class="feature-logo" src="images/team-management.svg" alt="tem management">
-                    <h3>Team management</h3>
-                    <p>Control who has access to
-                    what modules within your team namespace using straightforward 
-                    team management capabilities. </p>
-                </div>
+            <div class="feature-elements">
+                <img class="feature-logo" src="images/team-management.svg" alt="tem management">
+                <h3>Team management</h3>
+                <p>Control who has access to
+                what modules within your team namespace using straightforward 
+                team management capabilities. </p>
+            </div>
 
-                <div class="feature-elements">
-                  <img class="feature-logo" src="images/familiar-features.svg" alt="familiar features">
-                    <h3>Familiar features </h3>
-                    <p>npm Orgs
-                    has 100% parity with all the public npm registry features your 
-                    developers already use.</p>
-                </div>
+            <div class="feature-elements">
+                <img class="feature-logo" src="images/familiar-features.svg" alt="familiar features">
+                <h3>Familiar features </h3>
+                <p>npm Orgs
+                has 100% parity with all the public npm registry features your 
+                developers already use.</p>
+            </div>
 
-                <div class="feature-elements">
-                  <img class="feature-logo" src="images/npm-audit.svg" alt="npm audit">
-                    <h3>npm audit</h3>
-                    <p>Enjoy the security
-                    auditing features built into the npm client, a zero-friction way 
-                    to make open source software safer. </p>
-                </div>
+            <div class="feature-elements">
+                <img class="feature-logo" src="images/npm-audit.svg" alt="npm audit">
+                <h3>npm audit</h3>
+                <p>Enjoy the security
+                auditing features built into the npm client, a zero-friction way 
+                to make open source software safer. </p>
+            </div>
 
-            <br>
-
+        </section>    
+       
+        <!--Create an Org-->    
+        <div class="org-position"> 
             <button class="org-button" type="button">Create an Org</button>
-           
+        </div> 
 
-        </section>
-
-    <footer>
-
-    </footer>
+    
     </body>
+    
 </html>
 

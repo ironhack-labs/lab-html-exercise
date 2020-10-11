@@ -8,8 +8,7 @@ html, body {
 body {
   font-family: 'Poppins';
   font-size: 10px;
-  line-height: 3.5em;
-  
+  line-height: 3.5em;  
 }
 
 header > div {
@@ -23,8 +22,7 @@ header > div {
   h1 {
     font-size: 4rem;
     text-align: center;
-
-  }
+  }  
   h2 {
     font-size: 2rem;
     text-align: center;
@@ -36,15 +34,13 @@ header > div {
 
   nav {
     width: 600px;
-  }
-  
+  }  
   nav ul {
     list-style: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-  
+  }  
   nav a {
     text-decoration: none;
     color: black;
@@ -54,37 +50,69 @@ header > div {
     width: 20px;
     margin-right: 1rem;
   }
+
+.action-bar {
+  display: flex;
+  flex-direction: row;
+}
+
   .npmLogo{
     width: 100px;
-
+    margin: 3px 0 0 0;
+    padding: 5px;
   }
  
   .magnifying-glass-img {
-    width: 30px;
-    margin-right: 0;
+    width: 30px;      
   }
+  
   .form {
-
+    margin: 0;
   }
   .form label {
-      color: rgba(0,0,0,.05)
+    color: rgba(0,0,0,.05);
   }
   .form input {
-      color: rgba(0,0,0,.05)
+    color: rgba(0,0,0,.05);
+    border: 1px solid lightgray;
+    height: 50px;
+    width: 800px;
+    margin: 0;
+    padding-bottom: 2px;
   }
   .button {
       background-color: #fb3e44;
       color: white;
+      border-style: none;
+      height: 50px;
+      padding: 10px 20px;
+      margin: 0;
+  }
+
+  .join-btn {
+    font-size: 1.5em;
+    letter-spacing: 0.5px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    padding: 5px 15px;
+    margin: 0;
+    border: 1px solid black;
+  }
+  .log-in-btn {
+    font-size: 1.5em;
+    letter-spacing: 0.5px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    padding: 5px 15px;
+    margin-right: 5px;
   }
 
 .section-1 {
   display: flex;
   flex-direction: column;
 }
-
-  /*#general-information {
-    display: flex;
-  }*/
   #general-information {
       display: flex;
       justify-content: center;
@@ -96,7 +124,7 @@ header > div {
   }
   .text-article-1 {
     font-size: 2em;
-    font-weight: 100;
+    font-weight: normal;
     text-align: center;
     margin: 40px; 
     
@@ -148,7 +176,7 @@ header > div {
   }
   .text-article-2 {
     font-size: 1.5em;
-    font-weight: 80;
+    font-weight: normal;
     text-align: center;
     margin: 20px; 
   }
@@ -157,7 +185,6 @@ header > div {
   width: 1200px;
   margin: 0 auto;
   padding: 75px 0;
-
 }
 
   #features {
@@ -171,32 +198,32 @@ header > div {
     align-items: flex-start;
     text-align: left;
     line-height: normal;
-    background-color: yellow;
-    border: 2px solid #eee;
-    border-color: black;
     height: 200px;
     width: 40%;
     padding: 30px;
-    margin: 5px 3px 0 2%;
-  
+    margin: 0;  
 }
-/*.service-box {
-  font-size: 1.7em;
-  text-align: center;
-  border: 2px solid #eee;
-  box-sizing: border-box;
-  box-shadow: 2px 2px 10px 0 #eee;
-  margin: 50px 5% 0 5%;
-  padding: 20px;
-  width: 40%;
-*/
+
   .feature-logo {
     width: 40px;
     align-items: flex-start;
   }
 
+  .org-position {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+  }
   .org-button {
-    
-    /*box shadow: 8px 8px 0 rgba(128,83,35,.2);
-    color: white;*/
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    letter-spacing: 0.5px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 15px 80px;
+    margin-right: 20px;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);    
   }
