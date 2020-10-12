@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
+  
 
 body {
    font-family:'Poppins';
@@ -34,30 +35,31 @@ nav a {
 }
 
 
-
-
 /*Header*/
 
 .NPMlogo {
   position: relative;
   size: 3em;
   width:125px;
-  padding: 14px 20px;
-  margin: 0px 0px;
+  padding: 0px;
+  margin: 0px 20px;
 }
 
 #nav-bar{
-  justify-content: flex-start;
+  display: flex;
+  justify-content: space-between;
+  width: 600px;
 }
 
 .Searchbar{
- width: 1600px;
- margin: 0px;
- display:flex;
+  display:flex;
+  margin: 0px;
+  padding: 0px;
 }
 
 .Searchbar >label{
-  padding: 0px 20px;
+  width: 500px;
+  padding: 0px;
   border: none;
   background-color: rgba(0, 0, 0, 0.05);
 }
@@ -72,7 +74,7 @@ nav a {
 }
 
 #search{
-  width:80%; 
+  width: 300px; 
   border: none;
   padding: 0px 14px;
 }
@@ -87,21 +89,23 @@ nav a {
 
 .btn-Join{
  position: relative;
- margin: 10px 10px 10px 80px;
+ margin: 10px 10px 10px 100px;
  text-decoration: none;
  color: black;
  border: 1px solid black;
  padding: 10px 20px;
+ align-self: baseline;
  font-size: 18px;
 }
 
 .btn-Login{
   position: relative;
-  margin: 20px 50px 10px 10px;
+  padding: 10px;
   text-decoration: none;
   color: black; 
   font-size: 18px;
-  width: 60px;
+  width: 130px;
+  align-self: baseline;
 }
 
 /*Section 1*/
@@ -116,10 +120,10 @@ nav a {
 }
 
 #section1 h1{
+  font-weight: bold;
   font-size: 90px;
   margin: 0px;
   padding: 0px 20px;
-  font-weight: bolder;
 }
 
 #section1 p{
@@ -216,7 +220,7 @@ nav a {
 
 .box-info > p{
   margin: 0px 10px;
-  font-size: 20px;
+  font-size:20px;
 }
 
 #section3 a{
@@ -224,8 +228,8 @@ nav a {
   background-color: black;
   color: white;
   box-shadow: 8px 8px 0 rgba(128,83,35, .2);
-  padding: 20px 120px;
+  padding: 10px 100px;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 25px;
 }
 
