@@ -79,17 +79,17 @@ We could try to represent this part of the website with the following:
 <header>
   <div>
     <div>
-      <img class="blackHeart" src="LINK TO IMAGE GOES HERE" alt="black heart" />
+      <img class="blackHeart" src="lab-html-exercise/images/black-heart.png" alt="black heart" />
       <span> Nifty Penguin Magic </span>
     </div>
     <nav>
       <ul>
-        <li><a href="#"> npm Enterprise </a></li>
-        <li><a href="#"> Products </a></li>
-        <li><a href="#"> Solutions </a></li>
-        <li><a href="#"> Resources </a></li>
-        <li><a href="#"> Docs </a></li>
-        <li><a href="#"> Support </a></li>
+        <li><a href="#npm-enterprise"> npm Enterprise </a></li>
+        <li><a href="#products"> Products </a></li>
+        <li><a href="#solutions"> Solutions </a></li>
+        <li><a href="#resources"> Resources </a></li>
+        <li><a href="#docs"> Docs </a></li>
+        <li><a href="#support"> Support </a></li>
       </ul>
     </nav>
   </div>
