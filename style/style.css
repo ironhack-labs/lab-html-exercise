@@ -1,7 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;700&display=swap');
 
 body {
   font-family: 'Poppins';
+  /* margin: 0 2%; */
 }
 
 header > div {
@@ -37,20 +38,68 @@ header > div {
       width: 60px;
   }
 
-  .searchLogo {
-      width: 25px;
+  .searchBar {
+    background-color: rgba(0,0,0,.05);
+    display: flex;
+    justify-content: flex-end;
+  }
+  .searchBar ::placeholder {
+    /* color: rgba(0,0,0,.05); */
+    color: black;
+  }
+
+  .searchInput {
+    border: 0;
+    background-color: rgba(0,0,0,.05);
+    width: 1200px;
+  }
+  .subButton {
+    background-color: #fb3e44;
+    color: rgba(255, 255, 255, 0.8);
+    border: none;
+    padding: 8px 10px;
+    letter-spacing: 1px;
+  }
+  .poppins {
+    font-family: 'Poppins';
+  }
+
+  .access {
+    display: flex;
+    justify-content: space-between;
   }
 
 
-  h1 {
-      font-size: 4em;
-      font-weight: bold;
+  .join {
+    background-color: white;
+    color: black;
+    border: 1px solid;
+  }
+  .logIn {
+    background-color: white;
+    color: black;
+    border: 0;
   }
 
-  .container {
+  .build {
+      font-size: 6em;
+      font-weight: 700;
+      margin: 0;
+  }
+
+  .planText {
+    font-size: 1.2em;
+    width: 30%;
+    text-align: center;
+    margin-bottom: 40px;
+
+  }
+
+  #seePlans p {
     display: flex;
     justify-content: center;
-    width: 40%;
+    align-items: center;
+    margin-top: 40px;
   }
 
   #seePlans {
@@ -66,22 +115,21 @@ header > div {
       background-color: #FB3B49;
       color: white;
       box-shadow: 8px 8px 0 rgba(251, 59, 73, .2);
-      padding: 12px 55px;
-      margin-right: 40px;
+      padding: 15px 60px;
+      margin-right: 20px;
       border: none;
-      font-family: Poppins;
       font-weight: bold;
       letter-spacing: 1px;
   }
 
   .joinButton {
-      margin-left: 40px;
+      margin-left: 20px;
       background-color: white;
       color: black;
-      padding: 12px 55px;
+      padding: 15px 60px;
       border: none;
       font-family: Poppins;
-      font-weight: bold;
+      font-weight: 700;
   }
 
   #filler {
@@ -92,40 +140,57 @@ header > div {
     align-items: center;
   }
 
-  #filler > h2 {
+  #filler > .bring {
     background-color: rgba(255, 204, 53, .4);
     transform: skew(9deg, 0deg);
     font-style: italic;
+    font-size: 2em;
   }
 
   .triangleHexagon {
-      width: 200px;
+      width: 250px;
+      margin-bottom: 40px;
   }
+
+  .fillerText {
+    text-align: center;
+    width: 40%;
+    margin-bottom: 60px;
+  }
+
 
 #featuresList {
     margin-left: 40px;
-}
-
-#featuresList div {
+    margin-right: 40px;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    align-items: center;
-    width: 25%;
+    justify-content: space-evenly;
 }
 
+/* #featuresList div {
+  width: 25%;
+} */
 
-.text {
+#featuresList .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25%;
+  margin-bottom: 300px;
+}
+
+.container text {
     display: flex;
     text-align: center;
     flex-direction: column;
     width: 25%;
+    align-items: center;
 }
 
   #featuresList h3 {
       color: #ED1C24;
       display: flex;
-      justify-content: center;
+      align-items: center;
       flex-direction: column;
   }
 
@@ -135,8 +200,12 @@ header > div {
       flex-direction: column;
   }
 
- .createOrg {
+#featuresList .createOrg {
     box-shadow: 8px, 8px, 0, rgba(128, 83, 25, .20);
     color: white;
     background-color: black;
+    border: 0;
+    display: flex;
+    align-self: flex-end;
+    align-items: center;
   }
