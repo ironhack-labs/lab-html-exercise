@@ -44,7 +44,7 @@ form label{
 }
 form input{
 	background-color: rgba(0,0,0,.05);
-	width: 100%;
+	width: 190%;
 	border: none;
 	text-align: left;
 }
@@ -54,10 +54,10 @@ form button{
 	padding: 0 20px;
 	border: none;
 }
+
 .pesquisa{
-	margin: 5px;
+	margin: 5px 0;
 	height: 40px;
-	width: 800px;
 	background-color: rgba(0,0,0,0.05);
 	display: flex;
 	border: none;
@@ -82,8 +82,9 @@ form button{
 	flex-direction: column;
 }
 #Introduction h1{
-	font-size: 5em;
-	margin: 20px;
+	font-size: 4.3em;
+	width: 65%;
+	text-align: center;
 }
 #Introduction article{
 	font-size: 1.3em;
@@ -109,12 +110,70 @@ form button{
 }
 
 #Company{
-	border: solid blue;
 	height: 600px;
 	display: flex;
-	justify-content: center;
+	justify-content: space-around;
 	align-items: center;
 	flex-direction: column;
 }
+#Company img{
+	height: 40%;
+	margin: 0;
+}
+.comptext{
+	width: 75%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+#Company h2{
+	background-color: rgba(255,204,53,.4);
+	transform: skew(9deg,0deg);
+	font-style: italic;
+	text-align: center;
+	margin: 0 20px;
+	padding: 0 30px;
+	font-size: 2.3em;
+	width: 90%;
+}
+#Company article{
+	width: 80%;
+	text-align: center;
+	margin: 10px 0;
+}
 
-#Topics{}
+#Topics{
+	display: flex;
+	text-align: center;
+	flex-direction: column;
+	align-items: center;
+}
+#Topics > div{
+	margin: 4%;
+	display: flex;
+}
+#Topics > div > div{
+	width: 235px;
+	text-align: left;
+	padding: 0 30px 30px 30px;
+}
+#Topics img{
+	width: 50px;
+}
+#Topics h3{
+	color: #ED1C24;
+	padding: 10px 0;
+}
+#Topics a{
+	background-color: black;
+	box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+	color: white;
+	width: 400px;
+	height: 50px;
+	margin: 0 0 70px 0;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 1.3em;
+}
