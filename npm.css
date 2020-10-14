@@ -27,7 +27,7 @@ align-items: center;
 border-bottom: 1px solid lightgray;
 }
 header{
-  height:75px;
+  height:100px;
 }
 
 nav{
@@ -48,10 +48,16 @@ nav a{
   text-decoration:none;
   color:black;
 }
-#search-bar{
+.search-bar{
   background:rgba(232,217,217,.3);
 width:100%;
-align-content:center;
+//align-content:center;
+display:flex;
+justify-content:space-around;
+}
+.search-bar img{
+width:3%;
+
 }
 #submit{
   background:#ED1C24;
@@ -93,7 +99,7 @@ body{
   font-family:'Poppins';
 }
 .blackheart{
-  width:2%;
+  width:5%;
   margin-rigth:1rem;
 }
 .contenedor_1{
@@ -122,7 +128,7 @@ article{
 
 
 .contenedor_2 {
-  padding:10px;
+  padding:10px auto;
   height:280px;
 }
 .contenedor_2 h2{
@@ -165,7 +171,8 @@ p{
 }
 footer{
   height:80px;
-  margin:50px;
+  margin:90px 200px;
+
 }
 #create{
  color:white;
