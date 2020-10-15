@@ -7,3 +7,243 @@ your team, and start collaborating. Nothing to configure, set up, or manage. Tea
 what modules within your team namespace using straightforward team management capabilities. Familiar features npm Orgs
 has 100% parity with all the public npm registry features your developers already use. npm audit Enjoy the security
 auditing features built into the npm client, a zero-friction way to make open source software safer. Create an Org
+
+<html>
+<head>
+        <meta charset="UTF-8">
+        <title>NPM</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+<header id="header">
+  <div>
+    <div>
+      <img class="blackHeart" src="images/black-heart.png" alt="black heart" />
+      <span> Nifty Penguin Magic </span>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#"> npm Enterprise </a></li>
+        <li><a href="#"> Products </a></li>
+        <li><a href="#"> Solutions </a></li>
+        <li><a href="#"> Resources </a></li>
+        <li><a href="#"> Docs </a></li>
+        <li><a href="#"> Support </a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="nav-bar">
+    <img class="logo" alt="logo" src="images/npm-logo.png">
+    
+    <img class="glass" alt="glass" src="images/magnifying-glass.png">
+              <form action="/some-url" method="POST">
+                <label for="search" id="label"></label>
+                <input type="search"  id="search" placeholder="Search packages">
+                <button class="button"> Search</button>  
+              </form>
+              <div class="border">
+              <a href="#" id=Join> Join </a>
+              </div>
+              <a href="#" id="login"> Log in</a>
+  </div>
+</header>
+
+<section id="section1">
+            <h1> Build amazing things </h1>
+            <article id="article1">
+                <p>Essential JavaScript development tools that help<br> you go to market faster and build powerful<br> applications using modern open source code.</p>
+            </article>
+            <div id="seeplans">
+                <a href="#" class="plans"> See plans </a>
+                <a href="#" class="free"> Join for free </a>
+            </div>
+        </section>
+        <section id="section2">
+            <img src="images/triangle-hexagon.svg" alt="hexagon">
+            <h2> Bring the best of open source to your company </h2>
+            <article id="article2">
+                <p> npm is the tool used by over 11,000,000 JavaScript developers around the world. <br> Your developers already use it. Your company depends on it.
+                    Create an Org and get more out of the tools<br> your team already knows and loves. </p>
+            </article>
+        </section>
+        <section id="section3">
+            <div>
+                <img src="images/zero-configuration.svg" alt="zero-configuration" class="zero">
+                <h3> Zero configuration </h3>
+                <p> Create an org, add your team, and start collaborating. Nothing to configure, set up, or manage. </p>
+            </div>
+            <div>
+                <img src="images/team-management.svg" alt="team-management" class="team">
+                <h3> Team management </h3>
+                <p> Control who has access to what modules within your team namespace using straightforward team management capabilities. </p>
+            </div>
+            <div>
+                <img src="images/familiar-features.svg" alt="familiar" class="family">
+                <h3>  Familiar features </h3>
+                <p> npm Orgs has 100% parity with all the public npm registry features your developers already use. </p>
+            </div>
+            <div>
+                <img src="images/npm-audit.svg" alt="audit" class="audi">
+                <h3> npm audit </h3>
+                <p> Enjoy the security
+                    auditing features built into the npm client, a zero-friction way to make open source software safer. Create an Org </p>
+            </div>
+            <a href="#" class="org"> Create an Org </a>
+
+        </section>
+        
+    </body>
+</html>
+
+<!-- css -->
+
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+html, body {
+    margin: 0;
+    padding: 0;
+}
+body {
+  font-family: 'Poppins';
+}
+header > div {
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+}
+nav {
+  width: 600px;  
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav a {
+    text-decoration: none;
+    color: black;
+}
+.blackheart {
+    width: 20px;
+    margin-right: 1rem;
+}
+.nav-bar {
+    padding: 10px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    width: 30px;
+} 
+.glass {
+    width: 30px;
+}
+#search,label{
+  background-color:  rgba(0,0,0,.05);
+  width: 1000px;
+}
+#label {
+    color: rgba(0,0,0,.05);
+}
+.button {
+    background-color: #fb3e44;
+    color: white;
+}
+#Join {
+    text-decoration: none;
+    color: grey;
+    border: 1px solid grey;
+}
+.border #Join {
+    padding: 3px
+} 
+.nav-bar #login {
+    text-decoration: none;
+    color: grey;  
+    margin-right: 20px; 
+}
+#section1 {
+    height: 600px;
+    background-color:  rgba(232,217,217,.3) ;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+h1 {
+    font-size: 100px;
+    margin-top: 10px;
+}
+#article1 {
+    font-size: 25px;
+    text-align: center;
+}
+#seeplans .plans {
+    background-color: #FB3B49;
+    text-decoration: none;
+    color: white;
+    margin-right: 50px;
+    font-size: 50px;
+    box-shadow: 8px 8px 0 rgba(251,59,73,2);
+}
+#seeplans .free {
+    text-decoration: none;
+    color: black;
+    font-size:50px ;
+}
+#section2 {
+    height: 600px;
+    background-color:  rgba(232,217,217,.3) ;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;  
+}
+h2 {
+    background-color: rgba(255,204,53,.4);
+    font-size: 30px;
+}
+#article2 {
+    transform: skew(9deg,0deg);
+    font-style: italic;
+    font-size: 20px;
+    margin: 60px 100px 30px 100px;
+    padding: 0 50px;
+    text-align: center;
+}
+h3 {
+   color: #ED1C24;
+
+}
+.org {
+    text-decoration: none;
+    color:white;
+    background-color: black;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+}
+.zero {
+    width: 30px;
+}
+.team {
+    width: 30px;
+}
+.family {
+    width: 30px;
+}
+.audi {
+    width: 30px;
+}
+#section3 > div {
+    font-size: 11px;
+    text-align: center;
+}
+#section3 .org {
+    font-weight: 200px;
+    font-size:30px;
+    margin-left: 600px;
+    padding-right: 50px;
+    padding-left: 50px;
+}
