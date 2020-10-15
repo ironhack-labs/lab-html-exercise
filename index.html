@@ -1,9 +1,311 @@
-NPM Clone Nifty Penguin Magic npm Enterprise Products Solutions Resources Docs Support Search Join Log In Build amazing
-things Essential JavaScript development tools that help you go to market faster and build powerful applications using
-modern open source code. See plans Join for free Bring the best of open source to your company npm is the tool used by
-over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it.
-Create an Org and get more out of the tools your team already knows and loves. Zero configuration Create an org, add
-your team, and start collaborating. Nothing to configure, set up, or manage. Team management Control who has access to
-what modules within your team namespace using straightforward team management capabilities. Familiar features npm Orgs
-has 100% parity with all the public npm registry features your developers already use. npm audit Enjoy the security
-auditing features built into the npm client, a zero-friction way to make open source software safer. Create an Org
+<html>
+
+<body>
+  <header>
+    <div>
+      <div>
+        <img class="blackHeart" src="https://github.com/LaraMorgana/lab-html-exercise/blob/master/images/black-heart.png?raw=true" alt="black heart" />
+        <span> Nifty Penguin Magic </span>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#"> npm Enterprise </a></li>
+          <li><a href="#"> Products </a></li>
+          <li><a href="#"> Solutions </a></li>
+          <li><a href="#"> Resources </a></li>
+          <li><a href="#"> Docs </a></li>
+          <li><a href="#"> Support </a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="search">
+    <form class="search-bar" action="search">
+      <img class="nmp" src="https://github.com/ironhack-labs/lab-html-exercise/blob/master/images/npm-logo.png?raw=true" alt="npm logo" />
+      <div class="search-bar-inside">
+        <img class="magnifyingGlass" src="https://github.com/LaraMorgana/lab-html-exercise/blob/master/images/magnifying-glass.png?raw=true" alt="magnifiyingGlass" />
+        <input type="text" placeholder="Search packages" name="search" />
+          <button type="submit" class="search-button">Search<i class="search-button"></i></button>
+      </div>
+      </form>
+      <nav>
+        <ul>
+          <div class="join">
+            <li><a href="join">Join</a></li>
+          </div>
+          <div class="log">
+            <li><a href="logIn">Log in</a></li>
+          </div>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <section id="build-amazing-things" class="build">
+    <heading>Build amazing things</heading>
+    <article>
+      <p>Essential JavaScript development tools that help you go to market faster and build powerful applications using modern open source code.</p>
+    </article>
+    <div class="links">
+      <nav>
+        <ul>
+          <div class="see-plans">
+            <li><a href="see">See plans</a></li>
+          </div>
+          <div class="join-free">
+            <li><a href="joinFree">Join for free</a></li>
+          </div>
+        </ul>
+      </nav>
+    </div>
+  </section>
+
+  <section id="bring-the-best">
+    <img class="triangleHexagon" src="https://raw.githubusercontent.com/LaraMorgana/lab-html-exercise/b11bfc8a86fae8163494542ed20b15a7f597b52d/images/triangle-hexagon.svg" alt="triangle hexagon">
+    <heading>Bring the best of open source to your company</heading>
+    <article>
+      <p>npm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it. Create an Org and get more out of the tools your team already knows and loves.</p>
+    </article>
+  </section>
+
+  <section id="options">
+    <div>
+      <article>
+        <img class="zeroConfiguration" src="https://raw.githubusercontent.com/LaraMorgana/lab-html-exercise/b11bfc8a86fae8163494542ed20b15a7f597b52d/images/zero-configuration.svg" alt="zero configuration">
+        <heading>Zero configuration</heading>
+        <p>Create an org, add your team, and start collaborating. Nothing to configure, set up, or manage.</p>
+      </article>
+      <article>
+        <img class="teamManagement" src="https://raw.githubusercontent.com/LaraMorgana/lab-html-exercise/b11bfc8a86fae8163494542ed20b15a7f597b52d/images/team-management.svg" alt="team logo">
+        <heading>Team Management</heading>
+        <p>Control who has access to
+          what modules within your team namespace using straightforward team management capabilities.</p>
+      </article>
+
+      <article>
+        <img class="familiarFeatures" src="https://raw.githubusercontent.com/LaraMorgana/lab-html-exercise/b11bfc8a86fae8163494542ed20b15a7f597b52d/images/familiar-features.svg" alt="familiar features">
+        <heading>Familiar Features</heading>
+        <p>npm Orgs has 100% parity with all the public npm registry features your developers already use.</p>
+      </article>
+
+      <article>
+        <img class="binoculars" src="https://raw.githubusercontent.com/LaraMorgana/lab-html-exercise/b11bfc8a86fae8163494542ed20b15a7f597b52d/images/npm-audit.svg" alt="binoculars logo">
+        <heading>npm audit</heading>
+        <p>Enjoy the security
+          auditing features built into the npm client, a zero-friction way to make open source software safer.</p>
+      </article>
+    </div>
+
+    <div class="buttonOrg">
+      <button type="submit" class="org">Create an Org</button>
+    </div>
+  </section>
+
+</body>
+
+</html>
+
+
+
+
+
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
+body {
+  font-family: "Poppins";
+}
+
+header > div {
+  padding: 0 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+}
+
+nav {
+  width: 600px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+.blackHeart {
+  width: 20px;
+  margin-right: 1rem;
+}
+
+.search {
+  display: flex;
+  justify-content: space between;
+}
+
+.search-bar-inside {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid lightgray;
+  background-color: lightgray;
+  text-align: left;
+}
+
+.search-bar-inside > img {
+  height: 20px;
+  margin-right: 20px;
+}
+.search-bar-inside > input {
+  border: none;
+  background-color: lightgray;
+  margin: 0 900px 0 0;
+}
+
+.search-button {
+  border: none;
+  color: white;
+  background-color: #fb3e44;
+  font-size: 10px;
+}
+
+.join {
+  border: 1px solid lightgray;
+}
+
+.nmp {
+  height: 20px;
+  width: 70px;
+  margin-right: 1rem;
+}
+
+#build-amazing-things {
+  height: 600px;
+  background-color: rgba(232, 217, 217, 0.3);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#build-amazing-things > .heading {
+  font-size: 100px;
+  font-style: bold;
+}
+
+#build-amazing-things > article {
+  font-size: 20px;
+  margin: 0 500px 0 500px;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.see-plans {
+  border: none;
+  padding: 10px 80px 10px 80px;
+  background-color: #fb3b49;
+  box-shadow: 8px 8px 0 rgba(251, 59, 73, 0.2);
+}
+
+.see-plans a {
+  color: white;
+  font-size: 20px;
+}
+
+.join-free a {
+  font-size: 20px;
+}
+
+#bring-the-best {
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 50px 0 50px 0;
+}
+
+#bring-the-best > heading {
+  background-color: rgba(255, 204, 53, 0.4);
+  font-size: 50px;
+  transform: skew(9deg, 0deg);
+  font-style: italic;
+  margin: 0 30px 0 30px;
+}
+
+#bring-the-best > article {
+  margin: 0 400px 0 400px;
+}
+
+.triangleHexagon {
+  width: 600px;
+  display: block;
+  margin: 50px auto 50px auto;
+}
+
+.zeroConfiguration {
+  width: 50px;
+}
+
+.teamManagement {
+  width: 50px;
+}
+
+.familiarFeatures {
+  width: 50px;
+}
+
+.binoculars {
+  width: 50px;
+}
+
+#options {
+  height: 600px;
+  margin: 50px 0 50px 0;
+}
+
+#options > div {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#options > div > article {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: left;
+  margin: 10px 50px 40px 50px;
+}
+
+#options > div > article > heading {
+  color: #ed1c24;
+  font-size: 20px;
+  margin: 20px 0 20px 0;
+}
+
+.buttonOrg {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.org {
+  display: flex;
+  justify-content: center;
+  color: white;
+  background-color: black;
+  border: none;
+  padding: 10px 80px 10px 80px;
+  box-shadow: 8px 8px 0 rgba(128, 83, 35, 0.2);
+}
