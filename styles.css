@@ -54,36 +54,55 @@ header > div {
 
 .searchbar label, input{
   color:rgba(0,0,0,.05);
-  width : 600px;
+  width : 1000px;
+  margin-right: 0;
   height: 30px;
+  border-style: none;
+  background-color: rgba(232,217,217,.3);
 }
 
 .searchbar button{
   color:white;
-  background-color: #fb3e44 ;
-  
+  height: 35px;
+  margin-left: 0;
+  background-color: #fb3e44 ; 
+  border-style: none;
 }
 
 .intro {
   display: flex;
   justify-content: center;
-  font-weight: bold;
+  font-weight: bold; 
   flex-direction:column;
   align-items: center;
   height: 600px;
+  margin: 0 40px;
   background-color: rgba(232,217,217,.3);
 }
 
 .intro h1{
   padding: 80px 100px 0;
   font-size: 4em ;
+  font-weight: 100px ;
 }
 
 .intro p{
   width: 28em;
   text-align: center;
   padding-bottom: 30px;
-  font-style: bold; 
+}
+
+.intro btn{
+ width: 8em;
+ height: 8em
+ padding: 60px;
+ border-left: 0;
+}
+
+.see-plans-btn {
+  background-color: #FB3B49;
+  color: white;
+  box-shadow: 8px 8px 0 rgba(251,59,73,.2) ;
 }
 
 /*start*/
@@ -94,7 +113,7 @@ header > div {
   flex-direction: column;
   align-items: center;
   height: 600px;
-  background-color: rgba(232,217,217,.3);
+  background-color: white ;
   
 }
 
@@ -122,34 +141,52 @@ header > div {
 .more-info{
   display: flex;
   flex-direction: row;
-  justify-content: center;
   text-align: left;
   font-size: 1em;
-  margin: 0;
-
+  flex-wrap: wrap;
+  justify-content: space-around;
+  position: relative;
 }
 
 .more-info img{
-  width: 25px;
-  height: 25px;
+  width: 40px;
+  height: 40px;
 }
 
 .more-info div {
   border: 0 #eee;
   box-sizing: border-box;
-  margin: 50px 5% 0 5%;
-  padding: 20px;
-  width: 40%;
+  margin: 50px 0 0 5%;
+  width: 150px;
+  font-size: 10px;
+  
   }
 
 .more-info h2{
   color: red;
+  font-weight: bold;
 } 
 
 .more-info button{
+  
+  top: 300px;
+  left: 600px;
+  position: absolute;
+  background-color:black;
   box-shadow: 8px 8px 0 rgba(128,83,35,.2) ;
-  font: white;
-} 
+  color: white;
+  display: flex;
+  height: 50px;
+  text-align: center;
+  font-weight: 300px;
+  padding: 20px 100px;
+  font-weight: bold;
+  border-style: none;
+  font-size: 20px;
+  
+  
+}
+  
 
 
 
