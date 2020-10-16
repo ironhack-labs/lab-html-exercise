@@ -2,13 +2,15 @@
 <!DOCTYPE html>
 <html>
  <head>
+     <meta charset="UTF-8">
      <Title>Prework Lab Assignment NPM Clone</Title>
+     <link rel="stylesheet" href="./style.css" />
  </head>
  <body>
      <header>
          <div>
              <div>
-                <img src="images/black-heart.png" alt="black heart image"/>
+                <img src="images/black-heart.png" class="blackheart" alt="black heart image"/>
                 <span>Nifty Penguin Magic</span>
              </div>
              <nav>
@@ -24,63 +26,67 @@
          </div>
 
          <div>
-             <img src="images/npm-logo.png" alt="npm logo">
-             <form action="/form/submit" method="get">
-                <img src="images/magnifying-glass.png">
-                <input type="text" placeholder="Search packages">
-                <input type="button" value="Search"> 
-            </form>
-            <div>
-               <a href="#">Join</a>
-               <a href="#">Login</a>
+             <img src="images/npm-logo.png" class="npm-logo" alt="npm logo">
+             <div class="search-form" >
+                 <form action="/form/submit" method="get">
+                   <input type="image" id="image" width=20px src="images/magnifying-glass.png" alt="magnfiying glass image">
+                   <input type="text" placeholder="Search packages">
+                   <input type="submit" value="Search" id="button-red"> 
+                 </form>
+            </div>
+            <div class="toplinks">
+               <a href="#" class="button-style" id="box">Join</a>
+               <a href="#" class="button-style" id="box-two">Login</a>
             </div>
          </div>
      </header>
 
-     <section id="1st-section">
+     <section id="1st-section" class="background">
          <h1>Build amazing things</h1>
-         <article>
-             <p>Essential JavaScript development tools that help you go to market faster and build powerful applications using
+         <article >
+             <p class="Essential">Essential JavaScript development tools that help you<br> go to market faster and build powerful applications<br> using
                 modern open source code.</p>
          </article>
-         <div>
-             <a href="#">See plans</a>
-             <a href="#">Join for free</a>
+         <div class="display-one">
+             <a href="#" class="button-style-one">See plans</a>
+             <a href="#" class="button-style-two">Join for free</a>
          </div>
      </section>
 
-     <section id="2nd-section">
-         <img src="images/triangle-hexagon.svg">
-         <h3>Bring the best of open source to your company</h3>
+     <section id="2nd-section" class="background-two">
+         <img src="images/triangle-hexagon.svg" alt="hexagonal shape" class="center">
+         <h3 class="center-text"> Bring the best of open source to your company</h3>
          <article>
-             <p>Bring the best of open source to your company npm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it.
-                Create an Org and get more out of the tools your team already knows and loves. </p>
+             <p class="article-text">npm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers<br> already use it. Your company depends on it.
+                Create an Org and get more out of the tools your <br>team already knows and loves. </p>
          </article>
      </section>
 
-     <section id="3rd-section">
-         <div>
-           <img src="images/zero-configuration.svg">
-           <h4>Zero configuration</h4>
-           <p>Create an org, add your team, and start collaborating. Nothing to configure, set up, or manage. </p>
-         </div>
-
-         <div>
-             <img src="images/team-management.svg">
-             <h4>Team management</h4>
-             <p>Control who has access to what modules within your team namespace using straightforward team management capabilities.</p>
-         </div>
-
-        <div>
-            <img src="images/familiar-features.svg">
-            <h4>Familiar features</h4>
-            <p>npm Orgs has 100% parity with all the public npm registry features your developers already use. </p>
-        </div>
-
-        <div>
-            <img src="images/npm-audit.svg">
-            <h4>npm audit</h4>
-            <p>Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer. </p>
+     <section id="third-section" class="background-three">
+        <div id="third-section-sub">
+            <div>
+                <div><img src="images/zero-configuration.svg" alt="zero configuration image" class="left-aligned"></div>
+                <h4>Zero configuration</h4>
+                <p class="paragraph">Create an org, add your team,<br> and start collaborating. <br> Nothing to configure, set up, or <br> manage. </p>
+              </div>
+     
+              <div>
+                  <div><img src="images/team-management.svg" alt="team management image" class="left-aligned"></div>
+                  <h4>Team management</h4>
+                  <p class="paragraph">Control who has access to <br> what modules within your <br> team namespace using <br> straightforward team <br> management capabilities.</p>
+              </div>
+     
+             <div>
+                 <div><img src="images/familiar-features.svg" alt="familiar features image" class="left-aligned"></div>
+                 <h4>Familiar features</h4>
+                 <p class="paragraph">npm Orgs has 100% parity with <br> all the public npm registry <br> features your developers <br> already use. </p>
+             </div>
+     
+             <div>
+                 <div><img src="images/npm-audit.svg" alt="npm audit image" class="left-aligned"></div>
+                 <h4>npm audit</h4>
+                 <p class="paragraph">Enjoy the security auditing <br> features built into the npm <br> client, a zero-friction way to <br> make open source software safer. </p>
+             </div>
         </div>
         <button type="button">Create an Org</button>
      </section>
