@@ -1,8 +1,18 @@
 <!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - NPM Clone by Sophie Drewa</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
-    <title>NPM Clone</title>
+    <title>NPM Clone by Sophie Drewa</title>
     <link rel="stylesheet" href="./style.css">
   </head>
 
@@ -27,17 +37,17 @@
            </nav>
         </div> <!-- division 1 Header closed-->
 
-        <div class="searchbar">  <!-- division 2 Header -->
+        <div class="search-bar">  <!-- division 2 Header -->
             <img class="npm-logo" src="images/npm-logo.png" alt="NPM logo">
-            <form class="slotform" action="/someURL" method="POST">                
-                <label for="search"> <img id="search-icon" src="images/magnifying-glass.png" alt="Magnifying Glass Icon"> 
+            <form action="/someURL" method="POST">                
+                <label id="label-search-icon" for="search"> <img id="search-icon" src="images/magnifying-glass.png" alt="Magnifying Glass Icon"> 
                 </label>
-                <input type="text" placeholder="Search packages">
-                <button class="search">Search</button>
+                <input id="search-input" type="text" placeholder="Search packages">
+                <button id="search-btn">Search</button>
             </form>
            <div>
-            <a id="button-see-plans" href="#button-seeplans"> Join </a>
-            <a id="button-join-for-free" href="#button-join-for-free"> Log in </a>
+            <a id="join" href="#button-seeplans"> Join </a>
+            <a id="log-in" href="#button-join-for-free"> Log in </a>
            </div>
         </div>  <!-- division 2 Header closed-->
     </header>
@@ -48,7 +58,7 @@
             <p>Essential JavaScript development tools that help you go to market faster and build powerful applications using
                 modern open source code.</p>
         </article>
-        <div>
+        <div id="buttons-section-one">
             <a id="button-see-plans" href=#>See plans</a>
             <a id="button-join-for-free" href=#>Join for free<a>
         </div>
@@ -66,31 +76,36 @@
     <section id="section-three">
 
         <div>  <!-- division text boxes -->
-            <div>
+            <article>
                 <img src="images/zero-configuration.svg" alt="Mouse Click Icon">
                 <h4>Zero configuration</h4>
                 <p>Create an org, add your team, and start collaborating. Nothing to configure, set up, or manage.</p>
-            </div>
+            </article>
 
-            <div>
+            <article>
                 <img src="images/team-management.svg" alt="Organigram Icon">
                 <h4>Team management</h4>
                 <p>Control who has access to what modules within your team namespace using straightforward team management capabilities.</p>
-            </div>
+            </article>
 
-            <div>
+            <article>
                 <img src="images/familiar-features.svg" alt="Features Icon">
                 <h4>Familiar features</h4>
                 <p>npm Orgs has 100% parity with all the public npm registry features your developers already use.</p>
-            </div>
+            </article>
 
-            <div>
+            <article>
                 <img src="images/npm-audit.svg" alt="Binoculars Icon">
                 <h4>npm audit</h4>
                 <p>Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer.</p>
-            </div>
+            </article>
         </div>
 
         <button>Create an Org</button>
+      
     </section>
 </body>
+<!-- partial -->
+  
+</body>
+</html>
