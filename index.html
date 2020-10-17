@@ -25,15 +25,17 @@
     </div>
 
     <div>
-        <div>
-            <img class="npmLogo" src="images/npm-logo.png" alt="npm logo" />
+        <div class="logoWrapper">
+            <img src="images/npm-logo.png" alt="npm logo" />
         </div>
         
-        <form id="search"class="searchBar" action="/search">
-        <span><img src="images/magnifying-glass.png" width=20px; height=20px;/></span>
-        <input class="searchInput poppins" type="text" placeholder="Search packages" name="search">
-        <button class="subButton poppins">Search</button>
-        </form>
+        <div class="searchWrapper">
+            <form id="search"class="searchBar" action="/search">
+            <img class="searchIcon" src="images/magnifying-glass.png" width=20px; height=20px alt="search icon"/>
+            <input class="searchInput poppins" type="text" placeholder="Search packages" name="search">
+            <button class="subButton poppins">Search</button>
+            </form>
+        </div>
         <div class = "access poppins">
             <span><button class="join poppins" type="button">Join</button></span>
             <span><button class="logIn poppins" type="button">Log in</button></span>
@@ -106,17 +108,11 @@
             <p class="text">Enjoy the security
                 auditing features built into the npm client, a zero-friction way to make open source software safer.</p>
         </div>
-        <div>
-            <button class="createOrg" type="button">Create an Org</button>
-        </div>
     </section>
+    <div class="orgButtonDiv">
+        <button class="createOrg poppins" type="button">Create an Org</button>
+    </div>
     
 </body>
 </html>
 
-
-
-
-
-
-<!--  Create an Org -->
