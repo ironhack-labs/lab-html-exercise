@@ -79,7 +79,7 @@ We could try to represent this part of the website with the following:
 <header>
   <div>
     <div>
-      <img class="blackHeart" src="LINK TO IMAGE GOES HERE" alt="black heart" />
+      <img class="blackHeart" src="/images/" alt="black heart" />
       <span> Nifty Penguin Magic </span>
     </div>
     <nav>
@@ -141,10 +141,10 @@ Refresh the page in Chrome, and if your _style.css_ is linked properly, the page
 Before we move forward, add at the very top of your _style.css_ file the following lines:
 
 ```css
-@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url("https://fonts.googleapis.com/css?family=Poppins");
 
 body {
-  font-family: 'Poppins';
+  font-family: "Poppins";
 }
 ```
 
