@@ -1,0 +1,260 @@
+/* General */ 
+
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body {
+  font-family: 'Poppins';
+}
+
+/* Blue	rgb(67, 163, 230);
+Dark Blue	rgb(25, 33, 41);
+Text	rgb(0, 0, 0); */
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 4em;
+  text-align: center;
+  margin: 5px;
+}
+
+h2 {
+  font-size: 1.4em;
+  text-align: center;
+  
+}
+
+
+h3 {
+  font-size: 1em;
+  text-align: left;
+  line-height: 1em;
+}
+
+/* Header & Navigation */
+
+header > div {
+  padding: 0 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+}
+
+nav {
+  width: 600px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+.blackHeart {
+  width: 20px;
+  margin-right: 1rem;
+}
+
+
+#logo {
+  height:25px;
+  padding: 10px 30px 10px 10px;
+}
+
+#search-icon {
+  height:25px;
+  margin: 2px 0 0 2px;
+}
+
+.subnav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  align-content: center;
+  padding: 0 25px;
+  display: flex
+}
+
+.subnav-box1 {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+}
+
+.subnav-box1 input{
+  border-style:none;
+  text-align: left; 
+  padding: 14.5px;
+  width: 700px
+}
+
+#searchbox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: stretch;
+  background: rgb(25, 33, 41,0.2);
+  margin: 5px 0px;
+  border-style: none;
+}
+
+
+.subnav-box1 button {
+  border-style: none;
+  padding: 14.5px;
+  background-color: #FB3B49;
+  color: white;
+  margin: 5px 0px;
+}
+
+
+.subnav-box2 {
+  justify-content: flex-end;
+}
+
+/* Link styling */ 
+
+
+.link-btn-red{
+  background-color: #FB3B49;
+  color: white;
+  box-shadow: 8px 8px 0 rgba(251,59,73,.2); 
+
+}
+
+.link-btn-empty{
+  text-decoration: none;
+  color: black;
+  margin: 10px 0;
+}
+
+.link-btn-empty-with-border{
+  text-decoration: none;
+  color: black;
+  margin: 30px;
+  border: solid rgb(25, 33, 41,0.5) 1px;
+  padding: 5px 10px;
+}
+
+/* Section 1 Intro */ 
+
+#intro {
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 600px;
+  background-color: rgba(232,217,217,.3)
+}
+
+#intro article {
+  width: 400px;
+  padding: 10px;
+}
+
+.link-btn {
+  padding: 30px 56px;
+}
+
+.link-btn a {
+  font-family: 'Poppins'";
+  font-size: 2em;
+  letter-spacing: 0.5px;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 30px;
+}
+
+.link-btn-black{
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  padding: 10px 40px; 
+  margin: 30px;
+}
+
+/* Section 2 Quote */ 
+
+#triangle {
+  width: 10px;
+  height: 10px;
+}
+#quote {
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 600px;
+}
+
+.heading-background {
+   background-color: rgba(255,204,53,.4);
+   transform: skew(9deg,0deg);
+   font-style: italic;
+   padding: 0 15px;
+   margin: 10px 0;
+}
+
+#quote article {
+  width: 500px;
+  padding: 10px;
+  text-align: center;
+}
+
+#quote img {
+  height: 30%;
+  width: auto;
+  margin: 30px 0;
+ 
+}
+/* Section 3 Boxes */ 
+#boxes img {
+  height: 30px;
+  width: 30px;
+  position: left;
+  margin: 5px 0;
+}
+
+#boxes h3 {
+  color:#ED1C24;
+}
+
+#boxes {
+  padding: 75px 0;
+  margin: 0 auto;
+}
+
+#boxes > div > article {
+  display: flex; 
+  justify-content: space between;
+  align-items: left;
+  flex-direction: column;
+  margin: 0 30px;
+}
+
+#boxes div {
+  margin: 0 80px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction:row;
+}
+
+#boxes .box-text {
+  font size: 0.4em;
+  text-align: left;
+  margin: 40px 0;
+}
+
+
+/* Footer */ 
