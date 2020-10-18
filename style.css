@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
+
+
 body {
   font-family: 'Poppins';
 }
+
 header > div {
     padding: 0 25px;
     display: flex;
@@ -14,16 +17,7 @@ header > div {
   nav {
     width: 600px;
   }
-  .form{
-      padding: 10px;
-  }
-  .bar{
-      width: 400px;
-      border: none;
-  }
-  .form-img{
-      height: 30px;
-  }
+  
   nav ul {
     list-style: none;
     display: flex;
@@ -40,46 +34,178 @@ header > div {
     width: 20px;
     margin-right: 1rem;
   }
+  div > form{
+    padding-top: 10px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 
-.search{
+  .logo{
+    height: 24px;
+    padding: 27px;
+  }
+
+  .lupa{
+    height: 33px;
+    background-color: #e0dede;
+  }
+
+  form > input{
+    width: 900px;
+    background-color: #e0dede;
+    border: none;
+    color: #a9a9a9;
+    display: flex;
+    justify-self: left;
+    height: 33px;
+    background: url(images/magnifying-glass.png) no-repeat 10px left;
+    padding-left: 33px;
+  }
+  .search{
+    background-color: #fb3e44;
+    border: none;
     color: white;
-}
-  input{
-      color: rgba(0,0,0,.05);
+    height: 45px;
+    width: 70px;
+    margin: 28px;
+    font-weight: bold;
+    box-shadow: 2px 2px 2px #fb3e44;
   }
+
+  .form{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding-bottom: 15px;
+    box-shadow: 0px 2px 3px rgb(179, 178, 178);
+  }
+  .join{
+    margin-top: 7px;
+    border: none;
+    box-shadow: 0px 0px 2px black;
+    font-weight: bold;
+    color: #919191;
+    width: 60px;
+  }
+  .log{
+    margin-top: 7px;
+    border: none;
+    font-weight: bold;
+    color: #919191;
+    width: 60px;
+  }
+
   .section-1{
-      height: 600px;
-      width: auto;
-      background-color: rgba(232,217,217,.3);
-      align-items: center;
-      align-content: center;
-      display: flex;
-      flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 600px;
   }
-  .section-1 > button{
-      background-color: #FB3B49;
-      box-shadow: 8px 8px 0 rgba(251,59,73,.2);
-      height: 500px;
+
+  .section-1 > h1{
+    font-size: 70px;
+    font-weight: bold;
+    color: black;
+  }
+
+  .section-1 > article{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .section-1-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .section-1-buttons > button{
+    width: 240px;
+    height: 60px;
+    font-size: 20px;
+  }
+
+  .section-1-buttons > .log{
+    color: black;
   }
   
-  .section-2 h3{
-      background-color: rgba(255,204,53,.4);
-      transform: skew(9deg,0deg);
-      font-style: italic;
-  }
   .section-2{
-      height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 600px;
   }
+
+  .section-2 > article{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(100, 100, 100);
+  }
+
+  .hexa{
+    height: 240px;
+    margin-bottom: 25px;
+  }
+
+  .section-2 > h2{
+    height: 40px;
+    font-size: 30px;
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+    font-style: italic
+  }
+
   .section-3{
-      height: 500px;
-      flex-direction: row;
-      display: flex;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding: 20px;
   }
-  .section-3 > h4{
-      color: #ED1C24;
+
+  .section-3-img{
+    height: 50px;
   }
-  .cr{
-      color: white;
-      box-shadow: 8px 8px 0 rgba(128,83,35,.2);
-      background-color: black;
+
+  h4{
+    color: #fb3e44;
+  }
+
+  .section-3 > div{
+    color:  rgb(100, 100, 100);
+    margin: 40px;
+  }
+
+  .createOrg{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    box-shadow: 2px 2px 2px black;
+    width: 300px;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    font-size: 20px;
+  }
+  
+  .lastButton{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
