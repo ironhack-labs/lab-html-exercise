@@ -261,3 +261,14 @@ In this exercise, you've built a clone of a piece of the npm home page. This sit
 This concludes the HTML / CSS module. We are proud of you!
 
 _The Ironhack team :heart:_
+
+
+    width: 900px;
+    background-color: #e0dede;
+    border: none;
+    color: #a9a9a9;
+    display: flex;
+    justify-self: left;
+    height: 33px;
+    background: url(images/magnifying-glass.png) no-repeat 10px left;
+    padding-left: 33px;
