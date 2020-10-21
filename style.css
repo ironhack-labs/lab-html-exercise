@@ -1,8 +1,32 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
-body {
-  font-family: 'Poppins';
+@font-face {
+    font-family: 'Poppins Regular';
+    src: url('police/Poppins-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
 }
+@font-face {
+    font-family: 'Poppins Medium';
+    src: url('police/Poppins-Medium.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins Bold';
+    src: url('police/Poppins-Bold.otf');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+body {
+  font-family: 'Poppins Regular';
+  font-weight: 400;
+}
+
+/*Header*/
 
 header > div {
     padding: 0 25px;
@@ -10,43 +34,58 @@ header > div {
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid lightgray;
-  }
-  
-  nav {
-    width: 600px;
-  }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  nav a {
-    text-decoration: none;
-    color: black;
-  }
-
-/*First attempt
-
-.nav-bar
-{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-bottom: 0;
-    margin-bottom: 0;
 }
 
-.nav-bar h2
-{
+.logo {
+    font-family: 'Poppins';
     font-size: 0.9em;
+    letter-spacing: 0.015625em;
     display: flex;
     flex-direction: row;
     justify-content: start;
     align-items: center;
 }
+
+.logo img {
+    width: 2.5%;
+    margin-right: 25px;;
+}
+
+.nav-bar {
+    font-family: 'Poppins Medium';
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+  
+nav {
+    width: 600px;
+}
+  
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+nav a {
+    text-decoration: none;
+    color: black;
+    padding-right: 20px;}
+
+/*Section 1*/
+
+h1{
+    font-family: 'Poppins Bold';
+    font-size: 5rem;
+    text-align: center;
+}
+
+/*First attempt
+
+
 
 .nav-bar span
 {
