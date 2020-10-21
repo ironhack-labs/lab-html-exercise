@@ -24,6 +24,12 @@
 body {
   font-family: 'Poppins Regular';
   font-weight: 400;
+  margin: 0;
+}
+
+#main-page {
+    width: 95%;
+    margin: auto;
 }
 
 /*Header*/
@@ -37,8 +43,9 @@ header > div {
 }
 
 .logo {
-    font-family: 'Poppins';
+    font-family: 'Poppins Regular';
     font-size: 0.9em;
+    font-weight: 100;
     letter-spacing: 0.015625em;
     display: flex;
     flex-direction: row;
@@ -52,7 +59,8 @@ header > div {
 }
 
 .nav-bar {
-    font-family: 'Poppins Medium';
+    font-family: 'Poppins Regular';
+    font-weight: 700;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -71,9 +79,18 @@ nav ul {
 }
   
 nav a {
+    letter-spacing: 0.015625em;
+    font-size: .875rem;
     text-decoration: none;
     color: black;
-    padding-right: 20px;}
+    padding: 10px;
+}
+
+nav a:hover {
+    color: gray;
+}
+
+
 
 /*Section 1*/
 
@@ -83,55 +100,59 @@ h1{
     text-align: center;
 }
 
-/*First attempt
-
-
-
-.nav-bar span
-{
-    margin: 0 25px 0 10px;
-}
-
-.nav-bar ul
-{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-.nav-bar li
-{
-    list-style-type: none;
-    padding-right: 20px;
-}
-
-.nav-bar a
-{
-    text-decoration: none;
-    color: black;
-}
-
-.search-login img
-{
-    width: 5%;
-    height: 5%;
-}
-
 .search-login
 {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    height: 55px;
+}
+
+.search-login img
+{
+    width: 5%;
 }
 
 .search-bar
 {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    padding: O 20px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
 }
+
+form input {
+    background-color: rgba(0,0,0,.05);
+    height: 35px;
+    border: 0;
+}
+
+.search {
+    margin: auto;
+    display: flex;
+    width: 50px;
+    height: 37px;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgba(0,0,0,.05);
+}
+
+.search img {
+    padding-left: 15px;
+    width: 40%;
+    height: 50%;
+    opacity: 0.7;
+    padding-right: 9px;
+}
+
+form button {
+    
+}
+
+/*First attempt
 
 .amazing-things
 {
