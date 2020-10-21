@@ -1,16 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
 html, body
 {
-    margin: 5px;
+    margin: 15px;
     color: black;
+    font-family: Poppins;
 }
 
-/*Header*/
+header > div {
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+  }
+  
+  nav {
+    width: 600px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: black;
+  }
+
+/*First attempt
 
 .nav-bar
 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
 
 .nav-bar h2
@@ -24,7 +53,7 @@ html, body
 
 .nav-bar span
 {
-    margin: 0 25px 0 20px;
+    margin: 0 25px 0 10px;
 }
 
 .nav-bar ul
@@ -68,4 +97,33 @@ html, body
     padding: O 20px;
 }
 
+.amazing-things
+{
+    display: flex;
+    flex-direction: column;
+    background-color: #F8F3F3;
+    text-align: center;
+    
+}
+
+.amazing-things > h1
+{
+    font-size: 6em;
+    font-weight-absolute: bolder;
+}
+
+.org
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.org img
+{
+    width: 30%;
+
+}
+*/
 
