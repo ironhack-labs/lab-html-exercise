@@ -90,14 +90,8 @@ nav a:hover {
     color: gray;
 }
 
-
-
-/*Section 1*/
-
-h1{
-    font-family: 'Poppins Bold';
-    font-size: 5rem;
-    text-align: center;
+button {
+    cursor: pointer;
 }
 
 .search-login
@@ -127,6 +121,7 @@ form input {
     background-color: rgba(0,0,0,.05);
     height: 35px;
     border: 0;
+    margin-bottom: 5px;
 }
 
 .search {
@@ -149,38 +144,86 @@ form input {
 }
 
 form button {
-    
+    border: 0;
+    background-color: red;
+    padding: 15px;
+    display: inline-block;
 }
 
-/*First attempt
+/*Section 1*/
 
-.amazing-things
-{
+.amazing-things {
     display: flex;
     flex-direction: column;
-    background-color: #F8F3F3;
+    justify-content: space-around;
     text-align: center;
-    
+    height: 500px;
+    background-color: rgba(232,217,217,.3);
+    padding-bottom: 100px;
+    border-top: 0px;
 }
 
-.amazing-things > h1
-{
-    font-size: 6em;
-    font-weight-absolute: bolder;
+h1{
+    font-family: 'Poppins Bold';
+    font-size: 5rem;
+    text-align: center;
 }
 
-.org
+.amazing-things article {
+    margin: auto;
+    width: 50%;
+
+}
+
+/*Second section*/
+
+.best
 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 100px;
 }
 
-.org img
+.best img
 {
-    width: 30%;
-
+    width: 17.5%;
 }
-*/
 
+/*Third section*/
+
+.org {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.categories
+{
+    display: flex;
+    flex-flow: nowrap row;
+}
+
+.categories div
+{
+    width: 25%;
+}
+
+.categories img
+{
+    width: 12%;
+}
+
+.org-button {
+    width: 35%;
+    border: 0;
+    box-shadow: 5px 5px 0px lightgrey;
+    padding: 20px;
+    background-color: black;
+    font-family: 'Poppins Medium';
+    font-size: 1.2em;
+    color: white;
+}
