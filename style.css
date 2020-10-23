@@ -2,6 +2,7 @@
 
 body {
   font-family: 'Poppins';
+  width: auto;
 }
 
 /*
@@ -58,25 +59,38 @@ nav a {
     height: 30px;
     padding: 2px;
     margin-left: 25px;
-    background-color:brown;
+    background-color:rgba(0,0,0,.05);
 }
 
 .search input {
-    width: 1300px;
+    width: 1400px;
     height: 30px;
     padding: 2px;
     border: none;
     margin: 0px;
-    background-color: brown;
+    background-color: rgba(0,0,0,.05);
 }
 
-button {
+header button {
     background-color:#fb3e44;
     color: white;
     border: none;
-    padding: 10px;
+    padding: 10px 15px 25px 15px;
     height: 30px;
     margin-left: 0px;
+}
+
+.join{
+    margin: 0px 30px;
+    text-decoration: none;
+    color: black;
+    border: grey solid 1px;
+    padding: 2px 10px;
+}
+
+.log-in{
+    text-decoration: none;
+    color: black;
 }
 
 #section1 {
@@ -85,29 +99,101 @@ button {
     align-items: center;
     flex-direction: column;
     height: 600px;
-    background-color: rgba(236, 30, 30, 0.3);
+    background-color: rgba(232, 217, 217, 0.3);
 }
 
 h1{
     font-size: 100px;
-    margin: ;
 }
 
 #section1 article{
     text-align: center;
     margin-bottom: 30px;
+    width: 25%;
+}
+
+#section1 div{
+
 }
 
 #section1 a{
     text-decoration: none;
     font-weight: bold;
-    border: brown 1px solid;
+    font-size: 18px;
+    width: 25%;
     margin: 100px;
     padding: 10px;
 }
 
+.plans{
+    color: white;
+    background-color: #FB3B49;
+    box-shadow: rgba(251,59,73,.2) 8px 8px 0px;
+}
 
+.free{
+    color: black;
+    font-weight: bolder;
+    background-color: white;
+}
 
+#section2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 400px;
+}
 
+#section2 img {
+    width: 130px;
+    height: 120px;
+}
+h2{
+    background-color: rgba(255,204,53,.4);
+    padding: 2px 20px 0px 20px;
+    transform: skew(9deg, 0deg);
+    font-style: italic;
+}
 
+#section2 article{
+    width: 500px;
+    text-align: center;
+    font-size: 10px;
+}
+#section3 {
+    height: 300px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
+    align-items: flex-start ;
+    padding: 10px;
+}
 
+#section3 img {
+    width: 40px;
+    
+}
+
+h3 {
+    color:  #ED1C24;
+}
+
+#section3 div {
+    width: 220px;
+    margin: 40px;
+}
+
+.create-org {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 800px;
+    padding: 10px 75px;
+    color: white;
+    text-decoration: none;
+    background-color: black;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+}
