@@ -141,10 +141,10 @@ Refresh the page in Chrome, and if your _style.css_ is linked properly, the page
 Before we move forward, add at the very top of your _style.css_ file the following lines:
 
 ```css
-@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url("https://fonts.googleapis.com/css?family=Poppins");
 
 body {
-  font-family: 'Poppins';
+  font-family: "Poppins";
 }
 ```
 
@@ -201,7 +201,7 @@ _Useful information_:
 - _form button letters color_: white
 
 As you can see, a lot of _flexbox_ is involved - if needed, revise the lesson again or sneak peek into the official docs (use your Google skills) or use this [resource](https://flexbox.help/) as a help.
-
+class="container"
 Make sure to use flexbox at any time where you need to position elements on a specific place - practice as much as possible: the more you understand now, the easier will be later.
 
 #### CSS 3 | section 1
