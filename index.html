@@ -12,8 +12,8 @@
     <!-- HEADER -->
     <header id="header">
         
-        <!-- First div: Icon, prhase and nav-bar -->
-        <div>
+        <!-- First div: Icon, phrase and nav-bar -->
+        <div class="first-div">
             <!-- Icon and Phrase  -->
             <div>
                 <img class="blackHeart" src="./css/images/black-heart.png" alt="black heart" />
@@ -21,7 +21,7 @@
             </div>
 
             <!-- nav-bar -->
-            <nav id="nav-bar">
+            <nav>
                 <ul>
                     <li><a href="#"> npm Enterprise </a></li>
                     <li><a href="#"> Products </a></li>
@@ -34,18 +34,18 @@
         </div>
         
         <!-- Second div: logo and search bar -->
-        <div id="search-bar">
+        <div class="second-div">
             <!-- npm logo  -->
-            <img src="./css/images/npm-logo.png" alt="npm-logo">
+            <img src="./css/images/npm-logo.png" alt="npm-logo" class="npm-logo">
             <!-- search bar -->
-            <form action="" method="get">
-                <img src="./css/images/magnifying-glass.png" alt="">
-                <input type="text" placeholder="Search packages"/>
-                <input type="button" value="Search"/>
+            <form action="/url" method="post">
+                <img src="./css/images/magnifying-glass.png" alt="magnifying-glass-img" class="magnifying-glass-img">
+                <input type="text" placeholder="Search packages" class="search-bar"/>
+                <input type="button" value="Search" class="search-button"/>
             </form>
             <!-- buttons: join and login -->
-            <a href="#">Join</a>
-            <a href="#">Log in</a>
+            <input type="button" value="Join" class="join-link/>
+            <a href="#" class="login-link">Log in</a>
         </div>
 
     </header>
