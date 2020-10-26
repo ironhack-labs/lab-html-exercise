@@ -13,11 +13,11 @@
     <header id="header">
         
         <!-- First div: Icon, phrase and nav-bar -->
-        <div class="first-div">
+        <div class="header-first-div">
             <!-- Icon and Phrase  -->
             <div>
                 <img class="blackHeart" src="./css/images/black-heart.png" alt="black heart" />
-                <span> Nifty Penguin Magic </span>
+                <span class="phrase"> Nifty Penguin Magic </span>
             </div>
 
             <!-- nav-bar -->
@@ -34,17 +34,21 @@
         </div>
         
         <!-- Second div: logo and search bar -->
-        <div class="second-div">
+        <div class="header-second-div">
             <!-- npm logo  -->
-            <img src="./css/images/npm-logo.png" alt="npm-logo" class="npm-logo">
+            <div>
+                <img src="./css/images/npm-logo.png" alt="npm-logo" class="npm-logo">
+            </div>
             <!-- search bar -->
-            <form action="/url" method="post">
-                <img src="./css/images/magnifying-glass.png" alt="magnifying-glass-img" class="magnifying-glass-img">
+            <form action="/url" method="post" class="form">
+                <div>
+                    <img src="./css/images/magnifying-glass.png" alt="magnifying-glass-img" class="magnifying-glass-img">
+                </div>
                 <input type="text" placeholder="Search packages" class="search-bar"/>
                 <input type="button" value="Search" class="search-button"/>
             </form>
             <!-- buttons: join and login -->
-            <input type="button" value="Join" class="join-link/>
+            <input type="button" value="Join" class="join-link"/>
             <a href="#" class="login-link">Log in</a>
         </div>
 

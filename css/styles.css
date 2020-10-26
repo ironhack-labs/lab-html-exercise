@@ -6,101 +6,109 @@ body {
 
 /* HEADER (main) */
 header > div {
-    padding: 0 25px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    padding: 0 25px; /* Given */
+    display: flex; /* Given */
+    justify-content: space-between; /* Given */
+    align-items: center; /* Given */
+    border-bottom: 1px solid lightgray; /* Given */
 }
 
 /* HEADER (first div): Icon, phrase and nav-bar*/
-header .first-div {
-    border-bottom: 1px solid lightgray;
+.header-first-div {
     /* margin-bottom: 5px; */
 }
 
 .blackHeart {
-    width: 20px;
-    margin-right: 1rem;
+    width: 20px; /* Given */
+    margin-right: 1rem; /* Given */
 }
 
-nav {
-    width: 600px;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-nav a {
-    text-decoration: none;
-    color: black;
+.phrase {
     font-size: smaller;
 }
 
-/* HEADER (second div): logo and search bar*/
-header .second-div {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+nav {
+    width: 600px; /* Given */
+}
+
+nav ul {
+    list-style: none; /* Given */
+    display: flex; /* Given */
+    justify-content: space-between; /* Given */
+    align-items: center; /* Given */
+    font-size: smaller;
+}
+
+nav a {
+    text-decoration: none; /* Given */
+    color: black; /* Given */
+}
+
+/* HEADER (second div) - logo and search bar*/
+.header-second-div {
+    padding: 10px 25px 10px 20px;
+}
+
+.header-second-div > * {
+    margin-left: 10px;
 }
 
 .npm-logo {
-    position: relative;
-    top: 10px;
+    display: flex;
+    align-self: center;
     width: 70px;
 }
 
-/* Form */
-header form {
-    padding: 0;
+/* HEADER (second div) - Form */
+.header-second-div form {
+    box-sizing: border-box;
+    display: flex;
+    flex: 1;
+    position: relative;
+    justify-content: center;
+    align-items: baseline;
 }
 
 .magnifying-glass-img {
-    background-color: rgba(0,0,0,.05);
-    box-sizing: border-box;
-    height: 30px;
-    padding: 5px;
-    position: relative;
-    left: 4px;
-    top: 11px;
-    width: 30px;
+    height: 20px;
+    margin-left: 5px;
+    position: absolute;
+    top: 5px;
+    width: 20px; 
 }
 
-/* OJO: Revisar pseudo selector hover */
 .search-bar {
     background-color: rgba(0,0,0,.05);
-    border-width: 0px;
-    box-sizing: border-box;
-    height: 30px;
-    margin: auto 0px;
-    width: 1000px;
+    border: 0px;
+    height: 20px;
+    padding: 5px 10px 5px 40px;
+    width: 1040px;
 }
 
 .search-button {
     background-color: #fb3e44;
-    border-width: 0px;
-    box-sizing: border-box;
+    border: 0px;
     color: white;
-    font-size: small;
+    font-size: 12px;
+    font-weight: lighter;
     height: 30px;
+    padding: padding: 5px 10px 5px 40px;
     width: 60px;
-    position: relative;
-    right: 5px;
 }
 
 .login-link {
-    color: grey;
+    color: rgba(87, 95, 93);
+    font-size: smaller;
     text-decoration: none;
-    position: relative;
-    top: 10px;
 }
 
 .join-link {
-    border: 0.7px;
-}
+    background-color: white;
+    border-radius: 1.5px;
+    border-width: 1px;
+    font-size: smaller; /* No consigo reducir el tamaño de la fuente */
+    padding: 4px 10px;
+} 
 
 
 
