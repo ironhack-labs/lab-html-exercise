@@ -1,232 +1,218 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
-
 body {
-  font-family: 'Poppins';
+	font-family: 'Poppins';
 }
+
 
 /* Nav bar styling */
 
-header > div {
-    padding: 0 25px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid lightgray;
-  }
-  
-  nav {
-    width: 600px;
-  }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  nav a {
-    text-decoration: none;
-    color: black;
-  }
-  
-  .blackHeart {
-    width: 20px;
-    margin-right: 1rem;
-  }
+header>div {
+	padding: 0 25px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid lightgray;
+}
 
-  .search-bar {
+nav {
+	width: 600px;
+}
 
-    width: -webkit-fill-available;
-    padding: 10px;
-    border: 1px solid #f2f2f2;
-    background-color: #f2f2f2;
-    font-family: monospace;
-  }
+nav ul {
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
 
-  .nav-bar-top {
-    font-size: 13px;
-    font-weight: bold;
-  }
+nav a {
+	text-decoration: none;
+	color: black;
+}
+
+.blackHeart {
+	width: 20px;
+	margin-right: 1rem;
+}
+
+.search-bar {
+	width: -webkit-fill-available;
+	padding: 10px;
+	border: 1px solid #f2f2f2;
+	background-color: #f2f2f2;
+	font-family: monospace;
+}
+
+.nav-bar-top {
+	font-size: 13px;
+	font-weight: bold;
+}
+
 
 /* End of navbar styling */
 
+
 /* section styling */
 
-  #top {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 600px;
-    background-color: rgba(232,217,217,.3);
-  }
+#top {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 600px;
+	background-color: rgba(232, 217, 217, .3);
+}
 
-  #mid {
+#mid {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-bottom: 100px;
+}
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-bottom: 100px;
-  }
+#low {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin-bottom: 60px;
+}
 
-  #low {
+.child-low {
+	flex: 0 0 33.333333%;
+	max-width: 260px;
+}
 
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-
-  }
-
-  .child-low {
-    flex: 0 0 33.333333%;
-    max-width: 260px;
-
-  }
 
 /* End of section styling */
+
 
 /* button styling */
 
 .search-button {
-    background-color: #FB3B49;
-    border: none;
-    padding: 8px 20px 9px 3px;
-    color: white;
-    font-family: 'Poppins';
-
+	background-color: #FB3B49;
+	border: none;
+	padding: 8px 20px 9px 3px;
+	color: white;
+	font-family: 'Poppins';
 }
 
-  .button-red {
-
-    background-color: #FB3B49;
-    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
-    max-width: 16rem;
-    padding-left: 4rem;
-    padding-right: 4rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    text-decoration: none;
-    color: white;
-
-
-  }
-
-  .button-white {
-
-    max-width: 16rem;
-    padding-left: 4rem;
-    padding-right: 4rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    background-color: white;
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    margin-left: 30px;
-  }
-
-  .button-black {
-    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
-    color: white;
-    background-color: black;
-    flex-basis: 30%;
-    margin-top: 50px;
-    text-align: center;
-    padding: 10px;
+.button-red {
+	background-color: #FB3B49;
+	box-shadow: 8px 8px 0 rgba(251, 59, 73, .2);
+	max-width: 16rem;
+	padding-left: 4rem;
+	padding-right: 4rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	text-decoration: none;
+	color: white;
 }
 
+.button-white {
+	max-width: 16rem;
+	padding-left: 4rem;
+	padding-right: 4rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	background-color: white;
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+	margin-left: 30px;
+}
 
+.button-black {
+	box-shadow: 8px 8px 0 rgba(128, 83, 35, .2);
+	color: white;
+	background-color: black;
+	flex-basis: 30%;
+	margin-top: 50px;
+	text-align: center;
+	padding: 10px;
+}
 
+.button-join {
+	font-size: 13px;
+	border: 1px solid black;
+	padding: 6px;
+	text-decoration: none;
+	color: black;
+	margin-left: 20px;
+}
 
-  .button-join {
-    font-size: 13px;
-    border: 1px solid black;
-    padding: 6px;
-    text-decoration: none;
-    color: black;
-    margin-left: 20px;
-  }
+.button-login {
+	font-size: 13px;
+	text-decoration: none;
+	color: grey;
+	margin-left: 15px;
+	width: 60px;
+}
 
-  .button-login{
-    font-size: 13px;
-    text-decoration: none;
-    color: grey;
-    margin-left: 15px;
-    width: 60px;
-
-  }
 
 /* End of button styling */
+
 
 /* Image & icon styling */
 
 .npm-logo {
-width: 65px;
-margin: 20px 10px 20px -15px;
-
+	width: 65px;
+	margin: 20px 10px 20px -15px;
 }
 
 .search-logo {
-    width: 22px;
-    padding: 7.5px;
-    background-color:#f2f2f2;
-    
-    }
+	width: 22px;
+	padding: 7.5px;
+	background-color: #f2f2f2;
+}
 
-  .triangle-hexagon {
-    height: fit-content;
-    width: fit-content;
-    margin: 50px 0 50px 0;
+.triangle-hexagon {
+	height: fit-content;
+	width: fit-content;
+	margin: 50px 0 50px 0;
+}
 
-  }
-
-  .icon{
-    max-width: 50px;
-    
-      }
-
- /* End of icon styling */     
-
-  /* heading styling */
-
-  h1{
-    font-size: 5rem;
-    font-weight: 600;
-    font-family: Poppins,sans-serif;
-    line-height: 1.25;
-    margin: 0px 0px 50px;
-  }
-
-  h2 {
-    background-color: rgba(255,204,53,.4);
-    transform: skew(9deg,0deg);
-    font-style: italic;
-    font-weight: bold;
-    padding: 0 20px 0 20px;
-
-  }
-
-  h3 {
-    color: #ED1C24;
-
-  }
+.icon {
+	max-width: 50px;
+}
 
 
-  /*article styling */
-
-  #top >  article,
-   #mid > article {
-
-    text-align: center;
-    width: 55%;
+/* End of icon styling */
 
 
-  }
+/* heading styling */
 
-  #top > div {
-    margin-top: 60px;
-  }
+h1 {
+	font-size: 5rem;
+	font-weight: 600;
+	font-family: Poppins, sans-serif;
+	line-height: 1.25;
+	margin: 0px 0px 50px;
+}
+
+h2 {
+	background-color: rgba(255, 204, 53, .4);
+	transform: skew(9deg, 0deg);
+	font-style: italic;
+	font-weight: bold;
+	padding: 0 20px 0 20px;
+}
+
+h3 {
+	color: #ED1C24;
+}
+
+
+/*article styling */
+
+#top>article,
+#mid>article {
+	text-align: center;
+	width: 55%;
+}
+
+#top>div {
+	margin-top: 60px;
+}
