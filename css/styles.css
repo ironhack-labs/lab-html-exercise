@@ -11,6 +11,10 @@ h1 {
 }
 
 /* HEADER (main) */
+#header {
+    margin-top: 15px;
+}
+
 header > div {
     padding: 0 25px; /* Given */
     display: flex; /* Given */
@@ -130,12 +134,14 @@ nav a {
 #general-info h1 {
     margin: 0px auto 30px;
     position: absolute;
-    top: 85px;
+    top: 120px;
 }
 
 #general-info article {
     text-align: center;
     width: 500px;
+    position: relative;
+    top: 40px;
 }
 
 #general-info a {
@@ -148,7 +154,7 @@ nav a {
     align-items: center;
     font-weight: bolder;
     position: relative;
-    top: 30px;
+    top: 75px;
     width: 550px;
 }
 
@@ -167,7 +173,6 @@ nav a {
 
 /* SECTION 2: About */
 #about {
-    background-color: ;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -194,3 +199,58 @@ nav a {
     text-align: center;
     font-size: 16px;
 }
+
+/* SECTION 3: Features */
+#features {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 400px;
+    width: 1300px;
+    margin: 135px auto 0px 100px;
+}
+
+#features h3 {
+    color: #ED1C24;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#features > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.feature-img {
+    height: 40px;
+    width: 40px;
+}
+
+.features p {
+    margin: auto 0px auto 0;
+    font-size: 14px;
+    padding-right: 70px;
+}
+
+.org-box {
+    background-color: black;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    border: none;
+    color: white;
+    margin: auto;
+    padding: 15px 40px;
+    height: 60px;
+    width: 450px;
+    font-size: 19px;
+    font-weight: bolder;
+}
+
