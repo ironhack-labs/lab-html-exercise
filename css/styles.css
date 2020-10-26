@@ -2,6 +2,12 @@
 
 body {
   font-family: 'Poppins', sans-serif;
+  margin: 0;
+}
+
+h1 {
+    font-size: 5rem;
+    font-weight: 800;
 }
 
 /* HEADER (main) */
@@ -14,10 +20,6 @@ header > div {
 }
 
 /* HEADER (first div): Icon, phrase and nav-bar*/
-.header-first-div {
-    /* margin-bottom: 5px; */
-}
-
 .blackHeart {
     width: 20px; /* Given */
     margin-right: 1rem; /* Given */
@@ -25,6 +27,7 @@ header > div {
 
 .phrase {
     font-size: smaller;
+    font-weight: bolder;
 }
 
 nav {
@@ -37,6 +40,7 @@ nav ul {
     justify-content: space-between; /* Given */
     align-items: center; /* Given */
     font-size: smaller;
+    font-weight: bolder;
 }
 
 nav a {
@@ -46,12 +50,12 @@ nav a {
 
 /* HEADER (second div) - logo and search bar*/
 .header-second-div {
-    padding: 10px 25px 10px 20px;
+    padding: 10px 25px 10px 0px;
     box-sizing: border-box;
 }
 
 .header-second-div > * {
-    margin-left: 10px;
+    margin-left: 30px;
 }
 
 .npm-logo {
@@ -83,7 +87,6 @@ nav a {
     border: 0px;
     height: 20px;
     padding: 5px 10px 5px 40px;
-    /*width: 1040px;*/
     display: flex;
     flex: 1;
 }
@@ -106,12 +109,58 @@ nav a {
 
 .join-link {
     background-color: white;
+    border-color: rgba(163, 165, 165);
     border-radius: 1.5px;
     border-width: 1px;
     font-size: smaller; /* No consigo reducir el tamaño de la fuente */
     padding: 4px 10px;
 } 
 
+/* SECTION 1: General Info */
+#general-info {
+    background-color: rgba(232,217,217,.3); /* Given */
+    height: 600px; /* Given */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
 
+#general-info h1 {
+    margin: 0px auto 30px;
+    position: absolute;
+    top: 85px;
+}
 
+#general-info article {
+    text-align: center;
+    width: 500px;
+}
 
+#general-info a {
+    text-decoration: none;
+}
+
+.plans-and-join {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: bolder;
+    position: relative;
+    top: 30px;
+    width: 550px;
+}
+
+.see-plans-btn {
+    background-color: #FB3B49; /* Given */
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2); /* Given */
+    color: white;
+    padding: 15px 70px;
+}
+
+.join-for-free {
+    background-color: white;
+    color: black;
+    padding: 15px 70px
+}
