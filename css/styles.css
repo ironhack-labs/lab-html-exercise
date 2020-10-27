@@ -55,7 +55,6 @@ nav a {
 /* HEADER (second div) - logo and search bar*/
 .header-second-div {
     padding: 10px 25px 10px 0px;
-    box-sizing: border-box;
 }
 
 .header-second-div > * {
@@ -75,21 +74,21 @@ nav a {
     flex: 1;
     position: relative;
     justify-content: center;
-    align-items: baseline;
+    align-items: center;
 }
 
 .magnifying-glass-img {
-    height: 20px;
-    margin-left: 5px;
+    height: 18px;
+    margin-left: 10px;
     position: absolute;
-    top: 5px;
-    width: 20px; 
+    top: 8px;
+    width: 18px; 
 }
 
 .search-bar {
     background-color: rgba(0,0,0,.05);
     border: 0px;
-    height: 20px;
+    height: 25px;
     padding: 5px 10px 5px 40px;
     display: flex;
     flex: 1;
@@ -101,7 +100,7 @@ nav a {
     color: white;
     font-size: 12px;
     font-weight: lighter;
-    height: 30px;
+    height: 35px;
     width: 60px;
 }
 
@@ -116,8 +115,9 @@ nav a {
     border-color: rgba(163, 165, 165);
     border-radius: 1.5px;
     border-width: 1px;
-    font-size: smaller; /* No consigo reducir el tamaño de la fuente */
-    padding: 4px 10px;
+    font-size: 12px;
+    font-weight: bolder;
+    padding: 4px 12px;
 } 
 
 /* SECTION 1: General Info */
@@ -191,13 +191,13 @@ nav a {
     padding: 0px 40px;
     transform: skew(9deg,0deg);
     font-style: italic;
-    font-size: 40px;
+    font-size: 38px;
 }
 
 #about p {
     margin: auto 300px;
     text-align: center;
-    font-size: 16px;
+    font-size: 17px;
 }
 
 /* SECTION 3: Features */
@@ -205,9 +205,11 @@ nav a {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    height: 400px;
+    align-items: center;
+    height: 450px;
     width: 1300px;
-    margin: 135px auto 0px 100px;
+    margin: auto
+    /* margin: 135px auto 0px 100px; */
 }
 
 #features h3 {
@@ -219,8 +221,8 @@ nav a {
 #features > div {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-evenly;
+    width: 1300px;
 }
 
 .features {
@@ -228,17 +230,20 @@ nav a {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .feature-img {
-    height: 40px;
-    width: 40px;
+    height: 30px;
+    width: 35px;
 }
 
 .features p {
-    margin: auto 0px auto 0;
+    margin: auto 30px auto 0;
     font-size: 14px;
-    padding-right: 70px;
+    font-weight: lighter;
+    width: 13.75rem;
 }
 
 .org-box {
