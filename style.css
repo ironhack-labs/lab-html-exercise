@@ -29,33 +29,79 @@ color: black;}
 .blackHeart {width: 20px;
 margin-right: 1rem;}
 
-.form {color: rgba(0,0, 0,.05); display: flex; } 
 
-button{background-color: #fb3e44; 
+button{
+    background-color: #fb3e44; 
     color: white;
-    background-color: #FB3B49;
     box-shadow: 8px 8px 0 rgba(251,59, 73, .2);
     size: 1rem;
 }
-.container {width: 30px; 
+.container {
+    width: 30px; 
             height: 50px;
             display: flex;
             flex-wrap: nowrap;
-            flex-direction: row;
             border-bottom: 1px solid lightgray; 
             
 }
 
-.container img {width: 100%; 
+.container > img {width: 100%; 
                 height: auto;
+                margin-right: 20px;
             
 }
 
 .container a {display: flex; 
               align-items: flex-end;}
+
+
+.searchbar {
+    display: flex;
+    height: 50%;
+}
+
+.searchbar img {
+    height: 20.25px;
+    background-color:  rgba(0,0,0,.05);
+    margin-top: 2.5px;
+    
+}
+
+.searchbar input {
+    width: 70vw;
+    background-color: rgba(0,0,0,.05);
+    border-style: none;
+}
+
+.searchbar button {
+width: 7vw;
+height: 22px;
+box-shadow: none;
+}
+
+.button-join {
+    box-shadow: none;
+    border-color: lightslategray;
+    border-style: ridge;
+    color:  black;
+    background-color: whitesmoke;
+    width: 15vw;
+    margin-left: 10px;
+}
+  
+.button-login {
+    border-style: none;
+    width: 30vw;
+    box-shadow: none;
+    margin-left: 10px;
+    background-color: white;
+    color:  black;
+    white-space: nowrap;
+
+}
 /* Section 1 */
 
-#Build {display: flex;
+#build {display: flex;
 justify-content: center;
 align-items: center;
 flex-direction: column;
@@ -63,6 +109,7 @@ height: 500px;
 background-color: rgba(232, 217, 217, .3);
 padding: 0;
 margin: 0;
+font-weight: bold;
 }
 
 h1 {font-size: 3.5em;}
@@ -71,18 +118,46 @@ h1 {font-size: 3.5em;}
             flex-direction: row;
            align-items: space-between;}
 
+.button-seeplans {
+    width: 15vw;
+    margin-right: 20px;
+    font-weight: bold;
+    height: 40px;
+    margin-top: 50px;
+    font-size: 12px;
+    background-color: #FB3B49;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+}
+
+.joinforfree {
+    font-style: normal;
+    text-decoration: none;
+    color: black ;
+    background-color: white;
+    box-shadow: none;
+    width: 15vw;
+border-style: none;
+font-weight: bolder;
+margin-top: 50px;
+font-size: 12px;
+}
+    
+
 /* Section 2 */
 
-#Bring {display: flex;
+.bring {display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     height: 600px;
-    background-color: rgba(232, 217, 217, .3);
-    margin: 2em 0 2em 0;
-    text-align: center;
-    padding: 0;
+    margin: 1em 0 1em 0;
 }
+.bring img {
+    width: 500px;
+    height: 160px; 
+    align-items: center;
+}
+
 
 h2 {background-color: rgba(255, 204, 53, .4); 
     transform: skew(9deg, 0deg); 
@@ -97,19 +172,15 @@ h3 {color: #ED1C24;}
 
 
         .column {
-            float: left;
+            display: flex;
+            flex-direction: column;
             width: 25%;
-            border: 2px;
             box-sizing: border-box;
             height: 250px;
-            border-width: thick;
-        
-          }
+        }
           
-          .row:after {
-            content: "";
-            display: table-cell;
-            clear: both;
+          .row {
+            display: flex;
           }
 
 
@@ -120,9 +191,13 @@ h3 {color: #ED1C24;}
             text-align: center; 
             text-decoration: none; 
             padding: 10px 10px 10px 10px;
+            width: 35vw;
+            box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+}
+
+    .center { 
         justify-content: center;
         display: flex;
-        flex-wrap: nowrap;
     }
 
 
