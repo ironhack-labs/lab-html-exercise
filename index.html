@@ -18,46 +18,59 @@ familiar features npm Orgs has 100% parity with all the public npm registry feat
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
     <header>
         <div>
-            <img src="images/black-heart.png" alt="Black heart">
-            <p class="top-bar"> Neverending Pun Machine</p>
-        </div>
-        <nav class="menu">
-            <ul>
-                <li><a href="#">NPM Enterprise</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">Solutions</a></li>
-                <li><a href="#">Resources</a></li>
-                <li><a href="#">Support</a></li>
-                <li><a href="#">Docs</a></li>
-            </ul>
-        </nav>
-
-        <!--Me he quedado en este punto. El objetivo es ver si puedo meter la imagen de la lupa (pdte añadir) como label de un imput-->
+              <div>
+                  <img class="black-heart" src="images/black-heart.png" alt="Black heart">
+                  <span> Neverending Pun Machine </span>
+              </div>
+              <nav class="menu">
+                  <ul>
+                      <li><a href="#">NPM Enterprise</a></li>
+                      <li><a href="#">Products</a></li>
+                      <li><a href="#">Solutions</a></li>
+                      <li><a href="#">Resources</a></li>
+                      <li><a href="#">Support</a></li>
+                      <li><a href="#">Docs</a></li>
+                  </ul>
+              </nav>
+      </div>
+              <!--Me he quedado en este punto. El objetivo es ver si puedo meter la imagen de la lupa (pdte añadir) como label de un imput-->
         <div class="search-bar">
-            <form action="#">
-            <img class="header-logo" src="images/npm-logo.png" alt="npm logo">
-               <img src="images/magnifying-glass.png">
-               <input type="text" name="search" placeholder="Search Packages">
-               <button value="Search">Search</button>
-            </form>
-            <a href="#">Join</a>
-            <a href="#">Log in</a>
+                <div>
+                    <img class="header-logo" src="images/npm-logo.png" alt="npm logo">
+                </div>  
+                <form action="#">
+                   <div class="search">
+                       <span><img src="images/magnifying-glass.png"></span>
+                       <input type="text" name="search" placeholder="Search Packages" size="100">
+                   </div>
+                   <button value="Search">Search</button>
+                </form>
+                <div class="side-options">
+                    <a class="join" href="#">Join</a>
+                    <a class="login" href="#">Log in</a>
+               </div>
+                
         </div>
-    </header>
+         
+          </header>
+
+    <section class=section1>
+            <heading>Build amazing things</heading>
+            <article>Essential JavaScript development tools that help you go to market faster and build powerful applications using
+                modern open source code.</article>
+          <div>
+            <a class="seeplans" href="#">See plans</a>
+            <a class="joinforfree" href="#">Join for free</a>
+          </div>
+    </section>
     
-    <section class=jumbotrons>
-        <div>
-            <h2>Build amazing things</h2>
-            <p>Essential JavaScript development tools that help you go to market faster and build powerful applications using
-                modern open source code.</p>
-            <a href="#">See plans</a>
-            <a href="#">Join for free</a>    
-        </div>
+    <section class="section2">
         <div>
             <img src="images/triangle-hexagon.svg" alt="Triangles and Exagon">
             <h2>Bring the best of open source to your company</h2>
@@ -67,7 +80,7 @@ familiar features npm Orgs has 100% parity with all the public npm registry feat
         </div>
     </section>
 
-    <section class="more-info">
+    <section class="sectiono3">
         <article>
             <img src="images/zero-configuration.svg" alt="Zero configuration">
             <h3>Zero configuration</h3>
