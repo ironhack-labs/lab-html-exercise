@@ -34,39 +34,57 @@ nav a {
 
 .bar {
   position: relative;
-  width: 1200px;
   height: auto;
   display: flex;
   flex-wrap: nowrap;
 }
 
-input#champ {
-  background-image: url("https://raw.githubusercontent.com/ironhack-labs/lab-html-exercise/master/images/magnifying-glass.png");
+.searchbar {
+  background-image: url("./images/magnifying-glass.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-color: #e6e6e6;
   text-indent: 40px;
-  width: 900px;
-  height: 40px;
+  width: 70vw;
+  height: 3vw;
   border: none;
 }
 
 .bar .searchbutton {
-  width: 70px;
-  height: 40px;
+  width: 5vw;
+  height: 3vw;
   border: none;
   float: right;
   background-color: #fb3e44;
   color: white;
 }
 
+.txtsearch {
+  text-decoration: none;
+  color: white;
+}
+
 .bar .join {
-  color: black;
-  padding: 20px;
+  background-color: white;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-width: thin;
 }
 
 .bar .log {
+  background-color: white;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border: none;
+}
+
+.txt {
   color: black;
+  text-decoration: none;
 }
 
 .first {
@@ -85,7 +103,7 @@ h1 {
   margin: 10px 2.5% 40px 2.5%;
 }
 
-.bouton-aligne {
+.align-buttons {
   display: inline-block;
   margin: auto;
   width: 12%;
@@ -94,26 +112,27 @@ h1 {
 }
 
 .firstp {
-  display: block;
   width: 480px;
   margin: auto;
   padding-bottom: 50px;
+  font-weight: 800;
 }
 
 .aplan {
   color: white;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 600;
+  font-size: 18px;
 }
 
 .afree {
   color: black;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 600;
+  font-size: 18px;
 }
 
 .first .plans {
-  display: block;
   margin: auto;
   background-color: #fb3b49;
   box-shadow: 8px 8px 0 rgba(251, 59, 73, 0.2);
@@ -123,10 +142,8 @@ h1 {
 }
 
 .first .free {
-  display: block;
   margin: auto;
   background-color: white;
-  box-shadow: 5px 5px 5px grey;
   border: none;
   width: 180px;
   height: 40px;
@@ -157,9 +174,9 @@ h3 span {
 
 .secondp {
   justify-content: center;
-  display: block;
   width: 800px;
   margin: auto;
+  font-weight: 800;
 }
 
 .third {
@@ -185,18 +202,18 @@ h3 span {
 }
 
 h4 {
-  font-weight: bold;
+  font-weight: bolder;
   color: red;
 }
 
-a {
+.create {
+  font-size: 18px;
+  font-weight: bold;
   color: white;
   text-decoration: none;
-  font-weight: bold;
 }
 
 .third button {
-  display: block;
   margin: auto;
   background-color: black;
   box-shadow: 8px 8px 0 rgba(128, 83, 35, 0.2);
@@ -204,5 +221,3 @@ a {
   width: 350px;
   height: 50px;
 }
-
-
