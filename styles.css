@@ -7,7 +7,7 @@ body {
 
 header,
 section {
-    width: 80%;
+    width: 75%;
     margin: auto;
 }
 header > div {
@@ -36,7 +36,8 @@ nav a {
 
 .join-btn {
     border: grey 1px solid;
-    padding: 5px 20px;
+    padding: 3px 15px;
+    font-weight: 600;
 }
 
 .blackHeart {
@@ -47,11 +48,15 @@ nav a {
 form {
     display: flex;
     width: 80%;
-    padding: 5px;
     background-color: #eee;
-    justify-content: space-around;
+    justify-content: space-between;
+    font-size: 1.1em;
 }
 
+.search-field {
+    display: flex;
+    justify-content: center;
+}
 form label, input {
     color: rgba(0, 0, 0, .5);
     
@@ -71,14 +76,24 @@ form button {
     outline: none;
     border: none;
     font-family: 'Poppins';
-    padding: 11px;
+    padding: 10px 15px;
 
 }
 .logo {
     width: 60px;
 }
 .magnClass {
-    width: 30px;
+    width: 25px;
+    padding-top: 8px;
+    padding-left: 10px;
+}
+#search {
+    padding: 10px;
+}
+
+.search-bar {
+    margin-bottom: 10px;
+    width: 100%;
 }
 
 .search-bar a {
@@ -95,11 +110,12 @@ section {
 
 .build-things {
     background-color: #F8F4F4;
+    background: linear-gradient(0deg, rgb(248, 244, 244) 0%, rgb(248, 244, 244) 98%, rgb(221, 221, 221) 100%);
     height: 600px;
 }
 
 .build-things heading {
-    font-size: 3em;
+    font-size: 3.5em;
     font-weight: 700;
     margin: 60px 20px;
 }
@@ -114,13 +130,20 @@ section {
 
 .build-things > div {
     margin: 50px;
+    font-weight: bold;
 }
 .red-btn {
     background-color: #fb3e44;
     color: white!important;
     text-decoration: none;
-    padding: 15px 50px;
-    margin: 20px;
+    padding: 15px 60px;
+    box-shadow: 5px 6px 0px 1px #FAD0D2
+}
+
+.white-btn {
+    background-color: white;
+    color: black;
+    padding: 15px 60px;
 }
 
 .build-things a {
@@ -132,13 +155,32 @@ section {
     width: 200px;
 }
 
+.mid-section {
+    margin-top: 50px;
+}
 .mid-section heading {
     font-size: 1.6em;
     font-weight: 700;
     margin: 50px;
     background-color:#FFEBB5;
-    padding: 5px 30px 0 30px;
+    padding: 5px 40px 0 40px;
+    text-transform: none;
 }
+
+
+
+/* .slanted {
+    background: #FFEBB5;
+    color: black;
+    transform: skewX(7deg);
+    font-size: 1.6em;
+    font-weight: 700;
+  }
+  
+  .slanted heading {
+    transform: skewX(-7deg);
+    padding: 5px 30px -2px 30px;
+  } */
 
 .mid-section article {
     width: 35%;
@@ -172,12 +214,15 @@ section {
 }
 
 .create {
-    margin: auto;
+    margin: 30px;
 }
 .create-link {
     background-color: black;
     color: white;
     width: 30%;
-    padding: 30px;
+    padding: 10px 100px;
     text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 5px 6px 0 1px #e2e2e2
 }
