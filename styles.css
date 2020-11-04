@@ -5,11 +5,16 @@ body {
     font-family: 'Poppins';
 }
 
-header,
 section {
     width: 75%;
     margin: auto;
 }
+
+header {
+    width: 78%;
+    margin: auto;
+}
+
 header > div {
     padding: 0 25px;
     display: flex;
@@ -57,9 +62,9 @@ form {
     display: flex;
     justify-content: center;
 }
+
 form label, input {
     color: rgba(0, 0, 0, .5);
-    
 }
 
 input {
@@ -91,12 +96,12 @@ form button {
     padding: 10px;
 }
 
-.search-bar {
+.header-2 {
     margin-bottom: 10px;
-    width: 100%;
+    border: none;
 }
 
-.search-bar a {
+.header-2  a {
     text-decoration: none;
     color: black;
 }
@@ -123,14 +128,16 @@ section {
 .build-things article {
     width: 40%;
     text-align: center;
-    margin: 30px;
     font-size: 1.2em;
     line-height: 1.7em;
 }
 
 .build-things > div {
-    margin: 50px;
+    margin: 30px;
     font-weight: bold;
+    display: flex;
+    justify-content: space-around;
+
 }
 .red-btn {
     background-color: #fb3e44;
@@ -149,15 +156,13 @@ section {
 .build-things a {
     text-decoration: none;
     color: black;
-    margin: 50px; 
+    margin: 20px; 
 }
 .hexa {
     width: 200px;
+    margin: 30px;
 }
 
-.mid-section {
-    margin-top: 50px;
-}
 .mid-section heading {
     font-size: 1.6em;
     font-weight: 700;
@@ -167,9 +172,15 @@ section {
     text-transform: none;
 }
 
+.mid-section article {
+    width: 45%;
+    font-size: .8em;
+    text-align: center;
+    line-height: 1.5em;
+}
 
 
-/* .slanted {
+.slanted {
     background: #FFEBB5;
     color: black;
     transform: skewX(7deg);
@@ -177,16 +188,12 @@ section {
     font-weight: 700;
   }
   
-  .slanted heading {
+.slanted h4 {
     transform: skewX(-7deg);
-    padding: 5px 30px -2px 30px;
-  } */
-
-.mid-section article {
-    width: 35%;
-    font-size: 1em;
-    text-align: center;
-}
+    margin: 3px 20px -2px 20px;
+    font-weight: bold;
+    padding: 0
+  }
 
 .bottom-section {
     display: flex;
