@@ -1,18 +1,47 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
-body {
+*{
   font-family: 'Poppins';
 }
-header > div {
+h1,
+h2,
+h3,
+h4,
+h5{
+    font-family: Poppins,sans-serif;
+    font-weight: 600;
+}
+h1 {
+    line-height: 1.25;
+    font-size: 2em;
+    margin: .67em 0;
+
+}
+h2 {
+
+}
+h3{
+
+}
+.logo{
+
+}
+header > div  {
     padding: 0 25px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid lightgray;
   }
-  
-  nav {
-    width: 600px;
+  #top-menu {
+      diplay:flex;
+      justify-content: flex-start;
+      aligh-items:center; 
+  }
+nav {
+ width: 600px;
+ position:relative;
+ margin-right: 0;
   }
   
   nav ul {
@@ -20,6 +49,9 @@ header > div {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    align-self: flex-end;
+    position:relative;
+    right:0;
   }
   
   nav a {
@@ -31,20 +63,160 @@ header > div {
     width: 20px;
     margin-right: 1rem;
   }
-
+.top-buttons {
+    color: black;
+    font-size: 1em; 
+    font-weight: lighter;
+    text-decoration: none;
+   
+}
   .logo {
     width: 50px;
     margin-right: 1rem;
-  }
-  .glass {
-      width; 10px;
-      margin:0px;
-  }
-   #searchbar form{
-    width: ;
-    color:rgba(0,0,0,.05)
-    }
-    .logo {
-    position: absolute;
+    position: relative;
     width: 40px;
+  }
+
+  .glass {
+      width: 20px;
+      position:absolute;
+  }
+  #top-search {
+    diplay:flex;
+    justify-content: flex-start;
+    aligh-items:center; 
+
+  }
+    .search-line {
+        display:flex;
+        flex-direction: row;
+        align-items:center;
+        width:500px;
+        
+    }
+
+    .search-bar{
+        display:flex;
+        flex-direction:row;
+        box-sizing: border-box;
+    }
+    
+    .search-button {
+        position:relative;
+        left:0;
+
+    }
+
+
+    #main-section{
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items:center;
+        height: 600px;
+        background-color:rgba(232,217,217,.3);
+
+    }
+    #main-section h1{
+        font-size: 5em;
+        text-align: center;
+    }
+    #main-section .about{
+        width: 60%;
+        margin: 50px auto;
+    }
+    
+    #main-section div{
+        display:flex;
+        justify-content: center;
+        align-content: center;
+        width:60%;
+        text-align: center;
+    }
+    #main-section a {
+        width: 25em;
+        border-color:black;
+        margin: 25px;
+        font size: 2em;
+        letter-spacing: 0.5px;
+        text-align: center;
+        text-decoration: none;
+        padding: 10px 30px;
+    }
+
+    .red-button{
+        background-color: #FB3B49;
+        color: white;
+        font-weight: bold;
+        box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+        ;
+    }
+    .grey-button{
+        color: black;
+    }
+    #sub-section {
+
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items:center;
+        height: 600px;
+        margin-top: 100px;
+    }
+    #sub-section h2{
+        background-color: rgba(255,204,53,.4);
+        transform: skew(9deg,0deg);
+        font-style: italic;
+        margin-top: 5%;
+        width:80%;
+        text-align: center;
+    }
+
+    #sub-section img {}
+
+
+    #sub-section article{
+        width: 70%;
+        margin: 30px auto;
+    }
+    #benefits{
+        height: 300px;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+    #benefits div {
+        display: flex;
+        flex-direction: row;
+        justify-content:center;
+        align-items:center;
+        align-content: space-around;
+    }
+
+    #benefits div{
+
+    }
+    #benefits article{
+
+    }
+    .small-icon{
+        width: 15%;
+       position:relative;
+    }
+
+    #benefits h3{
+        color: #ED1C24;
+        font-size: 1em;
+        font-weight: bold;
+    }
+    #benefits p{
+
+    }
+    .black-button{
+        font-size: 1em;
+        font-weight: bold;
+        color: white;
+        background-color: black;
+        padding: 10px 50px;
+        box-shadow:8px 8px 0 rgba(128,83,35,.2);
+        text-decoration: none;
     }
