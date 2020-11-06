@@ -1,268 +1,259 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:700|Roboto:100,300,700');
-
-
-html, body {
-  margin: 0;
-  padding: 0;
-}
-
+@import url('https://fonts.googleapis.com/css?family=Poppins');
 body {
-  font-family: "Roboto";
-  font-size: 10px;
-  line-height: 3.5em;
-  font-weight: 300;
+  font-family: 'Poppins';
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Roboto Condensed"
-}
-
-h1 {
-  font-size: 9em;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-h2 {
-  font-size: 5em;
-  text-align: center;
-  text-transform: uppercase;
-  line-height: 4em;
-  color: white;
-  text-shadow: #020819 8px -20px 9px;
-}
-
-h3 {
-  font-size: 4.2em;
-  text-align: center;
-  line-height: 1em;
-}
-
-h4 {
-  font-size: 1.5em;
-  letter-spacing: 0.4px;
-  margin-bottom: 15px;
-  line-height: 1em;
-}
-
-h5 {
-  font-size: 1.2em;
-  line-height: 1em;
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
-
-.nav-bar {
-  background-color: rgb(25, 33, 41);
-  padding: 14px 0;
-}
-.nav-bar a {
-  font-size: 2em;
-  text-decoration: none;
-  color: white;
-}
-
-.header {
-  background-image: url('https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/ironhack-skydive-background.jpg');
-  background-position: 0 0;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 650px;
-  padding-top: 50px;
-  position: relative;
-}
-
-.quote {
-  font-size: 2.5em;
-  position: absolute;
-  left: 10%;
-  bottom: 100px;
-}
-
-.dark-background {
-  background-color: rgb(25, 33, 41);
-  color: white;
-}
-
-.text {
-  font-size: 2em;
-  font-weight: 100;
-  text-align: center;
-  margin: 20px 0;
-}
-
-.link-btn {
-  background-color: rgb(67, 163, 230);
-  color: white;
-  font-family: "Roboto Condensed";
-  font-size: 2em;
-  letter-spacing: 0.5px;
-  text-align: center;
-  text-decoration: none;
-  padding: 10px 30px;
-}
-
-.service-box {
-  font-size: 1.7em;
-  text-align: center;
-  border: 2px solid #EEE;
-  border-radius: 20px;
-  box-sizing: border-box;
-  box-shadow: 2px 2px 10px 0 #EEE;
-  margin: 50px 5% 0 5%;
-  padding: 20px;
-  width: 40%;
-}
-
-.service-box img {
-  width: 125px;
-}
-
-#team .section-text {
-  font-size: 1.9em;
-  text-align: center;
-}
-
-#team .member-name {
-  font-size: 1.5em;
-  font-weight: 700;
-}
-
-#team img {
-  width: 250px;
-  height: 180px;
-}
-
- .footer {
-  font-size: 1.9em;
-  text-align: center;
-  padding: 40px 100px;
-  margin-bottom: 25px;
+header > div {
+  padding: 0 25px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 1px solid lightgray;
+  width: 1000px;
+  margin: auto;
 }
 
-.address {
-  font-size: 0.8em;
-  font-style: normal;
-  margin-bottom: 30px;
+nav {
+  width: 600px;
 }
 
-.footer ul {
+nav ul {
   list-style: none;
-  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.footer a {
-  color: rgb(67, 163, 230);
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+.blackHeart {
+  width: 20px;
+  margin-right: 1rem;
+}
+
+.search-container img{
+  width: 50px;
+}
+
+.search-container {
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-form input {
+  width: 700px;
+  height: 40px;
+  padding-left: 50px;
+  margin-left: 20px;
+  border: none;
+  background: #F2F2F2 url(../images/magnifying-glass.png) no-repeat;
+  background-position: left 10px top;
+  background-size: 29px;
+  background-position-y: 7px;
+}
+
+.search-form button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-items: flex-end;
+  background-color: red;
+  color: white;
+  border: none;
+  width: 81px;
+  height: 40px;
+}
+
+div .buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.buttons .join {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 30px;
+  text-decoration: none;
+  color: black;
+  border: 1px solid black;
+  height: 30px;
+  width: 60px;
+}
+
+.buttons .login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  justify-items: flex-end;
+  margin-left: 10px;
+  text-decoration: none;
+  color: black;
+  height: 30px;
+  width: 45px;
+
+}
+
+.container-build {
+  width: 1050px;
+  height: 600px;
+  background-color: #F7F4F4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+
+}
+
+.container-build h1 {
+  margin: 180px 50px 50px 100px ;
+  font-size: 3.5em;
+  text-align: center;
+  display: flex;
+  align-content: center;
+  align-self: center;
+  align-items: center;
+}
+
+.container-build article { 
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  width: 350px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.links-build {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+
+}
+.links-build .see-plans {
+  margin: 20px 20px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-items: flex-end;
+  background-color: #FB3B49;
+  box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+  color: white;
+  border: none;
+  width: 200px;
+  height: 45px;
+  text-decoration: none;
+
+}
+
+.links-build .join-for-free {
+  margin: 20px 20px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-items: flex-end;
+  background-color: white;
+  color: black;
+  border: none;
+  width: 200px;
+  height: 45px;
   text-decoration: none;
 }
 
-.nav-bar-ul {
-  width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.nav-bar-ul li {
-  list-style-type: none;
-  text-align: center;
-}
-
-.container {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 75px 0;
-}
-
-
-#team {
-  padding: 75px 0;
-  margin: 0 auto;
-}
-
-#team p {
-  width: 60%;
-  margin: 10px auto;
-}
-
-#team hr {
-  margin: 20px auto 30px auto;
-  width: 40%;
-}
-
-.schedule-table {
-  margin: 0 auto 40px auto;
-  font-size: 1.5em;
-}
-
-.schedule-table th, td {
-  border-bottom: 1px solid black;
-  padding: 5px 10px;
-  text-align: center;
-}
-
-#general-information {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-#general-information .container {
+.triangle-container {
+  margin-top: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 370px;
 }
 
-#structure > div {
+.triangle-container img {
+  width: 400px;
   display: flex;
-  justify-content: space-between;
+  align-content: center;
+}
+
+.triangle-container h2 {
+  margin-top: 100px;
+  background-color: #FCEBBB;
+  border-left: 10px solid #FCEBBB;
+  border-right: 10px solid #FCEBBB;
+  width: 500px;
+  text-align: center;
+  -webkit-transform: skew(20deg); 
+  -moz-transform: skew(20deg); 
+  -o-transform: skew(20deg); 
+}
+
+.triangle-container article {
+  width: 500px;
+  text-align: center;
+  margin-bottom: 150px;
+}
+
+.create-org-container {
+  width: 1100px;
+  margin: auto;
+  display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  justify-content: space-around;
+  justify-self: center;
+  justify-items: center;
+  align-content: center;
+}
+.create-org-container img{
+  width: 50px;
 }
 
-#team > div {
-  display: flex;
-  justify-content: space-evenly;
+.create-org-container div h3 {
+  color: red;
 }
 
-#team > div > article {
+.create-org-container div p {
+  text-align: left;
+  width: 150px;
+}
+
+#team-management img{
+  width: 42px;
+}
+
+.create-an-org {
   display: flex;
-  justify-content: center;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-}
-
-.map-frame {
-  height: 375px;
-  width: 60%;
-}
-
-.slot-form-container {
-  width: 40%;
-  margin: 18px auto 0 auto;
-  font-size: 1.5em;
+  align-self: center;
+  justify-content: center;
+  align-content: center;
   text-align: center;
 }
 
-.slot-form-container label {
-  line-height: 15px;
-  margin: 5px;
-}
-
-.slot-form-container input, select {
-  height: 20px;
-  outline: none;
-  padding: 3px;
-  width: 100%;
-}
-
-.slot-form-container button {
-  border: 1px solid black;
-  color: black;
-  background-color: white;
-  padding: 15px;
-  margin-top: 15px;
+.create-an-org a {
+  box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+  margin: 100px 20px 100px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-items: flex-end;
+  background-color: black;
+  color: white;
+  border: none;
+  width: 240px;
+  height: 45px;
+  text-decoration: none;
 }

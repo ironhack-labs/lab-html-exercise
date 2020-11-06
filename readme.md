@@ -86,7 +86,7 @@ We could try to represent this part of the website with the following:
       <ul>
         <li><a href="#"> npm Enterprise </a></li>
         <li><a href="#"> Products </a></li>
-        <li><a href="#"> Solutions </a></li>
+        <i><a href="#"> Solutions </a></li>
         <li><a href="#"> Resources </a></li>
         <li><a href="#"> Docs </a></li>
         <li><a href="#"> Support </a></li>
