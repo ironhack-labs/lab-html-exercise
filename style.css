@@ -1,9 +1,12 @@
+/* CSS1 - The Setup */
 @import url("https://fonts.googleapis.com/css?family=Poppins");
+
+
 body{
     font-family: 'Poppins';
 }
 
-/* Start with Header and NavBar */
+/* CSS2 - Header and NavBar */
 
 header > div {
     padding: 0 25px;
@@ -13,74 +16,202 @@ header > div {
     border-bottom: 1px solid lightgray;
 }
 
-nav{
-    width: 600px;
+#subtitle {
+    font-weight: bold;
 }
 
-nav ul{
+nav {
+    width: 600px;
+}
+nav ul {
     list-style: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-nav a{
+nav a {
     text-decoration: none;
+    font-weight: bold;
     color: black;
-}
+}   
 
 .blackHeart {
     width: 20px;
     margin-right: 1rem;
 }
-
-div > img {
-    width: 5em;
-}
-
-.search-googles {
-    width: 1.2em;
-    height: 1.2em;
-    background-color: rgba(0,0, 0, .05);
-    padding: .8em;
-}
-
-form {
+#nav-second {
     display: flex;
-    width: 72%;
-    align-content: space-between;
-    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    padding: 10px 25px;
 }
-
-label {
+.npmlogo {
+    height: 100%;
+}
+#form-nav {
+    width: 90%;
+    height: 100%;
+    padding: 0 20px;
+}
+#searchBar {
+    background: url('./images/magnifying-glass.png') no-repeat left center;
+    background-color:rgba(0,0,0,.05);
+    color: rgba(0, 0, 0, .05);
+    background-size: 25px;
+    width: 85%;
+    height: 100%;
+    padding: 0 40px;
+    border: none;
+}
+#searchButton {
+    height: 100%;
     background-color: #fb3e44;
     color: white;
-    padding: 0.5em 1.5em;
+    border: none;   
 }
-
-#search {
-    width: 85%;
-    background-color: rgba(0, 0, 0, .05);
-    border: none;
-    color: rgba(0, 0, 0, .05);
+#nav-btn-container{
+    display: flex;
+    width: 12%;
 }
-
-.enter-btn {
-    width: 15%;
-}
-
-.enter {
-    color: rgba(0, 0, 0, .05);  /* come back to adjust Join and Log In colors This turns white and not the color it should */
-    width: 3em;
-    
+.nav-btn {
+    height: 90%;
+    width: 50px;
+    text-align: center;
     text-decoration: none;
-    padding: .5em 1.5em;
+    color: black;
+    margin-right: 15px;
+}
+.border-button {
+    border: 1px solid black;
+}
+
+/* CCS3 Section 1 - Build Amazing Things */
+
+#sec-one {
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    background-color: rgba(232,217,217, .3);
+    height:600px;
+    padding-bottom: 30px;
+  }
+
+  #sec-one h1{
+    font-weight: bold;
+    font-size: 90px;
+    margin: 0px;
+    padding: 0px 20px;
+  }
+
+#sec-one p{
+    margin: 50px 80px;
+    padding: 0px 350px 20px 350px;
+    font-size: 20px;
+    text-align: center;
+  }
+
+#see-btn {
+    text-decoration: none;
+    border: 1px solid #FB3B49;
+    background-color: #FB3B49;
+    color: white;
+    box-shadow: 8px 8px 0 rgba(251,59,73, .2);
+    padding: 10px 60px;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0px 30px;
+  }
+
+#free-btn {
+    text-decoration: none;
+    border: 1px transparent;
+    background-color: white;
+    color: black;
+    padding: 10px 60px;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0px 30px;
+  }
+
+  /* CSS 4 - Section 2 - The Hexagon!!! */
+
+#sec-two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 600px;
+    padding-bottom: 100px;
+}
+
+.hexagon {
+    width: 350px;
+    margin-top: 100px;
+}
+
+#sec-two h2 {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    background-color: rgba(255, 204, 53, .4);
+    padding: 0px 40px;
+    transform: skew(9deg, 0deg);
+    font-style: italic;
+    margin-top: 80px;
+}
+
+#sec-two p {
+    margin: 20px 50px opx 50px;
+    padding: 0px 400px 0px 400px;
+    font-size: 20px;
     text-align: center;
 }
 
-#join {
-    border: 1px solid grey;
+/* CSS 5 - Section 3 - The Little Boxes */
+
+#sec-three div {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    flex-direction: row;
+    padding: 10px 60px;
+    margin: 0px 100px 30px 100px;
 }
 
-/* Now Section 1 - Build Amazing Things */
+#sec-three a {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    box-shadow: 8px 8px 0 rgba(128, 83, 35, .2);
+    padding: 10px 100px;
+    font-weight: bold;
+    font-size: 25px;
+}
 
+#sec-three h3 {
+    color: #ED1C24;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.info {
+    font-size: 20px;
+    text-align: left;
+    margin: 20px 5px 0 5px;
+    padding: 20px;
+    width: 40%;
+}
+
+.info img {
+    width: 65px;
+}
+
+.info > p {
+    margin: 0px 10px;
+    font-size: 17px;
+}
+
+  
