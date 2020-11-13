@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body {
+  font-family: 'Poppins';
+}
+
+/* HEADER */
+
+header > div 
+{
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+  }
+
+  nav 
+  {
+    width: 600px;
+  }
+  
+  nav ul 
+  {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav a 
+  {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .blackHeart 
+  {
+    width: 20px;
+    margin-right: 1rem;
+  }
+
+  #navbar-down > button
+  {
+      background-color: #fb3e44;
+      color: white;
+  }
+
+/* SECTION 1 - #HOME */
+
+#home
+{
+    height: 600px;
+    background-color: rgba(232,217,217,.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-weight: bold;
+}
+
+#home h1
+{
+    font-size: 80px;
+    margin-top: -150px;
+}
+
+#home article
+{
+    font-size: 20px;
+    width: 550px;
+    text-align: center;
+    margin-top: -20px;
+}
+
+#commercial
+{
+    margin-top: 80px;
+    margin-bottom: -100px;
+    align-items: center;
+}
+
+#home #see-plans, #join-for-free
+{
+    text-decoration: none;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 70px;
+    padding-right: 70px;
+    font-size: 20px;
+}
+
+#home #see-plans
+{
+    background-color: #FB3B49;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+    color: white;
+    margin-right: 40px;
+}
+
+#home #join-for-free
+{
+    color: black;
+    text-decoration: none;
+    background-color: white;
+}
+
+/* SECTION 2 - #ARGUMENTATION */
+
+#argumentation
+{
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#argumentation img
+{
+    width: 18rem;
+    margin-top: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* LINE-HEIGHT IS TO MAKE THE TEXT OVERFLOW FROM THE BACKGROUND-COLOR */
+#argumentation h2
+{
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+    font-size: 2.5rem;
+    font-style: italic;
+    margin: auto;
+    width: 1000px;
+    text-align: center;
+    margin-bottom: -3rem;
+    height: 42px;
+    line-height: 45px;
+}
+
+#argumentation article
+{
+    width: 850px;
+    text-align: center;
+    margin: auto;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+/* SECTION 3 - #FEATURES */
+
+#features
+{
+    height: 600px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#features img
+{
+    width: 40px;
+}
