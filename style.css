@@ -2,9 +2,10 @@
 
 body {
   font-family: 'Poppins';
+  margin: 0;
 }
 
-/* HEADER */
+/* NAVBAR UP */
 
 header > div 
 {
@@ -13,6 +14,7 @@ header > div
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid lightgray;
+    font-weight: bold;
   }
 
   nav 
@@ -40,11 +42,72 @@ header > div
     margin-right: 1rem;
   }
 
-  #navbar-down > button
-  {
-      background-color: #fb3e44;
-      color: white;
-  }
+/* NAVBAR DOWN */
+
+#navbar-down
+{
+    height: 62px;
+    display: flex;
+}
+
+#npm-logo
+{
+    width: 80px;
+}
+
+#glass
+{
+    position: absolute;
+    width: 20px;
+    margin-left: 110px;
+}
+
+#searchbar input
+{
+    border: solid 1px transparent;
+    width: 1300px;
+    background-color: rgba(0,0,0,.05);
+    color: rgba(0,0,0,.05);
+    height: 41px;
+    margin-left: -30px;
+    padding-left: 55px;
+    padding-right: 110px;
+}
+
+:focus
+{
+    outline: none;
+}
+
+#navbar-down > button
+{
+    background-color: #fb3e44;
+    border: 1px solid #fb3e44;
+    color: white;
+    height: 45px;
+    width: 95px;
+    font-size: 17px;
+    margin-left: -38px;
+}
+
+#join, #log-in
+{
+    text-decoration: none;
+}
+
+#join
+{
+    width: 70px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    border-top: 1px solid #5a5a5a;
+    border-left: 1px solid #5a5a5a;
+    border-right: solid 1px #d8d4d4;
+    border-bottom: solid 1px #d8d4d4;
+    margin-right: -22px;
+
+}
 
 /* SECTION 1 - #HOME */
 
@@ -154,13 +217,47 @@ header > div
 #features
 {
     height: 600px;
+    text-align: center;
+}
+
+#features .boxes
+{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    flex-wrap: wrap;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    text-align: left;
+    margin-top: 150px;
+    margin-bottom: 70px;
 }
 
 #features img
 {
     width: 40px;
+}
+
+#features h3
+{
+    color: #ED1C24;
+    font-weight: bold;
+}
+
+#features p
+{
+    width: 250px;
+}
+
+#features a
+{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 150px;
+    padding-right: 150px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
 }

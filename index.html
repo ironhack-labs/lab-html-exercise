@@ -7,6 +7,8 @@
         <title>NPM - Build amazing things</title>
     </head>
 
+<!-- NAVBAR UP -->
+
     <body>
         <header>
             <div id="navbar-up">
@@ -26,17 +28,21 @@
               </nav>
             </div>
           
+<!-- NAVBAR DOWN -->
+
             <div id="navbar-down">
-              <img class="npm-logo" src="images/npm-logo.png" alt="npm logo">
-              <img src="images/magnifying-glass.png" alt="magnifying glass">
+              <img id="npm-logo" src="images/npm-logo.png" alt="npm logo">
+              <img id="glass" src="images/magnifying-glass.png" alt="magnifying glass">
               <form id="searchbar" action="">
                 <input type="text" placeholder="Search packages"></input>
               </form>
               <button>Search</button>
-              <a href="#">Join</a>
-              <a href="#">Log in</a>
+              <a id="join" href="#">Join</a>
+              <a id="log-in" href="#">Log in</a>
             </div>
         </header>
+
+<!-- SECTION 1 - #HOME -->
 
           <section id="home">
             <h1>Build amazing things</h1>
@@ -50,8 +56,10 @@
             </div>
           </section>
 
+<!-- SECTION 2 - #ARGUMENTATION -->
+
           <section id="argumentation">
-            <img src="images/triangle-hexagon.svg" alt="">
+            <img src="images/triangle-hexagon.svg" alt="hexagon composed of triangles">
             <h2>Bring the best of open source to your company</h2>
             <article>
                 npm is the tool used by
@@ -60,38 +68,42 @@
             </article>
           </section>
 
+<!-- SECTION 3 - #FEATURES -->
+
           <section id="features">
-            <div>
-                <img src="images/zero-configuration.svg" alt="">
-                <h3>Zero configuration</h3>
-                <p>
-                    Create an org, add
-                    your team, and start collaborating. Nothing to configure, set up, or manage
-                </p>
-            </div>
-            <div>
-                <img src="images/team-management.svg" alt="">
-                <h3>Team management</h3>
-                <p>
-                    Control who has access to
-                    what modules within your team namespace using straightforward team management capabilities.
-                </p>
-            </div>
-            <div>
-                <img src="images/familiar-features.svg" alt="">
-                <h3>Familiar features</h3>
-                <p>
-                    npm Orgs
-                    has 100% parity with all the public npm registry features your developers already use.
-                </p>
-            </div>
-            <div>
-                <img src="images/npm-audit.svg" alt="">
-                <h3>npm audit</h3>
-                <p>
-                    Enjoy the security
-                    auditing features built into the npm client, a zero-friction way to make open source software safer.
-                </p>
+            <div class="boxes">
+                <div class="">
+                    <img src="images/zero-configuration.svg" alt="mouse on a screen">
+                    <h3>Zero configuration</h3>
+                    <p>
+                        Create an org, add
+                        your team, and start collaborating. Nothing to configure, set up, or manage.
+                    </p>
+                </div>
+                <div>
+                    <img src="images/team-management.svg" alt="organizational chart">
+                    <h3>Team management</h3>
+                    <p>
+                        Control who has access to
+                        what modules within your team namespace using straightforward team management capabilities.
+                    </p>
+                </div>
+                <div>
+                    <img src="images/familiar-features.svg" alt="balanced scale">
+                    <h3>Familiar features</h3>
+                    <p>
+                        npm Orgs
+                        has 100% parity with all the public npm registry features your developers already use.
+                    </p>
+                </div>
+                <div>
+                    <img src="images/npm-audit.svg" alt="binoculars">
+                    <h3>npm audit</h3>
+                    <p>
+                        Enjoy the security
+                        auditing features built into the npm client, a zero-friction way to make open source software safer.
+                    </p>
+                </div>
             </div>
             <a href="#">Create an Org</a>
           </section>
