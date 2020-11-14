@@ -1,5 +1,6 @@
 body {
     font-family: 'Poppins', sans-serif;
+    margin: 0;
 }
 
 /* header */
@@ -156,8 +157,20 @@ header > div {
     margin-top: 70px;
 }
 
-#section2 h2 {
+.background-overflow {
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+    margin: 70px 0 40px 10px;
+    padding: 0 30px;
+    height: 43px;
+}
 
+.background-overflow h2 {
+    background: none;
+    font-style: italic;
+    font-size: 35px;
+    font-weight: 600;
+    margin: 0;
 }
 
 #section2 article {
@@ -166,3 +179,38 @@ header > div {
 }
 
 /* Section 3 */
+
+.section3-wrapper {
+    margin: 60px 100px 20px 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.images-section3 {
+    width: 40px;
+}
+
+.flex-div {
+    width: 250px;
+}
+
+.flex-div h3 {
+    color: #ED1C24;
+    margin-top: 10px;
+}
+
+.href-div {
+    margin: 80px auto 80px auto;
+    width: 600px;
+    text-align: center;
+}
+
+.href-div a {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 18px 140px;
+    font-size: 23px;
+    font-weight: 600;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+}
