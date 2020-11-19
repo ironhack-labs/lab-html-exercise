@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="./style.css" />
         <header>
             <div>
                 <div>
@@ -18,15 +19,17 @@
                     </ul>
                 </nav>
             </div>
-            <div>
+            <div class="second-bar">
                 <img class="npm-logo" src="images/npm-logo.png" alt="npm-logo" > 
                 <form action="/some-url" method="get">
-                    <label for="search"><img class="Search-logo" src="images/magnifying-glass.png" alt="Search-logo" ></label>
+                    <label for="search"><img class="search-logo" src="images/magnifying-glass.png" alt="Search-logo" /></label>
                     <input type="text" placeholder ="Search packages">
                     <button>Search</button>
                 </form>
-                <a href="#"> Join </a>
-                <a href="#"> Log In </a>
+                <div class="join-log">
+                    <a class="join" href="#join"> Join </a>
+                    <a class="log" href="#log"> Log In </a>
+                </div>
             </div>
         </header>  
     </head>  
