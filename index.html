@@ -3,6 +3,7 @@
         <head>
             <title>lab-html-exercise</title>
             <meta charset="UTF-8"/>
+            <link rel="stylesheet" href="./style.css" />
         </head>
         <body>
             <header>
@@ -22,21 +23,23 @@
                         </ul>
                     </nav>
                 </div>
-                <div>
-                    <img class="logo" src="images/npm-logo.png" alt="npm-logo"/>
-                    <img class="magnifying-glass" src="images/magnifying-glass.png" alt="magnifying-glass"/>
+                <div class="header-2">
+                    <img class="logo" src="images/npm-logo.png" alt="npm-logo">
                     <form class="search-bar" action="/search" method="post">
-                        <input type="text" name="text" id="research" placeholder="Search packages">
+                            <input type="image" class="magnifying-glass" src="images/magnifying-glass.png" alt="magnifying-glass">
+                            <input type="text" name="text" id="research" placeholder="Search packages">
+                            <button class="search-button" type="button">Search</button>
+
                     </form>
-                    <button type="button">Join</button>
-                    <button type="button">Log in</button>
+                    <button class="join-button" type="button">Join</button>
+                    <button class="log-in-button" type="button">Log in</button>
                 </div>
             </header>
             <section-1 id="section-1">
                 <h1>Build amazing things</h1>
                 <p>Essential Javascript development tools that help you go to market faster and build powerful applications using modern open source code.</p>
                 <button type="button">See plans</button>
-                <button type="button"></button>
+                <button type="button">Join for free</button>
             </section-1>
             <section-2 id="section-2">
                 <img src="images/triangle-hexagon.svg" alt="triangle-hexagon">
