@@ -12,6 +12,24 @@ body {
     margin: 0;
 }
 
+h1 {
+    font-size: 4em;
+    text-align: center;
+    margin: -20px 0 -100px 0;
+}
+
+h2 {
+    font-size: 2em;
+    font-style: italic;
+    margin-top: 50px;
+}
+
+h3 {
+    color: #fb3e44;
+}
+
+/*header1*/
+
 header>div {
     padding: 0 25px;
     display: flex;
@@ -46,7 +64,7 @@ nav a {
     padding: 1em;
 }
 
-/*search-bar*/
+/*header2r*/
 
 .header-2 {
     display: flex;
@@ -59,7 +77,7 @@ nav a {
 
 .search-bar {
     position: relative;
-    width: 72%;
+    width: 100%;
     display: flex;
 }
 
@@ -84,8 +102,6 @@ nav a {
     border: none;
 }
 
-/*header buttons*/
-
 .buttons {
     display: flex;
 }
@@ -107,32 +123,91 @@ nav a {
     font-size: 16px;
 }
 
+/*section 1*/
+
 #section-1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 50px 100px;
+    background-color: rgba(232,217,217,.3);
+    height: 600px;
+    justify-content: space-evenly;
 }
+
+#s1-content {
+    margin: 0 500px;
+    text-align: center;
+}
+
+.buttons {
+    justify-content: space-between;
+    margin: 10px 0;;
+}
+
+.see-plans {
+    background-color: #FB3B49;
+    padding: 20px;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+    color: white;
+    border: none;
+    width: 200px;
+    font-size: 15px;
+}
+
+.join-for-free {
+    border: none;
+    background-color: transparent;
+    font-size: 15px;
+    width: 200px;
+}
+
+#section-1 .buttons {
+    margin-top: 70px;
+}
+
+/*section 2*/
 
 #section-2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 50px 100px;
+    margin: 70px 100px 120px;
+}
+
+#section-2 p {
+    margin: 0 300px 0;
+    text-align: center;
 }
 
 .triangle-hexagon {
     width: 300px;
 }
 
+/*section 3*/
+
 #section-3 div {
     display: flex;
     justify-content: center;
-    margin: 50px 100px;
+    margin: 0 100px;
 }
 
 #section-3 img {
-    width: 50px;
+    width: 30px;
 }
 
+.create-an-org {
+    margin-top: 70px;
+    margin-bottom: 70px;
+    background-color: black;
+    color: white;
+    border: none;
+    width: 300px;
+    padding: 20px;
+    font-size: 15px;
+    box-shadow: #D8D7C2 7px 7px;
+}
+
+.container {
+    margin: 30px;
+}
 
