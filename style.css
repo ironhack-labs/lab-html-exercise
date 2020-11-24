@@ -2,10 +2,8 @@
 
 body {
   font-family: "Poppins";
-  box-sizing: border-box;
-  display: flex;
-  flex-flow: column nowrap;
-}
+  
+  }
 
 header > div  {
     padding: 0 25px;
@@ -43,6 +41,7 @@ header > div  {
     display: flex;
     justify-content:space-between;
     flex-flow: row nowrap;
+   
     
 }
  
@@ -63,13 +62,13 @@ header > div  {
 
  .searchbar{
     top: 8px;
-    width: 900px; 
     height: 50px;    
     background-color: rgba(0,0,0,.05);
     border-style: none;
     padding-left: 10px;
     margin-right: 0px;
-    position: relative;
+    display: inline;
+    width: 60%;
         
    }
 
@@ -79,26 +78,32 @@ header > div  {
     background-color: #fb3e44;
     color: white;
     font-size: 1em;
-    text-align: center;
+    text-align: justify;
     border-style: none;
     position: relative;        
     right:50px; 
     display: flex;
+    margin: auto;
+    
   }
+
+  
+ 
 
   .section1{
     height: 600px;
     display: flex;
     justify-content: center;
-    flex-flow: column wrap;
+    flex-flow: column;
     align-items: center;
     background-color: rgba(232,217,217,.3);
-    margin: auto 25px auto 25px;
+    margin: auto 25px;
       
   }
   
-  .section1heading{
-    font-size: 6em;    
+  section h1{
+    font-size: 6em;
+    font-weight: bolder;    
     justify-content: center;
     align-items: center;
     margin-top: 10px;
@@ -113,24 +118,31 @@ header > div  {
   }
   
   .rightlinks{
-      flex-flow: row nowrap;
+      display: block;
+      flex-flow: row;
       justify-content: space-between;
-      height: 70px;
-      width: 300px;
+      width: 100%;
   }
+
+
   .link1seeplans{
 
     background-color:#FB3B49;
     color:white;
-    flex-direction: row;
     box-shadow:8px 8px 0 rgba(251,59,73,.2);
+    width: 200px;
+    height: 70px;
+    display: flex;
   }
 
 
   .link2join4free{
     background-color: white;
     color: black;
-    left: 350px;
+    width: 200px;
+    height: 70px;
+    display: flex;
+
   }
 
   .triangle-hexagon{
@@ -152,27 +164,43 @@ header > div  {
 
 .section3{
     margin: 70px 100px;
+    padding: 10px;
     display:flex;
     flex-direction: row;
-    align-items: space-around;
-    padding: 100px;
-    padding: 10px;
+    align-items: space-between;    
+    flex-basis: fit-content  
     
     
 }
 
+.zero-configuration, .team-management,.familiar-features, .npm-audit{
+  width: 60px;
+}
 
 
  .section3 h4 {
     color:#ED1C24;
+    font-weight: bolder;
 
 } 
 
-.zero-configuration, .team-management,.familiar-features, .npm-audit{
-    width: 60px;
-}
+
+
+
 
 .createorg{
-    display:flex;
-    flex-flow: column wrap;
+    margin: 100px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding-top:25px;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    width: 40%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;    
+
 }
+
