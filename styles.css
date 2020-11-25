@@ -8,7 +8,7 @@ body {
 
 body {
   font-family: 'Poppins';
-  padding: 0 1%;
+  padding: 0 3%;
 }
 
 /* Heading Section */
@@ -48,21 +48,66 @@ nav a {
 }
 
 .magnifying-glass {
-  width: 20px
+  width: 20px;
+  padding-right: 30px;
 }
 
 .search-form {
- border-bottom: none;
- line-height: 3rem;
- align-items: center;
+  border-bottom: none;
+  line-height: 3rem;
+  align-items: center;
+  margin-top: 5px;
 }
 
 .search-bar {
   width: 80%;
   background-color: rgba(0,0,0,.05);
+  padding-left: 20px;
+  display: flex;
+}
+
+#search {
+  border: none;
+  fill: none;
+  background: transparent;
+  font-size: 1.2rem;
+  color: gray;
+  margin: auto;
+  width: 950px;
+}
+
+#search:focus {
+  outline: none;
+}
+
+.search-btn button {
+  border: none;
+  font-size: 1.2rem;
+  color: white;
+  background-color: #fb3e44;
+  padding: 12px;
+}
+
+.search-btn {
+  margin-left: auto;
+}
+
+.join-btn {
+  line-height: 2rem;
+  text-decoration: none;
+  border: 1px solid black;
   padding: 0 20px;
 }
 
-.search-bar input {
-  border: none;
+.login-btn {
+  text-decoration: none;
+}
+
+/* Introduction Section */
+
+#introduction {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
