@@ -111,12 +111,15 @@ nav a {
 
 /* Introduction Section */
 
-#introduction {
+.container {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
   height: 600px;
+}
+
+#introduction {
   background-color: rgba(232,217,217,.3);
   padding: 0 20%;
   margin-top: 10px;
@@ -161,4 +164,25 @@ nav a {
   background-color: white;
   padding: 10px 40px;
   color: black;
+}
+
+/* OpenSource Section */
+
+#openSource img {
+  width: 270px;
+}
+
+#openSource h2 {
+  font-size: 2.2rem;
+  margin-top: 60px;
+  font-weight: 600;
+  background-color: rgba(255,204,53,.4);
+  padding: 0 40px;
+  transform: skew(9deg,0deg);
+  font-style: italic;
+}
+
+#openSource article {
+  margin: 10px 23% 20px;
+  text-align: center;
 }
