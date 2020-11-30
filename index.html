@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html>
+    <head> 
+        <link rel="stylesheet" href="./style.css"> <!--link the style sheet-->
+    </head>
     <header>
         <div>
           <div>
@@ -19,18 +22,20 @@
         </div>
       
         <div>
-            <img class="blackHeart" src="./images/npm-logo.png" alt="logo" />
-            <img class="blackHeart" src="./images/magnifying-glass.png" alt="magnifying-glass" />
-            <form id="search-bar">
-                <label for="search">Search packages</label>
-                <input type="search" id="search" name="search">
-                <input type="submit" value="Search">
-            </form>
-            <div>
-                <a href="#"> Join</a>
-                <a href="#"> Log in</a>
-            </div>
-        </div>
+          <div class="search-bar">
+              <img class="logo" src="./images/npm-logo.png" alt="logo" />
+              <img class="blackHeart" id="search-icon" src="./images/magnifying-glass.png" alt="magnifying-glass" />
+              <form class="search-box">
+                  <label for="search"></label>
+                  <input type="search" id="search" name="search" value="Search packages">
+                  <input id="button" type="submit" value="Search">
+              </form>
+          </div>
+          <div>
+            <a id="join" href="#"> Join </a>
+            <a id="login" href="#"> Log in </a>
+          </div>
+      </div>
       </header>
 
       <section id="build-amazing-things">
@@ -43,14 +48,15 @@
             </div>
       </section>
 
-      <section id="bring-to-company">  <!--Background Image-->
+      <section id="bring-to-company">  
+        <img class="icon" src="./images/triangle-hexagon.svg" alt="logo" />
         <h2>Bring the best of open source to your company</h2>
         <article>Bring the best of open source to your company npm is the tool used by
             over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it.
             Create an Org and get more out of the tools your team already knows and loves.</article>
       </section>
 
-      <section id="learn-more">  <!--might need another div outside of other divs-->
+      <section id="learn-more">  
         <div>
             <img class="icon" src="./images/zero-configuration.svg" alt="zero-config" />
             <h2>Zero configuration</h2>
