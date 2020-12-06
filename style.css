@@ -163,14 +163,18 @@ header > div {
 }
 
 #learn-more{
-  margin: 1px 100px 1px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50vh;
 }
-
+#learn-more div {
+  width: 200px;
+}
 #learn-more > div > p{
-  text-align: center;
+  text-align: left;
   font-size: 10px;
 }
-
 #learn-more > div > h2{
   text-align: left;
   font-size: 12px;
@@ -179,25 +183,17 @@ header > div {
   color: #ED1C24;
   font-style: bold;
 }
-
-#learn-more > div{
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: center;
-	align-items: center;
-  width: 200px;
+.btn-container {
+  height: 35vh;
 }
-
 #org-button{
+  text-decoration: none;
+  padding: 10px 10px 10px 10px;
   display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
 	justify-content: center;
 	align-items: center;
-	align-content: stretch;
-  text-decoration: none;
+  margin: 1px 170px 1px 170px;
   color: white;
-  padding: 10px 40px 10px 40px;
   border: 2px solid black;
   box-sizing: border-box;
   box-shadow: 8px 8px 0 rgba(128,83,35,.2);
