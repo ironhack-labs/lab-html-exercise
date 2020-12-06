@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+
+/* reset code ---> */
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/* <--- reset code */
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Poppins';
+}
+.firstdiv {
+    padding: 0 25px 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+    margin: .7em;
+}
+.blackheartquote {
+    flex: 1;
+}
+.blackheart {
+    width: 20px;
+    margin-right: 1.3rem;
+}
+span {
+    font-size: .7em;
+}
+nav {
+    width: 600px;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav li {
+    font-size: .7em;
+    margin: .7em;
+}
+nav a {
+    text-decoration: none;
+    color: black;
+}
+.seconddiv {
+    padding: 0 25px 10px 0;
+    display:flex;
+    align-items: center;
+    margin: 0.7em 0.7em 0 0.7em;
+}
+.npm-logo {
+    margin: 0.7em 0.7em 0.7em 2em;
+}
+.npm-logo img {
+    width: 50px;
+}
+.search {
+    margin: auto;
+    flex-grow: 1;
+    padding: 5px;
+    background: rgba(0,0,0,.05);
+}
+.search-wrapper {
+    display: flex;
+}
+form img {
+    width: 15px;
+    padding: 5px;
+}
+form {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+input {
+    width: calc(100% - 10px);
+    border: 0;
+    background: transparent;
+}
+.search-wrapper button {
+    background: #fb3e44;
+    letter-spacing: 0.3px;
+    border-style: none;
+    color: white;
+    padding: 1em;
+}
+
+.joinlogin {
+    flex-grow: 0;
+    font-size: 0.7em;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    margin-left: 3em; 
+}
+.joinlogin a {
+    text-decoration: none;
+    color: black;
+}
+.join {
+    border: 1px solid #cccccc;
+}
+.joinlogin .login, .join {
+    padding: 13px 28px;
+}
+h1 {
+    font-size: 4em;
+    font-weight: 700;
+}
+#general-information {
+    background: rgb(252, 247, 240);
+}
+.center {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 48em;
+    padding: 3em 1em;
+    text-align: center;
+}
+.center .centerh1 {
+    margin: 1em 0;
+}
+.center-esential {
+    margin-top: 45px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.esential {
+    margin-bottom: 45px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 445px;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5em;
+}
+
+.seeplansjoin {
+    flex-grow: 0;
+    font-size: 0.7em;
+    padding-top: 4rem;
+    padding-bottom: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.seeplans {
+    border: 1px solid #cccccc;
+    background: #FB3B49;
+    color: white;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2)
+}
+.joinforfree {
+    background: white;
+    color: black;
+}
+.seeplansjoin .seeplans, .joinforfree {
+    padding: 20px 60px;
+    text-decoration: none;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+.bringthebest {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 75em;
+    padding: 3em 1em;
+    text-align: center;
+    max-height: 600px;
+}
+.center img {
+    width: 250px;
+}
+.center > .container-h2 {
+    transform: skew(9deg,0deg);
+}
+h2 {
+    font-weight: 700;
+    font-size: 2em;
+    margin-top: 45px;
+    background-color: rgba(255,204,53,.4);
+}
+.pharanpm {
+    margin-top: 45px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px;
+    line-height: 1.5em;
+}
+.features {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 900px;
+    padding-top: 4em;
+    flex-direction: column;
+}
+.f-imgs {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+.f-imgs img {
+    width: 45px;
+}
+
+h3 {
+    font-weight: normal;
+    font-size: 0.8em;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    color: #fb3e44;
+}
+.features-txt p {
+    font-size: 0.7em;
+    text-align: margin-right;
+    width: 75%;
+    line-height: 1.5em;
+}
+.features-txt {
+    margin-bottom: 70px;
+}
+.create {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 100px;
+}
+.features a {
+    padding: 10px 90px;
+    text-decoration: none;
+    border: 1px solid #cccccc;
+    background: black;
+    color: white;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2)
+}
+  
+  
+  
+  
+  
+  
+  
