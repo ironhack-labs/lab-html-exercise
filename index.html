@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="NPM Clone" author="Thaís Bitencourt">
+    <link rel="stylesheet" href="/style.css">
     <title>npm clone | buil amazing things</title>
 </head>
 
@@ -16,30 +17,33 @@
             </div>
             <nav>
                 <ul>
-                    <li>npm Enterprise</li>
-                    <li>Products</li>
-                    <li>Solutions</li>
-                    <li>Resources</li>
-                    <li>Docs</li>
-                    <li>Support</li>
+                    <li><a href="/enterprise">npm Enterprise</a></li>
+                    <li><a href="/products">Products</a></li>
+                    <li><a href="/solutions">Solutions</a></li>
+                    <li><a href="/resources">Resources</a></li>
+                    <li><a href="/documentation">Docs</a></li>
+                    <li><a href="/support">Support</a></li>
             </nav>
         </div>
 
         <div class="welcome-menu">
-            <div class="logo-container">
+            <div class="logo-container submenu">
                 <img src="/images/npm-logo.png" alt="NPM logo">
             </div>
-            <div class="form-container">
+
+            <form action="/search-result" method="GET" class="submenu">
                 <span><img src="/images/magnifying-glass.png" alt="magnifying glass"></span>
-                <form action="/search-result" method="GET">
-                    <input type="text" name="search-bar" id="search-bar" placeholder="Search packages">
-                    <button type="submit">Search</button>
-                </form>
+                <input type="text" name="search-bar" id="search-bar" placeholder="Search packages">
+                <button type="submit">Search</button>
+            </form>
+
+            <div class="member sign submenu">
+                <a href="sign-up">Join</a>
             </div>
-            <div class="login/sign-up">
-                <a href="/sing-up">Join</a>
+            <div class="member submenu">
                 <a href="login">Log in</a>
             </div>
+
         </div>
     </header>
 
@@ -99,19 +103,3 @@
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
