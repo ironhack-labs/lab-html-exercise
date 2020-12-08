@@ -4,7 +4,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  line-height: 3.5em;
+  line-height: 3.0em;
   font: "Poppins";
   font-size: 10px;
   font-weight: 300;
@@ -32,6 +32,7 @@ header > div {
 
 nav {
   width: 600px;
+  font-size: 1.3em;
 }
 
 nav ul {
@@ -51,6 +52,11 @@ nav a {
   margin-right: 1rem;
 }
 
+.second-nav{
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
 .npm-logo {
   width: 50px;
   margin-right: 1rem;
@@ -58,7 +64,23 @@ nav a {
 
 .search-icon {
   width: 20px;
-  margin-top: 1rem;
+  margin: 15px 0 0 10px;
+}
+
+.whole-search{
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.whole-search > button {
+    background-color: #fb3e44;
+    color: white;
+    border: none;
+}
+
+.whole-search > button:hover {
+    background-color: #f06b6f;
+    cursor: pointer;
 }
 
 .search {
@@ -66,16 +88,34 @@ nav a {
   background-color: transparent;
   border: 0px solid;
   height: 20px;
-  width: 160px;
-  color: #ccc;
-}
-
-.search {
-  width: 500px;
+  color: black;
   background: none;
   outline: none;
   border-radius: none;
 }
+
+.search-bar {
+    background-color:rgba(0,0,0,.05);
+    width: 1250px;
+}
+
+.search-bar > input{
+    width: 96%;
+}
+
+.sign-bt a{
+   text-decoration: none;
+   justify-content: space-around;
+   margin-right: 40px;
+   color: black;
+   font-size: 1.4em;
+}
+
+.join-bt{
+    border: 1px solid;
+    padding: 10PX 15px;
+}
+
 
 #intro-npm {
   height: 600px;
@@ -106,12 +146,11 @@ nav a {
   margin-top: 50px;
 }
 
-#charac-npm > div{
-    display: flex;
-    justify-content: space-between;
-    
+#charac-npm > div {
+  display: flex;
+  justify-content: space-between;
 }
 
 #charac-npm img {
-    width: 40px;
+  width: 40px;
 }
