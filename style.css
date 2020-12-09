@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Poppins';
+}
+
+/* header nav bar */
+
+header>div {
+  padding: 0 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+}
+
+nav {
+  width: 600px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+input {
+  font-family: "Poppins";
+  font-size: 1em;
+}
+
+.container {
+  display: flex;
+  align-items: baseline;
+}
+
+.blackHeart {
+  width: 20px;
+  margin-right: 1rem;
+}
+
+/* search bar */
+
+.search-bar-container {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: stretch ;
+  align-items: center;
+  align-content: space-evenly;
+  background-color: white;
+
+}
+
+.npmlogo {
+  width: 70px;
+  height: 23px;
+  margin: 10px;
+  display: flex;
+  align-self: center;
+  background-color: white;
+}
+
+.search-icon {
+  position: absolute;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: baseline;
+  background-color: rgba(0, 0, 0, 0);
+  height: 22px;
+  width: 22px;
+  margin: 10px;
+
+}
+
+.search-bar {
+  width: 100%;
+  float: left;
+  display: block;
+  height: 35px;
+  font-family: 'Arial';
+  background-color: rgba(0, 0, 0, .05);
+  border: none;
+  padding: 2px 25px 2px 30px;
+  outline: 0;
+  padding-left: 40px;
+}
+
+
+.search-bar-container .bt-search {
+  float: left;
+  display:block;
+  background-color: #fb3e44;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  font-family: 'Poppins';
+
+}
+
+
+.search-bar-container .link-btn {
+  float: left;
+  display:block;
+  position: relative;
+  margin: 10px 40px;
+  border: 1px solid lightgray;
+  padding: 3px 15px;
+  background-color: white;
+  font-size: 1em;
+  color: gray;
+
+}
+
+.search-bar-container .link-btn-bl {
+  float: left;
+  display:block;
+  position: relative;
+  margin: 10px 40px;
+  border: 1px solid lightgray;
+  padding: 3px 15px;
+  background-color: white;
+  font-size: 1em;
+  color: gray;
+
+}
+
+
+/*
+form label color: rgba(0,0,0,.05)
+form input color: rgba(0,0,0,.05)
+form button background color: #fb3e44
+form button letters color: white; */
+
+
+/* section build */
+
+.header {
+  height:600px;
+  background-color: rgb(248, 244, 244);
+  text-align: center;
+  padding: 3%;
+}
+
+.header h1 {
+  font-size: 5em;
+}
+
+.header a {
+  padding: 15px 60px;
+  border: none;
+  font-size: 1.2em;
+  margin: 60px 20px;
+}
+
+.section-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.section-buttons .bt-plans {
+  background-color: rgb(247, 59, 74);
+  color: white;
+  box-shadow: 8px 8px 0 rgba(251, 59, 73, .2);
+}
+
+
+.header .bt-jfree {
+  background-color: white;
+  color: black;
+}
+
+/* section text */
+
+#text {
+  text-align: center;
+  margin: 10%;
+  font-size: 1.2em;
+}
+
+
+.bg-color {
+  background-color: rgba(255, 204, 53, .4);
+  font-style: italic;
+  margin-top: 20%;
+  padding: 0 10px;
+  transform: skew (9deg,0deg);
+  margin-top: 20%;
+  padding: 0 10px;
+}
+
+#text h2 {
+  margin-top: 5%;
+}
+
+/* section create */
+
+.co-section img {
+  width: 20%;
+}
+
+.co-section h4 {
+  color: #ED1C24;
+}
+
+#create-org {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  align-items: baseline;
+  margin: 20px 50px;
+
+}
+
+.co-section {
+  padding: 5%;
+  width: 60%;
+}
+
+.create-bt {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+  text-emphasis: bold;
+}
+
+.create-bt a:link,
+a:visited {
+  background-color: black;
+  color: white;
+  padding: 10px 65px;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 8px 8px 0 rgba(128, 83, 35, .2)
+}
+
+.create-bt a:hover,
+a:active {
+  background-color: rgb(44, 43, 43)
+}
