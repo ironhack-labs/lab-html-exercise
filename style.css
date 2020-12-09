@@ -22,7 +22,7 @@ header>div {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid lightgray;
+
 }
 
 nav {
@@ -59,108 +59,94 @@ input {
 /* search bar */
 
 .search-bar-container {
-  width: 100%;
-  overflow: hidden;
-  display: flex;
-  justify-content: stretch ;
-  align-items: center;
-  align-content: space-evenly;
-  background-color: white;
-
-}
-
-.npmlogo {
-  width: 70px;
-  height: 23px;
-  margin: 10px;
-  display: flex;
-  align-self: center;
-  background-color: white;
-}
-
-.search-icon {
-  position: absolute;
   display: flex;
   justify-content: space-evenly;
-  align-items: baseline;
+  align-items: center;
+  background-color: white;
+
+}
+
+.search-bar-container .npmlogo {
+  float: left;
+  width: 70px;
+  height: 23px;
+  padding: 10px;
+  background-color: white;
+  margin-left: 1rem;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar-container .search-icon {
+  position: absolute;
   background-color: rgba(0, 0, 0, 0);
   height: 22px;
   width: 22px;
-  margin: 10px;
+  margin-left: 10px;
 
 }
 
-.search-bar {
-  width: 100%;
-  float: left;
-  display: block;
+.search-bar-container input[type=text] {
+  width: 65vw;
   height: 35px;
-  font-family: 'Arial';
+  font-family: Georgia;
   background-color: rgba(0, 0, 0, .05);
   border: none;
-  padding: 2px 25px 2px 30px;
-  outline: 0;
-  padding-left: 40px;
+  padding: 2px 35px 0px 40px;
+
 }
 
 
-.search-bar-container .bt-search {
-  float: left;
-  display:block;
+.search-bar-container .search-button {
   background-color: #fb3e44;
   color: white;
-  padding: 10px 20px;
+  height: 35px;
   border: none;
   font-family: 'Poppins';
-
+  padding: 5px 20px;
+  display: block;
 }
 
-
-.search-bar-container .link-btn {
-  float: left;
-  display:block;
-  position: relative;
-  margin: 10px 40px;
-  border: 1px solid lightgray;
+.search-bar-container .button-join {
+  margin: 10px 15px;
   padding: 3px 15px;
+  border: 1px solid lightgray;
   background-color: white;
   font-size: 1em;
   color: gray;
+  display: block;
+
 
 }
 
-.search-bar-container .link-btn-bl {
-  float: left;
-  display:block;
-  position: relative;
-  margin: 10px 40px;
-  border: 1px solid lightgray;
-  padding: 3px 15px;
+.search-bar-container .button-login {
+  margin: 10px 0px;
+  padding: 3px 30px 3px 6px;
   background-color: white;
   font-size: 1em;
   color: gray;
+  display: block;
 
 }
 
-
-/*
-form label color: rgba(0,0,0,.05)
-form input color: rgba(0,0,0,.05)
-form button background color: #fb3e44
-form button letters color: white; */
 
 
 /* section build */
 
 .header {
-  height:600px;
+  height: 600px;
   background-color: rgb(248, 244, 244);
   text-align: center;
   padding: 3%;
+  margin: 0 20px;
 }
 
 .header h1 {
   font-size: 5em;
+  font-weight: 700;
 }
 
 .header a {
@@ -189,25 +175,25 @@ form button letters color: white; */
 
 /* section text */
 
-#text {
+.text {
   text-align: center;
   margin: 10%;
-  font-size: 1.2em;
+
 }
 
-
-.bg-color {
+.yellow-bg {
   background-color: rgba(255, 204, 53, .4);
+  transform: skew(9deg, 0deg);
+  margin: 0 140px;
+  font-weight: 700;
   font-style: italic;
-  margin-top: 20%;
-  padding: 0 10px;
-  transform: skew (9deg,0deg);
-  margin-top: 20%;
-  padding: 0 10px;
+
 }
 
-#text h2 {
-  margin-top: 5%;
+
+.text h2 {
+  margin-top: 7%;
+  font-size: 1.9em;
 }
 
 /* section create */
@@ -254,4 +240,17 @@ a:visited {
 .create-bt a:hover,
 a:active {
   background-color: rgb(44, 43, 43)
+}
+
+/* Mobile Use*/
+@media screen and (max-width: 800px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .search-bar-container input[type=text] {
+    width: 100%;
+  }
+
 }

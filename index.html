@@ -35,16 +35,14 @@
   <div class="search-bar-container">
 
     <img class="npmlogo" src="images/npm-logo.png" alt="npm logo">
+      <form class=form id=”search-form” name=”search-form” method=”get” action=”index.html”>
+        <img src="images/magnifying-glass.png" alt="Search" class="search-icon">
+        <input type="text" name="text" class="search-input" placeholder="Search packages">
+        <button type="submit" class="search-button">Search</button>
+      </form>
+      <a class="button-join" href="url">Join</a>
+      <a class="button-login" href="url">Log in</a>
 
-    <div>
-      <img src="images/magnifying-glass.png" alt="Search" class="search-icon">
-      <input type="text" name="text" class="search-bar" placeholder="Search packages">
-    </div>
-    <button type="submit" class="bt-search">Search</button>
-    <div>
-      <a class="link-btn" href="url">Join</a>
-      <a class="link-btn-bl" href="url">Log in</a>
-    </div>
   </div>
 
   <!--section build-->
@@ -69,9 +67,9 @@
 
   <!--section text-->
 
-  <section id="text">
+  <section class="text">
     <img src="images/triangle-hexagon.svg" alt="triangle-hexagon" width="24%">
-    <h2><span class="bg-color">Bring the best of open source to your company</span></h2>
+    <h2 class=yellow-bg> Bring the best of open source to your company </h2>
     <h5>npm is the tool used by
       over 11,000,000 JavaScript developers around the world. Your developers <br> already use it.
       Your company depends on it.
