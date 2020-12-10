@@ -3,7 +3,7 @@
 body {
   font-family: 'Poppins';
 }
-/*Header - Nav Bar*/
+/* **HEADER** - Nav Bar*/
 header > div {
     padding: 0 25px;
     display: flex;
@@ -11,28 +11,35 @@ header > div {
     align-items: center;
     border-bottom: 1px solid lightgray;
 }
-
+/*nav bar */
 nav {
     width: 600px;
 }
-
 nav ul {
     list-style: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
+nav > ul > li:hover {
+    opacity: 0.6;
+    transition: 0.3s;
+}
 nav a {
     text-decoration: none;
     color: black;
 }
+/*logo*/
 .blackheart {
     width: 20px;
     margin-right: 1rem;
 }
+.blackheart:hover{
+    opacity: 0.6;
+    transition: 0.3s;
+}
 
-/*Header - Search Bar*/
+/* **HEADER** - Search Bar*/
 .npm-logo {
     width: 70px;
     margin-right: 1rem;
@@ -42,6 +49,7 @@ nav a {
     background-color: rgba(0, 0, 0, .05);
     padding: 8px;
 }
+/* sarch bar */
 .form-search {
     height: 44px;
     width: 1525px;
@@ -68,17 +76,73 @@ nav a {
     border: 0;
     font-size: 17px;
     letter-spacing: 2px;
-    font-weight: lighter;
+    font-weight: lighter;    
 }
+/* buttons */
 .header-join-btn {
     border: 1px solid rgb(230,230,230);
     text-decoration: none;
     padding: 10px 25px;
     color: black;
-    margin-left: 10px;    
+    margin-left: 40px;
+
 }
+.header-join-btn:hover {
+    opacity: 0.6;    
+    transition: 0.3s ease-out;  
+}
+
 .header-login-btn{
     text-decoration: none;
-    padding: 10px 25px;
+    padding: 10px 15px;
+    color: black; 
+    margin-left: 10px;  
+}
+.header-login-btn:hover {
+    opacity: 0.6;
+    transition: 0.3s;
+}
+/* PRESENTATION SECTION */
+#presentation {
+    height: 600px;
+    background-color: rgba(232,217,217,.3);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+#presentation h1 {
+    font-size: 70px;    
+    font-weight: bold;
+}
+#presentation article{
+    font-size: 20px;
+    width: 28%;
+    text-align: center;
+}
+#presentation > div {
+    margin-top: 3%;
+    width: 28%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5%;
+}
+#presentation > div > a {
+    font-size: 20px;
+}
+/*presentation buttons*/
+.plans-btn {
+    background-color: #FB3B49;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+    text-decoration: none;
+    color: white;
+    padding: 15px 65px;
+    margin-right: 3%;
+}
+.join-4free-btn {
+    background-color: white;
+    text-decoration: none;    
     color: black;
+    font-weight: bold;
+    padding: 15px 65px;
 }
