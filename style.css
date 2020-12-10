@@ -147,13 +147,16 @@ form button {
 
 /*Section 1*/
 
-.main {
-    height: 60rem;
-    background-color: rgba(232, 217, 217, .3);
+.section {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+}
+.main {
+    height: 60rem;
+    background-color: rgba(232, 217, 217, .3);    
 }
 
 .main h1,
@@ -189,11 +192,72 @@ form button {
     background-color: #FB3B49;
     box-shadow: 8px 8px 0 rgba(251, 59, 73, .2);
 }
-
+.join {
+    background-color: white;
+}
 .plans a {
     color: white;
 }
 
 .join a {
     color: black;
+}
+
+/*Section 2*/
+
+.invitation img {
+    margin: 5rem;
+    width: 30rem;
+    height: auto;
+
+}
+.invitation h2 {
+    padding: 0 1.5rem;
+    background-color: rgba(255, 204, 53, .4);
+    font-size: 3.5rem;
+    font-style: italic;
+    transform: skew(9deg,0deg);
+}
+
+.invitation article {
+    width: 73rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+/*Section 3*/
+
+.presentation {
+    margin: 3rem;
+}
+.presentation .features {
+    margin: 3rem;
+    width: 75%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.features > div {
+    width: 17rem;
+    font-size: 1.1rem;
+}
+
+.features h3 {
+    color: #ED1C24;
+}
+.features img {
+    width: 2rem;
+}
+
+.create-org {
+    margin: 3rem 2rem;
+    padding: 1.5rem .5rem;
+    width: 40rem;
+    background-color: black;
+    text-align: center;
+}
+
+.create-org a {    
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: white;
 }
