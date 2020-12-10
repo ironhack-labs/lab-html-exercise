@@ -4,8 +4,8 @@ html,
 body {
   margin: 0;
   padding: 0;
-  line-height: 3.0em;
-  font: "Poppins";
+  line-height: 3em;
+  font-family: "Poppins", sans-serif;
   font-size: 10px;
   font-weight: 300;
 }
@@ -18,8 +18,9 @@ h1 {
 h2 {
   font-size: 4em;
 }
-body {
-  font-family: "Poppins", sans-serif;
+
+p {
+  font-size: 2em;
 }
 
 header > div {
@@ -52,9 +53,9 @@ nav a {
   margin-right: 1rem;
 }
 
-.second-nav{
-    margin-top: 8px;
-    margin-bottom: 8px;
+.second-nav {
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 
 .npm-logo {
@@ -67,20 +68,20 @@ nav a {
   margin: 15px 0 0 10px;
 }
 
-.whole-search{
-    display: flex;
-    margin-bottom: 5px;
+.whole-search {
+  display: flex;
+  margin-bottom: 5px;
 }
 
 .whole-search > button {
-    background-color: #fb3e44;
-    color: white;
-    border: none;
+  background-color: #fb3e44;
+  color: white;
+  border: none;
 }
 
 .whole-search > button:hover {
-    background-color: #f06b6f;
-    cursor: pointer;
+  background-color: #f06b6f;
+  cursor: pointer;
 }
 
 .search {
@@ -95,50 +96,64 @@ nav a {
 }
 
 .search-bar {
-    background-color:rgba(0,0,0,.05);
-    width: 1250px;
+  background-color: rgba(0, 0, 0, 0.05);
+  width: 1250px;
 }
 
-.search-bar > input{
-    width: 96%;
+.search-bar > input {
+  width: 96%;
 }
 
-.sign-bt a{
-   text-decoration: none;
-   justify-content: space-around;
-   margin-right: 40px;
-   color: black;
-   font-size: 1.4em;
+.sign-bt a {
+  text-decoration: none;
+  justify-content: space-around;
+  margin-right: 40px;
+  color: black;
+  font-size: 1.4em;
 }
 
-.join-bt{
-    border: 1px solid;
-    padding: 10PX 15px;
+.join-bt {
+  border: 1px solid;
+  padding: 10px 15px;
 }
-
 
 #intro-npm {
-  height: 600px;
+  height: 500px;
   background-color: rgba(232, 217, 217, 0.3);
   padding: 75px 0;
   margin: 0 auto;
   text-align: center;
 }
 
-#intro-npm article {
-  font-size: 2.5em;
-  margin: auto 30%;
+.article-gen {
+  font-size: 1.5em;
+  margin: auto 25%;
+  line-height: 2.5em;
 }
 
 #intro-npm a {
   text-align: center;
-  margin: auto 10%;
+  margin: 100px 10%;
   text-decoration: none;
-  font-size: 1.5em;
+}
+
+.join-plans {
+  margin-top: 100px;
+  font-size: 2.2em;
+  font-weight: bold;
+}
+
+.see-plans {
+  background-color: #fb3b49;
+  padding: 10px 15px;
+  box-shadow: 8px 8px 0 rgba(251, 59, 73, 0.2);
+  color: white;
 }
 
 #open-source {
   text-align: center;
+  margin-bottom: 100px;
+  height: 500px;
 }
 
 #open-source img {
@@ -146,11 +161,62 @@ nav a {
   margin-top: 50px;
 }
 
-#charac-npm > div {
+#open-source h2 {
+  background-color: rgba(255, 204, 53, 0.4);
+  transform: skew(9deg, 0deg);
+  margin-left: 300px;
+  margin-right: 300px;
+  font-style: italic;
+}
+
+#open-source article {
+  font-size: 1em;
+  line-height: 3.5em;
+}
+
+#charac-sec {
+  height: 500px;
+}
+
+#charac-npm {
+  margin-top: 180px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
+}
+
+#charac-npm  .container {
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  width: 370px;
+}
+
+#charac-npm h3 {
+  color: red;
+  font-size: 1.9em;
+}
+
+#charac-npm p {
+  font-size: 2em;
+  font-weight: 100;
+  text-align: left;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 #charac-npm img {
-  width: 40px;
+  width: 50px;
+}
+
+#charac-sec > a {
+ display: flex;
+ margin-top: 50px;
+ font-size: 1.8em;
+ text-decoration: none;
+ text-align: center;
+ margin: 30px 40% 20px 40%;
+ background-color: black ;
+ box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+ color: white;
+ padding: 10px 0 10px 100px;
 }
