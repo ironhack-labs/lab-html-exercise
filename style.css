@@ -52,9 +52,13 @@ nav a {
     padding: 8px;
 }
 /* sarch bar */
+.search-div {
+    width: 80%;
+    margin-right: 10px;    
+}
 .form-search {
     height: 44px;
-    width: 1525px;
+    width: 100%;
     display: flex;
     align-items: center;
     margin: 10px 0px 10px 0px;
@@ -74,31 +78,41 @@ nav a {
     background-color: #fb3e44;
     color: white;
     height: 100%;
-    width: 8%;
+    width: 114px;
     border: 0;
     font-size: 17px;
     letter-spacing: 2px;
     font-weight: lighter;    
 }
 /* buttons */
+.buttons-div {
+    width: 200px;
+    display: flex;
+    justify-content: flex-end;
+    height: 47px;
+}
 .header-join-btn {
     border: 1px solid rgb(230,230,230);
     text-decoration: none;
-    padding: 10px 25px;
+    width: 80px;
+    height: 45px;
     color: black;
-    margin-left: 40px;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;        
 }
 .header-join-btn:hover {
     opacity: 0.6;    
     transition: 0.3s ease-out;  
 }
-
 .header-login-btn{
     text-decoration: none;
-    padding: 10px 15px;
-    color: black; 
-    margin-left: 10px;  
+    width: 80px;
+    height: 45px;    
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .header-login-btn:hover {
     opacity: 0.6;
