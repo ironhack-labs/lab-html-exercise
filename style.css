@@ -11,6 +11,7 @@ header > div {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     border-bottom: 1px solid lightgray;
 }
 /*nav bar */
@@ -23,10 +24,7 @@ nav ul {
     justify-content: space-between;
     align-items: center;
 }
-nav > ul > li:hover {
-    opacity: 0.6;
-    transition: 0.3s;
-}
+
 nav a {
     text-decoration: none;
     color: black;
@@ -36,15 +34,12 @@ nav a {
     width: 20px;
     margin-right: 1rem;
 }
-.blackheart:hover{
-    opacity: 0.6;
-    transition: 0.3s;
-}
+
 
 /* **HEADER** - Search Bar*/
 .npm-logo {
     width: 70px;
-    margin-right: 1rem;
+    margin: 1% 1rem 1% 0px;    
 }
 .glass-logo {
     height: 30px;
@@ -54,14 +49,15 @@ nav a {
 /* sarch bar */
 .search-div {
     width: 80%;
-    margin-right: 10px;    
+    margin-right: 10px;
+    height: 64px;
 }
 .form-search {
     height: 44px;
     width: 100%;
     display: flex;
     align-items: center;
-    margin: 10px 0px 10px 0px;
+    margin: 10px 0px;
 }
 .form-search input{
     color: rgba(0, 0, 0);
@@ -87,40 +83,41 @@ nav a {
 /* buttons */
 .buttons-div {
     width: 200px;
+    height: 64px;
     display: flex;
     justify-content: flex-end;
-    height: 47px;
+    align-items: center;
 }
 .header-join-btn {
     border: 1px solid rgb(230,230,230);
     text-decoration: none;
-    width: 80px;
+    width: 100px;
     height: 45px;
     color: black;
     display: flex;
     justify-content: center;
     align-items: center;        
 }
-.header-join-btn:hover {
-    opacity: 0.6;    
-    transition: 0.3s ease-out;  
-}
 .header-login-btn{
     text-decoration: none;
-    width: 80px;
+    width: 100px;
     height: 45px;    
     color: black;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+/*hover on header elements*/
+nav > ul > li:hover,
+.blackheart:hover,
+.header-join-btn:hover,
 .header-login-btn:hover {
     opacity: 0.6;
     transition: 0.3s;
 }
 /* PRESENTATION SECTION */
 #presentation {
-    height: 600px;
+    min-height: 600px;
     background-color: rgba(232,217,217,.3);
     display: flex;
     align-items: center;
@@ -130,18 +127,20 @@ nav a {
 #presentation h1 {
     font-size: 70px;    
     font-weight: bold;
+    text-align: center;
+    margin: 0px;
 }
 #presentation article{
     font-size: 20px;
-    width: 28%;
+    width: 480px;
+    box-sizing: border-box; 
     text-align: center;
+    margin: 3% 2%;
 }
 #presentation > div {
-    margin-top: 3%;
-    width: 28%;
+    width: 490px;
     display: flex;
     justify-content: space-around;
-    margin-bottom: 5%;
 }
 #presentation > div > a {
     font-size: 20px;
@@ -164,10 +163,11 @@ nav a {
 }
 /* DESCRIPTION SECTION */
 .triangle-hexagon-logo {
-    height: 38%;
+    height: 200px;
+    margin: 2% 0%;  
 }
 #description {
-    height: 600px;
+    min-height: 600px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -181,37 +181,41 @@ nav a {
     text-align: center;
     background-color: rgba(255, 204, 53, .4);
     transform: skew(9deg,0deg);
-    margin-bottom: 20px;
+    margin: 2% 0%;
 }
 #description article {
     font-size: 15px;
-    width: 39%;
+    max-width: 740px;
+    box-sizing: border-box;
     text-align: center;
-    margin-bottom: 0%;
+    margin: 0% 2%;
+
 }
 /* FEATURES SECTION */
 .features-icon {
-    height: 60%;
+    width: 36px;
 }
 #features {
-    height: 400px;
+    min-height: 400px;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: space-around;
-    padding: 0% 10% 5% 10%;
-
+    padding: 95px 0%;
 }
 .features-box {
     height: 35%;
-    max-width: 1200px;
+    max-width: 1500px;
     display: flex;
-    flex-direction: row;
-    padding-bottom: 5%;
+    flex-flow: row wrap; 
+    justify-content: center;   
+    padding-bottom: 40px;
 }
 .features-box > div{
     height: 35%;
-    padding: 0px 3% 3% 3%;
+    min-width: 228px;
+    max-width: 228px;
+    padding: 0px 30px;
     width: 25%;
 }
 .create-org-btn {
