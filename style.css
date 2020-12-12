@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
 
+/* Overall styles */
+
 html {
     font-family: 'Poppins';
     font-size: 10px;
@@ -10,49 +12,50 @@ body {
   margin: 0 auto;  
 }
 
-/*Header*/
-
-header {
-    padding: 1em;
-    font-size: 1.3rem;
-}
-
 a {    
     color:#3B3E36;
     text-decoration: none;
 }
 
+.outer-aligment {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-aligment {
+    display: flex;
+    align-items: center;
+}
+
+/*Header*/
+
+header {
+    padding: 1.3rem;
+    font-size: 1.3rem;
+}
+
     /*First menu*/
 
-header .nav-menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+header .nav-menu {    
+    justify-content: space-between;    
     height: 3.5rem;
 }
 
-.nav-menu div {
-    width: 30%;
-    display: flex;
-    align-items: center;    
+.nav-menu > div {
+    width: 30%;  
     font-weight: 500;
 }
 
-.nav-menu span {
+.nav-menu img {    
     padding: 0 2rem;
-    display: flex;
-    align-items: center;
-}
-
-.nav-menu img {
     max-width: 3rem;
     height: auto;
 }
 
-nav ul {    
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+nav ul {        
+    justify-content: space-around;    
     font-weight: 700;
     list-style-type: none;    
 }
@@ -62,41 +65,36 @@ nav a {
     text-decoration: none;
 }
 
-    /*Second menu*/
-
-.welcome-menu {
-    padding: 1.3rem;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+hr {
+    border: .1px solid rgb(242, 243, 244);
 }
 
-.submenu {
+
+    /*Second menu*/
+
+.search-menu {
+    padding: 1.3rem;    
+    justify-content: space-evenly;    
+}
+
+.search-menu div,
+.search-menu form {
     margin: 0 1rem;
 }
 
-.logo-container {
-    margin: 0 1%;
-    display: flex;
-    align-items: center;
-}
-
-.logo-container img {    
+.logo-container img {   
+    margin: 0 1%; 
     max-width: 9rem;
     height: auto;
 }
 
 form {
-    display: flex;
     justify-content: center;
-    align-items: center;
     width: 80%;
     height: 3em;
 }
 
 form span {
-    display: flex;
-    align-items: center;
     height: 3rem;
     border-radius: 7% 0 0 7%;
 }
@@ -122,7 +120,7 @@ form input {
 
 form button {
     box-sizing: content-box;
-    padding: .5rem;
+    padding: .5rem 1.5rem;
     height: 3rem;
     border: none;
     border-radius: 0 7% 7% 0;
@@ -131,29 +129,25 @@ form button {
 }
 
 .member {
+    justify-content: center;
+}
+
+.member div {
     width: 5rem;
     height: 3rem;
-    padding: 0 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin: 0 0.5rem;
+    padding: 0 1rem;    
+    justify-content: center;    
     font-size: 1.3rem;
 }
 
-.sign {
+.sign-up {
     border: 1.5px solid black;
+    border-top: 2px solid rgba(0, 0, 0, .5);
 }
-
 
 /*Section 1*/
 
-.section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-}
 .main {
     height: 60rem;
     background-color: rgba(232, 217, 217, .3);    
@@ -168,21 +162,22 @@ form button {
     font-size: 10rem;
     line-height: 1;
 }
+
 .main article,
 .main div {
     font-size: 2rem;
     text-align: center;
 }
+
 .main article {
     width: 55rem;    
 }
 
 .main > div {
-    display: flex;
     font-weight: bold;
 }
 
-.main .subscription {
+.subscription {
     margin: 0 2rem;
     padding: 1.5rem .5rem;
     width: 25rem;
@@ -192,9 +187,11 @@ form button {
     background-color: #FB3B49;
     box-shadow: 8px 8px 0 rgba(251, 59, 73, .2);
 }
+
 .join {
     background-color: white;
 }
+
 .plans a {
     color: white;
 }
@@ -211,6 +208,7 @@ form button {
     height: auto;
 
 }
+
 .invitation h2 {
     padding: 0 1.5rem;
     background-color: rgba(255, 204, 53, .4);
@@ -230,22 +228,27 @@ form button {
 .presentation {
     margin: 3rem;
 }
-.presentation .features {
+
+.features {
     margin: 3rem;
     width: 75%;
-    display: flex;
     justify-content: space-evenly;
+    align-items: flex-start;
 }
+
 .features > div {
+    margin: 2rem;
     width: 17rem;
-    font-size: 1.1rem;
+    font-size: 1.1rem;    
+}
+
+.features img {
+    width: auto;
+    height: 2.4rem;
 }
 
 .features h3 {
     color: #ED1C24;
-}
-.features img {
-    width: 2rem;
 }
 
 .create-org {
