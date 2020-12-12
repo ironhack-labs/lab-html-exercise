@@ -17,6 +17,17 @@ a {
     text-decoration: none;
 }
 
+.sign-up,
+.plans,
+.create-org{
+    transition-duration: .5s;
+}
+.sign-up:hover,
+.plans:hover,
+.create-org:hover {
+    opacity: 0.5;
+}
+
 .outer-aligment {
     display: flex;
     flex-direction: column;
@@ -29,12 +40,14 @@ a {
     align-items: center;
 }
 
+
 /*Header*/
 
 header {
     padding: 1.3rem;
     font-size: 1.3rem;
 }
+
 
     /*First menu*/
 
@@ -128,6 +141,10 @@ form button {
     color: white;
 }
 
+form button:hover {
+    cursor:pointer;
+}
+
 .member {
     justify-content: center;
 }
@@ -145,6 +162,7 @@ form button {
     border: 1.5px solid black;
     border-top: 2px solid rgba(0, 0, 0, .5);
 }
+
 
 /*Section 1*/
 
@@ -200,11 +218,12 @@ form button {
     color: black;
 }
 
+
 /*Section 2*/
 
 .invitation img {
     margin: 5rem;
-    width: 30rem;
+    max-width: 30rem;
     height: auto;
 
 }
@@ -222,6 +241,7 @@ form button {
     font-size: 1.5rem;
     text-align: center;
 }
+
 
 /*Section 3*/
 
