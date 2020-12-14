@@ -13,7 +13,7 @@ header > div {
   }
   
   nav {
-    width: 600px;
+    width: 1200px;
   }
   
   nav ul {
@@ -22,7 +22,14 @@ header > div {
     justify-content: space-between;
     align-items: center;
   }
-  
+  .shift {
+    border: hidden;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-content: flex-start;
+  }
   nav a {
     text-decoration: none;
     color: black;
@@ -58,35 +65,35 @@ header > div {
 }
 #build-amazing {
   background-color: rgba(232,217,217,0.3);
-  height: 600px;
+  height: 400px;
 }
 h1  {
   padding: 20px;
+  margin:initial;
   text-align: center;
   font-style: bold;
+  font-size: 65px;
   border-style:hidden;
   border-width: 2px;
   display: flex;
   flex-direction: column;
   align-content: center;
 }
-h5 {
-  padding: 20px;
+ h5 {
+  padding: 0;
   text-align: center;
   width: 400px;
   border-style: hidden;
-  border-image:fill;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-
+  border-image:fill; 
 }
-#p {
-display: flex;
-flex-direction: row;
-align-content: center;
+#p-center {
+  padding: 20px;
+  width: fill-content;
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: column;
+  /* align-items: center; */
+  align-content: space-around;
 }
 #see-plans {
   border-style: solid;
@@ -116,4 +123,63 @@ align-content: center;
   flex-direction: row;
   justify-content: space-around;
   background-color: rgba(232,217,217,0.3);
+}
+#hexagon {
+  padding: 10px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.triangle {
+background-color: rgba(255,204,53,0.4);
+transform: skew(9deg,0deg);
+font-style: italic;
+margin:auto;
+padding: 10px;
+width: 500px;
+text-align: center;
+}
+#description {
+  text-align: center;
+  padding: 5px;
+  margin: auto;
+  width: fit-content;
+}
+
+#structure > article {
+  margin:unset;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  justify-items: center;
+  /* flex-wrap: wrap; */
+}
+.container {
+  padding: 10px 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.service-box {
+  text-align: center;
+  border: hidden;
+  /* padding: 8px; */
+
+
+}
+
+.create-an-org {
+  box-shadow: 8px 8px 0 rgba(128,83,35,0.2);
+  color: white;
+}
+#org-button {
+  background-color: black;
+  color: white;
+}
+.header {
+  color: #ED1C24;
+  font-display:initial;
 }
