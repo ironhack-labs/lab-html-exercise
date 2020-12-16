@@ -28,22 +28,31 @@ header > div { /*Mirar al final si puedo quitar el identificador de los div*/
     color: black;
   }
   
-  #header-nav img {
+  .header-nav img {
     width: 20px;
     margin-right: 1rem;
   }
 
-  #header-search img {
+  .header-search img {
     width: 70px;
     margin-right: 32px;
     margin-top: 16px;
   }
 
-  #header-search {
+  .header-search {
       display:flex;
       justify-content: flex-start;
+      padding: 0 32px;
+  }
+
+  .header-search > div {
+      padding: 10px 0;
   }
 
   .search-bar{
       display:flex;
+  }
+
+  .search-bar #magnifying-glass {
+      width: 18px;
   }
