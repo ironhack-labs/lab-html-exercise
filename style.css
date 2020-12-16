@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins");
 
 body {
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
+  margin: 0;
 }
 
 header > div {
@@ -96,7 +97,6 @@ header > div {
 .sign-in-up {
   display: flex;
   justify-content: center;
-  padding-left: 5px;
   height: 50px;
   margin-left: 16px;
 }
@@ -132,7 +132,7 @@ header > div {
   box-sizing: border-box;
 }
 h1 {
-  font-size: 72px;
+  font-size: 80px;
   font-weight: 900;
   text-align: center;
   margin: 0;
@@ -140,30 +140,49 @@ h1 {
 }
 
 .center-content {
-  width: 30%;
+  width: 430px;
   display: flex;
   text-align: center;
   margin-top: 0;
   margin-bottom: 0;
 }
 .suscription-plans-submit {
-  width: 30%;
+  width: 430px;
   display: flex;
   justify-content: space-around;
-  padding-top: 16px;
+  margin-top: 16px;
 }
 .suscription-plans-submit button {
   font-family: inherit;
-  padding: 1em 4em;
+  padding: 15px 60px;
   border: none;
 }
 #payment-plans {
   background-color: rgb(251, 60, 73);
   color: white;
   font-weight: bold;
-  box-shadow: 0.5em 0.5em rgba(251, 60, 73, 0.3);
+  box-shadow: 8px 8px rgba(251, 60, 73, 0.2);
 }
 
 #free {
   background-color: white;
+}
+
+#description {
+    display: flex;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  height: 600px;
+  align-items: center;
+}
+.description-img {
+    width: 200px;
+}
+
+#description h2 {
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+    font-style: italic;
+    
 }
