@@ -34,37 +34,34 @@ header > div {
   margin-right: 1rem;
 }
 
-.header-search > div > img {
-  width: 70px;
-  margin-right: 32px;
-  margin-top: 16px;
-}
-
 .header-search {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-content: center;
   padding: 10px 32px;
-  height: 68px;
-  box-sizing: content-box;
 }
 
-.header-search > div {
-  padding: 8px 0;
-  margin: 0;
+.header-img {
+  display: flex;
+  /* justify-content: center; */
+  width: 70px;
+  padding-right: 1em;
+}
+
+.header-img img{
+    width: 100%;
 }
 
 .search {
   display: flex;
-  box-sizing: border-box;
-  height: 68px;
   width: 100%;
+  height: 50px;
 }
 .search-bar {
   display: flex;
   align-items: center;
   background-color: rgb(242, 242, 242);
-  width: 100%;
+  width: 90%;
 }
 
 .search-bar #magnifying-glass {
@@ -76,6 +73,7 @@ header > div {
 .search-form-bar {
   display: flex;
   align-content: center;
+
 }
 .search-form-bar input {
   line-height: 18.4px;
@@ -85,16 +83,14 @@ header > div {
 }
 
 .search-button {
-  height: 50px;
-  box-sizing: content-box;
+    display: flex;
 }
 .search button {
   background-color: #fb3e44;
   border-width: 0;
   color: white;
   padding: 8px 32px;
-  height: 52px;
-  box-sizing: border-box;
+  height: 100%;
   font-family: inherit;
 }
 
@@ -102,10 +98,11 @@ header > div {
   display: flex;
   justify-content: center;
   padding-left: 5px;
+  height: 50px;
 }
 
 #join-button {
-  height: 52px;
+  height: 100%;
   font-family: inherit;
   background-color: transparent;
   padding: 13px 28px;
@@ -114,10 +111,11 @@ header > div {
 }
 
 #log-in-button {
-  height: 52px;
+  height: 100%;
   font-family: inherit;
   background-color: transparent;
   border-width: 0;
   padding: 13px 28px;
   white-space: nowrap;
+  box-sizing: border-box;
 }
