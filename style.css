@@ -11,8 +11,10 @@ header > div {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
     border-bottom: 1px solid lightgray;
+}
+.title{
+    width: 320px;
 }
 /*nav bar */
 nav {
@@ -22,7 +24,7 @@ nav ul {
     list-style: none;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center;    
 }
 
 nav a {
@@ -33,6 +35,27 @@ nav a {
 .blackheart {
     width: 20px;
     margin-right: 1rem;
+}
+
+/* Adaptative screen lower than 850px width*/
+@media screen and (max-width: 850px){
+    .title{
+        display: none;
+    }
+    header > div {
+        display: flex;
+        justify-content: center;        
+    }
+    nav ul{
+        padding-left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    nav ul li{
+        padding: 0.95%;
+        font-size: 0.85em;
+    }
 }
 
 
@@ -138,12 +161,12 @@ nav > ul > li:hover,
     margin: 3% 2%;
 }
 #presentation > div {
-    width: 490px;
+    width: 480px;
     display: flex;
     justify-content: space-around;
 }
 #presentation > div > a {
-    font-size: 20px;
+    font-size: 19px;
 }
 /*presentation buttons*/
 .plans-btn {
@@ -229,7 +252,3 @@ nav > ul > li:hover,
     font-size: 15px;
     font-weight: bolder;
 }
-
-
-
-
