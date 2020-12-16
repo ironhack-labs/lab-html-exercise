@@ -34,7 +34,7 @@ header > div {
   margin-right: 1rem;
 }
 
-.header-search img {
+.header-search > div > img {
   width: 70px;
   margin-right: 32px;
   margin-top: 16px;
@@ -42,7 +42,7 @@ header > div {
 
 .header-search {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-content: center;
   padding: 10px 32px;
   height: 68px;
@@ -58,23 +58,19 @@ header > div {
   display: flex;
   box-sizing: border-box;
   height: 68px;
+  width: 100%;
 }
 .search-bar {
   display: flex;
-  align-content: center;
+  align-items: center;
   background-color: rgb(242, 242, 242);
+  width: 100%;
 }
 
 .search-bar #magnifying-glass {
   width: 18px;
   height: 18px;
-  margin: auto;
   padding: 5px 4px 5px 16px;
-}
-
-.sign-in-up {
-  height: 34px;
-  display: flex;
 }
 
 .search-form-bar {
@@ -89,8 +85,8 @@ header > div {
 }
 
 .search-button {
-    height: 50px;
-    box-sizing: content-box;
+  height: 50px;
+  box-sizing: content-box;
 }
 .search button {
   background-color: #fb3e44;
@@ -100,4 +96,28 @@ header > div {
   height: 52px;
   box-sizing: border-box;
   font-family: inherit;
+}
+
+.sign-in-up {
+  display: flex;
+  justify-content: center;
+  padding-left: 5px;
+}
+
+#join-button {
+  height: 52px;
+  font-family: inherit;
+  background-color: transparent;
+  padding: 13px 28px;
+  border: 1px solid #cccccc;
+  box-sizing: border-box;
+}
+
+#log-in-button {
+  height: 52px;
+  font-family: inherit;
+  background-color: transparent;
+  border-width: 0;
+  padding: 13px 28px;
+  white-space: nowrap;
 }
