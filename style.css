@@ -41,37 +41,58 @@ header > div { /*Mirar al final si puedo quitar el identificador de los div*/
 
   .header-search {
       display:flex;
-      justify-content: flex-start;
+      justify-content: space-between;
       align-content: center;
       padding: 10px 32px;
-      box-sizing: border-box;
+      height: 68px;
+      box-sizing: content-box;
   }
 
   .header-search > div {
       padding: 8px 0;
+      margin:0;
   }
 
-  .search-bar{
+  .search{
       display:flex;
       box-sizing: border-box;
-      background-color: rgb(242, 242, 242);
+      position: absolute;
+      height: 68px;
+      left: 140px;
+      width: 100%;
   }
+  .search-bar{
+    display: flex;
+    align-content: center;
+    background-color: rgb(242, 242, 242);
+}
 
   .search-bar #magnifying-glass {
-      width: 18px;
+    width: 18px;
+    margin: auto;
   }
 
   .sign-in-up {
-      height: 34px;
+    height: 34px;
+    display: flex;
+  }
+
+  .search-form-bar {
+      width: 900px;
       display: flex;
+      align-content: center;
   }
-
-  .search-form input {
+  .search-form-bar input {
       line-height: 18.4px;
+      border-width: 0;
+      background-color: transparent;
+      width: 100%;
+      font-family: "Fira Mono", "Andale Mono", "Consolas", monospace;
   }
 
-  .search-form button {
-      color: white;
+  .search button {
       background-color: red;
       border-width: 0;
+      color: white;
+      
   }

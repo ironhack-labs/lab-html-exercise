@@ -32,12 +32,18 @@ Create an Org and get more out of the tools your team already knows and loves. Z
       </div>
       <div class="header-search">
         <div><img src="./images/npm-logo.png" alt="npm-logo"></div>
-        <div class="search-bar">
+        <div class="search">
+            <div class="search-bar">
             <img src="./images/magnifying-glass.png" alt="magnifying-glass" id="magnifying-glass">
-            <form action="/search" method="POST" class="search-form">
+            <form action="/search" method="POST" class="search-form-bar">
                 <input type="text" id="search-bar" placeholder="Search packages">
-                <button type="submit" id="search-button">Search</button>
             </form>
+            </div>
+            <div>
+                <form action="/submit-search" method="POST" class="search-form-button">
+                    <button type="submit" id="search-button">Search</button>
+                </form>
+            </div>
         </div>
         <div class="sign-in-up">
             <form action="https://www.npmjs.com/">
