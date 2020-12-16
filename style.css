@@ -123,27 +123,34 @@ header > div {
 #suscription-plans {
   display: flex;
   justify-content: space-evenly;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   flex-direction: column;
   height: 600px;
   background-color: rgba(232, 217, 217, 0.3);
   align-items: center;
+  padding-bottom: 5em;
+  box-sizing: border-box;
 }
 h1 {
   font-size: 72px;
   font-weight: 900;
   text-align: center;
+  margin: 0;
+  margin-top: 5%;
 }
 
 .center-content {
   width: 30%;
   display: flex;
   text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .suscription-plans-submit {
   width: 30%;
   display: flex;
   justify-content: space-around;
+  padding-top: 16px;
 }
 .suscription-plans-submit button {
   font-family: inherit;
