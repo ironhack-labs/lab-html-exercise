@@ -43,15 +43,18 @@ header > div { /*Mirar al final si puedo quitar el identificador de los div*/
       display:flex;
       justify-content: flex-start;
       align-content: center;
-      padding: 0 32px;
+      padding: 10px 32px;
+      box-sizing: border-box;
   }
 
   .header-search > div {
-      padding: 10px 0;
+      padding: 8px 0;
   }
 
   .search-bar{
       display:flex;
+      box-sizing: border-box;
+      background-color: rgb(242, 242, 242);
   }
 
   .search-bar #magnifying-glass {
@@ -61,4 +64,14 @@ header > div { /*Mirar al final si puedo quitar el identificador de los div*/
   .sign-in-up {
       height: 34px;
       display: flex;
+  }
+
+  .search-form input {
+      line-height: 18.4px;
+  }
+
+  .search-form button {
+      color: white;
+      background-color: red;
+      border-width: 0;
   }
