@@ -51,7 +51,7 @@ nav a {
 .form-container>form {
     display: flex;
     align-items: center;
-    background: rgb(230, 228, 225);
+    background: rgb(232, 217, 217);
 }
 
 .search-input {
@@ -59,7 +59,7 @@ nav a {
     border: none;
     width: 1200px;
     padding: 5px;
-    background: rgb(230, 228, 225);
+    background: rgba(232, 217, 217);
 }
 
 .search-btn {
@@ -82,4 +82,48 @@ nav a {
 
 .btn-container>.link-btn:first-child {
     border: 1px solid grey;
+}
+
+#banner {
+    height: 600px;
+    background: rgba(232, 217, 217, .3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#banner h1 {
+    font-size: 4em;
+    font-weight: bold;
+    margin: 0;
+}
+
+.description p {
+    width: 35%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+}
+
+.link-container {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 25%;
+}
+
+.link-container>.link {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    padding: 10px 60px;
+}
+
+.link-container>.link:first-child {
+    text-decoration: none;
+    color: white;
+    background-color: #FB3B49;
+    box-shadow: 8px 8px 0 rgba(251, 59, 73, .2);
 }
