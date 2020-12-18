@@ -2,4 +2,205 @@
 
 body {
   font-family: "Poppins";
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.heart {
+  width: 20px;
+  margin-right: 1rem;
+}
+
+header > * {
+  padding: 0 25px;
+}
+
+header {
+  box-shadow: 0px 4px 4px -4px #333;
+}
+
+header .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav li {
+  margin-left: 1rem;
+}
+
+nav a:hover {
+  color: darkgray;
+}
+
+header .top {
+  border-bottom: 1px solid lightgray;
+}
+
+header .sub {
+  display: flex;
+  justify-content: stretch;
+  align-items: center;
+  padding: 0.5rem 25px;
+}
+
+header .logo {
+  height: 2rem;
+}
+
+.searchbar {
+  display: flex;
+  flex: 1;
+  margin: 0 2rem;
+  background: rgba(0, 0, 0, 0.05);
+  align-items: center;
+  justify-content: space-between;
+  justify-items: stretch;
+}
+
+.searchbar img {
+  height: 2rem;
+  padding: 0.5rem;
+}
+
+.searchbar input[type="text"] {
+  align-self: stretch;
+  width: 100%;
+  border: none;
+  background: none;
+  font-size: 1rem;
+}
+
+.searchbar input[type="submit"] {
+  align-self: stretch;
+  background-color: #fb3e44;
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding: 0 1rem;
+}
+
+.searchbar input[type="submit"]:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.login a {
+  color: #333;
+  padding: 0.5rem 1rem;
+}
+
+#register {
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+#amazing {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(232, 217, 217, 0.3);
+}
+
+#amazing > h1 {
+  font-size: 4rem;
+  margin: 0 0;
+}
+
+#amazing .container {
+  width: 500px;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#see-plans {
+  background-color: #fb3b49;
+  box-shadow: 8px 8px 0 rgba(251, 59, 73, 0.2);
+  color: white;
+}
+
+#amazing a {
+  padding: 1rem 3rem;
+  font-size: 1.2rem;
+}
+
+#oss {
+  height: 500px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#oss img {
+  height: 200px;
+  margin: 2rem;
+}
+
+#oss p {
+  max-width: 600px;
+}
+
+.skewed-bg {
+  background-color: rgba(255, 204, 53, 0.4);
+  transform: skew(9deg, 0deg);
+  margin-bottom: 2rem;
+}
+
+.skewed-bg h1 {
+  transform: skew(-9deg, 0deg);
+  margin: 0 1em;
+}
+
+#featurelist {
+  display: flex;
+  justify-content: center;
+  padding: 0 4rem;
+}
+
+#featurelist article {
+  margin: 1rem;
+  max-width: 15rem;
+}
+
+#featurelist img {
+  height: 2rem;
+}
+
+#featurelist article h3 {
+  color: #ed1c24;
+}
+
+#features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#create-org {
+  padding: 1rem 3rem;
+  font-size: 1.2rem;
+  background-color: black;
+  box-shadow: 8px 8px 0 rgba(128, 83, 35, 0.2);
+  font-weight: bold;
+  color: white;
+  margin: 8rem 0;
 }
