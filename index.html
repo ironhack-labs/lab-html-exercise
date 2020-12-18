@@ -1,4 +1,3 @@
-  Create an Org
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,18 +25,26 @@
     </nav>
   </div>
 
-  <div>
-      <img class="npm-logo" src="images/npm-logo.png" alt="npm-logo"> <br>
-      <img class="magnifying-glass" src="images/magnifying-glass.png" alt="magnifying-glass"> <br>
-      <form action="some-url" method="post">
-          <label for="search-bar"></label>
-          <input type="text" name="search-bar" placeholder="Search packages">
-          <button type="submit">Search</button>
-      </form>
-      <div><a href="#" target="_blank">Join</a>
-      <a href="#" target="_blank">Log In</a></div>
-      >
-    <!-- add logo, search bar and buttons (or links and style them as buttons later) -->
+  <div class="bottom-div">
+
+      <div class="npm-logo-img"> <img class="npm-logo" src="images/npm-logo.png" alt="npm-logo"> </div>
+
+  <div class="searchbar-div">
+  <div class="magnifying-glass-img"> <img class="magnifying-glass" src="images/magnifying-glass.png" alt="magnifying-glass"> </div>
+      <form class="form" action="some-url" method="post">
+          <label for="search-bar"> </label>
+          <input type="text" name="search-bar" id="search-bar" placeholder="Search packages" >
+          <div class="search-button"> 
+              <button type="submit">Search</button>
+          </div>
+        </form>
+  </div>
+
+      <div class="join-login">
+      <a href="#" target="_blank" class="join-button">Join</a>
+      <a href="#" target="_blank" class="login-button"> Login </a>
+      </div>
+
   </div>
 </header>
 
