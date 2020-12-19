@@ -1,3 +1,5 @@
+/* General settings */
+
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
 * {
@@ -14,7 +16,7 @@ body {
 ul li {
   list-style-type: none;
   padding:10px;
-  font-size:14px;
+  font-size:0.875rem;
   font-weight:bold;
 }
 
@@ -40,7 +42,6 @@ img {
   padding: 13px 28px;
   border-style:none;
   transition: transform 0.1s ease-in;
-  
 }
 
 #section-three .button:hover,
@@ -65,16 +66,16 @@ img {
 }
 
 .main-header div {
-  padding:5px 0 0 0;
+  padding: 5px 0 0 0; /*heart-top*/
 }
 
 .npm {
-  font-size:14px;
+  font-size:.875rem;
   font-weight:bold;
 }
 
 .npm img {
-  width: 30px;
+  width: 2rem;
   margin-right: 1rem;
   text-align:center;
 }
@@ -82,30 +83,38 @@ img {
 /*Searchbar*/
 
 .search-bar {
-  justify-content: space-between;
   padding: 10px 0;
 }
+
+.search-bar div {
+    justify-content: space-between; 
+  }
+
 .npm-logo {
-  width: 70px;
+  width:7%;
 }
 
 .form {
-  width:70%;
   background: #f2f2f2;
-  justify-content: space-between;
+  width: 70%;
 }
 
-.form img {
-  height: 19px;
-  width: 19px;
-  margin:5px 0 0 14px ;
+form  {
+ width: 80%;
+}
+
+.glass {
+  width:3%;
+  margin-left:1.5rem;
 }
 
 .form input {
-  width:600px;
   border: none;
   background: #f2f2f2;
   font-size: 1rem;
+  padding: 4px;
+  margin-right:3rem;
+  width:90%;
 }
 
 /*Section1*/
@@ -115,19 +124,20 @@ img {
   background-color: rgba(232,217,217,.3);
   align-items:center;
   flex-direction: column;
-  margin-bottom:3rem;
+  margin-bottom:2rem;
 }
 
 #section-one h1 {
   font-size: 5rem;
+  margin-bottom:1rem;
 }
 
 #section-one article p {
-  width: 550px;
+  width: 50%;
   font-size:1.3rem;
   text-align: center;
-  line-height:1.5;
-  margin-bottom:3rem;
+  line-height:1.8;
+  margin: 0 auto 3rem auto;
 }
 
 .section-one-btn {
@@ -141,7 +151,6 @@ img {
   border-style:none;
   margin:2rem;
 }
-
 
 .red {
   background-color:#fb3e44;
@@ -163,7 +172,7 @@ img {
 
 #section-two img {
   width:250px;
-  margin-bottom:3rem;
+  margin-bottom:4rem;
 }
 
 .yellow {
@@ -176,11 +185,11 @@ img {
 }
 
 #section-two article p {
-  width: 700px;
+  width: 70%;
   font-size:1.3rem;
   text-align: center;
-  line-height:1.5;
-  margin-bottom:3rem;
+  line-height:1.8;
+  margin:0 auto 3rem auto;
 }
 
 /*Section-three*/
@@ -197,7 +206,7 @@ img {
 
 #section-three .items {
   margin: 18px 10px 40px;
-  padding:20px;
+  width:100%;
 }
 
 .items h3 {
@@ -216,4 +225,113 @@ img {
   margin-bottom: 4rem;
 }
 
+@media (max-width: 900px) {
 
+/*Header*/ 
+
+.main-header {
+  flex-wrap:wrap;
+}
+
+.npm {
+ width:100%;
+}
+
+.main-nav {
+  width:100%;
+}
+
+/*searchbar*/
+
+.button {
+  font-size: .875rem;
+  padding: 13px 18px;
+}
+
+.glass {
+    width:3%;
+  }
+
+/*Section one*/
+
+#section-one h1 {
+  font-size: 3rem;
+  }
+  
+.section-one-btn {
+  display: block;
+  }
+
+#section-one article p {
+  font-size: 1.2rem;
+  width:50%;
+  }
+  
+/*Section-two*/ 
+
+#section-two {
+  height: auto;
+}
+
+#section-two img {
+  width:150px;
+}
+
+.yellow {
+  width: 80%;
+}
+
+#section-two article p {
+  font-size: 1.2rem;
+}
+
+/*section-three*/
+ 
+#section-three > div{
+  flex-direction: column;
+}
+
+div .items {
+  text-align: center;
+}
+}
+
+@media (max-width: 700px) {
+
+.npm-logo img {
+  display:none;
+  position:absolute;
+}
+
+.button-width700 {
+  flex-direction:row;
+  margin-left:2rem;
+}
+
+.glass {
+  width:8%;
+}
+}
+
+@media (max-width: 600px) {
+
+/*searchbar*/
+
+.form input {
+  width:100%;
+  border: none;
+  background: #f2f2f2;
+  font-size: 0.8rem;
+  margin:auto 4px;
+}
+/*Section one*/
+
+  #section-one h1 {
+    font-size: 2rem;
+    margin: 1rem auto 2rem auto;
+  }
+
+  .yellow {
+    width: 70%;
+  }
+}
