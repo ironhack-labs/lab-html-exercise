@@ -4,44 +4,47 @@
         <title>NPM landing page clone for Ironhack</title>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="./styles.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
     </head>
     <body>
-        <header>
-            <section>
-                <img src="./images/black-heart.png">
-                <p>Neverending Pun Machine</p>
-                <nav>
-                    <ul>
-                        <li>npm Enterprise</li>
-                        <li>Products</li>
-                        <li>Solutions</li>
-                        <li>Resources</li>
-                        <li>Docs</li>
-                        <li>Support</li>
+        <header class="header">
+            <section id="upper-header">
+                <img src="./images/black-heart.png" id="heart">
+                <p class="text" id="pun">Neverending Pun Machine</p>
+                <nav class="text">
+                    <ul class="nav">
+                        <li class="bullet"><a href="#">npm Enterprise</a></li>
+                        <li class="bullet"><a href="#">Products</a></li>
+                        <li class="bullet"><a href="#">Solutions</a></li>
+                        <li class="bullet"><a href="#">Resources</a></li>
+                        <li class="bullet"><a href="#">Docs</a></li>
+                        <li class="bullet"><a href="#">Support</a></li>
                     </ul>
                 </nav>
             </section>
-            <hr>
-            <section>
-                <img src="./images/npm-logo.png">
-                <div>
-                    <img src="./images/magnifying-glass.png">
-                    <input></input>
-                    <button>Search</button>
+            <hr id="header-divide">
+            <section id="lower-header">
+                <img src="./images/npm-logo.png" id="npm-logo">
+                <div id="searchtool">
+                    <img src="./images/magnifying-glass.png" id="glass">
+                    <input id="searchbox">
+                    <button class="redbutton" id="searchbutton">Search</button>
                 </div>
-                <div>
+                <div id="login">
                     <button>Join</button>
                     <button>Log in</button>
                 </div>
             </section>
         </header>
-        <section></section>
+        <section id="section1">
             <h1>Build amazing things</h1>
             <article>
                 <p>Essential JavaScript development tools that help you go to market faster and build powerful applications using modern open source code.</p>
             </article>
             <button>See plans</button>
             <button>Join for free</button>
+        </section>
         <section>
             <img src="./images/triangle-hexagon.svg">
             <h2>Bring the best of open source to your company</h2>
