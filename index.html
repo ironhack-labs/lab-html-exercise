@@ -7,7 +7,7 @@
   </head>
   <body>
     <header>
-      <div>
+      <div class="header-top">
         <div>
           <img
             class="blackHeart"
@@ -27,21 +27,23 @@
           </ul>
         </nav>
       </div>
-      <div>
+      <div class="header-bottom">
         <img class="npmLogo" src="images/npm-logo.png" alt="npm logo" />
         <form action="/some-search-function-url" method="get">
-          <label for="search-box">
+          <label class="search-box" for="search-box">
             <img
               class="magnifyingGlass"
               src="images/magnifying-glass.png"
               alt="magnifying glass"
             />
           </label>
-          <input id="search-box" type="text" placeholder="Search packages" />
-          <button type="submit">Search</button>
+          <input id="search-box" class="search-box search-box-input" type="text" placeholder="Search packages" />
+          <button type="submit" class="search-button">Search</button>
         </form>
-        <a href="#">Join</a>
-        <a href="#">Log In</a>
+        <div class="nav-links">
+          <a class="join-link" href="#">Join</a>
+          <a class="login-link" href="#">Log In</a>
+        <div>
       </div>
     </header>
     <section id="one-hero" class="section-standard">
@@ -50,7 +52,7 @@
         Essential JavaScript development tools that help you go to market faster
         and build powerful applications using modern open source code.
       </article>
-      <div>
+      <div class="one-hero-buttons">
         <a class="link-btn link-btn-see-plans" href="#">See plans</a>
         <a class="link-btn link-btn-join-free" href="#">Join for free</a>
       </div>
@@ -69,7 +71,7 @@
         loves.
       </article>
     </section>
-    <section id="three-benefits">
+    <section id="three-benefits" class="section-standard">
       <div class="benefit-cards">
         <article>
           <img
@@ -112,7 +114,7 @@
           zero-friction way to make open source software safer.
         </article>
       </div>
-      <a class="link-button" href="#">Create an Org</a>
+      <a class="link-btn link-btn-create-org" href="#">Create an Org</a>
     </section>
   </body>
 </html>

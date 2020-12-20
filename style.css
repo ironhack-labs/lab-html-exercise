@@ -10,6 +10,12 @@ h1 {
   font-weight: 800;
 }
 
+h2 {
+  background-color: rgba(255,204,53,.4);
+  transform: skew(9deg,0deg);
+  font-style: italic;
+}
+
 h3 {
   color: #ed1c24;
   font-weight: 500;
@@ -17,12 +23,13 @@ h3 {
 
 /* header div styles */
 
-header > div {
+.header-top {
   padding: 0 25px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid lightgray;
+  height: 50px;
 }
 
 nav {
@@ -48,17 +55,79 @@ nav a {
   margin-right: 1rem;
 }
 
+.header-bottom {
+  padding: 0 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+  box-shadow: 0px 3px 8px lightgray;
+  height: 50px;
+}
+
+form{
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .magnifyingGlass {
   height: 1em;
+  padding: 10px;
 }
 
 .npmLogo {
   height: 1.5em;
 }
 
-button {
+.search-button {
   background-color: #fb3e44;
   color: white;
+  padding: 0px 15px 0px 15px;
+  height: 35px;
+  border: none;
+  margin: 0;
+  font-family: "Poppins";
+  font-weight: 300;
+}
+
+.search-bar {
+  border: none;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: right;
+}
+
+.join-link {
+  border-style: inset;
+  text-decoration: none;
+  color: black;
+  padding: 2px 15px 2px 15px;
+}
+
+.login-link {
+  border: none;
+  text-decoration: none;
+  color: black;
+  padding: 2px 15px 2px 15px;
+}
+
+.search-box {
+  height: 35px;
+  border: none;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+  display: flex;
+  align-content: center;
+}
+
+.search-box-input{
+  width: calc(100% - 10px);
 }
 
 input {
@@ -75,6 +144,19 @@ label {
   background-color: rgba(232, 217, 217, 0.3);
 }
 
+#one-hero > article {
+  width: 40%;
+  text-align: center;
+  padding: 40px;
+}
+
+.one-hero-buttons {
+  width: 40%;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+
 .section-standard {
   display: flex;
   justify-content: center;
@@ -83,15 +165,16 @@ label {
   height: 600px;
 }
 
+
 .link-btn {
     padding: 10px 30px 10px 30px;
-    
+    text-decoration: none;
+    color: black;
 }
 
 .link-btn-see-plans {
   background-color: #fb3b49;
   color: white;
-  text-decoration: none;
   box-shadow: 8px 8px 0 rgba(251, 59, 73, 0.2);
 }
 
@@ -100,8 +183,18 @@ label {
     text-decoration: none;
 }
 
+.link-btn-create-org {
+  background-color: black;
+  color: white;
+  box-shadow: 8px 8px 0 rgba(128,83,35,.29);
+}
+
 .triangleHexagon {
   width: 20%;
+}
+
+#two-description > article {
+  width: 50%;
 }
 
 .benefit-images {
