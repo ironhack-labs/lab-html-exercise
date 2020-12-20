@@ -9,7 +9,7 @@
     <body>
         <header>
             <div>
-                <div>
+                <div class="logo">
                     <img
                         class="blackHeart"
                         src="/images/black-heart.png"
@@ -29,7 +29,7 @@
                 </nav>
             </div>
 
-            <div>
+            <div id="lower-header">
                 <img
                     src="/images/npm-logo.png"
                     alt="npm-logo"
@@ -48,77 +48,91 @@
                             method="post"
                             placeholder="Search packages"
                         />
+                        <button>Search</button>
                     </form>
-                    <button>Search</button>
                 </div>
 
                 <div class="choice-btn">
-                    <button>Join</button>
-                    <button>Sign in</button>
+                    <a href="#join">Join</a>
+                    <a href="#sign-in">Sign in</a>
                 </div>
             </div>
         </header>
         <section id="upper">
             <h1>Build amazing things</h1>
-            <p>
+            <article>
                 Essential JavaScript development tools that help you go to
                 market faster and build powerful applications using modern open
                 source code.
-            </p>
-            <button>See plans</button>
-            <button>Join for free</button>
+            </article>
+            <div class="links-box">
+                <a href="#plans" id="plans">See plans</a>
+                <a href="#join">Join for free</a>
+            </div>
         </section>
         <section id="central">
-            <img src="/images/triangle-hexagon.svg" alt="" />
-            <h2>Bring the best of open source to your company</h2>
-            <p>
+            <img
+                src="/images/triangle-hexagon.svg"
+                alt="triangle-hexagon"
+                class="hexagon"
+            />
+            <h2>
+                <i>Bring the best of open source to your company</i>
+            </h2>
+            <article>
                 npm is the tool used by over 11,000,000 JavaScript developers
                 around the world. Your developers already use it. Your company
                 depends on it. Create an Org and get more out of the tools your
                 team already knows and loves.
-            </p>
+            </article>
         </section>
         <section id="lower">
-            <article class="container">
-                <img
-                    src="/images/zero-configuration.svg"
-                    alt="zero-configuration"
-                />
-                <h4>Zero configuration</h4>
-                <p>
-                    Create an org, add your team, and start collaborating.
-                    Nothing to configure, set up, or manage.
-                </p>
-            </article>
-            <article class="container">
-                <img src="/images/team-management.svg" alt="team-management" />
-                <h4>Team management</h4>
-                <p>
-                    Control who has access to what modules within your team
-                    namespace using straightforward team management
-                    capabilities.
-                </p>
-            </article>
-            <article class="container">
-                <img
-                    src="/images/familiar-features.svg"
-                    alt="familiar-features"
-                />
-                <h4>Familiar features</h4>
-                <p>
-                    npm Orgs has 100% parity with all the public npm registry
-                    features your developers already use.
-                </p>
-            </article>
-            <article class="container">
-                <img src="/images/npm-audit.svg" alt="npm-audit" />
-                <h4>npm audit</h4>
-                <p>
-                    Enjoy the security auditing features built into the npm
-                    client, a zero-friction way to make open source software
-                    safer.
-                </p>
-            </article>
+            <div class="articles">
+                <article class="container">
+                    <img
+                        src="/images/zero-configuration.svg"
+                        alt="zero-configuration"
+                    />
+                    <h4>Zero configuration</h4>
+                    <p>
+                        Create an org, add your team, and start collaborating.
+                        Nothing to configure, set up, or manage.
+                    </p>
+                </article>
+                <article class="container">
+                    <img
+                        src="/images/team-management.svg"
+                        alt="team-management"
+                    />
+                    <h4>Team management</h4>
+                    <p>
+                        Control who has access to what modules within your team
+                        namespace using straightforward team management
+                        capabilities.
+                    </p>
+                </article>
+                <article class="container">
+                    <img
+                        src="/images/familiar-features.svg"
+                        alt="familiar-features"
+                    />
+                    <h4>Familiar features</h4>
+                    <p>
+                        npm Orgs has 100% parity with all the public npm
+                        registry features your developers already use.
+                    </p>
+                </article>
+                <article class="container">
+                    <img src="/images/npm-audit.svg" alt="npm-audit" />
+                    <h4>npm audit</h4>
+                    <p>
+                        Enjoy the security auditing features built into the npm
+                        client, a zero-friction way to make open source software
+                        safer.
+                    </p>
+                </article>
+            </div>
+
             <a href="#">Create an Org</a>
         </section>
     </body>
