@@ -8,11 +8,15 @@
   </head>
   <body>
     <header>
-      <div>
+      <div id="header-first-line">
         <span>
-          <img src="./images/black-heart.png" alt="black heart" />Nifty Penguin
-          Magic</span
-        >
+          <img
+            class="blackheart"
+            src="./images/black-heart.png"
+            alt="black heart"
+          />
+          <p>Nifty Penguin Magic</p>
+        </span>
         <nav>
           <ul>
             <li><a href="#">Enterprise</a></li>
@@ -24,16 +28,30 @@
           </ul>
         </nav>
       </div>
-      <div>
-        <img src="./images/npm-logo.png" alt="logo npm" />
-        <form action="" method="get">
-          <label for="search-bar">
-            <img src="./images/magnifying-glass.png" alt="glass search label" />
-          </label>
-          <input type="text" name="search-bar" placeholder="Nom du paquet" />
-          <button type="submit">Rechercher</button>
-        </form>
-        <div><button>Rejoindre</button><button>Connexion</button></div>
+      <div id="header-second-line">
+        <div id="npm-logo-box">
+          <img class="npm-logo" src="./images/npm-logo.png" alt="logo npm" />
+        </div>
+        <div id="search-bar">
+          <form action="#" method="get">
+            <label for="search-bar-input"></label>
+            <img
+              class="glass-search"
+              src="./images/magnifying-glass.png"
+              alt="glass search label"
+            />
+            <input
+              type="text"
+              name="search-bar-input"
+              placeholder="Nom du paquet"
+            />
+            <input type="submit" value="Rechercher" />
+          </form>
+        </div>
+        <div id="connection">
+          <button>Rejoindre</button>
+          <button >Connexion</button>
+        </div>
       </div>
     </header>
     <section class="one">
@@ -45,7 +63,7 @@
           puissantes en utilisant du code open source et moderne.
         </p>
         <aside>
-          <a href="#">Voir les plans</a><a href="#">Adhérez gratuitement</a>
+          <button href="#">Voir les plans</a><a href="#">Adhérez gratuitement</a>
         </aside>
       </article>
     </section>
