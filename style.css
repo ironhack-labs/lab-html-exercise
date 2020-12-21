@@ -12,6 +12,7 @@ html, body{
 
 
 /*Hearder and navbar */
+/*Upper div of the hearder*/
 
 header > div {
     padding: 0 25px;
@@ -42,11 +43,17 @@ header > div {
     margin-right: 1rem;
   }
 
+
+  /*bottom div of the hearder*/
+
 .mpn-bar {
     padding: 0 25px;
+    margin-top: 5px ;
+    margin-bottom: 5px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: none;
 }
 
   .mpn-logo {
@@ -60,22 +67,20 @@ header > div {
 
 .searchbar {
     display: flex;
-    margin: 0 5px;
-    height: 80%;
-    width: 100%;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+	align-content: stretch;
+    width: 80%;
+    margin: 20 5px;
     background-color:rgba(0,0,0,.05);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    align-content: space-between;
-    flex-grow: 1;
   }
-
- 
 
 .searchbar input {
     background-color: rgba(0,0,0,.05);
     border-style: none;
+    height: 25px;
 }
 
 .searchbar button {
@@ -83,6 +88,8 @@ header > div {
     color : white;
     border-style: none;  
     padding: 5px 5px;  
+    height: 30px;
+    
 }
 
 .loginblock {
@@ -116,7 +123,6 @@ h1 {
     font-size: 4em;
     margin: 0;
     padding: 10px 0;
-
 }
 
 #section1 {
@@ -187,9 +193,7 @@ h1 {
     font-size: 1.8em; 
     font-style: italic; 
     background-color: rgba(255,204,53,0.4);
-    transform: skew(9deg,0deg);
-    
-    
+    transform: skew(9deg,0deg);   
 }
 
 #section2 article {
@@ -215,7 +219,6 @@ h1 {
     justify-content: space-around;
     align-items: center;
     margin:0 50px;
-
 }
 
 h3 {
@@ -224,20 +227,19 @@ h3 {
 
 }
 
-.boxstructure {
+.boxsection {
+    width: 100%;
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    
+    flex-direction: row;
+    justify-content: space-around; 
 }
 
 .box {
     font-size: 1em;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    margin: 7px;
-    width: 300px;
+    padding: 75px 20px;
+    width: 200px;
 }
     
 
@@ -254,13 +256,8 @@ h3 {
     box-shadow: 8px 8px 0 rgba(128,83,35,.2);
     color: white;
     padding: 10px 60px;
-
 }
 
 .icon {
     width: 30px;
-    
-
-    
-
 }
