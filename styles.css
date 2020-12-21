@@ -3,6 +3,13 @@
 
 body {
   font-family: "Poppins";
+  display: flex;
+  flex-direction: column;
+}
+/***************/
+/*general*/
+h1 {
+  font-size: 3rem;
 }
 /**********************************/
 /*header*/
@@ -16,6 +23,7 @@ header {
   justify-content: space-between;
   align-items: center;
   min-height: 4rem;
+  margin-bottom: 0px;
 }
 #header-second-line {
   display: flex;
@@ -72,6 +80,7 @@ nav a {
 #search-bar > form > input[type="submit"] {
   width: 20%;
   min-height: 2rem;
+  color: white;
   background-color: #fb3e44;
   border: none;
 }
@@ -79,11 +88,17 @@ nav a {
 #connection {
   width: 15%;
   display: flex;
+  justify-content: space-around;
   text-align: left;
   margin-left: 1rem;
 }
 #connection > button {
   height: 2rem;
+  background-color: white;
+  border: none;
+}
+#connection > button:hover {
+  border: 1px solid black;
 }
 
 /*header images*/
@@ -105,3 +120,47 @@ nav a {
   background-color: rgba(0, 0, 0, 0.05);
 }
 /************************************/
+
+/*******************/
+/*section .one*/
+/*******************/
+.one {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgba(232, 217, 217, 0.3);
+  height: 600px;
+}
+#amazing {
+  vertical-align: middle;
+  text-align: center;
+  padding: auto;
+  width: 90%;
+  margin: auto;
+}
+#amazing > h1 {
+  margin-bottom: 5px;
+}
+#amazing > p {
+  width: 30%;
+  margin: auto;
+  text-align: justify;
+}
+#amazing > aside {
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  margin-top: 20px;
+}
+#amazing > aside > a {
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+#a-map {
+  padding: 3px;
+  color: white;
+  background-color: #fb3b49;
+  box-shadow: 8px 8px 0 rgba(251, 59, 73, 0.2);
+}
+#a-add-free {
+  color: black;
+}
