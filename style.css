@@ -2,6 +2,7 @@
 
 body {
     font-family: 'Poppins';
+    margin: 0;
 }
 
 header > div {
@@ -165,4 +166,47 @@ form input {
 
 .triangle-hexagon {
     margin: 3rem;
+}
+
+#section-three{
+    background-color: rgba(232,217,217,.3);
+}/*I've decided to change the background color in section 3 to make more recognizable
+the change of section :)*/
+
+#section-three > div {
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 3rem;
+}
+
+.four-boxes {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.four-boxes div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 6rem;
+}
+
+.four-boxes div img {
+    width: 40px;
+}
+
+.four-boxes div h3 {
+    color: #ED1C24;
+}
+
+.org-btn {
+    background-color: black;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    padding: 1rem 7rem;
+    text-decoration: none;
+    color: white;
 }
