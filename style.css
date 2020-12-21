@@ -67,6 +67,7 @@ header > div {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    align-content: space-between;
     flex-grow: 1;
   }
 
@@ -113,11 +114,14 @@ header > div {
 h1 {
     text-align: center;
     font-size: 4em;
+    margin: 0;
+    padding: 10px 0;
 
 }
 
-#mpd-entreprise {
+#section1 {
     height: 600px;
+    width: auto;
     background-color: rgba(232,217,217,.3);
     display: flex;
     flex-direction: column;
@@ -125,13 +129,17 @@ h1 {
     align-items: center;
 }
     
-#mpd-entreprise article {
+#section1 article {
+    display: flex;
+    justify-content: center;
     text-align: center;
     width: 38%;
+    padding: 5px;
+    margin: 0;
 }   
 
     
-#mpd-entreprise div {
+#section1 div {
     list-style: none;
     display: flex;
     justify-content: space-evenly;
@@ -155,4 +163,104 @@ h1 {
 }
 
 
+/*Section 2*/
 
+#section2 img {
+    width: 150px;
+    margin-top: 40px;
+}
+
+#section2{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 400px;
+    width: auto;
+}
+
+#section2 h2 {
+    text-align: center;
+    margin: 10px;
+    padding: 0 20px;
+    font-size: 1.8em; 
+    font-style: italic; 
+    background-color: rgba(255,204,53,0.4);
+    transform: skew(9deg,0deg);
+    
+    
+}
+
+#section2 article {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 500px;
+    padding: 5px;
+    margin: 10px;
+    font-size: 0.8em;
+}
+
+
+
+
+/*section 3*/
+
+#section3{
+    height: 500px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin:0 50px;
+
+}
+
+h3 {
+    color: #ED1C24;
+    font-size: 1.5em;
+
+}
+
+.boxstructure {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+.box {
+    font-size: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 7px;
+    width: 300px;
+}
+    
+
+ .orgbutton {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.orgbutton a {
+    text-decoration: none;
+    background-color: black;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    color: white;
+    padding: 10px 60px;
+
+}
+
+.icon {
+    width: 30px;
+    
+
+    
+
+}
