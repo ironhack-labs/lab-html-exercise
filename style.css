@@ -2,12 +2,15 @@
 
 body {
   font-family: 'Poppins';
+  font-size: 13px;
 }
 
 html, body{
     margin: 0;
     padding: 0;
 }
+
+
 /*Hearder and navbar */
 
 header > div {
@@ -62,7 +65,7 @@ header > div {
     width: 100%;
     background-color:rgba(0,0,0,.05);
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     flex-grow: 1;
   }
@@ -77,17 +80,27 @@ header > div {
 .searchbar button {
     background-color: #fb3e44;
     color : white;
-    border-style: none;
-    height: 100%;
+    border-style: none;  
     padding: 5px 5px;  
 }
 
-.login {
+.loginblock {
+    width: 150px;
     display: flex;
     justify-content: space-around;
     align-items: center; 
-    list-style: none;
+    list-style: none; 
+}
 
+
+#joinbutton {
+    border: 1px solid black;
+    padding: 1px 10px;
+}
+
+.loginblock a {
+    color: black;
+    text-decoration: none;
 }
 
 
@@ -96,20 +109,41 @@ header > div {
 
 
 /*section 1*/
-.section1 {
+
+h1 {
+    text-align: center;
+    font-size: 4em;
+
+}
+
+#mpd-entreprise {
     height: 600px;
     background-color: rgba(232,217,217,.3);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+}
+    
+#mpd-entreprise article {
+    text-align: center;
+    width: 38%;
+}   
+
+    
+#mpd-entreprise div {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 60px;
 }
 
-/*.section1> a {
+
+.joinbutton {
+    color: black;
     text-decoration: none;
-    list-style: none;
+    padding: 10px 0 0 50px ;
 }
-*/
 
 .seeplanbutton{
     list-style: none;
