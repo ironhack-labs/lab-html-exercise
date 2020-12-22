@@ -1,0 +1,91 @@
+// Rover object goes here:
+ const rover ={
+   direction: 'N',
+   x: 1,
+   y: 1,
+   travelLog: [],
+ }
+// ======================
+function turnLeft(rover) {
+  console.log('turnLeft was called!');
+  switch(rover.direction){
+    case 'N':
+      rover.direction='W';
+      console.log('Rover is now facing West');
+      break;
+    case 'E':
+      rover.direction='N';
+      console.log('Rover is now facing North');
+      break;
+    case 'S':
+      rover.direction='E';
+      console.log('Rover is now facing East');
+      break;
+    case 'W':
+      rover.direction='S';
+      console.log('Rover is now facing South');
+      break;
+  }
+}
+function turnRight(rover) {
+  console.log('turnRight was called!');
+  switch(rover.direction){
+    case 'N':
+      rover.direction='E';
+      console.log('Rover is now facing East');
+      break;
+    case 'E':
+      rover.direction='S';
+      console.log('Rover is now facing South');
+      break;
+    case 'S':
+      rover.direction='W';
+      console.log('Rover is now facing West');
+      break;
+    case 'W':
+      rover.direction='N';
+      console.log('Rover is now facing North');
+      break;
+  }
+}
+ 
+ 
+function moveForward(rover) {
+  console.log('moveForward was called');
+  switch(rover.direction){
+    case 'N':
+      rover.y--;
+      console.log(`Rover has position: x=${rover.x} y=${rover.y}`)
+      break;
+    case 'E':
+      rover.x++;
+      console.log(`Rover has position: x=${rover.x} y=${rover.y}`)
+      break;
+    case 'S':
+      rover.y++;
+      console.log(`Rover has position: x=${rover.x} y=${rover.y}`)
+      break;
+    case 'W':
+      rover.x--;
+      console.log(`Rover has position: x=${rover.x} y=${rover.y}`)
+      break;
+  }
+}
+const command=(orders)=>{
+  for(let i=0; i<orders.length; i++){
+    let order= orders[i];
+    switch(order){
+      case 'f':
+        moveForward(rover);
+        break;
+      case 'r':
+        turnRight(rover);
+        break;
+      case 'l':
+        turnLeft(rover);
+        break;
+    }
+  }
+}
+
+
