@@ -63,24 +63,28 @@ header > div {
 
 .searchlogo{
     width: 20px;
+    background-color: rgba(0,0,0,.05);
+    float: left; 
+    padding: 3.5px;
 }
 
 .searchbar {
     display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
-	justify-content: space-between;
-	align-items: center;
-	align-content: stretch;
-    width: 80%;
-    margin: 20 5px;
-    background-color:rgba(0,0,0,.05);
+    justify-content: left;
+    align-items: center;
   }
 
 .searchbar input {
     background-color: rgba(0,0,0,.05);
     border-style: none;
     height: 25px;
+    display: flex;
+    flex-direction: wrap;
+    float: left;
+    width: auto;
+    display: block;
 }
 
 .searchbar button {
@@ -88,8 +92,7 @@ header > div {
     color : white;
     border-style: none;  
     padding: 5px 5px;  
-    height: 30px;
-    
+    height: 30px;  
 }
 
 .loginblock {
