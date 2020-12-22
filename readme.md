@@ -225,7 +225,7 @@ This section has pretty much the same layout as the previous - some code to be r
 
 _Useful information_:
 
-- _heading background color_: rgba(255,204,53,.4)
+- _heading background color_: as
 - to get the transform of the yellow background in the left-hand direction use: _transform: skew(9deg,0deg);_
 - to get it in the opposite direction of the letters, the way we need it on the page, use: _font-style: italic;_
 - to additionally fine-tune the position of each element, use _margin_ property.
@@ -236,7 +236,7 @@ Again use a lot of flexbox to get the right position of elements - direction, ju
 
 #### CSS 5 | section 3
 
-![](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_7b69fd57e04d20183daed40e39b2001f.png)
+![](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/uplossad_7b69fd57e04d20183daed40e39b2001f.png)
 
 _Useful information_:
 
