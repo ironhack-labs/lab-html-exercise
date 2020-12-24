@@ -50,7 +50,7 @@ So let's get started!
 
 It might seem like a joke, but this is our goal in this iteration:
 
-![](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_a00f9aadceb92aed72cd6b1158c3fd01.png)
+![](git )
 ![](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_abbbad2549a71232f29c725f6ef59731.png)
 ![](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_c497a8394cb74b0f576e16c6fd2fb894.png)
 
@@ -82,6 +82,7 @@ We could try to represent this part of the website with the following:
       <img class="blackHeart" src="LINK TO IMAGE GOES HERE" alt="black heart" />
       <span> Nifty Penguin Magic </span>
     </div>
+    <body>
     <nav>
       <ul>
         <li><a href="#"> npm Enterprise </a></li>
@@ -92,6 +93,7 @@ We could try to represent this part of the website with the following:
         <li><a href="#"> Support </a></li>
       </ul>
     </nav>
+    </body>
   </div>
 
   <div>
