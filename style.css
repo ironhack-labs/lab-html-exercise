@@ -74,17 +74,16 @@ header > div {
 	flex-wrap: nowrap;
     justify-content: left;
     align-items: center;
-  }
+}
 
 .searchbar input {
     background-color: rgba(0,0,0,.05);
     border-style: none;
+    font-family: 'poppins';
     height: 25px;
-    display: flex;
-    flex-direction: wrap;
     float: left;
-    width: auto;
-    display: block;
+    margin: auto; 
+    position: relative;
 }
 
 .searchbar button {
@@ -93,13 +92,13 @@ header > div {
     border-style: none;  
     padding: 5px 5px;  
     height: 30px;  
+    position: relative;
 }
 
 .loginblock {
-    width: 150px;
     display: flex;
-    justify-content: space-around;
-    align-items: center; 
+    justify-content: space-evenly;
+    align-items: center;
     list-style: none; 
 }
 
@@ -107,11 +106,13 @@ header > div {
 #joinbutton {
     border: 1px solid black;
     padding: 1px 10px;
+    margin-right: 10px;
 }
 
 .loginblock a {
     color: black;
     text-decoration: none;
+    margin-left: 10px;
 }
 
 
@@ -126,6 +127,7 @@ h1 {
     font-size: 4em;
     margin: 0;
     padding: 10px 0;
+    font-weight: bold;
 }
 
 #section1 {
@@ -151,24 +153,30 @@ h1 {
 #section1 div {
     list-style: none;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    align-items: center;
     padding-top: 60px;
+}
+
+.seeplanbutton{
+    list-style: none;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    background-color:#fb3b49;
+    box-shadow: 8px 8px rgba(251,59,73,0.2);
+    padding: 10px 30px; 
+    margin-right: 15px;
 }
 
 
 .joinbutton {
     color: black;
     text-decoration: none;
-    padding: 10px 0 0 50px ;
-}
-
-.seeplanbutton{
-    list-style: none;
-    text-decoration: none;
-    color: white;
-    background-color:#fb3b49;
-    box-shadow: 8px 8px rgba(251,59,73,0.2);
-    padding: 10px 30px; 
+    font-weight: bold;
+    background-color: white;
+    padding: 10px 30px ;
+    margin-left: 15px;
 }
 
 
@@ -227,7 +235,6 @@ h1 {
 h3 {
     color: #ED1C24;
     font-size: 1.5em;
-
 }
 
 .boxsection {
