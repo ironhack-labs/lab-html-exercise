@@ -98,22 +98,21 @@ header > div {
 
 #build-amazing-things {
     display:flex;
-    justify-content:space-around;
+    justify-content:space-evenly;
     flex-direction:column;
     align-items:center;
     height: 600px;
     background-color: rgba(232,217,217,.3);
 }
  
-#build-amazing-things h3 {
-    font-weight: 600;
-    font-size: 3rem;
+#build-amazing-things h1 {
+    font: 80px Poppins, sans-serif;
+    font-size: 4.5rem;
     text-align: center;
-    line-height: 1.25;
-    height:120px;
-    width:394px;
+    width:900px;
     margin-top:32.160px;
-    margin-bottom:32.160px;
+    margin-bottom:0;
+    font-weight: bolder;
 }
 
 #build-amazing-things article {
@@ -127,7 +126,7 @@ header > div {
     display:flex;
     flex-direction: row;
     width: 500px;
-    justify-content:space-around
+    justify-content:space-around;
 }
 
 .link-btn-plans {
@@ -196,10 +195,33 @@ header > div {
 #create-an-org {
     display:flex;
     justify-content:space-evenly;
+    flex-direction:column;
+    align-items:center;
+    height: 600px;
+    flex-wrap: nowrap;
+    padding-bottom: 20px;
+}
+
+.org-box {
+    display:flex;
+    justify-content:space-evenly;
+    flex-direction:column;
+    align-items:flex-start;
+    height: 100px;
+    flex-wrap: nowrap;
+    width: 290px;
+}
+
+#sections {
+    display:flex;
+    justify-content:space-evenly;
     flex-direction:row;
     align-items:center;
     height: 600px;
     flex-wrap: nowrap;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 75px 0;
 }
 
 #create-an-org h2 {
@@ -210,6 +232,7 @@ header > div {
 
 #create-an-org img {
     width: 50px;
+    height:46px;
 }
 
 .link-btn-create-org {
