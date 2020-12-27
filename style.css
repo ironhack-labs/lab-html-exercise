@@ -1,3 +1,5 @@
+
+
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
 body {
@@ -72,11 +74,15 @@ input {
   align-items: center;
    list-style: none;
 position: top center;
+  text-justify: auto;
+  white-space: nowrap;
+  
 }
 
 .joinlog a {
   text-decoration: none;
   color: black;
+  display: inline;
 }
 
 
@@ -91,10 +97,12 @@ position: top center;
 
 #login {
   margin-right: 10px;
-  padding: 5px 10px;
+  border: 1px solid black;
+  border: transparent;
+  padding: 8px 16px;
   font-size: 10px;
-display: inline-block;
-  text-align: center;
+  border-color: lightgray;
+  display: flex;
 
 }
 
@@ -170,78 +178,71 @@ h2 {
   background: rgba(255,204,53,.4);
   transform: skew(9deg,0deg);
   font-style: italic;
+  font-size: 40px;
   margin: 20px;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding: 0 50px;
   font-weight: bolder;
   position: static;
 }
 .npm {
-    width: 500px;
-  font-size: 12px;
+    width: 1000px;
+  font-size: 20px;
   margin-top: 5px;
   position: relative;
 }
 
-.list p {
-  font-size: 10px
-}
-
 .list img {
-  width: 50px;
+  width: 40px;
   height: auto;
 }
 
 
 .list {
- border: 2px solid transparent;
- border-radius: 20px;
+ border: 20px solid transparent;
  box-sizing: border-box;
- margin: 10px 10px 0 10px;
  padding: 10px;
   width: 20%;
-  display: flex;
-    display: flex;
   justify-content: space-between;
   flex-direction: column;
+  justify-content: center;
+  margin: 15px;
+  
+}
+
+.list p {
+  font-size: 14px;
 }
 
 
 #structure > div {
   display: flex;
   justify-content: space-between;
+  justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
-  align-items: center;
   width: 100%;
 }
 
-#structure {
-   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
   
-}
 
 h3 {
-  font-size: 10px;
+  font-size: 15px;
   color: #ED1C24;
     letter-spacing: 0.4px;
   line-height: 1em;
   margin-bottom: 15px;
 }
 
-.button {
+
+.button  {
   text-decoration: none;
   color: white;
   border: 1px solid black;
   display: flex;
   background-color: black;
-  text-aign: center;
-  padding: 10px 100px;
-  margin-top: 50px;
-  margin-left: 500px;
-  margin-bottom: 50px;
+  padding: 20px 150px;
+  margin: 50px;
   box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+  font-size: 20px;
+
 }
