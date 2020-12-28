@@ -11,7 +11,7 @@ In this exercise, the goal is to apply as many as possible of the concepts you'v
 - how to use flexbox to position elements on the page and
 - how to style the page.
 
-## Getting started
+## Getting started -  This stuff is forking crazy!
 
 1. [Fork](https://gist.github.com/ironhack-edu/dd3635de73a6ef07ef337bf184eda985#step-1-fork-the-repository) this repo
 2. [Clone](https://gist.github.com/ironhack-edu/dd3635de73a6ef07ef337bf184eda985#step-2-clone-the-repository) this repo
@@ -42,7 +42,7 @@ We will divide our work into two parts:
 - part I - create a webpage with no styles, just add HTML and
 - part II - add styles and make it perfect. 🎨
 
-So let's get started!
+So let's get started! - Haha! Fingers crossed!!!
 
 **The assets we provided contain the `index.html` file with all the necessary text, as well as the `images` folder with all the required images to successfully finish the exercise.**
 
@@ -259,5 +259,7 @@ Your TAs will check up your work and provide feedback.
 In this exercise, you've built a clone of a piece of the npm home page. This site is very complex so if you managed to make it look anything like the original, good job! :trophy:
 
 This concludes the HTML / CSS module. We are proud of you!
+
+OMG!  I need to have better confidence that I'm going to get this right.
 
 _The Ironhack team :heart:_
