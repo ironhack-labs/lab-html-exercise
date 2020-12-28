@@ -1,40 +1,201 @@
-
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
 body {
   font-family: 'Poppins';
 }
 
-header > div {
-    padding: 0 25px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid lightgray;
-  }
-  
-  nav {
-    width: 600px;
-  }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  nav a {
-    text-decoration: none;
-    color: black;
-  }
-  
-  .blackHeart {
-    width: 20px;
-    margin-right: 1rem;
-  }
+h1 {
+  font-size: 80px;
+  margin: 80px auto 0 auto;
+}
 
-/* form label color: rgba(0,0,0,.05)
-form input color: rgba(0,0,0,.05)
-form button background color: #fb3e44
-form button letters color: white */
+h2 {
+  font-size: 30px;
+  background-color: rgba(255, 204, 53, .4);
+  transform: skew(9deg, 0deg);
+  font-style: italic;
+}
+
+h3 {
+  font-size: 17px;
+  color: #ED1C24;
+  margin-bottom: 7px;
+}
+
+.text {
+  font-size: 16px;
+}
+
+header>div {
+  font-size: 14px;
+  padding: 0 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+}
+
+nav {
+  width: 600px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+.blackHeart {
+  width: 20px;
+  margin-right: 1rem;
+}
+
+.npmLogo {
+  width: 80px;
+}
+
+.barForm {
+  display: flex;
+  align-items: center;
+}
+
+.searchBar {
+  /* this is the div that contains the img and the input */
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.searchBar input {
+  height: 35px;
+  width: 900px;
+  font-family: 'Poppins';
+  text-indent: 35px;
+  margin: 5px 0;
+  background-color: #DCDCDC;
+  border: none;
+}
+
+.searchBar img {
+  position: absolute;
+  left: 10px;
+  height: 20px;
+}
+
+.barForm a {
+  text-decoration: none;
+  padding: 8px 20px;
+  background-color: #fb3e44;
+  color: white;
+}
+
+.bottomDiv a {
+  text-decoration: none;
+  color: black;
+}
+
+.links {
+  text-decoration: none;
+  color: black;
+}
+
+.squareLink {
+  padding: 3px 20px;
+  border: 1px solid black;
+}
+
+#section1 {
+  height: 600px;
+  background-color: rgba(232, 217, 217, .3);
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+}
+
+#section1 article {
+  width: 430px;
+  text-align: center;
+  padding: 16px;
+}
+
+#section1 div {
+  height: 100px;
+  width: 460px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.box {
+  background-color: white;
+  padding: 10px 60px;
+  text-decoration: none;
+  color: black;
+}
+
+.boxShadow {
+  background-color: #FB3B49;
+  box-shadow: 8px 8px 0 rgba(251, 59, 73, .2);
+  padding: 10px 60px;
+  text-decoration: none;
+  color: white;
+}
+
+#section2 {
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+#section2 img {
+  height: 200px;
+  margin-bottom: 40px;
+}
+
+#section2 article {
+  width: 650px;
+  text-align: center;
+  padding: 15px;
+}
+
+#section3 img {
+  width: 30px;
+}
+
+#section3 {
+  display: flex;
+  flex-direction: column;
+}
+
+#section3 div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: baseline;
+}
+
+#section3 .container {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+}
+
+#section3 a {
+  background-color: black;
+  padding: 10px 120px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 8px 8px 0 rgba(128, 83, 35, .2);
+  margin: 80px auto 40px auto;
+}
