@@ -2,17 +2,81 @@
 
 body {
   font-family: 'Poppins';
+  margin: 0;padding: 0;
 }
 
-header {
-    display: flexbox;
+header > div {
+  padding: 0 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
 }
 
-.top-title {
-    
+.nav-bar {
+  width: 600px;
 }
 
-.top-title img {
-    width: 20px;
+.nav-bar ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  align-items: center;
+  font-style: bold;
 }
 
+.nav-bar a {
+  text-decoration:none;
+  color: black;
+}
+
+.top-title img  {
+  width: 25px;
+}
+
+.level2-header {
+  padding: 0px 0;
+}
+
+.logo {
+  display: flex;
+  width: 70px;
+  margin-left: 20px;
+}
+
+.magnifying-glass {
+  width: 25px;
+  padding: 6.5px;
+  background-color:rgba(0,0,0,.05);
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding-right: 20px;
+  padding-left: 1px;
+  width: auto;
+}
+
+.search {
+  width: 950px;
+  height: 35px;
+  background-color:rgba(0,0,0,.05);
+  border: none;
+}
+
+.button-search{
+  height: 35px;
+  background-color: #fb3e44;
+  border:rgba(0,0,0,.05);
+  color: white;
+  width: 75px;
+}
+
+.join-login {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 40px;
+  width: 90px;
+}
