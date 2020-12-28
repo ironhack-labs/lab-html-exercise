@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- 
-    Exercise 'IronSkydive'
+    Exercise 'IronSkydive' webdev feb2021
     Cindy Teeven
     Dec 2020 
         __                                                                        __
@@ -21,39 +21,51 @@
 
   <body>
     <header>
-        <div>
+        <div class=header-up> <!-- class useful ?-->
             <div>
-            <img class="blackHeart" src="images/black-heart.png" alt="Black heart logo" />
+            <img class="black-heart" src="images/black-heart.png" alt="Black heart logo" />
             <span> Nifty Penguin Magic </span>
             </div>
             <nav>
                 <ul>                    
-                    <li><a href="#"> npm Enterprise </a></li>
-                    <li><a href="#"> Products </a></li>
-                    <li><a href="#"> Solutions </a></li>
-                    <li><a href="#"> Resources </a></li>
-                    <li><a href="#"> Docs </a></li>
-                    <li><a href="#"> Support </a></li>
+                    <li><a href="#">npm Enterprise </a></li>
+                    <li><a href="#">Products </a></li>
+                    <li><a href="#">Solutions </a></li>
+                    <li><a href="#">Resources </a></li>
+                    <li><a href="#">Docs </a></li>
+                    <li><a href="#">Support </a></li>
                 </ul>
             </nav>    
-        </div>       
-        <div>              
-            <div>
-                <img class="npmLogo" src="images/npm-logo.png" alt="NPM logo" />
-            </div>              
-            <div>
-                <form id="search">
-                    <img class="magnifyingGlass" src="images/magnifying-glass.png" alt="Magnifying glass logo" />
-                    <input type="search" placeholder="Search packages">
-                    <button type="submit">Search</button>
-                </form>
-            </div>            
-            <div>
-                <a href="">Join</a>
-                <a href="">Log In</a>
+        </div>  
+
+        <div class=header-down> 
+            <img src="images/npm-logo.png" alt="NPM logo" class="npm-logo" /> 
+            <div class="search-sumbit-container">
+                <div class="search-container">
+                    <form id="search">
+                        <span>
+                            <img src="images/magnifying-glass.png" alt="Magnifying glass logo" class="magnifying-glass-logo"/>    
+                        </span>                       
+                        <label for="search-bar"></label>
+                        <input id="search-bar" type="search" placeholder="Search packages" class="inputfield">
+                        <!-- <label for id="search-btn"></label> not necessary?-->
+                    </form>                                      
+                </div>     
+                <div>
+                    <button id="search-btn" type="submit">Search</button>
+                </div> 
             </div>
+ 
+            
+            <div class="join-login-lnk">
+                <a href="">Join</a>
+                <a href="">Log In</a>   
+            </div>
+
         </div>
-        <link rel="shortcut icon" type="image/png" href="images/npm-logo.png"/>     
+
+
+
     </header>
 
     <section id="amazing-things">

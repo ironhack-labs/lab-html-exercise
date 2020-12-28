@@ -1,14 +1,113 @@
 /*
 Exercise 'IronSkydive' webdev 2021
 Cindy Teeven
-Dec 2020                      
+Dec 2020 
+
+form label color: rgba(0,0,0,.05)
+form input color: rgba(0,0,0,.05)
+form button background color: #fb3e44
+form button letters color: #fff
+                    
 */
 
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
 html,
 body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Poppins';
+    font-family: 'Poppins';
 }
+
+header > div {
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+}
+
+nav {
+    width: 600px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.black-heart {
+    width: 20px;
+    margin-right: 1rem;
+}
+
+.header-down {
+    display: flex;
+    padding: 5px 2rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.npm-logo {
+    width: 70px;
+    align-items: center;
+}
+
+.magnifying-glass-logo {
+    height: 25px;
+    width: 25px;
+    padding-right: 0.25rem;
+}
+
+
+.search-sumbit-container {
+    display: flex;
+    justify-content: space-between;
+    flex:2;
+    padding: 0 20px;
+    background-color: slateblue;
+}
+
+.search-container {
+    padding: 5px 0;
+    background: #f2f2f2;
+    white-space: nowrap;
+    max-width: 1200%;
+    flex:2;
+}
+#search{
+    width: 100%;
+    flex:2;
+}
+
+#search-bar {
+    background: #f2f2f2;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 16px;
+    border: none;
+    outline: unset;
+    height: 40px;
+    width: 80%; 
+}
+  
+#search-btn {
+    background-color: #fb3e44;
+    color: #fff;  
+    font-size: 0.875rem;
+    letter-spacing: 0.5px;
+    text-align: center;
+    text-decoration: none; 
+    padding: 0.5rem 2rem;
+    border-style: none;  
+    height: 50px;
+    align-items: center;
+  }
+
+  .join-login-lnk {
+
+  }
