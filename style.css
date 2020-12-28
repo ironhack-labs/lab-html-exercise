@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
+/* CSS 1 */
 body {
   font-family: 'Poppins';
   margin: 0;padding: 0;
 }
-
+/* CSS 2 */
+/*HEADER*/
 header > div {
   padding: 0 25px;
   display: flex;
@@ -13,6 +15,7 @@ header > div {
   border-bottom: 1px solid lightgray;
 }
 
+/*Header Level 1*/
 .nav-bar {
   width: 600px;
 }
@@ -22,7 +25,7 @@ header > div {
   justify-content: space-between;
   list-style: none;
   align-items: center;
-  font-style: bold;
+  font-weight: bold;
 }
 
 .nav-bar a {
@@ -34,6 +37,7 @@ header > div {
   width: 25px;
 }
 
+/*Header Level 2*/
 .level2-header {
   padding: 0px 0;
 }
@@ -60,10 +64,11 @@ header > div {
 }
 
 .search {
-  width: 950px;
+  width: 850px;
   height: 35px;
   background-color:rgba(0,0,0,.05);
   border: none;
+  font-size: 1em;
 }
 
 .button-search{
@@ -72,11 +77,153 @@ header > div {
   border:rgba(0,0,0,.05);
   color: white;
   width: 75px;
+  font-weight: bold;
 }
 
 .join-login {
   display: flex;
   justify-content: space-between;
-  padding-right: 40px;
-  width: 90px;
+  padding-right: 45px;
+  width: 140px;
+  
+}
+
+.join-login a {
+  text-decoration: none;
+  color: grey;
+  padding: 2px 8px;
+}
+
+.header-join {
+  border: solid rgba(0,0,0,.05)
+}
+
+/* CSS 3 */
+#resume {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: stretch;
+  height: 600px;
+  background-color: rgba(232,217,217,.3);
+} 
+
+#resume h1 {
+  font-size: 100px;
+  margin: 50px auto 0px ;
+  padding: 1px;
+}
+
+#resume article p{
+  font-size: 20px;
+  text-align: center;
+  width: 500px;
+  padding: 10px;
+  font-weight: 500;
+}
+
+#resume div {
+  padding:15px;
+  width: 450px;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+}
+
+#resume div a {
+  text-decoration: none;
+  font-style: bold;
+  padding: 20px 50px;
+  font-size: 17px;
+}
+
+.button-plans {
+  color: white;
+  background-color:#FB3B49;
+  box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+}
+
+.button-join {
+  color: black;
+  font-weight: bold;
+  background-color: white;
+}
+
+/* CSS 4 */
+#goforit {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: stretch;
+  height: 600px;
+  background-color: rgba(232,217,217,.3);
+} 
+
+#goforit img {
+  margin-top: 50px;
+  height: 200px;
+}
+
+#goforit h2 {
+  font-size: 40px;
+  margin: 50px auto 0px ;
+  padding: 1px;
+  background-color: rgba(255,204,53,.4);
+  transform: skew(9deg,0deg);
+  font-style: italic;
+}
+
+#goforit article p{
+  font-size: 18px;
+  text-align: center;
+  width: 700px;
+  padding: 10px;
+  font-weight: 500;
+}
+
+/* CSS 5*/
+#features {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content:space-evenly;
+  height: 600px;
+  background-color: rgba(232,217,217,.3);
+  flex-wrap: nowrap;
+}
+
+#features div {
+  display: flex;
+  flex-direction: row;
+  margin: auto 40px;
+  flex-basis: 0;
+}
+
+#features img {
+  height: 30px;
+}
+
+#features article {
+  padding: 0px 15px;
+  text-align: left;
+  width: 250px;
+  font-size: 16px;
+}
+
+#features h3 {
+  color: #ED1C24;
+}
+
+#features footer {
+  margin-bottom: 70px;
+
+}
+
+#features footer a {
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  background-color: black;
+  box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+  padding: 10px 100px;
 }
