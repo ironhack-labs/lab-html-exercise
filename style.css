@@ -1,95 +1,178 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins');
+/* ANOTAÇÕES GERAIS SOBRE AS NECESSIDADES PARA O CSS DO PROJETO:
+CRIAR CLASSE PARA CADA IMG (.img-npmlogo / .img-glass .img-hega)
+CRIAR CLASSE PARA DIV DO FORM (div-form)
+CRIAR CLASSE PRAR  O BOTÃO SEARCH DO FORM (.btn-form)
+CRIAR ID DA SECTION (#first-section)
+CRIAR CLASSE PARA DIV DOS BOTÕES SEE PLANS E JOIN FOR FREE(div.btn)
+CRIAR CLASSE PARA OS BOTÕES(EM LINK) (btn-see-plans / btn-for-free)
+CRIAR ID DA SECTION (#second-section)
+*CLASSE DA IMG AQUI (.img-glass)
+CRIAR ID DA SECTION (#third-section)
+CRIAR CLASS DA DIV (.container-third)
+CRIAR CLASS PARA BOTÃO CREATE AN ORG (.btn-org)
+CRIAR CLASS PARA IMG DA THIRD-SECTION (.img-third) */
+@import  url ( 'https://fonts.googleapis.com/css?family=Poppins' );
 
 body {
-  font-family: 'Poppins';
+   font-family : 'Poppins' ;
+   text-align: center;
+}
+
+header > div {
+  padding: 0 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+}
+
+nav {
+  width: 600px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+.blackHeart {
+  width: 20px;
+  margin-right: 1rem;
+}
+.img-npmlogo {
+  width: 50px;
+  height: 20px;
+  margin-left: 15px;
+}
+.img-glass {
+  width: 20px;
+}
+.img-hexa {
+  width: 20px;
+  margin-right: 1rem;
+}
+form {
+  display: flex;
+ 
+}
+.div-form {
+padding: 5px;
+margin-left: 0 auto;
+
+}
+.form-label {
+color: rgba(0, 0, 0, 05);
+}
+.form-input {
+  color: rgba(0, 0, 0, 05);
+}
+.form-btn {
+  background-color: #fb3e44;
+  color: white;
+  border: none;
+  padding: 10px;
+  margin-left: 500px;
+}
+.btn-join {
+  border: none;
+  text-decoration: none;
+  padding: 10px;
+  margin: 20px;
   text-align: center;
 }
-header > div {
-    padding: 0 25px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid lightgray;
-  }
-  
-  nav {
-    width: 600px;
-  }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  nav a {
-    text-decoration: none;
-    color: black;
-  }
-  
-  .blackHeart {
-    width: 20px;
-    margin-right: 1rem;
-  }
-  .form-label {
-      color: rgba(0, 0, 0, 05);
-  }
-  .form-input {
-      color: rgba(0, 0, 0, 05);
-  }
-  .btn-search {
-      background-color: #fb3e44;
-      color: white;
-  }
-  #first-section {
-      height: 600px;
-      background-color: rgba(232, 217, 217, 3);
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      align-items: center; 
-    
-  }
+.btn-login {
+  border: none;
+  text-decoration: none;
+  padding: 10px;
+  margin: 20px;
+  text-align: center;
+}
+#first-section {
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(232, 217, 217, 3);
+}
+#first-section h1 {
+  font-size: 5em;
+}
+
+.container-first {
+  display: flex;
+  flex-direction: row;
+}
+#first-section article {
+  width: 480px;
+  padding-bottom: 25px;
+  font-size: 22px;
+  text-align: center;
+
+}
 .see-plans {
-    background-color: #fb3b49;
-    box-shadow: 8px 8px 0 rgba(251, 59, 73, 2);
-    color: white;
-    text-decoration: none;  
-    justify-content: space-between; 
+  background-color: #fb3b49;
+  color: white;
+  font-weight: bold;
+  box-shadow: 8px 8px 0 rgb(251, 59, 73, .2);
+  text-decoration: none;
+  padding: 15px 30px 15px 30px;
 }
 .join-for-free {
-    text-decoration: none;
-
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 15px 20px 15px 20px;
+  margin-left: 25px;
+}
+.img-hexa {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 350px;
 }
 #second-section {
-    justify-content: center;
-    text-align: center;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 100px;
 }
-#second-section h3 {
-    background-color: rgba(255, 204, 53, 4);
-    transform: skew(9deg, 0deg);
-    font-style: italic;
+#second-section h2 {
+  font-size: 30px;
+  background-color: rgba(255, 204, 53, .4);
+  transform: skew(9deg,0deg);
+  font-style: italic;
 }
-
-#third-section img {
-    width: 20px;
+#second-section article {
+  width: 860px;
+  padding-bottom: 25px;
+  font-size: 22px;
+  text-align: center;
 }
 #third-section {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: space-between;
-    margin: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
+
 #third-section h3 {
-    border: 1px solid red;
+  color: #ed1c24;
 }
-.btn-finally {
-  background-color: black;
-  color: white;
-  text-decoration: none;
-  border-radius: 25;
-  border: 1px solid black;
-font-size: 2em;
+.img-third {
+  width: 20px;
 }
+.btn-org {
+ 
+}
+
