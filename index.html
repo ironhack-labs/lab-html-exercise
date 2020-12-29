@@ -1,11 +1,13 @@
-    
+<link rel="stylesheet" href="style.css" />
+
 
 <header>
-    <div>
+    <div class="topbar">
       <div>
         <img class="blackHeart" src="../lab-html-exercise/images/black-heart.png" alt="black heart" />
         <span> Nifty Penguin Magic </span>
       </div>
+      <div>
       <nav>
         <ul>
           <li><a href="#"> npm Enterprise </a></li>
@@ -16,20 +18,19 @@
           <li><a href="#"> Support </a></li>
         </ul>
       </nav>
-    </div>
+      </div>
+     </div>
   
-    <div>
-        <img src="../lab-html-exercise/images/npm-logo.png" alt="npm logo" />
+    <div class="searchbar">
+        <img src="../lab-html-exercise/images/npm-logo.png" alt="npm logo" id="npmlogo"/>
+        <img src="../lab-html-exercise/images/magnifying-glass.png" alt="search icon" id="lupa"/>
+        <form action="/some-url" method="get">
+            <input type="text" placeholder="Search packages">
+            </form>
+        <a href="#" id="Search">Search</a>
+        <a href="#" id="Join">Join</a>
+        <a href="#" id="Log">Log in</a>
     </div>
-    <div>
-        <img src="../lab-html-exercise/images/magnifying-glass.png" alt="search icon" />
-    </div>
-    <div>
-        <a href="#">Join</a>
-        <a href="#">Log in</a>
-    </div>
-        <!-- add logo, search bar and buttons (or links and style them as buttons later) -->
-  
   </header>
   <body>
 <section id="section1">
@@ -37,17 +38,18 @@
     <article>Essential JavaScript development tools that help you go to market faster and build powerful applications using
     modern open source code.</article>
     <div>
-        <a href="#">See plans</a>
-        <a href="#">Join for free</a>
+        <a href="#" class="plans">See plans</a>
+        <a href="#" class="Join">Join for free</a>
     </div>
 </section>
 <section id="section2">
-     <img src="../lab-html-exercise/images/triangle-hexagon.svg" alt="hexagon icon" />
+     <img src="../lab-html-exercise/images/triangle-hexagon.svg" alt="hexagon icon" class="hexagon"/>
     <h2>Bring the best of open source to your company</h2>
-    <article> Npm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it.
+    <article> npm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it.
         Create an Org and get more out of the tools your team already knows and loves. </article>
 </section>
 <section id="section3">
+ <span class="table">
     <div>
         <img src="../lab-html-exercise/images/zero-configuration.svg" alt="configuration icon" />
         <h3>Zero configuration</h3>
@@ -68,10 +70,10 @@
         <h3>npm audit</h3>
         <p>Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer. </p>
     </div>
-
-    <div>
+    </span>
+    <span id="ORG">
         <a href="#">Create an Org</a>
-    </div>
+    </span>
 
 </section>
 
