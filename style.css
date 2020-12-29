@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
+*{
+    box-sizing: border-box;
+}
+
 body{
     font-family: 'Poppins';
 }   
@@ -41,7 +45,7 @@ nav a{
     display: flex;
     padding: 10px;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-evenly;
 }
 
 .lupa{
@@ -51,17 +55,28 @@ nav a{
 }
 
 .bar{
-    margin-left: 1.5em;
-    background-color: #E9E7E7;
+    margin-left: 1.5em; 
     padding: 7px;
+    display: flex;
+    align-items: center;
 }
 
 .bar label, input{
     color: rgba(0,0,0,.05);
 }
 
+label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E9E7E7;
+    height: 40px;
+    width: 40px;
+}
+
 #search-bar{
-    width: 1025px;
+    width: 60vw;
+    height: 40px;
     background-color: #E9E7E7;
     border-style: none;
     font-size: 20px;
@@ -73,11 +88,12 @@ nav a{
     padding: 10px;
     margin: 0px;
     border-style: none;
-    border-width: 0 ;
+    border-width: 0;
+    height: 40px;
 }
 
 .link1{
-    margin-left: 35px;
+    
     list-style: none;
     text-decoration: none;
     color: black;
@@ -86,7 +102,7 @@ nav a{
 }
 
 .link2{
-    margin-left: 25px;
+   
     list-style: none;
     text-decoration: none;
     color: black;
@@ -153,11 +169,22 @@ h2{
     font-style: italic;
 }
 
+.fim{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 #features{
     display: flex;
     margin-top: 100px;
     margin-bottom: 50px;  
-    margin-left: 50px;
+    justify-content: center;
+}
+
+.square{
+    width: 300px;
 }
 
 .icon{
@@ -167,8 +194,6 @@ h2{
 
 h3{
     color: #ED1C24;
-    border: 3px solid #BB8F4C;
-    padding: 5px;
     background-size: 10px;
 }
 
@@ -177,8 +202,6 @@ h3{
 }
 
 .last{
-    display: flex;
-    justify-content: center;
     margin-bottom: 100px;
     text-decoration: none;
     color: white;
@@ -186,5 +209,7 @@ h3{
     box-shadow: 8px 8px 0 rgba(128,83,35,.2);
     font-size: 20px;
     padding: 5px;
+    width: 250px;
+    text-align: center;
 }
 
