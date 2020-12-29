@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+/* Design Colors:
+form label color: rgba(0,0,0,.05)
+form input color: rgba(0,0,0,.05)
+form button background color: #fb3e44
+form button letters color: white
+*/
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+}
+
+.upperHeader {
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+}
+  
+nav {
+    width: 600px;
+}
+  
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+nav a {
+    text-decoration: none;
+    color: black;
+}
+  
+.blackHeart {
+    width: 20px;
+    margin-right: 1rem;
+}
+
+.lowerHeader {
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.npmLogo {
+    width: 80px;
+}
+
+.magnifyingGlass {
+    width: 20px;
+    height: 20px;
+    margin-right: 0;
+}
+
+.searchBar-form {
+    width: 80%;
+    margin: 0.1em 0;
+    font-size: 1.5em;
+    background-color: rgba(0,0,0,.05);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: flex-start;
+}
+
+.searchBar-form label {
+      color: rgba(0,0,0,.05);
+      margin: 1px; 
+}
+
+.searchBar-form input {
+    font-size: .8em;
+    border-color: transparent;
+    background-color: transparent;
+    margin: .5px;
+    padding: .1em;
+}
+
+.searchBar-form button {
+    background-color: #fb3e44;
+    color: white;
+    border-style: none;
+    margin-left: 130px;
+    font-size: .8em;
+    text-align: center;
+    padding: .4em;
+}
+
+.joinLogin {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-start;
+}
+
+.joinLogin a {
+    color: black;
+    text-decoration: none;
+    font-size: 1em;
+    text-align: center;
+    letter-spacing: .5px;
+    margin: .4em;
+}
+
+.joinLogin .borderJoin {
+      border: 2px solid lightgray;
+      padding: 5px;
+}
+
+/* IntroSection:
+suggested height for this section: 600px
+background color: rgba(232,217,217,.3)
+"See plans" button background color: #FB3B49
+"See plans" button box shadow: 8px 8px 0 rgba(251,59,73,.2) 
+*/
+
+.IntroSection {
+    height: 600px;
+    background-color: rgba(232,217,217,.3);
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: flex-start;
+}
+
+h1 {
+    font-size: 4em;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: .2em;
+}
+
+.IntroSection article {
+    text-align: center;
+    margin-bottom: 3em;
+}
+
+.IntroSection .seePlans, .joinFree {
+    text-decoration: none;
+    padding: .6em 3em;
+    font-weight: bold;
+}
+
+.IntroSection .seePlans {
+    background-color: #FB3B49;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+    color: white;    
+}
+
+.IntroSection .joinFree {
+    color: black;
+}
+
+/* MidSection:
+heading background color: rgba(255,204,53,.4)
+to get the transform of the yellow background in the left-hand direction use: transform: skew(9deg,0deg);
+to get it in the opposite direction of the letters, the way we need it on the page, use: font-style: italic;
+to additionally fine-tune the position of each element, use margin property.
+*/
+
+.midSection {
+    height: 600px;
+    background-color: white;
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+    align-content: flex-start;
+}
+
+h2 {
+    font-size: 1.6em;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 0;
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+    font-style: italic;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.triangleHexagon {
+    width: 170px;
+}
+
+.midSection article {
+    text-align: center;
+    margin-left: 35px;
+    margin-right: 35px;
+}
+
+/* lowerSection:
+color of the letters in each heading in this section: #ED1C24
+"Create an Org" box shadow: 8px 8px 0 rgba(128,83,35,.2)
+"Create an Org" letters color: white
+*/
+
+.lowerSection {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: flex-start;
+    align-content: center;
+    margin: .1em 10em;
+}
+.lowerSectionImage {
+    width: 30px;
+}
+
+.singleContainer {
+    display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+    align-content: flex-start;
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-size: 1em;
+    font-weight: bold;
+    text-align: left;
+    color: #ED1C24;
+}
+
+.lowerSection p {
+    margin-right: 3em;
+}
+
+.lowerSection a {
+    text-decoration: none;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 10px 100px;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    margin-bottom: 3em;
+}
