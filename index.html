@@ -8,9 +8,9 @@
 <body>
     <header>
         <div>
-            <div id="branding">
-                <img src="./images/black-heart.png" alt="black heart">
-                Nifty Penguin Magic
+            <div>
+                <img class="blackHeart" src="./images/black-heart.png" alt="black heart">
+                <span class="semi-bold">Nifty Penguin Magic</span>
             </div>
             <nav>
                     <ul>
@@ -24,14 +24,16 @@
             </nav>
         </div>
         <div>
-            <img src="./images/npm-logo.png" alt="npm logo">
+            <img class="npmLogo" src="./images/npm-logo.png" alt="npm logo">
             <form>
-                <img src="images/magnifying-glass.png" alt="magnifying-glass">
-                <input type="text" placeholder="Search packages">
-                <button class="red-btn">Search</button>
+                <img class="magnifyingGlass" src="images/magnifying-glass.png" alt="magnifying-glass">
+                <input class="searchBar" type="text" placeholder="Search packages">
+                <button class="search-btn">Search</button>
             </form>
-            <a href="#">Join</a>
-            <a href="#">Log in</a>
+            <div class="header-btn-box">
+                <span id="join-btn"><a href="#">Join</a></span>
+                <a href="#">Log in</a>
+            </div>
         </div>
     </header>
     <section id="Build">
@@ -40,8 +42,8 @@
             faster and build powerful applications using modern open source code.
         </article>
         <div>
-            <a class="red-btn" href="#">See plans</a>
-            <a href="#">Join for free</a>
+            <a class="see-plans-btn" href="#">See plans</a>
+            <a class="join-for-free-btn" href="#">Join for free</a>
         </div>
     </section>
     <section id="Bring">
@@ -62,7 +64,7 @@
                 </p>
             </article>
             <article>
-                <img src="images/team-management.svg" alt="team icon">
+                <img class="team-img" src="images/team-management.svg" alt="team icon">
                 <h3>Team management</h3>
                 <p>Control who has access to what modules within your team namespace 
                     using straightforward team management capabilities.
@@ -83,6 +85,6 @@
                 </p>
             </article>
         </div>
-        <a class="black-btn" href="#">Create an Org</a>
+        <a class="create-btn" href="#">Create an Org</a>
     </section>
 </body>
