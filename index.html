@@ -1,5 +1,9 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
     <body>
         <header>
             <div>
@@ -20,18 +24,18 @@
             </div>
 
             <div>
-                <div>
-                    <img src="images/npm-logo.png" alt="logo"/>
-                    <img src="images/magnifying-glass.png" alt="magnifying glass"/>
+                <div class="bloquesearch">
+                    <img class="logo" src="images/npm-logo.png" alt="logo"/>
+                    <img class="blackHeart" src="images/magnifying-glass.png" alt="magnifying glass"/>
                     <form action="../../form-result.php" method="post" target="_blank">
-                        <input type="search" name="search" placeholder="Search packages">
-                        <input type="submit" value="Search">
+                        <input class="search-box" type="search" name="search" placeholder="Search packages">
+                        <input class="search-btn" type="submit" value="Search">
                     </form>
                 </div>
 
                 <div>
-                    <a href="#join">Join</a>
-                    <a href="#login">Log in</a>
+                    <a class="btns" href="#join">Join</a>
+                    <a class="btns" href="#login">Log in</a>
                 </div>
             </div>
         </header>
@@ -41,13 +45,13 @@
             <article>Essential JavaScript development tools that help you go to market faster and build powerful applications using
                 modern open source code.</article>
             <div>
-                <a href="#">See plans</a>
-                <a href="#">Join for free</a>
+                <a class="see-plans-btn" href="#">See plans</a>
+                <a class="join-for-free-btn" href="#">Join for free</a>
             </div>    
         </section>
 
         <section id="description">
-            <img src="images/triangle-hexagon.svg" alt="hexgon icon"7>
+            <img class="hexagon" src="images/triangle-hexagon.svg" alt="hexgon icon"7>
             <article>
                 <h2>Bring the best of open source to your company</h2>
                 <p>npm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it.
