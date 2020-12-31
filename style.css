@@ -82,8 +82,10 @@ nav a {
     font-size: 80px;
 }
 
-#build-amazing-things article{
-    padding-bottom: 20px;
+#build-amazing-things > article{
+    text-align: center;
+    margin-bottom: 50px;
+    width: 500px;
 }
 
 .joinforfree{
@@ -116,11 +118,11 @@ nav a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 600px;
+    height: 800px;
 }
 
 .triangle-hexagon{
-    margin-top: 20px 0px 20px 0px;
+    margin: 20px 0px 30px 0px;
     height: 200px
 }
 
@@ -132,20 +134,28 @@ nav a {
     padding: 0px 20px 0px 20px;
 }
 
-#best-of-open-source article{
+.best-of-open-source-article{
     text-align: center;
-    margin-right: auto;
+    width: 500px;
 }
 
 #create-an-org{
-    display: flex;
     margin: 30px;
 }
 
 .create-an-org-div{
+    display: flex;
+    flex-direction: row;
+    margin: 0px 60px 60px 60px;
+}
+
+.create-an-org-div > div{
+    padding: 0px 30px 0px 30px
 }
 
 .org-button{
+    display: flex;
+    justify-content: center;
     box-shadow: 8px 8px 0 rgba(128,83,35,.2);
     color: white;
     background-color: black;
@@ -154,7 +164,9 @@ nav a {
     border-style: none;
     border-width: 0;
     line-height: 36px;
-    padding: 1rem 10rem 1rem 10rem;
+    width: 200px;
+    padding: 1rem 5rem 1rem 5rem;
+    margin-bottom: 200px;
 }
 
 #create-an-org img{
@@ -163,6 +175,7 @@ nav a {
 
 #create-an-org h3{
     color: #ED1C24;
+    padding: 20px 0px 20px 0px;
 }
 
 section2
