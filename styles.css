@@ -108,7 +108,7 @@ nav a {
 }
 
 h1 {
-  font-size: 120px;
+  font-size: 100px;
 }
 
 #section-first > article {
@@ -124,6 +124,57 @@ h1 {
   width: 400px;
 }
 
+#section-two {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+#section-two img {
+  height: 250px;
+}
+
 h2 {
   font-size: 35px;
+  background-color: rgba(255, 204, 53, 0.4);
+  transform: skew(9deg, 0deg);
+  font-style: italic;
+}
+
+#section-two > article {
+  width: 40%;
+  font-size: 18px;
+  text-align: center;
+  height: 150px;
+}
+
+#section-three {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#section-three > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#section-three > div > div {
+  width: 18%;
+}
+
+#section-three > div > div > img {
+  height: 20px;
+}
+
+#section-three > a {
+  box-shadow: 8px 8px 0 rgba(128, 83, 35, 0.2);
+  color: white;
+  background-color: black;
+  padding: 15px 25px;
+  margin-top: 40px;
+  margin-bottom: 80px;
 }
