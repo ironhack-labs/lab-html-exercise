@@ -45,9 +45,7 @@ nav a {
    border: 0px;
    padding:14px 14px 14px 570px; 
    text-align:left;
-
-   
-   
+   flex-direction: row;
   
  }
     
@@ -58,6 +56,7 @@ nav a {
    border: 0px;
    padding:14px 10px;
    font-size: 15px;
+   flex-direction: row;
    
  }
  .join_button {
@@ -65,11 +64,110 @@ nav a {
    color:#999999;
    text-decoration:none;
    padding:4px 17px;
+   flex-direction: row;
    
  }
  .login_button {
    font-size:15px;
    text-decoration:none;
    color:#999999;
+   flex-direction: row;
   
  }
+ #section1 {
+   display:flex;
+   justify-content: center;
+   flex-direction: column;
+   align-items: center;
+   background-color: rgba(232,217,217,.3);
+   height: 600px;
+  }
+
+   #section1 h1 {
+     font-size: 70px;
+     font-weight: bold;
+   }
+   #section1 article {
+    text-align:center;
+    font-size:15px;
+    margin: 10px 390px;
+   }
+   #section1 div{
+     line-height: 200px;
+   }
+
+   .link1 {
+    background-color: #fb3e44;
+    color:white;
+    text-decoration:none;
+    padding:8px 50px;
+    margin: 30px;
+    box-shadow: 5px 10px lightcoral;
+   }
+   .link2 {
+      background-color:white;
+      color:black;
+      text-decoration:none;
+      padding:8px 50px;
+      margin: 30px;
+   }
+   #section2 {
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 450px;
+   }
+
+   #section2 img {
+     width: 200px;
+   }
+  
+  #section2 h2 {
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+    font-style: italic;
+  }
+  #section2 article {
+    text-align:center;
+    font-size:10px;
+    margin: 20px 390px;
+  }
+  #section3 {
+    display:flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    margin:20px 250px;
+    height:200px;
+  }
+  #section3 img {
+    width: 30px;
+  }
+  #section3 h3{
+    color:#ED1C24;
+    font-size:12px;
+    font-weight:bolder;
+  }
+
+  #section3 p {
+    font-size: 9px;
+    margin-right: 70px;
+  }
+
+  #org_botton {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #org_botton a {
+    font-size: 12px;
+    background-color: black;
+    color:white;
+    text-decoration:none;
+    padding:12px 90px;
+    margin: 30px;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    
+  }
