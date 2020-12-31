@@ -12,7 +12,7 @@
     <header>
         <div>
             <div>
-                <img src="images/black-heart.png" alt="NPM Black Heart">
+                <img src="images/black-heart.png" alt="NPM Black Heart" class="blackHeart">
                 <span>Nighty Penguin Magic</span>
             </div>
             <nav>
@@ -26,28 +26,28 @@
                 </ul>
             </nav>
         </div>
-        <div>
-            <img src="images/npm-logo.png" alt="NPM logo">
-            <form action="/search" method="post">
-                <label for="search"><img src="images/magnifying-glass.png" alt="magnifier"></label>
-                <input type="text" id="search" name="search">
-                <input type="submit" value="Search" />
+        <div class="header-second-bar">
+            <img src="images/npm-logo.png" alt="NPM logo" class="search-bar-height">
+            <form action="/search" method="post" class="search-form">
+                <label for="search"><img src="images/magnifying-glass.png" alt="magnifier" class="search-bar-height"></label>
+                <input type="text" id="search" name="search" class="search-form-text">
+                <input type="submit" value="Search" class="search-form-button"/>
             </form>
-            <a href="/join.html">Join</a>
-            <a href="/login.html">Log in</a>
+            <a href="/join.html" class="header-join">Join</a>
+            <a href="/login.html" class="header-login">Log in</a>
         </div>
     </header>
 
     <!-- section 1 -->
-    <section class="section-first">
+    <section id="section-first">
         <h1>Build amazing things</h1>
         <article>
             Essential JavaScript development tools that help you go to market faster and build powerful applications
             using modern open source code.
         </article>
         <div>
-            <a href="#">See plans</a>
-            <a href="#">Join for free</a>
+            <a href="#" id="see-plans-button">See plans</a>
+            <a href="#" id="join-button">Join for free</a>
         </div>
     </section>
 
