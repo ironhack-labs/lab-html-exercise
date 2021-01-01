@@ -7,7 +7,7 @@
     </head>
 <body>
     <header id="navigation">
-        <div>
+        <div class="navigation-1">
             <div>
                 <img class="blackHeart" src="images/black-heart.png" alt="black heart" />
                 <span>Nifty Penguin Magic</span>
@@ -23,7 +23,7 @@
                 </ul>
             </nav>
         </div>
-        <div>
+        <div class="navigation-2">
             <img src="images/npm-logo.png" alt="NPM logo" id="header-logo">
             <div class="search-bar">
                 <img src="images/magnifying-glass.png" alt="search logo" id="search-logo">
@@ -33,28 +33,30 @@
             </div>
             <div class="account">
                 <ul>
-                    <li><a href="" id="join">Join</a></li>
-                    <li><a href="" id="log-in">Log In</a></li>
+                    <li><a href="" id="join-btn">Join</a></li>
+                    <li><a href="" id="log-in-btn">Log In</a></li>
                 </ul>
             </div>
         </div>
     </header>
     <section id="get-ready">
         <h1>Build amazing things</h1>
-        <article class="get-ready-container">
+        <div class="get-ready-container">
             <p>Essential JavaScript development tools that help you go to market faster and build powerful applications using modern open source code.</p>
             <div class="get-ready-buttons">
                 <ul>
-                    <li><a href="" id="see-plans">See plans</a></li>
-                    <li><a href="" id="join-free">Join for free</a></li>
+                    <li><a href="" id="see-plans-btn">See plans</a></li>
+                    <li><a href="" id="join-free-btn">Join for free</a></li>
                 </ul>
             </div>
-        </article>
+        </div>
     </section>
     <section id="company-claim">
-        <img src="images/triangle-hexagon.svg" alt="triangle-hexagon">
-        <h2>Bring the best of open source to your company</h2>
-        <p>npm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it. Create an Org and get more out of the tools your team already knows and loves.</p>
+        <div class="company-claim-container">
+            <img src="images/triangle-hexagon.svg" alt="triangle-hexagon">
+            <h2>Bring the best of open source to your company</h2>
+            <p>npm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it. Create an Org and get more out of the tools your team already knows and loves.</p>
+        </div>
     </section>
     <section id="org-creation">
         <div>
@@ -79,7 +81,9 @@
                 <p>Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer.</p>
             </article>
         </div>
-        <a href="">Create an Org</a>
+        <div>
+            <a href="" id="create-btn">Create an Org</a>
+        </div>
     </section>
 </body>
 </html>
