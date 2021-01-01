@@ -1,4 +1,3 @@
-![logo_ironhack_blue 7](https://user-images.githubusercontent.com/23629340/40541063-a07a0a8a-601a-11e8-91b5-2f13e4e6b441.png)
 
 # Module Exercise: HTML & CSS
 
@@ -47,7 +46,7 @@ So let's get started!
 **The assets we provided contain the `index.html` file with all the necessary text, as well as the `images` folder with all the required images to successfully finish the exercise.**
 
 ### Part I - pure HTML (no styles applied)
-
+   c
 It might seem like a joke, but this is our goal in this iteration:
 
 ![](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_a00f9aadceb92aed72cd6b1158c3fd01.png)
