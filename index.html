@@ -9,31 +9,35 @@
         <header>
             <div>
                 <div>
-                    <img src="./images/black-heart.png" alt="black-heart">
-                    NPM Clone Nifty Penguin Magic 
+                    <img classs="black-heart" src="./images/black-heart.png" alt="black-heart">
+                    <span> Nifty Penguin Magic </span> 
                 </div>
                 <nav>
                     <ul>
-                        <li>npm Enterprise</li> 
-                        <li>Products</li> 
-                        <li>Solutions</li> 
-                        <li>Resources</li> 
-                        <li>Docs</li> 
-                        <li>Support</li> 
+                        <li><a href="#"> npm Enterprise</a></li> 
+                        <li><a href="#"> Products</a></li> 
+                        <li><a href="#"> Solutions</a></li> 
+                        <li><a href="#"> Resources</a></li> 
+                        <li><a href="#"> Docs</a></li> 
+                        <li><a href="#"> Support</a></li> 
                     </ul>
                 </nav>
             </div>
             <div>
-                <img src="./images/npm-logo.png" alt="npm-logo">
-                Search 
+                <img class="npm-logo" src="./images/npm-logo.png" alt="npm-logo">
+                <img class="magnifying-glass" src="./images/magnifying-glass.png" alt="magnifying-glass">
+                <form action="/search" method="POST">
+                    <input type="text" id="search" placeholder="Search packages"/> 
+                    <button type="submit">Search</button>
+                </form>
                 <div>
-                    Join 
-                    Log In
+                    <a href="#">Join</a> 
+                    <a href="#">Log In</a>
                 </div>
             </div>      
         </header>
         
-        <section>
+        <section id="build-amazing-things">
             <h1>
                 Build amazing things 
             </h1>
@@ -42,12 +46,13 @@
                 modern open source code. 
             </article>
             <div>
-                See plans 
-                Join for free 
+                <a href="#">See plans</a> 
+                <a href="#">Join for free</a> 
+                <img class="triangle-hexagon" src="./images/triangle-hexagon.svg" alt="triangle-hexagon">
             </div>
         </section>
         
-        <section>
+        <section id="bring-the-best">
             <h2>
                 Bring the best of open source to your company 
             </h2>
@@ -57,25 +62,29 @@
             </article>    
         </section>
         
-        <section>
+        <section id="features">
         
             <div>
+                <img class="zero-configuration" src="./images/zero-configuration.svg" alt="zero-configuration">
                 <h3>Zero configuration</h3> 
                 Create an org, add
                 your team, and start collaborating. Nothing to configure, set up, or manage. 
             </div>    
             
             <div>
-                <h3> Team management</h3> 
+                <img class="team-management" src="./images/team-management.svg" alt="team-management">
+                <h3>Team management</h3> 
                 Control who has access to what modules within your team namespace using straightforward team management capabilities. 
             </div>
             
             <div>
+                <img class="familiar-features" src="./images/familiar-features.svg" alt="familiar-features">
                 <h3>Familiar features</h3> 
                 npm Orgs has 100% parity with all the public npm registry features your developers already use. 
             </div>
             
             <div>
+                <img class="npm-audit" src="./images/npm-audit.svg" alt="npm-audit">
                 <h3>npm audit</h3> 
                 Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer. 
             </div>
