@@ -1,9 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800;900&display=swap');
+
 
 body {
     background-color: white;
     font-family: 'Poppins'; 
 }
+
+/*
+
+Header & Navi
+
+*/
+
 
 header > div {
     padding: 0 25px;
@@ -13,6 +22,10 @@ header > div {
     border-bottom: 1px solid lightgray;
     height: 3rem;
   }
+
+header span {
+    font-size: 0.8em;   
+}
 
 .black-heart {
     width: 20px;
@@ -25,6 +38,7 @@ nav {
 
 
 nav ul {
+    font-size: 0.8em;
     list-style: none;
     display: flex;
     justify-content: space-between;
@@ -34,7 +48,7 @@ nav ul {
 nav a {
     text-decoration: none;
     color: black;
-    font-weight: bolder;
+    font-weight: normal;
   }
 
 .join-or-login {
@@ -43,9 +57,17 @@ nav a {
     font-weight: lighter;
 }
 
-.join_in{
-    border: 3px solid black;
+#join-alone{
+    border: 1px solid darkgrey  ;
+    padding: 2px 6px;
 }
+
+/*
+
+Search section
+
+*/
+
 
 .npm-logo {
     width: 90px;
@@ -53,6 +75,7 @@ nav a {
 }
 
 .search-box{
+    height: 35px;
     display: flex;
     align-items: center;
     background-color: rgba(0,0,0,0.05);
@@ -77,26 +100,33 @@ nav a {
     color: white;
     border: 3px solid #fb3e44;
     margin: 0px;
-    padding: 3px;
+    padding: 8px;
 }
+
+/*
+
+Build amazing things section
+
+*/
 
 #build-amazing-things {
     display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content: space-evenly   ;
+    justify-content: space-evenly;
     height: 400px;
     background-color: rgba(232,217,217,.3);
 }
 
 #build-amazing-things #big-title {
     font-size: 4em;
-    font-weight: bolder;
+    font-weight: bold;
 }
 
 #build-amazing-things article {
     width: 40%;
     text-align: center;
+    font-size: 1.1em;
 }
 
 #see-plans {
@@ -104,7 +134,7 @@ nav a {
     color: white;
     margin: 0px 20px;
     padding: 10px 40px;
-    box-shadow: 4px 4px 0 rgba(251,59,73,.2);
+    box-shadow: 6px 6px 0 rgba(251,59,73,.2);
     text-decoration: none;
 }
 
@@ -117,12 +147,20 @@ nav a {
     font-weight: bolder;
 }
 
+/*
+
+bring the best of open source to your company section
+
+*/
+
 #bring-the-best {
-    height: 400px;
+    margin-top: 20px;
+    height: 500px;
     display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: space-evenly;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-evenly;
+	align-items: center;
 }
 
 #bring-the-best img{
@@ -131,23 +169,33 @@ nav a {
 
 #bring-the-best h2{
     background-color: rgba(255,204,53,.4);
-    width: 70%;
+    width: 60%;
     text-align: center;
-    font-weight: bolder;
+    font-weight: bold;
 }
 
 #bring-the-best article {
-    width: 60%;
+    width: 50%;
     text-align: center;
 }
 
+
+/*
+
+feature boxes
+
+*/
+
+
 #features img{
     width: 30px;
+    height: 30px;
 }
 
 #features h3{
-    color: red;
-    font-weight: bolder;
+    color: #ED1C24;
+    font-weight: bold;
+    font-size: 0.8em;
 }
 
 #feature-box {
@@ -155,5 +203,25 @@ nav a {
     flex-direction: row;
     align-content: flex-start;
     justify-content: space-between;
+    font-size: 0.9em;
+}
 
+#feature-box article {
+    font-size: 0.8em;
+    width: 80%;
+}
+
+#div-org {
+    display: flex;
+    justify-content: center;
+}
+
+#create-an-org {
+    font-weight: bold;
+    background-color: black;
+    padding: 10px 60px;
+    color: white;
+    font-size: bold;
+    text-decoration: none;
+    box-shadow: 6px 6px 0 rgba(128,83,35,.2);
 }
