@@ -44,7 +44,7 @@ nav a {
     margin-top: 10px;
     margin-right: 5px;
     padding: 0px;
-    width: 70px;
+    width: 80px;
 }
 
 .search-form {
@@ -63,7 +63,7 @@ nav a {
     border: none;
     margin: 0px;
     font-size: medium;
-    width: 1450px;
+    width: 1430px;
 }
 
 .search-form button {
@@ -102,5 +102,135 @@ nav a {
 
 .join {
     border: 1px solid black;
-    padding: 5px 12px;
+    padding: 5px 18px;
+    font-weight: bold;
+}
+
+#general-information {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 600px;
+    background-color: rgba(232,217,217,.3);
+}
+
+#general-information h1 {
+    font-size: 7em;
+    margin-top: 180px;
+    margin-bottom: 10px;
+    padding: 0px;
+}
+
+#general-information p {
+    width: 700px;
+    text-align: center;
+    font-size: 1.5em;
+    margin: 5px auto 10px auto;
+    height: 150px;
+}
+
+#general-information div {
+    width: 700px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 250px;
+}
+
+#general-information a {
+    text-decoration: none;
+}
+
+#general-information .plans {
+    /*border: 2px soli d#FB3B49;*/
+    box-sizing: border-box;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+    background-color: #FB3B49;
+    padding: 10px 100px;
+    color: white;
+    font-size: 1.25em;
+    font-weight: bold;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+#general-information .joinforfree {
+    box-sizing: border-box;
+    background-color:white;
+    padding: 10px 100px;
+    color: black;
+    font-size: 1.25em;
+    font-weight: bold;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.triangle-hexagon {
+    width: 250px;
+    height: 250px;
+    margin-top: 70px;
+}
+
+#opensource h2 {
+    font-size: 2.5em;
+    font-style: italic;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    padding: 0px 50px;
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+}
+
+#opensource p {
+    width: 800px;
+    font-size: 1.25em;
+    text-align: center;
+    margin: 5px auto 10px auto;
+    height: 150px;
+}
+
+#opensource {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 600px;
+}
+
+#features {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#features h3 {
+    color:  #ED1C24;
+}
+
+#features .feat {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 80px 150px;
+    width: 1700px;
+}
+
+#features img {
+    width: 50px;
+    height: 50px;
+}
+
+#features p {
+    font-size: 1.25em;
+    margin-right: 20px;
+    padding: 0px;
+    width: 300px;
+}
+
+#features > .feat > div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content:flex-start;
 }
