@@ -20,21 +20,23 @@
                         <li><a href="#"> Solutions</a></li> 
                         <li><a href="#"> Resources</a></li> 
                         <li><a href="#"> Docs</a></li> 
-                        <li><a href="#"> Support</a></li> 
+                        <li><a href="#"> Support</a></li>   
                     </ul>
                 </nav>
             </div>
             <div>
                 <img class="npm-logo" src="./images/npm-logo.png" alt="npm-logo">
-                <img class="magnifying-glass" src="./images/magnifying-glass.png" alt="magnifying-glass">
-                <form action="/search" method="POST">
-                    <input type="text" id="search" placeholder="Search packages"/> 
-                    <button type="submit">Search</button>
-                </form>
-                <div>
-                    <a href="#">Join</a> 
-                    <a href="#">Log In</a>
+                
+                <div class="search-box">
+                    <img class="magnifying-glass" src="./images/magnifying-glass.png" alt="magnifying-glass"> 
+                    <form action="/search" method="POST">
+                        <input type="text" id="search" placeholder="Search packages" size="60"/> 
+                        <button type="submit">Search</button>
+                    </form>
                 </div>
+                
+                <a class="join-or-login" href="#">Join</a> 
+                <a class="join-or-login" href="#">Log In</a>
             </div>      
         </header>
         
@@ -64,7 +66,6 @@
         </section>
         
         <section id="features">
-        
             <div>
                 <img class="zero-configuration" src="./images/zero-configuration.svg" alt="zero-configuration">
                 <h3>Zero configuration</h3> 
@@ -91,10 +92,7 @@
             </div>
         
             <a href="#">Create an Org</a>
-
         </section>
     
     </body>
-
-
 </html>
