@@ -24,18 +24,19 @@
               </nav>
             </div>
           
-            <div>
+            <div class="bottom-div">
               <!-- add logo, search bar and buttons (or links and style them as buttons later) -->
               <div>
                 <img class="npmLogo" src="./images/npm-logo.png" alt="npm logo"/>
               </div>
-              <form action="/some-url" method="get">
-                <label for="search"><img class="magnifyingGlass" src="./images/magnifying-glass.png" alt="magnifying glass" /></label>
-                <input type="text" id="search" name="search" placeholder="Search packages">
-                <button type="submit">Search</button>
+              <form class="search-form" action="/some-url" method="get">
+                <img class="magnifyingGlass" src="./images/magnifying-glass.png" alt="magnifying glass" />
+                <input type="text" id="search" name="search" placeholder="Search packages"><button type="submit">Search</button>
               </form>
-              <a href="#"> Join </a>
-              <a href="#"> Log In</a>     
+              <div class="bottom-div-links">
+                <a class="join" href="#"> Join </a>
+                <a href="#"> Log In</a>       
+              </div>
             </div>
         </header>
         <section id="general-information">
