@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body {
+  font-family: 'Poppins';
+}
+
+/* Header Section */
+
+header > div {
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+  }
+  
+  nav {
+    width: 600px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .blackHeart {
+    width: 20px;
+    margin-right: 1rem;
+  }
+  
+  .searchBar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1em;
+    }
+
+  .npmLogo {
+    width: 85px;
+    margin-right: 15px;
+  }
+
+  .form {
+      display: flex;
+      flex-grow: 1;
+      flex-shrink: 0;
+      flex-basis: 260px;
+      margin-right: 20px;
+  }
+
+.searchInput { 
+    height: 30px;
+    width: 100%;
+    padding: 5px 10px 5px 40px;
+    color: rgba(0, 0, 0, 0.05);  
+    border: 0px;
+    background: url(./images/magnifying-glass.png) no-repeat 1%;
+    background-size: 20px;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.searchButton {
+    flex-shrink: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: none;
+    background-color: #FB3E44;
+    color: white;
+}
+
+.searchBarJoinButton {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border:1px solid gray;
+    text-decoration: none;
+    color: gray;
+}
+
+.searchBarLoginButton {
+    padding-left: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+    color: gray;
+}
+
+
+/* Join Section Styles from here */
+
+#joinSection {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 600px;
+    background-color: rgba(232,217,217,.3)
+  }
+
+ .centerHeader {
+    font-size: 80px;
+    font-style: bold;
+  }
+
+  .centerText {
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .centerButtons{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .plansButton {
+    background-color: #FB3B49;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+    padding: 20px 70px;
+    margin-top: 60px;
+    margin-right: 60px;
+    text-decoration: none;
+    font-size: 24px;
+    color: white;
+  }
+  
+  .joinButton{
+    color: black;
+    text-decoration: none;
+    margin-top: 60px;
+    margin-right: 60px;
+    font-size: 24px;
+    background-color: white;
+    padding: 20px 70px;
+    text-decoration: none;
+}
+
+#generalInformationSection {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 600px;
+    margin-top: 60px;
+  }
+
+  .generalInformationHexagon {
+      height: 250px;
+   }
+
+ .generalInformationHeader {
+    font-size: 40px;
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+    font-style: italic;
+  }
+
+  .generalInformationText {
+    text-align: center;
+    font-size: 20px;
+  }
+
+  /* Create Org Section */
+
+  #createOrgSection {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 250px;
+    padding-right: 250px;
+  } 
+  
+  .createOrgInfoElement {
+    margin: 0 auto;
+    padding: 75px 0;
+  }
+
+  #createOrgSection article {
+    margin: 0 auto;
+    padding: 50px 0;
+    width: 300px;
+  }
+
+  #createOrgSection h4 {
+      color: #ED1C24;
+  }
+
+  #createOrgSection img {
+      height: 30px;
+  }
+
+    /* Create Org Button Section */
+
+  #createOrgButtonSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } 
+
+  .createOrgButton {
+    background-color: black;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    padding: 20px 70px;
+    margin-top: 60px;
+    margin-right: 60px;
+    text-decoration: none;
+    font-size: 24px;
+    color: white;
+  }
