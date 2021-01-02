@@ -1,5 +1,5 @@
 /*
-Exercise 'IronSkydive' webdev 2021
+Exercise 'IronSkydive' webdev jan2021
 Cindy Teeven
 Dec 2020 
                    
@@ -18,6 +18,29 @@ header > div {
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid lightgray;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 900;
+    font-size: 5rem;
+    margin: .67em 0;
+}
+
+h2 {
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+    font-style: italic;
+    text-align: center;
+    font-weight: 600;
+    font-size: 2.25rem;
+    margin: .67em 0;
+    display: inline-flex; /* keep the background color wrapped tight */
+    padding: 0px 25px;
+}
+
+h3 {
+    color: #ED1C24;
 }
 
 nav {
@@ -131,27 +154,18 @@ nav a {
     height: 600px;
 }
 
-#amazing-things h1 {
-    text-align: center;
-    font-weight: 900;
-    font-size: 5rem;
-    margin: .67em 0;
-}
-
- #amazing-things article {
+#amazing-things article {
       text-align: center;
       width: 26%;
       font-size: 1.2rem;
 } 
 
-
-.start-btn {
+.start-btn-container {
    margin-top: 4rem;
    width: 26%;
    display: flex;
    flex-direction: row;
-   justify-content: center;
-   
+   justify-content: center;   
 }
 
 .seeplans-btn {
@@ -181,36 +195,25 @@ nav a {
 
 #open-source {
     height: 600px;
+    padding-bottom: 4rem;
     display: flex;
 	flex-direction: column;
 	justify-content: center;
 }
 
-.container-open-source {
+.open-source-container img {
+    width: 20rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.open-source-container {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 0rem;
     margin-top: 0rem;
     max-width: 60rem;
     text-align: center;
-}
-
-.container-open-source img {
-    width: 20rem;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
-}
-
-#open-source h2 {
-    background-color: rgba(255,204,53,.4);
-    transform: skew(9deg,0deg);
-    font-style: italic;
-    text-align: center;
-    font-weight: 600;
-    font-size: 2.25rem;
-    margin: .67em 0;
-    display: inline-flex; /* keep the background color wrapped tight */
-    padding: 0px 25px;
 }
 
 #open-source article {
@@ -220,3 +223,49 @@ nav a {
     margin-right: 6rem;
     margin-bottom: 2rem;
 }
+
+.topics-up img {
+    width: 45px;
+    height: 45px;
+}
+
+.topics-up {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+   	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.topics-container {
+    padding: 1rem;
+    height: 20rem;
+    max-width: 15rem;
+}
+
+.create-org-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 4rem 0;
+}
+
+.create-org-btn {
+    background-color: black;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    color: white;
+    font-weight: 700;
+    font-size: 1em;
+    text-decoration: none;
+    text-align: center;
+    width: 300px;
+    padding: 1rem 2rem;
+    margin: 0.5rem;
+}
+
+
+
+
+
