@@ -1,0 +1,177 @@
+/* GENERAL STYLES */
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+body {
+  font-family: 'Poppins', sans-serif;
+}
+body {
+  margin: 0;
+}
+h1 {
+  margin: 0;
+  text-align: center;
+  font-size: 5em;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+h2 {
+  margin-top: 30px auto;
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  font-style: italic;
+  background-color: rgba(255, 204, 53, 0.4);
+  transform: skew(9deg, 0deg);
+  padding: 0 30px;
+}
+h3 {
+  color: #ed1c24;
+}
+#section {
+  height: 600px;
+  background-color: rgba(232, 217, 217, 0.3);
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#section article {
+  width: 40%;
+}
+
+#section img {
+  height: 250px;
+}
+p {
+  text-align: justify;
+}
+
+/* HEADER STYLES */
+header > div {
+  padding: 0 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+}
+nav {
+  width: 600px;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+}
+.blackHeart {
+  width: 20px;
+  margin-right: 1rem;
+}
+.second-row-header {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.second-row-header img {
+  height: 15px;
+  width: 5%;
+  margin: 0;
+  padding: 0;
+}
+.join-login {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+.btn-login {
+  padding: 5px 20px;
+  margin: 0;
+  border: 1px solid black;
+  text-decoration: none;
+  align-items: center;
+  color: black;
+}
+.search-form {
+  display: flex;
+  width: 70%;
+  height: 75%;
+  margin: 0 auto;
+}
+.search-form img,
+input {
+  background-color: rgba(0, 0, 0, 0.05);
+  margin: 0;
+}
+.search-form input {
+  border: none;
+  padding-left: 20px;
+  width: 95%;
+}
+.search-form img {
+  height: 100%;
+}
+.search-form button {
+  background-color: #fb3e44;
+  color: white;
+  border: none;
+  padding: 0 10px;
+}
+
+/* SECTION 1 */
+.section-1-conatiner {
+  display: flex;
+  width: 40%;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+}
+.section-1-conatiner a {
+  text-decoration: none;
+  width: 40%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.5em;
+  padding: 20px;
+  color: black;
+}
+.see-plans {
+  background-color: #fb3e44;
+  color: white !important;
+  box-shadow: 8px 8px 0 rgba(251, 59, 73, 0.2);
+}
+
+/* SECTION 2 */
+.white-background {
+  background-color: white !important;
+}
+
+/* SECTION 3 */
+.section-3-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.section-3-container div {
+  text-align: center;
+  padding: 30px;
+}
+.section-3-container div img {
+  height: 45px;
+}
+.btn-create-org {
+  /* I have one issue here, this button -tag <a>- is idenfied by the browser like it would be out of the section and I do not know why so I had troubles fixing it in the center and applaying margins -top and bottom- */
+
+  text-decoration: none;
+  background-color: black;
+  color: white;
+  box-shadow: 8px 8px 0 rgba(128, 83, 35, 0.2);
+  font-size: 1.5em;
+  padding: 15px 40px;
+  margin: 0 40%;
+}
