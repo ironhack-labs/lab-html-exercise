@@ -1,8 +1,4 @@
-body {
-    background-color: red;
-  }
-
-  @import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css?family=Poppins');
 
 body {
   font-family: 'Poppins';
@@ -89,6 +85,8 @@ h1 {
 .textbox {
   width=70%;
   text-align: center;
+padding: 10px;
+    
 }
 
 .grey-background {
@@ -107,9 +105,11 @@ font-family: 'Poppins';
   color: #fff;
   padding: 8px 40px;
   position:relative;
-  margin: 40px 30px;
-  box shadow: 8px 8px 0px, rgba(251,59,73,0.2);
-}
+  margin-top: 10%;
+  margin-bottom: 10%;
+  margin-right:2%;
+  box-shadow: 8px 8px 0px rgba(251,59,73,0.2);
+ }
 
 .cta-btn2 {
 font-family: 'Poppins';
@@ -132,19 +132,75 @@ font-family: 'Poppins';
   font-size: 20px;
   font-weight: bold;
   text-decoration: none;
-  width: 300px;
-  height: 60px;
   background: black;
-  padding: 7px;
+  padding-left: 80px;
+  padding-right:80px;
+  padding-top: 10px;
+  padding-bottom:10px;
   color: white;
   position: relative;
-  text-align: center;
-  box-shadow: 8px 8px 0, rgba(128,83,35,.2)}
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+
+}
 
 .Information{
   width: 60px;
 }
 h2 {
   color:black;
-    background: rgba(255,204,53,.4);
+  font-style: italic;
+  text-align:center;
+  margin-left: auto;
+    margin-right: auto;
+  margin-bottom: 5%;
+  margin-top: 5%;
+  background: rgba(255,204,53,.4);
+  width: 25em;
+  transform: skew(9deg,0deg)
+  
 }
+
+h3{
+  color:#ED1C24;
+  
+}
+.container {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5%;
+  margin-top: 5%;
+  width: 50%;
+ }
+
+.hexagon{
+  width: 20%;
+   display: block;
+  margin-top: auto;
+   margin-left: auto;
+   margin-right: auto;
+  padding-top:70px;
+}
+
+.logo {width:20%;}
+
+.information-box {
+  text-align: left
+  margin: 30px 5% 0 5%;
+  padding: 10px;
+  width: 20%;
+}
+
+#Value-Proposition > div {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  
+  #CTA > div {
+    display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  }
