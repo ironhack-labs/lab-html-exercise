@@ -2,6 +2,7 @@
 
 body {
   font-family: 'Poppins';
+  padding: 0 30px;
 }
 
 .header-nav {
@@ -85,7 +86,7 @@ nav a {
 .search-bar-box {
     border-style: hidden;
     background-color: rgb(241, 236, 236);
-    width: 1050px;
+    width: 1000px;
 }
 
 .search-bar-box:focus {
@@ -181,34 +182,43 @@ nav a {
     width: 250px;
 }
 
-#get-started {
+#articles {
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
     align-items: stretch;
-    height: 600px; 
 }
 
-#get-started > div {
-    width: 250px;
-}
-
-#get-started > div > img {
-    width: 30px;
-}
-
-/* #create-org {
-    text-decoration: none;
-    padding: 15px 60px;
-    font-weight: 900;
-    margin-right: 30px;
-    width: 200px;
-    display: flex;
-    justify-content: center;
-} */
-
-#get-started > div > h3 {
+#get-started > div > article > h3 {
     color: #ED1C24;
     font-weight: 900;
 }
+
+
+#get-started > div > article {
+    width: 250px;
+}
+
+#get-started > div > article > img {
+    width: 30px;
+}
+
+#create-org > a {
+    text-decoration: none;
+    padding: 15px 60px;
+    font-weight: 900;
+    background-color: black;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    color: white;
+    display: inline-block;
+    width: 300px;
+}
+
+#create-org {
+    margin-top: 50px;
+    margin-bottom: 50px;;
+    text-align: center;
+}
+
+
 
