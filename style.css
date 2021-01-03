@@ -4,6 +4,20 @@ body {
   font-family: 'Poppins';
 }
 
+h2 {
+  font-size: 4em;
+  margin: 20px; 
+}
+
+h3 {
+  font-size: 2em;
+  padding: 0 40px;
+  margin: 10px;
+  background-color:rgba(255,204,53,.4);
+  transform: skew(9deg,0deg);
+  font-style: italic;
+}
+
 header > div {
   padding: 0 25px;
   margin: 0;
@@ -43,6 +57,11 @@ nav a {
 .npmLogo {
   width: 80px;
   margin-right: 1rem;
+}
+
+.triangleHexagon {
+  width: 250px;
+  margin: 70px;
 }
 
 .form-button {
@@ -89,18 +108,10 @@ nav a {
   justify-content: center;
 }
 
-#intro h2 {
-  font-size: 3em;
-  margin: 20px; 
-}
-
-#intro article, div {
-  text-align: center;
-  margin: 20px 0;
-}
-
 #intro article {
   width: 40%;
+  text-align: center;
+  margin: 20px 0;
 }
 
 #intro div {
@@ -120,4 +131,17 @@ nav a {
   color: white;
   background-color: #FB3B49;
   box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+}
+
+#npm-opensource {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#npm-opensource article {
+  width: 60%;
+  text-align: center;
+  margin: 20px 0;
 }
