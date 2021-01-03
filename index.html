@@ -6,35 +6,37 @@
     </head>
     <body>
         <header>
-            <div id="first-half">
+            <div id="upper-header-half">
                 <div id="heart-text">
-                    <img src="./images/black-heart.png" alt="">
-                    <div id="small-header">Neverending Pun Machine</div> <!-- Nifty Penguin Magic ?? -->
+                    <img class="blackHeart" src="./images/black-heart.png" alt="black heart">
+                    <span> Neverending Pun Machine </span> <!-- Nifty Penguin Magic ?? -->
                 </div>
-                <nav id="nav-contents">                
-                    <a href="https://www.npmjs.com/">npm Enterprise</a>
-                    <a href="https://www.npmjs.com/products/pro">Products</a>
-                    <a href="https://www.npmjs.com/products">Solutions</a>
-                    <a href="https://www.npmjs.com/products/teams">Resources</a>
-                    <a href="https://docs.npmjs.com/">Docs</a>
-                    <a href="https://npm.community/">Support</a>
+                <nav id="navContents">
+                    <ul>
+                        <li><a href="#">npm Enterprise</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">Solutions</a></li>
+                        <li><a href="#">Resources</a></li>
+                        <li><a href="#">Docs</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>                    
                 </nav>
-                <div id="second-half">
-                    <img src="./images/npm-logo.png" alt="npm-logo">
-                    <img src="./images/magnifying-glass.png" alt="lupa">
-                    <form action="/some-url">
-                        <input type="text" name="search" id="search" placeholder="Search packages">
-                        <button>Search</button>
-                    </form>
-                    <div id="login-links">
-                        <a href="/some-url">Join</a>
-                        <a href="/some-url">Log In</a>
-                    </div>
-                </div>
             </div>
+            <div id="bottom-header-half">
+                <img src="./images/npm-logo.png" alt="npm-logo">
+                <img src="./images/magnifying-glass.png" alt="lupa">
+                <form action="/some-url">
+                    <input type="text" name="search" id="search" placeholder="Search packages">
+                    <button>Search</button>
+                </form>
+                <div id="login-links">
+                    <a href="/some-url">Join</a>
+                    <a href="/some-url">Log In</a>
+                </div>
+            </div>            
         </header>
 
-        <section1>
+        <section1 id="section1">
                 <h1 id="main-heading">Build amazing things</h1>
                 <article id="main-article">Essential JavaScript development tools that help you go to market faster and build powerful applications using
                     modern open source code.</article>
@@ -45,7 +47,7 @@
                     
         </section1>
 
-        <section2>
+        <section2 id="section2">
             <img src="./images/triangle-hexagon.svg" alt="triangle-hexagon">
             <h3 id="second-heading">Bring the best of open source to your company</h3>
             <article id="second-article">npm is the tool used by
@@ -53,7 +55,7 @@
                 Create an Org and get more out of the tools your team already knows and loves.</article>
         </section2>
         
-        <section3>
+        <section3 id=section3>
             <div class="services">
                 <img src="./images/zero-configuration.svg" alt="puntero-ordenador-sobre-botón">
                 <h4 class="services-headings">Zero configuration</h4>
