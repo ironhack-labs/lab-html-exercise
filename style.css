@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body {
+  font-family: 'Poppins';
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*---------------------------------------------------------------------*/
+/*-                              Images                               -*/
+/*---------------------------------------------------------------------*/
+
+.black-heart {
+    width: 20px;
+    margin-right: 1rem;
+}
+
+.npm-logo {
+    width: 75px;
+    padding-right: 1em;
+}
+
+/*---------------------------------------------------------------------*/
+/*-        Header, nav, searching bar and join/log in buttons         -*/
+/*---------------------------------------------------------------------*/
+
+.header {
+    box-shadow: 0 0 10px 0 #c6c6c6;
+    position: relative;
+    z-index: 1;
+}
+
+.header-top,
+.header-bottom {
+    padding: 0 1.5em;
+    display: flex;
+    align-items: center;
+}
+
+.header-top {
+    justify-content: space-between;
+    border-bottom: 1px solid lightgray;
+    padding: 18px 1.5em;
+}
+
+.header-bottom {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+  
+nav {
+    width: 600px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+.search-form {
+    display: flex;
+    align-items: flex-start;
+    flex-grow: 1;
+}
+
+.search-form .magnifying-glass {
+    background-color: #eee;
+    padding: 13px;
+    width: 25px;
+    top: 23%;
+    left: 15px;
+    align-self: center;
+}
+
+.search-form input {
+    align-self: center;
+    width: 100%;
+    font-size: 18px;
+    background-color: #eee;
+    border: none;
+    outline: none;
+    padding: 15px 0;
+}
+
+.search-form .search-button {
+    background-color: #ea5327;
+    color: white;
+    padding: 0.7em 1.7em;
+    border: none;
+    font-size: 18px;
+    height: 51px;
+}
+
+.access-buttons {
+    display: flex;
+    justify-content: right;
+    margin-left: 2em;
+}
+
+.access-buttons .join-button,
+.access-buttons .login-button {
+    padding: 0.5em 1.7em;
+    color: black;
+    text-decoration: none;
+}
+
+.access-buttons .join-button {
+    border: 1px solid black;
+    border-radius: 2px;
+    font-weight: bold;
+}
+
+.access-buttons .login-button {
+    padding-right: 0;
+}
+
+/*---------------------------------------------------------------------*/
+/*-                           Section one                             -*/
+/*---------------------------------------------------------------------*/
+
+.section-one {
+    display: flex;
+    background-color: #f8f4f4;
+    padding: 110px 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.section-one h1 {
+    font-size: 5em;
+}
+
+.section-one p {
+    text-align: center;
+    width: 500px;
+    font-size: 1.1em;
+    margin: 2em 0 3em;
+}
+
+.section-one div {
+    display: flex;
+    text-align: center;
+    width: 500px;
+    justify-content: space-between;
+}
+
+.section-one div .plans-button,
+.section-one div .free-button {
+    width: 45%;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.15em;
+    padding: 0.8em 0;
+}
+
+.section-one div .plans-button {
+    background-color: #ea5327;
+    color: white;
+    box-shadow: 8px 8px #fad0d2;
+}
+
+.section-one div .free-button {
+    background-color: white;
+    color: black;
+}
