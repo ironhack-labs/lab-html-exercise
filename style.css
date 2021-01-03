@@ -56,23 +56,69 @@ nav a {
 
 .bottom-header {
     display: flex;
-    padding-top: 10;
-    padding-bottom: 10;
+    align-content: space-between;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.bottom-header img {
+  width: 50px;
 }
 
  .search-form {
    display: flex;
    border: 1px #D3D3D3;
-   background-color: rgba(211,211,211,.2);
+   background-color: 
+   rgba(211,211,211,.2);
+   color: #D3D3D3;
    justify-content: space-between;
    width: 80%;
   margin: 10px auto 10px auto;
+  padding-top: 5px;
+  padding-bottom: 5px;
   font-size: 1.5em;
   text-align: center;
       
   }
 
- .description {
+.search {
+  border: none;
+  color: #D3D3D3;
+  background-color: rgba(211,211,211, .2);
+}
+
+.search-form button {
+  background-color: #FB3B49;
+  color: white;
+  font-size: 0.9rem;
+  border-color: #FB3B49;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-bottom: none;
+  border-right: none;
+  
+}
+
+.join-btn {
+  border: 1px solid grey;
+  color: black;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  padding: 5px 15px;
+}
+
+.login-btn {
+  color: black;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  padding: 5px 15px;
+}
+
+.description {
     display: flex; 
     flex-direction: column;
     justify-content: center;
@@ -81,7 +127,9 @@ nav a {
     background-color: rgba(232, 217, 217, .3);
    margin-bottom: 10px;
    padding: 20px 50px;
+  
   }
+
 
 
 .link-btn {
@@ -121,6 +169,12 @@ nav a {
    margin: 10px;
   }
 
+.open-source img {
+    width: 30%;
+    margin: 50px auto;
+
+}
+
 .open-source h2 {
   display: block;
   margin: 0.83em 0px;
@@ -151,6 +205,10 @@ nav a {
   margin-left: 20px;
   margin-right: 20px;
   margin-bottom: 40px;
+  }
+
+  .action img {
+    width: 30px;
   }
 
   .button-create {
