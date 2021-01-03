@@ -40,15 +40,24 @@ nav a {
 }
 
 .magnifying-glass {
-    width: 15px;
+    width: 18px;
+    height: 18px;
+    padding-right: 5px;
+    padding-left: 5px;
 }
 
 .search-box {
-    border-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     line-height: 40px;
-    padding: 5px;
     background: #f2f2f2;
     display: flex;
+    width: 800px;
+}
+
+.search-box > input {
+    border-style: none;
 }
 
 .search-box button {
@@ -65,7 +74,7 @@ nav a {
 .header-link {
     text-decoration: none;
     color: black;
-    padding: 13px 28px;
+    padding: 10px 28px;
     border: 1px solid #cccccc;
 }
 
@@ -140,12 +149,15 @@ nav a {
 }
 
 #create-an-org{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 30px;
 }
 
 .create-an-org-div{
     display: flex;
-    flex-direction: row;
+    align-items: center;
     margin: 0px 60px 60px 60px;
 }
 
@@ -154,7 +166,7 @@ nav a {
 }
 
 .org-button{
-    display: flex;
+    display:flex;
     justify-content: center;
     box-shadow: 8px 8px 0 rgba(128,83,35,.2);
     color: white;
@@ -177,6 +189,3 @@ nav a {
     color: #ED1C24;
     padding: 20px 0px 20px 0px;
 }
-
-section2
-section3
