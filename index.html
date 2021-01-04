@@ -3,13 +3,14 @@
     <head>
         <title>NPM Clone</title>
         <meta/>
+        <link rel="stylesheet" href="./style.css" />
     </head>
     <body>
         <header>
             <div id="upper-header-half">
                 <div id="heart-text">
                     <img class="blackHeart" src="./images/black-heart.png" alt="black heart">
-                    <span> Neverending Pun Machine </span> <!-- Nifty Penguin Magic ?? -->
+                    <span> Nifty Penguin Magic </span> <!--  Neverending Pun Machine?? -->
                 </div>
                 <nav id="navContents">
                     <ul>
@@ -23,15 +24,17 @@
                 </nav>
             </div>
             <div id="bottom-header-half">
-                <img src="./images/npm-logo.png" alt="npm-logo">
-                <img src="./images/magnifying-glass.png" alt="lupa">
-                <form action="/some-url">
-                    <input type="text" name="search" id="search" placeholder="Search packages">
-                    <button>Search</button>
+                <img class="logo" src="./images/npm-logo.png" alt="npm-logo">
+                
+                <form class="searchSec" action="/some-url">
+                    <img class="lupa" src="./images/magnifying-glass.png" alt="lupa">
+                    <input class="box" type="text" name="search" id="search" placeholder="Search packages">                    
+                    <button id="SearchBottom">Search</button>
                 </form>
-                <div id="login-links">
-                    <a href="/some-url">Join</a>
-                    <a href="/some-url">Log In</a>
+                <div class="loginLinks">
+                    <a id="joinButton" href="/some-url">Join</a>
+
+                    <a id="loginButton" href="/some-url">Log In</a>
                 </div>
             </div>            
         </header>
