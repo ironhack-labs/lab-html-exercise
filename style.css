@@ -43,7 +43,7 @@ nav a {
 }
 #form {
     display: flex;
-    width: 80%;
+    width: 100%;
     font-size: 1.1em;
     align-items: center;
     justify-content: space-evenly;
@@ -72,10 +72,11 @@ nav a {
     font-size: 14px;
     text-decoration: none;
     color: #000;
+    text-align: center;
 }
 .choice-btn {
     display: flex;
-    width: 100px;
+    min-width: 100px;
     height: 20px;
     justify-content: space-between;
     padding-right: 30px;
@@ -93,13 +94,15 @@ nav a {
     font-size: 4em;
 }
 #upper a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
     border: 1 solid #000;
     color: #000;
     margin: 10px auto;
     width: 150px;
     height: 50px;
-    text-align: center;
     padding: 20x auto;
     cursor: pointer;
 }
@@ -204,5 +207,8 @@ nav a {
     }
     #central article {
         width: 500px;
+    }
+    .choice-btn {
+        min-width: 80px;
     }
 }
