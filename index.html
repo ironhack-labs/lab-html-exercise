@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;900&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NPM practice</title>
@@ -9,7 +11,7 @@
 <header>
     <nav class="navbar-container">
         <div>
-            <img class="blackHeart" src="images/black-heart.png" alt="black heart" />
+            <img width="20" class="blackHeart" src="images/black-heart.png" alt="black heart" />
             <span> Nifty Penguin Magic </span>
           </div>
           <ul>
@@ -21,42 +23,43 @@
             <li><a href="#"> Support </a></li>
           </ul>
     </nav>
+    <hr>
     <div class="searchbar-container">
         <div>
-            <img id="npm-logo" src="images/npm-logo.png" alt="logo-npm">
+            <img width="90" id="npm-logo" src="images/npm-logo.png" alt="logo-npm">
         </div>
         <form class="searchbar" action="/Register" method="POST">
+            <img width="25" id="lupa" src="images/magnifying-glass.png" alt=""> 
             <span>
-                <img id="lupa" src="images/magnifying-glass.png" alt=""> 
-                <input type="search" placeholder="Search packages">
-                <input type="submit" value="Search">
+                <input id="bar-barra" type="search" placeholder="Search packages">
+                <input id="bar-boton" type="submit" value="Search">
             </span>
         </form>
         <div>
             <ul>
-                <li>Join</li>
-                <li>Log in</li>
+                <li id="bar-join">Join</li>
+                <li id="bar-login">Log in</li>
             </ul>
         </div>
     </div>
 </header>
 
 <section id="inicio">
-    <div>
+    <div id="inicio-container"> 
         <h1>Build amazing things</h1>
-        <article>Essential JavaScript development tools that help you go to market faster and build powerful applications using
-            modern open source code.</article>
+        <article ><p>Essential JavaScript development tools that help you go to market faster and build powerful applications using
+            modern open source code.</p></article>
         <div id="botones-inicio">
             <ul>
-                <li><a href="">See plans</a></li>
-                <li><a href="">Join for free</a></li>
-            </ul>
+                <li><a id="seeplns" href="">See plans</a></li>
+                <li><a id="join4f" href="">Join for free</a></li>
         </div>
     </div>
 </section>
 
 <section id="info">
-    <h3>Bring the best of open source to your company</h3>
+    <img width="300" src="images/triangle-hexagon.svg" alt="">
+    <div id="sub-amarillo"><h3>Bring the best of open source to your company</h3></div>
     <article>
         npm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it.
         Create an Org and get more out of the tools your team already knows and loves.
