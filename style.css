@@ -40,11 +40,15 @@ header > div {
     margin-right: 1rem;
   }
 
+.npmlogo {
+  width: 80px;
+}
+
 .search-icon {
     position: relative;
     top: 6px;
     left: 8px;
-    width: 14px;
+    width: 20px;
   }
 
 .input-bar {
@@ -148,16 +152,35 @@ header > div {
 #Perks {
   height: 600px;
   background-color: rgba(232,217,217,.3);
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  
 }
 
 #Perks .block {
-  display: inline-block;
   position: relative;
-  top: 20%;
+  margin: 20px;
+  left: 25%;
+}
+
+#Perks .block img {
+  position: absolute;
+  width: 50px;
+  right: 78%;
+  top: 2%;
+  
 }
 
 #Perks .block h4 {
   color: #ED1C24;
+  position: relative;
+  top: 40%;
+  text-align: left;
+}
+
+#Perks .block p {
+  text-align: left;
 }
 
 #Perks .link-btn {
@@ -167,5 +190,6 @@ header > div {
   text-decoration: none;
   padding: 15px 32px;
   box-shadow: 8px 8px 0 rgba(251,59,73,.2);
-  top: 50%;
+  top: 30%;
+  right: 12%;
 }
