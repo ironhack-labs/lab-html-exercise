@@ -1,175 +1,91 @@
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
-    </style>
-    
-    <nav class=nav-bar>
-      <ul class=nav-bar-ul>
-        <li><a href="#structure">Day Structure</a></li>
-        <li><a href="#team">Team</a></li>
-        <li><a href="#Schedule">Schedule</a></li>
-      </ul>
-    </nav>
-          
-    <header class=header>
-      <h1><img src="https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/ironhack-skydive-logo.png"alt="IronSkydive Logo"/>IronSkydive</h1>
-      <h2>Let the trip begin</h2>
-          <aside class="quote"><i>"The best experience of our lives"</i></aside>
-          <aside class="quote"><p>Ariel Quiñones & Gonzalo Manrique, Ironhack founders</p></aside> 
-    </header>
-          
-    <section id="general-information" class=dark-background> 
-      <article class=container>
-        <h3>Hello!</h3>
-        <p class=text>Welcome to IronSkydive, the best adventure you will ever have.</p>
-          <a class=link-btn href="#">Learn More</a>
-      </article>
-      <article class=container> 
-        <h3>About us</h3>
-        <p class=text>We like a lot programming websites,but we also love to practice sport</p>
-         <a class=link-btn href="#">Watch Video</a>
-      </article>
-      <article class=container>
-        <h3>Wanna join?</h3>
-        <p class=text>Join our fitness program to be in good shape while learning</p>
-          <a class=link-btn href="#">Register</a>
-      </article>
-    </section>
-    
-    <section id="structure" class=container> 
-      <h3>How do we sructure the day</h3>
+<!DOCTYPE html>
+<link rel="stylesheet" href="./style.css"/>
+<html>
+ <head>
+   <title>NPM clone</title>
+   
+ </head>
+   
+ <body>
+  <header>
+    <div>
       <div>
-        <article class=service-box>
-          <img src="https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/ironskydive-training.png"alt="Learn"/>
-          <h4>1. Training</h4>
-          <p>We teach all the necessary things to jump from the plane without any kind of problem</p>
-        </article>
-        <article class=service-box>
-          <img src="https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/ironskydive-get-ready.png"alt="Prepared"/>
-          <h4>2. Get ready</h4>
-          <p>You are already prepared, you just need the suit and a parachute.All sizes available.
-        </article>
-        <article class=service-box>
-          <img src="https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/ironskydive-fly.png"alt="Airplane"/>
-          <h4>3. Fly</h4>
-          <p>You are ready, and the plane is waiting for us in the hangar.Let´s fly!</p>
-        </article>
-        <article class=service-box>
-          <img src="https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/ironskydive-jump.png"alt="Parachute"/>
-          <h4>4. Jump!</h4>
-          <p>You have done the most complicated. Just one step left...jump!</p>
-        </article>
+        <img src="images/black-heart.png" class="blackHeart alt="black-heart"/>
+         <span>Nifty Penguin Magic</span>
+      </div>
+      <nav>
+        <ul>
+         <li><a href="#">npm Enterprise </a></li>
+         <li><a href="#">Products </a></li>
+         <li><a href="#">Solutions </a></li>
+         <li><a href="#">Resources </a></li>
+         <li><a href="#">Docs </a></li>
+         <li><a href="#">Support</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div>
+      <img src="images/npm-logo.png" class="logo" alt="logo"/>
+
+       
+         <form action="#" method="get" class="search">
+      <label><img src="images/magnifying-glass.png" class="glass"/></label>
+      <input type="text" placeholder="Search packages">
+      <button type="submit">Search</button>
+        </form>
+
+       <div class="buttons">
+      <button type="submit">Join</button>
+      <button type="submit">Log in</button>
+       </div>
+
+    </div>
+  </header>
+
+  <section id="intro">
+    <h1>Build amazing things</h1>
+     <article>Essential JavaScript Developement tools that help you<br> go to market faster and build powerful applications<br>
+       using modern open source code.</article>
+       <div class="btn-toolbar">
+     <button type="submit" class="see-plans">See plans</button>
+     <button type="submit" class="join">Join for free</button>
        </div>
     </section>
     
-    <section id="team" class="dark-background">
-      <h3>Team</h3>
-      <p class=section-text>Our team collectively has 75 years of experience. Odds are,when you jump out of the plane with these professionals, you won't go splat.</p>
-      <div>
-          <article>
-          <h4 class=member-name>Harold Rothstein,</b></h4>
-          <hr>
-          <img src= "https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_c18b1c463b80090894237a262dfdfbad.jpg"alt=Team member 1"/>
-          </article>
-      
-      <article>
-        <h4 class=member-name>Susan Philips,</h4>
-        <hr>
-      <img src= "https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_a18d6123a7c8e75f7e70a4e59b941093.jpg"alt="Team member 2"/>
-      </article>
-      
-        <article>
-          <h4 class=member-name>Taylor Roberts,</h4>
-          <hr>
-          <img src="https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_7104a331530d1b0611da55093b7dc421.jpg"alt="Team member 3"/>
-      </article>
-      </div>
-    </section>
+  <section  id="Open-Source">
+    <img src="images/triangle-hexagon.svg" class="shape" alt="hexagon"/>
+    <h2>Bring the best open source to your company</h2>
+     <article>npm is the tool used by over 11.000.000 JavaScript developers around the world. Your developers<br> already use it.
+       Your company depends on it.Create an Org and get more out of the tools<br> your team already knows and loves.</article>
+  </section>
+
+  <section id="options">
+    <div>
+     <img src="images/zero-configuration.svg"/>
+     <h3>Zero configuration</h3>
+      <p>Create an org,add your team and start collaborating.Nothing to configure,set up, or manage.</p>
+    </div>
     
-    <section id="Schedule" class=container> 
-      <h3>Schedule</h3>
-      <table class="schedule-table" cellpadding="0" cellspacing="0">
-        <thead>
-          <th>Time</th>
-          <th>Monday</th>
-          <th>Tuesday</th>
-          <th>Wednesday</th>
-          <th>Thursday</th>
-          <th>Friday</th>
-          <th>Saturday</th>
-        </thead>
-        
-        <tbody>
-          <tr>
-            <td>09:00 - 11:00</td>
-            <td></td>
-            <td></td>
-            <td>x</td>
-            <td></td>
-            <td>x</td>
-            <td>x</td>
-          </tr>
-          
-           <tr>
-           <td>12:00 - 14:00</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>x</td>
-            <td>x</td>
-           </tr>
-            
-            <tr>
-            <td>15:00 - 17:00</td>
-            <td></td>
-            <td></td>
-            <td>x</td>
-            <td>x</td>
-            <td>x</td>
-            <td>x</td>
-          </tr>
-        </tbody>   
-      </table>
-                                                                   
-      <h3> Schedule a time slot </h3>
-        <form method="post" class="slot-form-container" action:"/register">
-         <label for="email">Email:</label> 
-         <input type="email" id="email" placeholder="Enter your email">
-         <label for="participants">Participants:</label> 
-         <input type="number" id="number" placeholder:"Number of participants">
-         <label for="Date">Date:</date>
-         <input type:"date" id="date">
-         <label for="time">Time:</label>
-         <input type="select" id="select date">
-           <select name="timeslot">
-           <option value="early">09:00 - 11:00</option>
-           <option value="mid">12:00 - 14:00</option>
-           <option value="late">15:00 - 17:00</option>
-         <label class=slot-form-container-button for"button">Button:</label>
-         <input type="submit" id="submit" value="Reserve your slot!">
-     </form>                                            
-    </section>
-    
-    <footer class="dark-background footer">
-      <section>                     
-        <h5> Contact Information </h5>
-        <address class="address">IronSkydive<br>33 Rue la Fayette,<br>75009 Paris,<br>France<br> +33 (0) 619 193 088</adress>
-      
-                      
-        <h5>Follow us</h5>
-          <ul>
-            <li><a href="/" target="_blank">Twitter</a></li>
-            <li><a href="/" target="_blank">Facebook</a></li>
-            <li><a href="/" target="_blank">Instagram</a></li>
-          </ul>                                     
-      </section>
-     <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.142047744348!2d2.3354330160472316!3d48.87456857928921!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e38f817b573%3A0x48d69c30470e7aeb!2sIronhack!5e0!3m2!1sen!2ses!4v1495208746099"
-      class="map-frame"
-      frameborder="0"
-      style="border:0"
-      allowfullscreen></iframe>        
-      </footer>
-     </body>
-    </html>
+    <div>
+     <img src="images/team-management.svg"/>
+     <h3>Team management</h3>
+      <p>Control who has access to what modules within your team namespaceusing straightforward team management capabilities.</p>
+    </div>
+ 
+    <div>
+     <img src="images/familiar-features.svg"/>
+     <h3>Familiar Features</h3>
+      <p>npm Orgs has 100% parity with all the public npm registry features your developers already use.</p>
+    </div>
+
+    <div>
+     <img src="images/npm-audit.svg"/>
+     <h3>npm audit</h3>
+      <p>Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer.</p>
+    </div>
+
+    <button type="Submit">Create an Org</button>
+  </section>
+ </body>
+</html>
