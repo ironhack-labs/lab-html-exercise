@@ -79,10 +79,6 @@ form {
   color: white;
 }
 
-.black-link {
-  color: black;
-}
-
 .container {
   display: flex;
   flex-direction: column;
@@ -99,7 +95,7 @@ form {
 #introduction h1 {
   font-size: 5em;
   font-weight: 900;
-  border: 1px solid blue;
+  margin: 50px auto;
 }
 
 #introduction article {
@@ -107,32 +103,55 @@ form {
   margin-top: -20px;
   margin-bottom: 30px;
   text-align: center;
-  border: 1px solid green;
 }
 
-#introduction a {
-  text-decoration: none;
-  width: 120px;
+#intro-links {
+  width: 30%;
   height: 50px;
-  padding: 5px;
-  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#intro-links a {
+  text-decoration: none;
+  width: 45%;
+  height: 50px;
   font-weight: bold;
-  border: 1px solid purple;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #plans {
   box-shadow: 8px 8px 0 rgba(251,59,73,.2);
 }
 
+#join-link {
+  color: black;
+  background: white;
+}
+
+#concept {
+  padding: 40px 0;
+}
+
 #concept h3 {
   background-color: rgba(255,204,53,.4);
   transform: skew(9deg,0deg);
   font-style: italic;
-  padding: 0 20px;
+  padding: 0 40px;
+  font-size: 2.8em;
 }
 
 #concept img {
   width: 20%;
+  margin: 50px 0;
+}
+
+#concept article {
+  width: 50%;
+  font-size: 1.2em;
+  text-align: center;
 }
 
 #features {
@@ -154,19 +173,21 @@ form {
 }
 
 .feature-box {
-  border: 1px solid fuchsia;
-  margin: 20px;
-  width: 80%;
+  padding: 0 25px;
+  margin: 0 15px;
+  width: 50%;
 }
 
 #features button {
   -moz-appearance: none;
   -webkit-appearance: none;
+  border: none;
   box-shadow: 8px 8px 0 rgba(128,83,35,.2);
   color: white;
   background-color: black;
   width: 450px;
-  padding: 10px 50px;
-  font-size: 1em;
-  margin: 20px 0;
+  padding: 20px 50px;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 30px 0;
 }
