@@ -12,7 +12,7 @@ body {
 }
  
 header > div {
-   padding: 0 25px;
+   padding: 20px 25px;
    display: flex;
    justify-content: space-between;
    align-items: center;
@@ -46,7 +46,7 @@ header > div {
    justify-content: space-between;
    align-items: center;
    border-bottom: 1px solid lightgray;
-
+   position: static;
  }
 
  .logo {
@@ -55,7 +55,53 @@ header > div {
 
  }
 
+ .search-bar{
+   box-sizing: border-box;
+   
+ }
 
+
+ form textarea {
+    border-color:rgba(0,0,0,.05); 
+    background-color:rgba(0,0,0,.05);
+    color:rgba(0,0,0,.3); 
+    padding: 15px 0px 0px 70px;
+    font-size: 15px;
+ }
+
+
+ form button {
+    background-color: #fb3e44;
+    color:white;
+    border: 1px solid #fb3e44;
+    padding: 15px 20px;
+    width: 100px;
+   }
+
+ .first-button {
+   background-color: white;
+   border: 1px solid black;
+   color: black;
+   font-weight: bold;
+   padding: 10px 25px;
+   text-align: center;
+   display: inline-block;
+   text-decoration: none;
+   font-size: 15px;
+ 
+ }
+
+ .second-button {
+   background-color: white;
+   border: 1px solid white;
+   color: black;
+   padding: 10px 20px;
+   text-align: center;
+   display: inline-block;
+   text-decoration: none;
+   font-size: 15px;
+
+ }
  .search {
    display:flex;
    float:center;
@@ -66,13 +112,13 @@ header > div {
    font-size: 17px;
  }
 
- .glass {
-   border:1px solid lightgray;
-   margin-top: 0px;
-   margin-bottom: -7px;
-   padding: 10px;
-   width:15px ;
-   background-color: lightgray(158, 154, 154, 0.05);
+  .glass {
+   border:rgba(0,0,0,.05)); ;
+   position: relative;
+   left:50px;
+   top: 5px;
+   height:20px;
+   background-color:rgba(0,0,0,.01) ;
  }
 
  
@@ -118,6 +164,8 @@ header > div {
  .see-plans {
     background-color: #FB3B49;
     border: 1px solid red;
+    color: white;
+    font-weight: bold;
     box-shadow: 8px 8px 0 rgba(251,59,73,.2);
     padding: 15px 32px;
     text-align: center;
@@ -130,6 +178,8 @@ header > div {
  .join {
    background-color:whitesmoke;
    border: 1px solid white;
+   color: black;
+   font-weight: bold;
    box-shadow: 8px 8px 0 #F8F8FF;
    padding: 15px 32px;
    text-align: center;
