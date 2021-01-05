@@ -20,13 +20,15 @@
         </nav>
     </div>
 
-    <div>
+    <div class="search-bar">
         <img class="npm-logo" src="images/npm-logo.png" alt="npm logo">
-        <img class="search-icon" src="images/magnifying-glass.png" alt="Magnifying Glass">
-        <form class="search-form" action="/submit" method="get">
-            <input type="text" name="search" placeholder="Search packages">
-            <button type="submit">Search</button>
-        </form>
+        <div class="search-bar-container">
+            <form class="search-form" action="/submit" method="get">
+                <label for="search"><img class="search-icon" src="images/magnifying-glass.png" alt="Magnifying Glass"></label>
+                <input type="text" name="search" id="search" placeholder="Search packages">
+                <button type="submit">Search</button>
+            </form>
+        </div>
         <a href="#" class="join-btn">Join</a>
         <a href="#" class="login-btn">Log In</a>
     </div>
