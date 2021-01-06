@@ -4,13 +4,9 @@
   font-family: 'Poppins';
 }
 
-#header{
-    display: flex;
-    flex-direction: row;
-}
-.header > div {
+#header > div {
     padding: 0 25px;
-    display: flex;
+    display: flexbox; 
     justify-content: space-evenly;
     align-items: center;
     border-bottom: 1px solid lightgray;
@@ -125,6 +121,7 @@
     box-shadow: 8px 8px 0 rgba(251,59,73,.2);
     color: white;
     text-decoration: none;
+    text-align: center;
 }
 
 .plans{
@@ -132,6 +129,16 @@
     flex-direction: row;
 }
 
+#section-two{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 600px;
+    margin: 30 20;
+    padding: 75px 0;
+
+}
 .hexagon{
     width: 350px;
 }
@@ -146,10 +153,22 @@
     flex-direction: row;
     align-items:stretch;
     justify-content: center;
+    flex-wrap: wrap;
+}
+
+.img-sect-three{
+    width: 50px;
 }
 
 .h3{
     color: #ED1C24;
+    font-size: 0.9em;
+}
+
+.article-three{
+    text-align:center;
+    width: 250px;
+    text-align: left;
 }
 
 .org-box{
