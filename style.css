@@ -12,7 +12,7 @@
     border-bottom: 1px solid lightgray;
 }
 
-.first-line {    
+.line {    
     display: flex;
     justify-content: space-evenly;
    
@@ -25,17 +25,16 @@
 .nav-ul {
     list-style: none;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-}
-  
-.nav-a {
-    text-decoration: none;
-    color:black;
-    display: flex;
     justify-content: space-evenly;
+    align-items: center;
 }
+
+nav a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: row-reverse;
+  }
   
 .blackHeart {
     width: 20px;
@@ -81,9 +80,9 @@
     text-align:center;
     color: black;
     width:100px;
-    border:black;
     background:white;
     text-decoration:none;
+    border-color: black;
 }
   
 .login-btn{
@@ -154,6 +153,8 @@
     align-items:stretch;
     justify-content: center;
     flex-wrap: wrap;
+    margin: 30px 20px;
+    padding: 75px 0;
 }
 
 .img-sect-three{
