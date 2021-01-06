@@ -1,9 +1,13 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"');
+
+
+
 
 body {
   font-family: "Poppins";
-  
-  }
+  margin: 20px;
+  font-size: 22px;
+}
 
 header > div  {
     padding: 0 25px;
@@ -11,196 +15,256 @@ header > div  {
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid lightgray;
-  }
+    margin: auto 20px;
+    
+}
   
-  nav {
+nav {
     width: 600px;
-  }
+}
   
-  nav ul {
+nav ul {
     list-style: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
+    font-size: 17px;
+}
   
-  nav a {
+nav a {
     text-decoration: none;
     color: black;
-  }
+}
+
 
   
-  
-  .blackHeart {
+.blackHeart {
     width: 20px;
-    margin-right: 1rem;
+    margin-right: 1em;
 }
 
 .lowerheader{
-    margin: auto auto;
     display: flex;
-    justify-content:space-between;
-    flex-flow: row nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 10px 11px -11px #D1D0CA;
+  
    
+}
+
+.npm-logo{
+ 
+    width: 90px;
+    margin: 20px;
+    padding-right: 20px;
+        
+}
+
+
+.searchform{
+    
+    height: 50px;     
+    background-color: rgba(0,0,0,.05);
+    border-style: none;  
+    font-weight: bold;
+    position: relative;
+    display: flex;     
+    margin-top: 15px;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 2;
     
 }
- 
-  .npm-logo{
-    position: static;
-    width: 90px;
-    margin: 10px;
-    padding-right: 20px;
-          
-  }
 
-  .magnifying-glass {
+.searchbar{
+height: 100%;
+flex-grow: 2;
+background-color: transparent;
+border: none;
+font-size: 17px;
+
+}
+  
+.magnifying-glass {
     width: 20px;
-    position: relative;
-    right:880px;    
-         
+    height: 20px; 
+    padding: 0 20px; 
+  
 }  
 
- .searchbar{
-    top: 8px;
-    height: 50px;    
-    background-color: rgba(0,0,0,.05);
-    border-style: none;
-    padding-left: 10px;
-    margin-right: 0px;
-    display: inline;
-    width: 60%;
-        
-   }
 
-  .searchbutton{
+.searchbutton{
     height: 50px;
-    width: 180px;
+    width: 100px;
+    font-size: 17px;
     background-color: #fb3e44;
     color: white;
-    font-size: 1em;
-    text-align: justify;
+    font-weight: 400px;
+    text-align: center;
     border-style: none;
-    position: relative;        
-    right:50px; 
-    display: flex;
-    margin: auto;
     
-  }
+    
+}
 
-  
+.rightlinks{
+  position: relative;
+  flex-flow: row nowrap;
+  left: 20px;
+ }
  
+.rightlinks .join{
+  padding: 7 22px;
+  border: solid lightgray 2px;
+ 
+}
 
-  .section1{
+.rightlinks .login{
+  padding:0 22px;
+
+}
+
+.rightlinks a{
+    color: black;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.section1{
     height: 600px;
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
-    flex-flow: column;
-    align-items: center;
     background-color: rgba(232,217,217,.3);
-    margin: auto 25px;
-      
-  }
+    padding: 100px 20px;  
+       
+}
   
-  section h1{
-    font-size: 6em;
-    font-weight: bolder;    
+.section1heading{
+    font-size: 120px;
+    display:flex; 
+    font-weight: 700;
     justify-content: center;
-    align-items: center;
     margin-top: 10px;
-    
-  }
+    font-family: 'Poppins', sans-serif;
+}
 
-  .section1article{    
+.section1article{    
+    display:flex;
     justify-content: center;
-    position: relative;
+    text-align: center;
     font-size: 1.5em;
+    margin-bottom: 50px;
+  }  
+ 
 
-  }
-  
-  .rightlinks{
-      display: block;
-      flex-flow: row;
-      justify-content: space-between;
-      width: 100%;
-  }
+  .linksclass{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    margin: 25px;
+    margin: 10px;
+    
+}
 
-
-  .link1seeplans{
+.link1seeplans{
 
     background-color:#FB3B49;
     color:white;
     box-shadow:8px 8px 0 rgba(251,59,73,.2);
-    width: 200px;
-    height: 70px;
-    display: flex;
-  }
+    width: 250px;
+    height: 50px;
+    margin-right: 25px;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 15px;
+    text-decoration: none;
+ 
+}
 
 
-  .link2join4free{
+.link2join4free{
     background-color: white;
     color: black;
-    width: 200px;
-    height: 70px;
-    display: flex;
-
-  }
-
-  .triangle-hexagon{
+    font-weight: bolder;
     width: 250px;
+    height: 50px;
+    margin-left: 25px;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 15px;
+    text-decoration: none;
 
 }
-  .section2{
+
+
+.section2{
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin: 70px 100px;
+    margin: 100px 100px;
     text-align: center;
-  }
+}
+
+.triangle-hexagon{
+    width: 300px;
+    margin-bottom: 50px;
+
+}
  
-  .heading2{
-    background-color:rgba(255,204,53,4);
-  }
+.section2 > h2{
   
+    background-color:rgba(255,204,53,.4);
+    transform: skew(9deg,0deg); 
+    font-weight: 600;
+    padding: 0 40px;
+    font-size: 45px;
+    letter-spacing:2px ;
+   
+}
+
+
 
 .section3{
-    margin: 70px 100px;
-    padding: 10px;
+    margin: 100px;
+    padding-right: 20px;
     display:flex;
     flex-direction: row;
-    align-items: space-between;    
-    flex-basis: fit-content  
-    
-    
+    justify-content: space-around;   
+       
 }
 
-.zero-configuration, .team-management,.familiar-features, .npm-audit{
-  width: 60px;
-}
-
-
- .section3 h4 {
-    color:#ED1C24;
-    font-weight: bolder;
+.section3 h4{
+  color:#ED1C24;
+  font-weight: bolder;
 
 } 
 
-
-
+.section3 img{
+  width: 50px;
+}
 
 
 .createorg{
     margin: 100px;
     height: 50px;
-    background-color: black;
-    color: white;
-    text-align: center;
-    text-decoration: none;
+    text-align: center;   
     padding-top:25px;
     box-shadow: 8px 8px 0 rgba(128,83,35,.2);
     width: 40%;
     display: block;
     margin-left: auto;
     margin-right: auto;    
+    background-color: black;
 
 }
 
+.createorg > a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+ 
+
+}
