@@ -256,7 +256,7 @@ Your TAs will check up your work and provide feedback.
 
 ## Summary
 
-In this exercise, you've built a clone of a piece of the npm home page. This site is very complex so if you managed to make it look anything like the original, good job! :trophy:
+In this exercise, you've built a clone of a piece of the npm home page. This site is very complex so if you managed to make it look anything like the original, good job! :trophy: 
 
 This concludes the HTML / CSS module. We are proud of you!
 
