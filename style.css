@@ -48,31 +48,44 @@ nav a {
     width: 15px;
 
 }
-#search {
+
+.search {
     line-height: 1.15;
     font-family: 'Source Sans Pro', 'Lucida Grande', sans-serif;
     color: #000;
-    box-sizing: border-box;
-    border-color: rgba(0,0,0,.1);
+    /* border-color: rgba(0,0,0,.1); */
     display: flex;
     position: relative;
     background-color: transparent;
-    border-style: none;
     border-width: 0;
     padding-top: 0;
     padding-bottom: 0;
     padding-left: 0;
     padding-right: 0;
+
+    
+color: #000;
+box-sizing: border-box;
+border-color: rgba(0,0,0,.1);
+display: flex;
+position: relative;
+background-color: transparent;
+border-style: none;
+border-width: 0;
+padding-top: 0;
+padding-bottom: 0;
+padding-left: 0;
+padding-right: 0;
 }
 
 .searchBtn {
     background-color: #fb3b49;
     color: white;
     width:100px;
-    margin: 5px 0;
     text-align: center;
     letter-spacing: 0.5px;
     text-decoration: none;
+    height: 40px;
 }
 .joinBtn {
     color: black;
@@ -110,9 +123,9 @@ nav a {
     border-radius: 0;
     width: calc(100% - 10px);
     color: rgba(0, 0, 0, .05);
+    background-color: rgba(0,0,0,.05);
     background: url(images/magnifying-glass.png) no-repeat scroll 15px 15px;
     padding-left:30px;
-
 }
 
 .section1 {
@@ -124,7 +137,7 @@ nav a {
     align-items: center;
 }
 h1 { 
-    font-size: 4em;
+    font-size: 5em;
     font-weight: bold;
     text-align: center;
 }
@@ -157,3 +170,57 @@ h1 {
     padding: 15px 60px;
     margin-left: 25px;
 }
+
+.section2 {
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.section2 h3 {
+    font-size: 1.5rem;
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+    font-style: italic;
+}
+
+.section2 > img {
+    width: 12rem;
+}
+
+.section2 > article {
+text-align: center;
+display: block;
+margin: 1rem 5rem;
+    
+}
+
+
+
+
+/* Buttons styles start */
+button {
+    display: inline-block;
+    border: none;
+    margin: 0;
+    text-decoration: none;
+    transition: background 250ms ease-in-out, transform 150ms ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+button:hover,
+button:focus {
+    /* background: #0053ba; */
+}
+
+button:focus {
+    outline: 1px solid #fff;
+    outline-offset: -4px;
+}
+
+button:active {
+    transform: scale(0.99);
+}
+/* Button styles end */
