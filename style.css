@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body {
+  font-family: 'Poppins';
+}
+
+header > div {
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+}
+  
+nav {
+    width: 600px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.blackHeart {
+    width: 20px;
+    margin-right: 1rem;
+}
+
+.npmLogo {
+    width: 80px;
+    margin: 1rem 0;
+}
+#subheader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.searchIcon {
+    width: 15px;
+
+}
+#search {
+    line-height: 1.15;
+    font-family: 'Source Sans Pro', 'Lucida Grande', sans-serif;
+    color: #000;
+    box-sizing: border-box;
+    border-color: rgba(0,0,0,.1);
+    display: flex;
+    position: relative;
+    background-color: transparent;
+    border-style: none;
+    border-width: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.searchBtn {
+    background-color: #fb3b49;
+    color: white;
+    width:100px;
+    margin: 5px 0;
+    text-align: center;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+}
+.joinBtn {
+    color: black;
+    background-color: #FFFAFA;
+    border: 1px solid lightgray;
+    width:80px;
+    height: 20px;
+    padding: 5px 8px;
+    margin-left: 60px;
+    letter-spacing: 0.5px;
+    text-align: center; 
+    text-decoration: none;
+}
+
+.loginBtn {
+    color: black;
+    width: 80px;
+    height: 20px;
+    padding: 5px 8px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    text-decoration: none;
+}
+#searchField {
+    border: none;
+    white-space: nowrap;
+    overflow: visible;
+    outline-offset: -2px;
+    font-weight: 300;
+    position: relative;
+    color: #000;
+    font-family: "Fira Mono", "Andale Mono", "Consolas", monospace;
+    height: 40px;
+    padding-left: 10px;
+    border-radius: 0;
+    width: calc(100% - 10px);
+    color: rgba(0, 0, 0, .05);
+    background: url(images/magnifying-glass.png) no-repeat scroll 15px 15px;
+    padding-left:30px;
+
+}
+
+.section1 {
+    height: 700px;
+    background-color: rgba(232,217,217,.3);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+h1 { 
+    font-size: 4em;
+    font-weight: bold;
+    text-align: center;
+}
+.section1 > article {
+    width: 500px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.section1 > div {
+    display: flex;
+    flex-direction: row;   
+}
+.section1 > div > :nth-child(1) {
+    background-color: #FB3B49;
+    border: 1px solid #FB3B49;
+    color: white;
+    font-weight: bold;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+    letter-spacing: 1px;
+    text-decoration: none;
+    padding: 15px 60px;
+    margin-right: 25px; 
+}
+.section1 > div > :nth-child(2) {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 1px;
+    padding: 15px 60px;
+    margin-left: 25px;
+}
