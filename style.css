@@ -205,34 +205,39 @@ margin: 1rem 8rem;
 }
 
 .section3  {
-    height: 600px;
+    display: flex;
+    flex-direction: column;
+    /* flex-flow: row wrap;
+	justify-content: center; */
+}
+.boxes {
     display: flex;
     flex-direction: row;
     flex-flow: row wrap;
 	justify-content: center;
 }
-.section3 > div {
+
+.boxes > div {
     height: 250px;
     width: 250px;
     margin: 0 1rem;
     text-align: left;
 }
-.section3 > div > img {
+.boxes > div > img {
     width: 1.5rem;
 }
-.section3 > div >  h4 {
+.boxes > div >  h4 {
     color: #ED1C24;
     font-weight: bold;
     font-size: medium;
 }
 #orgBox {
     margin-top: 4rem;
-    width: 800px;
+    width: auto;
     height: 250px;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    flex-grow: 4;
 }
 #orgBox > .orgBtn {
     align-self: start;
