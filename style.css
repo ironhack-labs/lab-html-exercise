@@ -4,6 +4,19 @@ body {
   font-family: 'Poppins';
 }
 
+h1 {
+  font-size: 60px;
+  text-align: center;
+}
+
+h2 {
+  color: #ED1C24;
+}
+
+h3 {
+  text-align: center;
+}
+
 header > div {
     padding: 0 25px;
     display: flex;
@@ -33,14 +46,7 @@ header > div {
     margin-right: 1rem;
   }
 
-  h1 {
-    font-size: 60px;
-    text-align: center;
-  }
 
-  h3 {
-    text-align: center;
-  }
 
   
 
@@ -149,45 +155,33 @@ header > div {
   margin-top: 0;
 }
 
+/* BEM (Block, Element, Modifier) 
+https://www.integralist.co.uk/posts/bem/#4 */
+
 .section-three {
   height: 600px;
-  margin: 120px;
+  margin: 100px;
+}
+
+.flexy { 
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  align-content: stretch;
+  justify-content: center;
 }
 
-.section-three > div {
- max-width: 20%;
- padding: 45px;
- display: flex;
- flex-direction: column;
- align-content: flex-start;
+.advantages__tile {
+  width: 230px;
+  padding: 40px; 
 }
 
-.section-three > div > h2 {
-  color: #ED1C24;
+.actions {
+  padding: 40px 0;
 }
 
-.section-three > div > img {
-  height: 40px;
-  max-width: 40px;
-}
-
-button {
-  width: 300px;
-  height: 80px;
+.actions__create {
+  font-size: 25px;
+  color: white;
   background: black;
   box-shadow: 8px 8px 0 rgba(128, 83, 35, .2);
-  text-decoration: none;
-  font-size: large;
-  color: white;
+  padding: 20px 60px;
 }
-
-.button {
-  display: flex;
-  order: 2;
-}
-
-
