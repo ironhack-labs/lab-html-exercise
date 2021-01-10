@@ -1,0 +1,241 @@
+/* Font */
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
+body {
+  font-family: "Poppins";
+}
+
+h1{
+    font-size: 4em;
+    font-weight: 800;  /* Pourquoi cette instruction ne fonctionne pas ? Faut-il modifier la déclaration font-face ? */
+    letter-spacing: 0.4px;
+}
+
+h2{
+    font-size: 1.7em;
+    font-weight: 800;  /* Pourquoi cette instruction ne fonctionne pas ? Faut-il modifier la déclaration font-face ? */
+    letter-spacing: 0.4px;
+}
+
+
+/* HEADER */
+/* Partie haute du header */
+.upper_header {
+  padding: 0 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+}
+
+nav {
+  width: 600px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+.blackHeart {
+  width: 20px;
+  margin-right: 1rem;
+}
+
+/* Partie basse du header */
+.bottom_header {
+  padding: 0 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+}
+
+#npm_logo {
+  width: 60px;
+}
+
+/* Barre de recherche avec flex grow 1 pour prendre l'espace disponible */
+form.searchbar {
+  width: auto;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1 0 auto;
+  margin: 10px;
+  background-color: rgba(232, 217, 217, 0.3);
+}
+
+#magnify {
+  width: 20px;
+  padding: 0 10px;
+}
+
+/* Champs recherche avec align-self stretch pour occuper la hauteur */
+form.searchbar input {
+  width: 100%;
+  color: rgba(0, 0, 0, 0.05);
+  background-color: transparent;
+  border: none;
+  align-self: stretch;
+}
+
+::placeholder {
+    font-family: "Poppins" /* Pourquoi le texte ne s'affiche pas dans la police souhaitée par défaut ? Idem pour le texte du bouton ? */
+}
+
+form.searchbar button {
+  text-align: center;
+  background-color: #fb3e44;
+  color: white;
+  font-family: "Poppins";
+  border: none;
+  padding: 10px 15px;
+}
+
+.bottom_header a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Bouton join */
+a#join {
+  padding: 5px 10px;
+  margin: 0 5px 0 5px;
+  border: solid 1px #fb3e44; /* Même si ce n'est pas demandé ici, comment mettre ce bouton à la même hauteur que la barre de recherche ? */
+}
+
+/* Bouton login */
+a#log_in {
+  padding: 5px 10px;
+  /*? margin: 0 5px 0 5px; */
+}
+
+
+/* SECTION MAIN */
+#main {
+    height: 600px;
+    background-color: rgba(232,217,217,.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#main article {
+    width: 33vw;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.action {
+    width: 33vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.action a {
+    text-decoration: none;
+}
+
+a#plans {
+    width: 40%;
+    padding: 10px;
+    color: white;
+    font-weight: 500; /* Comment mettre le texte en gras ? */
+    text-align: center;
+    background-color: #FB3B49;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+}
+
+a#joinfree {
+    width: 40%;
+    padding: 10px;
+    color: black;
+    font-weight: 500; /* Comment mettre le texte en gras ? */
+    text-align: center;
+    background-color: #FFF;
+}
+
+
+/* SECTION CLAIM */
+#claim {
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#claim img {
+    width: 200px;
+    margin-bottom: 40px;
+}
+
+#claim h2 {
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+    font-style: italic;
+    padding: 0 20px;
+    margin: 20px 0;
+}
+
+#claim article {
+    width: 40vw;
+    text-align: center;
+    font-size: 0.7em;
+}
+
+
+/* SECTION CREATE */
+#create {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#benefits {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.feature {
+    width: 15%;
+}
+
+.feature img {
+    width: 30px;
+}
+
+.feature h3 {
+    font-size: 1.2em;
+    color: #ED1C24;
+}
+
+.feature p {
+    font-size: 0.8em;
+}
+
+#create_org {
+    text-decoration: none;
+    width: 20%;
+    padding: 10px;
+    margin-bottom: 50px;
+    color: white;
+    font-weight: 500; /* Comment mettre le texte en gras ? */
+    text-align: center;
+    background-color: black;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+}
