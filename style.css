@@ -43,21 +43,24 @@ nav a {
     width: 18px;
     height: 18px;
     padding-right: 5px;
-    padding-left: 5px;
+    padding-left: 15px;
 }
 
 .search-box {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    line-height: 40px;
     background: #f2f2f2;
     display: flex;
     width: 800px;
 }
 
-.search-box > input {
+.search-box > form > input {
     border-style: none;
+    background: #f2f2f2;
+    width: 600px;
+    line-height: 40px;
+
 }
 
 .search-box button {
@@ -78,7 +81,7 @@ nav a {
     border: 1px solid #cccccc;
 }
 
-#build-amazing-things{
+.build-amazing-things{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -87,11 +90,14 @@ nav a {
     background-color: rgba(232,217,217,.3)
 }
 
-#build-amazing-things > h1{
+.build-amazing-things > h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 80px;
 }
 
-#build-amazing-things > article{
+.build-amazing-things > article{
     text-align: center;
     margin-bottom: 50px;
     width: 500px;
@@ -122,7 +128,7 @@ nav a {
     padding-bottom: 1rem;
 }
 
-#best-of-open-source{
+.best-of-open-source{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -135,7 +141,7 @@ nav a {
     height: 200px
 }
 
-#best-of-open-source h2{
+.best-of-open-source h2{
     background-color: rgba(255,204,53,0.4);
     font-weight: 600px;
     transform: skew(9deg,0deg);
@@ -148,7 +154,7 @@ nav a {
     width: 500px;
 }
 
-#create-an-org{
+.create-an-org{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -181,11 +187,11 @@ nav a {
     margin-bottom: 200px;
 }
 
-#create-an-org img{
+.create-an-org img{
     height: 28px;
 }
 
-#create-an-org h3{
+.create-an-org h3{
     color: #ED1C24;
     padding: 20px 0px 20px 0px;
 }
