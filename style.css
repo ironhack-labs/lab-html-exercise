@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+html {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+  font-family: 'Poppins';
+  margin: 0;
+}
+
+h1 {
+    text-align: center;
+    font-size: 6em;
+    text-shadow: 5px 5px 0px #ffffff;
+    line-height: 1em;
+    margin: .5em 0 .25em;
+}
+
+h2 {
+    font-size: 3em;
+    text-align: center;
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+    font-style: italic;
+}
+
+h3 {
+    color: #ED1C24;
+    font-size: 1.5em;
+    line-height: 0.5em;
+}
+
+/* header section */
+
+.border-bottom {
+    border-bottom: 1px solid lightgray;
+}
+
+.header-container,
+.search-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 90%;
+    padding: 10px 0;
+}
+
+nav {
+    width: 600px;
+}
+  
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+nav a {
+    text-decoration: none;
+    color: black;
+}
+  
+.black-heart-icon {
+    width: 20px;
+    margin-right: 1rem;
+}
+
+.search-container form {
+    padding: 5px;
+    width: 50%;
+    height: 4em;
+    display: flex;
+    justify-content: center;
+}
+
+.npm-logo {
+    width: 70px;
+}
+
+.search-glass {
+    width: 20px;
+    padding-left: 1em;
+}
+
+#search-bar {
+    background-color: #f2f2f2;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    height: inherit;
+    width: 60em;
+}
+
+#search-bar > input {
+    background-color: #f2f2f2;
+    border: none;
+    color: rgba(0,0,0,.05);
+    font-size: 16px;
+    height: inherit;
+    padding-left: 1em;
+    width: inherit;
+}
+
+#search-btn {
+    background-color: #fb3e44;
+    border: none;
+    color: white;
+    font-size: 20px;
+    height: inherit;
+    padding: 0 2em;
+    cursor: pointer;
+}
+
+.account-btns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.account-btns a {
+    background-color: white;
+    padding: 10px 40px;
+    border: none;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+}
+
+#nav-bar-btn-join {
+    border: 2px solid grey;
+}
+
+.section-container {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 2.5em;  
+}
+
+#features {
+    height: 80vh;
+    background-color: rgba(232,217,217,.3);
+}
+
+#plans {
+    height: 80vh;
+    background: rgb(238,174,202);
+    background: linear-gradient(260deg, rgb(255 164 167) 25%, rgb(255 235 178));
+}
+
+#plans article {
+    max-width: 30%;
+    padding: 1em 2em;
+    margin: 1em 0;
+    font-size: 28px;
+}
+
+.plans-btns {
+    max-width: 50%;
+    padding: 1em 2em;
+}
+
+.plans-btns a {
+    padding: 20px 80px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 0 4em;
+}
+
+#seePlans-btn {
+    background-color: #FB3B49;
+    border: none;
+    color: white;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+}
+
+#joinForFree-btn {
+    background-color: transparent;
+    color: black;
+}
+
+#open-source {
+    height: 60vh;
+    background-color: white;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 2.5em;  
+}
+
+#open-source img {
+    width: 200px;
+    margin-top: 10px;
+}
+
+#open-source article {
+    max-width: 35%;
+    padding: 1em;
+    margin: 1em 0;
+    font-size: 20px;
+}
+
+.article-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+}
+
+.article-container article {
+    box-sizing: border-box;
+    width: 22em;
+    height: 16em;
+    margin: 1em 3em;
+    text-align: left; 
+}
+
+.article-container p {
+    text-align: justify;
+    line-height: 1.5;
+}
+
+#features img {
+    width: 40px;
+}
+
+#features a {
+    background-color: black;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    color: white;
+    padding: 20px 100px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 0 4em;
+}
