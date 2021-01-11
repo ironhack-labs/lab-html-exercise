@@ -42,8 +42,9 @@ header > div {
     vertical-align: middle;
 }
 
-#joinlogin li{
-    width: 3rem;    
+.joinlogin li{
+    width: 3rem; 
+
 }
 
 #npmlogo li{
@@ -101,25 +102,23 @@ header > div {
     display: flex;
     justify-content: space-evenly;
     margin: 0 5px;
-    }
+}
 
-    .joinlogin {
-        display: inline-flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: center;
-        display: flex;
-        justify-content: space-evenly;
-        margin: 20px;
-    }
+.joinlogin {
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-between;
+    /* margin: 20px; */
+}
 
-    .login{
-        text-decoration: none;
-        color: black;
+.login{
+    text-decoration: none;
+    color: black;
+}
 
-    }
-
-    .article1{
+.article1{
     text-align: center;
 }
 
@@ -132,7 +131,7 @@ header > div {
    display: flex;
     background-color: rgba(255,204,53,.4);
     text-align: center;
-    margin-left: 500px;
+    margin-left: 490px;
     margin-top: 80px;
     margin-bottom: 100px;
     transform: skew(9deg, 0deg);
@@ -159,14 +158,13 @@ header > div {
     height: 30px;
     display: flex;
     margin-right: 40px;
-    margin-bottom: 5
-    px;
+    margin-bottom: 5px;
 }
 
 .firstbox{
     color: #ED1C24;
-    }
-    
+   } 
+
 .secondbox {
     color: #ED1C24;
 }
@@ -177,15 +175,49 @@ header > div {
     color: #ED1C24;
 }
 
-.createanorg{
+.org {
     box-shadow: 8px 8px 0 rgba(128,83,35,.2);
     background-color: black;
     color: white;
     display: flex;
-	flex-wrap: nowrap;
 	justify-content: center;
-	align-items: center;
-    align-content: stretch;
-    font-size: 45px;
+    font-size: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 140px;
+    padding-right: 140px;
+    margin-top: 100px;
+    margin-left: 450px;
+    margin-bottom: 150px;
 }
 
+.headings {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 180px;
+    margin-left: 100px;
+}
+
+.slot-form-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.search {
+    background-color: #fb3e44;
+    color: white;
+    border: none;
+    text-decoration: none;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.join {
+    border: 1px solid black;
+    color: black;
+    background-color: white;
+}
+
+.logo {
+    margin-right: 10px;
+}
