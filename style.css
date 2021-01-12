@@ -12,14 +12,14 @@ body {
 
 h1 {
     text-align: center;
-    font-size: 6em;
+    font-size: 6rem;
     text-shadow: 5px 5px 0px #ffffff;
     line-height: 1em;
     margin: .5em 0 .25em;
 }
 
 h2 {
-    font-size: 3em;
+    font-size: 3rem;
     text-align: center;
     background-color: rgba(255,204,53,.4);
     transform: skew(9deg,0deg);
@@ -29,7 +29,9 @@ h2 {
 h3 {
     color: #ED1C24;
     font-size: 1.5em;
-    line-height: 0.5em;
+    line-height: 1em;
+    margin: 4% 0;
+    padding: .25em 0;
 }
 
 /* header section */
@@ -49,7 +51,7 @@ h3 {
 }
 
 nav {
-    width: 600px;
+    width: 35%;
 }
   
 nav ul {
@@ -57,11 +59,18 @@ nav ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0;
 }
-  
+
 nav a {
     text-decoration: none;
     color: black;
+    padding: .5em;
+}
+
+nav a:hover {
+    color:  #FB3B49;
+    font-weight: bold;
 }
   
 .black-heart-icon {
@@ -92,7 +101,7 @@ nav a {
     flex-flow: row nowrap;
     align-items: center;
     height: inherit;
-    width: 60em;
+    width: 80%;
 }
 
 #search-bar > input {
@@ -105,7 +114,7 @@ nav a {
     width: inherit;
 }
 
-#search-btn {
+#search-submit {
     background-color: #fb3e44;
     border: none;
     color: white;
@@ -134,10 +143,20 @@ nav a {
     color: black;
 }
 
+.account-btns a:hover {
+    color:  #FB3B49;
+    font-weight: bold;
+}
+
 #nav-bar-btn-join {
     border: 2px solid grey;
 }
 
+#nav-bar-btn-join:hover {
+    border: 2px solid #FB3B49;
+}
+
+/* sections */
 .section-container {
     display: flex;
     flex-flow: column;
@@ -147,26 +166,25 @@ nav a {
     margin-bottom: 2.5em;  
 }
 
-#features {
-    height: 80vh;
-    background-color: rgba(232,217,217,.3);
+.section-wrapper {
+    margin: 5% auto;
+    width: 50%;
 }
 
+/* first section - plans */
+
 #plans {
-    height: 80vh;
     background: rgb(238,174,202);
     background: linear-gradient(260deg, rgb(255 164 167) 25%, rgb(255 235 178));
 }
 
 #plans article {
-    max-width: 30%;
     padding: 1em 2em;
     margin: 1em 0;
-    font-size: 28px;
+    font-size: 2em;
 }
 
 .plans-btns {
-    max-width: 50%;
     padding: 1em 2em;
 }
 
@@ -177,7 +195,6 @@ nav a {
     display: inline-block;
     font-size: 20px;
     cursor: pointer;
-    margin: 0 4em;
 }
 
 #seePlans-btn {
@@ -192,8 +209,9 @@ nav a {
     color: black;
 }
 
+/* second section - open source */
+
 #open-source {
-    height: 60vh;
     background-color: white;
     display: flex;
     flex-flow: column;
@@ -209,33 +227,38 @@ nav a {
 }
 
 #open-source article {
-    max-width: 35%;
-    padding: 1em;
+    padding: 1em 0;
     margin: 1em 0;
-    font-size: 20px;
+    font-size: 2em;
+}
+
+/* third section - features */
+
+#features {
+    background-color: rgba(232,217,217,.3);
+}
+
+#features img {
+    width: 40px;
 }
 
 .article-container {
     display: flex;
     justify-content: space-evenly;
     align-items: baseline;
+    text-align: justify;
+    line-height: 1.5;
+    width: 80%;
+    margin: 1%;
 }
 
 .article-container article {
     box-sizing: border-box;
-    width: 22em;
-    height: 16em;
-    margin: 1em 3em;
+    width: 20%;
+    height: auto;
+    margin: 2%;
+    padding: 1% 2%;
     text-align: left; 
-}
-
-.article-container p {
-    text-align: justify;
-    line-height: 1.5;
-}
-
-#features img {
-    width: 40px;
 }
 
 #features a {
@@ -249,4 +272,57 @@ nav a {
     font-size: 20px;
     cursor: pointer;
     margin: 0 4em;
+}
+
+/* media query for tablets */
+
+@media only screen and (max-width:800px) {
+    header, 
+    .main,
+    .section-wrapper {
+        width:100%;
+    }
+    .header-container,
+    .search-container {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    h1 {
+        font-size: 4rem;
+    }
+    h2 {
+        font-size: 1.75rem;
+    }
+    nav ul {
+        flex-wrap: wrap;
+        width: 50%;
+    }
+    #plans article,
+    #open-source article {
+        font-size: 1.5em;
+    }
+    .article-container {
+        flex-flow: column wrap;
+        width: 90%;
+    }
+    .article-container article {
+        width: 80%;
+    }
+}
+
+/*media query for smartphones only */
+@media only screen and (max-width:425px) {
+    h1 {
+        font-size: 2rem;
+    }
+    #plans article,
+    #open-source article {
+        font-size: 1em;
+    }
+}
+
+@media only screen and (max-width:320px) {
+    h2 {
+        font-size: 1.5rem;
+    }
 }
