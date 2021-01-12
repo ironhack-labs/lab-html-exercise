@@ -187,7 +187,7 @@ nav a {
   color: black;
 }
 
-.blackHeart {
+.black-heart {
   width: 20px;
   margin-right: 1rem;
 }
