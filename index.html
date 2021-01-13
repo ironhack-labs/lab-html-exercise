@@ -1,46 +1,40 @@
 <html>
     <link rel="stylesheet" href="./style.css"/>
-        <header id="header">
-            <div class= "black-heart-logo">
-                <div>
-                    <img src="images/black-heart.png" alt="black-heart-logo"> Nifty Penguin Magic
-                </div>
-                <div>
-                    <nav class= "nav-bar">
-                        <ul>
-                            <li><a class= "nav-bar-list" href="#"> npm Enterprise </a></li>
-                            <li><a class= "nav-bar-list" href="#"> Products </a></li>
-                            <li><a class= "nav-bar-list" href="#"> Solutions </a></li>
-                            <li><a class= "nav-bar-list" href="#"> Resources </a></li>
-                            <li><a class= "nav-bar-list" href="#"> Docs </a></li>
-                            <li><a class= "nav-bar-list" href="#"> Support </a></li>
-                        </ul>
-                        </nav>
-                    </nav>
-                </div>
+        <header>
+            <div id="upper-header">
+                <Div>
+                    <img class= "black-heart-logo" src="images/black-heart.png" alt="black-heart-logo">
+                    <span>Nifty Penguin Magic</span>
+                </Div>
+                <nav class= "nav-bar">
+                    <ul class= "nav-bar-ul" href="#">
+                        <li><a href="#"> npm Enterprise </a></li>
+                        <li><a href="#"> Products </a></li>
+                        <li><a href="#"> Solutions </a></li>
+                        <li><a href="#"> Resources </a></li>
+                        <li><a href="#"> Docs </a></li>                        
+                        <li><a href="#"> Support </a></li>
+                    </ul>
+                </nav>
             </div>
-            <div>
-                <div class= "npm-logo">
-                    <img src="images/npm-logo.png" alt="npm-logo">
-                </div>
-                <div class= "magnifying-glass">
-                    <img src="images/magnifying-glass.png" alt="magnifying-glass">
-                </div>
-                <div class="search-packages">
-                    <form class="search-packages-form">
-                        <div>
-                            <input type="text" placeholder="Search Packages">
-                            <button class="search-packages-btn">Search</button>
-                        </div>
-                    </form>
-                </div>
+            <div id="lower-header">
+                <img class="npm-logo" src="images/npm-logo.png" alt="npm-logo">
+                <img class= "magnifying-glass" src="images/magnifying-glass.png" alt="magnifying-glass">
+                <form action="" method="get">
+                    <input class="search-input" type="text" placeholder="Search Packages">
+                    <button class="search-packages-btn">Search</button>
+                </form>
+                <a class="join-lnk" href="#">Join</a>
+                <a class="log-in-lnk" href="#">Log In</a>  
             </div>
         </header>
         <section id="section1">
             <h1>Build amazing things</h1>
-            <p>Essential JavaScript development tools that help you go to market faster and build powerful applications using modern open source code.</p>
-            <button class="see-plans-btn">See plans</button>
-            <button class="join-for-free-btn">Join for free</button>
+            <p class="text-section-1">Essential JavaScript development tools that help you go to market faster and build powerful applications using modern open source code.</p>
+            <div class="section-1-btn">
+                <button class="see-plans-btn">See plans</button>
+                <button class="join-for-free-btn">Join for free</button>
+            </div>
         </section>
         <section id="section2">
             <img class="triangle-hexagone-logo" src="images/triangle-hexagon.svg" alt="triangle-hexagone-logo">
