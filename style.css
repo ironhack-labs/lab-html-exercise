@@ -100,11 +100,15 @@ header > div {
 
 #hero {
     height :600px;
+    background-color: rgba(232,217,217,.3);
+}
+
+#hero-container {
+    margin: 0 10rem;
     display: flex;
-    justify-content:space-evenly;
+    justify-content : center;
     flex-direction: column;
     align-items: center;
-    background-color: rgba(232,217,217,.3);
 }
 
 h1 {
@@ -112,12 +116,38 @@ h1 {
     text-align: center;
     font-size: 5rem;
     font-weight: bold;
+    margin-bottom: 1.5rem;
 }
 
 #hero-article {
+    margin : 0 17rem 1.5rem;
+    font-weight: light;
 }
 
 p {
     text-align: center;
     font-size: 1.25rem;
+}
+
+#cta-links {
+    margin: 1rem;
+}
+
+#signup-link {
+    background-color : #fb3b49;
+    text-decoration: none;
+    color: white;
+    border: none;
+    padding: .75rem 4rem;
+    margin: 1rem;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+}
+
+#join-link {
+    text-decoration: none;
+    background-color: white;
+    color : black;
+    border: none;
+    padding: .75rem 4rem;
+    margin: 1rem;
 }
