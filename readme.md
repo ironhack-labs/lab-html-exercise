@@ -202,7 +202,7 @@ _Useful information_:
 
 As you can see, a lot of _flexbox_ is involved - if needed, revise the lesson again or sneak peek into the official docs (use your Google skills) or use this [resource](https://flexbox.help/) as a help.
 
-Make sure to use flexbox at any time where you need to position elements on a specific place - practice as much as possible: the more you understand now, the easier will be later.
+Make sure to use flexbox at any time where you need to position elements in a specific place - practice as much as possible: the more you understand now, the easier will be later.
 
 #### CSS 3 | section 1
 

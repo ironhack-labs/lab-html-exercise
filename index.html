@@ -24,21 +24,24 @@
                 </ul>
             </nav>
         </div>
-        <div>
-            <img src="./images/npm-logo.png" alt="npm logo">
+        <div id="sub-header">
+            <img class="logo" src="./images/npm-logo.png" alt="npm logo">
             <form id="search" method="GET" action="/search">
-                <img src="./images/magnifying-glass.png">
+                <div class="search-icon"><img src="./images/magnifying-glass.png"></div>
                 <input type="search" placeholder="Search packages">
                 <button type="submit">Search</button>
             </form>
-            <a href="/join">Join</a>
-            <a href="/login">Login</a>
+            <div id="sub-header-links">
+                <a id="join" href="/join">Join</a>
+                <a id="login" href="/login">Login</a>
+            </div>
         </div>
     </header>
     <main>
         <section id="hero">
+            <div id="hero-container">
             <h1>Build amazing things</h1>
-            <article>
+            <article id="hero-article">
                 <p>Essential JavaScript development tools that help you go to market faster and build powerful applications using
                     modern open source code.</p>
             </article>

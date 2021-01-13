@@ -11,6 +11,8 @@ header > div {
     align-items: center;
     border-bottom: 1px solid lightgray;
   }
+
+  /* main header */
   
   nav {
     width: 600px;
@@ -32,3 +34,90 @@ header > div {
     width: 20px;
     margin-right: 1rem;
   }
+
+  /* sub header */
+
+  #sub-header {
+      padding : .5rem 1.5rem;
+      display: flex;
+  }
+
+  .logo {
+    width: 70px;
+    margin: 0 1rem 0 0;
+}
+
+  #search {
+      display : flex;
+      justify-content: space-between;
+      flex-grow: 1;
+  }
+
+  #search input {
+    height : 40px;
+    flex-grow: 3;
+    color : rgba(0,0,0,.05);
+    background-color: rgba(232,217,217,.3);
+    border : none;
+    font-family: 'Poppins';
+  }
+
+  #search button {
+    background-color : #fb3e44;
+    flex-grow: 0;
+    color: white;
+    border: none;
+    font-family: 'Poppins';
+    padding: .25rem 1rem;;
+  }
+
+  #join, #login {
+      text-decoration: none;
+      padding : .25rem 1rem;
+      color : black;
+  }
+
+  #join {
+      border : 1px solid darkgray;
+  }
+
+  .search-icon {
+      background-color: rgba(232,217,217,.3);
+      padding: 0.75rem .5rem 0 .75rem;
+      flex-grow: 0;
+  }
+
+  .search-icon img {
+      width: 15px;
+  }
+
+  #sub-header-links {
+      padding-left: 1.5rem;
+  }
+
+/* main content */
+/*section one */
+
+#hero {
+    height :600px;
+    display: flex;
+    justify-content:space-evenly;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(232,217,217,.3);
+}
+
+h1 {
+    font-family: 'Poppins';
+    text-align: center;
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+#hero-article {
+}
+
+p {
+    text-align: center;
+    font-size: 1.25rem;
+}
