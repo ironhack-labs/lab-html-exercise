@@ -17,7 +17,7 @@ body {
     text-align: center;
 }
 
-a:hover, li:hover, p:hover {
+a:hover, li:hover {
     color: rgb(147, 145, 148);
 }
 
@@ -56,14 +56,52 @@ header {
 }
 header img {
     width: 60px;
+    margin: 0 10px 0 0;
+}
+
+.search-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.8% 1%;
+    margin: 10px;
 }
 
 #search-bar {
     background-color: rgb(239, 240, 241);
-    display: flex;
-    flex-direction: row;
-    align-items: stretch;
-    justify-content: stretch;
+    box-sizing: border-box;
+    width: 80%;
+    padding: 0 0 0 10px;
+}
+
+#search-bar img {
+    max-width: 2em;
+    padding: 0 8px;
+}
+
+.red-button-search {
+    color: white;
+    background-color: rgb(234, 50, 62);
+    border: none;
+    font-size: 0.8em;
+    font-family: inherit;
+    padding: 0;
+    width: 70px;
+    height: 40px;
+}
+
+.grey-search-box {
+    background-color: inherit;
+    border: none;
+    width: 50%;
+    -webkit-transition: width .25s ease-in-out;
+    transition: width .25s ease-in-out;
+    outline: none;
+}
+
+.grey-search-box:focus {
+    width: 80%;
 }
 
 .nav {
@@ -81,6 +119,26 @@ header img {
 .nav-bar-ul li {
     padding: 0 8px;
     line-height: 15px;
+}
+
+.nav-bar-ul a {
+    text-decoration-line: none;
+    color: rgb(28, 25, 25);
+}
+
+.nav-bar-ul > li > a:hover {
+    color: rgb(147, 145, 148);
+}
+
+#join {
+    border: 1px solid rgb(147, 145, 148);
+    padding: 10px 20px;
+    margin: 1px 20px;
+    text-decoration: none;
+}
+
+#log-in {
+    text-decoration: none;
 }
 
 .beige-background {
@@ -147,13 +205,6 @@ header img {
     justify-content: flex-end;
     width: 70%;
 }
-/*
-#third-section .outer-block {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-}
-*/
 
 #third-section .inner-block {
     display: flex;
