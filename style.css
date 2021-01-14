@@ -12,6 +12,37 @@ header > div {
     border-bottom: 1px solid lightgray;
   }
 
+  /*general text styling stuff*/
+
+  h1 {
+    font-family: 'Poppins';
+    text-align: center;
+    font-size: 5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+h2 {
+    background-color : rgba(255,204,53,.4);
+    transform : skew(9deg,0deg);
+    font-style : italic;
+    font-weight: bold;
+    padding : 0 2rem;
+    font-size: 2.5rem;
+    margin-bottom: 0;
+}
+
+h3 {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ED1C24;
+}
+
+p {
+    text-align: center;
+    font-size: 1rem;
+}
+
   /* main header */
   
   nav {
@@ -111,21 +142,8 @@ header > div {
     align-items: center;
 }
 
-h1 {
-    font-family: 'Poppins';
-    text-align: center;
-    font-size: 5rem;
-    font-weight: bold;
-    margin-bottom: 1.5rem;
-}
-
 #hero-article {
     margin : 0 17rem 1.5rem;
-}
-
-p {
-    text-align: center;
-    font-size: 1.25rem;
 }
 
 #cta-links {
@@ -170,15 +188,45 @@ p {
     max-width: 300px;
 }
 
-#usp-h2 {
-    background-color : rgba(255,204,53,.4);
-    transform : skew(9deg,0deg);
-    font-style : italic;
-    padding : 0 2rem;
-    font-size: 2.5rem;
-    margin-bottom: 0;
+#usp-article {
+    margin : 0 10rem;
 }
 
-#usp-article {
-    margin : 0 8rem;
+/*section 3*/
+
+#cta {
+    height : 600px;
+    padding: 0 8rem;
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#cta-container {
+    display: flex;
+    flex-direction: row;
+}
+
+#cta-div {
+    width: 25%;
+    padding: 1.5rem; 
+}
+#cta-div p {
+    text-align: left;
+}
+
+#cta-img {
+    height : 32px;
+}
+
+#cta-button {
+    align-self: center;
+    padding: 1rem 8rem;
+    margin-top: 2rem;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    font-weight : bold;
+
 }
