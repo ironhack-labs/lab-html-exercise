@@ -191,7 +191,7 @@ nav a {
   width: 20px;
   margin-right: 1rem;
 }
-```
+
 
 _Useful information_:
 
