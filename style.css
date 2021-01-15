@@ -1,97 +1,147 @@
-                                                                                                    @import url('https://fonts.googleapis.com/css?family=Poppins');
-                                                                                                body {
-                                                                                                    font-family: 'Poppins';
-                                                                                                }
-                                                                                                /** header**/
-                                                                                                
-                                                                                                header>div {
-                                                                                                    padding: 0 25px;
-                                                                                                    display: flex;
-                                                                                                    justify-content: space-between;
-                                                                                                    align-items: center;
-                                                                                                    border-bottom: 1px solid lightgray;
-                                                                                                }
-                                                                                                
-                                                                                                nav {
-                                                                                                    width: 600px;
-                                                                                                }
-                                                                                                
-                                                                                                nav ul {
-                                                                                                    list-style: none;
-                                                                                                    display: flex;
-                                                                                                    justify-content: space-between;
-                                                                                                    align-items: center;
-                                                                                                }
-                                                                                                
-                                                                                                nav a {
-                                                                                                    text-decoration: none;
-                                                                                                    color: black;
-                                                                                                }
-                                                                                                
-                                                                                                .blackHeart {
-                                                                                                    width: 20px;
-                                                                                                    margin-right: 1rem;
-                                                                                                }
-                                                                                                
-                                                                                                .logo {
-                                                                                                    width: 75px;
-                                                                                                    padding: 20px;
-                                                                                                }
-                                                                                                
-                                                                                                .container {
-                                                                                                    display: flex;
-                                                                                                    justify-content: space-between;
-                                                                                                    align-items: center;
-                                                                                                    padding: 0 30px 0 0px;
-                                                                                                }
-                                                                                                
-                                                                                                .glass {
-                                                                                                    width: 30px;
-                                                                                                    display: flex;
-                                                                                                    justify-self: center;
-                                                                                                }
-                                                                                                
-                                                                                                .container input {
-                                                                                                    background-color: rgba(0, 0, 0, .05);
-                                                                                                    border: none;
-                                                                                                    padding: 13px;
-                                                                                                    display: flex;
-                                                                                                    justify-content: left;
-                                                                                                    order: 0
-                                                                                                }
-                                                                                                
-                                                                                                input {
-                                                                                                    width: 500px;
-                                                                                                    position: relative;
-                                                                                                    right: 50px;
-                                                                                                }
-                                                                                                
-                                                                                                input placeholder {}
-                                                                                                
-                                                                                                .container label {
-                                                                                                    background-color: rgba(0, 0, 0, .05);
-                                                                                                }
-                                                                                                
-                                                                                                .container button {
-                                                                                                    background-color: #fb3e44;
-                                                                                                    color: white;
-                                                                                                    padding: 13px 19px;
-                                                                                                    border: 1px solid;
-                                                                                                    position: relative;
-                                                                                                    right: 50px;
-                                                                                                }
-                                                                                                
-                                                                                                .link-btn a {
-                                                                                                    color: lightgray;
-                                                                                                    text-decoration: none;
-                                                                                                    position: relative;
-                                                                                                    right: 30px;
-                                                                                                }
-                                                                                                
-                                                                                                #join {
-                                                                                                    border: 1px solid;
-                                                                                                    padding: 4px 15px;
-                                                                                                }
-                                                                                                
-                                                                                                #log {
-                                                                                                    margin-left: 25px;
+                                                                                                                                                                                    @import url('https://fonts.googleapis.com/css?family=Poppins');
+                                                                                                                                                                                    body {
+                                                                                                                                                                                        font-family: 'Poppins';
+                                                                                                                                                                                    }
+                                                                                                                                                                                    /** header**/
+                                                                                                                                                                                    
+                                                                                                                                                                                    header>div {
+                                                                                                                                                                                        padding: 0 25px;
+                                                                                                                                                                                        display: flex;
+                                                                                                                                                                                        justify-content: space-between;
+                                                                                                                                                                                        align-items: center;
+                                                                                                                                                                                        border-bottom: 1px solid lightgray;
+                                                                                                                                                                                    }
+                                                                                                                                                                                    
+                                                                                                                                                                                    nav {
+                                                                                                                                                                                        width: 600px;
+                                                                                                                                                                                    }
+                                                                                                                                                                                    
+                                                                                                                                                                                    nav ul {
+                                                                                                                                                                                        list-style: none;
+                                                                                                                                                                                        display: flex;
+                                                                                                                                                                                        justify-content: space-between;
+                                                                                                                                                                                        align-items: center;
+                                                                                                                                                                                    }
+                                                                                                                                                                                    
+                                                                                                                                                                                    nav a {
+                                                                                                                                                                                        text-decoration: none;
+                                                                                                                                                                                        color: black;
+                                                                                                                                                                                    }
+                                                                                                                                                                                    
+                                                                                                                                                                                    .blackHeart {
+                                                                                                                                                                                        width: 20px;
+                                                                                                                                                                                        margin-right: 1rem;
+                                                                                                                                                                                    }
+                                                                                                                                                                                    
+                                                                                                                                                                                    .logo {
+                                                                                                                                                                                        width: 75px;
+                                                                                                                                                                                        padding: 20px;
+                                                                                                                                                                                    }
+                                                                                                                                                                                    
+                                                                                                                                                                                    .container {
+                                                                                                                                                                                        display: flex;
+                                                                                                                                                                                        justify-content: space-between;
+                                                                                                                                                                                        align-items: center;
+                                                                                                                                                                                        padding: 0 30px 0 0px;
+                                                                                                                                                                                    }
+                                                                                                                                                                                    
+                                                                                                                                                                                    .glass {
+                                                                                                                                                                                        width: 30px;
+                                                                                                                                                                                        display: flex;
+                                                                                                                                                                                        justify-self: center;
+                                                                                                                                                                                        position: relative;
+                                                                                                                                                                                        left: 10px;
+                                                                                                                                                                                    }
+                                                                                                                                                                                    
+                                                                                                                                                                                    .container input {
+                                                                                                                                                                                        background-color: rgba(0, 0, 0, .05);
+                                                                                                                                                                                        border: none;
+                                                                                                                                                                                        padding: 13px;
+                                                                                                                                                                                        display: flex;
+                                                                                                                                                                                        justify-content: left;
+                                                                                                                                                                                        order: 0
+                                                                                                                                                                                    }
+                                                                                                                                                                                    
+                                                                                                                                                                                    input {
+                                                                                                                                                                                        width: 900px;
+                                                                                                                                                                                        position: relative;
+                                                                                                                                                                                        right: 50px;
+                                                                                                                                                                                        margin-left: 10px;
+                                                                                                                                                                                    }
+                                                                                                                                                                                    
+                                                                                                                                                                                    .container label {
+                                                                                                                                                                                        background-color: rgba(0, 0, 0, .05);
+                                                                                                                                                                                    }
+                                                                                                                                                                                    
+                                                                                                                                                                                    .container button {
+                                                                                                                                                                                        background-color: #fb3e44;
+                                                                                                                                                                                        color: white;
+                                                                                                                                                                                        padding: 13px 19px;
+                                                                                                                                                                                        border: 1px solid;
+                                                                                                                                                                                        position: relative;
+                                                                                                                                                                                        right: 50px;
+                                                                                                                                                                                    }
+                                                                                                                                                                                    
+                                                                                                                                                                                    .link-btn a {
+                                                                                                                                                                                        color: lightgray;
+                                                                                                                                                                                        text-decoration: none;
+                                                                                                                                                                                        position: relative;
+                                                                                                                                                                                        right: 30px;
+                                                                                                                                                                                    }
+                                                                                                                                                                                    
+                                                                                                                                                                                    #join {
+                                                                                                                                                                                        border: 1px solid;
+                                                                                                                                                                                        padding: 4px 15px;
+                                                                                                                                                                                    }
+                                                                                                                                                                                    
+                                                                                                                                                                                    #log {
+                                                                                                                                                                                        position: relative;
+                                                                                                                                                                                        right: 10px;
+                                                                                                                                                                                    }
+                                                                                                                                                                                    /**section1**/
+                                                                                                                                                                                    
+                                                                                                                                                                                    #section1 {
+                                                                                                                                                                                        height: 600px;
+                                                                                                                                                                                        background-color: rgba(232, 217, 217, .3);
+                                                                                                                                                                                        display: flex;
+                                                                                                                                                                                        flex-direction: column;
+                                                                                                                                                                                        align-items: center;
+                                                                                                                                                                                    }
+                                                                                                                                                                                    
+                                                                                                                                                                                    h1 {
+                                                                                                                                                                                        margin-top: px;
+                                                                                                                                                                                        font-size: 75px;
+                                                                                                                                                                                        font-weight: bold;
+                                                                                                                                                                                        padding: 60px 190px 0px 80px;
+                                                                                                                                                                                        text-align: center;
+                                                                                                                                                                                    }
+                                                                                                                                                                                    
+                                                                                                                                                                                    .article {
+                                                                                                                                                                                        position: relative;
+                                                                                                                                                                                        bottom: 80px;
+                                                                                                                                                                                        text-align: center;
+                                                                                                                                                                                        padding: 60px 190px 0px 80px;
+                                                                                                                                                                                    }
+                                                                                                                                                                                    
+                                                                                                                                                                                    .link-btn2 {
+                                                                                                                                                                                        text-align: center;
+                                                                                                                                                                                        padding: 60px 190px 0px 80px;
+                                                                                                                                                                                        position: relative;
+                                                                                                                                                                                        bottom: 80px;
+                                                                                                                                                                                    }
+                                                                                                                                                                                    
+                                                                                                                                                                                    #see-plans {
+                                                                                                                                                                                        box-shadow: 8px 8px 0 rgba(251, 59, 73, .2);
+                                                                                                                                                                                        color: white;
+                                                                                                                                                                                        text-decoration: none;
+                                                                                                                                                                                        padding: 10px 40px;
+                                                                                                                                                                                        background-color: #FB3B49;
+                                                                                                                                                                                    }
+                                                                                                                                                                                    
+                                                                                                                                                                                    #join-for-free {
+                                                                                                                                                                                        background-color: white;
+                                                                                                                                                                                        color: black;
+                                                                                                                                                                                        text-decoration: none;
+                                                                                                                                                                                        padding: 10px 40px;
+                                                                                                                                                                                        margin-left: 15px;
+                                                                                                                                                                                    }
