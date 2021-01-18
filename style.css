@@ -1,0 +1,285 @@
+/* CSS RESSOURCES
+form label color: rgba(0,0,0,.05)
+form input color: rgba(0,0,0,.05)
+form button background color: #fb3e44
+form button letters color: white
+
+SECTION 1
+suggested height for this section: 600px
+background color: rgba(232,217,217,.3)
+"See plans" button background color: #FB3B49
+"See plans" button box shadow: 8px 8px 0 rgba(251,59,73,.2)
+
+SECTION 2
+heading background color: rgba(255,204,53,.4)
+to get the transform of the yellow background in the left-hand direction use: transform: skew(9deg,0deg);
+to get it in the opposite direction of the letters, the way we need it on the page, use: font-style: italic;
+to additionally fine-tune the position of each element, use margin property.
+
+SECTION 3
+color of the letters in each heading in this section: #ED1C24
+"Create an Org" box shadow: 8px 8px 0 rgba(128,83,35,.2)
+"Create an Org" letters color: white
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap");
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+header {
+  box-shadow: 0 -2px 5px black;
+}
+header > div {
+  padding: 0 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+}
+
+nav {
+  width: 600px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+nav a:hover {
+  color: #fb3e44;
+  -webkit-transition: color 0.3s 0s ease;
+  -moz-transition: color 0.3s 0s ease;
+  -o-transition: color 0.3s 0s ease;
+  transition: color 0.3s 0s ease;
+}
+
+.black-heart {
+  width: 20px;
+  margin-right: 1rem;
+}
+
+.npm-logo {
+  width: 70px;
+  margin-right: 1rem;
+}
+
+.searchbar {
+  display: flex;
+  position: relative;
+  height: 40px;
+  padding: 5px;
+  flex-grow: 1;
+  margin-right: 2rem;
+}
+.searchbar input {
+  background-color: rgba(0, 0, 0, 0.05);
+  border: 0;
+  padding: 10px 40px 10px 50px;
+  font-family: "Fira Mono", "Poppins", sans-serif;
+  flex-grow: 1;
+}
+.searchbar input:focus {
+  outline: none;
+  -webkit-box-shadow: inset 0px 0px 0px 1px black;
+  -moz-box-shadow: inset 0px 0px 0px 1px black;
+  box-shadow: inset 0px 0px 0px 1px black;
+}
+
+.searchbar button {
+  font-family: "Poppins", sans-serif;
+  background-color: #fb3e44;
+  color: white;
+  border: 0;
+  height: 40px;
+  padding: 0 1rem;
+}
+.searchbar button:focus {
+  outline: none;
+}
+.searchbar button:hover {
+  background-color: black;
+  -webkit-transition: background-color 0.5s 0s ease;
+  -moz-transition: background-color 0.5s 0s ease;
+  -o-transition: background-color 0.5s 0s ease;
+  transition: background-color 0.5s 0s ease;
+}
+
+.magnifying-glass {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 30%;
+  left: 20px;
+}
+
+.join-btn {
+  width: 40px;
+  height: 20px;
+  border: 1px solid black;
+  text-align: center;
+  padding: 5px 20px;
+  color: black;
+  text-decoration: none;
+}
+.join-btn:hover {
+  opacity: 0.6;
+  -webkit-transition: opacity 0.5s 0s ease;
+  -moz-transition: opacity 0.5s 0s ease;
+  -o-transition: opacity 0.5s 0s ease;
+  transition: opacity 0.5s 0s ease;
+}
+
+.login-btn {
+  width: 40px;
+  height: 20px;
+  text-align: center;
+  padding: 5px 20px;
+  color: black;
+  text-decoration: none;
+}
+.login-btn:hover {
+  opacity: 0.6;
+  -webkit-transition: opacity 0.5s 0s ease;
+  -moz-transition: opacity 0.5s 0s ease;
+  -o-transition: opacity 0.5s 0s ease;
+  transition: opacity 0.5s 0s ease;
+}
+#section-one {
+  height: 600px;
+  background-color: rgba(232, 217, 217, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#section-one h1 {
+  width: 80%;
+  font-size: 5rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 25px 0 25px 0;
+}
+
+#section-one article {
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  width: 60%;
+  text-align: center;
+  margin: 25px 0 25px 0;
+}
+
+.section-one-btn {
+  margin: 25px 0 40px 0;
+}
+
+.plans-btn {
+  font-weight: 600;
+  margin: 1rem;
+  color: white;
+  text-decoration: none;
+  background-color: #fb3b49;
+  box-shadow: 8px 8px 0 rgba(251, 59, 73, 0.2);
+  padding: 0.8rem 4rem;
+}
+.plans-btn:hover {
+  background: #d12631 ;
+  transition: all 0.5s;
+}
+
+.free-join-btn {
+  font-weight: 600;
+  margin: 1rem;
+  color: black;
+  text-decoration: none;
+  background-color: white;
+  padding: 0.8rem 4rem;
+}
+.free-join-btn:hover {
+  color: rgb(61, 61, 61);
+  background-color: #fafafa;
+  transition: all 0.5s;
+}
+#section-two {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.triangle-hexagon {
+  margin-top: 50px;
+  height: 150px;
+}
+
+#section-two h2 {
+  margin-top: 50px;
+  font-size: 1.7rem;
+  font-weight: 600;
+  background-color: rgba(255, 204, 53, 0.4);
+  transform: skew(9deg, 0deg);
+  font-style: italic;
+  padding: 0 2.5rem;
+}
+
+#section-two article {
+  margin-top: 15px;
+  text-align: center;
+  width: 50%;
+}
+
+#section-three {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 95px;
+}
+#section-three > div {
+  margin: 0 5%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.features {
+  margin: 0 2rem;
+}
+.features-icon {
+  height: 30px;
+}
+
+.features h3 {
+  margin-top: 15px;
+  font-size: 0.9rem;
+  color: #ed1c24;
+  font-weight: 600;
+}
+.features article {
+  font-size: 0.9rem;
+  margin-top: 30px;
+}
+.create-btn {
+  margin: 50px 0 35px 0;
+  padding: 0.9rem 7.5rem;
+  color: white;
+  font-weight: 600;
+  font-size: 0.9rem;
+  background-color: black;
+  box-shadow: 8px 8px 0 rgba(128, 83, 35, 0.2);
+  text-decoration: none;
+}
+.create-btn:hover {
+  padding: 0.9rem 6.5rem;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
