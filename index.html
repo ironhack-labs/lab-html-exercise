@@ -8,7 +8,7 @@
 <body>
 
     <header>
-        <div>
+        <div class="nav">
             <div>
                 <img class="blackHeart" src="images/black-heart.png" alt="black heart" />
                 <span> Nifty Penguin Magic </span>
@@ -25,16 +25,18 @@
             </nav>
         </div>
 
-        <div>
+        <div class="form">
             <!-- add logo, search bar and buttons (or links and style them as buttons later) -->
             <img src="images/npm-logo.png">
-            <img src="images/magnifying-glass.png">
             <form action="/some-url" method="post">
+                <img src="images/magnifying-glass.png">
                 <input type="text" placeholder="search packages" id="search">
-                <button type="submit ">Search</button>
+                <button type="submit">Search</button>
             </form>
-            <a href="">Join</a>
-            <a href="">Log In</a>
+            <div class="login">
+                <a  class="rejoindre" href="">Join</a>
+                <a href="">Log In</a>
+            </div>
         </div>
     </header>
 
@@ -74,7 +76,7 @@
                 <p>Create an org, add your team, and start collaborating. Nothing to configure, set up, or manage. </p>
             </div>
             <div class="feature">
-                 <img src="images/team-management.svg ">
+                <img src="images/team-management.svg ">
                 <h3> Team Management
                 </h3>
                 <p> Control who has access to what modules within your team namespace using straightforward team
@@ -96,7 +98,7 @@
                     source software safer. </p>
             </div>
         </div>
-        <a class ="black-button"  href=" ">Create an Org</a>
+        <a class="black-button" href=" ">Create an Org</a>
     </section>
 
 </body>
