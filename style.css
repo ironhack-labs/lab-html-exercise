@@ -42,16 +42,30 @@ nav a {
 #presentation {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    /*align-items: center;
+    justify-content: center;*/
     height: 600px;
+    justify-content: center;
     background-color: rgba(232, 217, 217, .3);
 }
 
 .red-button {
     background-color: #FB3B49;
     box-shadow: 8px 8px 0 rgba(251, 59, 73, .2);
+    font-size:25px;
+    color:white;
+    padding: 5px 30px;
 }
+.join{color:black;
+font-size: 25px;}
+.links{
+    display:flex;
+    justify-content: space-between;
+    margin:25px 25%;
+    padding-bottom: 49.8px;
+    
+}
+.links>a {text-decoration: none;}
 
 #description {
     margin: 60px 0;
@@ -59,6 +73,7 @@ nav a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
 }
 
 h2 {
@@ -68,9 +83,53 @@ h2 {
 }
 
 #description article {
-    margin: 0 520px;
+    margin: 0 25%;
 }
 
 #description img {
     width: 200px;
 }
+
+#features img {
+    width: 20px;
+}
+
+#features>div {
+    flex-direction: row;
+    justify-content: center;
+    display: flex;
+}
+
+#features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feature {
+    width: 200px;
+    padding: 10px;
+}
+
+h3 {
+    color: #FB3B49;
+}
+
+.black-button {
+    box-shadow: 8px 8px 0 rgba(128, 83, 35, .2);
+    color: white;
+    background-color: black;
+    width: 180px;
+    text-align: center;
+    height: 40px;
+    ;
+}
+
+
+
+#presentation>h1 {
+    font-size: 60px;
+    text-align: center;
+}
+
+#presentation>article{ margin: 0 25%;}
