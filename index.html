@@ -17,6 +17,7 @@
         <span> Nifty Penguin Magic </span>
       </div>
       <nav>
+        <div class="nav a">
         <ul>
           <li><a href="#"> npm Enterprise </a></li>
           <li><a href="#"> Products </a></li>
@@ -28,26 +29,28 @@
       </nav>
     </div>
 
-    <div>
+    <div class="nav b">
       <!-- add logo, search bar and buttons (or links and style them as buttons later) -->
-      <img class="npm-logo" src="images/npm-logo.png" alt="NPM logo">
+      <img class="logo" src="images/npm-logo.png" alt="NPM logo">
         <form>
-          <img class="magnifying-glass" src="images/magnifying-glass.png" alt="magnifying glass">
-            <input type="search" id="site-search" name="search-site" placeholder="Search packages">
-            <button class="search-button">Search</button>
+            <form action="/some-url" method="get">
+              <img class="magnifying-glass" src="images/magnifying-glass.png" alt="magnifying glass">
+            <input type="search" name="search" id="search-box" placeholder="Search packages" i-class="images/magnifying-glass.png">
+            <label for="search" id="search-button">Search</label>
         </form>
-        <div class="join-button">Join</div>
+        <div id="header-join-button">Join</div>
         <a href="#">Log in</a>
     </div>
   </header>
   <!-- Section 1 below: Build Amazing Things -->
   <section id="section-1">
         <h1>Build amazing things</h1>
-          <p id="build-amazing-sub-text">Essential JavaScript development tools that help you go to market faster and build powerful applications
+          <article id="build-amazing-sub-text">Essential JavaScript development tools that help you go to market faster and build powerful applications
             using modern open source code.</p>
-      <div id=section-1-buttons>
-        <button id="plans-button">See plans</button>
-        <button id="join-button">Join for free</button>
+          </article>
+      <div id="section-1-buttons">
+        <div id="plans-button">See plans</div>
+        <div id="body-join-button">Join for free</div>
       </div>
   </section>
   <!-- Section 2 below: The Best of Open Source to Your Company -->
@@ -56,42 +59,40 @@
       <div id="yellow-highlight">
         <h2>Bring the best of open source to your company</h2>
       </div>
-      <div id="yellow-highlight-sub-text">
+      <article id="yellow-highlight-sub-text">
         <p>npm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers already use
           it. Your company depends on it. Create an Org and get more out of the icons your team already knows and loves.
         </p>
-      </div>
+      </article>
   </section>
   <!-- Section 3 below: Cretae an Org. -->
   <section class="container">
-    <div id="zero-config-1">
+    <div class="card">
       <img class="section-3-icons" img src="images/zero-configuration.svg" alt="configuration icon">
-      <h4>Zero configuration</h4>
+      <h3>Zero configuration</h3>
       <p>Create an org, add your team, and start collaborating. Nothing to configure, set up, or manage.</p>
     </div>
-    <div id="team-mgnt-2">
+    <div class="card">
       <img class="section-3-icons" img src="images/team-management.svg" alt="management icon">
-      <h4>Team management</h4>
-      <p>Control who has access to what modules within your team management using straightforward management
+      <h3>Team management</h3>
+      <p>Control who has access to what modules within your team management using straightforward team management
         capabilities.</p>
     </div>
-    <div id="fam-feat-3">
+    <div class="card">
       <img class="section-3-icons" img src="images/familiar-features.svg" alt="features icon">
-      <h4>Familiar features</h4>
+      <h3>Familiar features</h3>
       <p>npm Orgs has 100% parity with all the public npm registry features your developers already use.</p>
     </div>
-    <div id="npm-audit">
+    <div class="card">
       <img class="section-3-icons" img src="images/npm-audit.svg" alt="audit icon">
-      <h4>npm audit</h4>
+      <h3>npm audit</h3>
       <p>Enjoy the security auditing features built in to the npm client, a zero-friction way to make open source
         software safer.</p>
     </div>
     </div>
   </section>
-  <section>
-    <div class="create-org-button">
-  <button>Create an Org</button>
-  </div>
+  <footer id="footer">
+    <div id="create-org-button">Create an Org</div>
   </section>
 </body>
 </html>
