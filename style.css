@@ -1,5 +1,191 @@
+/*General styling*/
+
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
 body {
   font-family: 'Poppins';
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+/*Header section with nav bar*/
+
+header > div {
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+  }
+  
+  nav {
+    width: 600px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .blackHeart {
+    width: 20px;
+    margin-right: 1rem;
+  }
+
+  .searchbar {
+      
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 20px;
+  }
+
+  .searchbar form {
+    color: rgba(0,0,0,.05);
+    background-color: rgba(232,217,217,.3);
+    width:90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .searchbar input {
+      border-style: none;
+      background-color:transparent;
+      padding: 0;
+      position: relative;
+  }
+  .searchbar button {
+      color: white;
+      background: #fb3e44;
+      border-style: none;
+      padding: 0.5rem;  
+  }
+
+  .searchbar a {
+    text-decoration: none;
+    color: rgba(0,0,0,.05);
+  }
+
+.logo {
+    width: 60px;
+}
+
+.magnifying {
+    width: 20px;
+    display:
+}
+  /*Section 1 styling*/
+.join {
+    border: 1px solid rgba(232,217,217,.3);
+  }
+
+  .searchbar input {
+      border-style: none;
+      background-color: rgba(232,217,217,.3); ;
+}
+#intro {
+    display: flex;
+    justify-content: center;
+    height: 600px;
+    background-color: rgba(232,217,217,.3);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#intro article {
+    width: 25%;
+    font-size: 1rem;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+#intro a {
+    text-decoration: none;
+    padding: 1rem;
+}
+.see-plans {
+    color: white;
+    background-color: #FB3B49;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+}
+
+.join-free {
+    color: black;
+}
+  /*Section 2 styling*/
+
+#aim {
+    display: flex;
+    justify-content: center;
+    height: 600px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.hexagon {
+    width: 15%;
+}
+
+#aim article {
+    width: 35%;
+    font-size: 1rem;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+#aim h2 {
+        font-size: 2rem;
+        background-color: rgba(255,204,53,.4);
+        transform: skew(9deg,0deg);
+        font-style: italic;
+        padding-left: 20px;
+        padding-right: 20px;
+}
+  /*Section 3 styling*/
+
+#features {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+#features > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 25px;
+    width: 25%;
+}
+
+#features a {
+    text-decoration: none;
+    color: blue;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    align-self: center;
+}
+#features img {
+    width: 25px;
+}
+#features h3 {
+color: #ED1C24;
 }
