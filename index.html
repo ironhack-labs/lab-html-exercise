@@ -4,12 +4,16 @@
   <head>
     <meta charset="utf-8">
     <title>npm</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
+
+
     <header>
       <div>
         <div>
-            <p><img src="images/black-heart.png"alt="black-heart">Nifty Penguin Magic</p>
+            <img class="blackheart" src="images/black-heart.png"alt="black-heart">
+            <span>Nifty Penguin Magic</span> 
         </div>
         <nav>
          <ul>
@@ -24,16 +28,18 @@
       </div>
       
       <div>
-       <img src="images/npm-logo.png"alt="npm-logo">
+       <img class="npm-logo" src="images/npm-logo.png"alt="npm-logo">
        
-       <form action="/search" method="POST">
-        <img src="images/magnifying-glass.png"alt="magnifying-glass">
+       <form class="searchbar" action="/search" method="POST">
+        <img class="magnifying-glass" src="images/magnifying-glass.png"alt="magnifying-glass">
            <input type="text" name="search" id="search"placeholder="Search packages">
-             <button>Search</button>
+  
+           <input class="bouton" type="button" value="Search">
        </form>
+       
         <div>
-          <a href="join">Join</a>
-          <a href="Log-in">Log in</a>
+          <a class="join" href="join">Join</a>
+          <a class="log" href="Log-in">Log in</a>
         </div>
       </div>
       
@@ -42,18 +48,20 @@
     
     
     
-    <section>
+    <section id="first-sec">
       <h1>Build amazing things</h1>
-      <article>Essential JavaScript development tools that help you go to market faster and build powerful applications using modem open source code.</article>
+      <article>Essential JavaScript development tools that help you<br>
+         go to market faster and build powerful applications<br>
+          using modem open source code.</article>
       <div>
-        <a href="see-plans">See plans</a>
-        <a href="join-for-free">Join for free</a>
+        <a class="see" href="see-plans">See plans</a>
+        <a class="fre" href="join-for-free">Join for free</a>
       </div>
     </section>
     
     
     
-    <section>
+    <section id="second-sec">
         <img src="images/triangle-hexagon.svg"alt="triangle-logo">
       <h2>Bring the best of open source to your company</h2>
       <article>npm is the tool used by
@@ -63,8 +71,8 @@
     
     
     
-    <section>
-      <div>
+    <section id="third-sec">
+    <div>
       <img src="images/zero-configuration.svg"alt="logo-zer-configuration">
       <h4>Zero configuration</h4>
       <p>Create an org, add
