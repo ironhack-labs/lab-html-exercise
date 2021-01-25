@@ -43,13 +43,35 @@ header > div {
     display: flex;
     align-items: center;
 }
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 75px 0;
+}
+
+#team > div > article {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
 
 h1 {
   font-size: 4.2em;
   text-align: center;
   line-height: 1em;
 }
-
+.link-btn {
+  background-color: rgb(67, 163, 230);
+  color: white;
+  font-family: "Roboto Condensed";
+  font-size: 2em;
+  letter-spacing: 0.5px;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 30px;
+}
 
 #bring > div {
     width: 1200px;
@@ -68,7 +90,13 @@ h2 {
   margin-top: 20px;
 }
 
-
+h5 {
+  font-size: 1.1em;
+  color: brown;
+  line-height: 1em;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
 
 .options {
   
@@ -83,10 +111,19 @@ h2 {
 
 }
 
+
 .menu-items {
   
 }
 
+#menu-items > div > item {
+  display: flex;
+}
+
+
 .item {
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 370px;
 }
