@@ -47,8 +47,8 @@ header > div {
   }
   
   .searchBar {
-      width: 600px;
-      height: 20px;
+      width: 850px;
+      height: 26px;
       background-color: rgba(0,0,0,.05);
       text-indent: 30px;
       background-image: url("images/magnifying-glass.png");
@@ -56,43 +56,47 @@ header > div {
       background-position: left center;
       background-size: auto 100%;
       margin-right: 0px;
+      border: none;
       
   }
   .searchButton {
-            height: 27px;
+      height: 27px;
       background-color: #fb3e44;
       color: white;
-      border-style: solid;
-      border-color: #fb3e44;
       margin-left: 0px;
       position: relative;
       left: -5px;
+      border: none;
       
     
   }
+
   .joinButton {
       border: 1px solid #17212e;
       width: 60px;
+      height: 20px;
       background-color: white;
       text-decoration: none;
       text-align: center;
-      color: rgba(0,0,0,.7);
+      color: rgba(0,0,0,.6);
       margin-top: 5px;
       margin-bottom: 5px;
       font-weight: bold;
-      font-size: 0.85em;
-      
+      font-size: 0.7em;
+      padding-top: 4px;
            
   }
   .logInButton {
       text-decoration: none;
-      color: rgba(0,0,0,.7)
+      color: rgba(0,0,0,.6);
+      font-size: 0.75em;
   }
   #search-and-buttons {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     background-color: white;
+    height: 40px;
   }
 
   #build {
@@ -103,13 +107,15 @@ header > div {
       align-items: center;
       padding: 64px 200px;
       width: auto;
-      height: 268px;
+      height: 368px;
       text-align: center;
       margin: auto;
   }
+
   #build h1 {
-  font-size: 3em;
-  font-weight: bolder;
+  font-size: 3.5em;
+  font-weight: 900;
+  
  
 }
 
@@ -117,6 +123,7 @@ header > div {
    margin-bottom: 80px;
    margin-left: 200px;
    margin-right: 200px;
+   font-size: 0.8em;
  }
 
   #build a {
@@ -127,19 +134,37 @@ header > div {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    width: 40%;
+    width: 50%;
     margin-bottom: 80px;
   }
 
   #plans {
     color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+    
+  }
+
+  .button-plans {
     background-color: #FB3B49;
+    width: 180px;
+    height: 45px;
+    border: none;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
   }
   
 
   #free {
     color: black;
+    font-weight: bold;
+    font-size: 1.2em;
+    
+  }
+  .button-free {
     background-color: white;
+    width: 180px;
+    height: 45px;
+    border: none;
   }
 
   #bring {
@@ -154,14 +179,15 @@ header > div {
       margin: auto;
   }
   .triangle-hexagon {
-    width: 120px;
-    margin-bottom: 60px;
+    width: 250px;
+    margin-bottom: 25px;
   }
 
  #bring h2 {
    background-color: rgba(255,204,53,.4);
    transform: skew(9deg,0deg);
    font-style: italic;
+   font-weight: bold;
    margin-left: 80px;
    margin-right: 80px;
    marging-bottom: 100px;
@@ -173,20 +199,23 @@ header > div {
  #bring article {
    padding-left: ;
    padding-right: ;
-   margin-left: 220px;
-   margin-right: 220px;
-   font-size: 0.75em;
+   margin-left: 350px;
+   margin-right: 350px;
+   font-size: 0.7em;
  }
 
   #create {
       display: flex;
       flex-direction: row;
-      margin-left: 60px;
-      margin-right: 60px;
+      justify-content: space-evenly;
+      margin-left: 200px;
+      margin-right: 200px;
       
   }
   #create h3 {
     color: #ED1C24;
+    font-size: 0.7em;
+    font-weight: bold;
   }
   #create p {
     font-size: 0.6em;
