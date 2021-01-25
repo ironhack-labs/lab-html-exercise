@@ -45,7 +45,7 @@ header > div {
     flex: 2 1 0;
     display: flex;
     flex-direction: row;
-    margin: 0 20px 0 10px;
+    margin: 0 2rem 0 1rem;
   }
   header div.search>img{
       width: 50px;
@@ -57,12 +57,13 @@ header form>input{
     background-repeat: no-repeat;
     border: 0px;
     background-color: rgba(232,217,217,.3);
-    padding: 10px 10px 10px 30px;
+    padding: 1rem;
+    padding-left: 2rem;
 }
 header form>button{
     background-color: #FB3B49;
     color: white;
-    padding: 10px;
+    padding: 1rem;
     border: 0;
 }
 section:first-of-type{
@@ -81,7 +82,7 @@ section:first-of-type>h1{
 }
 section:first-of-type>a{
     height: 30px;
-    margin: 20px;
+    margin: 1rem;
 }
 section:first-of-type>div{
     width: 33%;
@@ -97,9 +98,53 @@ section:first-of-type>div>*:first-child{
     background-color: #FB3B49;
     border: 0;
     height: 60px;
-    box-shadow: 6px 6px rgba(232,217,217,.3);
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2)
 }
 section:first-of-type>div>span{
     text-align: right;
-    padding-right: 20px;
+    padding-right: 2rem;
+}
+section.openSource{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+section.openSource>*{
+    margin: 1rem;
+}
+section.openSource>img{
+    width: 25%;
+}
+section.openSource>article{
+    width: 50%;
+}
+section.openSource h2{
+    background-color:rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+    padding: 0 1rem 0 1rem;
+}
+section.org{
+    display: flex;
+    padding: 3rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+section.org h3{
+    color: #ED1C24;
+}
+section.org>*{
+    width: 25%;
+}
+section.org>*:last-child{
+    width: 33%;
+    margin: 3rem;
+    padding: 1rem;
+    background-color: black;
+    color: white;
+    border: 0;
+    box-shadow:  8px 8px 0 rgba(128,83,35,.2);
+}
+section.org img{
+    width: 25px;
 }
