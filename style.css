@@ -8,7 +8,14 @@ body {
 
 body {
     font-family: 'Poppins';
+    font-size: 12px;
 }
+
+h1 {
+    font-size: 6em;
+    font-weight: 1500;
+}
+
 
 header>div {
     padding: 0 45px;
@@ -126,9 +133,62 @@ nav a {
 #amazing-things {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
     background-color: #F7F4F4;
     height: 700px;
     width: 80%;
     padding: 40px 100px;
     margin: auto;
+}
+
+#amazing-things p {
+
+    width: 400px;
+    text-align: center;
+    font-size: 1.5em;
+
+}
+
+.button-position {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 400px;
+}
+
+.red-button {
+    background-color: #FB3B49;
+    height: 45px;
+    width: 165px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 7px 6px 2px 1px rgb(251 59 73 / 50%);
+
+}
+
+.white-button {
+    background-color: white;
+    border: 1px;
+    height: 45px;
+    width: 165px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.red-button a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-self: center;
+
+}
+
+.white-button a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-self: center;
+
 }
