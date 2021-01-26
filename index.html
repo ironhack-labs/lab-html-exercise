@@ -4,6 +4,7 @@
 <head>
     <title>My first document</title>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -14,7 +15,7 @@
 
             <!--div heart & link -->
             <div>
-                <img src="images/black-heart.png" alt="black heart">
+                <img class="blackHeart" src="images/black-heart.png" alt="black heart">
                 <span>Nifty Penguin Magic</span>
             </div>
 
@@ -33,17 +34,22 @@
         </div>
 
         <!--div bloc 2 header -->
-        <div>
-            <img src="images/npm-logo.png" alt="logo">
+        <div class="container-header">
+            <img class="npm-img" src="images/npm-logo.png" alt="logo">
 
-            <form action="">
-                <img src="images/magnifying-glass.png" alt="loupe">
-                <label for=""></label><input type="text" placeholder="Search packages">
+
+            <form class="custom" action="">
+
+                <div class="custom-form"><label for=""><img src="images/magnifying-glass.png" alt="loupe"></label><input
+                        type="text" placeholder="            Search packages">
+                </div>
                 <button type="submit">Search</button>
             </form>
-            <div>
-                <a href="#">Join</a>
-                <a href="#">Log in</a>
+
+
+            <div class="link-nav">
+                <button><a href="#">Join</a></button>
+                <button><a href="#">Log in</a></button>
             </div>
 
         </div>
@@ -51,7 +57,7 @@
     </header>
 
     <!--section 1 -->
-    <section>
+    <section id="amazing-things">
         <h1>Build amazing things</h1>
         <article>
             <p>Essential JavaScript development tools that help you go to market faster and build powerful applications
@@ -66,7 +72,7 @@
     </section>
 
     <!--section 2 -->
-    <section>
+    <section id="open-source">
         <img src="images/triangle-hexagon.svg" alt="triangle hexagon">
         <h2>Bring the best of open source to your company</h2>
         <article>
@@ -79,7 +85,7 @@
     </section>
 
     <!--section 3 -->
-    <section>
+    <section id="npm-features">
 
         <div>
 
