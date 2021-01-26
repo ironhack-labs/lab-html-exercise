@@ -1,7 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins');
-
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:700|Roboto:100,300,700');
+html, 
 body {
-  font-family: 'Poppins';
+    font-family: Roboto;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: inherit;
 }
 header > div {
     padding: 0 25px;
@@ -9,177 +14,166 @@ header > div {
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid lightgray;
-  }
-  
-  nav {
+}
+nav {
     width: 600px;
-  }
-  
-  nav ul {
+}
+nav ul {
     list-style: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-  
-  nav a {
+}
+nav a {
     text-decoration: none;
     color: black;
-  }
-  
-  .blackHeart {
+}
+.blackHeart {
     width: 20px;
-    margin-right: 1rem;
-  }
-
-  .NPMLogo {
+    margin-right: 1rem; 
+}
+.underheader {
+    height: 40px;
+}
+.underheader img{
     width: 60px;
-  }
-
-  .search-wrapper {
-    position: relative;
-    top: 9px;
 }
-
-
-.search-wrapper img {
-    position: absolute;
-    top: 
-    left: 
-
+.underheader a{
+    color: grey;
+    text-align: center;
+    text-decoration: none;
+    padding: 3px 10px;
+    background-color: white;
+    border: 1px solid grey;
 }
-
-
-
-.MagnifyingGlass {
-    width:20px;
-     position: relative;
-
-left: -30px;
-top: 3px;
+.underheader form {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+} 
+.underheader form input {
+    height: 22px;
 }
-
-div button {
-background-color: #fb3e44;
-padding:2px;
-border-color: white;
-color: white;
-  position: relative;
-width: 70px;
-
-
+.underheader form .search-bar{
+    width: 1000px;
+    background-color: lightgrey;
+    color: grey;
+    border: 1px solid grey;
 }
-
-#joinlogin button{ 
-  color: black;
-  text-decoration: none;
-  background-color: white;
-width: 50px;
-  border-color: white;
-  position: static;
-  padding: 2px ;
+.underheader form img {
+    width: 24px;
+    height: 24px;
 }
-#joinlogin a{ 
-  color: black;
-  text-decoration: none;
-  border: 10px blueviolet;
-  padding: 10px ;
-  position: relative;
-  border-color: #3B3BFF;
-  left: 10px;
-  top: 10px;
+.underheader form .submit-btn{
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    background-color: #FB3B49;
+    height: 26px;
+    width: 80px;
+    outline: none;
+    border: 1px solid grey;
 }
-
-section { 
- 
+.underheader div .top-btn2{
+    color:grey;
+    text-align: center;
+    text-decoration: none;
+    padding: 3px 10px;
+    border: none;
 }
-#part-1 { 
-  background-color:rgba(232,217,217,.3)  ;
-  text-align:center;
-  height:600px ;
+#intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 600px;
+    background-color: rgba(232,217,217,.3);
 }
-h1 {
-  text-align: center;
-  font-size: 50px;
-  border: 1px solid rgba(232,217,217,.3);
-  width: 700px;
-  position: relative;
-left: 170px;
- 
+#intro h1 {
+    font-size: 80px;
 }
-
-p {
-border: 1px solid rgba(232,217,217,.3);
-width: 400px;
-font-size: 20px;
-padding: 20px;
-position: relative;
-left: 300px;
-
+#intro article {
+    width: 30%;
+    margin: 30px 30px 60px 30px;
+    font-size: 1.5em;
+    text-align: center;
+    padding-bottom: 10px;
 }
-
-#part-1 a1 {
-  text-align: center;
-border: 1px solid ;
-background-color: #fb3e44;
-width: 70px;
-height: 100px;
-text-decoration: none;
-font-size:20px;
-padding: 10px;
-color: white;
-box-shadow: 10px 5px 5px rgba(251,59,73,.2);
+#intro div {
+    width: 30%;  
+    display: flex;
+    justify-content: space-around;
 }
-
-.two {
-  text-align: center;
-border: 1px solid ;
-width: 400px;
-text-decoration: none;
-color: black;
-background-color: rgba(232,217,217,.3); 
+#intro .link-btn1 {
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 30px 10px 30px;
+    background-color: #FB3B49;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
 }
-
-#part-2 { 
-  text-align:center;
-  height:600px ;
+#intro .link-btn2 {
+    font-size: 1.5em;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 30px 10px 30px;
+    color: black;
+    background-color: white;
 }
-
-#part-2 img { 
- width: 250px;
+#sales-point {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 400px;
 }
-
- h3 { 
-font-size: 30;
-background-color: rgba(255,204,53,.4);
-transform: skew(9deg,0deg);
-font-style: italic;
-margin-left: 100;
-margin-right: 100;
+#sales-point img {
+    height: 30%;
+    margin-bottom: 10px;
 }
-
-#part-2 p { 
-  border: white;
-  width: 670;
-  font-size: 15;
-  position: relative;
-  left: 170px;
- }
-
- #part-3 {
- display: flex; 
-align-items: flex-start ;
-justify-content: center ;
-flex-direction: row;
-height:420px;
+#sales-point h1 {
+    font-size: 2em;
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+    font-style: italic;
+    margin: 30px;
 }
-
-
-#part-3 img { 
-width: 25px;
+#sales-point article {
+    box-sizing: border-box;
+    width: 45%;
+    text-align: center;
+    padding-bottom: 10px;
 }
-
-h4 { 
-  
+#four-blocks {
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
-#ED1C24
+#four-blocks img{
+    height: 18px;
+}
+#four-blocks h2 {
+    color: #ED1C24;
+    font-size: 1em;
+}
+#four-blocks .blocks{
+    display: flex;
+    justify-content: space-between;
+}
+#four-blocks .individual-blocks{
+    margin: 20px;
+    width: 200px;
+    text-align: left;
+}
+#four-blocks a {
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 30px 10px 30px;
+    background-color: black;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    margin-top: 40px;
+}
