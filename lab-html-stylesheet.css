@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body {
+  font-family: 'Poppins';
+  margin: -8px;
+}
+
+header > div {
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(228, 224, 224);
+    margin: 0;
+    
+}
+
+nav {
+    width: 600px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.blackHeart {
+    width: 20px;
+    margin-right: 1rem;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    border-width: 0;
+    box-sizing: border-box;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    box-shadow: 0px 5px 5px rgb(228, 224, 224);
+    margin: 0;
+}
+    
+.search-bar form {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+}
+
+#search-input{
+    flex-grow: 1;
+    background-color: rgba(0,0,0,.05);
+    background-image: url("images/magnifying-glass.png");
+    background-repeat: no-repeat;
+    background-size: 26px;
+    background-position: 15px center;
+    padding-left: 50px;
+    border: none;   
+    font-size: 1.2rem;
+    font-family:'Courier New', Courier, monospace;
+    margin-left: 5px;
+}
+
+
+.search-bar form button {
+    height: 50px;
+    width: 120px;
+    color: white;
+    background-color:#fb3e44;
+    font-family: inherit; 
+    font-size: 1.1rem;
+    border: none;
+}
+
+#glass {
+    width: 20px;
+}
+
+#npm-logo {
+    width: 80px;
+    margin-right: 1rem;
+}
+
+.top-links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0 0 0 30px;
+}
+.top-links a {
+    width:65px;
+    text-decoration: none;
+    color: grey;
+    text-align:end;
+}
+
+#join {
+    border-style: solid;
+    border-width: 2px;
+    box-sizing: border-box;
+    box-shadow: 3px #eee;
+    text-align:center;
+    padding: 5px 5px;
+    margin-right: 10px;
+}
+
+#plans {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+    height: 600px;
+    background-color: rgba(232,217,217,.3);
+}
+
+#plans p, div {
+    margin: 25px;
+}
+
+#plans h1 {
+    font-size: 5rem;
+    text-shadow: 0.7px 0 black;
+    letter-spacing:1px;
+    font-weight:bold;
+    margin: 10px 25px 15px 25px;
+    width: 890px;
+}
+#plans p {
+    width: 550px;
+    text-align: center;  
+    font-size: 1.2rem;
+
+}
+#plans > div {
+      display: flex;
+      justify-content: space-between;
+      align-content:center ;
+}
+  
+#plans a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+      text-decoration: none;
+      font-weight: 900;
+      width: 215px;
+      height: 35px; 
+      font-size: 1.2em;
+}
+#see-plans {
+      background-color: #FB3B49;
+      box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+      color:white;
+      margin: 0 20px 0 0; 
+}
+#join-free{
+      background-color: white;
+      color: black;
+      margin: 0 0 0 20px;  
+}
+
+#hexagon {
+    width: 240px;
+}
+#npm-description {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+    height: 600px;
+}
+
+#npm-description h2 {
+    display: flex;
+    align-items:center;
+    justify-content: center ;
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+    font-style: italic;  
+    font-weight: bold;
+    margin-top: 60px;
+    font-size: 2.1rem;
+    width: 850px;
+}
+
+#npm-description p {
+    width: 670px;
+    text-align: center;
+}
+
+#npm-features {
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    margin: 65px 120px 80px;;
+}
+#npm-features h3{
+    color: #ED1C24;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+#npm-features article {
+    margin: 7px;
+    min-width: 270px;
+    flex-grow: 1;
+}
+
+#npm-features img {
+    width: 35px;
+}
+#npm-features p {
+    font-size: 1.1em;
+}
+
+#org{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#org a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    width: 430px;
+    height: 60px; 
+    background-color: black;
+    color: white;
+    box-sizing: border-box;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+}
