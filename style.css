@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css?family=Poppins|Poppins:100,800');
 
 body {
   font-family: 'Poppins';
@@ -26,6 +26,7 @@ header > div {
   nav a {
     text-decoration: none;
     color: black;
+    font-weight: normal;
   }
   
   .blackHeart {
@@ -63,7 +64,6 @@ header > div {
 
 .btn {
   padding: 10px 20px;
-  border-color:lightgrey;
   text-decoration: none;
   color: black;
 }
@@ -85,16 +85,18 @@ h1 {
 
 h2 {
   font-size: 2em;
-  font-weight: bold;
   background-color: wheat;
   padding: 0px 30px;
   transform: skewX(15deg);
   font-style: italic;
 }
 
+h3 {
+  color:rgb(255, 50, 0);
+}
+
 div a {
   text-decoration: none;
-  font-weight: bold;
 }
 
 .buildArticle {
@@ -111,6 +113,7 @@ div a {
   padding: 15px 50px;
   border: none;
   box-shadow: #e2b1a3 8px 10px 8px;
+  font-weight: bold;
 
 }
 
@@ -121,6 +124,7 @@ div a {
   margin: 20px;
   padding: 15px 50px;
   border: none;
+  font-weight: bold;
 }
 
 .bringTheBest {
@@ -141,4 +145,36 @@ div a {
   padding: 50px;
   width: 750px;
   position: center;
+}
+
+.createOrg {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+  padding: 20px;
+}
+
+.createOrgDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  width: 300px;
+  flex: 1 0 20%;
+  padding: 45px;
+}
+
+div > img {
+  width: 30px;
+}
+
+.createOrgBtn {
+  padding: 15px 150px;
+  margin: 50px;
+  color: white;
+  text-decoration: none;
+  background-color: black;
+  box-shadow: #929292 8px 10px 8px;
+  font-weight: bold;
 }
