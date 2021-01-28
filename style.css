@@ -1,109 +1,225 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
-html, body {
-  margin: 0;
-  padding: 0;
-}
-
 body {
   font-family: 'Poppins';
 }
+/* div 1 header */
 
 header > div {
-  padding: 0 25px;
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+  }
+
+  /* navigation bar */
+  
+  nav {
+    width: 600px;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .blackHeart {
+    width: 20px;
+    margin-right: 1rem;
+  }
+/*2nd div of header*/
+  .bottom {
+    display: flex;
+    height: 40px;
+  }
+
+  .npm-logo {
+    width: 80px;
+    padding: 5px;
+  }
+
+.form {
   display: flex;
+  justify-content: center;
+  flex-direction: row;
+  
+}
+
+.form input{
+    background-image: url("./images/magnifying-glass.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: contain;
+    color: rgba(0,0,0,.05);
+    padding: 9px;
+    border: 0px;
+    background-color: rgba(0,0,0,.05);
+    width: 850px;
+}
+
+::placeholder {
+  padding: 30px;
+}
+
+.form button {
+  background-color: #fb3e44;
+  color: white;
+  border: 0;
+  padding: 9px;
+  font-size: 1em;
+}
+
+/*links*/
+
+.join-log {
+  display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid lightgray;
+  padding: 3px 10px;
+}
+.join-btn {
+  border: 0.5px solid black;
+  padding: 5px 10px;
+  font-size: 1em;
+  background-color: white;
+  color: black
+
 }
 
-nav {
-  width: 600px;
+.log-btn {
+  text-decoration: none;
+  color:black;
+  font-size: 1em;
+  padding: 0px 0px 0px 40px;
+
+}
+/*section 1*/
+.section-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    background-color:rgba(232,217,217,.3)
+}
+h1 {
+  font-size: 4em;
 }
 
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.see-plans-button {
+  background-color: #FB3B49;
+  box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+  padding: 5% 9.5%;
+  color: white;
+  font-size: 1em;
+  border: 0;
 }
 
-nav a {
+.join-free {
   text-decoration: none;
   color: black;
+  font-size: 1em;
+  padding: 0px 0px 0px 40px;
 }
 
-.blackHeart {
-  width: 20px;
-  margin-right: 1rem;
-}
-
-.npm-logo {
-  width: 90px;
-  margin-right: 1rem;
-
-}
-
-
-.input-icono {
+.section-1-links {
   width: 40%;
-  margin: 18px auto 0 auto;
-  font-size: 1.5em;
-  text-align: center;
-  background-image: url('/Users/raquelrodriguezdiaz/Desktop/Ironhack/Prework/lab-html-exercise/lab-html-exercise/images/magnifying-glass.png');
-  background-repeat: no-repeat;
-  background-position: 4px center;
-  background-size: 20px;
-  background-color: rgba(0,0,0,.05);
   display: flex;
+  flex-direction: row;
   align-items: center;
-  width: 1500px;
-  padding-left: 28px;
-  border-radius: 3px;
- 
-}
-.input-icono input {
-  width: 90%;
-  font-size: 0.9em;
-  border: none;
-  background-color: rgba(0,0,0,.05);
-  display:flex;
+  justify-content: space-around;
+  padding: 4%
 }
 
-.input-icono button{
-  border: none;
-  color: white;
-  background-color: #fb3e44;
-  padding: 15px;
-  display:flex;
+.article-1 {
+  width: 40%;
+  text-align: center;
+}
 
+/* section 2 */
+
+.section-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    background-color:white;
 }
-#section-1 {
-  height: 600px;
-  background-color:rgba(232,217,217,.3);
-  margin-top: 50px;
-}
-.container {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 75px 0;
-}
-.text {
-  font-size: 2em;
-  font-weight: 100;
-  text-align: center;
-  margin: 20px 0;
-}
-h1{
-  text-align: center;
-} 
-#section-1 div{
-  text-align: center;
+
+.hexagon {
   display: flex;
-  align-items: center;
+  position: relative;
+  width: 20%;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.article-2 {
+  display: flex;
+  position: relative;
+  width: 50%;
+  text-align: center;
+  margin-bottom: 15px;
+  padding: 0px 100px;
+}
+.title-2 {
+  
+  background-color: rgba(255,204,53,.4);
+  transform: skew(9deg,0deg);
+  font-style: italic;
+  padding: 5px 15px;
+  width: 45%;
+  
+}
+
+.h2 {
+  text-align: center;
+  font-size: 1.7em;
+}
+
+/* section 3*/
+
+h3 {
+  color: #ED1C24;
+}
+
+.articles {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-top: 4%;
 
 }
-#section-2 img{
-  width:300px;
+
+.articles img{
+  width: 20%;
+}
+
+.block-article {
+  padding: 40px 60px;
+}
+.org-button {
+  display: flex;
+  justify-content: center;
+  margin: 4%;
+}
+
+.org {
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding: 1% 3.5%;
+    font-size: 1.2em;
 }
 
