@@ -64,7 +64,21 @@ header > div {
 .search-container>img{  
   width:80px;
   height:23px;
- 
+
+}
+#description{
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  min-height:600px;
+}
+#description article{
+   width:60%;
+}
+
+#description>img{
+  width: 300px;
 }
 #input-style{
   padding-top:20px;
@@ -115,21 +129,34 @@ header > div {
   }
 
 
-
-  #features {
+  #features-bg{
     display:flex;
     justify-content:center;
+    flex-wrap: wrap;
+  }
+  .features {
+    display:flex;
+    justify-content:space-between;
     align-items:center;
      flex-wrap: wrap;
+     max-width:100%;
+    
   }
-  #features .grid-bg {
-    width:250px;
+  .features .grid-bg {
+    flex: 0 0 250px;
+    
   }
+ 
   .black-bg{
     border:1px black solid;
     background-color: black;
     color:white;
-
+    display:flex;
+    flex-direction: column;
+    width:25vw;
+    height:40px;
+    text-align: center;
+    padding-top:10px;
 }
 
 
