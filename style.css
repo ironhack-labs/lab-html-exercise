@@ -14,7 +14,8 @@ header > div {
 }
 
 nav {
-  widht: 600px;
+  width: 600px;
+  display: flex;
 }
 
 nav ul {
@@ -30,16 +31,16 @@ nav a {
 }
 
 .blackHeart {
-  widht: 20px;
+  width: 20px;
   margin-right: 1rem;
 }
 
 .logo {
-    width: 20px;
+   width: 20px;
 }
 
 .magnifying-glass {
-    width: 20px;
+   width: 20px;
 }
 
 header div form a {
@@ -74,21 +75,49 @@ header div form input {
     height: 32px;
 }
 
+#bottom-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em 1.7em;
+}
+
+#bottom-header {
+  display: flex;
+}
+
+#bottom-header > img {
+  height: 1.5em;
+  line-height: 1.5em;
+  vertical-align: middle;
+}
+#bottom-header form {
+  position: relative;
+}
+
+#bottom-header input:focus {
+  outline: 0;
+}
+
+#bottom-header > div > a {
+  text-decoration: none;
+  color: black;
+}
+
 /* Build */
  #build {
-      background-color: rgba(232,217,217,.3);
-      text-align: center;
-      align-items: center;
-      margin: auto;
-      width: auto;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
+   background-color: rgba(232,217,217,.3);
+   text-align: center;
+   align-items: center;
+   margin: auto;
+   width: auto;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
   }
 
  #build h1 {
-  font-size: 5em;
-  font-weight: bolder;
+   font-size: 5em;
+   font-weight: bolder;
 } 
 
  #build article {
@@ -173,11 +202,32 @@ header div form input {
     width: 25px;
   }
 
-.button {
-    color: white;
-    background-color: black;
-    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+  #list-features {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 5em;
+    cursor: pointer;
+  }
+  #list-features div {
+    width: 12em;
+  }
+  #list-features img {
+    height: 3em;
+    width: 3em;
+  }
+  #organisation {
+    display: block;
     text-align: center;
-    align-self: flex-end;
-    height: 50px;
+    padding-bottom: 4em;
+  }
+  #organisation button {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-size: 1.4em;
+    padding: 0.6em 6em;
+    cursor: pointer;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
   }

@@ -8,6 +8,7 @@
 <body>
   <header>
     <div>
+      <div>
    <img class="blackHeart" src="images/black-heart.png" alt="black heart"/>
    <span>Nifty Penguin Magic</span>
     </div>
@@ -23,19 +24,20 @@
        </ul>
      </nav>
     </div>
-         
-        <div>
-        <img class="logo"src="images/npm-logo.png" alt="npm-logo"/>
-        <img class="magnifying-class" src="images/magnifying-glass.png" alt="magnifying-logo"/>
-              
+
+        <div id="bottom-header">
+        <img class="logo"src="images/npm-logo.png" alt="npm-logo"/>     
         <form action="search" method="post">
+          <img class="magnifying-glass" src="images/magnifying-glass.png" alt="search-loup"/>
         <label for="search"></label>     
         <input type="text" name="search" placeholder="Search Packages"/>          
        <a href="#">Search</a>
        </form>
+        <div>
           
      <a href="#" class="join">Join</a>
      <a href="#" class="login">Login</a>
+        </div>
         </div>
         </header>
   
@@ -66,6 +68,7 @@
  
 <!-- Zero --> 
 <section id="zero">
+<div id="list-features">
 <div>
 <img class="zero-configuration" src="images/zero-configuration.svg" alt="arrow pointing to a black rectangle">
 <h3>Zero configuration</h3>
@@ -89,8 +92,11 @@
 <h3>npm audit</h3>
 <p>Enjoy the security auditing features built into the npm lient, a zero-friction way to make open source software safer.</p>
 </div>
+</div>
 
+<div id="organisation">
 <button class="button" href="#">Create an Org</button>
+</div>
 
 </section>
 </body>
