@@ -28,86 +28,77 @@ header > div {
     color: black;
   }
   
-  .blackHeart {
-    width: 20px;
-    margin-right: 1rem;
+  #bottom-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 1.7em;
   }
 
-  label {
-      color: rgba(0, 0, 0, 0.5);
+  #bottom-header>img {
+    height: 1.5em;
+    line-height: 1.5em;
+    vertical-align: middle;
   }
 
-  input {
-      color: rgba(0, 0, 0, 0.5);
+  #bottom-header form {
+    position: relative;
   }
 
-  /* Barre de recherche avec loupe.
-  J'ai désactivé la ligne 32 qui insére l'image de la loupe dans le fichier HTML.
-  J'ai ajouté ladite image dans le fichier CSS (voir ligne 62).
-  Je ne sais pas redimensionner l'image de la loupe à l'intérieur d'une barre de recherche.
-  Alors, j'ai utlisé Paint pour la redimensionner.
-  Mais j'ai perdu la transparence, et j'ai un fond blanc à la place.
-  J'aurai pu garder la transparence si j'avais la version payante de Paint.
-  Il faudrait que je change la couleur du fond blanc en fond gris.
-  Mais j'ai laissé le fond blanc pour que tu puisses voir l'erreur.
-  Du coup, peux-tu me donner la bonne méthode ?
-  Merci d'avance ! */
   #search {
-    padding-left: 30px;
-    position: absolute;
-    left: 160px;
-    height: 45px;
-    width: 1385px;
+    font-size: 1em;
+    width: 44em;
+    height: 2.4em;
+    background-color: rgba(0, 0, 0, .05);
     border: none;
-    background: url('images/magnifying-glass-23px.png') no-repeat center left;
-    background-color:lightgrey;
+    padding-left: 3em;
   }
 
-  /* Bouton de recherche. */
-  button {
-      background-color: #fb3e44;
-      color: white;
-      height: 45px;
-      padding: 0 30px;
-      position: relative;
-      right: -630px;
+  #bottom-header input:focus {
+    outline: 0;
   }
+
+  #search-button {
+    color: white;
+    background-color: #e84d50;
+    cursor: pointer;
+    border: none;
+    margin-left: -0.5em;
+    font-size: 1em;
+    height: 2.5em;
+    padding: 0 1.5em;
+    font-weight: lighter;
+  }
+
+  .loupe-logo {
+    position: absolute;
+    bottom: 0.5em;
+    left: 0.8em;
+    width: 1.4em;
+    height: 1.4em;
+  }
+
+  .links > a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .header-links-1 {
+    border: 1px solid black;
+    padding: 0 14px;
+    margin-right: 20px;
+   }
+
 
   .blackheart {
     width: 20px;
     height: auto;
+    margin-right: 1rem;
   }
 
   .npm-logo {
     width: 100px;
     height: auto;
     margin: 15px 0;
-  }
-
-  .header-links-1,  .header-links-2 {
-      text-decoration: none;
-      color: black;
-  }
-
-  .header-links-1 {
-      border: black solid 1px;
-      padding: 5px 15px;
-  }
-
-  .links {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: row;
-    width: 150px;
-  }
-
-  form {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-    width: 250px;
   }
 
   #section-1 {
@@ -156,7 +147,6 @@ header > div {
     height: auto;
 }
 
-/* Section-2 recentrée. */
 #section-2 {
   display: flex;
   justify-content: center;
@@ -188,15 +178,12 @@ h3 {
 }
 
 
-/* Section-3 recentrée. */
 #section-3 {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   height: 600px;
-  position: absolute;
-  right: 550px;
 }
 
 
@@ -206,10 +193,7 @@ h3 {
     align-items: flex-start;
     flex-direction: row;
     flex-wrap: nowrap;
-    width: 1300px;
-    position: relative;
-    left: 250px;
-    
+    width: 100%;   
 }
 
 #section-3 p {
@@ -220,7 +204,6 @@ h3 {
     margin-left: 100px;
 }
 
-/* Bouton "Create an Org" recentré. */
 .last-button {
     background-color: black;
     box-shadow: 8px 8px 0 rgba(128, 83, 35, 0.2);
@@ -229,7 +212,4 @@ h3 {
     text-decoration: none;
     align-items: center;
     margin-top: 200px;
-    position: relative;
-    left: 300px;
-    bottom: 100px;
 }
