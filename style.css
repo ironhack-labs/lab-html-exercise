@@ -8,6 +8,7 @@ body a{
 }
 h1 {
   font-size:55px;
+  font-weight:bolder;
 }
 header > div {
     padding: 0 25px;
@@ -30,6 +31,14 @@ header > div {
     text-decoration: none;
     color: black;
   }
+  .border-gray{
+    border:2px solid rgb(196, 196, 196);
+   padding:3px 12px;
+   margin-right:8px;
+  }
+  .linkColorgrayish {
+    color:rgb(85, 85, 85);
+  }
 
   .blackHeart {
     width: 20px;
@@ -50,84 +59,104 @@ header > div {
   #onHover li a:hover{
     color:gray;
   }
-  .flex-container{
-    display:flex;
-    padding:5px;
-  justify-content:space-between;
-
-}
-.flex-container img{
-    width:70px;
-    height:23px; 
-}
 
 .search-container>img{  
   width:80px;
   height:23px;
-
-}
-#description{
-  display: flex;
-  flex-direction:column;
-  justify-content: center;
-  align-items: center;
-  min-height:600px;
-}
-#description article{
-   width:60%;
-}
-
-#description>img{
-  width: 300px;
+ margin-left:12px;
+ padding-top:10px;
 }
 #input-style{
   padding-top:20px;
+  position:relative;
+
 }
-  #input-style input{
+#input-style input[placeholder], #input-style button{
+ font-size:15px;
+}
+#input-style input{
     background:rgb(242, 242, 242);
     border:none;
     border-radius:0;
     height:40px;
-    width: 60vw;
-    padding-left:60px;
+    width: 67vw;
+    padding-left:35px;
   }
   #input-color input:focus{
     outline:none;
   }
- #magnifyingGlass img{
+#input-style>img{
     width:18px;
     height:18px;
+    padding-top:13px;
+    padding-left: 10px;
+    position: absolute;
+ }
+ .padding-top{
+   padding-top:5px;
  }
 
  #product-plans{
      height:600px;
      background-color: rgba(232,217,217,.3);
-     margin:auto 0;
      display:flex;
      justify-content: center;
      align-items: center;
      flex-direction: column;
  }
- #product-plans> article,  #product-plans>div{
-  max-width:400px;
+ #product-plans> article{
+  max-width:440px;
   height:100px;
+  text-align: center;
 }
-.linkColorBlack {
-  color:black;
+.flex-container{
+  width:440px;
+  display:flex;
+  justify-content: space-between;
 }
 .redLinkBg{
-    background-color: #FB3B49;
-    border:1px solid #FB3B49;
-     height:60px;
-     width:200px;
-     display:flex;
-     align-items:center;
-     justify-content: center;
+  background-color: #FB3B49;
+  border:1px solid #FB3B49;
+   color:white;
+   box-shadow:8px 8px 0 rgba(251,59,73,.2) ;
+}
+  .whiteBg{
+    border:white 1px solid;
+    background-color:white;
+    color:black;
+    margin-left:25px;
   }
-  .redLinkBg>a{
-    color:white;
+  .productLinks{
+    width:200px;
+    height:35px;
+    padding-top:11px;
+    text-align:center;
+    font-weight:bold;
   }
-
+  #description{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    min-height:600px;
+  }
+  #description h2{
+    border:1px solid gba(255,204,53,.4);
+    background-color: rgba(255,204,53,.4);
+    width:63vw;
+    font-style:italic;
+    transform:skew(9deg,0deg);
+    margin:30px;
+    font-size:32px;
+    text-align:center;
+  }
+  #description article{
+     width:50vw;
+     text-align:center;
+  }
+  #description>img{
+    width: 180px;
+  }
 
   #features-bg{
     display:flex;
@@ -152,8 +181,6 @@ header > div {
     border:1px black solid;
     background-color: black;
     color:white;
-    display:flex;
-    flex-direction: column;
     width:25vw;
     height:40px;
     text-align: center;
