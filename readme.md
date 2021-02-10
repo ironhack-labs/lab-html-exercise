@@ -1,4 +1,4 @@
-[See live-demo of my Results](https://raw.githack.com/Cleverttech/lab-html-exercise/master/index.html)
+[See live-demo of my Results-excluding Images](https://raw.githack.com/Cleverttech/lab-html-exercise/master/index.html)
 
 
 
