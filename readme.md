@@ -105,6 +105,8 @@ When done, you should get something similar to this:
 
 You're ready to move to the next iteration. :raised_hands:
 
+*****************************************************************************************************************
+
 #### HTML 2 | Content Sections
 
 Take a look at the image with market HTML elements on it one more time, and you can see we have three sections below the header. Create `section` tags and give each of them `id`s so you can identify them quickly.
@@ -116,7 +118,7 @@ The content for each of these sections is already in the _index.html_ but you ha
 You can see the final result on the gif at the beginning of this exercise.
 
 The time has come! Let's add some styles and make it pretty! :nail_care:
-
+*****************************************************************************************************************
 ### Part II - CSS/styles
 
 #### CSS 1 | Setup
