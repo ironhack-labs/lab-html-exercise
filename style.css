@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap');
+
 
 body {
     font-family: 'Poppins';
@@ -83,6 +84,7 @@ button {
     border-style: none;
     cursor: pointer;
     font-family: 'Poppins';
+    font-weight: 300;
 }
 
 .header-links {
@@ -100,12 +102,12 @@ button {
 
 .header-links :nth-of-type(1) {
     border: 1px solid black;
-    border-radius: 10%;
-    padding: 6px 12px;
+    border-radius: 5%;
+    padding: 5px 20px;
 }
 
 #top {
-    height: 600px;
+    height: 650px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -115,15 +117,16 @@ button {
 
 h1 {
     font-size: 5rem;
-    font-weight: bold 700;
+    font-weight: 700;
     text-align: center;
     padding-top: 50px;
+    padding-bottom: -30px;
 
 }
 
 article {
-    width: 500px;
-    margin-bottom: 50px;
+    width: 575px;
+    margin-bottom: 60px;
     text-align: center;
     font-size: 1.2em;
 }
@@ -133,7 +136,7 @@ article {
     display: flex;
     justify-content: space-evenly;
     font-size: 1.2em;
-    font-weight: bolder;
+    font-weight: 600;
 }
 
 #see-plans {
@@ -152,7 +155,7 @@ article {
 }
 
 #middle {
-    height: 800px;
+    height: 750px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -166,6 +169,7 @@ article {
 
 h2 {
     font-size: 3em;
+    font-weight: 700;
     background-color: rgba(255, 204, 53, .4);
     transform: skew(9deg, 0deg);
     text-align: center;
@@ -174,11 +178,48 @@ h2 {
 }
 
 #middle article {
-    width: 850px;
+    width: 950px;
+
+}
+
+#bottom {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#bottom-boxes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0px 100px;
+    margin-bottom: 70px;
+}
+
+#bottom-boxes div {
+    padding: 20px 50px;
+    width: 250px;
+}
+
+#bottom img {
+    width: 40px;
+}
+
+#bottom a {
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 600;
+    padding: 20px 130px;
+    background-color: black;
+    box-shadow: 8px 8px 0 rgba(128, 83, 35, .2);
+    color: white;
     text-align: center;
 }
 
+h3 {
+    color: #ED1C24;
+    font-weight: 700;
 
-#bottom img {
-    width: 100px;
 }
