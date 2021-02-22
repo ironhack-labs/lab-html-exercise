@@ -12,8 +12,8 @@
     <header>
         <div>
             <div id="">
-                <img src="images/black-heart.png" alt="">
-                Nifty Penguin Magic
+                <img class="blackHeart" src="images/black-heart.png" alt="black heart">
+                <span>Nifty Penguin Magic</span>
             </div>
             <nav id="nav-bar">
                 <ul id="nav-list">
@@ -26,15 +26,23 @@
                 </ul>
             </nav>
         </div>
-        <div id="search-bar">
-            <img src="images/npm-logo.png" alt="">
-            <form action="">
-                <img src="images/magnifying-glass.png" alt="" srcset="">
-                <input type="text" placeholder="Search packages">
-                <input type="button" value="Search">
+        <div id="searchBar">
+            <div class="searchBarLogo">
+                <img src="images/npm-logo.png" alt="npm logo">
+            </div>
+            <form class="searchField"action="">
+                <div class="searchFieldInput">
+                    <span>
+                        <img src="images/magnifying-glass.png" alt="magnifying glass" class="magnifyingGlass">
+                    </span>
+                    <input type="text" placeholder="Search packages">
+                </div>
+                <input class="searchFieldButton" type="button" value="Search">
             </form>
-            <a href="#">Join</a>
-            <a href="#">Log In</a>
+            <div class="searchBarLinks">
+                <a href="#">Join</a>
+                <a href="#">Log In</a>    
+            </div>
         </div>
     </header>
     <section id="introduction">
@@ -42,7 +50,7 @@
         <article>Essential JavaScript development tools that help you go to market faster and build powerful applications using modern open source code.</article>
         <div>
             <a href="#">See plans</a>
-            <a href="#">Join for free</a>    
+            <a href="#">Join for free</a>
         </div>
     </section>
     <section id="quote">

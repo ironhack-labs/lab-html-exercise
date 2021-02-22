@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
+body {
+  font-family: "Poppins";
+}
+
+header {
+  & > div {
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+  }
+  nav {
+    width: 600px;
+    ul {
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    a {
+      text-decoration: none;
+      color: black;
+    }
+  }
+  .blackHeart {
+    width: 20px;
+    margin-right: 1rem;
+  }
+  #searchBar {
+    padding: 10px 25px;
+    display: flex;
+    flex-flow: row nowrap;
+    .searchBarLogo {
+      width: 10%;
+      max-width: 70px;
+      display: flex;
+      justify-content: center;
+      flex-grow: 0;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    .searchField {
+      display: flex;
+      flex-flow: row nowrap;
+      width: 80%;
+      padding: 0 20px;
+      .searchFieldInput {
+        background-color: rgba(0, 0, 0, 0.05);
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        .magnifyingGlass {
+          height: 18px;
+          width: 18px;
+          padding: 0 0.5rem;
+        }
+        input {
+          border: none;
+          background-color: transparent;
+          width: 100%;
+          padding: 0 10px;
+          margin: 0 10px;
+        }
+      }
+      .searchFieldButton {
+        border: none;
+        margin: 0;
+        padding: 0.5rem 2rem;
+        width: auto;
+        overflow: visible;
+        background: #fb3e44;
+        color: #fff;
+        font: inherit;
+        line-height: normal;
+      }
+    }
+    .searchBarLinks {
+      width: 10%;
+      flex-grow: 0;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      align-items: flex-end;
+      a {
+        text-decoration: none;
+        color: #919191;
+        padding: 0.5rem 1rem;
+        white-space: nowrap;
+        &:first-of-type {
+          border: 1px solid #b8b8b8;
+        }
+        &:last-of-type {
+          padding-right: 0;
+        }
+      }
+    }
+  }
+}
