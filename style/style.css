@@ -1,11 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&display=swap");
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Poppins";
   font-weight: 400;
   max-width: 100vw;
-}
-body > * {
-  box-sizing: border-box;
 }
 
 header {
@@ -68,7 +69,7 @@ header #searchBar .searchField .searchFieldInput {
 header #searchBar .searchField .searchFieldInput .magnifyingGlass {
   height: 18px;
   width: 18px;
-  padding: 0 0.5rem;
+  margin-left: 0.5rem;
 }
 header #searchBar .searchField .searchFieldInput input {
   border: none;
@@ -109,16 +110,19 @@ header #searchBar .searchBarLinks a:last-of-type {
   padding-right: 0;
 }
 
-#introduction {
+.container {
   height: 600px;
-  background-color: rgba(232, 217, 217, 0.3);
-  display: flex;
   flex-flow: column nowrap;
   align-items: center;
   padding: 4rem 4rem 2rem;
 }
-#introduction > * {
+.container h1, .container h2, .container article {
   text-align: center;
+}
+
+#introduction {
+  background-color: rgba(232, 217, 217, 0.3);
+  display: flex;
 }
 #introduction h1 {
   font-size: 5rem;
@@ -146,6 +150,31 @@ header #searchBar .searchBarLinks a:last-of-type {
 #introduction .introductionButtons a:last-of-type {
   background-color: #fff;
   color: #000;
+}
+
+#quote img {
+  height: 200px;
+  width: auto;
+  margin: 0 auto 50px;
+  display: block;
+}
+#quote .textSkew {
+  background-color: rgba(255, 204, 53, 0.4);
+  transform: skew(9deg, 0deg);
+  max-width: 850px;
+  margin: 0 auto;
+}
+#quote h2 {
+  font-size: 2rem;
+  transform: skew(-9deg, 0deg);
+  padding: 0 20px;
+  font-weight: 600;
+}
+#quote article {
+  max-width: 800px;
+  line-height: 1.4;
+  padding-bottom: 50px;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=style.css.map */

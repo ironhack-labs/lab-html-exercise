@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&display=swap");
+* {
+  box-sizing: border-box;
+}
 body {
   font-family: "Poppins";
   font-weight: 400;
   max-width: 100vw;
-  & > * {
-    box-sizing: border-box;
-  }
 }
 
 header {
@@ -64,7 +64,7 @@ header {
         .magnifyingGlass {
           height: 18px;
           width: 18px;
-          padding: 0 0.5rem;
+          margin-left: 0.5rem;
         }
         input {
           border: none;
@@ -108,16 +108,20 @@ header {
     }
   }
 }
-#introduction {
+.container {
   height: 600px;
-  background-color: rgba(232, 217, 217, 0.3);
-  display: flex;
   flex-flow: column nowrap;
   align-items: center;
   padding: 4rem 4rem 2rem;
-  & > * {
+  & h1,
+  & h2,
+  & article {
     text-align: center;
   }
+}
+#introduction {
+  background-color: rgba(232, 217, 217, 0.3);
+  display: flex;
   h1 {
     font-size: 5rem;
     font-weight: 600;
@@ -146,5 +150,31 @@ header {
         color: #000;
       }
     }
+  }
+}
+#quote {
+  img {
+    height: 200px;
+    width: auto;
+    margin: 0 auto 50px;
+    display: block;
+  }
+  .textSkew {
+    background-color: rgba(255, 204, 53, 0.4);
+    transform: skew(9deg, 0deg);
+    max-width: 850px;
+    margin: 0 auto;
+  }
+  h2 {
+    font-size: 2rem;
+    transform: skew(-9deg, 0deg);
+    padding: 0 20px;
+    font-weight: 600;
+  }
+  article {
+    max-width: 800px;
+    line-height: 1.4;
+    padding-bottom: 50px;
+    margin: 0 auto;
   }
 }
