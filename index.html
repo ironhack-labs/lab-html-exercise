@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NPM Clone</title>
+    <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
     <header>
         <div>
             <div>
-                <img src="images/black-heart.png" alt="black heart">
+                <img class="blackHeart" src="images/black-heart.png" alt="black heart">
                 <span>
                     Nifty Penguin Magic
                 </span>
@@ -26,15 +27,17 @@
                 </ul>
             </nav>
         </div>
-        <div>
-            <img src="images/npm-logo.png" alt="npm logo">
+        <div class="search-div">
+            <img class="npmLogo" src="images/npm-logo.png" alt="npm logo">
             <form action="search">
-                <img src="images/magnifying-glass.png" alt="search icon">
-                <input type="text" placeholder="Search packages">
-                <input type="submit" value="Search">
+                <label for="search">
+                    <img class="magnifyingGlass" src="images/magnifying-glass.png" alt="search icon">
+                </label>
+                <input class="searchbar" name="search" type="text" placeholder="Search packages">
+                <button type="submit">Search</button>
             </form>
-            <a href="#">Join</a>
-            <a href="#">Log in</a>
+            <a class="join-btn" href="#">Join</a>
+            <a class="login-btn" href="#">Log in</a>
         </div>
     </header>
     <section id="build-section">
@@ -79,5 +82,3 @@
     </section>
 </body>
 </html>
-
-   Team management  Familiar features  npm audit Create an Org
