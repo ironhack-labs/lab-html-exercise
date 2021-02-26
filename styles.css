@@ -2,6 +2,7 @@
 
 body {
     font-family: 'Poppins';
+    margin: 0 30px;
   }
 
   header > div {
@@ -21,6 +22,10 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  nav li {
+    font-weight: 700;
   }
   
   nav a {
@@ -98,7 +103,7 @@ form button {
 }
 
 #build-section h1 {
-    font-size: 6em;
+  font-size: 6em;
 }
 
 #build-section article {
@@ -130,4 +135,65 @@ form button {
 #join-link {
     background-color: white;
     color: black;
+}
+
+#info-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 70px 0;
+  text-align: center;
+}
+#info-section img {
+  width: 250px;
+  margin-bottom: 40px;
+}
+
+#info-section h2 {
+  font-size: 2rem;
+  background-color: rgba(255,204,53,.4);
+  transform: skew(9deg,0deg);
+  font-style: italic;
+  font-weight: bolder;
+  padding: 0 40px
+}
+
+#info-section article {
+  width:60%;
+  font-size: 1.2em;
+}
+
+#create-org-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+}
+
+#create-org-section img {
+  width: 30px;
+}
+#advantages {
+  display: flex;
+}
+#advantages div {
+  width:275px;
+  padding:20px;
+}
+
+#advantages h3{
+  color:#ED1C24;
+  font-weight:bold;
+
+}
+
+#create-org-section a {
+  box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+  background-color: black;
+  color:white;
+  font-size: 1.25em;
+  text-decoration: none;
+  padding: 20px 140px;
+  margin-top: 40px;
+  font-weight: bold;
 }
