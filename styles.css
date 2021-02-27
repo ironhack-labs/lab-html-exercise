@@ -15,11 +15,29 @@ body {
 /*HEADER*/
 
 header .header-top{
-    padding:25px;
+    padding:20px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid lightgray;
+}
+
+.blackheart {
+    width: 25px;
+    margin-right: 1rem;
+}
+
+.blackheart:hover{
+    opacity: 0.7;
+}
+
+.heart a{
+    text-decoration:none;
+    color:black;
+}
+
+.heart a:hover{
+   opacity: 0.7;
 }
 
 nav{
@@ -37,14 +55,14 @@ nav a {
     text-decoration: none;
     color: black;
 }
-  
-.blackheart {
-    width: 20px;
-    margin-right: 1rem;
+
+nav a:hover{
+    opacity: 0.7;
 }
 
+
 header .header-bottom{
-    padding: 10px 25px;
+    padding: 10px 35px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -66,7 +84,6 @@ header .header-bottom form {
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
-
 }
 
 header .header-bottom form .glass{
@@ -102,6 +119,10 @@ header .header-bottom form .search-button{
     text-decoration:none;
     padding: 5px 15px;
     color: black;
+}
+
+.join-login a:hover{
+    opacity: 0.7;
 }
 
 .header-bottom .join-login .join{
