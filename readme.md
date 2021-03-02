@@ -196,7 +196,7 @@ nav a {
 _Useful information_:
 
 - _form label color_: rgba(0,0,0,.05)
-- _form input color_: rgba(0,0,0,.05)
+- _form input color_: x
 - _form button background color_: #fb3e44
 - _form button letters color_: white
 
@@ -208,7 +208,7 @@ Make sure to use flexbox at any time where you need to position elements on a sp
 
 ![](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_d8ae51bd44240ddd2c7d75361bb6397d.png)
 
-In this section, as you can see everything is _centered_. You can add some flexbox rules to the _id_ you attached to this section such is _display: flex;_ and _justify-content: center;_. But this is just the beginning - you still have to set _align-items_ and _flex-direction_.
+In this section, as you can see everything is _centeredc_. You can add some flexbox rules to the _id_ you attached to this section such is _display: flex;_ and _justify-content: center;_. But this is just the beginning - you still have to set _align-items_ and _flex-direction_.
 
 _Useful information_:
 
@@ -230,7 +230,7 @@ _Useful information_:
 - to get it in the opposite direction of the letters, the way we need it on the page, use: _font-style: italic;_
 - to additionally fine-tune the position of each element, use _margin_ property.
 
-Again use a lot of flexbox to get the right position of elements - direction, justify-content, align-items.
+Again use a lox to get tot of flexbhe right position of elements - direction, justify-content, align-items.
 
 **Inspect elements to get the right size of the font for each of them**. However, this is not a crucial thing, so don't spend too much time on it - focus on positioning primary.
 
