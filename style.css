@@ -1,0 +1,189 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif; }
+
+body {
+  margin: 2rem 0 0 0;
+  padding: 0 4rem;
+  background-color: #ffffff;
+  display: grid;
+  grid-template-rows: 10rem 50rem 50rem 50rem;
+  grid-template-areas: 'container' 'box1' 'box2' 'box3'; }
+
+.header {
+  grid-area: container;
+  display: grid;
+  grid-template-rows: 50% 50%;
+  grid-template-areas: 'up' 'down'; }
+  .header-top {
+    margin-right: 3rem;
+    grid-area: up;
+    display: grid;
+    grid-template-columns: 5% 20% 75%;
+    grid-template-areas: 'img title nav'; }
+    .header-top--title {
+      grid-area: title;
+      justify-self: left;
+      font-size: 1.5rem;
+      font-weight: 400;
+      letter-spacing: -0.1rem;
+      align-self: center; }
+    .header-top--img {
+      width: 2.5rem;
+      grid-area: img;
+      justify-self: center;
+      align-self: center; }
+    .header-top--nav {
+      grid-area: nav;
+      justify-self: right;
+      word-spacing: 1rem;
+      font-size: 1.5rem;
+      font-weight: 500;
+      align-self: center; }
+      .header-top--nav li {
+        display: inline; }
+  .header-bottom {
+    grid-area: down;
+    display: grid;
+    grid-template-columns: 10% 75% 15%;
+    grid-template-areas: 'npm search links';
+    align-items: center;
+    border-top: 1px solid #e6e6e6;
+    border-bottom: 2px solid #e2e2e2; }
+    .header-bottom--npm {
+      width: 8.5rem;
+      grid-area: npm;
+      justify-self: center;
+      align-self: center; }
+    .header-bottom--search {
+      grid-area: search;
+      display: grid;
+      grid-template-columns: 91% 9%;
+      align-items: center; }
+      .header-bottom--search > input {
+        width: 100%;
+        height: 3.55rem;
+        border: 0;
+        background-color: #f2f2f2;
+        background-repeat: no-repeat; }
+      .header-bottom--search > button {
+        color: white;
+        border: 0;
+        background-color: #fb3e44;
+        height: 3.55rem; }
+    .header-bottom--links {
+      margin-left: 1rem;
+      grid-area: links;
+      display: flex;
+      justify-content: space-around; }
+      .header-bottom--links1 {
+        height: 3rem;
+        width: 6rem;
+        background-color: white; }
+      .header-bottom--links2 {
+        height: 3rem;
+        width: 6rem;
+        background-color: white;
+        border: 0; }
+
+.box1 {
+  grid-area: box1;
+  display: grid;
+  justify-items: center;
+  background-color: #f6f5f3;
+  box-shadow: 0px 2px 5px 0 #e7e7e7 inset;
+  grid-template-rows: repeat(3, 1fr);
+  padding-top: 6rem;
+  padding-bottom: 5rem; }
+  .box1-header {
+    font-size: 6rem;
+    font-weight: 700; }
+  .box1-text {
+    max-width: 41%;
+    font-size: 1.7rem;
+    text-align: center; }
+  .box1-links-bt-1, .box1-links-bt-2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    width: 20rem;
+    word-spacing: 0rem;
+    height: 5rem;
+    margin-right: 2.5rem;
+    margin-left: 2.5rem; }
+  .box1-links-bt-1 {
+    background-color: #fb3e44;
+    border: 0;
+    box-shadow: 5px 5px 5px #e64e4e86;
+    color: white; }
+  .box1-links-bt-2 {
+    background-color: white;
+    border: 0; }
+
+.box2 {
+  grid-area: box2;
+  display: grid;
+  grid-template-rows: 50% 20% 30%;
+  grid-template-areas: 'image' 'title' 'descript'; }
+  .box2-img {
+    padding-top: 5rem;
+    grid-area: image;
+    width: 20rem;
+    justify-self: center; }
+  .box2-title {
+    grid-area: title;
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+    font-size: 3rem;
+    font-weight: 525;
+    background-color: #ffebb5;
+    width: 80rem;
+    clip-path: polygon(0 0, 98% 0, 100% 100%, 2% 100%); }
+  .box2-text {
+    grid-area: descript;
+    text-align: center;
+    justify-self: center;
+    font-weight: 200;
+    font-size: 1.5rem;
+    max-width: 45%; }
+
+.box3 {
+  grid-area: box3;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 25rem 5rem;
+  grid-template-areas: 'col1 col2 col3 col4' '. btn btn .';
+  margin: 5rem 20rem 0 20rem; }
+  .box3-1 {
+    grid-area: col1; }
+  .box3-2 {
+    grid-area: col2; }
+  .box3-3 {
+    grid-area: col3; }
+  .box3-4 {
+    grid-area: col4; }
+  .box3-img {
+    width: 4rem;
+    margin-bottom: 1rem; }
+  .box3-head {
+    color: #fb3e44;
+    font-size: 1.25rem; }
+  .box3-p {
+    font-size: 1.25rem;
+    text-align: left;
+    max-width: 19rem; }
+  .box3-btn {
+    grid-area: btn;
+    width: 45rem;
+    justify-self: center;
+    background-color: black;
+    color: white;
+    box-shadow: 0.5rem 0.5rem #e7e7e7; }

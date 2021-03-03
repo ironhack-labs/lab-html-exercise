@@ -3,18 +3,23 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap"
+			rel="stylesheet"
+		/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="style.sass">
+		<link rel="stylesheet" href="style.css" />
 		<title>NPM Package Manager</title>
 	</head>
 	<body>
-		<div class="top_container">
-			<div class="top_container-top">
-				<img src="./images/black-heart.png" alt="Black Heart" class="top_container-top--img" />
-				<h6 class="top_container-top--title">Neverending Pun Machine</h6>
-				<nav class="top_container-top--nav">
+		<div class="header">
+			<div class="header-top">
+				<img src="./images/black-heart.png" alt="Black Heart" class="header-top--img" />
+				<h6 class="header-top--title">Neverending Pun Machine</h6>
+				<nav class="header-top--nav">
 					<ul>
-						<li>npm Enterprise</li>
+						<li style="word-spacing: 0rem">npm Enterprise</li>
 						<li>Products</li>
 						<li>Solutions</li>
 						<li>Resources</li>
@@ -23,16 +28,16 @@
 					</ul>
 				</nav>
 			</div>
-			<div class="top_container-bottom">
-				<img src="./images/npm-logo.png" alt="NPM logo" class="top_container-bottom--npm" />
-				<img src="./images/magnifying-glass.png" alt="" class="top_container-bottom--search" />
-				<form action="URL" class="top_container-bottom-search">
-					<input type="text" , placeholder="Search Packages" />
-					<button>Search</button>
+			<div class="header-bottom">
+				<img src="./images/npm-logo.png" alt="NPM logo" class="header-bottom--npm" />
+				<!-- <img src="./images/magnifying-glass.png" alt="" class="header-bottom--glass" /> -->
+				<form action="URL" class="header-bottom--search">
+					<input type="text" placeholder="Search Packages" />
+					<button type="submit">Search</button>
 				</form>
-				<div class="top_container-bottom-links">
-					<a href="URL">Join</a>
-					<a href="URL">Log In</a>
+				<div class="header-bottom--links">
+					<button class="header-bottom--links1" type="submit">Join</button>
+					<button class="header-bottom--links2" type="submit">Log In</button>
 				</div>
 			</div>
 		</div>
@@ -43,8 +48,8 @@
 				modern open source code.
 			</p>
 			<div class="box1-links">
-				<a href="URL">See Plans</a>
-				<a href="URL">Join for free</a>
+				<button class="box1-links-bt-1" type="submit">See Plans</button>
+				<button class="box1-links-bt-2" type="submit">Join for free</button>
 			</div>
 		</div>
 		<div class="box2">
@@ -56,35 +61,37 @@
 			</p>
 		</div>
 		<div class="box3">
-			<div>
-				<div>
-					<img src="./images/zero-configuration.svg" alt="Zero configuration" />
-					<h6>Zero Configuration</h6>
-					<p>Create an org, add your team, and start collaborating. Nothing to configure, set up, or manage.</p>
-				</div>
-				<div>
-					<img src="/images/team-management.svg" alt="Team Managaement" />
-					<h6>Team management</h6>
-					<p>
-						Control who has access to what modules within your team namespace using straightforward team management
-						capabilities.
-					</p>
-				</div>
-				<div>
-					<img src="./images/familiar-features.svg" alt="familiar features" />
-					<h6>Familiar features</h6>
-					<p>npm Orgs has 100% parity with all the public npm registry features your developers already use.</p>
-				</div>
-				<div>
-					<img src="./images/npm-audit.svg" alt="Binoculars" />
-					<h6>npm audit</h6>
-					<p>
-						Enjoy the security auditing features built into the npm client, a zero-friction way to make open source
-						software safer.
-					</p>
-				</div>
+			<div class="box3-1">
+				<img class="box3-img" src="./images/zero-configuration.svg" alt="Zero configuration" />
+				<h6 class="box3-head">Zero Configuration</h6>
+				<p class="box3-p">
+					Create an org, add your team, and start collaborating. Nothing to configure, set up, or manage.
+				</p>
 			</div>
-			<a href="URL">Create an Org</a>
+			<div class="box3-2">
+				<img class="box3-img" src="/images/team-management.svg" alt="Team Managaement" />
+				<h6 class="box3-head">Team management</h6>
+				<p class="box3-p">
+					Control who has access to what modules within your team namespace using straightforward team management
+					capabilities.
+				</p>
+			</div>
+			<div class="box3-3">
+				<img class="box3-img" src="./images/familiar-features.svg" alt="familiar features" />
+				<h6 class="box3-head">Familiar features</h6>
+				<p class="box3-p">
+					npm Orgs has 100% parity with all the public npm registry features your developers already use.
+				</p>
+			</div>
+			<div class="box3-4">
+				<img class="box3-img" src="./images/npm-audit.svg" alt="Binoculars" />
+				<h6 class="box3-head">npm audit</h6>
+				<p class="box3-p">
+					Enjoy the security auditing features built into the npm client, a zero-friction way to make open source
+					software safer.
+				</p>
+			</div>
+			<button class="box3-btn" type="submit">Create an Org</button>
 		</div>
 	</body>
 </html>

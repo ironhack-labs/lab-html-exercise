@@ -1,0 +1,46 @@
+.box3 {
+	grid-area: box3;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: 25rem 5rem;
+	grid-template-areas: 'col1 col2 col3 col4' '. btn btn .';
+
+	margin: 5rem 20rem 0 20rem;
+	&-1 {
+		grid-area: col1;
+	}
+	&-2 {
+		grid-area: col2;
+	}
+	&-3 {
+		grid-area: col3;
+	}
+	&-4 {
+		grid-area: col4;
+	}
+
+	&-img {
+		width: 4rem;
+		margin-bottom: 1rem;
+	}
+
+	&-head {
+		color: $color-watermelon;
+		font-size: 1.25rem;
+	}
+
+	&-p {
+		font-size: 1.25rem;
+		text-align: left;
+		max-width: 19rem;
+	}
+
+	&-btn {
+		grid-area: btn;
+		width: 45rem;
+		justify-self: center;
+		background-color: black;
+		color: white;
+		box-shadow: 0.5rem 0.5rem rgb(231, 231, 231);
+	}
+}

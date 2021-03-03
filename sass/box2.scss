@@ -1,0 +1,36 @@
+.box2 {
+	grid-area: box2;
+
+	display: grid;
+	grid-template-rows: 50% 20% 30%;
+	grid-template-areas: 'image' 'title' 'descript';
+
+	&-img {
+		padding-top: 5rem;
+		grid-area: image;
+		width: 20rem;
+		justify-self: center;
+	}
+
+	&-title {
+		grid-area: title;
+		text-align: center;
+		justify-self: center;
+		align-self: center;
+		font-size: 3rem;
+		font-weight: 525;
+		background-color: #ffebb5;
+		width: 80rem;
+
+		clip-path: polygon(0 0, 98% 0, 100% 100%, 2% 100%);
+	}
+
+	&-text {
+		grid-area: descript;
+		text-align: center;
+		justify-self: center;
+		font-weight: 200;
+		font-size: 1.5rem;
+		max-width: 45%;
+	}
+}

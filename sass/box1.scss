@@ -1,0 +1,45 @@
+.box1 {
+	grid-area: box1;
+	display: grid;
+	justify-items: center;
+	background-color: $color-grey3;
+	box-shadow: 0px 2px 5px 0 #e7e7e7 inset;
+	grid-template-rows: repeat(3, 1fr);
+	padding-top: 6rem;
+	padding-bottom: 5rem;
+
+	&-header {
+		font-size: 6rem;
+		font-weight: 700;
+	}
+	&-text {
+		max-width: 41%;
+		font-size: 1.7rem;
+		text-align: center;
+	}
+
+	&-links {
+		&-bt-1,
+		&-bt-2 {
+			font-size: 1.5rem;
+			font-weight: bold;
+			width: 20rem;
+			word-spacing: 0rem;
+			height: 5rem;
+			margin-right: 2.5rem;
+			margin-left: 2.5rem;
+		}
+
+		&-bt-1 {
+			background-color: $color-watermelon;
+			border: 0;
+			box-shadow: 5px 5px 5px #e64e4e86;
+			color: white;
+		}
+
+		&-bt-2 {
+			background-color: white;
+			border: 0;
+		}
+	}
+}
