@@ -27,35 +27,172 @@ header > div {
     text-decoration: none;
     color: black;
   }
-  
+
+
   .blackHeart {
-    width: 20px;
+    width: 30px;
     margin-right: 1rem;
   }
 
-  .npm {
-    width: 100px;
+  #npm {
+    width: 55px;
     margin-right: 1rem;
   }
-  
+
+  .search-bar form {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+}
+
+#search-input{
+  flex-grow: 1;
+  background-color: rgba(0,0,0,.05);
+  background-image: url("images/magnifying-glass.png");
+  background-repeat: no-repeat;
+  background-size: 26px;
+  background-position: 15px center;
+  padding-left: 50px;
+  border: none;   
+  font-size: 1.2rem;
+  margin-left: 5px;
+}
+
+.top-button {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0 0 0 30px;
+  color: black;
+}
+
+#login {
+  color: black;
+  text-decoration: none;
+}
+
+#join {
+    color: black;
+    border: 1px solid black;
+    padding: 10px 10px;
+    margin-right: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.search-bar form button {
+  height: 50px;
+  width: 120px;
+  color: white;
+  background-color:#fb3e44;
+  font-size: 1rem;
+  border: none;
+}
+
   .glass {
     width: 30px;
     margin-right: 1rem;
   }
-  
-  .join {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: flex-end;
-	align-items: stretch;
-	align-content: stretch;
-}
 
-heading {
-    
-}
-
-.image {
+  .image {
     width: 100px;
     margin-right: 1rem;
+  }
+
+  #section1 {
+    height: 500px;
+    background-color: rgba(232,217,217,.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+
+  }
+
+#section1 > h2 {
+  font-size: 4em;
+}
+
+#section1 > article {
+  width: 400px;
+}
+
+#section1 div {
+  padding-top: 15px;
+  width: 400px;
+  
+}
+
+#section1 .button {
+  background-color:#FB3B49;
+  box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+  color: white;
+  font-family: Roboto Condensed;
+  font-size: 1.5em;
+  Letter-spacing: 0.5px;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 40px;
+}
+
+#section1 .button2 {
+  color: black;
+  text-decoration: none;
+  margin-left: 80px;
+}
+
+#section2 {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+#section2 img {
+  width: 15em;
+}
+
+#section2 h2 {
+  font-size: 33px;
+  background-color: rgba(255,204,53,.4);
+  transform: skew(9deg,0deg);
+  font-style: italic;
+}
+
+#section2 article {
+  width: 700px;
+}
+
+#section3 {
+  height: 400px;
+  width: 80em;
+  padding-left: 7em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+#section3 img {
+  max-width: 2.5em;
+}
+
+#section3 h2 {
+  color: #ED1C24;
+}
+
+.box {
+  margin-left: 600px;
+  background-color: black;
+  box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+  color: white;
+  font-style: normal;
+  font-size: 1.5em;
+  Letter-spacing: 0.5px;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 40px;
+}
