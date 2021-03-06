@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: 'Poppins';
+}
+html {
+    font-size: 62.5%
+}
+/*Menu*/
+header > div {
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+  }
+  
+  nav {
+    width: 600px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .blackHeart {
+    width: 20px;
+    margin-right: 1rem;
+  }
+
+/*Search*/
+.main-input {
+    display: flex;
+}
+.main-input__container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+	align-items: center;
+	align-content: center;
+    margin: 10px;
+    
+}
+.main-input__container img {
+    width: 60px;
+    height: 15px;
+    margin-right: 10px;
+}
+.main-input input {
+    width:80%;
+    height: 25px;
+    border: none;
+    background-color: rgba(0,0,0,.05);
+    border: 1px solid #def1e5;
+    outline: none;
+    background-image: url(/images/magnifying-glass.png);
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position-y: 0.5rem;
+    background-position-x: 0.5rem;
+}
+.main-input input:hover {
+    box-shadow: 0 1px 6px 0 #20212447;
+    border-color: #dfe1e500;
+    background-image: url(none);
+}
+.main-input input + a {
+    background-color: #fb3e44;
+    text-decoration: none;
+    color: white;
+    padding: 7px;
+    font-size: 0.8rem;
+}
+
+.main-input a {
+    text-decoration: none;
+    font-size: 0.8rem;
+    color: silver;
+	margin-right: 0.5rem;
+}
+.main-input a:nth-child(1) {
+    border: 1px solid;
+    padding: 3px 5px 3px 5px;
+}
+
+/*Section 1*/
+
+.build {
+    background-color: rgba(232,217,217,.3);
+    padding: 90px;
+}
+.build h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 6rem;
+    padding: auto;
+    font-weight: bold;
+}
+.build p {
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 20px auto 40px auto;
+}
+.build__buttom--join  {
+    background-color:white;
+    padding: 5px 30px 5px 30px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    position: absolute;
+    left: 52%;
+}
+.build__buttom--plans {
+    background-color:  #FB3B49;
+    padding: 5px 30px 5px 30px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    right: 52%;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+}
+
+/*Section 2*/
+
+.company {
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+.company img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+    margin: 60px 0 40px 0;
+}
+.company h3 {
+    font-size: 2.1rem;
+    margin-bottom: 15px;
+    justify-content: center;
+    background-color: rgba(255,204,53,.4);
+    display: inline-block;
+    transform: skew(9deg,0deg);
+    padding: 0 25px;
+}
+.company p {
+    text-align: center;
+    font: 1.2rem;
+}
+
+/*Section 3*/
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 300px;
+    padding: 50px;
+    margin: 70px 5px;
+}
+ .box {
+    width: 25%;
+    height: 50%;
+} 
+.services img {
+    width: 20px;
+    height: 20px;
+    margin: auto 8px;
+}
+.services h4 {
+    font-size: 1.2rem;
+    color: #ED1C24;
+    margin: 10px 5px;
+    width: 70%;
+}
+.services article {
+    font-size: 0.9rem;
+    margin: auto 10px;
+    width: 60%;
+}
+.services_bottom--action {
+    text-align: center;
+    margin-top: 50px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+    width: 33%;
+    padding: 10px 70px;
+    background-color: black;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+   
+}
