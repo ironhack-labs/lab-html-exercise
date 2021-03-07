@@ -1,5 +1,190 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
-body {
+* {
     font-family: 'Poppins';
+}
+
+/* form label color: rgba(0, 0, 0, .05) 
+form input color: rgba(0, 0, 0, .05) 
+form button background color: #fb3e44 
+form button letters color: white */
+
+header  > div {
+    padding: 0.25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+}
+nav {
+    width: 600px;
+    padding-right: 2rem;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.blackHeart {
+    width: 20px;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+.logo-search div{
+    display: flex;
+    flex-direction: row;
+    border: none;
+}
+.logo {
+    width: 60px;
+    margin-left: 2rem;
+}
+/*REVISAR PARA INSERTAR LUPA EN INPUT*/
+#search {
+    border: none;
+    background-color: rgba(0, 0, 0, .05);
+    width: 1350px;
+    height: 35px;
+    padding-left: 50px;
+    position: relative;
+}
+.search-icon {
+    width: 20px;
+    position: absolute;
+    top: 75px;
+    left: 135px;
+}
+.search {
+    background-color: #fb3e44;
+    border: none;
+    color: white;
+    padding: 10px 18px;
+    font-weight: bold;
+}
+.join-button {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    border: solid 1px;
+    padding: 5px 20px;
+    font-weight: bold;
+}
+.login-button {
+    text-decoration: none;
+    color: rgb(110, 110, 110);
+    background-color: white;
+    font-weight: bold;
+    border: none;
+    padding: 5px 20px;
+    margin-right: 2rem;
+}
+.cover {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(255, 245, 244);
+    height: 600px;
+}
+.cover h1 {
+    font-size: 80px;
+    padding-top: 50px;
+    font-weight: bolder;
+}
+.cover article {
+    width: 500px;
+    text-align: center;
+    font-size: 18px;
+}
+.cover-buttons {
+    padding-top: 50px;
+    display: flex;
+}
+.see-plans {
+    background-color: #fb3e44;
+    color: white;
+    font-weight: bolder;
+    height: 40px;
+    width: 230px;
+    text-align: center;
+    margin-right: 20px;
+    padding-top: 15px;
+    box-shadow: 8px 8px 0px #ffd6d8
+}
+.join {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    height: 40px;
+    width: 230px;
+    text-align: center;
+    margin-left: 20px;
+    padding-top: 15px;
+}
+.eslogan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hexagon {
+    width: 250px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.background {
+    margin-top: 50px;
+    display: flex;
+    background: #ffeba8;
+    height: 40px;
+    transform: skew(10deg);
+    align-items: center;
+}
+h2 {
+    font-size: 37px;
+    padding: 0px 30px;
+    transform: skew(-10deg);
+
+}
+.eslogan article {
+    width: 770px;
+    text-align: center;
+    margin-top: 50px;
+}
+.advantages {
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+    padding-top: 100px;
+}
+.features {
+    display: flex;
+    flex-direction: row;
+    width: 1200px;
+    justify-content: space-between;
+}
+.features img {
+    height: 30px;
+}
+h3 {
+    color: #fb3e44;
+    font-weight: bold;
+}
+.features p {
+    width: 250px;
+    padding-bottom: 60px;
+}
+.create {
+    background-color: black;
+    border: none;
+    color: white;
+    width: 400px;
+    height: 50px;
+    font-weight: bolder;
+    margin-bottom: 40px;
+    box-shadow: 8px 8px 0px #d6d6d6
 }
