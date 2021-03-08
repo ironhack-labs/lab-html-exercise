@@ -55,6 +55,10 @@ input#search {
     background-color: rgba(232, 217, 217, .3);
 }
 
+#sign-up>div {
+    margin-top: 20px;
+}
+
 #pitch {
     display: flex;
     flex-direction: column;
@@ -69,9 +73,34 @@ input#search {
 }
 
 #pitch h2 {
-    background-color: rgba(255,204,53,.4);
-    transform: skew(9deg,0deg);
+    background-color: rgba(255, 204, 53, .4);
+    transform: skew(9deg, 0deg);
     font-style: italic;
+    margin-top: 50px;
+}
+
+#create-org {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-wrap: no-wrap;
+    padding: 100px;
+}
+
+#create-org>div {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    ;
+}
+
+#create-org img {
+    width: 40px;
+}
+
+#create-org h3 {
+    color: #ED1C24;
 }
 
 .black-heart {
@@ -123,7 +152,7 @@ input#search {
 .join-for-free {
     font-size: 1em;
     text-decoration: none;
-    color: black; 
+    color: black;
     padding: 5px 30px;
 }
 
@@ -133,7 +162,30 @@ input#search {
     background-color: #FB3B49;
     color: white;
     padding: 5px 30px;
-    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+    box-shadow: 8px 8px 0 rgba(251, 59, 73, .2);
 }
 
+.break {
+    width: 100%;
+    height: 0;
+}
 
+.quarter {
+    width: 25%;
+}
+
+.quarter img,
+h3,
+p {
+    padding: 2px 15px;
+}
+
+.create-org-button {
+    background-color: black;
+    color: white;
+    font-size: 1em;
+    padding: 10px 120px;
+    margin-top: 20px;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    border: none;
+}
