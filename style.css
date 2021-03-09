@@ -3,6 +3,7 @@
 /*page font default*/
 body {
   font-family: 'Poppins', sans-serif;
+  padding: 10px 15px;
 }
 
 /*image styling*/
@@ -21,11 +22,14 @@ body {
 #magnifying-glass {
   width: 18px;
   height: 18px;
-  vertical-align: bottom;
+  vertical-align: initial;
   margin: 5px 0 0 10px;
 }
 
-/*STYLES*/
+#triangle-hex {
+  width: 200px;
+  height: 200px;
+}
 
 /*globals*/
 .inline-blk {
@@ -40,7 +44,7 @@ body {
 
 #top-bar {
   border-bottom: 3px solid #f3f3f3;
-  margin: 10px 40px 5px 40px;
+  margin-bottom: 5px;
   padding: 10px 0;
   font-size: 0.8rem;
 }
@@ -49,8 +53,13 @@ body {
   padding-bottom: 5px;
 }
 
+#top-bar-left {
+  padding-left: 30px;
+}
+
 #top-bar-right {
   float: right;
+  padding-right: 30px;
 }
 
 #top-bar-right a,
@@ -73,7 +82,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
   margin: 0 0 5px 0;
-  padding: 0 45px;
+  padding: 0 30px;
 }
 
 #top-bar2-search {
@@ -85,17 +94,20 @@ body {
 
 #search-input {
   border: none;
-  background-color: #f3f3f3;
+  background-color: rgba(0, 0, 0, 0);
   font-family: monospace;
   margin-left: 10px;
   vertical-align: bottom;
+  height: 100%;
+  width: 60%;
+  padding: 0;
 }
 
 #search-btn {
   float: right;
   height: 35px;
-  width: 60px;
-  background-color: orangered;
+  width: 70px;
+  background-color: #ff5050;
   text-align: center;
 }
 
@@ -140,4 +152,87 @@ body {
   text-decoration: #000;
   font-size: .8rem;
   font-weight: 600;
+}
+
+/*hero banner*/
+
+#hero-banner-contain {
+  padding: 25px 50px 100px 50px;
+  background-color: rgba(248, 237, 233, 0.60);
+}
+
+#hero-message {
+  text-align: center;
+}
+
+#hero-message h1 {
+  font-size: 4em;
+  font-weight: bolder;
+}
+
+#hero-banner-contain p {
+  text-align: center;
+}
+
+#hero-btn-contain {
+  text-align: center;
+}
+
+#see-plans,
+#join-for-free {
+  display: inline-block;
+}
+
+#see-plans {
+  height: 35px;
+  width: 200px;
+  background-color: #ff5050;
+  margin-right: 15px;
+  padding-top: 11px;
+  -webkit-box-shadow: 6px 6px 0 0 #ffcccc;
+  box-shadow: 6px 6px 0 0 #ffcccc;
+}
+
+#see-plans a {
+  color: #FFF;
+  text-decoration: #FFF;
+  font-weight: bolder;
+}
+
+#join-for-free {
+  height: 35px;
+  width: 200px;
+  background-color: #FFF;
+  margin-left: 15px;
+  padding-top: 11px;
+}
+
+#join-for-free a {
+  color: #000;
+  text-decoration: #000;
+  font-weight: bolder;
+}
+
+#panel-2 {
+  text-align: center;
+  padding: 50px 0;
+}
+
+#panel-2 p {
+  font-size: .75rem;
+  font-weight: bold;
+}
+
+#best-of {
+  background-color: #ffebb1;
+  transform: skew(12deg);
+  width: 650px;
+  height: 33px;
+  margin: 0 auto 25px auto;
+}
+
+#best-of h2 {
+  font-weight: bold;
+  font-size: 1.6em;
+  transform: skew(-12deg);
 }
