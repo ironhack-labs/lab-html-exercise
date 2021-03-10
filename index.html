@@ -24,34 +24,42 @@
     </div>
   
     <div class="searchbar">
-     <img src="images/npm-logo.png" alt="npm-logo" id="npmlogo">
-     <img class="magnifying-glass" src="images/magnifying-glass.png" alt="search icon">
-      <form>
-        <input type="text" placeholder="Search packages" id="searchbar">
-        <button>Search</button>
-      </form>
-    </div>
-      <div>
-        <a href="#">Join</a>
-      <a href="#">Log In</a>
-    </div>
+      
+      <img src="images/npm-logo.png" alt="npm-logo" id="npmlogo">
+      <form action="search" method="get" >
+        <img class="magnglass" 
+        src="images/magnifying-glass.png" alt="search icon">
+         <input type="text" placeholder="Search packages" id="searchbar">
+         <button class="button">Search</button>
+      </form>     
+      
+        <div class="links">
+        <ul>
+        <li><a href="#">Join</a></li>
+        <li><a href="#">Log In</a></li>
+        </ul>
+       </div>
+      </div>
   </header>
-  <section id="section1" >
+<!-- Section 1 Starts here -->
+  <section id="section1">
     <h1>Build amazing things</h1>
     <article>Essential JavaScript development tools that help you go to market faster and build powerful applications using
       modern open source code.</article>
-      <div>
-      <a href="#">See plans</a>
+      <div class="slinks">
+      <a href="#" id="seeplans">See plans</a>
       <a href="#">Join for free</a>
     </div>
   </section>
+  <!--Section 2 -->
   <section id="section2">
     <img src="images/triangle-hexagon.svg" alt="triangle-hexagon">
-    <h2>Bring the best of open source to your company</h2>
+    <h2>Bring the best of open source to your company </h2>
     <article>npm is the tool used by
       over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it.
       Create an Org and get more out of the tools your team already knows and loves. </article>
   </section>
+  <!--Section 3-->
   <section id="section3">
     <div>
       <img src="images/zero-configuration.svg" alt="zero-configuration">
@@ -77,7 +85,9 @@
      <p>Enjoy the security
       auditing features built into the npm client, a zero-friction way to make open source software safer.</p>
    </div>
-   <a href="#">Create an Org</a>
-  </section>
+   </section>
+  <div id="blink">
+  <a href="#">Create an Org</a>
+   </div>
   </body>
   </html>
