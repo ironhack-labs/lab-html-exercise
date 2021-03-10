@@ -11,7 +11,11 @@
     <header class="header">
       <div class="header-top">
         <div>
-          <img class="blackheart" src="/images/black-heart.png" alt="black heart shape" />
+          <img
+            class="blackheart"
+            src="/images/black-heart.png"
+            alt="black heart shape"
+          />
           <span>Nifty Penguin Magic</span>
         </div>
         <nav class="nav-bar">
@@ -28,20 +32,30 @@
 
       <div class="header-bottom">
         <img class="logo" src="/images/npm-logo.png" alt="npm logo" />
-        <img src="/images/magnifying-glass.png" alt="magnifying glass" />
-        <form action="/some-file" method="post">
-            <input type="text" name="search" id="search" value="Search pachages">
-            <button>Search</button>
-        </form>
+       <div class="search-wrapper">
+            <img
+              class="search-icon"
+              src="/images/magnifying-glass.png"
+              alt="magnifying glass"
+            />
+            <form action="/some-file" method="post">
+              <input
+              class="search-bar"
+                type="text"
+                name="search"
+                id="search"
+                value="Search packages"
+              />
+              <button class="search-btn">Search</button>
+            </form>
+       </div>
         <div>
-            <button id="join-btn">Join</button>
-            <button id="login-btn">Log in</button>
+          <button id="join-btn">Join</button>
+          <button id="login-btn">Log in</button>
         </div>
       </div>
     </header>
-    <section id="section_1">
-
-    </section>
+    <section id="section_1"></section>
     <section id="section_2"></section>
     <section id="section_3"></section>
   </body>
