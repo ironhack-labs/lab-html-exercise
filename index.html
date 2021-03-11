@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>NPM Clone</title>
+        <link rel="stylesheet" href="style.css"
     </head>
     
     <body>
@@ -11,8 +12,8 @@
     <header>
         <div> <!--Div 1-->
             <div>
-                <img src="C:\Users\dhire\Ironhack\Prework\lab-html-exercise\images\black-heart.png" alt="black heart"/>
-                <span>Nifty Penguin Mangic</span>
+                <img class="blackHeart" src="https://raw.githubusercontent.com/ironhack-labs/lab-html-exercise/master/images/black-heart.png" alt="black heart"/>
+                <span>Nifty Penguin Magic</span>
             </div>
             <nav>
                 <ul>
@@ -25,16 +26,16 @@
                 </ul>
             </nav>
         </div>
-        <div><!--Div 2-->
-            <img src="images/npm-logo.png" alt="npm logo"/>
-            <form action="/search" method="GET">
-                <label for="searchpackages"><img src="images/magnifying-glass.png" alt="search magnifying glass"/></label>
+        <div class="container-1"><!--Div 2-->
+            <img class="npmLogo" src="https://raw.githubusercontent.com/ironhack-labs/lab-html-exercise/master/images/npm-logo.png" alt="npm logo"/>
+            <form  class="search" action="/search" method="GET">
+                <label for="searchpackages"><img class="magGlass" src="https://raw.githubusercontent.com/ironhack-labs/lab-html-exercise/master/images/magnifying-glass.png" alt="search magnifying glass"/></label>
                 <input type="text" name="package" placeholder="Search Packages" id="searchpackages">
-                <button type ="button">Search</button>
+                <button type ="button" class="searchButton">Search</button>
             </form>
-            <div>
-                <a href="#">Join</a>
-                <a href="#">Log In</a>
+            <div class="joinLogin">
+                <a class="join" href="#">Join</a>
+                <a class ="login" href="#">Log In</a>
             </div>
         </div>
     </header>
@@ -55,7 +56,7 @@
 
     <!--Section 2-->
     <section id="bring">
-        <img src="images/triangle-hexagon.svg" alt="triangular hexagon"/>
+        <img src="https://raw.githubusercontent.com/ironhack-labs/lab-html-exercise/master/images/triangle-hexagon.svg" alt="triangular hexagon"/>
         <h2>Bring the best of open source to your company</h2>
         <article>
             npm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it.
@@ -65,63 +66,36 @@
 
     <!--Section 3-->
     <section id="more">
-        <article>
-            <img src="images/zero-configuration.svg" alt="mouse and keyboard">
-            <h3>Zero Configuration</h3>
-            <p>Create an org, add your team, and start collaborating. Nothing to configure, set up, or manage</p>
-        </article>
-        
-        <article>
-            <img src="images/team-management.svg" alt="management structure flow chart"/>
-            <h3>Team Management</h3>
-            <p>Control who has access to what modules within your team namespace using straightforward team management capabilities.</p>
-        </article>
-        
-        <article>
-            <img src="images/familiar-features.svg" alt="balance scale"/>
-            <h3>Familiar Features</h3>
-            <p>npm Orgs has 100% parity with all the public npm registry features your developers already use.</p> 
-        </article>
-        
-        <article>
-            <img src="images/npm-audit.svg" alt="binoculars"/>
-            <h3>npm audit</h3>
-            <p>Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer.</p>
-        </article>
-
-        <a href="#">Create an Org</a>
+        <div>
+            <article>
+                <img src="https://raw.githubusercontent.com/ironhack-labs/lab-html-exercise/master/images/zero-configuration.svg" alt="mouse and keyboard">
+                <h3>Zero Configuration</h3>
+                <p>Create an org, add your team, and start collaborating. Nothing to configure, set up, or manage</p>
+            </article>
+            
+            <article>
+                <img src="https://raw.githubusercontent.com/ironhack-labs/lab-html-exercise/master/images/team-management.svg" alt="management structure flow chart"/>
+                <h3>Team Management</h3>
+                <p>Control who has access to what modules within your team namespace using straightforward team management capabilities.</p>
+            </article>
+            
+            <article>
+                <img src="https://raw.githubusercontent.com/ironhack-labs/lab-html-exercise/master/images/familiar-features.svg" alt="balance scale"/>
+                <h3>Familiar Features</h3>
+                <p>npm Orgs has 100% parity with all the public npm registry features your developers already use.</p> 
+            </article>
+            
+            <article>
+                <img src="https://raw.githubusercontent.com/ironhack-labs/lab-html-exercise/master/images/npm-audit.svg" alt="binoculars"/>
+                <h3>npm audit</h3>
+                <p>Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer.</p>
+            </article>
+        </div>
+        <div>
+            <a href="#">Create an Org</a>
+        </div>
 
     </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+      
     </body>
 </html>
