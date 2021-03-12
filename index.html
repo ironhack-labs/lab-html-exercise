@@ -31,11 +31,11 @@
             <form class="search-bar-form" id="search" action="" method="get">
                         <img class="glass-icon" src="/Users/juanjo/Desktop/ironhack/prework/labs/lab-html-exercise/images/magnifying-glass.png" alt="glass-icon">
                         <input class="search-bar" type="search" name="" id="search" placeholder="Search packages">
-                        <label class="search-btn" for="search">Search</label>
+                        <label class="search-btn" for="search" id="search">Search</label>
             </form>
             <div class="header-btn">
-                <a class="join-btn" href="#">Join</a>
-                <a class="log-in-btn" href="#">Log In</a>
+                <a class="join-btn" href="#section-join-btn">Join</a>
+                <a class="log-in-btn" href="#plans-btn">Log In</a>
             </div>
             </div>
         </div>
@@ -47,8 +47,8 @@
     <h1 class="title-1">Build amazing things</h1>
     <p class="content-1">Essential JavaScript development tools that help you go to market faster and build powerfil applications using modern open source code.</p>
     <div class="cta">
-        <a class="plans-btn" href="#">See plans</a>
-        <a class="section-join-btn" href="#">Join for free</a>
+        <a id="plans-btn" href="#">See plans</a>
+        <a id="section-join-btn" href="#">Join for free</a>
     </div>
 </section>
 
@@ -57,9 +57,7 @@
 
 
 <section id="section-2">
-    <div>
-        <img class="hexagon-icon" src="/Users/juanjo/Desktop/ironhack/prework/labs/lab-html-exercise/images/triangle-hexagon.svg" alt="">
-    </div>
+    <img class="hexagon-icon" src="/Users/juanjo/Desktop/ironhack/prework/labs/lab-html-exercise/images/triangle-hexagon.svg" alt="">
     <h2 class="title-2">Bring the best of open source to your company</h2>
     <p class="content-2">npm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it. Create an Org and get more out of the tools your team already knows and loves.</p>
 </section>
@@ -69,27 +67,31 @@
 
 
 <section id="section-3">
-    <div class="configuration">
-        <img class="config-icon" src="/Users/juanjo/Desktop/ironhack/prework/labs/lab-html-exercise/images/zero-configuration.svg" alt="config icon">
-        <h4 class="config-title">Zero configuration</h4>
-        <p class="config-content">Create and org, add your team, and star collaborating. Nothing to configure, set uo, or manage.</p>
+   <div>
+        <div class="section-3-box">
+            <img class="config-icon" src="/Users/juanjo/Desktop/ironhack/prework/labs/lab-html-exercise/images/zero-configuration.svg" alt="config icon">
+            <h4 class="config-title">Zero configuration</h4>
+            <p class="config-content">Create and org, add your team, and star collaborating. Nothing to configure, set uo, or manage.</p>
+        </div>
+        <div class="section-3-box">
+            <img class="team-icon" src="/Users/juanjo/Desktop/ironhack/prework/labs/lab-html-exercise/images/team-management.svg" alt="">
+            <h4 class="team-title">Team management</h4>
+            <p class="team-content">Control who has access to what modules within your team namespace using straightforward team management capabilities</p>
+        </div>
+        <div class="section-3-box">
+            <img class="features-icon" src="/Users/juanjo/Desktop/ironhack/prework/labs/lab-html-exercise/images/familiar-features.svg" alt="features icon">
+            <h4 class="features-title">Familiar features</h4>
+            <p class="features-content">npm Orgs has 100% parity with all the public npm registry features your developers already use.</p>
+        </div>
+        <div class="section-3-box">
+            <img class="audit-icon" src="/Users/juanjo/Desktop/ironhack/prework/labs/lab-html-exercise/images/npm-audit.svg" alt="audit icon">
+            <h4 class="audit-title">npm audit</h4>
+            <p class="audit-content">Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer.</p>
+        </div>
+    </div> 
+    <div>
+        <a class="create-btn" href="#">Create an Org</a>
     </div>
-    <div class="team">
-        <img class="team-icon" src="/Users/juanjo/Desktop/ironhack/prework/labs/lab-html-exercise/images/team-management.svg" alt="">
-        <h4 class="team-title">Team management</h4>
-        <p class="team-content">Control who has access to what modules within your team namespace using straightforward team management capabilities</p>
-    </div>
-    <div class="features">
-        <img class="features-icon" src="/Users/juanjo/Desktop/ironhack/prework/labs/lab-html-exercise/images/familiar-features.svg" alt="features icon">
-        <h4 class="features-title">Familiar features</h4>
-        <p class="features-content">npm Orgs has 100% parity with all the public npm registry features your developers already use.</p>
-    </div>
-    <div class="audit">
-        <img class="audit-icon" src="/Users/juanjo/Desktop/ironhack/prework/labs/lab-html-exercise/images/npm-audit.svg" alt="audit icon">
-        <h4 class="audit-title">npm audit</h4>
-        <p class="audit-content">Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer.</p>
-    </div>
-    <a class="create-btn" href="#">Create an Org</a>
 </section>
 
 </body>
