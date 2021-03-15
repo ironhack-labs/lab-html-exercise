@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 
 <html>
+  <head>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
   <header>
     <div>
       <div>
@@ -23,45 +26,45 @@
       </nav>
     </div>
 
-    <div>
+    <div class="npm-nav">
+      
       <img class="npm-logo" src="./images/npm-logo.png" alt="npm logo" />
-      <form action="/search" method="post">
-        <div>
-          <img
-            class="search"
-            src="./images/magnifying-glass.png"
-            alt="search img"
-          />
-
-          <input type="text" placeholder="Search Packages" />
-
-          <button type="submit">Search</button>
-        </div>
-      </form>
       <div>
-        <ul>
-          <li><a href="#">Join</a></li>
-          <li><a href="#">Log In</a></li>
+      <img class="search" src="./images/magnifying-glass.png" alt="search img"/>
+      <form action="/search" method="post">        
+        
+         <label for="searchbar"></label> 
+         <input type="search" placeholder="Search Packages"  />
+          <button type="submit">Search</button>        
+      </form>
+    </div>
+      
+      <ul>
+          <li class="join-btn"><a href="#">Join</a></li>
+          <li class="log-btn"><a href="#">Log In</a></li>
         </ul>
-      </div>
+      
     </div>
   </header>
   <body>
 <!-- section 1 -->
-  <section id="Build">
+  <section id="build">
+    <div>
     <h1>Build amazing things</h1>
         <article>
             <p>Essential JavaScript development tools that help you go to market faster and build powerful applications using modern open source code.
             </p>
         </article>
-          <div>
-              <a class="link-btn" href="#"> See Plans </a>
-              <a class="link-btn" href="#"> Join for free </a>
-            </div>
+            <ul class="link-btns">
+              <li><a class="plans" href="#"> See Plans </a></li>
+              <li><a class="join-free" href="#"> Join for free </a></li>
+            </ul>
+            
+          </div>
   </section>
 
   <!-- section 2 -->
-  <section id="Bring">
+  <section id="bring">
     <img class="hexagon" src="./images/triangle-hexagon.svg" alt="triangle hexagon" />
         <h3>Bring the best of open source to your company</h3>
         <article>
@@ -71,38 +74,41 @@
 
   </section>  
 <!-- section 3 -->
-  <section id="Zero">
+  <section class="container" id="zero">
     <div>
         <img class="lower-imgs" src="./images/zero-configuration.svg" alt="zero config" />
         <h5>Zero configuration</h5>
             <p>Create an org, add your team, and start collaborating. Nothing to configure, set up, or manage.
             </p>
     </div>
-    <div>
+    <div >
         <img class="lower-imgs" src="./images/team-management.svg" alt="team management" />
         <h5>Team management</h5>
             <p>Control who has access to what modules within your team namespace using straightforward team management capabilities.
             </p>
     </div>
-    <div>
+    <div >
         <img class="lower-imgs" src="./images/familiar-features.svg" alt="familiar features" />
         <h5>Familiar Features</h5>
             <p>npm Orgs has 100% parity with all the public npm registry features your developers already use.
             </p>
     </div>
-    <div>
+    <div >
         <img class="lower-imgs" src="./images/npm-audit.svg" alt="npm audit" />
         <h5>npm audit</h5>
             <p>Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer.
             </p>
     </div>
-    <div>
-        <a href="#">Create an Org</a>
-    </div>
+    
 
+  </section>
+  <section id="createorg">
+    <div>
+      
+      <a href="#">Create an Org</a>
+    
+  </ul>
+  </div>
   </section>
 </body>
 </html>
-
-<!-- Familiar features  npm audit  Create an Org
- -->
