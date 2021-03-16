@@ -1,0 +1,251 @@
+
+/*GuillermoSuarez Rdodriguez for Ironhack Web Development Madrid Course 22/03/2021*/
+/*CSS Stylesheet for PreWork Lab HTML Exercise where we cloned an HTML webpage (npm)*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700');
+
+/*
+form label color_: rgba(0,0,0,.05)
+form input color_: rgba(0,0,0,.05)
+form "Search" button background color_: #fb3e44
+form "Search" button letters color_: white
+form "Search" button border color: lightgray
+"Join" button border color: lightgray
+.headerbox1 border color: lightgray
+.headerbox2 border color: lightgray
+
+#intro background color: rgba(232,217,217,.3)
+"See plans" button background color: #FB3B49
+"See plans" button box shadow: 8px 8px 0 rgba(251,59,73,.2)
+
+#info heading "h2" background color_: rgba(255,204,53,.4)
+
+#solutions headings "h3" letters color: #ED1C24
+"Create an Org" box shadow: 8px 8px 0 rgba(128,83,35,.2)
+"Create an Org" letters color: white
+*/
+
+body {
+  font-family: "Poppins";
+}
+
+.header-box1, .header-box2{
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+}
+
+nav{
+    width: 600px;
+}
+
+#nav-bar-ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+}
+
+#black-heart{
+    width: 20px;
+    margin-right: 1rem;
+}
+
+.header-box2{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#npm-logo{
+    height: 25px;
+    margin-right: 10px;
+}
+
+#magnifying-glass{
+    height: 30px;
+    margin: 0 10px;
+}
+
+.searchbar-and-button{
+    background-color: rgba(0,0,0,.05);
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#searchbar{
+    width: 100%;
+    font-size: 1em;
+    height: 30px;
+    background: rgba(0,0,0,0);
+    border: none;
+}
+
+#search-button{
+    background-color: #fb3e44;
+    color: white;
+    border: 1px rgba(0,0,0,.05) solid;
+    padding: 15px 20px;
+    font-size: 1em;
+    display: flex;
+}
+
+#join-login{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#join-login a{
+    margin: 0 10px;
+    text-decoration: none;
+    color: black;
+}
+
+#join-button{
+    border: 1px lightgray solid;
+    padding: 5px 20px;
+}
+
+#intro{
+    height: 600px;
+    background-color: rgba(232,217,217,.3);
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    font-weight: 700;
+    font-size: 5.5em;
+    text-align: center;
+}
+
+#intro article{
+    width: 600px;
+    text-align: center;
+    position: relative;
+    bottom: 100px;
+    font-size: 1.4em;
+}
+
+#intro div{
+    width: 500px;
+    position: relative;
+    bottom: 110px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#seeplans-button{
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+    font-weight: 600;
+    background-color: #fb3e44;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+    padding: 15px 65px;
+    position: relative;
+    top: 15px;
+}
+
+#joinforfree-button{
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: black;
+    background-color: white;
+    padding: 15px 65px;
+    position: relative;
+    top: 15px;
+}
+
+#info{
+    height: 600px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+}
+#triangle-hexagon{
+    width: 275px;
+    position: relative;
+    top: 10px;
+}
+
+h2{
+    font-weight: 600;
+    font-size: 2em;
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+    font-style: italic;
+    text-align: center;
+    width: 825px;
+}
+
+#info article{
+    width: 700px;
+    text-align: center;
+    position: relative;
+    bottom: 40px;
+}
+#solutions{
+    height: 500px;
+}
+
+#solutions div{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 20px;
+}
+
+.solution{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    padding: 40px;
+}
+
+#solutions img{
+    height: 35px;
+}
+
+h3{
+    color: #ED1C24;
+    text-align: left;
+}
+
+#solutions article{
+    text-align: left;
+    padding-top: 20px;
+}
+
+#createanorg-button{
+    background-color: black;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 600;
+    color: white;
+    padding: 20px 50px;
+    width: 400px;
+}
+
+#solutions > div{
+    display: flex;
+    justify-content: center;
+}
+/*GuillermoSuarez Rdodriguez for Ironhack Web Development Madrid Course 22/03/2021*/
