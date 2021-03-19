@@ -1,7 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;0,800;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
 
 body {
   font-family: 'Poppins';
+  margin: 0;
+  padding: 0;
 }
 
 header > div {
@@ -119,24 +126,30 @@ nav a {
 }
 
 #section1 h1 {
-    font-size: 4em;
+    font-size: 5em;
     font-weight: bolder;
     text-align: center;
+    padding: 0;
+    margin: 0;
 }
 
 #section1 article{
   display: flex;
-  width: 0 auto;
-  justify-content: spread-evenly;
+  flex-direction: row;
+  width: 500px;
+  justify-content: space-between;
   align-items: center;
-  
+  text-align: center;
+  padding: 0;
+  margin-bottom: 3em;
+}
+
+#section1 p{
+    font-size: 1.2em;
 }
 
 .text-container{
-  display: flex;
-  justify-content: spread-between;
-  width: 400px;
-  flex-shrink: 2;
+  width: 100%;
 }
 
 
@@ -148,8 +161,9 @@ nav a {
 
 #section1 a{
     text-decoration: none;
-    height: 40px;
-    padding: 12px 50px;
+    height: 100px;
+    padding: 20px 80px;
+    font-size: 1.2em;
 }
 
 #see-plans-btn{
@@ -161,11 +175,11 @@ nav a {
 
 #join-for-free-btn{
     color: black;
-    font-weight: bolder;
+    font-weight: 500;
 }
 
 #quote-section{
-    padding: 25px 0;
+    padding: 4em 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -173,9 +187,29 @@ nav a {
     text-align: center;
 }
 #hex-image{
-    height: 300px;
+    height: 200px;
     align-items: center;
+    padding: 0;
+    margin-bottom: 2.5em;
 }
+
+#quote-section h2{
+    position: relative;
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+    font-weight: 500;
+    font-style: italic;
+    font-size: 2em;
+    padding: 0px 25px;
+}
+
+#quote-section article{
+    width: 700px;
+    font-style: 400;
+    font-size: 0.9em;
+}
+
+
 
 
 
