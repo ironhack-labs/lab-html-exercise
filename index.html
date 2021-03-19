@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <title>NPM Webpage</title>
 </head>
 
 <body>
     <header class="header">
-        <div class="first-menu">
+        <div id="first-menu">
             <div>
                 <img class="blackHeart" src="\images\black-heart.png" alt="black heart">
                 <span>Nifty Penguin Magic</span>
@@ -26,31 +27,35 @@
                 </ul>
             </nav>
         </div>
-        <div class="second-menu">
+        <div id="second-menu">
 
             <img class="logo" src="\images\npm-logo.png" alt="npm logo">
 
             <nav class="search-bar">
-                <form>
-                    <input type="text" name="text" placeholder="Search packages">
-                    <input type="submit" value="Search">
-
+                <form class="form">
+                    <label for="text">
+                        <img class="magnifying-glass" src="\images\magnifying-glass.png" alt="magnifying glass">
+                    </label>
+                    <input size="50" class="search" type="text" name="text" placeholder="Search packages">
+                    <button type="submit">Search</button>
                 </form>
                 <span><a href="#">Join</a></span>
                 <span><a href="#">Log in</a></span>
             </nav>
         </div>
     </header>
-    <section class="first-section">
+    <section id="first-section">
         <article>
             <h1>Build amazing things</h1>
             <p>Essential JavaScrip development tools that help you go to market faster and build powerful applications
                 using modern and open source code.</p>
+        </article>
+        <div class="links">
             <a class="link-btn" href="#">See plans</a>
             <a class="link-btn" href="#">Join for free</a>
-        </article>
+        </div>
     </section>
-    <section class="second-section">
+    <section id="second-section">
         <div class="section-intro">
             <img src="\images\triangle-hexagon.svg" alt="triangle exagon">
             <article>
@@ -87,6 +92,10 @@
                     software safer.</p>
             </article>
         </div>
+        <a href="#">Create an Org</a>
+    </section>
+    <section id="third-section">
+
     </section>
 
 </body>
