@@ -4,6 +4,7 @@ body {
   font-family: 'Poppins';
 }
 
+/* given */
 header > div {
   padding: 0 25px;
   display: flex;
@@ -31,6 +32,20 @@ nav a {
 .blackHeart {
   width: 20px;
   margin-right: 1rem;
+}
+
+/* general */
+h1 {
+  font-size: 4em;
+  font-weight: 900;
+}
+h2 {
+  font-size: 2em;
+  font-weight: 700;
+}
+h3 {
+  font-size: 1.2em;
+  font-weight: 700;
 }
 
 /* header2 */
@@ -98,10 +113,7 @@ nav a {
   height: 600px;
   background-color: rgba(232, 217, 217, 0.3);
 }
-h1 {
-  font-size: 4em;
-  font-weight: 900;
-}
+
 #section1 article {
   max-width: 500px;
 }
@@ -134,10 +146,7 @@ h1 {
 #section2 img {
   width: 200px;
 }
-h2 {
-  font-size: 2em;
-  font-weight: 700;
-}
+
 .yellowbackground {
   background-color: rgba(255, 204, 53, 0.4);
   transform: skew(9deg, 0deg);
@@ -150,4 +159,34 @@ h2 {
   max-width: 500px;
   text-align: center;
 }
+
 /* section3 */
+#section3 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 600px;
+}
+
+.boxcontainer {
+  display: flex;
+}
+.contentbox {
+  padding: 10px 30px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.contentbox img {
+  width: 30px;
+}
+.contentbox h3 {
+  color: #ed1c24;
+}
+.button.black {
+  color: white;
+  background-color: black;
+  box-shadow: 8px 8px 0 rgba(128, 83, 35, 0.2);
+  margin: 60px 10px;
+  min-width: 300px;
+}
