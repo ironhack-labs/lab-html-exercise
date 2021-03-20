@@ -38,81 +38,224 @@ nav a {
   color: black;
 }
 
-.blackHeart {
-  width: 20px;
-  margin-right: 1rem;
-}
-
-.search-button {
-  background-color: #fb3e44;
-  color: white;
-  padding: 0.5rem 2rem;
-  border-style: none;
-    border-width: 0;
-}
-
-.search-form > input {
-  color: rgba(0, 0, 0, 0.05);
-  font-family: monospace;
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 18px;
-}
-
-.search-form > label {
-  color: rgba(0, 0, 0, 0.05);
-  display: block;
-  height: 18px;
-  width: 18px;
-}
-
-.searchline {
-  display: flex;
-  position: relative;
-  align-items: baseline;
-}
-
-.js-tools-section {
-  height: 600px;
-  background-color: rgba(232, 217, 217, 0.3);
-  text-align: center;
-}
-
-.see-plans-button {
-  background color: #FB3B49;
-box shadow: 8px 8px 0 rgba(251,59,73,.2);
-}
-
 h1 {
   font-style: normal;
   font-weight: 600;
   font-size: 80px;
   line-height: 100px;
+  margin: 54px 0px;
 }
 
 h2 {
-  background-color: rgba(255,204,53,.4);
-  transform: skew(9deg,0deg);
+  background-color: rgba(255, 204, 53, 0.4);
+  transform: skew(9deg, 0deg);
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
   line-height: 30px;
-
+  margin: 20px auto;
+  text-align: center;
 }
 
 h3 {
-  color: #ED1C24;
-
+  color: #ed1c24;
 }
 
-.create-org-button {
-  box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+.blackHeart {
+  width: 20px;
+  margin-right: 1rem;
+}
+
+.search-and-login-area {
+  padding: 10px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 22px;
+  width: 70px;
+  padding-top: 8px;
+  margin-top: 16px;
+  margin-right: 32px;
+}
+
+.search-button {
+  background-color: #fb3e44;
   color: white;
+  padding: 8px 32px;
+  border-style: none;
+  border-width: 0;
+  text-align: center;
+  line-height: 16px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.search-button:hover {
+  cursor: pointer;
+}
+
+.search-form {
+  padding: 8px 16px;
+  border-top: 1px;
+  display: flex;
+}
+.search-area {
+  display: flex;
+  line-height: 1.15;
+  padding: 5px;
+  background: #f2f2f2;
+  border: 1px solid #f2f2f2;
+}
+.search-form-input {
+  color: rgba(0, 0, 0, 0.05);
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 18px;
+  padding: 1px 2px 1px 10px;
+  border: none;
+  background: #f2f2f2;
+}
+
+.magnifying-glass {
+  color: rgba(0, 0, 0, 0.05);
+  height: 18px;
+  width: 18px;
+  padding: 10px 4px 0px 16px;
+  border: 1px;
+}
+
+.sign-in-area {
+  margin-left: 16px;
+  padding: 8px 0px;
+  line-height: 1.15;
+}
+
+.join-button {
+  padding: 13px 28px;
+  border: 1px solid #cccccc;
+  border-radius: 0;
+  text-decoration: none;
+  color: #000;
+  line-height: 21px;
+  font-weight: 500;
+  font-size: 14px;
+  margin-right: 16px;
+  padding: 13px 28px;
+}
+
+.login-button {
+  text-decoration: none;
+  color: #000;
+  line-height: 21px;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 4px;
+  background: transparent;
+}
+
+.slogan-section {
+  background-color: rgba(232, 217, 217, 0.3);
+  text-align: center;
+  margin: 0px 24px;
+  padding: 64px 16px;
 }
 
 .promo-text {
+  margin: 0px 112px;
+  text-align: center;
   font-weight: 400;
   font-size: 16px;
   font-style: normal;
   line-height: 24px;
+  max-width: 70%;
+}
+
+.promo-buttons {
+  margin-top: 64px;
+}
+
+.see-plans-button {
+  background-color: #fb3b49;
+  color: white;
+  box-shadow: 8px 8px 0 rgba(251, 59, 73, 0.2);
+  padding: 16px 32px;
+  max-width: 16rem;
+  margin-right: auto;
+  margin-left: auto;
+  text-decoration: none;
+  font-weight: 700;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.join-for-free-button {
+  padding: 16px 32px;
+  max-width: 16rem;
+  margin-right: auto;
+  margin-left: auto;
+  text-decoration: none;
+  font-weight: 700;
+  line-height: 1.5;
+  text-align: center;
+  color: black;
+}
+.tool-description {
+  padding: 64px 16px;
+  margin: 0px 136px 45px 136px;
+  max-width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+.decoration {
+  display: flex;
+  justify-content: center;
+  margin: 0px 200px 32px 200px;
+  width: 20%;
+}
+
+.sales-section {
+  margin-bottom: 70px;
+}
+
+.what-makes-mdn-different {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  column-gap: 5vw;
+  padding: 64px 16px;
+  margin: 0px 100px 45px 100px;
+}
+
+.selling-points {
+  display: flex;
+  flex-direction: column;
+  width: 17vw;
+}
+
+.illustration {
+  width: 35px;
+}
+
+.create-org-button {
+  box-shadow: 8px 8px 0 rgba(128, 83, 35, 0.2);
+  color: white;
+  background-color: black;
+  padding: 15px 75px;
+  max-width: 30rem;
+  display: block;
+  margin: 0 auto;
+  text-decoration: none;
+  font-weight: 700;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.create-org-button:hover {
+  cursor: pointer;
 }

@@ -13,7 +13,7 @@
 <header>
   <div>
     <div>
-      <img class="blackHeart" src="/images/black-heart.png" alt="black heart" />
+      <img class="blackHeart" src="images/black-heart.png" alt="black heart" />
       <span> Nifty Penguin Magic </span>
     </div>
     <nav>
@@ -28,38 +28,46 @@
     </nav>
   </div>
 
-  <div class="searchline">
-    <img class="logo" src="/images/npm-logo.png" alt="npm logo" />
+  <div class="search-and-login-area container">
+    <img class="logo" src="images/npm-logo.png" alt="npm logo" />
           <form class="search-form" action="/search" method="get">
-            <label for="search"><img src="/images/magnifying-glass.png" alt="magnifying glass image"></label>
-              <input type="text" placeholder="Search packages">
-    <button class="search-button">
+        
+            <span class="search-area">
+              <label for="search"> 
+              <img class="magnifying-glass" src="images/magnifying-glass.png" alt="magnifying glass"> 
+            </label>
+              <input class="search-form-input" type="text" name="text" placeholder="Search packages">
+        </span>     
+    <button class="search-button" type="submit">
       Search
     </button>
-    
-      <a href="">Join</a>
-        <a href="">Log In</a>
 
+  </form>
+  <div class="sign-in-area">
+      <a class="join-button" href="#">Join</a>
+        <a class="login-button" href="#">Log In</a>
+</div>
   </div>
 </header>
     
 
 
-<section class="js-tools-section">
+<section class="slogan-section">
  <h1>Build amazing things</h1> 
- <article class=promo-text>
+ <span>
+ <article class="promo-text">
  Essential JavaScript development tools that help you go to market faster and build powerful applications using
 modern open source code. 
 </article>
-    <div>
+    <div class="promo-buttons">
       <a class="see-plans-button" href="">See plans</a>
-      <a href="">Join for free</a>
+      <a class="join-for-free-button" href="">Join for free</a>
     </div>
- 
+  </span>
 </section>
 
-<section>
-  <img class="decoration" src="/images/triangle-hexagon.svg" alt="triangle hexagon" />
+<section class="tool-description">
+  <img class="decoration" src="images/triangle-hexagon.svg" alt="triangle hexagon" />
 <h2>
   Bring the best of open source to your company 
 </h2>
@@ -68,44 +76,44 @@ Create an Org and get more out of the tools your team already knows and loves.
 </article>
 </section>
 
-<section>
-  <div>
-<div>
-  <img class="illustration" src="/images/zero-configuration.svg" alt="zero-configuration image">
+<section class="sales-section">
+  <div class="what-makes-mdn-different">
+<article class="selling-points">
+  <img class="illustration" src="images/zero-configuration.svg" alt="zero-configuration image">
 <h3>
   Zero configuration 
 </h3>
-<p class=promo-text>
+<p class="selling-points-text">
   Create an org, add your team, and start collaborating. Nothing to configure, set up, or manage.
 </p>
-</div>
-<div>
-  <img class="illustration" src="/images/team-management.svg" alt="team management image">
+</article>
+<article class="selling-points">
+  <img class="illustration" src="images/team-management.svg" alt="team management image">
 <h3>
   Team management
 </h3>
-<p class=promo-text>
+<p class="selling-points-text">
 Control who has access towhat modules within your team namespace using straightforward team management capabilities.
 </p>
-</div>
-<div>
-  <img class="illustration" src="/images/familiar-features.svg" alt="familiar features image">
+</article>
+<article class="selling-points">
+  <img class="illustration" src="images/familiar-features.svg" alt="familiar features image">
 <h3>
   Familiar features
 </h3>
-<p class=promo-text>
+<p class="selling-points-text">
   npm Orgs has 100% parity with all the public npm registry features your developers already use.
 </p>
-</div>
-<div>
-  <img class="illustration" src="/images/npm-audit.svg" alt="npm audit image">
+</article>
+<article class="selling-points">
+  <img class="illustration" src="images/npm-audit.svg" alt="npm audit image">
 <h3>
   npm audit
 </h3>
-<p class=promo-text>
+<p class="selling-points-text">
   Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer.
 </p>
-</div>
+</article>
 </div>
 <button class="create-org-button">
 Create an Org
