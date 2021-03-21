@@ -5,6 +5,9 @@ body {
   margin: 0px;
 }
 
+
+/*Navigation*/
+
 header > div {
     padding: 0 25px;
     display: flex;
@@ -12,24 +15,31 @@ header > div {
     align-items: center;
     border-bottom: 1px solid rgba(0,0,0,0.05);
     font-size: 14px;
-  }
+}
 
 header {
     box-shadow: 0px 5px 10px  rgba(0,0,0,0.1);
-  }
-
-h1 {
-    font-size: 80px;
-    font-family: "poppins-semibold";
-    text-align: center;
-}
-h5 {
-    color: #fb3e44;
-    font-family: "poppins-bold";
-    font-size: 15px;
 }
 
-/*Navigation*/
+#choice{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+#choice a{
+    color: black;
+    padding: 5px 20px 5px 20px;
+}
+
+.join{
+    font-style: "poppins-bold";
+    border: black;
+    border-style: solid;
+    border-width: thin;
+    margin-left: 10px;
+}
+
 nav {
     width: 600px;
 } 
@@ -54,10 +64,12 @@ nav a {
     width: 20px;
     padding: 10px 20px 10px 20px;
 }
+
 #bar{
     height: 25px;
 }  
-#username {
+
+#search {
     border: none;
     justify-content: flex-start;
     width: 940px;
@@ -100,6 +112,18 @@ div input {
     padding: 60px 0px 120px 0px;
 }
 
+h1 {
+    font-size: 80px;
+    font-family: "poppins-semibold";
+    text-align: center;
+}
+
+.red{
+    background-color: #fb3e44;
+    color: white;
+    padding: 20px 80px 20px 80px;
+
+}
 
 /*Part 2*/
 #open-source {
@@ -126,10 +150,16 @@ h2{
     height: 45px;
 }
 
-
 #open-source article{
     width: 50%;
     text-align: center;
+    font-size: 15px;
+}
+
+/*Part 3*/
+h5 {
+    color: #fb3e44;
+    font-family: "poppins-bold";
     font-size: 15px;
 }
 
@@ -144,7 +174,6 @@ h2{
 #blocks > div {
     padding: 0 40px 0 40px;
 }
-
 
 #create-org {
     display: flex;
@@ -163,17 +192,12 @@ h5 {
     align-items: flex-start;
 }
 
+ /*COMMON&+*/
+
 .button {
     font-family: "poppins-semibold";
     font-size: 20px;
     border: none;
-}
-
-.red{
-    background-color: #fb3e44;
-    color: white;
-    padding: 20px 80px 20px 80px;
-
 }
 
 .white{
@@ -190,33 +214,11 @@ h5 {
     padding: 20px 150px 20px 150px;
 }
 
-
 .shadow{
     box-shadow: 10px 10px rgba(0,0,0,0.05);
-}
-
-#choice{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-}
-
-#choice a{
-    color: black;
-    padding: 5px 20px 5px 20px;
-
 }
 
 .no-deco {
     text-decoration: none;
 }
 
-.join{
-    font-style: "poppins-bold";
-    border: black;
-    border-style: solid;
-    border-width: thin;
-    margin-left: 10px;
-}
-
-.log-in
