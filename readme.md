@@ -11,7 +11,7 @@ In this exercise, the goal is to apply as many as possible of the concepts you'v
 - how to use flexbox to position elements on the page and
 - how to style the page.
 
-## Getting started
+## Getting started !
 
 1. [Fork](https://gist.github.com/ironhack-edu/dd3635de73a6ef07ef337bf184eda985#step-1-fork-the-repository) this repo
 2. [Clone](https://gist.github.com/ironhack-edu/dd3635de73a6ef07ef337bf184eda985#step-2-clone-the-repository) this repo
@@ -26,7 +26,7 @@ In the end of this document, you will find guidelines on how to submit the exerc
 
 ## Instructions
 
-### Introduction
+### Introduction :)
 
 In this exercise, you will clone the landing page of the **NPM website**. NPM stands for a Node Package Manager, and you will be using it heavily throughout this course. The version you will be cloning is the one in that you see in the following image. If you want, you can visit the [official page](https://www.npmjs.com/) to pick up some of their styles, but this is not necessary; you’ll see that the NPM page has been updated, but that’s okay. You already have all the assets for this version in the images folder as well as the necessary text in the `index.html`.
 
