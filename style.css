@@ -3,6 +3,7 @@
 body {
   font-family: 'Poppins';
 }
+
 header > div {
     padding: 0 25px;
     display: flex;
@@ -44,7 +45,7 @@ header > div {
   }
 
   header input {
-      padding: 10px 1200px 10px 0px;
+      padding: 12px 1200px 12px 0px;
       background-image: url(./images/magnifying-glass.png);
       background-repeat: no-repeat;
       background-position-x: left;
@@ -52,17 +53,36 @@ header > div {
       background-position-y: center;
       background-position-x: 10px;
       margin-right: -5px;
+      background-color: rgba(0,0,0,.05);
+      border: thin;
     }
-
-  header button {
-      padding: 10px 12px;
-  }
 
   header form {
       position: relative;
       top: 8px;
   }
 
-  input[type="text"]{
+  header form input[type="text"]{
     padding-left: 40px !important;
+}
+  header form button {
+    background-color: #fb3e44;
+    color: white;
+    border: thin;
+    padding: 12px 14px;
+}
+
+#join {
+  text-decoration: none;
+  color: black;
+  font-weight: normal;
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+  padding: 3px 14px;
+}
+
+#log-in {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.700);
 }
