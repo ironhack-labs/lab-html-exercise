@@ -2,6 +2,7 @@
 
 body {
   font-family: 'Poppins';
+  margin: 0px 40px;
 }
 
 header > div {
@@ -45,7 +46,7 @@ header > div {
   }
 
   header input {
-      padding: 12px 1200px 12px 0px;
+      padding: 12px 70rem 12px 0px;
       background-image: url(./images/magnifying-glass.png);
       background-repeat: no-repeat;
       background-position-x: left;
@@ -85,4 +86,50 @@ header > div {
 #log-in {
   text-decoration: none;
   color: rgba(0, 0, 0, 0.700);
+}
+
+#introduction {
+  background-color: rgba(232,217,217,.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+}
+
+#introduction h1 {
+  font-size: 80px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#introduction article {
+  width: 23%;
+  padding: 30px 60px;
+}
+
+#introduction #see-plans-join {
+  padding: 30px 60px;
+  width: 23%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+#introduction #see-plans {
+  text-decoration: none;
+  color: white;
+  background-color: #FB3B49;
+  padding: 10px 50px;
+  box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+  font-weight: bold;
+}
+
+#introduction #join-for-free {
+  text-decoration: none;
+  color: black;
+  position: relative;
+  right: 70px;
+  font-weight: bold;
 }
