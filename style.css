@@ -46,7 +46,7 @@ header > div {
   }
 
   header input {
-      padding: 12px 70rem 12px 0px;
+      padding: 10px 60rem 12px 0px;
       background-image: url(./images/magnifying-glass.png);
       background-repeat: no-repeat;
       background-position-x: left;
@@ -131,5 +131,71 @@ header > div {
   color: black;
   position: relative;
   right: 70px;
+  font-weight: bold;
+}
+
+#open-source {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 20px;
+  padding: 10px 0px;
+}
+
+.hexagon {
+  width: 160px;
+  height: 160px;
+  margin-bottom: 20px;
+}
+
+#open-source h2 {
+  margin-top: 20px;
+  background-color: rgba(255,204,53,.4);
+  padding: 0px 20px 0px 20px;
+  transform: skew(9deg,0deg);
+  font-style: italic;
+}
+
+#open-source article {
+  width: 45%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+#features > div {
+  display: flex;
+  justify-content: center;
+}
+
+#features div {
+  padding: 20px 50px;
+}
+
+#features div h3 {
+  color: #ED1C24;
+}
+
+#features #create-org-button {
+display: flex;
+align-items: center;
+}
+
+#features {
+  margin-top: 60px;
+  margin-bottom: 100px;
+}
+
+#features img {
+  width: 30px;
+  height: 30px;
+  padding-left: 8px;
+}
+
+#features a {
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  padding: 8px 100px;
+  box-shadow: 8px 8px 0 rgba(128,83,35,.2);
   font-weight: bold;
 }
