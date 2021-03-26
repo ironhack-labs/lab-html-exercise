@@ -4,104 +4,155 @@ body {
   font-family: 'Poppins';
 }
 header > div {
-    padding: 0 25px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid lightgray;
+  padding: 0 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
 }
-nav {
-    width: 600px;
-}
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-nav a {
-    text-decoration: none;
-    color: black;
 
+nav {
+  width: 600px;
 }
-.blackHeart {
-    width: 20px;
-    margin-right: 1rem;
-}
-.npm{
-    width: 50px;
-}
-.search{
-    width: 30px;
-}
-.form{
-    background-color: rgba(0,0,0,.05)
-}
-.form input{
-    width: 800px;
-    height: 25px;
-    background-color: rgba(0,0,0,.05)
-}
-.form button{
-    background-color: #fb3e44;
-    color: white;
-    width: 100px;
-    height: 25px;
-}
-.join ul{
+
+nav ul {
   list-style: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+.blackHeart {
+  width: 20px;
+  margin-right: 1rem;
+}
+.npm {
+  width: 50px;
+  padding: 0;
+}
+.form{
+  width: 900px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.search{
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: gray;
+  border-bottom: gray;
+}
+.join{
+  width: 200px;
+  display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: stretch;
+}
+.join ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;;
+  align-items: center;
+  list-style: none;
+  
+}
 .join a{
   text-decoration: none;
   color: black;
 }
-.amazing{
+.join li{
+  width: 60px;
+  height: 40px;
+}
+.packages{
+  width: 850px;
+  height: 35px;
+  background-color: rgba(0,0,0,.05);
+  border: 1px solid rgba(0,0,0,.05);
+}
+.button {
+  background-color: #fb3e44;
+  color: white;
+  width: 90px;
+  height: 40px;
+  border: 1px solid rgba(0,0,0,.05);
+}
+.borde{
+  border: 1px solid;
+  display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.borde1{
+  display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+#amazing{
   background-color: rgba(232,217,217,.3);
   height: 600px;
   display: flex;
-  justify-content: center;
+	flex-direction: column;
   align-items: center;
-  flex-direction: column;
+  justify-content: center;
+}
+#amazing .see{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 500px;
+}
+.see a{
+  text-decoration: none;
 }
 .plans{
   background-color: #FB3B49;
-  box-shadow: 8px 8px 0 rgba(251, 59, 73, .2);
-}
-.essential{
-  width: 600px;
-  padding: 20px 20px 20px 20px;
-  font-size: 25px;
-  margin: 0;
-}
-.build{
-  padding: 5px 5px 5px 5px;
-  font-size: 60px;
-  width: 800px;
-  text-align: center;
-}
-.see {
-  padding: 20px 20px 20px 20px;
-  justify-content:space-evenly;
-  text-decoration: none;
-  color: white;
-}
-.plans{
-  padding: 20px 60px 20px 60px;
-  color: white;
   font-size: 20px;
-  border-radius: 10px;
-}
-.plans a{
-  text-decoration: none;
   color: white;
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+  display: flex;
+  justify-content: center;
+	align-items: center;
 }
 .free{
-  text-decoration: none;
+  background-color: white;
+  font-weight: 800;
+  font-size: 20px;
   color: black;
-  padding: 20px 60px 20px 60px;
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+	align-items: center;
+}
+#amazing h1{
+  font-weight: 600;
+  padding:0;
+  margin-bottom: 30px;
+  font-size: 5rem;
+}
+#amazing article {
+  width: 500px;
+  font-size: 20px;
+  margin-bottom: 30px;
 }
 #section-bring{
   display: flex;
@@ -124,6 +175,7 @@ nav a {
 }
 .tool{
   width: 800px;
+  text-align: center;
 }
 #org{
   display: flex;
@@ -160,7 +212,10 @@ nav a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-	align-items: center;
+  align-items: center;
   margin-bottom: 50px;
-  box-shadow: 10px 5px 5px gray;
+  box-shadow: 10px 5px 5px gainsboro;
+  text-decoration: none;
+  border: lightslategray;
+  
 }
