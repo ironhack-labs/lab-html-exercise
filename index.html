@@ -26,15 +26,17 @@
             </nav>
         </div>
         <div class='header-searchbar'>
-            <img src='./images/npm-logo.png' alt='npm logo'>
+            <img class='npm-logo' src='./images/npm-logo.png' alt='npm logo'>
             <form id='searchbar' action='#' method='GET'>
-                <img src='./images/magnifying-glass.png' alt='magnifying glass icon'>
-                <input type='text' name='package-name' placeholder='Search packages'>
+                <div>
+                    <img class='magnifying-glass' src='./images/magnifying-glass.png' alt='magnifying glass icon'>
+                </div>
+                <input class='searchfield' type='text' name='package-name' placeholder='Search packages'>
                 <button type='submit'>Search</button>
             </form>
             <div class='login'>
-                <a href='#'>Join</a>
-                <a href='#'>Log In</a>
+                <a href='#' id='join'>Join</a>
+                <a href='#' id='login'>Log In</a>
             </div>
         </div>
     </header>
