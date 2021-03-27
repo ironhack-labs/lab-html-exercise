@@ -2,6 +2,7 @@
 
 body {
   font-family: 'Poppins';
+  margin-bottom: 40px;
 }
 
 header > div {
@@ -37,12 +38,14 @@ nav a {
   display: flex;
   align-items: center;
   height: 50px;
-  //border: none;
+  border: none;
 }
 
 #searchbar {
   display: flex;
   align-items: center;
+  position: absolute;
+  right: 200px;
 }
 
 #searchbar input, button, div {
@@ -58,7 +61,7 @@ nav a {
 
 .searchfield {
   background: rgba(0,0,0,.05);
-  width: 1000px;
+  width: 980px;
   padding: 0;
 }
 
@@ -75,6 +78,7 @@ form button {
   background: #fb3e44;
   color: white;
   font-size: 15px;
+  padding: 0 20px;
 }
 
 .login a {
@@ -88,4 +92,117 @@ form button {
 
 #join {
   border: 1px solid #cccccc;
+}
+
+#login {
+  margin: 0 0 0 30px;
+  padding: 0;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#introduction {
+  height: 600px;
+  background: rgba(232,217,217,.3);
+}
+
+#introduction h1 {
+  font-size: 60px;
+  margin: 100px 0 40px 0;
+}
+
+#introduction > p {
+  width: 430px;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+#intro-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 430px;
+}
+
+#intro-buttons a {
+  text-decoration: none;
+  width: 195px;
+  text-align: center;
+  padding: 15px 0;
+}
+
+#plans {
+  background: #FB3B49;
+  color: white;
+  box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+}
+
+#join-for-free {
+  color: black;
+}
+
+#information {
+  height: 545px;
+  padding: 55px 0 0 0;
+}
+
+#information img {
+  height: 200px;
+}
+
+#information h2 {
+  background: rgba(255,204,53,.4);
+  transform: skew(9deg,0deg);
+  font-style: italic;
+  padding: 0 30px;
+  margin: 55px 0 25px 0;
+  font-size: 30px;
+}
+
+#information p {
+  width: 680px;
+  text-align: center;
+  font-size: 14px;
+  padding: 0 40px 0 40px;
+}
+
+#features {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  height: 300px;
+  padding: 0 180px 0 180px;
+}
+
+#features article {
+  width: 200px;
+  height: 200px;
+  padding: 0 40px 0 20px;
+}
+
+#features img {
+  height: 20px;
+}
+
+#features h3 {
+  color: #ED1C24;
+}
+
+#org-button {
+  padding: 15px 110px;
+  text-decoration: none;
+  background: black;
+  box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+  color: white;
+}
+
+.create-org {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width: auto;
 }
