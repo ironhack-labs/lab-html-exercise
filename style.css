@@ -1,0 +1,243 @@
+@import  url('https://fonts.googleapis.com/css?family=Poppinsfamily=Fira Mono", "Andale Mono", "Consolas", monospace;');
+
+body {
+    font-family: 'Poppins';
+}
+
+header > div {
+  padding: 0px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+}
+
+nav {
+    width: 600px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.blackHeart {
+    width: 20px;
+    margin-right: 1rem;
+}
+
+.container {
+    padding: 0px 40px;
+    display: flex;
+    max-width: 100vw;
+    border-bottom: none;
+}
+
+#search {
+    display: flex;
+    align-items: center;
+    width: 80%;
+}
+
+.npm-logo {
+    width: 70px;
+    margin-right: 1rem;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    padding: 5px 0;
+    width: 100%;
+}
+
+.search-bar img {
+    width: 25px;
+    position: absolute;
+    padding: 15px 10px;
+}
+
+.search-bar input {
+    background-color: rgba(0,0,0,.05);
+    border: none;
+    height: 40px;
+    width: 100%;
+    padding: 0px 40px
+}
+
+::-webkit-input-placeholder { 
+    font-size: 17px;
+    font-family: "Fira Mono";
+    letter-spacing: 1px;
+}
+
+.search-bar button {
+    font-family: "Fira Mono";
+    font-size: 17px;
+    width: 120px;
+    height: 40px;
+    background-color:#fb3e44;
+    color: white;
+    border: none;
+    justify-items: center;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 150px;
+    margin-left: 35px;
+}
+
+.links .link-join {
+    text-decoration: none;
+    font-family: 'Poppins';
+    font-size: 15px;
+    padding: 5px 20px;
+    background-color: white;
+    color: rgba(0,0,0);
+    border: 2px solid lightgray;
+    border-bottom: 3px solid lightgray;
+}
+
+.links .link-Login {
+    text-decoration: none;
+    font-size: 15px;
+    color: rgba(0,0,0);
+}
+
+#general-introduction {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 35px;
+    align-items: center;
+    height: 600px;
+    background-color: rgba(232,217,217,.3);
+    border-top: 2.5px solid rgba(232,217,217,.4);
+}
+
+#general-introduction h1 {
+    font-size: 60px;
+    font-weight: 600;
+    margin: 0;
+    font-family: 'sans-serif';
+
+}
+
+#general-introduction article p {
+    font-size: 20px;
+    text-align: center;
+    padding: 30px 30px;
+}
+
+#general-introduction > div  {
+    font-size: 15px;
+    text-align: center;
+    padding: 30px 0 30px 0;
+}
+
+#general-introduction .button-see-plans {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 17px;
+    padding: 13px 60px;
+    margin: 0 10px;
+    color: white;
+    background-color: #FB3B49;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2)
+}
+
+#general-introduction .button-join {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 17px;
+    padding: 13px 60px;
+    margin: 0 10px;
+    color: rgba(0,0,0);
+    background-color:white;
+}
+
+#services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 40px 40px;
+    align-items: center; 
+}
+
+#services .image-triangle {
+    width: 150px;
+}
+
+
+#services h2 {
+    background-color: rgba(255,204,53,.4);
+    transform: skew(10deg);
+    font-style: italic;
+    font-size: 30px;
+    padding: 0 25px;
+    font-family: sans-serif;
+
+}
+
+#services p {
+    text-align: center;
+    margin: 0 100px ;
+    margin-top: 10px;
+    padding: 0;
+}
+
+#open-source {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+
+    grid-gap: 20px;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0px;
+    
+}
+
+#open-source > div {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+#open-source > div img {
+    height: 30px;
+}
+
+#open-source > div h3 {
+    color: #fb3b49;
+    font-size: 17px;
+    margin-bottom: 10px;
+    margin-top: 15px;
+    font-family: sans-serif;
+}
+
+#open-source .btn-black {
+    display: flex;
+    grid-column: 2/4;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    margin: 50px auto;
+    background-color: rgba(0,0,0);
+    font-size: 20px;
+    color: white;
+    padding: 15px 70px;
+}
