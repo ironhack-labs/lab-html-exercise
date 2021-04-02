@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+
+/* nav line */
+body {
+  font-family: 'Poppins';
+  
+}
+
+header > div {
+  padding: 0 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+}
+
+.header-npm {
+  font-size: 13px;
+}
+
+nav {
+  width: 600px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+.blackheart {
+  width: 20px;
+  margin-right: 1rem;
+}
+
+
+/* search bar */
+
+/* form label color: rgba(0,0,0,.05)
+form input color: rgba(0,0,0,.05)
+form button background color: #fb3e44
+form button letters color: white */
+.search-bar {
+  padding: 10px 25px;
+/*   width: 600px; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.search-bar form{
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(0,0,0,.05);
+  width: 80%;
+  
+}
+
+.npm-logo {
+  width: 70px;
+}
+
+.magnifying-glass {
+  width: 1.5em;
+  height: 1.5em;
+  margin: auto;
+  /* background-color: rgba(0,0,0,.05); */
+  
+}
+
+.input {
+  width: 100%;
+  background-color: transparent;
+  color: rgba(0,0,0,.05);
+  border: none;
+  margin-left: 10px;
+  font-size: 16px;
+}
+
+
+.search-button {
+  background-color: #fb3e44;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  font-size: 16px;
+}
+
+.join {
+  border: 2px inset lightgray;
+  padding: 6px 18px;
+  margin: 0 10px;
+  font-size: 16px;
+}
+
+.join-login a {
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+/* section 1 */
+
+/* "See plans" button background color: #FB3B49
+"See plans" button box shadow: 8px 8px 0 rgba(251,59,73,.2) */
+#upper-part {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 600px;
+  background-color: rgba(232,217,217,.3);
+}
+
+#upper-part h1 {
+  font-size: 60px;
+  font-style: bolder;
+}
+
+#upper-part article {
+  width: 35%;
+  text-align: center;
+  font-size: 120%;
+}
+
+#upper-part-buttons {
+  margin: 80px;
+}
+
+#see-plans {
+  background-color: #FB3B49;
+  color: white;
+  text-decoration: none;
+  font-style: bolder;
+  box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+  padding: 10px 70px;
+  margin: 20px;
+}
+
+#join-for-free {
+  background-color: white;
+  color: black;
+  font-style: bolder;
+  text-decoration: none;
+  padding: 10px 50px;
+  margin: 20px;
+}
+
+
+/* section 2 */
+
+/* heading background color: rgba(255,204,53,.4)
+to get the transform of the yellow background in the left-hand direction use: transform: skew(9deg,0deg);
+to get it in the opposite direction of the letters, the way we need it on the page, use: font-style: italic;
+to additionally fine-tune the position of each element, use margin property. */
+
+#middle-part {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  margin-top: 80px;
+  margin-bottom: 50px;
+}
+
+.triangle-hexagon {
+  width: 200px;
+  margin-bottom: 30px;
+}
+
+#middle-part h2 {
+  font-size: 35px;
+  text-align: center;
+  background-color: rgba(255,204,53,.4);
+  transform: skew(9deg,0deg);
+  font-style: italic;
+/*   margin-top: */
+  margin-bottom: 40px;
+}
+
+#middle-part article {
+  text-align: center;
+  width: 50%;
+}
+
+/* section 3 */
+
+/* color of the letters in each heading in this section: #ED1C24
+"Create an Org" box shadow: 8px 8px 0 rgba(128,83,35,.2)
+"Create an Org" letters color: white */
+#lower-part {
+  height: 600px;
+  margin-top: 70px;
+  margin-bottom: 80px;
+}
+
+#lower-part > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: stretch;
+  padding: 20px 50px;
+  margin: 0 50px;
+}
+
+#lower-part img {
+  width: 50px;
+}
+
+#lower-part h3 {
+  font-style: bold;
+/*   font-weight:  */
+  color: #ED1C24;
+  padding-bottom: 20px;
+}
+
+#zero-configuration, #team-management, #familiar-features, #npm-audit {
+  width: 25%;
+  margin: 30px;
+}
+
+.create-org-button {
+  text-align: center;
+  
+}
+
+.create-org-button a {
+  text-decoration: none;
+  background-color: black;
+  color: white;
+  font-style: bold;
+  box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+  padding: 10px 30px;
+  width: 250px;
+}
