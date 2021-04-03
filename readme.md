@@ -171,6 +171,7 @@ header > div {
   border-bottom: 1px solid lightgray;
 }
 
+
 nav {
   width: 600px;
 }
