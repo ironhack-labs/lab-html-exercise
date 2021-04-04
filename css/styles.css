@@ -2,6 +2,7 @@
 
 body {
     font-family: 'Poppins';
+    margin-bottom: 100px;;
 }
 
 header>div {
@@ -25,8 +26,11 @@ nav {
 }
 
 nav a {
-    text-decoration: none;
     color: black;
+}
+
+a {
+    text-decoration: none;
 }
 
 .nav-bar-ul li {
@@ -128,6 +132,7 @@ form button {
     /* padding: 30px 100px; */
     height: 600px;
     text-align: center;
+    padding: 50px 0;
 }
 
 #buil-amazing-things .container {
@@ -174,33 +179,75 @@ form button {
     color: black;
 }
 
-#bring-the-best{
+#bring-the-best {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     /* width: 30%; */
-    
+
 }
 
-#bring-the-best h3{
-    background-color: rgba(255,204,53,.4);
+#bring-the-best h3 {
+    background-color: rgba(255, 204, 53, .4);
     font-style: italic;
-    transform: skew(9deg,0deg);
+    transform: skew(9deg, 0deg);
     margin: 0;
     font-size: 2.5em;
     text-align: center;
     width: 60%;
 }
 
-#bring-the-best article{
+#bring-the-best article {
     font-size: 1.2em;
     text-align: center;
     width: 40%;
 }
 
 .hexagon-image {
-    
+
     margin: 50px auto;
     width: 250px;
+}
+
+.create-an-org {
+    display: flex;
+    justify-content: center;
+}
+
+.create-an-org-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding: 50px;
+}
+
+.create-an-org-container .container {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.create-an-org-container .container h5 {
+    font-size: 1em;
+    color: #FB3B49;
+}
+
+.create-an-org-container .container p {
+    margin: 0;
+}
+
+.create-org-images {
+    width: 30px;
+}
+
+.button-container {
+    text-align: center;
+}
+
+.button-container a {
+    background-color: black;
+    color: #fff;
+    box-shadow: 8px 8px 0 grey;
+    padding: 10px 100px;
 }
