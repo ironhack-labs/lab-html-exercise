@@ -25,14 +25,20 @@
             </div>
 
             <div>
-                <img src="images/npm-logo.png" alt="npm-logo">
-                    <img src="images/magnifying-glass.png" alt="Search">
-                    <input type="search" placeholder="Search packages"/>
-                    <button>Search</button>
-                    <div>
-                        <a href="">Join</a>
-                        <a href="">Log In</a>
-                    </div>
+                <img class="npm-logo" src="images/npm-logo.png" alt="npm-logo">
+
+                <form id="search" action="/search" method="GET">
+                        <div class="searchBox">
+                            <span><img src="images/magnifying-glass.png" alt="Search"></span>
+                            <input type="search" placeholder="Search packages"/>
+                        </div>
+                            <button>Search</button>
+
+                </form>
+                <div>
+                    <a class="join" href="">Join</a>
+                    <a class="logIn" href="">Log In</a>
+                </div>
             </div>
         </header>
 
