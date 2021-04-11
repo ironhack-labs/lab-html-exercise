@@ -1,0 +1,242 @@
+
+/*GENERAL STYLES
+=================*/
+
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,700&display=swap');
+
+body {
+  font-family: 'Poppins';
+  margin:0;
+  padding:0;
+}
+
+
+/* HEADER
+=========*/
+
+header > div {
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+  }
+  /* Upper part of the header*/
+
+  .nav-container{
+      font-size: 14px;
+      display:flex;     
+  }
+  
+  nav {
+    width: 600px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+  
+  .nav-container img {
+    width: 30px;
+    margin-right: 1rem;
+  }
+/* Bottom part of the header*/
+   
+/*LOGO*/
+.search-container{
+    display:flex;
+    justify-content: space-around;
+    padding: 8px 0px;
+}
+
+.search-container img{
+    margin-left:  1em;
+    margin-right:0;
+    width:4.5rem;
+}
+
+/*Search Bar*/
+.search-bar{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(0,0,0,.05);
+    width: 80%;
+    padding:1px;
+    height: 40px;
+   
+}
+.search-bar input{
+    background-color: rgba(0,0,0,.00);
+    border: none;
+    width: 90%;
+    outline: none;
+    font-family: monospace;
+}
+.search-bar img{
+    display:flex;
+    height:1.5em;
+    width: 1.5em;
+    padding-left: 15px;
+
+}
+.search-bar button{
+    height: 100%;
+    background-color: #fb3e44;
+    color:white;
+    border:none;
+    width:90px;
+    font-size:16px;
+    font-family: monospace;
+    
+}
+
+/*JOIN/LOG IN buttons*/
+
+.join-button{
+    text-decoration: none;
+    border: 1px solid black;
+    padding:5px 18px;
+    font-size:14px;
+    color:black;
+}
+.logIn-button{
+    text-decoration: none;
+    font-size:14px;
+    color:black;
+    margin-right:10px;
+}
+
+/*SECTION 1
+===========*/
+#introduction-section{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(232,217,217,.3);
+    height: 600px;
+    text-align: center;
+}
+
+h1{
+    margin:100px 0 20px 0;
+    font-size:80px;
+    font-weight:700;
+}
+
+#introduction-section p{
+    writing-mode:horizontal-tb;
+    font-size:1.3em;
+}
+/*PLANS/JOIN buttons*/
+
+.button-box{
+    margin-top: 40px;
+}
+
+.plans-button{
+    background-color:#fb3e44 ;
+    text-decoration: none;
+    color:white;
+    font-size: 16px;
+    padding:18px 70px;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+    margin-right: 40px;
+}
+.for-free-button{
+    text-decoration: none;
+    font-weight: bold;
+    color:black;
+    background-color: white;
+    padding:18px 70px;
+}
+
+/*SECTION 2
+===========*/
+#about-section{
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#about-section img{
+    height: 270px;
+    width:270px;
+    margin: -8px 0 30px 0;
+}
+
+#about-section h2{
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+    font-size: 35px;
+    padding: 0px;
+    font-style: italic;
+    font-weight:700;
+    width: 65%;
+    height: 45px;
+    
+    
+    
+}
+#about-section p{
+    margin-top:0;
+    font-size:1rem;
+}
+
+/*SECTION 3
+===========*/
+
+#freatures-section{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   margin-top: 60px;
+    
+}
+
+.freature{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width:18%;
+    margin:0 20px 0 40px;
+}
+
+.freature h3{
+    color:#fb3e44;
+    font-size: 1rem;
+    font-weight: 700;
+}
+.freature img{
+    height: 40px;
+    width:40px;
+}
+
+.freature p{
+    width: 90%;
+}
+/*Create an ORG button*/
+.create-button{
+    padding:18px 150px;
+    background-color: black;
+    color: white;
+    margin: 60px 0;
+    text-decoration: none;
+    font-size: 20px;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    align-self: center;
+}
+
