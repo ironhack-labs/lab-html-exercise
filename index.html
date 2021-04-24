@@ -7,10 +7,10 @@
     
 
     <header>
-        <div>
+        <div class="header-1">
             <div>
-                <img class="blackHerat" src="images/black-heart.png" alt="Black heart"/>
-                <span>Nifty Penguin Magic</span>
+                <img class="blackHeart" src="images/black-heart.png" alt="Black heart"/>
+                <span class="npm-header">Nifty Penguin Magic</span>
                 </div>
                 <nav> 
                     <ul>
@@ -23,25 +23,33 @@
                 </ul>
                 </nav>
             </div>
-            <img class="logo" src="images/npm-logo.png" alt="npm logo">
-            <article>
+
+            <div class="search-bar-header">
+                <img class="logo" src="images/npm-logo.png" alt="npm logo">
+               
                 <img class="search-icon" src="images/magnifying-glass.png" alt="magnifying glass">
-                <form class="search-bar" action=/search method="get">
-                <input type="text" name="search" id="search" placeholder="Search packages">
-                <input type="button" value="Search"/>
-                </form>
+                
+                <article>
+                    
+                    <form class="search-bar" action=/search method="get">
+                    <label for="search-bar"></label>    
+                    <input type="text" name="search" id="search" placeholder="Search packages"></form>
+                    
+                    </form>
 
-
-            </article>
-
-            <span><a href="#join">Join</a></span>
-            <span><a href="#log-in">Log In</a></span>
+                  <button class="search-button">Search</button> 
+    
+    
+                </article>
+    
+                <span><a class="join-header-btn" href="#join">Join</a></span>
+                <span><a class="log-in-header-btn" href="#log-in">Log In</a></span>
+            </div>
+            
             
 
-        </div>
-        <div>
-
-        </div>
+        
+       
 
     </header>
     
@@ -55,8 +63,8 @@
         </article>
         
         <div>
-            <a href="#join">See plans</a>
-            <a href="log-in">Join for free</a>
+            <a class="join-link" href="#join">See plans</a>
+            <a class="log-in-link" href="log-in">Join for free</a>
         </div>   
 
     </section>
@@ -66,7 +74,7 @@
 
     <section id="products">
         <img src="images/triangle-hexagon.svg" alt="triangle hexagon">
-        <h2>Bring the best of open source to your company</h2>
+        <h3>Bring the best of open source to your company</h3>
         <article>
             <p>npm is the tool used by
                 over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it.
@@ -81,40 +89,43 @@
 
 
     <section id="resources">
-        <div>
+      <div class="four-boxes">
+        <div class="resource-box">
             <img src="images/zero-configuration.svg" alt="zero configuration icon">
-            <h3>Zero configuration</h3>
+            <h4>Zero configuration</h4>
             <p>Create an org, add
                 your team, and start collaborating. Nothing to configure, set up, or manage.</p>
 
         </div>
         
-        <div>
+        <div class="resource-box">
             <img src="images/team-management.svg" alt="team management icon">
-            <h3>Team management</h3>
+            <h4>Team management</h4>
             <p>Control who has access to
                 what modules within your team namespace using straightforward team management capabilities.</p>
 
         </div>
 
 
-        <div>
+        <div class="resource-box">
             <img src="images/familiar-features.svg" alt="familiar features icon">
-            <h3>Familiar features</h3>
+            <h4>Familiar features</h4>
             <p>npm Orgs
                 has 100% parity with all the public npm registry features your developers already use.</p>
 
         </div>
        
        
-        <div>
+        <div class="resource-box">
             <img src="images/npm-audit.svg" alt="npm audit icon">
-            <h3>npm audit</h3>
+            <h4>npm audit</h4>
             <p>Enjoy the security
                 auditing features built into the npm client, a zero-friction way to make open source software safer.</p>
 
         </div>
-        <a href="#">Create an Org</a></span>
+    </div>
+        
+        <p><a class="org-button" href="#">Create an Org</a></p>
         
 
     </section>
@@ -129,5 +140,4 @@
 
 </html>
 
-
-NPM Clone                    
+                  
