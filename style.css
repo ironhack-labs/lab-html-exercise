@@ -33,6 +33,10 @@
     background: #fb3e4498;
   }
 
+  form.searchbar input:focus {
+    background-color: white;
+  }
+
   .header > div {
     padding: 0 25px;
     display: flex;
@@ -120,6 +124,16 @@
     height: 30px;
   }
 
+ #section1 {
+    height: 600px;
+    background-color: rgb(245, 238, 230);
+    width: 100%;
+    margin: 0;
+    padding-top: 70px;
+    padding-bottom: 50px;
+    box-shadow: inset 0px 5px 5px 0px rgba(0,0,0,0.38);
+  }
+
   #section1 h1 {
     font-size: 65px;
     text-align: center;
@@ -149,6 +163,7 @@
     align-items: center;
     box-shadow: 15px 15px 6px 6px #fb3e4498;
     transition: all 0.5s ease 0s;
+    cursor: pointer;
   }
 
   #seeplanscolor {
@@ -175,6 +190,7 @@
     align-items: center;
     box-shadow: 15px 15px 6px 6px rgb(110, 106, 106);
     transition: all 0.5s ease 0s;
+    cursor: pointer;
   }
 
   #joinforfreecolor {
@@ -184,7 +200,7 @@
   }
 
   .joinforfree:hover {
-    background-color: rgb(231, 220, 220);
+    background-color: rgb(226, 226, 226);
     box-shadow: 15px 15px 6px 6px rgb(148, 130, 130);
     transform: translateY(-5px);
   }
@@ -221,6 +237,15 @@
     .header nav {
       display: none;
     }
+
+    #section1 h1 {
+      font-size: 35px;
+    }
+    
+    #section1 article {
+      font-size: 15px;
+    }
+
   }
 
   @media only screen and (max-width: 760px) {
@@ -232,14 +257,6 @@
   @media only screen and (max-width: 630px) {
     form.searchbar input[type=text] {
       width: 220px;
-    }
-    
-    #section1 h1 {
-      font-size: 35px;
-    }
-    
-    #section1 article {
-      font-size: 15px;
     }
 
   }
