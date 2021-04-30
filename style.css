@@ -134,14 +134,59 @@
   .seeplansandjoinforfree {
     display: flex;
     justify-content: center;
+    height: 400px;
   }
 
   .seeplans {
-    margin-right: 15px;
+    margin-right: 25px;
+    margin-top: 55px;
+    height: 50px;
+    width: 190px;
+    background-color: #fb3e44;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 15px 15px 6px 6px #fb3e4498;
+    transition: all 0.5s ease 0s;
+  }
+
+  #seeplanscolor {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+  }
+
+  .seeplans:hover {
+    background-color: #fb3e4498;
+    box-shadow: 15px 15px 6px 6px rgb(148, 130, 130);
+    transform: translateY(-5px);
   }
 
   .joinforfree {
-    margin-left: 15px;
+    margin-left: 25px;
+    margin-top: 55px;
+    height: 50px;
+    width: 190px;
+    background-color: white;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 15px 15px 6px 6px rgb(110, 106, 106);
+    transition: all 0.5s ease 0s;
+  }
+
+  #joinforfreecolor {
+    color: black;
+    text-decoration: none;
+    font-weight: bolder;
+  }
+
+  .joinforfree:hover {
+    background-color: rgb(231, 220, 220);
+    box-shadow: 15px 15px 6px 6px rgb(148, 130, 130);
+    transform: translateY(-5px);
   }
 
   @media only screen and (max-width: 1291px) {
