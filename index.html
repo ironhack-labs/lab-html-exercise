@@ -31,12 +31,12 @@
       </div>
       <div>
         <img src="images/npm-logo.png" alt="npm logo" />
-        <form action="submit" method="POST">
+        <form action="submit" method="POST" name="search-form">
           <img src="images/magnifying-glass.png" alt="magnifying glass" />
-          <input type="text" placeholder="Search packages" />
-          <button type="submit">Search</button>
+          <input type="text" placeholder="Search packages" name="search-form" />
+          <button type="submit" name="search-form">Search</button>
         </form>
-        <div>
+        <div id="login-btns">
           <a href="#">Join</a>
           <a href="#">Log In</a>
         </div>
@@ -89,7 +89,7 @@
           Enjoy security auditing features built into the npm client, a
           zero-friction way to make open source software safer.
         </div>
-        <button>Create an Org</button>
+        <a href="#">Create an Org</a>
       </section>
     </body>
     <footer></footer>
