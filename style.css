@@ -43,6 +43,7 @@
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid lightgray;
+    margin-bottom: 5px;
   }
 
   .header nav {
@@ -103,6 +104,7 @@
     display: flex;
     justify-content: center;
     text-align: center;
+    transition: all 0.5s ease 0s;
   }
 
   .loginlink {
@@ -112,10 +114,19 @@
     display: flex;
     justify-content: center;
     text-align: center;
+    transition: all 0.5s ease 0s;
   }
 
   .joinlogin a {
    margin-left: 15px;
+  }
+
+  .joinlink:hover {
+    background-color: rgb(226, 226, 226);
+  }
+
+  .loginlink:hover {
+    background-color: rgb(226, 226, 226);
   }
 
   #link {
@@ -222,16 +233,15 @@
 
   .sectiontwo h2 {
     font-size: 35px;
-  }
-
-  .sectiontwo h2 {
     background-color: rgb(250, 226, 194);
     border-radius: 10% 10% 10% 10%;
     padding: 10px 4px 4px 10px;
+    text-align: center;
   }
 
   #npmarticle {
     text-align: center;
+    width: 60%;
   }
 
   .zeroconfig {
@@ -347,6 +357,11 @@
     
     #section1 article {
       font-size: 15px;
+    }
+
+    #npmarticle {
+      text-align: center;
+      width: 100%;
     }
   }
 
