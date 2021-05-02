@@ -8,7 +8,7 @@
     <title>NPM</title>
   </head>
   <body>
-    <header>
+    <header class="main-section"> 
       <div>
         <div>
           <img
@@ -29,12 +29,12 @@
           </ul>
         </nav>
       </div>
-      <div>
-        <img src="images/npm-logo.png" alt="npm logo" />
-        <form action="submit" method="POST" name="search-form">
-          <img src="images/magnifying-glass.png" alt="magnifying glass" />
-          <input type="text" placeholder="Search packages" name="search-form" />
-          <button type="submit" name="search-form">Search</button>
+      <div id="search-nav">
+        <img id="npm-logo" src="images/npm-logo.png" alt="npm logo" />
+        <form action="submit" method="POST" name="search-form" id="search-form">
+          <label for="search-input"><img src="images/magnifying-glass.png" alt="magnifying glass" /></label>
+          <input id="search-input" type="text" placeholder="Search packages" name="search-input" />
+          <button type="submit" name="search-input">Search</button>
         </form>
         <div id="login-btns">
           <a href="#">Join</a>
@@ -43,7 +43,7 @@
       </div>
     </header>
     <body>
-      <section id="intro">
+      <section id="intro" class="main-section">
         <h1>Build amazing things</h1>
         <article>
           Essential JavaScript development tools that help you go to market
@@ -54,7 +54,7 @@
           <a href="#">Join for free</a>
         </div>
       </section>
-      <section>
+      <section class="main-section">
         <img src="images/triangle-hexagon.svg" alt="" />
         <h2>Bring the best of open source to your company</h2>
         <article>
@@ -64,7 +64,7 @@
           and loves.
         </article>
       </section>
-      <section>
+      <section class="main-section">
         <div>
           <img src="images/zero-configuration.svg" alt="" />
           <h3>Zero Configuration</h3>
@@ -92,6 +92,8 @@
         <a href="#">Create an Org</a>
       </section>
     </body>
-    <footer></footer>
+    <footer class="main-section">
+
+    </footer>
   </body>
 </html>

@@ -1,8 +1,22 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins");
 
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Poppins";
 }
+
+.main-section{
+  margin: 0px 5%;
+}
+
 header > div {
   padding: 0 25px;
   display: flex;
@@ -31,12 +45,41 @@ nav a {
   width: 20px;
   margin-right: 1rem;
 }
+#npm-logo{
+  width:85px;
+  padding: 2px 5px;
+  box-sizing: border-box;
+}
 
 #login-btns {
   display: flex;
   justify-content: center;
 }
 #login-btns a {
+  color: #686464;
   text-decoration: none;
   padding: 12px 29px;
+}
+#search-nav{
+  height: 65px;
+  width: 100%;
+}
+#search-form {
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  width: 80%;
+}
+#search-form *{
+  height: 40px;
+}
+#search-form label {
+  background: rgba(0,0,0,.05);
+}
+#search-form input {
+  background: rgba(0,0,0,.05);
+  border: none;
+}
+#search-form button{
+  padding: 5px 15px;
 }
