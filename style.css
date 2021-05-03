@@ -188,16 +188,60 @@ nav a {
 #secondary div > h2{
   position: relative;
   top: 3px;
+  left: 4px;
   line-height: 2.7rem;
   font-size: 2.4rem;
   z-index: 40;
-  padding: 0 42px;
+  padding: 0 40px;
   transform: skewX(-10deg);
   margin: 0;
   font-weight: 900;
 }
 #secondary article {
   margin-top: 40px;
-  font-size: 1.06rem;
-  max-width: 820px;
+  font-size: 1.1rem;
+  max-width: 845px;
+}
+.icon{
+  width: 45px;
+  height: 35px;
+  position:relative;
+  bottom: -5px;
+}
+#cards-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#card-holder{
+  margin-top: 120px;
+  display: flex;
+  flex-direction: row;
+  padding: 0 120px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#card-holder > div {
+  width: 270px;
+  margin: 10px 30px;
+  font-size: 1.1rem;
+}
+#card-holder  > div >  h3{
+  color: #ED1C24;
+  font-weight: 900;
+  font-size: 1.1rem;
+  margin-bottom: 35px;
+}
+
+#create-org-btn{
+  color: white;
+  background: black;
+  box-shadow: 8px 8px 0 rgba(119, 119, 119, 0.2);
+  padding: 20px 80px;
+  width: 490px;
+  margin: 80px auto 50px;
+  text-decoration: none;
+  font-weight: 900;
+  font-size: 1.3rem;
+  text-align: center;
 }
