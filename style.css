@@ -14,10 +14,14 @@ body {
 }
 
 .main-section{
-  margin: 0px 5%;
+  margin: 0px auto;
+  max-width: 1600px;
 }
 
-header > div {
+header > div,
+header > nav {
+  margin: 0 auto;
+  
   padding: 0 25px;
   display: flex;
   justify-content: space-between;
@@ -33,10 +37,12 @@ nav ul {
   list-style: none;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: center; 
 }
 
 nav a {
+  font-size: smaller;
+  margin-left: 5px;
   text-decoration: none;
   color: black;
 }
@@ -49,37 +55,74 @@ nav a {
   width:85px;
   padding: 2px 5px;
   box-sizing: border-box;
+  margin-right: 15px;
 }
 
 #login-btns {
   display: flex;
   justify-content: center;
+  width: 200px;
 }
-#login-btns a {
+#login-btns :is(a, span) {
   color: #686464;
   text-decoration: none;
-  padding: 12px 29px;
+  margin: 10px;
+}
+#join-btn{
+  padding: 5px 20px;
+  outline: 1px solid #585858;
 }
 #search-nav{
-  height: 65px;
-  width: 100%;
+  min-height: 65px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
+#search-nav > span {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-top: 5px;
+}
+
 #search-form {
+  height: 100%;
   display:flex;
   flex-direction: row;
   align-items: center;
-  width: 80%;
+  width: calc(100% - 285px);
 }
 #search-form *{
-  height: 40px;
+  height: 50px;
+  margin-top: 7px;
+  margin-bottom: 7px;
 }
 #search-form label {
   background: rgba(0,0,0,.05);
+  display: flex; 
+  align-items: center;
+  padding: 0 10px 0 15px;
+}
+#search-form label img {
+  height: 20px;
 }
 #search-form input {
   background: rgba(0,0,0,.05);
   border: none;
+  width: 100%;
+  font-size: 1.05rem;
 }
 #search-form button{
   padding: 5px 15px;
+  border-radius: 0px;
+  border: none;
+  background-color: #fb3e44;
+  color: white;
+  width:150px;
+}
+
+#intro {
+  background: rgba(232,217,217,.3);
+  height: 600px;
+
 }
