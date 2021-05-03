@@ -3,7 +3,7 @@
     <link rel="stylesheet" href="../adding_styles/styling.css"/>
 <body>
     <header>
-        <div>
+        <div id="upper">
         <div>
             <img class="blackHeart" src="https://github.com/benbertelsen/lab-html-exercise/blob/master/images/black-heart.png?raw=true" alt="black heart" />
             <span> Nifty Penguin Magic </span>
@@ -20,19 +20,19 @@
             </nav>
         </div>
         
-        <div id="lower_header">  
+        <section id="lower">     
             <img class="NPM" src="https://github.com/benbertelsen/lab-html-exercise/blob/master/images/npm-logo.png?raw=true" alt="NPM logo" />
-            <form>
+            <form class="search_bar">
                 <img class="magni_glass" src="https://github.com/benbertelsen/lab-html-exercise/blob/master/images/magnifying-glass.png?raw=true" alt="magnifying glass" /> 
                 <form action="/register" method="post">
-                    <input class="search_bar" type="search" id="search" placeholder="Search packages">
-                    <button class="search_button" type="submit">Search</button>
+                <input type="search" id="search" placeholder="Search packages">
             </form>
-            <div>
-                <a class="enter_buttons" href="#"> Join </a>
-                <a class="enter_buttons" href="#"> Log in </a>
-            </div>
-        </div>
+         <div id="three_buttons">
+            <button class="search_button" type="submit">Search</button>       
+            <a class="enter_buttons" href="#"> Join </a>
+            <a class="enter_buttons" href="#"> Log in </a>
+         </div>
+        </section>
     </header>
 
     <section id="first_section">

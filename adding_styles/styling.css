@@ -5,7 +5,7 @@ body {
   font-family: 'Poppins';
 }
 
-header > div {
+  #upper {
     padding: 0 25px;
     display: flex;
     justify-content: space-between;
@@ -34,15 +34,23 @@ header > div {
     margin-right: 1rem;
   }
 
-  #lower_header {
+  #lower {
     padding: 0 25px;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
   }
   
   .npm {
     width: 80px;
+  }
+
+  #three_buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
   }
 
   .search_button {
@@ -52,6 +60,7 @@ header > div {
     color: white;
     font-size: small;
     border: 0px;
+    margin: 0px 10px;
   }
 
   .enter_buttons {
@@ -60,22 +69,34 @@ header > div {
     height: 25px;
     color: black;
     font-size: smaller;
-    border: 1px solid grey;
+    border: 1px solid lightgray;
     text-decoration: none;
     padding: 5px 15px;
   }
-  
 
-  .magni_glass {
-    width: 25px;
+  ::placeholder {
+    color: grey;
+    background-color: floralwhite;
+    font-style: italic;
+    border: none;
+    padding: 5px;
   }
 
   .search_bar {
     background-color:floralwhite;
-    width: 700px;
+    padding: 0px 10px 0px 5px;
+    width: 80%;
     height: 40px;
     border: 0px solid white;
     margin: 15px;
+    text-indent: 10px;
+  }
+
+  .magni_glass {
+    width: 25px;
+    position: relative;
+    right: 5px;
+    top: 10px;
   }
 
   #first_section {
