@@ -17,17 +17,18 @@ body{margin: 0;
 padding: 0;
 }
 
-.header{
-  position: relative;
-}
 
 header >div{
     padding: 2px 25px;
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid lightgray;
+    align-items: center;
 }
 
+.brand-text-img{
+    justify-content: flex-start;
+}
 
 #header ul{
   text-decoration: none;
@@ -44,8 +45,7 @@ header >div{
          }
 
 .blackHeart {
-    width: 3em;
-    margin: 1em auto 2px auto;
+    margin: 0 1em;
           }
 
 #header hr{
@@ -104,30 +104,28 @@ h4{
 }
 
 .scnd-row{
-  display:flex;
-  justify-content: space-evenly;
-  flex-direction: row
+  display: flex;
+  align-items: center;
+  height: 3em;
 }
 
 .npm-logo{
-    flex: 1 1 auto;
-    padding: 2em auto 0 auto;
+    flex: 1;
     margin-right: 0;
+    margin-bottom: 0;
     height: 2em;
     width: auto
 }
 
+/*searchfunction contains searchbox+searchbtn*/
 .searchfunction{
   list-style: none;
-  text-align: center;
-  justify-content: space-evenly;
-  display: flex;
-  flex: 10 1 auto;
-  height: 1em;
+  flex: 10;
   padding: auto 0;
-  margin: auto 0 1em 0
+  margin: auto 0;
 }
 
+/* deactivated for a moment
 .searchfunction img{
     justify-content: space-evenly;
     display: flex;
@@ -136,50 +134,35 @@ h4{
     padding: 0 auto 0 auto;
     margin-left: 0
   }
+  */
 
-/*.search{
-  width: 300px;
-  height: 1em;
-  display: flex;
-  justify-content: space-evenly;
-  flex: 2 1 auto;
-}
-*/
-
-/*seccond try initializing the searchfield*/
-.searchbox{ 
-    label-color: rgba(0,0,0,.05);
-    input-color: rgba(0,0,0,.05);
-    width: 300px;
-    display: flex;
-    justify-content: space-evenly;
-    flex: 20 1 auto;
+/*styling the searchfield*/
+input.searchbox{ 
+    background-color: rgba(243, 239, 239, 0.87);
+    color: rgba(0, 0, 0, 0.014);
+    border: none;
+    margin: auto 0;
+    height: 2em;
+    width: 40em;
+    flex: 10
 }
 
 .searchbtn {
     background-color: #fb3e44;
-    letters-color: white;
+    font-weight: lighter;
+    color: white;
+    border: none;   
+    height: 2em;
+    padding: 8% 20%;
+    margin: auto 0
     
 }
 
-/*.searchbtn{
-  border: 1px solid red;
-  color: white;
-  background-color: red;
-  height: 1em;
-  text-align: flex-end;
-  display: flex;
-  flex: 2 10 auto;
-  flex-direction: row;
-  padding: 1px 0.5em;
-}*first try, but paused******/
-
+/*loginbtn contains btnJoin+btnLogin*/
 .loginbtn{
-  height: 1em;
+  flex: 2;
   display: flex;
-  flex: 10 1 auto;
-  text-align: flex-end;
-  flex-direction: row
+  justify-content: space-evenly;
 }
 
 .loginbtn a{
@@ -187,15 +170,19 @@ h4{
     color: grey;
 }
 
-.btnjoin{
-display: box;
-border: noen
+.btnJoin{
+    height: 2em;
+    color: darkgrey;
+    background-color: white;
+    border: 1px solid darkgray;
 }
 
-.btnlogin{
-border: none
+.btnLogIn{
+    height: 2em;
+    border: none;
+    color: darkgrey;
+    background-color: white;
 }
-
 
 #big-advertisement h1{
     font-weight: bold;
@@ -307,19 +294,20 @@ border: none
 
 .org-button{
   background-color: black;
+  height: 2em;
   margin: auto auto 40px auto;
-  box-shadow: 6px 6px 0 rgba(128,83,35,.2);
+  border: none;
+  box-shadow: 4px 4px 0 rgba(128,83,35,.2);
   width: 15em;
-  text-align: center;
   display: flex;
+  text-align: center;
   justify-content: center;
-  flex-direction: column;
 }
 
 .org-button a{
     color: white;
     text-decoration: none;
     text-align: center;
-    padding: auto 30% auto 30%;
+    padding: auto 40% auto 40%;
 }
 
