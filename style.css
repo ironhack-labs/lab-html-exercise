@@ -16,8 +16,12 @@ h2{
   text-align: center;
 }
 
+.blackHeart {
+  width: 20px;
+  margin-right: 1rem;
+}
 
-header > div {
+#header > div {
     padding: 0 25px;
     display: flex;
     justify-content: space-between;
@@ -25,94 +29,7 @@ header > div {
     border-bottom: 1px solid lightgray;
   }
   
-  nav {
-    width: 600px;
-  }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  nav a {
-    text-decoration: none;
-    color: black;
-  }
-  
-  .blackHeart {
-    width: 20px;
-    margin-right: 1rem;
-  }
-
-  .searchDiv {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .searchForm{
-    display: flex;
-    margin: 0px;
-    flex-direction: row;
-  }
-
-  .searchForm label{
-    background: rgba(0,0,0,.05);
-    color: #345353;
-    height: 3.2em;
-  }
-
-  .searchForm input{
-    background: rgba(0,0,0,.05);
-    color: #345353;
-    font-size: 1em;
-    font-weight: 300;
-    margin-left: 0;
-    box-sizing: border-box;
-    border: none;
-    padding-right: 800px;
-    height: 3.2em;
-    
-  }
-
-  .searchForm button{
-    background: #fb3e44;
-    color: white;
-    border: 1px solid #9d9d9d; 
-    margin-left: -10px;
-    font-size: 1em;
-    padding: 15px 25px;
-    font-weight: 300;
-    height: 3.2em;
-  }
-
-  .searchForm label > img{
-    width: 25px;
-    padding: 50% 0 0 0;
-    margin: 0;
-  }
-
-  .logo {
-    padding: 20px 0px;
-    width: 70px;
-  }
-
-  .framedButton {
-    text-decoration: none;
-    color: #345353;
-    border: 1px solid #9d9d9d;
-    padding: 5px 15px;
-    margin: 0 20px;
-    text-align: center;
-  }
-
-  .unframedButton {
-    text-decoration: none;
-    color: #345353;
-  }
-
-  #introSection {
+#introSection {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -138,21 +55,6 @@ header > div {
     flex-direction: row;
     justify-content: space-between;
   }
-  .white-link-btn {
-    text-decoration: none;
-    color: black;
-    padding: 10px 40px;
-    background: white;
-  }
-
-  .pink-link-btn {
-    text-decoration: none;
-    color: white;
-    background: #FB3B49;
-    box-sizing: border-box;
-    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
-    padding: 10px 40px;
-  }
 
   #about-nmp {
     display: flex;
@@ -161,12 +63,6 @@ header > div {
     align-items: center;
     height: 600px;
     background: white;
-  }
-
-  #about-nmp > img {
-    width: 12%;
-    margin-bottom: 30px;
-    margin-top: -80px;
   }
 
   #about-nmp > article {
@@ -179,6 +75,12 @@ header > div {
     transform: skew(9deg,0deg);
     font-style: italic;
     padding: 0 40px;
+  }
+
+  #about-nmp > img {
+    width: 12%;
+    margin-bottom: 30px;
+    margin-top: -80px;
   }
 
   #service-section {
@@ -199,13 +101,13 @@ header > div {
     margin: 2%;
   }
 
-  #service-section .container > img {
-    width: 30px;
-  }
-
   #service-section .container > h3 {
     color: #ED1C24;
     font-weight: bold;
+  }
+
+  #service-section .container > img {
+    width: 30px;
   }
 
   .black-link-btn {
@@ -216,4 +118,102 @@ header > div {
     text-decoration: none;
     padding: 10px 100px;
     margin-bottom: 50px;
+  }
+
+  .framedButton {
+    text-decoration: none;
+    color: #345353;
+    border: 1px solid #9d9d9d;
+    padding: 5px 15px;
+    margin: 0 20px;
+    text-align: center;
+  }
+
+  .logo {
+    padding: 20px 0px;
+    width: 70px;
+  }
+
+  .navigation {
+    width: 600px;
+  }
+
+  .navigationav a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .navigation ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .pink-link-btn {
+    text-decoration: none;
+    color: white;
+    background: #FB3B49;
+    box-sizing: border-box;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+    padding: 10px 40px;
+  }
+
+  .searchDiv {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .searchForm{
+    display: flex;
+    margin: 0px;
+    flex-direction: row;
+  }
+
+  .searchForm button{
+    background: #fb3e44;
+    color: white;
+    border: 1px solid #9d9d9d; 
+    margin-left: -10px;
+    font-size: 1em;
+    padding: 15px 25px;
+    font-weight: 300;
+    height: 3.2em;
+  }
+
+  .searchForm input{
+    background: rgba(0,0,0,.05);
+    color: #345353;
+    font-size: 1em;
+    font-weight: 300;
+    margin-left: 0;
+    box-sizing: border-box;
+    border: none;
+    padding-right: 800px;
+    height: 3.2em;
+    
+  }
+
+  .searchForm label{
+    background: rgba(0,0,0,.05);
+    color: #345353;
+    height: 3.2em;
+  }
+
+  .searchForm label > img{
+    width: 25px;
+    padding: 50% 0 0 0;
+    margin: 0;
+  }
+  
+  .unframedButton {
+    text-decoration: none;
+    color: #345353;
+  }
+
+  .white-link-btn {
+    text-decoration: none;
+    color: black;
+    padding: 10px 40px;
+    background: white;
   }
