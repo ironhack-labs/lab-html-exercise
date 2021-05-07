@@ -25,14 +25,15 @@
         </ul>
       </nav>
     </div>  
-    <div> <the bottom div has the logo, search bar (which is _form_) and some buttons all the way left.>
-      <img src="/images/npm-logo.png" alt=""> <img src="/images/magnifying-glass.png" alt="">
-      <form action=""><label></label>
-          <input type="text">
-          <button>Search</button>
-         <div><a href="#">Join</a> </div>
-         <div><a href="#">Log in</a></div>
-        </form>
+    <div>
+      <img src="/images/npm-logo.png" alt="npm-logo" class="npm-logo"> 
+      <form id="Search" class="search-area" action="search">
+           <div id="search-bar" class="search-bar" ><img src="/images/magnifying-glass.png" alt="magnifying-glass" class="magnifying-glass">
+            <input type="text" placeholder="Search...">
+          <button class="search-button">Search</button></div>
+      </form>
+        <div class="join-button"><a href="#">Join</a> </div>
+        <div class="log-in-button"><a href="#">Log in</a></div>
     </div>
   </header>
     <section id="register">
