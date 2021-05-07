@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 :root{
   ----form-label-color: rgba(0,0,0,.05);
-----form-input-color: rgba(0,0,0,.05);
+----form-input-color:  rgba(235, 231, 231, 0.829);
 ----form-button-background-color: #fb3e44;
 ----form-button-letters-color_: white;
 }
@@ -27,25 +27,30 @@ body, footer {
     align-items: center;
   }
   
-  nav a {
+  nav a, span {
     text-decoration: none;
+    font-weight: bolder;
     color: black;
   }
   
-  .blackHeart, .npm-logo, .magnifying-glass {
+  .blackHeart, .magnifying-glass {
     width: 20px;
-    margin-right: 1rem;
+    margin-right: 1rem; 
   }
-  @media only screen and (max-width: 768px) {
-    /* For mobile phones: */
-   
+  .npm-logo{
+      width: 40px;
+    margin-left: 1rem;
+  }
+  
+  .search-area{
+      width: 80%;
+      margin: 5px auto;
   }
   .search-bar{
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       position: relative;
-      width: 600px;
       background-color: lightgray;
   }
   .search-bar input{
@@ -56,11 +61,36 @@ body, footer {
       background-color: var(----form-input-color);
   }
   .search-bar button{
-      
+    font-weight: bold; 
     height: 100%;
     outline: none;
     border: none;
     border-radius: 2px;
     padding: 15px 20px;
+    color: honeydew;
     background-color: var(----form-button-background-color);
 }
+#register-section{
+    height: 85vh;
+    width: 100%;
+    background-color: rgba(235, 231, 231, 0.829);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#register-section h1{
+    font-size: 6em;
+    font-weight: bolder;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+   
+  }
