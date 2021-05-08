@@ -33,7 +33,7 @@ body, footer {
     color: black;
   }
   
-  .blackHeart, .magnifying-glass {
+  .blackHeart {
     width: 20px;
     margin-right: 1rem; 
   }
@@ -45,30 +45,75 @@ body, footer {
   .search-area{
       width: 80%;
       margin: 5px auto;
+    
   }
   .search-bar{
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      position: relative;
-      background-color: lightgray;
+      box-shadow: inset 1px 1px rgba(0, 0, 0, 0.014), inset 2px 2px rgba(0, 0, 0, 0.068),0px 1px 9px 0px rgba(0, 0, 0, 0.19);
+      border-radius: 10px;
+      background-color: var(----form-input-color);
   }
   .search-bar input{
       height: 100%;
+      width: 100%;
       outline: none;
       border: none;
-      padding: 15px;
+      box-shadow:  inset 0px 0px rgba(0, 0, 0, 0.01), inset -2px 2px rgba(0, 0, 0, 0.07);
+      padding: 15px 10px;
       background-color: var(----form-input-color);
   }
   .search-bar button{
     font-weight: bold; 
     height: 100%;
+    box-shadow: inset 1px 1px rgba(0, 0, 0, 0.014), inset 2px 2px rgba(0, 0, 0, 0.068);
     outline: none;
     border: none;
-    border-radius: 2px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
     padding: 15px 20px;
     color: honeydew;
     background-color: var(----form-button-background-color);
+}
+.search-bar button:hover{
+  box-shadow:  inset -6px 4px rgba(0, 0, 0, 0.014), inset 2px 2px rgba(0, 0, 0, 0.068);
+    background-color: var(----form-input-color);
+    color: var(----form-button-background-color);
+}
+.search-bar button:active{
+  box-shadow: inset -12px 9px 2px 5px rgb(0 0 0 / 1%), inset -2px 0px rgb(0 0 0 / 7%);
+    background-color: var(----form-input-color);
+    color: var(----form-button-background-color); 
+}
+.container{
+  display: flex;
+  justify-content: flex-end;
+}
+.join-button{
+  font-weight: bold; 
+    height: 100%;
+    box-shadow: inset 1px 1px rgba(0, 0, 0, 0.014), inset 2px 2px rgba(0, 0, 0, 0.068);
+   
+    padding: 15px 20px;
+    color: honeydew;
+    background-color: var(----form-button-background-color);
+}
+.container a{
+  text-decoration: none;
+}
+.log-in-button{
+  font-weight: bold; 
+    height: 100%;
+  box-shadow:  inset -6px 4px rgba(0, 0, 0, 0.014), inset 2px 2px rgba(0, 0, 0, 0.068);
+  text-decoration: none;
+  padding: 15px 20px;
+    background-color: var(----form-input-color);
+    color: var(----form-button-background-color);
+}
+.magnifying-glass {
+  width: 40px;
+  padding-left: 5px;
 }
 #register-section{
     height: 85vh;
@@ -84,8 +129,14 @@ body, footer {
     font-weight: bolder;
 }
 
+#commercial{
 
-
+}
+.triangle-hexagon{
+  justify-content: center;
+  whidth: 150px;
+  height: 150px;
+}
 
 
 
