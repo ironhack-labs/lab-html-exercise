@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css2?family=Poppins');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
 :root{
   ----form-label-color: rgba(0,0,0,.05);
 ----form-input-color:  rgba(235, 231, 231, 0.829);
@@ -7,6 +8,7 @@
 }
 body, footer {
     font-family: 'Poppins';
+    box-sizing: border-box;
   }
   header > div {
     padding: 0 25px;
@@ -29,8 +31,8 @@ body, footer {
   
   nav a, span {
     text-decoration: none;
-    font-weight: bolder;
     color: black;
+    font-weight: bold;
   }
   
   .blackHeart {
@@ -41,7 +43,6 @@ body, footer {
       width: 40px;
     margin-left: 1rem;
   }
-  
   .search-area{
       width: 80%;
       margin: 5px auto;
@@ -58,59 +59,76 @@ body, footer {
   .search-bar input{
       height: 100%;
       width: 100%;
+      font-family: 'Poppins';
       outline: none;
       border: none;
       box-shadow:  inset 0px 0px rgba(0, 0, 0, 0.01), inset -2px 2px rgba(0, 0, 0, 0.07);
-      padding: 15px 10px;
+      padding: 12px 10px;
       background-color: var(----form-input-color);
   }
   .search-bar button{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  button{
     font-weight: bold; 
     height: 100%;
+    border-radius: 5px;
     box-shadow: inset 1px 1px rgba(0, 0, 0, 0.014), inset 2px 2px rgba(0, 0, 0, 0.068);
     outline: none;
     border: none;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
     padding: 15px 20px;
     color: honeydew;
     background-color: var(----form-button-background-color);
 }
-.search-bar button:hover{
+button:hover{
   box-shadow:  inset -6px 4px rgba(0, 0, 0, 0.014), inset 2px 2px rgba(0, 0, 0, 0.068);
     background-color: var(----form-input-color);
     color: var(----form-button-background-color);
 }
-.search-bar button:active{
-  box-shadow: inset -12px 9px 2px 5px rgb(0 0 0 / 1%), inset -2px 0px rgb(0 0 0 / 7%);
+ button:active{
+  box-shadow: inset -8px 9px 2px 5px rgba(0, 0, 0, 0.01), inset -2px 0px rgba(0,0,0,0.07);
     background-color: var(----form-input-color);
     color: var(----form-button-background-color); 
 }
 .container{
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  
+  }
+.button-container{
+  padding: 20px 25%;
+  justify-content: space-evenly;
 }
-.join-button{
-  font-weight: bold; 
-    height: 100%;
-    box-shadow: inset 1px 1px rgba(0, 0, 0, 0.014), inset 2px 2px rgba(0, 0, 0, 0.068);
-   
-    padding: 15px 20px;
-    color: honeydew;
-    background-color: var(----form-button-background-color);
-}
+.join-button, .log-in-button{  
+    font-weight: bold; 
+    height: 20px;
+    padding: 5px 5px;
+    margin-left: 5px;
+    box-shadow:  inset -6px 4px rgba(0, 0, 0, 0.014), inset 2px 2px rgba(0, 0, 0, 0.068);
+    border-radius: 2px;    
+    text-decoration: none;
+    background-color: var(----form-label-color);
+    
+  }
+  .join-button:hover, .log-in-button:hover{    
+      font-weight: bold; 
+      height: 10px;
+      box-shadow:  inset -6px 4px rgba(0, 0, 0, 0.014), inset 2px 2px rgba(0, 0, 0, 0.068);
+      text-decoration: none;
+      text-align: center;
+      padding: 12px 12px;
+        background-color: var(----form-input-color);
+        color: var(----form-button-background-color);
+    }
 .container a{
   text-decoration: none;
+  color: rgba(0, 0, 0, 0.5);
 }
-.log-in-button{
-  font-weight: bold; 
-    height: 100%;
-  box-shadow:  inset -6px 4px rgba(0, 0, 0, 0.014), inset 2px 2px rgba(0, 0, 0, 0.068);
-  text-decoration: none;
-  padding: 15px 20px;
-    background-color: var(----form-input-color);
-    color: var(----form-button-background-color);
-}
+
 .magnifying-glass {
   width: 40px;
   padding-left: 5px;
@@ -119,18 +137,20 @@ body, footer {
     height: 85vh;
     width: 100%;
     background-color: rgba(235, 231, 231, 0.829);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+    }
+
 #register-section h1{
-    font-size: 6em;
-    font-weight: bolder;
+  font-size: 4em;
+  font-weight: 900;  
+}
+#register-section p{
+  padding: 0 34%;
+  text-align: center;
 }
 
 #commercial{
-
+display: flex;
+justify-content: center;
 }
 .triangle-hexagon{
   justify-content: center;
@@ -138,7 +158,9 @@ body, footer {
   height: 150px;
 }
 
-
+p{
+  font-weight: lighter;
+}
 
 
 @media only screen and (max-width: 768px) {
