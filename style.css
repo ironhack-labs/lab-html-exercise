@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
 :root{
-  ----form-label-color: rgba(0,0,0,.05);
-----form-input-color:  rgba(235, 231, 231, 0.829);
-----form-button-background-color: #fb3e44;
-----form-button-letters-color_: white;
+  --form-label-color: rgba(0, 0, 0, 0.05);
+--form-input-color:  rgba(235, 231, 231, 0.829);
+--form-button-background-color: rgba(251, 62, 68, 1);
+--form-button-letters-color_: rgba(255,255,255,1);
 }
 body, footer {
     font-family: 'Poppins';
@@ -19,7 +19,7 @@ body, footer {
   }
   
   nav {
-    width: 600px;
+    width: 30%;
   }
   
   nav ul {
@@ -30,9 +30,11 @@ body, footer {
   }
   
   nav a, span {
+    flex-wrap: nowrap;
     text-decoration: none;
     color: black;
     font-weight: bold;
+    font-size: 8px;
   }
   
   .blackHeart {
@@ -54,7 +56,7 @@ body, footer {
       justify-content: space-between;
       box-shadow: inset 1px 1px rgba(0, 0, 0, 0.014), inset 2px 2px rgba(0, 0, 0, 0.068),0px 1px 9px 0px rgba(0, 0, 0, 0.19);
       border-radius: 10px;
-      background-color: var(----form-input-color);
+      background-color: var(--form-input-color);
   }
   .search-bar input{
       height: 100%;
@@ -64,7 +66,7 @@ body, footer {
       border: none;
       box-shadow:  inset 0px 0px rgba(0, 0, 0, 0.01), inset -2px 2px rgba(0, 0, 0, 0.07);
       padding: 12px 10px;
-      background-color: var(----form-input-color);
+      background-color: var(--form-input-color);
   }
   .search-bar button{
     border-top-right-radius: 10px;
@@ -79,17 +81,17 @@ body, footer {
     border: none;
     padding: 15px 20px;
     color: honeydew;
-    background-color: var(----form-button-background-color);
+    background-color: var(--form-button-background-color);
 }
 button:hover{
   box-shadow:  inset -6px 4px rgba(0, 0, 0, 0.014), inset 2px 2px rgba(0, 0, 0, 0.068);
-    background-color: var(----form-input-color);
-    color: var(----form-button-background-color);
+    background-color: var(--form-input-color);
+    color: var(--form-button-background-color);
 }
  button:active{
   box-shadow: inset -8px 9px 2px 5px rgba(0, 0, 0, 0.01), inset -2px 0px rgba(0,0,0,0.07);
-    background-color: var(----form-input-color);
-    color: var(----form-button-background-color); 
+    background-color: var(--form-input-color);
+    color: var(--form-button-background-color); 
 }
 .container{
   display: flex;
@@ -108,10 +110,10 @@ button:hover{
     height: 20px;
     padding: 5px 5px;
     margin-left: 5px;
-    box-shadow:  inset -6px 4px rgba(0, 0, 0, 0.014), inset 2px 2px rgba(0, 0, 0, 0.068);
+    box-shadow:  inset -6px 4px rgba(0, 0, 0, 0.014), inset 2px 2px rgba(0, 0, 0, 0.068), 2px 2px 10px 0 rgba(238,238,238,1);
     border-radius: 2px;    
     text-decoration: none;
-    background-color: var(----form-label-color);
+    background-color: var(--form-label-color);
     
   }
   .join-button:hover, .log-in-button:hover{    
@@ -121,8 +123,8 @@ button:hover{
       text-decoration: none;
       text-align: center;
       padding: 12px 12px;
-        background-color: var(----form-input-color);
-        color: var(----form-button-background-color);
+        background-color: var(--form-input-color);
+        color: var(--form-button-background-color);
     }
 .container a{
   text-decoration: none;
@@ -137,13 +139,15 @@ button:hover{
     height: 85vh;
     width: 100%;
     background-color: rgba(235, 231, 231, 0.829);
-    }
+    background-image:url(https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/6861a023567549.5632518858674.jpg) ;
+    background-size: 50%;}
+    
 
 #register-section h1{
   font-size: 4em;
   font-weight: 900;  
 }
-#register-section p{
+#register-section p, #commercial p{
   padding: 0 34%;
   text-align: center;
 }
@@ -153,17 +157,38 @@ display: flex;
 justify-content: center;
 }
 .triangle-hexagon{
-  justify-content: center;
-  whidth: 150px;
-  height: 150px;
+  justify-content: space-evenly;
+  width: 210px;
+  height: 210px;
+  padding: 40px 34%;
 }
 
 p{
   font-weight: lighter;
 }
+.descript-cards{
+  text-align: center;
+  border-radius: 20px;
+  box-sizing: border-box;
+  box-shadow: 2px 2px 10px 0 rgba(238,238,238,1);
+  margin: 50px 5% 0 5%;
+  padding: 20px ;
+  height: 300px;
+  width: 40%;
+}
+.descript-cards:hover{
+  background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/6861a023567549.5632518858674.jpg);
+  
+}
+.descript-cards:hover h4{
+  color: var(--form-button-background-color);
+}
+.descript-cards img{
+  width: 40px;
+  margin-left: 5px;
+  padding: 5px;
+}
+footer{
+  margin-top: 20px;
+}
 
-
-@media only screen and (max-width: 768px) {
-    /* For mobile phones: */
-   
-  }
