@@ -29,18 +29,18 @@
             </div>
             <div class="search-bar">
                 <div>
-                    <img class="logo" src="./images/npm-logo.png" alt="npm logo">   
+                    <img id="logo" src="./images/npm-logo.png" alt="npm logo">   
                 </div>
                 <div>
-                    <img class="logo" src="./images/magnifying-glass.png" alt="mag glass">
+                    <img id="mag-glass" src="./images/magnifying-glass.png" alt="mag glass">
+                    <form action="/search" method="POST">
+                        <input type="text" placeholder="Search packages">
+                        <button class="search-button"  type="submit">Search</button>
+                    </form>
                 </div>
                 
-                <form action="/search" method="POST">
-                    <input type="text" placeholder="Search packages">
-                    <button class="search-button"  type="submit">Search</button>
-                </form>
                 <span>
-                    <a href="#">Join</a>
+                    <a id="login-button" href="#">Join</a>
                     <a href="#">Log in</a>
                 </span>
             </div>
