@@ -95,7 +95,7 @@ nav a{
 
 #first-section{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-direction: column;
   text-align: center;
   align-items: center;
@@ -103,6 +103,17 @@ nav a{
   height: 600px;
 }
 
+#first-section > h1{
+  font-size: 64px;
+  
+  font-weight: bolder;
+  
+}
+
+#first-section > article {
+  font-size: 20px;
+  width: 575px;
+}
 
 
 .plans-button{
@@ -123,4 +134,68 @@ nav a{
   color: black;
   font-weight: bolder;
   padding: 5px 5px;
+}
+
+#second-section{
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+#second-section > h1{
+  background-color: rgba(255,204,53,.4);
+  transform: skew(9deg,0deg);
+  text-decoration: none;
+  
+  padding:0 75px;
+}
+#second-section > article{
+  width: 575px;
+}
+
+.triangle-hexagon{
+  width: 160px;
+  height: 150px;
+}
+
+.panels-div{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.zero-configuration{
+  width: 75px;
+}
+
+.team-management{
+  width: 75px;
+}
+
+.familiar-features{
+  width: 75px;
+}
+
+.npm-audit{
+  width: 75px;
+}
+
+.audit-div{
+  width: 50px;
+}
+
+.familiar-div{
+  width: 50px;
+}
+
+.management-div{
+  width: 50px;
+}
+
+.configuration-div{
+  width: 50px;
 }
