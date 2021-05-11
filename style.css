@@ -1,8 +1,126 @@
-html,body{
-    margin:0;
-    padding:0;
+
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body{
+    
+    font-family: Poppins;
+}
+header > div {
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+  }
+
+.header-style{
+  
 }
 
-.header-style ul {
+nav{
+    width: 600px;
+}
+nav ul{
     list-style: none;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+    font-weight: 1000;
+}
+
+  
+.black-heart-logo {
+    width: 20px;
+    margin-right: 1rem;
+  }
+
+.npm-logo {
+    width: 45px;
+    height: 15px;
+  }
+
+.search-logo {
+    width: 15px;
+    
+  }
+
+#search-bar{
+    width: 1400px;
+    height: 24px;
+    background-color: whitesmoke;
+    border: none;
+    margin-top: 15px;
+    }
+  
+  .submit-button{
+    border: transparent;
+    height: 24px;
+    width: 56px;
+    margin-top: 15px;
+    
+    background-color: red;
+    color: white;
+    
+  }
+
+  .join-button{
+    
+    border: solid black 1.5px;
+    height: 24px;
+    width: 62px;
+    padding: 2px;
+    text-align: center;
+    text-decoration: none;
+    
+    font-weight: bolder;
+  }
+
+  .login-button{
+    text-decoration: none;
+    font-weight: bolder;
+  }
+
+  .search-bar-div {
+    display: flex;
+    justify-content: space-around;
+    height: 36px;
+    position: relative;
+}
+
+#first-section{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  background-color: whitesmoke;
+  height: 600px;
+}
+
+
+
+.plans-button{
+  text-decoration: none;
+  padding: 5px 5px;
+  color:white;
+  box-shadow: 8px 8px 0 rgba(251, 59, 73, .2);
+  width: 100px;
+  border:solid black 1px ;
+  background-color:#FB3B49;
+  font-weight: bolder;
+}
+
+.join-free-button{
+  text-decoration: none;
+  background-color: white;
+  border:solid black 1px ;
+  color: black;
+  font-weight: bolder;
+  padding: 5px 5px;
 }
