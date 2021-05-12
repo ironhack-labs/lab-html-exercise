@@ -1,0 +1,200 @@
+/* Color chart:
+- form label color_: rgba(0,0,0,.05)
+- form input color_: rgba(0,0,0,.05)
+- form button background color_: #fb3e44
+- form button letters color_: white
+*/
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    line-height: 1.5em;
+}
+
+/* Header */
+header > div {
+    padding: 10px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-start;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+}
+  
+nav {
+    width: 600px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.blackHeart {
+    width: 20px;
+    margin-right: 1rem;
+}
+
+/* Search bar */
+.container {
+    height: 50px;
+    display: flex;
+    align-content: center;
+    align-items: baseline;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.form {
+    width:70%;
+    position: relative;
+}
+header form {
+    background-color: rgba(0,0,0,.05);
+}
+
+header input {
+    font-family: "Fira Mono", "Andale Mono", "Consolas", monospace;
+    border: 0;
+    background-color: rgba(0,0,0,.0);
+    padding: 10px 0 10px 10px;
+    height:40px;
+}
+
+.search_button {
+    border: 0;
+    background-color: #fb3e44;
+    color: white;
+    padding: 10px 32px;
+    font-weight: bold;
+    height: 45px;
+    position: absolute;
+    right: 0;
+}
+
+.search_icon {
+    padding: 10px 4px 0 10px;
+    width:20px;
+}
+
+/* Account access */
+.signup_button {
+    border: 1px solid;
+    border-radius: 0%;
+    background: white;
+    padding: 0 28px;
+    margin: 0 10px;
+    height: 40px;
+}
+
+.signin_button {
+    border: 0;
+    border-radius: 0%;
+    background: white;
+    margin: 0 10px;
+}
+
+
+/* Section 1 */
+#hero_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgba(232,217,217,.3);
+    padding: 20px 0 80px 0;
+}
+
+#hero_section article {
+    width: 30%;
+    margin-bottom: 30px;
+}
+
+#hero_section h1 {
+    font-size: 70px;
+}
+
+
+.pricing_button {
+    border: 0;
+    background-color: #fb3e44;
+    color: white;
+    font-weight: bold;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+    padding: 10px 40px;
+    margin: 0 15px;
+}
+
+.join_button {
+    border: 0;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    padding: 15px 40px;
+    margin: 0 15px;
+}
+
+/* Section 2 */
+#value_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    height: 400px;
+    margin-bottom: 30px;
+    padding-top: 30px;
+}
+
+#value_section h2 {
+    font-size: 25px;
+    transform: skew(-9deg,0deg);
+    padding: 5px;
+    margin: 0;
+}
+
+#value_section article {
+    width: 60%;
+}
+
+.skewed_bg {
+    background-color: #FEECB4;
+    transform: skew(9deg,0deg);
+    padding: 0 20px;
+    padding-top: -20px;
+    margin: 40px;
+}
+
+/* Section 3 */
+#features_section > div {
+    padding: 30px 100px;
+    display:flex;
+    justify-content: center;
+}
+
+#features_section h3 {
+    color: #ED1C24;
+}
+
+#features_section > div > div {
+    margin: 20px;
+}
+
+#features_section button {
+    border: 0;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    width: 40%;
+    height: 50px;
+}
