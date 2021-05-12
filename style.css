@@ -5,6 +5,14 @@ form label color: rgba(0,0,0,.05)
 form input color: rgba(0,0,0,.05)
 form button background color: #fb3e44
 form button letters color: white
+
+suggested height for this section: 600px
+background color: rgba(232,217,217,.3)
+"See plans" button background color: #FB3B49
+"See plans" button box shadow: 8px 8px 0 rgba(251,59,73,.2)
+
+background-color:rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
 */
 
 body {
@@ -52,6 +60,7 @@ nav a {
     height: 30px;
     background-color: rgba(0,0,0,.05);
     border: 0px;
+    padding-left: 30px;
 }
 
 #logo{
@@ -62,14 +71,22 @@ nav a {
 }
 
 #mag-glass{
-    width: 15px;
+    padding: 2px;
+    width: 20px;
     position: absolute;
-    top: 0px;
-    left: 0px;
+    top: 75px;
+    left: 110px;
+    
 
 }
 
-
+.search-mag{
+    background-image: url(./images/magnifying-glass.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    overflow: hidden;
+    width: 15px;
+}
 
 .search-button{
     height: 30px;
@@ -91,5 +108,88 @@ nav a {
     border: 1px solid lightgray;
     padding: 0px 10px 0px 10px;
     font-size: 16px;
-    font-weight: 600;
+}
+
+#join{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgba(232,217,217,.3);
+    height: 600px;
+    flex-direction: row;
+    text-align: center;
+}
+
+#join a{
+    text-decoration: none;
+}
+#join h2{
+    display:flex;
+    font-size: 4em;
+}
+
+#join p{
+    width: 400px;
+    display: flex;
+    justify-content: flex-end;
+    text-align:center;
+}
+
+#button-plans{
+    background-color: #FB3B49;
+    color: white;
+    border: 0px;
+    padding: 12px 35px 12px 35px;
+    font-size: 16px;
+    margin-right: 25px;
+    margin-left: 10px;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+}
+
+#button-join{
+    background-color: rgba(232,217,217, 0);
+    color: black;
+    border: 0px;
+    padding: 12px 35px 12px 35px;
+    font-size: 16px;
+    margin-left: 35px;
+}
+
+#join div{
+    display: flex;
+    justify-content: center;
+}
+
+#company{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:white;
+    height: 600px;
+    flex-direction: row;
+    text-align: center;
+}
+
+#company div{
+    display:flex;
+    justify-content: center;
+}
+
+#company p{
+    width: 700px;
+}
+
+#company h2{
+    width: 800px;
+    font-size: 2em;
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+    font-style: italic;
+}
+
+#hex-img{
+    width: 300px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
