@@ -1,7 +1,9 @@
 <!doctype html>
 <html>
   <head>
+      <link rel="stylesheet" href="./style.css" />
   </head>
+  <body>
       <header>
           <div>
           <div>
@@ -19,21 +21,19 @@
               </ul>
            </nav>
           </div>
-          <div>
-              <figure>
+          <div class="bottom-nav">
+            <figure>
                 <img class=logo src="images/npm-logo.png" alt="npm logo">
-              </figure>
-              <img src="images/magnifying-glass.png" alt="magnifying glass">
+            </figure>
             <form class="search-form" action="/search">
+                <img class="magnifying-glass" src="images/magnifying-glass.png" alt="magnifying glass">
+                <input type="search" placeholder="Search packages">
+                <button type="submit">Search</button>
                 <a href="join">Join</a>
                 <a href="log-in">Log In</a>
-                <label for="search"></label>
-                <input type="text" placeholder="Search packages">
-                <button type="submit">Search</button>
             </form>
           </div>
       </header>
-  <body>
       <section id="intro">
           <h1>Build amazing things</h1>
           <p>Essential JavaScript development tools that help you go to market faster and build powerful applications using
