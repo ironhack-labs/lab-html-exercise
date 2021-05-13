@@ -1,20 +1,140 @@
-body{font-family:Arial, Helvetica, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
     margin:0;
     padding:0;
-    font-size:16px;}
+    font-size:16px;
+    box-sizing: border-box;
+}
 
-h1{font-size:7em;}   
 
-#heart {height:15px;}
+h2{
+    font-size:4.5em;
+    font-weight:bolder;
+}   
 
-.nav-bar a{text-decoration:none;
-color:black}
-.nav-bar ul{list-style-type: none;}
+/*------------ 1st LINE OF NAV-------------*/
+.blackheart {
+    height:12px;
+    margin-right:1rem;
+ }
 
-#npmlogo{height:25px;}
+ header > div {
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+    font-weight:600;
+  }
+.nav-bar a{
+    text-decoration:none;
+    color:black;
+    font-weight:semi-bold;
+}
 
-#searchbar {background:url("images/magnifying-glass.png") left;
+.nav-bar ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-bar{
+    width: 600px;
+}
+
+/*------------ 2nd LINE OF NAV-------------*/
+.secondlineheader{
+    padding:8px 25px;
+}
+
+#npmlogo{
+    height:25px;
+}
+
+#searchbar {
+   
+    background:url("images/magnifying-glass.png")5px;
     background-size:12%;
     background-repeat:no-repeat;
     height:1.5em;
-padding:2px 0px 0px 30px;}
+    padding:15px 35px;
+    border:0px;
+    background-color:rgba(0,0,0,.05)
+}
+.redbutton{
+    height:1.5em;
+    background-color:#fb3e44;
+    color:white;
+    padding:17px 35px 32px 35px;
+    border:0;
+}
+.joinbtn{
+    border:1px solid grey;
+    padding:8px 15px;
+    background-color:white;
+    font-weight:semi-bold;
+}
+
+.loginbtn{
+    border:0;
+    padding:8px 15px;
+    background-color:white;
+    font-weight:lighter;
+}
+
+
+/*------------ HOME SECTION-------------*/
+
+#home{
+    
+    background-color:rgba(232,217,217,.3) ;
+    
+    padding:100px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-direction:column;
+        
+       
+
+}
+#home p{
+    padding:0px 150px;
+    font-size:20px;
+    }
+#home button{
+    margin:0px 15px;
+        }
+
+.redbtn{
+    font-size:16px;
+    color:white;
+    font-weight: medium;
+    padding:10px 25px;
+    border-style:none;
+    background-color: #FB3B49;
+    box-shadow: 6px 6px 2px rgba(251,59,73,.2)
+
+    }
+
+.transparentbtn{
+    font-size:16px;
+    font-weight: medium;
+    border-style:none;
+    padding:10px 25px;
+    background-color:rgba(232,217,217,.3);
+}
+
+/*------------ OPEN SOURCE SECTION-------------*/
+
+.flex-container{
+    padding:50px;
+    display:flex;
+    justify-content: space-evenly;
+    flex-direction:column;
+    align-items:center;
+    height:100%;
+    margin:10px;
+}
+.flex-container div img{width:250px;}
