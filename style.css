@@ -5,13 +5,19 @@ body{
     padding:0;
     font-size:16px;
     box-sizing: border-box;
+    
 }
+
 
 
 h2{
     font-size:4.5em;
     font-weight:bolder;
 }   
+h3{
+    font-size:2em;
+}
+p{font-size: 20px;}
 
 /*------------ 1st LINE OF NAV-------------*/
 .blackheart {
@@ -53,7 +59,6 @@ h2{
 }
 
 #searchbar {
-   
     background:url("images/magnifying-glass.png")5px;
     background-size:12%;
     background-repeat:no-repeat;
@@ -69,6 +74,7 @@ h2{
     padding:17px 35px 32px 35px;
     border:0;
 }
+
 .joinbtn{
     border:1px solid grey;
     padding:8px 15px;
@@ -76,11 +82,16 @@ h2{
     font-weight:semi-bold;
 }
 
+
 .loginbtn{
     border:0;
     padding:8px 15px;
     background-color:white;
     font-weight:lighter;
+}
+.secondlineheader button:hover{
+    background-color: rgba(0,0,0,.2);
+    cursor: pointer;
 }
 
 
@@ -89,47 +100,61 @@ h2{
 #home{
     
     background-color:rgba(232,217,217,.3) ;
-    
     padding:100px;
     display:flex;
-    justify-content:space-between;
-    align-items:center;
     flex-direction:column;
+    align-items:center;
+  
         
        
 
 }
-#home p{
-    padding:0px 150px;
-    font-size:20px;
+#home article p{
+    text-align:center;
+        font-size:20px;
+        max-width:900px;
+        padding-bottom:50px;
     }
 #home button{
     margin:0px 15px;
         }
+#home h2{text-align: center;}
 
 .redbtn{
+    margin:15px;
+    text-decoration: none;
     font-size:16px;
     color:white;
     font-weight: medium;
-    padding:10px 25px;
-    border-style:none;
+    padding:15px 50px;
     background-color: #FB3B49;
     box-shadow: 6px 6px 2px rgba(251,59,73,.2)
 
     }
+.redbtn:hover{
+  background-color: rgba(251,59,73,.7)
+    }
+.redbtn:active{
+    transform: skew(9deg,0deg);
+
+}
 
 .transparentbtn{
+    margin:15px;
+    text-decoration: none;
+    color:black;
     font-size:16px;
     font-weight: medium;
-    border-style:none;
-    padding:10px 25px;
-    background-color:rgba(232,217,217,.3);
+    padding:15px 50px;
+    background-color:white;
+ 
 }
+.transparentbtn:hover{background-color: rgba(251,59,73,.05)}
 
 /*------------ OPEN SOURCE SECTION-------------*/
 
 .flex-container{
-    padding:50px;
+    padding:50px 50px 100px 50px;
     display:flex;
     justify-content: space-evenly;
     flex-direction:column;
@@ -137,4 +162,61 @@ h2{
     height:100%;
     margin:10px;
 }
-.flex-container div img{width:250px;}
+.flex-container div img{
+    width:250px;
+}
+#openSource article{
+    text-align:center;
+max-width:900px;
+width:100%
+}
+#openSource h3{
+    font-weight:bold;
+    font-style: italic;
+    text-align: center;
+background-color:rgba(255,204,53,.4);
+transform: skew(9deg,0deg);
+padding: 0px 40px;
+}
+
+/*------------SERVICES SECTION-------------*/
+
+.inline-blocks-flex {
+    display:flex;
+    justify-content: center;
+    flex-direction:row;
+    align-items:stretch;
+
+}
+.inline-blocks-flex div{
+    padding:35px;
+  
+
+}
+.inline-blocks-flex div img{
+    height:3vh;
+
+}
+.inline-blocks-flex div h4{color: #FB3B49;
+}
+
+.bigbtn {
+        font-size:20px;
+    text-decoration:none;
+    color:white;
+    background-color:black;
+    padding:15px 200px;
+    box-shadow: 6px 6px 2px rgba(251,59,73,.2) ;
+}
+.bigbtn:hover{
+    background-color:rgba(0,0,0,.7)
+}
+#flex-btn{
+    margin-top:50px;
+    display:flex;
+    justify-content: space-around;
+
+}
+#services{
+    padding-bottom:100px;
+}
