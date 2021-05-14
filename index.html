@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
     <title>NPM-Clone | Lab-HTML-Exercise</title>
 </head>
 
@@ -27,15 +28,19 @@
                 </ul>
             </nav>
         </div>
-        <div id="search-bar">
-            <img src="./images/npm-logo.png" alt="npm-Logo" />
-            <form action="#" method="GET">
-                <img src="./images/magnifying-glass.png" alt="Magnifying glass">
-                <input type="text" id="search" name="search" placeholder="Search packages" />
-                <input id="search-btn" type="submit" value="Search" />
-            </form>
-            <a class="button-header" href="#"> Join </a>
-            <a class="button-header" href="#"> Log In /a>
+        <div id="lower-bar">
+            <img id="logo" src="./images/npm-logo.png" alt="npm-Logo" />
+            <div id="search-bar">
+                <form action="#" method="GET">
+                    <div id="input-field">
+                        <img id="magnifying-glass" src="./images/magnifying-glass.png" alt="Magnifying glass">
+                        <input type="text" id="search" name="search" placeholder="Search packages" />
+                    </div>
+                    <button id="search-btn" type="submit">Search</button>
+                </form>
+            </div>
+            <a class="btn-header-join" href="#"> Join </a>
+            <a class="btn-header-login" href="#"> Log&nbsp;In</a>
         </div>
     </header>
 
