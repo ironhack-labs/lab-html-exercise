@@ -11,6 +11,9 @@ body{
     margin: auto;
 }
 /* fonts */
+p{
+    color: #424141;
+}
 /* GENERAL */
 .flex{
     display: flex;
@@ -24,10 +27,14 @@ body{
 .justify-between{
     justify-content: space-between;
 }
+.justify-center{
+    justify-content: center;
+}
 
 /* HEADER */
 .blackHeart {
     height: 20px;
+    margin-top: 18px;
 
 }
 .right-top-navbar ul{
@@ -38,26 +45,103 @@ body{
     list-style: none;
     margin-left: 12px;
 }
+.right-top-navbar li > a{
+    text-decoration: none;
+    color: #424141;
+}
 .npm-logo{
     width: 10%;
 }
+.bottom-navbar{
+    padding: 12px;
+}
+.search-form{
+    position: static;
+    margin: 0px;
+}
+.mglass{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    
+    
+}
 .search-input{
-    border: none;
-    background-color: chartreuse;
+    font-family: poppins;
+    border: 0;
+    background-color: #F2F2F2;
+    color: #222222;
+    padding: 12px 32px;
+    margin-left: -32px;
+    width: 680px;
+    
 }
 .search-button{
-    background-color: blueviolet;
+    font-family: poppins;
+    background-color: #F8414A;
+    color: #ffffff;
+    padding: 12px 32px;
+    width: 120px;
+    border: 0;
 }
 
 .bottom-actions{
     width: 20%;
 }
-
+.bottom-actions a{
+    padding: 6px 12px;
+    text-decoration: none;
+    color: #424242;
+}
+.join-button{
+    border: 1px solid #424242;
+}
 /* HERO */
+
+.hero{
+    background-color: #F8F4F4;
+    text-align: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero h1{
+    font-size: 4rem;
+}
+.hero p{
+    width: 60%;
+    margin: auto;
+}
+/* INTRO */
+.intro{
+    text-align: center;
+    padding: 80px 10px;
+    text-align: center;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.intro h2{
+    font-size: 2rem;
+}
+
+.intro p{
+    width: 60%;
+}
+.hexagon{
+    width: 240px;
+}
 /* FEATURES */
 
 .feature-icons{
     background-color: red;
     height: 40px;
     width: 40px;
+}
+
+.feature h3{
+    color:  #F8414A;
 }
