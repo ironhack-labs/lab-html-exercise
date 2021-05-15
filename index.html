@@ -1,13 +1,14 @@
 <html>
     <head>
         <title>NPM Clone</title>
+        <link rel="stylesheet" href="./css/styles.css">
     </head>
-    <body>
+    <body class="container">
         <nav>
             <!-- top bar nav -->
-            <div>
-                <div class="left-top-navbar">
-                    <img src="./images/black-heart.png" alt="blackheart">
+            <div class="flex align-items-center justify-between">
+                <div class="left-top-navbar flex">
+                    <img src="./images/black-heart.png" alt="blackheart" class="blackHeart">
                     <p>Neverending Pun Machine</p>
                 </div>
                 <div class="right-top-navbar">
@@ -21,16 +22,19 @@
                     </ul>
                 </div>
             </div>
-            <!-- botton bar nav -->
+            <!-- bottom bar nav -->
 
-            <div>
-                <img src="./images/npm-logo.png" alt="npm-logo">
-                <form action="/search" method="post">
-                    <input type="text" name="search" >
-                    <input type="submit" value="search">
+            <div class="flex align-center justify-between">
+                <img class="npm-logo" src="./images/npm-logo.png" alt="npm-logo">
+                <form class="search-form" action="/search" method="post">
+                    <img src="./images/magnifying-glass.png" alt="">
+                    <input class="search-input" type="text" name="search" placeholder="Search Packages">
+                    <input class="search-button" type="submit" value="search">
                 </form>
-                <button>Join</button>
-                <button>Log in</button>
+                <div class="bottom-actions">
+                    <a class="join-button" href="/join">Join</a>
+                    <a class="login-button" href="/login">Log in</a>
+                </div>
             </div>
         </nav>
         <section>
@@ -45,7 +49,7 @@
             </div>
         </section>
         <section>
-            <img src="./images/triangle-hexagon.svg" alt=""> 
+            <img src="./images/triangle-hexagon.svg" alt="is a triangle inside a hexagon"> 
             <h2>Bring the best of open source to your company</h2>
             <p>npm is the tool used by
             over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it.
@@ -55,28 +59,28 @@
             <!-- features -->
             <div>
                 <div class="1/4">
-                    <img src="" alt="">
+                    <img class="feature-icons"  src="./images/zero-configuration.svg" alt="we mean, is very simple">
                     <h3>Zero Configuration</h3>
                     <p>Create an org, add
                         your team, and start collaborating. Nothing to configure, set up, or manage.
                     </p>
                 </div>
                 <div class="1/4">
-                    <img src="" alt="">
+                    <img class="feature-icons"  src="./images/team-management.svg" alt="manage the team">
                     <h3>Team management</h3>
                     <p>Control who has access to
                         what modules within your team namespace using straightforward team management capabilities.
                     </p>
                 </div>
                 <div class="1/4">
-                    <img src="" alt="">
+                    <img class="feature-icons"  src="./images/familiar-features.svg" alt="i think i have seen you before">
                     <h3>Familiar features</h3>
                     <p>pm Orgs
                         has 100% parity with all the public npm registry features your developers already use.
                     </p>
                 </div>
                 <div class="1/4">
-                    <img src="" alt="">
+                    <img class="feature-icons"  src="./images/npm-audit.svg" alt="who did what????">
                     <h3>npm audit</h3>
                     <p>Enjoy the security
                         auditing features built into the npm client, a zero-friction way to make open source software safer. Create an Org
