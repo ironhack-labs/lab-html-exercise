@@ -3,13 +3,15 @@
 <meta charset="utf-8" />
 <title>NPM</title>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="stylesheet" href="css/app.css" />
+<link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header class="npm-header">
     <div class="upperDiv-header">
+      <div class="div-imgHeart">
       <img class="blackHeart" src="./images/black-heart.png" alt="black-heart" />
       <span>Neverending Pun Machine</span>
+    </div>
       <nav>
         <ul>
           <li><a href="#">npm Enterprise</a></li>
@@ -22,64 +24,73 @@
       </nav> 
     </div>
     <div class="lowerDiv-header">
-      <img class="npm-logo" src="./images/npm-logo.png" alt="logo" />
+    
       <form>
-        <img class="magnifying-glass" src="./images/magnifying-glass.png" alt="magnifying-glass" />
-      <input type="text" placeholder="Search">
-      <button class="button-search">Search</button>
-      <button class="button-join"><a href="#">Join</a></button>
-      <button class="button-login"><a href="#">Log In</a></button>
+        <img class="npm-logo" src="./images/npm-logo.png" alt="logo" />
+       <img class="magnifying-glass" src="./images/magnifying-glass.png" alt="magnifying-glass" />
+       <input type="text" placeholder="Search">
+      <button class="btn-search">Search</button>
     </form>
+    <div class="btn-join"><a href="#">Join</a></div>
+    <div class="btn-login"><a href="#">Log In</a></div>
     </div>
   </header>
 <section id="section1">
-  <h1>BUILD AMAZING THINGS</h1>
+  <div class="div-heading-section1">
+  <heading class="heading-section1"><h2>Build amazing things</h2></heading>
   <article class="article-section1">
-  <p>Essential Javascript development tools that help</p>
-  <p>you go to market faster and build powerful</p>
+  <p>Essential Javascript development tools that help you</p>
+  <p> go to market faster and build powerful</p>
   <p>applications using modern open source code</p>
+</p>
 </article>
-<div class="div-section1">
-  <a href="#">See plans</a>
-  <a href="#">Join for free</a>
+</div>
+<div class="btn">
+  <div class="btn1-section1"><a href="#">See plans</a></div>
+  <div class="btn2-section1"><a href="#">Join for free</a></div>
+</div>
 </div>
 </section>
 <section id="section2">
   <img class="triangle-hexagon" src="./images/triangle-hexagon.svg" alt="triangle-hexagon" />
-  <heading><h3>Bring the best of open source to your company</h3></heading>
+  <heading class="heading-section2"><h3>Bring the best of open source to your company</h3></heading>
+  <div class="div-articleSection2">
   <article class="article-section2">
-    npm is the tool used by over 11.000.000 Jvascript developers around the world. Your developers 
+    npm is the tool used by over 11.000.000 Javascript developers around the world. Your developers 
     already used it. Your company depends on it. Create an Org and get more out of the tools your
     team already knows and loves.
   </article>
+</div>
 </section>
 <section id="section3">
-  <img class="zero-configuration" src="./images/zero-configuration.svg" alt="zero-configuration" />
+ <div class="mainDiv-section3">
   <div class="div1-section3">
-    <h1>Zero Configuration</h1>
+    <img class="zero-configuration" src="./images/zero-configuration.svg" alt="zero-configuration" />
+    <h3>Zero Configuration</h3>
     <p>Create an org. add your team
     and start collaborating
     nothing to configure, set up, or
-    manage</p>
-    
+    manage</p> 
   </div>
   <div class="div2-section3">
     <img class="team-management" src="./images/team-management.svg" alt="team-management" />
-    <h1>Team Management</h1>
+    <h3>Team Management</h3>
     <p>Control who has access to what modules within your team namespace using straightforward team management capabilities.</p>
   </div>
   <div class="div3-section3">
     <img class="familiar-features" src="./images/familiar-features.svg" alt="familiar-features" />
-    <h1>Familiar features</h1>
+    <h3>Familiar features</h3>
     <p>npm Orgs has 100% parity with all the public nom registry features your developers already use</p>
   </div>
   <div class="div4-section3">
     <img class="npm-audit" src="./images/npm-audit.svg" alt="npm-audit" />
-    <h1>npm audit</h1>
+    <h3>npm audit</h3>
     <p>Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer.</p>
   </div>
-  
-  <button class="btn-orgCreation">Create an Org</button>
+</div>
+<div class="lastDiv-section3">
+  <div class="btn-orgCreation">Create an Org</div>
+</div>
 </section>
 </body>
 </html>
