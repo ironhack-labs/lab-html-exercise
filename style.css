@@ -33,68 +33,75 @@ header > div {
     margin-right: 1rem;
   }
 
-  .container {
-    height: 80px;
-    display: flex;
-	align-items: center;
-    padding: 0 0 0 0;
-    justify-content: space-between;
-    border-bottom: 1px solid lightgray;
-  }
 
   .logo {
-    width: 100px;
-    margin-right: 1rem;
-    padding: 25px;
-  }
-
- #search {
-    width: 1000px;
+    width: 80px;
+    margin-right: 20px;
+    
 }
 
-.search-box {
-    width: 900px;
-    height: 50px;
+#container {
+    border-bottom: 1px solid lightgray;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+  }
+
+.search-packages {
+    width: 1000px;
+    height: 40px;
     margin-top: 10px;
     background-color: rgb(235, 235, 235);
+    border: none;
 }
 
 .magnifying-glass {
-    width: 30px;
+    width: 28px;
     position: absolute;
     font-size: 20px;
-    height: 20px;
-    margin-top: 15px;
+    height: 30px;
+    margin-top: 16px;
+    margin-left: 3px;
 }
 
-#search-packages {
+.red-search-button {
     background-color: #FB3B49;
+    border: 2px solid rgba(0, 0, 0, 0.2);
     color: #fff;
     font-family: 'Poppins';
-    font-size: 1em;
+    font-size: 0.8em;
     letter-spacing: 0.5px;
-    padding: 10px 40px;
     text-align: center;
-    text-decoration: none;
-    height: auto;
-    width: -moz-fit-content;
+    height: 43px;
+    width: 80px;
+    margin-right: 35px;
 }
 
 .join-button {
     background: #fff;
     border: 1px solid #000;
     color: #000;
-    margin-top: 15px;
-    padding: 9px;
+    height: 35px;
+    width: 70px;
+    margin-right: 20px;
+    margin-bottom: 10px;
 }
 
 .login-button {
-
+    background: #fff;
+    color: #000;
+    font-family: 'Poppins';
+    font-size: 1em;
+    border: none;
+    text-align: center;
+    height: 50px;
+    width: 60px;
 }
 
 h2 {
     color: black;
-    font-size: 3em;
+    font-size: 4em;
     line-height: 2em;
     text-align: center;
 }
@@ -111,18 +118,14 @@ h3 {
     transform: skew(9deg,0deg)
 }
 
-article {
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: center;
-    color: black;
-    font-size: 1.2em;
-    line-height: 2em;
-    text-align: center;
-    margin: 100px;
-    width: 600px;
-    height: 100px;
+h4 {
+    color: red;
+    border: 3px solid rgb(168, 115, 0);
+    border-spacing: 10px;
+}
+
+.text-section1 {
+    height: 150px;
 }
 
 .text-general-information {
@@ -133,6 +136,9 @@ article {
     justify-content: center;
     text-align: center;
     margin: 0 auto;
+    width: 500px;
+    height: 50px;
+    font-size: 1.2em;
 }
 
 #section-1 {
@@ -159,21 +165,29 @@ article {
     color: #fff;
     font-family: 'Poppins';
     font-size: 1.2em;
-    box-shadow: 2px 2px 10px 0 #eee;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
     letter-spacing: 0.5px;
     padding: 10px 40px;
     text-align: center;
     text-decoration: none;
-    width: 100px;
-    height: 30px;
+    width: 250px;
+    height: 50px;
     margin: 0 0 0 0;
 }
 
 .join-free {
     background: #fff;
     color: #000;
+    font-family: 'Poppins';
+    font-size: 1.2em;
+    font-weight: bold;
+    border: none;
     margin-top: 15px;
-    padding: 9px;
+    padding: 10px 40px;
+    text-align: center;
+    margin: 0 0 0 0;
+    height: 50px;
+    width: 250px;
 }
 
 .triangle-hexagon {
@@ -211,48 +225,64 @@ article {
 }
 
 #section-3 {
-	display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    width: 100px;
+
 }    
 
-.div-1 {
+.alldivs-section3 {
     display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
 	justify-content: center;
-	align-items: center;
-	align-content: center;
-    width: 100px;
+	align-items: stretch;
+	align-content: stretch;
+
 }
 
+.smaller-divs {
+    width: 250px;   
+    margin-right: 10px;
+}
+
+p {
+    text-align: left;
+}
 
 .zero-configuration {
     width: 20px;
     margin-right: 1rem;
 }
 
-.text-1 {
-    font-size: 1em;
-    text-align: center;
-    margin: 20px 0;
-    width: 200px;
-}
-
 .team-management {
+    
     width: 20px;
     margin-right: 1rem;
 }
 
 .familiar-features {
+    
     width: 20px;
     margin-right: 1rem;
 }
 
 .npm-audit {
+    
     width: 20px;
     margin-right: 1rem;
+}
+
+
+.createorg-button {
+    background-color: black;
+    color: white;
+    font-family: 'Poppins';
+    font-size: 1.2em;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    letter-spacing: 0.5px;
+    text-align: center;
+    width: 450px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 500px;
 }
