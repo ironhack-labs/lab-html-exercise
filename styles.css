@@ -49,24 +49,84 @@ header > div {
     margin: 10px;
     width: 75px;
 }
-#mag-glass{
-    width: 14px;
+
+.searchbar-inner{
+    background-size: 14px;
+    height: 32px;
+    width: 500px;
+    font-size: 14px;
+    background-image: url(/home/sebuntu/Desktop/Ironhack/Prework/lab-html-exercise/images/magnifying-glass.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 30px;
+    background-color: rgb(228, 225, 225);
+    border: solid 5px  rgb(228, 225, 225) ;
+    margin-right: 0px;
+    
+}
+.searchbar-btn{
+    color: white;
+    border-style: none;
+    background-color: #FB3B49;
+    font-weight: 600;
+    padding: 8px 15px 9px;
+    margin-right: 10px;
+    
+}
+.header-border-btn{
+    font-weight: 600;
+    background-color: white;
+    padding: 5px 15px;
+    border-style: none;
+    border: solid 1px;
+}
+.header-noborder-btn{
+    font-weight: 500;
+    background-color: white;
+    padding: 5px 15px;
+    border-style: none;
+    border: solid 1px white;
 }
 
 #first-section{
+    background-color: rgba(232,217,217,.3);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding-bottom: 110px;
+    margin: 0 20px 0 20px;
 }
 #first-section article{
-    margin: 0px 20%;
+    margin: 30px 20%;
     padding-bottom: 25px;
-
 }
+.first-section-button{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.red-btn{
+    font-weight: 600;
+    background-color: #FB3B49;
+    border: none;
+    padding: 10px 40px;
+    color: white;
+    box-shadow: 6px 6px 0 rgba(251,59,73,.2);
+    margin-right: 15px;
+}
+.white-btn{
+    font-weight: 600;
+    background-color: white;
+    border: none;
+    padding: 10px 40px;
+    margin-left: 15px;
+}
+
 #second-section h3{
     background-color: rgba(255,204,53,.4);
     transform: skew(9deg,0deg);
+    font-style: italic;
 }
 #second-section{
     display: flex;
@@ -77,11 +137,11 @@ header > div {
 #second-section article{
     display: flex;
     justify-content: center;
-    margin: 0 20% 50px 20%;
+    margin: 20px 20% 50px 20%;
 }
 .triangle-hexagon{
-    padding: 60px 0 45px 0;
-    margin: 100px 0 0 80px;
+   
+    margin: 60px 0 0 0;
     width: 150px;
 }
 
@@ -101,17 +161,21 @@ header > div {
 
 }
 #third-section-container p{
-    margin:0 40px 0 0;
+    margin:0 40px 40px 0;
 }
 .third-section-btn{
-    font-size: 1.2em;
-    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
     background-color: black;
     color: white;
-    margin: 40px 38%;
-    padding: 15px 120px;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    font-size: 1.2em;
+    padding: 18px 170px;
+    font-weight: 600;
+}
+.button-position{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+
     
-
-
-
 }
