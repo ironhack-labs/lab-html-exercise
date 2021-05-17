@@ -5,7 +5,7 @@ body {
     padding:0;
     background: rgb(131,58,180);
 background: radial-gradient(circle, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
-    margin: 15px 0px;
+    margin: 10px 0px;
 }
 
 h1,
@@ -17,6 +17,10 @@ h2 {
 p, 
 h4 {
     font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
 }
 
 .nav-bar {
@@ -33,6 +37,7 @@ h4 {
 
 .nav-bar-upper {
     justify-content: space-between;
+    height: 50px;
 }
 
 .nav-bar-upper ul {
@@ -43,7 +48,6 @@ h4 {
 
 .nav-bar-upper a {
     color: #000;
-    text-decoration: none;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     margin: 0 10px;
@@ -62,8 +66,9 @@ h4 {
 }
 
 .nav-bar-upper > div > h4 {
-    font-weight: 200;
-    margin-left: 30px;
+    font-weight: 400;
+    margin-left: 8px;
+    font-size: 14px;
 }
 
 .heart-img{
@@ -79,11 +84,11 @@ h4 {
 
 
 .nav-bar-lower {
-    padding: 25px 0;
+    padding: 15px 0;
 }
 
 .nav-bar-lower .nav-bar-npm-logo {
-    width: 80px;
+    width: 70px;
 }
 
 .nav-bar-lower .nav-bar-magnifying-glass {
@@ -93,37 +98,53 @@ h4 {
     height: 30px;
 }
 
-.nav-bar-main-logo,
 .nav-bar-btn-container {
-    width: 10%;
+    width: 15%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-bar-btn-container > a:nth-child(1) {
+    border: black solid 1px;
+    padding: 15px;  
+}
+
+.nav-bar-btn-container > a {
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    margin-left: 20px;
 }
 
 .nav-bar-lower > form  {
     display: flex;
-    width: 70%;
+    width: 80%;
     align-items: center;
-    justify-content: end;
+    justify-content: flex-end;
 }
 
 .nav-bar-lower > form input {
     height: 46px;
-    width: 60%;
-    background: rgb(242 242 242);
+    width: 75%;
+    background: rgb(242, 242, 242);
     border: none;
     padding-left: 73px;
-    font-family: 'Fira Mono', monospace;
+    font-family: "Fira Mono", monospace;
 }
 
 .nav-bar-lower > form button {
-    width: 15%;
-    height: 46px;
+    width: 12%;
+    height: 50px;
     background: black;
     border: none;
     color: white;
     font-weight: 600;
     font-size: 15px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .nav-bar-main-logo {
-    width: 6%;
+    width: 3%;
+    margin-left: 30px;
 }
