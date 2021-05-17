@@ -5,113 +5,114 @@
 </head>
  
 <body>
-<header>
-
-  <div>
+  <header>
     <div>
-      <img class="black-heart" src="images/black-heart.png" alt="black heart" />
-      <span> Nifty Penguin Magic </span>
+      <div>
+        <img class="blackHeart" src="images/black-heart.png" alt="black heart"/>
+        <span> Nifty Penguin Magic </span>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="https://www.npmjs.com/enterprise"> npm Enterprise </a></li>
+          <li><a href="https://www.npmjs.com/products"> Products </a></li>
+          <li><a href="https://www.npmjs.com/solutions"> Solutions </a></li>
+          <li><a href="https://www.npmjs.com/resources"> Resources </a></li>
+          <li><a href="https://www.npmjs.com/docs"> Docs </a></li>
+          <li><a href="https://www.npmjs.com/support"> Support </a></li>
+        </ul>
+      </nav>
     </div>
-
-    <!-- Navigation Menu -->
-    <nav>
-      <ul>
-        <li><a href="https://www.npmjs.com/enterprise">npm Enterprise</a></li>
-        <li><a href="https://www.npmjs.com/products">Products</a></li>
-        <li><a href="https://www.npmjs.com/solutions">Solutions</a></li>
-        <li><a href="https://www.npmjs.com/resources">Resources</a></li>
-        <li><a href="https://www.npmjs.com/docs">Docs</a></li>
-        <li><a href="https://www.npmjs.com/support">Support</a></li>
-      </ul>
-    </nav>
-
-  </div>
 
   <div>
     <img class="logo" src="images/npm-logo.png" alt="npm logo" />
 
-     <!-- Search Bar -->
-     <form id="nav-search" class="nav-search"> 
-       <img class="magnifying-glass"src="images/magnifying-glass.png" alt="magnifying glass">
-       <input id="nav-search-query" class="nav-search-query" placeholder="Search packages">
-       <button class="red-button">Search</button>
+     <form class="navSearch"> 
+       <img class="magnifyingGlass"src="images/magnifying-glass.png" alt="magnifying glass">
+       <input class="navSearchQuery" placeholder="Search packages">
+       <button class="redButton">Search</button>
       </form>
 
-      <a href='https://www.npmjs.com/signup' class="button-with-border"><button>Join</button></a>
-      <a href='https://www.npmjs.com/login' class="button-without-border"><button>Log in</button></a>
-    
+      <div>
+        <a href='https://www.npmjs.com/signup' class="button1">Join</a>
+        <a href='https://www.npmjs.com/login' class="button2">Log in</a>
+      </div>
   </div>
 
 </header>
 
-<!-- Hero Section Starts -->
-<section> 
-  <heading>
-    <h1> Build amazing things</h1>
-  </heading>
-  <article> 
-    <p> Essential JavaScript development tools that help you go to market faster and build powerful applications using modern open source code.</p>
-  </article>
-  <div class="two-buttons">
-    <a href='https://www.npmjs.com/products'><button>See plans</button></a>
-    <a href='https://www.npmjs.com/signup'><button>Join for free</button></a>
-  </div>
+<div class="container1">
+  <section class="container">
 
-</section>
-<!-- Hero Section Finishes -->
+    <div class="heading">
+      <h1>Build amazing things</h1>
+    </div>
 
-<!-- First Content Section Starts -->
-<section> 
-  <div class="center">
-    <img class="triangle-hexagan" src="images/triangle-hexagon.svg" alt="triangle hexagon">
-  </div>
-  <heading>
-    <h2>Bring the best of open source to your company</h2>
-  </heading>
-  <article class="description"> 
-    <p>npm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it. Create an Org and get more out of the tools your team already knows and loves.</p>
-  </article>
+    <div class="article">
+      <p>Essential JavaScript development tools that help you go to market faster and build powerful applications using modern open source code.</p>
+    </div>
 
-</section>
-<!-- First Content Section Finishes -->
+    <div id="twoButtons">
+      <a href="https://www.npmjs.com/products" class="button3" id="plans">See plans</a>
+      <a href='https://www.npmjs.com/signup' class="button3" id="join">Join for free</a>
+    </div>
 
-<!-- Second Content Section Starts -->
-<section> 
+  </section>
+</div>
 
-    
+<div class="container2">
+  <section class="container">
+
+    <div class="hexagon">
+      <img src="images/triangle-hexagon.svg" alt="triangle hexagon" class="center"/>
+    </div>
+
+    <div class="headingYellow">   
+      <h2>Bring the best of open source to your company</h2>
+    </div>
+
+    <div class="article"> 
+      <p>npm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it. Create an Org and get more out of the tools your team already knows and loves.</p>
+    </div>
+
+  </section>
+</div>
+
+<div class="container3">
+  <section class="container">  
+
     <div>
-        <div class="b1"˘>
-          <img class="icon" src="images/zero-configuration.svg" alt="zero configuration">
-          <h3 class="subheading">Zero configuration</h3>
-          <p class="block-text">Create an org, add your team, and start collaborating. Nothing to configure, set up or manage.</p>
-        </div>
+     <div class="block"˘>
+       <img class="icon" src="images/zero-configuration.svg" alt="zero configuration">
+       <h3 class="subheading">Zero configuration</h3>
+       <p class="blockText">Create an org, add your team, and start collaborating. Nothing to configure, set up or manage.</p>
+      </div>
 
-        <div class="b2"˘>
-          <img class="icon" src="images/team-management.svg" alt="team management">
-          <h3 class="subheading">Team management</h3>
-          <p class="block-text">Control who has access to what modules within your team namespace using straightforward team management capabilites.</p>
-        </div>
+      <div class="block"˘>
+       <img class="icon" src="images/team-management.svg" alt="team management">
+       <h3 class="subheading">Team management</h3>
+       <p class="blockText">Control who has access to what modules within your team namespace using straightforward team management capabilites.</p>
+      </div>
 
-        <div class="b3"˘>
-          <img class="icon" src="images/familiar-features.svg" alt="familiar features">
-          <h3 class="subheading">Familiar features</h3>
-          <p class="block-text">npm Orgs has 100% parity with all the public npm registry features your developers already use.</p>
-        </div>
+      <div class="block"˘>
+        <img class="icon" src="images/familiar-features.svg" alt="familiar features">
+        <h3 class="subheading">Familiar features</h3>
+        <p class="blockText">npm Orgs has 100% parity with all the public npm registry features your developers already use.</p>
+      </div>
 
-        <div class="b4"˘>
-          <img class="icon" src="images/npm-audit.svg" alt="npm audit">
-          <h3 class="subheading">npm audit</h3>
-          <p class="block-text">Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer.</p>
-        </div>
+      <div class="block"˘>
+        <img class="icon" src="images/npm-audit.svg" alt="npm audit">
+        <h3 class="subheading">npm audit</h3>
+        <p class="blockText">Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer.</p>
+      </div>
     </div>
-  
-    <div class="center"> 
-      <a href='https://www.npmjs.com/signup'><button class="black-button">Create an Org</button></a>
-    </div>
+  </section>
+</div>
 
-</section>
-<!-- Second Content Section Finishes -->
-
+<div class = "container4">
+  <section class="container">
+    <a href='https://www.npmjs.com/signup'><button class="blackButton">Create an Org</button></a>
+  </section>
+</div>
 
 </body>
 
