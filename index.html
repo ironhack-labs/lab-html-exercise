@@ -5,36 +5,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>npm clone</title>
 </head>
 
 <body>
 
-    <nav>
-        <div>
+    <nav class="nav-bar">
+        <div class="nav-bar-upper">
             <div>
-                <img src="./images/black-heart.png" alt="black heart">
-                <h4>Random Phrase</h4>
+                <img class="heart-img" src="./images/black-heart.png" alt="black heart">
+                <h4>Numerous Pulsating Martians</h4>
             </div>
             <ul>
-                <li>Products</li>
-                <li>Pricing</li>
-                <li>Documentation</li>
-                <li>Community</li>
+                <li><a href="#">npm Enterprise</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Solutions</a></li>
+                <li><a href="#">Resources</a></li>
+                <li><a href="#">Docs</a></li>
+                <li><a href="#">Support</a></li>
             </ul>
         </div>
-        <div>
-            <div><img src="/images/npm-logo.png" alt="npm logo"></div>
-            <div>
-                <form action="/some-url" method="post">
-                    <div>
-                        <img src="./images/magnifying-glass.png" alt="magnifying glass">
-                        <input type="text" name="search-bar" id="search-bar">
-                        <button type="submit">Search</button>
-                    </div>
-                </form>
+        <hr>
+        <div class="nav-bar-lower">
+            <div class="nav-bar-main-logo"><img class="nav-bar-npm-logo" src="/images/npm-logo.png" alt="npm logo">
             </div>
-            <div>
+            <form action="/some-url" method="post">
+                <img class="nav-bar-magnifying-glass" src="./images/magnifying-glass.png" alt="magnifying glass">
+                <input type="text" name="search-bar" id="search-bar" placeholder="Search Packages">
+                <button type="submit">Search</button>
+            </form>
+
+            <div class="nav-bar-btn-container">
                 <a href="" class="nav-btn-register">Sign Up</a>
                 <a href="" class="nav-btn-register">Sign In</a>
             </div>
@@ -77,14 +79,15 @@
 
     <section>
         <h2>Gratefully serving everyone from solo devs to the Fortune 500</h2>
-        <img src="https://static.npmjs.com/attachments/ck49cu3ceh1sust74dkzkfn69-grey-logowall.png" alt="companies that use npm">
+        <img src="https://static.npmjs.com/attachments/ck49cu3ceh1sust74dkzkfn69-grey-logowall.png"
+            alt="companies that use npm">
     </section>
 
     <footer>
         <div>
             <img src="./images/npm-logo.png" alt="npm logo">
         </div>
-        
+
         <div>
             <div>
                 <h3>Support</h3>
@@ -96,7 +99,7 @@
                     <li>Contact npm</li>
                 </ul>
             </div>
-                
+
             <div>
                 <h3>Company</h3>
                 <ul>

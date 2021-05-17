@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo&family=Fira+Mono&family=Poppins:wght@200;500;600&display=swap');
+
+body {
+    margin: 0;
+    padding:0;
+    background: rgb(131,58,180);
+background: radial-gradient(circle, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    margin: 15px 0px;
+}
+
+h1,
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+p, 
+h4 {
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav-bar {
+    width: 100%;
+    background-color: rgb(250, 250, 250);
+}
+
+.nav-bar-upper,
+.nav-bar-lower {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-bar-upper {
+    justify-content: space-between;
+}
+
+.nav-bar-upper ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0 25px 0 0;
+}
+
+.nav-bar-upper a {
+    color: #000;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    margin: 0 10px;
+    font-size: .9rem;
+    transition: .5s;
+}
+
+.nav-bar-upper a:hover {
+    opacity: .5;
+}
+
+.nav-bar-upper > div {
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
+}
+
+.nav-bar-upper > div > h4 {
+    font-weight: 200;
+    margin-left: 30px;
+}
+
+.heart-img{
+    width: 35px;
+}
+
+.nav-bar hr {
+    margin: 0;
+    border: none;
+    background: #00000026;
+    height: .9px;
+}
+
+
+.nav-bar-lower {
+    padding: 25px 0;
+}
+
+.nav-bar-lower .nav-bar-npm-logo {
+    width: 80px;
+}
+
+.nav-bar-lower .nav-bar-magnifying-glass {
+    width: 30px;
+    left: 50px;
+    position: relative;
+    height: 30px;
+}
+
+.nav-bar-main-logo,
+.nav-bar-btn-container {
+    width: 10%;
+}
+
+.nav-bar-lower > form  {
+    display: flex;
+    width: 70%;
+    align-items: center;
+    justify-content: end;
+}
+
+.nav-bar-lower > form input {
+    height: 46px;
+    width: 60%;
+    background: rgb(242 242 242);
+    border: none;
+    padding-left: 73px;
+    font-family: 'Fira Mono', monospace;
+}
+
+.nav-bar-lower > form button {
+    width: 15%;
+    height: 46px;
+    background: black;
+    border: none;
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.nav-bar-main-logo {
+    width: 6%;
+}
