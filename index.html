@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <link rel="stylesheet" href="./style.css">
+    </head>
     <body>
         <header id="header">
             <div class="header">
                 <div id="logo">
-                    <img class="BlackHeart" src="images/black-heart.png" alt="Black Heart" width="400" height="200">
+                    <img class="BlackHeart" src="images/black-heart.png" alt="Black Heart">
                     <span>Nifty Penguin Magic</span>
                 </div>
                 <nav>
@@ -20,10 +23,12 @@
             </div>
             <div class="bar">
                 <img class="Logo" src="images/npm-logo.png" alt="npm Logo">
-                <form action="/action_page.php">
-                    <img class="SearchIcon" src="images/magnifying-glass.png" alt="magnifying-glass">
-                    <input type="text" placeholder="Search packages" name="Search">
-                    <button type="button">Search</button>
+                <form>
+                    <label for="Searchp">
+                        <img class="SearchIcon" src="images/magnifying-glass.png" alt="magnifying-glass">                           
+                    </label>
+                    <input type="search" id="Searchp" placeholder="Search packages">                    
+                    <input type="button" value="Search">
                     <div id="topbuttons">
                         <a href="#">Join</a>
                         <a href="#">Log in</a>
