@@ -22,39 +22,42 @@
                 <li><a href="#">Support</a></li>
               </ul>
             </nav>
-          </div>
+        </div>
 
-          <div>  
-                  <img class="logo" src="C:\Users\joask\Desktop\prework-lab\lab-html-exercise\images\npm-logo.png" alt="logo"/>  
+        <div>  
+                <img class="logo" src="C:\Users\joask\Desktop\prework-lab\lab-html-exercise\images\npm-logo.png" alt="logo"/>  
               <form class="search-button" action="action_page.php">
                 <img class="search-bar" src="C:\Users\joask\Desktop\prework-lab\lab-html-exercise\images\magnifying-glass.png" alt="search bar pic"/>
                 <input type="text" placeholder="Search packages" name="search">
-                <button type="submit" class="searchButton">
+                <button type="submit" class="search-box">
                     <i class="fa fa-search">Search</i>
                  </button>
-                 <div class="join-login-container">
-                    <a class="link-btn" href="#">Join</a>
+              </form>
+                 <div>
+                    <a class="link-btn" id="join-button" href="#">Join</a>
                     <a class="link-btn" href="#">Log In</a>
                  </div>
-              </form>
-            <!-- add logo, search bar and buttons (or links and style them as buttons later) -->
-          </div> 
+              
+        </div> 
       </header>
       <section id="cream-background">
         <h1>Build amazing things</h1>
         <article>
-          <p>Essential JavaScript development tools that help you go to market faster and build powerful applications using modern open source code.</p>
+          <p>Essential JavaScript development tools that help you <br> 
+            go to market faster and build powerful applications </br> using modern open source code.</p>
         </article>
         <div>
-          <a id="see-btn" href="#">See plans</a>
-          <a id="join-btn" href="#">Join for free</a>
+          <a class="button" id="see-btn" href="#">See plans</a>
+          <a class="button" id="join-btn" href="#">Join for free</a>
         </div>
       </section>
       <section id="info">
-        <img src="C:\Users\joask\Desktop\prework-lab\lab-html-exercise\images\triangle-hexagon.svg" alt="triangle hexagon"/>
+        <img id="hexagon" src="C:\Users\joask\Desktop\prework-lab\lab-html-exercise\images\triangle-hexagon.svg" alt="triangle hexagon"/>
         <h3>Bring the best of open source to your company</h3>
         <article>
-          <p>npm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it. Create an Org and get more out of the tools your team already knows and loves.</p>
+          <p>npm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers <br> 
+            already use it. Your company depends on it. Create an Org and get more out of the tools your <br>
+            team already knows and loves.</br></p>
         </article>
       </section>
       <section id="description">
@@ -80,7 +83,7 @@
             <p>Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer.</p>
           </article>
         </div>
-        <a id="create-btn" href="#">Create an Org</a>
+        <div><a id="create-btn" href="#">Create an Org</a></div>
       </section>
   </body>
 </html>
