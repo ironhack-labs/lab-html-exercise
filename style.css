@@ -10,6 +10,23 @@ header > div {
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid lightgray;
+    
+  }
+  form > label {
+    color: rgba(0,0,0,.05);
+  }
+  form > input {
+    color: rgba(0,0,0,.05);
+  }
+  
+  form > button {
+    background-color: #fb3e44;
+    color: white;
+  }
+
+  img{
+    width: 100%;
+    height: auto;
   }
   
   nav {
@@ -33,7 +50,7 @@ header > div {
     margin-right: 1rem;
   }
   
-  #section1 {
+  #section1, #section2 {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -45,11 +62,62 @@ header > div {
   #section1 > h1 {
       font-size: 3em;
   }
+  #section1 > div {
+    display: flex; 
+    justify-content: center;
+  }
 
   .article {
       max-width: 400px;
+      text-align: center;
   }
 
   #seeplansbutton {
       background-color: #FB3B49;
+      color:white;
+      padding: 10px 20px 10px 20px;
+  }
+
+  #plans {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  #plans > a {
+    padding: 10px 20px 10px 20px;
+  }
+
+  #section2 > h2 {
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+    font-style: italic;
+  }
+
+  #section2 > img {
+    width: 300px;
+  }
+
+  #section2 {
+    display: flex;
+    justify-content: center; 
+  }
+
+  #section3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #section3 > img {
+    width: 20px;
+  }
+  
+  #section3 > div {
+    width: 200px;
+  }
+
+  #button-org {
+    position: absolute;
+    left: 50%;
   }
