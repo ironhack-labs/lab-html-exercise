@@ -57,7 +57,7 @@ header > div {
 
 
 /*section 1*/
-  #introduction{
+  #general-info{
       height: 600px;
       background-color: rgba(232,217,217,.3);
       text-align: center;
@@ -66,11 +66,11 @@ header > div {
       justify-content: space-around; 
     }
 
-  #introduction h1{
+  #general-info h1{
       font-size: 50px;
       font-weight: bold;
   }
-  #introduction a{
+  #general-info a{
       padding: 10px 50px;
   }
 
@@ -88,7 +88,7 @@ header > div {
 
   /*section 2*/
 
-  #presentation{
+  #companyIntro{
     text-align: center;
     display: flex;
     align-items: center;
@@ -96,16 +96,16 @@ header > div {
     margin: 150px 50px;
   } 
   
-  #presentation h2{
+  #companyIntro h2{
       font-weight: bold;
   }
 
-  #presentation svg{
+  #companyIntro svg{
       width: 300px;
       margin: 10px;
   }
 
-  .presentation-title{
+  .companyIntro-title{
     background-color: rgba(255,204,53,.4);
     transform: skew(9deg,0deg);
     font-style: italic;
@@ -131,13 +131,20 @@ header > div {
     flex-wrap: wrap-reverse;
   }
 
+  .features-btn{
+    background-color: black;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    color: white;
+    text-align: center;
+    padding: 10px 50px;
+    margin: 20px 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
   #features a{
-      background-color: black;
-      box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+      text-decoration: none;
       color: white;
-      text-align: center;
-      padding: 10px 50px;
-      margin: 20px 400px; /*no lo acabo de ver*/
-      display: flex;
-      align-items: center;
+      font-weight: bold;
   }
