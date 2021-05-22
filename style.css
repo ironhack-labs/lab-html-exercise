@@ -3,56 +3,70 @@
 body {
   font-family: 'Poppins';
 }
+
 header > div {
     padding: 0 25px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid lightgray;
-  }
+}
   
-  nav {
+nav {
     width: 600px;
-  }
+}
   
-  nav ul {
+nav ul {
     list-style: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
+}
   
-  nav a {
+nav a {
     text-decoration: none;
     color: black;
-  }
+}
   
-  .blackHeart {
+.blackHeart {
     width: 20px;
     margin-right: 1rem;
-  }
+}
 
-  .npm-logo{
+.npm-logo{
     width: 20px;
     margin-right: 1rem;
-  }
+}
 
-  .search-logo{
+.search-logo{
     width: 20px;
     margin-right: 1rem;
-  }
+}
 
-  #search-bar{
+#search-bar{
     background-color: rgba(0,0,0,.05);
     padding: 10px;
     border: none;
-    }
+}
 
-    /*no va*/
- #search-bar > button{
+.search-bar-line{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  outline: none;
+  width: 100%;
+}
+
+.search-bar-button{
      background-color: #fb3e44;
      color: white;
- }
+     border: none;
+     padding: 10px 20px;
+}  
+
+.search-bar-line a{
+  text-decoration: none;
+}
   
 
 
@@ -60,18 +74,31 @@ header > div {
   #general-info{
       height: 600px;
       background-color: rgba(232,217,217,.3);
+      margin: auto;
       text-align: center;
       display: flex;
       align-items: center;
       justify-content: space-around; 
     }
 
+  #general-info div{
+    padding: 40px 0;
+  }
+
   #general-info h1{
       font-size: 50px;
       font-weight: bold;
   }
+
+  #general-info article{
+    text-align: center;
+    text-justify: center;
+    padding: 30px 200px;
+  }
+
   #general-info a{
       padding: 10px 50px;
+      text-decoration: none;
   }
 
   .see-plans{
@@ -86,7 +113,7 @@ header > div {
   }
 
 
-  /*section 2*/
+/*section 2*/
 
   #companyIntro{
     text-align: center;
@@ -100,19 +127,24 @@ header > div {
       font-weight: bold;
   }
 
+  #companyIntro article{
+    padding: 0px 150px;
+    text-align: center;
+  }
+
   #companyIntro svg{
       width: 300px;
-      margin: 10px;
+      margin: 0px 10px 40px;
   }
 
   .companyIntro-title{
     background-color: rgba(255,204,53,.4);
     transform: skew(9deg,0deg);
     font-style: italic;
-    margin: 0 200px;
+    margin: 30px 160px;
   }
 
-  /*section 3*/
+/*section 3*/
 
   #features svg{
       width: 30px;
@@ -141,7 +173,7 @@ header > div {
     display: flex;
     justify-content: center;
     align-items: center;
-}
+  }
 
   #features a{
       text-decoration: none;
