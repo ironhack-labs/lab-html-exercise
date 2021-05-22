@@ -2,6 +2,7 @@
 
 body {
   font-family: 'Poppins';
+  padding-bottom: 100px;
 }
 
 h1 {
@@ -16,6 +17,11 @@ h2 {
   transform: skew(9deg,0deg);
   font-style: italic;
   padding: 0 20px;
+}
+
+h3 {
+  color: #ED1C24;
+  margin-top: 0;
 }
 
 a:active {
@@ -142,7 +148,7 @@ form button letters color: white
   flex-flow: row nowrap;
   justify-content: space-between;
   width: 40%;
-  padding: 20px 0px;
+  padding: 30px 0px;
   margin: 0px;
 }
 
@@ -167,7 +173,7 @@ form button letters color: white
 
 /* key-sell section */
 
-#key-sell {
+#key-sell, .create{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -181,6 +187,40 @@ form button letters color: white
 }
 
 #key-sell article {
-  width: 55%~q;
+  width: 55%;
   font-size: 0.8em;
+}
+
+/* features section */
+
+#features {
+  display: flex;
+  flex-flow: row nowrap;
+  flex: 1 1 0;
+  align-items: center;
+  justify-content:space-around;
+
+  padding: 25px;
+
+}
+
+#features img {
+ width: 2em;
+ position:relative;
+ margin-bottom: 0;
+}
+
+#features div {
+
+padding: 5px;
+font-size: 0.8em;
+width: 20%;
+}
+
+#create-button {
+  padding: 10px 100px;
+  background-color: #000;
+  box-shadow: 8px 8px 0 rgba(128, 83, 35, 0.2);
+  color: #fff;
+  text-decoration: none;
 }
