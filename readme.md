@@ -78,10 +78,12 @@ We could try to represent this part of the website with the following:
 ```html
 <header>
   <div>
+
     <div>
       <img class="blackHeart" src="LINK TO IMAGE GOES HERE" alt="black heart" />
       <span> Nifty Penguin Magic </span>
     </div>
+
     <nav>
       <ul>
         <li><a href="#"> npm Enterprise </a></li>
@@ -95,6 +97,7 @@ We could try to represent this part of the website with the following:
   </div>
 
   <div>
+    
     <!-- add logo, search bar and buttons (or links and style them as buttons later) -->
   </div>
 </header>
