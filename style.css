@@ -48,7 +48,7 @@ nav a {
 .search-p {
   width: 90%;
   padding: 10px;
-  background-color: lightgray;
+  background-color: rgba(0,0,0,.05);
   background-image: url(./images/magnifying-glass.png);
   background-size: 20px;
   background-repeat: no-repeat;
@@ -59,7 +59,7 @@ nav a {
 .search button {
   width: 10%;
   padding: 10px;
-  background-color: red;
+  background-color: #fb3e44;
   color: white;
   border: none;
   font-size: medium;
@@ -91,51 +91,57 @@ h1 {
 }
 
 h2 {
-  font-size: 3em;
+  font-size: 2em;
   text-align: center;
-  text-transform: uppercase;
-  line-height: 4em;
+  line-height: 1em;
+  background-color: rgba(255,204,53,.4);
+  transform: skew(9deg,0deg);
+  font-style: italic;
+  padding: 0 10px;
 }
 
 h3 {
   font-size: 1.2em;
   text-align: center;
-  line-height: 1em;
+  line-height: 2em;
+  
 }
 
 h4 {
   font-size: 1.2em;
   letter-spacing: 0.4px;
   line-height: 1em;
+  color: #ED1C24;
 }
 
 h5 {
-  font-size: 1.1em;
-  line-height: 1em;
+  font-size: 1em;
+  line-height: 2em;
+  text-align: center;
 }
 
 #try {
-  background-color:gainsboro;
+  background-color: rgba(232,217,217,.3);
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   border-top-style: inset;
-  height: 450px;
+  height: 600px;
   padding-bottom: 50px;
   position: relative;
 }
 
-.container {
+#try .container {
   width: 600px;
+  height: 130px;
   margin: 0 auto;
 }
 
 .link-btn {
-  width: 600px;
   display: flex;
   justify-content: space-between;
-  padding: 0 10px;
+  align-items: center;
 }
 .link-btn a {
   font-size: 1.2em;
@@ -147,9 +153,9 @@ h5 {
 }
 
 .link-btn-red {
-  background-color: red;
+  background-color: #FB3B49;
   color: white;
-  box-shadow: rosybrown 7px 7px;
+  box-shadow: 8px 8px 0 rgba(251,59,73,.2);
 }
 
 .link-btn-wh {
@@ -157,11 +163,64 @@ h5 {
   color: black;
 }
 
+#believe {
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
 
+.hex{
+  width: 200px;
+  margin: 50px auto;
+}
+
+#believe .container {
+  width: 650px;
+  margin: 0 auto;
+}
+
+#enjoy {
+  height: 600px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom  : 50px;
+}
+
+#enjoy > div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: space-between;
+  width: 1100px;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+#enjoy > div > div > img {
+  height: 30px;
+}
+
+#enjoy a {
+  width: 120px;
+  padding: 20px 50px;
+  background-color: black;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+}
 
 p {
  font-size: 18px;
- width: 400px;
- text-indent: 50px;
- text-align: justify;
+ 
 }
