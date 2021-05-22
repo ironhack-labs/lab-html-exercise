@@ -4,6 +4,14 @@ body {
   font-family: 'Poppins';
 }
 
+h1 {
+
+  font-size: 5em;
+  padding: 0;
+  margin: 0;
+}
+
+/*Headers top and bottom */
 header > div {
     padding: 0 25px;
     display: flex;
@@ -52,12 +60,13 @@ header > div {
   #magnifying-glass {
       height: 1.5em;
       position:absolute;
-      left: 5px;
-      top: 5px;
+      top: 7px;
+      left: 7px;
+      margin-right: 10px;
   }
 
   #search {
-      font-family: Poppins;
+      font-family: 'Poppins';
   }
  
     #search-box {
@@ -66,15 +75,19 @@ header > div {
       background-color: rgba(0, 0, 0, 0.1);
       color: rgba(0, 0, 0, 0.5);
       height: 2.5em;
-      padding: 10px 30px;
+      padding: 10px 40px;
+      font-family: 'Poppins';
+
   }
 
     #search-button {
       background-color: #fb3e44;
       color: #fff;
       border: 0;
-      padding: 10px 10px;
-      }
+      padding: 10px 10px;   
+      font-family: 'Poppins';
+   
+    }
 
   #join, #login{
       padding: 5px 10px;
@@ -91,3 +104,56 @@ form input color: rgba(0,0,0,.05)
 form button background color: #fb3e44
 form button letters color: white
 */
+
+/*jumbotron section */
+
+#jumbotron {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 600px;
+  background-color: rgba(232, 217, 217, 0.3);
+  text-align: center;
+
+}
+
+#jumbotron article {
+  width: 40%;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+#jumbotron div {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  width: 40%;
+  padding: 20px 0px;
+  margin: 0px;
+}
+
+#jumbotron div a {
+  width:40%;
+  padding: 10px;
+  text-decoration: none;
+}
+#joinfree {
+  color: #000;
+}
+
+#plans {
+  background-color: #FB3B49;
+  color: #fff;
+  box-shadow: 8px 8px rgba(251, 59, 73, 0.2);
+}
+
+#joinfree:hover {
+  background-color: rgba(232, 217, 217, 0.3);
+}
+
+a:active {
+  position: relative;
+  top: 2px;
+  left: 2px;
+}
