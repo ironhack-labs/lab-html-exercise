@@ -1,9 +1,3 @@
-/*
-form label color: rgba(0,0,0,.05)
-form input color: rgba(0,0,0,.05)
-form button background color: #fb3e44
-form button letters color: white
-*/
 
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
@@ -57,7 +51,7 @@ header > div {
     align-items: center;
     width: 1600px;
     margin: 0.5em 0;
-    background-color: rgb(230, 218, 218);
+    background-color: rgb(240, 240, 240);
   }
 
   .mag-glass {
@@ -68,11 +62,17 @@ header > div {
   .search-form input{
     height: 40px;
     width: 100%;
-    color: rgba(0,0,0,.05);
+    color: black;
+    /* color: rgba(0,0,0,.05);  -- suggested color doesn't stand out */
     border: none;
-    background-color: rgb(230, 218, 218);
+    background-color: rgb(240, 240, 240);
   }
   
+  .search-form input:focus {
+    outline: none;
+    color: black;
+  }
+
   .search-form button {
     height: 40px;
     padding: 0 25px;
