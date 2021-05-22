@@ -11,6 +11,19 @@ h1 {
   margin: 0;
 }
 
+h2 {
+  background-color: rgba(255, 204, 53, 0.4);
+  transform: skew(9deg,0deg);
+  font-style: italic;
+  padding: 0 20px;
+}
+
+a:active {
+  position: relative;
+  top: 2px;
+  left: 2px;
+}
+
 /*Headers top and bottom */
 header > div {
     padding: 0 25px;
@@ -124,7 +137,7 @@ form button letters color: white
   margin-top: 10px;
 }
 
-#jumbotron div {
+#jumbotron div { /* div containing plan and join links */
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -152,8 +165,22 @@ form button letters color: white
   background-color: rgba(232, 217, 217, 0.3);
 }
 
-a:active {
-  position: relative;
-  top: 2px;
-  left: 2px;
+/* key-sell section */
+
+#key-sell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 25px;
+}
+#hex {
+  height: 200px;
+  padding: 20px;
+}
+
+#key-sell article {
+  width: 55%~q;
+  font-size: 0.8em;
 }
