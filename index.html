@@ -1,22 +1,128 @@
-<header>
-    <div>
-      <div>
-        <img class="blackHeart" src="LINK TO IMAGE GOES HERE" alt="black heart" />
-        <span> Nifty Penguin Magic </span>
-      </div>
-      <nav>
-        <ul>
-          <li><a href="#"> npm Enterprise </a></li>
-          <li><a href="#"> Products </a></li>
-          <li><a href="#"> Solutions </a></li>
-          <li><a href="#"> Resources </a></li>
-          <li><a href="#"> Docs </a></li>
-          <li><a href="#"> Support </a></li>
-        </ul>
-      </nav>
-    </div>
-  
-    <div>
-      <!-- add logo, search bar and buttons (or links and style them as buttons later) -->
-    </div>
-  </header>
+<html>
+    <link rel="stylesheet" href="./style.css">
+    <head>
+        <title>NPM Clone</title>
+         </head>
+    <body class="container">
+        <nav>
+           
+            <div class="flex center-items space-between">
+                <div class="left-top-navbar flex">
+                    <img src="./images/black-heart.png" alt="blackheart" class="blackHeart">
+                    <p>Neverending Pun Machine</p>
+                </div>
+                <div class="right-top-navbar">
+                    <ul>
+                        <li>
+                            <a href="/enterprise">
+                                npm Enterprise</li>
+                            </a>
+                            
+                        <li>
+                            <a href="/products">
+                                Products</li>
+                            </a>
+                            
+                        <li>
+                            <a href="/solutions">
+                                Solutions</li>
+                            </a>
+                            
+                        <li>
+                            <a href="/resources">
+                                Resources</li>
+                            </a>
+                            
+                        <li>
+                            <a href="/docs">
+                                Docs</li>
+                            </a>
+                            
+                        <li>
+                            <a href="/support">
+                                Support</li>
+                            </a>
+                            
+                    </ul>
+                </div>
+            </div>
+            <hr>
+          
+
+            <div class="flex center-items space-between bottom-navbar">
+                <img class="npm-logo" src="./images/npm-logo.png" alt="npm-logo">
+                <form class="search-form" action="/search" method="post">
+                    <img class="mglass" src="./images/magnifying-glass.png" alt="">
+                    <input class="search-input" type="text" name="search" placeholder="Search Packages">
+                    <input class="search-button" type="submit" value="search">
+                </form>
+                <div class="bottom-actions">
+                    <a class="join-button" href="/join">Join</a>
+                    <a class="login-button" href="/login">Log in</a>
+                </div>
+            </div>
+        </nav>
+        <section class="plans">
+            <div>
+                <h1>Build amazing things</h1>
+                <p>Essential JavaScript development tools that help you go to market faster and build powerful applications using
+                modern open source code.</p>
+                <div class="plans-buttons-container">
+                    <a href="./seeplans"    class="see-button">See Plans</a>
+                    <a href="./join" class="join-button">Join for free</a>
+                </div>
+            </div>
+        </section>
+        <section class="parrafo">
+            <img class="hexagon" src="./images/triangle-hexagon.svg" alt="is a triangle inside a hexagon"> 
+            <h2>
+                <span class="reset-skew">
+                    Bring the best of open source to your company
+                </span>
+            </h2>
+            <p>npm is the tool used by
+            over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it.
+            Create an Org and get more out of the tools your team already knows and loves.</p>
+        </section>
+        <section class="feature">
+         
+            <div class="flex">
+                <div class="padding20">
+                    <img class="iconos"  src="./images/zero-configuration.svg" alt="we mean, is very simple">
+                    <h3>Zero Configuration</h3>
+                    <p>Create an org, add
+                        your team, and start collaborating. Nothing to configure, set up, or manage.
+                    </p>
+                </div>
+                <div class="padding20">
+                    <img class="iconos"  src="./images/team-management.svg" alt="manage the team">
+                    <h3>Team management</h3>
+                    <p>Control who has access to
+                        what modules within your team namespace using straightforward team management capabilities.
+                    </p>
+                </div>
+                <div class="padding20">
+                    <img class="iconos"  src="./images/familiar-features.svg" alt="i think i have seen you before">
+                    <h3>Familiar features</h3>
+                    <p>pm Orgs
+                        has 100% parity with all the public npm registry features your developers already use.
+                    </p>
+                </div>
+                <div class="padding20">
+                    <img class="iconos"  src="./images/npm-audit.svg" alt="who did what????">
+                    <h3>npm audit</h3>
+                    <p>Enjoy the security
+                        auditing features built into the npm client, a zero-friction way to make open source software safer. Create an Org
+                    </p>
+                </div>
+            </div>
+         
+            <div class="flex justify-center">
+                <button class="create-button">
+                    Create an Org
+                </button>
+            </div>
+        </section>
+       
+    </body>
+</html>
