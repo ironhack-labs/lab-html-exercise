@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body {
+  font-family: 'Poppins';
+}
+
+/*HEADER+NAVBAR*/
+
+header > div {
+    padding: 0 25px;
+    margin: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+  }
+  
+  nav {
+    width: 600px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .blackHeart {
+    width: 20px;
+    margin-right: 1rem;
+  }
+
+.search-bar-header {
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    align-items: center;
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.npm-logo {
+    width: 70px;
+    padding: 25px 0;
+    margin-bottom: 10px;
+    height: fit-content;
+}
+
+.search-main {
+    display: flex;
+    flex-direction: row;
+    width: 300%;
+}
+
+.search-box {
+    background-color: rgba(0,0,0,.05);
+    margin: 10px 0 10px 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.search-icon {
+    max-height: 25px;
+}
+
+.search-bar {
+    width: 800px;
+    border-color: transparent;
+    background-color: rgba(0,0,0,.05);
+    opacity: 0%;
+}
+
+.search-button {
+    height: 45px;
+    margin: 10px 10px 10px 0;
+    width: 130px;
+    background-color: #fb3e44;
+    color: white;
+    border-color: transparent; 
+}
+
+.join-login-buttons {
+    display: flex;
+    flex-direction: row;
+}
+
+.join-button {
+    height: 45px;
+    margin: 10px;
+    width: 130px;
+    border-color: darkgray;
+    background-color: white;
+}
+
+.login-button {
+    height: 45px;
+    margin: 10px;
+    width: 130px;
+    border-color: transparent;
+    background-color: white;
+}
+
+
+/*SECTION1*/
+
+.section1 {
+    height: 600px;
+    margin: 0 20px;
+    background-color: rgba(232,217,217,.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section1-head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 350%;
+    font-style: black;
+    margin-top: 100px;
+}
+
+.npm-description {
+    display: flex;
+    width: 400px;
+    margin: auto;
+    justify-self: center;
+    align-self: center;
+    text-justify: distribute;
+    text-align: center;
+}
+
+.section1-buttons {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+}
+
+.see-plans {
+    height: 45px;
+    margin: 10px;
+    width: 130px;
+    color: white;
+    font-weight: bolder;
+    border-color: transparent;
+    background-color: #FB3B49;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+}
+
+.join-for-free {
+    height: 45px;
+    margin: 10px;
+    width: 130px;
+    font-weight: bolder;
+    border-color: transparent;
+    background-color: white;
+}
+
+
+
+/*SECTION2*/
+
+.section2 {
+    height: 500px;
+    margin: 40px 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section2 img {
+    height: 250px;
+}
+
+.section2-head {
+    font-size: 180%;
+    font-weight: black;
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+    padding: 3px 15px;
+    margin-top: 55px;
+}
+
+.section2-head div {
+    transform: skewX(-9deg)
+}
+.what-npm {
+    display: flex;
+    width: 650px;
+    margin: auto;
+    margin-bottom: 40px;
+    justify-self: center;
+    align-self: center;
+    text-justify: distribute;
+    text-align: center;
+}
+
+
+/*SECTION3*/
+/*note: can't figure out how to get all the text boxes to be sized similarly. 
+tried inline-size, playing with margins, etc etc... this  is as good as I got it*/
+
+
+.section3 {
+    margin: 150px 0px;
+}
+
+.section3 span {
+    margin: 10px 40px 100px 40px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.section3 img {
+    max-height: 30px;
+}
+
+.section3-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 10px 10px 10px 40px;
+
+}
+
+.section3-head {
+    color: #ED1C24;
+}
+
+#org-button {
+    display: flex;
+    margin: auto;
+    width: 500px;
+    height: 80px;
+    background-color: black;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+}
+
+.org-button {
+    display: flex;
+    size: inherit;
+    margin: auto;
+    color: white;
+    font-size: 150%;
+    border-color: transparent;
+    background-color: black;
+}
+
+
