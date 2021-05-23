@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Poppins");
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,700");
 body {
     font-family: "Poppins";
     margin: 0;
@@ -10,6 +10,28 @@ header>div {
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid lightgray;
+}
+
+.header-row-2 {
+    gap: 18px;
+    padding: 6px;
+}
+
+.header-row-2 form input[type="submit"] {
+    background-color: #fb3e44;
+    border-radius: none;
+    border: none;
+    color: white;
+    font-family: Poppins;
+    font-size: 1rem;
+}
+
+.header-row-2 .join-button {
+    border: 1px solid black;
+}
+
+.header-row-2 a {
+    width: 50px;
 }
 
 nav {
@@ -50,6 +72,24 @@ form {
 
 .package-search-bar {
     flex: 1;
+    display: flex;
+}
+
+.package-search-bar .search-icon-wrapper {
+    position: relative;
+}
+
+.package-search-bar .search-icon-wrapper img {
+    margin: 11px;
+    position: absolute;
+}
+
+.package-search-bar input {
+    flex-grow: 1;
+    font-family: Poppins;
+    border: none;
+    background-color: rgba(0, 0, 0, .05);
+    font-size: 1rem;
 }
 
 section {
@@ -67,14 +107,84 @@ section {
 #hero a.see-plans {
     background-color: #FB3B49;
     box-shadow: 8px 8px 0 rgba(251, 59, 73, .2);
+    color: white;
+}
+
+#hero h1 {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+#hero article,
+#hero div {
+    width: 520px;
+    text-align: center;
+    margin-bottom: 24px;
+    font-size: 1.2rem;
+}
+
+#hero .hero-button-holder {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    font-weight: bold;
+}
+
+#hero .hero-button-holder a {
+    flex-grow: 1;
+}
+
+#hero .hero-button-holder .join {
+    background-color: white;
 }
 
 #open-source h2 {
     background-color: rgba(255, 204, 53, .4);
     transform: skew(9deg, 0deg);
     font-style: italic;
+    padding: 12px;
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
+#open-source article {
+    width: 650px;
 }
 
 #open-source img {
-    width: 150px;
+    width: 300px;
+}
+
+#features img {
+    width: 50px;
+}
+
+#feature-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 70px;
+}
+
+#feature-list div {
+    width: 250px;
+}
+
+#features h3 {
+    color: #ED1C24;
+}
+
+#features a.button {
+    background-color: black;
+    box-shadow: 8px 8px 0 rgba(128, 83, 35, .2);
+    color: white;
+    width: 300px;
+}
+
+.button {
+    padding: 8px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
 }
