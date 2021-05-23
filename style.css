@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins");
 body {
     font-family: "Poppins";
+    margin: 0;
 }
 
 header>div {
@@ -51,16 +52,29 @@ form {
     flex: 1;
 }
 
-#hero {
+section {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    height: 600px;
+    min-height: 600px;
+}
+
+#hero {
     background-color: rgba(232, 217, 217, .3);
 }
 
 #hero a.see-plans {
     background-color: #FB3B49;
     box-shadow: 8px 8px 0 rgba(251, 59, 73, .2);
+}
+
+#open-source h2 {
+    background-color: rgba(255, 204, 53, .4);
+    transform: skew(9deg, 0deg);
+    font-style: italic;
+}
+
+#open-source img {
+    width: 150px;
 }
