@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet');
+/* 
+form label color: rgba(0,0,0,.05)
+form input color: rgba(0,0,0,.05)
+form button background color: #fb3e44
+form button letters color: white 
+*/
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+header > div {
+  padding: 0 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+}
+
+nav {
+  width: 600px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+.blackHeart {
+  width: 20px;
+  margin-right: 1rem;
+}
+
+.npmLogo{
+  width: 60px;
+  margin-right: 1em;
+}
+
+.magnifyingGlass {
+  width: 1rem;
+  padding: 8px;
+}
+
+form {
+  display: flex;
+  background-color: rgba(0,0,0,.05);
+  margin: 4px 0; 
+  flex-grow: 1;
+}
+
+input {
+  background-color: transparent;
+  border: none;
+  padding: 8px 0;
+  flex-grow: 1;
+  align-items: stretch;
+  font-display:;
+}
+
+button {
+  flex: inline;
+  color: white;
+  background-color: #fb3e44;
+  border: none;
+  padding: 10px 15px;
+  font-size: 12px;
+  border: solid red 2px;
+}
+
+.join {
+  text-decoration: none;
+  color:black;
+  border: solid rgb(83, 76, 76) 1px;
+  padding: 3px 1em;
+  margin: 4px 1em;
+}
+
+.logIn {
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
+
+/* suggested height for this section: 600px
+background color: rgba(232,217,217,.3)
+"See plans" button background color: #FB3B49
+"See plans" button box shadow: 8px 8px 0 rgba(251,59,73,.2) */
+
+/****** section one ******/
+
+.sectionOne {
+  background-color: rgba(232,217,217,.3);
+  height: 600px;
+  display: flex;
+  justify-content: auto;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sectionOne h1 {
+  font-size: 70px;
+  font: bolder;
+  text-align: center;
+  font-weight: 800;
+}
+
+.sectionOne p {
+  width: 440px;
+  text-align: center;
+}
+
+.sectionOne span{
+  width: 450px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3em;
+  flex-wrap: wrap;
+}
+
+.seePlansBtn {
+  text-decoration: none;
+  background-color: #FB3B49;
+  color: white;
+  padding: 15px 50px;
+  font-size: 18px;
+  box-shadow: 6px 6px 0 rgba(251,59,73,.2);
+  font-weight: 600;
+}
+
+.joinFreeBtn {
+  text-decoration: none;
+  background-color: white;
+  color: black;
+  font-size: 18px;
+  padding: 15px 50px;
+  font-weight: 600; 
+}
+
+/****** section two ******/
+
+.sectionTwo {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap; 
+  align-items: center; 
+ }
+
+.triangle-hexagon-img {
+  width: 10em;
+  align-items: center; 
+  margin: 60px 0 40px 0;
+}
+
+.sectionTwo h2 {
+  text-align: center;
+  background-color: #fff2ac;  
+  padding: 5px 20px 0px 20px;
+  transform: skew(9deg,0deg);
+  font-style: italic;
+} 
+
+.sectionTwo p{
+  display: flex;
+  min-width: none;
+  max-width: 700px;
+  text-align: center;
+  flex-wrap: wrap;
+  font-size: 14px;
+}
+
+/****** section three ******/
+
+.sectionThree > div {
+  display: flex;
+  margin: 0 5em;
+  padding: 1em;
+  justify-content: center;
+}
+
+.sectionThree > div > div {
+  justify-content: center;
+  width: 200px;
+}
+
+.companyBenefits img {
+  height: 25px;
+} 
+
+.companyBenefits h3 {
+  color: red;
+  font-size: 12px;
+  margin-top: 0px;
+  font-weight: 800;
+
+}
+
+.companyBenefits p {
+  font-size: 11px;
+  padding-right: 3em;
+  margin-right: 1em;
+  margin-top: 2em;
+}
+
+.createAnOrgBtn {
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  justify-content: center;
+  display: flex;
+  margin: 30px auto;
+  padding: 10px 40px;
+  box-shadow: 4px 4px 0 rgb(158, 154, 154, .5);
+  width: 200px;
+  font-size: 85%;
+  font-weight: 500;
+}
