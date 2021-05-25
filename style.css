@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+/* 
+  Colors ==>
+  form label color: rgba(0,0,0,.05)
+  form input color: rgba(0,0,0,.05)
+  form button background color: #fb3e44
+  form button letters color: white 
+*/
+
+/*
+  Default settings
+*/
+html {
+  font-size: 16px;/* 16px = 100%  */
+
+}
+
+body {
+  font-family: 'Poppins';
+  display: flex;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-flex {
+  flex-basis: 100%;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 4.6rem; 
+  font-weight: 700;
+}
+
+.pd {
+  padding: 0 2rem;
+}
+
+header > div {
+  padding: 10px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+}
+
+nav {
+  width: 65%;
+  max-width: 600px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav li {
+  padding: 0 .2rem;
+}
+
+nav a {
+  color: black;
+  font-size: .875rem;
+}
+
+.blackHeart {
+  width: 20px;
+  margin-right: 1rem;
+}
+
+/* Search and Sign up  */
+.search-signup img {
+  width: 60px;
+}
+
+.search-signup form {
+  width: 60%;
+}
+
+.search-signup form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  flex-grow: 3;
+}
+
+.search-signup input {
+  border: 0;
+  outline: 0; 
+  padding: 10px;
+  color: rgba(0,0,0,.05);
+}
+
+.search-signup button {
+  border: 0;
+  outline: 0; 
+  padding: 10px 40px;
+  color: white;
+  background-color: #fb3e44;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 85%;
+  background-color: #f2f2f2;
+}
+
+.search-container > div {
+  flex-basis: 5%;
+}
+
+.search-container input {
+  flex-basis: 95%;
+  background: none;
+  font-family: "Fira Mono", "Andale Mono", "Consolas", monospace;
+}
+
+.search-container img {
+  width: 25px;
+  padding-left: 10px;
+}
+.signup {
+  display: flex;
+}
+
+.signup a {
+  color: black;
+}
+
+.signup > div {
+  padding: 2px 10px;
+}
+
+.signup div:first-child {
+  border: 1px solid black;
+}
+
+/* Section 1 - Services */
+#services {
+  background-color:  rgba(232,217,217,.3);
+
+}
+
+#services > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 60rem;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  height: 600px;
+}
+
+#services h1 {
+  text-align: center;
+}
+
+#services .plan-join {
+  display: flex;
+  margin-top: 50px;
+}
+
+#services article {
+  margin-top: 50px;
+  width: 490px;
+  text-align: center;
+}
+
+#services p {
+  font-size: 1.1rem;
+}
+
+#services .plan,
+.join {
+  padding: 16px 70px;
+  margin: 10px 20px;
+}
+
+.plan {
+  background-color: #FB3B49;
+  box-shadow: 8px 8px 0 rgb(251 59 73 / 20%);
+}
+
+.join {
+  background-color: white;
+}
+
+.plan a {
+  color: #fff;
+}
+
+.join a {
+  color: black;
+}
+
+/* Section 2 - About */
+#about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 60rem;
+}
+
+#about img {
+  width: 240px;
+}
+
+#about h2 {
+  margin-top: 65px;
+  background-color: rgba(255,204,53,.4);
+  transform: skew(9deg,0deg);
+  font-style: italic;
+  font-size: 2.1rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+#about article {
+  margin-top: 30px;
+  width: 690px;
+  text-align: center;
+}
+
+#about p {
+  font-size: .9rem;
+  font-weight: 300;
+}
+
+/* Section 3 - Features */
+#features {
+  display: flex;
+  flex-direction: column;
+  justify-content:space-evenly;
+  align-items: center;
+  height: 480px;
+  max-width: 65rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#features .features-items {
+  display: flex;
+}
+
+.features-items > div {
+  padding: 0 .75rem;
+  flex-basis: 25%;
+}
+
+#features img {
+  width: 35px;
+}
+
+#features h3 {
+  color: #ed1c24;
+  margin: 10px 0 25px 0;
+  font-size: 1rem;
+}
+
+#features p {
+  font-size: .875rem;
+}
+
+#features .features-button {
+  padding: 16px 70px;
+  margin: 10px 20px;
+  background-color: black;
+  box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+  text-align: center;
+  width: 40%;
+}
+
+.features-button a {
+  color: white;
+}
