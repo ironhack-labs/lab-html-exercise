@@ -1,4 +1,161 @@
-img{
-    height: 10px;
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+
+:root {
+    --form-label-color: rgba(0,0,0,.05);
+    --form-input-color: rgba(0,0,0,.05);
+    --form-button-background-color: #fb3e44;
+    --form-button-letters-color: white;
+}
+
+body {
+  font-family: 'Poppins';
+}
+
+#formInfo{
+
+}
+
+form>label, form>input{
+    border:none;
+    margin: 0;;
+    background-color: rgba(0,0,0,.05);
+    display: inline-block;
+    height: 42px;
+}
+
+button{
+    /* font-family: 'Poppins' */
+    font-size: 1em;
+    letter-spacing: 0.5px;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 25px;
+    border: none;
+}
+
+header > div {
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+  }
+  
+  nav {
+    width: 600px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .blackHeart {
+    width: 20px;
+    margin-right: 1rem;
+  }
+
+#formButton{
+    color: var(--form-button-letters-color);
+    background-color: var(--form-button-background-color);
+    /* outline: none; */
     
 }
+
+/* Section 1 */
+#acces-info{    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 600px;
+    background-color:  rgba(232,217,217,.3);
+
+}
+
+#plansButton{
+    background-color: #FB3B49;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+    color: white;
+}
+
+
+/* Section 2 */
+#general-info{    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 400px;
+}
+
+#general-info>img{
+    height: 150px;
+    margin-bottom: 0 auto 30px;
+}
+
+#general-info > h2{
+    background-color: rgba(255,204,53,.4);
+
+    font-style: italic;
+}
+
+#plansButton{
+    background-color: #FB3B49;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+    color: white;
+}
+
+
+
+ /* _transform: skew(9deg,0deg);_ */
+
+ #services{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    /* background-color:  rgba(232,217,217,.3); */
+ }
+
+ #services>div{
+    display: flex;
+    width: 80%;
+    margin: 20px auto;
+    justify-content: space-around;
+    align-items: center;
+ }
+
+ #services>div>div{
+ /* .service{ */
+     width: calc(100%/5);
+ }
+
+#createOrgButton{
+    background-color: #000;
+    box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.2);
+    color: white;
+    width: 30%;
+
+}
+
+img.blackHeart{
+    height: 10px;    
+
+}
+
+img{
+    height: 20px;    
+}
+

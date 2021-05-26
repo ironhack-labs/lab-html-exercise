@@ -27,15 +27,23 @@
           </nav>
         </div>
       
-        <div>
+        <div>   
             <img src="images\npm-logo.png" alt="npm-logo">
+
             <div>
-                <img src="images\magnifying-glass.png" alt="search-magnifying-glass">
-                <input type="text" name="q" id="searchInfo">
-                <label for="searchInfo">Search</label>
+                <form action="" id="formInfo">
+                    <label for="searchInfo">
+                        <img src="images\magnifying-glass.png" alt="search-magnifying-glass">
+                    </label>                 
+                    <input type="text" name="q" id="searchInfo">
+                    <button id="formButton">Search</button>
+                </form>
+
+                   
+            </div>
+            <div>
                 <button>Join</button>
                 <button>Log In</button>
-    
             </div>
         </div>
     </header>
@@ -46,12 +54,13 @@
             applications using modern open source code.
         </article>
         <div>
-            <button>See plans</button>
+            <button id="plansButton">See plans</button>
             <button>Join for free</button>
         </div>
     </section>
 
     <section id="general-info">
+        <img src="images\triangle-hexagon.svg" alt="">
         <h2>Bring the best of open source to your company</h2>
         <article>
             npm is the tool used by over 11,000,000 JavaScript developers around the world. 
@@ -64,51 +73,48 @@
     <section id="services">
 
         <div>
-            <div>
+            <div class="service">
                 <img src="images\zero-configuration.svg" alt="zero-configuration">
-                <div>
+                <H4>
                     Zero configuration
-                </div>
+                </h4>
                 <article>
                     Create an org, add your team, and start collaborating. Nothing to configure, set up, or manage. 
                 </article>
             </div>
-            <div>
+            <div class="service">
                 <img src="images\team-management.svg" alt="team-management">
-                <div>
+                <h4>
                     Team management 
-                </div>
+                </h4>
                 <article>
                     Control who has access to what modules within your team namespace using straightforward team management capabilities. 
                 </article>
             </div>
-            <div>
+            <div class="service">
                 <img src="images\familiar-features.svg" alt="familiar-features">
-                <div>
+                <h4>
                     Familiar features 
-                </div>
+                </h4>
                 <article>
                     npm Orgs has 100% parity with all the public npm registry features your developers already use.
                 </article>
             </div>
-            <div>
+            <div class="service">
                 <img src="images\npm-audit.svg" alt="npm-audit">
-                <div>
+                <h4>
                     npm audit 
-                </div>
+                </h4>
                 <article>
                     Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer.
                 </article>
             </div>
         </div>
-        <button>Create an Org</button>
+        <button id="createOrgButton">Create an Org</button>
 
     </section>    
 </body>
 </html>
 
-
- 
-<!--       -->
 
 
