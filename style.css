@@ -3,57 +3,56 @@
 html,
 body {
   margin: 0;
-  padding: 0;
+  padding: 5px 10px;
   font-family: Poppins;
-  font-size: 10px;
+  font-size: 16px;
   font-weight: 300;
-  line-height: 3.5em;
 }
 
 h1 {
-  font-size: 9em;
+  font-size: 4em;
   text-align: center;
 }
 
 h2 {
   color: white;
   text-shadow: #020819 8px -20px 9px;
-  font-size: 5em;
+  font-size: 3.125em;
   text-align: center;
   text-transform: uppercase;
-  line-height: 4em;
 }
 
 h3 {
-  font-size: 4.2em;
   text-align: center;
-  line-height: 1em;
 }
 
 h4 {
-  font-size: 1.5em;
+  font-size: 0.9375em;
   letter-spacing: 0.4px;
   line-height: 1em;
   margin-bottom: 15px;
 }
 
 h5 {
-  font-size: 1.2em;
+  font-size: 0.75em;
   line-height: 1em;
-  margin-top: 0;
-  margin-bottom: 0;
 }
 
-header > div {
-  padding: 0 25px;
+.menu {
+  font-size: 0.625em;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid lightgray;
 }
 
+.blackHeart {
+  width: 20px;
+  margin-right: 1rem;
+}
+
 nav {
-  width: 600px;
+  width: 500px;
 }
 
 nav ul {
@@ -68,58 +67,60 @@ nav a {
   color: black;
 }
 
-.blackHeart {
-  width: 20px;
-  margin-right: 1rem;
-}
-
-hr {
-  width: 100%;
-  border-top: 2px solid #f6f4f2;
-}
-
 #search {
+  width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+}
+
+.form {
+  width: 90%;
+  display: flex;
+  justify-content: left;
 }
 
 .npm-logo {
   width: 50px;
-  margin: 0 10px 0 0;
+  padding: 17px 15px 17px 0;
 }
 
 .magnifying-glass {
   width: 20px;
   background-color: #f3f2f3;
-  padding: 10px 10px;
-  margin: 2px 0 0 0;
+  padding: 11px 10px 11px 10px;
+  margin: 5px 0;
 }
 
 .input-text {
-  width: 900px;
-  border: 3px solid #f3f2f3;
+  width: 100%;
+  border: 0px solid #f3f2f3;
   color: rba(0,0,0,.05);
   background-color: #f3f2f3;
-  padding: 10px 10px;
-  margin: 3px 0 3px 0;
+  margin: 5px 0;
 }
 
 .search-btn {
-  font-size: 1.2em;
+  font-size: 0.8em;
   background-color: #fb3e44;
   color: white;
-  border: 0px solid #fbced4;
+  border: 0px solid #fb3e44;
   padding: 10px 10px;
-  margin: 0 30px 0 0;
+  margin: 5px 20px 5px 0px;
+}
+
+#join-login {
+  font-size: 0.7em;
+  display: flex;
+  align-items: center;
 }
 
 .join-link {
-  border: 2px solid #f3f2f3;
-  padding: 1px 10px;
+  border: 3px solid #f3f2f3;
+  padding: 3px 10px;
   text-decoration: none;
   color: gray;
   font-weight: bold;
-  margin: 0 10px 0 0;
+  margin: 0 15px 0 0;
 }
 
 .login {
@@ -131,40 +132,29 @@ hr {
 
 #build-amazing-things {
   background-color: rgba(232,217,217,.3);
-  height: 430px;
-  padding-top: 20px;
-  position: relative;  
+  height: 450px;
+  padding: 10px;
 }
 
 #build-amazing-things h3 {
-  width: 500px;
-  margin: 0 auto;
-  padding-bottom: 50px;  
-  text-align: center;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  font-size: 2.3em;
+  width: 410px;
+  font-size: 0.8em;
+  letter-spacing: 1.2px;
+  line-height: 1.3em; 
+  padding-bottom: 50px;
+  margin: auto;
 }
 
-.buttons {
+.buttons ul {
   font-size: 2.5em;
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.buttons-ul {
-  width: 1200px;
   margin: 0;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   list-style: none;
 }
 
 .see-plans {
-  font-size: 0.8em;
+  font-size: 0.5em;
   font-weight: bold;
   background-color: #FB3B49;
   color: white;
@@ -172,10 +162,11 @@ hr {
   box-sizing: border-box;
   box-shadow: 8px 8px 0 rgba(251,59,73,.2);
   padding: 10px 40px;
+  margin: 0 40px 0 0;
 }
 
 .join-for-free {
-  font-size: 0.8em;
+  font-size: 0.5em;
   font-weight: bold;
   background-color: #fffefe;
   padding: 10px 40px;
@@ -187,12 +178,13 @@ hr {
 }
 
 #bring-the-best h3 {
+  width: 550px;
   background-color: rgba(255,204,53,.4);
-  font-size: 2.1em;
+  font-size: 1.3125em;
   font-style: italic;
   transform: skew(9deg,0deg);
-  padding: 0 20px;
-  margin: 20px 0;
+  padding: 3px 30px;
+  margin: 20px;
 }
 
 #bring-the-best .container {
@@ -205,44 +197,42 @@ hr {
 
 #bring-the-best .container img {
   width: 150px;
+  padding: 0 0 20px 0;
 }
 
 .text {
-  width: 450px;
-  font-size: 1.5em;
+  width: 550px;
+  font-size: 0.8em;
   line-height: 150%;
   text-align: center;
   margin: 10px 0;
 }
 
 #structure {
+  width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   flex-wrap: wrap;
 }
 
 #structure .container {
-  width: 1000px;
-  margin: 0 auto; 
-}
-
-#structure > div {
+  width: 100%;
+  margin: 0 10px;
   display: flex;
-  justify-content: space-between;
   flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .features {
-  font-size: 1.2em;
+  font-size: 0.75em;
   text-align: left;
-  margin: 50px 5% 0 5%;
-  padding: 10px;
-  width: 40%;
+  margin: 50px 5px 0 5px;
+  padding: 10px 30px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-items: left;
-  line-height: 170%;  
 }
 
 .features img {
@@ -252,18 +242,22 @@ hr {
 
 .features h4 {
   color: #ED1C24;
-  font-size: 1em;
+  font-size: 1.1em;
+}
+
+.features p {
+  width: 180px;
+  height: 130px;
 }
 
 .footer {
-  padding: 40px 100px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .footer a {
-  font-size: 1.4em;
+  font-size: 0.875em;
   font-weight: bold;
   text-align: center;
   text-decoration: none;
@@ -271,5 +265,6 @@ hr {
   color: white;
   border: 0px solid #e3ddd6;
   box-shadow: 8px 8px 0 rgba(128,83,35,.2);
-  padding: 10px 80px;
+  padding: 10px 120px;
+  margin-bottom: 40px;
 }

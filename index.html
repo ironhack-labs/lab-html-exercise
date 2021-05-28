@@ -2,14 +2,14 @@
 <html>
 
 <head>
-  <title>My page</title>
+  <title>NPM clone</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   
   <header>
-    <div>
+    <div class="menu">
       <div>
         <img class="blackHeart" src="images/black-heart.png" alt="black heart" />
         <span>Nifty Penguin Magic</span>
@@ -27,14 +27,17 @@
     </div>
   
     <div id="search">
-      <img src="images/npm-logo.png" alt="npm logo" class="npm-logo">
-      <img src="images/magnifying-glass.png" alt="Search" class="magnifying-glass">
-      <form>
-        <input type="text" placeholder="Search packages" class="input-text">
-        <input type="button" value="Search" class="search-btn">
+      <form class="form">
+        <img class="npm-logo" src="images/npm-logo.png" alt="npm logo" />
+        <img class="magnifying-glass" src="images/magnifying-glass.png" alt="Search" />
+        <input class="input-text" type="text" placeholder="Search packages">
+        <input class="search-btn" type="button" value="Search">
       </form>
-      <a href="#" class="join-link">Join</a>
-      <a href="#" class="login">Log in</a>
+      
+      <div id="join-login">
+        <a class="join-link" href="#">Join</a>
+        <a class="login" href="#">Log in</a>
+      </div>
     </div>
   </header>
 
@@ -44,7 +47,7 @@
         modern open source code.</h3>
   
     <div class="buttons">
-      <ul class="buttons-ul">
+      <ul>
         <li class="see-plans">See plans</li>
         <li class="join-for-free">Join for free</li>
       </ul>
@@ -62,8 +65,8 @@
     </div>
   </section>
 
-  <section id="structure" class="container">
-    <div>
+  <section id="structure">
+    <div class="container">
       <article class="features">
         <img src="images/zero-configuration.svg" alt="Zero configuration">
         <h4>Zero configuration</h4>
