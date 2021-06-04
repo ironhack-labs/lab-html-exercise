@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+/*Used colors throughout the document*/
+:root {
+    --clr_btn-search: white;
+    --height_searchBar: 2.5rem;
+    --height_actionButtons: 2rem;
+
+}
+
+body {
+  font-family: 'Poppins';
+  background-color: var(--clr_btn-search);
+  max-width: 1900px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+header > div{
+  padding: 0 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+}
+
+nav{
+  width: 600px;
+}
+
+nav ul{
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color:black;
+  font-weight: bold;
+}
+
+.img-blackHeart{
+  width: 20px;
+  margin: right 1rem;
+}
+
+
+
+.header-actions{
+padding-top: 0.5rem;
+padding-bottom: 0.5rem;
+justify-content: flex-end;
+
+}
+
+
+.img-logoNPM{
+  padding: 3px 0px;
+  width: 80px;
+  margin-right: 1rem;
+  }
+
+.form-searchBar{
+  flex: 1 1 auto;
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 20px;
+  height: var(--height_searchBar);
+  
+}
+
+#img-searchBar{
+  width:20px;
+  margin-right: auto;
+  margin-left: 10px;
+}
+
+.form-searchBar input{
+  border:none;
+  background-color: #f2f2f2;
+  color: black;
+  max-width: 1500px;
+  height: auto;
+  flex: 1 1 auto;
+  }
+
+.form-searchBar button{
+  background-color: #fb3e44;
+  color:white;
+  border:none;
+  width: 80px;
+  height: var(--height_searchBar);
+  }
+
+.header-actions a{
+  text-decoration: none;
+  color:black;
+  text-align: center;
+  height: var(--height_actionButtons);
+  line-height: var(--height_actionButtons);
+  font-weight: bold;
+}
+
+#link-join{
+  border:1px solid black;
+  width:60px;
+  margin-left: auto;
+  
+}
+
+#link-logIn{
+  border:none;
+  width: 60px;
+  margin-left: 10px;
+}
+
+
+
+
