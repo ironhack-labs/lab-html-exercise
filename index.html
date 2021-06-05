@@ -11,9 +11,9 @@
 
         <header>
 
-            <div class="header-navigation">
+            <div class="navBar">
                 
-                <div class="header-funnyTitle">
+                <div class="navBAr__funnyTitle">
                     <img class="img-blackHeart" src="./images/black-heart.png" alt="black heart"/>
                     <span>Nifty Penguin Magic</span>
                 </div>
@@ -32,19 +32,19 @@
             </div>
 
 
-            <div class="header-actions">
+            <div class="navBar__actions">
 
                 <img class="img-logoNPM" src="./images/npm-logo.png" alt="NPM Logo"/>
 
-                <form action="" method="GET" class="form-searchBar">
-                    <img id="img-searchBar" src="./images/magnifying-glass.png" alt="Magnifying glass"/>
-                    <input type="text" name="searchBar" placeholder="Search packages">
+                <form action="" method="GET" class="searchBar">
+                    <img id="searchBar__image" src="./images/magnifying-glass.png" alt="Magnifying glass"/>
+                    <input type="text" name="searchBarI" placeholder="Search packages">
                     <button id="btn-search">Search</button>            
                 </form>
 
 
-                <a id="link-join" href="#">Join</a>
-                <a id="link-logIn"href="#">Log In</a>
+                <a id="navBar__joinButton" href="#">Join</a>
+                <a id="navBar__logButton"href="#">Log In</a>
 
             </div>
    
@@ -52,17 +52,18 @@
 
 
 
-        <section id="section-headLine">
+        <section id="headLine">
             <h1>Build amazing things</h1> 
             
             <article>
-                Essential JavaScript development tools that help you go to market faster and build powerful applications using
-                modern open source code.
+                Essential JavaScript development tools that help you<br>
+                go to market faster and build powerful applications <br>
+                using modern open source code.
             </article>
             
             <div class="headLineLinks">
-                <a href="#">See plans</a>
-                <a href="#">Join for free</a>
+                <a href="#" id="headLineLinks__seePlans">See plans</a>
+                <a href="#" id="headLineLinks__joinForFree">Join for free</a>
             </div>
 
 
@@ -70,40 +71,42 @@
         
 
 
-        <section id="section-shortDescription">
-            <img id="img-hexagon" src="./images/triangle-hexagon.svg" alt="Hexagon Triangle Logo"/>
+        <section class="shortDescription">
+            <img id="shortDescription__imageHexagon" src="./images/triangle-hexagon.svg" alt="Hexagon Triangle Logo"/>
             <h2>Bring the best of open source to your company</h2>
             <article>
-                npm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it. Create an Org and get more out of the tools your team already knows and loves.
+                npm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers<br>
+                already use it. Your company depends on it. Create an Org and get more out of the tools your<br>
+                team already knows and loves.
             </article>  
         </section>
 
 
 
-        <section id="section-features">
+        <section id="features">
             <div id="zeroConfig">
-                <img id="img-zeroConfig" src="./images/zero-configuration.svg" alt="Zero configuration"/>
+                <img id="zeroConfig__imgZeroConfig" src="./images/zero-configuration.svg" alt="Zero configuration"/>
                 <h3>Zero configuration</h3>
                 <p>Create an org, add your team, and start collaborating. Nothing to configure, set up, or manage.</p>
 
             </div>
 
             <div id="teamManagement">
-                <img id="img-teamManagement" src="./images/team-management.svg" alt="Team Management"/>
+                <img id="teamManagement__img" src="./images/team-management.svg" alt="Team Management"/>
                 <h3>Team management</h3>
                 <p>Control who has access to what modules within your team namespace using straightforward team management capabilities.</p>
 
             </div>
 
             <div id="familiarFeat">
-                <img id="img-familiarFeat" src="./images/familiar-features.svg" alt="Familiar Features"/>
+                <img id="familiarFeat_img" src="./images/familiar-features.svg" alt="Familiar Features"/>
                 <h3>Familiar features</h3>
                 <p>npm Orgs has 100% parity with all the public npm registry features your developers already use.</p>
 
             </div>
 
             <div id="npmAudit">
-                <img id="img-npmAudit" src="./images/npm-audit.svg" alt="NPM Audit"/>
+                <img id="npmAudit__img" src="./images/npm-audit.svg" alt="NPM Audit"/>
                 <h3>npm audit</h3>
                 <p>Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer.</p>
 

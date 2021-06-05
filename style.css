@@ -2,7 +2,7 @@
 
 /*Used colors throughout the document*/
 :root {
-    --clr_btn-search: white;
+
     --height_searchBar: 2.5rem;
     --height_actionButtons: 2rem;
 
@@ -10,12 +10,12 @@
 
 body {
   font-family: 'Poppins';
-  background-color: var(--clr_btn-search);
-  max-width: 1900px;
+  max-width: 1600px;
   margin-right: auto;
   margin-left: auto;
 }
 
+/*General styling of div elements inside the header (only the children of the header*/
 header > div{
   padding: 0 25px;
   display: flex;
@@ -24,6 +24,8 @@ header > div{
   border-bottom: 1px solid lightgray;
 }
 
+
+/*Styling of the navigation bar at the top of the page*/
 nav{
   width: 600px;
 }
@@ -46,13 +48,13 @@ nav a {
   margin: right 1rem;
 }
 
+/*Styling of the searchbar + the action buttons jsut under the navigation bar*/
 
-
-.header-actions{
+.navBar__actions{
 padding-top: 0.5rem;
 padding-bottom: 0.5rem;
+/*Fix point is the Log in button*/
 justify-content: flex-end;
-
 }
 
 
@@ -62,63 +64,147 @@ justify-content: flex-end;
   margin-right: 1rem;
   }
 
-.form-searchBar{
+.searchBar{
+  /*In the flexblock the searchbar element is going to shrink and grow inorder to fill out the available space
+  The npm logo and the "join"/"log in" buttons have fixed width + log in is pinned to the end
+  with this we assure that during Zoom In/out the search bar is growing or shrinks (no JavaScript necessarry)*/
   flex: 1 1 auto;
+
   background-color: #f2f2f2;
+  /*Inside this item the magnifying glass logo the input and the button are a series of elements, hence flex*/
   display: flex;
   flex-direction: row;
   align-items: center;
+  /*We fix the button at the end of the flexblock*/
   justify-content: flex-end;
   margin-right: 20px;
   height: var(--height_searchBar);
   
 }
 
-#img-searchBar{
+#searchBar__image{
   width:20px;
+  /*This auto margin fixes the magnifying glass logo to the left side of the flexbox*/
   margin-right: auto;
   margin-left: 10px;
 }
 
-.form-searchBar input{
+.searchBar input{
   border:none;
   background-color: #f2f2f2;
   color: black;
   max-width: 1500px;
   height: auto;
+  /*Same goal as in case of the searchBar div, the goal is that the input text shrinks or grows during zoom in/out*/
   flex: 1 1 auto;
   }
 
-.form-searchBar button{
+.searchBar button{
   background-color: #fb3e44;
-  color:white;
+  color:#f2f2f2;
   border:none;
   width: 80px;
   height: var(--height_searchBar);
   }
 
-.header-actions a{
+  /*Styling of the action buttons*/
+.navBar__actions a{
   text-decoration: none;
   color:black;
   text-align: center;
   height: var(--height_actionButtons);
+  /*if you only increase the height, the text will be not in the center vertically
+  We need to set the line height at the same value*/
   line-height: var(--height_actionButtons);
   font-weight: bold;
+  width: 70px;
 }
 
-#link-join{
+#navBar__joinButton{
   border:1px solid black;
-  width:60px;
   margin-left: auto;
-  
 }
 
-#link-logIn{
+#navBar__logButton{
   border:none;
-  width: 60px;
   margin-left: 10px;
 }
 
+/*Styling of the hdealine section*/
+#headLine{
+  height: 600px;
+  background-color: rgba(232, 217, 217, .3) ;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center;
+}
 
+h1{
+  font-size: 6.0rem;
+  font-weight: 1000;
+  margin-top: -40px;
+}
 
+.headLineLinks{
+  display: flex;
+ 
+}
+#headLine a{
+  width: 250px;
+  height: 3.7rem;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+  line-height: 3.7rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+#headLine article{
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 80px;
+}
+
+#headLineLinks__seePlans{
+background-color: #fb3b49;
+color:white;
+margin-right: 50px;
+box-shadow: 8px 8px 0 rgba(251, 59, 73, .2);
+}
+
+#headLineLinks__joinForFree{
+background-color: white;
+color:black;
+}
+
+/*Styling of the shortDescription section*/
+
+.shortDescription{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 600px;
+  margin: 100px 0;
+}
+
+#shortDescription__imageHexagon{
+  width: 300px;
+  }
+
+.shortDescription h2{
+  font-size: 2.5rem;
+  background-color: rgba(255, 204, 53, .4);
+  transform: skew(9deg,0deg);
+  font-style: italic;
+  font-weight: bold;
+}
+
+.shortDescription article{
+  text-align: center;
+  font-size: 1.2rem;
+}
 
