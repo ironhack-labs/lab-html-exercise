@@ -10,7 +10,7 @@
 
 body {
   font-family: 'Poppins';
-  max-width: 1600px;
+  max-width: 1500px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -157,7 +157,6 @@ h1{
   font-weight: bold;
   font-size: 1.2rem;
   line-height: 3.7rem;
-  font-weight: bold;
   text-align: center;
 }
 
@@ -208,3 +207,55 @@ color:black;
   font-size: 1.2rem;
 }
 
+/*Styling of the Features section*/
+
+.features{
+  display: flex;
+  flex-direction: column;
+  }
+
+.features>div{
+  display: flex;
+  padding: 0 25px;
+}
+
+.features__listFeatures{
+  justify-content: space-evenly;
+}    
+
+
+.features__listFeatures > div{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  width: 250px;
+}
+
+.features img{
+  width: 50px;
+  
+}
+
+.features h3{
+  color: #ed1c24;
+  font-weight: 900;
+  
+}
+.features__creation{
+  justify-content: center;
+}
+#features__button{
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  box-shadow: 8px 8px 0 rgba(128,83,35,0.2);
+  width: 450px;
+  height: 3.5rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+  line-height: 3.5rem;
+  text-align: center;
+
+  margin: 75px 0;
+}
