@@ -277,8 +277,9 @@ z-index: 1;
   font-size: 1.2rem;
   line-height: 3.5rem;
   text-align: center;
-
+  border: 1px solid black;
   margin: 75px 0;
+  transition: color 250ms ease-in-out, background-color 250ms ease-in-out, border-color 250ms ease-in-out,border-width 250ms ease-in-out ;
 }
 
 /*Animation to make the site look more alive*/
@@ -353,12 +354,12 @@ I am lostt why*/
 }
 /*Animations of the headline section*/  
 
-/*"See plans animation is not too practical, but showcases the potentiol of the pseudoelements*/
+/*"See plans animation is not too practical, but showcases the potential of the pseudoelements*/
 
 #headLineLinks__seePlans::before{
   position: absolute;
   z-index: -1;
-  content:'';
+  content:'See plans';
   width:inherit;
   height: inherit;
   background-color:rgba(251, 59, 73, .2) ;
@@ -366,15 +367,24 @@ I am lostt why*/
   right: 0;
   bottom: 0;
   left:0;
-  transform: translate(8px,8px);
-  transition: transform 200ms ease-in-out;
+  transform:  translate(8px,8px);
+  transition: transform 300ms ease-in-out;
     
   }
 
 #headLineLinks__seePlans:hover::before,#headLineLinks__seePlans:focus::before{
 
   background-color:rgba(0, 0, 0, 1) ;
-  transform: translate(-48px,3.2rem) perspective(800px) rotateX(40deg) skew(-60deg);
+  /*transform: translate(-48px,3.2rem) perspective(800px) rotateX(40deg) skew(-60deg)*/;
+  transform: translate(-50px,3.7rem) perspective(800px) rotateX(180deg) skew(60deg);
   }
- 
 
+  /*Animations for the create org element*/
+ 
+ #features__button:hover{
+   color: black;
+   background-color: white;
+   border-color: black;
+   border-width: 1px;
+
+ }
