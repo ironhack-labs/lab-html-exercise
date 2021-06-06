@@ -185,12 +185,17 @@ h1{
 background-color: #fb3b49;
 color:white;
 margin-right: 50px;
-box-shadow: 8px 8px 0 rgba(251, 59, 73, .2);
+/*I recreated the shadow with a before element so I can trnasorm it accoridng to my liking*/
+/*box-shadow: 8px 8px 0 rgba(251, 59, 73, .2);*/
+transition: box-shadow 200ms ease-in-out;
+position: relative;
 }
 
 #headLineLinks__joinForFree{
 background-color: white;
 color:black;
+position: relative;
+z-index: 1;
 }
 
 /*Styling of the shortDescription section*/
@@ -306,13 +311,16 @@ nav a:hover::before,nav a:focus::before{
 }
 
 
-/*Styling the search bar buttons + links*/
+/*Styling the search bar button*/
 
 #btn-search:hover{
 border: 3px solid black;
 }
 
-.navBar__actions a::before{
+/*Styling of links: "Join" "LogIn" "Join for free" together */
+/*I tried to add the Join for free to the same class but the CSS could not handle it.
+I am lostt why*/
+.transition-whiteToBlack::before,#headLineLinks__joinForFree::before{
   content:'';
   position: absolute;
   /*All 0 to cover the whole element*/
@@ -327,20 +335,46 @@ border: 3px solid black;
   z-index: -1;
 }
 
-.navBar__actions a{
+.transition-whiteToBlack,#headLineLinks__joinForFree{
   transition: color 200ms ease-in-out;
 }
-.navBar__actions a:focus{
+.transition-whiteToBlack:focus,#headLineLinks__joinForFree:focus{
   outline:none;
 }
 
-.navBar__actions a:hover::before,.navBar__actions a:focus::before{
+.transition-whiteToBlack:hover::before,.transition-whiteToBlack:focus::before,
+#headLineLinks__joinForFree:hover::before,#headLineLinks__joinForFree:focus::before{
   transform: scaleX(1);
 }
 
-.navBar__actions a:hover,.navBar__actions a:focus{
+.transition-whiteToBlack:hover,.transition-whiteToBlack:focus,
+#headLineLinks__joinForFree:hover,#headLineLinks__joinForFree:focus{
   color: white;
 }
-       
+/*Animations of the headline section*/  
 
+/*"See plans animation is not too practical, but showcases the potentiol of the pseudoelements*/
+
+#headLineLinks__seePlans::before{
+  position: absolute;
+  z-index: -1;
+  content:'';
+  width:inherit;
+  height: inherit;
+  background-color:rgba(251, 59, 73, .2) ;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left:0;
+  transform: translate(8px,8px);
+  transition: transform 200ms ease-in-out;
+    
+  }
+
+#headLineLinks__seePlans:hover::before,#headLineLinks__seePlans:focus::before{
+
+  background-color:rgba(0, 0, 0, 1) ;
+  transform: translate(-48px,3.2rem) perspective(800px) rotateX(40deg) skew(-60deg);
+  }
+ 
 
