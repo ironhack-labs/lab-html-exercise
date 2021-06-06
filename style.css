@@ -108,6 +108,8 @@ justify-content: flex-end;
   border:none;
   width: 80px;
   height: var(--height_searchBar);
+  font-size: 1rem;
+  border-radius: 3px;
   }
 
   /*Styling of the action buttons*/
@@ -121,16 +123,24 @@ justify-content: flex-end;
   line-height: var(--height_actionButtons);
   font-weight: bold;
   width: 70px;
+  
 }
 
 #navBar__joinButton{
   border:1px solid black;
+  border-radius: 3px;
   margin-left: auto;
+  /*We need position:relative so that these tags are "positioned" and their ::before elements can be positioned absolutely compared to them */
+  position:relative;
+  
 }
 
 #navBar__logButton{
   border:none;
   margin-left: 10px;
+  /*We need position:relative so that these tags are "positioned" and their ::before elements can be positioned absolutely compared to them */
+  position:relative;
+  
 }
 
 /*Styling of the hdealine section*/
@@ -295,5 +305,42 @@ nav a:hover::before,nav a:focus::before{
   transform: scaleX(1);
 }
 
+
+/*Styling the search bar buttons + links*/
+
+#btn-search:hover{
+border: 3px solid black;
+}
+
+.navBar__actions a::before{
+  content:'';
+  position: absolute;
+  /*All 0 to cover the whole element*/
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left:0;
+  background-color: black;
+  transform: scaleX(0);
+  transition: transform 200ms ease-in-out;
+  transform-origin:center;
+  z-index: -1;
+}
+
+.navBar__actions a{
+  transition: color 200ms ease-in-out;
+}
+.navBar__actions a:focus{
+  outline:none;
+}
+
+.navBar__actions a:hover::before,.navBar__actions a:focus::before{
+  transform: scaleX(1);
+}
+
+.navBar__actions a:hover,.navBar__actions a:focus{
+  color: white;
+}
+       
 
 
