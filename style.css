@@ -67,7 +67,7 @@ justify-content: flex-end;
   }
 
 .searchBar{
-  /*In the flexblock the searchbar element is going to shrink and grow inorder to fill out the available space
+  /*In the flexblock the searchbar element is going to shrink and grow in order to fill out the available space
   The npm logo and the "join"/"log in" buttons have fixed width + log in is pinned to the end
   with this we assure that during Zoom In/out the search bar is growing or shrinks (no JavaScript necessarry)*/
   flex: 1 1 auto;
@@ -143,6 +143,12 @@ justify-content: flex-end;
   
 }
 
+
+
+
+
+
+
 /*Styling of the hdealine section*/
 #headLine{
   height: 600px;
@@ -198,6 +204,10 @@ position: relative;
 z-index: 1;
 }
 
+
+
+
+
 /*Styling of the shortDescription section*/
 
 .shortDescription{
@@ -226,6 +236,10 @@ z-index: 1;
   text-align: center;
   font-size: 1.2rem;
 }
+
+
+
+
 
 /*Styling of the Features section*/
 
@@ -282,6 +296,10 @@ z-index: 1;
   transition: color 250ms ease-in-out, background-color 250ms ease-in-out, border-color 250ms ease-in-out,border-width 250ms ease-in-out ;
 }
 
+
+
+
+
 /*Animation to make the site look more alive*/
 
 
@@ -296,7 +314,7 @@ nav a::before {
   bottom: 0;
   left: 0;
   right: 0;
-  /*Height could be stored as a variable if we would like to reuse it in multiple places*/
+/*Height could be stored as a variable if we would like to reuse it in multiple places*/
   height: 2px;
   background-color: black;
   transition:transform 300ms ease-in-out;
@@ -321,7 +339,7 @@ border: 3px solid black;
 /*Styling of links: "Join" "LogIn" "Join for free" together */
 /*I tried to add the Join for free to the same class but the CSS could not handle it.
 I am lostt why*/
-.transition-whiteToBlack::before,#headLineLinks__joinForFree::before{
+.transition-whiteToBlack::before{
   content:'';
   position: absolute;
   /*All 0 to cover the whole element*/
@@ -336,15 +354,14 @@ I am lostt why*/
   z-index: -1;
 }
 
-.transition-whiteToBlack,#headLineLinks__joinForFree{
+.transition-whiteToBlack{
   transition: color 200ms ease-in-out;
 }
-.transition-whiteToBlack:focus,#headLineLinks__joinForFree:focus{
+.transition-whiteToBlack:focus{
   outline:none;
 }
 
-.transition-whiteToBlack:hover::before,.transition-whiteToBlack:focus::before,
-#headLineLinks__joinForFree:hover::before,#headLineLinks__joinForFree:focus::before{
+.transition-whiteToBlack:hover::before,.transition-whiteToBlack:focus::before{
   transform: scaleX(1);
 }
 
@@ -353,8 +370,7 @@ I am lostt why*/
   color: white;
 }
 /*Animations of the headline section*/  
-
-/*"See plans animation is not too practical, but showcases the potential of the pseudoelements*/
+/*"See plans" animation is not too practical, but showcases the potential of the pseudoelements*/
 
 #headLineLinks__seePlans::before{
   position: absolute;
@@ -373,10 +389,8 @@ I am lostt why*/
   }
 
 #headLineLinks__seePlans:hover::before,#headLineLinks__seePlans:focus::before{
-
   background-color:rgba(0, 0, 0, 1) ;
-  /*transform: translate(-48px,3.2rem) perspective(800px) rotateX(40deg) skew(-60deg)*/;
-  transform: translate(-50px,3.7rem) perspective(800px) rotateX(180deg) skew(60deg);
+  transform: translate(-36px,3.2rem) perspective(800px) rotateX(135deg) skew(50deg) scaleX(0.975);
   }
 
   /*Animations for the create org element*/
