@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,600;0,700;1,400&display=swap');
 body {
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
 }
 /* Header */
+/* First bar */
 header > div {
     padding: 0 25px;
     display: flex;
@@ -28,6 +30,7 @@ nav a {
     width: 36px;
     margin-right: 1rem;
 }
+/* Second bar */
 .npmLogo {
     width: 70px;
 }
@@ -44,8 +47,7 @@ nav a {
 }
 .button {
     letter-spacing: 0.3px;
-    font-weight: bold;
-    background-color:#fb3e44;
+    background-color:#fb3b49;
     font-size: .875rem;
     padding: 1.1rem 2rem;
     color: white;
@@ -57,7 +59,7 @@ form {
     align-items: center;
 }
 .head {
-    width:calc(63% - 10px);
+    width:calc(100% - 10px);
 }
 .head , .links ,.npmLogo{
     padding: 1rem;
@@ -72,4 +74,121 @@ form {
     padding: 13px 28px;
     color: black;
     text-decoration: none;
+    white-space: nowrap;
+}
+.links{
+    display: flex;
+    flex-direction: row;
+}
+/* section 1 */
+#sec1 {
+    height: 600px;
+    background-color: rgba(232,217,217,.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.b2 {
+    letter-spacing: 0.3px;
+    background-color:#fb3b49;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: .8rem 2.6rem;
+    color: white;
+    text-decoration: none;
+    margin-right: 2rem;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+}
+.b3 {
+    letter-spacing: 0.3px;
+    background-color:white;
+    color: black;
+    font-size: 1rem;
+    padding: .8rem 2.6rem;
+    text-decoration: none;
+    margin-left: 2rem;
+    font-weight: bold;
+} 
+#sec1 > div{
+    height: 20%;
+}
+#sec1 > h1 {
+    font-size: 3.5rem;
+    margin: 0;
+    font-weight: bold;
+}
+#sec1 > article {
+    width: 40%;
+    margin: 2rem;
+}
+#sec1 > article > p {
+    text-align: center;
+}
+/* section 2 */
+#sec2 {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 2rem;
+}
+.triangleHexagon {
+    width: 230px;
+    position: relative;
+    top: -3rem;
+}
+#sec2 > article > p {
+    text-align: center;
+    font-size: .75rem;
+}
+#sec2 > article {
+    width: 600px;
+    position: relative;
+    bottom: 1.3rem;
+}
+#sec2 > h2 {
+    background-color:rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+    font-style: italic;
+    text-align: center;
+    padding: 0 2rem;
+    position: relative;
+    bottom: 1rem;
+}
+/* section 3 */
+.boxy img {
+    width: 40px;
+}
+.boxy h3 {
+    color: #fb3b49;
+    font-size: .9rem;
+}
+.boxy {
+    width: 250px;
+    margin: 0 40px;
+}
+#sec3 > div {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 50px;
+}
+#sec3 {
+    height: 500px;
+}
+.b4 {
+    letter-spacing: 0.3px;
+    background-color:black;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 1.1rem 7rem;
+    color: white;
+    text-decoration: none;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+}
+.org {
+    margin-top: 60px;
 }
