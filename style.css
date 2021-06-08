@@ -1,9 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins");
-
+/* App */
 body {
   font-family: "Poppins";
+  display: grid;
 }
 
+/* Navbar and header */
 header > div {
   padding: 0 25px;
   display: flex;
@@ -28,29 +30,14 @@ nav a {
   color: black;
 }
 
-.blackHeart {
-  width: 20px;
-  margin-right: 1rem;
-}
-
-#npm-logo {
-  height: 20px;
-  width: 70px;
-}
-#magnifying-glass {
-  height: 18px;
-  width: 18;
-}
-#triangle-hexa {
-  width: 200px;
-  height: 200px;
-}
-section {
-  text-align: center;
+#bar-form {
+  display: contents;
 }
 #search-form {
   width: 80%;
-  padding: 5px;
+  padding-top: 15px;
+  display: inherit;
+  align-items: inherit;
 }
 
 #input-form {
@@ -61,20 +48,75 @@ section {
   display: inline;
   width: 100%;
 }
-#btn-form {
-  border-style: none;
-  border-width: 0;
-  background-color: red;
+
+/* Logos */
+.blackHeart {
+  width: 20px;
+  margin-right: 1rem;
 }
+
+#npm-logo {
+  height: 20px;
+  width: 70px;
+}
+
+#magnifying-glass {
+  height: 18px;
+  width: 18px;
+  padding-block: 11px;
+  background-color: #f2f2f2;
+  padding-left: 10px;
+}
+#triangle-hexa {
+  width: 280px;
+  height: 280px;
+}
+#logo-footer {
+  width: 70px;
+  height: 70px;
+}
+
+/* Sections */
 #section-1 {
+  background-color: #fff4d6;
+}
+
+#section-1,
+#section-2 {
   height: 862px;
   margin: auto;
+  text-align: center;
 }
 #section-1 > div {
   margin: auto;
   width: 50%;
-  padding: 100px;
+  padding-top: 100px;
 }
+#section-2 > div {
+  margin: auto;
+  width: 50%;
+  padding-top: 200px;
+}
+#section-3 {
+  margin: auto;
+  width: fit-content;
+}
+#section-3 > div {
+  display: inline-flex;
+}
+
+/* Text */
+#card {
+  width: 300px;
+  padding-inline: 25px;
+}
+article {
+  text-align: center;
+  max-width: 32rem;
+  display: inline-flex;
+}
+
+/* Titles */
 h1 {
   box-sizing: border-box;
   line-height: 1.25;
@@ -82,8 +124,70 @@ h1 {
   font-family: Poppins, sans-serif;
   font-weight: 600;
 }
-article {
+h4 {
+  color: red;
+}
+
+/* Buttons */
+#btn-log {
+  padding: 20;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  margin: 10px;
+  border-style: none;
+}
+#btn-join {
+  padding: 20;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  border-style: outset;
+}
+#btn-red,
+#btn-white {
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 20px;
+  margin: 10px;
+  border-style: none;
+  font-weight: bold;
+}
+
+#btn-red {
+  background-color: red;
+  box-shadow: 6px 7px 3px -2px rgba(255, 114, 105, 0.34);
+  color: white;
+}
+#btn-white {
+  background-color: white;
+}
+#btn-search {
+  border-style: none;
+  border-width: 0;
+  background-color: red;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 10px;
+  color: white;
+  float: inline;
+}
+#btn-footer {
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 20px;
+  margin: 10px;
+  border-style: none;
+  font-weight: bold;
+  background-color: black;
+  color: white;
+  box-shadow: 6px 7px 3px -2px rgba(29, 21, 21, 0.34);
+}
+footer {
+  padding: 30px;
   text-align: center;
-  max-width: 32rem;
-  display: inline-flex;
 }

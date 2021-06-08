@@ -1,73 +1,154 @@
 <html lang="en">
-
-<head>
-    <link rel="stylesheet" href="style.css">
-    <meta charset="utf-8">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="utf-8" />
     <title>npm</title>
-</head>
-<header>
+  </head>
+  <header>
     <div>
-        <div>
-            <img class="blackHeart" src="./images/black-heart.png" alt="black heart" />
-            <span> Nifty Penguin Magic </span>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#"> npm Enterprise </a></li>
-                <li><a href="#"> Products </a></li>
-                <li><a href="#"> Solutions </a></li>
-                <li><a href="#"> Resources </a></li>
-                <li><a href="#"> Docs </a></li>
-                <li><a href="#"> Support </a></li>
-            </ul>
-        </nav>
+      <div>
+        <img
+          class="blackHeart"
+          src="./images/black-heart.png"
+          alt="black heart"
+        />
+        <span> Nifty Penguin Magic </span>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#"> npm Enterprise </a></li>
+          <li><a href="#"> Products </a></li>
+          <li><a href="#"> Solutions </a></li>
+          <li><a href="#"> Resources </a></li>
+          <li><a href="#"> Docs </a></li>
+          <li><a href="#"> Support </a></li>
+        </ul>
+      </nav>
     </div>
-    <div class="flex">
-        <div>
-            <img id="npm-logo" src="./images/npm-logo.png" />
+    <div>
+      <div>
+        <img id="npm-logo" src="./images/npm-logo.png" />
+      </div>
+      <form id="search-form" class="d-flex align-item-left">
+        <div id="bar-form" class="flex-grow-1">
+          <span
+            ><img id="magnifying-glass" src="./images/magnifying-glass.png"
+          /></span>
+          <input id="input-form" type="search" placeholder="Search packages" />
+          <div class="flex-grow-1">
+            <button id="btn-search" type="submit" title="Submit">Search</button>
+          </div>
         </div>
-            <form id="search-form">
-                <div id="bar-form">
-                    <span><img id="magnifying-glass" src="./images/magnifying-glass.png" /></span>
-                    <input id="input-form" type="search" placeholder="Search packages" />
-                </div>
-               <div><button id="btn-form" type="submit" title="Submit">Search</button></div> 
-            </form>
-        <div>
-            <button>Join</button>
-            <button>Log in</button>
-        </div>
+      </form>
+      <div>
+        <button id="btn-join">Join</button>
+        <button id="btn-log">Log in</button>
+      </div>
     </div>
-</header>
-
-<main>
+  </header>
+  <main>
     <section id="section-1">
-        <div>
-        <h1>Build amazing things</h1>
-       <article><p>We're npm, Inc., the company behind Node package manager, the npm Registry, and npm CLI. We offer those
-            to the
-            community for free, but our day job is building and selling useful tools for developers like you.</p></article> 
+      <div>
+        <h1 class="display-4">Build amazing things</h1>
+        <article>
+          <p>
+            We're npm, Inc., the company behind Node package manager, the npm
+            Registry, and npm CLI. We offer those to the community for free, but
+            our day job is building and selling useful tools for developers like
+            you.
+          </p>
+        </article>
 
         <div class="flex flex-wrap">
-            <div>
-                <button>Join</button>
-                <button>Log in</button>
-            </div>
+          <button id="btn-red">See Plans</button>
+          <button id="btn-white">Join for free</button>
         </div>
-    </div>
+      </div>
     </section>
-    <section>
+    <section id="section-2">
+      <div>
         <img id="triangle-hexa" src="./images/triangle-hexagon.svg" />
         <div>
-            <h2>Bring the best of open source to you, your team, and your company</h2>
-            <p>Relied upon by more than 11
-                million developers worldwide, npm is committed to making JavaScript development elegant, productive,
-                and safe. The free npm Registry has become the center of JavaScript code sharing, and with more than
-                one million packages, the largest software registry in the world. Our other tools and services take
-                the Registry, and the work you do around it, to the next level.</p>>
+          <h2>
+            Bring the best of open source to you, your team, and your company
+          </h2>
+          <p>
+            Relied upon by more than 11 million developers worldwide, npm is
+            committed to making JavaScript development elegant, productive, and
+            safe. The free npm Registry has become the center of JavaScript code
+            sharing, and with more than one million packages, the largest
+            software registry in the world. Our other tools and services take
+            the Registry, and the work you do around it, to the next level.
+          </p>
         </div>
+      </div>
     </section>
-    <section></section>
-</main>
-
+    <section id="section-3">
+      <div>
+        <div id="card">
+          <img id="logo-footer" src="./images/zero-configuration.svg" />
+          <div>
+            <h4>Zero configuration</h4>
+            <p>
+              Relied upon by more than 11 million developers worldwide, npm is
+              committed to making JavaScript development elegant, productive,
+              and safe. The free npm Registry has become the center of
+              JavaScript code sharing, and with more than one million packages,
+              the largest software registry in the world. Our other tools and
+              services take the Registry, and the work you do around it, to the
+              next level.
+            </p>
+          </div>
+        </div>
+        <div id="card">
+          <img id="logo-footer" src="./images/team-management.svg" />
+          <div>
+            <h4>Team management</h4>
+            <p>
+              Relied upon by more than 11 million developers worldwide, npm is
+              committed to making JavaScript development elegant, productive,
+              and safe. The free npm Registry has become the center of
+              JavaScript code sharing, and with more than one million packages,
+              the largest software registry in the world. Our other tools and
+              services take the Registry, and the work you do around it, to the
+              next level.
+            </p>
+          </div>
+        </div>
+        <div id="card">
+          <img id="logo-footer" src="./images/familiar-features.svg" />
+          <div>
+            <h4>Familiar features</h4>
+            <p>
+              Relied upon by more than 11 million developers worldwide, npm is
+              committed to making JavaScript development elegant, productive,
+              and safe. The free npm Registry has become the center of
+              JavaScript code sharing, and with more than one million packages,
+              the largest software registry in the world. Our other tools and
+              services take the Registry, and the work you do around it, to the
+              next level.
+            </p>
+          </div>
+        </div>
+        <div id="card">
+          <img id="logo-footer" src="./images/npm-audit.svg" />
+          <div>
+            <h4>npm audir</h4>
+            <p>
+              Relied upon by more than 11 million developers worldwide, npm is
+              committed to making JavaScript development elegant, productive,
+              and safe. The free npm Registry has become the center of
+              JavaScript code sharing, and with more than one million packages,
+              the largest software registry in the world. Our other tools and
+              services take the Registry, and the work you do around it, to the
+              next level.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <button id="btn-footer">Create an Org</button>
+    </footer>
+  </main>
 </html>
