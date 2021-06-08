@@ -9,7 +9,7 @@
         <header>
             <div id="webpage-map">
                 <div>
-                    <img src="./images/black-heart.png" alt="black heart">
+                    <img class="blackHeart" src="./images/black-heart.png" alt="black heart">
                     <span> Nifty Penguin Magic</span>
                 </div>
                 <nav id="nav-bar">
@@ -23,14 +23,16 @@
                     </ul>
                 </nav>
             </div>
-            <div id="header">
-                <img src="./images/npm-logo.png" alt="npm logo">
-                <form action="/search" method="">
-                    <label for="search-bar"><img src="./images/magnifying-glass.png" alt="glass"></label>
-                    <input type="text" id="search-bar" placeholder="Search Packages">
+            <div class="header">
+                <img class="npmLogo"src="./images/npm-logo.png" alt="npm logo">
+                <form class="searchForm" action="/search" method="">
+                    <div>
+                        <img src="./images/magnifying-glass.png" alt="glass">
+                        <input type="text" id="search-bar" placeholder="Search Packages">
+                    </div>
                     <button type="submit" id="search-bttn">Search</button>
                 </form>
-                <a href="#"> Join </a>
+                <a href="#" class="join-bttn"> Join </a>
                 <a href="#"> Log In </a>
             </div>
         </header>
