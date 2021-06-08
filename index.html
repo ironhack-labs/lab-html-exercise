@@ -9,13 +9,14 @@
         <body>
 
             <header>
-                <div>
-                <img src="images/black-heart.png" alt="black heart">
-                <span>Nifty Penguin Magic</span>
-                </div>
-                <div>
+                
+                <div class="flex-container">
+                    <div>
+                        <img class="blackheart" src="images/black-heart.png" alt="black heart">
+                        <span class="Nifty-Penguin-Magic">Nifty Penguin Magic</span>
+                    </div>
                     <nav>
-                        <ul>
+                        <ul class="menu-ul">
                             <li><a href="#">npm Enterprise</a></li>
                             <li><a href="#">Products</a></li>
                             <li><a href="#">Solutions</a></li>
@@ -25,25 +26,36 @@
                         </ul>
                     </nav>
                 </div>
-                <div>
-                <img src="images/npm-logo.png" alt="npm">
-                </div>
-                <div>
-                <img src="images/magnifying-glass.png" alt="search">
-                <input type="text" placeholder="Search packages">
-                </div>
-                <div>
-                <button>Search</button>
-                <button>Join</button>
-                <button>Login</button>
+                <div class="flex-container-2">
+                    <img class="logonpm" src="images/npm-logo.png" alt="npm">
+                    <div>
+                        <form>
+                            <div class="searchbar">
+                                <div class="image1">
+                                    <img class="maxi" src="images/magnifying-glass.png" alt="search">
+                                </div>
+                                <div class="text1">
+                                    <input type="text" placeholder="Search packages">
+                                </div>
+                            </div>
+                            <button class="search">Search</button>
+                        </form>
+                    </div>
+                    <button class="join">Join</button>
+                    <button class="login">Log In</button>
                 </div>
             </header>
 
-            <section>
+            <section id="build-amazing">
                 <h1>Build amazing things</h1>
                 <article>Essential JavaScript development tools that help you go to market faster and build powerful applications using modern open source code.</article>
-                <button>See plans</button>
-                <button">Join for free</button>
+                <div class="plans-join">
+                    <div>
+                        <button class="plans">See plans</button>
+
+                        <button class="joinfree">Join for free</button>
+                    </div>
+                </div>
             </section>
 
             <section>
