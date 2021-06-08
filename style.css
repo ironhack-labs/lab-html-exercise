@@ -12,11 +12,16 @@ h1 {
     border: 0.67em;
 }
 
+h4 {
+    font-size: 2em;
+}
+
 header {
     /* Credit to Bill Bruilding on Stack Overflow (https://stackoverflow.com/questions/3971880/how-to-make-shadow-on-border-bottom) */
     -webkit-box-shadow: 0 4px 6px -6px #222;
     -moz-box-shadow: 0 4px 6px -6px #222;
     box-shadow: 0 4px 6px -6px #222;
+    position: relative;
 }
 
 header > div {
@@ -106,15 +111,18 @@ nav a {
     border: 1px solid black;
 }
 
-#welcome {
+.container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     text-align: center;
     padding: 60px 16px;
+}
+
+#welcome {
     background-color: rgba(232, 217, 217, 0.3);
-    height: 400px;
+    height: 450px;
 }
 
 #welcome h1 {
@@ -148,6 +156,29 @@ nav a {
     box-shadow: 8px 8px 0 rgba(251, 59, 73, 0.2);
 }
 
+#description {
+    height: 350px;
+    justify-content: center;
+}
+
+#description h4 {
+    font-style: italic;
+    background-color: rgba(255, 204, 53, 0.4);
+    transform: skew(9deg, 0deg);
+}
+
+#description img {
+    width: 150px;
+}
+
+#description article {
+    font-size: 14px;
+    width: 600px;
+}
+
+#description article p {
+    margin: 0;
+}
 
 
 
