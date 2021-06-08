@@ -2,6 +2,21 @@
 
 body {
     font-family: "Poppins";
+    padding: 0 20px;
+}
+
+h1 {
+    font-size: 5em;
+    text-align: center;
+    font-weight: 900;
+    border: 0.67em;
+}
+
+header {
+    /* Credit to Bill Bruilding on Stack Overflow (https://stackoverflow.com/questions/3971880/how-to-make-shadow-on-border-bottom) */
+    -webkit-box-shadow: 0 4px 6px -6px #222;
+    -moz-box-shadow: 0 4px 6px -6px #222;
+    box-shadow: 0 4px 6px -6px #222;
 }
 
 header > div {
@@ -89,6 +104,48 @@ nav a {
 
 .join-bttn {
     border: 1px solid black;
+}
+
+#welcome {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 60px 16px;
+    background-color: rgba(232, 217, 217, 0.3);
+    height: 400px;
+}
+
+#welcome h1 {
+    margin: 20px 0px;
+}
+#welcome article {
+    font-size: 18px;
+    width: 500px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;  
+    width: 500px;  
+    margin: 20px 0;
+    text-align: center;
+}
+
+.button-container a {
+    font-size: 20px;
+    padding: 15px 20px;
+    width: 200px;
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+}
+
+#see-plans-bttn {
+    background-color: #FB3B49;
+    color: white;
+    box-shadow: 8px 8px 0 rgba(251, 59, 73, 0.2);
 }
 
 
