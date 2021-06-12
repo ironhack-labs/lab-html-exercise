@@ -1,8 +1,19 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
+/*DEFAULT STYLES*/
+
 
 body{
     font-family: 'Poppins';
+    margin: 0;
+    padding: 0;
+}
+
+
+/* HEADER STYLES */
+/* TOP HEADER STYLES*/
+header{
+    width: 100%;
 }
 
 header > div {
@@ -27,9 +38,217 @@ nav ul {
 nav a {
     text-decoration: none;
     color: black;
+    font-weight: 500;
 }
 
 .blackHeart {
     width: 20px;
     margin-right: 1rem;
+}
+
+/*BOTOM HEADER STYLES*/
+
+.header-search{
+    width: 1300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/*IMAGE STYLES*/
+
+#logo{
+    height: 27px;
+    padding: 10px 25px;
+    flex-grow: 1;
+}
+
+#search{
+    height: 40px; 
+    margin: 0;
+    border: 0;
+    background-color: rgba(0,0,0,.05);  
+}
+
+
+/*LABEL STYLES*/
+
+form{
+    display: flex;
+    flex-direction: row ;
+    align-items: center;
+    flex-grow: 10 ;
+}
+
+#input-search{
+    background-color: rgba(0, 0, 0, 0.05);
+    border: 0;
+    width: 100%;
+    height: 38px;
+}
+
+#form-search button{
+    width: 5rem;
+    height: 36px;
+    margin: 0;
+    text-align:center;
+    border-style: none;
+    color: white;
+    background-color: #FB3E44;
+}
+#log-in{
+    margin-left: 50px;
+    flex-grow: 2;
+}
+#log-in a{
+    text-decoration: none;
+ }
+ #log-in-header{
+    color: rgb(114, 112, 112);
+    border: 1px ;
+    margin-left: 5px ;
+    margin-right: 25px;
+}
+
+#join-header{
+    
+    color: black;
+    padding: 4px 10px;
+    border: 1px black solid;
+    
+}
+
+/* BANNER*/
+
+#Join{
+    display: flex;
+    flex-direction: column;  
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.05);  
+    height: 800px;
+}
+
+h1{
+    text-align: center;
+    padding: 100px 0px  50px   0px;
+    font-size: 4rem;
+    font-weight: bolder;
+}
+
+#Join article{
+    text-align: center;
+    width: 500px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 0 0 50px 0px;
+}
+
+.btn-baner{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 500px;
+    height: 50px;
+}
+
+.btn-baner a{
+    text-align: center;
+    align-items: center;
+    padding: 10px 10px;
+    width: 200px;
+}
+
+#btn-plans{
+    background-color: red;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    box-shadow: 5px 5px 2px pink;
+}
+
+#btn-join{
+    background-color: white;
+    text-decoration: none;
+    font-weight: bolder;
+    color: black;
+}
+
+/* APRESENTATION */
+
+#apresentation{
+    display: flex;
+    flex-direction: column;  
+    align-items: center;
+    height: 600px;
+}
+
+#apresentation img{
+      width: 200px;
+      padding: 100px 0 50px 0;
+}
+
+#apresentation h2{
+    padding: 0px 10px;
+    background-color: rgba(255, 208, 0, 0.5);
+    font-size: 1.8rem;
+}
+
+#apresentation article {
+    width: 620px;
+    font-size: 0.85rem;
+    text-align: center;
+}
+
+/* LAST SECTION*/
+
+.job{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#jobs img{
+    width: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+.job-description{
+    align-content: center;
+    padding: 30px;
+    width: 200px;
+}
+
+#jobs h3{
+    color: red;
+    font-size: 0.9rem;
+    margin: 0;
+    padding: 3px 0 10px ;
+}
+
+#jobs p{
+    font-size: 0.8rem;
+    margin: 0;
+    padding: 0;
+}
+
+#jobs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#jobs a{
+    text-decoration: none;
+    text-align: center;
+    width: 250px;
+    background-color: black;
+    margin-bottom:100px;
+    padding: 10px;
+    color: white;
+    box-shadow: 5px 5px lightgray;
+    font-size: 0.9rem;
+    font-weight: 700;
 }
