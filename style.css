@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 * {
     margin: 0;
@@ -7,16 +7,19 @@
 
 body {
   font-family: 'Poppins';
+  font-weight: 400;
 }
+
 
 /* Nav Bar*/
 
 header > div {
     display: flex;
-    padding: 0 25px;
+    padding: 10px 25px;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid lightgray;
+
 }
 
 .blackHeart {
@@ -24,7 +27,8 @@ header > div {
 }
 
 nav {
-    width: 650px;
+    width: auto;
+
 }
 
 nav ul {
@@ -32,20 +36,188 @@ nav ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 10px;
 }
 
 nav a {
     text-decoration: none;
     color: black;
-  }
+}
+
+nav a:hover {
+    color: burlywood;
+}
 
 /* search form*/
 
 .npm-logo {
-    width: 100px;
+    width: 50px;
+    border: 1px solid black;
+    
 }
 
-.nav-search {
+.search-icon {
+    width: 20px;
+    border: 1px solid black;
+
+}
+
+form {
+    border: 1px solid black;
+}
+
+#btn-join {
+    width: 120px;
+    border: 1px solid black;
+}
+
+/* Firs Section */
+
+#heading {
+    background-color:rgba(232,217,217,.3);
+    display: flex;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#heading h1 {
+    font-size: 4em;
+    font-weight: 800;
+    margin-top: 10px;
+    text-align: center;
+}
+
+#heading article {
+    font-size: 1.1em;
+    text-align: center;
+    width: 550px;
+    align-content: center;
+}
+
+#heading div {
+    width: 550px;
+}
+
+#actionButtons {
+    list-style: none;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    height: 120px;
+}
+
+#actionButtons a:hover {
+    color: burlywood;
+}
+    
+#firstButton {
+    display: flex;
+    background-color: #FB3B49;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+    text-decoration: none;
+    color: white;
+    padding: 15px 80px;
+}
+
+#secondButton {
+    display: flex;
+    background-color: white;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+    text-decoration: none;
+    color: black;
+    padding: 15px 80px;
+}
+
+
+/* SECOND SECTION*/
+
+#slogan {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#slogan img {
+    width: 250px;
+    margin: 80px 0 50px 0;
+}
+
+#slogan h2 {
+    background-color: rgba(255,204,53,.4);
+    text-align: center;
+    padding: 0 40px;
+    font-size: 2em;
+    transform: skew(9deg,0deg);
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+#slogan article {
+    font-size: 0.9em;
+    text-align: center;
+    width: 900px;
+    align-content: center;
+    margin: 30px 0 90px 0;
+}
+
+/*  TOOLS SECTION*/
+
+#tools {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 150px;
+}
+
+#tools div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1100px;
+    justify-content: center;
+}
+
+.service-box {
+    display: flex;
+    flex-direction: column;
+    justify-content:start;
+    font-size: 0.8em;
+    text-align: left;
+    border: 1px solid #eee;
+    box-sizing: border-box;
+    width: 25%;
+    padding: 20px;
+    margin-bottom: 40px;
+  }
+  
+.service-box img {
+    width: 40px;
+    height: 70px;
+}
+
+.service-box h4 {
+    color: #ED1C24;
+    margin-bottom: 30px;
+}
+
+#createOrgBtn {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+
+}
+
+#createOrgBtn a {
+    display: flex;
+    background-color: black;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    text-decoration: none;
+    color: white;
+    padding: 15px 80px;
 }

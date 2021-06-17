@@ -30,38 +30,49 @@
             </nav>
         </div>
 
-        <div class="nav-search">
+        <div>
+            
             <img class="npm-logo" src="./images/npm-logo.png" alt="npm logo">
-            <div class="search-container"> 
-                <form action="#">
-                    <input type="text" name="search" placeholder="Search packages">
-                    <button type="submit"><i class="fa fa-search"></i>Search</button>
-                </form>
-                <a href="#">Join</a>
-                <a href="#">Log in</a>
-            </div>
+            
+            <img class="search-icon" src="./images/magnifying-glass.png" alt="search icon">
+            
+
+            <form action="#">
+                <input type="text" name="search" placeholder="Search packages">
+
+                <button type="submit"><i class="fa fa-search"></i>Search</button>
+            </form>    
+
+            <nav id="btn-join">
+                <ul>
+                    <li><a href="#">Join</a></li>
+                    <li><a href="#">Log in</a></li>
+                </ul>
+            </nav>
+
         </div>
     </header>
 
     <!--First Section-->
 
-    <section class="heroe" id="heading">
+    <section id="heading">
         
         <h1>Build amazing things</h1>
         <article>
-            <h5>Essential JavaScript development tools that help you go to market faster and build powerful applications using modern open source code.</h5>
+            <p>Essential JavaScript development tools that help you go to market faster and build powerful applications using modern open source code.</p>
         </article>
+        
         <div>
-            <ul>
-                <li><a href="#">See plans</a></li>
-                <li><a href="#">Join for free</a></li>
+            <ul id="actionButtons">
+                <li><a id="firstButton" href="#">See plans</a></li>
+                <li><a id="secondButton"href="#">Join for free</a></li>
             </ul>
         </div>
     </section>
 
     <!--Second Section-->
 
-    <section class="slogan" id="slogan">
+    <section id="slogan">
 
         <img src="./images/triangle-hexagon.svg" alt="triangle hexagon">
         <h2>Bring the best of open source to your company</h2>
@@ -72,7 +83,7 @@
 
     <!--Third Section-->
 
-    <section class="tools" id="tools">
+    <section id="tools">
 
         <div>
             <article class="service-box">
@@ -98,12 +109,12 @@
                 <h4>npm audit</h4>
                 <p>Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer.</p>
             </article>
+        </div>
 
-            <div>
-                <ul>
-                    <li><a href="#">Create an Org.</a></li>
-                </ul>
-            </div>
+        <div>
+            <ul id="createOrgBtn">
+                <li><a href="#">Create an Org.</a></li>
+            </ul>
         </div>
 
     </section>
