@@ -6,4 +6,111 @@
 }
 body {
   font-family: "Poppins";
+  margin: 20px;
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  /* padding: 0 10px; */
+}
+
+.header-top-left {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#heart-icon {
+  height: 20px;
+  width: auto;
+}
+
+.header-top-right {
+  display: flex;
+  justify-content: flex-end;
+  flex: 1;
+}
+
+.menu {
+  display: flex;
+  padding-right: 15px;
+}
+
+.menu li {
+  list-style-type: none;
+  margin: 0 10px;
+}
+.menu li a {
+  color: black;
+  text-decoration: none;
+}
+
+.header-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid lightgrey;
+  border-bottom: 1px solid lightgrey;
+  height: 60px;
+  margin: 0 10px;
+}
+
+#npm-logo {
+  height: 20px;
+  width: auto;
+}
+
+#search-form {
+  width: 80vw;
+  height: 40px;
+  position: relative;
+}
+
+#search-field {
+  height: 100%;
+  width: 100%;
+  font-family: "Poppins";
+  border: none;
+  background-color: lightgray;
+  outline: none;
+  text-indent: 40px;
+}
+
+#search-button {
+  height: 100%;
+  padding: 0 15px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-family: "Poppins";
+  border: none;
+  background-color: red;
+  color: white;
+}
+
+#magnifying-glass-icon {
+  height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0 0 10px;
+}
+
+#join,
+#login {
+  text-decoration: none;
+  border: 1px solid white;
+  color: black;
+  padding: 0 10px;
+  align-items: left;
+  margin-left: 10px;
+  padding: 3px 15px;
+}
+
+#join:hover,
+#login:hover {
+  border: 1px solid black;
 }

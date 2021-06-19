@@ -9,12 +9,16 @@
   </head>
   <body>
     <header class="header">
-      <nav class="navrow">
-        <div class="navrow-left">
-          <img src="./images/black-heart.png" alt="black heart icon" />
-          <p>Neverending Pun Machine</p>
+      <div class="header-top">
+        <div class="header-top-left">
+          <img
+            id="heart-icon"
+            src="./images/black-heart.png"
+            alt="black heart icon"
+          />
+          <span>Neverending Pun Machine</span>
         </div>
-        <div class="navrow-right">
+        <nav class="header-top-right">
           <ul class="menu">
             <li><a href="">npm Enterprise</a></li>
             <li><a href="">Products</a></li>
@@ -23,17 +27,21 @@
             <li><a href="">Docs</a></li>
             <li><a href="">Support</a></li>
           </ul>
-        </div>
-      </nav>
-      <div class="search-row">
-        <img src="./images/npm-logo.png" alt="npm logo" />
-        <img src="./images/magnifying-glass.png" alt="magnifying glass icon" />
+        </nav>
+      </div>
+      <div class="header-bottom">
+        <img id="npm-logo" src="./images/npm-logo.png" alt="npm logo" />
         <form action="" id="search-form">
-          <input type="text" placeholder="Search packages" />
-          <button>Search</button>
+          <img
+            id="magnifying-glass-icon"
+            src="./images/magnifying-glass.png"
+            alt="magnifying glass icon"
+          />
+          <input id="search-field" type="text" placeholder="Search packages" />
+          <input id="search-button" type="submit" value="Search" />
         </form>
-        <a href="#">Join</a>
-        <a href="#">Log In</a>
+        <a id="join" href="#">Join</a>
+        <a id="login" href="#">Log In</a>
       </div>
     </header>
     <!-- section 1 -->
