@@ -1,32 +1,150 @@
-<link rel="stylesheet" href="./style.css"/>
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
 body {
-    background-color: red;
-  }
-  header > div {
-    padding: 0 25px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid lightgray;
-  }
-  
-  nav {
-    width: 600px;
-  }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  nav a {
-    text-decoration: none;
-    color: black;
-  }
-  
-  .blackHeart {
-    width: 20px;
-    margin-right: 1rem;
-  }
+  font-family: 'Poppins';
+  margin: 0;
+  margin-bottom: 25px;
+  padding: : 10px;
+  padding-bottom: 20px;
+}
+
+h1 {
+  font-size: 80px;
+}
+h2 {
+  font-size: 50px;
+  background-color: #ffeda3;
+}
+h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+h4 {
+  color; #fb344;
+}
+
+a {
+  list-style-type: none;
+}
+
+header > div {
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.blackHeart {
+  width: 25px;
+  margin-right: 12px;
+}
+
+nav {
+  width: 600px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  color: #000000;
+}
+.logo {
+  width: 4em;
+}
+
+input {
+  border: none;
+  padding: 10px 15px;
+  width: 1000px;
+  color: f2f2f2;
+  background-color: rgba(242, 242, 242)
+}
+
+a.button {
+  margin-top: 30px;
+  float: left;
+  font-weight: 400;
+  border-radius: none;
+  padding: 15px 32px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #fb3e44;
+  text-decoration: none;
+  clear: right;
+}
+.container {
+  width: 1160px;
+  margin: 0 auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.button-container {
+  padding-bottom: 60px;
+}
+
+.top-right {
+  float: left;
+  margin-left: 20px;
+  font-size:14px;
+}
+.heart {
+  padding-right: 20px;
+}
+.logo-bar {
+  padding-top: 20px;
+  width: 100%;
+}
+.logo-container {
+  width: 130px;
+}
+.search-bar {
+  width: 69%;
+  float: right;
+  width: calc(100% - 350px);
+}
+.search-bar input {
+  background-color: rgb(0,0,0,0.05);
+  background-image: url("images/magnifier.png");
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: 35px;
+  height: 38px;
+  padding: 5px 5px 5px 15px;
+  width: 100%;
+  border: 1px solid rgba(255,255,255,0.2);
+  font-size: 16px;
+  font-family: "Poppins";
+}
+#bring-best {
+  background-color: none;
+  padding: 60px 0 60px 0;
+  display: block;
+  height: 480px;
+}
+#bring-best-text {
+  float: center;
+  width: 40%;
+  margin-left: 45px;
+  color: #fff;
+}
+.features {
+  width: 20%;
+  float: left;
+  text-align: center;
+  padding: 20px;
+  margin-left: 45px;
+}
+.features h3 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: rgb(83, 88, 98);
+}
+.features p {
+  padding-left: 15px;
+  padding-right: 15px;
+}
