@@ -3,8 +3,7 @@
 <header>
     <meta charset="utf-8">
     <title>HTML Exercise</title>
-</header>
-<body>
+    <link rel="stylesheet" href="style.css">
     <div>
         <div id="blackHeart">
             <img class="blackHeart" src="images/black-heart.png" alt="black heart" />
@@ -21,18 +20,20 @@
             </ul>
         </nav>
     </div>
-    <br>
-    <div>
-        <!-- add logo, search bar and buttons (or links and style them as buttons later) -->
-        <img src="images/npm-logo.png"></img>
-        <div id="Search">
-            <img src="images/magnifying-glass.png">
-            <span>
-                <input type="text" placeholder="Search Packages"></input><button type="submit">Search</button>
-             </span>
-        </div>
+</header>
 
-        <a href="#">Join Log In</a>
+<body>
+    <div class="search-div">
+        <!-- add logo, search bar and buttons (or links and style them as buttons later) -->
+        <img class="npm" src="images/npm-logo.png"></img>
+        <div id="search">
+            <span>
+                <input type="text" class="search" placeholder="Search packages"></input>
+                <button type="submit" class="searchButton">Search</button>
+            </span>
+        </div>
+        <button type="submit" class="join">Join</button>
+        <a href="#" class="login">Log In</a>
     </div>
 </body>
 
