@@ -1,13 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
-
-
-/* form label color: rgba(0,0,0,.05)
-form input color: rgba(0,0,0,.05)
-form button background color: #fb3e44
-form button letters color: white */
-
-
 body {
     font-family: 'Poppins';
 }
@@ -46,15 +38,13 @@ nav a {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 45px;
+    height: 57px;
+    margin: 0px 0px 0px 0px;
 }
-
-
 
 #npm-logo {
     width: 60px;
 }
-
 
 #form-label {
     color: rgba(0, 0, 0, .05)
@@ -64,20 +54,21 @@ input[type=search] {
     background-image: url("./images/magnifying-glass.png");
     background-size: contain;
     background-repeat: no-repeat;
-    outline: none;
     width: 1120px;
-    /* padding: 50px; */
+    border: none;
+    background-color: #f1f1f1;
 }
+
 
 #search-form {
     display: flex;
-
 }
+
 
 #form-input {
     color: rgba(0, 0, 0, .05);
     background-image: url("./images/magnifying-glass.png");
-    padding: 6px 0px 6px 25px;
+    padding: 10px 0px 10px 35px;
 }
 
 
@@ -90,7 +81,8 @@ input {
 #see-plans {
     background-color: #fb3e44;
     color: white;
-    padding: 6px 6px 6px 6px;
+    padding: 10px 12px 10px 12px;
+    border: none;
 }
 
 #join-button {
@@ -113,8 +105,12 @@ a {
     flex-direction: column;
     text-align: center;
     height: 600px;
+    margin: 0px 20px;
+}
+
+#section1 {
     background-color: rgba(232, 217, 217, .3);
-    margin: 15px;
+
 }
 
 #section1-article {
@@ -131,7 +127,7 @@ a {
     background-color: rgba(255, 204, 53, .4);
     transform: skew(9deg, 0deg);
     font-style: italic;
-
+    padding: 0px 15px 0px 15px;
 }
 
 #section2-image {
@@ -188,4 +184,5 @@ h2 {
     color: white;
     background-color: black;
     padding: 10px 100px 10px 100px;
+    border: none;
 }
