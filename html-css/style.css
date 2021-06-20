@@ -1,31 +1,18 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins');
-
+@import url("https://fonts.googleapis.com/css?family=Poppins");
 body {
-  font-family: 'Poppins';
+  font-family: "Poppins", sans-serif;
   margin: 0;
   margin-bottom: 25px;
-  padding: : 10px;
+  padding: 10px;
   padding-bottom: 20px;
 }
 
-h1 {
-  font-size: 80px;
-}
-h2 {
-  font-size: 50px;
-  background-color: #ffeda3;
-}
-h3 {
-  font-size: 20px;
-  font-weight: 600;
-}
-
-h4 {
-  color; #fb344;
+ul {
+  list-style-type: none;
 }
 
 a {
-  list-style-type: none;
+  text-decoration: none;
 }
 
 header > div {
@@ -34,13 +21,10 @@ header > div {
   justify-content: space-between;
   align-items: center;
 }
+
 .blackHeart {
   width: 25px;
-  margin-right: 12px;
-}
-
-nav {
-  width: 600px;
+  padding-right: 12px;
 }
 
 nav ul {
@@ -52,6 +36,7 @@ nav ul {
 nav a {
   color: #000000;
 }
+
 .logo {
   width: 4em;
 }
@@ -60,91 +45,122 @@ input {
   border: none;
   padding: 10px 15px;
   width: 1000px;
-  color: f2f2f2;
-  background-color: rgba(242, 242, 242)
+  color: #f2f2f2;
+  background-color: rgba(242, 242, 242);
 }
 
-a.button {
-  margin-top: 30px;
-  float: left;
-  font-weight: 400;
-  border-radius: none;
-  padding: 15px 32px;
-  font-size: 18px;
-  color: #fff;
+#search-btn {
   background-color: #fb3e44;
-  text-decoration: none;
-  clear: right;
-}
-.container {
-  width: 1160px;
-  margin: 0 auto;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  color: #ffff;
+  border: none;
+  padding: 10px 25px;
+  margin: 0.4rem 0;
 }
 
-.button-container {
-  padding-bottom: 60px;
+#join-btn,
+#login-btn {
+  padding: 4px 15px;
+  color: #000000;
 }
 
-.top-right {
-  float: left;
-  margin-left: 20px;
-  font-size:14px;
+#join-btn {
+  background-color: #ffffff;
+  border: 2px solid #000000;
+  margin-left: 5px;
+  border-radius: 5px;
 }
-.heart {
-  padding-right: 20px;
+
+.main {
+  background-color: #f8f4f4;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 60em;
+  margin-left: 30px;
+  margin-right: 30px;
 }
-.logo-bar {
-  padding-top: 20px;
-  width: 100%;
+
+h1 {
+  font-size: 80px;
 }
-.logo-container {
-  width: 130px;
+
+.main-p {
+  height: 10em;
+  width: 30em;
+  font-size: 20px;
 }
-.search-bar {
-  width: 69%;
-  float: right;
-  width: calc(100% - 350px);
+
+.plans-btn,
+.free-btn {
+  border: none;
+  padding: 15px 50px;
 }
-.search-bar input {
-  background-color: rgb(0,0,0,0.05);
-  background-image: url("images/magnifier.png");
-  background-position: right center;
-  background-repeat: no-repeat;
-  background-size: 35px;
-  height: 38px;
-  padding: 5px 5px 5px 15px;
-  width: 100%;
-  border: 1px solid rgba(255,255,255,0.2);
-  font-size: 16px;
-  font-family: "Poppins";
+
+.plans-btn {
+  background-color: #fb3e44;
+  color: #ffff;
+  box-shadow: 5px 5px #fad0d2;
+  margin-right: 50px;
 }
-#bring-best {
-  background-color: none;
-  padding: 60px 0 60px 0;
-  display: block;
-  height: 480px;
+
+.free-btn {
+  background-color: #ffff;
+  color: black;
+  font-weight: bold;
 }
-#bring-best-text {
-  float: center;
-  width: 40%;
-  margin-left: 45px;
-  color: #fff;
+
+.section-2 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
-.features {
-  width: 20%;
-  float: left;
+
+.hexagon {
+  width: 20em;
   text-align: center;
-  padding: 20px;
-  margin-left: 45px;
+  display: block;
+  padding: 40px;
 }
-.features h3 {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  color: rgb(83, 88, 98);
+
+h2 {
+  font-size: 50px;
+  background-color: #ffeda3;
 }
-.features p {
-  padding-left: 15px;
-  padding-right: 15px;
+
+.article-2 {
+  height: 10em;
+  width: 50em;
+}
+
+#service-container {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-evenly;
+}
+
+.service-img {
+  width: 50px;
+  height: 80px;
+}
+
+.flex {
+  text-align: center;
+  margin: 25px;
+  text-align: center;
+}
+
+h4 {
+  color: #fb3e44;
+}
+
+.org-btn {
+  font-weight: bold;
+  font-size: 17px;
+  border: none;
+  padding: 20px 200px;
+  background-color: #000000;
+  color: #ffff;
+  box-shadow: 5px 10px #f0ebcc;
 }
