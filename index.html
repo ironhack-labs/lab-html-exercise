@@ -1,12 +1,13 @@
 <header>
-    <meta charset="utf-8">
-    <title>HTML Exercise</title>
-    <link rel="stylesheet" href="style.css">
-    <div>
-      <div id="blackHeart">
-        <img class="blackHeart" src="https://assets.codepen.io/6469489/black-heart.png" />
-        <span> Nifty Penguin Magic </span>
-      </div>
+  <meta charset="utf-8">
+  <title>HTML Exercise</title>
+  <link rel="stylesheet" href="style.css">
+  <div>
+    <div id="blackHeart">
+      <img class="blackHeart" src="https://assets.codepen.io/6469489/black-heart.png" />
+      <span class="nitfy"> Nifty Penguin Magic </span>
+    </div>
+    <div class="navi">
       <nav>
         <ul>
           <li><a href="#"> npm Enterprise </a></li>
@@ -18,95 +19,111 @@
         </ul>
       </nav>
     </div>
-  </header>
-  
-  <body>
-    <div class="search-div">
-      <img src="https://assets.codepen.io/6469489/npm-logo.png" class="npm"></img>
-      <div class="searchBar">
-        <input type="text" class="search" placeholder="Search packages"></input>
-        <button type="submit" class="searchButton">Search</button>
+  </div>
+</header>
+
+<body>
+  <div class="search-div">
+    <img src="https://assets.codepen.io/6469489/npm-logo.png" class="npm"></img>
+    <div class="searchBar">
+      <span>
+        <img src="https://assets.codepen.io/6469489/magnifying-glass.png" class="magnifyingGlass" />
+      </span>
+      <input type="text" class="search" placeholder="Search packages"></input>
+      <button type="submit" class="searchButton">Search</button>
+    </div>
+    <div class=rightDiv>
+      <button type="submit" class="join">Join</button>
+      <a href="#" class="login">Log In</a>
+    </div>
+  </div>
+
+  <div class="main">
+    <div class="amazing">
+      Build amazing things
+    </div>
+
+    <article class="descriptionText">
+      Essential JavaScript development tools that help<br>
+      you go to market faster and build powerful<br>
+      applications using modern open source code.<br>
+    </article>
+    <div class="plans">
+      <div class="seePlans">
+        <a class="seePlansText">See plans</a>
       </div>
-      <div class=rightDiv>
-        <button type="submit" class="join">Join</button>
-        <a href="#" class="login">Log In</a>
+      <div class="joinDiv">
+        <a class="joinText">Join for free</a>
       </div>
     </div>
-  
-    <div class="main">
-      <div class="amazing">
-        Build amazing things
-      </div>
-  
-      <article class="descriptionText">
-        Essential JavaScript development tools that help<br>
-        you go to market faster and build powerful<br>
-        applications using modern open source code.<br>
-      </article>
-      <div class="plans">
-        <div class="seePlans">
-          <a class="seePlansText">See plans</a>
-        </div>
-        <div class="joinDiv">
-          <a class="joinText">Join for free</a>
-        </div>
-      </div>
+  </div>
+  <div class="section2">
+    <img src="https://assets.codepen.io/6469489/triangle-hexagon.svg" class="hexagon" />
+    <div class="bringText">
+      Bring the best of open source to your company
     </div>
-    <div class="section2">
-      <img src="https://assets.codepen.io/6469489/triangle-hexagon.svg" class="hexagon" />
-      <div class="bringText">
-        Bring the best of open source to your company
+
+    <article class="npmText">
+      npm is the tool used by over 11,000,000 Javascript developers around the world. Your developers allready use it.
+      Your company depends on it. Create an Org and get more out of the tools your team allready knows and loves.
+    </article>
+  </div>
+  <div class="section3">
+    <div class="features">
+      <div class="feature">
+        <img src="https://assets.codepen.io/6469489/zero-configuration.svg" class="featureIcon" />
+        <div class="featureTitle">
+          Zero configuration
+        </div>
+        <div class=featureText>
+          Create an org, add your team, and start collaborating. <br>Nothing to configure, set up, or manage.
+        </div>
       </div>
-  
-      <article class="npmText">
-        npm is the tool used by over 11,000,000 Javascript developers around the world. Your developers allready use it. Your company depends on it. Create an Org and get more out of the tools your team allready knows and loves.
-      </article>
-    </div>
-    <div class="section3">
-      <div class="features">
-        <div class="feature">
-          <img src="https://assets.codepen.io/6469489/zero-configuration.svg" class="featureIcon" />
-          <div class="featureTitle">
-            Zero configuration
-          </div>
-          <div class=featureText>
-            Create an org, add your team, and start collaborating. <br>Nothing to configure, set up, or manage.
-          </div>
+      <div class="feature">
+        <img src="https://assets.codepen.io/6469489/team-management.svg" class="featureIcon" />
+        <div class="featureTitle">
+          Team management
         </div>
-        <div class="feature">
-          <img src="https://assets.codepen.io/6469489/team-management.svg" class="featureIcon" />
-          <div class="featureTitle">
-            Team management
-          </div>
-          <div class=featureText>
-            Control who has access to what modules whiin your team namespace using straigtforeward team manaagement capabilities.
-          </div>
+        <div class=featureText>
+          Control who has access to <br>
+          what modules whiin your <br>
+          team namespace using <br>
+          straigtforeward team <br>
+          manaagement capabilities.
         </div>
-        <div class="feature">
-          <img src="https://assets.codepen.io/6469489/familiar-features.svg" class="featureIcon" />
-          <div class="featureTitle">
-            Familiar features
-          </div>
-          <div class=featureText>
-            nom Orgs hast 100% parity with al the public npm registry features yoru developers already use.
-          </div>
-        </div>
-        <div class="feature">
-          <img src="https://assets.codepen.io/6469489/npm-audit.svg" class="featureIcon" />
-          <div class="featureTitle">
-            npm audit
-          </div>
-          <div class=featureText>
-            Enjoy the security auditing features build into the npm client a zero-friction way to make open source software safer.
-          </div>
-        </div>
-  
       </div>
-        <div class="createDiv">
-          <a class="create">Create an Org</a>
+      <div class="feature">
+        <img src="https://assets.codepen.io/6469489/familiar-features.svg" class="featureIcon" />
+        <div class="featureTitle">
+          Familiar features
         </div>
+        <div class=featureText>
+          nom Orgs hast 100% parity with <br>
+          all the public npm registry<br>
+          features your developers<br>
+          already use.
+        </div>
+      </div>
+      <div class="feature">
+        <img src="https://assets.codepen.io/6469489/npm-audit.svg" class="featureIcon" />
+        <div class="featureTitle">
+          npm audit
+        </div>
+        <div class=featureText>
+          Enjoy the security auditing<br>
+          features build into the npm<br>
+          client, a zero-friction way toy<br>
+          make open source software<br>
+          safer.
+        </div>
+      </div>
+
     </div>
+    <div class="createDiv">
+      <a class="create">Create an Org</a>
     </div>
-  </body>
-  
-  </html>
+  </div>
+  </div>
+</body>
+
+</html>
