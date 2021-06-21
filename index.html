@@ -19,7 +19,7 @@ source software safer. Create an Org -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
 
@@ -28,100 +28,112 @@ source software safer. Create an Org -->
       <div>
         <div>
           <img
-            class="blackheart"
+            class="blackHeart"
             src="./images/black-heart.png"
-            alt="Black Heart"
+            alt="black heart"
           />
-          <span>Nifty Penguin Magic</span>
+          <span> Nifty Penguin Magic </span>
         </div>
         <nav>
           <ul>
-            <li><a href="#"> npm Enterprise</a></li>
-
-            <li><a href="#"> Products</a></li>
-
-            <li><a href="#"> Solutions</a></li>
-
-            <li><a href="#"> Resources</a></li>
-
-            <li><a href="#"> Docs</a></li>
-
-            <li><a href="#"> Support</a></li>
+            <li><a href="#"> npm Enterprise </a></li>
+            <li><a href="#"> Products </a></li>
+            <li><a href="#"> Solutions </a></li>
+            <li><a href="#"> Resources </a></li>
+            <li><a href="#"> Docs </a></li>
+            <li><a href="#"> Support </a></li>
           </ul>
         </nav>
       </div>
 
-      <div>
-        <img src="./images/npm-logo.png" alt="NPM logo" />
+      <div class="header">
+        <img src="./images/npm-logo.png" alt="NPM logo" class="npm-logo" />
+
+        <form class="form-search">
+          <img
+            src="./images/magnifying-glass.png"
+            alt="magnifying glass"
+            class="magnifying"
+          />
+
+          <input
+            type="text"
+            placeholder="Search Packages"
+            class="search-input"
+          />
+          <button class="search-btn">Search</button>
+        </form>
+        <div class="buttons-header">
+          <button class="join">Join</button>
+          <button class="log-in">Log In</button>
+        </div>
       </div>
-
-      <form action="">
-        <img src="" alt="" />
-
-        <input type="text" placeholder="Search Packages" />
-        <button type="submit"></button>
-        <img src="./images/magnifying-glass.png" alt="magnifying glass" />
-
-        <button type="button">Search</button>
-        <a href="#">Join</a>
-        <a href="#">Log In</a>
-      </form>
     </header>
 
     <section id="intro">
-      <h1>Build Amazing Things</h1>
+      <h1 id="intr-h1">Build Amazing Things</h1>
 
-      <p>
+      <article id="article-intro">
         Essential JavaScript development tools that help you go to market faster
         and build powerful applications using modern open source code.
-      </p>
-
-      <a href="#">See plans</a>
-      <a href="#">Join for free</a>
+      </article>
+      <div class="buttons-intro">
+        <a href="#" id="see-plans">See plans</a>
+        <a href="#" id="join-for-free">Join for free</a>
+      </div>
     </section>
 
     <section id="services">
-      <img src="./images/triangle-hexagon.svg" alt="Triangle Hexagon" />
+      <img src="./images/triangle-hexagon.svg" alt="Triangle Hexagon" id="triangle"/>
 
-      <h2>Bring the best open source to your company</h2>
+      <h2 id="services-h1">Bring the best open source to your company</h2>
 
-      <p>
+      <article id="npm-explained">
         npm is the tool used by over 11,000,000 JavaScript developers around the
         world. Your developers already use it. Your company depends on it.
         Create an Org and get more out of the tools your team already knows and
         loves.
-      </p>
+      </article>
     </section>
 
     <section id="features">
-      <div>
-        <h3>Zero configuration</h3>
-        <p>
+      <div class="features-all">
+        <div class="features-row">
+        <img src="images/zero-configuration.svg" alt="Zero configuration" class="features-img"/>
+        <h3 class="features-h">Zero configuration</h3>
+        <p class="text-features">
           Create an org, add your team, and start collaborating. Nothing to
           configure, set up, or manage.
         </p>
-        <img src="images/zero-configuration.svg" alt="Zero configuration" />
-
-        <h3>Team management</h3>
-        <p>
+        </div>
+        <div class="features-row">
+        <img src="images/team-management.svg" alt="Team Management" class="features-img"/>
+        <h3 class="features-h">Team management</h3>
+        <p class="text-features">
           Control who has access to what modules within your team namespace
           using straightforward team management capabilities.
         </p>
-        <img src="images/team-management.svg" alt="Team Management" />
-        <h3>Familiar features</h3>
-        <p>
+      </div>
+      <div class="features-row">
+        <img src="images/familiar-features.svg" alt="familiar-features" class="features-img"/>
+        <h3 class="features-h">Familiar features</h3>
+        <p class="text-features">
           npm Orgs has 100% parity with all the public npm registry features
           your developers already use.
         </p>
-        <img src="images/familiar-features.svg" alt="familiar-features" />
-        <h3>npm audit</h3>
-        <p>
+        </div>
+        <div class="features-row">
+        <img src="images/npm-audit.svg" alt="NPM audit" class="features-img"/>
+        <h3 class="features-h">npm audit</h3>
+        <p class="text-features">
           Enjoy the security auditing features built into the npm client, a
           zero-friction way to make open source software safer.
         </p>
+        </div>
       </div>
-
-      <button type="button">Create na Org</button>
+      <div class="btn-container">
+      <button type="button" id="btn-create">Create an Org</button>
+      </div>
     </section>
   </body>
 </html>
