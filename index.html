@@ -17,6 +17,7 @@ auditing features built into the npm client, a zero-friction way to make open so
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -24,7 +25,7 @@ auditing features built into the npm client, a zero-friction way to make open so
     <header>
         <div>
             <div>
-                <img src="black-heart.png" alt='black heart icon'>
+                <img class="blackHeart" src="black-heart.png" alt='black heart icon'>
                 <span>Nifty Penguin Magic</span>
             </div>
 
@@ -41,14 +42,16 @@ auditing features built into the npm client, a zero-friction way to make open so
         </div>
 
        <div class='search-bar'> 
-            <img src="npm-logo.png">
-            <img src="magnifying-glass.png">
-            <form>
-                <input type='text' placeholder="Search packages">
-            </form>
-            <button>Search</button>
-            <div>
-                <a href='#'>Join</a>
+            <img class='logo' src="npm-logo.png">
+
+                <form>
+                    <img class='blackHeart' src="magnifying-glass.png">
+                    <input type='text' placeholder="Search packages">
+                    <button>Search</button>
+                </form>
+                
+
+                <a id="join" href='#'>Join</a>
                 <a href='#'>Log in</a>
             </div>
        </div>
