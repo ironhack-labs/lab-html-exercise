@@ -46,6 +46,8 @@ nav a {
   height: 35px;  
   margin-top: 7px;
   width: auto;
+  display: flex;
+  align-items: center;
 }
 
 .searchbar {
@@ -54,6 +56,8 @@ nav a {
   height: 35px;
   font-family: monospace;
   text-align: left;
+  
+  
 }
 
 .searchbuttom {
@@ -62,19 +66,21 @@ nav a {
   color: white;
   height: 40px;
   width: 80px;
-  padding: 0;
-  margin: 0;
+  
 
 }
 
+.form {
+    display: flex;
+}
 .input-icono {
   background-image: url("images/magnifying-glass.png");
   background-repeat: no-repeat;
   background-position: 4px center;
   background-size: 20px;
-  display: flex;
   align-items: center;
   width: 100%;
+  margin-right: 20px;
   padding-left: 28px;
   height: 40px;
   background-color: #eee;
@@ -89,11 +95,10 @@ nav a {
 }
 
 .link-button-join {
-  background-color: #eee;
+  background-color: white;
   border: 1px solid black;
-  text-align: center;
   padding: 3px 20px;
-  margin-left: auto;
+
   
 }
 
@@ -107,6 +112,8 @@ nav a {
   color: black;
   text-align: center;
   padding: 3px 20px;
+  width: 70px;
+  
 }
 
 .link-button-login a {
@@ -189,6 +196,11 @@ nav a {
     font-weight: ;
     margin-top: 55px;
     margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.6em;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .second-section p {
@@ -199,6 +211,7 @@ nav a {
 .third-section {
     display: flex;
     justify-content: space-between;
+    margin-top: 100px;
 }
 
 .third-section img {
