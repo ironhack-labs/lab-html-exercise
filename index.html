@@ -4,21 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>npm</title>
 </head>
 <body>
 
     <header class="header">
 
-        <div class="container">
+        <div>
 
-            <div class="heart-container">
+            <div>
                 <img class="black-heart" src="images/black-heart.png" alt="black heart">
                 <span>Nifty Penguin Magic</span>
             </div>
 
-          <nav class="nav-bar">
-            <ul class="nav-bar-ul">
+          <nav>
+            <ul>
                 <li><a class="nav-bar-item" href="#">npm Enterprise</a></li>
                 <li><a class="nav-bar-item" href="#">Products</a></li>
                 <li><a class="nav-bar-item" href="#">Solutions</a></li>
@@ -30,30 +31,31 @@
 
         </div>
       
-        <div class="container">
+        <div>
             <img class="npm-logo" src="images/npm-logo.png" alt="npm logo">
             <form id="search" method="GET" action="/search">
-                <img class="search-icon" src="images/magnifying-glass.png" alt="Search icon">
-                <input type="search" placeholder="Search packages">
-                <button type="submit">Search</button>
+                <input class="search-input" type="search" placeholder="Search packages">
+                <button class="search-button" type="submit">Search</button>
             </form>
-            <div class="log-in-container">
-                <a href="#">Join</a>
-                <a href="#">Log in</a>
+            <div>
+                <a class="join-button" href="#">Join</a>
+                <a class="login-button" href="#">Log in</a>
             </div>
         </div>
 
     </header>
 
     <section id="first-section">
-        <h1>Build amazing things</h1>
-        <article>
-            Essential JavaScript development tools that help you go to market faster and build
-            powerful applications using modern open source code.
-        </article>
-        <div>
-            <a class="plans-btn" href="#">See plans</a>
-            <a class="join" href="#">Join for free</a>
+        <div class="section-one">
+            <h1>Build amazing things</h1>
+            <article>
+                Essential JavaScript development tools that help you go to market faster and build
+                powerful applications using modern open source code.
+            </article>
+            <div>
+                <a class="plans-btn" href="#">See plans</a>
+                <a class="join" href="#">Join for free</a>
+            </div>  
         </div>
     </section>
 
