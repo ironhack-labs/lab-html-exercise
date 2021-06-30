@@ -32,14 +32,23 @@ nav a {
   color: black;
 }
 
-.blackHeart {
-  width: 20px;
-  margin-right: 2rem;
+.too-cool-for-school {
+  padding-left: 20px;
+}
+
+.too-cool-for-school::after {
+  content: "Neon Pink Minotaur";
+}
+
+.too-cool-for-school:hover::after {
+  content: "Nepharious Punk Millenials";
 }
 
 .search-nav {
   padding: 14px 25px;
   font-size: 0;
+  display: flex;
+  justify-content: space-between;
 }
 
 .npm-logo {
@@ -62,7 +71,7 @@ nav a {
   background-color: rgba(0, 0, 0, 0.05);
   padding: 10px 38px;
   border: 1px solid rgba(0, 0, 0, 0.05);
-  width: 800px;
+  width: 80%;
   font-family: "Fira Mono", "Andale Mono", "Consolas", monospace;
 }
 
@@ -81,6 +90,7 @@ nav a {
   font-size: 16px;
   padding: 5px 20px;
   text-align: center;
+  width: 10%;
 }
 
 .join {
