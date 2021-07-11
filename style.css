@@ -45,10 +45,10 @@ header > div {
     padding-left: 1%;
   }
 
-  form{
+  /* form{
       width: 100%;
      
-  }
+  } */
 .header-search-searching-component{
     width: 100%;
 }
@@ -253,4 +253,92 @@ margin: 5% 0 3% 0;
     border: none;
     text-decoration: none;
     font-weight: bold;
+}
+
+@media (max-width: 1585px) {
+    .header-search-searching-component {
+        width: 80%;
+    }
+}
+
+@media (max-width: 1328px) {
+    .header-search-searching-component {
+        width: 100%;
+    }
+
+    form > .search-bar {
+        width: 70%;
+    }
+    .session-buttons {
+        width: 20%;
+    }
+}
+
+@media (max-width: 1072px) {
+
+    .session-buttons {
+        width: 30%;
+    }
+}
+
+@media (max-width: 816px) {
+
+    .session-buttons {
+        width: 40%;
+    }
+    form > .search-bar {
+        width: 60%;
+    }
+
+    .search-img{
+        display:none;
+    }
+
+    nav ul{
+
+    display: block;
+    }
+
+    nav{
+        width: 50%;
+    }
+}
+
+@media (max-width: 688px) {
+
+    .session-buttons {
+        width: 70%;
+    }
+    form > .search-bar {
+        width: 30%;
+    }
+
+}
+
+@media (max-width: 611px) {
+
+    .session-buttons {
+        width: 80%;
+    }
+    form > .search-bar {
+        width: 30%;
+    }
+}
+
+@media (max-width: 1047px) {
+    .btn-see-plans, .btn-join-free{
+        padding: 2px 2px 2px 2px;
+    }
+}
+
+@media (max-width: 819px) {
+    .btn-org{
+        padding: 2px 2px 2px 2px;
+    }
+}
+
+@media (max-width: 780px) {
+    .section-3-contener{
+        flex-direction:column;
+    }
 }
