@@ -1,0 +1,280 @@
+
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+body {
+font-family: poppins;
+font-size: 0.9em;
+margin: 0;
+padding: 0;
+}
+header{
+    box-shadow: 0 4px 13px -3px rgb(0 0 0 / 10%);;
+}
+header > div {
+    padding: 0px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+
+}
+.up-bar{
+    padding-top: 15px;
+}
+nav {
+    width: 550px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    opacity: 1.0;
+    transition: opacity .2s;
+}
+
+nav a:hover{
+    opacity: 0.3;
+}
+  
+
+.blackHeart {
+    width: 25px;
+    margin-right: 0.5em;
+}
+
+.happyPhrase{
+    font-weight: 300;
+    
+}
+
+.down-bar {
+    padding: 10px 25px;
+}
+
+.npmLogo{
+    display: flex;
+    align-items: center;
+    
+}
+
+.npmLogo img{
+    width: 70px;
+    position: relative;
+    top: 3px;
+}
+
+header form{
+    box-sizing: border-box;
+}
+
+.searchbar {
+    width: 1100px;
+    display: flex;
+    align-items: center;
+    background-color: #f1f1f1;
+} 
+
+form div{
+    float: left;
+    width: 50px;
+    height: 40px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+form img{
+    width: 40%;
+    
+}
+
+form input {
+    padding: 10px 0px 7px 0px;
+    border: none;
+    float: left;
+    width: 100%;
+    background: #f1f1f1;
+    outline: none;
+    font-family: poppins;
+    
+}
+
+.searchButton {
+    float: left;
+    width: 8%;
+    padding: 10px;
+    background: #fb3e44;
+    color: white;
+    font-family: poppins;
+    border: none;
+    cursor: pointer;
+
+}
+
+.joinButton{
+    border: 1px solid black;
+    padding: 5px 20px;
+    text-decoration: none;
+    color: black;
+    opacity: 1.0;
+    transition: opacity .2s;
+}
+
+.joinButton:hover{
+    opacity: 0.3;
+}
+
+.logInButton{
+    border: none;
+    text-decoration: none;
+    color: black;
+    opacity: 1.0;
+    transition: opacity .2s;
+}
+
+.logInButton:hover{
+    opacity: 0.3;
+}
+
+#welcome{
+    height: 700px;
+    background-color: rgba(232,217,217,.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+
+#welcome h1{
+    font-size: 6em;
+    font-weight: 900;
+    margin: 150px 0px 50px 0px;
+}
+
+#welcome article{
+    width: 38%;
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: 500;
+    
+ 
+}
+
+#welcome div{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px; 
+}
+
+#welcome div a{
+    margin: 20px;
+    padding: 15px 70px;
+    font-size: 17px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.plansButton{
+    background-color: #FB3B49;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+    color: white;
+  
+    
+}
+
+.joinFreeButton{
+    
+    background-color: white;
+    color: black;
+}
+
+#welcome2{
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#welcome2 img{
+    width: 18%;
+    margin-top: 80px;
+}
+
+#welcome2 h2{
+    font-size: 2.2em;
+    font-style: italic;
+    font-weight: 600;
+    height: 40px;
+    margin-top: 70px;
+    background-color: rgba(255,204,53,.4);
+    transform: skew(15deg,0deg);
+    padding: 0px 50px;
+}
+
+#welcome2 article{
+    margin-top: 10px;
+    width: 50%;
+    text-align: center;
+}
+#features{
+    height: 370px;
+    margin: 55px 0;
+}
+
+.container{
+    margin: 0 150px;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.container div img{
+    width: auto;
+    height: 10%;
+    
+    
+}
+
+.container div h3{
+    color:  #ED1C24;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    
+    
+}
+
+.container div article{
+    width: 220px;
+}
+
+.orgButton{
+    margin-top: 40px;;
+    text-align: center;
+}
+
+.orgButton a{
+    margin: 20px;
+    padding: 20px 150px;
+    font-size: 17px;
+    text-decoration: none;
+    font-weight: 600;
+    color: white;
+    background-color: black;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+}
