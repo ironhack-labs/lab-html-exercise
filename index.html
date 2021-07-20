@@ -9,6 +9,8 @@
 </head>
 <body>
 
+    <div class="container">
+
     <header>
 
     <nav>
@@ -29,36 +31,42 @@
     <section class="search">
 
         <img src="images/npm-logo.png" alt="logo of NPM">
-        <div class="search-bar">
+        <section class="search-bar">
             <img src="images/magnifying-glass.png" alt="image of a magnifying glass">
             <input type="text" placeholder="Search packages">
-        <button type="submit" class="red-btn">Search</button>
-        </div>
+            <button type="submit" class="red-btn">Search</button>
+        </section>
+         
 
-        <a href="#">Join</a>
+        <a href="#" class="box-border">Join</a>
         <a href="#">Log In</a>
         
     </section>
 
     </header>
     
-    <article class="big-banner">
+    <article id="big-banner">
+
         <h1>Build amazing things</h1>
         <p>Essential JavaScript development tools that help you go to market faster and build powerful applications using
             modern open source code.
         </p>
 
         <section class="banner-btns">
-        <a class="red-btn" href="#">See plans</a>
+        <a id="red-btn" href="#">See plans</a>
         <a href="#">Join for free</a>
         </section>
+
     </article>
 
-    <article>
+    <article id="hexagon">
 
         <img src="images/triangle-hexagon.svg" alt="a triangle-hexagon shaped figure">
 
-        <h1>Bring the best of open source to your company</h1>
+        <div class="skewed-bg">
+            <h1>Bring the best of open source to your company</h1>
+        </div>
+        
 
         <p>npm is the tool used by
             over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it.
@@ -99,6 +107,12 @@
 
     </article>
 
-    <a href="#">Create an Org</a>
+    <section id="org-btn">
+        <a href="#">Create an Org</a>
+    </section>
+
+    
+
+    </div>
 </body>
 </html>
