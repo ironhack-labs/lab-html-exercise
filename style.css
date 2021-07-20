@@ -1,6 +1,11 @@
 
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
+:root{
+    --Form-Label-Color: rgba(0,0,0,.05);
+    --Form-Input-Color: rgba(0,0,0,);
+}
+
 html,
 body {
   margin: 0;
@@ -10,61 +15,159 @@ body {
 
 body {
   font-family: 'Poppins';
-  
+  max-width: 1250px;
+  margin: 0 auto;
 }
 
 /*top part of header*/
-ul li{
-    text-decoration: none;
-    list-style-type: none;
-}
-
-.header-container {
+header > div {
+    padding: 0 25px;
     display: flex;
     justify-content: space-between;
-}
-
-.black-heart{
-    height: 20px;
-}
-
-.header-container nav ul {
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+  }
+  
+  nav {
+    width: 600px;
+  }
+  
+  nav ul {
+    list-style: none;
     display: flex;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.header-container a {
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav a {
     text-decoration: none;
     color: black;
-    padding: 5px;
-}
+  }
+  
+  .blackHeart {
+    width: 20px;
+    margin-right: 1rem;
+  }
+  
 
 /* bottom of header */
 
-.search-bar{
+.searchBar{
+    padding: 7px 25px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    
 }
 
-.search-bar img{
+.searchBar img{
     height: 25px;
     padding-top: 10px;
 }
 
-.search-bar ul {
+.searchBar ul {
     display: flex;
-    margin: 0;
-    padding: 0;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0px 10px 0px 5px;
+    padding: 0; 
+   
 }
 
-
-
-.search-bar a{
+.searchBar a{
     text-decoration: none;
+    color: grey;
+}
+
+.searchBar form{
+    position: relative;
+    display: flex;
+    min-width: 100px;
+    background-color: var(--Form-Label-Color);
+}
+
+.searchBar input{
+    width: 800px;
+    background-color: var(--Form-Input-Color);
+    border: none;
+}
+
+.search-icon{
+    padding: 10px;
+}
+
+.searchBar button{
+    background-color: #fb3e44;
+    color: white;
+    border: var(--Form-Label-Color);
+    padding: 3px 15px;
+    font-size: 1em;
+}
+
+.searchBar li{
+    padding: 5px 20px;
+    
+}
+
+.join {
+    border: 1px solid lightgrey;
+}
+
+/* Section 1 */
+#build-amazing-things{
+    
+    height: 600px;
+    background-color: rgba(232,217,217,.3);
+    text-align: center;
+}
+
+h1 {
+    font-size: 70px;
+    margin: 0px;
+    padding-top: 100px;
+    font-weight: bolder;
+}
+
+.build-amazing-things p {
+    font-size: 20px;
+    padding: 0px 410px;
+    margin-top: 80px;
+}
+
+.build-amazing-things ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.build-amazing-things li, a {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.build-amazing-things a {
+    border: none;
+    margin: 0px 25px;
+    padding: 15px 40px;
+    font-weight: bolder;
+}
+
+.plans-btn {
+    background-color: #fb3e44;
+    color: white;
+    box-shadow: 7px 7px 2px 1px rgba(200, 0, 0, .2);
+}
+
+.join-btn{
+    background-color: white;
     color: black;
 }
+
+/* Section 2 */
+
+
+
+
 
 
 

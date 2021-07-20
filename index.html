@@ -20,10 +20,10 @@
 <header id="header">
     <div class="header-container">
         <div class="black-heart-logo">
-            <img class="black-heart"
+            <img class="blackHeart"
                 src="images/black-heart.png"
                 alt="heart image">
-            <span>NPM Clone Nifty Penguin Magic</span>
+            <span>Nifty Penguin Magic</span>
         </div>
         <nav>
             <ul>
@@ -36,32 +36,37 @@
             </ul>
         </nav>
     </div>
-    <div class="search-bar">
+    <div class="searchBar">
         <img src="images/npm-logo.png"
             alt="npm logo">
-        <form action="search-bar">
-            <img src="images/magnifying-glass.png"
-                alt="search bar icon">
-            <input type="search"
+        <form action="search">
+            <img class="search-icon"
+                src="images/magnifying-glass.png"
+                alt="search-icon">
+            <input placeholder="Search Packages"
+                type="search"
                 name=""
                 id="">
             <button>Search</button>
         </form>
         <ul>
-            <li><a href="#">Join</a></li>
-            <li><a href="#">Log In</a></li>
+            <li class="join"><a href="#">Join</a></li>
+            <li class="logIn"><a href="#">Log In</a></li>
         </ul>
     </div>
 </header>
-<section id="build-amazing-things">
+<section id="build-amazing-things"
+    class="build-amazing-things">
     <h1>Build amazing
         things</h1>
     <p> Essential JavaScript development tools that help you go to market faster and build powerful applications using
         modern open source code.</p>
     <div>
         <ul>
-            <li><a href="">See plans</a></li>
-            <li><a href="">Join for free</a></li>
+            <li><a class="plans-btn"
+                    href="">See plans</a></li>
+            <li><a class="join-btn"
+                    href="">Join for free</a></li>
         </ul>
     </div>
 </section>
