@@ -7,6 +7,8 @@
         content="IE=edge">
     <meta name="viewport"
         content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="style.css">
     <title>npm html/css ex</title>
 </head>
 
@@ -16,22 +18,25 @@
 
 </html>
 <header id="header">
-    <div>
-        <div>
-            <img src="images/black-heart.png"
+    <div class="header-container">
+        <div class="black-heart-logo">
+            <img class="black-heart"
+                src="images/black-heart.png"
                 alt="heart image">
-            <p>NPM Clone Nifty Penguin Magic</p>
+            <span>NPM Clone Nifty Penguin Magic</span>
         </div>
-        <ul>
-            <li><a href="#">npm Enterprise</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">Solutions</a></li>
-            <li><a href="#">Resources</a></li>
-            <li><a href="#">Docs</a></li>
-            <li><a href="#">Support</a></li>
-        </ul>
+        <nav>
+            <ul>
+                <li><a href="#">npm Enterprise</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Solutions</a></li>
+                <li><a href="#">Resources</a></li>
+                <li><a href="#">Docs</a></li>
+                <li><a href="#">Support</a></li>
+            </ul>
+        </nav>
     </div>
-    <nav>
+    <div class="search-bar">
         <img src="images/npm-logo.png"
             alt="npm logo">
         <form action="search-bar">
@@ -46,7 +51,7 @@
             <li><a href="#">Join</a></li>
             <li><a href="#">Log In</a></li>
         </ul>
-    </nav>
+    </div>
 </header>
 <section id="build-amazing-things">
     <h1>Build amazing
