@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Git exercise</title>
   </head>
   <body>
@@ -28,17 +29,23 @@
           </ul>
         </nav>
       </div>
-      <div>
-        <img src="./images/npm-logo.png" alt="npm logo" />
-
-        <form action="#" method="post">
-          <img src="./images/magnifying-glass.png" alt="search icon" />
-          <input type="text" placeholder="Search packages" />
-          <button type="submit">Search</button>
-        </form>
-        <a href="#">Join</a>
-        <a href="#">Log In</a>
-        <!-- add logo, search bar and buttons (or links and style them as buttons later) -->
+      <div id="secondary-nav">
+        <div id="secondary-nav-wrapper">
+          <img class="npm" src="./images/npm-logo.png" alt="npm logo" />
+          <div id="form-wrapper">
+            <form action="#" method="post">
+              <img
+                class="search-icon"
+                src="./images/magnifying-glass.png"
+                alt="search icon"
+              />
+              <input type="text" placeholder="Search packages" />
+              <button class="btn btn-search" type="submit">Search</button>
+            </form>
+          </div>
+          <a class="btn btn-join" href="#">Join</a>
+          <a class="btn btn-login" href="#">Log In</a>
+        </div>
       </div>
     </header>
     <section id="call-to-action">
