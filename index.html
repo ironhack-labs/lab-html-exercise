@@ -4,7 +4,168 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <meta name="author" content="Ricardo Zurita" />
+        <title>npm clone</title>
+        <link rel="stylesheet" href="/css/normalize.css" />
+        <link rel="stylesheet" href="/css/styles.css" />
     </head>
-    <body></body>
+    <body>
+        <!-- ------------------ HEADER ------------------ -->
+        <header class="header">
+            <!-- ------------------ NAV MENU ------------------ -->
+            <nav class="nav">
+                <div class="heart-logo">
+                    <img
+                        src="/images/black-heart.png"
+                        alt="Black heart"
+                        class="heart__img"
+                    />
+                    <p class="logo__text">Neverending Pun Machine</p>
+                </div>
+                <div class="menu">
+                    <ul class="menu__list">
+                        <a href="#" class="menu__link"
+                            ><li class="list__item">npm Enterprise</li></a
+                        >
+                        <a href="#" class="menu__link"
+                            ><li class="list__item">Products</li></a
+                        >
+                        <a href="#" class="menu__link"
+                            ><li class="list__item">Solutions</li></a
+                        >
+                        <a href="#" class="menu__link"
+                            ><li class="list__item">Resources</li></a
+                        >
+                        <a href="#" class="menu__link"
+                            ><li class="list__item">Docs</li></a
+                        >
+                        <a href="#" class="menu__link">
+                            <li class="list__item">Support</li></a
+                        >
+                    </ul>
+                </div>
+            </nav>
+            <!-- ------------------ SEARCH BAR ------------------ -->
+            <div class="search__container">
+                <img
+                    src="/images/npm-logo.png"
+                    alt="npm logo"
+                    class="logo__img"
+                />
+                <div class="seacrh__bar">
+                    <img
+                        src="/images/magnifying-glass.png"
+                        alt="magnifying glass"
+                        class="search__icon"
+                    />
+                    <input
+                        type="text"
+                        placeholder="Search packages"
+                        class="search__text"
+                    />
+                    <a href="" class="search__btn">Search</a>
+                </div>
+                <!-- ------------------ USER LOGIN ------------------ -->
+                <div class="user__login">
+                    <a href="#" class="login__btn">Join</a>
+                    <a href="#" class="login__btn login__btn--noborder"
+                        >Log In</a
+                    >
+                </div>
+            </div>
+        </header>
+
+        <!-- ------------------ MAIN ------------------ -->
+        <main class="main">
+            <!-- ------------------ HERO SECTION ------------------ -->
+            <section class="hero">
+                <h1 class="hero__title">Build amazing things</h1>
+                <p class="hero__copy">
+                    Essential JavaScript development tools that help you go to
+                    market faster and build powerful applications using modern
+                    open source code.
+                </p>
+                <div class="cta__container">
+                    <a href="#" class="cta__btn">See plans</a>
+                    <a href="#" class="cta__btn cta__btn--noshadow"
+                        >Join for free</a
+                    >
+                </div>
+            </section>
+            <!-- ------------------ ABOUT SECTION ------------------ -->
+            <section class="about container">
+                <img
+                    src="/images/triangle-hexagon.svg"
+                    alt="triangle hexagon"
+                    class="hexagon__img"
+                />
+                <h2 class="about__title">
+                    Bring the best of open source to your company
+                </h2>
+                <p class="about__copy">
+                    npm is the tool used by over 11,000,000 JavaScript
+                    developers around the world. Your developers already use it.
+                    Your company depends on it. Create an Org and get more out
+                    of the tools your team already knows and loves.
+                </p>
+            </section>
+            <!-- ------------------ SERVICES SECTION ------------------ -->
+            <section class="services">
+                <div class="service__container">
+                    <img
+                        src="/images/zero-configuration.svg"
+                        alt="pointer"
+                        class="service__img"
+                    />
+                    <h2 class="service__title">Zero configuration</h2>
+                    <p class="service__copy">
+                        Create an org, add your team, and start collaborating.
+                        Nothing to configure, set up, or manage.
+                    </p>
+                </div>
+                <div class="service__container">
+                    <img
+                        src="/images/team-management.svg"
+                        alt="group of people"
+                        class="service__img"
+                    />
+                    <h2 class="service__title">Team management</h2>
+                    <p class="service__copy">
+                        Control who has access to what modules within your team
+                        namespace using straightforward team management
+                        capabilities.
+                    </p>
+                </div>
+                <div class="service__container">
+                    <img
+                        src="/images/familiar-features.svg"
+                        alt="balance"
+                        class="service__img"
+                    />
+                    <h2 class="service__title">Familiar features</h2>
+                    <p class="service__copy">
+                        npm Orgs has 100% parity with all the public npm
+                        registry features your developers already use.
+                    </p>
+                </div>
+                <div class="service__container">
+                    <img
+                        src="/images/npm-audit.svg"
+                        alt="vinoculars"
+                        class="service__img"
+                    />
+                    <h2 class="service__title">npm audit</h2>
+                    <p class="service__copy">
+                        Enjoy the security auditing features built into the npm
+                        client, a zero-friction way to make open source software
+                        safer.
+                    </p>
+                </div>
+            </section>
+        </main>
+        <!-- ------------------ FOOTER ------------------ -->
+        <footer class="footer">
+            <a href="#" class="footer__btn cta__btn">Create an Org</a>
+        </footer>
+    </body>
 </html>

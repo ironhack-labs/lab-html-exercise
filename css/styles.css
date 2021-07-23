@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Arimo&family=Poppins:wght@100;400;500;700&family=Source+Code+Pro:wght@200;400&display=swap");
+
+/*-------------------- VARIABLES --------------------*/
+:root {
+    --bgcolor: #f8f4f4;
+    --red: #fa3c49;
+    --gray: #f2f2f2;
+    --yellow: #ffebb5;
+    --text: rgb(34, 34, 34);
+    --secondFont: "Arimo", sans-serif;
+    --thirdFont: "Source Code Pro", monospace;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+/*-------------------- NAV MENU --------------------*/
+.nav {
+    box-shadow: 0px 3px 3px -3px rgba(0, 0, 0, 0.281);
+    display: flex;
+    font-size: 1.4rem;
+    font-weight: bold;
+    justify-content: space-between;
+    padding: 3rem 5rem 2rem;
+}
+
+.heart__img {
+    display: inline-block;
+    margin-right: 2rem;
+    width: 2rem;
+}
+
+.logo__text {
+    color: var(--text);
+    display: inline-block;
+}
+
+.menu__list {
+    display: flex;
+    gap: 3rem;
+}
+
+.menu__link {
+    color: black;
+    text-decoration: none;
+}
+
+.list__item {
+    color: var(--text);
+    list-style: none;
+}
+
+/*-------------------- SEARCH BAR --------------------*/
+.search__container {
+    box-shadow: 0px 3px 5px -3px rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1rem 0;
+    position: relative;
+}
+
+.logo__img {
+    display: inline-block;
+    width: 6.5rem;
+}
+
+.search__icon {
+    position: absolute;
+    top: 36%;
+    left: 12%;
+    width: 18px;
+}
+
+.search__text {
+    display: inline-block;
+    background-color: var(--gray);
+    border: none;
+    font-family: var(--thirdFont);
+    height: 4rem;
+    padding-left: 5rem;
+    width: 1000px;
+}
+
+.search__btn {
+    background-color: var(--red);
+    color: white;
+    display: inline-block;
+    font-size: 1.4rem;
+    text-decoration: none;
+    padding: 1.2rem 1.5rem;
+}
+
+.user__login {
+    display: flex;
+    gap: 2rem;
+}
+
+.login__btn {
+    border: 1px solid var(--text);
+    box-shadow: inset 0.5px 0.5px var(--text);
+    color: var(--text);
+    font-size: 1.3rem;
+    text-decoration: none;
+    padding: 0.7rem 1.8rem;
+}
+
+.login__btn--noborder {
+    border: none;
+    box-shadow: none;
+}
+
+/*-------------------- HERO SECTION --------------------*/
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.hero {
+    background-color: var(--bgcolor);
+    height: 58rem;
+    text-align: center;
+    margin-bottom: 10rem;
+}
+
+.hero__title {
+    color: var(--text);
+    font-size: 8rem;
+    font-weight: bolder;
+    padding-top: 12rem;
+    margin-bottom: 5rem;
+}
+
+.hero__copy {
+    color: var(--text);
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-bottom: 5rem;
+    padding: 0 49rem;
+}
+
+.cta__container {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.cta__btn {
+    background-color: var(--red);
+    box-shadow: 7px 7px 0px 1px #fa3c492d;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 1.8rem 7rem;
+}
+
+.cta__btn--noshadow {
+    background-color: white;
+    box-shadow: none;
+    color: var(--text);
+}
+
+/*-------------------- ABOUT SECTION --------------------*/
+.about {
+    margin-bottom: 15rem;
+    text-align: center;
+}
+
+.hexagon__img {
+    margin-bottom: 5rem;
+    width: 23%;
+}
+
+.about__title {
+    background-color: var(--yellow);
+    color: var(--text);
+    clip-path: polygon(0 0, 99% 0, 100% 100%, 1% 100%);
+    font-size: 3rem;
+    margin: 0 auto 3rem;
+    width: 80rem;
+}
+
+.about__copy {
+    color: var(--text);
+    font-size: 1.4rem;
+    line-height: 1.5;
+    padding: 0 16rem;
+}
+
+/*-------------------- SERVICES SECTION --------------------*/
+.services {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5rem;
+    padding: 0 20rem;
+}
+
+.service__img {
+    margin-bottom: 1.8rem;
+    width: 30px;
+}
+
+.service__title {
+    color: var(--red);
+    font-size: 1.6rem;
+    margin-bottom: 3rem;
+}
+
+.service__copy {
+    color: var(--text);
+    font-size: 1.5rem;
+    margin-bottom: 10rem;
+}
+
+/*-------------------- FOOTER SECTION --------------------*/
+.footer {
+    margin-bottom: 10rem;
+    text-align: center;
+}
+
+.footer__btn {
+    background-color: black;
+    box-shadow: 7px 7px 0px 1px #8352522a;
+    margin: 0 auto;
+    padding-left: 14rem;
+    padding-right: 14rem;
+}
