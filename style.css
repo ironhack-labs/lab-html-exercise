@@ -1,0 +1,266 @@
+/*
+npm clone
+lab-html-exercise
+Prework WDFT AUG2021 BER
+Esteban Pettinari
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body {
+    font-family: 'Poppins';
+}
+
+
+
+/* ---------- HEADER ---------- */
+
+    /*    --- First line ---   */
+
+header > div {
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+}
+  
+nav {
+    width: 600px;
+}
+  
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+nav a {
+    text-decoration: none;
+    color: black;
+}
+  
+.black-heart {
+    width: 20px;
+    margin-right: 1rem;
+}
+
+    /*    --- Second line ---   */
+
+.header-second-line {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.npm-logo {
+    width: 60px;
+}
+
+.search-form {
+    display: flex;
+    justify-content: space-between;
+    width: 800px;
+    height: 40px;
+    background-color: rgba(0,0,0,.05);
+}
+
+#magnifying-glass {
+    width: 15px;
+    background-color: rgba(0,0,0,.05);
+    padding: 13px;
+}
+
+#search-input {
+    margin-left: 0px;
+    width: 800px;
+    background-color: transparent;
+    border-color: transparent;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#search-button {
+    font-family: 'Poppins';
+    background-color: #fb3e44;
+    color: white;
+    width: 80px;
+    position: absolute right;
+    box-shadow: transparent;
+}
+
+.join-login a {
+    text-decoration: none;
+    font-size: 0.9em;
+    padding: 0 20px 0 20px;
+    color: grey;
+}
+
+#join-link {
+   border-style: solid;
+   border-color: grey;
+}
+
+
+
+
+
+
+/* ---------- SECTION 1 ---------- */
+
+.section-1 {
+    height: 500px;
+    background-color: rgba(232,217,217,.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#s1-title {
+    font-size: 4em;
+    font-weight: bolder;
+}
+
+#s1-article {
+    width: 500px;
+    text-align: center;
+    text-justify: distribute;
+    font-size: 1.1em;
+}
+
+.s1-links {
+    font-family: 'Poppins';
+    font-size: 1.1em;
+    text-align: center;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 500px;
+    padding: 30px 0 100px 0;
+}
+
+#see-plans {
+    background-color: #FB3B49;
+    color: white;
+    text-decoration: none;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+    width: 200px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#join-for-free {
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+/* ---------- SECTION 2 ---------- */
+
+.section-2 {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    /*justify-content: space-around;*/
+    align-items: center;
+}
+
+#triangle-hexagon {
+    width: 200px;
+    margin: 80px 0 50px 0;
+}
+
+#s2-title {
+    font-style: italic;
+    font-weight: bolder;
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+    width: 600px;
+    text-align: center;
+}
+
+#s2-article {
+    width: 550px;
+    font-size: 0.8em;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+
+
+
+/* ---------- SECTION 3 ---------- */
+
+.section-3 {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 100px;
+}
+
+.containers {
+    width: 1000px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: top;
+}
+
+.containers div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: left;
+    width: 200px;
+}
+
+.section-3 svg {
+    width: 30px;
+    height: 30px;
+}
+
+.section-3 h3 {
+    color: #ED1C24;
+    font-size: 0.9em;
+    font-weight: bolder;
+}
+
+.section-3 p {
+    font-size: 0.8em;
+}
+
+#create-org-link {
+    margin-top: 50px;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    height: 50px;
+    width: 300px;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
