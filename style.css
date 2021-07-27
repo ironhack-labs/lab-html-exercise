@@ -1,60 +1,66 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
 body {
-  font-family: 'Poppins';
+font-family: 'Poppins';
 }
 
+
+
+/* Upper Header */
 header > div {
     padding: 0 25px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid lightgray;
-  }
-  
-  nav {
+}
+
+nav {
     width: 600px;
-  }
-  
-  nav ul {
+}
+
+nav ul {
     list-style: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-  
-  nav a {
+}
+
+nav a {
     text-decoration: none;
     color: black;
-  }
-  
-  .blackHeart {
+}
+
+.blackHeart {
     width: 20px;
     margin-right: 1rem;
-  }
+}
 
-  .npmlogo{
+
+
+/* Lower Header */
+.npmlogo{
     width: 80px;
-  }
+}
 
-  .magnifyingGlass{
+.magnifyingGlass{
     width: 13px;
     background-color: rgb(241,241,241);
     border-radius:  5px 0 0 5px;
     border: 14.5px solid rgb(241,241,241);
-  }
+}
 
-  .searchInput{
-      /* Used code for this selector from here: https://www.w3schools.com/css/css_form.asp */
-      padding: 12px 5px;
-      border-radius: 0 5px 5px 0;
-      margin: 8px 0;
-      box-sizing: border-box;
-      border: rgba(0,0,0,.05);
-      background-color: rgba(0,0,0,.05);
+.searchInput{
+    /* Used code for this selector from here: https://www.w3schools.com/css/css_form.asp */
+    padding: 12px 5px;
+    border-radius: 0 5px 5px 0;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: rgba(0,0,0,.05);
+    background-color: rgba(0,0,0,.05);
 
-      font-size: 16px;
-  }
+    font-size: 16px;
+}
 
 
 form{
@@ -64,32 +70,85 @@ form{
     margin: 0;
 }
 
-  .lowerHeader{
+.lowerHeader{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-  }
+}
 
-  .searchButton{
-      color: white;
-      border: rgba(0,0,0,.05);
-      background-color: #fb3e44;
-      padding: 9px;
-      font-family: 'Poppins';
-  }
+.searchButton{
+    color: white;
+    border: rgba(0,0,0,.05);
+    background-color: #fb3e44;
+    padding: 9px;
+    font-family: 'Poppins';
+}
 
-  .joinButton{
-      margin-right: 15px;
+.joinButton{
+    margin-right: 15px;
     color: 393736;
     text-decoration: none;
     padding: 6px;
     padding-left: 15px;
     padding-right: 15px;
     border: 0.1px solid rgb(100,100,100);
-  }
+}
 
-  .loginButton{
+.loginButton{
     color: #393736;
     text-decoration: none;
-  }
+}
+
+
+
+/* Main Section */
+#mainSection{
+    padding-top: 142px;
+    padding-bottom: 125px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    text-align: center;
+
+
+
+    background-color: rgba(232,217,217,.3);
+}
+
+#mainSection > div{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    width: 30%;
+
+}
+
+h1{
+    font-size: 72px;
+}
+
+.tagline{
+    width: 30%;
+    margin: 0 auto;
+}
+
+.plansButton{
+    color: white;
+    text-decoration: none;
+    background-color: #fb3e44;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+    padding: 9px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.joinFreeButton{
+    color: #393736;
+    text-decoration: none;
+}
