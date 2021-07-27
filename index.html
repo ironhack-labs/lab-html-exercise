@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="./style.css" />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clone Assesment</title>
     <header>
         <div id="top_container">
-            <div id="heart_icon">
-                <img src="/images/black-heart.png" alt="black heart icon"/>
+            <div id="heart_icon_container">
+                <img class="blackheart" src="/images/black-heart.png" alt="black heart icon"/>
                 <span> Nifty Penguin Magic </span>
             </div>
             <nav>
@@ -23,91 +24,75 @@
             </nav>
         </div>
         <div class="top-container2">
-            <img src="/images/npm-logo.png" alt="npm logo">
-            <form action="search" placeholder="search packages">
-                <img src="/images/magnifying-glass.png" alt="maginifying glass icon">
-                <input type="text">
-                <button>Search</button>
+            <img id="npm-logo" src="/images/npm-logo.png" alt="npm logo">
+            <form id="form" action="search" placeholder="search packages">
+                <img id="magnifying-icon" src="/images/magnifying-glass.png" alt="maginifying glass icon">
+                <input id="searchbar" type="text" placeholder="Search packages">
+                <button id="button-search">Search</button>
             </form>
-            <a href="#">Join</a>
-            <a href="#">Log in</a>
+            <div id="login">
+                <a id="join" href="#">Join</a>
+                <a href="#">Log in</a>
+            </div>
         </div>
     </header>
 </head>
 <body>
-    <section>
+    <section id="first-section">
         <h1>Build amazing things</h1>
-        <article>
-            Essential JavaScript development tools that help you go to market faster and build powerful applications using open source code.
+        <article id="article1">
+            Essential JavaScript development tools that help you go to market faster and build powerful applications using modern open source code.
         </article>
-        <div>
-            <a href="#">See plans</a>
-            <a href="#">Join for free</a>
+        <div id="plans-buttons">
+            <button class="button-link1">See plans</button>
+            <button class="button-link2">Join for free</button>
         </div>
     </section>
-    <section>
-        <img src="/images/triangle-hexagon.svg" alt="hexagonal triangles logo icon thingy">
+    <section id="second-section">
+        <img id="hexagon" src="/images/triangle-hexagon.svg" alt="hexagonal triangles logo icon thingy">
         <h3>Bring the best of open source to your company</h3>
-        <article>
+        <article id="article2">
             npm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it.
             Create an Org and get more out of the tools your team already knows and loves.
         </article>
     </section>
-    <section>
-        <div>
-            <div>
-                <img src="/images/zero-configuration.svg" alt="zero configuration icon">
+    <section id="third-section">
+        <div class="main-div">
+            <div class="div-containers">
+                <img class="section3icons" src="/images/zero-configuration.svg" alt="zero configuration icon">
                 <h4>Zero configuration</h4>
-                <article>
+                <article class="section3article">
                     Create an org, add your team, and start collaborating.
                     Nothing to configure, set up, or manage.
                 </article>
             </div>
-            <div>
-                <img src="/images/team-management.svg" alt="team management icon">
+            <div class="div-container">
+                <img class="section3icons" src="/images/team-management.svg" alt="team management icon">
                 <h4>Team management</h4>
-                <article>
+                <article class="section3article">
                     Control who has access to what modules within your team 
                     namespace using straightforward team management capabilities.
                 </article>
             </div>
-            <div>
-                <img src="/images/familiar-features.svg" alt="familar features icon">
+            <div class="div-container">
+                <img class="section3icons" src="/images/familiar-features.svg" alt="familar features icon">
                 <h4>Familiar features</h4>
-                <article>
+                <article class="section3article">
                     npm Orgs has 100% parity with all the public 
                     npm registry features your developers already use.
                 </article>
             </div>
-            <div>
-                <img src="/images/npm-audit.svg" alt="npm audit icon">
+            <div class="div-container">
+                <img class="section3icons" src="/images/npm-audit.svg" alt="npm audit icon">
                 <h4>npm audit</h4>
-                <article>
+                <article class="section3article">
                     Enjoy the security auditing features built into the npm client, 
                     a zero-friction way to make open source software safer.
                 </article>
             </div>
             
         </div>
-        <a href="#">Create an Org</a>
+        <button class="button-org">Create an Org</button>
     </section>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!--    Create an Org -->
