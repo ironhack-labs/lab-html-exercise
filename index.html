@@ -20,53 +20,53 @@
       </nav>
     </div>
   
-    <div>
-      <img src="./images/npm-logo.png" alt="logo">
-      <form action="" method="post">
-        <img src="./images/magnifying-glass.png" alt="lupa">
-        <input type="text" name="search" id="search" placeholder="Search packages">
+    <div class = "logo-bar"> 
+      <img class="logo" src="./images/npm-logo.png" alt="logo">
+      <form class="form-search" action="" method="post">
+        <label for="search"><img class = "lupa" src="./images/magnifying-glass.png" alt="lupa"></label>
+        <input type="search" name="search" id="search" placeholder="Search packages">
         <button type="submit">Search</button>
       </form>
-      <a href="#">Join</a>
-      <a href="#">Log In</a>
+      <div class="logo-btns">
+        <a class="join-btn" href="#">Join</a>
+        <a class="login-btn"href="#">Log In</a>
+      </div>
     </div>
 </header>
 <section id="first">
     <h1>Build amazing things</h1>
-    <p>Essential JavaScript development tools that help you go to market faster and build powerful applications using modern open source code.</p>
-    <a href="#">See plans</a>
-    <a href="#">Join for free</a>
+    <article>Essential JavaScript development tools that help you go to market faster and build powerful applications using modern open source code.</article>
+    <div>
+      <a href="#">See plans</a>
+      <a href="#">Join for free</a>
+    </div>
 </section>
 <section id="second">
     <img src="./images/triangle-hexagon.svg" alt="hexagon">
     <h2>Bring the best of open source to your company</h2>
-    <p>npm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it. Create an Org and get more out of the tools your team already knows and loves.</p>
+    <article>npm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it. Create an Org and get more out of the tools your team already knows and loves.</article>
 </section>
-<section id="third">
+<section id="third"> 
     <div>
-        <article>
-            <img src="./images/zero-configuration.svg" alt="zero-configuration">
-            <h3>Zero configuration</h3>
-            <p>Create an org, add your team, and start collaborating. Nothing to configure, set up, or manage.</p>
-        </article>
-        <article>
-            <img src="./images/team-management.svg" alt="team-management">
-            <h3>Team management</h3>
-            <p>Control who has access to what modules within your team namespace using straightforward team management capabilities.</p>
-        </article>
-        <article>
-            <img src="./images/familiar-features.svg" alt="familiar-features">
-            <h3>Familiar features </h3>
-            <p>npm Orgs has 100% parity with all the public npm registry features your developers already use.</p>
-        </article>
-        <article>
-            <img src="./images/npm-audit.svg" alt="npm-audit">
-            <h3>npm audit </h3>
-            <p>Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer. </p>
-        </article>
+        <img src="./images/zero-configuration.svg" alt="zero-configuration">
+        <h3>Zero configuration</h3>
+        <p>Create an org, add your team, and start collaborating. Nothing to configure, set up, or manage.</p>
     </div>
     <div>
-        <a href="#">Create an Org</a>
+        <img src="./images/team-management.svg" alt="team-management">
+        <h3>Team management</h3>
+        <p>Control who has access to what modules within your team namespace using straightforward team management capabilities.</p>
     </div>
+    <div>
+        <img src="./images/familiar-features.svg" alt="familiar-features">
+        <h3>Familiar features </h3>
+        <p>npm Orgs has 100% parity with all the public npm registry features your developers already use.</p>
+    </div>
+    <div>
+        <img src="./images/npm-audit.svg" alt="npm-audit">
+        <h3>npm audit </h3>
+        <p>Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer. </p>
+    </div>
+    <button>Create an Org</button>
 </section>
-</body>
+</body> 
