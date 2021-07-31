@@ -15,7 +15,7 @@
         <div>
             <div>
               <img class="blackHeart" src="images/black-heart.png" alt="black heart" />
-              <span> Nifty Penguin Magic </span>
+              <span> Neverending Pun Machine </span>
             </div>
             <nav class="nav-bar">
                 <ul class="nav-bar-ul">
@@ -31,8 +31,8 @@
         <!-------- SEARCH HEADER -------->  
         <div>
             <img  class="npm"src="images/npm-logo.png" alt="npm logo">
-            <form action="">
-                <input type="text" placeholder="Search packages" name="search">
+            <form action="/search" method="POST">
+                <input type="search" placeholder="Search packages" name="search">
                 <button type="submit">Search</button>
             </form>
             <div class="buttons-bar">
@@ -91,7 +91,9 @@
                 <p>Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer.</p>
             </article>
         </div>
-        <a class="black-button button" href="#">Create an Org</a>
+        <div  class="black-button button">
+            <a href="#">Create an Org</a>
+        </div>
     </section>
 </body>
 </html>
