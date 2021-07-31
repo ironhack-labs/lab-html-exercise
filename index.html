@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Npm</title>
+    <title>npm</title>
     <link rel="stylesheet" href="/style.css">
 </head>
 <body>
@@ -25,26 +25,26 @@
             </ul>
           </nav>
         </div>
-      
-        <div>
+        <div class="npmdiv">
           <!-- add logo, search bar and buttons (or links and style them as buttons later) -->
-          <img class="npmlogo" src="images/npm-logo.png" alt="npm logo" />
-          <form class="search-form" action="/search" method="get">
-            <div class="search-bar">              
-              <label for="searchnpm"><img class="magniglass" src="images/magnifying-glass.png" alt="magniglass" /></label>
-              <input type="text" id="searchword" name="searchnpm" placeholder="Search packages">
-              <button type="submit" class="#" title="Submit">Search</button>
-              <button type="submit">Join</button>
-              <button type="submit">Log in</button>
-            </div>
+            <img class="npmlogo" src="images/npm-logo.png" alt="npm logo" />
+            <form class="search-form" action="/search" method="get">
+                <label for="searchnpm"><img class="magniglass relative" src="images/magnifying-glass.png" alt="magniglass" /></label>
+                <input type="text" id="searchword" name="searchnpm" placeholder="Search packages">
+                <button type="submit" class="relative" title="Submit">Search</button>
+            </form>
+            <div class="rightbuttons relative">
+                <button type="submit">Join</button>
+                <button type="submit" id="btn2">Log in</button>
+            </div> 
         </div>
     </header>
     <section id="section-1">
-        <h1>Build amazing things </h1>
-        <article>Essential JavaScript development tools that help you go to market faster and build powerful applications using modern open source code.</article>
+        <h1 class="relative">Build amazing things </h1>
+        <article class="relative">Essential JavaScript development tools that help you go to market faster and build powerful applications using modern open source code.</article>
         <div>
-            <button type="submit">See plans</button>
-            <button type="submit">Join for free</button>
+            <button type="submit" class="seeplbtn">See plans</button>
+            <button type="submit" class="joinfreebtn">Join for free</button>
         </div>
 
     </section>
@@ -80,14 +80,13 @@
             <h4>npm audit</h4>
             <p>Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer.</p>
 
-        </div>
-        <div class="#">
-            <button>
-                Create an Org
-            </button>
-          </div>
-          
+        </div>   
     </section>
+    <div class="lastone">    
+        <button class="lastbutton">
+            Create an Org
+        </button>
+    </div>
 </body>
 </html>
 
