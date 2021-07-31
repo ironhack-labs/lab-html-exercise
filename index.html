@@ -31,10 +31,17 @@
         <!-------- SEARCH HEADER -------->  
         <div>
             <img  class="npm"src="images/npm-logo.png" alt="npm logo">
-            <form action=""></form>
-            <a href="">Search</a>
-            <a href="">Join</a>
-            <a href="">Log In</a>
+            <form action="">
+                <input type="text" placeholder="Search packages" name="search">
+                <button type="submit">Search</button>
+            </form>
+            <div class="buttons-bar">
+                <ul class="buttons-bar-ul">
+                    <li><a class="join-button button" href="">Join</a></li>
+                    <li><a class="login-button button" href="">Log In</a></li>
+                </ul>  
+            </div>
+                     
         </div>
     </header>
  
@@ -46,8 +53,8 @@
                 modern open source code.</p>
         </article>
         <div>
-            <a href="">See plans</a>
-            <a href="">Join for free</a>
+            <a class="red-button button" href="">See plans</a>
+            <a class="white-button button" href="">Join for free</a>
         </div>
     </section>
 
@@ -84,7 +91,7 @@
                 <p>Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer.</p>
             </article>
         </div>
-        <a href="#">Create an Org</a>
+        <a class="black-button button" href="#">Create an Org</a>
     </section>
 </body>
 </html>
