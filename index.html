@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>NPM Clone</title>
+  <link rel="stylesheet" href="./style.css"/>
+  <meta charset="UTF-8">
+  <title>NPM Clone</title>
 </head>
 <body>
+
     <header>
         <div>
           <div>
@@ -22,20 +24,22 @@
             </ul>
           </nav>
         </div>
-        <div>
+        <div class="search-panel">
           <!-- add logo, search bar and buttons (or links and style them as buttons later) -->
-          <img src="/images/npm-logo.png" alt="npm logo">
-          <form action="/index.html">
-            <img src="/images/magnifying-glass.png" alt="magnifying-glass">
-            <input type="text" placeholder="Search packages">
+          <img src="/images/npm-logo.png" alt="npm logo" class="logo"/>
+          <form action="/index.html" class="form">
+            <img src="/images/magnifying-glass.png" alt="magnifying-glass" class="mag-glass"/>
+            <label for="search"></label>
+            <input type="text" placeholder="Search packages" id="search"/>
             <button>Search</button>
           </form>
-          <div>  
-            <a href="#">Join</a>
-            <a href="#">Log In</a>
+          <div class="join-login">  
+            <a href="#" class="join">Join</a>
+            <a href="#" class="log-in">Log In</a>
           </div>
         </div>
       </header>
+
       <section id="general">
         <h1>Build Amazing Things</h1>
         <article>
@@ -47,8 +51,9 @@
           <a href="#">Join for free</a>
         </div>
       </section>
+
       <section id="main">
-        <img src="/images/triangle-hexagon.svg" alt="">
+        <img src="/images/triangle-hexagon.svg" alt=""/>
         <h1>Bring the best of open source to your company </h1>
         <article>
           npm is the tool used by over 11,000,000 JavaScript developers around the world. 
@@ -56,30 +61,32 @@
           Create an Org and get more out of the tools your team already knows and loves.
         </article>
       </section>
+
       <section id="features">
         <div class=features>
-          <img src="/images/zero-configuration.svg" alt="">
+          <img src="/images/zero-configuration.svg" alt=""/>
           <h3>Zero Configuration</h3>
           <p>Create an org, add your team, and start collaborating. Nothing to configure, set up, or manage.</p>
         </div>
         <div class=features>
-          <img src="/images/team-management.svg" alt="">
+          <img src="/images/team-management.svg" alt=""/>
           <h3>Team management</h3>
           <p>Control who has access to what modules within your team namespace using straightforward team 
              management capabilities.</p>
         </div>
         <div class=features>
-          <img src="/images/familiar-features.svg" alt="">
+          <img src="/images/familiar-features.svg" alt=""/>
           <h3>Familiar features</h3>
           <p>npm Orgs has 100% parity with all the public npm registry features your developers already use.</p>
         </div>
         <div class=features>
-          <img src="/images/npm-audit.svg" alt="">
+          <img src="/images/npm-audit.svg" alt=""/>
           <h3>npm audit</h3>
           <p>Enjoy the security auditing features built into the npm client, a zero-friction way to make open 
              source software safer.</p>
         </div>
         <a href="#">Create an Org</a>
       </section>
+
 </body>
 </html>
