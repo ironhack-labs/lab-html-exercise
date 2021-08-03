@@ -22,17 +22,27 @@
     </div>
     <div>
       <!-- add logo, search bar and buttons (or links and style them as buttons later) -->
-      <img src="C:\Users\juanb\Desktop\Ironhack\lab-html-exercise\images\npm-logo.png">
-      
-      
-      <img src="C:\Users\juanb\Desktop\Ironhack\lab-html-exercise\images\magnifying-glass.png">
-      <h4><a href= "Join us">Join </a></h4>
-      <h3><a href= "Login">Login </a></h3>
-      <form class="example" action="/action_page.php">
-        <input type="text" placeholder="Search.." name="search">
-        <button type="submit"><i class="submit"></i></button>
-      </form>
+      <img src="C:\Users\juanb\Desktop\Ironhack\lab-html-exercise\images\npm-logo.png"
+      height="auto"
+      width="90">
+  
+      <div id="searchbar" >
+        <img class= 'lupa' src="C:\Users\juanb\Desktop\Ironhack\lab-html-exercise\images\magnifying-glass.png"
+        height="auto"
+        width="20">
+          <input type="text" placeholder=Searchpackage name="search">
+          <button>
+            <a class ='search' href='search'>Search </a>
 
+            </button>
+        
+
+      </div>
+
+      
+      <p><a class= 'join-us' href= "Join us">Join </a></p>
+      <p><a class= 'login' href= "Login">Login </a></p>
+      
     </div>
   </header>
 
@@ -40,25 +50,31 @@
 
   <!--SECTION 1-->
   <section id='title'>
+    <div class ='section1'>
      <h1 class = 'build'>Build amazing things</h1>
-     <article></article>
+     <article>
      <p class = 'Essential'>Essential JavaScript development tools that help 
          you go to market faster and build powerful applications using
         modern open source code</p>
-    <div>
+    <div class= 'section-1-buttons'>
         <p>
-            <a  class = 'seeplans'href=#seeplans  target="_blank">See Plans</a>
-        <a class = 'joinfree' href=#joinforfree  target="_blank">Join for free</a>
+            <a  class = 'seeplans' href=#seeplans target="_blank">See Plans</a>
+        
+            <a class = 'join-free' href=#joinforfree target="_blank">Join for free</a>
         </p>
         
     </div>
-    <img class='hexagon' src=  'C:\Users\juanb\Desktop\Ironhack\lab-html-exercise\images\triangle-hexagon.svg'>
+    
     </article>
+  </div>
   </section>
 
   <!--Section 2-->
+  
   <div>
-
+    <img class='hexagon' src=  'C:\Users\juanb\Desktop\Ironhack\lab-html-exercise\images\triangle-hexagon.svg'
+    height="auto"
+        width="200">
     <section >
         <h3 class ='best'>Bring the best of open source to your company</h3>
     <article> 
@@ -76,41 +92,45 @@
     <section>
       <div>
         
-        
-        <table>
-            <img class='Zero' src ="C:\Users\juanb\Desktop\Ironhack\lab-html-exercise\images\zero-configuration.svg" >
-            <h2 class ='marginzero'>Zero configuration </h2>
-            <p class='textzero'> Create an org, add
-                your team, and start collaborating. Nothing to configure, set up, or manage.</p>
-            
-        
-        
-        
-            <img class='team'src ="C:\Users\juanb\Desktop\Ironhack\lab-html-exercise\images\team-management.svg">
-            <h2 class='team-management'> Team management</h2>
-            <p class='textteam'>Control who has access to
-                what modules within your team namespace using straightforward team management capabilities.</p>
-            
-        
-        
-        
-            <img class='familiar' src ="C:\Users\juanb\Desktop\Ironhack\lab-html-exercise\images\familiar-features.svg">
-            <h2 class ='titlefamiliar'>Familiar features</h2>
-            <p class ='textfamiliar'>npm Orgs
-                has 100% parity with all the public npm registry features your developers already use.</p>
-            
-        
-        
-        
-            <img class='audit'src='C:\Users\juanb\Desktop\Ironhack\lab-html-exercise\images\npm-audit.svg'>
-            <h2 class='titleaudit'>npm audit</h2>
-            <p class ='textaudit'>Enjoy the security
-                auditing features built into the npm client, a zero-friction way to make open source software safer.</p>
-                <br>
-            <div>
-            <a class='createorg'href="#create a org"target="_blank">Creat an org</a>
-            </div>
-          </table>
+        <ul class='container'>
+
+          <li class='flex-data'>
+          <img class='Zero' src ="C:\Users\juanb\Desktop\Ironhack\lab-html-exercise\images\zero-configuration.svg" >
+          <h2 class ='title-zero'>Zero configuration </h2>
+          <p class='textzero'> Create an org, add
+              your team, and start collaborating. Nothing to configure, set up, or manage.</p>
+          </li>
+      
+      
+          <li class='flex-data'>
+          <img class='team'src ="C:\Users\juanb\Desktop\Ironhack\lab-html-exercise\images\team-management.svg">
+          <h2 class='title-team'> Team management</h2>
+          <p class='textteam'>Control who has access to
+              what modules within your team namespace using straightforward team management capabilities.</p>
+          </li>
+      
+      
+          <li class='flex-data'>
+          <img class='familiar' src ="C:\Users\juanb\Desktop\Ironhack\lab-html-exercise\images\familiar-features.svg">
+          <h2 class ='titlefamiliar'>Familiar features</h2>
+          <p class ='textfamiliar'>npm Orgs
+              has 100% parity with all the public npm registry features your developers already use.</p>
+          </li>
+      
+      
+          <li class='flex-data'>
+          <img class='audit'src='C:\Users\juanb\Desktop\Ironhack\lab-html-exercise\images\npm-audit.svg'>
+          <h2 class='titleaudit'>npm audit</h2>
+          <p class ='textaudit'>Enjoy the security
+              auditing features built into the npm client, a zero-friction way to make open source software safer.</p>
+           </li>
+
+
+        </ul>
+          
+        </div>
+        <div class = 'create-an-org'>
+        <a class='createorg'href="#create a org"target="_blank">Creat an org</a>
         </div>
     </section>
     </body>    

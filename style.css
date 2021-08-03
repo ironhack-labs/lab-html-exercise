@@ -30,12 +30,64 @@ header > div {
   .blackHeart {
     width: 20px;
     margin-right: 1rem;
+  
   }
-.title{
-    height: 600px;
+
+ .lupa{
+    position:absolute; left: 20%;
+    padding: 13px 10px;
+    
+ }
+  .searchbar {
+    width: 90%;
+    
+    
+   
+  }
+  #searchbar input,button{
+    width: 60%;
+    border: 2px solid white;
+    border-right: 0px;
+    font-size: 18px;
+    padding:12px;
+    background:lightgray;
+    color: black;
+    
+    }
+
+    #searchbar button{
+      width: 25%;
+      background:red;
+      color: white;
+      align-items: right;
+      
+      
+    }
+
+    .join-us{
+      text-align: center;
+      margin: auto;
+      height: auto;
+      font-size: 20px;
+      padding: 13px 28px;
+      border: 1px solid #cccccc;
+      border-radius: 0;
+      color: black;
+    }
+
+    .login{
+      text-align: center;
+      margin: auto;
+      height: auto;
+      font-size: 20px;
+      padding: 5px 5px;
+      border-radius: 0;
+      color: black;
+    }
+.section1{
+    
     background-color: rgba(232,217,217,.3);
-    justify-content: center;
-    display:flex
+    
     
 }
 
@@ -43,31 +95,45 @@ header > div {
       font-size: 80px;
       font-weight: bold;
       text-align: center;
+      padding-top: 10%;
   }
 
   .essential{
-      font-weight: normal;
+      font-weight: lighter;
       text-align: center;
-      font-size: 40px;
-      margin-top: 50px;
-      margin-left: 250px;
-      margin-right: 250px;
+      font-size: 20px;
+      margin-left: 10%;
+      margin-top: 5%;
+      margin-right: 10%;
+      margin-bottom: 10%;
+     
     
   }
 
+
+  .section-1-buttons{
+
+    text-align: center;
+    padding-bottom: 10%;
+  }
   .seeplans{
     background-color: #FB3B49;
     text-align: center;
     box-shadow: 8px 8px 0 rgba(251,59,73,.2);
     color: white;
     justify-content: center;
-    font-size: medium;
+    font-size: normal;
+    padding: 10px;
+    
   }
 
-  .joinfree{
-      background-color: white;
-      color: black;
-      text-align: black
+  .join-free {
+    background-color:white;
+    text-align: center;
+    color: black;
+    justify-content: center;
+    font-size: normal;
+    padding: 15px;
   }
   .best{
       background-color: rgba(255,204,53,.4);
@@ -75,106 +141,132 @@ header > div {
       font-style: italic;
       text-align: center;
       margin: auto;
-      position: relative;
-      margin-left: 400px;
-      margin-right: 400px;
-      margin-top: 20px;
+      margin-bottom: 6px;
+      font-size: x-large;
+      width: 60%;
+      
+      
   }
   .hexagon{
-     width: 1400px;
-     height: 200px;
-     display: block; 
+     margin-top: 30px;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  width: 25%;
+     
   }
 
   .npm{
-    font-weight: small;
+    font-weight: lighter;
     text-align: center;
     font-size: 15px;
-    margin-top: 50px;
-    margin-left: 400px;
-    margin-right: 400px;
+    margin-bottom: 50px;
+    padding-top: 2%;
+    padding-left: 10%;
+    padding-right: 10%;
+    
 
   }
 
   h2{
       color: #ED1C24;
+      
   }
 
 
 
-  .zero{
-    width: 300px;
-    height: 30px;
+  .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 20px;
+    
+  }
+
+  .flex-data{
+    padding: 20px;
+  width: 150px;
+  height: 300px;
+  margin-top: 100px;
+  margin-right: 50px;
+  line-height: 20px;
+  align-items: baseline;
+  
+ 
+  
+  }
+
+  .zero{ 
+    height: auto;
+    width: 40;
+    
   }
   .team{
-    width: 900px;
-    height: 30px;
+    height: auto;
+    width: 40;
     
   }
   .familiar{
-    width: 1500px;
-    height: 30px;
+    height: auto;
+    width: 40;
 
   }
   .audit{
-    width: 2100px;
-    height: 30px;
+    height: auto;
+    width: 40;
   }
 
-.marginzero{
-    margin-left: 100px;
-      margin-right: 400px;
-      margin-top: 20px;
+.title-zero{
+  font-size: small;
       
       
 }
 .textzero{
-    padding-right: 1150px;
-    padding-left: 100px;
+  font-size: x-small;
 }
 
-.team-management{
-    margin-left: 430px;
-      margin-right: 400px;
-      margin-top: 20px;
-      width:1000px;
-      vertical-align: middle;
+.title-team{
+  font-size: small;
+     
+      
+     
 }
 
 .textteam{
-    margin-left: 330px;
-    padding-right: 800px;
-    padding-left: 100px;
+  font-size: x-small;
+   
 }
 
 .titlefamiliar{
-    margin-left: 730px;
-      margin-right: 400px;
-      margin-top: 20px;
+  font-size: small;
 }
 .textfamiliar{
-    margin-left: 630px;
-    padding-right: 500px;
-    padding-left: 100px
+  font-size: x-small;
 }
 
 .titleaudit{
-    margin-left: 1030px;
-      margin-right: 200px;
-      margin-top: 20px
+  font-size: small;
 }
 .textaudit{
-    margin-left: 930px;
-    padding-right: 200px;
-    padding-left: 100px
+  font-size: x-small;
+}
+
+.create-an-org {
+
+  text-align: center;
+  padding-bottom: 10%;
+  
 }
 
 .createorg{
     background-color: black;
     box-shadow: 8px 8px 0 rgba(128,83,35,.2);
     color:white;
-    margin-left: 500px;
-    padding-right: 100px;
+    font-size: normal;
+    padding: 15px;
     padding-left: 100px;
+    padding-right: 100px;   
 
 }
+
