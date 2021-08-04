@@ -5,12 +5,17 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>NPM Clone</title>
+        <link rel="stylesheet" href="/style.css" />
     </head>
     <body>
         <header class="header">
             <div>
-                <div>
-                    <img src="/images/black-heart.png" alt="black-heart" />
+                <div class="heartText">
+                    <img
+                        src="/images/black-heart.png"
+                        class="blackHeart"
+                        alt="black-heart"
+                    />
                     <p>Neverending Pun Machine</p>
                 </div>
                 <nav>
@@ -24,62 +29,121 @@
                     </ul>
                 </nav>
             </div>
-            <div>
-                <img src="/images/npm-logo.png" alt="npm-logo" />
+            <div class="headerLowerDiv">
                 <img
-                    src="/images/magnifying-glass.png"
-                    alt="magnifying-glass"
+                    class="npmLogo"
+                    src="/images/npm-logo.png"
+                    alt="npm-logo"
                 />
-                <input type="text" placeholder="Search..." />
-                <button>Search</button>
-                <a href="#">Join</a>
-                <a href="#">Log In</a>
+                <div>
+                    <form class="searchForm" action="#">
+                        <label for="searchContent" class="formLabel">
+                            <img
+                                class="magnifyingGlass"
+                                src="/images/magnifying-glass.png"
+                                alt="magnifying-glass"
+                        /></label>
+                        <input
+                            type="text"
+                            class="searchContent"
+                            id="searchContent"
+                            placeholder="Search packages..."
+                        />
+                        <input
+                            type="submit"
+                            value="Search"
+                            class="searchButton"
+                        />
+                    </form>
+                </div>
+                <div class="buttons">
+                    <a class="joinButton" href="#">Join</a>
+                    <a class="loginButton" href="#">Log In</a>
+                </div>
             </div>
         </header>
-        <section id="1">
+        <section id="section1" class="plansSection">
             <h1>Build amazing things</h1>
             <article>
                 Essential JavaScript development tools that help you go to
                 market faster and build powerful applications using modern open
                 source code.
             </article>
-            <div>
-                <a href="#">See plans</a>
-                <a href="#">Join for free</a>
+            <div class="planButtons">
+                <a href="#" class="seePlansButton">See plans</a>
+                <a href="#" class="joinForFreeButton">Join for free</a>
             </div>
         </section>
-        <section id="2">
-            <img src="/images/triangle-hexagon.svg" alt="triangle-hexagon" />
+        <section id="section2" class="descriptionSection">
+            <img
+                src="/images/triangle-hexagon.svg"
+                class="hexagon"
+                alt="triangle-hexagon"
+            />
             <h2>Bring the best open source for your company</h2>
-            <p>
+            <p class="description">
                 npm is the tool used by over 11,000,000 JavaScript developers
                 around the world. Your developers already use it. Your company
                 dependes on it. Create an Org and get more out of the tools your
                 team already knows and loves.
             </p>
         </section>
-        <section id="3">
-            <div>
-                <img src="/images/zero-configuration.svg" alt="screen-icon" />
-                <h3>Zero Configuration</h3>
-                <p></p>
+        <section class="section3">
+            <div class="elementsSection">
+                <div class="element">
+                    <img
+                        class="elementsIcon"
+                        src="/images/zero-configuration.svg"
+                        alt="screen-icon"
+                    />
+                    <h3>Zero Configuration</h3>
+                    <p>
+                        Create an Org and get more out of the tools your team
+                        already knows and loves. Zero configuration Create an
+                        org, add your team, and start collaborating. Nothing to
+                        configure, set up, or manage.
+                    </p>
+                </div>
+                <div class="element">
+                    <img
+                        class="elementsIcon"
+                        src="/images/team-management.svg"
+                        alt="team-icon"
+                    />
+                    <h3>Team Management</h3>
+                    <p>
+                        Team management Control who has access to what modules
+                        within your team namespace using straightforward team
+                        management capabilities.
+                    </p>
+                </div>
+                <div class="element">
+                    <img
+                        class="elementsIcon"
+                        src="/images/familiar-features.svg"
+                        alt="familiar-features-icon"
+                    />
+                    <h3>Familiar features</h3>
+                    <p>
+                        npm Orgs has 100% parity with all the public npm
+                        registry features your developers already use.
+                    </p>
+                </div>
+                <div class="element">
+                    <img
+                        class="elementsIcon"
+                        src="/images/npm-audit.svg"
+                        alt="audit-icon"
+                    />
+                    <h3>npm audit</h3>
+                    <p>
+                        Enjoy the security auditing features built into the npm
+                        client, a zero-friction way to make open source software
+                        safer.
+                    </p>
+                </div>
             </div>
-            <div>
-                <img src="/images/team-management.svg" alt="team-icon" />
-                <h3>Team Management</h3>
-            </div>
-            <div>
-                <img
-                    src="/images/familiar-features.svg"
-                    alt="familiar-features-icon"
-                />
-                <h3>Familiar features</h3>
-            </div>
-            <div>
-                <img src="/images/npm-audit.svg" alt="audit-icon" />
-                <h3>npm audit</h3>
-            </div>
-            <a href="#">Create an Org</a>
+            <a href="#" class="createAnOrgButton">Create an Org</a>
         </section>
     </body>
 </html>
