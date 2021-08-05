@@ -31,9 +31,8 @@
         </nav>
       </div>
 
-      <div>
+      <div class="nav-bottom">
         <img class="logo" src="images/npm-logo.png" alt="npm logo" />
-       <span>
         <img class="magnifying-glass" src="images/magnifying-glass.png" alt="magnifying glass" />
           <form id="search">
             <input
@@ -42,15 +41,9 @@
               name="q"
               placeholder="Search packages"
             />
-            <button>Search</button>
+            <button class="nav-button">Search</button>
           </form>
-        </span>
-        <div>
-          <p><a href="#">Join</a> <a href="#">Log In</a></p>
-        </div>
-        <div>
-          <img src="images/triangle-hexagon.svg" alt="triangle hexagon" />
-        </div>
+          <p><a href="#" id="join">Join</a> <a href="#" id="login">Log In</a></p>
       </div>
     </header>
     <section id="general-info">
@@ -65,10 +58,11 @@
         </article>
       </div>
       <div>
-        <p><a href="#">See plans</a> <a href="#">Join for free</a></p>
+        <p><a href="#" class="plans-btn">See plans</a> <a href="#" class="join">Join for free</a></p>
       </div>
     </section>
     <section id="why-node">
+        <img src="images/triangle-hexagon.svg" alt="triangle-hexagon" class="tri-hex">
       <h2>Bring the best of open source to your company</h2>
       <article>
         <p>
@@ -80,32 +74,33 @@
       </article>
     </section>
     <section id="features">
-        <div>
+        <div class="container">
             <img src="images/zero-configuration.svg" alt="computer cursor">
             <h3>Zero configuration</h3>
             <p>Create an org, add your team, and start collaborating.
                 Nothing to configure, set up, or manage.</p>
         </div>
-        <div>
+        <div class="container">
             <img src="images/team-management.svg" alt="connected group">
             <h3>Team management</h3>
             <p>Control who has access to what modules within your team
                 namespace using straightforward team management capabilities.</p>
         </div>
-        <div>
+        <div class="container">
             <img src="images/familiar-features.svg" alt="balanced scale">
             <h3>Familiar features</h3>
             <p>npm Orgs has 100% parity with all the public npm registry features your
                 developers already use.</p>
         </div>
-        <div>
+        <div class="container">
             <img src="images/npm-audit.svg" alt="binoculars">
             <h3>npm audit</h3>
             <p>Enjoy the security auditing features built
                 into the npm client, a zero-friction way to make open source software safer.</p>
         </div>
-        <a href="#">Create an Org</a>
     </section>
+    <div class="org">
+        <a href="#" class="btn-org">Create an Org</a></div>
   </body>
 </html>
   
