@@ -4,16 +4,23 @@ body {
   font-family: 'Poppins';
 }
 
+header {
+   max-width: 132rem;
+   margin-left: 2px;
+   margin-right: 2px;
+}
+
 header > div {
     padding: 0 25px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid lightgray;
+    font-size: 12px;
 }
   
 nav {
-    width: 600px;
+    width: 500px;
 }
   
 nav ul {
@@ -40,39 +47,49 @@ nav a {
 }
 
 .npmLogo {
-    width: 80px;
+    width: 70px;
     margin-right: 1rem;
 }
 
+.blockSearch {
+    display: inherit;
+}
+
 .searchIcon {
-    width: 15px;
-    height: 15px;
+    width: 18px;
+    height: 18px;
     background-color: rgba(0, 0, 0, .05);
     border-bottom: 3px;
-    padding: 12px 18px 10px 8px;
+    padding: 12.5px 12px 14.5px 12px;
     margin: 0;
+    display: flex;
     justify-content: right;
+    position: relative;
 }
 
 .search-form-container {
     background-color: rgba(0, 0, 0, .05);
-    width: 1399px;
+    width: 93rem;
     height: 35px;
     border: none;
-    padding-right: 0;
-    padding-left: 0;
+    padding: 5px;
     margin-left: 0;
     margin-right: 0;
+    display: inline-block;
+    position: relative;
+    flex: 2 1 auto;
 }
 
 button {
-    height: 35px;
+    height: 45px;
     width: 95px;
     font-size: 16px;
     background-color: #fb3e44;
     color: white;
     border: none;
     margin-right: 10px;
+    display: inline-block;
+    flex: 1 1 auto;
 }
 
 .linkJoin {
@@ -92,27 +109,39 @@ button {
 }
 
 #offer {
-    height: 600px;
+    height: 500px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
-    text-align: center;
     background-color: rgba(232, 217, 217, .3);
 }
 
 h1 {
-    font-size: 5em;
+    font-size: 4.5em;
     font-weight: 10000;
     margin-top: 0px;
     margin-bottom: 0px;
 }
 
 .text {
-    width: 500px;
-    display: flex;
+    width: 480px;
+    display: inline-flex;
     text-align: center;
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 15px;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+#offer div {
+    width: 500px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
 }
 
 #tool p {
@@ -120,35 +149,31 @@ h1 {
     margin-bottom: 0;
 }
 
+#offer a {
+    display: flex;
+    text-decoration: none;
+    justify-content: space-between;
+    margin: 30px 20px;
+    padding : 15px 60px;
+}
+
 .seePlans {
     text-decoration: none;
     color: white;
     background-color: #FB3B49;
     box-shadow: 8px 8px 0 rgba(251, 59, 73, .2);
-    border: 1px solid black;
-    margin-left: auto;
-    margin-right: auto;
-    line-height: 1.5;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    padding-right: 2rem;
-    padding-left: 2rem;
-    position: absolute;
+    border: none;
+    width: 120px;
+    font-weight: bold;
 }
 
 .joinForFree {
     text-decoration: none;
     color: black;
     background-color: white;
-    border: 1px solid black;
-    margin-left: auto;
-    margin-right: auto;
-    line-height: 1.5;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    padding-right: 2rem;
-    padding-left: 2rem;
-    position: absolute;
+    border: none;
+    width: 140px;
+    font-weight: bold;
 }
 
 #tool {
@@ -161,7 +186,7 @@ h1 {
 
 #tool img {
     display: flex;
-    height: 250px;
+    height: 225px;
 }
 
 h2 {
@@ -175,6 +200,7 @@ h2 {
     padding-left: 30px;
     padding-right: 30px;
     padding-bottom: 0;
+    border-bottom: none;
 }
 
 .text2 {
@@ -184,17 +210,56 @@ h2 {
     justify-content: center;
     margin-top: 0;
     padding-top: 0;
+    border-top: 0;
 }
 
 #advantages {
     height: 600px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    width: 100%;
 }
 
-#advantages img{
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px 350px;
     display: flex;
-    width: 50px;
+    align-items: center;
+    flex-direction: row;
+  }
+
+.rowArguments {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 15px;
+    width: 25%;
+}
+
+#advantages img {
+    display: flex;
+    width: 45px;
+    justify-content: space-around;
+    margin-top: 50px 0;
+}
+
+h3 {
+    font-size: 0.9em;
+    font-weight: bolder;
+    color: #ED1C24;
+}
+
+.button {
+    display: grid;
+    align-items: baseline;
+    justify-content: center;
+}
+
+#advantages button {
+    width: 400px;
+    height: 65px;
+    font-size: 1.1em;
+    font-weight: bold;
+    background-color: black;
+    box-shadow: 8px 8px 0 rgba(128, 83 , 35, .2);
+    color: white;
 }
