@@ -1,117 +1,208 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
-
+/* general stuff */
 html,
 body {
-	 margin: 0;
-	 padding: 0;
+     margin: 0;
+     padding: 0;
 }
 
+/* sets global font */
 body {
-  font-family: 'Poppins';
+    font-family: 'Poppins';
 }
 
-header > div {
-    background-color: red;
-    padding: 0 25px;
+/* build amazing things  section 1*/
+h1 {
+    color: royalblue;
+    font-size: 4em;
+}
+
+/* bring the best section 2*/
+h2 {
+    color: seashell;
+    text-align: center;
+    font-size: 3em;
+}
+
+/* resets style of links and search */
+/* #header-bottom > a, input, button, form {*/
+.nostyle a, input {
+    background-color: greenyellow;
+    color: inherit;
+    border: none;
+    padding: 0px;
+    font-style: inherit;
+    cursor: pointer;
+    outline: none;
+}
+
+/* ------------- header stuff ------------- */
+
+#header-top {
+    background-color: lightskyblue;
+    padding: 0 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     border-bottom: 1px solid lightgray;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
-nav {
-    width: 600px
-}
-nav ul {
-    list-style: none;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-nav a {
-    text-decoration: none;
-    color: black;
-}
-
-header button, input , a {
-	background-color: greenyellow;
-	color: inherit;
-	border: none;
-	padding: 0;
-	font: inherit;
-	cursor: pointer;
-	outline: none;
-}
-
+ /* header top */
 .blackheart {
     width: 20px;
     margin-right: 1rem;
 }
 
-#header-bottom > div {
-    height: 2em;
+.magnifying {
+    width
 }
 
-#npm-logo {
-    margin: 25px;
-    height: 2em;
+/* navigation bar */
+nav {
+    width: 600px;
 }
 
-#search-bar{  
-    width: 1000px;
-    margin: 5px;
-    height:1em;
+nav ul {
+    background-color: brown;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    background-color:darkmagenta;
+    text-decoration: none;
+    color: black;
+}
+    
+/* header bottom */
+.header-bottom {
+    background-color: khaki;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    align-content: center;
 }
 
+/* npm logo */
+.header-bottom > img {
+    background-color:darkblue;
+    width: 3em;
+    border: 5px;
+    margin: 5px 10px 5px 15px;
+}
+
+/* log in and join buttons */
+.header-bottom > div > a {
+    background-color: darkolivegreen;
+    padding: 0em 0.3em;
+    color: inherit;
+    font: inherit;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    /* border: darkorange solid 1px; */
+}
+
+/* flex for searchbar and log buttons */
+.header-bottom div, form {
+    margin-right: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: flex-end;
+}
+
+/* search bar */
+#search-bar {
+    margin: 5px 0;
+    height: 2em;
+    background-color:chocolate;
+    flex-grow: 1;
+    display: flex;
+}
+
+#search-bar form {
+    flex-grow: 1;
+    height: fit-content;
+    border: 0px;
+    margin: 0px; 
+    padding-left: 5px;   
+}
+
+/* magnifying glass */
 #search-bar img{
-    height: 1em;
-    margin: 1em;
+    height: 1.5em;
+    position: relative;
 }
 
-#search-bar input[name="search"]{
-    background-color: rgb(28, 130, 12);
+/* search bar input */
+#search-bar input[type="text"] {
+    background-color: crimson;
+    flex-grow: 1;
 }
 
-.search-bar-one {
-    background-color: hotpink;
+/* join button style */
+.join-button {
+    margin-left: 1em;
+    font-weight: bold;
+    border: darkorange solid 1px;
 }
 
-.search-bar-two {
-    background-color: khaki;
-    padding: 0;
-}
-
-
-
-#join-buttons{}
-
-
-#first-section{
+#first-section {
+    background-color: mediumorchid;
+    padding: 0 25px 50px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
 
-#see-plans{}
-#join-free{}
+/* essential javascript devtools */
+#first-section article, #first-section div {
+    padding: 1.5rem 1em;
+    background-color: gold;
+    max-width: 600px;
+    text-align: center;
+}
+
+/* extra padding for the buttons */
+#first-section-buttons a {
+    padding: 2rem;
+    margin-left:1em;
+    margin-right:1em;
+}
+
+/* fisrt section buttons style */
+.red-button {
+    background-color: lightgreen;
+    box-shadow: 5px 5px darkslategray;
+}
 
 
-#second-section{
-    
+.white-button {
+    background-color: lightpink;
+}
+
+#second-section {
+    text-align: center;
+    background-color: peachpuff;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
+
+#second-section article {
+    margin: 25px;
+    max-width: 800px;
+}
+
 #second-section img {
-    width: 30%;
+    width: 25%;
+    margin: 50px;
 }
 
 #third-section{
@@ -121,6 +212,6 @@ header button, input , a {
     align-items: center;
 }
 
-#strong-points img {
-    width: 4em;
+#third-section img {
+    width: 2em;
 }

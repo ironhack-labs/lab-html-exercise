@@ -1,8 +1,10 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
-<!--   Ismael lo    -->
-<!--   06_08_2021   -->
-<!--Ironhack prework-->
+
+<!--      Ismael lo       -->
+<!--      06_08_2021      -->
+<!-- edit 07_08_2021      -->
+<!--   Ironhack prework   -->
+
 <html lang="en">
 
   <head>
@@ -15,7 +17,7 @@
 		
 	<header>
 		<!--header top part-->
-		<div> 
+		<div id="header-top"> 
 			<!--left title-->
 			<div>
 				<img class=blackheart src="./images/black-heart.png" alt="black heart">
@@ -36,37 +38,43 @@
 		</div>
 		
 		<!--header bottom part-->
-		<div id="header-bottom"> 
-			<img id="npm-logo" src="./images/npm-logo.png" alt="NPM logo">
+		<div class="header-bottom"> 
+			<img src="./images/npm-logo.png" alt="NPM logo">
 			
 			<!-- search bar -->
-			<div id="search-bar" class = "search-bar-one">
-				<a href="#" type="submit"><img src="./images/magnifying-glass.png" alt="Magnifying glass"></a>
+			<div id="search-bar">
+				
 				<form action="" method="post">
-					<input type="text" name="search" placeholder="Search package">
-					<input type="submit" value=" Search " class = "search-bar-two">
+					<a href="#" type="submit"><img src="./images/magnifying-glass.png" alt="Magnifying glass"></a>
+					<input id=search-input" type="text" name="search" placeholder="Search package">
+					<input type="submit" value="  Search  ">
 				</form>
 			</div>
 			
 			<!-- bottom header buttons -->
-			<div id="join-buttons"> 
-				<button type="submit"> Join </button>
-				<button type="submit"> Log In </button>
+			<!-- <div > class="nostyle" -->
+			<div>
+				<a href="#" class="join-button">   Join   </a>
+				<a href="#">  Log In  </a>
+				
 			</div>
 		</div>
 	</header>
 	
 	<!--sect 1 build amazing things-->
 	<section id="first-section">
-		<h1>Build Amazing Things</h1>
+		<h1> Build Amazing Things </h1>
 		<article>
-			Essential Javascript devtools Essential Javascript devtoolsEssential Javascript devtoolsEssential Javascript devtoolsnpm is the total npm is the totadevtoolsnpm is the total npm is the totadevtoolsnpm is the total npm is the total npm is the total npm is the total 
+			<p>Essential Javascript devtools Essential Javascript devtoolsEssential Javascript devtoolsEssential Javascript devtoolsnpm is the total npm is the totadevtoolsnpm is the total npm is the totadevtoolsnpm is the total npm is the total npm is the total npm is the total
+			</p>
 		</article>
 		<!-- see plans join free buttons /first-scection a /-->
-		<a href="#" id="see-plans"> See plans </a>
-		<a href="#" id="join-free"> Join for free </a>
+		<div id="first-section-buttons">
+			<a href="#" class="red-button"> See plans </a>
+			<a href="#" class="white-button"> Join for free </a>
+		</div>	
 	</section>
-	
+
 	<!--sect 2 bring the best open source-->
 	<section id="second-section"> 
 		<img src="images/triangle-hexagon.svg">
@@ -79,7 +87,7 @@
 	
 	<!--sect 3 bulletpoints-->
 	<section id="third-section">
-		<div id="strong-points">
+		<div>
 			<div>
 				<img src="./images/zero-configuration.svg">
 				<h3>Zero Configuration</h3>
@@ -107,6 +115,3 @@
   </body>
   
 </html>
-=======
-Let me try again
->>>>>>> cb422a00b524847cd331fb5e4a940586cdec7bdc
