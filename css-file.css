@@ -11,34 +11,12 @@ body {
     font-family: 'Poppins';
 }
 
-/* build amazing things  section 1*/
-h1 {
-    color: royalblue;
-    font-size: 4em;
-}
-
-/* bring the best section 2*/
-h2 {
-    background-color: wheat;
-    margin: 0;
-    padding: 0 0.6em 0 1.6em;
-    color: seashell;
-    text-align: center;
-    font-size: 3em;
-}
-
-/* zero configuration */
-h3 {
-    color: tomato;
-}
-
-/* resets style of links and search */
-/* #header-bottom > a, input, button, form {*/
+/* resets style of links and sets search */
 .nostyle a, input {
-    background-color: greenyellow;
+    background-color: rgba(232,217,217,.3);
     color: inherit;
     border: none;
-    padding: 0px;
+    padding: 0px 0.5em;
     font-style: inherit;
     cursor: pointer;
     outline: none;
@@ -47,8 +25,8 @@ h3 {
 /* ------------- header stuff ------------- */
 
 #header-top {
-    background-color: lightskyblue;
-    padding: 0 1em;
+    /* background-color: lightskyblue; */
+    padding: 5px 1em;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -63,11 +41,13 @@ h3 {
 
 /* navigation bar */
 nav {
+    font-size: 0.8rem;
     width: 600px;
 }
 
 nav ul {
-    background-color: brown;
+    margin: 0px;
+    /* background-color: brown; */
     list-style: none;
     display: flex;
     justify-content: space-between;
@@ -75,14 +55,15 @@ nav ul {
 }
 
 nav a {
-    background-color:darkmagenta;
+    /* background-color:darkmagenta; */
     text-decoration: none;
+    
     color: black;
 }
     
 /* header bottom */
 .header-bottom {
-    background-color: khaki;
+    /* background-color: khaki; */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -92,7 +73,6 @@ nav a {
 
 /* npm logo */
 .header-bottom > img {
-    background-color:darkblue;
     width: 3em;
     border: 5px;
     margin: 5px 10px 5px 15px;
@@ -100,14 +80,14 @@ nav a {
 
 /* log in and join buttons */
 .header-bottom > div > a {
-    background-color: darkolivegreen;
-    padding: 0em 0.3em;
+    /* background-color: darkolivegreen; */
+    padding: 0.1em 0.5em;
+    margin: 0 0.5em;
     color: inherit;
     font: inherit;
     cursor: pointer;
     outline: none;
     text-decoration: none;
-    /* border: darkorange solid 1px; */
 }
 
 /* flex for searchbar and log buttons */
@@ -121,13 +101,14 @@ nav a {
 
 /* search bar */
 #search-bar {
-    margin: 5px 0;
+    margin: 5px 1.2em;
     height: 2em;
-    background-color:chocolate;
+    background-color:rgba(232,217,217,.3);
     flex-grow: 1;
     display: flex;
 }
 
+/* the whole searchbar */
 #search-bar form {
     flex-grow: 1;
     height: fit-content;
@@ -144,19 +125,26 @@ nav a {
 
 /* search bar input */
 #search-bar input[type="text"] {
-    background-color: crimson;
     flex-grow: 1;
+}
+
+.red-class {
+    background-color: #fb3e44;
+    border: lightgrey solid 1px;
+    color: white;
+    font-weight: lighter;
 }
 
 /* join button style */
 .join-button {
     margin-left: 1em;
     font-weight: bold;
-    border: darkorange solid 1px;
+    border: grey solid 1px;
 }
 
+/* ---------------first section--------------- */
 #first-section {
-    background-color: mediumorchid;
+    background-color: rgba(232,217,217,.3);
     padding: 0 25px 50px;
     display: flex;
     flex-direction: column;
@@ -164,39 +152,59 @@ nav a {
     align-items: center;
 }
 
+/* build amazing things */
+h1 {
+    text-align: center;
+    font-weight: 950;
+    font-size: 4em;
+}
+
 /* essential javascript devtools */
 #first-section article, #first-section div {
     padding: 1.5rem 1em;
-    background-color: gold;
+    /* background-color: gold; */
     max-width: 600px;
     text-align: center;
 }
 
 /* extra padding for the buttons */
 #first-section-buttons a {
-    padding: 2rem;
+    padding: 1em 3em;
     margin-left:1em;
     margin-right:1em;
+    font-family: inherit;
+    font-weight: bolder;
+    text-decoration: none;
 }
 
 /* fisrt section buttons style */
 .red-button {
-    background-color: lightgreen;
-    box-shadow: 5px 5px darkslategray;
+    background-color: #fb3e49;
+    color: white;
+    /* input 2 is blur input 3 is spread */
+    box-shadow: 5px 5px 0px 0px rgba(251, 59, 73, 0.2);
 }
-
 
 .white-button {
-    background-color: lightpink;
+    background-color: white;
+    color: black;
 }
+
+/* ---------------second section--------------- */
 
 #second-section {
     text-align: center;
-    background-color: peachpuff;
+    background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+}
+
+#second-section img {
+    width: 25%;
+    max-height: 250px;
+    margin: 50px;
 }
 
 #second-section article {
@@ -204,10 +212,18 @@ nav a {
     max-width: 800px;
 }
 
-#second-section img {
-    width: 25%;
-    margin: 50px;
+/* "bring the best "section 2 */
+h2 {
+    background-color: rgb(245, 240, 179);
+    transform: skew(9deg,0deg);
+    font-style:italic;
+    margin: 0;
+    padding: 0 0.6em 0 1.6em;
+    text-align: center;
+    font-size: 2em;
 }
+
+/* ---------------third section--------------- */
 
 #third-section {
     display: flex;
@@ -219,14 +235,18 @@ nav a {
 /* section 3 outer container */
 .horizontal-box {
     width: 80%;
-    background-color: thistle;
+    /* background-color: thistle; */
     margin: 25px 0px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: flex-start;
     flex-wrap: wrap;
+}
 
+/* zero configuration - boxes subtitles  */
+h3 {
+    color: tomato;
 }
 
 /* class for the "configuration" etc boxes */
@@ -235,23 +255,23 @@ nav a {
     max-width: 250px;
 }
 
+.boxy p {
+    font-size: 0.9em;
+}
+
 /* the icons in the boxes */
 #third-section img {
     width: 2em;
 }
 
 /* the final button */
-
 .black-button {
     color: white;
     border: none;
-    padding: 1em 80px;
-    background-color:mediumspringgreen;
-    box-shadow: 5px 5px darkslategray;
-    font-size: 1.3em;
+    padding: 12px 110px;
+    margin: 2em;
+    background-color: black;
+    box-shadow: 5px 5px rgba(0, 0, 0, .3);
+    font-size: 1.1nem;
     font-family: inherit;
-    margin-bottom: 2em;
 }
-
-
-#third-section button {}
