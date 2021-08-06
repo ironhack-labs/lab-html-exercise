@@ -19,9 +19,17 @@ h1 {
 
 /* bring the best section 2*/
 h2 {
+    background-color: wheat;
+    margin: 0;
+    padding: 0 0.6em 0 1.6em;
     color: seashell;
     text-align: center;
     font-size: 3em;
+}
+
+/* zero configuration */
+h3 {
+    color: tomato;
 }
 
 /* resets style of links and search */
@@ -51,10 +59,6 @@ h2 {
 .blackheart {
     width: 20px;
     margin-right: 1rem;
-}
-
-.magnifying {
-    width
 }
 
 /* navigation bar */
@@ -135,7 +139,7 @@ nav a {
 /* magnifying glass */
 #search-bar img{
     height: 1.5em;
-    position: relative;
+    padding-top: 0.25em;
 }
 
 /* search bar input */
@@ -205,13 +209,49 @@ nav a {
     margin: 50px;
 }
 
-#third-section{
+#third-section {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
 
+/* section 3 outer container */
+.horizontal-box {
+    width: 80%;
+    background-color: thistle;
+    margin: 25px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+}
+
+/* class for the "configuration" etc boxes */
+.boxy {
+    padding: 25px 10px;
+    max-width: 250px;
+}
+
+/* the icons in the boxes */
 #third-section img {
     width: 2em;
 }
+
+/* the final button */
+
+.black-button {
+    color: white;
+    border: none;
+    padding: 1em 80px;
+    background-color:mediumspringgreen;
+    box-shadow: 5px 5px darkslategray;
+    font-size: 1.3em;
+    font-family: inherit;
+    margin-bottom: 2em;
+}
+
+
+#third-section button {}
