@@ -1,0 +1,332 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: Poppins;
+  }
+  
+ 
+  
+  header > div {
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+  }
+  
+  nav {
+    width: 600px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: black;
+    margin-right: 20px;
+    white-space: nowrap;
+  }
+  
+  .blackHeart {
+    width: 20px;
+    margin-right: 1rem;
+  }
+  
+  .lowerHeader {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1);
+  }
+  
+  .leftLowerHeader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .logoContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 30px;
+  }
+  
+  .npmLogo {
+    width: 70px;
+  }
+  
+  .formContainer {
+    background-color: rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    outline: none;
+  }
+  
+  .inputContainer {
+    display: flex;
+    align-items: center;
+  }
+  
+  .magnifyingGlass {
+    padding-left: 20px;
+    padding-right: 10px;
+    width: 20px;
+  }
+  
+  input {
+    font-family: Overpass Mono;
+    background-color: transparent;
+    width: calc(100vw - 500px);
+    border: none;
+    height: 40px;
+    outline: none;
+  }
+  
+  .searchButton {
+    font-family: Poppins;
+    position: relative;
+    color: white;
+    background-color: #fb3e44;
+    width: 100px;
+    cursor: pointer;
+  }
+  
+  .lowerHeaderMenu {
+    text-decoration: none;
+    color: black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: 500;
+  }
+  
+  .lowerHeaderMenu.a {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    font-weight: 600;
+  }
+  
+  .lowerHeaderMenu.b {
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  
+  .slogan {
+    white-space: nowrap;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  
+  @media screen and (max-width: 800px) {
+    nav {
+      overflow: hidden;
+    }
+  
+    .rightLowerHeader {
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+  
+    input {
+      width: calc(100vw - 300px);
+    }
+  
+    .lowerHeader {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  
+
+  .section1 {
+    background-color: rgba(232, 217, 217, 0.3);
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .section1Container {
+    margin-top: -100px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  h1 {
+    margin: 0;
+    margin-top: 150px;
+    padding: 0;
+    margin-bottom: 40px;
+    font-size: 80px;
+  }
+  
+  .section1Article {
+    width: 45vw;
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+  
+  .section1Buttons {
+    text-decoration: none;
+    border: none;
+    font-family: Poppins;
+    font-weight: 800;
+    margin: 20px;
+    font-size: 20px;
+    width: 250px;
+    height: 70px;
+    cursor: pointer;
+  }
+  
+  .section1Buttons.a {
+    background-color: #fb3b49;
+    color: white;
+    box-shadow: 8px 8px 0 rgba(251, 59, 73, 0.2);
+  }
+  
+  .section1Buttons.b {
+    background-color: white;
+  }
+  @media screen and (max-width: 1000px) {
+    .section1 {
+      height: 700px;
+    }
+  }
+  
+  @media screen and (max-width: 800px) {
+    .section1 {
+      height: 1000px;
+    }
+  }
+  
+
+  
+  .section2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    margin-top: 60px;
+  }
+  
+  .heading-background {
+    margin-top: 80px;
+    background-color: rgba(255, 204, 53, 0.4);
+    padding-left: 60px;
+    padding-right: 60px;
+    transform: skew(9deg, 0deg);
+  }
+  
+  h2 {
+    text-align: center;
+    font-style: italic;
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    font-size: 40px;
+  }
+  
+  .section2Article {
+    margin-top: 50px;
+    text-align: center;
+    width: 800px;
+    font-weight: 300;
+  }
+  
+  .hexLogo {
+    width: 300px;
+  }
+  
+  @media screen and (max-width: 1200px) {
+    h2 {
+      font-size: 30px;
+      text-align: center;
+    }
+  }
+  
+  @media screen and (max-width: 800px) {
+    .heading-background {
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+  
+    h2 {
+      font-size: 30px;
+      text-align: center;
+    }
+    .section2Article {
+      width: 450px;
+    }
+  }
+  
+
+  
+  .section3 {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .section3Icon {
+    width: 40px;
+  }
+  
+  h3 {
+    font-size: 17px;
+    color: #ed1c24;
+  }
+  
+  .group-container {
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+  }
+  .group {
+    margin: 20px;
+    width: 250px;
+    font-weight: 300;
+  }
+  
+  .createButton {
+    font-family: Poppins;
+    border: none;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    margin: 20px;
+    font-size: 20px;
+    width: 450px;
+    height: 70px;
+    cursor: pointer;
+    box-shadow: 8px 8px 0 rgba(128, 83, 35, 0.2);
+    margin-bottom: 60px;
+  }
+  
+   @media screen and (max-width: 800px) {
+    .group-container {
+      flex-direction: column;
+    }
+  } 
+
+
+   /*Fax*/
