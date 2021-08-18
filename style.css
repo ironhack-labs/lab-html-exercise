@@ -100,6 +100,7 @@ nav a {
   background-color: var(--btn-background-color);
   font-family: 'Poppins', sans-serif;
   color: var(--btn-text-color);
+  font-size: 1em;
 }
 
 #header-links {
@@ -143,6 +144,7 @@ section#main {
 #main article {
   width: 30%;
   text-align: center;
+  font-size: 1.1em;
 }
 
 #main-buttons {
@@ -150,15 +152,14 @@ section#main {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  width: 30%;
+  width: 35%;
   text-align: center;
   margin-top: 3em;
 }
 
 #main-buttons a {
   text-decoration: none;
-  padding: 10px 50px;
-  color: black;
+  padding: 15px 70px;
   font-weight: 700;
 }
 
@@ -166,6 +167,11 @@ section#main {
   background-color: #fb3b49;
   color: white;
   box-shadow: 8px 8px 0 rgba(251, 59, 73, 0.2);
+}
+
+#main-buttons a:nth-of-type(2) {
+  background-color: #fff;
+  color: black;
 }
 
 #about img {
@@ -176,14 +182,61 @@ section#main {
 #about h2 {
   font-size: 2em;
   font-weight: 600;
-  margin-bottom: 0.5em;
+  margin-bottom: 40px;
   background-color: rgba(255, 204, 53, 0.4);
   transform: skew(9deg, 0deg);
   font-style: italic;
 }
 
 #about article {
-  font-size: 0.9em;
+  font-size: 1.1em;
   width: 50%;
   text-align: center;
+}
+
+section#features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#features-container {
+  display: flex;
+  margin: 150px auto 80px auto;
+  justify-content: center;
+  width: 80%;
+}
+
+#features img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+#features-container > div {
+  display: flex;
+  width: 25%;
+  flex-direction: column;
+  padding: 0 25px;
+}
+
+#features-container h3 {
+  color: #ed1c24;
+  margin-bottom: 15px;
+}
+
+#features-container p {
+  font-size: 1.1em;
+}
+
+#features button {
+  background-color: black;
+  box-shadow: 8px 8px 0 rgba(128, 83, 35, 0.2);
+  color: #fff;
+  width: 30%;
+  padding: 15px 40px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1em;
+  font-weight: 600;
+  margin-bottom: 50px;
 }
