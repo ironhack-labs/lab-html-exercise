@@ -4,10 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&Fira+Monodisplay=swap"
+      rel="stylesheet"
+    />
     <title>NPM website - Brigi Horvath version</title>
   </head>
   <body>
-    <header>
+    <header id="header">
       <div>
         <div>
           <img
@@ -29,20 +36,27 @@
         </nav>
       </div>
 
-      <div>
-        <img src="images/npm-logo.png" alt="NPM Logo" />
-        <img src="images/magnifying-glass.png" alt="Search magnifying glass" />
-        <form action="/search" method="post">
-          <input
-            type="text"
-            name="search"
-            id="search-bar"
-            placeholder="Search packages"
+      <div id="header-bottom">
+        <img src="images/npm-logo.png" alt="NPM Logo" id="npm-logo" />
+        <div id="search">
+          <img
+            src="images/magnifying-glass.png"
+            alt="Search magnifying glass"
+            id="magnifying-glass"
           />
-          <button type="submit" name="search" id="search-btn">Search</button>
-        </form>
-        <a href="#">Join</a>
-        <a href="#">Login</a>
+          <form action="/search" method="post" id="search-form">
+            <input
+              type="text"
+              name="search"
+              id="search-bar"
+              placeholder="Search packages"
+            />
+            <button type="submit" name="search" id="search-btn">Search</button>
+          </form>
+        </div>
+        <div id="header-links">
+          <a href="#" id="sign-up-btn">Join</a><a href="#">Log in</a>
+        </div>
       </div>
     </header>
     <section id="main">

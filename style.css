@@ -1,0 +1,124 @@
+:root {
+  --label-color: rgba(0, 0, 0, 0.05);
+  --input-color: rgba(0, 0, 0, 0.05);
+  --btn-background-color: #fb3e44;
+  --btn-text-color: white;
+}
+
+/* @import url('https://fonts.googleapis.com/css?family=Poppins'); */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+header > div {
+  padding: 0 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+  padding: 15px 30px;
+  font-weight: 600;
+}
+
+nav {
+  width: 600px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+.blackHeart {
+  width: 20px;
+  margin-right: 1rem;
+}
+
+#header-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 30px;
+  margin: 0 auto;
+}
+
+#npm-logo {
+  margin: 0 auto;
+  width: 5%;
+}
+
+#magnifying-glass {
+  width: 45px;
+  z-index: 1000;
+  padding: 13px;
+}
+
+#search {
+  display: flex;
+  width: 80%;
+  position: relative;
+  margin: auto 10px;
+}
+
+#search-form {
+  display: flex;
+  width: 100%;
+  position: absolute;
+  left: 0;
+}
+
+#search-bar {
+  width: 90%;
+  height: 45px;
+  padding: 10px 0 10px 50px;
+  border: none;
+  background-color: var(--input-color);
+  color: var(--input-color);
+  font-family: 'Fira Mono', monospace;
+  font-size: 16px;
+}
+
+#search-btn {
+  width: 10%;
+  height: 45px;
+  margin-left: 0;
+  border: 0;
+  background-color: var(--btn-background-color);
+  font-family: 'Poppins', sans-serif;
+  color: var(--btn-text-color);
+}
+
+#header-links {
+  height: 45px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
+#header-links a {
+  font-weight: 400;
+  font-size: 0.9em;
+  text-decoration: none;
+  padding: 8px 20px;
+  color: black;
+}
+
+a#sign-up-btn {
+  margin: 0 5px;
+  border: 1px solid black;
+  font-weight: 500;
+}
