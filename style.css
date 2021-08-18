@@ -123,12 +123,15 @@ a#sign-up-btn {
   font-weight: 500;
 }
 
-section#main {
+section#main,
+section#about {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 600px;
+}
+section#main {
   background-color: rgba(232, 217, 217, 0.3);
 }
 
@@ -163,4 +166,24 @@ section#main {
   background-color: #fb3b49;
   color: white;
   box-shadow: 8px 8px 0 rgba(251, 59, 73, 0.2);
+}
+
+#about img {
+  height: 300px;
+  margin: 70px 0;
+}
+
+#about h2 {
+  font-size: 2em;
+  font-weight: 600;
+  margin-bottom: 0.5em;
+  background-color: rgba(255, 204, 53, 0.4);
+  transform: skew(9deg, 0deg);
+  font-style: italic;
+}
+
+#about article {
+  font-size: 0.9em;
+  width: 50%;
+  text-align: center;
 }
