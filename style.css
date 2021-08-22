@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap');
+
 
 body {
     font-family: 'Poppins';
@@ -34,10 +35,12 @@ nav a {
 }
 
 .search-bar-div {
-    padding: 8px 16px;
+    padding: 8px 24px;
     display: flex;
     justify-content: space-between;
     border-bottom: none;
+    border-bottom: 1px solid lightgray;
+    box-shadow: 0 8px 10px lightgray;
 }
 
 .search-image,
@@ -46,9 +49,13 @@ nav a {
     vertical-align: middle;
 }
 
+.npm-logo {
+    margin: 0 10px;
+}
+
 .search-bar {
  background-color: rgba(0, 0, 0, .05);
- width: 80%;
+ width: 78%;
  height: 44px;
  padding: 0 0 0 10px;
  display: flex;
@@ -84,17 +91,13 @@ nav a {
     color: #fb3e44;
 }
 
-
-
 .join {
     text-decoration: none;
     color: rgb(95, 95, 95);
     border: rgb(150, 150, 150) 1px solid;
     padding: 4px 16px;
     margin: 0 8px 0 16px;
-    display: inline-block;
-
-   
+    display: inline-block;   
 }
 
 .log-in {
@@ -102,4 +105,51 @@ nav a {
   color: rgb(95, 95, 95);
   padding: 10px;
   width: 120%;
+}
+
+#section-1 {
+    
+    background-color: rgba(232, 217, 217, 0.3); 
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#section-1 h1 {
+    font-size: 72px;
+    font-weight: 700;
+    text-align: center;
+    margin: 24px auto;
+}
+
+#section-1 article {
+    width: 35%;
+    text-align: center;
+    margin: 24px auto;
+    padding: 0;
+}
+
+#section-1 div {
+    text-align: center;
+    margin: 64px auto;
+}
+
+.see-plans {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    background-color: #FB3B49;
+    box-shadow: 8px 8px 0 rgba(251, 59, 73, .2);
+    padding: 16px 80px;
+    margin: 0 24px;
+}
+
+.join-free {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    background-color: white;
+    padding: 16px 80px;
+    margin: 0 24px;
 }
