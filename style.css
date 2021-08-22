@@ -3,6 +3,7 @@
 
 body {
     font-family: 'Poppins';
+    margin: 0;
 }
 
 header>div {
@@ -64,11 +65,11 @@ nav a {
 }
 
 .search-bar input {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 300;
     color: rgb(0, 0, 0);
     display: inline-block;
-    width:85%;
+    width:90%;
     background-color: rgba(0, 0, 0, 0);
     border: none;
     padding: 8px;
@@ -78,7 +79,7 @@ nav a {
     background-color: #fb3e44;
     border: 1px solid rgb(202, 202, 202);
     border-bottom: 1px solid rgb(184, 184, 184) ;
-    font-size: 1rem;
+    font-size: 16px;
     color: white;
     font-weight: 300;
     padding: 8px;
@@ -92,6 +93,7 @@ nav a {
 }
 
 .join {
+    font-size: 16px;
     text-decoration: none;
     color: rgb(95, 95, 95);
     border: rgb(150, 150, 150) 1px solid;
@@ -101,6 +103,7 @@ nav a {
 }
 
 .log-in {
+  font-size: 16px;
   text-decoration: none;
   color: rgb(95, 95, 95);
   padding: 10px;
@@ -125,8 +128,9 @@ nav a {
 
 #section-1 article {
     width: 35%;
+    font-size: 20px;
     text-align: center;
-    margin: 24px auto;
+    margin: 8px auto;
     padding: 0;
 }
 
@@ -137,6 +141,7 @@ nav a {
 
 .see-plans {
     text-decoration: none;
+    font-size: 20px;
     color: white;
     font-weight: 600;
     background-color: #FB3B49;
@@ -147,9 +152,81 @@ nav a {
 
 .join-free {
     text-decoration: none;
+    font-size: 20px;
     color: black;
     font-weight: 600;
     background-color: white;
     padding: 16px 80px;
     margin: 0 24px;
+}
+
+#section-2 {
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 64px 0;
+    margin-bottom: 128px;
+}
+
+#section-2 img {
+    height: 300px;
+    margin: auto;
+}
+
+#section-2 h2 {
+    font-weight: 500;
+    font-size: 32px;
+    background-color: rgba(255, 204, 53, .4);
+    transform: skew(9deg, 0deg);
+    font-style: italic;
+    margin: 0 auto;
+    margin-top: 32px;
+    padding: 0 24px;
+}
+    
+#section-2 article {
+    font-size: 16px;
+    margin: auto;
+    text-align: center;
+    width: 45%;
+}
+
+#section-3 {
+    display: flex;
+    justify-content:space-around;
+    flex-direction: column;
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.features div {
+    width: 17%;
+    padding: 0 40px;
+}
+
+.features div h3 {
+    color: #ED1C24;
+    margin-bottom: 48px;
+    font-weight: 600;
+}
+
+.features-image {
+    height: 32px;
+}
+
+.create-org {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    background-color: black;
+    box-shadow: 8px 8px 0 rgba(128, 83, 35, .2);
+    width: 17%;
+    padding: 16px 48px;
+    margin: 64px auto;
 }
