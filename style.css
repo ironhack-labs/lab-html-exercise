@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body {
+  font-family: 'Poppins';
+}
+
+h1{
+ font-size: 60px;
+}
+
+h2{
+font-size: 30px;
+    }
+    
+h3{
+font-size: 20px;
+    }
+    
+
+
+header{
+
+}
+header > div {
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+  }
+  
+  nav {
+    width: 600px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .blackHeart {
+    width: 20px;
+    margin-right: 1rem;
+  }
+
+
+/* Section 1 */
+
+#section-one{
+    flex-direction: column;
+    position: relative;
+    height: 600px;
+    background-color:(232,217,217,.3);
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+"See plans" button background color: #FB3B49
+"See plans" button box shadow: 8px 8px 0 rgba(251,59,73,.2)
+
+
+
+
+
+/* Section 2 */
+
+
+#section-two{
+background-color:rgba(255,204,53,.4);
+height: 600px;
+width: auto;
+display: flex;
+flex-direction:column;
+justify-content: center;
+align-items: center;
+position: relative;
+}
+
+heading background color: rgba(255,204,53,.4)
+to get the transform of the yellow background in the left-hand direction use: transform: skew(9deg,0deg);
+to get it in the opposite direction of the letters, the way we need it on the page, use: font-style: italic;
+to additionally fine-tune the position of each element, use margin property.
+Again use a lot of flexbox to get the right position of elements - direction, justify-content, align-items.
+
+
+/* Section 3 */
+
+#section-three{ 
+position:relative;
+height:600px;
+width:auto;
+}
+.row-box{
+width:auto;
+display: flex;
+flex-direction:row;
+align-items: flex-center;
+justify-content: space-around;
+}
+#section-three h3 {
+    color:#ed1c24; 
+}
+
+#section-three > div{
+font-size: .8em;
+  text-align: center;
+  box-sizing: border-box;
+  margin: 50px 5% 0 5%;
+  padding: 20px;
+  width: 40%;
+    }
+
+.button{
+box-shadow: 8px 8px 0 rgba(128,83,35,2);
+background-color: black;
+color: white;   
+}
