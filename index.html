@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="./style.css"/>
 <header>
     <div>
       <div>
@@ -16,15 +17,15 @@
       </nav>
     </div>
   
-    <div>
+    <div class="searching">
       <img class="npm-logo" src="./images/npm-logo.png">
-      <form class="serach-form" action="/search" method="get">
-          <img class="seach-icon" src="./images/magnifying-glass.png">  
-          <input type="text" placeholder="Search for something">
-          <input type="button" value="Search">
+      <form class="search-form" action="/search" method="get">
+          <img class="search-icon" src="./images/magnifying-glass.png">  
+          <input class="search-bar" type="text" placeholder="        Search packages">
+          <input id="search-button" type="button" value="Search">
         </form>
         <ul>
-            <li><a href="#">Joing</a></li>
+            <li id="join-1"><a href="#">Joing</a></li>
             <li><a href="#">login</a></li>
         </ul>
     </div>
