@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+/* HEADER: form label color: rgba(0,0,0,.05)
+form input color: rgba(0,0,0,.05)
+form button background color: #fb3e44
+form button letters color: white*/
+
+
+body {
+  font-family: "Poppins";
+}
+
+header > div {
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+  }
+  
+  nav {
+    width: 600px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  /* modified for flexbox */
+
+  .nav-bar-ul {
+    margin: 0 auto;
+    display:flex;
+    justify-content:space-evenly;
+  }
+
+  .nav-bar-ul li {
+    list-style-type: none;
+    text-align: center;
+  }
+
+  .blacktext {
+    display: flex;
+    align-items: center;
+  }
+
+  .blackHeart {
+    width: 50px;
+    height: 30px;
+    margin-right: 1rem;
+  }
+
+  .npm-logo {
+    width: 50px;
+    height: 30px;
+    margin: 10px;
+}
+
+.search-pic {
+    width: 30px;
+    height: 20px;
+    background: rgba(0,0,0,.05);
+    padding: 10px;
+}
+
+
+
+/* FORM RELATED CLASSES:  */
+
+
+
+.slot-form {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+
+
+#search-bar {
+  width: 100%;
+  height: 85%;
+  background: rgba(0,0,0,.05);
+  border: 1px solid rgba(0,0,0,.05)
+}
+
+.slot-form-bar {
+  width: 80%;
+}
+
+.slot-form-button{
+  display:flex;
+  align-items: left;
+}
+
+.slot-form-button button{
+  background-color: #FB3B49;
+  color: white;
+  font-family: "Poppins";
+  letter-spacing: 0.5px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+}
+
+.link-btn-whi-border{
+  border: 1px solid black;
+  background-color: white;
+  color: black;
+  font-family: "Poppins";
+  letter-spacing: 0.5px;
+  text-align: center;
+  text-decoration: none;
+  margin-right: 20px;
+  padding: 10px;
+}
+
+.link-btn-whi {
+  border: 1px solid black
+  background-color: white;
+  color: black;
+  font-family: "Poppins";
+  letter-spacing: 0.5px;
+  text-align: center;
+  text-decoration: none;
+  margin-right: 20px;
+}
+/*
+#search-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: nowrap; 
+}
+
+.slot-form {
+  border: 1px solid blue;
+}
+
+ 
+.slot-form-container img {
+  width: 50px;
+  height: 30px;
+  margin-right: 1rem;
+}
+
+.slot-form-container {
+  width: 80%;
+  margin: 18px auto 0 auto;
+  font-size: 1.5em;
+  text-align: left;
+
+
+
+.slot-form-container button{
+  background-color: #FB3B49;
+  color: white;
+  font-family: "Poppins";
+  font-size: 2em;
+  letter-spacing: 0.5px;
+  text-align: center;
+  text-decoration: none;
+}
+*/
+
+  
+  /*SECTION 1 Useful information:
+
+suggested height for this section: 600px
+background color: rgba(232,217,217,.3)
+"See plans" button background color: #FB3B49
+"See plans" button box shadow: 8px 8px 0 rgba(251,59,73,.2)*/
+
+.building-things{ 
+    background-color: rgba(232,217,217,.3);
+    color: black;
+    height: 650px;
+    padding: 75px 0;
+    margin: 0 auto;
+    
+}
+
+#plans .box-text {
+    font-size: 1.9em;
+    text-align:center;
+    margin: 10px;
+    width:40%;
+    
+}
+
+
+  h1 {
+    font-size: 80px;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.buttons {
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+
+}
+.buttons .lnk-btn-red  {
+  background-color: #FB3B49;
+  color: white;
+  font-family: "Poppins";
+  font-size: 2em;
+  letter-spacing: 0.5px;
+  text-align: center;
+  text-decoration: none; 
+  box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+  margin-right: 20px;
+  padding: 30px;
+  width: 15%;
+}
+
+.buttons .lnk-btn-white {
+  background-color: white;
+  color:black;
+  font-weight: 100px;
+  font-family: "Poppins";
+  font-size: 2em;
+  letter-spacing: 0.5px;
+  text-align: center;
+  text-decoration: none; 
+  margin-right: 20px;
+  padding: 30px;
+  width: 15%;
+}
+
+#plans > article {
+  display: flex;
+  justify-content: space-evenly;
+}
+/*SECTION 2 heading background color: rgba(255,204,53,.4)
+to get the transform of the yellow background in the left-hand direction use: transform: skew(9deg,0deg);
+to get it in the opposite direction of the letters, the way we need it on the page, use: font-style: italic;
+to additionally fine-tune the position of each element, use margin property. */
+
+
+.opensource{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 5%;
+}
+
+.opensource svg {
+  width: 20%;
+  height: 20%;
+}
+
+#open-source .section-text{
+  text-align: center;
+  padding: 60px 0;
+  margin: 0 auto;
+  width:40%;
+}
+
+.background-text{
+  background-color: rgba(255,204,53,.4) ;
+  transform: skew(9deg,0deg);
+  font-style: italic;
+}
+
+
+}
+/*SECTION 3 Useful information:
+
+color of the letters in each heading in this section: #ED1C24
+"Create an Org" box shadow: 8px 8px 0 rgba(128,83,35,.2)
+"Create an Org" letters color: white*/
+
+
+#solutions {
+  padding:75px 0;
+  margin: 0 auto;
+  
+}
+
+#solutions text{
+  font-size: 2em;
+  font-weight: 100;
+  text-align: left;
+  margin: 20px 0px 20px 0px; 
+}
+
+#solutions img {
+  width: 100px;
+  height: 150px;
+  display: flex;
+  align-items: left;
+}
+
+#solutions h3 {
+  color: #ED1C24;
+  text-align:left;
+}
+
+#solutions {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#solutions > div {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  width: 370px;
+}
+
+
+#solutions p {
+  font-size: 20px;
+}
+
+
+
+.button{
+  padding: 70px 0 200px 0;
+  display:flex;
+  justify-content: center;
+}
+
+.lnk-btn-black{
+  background-color: black;
+  color: white;
+  font-family: "Poppins";
+  font-size: 2em;
+  letter-spacing: 0.5px;
+  text-align: center;
+  text-decoration: none; 
+  box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+  margin-right: 20px;
+  padding: 30px;
+  width: 15%;
+  
+}
+/*configurar boton*/
+
