@@ -19,8 +19,8 @@ font-size: 20px;
 
 
 header{
-
 }
+
 header > div {
     padding: 0 25px;
     display: flex;
@@ -50,25 +50,98 @@ header > div {
     margin-right: 1rem;
   }
 
+  .search-button{
+    background-color: #FB3B49;
+    color: white;
+    border-style: none;
+    padding:10px 25px ;
+    margin:2px 15px 2px 0px;
+  }
+
+  .bar-button{
+    background-color: white;
+    padding:5px 15px;
+    margin:2px 0px;
+    border-width: 1px;
+  }
+
+  .bottom-class{
+width: 1200px;
+justify-content: space-between;
+height: 40px;
+flex-direction: row;
+  }
+
+
+.search-bar{
+width: 20px;
+margin-right: 1rem;
+position: absolute;
+margin: 9px 5px;
+}
+
+input[name="search"]{
+    width: 72%;
+    padding-left: 25px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: rgba(231, 220, 220, 0.836);
+    border: transparent;
+  }
+    
+
 
 /* Section 1 */
 
-#section-one{
-    flex-direction: column;
-    position: relative;
-    height: 600px;
-    background-color:(232,217,217,.3);
+#section-one{}
+   
+.container-one
+{   height: 500px;
     width: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color:rgb(232,217,217,3);
+}
 
+.box-one{
+display: flex; 
+position: relative;
+justify-content: space-between;
+align-items: center;  
+flex-direction: column;
+}
+
+.box-one h1{
+text-align: justify;
+height: 30px;
+width: 700px;
+margin-top: 75px;
+margin-bottom:30px ;
+padding: 15px;
+    }
+
+.box-one article{
+height: 60px;
+width: 400px;
+margin: 45px;
+padding: 15px;
+text-align: center;
 }
 
 
+.plans-button{
+background-color: #FB3B49;
+box-shadow: 8px 8px 0 rgba(251,59,73,.2);  
+color: white;
+border-style: none;
+padding:10px 25px;
+}
 
-"See plans" button background color: #FB3B49
-"See plans" button box shadow: 8px 8px 0 rgba(251,59,73,.2)
+.free-button{
+ background-color:rgb(232,217,217,3);
+ border-style: none;
+ padding:10px 25px;
+
+}
+
 
 
 
@@ -77,53 +150,92 @@ header > div {
 /* Section 2 */
 
 
-#section-two{
-background-color:rgba(255,204,53,.4);
-height: 600px;
+#section-two{}
+.container-two{
+height: 450px;
 width: auto;
 display: flex;
-flex-direction:column;
-justify-content: center;
 align-items: center;
-position: relative;
+justify-content: center;
 }
 
-heading background color: rgba(255,204,53,.4)
-to get the transform of the yellow background in the left-hand direction use: transform: skew(9deg,0deg);
-to get it in the opposite direction of the letters, the way we need it on the page, use: font-style: italic;
-to additionally fine-tune the position of each element, use margin property.
-Again use a lot of flexbox to get the right position of elements - direction, justify-content, align-items.
+.container-two img{
+width: 180px;
+height: 180px;
+}
+.container-two h2{
+background-color:rgba(255,204,53,.4);
+transform: skew(9deg,0deg);
+font-style: italic;
+width:auto;
+margin-left: 250px;
+margin-right: 250px;
+padding-left: 15px;
+padding-right: 15px;
+}
+.container-two article{
+ margin-left: 300px;   
+ margin-right: 350px;
+}
+
+.box-three {
+flex-direction:column;
+justify-content: center;
+text-align: center;
+}
 
 
 /* Section 3 */
 
-#section-three{ 
-position:relative;
-height:600px;
-width:auto;
-}
-.row-box{
-width:auto;
-display: flex;
-flex-direction:row;
-align-items: flex-center;
-justify-content: space-around;
-}
+#section-three{}
+
+#section-three div{
+        font-size: .8em;
+        text-align: left;
+        box-sizing: border-box;
+        justify-content: center;
+       
+        }
+
 #section-three h3 {
     color:#ed1c24; 
+    text-align: left; 
 }
 
-#section-three > div{
-font-size: .8em;
-  text-align: center;
-  box-sizing: border-box;
-  margin: 50px 5% 0 5%;
-  padding: 20px;
-  width: 40%;
+.container-three{
+    height: 250px;
+    width: auto;
+    display: flex;
+    justify-content: center;
     }
 
+.row-div{
+    width: 250px;
+    height: 50px;
+    padding:20px;
+    margin-bottom: 15px;
+        }
+
+.row-div img, h3, p{
+display: flex;
+position: relative;
+flex-direction:row;
+
+}
+        
+.button-format{
+    display:flex;
+    flex-direction:row;
+    position: relative;
+     }
+
+
 .button{
-box-shadow: 8px 8px 0 rgba(128,83,35,2);
+box-shadow: 4px 4px 0 rgba(128,83,35,2);
 background-color: black;
 color: white;   
+width: 270px;
+height: 40px;
+margin-top: 0px;
+margin-bottom: 35px;
 }
