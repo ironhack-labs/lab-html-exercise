@@ -307,7 +307,14 @@ nav a {
   box-shadow: 0 0 0 0;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
+  :root {
+    font-size: 14px;
+  }
+  body {
+    margin-left: 10px;
+  }
+
   nav ul {
     flex-direction: column;
     font-size: 0.7rem;
@@ -315,11 +322,14 @@ nav a {
 
   .search-bar {
     flex-direction: column;
-    flex-flow: column wrap;
-    flex-wrap: wrap;
+
+    width: 260px;
     margin-bottom: 20px;
   }
 
+  .form {
+    width: 220px;
+  }
   .start {
     display: flex;
     flex-direction: column;
@@ -327,15 +337,71 @@ nav a {
     margin-left: 50px;
   }
 
-  .btn-join {
-    margin: 20px 0;
-  }
-
-  .login {
-    margin: 20px 0;
-  }
-
   .main {
-    margin-top: 130px;
+    font-size: 3.1rem;
+    margin-top: 0;
+  }
+
+  .search-btn {
+    height: 35px;
+    margin: 0;
+  }
+
+  .btn-join {
+    margin: 5px;
+  }
+
+  .section_1 {
+    align-items: center;
+    height: 650px;
+    width: 410px;
+    background-color: rgba(232, 217, 217, 0.3);
+  }
+
+  .article-1 {
+    margin-bottom: 20px;
+  }
+
+  .logo {
+    margin-top: -20px;
+  }
+
+  .section_2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+  }
+
+  .article-2 {
+    width: 50%;
+    font-size: 0.8rem;
+    margin: 25px 0 10px 0px;
+    text-align: center;
+  }
+
+  /* .btn-plans {
+    margin: 50px 0 250px 0;
+  }
+  .btn-join-1 {
+    margin: 50px 0 250px 0;
+  } */
+
+  .footer {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .org-btn {
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: black;
+    border: none;
+    padding: 15px 80px;
+    position: absolute;
+    top: 105%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
