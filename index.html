@@ -7,12 +7,12 @@
 </head>
 
     <body>
-        <header>
-            <div>
-                <div id=blacktext>
-                   <snap><img class="blackHeart" src="/home/aintzane/Desktop/Ironhack/lab-html-exercise/images/black-heart.png" 
+        <header class="header" >
+            <div id="header-search">
+                <div id="blacktext">
+                   <img class="blackHeart" src="/home/aintzane/Desktop/Ironhack/lab-html-exercise/images/black-heart.png" 
                     alt="heart-logo"> 
-                    Neverending Pun Machine</snap>
+                    <span>Neverending Pun Machine</span>
                 </div>
             <nav class="nav-bar">
                 <ul class="nav-bar-ul">
@@ -29,44 +29,47 @@
             <div class="search-bar" id="search">
                  <img class="npm-logo" src="/home/aintzane/Desktop/Ironhack/lab-html-exercise/images/npm-logo.png"
                 alt="npm-logo">
-
             
             
                 <form class="slot-form" action="/search" method="post">
-                    <div class="slot-form-image">
-                        <input type="image" class="search-pic" src="/home/aintzane/Desktop/Ironhack/lab-html-exercise/images/magnifying-glass.png"
-                        alt="magnifying-glass">
-                    </div>
-
-                    <div class="slot-form-bar">
-                        <input type="search" id="search-bar" name="q" 
+                    <div class="box">
+                        <div class="slot-form-bar">
+                             <img class="search-pic" src="/home/aintzane/Desktop/Ironhack/lab-html-exercise/images/magnifying-glass.png"
+                        alt="magnifying-glass"></span>
+                            <input type="search" id="search-bar" name="q" 
                         placeholder= "Search packages">
+                        </div>
+                   
+                        <div class="slot-form-button">
+                            <button type="submit">Search</button>       
+                        </div>
                     </div>
-                    
-                    <div class="slot-form-button">
-                        <button type="submit">Search</button>       
-                    </div>
-                </form>              
+                </form>  
+                            
                 <div class="links">
-                <a href="#" class="link-btn-whi-border">Join</a>
-                <a href="#" class="link-btn-whi">Log in</a>
+                    <a href="#" class="link-btn-whi-border">Join</a>
+                    <a href="#" class="link-btn-whi">Log in</a>
                 </div>
             </div>
         </header>
-
+        
+        
         <!--Section 1-->
 
         <section class="building-things" id="plans">
-            <h1>Build amazing things</h1>
-            <article>
+            <article class="container"></article>
+
+                <h1 class="big-text"><strong>Build amazing things</strong></h1>
                 <p class=box-text>Essential JavaScript development tools that help you go to market faster and build powerful applications using
                     modern open source code. </p>
-            </article>
 
-            <div class="buttons" id="white-red">
-                <a href="#" class="lnk-btn-red">See plans</a>
-                <a href="#" class="lnk-btn-white"><strong>Join for free</strong></a>
-            </div>
+                <div class="buttons">
+                   <a href="#" class="lnk-btn-red"><strong>See plans</strong></a>
+                   <a href="#" class="lnk-btn-white"><strong>Join for free</strong></a>
+                </div>
+                  
+            </article>                   
+                   
         </section>
 
         <!--Section 2-->
@@ -90,6 +93,7 @@
                     <p class="section-text">npm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it.
                     Create an Org and get more out of the tools your team already knows and loves.</p>
                 </article>
+
             </div> 
         </section>
        
@@ -98,28 +102,28 @@
         
         <section class="background-white" id="solutions" >
 
-            <div>
+            <div class="zero">
                 <img src="/home/aintzane/Desktop/Ironhack/lab-html-exercise/images/zero-configuration.svg" 
                 alt="mouse">
                 <h3>Zero configuration</h3>
                 <p class="text">Create an org, add your team, and start collaborating. Nothing to configure, set up, or manage.</p>
             </div>
     
-            <div>
+            <div class="Team">
                 <img src="/home/aintzane/Desktop/Ironhack/lab-html-exercise/images/team-management.svg" 
                 alt="team-management">
                 <h3>Team Management</h3>
                 <p class="text">Control who has access to what modules within your team namespace using straightforward team management capabilities.</p>
             </div>
             
-            <div>
+            <div class="familiar">
                 <img src="/home/aintzane/Desktop/Ironhack/lab-html-exercise/images/familiar-features.svg" 
                 alt="family-features">
                 <h3>Familiar Features</h3>
                 <p class="text">npm Orgs has 100% parity with all the public npm registry features your developers already use.</p>
             </div>
             
-            <div>
+            <div class="audit">
                 <img src="/home/aintzane/Desktop/Ironhack/lab-html-exercise/images/npm-audit.svg" 
                 alt="npm-audit">
                 <h3>npm audit</h3>
@@ -130,7 +134,7 @@
         </section>
 
         <div class="button">
-            <a href="#" class="lnk-btn-black">Create an ong</a>
+            <a href="#" class="lnk-btn-black"><strong>Create an ong</strong></a>
          </div>
 
     </body>
