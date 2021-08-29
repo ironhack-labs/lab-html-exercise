@@ -12,6 +12,11 @@ header > div {
   border-bottom: 1px solid lightgray;
 }
 
+.first-bar-img {
+    width: 20px;
+    margin-right: 5px;
+  }
+
 nav ul {
   list-style: none;
   display: flex;
@@ -20,13 +25,65 @@ nav ul {
 }
 nav ul li {
     margin-right: 5px;
+    white-space: nowrap;
 }
 nav a {
   text-decoration: none;
   color: black;
 }
 
-.first-bar-img {
-  width: 20px;
-  margin-right: 5px;
+.second-bar {
+    padding: 8px 0;
+    box-shadow: 0px 3px 5px rgba(0,0,0,.15);
+}
+.logo img {
+    height: 25px;
+    margin-left: 35px;
+}
+.searchbar {
+    display: block;
+    width: 75%;
+    height: 35px;
+}
+
+.searchbar form {
+    height: 35px;
+    margin: 0 auto;
+    background-color: rgba(0,0,0,.05);
+    display: block;
+}
+.searchbar input[type=search]{
+    width: 70%;
+    height: 35px;
+    background-color: rgba(0,0,0,0);
+    border: 0;
+}
+.searchbar img {
+    float: left;
+    height: 20px;
+    position: relative;
+    top: 25%;
+    margin: 0px 10px;
+}
+.searchbar button {
+    float: right;
+    width: 90px;
+    height: 35px;
+    border: 0;
+    background-color: #fb3e44;
+    color: white;
+}
+
+.second-bar-link-buttons a{
+    color: rgba(0,0,0,0.8);
+    margin: 0 15px;
+    padding: 3px 15px;
+    overflow: hidden;
+    white-space:nowrap;
+    text-decoration: none;
+}
+
+.link-button-join {
+    border: solid 1px rgba(0,0,0,.3);
+    box-shadow: inset 0px 1px 1px rgba(0,0,0,0.3);
 }
