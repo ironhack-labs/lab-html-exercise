@@ -11,11 +11,11 @@
         <link href="./images/npm-logo-red.svg" rel="shortcut icon" />
 
         <!-- CSS -->
-        <link rel="stylesheet" href="./css/style.css" />
+        <link rel="stylesheet" href="./css/style.min.css" />
     </head>
 
     <body>
-        <header>
+        <header class="header">
             <div class="header-top">
                 <div class="site-quote">
                     <img src="./images/black-heart.png" alt="Heart icon">
@@ -65,7 +65,13 @@
 
         <section id="section2">
             <img src="./images/triangle-hexagon.svg" alt="Triangles">
-            <h2>Bring the best of open source to your company</h2>
+
+            <h2>
+                <span>
+                    Bring the best of open source to your company
+                </span>
+            </h2>
+
             <p>npm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers already
                 use it. Your
                 company depends on it. Create an Org and get more out of the tools your team already knows and loves.
@@ -76,36 +82,44 @@
             <div class="grid">
                 <div class="grid-item">
                     <img src="./images/zero-configuration.svg" alt="Zero configuration">
+
                     <h4>Zero configuration</h4>
+
                     <p>Create an org, add your team, and start collaborating. Nothing to configure, set up, or manage.
                     </p>
                 </div>
 
                 <div class="grid-item">
                     <img src="./images/team-management.svg" alt="Team management">
+
                     <h4>Team management</h4>
+
                     <p>Control who has access to what modules within your team namespace using straightforward team
                         management capabilities.</p>
                 </div>
 
                 <div class="grid-item">
                     <img src="./images/familiar-features.svg" alt="Familiar features">
+
                     <h4>Familiar features</h4>
+
                     <p>npm Orgs has 100% parity with all the public npm registry features your developers already use.
                     </p>
                 </div>
 
                 <div class="grid-item">
                     <img src="./images/npm-audit.svg" alt="npm audit">
+
                     <h4>npm audit</h4>
+
                     <p>Enjoy the security auditing features built into the npm client, a zero-friction way to make open
                         source software safer.</p>
                 </div>
             </div>
 
-            <div class="create-container">
-                <a href="#" class="btn-create">Create an Org</a>
-            </div>
+
+            <a href="#" id="btn-create">Create an Org</a>
+
         </section>
     </body>
 </html>

@@ -1,0 +1,42 @@
+/*=============================================== Hero section ===============================================*/
+
+#hero {
+    min-height: 600px;
+    background-color: var(--light-red);
+    @include flexbox(center, center, nowrap);
+    flex-direction: column;
+
+    h1 {
+        font-size: 5rem;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 1.5rem;
+        max-width: 900px;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .buttons-container {
+        @include flexbox(center, flex-start, nowrap);
+
+        a {
+            text-decoration: none;
+            min-width: 200px;
+            padding: 10px;
+            @include flexbox(center, center, nowrap);
+            font-weight: 600;
+
+            &#btn-plans {
+                box-shadow: var(--button-shadow);
+                margin-right: 20px;
+            }
+
+            &#btn-join {
+                color: var(--black);
+            }
+        }
+    }
+}

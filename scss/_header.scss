@@ -1,5 +1,103 @@
 /*=============================================== Header ===============================================*/
 
 .header {
-    
+    position: relative;
+
+    & > div {
+        padding: 20px 25px;
+        @include flexbox(center, space-between, nowrap);
+        border-bottom: 1px solid lightgray;
+    }
+
+    .site-quote {
+        @include flexbox(center, flex-start, nowrap);
+
+        img {
+            width: 20px;
+            margin-right: 1rem;
+        }
+
+        span {
+            font-size: 14px;
+        }
+    }
+
+    nav {
+        @include flexbox(center, flex-start, nowrap);
+
+        a {
+            color: var(--black);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+            transition: 0.2s;
+
+            &:hover {
+                color: rgba(0, 0, 0, 0.5);
+            }
+
+            &:not(:last-child) {
+                margin-right: 10px;
+            }
+        }
+    }
+
+    .header-bottom {
+        @include flexbox(center, space-between, nowrap);
+
+        .logo {
+            width: 70px;
+            padding-top: 10px;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .search-container {
+            flex-grow: 1;
+            @include flexbox(center, space-between, nowrap);
+            margin: 0 20px;
+            background-color: var(--form-label-color);
+            height: 40px;
+
+            img {
+                width: 20px;
+                margin-left: 20px;
+                margin-right: 10px;
+            }
+
+            input {
+                flex-grow: 1;
+                background: none;
+                border: none;
+                margin-right: 20px;
+            }
+
+            .search-btn {
+                height: 100%;
+                color: var(--white);
+                padding: 0 20px;
+                font-size: 16px;
+                font-weight: 600;
+            }
+        }
+
+        .account {
+            @include flexbox(center, flex-start, nowrap);
+
+            button {
+                padding: 8px;
+                background: none;
+                border-radius: 0;
+                border: 1px solid transparent;
+                font-weight: 600;
+
+                &#join {
+                    border-color: var(--black);
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
 }
