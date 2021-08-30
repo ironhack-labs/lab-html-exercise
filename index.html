@@ -11,10 +11,10 @@
     <header>
        <div>
            <div>
-               <img class="blackheart" src="/images/black-heart.png" alt="blackheart">
+               <img class="blackHeart" src="/images/black-heart.png" alt="blackheart">
                <span> Ninfty Penguin Magic</span>
            </div>
-           <nav>
+           <nav class="navbar">
                <ul>
                    <li><a href="#">npm Enterprise</a></li>
                    <li><a href="#">Products</a></li>
@@ -25,17 +25,21 @@
                </ul>
            </nav>
        </div>
-        <div>
+        <div class="searching">
             <div>
-                <img src="/images/npm-logo.png" alt="npm-logo">
+                <img class="npmLogo" src="/images/npm-logo.png" alt="npm-logo">
             </div>
             <div>
-                <img src="/images/magnifying-glass.png" alt="lupa">
-                <input type="text" placeholder="Search Packages">
-                <button>Search</button>
+                <form id="search" method="GET" action="search">
+                    <div class="searchPanel">
+                        <img src="/images/magnifying-glass.png" alt="glass">
+                        <input  type="search" placeholder="Search packages">
+                        <button type="submit">Search</button>
+                    </div>
+                </form>              
             </div>
-            <div>
-                <a href="#">Join</a>
+            <div class="login">
+                <a class="join" href="#">Join</a>
                 <a href="#">Log in</a>
             </div>       
         </div>
