@@ -46,7 +46,7 @@ nav a {
 
 #header-bottom {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -64,6 +64,7 @@ nav a {
     width: 80%;
     height: 50px;
     display: flex;
+    
     margin-right: 30px;
     align-items: center;
     position: relative;
@@ -102,4 +103,56 @@ form #search {
     padding: 3px 15px;
     margin-right: 1.5rem;
     font-weight: bolder;
+}
+
+#section-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 600px;
+  background-color: rgba(232,217,217,.3);
+}
+
+#section-1 > h1 {
+  font-size: 8.0rem;
+  
+  padding-top: 35px;
+  margin-bottom: 30px;
+}
+
+#section-1 > article {
+  width: 40%;
+  text-align: center;
+  
+}
+
+#section-1 > div {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0 0px 0;
+}
+
+#section-1 > div a {
+  font-size: 1.7rem;
+  text-decoration: none;
+  font-weight: bolder;
+  padding: 15px 70px;
+}
+
+#section-1 #seePlans {
+  color: #FFF;
+  background-color: #FB3B49;
+  
+  box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+
+}
+
+#section-1 #joinFree {
+  color: #000;
+  
+  background-color: #FFF;
+  
+
 }
