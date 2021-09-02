@@ -1,92 +1,108 @@
 <!DOCTYPE html>
-<!-- saved from url=(0071)file:///C:/Users/MewBot/code/IronHack-lab/lab-html-exercise/index.html# -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./npm-clone-challenge_files/style.css">
-    <title>npm-clone-challenge</title>
-</head>
-<body>
-   <!-- HEADER -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>NPM website</title>
+  </head>
+  <body>
+    <!-- HEADER  -->
 
     <header>
-        <div class="nav-bar">
-            <div class="black-heart">
-                <img class="blackHeart" src="./npm-clone-challenge_files/black-heart.png" alt="black heart">
-                <span> Nifty Penguin Magic </span>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="file:///C:/Users/MewBot/code/IronHack-lab/lab-html-exercise/index.html#">npm Enterprise</a></li>
-                    <li><a href="file:///C:/Users/MewBot/code/IronHack-lab/lab-html-exercise/index.html#">Products</a></li>
-                    <li><a href="file:///C:/Users/MewBot/code/IronHack-lab/lab-html-exercise/index.html#">Solutions</a></li>
-                    <li><a href="file:///C:/Users/MewBot/code/IronHack-lab/lab-html-exercise/index.html#">Resources</a></li>
-                    <li><a href="file:///C:/Users/MewBot/code/IronHack-lab/lab-html-exercise/index.html#">Docs</a></li>
-                    <li><a href="file:///C:/Users/MewBot/code/IronHack-lab/lab-html-exercise/index.html#">Support</a></li>
-                </ul>
-            </nav>
+      <div class="top-header">
+        <div class="name">
+          <img
+            class="blackHeart"
+            src="/images/black-heart.png"
+            alt="black heart"
+          />
+          <span><h1>Netty Penguin Magic</h1></span>
         </div>
-        <div class="search-bar">
-            <div class="logo">
-                <img src="./npm-clone-challenge_files/npm-logo.png" alt="npm logo">
-            </div>
-            <form action="file:///C:/Users/MewBot/code/IronHack-lab/lab-html-exercise/index.html" method="get" class="search-bar">
-                <input type="text" placeholder="Search packages" class="field">
-                <input type="submit" value="Search" class="search">
-            </form>
-            <a href="file:///C:/Users/MewBot/code/IronHack-lab/lab-html-exercise/index.html#">Join</a>
-            <a href="file:///C:/Users/MewBot/code/IronHack-lab/lab-html-exercise/index.html#">Log in</a>
-        </div>
+        <nav class="nav-bar">
+          <ul>
+            <li><a href="#">npm Enterprise</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Solutions</a></li>
+            <li><a href="#">Resources</a></li>
+            <li><a href="#">Docs</a></li>
+            <li><a href="#">Support</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="bottom-header">
+        <!-- <div class="logo"> -->
+          <img src="/images/npm-logo.png" alt="npm logo" />
+        <!-- </div> -->
+        <form action="search" class="search-bar">
+          <img src="/images/magnifying-glass.png" alt="glass" />
+          <input type="search" name="search" placeholder="Search packages" />
+          <button class="search-btn">Search</button>
+        </form>
+        <a href="#" id="join">Join</a>
+        <a href="#"id="login">Log in</a>
+      </div>
     </header>
 
     <!-- SECTION 1 -->
 
-    <section id="heading">
-        <h1>Build amazing things</h1>
-        <p>Essential JavaScript development tools that help you go to market faster and build powerful applications using modern open source code.</p>
-        <div class="join-us">
-            <a href="file:///C:/Users/MewBot/code/IronHack-lab/lab-html-exercise/index.html#" class="see-plans">See plans</a>
-            <a href="file:///C:/Users/MewBot/code/IronHack-lab/lab-html-exercise/index.html#" class="join-free">Join for free</a>
-        </div>
+    <section class="presentation">
+      <h2>Build amazing things</h2>
+      <article>
+        Essential JavaScript development tools that help <br> you go to market faster and build powerful <br> applications using modern open source code.
+      </article>
+      <div class="section-btn">
+        <a href="#" class="see-plan">See plans</a>
+        <a href="#"class="join-free">Join for free</a>
+      </div>
     </section>
 
     <!-- SECTION 2 -->
 
-    <section id="best-of">
-        <div class="weird-form">
-            <img src="./npm-clone-challenge_files/triangle-hexagon.svg" alt="weird form">
-        </div>
-        <h2>Bring the best of open source to your company</h2>
-        <p>npm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it. Create an Org and get more out of the tools your team already knows and loves.</p>
+    <section class="service">
+      <div class="image">
+        <img src="/images/triangle-hexagon.svg" alt="img decoration" />
+      </div>
+      <h2>Bring the best of open source to your company</h3>
+      <article>
+        npm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers <br> already use it. Your company depends on it.Create an Org and get more out of the tools your <br> team already knows and
+        loves.
+      </article>
     </section>
 
     <!-- SECTION 3 -->
 
-    <section id="create-org">
-        <div>
-            <article class="container">
-                <img src="./npm-clone-challenge_files/zero-configuration.svg" alt="image zero configuration">
-                <h3>Zero configuration</h3>
-                <p>Create an org, add your team, and start collaborating. Nothing to configure, set up, or manage.</p>
-            </article>
-            <article class="container">
-                <img src="./npm-clone-challenge_files/team-management.svg" alt="image Team management">
-                <h3>Team management</h3>
-                <p>Control who has access to what modules within your team namespace using straightforward team management capabilities.</p>
-            </article>
-            <article class="container">
-                <img src="./npm-clone-challenge_files/familiar-features.svg" alt="image Familiar Features">
-                <h3>Familiar features</h3>
-                <p>npm Orgs has 100% parity with all the public npm registry features your developers already use.</p>
-            </article>
-            <article class="container">
-                <img src="./npm-clone-challenge_files/npm-audit.svg" alt="image audit">
-                <h3>npm audit</h3>
-                <p>Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer.</p>
-            </article>
+    <section class="explanation">
+      <div class="block">
+        <div class="config">
+          <img src="/images/zero-configuration.svg" alt="icon configuration" />
+          <h4>Zero configuration</h4>
+          <p>Create an org, add your team, and start collaborating. Nothing to configure, set up, or manage.</p>
         </div>
-        <a href="file:///C:/Users/MewBot/code/IronHack-lab/lab-html-exercise/index.html#" class="button-create">Create an Org</a>
+        <div class="management">
+          <img src="/images/team-management.svg" alt="icon team management" />
+          <h4>Team management</h4>
+          <p>Control who has access to what modules within your team namespace using straight forward team management capabilities.</p>
+        </div>
+        <div class="features">
+          <img src="/images/familiar-features.svg" alt="icon features" />
+          <h4>Familiar features</h4>
+          <p>npm Orgs has 100% parity with all the public npm registry features your developers already use.</p>
+        </div>
+        <div class="audit">
+          <img src="/images/npm-audit.svg" alt="icon audit" />
+          <h4>npm audit</h4>
+          <p>Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer.</p>
+        </div>
+      </div>
+      
     </section>
+    <footer>
+      <a href="#" class="last-btn">Create an Org</a>
+    </footer>
+    
+  </body>
+</html>
 
-</body></html>
+   

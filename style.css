@@ -1,181 +1,188 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins');
-
-/* RESET CSS */ 
+@import url("https://fonts.googleapis.com/css?family=Poppins");
 
 body {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   margin: 0;
-  padding: 0;
+}
+h1 {
+  display: inline;
+  font-size: 0.8em;
 }
 
-/* HEADER */
+/* NAVIGATION */
 
-.nav-bar {
-    padding: 0 25px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid lightgray;
-}  
+.top-header {
+  padding: 0 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+}
 nav {
-    width: 600px;
-}  
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}  
-nav a {
-    text-decoration: none;
-    color: black;
-}  
-.blackHeart {
-    width: 20px;
-    margin-right: 1rem;
+  width: 600px;
 }
-.logo img {
-    width: auto;
-    height: 40px;
-    padding: 25px 10px 10px 10px;
-    margin: 0 25px 0 25px;
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+}
+.blackHeart {
+  width: 20px;
+  margin-right: 1rem;
+}
+
+/* SEARCH BAR  */
+
+.bottom-header {
+  display: flex;
+  padding: 15px 25px;
+  justify-content: flex-start;
+  align-items: center;
+  /* width: 100%; */
 }
 .search-bar {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    height: 60px;
-} 
-.search-bar input.field {
-    background-color: rgb(236, 236, 236);
-    height: 40px;
-    width: 1105px;
-    border: none;
-    padding: 0 0 0 20px;
+  display: flex;
+  width: 80%;
+  margin-right: 50px;
 }
-.search-bar input.search {
-    background-color: #fb3e44;
-    height: 40px;
-    width: 80px;
-    border: none;
-    color: white;
-    margin-right: 80px;
+form img {
+  width: 20px;
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 4px;
 }
-.search-bar a {
-    text-decoration: none;
-    color: grey;
-    width: 60px;
-    height: 30px;
-    margin: 10px;
-    text-align: center;
+form input {
+  border-style: none;
+  background-color: rgba(0, 0, 0, 0.05);
+  width: 100%;
+}
+.search-btn {
+  border-style: none;
+  background-color: #fb3e44;
+  color: white;
+}
+
+.bottom-header > img {
+  width: 80px;
+  margin-right: 20px;
+}
+.bottom-header a {
+  text-decoration: none;
+  padding: 5px 20px;
+}
+#join {
+  border: 2px solid rgba(0, 0, 0, 0.205);
+  color: rgba(0, 0, 0, 0.438);
+}
+#login {
+  color: rgba(0, 0, 0, 0.438);
 }
 
 /* SECTION 1 */
 
-#heading {
-    height: 600px;
-    background-color: rgba(232,217,217,.3);
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    text-align: center;
+.presentation {
+  height: 600px;
+  background-color: rgba(232, 217, 217, 0.3);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
 }
-#heading h1 {
-    font-size: 4.5em;
-    text-align: center;
+.presentation h2 {
+  font-weight: bolder;
+  font-size: 4em;
+  margin-top: 5%;
 }
-#heading p {
-    padding: 0 600px 0 600px;
-    margin-bottom: 80px;
+.presentation article {
+  text-align: center;
+  margin-bottom: 5%;
 }
-.join-us {
-    margin: 20px;
-    padding: 0 480px 0 480px;
-    width: auto;
-    display: flex;
-    justify-content: space-between;
-    
+.presentation .section-btn a {
+  text-decoration: none;
 }
-/* I HAVE SOME ISSUES WITH MY BUTTONS HEIGHT & WIDTH I REALLY DON'T KNOW WHY... */
-.join-us a {
-    text-decoration: none;
-    height: auto;
-    font-size: 1.5em;
+.section-btn {
+  display: flex;
+  width: 25%;
+  justify-content: space-between;
 }
-.see-plans {
-    background-color: #FB3B49;
-    color: white;
+.see-plan {
+  background-color: #fb3b49;
+  color: white;
+  padding: 10px 45px;
+  box-shadow: 5px 5px 0 rgba(255, 149, 149, 0.514);
 }
 .join-free {
-    color: rgb(0, 0, 0);
-    background-color: white;
-    height: 60px;
+  color: black;
+  padding: 10px 45px;
 }
 
 /* SECTION 2 */
 
-#best-of {
-    height: 560px;
-    background-color:white; 
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    text-align: center;
-    margin: 60px 60px 0 60px;
+.service {
+  height: 600px;
+  background-color: white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
 }
-#best-of .weird-form img {
-    height: 200px;
-    width: auto;
-    justify-content: center;
+.service .image img {
+  width: 200px;
+  height: auto;
+  margin-top: 80px;
 }
-#best-of h2 {
-    font-size: 2em;
-    background-color: rgba(255,204,53,.4);
-    transform: skew(9deg,0deg);
-    margin: 60px 480px 20px 480px;
-    font-style: italic;
+.service h2 {
+  margin: 50px 0;
+  font-style: italic;
+  background-color: rgba(255, 204, 53, 0.4);
+  transform: skew(9deg, 0deg);
 }
-#best-of p {
-    padding: 0 480px 0 480px;
-    margin-bottom: 80px;
+.service article {
+  text-align: center;
 }
 
 /* SECTION 3 */
 
-#create-org div {
-    height: auto;
-    /* background-color: rgba(232,217,217,.3); */
-    display: flex;
-    justify-content: space-evenly;
-    padding: 80px;
+.explanation {
+  height: 200px;
 }
-#create-org div .container {
-    flex-direction: column;
-    align-items: center;
-    width: 260px;
+.explanation h4 {
+  color: #ed1c24;
 }
-#create-org img {
-    width: 30px;
-    height: auto;
+.explanation img {
+  width: 30px;
 }
-#create-org h3 {
-    margin : 5px 0 5px 0;
-    color: #ED1C24;
+.explanation .block {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 50px 0;
 }
-#create-org {
-    background-color: rgba(232,217,217,.3); 
-    height: 550px; 
+.block div {
+  width: 15%;
 }
-#create-org a {
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-    text-decoration: none;
-    color: white;
-    background-color: rgb(0, 0, 0);
-    padding-top: 20px;
-    height: 50px;
-    width: 460px;
-    font-size: 1.3em;
-    margin: auto;
+.block p {
+  font-size: 0.8em;
+}
+
+/* FOOTER  */
+
+footer {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 80px 0px;
+}
+
+.last-btn {
+  text-decoration: none;
+  padding: 15px 100px;
+  color: white;
+  background-color: black;
+  margin: 100px;
+  box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.199);
 }
