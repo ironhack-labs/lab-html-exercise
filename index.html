@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NPM clone</title>
+    <link rel="stylesheet" href="/lab-html-exercise/styles.css" />
   </head>
   <body>
     <!-- HEADER -->
@@ -30,7 +31,7 @@
         </nav>
       </div>
 
-      <div>
+      <div class="bottom-header">
         <img
           src="/lab-html-exercise/images/npm-logo.png"
           alt="npm logo"
@@ -45,7 +46,7 @@
           <button type="submit">Search</button>
         </form>
         <div class="login-div">
-          <a href="#" class="join">Join</a>
+          <a href="#" class="header-join">Join</a>
           <a href="#" class="log-in">Log in</a>
         </div>
       </div>
@@ -58,9 +59,9 @@
         Essential Javascript development tools that help you go to market faster
         and build powerful applications using modern open source code.
       </p>
-      <div class="hero-btns">
-        <a href="#" class="plans">See plans</a>
-        <a href="#" class="join">Join for free</a>
+      <div class="hero-btns-container">
+        <a href="#" class="btn hero-btns plans">See plans</a>
+        <a href="#" class="btn hero-btns join">Join for free</a>
       </div>
     </section>
 
@@ -80,52 +81,56 @@
       </p>
     </section>
 
+    <!-- FEATURES SECTION -->
     <section id="features">
-      <div class="features-containers">
-        <img
-          src="/lab-html-exercise/images/zero-configuration.svg"
-          alt="zero configuration icon"
-        />
-        <h3>Zero configuration</h3>
-        <p>
-          Create an org. add your team, and start collaborating. <br />
-          Nothing to configure, set up, or manage.
-        </p>
+      <div class="features-main-container">
+        <div class="features-containers">
+          <img
+            src="/lab-html-exercise/images/zero-configuration.svg"
+            alt="zero configuration icon"
+          />
+          <h3>Zero configuration</h3>
+          <p>
+            Create an org. add your team, and start collaborating. <br />
+            Nothing to configure, set up, or manage.
+          </p>
+        </div>
+        <div class="features-containers">
+          <img
+            src="/lab-html-exercise/images/team-management.svg"
+            alt="team management icon"
+          />
+          <h3>Zero configuration</h3>
+          <p>
+            Control how has access to what modules within your team namespace
+            using straightforward team management capabilities.
+          </p>
+        </div>
+        <div class="features-containers">
+          <img
+            src="/lab-html-exercise/images/familiar-features.svg"
+            alt="familiar features icon"
+          />
+          <h3>Familiar features</h3>
+          <p>
+            npm Orgs has 100% parity with all the public npm registry features
+            your developers already use.
+          </p>
+        </div>
+        <div class="features-containers">
+          <img
+            src="/lab-html-exercise/images/npm-audit.svg"
+            alt="npm audit icon"
+          />
+          <h3>npm audit</h3>
+          <p>
+            Enjoy the security auditing features built into the npm client, a
+            zero-friction way to make open source software safer.
+          </p>
+        </div>
       </div>
-      <div class="features-containers">
-        <img
-          src="/lab-html-exercise/images/team-management.svg"
-          alt="team management icon"
-        />
-        <h3>Zero configuration</h3>
-        <p>
-          Control how has access to what modules within your team namespace
-          using straightforward team management capabilities.
-        </p>
-      </div>
-      <div class="features-containers">
-        <img
-          src="/lab-html-exercise/images/familiar-features.svg"
-          alt="familiar features icon"
-        />
-        <h3>Familiar features</h3>
-        <p>
-          npm Orgs has 100% parity with all the public npm registry features
-          your developers already use.
-        </p>
-      </div>
-      <div class="features-containers">
-        <img
-          src="/lab-html-exercise/images/npm-audit.svg"
-          alt="npm audit icon"
-        />
-        <h3>npm audit</h3>
-        <p>
-          Enjoy the security auditing features built into the npm client, a
-          zero-friction way to make open source software safer.
-        </p>
-      </div>
-      <a href="#" class="create-org">Create an Org</a>
+
+      <a href="#" class="btn create-org">Create an Org</a>
     </section>
   </body>
 </html>
