@@ -29,13 +29,12 @@
      <img src="images/npm-logo.png" alt="logo">
 
       <form class="search-bar" action="/register" method="GET">
-        <div class="search-bar-container">
+        <div>
           <img src="images/magnifying-glass.png" alt="search logo">
-          <input type="text" name="" placeholder="Search packages">
-          <input type="submit" name="" value="Search">
+          <input type="text" name="q" placeholder="Search packages" class="input">
         </div>
       </form>
-
+      <button type="submit" class="search" title="submit">Search</button>
      <div>
       <button type="submit">Join</button>
       <button type="button">Log in</button>
@@ -67,31 +66,31 @@
 
   <!--section 3-->
   <section id="section-3">
-    <div class=container>
+    <div class="options">
       <div>
         <img src="images/zero-configuration.svg" alt="no configuration">
-        <h3>Zero-Configuration</h3>
+        <h3>Zero Configuration</h3>
         <p>Create an org, add your team, and start collaborating. Nothing to configure, set up or manage</p>
-       </div>
+      </div>
 
-       <div>
+      <div>
         <img src="images/team-management.svg" alt="team image">
         <h3>Team Management</h3>
         <p>Control who has access to what modules within your team namespace using straightforward team Management capabilities</p>
-       </div>
+      </div>
 
-       <div>
-        <img src="images/familiar-features.svg" alt="no configuration">
+      <div>
+        <img src="images/familiar-features.svg" alt="familiar features">
         <h3>Familiar Features</h3>
         <p>npm Orgs has 100% parity with all the public npm register features your developers already use</p>
-       </div>
+      </div>
 
-       <div>
-        <img src="images/npm-audit.svg" alt="no configuration">
+      <div>
+        <img src="images/npm-audit.svg" alt="audit">
         <h3>npm Oudit</h3>
         <p>Enjoy the security audit features built into the npm client, a zero friction way to make open source software safer</p>
-       </div>
       </div>
-      <a class="create-btn" href="#">Create and Org</a>
-  </section>
+    </div>
+    <a class="create-btn" href="#">Create and Org</a>
+</section>
 </html>

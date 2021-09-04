@@ -1,9 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
 body {
-  font-family: 'Poppins';
+  font-family: "Poppins";
 }
 
+header {
+  align-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
 header > div {
   padding: 0 25px;
   display: flex;
@@ -42,27 +47,30 @@ h3 {
   margin-right: 1rem;
 }
 
-.search-bar-container {
+#header-buttons {
   display: flex;
-  align-items: flex-end;
+  justify-content: space-around;
+ }
+
+ #header-buttons .input {
+  border: none;
+  background-color: rgba(0,0,0,.05);
+  font-size: 14px;
+  color: black;
+  width: cal(100% - 10px);
+}
+
+.search-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
   border: 0px solid none;
   position: relative;
-  width: 1200px;
+  width: 80%;
   height: 45%;
   text-align: left;
-  background-color: silver;
-}
-
-.search-bar-container img{
-  height: 20px;
-}
-
-.search-bar-container input {
-  color: rgba(0,0,0,.05);
-}
-#header-buttons {
- display: flex;
- justify-content: space-between;
+  background-color: rgba(0,0,0,.05);
+  margin: 5px 0 5px 0;
 }
 
 .logo img{
@@ -73,6 +81,15 @@ h3 {
   width: 15px;
 }
 
+.search {
+  background-color: #fb3e44;
+  border: none;
+  color: white;
+  display: flex;
+  align-content: center;
+  padding: 10px 20px;
+}
+
 #section-1 {
   display: flex;
   justify-content: center;
@@ -80,6 +97,7 @@ h3 {
   text-align: center;
   height: 400px;
   background: rgba(232,217,217,3);
+  padding: 60px 0 20px 0;
 }
 .plans-btn {
   background: #FB3B49;
@@ -109,7 +127,7 @@ h3 {
 #section-1 article {
   width: 28%;
   margin: 5px auto;
-  height 180px;
+  height: 180px;
 }
 
 #section-2 {
@@ -126,15 +144,15 @@ h3 {
   width: 44%;
   font-size: .8em;
   margin: 5px auto;
-  height 180px;
+  height: 180px;
 }
 
-#section-3 .container{
+#section-3 .options {
   display: flex;
   flex-direction: row;
+  margin: 10px 5% 10px 5%;
   justify-content: space-evenly;
-  margin: 30px auto;
-
+  align-items: left;
 }
 
 #section-3 img {
@@ -144,12 +162,18 @@ h3 {
 #section-3 p{
   font-size: .9em;
   width: 70%;
+  margin: 10px 0;
 }
 
 .create-btn {
   background-color: black;
   box-shadow: 8px 8px 0 rgba(128,83,35,2);
   color: white;
+  padding: 10px 30px;
+  width: 200px;
   text-decoration: none;
-  margin: 10px auto;
+  display: flex;
+  font-size: 1em;
+  margin: 20px auto;
+  justify-content: center;
 }
