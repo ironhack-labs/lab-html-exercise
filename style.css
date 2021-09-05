@@ -1,34 +1,31 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
 body {
-  font-family: 'Poppins';
-  max-width: 95%;
-  margin: 0 auto;
-  padding: 0;;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+    font-weight: 300;
+    max-width: 95%;
+    line-height: 2em;
+    margin: 0 auto;
 }
 h1, h2, h3 {
     font-family: "Poppins";
+    font-weight: 700;
 }
 h1 {
-    font-size: 6.5em;
-    font-weight: 900;
+    font-size: 5em;
+    line-height: 1.5em;
     text-align: center;
     margin: 0 auto;
 }
 h2 {
-    font-size: 4em;
+    font-size: 2.5em;
+    text-align: center;
 }
 h3 {
-    font-size: 3em;
-    text-align: center;
-    line-height: 1em;
+    font-size: 1.5em;
 }
-/*
-form label color: rgba(0,0,0,.05)
-form input color: rgba(0,0,0,.05)
-form button background color: #fb3e44
-form button letters color: white
-*/
 header > div {
     padding: 0 25px;
     display: flex;
@@ -53,8 +50,9 @@ nav a {
     width: 20px;
     margin-right: 1rem;
 }
+/* MAIN NAV */
 .main-nav {
-    height: 50px;
+    height: 70px;
     display: flex;
     flex-wrap: wrap;
     padding-top: 5px; 
@@ -64,24 +62,18 @@ nav a {
 }
 .search-bar {
     width: 100%;
-    height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
     margin-left: -80px;
 }
-/* .search form{
-    display: flex;
-    position: relative;
-
-} */
 .search-bar input[type=text] {
     background:rgba(0,0,0,.05);
-    color: rgba(0,0,0,.05);
-    width: 600px;
+    color: rgba(0, 0, 0, 0.5);
+    width: 800px;
     padding-left: 60px; 
-    height: 55px;
+    height: 40px;
     border: none;
     font-size: 1em;
 }
@@ -96,14 +88,14 @@ nav a {
     font-size: 1em;
     background-color: #fb3e44;
     border: none;
-    height: 57px;
+    height: 42px;
     width: 100px;
 }
 #link-btn-join {
     font-size: 1em;
     color: black;
     text-decoration: none;
-    padding: 13px 28px;
+    padding: 8px 28px;
     border: 1px solid black;
     margin-right: 20px;
 }
@@ -112,22 +104,23 @@ nav a {
     text-decoration: none;
     color: black;
 }
+/* HERO SECTION */
 #hero {
-    background: #F8F4F4;
-    min-height: 700px;
+    background: rgba(232,217,217,.3);
+    min-height: 600px;
     display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
 #hero p {
-    font-size: 1.5em;
+    font-size: 1.4em;
     text-align: center;
     max-width: 700px;
     padding-bottom: 40px;
 }
 #link-btn-plans {
-    background: #fb3e44;
+    background: #FB3B49;
     font-size: 1em;
     color: white;
     text-decoration: none;
@@ -142,4 +135,66 @@ nav a {
     font-weight: 700;
     text-decoration: none;
     padding: 13px 40px;
+}
+/* UVP SECTION */
+#uvp {
+    background: white;
+    min-height: 700px;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+    padding-top: 50px;
+}
+#uvp img {
+    width: 280px;
+    padding-bottom: 50px;
+}
+#uvp-heading {
+    background:rgba(255,204,53,.4);
+    padding: 10px 20px 5px 20px;
+    transform: skew(9deg,0deg);
+    font-style: italic;
+}
+#uvp p {
+    font-size: 1.2em;
+    text-align: center;
+    max-width: 900px;
+}
+/* FEATURES SECTION */
+#features {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 60px 0;
+}
+#features div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin-bottom: 80px;
+}
+.features-box {
+    width: 20%;
+    margin: 0 25px; 
+}
+.features-box img {
+    width: 60px;
+    height: 60px;
+}
+.features-box .box-title {
+    color:#ED1C24;
+}
+.link-btn-create {
+    background: black;
+    font-size: 1em;
+    color: white;
+    text-decoration: none;
+    padding: 13px 100px;
+    margin-right: 20px;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
 }
