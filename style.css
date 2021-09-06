@@ -5,11 +5,16 @@ body {
 }
 
 header > div {
-  padding: 0 25px;
+  padding: 25px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid lightgray;
+}
+
+#header-bottom {
+  padding-bottom: 25px;
+  border-bottom: 4px solid rgba(0, 0, 0, 0.06);
 }
 
 nav {
@@ -67,33 +72,84 @@ form button {
   color: white;
 }
 
-.header-links  {
+.header-links {
   display: flex;
   justify-content: space-between;
+  height: 35px;
 }
 .header-links #join {
-    border: solid;
-    border-width: 0.1rem;
-    border-top-color: gray;
-    border-left-color: lightgray;
-    border-bottom-color: lightgray;
-    border-right-color: lightgray;
-    text-decoration: none;
-    text-align: center;
-    width: 70px;
-    margin: 0 5px;
-    color: black;
-    font-size: 0.9em;
+  border: solid;
+  border-width: 0.1em;
+  border-top-color: gray;
+  border-left-color: lightgray;
+  border-bottom-color: lightgray;
+  border-right-color: lightgray;
+  text-decoration: none;
+  text-align: center;
+  width: 65px;
+  margin: 2px 5px;
+  color: black;
+  font-size: 0.9em;
+  padding-top: 4px;
 }
 
 .header-links #login {
-    border: solid;
-    border-width: 0.1rem;
-    border-color: transparent;
-    text-decoration: none;
-    text-align: center;
-    width: 70px;
-    margin: 0 5px;
-    color: black;
-    font-size: 0.9em;
+  border: solid;
+  border-width: 0.1em;
+  border-color: transparent;
+  text-decoration: none;
+  text-align: center;
+  width: 65px;
+  color: rgb(48, 42, 42);
+  font-size: 0.9em;
+  margin: 2px 5px;
+  padding-top: 4px;
+
+
+}
+
+#intro {
+  background-color: #f8f4f4;
+  height: 600px;
+  padding-top: 80px;
+}
+#intro h1 {
+  text-align: center;
+  font-size: 7em;
+  margin: 0 auto;
+}
+
+#intro p {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.5em;
+  width: 600px;
+  padding-top: 20px;
+}
+
+#intro div {
+  display: flex;
+  width: 450px;
+  justify-content: space-between;
+  padding-top: 50px;
+  margin: 0 auto;
+}
+#see-plans {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2em;
+  background-color: #fb3b49;
+  box-shadow: 8px 8px 0 rgba(251, 59, 73, 0.2);
+  text-align: center;
+  padding-top: 10px;
+  height: 40px;
+  width: 200px;
+}
+#join-for-free {
+  text-decoration: none;
+  background-color: white;
+  font-size: 1.2em;
+  text-align: center;
+  padding-top: 10px;
+  width: 200px;
 }
