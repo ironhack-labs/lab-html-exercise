@@ -2,19 +2,21 @@
 
 body {
   font-family: "Poppins";
+  margin: 0 30px;
 }
 
 header > div {
-  padding: 25px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid lightgray;
+  font-weight: bold;
+  padding: 10px 30px 0 30px;
+  font-size: 0.7em;
 }
 
 #header-bottom {
-  padding-bottom: 25px;
-  border-bottom: 4px solid rgba(0, 0, 0, 0.06);
+  padding: 5px 0 5px 30px;
 }
 
 nav {
@@ -26,6 +28,8 @@ nav ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-left: 200px;
+  margin-bottom: 10px;
 }
 
 nav a {
@@ -39,58 +43,59 @@ nav a {
 }
 
 .npm-logo {
-  width: 50px;
-  padding-right: 20px;
+  width: 5em;
 }
 
 .search-logo {
-  width: 25px;
+  width: 20px;
+  padding: 10px;
 }
 
 #search-bar {
   display: flex;
-  width: 80%;
+  width: 75%;
   justify-content: center;
   align-items: center;
+  height: 2.7em;
   background-color: rgba(0, 0, 0, 0.05);
-  margin-right: 20px;
 }
 
 form input {
-  width: 100%;
-  height: 30px;
   border: none;
   background-color: transparent;
+  font-size: 1.2em;
 }
 
-form button {
+#search-bar button {
   background-color: #fb3e44;
-  height: 35px;
-  width: 80px;
+  width: 10%;
   margin: 0 auto;
   border: none;
   color: white;
+  margin-right: 0;
+  height: inherit;
+  font-family: inherit;
+  font-size: 1.05em;
 }
 
 .header-links {
   display: flex;
-  justify-content: space-between;
-  height: 35px;
+  align-items: center;
+  height: 30px;
+  margin-right: 19px;
 }
 .header-links #join {
   border: solid;
   border-width: 0.1em;
-  border-top-color: gray;
-  border-left-color: lightgray;
-  border-bottom-color: lightgray;
-  border-right-color: lightgray;
+  border-color: lightgray;
   text-decoration: none;
   text-align: center;
-  width: 65px;
-  margin: 2px 5px;
+  width: 55px;
   color: black;
   font-size: 0.9em;
-  padding-top: 4px;
+  margin: auto;
+  height: 20px;
+  padding-top: 5px;
 }
 
 .header-links #login {
@@ -99,34 +104,39 @@ form button {
   border-color: transparent;
   text-decoration: none;
   text-align: center;
-  width: 65px;
-  color: rgb(48, 42, 42);
+  width: 55px;
+  color: black;
   font-size: 0.9em;
-  margin: 2px 5px;
-  padding-top: 4px;
 }
 
 #intro {
   background-color: #f8f4f4;
   height: 600px;
-  padding-top: 100px;
+  border-top: 4px solid rgba(0, 0, 0, 0.1);
 }
 
 h1,
 h2 {
   text-align: center;
   margin: 0 auto;
-  width: 1350px;
 }
 h1 {
-  font-size: 7.18em;
+  margin-top: 100px;
+  font-size: 4em;
 }
 
 h2 {
-  font-size: 3.17em;
+  font-size: 2em;
+  margin: 0 150px;
   background-color: rgba(255, 204, 53, 0.4);
   transform: skew(9deg, 0deg);
   font-style: italic;
+}
+h3 {
+  color: #ed1c24;
+  font-size: 0.9em;
+  margin: 0;
+  font-weight: bold;
 }
 
 #intro article {
@@ -139,7 +149,7 @@ h2 {
 
 #intro div {
   display: flex;
-  width: 550px;
+  width: 400px;
   justify-content: space-between;
   padding-top: 80px;
   margin: 0 auto;
@@ -169,29 +179,31 @@ h2 {
 #about-npm {
   height: 600px;
   text-align: center;
-  margin: 80px auto;
+  margin: 80px auto 30px auto;
 }
 
 #about-npm img {
-  width: 350px;
-  padding-bottom: 50px;
+  width: 250px;
+  padding-bottom: 80px;
 }
 
 #about-npm article {
-  padding: 20px;
-  font-size: 1.3em;
-  width: 1100px;
+  padding: 40px;
+  font-size: 1.1em;
+  width: 700px;
   margin: 0 auto;
 }
 
 #product-info {
-  height: 600px;
+  height: 400px;
 }
 
 #product-info > div {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
+  width: 1200px;
+  margin: 0 auto;
 }
 
 .features-list {
@@ -199,41 +211,33 @@ h2 {
   flex-direction: column;
   align-items: left;
   margin: 0;
-  width: 400px;
-  justify-content: space-around;
+  width: 180px;
+  justify-content: space-between;
 }
 
 .features-list img {
-  width: 60px;
-  height: 50px;
-  margin: 0;
-  padding-bottom: 20px;
-}
-
-.features-list h3 {
-  margin: 0;
-  color: #ed1c24;
+  width: 30px;
+  padding-bottom: 15px;
 }
 
 .features-list p {
   height: 80px;
-  margin: 0;
-  padding-top: 20px;
-  width: 300px;
-  font-size: 1.2em;
+  padding-top: 15px;
+  width: 230px;
+  font-size: 0.9em;
 }
+
 #org {
   display: flex;
-  margin: 150px auto;
-  padding: 30px 150px 30px 150px;
+  padding-top: 100px;
 }
 
 #org button {
   border: none;
   background-color: black;
   color: white;
-  width: 550px;
-  height: 100px;
+  width: 400px;
+  height: 60px;
   font-size: 1.9em;
   font-weight: 600;
   box-shadow: 8px 8px rgba(128, 83, 35, 0.2);
