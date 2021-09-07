@@ -2,8 +2,7 @@
 
 body {
     font-family: 'Poppins';
-    margin: 0 30px 0 30px;
-
+    margin: auto 30px auto 30px;
  }
 
 .blackHeart {
@@ -14,6 +13,7 @@ body {
 
 .text-topo {
     border-bottom: rgba(0,0,0, 0.05) solid  1px;
+    
     font-weight: bold;
     font-size: 0.9em;
     display: flex;
@@ -21,8 +21,7 @@ body {
     list-style: none;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    width: 100%;
+    align-items: center;   
 }
 
 .nav-bar ul {
@@ -35,13 +34,12 @@ body {
 }
 
 .nav-bar li {
-    margin: 0 6px 0 6px;
+    margin: 8px 6px 6px 6px;
 }
 
 .nav-bar a {
     color: black;
-    text-decoration: none;
-    
+    text-decoration: none;   
 }
 
 .logo {
@@ -97,7 +95,6 @@ body {
 }
 
 .searchboxlogin {
-    
     display: flex;
     position: relative;
     list-style: none;
@@ -105,7 +102,6 @@ body {
     justify-content: center;
     align-items: center; 
 }
-
 
 .general-information {
     background: linear-gradient(to bottom, rgba(190, 179, 179, 0.459) 0%, rgba(232,217,217, 0.3)  1%, rgba(232,217,217, 0.3) 100%);
@@ -170,4 +166,82 @@ body {
 .link-join a {
     color: black;
     font-weight: 900;
+}
+
+.info-tool img {
+    max-width: 200px;
+    margin: 50px auto 30px auto;
+}
+
+.info-tool {
+    height: 400px;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-content: space-around;  
+}
+
+.info-tool h2 {
+    margin: 25px auto;
+    background-color: rgba(255,204,53, .4);
+    padding-left: 20px;
+    padding-right: 20px;
+    transform: skew(9deg, 0deg);
+    font-style: italic;
+    font-size: 26px;
+}
+
+.info-tool article {
+    max-width: 530px;
+    margin: 2px auto;
+    font-size: 11px;
+}
+
+.functionalities img {
+    max-width: 25px;  
+}
+
+.functionalities {
+    height: 220px;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 110px auto 5px auto;
+}
+
+.functionalities div {
+    max-width: 200px;
+    font-size: 13px;
+    margin-left: 23px;
+    margin-right: 23px;
+}
+
+.functionalities h3 {
+    margin: 2px auto;
+    font-size: 13.5px;
+    color: #ED1C24;
+}
+
+.create-bt {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 250px;
+    height: 40px;
+    margin: 25px auto;
+    background-color: black;
+    box-shadow: 4px 4px 0 rgba(128,83,35, .2);
+}
+
+.create-bt a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
 }
