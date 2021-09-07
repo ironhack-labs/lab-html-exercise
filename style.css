@@ -34,23 +34,41 @@ header > div {
   }
 
   .logo-npm {
-      width: 40px;
+      width: 60px;
       margin-right: 1rem;
   }
 
-  .search-logo {
-      width: 20px;
-      background-color: rgba(0,0,0,.05);
-      color: rgba(0,0,0,.05);
-      border: none;
-      padding: 10px;
+  .search {
+      display: flex;
+     justify-content: flex-start;
+     align-items: center;
   }
 
-  form input{
+  .search form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 6px;
+  }
+  
+  .search-logo {
+      height: 20px;
       background-color: rgba(0,0,0,.05);
       color: rgba(0,0,0,.05);
       border: none;
       padding: 10px;
+      margin: 0px;
+  }
+
+  form input{ 
+      background-color: rgba(0,0,0,.05);
+      color: rgba(0,0,0,.05);
+      border: none;
+      height: 20px; 
+      padding: 10px;
+      margin: 0px;
+      font-family: 'Poppins';
+      width: 950px;
   }
 
   form button {
@@ -58,18 +76,29 @@ header > div {
       font-family: 'Poppins';
       color: white;
       border: none;
+      height: 40px; 
+      padding: 10px;
+      width: 80px;
+      
+      
   }
 
   .join {
     border: 1px solid black;
-    padding: 4px;
+    padding: 4px 15px;
     text-decoration: none;
-  }
+    color: black;
+    font-weight: bold;
+    margin: auto 10px auto 20px;
+}
 
   .log-in {
       text-decoration: none;
+      color: black;
+      margin-left: 10px;
   }
 
+ 
   .first-section {
       display:flex;
       justify-content: center;
@@ -83,34 +112,45 @@ header > div {
       background-color: #FB3B49 ;
       box-shadow: rgba(251,59,73,.2);
       text-decoration: none;
-      padding: 10px 20px;
+      padding: 10px 50px;
       color: white;
       box-shadow: 8px 8px 0 rgba(251,59,73,.2);
-      font-weight: bold;
+      font-weight: 1000;
+      margin-right: 15px;
   }
 
   .join-free {
       text-decoration: none;
       color: black;
-      padding: 10px 20px;
-      font-weight: bold;
+      padding: 10px 50px;
+      font-weight: bolder;
+      background-color: white;
+      margin-left: 15px;
+      font-weight: 1000;
   }
   
 
 .first-section p {
     text-align: center;
     margin: 30px;
+    padding: 10px;
+    margin : none;
 }
 
 .first-section heading {
     font-size: 60px ;
+    font-weight: 1000;
 }
+
+
 
 .second-section {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 100px;
+    margin-top: 50px;
 }
 
 .img-second-section {
@@ -119,11 +159,14 @@ header > div {
 }
 
 .second-section heading {
-    font-size: 35px;
-    font-weight: bolder;
+    font-size: 30px;
+    font-weight: 1000;
     background-color: rgba(255,204,53,.4);
     transform: skew(9deg,0deg);
     font-style: italic;
+    padding-right: 30px;
+    padding-left: 30px;
+font-family: 'Poppins';
 }
 
 .second-section p {
@@ -133,7 +176,7 @@ header > div {
 
 .principles {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
@@ -144,10 +187,15 @@ header > div {
 .principles div {
     display: flex;
     flex-direction: column;
+    width: 250px;
+    margin: 20px;
 }
 
 .principles heading {
     color:  #ED1C24;
+    font-weight: 900;
+    padding-top: 20px
+    
 }
 
 .third-section a {
