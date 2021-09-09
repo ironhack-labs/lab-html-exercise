@@ -1,114 +1,169 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
 body {
-  font-family: 'Poppins';
+    font-family: 'Poppins';
+    margin: 0;
 }
 
-h1{
-    font-size: 50px;
-    font-weight: 800;
+h1 {
+    font-size: 70px;
+    font-weight: 900;
+    margin: 0;
 }
-h2 {
 
+h2 p {
+    width: 900px;
+    background-color: rgba(255, 204, 53, .4);
+    margin: auto;
+    text-align: center;
+    font-style: italic;
+    transform: skew(9deg, 0deg);
+    font-size: 37px;
 }
 
 h3 {
-
+    color: red;
 }
 
-header > div {
+header>div {
     padding: 0 25px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid lightgray;
 }
-  
+
 nav {
     width: 600px;
 }
-  
+
 nav ul {
     list-style: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-  
+
 nav a {
     text-decoration: none;
     color: black;
 }
 
-#header-a {
+.header-a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1px 20px;
+    border-top: black 1px solid;
+    border-left: gray 2px solid;
+    border-right: gray 2px solid;
+    border-bottom: gray 2px solid;
+    margin: auto;
+}
+
+.header-b {
     text-decoration: none;
     color: black;
     justify-content: flex-end;
     display: flex;
     align-items: center;
     padding: 0;
+    margin: auto;
 }
-  
+
 .blackHeart {
     width: 20px;
     margin-right: 1rem;
 }
-  
+
 .magnifying-glass {
     width: 20px;
-    height: 35px;
+    height: 19px;
+    background-color: lightgray;
+    color: black;
+    padding: 9px;
 }
-  
+
 .npm-logo {
     width: 50px;
-    margin-right: 1rem;  
-    height: 35px;
+    margin-right: 1rem;
+    height: 20px;
 }
-  
+
 #form-label {
-    color: rgba(0,0,0,.05);
+    border: 0;
+    color: rgba(0, 0, 0, .05);
+    background-color: lightgray;
+    height: 25px;
+    display: flex;
 }
 
 #form-input {
-    background-color: rgb(212, 216, 210);
-    color: rgba(0,0,0,.05);
-    border: none;
-    width: 1200px;
+    border: 0;
+    color: rgba(0, 0, 0, .05);
+    width: 75%;
+    background-color: lightgray;
     height: 35px;
+    display: flex;
 }
 
 #btn-search {
-    text-decoration: none;
+    border: none;
     background-color: #fb3e44;
     color: white;
-    border: none;
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
+    font-size: 15px;
     cursor: pointer;
+    margin: 10px 0;
 }
 
 .section1 {
-    
     text-align: center;
     flex-direction: column;
-    background-color: rgba(232,217,217,.3);
-    
-}
-.section1>div {
-    padding: 20px 30%;
-    text-align: center;
-    width: 600px;
+    background-color: rgba(232, 217, 217, .3);
+    height: 600px;
 }
 
-#btn-see-plans{
+.section1>div {
+    width: 800px;
+    height: 10em;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#space-h1 {
+    padding-top: 100px;
+
+}
+
+#space-article {
+    padding-top: 50px;
+    width: 430px;
+    margin: auto;
+}
+
+.div-section1 {
+    height: 50rem;
+    position: relative;
+}
+
+.div-section1 a {
+    margin: 0;
+    position: relative;
+    top: 250px;
+}
+
+#btn-see-plans {
     color: white;
     background-color: #fb3b49;
     box-shadow: 8px 8px 0 rgba(251, 59, 73, .2);
     text-decoration: none;
+    padding: 10px 50px;
 }
 
 #btn-join-free {
@@ -116,4 +171,47 @@ nav a {
     color: black;
     background-color: white;
     margin-left: 50px;
+    padding: 10px 50px;
+}
+
+.tgl-hxn {
+    width: 300px;
+    margin: auto;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.section2-article {
+    width: 780px;
+    margin: auto;
+    text-align: center;
+    padding: 30px 0 100px 0;
+}
+
+#section3-img {
+    width: 40px;
+    margin-right: 1rem;
+}
+
+.container-section3 {
+    width: 250px;
+    padding: 30px 0 100px 0;
+}
+
+#section3-article {
+    display: flex;
+    justify-content: space-evenly;
+    width: 1200px;
+    margin: auto;
+}
+
+.btn-crt {
+    background-color: black;
+    color: white;
+    box-shadow: 8px 8px 0 rgba(128, 83, 35, .2);
+    padding: 20px 30px;
+    width: 250px;
+    margin: auto;
+    text-align: center;
 }
