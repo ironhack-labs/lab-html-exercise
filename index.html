@@ -4,52 +4,64 @@
         <link rel="stylesheet" href="style.css">
     </head>
 
+<!----------------------------------------->
+
     <header>
-        <div>
-            <div>
-                <p>
-                    <img class="blackHeart" src="images/black-heart.png" alt="black heart" />
-                <span> Nifty Penguin Magic </span>
-                </p>
+
+        <div id="wrapping-div-top">
+            <div id="nested-div-top">
+                <div>
+                        <p>
+                            <img class="blackHeart" src="images/black-heart.png" alt="black heart" />
+                            <span id="nifty"> Nifty Penguin Magic </span>
+                        </p>
+                </div>
+                
+                <nav>
+                        <ul>
+                                <li><a href="#"> npm Enterprise </a></li>
+                                <li><a href="#"> Products </a></li>
+                                <li><a href="#"> Solutions </a></li>
+                                <li><a href="#"> Resources </a></li>
+                                <li><a href="#"> Docs </a></li>
+                                <li><a href="#"> Support </a></li>
+                        </ul>
+                </nav>
             </div>
-            
-            <nav>
-                <ul>
-                    <li><a href="#"> npm Enterprise </a></li>
-                    <li><a href="#"> Products </a></li>
-                    <li><a href="#"> Solutions </a></li>
-                    <li><a href="#"> Resources </a></li>
-                    <li><a href="#"> Docs </a></li>
-                    <li><a href="#"> Support </a></li>
-                </ul>
-            </nav>
         </div>
 
-        
-        <div id="form">
-            <img class="npmLogo" src="images/npm-logo.png" alt="NPM logo" />
-            
-            <form>
-                <div id="flex-me">
-                    <img class="magnifyingGlass" src="images/magnifying-glass.png" alt="magnifying glass" />
-            
-                    <input type="search" id="query" name="q" placeholder="Search packages">
-                    <button id="button">Search</button>
-                </div>
-            </form>
 
-            <!---<form id="search" method="GET" action="/search" class="search-form">
-                <div class="div-form">
-                    <img src="/images/magnifying-glass.png" alt="magnifiy glass">
-                </div>
-                <button type="submit" class="button-form" title="Submit">Search</button>
-            </form>--->
-        
-            <div id="links-div-2">
-                <a id="join" href="#">Join</a>
-                <a id="log-in" href="#">Log in</a>
+<!----------------------------------------->
+
+                    
+        <div id="wrapping-div-bottom">
+            <div id="nested-div-bottom">
+                    
+                    <div>
+                        <img class="npmLogo" src="images/npm-logo.png" alt="NPM logo" />
+                    </div>
+
+                    <div id="div-searchbar">
+                        <form>
+                                <div id="flex-me">
+                                    
+                                    <img class="magnifyingGlass" src="images/magnifying-glass.png" alt="magnifying glass" />
+                            
+                                    <input type="search" id="query" name="q" placeholder="Search packages">
+                                </div>     
+                        </form>
+
+                        <button>Search</button>
+                    </div>
+
+                    <div>
+                        <div id="links-div-2">
+                                <a id="join" href="#">Join</a>
+                                <a id="log-in" href="#">Log in</a>
+                        </div>
+                    </div>
+
             </div>
-
         </div>
 
     </header>
@@ -102,64 +114,68 @@
 
     <section id="ending">
         <div class="card-holder">
-            <div class="card">
-                <img src="zero-configuration.svg" alt="mouse clicking" />
 
-                <header>
-                    <h3>
-                        Zero configuration
-                    </h3>
-                </header>
+                <div class="card">
+                        <img src="zero-configuration.svg" alt="mouse clicking" />
 
-                <p>
-                    Create an org, add your team, and start collaborating. Nothing to configure, set up, or manage.
-                </p>
-            </div>
+                        <header>
+                            <h3>
+                                Zero configuration
+                            </h3>
+                        </header>
 
-            <div class="card">
-                <img src="team-management.svg" alt="team of three" />
-            
-                <header>
-                    <h3>
-                        Team management
-                    </h3>
-                </header>
-            
-                <p>
-                    Control who has access to what modules within your team namespace using straightforward team management capabilities.
-                </p>
-            </div>
+                        <p>
+                            Create an org, add your team, and start collaborating. Nothing to configure, set up, or manage.
+                        </p>
+                </div>
 
-            <div class="card">
-                <img src="familiar-features.svg" alt="balance" />
-            
-                <header>
-                    <h3>
-                        Familiar features
-                    </h3>
-                </header>
-            
-                <p>
-                    npm Orgs has 100% parity with all the public npm registry features your developers already use.
-                </p>
-            </div>
+                <div class="card">
+                        <img src="team-management.svg" alt="team of three" />
+                    
+                        <header>
+                            <h3>
+                                Team management
+                            </h3>
+                        </header>
+                    
+                        <p>
+                            Control who has access to what modules within your team namespace using straightforward team management capabilities.
+                        </p>
+                </div>
 
-            <div class="card">
-                <img src="npm-audit.svg" alt="watching glasses" />
-            
-                <header>
-                    <h3>
-                        npm audit
-                    </h3>
-                </header>
-            
-                <p>
-                    Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer.
-                </p>
-            </div>
+                <div class="card">
+                        <img src="familiar-features.svg" alt="balance" />
+                    
+                        <header>
+                            <h3>
+                                Familiar features
+                            </h3>
+                        </header>
+                    
+                        <p>
+                            npm Orgs has 100% parity with all the public npm registry features your developers already use.
+                        </p>
+                </div>
+
+                <div class="card">
+                        <img src="npm-audit.svg" alt="watching glasses" />
+                    
+                        <header>
+                            <h3>
+                                npm audit
+                            </h3>
+                        </header>
+                    
+                        <p>
+                            Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer.
+                        </p>
+                </div>
+
         </div>
-
+        
+        <div id="something">
         <a id="last-button" href="#">Create an Org</a>
+        </div>
 
     </section>
 

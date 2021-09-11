@@ -1,15 +1,34 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins');
+/*@import url('https://fonts.googleapis.com/css?family=Poppins');
+*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap');
 
 body {
   font-family: 'Poppins';
+  margin: 0 50px;
 }
 
-header > div {
-    padding: 0 25px;
+/*---------------------------------*/
+
+header #wrapping-div-top {
+    padding: 8px 0 0 0;
+}
+
+header #nested-div-top {
+    font-size: 14px;
+    padding: 0 32px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid lightgrey;                 
+     border-bottom: 1px solid lightgrey;  
+}
+
+.blackHeart {
+    width: 20px;
+    margin-right: 1rem;
+}
+
+header #nifty {
+    padding: 0 32px 0 0;
 }
 
 nav {
@@ -28,9 +47,59 @@ nav a {
     color: black;
 }
 
-.blackHeart {
-    width: 20px;
+
+/*------------------------------------------------*/
+
+
+header #wrapping-div-bottom {
+    padding-bottom: 10px;
+}
+
+
+header #nested-div-bottom {
+    font-size: 14px;
+    padding: 0 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgrey; 
+}
+
+
+.npmLogo {
+    height: 25px;
+    width: 80px;
     margin-right: 1rem;
+}
+
+#div-searchbar {
+    width: 100%;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-evenly;
+    display: flex;
+    justify-content: center;    /*flex-end*/
+    align-items: center;
+
+}*/
+
+form {
+    padding: 8px 0;
+    margin: 16px 0;
+    display: flex;
+    align-items: baseline;
+    width: 100%;
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+#flex-me {
+    padding: 10px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    background-color:  rgba(0,0,0,.05);
 }
 
 
@@ -40,40 +109,26 @@ nav a {
     height: 20px;
 }
 
-.npmLogo {
-    height: 25px;
-    width: 80px;
-    margin-right: 1rem;
-}
-
-/*form label {
-    color: rgba(0,0,0,.05)
-}*/
 
 form input {
-    color: rgba(0,0,0,.05);
     all: unset;
-}
-
-form button {
-    border: 1px solid  rgba(0,0,0,.05);
-    background-color: #fb3e44;
-    color: white;
-}
-
-/*form input ::placeholder {
-    color: white;
-}*/
-
-#flex-me {
-    display: flex;
-    align-items: center;
-    background-color:  rgba(0,0,0,.05);
 }
 
 #query {
     width: auto;
 }
+
+
+header button {
+    border: 1px solid  black; /*rgba(0,0,0,.05);*/
+    background-color: #fb3e44;
+    color: white;
+    padding: 10px 10px;
+    font-weight: 100;
+    display: flex;
+    justify-content: flex-end;
+}
+
 
 #links-div-2 {
     display: flex;
@@ -81,29 +136,25 @@ form button {
     align-items: center;
 }
 
-#button {
-    padding: 10px 10px;
-    font-weight: 100;
-}
 
 #join {
     margin: 10px 0;
-    padding: 5px;
+    padding: 5px 16px;
     text-decoration: none;
     color: black;
     border: 1px solid gray;
 }
 
 #log-in {
-    padding: 5px;
+    padding: 5px 16px;
     text-decoration: none;
     color: black;
 }
 
 /*--------------------------------*/
 
+
 #intro {
-    margin: 50px;
     height: 600px;
     background-color: rgba(232,217,217,.3);
     display: flex;
@@ -114,7 +165,11 @@ form button {
 
 #intro header {
     margin: 30px;
-    font-size: 2em;
+}
+
+#intro h1 {
+    font-size: 3rem;
+    font-weight: 600;
 }
 
 #intro article {
@@ -124,10 +179,13 @@ form button {
 
 #intro div {
     margin-top: 30px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-evenly;
 }
 
 #intro #see-plans {
-    margin: 50px;
+    margin: 20px;
     padding: 10px 40px;
     text-decoration: none;
     color: white;
@@ -136,10 +194,13 @@ form button {
 }
 
 #intro #join-for-free {
-    margin: 50px;
+    margin: 20px;
     text-decoration: none;
     color: black;
+    background-color: white;
+    padding: 10px 40px;
 }
+
 
 /*--------------------------------*/
 
@@ -167,7 +228,7 @@ form button {
 
 #presentation article {
     margin: 30px;
-    text-align: center; /*here question*/
+    text-align: center;
 }
 
 /*--------------------------------*/
@@ -195,14 +256,23 @@ form button {
     color: #ED1C24;
 }
 
+#ending #something {
+   display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
 #last-button {
+    width: 150px;
     text-decoration: none;
     color: white;
     text-align: center;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-end;
     background-color: black;
-    padding: 5px 80px;
+    padding: 5px 40px;
     box-shadow: 8px 8px 0 rgba(128,83,35,.2);
 }
