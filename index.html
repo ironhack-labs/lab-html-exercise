@@ -11,8 +11,8 @@
     <header>
         <div>
             <div>
-                <img src="images/black-heart.png" alt="black heart">
-                <p>Nifty Penguin Magic</p>
+                <img class="blackHeart" src="images/black-heart.png" alt="black heart">
+                <span>Nifty Penguin Magic</span>
             </div>
             <nav>
                 <ul>
@@ -25,60 +25,62 @@
                 </ul>
             </nav>
         </div>
-        <div>
-            <img src="images/npm-logo.png" alt="npm logo">
-            <img src="images/magnifying-glass.png" alt="magnifying glass">
+        <div id="navform">
+            <img class="npmLogo" src="images/npm-logo.png" alt="npm logo">
+            <img class="glass" src="images/magnifying-glass.png" alt="magnifying glass">
             <form action="">
-                <input type="search" name="Search Packages" id="">
-                <input type="submit" value="Search">
+                <input type="search" name="Search Packages" id="search-packages" placeholder="Search Packages">
+                <input class="btn" type="submit" value="Search">
             </form>
             <div>
-                <a href="">Join</a>
-                <a href="">Log In</a>
+                <a href="" id="join">Join</a>
+                <a href="" id="login">Log In</a>
             </div>
         </div>
     </header>
     <main>
-        <section>
+        <section id="first">
             <h1>Build amazing things</h1>
             <article>
-                <p>Essential JavaScript development tools that help you go to market faster and build powerful application using modern open source code</p>
+                <p>Essential JavaScript development tools that help you go to market faster and build powerful application using modern open source code.</p>
             </article>
             <div>
-                <a href="">See plans</a>
-                <a href="">Join for free</a>
+                <a id="plans" href="">See plans</a>
+                <a id="joinfree" href="">Join for free</a>
             </div>
         </section>
-        <section>
-            <img src="images/triangle-hexagon.svg" alt="hexagon">
+        <section id="second">
+            <img class="hexagon" src="images/triangle-hexagon.svg" alt="hexagon">
             <h2>Bring the best of open source to your company</h2>
             <article>
                 <p>npm is the tool used by over 11 Javascript developers around the world. Your developers already use it. Your company depends on it. Create an Org and get more out of the tool yous team already know and loves.</p>
             </article>
         </section>
-        <section>
+        <section id="third">
             <div>
-                <img src="images/zero-configuration.svg" alt="zero">
+                <img class="icon" src="images/zero-configuration.svg" alt="zero">
                 <h3>Zero configuration</h3>
                 <p>Create an org, add you team, and start collaborating. nothing to configure, set up, or manage.</p>
             </div>
             <div>
-                <img src="images/team-management.svg" alt="team">
+                <img class="icon" src="images/team-management.svg" alt="team">
                 <h3>Team management</h3>
                 <p>Control who has access to what modules within your team namespace using straightforward team management capabilities</p>
             </div>
             <div>
-                <img src="images/familiar-features.svg" alt="features">
+                <img class="icon" src="images/familiar-features.svg" alt="features">
                 <h3>Familiar features</h3>
                 <p>npm Orgs has 100% parity with all the public npm registry features your developers already use</p>
             </div>
             <div>
-                <img src="images/npm-audit.svg" alt="audit">
+                <img class="icon" src="images/npm-audit.svg" alt="audit">
                 <h3>npm audit</h3>
                 <p>Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer.</p>
             </div>
-            <a href="">Create an Org</a>
         </section>
+        <footer>
+            <a id="org" href="">Create an Org</a>
+        </footer>
     </main>
 </body>
 </html>
