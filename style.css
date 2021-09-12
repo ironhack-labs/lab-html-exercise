@@ -52,7 +52,7 @@ nav a {
 
 
 header #wrapping-div-bottom {
-    padding-bottom: 10px;
+    padding-bottom: 0px;
 }
 
 
@@ -63,7 +63,9 @@ header #nested-div-bottom {
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid lightgrey; 
+    box-shadow: 0px 1px 5px gray;
 }
+
 
 
 .npmLogo {
@@ -84,11 +86,11 @@ header #nested-div-bottom {
 }*/
 
 form {
+    width: 100%;
     padding: 8px 0;
     margin: 16px 0;
     display: flex;
     align-items: baseline;
-    width: 100%;
     display: flex;
     position: relative;
     align-items: center;
@@ -120,10 +122,11 @@ form input {
 
 
 header button {
-    border: 1px solid  black; /*rgba(0,0,0,.05);*/
+    margin-right: 15px;
+    border: 1px solid  lightgray;
     background-color: #fb3e44;
     color: white;
-    padding: 10px 10px;
+    padding: 13px 10px;
     font-weight: 100;
     display: flex;
     justify-content: flex-end;
@@ -146,7 +149,8 @@ header button {
 }
 
 #log-in {
-    padding: 5px 16px;
+    width: 50px;
+    padding: 5px 0 5px 16px;
     text-decoration: none;
     color: black;
 }
@@ -173,8 +177,9 @@ header button {
 }
 
 #intro article {
-    margin: 30px;
-    text-align: center; /*here question*/
+    margin: 50px;
+    height: 600px;
+    text-align: center; 
 }
 
 #intro div {
@@ -232,6 +237,11 @@ header button {
 }
 
 /*--------------------------------*/
+
+#ending {
+    margin: 0 50px 0 50px;
+    height: 600px;
+}
 
 
 #ending .card-holder {
