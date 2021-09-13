@@ -31,7 +31,6 @@ nav a {
 }
 
 
-
 .blackHeart {
   width: 20px;
   margin-right: 1rem;
@@ -40,7 +39,6 @@ nav a {
 .logo {
   width: 70px;
   padding-top: 8px;
-  margin-top: 1rem;
   margin-right: 2rem;
 }
 
@@ -50,7 +48,7 @@ nav a {
 
 .search-bar {
   background-color: #f2f2f2;
-  display: flex;
+  display: flex; 
 }
 
 .search-bar__icon {
@@ -65,40 +63,29 @@ nav a {
   flex-grow: 1;
 }
 
-.search-bar__button {
-  background-color: #fa3e44;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-}
-
-
-
-
-
 #second {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  height: 60px;
 }
 
-.magnifying-glass {
-  width: 18px;
-}
-
-.grey-search-bar {
+.search-bar {
   background-color: rgba(0, 0, 0, .05);
   color: rgba(0, 0, 0, .05);
-  height: 68px;
+  height: 40px;
+  margin-bottom: 0;
 }
 
-
-.search-button {
+.search-bar__button {
   background-color: #fb3e44;
   color: white;
-  padding: 18px 28px;
+  padding: auto;
   height: 100%;
-
+  width: 85px;
+  text-align: center;
+  border: none;
+  cursor: pointer;
 }
 
 #search {
@@ -116,26 +103,20 @@ nav a {
   align-items: center;
 }
 
-#second a {
+#second a{
   text-decoration: none;
   color: black;
-  padding: 18px 28px;
 }
 
-.framed {
-  padding: 0%;
+.framed-button {
   border: 2px solid black;
+  padding: 3px 16px;
+  margin-right: 16px;
 }
 
-/*_Useful information_:
-
-- _form label color_: rgba(0,0,0,.05)
-- _form input color_: rgba(0,0,0,.05) */
 
 /*DEUXIEME PART*/
-h1 {
-  font: weight 600px;
-}
+
 
 #title {
   display: flex;
@@ -145,11 +126,27 @@ h1 {
   background-color: rgba(232, 217, 217, .3);
   padding-top: 100px;
   padding-bottom: 80px;
+  text-align: center;
 }
+h1 {
+  font-size: 60px;
+  margin-bottom: 0;
 
+}
 #title a {
   text-decoration: none;
   padding: 20px 60px;
+}
+.title-content{
+  box-sizing: border-box;
+  width: 33%;
+  margin-top: 70px;
+}
+
+.buttons-aligned{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 70px;
 }
 
 .pink-box {
@@ -160,9 +157,10 @@ h1 {
 
 .white-box {
   color: black;
-  border: 1px solid black;
   background-color: white;
 }
+
+
 
 /*- "See plans" button background color: 
 - "See plans" button box shadow: 8px 8px 0 rgba(251,59,73,.2)*/
@@ -177,12 +175,21 @@ h1 {
 }
 
 #explanation img {
-  height: 100px;
+  height: 200px;
+  margin-bottom: 70px;
 }
 
 #explanation h2 {
   background-color: rgba(255, 204, 53, .4);
-  _transform: _font-style: italic;
+  font-style: italic;
+  transform: skew(9deg,0deg);
+  padding-left: 40px;
+  padding-right: 40px;
+}
+#explanation article {
+  margin-left: 350px;
+  margin-right: 350px;
+  text-align: center;
 }
 
 
@@ -200,6 +207,8 @@ h1 {
   justify-content: space-around;
   align-items: stretch;
   flex-direction: row;
+  margin-right: 100px;
+  margin-left: 100px;
 }
 
 #structure img {
@@ -218,5 +227,16 @@ h1 {
 
 #structure h3 {
   color: #ED1C24;
+}
+
+.box-explanation {
+  width: 250px;
+  margin-right: 60px;
+
+}
+
+.last-element {
+  width: 250px;
+  margin-right: 0;
 }
 
