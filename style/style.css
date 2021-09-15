@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+body {
+    font-family: 'Poppins';
+}
+
+header>div {
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+}
+
+nav {
+    width: 600px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.black-heart {
+    width: 20px;
+    margin-right: 1rem;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    justify-content: space-between;
+}
+
+form label {
+    color: rgba(0, 0, 0, .05);
+}
+
+form input {
+    color: rgba(0, 0, 0, .05);
+}
+
+form button {
+    background-color: #fb3e44;
+    color: white;
+}
+
+.search {
+    height: 30px;
+}
+
+.searchbar {
+display:flex;
+justify-content: space-around;
+margin: auto;
+
+}
+
+#searchfield {
+width: 1900px;
+border: none;
+background-color: rgb(214, 209, 209);
+
+}
+
+.links a {
+    text-decoration: none;
+    color:black;
+}
+
+#join {
+    margin-right:10px;
+    border:black 1px solid;
+   padding:2px;
+}
+
+#glasses {
+    height: 20px;
+    margin-right: 20px;
+ }
+
+#npm-logo {
+margin-top:10px;
+    height: 15px;
+}
+
+
+#section1 {
+    height: 600px;
+    background-color: rgba(232,217,217,.3);
+}
+
+h1 {
+    width: 100%; /* damit die Befehle erfüllt werden können, brauchen sie einen Richtwert , daher muss man den Tags eine Breite geben */
+    height: fit-content; /* tag wird an die schriftgröße angepasst*/
+     margin-left: auto; /* aussenabstand vom tag wird automatisch nach links und rechts ausgerichtet und zentriert */
+    margin-right: auto;
+    position: relative; /*dieses element wird relativ zu den anderen ausgerichtet. Daher müssen die anderen Elemente im gleichen container ebenfalls den Befehl haben */
+    text-align: center; /* Text innerhalb dieses Tags zentrieren */
+    font-size: 60px;
+    font-style: bold;
+    padding-top: 80px;
+}
+
+
+#section1 article p{ /*hier spreche ich nur das p an innerhalb von article innerhalb von section - cascade! immer weiter runter gehen, daher das letzte tag. Mit jeder Ebene weiter runter ein Leerzeichen (von Groß zu KLein) */
+    text-align: center; 
+    padding: 0;
+    justify-content: center;
+    margin: auto;
+    width: 400px;
+}
+
+#section1 div, /* innerhalb der section 1 soll  div und für article angesprochen werden */
+article {
+    width: 100%;
+    position: relative;
+    text-align: center;
+}
+
+.btn {
+
+    background-color: #FB3B49;
+    font-size: 20px;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+    margin-right: 10px;
+text-decoration: none;
+color:white;
+}
+
+#section2 h2 {
+    background-color: rgba(255,204,53,.4);
+    width: 700px;
+    margin: auto; 
+    margin-top: 20px;
+    text-align:center;
+    font-style:italic;
+}
+
+.join {
+    font-size: 20px;
+    text-decoration: none;
+ color: black;
+  margin-left: 10px;
+}
+
+.hexagon {
+    width: 200px;
+    padding: 50px;
+    margin: auto;
+    display:flex;
+    justify-content: center;
+}
+
+#section2 article p {
+    width: 650px;
+    margin: auto; /*Durch Setzen des rechten und linken Außenabstands (margin) auf auto lässt sich das Element horizontal zentrieren. Das Element nimmt so die definierte Breite an und teilt den verbleibenden Außenabstand gleichmäßig auf. */
+    padding-top: 30px;
+}
+
+#section3 {
+    height: 5px;
+}
+
+.organisation {
+    border-color:black;
+    display:flex;
+    justify-content: space-around;
+}
+
+h3 {
+font-size: 20px;
+color:#ED1C24 ;
+width: 250px;
+}
+
+.orgimage {
+    width: 500px;
+}
+
+#section3 div {
+    margin:100px; /* damit die div voneinander genug Abstand haben */
+}
+
+#section3 img {
+    width: 40px;
+}
+
+.org a {
+text-decoration: none;
+color: white;
+box-shadow:8px 8px 0 rgba(128,83,35,.2);
+margin: auto;
+background-color: black;
+display: flex;
+justify-content: center;
+text-align: center;
+font-size:20px;
+width: 300px;
+padding: 10px 40px;
+}
+
+.org {
+    padding-bottom: 70px;
+}
