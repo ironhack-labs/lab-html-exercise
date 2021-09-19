@@ -40,35 +40,37 @@ header > div {
       display: flex;
       flex-direction: row;
       flex-wrap: nowrap;
-      justify-content: center;
+      justify-content: flex-start;
       align-items: center;
       align-content: flex-start;
       width: 100px;
+      height: 50px;
       padding-left: 0%;
       margin-left: 0%;
   }
-  .magnifying-glass {
-      width: 50px;
-      margin-right: 1rem;
-  }
-  form imput {
+  form input {
     color: rgba(0,0,0,.05);
-    width: 50px;
+    width: 700px;
+    background-image:url(/images/magnifying-glass.png) no-repeat scroll 20px 20px;
+    padding-left: 30px;
   }
   .search-button {
     background-color: #fb3e44;
     color: white;
   }
 button {
-	display: flex;
+	display: flex;  
 	flex-direction: row;
 	flex-wrap: nowrap;
 	justify-content: flex-end;
-	align-items: flex-end;
-	align-content: flex-start;
+	align-items:flex-end;
+	align-content:flex-end ;
   color: blue;
+  background-color: white;
 }
-
+.log-in {
+  border: none;
+}
 h1, h2, h3, h4 {
     text-align: center;
 }
@@ -77,11 +79,15 @@ h1, h2, h3, h4 {
     flex-direction: column;
     flex-wrap:nowrap;
     text-align: center;
-    justify-content: center;
+    justify-content:center;
     align-content: center;
     align-items: center;
     height: 600px;
     background-color: rgba(232,217,217,.3);
+}
+#section1 h1 {
+  font-size: 75px;
+  width: 1000px;
 }
 #section1 article {
   display: flex;
@@ -95,7 +101,7 @@ h1, h2, h3, h4 {
 #section1 div {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
   text-align: center;
   align-content: center;
   align-items: center;
@@ -104,16 +110,23 @@ h1, h2, h3, h4 {
 }
 .buttons {
   display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: space-around;
-	align-items: center;
-	align-content: center;
+  justify-content: center;
+  align-content: center;
+  align-items: baseline;
+  width: 1000px;
+  height: 45px;
+  padding: 0%;
+  margin: 0%;
 }
 .see-plans {
   display: flex;
   background-color: #FB3B49;
   color: white;
+  box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+}
+.join-for-free {
+  border: none;
+  color: black;
 }
 
 #section2 {
@@ -124,11 +137,11 @@ h1, h2, h3, h4 {
   justify-content: center;
   align-content: center;
   align-items: center;
-  height: 600px;
+  height: 400px;
 }
 .triangle-hexagon {
   width: 175px;
-  margin-top: 30px;
+  margin-top: auto;
 }
 #section2 h2 {
   background-color: rgba(255,204,53,.4);
@@ -147,27 +160,48 @@ h1, h2, h3, h4 {
 #section3 {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   text-align: center;
   justify-content: center;
   align-content: center;
   align-items: center;
-  margin-top: 30px;
-  height: 600px;
+  margin: 0% 5% 0% 5%;
+  height: 500px;
+  text-align: left;
 
 }
-#section3 img{
+#section3 img {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: flex-start;
   width: 30px;
 }
-#section3 div{
+#section3 div {
   display: flex;
   flex-direction: column;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-  align-content: flex-start;
-
+  align-items: flex-start;
+  align-content: center;
+  font-size: small;
+  width: 400px;
+}
+#section3 h4 {
+  color: #ED1C24;
 }
 .create {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  width: 300px;
+  height: 45px;
+  margin-top: 50px;
+  padding-top: 0px;
+  background-color: black;
+  color: white;
+  box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+  font-weight: bold;
 }
