@@ -1,39 +1,45 @@
 <!DOCTYPE html>
 <html>
 <head>
-
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
+
+        <!--Here starts the ICON, NAME AND NAVBAR div-->
         <div class="icon-and-nav">
-            <div class="icon">
-                <img class="heart" src="/images/black-heart.png" alt="An image of a black heart">
-                Nifty Penguin Magic
-                <nav>
-                    <ul>
-                        <li><a href="#">npm Enterprise</a></li>
-                        <li><a href="#">Products</a></li>
-                        <li><a href="#">Solutions</a></li>
-                        <li><a href="#">Resources</a></li>
-                        <li><a href="#">Doc</a></li>
-                        <li><a href="#">Support</a></li>
-                    </ul>
-                </nav>
-            </div>
+            <img class="heart" src="/images/black-heart.png" alt="An image of a black heart">
+            <span>Nifty Penguin Magic</span>
+            <nav>
+                <ul>
+                    <li><a href="#">npm Enterprise</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Solutions</a></li>
+                    <li><a href="#">Resources</a></li>
+                    <li><a href="#">Doc</a></li>
+                    <li><a href="#">Support</a></li>
+                </ul>
+            </nav>
         </div>
+
+        <!--Here starts the LOGO, SEARCH FORM AND AUTH BTNS div-->
         <div class="logo-search-authenticate">
             <img class="logo" src="images/npm-logo.png" alt="logo of npm">
-            <form action="">
+            <div id="form">
                 <img class="magnifying-glass" src="images/magnifying-glass.png" alt="An image of a magnifying-glass">
-                <label for="text-search"></label>
-                <input type="text" id="text-search" placeholder="Search packages">
-                <button type="submit">Search</button>
-            </form>
+                <form action="">
+                    <label for="text-search"></label>
+                    <input type="text" id="text-search" placeholder="Search packages">
+                    <button class="search-btn" type="submit">Search</button>
+                </form>
+            </div>
             <div class="authentication-buttons">
                 <a href="#" id="join-btn">Join</a>
                 <a href="#" id="log-in-btn">Log in</a></div>
             </div>
     </header>
+
+    <!--Here starts the WELCOME section-->
     <section id="welcome">
         <h1>Build amazing things</h1>
         <article id="explanation-text">
@@ -44,6 +50,8 @@
             <a href="#" id="join-for-free-btn">Join for free</a>
         </div>
     </section>
+
+    <!--Here starts the MORE IFNORMATION section-->
     <section id="more-information">
         <img class="hexagon" src="images/triangle-hexagon.svg" alt="An image of an hexagon made of triangles">
         <h2>Bring the best of open source to your company</h2>
@@ -51,6 +59,8 @@
             <p>npm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it. Create an Org and get more out of the tools your team already knows and loves.</p>
         </article>
     </section>
+
+    <!--Here starts the FEATURES section-->
     <section class="features">
         <div class="zero-configuration">
             <img class="icons" src="images/zero-configuration.svg" alt="An icon with a mouse clicking on a button">
