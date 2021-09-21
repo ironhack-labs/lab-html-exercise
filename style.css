@@ -41,7 +41,7 @@ header > div {
   /* Styling logo, search form and authentication btns */
 
   .logo {
-    width: 70px;
+    width: 60px;
   }
 
   .magnifying-glass {
@@ -69,14 +69,14 @@ header > div {
   #form {
     background-color: rgba(0,0,0,0.05);
     border-style: none;
-    margin: 10px 35px 10px 20px;
+    margin: 10px 0px 10px 20px;
     display: flex;
     align-items: center;
     flex-grow: 1;
+    height: 35px;
   }
 
   .search-btn {
-    flex-grow: 1;
     background-color: #fb3e44;
     color: white;
     border-style: none;
@@ -84,5 +84,31 @@ header > div {
     font-family: 'Poppins';
     letter-spacing: 0.3px;
     padding: 0.5rem 1rem;
+    margin-left: 0;
+  }
+
+  .authentication-buttons {
+    margin-left: 2.25rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .authentication-buttons > a{
+    text-decoration: none;
+    color: #2f4f4f;
+  }
+
+  #join-btn {
+    border: 1px solid #9a9a9a;
+    padding: 0.25rem 0.85rem;
+    letter-spacing: 0.3px;
+    font-size: 0.85rem;
+  }
+
+  #log-in-btn {
+    padding: 0.25rem 0.85rem;
+    letter-spacing: 0.3px;
+    font-size: 0.85rem;
+    margin-left: 0.35rem;
   }
 
