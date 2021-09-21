@@ -1,7 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
+/* General styling */
+
 body {
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 4rem;
+  text-align: center;
+  letter-spacing: -0.04em;
 }
 
 header > div {
@@ -11,6 +20,7 @@ header > div {
     align-items: center;
     border-bottom: 1px solid lightgray;
   }
+
 
 /* Styling icon, name and navbar */
   nav {
@@ -111,4 +121,48 @@ header > div {
     font-size: 0.85rem;
     margin-left: 0.35rem;
   }
+
+  /* Styling WELCOME SECTION */
+
+  #welcome {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    height: 600px;
+    background-color: rgba(232,217,217,.3);
+  }
+
+  #welcome > h1 {
+    margin-top: 80px;
+    margin-bottom: -45px;
+  }
+
+  #explanation-text {
+    width: 33%;
+    text-align: center;
+  }
+
+  #see-plans-btn {
+    text-decoration: none;
+    color: white;
+    background-color: #FB3B49;
+    box-shadow: 5.5px 5.5px 0 rgba(251,59,73,.2);
+    padding: 0.75rem 3.5rem;
+    margin-right: 10px;
+  }
+
+  #join-for-free-btn {
+    text-decoration: none;
+    color: black;
+    padding: 0.75rem 3.5rem;
+    font-weight: bold;
+    margin-left: 10px;
+  }
+
+  .welcome-buttons {
+    margin-top: 10px;
+    margin-bottom: 150px;
+  }
+
 
