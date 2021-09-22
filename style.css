@@ -17,7 +17,7 @@ h2 {
   font-weight: 600;
   font-size: 1.8rem;
   font-style: oblique;
-  padding: 0 40px;
+  padding: 0 35px;
   background-color: rgba(255,204,53,.4);
   transform: skew(9deg,0deg);
   height: 30px;
@@ -27,13 +27,18 @@ h2 {
   justify-content: center;
 }
 
+h3 {
+  font-size: 12.5px;
+  color: #ED1C24;
+}
+
 header > div {
-    padding: 0 25px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid lightgray;
-  }
+  padding: 0 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+}
 
 
 /* Styling icon, name and navbar */
@@ -210,8 +215,44 @@ header > div {
 
    #features {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     flex-direction: column;
     align-items: center;
     height: 600px;
   }
+
+  .features-div {
+    display: flex;
+    align-items: flex-start;
+    width: 71%;
+    justify-content: space-evenly;
+  }
+
+  .features-div > div {
+    width: 80%;
+  }
+
+  .features-text {
+    font-size: 12.5px;
+    width: 90%;
+  }
+
+  .icons {
+    width: 33px;
+    height: 33px;
+  }
+
+  #features > a {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    box-shadow: 5.5px 5.5px 0 rgba(128,83,35,.2);
+    padding: 0.75rem 7.5rem;
+    margin-top: 55px;
+  }
+
+
+
+  
+
+
