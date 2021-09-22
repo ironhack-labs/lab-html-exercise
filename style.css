@@ -10,42 +10,107 @@ header > div {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    align-content: center;
     border-bottom: 1px solid lightgray;
-  }
+}
+
+header > div > div {
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
   
-  nav {
+nav {
     width: 600px;
-  }
+}
   
-  nav ul {
+nav ul {
     list-style: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
+}
   
-  nav a {
+nav a {
     text-decoration: none;
     color: black;
-  }
+}
   
-  .blackHeart {
+.blackHeart {
     width: 20px;
     margin-right: 1rem;
-  }
+}
 
 /* Logo, Search-Bar and Buttons Styles */
 .logo-container {
     display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: flex-start;
+    justify-content: space-between;
 	align-items: center;
-	align-content: stretch;
+	align-content: center;
+    height: 30px;
+    padding: 10px;
 }
 
-.logo-container img {
-    width: 100px;
+header div form {
+    display: flex;
+	align-items: center;
+	align-content: center; 
+    padding-top: 1rem;
+    width: 1000px;
+}
+
+header div form input {
+    display: flex;
+    background-color: rgba(0,0,0,.05);
+    border-style: none;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 36px;
+
+}
+
+header div form button {
+    display: flex;
+    background-color: #fb3e44;
+    text-decoration: none;
+    color: white;
+    padding: 10px 10px 12px 10px;
+    margin: 0 auto;
+    border-style: none;
+    float: right;
+    overflow: visible;
+}
+
+.join {
+    display: flex;
+    color: black;
+    text-decoration: none;
+    border: 1px solid lightgrey;
+    padding: 3px 15px;
+    position: inherit;
+    overflow: visible;
+}
+
+.login {
+    display: flex;
+    color: black;
+    text-decoration: none;
+    margin: 0 0 0 10px;
+    position: inherit;
+    overflow: visible;
+}
+
+header div img {
+    width: 70px;
+    padding: 20px 10px;
+}
+
+.search-img {
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    padding: 8px;
+    background-color: rgba(0,0,0,.05);
 }
 
 /* Main Sections Styles */
