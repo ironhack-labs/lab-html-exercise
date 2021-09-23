@@ -49,6 +49,7 @@ header > div {
   
   .icon-and-nav > span {
     flex-grow: 1;
+    font-size: .875rem;
   }
 
   nav ul {
@@ -61,6 +62,7 @@ header > div {
   nav a {
     text-decoration: none;
     color: black;
+    font-size: .875rem;
   }
   
   .heart {
@@ -69,9 +71,28 @@ header > div {
   }
 
   /* Styling logo, search form and authentication btns */
-
+  
+  .logo-search-authenticate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 3px 5px -2px lightgray;
+  }
+  
   .logo {
     width: 60px;
+  }
+
+  #form {
+    background-color: rgba(0,0,0,0.05);
+    border-style: none;
+    margin: 10px 0px 10px 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-grow: 1;
+    height: 35px;
+    width: 70%;
   }
 
   .magnifying-glass {
@@ -80,11 +101,10 @@ header > div {
     padding-left: 0.5rem;
   }
 
-  #text-search {
-    background-color: rgba(0,0,0,0);
-    border-style: none;
-    padding-left: 0.5rem;
-    width: 470%;
+  #search-bar {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
   }
 
   #search-bar > input:focus {
@@ -93,15 +113,11 @@ header > div {
     outline: none;
   }
 
-  #form {
-    background-color: rgba(0,0,0,0.05);
+  #text-search {
+    background-color: rgba(0,0,0,0);
     border-style: none;
-    margin: 10px 0px 10px 20px;
-    display: flex;
-    align-items: center;
-    flex-grow: 1;
-    height: 35px;
-    width: 70%;
+    padding-left: 0.5rem;
+    width: 100%;
   }
 
   .search-btn {
@@ -138,10 +154,6 @@ header > div {
     letter-spacing: 0.3px;
     font-size: 0.85rem;
     margin-left: 0.35rem;
-  }
-
-  .logo-search-authenticate {
-    box-shadow: 0 3px 5px -2px lightgray;
   }
 
   /* Styling WELCOME SECTION */
