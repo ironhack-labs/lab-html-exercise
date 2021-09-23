@@ -4,6 +4,7 @@
 
 body {
   font-family: 'Poppins', sans-serif;
+  margin: 0;
 }
 
 h1 {
@@ -79,17 +80,14 @@ header > div {
     padding-left: 0.5rem;
   }
 
-  div > form > label {
-    background-color: rgba(0,0,0,.05);
-  }
-
-  div > form > input {
+  #text-search {
     background-color: rgba(0,0,0,0);
     border-style: none;
     padding-left: 0.5rem;
+    width: 470%;
   }
 
-  div > form > input:focus {
+  #search-bar > input:focus {
     background-color: rgba(0,0,0,0);
     border-style: none;
     outline: none;
@@ -103,6 +101,7 @@ header > div {
     align-items: center;
     flex-grow: 1;
     height: 35px;
+    width: 70%;
   }
 
   .search-btn {
@@ -141,9 +140,13 @@ header > div {
     margin-left: 0.35rem;
   }
 
+  .logo-search-authenticate {
+    box-shadow: 0 3px 5px -2px lightgray;
+  }
+
   /* Styling WELCOME SECTION */
 
-  #welcome {
+  #welcome-section {
     display: flex;
     justify-content: space-around;
     flex-direction: column;
@@ -152,7 +155,7 @@ header > div {
     background-color: rgba(232,217,217,.3);
   }
 
-  #welcome > h1 {
+  #welcome-section > h1 {
     margin-top: 80px;
     margin-bottom: -45px;
   }
@@ -186,7 +189,7 @@ header > div {
 
   /* Styling MORE INFORMATION SECTION */
 
-  #more-information {
+  #more-information-section {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -200,7 +203,7 @@ header > div {
     margin-top: -60px;
   }
 
-  #more-information > h2 {
+  #more-information-section > h2 {
     margin-top: 60px;
   }
 
@@ -211,9 +214,9 @@ header > div {
     margin-top: -5px;
   }
 
-   /* Styling MORE INFORMATION SECTION */
+   /* Styling FEATURE SECTION */
 
-   #features {
+   #features-section {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
@@ -224,17 +227,17 @@ header > div {
   .features-div {
     display: flex;
     align-items: flex-start;
-    width: 71%;
-    justify-content: space-evenly;
+    width: 75%;
+    justify-content: center;
   }
 
-  .features-div > div {
+  .features {
+    margin: 0 20px;
     width: 80%;
   }
 
   .features-text {
     font-size: 12.5px;
-    width: 90%;
   }
 
   .icons {
@@ -242,7 +245,7 @@ header > div {
     height: 33px;
   }
 
-  #features > a {
+  #features-section > a {
     text-decoration: none;
     color: white;
     background-color: black;
@@ -250,7 +253,6 @@ header > div {
     padding: 0.75rem 7.5rem;
     margin-top: 55px;
   }
-
 
 
   

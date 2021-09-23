@@ -8,7 +8,7 @@
 
         <!--Here starts the ICON, NAME AND NAVBAR div-->
         <div class="icon-and-nav">
-            <img class="heart" src="/images/black-heart.png" alt="An image of a black heart">
+            <img class="heart" src="images/black-heart.png" alt="A black heart">
             <span>Nifty Penguin Magic</span>
             <nav>
                 <ul>
@@ -27,9 +27,9 @@
             <img class="logo" src="images/npm-logo.png" alt="logo of npm">
             <div id="form">
                 <img class="magnifying-glass" src="images/magnifying-glass.png" alt="An image of a magnifying-glass">
-                <form action="">
+                <form id="search-bar" action="">
                     <label for="text-search"></label>
-                    <input type="text" id="text-search" placeholder="Search packages">
+                    <input type="search" id="text-search" placeholder="Search packages">
                 </form>
             </div>
             <button class="search-btn" type="submit">Search</button>
@@ -40,7 +40,7 @@
     </header>
 
     <!--Here starts the WELCOME section-->
-    <section id="welcome">
+    <section id="welcome-section">
         <h1>Build amazing things</h1>
         <article id="welcome-article">
             <p>Essential JavaScript development tools that help you go to market faster and build powerful applications using modern open source code.</p>
@@ -52,7 +52,7 @@
     </section>
 
     <!--Here starts the MORE INFORMATION section-->
-    <section id="more-information">
+    <section id="more-information-section">
         <img class="hexagon" src="images/triangle-hexagon.svg" alt="An image of an hexagon made of triangles">
         <h2>Bring the best of open source to your company</h2>
         <article id="more-information-article">
@@ -61,24 +61,24 @@
     </section>
 
     <!--Here starts the FEATURES section-->
-    <section id="features">
+    <section id="features-section">
         <div class="features-div">
-            <div class="zero-configuration">
+            <div class="zero-configuration features">
                 <img class="icons" src="images/zero-configuration.svg" alt="An icon with a mouse clicking on a button">
                 <h3>Zero configuration</h3>
                 <p class="features-text">Create an org, add your team, and start collaborating. Nothing to configure, set up, or manage.</p>
             </div>
-            <div class="team-management">
+            <div class="team-management features">
                 <img class="icons" src="images/team-management.svg" alt="An icon representing a team">
                 <h3>Team management</h3>
                 <p class="features-text">Control who has access to what modules within your team namespace using straightforward team management capabilities.</p>
             </div>
-            <div class="familiar-features">
+            <div class="familiar-features features">
                 <img class="icons" src="images/familiar-features.svg" alt="An icon representing features">
                 <h3> Familiar features</h3>
                 <p class="features-text">npm Orgs has 100% parity with all the public npm registry features your developers already use.</p>
             </div>
-            <div class="npm-audit">
+            <div class="npm-audit features">
                 <img class="icons" src="images/npm-audit.svg" alt="An icon of binoculars">
                 <h3>npm audit</h3>
                 <p class="features-text">Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer.</p>
