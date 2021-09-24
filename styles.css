@@ -10,25 +10,96 @@ header > div {
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid lightgray;
-  }
+}
+
+nav {
+  width: 600px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
   
-  nav {
-    width: 600px;
-  }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  nav a {
-    text-decoration: none;
-    color: black;
-  }
-  
-  .blackHeart {
-    width: 20px;
-    margin-right: 1rem;
-  }
+.flex {
+  display: flex;
+}
+
+.relative {
+  position: relative;
+}
+
+.blackHeart {
+  width: 20px;
+  margin-right: 1rem;
+}
+
+.npm-logo {
+  width: 70px;
+  height: 22px;
+  padding-top: 8px;
+  margin: 16px;
+}
+
+.magnifying-glass {
+  width: 25px;
+  height: 25px;
+  margin: auto 12px;
+}
+
+#search-form-container {
+  background-color: rgba(0,0,0,.05);
+  color: rgba(0,0,0,.05);
+  width: 1000px;
+  margin-top: 5px 0;
+}
+
+#search-form-container form,
+form > div {
+  width: 100%;
+}
+
+#search-input {
+  background: none;
+  letter-spacing: 0px;
+  border: none;
+  outline: unset;
+  height: 40px;
+  padding-left: 10px;
+  width: 50%;
+}
+
+#search-button {
+  align-self: flex-end;
+  background-color: #fb3e44;
+  color: white;
+  border: none;
+  padding: 0 20px;
+  height: 45px;
+  letter-spacing: 1px;
+  font-size: 17px;
+  font-weight: lighter;
+}
+
+#header-buttons {
+  width: 175px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#header-buttons a {
+  text-decoration: none;
+  color:darkslategray;
+}
+
+.header-join {
+  border: 1px solid lightgray;
+  padding: 5px 20px;
+}

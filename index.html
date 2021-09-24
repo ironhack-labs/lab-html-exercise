@@ -24,15 +24,21 @@
           </nav>
         </div>
       
-        <div class="search-bar">
+        <div>
             <img class="npm-logo" src="images/npm-logo.png" alt="npm logo">
-            <form class="header-form">
-                <img class="magnifying-glass" src="images/magnifying-glass.png" alt="magnifying-glass">
-                <input type="text" placeholder="Search packages">
-                <button>Search</button>
-            </form>
-            <a class="header-join" href="#">Join</a>
-            <a href="#">Log In</a>
+            <div id="search-form-container" class="relative">
+              <form class="flex">
+                <div class="flex relative">
+                  <img class="magnifying-glass" src="images/magnifying-glass.png" alt="magnifying-glass">
+                  <input id="search-input" type="text" placeholder="Search packages">
+                </div>
+                <button id="search-button">Search</button>
+              </form>
+            </div>
+            <div id="header-buttons" class="flex">
+              <a class="header-join" href="#">Join</a>
+              <a href="#">Log In</a>
+            </div>
         </div>
       </header> 
       <section id="section1">
