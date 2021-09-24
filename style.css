@@ -177,10 +177,94 @@ header div img {
     font-weight: bolder;
 }
 
-
-
-
-
 /* Org Section Styles*/
+#org-section {
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+    height: 550px;
+    margin-bottom: 0;
+}
+
+#org-section > img {
+    width: 250px;
+    height: 250px;
+    margin-top: 20px;
+}
+
+#org-section > h1 {
+    font-size: 2.1em;
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+    font-style: italic;
+    width: 900px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+#org-section > article {
+    display: flex;
+    width: 700px;
+    text-align: center;
+    font-size: 1em;
+    font-weight: 600;
+    font-weight: lighter;
+    margin-top: 10px;
+}
 
 /* Features Section Styles */
+#features-section {
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-evenly;
+	align-items: center;
+	align-content: center;
+    height: 450px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#features-section img {
+    width: 35px;
+}
+
+.feature-box {
+    width: 200px;
+}
+
+#features-section h2 {
+    font-size: 1em;
+    color: #ED1C24;
+}
+
+#features-section p {
+    font-size: 0.8em;
+    padding: 10px 0;
+}
+
+.org-btn {
+    display: flex;
+    background-color: black;
+    align-self: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    height: 50px;
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 0;
+    margin-bottom: 50px;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+}
+
+.org-btn a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
