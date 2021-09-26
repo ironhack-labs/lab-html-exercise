@@ -4,12 +4,22 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+		<link rel="stylesheet" href="./style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<script
+			src="https://kit.fontawesome.com/43dcc20e7a.js"
+			crossorigin="anonymous"
+		></script>
 		<title>Document</title>
 	</head>
 	<body>
 		<header>
-			<div>
+			<div class="navigation">
 				<div>
 					<img
 						class="blackHeart"
@@ -29,50 +39,53 @@
 					</ul>
 				</nav>
 			</div>
-
-			<div>
-				<div class="logo">
-					<img src="images/npm-logo.png" alt="NPM LOGO" />
-				</div>
+			<div class="bar">
+				<div class="logo"><img src="images/npm-logo.png" alt "Logo"></div>
 				<div class="serach">
-					<img src="images/magnifying-glass.png" alt="serach" />
-					<button>Serach</button>
+					<form>
+						<input type="text" placeholder="serach packages" name="txtBox" />
+						<button>Serach</button>
+					</form>
 				</div>
-				<div class="login">
-					<ul>
-						<li><a href="#">Join</a></li>
-						<li><a href="#">Log in</a></li>
-					</ul>
-				</div>
+				<button class="bar-btn1">Join</button>
+				<button class="bar-btn2">Log in</button>
 			</div>
 		</header>
 		<main>
 			<section class="section1">
 				<h1>Build amazing things</h1>
-				<p>
-					Essential JavaScript development tools that help you go to market
-					faster and build powerful applications using modern open source code.
-				</p>
-				<ul>
-					<li><a href="#">See Plans</a></li>
-					<li><a href="#">Join for free</a></li>
-				</ul>
+				<article>
+					<p>
+						Essential JavaScript development tools that help you go to market
+						faster and build powerful applications using modern open source
+						code.
+					</p>
+				</article>
+				<div>
+					<button class="section1-button-1">See Plans</button>
+					<button class="section1-button-2">Join for free</button>
+				</div>
 			</section>
 			<section class="section2">
-				<img class="sectionHeader" src="images/triangle-hexagon.svg" />
+				<div>
+					<img class="sectionHeader" src="images/triangle-hexagon.svg" />
+				</div>
+
 				<h1>Bring the best of open source to your company</h1>
-				<p>
-					npm is the tool used by over 11,000,000 JavaScript developers around
-					the world. Your developers already use it. Your company depends on it.
-					Create an Org and get more out of the tools your team already knows
-					and loves.
-				</p>
+				<article>
+					<p>
+						npm is the tool used by over 11,000,000 JavaScript developers around
+						the world. Your developers already use it. Your company depends on
+						it. Create an Org and get more out of the tools your team already
+						knows and loves.
+					</p>
+				</article>
 			</section>
 			<footer>
 				<ul class="features">
 					<li class="item">
 						<img src="images/zero-configuration.svg" />
-						<h1>Zero configuration</h1>
+						<h5>Zero configuration</h5>
 						<p>
 							Create an org, add your team, and start collaborating. Nothing to
 							configure, set up, or manage.
@@ -81,7 +94,7 @@
 					<li class="item">
 						<img src="images/team-management.svg" />
 
-						<h1>Team managment</h1>
+						<h5>Team managment</h5>
 						<p>
 							Control who has access to what modules within your team namespace
 							using straightforward team management capabilities.
@@ -90,7 +103,7 @@
 					<li class="item">
 						<img src="images/familiar-features.svg" />
 
-						<h1>familiar features</h1>
+						<h5>familiar features</h5>
 						<p>
 							npm Orgs has 100% parity with all the public npm registry features
 							your developers already use.
@@ -99,14 +112,16 @@
 					<li class="item">
 						<img src="images/npm-audit.svg" />
 
-						<h1>npm audit</h1>
+						<h5>npm audit</h5>
 						<p>
 							Enjoy the security auditing features built into the npm client, a
 							zero-friction way to make open source software safer.
 						</p>
 					</li>
 				</ul>
-				<button class="footer-btn">Create an Org</button>
+				<div class="footer-btn">
+					<button class="footer-btn1">Create an Org</button>
+				</div>
 			</footer>
 		</main>
 	</body>
