@@ -1,11 +1,3 @@
-/* form label color: rgba(0,0,0,.05)
-form input color: rgba(0,0,0,.05)
-form button background color: #fb3e44
-form button letters color: white
-*/
-
-
-
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
 body {
@@ -18,7 +10,14 @@ header > div {
     align-items: center;
     border-bottom: 1px solid lightgray;
   }
-  
+.main-field {
+    display: flex;
+    flex-direction: row;
+}  
+
+.logo {
+      width: 40px;
+  }
   nav {
     width: 600px;
   }
@@ -39,19 +38,149 @@ header > div {
     width: 20px;
     margin-right: 1rem;
   }
+.magnifyin-glass {
+    background-color: rgba(0,0,0,.05);
+    padding: 6px 18px;
+    width: 20px
+}
+.searchbar {
+  background-color: rgba(0,0,0,.05);
+  color: rgba(0,0,0,.05);
+  padding: 6px 18px;
 
-  #container-first {
+}
+.form button {
+  background-color: #fb3e44;
+  color: white;  
+  padding: 6px 18px;
+}
+.logging-in {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+}
+
+.logging-in a {
+    text-decoration: none;
+    padding: 4px 15px;
+    color: rgb(27, 27, 27);
+}
+.join-one {
+    border: 1px solid gray;
+}
+
+#container-first {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     height: 600px;
     background-color: rgba(232,217,217,.3);
+    margin: 40px 50px;
+    padding: 40px 30px;
   }
+#container-first .heading{
+    font-size: 80px;
+    font-weight:bolder;
+    text-align: center;
+}
+#container-first .article {
+    font-size: 20px;
+    text-align: center;
+    max-width: 40%;
+}
 
-  #container-first .plans {
-      background-color: #FB3B49;
-      box-shadow: 8px 8px 0 rgba(251,59,73,.2);
-  }
-  
- 
+
+.join-and-plan {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+    border: none;
+}
+.join-and-plan a {
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 500;
+    height: 80px;
+    width: 140px;
+    padding: 20px 40px;
+
+}
+
+.plans a{ 
+    color: white;
+    background-color: #FB3B49;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+    border: none;
+}
+.join a {
+
+}
+
+#container-second {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 300px;
+    margin: 40px 50px;
+    padding: 80px 60px;
+}
+.pink-figure {
+    height: 200px;
+    width: 200px;
+    padding: 40px 50px;
+}
+#container-second .heading {
+    background-color: rgba(255,204,53.4);
+    transform: skew(9deg,0deg);
+    font-style: italic;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+#container-second .article-two {
+    text-align:center;
+    max-width: 600px;
+    padding: 20px 30px;
+}
+
+#container-third  {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: stretch;
+    flex-direction: row;
+    height: 600px;
+    margin: 40px 50px;
+    padding: 80px 60px;
+}
+.info {
+    width: auto;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+.info-pic {
+    height: 80px;
+    width: 80px;
+}
+.info-heading {
+    color: #ED1C24;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+
+.box {
+    align-self: flex-end center;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    height: 40px;
+    width: 180px;
+    padding: 10px 20px;
+    text-align: center;
+}
