@@ -1,16 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
     <title>NPM</title>
   </head>
   <body>
     <header>
       <div class="upper-nav">
         <div>
-          <img src="./images/black-heart.png" alt="Black Heart" />
+          <img
+            src="./images/black-heart.png"
+            alt="Black Heart"
+            class="blackHeart"
+          />
           <span>Neverending Pun Machine</span>
         </div>
         <nav>
@@ -25,43 +36,45 @@
         </nav>
       </div>
       <div class="lowernav">
-        <div class="logo">
-          <img src="./images/npm-logo.png" alt="npm" />
-        </div>
-        <div class="search">
-          <form method="post" action="" class="input">
-            <img src="./images/magnifying-glass.png" alt="Search" />
-            <label for="searchBar"></label>
+        <img src="./images/npm-logo.png" alt="npm" class="npmLogo" />
+        <form method="post" action="" class="input">
+          <div class="inputForm">
+            <div>
+              <img src="./images/magnifying-glass.png" alt="Search" />
+            </div>
             <input
               type="text"
               name="search"
               placeholder="Search packages"
               autocomplete="off"
               id="searchBar"
+              class="searchInput"
             />
-            <input type="submit" value="Search" />
-          </form>
-          <div>
-            <a href="#">Join</a>
-            <a href="#">Log In</a>
           </div>
+          <input type="submit" value="Search" class="searchButton" />
+        </form>
+        <div class="links">
+          <a href="#">Join</a>
+          <a href="#">Log In</a>
         </div>
       </div>
     </header>
     <main>
       <section class="hero">
-        <h1>Build amazing things</h1>
+        <div>
+          <h1>Build amazing things</h1>
+        </div>
         <article>
           <h3>
             Essential JavaScript development tools that help you go to market
             faster and build powerful applications using modern open source
             code.
           </h3>
+          <div class="heroButtons">
+            <a href="#" class="seePlans">See plans</a>
+            <a href="#" class="join">Join for free</a>
+          </div>
         </article>
-        <div>
-          <a href="#">See plans</a>
-          <a href="#">Join for free</a>
-        </div>
       </section>
       <section class="open-source">
         <img src="./images/triangle-hexagon.svg" alt="Triangle hexagon" />
