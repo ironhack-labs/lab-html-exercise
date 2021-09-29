@@ -49,34 +49,43 @@ header > div {
   }
 
   #second-header-div {
-      padding: 30px 25px;
+      padding: 10px 25px;
+  }
+
+  .search-bar {
+      flex-direction: row;
   }
 
   #search {
       border: none;
-      background-color: rgba(0, 0, 0, 0.5);
+      background-color: rgba(0, 0, 0, 0.05);
+      width: 600px;
   }
 
   #search-form-box {
-      background-color: rgba(0, 0, 0, 0.5);
-      width: 300px;
+      background-color: rgba(0, 0, 0, 0.05);
+      width: 700px;
   }
 
   #search-btn {
-      justify-self: right;
-      align-self: center flex-end;
+      justify-self: flex-end;
+      position: relative;
+      left: 40px;
   }
 
   #join-btn {
+      font-family: Poppins;
       background-color: white;
   }
 
   .wt-borderless-btn {
+      font-family: Poppins;
       background-color: white;
       border: none;
   }
 
   .red-btn {
+      font-family: Poppins;
       color: white;
       background-color: #fb3e44;
       border: none;
@@ -94,8 +103,14 @@ header > div {
   }
 
   .big-main-btn {
+      font-weight: 800;
       padding: 15px 50px;
       margin: 0 15px;
+  }
+
+  #see-plans-btn {
+      box-shadow: 5px 5px lightpink;
+      font-weight: 800;
   }
 
   #article-div {
@@ -120,7 +135,28 @@ header > div {
        padding-top: 60px;
   }
 
+  #bring-headline-div {
+    position: relative;
+}
+
+  #bring-headline-div h2 {
+      position: absolute;
+      z-index: 2;
+  }
+
+  #yellow-parallelogram {
+      background-color: khaki;
+      width: 650px;
+      height: 37px;
+      transform: skew(20deg);
+      z-index: 1;
+      position: relative;
+      top: 50px;
+      right: 40px;
+  }
+
   #bring-article-div {
+      margin-top: 70px;
       width: 630px;
       text-align: center;
   }
@@ -134,9 +170,46 @@ header > div {
   }
 
   #create-div {
-      
+      margin-top: 60px;
+      display: flex;
+      flex-direction: row;
+      align-items: baseline;
+      justify-content: center;
   }
 
   .small-img {
       width: 30px;
+      margin: 10px 20px;
+  }
+
+  .create-h4 {
+      font-weight: bolder;
+      color: #fb3e44;
+      margin: 10px 20px 30px 20px;
+  }
+
+  #create-div div {
+      width: 235px;
+  }
+
+  .create-text {
+      font-size: 13px;
+      margin: 0 20px;
+  }
+
+  #create-org-btn-box {
+      margin: 40px 0;
+      display: flex;
+      justify-content: center;
+  }
+
+  #create-an-org-btn {
+      border: none;
+      font-family: Poppins;
+      font-weight: 800;
+      color: white;
+      background-color: black;
+      box-shadow: 5px 5px lightgray;
+      width: 300px;
+      height: 50px;
   }
