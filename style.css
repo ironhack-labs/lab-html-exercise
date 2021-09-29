@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Poppins";
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+/* HEADER */
+
+.blackHeart {
+  width: 20px;
+  margin-right: 1rem;
+}
+header > div {
+  padding: 0 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+  height: 4rem;
+}
+nav {
+  width: 600px;
+}
+
+nav > ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#npmLogo {
+  width: 80px;
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#searchField {
+  height: 2.5rem;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.05);
+  width: 70vw;
+}
+label > img {
+  height: 2.5rem;
+}
+label {
+  background-color: rgba(0, 0, 0, 0.05);
+  height: 2.5rem;
+}
+
+.btn {
+  background-color: #fb3e44;
+  border: none;
+  padding: 0.78rem 1rem;
+  color: white;
+}
+
+#loginBtns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#loginBtns > a {
+  border: 1px solid black;
+  padding: 0.35rem 0.5rem;
+}
+/* END OF HEADER */
+
+/* PLANS SECTION */
+#planOptions {
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: rgba(232, 217, 217, 0.3);
+}
+
+#planOptions > h1 {
+  font-size: 4rem;
+}
+
+#planOptions > article {
+  text-align: center;
+  width: 35%;
+  font-size: 1.5rem;
+}
+
+#planOptions > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 35%;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+#planOptions > div > a {
+  padding: 1rem 3.5rem;
+}
+.seePlansBtn {
+  background-color: #fb3b49;
+  box-shadow: 8px 8px 0 rgba(251, 59, 73, 0.2);
+}
+/* END OF PLANS SECTION */
+
+/* ABOUT NPM SECTION */
+
+#hexagonImg {
+  margin-bottom: 4rem;
+}
+
+#hexagonImg > img {
+  height: 200px;
+}
+
+#aboutNpm {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#aboutNpm > h3 {
+  font-size: 2rem;
+  background-color: rgba(255, 204, 53, 0.4);
+  text-align: center;
+  padding: 0 3rem;
+  transform: skew(9deg, 0deg);
+  font-style: italic;
+  margin-bottom: 2rem;
+}
+
+#aboutNpm > article {
+  width: 45%;
+  text-align: center;
+}
+/* END OF ABOUT NPM SECTION */
+
+/* FEATURE SECTION */
+#features {
+  margin-top: 4rem;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#featuresContainer {
+  display: flex;
+  width: 80%;
+}
+.singleFeature {
+  padding: 0 2rem;
+  height: 300px;
+}
+.singleFeature > .featureImageContainer {
+  width: 40px;
+  height: 40px;
+}
+
+.singleFeature > h4 {
+  color: #ed1c24;
+  font-size: 1.15rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+#orgBtn {
+  color: white;
+  background-color: black;
+  padding: 1rem 7rem;
+  box-shadow: 8px 8px 0 rgba(128, 83, 35, 0.2);
+}
