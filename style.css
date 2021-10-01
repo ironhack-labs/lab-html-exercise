@@ -1,9 +1,13 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 body {
   font-family: 'Poppins';
 }
 
+header {
+    box-shadow: 0px 2px 10px 0px #eeeeee;
+    margin: 0px;
+}
 
 header > div {
     padding: 0 25px;
@@ -11,6 +15,7 @@ header > div {
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid rgb(233, 233, 233);
+   
 }
 
 header > div > section {
@@ -98,4 +103,50 @@ header > div > img {
     color: rgb(117, 117, 117);
     padding: 5px 15px;
     font-size: 12px;
+}
+
+#main-info {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+    background-color: rgb(241, 236, 236);
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 4.5em;
+    text-align: center;
+    margin-top: 1.4em;
+}
+
+#main-info p {
+    text-align: center;
+    width: 30em;
+    height: 8em;
+    color: #2d2d30;
+    line-height: 1.7em;
+}
+
+.plans-button {
+    text-decoration: none;
+    color: white;
+    font-weight: 550;
+    font-size: 15px;
+    background-color: #fb3e44;
+    padding: 10px 40px;
+    box-shadow: 8px 8px 0 rgba(251,59,73,50%);
+    margin: 10px;
+}
+
+.joinfree-button {
+    text-decoration: none;
+    color: #2d2d30;
+    font-weight: 550;
+    font-size: 15px;
+    background-color: white;
+    padding: 10px 40px;
+    margin:10px;
+
 }
