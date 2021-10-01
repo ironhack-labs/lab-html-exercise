@@ -1,18 +1,20 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>NPM CLONE</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
     <!--    HEADER    -->
  <header>
- <div class="upper-header">
-         <div class="nav-left-side">
-             <img src="images/black-heart.png" alt="blackheart">
+  <div>
+     <div>
+             <img class="blackHeart" src="images/black-heart.png" alt="blackHeart">
              <span>Neverending Pun Machine</span>
-         </div>
+     </div>
      <nav>
          <ul>
             <li><a href="">npm Enterprise</a></li>
@@ -23,27 +25,32 @@
             <li><a href="">Support</a></li>
          </ul>
      </nav>    
- </div>
-
+  </div>
+  <div>
      <div>
          <img class="img-logo" src="images/npm-logo.png" alt="npm-logo">
      </div>
      <div>
-         <div class="seach-bar">
-             <img src="images/magnifying-glass.png" alt="magnifying-glass">
-             <input type="text" placeholder="search">
-             <button>Search</button>
-         </div>
-         <div>
-             <a href="">Join</a>
-             <a href="">Log In</a>
+         <div class="second-row">
+             <div class="searchBar grey-background">
+                  <form action="/" method="GET" class="form">
+                   <img class="glass-img" src="images/magnifying-glass.png" alt="magnifying-glass">
+                   <input type="search" placeholder="Search packages" class="search-field">
+                   <button class="search-button" type="submit">Search</button>
+                  </form>
+            </div>
+            <div class="joinSignup">
+            <a class="join-button" href="">Join</a>
+            <a href="">Log In</a>
+            </div>
          </div>
      </div>
-    </header>
+  </div>
+</header>
 
 
 <!-- BIG SECTION -->
- <section>
+ <section class="first-section">
     <div>
         <h1>Build amazing things</h1>
     </div>
@@ -60,7 +67,7 @@
  </section>
 
 <!-- SECOND HEADER -->
- <section>
+ <section class="second-section">
      <img src="images/triangle-hexagon.svg" alt="">
      <h3>Bring the best of open source to your company</h3>
      <article>
@@ -71,7 +78,8 @@
  </section>  
 
 <!-- FEATURES LIST -->
-  <section>
+
+  <section class="second-section">
       <div class="features-list">
         <div>
             <img src="images/zero-configuration.svg" alt="">
