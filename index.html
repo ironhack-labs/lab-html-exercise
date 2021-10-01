@@ -1,56 +1,68 @@
 <!DOCTYPE html>
 <html lang=en>
-    <nav>
-        <h1><img src="images/black-heart.png" alt="black-heart">Neverending Pun Machine</h1>
-        <div>
-            <ul>
-                <li><a href="enterprise">npm Enterprise</a> </li>
-                <li><a href="products">Products</a> </li>
-                <li><a href="solutions">Solutions</a> </li>
-                <li><a href="resources">Resources</a> </li>
-                <li><a href="docs">Docs</a> </li>
-                <li><a href="support">Support</a> </li>
-            </ul>
-        </div>    
-
-        <div>
-            <img src="images/npm-logo.png" alt="npm logo"> <br>
-            <img src="images/magnifying-glass.png" alt="search icon">
-
-            <input type="search" id="site-search" placeholder="Search packages">
-            <button>Search</button>
-
-            <section>
-                <a href="join"> Join</a>
-                <a href="login"> Log in</a>
-            </section>
-
-        </div>
-
-    </nav>
     
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="./style.css">
-        
+
         <header>
 
-            <h2>Build amazing things</h2>
+            <div>
+                <section id="top-bar">
+                    <img src="images/black-heart.png" alt="black-heart">
+                    <h1>Neverending Pun Machine</h1>
+                </section>
 
-            <aside>
-                <p>Essential JavaScript development tools that help you go to market faster and build powerful applications using modern open source code</p>
-            </aside>
+                <nav>
+                    <div>
+                        <ul>
+                            <li><a href="enterprise">npm Enterprise</a> </li>
+                            <li><a href="products">Products</a> </li>
+                            <li><a href="solutions">Solutions</a> </li>
+                            <li><a href="resources">Resources</a> </li>
+                            <li><a href="docs">Docs</a> </li>
+                            <li><a href="support">Support</a> </li>
+                        </ul>
+                    </div>    
+                </nav>
+            </div>
 
             <div>
-                <a href="plans">See plans</a>
-                <a href="joinfree">Join for free</a>
+                <img src="images/npm-logo.png" alt="npm logo" class="npm-logo"> <br>
+                
+                <section id="search-engine">
+                    <img src="images/magnifying-glass.png" alt="search icon">
+    
+                    <input type="text" class="search-box" id="site-search" placeholder="Search packages">
+                    <button class="search-button">Search</button>
+
+                </section>
+    
+                <section id="join-login">
+                    <a href="join" class="join"> Join</a>
+                    <a href="login" class="login"> Log in</a>
+                </section>
+    
             </div>
 
         </header>
 
     </head>
-
+ 
     <body>
+
+        <section id="main-info">
+            <h2>Build amazing things</h2>
+    
+                <aside>
+                    <p>Essential JavaScript development tools that help you go to market faster and build powerful applications using modern open source code</p>
+                </aside>
+    
+                <article>
+                    <a href="plans">See plans</a>
+                    <a href="joinfree">Join for free</a>
+                </article>
+        </section>
 
         <section id="general-info">
             <h3><img src="images/triangle-hexagon.svg" alt="hexagon made out of triangles">Bring the best open source to your company</h3>
