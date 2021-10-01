@@ -7,41 +7,41 @@
   </head>
   <body>
     <header>
+      <div>
         <div>
-          <div>
-            <img class="blackHeart" src="/images/black-heart.png" alt="black heart">
-            <span> Nifty Penguin Magic </span>
+          <img class="blackHeart" src="/images/black-heart.png" alt="black heart">
+          <span> Nifty Penguin Magic </span>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#"> npm Enterprise </a></li>
+            <li><a href="#"> Products </a></li>
+            <li><a href="#"> Solutions </a></li>
+            <li><a href="#"> Resources </a></li>
+            <li><a href="#"> Docs </a></li>
+            <li><a href="#"> Support </a></li>
+          </ul>
+        </nav>
+      </div>
+    
+      <div>
+          <img class="npm-logo" src="images/npm-logo.png" alt="npm logo">
+          <div id="search-form-container" class="relative">
+            <form class="flex">
+              <div class="flex relative">
+                <img class="magnifying-glass" src="images/magnifying-glass.png" alt="magnifying-glass">
+                <input id="search-input" type="text" placeholder="Search packages">
+              </div>
+              <button id="search-button">Search</button>
+            </form>
           </div>
-          <nav>
-            <ul>
-              <li><a href="#"> npm Enterprise </a></li>
-              <li><a href="#"> Products </a></li>
-              <li><a href="#"> Solutions </a></li>
-              <li><a href="#"> Resources </a></li>
-              <li><a href="#"> Docs </a></li>
-              <li><a href="#"> Support </a></li>
-            </ul>
-          </nav>
-        </div>
-      
-        <div>
-            <img class="npm-logo" src="images/npm-logo.png" alt="npm logo">
-            <div id="search-form-container" class="relative">
-              <form class="flex">
-                <div class="flex relative">
-                  <img class="magnifying-glass" src="images/magnifying-glass.png" alt="magnifying-glass">
-                  <input id="search-input" type="text" placeholder="Search packages">
-                </div>
-                <button id="search-button">Search</button>
-              </form>
-            </div>
-            <div id="header-buttons" class="flex">
-              <a class="header-join" href="#">Join</a>
-              <a href="#">Log In</a>
-            </div>
-        </div>
-      </header> 
-      <section id="section1">
+          <div id="header-buttons" class="flex">
+            <a class="header-join" href="#">Join</a>
+            <a href="#">Log In</a>
+          </div>
+      </div>
+    </header> 
+      <section id="section1" class="flex section">
         <h1>Build amazing
             things
         </h1>
@@ -52,20 +52,19 @@
             </p>
         </article>
         <div>
-            <a href="#">See plans</a>
-            <a href="#">Join for free</a>
+            <a id="plans" href="#">See plans</a>
+            <a id="join-for" href="#">Join for free</a>
         </div>   
       </section>
-      <section id="section2">
-          <img src="/images/triangle-hexagon.svg">
+      <section id="section2" class="flex section">
+          <img class="triangles" src="/images/triangle-hexagon.svg">
           <h2> Bring the best of open source to your company </h2>
-            <article>
-                <p>
-                    npm is the tool used by
-            over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it.
-            Create an Org and get more out of the tools your team already knows and loves.
-                </p>
-            </article>
+          <article>
+            <p>npm is the tool used by
+          over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it.
+          Create an Org and get more out of the tools your team already knows and loves.
+            </p>
+          </article>
       </section>
       <section id="section3">
           <div>
