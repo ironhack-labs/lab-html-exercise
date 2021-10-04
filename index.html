@@ -1,78 +1,93 @@
-<head>
-	<link rel="stylesheet" href="./style.css" />
-</head>
-<header>
-	<div>
-		<div>
-			<img class="blackHeart" src="./images/black-heart.png" alt="black heart" />
-			<span> Nifty Penguin Magic </span>
-		</div>
-		<nav>
-			<ul>
-				<li><a href="#"> npm Enterprise </a></li>
-				<li><a href="#"> Products </a></li>
-				<li><a href="#"> Solutions </a></li>
-				<li><a href="#"> Resources </a></li>
-				<li><a href="#"> Docs </a></li>
-				<li><a href="#"> Support </a></li>
-			</ul>
-		</nav>
-	</div>
-	<div>
-		<img class="npm-logo" src="./images/npm-logo.png" alt="npm logo" />
+<!DOCTYPE html>
+<html lang="en">
 
-		<a href="#">Join Log In</a>
-		<a href="#">Log In</a>
-		<input placeholder="Search packages">
-		<img class="search-bar" src="./images/magnifying-glass.png" alt="search logo" />
-		</input>
-		<button>Search</button>
+<body>
+
+	<head>
+		<link rel="stylesheet" href="./style.css" />
+	</head>
+	<header>
+		<div>
+			<div>
+				<img class="blackHeart" src="./images/black-heart.png" alt="black heart" />
+				<span> Nifty Penguin Magic </span>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="#"> npm Enterprise </a></li>
+					<li><a href="#"> Products </a></li>
+					<li><a href="#"> Solutions </a></li>
+					<li><a href="#"> Resources </a></li>
+					<li><a href="#"> Docs </a></li>
+					<li><a href="#"> Support </a></li>
+				</ul>
+			</nav>
+		</div>
+		<div>
+			<form action="" method="get">
+				<img class="npm-logo" src="./images/npm-logo.png" alt="npm logo" />
+				<label for="search">
+					<img id="search-img" src="./images/magnifying-glass.png" alt="search icon" />
+				</label>
+				<input type="text" name="search" id="search" placeholder="Search packages" />
+				<button type="button">Search</button>
+			</form>
+			<a href="#" class='join'>Join</a>
+			<a href="#" class='log-in'>Log In</a>
+		</div>
+	</header>
+	<section id='a'>
+		<h2>
+			Build amazing things
+		</h2>
+		<article>
+			Essential JavaScript development tools that help you go to market faster and build powerful applications using
+			modern open source code.
+		</article>
+		<div>
+			<a class="join-btn" href="">See plans</a>
+			<a class="login-btn" href="">Join for free</a>
+		</div>
+	</section>
+	<section id='b'>
+		<div>
+			<img class="triangle" src=" ./images/triangle-hexagon.svg" alt="triangle" />
+		</div>
+		<h2>
+			Bring the best of open source to your company
+		</h2>
+		<article>
+			npm is the tool used 11.000.000 JavaScript developers around the world.Your developers already use it.Your company
+			depends on it.Create an Org and get more out of the tools your team already knows and loves.
+		</article>
+	</section>
+	<section id='c'>
+		<div>
+			<img class="zero-config" src="./images/zero-configuration.svg" alt="zero" />
+			<h2>Zero configuration</h2>
+			Create an org. add your team,and start collaborating.Nothing to configure,set up,or manage.
+		</div>
+		<div>
+			<img class="team-man" src="./images/team-management.svg" alt="team " />
+			<h2>Team management</h2>
+			Control who has access to what modules within your team namespace using straightfoward team management
+			capabilities.
+		</div>
+		<div>
+			<img class="familiar-fea" src="./images/familiar-features.svg" alt="familiar " />
+			<h2>Familiar features</h2>
+			npm Orgs has 100% parity with all the public npm registry features your developers already use.
+		</div>
+		<div>
+			<img class="npm-audit" src="./images/npm-audit.svg" alt="npm audit " />
+			<h2>npm audit</h2>
+			Enjoy the security auditing features built into the npm client,a zero-friction way to make open source software
+			safer.
+		</div>
+	</section>
+	<div id='last-button'>
+		<button class='last-button'>Create an Org</button>
 	</div>
-</header>
-<section id='a'>
-	<heading>
-		Build amazing things
-	</heading>
-	<article>
-		Essential JavaScript development tools that help you go to market faster and build powerful applications using
-		modern open source code.
-	</article>
-	<div>
-		<a href="#">See plans</a>
-		<a href="#">Join for free</a>
-	</div>
-</section>
-<section id='b'>
-	<img class="triangle" src="./images/triangle-hexagon.svg" alt="triangle" />
-	<heading>
-		Bring the best of open source to your company
-	</heading>
-	<article>
-		npm is the tool used 11.000.000 JavaScript developers around the world.Your developers already use it.Your company
-		depends on it.Create an Org and get more out of the tools your team already knows and loves.
-	</article>
-</section>
-<section id='c'>
-	<div>
-		<img class="zero-config" src="./images/zero-configuration.svg" alt="zero " />
-		<heading>Zero configuration</heading>
-		Create an org. add your team,and start collaborating.Nothing to configure,set up,or manage.
-	</div>
-	<div>
-		<img class="team-man" src="./images/team-management.svg" alt="team " />
-		<heading>Team management</heading>
-		Control who has access to what modules within your team namespace using straightfoward team management capabilities.
-	</div>
-	<div>
-		<img class="familiar-fea" src="./images/familiar-features.svg" alt="familiar " />
-		<heading>Familiar features</heading>
-		npm Orgs has 100% parity with all the public npm registry features your developers already use.
-	</div>
-	<div>
-		<img class="npm-audit" src="./images/npm-audit.svg" alt="npm audit " />
-		<heading>npm audit</heading>
-		Enjoy the security auditing features built into the npm client,a zero-friction way to make open source software
-		safer.
-	</div>
-	<button>Create an Org</button>
-</section>
+</body>
+
+</html>
