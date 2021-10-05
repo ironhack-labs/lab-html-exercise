@@ -1,9 +1,181 @@
-NPM Clone Nifty Penguin Magic npm Enterprise Products Solutions Resources Docs Support Search Join Log In Build amazing
-things Essential JavaScript development tools that help you go to market faster and build powerful applications using
-modern open source code. See plans Join for free Bring the best of open source to your company npm is the tool used by
-over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it.
-Create an Org and get more out of the tools your team already knows and loves. Zero configuration Create an org, add
-your team, and start collaborating. Nothing to configure, set up, or manage. Team management Control who has access to
-what modules within your team namespace using straightforward team management capabilities. Familiar features npm Orgs
-has 100% parity with all the public npm registry features your developers already use. npm audit Enjoy the security
-auditing features built into the npm client, a zero-friction way to make open source software safer. Create an Org
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <nav class="nav-bar">
+    <ul class="nav-bar-ul">
+      <li><a href="#structure">Day Structure</a></li>
+      <li><a href="#team">Team</a></li>
+      <li><a href="#schedule">Schedule</a></li>
+    </ul>
+  </nav>
+  
+  <header class="header">
+    <h1>IronSkydive</h1>
+    <h2>Let the trip begin</h2>
+    <aside class="quote">“The best experience of our lives”
+      <p>Ariel Quiónes & Gonzalo Manrique, Ironhack Founders</p>
+      </aside>
+  </header>
+  
+  <section id="general-information">
+    <article class="service-box container">
+      <h3>Some text</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <a href="#" class="link-btn">Link text</a>
+    </article>
+    <article class="service-box container">
+      <h3>Some text</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <a href="#" class="link-btn">Link text</a>
+    </article>
+    <article class="service-box container">
+      <h3>Some text</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <a href="#" class="link-btn">Link text</a>
+    </article>
+  </section>
+  
+  <section id="structure" class="container">
+    <h3>How do we structure a day?</h3>
+    <div>
+      <article>
+        <img src="https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/ironskydive-training.png" alt="">
+        <h4>Article Title</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </article>
+      <article>
+        <img src="https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/ironskydive-get-ready.png" alt="">
+        <h4>Article Title</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </article>
+      <article>
+        <img src="https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/ironskydive-fly.png" alt="">
+        <h4>Article Title</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </article>
+      <article>
+        <img src="https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/ironskydive-jump.png" alt="">
+        <h4>Article Title</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </article>
+    </div>
+  </section>
+  
+  <section id="team">
+   <article>
+      <h3 class="member-name">Harold Rothstein</h3>
+      <p class="section-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+     <img src="https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_c18b1c463b80090894237a262dfdfbad.jpg" alt="">
+    </article>
+    <article>
+      <h3 class="member-name">Susan Phillips</h3>
+      <p class="section-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <img src="https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_a18d6123a7c8e75f7e70a4e59b941093.jpg" alt="">
+    </article>
+    <article>
+      <h3 class="member-name">Taylor Roberts</h3>
+      <p class="section-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <img src="https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_7104a331530d1b0611da55093b7dc421.jpg" alt="">
+    </article>
+  </section>
+  
+  <section id="shedule">
+
+    <h3>Shedule</h3>
+    <h3>Schedule a Time Slot</h3>
+    
+    <form class="slot-form-container" action="/register" method="POST">
+      <label for="email">Email</label>
+      <input type="email">
+      <label for="number">Participants</label>
+      <input type="number">
+      <label for="date">Date</label>
+      <input type="date">
+      <label for="time">Time</label>
+      <select name="Time" id="time">
+        <option>9:00 - 11:00</option>
+        <option>9:00 - 11:00</option>
+        <option>9:00 - 11:00</option>
+      </select>
+      <input class="submitButton" type="submit" value="Reserve Your Slot!">
+    </form>
+
+    <table class="schedule-table" cellpadding="0" cellspacing="0">
+      <thead>
+        <th>Time</th>
+        <th>Monday</th>
+        <th>Tuesday</th>
+        <th>Wednesday</th>
+        <th>Thursday</th>
+        <th>Friday</th>
+        <th>Saturday</th>
+        <th>Sunday</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>9:00 - 11:00</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>X</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+           <td>9:00 - 11:00</td>
+           <td></td>
+           <td></td>
+           <td>X</td>
+           <td></td>
+           <td></td>
+           <td>X</td>
+           <td></td>
+        </tr>
+        <tr>
+           <td>9:00 - 11:00</td>
+           <td></td>
+           <td>X</td>
+           <td></td>
+           <td></td>
+           <td>X</td>
+           <td></td>
+           <td></td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  
+  <footer class="dark-background footer">
+    <section>
+      <h5>Contact</h5>
+      <adress class="address">
+        <p>Ironskydive</p>
+        <p>33 Rue la Fayette</p>
+        <p>75009 Paris,</p>
+        <p>France</p>
+      </adress>
+      <h5>Follow us</h5>
+      <ul>
+        <li> <a href="#">Twitter</a></li>
+        <li> <a href="#">Facebook</a></li>
+        <li> <a href="#">Instagram</a></li>
+      </ul>
+    </section>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.142047744348!2d2.3354330160472316!3d48.87456857928921!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e38f817b573%3A0x48d69c30470e7aeb!2sIronhack!5e0!3m2!1sen!2ses!4v1495208746099"
+      class="map-frame"
+      frameborder="0"
+      style="border:0"
+      allowfullscreen
+    ></iframe>
+  </footer>
+</body>
+</html>
