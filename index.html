@@ -3,12 +3,13 @@
   <head>
     <title>NPM Clone</title>
     <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
     <header>
       <div>
-        <div>
+        <div class="first-row-div">
           <img
             class="blackHeart"
             src="images/black-heart.png"
@@ -17,7 +18,7 @@
           <span> Nifty Penguin Magic </span>
         </div>
         <nav>
-          <ul>
+          <ul class="nav-list">
             <li><a href="#"> npm Enterprise </a></li>
             <li><a href="#"> Products </a></li>
             <li><a href="#"> Solutions </a></li>
@@ -28,7 +29,7 @@
         </nav>
       </div>
 
-      <div>
+      <div id="second-row">
         <img class="logo" src="images/npm-logo.png" alt="logo" />
         <form id="searchbar" method="GET" action="/search">
           <img
@@ -86,7 +87,7 @@
       </div>
       <div>
         <img src="images/team-management.svg" alt="team-management" />
-        <h3>Team management</h3>
+        <h6>Team management</h6>
         <p>
           Control who has access to what modules within your team namespace
           using straightforward team management capabilities.
@@ -94,7 +95,7 @@
       </div>
       <div>
         <img src="images/familiar-features.svg" alt="familiar-features" />
-        <h3>Familiar features</h3>
+        <h6>Familiar features</h6>
         <p>
           npm Orgs has 100% parity with all the public npm registry features
           your developers already use.
@@ -102,7 +103,7 @@
       </div>
       <div>
         <img src="images/npm-audit.svg" alt="npm-audit" />
-        <h3>npm audit</h3>
+        <h6>npm audit</h6>
         <p>
           Enjoy the security auditing features built into the npm client, a
           zero-friction way to make open source software safer.
