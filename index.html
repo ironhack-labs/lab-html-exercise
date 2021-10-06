@@ -6,11 +6,11 @@
     </head>
 
     <body>
-
-<header>
+      
+      <header>
   <div>
     <div>
-      <img class="blackHeart" src="black-heart.png" alt="black heart" />
+      <img class="blackHeart" src="LINK TO IMAGE GOES HERE" alt="black heart" />
       <span> Nifty Penguin Magic </span>
     </div>
     <nav>
@@ -25,22 +25,30 @@
     </nav>
   </div>
 
-  <div class="searchBar">
-    <img class="npmLogo" src="npm-logo.png" alt="npm logo" />
-    <img class="magnifyingGlass" src="magnifying-glass.png" alt="magnifying glass">
-    <form action="/search" method="post">
-        <div class="searchButtom">
-            <input type="text" placeholder="Search packages">
-            <button type="submit">Search</button>
-        </div>
-        <div>
-            <button type="button">Join</button>
-        </div>
-        <div>
-            <button type="button">Log In</button>
-        </div>
+  <div>
+    <div>
+      <img class="theLogo" src="npm-logo.png" alt="npm logo" />
+    </div>
+    
+    <div>
+      <img class="magnifyingGlass" src="magnifying-glass.png" alt="magnifying glass" />
+      
+    <form class="searchBar" action="/register" method="post">
+      <input type="text" placeholder="Search packages">
     </form>
-  </div>            
+    <button class="searchButton">
+     <input type="submit" value="Search">
+      </button>
+    </div>
+    
+    <div>
+      <button class="joinButton">
+        <input type="submit" value="Join">
+      </button>
+      <button class="loginButton">
+        <input type="submit" value="Log In">
+      </button>
+  </div>
 </header>
 
 <section id="buildAmazing">
