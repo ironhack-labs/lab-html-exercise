@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
+* {
+	box-sizing: border-box;
+}
+
 body {
   font-family: 'Poppins';
 }
@@ -10,12 +14,14 @@ body {
 	padding: 0 25px;
 	width: 90%;
 	height: 10%;
+	margin: 0;
 }
 
 .top-header{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	border-bottom: 1px solid lightgray;
 }
 
 nav {
@@ -42,13 +48,15 @@ nav a {
 .bottom-header{
 	display: flex;
 	justify-content: space-between;
+	align-items: stretch;
 	width: 100%;
 	height: 50%;
 	padding: 2px;
+	border-bottom: 1px solid lightgray;
 }
 
 .npmLogo{
-	width: 130px;
+	width: 100px;
 	margin-right: 1rem;
 }
 
@@ -58,11 +66,14 @@ form.searchbar{
 
 form > input{
 	color: rgba(0,0,0,.05);
+	width: 500px;
+	height: 25px;
 }
 
 form > button{
 	background-color: #fb3e44;
 	color: white;
+	height: 25px;
 }
 
 #top{
@@ -74,6 +85,30 @@ form > button{
 	background-color: #F8F3F3;
 	height: 600px;
 	padding: 30px 120px;
+}
+
+#top > div > button{
+	height: 50px;
+	width: 200px;
+	font-weight: bolder;
+}
+
+#see{
+	background-color: #FB3B49;
+	box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+	color: white;
+	border: none;
+}
+
+#join{
+	background-color: white;
+	color:black;
+	border: none;
+}
+
+.top-button-div{
+	display: flex;
+	gap: 30px;
 }
 
 #middle{
@@ -93,12 +128,15 @@ form > button{
 #bottom{
 	display: flex;
 	flex-direction: column;
+	height: 600px;
 }
 
 .four-features{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
+	padding: 10%;
+	gap: 5%;
 }
 
 .icon-wrapper > img{
@@ -114,10 +152,15 @@ form > button{
 .create-org{
 	display: flex;
 	justify-content: center;
+	padding: 10%;
+	padding-top: 0;
 }
 
 .create-org > button{
 	background-color: black;
 	color: white;
 	box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+	height: 50px;
+	width: 400px;
+	font-weight: bolder;
 }
