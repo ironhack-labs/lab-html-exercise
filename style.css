@@ -1,0 +1,350 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arimo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap");
+
+/*--------- GENERAL ---------*/
+
+:root {
+  /*Colors*/
+  --npm-black: #231f20;
+  --npmLightRed: #fb3e44;
+  --code-bg: #f7f7f7;
+  --lightGrey: #e2e2e2;
+  --hoverGrey: #7f7f7f;
+
+  /*Fonts*/
+  --Poppins: "Poppins", sans-serif; /* Buttons, Headings, Nav, Footer */
+  --Arimo: "Arimo", sans-serif; /* Article text */
+  --Fira: "Fira Mono", monospace; /* Searchbar */
+}
+
+body {
+  font-family: var(--Arimo);
+  color: var(--npm-black);
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+/*----x---- GENERAL ----x----*/
+
+/*--------- GLOBAL ---------*/
+
+a {
+  text-decoration: none;
+  color: var(--npm-black);
+}
+
+h1 {
+  font-family: var(--Poppins);
+  font-weight: 600;
+  font-size: 5rem;
+}
+
+h2 {
+  font-family: var(--Poppins);
+  font-size: 2.2rem;
+}
+
+h3 {
+  font-family: var(--Poppins);
+  font-size: 1.1rem;
+  font-weight: normal;
+  text-align: center;
+  color: #ed1c24;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding-inline-start: 0px;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+/*----x---- GLOBAL ----x----*/
+
+/*--------- HEADER ---------*/
+
+header {
+  font-family: var(--Poppins);
+  font-size: 0.875rem;
+  border-bottom: solid 1px var(--lightGrey);
+}
+/*- Header Top -*/
+.header-top {
+  max-height: 1.6rem;
+  padding: 1rem 2rem;
+  justify-content: space-between;
+}
+
+.header-top .love-declaration {
+  min-width: 200px;
+}
+
+.header-top .love-declaration .blackHeart {
+  width: 32px;
+}
+
+.header-top .love-declaration .random-text {
+  cursor: pointer;
+  letter-spacing: 0.015625em;
+  transition: color 0.15s ease-out;
+}
+
+.header-top .love-declaration .random-text:hover {
+  color: var(--hoverGrey);
+  transition: color 0.15s ease-in;
+}
+
+.header-top .nav .nav-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  min-width: 600px;
+}
+
+.header-top .nav .nav-item {
+  padding: 3px;
+}
+
+.header-top .nav .nav-item a {
+  position: relative;
+  padding: 10px;
+  font-weight: 500;
+  letter-spacing: 0.015625em;
+  transition: color 0.15s ease-out;
+}
+
+.header-top .nav .nav-item a:hover {
+  color: var(--hoverGrey);
+  transition: color 0.15s ease-in;
+}
+/*- Header Bottom -*/
+.header-bottom {
+  max-height: 3.2rem;
+  padding: 1rem 0.6rem 1rem 2rem;
+  justify-content: space-between;
+}
+
+.header-bottom .logo {
+  padding-top: 12px;
+}
+
+.header-bottom .logo .npm-logo {
+  width: 70px;
+  height: 22.5px;
+}
+
+.header-bottom .searchbar {
+  width: 100%;
+  padding: 1px;
+  margin-left: 32px;
+}
+
+.header-bottom .searchbar:focus-within {
+  border: solid 1px var(--npm-black);
+  padding: 0;
+}
+
+.header-bottom .searchbar .magnifying-glass {
+  width: 18px;
+  height: 18px;
+  padding-right: 0.25rem;
+  padding-top: 10px;
+  padding-left: 20px;
+}
+
+.header-bottom .searchbar form {
+  margin: 0;
+}
+
+.header-bottom .searchbar form input {
+  width: 100%;
+  height: 40px;
+  font-family: var(--Fira);
+  border-style: none;
+}
+
+.header-bottom .searchbar form input:focus {
+  outline: none;
+}
+
+.header-bottom .searchbar form button {
+  font-family: var(--Poppins);
+  font-weight: bold;
+  font-size: 0.875rem;
+  color: var(--code-bg);
+  letter-spacing: 0.3px;
+  border-style: none;
+  height: 42px;
+  text-align: center;
+  padding: 0.5rem 2rem;
+  background-color: var(--npmLightRed);
+  cursor: pointer;
+}
+
+.header-bottom .user-section {
+  min-width: 200px;
+  margin-left: 1rem;
+  padding: 0.7rem 0;
+}
+
+.header-bottom .user-section a {
+  padding: 13px 28px;
+  font-weight: 500;
+  transition: color 0.15s ease-out;
+}
+
+.header-bottom .user-section a:hover {
+  color: var(--hoverGrey);
+  transition: color 0.15s ease-in;
+}
+
+.header-bottom .user-section .sign-up {
+  padding-top: 9px;
+  padding-bottom: 10px;
+  border: solid 1px var(--hoverGrey);
+  transition: border 0.15s ease-out;
+}
+
+.header-bottom .user-section .sign-up:hover {
+  border: solid 1px var(--lightGrey);
+  transition: border 0.15s ease-in;
+}
+
+/*----x---- HEADER ----x----*/
+
+/*--------- MAIN ---------*/
+
+/*- first section -*/
+.amazing-things {
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 5rem;
+  height: 600px;
+}
+
+.amazing-things .top-section-article {
+  max-width: 380px;
+  letter-spacing: 1px;
+  text-align: center;
+  line-height: 1.5;
+  margin: 0 auto;
+}
+
+.amazing-things .top-section-article .user-interaction {
+  justify-content: center;
+  margin: 2rem auto;
+}
+
+.amazing-things .top-section-article .user-interaction a {
+  font-family: var(--Poppins);
+  padding: 9px 0px;
+  width: 50%;
+  max-width: 200px;
+}
+
+.amazing-things .top-section-article .user-interaction .pricing {
+  background-color: var(--npmLightRed);
+  color: var(--code-bg);
+  box-shadow: 8px 8px 0 rgba(251, 59, 73, 0.2);
+  transition: 0.15s ease-out;
+}
+
+.amazing-things .top-section-article .user-interaction .pricing:hover {
+  background-color: var(--npmLightRed);
+  color: var(--code-bg);
+  font-weight: 500;
+  box-shadow: 0px 0px 0 rgba(251, 59, 73, 0.2);
+  transition: 0.15s ease-in;
+}
+
+.amazing-things .top-section-article .user-interaction .user-register {
+  transition: 0.15s ease-out;
+}
+
+.amazing-things .top-section-article .user-interaction .user-register:hover {
+  font-weight: 500;
+  transition: 0.15s ease-in;
+}
+/*- second section -*/
+.best-of {
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10rem;
+  height: 500px;
+}
+
+.best-of img {
+  max-width: 250px;
+  margin-bottom: 50px;
+}
+
+.best-of h2 {
+  background-color: rgba(255, 204, 53, 0.4);
+  transform: skew(9deg, 0deg);
+  font-style: italic;
+  padding: 0 30px;
+}
+
+.best-of article {
+  max-width: 700px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+/*- third section -*/
+.features {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 100px;
+  align-items: center;
+}
+
+.features .feature {
+  align-items: flex-start;
+  width: 25%;
+  min-width: 230px;
+  padding: 0 50px;
+}
+
+.features .feature .ups-icon {
+  height: 30px;
+  padding-left: 10px;
+}
+
+.features .feature p {
+  margin-top: 0px;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+}
+
+.features button {
+  margin-top: 50px;
+  width: 350px;
+  height: 50px;
+  font-family: var(--Poppins);
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: white;
+  background-color: var(--npm-black);
+  box-shadow: 8px 8px 0 rgba(128, 83, 35, 0.2);
+  transition: 0.15s ease-out;
+}
+
+.features button:hover {
+  font-weight: bold;
+  box-shadow: 0px 0px 0 rgba(128, 83, 35, 0.2);
+  transition: 0.15s ease-in;
+}
+
+/*----x---- MAIN ----x----*/
