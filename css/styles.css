@@ -1,0 +1,287 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+body{
+    max-width: 1440px;
+    width: 100%;
+    display: block;
+    position: relative;
+    margin:0 auto;
+    font-family: 'Poppins';
+    background-color: red;
+    padding: 0px 20px;
+}
+header {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+}
+header > div {
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+    padding: 10px 25px;
+}
+.header_cont_1 {
+
+}
+header > div > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header > div > div img.blackHeart {
+    width: 20px;
+    margin-right: 1rem;
+    display: block;
+    position: relative;
+}
+header > div > div span {
+    
+}
+nav {
+    max-width: 600px;
+    width: 100%;
+    display: block;
+    position: relative;
+}
+nav ul {
+    /* max-width: 325px;
+    width: 100%; */
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul li {
+    
+}
+nav ul li a {
+    font-size: 1em;
+    text-decoration: none;
+    color: black;
+}
+.header_cont_2 {
+
+}
+.header_cont_2 img {
+     width: 50px;
+     height: 15px;
+     display: block;
+     position: relative;
+     margin-right: 10px;
+}
+.header_cont_2 form {width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.header_cont_2 form input {
+    width: 100%;
+    height: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    background-color: #f2f2f2;
+    border-color: #f2f2f2;
+    border-radius: 2px;
+    box-shadow: 0px;
+    border: 0px;
+    padding: 2px 20px 2px 50px;
+    /* --input-border: #8b8a8b;
+    --input-focus-h: 245;
+    --input-focus-s: 100%;
+    --input-focus-l: 42%;
+    box-shadow: none;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none; */
+}
+.header_cont_2 form input::before {
+    content: '';
+    background:url('../images/magnifying-glass.png');
+    width: 20px;
+    height: 10px;
+    display: block;
+    position: absolute;
+    box-sizing: border-box;
+    
+}
+.header_cont_2 form button { 
+    background-color: #fb3e44;
+    color: white;
+    padding: 14px 12px;
+    font-size: 1em;
+    line-height: .1em;
+    border-color: #fb3e44;
+    border: 0px;
+    border-radius: 2px;
+}
+.header_cont_2 div {
+    width: 10%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: space-between;
+    padding-left: 20px;
+}
+.header_cont_2 div a {
+    width: auto;
+    position: relative;
+    color: black;
+    text-decoration: none;
+    padding: 5px 15px;
+    border-radius: 2px;
+}
+.header_cont_2 div a:first-child{
+    border: 1px solid black;
+}
+#sect1 {
+    width: 100%;
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f4f4; 
+    padding:80px 0px;   
+} 
+#sect1 h1 {
+    font-size: 6em;
+    font-weight: 800;
+    margin-bottom: 35px;
+}
+#sect1 p {
+    max-width: 400px;
+    width: 100%;
+    font-size: 1em;
+    text-align: center;
+    display: block;
+    position: relative;
+    margin-bottom: 40px
+}
+#sect1 div {
+    position: relative;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+#sect1 div button {
+    display: block;
+    margin: 0 auto;
+    font-size: 1.2em;
+    font-weight: 600;
+    padding: 15px 50px;
+    background-color: white;
+    color:black;
+    border:0px;
+    box-shadow: rgb(0 0 0 / 15%) 8px 8px 2.6px;
+}
+#sect1 div button:first-child {
+    background-color: #e84d50;
+    color:white;
+}
+
+#sect2 {
+    width: 100%;
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding-top: 50px;
+} 
+#sect2 img {
+    width: 165px;
+    height: 155px;
+    display: block;
+    position: relative;
+    margin-bottom: 40px
+}
+div.sesgado{
+    width: auto;
+    background-color: #fcebbb;
+    transform: skewx(15deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 5px 40px;
+}
+
+#sect2 h3 {
+    font-size: 2em;
+    display: block;
+    position: relative;
+    margin:0 auto;
+    
+    transform: skewx(-15deg);
+}
+#sect2 p {
+    max-width: 625px;
+    width: 100%;
+    font-size: 1em;
+    text-align: center;
+    display: block;
+    position: relative;
+}
+
+#sect3 {
+ background-color: white;
+ padding-top: 100px;
+ padding-bottom: 50px;
+} 
+
+#sect3 div{
+    width: 80%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+aside {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding: 15px;
+}
+aside img {
+    width: 20px;
+    height: 20px;
+    display: block;
+    position: relative;
+    margin-bottom: 15px;
+}
+aside h6 {
+ color: red;
+ font-size: 1.2em;
+ font-weight: 600;
+ margin-bottom: 30px;
+}
+#sect3 button{
+    display: block;
+    margin: 0 auto;
+    font-size: 1.2em;
+    font-weight: 600;
+    padding: 15px 95px;
+    background-color: black;
+    color: white;
+    box-shadow: rgb(0 0 0 / 15%) 8px 8px 2.6px;
+}
