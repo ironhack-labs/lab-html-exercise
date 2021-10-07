@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+
+body {
+  font-family: 'Poppins';
+  margin: 0;
+  padding: 0;
+}
+
+/* nav-bar */
+header > div {
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+}
+  
+nav {
+    width: 600px;
+}
+  
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+  
+.blackHeart {
+    width: 20px;
+    margin-right: 1rem;
+}
+
+.logo-image {
+    height: 20px;
+    margin-right: 10px;
+    padding: 25px 0;
+}
+
+.search-image {
+    height: 15px;
+    background-color: rgba(232, 217, 217,.3);
+    height: 15px;
+    padding: 13.5px;
+    
+}
+
+.nav-bar2 {
+    width: 80%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-bar2 input {
+    background-color: rgba(232, 217, 217,.3);
+    font-family: Poppins;
+    border-style: none;
+    width: 100%;
+    padding: 20;
+    height: 40px;
+
+}
+
+.nav-bar2 button {
+    background-color: #fb3e44;
+    color: #fff;
+    font-family: Poppins;
+    font-weight: bol;
+    border-style: none;
+    margin: 2px 0;
+    height: 40px;
+    width: 70px;
+}
+
+.nav-bar2 button:hover {
+    background-color: #fff;
+    color: #fb3e44;
+}
+
+.in-buttons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: space-between;
+
+}
+
+.in-buttons button {
+    height: 40px;
+    width: 70px;
+    background-color: #fff;
+    color: #000;
+    font-family: Poppins;
+    font-weight: 700;
+    text-align: center;
+}
+
+.in-buttons button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.login-btn {
+    border-style: none;
+    margin-left: 5%;
+    align-items: center;
+}
+
+
+
+/* cover-page */
+
+.cover-page {
+    text-align: center;
+    padding-top: 90px;
+    height: 600px;
+    background-color: rgba(232, 217, 217,.3);
+}
+
+.cover-page h1 {
+    font-size: 3.5em;
+    font-style: bold;
+}
+
+.cover-page p {
+    padding: 0 35% 3% 35%;
+}
+
+.cover-page button {
+    border: none;
+    padding: 10px;
+    font-family: Poppins;
+    font-weight: 700;
+    margin: 0 15px;
+    width: 10%;
+}
+
+.see-plans {
+    background-color:#FB3B49;
+    color: #fff;
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+}
+
+.see-plans:hover{
+    background-color:#fff;
+    color: #000;
+    border-style: none;
+    padding: 10px;
+    box-shadow: 8px 8px 0 #FB3B49;
+}
+
+.free-plan {
+    background-color: #fff;
+}
+
+.free-plan:hover {
+    color: #fff;
+    background-color: #000;
+}
+
+
+/* benefits */
+
+.benefits {
+    text-align: center;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.benefits img {
+    margin: 90px 0 50px 0;
+    height: 200px;
+}
+
+.benefits h2 {
+    font-size: 1.8em;
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+    width:55%;
+    font-style: italic;
+}
+
+.benefits p {
+    margin: 20px 25% 0 25%;
+}
+
+
+/* steps */
+
+.create-section {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.steps {
+    display: flex;
+    padding: 5% 10%;
+}
+
+.steps > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0 20px;
+    height: 50%;
+}
+
+.steps img {
+    height: 30px;
+    margin-right: auto;
+}
+
+.steps h5 {
+    font-weight: 700;
+    font-size: 1.3em;
+    color:#ED1C24;
+}
+
+.create-section button {
+    font-family: Poppins;
+    font-size: 1.1em;
+    font-weight: 700;
+    background-color: #000;
+    color: #fff;
+    height: 50px;
+    width: 350px;
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    margin-bottom: 30px;
+}
+
+.create-section button:hover {
+    background-color: rgba(128,83,35,.2);
+    color: #ED1C24;
+    border-style: none;
+    box-shadow: 8px 8px 0 #000;
+}
