@@ -6,14 +6,18 @@
     <head>
         <meta charset="UTF-8" />
         <title>NPM Clone</title>
+        <link rel="stylesheet" href="./style.css">
     </head>
 
     <!-- BODY -->
 
     <body>
+   
+        <!-- Header -->
+
 <header>
 
-    <div>
+    <div class="upper-div">
         <div>
             <img class="blackHeart" src="images/black-heart.png" alt="black heart"/>
             <span>Nifty Penguin Magic</span>
@@ -30,18 +34,27 @@
         </nav>
     </div>
 
-    <div>
+
+    <div class="lower-div">
 
         <img class="logo" src="images/npm-logo.png" alt="npm logo" />
-        <form action="" method="get">
-            <img class="magnifying-glass" src="images/magnifying-glass.png" alt="magnifying glass" />
-            <input type="text" placeholder="Search packages">
-            <input type="button" value="Search">
+
+    <div class="outide-form">
+
+        <form id=form action="" method="get">
+            <div class="form-bar">
+                <img class="magnifying-glass" src="images/magnifying-glass.png" alt="magnifying glass" />
+                <input class="text-box" type="text" placeholder="Search packages">
+            </div>
+            <input class="search-button" type="button" value="Search">
         </form>
-        <nav>
-            <a href="#">Join</a>
-            <a href="#">Log In</a>
-        </nav>
+
+    </div>
+
+        <div class="top-buttons">
+            <a class="join-button" href="#">Join</a>
+            <a class="login-button" href="#">Log In</a>
+        </div>
     </div>
 
 </header>
@@ -51,15 +64,15 @@
     <h1>Build amazing things</h1>
     <p>Essential JavaScript development tools that help you go to market faster and build powerful applications using
 modern open source code.</p>
-    <nav>
-    <a href="#">See plans</a>
-    <a href="#">Join for free</a>
-    </nav>
-    <img src="images/triangle-hexagon.svg" alt="decorative hexagon" />
+    <div class="sec2-buttons">
+    <a class="see-plans" href="#">See plans</a>
+    <a class="join-free" href="#">Join for free</a>
+    </div>
 </section>
 
 <!-- SECTION 2 -->
 <section id="section-2">
+    <img src="images/triangle-hexagon.svg" alt="decorative hexagon" />
     <h1>Bring the best of open source to your company</h1>
     <p>npm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it.
 Create an Org and get more out of the tools your team already knows and loves.</p>
@@ -92,9 +105,9 @@ Create an Org and get more out of the tools your team already knows and loves.</
     <p>Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer.</p>
 </div>
 
-<nav>
+<div>
     <a href="#">Create an Org</a>
-</nav>
+</div>
 
 </section>
     </body>
