@@ -58,6 +58,7 @@ nav {
   padding-left: 10px;
   margin-top: auto;
   margin-bottom: auto;
+  object-fit: contain;
 }
 
 #second-row {
@@ -83,14 +84,14 @@ nav {
   font-family: monospace;
 }
 
-.magnifying-glass {
-  margin: 5px;
-}
-
 .searchbar-img {
   display: flex;
   background-color: rgba(0, 0, 0, 0.05);
   padding: 3px 5px;
+}
+
+.magnifying-glass {
+  margin: 5px;
 }
 
 .red-background {
@@ -146,24 +147,27 @@ nav {
   padding-bottom: 20px;
 }
 
-.plans-btn {
+.action-btn {
   text-decoration: none;
-  color: white;
   border: none;
-  padding: 10px 40px;
-  background-color: #fb3b49;
-  box-shadow: 8px 8px 0 rgba(251, 59, 73, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 50px;
   margin: 0 20px;
 }
 
+.plans-btn {
+  color: white;
+  background-color: #fb3b49;
+  box-shadow: 8px 8px 0 rgba(251, 59, 73, 0.2);
+}
+
 .join-btn {
-  text-decoration: none;
   color: black;
-  border: none;
-  padding: 10px 40px;
   background-color: white;
   font-weight: bold;
-  margin: 0 20px;
 }
 
 #second-section {
