@@ -43,44 +43,60 @@ nav a {
 /* LOWER DIV - LOGO, FORM, BUTTONS */
 
 .lower-div {
-    box-sizing: border-box;
     display: flex;
-    padding: 1px;
-    margin: 10px 0;
+    padding: 10px 25px;
     flex-direction: row;
-    justify-content: space-around;
+    flex-wrap: nowrap;
+    justify-content: space-between;
     align-items: center;
-    align-content: space-around;
+    position: relative;
 }
 
 .logo {
     width: 100px;
-    margin-right: 1rem;
+    margin-right: 20px;
 }
+
 
 #form {
     display: flex;
 	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: space-around;
-	align-items: center;
-	align-content: space-around;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: flex-start;
+    flex: 1 1 auto;
 }
 
+
 .form-bar {
-    padding: 10px 350px;
-    margin: 10px;
     background-color: rgba(0, 0, 0, .05);
+    padding: 0 10px;
     display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: flex-start;
-	align-items: flex-start;
-	align-content: stretch;
+    justify-content: flex-start;
+    align-items: center;
+    flex: 1 1 auto;
 }
+
 
 .magnifying-glass {
     width: 20px;
+}
+
+.text-box {
+    border: none;
+    padding: 13px 10px;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0);
+    font-family: "Fira Mono", "Andale Mono", "Consolas", monospace;
+}
+
+.search-button {
+    border: none;
+    padding: 10px;
+    color: white;
+    width: 80px;
+    background-color: #fb3e44;
+    font-family: 'Poppins';
 }
 
 
@@ -89,6 +105,8 @@ nav a {
     text-decoration: none;
     padding: 5px 20px;
     border: 1px solid black;
+    margin-left: 30px;
+
 }
 
 .login-button {
@@ -97,17 +115,7 @@ nav a {
     padding: 10px 20px;
 }
 
-.search-button {
-    border: none;
-    padding: 10px;
-    color: white;
-    background-color: #fb3e44;
-}
 
-.text-box {
-    border: none;
-    background-color: rgba(0, 0, 0, 0);
-}
 
 
 /* SECTION 1 */
@@ -192,7 +200,7 @@ nav a {
 /* SECTION 3 */
 
 #section-3 {
-    height: 450px;
+    height: 600px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -210,12 +218,14 @@ nav a {
 
 .benefit-block {
     display: flex;
+    padding: 10px;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
 }
 
 .benefit-block img {
+    box-sizing: content-box;
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
@@ -223,12 +233,14 @@ nav a {
 }
 
 #section-3 div div h2 {
+    box-sizing: content-box;
     color: #ED1C24;
     font-size: 18px;
-    padding: 10px 0;
+    padding: 10px 0 40px 0;
 }
 
 #section-3 div div p {
+    box-sizing: content-box;
     width: 250px;
 }
 .create-org-button {
