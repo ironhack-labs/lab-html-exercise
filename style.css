@@ -72,7 +72,6 @@ nav a {
 /* search bar */
 .search-bar {
   position: relative;
-  flex-grow: 1;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -80,7 +79,7 @@ nav a {
 
 .wrapper img {
   position: absolute;
-  left: 13px;
+  left: -3%;
   top: 9px;
 }
 
@@ -93,7 +92,8 @@ input[type='text'] {
   border: solid 1px rgba(0, 0, 0, 0.05);
   font-size: 0.999em;
   height: 30px;
-  padding-right: 742px;
+  padding-right: 51vw;
+  margin-left: -3vw;
 }
 
 .magnifying-glass {
@@ -107,9 +107,14 @@ input[type='text'] {
   text-align: center;
   text-decoration: none;
   padding: 10px 20px;
+  margin-left: -3.5%;
 }
 
 /* link-buttons next to the search bar */
+.header-link-buttons {
+  justify-content: flex-end;
+}
+
 .nav-link-btn {
   text-decoration: none;
   color: black;
@@ -117,8 +122,8 @@ input[type='text'] {
 
 .join {
   border: solid 1px grey;
-  padding: 3px 10px;
-  margin: 0 20px 0 30px;
+  padding: 3px 13px;
+  margin: 0 40px;
 }
 
 /* 1. tools section */
@@ -198,11 +203,13 @@ input[type='text'] {
   padding: 0 2em;
 }
 
+/* svg icons */
 .zero-configuration,
 .team-management,
 .familiar-features,
 .npm-audit {
   width: 30px;
+  height: 20px;
 }
 
 .create-org-btn {
@@ -212,4 +219,12 @@ input[type='text'] {
   padding: 12px 100px;
   border: none;
   margin-top: -3em;
+}
+
+/* responsive navbar */
+@media all and (max-width: 700px) {
+  nav ul {
+    flex-direction: column;
+    align-items: flex-end;
+  }
 }
