@@ -1,0 +1,340 @@
+
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+*{
+    margin:0px;
+    padding:0px;
+}
+html {
+    padding: 0px 25px;
+}
+body{
+    font-family:"Poppins";
+    font-size:16px;
+    background-color: black;
+}
+#wrapper{
+    max-width:1440px;
+    width: 100%;
+    display: block;
+    position: relative;
+    background-color: white;
+    margin:0 auto;
+    padding-bottom:50px;
+    /*acordarme de mirar el padding bottom cuando no hay espacio abajo en el contenedor*/
+
+}
+
+header{
+    /* background-color: red; */
+}
+#sect1{
+    background-color: pink;
+}
+#sect2{
+    background-color: yellow;
+}
+#sect3{
+    background-color: gray;
+}
+
+.box1{
+    width:100%;
+    position:relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px 0px;
+
+}
+.box1 div{
+    width: 50%;
+    display: block;
+    position: relative;
+
+}
+.box1 div:first-child{
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    margin-left: 25px;
+    /*  */
+}
+.box1 div:nth-child(2){
+    width: 70%;
+    margin-right: 0px;
+    display: block;
+    margin-right: 25px;
+}
+.nav-bar{
+    width:100%;
+    display: block; 
+    position:relative;
+   
+}
+.nav-bar ul{
+   width:100%;
+   display:flex;
+   flex-direction: row;
+   justify-content: flex-end;
+   align-items: center;
+   list-style:none;
+
+}
+.nav-bar ul li{
+    padding:0px 5px;
+}
+a{
+    text-decoration:none;
+    color:black;
+    font-size: 0.7em;
+}
+.blackHeart{
+width:20px;
+height:10px;
+display:block;
+position:relative;
+margin-right: 10px;
+
+}
+.box1 span {
+display:block;
+position:relative;
+font-family: "Poppins";
+font-size:0.8em;
+}
+.box1::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    height: 1px;
+    background: lightgray;
+    width: auto;
+    margin: 0 auto;
+    top: 39px;
+   left: 25px;
+    right: 25px;
+}
+.box2{
+    width:100%;
+    position:relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:2px 0px;
+
+}
+
+.box2 img{
+    width:50px;
+    height: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    margin-left: 30px;
+}
+
+
+.box2 form {
+    width:80%;
+    display:flex;
+    flex-direction: row;
+    position: relative;
+    font-size:0.7em;
+    background-color: white;
+    color:black;
+    border:0px;
+    padding: 0px;
+    margin: 0px 5px;
+}
+
+.box2 form input:first-child {
+    width: 93%;
+    height: 25px;
+    border: 0px;
+    font-size:1em;
+    padding-left: 40px;
+    background-color: #f2f2f2;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+}
+.box2 form input:nth-child(2) {
+    width: 7%;
+    display: block;
+    position: relative;
+    padding: 5px 5px;
+    color:white;
+    border: 0px;
+    font-weight: 500;
+    background-color: red;
+}
+.box2 div {
+    display: flex;
+    flex-direction: row;
+    margin-right: 25px;
+}
+.box2 div button{
+    height: 20px;
+    display: block;
+    position:relative;
+    padding:2px 15px;
+    font-size:0.8em;
+    background-color: white;
+    color:black;
+    border:0px; 
+    margin-right: 1px;
+}
+.box2 div button:first-child {
+    border: 1px  solid black;
+    border-radius: 2px;
+    margin-right: 10px;
+    
+}
+
+.sect1 {
+width:100%;
+position:relative;
+padding:100px 0px;
+display:flex;
+flex-direction:column;
+align-items: center;
+background-color: #f2f2f2;
+}
+
+h1{
+position:relative;
+display:block;
+font-size: 4em;
+font-weight:bold;
+margin-bottom:35px;
+}
+p{
+width:40%;
+display:block;
+position:relative;
+text-align:center;
+margin-bottom: 35px;
+}
+
+
+.sect1 div {
+position:relative;
+display:block;
+margin:0 auto; /*muy importante acordarme del margen*/
+}
+
+.sect1 div a{
+display:inline-block;
+font-size:1em;
+font-weight: bold;
+padding:10px 40px;
+
+
+}
+
+.sect1 div a:first-child{
+background-color: red;
+color:white;
+margin-right:25px;
+box-shadow: rgb(232 77 80 /30%) 8px 8px 2.6px;
+
+}
+
+
+.sect1  div a:nth-child(2){
+
+background-color:white;
+color:black;
+}
+.sect2{
+    width:100%;
+    position:relative;
+    padding:50px 0px;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    background-color: white;
+}
+ .sect2 img{
+     width:170px;
+     height: 150px;
+     display:block;
+     position:relative;
+     margin-bottom:45px;
+ }
+ .sect2 h2{
+     font-size:2em;
+     display:block;
+     position:relative;
+     background-color: #fcebbc;
+     padding-right:30px;
+     padding-left:30px;
+     margin-bottom:25px;
+ }
+ .sect2 p{
+     width:65%;
+     display:block;
+     position:relative;
+     font-size:0.9em;
+ }
+
+.sect3{
+
+    width:100%;
+    position:relative;
+    padding:50px 0px;
+    display:block;
+    background-color: white;  
+}
+
+.sect3 .container{
+    width:80%;
+    position:relative;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+    margin:0 auto;
+}
+.sect3 .container div{
+    width:25%;
+    position:relative;
+    display:column;
+    justify-content:left;
+    padding:10px 25px;
+}
+.sect3 .container  div img{
+    width:25px;
+    position:relative;
+    display:block;
+    margin-bottom:20px;
+}
+.sect3 .container div h3{
+    font-size:15px;
+    color:red;
+    font-weight: bold;
+    margin-bottom:25px;
+
+}
+.sect3 .container div p{
+    font-size:12px;
+    text-align:left;
+    color:black;
+    width:100%;
+}
+
+.btn {
+    padding:15px 90px;
+    display:block;
+    position:relative;
+    margin:0 auto;
+    background-color: black;
+    color:white;
+    font-weight:bold;
+    font-size:1.2em;
+    margin-bottom:150px;
+    box-shadow: rgb(0 0 0 / 30%) 8px 8px 2.6px;
+}
