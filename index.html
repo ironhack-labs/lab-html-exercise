@@ -26,17 +26,23 @@
           </nav>
         </div>
       
-        <div>
-            <img class="logo" src="images/npm-logo.png" />
-            <form id="searchbar" method="GET" action="/search"></form>
-               <img src="images/magnifying-glass.png" alt='glass-symbol-search'>
-               <input type="text" placeholder="Search packages">
+        <div class="header2">
+         <img class="logo" src="images/npm-logo.png" />
+           <div class="search">
+               <img 
+               class="glass" 
+               src="images/magnifying-glass.png" 
+               alt='glass-symbol-search'
+               />
+               <form method="GET" action="/search">
+               <input type="text" name="search" placeholder="Search packages">
                <button class="search-btn" type="submit">Search</button>
             </form>
+          </div>
         
-            <div>
-                <a href="#">Join</a>
-                <a href="#">Log in</a>
+            <div class="joinlogin">
+                <a class="join" href="#">Join</a>
+                <a class="login" href="#">Log in</a>
             </div>
     
         </div>
@@ -47,8 +53,8 @@
             <h1>Build amazing things</h1>
             <p>Essential JavaScript development tools that help you go to market faster and build powerful applications using modern open source code.</p>
             <div>
-                <a href="#">See plans</a>
-                <a href="#">Join for free</a>
+                <a class="btn" href="#">See plans</a>
+                <a clasee="btn" href="#">Join for free</a>
             </div>
         </article>
     </section>
