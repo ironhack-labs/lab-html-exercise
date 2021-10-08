@@ -131,15 +131,25 @@ nav ul li a {
     border: 0px;
     padding: 2px 20px 2px 40px;
 } 
-.header_cont_2 form input::after { 
+.header_cont_2 form div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.cont-input:before { 
     content: '';
-    background:url('../images/magnifying-glass.png');
+    background-image: url(../images/magnifying-glass.png);
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
     width: 20px;
-    height: 10px;
+    height: 20px;
+    top: 5px;
+    left: 30px;
     display: block;
     position: absolute;
     box-sizing: border-box;
-    
+    z-index: 100;; 
 }
 .header_cont_2 form button { 
     background-color: #fb3e44;
