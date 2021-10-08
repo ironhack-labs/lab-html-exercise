@@ -2,6 +2,7 @@
 
 * {
 	box-sizing: border-box;
+	font-family: 'Poppins';
 }
 
 body {
@@ -12,7 +13,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	padding: 0 25px;
-	width: 90%;
+	width: 100%;
 	height: 10%;
 	margin: 0;
 }
@@ -22,6 +23,8 @@ body {
 	justify-content: space-between;
 	align-items: center;
 	border-bottom: 1px solid lightgray;
+	font-weight: bolder;
+	font-size: 0.80rem;
 }
 
 nav {
@@ -47,8 +50,8 @@ nav a {
 
 .bottom-header{
 	display: flex;
-	justify-content: space-between;
-	align-items: stretch;
+	justify-content: left;
+	align-items: center;
 	width: 100%;
 	height: 50%;
 	padding: 2px;
@@ -56,24 +59,72 @@ nav a {
 }
 
 .npmLogo{
-	width: 100px;
+	width: 80px;
 	margin-right: 1rem;
+	padding: 0.5rem;
 }
 
 form.searchbar{
 	color: rgba(0,0,0,.05);
+	height: 30px;
+	display: flex;
+	width: 80%;
+}
+
+.glass-wrapper{
+	height: 30px;
+	background-color: #F2F2F2;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 35px;
+}
+
+.glass{
+	height: 15px;
 }
 
 form > input{
 	color: rgba(0,0,0,.05);
-	width: 500px;
-	height: 25px;
+	width: 80%;
+	height: 30px;
+	background-color: #F2F2F2;
+	border-style: hidden;
+	font-size: 00.75rem;
 }
 
 form > button{
 	background-color: #fb3e44;
 	color: white;
+	border-style: hidden;
+	height: 30px;
+	width: 70px;
+	font-size: 00.75rem;
+}
+
+.buttons-header{
+	width: 12%;
+	display: flex;
+	margin-right: 10px;
+}
+
+.buttons-header > button{
 	height: 25px;
+	background-color: white;
+	width: 50%;
+	font-weight: bold;
+	font-size: 00.75rem;
+}
+
+#join-header{
+	border-style: inset;
+	border-width: 0.5px;
+	border-color: lightgray;
+}
+
+#log-in{
+	border-style: hidden;
+	color: #D0D0D0;
 }
 
 #top{
@@ -87,10 +138,22 @@ form > button{
 	padding: 30px 120px;
 }
 
+#top > div > h1{
+	font-weight: 900;
+	font-size: 4rem;
+	text-shadow: 2px 0 black;
+}
+
+#top > div > article{
+	padding-left: 250px;
+	padding-right: 250px;
+}
+
 #top > div > button{
 	height: 50px;
 	width: 200px;
 	font-weight: bolder;
+	font-size: 1rem;
 }
 
 #see{
@@ -121,6 +184,22 @@ form > button{
 	padding: 30px 120px;
 }
 
+#middle > div > h3
+{
+	font-weight: bolder;
+	font-size: 1.5rem;
+}
+
+#middle > div > h3 span{
+	background-color: #FFECB6;
+}
+
+#middle > div > article{
+	font-size: 0.85rem;
+	padding-left: 150px;
+	padding-right: 150px;
+}
+
 .hexagon{
 	height: 200px;
 }
@@ -145,8 +224,7 @@ form > button{
 
 .feature > div > h5{
 	color: red;
-	font-weight: bold;
-	
+	font-weight: bolder;
 }
 
 .create-org{
@@ -154,6 +232,7 @@ form > button{
 	justify-content: center;
 	padding: 10%;
 	padding-top: 0;
+	
 }
 
 .create-org > button{
@@ -163,4 +242,5 @@ form > button{
 	height: 50px;
 	width: 400px;
 	font-weight: bolder;
+	font-size: 1rem;
 }
