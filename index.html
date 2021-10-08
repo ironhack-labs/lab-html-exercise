@@ -34,26 +34,35 @@
             </ul>
           </nav>
         </div>
-      
-        <div>
-          <!-- add logo, search bar and buttons (or links and style them as buttons later) -->
 
-          <img class="npmlogo" src="images/npm-logo.png" alt="npmlogo" /><br>
-          <img class="magnifying glass" src="images/magnifying-glass.png" alt="magnifyingglass" />
-          
-
-          <!--this is the search bar-->
-          <form id="search" action="/search" method="get">
-            <input type="search" placeholder="Search packages">
-            <a href="#" class="search-button">Search</a>
-          </form>
-        
-            
-            <a href="#" class="join">Join</a>
-            <a href="#" class="log-in">Log In</a>
-        
-        </div>
       </header>
+     
+      <div class="search-bar">
+
+        <!-- add logo, search bar and buttons (or links and style them as buttons later) -->
+
+        <img class="npmlogo" src="images/npm-logo.png" alt="npmlogo" />
+        
+        
+
+        <!--this is the search bar-->
+        <form id="search" action="/search" method="get">
+          <div class="search-box">
+            <div class="search-bar-container">
+              <span>
+                <img class="magnifying-glass" src="images/magnifying-glass.png" alt="magnifyingglass"/>
+              </span>
+              <input type="search" placeholder="Search packages">
+        </div>
+        <a href="#" class="search-button">Search</a>
+
+          </div>
+         
+        
+        </form>
+          <a href="#" class="join">Join</a>
+          <a href="#" class="log-in">Log In</a>
+      </div>
 
 
 
@@ -64,11 +73,11 @@
       <section class="section-one">
         <h1>Build amazing things</h1>
       
-        <article id="essential">Essential JavaScript development tools that help<br> you go to market faster and build powerful <br> applications using
+        <article class="essential">Essential JavaScript development tools that help you go to market faster and build powerful applications using
         modern open source code.
         </article>
-<br><br><br>
-<div>
+
+<div class="buttons">
     <a href="#" class="plans">See plans</a>
     <a href="#" class="joinfree">Join for free</a>
 </div>
@@ -96,8 +105,8 @@
 
 
       <!--Section 3-->
-<section id="section-three">
-  <div class="small-logos">
+<section class="section-three">
+  
 
           <!--first div>-->   
       <div id="zeroconfig">
@@ -135,14 +144,15 @@
             auditing features built into the npm client, a zero-friction way to make open source software safer.</p>
     </div>
 
-
-</div> 
-
 <!--'create an org' button-->
-    <button>Create an Org</button>
+ 
 
 </section>
 
+<div class="button">
+  <button>Create an Org</button>
+</div>
+   
 
  <!--end of my code-->
 

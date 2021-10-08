@@ -4,6 +4,7 @@
 
 body {
   font-family: 'Poppins';
+  margin-bottom: 10vh;
 }
 
 
@@ -37,7 +38,45 @@ nav a {
     margin-right: 1rem;
 }
   
+.search-bar {
+  display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: space-between;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
 
+.magnifying-glass{
+  width: 20px;
+  height: auto;
+}
+
+.search-bar-container {
+  padding: 5px;
+  background: #f2f2f2;
+  display: flex;
+  width: 60vw;
+}
+.search-bar-container input {
+    border: 0;
+    padding: 10px;
+    background-color: #f2f2f2;
+    width: 60vw;
+}
+
+.search-bar-container span {
+  margin-top: 8px;
+}
+
+.search-box{
+  display:flex;
+  flex-grow: 1;
+  border: 1px solid #f2f2f2;
+  margin: 0 80px 0 0;
+}
   /* color palette
 
 Useful information:
@@ -53,6 +92,8 @@ form button letters color: white
 /* styling lower nav bar*/
 .npmlogo {
   width: 80px;
+  margin-right: 42px;
+  margin-left: 6px;
 }
 
 .search-button {
@@ -78,8 +119,8 @@ form button letters color: white
   color: black;
   padding-left: 2rem;
   padding-right: 2rem;
-  padding-top: 0.7rem;
-  padding-bottom: 0.7rem;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
   letter-spacing: 0.3px;
   font-weight: bold;
   border-style: solid;
@@ -92,14 +133,11 @@ form button letters color: white
   text-decoration: none;
   background-color: white;
   color: black;
-  padding-left: 2rem;
-  padding-right: 2rem;
   padding-top: 0.7rem;
   padding-bottom: 0.7rem;
   letter-spacing: 0.3px;
   font-weight: bold;
-  border-style: solid;
-  border-width: 1px;
+  margin-left: 33px;
 }
 
 
@@ -114,6 +152,7 @@ form button letters color: white
     text-align: center;
     align-items: stretch;
     align-content: space-between;
+    justify-content: center;
   }
 
 
@@ -121,7 +160,14 @@ h1 {
     font-size: 75px;
 }
 
+.essential {
+  width: 420px;
+  margin: 0 auto;
+}
 
+.buttons {
+  margin: 40px 0 0 0;
+}
 
 .plans {
   font-family: 'Poppins';
@@ -144,7 +190,7 @@ h1 {
 .joinfree {
   font-family: 'Poppins';
   text-decoration: none;
-  background-color: rgba(232,217,217,.3);
+  background-color: #FAF9F6;
   color: black;
   padding-left: 2rem;
   padding-right: 2rem;
@@ -180,6 +226,7 @@ h2 {
   font-style: italic;
   background-color: rgba(255,204,53,.4);
   transform: skew(9deg,0deg);
+  padding: 0 10px 0 10px;
 }
 
 .npmtooltext  {
@@ -188,37 +235,33 @@ width: 550px;
 
 /*section 3*/
 
-.small-logos img {
+.section-three img {
   width: 25px;
   display: flex;
-  align-content: flex.start;
+  align-content: flex-start;
 }
 
-.small-logos{
+.section-three{
   display: flex;
   justify-content: space-around;
-
   flex-direction: row;
-  margin-left: 200px;
-  margin-right: 200px;
   margin-top: 200px;
 
 }
 
-.small-logos h3 {
+.section-three h3 {
   color: #ED1C24;
   font-size: 16px;
+  font-weight: bolder;
 }
 
 #zeroconfig {
-    display: flex;
     flex-direction: column;
     align-items: center;
     margin: 50px;
   }
 
 #teaman {
-  display: flex;
   flex-direction: column;
   align-items: center;
   margin: 40px
@@ -226,20 +269,23 @@ width: 550px;
 
 
 #familiar {
-    display: flex;
     flex-direction: column;
     align-items: center;
     margin: 40px
 }
 
 #audit {
-  display: flex;
   flex-direction: column;
   align-items: center;
   margin: 40px
 }
 
 
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 button {
   font-family: 'Poppins';
@@ -256,6 +302,7 @@ button {
   border-width: 0;
   box-shadow: 8px 8px 0 rgba(128, 83, 35, .2);
   margin-bottom: 85px;
+  margin: 0 auto;
   }
 
 
