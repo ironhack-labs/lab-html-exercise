@@ -12,7 +12,7 @@
   </head>
   <body>
     <header>
-      <div>
+      <div class="upper-header">
         <div>
           <img
             class="blackHeart"
@@ -33,22 +33,24 @@
         </nav>
       </div>
 
-      <div>
+      <div class="lower-header">
         <img class="logo" src="images/npm-logo.png" alt="npm logo" />
-        <img
-          class="magnifying-glass"
-          src="images/magnifying-glass.png"
-          alt="magnifying glass"
-        />
-        <form action="/some-url" method="post">
-          <label for="Search"></label>
-          <input type="text" name="search" placeholder="Search packages" />
-          <button>Search</button>
-        </form>
-      </div>
-      <div class="header-button-group">
-        <a class="btn" href="https://www.npmjs.com/signup">Join</a>
-        <a class="btn" href="https://www.npmjs.com/login">Log in</a>
+        <div class="search">
+          <img
+            class="magnifying-glass"
+            src="images/magnifying-glass.png"
+            alt="magnifying glass"
+          />
+          <form action="/some-url" method="post">
+            <label for="Search"></label>
+            <input type="text" name="search" placeholder="Search packages" />
+            <button>Search</button>
+          </form>
+        </div>
+        <div class="header-button-group">
+          <a class="btn bordered" href="https://www.npmjs.com/signup">Join</a>
+          <a class="btn" href="https://www.npmjs.com/login">Log in</a>
+        </div>
       </div>
     </header>
     <section id="section1">
