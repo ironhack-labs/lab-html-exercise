@@ -8,6 +8,12 @@ body {
   font-size: 14px;
 }
 
+h1 {
+  font-size: 3.8em;
+  text-align: center;
+  margin-top: -1em;
+}
+
 /* header */
 header > div {
   padding: 0 25px;
@@ -61,8 +67,8 @@ nav a {
 
 .wrapper img {
   position: absolute;
-  left: 10px;
-  top: 6px;
+  left: 13px;
+  top: 9px;
 }
 
 .wrapper input[placeholder='Search packages'] {
@@ -100,4 +106,44 @@ input[type='text'] {
   border: solid 1px grey;
   padding: 3px 10px;
   margin: 0 20px 0 30px;
+}
+
+/* 1. tools section */
+#tools {
+  background-color: rgba(232, 217, 217, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 500px;
+}
+
+.tools-text {
+  padding-bottom: 5.5em;
+  text-align: center;
+  width: 380px;
+}
+
+/* two buttons next to each other */
+.button-div {
+  width: 380px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 45px;
+}
+
+.plans {
+  color: #fff;
+  background-color: #fb3b49;
+  box-shadow: 8px 8px 0 rgba(251, 59, 73, 0.2);
+}
+
+.join-free {
+  color: #000;
+  background-color: #fff;
 }
