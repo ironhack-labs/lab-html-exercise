@@ -38,28 +38,100 @@ nav a {
   height: auto;
 }
 
-.search-bar-size { /*adjusts the search bar elements*/
+.search-bar-size {
+  /*adjusts the search bar elements*/
   margin-top: 10px;
   padding: 20px;
   font-size: 20px;
 }
 
 .search-bar-links {
-    text-decoration: none;
-    color: gray;
+  text-decoration: none;
+  color: gray;
 }
 
 .search-bar-links:hover {
-    border: 2px solid gray;
+  border: 2px solid gray;
 }
 
-form > input { /*actual search bar*/
+form > input {
+  /*actual search bar*/
   background-color: rgba(0, 0, 0, 0.05);
   border: none;
+  width: 1000px;
 }
 
-form > button { /* red search button */
+form > button {
+  /* red search button */
   background-color: #fb3e44;
   color: white;
   border: none;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: stretch;
+  border-bottom: 1px solid lightgray;
+}
+
+h1 {
+    margin-top: 110px;
+    font-size: 70px;
+}
+
+.section1 {
+    background-color: rgba(232,217,217,.3);
+    height: 600px;
+}
+
+.section1 article {
+    width: 500px;
+    font-size: 20px;
+}
+
+.section1 div {
+    margin-top: 50px;
+}
+
+.section1 a {
+    text-decoration: none;
+    padding: 20px 70px;
+    font-size: 20px;
+}
+
+.plans {
+    background-color: #FB3B49;
+    box-shadow: 10px 10px rgba(251,59,73,.2);
+    color: white;
+}
+
+.free {
+    color: black;
+    font-weight: bold;
+}
+
+.section2 {
+    margin-top: 60px;
+    height: 600px;
+}
+
+.section2 img {
+    height: 300px;
+}
+
+h3 {
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+    font-style: italic;
+    padding: 5px 30px 5px 30px;
+    font-size: 30px;
+}
+
+.section2 article {
+    width: 650px;
+    text-align: center;
 }
