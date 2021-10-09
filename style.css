@@ -4,12 +4,30 @@
         font-family: 'Poppins';
     }
 
-    header > div {
+    .top-header-div {
         padding: 0 15px;
         display: flex;
         justify-content: space-between;
         align-items: center;
         border-bottom: 1px solid lightgray;
+    }
+
+    .bottom-header-div {
+        display: flex;
+        justify-content: space-between; 
+        align-items: center;
+        border-bottom: 1px solid lightgray;
+    }
+
+    .top-header-div > h4 {
+        position: absolute;
+        left: 75px;
+    }
+
+    .search-form {
+        display: flex;
+        padding: 5px 0px; 
+
     }
 
     nav {
@@ -38,9 +56,10 @@
     }
 
     .magnifying-glass {
-        width: 2em;
-        height: 2em;
+        width: 1em;
+        height: 1em;
         background-color: rgba(0,0,0,.05);
+        padding: 8.5px;
     }
 
     .search-btn {
@@ -48,6 +67,7 @@
         padding: 10px;
         color: white;
         border: none;
+        height: 2.5em;
     }
 
     .search-input {
@@ -56,6 +76,16 @@
         background-color: rgba(0,0,0,.05);
         border: none;
         
+    }
+
+    .form-btn1, .form-btn2 {
+        padding: 5px 10px;
+        text-decoration: none;
+        color: black;
+    }
+
+    .form-btn1 {
+        border: 1px solid gray;
     }
 
     h2 {
@@ -76,9 +106,14 @@
         width: 500px;
   }
 
-    .plan-link, .join-link {
+    .build-container {
         display: flex;
         flex-direction: row;
+        margin-top: 15px;
+    }
+
+    .plan-link, .join-link {
+        display: flex;
         padding: 25px 100px;
         text-decoration: none;
         margin-top: 15px;
@@ -115,7 +150,8 @@
         padding: 0px 20px;
         transform: skew(9deg,0deg); 
         font-style: italic;
-        margin-bottom: 35px;
+        margin-bottom: 60px;
+
     }
 
     .hexagon-img {
@@ -123,14 +159,17 @@
         display: flex;
     }
 
-    #org-section {
+    .org-section {
         display: flex;
-        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 
     .container {
         height: 400px;
-        width: 700px;
+        width:  22%;
+        margin: 10px;
     }
 
     .container-img {
@@ -142,11 +181,13 @@
     }
 
     .org-link {
-        width: 500px;
+        width: 300px;
         background-color: black;
         text-decoration: none;
         color: white;
         text-align: center;
         padding: 10px 60px;
         box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+        position: relative;
+        bottom: 100px;
     }
