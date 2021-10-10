@@ -4,7 +4,7 @@
     <head>
         <meta charset="utf-8">
         <title>Main page | NPM clone</title>
-        <link rel="stylesheet" href="/lab-html-exercise/style.css">
+        <link rel="stylesheet" type="text/css" href="style.css">>
     </head>
 
     <header>
@@ -25,18 +25,18 @@
             </nav>
         </div>
         
-          <div id="search-bar">
-            <img class="logo" src="images/npm-logo.png" alt="npm-logo">
-                <form class="search" action="/search" method="post">
-                    <div>
-                        <img src="images/magnifying-glass.png" alt="magnifying glass">
-                        <input type="search" placeholder= "search packages">
-                        <button type="submit">Search</button>
-                    </div>
-                </form>
-                <a href="#">Join</a>
-                <a href="#">Log in</a>
-            </div>
+          <div class="search-bar">
+            <a href="#" class="logo"><img src="images/npm-logo.png" alt="npm-logo"></a>             
+            <form action="/search" method="POST" class="search-form">
+                <input class="search-packages" type="search" placeholder= "Search packages">
+                <button class="search-button" type="submit" value="Search">Search</button>
+            </form>
+        
+                <div class="header-buttons">
+                    <a href="#" class="join-button">Join</a>
+                    <a href="#" class="login-button">Log in</a>
+                </div>
+        </div>
     </header>
 
     <section id="first-section">
@@ -48,14 +48,14 @@
             <p>Essential JavaScript development tools that help you go to market faster and build powerful applications using modern open source code.</p>
         </article>
 
-        <div id="prices&forfree">
-            <a href="#">See Plans</a>
+        <div class="prices-forfree">
+            <a class="see-plans" href="#">See Plans</a>
             <a href="#">Join for free</a>
         </div>
     </section>
 
     <section id="second-section">
-        <img src="/lab-html-exercise/images/triangle-hexagon.svg" alt="hexagon">
+        <img src="images/triangle-hexagon.svg" alt="hexagon">
         <heading>
             <h2>Bring the best of open source to your company</h2>
         </heading>
