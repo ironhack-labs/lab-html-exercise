@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+/* default body */
+body{   
+    font-family: 'Poppins';
+}
+
+header > div {
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+}
+
+/* Navigation bar */
+nav {
+width: 600px;
+}
+
+nav ul {
+list-style: none;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+nav a {
+text-decoration: none;
+color: black;
+}
+
+.blackHeart {
+width: 20px;
+margin-right: 1rem;
+}
+
+
+/* Search bar */
+.search-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+}
+
+.logo {
+    width: 50px;
+    margin-left: 20px;      
+}
+
+.search-bar{
+    display: flex;
+    flex-direction: horizontal;
+    align-items: center;
+}
+
+.search-bar form {
+    width: 1500px;
+}
+
+.search-bar input {
+    border: none;
+    font-size: 20px;
+}
+
+.search-bar input[type=text] {
+    width: 1200px;
+    background-image: url(./images/magnifying-glass.png);
+    background-repeat: no-repeat;
+    background-position: 5px;
+    background-size: 15px;
+    padding: 5px 0 5px 30px;
+    background-color: rgba(0,0,0,.05);
+}
+
+.search-bar input[type=submit] {
+    padding: 5px;
+    background-color: #fb3e44;
+    color: white;
+}
+
+.btn {
+    width: 120px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
+}
+
+.btn a {
+    color: black;
+    text-decoration: none;
+}
+
+.join-btn{    
+    border: 1px solid black;
+    padding: 1px 10px;
+}
+
+/* Pricing section */
+#pricing {
+    height:600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(232,217,217.03);
+}
+
+#pricing h1 {
+    font-size: 5em;
+    font-weight: bolder;
+    margin-bottom: 0;
+}
+
+#pricing > article{
+    width: 400px;
+    text-align: center;    
+}
+
+#pricing > div > a {
+    text-decoration: none;
+    padding: 10px 50px;
+    color: black;
+    font-weight: bold;
+    background-color: white;
+}
+
+#pricing > div {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#pricing .plan {
+    background-color: #fb3b49;    
+    color: white;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+}
+
+/* Information section */
+#information {
+    height:600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#information img {
+    width: 250px;
+    height: 250px;
+}
+
+#information h2 {
+    font-weight: bold;
+    font-size: 2.5em;
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+#information > article{
+    width: 800px;
+    text-align: center;    
+    margin-top: 0;
+    padding: 0
+}
+
+/* create org section */
+#create-org {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#create-org .org{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 1px;
+}
+
+#create-org img {
+    width: 40px;
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+#create-org .org h3 {
+    color: #ED1C24;
+    font-style: bold;
+    margin: 0;
+}
+
+#create-org .org p {
+    width: 250px;
+}
+
+#create-org a {
+    text-decoration: none;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    background-color: black;
+    color: white;
+    padding: 10px 40px;
+    margin-top: 20px;
+}

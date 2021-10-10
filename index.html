@@ -25,21 +25,19 @@
             </div>
 
             <!--Search bar division-->
-            <div>
-                <img src="./images/npm-logo.png" alt="npm logo">
+            <div class='search-div'>
+                <img class='logo' src="./images/npm-logo.png" alt="npm logo">
+                
                 <!--Search bar-->
-                <div>
-                    <span><img src="./images/magnifying-glass.png" alt="magnifying glass"></span> <!--search image-->
+                <div class='search-bar'>                   
                     <form action="#">
-                        <input type="text" id="search" placeholder="Search packages">
-                        <input type="submit" value="Search">
+                        <input type="text" id="search" placeholder="Search packages"><input type="submit" value="Search">
                     </form>
-                    
                 </div>
 
                 <!--Join and Log in-->
-                <div>
-                    <a href="#">Join</a>
+                <div class='btn'>
+                    <a class='join-btn' href="#">Join</a>
                     <a href="#">Log in</a>
                 </div>
             </div>
@@ -47,34 +45,58 @@
 
         <!--Section 1-->
         <section id="pricing">
-            <h1> Building amazin things</h1>
-            <p>Essential Javascript development tools help you go to market faster and build powerful application using modern open source code</p>            
+            <h1> Building amazing things</h1>
+            <article>
+                <p>Essential Javascript development tools help you go to market faster and build powerful application using modern open source code.</p>
+            </article>            
             <div>
-                <a href="#">See plan</a>
+                <a class="plan" href="#">See plan</a>
                 <a href="#">Join for free</a>
             </div>
         </section>
 
         <!--Section 2-->
         <section id="information">
+            <img src="./images/triangle-hexagon.svg" alt="triangle-hexagon">
             <h2>Bring the best of open source to your company</h2>
-            <p>
-                Relied upon by more than 11 million developers worldwide, npm is committed to making JavaScript development elegant, 
-                productive, and safe. The free npm Registry has become the center of JavaScript code sharing, and with more than one 
-                million packages, the largest software registry in the world. Our other tools and services take the Registry, and the 
-                work you do around it, to the next level. 
-            </p>
+            <article>            
+                <p>
+                    Relied upon by more than 11 million developers worldwide, npm is committed to making JavaScript development elegant, 
+                    productive, and safe. The free npm Registry has become the center of JavaScript code sharing, and with more than one 
+                    million packages, the largest software registry in the world. Our other tools and services take the Registry, and the 
+                    work you do around it, to the next level. 
+                </p>
+            </article>
         </section>
 
         <!--Section 3-->
         <section id="create-org">
-            <div>
-                <img src="./images/zero-configuration.svg" alt="Zero Configuration">
+            <div class="org">
+                <div>
+                    <img src="./images/zero-configuration.svg" alt="Zero Configuration">
+                    <h3>Zero configuration</h3>
+                    <p>Create an org, add your team, and start collaborating. Nothing to configure, set up and, or manage.</p>
+                </div>
                 
+                <div>
+                    <img src="./images/team-management.svg" alt="Team management">
+                    <h3>Team management</h3>
+                    <p>Control who has access to what modules within your team namespace using straightforward team mangement capabilities.</p>
+                </div>
+                
+                <div>
+                    <img src="./images/familiar-features.svg" alt="Familiar features">
+                    <h3>Familiar features</h3>
+                    <p>npm Orgs has 100% parity with all the public npm registry features your devolopers already use.</p>
+                </div>
+                
+                <div>
+                    <img src="./images/npm-audit.svg" alt="Audit">
+                    <h3>npm audit</h3>
+                    <p>Enjoy the security auditing featuresbuilt into the npm client, a zero-friction way to make open source software safer.</p>
+                </div>
             </div>
-            <div></div>
-            <div></div>
-            <div></div>
+            <a href="#">Create an Org</a>
         </section>
 
     </body>
