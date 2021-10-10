@@ -240,9 +240,7 @@ Again use a lot of flexbox to get the right position of elements - direction, ju
 
 _Useful information_:
 
-- color of the letters in each heading in this section: #ED1C24
-- "Create an Org" box shadow: 8px 8px 0 rgba(128,83,35,.2)
-- "Create an Org" letters color: white
+
 
 ## Submission
 
