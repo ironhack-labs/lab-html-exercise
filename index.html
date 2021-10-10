@@ -6,16 +6,15 @@
 <html>
 
 <body>
+    <!--Header -- Black heart image & links-->
     <header>
         <div>
             <div>
-                <!--Black heart image-->
                 <img class="blackHeart" src="images\black-heart.png" alt="black heart" />
                 <span> Nifty Penguin Magic </span>
             </div>
-
+            <!--Navbar-->
             <nav>
-                <!--Some links-->
                 <ul>
                     <li><a href="#"> npm Enterprise </a></li>
                     <li><a href="#"> Products </a></li>
@@ -28,32 +27,33 @@
 
         </div>
 
-
-        <div class="search-bar-form">
+        <!--Search-bar-->
+        <div>
             <img class="npm-logo" src="images\npm-logo.png" alt="npm-logo" />
             <img class="search-logo" src="images\magnifying-glass.png" alt="search-logo" />
-            <form action="" mathod="post">
-                <label for="search-packages"></label>
-                <input type="text" id="search" placeholder="Search packages">
-                <button type="submit">Search</button>
-            </form>
+
+            <div class="search-bar-form" id="join-features">
+                <form id="search-pack" action="">
+                    <input id="search" type="text" placeholder="Search packages">
+                    <input id="submit-it" type="submit-it" value="Search">
+                </form>
+            </div>
 
             <div class="linked-button">
-                <a href="/join" id="join" class="">Join</a>
-                <a href="/login" id="login" class="">Log In</a>
+                <a class="linked-join" href="/join" id="join" class="">Join</a>
+                <a class="linked-login" href="/login" id="login" class="">Log In</a>
             </div>
         </div>
 
-
         <!--Section 1 - Building amazing things-->
-        <section class="background" id="build">
+        <section class="background" id="building">
             <heading>
                 <h1>Build amazing things</h1>
             </heading>
 
             <article class="builder">Essential JavaScript development tools that help you go to market faster and build
                 powerful applications using modern open source code.</article>
-            <div class="btn">
+            <div class="btns-top">
                 <div><a class="link-btn-see" href="">See plans</a></div>
                 <div><a class="link-btn-join" href="">Join for free</a></div>
             </div>
@@ -108,6 +108,9 @@
                         source software safer.</p>
 
                 </div>
+            </div>
+            <div class="btns-bott">
+                <a class="link-btn-org" href="">Create an Org</a>
             </div>
         </section>
 </body>

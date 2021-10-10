@@ -1,40 +1,29 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins');
-
-
+@import url("https://fonts.googleapis.com/css?family=Poppins");
 
 /*Header - 1.Nav-bar*/
-html, body {
-  font-family: 'Poppins';
+html,
+body {
+  font-family: "Poppins";
 }
-
-h1{
-  font-size: 4em;
-  text-align: center;
-  font-weight: 900;
-  padding: 50px 30px;
-  margin-top: 0px;
-  margin-bottom: 0px;
+h1 {
+  font-size: 60px;
 }
-h2{
+h2 {
   font-size: 1.6em;
   text-align: center;
-  font-weight: 500;
-  background-color: rgba(255,204,53,.4);
-  transform: skew(9deg,0deg);
+  background-color: rgba(255, 204, 53, 0.4);
+  transform: skew(9deg, 0deg);
   font-style: italic;
   width: 650px;
   height: 35px;
-  padding: 0px;
   margin: auto;
-  
 }
-h3{
+h3 {
   font-size: 0.9em;
-  color: #ED1C24;
+  color: #ed1c24;
   font-weight: 600;
   padding: 0.5px 0px 0px 0px;
 }
-
 header > div {
   padding: 0 25px;
   display: flex;
@@ -42,77 +31,145 @@ header > div {
   align-items: center;
   border-bottom: 1px solid lightgray;
 }
-
 nav {
   width: 600px;
 }
-
 nav ul {
   list-style: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
 nav a {
   text-decoration: none;
   color: black;
 }
-
 .blackHeart {
   width: 20px;
   margin-right: 1rem;
 }
-
-/*Header - 2.Nav-bar*/
-.npm-logo{
-  width: 70px;
+/*Header - 2.Nav-bar, Search-bar and links*/
+.npm-logo {
+  width: 50px;
 }
-.search-logo{
+.search-logo {
   width: 20px;
+  align-items: center;
+  position: relative;
 }
-/*--Section 1 - Building amazing things--*/
-
+/*Header -- Buttons*/
+#search-pack {
+  background-color: rgb(242, 242, 242);
+  border-radius: 0px;
+  border-width: 0px;
+  border-style: solid;
+  border-color: rgb(242, 242, 242);
+  width: 800px;
+  height: 35px;
+  padding: 10px;
+  margin-left: 200px;
+  margin-right: 50px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
-#build{
-  height: 600px;
-  display: flex;
-  justify-content: center;
+#search,
+#submit-it {
+  float: left;
 }
-
-.builder {
-  width: 450px;
-  padding: 0.5px 30px 25px 30px;
-  text-align: center;
-  margin: auto;
+#search {
+  padding: 5px 9px;
+  height: 35px;
+  width: 300px;
+  border: 1px solid rgb(242, 242, 242);
+  font: normal 13px;
+  font-family: "Poppins";
+  background: rgb(242, 242, 242);
 }
-#build >div{
-  display: flex;
-  justify-content:center;
+#submit-it {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #fb3b49;
+  background-color: #fb3b49;
+  height: 35px;
+  margin: 0 0 0 10px;
+  padding: 0;
+  width: 90px;
+  cursor: pointer;
+  font: bold 14px Arial, Helvetica;
+  color: white;
+  margin-left: 20pc;
 }
-.background{
-  background-color: rgba(232,217,217,.3);
-}
-
-.btn{
+.linked-button {
   display: inline-block;
   flex-direction: row;
   align-items: center;
-  padding: 40px 30px 60px 30px;
-  }
+}
+.linked-join {
+  background-color: white;
+  color: rgb(0, 0, 0);
+  border-color: rgb(0, 0, 0);
+  border-style: solid;
+  border-width: 1px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  width: 275px;
+  padding: 3px 20px;
+}
+.linked-login {
+  background-color: white;
+  color: rgb(0, 0, 0);
+  border-color: white;
+  border-style: solid;
+  border-width: 1px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  width: 275px;
+  padding: 3px 5px;
+}
+/*--Section 1 - Building amazing things--*/
+#building {
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.builder {
+  width: 450px;
+  text-align: center;
+  margin: 10px 10px 60px 10px;
+}
+#building > div {
+  display: flex;
+  justify-content: center;
+}
+.background {
+  background-color: rgba(232, 217, 217, 0.3);
+}
+/*--Section 1 - Buttons--*/
+.btnS-top {
+  display: inline-block;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px 30px 60px 30px;
+}
 .link-btn-see {
-  background-color:#FB3B49;
+  background-color: #fb3b49;
   color: white;
   font-size: 14px;
   letter-spacing: 0.5px;
   text-align: center;
   text-decoration: none;
-  box-shadow: 8px 8px 0px -3px rgba(237,170,170,0.7);
+  box-shadow: 8px 8px 0 rgba(251, 59, 73, 0.2);
   padding: 10px 30px;
   margin: 15px;
 }
 .link-btn-join {
-  background-color:white;
+  background-color: white;
   color: rgb(0, 0, 0);
   font-weight: bold;
   font-size: 14px;
@@ -122,42 +179,51 @@ nav a {
   padding: 10px 30px;
   margin: 15px;
 }
-
 /*--Section 2 - Best open source--*/
-
-.hexagon-logo{
+.hexagon-logo {
   width: 150px;
   padding: 50px 30px 40px 30px;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
-
-.description{
-  font-size: 0.75em;
+.description {
+  font-size: 0.8em;
   width: 550px;
-  padding: 10px 30px 90px 30px;
+  padding: 25px 30px 90px 30px;
   text-align: center;
   margin: auto;
 }
-#org img{
+/*--Section 3 - Organogram--*/
+#org img {
   width: 25px;
   height: 20px;
 }
-#org > div{
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: left;
+#org > div {
   margin: auto;
   display: flex;
   justify-content: space-evenly;
   flex-direction: row;
 }
-
-#org p{
+#org p {
   font-size: 0.8em;
   font-weight: normal;
-  padding: 0.5px 0px 0px 0px;
-  width: 300px;
+  width: 250px;
+}
+/*--Section 2 - Button--*/
+.btns-bott {
+  align-items: center;
+  padding: 0px 20px;
+}
+.link-btn-org {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 8px 8px 0 rgba(128, 83, 35, 0.2);
+  padding: 10px 30px;
+  margin: 35px;
+  width: 275px;
 }
