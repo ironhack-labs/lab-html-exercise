@@ -4,9 +4,113 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
+    <!-- HEADER -->
+    <header>
+        <!-- TOP HEADER: INFO + MENU -->
+        <div class="top-header">
+            <div>
+                <div>
+                    <img src="/images/black-heart.png" alt="black heart" class="blackHeart">
+                    <span>Nifty Penguin Magic </span>
+                </div>
+            </div>
+            <div>
+                <nav class="menu">
+                    <ul>
+                        <li><a href="#">npm Enterprise</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">Solutions</a></li>
+                        <li><a href="#">Resources</a></li>
+                        <li><a href="#">Docs</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+
+        <!-- BOTTOM HEADER: LOGO + SEARCH BAR + USER LOG -->
+        <div id="bottom-header">
+            <!-- LOGO -->
+            <div id="logo">
+                <img src="/images/npm-logo.png" alt="nmp logo">
+            </div>
+            <!-- SEARCH BAR (FORM) -->
+            <div id="search-bar">
+                <form action="" method="" class="form-search-bar">
+                        <img src="/images/magnifying-glass.png" alt="search bar" class="glass">
+                        <label for="packages"></label>
+                        <input type="search" id="packages" placeholder="Search packages" class="search-packages">
+                        <button type="submit">Search</button>   
+                </form>
+            </div>
+            <!-- USER LOG -->
+            <div id="user-log">
+                <a href="#" class="join-user">Join</a>
+                <a href="#">Log In</a>
+            </div>
+        </div>  
+    </header>
+    <!-- FIRST BANNER -->
+    <section id="banner">
+        <div class="container">
+            <h1>Build amazing things</h1>
+            <article>
+                <p>Essential JavaScript development tools that help you go to market faster and build powerful applications using modern open source code.</p>
+            </article>
+            <div class="btns-banner">
+                <a href="#" class="plans">See plans </a>
+                <a href="#" class="join-free">Join for free</a>
+            </div>
+        </div>  
+    </section>
+
+
+    <!-- INFO -->
+    <section id="info">
+        <div class="container">
+            <img src="/images/triangle-hexagon.svg" alt="" class="hexagon">
+            <h2>Bring the best of open source to your company</h2>
+            <article>
+                <p>developers already use it. Your company depends on it. Create an Org and get more out of the tools your team already knows and loves.</p>
+            </article>
+        </div>
+    </section>
+
+
+    <!-- ADVANTAGES -->
+    <section id="advantages">
+        <div class="container advantages-all-boxes">
+            <article class="advantage-box">
+                <img src="/images/zero-configuration.svg" alt="zero configuration">
+                <h3>Zero configuration</h3>
+                <p>Create an org, add your team, and start collaborating. Nothing to configure, set up, or manage.</p>
+            </article>
+            <article class="advantage-box">
+                <img src="/images/team-management.svg" alt="team management">
+                <h3>Team management </h3>
+                <p>Control who has access to what modules within your team namespace using straightforward team management capabilities. </p>
+            </article>
+            <article class="advantage-box">
+                <img src="/images/familiar-features.svg" alt=" familiar features">
+                <h3>Familiar features </h3>
+                <p>npm Orgs has 100% parity with all the public npm registry features your developers already use. </p>
+            </article>
+            <article class="advantage-box">
+                <img src="/images/npm-audit.svg" alt="nmp audit">
+                <h3>npm audit </h3>
+                <p>Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer.</p>
+            </article>
+        </div>
+        <div class="container">
+            <a href="#" class="create-org-btn">Create an Org </a>
+        </div>
+    </section>
+
     
 </body>
 </html>
