@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins');
+/* @import url('https://fonts.googleapis.com/css?family=Poppins'); */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
 
 body {
   font-family: 'Poppins';
@@ -6,13 +7,13 @@ body {
 
 h1 {
     font-size: 4em;
-    font-weight: bolder;
+    font-weight: bold;
     margin: 0;
 }
 
 h2 {
     font-size: 2em;
-    font-weight: bolder;
+    font-weight: bold;
     margin: 0;
 }
 
@@ -22,7 +23,8 @@ h3 {
 }
 
 .header > div {
-    padding: 0 25px;
+    font-weight: 500;
+    padding: 5px 25px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -31,6 +33,10 @@ h3 {
 
 .nav-bar {
     width: 600px;
+}
+
+.search {
+    padding: 16px;
 }
 
 .nav-bar ul {
@@ -52,22 +58,20 @@ h3 {
 
 .npm-logo {
     width: 60px;
-    margin-right: 1rem;
-}
-
-.search {
-    margin-top: 10px;
+    margin-left: 1rem;
 }
 
 .search-input {
-    position: relative;
     display: flex;
-    flex-grow: 0.9;
+    flex-grow: 1;
+    height: 30px;
+    background:  rgba(0,0,0,.05);
+    border: none;
 }
 
 .mag-glass {
-
     width: 20px;
+    margin: 0 8px;
 }
 
 .red-btn {
@@ -78,14 +82,21 @@ h3 {
     text-decoration: none;
 }
 
-.link a {
-    text-decoration: none;
-    color: black;
+.link {
+    margin-left: 1rem;
 }
 
-.link :first-child{
+.link :first-child {
     border: 1px solid black;
-    padding: 5px 10px;
+    padding: 5px 13px;
+    margin-right: 1rem;
+    font-weight: normal;
+}
+
+.log-in {
+    text-decoration: none;
+    color: black;
+    margin-right: 1rem;
 }
 
 #intro {
@@ -110,6 +121,7 @@ h3 {
 }
 
 .plans {
+    font-weight: 500;
     width: 25%;
     padding: 15px 50px;
     box-shadow: 8px 8px 0 rgba(251,59,73,.2);
@@ -152,7 +164,9 @@ h3 {
 }
 
 #features {
-    margin-bottom: 35px;
+    width: 75%;
+    /* margin-bottom: 35px; */
+    margin: 0 auto 35px;
 }
 
 #features > div {
