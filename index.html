@@ -7,12 +7,12 @@
     </head>
     <body>
         <header>
-            <div>
-                <div>
+            <div id="top">
+                <div id="top-left">
                     <img id="blackHeart" src="images/black-heart.png" alt="black heart"/>
                     <span> Nifty Penguin Magic </span>
                 </div>
-                <nav>
+                <nav id="top-right">
                     <ul>
                         <li><a href="#"> npm Enterprise </a></li>
                         <li><a href="#"> Products </a></li>
@@ -24,17 +24,20 @@
                 </nav>
             </div>
 
-            <div>
-                <img class="npmLogo" src="images/npm-logo.png" alt="npm logo"/>
+            <div id="buttom">
+                <img id="npmLogo" src="images/npm-logo.png" alt="npm logo"/>
                 
                 <form actions="" method="">
-                    <img class="magnifyingGlass" src="images/magnifying-glass.png" alt="magnifying glass"/>
-                    <input type="text" name="search-bar" id="search-bar" placeholder="Search packages">
-                    <input type="submit" class="red-button" value="Search">     
+                    <img id="magnifyingGlass" src="images/magnifying-glass.png" alt="magnifying glass icon">
+                    <input type="text" name="search-bar" id="search-bar" placeholder="Search packages" value="Search"/>
+                        
                 </form>
                 <div>
-                    <a href="#" target="_blank" id="join-button"><button>Join</button></a>
-                    <a href="#" target="_blank"><button>Log In</button></a>
+                    <input type="submit" id="red-button" value="Search"/>    
+                </div>
+                <div id="headerButtonsRight">
+                    <button id="join-button"><a href="#" target="_blank" >Join</a></button>
+                    <button id="logIn-button"><a href="#" target="_blank" >Log In</a></button>
                 </div>
             </div>
         </header>
@@ -43,8 +46,8 @@
             <article>Essential JavaScript development tools that help you go to market faster and build powerful applications using
                 modern open source code.</article>
             <div>
-                <a href="#" target="_blank" class="red-button"><button>See plans</button></a>
-                <a href="#" target="_blank"><button>Join for free</button></a>
+                <button type="submit" id="Seeplans"><a href="#" target="_blank">See plans</a></button>
+                <button id="join-free"><a href="#" target="_blank">Join for free</a></button>
             </div>
         </section>
 
@@ -56,30 +59,30 @@
         </section>
 
         <section class="section" id="third">
-            <div>
-                <div class="box">
+            <div id="row-boxes">
+                <section class="box">
                     <img src="images/zero-configuration.svg" alt="zero configuration icon"/>
                     <h3>Zero configuration </h3>
                     <p>Create an org, add your team, and start collaborating. Nothing to configure, set up, or manage.</p>
-                </div>
+                </section>
 
-                <div class="box">
+                <section class="box">
                     <img src="images/team-management.svg" alt="team management icon"/>
                     <h3>Team management</h3>
                     <p>Control who has access to what modules within your team namespace using straightforward team management capabilities.</p>
-                </div>
+                </section>
 
-                <div class="box">
+                <section class="box">
                     <img src="images/familiar-features.svg" alt="familiar features icon"/>
                     <h3>Familiar features</h3>
                     <p>npm Orgs has 100% parity with all the public npm registry features your developers already use.</p>
-                </div>
+                </section>
 
-                <div class="box">
+                <section class="box">
                     <img src="images/npm-audit.svg" alt="npm audit icon"/>
                     <h3>npm audit</h3>
                     <p>Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer.</p>
-                </div>
+                </section>
             </div>
             <button id="org">Create an Org</button>
         </section>
