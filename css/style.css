@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap');
+
+html, body, h1, h2, h3 {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Poppins';
+    font-size: 14px;
+}
+
+.btn {
+    font-family: 'Poppins';
+    padding: 10px 20px;
+    border: none;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+.btn-red {
+    background-color: #fb3e44;
+    color: white;
+}
+
+.btn-white {
+    background-color: white;
+    color: black;
+}
+
+/* =========== HEADER =========== */
+
+.header {
+    width: 100vw;
+}
+
+.header > div {
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+}
+
+.header-top .black-heart {
+    width: 20px;
+    margin-right: 1rem;
+}
+
+.header-top .header-nav {
+    width: 600px;
+}
+
+.header-top .header-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-top .header-nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.header-bottom .npm-logo {
+    height: 24px;
+}
+
+.search-form {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    background-color: #f2f2f2;
+    margin: 10px 20px;
+    padding-left: 20px;
+}
+
+.search-form .form-inputs-wrapper {
+    display: flex;
+    align-items: center;
+    flex-grow: 2;   /* we want the search input to grow = to take more space */
+}
+
+.search-form .form-inputs-wrapper img {
+    height: 24px;
+}
+
+.search-form input[type="text"] {
+  color: rgba(0,0,0,.05);
+  color: #777;
+  border: none;
+  background-color: #f2f2f2;
+  padding: 10px 20px;
+  font-family: 'Poppins';
+  flex-grow: 2;
+}
+
+.search-form input[type="text"]:focus {
+    outline: none;
+}
+
+.search-form button {
+  background-color: #fb3e44;
+  color: white;
+}
+
+.btn#join {
+    border: solid 1px #ccc;
+}
+
+/* =========== SECTION 1 =========== */
+
+.teaser {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 600px;
+    background-color: rgba(232,217,217,.3);
+    font-size: 1.2em;
+}
+
+.teaser-wrapper {
+    width: 80%;
+}
+
+.teaser h1 {
+    font-size: 4em;
+    font-weight: 800;
+}
+
+.teaser article {
+    width: 500px;
+    margin: 30px 0;
+}
+
+.teaser .buttons-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.teaser .buttons-wrapper .btn {
+    font-weight: 600;
+    margin: 0px 20px;
+    padding: 10px 40px;
+}
+
+.teaser .buttons-wrapper .btn:first-child {
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+}
+
+/* =========== SECTION 2 =========== */
+
+.teaser-teams {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 400px;
+}
+
+.teaser-teams img {
+    height: 140px;
+}
+
+.teaser-teams .headline-wrapper {
+    position: relative;
+    margin: 30px 0;
+}
+
+.teaser-teams .headline-wrapper h2 {
+    font-size: 2em;
+    font-weight: 600;
+    position: relative;
+    z-index: 2;
+    line-height: 1.1;  /* for a better fit of the bg */
+}
+
+.teaser-teams .headline-wrapper .headline-bg {
+    position: absolute;
+    top: 0;
+    left: -30px;
+    width: 100%;
+    height: 100%;
+    padding: 0px 30px;
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+    z-index: 1;
+}
+
+.teaser-teams article {
+    width: 600px;
+}
+
+/* =========== SECTION 3 =========== */
+
+.section-bullet-points {
+    margin: 40px auto;
+}
+
+.bullet-points {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  width: 90%;
+  margin: 0px auto;
+}
+
+.bullet-points .point {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 25%;
+    padding: 16px;
+    align-items: flex-start;
+    height: 240px;
+}
+
+.bullet-points .point .img-wrapper {
+    height: 35px;
+}
+
+.bullet-points .point img {
+    width: 32px;
+}
+
+.point h3 {
+    color: #ED1C24;
+    font-weight: bold;
+    margin: 10px 0 24px 0;
+}
+
+.button-cta {
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    width: 300px;
+    color: white;
+    background-color: black;
+    margin: 0px auto;
+    display: block;
+}
