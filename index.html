@@ -5,41 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NPM</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <header>
+    <header class="header">
         <div>
             <div>
-                <div>
-                    <img src="./images/black-heart.png" alt="black heart">
-                    <span>NPM Clone Nifty Penguin Magic</span>
-                </div>
-                <nav>
-                    <ul>
-                        <li><a href="">npm Enterprise</a></li>
-                        <li><a href="">Products</a></li>
-                        <li><a href="">Solutions</a></li>
-                        <li><a href="">Resources</a></li>
-                        <li><a href="">Docs</a></li>
-                        <li><a href="">Support</a></li>
-                    </ul>
-                </nav>
+                <img class="black-heart" src="./images/black-heart.png" alt="black heart">
+                <span>NPM Clone Nifty Penguin Magic</span>
             </div>
+            <nav class="nav-bar">
+                <ul>
+                    <li><a href="#">npm Enterprise</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Solutions</a></li>
+                    <li><a href="#">Resources</a></li>
+                    <li><a href="#">Docs</a></li>
+                    <li><a href="#">Support</a></li>
+                </ul>
+            </nav>
+        </div>
 
-            <div>
-                <div>
-                    <img src="./images/npm-logo.png" alt="npm logo">
-                    <form action="">
-                        <img src="./images/magnifying-glass.png" alt="magnifying glass">
-                        <input type="text" placeholder="Search packages">
-                        <button>Search</button>
-                    </form>
-                </div>
-
-                <div>
-                    <a href="">Join</a>
-                    <a href="">Log In</a>
-                </div>
+        <div class="search">
+            <img class="npm-logo" src="./images/npm-logo.png" alt="npm logo">
+            <form action=""></form>
+                <img class="mag-glass" src="./images/magnifying-glass.png" alt="magnifying glass">
+                <label class="label" for=""></label>
+                <input class="search-input" type="text" placeholder="Search packages">
+                <button class="red-btn">Search</button>
+            </form>
+            
+            <div class="link">
+                <a href="#">Join</a>
+                <a href="#">Log In</a>
             </div>
         </div>
     </header>
@@ -50,8 +48,8 @@
             <p>Essential JavaScript development tools that help you go to market faster and build powerful applications using modern open source code.</p>
         </article>
         <div>
-            <a href="">See plans</a>
-            <a href="">Join for free</a>
+            <a class="red-btn plans" href="#">See plans</a>
+            <a class="join" href="#">Join for free</a>
         </div>
     </section>
 
@@ -65,28 +63,30 @@
 
     <section id="features">
         <div>
-            <img src="./images/zero-configuration.svg" alt="zero configuration icon">
-            <h3>Zero configuration</h3>
-            <p>Create an org, add your team, and start collaborating. Nothing to configure, set up, or manage.</p>
-        </div>
+            <div class="feature-box">
+                <img src="./images/zero-configuration.svg" alt="zero configuration icon">
+                <h3>Zero configuration</h3>
+                <p>Create an org, add your team, and start collaborating. Nothing to configure, set up, or manage.</p>
+            </div>
 
-        <div>
-            <img src="./images/team-management.svg" alt="team management icon">
-            <h3>Team management</h3>
-            <p>Control who has access to what modules within your team namespace using straightforward team management capabilities.</p>
-        </div>
+            <div class="feature-box">
+                <img src="./images/team-management.svg" alt="team management icon">
+                <h3>Team management</h3>
+                <p>Control who has access to what modules within your team namespace using straightforward team management capabilities.</p>
+            </div>
 
-        <div>
-            <img src="./images/familiar-features.svg" alt="familiar features icon">
-            <h3>Familiar features</h3>
-            <p>npm Orgs has 100% parity with all the public npm registry features your developers already use.</p>
-        </div>
+            <div class="feature-box">
+                <img src="./images/familiar-features.svg" alt="familiar features icon">
+                <h3>Familiar features</h3>
+                <p>npm Orgs has 100% parity with all the public npm registry features your developers already use.</p>
+            </div>
 
-        <div>
-            <img src="./images/npm-audit.svg" alt="npm audit icon">
-            <h3>npm audit</h3>
-            <p>Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer.</p>
-        </div>
+            <div class="feature-box">
+                <img src="./images/npm-audit.svg" alt="npm audit icon">
+                <h3>npm audit</h3>
+                <p>Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer.</p>
+            </div>
+        </div> 
         <a href="">Create an Org</a>
     </section>
 
