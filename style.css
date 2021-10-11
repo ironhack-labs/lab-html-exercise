@@ -2,6 +2,7 @@
 
 body {
   font-family: 'Poppins';
+  margin: 50px;
 }
 
 header > div {
@@ -10,83 +11,88 @@ header > div {
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid lightgray;
-  }
+}
   
-  nav {
-    width: 600px;
-  }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  nav a {
-    text-decoration: none;
-    color: black;
-  }
-  
-  .blackHeart {
-    width: 20px;
-    margin-right: 1rem;
-  }
+nav {
+  width: 600px;
+}
 
-  .magnifying-glass {
-    width: 20px;
-    margin-right: 1rem;
-    padding: 10px;
-  }
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-  #div-bottom {
-    display: flex;
-    justify-content: space-around;
-    align-content: center;
-  }
+nav a {
+  text-decoration: none;
+  color: black;
+}
 
-  .npm-logo {
-    width: 60px;
-    margin-right: 1rem;
-  }
+.blackheart {
+  width: 20px;
+  margin-right: 1rem;
+}
 
+.magnifying-glass {
+  width: 20px;
+  margin-right: 1rem;
+  padding: 10px;
+}
 
+#div-bottom {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+}
+
+.npm-logo {
+  width: 60px;
+  margin-right: 1rem;
+}
+
+.triangle-hexagon {
+  width: 270px;
+}
 
 .search-form label {
     color: rgba(0,0,0,.05);
     
 }
 
+.search-form{
+    margin: 10px;
+}
 .search-form input{
     color: rgba(0,0,0,.05);
     background-color: #f7f7f7;
     padding: 15px 10px 10px 10px;
     border: none;
-    width: 85%;
+    width: 93%;
     height: 90%;
 }
 
 
-  .search-form-container {
-      background-color: #f7f7f7;
-      width:  60em;
-      padding: 0px;
-      margin-top: 10px;
-      display: flex;
-      justify-content: flex-start;
-  }
+.search-form-container {
+    background-color: #f7f7f7;
+    width:  90em;
+    padding: 0px;
+    display: flex;
+    justify-content: flex-start;
+}
 
-  .search-form button{
+.search-form button{
     background-color: #fb3e44;
     color: white;
+    font-size: 1.1em;
     border: none;
-    width: 15%;
+    width: 7%;
     padding: 0;
 }
 
 .join-btn {
     border: 1px solid black;
-    padding: 5px;
+    padding: 5px 15px 5px 15px;
     text-decoration: none;
     color: black;
 }
@@ -95,4 +101,115 @@ header > div {
     padding: 5px;
     text-decoration: none;
     color: black;
+}
+
+#first-section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 600px;
+  background-color: rgba(232, 217, 217, .3);
+}
+
+#first-section h1 {
+  margin-bottom: 10px;
+  margin-top: 0;
+  display: flex;
+  font-size: 6em;
+  font-weight: bold;
+}
+
+.first-section-article {
+  display: flex;
+  width: 24%;
+  font-size: 1.2em;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.first-section-plans {
+  background-color: #fb3b49;
+  box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2em;
+  padding: 10px 50px 10px 50px;
+  margin: 20px;
+}
+
+.first-section-join {
+  background-color: white;
+  text-decoration: none;
+  color: black;
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 10px 50px 10px 50px;
+  margin: 20px;
+}
+
+#second-section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 600px;
+}
+
+#second-section h2 {
+  background-color: rgba(255,204,53,.4);
+  transform: skew(9deg,0deg);
+  font-style: italic;
+  font-size: 35px;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-top: 50px;
+}
+
+.second-section-article {
+  display: flex;
+  width: 45%;
+  font-size: 1em;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#third-section > div {
+  padding: 0 25px;
+  display: flex;
+  justify-content: space-between;
+  margin: 100px;
+}
+
+#third-section #box-container-btn {
+  display: flex;
+  justify-content: center;
+}
+
+#third-section a {
+  background-color: black;
+  box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2em;
+  padding: 10px 200px 10px 200px;
+}
+
+#third-section .box-container {
+  width: 20%;
+  margin: 20px;
+}
+
+#third-section .box-container img {
+  width: 60px;
+}
+
+#third-section .box-container h3 {
+  color: #ED1C24;
+}
+
+#third-section .box-container p {
+  text-align: left;
 }
