@@ -1,0 +1,368 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,700");
+
+$white: rgba(255, 255, 255, 1);
+$grayLight: rgba(238, 238, 238, 1);
+$grayMedium: rgba(100, 100, 100, 1);
+$black: rgba(10, 10, 10, 1);
+$cherryLight: rgba(241, 222, 213, 1);
+$cherry: rgba(249, 59, 73, 1);
+$cherryDark: rgba(200, 50, 70, 1);
+$lightYellow: rgba(252, 235, 181, 1);
+
+$paddingBtn: 8px 24px;
+$paddingBtnLg: 12px 52px;
+$paddingY: 32px;
+$transitionBtn: 0.3s;
+
+@mixin paddingLeftRight {
+  padding-left: $paddingY;
+  padding-right: $paddingY;
+}
+
+body {
+  font-family: "Poppins";
+  padding: 0;
+  margin: 0;
+  position: relative;
+  padding-top: 129px;
+}
+
+h1 {
+  font-size: 80px;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: 500;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+button {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Poppins";
+  background: inherit;
+  border: 0;
+  cursor: pointer;
+}
+
+.primaryBtn {
+  padding: $paddingBtn;
+  background: $cherry;
+  color: $white;
+  transition: $transitionBtn;
+
+  &:hover {
+    background: $cherryDark;
+  }
+}
+
+.primaryBtnLg {
+  padding: $paddingBtnLg;
+  background: $cherry;
+  color: $white;
+  transition: $transitionBtn;
+  position: relative;
+
+  &:hover {
+    background: $cherryDark;
+
+    &::before {
+      top: 0;
+      left: 0;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 8px;
+    left: 8px;
+    background: $cherryLight;
+    z-index: -1;
+    transition: $transitionBtn;
+  }
+}
+
+.darkBtnLg {
+  padding: 12px 80px;
+  background: $black;
+  color: $white;
+  transition: $transitionBtn;
+  position: relative;
+
+  &:hover {
+    background: $cherryDark;
+
+    &::before {
+      top: 0;
+      left: 0;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 8px;
+    left: 8px;
+    background: $cherryLight;
+    z-index: -1;
+    transition: $transitionBtn;
+  }
+}
+
+.strokedBtn {
+  padding: $paddingBtn;
+  background: $white;
+  border: 1px solid $black;
+  transition: $transitionBtn;
+
+  &:hover {
+    background: $grayLight;
+  }
+}
+
+.emptyBtn {
+  padding: $paddingBtn;
+  background: $white;
+  transition: $transitionBtn;
+
+  &:hover {
+    background: $grayLight;
+  }
+}
+
+.emptyBtnLg {
+  padding: $paddingBtnLg;
+  background: $white;
+  transition: $transitionBtn;
+
+  &:hover {
+    background: $grayLight;
+  }
+}
+
+header {
+  background: $white;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.08);
+  @include paddingLeftRight();
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  border-bottom: 1px solid $grayLight;
+
+  .punMachine {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    .iconHeart {
+      height: 12px;
+      width: 24px;
+    }
+  }
+
+  nav {
+    ul {
+      display: flex;
+      gap: 20px;
+      margin-block-start: 0;
+      margin-block-end: 0;
+      padding-inline-start: 0;
+
+      li {
+        list-style-type: none;
+
+        a {
+          &:hover {
+            color: $grayMedium;
+          }
+        }
+      }
+    }
+  }
+}
+
+.actionBar {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  padding: 12px 0 8px;
+
+  .logo {
+    width: 80px;
+    height: auto;
+  }
+
+  .formItems {
+    display: flex;
+    flex: 1;
+  }
+
+  .formWrapper {
+    display: flex;
+    align-items: center;
+    background: $grayLight;
+    padding: 8px 12px;
+    flex: 1;
+    gap: 20px;
+    border: 1px solid $grayLight;
+    transition: 0.3s;
+
+    &:active,
+    &:focus,
+    &:focus-within {
+      border: 1px solid $black;
+    }
+
+    form {
+      width: 100%;
+    }
+
+    .iconSearch {
+      width: 24px;
+    }
+
+    input {
+      width: 100%;
+      background: transparent;
+      border: 0;
+      height: 100%;
+      padding: 0;
+      height: 24px;
+      font-size: 16px;
+      font-family: monospace;
+
+      &:focus-visible {
+        outline: none;
+      }
+    }
+  }
+
+  .userBtns {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+}
+
+.intro {
+  padding: 80px 0;
+  background: $grayLight;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include paddingLeftRight();
+
+  h1 {
+    text-align: center;
+    margin-bottom: 32px;
+  }
+
+  p {
+    text-align: center;
+    width: 24%;
+  }
+
+  .introBtns {
+    padding: 40px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    position: relative;
+    z-index: 1;
+  }
+}
+
+.benefits {
+  padding: 100px 0;
+  background: $white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include paddingLeftRight();
+
+  img {
+    width: 280px;
+    margin-bottom: 36px;
+  }
+
+  h2 {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+
+    &::before {
+      content: "";
+      height: 80%;
+      width: 120%;
+      position: absolute;
+      top: 0;
+      left: -10%;
+      background: $lightYellow;
+      z-index: -1;
+      clip-path: polygon(0 0, 99% 0, 100% 100%, 1% 100%);
+    }
+  }
+
+  p {
+    text-align: center;
+    width: 40%;
+  }
+
+  .row {
+    display: flex;
+    padding: 80px 160px;
+    width: 100%;
+    box-sizing: border-box;
+    gap: 40px;
+
+    .benefitCol {
+      width: 25%;
+
+      img {
+        height: 32px;
+        width: auto;
+        margin-bottom: 16px;
+      }
+
+      h4 {
+        color: $cherry;
+        margin-top: 0;
+        margin-bottom: 24px;
+      }
+
+      p {
+        text-align: left;
+        width: 100%;
+      }
+    }
+  }
+
+  .createOrg {
+    position: relative;
+    z-index: 2;
+  }
+}

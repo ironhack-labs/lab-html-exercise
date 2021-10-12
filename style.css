@@ -1,0 +1,311 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,700");
+body {
+  font-family: "Poppins";
+  padding: 0;
+  margin: 0;
+  position: relative;
+  padding-top: 129px;
+}
+
+h1 {
+  font-size: 80px;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: 500;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+button {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Poppins";
+  background: inherit;
+  border: 0;
+  cursor: pointer;
+}
+
+.primaryBtn {
+  padding: 8px 24px;
+  background: #f93b49;
+  color: white;
+  transition: 0.3s;
+}
+.primaryBtn:hover {
+  background: #c83246;
+}
+
+.primaryBtnLg {
+  padding: 12px 52px;
+  background: #f93b49;
+  color: white;
+  transition: 0.3s;
+  position: relative;
+}
+.primaryBtnLg:hover {
+  background: #c83246;
+}
+.primaryBtnLg:hover::before {
+  top: 0;
+  left: 0;
+}
+.primaryBtnLg::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 8px;
+  left: 8px;
+  background: #f1ded5;
+  z-index: -1;
+  transition: 0.3s;
+}
+
+.darkBtnLg {
+  padding: 12px 80px;
+  background: #0a0a0a;
+  color: white;
+  transition: 0.3s;
+  position: relative;
+}
+.darkBtnLg:hover {
+  background: #c83246;
+}
+.darkBtnLg:hover::before {
+  top: 0;
+  left: 0;
+}
+.darkBtnLg::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 8px;
+  left: 8px;
+  background: #f1ded5;
+  z-index: -1;
+  transition: 0.3s;
+}
+
+.strokedBtn {
+  padding: 8px 24px;
+  background: white;
+  border: 1px solid #0a0a0a;
+  transition: 0.3s;
+}
+.strokedBtn:hover {
+  background: #eeeeee;
+}
+
+.emptyBtn {
+  padding: 8px 24px;
+  background: white;
+  transition: 0.3s;
+}
+.emptyBtn:hover {
+  background: #eeeeee;
+}
+
+.emptyBtnLg {
+  padding: 12px 52px;
+  background: white;
+  transition: 0.3s;
+}
+.emptyBtnLg:hover {
+  background: #eeeeee;
+}
+
+header {
+  background: white;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.08);
+  padding-left: 32px;
+  padding-right: 32px;
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  border-bottom: 1px solid #eeeeee;
+}
+.navBar .punMachine {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.navBar .punMachine .iconHeart {
+  height: 12px;
+  width: 24px;
+}
+.navBar nav ul {
+  display: flex;
+  gap: 20px;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+}
+.navBar nav ul li {
+  list-style-type: none;
+}
+.navBar nav ul li a:hover {
+  color: #646464;
+}
+
+.actionBar {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  padding: 12px 0 8px;
+}
+.actionBar .logo {
+  width: 80px;
+  height: auto;
+}
+.actionBar .formItems {
+  display: flex;
+  flex: 1;
+}
+.actionBar .formWrapper {
+  display: flex;
+  align-items: center;
+  background: #eeeeee;
+  padding: 8px 12px;
+  flex: 1;
+  gap: 20px;
+  border: 1px solid #eeeeee;
+  transition: 0.3s;
+}
+.actionBar .formWrapper:active, .actionBar .formWrapper:focus, .actionBar .formWrapper:focus-within {
+  border: 1px solid #0a0a0a;
+}
+.actionBar .formWrapper form {
+  width: 100%;
+}
+.actionBar .formWrapper .iconSearch {
+  width: 24px;
+}
+.actionBar .formWrapper input {
+  width: 100%;
+  background: transparent;
+  border: 0;
+  height: 100%;
+  padding: 0;
+  height: 24px;
+  font-size: 16px;
+  font-family: monospace;
+}
+.actionBar .formWrapper input:focus-visible {
+  outline: none;
+}
+.actionBar .userBtns {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.intro {
+  padding: 80px 0;
+  background: #eeeeee;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+.intro h1 {
+  text-align: center;
+  margin-bottom: 32px;
+}
+.intro p {
+  text-align: center;
+  width: 24%;
+}
+.intro .introBtns {
+  padding: 40px 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  position: relative;
+  z-index: 1;
+}
+
+.benefits {
+  padding: 100px 0;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+.benefits img {
+  width: 280px;
+  margin-bottom: 36px;
+}
+.benefits h2 {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+.benefits h2::before {
+  content: "";
+  height: 80%;
+  width: 120%;
+  position: absolute;
+  top: 0;
+  left: -10%;
+  background: #fcebb5;
+  z-index: -1;
+  -webkit-clip-path: polygon(0 0, 99% 0, 100% 100%, 1% 100%);
+          clip-path: polygon(0 0, 99% 0, 100% 100%, 1% 100%);
+}
+.benefits p {
+  text-align: center;
+  width: 40%;
+}
+.benefits .row {
+  display: flex;
+  padding: 80px 160px;
+  width: 100%;
+  box-sizing: border-box;
+  gap: 40px;
+}
+.benefits .row .benefitCol {
+  width: 25%;
+}
+.benefits .row .benefitCol img {
+  height: 32px;
+  width: auto;
+  margin-bottom: 16px;
+}
+.benefits .row .benefitCol h4 {
+  color: #f93b49;
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+.benefits .row .benefitCol p {
+  text-align: left;
+  width: 100%;
+}
+.benefits .createOrg {
+  position: relative;
+  z-index: 2;
+}
