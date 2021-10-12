@@ -26,9 +26,11 @@ h1 {
   }
   
   h3 {
-    font-size: 1.5em;
+    font-size: 1.9em;
     text-align: center;
     line-height: 1em;
+   
+  
   }
   
   h4 {
@@ -39,10 +41,12 @@ h1 {
   }
   
   h5 {
-    font-size: 1.2em;
+    font-size: 0.7em;
     line-height: 1em;
-    margin-top: 0px;
+    margin-top: 10px;
     margin-bottom: 0px;
+    text-align: left;
+    color: #FB3B49;
   }
 
   
@@ -52,6 +56,9 @@ header > div {
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid lightgray;
+  }
+  .section1{
+    font-weight: bold;
   }
   
   nav {
@@ -63,6 +70,7 @@ header > div {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
   }
   
   nav a {
@@ -74,24 +82,58 @@ header > div {
     width: 20px;
     margin-right: 1rem;
   }
-  .searchBar form img {
-    width: 25px;
-    margin-top: 10px;
-  }
+
   .logo {
     width: 40px;
     margin-right: 1rem;
   }
+ 
   form label,
    input{
     color: rgba(0,0,0,0.5);
+}
+.searchBar form {
+    
+    margin:5px;
+
+   
+ 
+  }
+
+  form {
+    background-color:rgba(0,0,0,0.3);
+    width: 85%;
+    height: 44px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+  }
+
+  ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgb(0, 0, 0);
+    background-color: gray;
+    border: none;
+    opacity: 1; /* Firefox */
+  }
+.searchBar form img {
+  width: 15px;
 }
 form button{
     background-color: #fb3e44;
     color: white;
     border-color: rgba(0,0,0,0);
 }
+.searchBar a {
+  color: black;
+  text-decoration: none;
+}
 
+.join{
+  border: 1px solid black;
+  padding: 5 20 5 20;
+}
 .built {
     display: flex;
     flex-direction: column;
@@ -101,10 +143,11 @@ form button{
     background-color: rgba(232, 217, 217,0.3);
 }
 .built button{
-    width: 140px;
+    width: 180px;
+    font-size: 16px;
     background-color: #FB3B49;
     box-shadow: 8px 8px 0 rgba(251,59,73,.2);
-    padding: 20px;
+    padding:20 0 20 0;
     margin-right: 50px;
     color: white;
     border-color:rgba(0,0,0,0);
@@ -115,6 +158,18 @@ form button{
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
+}
+.seePlans a{
+  font-size: 16px;
+  width: 180px;
+  background-color: #ffffff;
+  text-align: center;
+padding:20 0 20 0;
+  color: rgb(0, 0, 0);
+  border-color:rgba(0,0,0,0);
+  text-decoration: none;
+  font-weight:bold;
+  
 }
 .bring {
     display: flex;
@@ -138,19 +193,44 @@ article {
     width: 250px;
 }
 .configuration{
+  
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: stretch;
+    margin: 0px 200px 0px 200px;
+  
+
 }
 .configuration div {
     font-size: 1.7em;
-    text-align: center;
     border: 2px solid rgba(0, 0, 0, 0);
     box-sizing: border-box;
-    margin: 50px 5% 0 5%;
+    margin: 5px;
     padding: 20px;
     width: 25%;
     
   }
 .configuration img{
-    width: 20px;
+    width: 35px;
+}
+.configuration p{
+  text-align: left;
+  font-size: 12px;
+}
+.org{
+  width: 200px;
+  background-color:black;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 100px;
+  margin-top: 50px;
+  width: 30%;
+  border: 3px solid black;
+  padding: 15px;
+  box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.2);
 }
