@@ -32,13 +32,14 @@ nav {
 .top-bar {
      margin: 10px;
      display: flex;
-     justify-content: space-between;
+     justify-content: space-evenly;
      align-items: center;
+     flex-direction: row;
 
   }
 .logo {
     width: 60px;
-    height: 30px;
+    height: 20px;
     margin-top: 10px;
     
 }
@@ -84,12 +85,13 @@ nav {
     height: 600px; 
     background-color: rgba(232,217,217,.3);
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-direction: column;
+    
 }
   h1 {
-      margin-top: 10px;
+      margin-top: 100px;
       font-size: 70px;
   }
 .description p {
@@ -147,16 +149,40 @@ h2 {
 }
 #section-3 {
     height: 400px;
-    margin: 10px 70px;
+    margin: 10px 90px;
 }
 .section-3-container {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
     
 }
 .paragraph {
     text-align: left;
-    width: 150px;
+    width: 200px;  
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+h3 {
+    color: #ED1C24;
+}
+.endspace {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: flex-start;
+}
+.create-org-button {
+    margin: 70px 0;
+    text-align: center;
+    color: white;
+    background-color: black;
+    width: 170px;
+    text-decoration: none;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    font-weight: 900;
+    padding: 20px 100px;
 }
