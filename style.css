@@ -12,43 +12,44 @@ header > div {
     border-bottom: 1px solid lightgray;
   }
   
-  nav {
+nav {
     width: 600px;
   }
   
-  nav ul {
+nav ul {
     list-style: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
   
-  nav a {
+nav a {
     text-decoration: none;
     color: black;
   }
   
-  .blackHeart {
+.blackHeart {
     width: 20px;
     margin-right: 1rem;
   }
 
-  .searchbutton {
+.searchbutton {
         padding: 13px 28px;
         border: 1px solid #cccccc;
         border-radius: 0;
     }
 
-  #section1 {
+#section1 {
       display:flex;
       justify-content:center;
       flex-direction:column;
       align-items: center;
       height: 600px;
-      background-color: rga(232,271,271,.3);
+      background-color: rgba(232,271,271,.3);
   }
 
-  #section2 {
+#section2 {
+    background: chartreuse;
     display:flex;
     justify-content:center;
     flex-direction:column;
@@ -57,3 +58,50 @@ header > div {
     background-color: rga(232,271,271,.3);
 }
 
+#section3 {
+  background-color: red;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+#section3 .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 370px;
+  background-color: blue;
+}
+
+.headline1 {
+  font-weight: 600;
+  font-size: 4.2em;
+  text-align: center;
+  line-height: 1em;
+}
+
+.buttons1 {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+
+.plans-btn {
+  background-color: #FB3B49;
+  color: white;
+  box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 30px;
+  border-right: 20px;
+}
+
+.last-btn {
+  background-color: black;
+  color: white;
+  box-shadow: 8px 8px 0 rgba(128, 83, 35, .2);
+  font-size: 2em;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 30px;
