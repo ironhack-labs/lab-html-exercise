@@ -20,7 +20,9 @@ npm audit
 Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer.
 
 Create an Org -->
-
+<head>
+  <link rel="stylesheet" href="style.css">
+</head>
 <body>
   <header>
     <div>
@@ -44,17 +46,17 @@ Create an Org -->
       </nav>
     </div>
 
-    <div>
+    <div class="search-bar">
       <!-- add logo, search bar and buttons (or links and style them as buttons later) -->
-      <img src="images/npm-logo.png" alt="npm logo" />
-      <img src="images/magnifying-glass.png" alt="search glass" />
+      <img src="images/npm-logo.png" alt="npm logo"/>
       <form>
-        <input type="text" placeholder="Search packages" />
+        <img src="images/magnifying-glass.png" alt="search glass"/>
+        <input type="text" placeholder="Search packages" id="text"/>
         <button type="submit">Search</button>
       </form>
-      <div class="join-login">
-        <a href="#">Join</a>
-        <a href="#">Log in</a>
+      <div>
+        <a href="#" class="join">Join</a>
+        <a href="#" class="login">Log in</a>
       </div>
     </div>
   </header>
@@ -62,13 +64,12 @@ Create an Org -->
     <h1>Build amazing things</h1>
     <article>
       <p>
-        Essential JavaScript development tools that help you go to market faster
-        and build powerful applications using modern open source code.
+        Essential JavaScript development tools that help you go to market faster and build powerful applications using modern open source code.
       </p>
     </article>
     <div>
-      <a href="#">See plans</a>
-      <a href="#">Join for free</a>
+      <a class="see-plans" href="#">See plans</a>
+      <a class="join-for-free" href="#">Join for free</a>
     </div>
   </section>
   <section id="intro-two">
@@ -110,8 +111,8 @@ Create an Org -->
           developers already use.
         </p>
       </div>
-      <div class="small-container"></div>
-        <img src="images/npm-audit.svg" alt="binoculars" />
+      <div class="small-container">
+        <img src="images/npm-audit.svg" alt="binoculars"/>
         <h3>npm audit</h3>
         <p>
           Enjoy the security auditing features built into the npm client, a
