@@ -147,6 +147,14 @@ h2 {
   font-weight: bold;
 }
 
+h3 {
+  font-size: 15px;
+  font-family: Poppins;
+  font-weight: bold;
+  color: #f03639;
+  margin-bottom: 20px;
+}
+
 .hero-font {
   color: #000;
   text-align: center;
@@ -218,13 +226,44 @@ h2 {
 
 #section-three {
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: top;
+  padding: 0px 200px 10px 200px;
+}
+
+#section-three,
+span {
+  font-size: 14px;
+}
+
+.icon-images {
+  height: 25px;
+  margin-bottom: 15px;
+}
+
+.card-text {
+  width: 20%;
+}
+
+#section-four {
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   padding: 5rem 10rem;
 }
-
-.icon-images {
-  width: 30px;
-  height: auto;
+.create-org-button {
+  width: 300px;
+  padding: 10 50px;
+  background-color: #000000;
+  font-family: Poppins;
+  font-size: 15px;
+  font-weight: bold;
+  border: none;
+  -webkit-box-shadow: 4px 5px 0px 0px #aeaeae;
+  box-shadow: 4px 5px 0px 0px #aeaeae;
+  color: #ffffff;
+  letter-spacing: 1px;
+  cursor: pointer;
 }
