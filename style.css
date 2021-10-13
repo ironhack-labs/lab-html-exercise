@@ -33,11 +33,40 @@ nav a {
     margin-right: 1rem;
   }
 
+.navigation2 {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  align-items: center; 
+}
+
+.searchbar {
+  background-color: rgba(0,0,0,.05);
+  color: rgba(0,0,0,.05);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center; 
+  width: 80%;
+}
+
 .searchbutton {
-        padding: 13px 28px;
-        border: 1px solid #cccccc;
-        border-radius: 0;
-    }
+  padding: 20px 28px;
+  background-color: #fb3e44;
+  color: white;
+  border: 0px;
+}
+.joinbutton {
+  padding: 5px 28px;
+  border: 1px solid #cccccc;
+  border-radius: 0;
+}
+
+.loginbutton {
+  padding: 5px 28px;
+    border: 0px solid #cccccc;
+    border-radius: 0;
+}
 
 #section1 {
       display:flex;
@@ -46,16 +75,17 @@ nav a {
       align-items: center;
       height: 600px;
       background-color: rgba(232,217,217,.3);
+      margin-bottom: 20px;
   }
 
 #section2 {
-    background: chartreuse;
     display:flex;
     justify-content:center;
     flex-direction:column;
     align-items: center;
-    height: 600px;
+    height: 500px;
     background-color: rgba(232,271,271,.3);
+    margin-bottom: 20px;
 }
 
 #section3 {
@@ -65,13 +95,16 @@ nav a {
 .rowdiv {
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 
 .container {
   display: flex;
   flex-direction: column;
   align-items: justify;
-  width: auto;
+  width: 15%;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .headline1 {
@@ -91,8 +124,12 @@ nav a {
   line-height: 1em;
 }
 
-.h3 {
+h3 {
   color: #ED1C24;
+}
+
+.hexagonlogo {
+  margin-bottom: 20px;
 }
 
 .article1 {
@@ -101,7 +138,7 @@ nav a {
 }
 
 .article2 {
-  width: 30%;
+  width: 40%;
   text-align:center;
 }
 
@@ -134,7 +171,7 @@ nav a {
 .bottomdiv {
   display: flex;
   justify-content: center;
-  margin-top: 10;
+  margin-top: 50px;
 }
 
 .last-btn {
@@ -147,3 +184,4 @@ nav a {
   padding: 10px 30px;
   align-items: center;
 }
+

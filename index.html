@@ -24,15 +24,16 @@
           </nav>
         </div>
       
-        <div>
-            
-            <img class="npm_Logo" width= "70px" src="images/npm-logo.png" alt="NPM Logo" /> 
-            <img class="magnifying_glass" width= "70px" src="images/magnifying-glass.png" alt="NPM Logo" />
-            <form action="action_page.php">
-                <input type="text" placeholder="Search.." name="search">
-                <button class ="searchbutton" type="submit">Search<i class="fa fa-search"></i></button>
+        <div class="navigation2">
+            <div><img class="npm_Logo" width= "70px" src="images/npm-logo.png" alt="NPM Logo" /></div>
+            <div class="searchbar">
+              <img class="magnifying_glass" width= "20px" src="images/magnifying-glass.png" alt="Magnifying Glass" />
+              <form>
+                <input type="text" placeholder="Search Packages" name="search">
+                <button class="searchbutton" type="submit">Search</button>
               </form>
-            <a href="#"> Join </a> <a href="#"> Log In </a>
+            </div>
+            <a class="joinbutton" href="#"> Join </a> <a class="loginbutton" href="#"> Log In </a>
         </div>
       </header>
 
@@ -40,13 +41,13 @@
           <div class="headline1">Build amazing things</div>
           <p class="article1">Essential Javascript development tools that help you go to market faster and build powerful applications using modern open source code.</p>
           <div class="buttons1">
-            <a class="plans-btn">See Plans</a>
-            <a class="join-btn">Join for free</a>
+            <a class="plans-btn" href="#">See Plans</a>
+            <a class="join-btn" href="#">Join for free</a>
           </div>
       </div>
 
       <div id="section2">
-          <div margin-bottom= "10px">
+          <div class="hexagonlogo">
             <img src="images/triangle-hexagon.svg" width= "150px" alt="hexagonlogo" />
           </div>
           <div class="headline2">Bring the best of open source to your company</div>
@@ -79,14 +80,15 @@
               <h3>np audit</h3>
               <p>Enjoy the security audition features built into the npm client, a zero-friction way to make open source software safer.</p>
             </div>
-
+          </div>
+          
+          <div class="bottomdiv">
+            <a class="last-btn" href="#">Create an Org</a>
           </div>
       </div>
 
       <footer>
-        <div class="bottomdiv">
-          <a class="last-btn" href="#">Create an Org</a>
-        </div>
+        
       </footer>
   </body>
 </html>
