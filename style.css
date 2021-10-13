@@ -1,4 +1,14 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Poppins;
+}
 
 header > div {
   padding: 0 25px;
@@ -9,6 +19,7 @@ header > div {
 }
 
 #nav-top {
+  padding: 20px 20px 20px 20px;
   font-size: 14px;
   font-family: Poppins;
 }
@@ -38,9 +49,9 @@ nav a {
 }
 
 #search-bar-container {
-  padding: 0.5rem;
+  padding: 0.6rem;
   background-color: #f2f2f2;
-  width: 700px;
+  width: 830px;
 }
 
 .search-icon {
@@ -51,7 +62,7 @@ nav a {
 }
 
 form {
-  margin: 0.4rem;
+  margin: 1rem;
   display: flex;
 }
 
@@ -60,6 +71,7 @@ input {
   border: none;
   margin-left: 10px;
   margin-top: 3px;
+  width: 95%;
 }
 
 input:focus,
@@ -84,9 +96,135 @@ select {
   padding: 10 20px;
   background-color: #ed3a43;
   font-family: Poppins;
-  font-weight: bold;
+
   border: none;
   color: #ffffff;
   letter-spacing: 0.3px;
   cursor: pointer;
+}
+
+div > #login-buttons {
+  font-size: 14px;
+}
+
+#join-button {
+  padding: 5px 20px;
+  border: 1px solid #a9a9a9;
+  font-family: Poppins;
+  text-decoration: none;
+  color: #000;
+  letter-spacing: 0.3px;
+  cursor: pointer;
+}
+
+#login-button {
+  margin-left: 10px;
+  font-family: Poppins;
+  text-decoration: none;
+  color: #000;
+  letter-spacing: 0.3px;
+  cursor: pointer;
+}
+
+#build-amazing-things {
+  background-color: #f8f4f4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8rem 10rem;
+}
+
+h1 {
+  font-size: 60px;
+  font-family: Poppins;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 30px;
+  font-family: Poppins;
+  font-weight: bold;
+}
+
+.hero-font {
+  color: #000;
+  text-align: center;
+}
+
+.hero-intro {
+  color: #000;
+  font-size: 16px;
+  text-align: center;
+  width: 500px;
+  margin: 55px 0px;
+}
+
+.plans-button {
+  padding: 10 50px;
+  background-color: #ed3a43;
+  font-family: Poppins;
+  font-size: 15px;
+  font-weight: bold;
+
+  margin-right: 20px;
+  border: none;
+  -webkit-box-shadow: 4px 5px 0px 0px #e3b6b6;
+  box-shadow: 4px 5px 0px 0px #e3b6b6;
+  color: #ffffff;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.join-free-button {
+  padding: 10 50px;
+  background-color: #ffffff;
+  font-family: Poppins;
+  font-size: 15px;
+  font-weight: bold;
+  margin-right: 20px;
+  border: none;
+  color: #000;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+#section-two {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5rem 10rem;
+}
+
+#hexagon {
+  width: 200px;
+  height: auto;
+  margin-bottom: 50px;
+}
+
+#highlighter {
+  background-color: #feebb5;
+  padding: 0px 20px;
+}
+
+.article-two {
+  color: #000;
+  font-size: 14px;
+  text-align: center;
+  width: 700px;
+  margin: 30px 0px;
+}
+
+#section-three {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5rem 10rem;
+}
+
+.icon-images {
+  width: 30px;
+  height: auto;
 }
