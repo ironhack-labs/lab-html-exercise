@@ -1,19 +1,85 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
- 
+
+
 body {
  font-family: 'Poppins';
 }
  
 header > div {
-   padding: 20px 25px;
+   padding: 0 25px;
    display: flex;
    justify-content: space-between;
    align-items: center;
    border-bottom: 1px solid lightgray;
 }
 
+.container-div {
+   padding: 10px 10px 10px 10px;
+   display: flex;
+   justify-content: space-between;
+  
+
+}
+
+.form-search input {
+   height: 37px;
+   width: 1015px;
+   color: rgba(0,0,0,.05);
+   background-color: #F6F7F4;
+   border: none;
+   padding-left: 40px;
+}
+
+
+.button {
+   height: 37px;
+   width: 75px;
+   margin-right: 25px;
+   background-color: #fb3e44;
+   color: white;
+   border: none;
+   font-size: 1em;
+
+
+}
+
+.button-join {
+   text-decoration: none;
+   padding: 0px;
+   padding-left: 10px;
+   padding-right: 10px;
+   color: black;
+   background: transparent;
+   border: 2px solid;
+   margin-right: 2px;
+ }
+
+.login {
+   margin-right: 10px;
+   text-decoration: none;
+   color: black;
+}
+
+.img-npm {
+   width: 80px;
+   height: 25px;
+   flex:center;
+   margin-top: 10px;
+   margin-left: 10px;
+} 
+
+.image-logo {
+   width: 20px;
+   height: 20px; 
+   position: absolute;
+   margin-top: 10px;
+   margin-left: 10px;
+   /*top: 8px;
+   padding: 9px 8px;*/
+   
+}
 #build {
-   height: 600px;
+   height: 500px;
    background-color: rgba(232, 217,217,.3);
    display: flex;
    justify-content: center;
@@ -21,7 +87,15 @@ header > div {
    text-align: center;
    padding: 75px 0px;
    font-size: 1.5em;
+   align-items: center ;
+   flex-direction: column;
    }
+
+.articule-1 {
+   text-align: center;
+   margin-left: 30%;
+   margin-right: 30%;
+}
 
 
 nav {
@@ -44,57 +118,31 @@ nav a {
  width: 20px;
  margin-right: 1rem;
 }
- 
-  nav {
-   width: 600px;
- }
-  nav ul {
-   list-style: none;
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
- }
-  nav a {
-   text-decoration: none;
-   color: black;
- }
-  .blackHeart {
-   width: 20px;
-   margin-right: 1rem;
- }
- 
- .form input{
-color: rgba(0,0,0,.05);
-height: 1000px;
-width: 900px;
-   }
- 
- .form-button {
-     background-color: #fb3e44;
-     color: white;
-    
- }
+
+
 
 .icons-text {
 text-align: left;
+display: flex;
+flex-direction: column;
+width: 400px;
+height: 300px;
+margin-left: 100px;
 
  }
- 
- h1 {
-   font-size: 4em;
-   font-weight: bolder;
+
+ .icons {
+   width: 30px;
+   height: 30px;
+}
+
+h1 {
+   font-size: 3.75em;
+   font-weight: 900;
    text-align: center;
  }
  
- .button-join {
-   text-decoration: none;
-   padding: 0px;
-   padding-left: 10px;
-   padding-right: 10px;
-   color: black;
-   background: transparent;
-   border: 2px solid;
- }
+
  
  .nav-bar ul {
        display: flex;
@@ -105,25 +153,22 @@ text-align: left;
        align-content: flex-end;
  }
  
- .img-npm {
-width: 65px;
-height: 25px;
- }
+
  
- .img-glass{
+ /*.img-glass{
 width: 15px;
 height: 15px;
- }
+ }*/
  
 
 #general-information {
-   height: 600px;
+   height: 500px;
    background-color: rgba(253, 253, 253, 0.3);
    display: block;
    justify-content: center;
    width: 900px;
    margin: auto;
-   padding: 75px 75px;
+   padding: 60px 75px 0px 10px;
    justify-content: space-evenly;
    }
  
@@ -132,20 +177,27 @@ height: 15px;
 background-color: #FB3B49;
 box-shadow: 8px 8px 0 rgba(251,59,73,.2);
 color: white;
-font-family: "Roboto Condensed";
-font-size: 1.5em;
+font-size: 1em;
 letter-spacing: 0,5px;
 text-align: center;
 text-decoration: none;
-padding: 10px 10px 10px 10px;
-margin: 100px;
-width: 150px;
-height: 40px;
+padding: 10px 70px 10px 70px;
+margin: 2px 1em 0 auto;
 }
  
 .join {
    justify-content: flex-end;
    margin: 100px;
+   background-color: white;
+   color: black;
+   font-size: 1em;
+   letter-spacing: 0,5px;
+   font-weight: normal;
+   text-align: center;
+   text-decoration: none;
+   padding: 10px 70px 10px 70px;
+   margin: 2px 1em 0 auto;
+
 }
  
 .img-hexagon{
@@ -155,10 +207,7 @@ display:block;
 margin:auto;
 }
  
-.icons {
-   width: 30px;
-   height: 30px;
-}
+
  
 .shadow-yellow {
    font-size: 1.9em;
@@ -171,17 +220,9 @@ margin:auto;
 }
  
 .p-section2 {
-   margin: 60px;
+   margin: 55px;
 }
 
-.four-options {
-   display: flex;
-   flex-direction: row;
-   flex-wrap: nowrap;
-   justify-content: space-around;
-   align-items: center;
-   align-content: center;
-}
 
 h3 {
 color: #ED1C24;
@@ -196,7 +237,8 @@ color: #ED1C24;
    letter-spacing: 0,5px;
    text-align: center;
    text-decoration: none;
-   margin: 350px;
+   margin: 10px 150px 100px 150px;
+   flex-wrap: wrap;
    width: 400px;
    height: 60px;
 
@@ -204,15 +246,10 @@ color: #ED1C24;
 
 #structure > div {
    display: flex;
-	flex-direction: row;
 	flex-wrap: nowrap;
-	justify-content: space-around;
-	align-items: center;
-	align-content: space-around;
+   justify-content: space-evenly;
+   margin-right: 2%;
+   text-align: center;
+   align-items: center;
    }
 
-#icon {
-background-image: url(images/magnifying-glass.png);
-background-repeat: no-repeat;
-background-position: 2px 3px;
-}
