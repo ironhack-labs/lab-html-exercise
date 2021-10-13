@@ -38,10 +38,10 @@ header > div {
       position: relative;
   }
   .search {
-      display:inline-flex;
       width:20px;
       margin: 0 0 0 5;
       position: absolute;
+      padding-right: 3px;
   }
 
   .search-box {
@@ -54,14 +54,21 @@ header > div {
     margin:none;
     height: 45;
     position: relative;
+    text-indent: 10px;
 
 }
 
-  #nav-bar, .search-box, #search-button, .search, .logo {
-    display:inline-flex;
+  #nav-bar, .search-box, #search-button, .logo {
+    display:flex;
     align-items: center;
     align-content: center;
   }
+
+#search-form {
+    display: flex;
+    align-items: center;
+
+}
 
 #search-button {
       background-color: #fb3e44;
