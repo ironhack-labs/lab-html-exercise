@@ -42,13 +42,14 @@ body {
 
   #npm_logo {
       width: 50px;
-      margin: ;
+      
   }
 
  #magnifying_glass{
     width: 50px;
     border: 1px 0 1px 1px;
     border-color: black;
+    background-color: lightgray;
  }
 
 .search {
@@ -67,6 +68,8 @@ body {
     color: black;
     font-size: 20px;
     width: 800px;
+    background-color: lightgray;
+    margin-top: 0;
 }
 
 
@@ -89,23 +92,18 @@ form input {
     background-color: white;
     list-style: none;
     color: black;
+    display: flex;
 }
 
 .link-btn_1 li {
     list-style: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .link-btn_1 a {
     background-color: white;
-    list-style: none;
     color: black;
     text-decoration: none;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    padding: 10px;
 }
 
 
@@ -130,6 +128,8 @@ form input {
 
 #content-1 ul {
     list-style: none;
+    display: flex;
+    
 }
 
 #content-1 a {
@@ -137,6 +137,7 @@ form input {
     color: black;
     display: flex;
     justify-content: space-between;
+    padding: 10px;
 }
 
 
@@ -149,8 +150,8 @@ form input {
         /*   Section 2   */
 
 #triangle_hexagon {
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
 }
 
 
@@ -208,4 +209,18 @@ form input {
 #content-3 .for_images {
     width: 30px;
     height: 30px;
+}
+
+#content-3 > div > #createAnOrg {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#content-3 article {
+    display: flex;
+    justify-content: center;
+    border: 3px;
+    border-color: red;
 }
