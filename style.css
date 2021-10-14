@@ -31,7 +31,7 @@ body {
  h2 {
    font-size: 2.3em;
    text-align: center;
-   text-transform: uppercase;
+   text-transform: none;
  }
 
  h3 {
@@ -169,3 +169,86 @@ justify-content: flex-start;
     border: none;
 }
 
+/* Second section */
+
+#subtitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hexagon {
+    height: 300px;
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+
+.highlight {
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+    margin: 2px -1px 30px 30px;
+}
+
+.highlight h2 {
+    font-style: italic;
+    white-space: pre;
+    margin: 0;
+}    
+
+    
+
+
+
+
+.article {
+text-align: center;
+font-size: 1em;
+margin-bottom: 40px;
+}
+
+/* Third section*/
+
+#features {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+
+.feature-square{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.feature-square img{
+    height: 30px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.feature-square h3{
+    color:red;
+    text-align: left;
+}
+
+.create-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 40px 40px auto auto;
+    size:40px;
+
+}
+
+.create {
+    white-space: pre;
+    background-color: black;
+    color: white;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+    text-align: center;
+    
+
+}
