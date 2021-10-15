@@ -3,205 +3,253 @@
 body {
   font-family: 'Poppins';
 }
+/*
+Useful information:
+
+form label color: rgba(0,0,0,.05)
+form input color: rgba(0,0,0,.05)
+form button background color: #fb3e44
+form button letters color: white
+*/
+
 header > div {
     padding: 0 25px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid lightgray;
-  }
-  
-  nav {
+}
+
+nav {
     width: 600px;
-  }
-  
-  nav ul {
+}
+
+nav ul {
     list-style: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-  
-  nav a {
+}
+
+nav a {
     text-decoration: none;
     color: black;
-  }
-  
-  .blackHeart {
+}
+
+.blackHeart {
     width: 20px;
     margin-right: 1rem;
-  }
+}
 
-  .npm-logo {
-    width: 80px;
-    margin: 5px;
+.search-bar {
+    border: none;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
     display: flex;
-    justify-content: flex-start;
-  }
-  
-  .magnifying-glass {
-    width: 20px;
-  } 
+    justify-content: space-evenly;
+}
 
-  .search-bar form {
-    color: rgba(0, 0, 0, .05);
-  }
+.glass {
+    width: 25px;
+    padding: 2px;
+    margin-left: 1px;
+    margin-right: 0px;
+    background-color: rgba(0,0,0,.05);
+}
 
-  .search-bar input {
-      background-color: rgba(0, 0, 0, .05);
-      width: 1000px;
-      height: 40px;
-      border: none;
-      letter-spacing: 0.1em;
-      margin: 2px 0 0 0;
-      padding: 0 30px;
-  }
+.search-bar form {
+   margin: auto 0px auto auto;
+   width: 80%;
+   display: flex;
+   justify-content: space-between;
+}
+ 
+.search-bar input {
+    background-color:rgba(0,0,0,.05);
+    margin: auto 0px;
+    padding: 10px 20px;
+    border: none;
+    width: 1000%
+}
 
-  .search-bar button {
-      border: none;
-      background-color: #FB3B49;
-      color: white;
-      text-decoration: none;
-      padding: 15px;
-      margin: 0;
-  }
+.npmLogo {
+    width: 70px;
+    margin-right: 30px;
+}
 
-  .search-bar a {
-      display: flex;
-      justify-content: flex-end;
-  }
+.search-bar button {
+    border: none;
+    background-color: #fb3e44;
+    color: white;
+    padding: 5px 10px;
+}
 
-  #join {
-      border: solid 1px rgba(0, 0, 0, .3);
-      padding: 5px 25px;
-      color: black;
-      text-decoration: none;
-  }
+.link-button {
+    margin: auto;
+    width: 200px;
+    display: flex;
+    justify-content: flex-end;
+}
 
-  #log {
-    color: rgba(0, 0, 0, .5);
+.join {
     text-decoration: none;
-  }
+    color: black;
+    border: 1px solid black;
+    padding: 0px 10px;
+    margin: auto 20px auto;
+}
 
-  #general-information {
-      height: 600px;
-      background-color: rgba(232, 217, 217, .3);
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      text-align: center;
-  }
+.log {
+    text-decoration: none;
+    color: black;
+    margin: auto 5px auto;
+}
 
-  h1 {
-      font-size: 5em;
-      letter-spacing: 0.5px;
-      margin: auto auto 0 auto;
-      font-weight: bold;
-  }
+/*
+suggested height for this section: 600px
+background color: rgba(232,217,217,.3)
+"See plans" button background color: #FB3B49
+"See plans" button box shadow: 8px 8px 0 rgba(251,59,73,.2)
+*/
 
-  #general-information p {
-      text-align: center;
-      display: flex;
-      justify-content: center;
-      border: none;
-      margin: 30px 490px;
-  }
-
-  #general-information div {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 10px 0 0 0;
-  }
-
-  #plans {
-      border: none;
-      background-color: #FB3B49;
-      color: white;
-      text-decoration: none;
-      padding: 10px 50px;
-      box-shadow: 8px 8px 0 rgba(251, 59, 73, .2);
-      margin: 0 30px;
-  }
-
-  #joinfree {
-      text-decoration: none;
-      color: black;
-      background-color: white;
-      padding: 10px 50px;
-      margin: 0 30px;
-  }
-
-  .container {
-      height: 500px;
-  }
-
-  .hexagon {
-      height: 150px;
-      display: flex;
-      justify-content: center;
-      margin: 50px; 
-  }
-
-  #about-npm {
+#presentation {
+    height: 600px;
+    background-color: rgba(232,217,217,.3);
     display: flex;
+    justify-content: baseline;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
+}
+
+#presentation > h1 {
+    font-size: 5em;
     text-align: center;
-  }
+}
 
-  #about-npm h2 {
-      background-color: rgba(255, 204, 53, .4);
-      font-style: italic;
-      transform: skew(9deg,0deg);
-      margin: 10px 400px;
-      padding: 0 20px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-  }
+#presentation > article {
+    width: 520px;
+    text-align: center;
+    font-size: 1.2em;
+    padding: 5px;
+}
 
-  #about-npm p {
-    margin: 20px auto;
-    font-size: 0.7em;
+#presentation .link-button-section-2 {
+    width: 520px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#presentation .see-plans {
+    background-color: #fb3b49;
+    text-decoration: none;
+    color: white;
+    padding: 10px 60px;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+}
+
+#presentation .join-free {
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    padding: 10px 60px;
+}
+
+/*
+heading background color: rgba(255,204,53,.4)
+to get the transform of the yellow background in the left-hand direction use: transform: skew(9deg,0deg);
+to get it in the opposite direction of the letters, the way we need it on the page, use: font-style: italic;
+to additionally fine-tune the position of each element, use margin property.
+*/
+
+#offer {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hexagon {
+    width: 200px;
+}
+
+#offer > h2 {
+    text-align: center;
+    font-size: 1.5em;
+    padding: 0px 30px;
+    background-color: rgba(255,204,53,0.4);
+    transform: skew(9deg,0deg);
+    font-style: italic;
+    margin: 40px;
+}
+
+#offer > article {
     width: 550px;
-  }
+    font-size: 0.7em;
+    text-align: center;
+}
 
-  #features div {
-      padding: 10px;
-      display: flex;
-      justify-content: space-around;
-      margin: 10px 60px;
-  }
+/*
+color of the letters in each heading in this section: #ED1C24
+"Create an Org" box shadow: 8px 8px 0 rgba(128,83,35,.2)
+"Create an Org" letters color: white
+*/
 
-  #features h4 {
-      color: #ED1C24;
-      margin: auto;
-      padding: auto;
-  }
+#org {
+    height: 600px;
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 20px;
+}
 
-  #features img {
-      height: 10%;
-      width: 10%;
-      margin: 100px auto auto auto;
-      padding: 0;
-  }
+#org h3 {
+    color: #ED1C24;
+    font-size: 0.7em;
+}
 
-  #features p {
-      font-size: 0.8em;
-      width: 200px;
-  }
+#org p {
+    font-size: 0.6em;
+}
 
-  #features a {
-      background-color: black;
-      color: white;
-      text-decoration: none;
-      padding: 10px 80px;
-      margin: 20px auto;
-      box-shadow: 8px 8px 0 rgba(128,83,35,.2);
-      
-  }
+.config img {
+    width: 30px;
+}
 
+.management img {
+    width: 25px;
+}
 
-  
-  
+.features img {
+    width: 30px;
+}
+
+.audit img {
+    width: 30px;
+}
+
+.org-container {
+    display: flex;
+	justify-content: space-between;
+    flex-direction: row;
+    align-items: stretch;
+    padding: 0px 250px;
+    margin: 0px auto 70px auto;
+}
+
+.org-container div {
+    padding: 10px;
+    margin: 10px;
+    width: 50%;
+    font-size: 1.2em;
+}
+
+#org a {
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 10px 100px;
+}
