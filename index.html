@@ -8,14 +8,14 @@
 </head>
 
 <body>
-<header>
+<header class="header">
     <div>
       <div>
         <img class="blackHeart" src="images/black-heart.png" alt="black heart"/>
-        <span> Nifty Penguin Magic </span>
+        <span>Nifty Penguin Magic</span>
       </div>
-      <nav>
-        <ul>
+      <nav class="nav-bar">
+        <ul class="nav-bar-ul">
           <li><a href="#"> npm Enterprise </a></li>
           <li><a href="#"> Products </a></li>
           <li><a href="#"> Solutions </a></li>
@@ -29,15 +29,16 @@
     <div id="header">
       
       <img class="logo" src="images/npm-logo.png" alt="npm logo"/>
-      <img class="search" src="images/magnifying-glass.png" alt="magnifying glass"/>
-      <form id="searchbar">
-      <a href="#search">Search packages</a>
-      <span class="button">Search</span>
+      <form class="searchbar" action="" method="GET">
+          <img class="search" src="images/magnifying-glass.png" alt="magnifying glass"/>
+        
+          <input id="search-input" type="text" placeholder="Search packages">
+          <button id="button" type="submit">Search</button>
       </form>
-
-      <div id="joinbtn">
-          <a href="#join">Join</a>
-          <a href="#login">Log in</a>
+      
+      <div id="btns">
+          <a id="join" href="#join">Join</a>
+          <a id="login" href="#login">Log in</a>
       </div>
 
     </div>

@@ -1,14 +1,40 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
-
+html,
+body {
+    margin-right: 20px;
+    margin-left: 20px;
+    font-size: 18px;
+}
 body {
   font-family: 'Poppins';
 }
+
+h1 {
+    font-size: 5em;
+    text-align: center;
+    text-transform: none;
+    font-weight: 650;
+}
+h4 {
+    font-size: 2em;
+    text-align: center;
+    text-transform: none;
+}
+h6 {
+    font-size: 1em;
+    text-align: center;
+    text-transform: none;
+}
 header > div {
-    padding: 0 25px;
+    padding: 0px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid lightgray;
+  }
+  #header {
+      display: flex;
+      justify-content: space-between;
   }
   
   nav {
@@ -27,8 +53,65 @@ header > div {
     color: black;
   }
   
-  .blackHeart {
-    width: 20px;
+.blackHeart {
+    width: 30px;
     margin-right: 1rem;
   }
-  
+.logo {
+    width: 50px;
+    margin-top: 13px;
+    margin-bottom: 10px;
+}
+.search {
+    height: 20px;
+}
+#header {
+
+    border: 0px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.searchbar {
+    width: 850px;
+    justify-content:stretch;
+    background-color: rgba(0,0,0,0.5);
+    padding: 10px;
+    color: black;
+}
+#search-input {
+    width: 700px;
+    height: 50px;
+    background-color: gray;
+    padding: 0px;
+    border: none;
+    color: black;
+}
+
+#button {
+    background-color: #fb3e44;
+    color: white;
+    padding: 15px 30px;
+    border: 0px;
+    justify-content: flex-end;
+}
+#join {
+    border: 2px solid slategray;
+    padding: 5px 15px;
+}
+#join, #login {
+
+    text-decoration: none;
+    color: black;
+}
+#first {
+    background-color: bisque;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
+#heading {
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+}
