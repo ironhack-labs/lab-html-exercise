@@ -79,10 +79,12 @@ nav a {
   color: black;
 }
 .headSection {
+  height: 600px;
   display: flex;
   flex-direction: column;
-  text-align: center;
-  margin-bottom: 8em;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(232, 217, 217, 0.3);
 }
 
 h1 {
@@ -95,10 +97,46 @@ h1 {
   display: flex;
   line-height: 1.5;
   margin: 0 auto;
+  text-align: center;
 }
 
 .plan {
-  border: solid red 1px;
-  margin-top: 3em;
-  padding: 1em 2em;
+  background-color: #fb3b49;
+  box-shadow: 8px 8px 0 rgba(251, 59, 73, 0.2);
+  padding: 1em 4em;
+}
+
+.join {
+  padding: 1em 4em;
+}
+
+.subHeadSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4em;
+  margin-bottom: 4em;
+}
+
+.triangleHex {
+  width: 150px;
+  margin-bottom: 2em;
+}
+
+h3 {
+  font-style: italic;
+  background-color: rgba(255, 204, 53, 0.4);
+  transform: skew(9deg, 0deg);
+  padding: 0 1em;
+}
+
+.subHeadSection article {
+  text-align: center;
+  font-size: 0.6em;
+  width: 400px;
+}
+
+.advantageSection img {
+  width: 20px;
 }
