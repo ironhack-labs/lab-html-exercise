@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins");
 
+* {
+  box-sizing: border-box;
+}
 body {
   font-family: "Poppins";
 }
@@ -101,6 +104,7 @@ h1 {
 }
 
 .plan {
+  color: white;
   background-color: #fb3b49;
   box-shadow: 8px 8px 0 rgba(251, 59, 73, 0.2);
   padding: 1em 4em;
@@ -136,7 +140,49 @@ h3 {
   font-size: 0.6em;
   width: 400px;
 }
+.advantageSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  margin-top: 2em;
+  margin-bottom: 6em;
+}
+
+.boxes {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  padding: 0 6em;
+}
+
+.box {
+  text-align: start;
+  padding-right: 2em;
+}
 
 .advantageSection img {
   width: 20px;
+}
+
+.advantageSection h4 {
+  margin-top: 0;
+  color: #ed1c24;
+}
+
+.advantageSection article {
+  font-size: 0.85em;
+  width: 200px;
+}
+
+.advantageSection a {
+  box-shadow: 8px 8px 0 rgba(128, 83, 35, 0.2);
+  text-align: center;
+  color: white;
+  background-color: black;
+  width: 300px;
+  margin-top: 4em;
+  padding: 0.5em 5em;
 }
