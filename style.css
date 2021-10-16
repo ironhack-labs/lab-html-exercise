@@ -10,10 +10,10 @@ body {
 }
 
 h1 {
-    font-size: 5em;
+    font-size: 3em;
     text-align: center;
     text-transform: none;
-    font-weight: 650;
+    
 }
 h4 {
     font-size: 2em;
@@ -66,13 +66,17 @@ header > div {
     height: 20px;
 }
 #header {
+    display: flex;
+    justify-content: space-evenly;
 
     border: 0px;
     margin-top: 5px;
     margin-bottom: 5px;
 }
 .searchbar {
-    width: 850px;
+    display: flex;
+    justify-content: stretch;
+    
     justify-content:stretch;
     background-color: rgba(0,0,0,0.5);
     padding: 10px;
@@ -93,6 +97,7 @@ header > div {
     padding: 15px 30px;
     border: 0px;
     justify-content: flex-end;
+    text-decoration: none;
 }
 #join {
     border: 2px solid slategray;
@@ -104,14 +109,123 @@ header > div {
     color: black;
 }
 #first {
-    background-color: bisque;
+    background-color: rgb(248, 230, 212);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+#second {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#secsect {
+    background-color: rgba(255,204,53,4);
+    transform: skew(9deg,0deg);
+    font-style: italic;
+    margin: 1px;
+}
+article {
+    height: fit-content;
+    width: 500px;
+    margin-top: 1em;
+    margin-bottom: 2em;
+    display: flex;
+    justify-content: center;
     text-align: center;
-    margin: 0px;
-    padding: 0px;
 }
-#heading {
-    padding: 0px;
-    margin: 0px;
-    height: 100%;
-    width: 100%;
+#buttons {
+    height: 70px;
+    width: 700px;
+    margin-top: 1em;
+    margin-bottom: 5em;
+    display: flex;
+    justify-content: center;
+    
 }
+.joinfree {
+    text-align: center;
+    padding: 15px 30px;
+    border: 0px;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+}
+.triangles {
+    width: 10rem;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.heading {
+    margin-top: 1em;
+    margin-bottom: 0rem;
+}
+p {
+    font-size: 15px;
+}
+#descr {
+    width: 40rem;
+}
+#third {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*big div for 4 blocks*/
+.last {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+}
+/*little images 3d section*/
+.ltl {
+    width: 30px;
+    margin-right: 1rem;
+}
+/*headers of 3d section*/
+#hdn {
+    text-align: left;
+    color: #ED1C24;
+    margin: 0px;
+
+}
+/*paragrafen*/
+#small {
+    margin: 1px 3px 2px 2px;
+    padding: 7px;
+    font-size: 15px;
+}
+/*last button*/
+
+button {
+    background-color: black;
+    color: white;
+    border: 0;
+}
+
+#lastbtn {
+    height: 30px;
+    width: 300px;
+    margin-top: 3em;
+    margin-bottom: 5em;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    box-shadow: 8px 8px 0 rgba(128,83,35,0.2);
+    
+}
+#lastbtn a {
+    color: white;
+    text-decoration: none;
+
+}
+/*#about {
+    width: 10em;
+    height: 5em;
+}
+*/
