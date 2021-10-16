@@ -9,7 +9,8 @@
 
     <div> 
         <div>
-            <img src= "images/black-heart.png" alt="Black Heart">
+            <img src= "images/black-heart.png" alt="Black Heart" width="20"
+                     height="20">
              <span>Nifty Penguin Magic</span>
     </div> 
     <nav>
@@ -25,15 +26,21 @@
 </div> 
 
     <div> 
-<img src= "images/npm-logo.png" alt="NPM">
-<img src= "images/magnifying-glass.png" alt="search">
-     <input type= "text" placeholder="Search packages"><button>Search</button> <a href="#">
+<img src= "images/npm-logo.png" alt="NPM" width="80"
+         height="200">
+<!--<label><img src= "images/magnifying-glass.png" alt="search" width="30"
+         height="30"></label>-->
+<form class="example" action="/action_page.php">
+    <input type="text" placeholder="Search packages" name="search">
+    <button type="submit">Search<i class="search"></i></button>
+  </form>
+    <!--     <input type= "text" placeholder="Search packages" class="search"><button>Search</button> <a href="#">-->
          <div>Join Log In</div></a>
     </div> 
         </header>
         <!--section-->
 <section id="build">
-      <h1>Build amazing things</h1>
+      <h1 id="amazing">Build amazing things</h1>
       <article>
           <p> Essential JavaScript development tools that help you go to market faster and build powerful applications using
 modern open source code. </p>
