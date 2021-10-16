@@ -11,6 +11,9 @@ header > div {
   align-items: center;
   border-bottom: 1px solid lightgray;
 }
+a {
+  text-decoration: none;
+}
 
 nav {
   width: 600px;
@@ -20,6 +23,7 @@ nav ul {
   list-style: none;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 nav a {
@@ -30,4 +34,47 @@ nav a {
 .blackHeart {
   width: 20px;
   margin-right: 1rem;
+}
+
+.logo {
+  width: 40px;
+  margin-right: 1rem;
+  text-align: center;
+}
+
+.searchForm {
+  font-family: "Poppins";
+}
+.loupe {
+  width: 20px;
+  color: rgba(0, 0, 0, 0.05);
+  background-color: rgba(0, 0, 0, 0.03);
+}
+
+#search {
+  color: rgba(0, 0, 0, 0.05);
+  background: rgba(0, 0, 0, 0.03);
+  border: none;
+  width: 40em;
+  height: 2em;
+  font-family: "Poppins";
+  padding-left: 0.8em;
+  margin-left: 0;
+}
+
+.searchForm button {
+  background-color: #fb3e44;
+  color: white;
+  border: none;
+  font-family: "Poppins";
+  height: 2.5em;
+  width: 5em;
+}
+
+.searchForm button:hover {
+  cursor: pointer;
+}
+
+.headerButtons {
+  color: black;
 }
