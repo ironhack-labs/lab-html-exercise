@@ -41,7 +41,7 @@ nav a {
 
 .logo {
   width: 40px;
-  margin-right: 1rem;
+  margin-right: 0;
   text-align: center;
 }
 
@@ -62,7 +62,6 @@ nav a {
   height: 2em;
   font-family: "Poppins";
   padding-left: 0.8em;
-  margin-left: 0;
 }
 
 .searchForm button {
@@ -80,17 +79,27 @@ nav a {
 
 .headerButtons {
   color: black;
+  font-size: 0.8em;
+}
+
+.joinHeaderButton {
+  border: rgba(0, 0, 0, 0.3) solid 1px;
+  border-radius: 2px;
+  padding: 0.2em 1em;
+  margin-right: 0.6em;
 }
 .headSection {
   height: 600px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+
   align-items: center;
+  justify-content: center;
   background-color: rgba(232, 217, 217, 0.3);
 }
 
 h1 {
+  margin-top: 0;
   color: black;
   font-size: 4em;
 }
@@ -99,11 +108,13 @@ h1 {
   width: 25em;
   display: flex;
   line-height: 1.5;
-  margin: 0 auto;
+  margin-bottom: 4em;
+
   text-align: center;
 }
 
 .plan {
+  margin-top: 6em;
   color: white;
   background-color: #fb3b49;
   box-shadow: 8px 8px 0 rgba(251, 59, 73, 0.2);
