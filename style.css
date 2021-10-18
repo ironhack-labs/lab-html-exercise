@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body {
+  font-family: 'Poppins';
+}
+
+/*header styles*/
+
+header > div {
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+  }
+  
+  nav {
+    width: 600px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .blackHeart {
+    width: 20px;
+    margin-right: 1rem;
+  }
+
+  .logo {
+    height:25px;
+  }
+
+  .magGlass {
+      height:25px;
+      
+  }
+
+#searchBar {
+      width:80%;
+      height:40px;
+      background-color:rgba(0,0,0,.05);
+      margin: 2px 10px 2px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding-left:5px;
+             }
+
+  #searchInput {
+      display:flex;
+      background-color:transparent;
+      border:none;
+      width:85%;
+}
+
+#searchInput:focus {
+    outline:none;
+}
+
+  #searchButton {
+      display:flex;
+      background-color:#fb3e44;
+      color:white;
+      margin:0;
+      padding:5px 20px;
+      height:100%;
+      border: none;
+  }
+
+  #searchLabel {
+      display:flex;
+      width: 10px;
+  }
+
+  .joinBtn, .logInBtn {
+      text-decoration:none;
+      color: gray;
+      padding:3px 15px;
+  }
+  
+  .joinBtn {
+      border:1px gray solid;
+  }
+
+  /*section 1 = Intro styles */
+
+  #intro {
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      flex-direction:column;
+      height:600px;
+      background-color:rgba(232,217,217,.3)
+  }
+
+  #intro img {
+      height:150px;
+  }
+  #intro h1 {
+    font-size:3em;
+    margin-bottom:0;
+  }
+
+  #intro p {
+      width:30%;
+      text-align:center;
+      margin-bottom:40px;
+  }
+  .plansBtn {
+      background-color: #FB3B49;
+      box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+      text-decoration:none;
+      font-weight: bold;
+      color:white;
+      padding:10px 30px;
+      margin-right:40px;
+  }
+
+  .introJoinBtn {
+      text-decoration:none;
+      font-weight: bold;
+      color:black;
+  }
+
+  /* section 2 = description styles */
+
+  #description {
+    display:flex;
+    height:600px;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+    
+}
+
+#description h2 {
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+    font-style: italic;
+    padding:2px 30px;
+}
+
+#description p {
+    width:50%;
+    text-align:center;
+      
+}
+
+/* section 3 = features styles */
+
+/*#features {
+    display:flex;
+    
+}*/
+
+#featureBoxes {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin:0 8%;
+    }
+
+#featureBoxes div {
+    display:flex;
+    flex-direction:column;
+    padding:5px 30px;
+}
+
+#featureBoxes div img {
+    height:15px;
+    align-self:flex-start;
+}
+
+#features h3 {
+    color: #ED1C24
+}
+
+#featuresCtaBtn {
+    display:flex;
+    justify-content:center;
+    margin:5% 0 10% 0;
+}
+
+.createOrgBtn {
+    color:white;
+    background-color:black;
+    box-shadow:8px 8px 0 rgba(128,83,35,.2);
+    padding:10px 100px;
+    }
