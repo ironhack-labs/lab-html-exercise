@@ -48,7 +48,7 @@ header > div {
       width:80%;
       height:40px;
       background-color:rgba(0,0,0,.05);
-      margin: 2px 10px 2px;
+      margin: 5px 10px;
       display:flex;
       justify-content:space-between;
       align-items:center;
@@ -84,7 +84,7 @@ header > div {
   .joinBtn, .logInBtn {
       text-decoration:none;
       color: gray;
-      padding:3px 15px;
+      padding:2px 15px;
   }
   
   .joinBtn {
@@ -102,10 +102,7 @@ header > div {
       background-color:rgba(232,217,217,.3)
   }
 
-  #intro img {
-      height:150px;
-  }
-  #intro h1 {
+   #intro h1 {
     font-size:3em;
     margin-bottom:0;
   }
@@ -142,6 +139,12 @@ header > div {
     
 }
 
+#description img {
+    height:150px;
+    margin-top:0;
+    margin-bottom:50px;
+}
+
 #description h2 {
     background-color: rgba(255,204,53,.4);
     transform: skew(9deg,0deg);
@@ -176,12 +179,14 @@ header > div {
 }
 
 #featureBoxes div img {
-    height:15px;
+    height:25px;
     align-self:flex-start;
 }
 
 #features h3 {
-    color: #ED1C24
+    color: #ED1C24;
+    font-size:1em;
+    font-weight: bold;
 }
 
 #featuresCtaBtn {
@@ -195,4 +200,5 @@ header > div {
     background-color:black;
     box-shadow:8px 8px 0 rgba(128,83,35,.2);
     padding:10px 100px;
+    text-decoration:none;
     }
