@@ -64,7 +64,7 @@ nav {
   }
   .buscadorNav input[type=submit]{
     border: none;
-    flex-basis: 15%;
+    flex-basis: 10%;
     padding: 15px;
     background: #fb3e44;
     color: #fff;
@@ -90,21 +90,72 @@ nav {
    text-decoration: none;
    color:black;
  }
- #section1{
+ #section1,#section2{
    height:600px;
    align-items: center;
    display: flex;
    background: rgba(232,217,217,.3);
-   padding:20px;
-   flex-direction: column;
+   padding:7% 0px 0px 0px;
+  flex-direction: column;
   }
- 
+  #section2{
+    height: auto;
+    background: #fff;
+  }
+
+  #section3{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding:7% 0px 0px 0px;
+  }
+  .benefits{
+    flex-basis: 300px;
+    margin: 10px;
+    padding: 16px;
+  }
+  .benefits>article{
+    font-size:1em;
+  }
+  .imgBenefits{
+    width: 50px;
+  }
+
+  .benefits h3{
+    color:  #ED1C24;
+  }
+  .btnOrg{
+    background: #000;
+    color: #fff;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    padding: 15px 60px;
+    text-decoration: none;
+  }
+  
+#section2>img{
+  margin: 2%;
+  width:350px;
+}
+
+
+ .headerSect2{
+   background:  rgba(255,204,53,.4);
+   transform: skew(9deg,0deg);
+   padding: 0px 25px;
+   font-style: italic;
+ }
   .headerSect1{
     font-size: 5em;
-   margin: 10% 0px 0px 0px;
+   margin: 0px;
   }
   article.text{
     width: 40%;
+    margin: 15px auto;
+    text-align: center;
+    font-size: 1.5em;
+  }
+  article.text2{
+    width: 77%;
     margin: 15px auto;
     text-align: center;
     font-size: 1.5em;
