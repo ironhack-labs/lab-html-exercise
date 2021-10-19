@@ -49,10 +49,13 @@ nav {
   .buscadorNav{
     background: #f2eded;
     width: 80%;
+    display: flex;
+    justify-content: flex-start !important;
+    padding: 0px !important;
   }
-  .buscadorNav input[type=search]{
+  .buscadorNav input[type=text]{
     border: none;
-    flex-basis: 80%;
+    flex-basis: 85%;
     padding: 10px;
     margin: auto 15px;
     background:transparent;
@@ -61,14 +64,14 @@ nav {
   }
   .buscadorNav input[type=submit]{
     border: none;
-    flex-basis: 10%;
-    padding: 10px;
-    background: #cc1b1b;
+    flex-basis: 15%;
+    padding: 15px;
+    background: #fb3e44;
     color: #fff;
     font-size: 1em;
   }
   .btn-join{
-    padding: .5em;
+    padding: 10px 15px;
     border: 1px solid #dcd8d8;
     background: #fff;
     font-size: 1em;
@@ -80,7 +83,46 @@ nav {
  .searcher img{
    width: 50px;
  }
+ .searcher img[alt=npmLogo]{
+  width: 100px;
+}
  .searcher a{
    text-decoration: none;
    color:black;
  }
+ #section1{
+   height:600px;
+   align-items: center;
+   display: flex;
+   background: rgba(232,217,217,.3);
+   padding:20px;
+   flex-direction: column;
+  }
+ 
+  .headerSect1{
+    font-size: 5em;
+   margin: 10% 0px 0px 0px;
+  }
+  article.text{
+    width: 40%;
+    margin: 15px auto;
+    text-align: center;
+    font-size: 1.5em;
+  }
+  .plans{
+    background: #FB3B49;
+    color:#fff;
+    font-size: 1.3em;
+    margin: 5px;
+    padding: 20px 60px;
+    text-decoration: none;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+  }
+  .freeJoin{
+    margin: 5px;
+    background: #fff;
+    color:#000;
+    font-size: 1.3em;
+    padding: 20px 60px;
+    text-decoration: none;
+  }
