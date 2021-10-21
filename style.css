@@ -33,67 +33,165 @@ header > div {
     margin-right: 1rem;
   }
 
+  .div-form{
+      height: 42px;
+  }
+
   .npm {
-      width: 40px;
+      width: 60px;
   }
 
   .magnifying {
     width: 15px;
+    margin-left: 0px;
+    background-color: rgba(0,0,0,.05);
+    padding: 10px 12px;
+  }
+
+  .boton-div-heading {
+      border: none;
+      outline: none;
+      background-color: #fb3e44;
+      padding: 10px 12px;
+      color: white;
+      margin-right: 0px;
+
+  }
+
+  .input-form{
+    border: none;
+    outline: none;
+    background-color: rgba(0,0,0,.05) ;
+    padding: 10px 12px;
+    width: 1315px;
+  }
+
+  .join-btn{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    border: 1px solid black;
+    padding: 1px 15px
+}
+
+  .login-btn {
+    text-decoration: none;
+    color: black;
   }
 
   #section1 {
       display: flex;
-      justify-content: center;
+      justify-content: space-evenly;
       align-items: center;
       flex-direction: column;
       height: 600px;
       background-color: rgba(232,217,217,.3);
-      box-shadow: 0 -2px 0 0  grey;
-  }
+      border-top: 5px solid #EEE;
+      }
+  /*En la separacion del header con la primera seccion hay una línea
+  que no llega al final de la página pero no me cuadra que sea así porque
+  teoricamente se nos ha dado la primera parte hecha y no cuadra la
+  alineacion, por eso no lo he creado.
+  No encuentro cómo hacer la negrita más gorda, con el 900 no me devuelve
+  cambio apenas.
+  */
 
 
   .heading-section1 {
       font-size: 70px;
-      font-weight: 1200;
+      font-weight: 900;
       text-align: center;
   }
 
   .paragraph-section1 {
       text-align: center;
+      margin:50px 640px;
+
       
   }
 
+  .see-plans {
+    border: none;
+    outline: none;
+    background-color: #FB3B49;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+    font-weight: bold;
+    margin-right: 35px;
+    color: white;
+    text-decoration: none;
+    padding: 10px 50px;
+
+}
+
+
+.join-for-free {
+    border: none;
+    outline: none;
+    background-color: white;
+    font-weight: bold;
+    margin-right: 15px;
+    color: black;
+    text-decoration: none;
+    padding: 10px 50px;
+
+
+}
+
+
+
   #section2 {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     flex-direction: column; 
     height: 600px;
   }
 
-  .sec2img {
-    width: 200px;
+  .section2-img {
+    width: 230px;
 }
+
+.section2-h3 {
+    text-align: center;
+    font-size: 25px;
+    background-color: rgba(255,204,53,.4) ;
+    transform: skew(9deg,0deg);
+    font-style: italic;
+    margin: 0 570px;
+    font-weight: 900;
+  }
+
+  /*aqui las letras quedan algo por debajo del fondo pero no se como se hacen*/
+
+
+  .section2-par {
+      text-align: center;
+      margin: 40px 500px;
+  }
 
   #section3 {
       display: flex;
-      justify-content: space-around;
-      height: 600px;
+      justify-content: center;
+      height: 300px;
+      margin: 0 150px 0 150px;
   }
 
   #section3 > div {
     display: flex;
     flex-direction: column;
-    margin-left: 30px;
+    margin-right: 100px;
+
   }
 
   #section3 > div > h4 {
     font-size: 14px;
     color: #ED1C24;
+    font-weight:90 bold;
   }
 
   #section3 > div > p {
     font-size: 12px;
+    
   }
 
   /*section3 > div > img {
@@ -102,23 +200,30 @@ header > div {
   }*/
 
 
-  .sec3img {
-      width: 30px
+  .section3-imgs {
+      width: 35px
   }
   .sec3button {
-      display: flex;
-      align-items: center;
       color:white;
       background-color: black;
       box-shadow: rgba(128, 83, 35, .2) 8px 8px 0;
-      padding: 7.5px 40px;
-      text-decoration: none;
+      border: none;
+      outline: none;
+      height: 40px;
+      width: 270px;
+      text-align: center;
+    
 
   }
   .sec3anchor {
       color: white;
       text-decoration: none;
-      align-items: center;
+      font-weight: bold;
+      }
+
+  .bottom {
+      height: 100px;
       display: flex;
-      align-items: center;
+      justify-content: center;
   }
+
