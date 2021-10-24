@@ -23,19 +23,17 @@
                     </ul>
                 </nav>
             </div>
-            <div>
-                <form action="">
-                    <div>
-                        <img class="magnifying-glass" src="./images/magnifying-glass.png" alt="magnifying glass">
-                        <label for="site-search"></label>
-                        <input type="search" id="site-search" placeholder="Search packages">
-                        <button>
-                            Search
-                        </button>
-                        <a href="#">Join</a>
-                        <a href="#">Log In</a>
+            <div id="search-bar">
+                <img class="npm-logo" src="./images/npm-logo.png" alt="npm logo">
+                <div class="form" id="form">
+                    <img class="magnifying-glass" src="./images/magnifying-glass.png" alt="magnifying glass">
+                    <div class="search-nav" id="search-nav">
+                        <input type="search" id="site-search" placeholder="Search packages" class="site-search">
+                        <input type="button" value="Search" class="search-button">
                     </div>
-                </form>
+                </div>
+                <a href="#" class="join-btn">Join</a>
+                <a href="#" class="log-btn">Log In</a>
             </div>
         </header>
         <section id="build-amazing">
@@ -43,12 +41,14 @@
                 Build amazing things
             </h1>
             <article>
-                <p>Essential JavaScript development tools that help you go to market faster and build powerful applications using modern open source code.</p>
+                <p>Essential JavaScript development tools that help<br>
+                    you go to market faster and build powerful<br>
+                    applications using modern open source code.</p>
             </article>
             <div>
-                <div>
-                    <a href="#">See plans</a>
-                    <a href="#">Join for free</a>
+                <div class="plan-buttons">
+                    <a href="#" class="plans-btn">See plans</a>
+                    <a href="#" class="free-btn">Join for free</a>
                 </div>
             </div>
         </section>
@@ -58,7 +58,9 @@
                 Bring the best of open source to your company
             </h2>
             <article>
-                <p>npm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it. Create an Org and get more out of the tools your team already knows and loves.</p>
+                <p>npm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers<br>
+                    already use it. Your company depends on it. Create an Org and get more out of the tools your<br>
+                    team already knows and loves.</p>
             </article>
         </section>
         <section id="org-create">
