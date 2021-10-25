@@ -5,6 +5,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/style.css">
 	<title>NPM Clone</title>
 </head>
 
@@ -12,8 +13,8 @@
 	<header>
 		<div>
 			<div>
-				<img src="/images/black-heart.png" alt="blackheart" class="blackheart">
-				<span>New Powwerful Machine</span>
+				<img src="/images/black-heart.png" alt="blackheart" class="blackHeart">
+				<span>New Powerful Machine</span>
 			</div>
 			<nav>
 				<ul>
@@ -27,15 +28,15 @@
 			</nav>
 		</div>
 		<div>
-			<img src="/images/npm-logo.png" alt="npm logo">
-			<img src="/images/magnifying-glass.png" alt="search logo">
+			<img src="/images/npm-logo.png" alt="npm logo" class="npm">
 			<form action="{{ url(" search/results") }}">
+				<img src="/images/magnifying-glass.png" alt="search logo" class="magglass">
 				<input type="search" name="q" placeholder="Search packages">
 				<button type="submit" value="Search">Search</button>
 			</form>
 			<div>
-				<button><a href="#">Join</a></button>
-				<button><a href="#">Log in</a></button>
+				<button class="btn-join"><a href="#">Join</a></button>
+				<button class="btn-login"><a href="#">Log in</a></button>
 			</div>
 		</div>
 	</header>
@@ -46,11 +47,12 @@
 				modern open source code.</p>
 		</article>
 		<div>
-			<button><a href="#">See plans</a></button>
-			<button><a href="#">Join for free</a></button>
+			<button><a href="#" class="plans-btn">See plans</a></button>
+			<button><a href="#" class="join-btn">Join for free</a></button>
 		</div>
 	</section>
 	<section id="company">
+		<img src="/images/triangle-hexagon.svg" alt="hexagon logo" class="triangle">
 		<h2>Bring the best of open source to your company</h2>
 		<article>
 			<p>npm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers already use it.
@@ -83,8 +85,10 @@
 			<p>Enjoy the security
 				auditing features built into the npm client, a zero-friction way to make open source software safer.</p>
 		</div>
-		<button><a href="#">Create an Org</a></button>
 	</section>
+	<div class="btn-create">
+		<button class="create-btn"><a href="#">Create an Org</a></button>
+	</div>
 </body>
 
 </html>
