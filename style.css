@@ -1,0 +1,287 @@
+/*@import url('https://fonts.googleapis.com/css?family=Poppins');*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap');
+
+body {
+    font-family: 'Poppins';
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Poppins";
+}
+
+h1 {
+    font-size: 5em;
+    font-weight:800;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.5em;
+    text-align: center;
+    font-weight:600;
+}
+
+h3 {
+    color: #ED1C24;
+    font-weight: 600;
+}
+
+span {
+    font-weight: 600;
+}
+
+header > div {
+    /*background-color: lightsalmon;*/
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+}
+
+nav {
+    width: 600px;
+}
+
+nav ul {
+    /*background-color: lightseagreen;*/
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+.blackHeart {
+    width: 20px;
+    margin-right: 1rem;
+}
+
+#search-section {
+    /*background-color: lightblue;*/
+    padding: 0 10px;
+    margin: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+}
+  
+#search-section > article {
+    margin: 0 auto;
+} 
+  
+.logo-container {
+    /*background-color: pink;*/ 
+    width: 5%;  
+}
+
+.search-container {
+    /*background-color: yellow;*/   
+    width: 75%;
+    padding: 10px 0 10px 10px;
+}
+
+.buttons-container {
+    /*background-color: lightgreen;*/ 
+    width: 17%;      
+} 
+
+.logo-container > div {
+    display: flex;
+}
+
+.logo-container img {
+    width: 100%;
+}
+
+.search-bar {
+    display: flex;
+}
+  
+/*
+.search-bar img {
+    width: 20px;
+}
+*/
+  
+.search-bar input {
+    background-color: rgba(0,0,0,.05);
+    width: 90%;
+    font-family: "Poppins";
+    padding: 10px 10px;
+    text-indent: 30px;
+    border-style: hidden;
+    background-image: url('./images/magnifying-glass.png ');
+    background-origin: content-box;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: 20px;
+}
+  
+.search-bar button {
+    background-color: #fb3e44;
+    font-family: "Poppins";
+    color: white;
+    padding: 10px 30px; 
+    border-style: hidden;
+}
+
+.joinLogin-btn > div {
+    display: flex;
+    justify-content: space-evenly; 
+}
+  
+.button {
+    background-color: white;
+    border: 1px solid black;
+    padding: 8px 30px;
+    font-family: "Poppins";
+    color: black;
+    text-align: center;
+    text-decoration: none;
+}
+  
+.joinLogin-btn a:last-child {
+    border: none;
+}
+
+.pink-background {
+    background-color: rgba(232,217,217,.3);
+}
+
+.container {				
+    /*background-color: lightsalmon;*/
+    /*height:600px This suggested height messes everything up!*/
+    box-sizing: border-box;
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 80px 0; 
+}
+
+#overview .text {
+    font-size: 1.4em;
+    text-align: center;
+}
+
+#overview p {
+    width: 45%;
+    margin: 0px auto;
+}
+
+.plans-btn {
+    background-color: #FB3B49;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+    color: white;
+    text-decoration: none;
+    font-size: 1.4em;
+    font-weight:600;
+    padding: 10px 80px;
+    margin: 15px 20px;
+}
+
+.join-btn {
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    font-size: 1.4em;
+    font-weight:600;
+    padding: 10px 80px;
+    margin: 15px 20px;
+}
+
+.plansJoin-btn {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+.plansJoin-btn > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#overview {				
+    display: flex;
+}
+
+#overview .container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#commercial img {
+    width: 300px;
+    margin-bottom: 30px;
+}
+
+#commercial h2 {
+    width: 75%;
+    text-align: center;
+    margin: 40px auto;
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+    font-style: italic;
+}
+
+#commercial p {
+    width: 50%;
+    text-align: center;
+    line-height: 1.8em;
+    margin: 0px auto;
+}
+
+#commercial > div {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.box {
+    /*background-color: lightpink;*/
+    /*border: 2px solid #EEE;*/
+    box-sizing: border-box;
+    margin: 0px auto 60px;
+    padding: 20px 20px 0;
+    /*width: 25%;*/
+    width: 300px; /* I like this better, because you can also use wrap */
+    text-align: left;
+    line-height: 1.8em;
+}
+  
+.box img {
+    width: 40px;
+}
+  
+#synopsis > div {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+  
+/* NOT SURE ABOUT THIS ONE. SHOULD I ALSO MAKE IT RESPONSIVE? */
+
+.createOrg-btn {
+    background-color: black;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    color: white;
+    text-decoration: none;
+    font-size: 1.4em;
+    font-weight:600;
+    padding: 20px 150px;
+    margin: 15px 20px;
+}
