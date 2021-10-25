@@ -9,10 +9,9 @@
     
     <!-- SECTION 1: header & nav -->
     
-    <header>
+    <header class="headerSection">
       <div> 
         <div> 
-          <!-- how I link the black heart image from my machine?-->
           <img class="blackHeart" src="images/black-heart.png" alt="black heart" /> <span>Nifty Penguin Magic</span>
         </div>
         <nav> 
@@ -25,14 +24,14 @@
             <li><a href="#">Support</a></li>
           </ul>
         </nav>
-        <div>
-          <img class="logo" src="images/npm-logo.png" alt="logo npm" />
-</div>
-<div>
-          <form class="search-bar" action="search" method="post">
-            <label><!-- icono lupa --> </label>
+       
+
+<div class="searchingSection">
+  <img class="logo" src="images/npm-logo.png" alt="logo npm" />
+          <form class="searchBar" src="images/magnifying-glass.png" action="search" method="post">
+            <label><!-- icono lupa aquí? --> </label>
             <input type="text" placeholder="Search packages">
-            <button type="submit">Search</button>
+            <button class="searchButton" type="submit">Search</button>
             <a href="#join">Join</a>
             <a href="#login">Log In</a>
           </form>
@@ -48,13 +47,13 @@
         Essential JavaScript development tools that help you go to market faster and build powerful applications using modern oper source code.
       </article>
       <div>
-        <a href="#seePlans">See plans</a>
-        <a href="#joinForFree">Join for free</a>
+        <a class="plansButton" href="#seePlans">See plans</a>
+        <a class="joinButton" href="#joinForFree">Join for free</a>
       </div>
     </section>
     
     <section id="claim">
-      <img class="triangleHexagon" src"" alt="triangle hexagon" />
+      <img class="triangleHexagon" src="images/triangle-hexagon.svg" alt="triangle hexagon" />
       <h2>Bring the best of open source to your company</h2>
       <article>
         npm is the tool used by over 11.000.000 JavaScript developers around the world. Your developers already use it. Your company depends on it. Create an Org and get more out of the tools your team already knows and loves.
@@ -63,31 +62,31 @@
     
     <section id="features">
       <div>
-        <img src="" alt="arrow icon" />
+        <img class="zeroConfiguration" src="images/zero-configuration.svg" alt="arrow icon" />
         <h3> Zero configuration</h3>
         <p>Create and org, add your team and start collaborating. Nothing to configure, set up or manage</p>
       </div>
       <div>
-        <img src="" alt="team icon" />
+        <img class="teamManagement" src="images/team-management.svg" alt="team management icon" />
         <h3>Team management</h3>
         <p>Control who has access to what modules within your team namespace using straightforward team management capabilities</p>
       </div>
       <div>
-        <img ="" alt="balance icon" />
+        <img class="familiarFeatures" src="images/familiar-features.svg" alt="familiar features icon" />
         <h3>Familiar features</h3>
         <p>npm Orgs has 100% parity with all the public npm registry features your developers already use</p>
       </div>
       <div>
-        <img src="" alt="binoculars icon" />
+        <img class="npmAudit" src="images/npm-audit.svg" src="" alt="npm audit logo" />
         <h3>npm audit</h3>
         <p>Enjoy the security auditing feautures built into the npm client, a zero-friction way to make open source software safer.</p>
       </div>
-      <div>
-        <a href="#org">Create an org</a>
-      </div>
+     
       
     </section>
-    
+    <div>
+      <a class="createButton" href="#org">Create an org</a>
+    </div>
     
   </body>
    
