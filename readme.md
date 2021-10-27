@@ -141,10 +141,10 @@ Refresh the page in Chrome, and if your _style.css_ is linked properly, the page
 Before we move forward, add at the very top of your _style.css_ file the following lines:
 
 ```css
-@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url("https://fonts.googleapis.com/css?family=Poppins");
 
 body {
-  font-family: 'Poppins';
+  font-family: "Poppins";
 }
 ```
 
