@@ -12,7 +12,7 @@
 <body>
     
     <header>
-        <div class="nav-bar">
+        <div>
             <div>
                 <img class="blackHeart" src="images/black-heart.png" alt="black heart">
                 <span>Nifty Penguin Magic</span>
@@ -28,18 +28,20 @@
                 </ul>
             </nav>
         </div>
-        <div class="searchBar">
-            <!-- add logo, search bar and buttons (or links and style them as buttons later) -->
+<!-- NPM Logo, Search bar, Search button, Join & Log in buttons -->
+        <div class="search-bar">
             <img class="npm-logo" src="images/npm-logo.png" alt="npm logo">
             <form action="index.html" method="post">
                 <label for="search">
                     <img class="magnifying-glass" src="images/magnifying-glass.png" alt="magnifying glass">
                 </label>
-                <input type="text" name="search" value="" placeholder="Search packages">
-                <button type="submit">Search</button>
+                <input type="text" name="search" value="Search" placeholder="Search packages">
+                <button class="search-button" type="submit">Search</button>
             </form>
-            <a href="#" class="button-outline">Join</a>
-            <a href="#" class="button-sleek">Log in</a>
+            <div class="nav-bar-link-buttons">
+                <a href="#" class="join-button">Join</a>
+                <a href="#" class="login-button">Log in</a>
+            </div>
         </div>
     </header>
 
@@ -50,8 +52,8 @@
         <p>Essential JavaScript development tools that help you go to market faster and build powerful applications using modern open source code.</p>
     </article>
     <div class="section-1-buttons">
-        <a href="#" class="button-red">See Plans</a>
-        <a href="#" class="button-white">Join for free</a>
+        <a href="#" class="see-plans-button">See Plans</a>
+        <a href="#" class="join-for-free-button">Join for free</a>
     </div>
 </section>
 
