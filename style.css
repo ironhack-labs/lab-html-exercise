@@ -38,20 +38,19 @@ nav a {
     margin-right: 1rem;
 }
 
-.search-bar {
-    padding: 5px 25px;
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 1536px;
-    padding-left: 32px;
-    padding-right: 32px;
-}
-
 .magnifying-glass {
     width: 25px;
     position: absolute;
-    top: 88px;
-    left: 160px;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-left: 32px;
+    padding-right: 32px;
 }
 
 .search-button {
@@ -62,6 +61,16 @@ nav a {
     border: none;
     margin: .5em 0 .5em -5px;
     padding: .5em 1em;
+}
+
+form {
+    width: 100%;
+}
+
+form .form-container {
+    display: flex;
+    height: 40px;
+    margin: 10px;
 }
 
 form > label {
@@ -79,7 +88,7 @@ form > input {
 }
 
 .nav-bar-link-buttons {
-    width: auto;
+    min-width: 180px;
 }
 
 .join-button {
@@ -161,11 +170,12 @@ form > input {
 
 .section-2 img {
     height: 20em;
+    width: 20em;
     padding: 2em;
     margin: 3em;
 }
 
-.section-2 > h2 {
+.section-2 h2 {
     background-color: rgba(255, 204, 53, .4);
     transform: skew(9deg,0deg);
     display: flex;
@@ -179,7 +189,7 @@ form > input {
     margin: 1px;
 }
 
-.section-2 > article {
+.section-2 article {
     display: flex;
     justify-content: center;
     text-align: center;
@@ -191,6 +201,49 @@ form > input {
 
 
 /* --- Section 3 --- */
-.section-3 {}
 
-.button-org {}
+#section-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#section-3 div {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-around;
+}
+
+#section-3 img {
+    width: 2em;
+}
+
+#section-3 article {
+    padding: 10px;
+    margin: 10px;
+}
+
+#section-3 h4 {
+    color: #ed1c24;
+}
+
+#section-3 p {
+    font-size: 15px;
+    width: 230px;
+}
+
+.button-org {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 600;
+    background-color: black;
+    box-shadow: 8px 8px 0 rgba(128, 83, 35, .2);
+    color: white;
+    width: 20em;
+    padding: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
