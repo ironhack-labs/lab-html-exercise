@@ -41,36 +41,15 @@ nav a {
 .magnifying-glass {
     width: 25px;
     position: absolute;
-}
-
-.search-bar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 100%;
-    padding-left: 32px;
-    padding-right: 32px;
-}
-
-.search-button {
-    background: #fb3e44;
-    color: white;
-    font-family: 'Poppins';
-    font-size: 1em;
-    border: none;
-    margin: .5em 0 .5em -5px;
-    padding: .5em 1em;
+    top: 82px;
+    left: 140px;
 }
 
 form {
-    width: 100%;
-}
-
-form .form-container {
     display: flex;
-    height: 40px;
-    margin: 10px;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
 }
 
 form > label {
@@ -78,13 +57,30 @@ form > label {
 }
 
 form > input {
+    display: flex;
     background: rgba(0, 0, 0, .05);
     border: none;
-    width: 1030px;
+    width: 100%;
+    min-width: 230px;
     font-family: 'Poppins';
     font-size: 1em;
-    margin: .5em 0 .5em 0;
     padding: .5em 3em .5em 5em;
+    margin: .5em 0 .5em 0;
+}
+
+form > button {
+    display: flex;
+    align-items: center;
+    justify-content: center;;
+    background: #fb3e44;
+    border: none;
+    color: white;
+    font-family: 'Poppins';
+    font-size: 16px;
+    width: 100px;
+    height: 40px;
+    padding: 10px;
+    margin-right: 20px;
 }
 
 .nav-bar-link-buttons {
@@ -96,7 +92,7 @@ form > input {
     text-decoration: none;
     text-align: center;
     border: 1px solid black;
-    padding: 5px 15px;
+    padding: 5px 16px;
     margin: 10px 10px;
 }
 
@@ -104,7 +100,7 @@ form > input {
     color: black;
     text-decoration: none;
     text-align: center;
-    padding: 10px 0px;
+    padding: 10px;
     margin: 10px 10px;
 }
 
