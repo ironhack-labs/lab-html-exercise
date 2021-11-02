@@ -33,32 +33,73 @@ nav a {
     margin-right: 1rem;
 }
 
-.npm-logo, .magnifying-glass {
-      width: 40px;
+.header-options {
+    display: flex;
+    justify-content: space-between;
+}
+
+.npm-logo {
+    width: 40px;
+}
+
+.magnifying-glass {
+    width: 30px;
 }
 
 .search-form{
-      color:rgba(0,0,0,0.5);
+    color:rgba(0,0,0,0.5);
+    width: 90%;
+}
+
+input[type=search]{
+    width: 90%;
 }
 
 .search-button {
-      background-color: #fb3e44;
-      color: white;
-      border: 2px solid #fb3e44;
+    background-color: #fb3e44;
+    color: white;
+    border: 2px solid #fb3e44;
 }
 
 #amazing-things  {
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      align-items: center;
-      height: 600px;
-      background-color: rgba(232,217,217,.3);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 600px;
+    background-color: rgba(232,217,217,.3);
+}
+
+#amazing-things h1 {
+    font-size: 80px;
+}
+
+#amazing-things article {
+    width: 30%;
+    text-align: center;
+    font-size: 22px;
+    margin: 0 0 25px;
+}
+
+.amazing-things-btn {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
 }
   
-#see-plans{
-      background-color: #fb3b49;
-      box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+#see-plans {
+    background-color: #fb3b49;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+    font-size: 22px;
+    border: none;
+    color: white;
+    padding: 15px 50px;
+}
+
+#join-free {
+    font-size: 22px;
+    border: none;
+    padding: 15px 30px;
 }
 
 #open-source {
@@ -70,33 +111,58 @@ nav a {
 }
 
 #open-source h2{
-      background-color: rgba(255,204,53,.4);
-      transform: skew(9deg,0deg);
-      font-style: italic;
-      margin: 30px;
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+    font-style: italic;
+    margin: 30px;
+    font-size: 40px;
+}
+
+#open-source article {
+    width: 57%;
+    text-align: center;
+    font-size: 22px;
+    margin: 0 0 25px;
 }
 
 .triangle-hexagon {
-      width: 300px;
+    width: 300px;
+    margin: 0 0 25px;
 }
 
 #facilities-and-benefits {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 80%;
+    margin: 0 auto;
 }
 
 #facilities-and-benefits h3{
-      color: #ed1c24;
+    color: #ed1c24;
+}
+
+#facilities-and-benefits p {
+    width: 70%;
 }
 
 .zero-configuration, .team-management, .familiar-features, .npm-audit {
-      width: 20px;
+    width: 20px;
+}
+
+.container {
+    width: 25%;
+    margin: 25px auto;
 }
 
 .create-org-btn {
+    width: 450px;
+    height: 80px;
     box-shadow: 8px 8px 0 rgba(128, 83,35,.2);
     color: white;
     background-color: black;
-    margin: auto;
+    margin: 40px auto;
+    font-size: 22px;
+    border: none;
+    padding: 15px 50px;
 }
