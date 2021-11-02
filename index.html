@@ -7,32 +7,34 @@
     </head>
     <header>
         <div>
-            <img class="blackHeart" src="images/black-heart.png" alt="black heart">
-            <span>Nifty Penguin Magic</span>
+            <div>
+                <img class="black-heart" src="images/black-heart.png" alt="black heart">
+                <span>Nifty Penguin Magic</span> 
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">npm Enterprise</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Solutions</a></li>
+                    <li><a href="#">Resources</a></li>
+                    <li><a href="#">Docs</a></li>
+                    <li><a href="#">Support</a></li>
+                </ul> 
+            </nav>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#">npm Enterprise</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">Solutions</a></li>
-                <li><a href="#">Resources</a></li>
-                <li><a href="#">Docs</a></li>
-                <li><a href="#">Support</a></li>
-            </ul> 
-        </nav>
         <div>
-            <img src="images/npm-logo.png" alt="npm logo">
-            <img src="images/magnifying-glass.png" alt="magnifying-glass">
-            <form>
+            <img class="npm-logo" src="images/npm-logo.png" alt="npm logo">
+            <img class = "magnifying-glass" src="images/magnifying-glass.png" alt="magnifying-glass">
+            <form class="search-form">
                 <input type="search" name=search-packages placeholder="Search packages">
-                <button type="button">Search</button> 
+                <button class="search-button" type="button">Search</button> 
             </form>
             <a href="#">Join</a> 
             <a href="#">Login</a> 
         </div>
     </header>
     <body>
-        <section>
+        <section id="amazing-things">
             <h1>Build amazing things</h1>
             <article>
                 Essential JavaScript development tools that help you go to 
@@ -40,12 +42,12 @@
                 open source code.
             </article>
             <div>
-                <a href="#">See plans</a>
-                <a href="#">Join for free</a>
+                <button id="see-plans">See plans</a>
+                <button href="#">Join for free</a>
             </div>
         </section>
-        <section>
-            <img src="images/triangle-hexagon.svg">
+        <section id="open-source">
+            <img class="triangle-hexagon" src="images/triangle-hexagon.svg">
             <h2>Bring the best of open source to your company</h2>
             <article>
                 npm is the tool used by over 11,000,000 JavaScript developers 
@@ -55,34 +57,42 @@
             </article>
         </section>
         <section>
-            <div>
-                <img src="images/zero-configuration.svg" alt="key in blank space">
-                <h3>Zero configuration</h3>
-                <p>
-                    Create an org, add your team, and start collaborating. 
-                    Nothing to configure, set up, or manage.
-                </p>
-                <img src="images/team-management.svg" alt="hierarchical chart">
-                <h3>Team management</h3>
-                <p>
-                    Control who has access to what modules within your team 
-                    namespace using straightforward team management capabilities.
-                </p>
-                <img src="images/familiar-features.svg" alt="balance">
-                <h3>Familiar features</h3>
-                <p>
-                    npm Orgs has 100% parity with all the public npm registry 
-                    features your developers already use.
-                </p>
-                <img src="images/npm-audit.svg" alt="binoculars">
-                <h3>nps audit</h3>
-                <p>
-                    Enjoy the security auditing features built into the npm 
-                    client, a zero-friction way to make open source software 
-                    safer.
-                </p>
-                <a href="#">Create an Org</a>
+            <div id="facilities-and-benefits">
+                <div>
+                    <img class="zero-configuration" src="images/zero-configuration.svg" alt="key in blank space">
+                    <h3>Zero configuration</h3>
+                    <p>
+                        Create an org, add your team, and start collaborating. 
+                        Nothing to configure, set up, or manage.
+                    </p>
+                </div>
+                <div>    
+                    <img class="team-management" src="images/team-management.svg" alt="hierarchical chart">
+                    <h3>Team management</h3>
+                    <p>
+                        Control who has access to what modules within your team 
+                        namespace using straightforward team management capabilities.
+                    </p>
+                </div>
+                <div>
+                    <img class="familiar-features" src="images/familiar-features.svg" alt="balance">
+                    <h3>Familiar features</h3>
+                    <p>
+                        npm Orgs has 100% parity with all the public npm registry 
+                        features your developers already use.
+                    </p>
+                </div>    
+                <div>
+                    <img class="npm-audit" src="images/npm-audit.svg" alt="binoculars">
+                    <h3>nps audit</h3>
+                    <p>
+                        Enjoy the security auditing features built into the npm 
+                        client, a zero-friction way to make open source software 
+                        safer.
+                    </p>
+                </div>
             </div>
+            <button class="create-org-btn">Create an Org</button>
         </section>
     </body>
 </html>
