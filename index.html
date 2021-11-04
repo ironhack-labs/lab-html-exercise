@@ -1,73 +1,76 @@
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
 <head>
-    <link rel="stylesheet" href="style.css" />
+    <link href="style.css" rel="stylesheet"/>
     <meta charset="UTF-8">
     <title>NPM</title>
 </head>
 <body>
-    <header>
+<header>
+    <div>
         <div>
-            <div>
-                <img class="blackHeart" src="images/black-heart.png" alt="black heart" />
-                <span> Nifty Penguin Magic </span>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#"> npm Enterprise </a></li>
-                    <li><a href="#"> Products </a></li>
-                    <li><a href="#"> Solutions </a></li>
-                    <li><a href="#"> Resources </a></li>
-                    <li><a href="#"> Docs </a></li>
-                    <li><a href="#"> Support </a></li>
-                </ul>
-            </nav>
+            <img alt="black heart" class="blackHeart" src="images/black-heart.png"/>
+            <span> Nifty Penguin Magic </span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#"> npm Enterprise </a></li>
+                <li><a href="#"> Products </a></li>
+                <li><a href="#"> Solutions </a></li>
+                <li><a href="#"> Resources </a></li>
+                <li><a href="#"> Docs </a></li>
+                <li><a href="#"> Support </a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div>
+        <!-- add logo, search bar and buttons (or links and style them as buttons later) -->
+        <img alt="npm logo" class="logo" src="images/npm-logo.png">
+        <div id="searchbar">
+            <form class="search">
+                <img alt="magnifying-glass" class="search" src="images/magnifying-glass.png"/>
+                <input placeholder="Search packages" type="text">
+                <button class="search-button">Search</button>
+            </form>
+        </div>
+        <div>
+            <a class="join-button" href="#">Join</a><a href="#">Log In </a>
         </div>
 
-        <div>
-            <!-- add logo, search bar and buttons (or links and style them as buttons later) -->
-            <img class="logo" src="images/npm-logo.png" alt="npm logo">
-            <div id="searchbar">
-                <form class="search">
-                    <img class="search" src="images/magnifying-glass.png" alt="magnifying-glass"/>
-                    <input type="text" placeholder="Search packages">
-                    <button class="search-button">Search</button>
-                </form>
-            </div>
-            <div>
-                <a class="join-button" href="#">Join</a><a href="#">Log In </a>
-            </div>
-
-        </div>
-    </header>
+    </div>
+</header>
 <!--    <section 1>-->
-    <section id="section1">
-        <div>
+<section id="section1">
+    <div>
         <h1>Build amazing things</h1>
-        <article class="section1-article">Essential JavaScript development tools that help you go to market faster and build powerful applications using
-            modern open source code.</article>
+        <article class="section1-article">Essential JavaScript development tools that help you go to market faster and
+            build powerful applications using
+            modern open source code.
+        </article>
+    </div>
+    <div class="plans-join">
+        <div>
+            <a class="see-plan-button" href="#" id="button-position">See plans</a>
         </div>
-        <div class="plans-join">
-            <div>
-                <a href="#" class="see-plan-button" id="button-position">See plans</a>
-            </div>
-            <div>
-                <a href="#" class="join-free-button">Join for free</a>
-            </div>
+        <div>
+            <a class="join-free-button" href="#">Join for free</a>
         </div>
-    </section>
+    </div>
+</section>
 <br>
-    <section id="section2">
+<section id="section2">
     <div>
         <img id="hexagon-img" src="images/triangle-hexagon.svg">
         <h2 id="section2-header">Bring the best of open source to your company</h2>
         <article>npm is the tool used by
-            over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it.
+            over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends
+            on it.
             Create an Org and get more out of the tools your team already knows and loves.
         </article>
     </div>
-    </section>
-    <section id="section3">
+</section>
+<section id="section3">
     <div>
         <img src="images/zero-configuration.svg"/>
         <h3>Zero configuration</h3>
@@ -87,12 +90,13 @@
     <div>
         <img src="images/npm-audit.svg">
         <h3>npm audit</h3>
-        <p>Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer.</p>
+        <p>Enjoy the security auditing features built into the npm client, a zero-friction way to make open source
+            software safer.</p>
     </div>
-    </section>
-    <div id="button-org">
-        <a href="#" class="org-button">Create an Org</a>
-    </div>
+</section>
+<div id="button-org">
+    <a class="org-button" href="#">Create an Org</a>
+</div>
 </body>
 </html>
 
