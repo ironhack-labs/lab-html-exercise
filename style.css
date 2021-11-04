@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;1,900&display=swap');
 
 body {
   font-family: 'Poppins';
@@ -27,6 +28,7 @@ header > div {
   nav a {
     text-decoration: none;
     color: black;
+    font-weight: bold;
   }
   
   .black-heart {
@@ -44,6 +46,9 @@ header > div {
       height: 20px;
       align-items: center;
       object-fit: cover;
+      position: absolute;
+      left: 197px;
+      margin-top: 10px;
   }
 
 .search-form {
@@ -62,6 +67,7 @@ header > div {
     padding: 10px 30px 10px;
     background-color: rgba(0,0,0,.05);
     border: none;
+    letter-spacing: 0.1ch;
 }
 
 .search-button {
@@ -71,6 +77,8 @@ header > div {
     border: 1px solid #FB3B49;
     padding: 10px 30px 10px;
     align-items: left;
+    font-size: 1em;
+    letter-spacing: 0.1ch;
 }
 
 .plans {
@@ -78,7 +86,7 @@ header > div {
     color: white;
     box-shadow: 8px 8px 0 rgba(251,59,73,.2);
     font-size: 1.5em;
-    font-weight: 100;
+    font-weight: bold;
     text-align: center;
     text-decoration: none;
     margin-right: 20px;
@@ -90,6 +98,7 @@ header > div {
     background-color: white;
     color: black;
     font-size: 1.5em;
+    font-weight: bold;
     text-align: center;
     text-decoration: none;
     margin-left: 20px;
@@ -99,12 +108,16 @@ header > div {
 
 .join-button {
     background-color: white;
-    border: 1px solid black;
+    border: 1px solid rgb(65, 62, 62, 0.5);
     color: black;
     font-size: 1em;
+    font-weight: bold;
     text-align: center;
     text-decoration: none;
-    width: 100px;
+    width: 90px;
+    padding: 3px 0 3px;
+    box-shadow: 1px 1px 0 rgba(129, 129, 120, 0.2);
+
 }
 
 .log-button {
@@ -117,20 +130,23 @@ header > div {
 
 #build-section {
     background-color: rgba(232,217,217,.3);
-    height: 600px;
+    height: 650px;
+    padding-top: 1%;
 }
 
 #build-section h1 {
     font-size: 5em;
+    font-weight: bold;
     text-align: center;
-    padding-top: 130px;
+    padding-top: 30px;
 }
 
 #build-section article {
     font-size: 1.5em;
     text-align: center;
     margin: 0 auto;
-    width: 48%;
+    width: 38%;
+    padding-bottom: 60px;
 }
 
 #build-section div {
@@ -151,12 +167,13 @@ header > div {
     font-weight: lighter;
     text-align: center;
     margin: 0 auto;
-    width: 48%;
+    width: 45%;
     margin-bottom: 100px;
 }
 
 #open-source h3{
     font-size: 2.5em;
+    font-weight: 700;
     text-align: center;
     background-color: rgba(255,204,53,.4);
     transform: skew(9deg,0deg);
@@ -168,8 +185,18 @@ header > div {
 
 .offer-box img {
     width: 45px;
-    padding-bottom: 10px;
     padding-top: 20px;
+
+}
+
+.article-list article {
+    width: 25%;
+    margin: 15px;
+}
+
+.offer-box p {
+    margin: 0 auto;
+    padding-right: 20%;
 }
 
 .offer-name {
@@ -178,18 +205,17 @@ header > div {
 
 #offer div {
     display: flex;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 60px;
+    padding-right: 60px;
     margin: 0 auto;
-    margin-left: 60px;
-    margin-right: 60px;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 #offer h4 {
-
+    font-weight: bold;
     font-size: 1em;
     text-align: left;
-    font-weight: bolder;
 }
 
 #offer a {
@@ -203,10 +229,12 @@ header > div {
 .org-btn {
     color: white;
     text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
     background-color: black;
     box-shadow: 8px 8px 0 rgba(128,83,35,.2);
     margin: 0 auto;
     margin-top: 40px;
     border: 1px solid black;
-    padding: 10px 40px 10px;
+    padding: 15px 100px 15px;
 }
