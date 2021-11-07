@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+/*
+    to solve : 
+    font/font weight
+    shadow below header
+*/
+
+body {
+    font-family: 'Poppins';
+}
+
+ header {
+    margin: 10px;
+}
+
+
+.header-section1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    padding-bottom: 0;
+    border-bottom: 1px solid lightgrey;
+  }
+
+.name img {
+    width: 20px;
+    padding-left: 30px; 
+}
+
+.nav-bar ul {
+    list-style: none;
+    display: flex;
+
+}
+
+.nav-bar ul li a {
+    color: black;
+    text-decoration: none;
+    padding-right: 30px;
+}
+
+.header-section2{
+    display: flex; 
+    justify-content:space-between;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.header-section2>img{
+    height: 20px;
+    padding-left: 30px;
+    padding-top: 10px; 
+}
+
+#form {
+    position:relative;
+    padding-top: 10px;
+}
+
+#search {
+    width: 1100px;
+    height: 30px;
+    background-color: rgba(0,0,0,.05);
+    z-index: 1;
+    border: none;
+}
+
+#search:focus{
+    outline: none;
+}
+
+#search:focus::placeholder {
+    color: transparent;
+  }
+
+#search-icon {
+    position: absolute;
+    top: 16px;
+    left: 8px;
+    height: 16px;
+    z-index: 2;
+}
+
+#search::placeholder {
+    color: rgb(0,0,0,);
+    letter-spacing: 0.5px;
+    position: absolute;
+    left: 35px;
+    top: 5px;
+    font-family: Courier;
+}
+
+#search-button {
+    background-color: #fb3e44;
+    color: white;
+    border: none;
+    height: 30px;
+    position: absolute;
+    font-family: 'Poppins';
+}
+
+.header-links {
+    padding-right: 30px;
+    padding-left: 60px;
+    padding-top:6px;
+}
+
+#join {
+    color: black;
+    font-size: 0.8em;
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 2px 10px;
+}
+
+#log-in {
+    color: black;
+    font-size: 0.8em;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+#intro {
+    box-sizing: border-box;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(232,217,217,.3);
+    margin: 10px;
+}
+
+h1 {
+    font-size: 4em;
+    font-weight: 900;
+    margin-bottom: 10px;
+    margin-top: 0;
+    padding-top: 0;    
+}
+
+#intro-text {
+    width: 430px;
+    text-align: center;
+    padding: 20px 0;
+}
+
+#intro-links {
+    width: 430px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#link-plans {
+    background-color: #FB3B49;
+    color: white;
+    text-decoration: none;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+    padding: 10px 50px;
+}
+
+#link-join {
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    padding: 10px 50px;
+}
+
+#start {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 100px;
+}
+
+#start img {
+    height: 200px;
+}
+
+#start h2{
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+    font-style: italic;
+    font-weight: 900;
+    padding: 0 30px;
+    margin-top: 50px;
+}
+
+#start-text {
+    width: 830px;
+    text-align: center;
+}
+
+#create {
+    display: flex;
+    flex-direction: column;
+}
+
+#create-box {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    margin: 0 150px;
+}
+
+.create-img {
+    height: 30px;
+}
+
+.create-article {
+    margin: 0 40px;
+    flex-basis: 25%;
+    margin-bottom: 50px;
+} 
+
+.create-article h3 {
+    color: #ED1C24;
+    margin-bottom: 40px;
+}
+
+#create-link-box {
+    margin: auto;
+    background-color: black;
+    padding: 15px 170px;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    margin-bottom: 50px;
+}
+
+#create-link {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+}
