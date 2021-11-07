@@ -1,0 +1,135 @@
+/* resetting all default styles from browsers */
+@import "./_reset.css";
+
+/* importing font */
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+/* establishing root font size */
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Poppins';
+}
+
+/* header */
+header > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+  margin: 0 1.5rem;
+}
+
+/* header: 1st line */
+.header-line-nav {
+  padding: 1.4em 1.6em 1em;
+}
+
+#slogan img {
+  padding: 0 1.6em 0 0;
+  width: 1.3em;
+}
+
+#slogan span {
+  font-size: 0.8em;
+}
+
+nav {
+  font-size: 0.8em;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav li {
+  padding-left: 1em;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+/* header 2nd line */
+.header-line-form {
+  font-weight: 700;
+  padding: 0.4em 1.6em;
+}
+
+#logo-and-form {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0;
+  width: 100%;
+}
+
+.logo {
+  margin: 0 1.5rem 0 0;
+  width: 4rem;
+}
+
+header form {
+  display: flex;
+  justify-content: stretch;
+  align-items: center;
+  width: 90%;
+}
+
+header form label {
+  background-color: rgba(0,0,0,.05);
+  height: 2.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header form img {
+  padding: 0 0.7rem;
+  width: 1.2rem;
+}
+
+header form input {
+  background-color: rgba(0,0,0,.05);
+  border: none;
+  font-family: monospace;
+  height: 2.2rem;
+  width: 100%;
+}
+
+header form button {
+  background-color: #fb3e44;
+  border: none;
+  color: white;
+  height: 2.4rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+#account {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 1rem;
+  /* width: 9%; */
+}
+
+#account a {
+  color: black;
+  font-size: 0.8em;
+  padding-left: 1em;;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+#account .button-join {
+  border: 1px solid black;
+  border-radius: 0.1em;
+  padding: 0.5em 1em;
+}
+

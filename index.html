@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Lab-HTML-exercise - npm's old homepage</title>
-    <link rel="stylesheet" href="assets/styles/app.css">
+    <link rel="stylesheet" href="./assets/styles/app.css">
   </head> 
   <body>
 
       <!-- HEADER -->
       <header>
         <!-- 1st line -->
-        <div>
+        <div class="header-line-nav">
           <!-- slogan -->
           <div id="slogan">
             <img src="./images/black-heart.png" alt="black heart icon" />
@@ -31,18 +31,20 @@
           </nav>
         </div>
         <!-- 2nd line -->
-        <div>
-          <!-- website logo -->
-          <img src="./images/npm-logo.png" alt="npm logo" class="logo" />
-          <!-- search form -->
-          <form action="#" method="post">
-            <label for="search"><img src="./images/magnifying-glass.png" alt="search icon"></label>
-            <input type="text" name="search" id="search" placeholder="Search packages">
-            <input type="submit" value="Search">
-          </form>
+        <div class="header-line-form">
+          <div id="logo-and-form">
+            <!-- website logo -->
+            <img src="./images/npm-logo.png" alt="npm logo" class="logo" />
+            <!-- search form -->
+            <form action="#" method="post">
+              <label for="search"><img src="./images/magnifying-glass.png" alt="search icon"></label>
+              <input type="text" name="search" id="search" placeholder="Search packages">
+              <button type="submit">Search</button>
+            </form>
+          </div>
           <!-- account-related buttons-links -->
           <div id="account">
-            <a href="#">Join</a>
+            <a href="#" class="button-join">Join</a>
             <a href="#">Log in</a>
           </div>
         </div>
