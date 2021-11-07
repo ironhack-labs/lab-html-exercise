@@ -11,6 +11,8 @@ html {
 
 body {
   font-family: 'Poppins', sans-serif;
+  margin: 0 1.5rem;
+
 }
 
 /* header */
@@ -19,7 +21,6 @@ header > div {
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid lightgray;
-  margin: 0 1.5rem;
 }
 
 /* header: 1st line */
@@ -137,7 +138,6 @@ header form button {
   background-color: rgba(232,217,217,.3);
   box-shadow: inset 0 5px 5px rgba(232,217,217,.3);
   height: 600px;
-  margin: 0 1.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -149,6 +149,7 @@ header form button {
   font-weight: 700;
   text-align: center;
 }
+
 #cta p {
   font-size: 1.2em;
   line-height: 2rem;
@@ -180,4 +181,37 @@ header form button {
 .join-for-free {
   background-color: white;
   color: black;
+}
+
+/* 2nd section: PRESENTATION */
+#presentation {
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#presentation img {
+  width: 15rem;
+}
+
+#presentation h2 {
+  background-color: rgba(255,204,53,.4);
+  margin: 3rem 0 2rem; /* managing vertical spacing in flex section */
+  transform: skew(9deg,0deg);
+}
+
+#presentation div {
+  font-size: 2em;
+  font-weight: 600;
+  margin: 0.2rem 2rem 0; /* creating offset for the h2 background color */
+  transform: skew(-9deg,0deg); /* reversing skew on font */
+}
+
+#presentation p {
+  font-size: 0.9em;
+  line-height: 1.5rem;
+  width: 53%;
 }
