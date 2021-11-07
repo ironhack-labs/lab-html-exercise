@@ -185,7 +185,7 @@ header form button {
 
 /* 2nd section: PRESENTATION */
 #presentation {
-  height: 600px;
+  padding: 4.5rem 0 4rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -199,7 +199,7 @@ header form button {
 
 #presentation h2 {
   background-color: rgba(255,204,53,.4);
-  margin: 3rem 0 2rem; /* managing vertical spacing in flex section */
+  margin: 3.5rem 0 2rem; /* managing vertical spacing in flex section */
   transform: skew(9deg,0deg);
 }
 
@@ -215,3 +215,55 @@ header form button {
   line-height: 1.5rem;
   width: 53%;
 }
+
+/* 3rd section: FEATURES */
+#features {
+  padding: 4rem 0 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#features div {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-bottom: 4.2rem; /* managing vertical spacing in flex section */
+  width: 82%;
+}
+
+#features article {
+  text-align: left;
+  width: 20%;
+}
+
+#features img {
+  margin-bottom: .6rem; /* managing vertical spacing in article */
+  width: 2rem;
+}
+
+#features h3 {
+  color: #ED1C24;
+  font-size: 0.9em;
+  font-weight: 700;
+  margin-bottom: 2.2rem; /* managing vertical spacing in article */
+}
+
+#features p {
+  font-size: 0.9em;
+  line-height: 1.5em;
+}
+
+#features a {
+  background-color: black;
+  box-shadow: .5rem .5rem 0 rgba(128,83,35,.2);
+  color: white;
+  font-size: 1.1em;
+  font-weight: 600;
+  padding: 1.2em 7em;
+  text-decoration: none;
+}
+
+
