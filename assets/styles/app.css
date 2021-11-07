@@ -2,7 +2,7 @@
 @import "./_reset.css";
 
 /* importing font */
-@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 /* establishing root font size */
 html {
@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
 }
 
 /* header */
@@ -38,6 +38,7 @@ header > div {
 
 nav {
   font-size: 0.8em;
+  font-weight: 600;
 }
 
 nav ul {
@@ -57,7 +58,6 @@ nav a {
 
 /* header 2nd line */
 .header-line-form {
-  font-weight: 700;
   padding: 0.4em 1.6em;
 }
 
@@ -116,7 +116,6 @@ header form button {
   justify-content: space-between;
   align-items: center;
   margin-left: 1rem;
-  /* width: 9%; */
 }
 
 #account a {
@@ -133,3 +132,52 @@ header form button {
   padding: 0.5em 1em;
 }
 
+/* 1st section: CTA */
+#cta {
+  background-color: rgba(232,217,217,.3);
+  box-shadow: inset 0 5px 5px rgba(232,217,217,.3);
+  height: 600px;
+  margin: 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#cta h1 {
+  font-size: 4.5em;
+  font-weight: 700;
+  text-align: center;
+}
+#cta p {
+  font-size: 1.2em;
+  line-height: 2rem;
+  margin: 3rem 0;
+  text-align: center;
+  width: 40%;
+}
+
+#cta div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 40%;
+}
+
+#cta a {
+  font-size: 1.1em;
+  font-weight: 600;
+  padding: 1em 4em;
+  text-decoration: none;
+}
+
+.see-plans {
+  background-color: #FB3B49;
+  box-shadow: .5rem .5rem 0 rgba(251,59,73,.2);
+  color: white;
+}
+
+.join-for-free {
+  background-color: white;
+  color: black;
+}
