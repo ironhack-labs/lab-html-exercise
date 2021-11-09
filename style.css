@@ -31,7 +31,7 @@ nav a {
     text-decoration: none;
     color: black;    
     font-weight: 900;
-    font-size: 0.8em;
+    font-size: 0.8em; 
   }
   
 .blackHeart {
@@ -39,8 +39,16 @@ nav a {
     margin-right: 1rem;
   }
 
+#top-bar {
+  display: flex;
+  justify-content: flex-start;  
+  align-items: center;
+  flex-direction: row;
+}
+
 #npm-logo {
-      width: 7%;
+      width: 5%;
+      margin-right: 20px;
   }
 
 form {
@@ -60,7 +68,16 @@ form {
       border: none;  
       padding: 5px 5px 5px 35px;
       font-family: 'Poppins';
+      width: 860px;      
   }
+
+#search-bar {
+    margin-right: 100px;
+}
+
+#top-links {
+    margin-bottom: 3px;
+}
 
 #search-field::placeholder {
     color: rgb(0,0,0,);
@@ -74,12 +91,13 @@ form {
     height: 16px;
 }
 
-header #join {
+#top-links #join {
     color: black;
     font-size: 0.8em;
     text-decoration: none;
     border: 1px solid black;
-    padding: 2px 10px;
+    padding: 2px 10px;  
+    margin-right: 20px;  
 }
 
 #login {
