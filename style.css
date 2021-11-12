@@ -33,54 +33,60 @@ header > div {
     margin-right: 1rem;
   }
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+   }
+
 .logo {
-    width: 50px;
+    width: 60px;
+    margin-top: 12px;
+    margin-right: 5px;
 }  
 
 .search-head {
-  padding: 0 25px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.mag-glass {
-  width: 25px;
+  height: 50px;
 }
 
 #input-container {
   position: relative;
-}
-
-#input-container > img {
-  position: absolute;
-  top: 12px;
-  left: 15px;
+  background-color: rgba(0, 0 , 0, .05);
+  width: 900px;
+  height: 40px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 0;
+  padding-left: 5px;
 }
 
 .input-search {
   background-color: transparent;
-  border: solid;
-  width: 600px;
-  height: 30px;
-  text-align: left;
-  font-family: "poppins";
+  border: none;
+  font-weight: 530;
+  color: grey;
+  height: 35px;
+  width: 850px;
+  margin-right: 0;
+  margin-left: 5px;
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
-
-.search-form {
-  margin-left: 20px;
-  width: 800px;
-  height: 40px;
-  background-color: rgba(0, 0 , 0, .05);
+.mag-glass {
+  width: 25px;
+  margin-top: 10px;
+  margin-bottom: 0;
 }
 
 .search-button {
-    background-color: #fb3e44;
-    color: white;
-    border:none;
-    font-family: 'Poppins';
-    padding: 12px 30px;    
+  background-color: #fb3e44;
+  color: white;
+  border: one;
+  font-family: 'Poppins';
+  padding: 10px 30px;  
+  border: none;
 }
 
 .join-btn {
@@ -186,6 +192,7 @@ h2{
   justify-content: center;
   text-align: center;
   font-weight: 600;
+  padding-top: 20px;
 }
 
 h3 {
@@ -197,7 +204,7 @@ h3 {
   box-shadow: 8px 8px 0 rgba(128,83,35,.2);
   color: white;
   border: none;
-  padding: 15px 100px;
+  padding: 15px 120px;
   font-family: 'Poppins';
 }
 
@@ -215,10 +222,10 @@ h3 {
 
 .block {
   width: 300px;
-  padding: 75px 0;
+  padding: 75px 10px 5px 10px;
   text-align: left;
-  margin-right: 35px;
-  margin-left: 35px;
+  margin-right: 10px;
+  margin-left: 10px;
   font-weight: 600;
   font-size: 0.9em;
 }
