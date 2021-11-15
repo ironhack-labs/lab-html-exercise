@@ -1,6 +1,9 @@
+<!DOCTYPE html>
 <html>
     <head>
-
+        <meta charset="utf-8">
+        <title>NPM Clone</title>
+        <link rel='stylesheet' href='./style.css'>
     </head>
     <body>
         <header>
@@ -22,18 +25,18 @@
             </div>
             <div>
                 <img class='logo' src='./images/npm-logo.png' alt='npm logo' />
-                <form>
+                <form class='search-form'>
                     <img class='search-icon' src='./images/magnifying-glass.png' />
                     <input class='search-bar' type='text' placeholder='Search packages' />
-                    <button class='button red' type='submit'>Search</button>
+                    <button class='search-button red' type='submit'>Search</button>
                 </form>
-                <div>
-                    <a class='button' href='#'>Join</a>
+                <div class='login-buttons'>
+                    <a class='button join' href='#'>Join</a>
                     <a class='button' href='#'>Log In</a>
                 </div>
             </div>
         </header>
-        <section>
+        <section class='section-1'>
             <h2>Build amazing things</h2>
             <article>
                 <p>
@@ -42,11 +45,11 @@
                 </p>
             </article>
             <div>
-                <a class='button red' href='#'>See plans</a>
-                <a class='button' href='#'>Join for free</a>
+                <a class='button big red' id='see-plans' href='#'>See plans</a>
+                <a class='button big' href='#'>Join for free</a>
             </div>
         </section>
-        <section>
+        <section class='section-2'>
             <img class='hexagon' src='./images/triangle-hexagon.svg' />
             <h3>Bring the best of open source to your company</h3>
             <article>
@@ -58,7 +61,7 @@
                 </p>
             </article>
         </section>
-        <section>
+        <section class='section-3'>
             <div>
                 <img class='icon' src='./images/zero-configuration.svg' />
                 <h4>Zero configuration</h4>
