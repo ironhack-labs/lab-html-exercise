@@ -2,17 +2,24 @@
 
 body {
   font-family: 'Poppins';
+  padding: 0;
+  margin: 0;
 }
 
-header > div {
+header .top-header {
     padding: 0 25px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid lightgray;
   }
-  
-  nav {
+
+header .top-header .black-heart img {
+  width: 20px;
+  margin-right: 1rem;
+}
+
+header nav {
     width: 600px;
   }
   
@@ -27,8 +34,104 @@ header > div {
     text-decoration: none;
     color: black;
   }
+
+#first-sec {
+  height: 600px;
+  background-color: rgba(232,217,217,.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#first-sec h1 {
+  font-size: 50px;
+}
+
+#first-sec article p {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+#first-sec .box-join {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#first-sec .box-join div {
+  font-size: 25px;
+  margin: 50px;
+}
+
+#second-sec {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#second-sec div {
+  width: 250px;
+  height: 250px;
+  background-image: url(./images/triangle-hexagon.svg);
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+
+#second-sec h2 {
+  font-style: italic;
+  background-color: rgba(255,204,53,.4);
+  transform: skew(9deg,0deg);
+  padding: 0 20px 0
   
-  .blackHeart {
-    width: 20px;
-    margin-right: 1rem;
-  }
+}
+
+#second-sec article p {
+  width: 500px;
+  font-size: 10px;
+}
+
+#third-sec {
+  height: 600px;
+  margin-top: 10px;
+}
+
+#third-sec .container {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+} 
+
+#third-sec .container .item {
+  margin: 20px;
+}
+#third-sec .container .item .img  {
+  width: 25px;
+}  
+#third-sec h3 {
+  color:#ED1C24;
+  font-size: 15px;
+}
+
+#third-sec p {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+
+#third-sec .inner {
+  margin-top: 50px;
+  font-weight: bold;
+  display: flex;
+  justify-self: center;
+}
+
+#third-sec .inner span {
+  font-size: 15px;
+  font-weight: bold;
+  color:white;
+  background-color: black;
+  padding: 5px 100px;
+  margin: auto;
+}
