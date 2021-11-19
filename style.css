@@ -1,8 +1,34 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
+/*************     GLOBAL SETTINGS     *************/
+
 body {
     font-family: 'Poppins';
 }
+
+h1  {
+    font-size:4em;
+    font-weight:900;
+    margin:1em 0 0 0;
+}
+
+h1 text {
+    stroke:black;
+    stroke-width:1.5;
+    text-anchor:middle;
+    fill:black;
+  }
+
+h2 {
+    font-size:1.9em;
+    font-weight:900;
+}
+
+h3  {
+    font-weight:900;
+}
+
+/*************      HEADER - NAV      *************/
 
 header > div {
     padding: 0 25px;
@@ -10,11 +36,23 @@ header > div {
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid lightgray;
+    font-size:0.85em;
+}
+
+header a    {
+    text-decoration: none;
+    color: black;
+}
+
+header a:hover  {
+    color:rgb(128,128,128);
 }
 
 nav {
-    width: 600px;
+    width: 35em;
+    font-weight:900;
 }
+
 nav ul {
     list-style: none;
     display: flex;
@@ -22,14 +60,19 @@ nav ul {
     align-items: center;
 }
   
-nav a {
-    text-decoration: none;
-    color: black;
-}
-  
 .blackHeart {
     width: 20px;
     margin-right: 1rem;
+}
+
+.brand a    {
+    color:black;
+    text-decoration: none;
+}
+
+.brand a:hover  {
+    color:rgb(128,128,128);
+    text-decoration: none;
 }
 
 .header-search-connect {
@@ -41,7 +84,7 @@ nav a {
 }
 
 header form {
-    width:75%;
+    width:80%;
     display:flex;
     justify-content: space-evenly;
     align-items: center;
@@ -60,6 +103,12 @@ form button {
     padding: 0.52em 1.2em;
     font-family:'Poppins';
     font-size:1em;
+    height:100%;
+    box-sizing: content-box;
+}
+form button:hover   {
+    cursor:pointer;
+    font-weight:600;
 }
 
 .logo, .magnifying-glass {
@@ -76,19 +125,161 @@ input#search  {
     background-color:rgba(0,0,0,.05);
     border:none;
     outline: none;
-    padding:1em 0.4em;
+    padding:0.7em 0.4em;
 }
 
 .header-search-connect #connection  {
     display:flex;
+    justify-content: space-evenly;
+    flex-wrap:nowrap;
 }
 
 .header-search-connect #connection a    {
     color:rgb(55,78,79);
     text-decoration: none;
-    padding: 0.52em 1em;
+    padding: 0.52em 1.2em;
+}
+
+.header-search-connect #connection a:hover    {
+    color:rgb(128,128,128);
 }
 
 .header-search-connect #connection a.join {
+    font-weight:900;
     border: 1px solid rgb(140,140,140);
+}
+
+/*************        SECTION 1        *************/
+
+section#build   {
+    height:600px;
+    background-color:rgba(232,217,217,.3);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+}
+
+section#build h1.build-element svg   {
+    width:26.45em;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    padding:0;
+    margin:0;
+}
+
+section#build h1.build-element svg text {
+    margin:0 auto;
+}
+
+article.build-element, div.build-element   {
+    width:26.45em;
+}
+
+article.build-element   {
+    margin:3em 0 3em 0;
+}
+
+div.build-element   {
+    display:flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin:3em auto 11em;
+}
+
+div.build-element a {
+    font-weight:1000;
+    text-decoration:none;
+    padding:0.75em 3.25em;
+}
+
+a#see-plans    {
+    color:white;
+    background-color:#FB3B49;
+    box-shadow:8px 8px 0 rgba(251,59,73,.2);
+    margin-right:1.35em;
+}
+
+a#join-for-free {
+    color:black;
+    background-color:white;
+    margin-left:1.35em;
+}
+
+/*************        SECTION 2        *************/
+
+section#bring   {
+    height:500px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-evenly;
+    align-items:center;
+    text-align:center;
+}
+
+img[alt=triangle-hexagon]   {
+    width:13em;
+    margin-top:1.6em;
+}
+
+section#bring h2 {
+    background-color:rgba(255,204,53,.4);
+    padding:0 1em;
+    transform: skew(9deg,0deg);
+    font-style: italic;
+}
+
+section#bring article   {
+    width:48em;
+    font-size:0.85em;
+    margin-bottom:1.5em
+}
+
+/*************        SECTION 3        *************/
+
+#advantages {
+    height:450px;
+    padding:3em 0 6em 0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+.advantages-elements {
+    font-size:0.8em;
+    margin:0 auto;
+    padding:0 10em;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.advantage-element {
+    width:15.5em;
+    height:14.5em;
+    padding:1.35em;
+    display:flex;
+    flex-direction:column;
+    justify-content:left;
+    align-items:space-around;
+}
+
+.advantage-icon    {
+    width:20px;
+}
+
+.advantage-element  h3  {
+    color:#FB3B49;
+}
+
+.create-an-org  {
+    text-decoration:none;
+    font-weight:900;
+    padding:1em 8.5em;
+    color:white;
+    background-color:black;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
 }
