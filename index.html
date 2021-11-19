@@ -31,8 +31,8 @@ auditing features built into the npm client, a zero-friction way to make open so
       </div>
 
       <!-- NavBar -->
-      <nav class="nav-bar">
-        <ul class="nav-bar-ul">
+      <nav>
+        <ul>
           <li><a href="#npm">npm Enterprise</a></li>
           <li><a href="#products">Products</a></li>
           <li><a href="#solutions">Solutions</a></li>
@@ -44,15 +44,15 @@ auditing features built into the npm client, a zero-friction way to make open so
     </div>
 
     <div id="search">
-      <img src="/images/npm-logo.png" alt="npm logo" id="npm">
+      <img src="/images/npm-logo.png" alt="npm logo" id="npm-logo">
 
       <form action="search" method="get">
-        <img src="/images/magnifying-glass.png" alt="magnifying glass" id="glass">
+        <img src="/images/magnifying-glass.png" alt="magnifying glass" id="mag-glass">
         <input type="text" id="search-bar" placeholder="Search Packages">
         <input type="submit" value="search" id="search-button"></input>
       </form>
 
-      <div id="signup-signin">
+      <div>
         <button><a href="#signup">Join</a></button>
         <button><a href="#signin">Login</a></button>
       </div>
@@ -60,22 +60,22 @@ auditing features built into the npm client, a zero-friction way to make open so
   </header>
 
   <!-- Section1 -->
-  <section class="container" id="section-1">
+  <section class="section-1">
     <h1 id="title-1">Build amazing things</h1>
     <article id="article-1">
-      <p>Essential JavaScript development tools that help you go to market faster and build powerful applications using
+      <p> Essential JavaScript development tools that help you go to market faster and build powerful applications using
         modern open source code.</p>
     </article>
 
     <div>
-      <button><a href="#signin">See plans</a></button>
-      <button><a href="#signup">Join for free</a></button>
+      <button id="plans-btn"><a href="#plans">See plans</a></button>
+      <button id="join-btn"><a href="#join">Join for free</a></button>
     </div>
   </section>
 
   <!-- Section2 -->
-  <section class="container" id="section-2">
-    <img id="triangle-hexagon" src="/images/triangle-hexagon.svg" alt="triangle hexagon">
+  <section class="section-2">
+    <img src="/images/triangle-hexagon.svg" alt="triangle hexagon" id="triangle-hex">
     <h3 id="title-2">Bring the best of open source to your company</h3>
     <article id="article-2">
       <p> npm is the tool used by
@@ -86,7 +86,7 @@ auditing features built into the npm client, a zero-friction way to make open so
   </section>
 
   <!-- Section3 -->
-  <section class="container" id="section-3">
+  <section class="section-3">
     <div>
       <img src="/images/zero-configuration.svg" alt="zero config icon">
       <h4>Zero configuration</h4>
@@ -104,7 +104,7 @@ auditing features built into the npm client, a zero-friction way to make open so
     <div>
       <img src="/images/familiar-features.svg" alt="familiar features icon">
       <h4>Familiar features</h4>
-      <p>Familiar features npm Orgs
+      <p>npm Orgs
         has 100% parity with all the public npm registry features your developers already use.</p>
     </div>
 
@@ -114,9 +114,12 @@ auditing features built into the npm client, a zero-friction way to make open so
       <p>Enjoy the security
         auditing features built into the npm client, a zero-friction way to make open source software safer.</p>
     </div>
-
-    <button id="create-org-btn">Create an Org</button>
   </section>
+
+  <div class="org-btn">
+    <button id="create-org-btn"> <a href="#org"> Create an Org</a></button>
+  </div>
+
 
 </body>
 
