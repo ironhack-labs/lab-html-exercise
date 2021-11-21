@@ -3,15 +3,21 @@
 body {
   font-family: 'Poppins';
 }
-    
+
 header > div {
     padding: 0 25px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid lightgray;
+    
   }
   
+  footer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
   nav {
     width: 600px;
   }
@@ -21,6 +27,7 @@ header > div {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-weight: bold;
   }
   
   nav a {
@@ -28,8 +35,166 @@ header > div {
     color: black;
   }
   
+  label, input {
+    color: rgba(0,0,0,.05)
+  }
+
+  button {
+    background-color: #fb3e44;
+    height: 35px;
+    width: 65px;
+    color: white;
+    border-style: hidden;
+  }
+  
+  img {
+    width: 50px;
+  }
+
+  h1 {
+    font-size: 90px;
+  }
+  
+  #borderBottom {
+    border-bottom: 2px solid lightgray;
+    padding-bottom: 5px;
+  }
+
+  .buttons {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    color: initial;
+  }
+
   .blackHeart {
     width: 20px;
     margin-right: 1rem;
   }
   
+  .triangleHexagon {
+    width: 200px !important;
+  }
+
+  #firstSection {
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  #secondSection {
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .magnifyingGlass {
+    width: 20px;
+    margin-right: 1rem;
+  }
+  
+  .redHeading {
+    color: red;
+  }
+
+  .npmLogo {
+    width: 60px;
+    margin-right: 1rem;
+  }
+
+  #test {
+    display: flex;
+    padding-top : 10px;
+    padding-bottom: 10px;
+  }
+
+  #thirdSection {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  #test2 {
+    height: 250px;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  
+  #site-search {
+    border-style: hidden;
+  }
+
+  #firstArticle {
+    width: 430px;
+    text-align: center;
+  }
+
+  #joinButton {
+    border-style: solid;
+    border-color: grey;
+    border-width: 0.5px;
+    width: 60px;
+    text-align: center;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+
+  #joinFreeButton {
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  #plansButton {
+    background-color: #fb3e44;
+    font-weight: bold;
+    height: 50px;
+    width: 200px;
+    color: white;
+    border-style: hidden;
+    text-align: center;
+    margin-top: 30px;
+    box-shadow: 7px 5px 1px #FFC0CB;
+  }
+
+  #secondTitle {
+    background-color: #f1e3af ;
+    text-align: center;
+    margin-top: 60px;
+    position: relative;
+    overflow: hidden;
+    z-index: -1;
+
+  }
+
+  #secondHeading {
+    width: 800px;
+    font-size: 21px;
+  }
+
+  #secondArticle {
+    width: 780px;
+    text-align: center;
+  }
+
+  #createButton {
+    margin-top: 50px;
+    display: inline-block;
+    width: 400px;
+    height: 50px;
+    border-style: solid;
+    border-color: grey;
+    border-width: 0.5px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+  }
