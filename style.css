@@ -40,25 +40,57 @@ nav a {
 }
 
 .search {
-  width: 900px;
   margin: 10px auto;
+}
+
+.search-bar,
+.search-button {
+  height: 45px;
 }
 
 .search-button {
   background-color: #fb3e44;
   color: white;
+  font-size: 1.05em;
+  padding: 8px 18px;
   position: relative;
-  padding: 6px 15px;
-  left: -8px;
-  border: 2px solid #fb3e44;
+  left: -5px;
+  border: 1px solid #fb3e44;
 }
 
 .search-bar {
-  padding: 8px 15px;
-  border: 0px solid #dbdbdb;
-  background: url(/images/magnifying-glass.png) no-repeat scroll 10px 10px;
-  padding-left: 30px;
+  width: 1250px;
+  border: 1px solid #dbdbdb;
+  background-color: #e7e7e7;
   color: rgba(0, 0, 0, 0.05);
+  background-image: url(images/magnifying-glass.png);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 20px;
+  background-origin: content-box;
+  padding-left: 20px;
+  text-indent: 30px;
+}
+
+.member-buttons a {
+  text-decoration: none;
+  color: #707070;
+  margin: auto 10px;
+  font-weight: bold;
+  font-size: large;
+  width: 20px;
+  height: 20px;
+}
+
+.member-buttons a:first-child {
+  border: 1px solid #707070;
+  border-radius: 5%;
+  padding: 5px 20px;
+}
+
+.member-buttons a:last-child {
+  padding-right: 0;
+  margin-right: 0;
 }
 
 #plans-join {
