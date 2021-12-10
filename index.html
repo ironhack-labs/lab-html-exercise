@@ -8,34 +8,34 @@
 </head>
 
 <body>
-    <header class="header">
+    <header>
         <div>
             <div>
                 <img class="blackHeart" src="images/black-heart.png" alt="black heart" />
-                <span> Nifty Penguin Magic< /span>
+                <span> Nifty Penguin Magic </span>
             </div>
-            <nav class="nav-bar">
-                <ul class="nav-bar-ul">
-                    <li> <a class="nav-bar-item" href="#"> npm Enterprise </a> </li>
-                    <li> <a class="nav-bar-item" href="#"> Products </a> </li>
-                    <li> <a class="nav-bar-item" href="#"> Solutions </a> </li>
-                    <li> <a class="nav-bar-item" href="#"> Resources </a> </li>
-                    <li> <a class="nav-bar-item" href="#"> Docs </a> </li>
-                    <li> <a class="nav-bar-item" href="#"> Support </a> </li>
+            <nav>
+                <ul>
+                    <li> <a href="#" > npm Enterprise </a> </li>
+                    <li> <a href="#" > Products </a> </li>
+                    <li> <a href="#" > Solutions </a> </li>
+                    <li> <a href="#" > Resources </a> </li>
+                    <li> <a href="#" > Docs </a> </li>
+                    <li> <a href="#" > Support </a> </li>
                 </ul>
             </nav>
         </div>
 
-        <div>
+        <div class="second-header">
             <img class="npmLogo" src="images/npm-logo.png" alt="npm logo" />
             <form action="/search" method="get">
                 <img class="glass-picture" src="images/magnifying-glass.png" alt="magnifying glass" />
-                <input type="search" placeholder="Search packages" name="search">
-                <button type="submit"> Search </button>
+                <input class="input-search" type="search" placeholder="Search packages" name="search">
+                <button class="button-search" type="submit"> Search </button>
             </form>
             <div>
-                <a href="#"> Join </a>
-                <a href="#"> Log in </a>
+                <a class="btn-one" href="#"> Join </a>
+                <a class="btn-two" href="#"> Log in </a>
             </div>
         </div>
     </header>
@@ -43,23 +43,21 @@
     <section id="build">
         <h1> Build amazing things </h1>
         <article>
-            <p> Essential JavaScript development tools that help you go to market faster and build powerful applications
-                using
-                modern open source code. </p>
+        <p class="paragraph-1" > Essential JavaScript development tools that help <br> you go to market faster and build powerful <br> using modern open source code. </p>
         </article>
         <div>
-            <a href="#"> See plans </a>
-            <a href="#"> Join for free </a>
+            <a class="btn-plans" href="#"> See plans </a>
+            <a class="btn-join-free" href="#"> Join for free </a>
         </div>
     </section>
 
     <section id="openSource">
         <img class="triangle" src="images/triangle-hexagon.svg" alt="triangle hexagon" />
-        <h3> Bring the best of open source to your company </h3>
+        <h2> Bring the best of open source to your company </h2>
         <article>
-            <p> npm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers already
-                use it. Your company depends on it.
-                Create an Org and get more out of the tools your team already knows and loves. </p>
+            <p class="paragraph-2" > npm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers <br>
+                already use it. Your company depends on it. Create an Org and get more out of the tools your <br>
+                team already knows and loves. </p>
         </article>
     </section>
 
@@ -91,7 +89,7 @@
                     source software safer.</p>
             </article>
         </div>
-        <a href="#"> Create an Org </a>
+        <a class="btn-org" href="#"> Create an Org </a>
     </section>
 
 </body>
