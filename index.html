@@ -1,9 +1,12 @@
 <html>
+    <head>
+        <link rel="stylesheet" href="style.css" />
+    </head>
     <body> 
         <header>
             <div>
                 <div> 
-                    <img src="images/black-heart.png" class="black-heart" alt="heart"><span>Nifty Penguin Magic</span>
+                    <img src="images/black-heart.png" class="blackHeart" alt="heart"><span>Nifty Penguin Magic</span>
                 </div>
                 <nav>
                     <ul>
@@ -17,13 +20,13 @@
                 </nav>
             </div>
             <div>
-                <img src="images/npm-logo.png" alt="Logo">
-                <img src="images/magnifying-glass.png" alt="search">
-                <form action="">
+                <img src="images/npm-logo.png" class="logo" alt="Logo">
+                <img src="images/magnifying-glass.png" class="mag-glass" alt="search">
+                <form class="searchform" action="">
                     <input type="text" placeholder="Search package" name="search">
-                    <button type="submit">Submit</button>
+                    <button type="submit" class="submitbutton">Search</button>
                   </form>
-                <div>
+                <div class="loginbuttons">
                     <a href="">Join</a>
                     <a href="">Log In</a>
                 </div>
@@ -31,8 +34,8 @@
         </header>
         <section id="first-section">
             <h1>Build amazing things</h1>
-            <p>Essential JavaScript development tools that help you go to market faster and build powerful applications using
-            modern open source code.<p>
+            <article>Essential JavaScript development tools that help you go to market faster and build powerful applications using
+            modern open source code.</article>
             <a href="">See plans</a><a href="">Join for free</a>
         </section>
         <section id="second-section">
@@ -44,18 +47,22 @@
         </section>
         <section id="third-section">
             <div>
+                <img src="images/zero-configuration.svg" alt="Zero configuration">
             <h3>Zero configuration</h3>
             <p>Create an org, add your team, and start collaborating. Nothing to configure, set up, or manage.</p>
             </div>
             <div>
+                <img src="images/team-management.svg" alt="Team management">
             <h3>Team management</h3>
             <p>Control who has access to what modules within your team namespace using straightforward team management capabilities.</p> 
             </div>
             <div>
+                <img src="images/familiar-features.svg" alt="Familiar features">
             <h3>Familiar features</h3>
             npm Orgs has 100% parity with all the public npm registry features your developers already use. 
             </div>
             <div>
+                <img src="images/npm-audit.svg" alt="npm audit">
             <h3>npm audit</h3>
             <p>Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer.</p> 
             <a href="">Create an Org</a>
