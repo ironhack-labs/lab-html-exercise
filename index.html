@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <link rel="stylesheet" href="style.css">
-      </head>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+
 <body>
     <header>
         <div>
@@ -22,21 +24,29 @@
             </nav>
         </div>
 
-        <div>
+        <div class="subnav">
             <!-- add logo, search bar and buttons (or links and style them as buttons later) -->
-            <img src="images/npm-logo.png" alt="npm logo black">
-            <img src="images/magnifying-glass.png" alt="search icon">
-            <input type="text" placeholder="Search packages">
-            <button type="button">Search</button>
-            <a href="">Join</a>
-            <a href="">Login</a>
+            <div>
+                <img src="images/npm-logo.png" alt="npm logo black" class="logo">
+
+            </div>
+            <div>
+                <img src="images/magnifying-glass.png" alt="search icon" class="search">
+                <input type="text" placeholder="Search packages">
+                <button type="button" class="searchBtn">Search</button>
+            </div>
+            <div>
+                <a href="" class="jointopBtn">Join</a>
+                <a href="" class="loginBtn">Login</a>
+            </div>
+
         </div>
     </header>
     <section id="plans">
         <h1>Build amazing things</h1>
         <article>
-            <p>Essential JavaScript development tools that help 
-                you go to market faster and build powerful 
+            <p>Essential JavaScript development tools that help
+                you go to market faster and build powerful
                 applications using modern open source code.
             </p>
         </article>
@@ -80,11 +90,11 @@
             <p>Enjoy the security
                 auditing features built into the npm client, a zero-friction way to make open source software safer.</p>
         </div>
-        
-        
+
+
     </section>
-    <div class="wrapper">
-    <button type="button" class="orgBtn">Create an Org</button>
+    <div class="wrapperButton">
+        <button type="button" class="orgBtn">Create an Org</button>
     </div>
 </body>
 
