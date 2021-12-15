@@ -3,6 +3,7 @@
 <head>
     <title>NPM Clone</title>
 </head>
+<link rel="stylesheet" href="style.css">
 <body>
     <header>
         <div>
@@ -22,28 +23,30 @@
           </nav>
         </div>
       
-        <div>
-          <img class="npm-logo" src="images/npm-logo.png" alt="npm logo"/>
+        <div class="search-nav">
+          <img id="npm-logo" src="images/npm-logo.png" alt="npm logo"/>
           <br/>
-          <img class="search" src="images/magnifying-glass.png" alt="magnifying glass image"/>
-          <!--search bar is form-->
-          <input name="search" type="text" placeholder="Search packages"/>
-          <button type="submit">Search</button>
+          <!--<img id="magnifying-glass" src="images/magnifying-glass.png" alt="magnifying glass image"/>-->
+          <form class="search-form" action="/register" method="post">
+            <label for="search"><img id="magnifying-glass" src="images/magnifying-glass.png" alt="magnifying glass image"/></label><input id="search" name="search" type="text" placeholder="Search packages"/><button type="submit">Search</button> <!--placing inline removes gap between button and input-->
+          </form>
           <br/>
-          <div class="register-nav">
-              <a href="#register">Join</a>
+          <div class="register-links">
+              <a id="joinNavButton" href="#register">Join</a>
               <a href="#login">Login</a>
           </div> 
         </div>
-      </header>
+    </header>
 
       <!---------------Section 1--------------->
     <section id="section-one">
         <h1>Build amazing things</h1>
         <article>Essential JavaScript development tools that help you go to market faster and build powerful applications using
             modern open source code. </article>
-        <a href="#Plans">See plans</a>
-        <a href="#register">Join for free</a>
+        <div id="intro-links">    
+          <a id="see-plans"href="#Plans">See plans</a>
+          <a id="join-for-free" href="#register">Join for free</a>
+        </div>
     </section>
 
       <!---------------Section 2--------------->
