@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
-    --copy-color: rgba(0,0,0,0.85);
+    --copy-color: rgb(48, 48, 48);
     --color-formLabel: rgba(0,0,0,0.05);
     --color-accent: #fb3e44;
     --color-white: white;
@@ -10,6 +10,7 @@
     --color-secondary: #F2DED6;
     --color-gray: #F2F2F2;
     --color-shadow: #F4D1D2;
+    --color-highlight: #FBEBBB;
 }
 
 body {
@@ -178,7 +179,7 @@ nav a {
     height: 15vh;
     justify-content: space-around;
     align-items: center;
-    margin-bottom: 8em;
+    margin-bottom: 10em;
 }
 
 .see-plans {
@@ -204,6 +205,75 @@ nav a {
     font-family: Poppins;
     font-weight: 700;
     text-decoration: none;
+}
+
+#secondSection {
+    background-color: white;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    margin: 10em auto;
+}
+
+#secondSection img {
+    width: 15%;
+    height: 150%;
+}
+
+#secondSection h2 {
+    font-size: 3.1em;
+    font-weight: 600;
+    background-color: var(--color-highlight);
+    margin-top: 2em;
+}
+
+#secondSection span {
+    color: var(--color-highlight);
+}
+
+#secondSection article {
+    width: 50%;
+    font-size: 1.45em;
+    text-align: center;
+    font-weight: 500;
+    line-height: 1.6em;
+    margin-bottom: 2em;
+    color: var(--copy-color);
+}
+
+.icon {
+    width: 3.6em;
+    height: 3.6em;
+}
+
+#thirdSection {
+    display: flex;
+}
+
+.services {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: ;
+    width: 13%;
+    align-items: space-between;
+    padding: 1.2em 3.2em;
+}
+
+.services img {
+    width: 3.6em;
+    height: 3.6em;
+}
+
+.services h3 {
+    color: red;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+.services p {
+    display: flex;
+    font-size: 1.1em;
+    font-weight: 500;
 }
 
 
