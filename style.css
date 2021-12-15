@@ -5,10 +5,11 @@
     --color-formLabel: rgba(0,0,0,0.05);
     --color-accent: #fb3e44;
     --color-white: white;
-    --color-background: #F7F4F4;
+    --color-background: #F9EFEC;
     --color-primary: #F5E6E1;
     --color-secondary: #F2DED6;
     --color-gray: #F2F2F2;
+    --color-shadow: #F4D1D2;
 }
 
 body {
@@ -146,6 +147,63 @@ nav a {
     font-family: Poppins;
     font-weight: 300;
     letter-spacing: 0.02em;
+}
+
+#firstSection {
+    background-color: var(--color-background);
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+#firstSection h1 {
+    font-size: 7em;
+    padding-top: 0.3em;
+    padding-bottom: 0;
+    margin-bottom: 0.1em;
+}
+
+#firstSection article {
+    width: 30%;
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: 500;
+    line-height: 1.8em;
+    margin-bottom: 2em;
+}
+
+.firstSection-btns-container {
+    display: flex;
+    width: 32%;
+    height: 15vh;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 8em;
+}
+
+.see-plans {
+    background-color: var(--color-accent);
+    color: white;
+    border: none;
+    padding: 1em 4em;
+    font-size: 1.4em;
+    letter-spacing: 0.3px;
+    font-family: Poppins;
+    font-weight: 500;
+    text-decoration: none;
+    box-shadow: 5px 8px var(--color-shadow);
+}
+
+.join-for-free {
+    background-color: var(--color-white);
+    color: black;
+    border: none;
+    padding: 1em 4em;
+    font-size: 1.4em;
+    letter-spacing: 0.3px;
+    font-family: Poppins;
+    font-weight: 700;
+    text-decoration: none;
 }
 
 
