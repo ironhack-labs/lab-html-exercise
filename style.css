@@ -20,11 +20,6 @@ body {
     font-size: 10px;
 }
 
-img {
-    width:30%;
-    height: 30%;
-}
-
 header > div {
     padding: 0 2em;
     display: flex;
@@ -34,12 +29,17 @@ header > div {
 }
 
 .heartCopy {
-    font-weight: 100;
+    font-weight: 300;
     text-align: left;
     font-size: 1.4em;
     letter-spacing: 0.21875px;
     text-decoration: none solid rgb(0,0,0);
     font-family: Poppins;
+}
+
+.heart-text {
+    display: flex;
+    align-items: center;
 }
 
 nav {
@@ -129,6 +129,10 @@ nav a {
     font-weight: 200;
 }
 
+.search-btn:hover {
+    background-color:#b64347;
+}
+
 .join-btn {
     text-decoration: none;
     font-size: 1.3em;
@@ -139,6 +143,12 @@ nav a {
     font-family: Poppins;
     font-weight: 400;
     margin-right: 32px;
+}
+
+.join-btn:hover {
+    background-color: var(--color-highlight);
+    color: black;
+    border: none;
 }
 
 .logIn-btn {
@@ -182,7 +192,7 @@ nav a {
     margin-bottom: 10em;
 }
 
-.see-plans {
+.see-plans-btn {
     background-color: var(--color-accent);
     color: white;
     border: none;
@@ -195,7 +205,11 @@ nav a {
     box-shadow: 5px 8px var(--color-shadow);
 }
 
-.join-for-free {
+.see-plans-btn:hover {
+    background-color:#b64347;
+}
+
+.join-for-free-btn {
     background-color: var(--color-white);
     color: black;
     border: none;
@@ -205,6 +219,10 @@ nav a {
     font-family: Poppins;
     font-weight: 700;
     text-decoration: none;
+}
+
+.join-for-free-btn:hover {
+    background-color:var(--color-highlight);
 }
 
 #secondSection {
@@ -233,11 +251,11 @@ nav a {
 
 #secondSection article {
     width: 50%;
-    font-size: 1.45em;
+    font-size: 1.38em;
     text-align: center;
     font-weight: 500;
     line-height: 1.6em;
-    margin-bottom: 2em;
+    margin-bottom: 0.3em;
     color: var(--copy-color);
 }
 
@@ -246,16 +264,16 @@ nav a {
     height: 3.6em;
 }
 
-#thirdSection {
+.services-container {
     display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .services {
     display: flex;
     flex-flow: column wrap;
-    justify-content: ;
     width: 13%;
-    align-items: space-between;
     padding: 1.2em 3.2em;
 }
 
@@ -266,14 +284,44 @@ nav a {
 
 .services h3 {
     color: red;
-    font-size: 1.2em;
+    font-size: 1.3em;
     font-weight: 700;
 }
 
 .services p {
     display: flex;
-    font-size: 1.1em;
+    font-size: 1.3em;
     font-weight: 500;
+    color: var(--copy-color);
+}
+
+.create-org-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 5em;
+}
+
+.create-org-btn {
+    display: flex;
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 1.2em 8em;
+    font-size: 1.6em;
+    letter-spacing: 0.3px;
+    font-family: Poppins;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: 5px 8px rgb(224, 204, 204);
+    
+}
+
+.create-org-btn:hover {
+    background-color:var(--color-highlight);
+    color: black;
+    box-shadow: 5px 8px rgb(230, 229, 210);
 }
 
 
