@@ -1,3 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+:root {
+    --copy-color: rgba(0,0,0,0.85);
+    --color-formLabel: rgba(0,0,0,0.05);
+    --color-accent: #fb3e44;
+    --color-white: white;
+    --color-background: #F7F4F4;
+    --color-primary: #F5E6E1;
+    --color-secondary: #F2DED6;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     font-style: normal;
@@ -8,4 +20,49 @@ body {
 img {
     width:30%;
     height: 30%;
+}
+
+header > div {
+    padding: 0 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+    margin: 0 auto;
+}
+
+.heartCopy {
+    font-weight: 100;
+    text-align: left;
+    font-size: 1.4em;
+    letter-spacing: 0.21875px;
+    text-decoration: none solid rgb(0,0,0);
+    font-family: Poppins;
+}
+
+nav {
+    width: 550px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--copy-color);
+    font-weight: 700;
+    font-size: 1.4em;
+}
+
+.blackHeart {
+    width: 20px;
+    margin-right: 1rem;
+}
+
+.logo {
+    width: 30px;
 }

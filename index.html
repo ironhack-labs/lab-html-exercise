@@ -3,13 +3,6 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,
-            400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,
-            900&display=swap"
-            rel="stylesheet">
         <title>NPM project for Ironhack</title>
     </head>
 
@@ -17,21 +10,23 @@
         <header>
             <div>
                 <div>
-                    <p><img src="images/black-heart.png" alt="black heart">Nifty Penguin Magic</p>
+                    <img class="blackHeart" src="images/black-heart.png" alt="black heart" />
+                    <span class="heartCopy"> Nifty Penguin Magic </span>
                 </div>
                 <nav>
                     <ul>
-                        <li><a href="">npm Enterprise</a></li>
-                        <li><a href="">Products</a></li>
-                        <li><a href="">Solutions</a></li>
-                        <li><a href="">Resources</a></li>
-                        <li><a href="">Docs</a></li>
-                        <li><a href="">Support</a></li>
+                        <li><a href="#"> npm Enterprise </a></li>
+                        <li><a href="#"> Products </a></li>
+                        <li><a href="#"> Solutions </a></li>
+                        <li><a href="#"> Resources </a></li>
+                        <li><a href="#"> Docs </a></li>
+                        <li><a href="#"> Support </a></li>
                     </ul>
                 </nav>
             </div>
+
             <div>
-                <img src="images/npm-logo.png" alt="npm logo in black">
+                <img class="logo" src="images/npm-logo.png" alt="npm logo in black">
                 <form action="">
                     <img src="images/magnifying-glass.png" alt="magnifying glass">
                     <input type="search" placeholder="Search Packages">
@@ -41,7 +36,8 @@
                     <a href="">Log in</a>
             </div>
         </header>
-        <section>
+
+        <section id="firstSection">
             <h1>Build amazing things</h1>
             <article>
                 <p>Essential JavaScript development tools that help you go to market faster and build 
@@ -53,7 +49,7 @@
             </div>
         </section>
 
-        <section>
+        <section id="secondSection">
             <img src="images/triangle-hexagon.svg" alt="triangle hexagon in light brown">
             <h2>Bring the best of open source to your company</h2>
             <article>
@@ -63,7 +59,7 @@
             </article>
         </section>
 
-        <section>
+        <section id="thirdSection">
             <div>
                 <img src="images/zero-configuration.svg" alt="">
                 <h3>Zero configuration</h3>
