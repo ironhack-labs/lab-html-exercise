@@ -26,13 +26,15 @@
                 </ul>
             </nav>
          </div>
-         <div class="flex">
+         <div class="flex center justify">
              <div class="flex-auto">
                 <img class="npmLogo" src="images/npm-logo.png" alt="npm logo">
              </div>
-             <form action="/search" id="search" method="post">
+             <form action="#" id="search" method="post">
+                 <div id="searchBar">
                 <img class="searchLogo" src="images/magnifying-glass.png" alt="magnifying glass">
                 <input id="inputSearch" type="text" placeholder="Search packages"> 
+                </div>
                 <button id="btnSearch" type="submit">Search</button>
             </form>
             <button><a href="http://">Join</a></button>
@@ -41,17 +43,17 @@
     </header>
     <section id="firstSection">
         <h1>Build amazing things</h1>
-        <article>
+        <article class="padd-30">
             <p>Essential Javascript development tools that help you go to the market faster and build powerful applications using modern open source code.</p>
         </article>
-        <div>
+        <div class="aligncenter">
             <button id="btnSeePlan"><a href="http://">See plans</a></button>
-            <a href="http://">Join for free</a>
+            <button id="btnJoin"><a href="#">Join for free</a></button>
         </div>
     </section>
     <section id="secondSection">
       <img id="imgHegagon" src="images/triangle-hexagon.svg" alt="hexagon">
-        <h4>Bring the best of open source to your company</h4>
+        <h3>Bring the best of open source to your company</h3>
         <article>
             <p>npm is the tool used by over 11,000.000 Javascript developers around the world. Your developers already use it. Create an Org and more out of the tools your team already knows and loves.</p>
         </article>

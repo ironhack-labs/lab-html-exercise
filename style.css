@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
 body {
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
+}
+
+a {
+  text-decoration: none;
 }
 
 header > div {
@@ -38,19 +42,47 @@ header > div {
   }
 
   .searchLogo {
-    width: 50px;
+    width: 20px;
   }
 
   #btnSearch {
       background-color: #fb3e44;
+      /* padding: .5rem 2rem .5rem 2rem; */
+      border-style: none;
+      height: 42px;
+      width: 80px;
   }
 
+#search {
+ border-style: none;
+ display: flex;
+}
+
+.justify {
+  justify-content: space-between;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 6rem;
+  padding-right: 6rem;
+  align-items: center;
+}
+
   #inputSearch {
-      color: rgba(0, 0, 0, .05);
+      background-color: rgba(0, 0, 0, .05);
+      height: 40px;
+      width: 900px;
+  }
+
+  #searchBar {
+    border: 1px solid #f2f2f2;
+    /* flex-grow: 1; */
   }
 
   .flex-auto {
-      flex: 1 1 auto;
+      /* flex: 1 1 auto; */
   }
 
   .flex {
@@ -62,7 +94,91 @@ header > div {
       background-color: rgba(232,217,217,.3);
   }
 
-  .btnSeePlan {
-      background-color: #FB3B49;
-      box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+  #firstSection {
+    height: 600px;
+    background-color: rgba(232,217,217,.3);
+    padding-top: 40px;
+  }
+
+.aligncenter {
+  text-align: center;
+}
+
+#btnSeePlan {
+  background-color: #FB3B49;
+  box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+  padding: 10px 30px;
+  margin-right: 40px;
+}
+
+#btnSeePlan a {
+  color: #ffff;
+  font-weight: 800;  
+}
+
+#btnJoin {
+  background-color: #ffff;
+  box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+  padding: 10px 30px;
+  margin-right: 40px;
+}
+
+#btnJoin a {
+  color: rgb(0, 0, 0);
+  font-weight: 800;
+}
+
+  #firstSection h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 3.25rem;
+  }
+
+  #firstSection article {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #firstSection p {
+    text-align: center;
+  }
+
+  .padd-30{
+    padding-bottom: 30px;
+
+  }
+
+  #imgHegagon {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+#secondSection {
+  height: 600px;
+  padding-top: 50px;
+  display: flex;
+justify-content: center;
+text-align: center;
+flex-direction: column;
+align-items: center;
+}
+
+#imgHegagon {
+  height: 25%;
+}
+
+  #secondSection h3 {
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg, 0deg);
+    display: flex;
+    justify-content: center;
+    font-style: italic;
+    margin: 5% 15%;
+    font-size: 2rem;
+  }
+
+  #secondSection article {
+    width: 400px;
   }
