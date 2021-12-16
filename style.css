@@ -43,6 +43,11 @@ header > div {
     margin-right: 1rem;
   }
 
+  .searchIkon {
+    width: 15px;
+    margin-left: 1rem;
+  }
+
   .search {
     color: rgba(0,0,0,0.5);
     background-color: lightgrey;
@@ -50,12 +55,10 @@ header > div {
     margin-top: 5px;
     margin-bottom: 5px;
     width: 90em;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
-    
   }
   
   .search input{
@@ -72,21 +75,13 @@ header > div {
     display: inline-flex;
     background-color: #fb3e44;
     color: white;
-    margin-top: -10px;
-    margin-bottom: -10px;
+    margin: auto 0;
     border-style: none;
     font-weight: 600;
-    
     height: 35px;
     flex: 0.3 1 auto;
     justify-content: center;
     align-items: center;
-    padding: 0px;
-  }
-
-  .searchIkon {
-    width: 15px;
-    /*margin-right: 0.1rem;*/
   }
 
   .join{
@@ -98,7 +93,6 @@ header > div {
     color: black;
     padding: 10px 20px;
     margin-left: 0.2rem;
-    
   }
   
   .login{
@@ -119,16 +113,16 @@ header > div {
     background-color: rgba(232,217,217,.3);
   }
 
-  #section1 h1{
+  #section1 > h1{
     font-size: 100px;
+    margin: 10px auto;
   }
 
-  #section1 p{
+  #section1 > article{
     text-align: center;
     width: 430px;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 30px auto;
   }
 
   .seePlans{
@@ -157,27 +151,70 @@ header > div {
     justify-content: center;
     align-items:center;
     flex-direction:column;
-    height: 600px;
+    height: 500px;
   }
 
   .triangle {
     width: 200px;
+    margin: 50px auto;
   }
 
-  #section2 h2{
+  #section2 > h2{
     background-color: rgba(255,204,53,.4);
     transform: skew(9deg,0deg);
     font-style: italic;
     padding: 0px 30px;
   }
 
-  #section2 p{
+  #section2 > article{
     font-size: 12px;
     text-align: center;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    /*margin-left: auto;
+    margin-right: auto;*/
+    margin: 10px auto;
     width: 580px;
   }
 
+  #section3 > div {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px 50px;
+    
+  }
+
+  #section3 > div > article {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: right;
+    
+  }
+
+  #section3 > div > article >img {
+    width: 40px;
+  }
+
+  #section3 > div > article > h4 {
+    color: #ED1C24;
+  }
+
+  #section3 > div > article > p {
+    width: 250px;
+}
+
+.createOrg{
+  box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+  background-color: black;
+  color: white;
+  font-size: 15px;
+  border-style: none;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px 10px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  width: 200px;
+}
   
