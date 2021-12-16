@@ -1,85 +1,115 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
+      <div>
         <div>
-            <div>
-                <img  class="blackHeart" src="images/black-heart.png" alt="black heart">
-                <span> Nifty Penguin Magic </span>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#">npm Enterprise</a></li>
-                    <li><a href="#">Products</a></li>
-                    <li><a href="#">Solutions</a></li>
-                    <li><a href="#">Resources</a></li>
-                    <li><a href="#">Docs</a></li>
-                    <li><a href="#">Support</a></li>
-                </ul>
-            </nav>
-         </div>
-         <div class="flex center justify">
-             <div class="flex-auto">
-                <img class="npmLogo" src="images/npm-logo.png" alt="npm logo">
-             </div>
-             <form action="#" id="search" method="post">
-                 <div id="searchBar">
-                <img class="searchLogo" src="images/magnifying-glass.png" alt="magnifying glass">
-                <input id="inputSearch" type="text" placeholder="Search packages"> 
-                </div>
-                <button id="btnSearch" type="submit">Search</button>
-            </form>
-            <button><a href="http://">Join</a></button>
-            <button><a href="http://">Log In</a></button>
-         </div>
+          <img
+            class="blackHeart"
+            src="images/black-heart.png"
+            alt="black heart"
+          />
+          <span> Nifty Penguin Magic </span>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#">npm Enterprise</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Solutions</a></li>
+            <li><a href="#">Resources</a></li>
+            <li><a href="#">Docs</a></li>
+            <li><a href="#">Support</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="">
+        <div class="flex-auto">
+          <img class="npmLogo" src="images/npm-logo.png" alt="npm logo" />
+        </div>
+        <form action="#" id="search" method="post">
+          <div id="searchBar">
+            <img
+              class="searchLogo"
+              src="images/magnifying-glass.png"
+              alt="magnifying glass"
+            />
+            <input id="inputSearch" type="text" placeholder="Search packages" />
+          </div>
+          <button id="btnSearch" type="submit">Search</button>
+        </form>
+        <div class="flex">
+          <button id="btnHeaderJoin"><a href="#">Join</a></button>
+          <button id="btnLogin"><a href="#">Log In</a></button>
+        </div>
+      </div>
     </header>
     <section id="firstSection">
-        <h1>Build amazing things</h1>
-        <article class="padd-30">
-            <p>Essential Javascript development tools that help you go to the market faster and build powerful applications using modern open source code.</p>
-        </article>
-        <div class="aligncenter">
-            <button id="btnSeePlan"><a href="http://">See plans</a></button>
-            <button id="btnJoin"><a href="#">Join for free</a></button>
-        </div>
+      <h1>Build amazing things</h1>
+      <article class="padd-30">
+        <p>
+          Essential Javascript development tools that help you go to the market
+          faster and build powerful applications using modern open source code.
+        </p>
+      </article>
+      <div class="aligncenter">
+        <button id="btnSeePlan"><a href="http://">See plans</a></button>
+        <button id="btnJoin"><a href="#">Join for free</a></button>
+      </div>
     </section>
     <section id="secondSection">
-      <img id="imgHegagon" src="images/triangle-hexagon.svg" alt="hexagon">
-        <h3>Bring the best of open source to your company</h3>
-        <article>
-            <p>npm is the tool used by over 11,000.000 Javascript developers around the world. Your developers already use it. Create an Org and more out of the tools your team already knows and loves.</p>
-        </article>
+      <img id="imgHegagon" src="images/triangle-hexagon.svg" alt="hexagon" />
+      <h3>Bring the best of open source to your company</h3>
+      <article>
+        <p>
+          npm is the tool used by over 11,000.000 Javascript developers around
+          the world. Your developers already use it. Create an Org and more out
+          of the tools your team already knows and loves.
+        </p>
+      </article>
     </section>
     <section id="thirdSection">
+      <div class="row">
         <div>
-            <img src="images/zero-configuration.svg" alt="Zero configuration">
-            <h5>Zero configuration</h5>
-            <p>Create an Org, add your team, and start collaborating. Nothing to configure, set up, or manage.</p>
+          <img src="images/zero-configuration.svg" alt="Zero configuration" />
+          <h5>Zero configuration</h5>
+          <p>
+            Create an Org, add your team, and start collaborating. Nothing to
+            configure, set up, or manage.
+          </p>
         </div>
         <div>
-            <img src="images/team-management.svg" alt="Team management">
-            <h5>Team management</h5>
-            <p>Control who has accedd to what modules within your team namespace using straightforward team management capabilities.</p>
+          <img src="images/team-management.svg" alt="Team management" />
+          <h5>Team management</h5>
+          <p>
+            Control who has accedd to what modules within your team namespace
+            using straightforward team management capabilities.
+          </p>
         </div>
         <div>
-            <img src="images/familiar-features.svg" alt="Familiar features">
-            <h5>Familiar features</h5>
-            <p>npm Orgs has 100% parity with all the public mpm registry features your developers already use.</p>
+          <img src="images/familiar-features.svg" alt="Familiar features" />
+          <h5>Familiar features</h5>
+          <p>
+            npm Orgs has 100% parity with all the public mpm registry features
+            your developers already use.
+          </p>
         </div>
         <div>
-            <img src="images/npm-audit.svg" alt="npm audit">
-            <h5>npm audit</h5>
-            <p>Enjoy the security auditing features build into the npm client, a zero-friction way to make open source software safer.</p>
+          <img src="images/npm-audit.svg" alt="npm audit" />
+          <h5>npm audit</h5>
+          <p>
+            Enjoy the security auditing features build into the npm client, a
+            zero-friction way to make open source software safer.
+          </p>
         </div>
-        <buttton><a href="">Create an Org</a></buttton>
+      </div>
+      <buttton id="btnCreate"><a href="#">Create an Org</a></buttton>
     </section>
-</body>
+  </body>
 </html>
