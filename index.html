@@ -27,20 +27,22 @@
         </div>
         <div class="search-container" >
             <img src="./images/npm-logo.png" alt="npm logo">
-            <img src="./images/magnifying-glass.png">
-            <form  action="/search" method="get">
-                <input type="text" placeholder="Search packages">
-                <button class="search-btn" type="search">Search</button>
+            <form class="form" action="/search"  method="get">
+                    <img src="./images/magnifying-glass.png">
+                    <input class="placeholder" type="text"  placeholder="Search packages">
+                    <button class="search-btn" type="button">Search</button>
             </form>
-            <a href="#">Join</a> <a href="#">Log in</a>
+           <button class="join-btn">Join</button> <span>Log in</span>
         </div>
     </header>
 
     <section id="first-sect">
         <h1>Build amazing things</h1>
         <p>Essential JavaScript development tools that help you go to market faster and build powerful applications using modern open source code.</p>
-        <a href="#">See plans</a>
-        <a href="#">Join for free</a>
+        <div>
+            <button class="plans-btn"> See plans</button>
+            <button class="joinfree-btn"> Join for free</button>
+        </div>
     </section>
 
     <section id="second-sect">

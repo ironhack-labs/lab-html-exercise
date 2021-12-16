@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
-
+*{
+  margin: 4px;
+  color: black;
+}
 body {
   font-family: 'Poppins';
 }
@@ -9,6 +12,7 @@ header > div {
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid lightgray;
+    
   }
   
   nav {
@@ -18,8 +22,9 @@ header > div {
   nav ul {
     list-style: none;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+    padding: 0 0 0 50px;
   }
   
   nav a {
@@ -32,24 +37,56 @@ header > div {
     margin-right: 1rem;
   }
 
-  header > div > img {
-    width: 50px;
-  }
-
   .search-container {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-around;
-    align-items: baseline;
-    align-content:space-around;
+    align-content: center;
     color: rgba(0, 0 , 0, .05);
-    
+    margin: 0;
+    padding: 0 25px;
+  }
+  .search-container > img {
+    width: 60px;  
+  }
+
+  .search-container > form > img {
+    width: 15px;
+    position: relative;
+    top: 5px;
+    left: 10px;
+  }
+
+  .placeholder {
+    width: 650px;
+    padding: 10px;
+    border: 0px;
+    background-color: rgba(0,0,0,.05);
+    margin: 0px;
+    text-align-last: auto;
+  }
+  .form {
+    background-color: rgba(0,0,0,.05);
+
   }
 
   .search-btn {
     background-color: #fb3e44;
     color: white;
+    border: 0px;
+    margin: 0;
+    padding: 10px;
+  }
+  .join-btn{
+    border-bottom: 10px;
+    background-color: white;
+    box-shadow: 2px 2px 0 lightgray;
+    border-color: lightgray;
+    width: 50px;
+    margin: 0px;
+    padding: 5px;
+    
   }
 
   #first-sect {
@@ -70,8 +107,34 @@ header > div {
        
   }
 
+  #first-sect p {
+    margin: 10px 350px;
+    text-align: center;
+  }
+
+  .plans-btn{
+    background-color: #FB3B49;
+    color: white;
+    width: 250px;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+    border: 0px;
+    margin: 25px;
+    font-size: 15px;
+    padding: 20px;
+  }
+
+  .joinfree-btn{
+    background-color: white;
+    color: black;
+    width: 250px;
+    border: 0px;
+    margin: 25px;
+    font-size: 15px;
+    padding: 20px;
+    font-weight: bold;
+  }
   #second-sect {
-    background-color: rgba(232, 217, 217, .3);
+    height: 500px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -79,6 +142,7 @@ header > div {
     align-items: center;
     align-content: space-around;
     text-align: center;
+    margin: 10px;
   }
 
   #second-sect img {
@@ -87,10 +151,16 @@ header > div {
 
   #second-sect h2 {
    background-color: rgba(255,204,53,.4);
+   transform: skew(9deg,0deg);
+   font-style: italic;
+   margin: 30px;
+   text-align: center;
+
   }
   
   #second-sect p {
-    margin: 0 auto 30px auto;
+    margin: 10px 250px;
+    text-align: center;
   }
 
   #third-sect {
