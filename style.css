@@ -42,32 +42,28 @@ header > div {
     flex-wrap: nowrap;
     justify-content: space-around;
     align-content: center;
-    color: rgba(0, 0 , 0, .05);
-    margin: 0;
-    padding: 0 25px;
+  }
+  .search-container a {
+    text-decoration: none;
+
   }
   .search-container > img {
     width: 60px;  
   }
-
+ 
   .search-container > form > img {
-    width: 15px;
+    width: 20px;
     position: relative;
-    top: 5px;
-    left: 10px;
+    top: 8px;
+    right: 730px;
   }
 
   .placeholder {
-    width: 650px;
-    padding: 10px;
+    width: 700px;
+    padding: 13px 0 10px 30px;
     border: 0px;
     background-color: rgba(0,0,0,.05);
     margin: 0px;
-    text-align-last: auto;
-  }
-  .form {
-    background-color: rgba(0,0,0,.05);
-
   }
 
   .search-btn {
@@ -75,19 +71,26 @@ header > div {
     color: white;
     border: 0px;
     margin: 0;
-    padding: 10px;
+    padding: 7px 20px 6px 20px;
+    position: relative;
+    right: 37px;
+    font-family: "poppins";
+    font-size: 16px;
   }
-  .join-btn{
-    border-bottom: 10px;
-    background-color: white;
-    box-shadow: 2px 2px 0 lightgray;
-    border-color: lightgray;
-    width: 50px;
-    margin: 0px;
-    padding: 5px;
-    
+  .join-btn {
+    padding: 0px 20px;
+    font-family: "poppins";
+    font-size: 16px;
+    background-color: transparent;
+    box-shadow: 2px 2px lightgray;
+    border-bottom: 0px;
+    border-right: 0px;
+    list-style-type: none;
   }
+  .join-btn a {
+    text-decoration: none;
 
+  }
   #first-sect {
     height: 600px;
     display: flex;
@@ -99,9 +102,9 @@ header > div {
     background-color: rgba(232, 217, 217, .3);
     
  }
-
+  
   #first-sect h1 {
-      font-size: 70px;
+      font-size: 80px;
       font-weight: bolder;
        
   }
@@ -120,8 +123,14 @@ header > div {
     margin: 25px;
     font-size: 15px;
     padding: 20px;
+    font-weight: bolder;
+    text-decoration: none;
+    list-style: none;
   }
+  .plans-btn a {
+    text-decoration: none;
 
+  }
   .joinfree-btn{
     background-color: white;
     color: black;
@@ -130,7 +139,12 @@ header > div {
     margin: 25px;
     font-size: 15px;
     padding: 20px;
-    font-weight: bold;
+    font-weight: bolder;
+  }
+
+  .joinfree-btn a {
+    text-decoration: none;
+
   }
   #second-sect {
     height: 500px;
@@ -152,30 +166,37 @@ header > div {
    background-color: rgba(255,204,53,.4);
    transform: skew(9deg,0deg);
    font-style: italic;
+   font-size: 30px;
    margin: 30px;
-   text-align: center;
    padding: 0 20px;
   }
   
   #second-sect p {
-    margin: 10px 350px;
+    margin: 0 330px;
     text-align: center;
+    font-size: 12px;
   }
 
   #third-sect {
     display: flex;
 	  flex-direction: row;
 	  flex-wrap: nowrap;
-	  justify-content: space-around;
+	  justify-content: space-between;
 	  align-items: baseline;
 	  align-content: space-around;
+    padding: 0px;
   }
 
   .third-sect {
-    margin: 0 200px;
+    margin: 0 170px 40px;
+    padding: 30px;
+  }
+  .third-sect > div {
     padding: 20px;
   }
-
+  #third-sect > div > p {
+    font-size: 12px;
+  }
   #third-sect > div > img {
     width: 30px;
   }
@@ -194,6 +215,6 @@ header > div {
     display: block;
     padding: 10px 80px;
     font-size: 15px;
-    box-shadow: 6px 6px 0 rgba(173, 160, 161, 0.2);
+    box-shadow: 8px 8px 0 rgba(173, 160, 161, 0.2);
     margin-bottom: 40px;
 }
