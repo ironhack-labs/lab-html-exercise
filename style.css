@@ -34,6 +34,8 @@ nav a {
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
+  align-items: stretch;
+  align-items: flex-end;
 }
 .search-btn {
   background-color: rgba(255, 0, 0, 0.5);
@@ -45,23 +47,21 @@ nav a {
 }
 .search-field{
 border-style: none;
-padding: 0;
+padding: 0 10px 0 30px;
 height: 40px;
 width: 1500px;
-margin-left: 10px 0 10px 0;
+margin: 0;
 background-color: rgba(0,0,0,.05);
+background-image: url('images/magnifying-glass.png');
+background-repeat: no-repeat;
+background-size: 25px;
+background-position:left center;
 }
 .logo {
   height: 24px;
   padding: 5px;
   margin: 30px 10px 0 0;
   }
-  .search-icon {
-  width: 24px;
-  height: 24px;
-  padding: 5px;
-  margin: 10px 0 10px 0;
-    }
     .btn-join-login{
   justify-content: flex-end;
   align-items: center;
@@ -70,7 +70,7 @@ background-color: rgba(0,0,0,.05);
     }
     #top {
       text-align: center;
-      margin: 0 auto;
+      margin: auto;
       padding: 100px 0;
       background-color: rgba(232,217,217,.3);
       height: 600px;
@@ -117,22 +117,29 @@ font-size: 100px;
     #middle{
       background-color: white;
       height: 600px;
-      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+      
     }
           #middle > h1{
             background-color: rgba(255,204,53,.4);
             transform: skew(9deg,0deg);
             font-style: italic;
-            font-size: 60px;
+            font-size: 50px;
+            width: 1200px;
           }
           #middle > img {
             font-size: 60px;
             height: 280px;
             margin: 70px 0 10px 0;
           }
-          #middle > article > span {
+          #middle > article > p {
              font-size: 20px;
              margin: 0 0 30px 0;
+             text-align: center;
           }
           #lower{
             background-color: white;
