@@ -5,16 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NPM</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <header>
+    <header id="header">
       <div>
         <div>
-          <img src="images/black-heart.png" alt="Image of a black heart" />
+          <img class="black-heart" src="images/black-heart.png" alt="Image of a black heart" />
           <span>Nifty Penguin Magic</span>
         </div>
         <nav>
-          <ul>
+          <ul class="nav-list">
             <li><a href="#">npm Enterprise</a></li>
             <li><a href="#">Solutions</a></li>
             <li><a href="#"> Products</a></li>
@@ -25,13 +26,14 @@
         </nav>
       </div>
       <div>
-        <img src="images/npm-logo.png" alt="npm logo" />
-        <form action="">
-          <img src="images/magnifying-glass.png" alt="search bar icon" />
-          <input type="text" />
+        <img class="npm-logo" src="images/npm-logo.png" alt="npm logo" />
+        <form action="/idk" method="get" id="search-form">
+            <label for="search-bar">
+          <img class="icon"src="images/magnifying-glass.png" alt="search bar icon" /></label>
+          <input type="text" id="search-bar" name="q" placeholder="Search packages"/>
           <button type="submit">Search</button>
         </form>
-        <a href="#">Join</a>
+        <a id="join-btn" href="#">Join</a>
         <a href="#">Login</a>
       </div>
     </header>
