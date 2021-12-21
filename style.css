@@ -2,34 +2,18 @@
 
 body {
   font-family: 'Poppins';
-}
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
 
-h1 {
-    font-size: 4em;
-    text-align: center;
-}
-
-h2 {
-    font-size: 2em;
-    font-style: oblique;
-    text-align: center;
-}
-
-h3 {
-    font-size: 1.2em;
-    text-align: center;
 }
 
 header > div {
     padding: 0 25px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between;  
     align-items: center;
-    border-bottom: 1px solid lightgrey;   
-}
-
-header .shadow-bottom {
-    box-shadow: 0px 2px 0px rgba(223, 172, 223, 0.705)
+    border-bottom: 1px solid lightgrey;
 }
 
 nav {
@@ -37,10 +21,10 @@ nav {
 }
 
 nav ul {
-    list-style: none;
+    list-style: none;   
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center;     
 }
 
 nav a {
@@ -53,184 +37,194 @@ nav a {
     margin-right: 1rem;
 }
 
-span {
-    position: relative;
-    right: 550px;
+.header2 {
+    padding-bottom: 5px;
+    padding-top: 5px;
 }
 
 .logo {
-    width: 60px;
-    margin-right: 1rem;
+    width: 70px;
+    margin-right: 15px;
 }
 
 form {
-     width: 1800px;
-     margin-right: 50px;
-     display:flex;
-     justify-content: space-between;
-     padding-top: 0.5%;
-     padding-bottom: 0.5%;
-
-}
-
-form label {
-    background-color:rgba(0,0,0,.05);
-    padding-right: 10px;
-}
-
-form input {
-    background-color:rgba(0,0,0,.05);
-    border-style: none;
-    padding-left: 10px;
-    width: 100%   
-}
-
-form button {
-    background-color:#fb3e44;
-    color: white;
-    border-style: none;
-    width: 100px;
-    font-size: 0.8em;
-    padding: 10px;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;       
 }
 
 .lupa {
-    width: 20px;
-    padding-top: 5px;
-    padding-left: 10px;
+    width: 25px;
+   
 }
 
-.firstlinks {
+form label {
+    background-color: rgba(0,0,0,.05);  
+    width: 4%;
+    height: 42px;     
     display: flex;
-    justify-content: space-evenly;
-    text-align: center;
+    align-items: center; 
+    justify-content: center;    
 }
 
-.firstlinks a {
-    width: 100px;
-    padding: 3px 0px;
-    text-decoration: none;
-    color: black;
-
+form input {
+    font-size: 1em;
+    border: none;
+    height: 40px;
+    width: 90%;
+    background-color: rgba(0,0,0,.05);     
 }
 
-#linkbox {
-    border: 1px solid black;
-
-}
-
-#introduction {
-    height: 600px;  
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    background-color: rgba(232,217,217,.3);
-}
-
-#introduction article {
-    width: 22%;
-    padding: 20px;
-    position: relative;
-    text-align: center;
-    bottom: 70px;
-}
-
-#introduction div {
-    width: 22%;
-    display: flex;
-    justify-content: space-evenly;
-    position:relative;
-    bottom: 70px;    
-}
-
-#introduction a {
-    padding: 10px 60px;
-    text-decoration: none;
-}
-
-#joinforfree {
-    color: black;
-    font-weight: bold;   
-}
-
-#seeplans {
+form button {
+    border: none;
     background-color:#fb3e44;
     color: white;
-    font-weight: normal;
-    box-shadow: 8px 8px 0 rgb(231, 170, 170)    
+    padding: 14px 20px;
+    width: 10%;    
 }
 
-#message {
+#join {
+    border: 1px solid black;
+    padding: 3px 13px 3px 13px;
+    text-decoration: none;
+    color: black;
+    margin: 5px;
+}
+
+#login {
+    text-decoration: none;
+    color: black;
+    margin: 5px;
+}
+
+#intro {
+    background-color: rgba(232,217,217,.3);
     height: 600px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
-#message h2 {
-    background-color: rgba(255,204,53,.4);
-    transform: skew(9deg,0deg);
-    padding: 0 30px;
-    font-style: italic;
+
+h1 {
+    font-size: 4em;
+    text-align: center;        
 }
 
-#message article {
-    width: 37%;
-    padding: 20px;
-    position: relative;
+
+#intro article {
+    font-size: 1.1em;
+    width: 450px;
+    height: 100px;
     text-align: center;
-    bottom: 30px;
-    font-size: 0.9em;
+    margin-bottom: 50px;
+    display:flex;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-#message .triangle {
-    height: 250px; 
+
+.links-pair {
+    font-size: 1.1em;
+    text-align: center;
+    width: 490px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
+#seePlans {
+    width: 120px;
+    height: 30px;
+    text-decoration: none;
+    background-color: #FB3B49;
+    color:white;
+    padding: 15px 50px;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+}
 
-#information {
-    height: 600px;  
+#joinForFree {
+    width: 120px;
+    height: 30px;
+    text-decoration: none;
+    background-color: white;
+    color:black;
+    padding: 15px 50px;
+}
+
+#polygon {
+    height: 600px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.fourbox {
-    display: flex;
-    margin: 70px 70px 0 70px;
-}
-
-.info-pack {
-    width: 400px;
-}
-
-.info-pack h3 {
-    color: #ED1C24;
-    text-align: justify;
-}
-
-.info-pack p {
-    width: 200px;
-    text-align:left
-}
-
-#information img {
-    height: 30px; 
-    margin-left: 1rem;
-}
-
-#org-button {
-    display: flex;
     align-items: center;
     justify-content: center;
-    text-decoration: none;
-    width:350px;
-    height: 50px;
+}
+
+h2 {
+    background-color:rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+    font-style: italic;
+    font-size: 2em;
+    text-align: center;  
+    margin-top: 60px;     
+}
+
+.polygonImage {
+    width: 200px;
+}
+
+#polygon article {
+    width: 750px;
+    height: 100px;
+    font-size: 0.9em;
+    text-align: center;
+    margin-bottom: 50px;
+    display:flex;
+    align-items: center;
+}
+
+
+#blocks {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:space-evenly;
+    margin-bottom: 10px;
+}
+
+#blocks > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 1200px;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 20px;    
+}
+
+h3 {
+    color: #ED1C24
+}
+
+.blockImage {
+    width: 30px;
+}
+
+#blocks button {
     background-color: black;
+    font-size: 1.15em;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    padding: 20px 130px;
     color: white;
-    box-shadow: 8px 8px 0 rgba(128,83,35.2)
+    margin-top: 60px;
 }
