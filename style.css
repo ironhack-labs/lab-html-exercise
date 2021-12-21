@@ -1,12 +1,12 @@
     @import url('https://fonts.googleapis.com/css?family=Poppins');
-    /** {
-        outline: 1px solid red !important;
-    }*/
+    * {
+        outline: 1px solid red;
+    }
     
     body {
         font-family: 'Poppins';
         padding: 0px;
-        margin: 10px;
+        margin: 30px;
     }
     
     header>div {
@@ -52,7 +52,6 @@
     form {
         display: flex;
         background-color: #f2f2f2;
-        width: 85%;
         justify-content: space-between;
         align-items: center;
     }
@@ -60,6 +59,16 @@
     .search-bar {
         display: flex;
         justify-content: space-between;
+        width: 80%;
+    }
+    
+    .barra {
+        display: flex;
+        justify-content: flex-start;
+    }
+    
+    .barra input {
+        margin-left: 10px;
     }
     
     .search-bar img {
@@ -160,4 +169,55 @@
         font-size: 0.9em;
         text-align: center;
         margin-bottom: 50px;
+    }
+    
+    #section-3 {
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .boxes {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .boxes div {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 15%;
+        padding: 0px 30px;
+    }
+    
+    .boxes>div>img {
+        height: 20px;
+        width: 30px;
+    }
+    
+    .boxes h3 {
+        color: #ED1C24;
+        font-size: 0.9em;
+        font-weight: 900;
+        margin-top: 20px;
+    }
+    
+    .boxes p {
+        font-size: 0.9em;
+        font-weight: 400;
+    }
+    
+    #section-3 a {
+        text-decoration: none;
+        color: white;
+        background-color: black;
+        box-shadow: 8px 8px 0 rgba(128, 83, 35, .2);
+        padding: 12px 100px;
+        margin-top: 70px;
+        margin-bottom: 30px;
+        font-weight: 900;
     }
