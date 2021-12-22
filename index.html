@@ -2,6 +2,7 @@
 <html lang="en">
     <header>
         <meta charset="utf-8"/>
+        <link rel="stylesheet" href="./style.css"/>
         <div>
           <div>
             <img class="blackHeart" src="./images/black-heart.png" alt="black heart" />
@@ -19,14 +20,14 @@
           </nav>
         </div>
       
-        <div>
-          <img src="./images/npm-logo.png" alt="LOGO"/>
-          <img src="./images/magnifying-glass.png" alt="Searcj" />
-          
-          <form action="/some-url" method="post">
-              <input type="text" name="username" id="packages" placeholder="Search packages">
-              <input type="button" value="Search" />
+        <div class="logo">
+            <img class="logopicture" src="./images/npm-logo.png" alt="LOGO"/>
+            <img class="magnifying" src="./images/magnifying-glass.png" alt="Searcj" />
+            <form action="/some-url" method="post">
+                <input type="text" name="username" id="packages" placeholder="Search packages">
+                <input type="button" value="Search" />
            </form>
+           <a href="/searchresult-page" target="_blank"> Search</a>
            <a href="/joinpage-page" target="_blank">Join</a>
            <a href="/login-page" target="_blank">Log in</a>
 
@@ -37,14 +38,14 @@
       <body>
 <!-- Section 1 -->
         <section class="section1" id="build">
-            <h1>Build Amazing things</h1>
+            <h1><strong>Build Amazing things</strong></h1>
             
             <article>
                 <p>Essential JavaScript development tools that help you go to market faster and build powerful applications using
                     modern open source code.</p>
             </article>
             <div>
-                <a href="/seeplans-page" target="_blank">Plans</a>
+                <a class="plans" href="/seeplans-page" target="_blank">Plans</a>
                 <a href="/joinforfree-page" target="_blank">Join for free</a>
             </div>
         </section>
