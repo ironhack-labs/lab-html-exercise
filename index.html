@@ -20,19 +20,25 @@
           </nav>
         </div>
       
-        <div class="logo">
-            <img class="logopicture" src="./images/npm-logo.png" alt="LOGO"/>
-            <img class="magnifying" src="./images/magnifying-glass.png" alt="Searcj" />
-            <form action="/some-url" method="post">
-                <input type="text" name="username" id="packages" placeholder="Search packages">
-                <input type="button" value="Search" />
-           </form>
-           <a href="/searchresult-page" target="_blank"> Search</a>
-           <a href="/joinpage-page" target="_blank">Join</a>
-           <a href="/login-page" target="_blank">Log in</a>
+        <div>
+            <div class="logo">
+                <img class="logopicture" src="./images/npm-logo.png" alt="LOGO"/>
+                <img class="magnifying" src="./images/magnifying-glass.png" alt="Searcj" />
+                <form action="/some-url" method="post">
+                    <input type="text" name="search" id="packages" placeholder="Search packages">
+                </form>
+            </div>
+            <nav class="stylenav">
+                <ul>
+                    <li><a class="plans" href="/searchresult-page" target="_blank"> Search</a></li>
+                    <li><a class="border" href="/joinpage-page" target="_blank">Join</a></li>
+                    <li><a class="border" href="/login-page" target="_blank">Log in</a></li>
+                </ul>
+            </nav>
+        </div>
 
             <!-- add logo, search bar and buttons (or links and style them as buttons later) -->
-        </div>
+        
       </header>
       
       <body>
