@@ -1,60 +1,60 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
 body {
-  font-family: 'Poppins';
+     font-family: 'Poppins';
 }
 
 /* Header styles */
-  header > div {
-    padding: 0 25px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid lightgray;
-  }
+header > div {
+     padding: 0 25px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     border-bottom: 1px solid lightgray;
+}
 
-  body {
-      margin: 0;
-      padding: 0;
-  }
+body {
+     margin: 0;
+     padding: 0;
+}
   
-  nav {
+nav {
     width: 600px;
-  }
+}
   
-  nav ul {
+nav ul {
     list-style: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
+}
   
-  nav a {
+nav a {
     text-decoration: none;
     color: black;
-  }
+}
   
-  .blackHeart {
+.blackHeart {
     width: 20px;
     margin-right: 1rem;
-  }
+}
 
   /* Header styles end */
 
   /* Search bar */
-  .logo {
+.logo {
     padding: 0 25px;
     width: 80px;
     height: 20px;
-  }
+}
 
-  .mag-glass {
+.mag-glass {
     width: 25px;
     height: 25px;
-  }
+}
 
 
-  .container {
+.container {
 
     display: flex;
     flex-direction: row;
@@ -67,50 +67,164 @@ body {
     width: auto;
     box-shadow: 0px 6px 4px var(--color-gray);
     
-    }
+}
 
-    .search-field {
-      width: 850px;
-    }
+.search-field {
+     width: 850px;   /* remember something about creating bar in CSS only...? */
+}
 
-    .search-btn {
-      background-color: red  
-    }
+.search-btn {
+     background-color: red  
+}
 
-    /* Search bar */
+    /* Search bar end */
 
 
-    /* section 1*/
+    /* section 1 */
 
-    #section-1 {
-       background-color: rgba(232,217,217,.3);
-       height: 600px;
-       text-align: center;
-       padding-top: 50px;
+#section-1 {
+     background-color: rgba(232,217,217,.3);
+     height: 600px;
+     text-align: center;
+     padding-top: 50px;
 
-    }
-        
-    #section-1 > article {
-       display: inline-block;
-       padding-bottom: 100px;
-    }
+}
+       
+#section-1 > article {
+     display: inline-block;
+     padding-bottom: 100px;
+}
 
-    #section-1 > h1 {
-        font-size: 4em;
-    }
+#section-1 > h1 {
+     font-size: 4em;
+}
 
-    .buton1 {
-        border: 1px solid #FB3B49;
-        background-color: #FB3B49;
-        color: white;
-        padding: 20px 50px; 
-    }
+#section-1 > nav {
+     width: none;
+     display: flex;
+     flex-direction: row;
+     justify-content: flex-end;
+}
 
-    .buton2 {
-        padding: 20px 50px; 
-    }
+#section-1 .buton1 {
+     border: 1px solid #FB3B49;
+     background-color: #FB3B49;
+     color: white;
+     padding: 20px 50px; 
+}
+
+#section-1 .buton2 {
+     padding: 20px 50px; 
+}
+#section-1 .buton-prop {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 75px;
+    margin-bottom: 200px;;
+    box-shadow: 8px 8px 0px rgba(251,59,73,.2);    /* not working perfect at all */
+}
     
 
+    /* section 2 */
+    
+#section-2 {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+}
 
 
-        
+#section-2 .logo {
+     width: 150px;
+     height: 150px;
+
+}
+
+#section-2 h2 {
+     background-color: rgba(255,204,53,.4);
+     font-style: italic;
+     padding: 0px 30px;
+     transform: skew(9deg,0deg);                 /* supposed to be background only... */
+}
+
+#section-2 article {
+     line-height: 1.0;
+     text-align: center;
+     padding-bottom: 80px;
+}
+
+#section-2 .text {
+     font-size: 10px;
+
+}
+
+   /* section 3 */
+
+#section-3 {
+  margin-left: 25px;
+}
+
+#section-3 h3 {
+    padding: 5px;
+    text-align: left;
+    color: #ED1C24;
+    border: 2px solid brown;
+    margin: 0px 30px;            
+}
+
+#section-3 .logo {
+    width: 30px;
+    height: 30px;
+}
+#section-3 .flex-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#section-3 .box-left {
+    width: 300px;                 /*  fits my window - should have been dynamic I guess... */
+    height: 250px;
+    border: solid red;
+    border-width: 6px 3px 6px 6px;
+}    
+
+#section-3 .box-middle {
+    width: 300px;
+    height: 250px;
+    border: solid red;
+    border-width: 6px 3px;        /* top and bottom 4px, left and right 2px */
+}
+
+#section-3 .box-right {
+    width: 300px;
+    height: 250px;
+    border: solid red;
+    border-width: 6px 6px 6px 3px;   
+}  
+
+#section-3 .content {
+    diplay: inline-block;
+    font-size: 14px;
+    margin-left: 35px;
+    width: 230px;
+    text-align: left;
+}
+
+#section-3 .buton {
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    padding: 10px 125px;
+}
+
+#section-3 .buton-prop {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 75px;
+    margin-bottom: 200px;;
+    box-shadow: 8px 8px 0px rgba(128,83,35,.2);    /* not working perfect at all */
+}
+
