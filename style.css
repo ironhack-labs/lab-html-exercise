@@ -40,13 +40,16 @@ nav a {
   box-sizing: border-box;
   height: 18px;
   width: 100%;
-  padding: 0 30px 0 25px;
+  padding: 0 25px 0 25px;
   margin-top: 10px;
 }
 
 .handGlass {
   background-size: contain;
   height: 18px;
+  position: absolute;
+  left: 5px;
+  text-align: center;
 }
 
 .logo {
@@ -74,12 +77,6 @@ nav a {
   position: relative;
   padding: 0;
   margin: 0;
-}
-
-.handGlass {
-  position: absolute;
-  left: 5px;
-  text-align: center;
 }
 
 .input_container > div {
@@ -205,6 +202,11 @@ nav a {
   padding-bottom: 165px;
 }
 
+/* Set padding-bottom in the container (section) where button is, in order to create the extra blank space after the button create org.
+So, where the content of the container ends (including the 5 children down-img and orgButton) extra space is added (padding)
+and it is added to the total height of the container. */
+/*https://stackoverflow.com/questions/10815188/adding-whitespace-at-bottom-of-html-page */
+
 .npm-capabilities > article {
   width: 225px;
   text-align: left;
@@ -233,3 +235,15 @@ nav a {
 /* top  left: 50%  transform:translate(-50%, -50%)
 in order to center horizontally (and vertically) a child block element 
 (flexbox already applied in the parent element for the whole banch of child elements) */
+
+.npm-capabilities > article > h5 {
+  color: #ed1c24;
+}
+
+#zero-config {
+  width: 250px;
+}
+
+#famil-features {
+  width: 250px;
+}
