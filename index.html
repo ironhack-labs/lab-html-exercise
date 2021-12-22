@@ -22,21 +22,25 @@
         </nav>
       </div>
   
-       <div>
+       <div class="barra">
       <!-- add logo, search bar and buttons (or links and style them as buttons later) -->
       <img class="npmLogo" src="C:\Users\Usuario\Desktop\codigo_web\code\lab-html-exercise\images\npm-logo.png"
         alt="npm" />
-      <img class="glass" src="C:\Users\Usuario\Desktop\codigo_web\code\lab-html-exercise\images\magnifying-glass.png"
-        alt="magnifying-glass-picture" />
+      
   
-      <form action="search packages" method="get" >
+      <form action="search packages" method="get" >   
+        <img class="glass" src="C:\Users\Usuario\Desktop\codigo_web\code\lab-html-exercise\images\magnifying-glass.png"
+        alt="magnifying-glass-picture" />    
         <label for="search packages"></label>
         <input type="text" id="package" placeholder="search packages">
-        <button>search</button>
-      </form>
-      <div>
-        <a href="#">join</a>
-        <a href="#">log in</a>
+       
+       </form>
+       <button id="search">search</button>
+      
+      <div id="botones">
+        <button id="join">join</button> 
+        <button id="log">log in</button>
+        
       </div>
   
        </div>
@@ -49,8 +53,8 @@
         using modern open source code.
       </article>
       <div>
-        <a href="#">see plans</a>
-        <a href="#">join for free</a>
+      <button id="see">see plans</button> 
+      <button id="free">join for free</button>
       </div>
     </section>
     <section id="middle">
@@ -64,8 +68,9 @@
         Create an Org and get more out of the tools your team already knows and loves.
       </article>
     </section>
+    <section id="cajas">
     <section id="zero">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25.99 21.21">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25.99 21.21" id="imagenZero">
         <title>zero-configuration</title>
         <g id="Layer_2" data-name="Layer 2">
           <g id="Layer_2-2" data-name="Layer 2">
@@ -76,7 +81,7 @@
           </g>
         </g>
       </svg>
-      <h2>Zero configuration</h2>
+      <h3>Zero configuration</h3>
       <article>Create an org, add
         your team, and start collaborating. Nothing to configure, set up, or manage.
       </article>
@@ -84,7 +89,7 @@
     <section id="team">
       <img class="teamimg"
         src="C:\Users\Usuario\Desktop\codigo_web\code\lab-html-exercise\images\team-management.svg" alt="team management" />
-        <h2>Team management</h2>
+        <h3>Team management</h3>
         <article>Control who has access to
           what modules within your team namespace using straightforward team management capabilities.
         </article>
@@ -92,7 +97,7 @@
     <section id="Familiar">
       <img class="familiarimg"
         src="C:\Users\Usuario\Desktop\codigo_web\code\lab-html-exercise\images\familiar-features.svg" alt="familiar features" />
-        <h2>Familiar features</h2>
+        <h3>Familiar features</h3>
         <article>npm Orgs
           has 100% parity with all the public npm registry features your developers already use.
         </article>
@@ -100,10 +105,11 @@
     <section id="audit">
       <img class="auditimg"
         src="C:\Users\Usuario\Desktop\codigo_web\code\lab-html-exercise\images\npm-audit.svg" alt="npm-audit" />
-        <h2>npm audit</h2>
+        <h3>npm audit</h3>
         <article>Enjoy the security
           auditing features built into the npm client, a zero-friction way to make open source software safer.
         </article>
     </section>
-    <a href="#"> create an Org </a>
+  </section>
+    <button id="org"> Create an Org </button>
   </body>
