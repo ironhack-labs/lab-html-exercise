@@ -2,6 +2,9 @@
 
 body {
   font-family: "Poppins";
+  width: 100%;
+  padding: 0;
+  margin: 0;
 }
 
 #header > div {
@@ -17,6 +20,14 @@ h1 {
   font-size: 3.5rem;
   font-weight: 700;
   letter-spacing: 3px;
+}
+h2 {
+  font-size: 1.8rem;
+}
+
+p {
+  text-align: center;
+  font-size: 1.2rem;
 }
 #header ul {
   display: flex;
@@ -95,6 +106,7 @@ div > a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 #section-1 > div {
   display: flex;
@@ -114,9 +126,7 @@ div > a {
 
 #section-1 p {
   width: 40%;
-  text-align: center;
   padding-bottom: 40px;
-  font-size: 1.2rem;
   letter-spacing: 2;
 }
 #plans-btn {
@@ -127,4 +137,34 @@ div > a {
 
 #join-free-btn {
   background-color: white;
+}
+
+#section-2 {
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#section-2 > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#section-2 img {
+  width: 250px;
+  padding-bottom: 30px;
+}
+#section-2 h2 {
+  background-color: rgba(255, 204, 53, 0.4);
+  transform: skew(9deg, 0deg);
+  padding: 0 20px;
+  font-style: italic;
+}
+
+#section-2 p {
+  width: 60%;
+  margin: 0 auto;
 }
