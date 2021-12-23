@@ -1,0 +1,247 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+/* General */
+body {
+  font-family: 'Poppins';
+}
+
+/* Header */
+header > div {
+    padding: 0 3em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+}
+
+header > div span {
+    width: 50%;
+}
+
+nav {
+    width: 50%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+    margin: 0.5em;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blackHeart {
+    width: 20px;
+    margin-right: 1rem;
+}
+
+.nav {
+    justify-content: center;
+    padding: 0.5em 0;
+}
+
+.npm {
+    width: 80px;
+}
+
+header form {
+    width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+}
+
+form label {
+    width: 40px;
+    height: 40px;
+    color: #e5e5e5;
+    border: none;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form label img {
+    width: 25px;
+}
+
+form input {
+    width: 100%;
+    height: 40px;
+    font-family: 'Poppins';
+    color: rgba(0, 0, 0, 0.5);
+    padding: 0 1em;
+    font-weight: 600;
+    border: none;
+    background-color: #f5f5f5;
+    outline: none;
+}
+
+header form button {
+    background-color: #fb3e44;
+    color: #fff;
+    height: 40px;
+    border: none;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+header button {
+    background: none;
+    color: grey;
+    border: solid 1px grey;
+    padding: 0.5em 2em;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+header .border {
+    background: none;
+    box-shadow: none;
+    border: none;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Section 1 */
+.section1 {
+    height: 600px;
+    background-color: rgba(232, 217, 217, 0.3);
+    font-weight: 600;
+}
+
+.section1 h1 {
+    font-size: 4em;
+}
+
+.section1 article {
+    width: 450px;
+    padding: 1em;
+    text-align: center;
+}
+
+.section1 button {
+    background-color: #fb3b49;
+    box-shadow: 8px 8px 0 rgba(251, 59, 73, 0.2);
+    color: #fff;
+    border: none;
+    padding: 1em 3em;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 1em;
+}
+
+.section1 .border {
+    background: none;
+    box-shadow: none;
+    color: #000;
+    background-color: #fff;
+}
+
+/* Section 2 */
+.section2 {
+    height: 700px;
+}
+
+.section2 img {
+    width: 20%;
+}
+
+.section2 h2 {
+    background-color: rgba(255, 204, 53, 0.4);
+    transform: skew(9deg,0deg);
+    font-style: italic;
+    font-size: 2em;
+    padding: 0 2em;
+}
+
+.section2 article {
+    width: 800px;
+    padding: 1em;
+    text-align: center;
+    font-weight: 600;
+}
+
+/* Section 3 */
+.section3 .square {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.section3 .square div {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 1em;
+}
+
+.section3 img {
+    width: 50px;
+}
+
+.section3 h2 {
+    color: #ed1c24;
+}
+
+.section3 button {
+    box-shadow: 8px 8px 0 rgba(128, 83, 35, 0.2);
+    color: #fff;
+    background-color: #000;
+    padding: 1em 7em;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 3em auto;
+}
+
+@media (max-width: 864px) {
+    .section1 h1 {
+        font-size: 2em;
+    }
+
+    /* .section1 .buttons {
+        flex-direction: column;
+    } */
+
+    .section2 h2 {
+        font-size: 1.5em;
+    }
+
+    .section1 article,
+    .section2 article {
+        width: 90%;
+    }
+}
