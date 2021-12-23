@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.bolder {
+  font-weight: 800;
+}
+
+.btn {
+  text-decoration: none;
+  color: #000;
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 1.5px;
+  font-size: 0.9rem;
+}
+
+.paragraph {
+  max-width: 35rem;
+  font-size: 1.25rem;
+}
+
+header > div {
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+}
+header > div img {
+  width: 1.2rem;
+  margin-right: 1rem;
+}
+header > div:last-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+header > div:last-child > img {
+  transform: scale(3);
+}
+header > div:last-child form {
+  display: flex;
+  align-items: center;
+  width: 85%;
+}
+header > div:last-child form img {
+  padding: 0.8rem 0;
+  margin-right: -1.9rem;
+  margin-left: 1rem;
+}
+header > div:last-child form #searchfield {
+  width: 90%;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 0.8rem 3rem;
+  font-size: 1rem;
+}
+header > div:last-child form #searchfield:focus {
+  outline: 1px solid rgba(0, 0, 0, 0.15);
+}
+header > div:last-child form [type=button] {
+  border: none;
+  padding: 0.87rem 1rem;
+  background-color: #fb3e44;
+  color: #fff;
+  font-size: 0.9rem;
+}
+header > div:last-child > div {
+  display: flex;
+  justify-content: space-around;
+}
+header > div:last-child .btn:hover {
+  border: 0.5px solid #333;
+  border-radius: 1.8px;
+}
+header nav {
+  width: 600px;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+#introduction {
+  text-align: center;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
+  height: clamp(600px, 600px, 70vh);
+  background-color: rgba(232, 217, 217, 0.3);
+  padding: 0;
+}
+#introduction h2 {
+  font-size: 5rem;
+  margin-top: -5rem;
+  margin-bottom: 1rem;
+}
+#introduction div {
+  display: flex;
+  width: 28rem;
+  max-width: 30rem;
+  justify-content: space-between;
+}
+#introduction div .btn-sec1 {
+  padding: 0.8rem 3rem;
+  font-size: 1.2rem;
+}
+#introduction div a:first-child {
+  color: #fff;
+  background-color: #fb3b49;
+  box-shadow: 8px 8px 0 rgba(251, 59, 73, 0.2);
+}
+#introduction div a:last-child {
+  background-color: #fff;
+}
+
+#advertisement {
+  text-align: center;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
+  height: clamp(600px, 600px, 70vh);
+  padding: 5rem;
+}
+#advertisement img {
+  max-height: 300px;
+}
+#advertisement div {
+  background-color: rgba(255, 204, 53, 0.4);
+  transform: skew(10deg, 0);
+  padding: 0 2rem;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  height: 2.2rem;
+}
+#advertisement div h3 {
+  transform: skew(-10deg, 0);
+  font-size: 2rem;
+  margin-top: -0.4rem;
+}
+#advertisement p {
+  max-width: 50rem;
+}
+
+#features {
+  display: flex;
+  flex-flow: column nowrap;
+  max-height: -webkit-fit-content;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+  justify-content: space-between;
+}
+#features > div {
+  display: flex;
+  flex-flow: row nowrap;
+  padding: 2rem 3rem;
+}
+#features > div > div {
+  padding: 0 2rem;
+}
+#features > div > div img {
+  align-self: flex-start;
+  max-height: 35px;
+}
+#features > div > div h4 {
+  color: #ed1c24;
+}
+#features a {
+  background-color: #000;
+  color: #fff;
+  max-width: 10rem;
+  align-self: center;
+  margin-bottom: 5rem;
+  padding: 0.8rem 5rem;
+  box-shadow: 8px 8px 0 rgba(128, 83, 35, 0.2);
+}/*# sourceMappingURL=style.css.map */

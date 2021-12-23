@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+// Vars
+$form-input-col: rgba(0, 0, 0, 0.05);
+$form-btn-bg-col: #fb3e44;
+$sec1-bg-col: rgba(232, 217, 217, 0.3);
+$sec1-btn-bg-col: #fb3b49;
+$sec1-btn-shdw: 8px 8px 0 rgba(251, 59, 73, 0.2);
+$sec2-h-bg-col: rgba(255, 204, 53, 0.4);
+$sec3-h-col: #ed1c24;
+$sec3-btn-shdw: 8px 8px 0 rgba(128, 83, 35, 0.2);
+
+// Mixins
+@mixin section {
+  text-align: center;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
+  height: clamp(600px, 600px, 70vh);
+}
+
+@mixin btn-black {
+  background-color: #000;
+  color: #fff;
+}
+
+// Css reset
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+// Utility classes
+.bold {
+  font-weight: 600;
+}
+
+.bolder {
+  font-weight: 800;
+}
+
+.btn {
+  text-decoration: none;
+  color: #000;
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 1.5px;
+  font-size: 0.9rem;
+}
+
+.paragraph {
+  max-width: 35rem;
+  font-size: 1.25rem;
+}
+
+// Header
+header {
+  & > div {
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+
+    img {
+      width: 1.2rem;
+      margin-right: 1rem;
+    }
+    &:last-child {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+
+      & > img {
+        transform: scale(3);
+      }
+
+      form {
+        display: flex;
+        align-items: center;
+        width: 85%;
+
+        img {
+          // background-color: $form-input-col;
+          padding: 0.8rem 0;
+          margin-right: -1.9rem;
+          margin-left: 1rem;
+        }
+
+        #searchfield {
+          width: 90%;
+          border: none;
+          background-color: $form-input-col;
+          padding: 0.8rem 3rem;
+          font-size: 1rem;
+
+          &:focus {
+            outline: 1px solid rgba(0, 0, 0, 0.15);
+          }
+        }
+
+        [type="button"] {
+          border: none;
+          padding: 0.87rem 1rem;
+          background-color: $form-btn-bg-col;
+          color: #fff;
+          font-size: 0.9rem;
+        }
+      }
+
+      & > div {
+        display: flex;
+        justify-content: space-around;
+      }
+
+      .btn:hover {
+        border: 0.5px solid #333;
+        border-radius: 1.8px;
+      }
+    }
+  }
+  nav {
+    width: 600px;
+
+    ul {
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      li {
+        a {
+          text-decoration: none;
+          color: #000;
+        }
+      }
+    }
+  }
+}
+
+// Section 1
+#introduction {
+  @include section;
+  background-color: $sec1-bg-col;
+  padding: 0;
+
+  h2 {
+    font-size: 5rem;
+    margin-top: -5rem;
+    margin-bottom: 1rem;
+  }
+
+  div {
+    display: flex;
+    width: 28rem;
+    max-width: 30rem;
+    justify-content: space-between;
+
+    .btn-sec1 {
+      padding: 0.8rem 3rem;
+      font-size: 1.2rem;
+    }
+
+    a:first-child {
+      color: #fff;
+      background-color: $sec1-btn-bg-col;
+      box-shadow: $sec1-btn-shdw;
+    }
+
+    a:last-child {
+      background-color: #fff;
+    }
+  }
+}
+
+// Section 2
+#advertisement {
+  @include section;
+  padding: 5rem;
+
+  img {
+    max-height: 300px;
+  }
+
+  div {
+    background-color: $sec2-h-bg-col;
+    transform: skew(10deg, 0);
+    padding: 0 2rem;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    height: 2.2rem;
+    h3 {
+      transform: skew(-10deg, 0);
+      font-size: 2rem;
+      margin-top: -0.4rem;
+    }
+  }
+
+  p {
+    max-width: 50rem;
+  }
+}
+
+// Section 3
+#features {
+  display: flex;
+  flex-flow: column nowrap;
+  max-height: fit-content;
+  justify-content: space-between;
+  & > div {
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 2rem 3rem;
+    & > div {
+      padding: 0 2rem;
+      img {
+        align-self: flex-start;
+        max-height: 35px;
+      }
+      h4 {
+        color: $sec3-h-col;
+      }
+    }
+  }
+  a {
+    @include btn-black;
+    max-width: 10rem;
+    align-self: center;
+    margin-bottom: 5rem;
+    padding: 0.8rem 5rem;
+    box-shadow: $sec3-btn-shdw;
+  }
+}
