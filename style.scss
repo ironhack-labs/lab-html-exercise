@@ -235,3 +235,50 @@ header {
     box-shadow: $sec3-btn-shdw;
   }
 }
+
+footer {
+  border-top: 0.4px solid rgba(51, 51, 51, 0.281);
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 3rem 2rem 3rem;
+  & > div {
+    a {
+      svg {
+        margin-bottom: 1rem;
+        max-width: 50px;
+        max-height: 50px;
+      }
+    }
+  }
+  div:last-child {
+    flex-basis: 92%;
+    display: flex;
+    justify-content: space-between;
+
+    ul {
+      margin-top: 0;
+
+      &:last-child {
+        margin-right: 15%;
+      }
+
+      li {
+        list-style: none;
+        margin-bottom: 0.8rem;
+
+        &:first-child {
+          a {
+            font-weight: 600;
+            font-size: 1.1rem;
+          }
+        }
+
+        a {
+          text-decoration: none;
+          color: #000;
+          font-weight: 100;
+        }
+      }
+    }
+  }
+}
