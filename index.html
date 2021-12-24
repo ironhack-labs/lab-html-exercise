@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
@@ -26,44 +27,51 @@
                 </ul>
             </nav>
         </div>
-        <div>
-            <img src="./images/npm-logo.png" alt="">
-            <form action="">
+        <div class="second-bar">
+            <img src="./images/npm-logo.png" alt="" class="npm">
+            <form action="" class="form">
 
                 <img src="./images/magnifying-glass.png" alt="">
                 <input type="text" placeholder="Search packages">
-                <button type="submit">Search</button>
-
+                
+            <button type="submit" class="search">Search</button>
             </form>
-            <a href="">join</a>
-            <a href="">log in</a>
+            <div>
+                <a href="">join</a>
+                <a href="">log in</a>
+            </div>
         </div>
     </header>
 
-    <section id="first">
+    <section id="first" class="container"> 
         <h1>Build amazing things</h1>
         <article>
-            Essential JavaScript development tools that help you go to market faster and build powerful applications
+            
+            <p>
+                Essential JavaScript development tools that help you go to market faster and build powerful applications
             using
             modern open source code.
+            </p>
         </article>
         <div>
             <a href="">See plans</a>
             <a href="">Join for free</a>
         </div>
     </section>
-    <section id="second">
+    <section id="second" class="container">
         <img src="./images/triangle-hexagon.svg" alt="">
-        <h2>Bring the best of open source to your company</h2>
+        <h1>Bring the best of open source to your company</h1>
         <article>
-            npm is the tool used by
+            <p>
+                npm is the tool used by
             over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends
             on it.
             Create an Org and get more out of the tools your team already knows and loves.
+            </p>
         </article>
     </section>
-    <section id="third">
-        <div>
+    <section id="third" >
+        <div class="features">
             <div>
                 <img src="./images/zero-configuration.svg" alt="">
                 <h3>Zero configuration</h3>
@@ -92,7 +100,7 @@
             </div>
         </div>
 
-        <input type="button" value="Create an Org">
+        <input type="button" value="Create an Org" class="create-an-org">
     </section>
 
 </body>
