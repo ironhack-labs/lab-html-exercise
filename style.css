@@ -5,7 +5,6 @@ body {
 }
 
 header > div {
-    padding: 0 25px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -34,46 +33,67 @@ header > div {
   }
 
   .npm-logo {
-      height: 40px;
+    width:150px;
       float: left;
+      display: flex;
+      align-items: flex-end;
   }
 
   header{
       background-color: rgb(32,101,136);
       color: white;
       padding: 20px;
-      height: 50px;
+      height: 40px;
   }
 
   header form {
       float: left;
-      margin: 0 20px 0 40px;
   }
 
-  #search {
-    width: 850px;
-    height: 40px;
-    background-color: rgb(31, 82, 111);
+  #searchbar {
+    background-color: white;
     color: white;
-    border: 2px solid white;
-    font-size: 12px;
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    margin-top: 20px;
+    position:relative;
   }
+
+ #searchbar form .search{
+    display:flex;
+    align-items: center;
+    background-color: #eeee;
+    padding: 8;
+    width: 50px;
+    height: 38px;
+  }
+
+#searchbar form .input{
+  width:1000px;
+  border: 3px light black;
+  background-color: transparent;
+  padding: 10px 9px;
+  border-radius: 20px;
+  right: 400px;
+}
 
   .search-button {
-    height: 40px;
-    background-color: rgb(31, 82, 111);
+    position: absolute;
+    background-color: #fb3e44;
     color: white;
-    padding: 10px;
+    padding: 10px 9px;
+    cursor: pointer;
+    width: 145px;
+    border: 0;
+    border-radius: 20px;
+    right: 360px;
+    height: 39px;
   }
 
   .search-button a{
     text-decoration: none;
     color: white;
-  }
-
-  .session {
-    float: left;
-    margin: 10px 0 0 20px;
   }
   
   .session a {
@@ -83,66 +103,169 @@ header > div {
   }
 
   .magnifying-glass{
-      float: right;
-      height: 40px;
-      margin: 0 20px;
+      height: 24px;
   }
 
-  .container {
-      width: 1000px;
-      padding: 50px,0;
+  .log-in{
+    font-size: 15px;
+    background-color: white;
+    box-shadow: none;
+    color:black;
+    font-weight: bold;
+    margin: 100px 50px;
+    padding: 10px 15px;
+    border: 3px light black;
+    border-radius: 10px;
+  }
+
+  .log-out{
+    font-size: 15px;
+    background-color: white;
+    box-shadow: none;
+    color:black;
+    font-weight: bold;
+    margin: 100px 50px;
+    padding: 10px 15px;
+    border: 3px light black;
+  }
+
+  .loging {
+    display: inline-block;
+    flex-direction:column;
+    font-weight: bold;
+
   }
 
   #section1 {
-      height: 600;
       background-color: rgba(232, 217, 217, .3);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      position: relative;
+      height:300px;
+      margin: 100px 0px;
   }
 
-  #section1 > see-plans-button{
+  #section1 .head{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+  }
+
+  #section1 .text{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    margin-top: 10px;
+  }
+
+  #section1 .buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .see-plans-button{
       background-color: #FB3B49;
       box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+      color:white;
+      font-weight: bold;
+      margin: 100px 50px;
+      padding: 10px 15px;
+  }
+
+  .join-for-free-button{
+    background-color: white;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+    color:black;
+    font-weight: bold;
+    margin: 100px 50px;
+    padding: 10px 15px;
   }
 
   #section2 {
-    height: 600;
     background-color: rgba(232, 217, 217, .3);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column; 
     position: relative;
+    height:420px;
+    margin: 100px 0px;
+  }
+
+  #section2 .text{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column; 
   }
 
   #section2 h2 {
       background-color: rgba(255, 204, 53, .4);
       transform: skew(9deg, 0deg);
       font-style: italic;
+      text-align: center;
+      justify-content: center;
   }
 
-  #section3 {
-    background-color: rgba(232, 217, 217, .3);
+  #section2 .triangle-hexagon{
+    height: 300px;
+    width: 200px;
+  }
+
+  #section2 .img-position{
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column; 
-    position: relative;
+    justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  }
+
+#section3{
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+  #section3 > div {
+    background-color: rgba(232, 217, 217, .3);
+    padding:16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
   }
 
   #section3 h3 {
-      color: #ED1C24
+      color: #ED1C24;
+      text-align: center;
   }
 
-  #section3 > npm-audit create-an-org-button {
-      box-shadow: 8px 8px 0rgba(128,83,35,.2);
-      color:white;
+  #section3 p{
+    text-align: center;
+  }
+
+  .create-an-org-button {
+      box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+      color: black;
+      background-color: white;
+      text-decoration: none;
+      font-size: 20px;
+      font-weight: bold;
+      padding: 16px 32px;
+      border: 1px solid black;
+
   }
 
   #section3 img {
-      width: 250px;
-      height: 180px;
+      height: 24px; 
+  }
+
+  #button-position{
+    text-align: center;
+    padding: 0px 100px;
+    margin-top:60px;
+    margin-bottom: 120px;
   }

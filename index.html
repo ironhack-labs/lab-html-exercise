@@ -26,65 +26,75 @@
       </nav>
     </div>
   
+  <div> 
     <div>
       <img src="./images/npm-logo.png" alt="Logo npm" class="npm-logo">
-      <form id="search">
-        <img src="./images/magnifying-glass.png" alt="Magnifying Glass" class="magnifying-glass" />
-        <input type="text" id="search" placeholder="Search packages">
-        <button type="submit" class="search-button"><a href="#">Search</a></button>
-      </form> 
-    <div class="session">
-      <a href="#">Log in</a> <span>or</span><a href="#">Log out</a>
-      </div>
-      <img src="./images/triangle-hexagon.svg" alt= "triangle hexagon" class="triangle-hexagon" />
+    </div> 
+
+  <div id="searchbar">
+    <div class="img-location">
+      <img src="./images/magnifying-glass.png" alt="Magnifying Glass" class="magnifying-glass" />
     </div>
+    <form class="search">
+      <input type="text" placeholder="Search packages" class="input">
+      <button type="submit" class="search-button"><a href="#">Search</a></button>
+    </form> 
+    <div class="loging">
+      <a class= "log-in" href="#">Log in</a>   <a class="log-out" href="#">Log out</a>
+      </div>
+  </div>
+  </div>
   </header>
 
   <section id="section1">
-    <div class="container">
-      <h2>Build amazing things</h2>
-      <article>npm is the package manager for JavaScript and the world´s largest software registry. Discover packages of reusable code and assemble them in powerful new ways</article>
-    <input type="text" id="search" placeholder="See plans">
-      <button type="button" class="see-plans-button"><a href="#">See plans</a></button>
-      
-      <input type="text" id="search" placeholder="Join for free">
-    <button type="button" class="join-for-free-button"><a href="#">Join for free</a></button>
-    </div>
+    <div>
+      <h2 class="head">Build amazing things</h2>
+      <article class="text">npm is the package manager for JavaScript and the world´s largest software registry. Discover packages of reusable code and assemble them in powerful new ways</article>
+      <div class="buttons">
+        <button type="button" class="see-plans-button"><a href="#">See plans</a></button>
+        <button type="button" class="join-for-free-button"><a href="#">Join for free</a></button>    
+      </div>
+      </div>
   </section>
 
 
   <section id="section2">
-    <div class="container">
-<h2>Bring the best open source to your company</h2>
-<article>npm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers already use ir. Your company depends on it. Create an Org and get more out of the tools your team already knows and loves.</article>
-    </div>
+    <div>
+<h2 class="head">Bring the best open source to your company</h2>
+<article class= "text">npm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it. Create an Org and get more out of the tools your team already knows and loves.</article>
+<div class="img-position">
+  <img src="./images/triangle-hexagon.svg" alt= "triangle hexagon" class="triangle-hexagon" />
+</div>    
+</div>
   </section>
 
   <section id="section3">
-    <div class="container" id="zero-configuration">
+    <div id="zero-configuration">
       <h3>Zero configuration</h3>
       <p>Create an org, add your team and start collaborating. Nothing to configure, set up or manage</p>
       <img src="./images/zero-configuration.svg" alt="zero configuration" class="zero-configuration-photo" />
     </div>
 
-    <div class="container" id="team-management">
+    <div id="team-management">
       <h3>Team Management</h3>
       <p>Control who has access to what modules within your team</p>
       <img src="./images/team-management.svg" alt="team management" class="team-management-photo" />
       </div>
 
-      <div class="container" id="familiar features">
+      <div id="familiar features">
         <h3>Familiar Features</h3>
         <p>npm has 100% parity with all the public npm registry features your developers already use.</p>
         <img src="./images/familiar-features.svg" alt="familiar features" class="familiar-features-photo" />
       </div>
 
-      <div class="container" id="npm-audit">
+      <div id="npm-audit">
         <h3>npm audit</h3>
         <p>Enjoy the security auditing features built into the npm diant, a zero-friction way to make open source software safer.</p>
         <img src="./images/npm-audit.svg" alt="npm audit" class="npm-audit-photo" />
-      <button type="button" class="create-an-org-button"><a href="#">Create an org</a></button>
-    </div>
+      </div>
      </section>
+     <div id="button-position">
+      <button type="button" class="create-an-org-button"><a href="#">Create an org</a></button>
+     </div>
 </body>
 </html>
