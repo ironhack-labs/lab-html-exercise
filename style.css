@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body {
+  font-family: 'Poppins';
+}
+
+h1 {
+    font-size: 100px;
+    font-weight: bolder;  
+}
+
+h3 {
+    font-size: 50px;
+    font-weight: bold;
+    font-style: italic;
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+}
+
+h4 {
+    font-size: 20px;
+    font-weight: bolder;
+    color: #ED1C24;
+}
+
+header {
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+    
+}
+
+nav {
+    width: 600px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.blackHeart {
+    width: 20px;
+    margin-right: 1rem;
+}
+
+
+.form {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.form img {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    opacity: 0.5;
+    object-fit: cover;
+}
+
+.search-field {
+    font-size: 18px;
+    background-color: rgba(0,0,0,.05);
+    width: 100%;
+    padding-left: 50px;
+    border-radius: 1px;
+    outline: none;
+}
+
+.search-button {
+    color: white;
+    padding: 10px;
+    background: #fb3e44;
+    outline: none;
+    
+}
+
+/* SECTION */
+
+#section-one {
+    height: 600px;
+    background-color: rgba(232,217,217,.3);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+}
+
+#section-one .title-text {
+    font-size: 20px;
+    width: 32%;
+    text-align: center;
+    padding: 20px;
+}
+
+#section-one div {
+    padding: 50px 1px;
+}
+
+#section-one div a {
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 30px 80px;
+}
+
+.see-plans-button {
+    background-color: #FB3B49;
+    color: white;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+}
+
+/*SECTION 2*/
+
+#section-two {
+    margin: 80px 10px 80px 10px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.hexagon {
+    width: 15em;
+    padding-bottom: 10px;
+}
+
+.second-title-text {
+    width: 48%;
+    text-align: center;
+    line-height: 25px;
+    padding: 10px;
+}
+
+#section-three {
+    display: flex;
+    flex-direction: row;
+
+}
+
+#section-three div  {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;  
+    
+    
+}
+
+#section-three > div > img {
+    width: 60px;
+}
+
+.create-an-org {
+    background-color: black;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    color: white;
+    padding: 10px 50px;
+    width: 10px;
+}
