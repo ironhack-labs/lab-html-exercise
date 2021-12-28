@@ -24,11 +24,11 @@ header > div {
   
   nav a {
     text-decoration: none;
-    color: black;
+    color: white;
   }
   
   .blackHeart {
-    width: 20px;
+    width: 60px;
     margin-right: 1rem;
   }
 
@@ -41,9 +41,17 @@ header > div {
 
   header{
       background-color: rgb(32,101,136);
-      color: white;
-      padding: 20px;
+      padding: 15px;
       height: 40px;
+      color:white;
+      position: relative;
+  }
+
+  span{
+    position: relative;
+    bottom:10px;
+  }
+
   }
 
   header form {
@@ -76,6 +84,8 @@ header > div {
   padding: 10px 9px;
   border-radius: 20px;
   right: 400px;
+  display: flex;
+  align-content: center;
 }
 
   .search-button {
@@ -87,8 +97,9 @@ header > div {
     width: 145px;
     border: 0;
     border-radius: 20px;
-    right: 360px;
-    height: 39px;
+    right: 365px;
+    height: 35px;
+    bottom: 18px;
   }
 
   .search-button a{
@@ -103,7 +114,10 @@ header > div {
   }
 
   .magnifying-glass{
-      height: 24px;
+    position: absolute;
+    height: 24px;
+    bottom: 25px;
+    left:60%;
   }
 
   .log-in{
@@ -114,8 +128,6 @@ header > div {
     font-weight: bold;
     margin: 100px 50px;
     padding: 10px 15px;
-    border: 3px light black;
-    border-radius: 10px;
   }
 
   .log-out{
@@ -124,22 +136,20 @@ header > div {
     box-shadow: none;
     color:black;
     font-weight: bold;
-    margin: 100px 50px;
+    margin: 50px 50px;
     padding: 10px 15px;
-    border: 3px light black;
   }
 
   .loging {
     display: inline-block;
     flex-direction:column;
-    font-weight: bold;
-
   }
 
   #section1 {
       background-color: rgba(232, 217, 217, .3);
       height:300px;
       margin: 100px 0px;
+      position: relative;
   }
 
   #section1 .head{
@@ -147,6 +157,8 @@ header > div {
     flex-direction: row;
     justify-content: center;
     align-content: center;
+    position: relative;
+    top: 24px
   }
 
   #section1 .text{
@@ -154,7 +166,8 @@ header > div {
     flex-direction: row;
     justify-content: center;
     align-content: center;
-    margin-top: 10px;
+    margin-top: 50px;
+    margin-bottom:px;
   }
 
   #section1 .buttons{
@@ -162,6 +175,7 @@ header > div {
     flex-direction: row;
     justify-content: center;
     align-content: center;
+    position: relative;
   }
 
   .see-plans-button{
@@ -173,13 +187,22 @@ header > div {
       padding: 10px 15px;
   }
 
+  .see-plans-button a{
+    color:white;
+    font-style: italic;
+  }
+
   .join-for-free-button{
     background-color: white;
     box-shadow: 8px 8px 0 rgba(251,59,73,.2);
-    color:black;
     font-weight: bold;
     margin: 100px 50px;
     padding: 10px 15px;
+  }
+
+  .join-for-free-button a{
+    color:black;
+    font-style: italic;
   }
 
   #section2 {
@@ -197,7 +220,9 @@ header > div {
     display: flex;
     justify-content: center;
     text-align: center;
-    flex-direction: column; 
+    flex-direction: column;
+    position: relative;
+    top: 25px;
   }
 
   #section2 h2 {
@@ -206,6 +231,8 @@ header > div {
       font-style: italic;
       text-align: center;
       justify-content: center;
+      position: relative;
+      top: 10px;
   }
 
   #section2 .triangle-hexagon{
@@ -225,10 +252,9 @@ header > div {
   margin-left: auto;
   margin-right: auto;
   display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+  flex-direction: row;
+  justify-content: space-around;
 }
-
 
   #section3 > div {
     background-color: rgba(232, 217, 217, .3);
@@ -247,16 +273,20 @@ header > div {
     text-align: center;
   }
 
-  .create-an-org-button {
+ .create-an-org-button {
       box-shadow: 8px 8px 0 rgba(251,59,73,.2);
-      color: black;
       background-color: white;
       text-decoration: none;
-      font-size: 20px;
-      font-weight: bold;
       padding: 16px 32px;
       border: 1px solid black;
+  }
 
+  .create-an-org-button a{
+    color: black;
+    font-weight: lighter;
+    font-style: italic;
+    font-size: 18px;
+    font-weight: bold;
   }
 
   #section3 img {
