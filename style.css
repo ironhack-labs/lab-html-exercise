@@ -1,71 +1,68 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-
-body {
-  font-family: 'Poppins';
 }
-
+body {
+    font-family: 'Poppins';
+}
 h1 {
     font-size: 100px;
-    font-weight: bolder;  
+    font-weight: bolder;
+    position:relative;
 }
-
 h3 {
-    font-size: 50px;
+    font-size: 45px;
     font-weight: bold;
     font-style: italic;
     background-color: rgba(255,204,53,.4);
     transform: skew(9deg,0deg);
 }
-
 h4 {
+    line-height: 55px;
     font-size: 20px;
     font-weight: bolder;
     color: #ED1C24;
 }
-
-header {
+a {
+    text-decoration: none;
+}
+header > div {
     padding: 0 25px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid lightgray;
-    
 }
-
 nav {
     width: 600px;
 }
-
 nav ul {
     list-style: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
 nav a {
-    text-decoration: none;
     color: black;
+    font-weight: bold;
 }
-
 .blackHeart {
     width: 20px;
     margin-right: 1rem;
 }
-
-
+.logo {
+    width: 90px;
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+}
 .form {
+    width: 100%;
     display: flex;
     flex-direction: row;
-    
 }
-
 .form img {
     position: absolute;
     width: 40px;
@@ -73,62 +70,77 @@ nav a {
     opacity: 0.5;
     object-fit: cover;
 }
-
 .search-field {
     font-size: 18px;
     background-color: rgba(0,0,0,.05);
+    border: 5px solid transparent;
     width: 100%;
     padding-left: 50px;
-    border-radius: 1px;
-    outline: none;
 }
-
 .search-button {
     color: white;
+    font-size: 15px;
+    font-weight: bold;
     padding: 10px;
+    margin-right: 1px;
     background: #fb3e44;
-    outline: none;
-    
+    border: 5px solid transparent;
+}
+.header-links {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    font-weight: bold;
+    margin: 0px 20px 0px 80px;
+}
+.header-links a {
+    display: flex;
+    align-items: center;
+}
+.join {
+    border: 1px solid rgb(170, 168, 168);
+    padding: 5px 20px;
+}
+.header-space {
+    padding: 20px 20px;
 }
 
-/* SECTION */
+/* SECTION 1*/
 
 #section-one {
-    height: 600px;
+    height: 700px;
     background-color: rgba(232,217,217,.3);
     display: flex;
     justify-content: center;
     align-items:center;
     flex-direction: column;
 }
-
 #section-one .title-text {
     font-size: 20px;
     width: 32%;
     text-align: center;
     padding: 20px;
 }
-
 #section-one div {
     padding: 50px 1px;
 }
-
 #section-one div a {
+    background-color: white;
     font-size: 20px;
-    text-decoration: none;
     font-weight: bold;
     padding: 30px 80px;
 }
-
-.see-plans-button {
+#section-one div .see-plans-button {
     background-color: #FB3B49;
     color: white;
     box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+    margin-right: 30px;
 }
 
 /*SECTION 2*/
 
 #section-two {
+    height: 600px;
     margin: 80px 10px 80px 10px;
     display: flex;
     justify-content: center;
@@ -136,12 +148,10 @@ nav a {
     flex-direction: column;
     padding: 10px;
 }
-
 .hexagon {
-    width: 15em;
-    padding-bottom: 10px;
+    width: 18em;
+    padding-bottom: 50px;
 }
-
 .second-title-text {
     width: 48%;
     text-align: center;
@@ -149,28 +159,34 @@ nav a {
     padding: 10px;
 }
 
+/*SECTION 3*/
+
 #section-three {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#section-three .container {
     display: flex;
     flex-direction: row;
-
+    margin: 20px 80px;
+    padding: 20px 0px 40px 0px;
 }
-
-#section-three div  {
+#section-three .container div {
+    padding: 0px 20px;
+    width: 350px;
+}
+#section-three .container img {
+    width: 40px;
     display: flex;
-    flex-direction: column; 
-    justify-content: center;  
-    
-    
+    justify-content: space-around;
 }
-
-#section-three > div > img {
-    width: 60px;
-}
-
 .create-an-org {
+    font-size: 20px;
     background-color: black;
     box-shadow: 8px 8px 0 rgba(128,83,35,.2);
     color: white;
-    padding: 10px 50px;
-    width: 10px;
+    margin: 30px 100px;
+    padding: 20px 170px;
 }
