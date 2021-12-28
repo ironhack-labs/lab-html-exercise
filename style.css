@@ -1,0 +1,200 @@
+/* Useful information:
+
+form label color: rgba(0,0,0,.05)
+form input color: rgba(0,0,0,.05)
+form button background color: #fb3e44
+form button letters color: white */
+
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body {
+  font-family: 'Poppins';
+}
+
+header > div {
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+}
+  
+nav {
+    width: 600px;
+}
+  
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+nav a {
+    text-decoration: none;
+    color: black;
+}
+  
+.blackHeart {
+    width: 20px;
+    margin-right: 1rem;
+}
+
+/* Start of own code */
+
+.npmLogo {
+    width: 70px;
+    margin-right: 0.5em;
+}
+.magnifyGlass {
+    width: 25px;
+    margin-left: 0px;;
+}
+.below-top ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.below-top a {
+    display: flex;
+    text-decoration: none;
+    align-content: center;
+    color: black;
+}
+.join {
+    border: 1px solid black;
+    padding: 5px 15px 5px 15px;
+}
+.log {
+    border: 1px;
+    padding: 5px 10px 5px 20px;
+}
+.search-button {
+    background-color: #FB3B49;
+    border: 1px solid #fB3B49;
+    color: white;
+    padding: 15px;
+}
+#search {
+    background-color: whitesmoke;
+    width: 1200px;
+    padding: 13.7px 15px 13.7px 15px;
+    margin-right: -27px;
+    margin-left: -17px;
+}
+
+#slogan {
+    display: flex;
+    justify-content: center;
+    height: 600px;
+    background-color: rgba(232,217,217,.3);
+    align-items: center;
+    flex-direction: column;
+}
+#slogan .plans {
+    background-color: #FB3B49;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+    color: white;
+    padding: 15px 20px;
+}
+#slogan .free {
+    background-color: white;
+    border: 1px solid white;
+    padding: 15px 20px;
+    font-weight: 700;
+}
+#slogan a {
+    color: black;
+    text-decoration: none;
+    justify-content: space-between;
+    padding: 10px 35px;
+    margin: 0px 50px;
+}
+#slogan div {
+    display: flex;
+    flex-direction: row;
+    margin: 25px;
+}
+#slogan p {
+    display: flex;
+    align-content: center;
+    text-align: center;
+    width: 500px;
+}
+#slogan h1 {
+    font-size: 500%;
+    font-weight: bolder;
+    margin-bottom: -1px;
+}
+
+/* Useful information:
+
+heading background color: rgba(255,204,53,.4)
+to get the transform of the yellow background
+in the left-hand direction use: transform: skew(9deg,0deg);
+to get it in the opposite direction of the letters, the way we 
+need it on the page, use: font-style: italic;
+to additionally fine-tune the position of each element, 
+use margin property. */
+
+#slogan-two {
+    display: flex;
+    justify-content: center;
+    height: 600px;
+    background-color: white;
+    align-items: center;
+    flex-direction: column;
+}
+
+.prism {
+    width: 275px;
+    margin: 75px 0px 50px 0px;
+}
+
+#slogan-two h1 {
+    font-size: 250%;
+    font-weight: bolder;
+    margin-bottom: 25px;
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg, 0deg);
+    font-style: italic;
+}
+#slogan-two p {
+    display: flex;
+    align-content: center;
+    text-align: center;
+    width: 700px;
+}
+
+#slogan-desc {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+
+#slogan-desc img {
+    width: 25px;
+}
+
+.nice-box {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    flex-direction: column;
+    width: 250px;
+    margin: 0 -300px;
+}
+.nice-box h1 {
+    color: #ED1C24
+}
+
+.org-button {
+    background-color: black;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    color: white;
+    padding: 15px 60px;
+    margin: 50px 0px 50px 750px;
+}
