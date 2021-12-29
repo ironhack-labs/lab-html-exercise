@@ -110,7 +110,7 @@ h1 {
     margin-bottom: 5px;
 }
 
-article {
+#principal article {
     width: 550px;
     text-align: center;
     margin-top: 0;
@@ -137,8 +137,87 @@ article {
     padding: 10px 40px;
 }
 
+/*section 2*/
+
+#description {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items:center;
+    height: 500px;
+    background-color: (255,204,53,.4);
+
+}
+
 #description img {
-    width: 100px;
+    width: 200px;
+    margin: 30px 0 40px 0;
+
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: bold;
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+    font-style: italic;
+    padding: 0 30px;
+    margin: 10px;
+}
+
+#description article {
+    width: 700px;
+    font-size: 1em;
+    text-align: center;
+    margin: 10px;
+}
+
+/*section 3*/
+
+#perks img {
+    width: 50px;
+    height: 40px;
+    padding: 5px 0 0 0;
+    margin: 5px 0 0 0;
+}
+.squares {
+    display: flex;
+    justify-content:center;
+    flex-direction:row;
+    align-items: flex-start;
+    padding: 50px 100px;
+}
+
+#perks > div > div {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content:space-evenly;
+    padding: 25px;
+}
+
+h4 {
+    color:#ED1C24;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+#perks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+#perks a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #000;
+    width: 300px;
+    text-align: center;
+    padding: 20px 40px;
+    box-shadow:  8px 8px 0 rgba(128,83,35,.2);
+    
 }
 
  
