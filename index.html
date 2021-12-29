@@ -1,27 +1,17 @@
-<!--NPM Clone Nifty Penguin Magic npm Enterprise Products Solutions Resources Docs Support Search Join Log In Build amazing
-things Essential JavaScript development tools that help you go to market faster and build powerful applications using
-modern open source code. See plans Join for free Bring the best of open source to your company npm is the tool used by
-over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it.
-Create an Org and get more out of the tools your team already knows and loves. Zero configuration Create an org, add
-your team, and start collaborating. Nothing to configure, set up, or manage. Team management Control who has access to
-what modules within your team namespace using straightforward team management capabilities. Familiar features npm Orgs
-has 100% parity with all the public npm registry features your developers already use. npm audit Enjoy the security
-auditing features built into the npm client, a zero-friction way to make open source software safer. Create an Org
-
--->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Npm Clone</title>
 </head>
 <body>
     <header>
         <div>
             <div>
-                <img src="/images/black-heart.png" alt="black-heart">
+                <img class="blackHeart" src="/images/black-heart.png" alt="black-heart">
                 <span> Nifty Penguin Magic </span>
             </div>
             <nav>
@@ -34,33 +24,32 @@ auditing features built into the npm client, a zero-friction way to make open so
                     <li><a href="#"> Support </a></li>
                 </ul>
             </nav>
-
         </div>
         <div>
-            <img src="/images/npm-logo.png" alt="npm-logo">
-            <div>
-                
-                <form action="#" method="get"><!--logo y barra de busqueda + boton-->
-                    <img src="/images/magnifying-glass.png" alt="magnifying-glass">
-                    <input type="text" placeholder="Search packages">
-                    <button type="submit">Search</button>
+            <div class="barra">
+                <a href="#"><img class="logo" src="/images/npm-logo.png" alt="npm-logo"></a>
+                <form class="form" action="#" method="get">
+                   <label for="search"><img class="glass" src="/images/magnifying-glass.png" alt="magnifying-glass"></label>
+                   <input type="search" placeholder="Search packages" id="search">
+                   <button class="button-search" type="submit">Search</button>
                 </form>
             </div>
-            <div>
-                <a href="#">Join</a><!--links-->
-                <a href="#">Login</a><!--links-->
+            <div class="links">
+                <a class="borde" href="#">Join</a><!--links-->
+                <a class="no-borde" href="#">Log in</a><!--links-->
             </div>
         </div>
     </header>
+
     <section id="build">
-        <h1>Build amazing things</h1>
+        <h1><strong>Build amazing things</strong></h1>
         <article>
             Essential JavaScript development tools that help you go to market faster and build powerful applications using
             modern open source code.
         </article>
-        <div>
-            <a href="#">See plans</a>
-            <a href="#">Join for free</a>
+        <div class="build-button">
+            <a class="button-red" href="#">See plans</a>
+            <a class="button-white" href="#">Join for free</a>
         </div>
     </section>
 
@@ -73,7 +62,7 @@ auditing features built into the npm client, a zero-friction way to make open so
     </section>
 
     <section id="description">
-        <div>
+        <div class="boxes">
             <div>
                 <img src="/images/zero-configuration.svg" alt="zero-configuration">
                 <h3>Zero configuration</h3>
@@ -100,8 +89,9 @@ auditing features built into the npm client, a zero-friction way to make open so
                 </p>
             </div>
         </div>
-        <button>Create an Org</button>
+            <div class="center">
+                <button type="submit">Create an Org</button>
+            </div>
     </section>
-    
 </body>
 </html>
