@@ -12,8 +12,8 @@
 <body>
   <header>
     <div>
-      <div><img src="images/black-heart.png" alt="blackheart logo">
-        <p>Nifty Penguin magic</p>
+      <div><img class="blackHeart" src="images/black-heart.png" alt="blackheart logo">
+        <span>Nifty Penguin magic</span>
       </div>
       <nav>
         <ul>
@@ -26,21 +26,25 @@
         </ul>
       </nav>
     </div>
-    <div>
-      <img src="images/npm-logo.png" alt="npm logo">
-      <img src="images/magnifying-glass.png" alt="">
-      <input type="text" placeholder="Search packages">
-      <a href="">search</a>
-      <div><a href="">Join</a><a href="">Log In</a></div>
+    <div class="search-area">
+      <img id="npmLogo" src="images/npm-logo.png" alt="npm logo">
+      <div class="search-wrapper">
+        <img class="magnifying-glass" src="images/magnifying-glass.png" />
+        <input class="searchField" placeholder="Search packages" type="text"/>
+        <a class="searchButton" href="">search</a>
+      </div>
+      <div><a class="join-button" href="">Join</a><a class="log-in-button" href="">Log In</a></div>
     </div>
   </header>
-  <section>
+
+  <section class="">
     <h1>Build amazing things</h1>
     <article>Essential JavaScript development tools that help you go to market faster and build powerful applications
       using
       modern open source code.</article>
     <div><a href="">See plans</a><a href="">Join for free</a></div>
   </section>
+
   <section>
     <img src="images/triangle-hexagon.svg" alt="">
     <h2>Bring the best of open source to your company</h2>
@@ -48,6 +52,7 @@
       it. Your company depends on it.
       Create an Org and get more out of the tools your team already knows and loves.</article>
   </section>
+
   <section>
     <div>
       <img src="images/zero-configuration.svg" alt="">
