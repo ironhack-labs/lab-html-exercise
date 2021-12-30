@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
     <title>NPM - homepage</title>
 </head>
 <body>
     <header class="header">
         <div class="header-top-half">
             <div class="nifty">
-                <img src="./images/black-heart.png" alt="image of black heart">
-                <h4>Nifty Penguin Magic</h4>
+                <img class="blackHeart"src="./images/black-heart.png" alt="image of black heart">
+                <h4>Neverending Pun Machine</h4>
             </div>
             <nav>
                 <ul>
@@ -27,9 +28,9 @@
         </div>
         <div class="header-bottom-half">
             <div>
-                <img src="./images/npm-logo.png" alt="npm logo">
+                <img id="logo" src="./images/npm-logo.png" alt="npm logo">
             </div>
-            <img src="./images/magnifying-glass.png" alt="image magnifying glass">
+            <img id="magnifying-glass" src="./images/magnifying-glass.png" alt="image magnifying glass">
             <form action="/search" method="post">
                 <input type="text" id="input" placeholder="Search packages" name="search-input">
                 <button type="submit">Search</button>

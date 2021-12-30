@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body {
+  font-family: 'Poppins';
+}
+
+header > div {
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+  }
+
+  .nifty {
+      display: flex;
+      align-items: center;
+  }
+  
+  nav {
+    width: 600px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav a {
+    list-style: none;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .blackHeart {
+    width: 20px;
+    margin-right: 1rem;
+  }
+
+  div.header-bottom-half {
+      display: flex;
+      flex-direction: row;
+  }
+  
+  #logo {
+      margin-top:10px;
+      width: 100px;
+  }
+
+  #magnifying-glass {
+      position: relative;
+      left: 75px;
+      width: 25px;
+  }
+
+  form {
+      display: flex;
+      justify-content: center;
+      width: 90%;
+  }
+
+  form input {
+      height: 2.5em;
+      width: 90%;
+      color: rgba(0,0,0,0.05);
+      background-color: lightgrey;
+      border: none;
+  }
+
+  form input::placeholder {
+    padding-left: 40px;
+}
+
+  form button {
+      padding-left: 15px;
+      padding-right: 15px;
+      color: white;
+      background-color: #fb3e44;
+      border: none;
+      outline: solid;
+  }
+
+  div.join-login ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /* flex-wrap: nowrap; */
+    list-style: none;
+    color:green;
+}
+
+div.join-login a {
+    margin: 0px 10px;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: black;
+}
+
+div.join-login a:hover {
+    border: solid 1px lightgrey;
+    border-radius: 3px;
+}
