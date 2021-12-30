@@ -7,7 +7,7 @@ body {
 header > div {
     padding: 8px 0;
     display: flex;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
     align-items: center;
     border-bottom: 1px solid lightgray;
   }
@@ -37,19 +37,19 @@ header > div {
     width: 100px;
   }
 
-  .label-head{
-    display: 
-  }
+.head1{
+  margin-left: auto;
+}
 .list-head{
   list-style-type: none;
   display: flex;
 
   
 }
-.heart-text> header > div{
-}
+
 .list-div{
   justify-content: space-between;
+  margin:auto;
 }
 .img-section2{
   text-align: center;
@@ -98,3 +98,59 @@ text-align: center;
 text-decoration: none;
 padding: 10px 30px;
 }
+.search-b{
+    color: white;
+    background-color: #FB3B49;
+    box-shadow: rgba(251,59,73,.2);
+    font-family: 'Poppins';
+    
+}
+.search-container{
+  width: 100px;
+  text-align:left;
+  margin: 0 auto;
+  justify-content: left;
+}
+input#search-bar{
+  margin: auto;
+  width: 100%;
+  height: 35px;
+  padding: 0px 250px;
+  border: 1px solid #D0CFCE;
+ }
+
+.btn-see{
+  color: white;
+    background-color: #FB3B49;
+    box-shadow: rgba(251,59,73,.2);
+    font-family: 'Poppins';
+}
+.btn-default{
+  color: black;
+  background-color:white;
+  box-shadow: rgba(252, 252, 252, 0.2);
+  font-family: 'Poppins';
+}
+
+.btn-final{
+  color:white;
+  background-color: black;
+  font-family: 'Poppins';
+
+}
+/*
+form label color: rgba(0,0,0,.05)
+form input color: rgba(0,0,0,.05)
+form button background color: #fb3e44
+form button letters color: white
+
+suggested height for this section: 600px
+background color: rgba(232,217,217,.3)
+"See plans" button background color: #FB3B49
+"See plans" button box shadow: 8px 8px 0 rgba(251,59,73,.2)
+
+heading background color: rgba(255,204,53,.4)
+to get the transform of the yellow background in the left-hand direction use: transform: skew(9deg,0deg);
+to get it in the opposite direction of the letters, the way we need it on the page, use: font-style: italic;
+to additionally fine-tune the position of each element, use margin property.
+*/
