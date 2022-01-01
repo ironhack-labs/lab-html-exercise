@@ -1,0 +1,201 @@
+
+/*Useful information:
+
+form label color: rgba(0,0,0,.05)
+form input color: rgba(0,0,0,.05)
+form button background color: #fb3e44
+form button letters color: white*/
+
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+/* Page font */
+body {
+  font-family: 'poppins';
+}
+
+.nav-bar {
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+}
+/* Navigation bar.  top of page*/
+nav {
+    width: 600px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.blackheart {
+    width: 20px;
+    margin-right: 1rem;
+}
+/* searchbar + logo*/
+.logo-search {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.logo {
+    width: 5%;
+    margin-top: 10px
+    
+}
+.magnifying-glass {
+    width: 20px;
+    background-color: rgba(0,0,0,.05);
+    padding: 7.5px;
+    text-align: center;
+    float: left;
+}
+/* searcbar buttons*/
+.topnav input[type=text] {
+    width: 900px;
+    border: none;
+    background-color: rgba(0,0,0,.05);
+    padding:10px;
+    margin-right: 0;  
+}
+
+.topnav input[type=button] {
+    background-color: #fb3e44;
+    color:white;
+    border: none;
+    padding: 10px;
+    margin-left: 0;
+}
+.logo-search input[type=submit] {
+    background-color: white;
+    color: black;
+    border-width:1px ;
+    padding: 0px;
+    width: 60px;
+    height: 30px;
+    margin-left: 30px
+
+}
+.logo-search input[type=login] {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 0px;
+    width: 60px;
+    height: 30px;
+    margin-left: 30px
+}
+/* Section 1 */
+    .section1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        justify-content: space-evenly;
+        height: 600px;
+        background-color: rgba(232,217,217,.3);
+        border-top: rgb(51, 51, 51);
+        border-width: 2px;
+        margin-top: 10px;
+    }
+
+    .section1 h1 {
+         font-size: 100px;
+         font-weight: bolder ;
+         margin: 0;
+    }
+    .section1 p {
+        text-align: center;
+        margin: 0;
+    }
+
+    .section1 div a{
+        text-decoration: none;
+        margin: 0;
+    }
+    /*buttons*/
+    .seeplans {
+        color:white;
+        font-weight: bolder;
+        background-color: #FB3B49;
+        border:none;
+        padding: 15px 60px 15px 60px;
+        margin: 0px 40px 0px 0px;
+        box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+    }
+
+    .joinfree {
+        background-color:white;
+        border:none;
+        padding:15px 60px 15px 60px;
+        font-weight:900;
+    }
+
+    /* Section 2 */
+.section2 {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+    .hexagon {
+        width: 250px;
+        margin-top: 150px;
+    }
+
+.section2 h2 {
+    font-size: 40px;
+    font-style: italic;
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+    padding: 0px 40px;
+}
+
+.section2 p {
+    text-align: center;
+        margin: 0;
+}
+
+/* Section 3 */
+
+.section3 div {
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 250px;
+    margin-bottom: 50px;
+}
+
+.section3 article img {
+    width: 30px;
+}
+
+.section3 article h3 {
+    color: #ED1C24;
+    border-width: 4px;
+    font-weight: bold;
+}
+
+.section3 input[type=button] {
+    height: 60px;
+    width: 400px;
+    font-size: 20px;
+    font-weight: bold;
+    color:white;
+    background-color: black;
+    margin: 0 50 0 0px;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+}
