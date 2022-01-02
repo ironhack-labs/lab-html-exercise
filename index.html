@@ -7,7 +7,7 @@
     <header>
       <div>
         <div>
-          <img class="blackHeart" src="C:\Users\ampor\ironhack\prework\labs\lab-html-exercise\images\black-heart.png" alt="black heart" />
+          <img class="blackHeart" src="images\black-heart.png" alt="black heart" />
           <span>Nifty Penguin Magic</span>
           </div>
     <nav>
@@ -22,69 +22,71 @@
     </nav>
   </div>
 
-  <div>
-    <img class="logo" src=".\Users\ampor\ironhack\prework\labs\lab-html-exercise\images\npm-logo.png" alt="logo"/>
-      </div>
-      <div>
-    
-    <form action="/search" method="post">
-      <img class="glass" src=".\Users\ampor\ironhack\prework\labs\lab-html-exercise\images\magnifying-glass.png" alt="glass"/>
+  <div id="searchBar">
+    <img class="logo" src="images\npm-logo.png" alt="logo"/>
+      
+    <form class="search" action="/search" method="post">
+        <label for="search"><img class="glass" src="images\magnifying-glass.png" alt="glass"/></label>
       <input type="text" placeholder="Search Packages">
-      <input type="submit" value="Search">
+      <label for="button"></label>
+      <button class="button" type="submit">Search</button>
       </form>
-      </div>
-    <div>
-      <button><a href="#">Join</a></button>
-      <button><a href="#">Log In</a></button>
+
+      <button class="join"><a href="#">Join</a></button>
+      <button class="login"><a href="#">Log In</a></button>
     </div>
 </header>
     <section id="intro">
       <h1>Build amazing things</h1>
-        <article>Essential JavaScript development tools that help you go to market faster and build powerful applications using modern open source code.</article>
+        <article>Essential JavaScript development tools that help you go to market faster and build powerful applications using modern open source code.</article><br>
       <div>
-        <a href="#">See plans</a>
-        <a href="#">Join for free</a>
+       <button class="seePlans"><a href="#">See plans</a></button>
+       <button class="joinFree"><a href="#">Join for free</a></button>
       </div>
     </section>
     
     <section id="core">
       <div>
-      <img scr="C:\Users\ampor\ironhack\prework\labs\lab-html-exercise\images\triangle-hexagon.svg" alt="triangle-hexagon"/>
-      <h1>Bring the best of open source to your company</h1>
+      <img src="images\triangle-hexagon.svg" alt="triangle-hexagon"/>
+      </div>
+      <div>
+      <h2>Bring the best of open source to your company</h2>
       <article>npm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers already use  it. Your company depends on it. Create an Org and get more out of the tools your team already knows and loves. </article>
       </div>
     </section>
     
     
     <section id="structure">
-      <div>
+        <div class="box">
+      <div class="structure-box">
         <article>
-          <img src="C:\Users\ampor\ironhack\prework\labs\lab-html-exercise\images\zero-configuration.svg" alt="Zero Configuration"/>
-  <h3>Zero configuration</h3>
-   <p>Create an org, add your team, and start collaborating. Nothing to configure, set up, or manage.</p>
+          <img class="images" src="images\zero-configuration.svg" alt="Zero Configuration"/>
+          <h3>Zero configuration</h3>
+          <p>Create an org, add your team, and start collaborating. Nothing to configure, set up, or manage.</p>
         </article>
       </div>
-      <div>
+      <div class="structure-box">
         <article>
-          <img src="C:\Users\ampor\ironhack\prework\labs\lab-html-exercise\images\team-management.svg" alt="Team Management"/>
+          <img class="images"src="images\team-management.svg" alt="Team Management"/>
           <h3>Team management</h3>
-          <p>Team management Control who has access to what modules within your team namespace using straightforward team management capabilities.</p>
+          <p>Control who has access to what modules within your team namespace using straightforward team management capabilities.</p>
         </article>
       </div>
-      <div>
+      <div class="structure-box">
         <article>
-          <img src="C:\Users\ampor\ironhack\prework\labs\lab-html-exercise\images\familiar-features.svg" alt="Familiar features"/>
+          <img class="images" src="images\familiar-features.svg" alt="Familiar features"/>
           <h3>Familiar features</h3>
-          <p>Familiar features npm Orgs has 100% parity with all the public npm registry features your developers already use.</p>
+          <p>npm Orgs has 100% parity with all the public npm registry features your developers already use.</p>
         </article>
       </div>
       
-      <div>
+      <div class="structure-box">
         <article>
-          <img src="C:\Users\ampor\ironhack\prework\labs\lab-html-exercise\images\npm-audit.svg" alt="npm audit"/>
+          <img class="images" src="images\npm-audit.svg" alt="npm audit"/>
           <h3>npm audit</h3>
-          <p> npm audit Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer.</p>
+          <p>Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer.</p>
         </article>
+      </div>
       </div>
       
       <button><a href="#">Create an Org</a></button>
