@@ -3,6 +3,7 @@
   <head>
     <title>NPM Clone</title>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <header>
@@ -23,35 +24,44 @@
           </nav>
         </div>
       
-        <div>
-            <img class="npmlogo" src="./images/npm-logo.png" alt="npm logo" />
-            <img class="magglass" src="./images/magnifying-glass.png" alt="magnifying glass" />
+        <div class="searchbar">
+            <div>
+                <img class="npmLogo" src="./images/npm-logo.png" alt="npm logo" />
+                <img class="magglass" src="./images/magnifying-glass.png" alt="magnifying glass" />
+            </div>
             <form action="search" method="get">
+                <div class="searchbarRight">
                 <input type="text"  id="email" placeholder="Search...">
+                
                 <button type="submit"> Suche </button>
+            
             </form>
             <a href="#join">Join</a>
             <a href="#singin">Sign in</a>
+             </div>
         </div>
       </header>
 
       <!.. section build amazing things..>
    
-<section id="join">
+<section id="section1" class="container">
         <h1>Build amazing things</h1>
-        <article>Essential JavaScript development tools that help you go to market faster and build powerful applications using
+        <article>Essential JavaScript development tools that help you <br>
+        go to market faster and build powerful applications <br> using
             modern open source code.</article>
-        <a href="#plans">See plans</a>
-        <a href="#join">Join for free</a>
+        <div>
+            <button type="button" id="plansButton">See plans</button>
+            <button type="button" id="joinButton">Join for free</button>
+    </div>
     </section>
 
 
-    <section id="open-source">
+    <section id="section2">
         <img class="trianglehexagon" src="./images/triangle-hexagon.svg" alt="it's a cube">
         <h2>Bring the best of open source to your company</h2>
         <article>npm is the tool used by
-            over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it.
-            Create an Org and get more out of the tools your team already knows and loves.</article>
+            over 11,000,000 JavaScript developers around the world. Your developers<br>already use it. Your company depends on it.
+            Create an Org and get more out of the tools your<br>team already knows and loves.</article>
     </section>
 
 
