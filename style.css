@@ -33,15 +33,53 @@ header > div {
     margin-right: 1rem;
   }
 
+  .searchfield {
+      display: flex;
+      flex-direction:row;
+      justify-content: space-between;
+      align-items:center;
+      padding: 10px 25px;
+  }
+
+  
+
+ #join-button {
+     text-decoration: none;
+     color: black;
+     border: 1px 0 0 black;
+ }
+
+ #login-button {
+    text-decoration: none;
+    color: black;
+ }
+
+  #search {
+    background-color: rgba(0,0,0,.05);
+    border: 0px;
+    padding: 10px 0;
+  }
+
+  #logo {
+      width: 40px;
+      height: auto;
+      
+  }
+
 
   #m-glass {
       width: 15px;
       height: 15px;
+      background-color: rgba(0,0,0,.05);
+      padding: 10px 15px;
   }
 
 
   #search-button {
       background-color:#FB3B49;
+      color: white;
+      padding: 10px 15px;
+      border: 0px;
   }
 
   #section1 {
@@ -97,9 +135,7 @@ header > div {
     align-items: center;
     flex-direction: column;
     height: 600px;
-    background-color: rgba(232,217,217,.3);
-
-
+    
   }
 
   .hexagon {
@@ -120,16 +156,45 @@ header > div {
       margin: 0 40px;
       font-size: 13px;
       line-height: 1.5;
-     
-
   }
 
   #section3 {
-      display: flex;
-      align-items: center;
+      width:1000px;
+      margin: 0 100px;
+     
+  }
 
+  #section3 > div {
+      display: flex;
+      justify-content:space-evenly;
+  }
+
+  #section3 > div > article {
+    display: flex;
+    
+    flex-direction: column;
+    align-items:stretch;
+    
+  }
+
+  #section3 h4 {
+      color: #FB3B49;
+      font-weight: 700;
   }
 
   #section3 img {
-      width: 100px;
+      width: 40px;
+  }
+
+  #section3 p {
+    margin: 10px auto;
+  }
+
+  #last-button {
+      text-align: center;
+      background-color: black;
+      color: white;
+      border: 0px;
+      padding: 10px 50px;
+
   }
