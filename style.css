@@ -16,16 +16,19 @@ body {
 
 .description-box h1 {
     font-size: 5em;
-    letter-spacing: 80%;
 }
 
-.description-box > article, div {
-    width: 50%
+.description-box article {
+    font-size: 1.2em;
+    width: 50%;
+    margin: -40px 0 40px 0;
 }
 
 .description-box > div {
     display: flex;
     justify-content: space-between;
+    text-align: center;
+    width: 25%;
 }
 
 .plans-button {
@@ -45,3 +48,31 @@ body {
     text-decoration: none;
     padding: 10px 30px;
 }
+
+.npm-enterprise {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 600px;
+    font-style: italic;
+}
+
+.npm-enterprise h2 {
+    font-size: 2em;
+    background-color: rgba(255,204,53,.4);
+    box-sizing: content-box;
+    padding: 0 10px;
+    transform: skew(9deg,0deg);
+    margin: 50px;
+}
+
+.npm-enterprise img {
+    height: 200px;
+}
+
+.npm-enterprise article {
+    width: 50%;
+    text-align: center;
+}
+
