@@ -31,20 +31,17 @@
 
 <!-- Section 0: Header with search bar -->
     <div>
-      <h1><img class="npmLogo" src="./images/npm-logo.png" alt="npm logo"/></h1>
-      <form id="search" method="GET" action="/search">
-          <div class="slot-form-container"> 
-              <img src="./images/magnifying-glass.png" alt="search bar"/>
-              <label for="search"></label>
-              <input type="search" id="query" placeholder="Search packages">
-              <button img="./images/magnifying-glass.png">Search</button>
-          </div>
+        <img class="npmLogo" src="images\npm-logo.png" alt="NPM Logo">
+        <div class="searchbar">
+            <img src="images\magnifying-glass.png" alt="magnifying glass">
+            <input type="text" placeholder="Search packages">
+            <button><a href="">Search</a></button>
+            </div>
+        <div class="joinLogButton">
+            <a  class="btn-join" href="">Join</a>
+            <a  class="btn-login" href="">Log in</a>
+        </div>
       
-      
-      </form>
-      <button class="btn-join">Join</button>
-      <button class="btn-login">Log in</button>
-      <!-- add logo, search bar and buttons (or links and style them as buttons later) -->
     </div>
   </header>
   <body>

@@ -13,7 +13,6 @@ background color: rgba(232,217,217,.3)
 body {
   font-family: "Poppins";
   font-size: 10px;
-  line-height: 2.5em;
   
 }
 
@@ -49,10 +48,8 @@ h1, h2, h3, h4, p, a {
 h1 {
   font-size: 7em;
   text-align: center;
-  font-weight: bolder;
+  font-weight: 900;
   color:black;
-  
-  
 }
 
 h2 {
@@ -84,6 +81,61 @@ p {
   line-height: 2em;
   color: black;
   text-align: center;
+}
+
+.searchbar {
+  background-color: rgba(0,0,0,.05);
+  margin: 20px;
+  height: 50px;
+  width: 70%;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.searchbar button {
+  background-color: #fb3e44;
+  color: white;
+  border-style: none;
+  height: 100%;
+  width: 20%;
+  margin-right: 0px;
+  margin-left: auto;
+  text-decoration: none; 
+   
+}
+
+.searchbar img {
+  height: 75%;
+  display: flex;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 10px; 
+}
+
+.searchbar input {
+  border-style: none;
+  background-color: rgba(0,0,0,0);
+  color: white;
+  margin-left: 20px;
+}
+
+.searchbar a {
+  text-decoration: none;
+  color: white;
+}
+ 
+.joinLogButton {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px ;
+  text-decoration: none;
+  color: black;
+}
+
+.joinLogButton a {
+color: black;
 }
 
 .blackHeart {
@@ -123,26 +175,26 @@ p {
 
 }
 
-.btn-join {
-  border: 1px solid #333;
-  font-size: 1.5em;
-  color: #333;
-  text-align: center;
-  font-weight: 600;
-  padding: 5px 10px;
-  margin: 5px;
-  background-color: white;
+.btn-login {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px ;
+  text-decoration: none;
+  color: black;
 }
 
-.btn-login {
-  border: none;
-  font-size: 1.5em;
-  color: #333;
-  text-align: center;
-  font-weight: 600;
-  padding-top: 5px 10px;
-  margin: 10px;
-  background-color: white;
+.btn-join {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px ;
+  text-decoration: none;
+  color: black;
+  height: 30px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
 }
 
 
