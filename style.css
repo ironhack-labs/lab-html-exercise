@@ -43,16 +43,81 @@ header > div {
   }
 
   .lupe {
-    width: 15px;
-    margin-right: 1rem;
-    padding: 14px 4px 0px 16px;
+    width: 20px;
+    align-items: right;
+    background-color: whitesmoke;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-right: none;
   }
 
-  .join {
-    padding: 4px 16px;
-    margin: 0 16px 0 0;
-    font-size: 1.2em;
-    text-align: center;
+  .sb-button1 {
+    background-color: #FB3B49;
+    color: white;
+    font-size: 0.8em;
+    width: 75px;
+    height: 40px;
+    border-style: none;
+    align-items: left;
+    margin-left: none;
+    margin-right: 50px;
+  }
+
+  .sb-button2 {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    font-size: 0.8em;
+    width: 75px;
+    height: 30px;
+    border-style: line;
+    border-color: slategray;
+  }
+
+  .sb-button3 {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    font-size: 0.8em;
+    width: 75px;
+    height: 30px;
+    border-style: none;
+  }
+
+  .searchbar-group {
+    width: 50%;
+  }
+
+  #search-text-input{
+    background-color: whitesmoke;
+    border-style: none;
+    float: center;
+    height: 35px;
+    margin: .8em 0 .8em 0; 
+    padding: 0 0 .4em 0; 
+    width: 950px;
+    font-family:'Courier New', Courier, monospace;
+  }
+ 
+  #button-holder{
+    background-color:#f1f1f1;
+    border-top:thin solid #e5e5e5;
+    box-shadow:1px 1px 1px 1px #e5e5e5;
+    float:left;
+    height:27px;
+    margin:11px 0 11px 0;
+    text-align:center;
+    width:50px;
+}
+   
+  #button-holder img{
+    margin: 4px;
+    width: 20px; 
+}
+
+  .searchbar-container {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
   }
 
   h1 {
@@ -62,7 +127,7 @@ header > div {
   }
 
   h2 {
-    font-size: 2em;
+    font-size: 1.8em;
     text-align: center;
     background-color: rgba(255, 230, 0, 0.596);
   }
@@ -72,6 +137,7 @@ header > div {
     text-align: left;
     color: #ed1c24;
     margin: 30px 0px 30px;
+    font-weight: bold;
   }
 
   .section1 {
@@ -124,10 +190,11 @@ header > div {
     width: 250px;
     height: 65px;
   }
+
   .button2 {
     background-color: #ffffff;
-    border: 2px;
-    padding: 15px;
+    border: 1px;
+    padding: 15px 0 15px 15px;
     margin-top: 15px;
     margin-left: 25px;
     color: black;
@@ -142,11 +209,11 @@ header > div {
     border: 2px;
     padding: 15px;
     margin-top: 30px;
+    margin-right: auto;
     color:white;
     height: 65px;
     width: 350px;
     font-weight: 700;
-
   }
 
   .hexagon {
