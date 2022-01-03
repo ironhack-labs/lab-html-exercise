@@ -44,6 +44,7 @@ nav a {
 }
 .input{
     color: rgba(0,0,0,.05);
+    width: fit-content;
 }
 
 .searchButton{
@@ -64,11 +65,14 @@ nav a {
     text-align: center;
     height: 700px;
     background-color: rgba(232, 217, 217, 0.342) ;
+    margin: 0px 150px;
 }
 h1{
-    font-size: 50px;
+    font-size: 80px;
+    font-weight: 900;
 }
 .ph1{
+    display: flex;
     font-size: 25px;
 }
 .opensource{
@@ -84,7 +88,8 @@ h1{
     transform: skew(9deg, 0deg);
     background-color: rgba(255,204,53,.4);
     font-style: italic;
-    margin: auto;
+    margin: 50px;
+    padding: auto;
 }
 
 
@@ -107,6 +112,8 @@ h1{
 
 .blocked {
     display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
     align-content: center;
@@ -145,6 +152,8 @@ h1{
     .hexagon{
         width: 400px;
         height: auto;
+        margin: auto;
+        padding: auto;
     }
     .coursorScreen{
         width: 30px;
