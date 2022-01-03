@@ -4,15 +4,17 @@ body {
   font-family: 'Poppins';
 }
 
-#firstRow {
+header > div {
+  padding: 0 25px;
   display: flex;
-  flex-direction: row;
-  margin: auto;
-  /*justify-content: flex-start;*/
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
 }
 
 .blackHeart {
-    width: 30px;
+    width: 20px;
+    margin-right: 1rem;
 }
 
 #niftyPenguin {
@@ -20,22 +22,31 @@ body {
     margin-bottom: auto;
 }
 
-ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    list-style: none;
+nav {
+  width: 600px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 li a {
     text-decoration: none;
     padding: 10px;
     margin: 3px;
+    color: black;
 }
 
 #search {
     display: flex;
     flex-direction: row;
+}
+
+#form {
+    width: 100%;
 }
 
 #searchButton {
@@ -47,18 +58,76 @@ li a {
     height: 25px;
 }
 
+h1 {
+    font-size: 4.5em;
+}
+
+h2 {
+    font-size: 2em;
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+    font-style: italic;
+    margin: 10px;
+}
+
+h3 {
+    color: #ED1C24;
+}
+
 #buildThings {
-    display: block;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 600px;
+    background-color: rgb(232,217,217,.3);
+}
+
+#amazingArticle {
+    width: 60%;
     text-align: center;
+}
+
+button {
+    padding: 15px;
+    margin: 5px;
+}
+
+#seePlans {
+    padding: 10px 15px;
+    margin: 6px;
+    text-decoration: none;
+    background-color: #FB3B49;
+    color: white;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+}
+
+#joinFree {
+    padding: 10px 15px;
+    margin: 6px;
+    text-decoration: none;
+    color: black;
+}
+
+#buttons {
+    margin: 40px;
 }
 
 .triangle {
-    height: 40px;
+    height: 100px;
+}
+
+#npmTool {
+    width: 60%;
+    text-align: center;
 }
 
 #openSource {
-    display: block;
-    text-align: center;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .createOrg {
@@ -71,9 +140,17 @@ li a {
 }
 
 #lastLink {
-    display: block;
-    text-align: center;
+    width: 20px;
     text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 2px 6px 2px 6px;
+    border: 1px solid black;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+}
+
+#linkContainer {
+    text-align: center;
 }
 
 section {
