@@ -21,7 +21,6 @@ header > div {
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid lightgray;
-  /* justify-content: flex-start; */
 }
 
 nav {
@@ -58,11 +57,12 @@ nav a {
   display: block;
   margin: 0 auto;
 }
-.searchBar {
+
+.search-bar {
   position: relative;
 }
 
-.searchButton {
+.search-button {
   width: 18px;
   height: 18px;
   top: 21px;
@@ -70,6 +70,44 @@ nav a {
   position: absolute;
   z-index: 10000;
 }
+
+.join-login {
+  display: flex;
+  align-items: center;
+  width: 180px;
+  justify-content: space-between;
+}
+
+.header-join-button {
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  font-weight: 900;
+  margin-left: 50px;
+  width: 85px;
+  height: 32px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  border: black 1px solid;
+}
+
+.header-login-button {
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  font-weight: 900;
+  margin-left: 50px;
+  width: 65px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
 .input {
   width: 900px;
   height: 40px;
@@ -81,25 +119,21 @@ nav a {
   border: none;
   position: relative;
 }
+
 .search {
   background-color: #fb3e44ed;
   border: none;
   height: 38px;
   color: white;
 }
-/* .join-login{
-    justify-content: flex-end;
-  } */
+
+
 .section-1 {
   background-color: rgba(232, 217, 217, 0.3);
-  /* position: relative; */
   display: table;
 }
 
 .section-1-wrapper {
-  /* position: absolute;
-  top: 100;
-  left: 160; */
   display: table-cell;
   vertical-align: middle;
 }
@@ -222,7 +256,7 @@ h2 {
   width: 250px;
 }
 
-.section-3-button__wrapper {
+.section-3-button-wrapper {
   display: flex;
   justify-content: center;
   margin-top: 80px;
