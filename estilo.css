@@ -9,10 +9,12 @@ header > div {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid lightgray;
+    border-bottom: 1px solid rgb(41, 39, 39);
   }
-  .buton search { 
-    input color: rgba(0,0,0,.05)  
+  .botonsearch { 
+    label color: rgba(0,0,0,.05)
+   background-color:  #fb3e44;
+     color: white
   }
 
   nav {
@@ -37,15 +39,27 @@ header > div {
   }
   #seccionI {
     display:flex;
+    background-color: #FEF9E7 ;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     height: 600px;
     rgba(232,217,217,.3);
 }
-#seccionI > div {
+
+
+.botonplans  { 
+    justify-content: center;
     background-color: #FB3B49;
-    box-shadow: 8px 8px 0 
+    box-shadow: 10px 10px 0 
+    rgba(251,59,73,.2);
+}
+.botonSign { 
+    justify-content: center;
+    text-align: center;
+    background-color: #FB3B49;
+    box-shadow: 10px 10px 0 
     rgba(251,59,73,.2);
 }
 
@@ -65,7 +79,7 @@ header > div {
 
 #seccionII> heading {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     background-color: rgba(255,204,53,.4);
     transform: skew(9deg,0deg);
     font-style: italic;
@@ -78,8 +92,10 @@ header > div {
 #seccionII> article {
     display: flex;
     text-align: center;
+    align-items: center;
+    justify-content: center;
     width:500;
-    font-size: 15px;
+    font-size: 30px;
 }
 
 #seccionIII {
@@ -97,7 +113,8 @@ header > div {
     width: 200px;
 }
 
-.boton {
+#seccionIII > div > .boton
+ {
     background-color: black;
     box-shadow: 8px 8px 0 rgba(128,83,35,.2);
     color: white
@@ -110,10 +127,7 @@ header > div {
   .magnifying-glass {
       width:  50px;
   }
-  .triangle-hesagon {
-      width: 150px;
-      align-items: center;
-  }
+ 
   
   .zero-configuration {
       width: 10px;
@@ -129,20 +143,4 @@ header > div {
      width: 10px;
  }
  
-  h1{
-     text-align: center;
-    width: 80%;
-    font-size: 5em;
-}
-h2{
-    text-align: center;
-   width: 80%;
-   font-size: 3em;
-
- }
- h3 {
-    font-size: 4.2em;
-    text-align: center;
-    line-height: 1em;
-
-  }
+  
