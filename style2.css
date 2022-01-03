@@ -1,54 +1,110 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
 body {
-  font-family: 'Poppins';
+  font-family: "Poppins";
 
-};
+}
 header > div {
     padding: 0 25px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid lightgray;
-  };
+  }
   
-  .nav {
+  nav {
     width: 600px;
     
-  };
+  }
   
-  .nav ul {
+  nav ul {
     list-style: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
-  };
+  }
   
-  .nav a {
+  nav a {
     text-decoration: none;
     color: black;
-  };
+  }
   
   .blackHeart {
     width: 20px;
     margin-right: 1rem;
-  };
-  .search-bar button{
-    background-color:#fb3e44;
-    color:white;
-  };
-  #build-sec{
-    display: flex;
-    justify-content: center;
-    height :600px;
   }
-  #build-sec .plans-btn button{
+  
+ #build-sec{
+    display:flex;
+    justify-content:center;
+    height :600px;
+    flex-direction:column;
+    align-items: center;
+    background-color:rgba(232,217,217,.3);
+
+  }
+  #build-sec .link-see{
       background-color: #FB3B49;
       box-shadow: 8px 8px 0 rgba(251,59,73,.2);
       color: white;
+  }
+
+#build-sec .link-join{
+    background-color: white;
+    color: black;
+}  
+ #build-sec .link-build a{
+    text-decoration: none;
+    font-size: 1em;
+  letter-spacing: 0.5px;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 30px;
+}
+.text-one{
+    font-size: 1em;
+    font-weight: 100;
+    text-align:center;
+     width: 40%;
+     margin-left: auto;
+    margin-right: auto;
+    
+}
+  h1{
+  
+        font-size: 4em;
+        text-align: center;
   }
   h3{
       background-color: rgba(255,204,53,.4);
       transform: skew(9deg,0deg);
       
   }
+  .logonpm img{
+    width: 50px;
+    height: auto;
+  }
+ 
+  #divBusca .textBusca{
+      width: 70em;
+      background-color: transparent;
+      border: none;
+      font-family: "Poppins";
+
+  }
+  #divBusca .btnBusca{
+    background-color: #fb3e44;
+    color: white;
+    border: none;
+    height: 2em;
+    font-weight: bold;
+    font-family: "Poppins";
+  }
+  .links a{
+      text-decoration: none;
+      color:black;
+      margin: -1px;
+      border: gray solid 0.2px;
+      
+      }
+  
