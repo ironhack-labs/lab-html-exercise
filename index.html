@@ -1,49 +1,71 @@
 <!DOCTYPE html>
 <html>
-  <head> </head>
+  <head>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
   <body>
-    <div>
-      <div>
-        <img src="/images/black-heart.png" alt="Black Heart" />
-        <span>Nifty Penguin Magic</span>
-      </div>
     <header>
+      <div>
+        <div>
+          <img
+            class="blackHeart"
+            src="/images/black-heart.png"
+            alt="Black Heart"
+          />
+          <span>Nifty Penguin Magic</span>
+        </div>
         <nav>
-            <ul>
+          <ul>
             <li><a href="#">npm Enterprise</a></li>
             <li><a href="#">Products</a></li>
             <li><a href="#">Solutions</a></li>
             <li><a href="#">Resources</a></li>
             <li><a href="#">Docs</a></li>
             <li><a href="#">Support</a></li>
-            </ul>
+          </ul>
         </nav>
-        </div>
-            <div class="subnav">
-            <img src="/images/npm-logo.png" alt="Logo" />
-            <img src="/images/magnifying-glass.png" alt="Search" />
-            <input type="text" placeholder="Search packages" />
-            <button class="#" type="submit">Search</button>
-            <button class="#" type="button">Join</button>
-            <button class="#">Log in</button>
-        </div>
+      </div>
     </header>
+    <div id="subnav">
+        <div class="logo-wrapper">
+            <img class="logo" src="/images/npm-logo.png" alt="Logo" />
+        </div>
+        <div id="searchbar">
+            <div class="mag-glass-wrapper">
+            <img
+                class="magnifying-glass"
+                src="/images/magnifying-glass.png"
+                alt="Search"
+            />
+            </div>
+            <div class="search-input">
+            <input type="text" placeholder="Search packages" />
+            </div>
+            <button class="search-button" type="submit">Search</button>
+        </div>
+        <div class="subnav-buttons">
+            <button class="join-button" type="button">Join</button>
+            <button class="Log-in-button">Log in</button>
+        </div>
+    </div>
 
     <!-- start of first section containing 1 article-->
-    <article>
+    <section id="sec01">
       <h1>Build amazing things</h1>
       <article>
-      <p>
-        Essential JavaScript development tools that help you go to market faster
-        and build powerful applications using modern open source code.
-      </p>
-    </article>
-      <button class="#" type="button" href="#">See plans</button>
-      <button class="#" type="button" href="#">Join for free</button>
-    </article>
+        <p>
+          Essential JavaScript development tools that help you go to market
+          faster and build powerful applications using modern open source code.
+        </p>
+        <div>
+          <button class="#" type="button" href="#">See plans</button>
+          <button class="#" type="button" href="#">Join for free</button>
+        </div>
+      </article>
+    </section>
 
     <!-- start of second section containing 1 article-->
-    <section>
+    <section id="sec02">
       <img src="/images/triangle-hexagon.svg" alt="Triangle-Hexagon" />
       <h2>Bring the best of open source to your company</h2>
       <article>
@@ -57,7 +79,7 @@
     </section>
 
     <!-- start of third section containing 4 aticles-->
-    <section>
+    <section id="sec03">
       <article class="#">
         <img src="/images/zero-configuration.svg" alt="zero-configuration" />
         <h4>zero configuration</h4>
