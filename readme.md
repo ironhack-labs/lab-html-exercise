@@ -234,7 +234,7 @@ Again use a lot of flexbox to get the right position of elements - direction, ju
 
 **Inspect elements to get the right size of the font for each of them**. However, this is not a crucial thing, so don't spend too much time on it - focus on positioning primary.
 
-#### CSS 5 | section 3
+#### CSS 5 | section 3 
 
 ![](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_7b69fd57e04d20183daed40e39b2001f.png)
 
