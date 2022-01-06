@@ -25,48 +25,58 @@
           </ul>
         </nav>
       </div>
-    </header>
+    </header class="line">
     <div id="subnav">
-        <div class="logo-wrapper">
-            <img class="logo" src="/images/npm-logo.png" alt="Logo" />
-        </div>
-        <div id="searchbar">
-            <div class="mag-glass-wrapper">
-            <img
-                class="magnifying-glass"
-                src="/images/magnifying-glass.png"
-                alt="Search"
-            />
-            </div>
-            <div class="search-input">
-            <input type="text" placeholder="Search packages" />
+      <div class="logo-wrapper">
+        <img class="logo" src="/images/npm-logo.png" alt="Logo" />
+      </div>
+        <form class="search-element">
+            <div id="searchbar-wrapper">
+                <div class="searchbar">
+                    <div class="mag-glass-wrapper">
+                    <img
+                        class="magnifying-glass"
+                        src="/images/magnifying-glass.png"
+                        alt="Search"
+                    />
+                    </div>
+                    <div class="search-input">
+                    <input type="text" placeholder="Search packages" />
+                    </div>
+                </div>
             </div>
             <button class="search-button" type="submit">Search</button>
-        </div>
-        <div class="subnav-buttons">
-            <button class="join-button" type="button">Join</button>
-            <button class="Log-in-button">Log in</button>
-        </div>
+        </form>
+      <div class="subnav-buttons">
+        <button class="join-button" type="button">Join</button>
+        <button class="Log-in-button">Log in</button>
+      </div>
     </div>
 
     <!-- start of first section containing 1 article-->
     <section id="sec01">
-      <h1>Build amazing things</h1>
+      <h1 id="heading">Build amazing things</h1>
       <article>
         <p>
           Essential JavaScript development tools that help you go to market
           faster and build powerful applications using modern open source code.
         </p>
-        <div>
-          <button class="#" type="button" href="#">See plans</button>
-          <button class="#" type="button" href="#">Join for free</button>
+        <div class="sec01-buttons">
+            <div>
+                <button class="plans" type="button" href="#">See plans</button>
+            </div>
+            <div>
+                <button class="join" type="button" href="#">Join for free</button>
+            </div>
         </div>
       </article>
     </section>
 
     <!-- start of second section containing 1 article-->
     <section id="sec02">
+        <div class="sec02-pic">
       <img src="/images/triangle-hexagon.svg" alt="Triangle-Hexagon" />
+      </div>
       <h2>Bring the best of open source to your company</h2>
       <article>
         <p>
@@ -114,7 +124,7 @@
       </article>
     </section>
 
-    <footer>
+    <footer class="footer">
       <button type="button" class="footer">Create an Org</button>
     </footer>
   </body>
