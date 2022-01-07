@@ -8,6 +8,7 @@ body {
   h1 {
       font-size: 5em;
       font-weight: 900;
+      margin: 35px;
   }
 
   h2 {
@@ -54,7 +55,31 @@ body {
     margin-right: 1rem;
   }
 
-  .searchbar img {
+  form {
+    display: flex;
+    align-items: center;
+    width: 80%; 
+    position: relative
+}
+
+form label img {
+    color: rgba(0,0,0,.05);
+    position: absolute;
+    height: 20px;
+    margin: 5px;
+    top:1px;
+}
+
+.searchbar form button {
+    background-color: #fb3e44;
+    color: white;
+    border: none;
+    padding: 8px 20px; 
+    font-size: 1em;
+    font-weight: 100;
+}
+
+  .logo {
       height: 20px;
       margin: 10px;
   }
@@ -62,10 +87,20 @@ body {
   .searchbar button {
         background-color: white;
         border: 0px;
+        margin: 0px;
         font-weight: bold;
+        font-size:1.1em;
   }
 
-  .first {
+form input {
+    background-color: rgba(0,0,0,.05);
+    width: 100%;
+    border: none;
+    padding: 7px 40px;
+    font-size: 0.9rem;
+  }
+
+  .presentation {
       height: 600px;
       background-color: rgba(232,217,217,.3);
       display: flex;
@@ -74,21 +109,39 @@ body {
       flex-direction: column;
   }
 
- .first button {
-    width: 200px;
+  .joinbtn {
+      margin: 50px;
+      display: flex;
+  }
+
+ .joinbtn button {
+    width: 250px;
     background-color: white;
-    color: black;
     padding: 20px;
     border: 0px;
+    font-size: 1.2em;
+    font-weight: 900;
+    margin-left: 10%;
   }
 
 #plans {
     background-color: #FB3B49;
     box-shadow: 8px 8px 0 rgba(251,59,73,.2);
-    color: white;
+    padding: 20px;
+    border: 0px;
+    width: 250px;
   }
 
-.first p {
+#plans a {
+    color: white;
+}
+
+.joinbtn a {
+    text-decoration:none;
+    color: black;
+}
+
+.presentation article {
     margin: 0px 500px;
     font-size: 1.2em;
     text-align: center;
@@ -106,9 +159,18 @@ body {
     height: 220px;
 }
 
-.second h2 {
+.skew {
+    transform: skewX(7deg);
     background-color: rgba(255,204,53,.4);
     margin: 50px;
+    padding: 0px;
+    height: 50px;
+}
+.skew h2 {
+    padding: 10px 10px 0px 10px;
+    transform: skewX(-7deg);
+    position: relative;
+    bottom: 35px;
 }
 
 .second p {
@@ -125,12 +187,14 @@ body {
 }
 
 .third button {
-    width: 30%;
-    height: 50px;
+    width: 25%;
+    height: 60px;
     background-color: black;
     box-shadow: 8px 8px 0 rgba(128,83,35,.2);
     color: white;
     margin: 30px;
+    font-size: 1.2em;
+    font-weight: 900;
 }
 
 .features {
@@ -141,10 +205,10 @@ body {
     margin: 0px 200px;
 }
 
-.container {
+.features .container {
     margin: 20px;
 }
 
-.container img {
+.features .container img {
     height: 25px;
 }

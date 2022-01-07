@@ -25,33 +25,40 @@
                 </ul>
             </nav>
         </div>
+
         <div class="searchbar">
-            <img src="images/npm-logo.png" alt="Npm Logo">
-            <form action="">
-                <input type="text" placeholder="Search packages">
-                <input type="submit" name="search" id="search">
+            <img class="logo" src="images/npm-logo.png" alt="Npm Logo">
+
+            <form action="" method="get">
+                <label for="site-search"><img src="images/magnifying-glass.png" alt=""></label>
+                <input type="search" id="site-search" name="search" placeholder="Search packages">
+                <button type="submit">Search</button>
             </form>
+
             <div>
                 <button>Join</button>
                 <button>Log In</button>
             </div>
         </div>
+
     </header>
 
-    <section class="first">
-        <h1>Build amazing things</h1>
+    <section class="presentation">
+            <h1>Build amazing things</h1>
         <article>
             <p>Essential JavaScript development tools that help you go to market faster and build powerful applications using modern open source code.</p>
         </article>
-        <div>
-            <a id="plans" href="#">See plans</a>
-            <button><a href="#">Join for free</a></button>
+        <div class="joinbtn">
+            <button id="plans" class="container"><a href="#">See plans</a></button>
+            <button class="container"><a href="#">Join for free</a></button>
         </div>
     </section>
 
     <section class="second">
         <img src="images/triangle-hexagon.svg" alt="hexagon">
+        <div class="skew">
         <h2>Bring the best of open source to your company</h2>
+        </div>
         <article>
             <p>npm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers  already use it. Your company depends on it. Create an Org and get more out of the tools your team already knows and loves.</p>
         </article>
