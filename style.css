@@ -31,7 +31,11 @@ nav ul {
 
 nav a {
   text-decoration: none;
-  color: black;
+  color: black;   
+}
+
+nav a:hover{
+  color: gray;
 }
 
 .black-heart {
@@ -220,3 +224,17 @@ form button {
     padding: 15px 120px;
     cursor: pointer;
 }
+
+.zoom{
+  transition: transform .2s; /* Animation */
+}
+
+.zoom:hover {
+  transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.change-to-gray:hover{
+  color: gray;
+  cursor: pointer;
+}
+
