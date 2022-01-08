@@ -26,28 +26,59 @@ header > div {
       width: 600px;
       height: 30px;
       background-color: rgba(0,0,0,.05);
-      
+      border: none;  
 
   }
 
-  .magnifyingGlass{
+  .input {
+    
+  }
+
+  .btn-search {
+    background-color: #FB3B49;
+    color: white;
+    padding: 5px 15px;
+    border:none;
+
+  }
+
+  .magnifyingGlass {
     width: 15px;
-    margin-right: 1rem;
+    margin-right: .5rem;
     padding-left: 15px;
 
   }
 
   nav {
-    width: 600px;
+    width: 500px;
   }
   
+  .nav {
+      width: 400px;
+  }
   nav ul {
     list-style: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
+  }
+
+  .form-container {
+      border: none
+ 
+  }
+  #join {
+      background-color: white;
+      padding: 0px 10px;
   }
   
+  #logIn {
+      border: none;
+      background-color: white;
+      padding: 0px 10px;
+  }
+
   nav a {
     text-decoration: none;
     color: black;
@@ -61,7 +92,7 @@ header > div {
   h1 {
       font-size: 4em;
       text-align: center;
-      font-weight: bold
+      font-weight: bolder;
 
   }
 
@@ -74,19 +105,46 @@ header > div {
       display: flex;
       flex-direction: column;
       justify-content: center;
+      align-items: center;
       height: 600px;
       background-color: rgba(232, 217, 217, .3);
+  }
+
+  #headline .article {
+      width: 30%;
+      text-align: center;
+      
+  }
+
+  #headline div{
+     padding: 5%;
+    
+  }
+
+  .link-btn {
+      background-color: #FB3B49;
+      box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+      color: white;
+      padding: 10px 35px;
+      
+  }
+
+  .link-btn2 {
+      padding: 10px 35px;
+      background-color: white;
+      font-weight: bold;
   }
 
   #presentation {
       display: flex;
       align-items: center;   
-      height: 600px;
+      height: 500px;
       flex-direction: column;
 
   }
 
   #presentation img {
+      padding-top: 50px;
       width: 150px;
   }
 
@@ -99,18 +157,25 @@ header > div {
   }
 
   #presentation article {
-      width: 70%;
+      width: 60%;
       text-align: center;
+      margin: 5px;  
 
   }
 
-  #productSummary  {
+  #productSummary span {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    height: 600px;
+    padding: 5%;
+
     
 
+  }
+
+  #productSummary div{
+      padding: 2%;
+ 
   }
 
   #productSummary img {
@@ -122,8 +187,17 @@ header > div {
   }
 
   #productSummary button {
-    background-color: black;
-    box shadow: 8px 8px 0 rgba(128,83,35,.2);
-    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     outline: none;
+    height: 40px;
+    width: 25%;
+  }
+
+  .btn {
+    background-color: black;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    color: white;
   }

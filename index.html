@@ -24,25 +24,26 @@
 
        <div>
            <img src="images/npm-logo.png" alt="npm logo">
-           <img class="magnifyingGlass" src="images/magnifying-glass.png" alt=" magnifying glass logo">
-           <form class="" action="">
-            <input type="search" placeholder="Search packages" name="search">
-            <button type="submit"><i class="search">Search</i></button>
+           
+           <form class="form-container">
+            <img class="magnifyingGlass" src="images/magnifying-glass.png" alt=" magnifying glass logo">
+            <input class="input" type="search" placeholder="Search packages" name="search">
+            <button class="btn-search" type="submit">Search</button>
             </form>
-            <button id="join">Join</button>
-            <button id="logIn">Log in</button>
+            <button href="join" id="join">Join</button>
+            <button href="login" id="logIn">Log in</button>
        </div>
    </header>
 
    <section id="headline">
        <h1>Build amazing things</h1>
-       <article>Essential JavaScript development tools that help you go to market faster and build powerful applications using
+       <article class="article">Essential JavaScript development tools that help you go to market faster and build powerful applications using
         modern open source code.</article>
         <div>
-            <nav>
+            <nav class="nav">
                 <ul>
-                  <li><a href="#logIn"> See plans </a></li>
-                  <li><a href="#join"> Join for free </a></li>
+                  <li><a class="link-btn" href="#logIn"> See plans </a></li>
+                  <li><a class="link-btn2" href="#join"> Join for free </a></li>
                 </ul>
               </nav>
            </div>
@@ -59,6 +60,7 @@
    </section>
 
    <section id="productSummary">
+       <span>
        <div>
            <img src="images/zero-configuration.svg" alt="zero configuration symbol">
            <h3>Zero configuration</h3>
@@ -83,8 +85,11 @@
         <h3>npm audit</h3>
         <p>Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer.</p>
     </div>
-
-    <button>Create an Org</button>
+    </span>
+    
+    <span>
+    <button class="btn">Create an Org</button>
+    </span>
    </section>
 </body>
 </html>
