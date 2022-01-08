@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
+/* *{
+border: 1px solid red;
+} */
+
 body {
   font-family: 'Poppins';
 }
@@ -33,33 +37,58 @@ header > div {
     margin-right: 1rem;
   }
 
-  .search-box-text{
-      color:A9A9A9;
-      background-image: url(images/magnifying-glass.png);
-      background-repeat: no-repeat;
-      background-size: 20px;
-      background-position: left;
-      margin: 0.5rem;
-      background-color:rgba(0,0,0,.05);
-      border: none;
-      width: 60rem;
-  }
-
-  .search-button{
-    background-color: #fb3e44;
-    border-color: #fb3e44;
-    color: white;
-  }
-
-  .npm-logo{
-    width: 70px;
-  }
-
   #all-search-box{
-      display: flex;
-      align-items: center;
-      justify-content: space-between;   
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
   }
+
+.npm-logo{
+  width: 70px;
+}
+
+.search-box-text{
+  padding: 15px 10px 10px 25px;
+  width: 95%;
+}
+
+.icon{
+  background-image: url(images/magnifying-glass.png);
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: left;
+  background-color: rgba(0,0,0,.05);
+  border: none;
+}
+
+.form-search-box{
+  margin-left: 0px;
+  margin-right: 0px;
+  padding: 3px;
+  width: 77%;
+  display: flex;
+  flex-direction: row;
+  border: none;
+}
+
+.search-button{
+  background-color: #fb3e44;
+  border: none;
+  color: white;
+}
+
+.Join-block a{
+  text-decoration: none;
+  border: 1px solid gray;
+  padding: 5px 20px;
+}
+  
+.log-in-block a{
+  text-decoration: none;
+}
 
  #section-one{
      display: flex;
@@ -68,6 +97,7 @@ header > div {
      flex-direction: column;
      height: 600px;
      background-color: rgba(232,217,217,.3);
+     border-top-style: ;
  }
 
  
