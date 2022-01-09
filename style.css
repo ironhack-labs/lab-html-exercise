@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
-*{
+/* *{
   border: 1px solid red;
-  }
+  } */
 
 body {
   font-family: 'Poppins';
@@ -37,13 +37,74 @@ header > div {
     margin-right: 1rem;
   }
 
-  .npm {
-    width: 70px;
-    margin: 10px;
-    position: relative;
+  #form-container {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
 
-  .logo-search-box{
+  .npm {
+    width: 85px;
+  }
+
+#form-element {
+  background-color: rgba(0,0,0,.05);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 15px;
+ 
+}
+
+.search-icon {
+  margin-left: 5px;
+  background: url("images/magnifying-glass.png") no-repeat left;
+  background-size: 20px;
+}
+
+
+.search-box {
+  background-color: transparent;
+  border: 0;
+  padding-left: 40px;
+  width: 1400px;
+  height: 40px;
+  font-weight:lighter;
+  font-family: 'Poppins';
+
+
+}
+
+.search-button {
+  background-color: #fb3e44;
+  color: white;
+  padding: 3px;
+  border:3px solid #fb3e44;
+  width: 80px;
+  height: 40px;
+  font-family: 'Poppins';
+
+}
+
+.join-anchor {
+border: 1px solid black;
+padding: 3px 20px;
+color: black;
+}
+
+.login-anchor {
+  color:black;
+  margin-right: 5px;
+
+}
+
+
+
+
+
+  /* .logo-search-box{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -153,4 +214,4 @@ padding: 5px 40px;
  margin-block-start: 1em;
 margin-inline-start: auto;
 padding: 5px 40px;
-margin-inline-start: 2em;
+margin-inline-start: 2em; */ */
