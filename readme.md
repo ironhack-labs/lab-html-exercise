@@ -22,7 +22,7 @@ Whenever you create a first significant change, you should make your first commi
 
 In the end of this document, you will find guidelines on how to submit the exercise.
 
-**Keep in mind that you don't have to wait to fully finish the exercise to make a pull request. You only have to make a pull request once. After that, every time when you make a commit, it will be automatically added and shown in the pull request.**
+**Keep in mind that you don't have to wait to fully finish the exercise to make a pull request.z You only have to make a pull request once. After that, every time when you make a commit, it will be automatically added and shown in the pull request.**
 
 ## Instructions
 
