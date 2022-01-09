@@ -1,15 +1,17 @@
 <html>
   <head>
     <link rel="stylesheet" href="./style.css" />
+    <title>Npm</title>
   </head>
   <body>
 <header>
-    <div>
-      <div>
+  <!-- First line of site -->
+    <div id="nav-container">
+      <div class="header-img">
         <img class="blackHeart" src="images/black-heart.png" alt="black heart" />
         <span> Nifty Penguin Magic </span>
       </div>
-      <nav>
+      <nav id="nav-links">
         <ul>
           <li><a href="#"> npm Enterprise </a></li>
           <li><a href="#"> Products </a></li>
@@ -20,17 +22,18 @@
         </ul>
       </nav>
     </div>
-    <div class="logo-search-box">
+    <!-- Second line of site -->
+    <div id="form-container">
         <img class="npm" src="images/npm-logo.png" alt="npm logo" />
-        <form action="#" method="post">
-            <input type="search" id="search-box" class="icon" placeholder="Search Packages" />
-<button class="button" type="submit">Search </button>
-<button class="join-button" type="submit">Join</button>
-        <button class="login-button" type="submit">Log In</button>
-</form>
+        <form action="#" class="form-element" method="post">
+            <input type="search" class="search-box" placeholder="Search Packages" />
+              <button class="search-button" type="submit">Search </button>
+              <a href="#" class="join-anchor">Join</a>
+              <a href="#" class="login-anchor">Log In</a>
+        </form>
       <!-- add logo, search bar and buttons (or links and style them as buttons later) -->
     </div>
-  </header>
+</header>
   <!-- Section one 'building amazing things' block-->
   <section id="First">
       <h1>Build amazing things</h1>
