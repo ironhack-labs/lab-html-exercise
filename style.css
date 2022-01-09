@@ -37,6 +37,9 @@ header > div {
     height: 30px;
     margin-left: 1rem;
     margin-top: 1rem;
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
 }
 
   .magnefyingGlas {
@@ -49,12 +52,26 @@ header > div {
     background-position: right top;
     background-repeat: no-repeat;
     background-size: contain;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .searchBar { position: relative; width:70%}
+  .searchBar input { border:none; background:rgb(236, 236, 236); display:block; width: 100%; box-sizing: border-box }
+  .searchBar img { position: absolute; top: 5px; left: 35px }
+  .searchBar {
+
+    background: url("https://github.com/throwoutofcoffeeexception/lab-html-exercise/blob/master/images/magnifying-glass.png") no-repeat scroll 7px 7px;
+    padding-left:30px;
+  }
+
+  .searchBarSection {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
   }
 
   .inputForm {
-    background: url("https://github.com/throwoutofcoffeeexception/lab-html-exercise/blob/master/images/magnifying-glass.png") no-repeat scroll 7px 7px;
-    padding-left:30px;
-
     padding-left: 17px;
     font-family: 'Poppins';
     font-style: normal;
@@ -65,6 +82,10 @@ header > div {
     width: 90%;
     color: rgba(0,0,0,.05);
     border: 0px solid white;
+  }
+
+  .links{
+    padding-bottom: 100px;
   }
 
   .Join {
@@ -80,4 +101,126 @@ header > div {
     background-color: #fb3e44;
     color: white;
     border: 0px solid white;
+  }
+
+  .descriptionImage {
+    width: 50px;
+  }
+
+  .descriptions {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+
+  .descriptionBlock {
+    justify-content: center;
+    width: 200px;
+    flex-wrap: wrap;
+    display: flex;
+  }
+
+  .HexImage {
+    width: 100px;
+  }
+
+  .redHeader {
+    color: red;
+  }
+
+  .diamant {
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+  }
+
+  .articleDescription {
+    width: 50%;
+    padding-bottom: 200px;
+  }
+
+  .section1 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    padding-bottom: 50px;
+  }
+
+  .section2 {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding-bottom: 200px;
+  }
+
+  .SeePlans {
+    background-color: #FB3B49;
+    padding-top: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 5px;
+    color: white;
+    font-style: normal;
+    
+
+  }
+  .a {
+    font-style: normal;
+  }
+
+  .Login {
+    background: white;
+    padding-top: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 5px;
+    color: black;
+    font-style: normal;
+  }
+
+  .Join {
+    background: white;
+    padding-top: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 5px;
+    color: black;
+    font-style: normal;
+  }
+
+  .JoinForFree {
+    background: white;
+    padding-top: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 5px;
+    color: black;
+    font-style: normal;
+  }
+
+  a, u {
+    text-decoration: none;
+  }
+
+  .bestHeader {
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+    font-style: italic;
+  }
+
+  .orgyButton{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 150px;
+    color: white;
+    background: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
