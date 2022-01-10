@@ -3,7 +3,7 @@
 
 body {
   font-family: "Poppins";
-  padding: 0 2rem;
+  margin: 0;
 }
 
 header > div {
@@ -95,6 +95,7 @@ form button {
   background-color: white;
   font-size: 0.875rem;
   letter-spacing: 0.5px;
+  cursor: pointer;
 }
 
 .borde {
@@ -114,7 +115,7 @@ form button {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 600px;
+  padding-bottom: 3rem;
   background-color: rgba(232, 217, 217, 0.3);
 }
 
@@ -127,7 +128,7 @@ form button {
 }
 
 #build article {
-  width: 550px;
+  max-width: 550px;
   font-size: 1.3rem;
   text-align: center;
   font-weight: 400;
@@ -170,22 +171,22 @@ form button {
 
 #bring img {
   width: 300px;
-  margin-top: 4rem;
+  margin-top: 7rem;
 }
 
 #bring h2 {
-  margin-top: 4rem;
+  margin: 4rem 0 3rem;
   font-size: 2rem;
-  width: 900px;
+  max-width: 900px;
   text-align: center;
   background-color: rgba(255, 204, 53, 0.4);
   transform: skew(9deg, 0deg);
   font-style: italic;
-  margin-bottom: 3rem;
+  padding: 0 2rem;
 }
 
 #bring article {
-  width: 900px;
+  max-width: 900px;
   font-size: 1.15rem;
   text-align: center;
 }
@@ -200,13 +201,18 @@ form button {
 
 .boxes {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: 0 6rem;
+  max-width: 77%;
+  justify-content: center;
+  flex-shrink: 2rem;
 }
 
 .boxes > div {
   margin: 0 2.5rem;
+}
+#description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .boxes p {
@@ -215,11 +221,12 @@ form button {
 
 #description button {
   background-color: black;
+  min-width: 24rem;
   color: white;
   font-weight: bold;
   font-size: 1.2rem;
   text-align: center;
-  padding: 1rem 10rem;
+  padding: 1rem 0rem;
   margin-top: 4rem;
   box-shadow: 8px 8px 0 rgba(128, 83, 35, 0.2);
   cursor: pointer;
