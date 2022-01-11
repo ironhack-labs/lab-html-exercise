@@ -16,6 +16,10 @@ body {
     font-family: Poppins, sans-serif;
   }
 
+  h1 {
+      font-size: 80px;
+  }
+
 header {
       display: flexbox;
       flex-direction: column; 
@@ -90,12 +94,61 @@ nav a {
     border: none;
 }
 
+a, 
+button {
+    text-decoration: none;
+    color: black;
+}
+
 .login-button {
     color: #2C3B5F;
-    text-decoration: none;
     padding: 5px;
 }
 
 #border-button {
     border: 0.5px solid rgb(105, 105, 105);
+}
+
+#amazing-section {
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(232,217,217,.3);
+}
+
+.hexagon {
+    width: 80px;
+}
+
+
+#amazing-section article {
+    width: 30%;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+#amazing-section div {
+    border: 1px solid red;
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 4em;;
+}
+
+#amazing-section a {
+    width: 40%;
+    padding: 15px;
+    border: 1px solid red;
+    text-align: center;
+    font-weight: bold;
+}
+
+#see-plans-button {
+    background-color: #FB3B49;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+    color: white;
+    
 }
