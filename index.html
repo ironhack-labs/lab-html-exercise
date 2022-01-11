@@ -2,13 +2,13 @@
 <html> 
     <head>
         <title>npm Website Clone</title>
-        <link rel="stylesheet" href="npm-clone-style.css">
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <header>
+        <header class="header">
             <div>
                 <div>
-                    <img src="images/black-heart.png" alt="heart">
+                    <img class="blackHeart" src="images/black-heart.png" alt="heart">
                     <span>Nifty Penguin Magic</span>
                 </div>
                 <nav>
@@ -23,15 +23,15 @@
                 </nav>
             </div>
             <div>
-                <img src="images/npm-logo.png" alt="npm logo">
-                <form>
-                    <img src="images/magnifying-glass.png" alt="mmagnifying glass">
-                    <input type="text" name="" id="" placeholder="Search packages">
+                <img src="images/npm-logo.png" alt="npm logo" class="npm-logo">
+                <form class="search-form">
+                    <label for="search"><img class="magnifying-glass" src="images/magnifying-glass.png" alt="mmagnifying glass"></label>
+                    <input type="text" name="search" id="search" placeholder="Search packages">
                     <button type="submit">Search</button>
                 </form>
                 <div>
-                    <a href="#">Join</a>
-                    <a href="#">Log in</a>
+                    <a class="login-button" href="#">Join</a>
+                    <a class="login-button" id="border-button" href="#">Log in</a>
                 </div>
             </div>
         </header>
