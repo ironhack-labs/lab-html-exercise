@@ -17,7 +17,14 @@ body {
   }
 
   h1 {
-      font-size: 80px;
+      font-size: 6em;
+  }
+
+  h2 {
+      font-size: 3em;
+      border: 1px solid red;
+      position: relative;
+      top: -44px;
   }
 
 header {
@@ -69,7 +76,6 @@ nav a {
     flex-direction: row;
     justify-content: center;
     align-items: stretch;
-    
     
 }
 
@@ -150,5 +156,33 @@ button {
     background-color: #FB3B49;
     box-shadow: 8px 8px 0 rgba(251,59,73,.2);
     color: white;
-    
+}
+
+#open-source-section {
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#open-source-section div {
+    height: 40px;
+    position: relative;
+    margin-top: 3em;
+    border: 1px solid red;
+    transform: skew(9deg,0deg);
+    font-style: italic;
+    background-color: rgba(255,204,53,.4);
+}
+
+#open-source-section article {
+    margin-top: 1.2em;
+    width: 40%;
+    text-align: center;
+    border: 1px solid red;
+}
+
+.hexagon {
+    width: 200px;
 }
