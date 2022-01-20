@@ -1,5 +1,9 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+
     <header>
         <div>
           <div>
@@ -20,13 +24,15 @@
       
         <div>
           <img class="logo" src="images/npm-logo.png" alt="npm logo">
-            <form action="">
-                <label for="search-bar"><img src="./images/magnifying-glass.png" alt="magnifying glass"></label>
+            <form class="search-form" action="">
+                <label for="search-bar"><img class="magnifying-glass" src="./images/magnifying-glass.png" alt="magnifying glass"></label>
                 <input type="text" id="search-bar" placeholder="Search packages">
                 <button type="submit">Search</button>
             </form>
-            <button type="button"><a href="#">Join</a></button>
-            <button type="button"><a href="#">Log In</a></button>
+            <div class="header-buttons">
+                <button id="join-button" type="button"><a href="#">Join</a></button>
+                <button id="login-button" type="button"><a href="#">Log In</a></button>
+            </div>
         </div>
       </header>
 
