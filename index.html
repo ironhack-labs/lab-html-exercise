@@ -7,7 +7,7 @@
     <header>
         <div>
             <div>
-                <img id="blackHeart" src="./images/black-heart.png" alt="black heart" />
+                <img id="blackHeartImg" src="./images/black-heart.png" alt="black heart" />
                 <span> Nifty Penguin Magic </span>
             </div>
             <nav>
@@ -22,17 +22,17 @@
             </nav>
         </div>
     
-        <div>
+        <div id=searchDiv>
             <!-- add logo, search bar and buttons (or links and style them as buttons later) -->
             <img id="npmLogoImg" src="./images/npm-logo.png" alt="npm logo" />
-            <img id="magnifyingGlassImg" src="./images/magnifying-glass.png" alt="magnifying glass" />
-            <a href="#">Join</a>
-            <a href="#">Log In</a>
-            <form action="/" method="post">
-                <label for="searchField"></label>
+
+            <form class="searchForm" action="/" method="post">
+                <img id="magnifyingGlassImg" src="./images/magnifying-glass.png" alt="magnifying glass"/>
                 <input type="text" name="searchField" id="searchField" placeholder="Search Packages">
-                <input type="submit" value="Search">
+                <input type="submit" value="Search" id="searchButton">
             </form>
+            <a id="joinA" href="#">Join</a>
+            <a href="#">Log In</a>
         </div>
     </header>
 
