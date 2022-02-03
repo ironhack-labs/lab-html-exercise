@@ -33,6 +33,8 @@ nav a {
     margin-right: 1rem;
 }
 
+/* Bottom Header*/
+
 .npm-logo {
     width: 80px;
     margin: 10px;
@@ -40,21 +42,51 @@ nav a {
     align-items: center;
 }
 
-
-
-.magnifying-glass {
-      width:100px;
+.searchForm {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 20px 20px;
+    align-items: center;
+    height: 20px;
+    flex-direction: row;
 }
 
+.magnifying-glass {
+      width:25px;
+      display: flex;
+      align-items: center;
+}
 
+.buttonOne {
+    background-color: white;
+    color: black;
+    border: 1px black;
+    padding: 10px 20px;
+}
 
+.buttonTwo {
+    background-color: white;
+    color: black;
+    flex-direction: row;
+}
 
+#bottomHeader{
+    display: flex;
+    flex-direction: row;
+}
 
+/* Section One */
 
+#sectionOne {
+    height: 600px;
+    background-color: rgba(232,217,217,.3);
+}
 
 #sectionOne h1 {
     text-align:center;
     font-size: 100px;
+    font-weight: bold;
 }
 
 #sectionOne article {
@@ -65,8 +97,88 @@ nav a {
     justify-content: center;
 }
 
+.buttonThree{
+    display: flex;
+    align-items: center;
+    background-color: #FB3B49;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+    color: white;
+    margin: 0px 600px;
+    display: flex;
+    justify-content: center;
+    padding: 10px 20px;
+}
+
+.buttonFour{
+    background-color: white;
+    color:black;
+    display: flex;
+    justify-content: center;
+    margin: 0px 600px;
+    padding: 10px 20px;
+}
+
+/* Section Two */
+
 .triangle-hexagon {
     display:block;
     margin:auto;
-    height:100px;
+    height:200px;
+    padding: 60px 20px;
+}
+
+#sectionTwo h2 {
+    background-color: rgba(255,204,53,.4);
+    display: flex;
+    justify-content: center;
+    transform: skew(9deg,0deg);
+    font-style: italic;
+    align-items: center;
+    margin: 0px 250px;
+}
+
+#sectionTwo article {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 30px;
+}
+
+/* Section Three */
+
+.table {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+.zero-configuration {
+    height: 25;
+}
+
+.team-management {
+    height: 25;
+}
+
+.friendly-features {
+    height: 25;
+}
+
+.npm-audit {
+    height: 25;
+}
+
+#sectionThree h3 {
+    color: #ED1C24;
+} 
+
+.lastButton {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding: 10px 45px;
+    margin: 25px 600px;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);    
 }

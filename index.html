@@ -1,7 +1,9 @@
-<html lang="en"
+<html lang="en">
 <head>
     <link rel="stylesheet" href="./style.css" />
 </head>
+<body>
+
 
 <header>
     <div>
@@ -21,18 +23,22 @@
       </nav>
     </div>
   
-    <div class=bottomHeader>
-        <img class="npm-logo" src="images/npm-logo.png" alt="npm logo" /> 
+    <div id=bottomHeader>
         <div>
-            <form id="form"> 
-                
-                <img class="magnifying-glass" src="images/magnifying-glass.png" alt="magnifying-glass">
-                <input type="search" id="query" name="q" placeholder="Search Packages...">
-                <button type="submit">Search</button>
+            <img class="npm-logo" src="images/npm-logo.png" alt="npm logo" /> 
+
+            <form class="searchForm" action="search" method="get">
+                <div class= "formFormat">     
+                    <img class="magnifying-glass" src="images/magnifying-glass.png" alt="magnifying glass" />
+                    <input type="text" placeholder="Search packages" />
+                </div>
+                <button type="submit">Search</button>              
             </form>
-            <a href="https://www.npmjs.com/signup">Join</a>
-            <a href="https://www.npmjs.com/login">Login</a>
-        </div>       
+        </div>    
+        <div>
+            <a class = buttonOne href="https://www.npmjs.com/signup">Join</a>
+            <a class=buttonTwo href="https://www.npmjs.com/login">Log In</a>  
+        </div>   
     </div>
 </header>
 
@@ -44,8 +50,8 @@
         </article>
 
         <div>
-            <a href="https://www.npmjs.com/products/pro">See Plans</a>
-            <a href="https://www.npmjs.com/signup">Join for free</a>
+            <a class = buttonThree href="https://www.npmjs.com/products/pro">See Plans</a>
+            <a class = buttonFour href="https://www.npmjs.com/signup">Join for Free</a>
         </div>
 </section>
 
@@ -59,29 +65,36 @@
             </article>
 </section>
 
-<section id = sectionThree>
-    <table>
-        <thead>
+<section id = "sectionThree">
+
+    <article class=table>
+        <div>
             <img class="zero-configuration" src="images/zero-configuration.svg" alt="mouse pointer" />
+            <h3>Zero Configuration</h3>
+            <p>Create an org, add your team, and start collaborating. Nothing to configure, set up, or manage.</p>
+        </div>
+
+        <div>
             <img class="team-management" src="images/team-management.svg" alt="team" />
+            <h3>Team Management</h3>
+            <p>Control who has access to what modules within your team namespace using straightforward team management capabilities.</p>
+        </div>
+
+        <div>
             <img class="friendly-features" src="images/familiar-features.svg" alt="features" />
-            <img class="triangle-hexagon" src="images/npm-audit.svg" alt="binoculars" />
-          <tr>
-            <th>Zero Configuration</th>
-            <th>Team Management</th>
-            <th>Familiar Features</th>
-            <th>npm audit</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Create an org, add your team, and start collaborating. Nothing to configure, set up, or manage.</td>
-            <td>Control who has access to what modules within your team namespace using straightforward team management capabilities.</td>
-            <td>npm Orgs has 100% parity with all the public npm registry features your developers already use.</td>
-            <td>Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer.</td>
-          </tr>
-        </tbody>
-      </table>
-      <a href="https://www.npmjs.com/signup">Create an Org</a>
+            <h3>Zero Configuration</h3>
+            <p>npm Orgs has 100% parity with all the public npm registry features your developers already use.</p>
+        </div>
+
+        <div>
+            <img class="npm-audit" src="images/npm-audit.svg" alt="binoculars" />
+            <h3>npm audit</h3>
+            <p>Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer.</p>
+        </div>
+
+    </article>
 </section>
+
+<a class= lastButton href="https://www.npmjs.com/signup">Create an Org</a>
+</body>
 </html>
