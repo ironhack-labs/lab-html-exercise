@@ -44,12 +44,17 @@ nav a {
 
 .searchForm {
     display: flex;
-    justify-content: space-between;
-    width: 80%;
+    justify-content: space-around;
+    width: 300%;
     margin: 20px 20px;
     align-items: center;
     height: 20px;
     flex-direction: row;
+}
+
+.searchButton {
+    background-color: #FB3B49;
+    color: white;
 }
 
 .magnifying-glass {
@@ -74,6 +79,7 @@ nav a {
 #bottomHeader{
     display: flex;
     flex-direction: row;
+
 }
 
 /* Section One */
@@ -81,16 +87,23 @@ nav a {
 #sectionOne {
     height: 600px;
     background-color: rgba(232,217,217,.3);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 #sectionOne h1 {
     text-align:center;
     font-size: 100px;
     font-weight: bold;
+    margin: 0px 40px;
 }
 
 #sectionOne article {
     text-align: center;
+    display: flex;
+    margin: 50px 350px;   
+       
 }
 
 #sectionOne div{
@@ -103,10 +116,10 @@ nav a {
     background-color: #FB3B49;
     box-shadow: 8px 8px 0 rgba(251,59,73,.2);
     color: white;
-    margin: 0px 600px;
+    margin-right: 15px;
     display: flex;
     justify-content: center;
-    padding: 10px 20px;
+    padding: 10px 45px;
 }
 
 .buttonFour{
@@ -114,8 +127,15 @@ nav a {
     color:black;
     display: flex;
     justify-content: center;
-    margin: 0px 600px;
-    padding: 10px 20px;
+    margin: 0px 0px;
+    padding: 10px 45px;
+    margin-left: 15px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    
 }
 
 /* Section Two */
@@ -135,13 +155,13 @@ nav a {
     font-style: italic;
     align-items: center;
     margin: 0px 250px;
+    font-weight: bold;
 }
 
 #sectionTwo article {
     display: flex;
-    justify-content: center;
     text-align: center;
-    margin: 30px;
+    margin: 50px 350px;    
 }
 
 /* Section Three */
@@ -151,6 +171,9 @@ nav a {
     justify-content: center;
     flex-direction: row;
     align-items: center;
+    margin: 0px 50px;
+    text-align: center;
+    padding: 50px 0px;
 }
 
 .zero-configuration {
@@ -180,5 +203,6 @@ nav a {
     color: white;
     padding: 10px 45px;
     margin: 25px 600px;
-    box-shadow: 8px 8px 0 rgba(128,83,35,.2);    
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2); 
+    margin-bottom: 100px;   
 }
