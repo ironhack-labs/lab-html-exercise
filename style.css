@@ -33,31 +33,36 @@ nav a {
 .blackHeart {
     width: 20px;
     margin-right: 1rem;
+    vertical-align: middle;
 }
 
 .headerMenu {
     font-weight: bold;
+    vertical-align: middle;
 }
 
-.headerSecondDiv img {
+.headerSearchJoinLogin img {
     width: 65px;
     height: 20px;
 }
 
-.searchBarForm {
+.headerSearchJoinLogin form {
     display: flex;
     justify-content: space-between;
+    width: 900px;
 }
 
 .searchBoxInput {
-    background-color: rgba(0, 0, 0, 0.05);
     padding: 1px 2px 1px 30px;
-    background: url("./images/magnifying-glass.png") no-repeat left;
+    background: url("./images/magnifying-glass.png") no-repeat left rgba(0, 0, 0, 0.05);
+    background-position-x: 10px;
     background-size: 20px;
     border: none;
-    padding: 16px 50px;
+    padding: 16px 40px;
     margin: 10px 0;
     font-size: 15px;
+    text-align: left;
+    width: 800px;
 }
 
 .searchBarForm img {
@@ -67,37 +72,30 @@ nav a {
 
 .searchButton {
     background-color: #fb3e44;
-    font-weight: bold;
     color: white;
-    border: 1px solid black;
-    border-color: black;
-    padding: 16px 50px;
+    padding: 16px 40px;
     margin: 10px 0;
-    text-decoration: none;
     font-size: 15px;
-}
-
-.joinButton {
-    background-color: white;
-    font-weight: bold;
-    color: black;
-    border: 1px solid black;
-    border-color: black;
-    padding: 16px 50px;
-    margin: 10px 0;
-    text-decoration: none;
-    font-size: 15px;
-}
-
-.loginButton {
-    background-color: white;
-    font-weight: bold;
-    color: black;
     border: none;
-    padding: 16px 50px;
-    margin: 10px 0;
+}
+
+.joinLoginButtons a {
     text-decoration: none;
+    background-color: white;
+    font-weight: bold;
+    color: black;
+    padding: 10px 30px;
+    margin: 10px 0;
     font-size: 15px;
+}
+
+#joinButton {
+    border: 1px solid black;
+    border-color: black;
+}
+
+#loginButton {
+    border: none;
 }
 
 #presentation {
@@ -126,7 +124,7 @@ h1 {
     text-decoration: none;
 }
 
-.seePlansButton {
+#seePlansButton {
     background-color: #fb3b49;
     font-weight: bold;
     box-shadow: 8px 8px 0 rgba(251, 59, 73, 0.2);
@@ -136,7 +134,7 @@ h1 {
     margin: 10px;
 }
 
-.joinForFreeButton {
+#joinForFreeButton {
     background-color: white;
     font-weight: bold;
     color: black;
@@ -180,7 +178,7 @@ h2 {
     height: 25px;
 }
 
-.CreateOrgButton {
+#createOrgButton {
     background-color: black;
     font-weight: bold;
     box-shadow: 8px 8px 0 rgba(128, 83, 35, 0.2);
@@ -190,16 +188,18 @@ h2 {
     margin: 10px;
     text-align: center;
     font-size: 16px;
+    text-decoration: none;
 }
 
 .CreateOrgButtonAlign {
     text-align: center;
+    margin: 50px;
 }
 .serviceBox {
     display: flex;
     justify-content: space-evenly;
     font-size: 11px;
-    padding: 50px 100px;
+    padding: 50px 150px;
     margin: 0 50px;
 }
 

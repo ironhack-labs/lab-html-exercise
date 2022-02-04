@@ -26,25 +26,19 @@
             </nav>
         </div>
 
-        <div class="headerSecondDiv">
+        <div class="headerSearchJoinLogin">
             <img src="./images/npm-logo.png" alt="npm logo">
 
-            <form id="search" class="searchBarForm" action="/search" method="get">
-
+            <form action="/search" method="get">
                 <input class="searchBoxInput" type="search" name="search" id="search" placeholder="Search Packages"
-                    autocomplete="off" aria-label="Search packages" value="" element="input">
+                    autocomplete="off" value="" element="input">
 
                 <button class="searchButton" type="text" title="Submit">Search</button>
-
             </form>
 
-            <div>
-                <a href="https://www.npmjs.com/signup">
-                    <button class="joinButton" type="submit">Join</button>
-                </a>
-                <a href="https://www.npmjs.com/login">
-                    <button class="loginButton" type="submit">Log In</button>
-                </a>
+            <div class="joinLoginButtons">
+                <a id="joinButton" href="https://www.npmjs.com/signup">Join</a>
+                <a id="loginButton" href="https://www.npmjs.com/login">Log In</a>
             </div>
         </div>
     </header>
@@ -59,18 +53,13 @@
         </article>
 
         <div>
-            <a href="https://www.npmjs.com/products">
-                <button class="seePlansButton" type="submit">See plans</button>
-            </a>
-            <a href="https://www.npmjs.com/signup">
-                <button class="joinForFreeButton" type="submit">Join for free</button>
-            </a>
+            <a id="seePlansButton" href="https://www.npmjs.com/products">See plans</a>
+            <a id="joinForFreeButton" href="https://www.npmjs.com/signup">Join for free</a>
         </div>
 
     </section>
 
     <section id="about">
-
         <img src="./images/triangle-hexagon.svg" alt="triangle hexagon" />
 
         <h2>Bring the best of open source to your company</h2>
@@ -81,11 +70,9 @@
                 company depends on it. Create an Org and get more out of the tools your team already knows and loves.
             </p>
         </article>
-
     </section>
 
     <section id="structure">
-
         <div class="serviceBox">
             <div class="serviceBoxContent">
                 <img src="./images/zero-configuration.svg" alt="Zero configuration icon">
@@ -115,12 +102,9 @@
         </div>
 
         <div class="CreateOrgButtonAlign">
-            <a href="https://www.npmjs.com/signup">
-                <button class="CreateOrgButton" type="submit">Create an Org</button>
-            </a>
+            <a id="createOrgButton" href="https://www.npmjs.com/signup">Create an Org</a>
         </div>
     </section>
-
 </body>
 
 </html>
