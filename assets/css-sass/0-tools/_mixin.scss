@@ -1,0 +1,208 @@
+@mixin brad($rayon) {
+    -webkit-border-radius: $rayon;
+    -moz-border-radius: $rayon;
+    border-radius: $rayon;
+}
+
+@mixin position($top, $right: $top, $bottom: $top, $left: $right) {
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+}
+
+@mixin noMargin() {
+    li:first-of-type a {
+        margin-left: 0;
+    }
+
+    li:last-of-type a {
+        margin-right: 0;
+    }
+}
+
+@mixin transition($transition) {
+    -webkit-transition: #{$transition};
+    -moz-transition: #{$transition};
+    -ms-transition: #{$transition};
+    -o-transition: #{$transition};
+    transition: #{$transition};
+}
+
+@mixin transform($transform) {
+    -moz-transform: $transform;
+    -ms-transform: $transform;
+    -webkit-transform: $transform;
+    transform: $transform;
+}
+
+@mixin transformOrigin($transformorigin:center center) {
+    -webkit-transform-origin: $transformorigin;
+    -moz-transform-origin: $transformorigin;
+    -ms-transform-origin: $transformorigin;
+    -o-transform-origin: $transformorigin;
+    transform-origin: $transformorigin;
+}
+
+@mixin flexCont() {
+    display: -webkit-flex;
+    display: flex;
+}
+
+@mixin flexDir($dir:row) {
+    flex-direction: $dir;
+    -webkit-flex-direction: $dir;
+}
+
+@mixin itemFlex($occupation) {
+    flex: $occupation;
+    -webkit-flex: $occupation;
+}
+
+@mixin flexFlow($flow) {
+    flex-flow: $flow;
+    -webkit-flex-flow: $flow;
+}
+
+@mixin justifyContent($dat) {
+    -webkit-justify-content: $dat;
+    justify-content: $dat;
+}
+
+@mixin flexAlignItem($dat) {
+    -webkit-align-items: $dat;
+    align-items: $dat;
+}
+
+@mixin flexWrap($dat) {
+    -webkit-flex-wrap: $dat;
+    flex-wrap: $dat;
+}
+
+@mixin flexGrow($grow:1) {
+    flex-grow: $grow;
+    -webkit-flex-grow: $grow;
+}
+
+@mixin flexShrink($shrink) {
+    flex-shrink: $shrink;
+    -webkit-flex-shrink: $shrink;
+}
+
+@mixin boxShadow($color:rgba(0, 0, 0, 0.5), $x:0px, $y:0px, $blur:3px, $spread:0px) {
+    -moz-box-shadow: $x $y $blur $spread $color;
+    -webkit-box-shadow: $x $y $blur $spread $color;
+    -o-box-shadow: $x $y $blur $spread $color;
+    box-shadow: $x $y $blur $spread $color;
+}
+
+@mixin resetAppearance() {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+@mixin btResetAppearance() {
+    @include resetAppearance();
+    border: none;
+    background: none;
+    cursor: pointer;
+    outline: none;
+}
+
+@mixin placeholdercolor($color:#CCC) {
+    &::-webkit-input-placeholder {
+        color: $color;
+        opacity: .5;
+    }
+
+    &:-moz-placeholder {
+        color: $color;
+        opacity: .5;
+    }
+
+    &::-moz-placeholder {
+        color: $color;
+        opacity: .5;
+    }
+
+    &:-ms-input-placeholder {
+        color: $color;
+        opacity: .5;
+    }
+
+    &::-ms-input-placeholder {
+        color: $color;
+        opacity: .5;
+    }
+}
+
+@mixin placeholderweight($weight: bold) {
+    &::-webkit-input-placeholder {
+        font-weight: $weight;
+    }
+
+    &:-moz-placeholder {
+        font-weight: $weight;
+    }
+
+    &::-moz-placeholder {
+        font-weight: $weight;
+    }
+
+    &:-ms-input-placeholder {
+        font-weight: $weight;
+    }
+
+    &::-ms-input-placeholder {
+        font-weight: $weight;
+    }
+}
+
+@mixin xs() {
+    @media screen and (max-width: $xs) {
+        @content;
+    }
+}
+
+@mixin sm() {
+    @media screen and (max-width: $sm) {
+        @content;
+    }
+}
+
+@mixin md() {
+    @media screen and (max-width: $md) {
+        @content;
+    }
+}
+
+@mixin lg() {
+    @media screen and (max-width: $lg) {
+        @content;
+    }
+}
+
+@mixin xsmin() {
+    @media screen and (min-width: ($xs+1)) {
+        @content;
+    }
+}
+
+@mixin smmin() {
+    @media screen and (min-width: ($sm+1)) {
+        @content;
+    }
+}
+
+@mixin mdmin() {
+    @media screen and (min-width: ($md+1)) {
+        @content;
+    }
+}
+
+@mixin lgmin() {
+    @media screen and (min-width: ($lg+1)) {
+        @content;
+    }
+}
