@@ -1,7 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,600&display=swap');
 
 body {
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
   padding: 0 20px 30px 20px;
 }
 
@@ -38,80 +39,62 @@ header > div {
     margin-right: 1rem;
   }
 
-/* header styles pt 2 - search bar  fix more later*/
-
-.npm-logo {
-    width: 80px;
-    margin-right: 1rem;
-}
-
-.search-bar-container {
-    display: flex;
-    position: relative;
-    width: 100%;
-    height: 60px;
-    padding: 0 25px;
-    
-}
+/* header styles pt 2 - try again */
 
 .search-bar {
-    display: flex;
-    position: relative;
-    width: 100%;
-    height: 40px; 
-    padding: 10px;
-}
-
-.search-bar input{
-    height: 30px;
-    width: 100%;
-    background-color: rgba(0,0,0,.05);
-    padding-left: 35px;
-    border: none;
-}
-
-.magnifying-glass {
   display: flex;
-  position: relative;
-  left: 30px;
-  top: 8px;
-  height: 17px;
+  flex-wrap: nowrap;
+  padding: 15px 20px;
+}
+
+.npm-logo {
+  width: 80px;
+  margin-right: 1rem;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.search-input{ 
+  width: 100%;
+  height: 35px;
+  background: url(./images/magnifying-glass.png) no-repeat 1%;
+  background-size: 20px;
+  background-color: rgba(0,0,0,.05);
+  border: none;
+  padding-left: 35px;
 }
 
 .search-btn {
-    background-color: #fb3e44;
-    color: white;
-    height: 32px;
-    border: none;
+  height: 37px;
+  border: none;
+  color: white;
+  background-color: #FB3B49;
+  padding: 0 15px;
 }
 
-/* header buttons styles -- this is a mess, fix more later */
-.header-btns-ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  border: 1px solid green;
-  }
 
-.header-btns-ul li{
-    display: flex;
-  	justify-content: space-between;
-    list-style-type: none;
-    text-align: center;
-    margin: 5px;
-    border: 1px solid grey; 
-  }
+/* header buttons styles */
 
   .header-btn {
-    padding: 2px;
-    margin: auto;
-    border: 1px solid red;
+    text-decoration: none;
+    padding: 5px 15px;
+    margin: 0px 10px 0px 10px;
+    
   }
-
 
   .header-btns-ul a {
     text-decoration: none;
 }
+
+.join {
+  border: 1px solid grey;
+  margin-left: 15px;
+}
+
 
 /* section 1 - build amazing things */
 #build-amazing-things {
@@ -123,10 +106,9 @@ header > div {
   background-color: rgba(232,217,217,.3);  
 }
 
-
 #build-amazing-things h1 {
   font-size: 60px;
-  font-weight: 900;
+  font-weight: 700;
 }
 
 .section-text {
@@ -135,24 +117,28 @@ header > div {
 }
 
 .amazing-btns {
-  border: 1px solid red;
-  padding: 10px 0;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  justify-content: space-around;
+  width: 550px;
+  padding: 30px 0px;
+  font-weight: 700;
 }
 
 .seeplan-btn {
   background-color: #FB3B49;
   box-shadow: 8px 8px 0 rgba(251,59,73,.2);
   padding: 10px 50px;
-  margin: 0 140px 0 0px;
   color: white;
   text-decoration: none;
 }
 
 .join-btn {
-  border: 1px solid rebeccapurple;
-  padding: 10px;
+  padding: 10px 50px;
   color: black;
   text-decoration: none;
+  background-color: white;
 }
 
 /* section 2 - best of open source */
@@ -167,20 +153,28 @@ height: 600px;
 
 #bring-the-best img{
   width: 200px;
+  margin-top: -70px;
+}
+
+.best-slogan{
+  width: 550px;
+}
+
+.section-text-slogan {
+  width: 600px;
+  text-align: center;
+  font-size: 12px;
 }
 
 #bring-the-best h2{
   background-color: rgba(255,204,53,.4);
   transform: skew(9deg,0deg);
   font-style: italic;
-  font-size: 20px;
-  padding: 0 15px;
+  font-weight: 600;
+  font-size: 22px;
+  padding: 0 20px 0 30px;
+  margin: 60px 0 0 0;
 }
-
-#bring-the-best p{
-  font-size: 14px;
-}
-
 
 /* section 3 pt 1-- What do we do? */
 
@@ -198,12 +192,13 @@ height: 600px;
 .thing-we-do {
   flex: 1;
   margin: 10px;
-  padding: 0 15px;
+  padding: 0 10px;
 }
 
 .thing-we-do h3{
   color:  #ED1C24;
-  font-size: 14px;
+  font-size: 13px;
+  Padding: 0px 0px 10px 0; 
 }
 .thing-we-do p{
  font-size: 12px; 
@@ -220,6 +215,7 @@ height: 600px;
 }
 .org-button a {
   color: white;
+  font-weight: 700;
   text-decoration: none;
   padding: 10px 0 10px 0;
 }
