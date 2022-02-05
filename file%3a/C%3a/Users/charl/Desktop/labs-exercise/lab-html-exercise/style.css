@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body {
+  font-family: 'Poppins';
+}
+
+/* header styles*/
+
+header > div {
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+  }
+
+  /* header styles pt 1 - nav bar*/
+
+  nav {
+    width: 600px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .blackHeart {
+    width: 20px;
+    margin-right: 1rem;
+  }
+
+/* header styles pt 2 - search bar  fix more later*/
+
+.npm-logo {
+    width: 80px;
+    margin-right: 1rem;
+}
+
+.search-bar-container {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 60px;
+    padding: 0 25px;
+    
+}
+
+.search-bar {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 40px; 
+    padding: 10px;
+}
+
+.search-bar input{
+    height: 30px;
+    width: 100%;
+    background-color: rgba(0,0,0,.05);
+    padding-left: 35px;
+    border: none;
+}
+
+.magnifying-glass {
+  display: flex;
+  position: relative;
+  left: 30px;
+  top: 8px;
+  height: 17px;
+}
+
+.search-btn {
+    background-color: #fb3e44;
+    color: white;
+    height: 32px;
+    border: none;
+}
+
+/* header buttons styles -- this is a mess, fix more later */
+.header-btns-ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 1px solid green;
+  }
+
+.header-btns-ul li{
+    display: flex;
+  	justify-content: space-between;
+    list-style-type: none;
+    text-align: center;
+    margin: 5px;
+    border: 1px solid grey; 
+  }
+
+  .header-btn {
+    padding: 2px;
+    margin: auto;
+    border: 1px solid red;
+  }
+
+
+  .header-btns-ul a {
+    text-decoration: none;
+}
+
+/* section 1 - build amazing things */
+
+#build-amazing-things {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  background-color: rgba(232,217,217,.3);
+}
+
+#build-amazing-things h1 {
+  font-size: 60px;
+  line-height: 20px;
+  top: 10px;
+}
+
+.section-text {
+  text-align: center;
+}
