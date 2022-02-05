@@ -1,0 +1,132 @@
+header {
+    font-size: 1rem;
+    font-weight: $Semi-bold;
+
+    .gradient {
+        padding: 8px 0;
+        border-width: 10px 0 0;
+        border-top-style: solid;
+        border-image: linear-gradient(139deg, #fb8817, #ff4b01, #c12127, #e02aff) 3;
+    }
+
+    .line {
+        // border: solid red 2px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 2rem;
+
+        div.element {
+            // border: solid rgb(76, 0, 255) 2px;
+
+            .blackHeart {
+                width: 20px;
+                margin-right: 1rem;
+            }
+
+            span {
+                padding: 10px;
+            }
+        }
+
+        nav {
+            // flex-grow: 0;
+
+            ul {
+                display: flex;
+                justify-content: space-around;
+
+                li {
+                    // border: solid rgb(76, 0, 255) 2px;
+                    padding: 3px;
+
+                    a {
+                        padding: 10px;
+                    }
+
+                }
+            }
+        }
+
+        &:last-of-type {
+            border-bottom: 1px solid lightgray;
+            box-shadow: 0px 2px 10px lightgray;
+            margin: 1rem 0;
+            padding-bottom: 1rem;
+            display: flex;
+            flex: 1 1 auto;
+
+
+            img {
+                //border: 1px solid #c018aa;
+                flex-shrink: 1;
+                width: 60px;
+                margin-right: 1rem;
+            }
+
+            form {
+                //border: 1px solid #c018aa;
+
+                flex-grow: 1;
+                display: flex;
+                margin: 0 2rem;
+
+                input#search {
+                    flex-grow: 1;
+                    padding: 1rem;
+                    background: rgba(0, 0, 0, .05);
+                    background-image: url('../../images/magnifying-glass.png');
+                    background-repeat: no-repeat;
+                    background-size: 20px;
+                    background-position-y: center;
+                    background-position-x: 10px;
+                    text-indent: 26px;
+                }
+
+                button {
+                    flex-shrink: 1;
+                    padding: 1rem 2rem;
+                    background: #e02aff;
+
+                    &:hover {
+                        @include hover-search-button;
+                    }
+                }
+            }
+
+            ul {
+                //border: 1px solid #c018aa;
+                display: flex;
+
+                li {
+                    // border: 1px solid #0fce65;
+                    padding: 1rem;
+
+                    justify-content: space-around;
+                    margin: 0 1rem;
+
+                    &:hover {
+                        @include hover-button;
+                    }
+
+                    &:first-of-type {
+                        border-top: black solid 1px;
+                        border-left: black solid 1px;
+                        border-right: rgb(70, 69, 69) solid 1px;
+                        border-bottom: rgba(70, 69, 69) solid 1px;
+
+
+
+                    }
+
+                    a {
+                        //border: 1px solid #7124ff;
+                        padding: 1rem 1.5rem;
+
+                    }
+                }
+
+            }
+        }
+    }
+}
