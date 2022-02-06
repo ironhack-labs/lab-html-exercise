@@ -6,7 +6,7 @@ body {
   padding: 0 20px 30px 20px;
 }
 
-/* header styles*/
+/* general header styles*/
 
 header > div {
     padding: 0 25px;
@@ -74,30 +74,28 @@ header > div {
   color: white;
   background-color: #FB3B49;
   padding: 0 15px;
+  cursor: pointer;
 }
 
 
 /* header buttons styles */
 
-  .header-btn {
+.header-btn {
     text-decoration: none;
+    color: gray;
     padding: 5px 15px;
     margin: 0px 10px 0px 10px;
     
   }
 
-  .header-btns-ul a {
-    text-decoration: none;
-}
-
 .join {
   border: 1px solid grey;
-  margin-left: 15px;
+  margin-left: 30px;
 }
 
 
 /* section 1 - build amazing things */
-#build-amazing-things {
+#intro {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -106,21 +104,21 @@ header > div {
   background-color: rgba(232,217,217,.3);  
 }
 
-#build-amazing-things h1 {
+#intro h1 {
   font-size: 60px;
   font-weight: 700;
 }
 
-.section-text {
+.intro-section-text {
   text-align: center;
   width: 550px;
 }
 
-.amazing-btns {
+.intro-btns {
   display: flex;
   flex-direction: row;
   position: relative;
-  justify-content: space-around;
+  justify-content: space-evenly;
   width: 550px;
   padding: 30px 0px;
   font-weight: 700;
@@ -141,9 +139,9 @@ header > div {
   background-color: white;
 }
 
-/* section 2 - best of open source */
+/* section 2 - slogan - best of open source */
 
-#bring-the-best {
+#slogan {
 display: flex;
 flex-direction: column;
 justify-content: center;
@@ -151,58 +149,60 @@ align-items: center;
 height: 600px;
 }
 
-#bring-the-best img{
+#slogan img{
   width: 200px;
   margin-top: -70px;
 }
 
-.best-slogan{
-  width: 550px;
-}
-
-.section-text-slogan {
-  width: 600px;
-  text-align: center;
-  font-size: 12px;
-}
-
-#bring-the-best h2{
+#slogan h2{
   background-color: rgba(255,204,53,.4);
+  text-align: center;
+  width: 700px;
   transform: skew(9deg,0deg);
   font-style: italic;
   font-weight: 600;
-  font-size: 22px;
-  padding: 0 20px 0 30px;
+  font-size: 27px;
   margin: 60px 0 0 0;
 }
 
-/* section 3 pt 1-- What do we do? */
+.best-slogan-text {
+  width: 580px;
+  text-align: center;
+  font-size: 12px;
+  padding-top: 15px;
+}
 
-.container-row {
+
+/* section 3 pt 1- features */
+
+.features-row {
   display: flex;
   justify-content: center;
   flex-direction: row;
-  margin: 20px 150px;
+  width: 100%;
+  padding-bottom: 50px;
 }
 
-#What-do-we-do img{
+#features img{
   height: 25px;
 }
 
-.thing-we-do {
+.feature {
   flex: 1;
   margin: 10px;
-  padding: 0 10px;
+  padding: 0 5px;
 }
 
-.thing-we-do h3{
+.feature h3{
   color:  #ED1C24;
   font-size: 13px;
   Padding: 0px 0px 10px 0; 
 }
-.thing-we-do p{
+.feature p{
  font-size: 12px; 
 }
+
+/* section 3 pt 2- create an organization button */
 
 .org-button {
   display: flex;
