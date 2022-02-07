@@ -203,8 +203,10 @@ header .line:last-of-type ul li a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 650px;
+  height: max-content;
   background-image: linear-gradient(270deg, rgba(176, 42, 42, 0.16) 0%, rgba(176, 42, 42, 0.56) 18.45%, rgba(176, 42, 42, 0.8) 49.67%, rgba(176, 42, 42, 0.56) 82.52%, rgba(176, 42, 42, 0.196364) 99.7%, rgba(189, 40, 40, 0) 99.71%, rgba(203, 56, 55, 0) 99.72%, rgba(203, 56, 55, 0.16) 99.73%), url(../../images/homepage-section1-background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   color: white;
   text-align: center;
 }
@@ -225,18 +227,19 @@ header .line:last-of-type ul li a {
 }
 #section1 .buttons {
   width: 30%;
-  margin-top: 2.5rem;
+  margin: 2rem 0 4rem;
   display: flex;
   justify-content: space-between;
 }
 #section1 .buttons button {
   width: 45%;
   padding: 1rem;
+  font-weight: 600;
 }
 #section1 .buttons button.btn-1 {
   background-color: white;
   color: black;
-  box-shadow: 5px 5px #e02aff;
+  box-shadow: 5px 5px #000000;
 }
 #section1 .buttons button.btn-2 {
   border: 1px solid white;
@@ -273,6 +276,39 @@ header .line:last-of-type ul li a {
 #section2 article {
   width: 40%;
   margin-top: 4rem;
+}
+
+#section3 .squares-container {
+  margin-top: 8rem;
+  padding: 0 12rem;
+  display: flex;
+  flex-direction: row;
+}
+#section3 .squares-container div {
+  flex: 1;
+  padding-right: 2rem;
+}
+#section3 .squares-container div img {
+  height: 30px;
+}
+#section3 .squares-container div article h3 {
+  color: #e02aff;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+#section3 .squares-container div article p {
+  text-align: left;
+}
+#section3 button {
+  display: block;
+  margin: 4rem auto;
+  width: 30%;
+  padding: 1rem;
+  background-color: black;
+  box-shadow: 5px 5px #7d7d7d;
+  color: white;
+  font-weight: 600;
+  font-size: 1.5rem;
 }
 
 /*# sourceMappingURL=app.css.map */
