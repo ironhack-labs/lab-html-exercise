@@ -87,6 +87,19 @@ p {
   font-size: 1rem;
 }
 
+p {
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+h2 {
+  color: black;
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-align: center;
+}
+
 header {
   font-size: 1rem;
   font-weight: 600;
@@ -207,7 +220,7 @@ header .line:last-of-type ul li a {
   font-size: 1.5rem;
 }
 #section1 article h2 {
-  font-size: 2.5rem;
+  color: white;
   padding: 2rem 0;
 }
 #section1 .buttons {
@@ -227,6 +240,39 @@ header .line:last-of-type ul li a {
 }
 #section1 .buttons button.btn-2 {
   border: 1px solid white;
+}
+
+#section2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem;
+}
+#section2 img {
+  width: 10%;
+  padding-bottom: 4rem;
+}
+#section2 h2 {
+  position: relative;
+  z-index: 10;
+  display: inline-block;
+  color: white;
+}
+#section2 h2::after {
+  background-color: #fb8917c6;
+  transform: skew(9deg, 0deg);
+  display: inline-block;
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: -5px;
+  right: -5px;
+  bottom: 0;
+}
+#section2 article {
+  width: 40%;
+  margin-top: 4rem;
 }
 
 /*# sourceMappingURL=app.css.map */

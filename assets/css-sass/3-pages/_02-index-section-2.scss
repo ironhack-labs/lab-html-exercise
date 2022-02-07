@@ -1,0 +1,42 @@
+#section2 {
+    //border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem;
+
+    img {
+        width: 10%;
+        padding-bottom: 4rem;
+    }
+
+    h2 {
+        // border: 2px solid yellow;
+
+        position: relative;
+        z-index: 10;
+        display: inline-block;
+        color: white;
+
+        &::after {
+            background-color: #fb8917c6;
+            transform: skew(9deg, 0deg);
+            display: inline-block;
+            content: "";
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            left: -5px;
+            right: -5px;
+            bottom: 0;
+        }
+    }
+
+    article {
+        // border: 2px solid green;
+        width: 40%;
+        margin-top: 4rem;
+    }
+
+
+}

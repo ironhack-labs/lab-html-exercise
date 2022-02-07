@@ -14,3 +14,20 @@ $bold : 700;
     font-family: $font1;
     font-size: 1rem;
 }
+
+@mixin paragraphe {
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: $semi-bold;
+}
+
+p {
+    @include paragraphe();
+}
+
+h2 {
+    color: black;
+    font-size: 2.5rem;
+    font-weight: $semi-bold;
+    text-align: center;
+}
