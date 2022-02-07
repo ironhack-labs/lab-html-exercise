@@ -1,0 +1,61 @@
+#section1 {
+    // border: 2px solid blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 650px;
+    background-image: linear-gradient(270deg, rgba(176, 42, 42, .16) 0%, rgba(176, 42, 42, .56) 18.45%, rgba(176, 42, 42, .8) 49.67%, rgba(176, 42, 42, .56) 82.52%, rgba(176, 42, 42, .196364) 99.7%, rgba(189, 40, 40, 0) 99.71%, rgba(203, 56, 55, 0) 99.72%, rgba(203, 56, 55, .16) 99.73%),
+        //dégradé s'affiche d'abord sil le chargement de l'image est long. 
+        url(../../images/homepage-section1-background.png);
+    color: white;
+    text-align: center;
+
+    h1 {
+        font-weight: $semi-bold;
+        font-size: 5rem;
+        padding: 7rem;
+    }
+
+    article {
+        // border: 2px solid rgb(174, 247, 5);
+        width: 30%;
+
+        p {
+            font-size: 1.5rem;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            padding: 2rem 0;
+
+        }
+    }
+
+    .buttons {
+        // border: 2px solid rgb(255, 60, 0);
+        width: 30%;
+        margin-top: 2.5rem;
+        display: flex;
+        justify-content: space-between;
+
+
+        button {
+            // border: 2px solid rgb(0, 204, 255);
+            //flex: 1;
+            width: 45%;
+            padding: 1rem;
+
+            &.btn-1 {
+                //border-bottom: 1px solid lightgray;
+                background-color: rgb(255, 255, 255);
+                color: rgb(0, 0, 0);
+                box-shadow: 5px 5px #e02aff;
+            }
+
+            &.btn-2 {
+                border: 1px solid white;
+            }
+        }
+
+    }
+}
