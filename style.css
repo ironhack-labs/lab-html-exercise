@@ -2,6 +2,7 @@
 
 body {
   font-family: 'Poppins';
+	margin-bottom: 50px;
 }
 
 header > div {
@@ -90,57 +91,114 @@ header a {
 	color: black;
 }
 
-.presentation-section {
+/* ---------------
+presentations blocks
+------------------ */
+
+.presentation-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	padding-top: 10px;
-	height: 500px;
 	text-align: center;
+	padding-bottom: 120px;
+}
+
+/* ---------------
+intro section
+------------------ */
+
+.intro {
 	background-color: rgb(232,217,217,0.3);
-	/* border: 1px dotted crimson; */
 }
 
-.presentation-section article {
-	margin:  0 0 0 26%;
-	width: 48%;
+.intro article {
+	margin-bottom: 30px;
+	width: 50%;
 }
 
-.presentation-section div {
+.cta-container {
+	width: 40%;
 	border: none;
 	display: flex;
-	justify-content: space-around;
-	margin: 0 0 0 26%;
-	width: 48%;
-	padding: 30px 0 25px 0;
+	align-content: space-between;
 }
 
-.presentation-section a {
+.cta-container a {
+	margin: 15 5% 15 5%;
+	padding: 8px 0 8px 0;
 	width: 100%;
+	background-color: white;
 }
 
-.link-plans {
-	padding: 15px 15px 15px 15px;
+#link-plans {
 	background-color: #FB3B49;
+	color: white;
 	box-shadow: 8px 8px 0 rgb(251,59,73, 0.2);
-	width: 100%;
 }
+
+/* ---------------
+open-source section
+------------------ */
 
 #open-src-visual {
-	margin: 30px 0 30px 0;
-	height: 150;
+	margin: 50px 0 30px 0;
+	height: 200;
 }
 
-.presentation-section .presentation-details {
+.open-src article {
 	font-size: 0.8em;
-	margin: 15px 15%;
-	width: 625px;
+	width: 40%;
 }
 
-.presentation-section h2 {
+.open-src h2 {
+	width: 700px;
+	font-size: 1.8em;
 	background-color: rgba(255,204,53,.4);
 	font-style: italic;
-	margin: 0 135px;
 	transform: skew(9deg,0deg);
 }
 
-.open-src {
+.open-src header {
 	background-color: white;
+}
+
+/* ---------------
+features section
+------------------ */
+
+.npm-features {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.features-container {
+	width: 75%;
+	display: flex;
+	align-items: start;
+}
+
+.feature {
+	width: 25%;
+	padding-left: 10px;
+	margin-bottom: 60px;
+}
+
+.feature h3 {
+	color: #ED1C24;
+}
+
+.npm-features img {
+	width: 30px;
+}
+
+.npm-features a {
+	text-align: center;
+	padding: 15px 0 15px 0;
+	width: 28%;
+	text-decoration: none;
+	box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+	background-color: black;
+	color: white;
 }
