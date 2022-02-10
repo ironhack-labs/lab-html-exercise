@@ -15,14 +15,11 @@ header > div {
   .topbar {
       font-weight: 900;
   }
-  
-  nav ul {
-      font-weight: 900;
-  }
 
   #npm {
       font-weight: 900;
   }
+
 
   nav {
     width: 600px;
@@ -45,8 +42,23 @@ header > div {
     margin-right: 1rem;
   }
 
-  .logo {
-    width: 20px;
+  .npmlogo {
+    width: 5em;
+}
+
+.mag {
+    width: 1.5em;
+    background-color: #FB3B49;
+    border-width: 200px;
+}
+
+.navbuttons {
+    display: flex;
+    justify-content: flex-end;
+    align-content: space-around;
+    width: 200px;
+    padding: 0 30px;
+    ;
 }
 
   #section1 {
@@ -56,11 +68,13 @@ header > div {
       align-items: center;
       height: 600px;
       background-color: rgba(232,217,217,.3);
+      padding: 5em 0;
   }
 
   #section1 h1 {
       font-size: 6em;
       font-weight: 900;
+      margin: 0.7em 0;
   }
 
   #section1 #plans {
@@ -79,3 +93,58 @@ header > div {
       text-align: center;
   }
 
+  .hexagon {
+      width: 300px;
+      padding: 6em 0;
+  }
+
+  #section2 {
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+    align-items: center; 
+}
+
+    #section2 h2 {
+    font-size: 3em;
+    font-weight: 900;
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+    font-style: italic;
+    padding: 0 1.3em;
+    }
+
+    #section2 article {
+      width: 55%;
+      font-size: 1.5em;
+      text-align: center;
+      margin-bottom: 9em;
+    }
+
+    .icons {
+        width: 100px;
+    }
+
+    .bottomInfo {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #section3 h3 {
+        color: #ED1C24;
+    }
+
+    .org {
+        box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+        font-size: 1.8em;
+        color: white;
+        background-color: black;
+        text-decoration: none;
+        padding: 20px 160px;
+        margin: 30px auto;
+    }
