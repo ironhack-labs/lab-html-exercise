@@ -1,0 +1,227 @@
+/* Google font */
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
+/*Global Styles*/
+body {
+  font-family: "Poppins";
+}
+button:hover {
+  cursor: pointer;
+}
+/* Top Header Styles */
+.top__nav {
+  padding: 0 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+}
+nav {
+  width: 600px;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+}
+.blackHeart {
+  width: 20px;
+  margin-right: 1rem;
+}
+.npmLogo {
+  width: 80px;
+  margin-right: 3rem;
+}
+.nav__bottom {
+  padding: 0 25px;
+  display: flex;
+  align-items: center;
+}
+.search {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  background: rgb(241, 239, 239);
+  padding: 6px 10px;
+  margin: 20px 1px;
+}
+.searchIcon {
+  width: 20px;
+  height: 20px;
+  margin-right: 6px;
+}
+input[type="search"] {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  padding: 12px 0;
+  margin-left: 10px;
+  font-size: 16px;
+}
+input[type="search"]::placeholder {
+  color: gray;
+  font-size: 16px;
+}
+input[type="search"]:focus {
+  border: none;
+  outline: none;
+}
+.searchWrapper {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  margin: 0 20px 0 10px;
+}
+.searchWrapper > button {
+  padding: 15px 20px;
+  font-size: 16px;
+  border: none;
+  color: white;
+  background-color: rgb(255, 70, 70);
+}
+.login__btn {
+  border: none;
+}
+.join__btn {
+  padding: 10px 15px;
+  background-color: white;
+}
+.login__btn {
+  font-size: 16px;
+  color: gray;
+  background-color: white;
+}
+
+/* Hero section */
+.hero__section {
+  background-color: rgb(253, 242, 244);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px 0;
+}
+.hero__section > h1 {
+  font-size: 60px;
+  font-weight: bolder;
+  margin: 0;
+  padding-bottom: 20px;
+}
+.hero__section > p {
+  width: 550px;
+  text-align: center;
+  font-size: 20px;
+  padding: 20px 0;
+}
+.hero__btn {
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+}
+.hero__btn button {
+  padding: 20px 80px;
+  margin-right: 30px;
+}
+.hero__btn__plans {
+  background-color: rgb(248, 64, 64);
+  color: white;
+  border: none;
+  font-size: 20px;
+  box-shadow: 10px 6px 2px rgb(252, 156, 156);
+}
+.hero__btn__join {
+  background-color: #fff;
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Description section */
+.description__section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 0;
+}
+.hexagone {
+  width: 250px;
+  height: 250px;
+}
+.description__section > h1 {
+  font-size: 40px;
+  background-color: rgb(255, 223, 155);
+  position: relative;
+  padding: 0 20px;
+  z-index: 10;
+}
+.description__section > h1::before {
+  content: "";
+  background-color: rgb(255, 223, 155);
+  transform-origin: 0 0;
+  transform: skewX(15deg);
+  position: absolute;
+  display: block;
+  top: 0;
+  left: -40px;
+  height: 60px;
+  width: 60px;
+  z-index: -1;
+}
+.description__section > h1::after {
+  content: "";
+  background-color: rgb(255, 223, 155);
+  transform-origin: 0 0;
+  transform: skewX(15deg);
+  position: absolute;
+  display: block;
+  top: 0;
+  right: -40px;
+  height: 60px;
+  width: 60px;
+  z-index: -1;
+}
+.description__section > p {
+  width: 810px;
+  text-justify: distribute;
+  text-align: center;
+}
+
+/* Feature section */
+.feature__section {
+  display: flex;
+  padding: 100px 80px;
+}
+.feature__section > div {
+  padding: 0 30px;
+}
+.feature__section > div > div > img {
+  width: 40px;
+  height: 40px;
+}
+.feature__section > div > h3 {
+  font-size: 16px;
+  color: red;
+  font-weight: bold;
+}
+.feature__section > div > p {
+  padding: 10px 0;
+}
+
+/* Call to action section */
+.call__to__action {
+  text-align: center;
+  padding: 100px 0;
+}
+.call__to__action > button {
+  padding: 20px 120px;
+  margin-right: 30px;
+  color: white;
+  background-color: black;
+  font-size: 20px;
+  box-shadow: 10px 4px 4px rgb(202, 202, 202);
+}
