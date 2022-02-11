@@ -62,9 +62,10 @@ input[type="search"] {
   padding: 12px 0;
   margin-left: 10px;
   font-size: 16px;
+  color: rgba(0, 0, 0, 0.5);
 }
 input[type="search"]::placeholder {
-  color: gray;
+  color: rgba(0, 0, 0, 0.5);
   font-size: 16px;
 }
 input[type="search"]:focus {
@@ -82,63 +83,63 @@ input[type="search"]:focus {
   font-size: 16px;
   border: none;
   color: white;
-  background-color: rgb(255, 70, 70);
-}
-.login__btn {
-  border: none;
+  background-color: #fb3e44;
+  margin-right: 50px;
 }
 .join__btn {
-  padding: 10px 15px;
-  background-color: white;
+  padding: 8px 10px;
+  border: 1px solid lightgray;
+  text-decoration: none;
+  color: rgb(112, 112, 112);
+  margin-right: 20px;
 }
 .login__btn {
-  font-size: 16px;
-  color: gray;
-  background-color: white;
+  text-decoration: none;
+  color: rgb(112, 112, 112);
 }
 
 /* Hero section */
 .hero__section {
-  background-color: rgb(253, 242, 244);
+  background-color: rgba(232, 217, 217, 0.3);
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  padding: 100px 0;
+  justify-content: space-evenly;
+  height: 600px;
 }
 .hero__section > h1 {
   font-size: 60px;
   font-weight: bolder;
   margin: 0;
-  padding-bottom: 20px;
 }
 .hero__section > p {
   width: 550px;
   text-align: center;
   font-size: 20px;
-  padding: 20px 0;
 }
 .hero__btn {
   display: flex;
   align-items: center;
   padding: 20px 0;
 }
-.hero__btn button {
+.hero__btn a {
   padding: 20px 80px;
   margin-right: 30px;
+  text-decoration: none;
 }
 .hero__btn__plans {
-  background-color: rgb(248, 64, 64);
+  background-color: #fb3b49;
   color: white;
   border: none;
   font-size: 20px;
-  box-shadow: 10px 6px 2px rgb(252, 156, 156);
+  box-shadow: 8px 8px 0 rgba(251, 59, 73, 0.2);
 }
 .hero__btn__join {
   background-color: #fff;
   border: none;
   font-size: 20px;
   font-weight: bold;
+  color: black;
 }
 
 /* Description section */
@@ -154,16 +155,16 @@ input[type="search"]:focus {
 }
 .description__section > h1 {
   font-size: 40px;
-  background-color: rgb(255, 223, 155);
+  background-color: rgba(255, 204, 53);
   position: relative;
   padding: 0 20px;
-  z-index: 10;
+  z-index: 5;
 }
 .description__section > h1::before {
   content: "";
-  background-color: rgb(255, 223, 155);
+  background-color: rgba(255, 204, 53);
   transform-origin: 0 0;
-  transform: skewX(15deg);
+  transform: skewX(9deg);
   position: absolute;
   display: block;
   top: 0;
@@ -174,16 +175,16 @@ input[type="search"]:focus {
 }
 .description__section > h1::after {
   content: "";
-  background-color: rgb(255, 223, 155);
+  background-color: rgba(255, 204, 53);
   transform-origin: 0 0;
-  transform: skewX(15deg);
+  transform: skewX(9deg);
   position: absolute;
   display: block;
   top: 0;
   right: -40px;
   height: 60px;
   width: 60px;
-  z-index: -1;
+  z-index: -2;
 }
 .description__section > p {
   width: 810px;
@@ -205,17 +206,18 @@ input[type="search"]:focus {
 }
 .feature__section > div > h3 {
   font-size: 16px;
-  color: red;
+  color: #ed1c24;
   font-weight: bold;
 }
 .feature__section > div > p {
   padding: 10px 0;
+  font-style: italic;
 }
 
 /* Call to action section */
 .call__to__action {
   text-align: center;
-  padding: 100px 0;
+  padding: 50px 0;
 }
 .call__to__action > button {
   padding: 20px 120px;
@@ -223,5 +225,6 @@ input[type="search"]:focus {
   color: white;
   background-color: black;
   font-size: 20px;
-  box-shadow: 10px 4px 4px rgb(202, 202, 202);
+  box-shadow: 8px 8px 0 rgba(128, 83, 35, 0.2);
+  font: normal;
 }
