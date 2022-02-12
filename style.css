@@ -14,6 +14,7 @@ header > div {
 
   .topbar {
       font-weight: 900;
+      border: none;
   }
 
   #npm {
@@ -46,10 +47,26 @@ header > div {
     width: 5em;
 }
 
+.lowbar {
+    padding: 20px 30px;
+    border: none;
+}
+
+.lowbar form input {
+width: 950px;
+border: none;
+background-color: #F2F2F2;
+padding: 16px 16px;
+color: rgb(185,185,185);
+letter-spacing: 2px;
+}
+
 .mag {
     width: 1.5em;
-    background-color: #FB3B49;
+    background-color: #F2F2F2;
     border-width: 200px;
+    display: flex;
+    justify-content: flex-sta
 }
 
 .navbuttons {
@@ -57,8 +74,46 @@ header > div {
     justify-content: flex-end;
     align-content: space-around;
     width: 200px;
-    padding: 0 30px;
+    padding: 0 0px;
     ;
+}
+
+.search {
+    background-color: #FB3E44;
+    padding: 15px 16px;
+    color: #f8e7e8b0;
+    border: none;
+    margin: 0 25px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+}
+
+#plans {
+    margin: 0 25px;
+} 
+
+#join {
+    margin: 0 25px;
+}
+
+
+.join {
+    padding: 10px 16px;
+    border: 1px solid black;
+    box-shadow: 0px -2px 0px -1px rgba(0,0,0,0.88);
+    margin: 0 30px;
+    text-decoration: none;
+    color: black;  
+}
+
+.login {
+    text-decoration: none;
+    color: rgb(122, 118, 118);
 }
 
   #section1 {
@@ -69,6 +124,7 @@ header > div {
       height: 600px;
       background-color: rgba(232,217,217,.3);
       padding: 5em 0;
+      box-shadow: 0px -px 3px 0px #EFEBEB;
   }
 
   #section1 h1 {
@@ -79,18 +135,33 @@ header > div {
 
   #section1 #plans {
       background-color: #FB3B49;
-      
+      box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+      ;
   }
 
  #section1 #join {
-      box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+      text-decoration: none;
+      padding: 15px 70px;
+      font-size: 1.5em;
+      font-weight: 800;
+      color: black;
+      background-color: white;
+  }
+
+  #section1 #plans { 
+    text-decoration: none;
+    padding: 15px 70px;
+    color:white ;
+    font-size: 1.5em;
+    font-weight: 800;
   }
 
   #section1 article {
       width: 650px;
       font-size: 1.6em;
-      font-weight: bold;
+      font-weight: 400;
       text-align: center;
+      margin-bottom: 100px;
   }
 
   .hexagon {
@@ -115,7 +186,7 @@ header > div {
     }
 
     #section2 article {
-      width: 55%;
+      width: 950px;
       font-size: 1.5em;
       text-align: center;
       margin-bottom: 9em;
@@ -133,18 +204,26 @@ header > div {
     .info {
         display: flex;
         flex-direction: column;
+        align-items: left;
     }
 
+    .info img {
+        width: 60px;
+    } 
+
     #section3 h3 {
-        color: #ED1C24;
+        color:#ED1C24;
     }
 
     .org {
+        display: flex;
+        justify-content: center;
         box-shadow: 8px 8px 0 rgba(128,83,35,.2);
-        font-size: 1.8em;
+        font-size: 1.5em;
         color: white;
         background-color: black;
+        width: 300px;
         text-decoration: none;
-        padding: 20px 160px;
-        margin: 30px auto;
+        padding: 20px 100px;
+        margin: 70px auto;
     }
