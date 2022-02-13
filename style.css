@@ -24,6 +24,14 @@ h2 {
   line-height: 1;
 }
 
+h3 {
+  font-family: "Poppins";
+  font-size: 1.6em;
+  font-weight: 800;
+  line-height: 1;
+  text-align: left;
+}
+
 /* HEADER & NAV */
 header > div {
   padding: 0 25px;
@@ -150,20 +158,57 @@ nav a {
 /* 3rd SECTION – INFO */
 
 #info {
-  height: 600px;
-  padding-bottom: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto 5rem auto 5rem;
+  padding-bottom: 60px;
 }
 
 .info-box-row {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin: auto 10rem auto 10rem;
+  align-items: flex-start;
+  gap: 20px 30px;
+  flex-wrap: wrap;
+  margin: auto;
+  margin-bottom: 50px;
+  width: 80rem;
 }
 
 .info-box {
+  width: 15rem;
+}
+
+.info-box h3 {
+  color: #ed1c24;
+}
+
+#info > div > div > div > div > p {
+  font-size: 1.6em;
+  line-height: 1.6em;
+  text-align: left;
+}
+
+.info-button-black {
+  display: flex;
+  justify-content: center;
+}
+
+.button-black {
+  background-color: #000000;
+  color: white;
+  font-family: "Poppins";
+  font-weight: 800;
+  font-size: 2em;
+  letter-spacing: 0.5px;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 60px;
+  box-shadow: 8px 8px 0 rgba(128, 83, 35, 0.2);
 }
 
 .info-box-row > .info-box > div > img {
-  width: 40px;
+  height: 40px;
 }
