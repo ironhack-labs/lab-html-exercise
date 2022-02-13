@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body {
+  font-family: 'Poppins';
+}
+
+header > div {
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+  }
+  
+  nav {
+    width: 600px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .blackHeart {
+    width: 20px;
+    margin-right: 1rem;
+  }
+
+
+  .header-lower-half{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:flex-start;
+  }
+
+  #npm-logo {
+    height: 20px;
+    width: 60px;
+    margin-right: 1rem;
+    
+  }
+
+  #magnifying-glass {
+    height: 30px;
+    width: 30px;
+    background-color: #E5E5E5;
+  }
+
+  #search-bar{
+    flex-grow: 2 ;
+    height: 30px;
+    background-color: #E5E5E5;
+    border: 0px;
+  }
+
+  #search-button{
+    background-color: #fb3e44;
+    color: white;
+    font-family: 'Poppins';
+    margin-right: 3rem;
+    height: 30px;
+    border: 0px;
+    place-self: center;
+    /*?WHY NOY ALIGNED LIKE THE REST. tried changing header-lower-half to align at baseline.
+     tried align-self center on this element. tried changes in padding. changing the top margin is not the right solution*/
+  }
+
+  #join-button {
+    height: 30px;
+    color: rgb(6, 35, 68);
+    font-family: 'Poppins';
+  }
+
+  #login-button{
+    height: 30px;
+    border: 0px;
+    color: rgb(6, 35, 68);
+    font-family: 'Poppins';
+  }
+
+  #Section1{
+      display: flex;
+      height: 600px;
+      background-color: rgba(232,217,217,.3);
+      flex-direction: column;
+      align-items: center;
+  }
+
+  h1{
+      font-size: 4em;
+  }
+
+  #section1 article {
+    text-align: center;
+    margin-bottom: 2em;
+    font-size: x-large;
+  }
+
+  #see-plans-button{
+    background-color: #FB3B49;
+    box-shadow:  8px 8px 0 rgba(251,59,73,.2);
+    border: 0px;
+    font-family: 'Poppins';
+    color: white;
+    height: 60px;
+    width: 180px;
+    margin-right: 10px;
+    font-size: x-large;
+  }
+
+  #join-for-free-button{
+    font-family: 'Poppins';
+    background-color: rgba(232,217,217,.0);
+    border: 0px;
+    height: 60px;
+    width: 180px;
+    font-size: x-large;
+  }
+
+  #section2{
+    display: flex;
+    height: 450px;
+    background-color: rgba(232,217,217,.3);
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .triangle-hexagon{
+      height: 150px;
+      width: auto;
+  }
+
+  h2{
+      background-color: rgba(255,204,53,.4);
+      transform: skew(9deg,0deg);
+      padding-left: 30px;
+      padding-right: 30px;
+      font-style: italic;
+      font-size: xx-large;
+  }
+
+  #section2 article{
+    text-align: center;
+    margin-bottom: 2em;
+    font-size: normal;
+  }
+
+  #section3 h3{
+    color: #ED1C24;
+    font-size: x-large;
+  }
+
+  #section3 img{
+      height: 30px;
+      width: 30px;
+  }
+
+  #section3 div{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+  #section3 > div > article {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 3em 1em 3em 1em;
+    width: 18em;
+  }
+
+  #section3 > div > article > p {
+      font-size: normal;
+  }
+
+  #create-an-org-button{
+      color:white;
+      box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+      height: 50px;
+      width: 400px ;
+      background-color: black;
+      font-family: 'Poppins';
+      margin-bottom: 50px;
+  }
