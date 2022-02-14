@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Poppins");
+@import url("https://fonts.googleapis.com/css2?family=Poppins");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;700");
 
 body {
   font-family: "Poppins", Arial, sans-serif;
@@ -6,13 +7,13 @@ body {
   padding: 0;
   font-size: 10px;
   line-height: 3.5em;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 h1 {
   font-family: "Poppins";
   font-size: 8em;
-  font-weight: 800;
+  font-weight: 700;
   line-height: 1;
   text-align: center;
 }
@@ -20,14 +21,14 @@ h1 {
 h2 {
   font-family: "Poppins";
   font-size: 3.5em;
-  font-weight: 800;
+  font-weight: 600;
   line-height: 1;
 }
 
 h3 {
   font-family: "Poppins";
   font-size: 1.6em;
-  font-weight: 800;
+  font-weight: 700;
   line-height: 1;
   text-align: left;
 }
@@ -53,8 +54,15 @@ nav ul {
 }
 
 nav a {
+  font-size: 1.6em;
+  font-weight: 600;
   text-decoration: none;
   color: black;
+}
+
+.nav-left span {
+  font-size: 1.6em;
+  font-weight: 200;
 }
 
 .blackHeart {
@@ -62,13 +70,79 @@ nav a {
   margin-right: 1rem;
 }
 
+.inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
 .logo {
-  width: 100px;
+  width: 80px;
   margin-right: 1rem;
 }
 
 .magnifying-glass {
   width: 20px;
+}
+
+form {
+  display: flex;
+  align-items: center;
+}
+
+form > div > div {
+  display: flex;
+  align-items: center;
+}
+
+input {
+  position: relative;
+  width: 80%;
+}
+
+form button {
+  background-color: #fb3b49;
+  color: white;
+  font-family: "Poppins";
+  font-weight: 200;
+  font-size: 1.6em;
+  letter-spacing: 0.5px;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  padding: 10px;
+}
+
+.buttons-header {
+}
+
+.button-join {
+  height: 30px;
+  background-color: white;
+  color: black;
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 1.6em;
+  letter-spacing: 0.5px;
+  text-align: center;
+  text-decoration: none;
+  border: 1px black solid;
+  padding: 5px 10px 5px 10px;
+  margin-right: 10px;
+}
+
+.button-login {
+  height: 30px;
+  background-color: white;
+  color: black;
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 1.6em;
+  letter-spacing: 0.5px;
+  text-align: right;
+  text-decoration: none;
+  padding: 5px 0px 5px 10px;
 }
 
 /* 1st SECTION – HERO */
@@ -85,22 +159,21 @@ nav a {
 #hero > div > article {
   font-size: 2em;
   line-height: 1.6em;
-  max-width: 33rem;
+  max-width: 35rem;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 60px;
 }
 
 .hero-links {
-  width: 33rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .button-red {
   background-color: #fb3b49;
   color: white;
   font-family: "Poppins";
-  font-weight: 800;
+  font-weight: 600;
   font-size: 2em;
   letter-spacing: 0.5px;
   text-align: center;
@@ -113,7 +186,7 @@ nav a {
   background-color: white;
   color: black;
   font-family: "Poppins";
-  font-weight: 800;
+  font-weight: 600;
   font-size: 2em;
   letter-spacing: 0.5px;
   text-align: center;
@@ -161,19 +234,19 @@ nav a {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: auto 5rem auto 5rem;
-  padding-bottom: 60px;
+
+  padding: 60px 60px;
 }
 
 .info-box-row {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: flex-start;
   gap: 20px 30px;
   flex-wrap: wrap;
   margin: auto;
-  margin-bottom: 50px;
+  margin-bottom: 60px;
   width: 80rem;
 }
 
@@ -183,6 +256,7 @@ nav a {
 
 .info-box h3 {
   color: #ed1c24;
+  margin-bottom: 30px;
 }
 
 #info > div > div > div > div > p {
@@ -200,15 +274,16 @@ nav a {
   background-color: #000000;
   color: white;
   font-family: "Poppins";
-  font-weight: 800;
+  font-weight: 600;
   font-size: 2em;
   letter-spacing: 0.5px;
   text-align: center;
   text-decoration: none;
-  padding: 10px 60px;
+  padding: 10px 100px;
   box-shadow: 8px 8px 0 rgba(128, 83, 35, 0.2);
 }
 
 .info-box-row > .info-box > div > img {
-  height: 40px;
+  height: 30px;
+  margin-bottom: -10px;
 }
