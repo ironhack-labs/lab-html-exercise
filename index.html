@@ -9,8 +9,7 @@
 
 
 <body>
-
-
+    <!-- HEADER -->
 <header>
     <div>
       <div>
@@ -31,66 +30,83 @@
   
     <div>
         <img class="npm-logo" src="/images/npm-logo.png" alt="npm-logo" />
-        <img class="magnifying-glass" src="/images/magnifying-glass.png" alt="magnifying-glass" />
-        <form>
-            <input type="text" placeholder="Search.." name="search">
-            <button type="submit">Submit</button>
-                
+        <form class="search-bar"> 
+            <img class="magnifying-glass" src="/images/magnifying-glass.png" alt="magnifying-glass" /> 
+            <input class="bar" type="search"  placeholder=" Search packages ">
+            <button class="search-button">Search</button>  
         </form>
-    </div>
-
-    <div>
-        <a href="#"> Join </a>
-        <a href="#"> Log in </a>
-    </div>  
+            <a class="join-button"  href="#"> Join </a>
+            <a class="login-button" href="#"> Log in </a>        
+    </div>       
   </header>
 
-  <section>
+   <!-- SECTION BUILD AMAZING THINGS -->
+  <section class="intro" id="build">
     <h1> Build amazing things </h1>
-    <article> Esential Javascript developement tools that help <br> you go to market faster and build powerful <br> aplications using modern open source code </article>
-    <div>
-        <a href="#"> See plans </a>
-        <a href="#"> Join for free </a>
+    <p class="body"> Esential Javascript developement tools that help you <br>
+          go to market faster and build powerful aplications <br> 
+          using modern open source code </p>
+          <br>
+          <br>
+    <div class="click">
+        <a class="plan-button" href="#"> See plans </a>
+        <a class="joinfree-button" href="#"> Join for free </a>
     </div>
   </section>
 
-  <section>
-    <img src="./images/triangle-hexagon.svg" alt="triangle-hexagon"/>
+   <!-- SECTION OPEN SOURCE -->
+  <section class="main">
+    <img class="hexagon" src="./images/triangle-hexagon.svg" alt="triangle-hexagon"/>
     <h2> Bring the best of open source to your company </h1>
     <article> 
-        <p>npm is the toolused by over 11,000 JavaScript developers around the world. Your developers <br> 
+        <p>npm is the tool used by over 11,000.000 JavaScript developers around the world. Your developers <br> 
             already use it. Your company depends on it. Create an Org and get more out of the tools your<br> 
             team already knows and loves.
         </p>
     </article>
   </section>
 
-  <section>
-      <div>
+ <!-- SECTION ZERO CONFIGURATION -->
+  <section id="zero">
+      <div class="last">
          <article>
-            <img src="./images/zero-configuration.svg" alt="arrow"/> 
+            <img class="arrow" src="./images/zero-configuration.svg" alt="arrow"/> 
             <h3> Zero configuration</h3>
-            <p> Create an org. add your team, and start colaboating. Nothing to configure, set up, or manage. </p>
+            <p> Create an org. add your team, <br>
+               and start colaborating. <br> 
+               Nothing to configure, set up, or <br> manage. </p>
          </article>
            
          <article>
-            <img src="./images/team-management.svg" alt="team network"/> 
+            <img class="team-network" src="./images/team-management.svg" alt="team network"/> 
             <h3> Team management</h3>
-            <p></p>
+            <p> Control who has access to <br> 
+              what modules within your <br> 
+              team namespace using <br> 
+              straightforward team <br> management capabilities.</p>
          </article>
 
          <article>
-            <img src="./images/familiar-features.svg" alt="Cubes"/> 
+            <img class="cubes" src="./images/familiar-features.svg" alt="Cubes"/> 
             <h3> Familiar features</h3>
-            <p></p>
+            <p> npm Orgs hs 100% parity with <br> 
+              all the public npm registry <br> 
+              features your developers <br> 
+              already use. </p>
          </article>
           
          <article>
-            <img src="./images/npm-audit.svg" alt="binoculars"/>
+            <img class="binoculars" src="./images/npm-audit.svg" alt="binoculars"/>
             <h3> npm audit</h3>
+            <p> Enjoy the security auditing <br> features build into the npm <br> client, a zero-friction way to <br> make open source software <br> safer. </p>
          </article>
-
       </div>
       
-      <a href="#"> Create an Org </a>    
+      <div class="last-click" style="text-align:center">
+        <a class="org-button" href="#"> Create an Org </a> 
+      </div>
+         
   </section>
+        
+  </body>
+</html>
