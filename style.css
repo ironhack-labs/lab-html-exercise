@@ -11,7 +11,6 @@ body {
 }
 
 h1 {
-  font-family: "Poppins";
   font-size: 8em;
   font-weight: 700;
   line-height: 1;
@@ -19,14 +18,12 @@ h1 {
 }
 
 h2 {
-  font-family: "Poppins";
   font-size: 3.5em;
   font-weight: 600;
   line-height: 1;
 }
 
 h3 {
-  font-family: "Poppins";
   font-size: 1.6em;
   font-weight: 700;
   line-height: 1;
@@ -34,6 +31,7 @@ h3 {
 }
 
 /* HEADER & NAV */
+
 header > div {
   padding: 0 25px;
   display: flex;
@@ -65,16 +63,15 @@ nav a {
   font-weight: 200;
 }
 
+.header-bottom {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
 .blackHeart {
   width: 20px;
   margin-right: 1rem;
-}
-
-.inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  align-content: center;
 }
 
 .logo {
@@ -82,26 +79,41 @@ nav a {
   margin-right: 1rem;
 }
 
+form > span > img {
+  width: 40px;
+  position: absolute;
+  top: 15px;
+  left: 10px;
+}
+
+form {
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-right: 30px;
+  align-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+form input {
+  background-color: rgba(0, 0, 0, 0.05);
+  border: 0px;
+  height: 40px;
+  padding: 10px;
+  text-indent: 30px;
+  flex-grow: 1;
+}
+
 .magnifying-glass {
   width: 20px;
 }
 
-form {
-  display: flex;
-  align-items: center;
-}
-
-form > div > div {
-  display: flex;
-  align-items: center;
-}
-
-input {
-  position: relative;
-  width: 80%;
-}
-
 form button {
+  height: 40px;
   background-color: #fb3b49;
   color: white;
   font-family: "Poppins";
@@ -111,10 +123,13 @@ form button {
   text-align: center;
   text-decoration: none;
   border: none;
-  padding: 10px;
+  padding: 9px 10px 10px 10px;
 }
 
 .buttons-header {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
 }
 
 .button-join {
@@ -202,6 +217,7 @@ form button {
   flex-direction: column;
   align-items: center;
   height: 600px;
+  padding: 0 20px 0 20px;
 }
 
 #middle > div > h2 {
@@ -235,23 +251,21 @@ form button {
   align-items: center;
   justify-content: center;
 
-  padding: 60px 60px;
+  padding: 60px 20px 60px 20px;
 }
 
 .info-box-row {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
   gap: 20px 30px;
-  flex-wrap: wrap;
-  margin: auto;
   margin-bottom: 60px;
   width: 80rem;
 }
 
 .info-box {
-  width: 15rem;
+  flex: 1 0 21%;
 }
 
 .info-box h3 {
