@@ -1,43 +1,130 @@
-<head>
-  <header>
-    <div>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
       <div>
-        <img class="blackHeart" src="C:\Users\rodne\Documents\jessi\Assestment\lab-html-exercise\images\black-heart.png" alt="black heart" />
-        <span> Nifty Penguin Magic </span>
+        <div>
+          <img
+            class="blackHeart"
+            src="images/black-heart.png"
+            alt="black heart"
+          />
+          <span> Nifty Penguin Magic </span>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#"> npm Enterprise </a></li>
+            <li><a href="#"> Products </a></li>
+            <li><a href="#"> Solutions </a></li>
+            <li><a href="#"> Resources </a></li>
+            <li><a href="#"> Docs </a></li>
+            <li><a href="#"> Support </a></li>
+          </ul>
+        </nav>
       </div>
-      <nav>
-        <ul>
-          <li><a href="#"> npm Enterprise </a></li>
-          <li><a href="#"> Products </a></li>
-          <li><a href="#"> Solutions </a></li>
-          <li><a href="#"> Resources </a></li>
-          <li><a href="#"> Docs </a></li>
-          <li><a href="#"> Support </a></li>
-        </ul>
-      </nav>
-    </div>
-  
-    <div id="logo">
+
+      <div id="logo">
+        <img src="images/npm-logo.png" class="blackLogo" />
+        
+        <form>         
+          <input type="submit" value="Search">          
+                
+          <input type="text" name="search"  placeholder="             Search Packages">
+          <img src="images/magnifying-glass.png" class="search-glass">
+          </input> 
+        </form>
+        <div>
+          <button>Join</button>
+          <button>Log in</button>
+        </div>
+      </div>
+    </header>
+
+    <section class="buildSection">
+      <h1>Build amazing things</h1>
+      <article>
+        <p class="essentialjava">
+          Essential JavaScript development tools that help you go to market
+          faster and build powerful applications using modern open source code
+        </p>
+      </article>
+
+      <button class="seeplansbutton">See plans</button>
+      <button>Join for free</button>
+    </section>
+
+    <section class="secondsection">
+      <p>
+        NPM Clone Nifty Penguin Magic npm Enterprise Products Solutions
+        Resources Docs Support Search Join Log In Build amazing things Essential
+        JavaScript development tools that help you go to market faster and build
+        powerful applications using modern open source code. See plans Join for
+        free Bring the best of open source to your company npm is the tool used
+        by over 11,000,000 JavaScript developers around the world. Your
+        developers already use it. Your company depends on it. Create an Org and
+        get more out of the tools your team already knows and loves. Zero
+        configuration Create an org, add your team, and start collaborating.
+        Nothing to configure, set up, or manage. Team management Control who has
+        access to what modules within your team namespace using straightforward
+        team management capabilities. Familiar features npm Orgs has 100% parity
+        with all the public npm registry features your developers already use.
+        npm audit Enjoy the security auditing features built into the npm
+        client, a zero-friction way to make open source software safer. Create
+        an Org
+      </p>
+    </section>
+    <section class="DownHexagonalSection"> 
+      <img src="images/triangle-hexagon.svg" class="triangle-hexa" />
+      <h4>Bring the best of open source to your company</h4>
+      <article class="secondsection">
+        <p>
+          npm is the tool used by over 11 000 000 Java Script developers around te world. 
+          Your developers already use it. Your company depends on it. Creating and org. And get more out of the tools
+          your team already knows and love.
+        </p>
+      </article>
+
     
-        <img src=C:\Users\rodne\Documents\jessi\Assestment\lab-html-exercise\images\npm-logo.png/>
+    </section>
+
+    <section id="downsection" >
+      <div class="divindownsec1">
+          <div class="zeroconfig">
+              <img src="images/zero-configuration.svg" class="downsection-images" />
+              <h4>Zero configuration</h4>
+              <p>Create an org, add your team, and start collaborating.
+                  Nothing to configure, set up, or manage.
+              </p>
+          </div>
+          <div class="teammanagment">
+              <img src="images/team-management.svg" class="downsection-images" /> 
+              <h4>Team management</h4>
+              <p>Control who has access to what modules within your team namespace
+                  using straightforward team management capabilities. 
+              </p>
+          </div>
+          <div class="familiar">
+              <img src="images/familiar-features.svg" class="downsection-images" />
+              <h4>Familiar features</h4>
+              <p>npm Orgs has 100% parity with all the public npm registry 
+                  features your developers already use. 
+              </p>
+          </div>
+          <div class="audit">
+              <img src="images/npm-audit.svg" class="downsection-images" />
+              <h4>npm audit</h4>
+              <p>Enjoy the security auditing features built into the npm client,
+                  a zero-friction way to make open source software safer. 
+              </p>
+          </div>
+      </div>
       
-      <!-- add logo, search bar a ndbuttons (or links and style them as buttons later) -->
-    </div>
-  </header>
-  <section>
-    <h1=section1>  </h1>
-    <p=section2>  </p>
-    <div=section3> </div>
+      <button class="create-an-org">Create an Org</button>
+      
   </section>
-</head>
-<body>
-  NPM Clone Nifty Penguin Magic npm Enterprise Products Solutions Resources Docs Support Search Join Log In Build amazing
-things Essential JavaScript development tools that help you go to market faster and build powerful applications using
-modern open source code. See plans Join for free Bring the best of open source to your company npm is the tool used by
-over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it.
-Create an Org and get more out of the tools your team already knows and loves. Zero configuration Create an org, add
-your team, and start collaborating. Nothing to configure, set up, or manage. Team management Control who has access to
-what modules within your team namespace using straightforward team management capabilities. Familiar features npm Orgs
-has 100% parity with all the public npm registry features your developers already use. npm audit Enjoy the security
-auditing features built into the npm client, a zero-friction way to make open source software safer. Create an Org
-</body>
+
+  </body>
+</html>
