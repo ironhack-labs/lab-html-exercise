@@ -38,32 +38,41 @@ header > div {
   }
 
   .searchbar {
+    float:left;
+    overflow:hidden;
     display: flex;
     justify-items: space-between;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
+    justify-content: center;
+    align-items: center;  
 }
+
+#magnifyingglass {
+  width: 16px;
+  padding: 10px 8px 8px 8px;
+  background-color: rgba(0, 0, 0, .05);
+  margin-bottom: 2.5px;
+  }
 
   header button {
     color: white;
     font-weight: lighter;
     background-color: #fb3e44;
     border-style: none;
-    padding: 9px 16px 9px 16px;
+    padding: 9px 15px 9px 15px;
+    margin-right: 10px;
   }
 
   #searchpackages {
       background-color: rgba(0,0,0,.05);
      color: rgba(0,0,0,.05);
     border-style: none;
+    width: 855px;
+    height: 34px;
+    margin-top: 10px;
   }
 
-#magnifyingglass {
-  width: 5px;
-  margin-right: 1rem;
-  background-color: rgba(0,0,0,.05);
-  }
 
 .npm-logo {
   width: 5%;
@@ -78,7 +87,7 @@ header > div {
   font-weight: lighter;
   border-style: solid;
   border-color: #E9E8E8;
-  padding: 6px 16px 6px 16px;
+  padding: 5px 14px 5px 14px;
   margin: 5px
   }
 
@@ -86,7 +95,6 @@ header > div {
   text-decoration: none;
   font-weight: lighter;
   color: black;
-  padding: 2px 5px 2px 5px;
   margin: 5px
   }
 
@@ -100,17 +108,19 @@ header > div {
   align-items:center;
   flex-direction: column;
   justify-content: center;
+  
   }
 
 h1 {
   weight: bolder;
-  font-size: 55px;
+  font-size: 4rem;
   text-align: center;
   }
 
 #build-amazing-things > article {
   text-align: center;
-  margin: 0 25% 0 25%
+  margin: 0 30% 0 30%;
+  font-size: 18px;
   }
 
 #seeplans {
@@ -146,7 +156,7 @@ h1 {
     width: 25%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    margin: 0
     }
 
 
@@ -165,14 +175,16 @@ h2 {
   transform: skew(9deg,0deg);
   font-style: italic;
   font-size: 26px;
+  font-weight: 100 bold;
   text-align: center;
   padding: 0 20px 0 20px;
+  margin: 50px 0 10px 0
   }
 
 #bring-the-best > article {
   text-align: center;
-  margin: 0 22% 0 22%;
-  font-size: 13px;
+  margin: 10px 27% 0 27%;
+  font-size: 12px;
   }
 
 
@@ -180,6 +192,8 @@ h2 {
 #features {
   height: 6oopx;
   background-color: white;
+  margin-left: 130px;
+  margin-right: 130px;
   }
 
 .feature-container {
@@ -191,7 +205,8 @@ h2 {
 
 .feature-container div {
   text-align: left;
- margin: 20px 20px 20px 20px;
+  margin: 30px 10px 30px 10px;
+  width: 170px;
   }
 
 #features h3 {
