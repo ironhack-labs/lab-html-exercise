@@ -1,0 +1,1 @@
+A preview of the project is available [here](https://htmlpreview.github.io/?https://github.com/chloe4E/lab-html-exercise/blob/master/index.html).
