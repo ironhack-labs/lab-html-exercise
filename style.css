@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
+body {
+  font-family: Poppins;
+}
+
+header > div {
+  padding: 0 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+}
+
+header .name{
+  font-size: .8em;
+}
+
+nav {
+  width: 600px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  font-size: .8em;
+  margin-left: 20px;
+}
+
+.blackHeart {
+  width: 20px;
+  margin-right: 1em;
+}
+
+/*  div contain search bar = logo + form + buttons */
+
+.search-bar {
+  justify-content: center;
+  padding: 5px 0;
+  align-items: center;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
+}
+
+.npmLogo {
+  width: 50px;
+  margin-right: 1em;
+  margin-left: 1em;
+}
+
+.magGlass {
+  width: 15px;
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 10px;
+  margin-top: 6px;
+}
+/* form */
+.searcher {
+  flex-grow: 1;
+  display: flex;
+}
+
+.searcher input {
+  flex-grow: 1;
+  background-color: rgba(0, 0, 0, 0.05);
+  background-image: url("images/magnifying-glass.png");
+  background-position: 10px 10px;
+  background-size: 20px;
+  background-repeat: no-repeat;
+  border: none;
+  padding: 10px 0 10px 40px;
+}
+
+.searcher button {
+  border: none;
+  background-color: #fb3e44;
+  color: white;
+  padding: 10px 15px;
+  margin-right: 20px;
+}
+
+/*  div container join & log buttons */
+
+.container-links {
+  display: flex;
+}
+
+.container-links a {
+  text-decoration: none;
+  color: black;
+  padding: 5px 15px;
+  font-size: 0.8em;
+}
+.join-link {
+  border: 1px solid black;
+}
+
+.logIn-link {
+  margin:0 20px 0 10px;
+}
+
+/*  hero section */
+
+.hero-section {
+  height: 600px;
+  background-color: rgba(232, 217, 217, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-section h1 {
+  font-size: 4em;
+  text-align: center;
+}
+
+.hero-section article {
+  width: 33%;
+  text-align: center;
+}
+
+.hero-links {
+  display: flex;
+  margin-top: 50px;
+
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.hero-links a {
+  text-decoration: none;
+  width: 200px;
+
+  text-align: center;
+  padding: 12px 0;
+}
+
+.plan-link {
+  background-color: #fb3e44;
+  color: white;
+  box-shadow: 8px 8px 0 rgba(251, 59, 73, 0.2);
+  margin-right: 20px;
+}
+
+.joinFree-link {
+  background-color: white;
+  color: black;
+  margin-left: 20px;
+}
+/* midle section*/
+
+.mid-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  position: relative;
+}
+
+.hexagon {
+  width: 200px;
+  margin-bottom: 50px;
+}
+
+.mid-section header {
+  background-color: rgba(255, 204, 53, 0.4);
+  transform: skew(9deg, 0deg);
+  height: 35px;
+}
+
+.mid-section header h2 {
+  font-size: 1.8em;
+  font-style: italic;
+  padding: 0 25px;
+  position: relative;
+  bottom: 25px;
+  text-align: center;
+}
+
+.mid-section article {
+  margin-top: 30px;
+  text-align: center;
+  width: 55%;
+  font-size: 0.8em;
+}
+
+.bottom-section {
+  margin-top: 30px;
+}
+
+/* bottom sectiom*/
+
+.bottom-section-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 0 50px;
+  flex-wrap: wrap;
+}
+
+.bottom-section-container > div {
+  width: 200px;
+}
+
+.bottom-section img {
+  width: 30px;
+}
+
+.bottom-section p {
+  font-size: 0.8em;
+}
+
+.bottom-section h3 {
+  font-size: 0.8em;
+  color: #ed1c24;
+  margin-bottom: 25px;
+}
+
+/*  black central button */
+.createOrg-link {
+  text-align: center;
+  margin: 100px 0;
+}
+
+.createOrg-link a {
+  text-decoration: none;
+  background-color: black;
+  color: white;
+  padding: 15px 100px;
+  box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.2);
+  font-size: 0.9em;
+}
