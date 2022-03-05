@@ -27,6 +27,11 @@ nav ul {
 nav a {
     text-decoration: none;
     color: black;
+    transition: color .3s;
+}
+
+ul a:hover {
+    color: grey;
 }
 
 .blackHeart {
@@ -34,12 +39,15 @@ nav a {
     margin-right: 1rem;
 }
 
-.npmLogo{
+.npmLogo {
     width: 70px;
     margin: 10px 10px
 }
 
 .lupe {
+    top: 5px;
+    left: 5px;
+    position: absolute;
     width: 20px;
     height: 20px;
 }
@@ -51,14 +59,30 @@ form {
     justify-content: center;
 }
 
+.inputIcon {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
 .searchBar {
     width: 1000px;
+    padding-left: 30px;
 }
 
 .search {
     padding: 7px 12px 7px;
     background-color: #FB3B49;
     color: white;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttonContainer a:hover {
+    color: grey;
 }
 
 .joinButton {
@@ -71,9 +95,6 @@ form {
     padding: 2px 20px 2px;
     text-decoration: none;
 }
-
-
-
 
 #section1 {
     background-color: rgba(232,217,217,.3);
@@ -135,7 +156,7 @@ h1 {
 
 h2 {
     background-color: rgba(255,204,53,.4);
-    font-size: 30px;
+    font-size: 1em;
     padding-left: 40px;
     padding-right: 40px;  
 }
@@ -147,16 +168,17 @@ h2 {
 }
 
 #section3 {
-    height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .container {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    width: 100%;
 }
 
 h3 {
@@ -176,8 +198,7 @@ h3 {
     background-color: black;
     color: white;
     box-shadow: 8px 8px 0 rgba(128,83,35,.2);
-    width: 20%;
     margin: 50px;
-    padding: 10px 10px;
+    padding: 10px 100px 10px;
 }
 
