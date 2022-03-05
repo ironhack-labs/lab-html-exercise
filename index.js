@@ -9,13 +9,14 @@ const npm = [
 
 ]
 
-
 let puns = document.getElementById("puns")
+let index = 0
 
 puns.addEventListener('click', function(){
-    let randomIndex = Math.floor(Math.random() * npm.length)
-    puns.textContent = npm[randomIndex]
-    if (npm[randomIndex].textContent === puns.textContent){
-        puns.textContent = npm[randomIndex +1]
+    index++
+    puns.textContent = npm[index]
+    if (index === npm.length){
+        index = 0
+        puns.textContent = npm[index]
     }
 })
