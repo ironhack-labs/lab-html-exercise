@@ -10,13 +10,13 @@
 <body>
     <!-- Header -->
     <header>
-        <div class="main-header flex">
+        <div class="main-header flex-row">
           <div>
             <img class="blackHeart" src="./images/black-heart.png" alt="black heart">
             <span> Nifty Penguin Magic </span>
           </div>
           <nav>
-            <ul class="flex">
+            <ul class="flex-row">
               <li><a href="#"> npm Enterprise </a></li>
               <li><a href="#"> Products </a></li>
               <li><a href="#"> Solutions </a></li>
@@ -26,28 +26,28 @@
             </ul>
           </nav>
         </div>
-        <div class="secondary-header flex">    
+        <div class="secondary-header flex-row">    
             <img id="logo" src="./images/npm-logo.png" alt="npm logo">
-            <form class="search-bar flex">
+            <form class="search-bar flex-row">
                 <img src="./images/magnifying-glass.png" alt="magnifying glass">
                 <input type="search" id="search" name="q" placeholder="Search packages">
                 <button>Search</button>
             </form>
-            <a class="join" href="#">Join</a>
+            <a class="button-join" href="#">Join</a>
             <a href="#">Log In</a>
         </div>
     </header>
     <!-- Content Sections -->
-    <section id="section1">
+    <section class="section1 flex-column">
       <h1>Build amazing things</h1>
       <article>Essential JavaScript development tools that help you go to market faster and build powerful applications
         using modern open source code.</article>
-      <div>
-        <a href="#">See plans</a>
-        <a href="#">Join for free</a>
+      <div class="flex-row">
+        <a class="button-plans" href="#">See plans</a>
+        <a class="button-join" href="#">Join for free</a>
       </div>
     </section>
-    <section id="section2">
+    <section class="section2 flex-column">
       <img src="./images/triangle-hexagon.svg" alt="hexagon triangle">
       <h2>Bring the best of open source to your company</h2>
       <article>npm is the tool used by
