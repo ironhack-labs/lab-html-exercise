@@ -5,19 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <title>NPM Clone</title>
 </head>
 <body>
     <!-- Header -->
     <header>
-        <div>
+        <div class="main-header flex">
           <div>
-            <span class="material-icons">favorite</span>
+            <img class="blackHeart" src="./images/black-heart.png" alt="black heart">
             <span> Nifty Penguin Magic </span>
           </div>
           <nav>
-            <ul>
+            <ul class="flex">
               <li><a href="#"> npm Enterprise </a></li>
               <li><a href="#"> Products </a></li>
               <li><a href="#"> Solutions </a></li>
@@ -27,14 +26,14 @@
             </ul>
           </nav>
         </div>
-        <div>    
-            <img src="./images/npm-logo.png" alt="npm logo">
-            <form id="form"> 
-                <span class="material-icons">search</span>
-                <input type="search" id="query" name="q" placeholder="Search packages">
+        <div class="secondary-header flex">    
+            <img id="logo" src="./images/npm-logo.png" alt="npm logo">
+            <form class="search-bar flex">
+                <img src="./images/magnifying-glass.png" alt="magnifying glass">
+                <input type="search" id="search" name="q" placeholder="Search packages">
                 <button>Search</button>
             </form>
-            <a href="#">Join</a>
+            <a class="join" href="#">Join</a>
             <a href="#">Log In</a>
         </div>
     </header>
