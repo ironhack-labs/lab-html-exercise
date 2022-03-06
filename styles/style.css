@@ -2,4 +2,234 @@
 
 body {
   font-family: "Poppins";
+  font-weight: bold;
+}
+
+/* Header and Navbar */
+
+header > div {
+  padding: 0 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+}
+
+nav {
+  width: 600px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+.blackHeart {
+  width: 20px;
+  margin-right: 1rem;
+}
+
+.join-btn {
+  border: 1px solid;
+  border-radius: 2px;
+  padding: 5px 12px;
+  margin: 0 20px;
+}
+
+.login-btn {
+  border: none;
+}
+
+.magnifying-glass {
+  width: 25px;
+  height: 25px;
+  padding: 15px 0 0 20px;
+}
+
+.search-input {
+  border: none;
+  border-radius: 2px;
+  font-size: 1.25rem;
+  color: rgba(0, 0, 0, 0.5);
+  height: 45px;
+  width: 1400px;
+  max-width: 80%;
+  background-color: #f0f0f0;
+}
+
+.search-input:focus {
+  outline: none;
+}
+
+.search-btn {
+  background-color: #fb3e44;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 2px;
+  padding: 12px 15px;
+}
+
+.search-btn:hover {
+  cursor: pointer;
+}
+
+#header-bar {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#search {
+  display: flex;
+  background-color: #f0f0f0;
+}
+
+#header-cta-btn {
+  display: flex;
+  justify-content: right;
+  margin: 0;
+}
+
+#header-cta-btn button {
+  background-color: white;
+  font-size: 1rem;
+}
+
+#header-cta-btn button:hover {
+  cursor: pointer;
+}
+
+/* Call-To-Action Section */
+
+.cta-plan-btn {
+  background-color: #fb3e44;
+  color: white;
+  box-shadow: 8px 8px 0 rgba(251, 59, 73, 0.2);
+}
+
+.cta-join-btn {
+  background-color: white;
+}
+
+#cta-section {
+  background-color: rgba(232, 217, 217, 0.3);
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#cta-section h1 {
+  font-size: 5rem;
+  padding: 10px 100px;
+  margin: 60px 100px 10px;
+}
+
+#cta-section p {
+  font-size: 1.25rem;
+  width: 550px;
+  margin-bottom: 30px;
+}
+
+#cta-btn {
+  padding: 20px 0 20px 0;
+  margin-bottom: 60px;
+}
+
+#cta-btn button {
+  font-size: 1.5rem;
+  border-radius: 2px;
+  border: none;
+  padding: 20px 60px;
+  margin: 20px 25px;
+}
+
+#cta-btn button:hover {
+  cursor: pointer;
+  padding: 25px 70px;
+  margin: 15px 15px;
+  transition: ease-in 0.1s;
+}
+
+/* Introduction Section */
+
+.triangle-hexagon {
+  margin: 160px 20px 10px;
+}
+
+#intro-section {
+  background-color: white;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#intro-section h2 {
+  background-color: rgba(255, 204, 53, 0.4);
+  transform: skew(9deg, 0deg);
+  font-size: 2.5rem;
+  font-style: italic;
+  padding: 0px 50px;
+  margin: 40px 100px 10px;
+}
+
+#intro-section p {
+  font-size: 1rem;
+  width: 780px;
+  margin-bottom: 150px;
+}
+
+/* Feature Section */
+
+.features {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+
+.features div {
+  width: 300px;
+  margin: 30px;
+}
+
+.create-org-btn {
+  border: none;
+  background-color: black;
+  box-shadow: 8px 8px 0 rgba(128, 83, 35, 0.2);
+  cursor: pointer;
+  color: white;
+  font-size: 1.25rem;
+  font-weight: bold;
+  padding: 20px 135px;
+  margin-bottom: 70px;
+}
+
+#feature-section {
+  background-color: white;
+}
+
+#feature-section h3 {
+  color: #ed1c24;
+}
+
+#feature-section span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
