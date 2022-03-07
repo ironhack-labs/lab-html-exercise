@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&family=Roboto+Condensed:wght@700&family=Roboto:wght@100;300;700;900&display=swap');
+
 body{
-    margin: 0 30px;
+    margin: 0 auto;
     width: auto;
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
 }
@@ -17,8 +18,6 @@ a{
 a:hover{
     color: grey
 }
-
-
 
 .magnifying-glass{
     height: 32px;
@@ -76,14 +75,19 @@ a:hover{
     padding: 10px 10px 10px 20px
 }
 
+.search-bar{
+    width: 77%;
+    margin-right: 30px;
+}
+
 .navbar-bottom input{
-    width: 70%;
+    width: 95%;
     padding: 7px;
     height: 18px;
     border: none;
     background: rgba(0,0,0,.05);
     background-image: url(./images/magnifying-glass.png) no-repeat 7px 7px;
-    
+    font-family: "Fira Mono", "Andale Mono", "Consolas", monospace
 }
 
 .navbar-bottom {
@@ -91,7 +95,12 @@ a:hover{
     margin-bottom: 0px;
 }
 
+form{
+    display: flex
+}
+
 .search-button{
+    margin-right: 0;
     padding: 8px 12px;
     border: none;
     background-color: #fb3e44;
@@ -112,7 +121,7 @@ button:hover{
 }
 
 .side-button-one{
-    margin-left: 20px;
+    margin-left: 0px;
     border: 1px solid black;
     padding: 4px 16px;
     background-color: white;
@@ -130,7 +139,7 @@ button:hover{
 }
 
 .main-one{
-    margin-top: 0px;
+    margin-top: 10px;
     padding: 10px;
     height: 500px;
     background-color: rgba(232,217,217,.3);
@@ -146,9 +155,7 @@ h1{
 
 .main-one p{
     width: 450px;
-    position: relative;
-    left: 50%;
-    transform: translate(-50%);
+    margin: 0 auto;
     margin-bottom: 50px
 }
 
@@ -190,10 +197,7 @@ h1{
 
 .main-two > p {
     width: 55%;
-    position: relative;
-    left: 50%;
-    transform: translate(-50%);
-    margin-bottom: 100px;
+    margin: 0 auto 100px auto;
     font-size: 14px;
 }
 
@@ -223,9 +227,9 @@ h1{
 .main-two button{
     margin: 50px 0 100px 0;
     border: none;
-    background: #FB3B49;
+    background: black;
     padding: 15px 100px;
     color: white;
     font-weight: bold;
-    box-shadow: 8px 8px 0 rgba(251,59,73,.2)
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
 }
