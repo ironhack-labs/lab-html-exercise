@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>npm</title>
 </head>
 <body>
-    <header>
+    <header id="header">
         <div>
             <div>
-                <img class="blackHeart" src="/labs/lab-html-exercise/images/black-heart.png" alt="black heart">
+                <img class="blackHeart" src="/images/black-heart.png" alt="black heart">
                 <span> Nifty Penguin Magic </span>
             </div>
             <nav>
@@ -25,76 +26,70 @@
             </nav>
         </div>
 
-        <!-- pendiente que poner en href -->
-
-        <div>
-            <div class="searh">
-                <img class="logo" src="/labs/lab-html-exercise/images/npm-logo.png" alt="nom logo">
+        <div class="container">
+            <img class="logo" src="/images/npm-logo.png" alt="nom logo">
             <form action="" method="GET" class="form">
-                <img src="/labs/lab-html-exercise/images/magnifying-glass.png" alt="magnifying glass">
-                <input type="text" placeholder="Search packages" name="search">
-                <button type="submit" class="search-btn">Search</button>
-            </form>
-            </div>
-            <div class="join">
-                <a href="">Join</a>
+                <input class="search-bar" type="search" placeholder="        Search packages">
+                <button type="submit" class="search-button">Search</button>
+                <a class="join" href="">Join</a>
                 <a href="">Log in</a>
-            </div>
-        </div>
+            </form>
         </div>
     </header>
 
-    <!-- cambiar el nombre de los id por algo con mejor referencia -->
-    <!-- pendiente que poner en href (checar en google) -->
 
-    <section id="up">
+
+
+    <section id="section1">
         <h1>Build amazing things</h1>
-        <article>
+        <article class="text">
             <p>Essential JavaScript development tools that help you go to market faster and build powerful applications using modern open source code.</p>
         </article>
-        <div>
-            <a href="">See plans</a>
-            <a href="">Join for free</a>
+        <div class="section1-buttons">
+            <a class="plans" href="">See plans</a>
+            <a class="free" href="">Join for free</a>
         </div>    
     </section>
     
-    <!-- colocar class al h1 , article y p  -->
-     <section id="mid">
-        <img class="hexagon" src="/labs/lab-html-exercise/images/triangle-hexagon.svg" alt="pink hexagon">
+
+
+     <section id="section2">
+        <img class="hexagon" src="/images/triangle-hexagon.svg" alt="pink hexagon">
         <h1>Bring the best of open source yo your company</h1>
         <article>
             <p>npm is the tool used by
                 over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it. Create an Org and get more out of the tools your team already knows and loves.</p>
         </article>
     </section>
+
     
-    <!-- checar si el tamaño del h es el indicado -->
-    <!-- colocar clase a los div -->
-    <section id="down">
-        <div>
-            <img src="/labs/lab-html-exercise/images/zero-configuration.svg" alt="zero configuration">
-            <h3>Zero configuration</h3>
-            <p>Create an org, add your team, and start collaborating. Nothing to configure, set up, or manage.</p>
+    <section id="section3">
+        <div class="parts">
+            <div class="parts-section">
+                <img class="black-logo" src="/images/zero-configuration.svg" alt="zero configuration">
+                <h3>Zero configuration</h3>
+                <p>Create an org, add your team, and start collaborating. Nothing to configure, set up, or manage.</p>
+            </div>
+            <div class="parts-section">
+                <img class="black-logo" src="/images/team-management.svg" alt="team management">
+                <h3>Team management</h3>
+                <p>Control who has access to what modules within your team namespace using straightforward team management capabilities.</p>
+    
+            </div>
+            <div class="parts-section">
+                <img class="black-logo" src="/images/familiar-features.svg" alt="familiar features">
+                <h3>Familiar features</h3>
+                <p>npm Orgs has 100% parity with all the public npm registry features your developers already use.</p>
+            </div>
+            <div class="parts-section">
+                <img class="black-logo" src="/images/npm-audit.svg" alt="npm audit">
+                <h3>npm audit</h3>
+                <p>Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer.</p>
+            </div>
         </div>
-        <div>
-            <img src="/labs/lab-html-exercise/images/team-management.svg" alt="team management">
-            <h3>Team management</h3>
-            <p>Control who has access to what modules within your team namespace using straightforward team management capabilities.</p>
-
+        <div class="black-button">
+            <a href="">Create an org</a>
         </div>
-        <div>
-            <img src="/labs/lab-html-exercise/images/familiar-features.svg" alt="familiar features">
-            <h3>Familiar features</h3>
-            <p>npm Orgs has 100% parity with all the public npm registry features your developers already use.</p>
-        </div>
-        <div>
-            <img src="/labs/lab-html-exercise/images/npm-audit.svg" alt="npm audit">
-            <h3>npm audit</h3>
-            <p>Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer.</p>
-        </div>
-
-        <!-- checar si va dentro de una seccion y que poner en href -->
-        <a href="">Create an org</a>
     </section>
 </body>
 </html>
