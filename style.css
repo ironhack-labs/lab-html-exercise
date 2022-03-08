@@ -40,16 +40,23 @@ nav a {
     margin-right: 15px;    
 }
 
-.search-bar {
+.container form  {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+ .search-bar {
     background-color: rgb(235, 235, 235);
     border-style: none;
     height: 30px;
-    width: 500px;
+    width: 600px;
     background-image: url(/images/magnifying-glass.png);
     background-repeat: no-repeat;
     background-position: left center;
     background-size: 25px
-}
+} 
 
 .search-button {
     width: 75px;
@@ -63,10 +70,17 @@ nav a {
 
 .container a{
     text-decoration: none;
+    color: black;
     margin-left: 20px;
     margin-left: 20px;
 }
 
+.join {
+    display: flex;
+    border: 1px solid black;
+    width: 65px;
+    justify-content: center;
+}
 
 #section1 {
     display: flex;
@@ -162,7 +176,6 @@ nav a {
 }
 
 #section3 .parts {
-    border: 2px solid red;
     padding: 45px;
     display: flex;
     flex-direction: row;
@@ -171,7 +184,6 @@ nav a {
 }
 
 #section3 .parts-section {
-    border: 2px solid red;
     height: 250px;
     width: 250px;
 }
