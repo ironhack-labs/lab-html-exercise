@@ -92,11 +92,9 @@ We could try to represent this part of the website with the following:
         <li><a href="#"> Support </a></li>
       </ul>
     </nav>
-  </div>
+    </div>
+    
 
-  <div>
-    <!-- add logo, search bar and buttons (or links and style them as buttons later) -->
-  </div>
 </header>
 ```
 
