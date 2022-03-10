@@ -3,6 +3,10 @@
 body {
   font-family: 'Poppins';
 }
+button:hover {
+    cursor: pointer;
+    background-color: #fd1b22;
+}
 
 header > div {
     padding: 0 25px;
@@ -44,7 +48,6 @@ header > div {
       width: 70rem;
       margin-top: 10px;
       margin-bottom: 10px;
-      /* margin-left: -15px; */
       border: none;
       background-color: rgba(0,0,0,.05);
       background-image: url(images/magnifying-glass.png);
@@ -54,7 +57,18 @@ header > div {
   }
   input::placeholder {
       padding-left: 70px;
+      font-size: 15px;
   }
+
+  input:focus {
+      outline: none;
+      padding-left: 70px;
+  }
+
+  input:focus::placeholder {
+      color: transparent;
+  }
+ 
   button {
       height: 53px;
       width: 80px;
@@ -104,6 +118,7 @@ header > div {
       text-align: center;
       padding-top: 10px;
       box-shadow: 7px 7px #fb3e445e;
+      transition: 0.4s;
   }
   #joinFree {
     background-color: white;
@@ -114,6 +129,7 @@ header > div {
     display: inline-block;
     text-align: center;
     padding-top: 10px;
+    transition: 0.4s;
 }
 .hexagon {
     display: flex;
@@ -164,6 +180,17 @@ h2 {
     justify-content: center;
     margin: auto;
     margin-bottom: 200px;
+    transition: 0.4s;
 }
+
+#seePlans:hover, #create:hover {
+    box-shadow: none;
+    transform: translate(7px, 7px);
+}
+
+#joinFree:hover {
+    transform: translate(7px, 7px);
+}
+
 
 
