@@ -3,33 +3,35 @@
 <body>
 <header>
 <div>
-<img src="images/black-heart.png" alt="Black heart">
+<img class ="blackHeart" src="images/black-heart.png" alt="Black heart">
 <span> Nifty Penguin Magic </span>
 <p></p>
 </div>
 <div>
 <aside>
-<nav class="nav-bar">
-<ul>
-<li><a href="#enterprise">npm Enterprise</a></li>
-<li><a href="#products">Products</a></li> 
-<li><a href="#solutions">Solutions</a></li> 
-<li><a href="#resources">Resources</a></li> 
+<nav class="nav">
+    <ul>
+<li><a  href="#enterprise">npm Enterprise</a></li>
+<li><a  href="#products">Products</a></li> 
+<li><a  href="#solutions">Solutions</a></li> 
+<li><a  href="#resources">Resources</a></li> 
 <li><a href="#docs">Docs</a></li> 
 <li><a href="#support">Support</a></li>     
 </ul>
 </nav>
 </aside>
 </div>
-<div>
-    <img src ="images/npm-logo.png">
-    <a href="#">Join Log In</a>
-    <form action="/some-url" method="get">
-        <img src="images/magnifying-glass.png"
 
-    <label for="Search packages"></label>
-    <input type ="text" name ="Search packages" placeholder="Search packages">
-    <button>Search</button>
+
+<div>
+    <form action="/some-url" method="get" class="search-field">
+       
+        <img class="npm" src ="images/npm-logo.png">
+<a href="#">Join Log In</a>
+<img src="images/magnifying-glass.png" class="lupe">
+    <label class="label" for="Search packages"></label>
+    <input class="label" type ="text" name ="Search packages" id="lupe" placeholder="Search packages">
+    <button class="button">Search</button>
     <a> </a>
     <a></a>
 </form>
@@ -41,12 +43,12 @@
     <p>Essential JavaScript development tools that help you go to market faster and build powerful applications using modern open source code.</p>
 </article>
 <div>
-    <a href="#See places">See places</a> <a href="#Join for Free">Join for Free</a>
+    <a class="button-see-plans"href="#See plans">See plans</a> <a href="#Join for Free">Join for Free</a>
 </div>
-</section'>
+</section>
 
 <section id="best-of-open-source">
-    <img src="images/triangle-hexagon.svg" alt="Triangle Hexagon">
+    <img  src="images/triangle-hexagon.svg" alt="Triangle Hexagon">
     <h4>Bring the best of open source to your company</h4>
     <article>
         <p>npm is the tool used by over 11.000.000 JavaScript developers around the world. Your developers already use it. Your company depends on it.
@@ -56,39 +58,40 @@
 </section>
 
 <section id="articles">
-    <div>
-        <article>
-            <img src="images/zero-configuration.svg">
-            <h2>Zero configuration</h2>
+    <div class="boxed">
+        <article class="boxes">
+            <img class="images-in-boxes" src="images/zero-configuration.svg">
+            <h5>Zero configuration</h5>
             <p>Create an org, add your Team
                 and start collaboration.
                 Nothing to configure, set up, or manage.
             </p>
         </article>
-        <article>
-            <img src="images/team-management.svg">
-            <h2>Team management</h2>
+        <article class="boxes">
+            <img class="images-in-boxes" src="images/team-management.svg">
+        
+            <h5>Team management</h5>
             <p>Control who has access to what modules within your team namespace
                 using straightforward team management capabilities.
             </p>
         </article>
-        <article>
-            <img src="images/familiar-features.svg">
-            <h2>Familiar features</h2>
+        <article class="boxes">
+            <img class="images-in-boxes" src="images/familiar-features.svg">
+            <h5>Familiar features</h5>
             <p>npm Orgs has 100% pority with
                 all the public npm registry
                 features your developers already use.
             </p>
         </article>
-        <article>
-            <img src="images/npm-audit.svg">
-            <h2>npm audit</h2>
+        <article class="boxes">
+            <img class="images-in-boxes"src="images/npm-audit.svg">
+            <h5>npm audit</h5>
             <p>Enjoy the security auditing features built into the npm-auditclient o zero-friction way
                 to make open source software safer.
             </p>
         </article>
     </div>
-    <a href="#">Create an Org</a>
+    <a class="create-box"href="#">Create an Org</a>
 </section>
 
 
