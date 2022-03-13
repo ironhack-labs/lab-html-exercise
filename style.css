@@ -4,6 +4,7 @@ body {
   font-family: 'Poppins';
 }
 
+/*Upper div of header (style provided)*/
 header > div {
   padding: 0 25px;
   display: flex;
@@ -33,43 +34,93 @@ nav a {
   margin-right: 1rem;
 }
 
-/* second <div> in header* (!!unfinished!!)*/
+/*second div of header (style finished)*/
 
-.npmLogo {
-  width: 70px;
+.div-form {
+  box-shadow: 0px 5px 10px -5px lightgrey;
 }
 
-.magnifyingGlass {
+.npmLogo {
+  width: 65px;
+  padding: 10px 10px 10px 0px;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 30px;
+  margin: 5px 10px 5px 0px;
   background-color: whitesmoke;
-  margin: none;
-  padding: none;
+}
+
+#magnifyingGlass {
+  background-color: whitesmoke;
+  height: 15px;
+  width: 15px;
+  padding: 0px 5px;
 }
 
 form label {
   color: rgba(0,0,0,.05);
-  line-height: 10%;
-  padding: 10px 20px;
+  background-color: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 9px 0px;
 }
 
 form input {
   color: rgba(0,0,0,.05);
   border: none;
-  padding: 10px 20px;
+  padding: 9px 5px;
+  margin: none;
   background-color: whitesmoke;
+  width: 100%;
 }
 
 form button {
   background-color: #fb3e44;
   color: white;
   border: none;
-  padding: 10px 20px;
+  padding: 9px;
+  width: 100px;
 }
 
-.link-btn {
+.header-links {
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-links a {
+  width: 60px;
+  height: 25px;
+  margin-left: 10px;
+  font-size: .9em;
+  letter-spacing: 0.5px;
+  font-family: 'Poppins';
+  color: black;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: white;
 }
 
-/*style section 1*/
+.join-btn {
+  border-style: solid;
+  border-width: 1px;
+  border-color: darkgrey lightgray lightgray lightgray;
+}
+
+.log-in-btn {
+
+}
+
+/*section 1 (finished)*/
 #section1 {
   display: flex;
   justify-content: center;
@@ -80,27 +131,47 @@ form button {
 }
 
 h1 {
-  font-size: 10em;
+  font-size: 7em;
+  height: 20%;
+  margin-top: 10%;
 }
 
 #section1 article {
   font-size: 1.5em;
   width: 25%;
+  height: 30%;
   text-align: center;
+  padding: 20px;
 }
 
-#section1 .div-btn {
+#section1 div {
+  width: 25%;
+  height: 30%;
+  padding: 20px;
+  margin-bottom: 10%;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
-  padding: 5px 15px;
+  align-items: center;
 }
 
-#section1 .div-btn .see-plans {
+#section1 > div > a {
+  font-weight: bold;
+  text-decoration: none;
+  height: 35px;
+  padding: 10px 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.see-plans-btn {
+  color: white;
   background-color: #FB3B49;
   box-shadow: 8px 8px 0 rgba(251,59,73,.2);
 }
 
-#section1 .div-btn .join {
-  background-color: white;
+.section1-join-btn {
   border: none;
+  color: black;
 }
