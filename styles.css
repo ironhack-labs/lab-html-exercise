@@ -1,12 +1,44 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins");
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Poppins";
+  margin: 0;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 17px;
 }
 
 header > div {
   padding: 0 25px;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid lightgray;
@@ -31,4 +63,169 @@ nav a {
 .blackHeart {
   width: 20px;
   margin-right: 1rem;
+}
+
+.header-search {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  width: 100%;
+  height: 40px;
+  border-bottom: 0;
+}
+
+.header-search .logo {
+  height: 50%;
+  padding: 0 40px;
+}
+
+.header-search form {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  background-color: lightgray;
+
+  flex-grow: 1;
+}
+
+.header-search .magnifying-glass {
+  height: 50%;
+  margin: 0 10px;
+}
+
+.header-search form input {
+  background-color: transparent;
+  resize: none;
+  outline: none;
+  border: none;
+  flex-grow: 1;
+}
+
+.header-search form button {
+  background-color: black;
+  color: white;
+  height: 100%;
+  padding: 0 20px;
+  border: none;
+}
+
+.header-search a {
+  padding: 0 20px;
+}
+
+.header-search .join {
+  margin-left: 20px;
+  border: 1px solid gray;
+}
+
+.header-search .login {
+}
+
+#plans {
+  height: 600px;
+  background-color: rgba(232, 217, 217, 0.3);
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#plans h2 {
+  margin: 1em 0;
+}
+
+#plans article {
+  width: 400px;
+  margin: 0 auto;
+}
+
+#plans .links {
+  width: 400px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+  padding: 1em 0;
+}
+
+#plans .links a {
+  text-decoration: none;
+  flex-grow: 1;
+  padding: 0.5em 0;
+}
+
+#plans .links .see-plans {
+  color: white;
+  background-color: #fb3b49;
+  box-shadow: 8px 8px 0 rgba(251, 59, 73, 0.2);
+}
+
+#plans .links .join {
+  font-weight: bold;
+}
+
+#ad {
+  padding-top: 50px;
+  text-align: center;
+}
+
+#ad h2 {
+  background-color: rgba(255, 204, 53, 0.4);
+  transform: skew(9deg, 0deg);
+  font-style: italic;
+  width: max-content;
+  margin: 2em auto 0.5em;
+  padding: 0 40px;
+}
+
+#ad article {
+  width: 600px;
+  margin: 0 auto 1em;
+}
+
+#ad img {
+  width: 200px;
+}
+
+#features {
+  padding-top: 100px;
+  padding-bottom: 150px;
+  text-align: center;
+}
+
+#features h3 {
+  color: #ed1c24;
+}
+
+.features-list {
+  max-width: 800px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  margin: 0 auto 4em;
+}
+
+.features-list-item {
+  width: 200px;
+  margin: 0 10px;
+  text-align: start;
+}
+
+.feature-icon {
+  width: 25px;
+}
+
+.create-org {
+  padding: 10px 80px 12px 80px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  box-shadow: 8px 8px 0 rgba(128, 83, 35, 0.2);
+  text-decoration: none;
 }
