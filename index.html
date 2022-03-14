@@ -2,43 +2,51 @@
     <head>
         <meta charsetr="utf-8" />
         <title>NPM Clone</title>
-        <link>
+        <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
         <header>
             <div>
-                <nav>
-                    <img src = "images\black-heart.png" alt = "Black heart" />
-                    <div>
-                        <p>Neverending Pun Machine</p>
-                    </div>
-                    <ul>
-                        <li><a href="#npm-enterprise">npm Enterprise</a>
-                        <li><a href="#products">Products</a>
-                        <li> <a href="#solutions">Solutions</a>
-                        <li> <a href="#resouraces">Resoources</a>
-                        <li> <a href="#docs">Docs</a>
-                        <li> <a href="#support">Support</a>
-                    </ul>        
-                </nav>
-                
-        
-                <img src="images\npm-logo.png" alt = "logo">
-                <img src="images\magnifying-glass.png" alt = "magnifying-glass">
-                <form action="search.html" method="get">
-                    <label for="search">Search</label>
-                    <input type="text" id="search" name="search" placeholder="Search Packages">
-                    <button type="submit">search</button>
-                </form>
-                <ul>
-                    <li><a href="#join">Join</a></li>
-                    <li><a href="#login">Log In</a></li>
-                </ul>
-            </div>    
+                <div class = "nav-top">
+                    <div class="nav-top-left"> 
+                        <img class = "blackHeart" src = "images\black-heart.png" alt = "Black heart" />
+                            <p>Neverending Pun Machine</p>
+                    </div>       
+                    <nav>
+                        <div class = "nav-links" > 
+                            <ul>
+                                <li><a href="#npm-enterprise">NMPEnterprise</a>
+                                <li><a href="#products">Products</a>
+                                <li><a href="#solutions">Solutions</a>
+                                <li><a href="#resouraces">Resources</a>
+                                <li><a href="#docs">Docs</a>
+                                <li><a href="#support">Support</a>
+                            </ul>
+                        </div>            
+                    </nav>
+                </div>
+                    <br>
+                    </n>
+
+                <div class = "nav-lower">
+                    <img class = "logo" src="images\npm-logo.png" alt = "logo"><br>
+                        <div class = "search-bar-section">
+                            <form class = "form-search" action="search.html" method="get">
+                                <label for="search"><img class = "searchlogo" src = "images\magnifying-glass.png" alt = "searchlogo" /> </label>
+                                <input class = "searchbar" type="text" id ="search" name ="search" placeholder = "Search Packages">
+                                <button class="search-button" type="submit">search</button>
+                            </form>
+                            <ul class="login-links">
+                                <li><a href="#join">Join</a></li>
+                                <li><a href="#login">Log In</a></li>
+                            </ul>
+                         </div>
+                </div>   
+            </div>     
         </header>
 
-        <section>
+        <section class = "build">
             <heading> 
                 <h1>Build Amazing Things</h1>
             </heading>
@@ -53,8 +61,8 @@
             </div>
         </section>
         
-        <section>
-            <img src="http://127.0.0.1:5500/images/triangle-hexagon.svg" alt = "triangle-hexagon">
+        <section class = "section-2">
+            <img class = "hex-image" src="http://127.0.0.1:5500/images/triangle-hexagon.svg" alt = "triangle-hexagon">
             <heading>
                 <h2>Bring the best of open source to your company</h2> 
             </heading>
