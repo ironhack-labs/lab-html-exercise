@@ -32,29 +32,16 @@ header > div {
     margin-right: 1rem;
   }
 
-  .search-wrapper {
-    position: relative;
-}
-
-  .search-wrapper img {
+  #search-btn{
+    background-color: #ED1C24;
+    font-family: Poppins;
+    font-size: 16px;
+    color: white;
     position: absolute;
-    top: 0px;
-    left: 0px;
-}
-
-input[type="text"], textarea {
-
-    background-color : #d1d1d1; 
-  
-  }
-
-  .search-button{
-      background-color: #fb3e44;
-      color: white;
-  }
-
-  .searchbox{
-      color: rgba(0,0,0,.05);
+    right: 230px;
+    top: 67.5px;
+    width: 80px;
+    height: 30px;
   }
 
   #build-things{
@@ -73,16 +60,36 @@ input[type="text"], textarea {
     text-decoration: none;
   }
 
-  #buttons{
-      font-size: 18px;
-      font-weight: 800;
-      width: 100px;
-      height: 25px;
+  #join-for-free-btn{
+    text-decoration: none;
+    color: black;
   }
 
-  .join, .login, #join-for-free {
-      text-decoration: none;
-      color: black;
+  .buttons{
+    display: inline;
+  }
+
+  #buttons a{
+      font-size: 18px;
+      font-weight: 800;
+      display: inline-block;
+      text-align: center;
+      height: 56px;
+      width: 150px;
+      margin: 50px;
+      line-height: 3em;
+  }
+
+  .btn{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+  h1{
+    font-family: Poppins, sans-serif;
+    font-weight: 600;
+    font-size: 5rem;
+    line-height: 1.25;
   }
 
   h2{
@@ -95,28 +102,21 @@ input[type="text"], textarea {
 
   }
 
+  h3 {
+    color:#ED1C24
+}
+
   #open-source{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction:column;
-    background-color: rgba(232,217,217,.3);
+    background-color: white;
   }
 
   .triangle-hexagon{
       height: 218px;
       width: 192px;
-  }
-
-  h1{
-      font-family: Poppins, sans-serif;
-      font-weight: 600;
-      font-size: 5rem;
-      line-height: 1.25;
-  }
-
-  div{
-      display: block;
   }
 
   #essential-js{
@@ -129,17 +129,12 @@ input[type="text"], textarea {
       line-height: 1.5;
   }
 
-#buttons{
-    display: block;
-    text-align: center;
-    width: 240px;
-    height: 56px;
-    margin: 50px;
-}
-
-.buttons{
-    margin-left: 10px;
-    margin-right: 10px;
+#create-an-org{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction:row;
+  height: 600px;
 }
 
 #create-an-org-button{
@@ -159,14 +154,6 @@ input[type="text"], textarea {
     margin-bottom: 150px;
 }
 
-#create-an-org{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction:row;
-    height: 600px;
-  }
-
 #npm-article{
     width: 512px;
     height: 144px;
@@ -175,10 +162,6 @@ input[type="text"], textarea {
     display: block;
     text-align: center;
     line-height: 1.5;
-}
-
-h3 {
-    color:#ED1C24
 }
 
 .icons{
@@ -195,22 +178,57 @@ h3 {
     font-size: 16px;
 }
 
-#search-bar {
-    position: relative;
-  }
-  
-#search-bar > img {
-    position: absolute;
-    top: 12px;
-    left: 15px;
-  }
-  
-#search-bar > input {
-    padding-left: 40px;
-  }
-
-.flex-container{
-    display: flex;
-
+input { 
+  background-image: url("images/magnifying-glass.png");
+  background-position: 1%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 1100px;
+  height: 30px;
+  background-color:rgba(0,0,0,.05);
 }
+
+.npm-logo > img{
+  width: 60px;
+  padding-top: 10px;
+}
+
+.npm-logo{
+  justify-content: center;
+}
+
+.search-bar{
+  position: absolute;
+  right: 310px;
+}
+
+.container a{
+  text-decoration: none;
+  width: 80px;
+  height: 30px;
+  text-align: center;
+  color: black;
+}
+.container .join {
+  border-style: solid;
+  border-width: thin;
+  border-color: lightgray;
+  position: absolute;
+  right: 110px;
+  top: 66px;
+}
+
+.container .login{
+  position: absolute;
+  right: 20px;
+  top: 66px;
+}
+
+#search-box{
+  margin-left: 20px;
+}
+
+input[type="search"]::placeholder {  
+  padding-left: 45px; 
+} 
 

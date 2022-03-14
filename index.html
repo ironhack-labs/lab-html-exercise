@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en" data-lt-installed="true"><head>
+<html lang="en">
+<head>
     <meta charset="utf-8">
     <link rel="stylesheet"href = "./styles.css"/>
     <title>npm</title>
@@ -24,32 +25,21 @@
           </nav>
         </div>
       
-        <div class = "flex-container">
-            <div>
-                 <div>
-                        <a href = "https://www.npmjs.com/">
-                        <img src = "images/npm-logo.png" alt = "npm logo"> </a>
-                    </div>
-        <div>
-            <form id = "search" method = "GET" action="/search" class = "search"> 
-                <div>
-                    <div>              
-                    <span>           
-                <img src = "images/magnifying-glass.png" alt = "magnifying glass"/>
-                </span>
-                    <input type="text" name="q" placeholder="Search packages" class="searchbox" value="" element="input">
-                    </div>
-                    </div>
-            <button type="submit" class="search-button" title="Submit">Search</button>
+        <div class = "container">
+            <div class = "npm-logo">
+            <img src = "images/npm-logo.png" alt = "npm logo">
+            </div>
+            <div class = "search-bar">
+                <form>
+                <input id = "search-box" type="search" id="search" placeholder="Search packages"> 
             </form>
+            </div> 
+            <div>
+                <button id = "search-btn" type="submit">Search</button>
+                <a class = "join" href="#" target = "_blank">Join</a>
+                <a class = "login" href="#" target = "_blank">Log In</a>  
+            </div>
         </div>
-        <div>
-            <a href="https://www.npmjs.com/signup" id="signup" class="join">Join</a>
-            <a href="https://www.npmjs.com/login" id="signin" class="login">Log In</a>
-        </div>
-    </div>
-</div>
-
       </header>
    
 <!-- section 1-->
@@ -63,8 +53,8 @@
         and build powerful applications using modern open source code</article>
     
     <div id = "buttons"> 
-    <a class = "buttons" id = "see-plans-btn" href="https://www.npmjs.com/products/pro">See plans</a>
-    <a class = "buttons" id = "join-for-free-btn" href = "https://www.npmjs.com/signup">Join for free </a>
+    <a class = "btn" id = "see-plans-btn" href="https://www.npmjs.com/products/pro">See plans</a>
+    <a class = "btn" id = "join-for-free-btn" href = "https://www.npmjs.com/signup">Join for free </a>
 </div>
 
 </section>
