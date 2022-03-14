@@ -6,13 +6,9 @@
 <!-- HEADER -->
 <header>
   <!-- HEADER0 - nav and quote  -->
-  <div>
+  <div class="navigation-bar">
     <div>
-      <img
-        class="blackHeart"
-        src="./images/black-heart.png"
-        alt="black heart"
-      />
+      <img id="black-heart" src="./images/black-heart.png" alt="black heart" />
       <span> Nifty Penguin Magic</span>
     </div>
     <nav>
@@ -28,17 +24,18 @@
     </nav>
   </div>
   <!-- HEADER1 - logo, search, button and link -->
-  <div>
-    <img src="./images/npm-logo.png" />
-    <form>
-      <input value="Search here" />
-      <button>Search</button>
-    </form>
-    <div>
-      <a href="#"> Join </a>
-      <a href="#"> Login </a>
+  <div class="search-bar">
+    <img id="npm-logo" src="./images/npm-logo.png" />
+    <div class="search-bar-div">
+      <form>
+        <input value="Search here" type="text" />
+        <button>Search</button>
+      </form>
     </div>
+    <a href="#" id="nav-join-btn"> Join </a>
+    <a href="#" id="nav-login-btn"> Login </a>
   </div>
+
   <!--  -->
 </header>
 
@@ -51,7 +48,7 @@
       faster and build powerful applications using modern open source code.
     </p>
   </article>
-  <div>
+  <div class="section-0-btn">
     <a href="#" id="see-plans-btn"> See plans </a>
     <a href="#" id="join-btn"> Join for free </a>
   </div>
@@ -113,5 +110,4 @@
   </div>
   <!-- Call to action button -->
   <div id="create-org-btn"><a href="#">Create an Org</a></div>
-  
 </section>
