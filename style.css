@@ -43,15 +43,16 @@ header > div {
 
 #nav-join-btn {
   text-decoration: none;
-  /* border-style: solid;
-  border-color: black; */
   color: grey;
-  margin-left: 5px;
+  margin-left: 1rem;
+  border: 1px solid grey;
+  margin-left: 35px;
 }
 #nav-login-btn {
   text-decoration: none;
   color: grey;
-  margin-left: 5px;
+  margin-left: 15px;
+  /* margin-left: 5px; */
 }
 #black-heart {
   width: 25px;
@@ -67,19 +68,41 @@ header > div {
 .search-bar {
   display: flex;
   justify-content: space-between;
+  padding: 10px;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+#search-bar {
+  background-image: "./images/magnifying-glass.png";
+  padding: 6px;
+  box-sizing: border-box;
+  width: 100%;
+  flex: 1 1 auto;
+  border: 1px solid lightgray;
+  background-color: rgb(243, 243, 243);
+  outline: none;
+}
+#search-btn {
+  padding: 5px;
+  height: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #fb3b49;
+  color: white;
+  border: none;
 }
 .search-bar-div {
   width: 80%;
   padding-right: 70px;
 }
-.search-bar input {
-  width: 100%;
-  flex: 1 1 auto;
-}
 
 .search-bar a {
-  padding: 1rem;
+  /* padding: 1rem; */
   justify-content: left;
+  /* padding: 2px; */
+  padding-right: 10px;
+  padding-left: 10px;
   /* margin-bottom: 150px; */
 }
 
@@ -140,18 +163,20 @@ header > div {
 .section-1-heading-container {
   background-color: rgb(255, 204, 53, 0.4);
   transform: skew(9deg, 0deg);
+  padding-right: 2rem;
+  padding-left: 2rem;
 }
 .section-1-heading-container h2 {
   transform: skew(-9deg, 0deg);
-  width: 900px;
+  /* width: 900px; */
   text-align: center;
-  font-size: 30px;
+  font-size: 35px;
   font-weight: bolder;
+  padding: 0;
+  margin: 0;
 }
 .section-1 {
   padding: 4rem 0 4rem 0;
-  /* background-color: rgba(232, 217, 217, 0.3); */
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -159,6 +184,7 @@ header > div {
 }
 .section-1 article {
   width: 700px;
+  text-align: center;
 }
 
 /* SECTION 2 */
@@ -174,26 +200,33 @@ header > div {
   padding-right: 4rem;
 }
 .business-aspects {
-  margin: 0, 4rem, 0, 4rem;
+  margin-right: 4rem;
+  margin-left: 4rem;
   display: flex;
+  /* flex-direction: row; */
+  /* flex-direction:inherit; */
+  /* flex-wrap: wrap; */
+  flex-flow: row;
 }
 .business-aspects div {
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .business-aspects h4 {
   color: #ed1c24;
+  font-weight: bold;
 }
 .business-aspects img {
-  max-width: 3rem;
+  max-width: 2rem;
 }
 #create-org-btn a {
   text-decoration: none;
   color: white;
-
+  font-weight: bold;
+  font-size: large;
   margin: 60px;
   background-color: #ed1c24;
-  width: 14rem;
+  width: 22rem;
   height: 3rem;
   background-color: rgb(0, 0, 0);
   box-shadow: 8px 8px 0 rgba(128, 83, 35, 0.2);
