@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins");
-
+/* *,
+html {
+  margin: 0;
+  padding: 0;
+} */
 body {
   font-family: "Poppins";
   padding: 0;
@@ -9,8 +13,18 @@ body {
 h1 {
   font-size: 80px;
   font-weight: bolder;
-  white-space: nowrap;
+  /* white-space: nowrap; */
+  /* width: 100%; */
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
+@media (max-width: 900px) {
+  h1 {
+    font-size: 40px;
+  }
+}
+
 /* HEADER */
 header > div {
   white-space: nowrap;
@@ -19,6 +33,8 @@ header > div {
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid lightgray;
+  padding-right: 30px;
+  padding-left: 30px;
 }
 
 .navigation-bar nav {
@@ -110,22 +126,34 @@ header > div {
 .section-0 {
   height: 600px;
   background-color: rgba(232, 217, 217, 0.3);
-  /* padding-top: 50px; */
+  padding-top: 2rem;
   display: flex;
   justify-content: top;
   align-items: center;
   flex-direction: column;
+  padding-bottom: 4rem;
 }
 
 .section-0 article {
-  width: 600px;
+  width: 650px;
   font-size: 22px;
   text-align: center;
+}
+@media (max-width: 900px) {
+  .section-0 article {
+    width: 350px;
+  }
 }
 
 .section-0-btn {
   justify-content: center;
   display: flex;
+  margin-bottom: 4 rem;
+}
+@media (max-width: 800px) {
+  .section-0-btn {
+    flex-flow: column;
+  }
 }
 .section-0-btn a {
   text-decoration: none;
@@ -186,6 +214,11 @@ header > div {
   width: 700px;
   text-align: center;
 }
+@media (max-width: 900px) {
+  .section-1 article {
+    width: 350px;
+  }
+}
 
 /* SECTION 2 */
 .section-2 {
@@ -203,10 +236,13 @@ header > div {
   margin-right: 4rem;
   margin-left: 4rem;
   display: flex;
-  /* flex-direction: row; */
-  /* flex-direction:inherit; */
-  /* flex-wrap: wrap; */
   flex-flow: row;
+  /* flex-wrap: wrap; */
+}
+@media (max-width: 800px) {
+  .business-aspects {
+    flex-flow: column;
+  }
 }
 .business-aspects div {
   padding-left: 10px;
@@ -218,6 +254,10 @@ header > div {
 }
 .business-aspects img {
   max-width: 2rem;
+}
+.business-aspects p {
+  max-width: 16rem;
+  /* max-height: 12rem; */
 }
 #create-org-btn a {
   text-decoration: none;
