@@ -14,19 +14,18 @@ body {
     line-height: 2.5em;
     font-weight: 300;
     margin: 5px;
-    padding: 5px
+    padding: 5px;
   }
   
 h1 {
-    font-size: 9em;
+    font-size: 7em;
     text-align: center;
     
   }
   
   h2 {
-    font-size: 5em;
+    font-size: 3.5em;
     text-align: center;
-    line-height: 4em;
     
   }
   
@@ -41,6 +40,7 @@ h1 {
     letter-spacing: 0.4px;
     margin-bottom: 15px;
     line-height: 1em;
+    color: red;
   }
   
   h5 {
@@ -64,6 +64,7 @@ h1 {
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid lightgray;
+    box-shadow: 1px 5px 1px 0 rgba(32, 29, 29, 0.068);
   }
 
   nav {
@@ -78,12 +79,7 @@ h1 {
 .nav-top-left {
     display: flex;
 }
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+
 
 .nav-links {
     display: flex;
@@ -145,25 +141,32 @@ nav ul {
 
 .searchbar {
     width: 1500px;
-    height: 20px;
+    height: 30px;
     
 }
 
 .search-button {
-    height: 20px;
+    height: 30px;
     background-color: red;
-    color: white
+    color: white;
 }
 
 .search-bar-section ul li {
+    margin-top: 10px;
     list-style-type: none;
     }
 
 .search-bar-section li a {
+        text-decoration: none;
+        color: black;
+        padding: 5px;
+    }
+
+.join-button {
     text-decoration: none;
     color: black;
-    border: 1px solid lightgray;
-    padding: 5px
+    border: 0.1px solid grey;
+    border-top: 1px solid;
 }
 
 .login-links {
@@ -171,7 +174,6 @@ nav ul {
     position: relative;
     bottom: 15px;
 }
-
 
 
   /* - suggested height for this section: 600px
@@ -186,6 +188,51 @@ nav ul {
     text-align: center;
     font-weight: 1000;
     border: 0.1px solid white;
+    
+}
+
+.build-article {
+    display: flex;
+    justify-content: center;
+}
+
+.description {
+    font-size:1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 22%;
+}
+
+.build-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    margin-right: 60px;
+    margin-bottom: 80px;
+    margin-top: 30px;
+}
+
+.build-links a {
+    text-decoration: none;
+    margin-right: 1rem;
+    width: 10%;
+}
+
+.join-for-free-button {
+    color: black;
+}
+
+.see-plans-button {
+text-decoration: none;
+color: white;
+border: 0.1px solid grey;
+border-top: 1px solid;
+background-color: red;
+padding: 15px 70px;
+box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+
 }
 
     
@@ -200,4 +247,78 @@ nav ul {
     flex-direction: column;
     align-items: center;
     padding-top: 30px;
+}
+
+.bring-section {
+    display: flex;
+    justify-content: center;
+
+}
+
+.bring-heading {
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+    font-style: italic;
+    padding-left: 50px;
+    padding-right: 50px;
+    height: 40px;
+    margin-top: 50px;
+  
+}
+
+.bring-heading h2 {
+    position: relative;
+    bottom: 20px;
+}
+
+.bring-description {
+    font-size:1.5em;
+    text-align: center;
+    display: flex;
+    width: 40%;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.service-image {
+    width: 30px;
+    height: 30px;
+}
+
+.service-section {
+    display: flex;
+}
+
+.service-box {
+    font-size: 1.7em;
+    text-align: center;
+    border-width: 2px;
+    border-color: #eee;
+    border-radius: 20px;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 10px 0;
+    margin-top: 50px;
+    margin-left: 5%; 
+    margin-bottom: 0;
+    Margin-right: 5%;
+    padding: 20px;
+    width: 40%; 
+}
+
+.create-div {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.create-button {
+    text-decoration: none;
+    color: white;
+    border: 0.1px solid grey;
+    border-top: 1px solid;
+    width: 80px;
+    background-color: black;
+    padding: 15px 70px;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
 }
