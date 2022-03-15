@@ -10,7 +10,7 @@ h1 {
   font-weight: bolder;
   text-align: center;
   margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 0.5rem;
 }
 @media (max-width: 900px) {
   h1 {
@@ -94,32 +94,35 @@ header > div {
   padding: 10px;
   padding-right: 30px;
   padding-left: 30px;
+  align-items: center;
 }
 
 #search-bar {
   background-image: "./images/magnifying-glass.png";
-  padding: 6px;
+  padding: 14px;
   box-sizing: border-box;
   width: 100%;
   flex: 1 1 auto;
   border: 1px solid rgb(243, 243, 243);
   background-color: rgb(243, 243, 243);
   outline: none;
+  margin: 0;
 }
 #magnifying-glass {
-  width: 30px;
-  height: 30px;
+  width: 45px;
+  height: 45px;
   background-position: right;
   background-repeat: no-repeat;
   background-color: rgb(243, 243, 243);
-  padding: 8px;
+  padding: 13px;
   box-sizing: border-box;
 }
 #search-btn {
   padding: 5px;
-  height: 30px;
+  height: 45px;
   padding-left: 15px;
   padding-right: 15px;
+  margin: 0;
   background-color: #fb3b49;
   color: white;
   border: none;
@@ -225,6 +228,7 @@ header > div {
 .section-1 article {
   width: 700px;
   text-align: center;
+  font-size: 16px;
 }
 @media (max-width: 900px) {
   .section-1 article {
@@ -261,12 +265,16 @@ header > div {
 }
 .business-aspects h4 {
   color: #ed1c24;
-  font-weight: bold;
+  font-weight: bolder;
+  font-size: 18px;
+  line-height: 0.3;
 }
 .business-aspects img {
-  max-width: 2rem;
+  margin-top: 3rem;
+  max-width: 2.6rem;
 }
 .business-aspects p {
+  margin-top: 3rem;
   max-width: 16rem;
 }
 #create-org-btn a {
