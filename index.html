@@ -10,71 +10,119 @@ auditing features built into the npm client, a zero-friction way to make open so
 
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=git, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=git, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>npm</title>
-</head>
+  </head>
 
-<body>
-    <Header>
-        <div class="first-navbar">
-            <div>
-                <img class="blackHeart" src="images/black-heart.png" alt="blackheart" />
-                <span>Neverending Pun Machine</span>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#">npm Enterprise</a></li>
-                    <li><a href="#">Products</a></li>
-                    <li><a href="#">Solutions</a></li>
-                    <li><a href="#"> Resources</a></li>
-                    <li><a href="#"> Docs</a></li>
-                    <li><a href="#"> Support</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="second-navbar">
-            <img class="logo" src="images/npm-logo.png" alt="logo">
-                <form action="search" method="get">
-                    <img class="magnifier" src="images/magnifying-glass.png" alt="magnifying-glass" />
-                    <input type="text" name="search" id="search" placeholder="Search packages">
-                    <button>Search</button>
-                </form>
-            <div>
-                <a href="#">Join</a>
-              <a href="#">Log in</a>
-            </div>
-        </div>
-    </Header>
-    <section id="main">
-        <h1>Build amazing things</h1>
-        <article>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat at numquam et atque sunt amet sit, eius fuga in id tempore dolorem voluptas facere consequatur repudiandae. Earum cum et quasi?</p>
-        </article>
+  <body>
+    <header>
+      <div>
         <div>
-        <a href="#">See plans</a>
-        <a href="#">Join for free</a>
-    </div>
+          <img
+            class="blackHeart"
+            src="images/black-heart.png"
+            alt="blackheart"
+          />
+          <span>Neverending Pun Machine</span>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#">npm Enterprise</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Solutions</a></li>
+            <li><a href="#"> Resources</a></li>
+            <li><a href="#"> Docs</a></li>
+            <li><a href="#"> Support</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div>
+        <img class="logo" src="images/npm-logo.png" alt="logo" />
+        <form action="search" method="get">
+          <input
+            type="text"
+            name="search"
+            id="search"
+            placeholder="&#x1F50D; Search packages"
+          />
+          <a class="button1">Search</a>
+        </form>
+        <div>
+          <a class="button2">Join</a>
+          <a>Log in</a>
+        </div>
+      </div>
+    </header>
+    <section id="main">
+      <h1>Build amazing things</h1>
+      <article>
+        <p>
+          Essential JavaScript development tools that help you<br />
+          go to market faster an build powerful applications<br />
+          using modern open source code.
+        </p>
+      </article>
+      <div class="bottons">
+        <a class="button3">See plans</a>
+        <a class="button4">Join for free</a>
+      </div>
     </section>
     <section id="second">
-        <img src="images/triangle-hexagon.svg" alt="triangle-hexagon">
-        <h2>Bring the best of open source to your company</h2>
-        <article>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus porro necessitatibus doloremque ratione, aspernatur, quis sequi vero dolorem repellat laborum consequuntur velit fuga commodi, ex assumenda? Veniam omnis sit excepturi.</p>
-        </article>
+      <img
+        class="triangle-hexagon"
+        src="images/triangle-hexagon.svg"
+        alt="triangle-hexagon"
+      />
+      <h2>Bring the best of open source to your company</h2>
+      <article>
+        <p>
+          npm is the tool used by over 11,000,000 JavaScript developers around
+          the world. Your developers <br />already use it. Your company depens
+          on it. Creat an Org and get more out of the tools your<br />
+          team already knows and loves.
+        </p>
+      </article>
     </section>
     <section id="last">
-        <div class="container">
-           <div class="box"></div>
-           <div class="box"></div>
-           <div class="box"></div>
-           <div class="box"></div>
+      <div class="container">
+        <div class="box">
+          <img src="images/zero-configuration.svg" alt="zero-configuration" />
+          <h4>Zero configuration</h4>
+          <p>
+            Creat an org.add your team, and start collaborating. Nothing to
+            configure, set up, or manage.
+          </p>
         </div>
-        <button></button>
+        <div class="box">
+          <img src="images/team-management.svg" alt="team-management" />
+          <h4>Team management</h4>
+          <p>
+            Control who has access to what modules within your team namespace
+            using straightfoward team management capabilities.
+          </p>
+        </div>
+        <div class="box">
+          <img src="images/familiar-features.svg" alt="familiar-features" />
+          <h4>Familiar features</h4>
+          <p>
+            npm Orgs has 100% parity with all the public nmp registry features
+            your developers already use.
+          </p>
+        </div>
+        <div class="box">
+          <img src="images/npm-audit.svg" alt="npm-audit" />
+          <h4>npm audit</h4>
+          <p>
+            Enjoy the security auditing features built into the npm client, a
+            zero-friction way to make open source software safer.
+          </p>
+        </div>
+      </div>
+      <button class="create">Create an Org</button>
     </section>
-</body>
-
+  </body>
 </html>
