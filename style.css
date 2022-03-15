@@ -212,19 +212,20 @@ h2 {
 
 /*section 3 (unfinished)*/
 #section3 {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
   height: 600px;
+  border: solid 1px red;
 }
 
 .container {
+  display: flex;
+  justify-content: center;
+}
+
+.container div {
   height: 250px;
   width: 300px;
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
   padding: 0px 20px 10px 20px;
+  margin-top: 5%;
 }
 
 .container img {
@@ -248,9 +249,15 @@ h3 {
   padding: 5px;
 }
 
-#section3 a {
+.org-btn {
   display: flex;
-  align-self: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+}
+
+.org-btn a {
+  display: flex;
   justify-content: center;
   align-items: center;
   color: white;
