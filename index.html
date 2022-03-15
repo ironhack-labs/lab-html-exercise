@@ -4,11 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>NPM Clone</title>
   </head>
   <body>
     <header class="header">
-      <div>
+      <div class="nav-container">
         <div>
           <img
             class="black-heart"
@@ -28,40 +29,44 @@
           </ul>
         </nav>
       </div>
-      <div>
+      <div class="form-container">
         <img class="logo" src="./images/npm-logo.png" alt="" />
         <form action="/some-url" method="post">
-          <label for="search"
-            ><img src="./images/suche.png" alt="Search Icon"
-          /></label>
-          <input type="text" placeholder="Search packages" name="search" />
+          <img
+            class="search-icon"
+            src="./images/magnifying-glass.png"
+            alt="Search Icon"
+          />
+          <input
+            class="search"
+            type="text"
+            placeholder="Search packages"
+            name="search"
+          />
           <button type="submit">Search</button>
         </form>
         <div>
-          <button type="" submit>Join</button>
-          <button type="" submit>Log In</button>
+          <a href="#" class="btn-join">Join</a>
+          <a href="#" class="link-dark">Log In</a>
         </div>
       </div>
     </header>
-    <section>
+    <section id="hero">
       <h1>Build amazing things</h1>
-      <p>
+      <p class="intro-text">
         Essential JavaScript development tools that help you go to market faster
         and build powerful applications using modern open source code.
       </p>
       <div>
-        <button>
-          <a href="#">See plans</a>
-        </button>
-        <button>
-          <a href="#">Join for free</a>
-        </button>
+        <a href="#" class="btn-plans">See plans</a>
+        <a href="#" class="link-dark btn-join">Join for free</a>
       </div>
     </section>
-    <section>
-      <div>
-        <img src="./images/triangle-hexagon.svg" alt="Triangle Hexagon" />
-      </div>
+    <section id="teaser">
+        <div class="img-wrapper">
+            <img src="./images/triangle-hexagon.svg" alt="Triangle Hexagon Logo">
+        </div>
+      <div class="teaser">
       <h2>Bring the best of open source to your company</h2>
       <p>
         npm is the tool used by over 11,000,000 JavaScript developers around the
@@ -69,47 +74,58 @@
         Create an Org and get more out of the tools your team already knows and
         loves.
       </p>
-      <div>
-        <div>
-          <img
-            src="./images/zero-configuration.svg"
-            alt="Logo Zero configuration"
-          />
-          <h3>Zero configuration</h3>
-          <p>
-            Create an org, add your team, and start collaborating. Nothing to
-            configure, set up, or manage.
-          </p>
+    </section>
+    <section id="info">
+    <div class="cards-wrapper">
+      <div class="card">
+        <div class="wrapper-card-img">
+            <img class="card-img"
+          src="./images/zero-configuration.svg"
+          alt="Logo Zero configuration"
+        />
         </div>
-        <div>
-          <img src="./images/team-management.svg" alt="Logo team management" />
-          <h3>Team management</h3>
-          <p>
-            Control who has access to what modules within your team namespace
-            using straightforward team management capabilities.
-          </p>
+        <h3>Zero configuration</h3>
+        <p>
+          Create an org, add your team, and start collaborating. Nothing to
+          configure, set up, or manage.
+        </p>
+      </div>
+      <div class="card">
+          <div class="wrapper-card-img">
+             <img class="card-img" src="./images/team-management.svg" alt="Logo team management" />
+         </div>
+        <h3>Team management</h3>
+        <p>
+          Control who has access to what modules within your team namespace
+          using straightforward team management capabilities.
+        </p>
+      </div>
+      <div class="card">
+          <div class="wrapper-card-img">
+             <img class="card-img"
+          src="./images/familiar-features.svg"
+          alt="Logo familiar features"
+        />
         </div>
-        <div>
-          <img
-            src="./images/familiar-features.svg"
-            alt="Logo familiar features"
-          />
-          <h3>Familiar features</h3>
-          <p>
-            npm Orgs has 100% parity with all the public npm registry features
-            your developers already use.
-          </p>
-        </div>
-        <div><img src="./images/npm-audit.svg" alt="" />Logo npm audit</div>
+        <h3>Familiar features</h3>
+        <p>
+          npm Orgs has 100% parity with all the public npm registry features
+          your developers already use.
+        </p>
+      </div>
+      <div class="card">
+          <div class="wrapper-card-img">
+             <img class="card-img" src="./images/npm-audit.svg" alt="Logo npm audit" />
+         </div>
         <h3>npm audit</h3>
         <p>
           Enjoy the security auditing features built into the npm client, a
           zero-friction way to make open source software safer.
         </p>
       </div>
-      <button>
-        <a href="#"> Create an Org </a>
-      </button>
+    </div>
+      <div class="wrapper-btn">
+      <a class="btn-dark" href="#"> Create an Org </a>
     </section>
   </body>
 </html>
