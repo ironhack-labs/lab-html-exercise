@@ -18,7 +18,8 @@ body {
     flex-direction: row;
     justify-content: flex-end;
     position: right;
-    
+    padding-left: 800px;
+    font: bold;
   }
   
   .nav ul {
@@ -48,14 +49,18 @@ align-items: flex-end;
   }
 
   .npm {
-      width: 30px;
-      margin: 10;
+      width: 53px;
+      height: 23px;
   }
 
 
   .lupe {
       position: relative;
       width:  15px;
+      height: 50%;
+      border: 10PX;
+      
+BORDER-COLOR:    grey;   
       
   }
 
@@ -63,7 +68,6 @@ align-items: flex-end;
       box-sizing: border-box;
       display: flex;
       justify-content: center;
-      margin: 40px 200px
 
   }
 
@@ -90,11 +94,13 @@ h4{
     
 }
 
-.hexagon{
-    width: 400px;
+#best-of-open-source img {
+    width: 300px;
 display: flexbox;   
 justify-content: center; 
 align-items: center;
+
+
 
 }
 
@@ -103,10 +109,13 @@ align-items: center;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 5px 20px;
+    padding-top: 150px;
 }
 
 .images-in-boxes{
     width: 30px;
+
 }
 
 h5{
@@ -120,6 +129,8 @@ h5{
     box-shadow: 8px 8px 0 rgba(251,59,73,.2);
     text-decoration: none;
     font: white;
+    padding-right: 20px;
+    margin-right: 20px;
     
 }
 
@@ -129,21 +140,26 @@ h5{
     text-decoration: none;
 }
 
+#best-of-open-source {
+    height: 600px;
+}
+
 #best-of-open-source div {
   display: flex;
   justify-content: center;  
   flex-direction: column;
   align-items: center;
+  
 }
 
 #best-of-open-source img {
-    width: 200px;
 display: flex;
 justify-content: center;
 align-items: center;
 flex-direction: column;
 align-items: center;
-height: 600px;
+margin-top: 30px;
+padding: 100px;
 }
 
 .boxed{
@@ -154,11 +170,14 @@ height: 600px;
 }
 
 .create-box {
-    box-sizing: border-box;
     background-color: black;
     color: white;
-    display: flex;
-    justify-content: center;
+   width: 100px;
+   height: 90px;
+   margin-left: 600px;
+   text-decoration: none;
+   text-align: center;
+
 }
 
 #articles{
@@ -169,4 +188,72 @@ height: 600px;
 .join-log-in{
     text-decoration: none;
     color: black;
+    width: 80px;
+}
+
+.space{
+    padding-top: 80px;
+}
+
+#build-amazing-things p {
+  width: 60%;
+}
+
+h1{
+    font-size: 50px;
+    font-weight: 100px;
+}
+
+#build-amazing-things strong{
+    font-size: bold;
+}
+
+
+
+.search-bar{
+
+    background-color:grey;
+    box-sizing: border-box;
+    box-shadow: grey;
+    border: 10%;
+    border-color: grey;
+}
+
+.search-field > input {
+    all: unset;
+    font: 16px;
+    height: 40%;
+    width: 100%;
+    background-color: bright grey;
+    display: flexbox;
+    flex-direction: row;
+    box-sizing: border-box;
+    border: 10%;
+    border-color: grey;
+}
+
+.border{
+    border: 10px;
+    border-color: grey;
+    padding: 20%;
+}
+
+
+
+
+form{
+    border: 10px;
+    border-color: grey;
+    box-sizing: border-box;
+    background-color: #f0f0f0;
+    padding-left: 70%;
+}
+
+.forms {
+    display: flex;
+    flex-direction: row;
+}
+
+.search-field > input > placeholder{
+    padding-right: 900px;
 }
