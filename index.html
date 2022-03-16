@@ -1,4 +1,9 @@
 <html>
+    <head>
+        <meta charset="utf-8">
+        <title>Ironhack npm Clone</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
     <body>
         <header>
             <div>
@@ -18,16 +23,18 @@
                     </ul>
                 </nav>
             </div>
-            <div>
-                <img src="./images/npm-logo.png" alt="NPM Logo">    
-                <form class="searchBar" action="" method="post">
+            <div id="secondBar">
+                <span>
+                <img src="./images/npm-logo.png" alt="NPM Logo" class="npmLogo"> 
+                </span>   
+                <form id="searchBar" action="" method="post">
                     <img src="./images/magnifying-glass.png" alt="Search Magnifying Glass">
-                    <input type="text" id="searchBox">
-                    <input type="submit" id="sendSearch" value="Search">
+                    <input type="text" id="searchBox" placeholder="Search packages">
+                    <button type="submit" id="sendSearch">Search</button>
                 </form>
                 <div>
-                    <a href="#">Join</a>
-                    <a href="#">Log In</a>
+                    <a href="#" class="joinButton">Join</a>
+                    <a href="#" class="logInButton">Log In</a>
                 </div>
             </div>
         </header>
