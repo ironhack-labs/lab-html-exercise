@@ -1,11 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css?family=Poppins|Poppins:100,300,700,900');
 
 * {
-  /*  outline: 1px solid red; */
+  
 }
 
 body {
     font-family: 'Poppins';
+    font-size: 16px;
 }
 
 header > div {
@@ -78,8 +79,8 @@ header form {
 
 #sendSearch {
     font-family: "Poppins";
-    background-color: red;
     border: none;
+    background-color: #fb3e44;
     color: white;
     font-size: 15px;
     display: flex;
@@ -101,3 +102,53 @@ header a {
     margin-right: 10px;
 }
 
+#mainSection {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 600px;
+    background-color: rgba(232, 217, 217, .3);
+    margin-top: -5px;
+}
+
+#mainSection h1 { 
+    margin-top: 0px;
+    font-size: 4.5em;
+    font-weight: 700;
+}
+
+#mainSection article {
+    width: 425px;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#mainSection div {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    padding: 20px 0px;
+}
+
+#mainSection a {
+    width: 45%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 15px 0px;
+    font-size: 1.1em;
+}
+
+.seePlans {
+    color: white;
+    background-color: #FB3B49;
+    box-shadow: 8px 8px 0 rgba(251, 59, 73, .2);
+}
+
+.joinFree {
+    color: black;
+    background-color: white;
+}
