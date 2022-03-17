@@ -47,17 +47,22 @@ form input {
   width: 55em;
 }
 
-#splash-banner {
-  background-color: #f8f4f4;
+#splash-banner,
+#gibberish {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 5em;
 }
 
+#splash-banner {
+  background-color: #f8f4f4;
+}
+
 #splash-banner h1 {
   font-size: 3em;
   font-weight: bold;
+  margin-top: 0;
 }
 
 #splash-banner article {
@@ -82,4 +87,25 @@ form input {
 #splash-banner div a:last-child {
   background-color: white;
   color: black;
+}
+
+#gibberish img {
+  width: 150px;
+  margin-bottom: 1em;
+}
+
+#gibberish h2 {
+  position: relative;
+  margin: 1em 0;
+  font-size: 2em;
+  font-weight: bold;
+  padding: 0 40px;
+  background: linear-gradient(to bottom, #ffebb5 85%, transparent 50%);
+  clip-path: polygon(0 0, 99% 0, 100% 100%, 1% 99%);
+}
+
+#gibberish article {
+  text-align: center;
+  width: 50em;
+  font-size: small;
 }
