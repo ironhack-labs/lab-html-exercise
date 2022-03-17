@@ -71,10 +71,11 @@ form input {
   margin-bottom: 3.5em;
 }
 
-#splash-banner div a {
+#splash-banner div a,
+#main-features a {
   text-decoration: none;
   margin: 0 10px;
-  padding: 15px 60px;
+  padding: 0.8em 4em;
   font-weight: bold;
 }
 
@@ -108,4 +109,42 @@ form input {
   text-align: center;
   width: 50em;
   font-size: small;
+}
+
+#main-features {
+  margin-top: 2em;
+  padding: 0 9em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#main-features div {
+  display: flex;
+  align-items: flex-start;
+}
+#main-features img {
+  width: 30px;
+}
+
+.main-features_card {
+  flex-direction: column;
+  padding-left: 5em;
+}
+
+.main-features_card h5 {
+  color: rgb(251, 59, 73);
+  margin-top: 1em;
+}
+
+.main-features_card span {
+  font-size: small;
+}
+
+#main-features a {
+  margin: 3em 0;
+  padding: 0.8em 8em;
+  background-color: black;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.2);
+  color: white;
 }
