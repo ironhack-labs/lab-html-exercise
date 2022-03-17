@@ -14,22 +14,29 @@ header > div {
 }
 
 .section1{
-  border:3px solid #009;
+ transform: translateY(-80px);
   width: 1500px;
   margin: auto;
   background-color: rgba(232,217,217,.3);
-  margin-top: 20px;
   height: 600px
   
 
 
 }
 .section2{
-  border:3px solid #009;
+  transform: translateY(-30px);
   width: 1500px;
   margin: auto;
   margin-top: 20px;
   height: 500px;
+
+}
+.section3{
+  transform: translateY(-100px);
+  width: 1500px;
+  margin: auto;
+  margin-top: 20px;
+  height: 800px; 
 
 }
 
@@ -127,11 +134,11 @@ nav a {
 
 h1{
   font-size: 75px;
-  border:solid burlywood 5px;
+  font-weight:900;
   border-color:burlywood;
   box-sizing:border-box;
   width: 60%;
-  transform: translateX(30%);
+  transform: translateX(30%) translateY(30px);
   text-align: center;
   letter-spacing: 5px;
   margin:40px;
@@ -141,13 +148,11 @@ h1{
 
 .yellow{
   font-size: 20px;
-  border:solid yellow;
-  border-color:yellow;
   box-sizing: content-box;
   padding: 5px;
   width: 35%;
   text-align: center;
-  transform: translateX(90%);
+  transform: translateX(90%) translateY(40px);
   margin:-10px 0px;
   
   
@@ -156,7 +161,6 @@ h1{
 }
 .red{
   box-sizing: content-box;
-  border:solid red;
   border-color:red;
   height: 100px;
   padding: 5px;
@@ -169,6 +173,7 @@ h1{
 
 }
 .flexbox{
+  font-size: 20px;
   color:white;
   background-color:#FB3B49;
   box-shadow: 8px 8px 0 rgba(251,59,73,.2);
@@ -178,9 +183,8 @@ h1{
   width: 200px;
   justify-content: center;
   display: flex;
-  margin-top: 5%;
-  margin-left: 10% 15%;
-  transform: translateX(-3%);
+  margin-top: 10%;
+  transform: translateX(-2%) translateY(50px);
   border-left: 30%;
   
 }
@@ -193,42 +197,34 @@ h1{
 .joinforfree{
   text-decoration: none;
   color:black;
-  font-weight:bold;
+  margin-top: 4%;
   
-  
-  
-
 }
 .flexbox0{
   font-size: 20px;
-  transform: translateX(25%);
+  font-weight: bold;
+  transform: translateX(120%) translateY(45px);
   margin-top: -9%;
+  display: flex;
+  width: 200px;
+  height: 50%;
+  border-left: 50%;
+  box-sizing: content-box;
+  border:solid white;
+  background-color:white;
+  justify-content: center;
+  
 
 }
 
 .boxh2{
-  font-size: 20px;
-  
-  border:solid burlywood 5px;;
-  border-color:burlywood;
-  box-sizing:border-box;
-  width: 45%;
-  
   position: absolute;
-  letter-spacing: 1px;
-  margin:30px;
-  
-  margin-left: 15%;
-  height: 5%;
-  justify-content: center;
- 
-
 }
 .box-skew{
   background: rgba(255,204,53,.4);
   border-color:burlywood;
   box-sizing:border-box;
-  width: 43%;
+  width: 55%;
   height: 30px;
   transform:skew(9deg,0deg);
   text-align: center;
@@ -249,7 +245,6 @@ h2{
 }
 .yellowsection2{
   font-size: 20px;
-  border:solid yellow;
   border-color:yellow;
   box-sizing: content-box;
   padding: 10px;
@@ -264,20 +259,13 @@ h2{
   transform: translateX(300%);
   margin-top: 30px;
 }
-.section3{
-  border:3px solid #009;
-  width: 1500px;
-  margin: auto;
-  margin-top: 20px;
-  height: 800px; 
 
-}
 
 .zero{
   width: 250px;
   margin-left: 100px;
   margin-top:150px;
-  border:solid red 8px;
+  
   border-color:red;
   padding-right: 5%;
   height: 35%; 
@@ -289,7 +277,6 @@ h2{
 h3{
   font-size: 15px;
   color:#ED1C24;
-  border:solid burlywood 5px;
   width: 60%;
   margin-left: 10px;
   
@@ -307,7 +294,7 @@ h3{
 .team{
   width: 300px;
   transform: translateX(100%) translateY(-100%);
-  border:solid red 8px;
+  
   border-color:red;
   padding-left: 1%;
   height:35%;
@@ -320,7 +307,6 @@ h3{
 h4{
   font-size: 15px;
   color:#ED1C24;
-  border:solid burlywood 5px;
   width: 60%;
   margin-left: 5px;
   display: flex;
@@ -337,7 +323,7 @@ h4{
   margin-left: 400px;
   margin-top: 100px;
   transform: translateX(200%) translateY(-250%);
-  border:solid red 8px;
+  
   border-color:red;
   padding-left: 2%;
   margin-left: 170px;
@@ -350,7 +336,6 @@ h4{
 h5{
   font-size: 15px;
   color:#ED1C24;
-  border:solid burlywood 5px;
   width: 60%;
   margin-left: 1px;
   margin-top: 15px;
@@ -368,7 +353,7 @@ h5{
   margin-left: 450px;
   margin-top: 100px;
   transform: translateX(300%)translateY(-350%);
-  border:solid red 8px;
+  
   border-color:red;
   padding-left: 2%;
   margin-left: 160px;
@@ -382,7 +367,6 @@ h5{
 h6{
   font-size: 15px;
   color:#ED1C24;
-  border:solid burlywood 5px;;
   width: 40%;
   margin-left: 1px;
   margin-top: 15px;
@@ -402,7 +386,7 @@ h6{
   text-decoration: none;
   background-color:black;
   box-shadow: 8px 8px 0 rgba(128,83,35,.2);
-  transform: translateX(-150%);
+  transform: translateX(-500px) translateY(-100%);
   margin:150px 0px;
   height: 20%;
   align-items: center;
