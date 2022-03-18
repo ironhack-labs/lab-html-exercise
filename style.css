@@ -34,7 +34,6 @@ nav a {
 }
 
 .top-bar {
-/*  width: 600px; */
   display: flex;
   align-items: center;  
   margin-top: 3px;  
@@ -119,6 +118,9 @@ background color: rgba(232,217,217,.3)
 }
 
 h1 {
+  /*
+  I can't seem to get the 'weight' to match the screenshot
+  */
   font-size: 4.5em;
 }
 
@@ -143,6 +145,9 @@ article {
 
 .join-cta {
   text-decoration: none;  
+  /* The first 'close as possible' screnshot shows the background as white
+   proceeding screenshots show it as the same color - opting for white */
+  background-color: white;
   color: black;
   padding: 15px 55px;
   font-weight: 900;  
@@ -156,7 +161,7 @@ Readme suggests using margin property but I can't find where it's applicable
 #mid-third {
   height: 600px;  
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
 }
@@ -180,7 +185,6 @@ Readme suggests using margin property but I can't find where it's applicable
 /* Bottom Section */
 
 #bot-third {
-  /* height: 600px; */
   display: flex;
   justify-content: space-evenly;
   flex-direction: row;
@@ -190,6 +194,8 @@ Readme suggests using margin property but I can't find where it's applicable
 
 h4 {
   color: #ED1C24;
+  /* Again - the weight doesn't look quite right? */
+  font-weight: 900;
 }
 
 #bot-third img {
@@ -211,8 +217,9 @@ h4 {
   background-color: black;
   color: white;
   box-shadow: 8px 8px 0 rgba(128,83,35,.2);  
-  padding: 16px 48px;
+  padding: 10px 45px;
   width: 25%;
   text-align: center;
-  margin-top: 25px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
