@@ -4,6 +4,8 @@
 
 ## Learning Goals
 
+Test
+
 In this exercise, the goal is to apply as many as possible of the concepts you've just learned:
 
 - when and how to use different HTML tags,
