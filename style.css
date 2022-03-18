@@ -44,19 +44,25 @@ nav a {
 
 .search-container img {
   width: 3.5em;
-  flex-shrink: 0;
 }
 
 .search-form {
-  flex-grow: 1;
   margin: 0 10px;
+  width: 100%;
 }
 
 .search-form input {
   background: white url(images/magnifying-glass.png) left no-repeat;
   background-size: 1em;
-  padding-left: 17px;
-  height: 29px;
+  background-position: 10px 11px;
+  padding-left: 35px;
+  height: 35px;
+  width: 100%;
+  border: none;
+  background-color: #f8f4f4;
+}
+::placeholder {
+  color: #c0c0c0;
 }
 
 .search-form button {
@@ -65,10 +71,10 @@ nav a {
   border: 1px solid rgb(251, 59, 73);
   background: rgb(251, 59, 73);
   color: #fff;
+  cursor: pointer;
 }
 
 .search-container div a {
-  flex-shrink: 0;
   text-decoration: none;
   color: black;
 }
