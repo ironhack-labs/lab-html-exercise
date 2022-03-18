@@ -1,104 +1,152 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-body, button {
-  font-family: 'Poppins';
+body,
+button {
+  font-family: "Poppins";
 }
 
 header > div {
-    padding: 0 25px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid lightgray;
-  }
-  
-  nav {
-    width: 600px;
-  }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  nav a {
-    text-decoration: none;
-    color: black;
-  }
-  
-  .blackHeart {
-    width: 20px;
-    margin-right: 1rem;
-  }
+  padding: 0 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+}
 
-  .logo {
-      width: 70px;
-  }
-  
-  .magnifyingGlass {
-    width: 18px;
-  }
+nav {
+  width: 600px;
+}
 
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-  .secondHeaderDiv{	
-    
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: space-evenly;
-        align-items: center;
-        align-content: center;
-    
-    }
+nav a {
+  text-decoration: none;
+  color: black;
+}
 
+.blackHeart {
+  width: 20px;
+  margin-right: 1rem;
+}
+
+.logo {
+  width: 70px;
+}
+
+.magnifyingGlass {
+  width: 18px;
+}
+
+.secondHeaderDiv {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+}
 
 .joinButton {
-    border: 2px solid #9fa0a1;
-    padding: 7px 25px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 15px;
-    text-decoration: none;
-    color: black;
+  border: 2px solid #9fa0a1;
+  padding: 7px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 15px;
+  text-decoration: none;
+  color: black;
 }
 
 .singInButton {
-text-decoration: none;
-color: black;
+  text-decoration: none;
+  color: black;
 }
 
 .searchBar {
-    background-color: rgba(0,0,0,.05);
-    padding: 0px 0px;
-    display: flex;
-    width: 70%;
-    align-items: center;
-        align-content: center;
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 0px 0px;
+  display: flex;
+  width: 70%;
+  align-items: center;
+  align-content: center;
 }
 
 .searchBar input {
-width: 100%;
-display: block;
-background-color: transparent;
-border: 0px;
-
+  width: 100%;
+  display: block;
+  background-color: transparent;
+  border: 0px;
 }
 
 .searchBar button {
-height: 38px;
-width: 90px;
-background-color: #fb3e44;
-border-color: #fb3e44;
-border: none;
-color: white;
-text-align: center;
-text-decoration: none;
-display: inline-block;
-font-size: 16px;
+  height: 38px;
+  width: 90px;
+  background-color: #fb3e44;
+  border-color: #fb3e44;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
 }
 
+.sectionOne {
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(232, 217, 217, 0.3);
+}
 
+.sectionOneDiv1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sectionOne article {
+  width: 400px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.sectionOne h1 {
+  font-size: 70px;
+  font-weight: bold;
+}
+
+.sectionOneDiv2 {
+  display: flex;
+  align-items: center;
+}
+
+.sectionOne a:first-child {
+  margin-right: 50px;
+  width: 210px;
+  padding: 15px 0;
+  background-color: #fb3b49;
+  -webkit-box-shadow: 9px 9px 0px 3px #fad0d2;
+  box-shadow: 8px 8px 0 rgba(251, 59, 73, 0.2);
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.sectionOne a:nth-child(2) {
+  width: 210px;
+  padding: 15px 0;
+  background-color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
