@@ -114,20 +114,21 @@ background color: rgba(232,217,217,.3)
   height: 600px;
   background-color: rgba(232,217,217,.3);
   display: flex;
-  justify-content: center space-evenly;
   align-items: center;
   flex-direction: column;
 }
 
 h1 {
-  font-size: 6em;
-  text-align: center;
-  font-weight: 700;
+  font-size: 4.5em;
 }
 
 article {
-  width: 50%;
-  height: 100px;
+  width: 25em;
+  height: 10em;
+}
+
+#mid-third, #top-third p {
+  text-align: center;
 }
 
 .plans-cta {
@@ -141,30 +142,19 @@ article {
 }
 
 .join-cta {
-  background-color: white;  
   text-decoration: none;  
   color: black;
   padding: 15px 55px;
   font-weight: 900;  
 }
 
-/*
-#top-third article {
-  width: 50%;  
-}
+/* Middle section 
 
-
-
-heading background color: rgba(255,204,53,.4)
-to get the transform of the yellow background in the left-hand direction use: transform: skew(9deg,0deg);
-to get it in the opposite direction of the letters, the way we need it on the page, use: font-style: italic;
-to additionally fine-tune the position of each element, use margin property.
-
+Readme suggests using margin property but I can't find where it's applicable
 */
 
 #mid-third {
-  height: 600px;
-/*  background-color: rgba(232,217,217,.3); */
+  height: 600px;  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -180,29 +170,21 @@ to additionally fine-tune the position of each element, use margin property.
   font-style: italic;
   font-weight: 900;
   transform: skew(9deg,0deg);
-  padding: 0px 20px 0px 20px;
+  padding: 0px 30px 0px 30px;
 }
-
-
-/*
 
 #mid-third article {
-  width: 50%;  
+  width: 800px;
 }
-color of the letters in each heading in this section: #ED1C24
-"Create an Org" box shadow: 8px 8px 0 rgba(128,83,35,.2)
-"Create an Org" letters color: white
-*/
 
+/* Bottom Section */
 
 #bot-third {
-  height: 600px;
-  background-color: rgba(232,217,217,.3);
+  /* height: 600px; */
   display: flex;
   justify-content: space-evenly;
   flex-direction: row;
   flex-wrap: wrap;
-  /* align-content: flex-start; */
   align-content: space-around;
 }
 
@@ -211,7 +193,7 @@ h4 {
 }
 
 #bot-third img {
-  height:25px;
+  height:30px;
 }
 
 #bot-third div {
@@ -220,8 +202,6 @@ h4 {
   flex-direction: column;
   align-items: flex-start;
   width: 20%;
-  /* padding-top: 50px;
-  margin-left: 10px; */
 }
 
 
@@ -231,8 +211,8 @@ h4 {
   background-color: black;
   color: white;
   box-shadow: 8px 8px 0 rgba(128,83,35,.2);  
-  padding: 15px 55px;
-  font-weight: 900;
+  padding: 16px 48px;
   width: 25%;
   text-align: center;
+  margin-top: 25px;
 }
