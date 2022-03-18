@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body {
+  font-family: 'Poppins';
+}
+
+header > div {
+  padding: 0 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+}
+
+nav {
+  width: 600px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+.blackHeart {
+  width: 20px;
+  margin-right: 1rem;
+}
+
+.top-bar {
+/*  width: 600px; */
+  display: flex;
+  align-items: center;  
+  margin-top: 3px;  
+}
+
+.logo {
+  height: 23px;
+  width: 70px;
+  margin-right: 1rem;  
+}
+
+.search-form {
+  display: flex;
+  justify-content: flex-end;  
+  align-items: center; 
+  margin: 5px 5px 5px 5px;
+  flex-grow: 2;
+}
+
+.search-form label {
+  background-color: rgba(232,217,217,.3);
+  height: 45px;
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.search-form input {
+  flex-grow: 2;   
+  background-color: rgba(232,217,217,.3);  
+  border: 0px;
+  color: gray;
+  height: 43px;
+  font-size: 1em;
+}
+
+.search-form input:focus {
+  color: black;
+}
+
+.search-form img {
+  width: 25px;
+  margin-left: .5em;
+  margin-right: .5em;
+}
+
+.search-form button {
+  background-color: #fb3e44;
+  color: white;
+  border: solid 1px rgb(209,209,209);
+  padding: 14px 18px;
+  font-size: .9em;
+  letter-spacing: 1px;
+}
+
+.top-bar a {
+  text-decoration: none;
+  color: rgb(97,97,97); 
+  margin-left: 15px;
+  margin-right: 20px;
+}
+
+.join-link {
+  border: 1px solid rgb(155,155,155);
+  padding: 3px 15px;
+}
+
+/*
+suggested height for this section: 600px
+background color: rgba(232,217,217,.3)
+"See plans" button background color: #FB3B49
+"See plans" button box shadow: 8px 8px 0 rgba(251,59,73,.2)
+*/
+
+#top-third {
+  height: 600px;
+  background-color: rgba(232,217,217,.3);
+  display: flex;
+  justify-content: center space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 6em;
+  text-align: center;
+  font-weight: 700;
+}
+
+article {
+  width: 50%;
+  height: 100px;
+}
+
+.plans-cta {
+  text-decoration: none;  
+  background-color: #fb3e44;
+  color: white;
+  box-shadow: 8px 8px 0 rgba(251,59,73,.2);  
+  padding: 15px 55px;
+  margin-right: 25px;
+  font-weight: 900;  
+}
+
+.join-cta {
+  background-color: white;  
+  text-decoration: none;  
+  color: black;
+  padding: 15px 55px;
+  font-weight: 900;  
+}
+
+/*
+#top-third article {
+  width: 50%;  
+}
+
+
+
+heading background color: rgba(255,204,53,.4)
+to get the transform of the yellow background in the left-hand direction use: transform: skew(9deg,0deg);
+to get it in the opposite direction of the letters, the way we need it on the page, use: font-style: italic;
+to additionally fine-tune the position of each element, use margin property.
+
+*/
+
+#mid-third {
+  height: 600px;
+/*  background-color: rgba(232,217,217,.3); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#mid-third img{
+  width: 200px;
+}
+
+#mid-third h2 {
+  background-color: rgba(255,204,53,.4);
+  font-style: italic;
+  font-weight: 900;
+  transform: skew(9deg,0deg);
+  padding: 0px 20px 0px 20px;
+}
+
+
+/*
+
+#mid-third article {
+  width: 50%;  
+}
+color of the letters in each heading in this section: #ED1C24
+"Create an Org" box shadow: 8px 8px 0 rgba(128,83,35,.2)
+"Create an Org" letters color: white
+*/
+
+
+#bot-third {
+  height: 600px;
+  background-color: rgba(232,217,217,.3);
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* align-content: flex-start; */
+  align-content: space-around;
+}
+
+h4 {
+  color: #ED1C24;
+}
+
+#bot-third img {
+  height:25px;
+}
+
+#bot-third div {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 20%;
+  /* padding-top: 50px;
+  margin-left: 10px; */
+}
+
+
+#bot-third a {
+  font-size: 1.3em;  
+  text-decoration: none;  
+  background-color: black;
+  color: white;
+  box-shadow: 8px 8px 0 rgba(128,83,35,.2);  
+  padding: 15px 55px;
+  font-weight: 900;
+  width: 25%;
+  text-align: center;
+}
