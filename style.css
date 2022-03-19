@@ -12,7 +12,6 @@ body {
     font-family: 'Poppins';
     font-size: 10px;
     line-height: 2.5em;
-    font-weight: 300;
     margin: 5px;
     padding: 5px;
   }
@@ -46,7 +45,7 @@ h1 {
    nav ul {
     list-style: none;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     text-decoration: none;
     color: black;
@@ -54,14 +53,8 @@ h1 {
 
   header {
     padding: 0 25px;
-    display: flex;
-    justify-content: space-between;
     border-bottom: 1px solid lightgray;
     box-shadow: 1px 5px 1px 0 rgba(32, 29, 29, 0.068);
-  }
-
-  nav {
-    width: 600px;
   }
   
   .nav-top {
@@ -73,16 +66,6 @@ h1 {
     display: flex;
 }
 
-
-.nav-links {
-    display: flex;
-    justify-content: space-evenly;
-    justify-content: flex-end;
-    margin-left: 200px;
-    list-style-type: none;
-    text-align: center;
-
-}
 
 .nav-links li {
     margin-right: 1rem;
@@ -112,30 +95,40 @@ h1 {
   .logo {
       width: 100px;
       height: 35px;
-      margin-right: 1rem;
-      position: relative;
       bottom: 15px;
   }
 
   .nav-lower {
-    border-top: grey;
     display: flex;
-    align-items: flex-end;
+    justify-content: space-between;
 }
 
 .search-bar-section {
     display: flex;
-
 }
 
-.form-search {
+form {
     display: flex;
+  }
+
+  input {
+    border: none;
+    background: rgba(211, 211, 211, 0.363);
+
+}
+  
+.searchbar {
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    background-image: "images\magnifying-glass.png";
+    height: 30px;    
+    width: 100%;
 }
 
-.searchbar {
-    width: 1500px;
-    height: 30px;
-    
+.search-section img {
+    position: absolute;
+    top: 60px;
+    right: 330px;
 }
 
 .search-button {
@@ -284,12 +277,11 @@ box-shadow: 8px 8px 0 rgba(251,59,73,.2);
 
 .service-box {
     font-size: 1.7em;
-    text-align: center;
+    text-align: flex-start;
     border-width: 2px;
     border-color: #eee;
     border-radius: 20px;
     box-sizing: border-box;
-    box-shadow: 2px 2px 10px 0;
     margin-top: 50px;
     margin-left: 5%; 
     margin-bottom: 0;
@@ -313,5 +305,5 @@ box-shadow: 8px 8px 0 rgba(251,59,73,.2);
     width: 80px;
     background-color: black;
     padding: 15px 70px;
-    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+    box-shadow: 8px 8px 0 rgba(94, 85, 86, 0.2);
 }
