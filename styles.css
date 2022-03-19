@@ -32,25 +32,27 @@ nav a {
   width: 20px;
   margin-right: 1rem;
 }
-.formdiv {
-  box-shadow: 0 2px 8px lightgray;
-  display: flex;
-
-  align-items: center;
-}
 
 .npmLogo {
-  width: 30px;
+  width: 50px;
+  height: 15px;
+  margin-right: 10px;
 }
-.searchlogo {
-  width: 0px;
 
-  background-color: rgba(0, 0, 0, 0.05);
+.formdiv {
+  display: flex;
+  width: 90%;
+  align-items: center;
+}
+form {
+  width: 100%;
 }
 .searchBar {
-  width: 1500px;
   background-color: rgba(0, 0, 0, 0.05);
   border: none;
+
+  height: 30px;
+  width: 100%;
 }
 input {
   background-image: url('/images/magnifying-glass.png');
@@ -64,23 +66,33 @@ input {
   background-color: #fb3e44;
   color: white;
   border: none;
-  padding: 5px;
-  width: 70px;
+
+  width: 80px;
+  height: 37px;
 }
 .join {
   text-decoration: none;
   color: black;
-  padding: 5px 15px 5px 15px;
+
+  border: 1px solid black;
 }
 .logIn {
   text-decoration: none;
   color: black;
 }
 
-.formdiv {
+.rightBoxes {
   display: flex;
-}
 
+  justify-content: flex-end;
+  align-items: center;
+  height: 50px;
+  width: 200px;
+}
+.boxes {
+  width: 75px;
+  text-align: center;
+}
 #firstSection {
   display: flex;
   flex-direction: column;
@@ -95,8 +107,7 @@ input {
   box-shadow: 8px 8px 0 rgba(251, 59, 73, 0.2);
   color: white;
   text-decoration: none;
-  /* width: 200px;
-  height: 100px; */
+
   padding: 20px;
   width: 200px;
   text-align: center;
@@ -107,6 +118,7 @@ input {
   padding: 20px;
   width: 200px;
   text-align: center;
+  background-color: white;
 }
 #firstSection div {
   display: flex;
@@ -116,14 +128,10 @@ input {
   height: 150px;
 }
 #firstSection article {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 600px;
+  width: 440px;
   height: 150px;
 
   text-align: center;
-  justify-content: center;
 }
 h1 {
   font-size: 6em;
@@ -140,9 +148,13 @@ h1 {
   width: 200px;
   padding-bottom: 40px;
 }
+#middleSection article {
+  width: 780px;
+  text-align: center;
+}
 
 h2 {
-  font-size: 2rem;
+  font-size: 1.6rem;
   color: black;
 
   background-color: rgba(255, 204, 53, 0.4);
