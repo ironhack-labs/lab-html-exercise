@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body {
+  font-family: 'Poppins';
+}
+
+/* styling of the header*/ 
+header > div {
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+  }
+  
+  nav {
+    width: 600px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .blackHeart {
+    width: 20px;
+    margin-right: 1rem;
+  }
+
+  .npmLogo {
+    width: 77px;
+  }
+  
+  .magnifyingGlass {
+        width: 23px;
+    }
+
+/* styling of the first Section*/ 
+.firstSection {
+        height: 600px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(232, 217, 217, 0.3);
+        flex-direction: column;
+      }
+
+      .firstSection article {
+        width: 400px;
+        text-align: center;
+        margin-bottom: 50px;
+      }
+      .firstSection h1 {
+        font-size: 70px;
+        font-weight: bold;
+      }
+    
+/* styling of the second Section*/ 
+.secondSection {
+      height: 600px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(255, 255, 255, 0.3);
+}
+  .secondSection h2 {
+    background-color: rgba(255, 204, 53, 0.4);
+    transform: skew(9deg, 0deg);
+    font-style: italic;
+    background-size: 20px;
+    }
+  .secondSection img {
+    width: 200px;
+    }
+  .secondSection article {
+  width: 700px;
+  text-align: center;
+  margin-bottom: 50px;
+  }    
+
+/* styling of the third Section*/ 
+.thirdSection {
+  height: 600px;
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 100px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.thirdSectionColumns {
+  padding: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.thirdSectionColumnsDetails {
+  font-style: italic;
+  background-size: 20px;
+}
+  .thirdSectionColumnsDetails img {
+    width: 30px;
+  }
+  .thirdSectionColumnsDetails h3 {
+    color: #ed1c24;
+  }
+  .thirdSectionColumnsDetails article {
+    width: 300px;
+  }
+
+.thirdSectionButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: skew(9deg, 0deg);
+  font-style: italic;
+  background-size: 20px;
+}
+
+.thirdSection button {
+  margin-right: 50px;
+  width: 500px;
+  padding: 15px 0;
+  background-color: #000000;
+  box-shadow: 8px 8px 0 rgba(128, 83, 35, 0.2);
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
