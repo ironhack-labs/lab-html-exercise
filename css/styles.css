@@ -1,0 +1,458 @@
+@charset "utf-8";
+
+/*
+* CSS-Design
+* NPM Website
+*/
+
+
+/* Reset * * * * * * * * */
+
+* {
+    margin: 0;
+    padding: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+    position: relative;
+    min-height: 100%;
+    scroll-behavior: smooth;
+}
+
+
+/* Layout * * * * * * * * */
+
+body {
+    font-size: 1.0rem;
+    /* currently ems cause chrome bug misinterpreting rems on body element */
+    line-height: 1.6;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+}
+
+.wrapper {
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+header>div {
+    padding: 0 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+}
+
+nav {
+    width: 600px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.blackHeart {
+    width: 20px;
+    margin-right: 1rem;
+}
+
+
+/* Search Section * * * * * * * * */
+
+.searchbar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    position: relative;
+}
+
+.col_1_5 {
+    display: flex;
+    margin-left: 3rem;
+    margin-top: 0.5rem;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+    max-height: 65px;
+    margin-bottom: -1.5rem;
+}
+
+.col_1_5_bar {
+    display: inline-flex;
+    margin-left: -10rem;
+    margin-top: 0.5rem;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: stretch;
+    order: 0;
+    margin-bottom: -1.5rem;
+    max-width: 120%;
+    background-color: #f2f2f2;
+    max-height: 34px;
+    margin-right: -3rem;
+    padding-right: 15rem;
+}
+
+.col_1_5 img {
+    max-height: 26%;
+    max-width: 26%;
+    background-color: #f2f2f2;
+    margin: 0.5rem;
+}
+
+.col_1_5_bar img {
+    max-height: 56%;
+    max-width: 56%;
+    background-color: #f2f2f2;
+    margin-top: 0.5rem;
+    padding-left: 1rem;
+}
+
+.col_1_5_bar p {
+    padding-left: 1rem;
+    color: #686868;
+    background-color: #f2f2f2;
+    margin-top: 0.5rem;
+}
+
+.col_1_5 p {
+    padding-left: 1rem;
+    color: #686868;
+    background-color: #f2f2f2;
+}
+
+.search {
+    background-color: #FB3B49;
+    border: none;
+    color: #fff;
+    font-weight: 400;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    font-size: 1rem;
+    display: inline-flex;
+    align-content: center;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.2rem;
+}
+
+.join {
+    background-color: #ffffff;
+    border: solid;
+    border-style: outset;
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+    text-decoration: none;
+    padding-top: 0.2rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center;
+    vertical-align: middle;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    font-size: 1rem;
+    display: inline-flex;
+    margin-left: -2rem;
+}
+
+.join:hover {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    background-color: rgb(150, 150, 150);
+}
+
+.login {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    font-size: 1rem;
+    display: inline-flex;
+    padding-bottom: 1rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
+    padding-top: 0.2rem;
+    margin-left: -2rem;
+}
+
+.login:hover {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    background-color: rgb(150, 150, 150);
+    padding: 0.5rem;
+}
+
+
+/* Main Teaser * * * * * * * * */
+
+#mainteaser {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    color: rgb(0, 0, 0);
+    overflow: hidden;
+    background-color: #e8d9d94d;
+    margin-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+#mainteaser .col_1 {
+    height: 500px;
+    padding: 4rem;
+    margin: 0 auto;
+    max-width: 50%;
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+}
+
+
+/* Buttons * * * * * * * * */
+
+.button1 {
+    background-color: #FB3B49;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    font-size: 1.2rem;
+    display: inline-flex;
+    margin: 8px 49px;
+    padding: 8px 49px;
+    box-shadow: 8px 8px 0 rgba(251, 59, 73, .2);
+}
+
+.button2 {
+    background-color: #ffffff;
+    border: none;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    font-size: 1.2rem;
+    display: inline-flex;
+    margin: 8px 49px;
+    padding: 8px 49px;
+}
+
+.button3 {
+    background-color: #000000;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.2rem;
+    display: inline-flex;
+    box-shadow: 8px 8px 0 rgba(128, 83, 35, .2);
+    margin: 8px 49px;
+    padding: 8px 100px;
+}
+
+.button1:hover {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: #ED1C24;
+    background-color: #ffffff;
+}
+
+.button2:hover {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    background-color: black;
+}
+
+.button3:hover {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: #000000;
+    background-color: rgb(255, 255, 255);
+}
+
+
+/* Columns * * * * * * * * */
+
+.four-columns {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: left;
+    max-width: 90%;
+    margin-left: 4rem;
+}
+
+.col_1 {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+    text-align: center;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    float: left;
+    max-width: 55%;
+}
+
+.col_1 img {
+    max-width: 30%;
+    max-height: 30%;
+}
+
+.col_1_4 {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+    width: 15%;
+    text-align: left;
+    margin-left: 5rem;
+    margin-right: -2rem;
+    float: left;
+}
+
+.col_1_4 img {
+    max-width: 14%;
+    max-height: 14%;
+    margin-bottom: 0.5rem;
+}
+
+
+/* Footer * * * * * * * * */
+
+footer {
+    height: 200px;
+}
+
+
+/* Typography * * * * * * * * */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-size: 3.5rem;
+    line-height: 1.2;
+    font-weight: 900;
+}
+
+h2 {
+    font-size: 1.8rem;
+    line-height: 1.25;
+    font-weight: 600;
+}
+
+h2 span {
+    background-color: #ffcc3566;
+    transform: skew(9deg, 0deg);
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+h3 {
+    font-size: 1.15rem;
+    line-height: 1.3;
+    font-weight: 700;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.25;
+    padding-left: 8rem;
+    padding-right: 8rem;
+}
+
+.col_1_4 h3 {
+    color: #ED1C24;
+}
+
+#mainteaser .col_1 h1 {
+    background-color: transparent;
+    transform: none;
+    font-style: normal;
+}
+
+#mainteaser p {
+    font-size: 1rem;
+    line-height: 1.25;
+}
+
+.col_1 h2 {
+    font-style: italic;
+    margin-top: 4rem;
+    transform: skew(9deg, 0deg);
+}
+
+.col_1_4 p {
+    font-size: 1rem;
+    line-height: 1.25;
+    padding: 0rem;
+}
