@@ -17,7 +17,7 @@ header > div {
   }
   
   nav ul {
-    list-style: none;
+    list-style-type: none;;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -37,7 +37,7 @@ header > div {
      display: flex;
      align-items: center;
      justify-content: center;
-     flex-direction: row;
+     flex-direction: column;
      height: 600px;
      background-color: rgba(232,217,217,.3)
     
@@ -61,9 +61,12 @@ header > div {
     align-items: center;
     justify-content: center;
     height:660px;
-    flex-direction: column;
+  flex-direction: row;
+  position: relative;]
+  top: 100px;
 
 }
+
 
 h3 {
     background-color:rgba(255,204,53,.4);
@@ -75,9 +78,12 @@ h3 {
 
 .section {
     text-align: center;
+    position: relative;]
+    top: 0px;
     display: flex;
     justify-content: flex-end;
-    margin:5px;
+    margin: 5px;
+   
 }
 
 .plans {
@@ -97,9 +103,63 @@ h3 {
     display: flex;
     align-items:center;
     justify-content:flex-start;
+    position: fixed;
+    top: 100px;
 }
 h4 {
     display: flex;
     text-align: center;
     align-items:baseline;
+    z-index: 500 ;
+
+   
+}
+
+.click1 {
+    position: absolute;
+    left: 150px;
+    top: 100px;
+}
+
+.click2{
+    position:absolute;
+    left: 450px;
+    top: 100px;
+}
+
+.click3{
+    position:absolute;
+    left: 790px;
+    top: 100px;
+}
+
+.click4{
+    position:absolute;
+    left: 1120px;
+    top: 100px;
+}
+
+.topic1 {
+    position: absolute;
+    left: 100px;
+    top: 150px;
+}
+
+
+.topic2 {
+    position:absolute;
+    left: 400px;
+    top: 150px;
+}
+
+.topic3 {
+    position:absolute;
+    left: 750px;
+    top: 150px;
+}
+
+.topic4 {
+    position:absolute;
+    left: 1100px;
+    top: 150px;
 }
