@@ -1,6 +1,7 @@
 <html>
   <header>
     <meta charset="utf-8">
+    <link href="style.css" rel="stylesheet" type="text/css">
     <div>
       <div>
         <img class="blackHeart" src="images/black-heart.png"> 
@@ -16,19 +17,25 @@
           <li><a href="#"> Support </a></li>
           
         </ul>
-        <img class="logo" src="images/npm-logo.png">
+        
       </nav>
     </div>
   
-    <div>
-        
-        <img class="logo" src="images/magnifying-glass.png">
+    <div> 
+        <img class="npm-logo" src="images/npm-logo.png">
+        <img class="magnifying-glass" src="images/magnifying-glass.png">
+        <form class="searchbar" action="search" method="post">
         <input type="text" name="search" placeholder="Search Packages">
-        <button type="Search">Search</button>
+        <button class="search-button" type="Search">Search</button>
+        </form>
+        <a href="#">Join</a>
+        <a href="#">Log in</a>
+       
+
         
         <!-- add logo, search bar and buttons (or links and style them as buttons later) -->
     </div>
-    <a href="#"> Just log in </a>
+
   </header>
 
 
@@ -42,8 +49,8 @@
     <article>Essential JavaScript developement tools that help you go to market faster and build powerful applications using modern open source code. </article>
     <br>
     <div>
-      <a href="#">See Plans Join for free</a>
-    
+      <a href="#">See Plans </a> 
+      <a href="#">Join for free</a>
     </div>
   </section>
 
@@ -81,13 +88,15 @@
          <p>npm Orgs has 100% parity with all the public npm registry features your developers already use</p>
       </article>
       
-      <article class="npm-audit">
+      <article class="^container">
         <img type="npm-audit" src="/images/npm-audit.svg" alt="npm-audit">
         <h3>npm audit</h3>
         <p>Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer.</p>
       </article>
+
      </div>
      <div class="create-button">
        <button type="create">Create an Org</button>
      </div>
+
    </section>
