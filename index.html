@@ -16,80 +16,65 @@
     </nav>
   </div>
 
-  <div>
-    <div>
-      <img src= "images\npm-logo.png" />
-   </div>
-    <div>
-      <img src="images\magnifying-glass.png"/>
-      <form id="search" method="GET" action="/search">
-        <input type="search" name="q" hotkeys="[object Object]" placeholder="Search packages" autocomplete="off" aria-label="Search packages" inputref="[object Object]" value="" element="input">
-        <button type="submit" class="_0da775bb bn pv2 ph4 f6 white pointer" title="Submit">Search</button>
-        <input type="hidden" name="csrftoken" value="-l7F4fEKPCqYJNmSU8MMZXO5uOl8Ea_HD2FNQBuoj2F">
+  <section id="inicio">
+      <img class="npm-logo" src= "images\npm-logo.png" alt="npm logo" />
+      <img class="lupa" src="images\magnifying-glass.png" alt="magnifying glass"/>
+      <form class="barra-busqueda">
+      <input type="text" name="search" placeholder="Search packages">
       </form>
-    </div>
-      <div>
-        <div>
-          <a href="/signup" id="signup" class="_9752c8b3 pa2 lh-copy br2 f6 no-underline fw5 black dim ph3 mr3">Join</a>
-          <a id="signin" class="_352269a0 pa1 lh-copy br2 f6 no-underline fw5 black dim" href="/login">Log In</a>
-        </div>
-      </div>       
-  </div>
+      <a type="submit" class="button-search">Search</a>
+      <a class="button-join" href="/signup" id="signup">Join</a>
+      <a class="button-login"  href="/login">Log In</a>      
+   </section>
   <link rel="stylesheet" href="./style.css" />
 </header>
 
 <body>
-<section>    
+<section id="top">    
       <h1>Build amazing things</h1>
-          <div>
-            <article>
+            <article class="text-top">
             Essential JavaScript development tools that help you go to market faster and build powerful applications using modern open source code.
             </article>
-              <div>
-                <div>
-                  <a href="/signup" class="undefined undefined _353dca9c _748f7b74 db mw5-ns center pv3 ph4 b no-underline white">See plans</a>
-                </div>
-                <div>
-                  <a href="/products/pro" class="undefined undefined aad94569 _748f7b74 db mw5-ns center pv3 ph4 b no-underline white">Join for free</a>
-                </div>
-              </div>
-             </div>
+            <div class="botones-top">
+             <a class="button-top1" href="/signup">See plans</a>               
+             <a class="button-top2" href="/products/pro">Join for free</a>
+            </div>
  </section>
 
-     <section>            
-            <img src="images\triangle-hexagon.svg"/>
+     <section id="middle">
+            <img src="images\triangle-hexagon.svg" alt="tringle hexagon"/>
             <h2>Bring the best of open source to your company</h2>
-            <article>
+            <article class="middle-text">
                 npm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it. Create an Org and get more out of the tools your team already knows and loves.
-            </article>      
+            </article>            
      </section>
 
-      <section>
-          <div>
+      <section id="advantages">
+          <div class="articulos">
               <article>
-                <img src="images\zero-configuration.svg"/>
-                <h2>Zero configuration</h2>
-                <p>Create an org, add your team, and start collaborating. Nothing to configure, set up, or manage</p>
+                <img src="images\zero-configuration.svg" alt="zero configuration"/>
+                <h3>Zero configuration</h3>
+                <p>Create an org, add your team, and start collaborating. Nothing to configure, set up, or manage.</p>
               </article>
               <article>
-                <img src="images\team-management.svg"/>
-                <h2>Team management</h2>
+                <img src="images\team-management.svg" alt="team management"/>
+                <h3>Team management</h3>
                 <p>Team management Control who has access to what modules within your team namespace using straightforward team management capabilities.</p> 
               </article>
               <article>
-                <img src="images\familiar-features.svg"/>
-                <h2>Familiar features</h2>
+                <img src="images\familiar-features.svg" alt="familiar features"/>
+                <h3>Familiar features</h3>
                 <p>Familiar features npm Orgs has 100% parity with all the public npm registry features your developers already use.</p>
               </article>
               <article>
-                <img src= "images\npm-audit.svg"/>
-                <h2>npm audit</h2>
+                <img src= "images\npm-audit.svg" alt="npm audit"/>
+                <h3>npm audit</h3>
                 <p>Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer.</p>
               </article>
-              <div>
-              <a href="/signup" class="undefined undefined _353dca9c _748f7b74 db mw5-ns center pv3 ph4 b no-underline white">Create an Org</a>
-              </div>
             </div>
+            <div>
+              <a class= "button" href="/signup" > Create an Org</a>
+              </div>
       </section>
 </body>
     
