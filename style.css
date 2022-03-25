@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
+html,body {
+  margin: 15px;
+}
+
 body {
   font-family: 'Poppins';
 }
@@ -37,11 +41,10 @@ header > div {
     margin-right: 1rem;
   }
 
-  
-
-
   .searchBar {
       width:auto;
+      height:40px;
+      margin:5px;
       display:flex;
       flex-grow: 2;
       padding: 5px;
@@ -50,6 +53,7 @@ header > div {
 
   .magniGlass{
       width: 20px;
+      height: 20px;
       background-color: #EEE7E6;
       padding: 2px;
   }
@@ -67,9 +71,101 @@ header > div {
       background-color:#fb3e44;
       color: white;
       border: solid #fb3e44;
-      padding: 3px;
+      padding: 10px;
   }
 
 
+.joinButton{
+  border: 1px solid grey;
+}
+
+.headerButtons {
+  display:flex;
+  justify-content: center;
+}
+
+.headerButtons a {
+  color: black;
+  text-decoration:none;
+  padding: 7px 15px;
+  margin:7px;
+}
+
+#intro {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 600px;
+  background-color: rgba(232,217,217,0.3);
+}
+
+h1 {
+  font-size: 5rem;
+  font-family: "Poppins" Condensed;
+  font-weight: 950;
+  line-height: 1.25;
+}
+
+.container{
+  width: 440px;
+}
+
+.textNpm{
+  flex-wrap: wrap;
+  text-align: center;
+  font-weight: 550;
+}
+
+.centralLinks{
+  display: flex;
+  justify-content: space-between;
   
-  
+}
+.centralLinks a {
+ text-decoration: none;
+ font-weight: 900;
+ margin-top: 20px;
+}
+
+.firstLink {
+  color:white;
+  background-color: #FB3B49;
+  box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+  padding: 10px 60px;
+}
+
+.secondLink{
+  color: black;
+  background-color: white;
+  padding: 10px 60px;
+}
+
+#advertise{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 600px;
+  background-color: white;
+}
+
+.hexagon{
+  width:200px;
+}
+
+h2 {
+  font-size: 2rem;
+  font-family: "Poppins" Condensed;
+  font-weight: 950;
+  text-align: center;
+  background-color:rgba(255,204,53,.4);
+  transform: skew(9deg,0deg);
+  font-style: italic;
+  width: 850px;
+}
+
+.box{
+  width: 800px;
+}
+
