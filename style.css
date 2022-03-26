@@ -4,13 +4,37 @@ body {
   font-family: 'Poppins';
 }
 
+header {
+  border: 2px solid black;
+}
 header > div {
+  border: 2px solid red;
+}
+section {
+  border: 2px solid darkblue;
+}
+nav {
+  border: 2px solid orange;
+}
+ul {
+  border: 2px solid purple;
+}
+div {
+  border: 8px solid red;
+}
+h1, h2 , h4 {
+  border: 5px solid brown;
+}
+article{
+  border: 10px solid yellow;
+}
+
+header  > div {
     padding: 0 25px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid lightgray;
-    height: 50px;
   }
   
   nav {
@@ -34,41 +58,7 @@ header > div {
     margin-right: 1rem;
   }
 
-
-  .form label{
-    color: rgba(0, 0, 0, .05);
-  }
-  .form input{
-    color:  rgba(0, 0, 0, .05);
-  }
-
-  .form button {
-      background-color: #fb3e44;
-      color: white;
-  }
-
-  #one {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-
-      height: 600px;
-      background-color: rgba(232, 217, 217,.3);
-
-  }
-
-  #one article {
-     
-
-  }
-
-  #one h1 {
-    font-weight: 800;
-    font-size: 70px;
-  }
-
-     .logo {
+  .logo {
     width: 100px;
     height: 20px;
     margin: 10px ;
@@ -80,27 +70,89 @@ header > div {
     margin-top: 10px ;
   }
 
+
+  form label{
+    color: rgba(0, 0, 0, .05);
+  }
+  form input{
+    color:  rgba(0, 0, 0, .05);
+  }
+
+  form button {
+      background-color: #fb3e44;
+      color: white;
+  }
+ .joinlogin {
+   display: flex;
+  }
+
+
+  header .lowerdiv {
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: stretch;
+	align-content: space-around;
+}
+
+
+  #one {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      height: 600px;
+      background-color: rgba(232, 217, 217,.3);
+      padding: 0 auto;
+      
+  }
+
+  #one h1 {
+    font-weight: 800;
+    font-size: 70px;
+  }
+  
+  article {
+   
+    text-align: justify;
+  }
+
+  .seeplans {
+    background-color: #FB3B49 ;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+  }
+
+  #two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    height: 600px;
+    background-color: rgba(232, 217, 217,.3);
+    padding: 0 auto;
+    
+}
+
+
+
   #two h2 {
         background-color: rgba(255, 204, 53, .4);
         transform: skew(9deg,0deg);
         font-style: italic;
-        margin-top: 100px;
-        margin-left: 30px;
-        margin-right: 30px;
+        margin: 0 auto;
+        padding: 5px 50px ;
 
   }
 
-  #two {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-  }
 
   #two img{
       width: 50%;
       height: 300px;
-      margin-top: 50px;
+      margin-top: 50px 50px;
       
   }
 
@@ -109,28 +161,47 @@ header > div {
       
   }
 
-#three > div {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+  #three h4 {
+    color: #ED1C24;
 
+  }
+
+
+  #three  {
+     display: flex;
+    align-items: stretch;
+    margin: 50px 50px 100px 50px;
+   
+  }
+
+ #three  div {
+  
+    padding: 10px;;
+ 
 }
 
-
-#three {
-    padding: 75px 0;
-    margin: 10px auto;
+.box-1 {
+flex: 1;
 }
+.box-2 {
+flex: 1;
+}
+.box-3 {
+flex: 1;
+}
+.box-4 {
+flex: 1;
+}
+
 
 #three img{
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 30px;
 }
 
 
 
-  .buttonorg button{
+  #three button {
     min-width: 50px;
     text-align: center;
     color: #fff;
