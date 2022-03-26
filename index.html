@@ -27,18 +27,23 @@
               </nav>
             </div>
           
-            <div>
+            <div class="container">
                 <img class="npm-logo" src="images/npm-logo.png"
                 alt="npm logo"/>
                 <form class="search-bar" action="/register" method="post"> 
                     <img id="magnifying-glass" src="images/magnifying-glass.png"
                 alt="magnifying-glass"/> 
-                    <input type="text" placeholder="Search packages">
+                    <input type="text"  name="search-bar" id="search" size=108 >
+                    <label>Search packages</label>
+                    
                     <button type="submit"> Search </button>
                 </form>    
-            <div>
-                <a class="button-top" href="#"> Join </a>
-                <a class="button-top" href="#"> Log in </a>
+                
+            <div class="button-header">
+                <ul>
+                <li><a id="button-join" href="#"> Join </a></li>
+                <li><a id="button-log" href="#"> Log in </a></li>
+                </ul>
             </div>
             </div>
           </header>
@@ -50,8 +55,10 @@
                     modern open source code.</p>
             </article>        
                 <div id="see-join">
-                    <a id="see-buton" href="#"> See plans </a>
-                    <a id="join-button" href="#"> Join for free </a>  
+                    <ul>
+                    <li><a id="see-buton" href="#"> See plans </a></li>
+                    <li><a id="join-button" href="#"> Join for free </a></li>  
+                    </ul>
                 </div>  
           </section>
           <section class="white-background" id="reasons-join">
@@ -81,7 +88,7 @@
                 </div>
                 <div>
                     <img src="images/npm-audit.svg" alt="npm-audit">
-                    <h4>npm audit</h4>
+                \    <h4>npm audit</h4>
                     <p> Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer.</p>
                 </div>
               </div>
