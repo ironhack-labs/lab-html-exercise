@@ -33,12 +33,12 @@ body {
     margin-right: 1rem;
   }
 
-  section > heading {
+  #catchy > heading {
     font-size: 5em;
     font-weight: bold;
   }
 
-  section > article {
+  #catchy > article {
     width: 600px;
     text-align: center;
     font-size: 1.5em;
@@ -71,3 +71,71 @@ body {
     color:black 
   }
 
+  #solution {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    height: 600px;
+  }
+
+  .triangle-hexagon {
+    width: 280px;
+    margin: 80px 0 40px;
+  }
+
+  #solution > heading {
+    font-style: italic;
+    font-size: 2.5em;
+    font-weight: bold;
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+    padding: 0 50px;
+  }
+
+  #solution > article {
+    width: 750px;
+    text-align: center;
+    font-size: 0.9em;
+    margin: 30px 0 130px 0;
+  }
+
+  #arguments > div {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 200px 100px;
+  }
+
+  #arguments > div > div {
+    display: flex;
+    flex-direction: column;
+    margin: 0 40px;
+  }
+  .arguments-img {
+    width: 30px;
+  }
+
+  #arguments div > div > heading {
+    color: #ED1C24;
+    font-weight: bold;
+  }
+
+  .text {
+    font-size: 0.8em;
+  }
+
+  .black-button {
+    background-color: black;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    color:white;
+    text-align: center;
+    text-decoration: none;
+    padding: 15px 150px;
+    margin: 0 0 50px;
+  }
+
+  #arguments {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
