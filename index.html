@@ -9,13 +9,15 @@
 
 
 <div id="header">
-            <div class="sec-derecha">
-                <img src = "images/black-heart.png" alt="black-heart">
-                <span>Node's Pastoral Musicians</span>
-            </div>
 
-            <nav class="menu-superior">
-                <ul class="lista-menu-superior">
+        <div class="menu">
+            <div class="sec-izquierda">
+                <img src = "images/black-heart.png" alt="black-heart" class="blackHeart">
+                <span clas ="npm">Neverending Pun Machine</span>
+            </div>
+    
+            <nav>
+                <ul>
                     <li> <a class="nav-bar-item" href="#"> npmm Enterprise</a> </li>
                     <li> <a class="nav-bar-item" href="#"> Solutions </a> </li>
                     <li> <a class="nav-bar-item" href="#"> Resources </a> </li>
@@ -24,27 +26,34 @@
                 </ul>
             </nav>
 
-            <div class="menu-inferior">
-                <div class="logo">
-                    <a  href="#"><img src = "images/npm-logo.png" alt="logonpm"></a>
-                </div>
-               
-                <div class="buscador">
-                    <form action="#" method="post">
-                        <img src = "images/magnifying-glass.png">
-                        <label for="search"></label>
-                        <input type="text" name="search" id="search" placeholder="Search packages">
-                        <button type="submit" class="bt-rojo">Search</button>
-                      </form>
+          </div>
 
-                </div>
+          <div class="menu-inferior">
 
-                <div class="bt-derecho">
-                        <a class="bt-join" href="#"> Join</a> 
-                        <a class="bt-login" href="#"> Log in </a>                     
-                </div>
+                      <div class="logo">
+                          <a  href="#"><img src = "images/npm-logo.png" alt="logonpm"></a>
+                      </div>
+            
+                      <div class="buscador">
+                          <form action="#" method="get">
+                            <div class="entrada-data">
+                                      <label for="search"></label>
+                                      <img src = "images/magnifying-glass.png">
+                                      <input type="text" name="search" id="search" class="search" placeholder="Search packages">
+                            </div>
+                                <button type="submit" class="bt-rojo">Search</button>
+                          </form>
+                      </div>
 
-            </div>
+                    <div class="bts-derecho">
+                            <a class="bt-join" href="#"> Join</a> 
+                            <a class="bt-login" href="#"> Log in </a>                    
+                    </div>
+         
+            
+          </div> 
+            
+          </div>
 </div>
 
 
@@ -56,9 +65,12 @@
           </article>
           
           <div class="caja-plans">
-            <button class="bt-rojo">See plans</button>
-            <a href="#">Join for free</a>
-
+            <div class="caja-bt-izq"> 
+                <a href="#" class="bt-plan">See plans</a>
+            </div>   
+             <div class="caja-bt-decho"> 
+                <a href="#" class="bt-join">Join for free</a>
+             </div>
           </div>
 
 
@@ -114,17 +126,16 @@
 
               <div class="colum">
                 <img src ="images/npm-audit.svg" alt="audit">
-                <h3>Familiar features</h3>
+                <h3>npm audit</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut eros nec magna aliquet finibus. Maecenas nec diam ac ligula scelerisque sodales id vitae ligula.
                 </p>
               
               
               </div>
-
-              <button class="bt-final" href ="#"> Create an Org</button>
-
-
-
+          </div>
+            <div class="final">
+                <a href ="#"> Create an Org</a>
+            </div>
 
           </div>
 
