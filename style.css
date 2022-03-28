@@ -1,1 +1,206 @@
+/** Style applicable to all the website **/
+
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+body {
+  font-family: 'Poppins';
+}
+
+/** Header of the website **/
+
+header > div {
+    padding: 0 25px;
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+  }
+
+  nav {
+    max-width: 700px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: black;
+    margin: 0 0 0 30px;
+  }
+  
+  .blackHeart-image {
+    width: 20px;
+    margin: 0 1rem 0 0;
+  }
+
+  .second-line {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+	  .logo-image {
+  	  width: 50px;
+   	  margin-right: 1rem;
+  	}
+
+    .search-packages-image {
+      background: url('https://assets.codepen.io/7802615/magnifying-glass.png') no-repeat left;
+	  	background-position: 15px;
+      background-color: rgb(245, 245, 245);
+      background-size: 20px;
+      height: 40px;
+      text-indent: 50px;
+			font-size: 16px;
+		  flex-grow: 1;
+    }
+  
+    .search-button {
+      background-color: #fb3e44;
+      color: white;
+			padding: 13px 20px 13px 20px;
+	  	border:none;
+			font-size: 16px;
+    }
+
+    .join {
+      padding:5px 20px 5px 20px;
+			margin: 0 30px 0 30px;
+			text-decoration:none;
+			color: black;
+      border-style: solid;
+      border-color: #708090;
+      border-width: 1.5px;
+      box-shadow: 1.5px 1.5px 1.5px #C0C0C0;
+    }
+
+    .login {
+			text-decoration: none;
+			color: black;
+    }
+
+/** Section 1 **/
+
+#general-information .container{
+	display:flex;
+	flex-direction: column;
+  align-items: center;
+}
+
+	.background-color-section-1 {
+		background-color: rgba(232,217,217,.3);
+		height: 500px;
+	}
+
+	#general-information h1 {
+		font-size: 50px;
+		font-weight: bolder;
+		padding: 30px 0 0 0;
+	}
+
+	#general-information p {
+		text-align: center;
+		max-width: 400px;
+		font-size: 16px;
+	}
+
+  	.hyperlinks-container {
+    	text-decoration: none;
+		text-align: center;
+		padding-top: 50px;
+  	}
+    	.see-plans {
+      		margin:0 15px;
+			font-size: 16px;
+			padding: 10px 50px 10px 50px;
+      		text-decoration: none;
+      		color: white;
+      		background-color: #fb3e44;
+      		box-shadow: 5px 5px rgba( 251, 62, 68, 0.3);
+  		  }
+
+    	.join-for-free {
+      		margin: 0 15px;
+			font-size: 16px;
+      		padding: 10px 40px 10px 40px;
+      		text-decoration: none;
+			font-weight: bold;
+			color: black;
+			background-color: white;
+			
+    	}
+
+/** Section 2 **/
+
+#team .container {
+	display:flex;
+	flex-direction: column;
+  	align-items: center;
+}
+
+	.hexagon-image {
+		width: 200px;
+		margin: 40px 0 0 0;
+	}
+
+	#team h2 {
+		background-color: rgba(255,204,53,.4);
+		font-style: italic;
+		text-align: center;
+		transform: skew(9deg,0deg);
+		padding: 0 20px 0 20px;
+		margin: 40px 0 30px 0;
+		font-size: 30px;
+	}
+
+	#team p {
+		text-align: center;
+		max-width: 600px;
+		margin: 50px 0 60px 0;
+	}
+
+/** Section 3 **/
+
+.products-container {
+	display: flex;
+	flex-direction: wrap;
+	justify-content: space-between;
+	flex-flow: row;
+	align-items: baseline;
+}
+	
+	.product-image {
+		width: 40px;
+	}
+
+  	#products h3 {
+		color: #ED1C24;
+	}
+
+	#products p {
+		padding-right: 50px;
+		max-width: 300px;
+	}
+
+	.button {
+		display: flex;
+		justify-content: center;
+		padding: 30px;
+	}
+
+	.Org-chart-button {
+		color: white;
+		background-color: black;
+		border:none;
+		padding: 15px 200px 15px 200px;
+		align-items: center;
+		box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+	}
 
