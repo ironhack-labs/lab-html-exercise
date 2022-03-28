@@ -46,27 +46,40 @@ nav a {
 }
 
 .magGlass {
-  width: 20px;
+  width: 30px;
   margin-right: 1rem;
 }
 
 #headerBottom {
-  padding: 25px;
+  padding: 15px;
   margin: 0 25px;
 }
 .input {
   background-color: rgba(0, 0, 0, 0.05); /*form label color*/
   border: none;
+  width: 800px;
+padding: 10px;
 }
 
 
 input[value="Search"] {
-  background-color: #fb3e44 /* form button background color*/
-  color: white; /* form button letters color*/
+  background-color: #fb3e44;
+  color: white; 
   border: none;
   padding: 10px;
+  
 }
 
+.links > a {
+  background-color: rgb(255, 255, 255);
+  padding: 5px 15px;
+  border: 1px solid  black ;
+color: #567070;
+}
+
+.links > a:last-child{
+  border: 0px solid;
+}
 /* FONT SIZE */
 h1 {
   font-size: 4em;
@@ -147,12 +160,12 @@ h2 {
 /* SECTION attributes*/
 
 .attributes {
-  background-color: #3e4bfb;
-display: flex;
+  background-color: #ffffff;
+padding: 0% 10%;
 }
 
 .attList { 
-  width: 80%;
+  padding-top: 80px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -161,7 +174,7 @@ display: flex;
 
 
 .attList >div {
-      margin: 80px 80px;
+      margin: 40px 40px;
     width: 750px;
 }
 
@@ -174,11 +187,16 @@ width: 50px;
 }
 
 .createAnOrg {
+text-align: center;
+}
+
+.createAnOrg > button{
+
+  font-size: 1.2em;
   color: white;
   background-color: rgb(0, 0, 0);
  box-shadow: 8px 8px 0 rgba(128,83,35,.2); 
-  padding: 10px 50px;
-  display: block;
-
-
+  padding: 10px 100px;
+  margin-top: 20px;
+  text-align: center;
 }
