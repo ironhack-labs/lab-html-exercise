@@ -85,37 +85,44 @@ header > div {
   background-color: #fb3e44;
   color: white;
   box-sizing: border-box;
-  height: 32px;
-  width: 59px;
+  height: 35px;
+  width: 75px;
   border: 1px solid;
   font-family: 'Poppins';
   margin-left: 0.5px;
   
 }
 
-/*não consigo alinhar os dois botões do sign up e do login não sei porquê!*/
 
-#button-header {
-  display: flex;
-  flex-flow: row;
-
-}
-
-#button-header li {
-  list-style: none;
+.join-button {
+  padding: 2px 15px;
+  border: 1px solid black;
+  box-shadow: 1px 1px 1px 1px #ccc;
+  height: fit-content;
+  margin-top: 10px;
   
 }
 
-#button-header a {
-  text-decoration: none;
-  color: black;
+
+.header-buttons {
+  display:flex;
+  justify-content: space-evenly;
 }
 
-#button-join {
-  padding: 5px 15px;
-  border: 1px solid black;
-  box-shadow: 1px 1px 1px 1px #ccc;
+.header-buttons a {
+  color: black;
+  box-sizing: border-box;
+  text-decoration:none;
+  padding: 7px 15px;
+ 
 }
+
+.second-line {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
 
 #general-presentation {
   display: flex; 
@@ -131,7 +138,6 @@ header > div {
 section h1 {
   font-size: 75px;
   font-weight: 900;
-
 }
 
 #paragraph-presentation {
@@ -192,7 +198,7 @@ section h1 {
   display: flex; 
   align-items: center;
   flex-direction: column;
-  height: 600px;
+  height: 400px;
   background-color: white; 
   line-height: 1.4em;
   margin-top: 3%;
@@ -202,10 +208,39 @@ section h1 {
   background-color: rgba(255,204,53,.4);
   transform: skew(9deg,0deg);
   font-style: italic;
-  font-size: 25px;;
+  font-size: 25px;
 }
 
 #reasons-join p {
   display: flex;
   text-align: center;
 }
+
+#features > div > article {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  text-align: left;
+  margin: 40px;
+  justify-content: center;
+}
+
+
+#features > div {
+  display: flex;
+  flex-direction: row; 
+  
+}
+
+#features > div > article > img {
+width:10%;
+display: flex;
+align-self: flex-start;
+}  
+
+#features > div > article > h4 {
+  color: #ED1C24;
+  font-weight: bold;
+  align-self: self-start;
+}
+
