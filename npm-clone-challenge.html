@@ -1,30 +1,112 @@
 <html>
-    <body>
-        <header>
-            <div>
-              <div>
-                <img class="blackHeart" src="images/black-heart.png" alt="black heart" />
-                <span> Nifty Penguin Magic </span>
-              </div>
-              <nav>
-                <ul>
-                  <li><a href="#"> npm Enterprise </a></li>
-                  <li><a href="#"> Products </a></li>
-                  <li><a href="#"> Solutions </a></li>
-                  <li><a href="#"> Resources </a></li>
-                  <li><a href="#"> Docs </a></li>
-                  <li><a href="#"> Support </a></li>
-                </ul>
-              </nav>
-            </div>
-          
-            <div>
-                <img class="logo" src="images/npm-logo.png" alt="npm logo"/>
-                <form action="#" method="post">
-                    <input type="search" id="query" name="q" placeholder="Search...">
-                    <button>Search</button>
-                </form>
-            </div>
-          </header>
-    </body>
-</html>
+ <head>
+  <title>NPM Clone</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+ <body>
+
+    <header>
+
+        <div>
+          <div>
+            <img class="blackHeart" src="LINK TO IMAGE GOES HERE" alt="black heart" />
+            <span> Nifty Penguin Magic </span>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="#"> npm Enterprise </a></li>
+              <li><a href="#"> Products </a></li>
+              <li><a href="#"> Solutions </a></li>
+              <li><a href="#"> Resources </a></li>
+              <li><a href="#"> Docs </a></li>
+              <li><a href="#"> Support </a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div>
+          <!-- add logo, search bar and buttons (or links and style them as buttons later) -->
+        <img class="element" src="images/npm-logo.png" alt="NPM-Logo">
+            <form class="form" action="javascript:">
+              <input class="input" name="package" type="text" placeholder="Search ">
+              <button class="input"><img src="images/" alt="Join for free"></button>
+            </form>
+            <p class="element">
+              <a href="javascript:;">sign up</a> or <a href="javascript:;">log in</a> 
+            </p>
+          </div>
+      </header>
+
+
+      <section class="top-floor">
+        <div class="content-1">
+
+          <h2 class="build">Build Amazing Things</h2>
+
+          <p class="para">Essential JavaScript development tools that help you <br> go to market faster and build powerful <br> applications using
+    modern open source code</p>
+
+          <div id="btn-divider"><a class="btn btn-red btn-red-shadow" href="">See plans</a> <a class="btn btn-white " href="">Join for free</a></div>
+
+
+        </div>
+
+      </section>
+
+
+
+      <section class="ground-floor">
+        <div class="content-1">
+
+          <h2 class="build2"> Bring the best of open source to your company      </h2>
+          <p class="para"> npm is the tool used by
+    over 11,000,000 JavaScript developers around the world. <br> Your developers already use it. Your company depends on it. <br>
+    Create an Org and get more out of the tools your <br> team already knows and loves         </p>
+        </div>
+
+      </section>
+
+
+
+      <section class="basement">
+        <div class="content-1">
+           <section id="features-container">
+      <div>
+        <div class="feat-card">
+          <img src="/images/zero-configuration.svg" alt="click image" />
+          <br />
+          <h3>Zero configuration</h3>
+          <p class="para">
+            Create an org, add your team, and start collaborating. Nothing to configure, set up, or manage.
+          </p>
+        </div>
+        <div class="feat-card">
+          <img src="/images/team-management.svg" alt="team" />
+          <br />
+          <h3>Team management</h3>
+          <p class="para">
+            Control who has access to what modules within your team namespace using straightforward team management capabilities.
+          </p>
+        </div>
+        <div class="feat-card">
+          <img src="/images/familiar-features.svg" alt="features" />
+          <br />
+          <h3>Familiar features</h3>
+          <p class = "para">npm Orgs has 100% parity with all the public npm registry features your developers already use.</p>
+        </div>
+        <div class="feat-card">
+          <img src="/images/npm-audit.svg" alt="audit" />
+          <br />
+          <h3>npm audit</h3>
+          <p class ="para">Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer.</p>
+        </div>
+      </div>
+      <a class="org-button" href="#">Create an Org</a>
+    </section>
+
+
+
+</body>
+
+
+ </html> 
