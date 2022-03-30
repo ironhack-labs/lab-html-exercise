@@ -38,38 +38,18 @@ header > div {
   }
 
   
- /*Buttonheader*/
+ /*Buttonheader
 
-  #buttonheader {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-end;
-    align-items: baseline;
-    align-content: stretch;
+#doublebutton {
+    
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: baseline;
+        align-content: center;
+    
 }
-
-/*input {
-    background-position: 10px center;
-    background-repeat: no-repeat;
-    border: 1px solid #ccc;
-
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    -ms-border-radius: 4px;
-    -o-border-radius: 4px;
-    border-radius: 4px;
-
-    padding: 10px 5px 10px 20px;
-    text-indent: 20px;
-
-    -webkit-transition: all 0.2s;
-    -moz-transition: all 2s;
-    transition: all 0.2s;
-
-    width: 200px;
-} */
-
 
 #join1 {
     color: black;
@@ -90,9 +70,69 @@ header > div {
     padding: 15px 20px;
     border: none ; 
     font-family: 'Poppins', 'sans-serif';
-    background-color: red;
+    background-color: #FB3B49;
+}
+*/
+
+.npm-logo {
+    width: 6em;
+    padding: 15px 10px;
 }
 
+.searchIcon {
+    height: 30px;
+    align-content: center;
+    padding: 10px;
+}
+
+.box {
+    background-color: #f2f2f2;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+input {
+    width: 200%;
+    height: 50px;
+    font-size: 120%;
+    border: none;
+    background-color: #f2f2f2;
+}
+
+#search1 {
+    background-color: #fb3e44;
+    color: #ffffff;
+    border: none;
+    height: 50px;
+    width: 100px;
+    float: left;
+    margin-left: 0px;
+}
+
+#join1 {
+    background-color: white;
+    border: 1px solid gray;
+    height: 50px;
+    width: 100px;
+    color: black;
+    margin-left: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#login {
+    background-color: white;
+    border: none;
+    height: 50px;
+    width: 100px;
+    color: black;
+    float: right;
+    margin-right: 5px;
+    width: 95px;
+    font-family: 'Poppins', sans-serif;
+}
 
 /* section1 */
 #section1 {
@@ -107,31 +147,59 @@ header > div {
 }
 
 /* heading build && buttons*/ 
+
+#section1  {
+    background-color: rgba(232,217,217,.3);
+    height: 600;
+
+}
 #build {
     font-family: 'Poppins', sans-serif;
-    font-size: 100px ;
+    font-size: 80px ;
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
         justify-content: center;
         align-items: stretch;
         align-content: stretch;
+        text-align: center;
+        margin-top: 100px ;
+}
+
+#buttonsheader {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: baseline;
+    align-content: center;
+
 }
 
 #plans {
     background-color: #FB3B49;
-    box-shadow: 8px, 8px, 0 rgba(251,59,73,.2);
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
     color: white ;
     padding: 15px 70px ;
     border: none;
+    font-family: 'Poppins', sans-serif;
+    justify-content: center;
+    align-items: stretch;
+    align-content: stretch;
+    text-align: center;
 }
 
 #join{
-    background-color: rgba(232,217,217,.3);
-    box-shadow: 8px, 8px, 0 rgba(251,59,73,.2);
+    background-color: white;
     color: black;
     padding: 15px 70px ;
     border: none;
+    margin-left: 20px;
+    justify-content: center;
+    align-items: stretch;
+    align-content: stretch;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
 }
 
 /*section 2*/
@@ -142,7 +210,7 @@ header > div {
     justify-content: center;
     align-items: center;
     align-content: center;
-
+    margin-top: 100px ;
 }
 
 #articles {
@@ -152,6 +220,8 @@ header > div {
     justify-content: center;
     align-items: stretch;
     align-content: stretch;
+
+
     
 }
 
@@ -165,7 +235,7 @@ h2 {
 h4 {
     color: red ;
     font-style: bold ;
-
+    text-align: center;
 }
 
 #h3 {
@@ -173,29 +243,48 @@ h4 {
     transform: skew(9deg,0deg);
     font-style: italic ;
     color: black ;
-    margin: 15px ;
     text-align: center;
+    margin-top: 30px ; 
 }
 
 p {
-    text-align: center;
-}
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+        margin-top: 20px;
+        margin-left: 50px;
+        margin-right: 50px ;
+    }
 
+    img { 
+        text-align: center ;
+        align-items: center ;
+        flex-wrap: nowrap;
+        display : flex ;
+    }
 
 /* footer create an org*/
 
-.create {
+#create {
     background-color: black ;
     box-shadow: 8px 8px 0 rgba(128,83,35,.2);
     color: white;
     font-family: 'Poppins', sans-serif;
     padding: 10px 164px ;
     border: none ;
-    text-align: center ;
     font-size: 15px;
-    display: inline-block;
-    position: center;
-    justify-content: center;
+
+}
+
+#footerbutton {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        text-align: center;
 }
 
 
