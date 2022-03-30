@@ -8,6 +8,16 @@ body {
 
 
 /* NAV-HEADER */
+
+#logoheader {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: baseline;
+	align-content: flex-start;
+}
+
 header > div {
     padding: 0 25px;
     display: flex;
@@ -21,15 +31,25 @@ header > div {
   }
   
   nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: baseline;
+        align-content: flex-start;
+        list-style-type: none;
+        margin: 10px;
+    
   }
   
   nav a {
     text-decoration: none;
     color: black;
+  }
+
+  nav a:hover {
+    box-shadow: inset 100px rgba(232,217,217,.3);
+    color: grey;
   }
   
   .blackHeart {
@@ -45,13 +65,13 @@ header > div {
     padding: 15px 10px;
 }
 
-.searchIcon {
+.magnifying {
     height: 30px;
     align-content: center;
     padding: 10px;
 }
 
-.box {
+.boxform {
     background-color: #f2f2f2;
     height: 50px;
     width: 100%;
@@ -78,6 +98,10 @@ input {
     margin-left: 0px;
 }
 
+#search1:hover { color: white  ;
+    background-color: #FB3B49;
+     }
+
 #join1 {
     background-color: white;
     border: 1px solid gray;
@@ -87,6 +111,11 @@ input {
     margin-left: 30px;
     font-family: 'Poppins', sans-serif;
 }
+
+#join1:hover { color: white  ;
+    background-color: #FB3B49;
+     }
+
 
 #login {
     background-color: white;
@@ -99,6 +128,10 @@ input {
     width: 95px;
     font-family: 'Poppins', sans-serif;
 }
+
+#login:hover { color: white  ;
+    background-color: #FB3B49;
+    }
 
 /* section1 */
 #section1 {
@@ -119,7 +152,7 @@ input {
     height: 600;
 
 }
-#build {
+#header2 {
     font-family: 'Poppins', sans-serif;
     font-size: 80px ;
         display: flex;
@@ -155,6 +188,11 @@ input {
     text-align: center;
 }
 
+#plans:hover { color: black  ;
+    background-color: rgba(128,83,35,.2);
+    box-shadow: black ;
+}
+
 #join{
     background-color: white;
     color: black;
@@ -167,6 +205,11 @@ input {
     text-align: center;
     font-family: 'Poppins', sans-serif;
 }
+
+#join:hover { color: black  ;
+    background-color: #FB3B49;
+    box-shadow: black ; }
+
 
 /*section 2*/
 #section2 {
@@ -186,9 +229,6 @@ input {
     justify-content: center;
     align-items: stretch;
     align-content: stretch;
-
-
-    
 }
 
 /*text */
@@ -226,12 +266,7 @@ p {
         margin-right: 50px ;
     }
 
-    img { 
-        text-align: center ;
-        align-items: center ;
-        flex-wrap: nowrap;
-        display : flex ;
-    }
+
 
 /* footer create an org*/
 
@@ -246,6 +281,7 @@ p {
 
 }
 
+
 #footerbutton {
         flex-direction: column;
         flex-wrap: nowrap;
@@ -253,5 +289,9 @@ p {
         text-align: center;
 }
 
+ #create:hover { color: black  ;
+    background-color: rgba(128,83,35,.2);
+    box-shadow: black ;
 
+}
 
