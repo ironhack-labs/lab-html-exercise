@@ -48,14 +48,9 @@ header > div {
 }
 
 .search-bar {
-    height: 30px;
-    outline: none;
-    padding: 2px;
-    width: 120%;
-    color: grey;
     display:flex;
     align-items: center;
-    box-sizing: border-box;
+  
 }
 
 .search-bar > input {
@@ -69,7 +64,7 @@ header > div {
 }
 
 .search-bar > label {
-   color: black;
+   color: gray;
    position: absolute;
    margin-left: 2rem;
 }
@@ -86,7 +81,7 @@ header > div {
   color: white;
   box-sizing: border-box;
   height: 35px;
-  width: 75px;
+  width: 90px;
   border: 1px solid;
   font-family: 'Poppins';
   margin-left: 0.5px;
@@ -95,12 +90,20 @@ header > div {
 
 
 .join-button {
-  padding: 2px 15px;
   border: 1px solid black;
   box-shadow: 1px 1px 1px 1px #ccc;
-  height: fit-content;
-  margin-top: 10px;
-  
+  box-sizing: border-box;
+  margin: 3px 10px 3px 40px;
+  height: 25px;
+  text-align: center; 
+  display: flex;
+  align-items: center;
+}
+
+.login-button {
+display: flex;
+align-items: center;
+width: 90px;
 }
 
 
@@ -219,21 +222,18 @@ section h1 {
 #features > div > article {
   display: flex;
   flex-direction: column;
-  align-items: left;
   text-align: left;
-  margin: 40px;
   justify-content: center;
+  padding: 50px; 
 }
-
 
 #features > div {
   display: flex;
   flex-direction: row; 
-  
 }
 
 #features > div > article > img {
-width:10%;
+width: 10%;
 display: flex;
 align-self: flex-start;
 }  
@@ -242,6 +242,11 @@ align-self: flex-start;
   color: #ED1C24;
   font-weight: bold;
   align-self: self-start;
+}
+
+#features > div > article > p {
+  display: flex;
+  align-items: flex-start;
 }
 
 .button-create {
