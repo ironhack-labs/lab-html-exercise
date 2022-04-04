@@ -9,13 +9,13 @@
 </head>
 <body>
     <header>
-        <div>
-            <div>
+        <div id="upper-header">
+            <div id="nifty-blackheart">
                 <img class = "blackHeart" src="/images/black-heart.png" alt="black heart">
                 <span>Nifty Penguin Magic</span>
             </div>
 
-            <nav>
+            <nav id="nav-bar">
                 <ul>
                     <li><a href="#"> npm Enterprise </a></li>
                     <li><a href="#"> Products </a></li>
@@ -31,15 +31,14 @@
         <div class="lower-header">
             <img class="logo" src="/images/npm-logo.png" alt="Company logo">
             <form action="">
-                <!-- <img src="/images/magnifying-glass.png" alt="magnifying-glass"> -->
                 <input class="search-box" type="text" placeholder="Search packages">
-                <button class="btn-search">Search</button>
+                <button class="btn-search" type="submit">Search</button>
                 
             </form>
             
             <div class="join-login">
-                <button><a href="">Join</a></button>
-                <a href="">Log In</a>
+                <button id="join-btn"><a href="">Join</a></button>
+                <button id="login-btn"><a href="">Log In</a></button>
             </div>
         </div>
 
@@ -47,18 +46,19 @@
 
     <section id="section-1">
 
-        <h1>
+        <h1 id="heading-1">
             Build amazing things
         </h1>
 
-        <div>
-            <p>Essential JavaScript development tools that help you go to market faster and build powerful applications using
-                modern open source code.</p>
+        <article id="sec1-text">
+            Essential JavaScript development tools that help you go to market faster and build powerful applications using
+            modern open source code.
+        </article>
 
-        
+        <div id="plans-join">
             <ul class="ul-display">
-                <li><a href="#">See plans</a></li>
-                <li><a href="#">Join for free</a></li>
+                <li id="plans" ><a href="#">See plans</a></li>
+                <li id="join"><a href="#">Join for free</a></li>
             </ul>
         </div>
     
@@ -67,15 +67,13 @@
     <section id="section-2">
 
         
-            <img class="img-hex"  src="/images/triangle-hexagon.svg" alt="hexagon">
+        <img class="img-hex"  src="/images/triangle-hexagon.svg" alt="hexagon">
             
-        <h2>Bring the best of open source to your company</h2>
+        <h2 id="heading-2">Bring the best of open source to your company</h2>
 
-        <article>
-            <p>npm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it.
-                Create an Org and get more out of the tools your team already knows and loves.
-            </p>
-
+        <article id="sec2-text">
+            npm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it.
+            Create an Org and get more out of the tools your team already knows and loves.
         </article>
 
     </section>
