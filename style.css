@@ -39,6 +39,7 @@ nav a {
 }
 
 header .header2 {
+    height: 50px;
     display: flex;
     justify-content: space-between;
     box-shadow: 0 2px 10px lightgray;
@@ -106,9 +107,9 @@ header .login a {
     padding-left: 10px;
 }
 
-.hero {
-    background-color: #f8f4f4;
-    height: 600px;
+#hero {
+    background-color: rgba(232,217,217,.3);
+    height: 650px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -122,9 +123,31 @@ h1 {
     font-weight: 700;
 }
 
-.hero article {
+#hero article {
     width: 40%;
     font-size: 1.35em;
     text-align: center;
-    padding: ;
+    padding: 0 0 70px 0;
+}
+
+#hero > div {
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#hero a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.2em;
+    font-weight: 800;
+    background-color: white;
+    padding: 15px 75px;
+}
+
+#hero .btn-red-shadow {
+    color: white;
+    background-color: #fb3e44;
+    box-shadow: 7px 7px rgb(251,62,68,0.25);
 }
