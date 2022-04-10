@@ -5,18 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NPM Clone</title>
+		<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 	<!-- Header x 2 -->
 
-	<header>
+	<header class="header">
 
 		<!-- Logo + Nav -->
 
 		<div>
 			<div>
-				<img class="blackheart" src="images/black-heart.png" alt="black heart" />
+				<img class="blackHeart" src="images/black-heart.png" alt="black heart" />
 				<span>Nifty Penguin Magic</span>
 			</div>
 			<nav>
@@ -33,15 +34,19 @@
 		
 		<!-- Logo + Search + Log In -->
 
-		<div>
-			<img class="logo" src="images/npm-logo.png" alt="npm logo" />
-			<form action="/search_page">
-				<img class="search-icon" src="images/magnifying-glass.png" alt="search icon">
-				<input type="text" placeholder="Search Packages">
+		<div class="header2">
+			<img class="npm-logo" src="images/npm-logo.png" alt="npm logo" />
+			<form class="search-bar" action="/search_page">
+				<div>
+					<label for="search"><img class="search-icon" src="images/magnifying-glass.png" alt="search icon"></label>
+					<input type="text" id="search" placeholder="Search packages">
+				</div>
 				<button type="submit">Search</button>
 			</form>
-			<a href="#">Join</a>
-			<a href="#">Log In</a>
+			<div class="login">
+				<a class="join" href="#">Join</a>
+				<a href="#">Log In</a>
+			</div>
 		</div>
 	</header>
 
@@ -59,7 +64,7 @@
 
 	<!-- Section 2 - Additional Info -->
 
-	<section class="hero">
+	<section class="hero2">
 		<img src="images/triangle-hexagon.svg" alt="triangle hexagon icon">
 		<h2>Bring the best of open source to your company</h2>
 		<article>npm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers already use it. 
@@ -68,7 +73,7 @@
 
 	<!-- Section 3 - Features -->
 
-	<section>
+	<section id="features">
 		<div>
 			<div class="features-box">
 				<img src="images/zero-configuration.svg" alt="zero configuration icon">
