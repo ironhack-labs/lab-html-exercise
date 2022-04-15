@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins|Poppins:700');
+@import url('https://fonts.googleapis.com/css?family=Poppins|Poppins:500,600');
 
 html,
 body {
@@ -58,7 +58,7 @@ form input {
 }
 
 form button {
-    background-color: #EC3946;
+    background-color: #FB3B49;
     border: none;
     color: white;
     padding: 10px 15px;
@@ -89,12 +89,13 @@ div a {
 
 
 #section1 {
+    box-shadow: inset 0 6px 4px -4px #ddd;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     background-color: #F7F4F4;
-    padding: 40px 0;
+    height: 550px;
 }
 
 #section1 h1 {
@@ -111,9 +112,9 @@ div a {
 }
 
 .links {
-    width: 600px;
+    width: 400px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     margin: 20px 0;
 }
 
@@ -124,10 +125,10 @@ div a {
 }
 
 #see-plans {
-    background-color: #EC3946;
+    background-color: #FB3B49;
     color: white;
     font-weight: 700;
-    box-shadow: 6px 6px 1px #F2C5CD;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
 
 }
 
@@ -138,13 +139,75 @@ div a {
 
 }
 
+#section2 {
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+}
 
+#section2 > * {
+    padding: 20px 0;
+}
 
+#section2 h2 {
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+    font-style: italic;
+    padding: 0 20px;
+
+}
+
+#section2 article {
+    width: 550px;
+    text-align: center;
+}
 
 #section2 img {
-    width: 50px;
+    width: 200px;
+    padding: 30px 0;
+}
+
+
+#section3 {
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#section3 h5 {
+    color: #ED1C24;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+#section3 p {
+    width: 250px;
+}
+
+.four-div {
+    width: 1200px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
 }
 
 #section3 img {
-    width: 50px;
+    height: 40px;
+}
+
+#section3 button {
+    margin-top: 50px;
+    width: 350px;
+    height: 50px;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    background-color: black;
+    color: white;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
 }
