@@ -3,12 +3,15 @@
 body {
   font-family: 'Poppins';
 }
+/*HEADER*/
+/* DIV 1*/
 header > div {
     padding: 0 25px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid lightgray;
+    flex-direction: row;
   }
   
   nav {
@@ -31,3 +34,127 @@ nav a {
     width: 20px;
     margin-right: 1rem;
   }
+
+  /* DIV 2*/
+  #barra-dos{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1% 0;
+  
+  }
+  .logo{
+      width: 100px;
+  }
+  .lupa{
+      width: 20px;
+  }
+  #barra-dos input{
+    height: 20px;
+    outline: none;
+    padding: 3px;
+  }
+  .boton-buscar{
+    background-color: #fb3e44;
+    color: white;
+    text-decoration: none;
+    border: none;
+    padding: 15px 20px;
+
+  }
+  #join-log > a{
+    text-decoration: none;
+    color: black;
+    margin: 0 10px;
+  }
+  
+
+/*SECCION 1*/
+#seccion-uno{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 600px;
+  background-color: rgba(232,217,217,.3);
+}
+#seccion-uno > h1{
+  font-size: 4em;
+}
+#seccion-uno > article{
+  width: 30%;
+}
+#seccion-uno a{
+  padding: 10px 30px;
+  margin: 5px;
+  text-decoration: none;
+}
+.btn-see{
+  background-color: #FB3B49;
+  color: white;
+  box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+}
+.btn-join{
+  color: black;
+}
+/*SECCION 2*/
+#seccion-dos{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 5%;
+  
+}
+#seccion-dos > h2{
+  background-color: rgba(255,204,53,.4);
+  transform: skew(9deg,0deg);
+  font-style: italic;
+  padding: 0 30px;
+}
+#seccion-dos > article{
+  width: 40%;
+}
+#seccion-dos > img{
+  width: 300px;
+
+}
+/*SECCION 3*/
+#seccion-tres{
+display: flex;
+flex-direction: column;
+align-items: center;
+margin: 50px 5% 100px 5%;
+}
+#cajas{
+  display: flex;
+ 
+}
+#cajas > div{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 20px 20px;
+  width: 50%;
+}
+#cajas > div img{
+  width: 30px;
+}
+#cajas > div h3{
+  color: #ED1C24;
+}
+
+
+#seccion-tres > a{
+  
+  width: 15%;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px 30px;
+  box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+  margin: 5% 0 5% 0;
+  
+}
