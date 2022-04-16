@@ -40,7 +40,7 @@ header > div {
       width: 20px;
   }
   button{
-
+        flex-grow: 1;
         background-color:#fb3e44;
         color: white;
         font-size: 1em;
@@ -50,7 +50,7 @@ header > div {
       }
     
       form{
-          width: 100%;
+          flex-grow: 1;
           height: 30px;
           color: rgba(0,0,0,.05);
         flex-direction: row;
@@ -60,42 +60,52 @@ header > div {
         align-content: stretch;
     }
     input{
-        width:100%;
+        width:85%;
         background: url(/Users/georgekutsia/Desktop/final-assestment/lab-html-exercise/images/magnifying-glass.png) left no-repeat;
         background-size: 20px;
         padding-left: 25px;
         height: 30px;
-        border-radius: px;
     }
+     /*section 1*/
     .section1{
         background-color: rgba(232,217,217,.3) ;
         height: 600px;
         display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
+        justify-content: space-evenly;
+        flex-wrap:wrap;
+        align-content: stretch;
     }
     h1{
         text-align: center;
-        font-size: 5.5em;
+        align-items: stretch;
+        font-size: 4.5em;
         font-style: bold;
-        padding-top: 1px;
+        position: top;
+        flex-basis: auto;
+        margin: 5 0 5 0;
     }
     .art1{
-padding-left: 100px;
-padding-right: 100px;
-
+padding-left: 400px; /*so this is like this so the see plans and join free appear below... its just a mess sorry im new */
+padding-right: 400px;
+display: inline-block;
+margin-bottom: 20px;
+flex-basis: 60%;
+display: inline-block;
+margin-right: 20px;
+width: 440px;
+text-align: center;
     }
+    
     .seeplans{
 background-color:#FB3B49 ;
 color:white;;
 text-decoration: none;
 font-size: 1.7em;
-text-align: center;
+text-align: stretch;
 border: 2px solid #EEE;
 box-sizing: border-box;
 box-shadow: 8px 8px 0 rgba(251,59,73,.2);
-padding: 10px;
+padding: 15px 70px 15px 70px;
 width: 304px;
     }
     .joinfree{
@@ -110,3 +120,46 @@ width: 304px;
         padding: 20px;
         width: 40%;
     }
+    /*section 2*/
+    .section2{
+        height: 600px;
+        display: flex;
+        justify-content: center;
+        flex-wrap:wrap;
+        align-items: center;
+        flex-direction: stretch;
+        align-items: center;
+        font-size: 1.7em;
+        text-align: center;
+        padding: 20px
+    }
+    .hexalogo{
+        position: relative;      /*not really happy how i solved this positioning, probably there is a better way*/
+        left: 10px;
+        bottom: 30px;
+        width: 200px;
+        margin-bottom: 1rem;
+        padding:1px 1px;
+        align-items: flex-start;
+        margin: 1px 0px 1px 0px;
+    }/* */
+    h2{
+        font-size: 40px;
+        background-color: rgba(255,204,53,.4) ;   /* Not shure how to make it exactly like in the image... like some letters hanging below the background*/
+        transform: skew(9deg,0deg);
+        font-style: italic;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .art2{
+     font-size: 17px;
+        display: inline-block;
+        margin-bottom: 20px;
+        flex-basis: 60%;
+        display: inline-block;
+        margin-right: 20px;
+        width: 200px;
+        text-align: center;
+    }
+
+    /*section 3*/
