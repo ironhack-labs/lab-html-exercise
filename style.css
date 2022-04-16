@@ -38,21 +38,38 @@ nav a {
   /* DIV 2*/
   #barra-dos{
     display: flex;
+    justify-content:space-between;
     flex-wrap: wrap;
-    margin: 1% 0;
-  
-  }
+    align-items: center;
+    }
   .logo{
-      width: 100px;
-  }
-  .lupa{
-      width: 20px;
+    width: 100px;
   }
   #barra-dos input{
     height: 20px;
     outline: none;
     padding: 3px;
   }
+
+  #barra-dos > form{
+    width: 70%;
+    text-align: center;
+  }
+  #barra-dos > form > input{
+    height: 45px;
+    outline: none;
+    padding: 3px;
+    width: 80%;
+    background-color: rgba(0,0,0,.05);
+    border: none;
+  }
+  #lupa-input{
+    background-image: url(/images/magnifying-glass.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 25px;
+    width: 100%;
+    }
   .boton-buscar{
     background-color: #fb3e44;
     color: white;
@@ -66,6 +83,14 @@ nav a {
     color: black;
     margin: 0 10px;
   }
+  .join{
+    border: 1px solid;
+    padding: 10px 20px;
+  }
+  .log{
+    padding: 10px 5px;
+  }
+
   
 
 /*SECCION 1*/
