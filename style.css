@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+/* COLOR SCHEME
+ * [1] Light gray:  #F2F2F2
+ * [2] Red:         #FB3E44
+ */
+
+/* DEBUG */
+* {
+    border:                 thin none black;
+}
+
+/* GLOBAL RULES */
+body {
+    font-family:            "Poppins", Helvetica, sans-serif;
+}
+
+/* HEADER
+ * The header is splitted into two "lines" : .header-top and .header-bottom.
+ */
+ 
+.header-top {
+    display:                flex;
+    justify-content:        space-between;
+    padding:                0px 32px;
+    border-bottom:          1px solid #F2F2F2;    
+}
+    /* Top-left heard and title */
+    #heart-picto {
+        height:                 15px;
+        padding-right:          16px;
+    }
+
+    #header-title {
+        display:                flex;
+        align-items:            center;
+        font-size:              13px;
+    }
+
+    /* Top-right navigation links */
+    .header-top > nav > ul {
+        display:                flex;
+        list-style-type:        none;
+    }
+
+    .header-top > nav > ul > li > a {
+        font-size:              14px;
+        color:                  black;
+        text-decoration:        none;
+        padding:                10px;           
+    }
+
+/* .header-bottom is made from 3 flex items: #npm-logo, #search-bar and #auth. */
+.header-bottom {
+    display:                flex;
+    justify-content:        space-between;
+    align-items:            center;
+    padding:                12px 32px;
+}
+
+    /* Bottom-right NPM logo */
+    #npm-logo {
+        height:                 20px;
+        padding:                11px 16px 9px 0;
+    }
+
+    /* The #search_bar is built from the whole form (defined as a flexbox
+     * The #search-input-field is a growable flex item.
+     */
+    #search-bar {
+        display:                flex;
+        justify-content:        flex-start;
+        height:                 40px;
+        align-items:            stretch;
+        flex-grow:              1;
+        padding:                0 32px 0 0;
+    }
+
+        #magnifying-glass {
+            background-color:       #F2F2F2;
+            padding:                14px;
+        }
+
+        #search-input-field {
+            font-family:            monospace;
+            border-style:           none;
+            background-color:       #F2F2F2;
+            flex-grow:              1;
+        }
+
+        #search-button {
+            font-size:              14px;
+            font-weight:            bold;
+            color:                  white;
+            border-style:           none;
+            background-color:       #FB3E44;
+            padding:                0px 16px;
+        }
+
+    /* User authentication links */
+    #auth > a {
+        text-decoration:            none;
+    }
+
+    #join-link {
+        font-size:              14px;
+        color:                  black;
+        border:                 2px solid #F2F2F2;
+        padding:                7px 20px;
+    }
+
+    #login-link {
+        font-size:              14px;
+        color:                  black;
+        padding:                5px 20px;
+    }
+
+/* SECTION #1: OFFER */
+.offer {
+
+}
+
+/* SECTION #2: PITCH */
+.pitch {
+
+}
+
+/* SECTION #3: PRODUCT */
+.product {
+
+}
