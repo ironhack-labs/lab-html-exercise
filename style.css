@@ -1,7 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 /* COLOR SCHEME
- *      Color               Value                   Main elements
+ *
+ *      COLOR               VALUE                   MAIN ELEMENT
  * [1]  Light gray:         #F2F2F2                 Search bar
  * [2]  Red #1:             #FB3E44                 "Search" button
  * [3]  Light pale silver:  rgba(232,217,217,.3)    Section #1 background
@@ -16,7 +17,7 @@
 /* GLOBAL RULES */
 body {
     font-family:            "Poppins", Helvetica, sans-serif;
-    margin:                 30px;
+    margin:                 8px 30px;
 }
 
 h1 {
@@ -27,10 +28,18 @@ h1 {
     line-height:            100px;
 }
 
+h2 {
+    font-size:              35px;
+    font-weight:            600;
+    margin:                 0;
+    padding:                0;
+}
+
 /* HEADER
  * The header is splitted into two "lines" : .header-top and .header-bottom.
  */
  
+ /* First line: .header-top */
 .header-top {
     display:                flex;
     justify-content:        space-between;
@@ -63,7 +72,8 @@ h1 {
         padding:                10px;           
     }
 
-/* .header-bottom is made from 3 flex items: #npm-logo, #search-bar and #auth. */
+/* Second line: .header-bottom.
+ * .header-bottom is made from 3 flex items: #npm-logo, #search-bar and #auth. */
 .header-bottom {
     display:                flex;
     justify-content:        space-between;
@@ -74,7 +84,7 @@ h1 {
     /* Bottom-right NPM logo */
     #npm-logo {
         height:                 20px;
-        padding:                11px 16px 9px 0;
+        padding:                13px 16px 7px 0;
     }
 
     /* The #search_bar is built from the whole form (defined as a flexbox
@@ -83,7 +93,7 @@ h1 {
     #search-bar {
         display:                flex;
         justify-content:        flex-start;
-        height:                 40px;
+        height:                 44px;
         align-items:            stretch;
         flex-grow:              1;
         padding:                0 32px 0 0;
@@ -103,11 +113,11 @@ h1 {
 
         #search-button {
             font-size:              14px;
-            font-weight:            bold;
+            font-weight:            500;
             color:                  white;
             border-style:           none;
             background-color:       #FB3E44;
-            padding:                0px 16px;
+            padding:                0px 18px;
         }
 
     /* User authentication links */
@@ -128,7 +138,10 @@ h1 {
         padding:                5px 20px;
     }
 
-/* SECTION #1: OFFER */
+/* SECTION #1: OFFER
+ * The .offer section is a vertical stack of 3 element: a h1 heading, #value-proposition and #offer-links.
+ * The section background includes a gradient border-top.
+ */
 .offer {
     display:                flex;
     height:                 593px;
@@ -146,13 +159,14 @@ h1 {
         padding:                20px 0 40px 0;
     }
 
+    /* #offer-links wraps #see-plans-link and #join-for-free-link into a dedicated flexbox. */
     #offer-links {
         display:                flex;
         flex-direction:         row;
         justify-content:        center;
-        /*padding:                40px 0;*/
     }
 
+        /* The .link class is specified to gather common properties of the two links. */
         #offer-links > .link {
             font-size:              18px;
             font-weight:            bold;  
@@ -178,10 +192,39 @@ h1 {
         }
 
 
-/* SECTION #2: PITCH */
+/* SECTION #2: PITCH
+ * The .pitch section is a vertical stack of 3 elements : #triangle-hexagon, #pitch-title-container and a paragraph.
+ */
 .pitch {
-
+    display:                flex;
+    flex-direction:         column;
+    justify-content:        center;
+    align-items:            center;
+    height:                 600px;
+    text-align:             center;
 }
+
+    #triangle-hexagon {
+        height:             250px;
+        padding-bottom:     60px;
+    }
+
+    /* The #pitch-title-container specify the skewed background behind the title. */
+    #pitch-title-container {
+        background-color:       rgba(255,204,53,.4);
+        transform:              skew(9deg,0deg);
+    }
+
+    /* The title is skewed the other way around to get back into its initial positioning. */
+    #pitch-title-container > h2 {
+        padding:                0px 30px;
+        transform:              skew(-9deg);
+    }
+
+    .pitch > p {
+        padding-top:            25px;
+        width:                  54%;
+    }
 
 /* SECTION #3: PRODUCT */
 .product {
