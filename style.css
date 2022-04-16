@@ -1,3 +1,5 @@
+
+/*Apologize for about what are you going to see here... I tried so many weir stuff.. sorry*/
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
 body {
@@ -48,7 +50,18 @@ header > div {
         text-align: center;
         text-decoration: none;
       }
-    
+.join{
+color: black;
+text-decoration: none;
+border: solid;
+padding: 0 10px 0 10px;
+margin-left: 10px;
+}
+.login{
+    color: black;
+    text-decoration: none;
+    padding: 0 10px 0 10px;
+}
       form{
           flex-grow: 1;
           height: 30px;
@@ -58,9 +71,10 @@ header > div {
         justify-content: space-between;
         align-items: center;
         align-content: stretch;
+        
     }
     input{
-        width:85%;
+        width:80%;    /* not happy with this thing... but looks almost like...*/
         background: url(/Users/georgekutsia/Desktop/final-assestment/lab-html-exercise/images/magnifying-glass.png) left no-repeat;
         background-size: 20px;
         padding-left: 25px;
@@ -69,7 +83,7 @@ header > div {
      /*section 1*/
     .section1{
         background-color: rgba(232,217,217,.3) ;
-        height: 600px;
+        height: 400px;
         display: flex;
         justify-content: space-evenly;
         flex-wrap:wrap;
@@ -80,9 +94,7 @@ header > div {
         align-items: stretch;
         font-size: 4.5em;
         font-style: bold;
-        position: top;
-        flex-basis: auto;
-        margin: 5 0 5 0;
+        margin: 30px 0 5px 0;
     }
     .art1{
 padding-left: 400px; /*so this is like this so the see plans and join free appear below... its just a mess sorry im new */
@@ -99,30 +111,31 @@ text-align: center;
     .seeplans{
 background-color:#FB3B49 ;
 color:white;;
-text-decoration: none;
+text-decoration: none; /*Dont know why there is an underline for some of them...*/
 font-size: 1.7em;
 text-align: stretch;
 border: 2px solid #EEE;
 box-sizing: border-box;
 box-shadow: 8px 8px 0 rgba(251,59,73,.2);
-padding: 15px 70px 15px 70px;
+padding: 10px 70px 10px 70px;
 width: 304px;
     }
     .joinfree{
-        font-size: 1.3em;
+        font-size: 1.7em;
+        background-color: white;
         color:black;
         text-decoration: none;
         text-align: center;
         border: 2px solid #EEE;
-        border-radius: 20px;
         box-sizing: border-box;
         box-shadow: 2px 2px 10px 0 #EEE;
-        padding: 20px;
+        padding: 10px 70px 10px 70px;
         width: 40%;
+        margin-left: 20px;
     }
     /*section 2*/
     .section2{
-        height: 600px;
+        height: 400px;
         display: flex;
         justify-content: center;
         flex-wrap:wrap;
@@ -136,8 +149,7 @@ width: 304px;
     .hexalogo{
         position: relative;      /*not really happy how i solved this positioning, probably there is a better way*/
         left: 10px;
-        bottom: 30px;
-        width: 200px;
+        width: 170px;
         margin-bottom: 1rem;
         padding:1px 1px;
         align-items: flex-start;
@@ -163,3 +175,45 @@ width: 304px;
     }
 
     /*section 3*/
+
+    .section3{
+        display:flex;
+
+      }
+      .pictures{
+          width: 40px;
+      }
+      .imges{
+          width: 20px;
+          align-items: left;
+
+      flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: stretch;
+        font-size: 0.7em;
+        text-align:left;
+        box-sizing: border-box;
+        padding: 10px;
+        width: 100%;
+      }
+      h3{
+          color:#ED1C24;
+      }
+
+      .last{
+          text-align: center;
+          align-items: center;
+          font-size: 20px;
+          background-color: black;
+          box-sizing: border-box;
+          background-size: 50px 20px 20px 20px;
+          box-shadow:8px 8px 0 rgba(128,83,35,.2) ;
+          color: white;
+          text-decoration: none;
+          padding: 10px 120px 10px 120px;
+          width: fit-content;
+          margin-left: 36%; /*cant believe this can be done like this. for shure not the best way */
+      }
+
+
