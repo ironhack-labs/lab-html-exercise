@@ -7,6 +7,7 @@
  * [2]  Red #1:             #FB3E44                 "Search" button
  * [3]  Light pale silver:  rgba(232,217,217,.3)    Section #1 background
  * [4]  Red #2:             #FB3B49                 "See plans" button
+ * [5]  Red #3:             #ED1C24                 Section #3 headings
  */
 
 /* DEBUG */
@@ -35,6 +36,10 @@ h2 {
     padding:                0;
 }
 
+h3 {
+
+}
+
 /* HEADER
  * The header is splitted into two "lines" : .header-top and .header-bottom.
  */
@@ -42,6 +47,7 @@ h2 {
  /* First line: .header-top */
 .header-top {
     display:                flex;
+    flex-wrap:              wrap;
     justify-content:        space-between;
     padding:                0px 32px;
     border-bottom:          1px solid #F2F2F2;    
@@ -61,6 +67,7 @@ h2 {
     /* Top-right navigation links */
     .header-top > nav > ul {
         display:                flex;
+        flex-wrap:              wrap;
         list-style-type:        none;
     }
 
@@ -76,6 +83,7 @@ h2 {
  * .header-bottom is made from 3 flex items: #npm-logo, #search-bar and #auth. */
 .header-bottom {
     display:                flex;
+    flex-wrap:              wrap;
     justify-content:        space-between;
     align-items:            center;
     padding:                12px 32px;
@@ -125,17 +133,14 @@ h2 {
         text-decoration:            none;
     }
 
-    #join-link {
+    #auth .link {
         font-size:              14px;
         color:                  black;
-        border:                 2px solid #F2F2F2;
         padding:                7px 20px;
     }
 
-    #login-link {
-        font-size:              14px;
-        color:                  black;
-        padding:                5px 20px;
+    #join-link {
+        border:                 2px solid #F2F2F2;
     }
 
 /* SECTION #1: OFFER
@@ -144,7 +149,7 @@ h2 {
  */
 .offer {
     display:                flex;
-    height:                 593px;
+    min-height:                 593px;
     flex-direction:         column;
     justify-content:        center;
     align-items:            center;
@@ -154,7 +159,7 @@ h2 {
 }
 
     #value-proposition {
-        width:                  30%;
+        width:                  430px;
         text-align:             center;
         padding:                20px 0 40px 0;
     }
@@ -171,7 +176,8 @@ h2 {
             font-size:              18px;
             font-weight:            bold;  
             height:                 60px;
-            width:                  230px;
+            width:                  250px;
+            min-width:              50px;
             margin-right:           10px;
             text-decoration:        none;
             text-align:             center;
@@ -200,7 +206,7 @@ h2 {
     flex-direction:         column;
     justify-content:        center;
     align-items:            center;
-    height:                 600px;
+    min-height:                 600px;
     text-align:             center;
 }
 
@@ -226,7 +232,48 @@ h2 {
         width:                  54%;
     }
 
-/* SECTION #3: PRODUCT */
+/* SECTION #3: PRODUCT
+ * Product features are row-displayed flex articles wrapped in a container.
+ * The container is vertically stacked over the "Create an Org" link. 
+ */
 .product {
-
+    display:                flex;
+    flex-direction:         column;
+    justify-content:        center;
+    align-items:            center;
+    min-height:             500px;
 }
+
+    #features-container {
+        display:                flex;
+        flex-wrap:              wrap;
+        width:                  85%;
+        justify-content:        space-between;
+        padding-bottom:         60px;
+    }
+
+    .product > div > article > img {
+        height:                 32px;
+    }
+
+    .product > div > article {
+        padding:                0px;
+        width:                  240px;
+    }
+
+    .product h3 {
+        color:                  #ED1C24;
+    }
+
+    #create_link {
+        background-color:       black;
+        color:                  white;
+        box-shadow:             8px 8px rgba(128,83,35,.2);
+        height:                 60px;
+        width:                  400px;
+        font-size:              16px;
+        font-weight:            700;
+        text-decoration:        none;
+        text-align:             center;
+        line-height:            60px;
+    }

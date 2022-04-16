@@ -13,7 +13,7 @@
             <div class="header-top"><!-- Top line of the header -->
                 <div id="header-title">
                     <img src="./images/black-heart.png" alt="Black heart pictogram" id="heart-picto">
-                    <span>Nebulous Purposeful Message</span>
+                    <span>Nebulous Playful Message</span>
                 </div>
                 <nav>
                     <ul>
@@ -35,8 +35,8 @@
                     <input type="submit" value="Search" id="search-button">
                 </form>
                 <div id="auth">
-                    <a href="" id="join-link">Join</a>
-                    <a href="" id="login-link">Log in</a>
+                    <a href="" class="link" id="join-link">Join</a>
+                    <a href="" class="link">Log in</a>
                 </div>
             </div>
         </header>
@@ -68,29 +68,31 @@
         
 <!-- SECTION #3: PRODUCT -->
 
-        <section id="product">
-            <article id="configuration">
-                <img src="./images/zero-configuration.svg">
-                <h4>Zero configuration</h4>
-                <p>Create an org, add your team, and start collaborating. Nothing to configure, set up, or manage.</p>
-            </article>
-            <article id="management">
-                <img src="./images/team-management.svg">
-                <h4>Team management</h4>
-                <p>Control who has access to what modules within your team namespace using straightforward team
-                    management capabilities.</p>
-            </article>
-            <article id="features">
-                <img src="./images/familiar-features.svg">
-                <h4>Familiar features</h4>
-                <p>npm Orgs has 100% parity with all the public npm registry features your developers already use.</p>
-            </article>
-            <article id="audit">
-                <img src="./images/npm-audit.svg">
-                <h4>npm audit</h4>
-                <p>Enjoy the security auditing features built into the npm client, a zero-friction way to make open
-                    source software safer.</p>
-            </article>
+        <section class="product">
+            <div id="features-container">
+                <article>
+                    <img src="./images/zero-configuration.svg" class="product-feature-pictogram" id="zero-configuration-pictogram">
+                    <h3>Zero configuration</h3>
+                    <p>Create an org, add your team, and start collaborating. Nothing to configure, set up, or manage.</p>
+                </article>
+                <article>
+                    <img src="./images/team-management.svg" class="product-feature-pictogram" id="team-management-pictogram">
+                    <h3>Team management</h3>
+                    <p>Control who has access to what modules within your team namespace using straightforward team
+                        management capabilities.</p>
+                </article>
+                <article>
+                    <img src="./images/familiar-features.svg" class="product-feature-pictogram">
+                    <h3>Familiar features</h3>
+                    <p>npm Orgs has 100% parity with all the public npm registry features your developers already use.</p>
+                </article>
+                <article>
+                    <img src="./images/npm-audit.svg" class="product-feature-pictogram">
+                    <h3>npm audit</h3>
+                    <p>Enjoy the security auditing features built into the npm client, a zero-friction way to make open
+                        source software safer.</p>
+                </article>
+            </div>
             <a href="" id="create_link">Create an Org</a>
         </section>
     </body>
