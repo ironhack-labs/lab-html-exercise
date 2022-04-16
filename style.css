@@ -1,8 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
 
 /* COLOR SCHEME
- * [1] Light gray:  #F2F2F2
- * [2] Red:         #FB3E44
+ *      Color               Value                   Main elements
+ * [1]  Light gray:         #F2F2F2                 Search bar
+ * [2]  Red #1:             #FB3E44                 "Search" button
+ * [3]  Light pale silver:  rgba(232,217,217,.3)    Section #1 background
+ * [4]  Red #2:             #FB3B49                 "See plans" button
  */
 
 /* DEBUG */
@@ -13,6 +16,15 @@
 /* GLOBAL RULES */
 body {
     font-family:            "Poppins", Helvetica, sans-serif;
+    margin:                 30px;
+}
+
+h1 {
+    font-size:              80px;
+    font-weight:            700;
+    margin:                 0;
+    padding:                0;
+    line-height:            100px;
 }
 
 /* HEADER
@@ -45,6 +57,7 @@ body {
 
     .header-top > nav > ul > li > a {
         font-size:              14px;
+        font-weight:            500;
         color:                  black;
         text-decoration:        none;
         padding:                10px;           
@@ -117,8 +130,53 @@ body {
 
 /* SECTION #1: OFFER */
 .offer {
-
+    display:                flex;
+    height:                 593px;
+    flex-direction:         column;
+    justify-content:        center;
+    align-items:            center;
+    background-color:       rgba(232,217,217,.3);
+    border-top:             7px solid;
+    border-image:           linear-gradient(gainsboro, rgba(232,217,217,.1) 0.9px) 1;
 }
+
+    #value-proposition {
+        width:                  30%;
+        text-align:             center;
+        padding:                20px 0 40px 0;
+    }
+
+    #offer-links {
+        display:                flex;
+        flex-direction:         row;
+        justify-content:        center;
+        /*padding:                40px 0;*/
+    }
+
+        #offer-links > .link {
+            font-size:              18px;
+            font-weight:            bold;  
+            height:                 60px;
+            width:                  230px;
+            margin-right:           10px;
+            text-decoration:        none;
+            text-align:             center;
+            line-height:            60px;
+        }
+        #see-plans-link {
+            box-shadow:             8px 8px rgba(251,59,73,.2);                         
+            color:                  white;
+            background-color:       #FB3E49;
+        }
+
+        #join-for-free-link {
+            font-size:              18px;
+            font-weight:            bold;
+            color:                  black;
+            background-color:       white;
+            margin-left:            35px;
+        }
+
 
 /* SECTION #2: PITCH */
 .pitch {
