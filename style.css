@@ -1,18 +1,27 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
+
 body {
   font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
 }
+header  {
+    height:140px;
+   
+  }
 header > div {
     padding: 0 25px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid lightgray;
+    margin: 15px;
+   
   }
   
   nav {
     width: 600px;
+  
   }
   
   nav ul {
@@ -31,7 +40,99 @@ header > div {
     width: 20px;
     margin-right: 1rem;
   }
+  .npm-logo{
+    width:60px;
+    margin-bottom: 10px;
+  }
+  .form-search{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  
+  }
+  /*  dont know how to enlarge the dearch bar */
+input {
+      
+    width:900px;
+    height:40px;
+    margin-bottom: 20px;
+    background-color: rgb(235, 232, 232);
+    text-indent: 30px;
+    border: none;
 
+}
+/* source reference:https://nikitahl.com/search-icon-inside-input */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+  }
+  
+  form {
+    color: #555;
+    display: flex;
+    padding: 2px;
+    border-radius: 5px;
+  }
+
+  .container input[type="search"] {
+    background: transparent;
+    margin: 10px 0;
+    padding: 7px 8px;
+    font-size: 14px;
+  }
+
+  .container img {
+    position: absolute;
+    margin-top: 6px;
+    margin-left: 5px;
+    width:30px;
+    text-align: left;
+  } 
+  
+  .search-btn{
+    color:white;
+    background-color: #FB3B49;
+    font-size: 0.8em;
+    /* letter-spacing: 0.5px; */
+    text-decoration: none;
+    padding:10px 25px;
+    margin-right:0px;
+    margin-left:0px;
+    margin-bottom:20px;
+    border-style: none;
+    
+  }
+  
+  .link-btn3 {
+    color:black;
+    background-color: white;
+    font-size: 0.8em;
+    text-align: center;
+    text-decoration: none;
+    padding:8px 15px;
+    margin-right:20px;
+    border-style: solid;
+    vertical-align: auto;
+    margin-top: 0;
+ 
+  }
+  .link-btn4 {
+    color:black;
+    background-color: white;
+    font-size: 0.8em;
+    text-align: center;
+    text-decoration: none;
+    padding:8px 15px;
+    margin-right:20px;
+    border-style: none;
+    margin-bottom:60px;
+    vertical-align: auto;
+ 
+  }
+
+/* Section 1 */
   #intro{
     display: flex;
     justify-content: center;
@@ -39,14 +140,139 @@ header > div {
     flex-direction:column;
     height: 600px;
     background-color: rgba(232,217,217,.3);
+   
   }
+  #intro h1{
+    color:black;
+    font-Size: 4em;
+  }
+  #intro article{
+    color:black;
+    font-Size: 1.2em;
+    width: 35%;
+    /* margin-left: auto;
+    margin-right: auto; */
+    margin-bottom:20px;
+    text-align: center;
+    
+  }  
   .link-btn {
     color:white;
     background-color: #FB3B49;
     box-shadow: 4px 4px 0 rgba(251,59,73,.2);
     font-size: 1em;
     letter-spacing: 0.5px;
-    text-align: center;
+    text-align: left;
     text-decoration: none;
-    padding:5px 10px;
+    padding:10px 30px;
+    margin-right:40px;
+    margin-left:0px;
+    
   }
+  .link-btn2 {
+    color:black;
+    background-color: rgba(232,217,217,.3);
+    font-size: 1em;
+    letter-spacing: 0.5px;
+    text-align: left;
+    text-decoration: none;
+    padding:10px 20px;
+    margin-right:40px;
+    margin-left:0px;
+    
+  }
+/* Section 2 */
+  #general-information{
+    /* background-color: rgba(232,217,217,.3); */
+    height: 350px;
+    
+  }
+  #general-information h2{
+    transform: skew(9deg,0deg);
+    font-style: italic;
+    text-align: center;
+    color:black;
+    font-Size: 2em;
+  }
+  #general-information h2 span{
+    background-color: rgba(255,204,53,.4);
+    
+  }
+
+  #general-information img{
+    width:250px;
+    height: 180px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+    width: 50%;
+    
+  }
+  #general-information article{
+    text-align: center;
+    color:black;
+    font-Size: 0.8em;
+    width: 43%;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }  
+
+/* Section 3 */
+
+#service{
+    padding: 75px 0;
+    margin: 0 auto;
+  }
+#service > div{
+    display: flex;
+      justify-content: space-between;
+      max-width: 85%;
+      margin: auto;  
+  }
+ #service > div > article {
+
+      max-width: 20%;
+ 
+ }
+  
+#service h4{
+    color:#ED1C24;
+    font-size: 1em;
+  }
+#service .service-button{
+    color: white;
+    background-color: black;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    /* margin:10px 20px; */
+    letter-spacing: 0.6px;
+    /* text-align: center !important; */
+    margin: auto;
+    float: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 10px 70px;
+    margin-top:30px;
+}
+
+#service img{
+    width:20px;
+    text-align: left;
+   
+  }
+
+
+
+ 
+  
+  
+
+
+  
+  
+  
+  
+
+  
