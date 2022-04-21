@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+<link rel="stylesheet" href="./style.css">
 <header>
     <meta charset="UTF-8">
     <div>
         <div>
-            <img class="blackHeart" src="images/black-heart.png" alt="black heart" />
+            <img class="blackHeart" src="./images/black-heart.png" alt="black heart" />
             <span> Nifty Penguin Magic </span>
         </div>
         <nav>
@@ -20,14 +21,17 @@
     </div>
 
     <div>
-        <img src="images/npm-logo.png" alt="NPM logo"/>
+        <img src="images/npm-logo.png" alt="NPM logo" class="logo_npm"/>
         <form action="/" method="get">
-            <label for="search_bar"><img src="images/magnifying-glass.png" alt="search logo"></label>
+            <label for="search_bar"><img src="./images/magnifying-glass.png" alt="search logo" class="search"></label>
             <input type="text" name="search_bar" id="search_bar" placeholder="Search packages">
             <button type="submit">Search</button>
         </form>
-        <a href="#">Join</a>
-        <a href="#">Log in</a>
+
+        <div>
+            <a href="#" class="lien_border">Join</a>
+            <a href="#">Log in</a>
+        </div>
     </div>
 </header>
 <section id="presentation">
@@ -42,7 +46,7 @@
     </div>
 </section>
 <section id="advice">
-    <img src="images/triangle-hexagon.svg" alt="hexagon">
+    <img src="./images/triangle-hexagon.svg" alt="hexagon">
     <h2>Bring the best of open source to your company</h2>
     <article>
         npm is the tool used by
@@ -53,28 +57,28 @@
 <section id="organizations">
     <div>
         <div>
-            <img src="images/zero-configuration.svg" alt="click icon">
+            <img src="./images/zero-configuration.svg" alt="click icon">
             <h3>Zero configuration</h3>
             <article>
                 Create an org, add your team, and start collaborating. Nothing to configure, set up, or manage.
             </article>
         </div>
         <div>
-            <img src="images/team-management.svg" alt="click icon">
+            <img src="./images/team-management.svg" alt="click icon">
             <h3>Team management</h3>
             <article>
                 Control who has access to what modules within your team namespace using straightforward team management capabilities.
             </article>
         </div>
         <div>
-            <img src="images/familiar-features.svg" alt="click icon">
+            <img src="./images/familiar-features.svg" alt="click icon">
             <h3>Familiar features</h3>
             <article>
                 npm Orgs has 100% parity with all the public npm registry features your developers already use.
             </article>
         </div>
         <div>
-            <img src="images/npm-audit.svg" alt="click icon">
+            <img src="./images/npm-audit.svg" alt="click icon">
             <h3>npm audit</h3>
             <article>
                 Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer.
