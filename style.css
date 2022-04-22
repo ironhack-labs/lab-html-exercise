@@ -157,6 +157,47 @@ h2 {
 #advice article {
     display: flex;
     text-align: center;
-    width: 60%;
+    width: 800px;
     margin-bottom:60px;
+}
+
+#organizations {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#organizations > div {
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    justify-content: space-evenly;
+    margin-bottom: 60px;
+}
+
+#organizations > div > div {
+    width: 20%;
+}
+
+.org_icon {
+    width: 40px;
+    height: 40px;
+}
+
+.button_create {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    width: 25%;
+    padding: 8px ;
+    margin-bottom: 60px;
+}
+
+h3 {
+    color: #ED1C24;
 }
