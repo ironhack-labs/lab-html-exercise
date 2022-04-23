@@ -1,5 +1,5 @@
-<link rel="stylesheet" href="./style.css" />
 <header>
+    <link rel="stylesheet" href="./style.css" />
     <div>
       <div>
         <img class="blackHeart" src="https://raw.githubusercontent.com/ironhack-labs/lab-html-exercise/06f6124f5e3232d861ff975de5348f81839217a6/images/black-heart.png" alt="black heart" />
@@ -17,15 +17,15 @@
       </nav>
     </div>
   
-    <div>
-      <img class="npm logo" src="https://github.com/ironhack-labs/lab-html-exercise/blob/master/images/npm-logo.png?raw=true" alt="Npm Logo">
+    <div class="logos">
+      <img class="npm-logo" src="https://github.com/ironhack-labs/lab-html-exercise/blob/master/images/npm-logo.png?raw=true" alt="Npm Logo">
       <img class="magnifying-glass" src="https://github.com/ironhack-labs/lab-html-exercise/blob/master/images/magnifying-glass.png?raw=true" alt="magnifying-glass">
-      <form action="/some-url" method="get">
-    <input type="text" id="search-bar" name="search-bar" placeholder="Search packages">
+      <form class="search" action="/some-url" method="get">
+    <input class="searchbar" type="text" id="search-bar" name="search-bar" placeholder="       Search packages">
         <button type="submit">Search</button>
   </form>
-      <a class="Join" href="">Join</a> 
-         <a class="LogIn" href="">Log In</a>
+      <a class="join" href="">Join</a> 
+         <a class="login" href="">Log In</a>
       <!-- add logo, search bar and buttons (or links and style them as buttons later) -->
     </div>
   </header>
@@ -38,8 +38,8 @@
   modern open source code.</p>
     </article>
     <div>
-    <a class="see-plans" href="">See plans</a>
-    <a class="join-for-free" href="">Join for free</a>
+    <a class="link-btn" id="see-plans" href="">See plans</a>
+    <a class="link-btn" href="">Join for free</a>
       </div>
   </section>
   <section id="section2">
@@ -54,37 +54,29 @@
   </section>
   
   <section id="section3">
-    <div class="icon1">
+    <article class="icons">
       <img class="zero-configuration" src="https://raw.githubusercontent.com/ironhack-labs/lab-html-exercise/3a5dda422dd6e6fc4444645556e2a1ecc05879e9/images/zero-configuration.svg" alt="zero-configuration">
-      <head>
         <h4>Zero configuration</h4>
-      </head>
       <p>Create an org, add
   your team, and start collaborating. Nothing to configure, set up, or manage.</p>
-    </div>
-    <div class="icon2">
+    </article>
+     <article class="icons">
     <img src="https://raw.githubusercontent.com/ironhack-labs/lab-html-exercise/3a5dda422dd6e6fc4444645556e2a1ecc05879e9/images/team-management.svg" alt="team management">
-    <head>
       <h4>Team management</h4>
-    </head>
     <p>Control who has access to
   what modules within your team namespace using straightforward team management capabilities.</p>
-      </div>
-    <div class="icon3">
+      </article>
+   <article class="icons">
       <img src="https://raw.githubusercontent.com/ironhack-labs/lab-html-exercise/3a5dda422dd6e6fc4444645556e2a1ecc05879e9/images/familiar-features.svg" alt="familiar features">
-      <head>
         <h4>Familiar features</h4>
-        </head>
       <p>npm Orgs
   has 100% parity with all the public npm registry features your developers already use.</p>
-    </div>
-    <div class="icon4">
+    </article>
+    <article class="icons">
       <img src="https://raw.githubusercontent.com/ironhack-labs/lab-html-exercise/3a5dda422dd6e6fc4444645556e2a1ecc05879e9/images/npm-audit.svg" alt="npm audit">
-      <head>
         <h4>npm audit</h4>
-      </head>
       <p>Enjoy the security
   auditing features built into the npm client, a zero-friction way to make open source software safer.</p>
-    </div>
+    </article>
     <a href="">Create an Org</a>
   </section>
