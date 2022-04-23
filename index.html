@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="./style.css" />
     <title>NPM Clone</title>
   </head>
   <body>
@@ -22,16 +23,20 @@
               </nav>
           </div>
 
-          <div>
-              <img src="/images/npm-logo.png" class="logo" alt="NPM logo">              
-              <form action="/results-page" method="get">
-                  <span><img src="/images/magnifying-glass.png" alt="Search icon"></span>
-                  <input type="text" id="search-bar" placeholder="Search packages">
-                  <button type="submit">Search</button>
-                </form>
+          <div id="second-header">
+              <img src="/images/npm-logo.png" class="logo" alt="NPM logo">
+              <div class="search-container">              
+                <form action="/results-page" method="get">
+                    <span id="search-span">
+                        <span><img src="/images/magnifying-glass.png" id="search-icon" alt="Search icon"></span>
+                        <input type="text" id="search-bar" placeholder="Search packages">
+                        <button type="submit" id="search-button">Search</button>
+                    </span>
+                    </form>
+              </div>
                <div>
-                <a href="#" class="">Join</a>
-                <a href="#" class="">Log In</a>
+                <a href="#" class="join-btn">Join</a>
+                <a href="#" class="log-btn">Log In</a>
                </div>
             </div>
       </header>
