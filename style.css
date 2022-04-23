@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
 
 body {
   font-family: 'Poppins';
@@ -38,6 +38,8 @@ nav a {
     padding: 10px 10px;
     display: flex;
     align-items: center;
+    box-shadow: 0px 8px 20px 0px rgba(0,0,0,0.15);
+
 }
 
 .logo {
@@ -58,7 +60,7 @@ nav a {
   }
 
 #search-bar {
-      width: 350px;
+      width: 650px;
       height: 40px;
       background-color: rgba(0,0,0,.00);
       border: none;
@@ -89,4 +91,92 @@ nav a {
     color: #000000;
     padding: 5px 20px;
     border : none;
+}
+
+
+#hero-section {
+    display: flex;
+    height: 600px;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+    background-color: rgba(232,217,217,.3);
+    padding-bottom: 50px;
+}
+
+#hero-section h1 {
+    font-size: 60px;
+    font-weight: 900;
+}
+
+#hero-section article {
+    font-size: 20px;
+    line-height: 1.9rem;
+    font-weight: 400;
+    width: 50%;
+    text-align: center;
+    margin-bottom: 40px;
+    max-width: 650px;
+}
+
+.btn-1 {
+    background-color: #FB3B49;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 15px 45px;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+    margin-right: 20px ;
+}
+
+.btn-2 {
+    background-color: #ffffff;
+    text-decoration: none;
+    color: #000000;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 15px 40px;
+    margin-left: 20px;
+}
+
+#main-benefit {
+    display: flex;
+    height: 500px;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+    background-color: #ffffff;
+    padding-bottom: 50px;
+}
+
+#main-benefit img {
+    width: 190px;
+}
+
+#main-benefit h2 {
+    font-size: 35px;
+    font-weight: 900;
+    transform: skew(0deg,0deg);
+}
+
+#main-benefit h2::before {
+    content: "";
+    position: absolute;
+    width: 105%;
+    height: 100%;
+    z-index: -5;
+    left: -15px;
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+}
+
+#main-benefit article {
+    font-size: 16px;
+    line-height: 1.9rem;
+    font-weight: 400;
+    width: 75%;
+    text-align: center;
+    margin-bottom: 40px;
+    max-width: 800px;
 }
