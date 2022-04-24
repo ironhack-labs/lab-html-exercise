@@ -8,17 +8,18 @@
     <title>NPM Clone</title>
 </head>
 <body>
-    <header>
+
+    <header #header>
         <!-- nav bar -->
         <nav class="nav-bar">
-            <div>
-                <ul class="nav-bar-ul-left">
-                    <li><img src="/images/black-heart.png" alt="black heart"></li>
-                    <li><p>Neverending Pun Machine</p></li>
-                </ul>
+            <div id="nav-bar-left">
+                <div>
+                    <img id="black-heart" src="/images/black-heart.png" alt="black heart"></li>
+                </div>
+                <p>Neverending Pun Machine</p>
             </div>
             <div>
-                <ul class="nav-bar-ul-right">
+                <ul id="nav-bar-right">
                     <li><a href="#">Enterprise</a></li>
                     <li><a href="#">Products</a></li>
                     <li><a href="#">Solutions</a></li>
@@ -26,6 +27,7 @@
                     <li><a href="#">Docs</a></li>
                     <li><a href="#">Support</a></li>
                 </ul>
+                <hr>
             </div>
         </nav>
 
@@ -43,10 +45,10 @@
                     </div>
             </div>
             <div>
-                <a href="#">Join</a><!-- Join -->
+                <a href="#">Join</a>
             </div>
             <div>
-                <a href="#">Log in</a><!-- Log In -->
+                <a href="#">Log in</a>
             </div>
         </section>
     </header>
@@ -118,3 +120,4 @@
     </main>
 </body>
 </html>
+
