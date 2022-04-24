@@ -1,6 +1,9 @@
 <html>
+  <head>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
 <body>
-<header class="header">
+<header class="header-top">
     <div>
       <div>
         <img class="blackHeart" src="./images/black-heart.png" alt="black heart" />
@@ -18,35 +21,39 @@
       </nav>
     </div>
   
-    <div>
+    <div id="header-searchbar">
+      <div class="header-part">
         <img class="npmlogo" src="./images/npm-logo.png" alt="npm logo" />
-        <form action="/form/submit" method="GET"> 
-            <img class="magnifglass" src="./images/magnifying-glass.png" alt="magnifying glass" />
-            <input type="text" name="text" class="search" placeholder="Search packages">
-            <input type="submit" name="submit" class="submit" value="Search">
-          </form>
-          <div class="first-btn-group">
-            <button>Join</button>
-            <button>Log In</button>
-          </div>
+      </div>
+      <div class="header-part">
+        <form> 
+          <img class="magnifglass" src="./images/magnifying-glass.png" alt="magnifying glass" />
+          <input type="text" name="search" id="search" placeholder="Search packages"/>
+          <button id="search-button">Search</button>
+        </form>
+        </div>
+        <div class="search-div" id="user-logins">
+          <a id="join" href="#">Join</a> <a href="#">Log in</a>
+        </div>
+        </div>
     </div>
   </header>
 
-  <section id="introduction">
-    <h1>Build amazing things</h1>
+  <section class="box-mid">
+    <h1 id="build-title">Build amazing things</h1>
     <div>
       <article>
-        <p>Essential JavaScript development tools that help you go to market faster and build powerful applications using
-            modern open source code.</p>
+        <p>Essential JavaScript development tools that help you go
+            to market faster and build powerful applications
+              using modern open source code.</p>
         </article>    
     </div>
-    <div class="middle-btn-group">
-        <button>See plans</button>
-        <button>Join for free</button>
+    <div id="see-plans-group">
+      <a id="see-plans" href="#">See plans</a><a href="#">Join for free</a>
       </div>
  </section>
 
-<section id="middlesection">
+<section class="middlesection">
     <img class="hexagon" src="./images/triangle-hexagon.svg" alt="triangle hexagon" /> 
     <h2>Bring the best of open source to your company</h2>
     <div>
@@ -58,36 +65,49 @@
     </div>
  </section>
 
-<section id="detailssection">       
-    <div id="detail-boxes">
+<section class="last-section">   
+  <div class="detailssection"> 
+    <div class="detail-boxes">
       <article>
         <img class="zero" src="./images/zero-configuration.svg" alt="zero configuration" /> 
         <h4>Zero configuration</h4>
         <p>Create an org, add
             your team, and start collaborating. Nothing to configure, set up, or manage.</p>
-        </article>    
+        </article>  
+        </div>
+       
+      <div class="detail-boxes">
       <article>
         <img class="team" src="./images/team-management.svg" alt="team management" /> 
         <h4>Team management</h4>
         <p>Control who has access to
             what modules within your team namespace using straightforward team management capabilities.</p>
         </article> 
+      </div>
+
+      <div class="detail-boxes">
       <article>
         <img class="familiar" src="./images/familiar-features.svg" alt="familiar features" /> 
         <h4>Familiar features</h4>
         <p>npm Orgs
             has 100% parity with all the public npm registry features your developers already use.</p>
         </article> 
+      </div>
+
+      <div class="detail-boxes">
       <article>
         <img class="audit" src="./images/npm-audit.svg" alt="npm audit" /> 
         <h4>npm audit</h4>
         <p>Enjoy the security
             auditing features built into the npm client, a zero-friction way to make open source software safer.</p>
         </article>  
-    </div>
-    <div class="create-btn">
-        <button>Create an Org</button>
       </div>
+      </div>
+
+    <div>
+        <button id="org-btn">Create an Org</button>
+      </div>
+
  </section>
 
 </body>
