@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap');
 
 body {
   font-family: 'Poppins';
@@ -51,6 +52,7 @@ nav a {
 #search-icon {
       width: 20px;
       padding: 12px 10px 0px 10px;
+      opacity: 0.7;
   }
 
 #search-container {
@@ -61,6 +63,7 @@ nav a {
   }
 
 #search-bar {
+    display: inline-block;
       width: 650px;
       height: 40px;
       background-color: rgba(0,0,0,.00);
@@ -76,8 +79,15 @@ nav a {
     background-color: #fb3e44;
     color:#ffffff;
     border: none;
-    padding: 12px 15px;
-    height: 40px;
+    padding: 12px 25px;
+    height: 42px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+::placeholder {
+    font-family: 'Fira Mono', monospace;
+    color: #8e8e8e;
 }
   
 .join-btn {
