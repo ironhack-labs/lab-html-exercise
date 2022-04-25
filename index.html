@@ -9,49 +9,65 @@
 </head>
 <body>
 
-    <header #header>
-        <!-- nav bar -->
-        <nav class="nav-bar">
-            <div id="nav-bar-left">
-                <div>
-                    <img id="black-heart" src="/images/black-heart.png" alt="black heart"></li>
-                </div>
-                <p>Neverending Pun Machine</p>
-            </div>
+    <header>
+        <div id="navbar">
             <div>
-                <ul id="nav-bar-right">
-                    <li><a href="#">Enterprise</a></li>
-                    <li><a href="#">Products</a></li>
-                    <li><a href="#">Solutions</a></li>
-                    <li><a href="#">Resources</a></li>
-                    <li><a href="#">Docs</a></li>
-                    <li><a href="#">Support</a></li>
+                <img class="blackHeart" src="/images/black-heart.png" alt="black heart" />
+                <span> Nifty Penguin Magic </span>
+            </div>
+            <nav>
+                <ul>
+                <li><a href="#"> npm Enterprise </a></li>
+                <li><a href="#"> Products </a></li>
+                <li><a href="#"> Solutions </a></li>
+                <li><a href="#"> Resources </a></li>
+                <li><a href="#"> Docs </a></li>
+                <li><a href="#"> Support </a></li>
                 </ul>
-                <hr>
+            </nav>
+        </div>
+
+        
+        <div id="searchbar">
+
+            <!-- Logo -->
+            <div id="npm-logo">
+                <img src="/images/npm-logo.png" alt="npm logo">
             </div>
-        </nav>
 
 
-        <!-- search bar -->
-        <section id="search-bar">
-            <div id="search-bar-logo">
-                <img src="/images/npm-logo.png" alt="npm logo"> <!---npm -->
+
+            <!-- searchbar -->
+            <div id="searchbar-form">
+                <div id="glasses">
+                    <img src="/images/magnifying-glass.png" alt="magnifying-glass"></div>
+                <form>
+                    <input type="search" placeholder="Search packages">
+                    <button type="submit">Search</button>
+                </form>
             </div>
-            <div id="search-bar-form">
-                <form action="#" method="post" class="search-form" >
-                    <div class="search-form-container">
-                        <label for="search"><img src="/images/magnifying-glass.png" alt="magnifying glass"></label>
-                        <input type="text" id="search" placeholder="Search packages">
-                    </div>
+
+
+
+            <div id="join-btn">
+                <a href="#" id="btn-1">Join</a>
+                <a href="#" id="btn-1">Log In</a>
             </div>
-            <div>
-                <a href="#">Join</a>
-            </div>
-            <div>
-                <a href="#">Log in</a>
-            </div>
-        </section>
+
+        
+        
+        
+        </div>
+
+
+
+
+
     </header>
+
+
+
+
 
 
     <main>

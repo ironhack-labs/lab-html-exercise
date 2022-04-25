@@ -4,48 +4,11 @@ body {
     font-family: 'Poppins';
 }
 
-/*  nav bar */
-
-/* header {
-    display: flex;
-    flex-direction: row;
-} */
-
-#nav-bar-left {
-    display: flex;
-    flex-direction: row;
+img {
+    width: 100px;
 }
 
-#nav-bar-left p {
-    margin: 0;
-}
-
-#black-heart {
-    width: 20px;
-    margin-right: 1rem;
-}
-
-#nav-bar-right {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-}
-
-#nav-bar-right a {
-    text-decoration: none;
-    margin: 5px;
-    color: black;
-    font-weight: 700;
-    font-size: 0.8em;
-}
-#nav-bar-right li {
-    list-style: none;
-}
-
-
-
-
-/* header > div {
+#navbar {
     padding: 0 25px;
     display: flex;
     justify-content: space-between;
@@ -72,4 +35,71 @@ nav a {
 .blackHeart {
     width: 20px;
     margin-right: 1rem;
-} */
+}
+
+/* ################################################ */
+
+#searchbar {
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1em 0;
+}
+
+#npm-logo img {
+    width: 50px;
+}
+
+#searchbar-form {
+    display: flex;
+}
+
+#glasses {
+    height: 34px;
+    width: 34px;
+}
+
+#searchbar-form img {
+    height: 34px;
+    width: auto;
+    background-color: rgba(0,0,0,.05);
+}
+
+input {
+    border: none;
+    background-color: rgba(0,0,0,.05);
+    padding: 9px 4px 9px 40px;
+}
+
+button[type="submit"] {
+    border: none;
+    background-color: #fb3e44;
+    padding: 9px 12px;
+    color: white;
+    position: absolute;
+}
+
+/* form label color: rgba(0,0,0,.05)
+form input color: rgba(0,0,0,.05)
+form button background color: #fb3e44
+form button letters color: white
+
+
+suggested height for this section: 600px
+background color: rgba(232,217,217,.3)
+"See plans" button background color: #FB3B49
+"See plans" button box shadow: 8px 8px 0 rgba(251,59,73,.2)
+
+
+heading background color: rgba(255,204,53,.4)
+to get the transform of the yellow background in the left-hand direction use: transform: skew(9deg,0deg);
+to get it in the opposite direction of the letters, the way we need it on the page, use: font-style: italic;
+to additionally fine-tune the position of each element, use margin property.
+
+
+color of the letters in each heading in this section: #ED1C24
+"Create an Org" box shadow: 8px 8px 0 rgba(128,83,35,.2)
+"Create an Org" letters color: white
+
+*/
