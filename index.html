@@ -8,8 +8,8 @@
     <title>NPM Clone</title>
 </head>
 <body>
-
     <header>
+        <!-- navbar -->
         <div id="navbar">
             <div>
                 <img class="blackHeart" src="/images/black-heart.png" alt="black heart" />
@@ -27,60 +27,38 @@
             </nav>
         </div>
 
-        
+        <!-- searchbar section -->
         <div id="searchbar">
-
             <!-- Logo -->
             <div id="npm-logo">
                 <img src="/images/npm-logo.png" alt="npm logo">
             </div>
-
-
-
             <!-- searchbar -->
             <div id="searchbar-form">
-
                 <div id="glasses">
                     <img src="/images/magnifying-glass.png" alt="magnifying-glass">
                 </div>
-
-                
                     <input type="search" placeholder="Search packages">
                     <button type="submit">Search</button>
-                
             </div>
-
-
-
+<!-- Unhappy with this part, but I couldn´t make it work with flexbox:
+When I wrap the input/button inside a div or form flex grow isn´t working anymore -->
             <div id="join-btn">
                 <a href="#">Join</a>
                 <a href="#">Log In</a>
             </div>
-
-        
-        
-        
         </div>
-
-
-
-
-
     </header>
 
 
-
-
-
-
     <main>
-    <!-- header -->
+    <!-- upper part -->
         <section id="upper-part">
             <div id="background">
                 <h1>Build amazing things</h1>
                 <p>Essential JavaScript development tools that help you go to market faster and build powerful applications using
                     modern open source code.</p>
-                <div id="upper-part-button-rename">
+                <div id="main-upper-button">
                     <a href="#">See plans</a>
                     <a href="#">Join for free</a>
                 </div>
