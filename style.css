@@ -25,6 +25,7 @@ nav ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-right: 2em;
 }
 
 nav a {
@@ -40,25 +41,24 @@ nav a {
 /* ################################################ */
 
 #searchbar {
-    padding: 0 25px;
+    /* padding-left: 25px; */
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    margin: 1em 0;
+    margin: 0.4em 0 1em 1.7em;
 }
+
 
 #npm-logo img {
     width: 50px;
+    margin-right: 10px;
 }
 
 #searchbar-form {
     display: flex;
+    flex-grow: 1;
+    /* align-items: center;  */
 }
 
-#glasses {
-    height: 34px;
-    width: 34px;
-}
 
 #searchbar-form img {
     height: 34px;
@@ -66,18 +66,43 @@ nav a {
     background-color: rgba(0,0,0,.05);
 }
 
-input {
+#searchbar-form input {
+    height: 34px;
+    width:90%;
     border: none;
     background-color: rgba(0,0,0,.05);
     padding: 9px 4px 9px 40px;
+    position: relative;
 }
 
 button[type="submit"] {
     border: none;
     background-color: #fb3e44;
-    padding: 9px 12px;
+    height: 34px;
+    padding: 3px 14px;
     color: white;
-    position: absolute;
+}
+
+
+#join-btn {
+    width: 170px;
+    position: relative;
+    bottom: 3px;
+    margin-left: 2em;
+}
+
+#join-btn a {
+    background-color: #fff;
+    border: none;
+    height: 32px;
+    padding: 3px 14px;
+    text-decoration: none;
+
+}
+
+#join-btn a:nth-of-type(1) {
+    background-color: #fff;
+    border: 1px solid black;
 }
 
 /* form label color: rgba(0,0,0,.05)
