@@ -103,7 +103,7 @@ button[type="submit"] {
                                         /* main - upper part */
 
 #background {
-    width: 98vw;
+    width: 967w;
     height: 600px;
     margin: auto;
     background-color: rgba(232,217,217,.3);
@@ -149,8 +149,40 @@ justify-content: center;
 
                                         /* main - mid part */
 
+/* .mid-image-container {} */
 
+#mid-part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+#mid-part img {
+    width: 20vw;
+    margin: 5em 0 2em;
+    position: relative;
+}
+
+#trapeze-background {
+    width: 100%;
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+    font-style: italic;
+    /* position: relative; */
+}
+#mid-part h2 {
+    
+    text-align: center;
+    font-size: 2.25em;
+    padding: 0 10px;
+}
+
+#mid-part p {
+    font-size: 1em;
+    font-weight: 400;
+    width: 70vw;
+    max-width: 800px;
+}
                                         /* main - last part */
 
 
@@ -169,7 +201,7 @@ background color: rgba(232,217,217,.3)
 "See plans" button box shadow: 8px 8px 0 rgba(251,59,73,.2)
 
 
-heading background color: rgba(255,204,53,.4)
+heading background color: 
 to get the transform of the yellow background in the left-hand direction use: transform: skew(9deg,0deg);
 to get it in the opposite direction of the letters, the way we need it on the page, use: font-style: italic;
 to additionally fine-tune the position of each element, use margin property.
