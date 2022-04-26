@@ -4,9 +4,6 @@ body {
     font-family: 'Poppins';
 }
 
-img {
-    width: 100px;
-}
                                                 /* navbar */
 #navbar {
     padding: 0 25px;
@@ -42,7 +39,7 @@ nav a {
     /* padding-left: 25px; */
     display: flex;
     align-items: center;
-    margin: 0.4em 0 1em 1.7em;
+    margin: 0.4em 0 0 1.7em;
 }
 
 #npm-logo img {
@@ -83,14 +80,15 @@ button[type="submit"] {
     width: 170px;
     position: relative;
     bottom: 3px;
-    margin-left: 2em;
+    margin-left: 1.5em;
 }
 
 #join-btn a {
     background-color: #fff;
+    color: #000;
+    font-size: 0.8em;
     border: none;
-    height: 32px;
-    padding: 3px 14px;
+    padding: 4px 14px;
     text-decoration: none;
 
 }
@@ -114,11 +112,12 @@ main h1 {
     font-weight: 700;
     text-align: center;
     padding-top: 80px;
-    margin: 25px 0;
+    margin: 0 0 25px 0;
 }
 
-main p {
+#upper-part p {
     width: 40vw;
+    max-width: 450px;
     font-size: 16px;
     font-weight: 500;
     text-align: center;
@@ -131,13 +130,20 @@ justify-content: center;
 }
 
 #main-upper-button a {
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    width: 210px;
+    height: 50px;
+    font-weight: 700;
     border: none;
     background-color: #fff;
     color: black;
-    padding: 8px 50px;
     text-decoration: none;
+    text-align: center;
     margin: 3em 1em;
 }
+
 
 #main-upper-button a:nth-of-type(1) {
     color: white;
@@ -158,35 +164,81 @@ justify-content: center;
 }
 
 #mid-part img {
-    width: 20vw;
-    margin: 5em 0 2em;
+    width: 220px;
+    margin: 4em 0 0;
     position: relative;
 }
 
 #trapeze-background {
     width: 100%;
+    height: 2.5em;
     background-color: rgba(255,204,53,.4);
     transform: skew(9deg,0deg);
     font-style: italic;
-    /* position: relative; */
+    position: relative;
+    z-index: -1;
+    top: 73px;
 }
+
 #mid-part h2 {
-    
     text-align: center;
     font-size: 2.25em;
-    padding: 0 10px;
+    font-weight: 600;
+    padding: 0 32px;
 }
 
 #mid-part p {
+    margin: auto;
+    text-align: center;
     font-size: 1em;
     font-weight: 400;
-    width: 70vw;
-    max-width: 800px;
+    width: 68vw;
+    max-width: 770px;
 }
                                         /* main - last part */
 
+#end-part {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 5em;
+    margin-top: 5em;
+}
+
+.end-part-container {
+    width: 20vw;
+    max-width: 260px;
+    padding: 0 15px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.end-part-container h3 {
+    color: #ED1C24;
+}
+
+.end-part-container img {
+    height: 30px;
+    
+}
 
 
+
+#org-button {
+    display : flex;
+    justify-content : center;
+    align-items : center;
+}
+
+#org-button a {
+    background-color: #000;
+    padding: 10px 100px;
+    margin: 50px 0;
+    text-decoration: none;
+    color: white;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+}
 
 
 /* form label color: rgba(0,0,0,.05)
