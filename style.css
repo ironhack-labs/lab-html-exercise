@@ -33,7 +33,7 @@ nav ul {
     margin-right: 1rem;
   }
 
-  #searchbar {
+  #navbar {
     display: flex;
   }
 
@@ -42,7 +42,8 @@ nav ul {
   }
 
   #magnifying-glass {
-    height: 15px;
+    height: 50px;
+    margin-top: 50px;
   }
 
   #search-bar {
@@ -50,9 +51,25 @@ nav ul {
     input-color: rgba(0,0,0,.05);
   }
 
+  .searchbox {
+    background-color: rgba(0,0,0,.05);
+    height: 50px;
+  }
+
+  #search {
+      width:1050px;
+      padding: 0px;
+  }
+
   #search-button {
     background-color: #fb3e44;
     color: white;
+    height: 50px;
+    margin: 0px;
+  }
+
+  #navbar input {
+      border: none;
   }
 
   #join {
@@ -128,7 +145,7 @@ h3 {
 #features {
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: flex-start;
 }
 
 #bottom article {
