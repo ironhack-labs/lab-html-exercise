@@ -10,58 +10,63 @@ auditing features built into the npm client, a zero-friction way to make open so
 <!DOCTYPE html>
 
 <html lang="en"></html>
+<link rel="stylesheet" href="./style.css" />
+<body>
+    
 
     <header>
         <div>
             <div>
-                <img class=""blackHeart" src:"./images/black-heart.png" alt="black heart" />
+                <img src="/images/black-heart.png" class="blackHeart" alt="black heart" />
                 <span> Nifty Penguin Magic</span>
             </div>
-            <nav>
+            <div>
                 <ul>
-                    <li><a href=#"> npm Enterprise</a></li>
+                    <li><a href="#"> npm Enterprise</a></li>
                     <li><a href="#"> Products </a></li>
                     <li><a href="#"> Solutions </a></li>
                     <li><a href="#"> Resources </a></li>
                     <li><a href="#"> Docs </a></li>
                     <li><a href="#"> Support </a></li>
                 </ul>
-            </nav>
+            </div>
         </div>
         <div id="searchBar">
             <img src="/images/npm-logo.png" class="logo" alt="NPM logo">
+            <img src="/images/magnifying-glass.png" class="magnifyingGlass" alt="Search">
+
             <form action="/some-url" method="get">
-                <span><img src="/images/magnifying-glass.png" alt="Search"></span>
                 <input type="text" id="search-bar" placeholder="Search packages">
-                <input type="button" value="Search"/>
+                <input type="button" value="Search" id="search-button"/>
             </form>
                 <div>
-                    <a href="#" class="">Join</a>
-                    <a href="#" class="">Log in</a>
+                    <a href="#" class="join">Join</a>
+                    <a href="#" class="Log-in">Log in</a>
                 </div>
-        </div>
+            
+        </div> 
     </header>
 
     <section id="top-section">
-        <h1>Build amazing thins</h1>
+        <h1 id="top-description">Build amazing things</h1>
         <article>Essential JavaScript development tools that help you go to market faster and build powerful applications
             using modern source code</article>
-        <div>
-            <a href="#">See plans</a>
-            <a href="#">Join for free</a>
+        <div id="top-boxes">
+            <a href="#" id="See-plans">See plans</a>
+            <a href="#" id="Join-for-free">Join for free</a>
         </div>
     </section>
 
     <section id="mid-section">
-        <img src="/images/triangle-hexagon.svg" alt="Image error">
+        <img src="/images/triangle-hexagon.svg"  alt="Image error" class= "triangle-hexagon">
         <h1>Bring the best open source to your company</h1>
-        <article>pm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers already 
+        <article id="mid-section-article">npm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers already 
             use it. Your company depends on it. Create an Org and get more out of the tools your team already knows and 
             loves. </article>
     </section>
 
     <section id="bottom-section">
-        <div>
+        <div id="bottom-section-item">
             <div>
                 <img src="./images/zero-configuration.svg" alt="Zero configuration">
                 <h2>Zero configuration</h2>
@@ -81,8 +86,9 @@ auditing features built into the npm client, a zero-friction way to make open so
                 <p>Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer.</p>
             </div>
 
-            <p><a href="#" class="">Create an Org</a></p>
+            
         </div>
+        <p><a href="#" class="">Create an Org</a></p>
     </section>
-
+</body>
 </html>
