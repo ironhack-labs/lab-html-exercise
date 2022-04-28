@@ -1,0 +1,223 @@
+html, body {
+  margin: 0 20px;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h1 {
+  font-size: 4.2rem;
+  line-height: 1.25;
+}
+
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 8px 2rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.header__top__left {
+  display: flex;
+  align-items: center;
+}
+.header__top__left > img {
+  width: 25px;
+  height: 17px;
+  margin-right: 10px;
+}
+.header__top__left p {
+  margin: 0;
+  font-weight: 600;
+}
+.header__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 2em;
+}
+.header__bottom > img {
+  width: 70px;
+  height: 22px;
+  margin-right: 2rem;
+}
+.header__bottom__form {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.header__bottom__form__input {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+}
+.header__bottom__form__input > img {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 12px;
+  left: 15px;
+}
+.header__bottom__form__input > input {
+  font-family: "Fira Mono", "Andale Mono", "Consolas", monospace;
+  border: none;
+  background-color: #f2f2f2;
+  color: #777;
+  height: 52px;
+  width: 100%;
+  padding: 5px 0 5px 80px;
+  box-sizing: border-box;
+}
+.header__bottom__form__input > input:focus {
+  border: 1px solid black;
+}
+.header__bottom__form button {
+  display: inline-block;
+  background-color: #f64c4f;
+  border: none;
+  color: white;
+  height: 52px;
+  font-weight: 700;
+  font-size: 0.875rem;
+  padding: 0.5rem 2rem;
+}
+.header__bottom__joinLog {
+  padding-left: 1rem;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.header__bottom__joinLog a {
+  line-height: 1rem;
+  display: block;
+  padding: 13px 28px;
+  height: 21px;
+  width: 53px;
+  font-size: 0.875rem;
+  text-align: center;
+}
+.header__bottom__joinLog > a:nth-child(1) {
+  border: 1px solid black;
+}
+
+.nav__ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  font-weight: 700;
+}
+.nav__ul li {
+  padding: 10px;
+}
+
+.section.one {
+  background-color: #f2f2f2;
+  padding-top: 80px;
+  padding-bottom: 60px;
+}
+.section.one > div {
+  width: 70%;
+  margin: 0 auto;
+  max-width: 48rem;
+}
+.section.one > div h1 {
+  text-align: center;
+}
+.section.one > div article {
+  line-height: 1.5;
+  box-sizing: border-box;
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-align: center;
+  width: 80%;
+  margin: 50px auto;
+}
+.section.one > div > div {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 400px;
+}
+.section.one > div > div a {
+  padding: 15px 40px;
+  font-weight: 700;
+}
+.section.one > div > div a:nth-child(1) {
+  background-color: #f64c4f;
+  color: white;
+  box-shadow: 7px 7px 1px rgba(238, 128, 128, 0.3);
+}
+.section.one > div > div a:nth-child(2) {
+  background: white;
+}
+.section.two {
+  padding: 80px 0;
+}
+.section.two > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section.two > div > img {
+  width: 300px;
+}
+.section.two > div .surligner {
+  position: relative;
+}
+.section.two > div .surligner h2 {
+  position: relative;
+  z-index: 2;
+  font-size: 2rem;
+  padding: 0 30px;
+}
+.section.two > div .surligner__back {
+  background-color: #FEEBB8;
+  position: absolute;
+  width: 100%;
+  height: 1.9rem;
+  transform: skew(10deg, 0deg);
+  top: 34px;
+}
+.section.two > div article {
+  width: 70%;
+}
+.section.two > div article > p {
+  text-align: center;
+  font-weight: 500;
+}
+
+.three {
+  margin: 30px 40px;
+  display: flex;
+  flex-direction: column;
+}
+.three__grille {
+  display: flex;
+  justify-content: space-between;
+}
+.three__grille__square {
+  width: 20%;
+}
+.three__grille__square img {
+  width: 17%;
+}
+.three__grille__square h3 {
+  color: #f64c4f;
+}
+.three__grille__square p {
+  line-height: 1.5rem;
+}
+.three > a {
+  padding: 20px 110px;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  margin: 20px auto;
+  box-shadow: 7px 7px 1px rgba(0, 0, 0, 0.3);
+}/*# sourceMappingURL=index.css.map */
