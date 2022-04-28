@@ -172,6 +172,9 @@ h2{
 }
 #advantages{
     height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 #advantages > div{
     margin: 40px;
@@ -181,26 +184,46 @@ h2{
     align-items: center;
 }
 #advantages > div > div{
-    margin: 40px;
-}
-#advantages > div > div img{
     display: flex;
-    max-width: 10%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 40px;
+    width: 250px;
+    max-width: 250px;
+    max-height: 220px;
+    height: 220px;
+}
+#advantages img{
+    display: flex;
+    margin: auto 0 auto 0;
+    max-width: 15%;
+    max-height: 15%;
     align-self: flex-start;
 }
-#advantages > div > div p{
+
+h3{
+    
+    color: #ed1c24;
+    float: left;
+    text-align: center;
 
 }
-h3{
-    color: #ed1c24;
+#advantages p{
+    float: left;
+    margin-top: auto;
+    align-self: baseline;
 }
 
 #advantages a{
-    width: 30%;
+    display: flex;
+    width: 20%;
     text-decoration: none;
     color: white;
     background-color: black;
-    display: flex;
-    align-self: center;
-    text-align: center;
+    justify-content: center;
+    padding: 15px;
+    box-shadow: 8px 8px 0 rgba(128, 83, 35, 0.2);
+    font-weight: bold;
+    
 }
