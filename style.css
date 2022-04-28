@@ -36,6 +36,7 @@ nav a{
 }
 
 .blackHeart{
+    padding: 0 0 0 10px;
     width: 20px;
     margin-right: 1rem;
 }
@@ -48,14 +49,14 @@ nav a{
 
 .logo{
     width: 60px;
-    padding: 0 15px 0 0;
+    padding: 0 0 0 10px;
 }
 .search-bar{
     display: flex;
     justify-content: space-between;
-    width: 88%;
+    width: 86%;
     align-items: center;
-    background-color: lightgray;
+    background-color: rgba(230, 230, 230, 0.842);
 }
 
 
@@ -72,19 +73,23 @@ nav a{
     
 }
 .magnifying-glass{
-    width:100%;
+    margin: 5px 5px auto 5px;
+    width:80%;
+   
 }
 
 .search-bar input{
+    margin-left: 5px;
     display:flex;
     justify-content: flex-start;
     border: none;
+    background-color: rgba(0, 0, 0, .5);
     background: transparent;
 }
 
 .search-bar button{
     display: flex;
-    padding: 10px;
+    padding: 10px 15px 10px 15px;
     background-color: #fb3e44;
     color: white;
     border: none;
@@ -184,6 +189,7 @@ h2{
     align-items: center;
 }
 #advantages > div > div{
+    
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -196,9 +202,10 @@ h2{
 }
 #advantages img{
     display: flex;
-    margin: auto 0 auto 0;
     max-width: 15%;
     max-height: 15%;
+    width: auto;
+    object-fit: cover;
     align-self: flex-start;
 }
 
@@ -206,7 +213,8 @@ h3{
     
     color: #ed1c24;
     float: left;
-    text-align: center;
+    flex-direction: column;
+    align-self: flex-start;
 
 }
 #advantages p{
