@@ -2,6 +2,7 @@
 
 body {
     font-family: 'Poppins';
+    padding: 0 10px;
 }
 
                                                 /* navbar */
@@ -26,9 +27,17 @@ nav ul {
 }
 
 nav a {
+    font-size: 14px;
+    font-weight: 500;
     text-decoration: none;
     color: black;
 }
+
+nav a:hover {
+        opacity: .5;
+        transition: opacity .15s ease-in;
+    }
+
 
 .blackHeart {
     width: 20px;
@@ -43,8 +52,8 @@ nav a {
 }
 
 #npm-logo img {
-    width: 50px;
-    margin-right: 10px;
+    width: 70px;
+    margin-right: 15px;
 }
 
 #searchbar-form {
@@ -53,33 +62,50 @@ nav a {
     /* align-items: center;  */
 }
 
-#searchbar-form img {
-    height: 34px;
+#searchbar-form {
+    height: 40px;
     width: auto;
     background-color: rgba(0,0,0,.05);
 }
 
+#searchbar-form-img-container {
+    width: 35px;
+    height: 40px;
+    background-color: rgba(0,0,0,.05);
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+#searchbar-form img {
+    height: 20px;
+    width: auto;
+    /* padding: 0 0 5px; */
+    /* background-color: rgba(0,0,0,.05); */
+}
+
 #searchbar-form input {
-    height: 34px;
+    height: 40px;
     width:90%;
     border: none;
     background-color: rgba(0,0,0,.05);
-    padding: 9px 4px 9px 40px;
+    padding-left: 10px;
     position: relative;
+    font-family: "Consolas", monospace;
 }
 
 button[type="submit"] {
     border: none;
     background-color: #fb3e44;
-    height: 34px;
+    height: 40px;
     padding: 3px 14px;
     color: white;
 }
 
 #join-btn {
     width: 170px;
-    position: relative;
-    bottom: 3px;
+    /* position: relative;
+    bottom: 3px; */
     margin-left: 1.5em;
 }
 
@@ -90,8 +116,13 @@ button[type="submit"] {
     border: none;
     padding: 4px 14px;
     text-decoration: none;
-
 }
+
+#join-btn a:hover {
+    opacity: .5;
+    transition: opacity .15s ease-in;
+}
+
 
 #join-btn a:nth-of-type(1) {
     background-color: #fff;
@@ -101,40 +132,47 @@ button[type="submit"] {
                                         /* main - upper part */
 
 #background {
-    width: 967w;
     height: 600px;
-    margin: auto;
+    width: 100%;
     background-color: rgba(232,217,217,.3);
 }
 
 main h1 {
-    font-size: 65px;
+    font-size: 80px;
     font-weight: 700;
     text-align: center;
     padding-top: 80px;
     margin: 0 0 25px 0;
 }
 
+#upper-part {
+    display : flex;
+    justify-content : center;
+    align-items : center;
+}
+
 #upper-part p {
-    width: 40vw;
-    max-width: 450px;
-    font-size: 16px;
+    width: 35vw;
+    font-size: 20px;
     font-weight: 500;
     text-align: center;
     margin: 0 auto;
 }
 
-#main-upper-button {
+#upper-part-button {
 display: flex;
 justify-content: center;
 }
-
-#main-upper-button a {
+/* Nicht elegant, vielleicht besser beiden Button eine ID geben???  */
+#upper-part-button a {
     display : flex;
     justify-content : center;
     align-items : center;
-    width: 210px;
-    height: 50px;
+    /* width: 210px;
+    height: 50px; */
+    min-width: 250px;
+    padding: 20px;
+    font-size: 20px;
     font-weight: 700;
     border: none;
     background-color: #fff;
@@ -144,12 +182,20 @@ justify-content: center;
     margin: 3em 1em;
 }
 
+#upper-part-button a:hover {
+    background-color: #f7f7f7;
+}
 
-#main-upper-button a:nth-of-type(1) {
+#upper-part-button a:nth-of-type(1) {
     color: white;
     background-color: #fb3e44;
     box-shadow: 8px 8px 0 rgba(251,59,73,.2);
-    
+}
+
+#upper-part-button a:nth-of-type(1):hover {
+    color: white;
+    background-color: #cc0413;
+    box-shadow: none;
 }
 
 
@@ -220,10 +266,7 @@ justify-content: center;
 
 .end-part-container img {
     height: 30px;
-    
 }
-
-
 
 #org-button {
     display : flex;
