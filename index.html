@@ -1,11 +1,12 @@
 <header>
+  <link rel="stylesheet" href="./style.css" />
     <div>
       <div>
         <img class="blackHeart" src="images/black-heart.png" alt="black heart"/>
         <span> Nifty Penguin Magic </span>
       </div>
-      <nav class="nav-bar">
-        <ul class="nav-bar-ul">
+      <nav class="nav">
+        <ul class="nav-ul">
           <li><a href="#"> npm Enterprise </a></li>
           <li><a href="#"> Products </a></li>
           <li><a href="#"> Solutions </a></li>
@@ -16,17 +17,17 @@
       </nav>
     </div>
   
-    <div class="npm-search-row">
-      <img src="images/npm-logo.png" alt="npm logo"/> <br>
-      <img src="images/magnifying-glass.png" alt="magnifying glass"/>
-
+    <div>
+      <img class="npm-logo" src="images/npm-logo.png" alt="npm logo"/> <br>
+      
       <form id="search" role="search" method="post">
-        <input type="search" placeholder="Search packages">
-        <input value="Search" type="submit">
+        <img class="mag-glass" src="images/magnifying-glass.png" alt="magnifying glass"/>
+        <input class="searchbox" type="search" placeholder="Search packages">
+        <input class="search-btn" value="Search" type="submit">
       </form>
 
-      <div class="join-login-btns"> 
-          <a href="#">Join</a> <a href="#">Log In</a>
+        <div> 
+          <a class="join-btn-header" href="#">Join</a> <a class="login-header" href="#">Log In</a>
         </div> <!-- add logo, search bar & buttons (or links & style them as buttons later) -->
     </div>
   </header>
@@ -34,12 +35,12 @@
   <!--section 1-->
   <section id="build">
       <h1> Build amazing things </h1>
-      <article>
+      <article class="build-box">
         <p> Essential JavaScript development tools that help you go to market faster and build powerful applications using modern open source code. </p>
       </article>
       <div>
-          <a href="#">See Plans</a> 
-          <a href="#">Join for free</a>
+          <a class="plans-btn" href="#">See Plans</a> 
+          <a class="join-btn" href="#">Join for free</a>
       </div>
   </section>
   
