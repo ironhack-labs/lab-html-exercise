@@ -261,3 +261,10 @@ In this exercise, you've built a clone of a piece of the npm home page. This sit
 This concludes the HTML / CSS module. We are proud of you!
 
 _The Ironhack team :heart:_
+
+======== CULLED CODE ==========
+<form id="search" role="search" method="post">
+        <img class="mag-glass" src="images/magnifying-glass.png" alt="magnifying glass"/>
+        <input class="searchbox" type="search" placeholder="Search packages">
+        <input class="search-btn" value="Search" type="submit">
+      </form>
