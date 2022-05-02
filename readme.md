@@ -268,3 +268,9 @@ _The Ironhack team :heart:_
         <input class="searchbox" type="search" placeholder="Search packages">
         <input class="search-btn" value="Search" type="submit">
       </form>
+
+      /* .search {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+  }*/

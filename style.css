@@ -44,22 +44,30 @@ header > div {
 	  align-content: center;
   }
 
-  .search {
-    width: 1200px;
-    height: 30px;
+  /* credit to https://codepen.io/jonwelsh for construction of the search bar and button */
+  .search-bar {
+    width: 1300px;
+    height: 42px;
     margin: 5px auto;
-    background: rgba(0,0,0,.2);
+    background: rgba(195, 195, 195, 0.2);
     border: 1px solid #fff;
   }
     
      input {
-      width: 400px;
+      width: 600px;
+      height: 42px;
       padding: 10px 5px;
       float: left;
       color: #ccc;
       border: 0;
       background: transparent;
-      border-radius: 3px 0 0 3px;
+      border-radius: 0;
+    }
+
+    /* credit to @viole Atkinson from prework slack group for this placeholder bit */
+    input[type="search"]::placeholder{
+        padding-left: 40px;
+        letter-spacing: 1.5px;
     }
     
     button {
@@ -68,23 +76,19 @@ header > div {
       border: 0;
       padding: 0;
       cursor: pointer;
-      height: 40px;
-      width: 120px;
+      height: 42px;
+      width: 80px;
       color: #fff;
-      background: transparent;
+      background: #fb3e44;
       border-left: 1px solid #fff;
-      border-radius: 0 3px 3px 0;
     }  
 
- /* .search {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-  }*/
-
   .mag-glass {
-      width: 20px;
-      background-color: lightgray;
+      width: 25px;
+      background: transparent;
+      margin-top: 7px;
+      position: relative;
+      left: -590px;
   }
 
   .join-btn-header {
@@ -97,7 +101,7 @@ header > div {
     border: 1px solid rgb(173, 173, 173);
   }
 
-  .login-header {
+  .login-btn-header {
     background-color: #ffffff;
     color: rgb(100, 100, 100);
     text-decoration: none;
@@ -111,6 +115,7 @@ header > div {
       justify-content: space-evenly;
       align-items: center;
       flex-direction: column;
+      align-content: space-around;
       height: 600px;
       background-color: rgba(232, 217, 217, .3)
   }
@@ -123,7 +128,6 @@ header > div {
 
   #build article {
       width: 525px;
-      margin: 0 0;
       font-size: 1.2em;
       text-align: center;
   }
@@ -139,8 +143,8 @@ header > div {
 }
 
 #build a {
-    font-size: 1em;
-    font-weight: 900;
+    font-size: 1.1em;
+    font-weight: 950;
 }
 
 .plans-btn {
@@ -181,7 +185,6 @@ header > div {
     font-size: 2.3em;
     font-weight: 950;
     background-color: rgba(255,204,53,.4);
-    background-position-y: 100%;
     transform: skew(9deg, 0deg);
     font-style: italic;
   }
@@ -198,14 +201,18 @@ header > div {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: space-evenly;
+	justify-content: center;
 	align-items: center;
-	align-content: flex-start;
-    width: 1100px;
+	align-content: center;
+    width: 1300px;
+    position: relative;
+    left: 200px;
 }
 
 #features div {
     width: 250px;
+    margin-right: 12px;
+    margin-left: 12px;
 }
 
 .feature-box {
@@ -230,7 +237,7 @@ header > div {
 .org-button {
    background-color: black;
    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
-   margin: 30px 30px;
+   margin: 30px 50px;
    color: white;
    text-decoration: none;
    letter-spacing: 0.5px;
