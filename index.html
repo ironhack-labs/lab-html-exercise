@@ -9,7 +9,7 @@
    <header id="top-page-header">
        <div class="top-div-header">
            <div id="left-menu">
-            <img src="./images/black-heart.png" alt="black-heart">
+            <img class="blackHeart" src="./images/black-heart.png" alt="black-heart">
             <span>Never Endering Pun Machine</span>
            </div>
            <nav id="">
@@ -23,25 +23,27 @@
                </ul>
            </nav>
        </div>
-       <hr>
+       
        <div class="top-div-header">
-           <img src="./images/npm-logo.png" alt="logo npm">
+        <img src="./images/npm-logo.png" id="npm-logo" alt="logo npm">
+          
            <form>
-            <input type="search" id="search-bar" placeholder="Search packages" >
-            <input type="submit" id="submit-search" value="Search" >
+            <label for="search-bar"> <img class="magnifying-glass" src="./images/magnifying-glass.png" alt="magnifying-glass"></label>
+            <input type="search" name="search-bar" id="search-bar" placeholder="Search packages" >
+            <button type="submit" id="submit-search" value="Search">Search</button>
            </form>
            <div id="right-button-menu">
-               <a href="#">Join</a>
+               <a href="#" id="join-button" >Join</a>
                <a href="#">Log in</a>
            </div>
        </div>
    </header>
     <section id="introduction-plan">
-        <h1>Build Amazing things</h1>
+        <h1>Build amazing things</h1>
         <article>Essential Javascript development tools that help you go to market faster and build powerful applications using modern open source code</article>
         <div class="button-section">
-            <a href="#">See plans</a>
-            <a href="#">Join for free</a>
+            <a href="#" id="red-button">See plans</a>
+            <a href="#"id="white-button">Join for free</a>
         </div>
     </section>
     <section id="presentation-product">
