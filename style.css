@@ -38,7 +38,7 @@ header > div {
   }
 
   .top-div-header form{
-    width: 80%;
+    width: 70%;
     display: flex;
     justify-content: flex-start;
     margin-top: 5px;
@@ -84,23 +84,27 @@ header > div {
   #join-button {
     border: 1px solid black;
   }
-  #introduction-plan {
+  #introduction-plan, #presentation-product {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     height: 600px;
+    
+    
+  }
+  #introduction-plan {
     background-color: rgba(232, 217, 217, 3);
     
   }
 
-  #introduction-plan h1{
+  #introduction-plan h1, #presentation-product h1{
     font-size: 72px;
     margin: 0px 0px;
     font-weight: 1000;
   }
   
-  #introduction-plan > article{
+  #introduction-plan article{
     width: 410px;
     text-align: center;
     margin: 45px 0px 60px 0px;
@@ -126,8 +130,25 @@ header > div {
     box-shadow: 8px 8px 0 rgba(251,59,73,.2);
   }
   #white-button{
-    
     color:black;
   }
 
-  
+  #presentation-product img{
+    height: 200px;
+    
+  }
+  #presentation-product h1{
+    font-size: 36px;
+    background-color: rgba(255, 204, 53, .4);
+    transform: skew(9deg,0deg);
+    font-style: italic;
+    padding: 0 20px;
+    margin: 60px 0px 40px 0px;
+  }
+
+  #presentation-product article{
+    width: 700px;
+    text-align: center;
+    
+    
+  }
