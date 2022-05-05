@@ -14,31 +14,31 @@
             </div>
             <nav>
                 <ul>
-                    <li>npm Enterprise</li>
-                    <li>Products</li>
-                    <li>Solutions</li>
-                    <li>Resources</li>
-                    <li>Docs</li>
-                    <li>Support</li>
+                    <li><a href="#"> npm Enterprise </a></li>
+                    <li><a href="#"> Products </a></li>
+                    <li><a href="#"> Solutions </a></li>
+                    <li><a href="#"> Resources </a></li>
+                    <li><a href="#"> Docs </a></li>
+                    <li><a href="#"> Support </a></li>
                 </ul>
             </nav>
         </div>
         <div>
             <img class="npmLogo" src="./images/npm-logo.png" alt="npm logo" />
-            <form>
-                <img class="serachLogo" src="./images/magnifying-glass.png" alt="Search Logo" />
-                <input type="text" value="Search packages">
-                <input type="button" value="Search">
+            <form class="searchBar">
+                <img class="searchLogo" src="./images/magnifying-glass.png" alt="Search Logo" />
+                <input class ="searchText" type="text" placeholder="Search packages">
+                <input class = "searchButton" type="button" value="Search">
             </form>
             <div>
-                <a href="#">Join </a>
-                <a href="#">Log In</a>
+                <a href="#" class="headerLinks">Join</a>
+                <a href="#" class="headerLinks" class = "loginLink">Log In</a>
             </div> 
         </div>
 
     </header>
 
-    <section id="firstSection">
+    <section id="first-section">
         <h1>Build amazing things </h1>
 
         <article>
@@ -46,14 +46,13 @@
             modern open source code.
         </article> 
 
-        <div>
-            <a href="#">See plans</a>
-            <a href="#">Join for free</a>
+        <div class="buttons">
+            <a href="#" class="buttonSeePlan">See plans</a>
+            <a href="#"class="buttonJoinFree">Join for free</a>
         </div>
-
     </section>
 
-    <section id="secondSection">
+    <section id="second-section">
         <object data="./images/triangle-hexagon.svg" id="secondSectionLogo"></object>
         <h2>Bring the best of open source to your company</h2>
          <article>
@@ -62,7 +61,7 @@
         </article>
     </section>
 
-    <section id="thirdSection">
+    <section id="third-section">
         <div>
             <object data="./images/zero-configuration.svg"></object>
             <h3>Zero configuration </h3>
@@ -81,11 +80,11 @@
         </div>
         <div>
             <object data="./images/npm-audit.svg"></object>
-            <h4>npm audit </h4>
+            <h3>npm audit </h3>
             <p>Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer.</p>
         </div>
         <form>
-            <input type="button" value=" Create an Org ">
+            <input id="button" type="button" value=" Create an Org ">
         </form>
     </section>
   </body>
