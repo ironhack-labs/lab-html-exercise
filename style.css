@@ -2,19 +2,13 @@
 
 body {
     font-family: 'Poppins';
-    /* padding: 0 10px;  */
 }
 
-/* 
-- letterspacing "Search"
-- org Button
-- Last Part Spaces, Font-size
-*/
 
+/* navbar */
 
-                                                /* navbar */
 #navbar {
-    margin: 0 20px;
+    margin: 0 1.5em;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -49,9 +43,11 @@ nav a:hover {
     width: 20px;
     margin: 0 1rem;
 }
-                                                /* searchbar */
+
+
+/* searchbar */
+
 #searchbar {
-    /* padding-left: 25px; */
     display: flex;
     align-items: center;
     margin: 0.4em 0 0 1.7em;
@@ -65,7 +61,7 @@ nav a:hover {
 
 #npm-logo img {
     width: 70px;
-    margin-right: 15px;
+    margin: 0 1em;
 }
 
 #searchbar-form {
@@ -106,12 +102,14 @@ button[type="submit"] {
     height: 40px;
     padding: 3px 14px;
     color: white;
+    letter-spacing: 1px;
 }
-/* Here is something odd on screens larger than 1500px: It appears as the searchform extends behind and beyond the button to the right. But it´s not the form, it´s just gray space. Can´t figure this one out... */
+/* Here is something odd on screens larger than 1500px: 
+It appears as the searchform extends behind and beyond 
+the button to the right. Can´t figure this one out... */
+
 #join-btn {
     width: 170px;
-    /* position: relative;
-    bottom: 3px; */
     margin-left: 1.5em;
 }
 
@@ -135,13 +133,15 @@ button[type="submit"] {
     border: 1px solid black;
 }
 
-                                        /* main - upper part */
+
+/* main - upper part */
 
 #background {
     height: 600px;
     width: 100%;
-    margin: 10px 20px 0 20px;
+    margin: 10px 1.5em 0 1.5em;
     background-color: rgba(232,217,217,.3);
+    box-shadow: inset 0 7px 5px -7px rgba(0,0,0,0.3);
 }
 
 main h1 {
@@ -170,7 +170,7 @@ main h1 {
 display: flex;
 justify-content: center;
 }
-/* Nicht elegant, vielleicht besser beiden Button eine ID geben???  */
+
 #upper-part-button a {
     display : flex;
     justify-content : center;
@@ -204,9 +204,7 @@ justify-content: center;
 }
 
 
-                                        /* main - mid part */
-
-/* .mid-image-container {} */
+/* main - mid part */
 
 #mid-part {
     display: flex;
@@ -247,19 +245,20 @@ justify-content: center;
     width: 68vw;
     max-width: 770px;
 }
-                                        /* main - last part */
+
+
+/* main - last part */
 
 #end-part {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    padding: 0 5em;
-    margin-top: 5em;
+    justify-content: center;
+    margin: 8em 8em 0;
 }
 
 .end-part-container {
     width: 20vw;
-    max-width: 260px;
+    max-width: 250px;
     padding: 0 15px;
     display: flex;
     align-items: flex-start;
@@ -267,6 +266,7 @@ justify-content: center;
 }
 
 .end-part-container h3 {
+    font-size: 1em;
     color: #ED1C24;
 }
 
@@ -278,38 +278,16 @@ justify-content: center;
     display : flex;
     justify-content : center;
     align-items : center;
+    background-color: #000;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    width: 26em;
+    height: 4em;
+    margin: 5em auto;
 }
 
 #org-button a {
-    background-color: #000;
-    padding: 20px 120px;
-    margin: 50px 0;
     text-decoration: none;
     color: white;
-    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    font-weight: 600;
+    font-size: 1.1em;
 }
-
-
-/* form label color: rgba(0,0,0,.05)
-form input color: rgba(0,0,0,.05)
-form button background color: #fb3e44
-form button letters color: white
-
-
-suggested height for this section: 600px
-background color: rgba(232,217,217,.3)
-"See plans" button background color: #FB3B49
-"See plans" button box shadow: 8px 8px 0 rgba(251,59,73,.2)
-
-
-heading background color: 
-to get the transform of the yellow background in the left-hand direction use: transform: skew(9deg,0deg);
-to get it in the opposite direction of the letters, the way we need it on the page, use: font-style: italic;
-to additionally fine-tune the position of each element, use margin property.
-
-
-color of the letters in each heading in this section: #ED1C24
-"Create an Org" box shadow: 8px 8px 0 rgba(128,83,35,.2)
-"Create an Org" letters color: white
-
-*/
