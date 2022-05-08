@@ -39,7 +39,7 @@ nav a {
 
 nav a:hover {
         opacity: .5;
-        transition: opacity .15s ease-in;
+        transition: all .15s ease-in;
     }
 
 .blackHeart {
@@ -104,10 +104,10 @@ nav a:hover {
     color: white;
     letter-spacing: 1px;
 }
-###############################################################
-#searchbar-form > button[type="submit"]:hover {
-    background-color: #fb3e44;
-    color: white;
+
+#searchbar-form > button:hover {
+    background-color: #cc0413;
+    transition: all 0.15s ease-in;
 }
 
 #join-btn {
@@ -126,7 +126,7 @@ nav a:hover {
 
 #join-btn a:hover {
     opacity: .5;
-    transition: opacity .15s ease-in;
+    transition: all .15s ease-in;
 }
 
 #join-btn a:nth-of-type(1) {
@@ -159,7 +159,6 @@ main h1 {
 }
 
 #upper-part p {
-    width: 35vw;
     margin: 0 auto;
     font-size: 20px;
     font-weight: 500;
@@ -188,7 +187,10 @@ justify-content: center;
 }
 
 #upper-part-button a:hover {
-    background-color: #f7f7f7;
+    background-color: #f4f4f4;
+    transition: background-color 0.15s ease-in,
+    box-shadow 0.3s ease-in-out;
+    box-shadow: 4px 4px 0 rgba(0,0,0,.2);
 }
 
 #upper-part-button a:nth-of-type(1) {
@@ -200,6 +202,7 @@ justify-content: center;
 #upper-part-button a:nth-of-type(1):hover {
     box-shadow: 4px 4px 0 rgba(0,0,0,.2);
     background-color: #cc0413;
+    transition: all 0.15s ease-in;
 }
 
 /* main - mid part */
@@ -279,6 +282,11 @@ justify-content: center;
     margin: 5em auto;
     box-shadow: 8px 8px 0 rgba(128,83,35,.2);
     background-color: #000;
+}
+
+#org-button:hover {
+    box-shadow: 4px 4px 0 rgba(0,0,0,.2);
+    transition: all 0.15s ease-in;
 }
 
 #org-button a {
