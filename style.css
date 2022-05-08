@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
 
 * {
 	margin: 0;
@@ -53,7 +53,7 @@ a {
 .navbar ul {
 	display: flex;
 	align-items: center;
-	gap: 0.5rem;
+	gap: 1.4rem;
 	padding-right: 3rem;
 }
 
@@ -129,6 +129,7 @@ a {
 	text-align: center;
 	background-color: #f7f3f3;
 	padding-top: 9rem;
+	margin-bottom: 7rem;
 }
 
 #cta h1 {
@@ -140,7 +141,7 @@ a {
 #cta p {
 	max-width: 480px;
 	margin: 0 auto 6rem;
-	font-size: 1.4rem;
+	font-size: 1.8rem;
 	font-weight: 500;
 	line-height: 1.6;
 }
@@ -149,7 +150,7 @@ a {
 	display: flex;
 	justify-content: center;
 	gap: 4rem;
-	padding-bottom: 10rem;
+	padding-bottom: 12rem;
 }
 
 .cta-btns-container button {
@@ -169,4 +170,72 @@ a {
 .cta-btns-container button:nth-child(2) {
 	background-color: #fff;
 	border: none;
+}
+
+/********* MAIN SECTION STYLES ***********/
+
+#main {
+	margin-bottom: 12rem;
+	text-align: center;
+}
+
+#main img {
+	height: 180px;
+	margin-bottom: 5rem;
+}
+
+#main h2 {
+	width: 55%;
+	font-size: 3rem;
+	font-weight: 600;
+	margin: 0 auto 2rem;
+	background-color: rgba(255, 204, 53, 0.4);
+	transform: skew(9deg, 0deg);
+}
+
+#main p {
+	max-width: 680px;
+	margin: auto;
+	font-size: 1.4rem;
+}
+
+/********* PERKS SECTION STYLES ***********/
+
+#perks {
+	display: flex;
+	justify-content: center;
+	gap: 6rem;
+	margin-bottom: 7rem;
+}
+
+.perk img {
+	height: 30px;
+	margin-bottom: 1rem;
+}
+
+.perk h3 {
+	font-size: 1.4rem;
+	color: #ed1c24;
+	margin-bottom: 2rem;
+}
+
+.perk p {
+	font-size: 1.4rem;
+	max-width: 220px;
+}
+
+/********* CREATE BTN STYLES ***********/
+
+.create-btn {
+	text-align: center;
+}
+
+.create-btn button {
+	margin-bottom: 2rem;
+	padding: 1rem 9rem;
+	font-size: 1.6rem;
+	font-weight: bold;
+	color: #fff;
+	background-color: #000000;
+	box-shadow: 8px 8px 0 rgba(128, 83, 35, 0.2);
 }
