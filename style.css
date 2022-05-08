@@ -4,15 +4,18 @@ body {
     font-family: 'Poppins';
 }
 
+/* 
+* Search Button Hover
+*/
+
 
 /* navbar */
-
 #navbar {
-    margin: 0 1.5em;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid lightgray;
+    margin: 0 1.5em;
 }
 
 nav {
@@ -20,18 +23,18 @@ nav {
 }
 
 nav ul {
-    list-style: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    list-style: none;
     margin-right: 2em;
 }
 
 nav a {
+    color: black;
     font-size: 14px;
     font-weight: 500;
     text-decoration: none;
-    color: black;
 }
 
 nav a:hover {
@@ -46,7 +49,6 @@ nav a:hover {
 
 
 /* searchbar */
-
 #searchbar {
     display: flex;
     align-items: center;
@@ -61,52 +63,52 @@ nav a:hover {
 
 #npm-logo img {
     width: 70px;
-    margin: 0 1em;
+    margin: 0 1em 0 1.5em;
 }
-
+/* Check here again Check here again Check here again Check here again */
 #searchbar-form {
     display: flex;
-    flex-grow: 1; 
+	flex-grow: 1; 
     height: 40px;
-    width: auto;
     background-color: rgba(0,0,0,.05);
 }
 
 #searchbar-form-img-container {
-    width: 30px;
-    height: 40px;
-    background-color: rgba(0,0,0,.05);
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    width: 30px;
+    height: 40px;
+    background-color: rgba(0,0,0,.05);
 }
 
 #searchbar-form img {
-    height: 14px;
     width: auto;
+    height: 14px;
 }
 
 #searchbar-form input {
+    width:100%;
     height: 40px;
-    width:90%;
+    padding-left: 10px;
     border: none;
     background-color: rgba(0,0,0,.05);
-    padding-left: 10px;
-    position: relative;
     font-family: "Consolas", monospace;
 }
 
-button[type="submit"] {
-    border: none;
-    background-color: #fb3e44;
+#searchbar-form > button[type="submit"] {
     height: 40px;
     padding: 3px 14px;
+    border: none;
+    background-color: #fb3e44;
     color: white;
     letter-spacing: 1px;
 }
-/* Here is something odd on screens larger than 1500px: 
-It appears as the searchform extends behind and beyond 
-the button to the right. Can´t figure this one out... */
+###############################################################
+#searchbar-form > button[type="submit"]:hover {
+    background-color: #fb3e44;
+    color: white;
+}
 
 #join-btn {
     width: 170px;
@@ -114,11 +116,11 @@ the button to the right. Can´t figure this one out... */
 }
 
 #join-btn a {
+    padding: 4px 14px;
+    border: none;
     background-color: #fff;
     color: #000;
     font-size: 0.8em;
-    border: none;
-    padding: 4px 14px;
     text-decoration: none;
 }
 
@@ -127,29 +129,27 @@ the button to the right. Can´t figure this one out... */
     transition: opacity .15s ease-in;
 }
 
-
 #join-btn a:nth-of-type(1) {
-    background-color: #fff;
     border: 1px solid black;
+    background-color: #fff;
 }
 
 
 /* main - upper part */
-
 #background {
-    height: 600px;
     width: 100%;
+    height: 600px;
     margin: 10px 1.5em 0 1.5em;
-    background-color: rgba(232,217,217,.3);
     box-shadow: inset 0 7px 5px -7px rgba(0,0,0,0.3);
+    background-color: rgba(232,217,217,.3);
 }
 
 main h1 {
+    padding-top: 80px;
+    margin: 0 0 25px 0;
     font-size: 80px;
     font-weight: 700;
     text-align: center;
-    padding-top: 80px;
-    margin: 0 0 25px 0;
 }
 
 #upper-part {
@@ -160,10 +160,10 @@ main h1 {
 
 #upper-part p {
     width: 35vw;
+    margin: 0 auto;
     font-size: 20px;
     font-weight: 500;
     text-align: center;
-    margin: 0 auto;
 }
 
 #upper-part-button {
@@ -177,14 +177,14 @@ justify-content: center;
     align-items : center;
     min-width: 250px;
     padding: 20px;
-    font-size: 20px;
-    font-weight: 700;
     border: none;
+    margin: 3em 1em;
     background-color: #fff;
     color: black;
+    font-size: 20px;
+    font-weight: 700;
     text-decoration: none;
     text-align: center;
-    margin: 3em 1em;
 }
 
 #upper-part-button a:hover {
@@ -192,20 +192,17 @@ justify-content: center;
 }
 
 #upper-part-button a:nth-of-type(1) {
-    color: white;
-    background-color: #fb3e44;
     box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+    background-color: #fb3e44;
+    color: white;
 }
 
 #upper-part-button a:nth-of-type(1):hover {
-    color: white;
+    box-shadow: 4px 4px 0 rgba(0,0,0,.2);
     background-color: #cc0413;
-    box-shadow: none;
 }
 
-
 /* main - mid part */
-
 #mid-part {
     display: flex;
     flex-direction: column;
@@ -213,42 +210,41 @@ justify-content: center;
 }
 
 #mid-part img {
+    position: relative;
     width: 220px;
     margin: 4em 0 0;
-    position: relative;
 }
 
 #trapeze-background {
-    width: 100%;
-    height: 2.5em;
-    background-color: rgba(255,204,53,.4);
-    transform: skew(9deg,0deg);
-    font-style: italic;
     position: relative;
     z-index: -1;
     top: 73px;
+    width: 100%;
+    height: 2.5em;
+    background-color: rgba(255,204,53,.4);
+    font-style: italic;
+    transform: skew(9deg,0deg);
 }
 
 #mid-part h2 {
+    padding: 0 32px;
+    margin-bottom: 0.7em;
     text-align: center;
     font-size: 2.25em;
     font-weight: 600;
-    padding: 0 32px;
-    margin-bottom: 0.7em;
 }
 
 #mid-part p {
-    margin: auto;
-    text-align: center;
-    font-size: 1em;
-    font-weight: 400;
     width: 68vw;
     max-width: 770px;
+    margin: auto;
+    font-size: 1em;
+    font-weight: 400;
+    text-align: center;
 }
 
 
 /* main - last part */
-
 #end-part {
     display: flex;
     flex-direction: row;
@@ -257,17 +253,17 @@ justify-content: center;
 }
 
 .end-part-container {
-    width: 20vw;
-    max-width: 250px;
-    padding: 0 15px;
     display: flex;
     align-items: flex-start;
     flex-direction: column;
+    width: 20vw;
+    max-width: 250px;
+    padding: 0 15px;
 }
 
 .end-part-container h3 {
-    font-size: 1em;
     color: #ED1C24;
+    font-size: 1em;
 }
 
 .end-part-container img {
@@ -278,16 +274,16 @@ justify-content: center;
     display : flex;
     justify-content : center;
     align-items : center;
-    background-color: #000;
-    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
     width: 26em;
     height: 4em;
     margin: 5em auto;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    background-color: #000;
 }
 
 #org-button a {
-    text-decoration: none;
     color: white;
     font-weight: 600;
     font-size: 1.1em;
+    text-decoration: none;
 }
