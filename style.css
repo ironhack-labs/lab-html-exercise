@@ -5,14 +5,17 @@ form button letters color: white */
 
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
-*{
+* {
   box-sizing: border-box;
   text-decoration: none;
+  outline: none;
 }
 body {
   font-family: 'Poppins';
 }
-
+a:visited {
+  color: black;
+}
 /* -------------------------HEADER-------------------- */
 header > div {
   padding: 0 25px;
@@ -43,8 +46,8 @@ nav a {
   margin-right: 1rem;
 }
 /* -----------------header div 2 */
-.header_div2{
-  margin: 19px 0 19px 0;
+.header_div2 {
+  margin: 19px 0 0 0;
   padding-bottom: 19px;
 }
 .logo_header {
@@ -54,24 +57,135 @@ nav a {
 }
 .search_bar {
   height: 52px;
-  width: 940px;
-  background: rgba(0,0,0,.05);
+  width: 910px;
+  background: rgba(0, 0, 0, 0.05);
   border: none;
   margin-left: -30px;
 }
-span img{
+form {
+  display: flex;
+  justify-content: center;
+}
+.header_div2 span img {
   width: 18px;
   height: 18px;
+}
+.header_div2 form span {
+  width: 38px;
+  height: 52px;
+  display: block;
+  margin-right: 30px;
+  background: rgba(0, 0, 0, 0.05);
+  position: relative;
+}
+.header_div2 form span img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 form button {
   height: 52px;
   width: 116px;
-  color:white ;
-  background:#fb3e44;
+  color: white;
+  background: #fb3e44;
   border: none;
+}
+.header_div2 span a {
+  height: 52px;
+  width: 116px;
 }
 
 /* -------------------------SECTION 1-------------------- */
-/* -------------------------SECTION 2-------------------- */
-/* -------------------------SECTION 3-------------------- */
+.first_section {
+  background: rgba(232, 217, 217, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+}
+.first_section h1 {
+  font-weight: 600;
+  font-size: 70px;
+}
+.first_section article {
+  width: 450px;
+  height: 100px;
+  text-align: center;
+}
+.first_section_seeplans {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 450px;
+  height: 100px;
+}
+.first_section_seeplans div {
+  text-align: center;
+  line-height: 50px;
+  width: 220px;
+  height: 50px;
+}
+.first_section_seeplans .seeplans {
+  background: #fb3b49;
+  color: white;
+  box-shadow: 8px 8px 0 rgba(251, 59, 73, 0.2);
+}
 
+/* -------------------------SECTION 2-------------------- */
+.second_section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 150px 0 150px 0;
+}
+.second_section img {
+  width: 300px;
+  height: 300px;
+}
+.second_section h1 {
+  font-size: 30px;
+  font-weight: 600;
+  font-style: italic;
+  background: rgba(255, 204, 53, 0.4);
+  transform: skew(9deg, 0deg);
+}
+.second_section article {
+  width: 650px;
+  text-align: center;
+}
+/* -------------------------SECTION 3-------------------- */
+.third_section img {
+  width: 45px;
+  height: 45px;
+}
+.third_section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 600px;
+}
+.third_section_list {
+  display: flex;
+  justify-content: space-evenly;
+}
+.third_section_list div {
+  width: 300px;
+  height: 200px;
+  padding: 30px;
+}
+.third_section_list div h4 {
+  color: #ed1c24;
+}
+.footer {
+  width: 350px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  box-shadow: 8px 8px 0 rgba(128,83,35,.2); 
+  color: white;
+  background: black;
+}
