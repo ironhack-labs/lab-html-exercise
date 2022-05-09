@@ -79,7 +79,7 @@ We could try to represent this part of the website with the following:
 <header>
   <div>
     <div>
-      <img class="blackHeart" src="LINK TO IMAGE GOES HERE" alt="black heart" />
+      <img class="blackHeart" src="/images/black-heart.png" alt="black heart" />
       <span> Nifty Penguin Magic </span>
     </div>
     <nav>
@@ -96,7 +96,9 @@ We could try to represent this part of the website with the following:
 
   <div>
     <!-- add logo, search bar and buttons (or links and style them as buttons later) -->
+    <img class="logo" src="/images/npm-logo.png" alt="npm logo" />
   </div>
+  
 </header>
 ```
 
