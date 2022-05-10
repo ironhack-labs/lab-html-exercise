@@ -1,56 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Simple Web Page</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <header>
-      <div>
-        <div>
-          <img class="blackHeart" src="images/black-heart.png" alt="black heart" />
-          <span> Nifty Penguin Magic </span>
-        </div>
-        <nav>
-          <ul>
-            <li><a href="#"> npm Enterprise </a></li>
-            <li><a href="#"> Products </a></li>
-            <li><a href="#"> Solutions </a></li>
-            <li><a href="#"> Resources </a></li>
-            <li><a href="#"> Docs </a></li>
-            <li><a href="#"> Support </a></li>
-          </ul>
-        </nav>
-      </div>
-      <div id="search-bar">
 
-        <img class="npm-logo" src="images/npm-logo.png" alt="npmlogo" />
-    
-        <img class="magnifying-glass" src="images/magnifying-glass.png" alt="magnifying glass image"/>
-         
-    
-        <form action="" class="form">
-          <input type="text" placeholder="Search packages" class="search-input">
-          <input type="button" value="Search" class="search-button" />
-        </form>
-    
-        <a href="#" class="link gray-border">Join</a>
-        <a href="#" class="link join-log-btn">Log in</a>
+<head>
+  <meta charset="UTF-8" />
+  <title>Simple Web Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <div>
+      <div>
+        <img class="blackHeart" src="images/black-heart.png" alt="black heart" />
+        <span> Nifty Penguin Magic </span>
       </div>
+      <nav>
+        <ul>
+          <li><a href="#"> npm Enterprise </a></li>
+          <li><a href="#"> Products </a></li>
+          <li><a href="#"> Solutions </a></li>
+          <li><a href="#"> Resources </a></li>
+          <li><a href="#"> Docs </a></li>
+          <li><a href="#"> Support </a></li>
+        </ul>
+      </nav>
+    </div>
+    <div id="search-bar">
+
+      <img class="npm-logo" src="images/npm-logo.png" alt="npmlogo" />
+
+      <img class="magnifying-glass" src="images/magnifying-glass.png" alt="magnifying glass image" />
+
+
+      <form action="" class="form">
+        <input type="text" placeholder="Search packages" class="search-input">
+        <input type="button" value="Search" class="search-button" />
+      </form>
+
+      <a href="#" class="link gray-border">Join</a>
+      <a href="#" class="link join-log-btn">Log in</a>
+    </div>
+    <div class="container">
       <div class="build-amazing-things">
-        <div class="container">
-          <div class="amazing-things-text">
-            <h1>Build amazing things</h1>
-            <p>npm is the package manager for Javascript and the world's largest software registry.
-            Discover packages of reusable code - and assemble them in powerful new ways.</p>
-            <div class="buttons">
+        <div class="amazing-things-text">
+          <h1>Build amazing things</h1>
+          <p>Essential JavaScript development tools that help you go to market faster and build powerful applications
+            using modern open source code.</p>
+          <div class="buttons">
             <a href="#" class="see-plans">See plans</a>
             <a href="#" class="free-join">Join for free</a>
           </div>
-          </div>
         </div>
       </div>
-    </header>
-  </body>
+    </div>
+    <section id="bring-the-best">
+
+      <div class="the-best-text">
+        <div class="hexa">
+          <img src="images/triangle-hexagon.svg" alt="triangle-Hexagon">
+        </div>
+        <h2>Bring the best of open source to your Company</h2>
+        <p>npm is the toool used by over 11.000.000 JavaScript developers around the world. Your developers already
+          use it. Your company depends on it. Create an Org and get more out of the tools your team already knows and
+          loves.</p>
+      </div>
+
+    </section>
+    <section id="npm-links">
+      <div class="container-notflex">
+        <div class="npm-quickaccess">
+          <article id="zero" class="function-block">
+            <img alt="zero configuration" src="images/zero-configuration.svg" width="30" height="30" />
+            <h4 style="color:#ED1C24">Zero configuration</h4>
+            <p>Create an org. add your team, and start collaborating. Nothing to configure, set up, or manage.</p>
+          </article>
+          <article id="Team" class="function-block">
+            <img alt="Team managment" src="images/team-management.svg" width="30" height="30" />
+            <h4 style="color:#ED1C24">Team managment</h4>
+            <p>Control who has access to what modules within your team namespace using straightforward team management
+              capabilities.</p>
+          </article>
+          <article id="features" class="function-block">
+            <img alt="Familiar features" src="images/familiar-features.svg" width="30" height="30" />
+            <h4 style="color:#ED1C24">Familiar features</h4>
+            <p>npm Orgs has 100% parity with all the public npm registry features your developers already use.</p>
+          </article>
+          <article id="Audit" class="function-block">
+            <img alt="npm audit" src="images/npm-audit.svg" width="30" height="30" />
+            <h4 style="color:#ED1C24">npm audit</h4>
+            <p>Enjoy the security auditing features built into the npm client, a zero-friction way to make open source
+              software safer.</p>
+          </article>
+        </div>
+        <div class="container">
+          <a href="#" class="create-org" >Create an Org</a>
+        </div>
+      </div>
+    </section>
+
+</body>
+
 </html>
