@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200&display=swap');
+
+html, body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0px;
+}
+
+a, button {
+    cursor: pointer;
+    transition: .3s;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: rgb(171, 169, 169);
+}
+
+
+article img {
+    width: 100px;
+}
+
+button:hover {
+    font-weight: 700;
+    transition: .3s;
+}
+
+article {
+    max-width: 430px;
+}
+
+article p {
+    max-width: 250px;
+}
+
+form, form div, nav, nav div , ul, .nav-top{
+    display: flex;
+    align-items: center;
+}
+
+
+form div {
+    background-color: #ececec;
+    padding-left: 5px;
+}
+
+input[type="search"] {
+    width: 70vw;
+}
+
+form img {
+    width: 20px;
+}
+
+
+h1 {
+    font-size: clamp(2rem, 10vw, 5rem);
+}
+
+h3 {
+    font-size: 20pt;
+    text-align: center;
+}
+
+input {
+    height: 20px;
+    margin-right: 0px;
+    border-radius: 0px;
+    border: none;
+    background: #ececec;
+}
+
+input, nav button {
+    height: 30px;
+}
+
+header {
+    background-color: #f6eae3;
+    height: auto;
+    text-align: center;
+}
+
+li {
+    list-style-type: none;
+    margin: 10px;
+}
+
+
+
+nav {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    min-height: 5vh;
+    padding: 10px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    position: relative;
+}
+
+nav button {
+    width: 60px;
+}
+
+nav div {
+    margin-left: 10px;
+}
+
+nav p:hover {
+    cursor: pointer; 
+    color: rgb(171, 169, 169);
+    transition: .3s;
+}
+
+p {
+    max-width: 500px;
+}
+
+section img {
+    margin-top: 100px;
+    width: 50px;
+}
+
+/* CLASSES */
+
+.article-title {
+    color: rgba(255, 0, 0, 0.75);
+    font-weight: 700;
+}
+
+.section-a p {
+    text-align: center;
+}
+.section-a img {
+    width: 200px;
+}
+
+div#section-a-bg {
+    background-image: url("section-a-bg.png");
+    background-repeat: no-repeat;
+    background-size: 700px;
+    background-position: center;
+    width: 700px;
+}
+
+.section-b {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0 10% 0 10%;
+}
+
+.section-b div {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.section-b button {
+    width: 300px;
+    background-color: rgba(0, 0, 0, 0.75);
+    box-shadow: 5px 10px rgb(211, 198, 198);
+    color: white;
+    border: none;
+    font-size: 16pt;
+    font-weight: 700;
+    height: 50px;
+    margin: 50px;
+}
+
+.hero, .section-a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero button {
+    padding: 25px;
+    width: 250px;
+    margin: 50px 20px 100px 20px;
+    font-size: 16pt;
+    font-weight: 700;
+    border: none;
+}
+
+.hero button:first-child {
+    background-color: rgba(255, 0, 0, 0.75);
+    box-shadow: 5px 10px rgb(246, 192, 192);
+    color: white;
+}
+
+.hero button:nth-child(2) {
+    background-color: white;
+}
+
+
+.nav-btn {
+    border: 1px solid grey;
+}
+
+.nav-btn:nth-child(2) {
+    border: none;
+}
+
+.nav-top {
+    width: 100vw;
+    justify-content: space-between;
+    border-bottom: 1px solid #ececec;
+    margin-bottom: 10px;
+}
+
+.nav-top img {
+    width: 30px;
+    margin-right: 25px;
+}
+
+.search-btn, .nav-btn {
+    background-color: transparent;
+}
+
+.search-btn {
+    border: none;
+    background-color: rgba(255, 0, 0, 0.75);
+    color: white;
+}
+
+@media only screen and (max-width: 600px) {
+
+    article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    article p {
+        text-align: center;
+    }
+
+    input {
+        width: 30vw;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    ul {
+        padding: 0px;
+    }
+
+    .article-title {
+        margin-bottom: 0px;
+    }
+
+    .section-b div {
+        display: block;
+    }
+
+    .hero button:first-child {
+        margin-bottom: 0px;
+    }
+
+    .nav-top div:nth-child(1) {
+        display: none;
+    }
+}
+
+/* ID */
+#logo {
+    width: 60px;
+    margin-right: 10px;
+}
