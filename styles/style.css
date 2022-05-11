@@ -37,9 +37,13 @@ article p {
     max-width: 250px;
 }
 
-form, form div, nav, nav div , ul, .nav-top{
+form, form div, header div , ul, header, nav{
     display: flex;
     align-items: center;
+}
+
+input[type="search"], .search-btn, .header-btn {
+    height: 30px;
 }
 
 
@@ -67,31 +71,34 @@ h3 {
 }
 
 input {
-    height: 20px;
     margin-right: 0px;
     border-radius: 0px;
     border: none;
     background: #ececec;
 }
 
-input, nav button {
+inputheader button {
     height: 30px;
 }
 
-header {
-    background-color: #f6eae3;
-    height: auto;
-    text-align: center;
-}
 
 li {
-    list-style-type: none;
     margin: 10px;
 }
 
-
-
 nav {
+    width: 100vw;
+    justify-content: space-between;
+    border-bottom: 1px solid #ececec;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    margin-right: 20px;
+    list-style: none;
+}
+
+header {
     justify-content: space-between;
     flex-wrap: wrap;
     min-height: 5vh;
@@ -100,19 +107,20 @@ nav {
     position: relative;
 }
 
-nav button {
+header button {
     width: 60px;
 }
 
-nav div {
+header div {
     margin-left: 10px;
 }
 
-nav p:hover {
+header p:hover {
     cursor: pointer; 
     color: rgb(171, 169, 169);
     transition: .3s;
 }
+
 
 p {
     max-width: 500px;
@@ -130,22 +138,22 @@ section img {
     font-weight: 700;
 }
 
-.section-a p {
+.section-b p {
     text-align: center;
 }
-.section-a img {
+.section-b img {
     width: 200px;
 }
 
-div#section-a-bg {
-    background-image: url("section-a-bg.png");
+div#section-b-bg {
+    background-image: url("section-b-bg.png");
     background-repeat: no-repeat;
     background-size: 700px;
     background-position: center;
     width: 700px;
 }
 
-.section-b {
+.section-c {
     align-items: center;
     justify-content: center;
     display: flex;
@@ -153,13 +161,13 @@ div#section-a-bg {
     margin: 0 10% 0 10%;
 }
 
-.section-b div {
+.section-c div {
     display: flex;
     justify-content: space-around;
     width: 100%;
 }
 
-.section-b button {
+.section-c button {
     width: 300px;
     background-color: rgba(0, 0, 0, 0.75);
     box-shadow: 5px 10px rgb(211, 198, 198);
@@ -171,7 +179,14 @@ div#section-a-bg {
     margin: 50px;
 }
 
-.hero, .section-a{
+.hero {
+    background-color: rgba(232,217,217,.3);
+    text-align: center;
+    height: 600px;
+}
+
+
+.hero, .section-b{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -188,8 +203,8 @@ div#section-a-bg {
 }
 
 .hero button:first-child {
-    background-color: rgba(255, 0, 0, 0.75);
-    box-shadow: 5px 10px rgb(246, 192, 192);
+    background-color: #FB3B49;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
     color: white;
 }
 
@@ -197,34 +212,27 @@ div#section-a-bg {
     background-color: white;
 }
 
-
-.nav-btn {
+.header-btn {
     border: 1px solid grey;
 }
 
-.nav-btn:nth-child(2) {
+.header-btn:nth-child(2) {
     border: none;
 }
 
-.nav-top {
-    width: 100vw;
-    justify-content: space-between;
-    border-bottom: 1px solid #ececec;
-    margin-bottom: 10px;
-}
 
 .nav-top img {
     width: 30px;
     margin-right: 25px;
 }
 
-.search-btn, .nav-btn {
+.search-btn,.header-btn {
     background-color: transparent;
 }
 
 .search-btn {
     border: none;
-    background-color: rgba(255, 0, 0, 0.75);
+    background-color: #FB3B49;
     color: white;
 }
 
@@ -244,7 +252,7 @@ div#section-a-bg {
         width: 30vw;
     }
 
-    nav {
+    header {
         flex-direction: column;
     }
 
@@ -256,7 +264,7 @@ div#section-a-bg {
         margin-bottom: 0px;
     }
 
-    .section-b div {
+    .section-c div {
         display: block;
     }
 
@@ -264,7 +272,7 @@ div#section-a-bg {
         margin-bottom: 0px;
     }
 
-    .nav-top div:nth-child(1) {
+header-top div:nth-child(1) {
         display: none;
     }
 }
