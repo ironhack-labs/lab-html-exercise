@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
     <title>NPM Clone</title>
 </head>
 <body>
     <header>
         <div id="nav-bar">
             <div id="logo-left">
-                <p><img src="images/black-heart.png" alt="black heart">
+                <p><img src="images/black-heart.png" alt="black heart" id="blackheart">
                     Nifty Penguin Magic</p>
             </div>    
             <nav>
@@ -25,15 +26,19 @@
             </nav>
         </div>
         <div id="search-bar">
-            <img src="images/npm-logo.png" alt="logo npm">
+            <img src="images/npm-logo.png" alt="logo npm" id="logo">
             <form action="/some-url" method="post">
-                <img src="images/magnifying-glass.png" alt="glass">
-                <label for="searchbar"></label>
-                <input type="text" name="searchbar" id="searchbar" placeholder="Search packages">
-                <input type="button" value="Search">
+                <div id="searchinput">
+                    <span><img src="images/magnifying-glass.png" alt="glass" id="glass"></span>
+                    <label for="searchbar"></label>
+                    <input type="text" name="searchbar" id="searchbar" placeholder="Search packages">
+                </div>
+                <input type="button" value="Search" id="button">
             </form>
-            <a href="#">Join</a>
-            <a href="#">Log In</a>
+            <div id="search-links">
+                <a href="#" id="join">Join</a>
+                <a href="#">Log In</a>
+            </div>
         </div>
     </header>
     <section>
