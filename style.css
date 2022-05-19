@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap');
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+header > section {
+    display: inline-block;
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+    flex-wrap: wrap;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+  
+nav {  
+    width: 600px;
+}
+  
+nav ul, .userAutentication ul, .introPost ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.userAutentication a {
+      text-decoration: none;
+      color: gray;
+      padding: 2px 12px;
+}
+
+.userAutentication .joinButton {
+    border: 1px solid gray;
+    box-shadow: 1px -1px gray;
+}
+  
+.blackHeart {
+    width: 20px;
+    margin-right: 1rem;
+}
+
+.searchingBar button {
+    color: white;
+    background-color: #F23D4C;
+    border-style: none;
+    font-weight: bold;
+    padding: 10px 15px;
+}
+
+input[type="text"] {
+    width: 700px;
+    font-family: "Fira mono", monospace;
+    border-style: none;
+    background-color:#f2f2f2;
+    padding: 10px 15px;
+}
+
+.search > div {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.npm-logo {
+    width: 70px;
+    padding: 10px;
+}
+
+.glass {
+    width: 18px;
+    padding: 9px;
+    background-color: #f2f2f2;
+    border-style: none;
+}
+
+main, footer {
+    text-align: center;
+}
+
+main .introPost {
+    margin-right: 2rem;
+    margin-left: 2rem;
+    position: relative;
+    top: 0.2rem;
+    box-shadow: 0 -2px 0 2px rgb(128 128 128 / 0.2);
+    background-color: #F8F4F4;
+    height: 32rem;
+}
+
+h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -10rem 0 0 -20.5rem;
+    font-size: 4rem;
+    font-weight: bolder;
+}
+
+.introPost p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -2rem 0 0 -13rem;
+    width: 35%;
+}
+
+.introPost section {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    margin: -2rem 0 0 -14.3rem;
+    width: 35%;  
+}
+
+.introPost section .seeButton {
+    font-family: Poppins;
+    padding: 0.7rem 3rem;
+    color: white;
+    background-color: #F23D4C;
+    border-style: none;
+    font-weight: bold;
+    box-shadow: 4px 4px 0 0 rgb(242 61 76 / 0.2);
+}
+
+.introPost section .joinButton {
+    font-family: Poppins;
+    padding: 0.7rem 3rem;
+    color: black;
+    background-color: white;
+    border-style: none;
+    font-weight: bold;
+    box-shadow: 4px 4px 0 0 rgb(128 128 128 / 0.2);
+}
+
+.middlePost {
+    position: relative;
+    height: 32rem;
+}
+
+.middlePost img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -12rem 0 0 -5.3rem;
+    width: 12rem;
+}
+
+.middlePost .skewed {
+    background-color: #FFEBB5;
+    position: absolute;
+    width: 50rem;
+    height: 2.3rem;
+    top: 50%;
+    left: 50%;
+    margin: 1.7rem 0 0 -23.6rem;
+    transform: skew(10deg);
+}
+
+.middlePost h2 {
+    font-size: 2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: 1.5rem 0 0 -22.1rem;
+}
+
+.middlePost p {
+    font-size: 0.9rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: 6rem 0 0 -23rem;
+    width: 60%;
+}
+
+.attributes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+    height: 18rem;
+}
+
+.attributes img {
+    width: 30px;
+}
+
+.attributes h5 {
+    color:#F23D4C;
+    font-weight: bolder;
+}
+
+.attributes p {
+    font-size: 0.8rem;
+}
+
+.attributes .one {
+    width: 17%;
+    padding: 1rem 2rem;
+}
+
+.attributes .two {
+    width: 15%;
+    padding: 1rem 2rem;
+}
+
+.attributes .three {
+    width: 17%;
+    padding: 1rem 2rem;
+}
+
+.attributes .four {
+    width: 15%;
+    padding: 1rem 2rem;
+}
+
+footer {
+    height: 5rem;
+}
+
+footer button {
+    font-family: Poppins;
+    padding: 0.7rem 6rem;
+    color: white;
+    background-color: black;
+    border-style: none;
+    font-weight: bold;
+    box-shadow: 4px 4px 0 0 rgb(128 128 128 / 0.2);
+}
