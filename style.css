@@ -53,7 +53,57 @@ nav a {
     padding-right: 85px;
 }
 
+@media (max-width: 800px) {
+    .header-secondary {
+      flex-direction: column !important;
+    }
 
+    .title{
+        text-align: center;
+    }
+
+    .search-container{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .nav-list{
+        flex-direction: column !important;
+    }
+
+    .buttons{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .btn-plans{
+        margin-right: 0 !important;
+        margin-bottom: 40px;
+    }
+
+    .btn-free-join{
+        margin-bottom: 50px;
+    }
+
+    .group-cards{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+
+    .card {
+        width: 50% !important;
+        margin-bottom: 15px;
+    }
+
+    .card p{
+        text-align: center;
+        max-width: unset !important;
+    }
+  }
 
 .npm-logo {
     width: 60px;
@@ -106,17 +156,17 @@ nav a {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 600px;
+    min-height: 600px;
     background-color: rgba(232,217,217,.3);
     box-shadow: 0px -2px 1px rgb(211 211 211 / 75%);
 }
 
 #first-section .title{
-    font-size: 66px;  
+    font-size: 66px;
 }
 
 #first-section .description p{
-    width: 430px;
+    max-width: 430px;
     text-align: center;
     font-weight: bold;
 }
@@ -171,7 +221,7 @@ nav a {
 }
 
 #second-section .description p{
-    width: 785px;
+    max-width: 785px;
     text-align: center;
 }
 
@@ -190,7 +240,7 @@ nav a {
 }
 
 .group-cards .card p{
-    width: 250px;
+    max-width: 250px;
 }
 
 #third-section h3{
