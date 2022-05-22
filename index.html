@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head></head>
+<head>
+    <link rel="stylesheet" href="/style.css"/>
+</head>
 
 <body>
     <header>
@@ -24,14 +26,14 @@
 
         <div>
             <!-- add logo, search bar and buttons (or links and style them as buttons later) -->
-            <div>
-                <img class="logo" src="/images/npm-logo.png" alt="npm logo" />
+            <div id="search-bar">
+                <img class="npm-logo" src="/images/npm-logo.png" alt="npm logo" />
                 <form class="search-form" action="/search" method="POST">
                     <img class="search" src="/images/magnifying-glass.png" alt="magnifying glass" />
                     <input type="text" placeholder="Search packages"></input>
                     <button>Search</button>
                 </form>
-                <div>
+                <div id="search-links">
                     <a href="/join">Join</a>
                     <a href="/login">Login</a>
                 </div>
@@ -45,7 +47,7 @@
                 using modern open source code.
             </p>
         </article>
-        <div>
+        <div id="header-section-links">
             <a href="/plans">See plans</a>
             <a href="/join">Join for free</a>
         </div>
