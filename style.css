@@ -40,17 +40,18 @@ nav a {
 
 /* searching bar */
 .search {
-  height: 20px;
+  height: 40px;
   width: 80%;
   background-color: rgba(0, 0, 0, 0.2);
-  padding: 10px 0 10px 10px;
+  margin: 10px 0 10px 0;
+  padding-left: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .search > input {
-  height: 20px;
+  height: inherit;
   width: 100%;
   border: none;
   outline: none;
@@ -146,3 +147,34 @@ h1 {
 }
 
 /* section 2 */
+#brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 600px;
+  margin: inherit;
+}
+
+#brand img {
+  height: 30%;
+  width: 30%;
+  margin-bottom: 50px;
+}
+
+h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  background-color: rgba(255, 204, 53, 0.4);
+  transform: skew(9deg, 0deg);
+  font-style: italic;
+  padding: 5px 50px 5px 50px;
+  margin: inherit;
+}
+
+#brand article {
+  padding: 0 25% 30px 25%;
+  text-align: center;
+  margin: 15px 0 5px 0;
+}
