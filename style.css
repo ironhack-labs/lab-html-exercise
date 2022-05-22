@@ -4,6 +4,7 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+/* header */
 header > div {
   padding: 0 25px;
   display: flex;
@@ -12,6 +13,7 @@ header > div {
   border-bottom: 1px solid lightgray;
 }
 
+/* navigator */
 nav {
   width: 600px;
 }
@@ -33,8 +35,35 @@ nav a {
   margin-right: 1rem;
 }
 
-.search{
-  
+/* searching bar */
+.search {
+  height: 20px;
+  width: 80%;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 10px 0 10px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search > input {
+  height: 20px;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  background-color: rgba(0, 0, 0, 0);
+  color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+}
+
+.search > button {
+  height: 40px;
+  width: 8%;
+  font-size: 14px;
+  background-color: #fb3e44;
+  color: white;
+  border: none;
 }
 
 .logo {
@@ -45,4 +74,32 @@ nav a {
 .mag-glass {
   width: 20px;
   margin-right: 1rem;
-  }
+}
+
+/* buttons on the right */
+.link-button {
+  font-size: 14px;
+  display: flex;
+  flex-direction: row;
+}
+
+.link-button a {
+  text-decoration: none;
+  color: black;
+  padding: 5px 20px 5px 20px;
+}
+
+.button-border {
+  background-color: white;
+  border: 1px solid black;
+}
+
+/* section 1 */
+#cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(232, 217, 217, 0.3);
+  height: 600px;
+}
