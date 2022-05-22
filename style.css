@@ -2,6 +2,7 @@
 
 body {
     font-family: 'Poppins';
+    margin: 0 2em 0 2em;
 }
 
 header>div {
@@ -40,12 +41,9 @@ nav a {
     width: 100%;
 }
 
-
-
 .search-form img{
     width: 1.5rem;
 }
-
 
 .search-form{
     display: flex;
@@ -79,7 +77,7 @@ nav a {
     padding: 0;
 }
 
-#search-links  {
+#search-links a:first-child {
     border: 2px solid #eee;
     text-decoration: none;
     color: black;
@@ -105,7 +103,7 @@ nav a {
     align-items: center;
 }
 #header-section h1{
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: 950;
 }
 
@@ -129,21 +127,74 @@ nav a {
 }
 
 #header-section-links a:first-child{
-    background-color: #fb3e44;
+    background-color: #FB3B49;
     color: white;
-    box-shadow: 5px 5px rgba(251, 62, 68,.2);
+    box-shadow:  8px 8px 0 rgba(251,59,73,.2)
 }
 
-/* 
- form label color: rgba(0,0,0,.05)
-form input color: rgba(0,0,0,.05)
-form button background color: #fb3e44
-form button letters color: white
-*/
-/* 
-Useful information:
+.logo-hexagon{
+    width: 12rem;
+}
 
-suggested height for this section: 600px
-background color: rgba(232,217,217,.3)
-"See plans" button background color: #FB3B49
-"See plans" button box shadow: 8px 8px 0 rgba(251,59,73,.2) */
+#open-source-section{
+    height: 400px;
+    /* background-color: rgba(255,204,53,.4); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 0 2rem 0;
+}
+
+#open-source-section h2{
+    font-size: 1.8rem;
+    font-style: bold;
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+    padding: 0 1rem 0 1rem;
+    font-style: italic;
+}
+
+#open-source-section article{
+    width: 60%;
+    text-align: center;
+}
+
+#features-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+#features-section div {
+
+    margin: 2rem;;
+}
+
+
+#features-section h3 {
+    color: #ED1C24;
+}
+
+#features-section .feature-logo{
+    width: 3rem;
+}
+
+#create-org{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: none;
+    margin: 5rem;
+
+}
+#create-org a {
+    padding: 0.8rem 7rem 0.8rem 7rem;
+    background-color: black;
+    text-decoration: none;
+    font-style: none;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
