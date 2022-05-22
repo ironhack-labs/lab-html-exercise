@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+/* universal */
+body {
+    font-family: 'Poppins';
+}
+
+/* header-1-div1 with brandname left, and navbar rightside */
+header>div {
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+}
+
+nav {
+    width: 600px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.blackHeart {
+    width: 20px;
+    margin-right: 1rem;
+}
+
+/* header div2 with logo img, clue impg, searchbar, buttons: search, join, Longin */
+.logo {
+    width: 120px;
+    margin-right: 1rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.clue {
+    display: flex;
+    flex-direction: row;
+    padding: 11px 3px 11px 6px;
+}
+
+.form {
+    background-color: rgb(0, 0, 0, .05);
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 50px;
+}
+
+.form input[type="text"] {
+    width: 96%;
+    padding: 2px;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    background: rgba(0, 0, 0, 0);
+}
+
+
+/* buttons: search, join, Longin */
+.search-button {
+    background-color: #fb3e44;
+    /* Red */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 3px;
+}
+
+.join-button {
+    background: white;
+    border: 1px solid black;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 3px;
+}
+
+.login-button {
+    background: white;
+    border: white;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 3px;
+}
+
+/*section 1 */
+.section-one {
+    background-color: #EFD9D0;
+    /*light pink Pink */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-one article {
+    width: 50%;
+    text-align: center;
+    font-size: 26px;
+    padding: 0 0 80px 0;
+}
+
+
+h1 {
+    font-size: 120px;
+    font-weight: bold;
+}
+
+/*section 1  buttons*/
+.plans-button {
+    background: #fb3e44;
+    /* Red */
+    border: white;
+    color: white;
+    padding: 18px 108px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    margin: 0px 20px 240px 24px;
+    box-shadow: 12px 12px 2px 1px #DBA791;
+    /* Dark Pink */
+}
+
+.joinfree-button {
+    background: white;
+    border: white;
+    color: black;
+    font-weight: bold;
+    padding: 18px 108px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    margin: 0px 20px 240px 24px;
+}
+
+/*section 2 */
+.section-two {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.octapink {
+    padding: 220px 0 0 0;
+}
+
+
+#shape_background {
+    position: relative;
+    display: inline-block;
+    width: 50%;
+    padding: 42px 0 0 0;
+    background-color: #F4D98E;
+    /* sunflower */
+    -webkit-transform: skew(20deg);
+    transform: skew(20deg);
+    align: center;
+}
+
+#shape_background .header {
+    -webkit-transform: skew(-20deg);
+    transform: skew(-20deg);
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    width: 100%;
+    position: absolute;
+    top: -30px;
+}
+
+
+.section-two article {
+    width: 50%;
+    text-align: center;
+    font-size: 18px;
+    padding: 50px 0 220px 0;
+}
+
+/*section 3 */
+
+
+.section-three {
+    display: flex;
+    flex-direction: collumn;
+    justify-content: center;
+    align-items: center;
+}
+
+.pannelrow {
+    display: flex;
+    justify-content: flex-center;
+    align-items: flex-center;
+    padding: 0 150px 0 150px;
+}
+
+.pannels img {
+    width: 55px;
+    flex-direction: row;
+    padding: 0 15px 0 15px;
+}
+
+.pannels h1 {
+    color: #fb3e44;
+    /* Red */
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    padding: 0 15px 0 15px;
+}
+
+.pannels p {
+    color: black;
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    padding: 0 15px 0 15px;
+}
+
+/*section 3 button */
+.org-button {
+    background: black;
+    padding: 15px 150px 25px 150px;
+    margin: 24px 0 24px 0;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.2);
+    /* light grey */
+    border: white;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 24px;
+}
