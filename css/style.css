@@ -1,43 +1,8 @@
-/* * {
-
-  margin: 0;
-  padding: 0;
-}
-
-
-nav {
-  font-size: 18px;
-  font-family: "Poppins";
-  
-}
-.heart {
-}
-.navbar-up {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-}
-li {
-  display: inline;
-  float: right;
-  text-align: center;
-
-  text-decoration: none;
-  font-family: "Poppins";
-  font-size: 18px;
-  display: block;
-  padding: 8px;
-  color: aliceblue;
-}
-li a {
-} */
-
 @import url("https://fonts.googleapis.com/css?family=Poppins");
 
 body {
   font-family: "Poppins";
+  margin: 15px;
 }
 header > div {
   padding: 0 25px;
@@ -67,30 +32,22 @@ nav a {
   width: 20px;
   margin-right: 1rem;
 }
-.nav2 {
-  margin-top: 1rem;
-  padding: 0 25px;
-  /* height: 50px; */
-  display: flex;
-  justify-content: space-around;
-}
-
-/* input {
-  background-color: rgba(0, 0, 0, 0.05);
-  left: -10%;
-  right: -10%;
-  margin: 1rem;
-  padding: 5px;
-} */
-
-
-
 
 /* -----------------Search button------------------*/
+.nav2 {
+  padding: 10px;
+  /* height: 50px; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+}
+
 .container {
-  margin: 1px auto;
-  width: 750px;
-  height: 40px
+  margin: 0;
+  flex-basis: 1650px;
+  height: 40px;
 }
 
 .form {
@@ -121,7 +78,7 @@ nav a {
   object-fit: cover;
 }
 
-.div-btn{
+.div-btn {
   height: 35px;
   display: flex;
   justify-content: space-between;
@@ -131,6 +88,7 @@ nav a {
   width: 50px;
   height: 30px;
   margin-right: 3px;
+  background-color: #fff;
 }
 .btn__login {
   border: none;
@@ -138,24 +96,21 @@ nav a {
 
 /* -----------------Section 1------------------*/
 
-
 #section1 {
-  background-color: #F8F4F4;
+  background-color: #f8f4f4;
   width: 100%;
   height: 450px;
   margin-top: none;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  
-
 }
 main-div {
-  margin: 200px
+  margin: 200px;
 }
 
 h1 {
-  background-color: #F8F4F4;
+  background-color: #f8f4f4;
   margin: 0px;
   padding: 50px;
   font-size: 60px;
@@ -170,7 +125,6 @@ h1 {
   padding-top: 0px;
   left: 50%;
   transform: translate(-50%, -50%);
-
 }
 
 .central-buttons {
@@ -178,15 +132,12 @@ h1 {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  
 }
-
 
 .btn-central {
   padding: 8px 30px;
   margin-bottom: 60px;
   font-weight: bolder;
-
 }
 .btn-left {
   background-color: #fb3e44;
@@ -226,18 +177,17 @@ h1 {
   margin-bottom: 40px;
   margin-left: auto;
   margin-right: auto;
-
 }
 
 h2 {
-  background-color: #FCEBB5;
+  background-color: #fcebb5;
   width: 1000px;
   margin-bottom: 60px;
   padding: 5px;
   font-size: 40px;
   font-weight: bolder;
   text-align: center;
-  transform: skew(9deg,0deg);
+  transform: skew(9deg, 0deg);
 }
 h2 span {
   transform: skew(-9deg);
@@ -248,22 +198,52 @@ h2 span {
   margin-bottom: 30px;
 }
 
+/* -----------------Section 2------------------*/
+
+#section3 {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .img-section3 {
   width: 30px;
 }
-
 .flex-section3 {
   background-color: #fff;
-  width: 100%;
-  height: 450px;
+  height: 350px;
   margin-top: none;
-  margin-bottom: 200px;
+  margin-bottom: 0px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  gap: 30px;
 }
 
 h3 {
   color: #fb3e44;
+}
+
+.last-one {
+  margin-top: 0px;
+}
+.text-section3 {
+  width: 250px;
+}
+.btn-last {
+  width: 350px;
+  height: 40px;
+  background-color: black;
+  color: #fff;
+  padding: 10px 35px 10px 15px;
+  border: none;
+  outline: none;
+  text-align: center;
+  padding-bottom: auto;
+  font-size: 17px;
+  font-weight: bold;
+  margin-bottom: 50px;
 }
