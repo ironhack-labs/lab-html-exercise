@@ -13,9 +13,11 @@ body {
 }
 
 .header-down {
-  padding: 0 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   display: flex;
-  justify-content: space-between;
+  margin-bottom: -2px;
+  justify-content: flex-start;
   align-items: center;
   border-top: 1px solid lightgray;
 }
@@ -29,6 +31,7 @@ nav ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-weight: 500;
 }
 
 nav a {
@@ -42,10 +45,11 @@ nav a {
 }
 
 .logo {
-  width: 100px;
-  height: 35px;
+  width: 80px;
+  height: 30px;
   box-sizing: border-box;
   padding-top: 5px;
+  margin-left: 14px;
   margin-right: 1rem;
   display: flex;
   justify-content: space-between;
@@ -53,25 +57,59 @@ nav a {
 }
 
 .mag-glass {
-  width: 20px;
+  width: 26px;
   border: none;
-  height: 20px;
-  padding-left: 10px;
-  margin-top: 4px;
+  padding: 2px;
+  height: 26px;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.search-div {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-left: 30px;
 }
 
 .search-bar {
-  font-size: 16px;
+  font-size: 14px;
   border: none;
-  height: 40px;
-  padding-left: 10px;
-  margin-top: 4px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  background-color: rgba(0, 0, 0, 0.05);
+  height: 28px;
+  width: 1000px;
+}
+
+.button {
+  height: 30px;
+  font-size: 12px;
+  background-color: #fb3e44;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-style: none;
+}
+
+.nav-buttons {
+  margin-left: 100px;
+}
+
+.n-button1 {
+  height: 20px;
+  color: black;
+  text-decoration: none;
+  margin-right: 3px;
+  border-right: 1px black;
+  font-size: small;
+}
+
+.n-button2 {
+  height: 20px;
+  color: black;
+  text-decoration: none;
+  border-style: none;
+  font-size: small;
 }
 
 .section-one {
@@ -104,8 +142,8 @@ nav a {
   background-color: #fb3b49;
   box-shadow: 8px 8px 0 rgba(251, 59, 73, 0.2);
   padding: 10px;
-  padding-right: 35px;
-  padding-left: 35px;
+  padding-right: 45px;
+  padding-left: 45px;
   color: white;
   text-decoration: none;
 }
@@ -145,8 +183,8 @@ nav a {
 }
 
 .section-three {
-  height: 400px;
-  margin-top: 30px;
+  height: 500px;
+  margin-top: 40px;
 }
 
 .feature {
