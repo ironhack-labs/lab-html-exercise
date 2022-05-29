@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+/* General settings */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+    font-size: 16px;
+    line-height: 1.5em;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 4em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.3em;
+}
+
+/* header above */
+
+header > div {
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+}
+  
+nav {
+    width: 600px;
+}
+  
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+nav a {
+    text-decoration: none;
+    color: black;
+}
+  
+.black-heart {
+    width: 20px;
+    margin-right: 1rem;
+}
+
+/* header below*/
+
+.sub-header {
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+    padding: 5px 30px;
+}
+
+.npmlogo {
+    width: 70px;
+    margin-top: 10px;
+}
+.form {
+    width: 80%;
+    display: block;
+}
+
+.icon-search {
+    background-color: rgba(0,0,0,.05);
+    padding: 9px 10px 0;
+    margin-right: -4px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 1px;
+}
+
+input[type=search] {
+    width: 90%;
+    background-color: rgba(0,0,0,.05);
+    padding: 10px 0;
+    border: none;
+    margin-right: -5px;
+}
+
+.search-button {
+    background-color: #fb3e44;
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    margin-left: -10px;
+}
+
+.join {
+    padding: 5px 15px;
+    background-color: transparent;
+    color: black;
+    border: solid 1px black;
+    font-size: 0.9rem;
+}
+
+.login {
+    padding: 5px 15px;
+    background-color: transparent;
+    color: black;
+    border: none;
+    font-size: 0.9rem;
+}
+
+/* hero_cta */
+
+#hero_cta {
+    height: 600px;
+    background-color: rgba(232,217,217,.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#hero_cta article {
+    width: 480px;
+    text-align: center;
+    margin: 10px 0 30px;
+    font-size: 1.1em;
+}
+
+.cta_solid {
+    background-color: #FB3B49;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+    color: white;
+    padding: 15px 60px;
+    font-size: 1.1rem;
+    border: none;
+    margin: 30px 20px;
+    font-weight: 600;
+}
+
+.cta_outlined {
+    background-color: white;
+    color: black;
+    padding: 15px 60px;
+    font-size: 1.1rem;
+    border: none;
+    margin: 30px 20px;
+    font-weight: 600;
+}
+
+/* company_usp */
+
+#company_usp {
+    height: 600px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+.yellow-background {
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+    font-style: italic;
+    padding: 5px 25px;
+}
+
+#company_usp article {
+    width: 810px;
+    text-align: center;
+    margin: 10px 0 30px;
+}
+
+.triangle-hexagon {
+    width: 300px;
+}
+
+/* features */
+
+#features {
+    
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px auto;
+}
+
+.boxes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.features-box {
+    font-size: 1.1rem;
+    text-align: left;
+    border: none;
+    box-sizing: border-box;
+    padding: 0 20px;
+    width: 20%;
+}
+
+.features-box img {
+    height: 50px;
+}
+
+.features-box h3 {
+    color: red;
+}
+
+.cta_black {
+    background-color: black;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+    color: white;
+    padding: 15px 60px;
+    font-size: 1.1rem;
+    border: none;
+    margin: 70px 30px 20px;
+    font-weight: bold;
+    width: 25%;
+    text-align: center;
+}

@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>NPM Clone Nifty Penguin Magic npm Enterprise 
-        </title>
+        <meta charset="UTF-8"/>
+        <title>NPM Clone Nifty Penguin Magic npm Enterprise</title>
+        <link rel="stylesheet" href="./style.css" />
     </head>
     <body>
         <header>
             <div>
                 <div>
-                <img class="blackHeart" src="images/black-heart.png" alt="black heart" />
+                <img class="black-heart" src="images/black-heart.png" alt="black heart" />
                 <span> Nifty Penguin Magic </span>
                 </div>
                 <nav>
@@ -22,23 +23,22 @@
                 </ul>
                 </nav>
             </div>
-            
-            <div>
+            <div class="sub-header">
                 <div>
-                    <img class="blackHeart" src="images/npm-logo.png" alt="black heart" />
+                    <img class="npmlogo" src="images/npm-logo.png" alt="NPM logo" />
                 </div>
-                <div>
-                    <img class="MagnifiyingGlass" src="images\magnifying-glass.png" alt="Magnifiying glass" />
-                    <form action="" method="">
+                <div class="form">
+                    <form action="" method="" >
                         <label for="shopsearch"></label>
+                        <span class="icon-search"><img class="magnifiying-glass" src="images\magnifying-glass.png" alt="Magnifiying glass" width="20px" /></span>
                         <input type="search" id="shopsearch" name="shopsearch" placeholder="Search Packages">
-                        <button type="submit">Search</button>
+                        <button type="submit" class="search-button">Search</button>
                     </form>
                 </div>  
             
                 <div>
-                    <input type="submit" value="Join">
-                    <input type="submit" value="Login">
+                    <input type="submit" value="Join" class="join">
+                    <input type="submit" value="Login" class="login">
                 </div>
             </div>  
         </header>
@@ -46,41 +46,43 @@
             <h1>Build amazing things </h1>
             <article>Essential JavaScript development tools that help you go to market faster and build powerful applications using modern open source code.</article>
             <div>
-                <input type="submit" value="See plans">
-                <input type="submit" value="Join for free">
+                <input type="submit" value="See plans" class="cta_solid">
+                <input type="submit" value="Join for free" class="cta_outlined">
             </div>
 
         </section>
         <section id="company_usp">
-            <img class="TriangleHexagon" src="images\triangle-hexagon.svg" alt="Triangle hexagon" />
-            <h2>Bring the best of open source to your company</h2>
+            <img class="triangle-hexagon" src="images\triangle-hexagon.svg" alt="Triangle hexagon" />
+            <h2 class="yellow-background">Bring the best of open source to your company</h2>
             <article>
                 npm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it. Create an Org and get more out of the tools your team already knows and loves.
             </article>
         </section>
         <section id="features">
-            <div>
-                <img class="ZeroConfiguration" src="images\zero-configuration.svg" alt="zero configuration" />
-                <h3>Zero Configuration</h3>
-                <p>Create an org, add your team, and start collaborating. Nothing to configure, set up, or manage.</p>
+            <div class="boxes">
+                <div class="features-box">
+                    <img class="ZeroConfiguration" src="images\zero-configuration.svg" alt="zero configuration" />
+                    <h3>Zero Configuration</h3>
+                    <p>Create an org, add your team, and start collaborating. Nothing to configure, set up, or manage.</p>
+                </div>
+                <div class="features-box">
+                    <img class="TeamManagement" src="images\team-management.svg" alt="Team management" />
+                    <h3>Team management</h3>
+                    <p>Control who has access to what modules within your team namespace using straightforward team management capabilities.</p>
+                </div>
+                <div class="features-box">
+                    <img class="FamiliarFeatures" src="images\familiar-features.svg" alt="Familiar Features" />
+                    <h3>Familiar Features</h3>
+                    <p>npm Orgs has 100% parity with all the public npm registry features your developers already use.</p>
+                </div>
+                <div class="features-box">
+                    <img class="npmAudit" src="images\npm-audit.svg" alt="NPM Audit" />
+                    <h3>NPM Audit</h3>
+                    <p>Enjoy the security
+                        auditing features built into the npm client, a zero-friction way to make open source software safer.</p>
+                </div>
             </div>
-            <div>
-                <img class="TeamManagement" src="images\team-management.svg" alt="Team management" />
-                <h3>Team management</h3>
-                <p>Control who has access to what modules within your team namespace using straightforward team management capabilities.</p>
-            </div>
-            <div>
-                <img class="FamiliarFeatures" src="images\familiar-features.svg" alt="Familiar Features" />
-                <h3>Familiar Features</h3>
-                <p>npm Orgs has 100% parity with all the public npm registry features your developers already use.</p>
-            </div>
-            <div>
-                <img class="npmAudit" src="images\npm-audit.svg" alt="NPM Audit" />
-                <h3>NPM Audit</h3>
-                <p>Enjoy the security
-                    auditing features built into the npm client, a zero-friction way to make open source software safer.</p>
-            </div>
-            <input type="submit" value="Create an Org">
+            <input type="submit" value="Create an Org" class="cta_black">
         </section>
     </body>
 </html>
