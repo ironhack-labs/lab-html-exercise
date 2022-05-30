@@ -8,11 +8,15 @@ header .top-nav {
   align-items: center;
   border-bottom: 1px solid lightgray;
 }
+
 .top-nav img {
     width: 20px;
 }
+
 .top-nav-logo  img {
-    width: 50px;
+    width: 79px;
+    height: 26px;
+    padding-top: 10px
 }
 .top-nav ul {
     display: flex;
@@ -42,11 +46,23 @@ nav a {
   margin-right: 1rem;
 }
 
-.search {
- flex: 1%;
+.top-nav-logo {
+  display: flex;
+  gap: 20px;
+  align-items: center;
 }
+
+.search {
+ flex: 1;
+ position: relative;
+}
+
 .search img {
     width: 20px;
+    position: absolute;
+    left: 10px;
+    top: 7px;
+    height: 20px;
 }
 
 form * {
@@ -58,28 +74,42 @@ form * {
   border-style: none;
 }
 
-.search ul > button {
-    font-style: normal;  
+.search input {
+   padding: 9px 35px;
 }
 
-.login {
-    color: black;
-    text-decoration: none;
-    list-style-type: none;
-    font-style: normal;
-    }
+.top-nav-logo ul {
+   display: flex;
+   gap: 20px;
+   list-style: none;
+   align-items: center;  
+}
+
+.top-nav-logo ul a {
+  text-decoration: none;
+  padding: 5px 22px;
+  color: #000;
+}
+
+.top-nav-logo ul li:nth-of-type(1) a {
+ border: 1px solid #000;
+}
 
 .button {
   background-color: #fb3e44;
   border-style: none;
+  padding: 19px;
   color: white;
   width: 50px;
-  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 body {
   font-family: 'Poppins';
 }
+
 
 
 #content .container {
@@ -100,18 +130,44 @@ body {
     font-size: 60px;
 }
 
+.container article {
+  display: block;
+  max-width: 400px;
+}
+
+#middle-section article {
+  display: block;
+  max-width: 650px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.see-plans {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.see-plans *{
+  padding: 15px 40px;
+}
+
 .linkjoin {
     color: black;
     text-decoration: none;
     list-style-type: none;
+    background-color: #fff;
   }
 
 #middle-section .opensource {
   background-color: rgba(255,204,53,.4);
-  width: 40%;
+  display: inline-block;
   font-style: italic;
-  text-align: center;
 }
+
 #middle-section .article *{
 font-style: normal;
 }
@@ -126,7 +182,9 @@ font-style: normal;
 #middle-section img {
   width: 250px;
   height: 180px;
-  transform: skew(9deg,0deg);
+  display: inline-block;
+  margin-top: 50px;
+  margin-bottom: 60px;
 }
 
 .button-plans {
@@ -144,6 +202,7 @@ font-style: normal;
   text-decoration: none;
   text-align: left;
 }
+
 .footer-text {
   font-size: 1.2em;
   font-weight: 100;
@@ -152,27 +211,18 @@ font-style: normal;
   font-style: normal;
   text-align: left;
 }
-/*
-.link-btn {
-  background-color: rgb(67, 163, 230);
-  color: white;
-  font-size: 2em;
-  letter-spacing: 0.5px;
-  font-style: normal;
-  text-align: center;
-  text-decoration: none;
-  padding-top: 10px 30px;
-}*/
 
-#footer > div {
+#footer  .div {
  display: flex;
  justify-content: space-between;
- flex-direction: row; 
- flex-wrap: wrap;
+ margin-top: 75px;
+ margin-bottom: 30px;
 }
-#footer article{
-  width: 40%;
+
+#footer article {
+  width: 23%;
 }
+
 #footer .footer-img {
   width: 50px;
   height: 50px;
@@ -189,6 +239,7 @@ font-style: normal;
   width: 10%;
   height: 20%;
 }
+
 .button-org {
     background-color: black;
     border-style: none;
@@ -197,4 +248,5 @@ font-style: normal;
     height: 30px;
     box-shadow: 8px 8px 0 rgba(251,59,73,.2);
     margin: 10px 5% 0 5%;
+    display: inline-block;
   }
