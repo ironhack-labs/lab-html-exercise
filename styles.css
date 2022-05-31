@@ -3,6 +3,10 @@
 body {
   font-family: 'Poppins';
 }
+header {
+    margin-left: 15px;
+    margin-right: 15px;
+}
 
 header > div {
     padding: 0 25px;
@@ -10,6 +14,7 @@ header > div {
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid lightgray;
+    
   }
 
   nav {
@@ -35,65 +40,62 @@ header > div {
 
   .logo {
       width: 50px;
+      margin-top: 5px;
+      margin-right: 2px;    
   }
 
   .searchbar {
-      display: flexbox;
+      display: flex;
       flex-flow: row wrap;
       justify-content: space-between;
+      align-items: center;
       height: 100%;
-  }
-
-
-
-  .form {
-    justify-content: flex-start;
-    
-  }
-
-  .searchbar input {
-      background: url("images/magnifying-glass.png") no-repeat left;
-      background-size: 15px;      
-      color: rgba(0,0,0,.05);  /*lo pide así???*/
-      width: 1600px; /*poner porcentajes!!*/
-      min-width: 100px;
-      background-color: rgba(0,0,0,.05);
-      border: none;
-      padding: 8px;
-      
+      padding: 10px;  
     }
 
-    
-  
+    .form {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 80vw;
+    }
 
-  .form label, input {
+
+  .input {
+      background: url("images/magnifying-glass.png") no-repeat left;
+      background-size: 15px;      
+      min-width: 10%;
       background-color: rgba(0,0,0,.05);
-      margin-right: 0;
-  }
+      border: none;
+      width: 80vw;
+      padding: 8px;         
+    }
+
+    .form label {
+        color: rgba(0,0,0,.05); /*no entiendo esta instrucción*/
+    }
+ 
 
   .form button {
       background-color: #fb3e44;
       color: white;
       border: solid 1px #fb3e44;
-      padding: 7px;
-      margin-left: 0;
+      padding: .5em;
+      margin-left: 0;     
   }
 
  
   .join-button {
       border: solid 1px grey;
-      padding: 5px 20px;
+      padding: .1em .8em;
       text-decoration: none;
       color: black;
-      margin: 5px 0;
-      
-      
-
   }
 
   .login-button {
       text-decoration: none;
       color: black;
+      margin-right: 5px;      
   }
 
   .centered {
@@ -108,56 +110,53 @@ header > div {
 
   #build {
     background-color: rgba(232,217,217,.3);
-
+    margin-left: 15px;
+    margin-right: 15px;
   }
 
   h1 {
-      font-size: 80px;
+      font-size: 5rem;
       font-weight: bolder;
   }
 
   #build article {
-      width: 500px;
+      width: 600px;
       text-align: center;
-      font-size: 20px;
+      font-size: 1.3rem;
       margin-top: 0;
-      margin-bottom: 30px;
-      
+      margin-bottom: 1.5rem;     
   }
 
   #build button {
       background-color: #FB3B49;
-      color: white;
-      
-      
+      color: white;    
       border: none;
       box-shadow: 8px 8px 0  rgba(251,59,73,.2);
   }
 
   #build a {
       background-color: white;
-      color: black;
-      
-      
+      color: black;   
   }
 
   #build div {
+      width: 600px;
       display: flex;
-      width: 500px;
       justify-content: space-between;
-    
   }
 
+
+
 .see-plans, .join-free {
-    padding: 10px 80px;
+    padding: 1em 5em;
     text-align: center;
     font-weight: bold;
-    
+    font-size: 1rem;      
 }
 
+
 .image {
-    width: 40px;
-    
+    width: 40px; 
 }
 
 .hex {
@@ -168,7 +167,6 @@ header > div {
 #bring-best {
     background-color: white;
     margin-bottom: 10px;
-
 }
 
 #bring-best article {
@@ -180,53 +178,48 @@ h2 {
     background-color: rgba(255,204,53,.4);
     transform: skew(9deg,0deg);
     font-style: italic;
-    font-size: 35px;
+    font-size: 2.2rem;
     width: 880px;
     text-align: center;
 }
 
 #bring-best p {
-    font-size: 20px;
+    font-size: 1.2rem;
 }
 
 .box {
     display: flex;
     flex-direction: row;
-    margin: 10px 120px;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 20px 120px;
 }
 
 .container {
-    text-align: left;
-    justify-content: space-around;
-    margin: 0 30px 10px 10px;
-    padding-right: 10px;
-    padding-left: 10px;
-    font-size: 20px; 
-
+    text-align: left;  
+    margin: 0 20px 10px 10px;
+    padding-right: .5rem;
+    padding-left: .6rem;
 }
-
-
 
 h3 {
     color: red;
 }
 
+
+.create-btn {
+    width: 100%;
+    margin: auto;
+    display: flex;
+}
+
 #create-org button {
     color: white;
     background-color: black;
-    padding: 15px 40px;
+    padding: 1rem;
+    margin: auto;
     width: 400px;
-    font-size: 25px;
+    font-size: 1.6rem;
     font-weight: bolder;
     box-shadow: 8px 8px 0 rgb(214, 207, 207);
 }
-
-
-.create-btn {
-    width: 400px;/*sólo así magicamente se centra*/
-    margin: auto;
-}
-
-
-
-
