@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./style.css" />
     <title>NPM-Clone</title>
 </head>
+
 <body>
     <header>
         <div>
@@ -29,25 +30,29 @@
             </div>           
         </div>
 
-        <div>
+
         <!--Magnifying glass logo search-bar and buttons -->
+        <div>
             <img class="npm-logo" src="https://github.com/pveg/lab-html-exercise/blob/master/images/npm-logo.png?raw=true" alt="NPM logo">
-            <form> 
+            <form class="form"> 
                 <img class="magnifying-glass" src="https://github.com/pveg/lab-html-exercise/blob/master/images/magnifying-glass.png?raw=true " alt="magnifying-glass"> 
-                <input type="text" placeholder=" Search packages..." name="search">   
-                <button type="submit">Search</button>   
+                <input class="search-bar" type="text" placeholder=" Search packages..." name="search">   
+                <button class="search-btn" type="submit">Search</button>   
             </form>
+
             <!--buttons to join and login-->
-            <button type="submit" name="login">Log-in</button>  
+            <button class="join-button" type="submit" name="join">Join</button> 
+            <button class="login" type="submit" name="login">Log-in</button>    
         </div>
-        <section id="first-section">
-            <h1> Build Amazing Things </h1>
-            <article>
+
+        <section class="first-section">
+            <h1 class="first-heading"> Build Amazing Things </h1>
+            <article id="essential-js">
                 <p>Essential Javascript development tools that help you go to market faster and build powerful applications using modern open source code.</p>
             </article>
-            <div>
-                <button type="submit" name="see-plans"> See Plans</button> 
-                <button type="submit" name="join-for-free"> Join for Free</button>  
+            <div class="btn-plans-join">
+                <button class="see-plans-btn" type="submit" name="see-plans"> See Plans </button> 
+                <button class="join-free-btn" type="submit" name="join-for-free"> Join for Free </button>  
             </div>
         </section>
 
@@ -62,7 +67,6 @@
             </article>
 
         <section id="third-section">
-
             <div>
                 
                 <article>
