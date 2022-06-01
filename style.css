@@ -1,8 +1,11 @@
+/***** fonts *****/
+
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
 
 /*****BODY**/
 *{
     box-sizing: border-box;
-    font-family: 'Poppins','sans-serif';
     margin: 0;
     padding: 0;
     font-size: 16px;
@@ -16,6 +19,7 @@
 
 html, body{
     height: 100%;
+    font-family: 'Poppins';
 }
 
 
@@ -25,11 +29,142 @@ img{
     width: 100%;
 }
 
-/***** fonts *****/
 
-@import url('https://fonts.googleapis.com/css?family=Poppins');
+h1{
+  height: 0;
+}
+/**** buttons ***/
 
-body {
-  font-family: 'Poppins';
+.btn-search{
+  background-color: #fb3e44;
+  color: white;
+  height: 47px;
+  border: 0;
+  padding: 0px 15px;
+  cursor: pointer;
 }
 
+.btn-join-article{
+    background-color: white;
+    padding: 20px 60px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: inherit;
+}
+  /****** form ****/
+
+
+input{
+    color: rgba(0,0,0,.05);
+}
+
+
+/***** Header *****/
+
+
+#content-menu, #content-login {
+    padding: 10px 25px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border-bottom: 1px solid lightgray;
+    font-size: .8em;
+  }
+
+  #header-container > #content-login {
+    flex-wrap: nowrap;
+  }
+  #content-menu{
+    font-weight: 600;
+  }
+  .info-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px 0px;
+  }
+
+  .menu{
+    padding: 5px 0px;
+  }
+  .menu ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .menu li{
+    padding: 0px 10px;
+  }
+  
+ 
+  .blackHeart {
+    width: 20px;
+    margin-right: 1rem;
+    padding: 5px 0px;
+  }
+
+
+  .box-logo{
+    max-width: 60px;
+    width: 100%;
+  }
+
+  #form-search{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    background-color: rgba(0,0,0,.05);
+    width: 100%;
+    margin: 0px 15px;
+  }
+
+
+  #search{
+    background: url("./images/magnifying-glass.png") no-repeat left;
+    background-size: 20px;
+    background-position-x: 12px;
+    color: black;
+    width: 100%;
+    border: 0;
+    padding-left: 40px;
+    height: 45px;
+  }
+
+
+  :focus-visible{
+    outline: 1px solid #000000;
+  }
+
+  .btn-box-log{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 160px;
+  }
+
+  .btn-box-log a:first-child{
+    padding: 10px 20px;
+    border: 1px solid rgba(0,0,0,.2);
+  }
+
+  .btn-box-log a:last-child{
+    padding: 10px 0px;
+  }
+
+  /********** MAIN **********/
+
+
+  /**** Section 1 ****/
+
+  /**** Section 2 ****/
+.skew-title{
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+    font-style: italic;
+}
+  /**** Section 3 ****/
