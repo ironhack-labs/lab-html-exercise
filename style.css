@@ -28,12 +28,12 @@ header > div {
     color: black;
   }
   
-  .blackHeart {
+.blackHeart {
     width: 20px;
     margin-right: 1rem;
   }
   
-  .npm-logo {
+.npm-logo {
     width: 80px;
   }
 
@@ -41,11 +41,13 @@ header > div {
     border: none;
     display: block;
     background: rgba(0,0,0,.05);
-    padding: 12px 700px 12px 100px;
+    padding: 12px 725px 12px 55px;
     font-size: 18px;
+    outline: unset;
 }
 
-div > form {
+
+.top > .form {
     display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -58,10 +60,11 @@ div > form {
     border: none;
     background-color: #fb3e44;
     color: white;
-    padding: 16px 20px;
-    font-size: 16px;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    padding: 14px 20px;
+    font-size: 18px;
+    margin: 5px 0;
+    font-weight: lighter;
+    cursor: pointer;
 }
 
 .form {
@@ -79,18 +82,21 @@ div > form {
 .join-button {
     background-color: white;
     color: black;
-    padding: 8px 18px;
+    padding: 8px 20px;
     border: 1px solid grey;
     border-radius: 0;
     font-size: 16px;
-    margin-left: 10px;
+    margin: 0 10px;
+    cursor: pointer;
 }
 
 .login{
     background-color: transparent;
     border: none;
     font-size: 16px;
-    margin-right: 10px;
+    margin-right: 15px;
+    margin-left: 10px;
+    cursor: pointer;
 }
 
 .first-section {
@@ -109,12 +115,11 @@ div > form {
     margin-bottom: 10px;
 }
 
-#essential-js{
+.essential-js{
     font-size: 20px;
     text-align: center;
     padding: 15px;
-    margin-left: 450px;
-    margin-right: 450px;
+    margin: 0 450px;
 }
 
 .see-plans-btn{
@@ -123,15 +128,20 @@ div > form {
     border: none;
     color: white;
     font-size: 20px;
+    font-weight: bold;
     padding: 20px 65px;
     margin: 20px;
+    cursor: pointer;
 }
 
 .join-free-btn{
     border: none;
-    background-color: transparent;
+    background-color: white;
     font-size: 20px;
+    padding: 20px 65px;
     margin: 20px;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 .btn-plan-join {
@@ -141,4 +151,98 @@ div > form {
 	justify-content: space-around;
 	align-items: center;
 	align-content: stretch;
+    cursor: pointer;
+}
+
+.second-section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.hexagon {
+    width: 200px;
+    margin-top: 50px;
+}
+
+.second-section > .bring-the-best {
+    font-size: 35px;
+    font-weight: bolder;
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+    font-style: italic;
+    margin-top: 70px;
+    margin-bottom: 10px;
+    padding: 0 25px 0 25px;
+}
+
+.second-article{
+    font-size: 16px;
+    text-align: center;
+    padding: 30px;
+    margin-left: 275px;
+    margin-right: 275px;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    height: 300px;
+}
+
+.article-container{
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 15px;
+}
+
+.article-container > h2 {
+    color: #ED1C24;
+    font-size: 25px;
+    font-weight: bold;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: baseline;
+}
+
+.article-container > img {
+    width: 30px;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: baseline;
+}
+
+.article-container p{
+    line-height: 30px;
+    font-size: 18px;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.create-org {
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    color: white;
+    background-color: black;
+    display: block;
+    margin: auto;
+    width: 450px;
+    height: 50px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    cursor: pointer;
 }
