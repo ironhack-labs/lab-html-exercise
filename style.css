@@ -33,6 +33,8 @@ img{
 h1{
   height: 0;
 }
+
+
 /**** buttons ***/
 
 .btn-search{
@@ -42,9 +44,38 @@ h1{
   border: 0;
   padding: 0px 15px;
   cursor: pointer;
+  transition: all 300ms ease-in;
+}
+.btn-search:hover{
+  background-color: #ffdada;
+  transition: all 300ms ease-in-out;
+  color: #FB3B49;
+}
+  
+.btn-box-log a:first-child{
+  padding: 10px 20px;
+  border: 1px solid rgba(0,0,0,.2);
+  background-color: white;
+  color:black;
+  transition: all 300ms ease-in;
+}
+.btn-box-log a:first-child:hover{
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: black;
+  color:white;
+  transition: all 300ms ease-in-out;
 }
 
-  
+.btn-box-log a:last-child{
+  padding: 10px 0px;
+  transition: all 300ms ease-in;
+}
+.btn-box-log a:last-child:hover{
+  transition: all 300ms ease-in-out;
+  color:#FB3B49;
+}
+
+
 .btn-plan{
   background-color: #FB3B49;
   box-shadow: 8px 8px 0 rgb(251 59 73 / 20%);
@@ -52,6 +83,13 @@ h1{
   padding: 20px 60px;
   font-weight: 600;
   letter-spacing: 1.5px;
+  transition: all 300ms ease-in;
+}
+.btn-plan:hover{
+  background-color: white;
+  box-shadow: 5px 5px 0 rgba(255, 184, 188, 0.2);
+  color:#FB3B49;
+  transition: all 300ms ease-in-out;
 }
 
 .btn-join-article{
@@ -60,8 +98,59 @@ h1{
     font-weight: 600;
     letter-spacing: 1px;
     color: inherit;
+    transition: all 300ms ease-in;
 }
+.btn-join-article:hover{
+  background-color: #FB3B49;
+  color:white;
+  transition: all 300ms ease-in-out;
+}
+
+.btn-org{
+  box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+  color: white;
+  background-color:#000000;
+  padding: 20px 90px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  border:1px solid transparent;
+  transition: all 300ms ease-in;
+}
+
+.btn-org:hover{
+  box-shadow: 5px 5px 0 rgba(206, 183, 159, 0.2);
+  color: black;
+  background-color:white;
+  transition: all 300ms ease-in-out;
+  border:1px solid black;
+}
+
   /****** form ****/
+  #form-search{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    background-color: rgba(0,0,0,.05);
+    width: 100%;
+    margin: 0px 15px;
+  }
+
+  #search{
+    background: url("./images/magnifying-glass.png") no-repeat left;
+    background-size: 20px;
+    background-position-x: 12px;
+    color: black;
+    width: 100%;
+    border: 0;
+    padding-left: 40px;
+    height: 45px;
+  }
+
+
+  :focus-visible{
+    outline: 1px solid #000000;
+  }
 
 
 input{
@@ -110,6 +199,17 @@ input{
     padding: 0px 10px;
   }
   
+  .menu li a{
+    color:black;
+    letter-spacing:1.1px;
+    transition:  all 300ms ease-in;
+  }
+  .menu li a:hover{
+    color:#f8f4f4;
+    text-shadow: -1px 1px, -1px 1px, 1px 3px #fb3e44;
+    transition:  all 300ms ease-in-out;
+  }
+  
  
   .blackHeart {
     width: 20px;
@@ -123,33 +223,6 @@ input{
     width: 100%;
   }
 
-  #form-search{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    background-color: rgba(0,0,0,.05);
-    width: 100%;
-    margin: 0px 15px;
-  }
-
-
-  #search{
-    background: url("./images/magnifying-glass.png") no-repeat left;
-    background-size: 20px;
-    background-position-x: 12px;
-    color: black;
-    width: 100%;
-    border: 0;
-    padding-left: 40px;
-    height: 45px;
-  }
-
-
-  :focus-visible{
-    outline: 1px solid #000000;
-  }
-
   .btn-box-log{
     display: flex;
     justify-content: space-around;
@@ -157,15 +230,7 @@ input{
     width: 160px;
   }
 
-  .btn-box-log a:first-child{
-    padding: 10px 20px;
-    border: 1px solid rgba(0,0,0,.2);
-  }
-
-  .btn-box-log a:last-child{
-    padding: 10px 0px;
-  }
-
+  
   /********** MAIN **********/
 
 
@@ -229,10 +294,53 @@ input{
   }
   /**** Section 2 ****/
 
-  /**** Section 3 ****/
 
-  .section-tertiary{
-
+  .section-secundary{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 85vh;
+  }
+  .content-info-section{
+    height: 100%;
+    width: 100%;
+    max-width: 800px;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0px 10px;
+  }
+  
+  .box-image{
+    width: 250px;
+    display: flex;
+    align-items: center;
+  }
+  .info-section-scn{
+    max-width: 770px;
+    width: 100%;
+  }
+    
+  .skew-title{
+    text-align: center;
+    background-color: rgba(255,204,53,.4);
+    transform: skew(10deg,0deg);
+    font-style: italic;
+    font-size: 1.8em;
+    font-weight: bold;
+    letter-spacing: .8px;
+    transition: all 300ms ease-in;
+  }
+ 
+  
+  .info-section-scn > p{
+    text-align: center;
+      line-height: 1.6em;
+      max-width: 650px;
+      width: 100%;
+      margin: 35px auto;
   }
 
-  
+  /**** Section 3 ****/
