@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
     <title>NPM clone</title>
 </head>
 <body>
     <header id="header-container">
-        <section class="content-menu">
+        <section id="content-menu">
           <div class="info-menu">
             <img class="blackHeart" src="./images/black-heart.png" alt="black heart" />
             <h4>Neverending Pun Machine </h4>
@@ -24,21 +26,19 @@
             </ul>
           </nav>
         </section>
-        <section class="content-login">
+        <section id="content-login">
             <div class="box-logo">
                 <h1>npm</h1>
                 <img class="logo" src="./images/npm-logo.png" alt="logo npm">
             </div>
-                <label for="search"><img src="./images/magnifying-glass.png" alt="glass"></label>
-                <input type="text" placeholder="Search packages" id="search" name='inputSearch'>
-                <a class="btn-search" href="#">Search</a>
-            <div>
-              <div>
-                <a href="#">Join</a>
-              </div>
-              <div>
-                <a href="#">Log in</a>
-              </div>
+            <form id="form-search">
+              <label for="search"><img src="./images/magnifying-glass.png" alt="glass"></label>
+              <input type="text" placeholder="Search packages" id="search" name='inputSearch'>
+              <button class="btn-search">Search</button>
+            </form>
+            <div class="btn-box-log">
+              <a href="#">Join</a>
+              <a href="#">Log in</a>
             </div>
         </section>
       </header>
@@ -66,9 +66,7 @@
               <img src="./images/triangle-hexagon.svg" alt="triangle hexagon">
             </div>
             <div class="info-section-scn">
-              <div class="skew-box">
-                <h2>Bring the best of open source to your company</h2>
-              </div>
+              <h2 class="skew-title">Bring the best of open source to your company</h2>
               <p>npm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it.
               Create an Org and get more out of the tools your team already knows and loves.</p>
             </div>
