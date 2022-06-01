@@ -117,9 +117,10 @@ header > div {
 
 .essential-js{
     font-size: 20px;
-    text-align: center;
     padding: 15px;
     margin: 0 450px;
+    text-align: justify;
+    text-align-last: center;
 }
 
 .see-plans-btn{
@@ -179,27 +180,30 @@ header > div {
 
 .second-article{
     font-size: 16px;
-    text-align: center;
+    text-align: justify;
+    text-align-last: center;
     padding: 30px;
     margin-left: 275px;
     margin-right: 275px;
     box-sizing: border-box;
+    display: flex;
 }
 
 .container {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: center;
+    align-content: center;
     align-items: center;
-    margin-top: 60px;
+    align-content: center;
+    justify-content: space-between;  
+    margin: 40px;  
     height: 300px;
 }
 
 .article-container{
-    margin-left: 20px;
-    margin-right: 20px;
-    padding: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .article-container > h2 {
@@ -242,7 +246,7 @@ header > div {
     text-align: center;
     font-size: 18px;
     font-weight: bold;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 70px;
+    margin-bottom: 70px;
     cursor: pointer;
 }
