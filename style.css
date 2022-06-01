@@ -30,7 +30,7 @@ header > div {
     border-bottom: 1px solid lightgray;
   }
   
-form {
+header > form {
     background-color: rgba(0,0,0,0.5);
     color: rgba (0,0,0,0.5);
     width:400px;
@@ -64,12 +64,23 @@ form {
     
   }
 
-.button3 {
+.button4 {
 background-color: #fb3e44;
 color:white;
 font-weight: bold;
 padding: 10px 50px 10px 50px;
-box-shadow: 0 8px 16px 0 rgba(218, 146, 146, 0.659), 0 6px 20px 0 rgba(0,0,0,0.19);
+box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+}
+
+.button3 {
+    background-color: #fb3b49;
+}
+
+.button5 {
+    box-shadow:  8px 0 rgba(128,83,35,.2);
+    background-color: black;
+    color: white;
+
 }
 
 nav {
@@ -100,11 +111,15 @@ nav a {
 
 h2 {
     font-weight:bold;
-    background-color: rgba(213, 190, 107, 0.753);
+    font-style:italic;
+    margin: 0 20px;
+    background-color:rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
 }
 
 .intro {
-    background-color: rgb(239, 232, 232);
+    background-color: rgba(232, 217, 217,.3);
+    height: 500px;
     padding: 10px 200px 100px 200px;
     display: flex;
     flex-direction: column;
@@ -131,10 +146,9 @@ h1 {
     font-weight: bolder;
     }
 
-#perks div{
+#perks > div {
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: space-between;
     flex-wrap: nowrap;
 }
@@ -148,14 +162,13 @@ h1 {
 }
 
 h3 {
-    color: red;
+    color:#ED1C24;
     border: 2px;
     border-color: tan;
     font-size: 90%;
 }
 
 .middle {
-    background-color:white;
     display: flex;
     align-items: center;
     flex-direction: column;
