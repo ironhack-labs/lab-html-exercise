@@ -6,7 +6,7 @@ body {
     color: black;
 }
 
-.npm {
+#npm {
     display: flex;
     padding: 10px 300px 10px 25px;
     font-size: 8px;
@@ -30,13 +30,13 @@ header > div {
     border-bottom: 1px solid lightgray;
   }
   
-header > form {
+#search-bar > form {
     background-color: rgba(0,0,0,0.5);
     color: rgba (0,0,0,0.5);
-    width:400px;
+    width:75%;
   }
 
-  .search-bar {
+#search-bar {
       display: flex;
       flex-direction:row;
       justify-content: center;
@@ -44,9 +44,10 @@ header > form {
       flex-wrap: nowrap;
   }
 
-.search-button{
+#search-button{
       background-color: #fb3e44;
       color:white;
+      font-weight: lighter;
       font-size: 12px;
       border:1px solid goldenrod;
       display:flex;
@@ -54,10 +55,20 @@ header > form {
       align-items: right;
   }
 
-#button1 {
-    border: 2px;
-    border-color: grey;
+#other-buttons {
+    display: flex;
+    flex-direction: row;
+flex-wrap: nowrap;
+align-items: baseline;
+}
+
+ #button1 {
+    border: solid 2px;
+    border-color: lightgray;
     background-color:rgba(0,0,0,0.0);
+    display: flex;
+    margin: 0px 10px;
+    padding: 5px 15px;
 }
 
 #button2 {
@@ -73,7 +84,7 @@ border: none;
 font-size: 1em;
 font-weight: bolder;
 padding: 15px 60px 15px 60px;
-margin: 30px;
+margin: 30px 15px 30px 30px;
 box-shadow: 8px 8px 0 rgba(251,59,73,.2);
 }
 
@@ -83,6 +94,7 @@ box-shadow: 8px 8px 0 rgba(251,59,73,.2);
 background-color: white;
 border:none;
 padding: 15px 60px 15px 60px;
+margin: 30px 30px 30px 15px;
 
 }
 
@@ -90,6 +102,10 @@ padding: 15px 60px 15px 60px;
     box-shadow:  8px 0 rgba(128,83,35,.2);
     background-color: black;
     color: white;
+    font-size: 14px;
+    font-weight: bold;
+    width: 300px;
+    height: 50px;
 
 }
 
@@ -114,35 +130,37 @@ nav a {
     margin-right: 1rem;
   }
 
-.logo {
+#logo {
     width: 50px;
-    margin:10px;
+    margin: 10px;
 }
 
 h2 {
     font-weight:bold;
     font-style:italic;
     margin: 0 20px;
+    padding: 0 25px;
     background-color:rgba(255,204,53,.4);
     transform: skew(9deg,0deg);
 }
 
-.intro {
+#intro {
     background-color: rgba(232, 217, 217,.3);
-    height: 500px;
+    height: 300px;
     padding: 10px 200px 100px 200px;
+    margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 
     
 }
 
-.intro article {
+#intro > article{
     font-size: 90%;
     width:350px;
-    justify-content: center;
-    padding: 0px 20px 10px 20px;
+    margin: 10px auto;
 }
 
 
@@ -155,33 +173,55 @@ h2 {
 
 h1 {
     font-size: 3em;
-    font-weight: bolder;
+    font-weight: 4000;
     }
 
-#perks > div {
+#perks {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: nowrap;
 }
 
-#perks img{
-    width:25px;
+#perks div{
+   
+    padding: 25px 25px 25px;
+    
 }
 
-#perks article{
-    width: 400px;
+#perks img{
+    width:30px;
 }
 
 h3 {
     color:#ED1C24;
-    border: 2px;
-    border-color: tan;
     font-size: 90%;
+    margin: 20px 10px;
 }
 
-.middle {
+#middle {
     display: flex;
     align-items: center;
     flex-direction: column;
+    font-size: 12px;;
+}
+
+#middle article{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    width: 600px;
+    margin:50px;
+}
+
+#intro-buttons {
+    display: flex;
+    justify-content: center;
+    
+}
+
+#end {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
