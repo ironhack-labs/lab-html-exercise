@@ -87,6 +87,7 @@ header > div {
     height: 600px;
     background-color: rgba(232,217,217,.3);
     display: flex;
+    flex-direction: column;
     justify-content: center; 
     align-items:center;
     flex-direction:center;
@@ -97,6 +98,19 @@ header > div {
     padding-top: 50px;
     position:relative;
   }
+.button{
+  display: inline-block;
+	flex-direction: row;
+	flex-wrap: wrap;
+  display: inline-block;
+	justify-content: space-around;
+	align-items: center;
+	align-content:stretch;
+  border: none;
+  font-size: 16px;
+  padding: 15px 32px;
+  text-decoration: none;
+}
   .plans-link-btn{
     background-color: #FB3B49;
     box-shadow: 8px 8px 0 rgba(251,59,73,.2);
@@ -117,6 +131,22 @@ header > div {
  .middle{
   justify-content: center; 
   align-items:center;
+
+  display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items:center;
+    flex-direction:center;
+    
+    position: 0 0;
+ }
+
+ .npm-is{
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 0;
+  font-size: 1em;
+  text-align: center;
  }
 
  .pink-thing{
@@ -161,3 +191,5 @@ color: #ED1C24;
   color: white;
   text-align: center;
 }
+
+
