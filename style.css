@@ -1,5 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
 body {
   font-family: 'Poppins';
+}
+header > div {
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+}
+nav {
+    width: 600px;
+    margin: 10px 0px 10px 0px;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+} 
+.blackHeart {
+  width: 20px;
+  margin-right: 1rem;
+}
+.glass{
+  width: 20px;
+  margin-right: 1rem;
+  color: rgba (0,0,0, .05);
+}
+.logo{
+  height: 20px;
+  width: 40px;
+  margin-right: 1rem;
+  padding: 10px;
+}
+.hexagon{
+  width: 20%;
+}
+img{
+  width: 15%;
+}
+.header_inf{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+form{
+  background-color: rgba(0,0,0, .05);
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-grow: 2;
+  padding: 5px 10px;
+
+}
+.red-btn-header{
+  background-color: #FB3B49;
+  color: white;
+  padding: 5px 10px;
+  border: 2px solid #FB3B49;
+}
+.red-btn-header a{
+  text-decoration: none;
+  color: white;
+  flex-grow: 2;
+}
+.red-btn{
+  background-color: #FB3B49;
+  color: white;
+  padding: 5px 10px;
+  border: 2px solid #FB3B49;
+  box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+}
+.red-btn a{
+  text-decoration: none;
+  color: white;
+}
+form input{
+    flex-grow: 2;
+    padding: 5px 10px;
+    color: rgba (0,0,0, .05);
+}
+.white-btn{
+  background-color: white;
+  color: gray;
+  padding: 5px 10px;
+  border: 2px solid white;
+}
+.white-btn:hover{
+  border: solid 1px black;
+}
+.white-btn a{
+  text-decoration: none;
+  color: gray;
+  flex-grow: 2;
+}
+.container-btns{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+  gap: 25px;
+}
+.seccion{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.seccions-sup{
+  background-color: rgba(232,217,217,.3);
+  height: 600px;
+  font-size: x-large;
+}
+.seccion-med{
+  padding: 25px 0px 25px 0px;
+}
+.seccions-inf{
+  flex-direction: row;
+  text-align: left;
+}
+.seccion .seccions-inf div{
+  margin: 25px;
+  padding: 25px;
+}
+.seccions-inf h3{
+  color: #ED1C24;
+  padding: 8px 0px;
+}
+.black-btn{
+  background-color: rgb(0, 0, 0);
+  color: white;
+  padding: 5px 30px;
+  border: 2px solid rgb(0, 0, 0);
+  box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+  margin-bottom: 25px;
+}
+.black-btn a{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+h2{
+  background-color: rgba(255,204,53,.4);
+  transform: skew(9deg,0deg);
+  font-style: italic;
+  margin: 10px;
+}
+
+@media (max-width: 500px) {
+  .seccion{
+    gap: 5px;
+    font-size: small;
+  }
+  .seccions-sup{
+    background-color: rgba(232,217,217,.3);
+    height: 300px;
+  }
+  .seccions-inf{
+    flex-direction: column;
+    text-align: left;
+  }
+  .seccion .seccions-inf div{
+    margin: 5px;
+  }
+  nav ul {
+    display: none;
+  } 
+  .header-inf{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+  }
+  .container-btns{
+    justify-content: center;
+  }
 }
