@@ -2,7 +2,7 @@
 
 body {
   font-family: 'Poppins';
-  margin: 0;
+  margin: 0 0 32px 0;
 }
 header {
     box-shadow: 0 4px 5px 0 lightgray;
@@ -148,7 +148,7 @@ nav a {
     justify-content: center;
     align-items: center;
     background-color: #fb3e49;
-    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+    box-shadow: 6px 6px 0 rgba(251,59,73,.2);
     margin:0 32px 0 0;
     padding: 10px 60px;
     font-weight: 500;
@@ -169,11 +169,11 @@ nav a {
     display: flex;
     align-items: center;
     flex-direction: column;
+    justify-content: center;
     height: 600px;
 }
 .triangle-hex-img {
     width: 224px;
-    margin-top: 64px;
 }
 
 #create-org h2 {
@@ -191,4 +191,54 @@ nav a {
  max-width: 625px;
  text-align: center;
  font-size: 13px;
+}
+
+#features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 25px;
+}
+
+.feature-icon {
+    width: 32px;
+}
+
+.feature-btn {
+    display: flex;
+    background-color: black;
+    box-shadow: 6px 6px 0 rgba(128,83,35,.2);
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 16px 120px;
+    border: none;
+    justify-content: flex-start;
+}
+
+.feature-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 48px;
+}
+
+.feature-box {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    height: 230px;
+    padding: 0 24px;
+
+}
+
+.feature-box h3 {
+    color: #ED1C24;
+    font-weight: 500;
+    width: fit-content;
+}
+
+.feature-box p {
+    font-size: 14px;
+    width: 200px;
 }
