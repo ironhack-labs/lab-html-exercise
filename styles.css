@@ -1,0 +1,273 @@
+/*general styles*/
+
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+    font-family: "Poppins";
+  }
+
+  /*header styles*/
+
+header > div {
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+    padding: 10px 0;
+   
+  }
+
+  #logo{
+    padding-left: 20px;
+  }
+  nav {
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 10px;
+}
+  
+
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding-left: 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .blackHeart {
+    width: 20px;
+    margin-right: 4px;
+  }
+
+  .logo-and-form{
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+    padding: 10px 0;
+}
+
+  .form{
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+  }
+
+
+  .npm-logo{
+    padding-left: 20px;
+    width: 80px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.magnifying-glass{
+  width: 20px;
+  background-color: rgba(0,0,0,.05);
+  padding: 7.1px;
+}
+
+
+.input-field{
+  font-size: 12px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 1145px;
+  background-color: rgba(0,0,0,.05);
+  border: none;
+}
+
+.search-button{
+  padding: 8.7px;
+  border: none;
+  background-color: #fb3e44;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow:black;
+}
+
+
+.join-links{
+  justify-content: flex-end;
+  gap: 20px;
+  width: 180px;
+}
+
+.join-links a{
+  text-decoration: none;
+}
+.join-button{
+  margin-left: 30px;
+  margin-right: 10px;
+  padding: 2px 9px 1px 9px;
+  border-style: solid;
+  border-radius: 5%;
+  border-color:  dimgray;
+  color: black;
+}
+
+.log-in-button{
+  color: black;
+}
+
+/*section 1 styles*/
+#call-to-action{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 600px;
+  background-color:rgba(232,217,217,.3);
+  margin-bottom: 50px;
+}
+
+#call-to-action h1{
+  margin-top: 75px;
+  margin-bottom: 50px;
+  font-weight: bold;
+  font-size: 70px;
+  text-align: center;
+}
+
+#call-to-action article{
+  box-sizing: border-box;
+  text-align: center;
+  height:100px;
+  width:450px;
+  font-size: 18px;
+}
+
+#call-to-action .call-to-action-links{
+  margin-top: 20px;
+  box-sizing: border-box;
+}
+
+.call-to-action-links a{
+  text-decoration: none;
+  margin: 0 10px 0 10px;
+  font-size: 18px;
+}
+
+.see-plans-button{
+  background-color:#FB3B49;
+  color: white;
+  box-shadow:8px 8px 0 rgba(251,59,73,.2);
+  padding: 8px 14px;
+}
+
+.join-for-free-button{
+  color: black;
+  background-color: lightyellow;
+  padding: 8px 14px;
+}
+/*section 2 styles*/
+#description{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 500px;
+}
+
+.triangle-hexagon-img{
+  height: 200px;
+  width: 200px;
+}
+
+#description h2{
+  font-weight: bold;
+  width: 800px;
+  text-align: center;
+  background-color:rgba(255,204,53,.4);
+  margin-top:30px;
+  transform: skew(9deg,0deg);
+  font-style: italic;
+  
+}
+
+#description article{
+  margin-top: 20px;
+  width: 800px;
+  text-align: center;
+}
+/*section 3 styles*/
+#features{
+  height: 500px;
+}
+#features .first-div{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-left: 75px;
+  margin-right: 75px;
+  margin-bottom: 100px;  
+}
+
+.inner-divs-styles{
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  
+}
+.inner-divs-styles img{
+  width:20px;
+  height:20px;
+  margin: 0 0 10px 20px;
+
+}
+
+.inner-divs-styles h5{
+  color: #ED1C24;
+ display: flex;
+ justify-content: flex-start;
+ text-align: center;
+}
+
+.inner-divs-styles .features-details{
+  width: 250px;
+}
+
+.org{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.org-button{
+  background-color: black;
+  color: white;
+  box-shadow: 8px 8px 0 rgb(128 83 35 / 20%);
+  width: 320px;
+  font-size: 25px;
+  padding: 10px 20px;
+  cursor: pointer;
+}

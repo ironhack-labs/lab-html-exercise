@@ -8,7 +8,7 @@
   <body>
     <header>
       <div>
-        <div>
+        <div id="logo">
           <img
             class="blackHeart"
             src="images/black-heart.png"
@@ -28,20 +28,28 @@
         </nav>
       </div>
 
-      <div>
-        <img src="images/npm-logo.png" alt="npm logo" />
-        <form action="/some-url" method="post">
-          <img src="images/magnifying-glass.png" alt="magnifying glass" />
-          <input
-            type="text"
-            name="search"
-            id="search"
-            placeholder="Search packages"
-          />
-          <button>Search</button>
-          <div>
-            <a href="">Join</a>
-            <a href="">Log in</a>
+      <div class="logo-and-form">
+        <img class="npm-logo" src="images/npm-logo.png" alt="npm logo" />
+        <form class="form" action="/some-url" method="post">
+          <div class="container">
+            <img
+              class="magnifying-glass"
+              src="images/magnifying-glass.png"
+              alt="magnifying glass"
+            />
+            <input
+              class="input-field"
+              type="text"
+              name="search"
+              id="search"
+              placeholder="Search packages"
+            />
+            <button class="search-button">Search</button>
+
+            <div class="join-links">
+              <a class="join-button" href="">Join</a>
+              <a class="log-in-button" href="">Log in</a>
+            </div>
           </div>
         </form>
       </div>
@@ -52,14 +60,18 @@
         Essential JavaScript development tools that help you go to market faster
         and build powerful applications using modern open source code.
       </article>
-      <div>
-        <a href="">See plans</a>
-        <a href="">Join for free</a>
+      <div class="call-to-action-links">
+        <a class="see-plans-button" href="">See plans</a>
+        <a class="join-for-free-button" href="">Join for free</a>
       </div>
     </section>
     <section id="description">
-      <img src="images/triangle-hexagon.svg" alt="triangle hexagon" />
-      <h3>Bring the best of open source to your company</h3>
+      <img
+        class="triangle-hexagon-img"
+        src="images/triangle-hexagon.svg"
+        alt="triangle hexagon"
+      />
+      <h2>Bring the best of open source to your company</h2>
       <article>
         npm is the tool used by over 11,000,000 JavaScript developers around the
         world. Your developers already use it. Your company depends on it.
@@ -68,41 +80,43 @@
       </article>
     </section>
     <section id="features">
-      <div>
-        <div>
+      <div class="first-div">
+        <div class="inner-divs-styles">
           <img src="images/zero-configuration.svg" alt="zero configuration" />
           <h5>Zero configuration</h5>
-          <p>
+          <p class="features-details">
             Create an org, add your team, and start collaborating. Nothing to
             configure, set up, or manage.
           </p>
         </div>
-        <div>
+        <div class="inner-divs-styles">
           <img src="images/team-management.svg" alt="team management" />
           <h5>Team management</h5>
-          <p>
+          <p class="features-details">
             Control who has access to what modules within your team namespace
             using straightforward team management capabilities.
           </p>
         </div>
-        <div>
+        <div class="inner-divs-styles">
           <img src="images/familiar-features.svg" alt="familiar features" />
           <h5>Familiar features</h5>
-          <p>
+          <p class="features-details">
             npm Orgs has 100% parity with all the public npm registry features
             your developers already use.
           </p>
         </div>
-        <div>
+        <div class="inner-divs-styles">
           <img src="images/npm-audit.svg" alt="npm audit" />
           <h5>npm audit</h5>
-          <p>
+          <p class="features-details">
             Enjoy the security auditing features built into the npm client, a
             zero-friction way to make open source software safer.
           </p>
         </div>
       </div>
-      <button>Create an org</button>
+      <div class="org">
+        <button class="org-button">Create an org</button>
+      </div>
     </section>
   </body>
 </html>
