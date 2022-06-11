@@ -9,33 +9,36 @@
 </head>
 
 <body>
-    <div class="nav-bar-container">
-        <div class="npm-quote">
-            <img src="images/black-heart.png" alt="Black heart icon">
-            <span class="npm-quote-text">NPM Clone Nifty Penguin Magic</span>
-        </div>
-        <nav class="nav-bar">
-            <ul class="nav-bar-ul">
-                <li><a href="#enterprise">npm Enterprise</li></a>
-                <li><a href="#products">Products</li></a>
-                <li><a href="#solutions">Solutions</li></a>
-                <li><a href="#resources">Resources</li></a>
-                <li><a href="#docs">Docs</li></a>
-                <li><a href="#support">Support</li></a>
-            </ul>
-        </nav>
-    </div>
     <header class="header">
-        <h1><img src="images/npm-logo.png" alt="NPM Logo"></h1>
-        <div class="search-bar">
-            <input type="text" placeholder="Search packages" class="search-input">
-            <button class="search-button">Search</button>
+        <div class="nav-bar-container">
+            <div class="npm-quote">
+                <img src="images/black-heart.png" alt="Black heart icon">
+                <span class="npm-quote-text">NPM Clone Nifty Penguin Magic</span>
+            </div>
+            <nav class="nav-bar">
+                <ul class="nav-bar-ul">
+                    <li><a href="#enterprise">npm Enterprise</li></a>
+                    <li><a href="#products">Products</li></a>
+                    <li><a href="#solutions">Solutions</li></a>
+                    <li><a href="#resources">Resources</li></a>
+                    <li><a href="#docs">Docs</li></a>
+                    <li><a href="#support">Support</li></a>
+                </ul>
+            </nav>
         </div>
-        <div class="auth-buttons">
-            <a href="#" class="npm-button auth-button">Join</a>
-            <a href="#" class="npm-button auth-button secondary">Log in</a>
+        <div class="sub-bar-container">
+            <img src="images/npm-logo.png" alt="NPM Logo">
+            <form class="search-bar" action="/search" method="GET">
+                <input type="text" placeholder="Search packages" class="search-input">
+                <button type="submit" class="search-button">Search</button>
+            </form>
+            <div class="auth-buttons">
+                <a href="#" class="auth-button">Join</a>
+                <a href="#" class="auth-button secondary">Log in</a>
+            </div>
         </div>
     </header>
+
     <section class="hero" id="hero">
         <div class="container">
             <h1>
@@ -47,22 +50,24 @@
                 modern open source code.
             </p>
             <div class="action-buttons">
-                <a href="#" class="action-button">See plans</a>
-                <a href="#" class="action-button secondary">Join for free</a>
+                <a href="#" class="npm-button action-button">See plans</a>
+                <a href="#" class="npm-button action-button secondary">Join for free</a>
             </div>
         </div>
     </section>
+
     <section class="open-source" id="open-source">
         <div class="container">
             <img src="images/triangle-hexagon.svg" alt="Hexagon image" class="hexagon-img">
             <h2>Bring the best of open source to your company</h2>
-            <p class="description">
+            <article class="description">
                 npm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers already
                 use it. Your
                 company depends on it.
-                Create an Org and get more out of the tools your team already knows and loves.</p>
+                Create an Org and get more out of the tools your team already knows and loves.</article>
         </div>
     </section>
+
     <section class="features" id="features">
         <div class="container">
             <div class="feature-list">
@@ -97,10 +102,10 @@
                     </p>
                 </div>
             </div>
+            <div class="create-org">
+                <a class="npm-button create-org-button" href="#">Create an Org</a>
+            </div>
         </div>
-    </section>
-    <section class="create-org" id="create-org">
-        <a class="npm-button create-org-button" href="#">Create an Org</a>
     </section>
 </body>
 
