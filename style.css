@@ -12,14 +12,14 @@ header > div {
     border-bottom: 1px solid lightgray;
   }
   
-  nav {
-    width: 600px;
+  li {
+   margin-left: 10px;
+   margin-right: 10px;
   }
   
   nav ul {
     list-style: none;
     display: flex;
-    justify-content: space-between;
     align-items: center;
   }
   
@@ -58,8 +58,8 @@ header > div {
 }
 
 .boton{
-    height: auto;
     border: none;
+    font-size: 18px;
     padding-left: 20px;
     padding-right: 20px;
     background-color: #fb3e44;
@@ -78,4 +78,25 @@ header > div {
 .lupa {
    padding: 10px;
     width: 30px;
+}
+
+
+a.botonJoin {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+    border: 1px solid grey;
+    color: rgba(0, 0, 0, 0.778);
+}
+
+a.botonJoin:hover {
+    background-color: gainsboro;
+}
+
+a.botonLogin {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.778);
+    margin-left: 20px;
 }
