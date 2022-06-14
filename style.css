@@ -1,133 +1,186 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url("https://fonts.googleapis.com/css?family=Poppins");
 
+/* GLOBAL _________________________ */
 body {
-  font-family: 'Poppins', Sans-serif;
+  font-family: "Poppins", Sans-serif;
   padding: 0;
   margin: 0;
 }
 
 a {
-    text-decoration: none;
-    color: black;
-  }
-
+  text-decoration: none;
+  color: black;
+}
+/* Buttons */
 .npm-button {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
-    border: none;
-    padding: .2rem 1.3rem;
-    font-size: .875rem;
-    cursor: pointer;
-    height: 2.5rem;
+  box-sizing: border-box;
+  border: none;
+  padding: 0.2rem 1.3rem;
+  font-size: 0.875rem;
+  cursor: pointer;
+  padding: 0.5rem 1.5rem;
 }
 
 .npm-button-l {
-    height: 3.25rem;
-    padding: .5rem 2rem;
+  padding: 0.5rem 2rem;
+}
+
+.npm-button-xl {
+  padding: 0.8rem 2.3rem;
 }
 
 .npm-button-outline {
-    border: 1px solid black;
+  border: 1px solid black;
 }
 
 .npm-button-red {
-    background-color: #fb3e44;
-    color: #fff;
+  background-color: #fb3e44;
+  color: #fff;
+}
+
+.button-group {
+  display: flex;
+}
+
+.button-group a {
+  width: 100%;
+}
+
+/* Helpers */
+.container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .img-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .img-container img {
-    width: 100%;
+  width: 100%;
 }
 
 .dim {
-    opacity: 1;
+  opacity: 1;
 }
 
 .dim:hover {
-    opacity: .5;
-    transition: opacity .15s ease-in;
+  opacity: 0.5;
+  transition: opacity 0.15s ease-in;
 }
 
 .visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
 }
 
 /* HEADER _________________________ */
 header > div {
-    padding: 0.625rem 1.5rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid lightgray;
-    height: 45px;
-  }
+  padding: 0.625rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+  height: 45px;
+}
 
-    /* Phrase maker */
-  .npm-phrase-maker {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-grow: 1;
-    cursor: pointer;
-  }
+/* Phrase maker */
+.npm-phrase-maker {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-grow: 1;
+  cursor: pointer;
+}
 
-  .npm-phrase-maker img {
-    width: 20px;
-    margin-right: 1rem;
-  }
+.npm-phrase-maker img {
+  width: 20px;
+  margin-right: 1rem;
+}
 
-    /* Navigation */
-  .npm-navigation {
-    min-width: 625px;
-  }
-  
-  .npm-navigation ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+/* Navigation */
+.npm-navigation {
+  min-width: 625px;
+}
 
-    /* Logo */
-  .npm-logo {
-    max-width: 70px;
-  }
+.npm-navigation ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-    /* Search */
-    .npm-search {
-        display: flex;
-        flex-grow: 1;
-        justify-content: space-between;
-        margin: 0 2.5rem 0rem 1.3rem;
-        background-color: rgba(0, 0, 0, .05);
-    }
+/* Logo */
+.npm-logo {
+  max-width: 70px;
+}
 
-    .npm-search-icon {
-        padding: 0.5rem;
-        width: 2rem;
-    }
+/* Search */
+.npm-search {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+  margin: 0 2.5rem 0rem 1.3rem;
+  background-color: rgba(0, 0, 0, 0.05);
+}
 
-    #search-input {
-        width: 90%;
-        margin: 0;
-        padding: 0 .3rem;
-        border: none;
-        background: transparent;
-    }
+.npm-search-icon {
+  padding: 0.5rem;
+  width: 2rem;
+}
 
-    
+#search-input {
+  width: 90%;
+  margin: 0;
+  padding: 0 0.3rem;
+  border: none;
+  background: transparent;
+}
+
+/* BUILD AMAZING THINGS _________________ */
+#npm-build {
+  background-color: rgba(232, 217, 217, 0.3);
+  height: 600px;
+}
+
+#npm-build h1 {
+  font-size: 5rem;
+  margin: 0;
+}
+
+#npm-build p {
+  max-width: 420px;
+  padding: 1rem 0 1.8rem 0;
+}
+
+#npm-build .button-group {
+  width: 420px;
+  gap: 2rem;
+}
+
+#npm-build .npm-button-red {
+  position: relative;
+}
+
+#npm-build .npm-button-red::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  box-shadow: 8px 8px 0px rgba(251, 59, 73, 0.2);
+}
