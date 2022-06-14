@@ -6,14 +6,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>NPM Clone</title>
+    <link rel="stylesheet" href="./style.css" 
 </head>
 <body>
     <header>
     <!-- first div -->
         <div id="upper-div">
             <div>
-                <img class="blackHeart" alt="black heart" src="./images/black-heart.png">
+                <img class="black-heart" alt="black heart" src="./images/black-heart.png">
                 <span>Nifty Penguin Magic</span>
             </div>
 
@@ -30,15 +31,15 @@
         </div>
     <!-- second div -->
         <div id="bottom-div">
-            <img src="./images/npm-logo.png">
+            <img class="logo-image" src="./images/npm-logo.png">
             <form action="" method="">
-                <label for="search"><img src="./images/magnifying-glass.png"></label>
-                <input type="search" id="search" name="search" placeholder="Search Packages">
+                <label for="search"><img class="search-image" src="./images/magnifying-glass.png"></label>
+                <input type="search" id="search" name="search" placeholder= "Search Packages">
                 <button>Search</button>
             </form>
             <div>
-                <a href="#">Join</a>
-                <a href="#">Log in</a>
+                <a class="top-buttons" href="#">Join</a>
+                <a class="top-buttons" href="#">Log in</a>
             </div>
         </div>
     </header>
@@ -49,13 +50,13 @@
             modern open source code.
          </article>
         <div>
-            <a href="#"> See plans</a>
-            <a href="#">Join for free</a>
+            <a class="see-plans-btn" href="#"> See plans</a>
+            <a class="join-btn" href="#">Join for free</a>
         </div>
     </section>
     <!-- section #2 -->
     <section id="section-two">
-        <img src="./images/triangle-hexagon.svg">
+        <img class="hexagon" src="./images/triangle-hexagon.svg">
         <h2>Bring the best of open source to your company</h2>
         <article>npm is the tool used by
             over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it.
@@ -63,36 +64,37 @@
         </article>
     </section>
     <!-- section #3 -->
-    <section id="section-tree">
+    <section id="section-three">
+        <div class="cards">
         <div>
-            <img src="./images/zero-configuration.svg">
+            <img class="icon" src="./images/zero-configuration.svg">
             <h3>Zero Configuration</h3>
             <article>Create an org, add
                 your team, and start collaborating. Nothing to configure, set up, or manage.
             </article>
         </div>
         <div>
-            <img src="./images/team-management.svg">
+            <img class="icon" src="./images/team-management.svg">
             <h3>Team management</h3>
             <article>Control who has access to
                 what modules within your team namespace using straightforward team management capabilities.
             </article>
         </div>
         <div>
-            <img src="./images/familiar-features.svg">
+            <img class="icon" src="./images/familiar-features.svg">
             <h3>Familiar features</h3>
             <article>npm Orgs
                 has 100% parity with all the public npm registry features your developers already use.
             </article>
         </div>
         <div>
-            <img src="./images/npm-audit.svg">
+            <img class="icon" src="./images/npm-audit.svg">
             <h3>npm audit</h3>
             <article>Enjoy the security
                 auditing features built into the npm client, a zero-friction way to make open source software safer.e.
             </article>
         </div>
-
+        </div>
         <a href="#">Create an Org</a>
     </section>
 </body>
