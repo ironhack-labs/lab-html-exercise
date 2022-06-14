@@ -6,11 +6,64 @@ body {
   margin: 0;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+  }
+
+.npm-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border: none;
+    padding: .2rem 1.3rem;
+    font-size: .875rem;
+    cursor: pointer;
+    height: 2.5rem;
+}
+
+.npm-button-l {
+    height: 3.25rem;
+    padding: .5rem 2rem;
+}
+
+.npm-button-outline {
+    border: 1px solid black;
+}
+
+.npm-button-red {
+    background-color: #fb3e44;
+    color: #fff;
+}
+
+.img-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-container img {
+    width: 100%;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
 /* HEADER _________________________ */
 header > div {
-    padding: 10px 25px;
+    padding: 0.625rem 1.5rem;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     border-bottom: 1px solid lightgray;
     height: 45px;
   }
@@ -31,7 +84,7 @@ header > div {
 
     /* Navigation */
   .npm-navigation {
-    width: 600px;
+    min-width: 625px;
   }
   
   .npm-navigation ul {
@@ -40,21 +93,10 @@ header > div {
     justify-content: space-between;
     align-items: center;
   }
-  
-  .npm-navigation a {
-    text-decoration: none;
-    color: black;
-  }
 
     /* Logo */
   .npm-logo {
-    display: flex;
-    align-items: center;
     max-width: 70px;
-  }
-
-  .npm-logo img {
-    width: 100%;
   }
 
     /* Search */
@@ -62,5 +104,21 @@ header > div {
         display: flex;
         flex-grow: 1;
         justify-content: space-between;
-        margin: 0 20px;
-    }    
+        margin: 0 2.5rem 0rem 1.3rem;
+        background-color: rgba(0, 0, 0, .05);
+    }
+
+    .npm-search-icon {
+        padding: 0.5rem;
+        width: 2rem;
+    }
+
+    #search-input {
+        width: 90%;
+        margin: 0;
+        padding: 0 .3rem;
+        border: none;
+        background: transparent;
+    }
+
+    

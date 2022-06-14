@@ -30,21 +30,22 @@
         </div>
         <div>
             <div class="npm-logo">
-                <a href="/">
+                <a class="img-container" href="/">
                     <img src="./images/npm-logo.png" alt="npm logo" />                
                 </a>
             </div>
             <form class="npm-search" action="">
-                <img src="./images/magnifying-glass.png" alt="magnifying glass">
-                <label for="search"></label>
-                <input type="text" placeholder="Search packages" id="search" />
-                <button type="submit">Search</button>
+                <div class="npm-search-icon img-container">
+                    <img src="./images/magnifying-glass.png" alt="magnifying glass">
+                </div>
+                <label class="visuallyhidden" for="search-input"></label>
+                <input type="text" placeholder="Search packages" id="search-input" />
+                <button class="npm-button npm-button-l npm-button-red" type="submit">Search</button>
             </form>
 
-            <div>
-                <a href="#">Join</a>
-                <a href="#">Log in</a>
-            </div>
+
+                <a class="npm-button npm-button-outline" href="#">Join</a>
+                <a class="npm-button" href="#">Log in</a>
         </div>
     </header>
 
