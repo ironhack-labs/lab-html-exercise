@@ -5,18 +5,19 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AriBussi - lab-html-exercise - Ironhack</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Ari Bussi - lab-html-exercise - Ironhack</title>
 </head>
 
 <body>
     <header>
         <div>
-            <div>
+            <div class="npm-phrase-maker">
                 <img src="./images//black-heart.png" alt="Black heart" />
                 <span>Nifty Penguin Magic</span>
             </div>
 
-            <nav>
+            <nav class="npm-navigation">
                 <ul>
                     <li><a href="#">npm Enterprise</a></li>
                     <li><a href="#">Products</a></li>
@@ -28,8 +29,12 @@
             </nav>
         </div>
         <div>
-            <img src="./images/npm-logo.png" alt="npm logo" />
-            <form action="">
+            <div class="npm-logo">
+                <a href="/">
+                    <img src="./images/npm-logo.png" alt="npm logo" />                
+                </a>
+            </div>
+            <form class="npm-search" action="">
                 <img src="./images/magnifying-glass.png" alt="magnifying glass">
                 <label for="search"></label>
                 <input type="text" placeholder="Search packages" id="search" />
