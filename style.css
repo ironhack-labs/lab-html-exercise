@@ -2,7 +2,6 @@
 
 body {
   font-family: "Poppins";
-  width: 100%;
 }
 
 header > div {
@@ -39,7 +38,7 @@ nav a {
   border-bottom: 0px;
   height: 40px;
   display: flex;
-  width: 100%;
+  justify-content: space-between;
 }
 
 .logo-npm {
@@ -54,15 +53,14 @@ nav a {
 form {
   display: flex;
   flex-direction: row;
+  flex-basis: 80%;
   align-items: center;
   height: 100%;
-  width: 75%;
 }
 
 .search-input {
   background-color: rgba(0, 0, 0, 0.05);
   display: flex;
-  flex-direction: row;
   align-items: center;
   height: 35px;
   width: 100%;
@@ -81,21 +79,19 @@ form button {
   padding: 0 10px;
 }
 
-.session {  
-  height: 100%;
-  display: flex;
-  width: 15%;
-  justify-content: space-evenly;
+.session {
+  display: flex; 
   align-items: center;
 }
 
 .session a {
   text-decoration: none;
   color: black;
+  
 }
 
 .session-button {
   border: 1px solid rgba(0, 0, 0, 0.08);
-  padding: 5px 20px;
+  padding: 5px 10px;
+  margin-right: 50px;
 }
-
