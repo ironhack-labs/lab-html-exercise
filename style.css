@@ -14,7 +14,8 @@ a {
 }
 
 h1 {
-    font-size: 4rem;
+    font-weight: 700;
+    font-size: 5rem;
     margin: 0;
 }
 
@@ -52,6 +53,19 @@ h2 {
 .npm-button-black {
     background-color: #000000;
     color: #fff;
+  }
+
+  .npm-button-shadow {
+    position: relative;
+  }
+
+  .npm-button-shadow::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
   }
 
 .button-group {
@@ -184,17 +198,7 @@ header > div {
   gap: 2rem;
 }
 
-#npm-build .npm-button-red {
-  position: relative;
-}
-
-#npm-build .npm-button-red::before {
-  content: "";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  right: 0;
+#npm-build .npm-button-shadow::before {
   box-shadow: 8px 8px 0px rgba(251, 59, 73, .2);
 }
 
@@ -251,16 +255,6 @@ header > div {
     position: relative;
 }
 
-#npm-config .npm-button-black {
-    position: relative;
-}
-
-#npm-config .npm-button-black::before {
-    content: "";
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    right: 0;
+#npm-config .npm-button-shadow::before {
     box-shadow: 8px 8px 0 rgba(128,83,35,.2)
   };
