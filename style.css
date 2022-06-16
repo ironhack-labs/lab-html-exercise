@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
+/* GLOBAL _________________________ */
+body {
+  font-family: "Poppins", Sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 5rem;
+  margin: 0;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+/* btns */
+.npm-btn {
+  box-sizing: border-box;
+  border: none;
+  padding: 0.2rem 1.3rem;
+  font-size: 0.875rem;
+  cursor: pointer;
+  padding: 0.5rem 1.5rem;
+}
+
+.npm-btn-l {
+  padding: 0.5rem 2rem;
+}
+
+.npm-btn-xl {
+  padding: 0.8rem 2.3rem;
+}
+
+.npm-btn-outline {
+  border: 1px solid black;
+}
+
+.npm-btn-red {
+  background-color: #fb3e44;
+  color: #fff;
+}
+
+.npm-btn-black {
+  background-color: #000000;
+  color: #fff;
+}
+
+.npm-btn-shadow {
+  position: relative;
+}
+
+.npm-btn-shadow::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  transition: all 0.15s ease-in;
+}
+
+.npm-btn-shadow:hover.npm-btn-shadow::before {
+  transition: all 0.15s ease-in;
+  transform: translate(-8px, -8px);
+}
+
+.btn-group {
+  display: flex;
+  margin: 0 auto;
+}
+
+.btn-group a {
+  width: 100%;
+}
+
+/* Helpers */
+.container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-container img {
+  width: 100%;
+}
+
+.dim {
+  opacity: 1;
+  user-select: none;
+}
+
+.dim:not(:active):hover {
+  opacity: 0.5;
+  transition: opacity 0.15s ease-in;
+}
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/* HEADER _________________________ */
+header > div {
+  padding: 0.625rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+  height: 45px;
+}
+
+/* Phrase maker */
+#npm-phrase-maker {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-grow: 1;
+  cursor: pointer;
+}
+
+#npm-phrase-maker img {
+  width: 20px;
+  margin-right: 1rem;
+}
+
+/* Navigation */
+.npm-navigation {
+  min-width: 625px;
+}
+
+.npm-navigation ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo */
+.npm-logo {
+  max-width: 70px;
+}
+
+/* Search */
+.npm-search {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+  margin: 0 2.5rem 0 1.3rem;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.npm-search-icon {
+  padding: 0.5rem;
+  width: 2rem;
+}
+
+#search-input {
+  width: 90%;
+  margin: 0;
+  padding: 0 0.3rem;
+  border: none;
+  background: transparent;
+}
+
+/* BUILD AMAZING THINGS _________________ */
+#section-1 {
+  background-color: rgba(232, 217, 217, 0.3);
+  height: 600px;
+}
+
+#section-1 p {
+  max-width: 500px;
+  padding: 1rem 0 1.8rem 0;
+  font-size: 1.2rem;
+}
+
+#section-1 .btn-group {
+  width: 450px;
+  gap: 2rem;
+}
+
+#section-1 .npm-btn-shadow::before {
+  background-color: rgba(251, 59, 73, 0.2);
+}
+
+/* OPEN SOURCE_________________ */
+#section-2 {
+  min-height: 500px;
+}
+.npm-hexagon {
+  max-width: 200px;
+  margin: 2.5rem 0;
+}
+
+#section-2 h2 {
+  background-color: rgba(255, 204, 53, 0.4);
+  padding: 0 1.5rem;
+  transform: skew(9deg, 0deg);
+  font-style: italic;
+  font-weight: 700;
+  line-height: 1;
+}
+
+#section-2 p {
+  max-width: 780px;
+}
+
+/* CREATE AN ORG_________________ */
+#section-3 {
+  padding: 5rem;
+}
+
+.npm-about {
+  display: flex;
+}
+
+.npm-about-block {
+  padding: 1.3rem;
+}
+
+.npm-about-block h3 {
+  color: #ed1c24;
+  margin-bottom: 2rem;
+}
+
+#section-3 img {
+  width: 50px;
+  height: 50px;
+}
+
+#section-3 .btn-group {
+  margin-top: 5rem;
+  width: 25rem;
+}
+
+#section-3 .npm-btn-shadow::before {
+  background-color: rgba(128, 83, 35, 0.2);
+}
