@@ -106,9 +106,10 @@ h2 {
 
 .dim {
   opacity: 1;
+  user-select: none;
 }
 
-.dim:hover {
+.dim:not(:active):hover {
   opacity: 0.5;
   transition: opacity 0.15s ease-in;
 }
@@ -135,7 +136,7 @@ header > div {
 }
 
 /* Phrase maker */
-.npm-phrase-maker {
+#npm-phrase-maker {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -143,7 +144,7 @@ header > div {
   cursor: pointer;
 }
 
-.npm-phrase-maker img {
+#npm-phrase-maker img {
   width: 20px;
   margin-right: 1rem;
 }
