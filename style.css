@@ -129,39 +129,41 @@ nav a{
     width: 65%;
     text-align: center;
 }
-#components {
+/* section 3*/
+#components{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
     align-items: center;
-    width: 370px;
-    padding: 15px;
 }
-.service-box h4 p{
+#components > div{
     display: flex;
-    text-align: right;
-    width: 20%;
-    border: none;
-    border-radius: 15px;
-    box-sizing: border-box;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     padding: 15px;
-    margin: 15px;
 }
-.components h4{
+.service-box{
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 20%;
+    padding: 15px;
+}
+.service-box h4{
     color: #ED1C24;
-    font-weight: bold;
 }
-.components img{
+.service-box img{
     height: 25px;
 }
-.components button{
-    display: flex;
-    font-weight: bold;
-    text-align: center;
-    font-size: 30px;
-    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+.service-box p{
+    width: 100%;
+    text-align: left;
+}
+.button-3{
     color: white;
     background-color: black;
-    box-sizing: 30px;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    padding: 5px 50px;
+    margin: 20px 0;
 }
