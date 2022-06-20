@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
-body {
+body, button, input {
     font-family: "Poppins";
+}
+
+button {
+    cursor: pointer;
 }
 
 header {
@@ -44,6 +48,11 @@ nav a {
     margin-right: 1rem;
 }
 
+#subnavi {
+padding-top: 10px;
+padding-bottom: 10px;
+}
+
 .logo {
     height: 24px;
     margin: 8px;
@@ -51,11 +60,10 @@ nav a {
 
 input {
     height: 40px;
-    color: rgba(0,0,0,.05);
+    color: black;
     border:none;
     width: 1200px;
     background-color: rgb(242,242,242);
-
 }
 
 form {
@@ -69,11 +77,22 @@ form button {
     padding: 8px 16px;
     background-color: #fb3e44;
     color: white;
+    border: none;
+}
+
+.user-area button{
+    background-color: white;
+    padding: 4px 16px;
+}
+
+#btn-login {
+    border: none;
 }
 
 #hero {
     display:flex;
     justify-content: space-evenly;
+    position:static;
     align-items: center;
     flex-direction: column;
     height: 600px;
@@ -81,14 +100,37 @@ form button {
 }
 
 #hero article {
+    position: relative;
+    bottom: 75px;
     width: 500px;
     font-size: 1.1em;
     text-align: center;
 }
 
+#hero div {
+    position: relative;
+    bottom: 50px;
+    display: flex;
+    width: 500px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#hero button {
+    padding: 16px 64px;
+    font-size: 1em;
+    font-weight: 800;
+    border: none;
+}
+
 #btn-plans {
     background-color: #FB3B49;
+    color: white;
     box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+}
+
+#btn-join {
+    background-color: white;
 }
 
 #bring {
@@ -104,8 +146,10 @@ form button {
 
 h2 {
     font-size: 2.5em;
+    font-style: italic;
     background-color: rgba(255,204,53,.4);
     transform: skew(9deg, 0deg);
+    padding: 1px 40px;
 }
 
 #bring article {
@@ -127,25 +171,29 @@ h3 {
     color: #ED1C24;
 }
 
-
 #create > div {
     display: flex;
     justify-content: center;
     flex-direction: row;
     align-items: top;
+    margin: 100px auto;
 }
 
 #create img {
     width: 40px;
 }
 
+#create article {
+    padding: 20px 20px 0 20px;
+    width: 240px;
+}
+
 #create button {
     background-color: black;
     color: white;
     box-shadow: 8px 8px 0 rgba(128,83,35,.2);
-}
-
-#create article {
-    padding: 20px 20px 0 20px;
-    width: 240px;
+    padding: 16px 96px;
+    font-size: 1em;
+    font-weight: 800;
+    border: none;
 }
