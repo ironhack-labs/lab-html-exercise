@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins");
 @import url("https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 
 .flex {
   display: flex;
@@ -12,14 +13,32 @@ a {
 
 h1 {
   font-size: 5rem;
+  margin: 1.25rem;
+  font-weight: bold;
 }
 
-/*Header Section*/
+h2 {
+  font-size: 2.5rem;
+  font-style: italic;
+  background-color: rgba(255,204,53,.4);
+  transform: skew(9deg,0deg);
+  padding: 0 2rem;
+}
+
+h3 {
+  font-weight: bold;
+  color: #ED1C24;
+  margin-top: 1rem;
+}
+
+
 body {
   margin: 0%;
   padding: 0%;
   font-family: "Poppins", sans-serif;
 }
+
+/*Header Section*/
 
 header > div {
   padding: 0 25px;
@@ -43,6 +62,11 @@ nav ul {
 nav a {
   text-decoration: none;
   color: black;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .blackHeart {
@@ -97,10 +121,20 @@ nav a {
 .head-link {
   color: black;
   padding: 4px 20px;
+  transition: 0.3s;
+}
+
+.head-link:hover {
+  color: rgba(0, 0, 0, 0.5);
 }
 
 #join {
-  border:1.5px solid rgba(0,0,0,0.4);;
+  border:1.5px solid rgba(0,0,0,0.4);
+  transition: 0.3s;
+}
+
+#join:hover {
+  color: rgba(0, 0, 0, 0.5);
 }
 
 /*Hero section starts here*/
@@ -139,3 +173,56 @@ nav a {
   color: white;
 }
 
+
+/*Middle section here*/
+
+#middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 6.25rem;
+  text-align: center;  
+}
+
+#middle .hexagon {
+  width: 300px;
+  height: 300px;
+}
+
+#middle article {
+  max-width: 48rem;
+}
+
+/*Features Section here*/
+
+#features {
+  margin-top: 5rem;
+  margin-bottom: 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 6rem;
+}
+
+.feature-grid img {
+  height: 3rem;
+  width: 3rem;
+}
+
+.feature-grid div {
+  padding: 2rem;
+  max-width: 16rem;
+}
+
+.create-org {
+  color: white;
+  background-color: black;
+  box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+  padding: 1rem 9rem;
+}
