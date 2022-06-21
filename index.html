@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>NPM Clone</title>
   </head>
   <body>
@@ -19,24 +20,26 @@
         </div>
         <nav>
           <ul>
-            <li>npm Enterprise</li>
-            <li>Products</li>
-            <li>Solutions</li>
-            <li>Resources</li>
-            <li>Docs</li>
-            <li>Support</li>
+            <li><a href="#"> npm Enterprise </a></li>
+            <li><a href="#"> Products </a></li>
+            <li><a href="#"> Solutions </a></li>
+            <li><a href="#"> Resources </a></li>
+            <li><a href="#"> Docs </a></li>
+            <li><a href="#"> Support </a></li>
           </ul>
         </nav>
       </div>
 
-      <div>
+      <div class="lower-header">
         <img class="logo" src="images/npm-logo.png" alt="npm logo" />
-        <img
-          class="magnifying"
-          src="images/magnifying-glass.png"
-          alt="search logo"
-        />
+
         <form action="/some-url">
+          <label for="searchPackages"
+            ><img
+              class="magnifying"
+              src="images/magnifying-glass.png"
+              alt="search logo"
+          /></label>
           <input
             type="text"
             name="searchPackages"
@@ -45,9 +48,10 @@
           />
           <button type="submit">Search</button>
         </form>
+
         <div>
-          <a href="">Join</a>
-          <a href="">Log in</a>
+          <a href="" id="join" class="head-link">Join</a>
+          <a href="" class="head-link">Log in</a>
         </div>
       </div>
     </header>
@@ -58,7 +62,7 @@
         Essential JavaScript development tools that help you go to market faster
         and build powerful applications using modern open source code.
       </article>
-      <div>
+      <div class="flex">
         <a href="">See plans</a>
         <a href="">Join for free</a>
       </div>
@@ -100,14 +104,15 @@
           </p>
         </div>
         <div>
-            <img src="images/npm-audit.svg" alt="">
-            <h3>npm audit</h3>
-            <p>Enjoy the security auditing features built into the npm client, a
-zero-friction way to make open source software safer.</p>
+          <img src="images/npm-audit.svg" alt="" />
+          <h3>npm audit</h3>
+          <p>
+            Enjoy the security auditing features built into the npm client, a
+            zero-friction way to make open source software safer.
+          </p>
         </div>
       </div>
       <a class="create-org" href="">Create an Org</a>
     </section>
   </body>
 </html>
-

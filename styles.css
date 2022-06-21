@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap");
+
+.flex {
+  display: flex;
+}
+
+/*Heading styles and link styles*/
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+/*Header Section*/
+body {
+  margin: 0%;
+  padding: 0%;
+  font-family: "Poppins", sans-serif;
+}
+
+header > div {
+  padding: 0 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+}
+
+nav {
+  width: 600px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+.blackHeart {
+  width: 20px;
+  margin-right: 1rem;
+}
+
+.logo {
+  height: 1.5rem;
+}
+
+.magnifying {
+  height: 1.3rem;
+  padding-top: 5px;
+  color: rgba(0, 0, 0, 0.05);
+}
+
+.lower-header {
+  height: 3.5rem;
+}
+
+.lower-header form {
+  flex: 1;
+  margin: 0 20px;
+  flex-wrap: nowrap;
+  display: flex;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.lower-header label {
+  padding-left: 15px;
+}
+
+.lower-header form input {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  height: 2.5rem;
+  font-family: "Fira Mono", monospace;
+  padding-left: 15px;
+}
+
+.lower-header form button {
+  color: white;
+  background-color: #fb3e44;
+  height: 2.5rem;
+  border: none;
+  padding: 0 20px;
+}
+
+.head-link {
+  color: black;
+  padding: 4px 20px;
+}
+
+#join {
+  border:1.5px solid rgba(0,0,0,0.4);;
+}
+
+/*Hero section starts here*/
+
+#hero {
+  height: 600px;
+  background-color: rgba(232,217,217,.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#hero article {
+  max-width: 32rem;
+  font-weight: 500;
+  margin-bottom: 3rem;
+  font-size: 1.2rem;
+}
+
+#hero .flex a {
+  width: 13rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  margin: 0 1rem;
+  background-color: white;
+}
+
+#hero .flex a:first-child {
+  background-color: #FB3B49;
+  box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+  color: white;
+}
+
