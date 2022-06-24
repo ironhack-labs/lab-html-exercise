@@ -1,0 +1,2 @@
+I made this project by purely looking at the image that was sent to the slack group. I realized a bit too late that a basic skeleton and some values for colors were provided on the github repository so I ended up eyeballing them, I could make the changes but I think it isn't necessary as I got it pretty close
+An issue I faced was that the window page kept changing the layout, so I assumed the window to be full size.
