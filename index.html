@@ -2,11 +2,11 @@
 <html>
 
 <head>
-
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
+    <header id="header">
         <div>
             <div>
                 <img class="blackHeart" src="images/black-heart.png" alt="black heart" />
@@ -26,29 +26,31 @@
 
         <div>
             <!-- add logo, search bar and buttons (or links and style them as buttons later) -->
-            <div>
-                <img src="images/npm-logo.png" alt="npm logo" class="logo">
-            </div>
-            <div>
-                <img src="images/magnifying-glass.png" alt="search bar" class="search-image">
-            </div>
-            <form action="/form/submit" method="GET">
-                <input type="text" name="text" class="search" placeholder="Search packages">
-                <input type="submit" name="submit" class="submit" value="Search">
+            <img class="logo" src="images/npm-logo.png" alt="npm-logo">
+            <form class="form" action="/form/submit" method="GET">
+                <input class="label" type="text" name="text" placeholder="Search packages">
+                <input class="input" type="submit" name="submit" class="submit" value="Search">
             </form>
 
-            <a href="#">Join</a> <a href="#">Log in</a>
+            <a class="link1" href="#">Join</a>
+            <a href="#">Log in</a>
+
         </div>
     </header>
     <section id="plan">
+
         <h1>Build amazing things</h1>
-        <article>
-            <p>Essential Javascript development tools that help you go to the market faster and build powerful
-                applications using modern open source code.</p>
-        </article>
-        <div>
-            <a href="#">See plans</a> <a href="Join for free"></a>
+        <div class="planSubcontainer">
+            <article>
+                <p>Essential Javascript development tools that help you go to the market faster and build powerful
+                    applications using modern open source code.</p>
+            </article>
+            <div class="seePlans">
+                <div class="link2"><a href="#">See plans</a></div>
+                <div class="link3"><a href="#">Join for free</a></div>
+            </div>
         </div>
+
     </section>
     <section id="slogan">
         <img src="images/triangle-hexagon.svg" alt="triangle-hexagon">
@@ -60,27 +62,30 @@
         </article>
     </section>
     <section id="create">
-        <div>
-            <img src="images/zero-configuration.svg" alt="Zero configuration">
-            <h3>Zero configuration</h3>
-            <p>Create an org. add your team, and start collaborating. Nothing to configure, set up, or manage.</p>
-        </div>
-        <div>
-            <img src="images/team-management.svg" alt="">
-            <h3>Team management</h3>
-            <p>Control who has access what modules within your team namespace using straightforward team management
-                capabilities.</p>
-        </div>
-        <div>
-            <img src="images/familiar-features.svg" alt="">
-            <h3>Familiar features</h3>
-            <p>npm Orgs has 100% parity with all the public npm registry features your developers already use.</p>
-        </div>
-        <div>
-            <img src="images/npm-audit.svg" alt="">
-            <h3>npm audit</h3>
-            <p>Enjoy the security auditing features built into the npm client, a zero-friction way to make open source
-                software safer.</p>
+        <div class="features">
+            <div>
+                <img src="images/zero-configuration.svg" alt="Zero configuration">
+                <h3>Zero configuration</h3>
+                <p>Create an org. add your team, and start collaborating. Nothing to configure, set up, or manage.</p>
+            </div>
+            <div>
+                <img src="images/team-management.svg" alt="">
+                <h3>Team management</h3>
+                <p>Control who has access what modules within your team namespace using straightforward team management
+                    capabilities.</p>
+            </div>
+            <div>
+                <img src="images/familiar-features.svg" alt="">
+                <h3>Familiar features</h3>
+                <p>npm Orgs has 100% parity with all the public npm registry features your developers already use.</p>
+            </div>
+            <div>
+                <img src="images/npm-audit.svg" alt="">
+                <h3>npm audit</h3>
+                <p>Enjoy the security auditing features built into the npm client, a zero-friction way to make open
+                    source
+                    software safer.</p>
+            </div>
         </div>
         <a href="#">Create an Org</a>
     </section>
