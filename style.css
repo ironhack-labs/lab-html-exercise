@@ -18,6 +18,11 @@ body {
   font-family: 'Poppins';
 }
 
+header {
+  width: 100%;
+  box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.2), 0 1px 0px 0 rgba(0, 0, 0, 0.19);
+}
+
 header > div {
   padding: 0 25px;
   display: flex;
@@ -110,4 +115,28 @@ div .search-area{
 
 .parent button:hover, button:focus { 
   border: 1px solid #cccccc;
+}
+
+
+main {
+  width: 100%;
+}
+
+main > section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.layout {
+  display: flex;
+  gap: 16px;
+  flex-direction: row;
+}
+
+main > section > div > div > img {
+  width: 30px;
+  height: 30px;
 }
