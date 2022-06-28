@@ -14,7 +14,7 @@ In this exercise, the goal is to apply as many as possible of the concepts you'v
 ## Getting started
 
 1. [Fork](https://gist.github.com/ironhack-edu/dd3635de73a6ef07ef337bf184eda985#step-1-fork-the-repository) this repo
-2. [Clone](https://gist.github.com/ironhack-edu/dd3635de73a6ef07ef337bf184eda985#step-2-clone-the-repository) this repo
+2. [Clone](./) this repo
 
 Whenever you create a first significant change, you should make your first commit.
 
