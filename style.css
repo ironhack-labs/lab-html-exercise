@@ -14,6 +14,10 @@
   --grey: #F8F4F4;
 }
 
+button {
+  cursor: pointer;
+}
+
 body {
   font-family: 'Poppins';
 }
@@ -122,12 +126,13 @@ main {
   width: 100%;
 }
 
-main > section {
+main section {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
   padding: 10px;
+  height: calc(100vh - 160px);
 }
 
 .layout {
@@ -136,7 +141,65 @@ main > section {
   flex-direction: row;
 }
 
-main > section > div > div > img {
+main section div div img {
   width: 30px;
   height: 30px;
+}
+
+.section-one {
+  background-color: var(--backgroundColor);
+  text-align: center;
+}
+
+.section-one h1 {
+  font-size: 3.4em;
+  font-weight: bold;
+}
+
+.see-plans {
+  background-color: var(--seePlansButtonBackgroundColor);
+  color: var(--buttonLettersColor);
+  border: none;
+  box-shadow: 3px 5px var(--seePlansButtonShadowColor);
+  width: 200px;
+  height: 40px;
+  font-weight: bold;
+  margin: 20px;
+}
+
+.join {
+  background-color: white;
+  color: black;
+  border: none;
+  width: 200px;
+  height: 40px;
+  font-weight: bold;
+}
+
+.section-two{
+  text-align: center;
+}
+
+.section-two h2 {
+  background-color: #fffaa0;
+}
+
+.triangle-hexagon{
+  width: 150px;
+  height: 150px;
+}
+
+section div h4 {
+  color: var(--eachHeadingColor);
+}
+
+.create-org{
+  background-color: black;
+  color: var(--buttonLettersColor);
+  border: none;
+  box-shadow: 3px 5px rgba(0, 0, 0, 0.2);
+  width: 20%;
+  height: 40px;
+  font-weight: bold;
+  margin: 20px;
 }
