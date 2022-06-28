@@ -1,0 +1,393 @@
+
+*{
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --colorTextos: #7e7e7e;
+    --colorBotones: #f69229;
+    --colorFondo: black;
+    --paddingSecciones: 60px 0;
+    --marginElementos: 40px;
+}
+
+.contenedor{
+    width: 90%;
+    max-width: 1600px;
+    margin: auto;
+    overflow: hidden;
+    padding: var(--paddingSecciones);
+}
+
+/* Menu */ 
+
+.menu-navegacion{
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    border-bottom: 1px solid rgba(54, 53, 53, 0.367);
+}
+
+.logo{
+    height: 15px;
+    display: inline-flex;
+}
+
+.logo img{
+    display: block;
+    height: 100%;
+}
+
+.logo a{
+    display: inline-block;
+    height: 100%;
+    list-style: none;
+    color: var(--colorFondo);
+    text-decoration: none;
+}
+
+.enlaces ul{
+    list-style: none;
+    display: inline-block;
+}
+
+.enlaces a{
+    color: var(--colorFondo);
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.search{
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+
+.logo-nmp{
+    height: 25px;
+}
+
+.logo-nmp img{
+    display: block;
+    height: 100%;
+}
+
+.logo-lupa{
+    width: 900px;
+    height: 35px;
+    display: flex;
+}
+
+.logo-lupa img{
+    background: #eee;
+    display: block;
+    height: 100%;
+}
+
+.logo-lupa input{
+    background: #eee;
+    width: 900px;
+    height: 35px;
+    outline: none;
+    border: 0;
+}
+
+.logo-lupa input::placeholder{
+    font-size: 1.2em;
+}
+
+.logo-lupa button{
+    margin-left: 2px;
+    width: 80px;
+    height: 35px;
+    background: rgb(224, 35, 35);
+    color: #fff;
+    text-decoration: none;
+    outline: none;
+    border: 0;
+}
+
+.join a{
+    color: var(--colorFondo);
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+/* Primera Seccion */
+
+.parte1{
+    height: 500px;
+    background-color: rgb(249, 244, 244);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: 0 0 2px rgba(0, 0, 0, .5);
+}
+
+.contenedor-textos{
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    text-align: center;
+}
+
+.parte1 h1{
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.parte1 article{
+    width: 500px;
+    font-weight: 300;
+    font-size: 18px;
+    margin: 15px 0;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.see-plans{
+    display: inline-block;
+    background: rgb(232, 74, 74);
+    padding: 15px 0;
+    width: 200px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    margin-right: 20px;
+}
+
+.join-free{
+    display: inline-block;
+    background: rgb(255, 255, 255);
+    padding: 15px 0;
+    width: 200px;
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Segunda seccion */
+
+.parte2{
+    height: 500px;
+    background-color: rgb(255, 255, 255);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.parte2 img{
+    width: 15%;
+    display: block;
+    margin: 0;
+    margin-left: 500px;
+    padding-bottom: 50px;
+}
+
+.parte2 h2{
+    width: 50%;
+    padding: 0;
+    color: #000;
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: darkkhaki;
+    margin-left: 300px;
+}
+
+.parte2 article{
+    padding: 0;
+    justify-content: center;
+    text-align: center;
+    width: 500px;
+    margin-left: 320px;
+}
+
+/* Tercera Seccion */
+
+.info {
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.configuration{
+    display: block;
+    object-fit: cover;
+    width: 25%;
+}
+
+.configuration img{
+    width: 15%;
+}
+
+.configuration h3{
+    text-align: left;
+    color: rgb(251, 39, 39);
+    margin-bottom: 20px;
+}
+
+.configuration p{
+    width: 80%;
+    text-align: left;
+}
+
+.management{
+    display: block;
+    object-fit: cover;
+    width: 25%;
+}
+
+.management img{
+    width: 15%;
+}
+
+.management h3{
+    text-align: left;
+    color: rgb(251, 39, 39);
+    margin-bottom: 20px;
+}
+
+.management p{
+    width: 80%;
+    text-align: left;
+}
+
+.features{
+    display: block;
+    object-fit: cover;
+    width: 25%;
+}
+
+.features img{
+    width: 15%;
+}
+
+.features h3{
+    text-align: left;
+    color: rgb(251, 39, 39);
+    margin-bottom: 20px;
+}
+
+.features p{
+    width: 80%;
+    text-align: left;
+}
+
+.audit{
+    display: block;
+    object-fit: cover;
+    width: 25%;
+}
+
+.audit img{
+    width: 15%;
+}
+
+.audit h3{
+    text-align: left;
+    color: rgb(251, 39, 39);
+    margin-bottom: 20px;
+}
+
+.audit p{
+    width: 80%;
+    text-align: left;
+}
+
+/*
+.menu-navegacion{
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    border-bottom: 1px solid rgba(54, 53, 53, 0.367);
+}
+
+.logo{
+    height: 15px;
+}
+
+.logo img{
+    display: inline-block;
+    height: 100%;
+}
+
+.logo a{
+    display: inline-block;
+    height: 100%;
+    list-style: none;
+    color: var(--colorFondo);
+    text-decoration: none;
+}
+
+.enlaces li{
+    list-style: none;
+    display: inline-block;
+}
+
+.enlaces a{
+    color: var(--colorFondo);
+    text-decoration: none;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+.enlaces a:hover{
+    text-decoration: underline;
+}
+
+/* Form Search 
+
+.form-busqueda{
+    padding: 0;
+    display: flex;
+    height: 50px;
+}
+
+.logo-nmp{
+    height: 15px;
+}
+
+.logo-nmp img{
+    display: inline-block;
+    height: 100%;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+.form-busqueda{
+    position: relative;
+    width: 1050px;
+    height: 30px;
+    vertical-align: middle;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.form-busqueda #input-search{
+    width: 1050px;
+    height: 30px;
+    background: #eae9e9;
+    border: none;
+    font-size: 10pt;
+}
+
+.form-busqueda .input-icon{
+    position: absolute;
+    top: 50%;
+    margin-left: 17px;
+    margin-top: 17px;
+}*/
+
