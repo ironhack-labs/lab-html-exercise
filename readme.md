@@ -95,6 +95,7 @@ We could try to represent this part of the website with the following:
   </div>
 
   <div>
+    <a href="#"> Support </a>
     <!-- add logo, search bar and buttons (or links and style them as buttons later) -->
   </div>
 </header>
