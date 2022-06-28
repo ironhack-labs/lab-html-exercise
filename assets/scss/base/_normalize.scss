@@ -1,0 +1,38 @@
+*, *::after, *::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body::before{
+    content: " ";
+    display: block;
+    background-image: linear-gradient(to right, orange, red, rgb(237, 55, 237));
+    height: 8px;
+}
+
+body::after{
+    content: " ";
+    display: block;
+    background-image: linear-gradient(to right, orange, red, rgb(237, 55, 237));
+    height: 8px;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style-type: none;
+}
+
+img{
+    width: auto;
+    height: auto;
+    display: block;
+}
+
+svg{
+    cursor: pointer;
+}

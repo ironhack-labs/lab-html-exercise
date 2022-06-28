@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>npm</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="https://static.npmjs.com/da3ab40fb0861d15c83854c29f5f2962.png">
+</head>
+<body>
+    <header class="main-header flex-between">
+        <div class="heart-container header-container flex-evenly">
+            <span class="heart">❤</span>
+            <span>Neverending Perpetual Motion</span>
+        </div>
+
+        <div class="header-container flex-evenly">
+                <a>Products</a>
+                <a>Pricing</a>
+                <a>Documentation</a>
+        </div>
+    </header>
+
+    <nav class="main-nav flex">
+        <div class="nav-logo center">
+            <svg viewBox="0 0 780 250"><path fill="#231F20" d="M240,250h100v-50h100V0H240V250z M340,50h50v100h-50V50z M480,0v200h100V50h50v150h50V50h50v150h50V0H480z M0,200h100V50h50v150h50V0H0V200z"></path></svg>
+        </div>
+        <div class="form-container flex">
+            <form class="nav-form flex" action="#">
+                <div class="input-container flex">
+                    <div class="lupa center">
+                        <svg width="15px" height="15px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" aria-hidden="true"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g stroke="#777777" stroke-width="1.3"><g><path d="M13.4044,7.0274 C13.4044,10.5494 10.5494,13.4044 7.0274,13.4044 C3.5054,13.4044 0.6504,10.5494 0.6504,7.0274 C0.6504,3.5054 3.5054,0.6504 7.0274,0.6504 C10.5494,0.6504 13.4044,3.5054 13.4044,7.0274 Z"></path><path d="M11.4913,11.4913 L17.8683,17.8683"></path></g></g></g></svg>
+                    </div>
+                    <input class="input-search" placeholder="Search packages" type="search">
+                </div>
+            </form>
+            <button class="submit">Search</button>
+        </div>
+        <div class="button-container flex">
+            <button class="sing-up">Sing Up</button>
+            <button class="sing-in">Sing In</button>
+        </div>
+    </nav>
+
+    <main>
+        <section class="main-banner">
+            <div class="main-container m-center">
+                <h1 class="banner-title text-center">Build amazing things</h1>
+                <div class="banner-content text-center">We're npm, Inc., the company behind Node package manager, the npm Registry, and npm CLI. We offer those to the community for free, but our day job is building and selling useful tools for developers like you.</div>
+                <h2 class="banner-subtitle text-center">Take your JavaScript development up a notch</h2>
+                <div class="banner-content text-center">Get started today for free, or step up to npm Pro to enjoy a premium JavaScript development experience, with features like private packages.</div>
+                <div class="buttons flex-evenly wrap">
+                    <button class="sign-free">Sing Up for Free</button>
+                    <button class="learn-pro">Learn about Pro</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="description">
+            <div class="description-container">
+                <div class="image m-center"><img src="https://static.npmjs.com/attachments/ck3uweazy72ye8874y9kkxnx1-gak.png"></div>
+                <h2 class="description-title text-center p-2">Bring the best of open source to you, your team, and your company</h2>
+                <div class="description-content text-center">Relied upon by more than 11 million developers worldwide, npm is committed to making JavaScript development elegant, productive, and safe. The free npm Registry has become the center of JavaScript code sharing, and with more than one million packages, the largest software registry in the world. Our other tools and services take the Registry, and the work you do around it, to the next level.</div>
+            </div>
+        </section>
+
+        <section class="little-banner">
+            <div class="little-content m-center">
+                <h2 class="little-title text-center p-1">We love open source</h2>
+                <div class="little-description text-center p-1">At npm, Inc., we're proud to dedicate teams of full-time employees to operating the npm Registry, enhancing the CLI, improving JavaScript security, and other projects that support and nurture a vibrant open source community.</div>
+            </div>
+        </section>
+
+        <section class="slogan">
+            <h2 class="slogan-title text-center m-center">Gratefully serving everyone from solo devs to the Fortune 500</h2>
+        </section>
+    </main>
+
+    <footer class="footer flex">
+        <div class="logo">
+            <svg viewBox="0 0 27.23 27.23"><rect fill="#333333" width="27.23" height="27.23" rx="2"></rect><polygon fill="#fff" points="5.8 21.75 13.66 21.75 13.67 9.98 17.59 9.98 17.58 21.76 21.51 21.76 21.52 6.06 5.82 6.04 5.8 21.75"></polygon></svg>
+
+            <svg aria-hidden="true" role="img" class="" viewBox="0 0 16 16" width="50" height="50" fill="black" style="display:inline-block;user-select:none;vertical-align:top"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
+        </div>
+        <div class="footer-content flex-between wrap">
+            <div class="footer-container">
+                <span>Support</span>
+                <ul>
+                    <li>Help</li>
+                    <li>Advisories</li>
+                    <li>Status</li>
+                    <li>Contact npm</li>
+                </ul>
+            </div>
+            <div class="footer-container">
+                <span>Company</span>
+                <ul>
+                    <li>About</li>
+                    <li>Blog</li>
+                    <li>Press</li>
+                </ul>
+            </div>
+            <div class="footer-container">
+                <span>Terms & Policies</span>
+                <ul>
+                    <li>Policies</li>
+                    <li>Term of Use</li>
+                    <li>Code of Conduct</li>
+                    <li>Privacy</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
