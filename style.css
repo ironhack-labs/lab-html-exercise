@@ -1,0 +1,259 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
+body {
+  font-family: "Poppins";
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  font-size: 5rem;
+  font-weight: bolder;
+}
+
+header > div {
+  padding: 0 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+}
+
+nav {
+  width: 600px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  transition: color 2s;
+}
+
+nav a :hover {
+  color: rgb(158, 158, 158);
+}
+
+.blackHeart {
+  width: 20px;
+  margin-right: 1rem;
+}
+
+.second-header {
+  margin-top: 7px;
+  padding-bottom: 10px;
+}
+
+.search-bar {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  width: calc(80% - 10px);
+}
+
+.second-header img {
+  width: 80px;
+}
+
+.div-logo {
+  padding-top: 10px;
+}
+
+form {
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-items: center;
+  width: 100%;
+}
+
+.search-loupe {
+  padding-top: 10px;
+  padding-right: 0.25rem;
+  padding-left: 1rem;
+}
+
+.search-loupe img {
+  width: 25px;
+}
+.search-bar input {
+  background: none;
+  font-family: "Fira Mono", "Andale Mono", "Consolas", monospace;
+  font-size: 16px;
+  letter-spacing: 0px;
+  border: none;
+  height: 40px;
+  padding-left: 10px;
+  border-radius: 0;
+  width: 100%;
+  border: none;
+}
+
+.search-bar button {
+  background-color: #fb3e44;
+  color: white;
+  border: none;
+  padding: 0 30px;
+}
+
+.join-btn {
+  background-color: white;
+  border: 1px solid #c0c0c0;
+  height: 45px;
+  width: 80px;
+}
+
+.login-btn {
+  border: none;
+  background-color: white;
+  height: 45px;
+  width: 80px;
+}
+
+#first-section {
+  background-image: linear-gradient(
+      270deg,
+      rgba(176, 42, 42, 0.16) 0%,
+      rgba(176, 42, 42, 0.56) 18.45%,
+      rgba(176, 42, 42, 0.8) 49.67%,
+      rgba(176, 42, 42, 0.56) 82.52%,
+      rgba(176, 42, 42, 0.196364) 99.7%,
+      rgba(189, 40, 40, 0) 99.71%,
+      rgba(203, 56, 55, 0) 99.72%,
+      rgba(203, 56, 55, 0.16) 99.73%
+    ),
+    url(https://static.npmjs.com/abf53a31b2da4657a1a004ee9358551c.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-content: center;
+  color: white;
+  padding-top: 60px;
+}
+
+#first-section article {
+  width: 500px;
+  text-align: center;
+  margin: 0 auto 40px auto;
+}
+
+.buttons-div {
+  text-align: center;
+  height: 75px;
+}
+
+.see-plans-button {
+  background-color: #ffd700;
+  color: black;
+  border: none;
+  width: 150px;
+  height: 50px;
+  box-shadow: 8px 8px 0 rgba(251, 59, 73, 0.2);
+  border-radius: 50px;
+  margin: 10px;
+  font-weight: 600;
+  font-size: 1em;
+}
+
+.join-for-free-button {
+  font-weight: 600;
+  border: 1px solid #fff;
+  border-radius: 50px;
+  width: 150px;
+  height: 50px;
+  background-color: Transparent;
+  margin: 10px;
+  font-size: 1em;
+  color: white;
+}
+
+#second-section {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 14px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#second-section img {
+  height: 200px;
+  width: 200px;
+  align-self: center;
+}
+
+#second-section h2 {
+  font-weight: 700;
+  font-size: 24px;
+  width: 630px;
+  margin: 20px auto;
+  background-color: rgba(255, 204, 53, 0.4);
+  transform: skew(9deg, 0deg);
+  font-style: italic;
+}
+
+#second-section article {
+  width: 500px;
+  margin: 20px auto 20px auto;
+}
+
+.solutions-img {
+  height: 30px;
+}
+
+#third-section {
+  margin: 70px 70px 20px 120px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#third-section h4 {
+  color: #ed1c24;
+  text-align: left;
+}
+
+#third-section article {
+  text-align: left;
+  padding: 0 10px 0 0;
+}
+
+.container {
+  height: 300px;
+  width: 200px;
+}
+
+.create-an-org-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto 100px auto;
+  text-align: center;
+}
+
+.create-an-org-button a {
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  width: 400px;
+  height: 40px;
+  padding-top: 20px;
+  box-shadow: 8px 8px 0 rgba(128, 83, 35, 0.2);
+}
