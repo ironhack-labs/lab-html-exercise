@@ -4,13 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
     <title>NPM-clone</title>
   </head>
   <body>
     <header>
       <div class="upper-header">
         <div class="penguin-magic">
-          <img src="images/black-heart.png" alt="black-heart" />
+          <img
+            src="images/black-heart.png"
+            alt="black-heart"
+            class="blackheart"
+          />
           <span>Niffy Penguin Magic</span>
         </div>
         <nav class="nav-bar">
@@ -26,7 +31,7 @@
       </div>
       <div class="bottom-header">
         <img src="images/npm-logo.png" alt="npm-logo" />
-        <form action="#" method="post">
+        <form action="#" method="post" class="form-npm">
           <img src="images/magnifying-glass.png" alt="search-icon" />
           <label for="searchbox"></label>
           <input
@@ -37,8 +42,8 @@
           />
           <button type="submit">Search</button>
         </form>
-        <div>
-          <a href="#">Join</a>
+        <div class="user-options">
+          <a href="#" class="join-button">Join</a>
           <a href="#">Log In</a>
         </div>
       </div>
