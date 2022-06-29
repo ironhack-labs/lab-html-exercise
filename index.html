@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <title>npm</title>
   </head>
   <body>
     <header>
@@ -29,17 +30,34 @@
         </nav>
       </div>
 
-      <div>
+      <div class="search-bar">
         <!-- add logo, search bar and buttons (or links and style them as buttons later) -->
-        <img src="./images/npm-logo.png" alt="npm logo" />
-        <img src="./images/magnifying-glass.png" alt="" />
-        <form action="submit">
-          <input type="text" placeholder="Search packages" />
-          <button>Search</button>
+        <img class="npm-logo" src="./images/npm-logo.png" alt="npm logo" />
+
+        <!-- FORM -->
+
+        <form action="/register" class="search-packages" method="post">
+          <label for="search-packages"
+            ><img
+              class="magnifying-glass"
+              src="./images/magnifying-glass.png"
+              alt=""
+          /></label>
+          <input
+            type="text"
+            name="search-packages"
+            id="search-packages"
+            placeholder="Search packages"
+          />
+
+          <button type="submit">Search</button>
         </form>
-        <div>
-          <a href="#">Join</a>
-          <a href="#">Log In</a>
+
+        <!-- FORM -->
+
+        <div class="header-btns">
+          <a href="#" class="join-btn">Join</a>
+          <a href="#" class="login-btn">Log In</a>
         </div>
       </div>
     </header>
@@ -55,15 +73,19 @@
         </p>
       </article>
       <div>
-        <a href="#">See plans</a>
-        <a href="#">Join for free</a>
+        <a href="#" id="see-plans">See plans</a>
+        <a href="#" id="join-for-free">Join for free</a>
       </div>
     </section>
 
     <!-- Section 2 -->
 
     <section class="bring-the-best">
-      <img src="./images/triangle-hexagon.svg" alt="" />
+      <img
+        src="./images/triangle-hexagon.svg"
+        alt="hexagon"
+        id="triangle-hexagon"
+      />
       <h2>Bring the best of open source to your company</h2>
       <article>
         <p>
@@ -78,7 +100,7 @@
     <!-- Section 3 -->
 
     <section class="features">
-      <div>
+      <div class="container">
         <img
           src="./images/zero-configuration.svg"
           alt="Zero configuration logo"
@@ -90,7 +112,7 @@
         </p>
       </div>
 
-      <div>
+      <div class="container">
         <img src="./images/team-management.svg" alt="Team management logo" />
         <h3>Team management</h3>
         <p>
@@ -99,7 +121,7 @@
         </p>
       </div>
 
-      <div>
+      <div class="container">
         <img
           src="./images/familiar-features.svg"
           alt="Familiar features logo"
@@ -111,7 +133,7 @@
         </p>
       </div>
 
-      <div>
+      <div class="container">
         <img src="./images/npm-audit.svg" alt="npm audit logo" />
         <h3>npm audit</h3>
         <p>
@@ -119,8 +141,10 @@
           zero-friction way to make open source software safer.
         </p>
       </div>
+    </section>
 
-      <a href="#">Create an Org</a>
+    <section class="create-org-btn">
+      <a href="#" id="create-org-btn">Create an Org</a>
     </section>
   </body>
 </html>
