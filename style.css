@@ -5,7 +5,7 @@ body {
 }
 
 header > div {
-  padding: 0 25px;
+  padding: 0 25px; 
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -39,7 +39,7 @@ nav a {
 }
 
 .magnifying-glass {
-    width: 10px;
+    width: 25px;
     background: rgba(0,0,0,.05);
 }
 
@@ -49,6 +49,13 @@ nav a {
     justify-content: space-evenly;
     flex-direction: row;
     padding: 10px;
+}
+
+.search-form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-items: flex-start;
 }
 
 .search-packages {
@@ -65,13 +72,15 @@ nav a {
     text-decoration: none;
     padding: 8px 20px;
     border: none;
+    position: relative;
+    bottom: 2.5px;
 }
 
 .join-button {
     border: 1px solid grey;
     padding: 5px 15px;
     font-size: 0.7em;
-    color: black;
+    color: grey;
     text-decoration: none;
 }
 
