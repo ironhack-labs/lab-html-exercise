@@ -1,9 +1,16 @@
+ /* GENERAL */
 @import url('https://fonts.googleapis.com/css?family=Poppins');
+
+.center {
+    margin-right: auto;
+    margin-left: auto;
+}
 
 body {
   font-family: 'Poppins';
 }
 
+/* HEADER */
 header > div {
   padding: 0 25px;
   display: flex;
@@ -32,3 +39,95 @@ nav a {
   width: 20px;
   margin-right: 1rem;
 }
+
+.search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search form {
+    width: 50%;
+}
+
+.search .nmpLogo{
+    width: 70px;
+}
+
+.search .magnifyingGlass {
+    height: 18px;
+    width: 18px;
+}
+
+.search span {
+    padding: 5px;
+    background-color: #f2f2f2;
+}
+
+.search input[type=text] {
+    background-color: #f2f2f2;
+    border: none;
+}
+
+.search input[type=button] {
+    background-color: #fb3e44;
+    color: white;
+    border: none;
+    padding: 9px 20px;
+}
+
+.account a {
+    text-decoration: none;
+    color: black;
+}
+
+.account a:first-child {
+    padding: 0px 10px;
+    border: 1px solid #f2f2f2;
+}
+
+/* CONTENT */ 
+section {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+/* INTRODUCTION */
+.introduction {
+    background-color: #f2f2f2;
+    padding-bottom: 50px;
+}
+.introduction h1 {
+    font-size: 50px;
+}
+.introduction article {
+    width: 50%;
+    text-align: center;
+}
+.introduction div {
+    width: 50%;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+
+} 
+.introduction .seePlans {
+     text-decoration: none;
+     color: white;
+     background-color: #fb3e44;
+     box-shadow: 5px 5px grey;
+     padding: 15px 50px;
+}
+.introduction .join {
+     text-decoration: none;
+     color: black;
+     padding: 15px 50px;
+}
+
+/* CALL TO ACTION */
+
+
+/* FEATURES */
