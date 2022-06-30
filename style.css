@@ -1,0 +1,209 @@
+/* GENERAL */
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
+.center {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+body {
+  font-family: "Poppins";
+}
+
+/* HEADER */
+header > div {
+  padding: 0 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+}
+
+nav {
+  width: 600px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+.blackHeart {
+  width: 20px;
+  margin-right: 1rem;
+}
+
+.search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: center;
+  padding: 10px;
+  border-bottom: 4px solid lightgray;
+}
+
+.search form {
+  width: auto;
+  flex-grow: 3;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.search .nmpLogo {
+  width: 70px;
+}
+
+.search span {
+  height: 100%;
+  display: flex;
+  flex-grow: 3;
+  background-color: #f2f2f2;
+  padding: 6px;
+}
+
+.search .magnifyingGlass {
+  height: 22px;
+  width: 22px;
+}
+
+.search input[type="text"] {
+  background-color: #f2f2f2;
+  border: none;
+  flex-grow: 3;
+}
+
+.search input[type="button"] {
+  background-color: #fb3e44;
+  color: white;
+  border: none;
+  padding: 9px 20px;
+  font-weight: 600;
+}
+
+.account {
+  flex-grow: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.account a {
+  text-decoration: none;
+  color: black;
+  padding: 4px 20px;
+}
+
+.account a:first-child {
+  border: 1px solid lightgray;
+}
+
+/* CONTENT */
+section {
+  display: flex;
+  flex-direction: column;
+}
+
+/* INTRODUCTION */
+.introduction {
+  background-color: #f2f2f2;
+  padding-bottom: 50px;
+  margin-bottom: 40px;
+}
+.introduction h1 {
+  font-size: 50px;
+}
+
+.introduction .container {
+  max-width: 26rem;
+  display: flex;
+  flex-direction: column;
+}
+.introduction article {
+  text-align: center;
+}
+.introduction .actions {
+  padding: 30px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+}
+.introduction .seePlans {
+  text-decoration: none;
+  color: white;
+  background-color: #fb3b49;
+  box-shadow: 8px 8px 0 rgba(251, 59, 73, 0.2);
+  padding: 15px 50px;
+}
+.introduction .join {
+  text-decoration: none;
+  color: black;
+  padding: 15px 50px;
+}
+
+/* CALL TO ACTION */
+.callToAction {
+  padding: 40px;
+  margin-bottom: 40px;
+}
+.callToAction h2 {
+  transform: skew(9deg, 0deg);
+  font-style: italic;
+  background-color: rgba(255, 204, 53, 0.4);
+  padding: 0px 20px;
+}
+.callToAction img {
+  width: 200px;
+  margin-bottom: 20px;
+}
+.callToAction article {
+  text-align: center;
+  width: 34rem;
+  font-size: 12px;
+}
+
+/* FEATURES */
+.features {
+    max-width: 1200px;
+  padding: 40px 80px;
+  margin-bottom: 40px;
+}
+.features .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.features img {
+  width: 40px;
+}
+.features .container div {
+  width: 25%;
+  align-self: flex-start;
+  padding: 5px;
+}
+.features h3 {
+  color: #ed1c24;
+  font-weight: 600;
+}
+.features p {
+  font-weight: 100;
+}
+.features a {
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  box-shadow: 8px 8px 0 rgba(128, 83, 35, 0.2);
+  padding: 15px 100px;
+  font-weight: 600;
+}
