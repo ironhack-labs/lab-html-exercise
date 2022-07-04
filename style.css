@@ -42,67 +42,90 @@ nav a {
 
 .headerB {
     display: flex;
-    padding: .8rem 1.56rem;
+    padding:.62rem 2rem;
     justify-content: space-between;
     align-items: center;
     position: relative;
 }
  
-.headerB__logo{
-    width: 70px ;
-    margin-top: 6px;
+.headerB__containerLogo {
+    padding: .8rem 2rem 0 0;
 }
+
+.headerB__logo{
+    width: 70px;
+}
+
+.containerForm{
+    padding: .5rem 0;
+    width: 50%;
+    flex: 1 1 auto;
+    display: block;
+}
+
+
 .glassMagnifying{
     display: flex;
+    white-space: nowrap;
+    background-color: #f2f2f2;
 
 }
+.container-glassMagnifying__icon{
+    padding: .6rem .25rem 0 1rem;
+    float: left;
+    display: block;
+}
+
 .glassMagnifying__icon{
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    top: 20px;
-    left: 145px;
-    z-index: 4;
+    width: 18px;
+    height: 18px;
+    margin-top: 8px;
 }
 
 .glassMagnifying_search{
-    position: absolute;
-    top: 10px;
-    left: 135px;
-    z-index: 1;
-    width: 65rem;
-    height: 2.5rem;
+    background: none;
+    font-family: "Fira Mono", "Andale Mono", "Consolas", monospace;
+    font-size: 16px;
     border: none;
-    font-size: 1rem;
-    padding-left: 2rem;
-    margin-right: -4px;
-    background-color: #f1f1f1;
+    outline: unset;
+    height: 52px;
+    padding-left: 10px;
+    width: calc(100% - 10px);
 }
 
 .glassMagnifying__button{
-    padding: .45rem 1.20rem;
-    font-size: .8rem;
-    height: 2.5rem;
-    color: #ffffff;
-    background-color: #fb3e44;
+    font-family: 'Poppins';
+    font-weight: bold;
+    font-size: .875rem;
+    line-height: 1.15rem;
+    letter-spacing: 0.3px;
+    color: #fff;
+    padding: .5rem 2rem;
     border: none;
-    position: absolute;
-    top: 10px;
-    left: 1240px;
+    background-color: #fb3e44;
 }
 
+.containerJoinInput{
+
+    margin-left: 1rem;
+    font-weight: 600;
+    flex: 1 1 auto;
+    flex-grow: 0;
+    text-align: right;
+}
 
 .join{
-    border:1px solid #000000;
+    padding: 13px 28px;
+    border: 2px solid #cccccc;
     text-decoration: none;
     color: #000;
-    padding: .3rem 1rem;
+    margin: 0 1rem 0 1.5rem;
 }
 
 .logIn{
     text-decoration: none;
-    margin: 0 20px;
+    margin: 0 1rem;
+    padding: .25rem;
     color: #000;
-
 }
 /* -----------------SECTION-----------------*/
