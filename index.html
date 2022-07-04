@@ -24,16 +24,20 @@
                 </nav>
             </div>
             <div id="search-line">
+                <div class="searchbar">
                 <img class="logo" src="./images/npm-logo.png" alt="npm logo">
                 <div class="search-field">                    
                     <form action="/some-url" method="get">
                         <img src="./images/magnifying-glass.png" alt="magnifying glass">
                         <label for="search"></label>
-                        <input type="text" id="search" name="search" placeholder="Search packages">
+                        <input type="text" id="search" name="search" placeholder="Search packages" size="170">
+                        <button type="submit">Search</button>
                     </form>
-                    <!--Form, Buttons, Links -->
+                </div>
+                <div>
                     <a href="#join">Join</a>
                     <a href="#login">Log In</a>
+                </div>
                 </div>
             </div>
         </header>
@@ -42,7 +46,9 @@
             <article>Essential JavaScript development tools that help you go to market faster and build powerful applications using
                 modern open source code.</article>
             <div>
-                <a href="#plans">See plans</a>
+                <form>
+                    <button type="submit" formaction="some-url">See plans</button>
+                </form>
                 <a href="#join">Join for free</a>
             </div>            
         </section>
@@ -56,27 +62,29 @@
             </div>
         </section>
         <section id="features">
-            <div class="content-box">
-                <img src="./images/zero-configuration.svg" alt="zero-configuration">
-                <h3>Zero configuration</h3>
-                <article>Create an org, add your team, and start collaborating. Nothing to configure, set up, or manage.</article>
+            <div class="boxes">
+                <div class="content-box">
+                    <img src="./images/zero-configuration.svg" alt="zero-configuration">
+                    <h3>Zero configuration</h3>
+                    <article>Create an org, add your team, and start collaborating. Nothing to configure, set up, or manage.</article>
+                </div>
+                <div class="content-box">
+                    <img src="./images/team-management.svg" alt="team-management">
+                    <h3>Team management</h3>
+                    <article>Control who has access to what modules within your team namespace using straightforward team management capabilities.</article>
+                </div>
+                <div class="content-box">
+                    <img src="./images/familiar-features.svg" alt="familiar-features">
+                    <h3>Familiar features</h3>
+                    <article>npm Orgs has 100% parity with all the public npm registry features your developers already use.</article>
+                </div>
+                <div class="content-box">
+                    <img src="./images/npm-audit.svg" alt="npm-audit">
+                    <h3>npm audit</h3>
+                    <article>Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer.</article>
+                </div>
             </div>
-            <div class="content-box">
-                <img src="./images/team-management.svg" alt="team-management">
-                <h3>Team management</h3>
-                <article>Control who has access to what modules within your team namespace using straightforward team management capabilities.</article>
-            </div>
-            <div class="content-box">
-                <img src="./images/familiar-features.svg" alt="familiar-features">
-                <h3>Familiar features</h3>
-                <article>npm Orgs has 100% parity with all the public npm registry features your developers already use.</article>
-            </div>
-            <div class="content-box">
-                <img src="./images/npm-audit.svg" alt="npm-audit">
-                <h3>npm audit</h3>
-                <article>Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer.</article>
-            </div>
-            <!--Form, Buttons, Links -->
+            <button type="submit">Create an Org</button>
         </section>
         
     </body>

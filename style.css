@@ -42,14 +42,16 @@ header > div {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    flex-direction: row;
+    margin: 10px;
   }
 
   .search-field {
-    background-color: #fb3e44;
     width: 550px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-direction: row;
 }
 
   .search-field img {
@@ -57,8 +59,14 @@ header > div {
     padding-top: 5px;
   }
 
-  .search-field form {
+  .searchbar {
+    display: flex;
+    flex-direction: row;
+  }
 
+  .search-field button {
+    background-color:#fb3e44;
+    color: white;
   }
 
   #intro {
@@ -68,35 +76,60 @@ header > div {
     height: 600px;
     background-color: rgba(232,217,217,.3);
     align-items: center;
+    font-weight: bold;
   }
   #intro div {
     display: flex;
     flex-direction: row;
   }
   #intro div a {
-    padding-left: 20px;
+    padding-left: 40px;
     padding-right: 20px;
+    text-decoration: none;
+    color: black;
+    padding-top: 10px;
+
   }
+
+  #intro button {
+    background-color: #FB3B49;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+    width: 200px;
+    color: white;
+    height: 50px;
+    font-size: large;
+  }
+
   #intro article {
     width: 400px;
     text-align: center;
+    padding-bottom: 30px;
   }
 
   h1 {
     font-size: 50px;
+    margin-bottom: 70px;
   }
 
   #features {
+    height: 600px;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+  }
+
+  .boxes {
     display: flex;
     justify-content: space-between;
-    height: 600px;
+
   }
 
   #section2 {
     display: flex;
     flex-direction: column;
-    height: 600px;
-    justify-content: space-between;
+    height: 400px;
+    justify-content: space-around;
   }
   #section2 div {
     display: flex;
@@ -104,13 +137,24 @@ header > div {
     flex-direction: column;
     justify-content: center;
   }
+
   #section2 img {
-    padding-top: 40px;
-    width: 150px;
+    width: 170px;
+    margin-bottom: 25px;
   }
 
   h2 {
     font-size: 30px;
+    font-style: italic;
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+    padding: 5px 30px;
+    
+  }
+
+  #section2 article {
+    width: 600px;
+    text-align: center;
   }
 
   #features h3 {
@@ -118,5 +162,28 @@ header > div {
   }
 
   .content-box {
+    width: 350px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+    margin-right: 50px;
+  }
+
+  .content-box img {
+    width: 70px;
+    height: 70px;
+  }
+
+  h3 {
+    color: #ED1C24;
+    border: 1px solid brown;
+  }
+  
+  #features button {
+    background-color: black;
+    color: white;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    text-align: center;
     width: 250px;
+    height: 50px;
+    font-weight: bolder;
   }
