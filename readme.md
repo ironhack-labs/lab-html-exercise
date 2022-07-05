@@ -1,263 +1,314 @@
 ![logo_ironhack_blue 7](https://user-images.githubusercontent.com/23629340/40541063-a07a0a8a-601a-11e8-91b5-2f13e4e6b441.png)
 
-# Module Exercise: HTML & CSS
-
-## Learning Goals
-
-In this exercise, the goal is to apply as many as possible of the concepts you've just learned:
-
-- when and how to use different HTML tags,
-- how to structure HTML page and add the content to it using _block and inline elements_,
-- how to use flexbox to position elements on the page and
-- how to style the page.
-
-## Getting started
-
-1. [Fork](https://gist.github.com/ironhack-edu/dd3635de73a6ef07ef337bf184eda985#step-1-fork-the-repository) this repo
-2. [Clone](https://gist.github.com/ironhack-edu/dd3635de73a6ef07ef337bf184eda985#step-2-clone-the-repository) this repo
-
-Whenever you create a first significant change, you should make your first commit.
-
-3. Follow these [guidelines to add, commit and push changes](https://gist.github.com/ironhack-edu/dd3635de73a6ef07ef337bf184eda985#step-3-add-commit-and-push-the-changes).
-
-In the end of this document, you will find guidelines on how to submit the exercise.
-
-**Keep in mind that you don't have to wait to fully finish the exercise to make a pull request. You only have to make a pull request once. After that, every time when you make a commit, it will be automatically added and shown in the pull request.**
-
-## Instructions
-
-### Introduction
-
-In this exercise, you will clone the landing page of the **NPM website**. NPM stands for a Node Package Manager, and you will be using it heavily throughout this course. The version you will be cloning is the one in that you see in the following image. If you want, you can visit the [official page](https://www.npmjs.com/) to pick up some of their styles, but this is not necessary; you’ll see that the NPM page has been updated, but that’s okay. You already have all the assets for this version in the images folder as well as the necessary text in the `index.html`.
-
-Our goal is to get as close as possible to this:
-
-![](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_7c45ec577a3e16793ae4e0abfeb80df9.png)
-
-You can see the larger version of this picture [here](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_7c45ec577a3e16793ae4e0abfeb80df9.png). If you're struggling to see the details, feel free to zoom in to 200%.
-Although it doesn't look too complicated, we will have to apply quite a few styles on our web page: set a background color on different elements, set a font weight (bold, normal), and position elements using our newly acquired skills in flexbox.
-
-We will divide our work into two parts:
-
-- part I - create a webpage with no styles, just add HTML and
-- part II - add styles and make it perfect. 🎨
-
-So let's get started!
-
-**The assets we provided contain the `index.html` file with all the necessary text, as well as the `images` folder with all the required images to successfully finish the exercise.**
-
-### Part I - pure HTML (no styles applied)
-
-It might seem like a joke, but this is our goal in this iteration:
-
-![](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_a00f9aadceb92aed72cd6b1158c3fd01.png)
-![](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_abbbad2549a71232f29c725f6ef59731.png)
-![](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_c497a8394cb74b0f576e16c6fd2fb894.png)
+# Guided exercise - IronSkydive 💪 - block and inline level elements
 
 <br>
 
-The very first step is deciding **how to structure the page and picking the correct _semantic_ tags**. In general, choosing the right tags will make your job easier in the next step when the time comes to do some styling.
+## Introduction
 
-Our recommendation is to try to keep it as simple as possible. Try to identify the different sections, and add `id`'s or `classes` to each `<div>`, `<section>`, `<ul>`, or `<header>` block elements to identify these elements. Here is suggested guideline but you might have something on your mind that is different from this - bring it up.
+During this module, you will get familiar with HTML & CSS. Both technologies combined offer you all the tools you need to create a website. HTML without CSS is ugly, and CSS without HTML is... well, nothing!
 
-![](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_b66cd7ffb1375749905516dfc0961979.png)
+That is why you will be working on this exercise on multiple occasions during this module. Our end goal is to create a basic HTML & CSS website, where you will practice the various concepts as you are learning them.
 
-#### HTML 1 | `<header>` & `<nav>`
+<br>
 
-Your task in this iteration will be to create the `header` and `nav`, which are the first two elements of the page. As you can see on the image above, the first element inside the body is `header` and it is composed of two divs:
+## IronSkydive | The Company Website
 
-- the upper div contains another div with image and some text, and besides this, it has _nav_ tag with list displayed horizontally
-- the bottom div has the logo, search bar (which is _form_) and some buttons all the way left.
+Ironhack loves coding, but we also like to practice extreme sports. In a new line of products, we have created a new company called _IronSkydive_. We offer a full skydiving experience.
 
-![](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_360ab52dd3d20cff448f14b15df7884d.png)
+We are hoping you could help us to create our website because we are swamped starting the company and making sure that all our papers are aligned with the rules. :see_no_evil:
 
-However, remember, on the image above styles are already applied so our final result won't be quite the same.
+As we mentioned earlier, you'll be working on this exercise through the next couple of lessons, but in the end, your goal is:
 
-We could try to represent this part of the website with the following:
+<br>
+
+![](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_1f30ebb21258466ca36702d7cdaa0cad.png)
+
+<br>
+
+You will be working on a new pen, so proceed to [CodePen](https://codepen.io/) and create a new pen now. Ready to take the jump?
+
+<br>
+
+![](https://media.giphy.com/media/xT5LMrGIfLuDtRSAMg/giphy.gif)
+
+<br>
+
+### Part 1 - Block Elements
+
+In this part of the exercise, you are going to work with the block elements you learned. You have seen how the semantic block elements help us s to understand our website's composition better. Let's start by creating the basic HTML structure, which will be the following:
+
+<br>
+
+![](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_8f778c8cd703db596d5bb22dae089716.jpg)
+
+<br>
+
+Later on, in the exercise, we are going to distinguish between the different sections we have. Now, let's add a few more block elements inside each element.
+
+### Nav
+
+Inside `<nav>`, create a `<ul>` tag with three elements:
+
+- Day Structure
+- Team
+- Schedule
+
+These are going to be our menu options.
+
+<br>
+
+![](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_ace26745798b17492d307e0d0c817ea4.png)
+
+<br>
+
+### Header
+
+You have to create two different things here:
+
+- first, create an `<h1>` tag with the text "IronSkydive", then
+- under this tag, create a `<h2>` tag with the text "Let the trip begin" and finally
+- under these tags, create an `<aside>` tag that will contain a quote.
+
+<br>
+
+![](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_3c0c7f97d3804c728475f52c89f0ec85.png)
+
+<br>
+
+### Section 1
+
+This section has a dark background that will cover the whole width of the website. Later you will add the color to the background, so for now, no need to worry about this.
+
+<!-- To create this effect, later on, we are going to create a container inside the section. This wrapper will be handy to set a specific width and center all the content in the screen when we get to CSS later on. -->
+
+It will contain three `<article>` tags to add the information under the header.
+
+Inside each `<article>`, add an `<h3>` tag for the different titles, and a paragraph for the white text. The result would be something like this:
+
+<br>
+
+![](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_f004e36a2b2bb0dfc02ac008e5d5c97e.png)
+
+<br>
+
+### Section 2
+
+This section is quite similar to the previous one. In this case, the section will contain a `<h3>` title with the text "How do we structure the day?", and then a `<div>` with four different `<article>` tags.
+
+Inside each _article_ tag, for the moment, we are going to have a `<h4>` tag with the article title, and a `<p>` tag with the article content.
+
+<br>
+
+![](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_c810d2f904e4c4e72ad8b9ed055e4b37.png)
+
+<br>
+
+### Section 3
+
+This case is the same as **Section 1** - it will have a dark background, and, as in the previous sections, you have to add a `<h3>` title and a `<p>` with a brief description.
+
+Then, you will create `<div>` tag and add three empty `<article>` tags that will contain the information of each team member. It is enough to have a text indicating the different articles:
+
+<br>
+
+![](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_4bf21e881db9707b671a812c022db35f.png)
+
+<br>
+
+### Section 4
+
+In this section, we have a table that contains the schedule.
+
+Let's start with adding two different `<h3>` headings with the text:
+
+- Schedule
+- Schedule a Time Slot
+
+<br>
+
+![](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_cdeeac1a34e5b4f5785ec6f203632b7c.png)
+
+<br>
+
+Now add a table under the first `<h3>` tag, that contains the text "Schedule". Indeed, this table is going to contain the IronSkydive schedule for the week. The format of the table is the following:
+
+| Time          | Monday | Tuesday | Wednesday | Thursday | Friday | Saturday |
+| ------------- | ------ | ------- | --------- | -------- | ------ | -------- |
+| 9:00 - 11:00  |        |         | X         |          | X      | X        |
+| 12:00 - 14:00 |        |         |           |          | X      | X        |
+| 15:00 - 17:00 |        |         | X         | X        | X      | X        |
+
+Create the table and add the necessary content to get this result:
+
+<br>
+
+![](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_5c089d05a9df991db3784ba81a880835.png)
+
+<br>
+
+Remember, besides `<table>` tag, you should use `<thead>` with six `<th>` tags for the header rows (six days that IronSkydive operates), and then inside _body_ of the table (`<tbody>`) you should define rows with `<tr>` tags. In the end, you should use `<td>` tags for the content inside the rows.
+
+### Footer
+
+Last but not least, the footer section has to contain just one `<section>` tag. Inside the `<section>`, you have to add several things (described in the correct order):
+
+- `<h5>` with the title "Contact Information".
+- [`<address>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/address) element, with the correct information:
+  _IronSkydive 33 Rue la Fayette, 75009 Paris, France +33 (0) 619 193 088_
+- `<h5>` with the title "Follow Us".
+- `<ul>` list with three elements:
+  - Twitter.
+  - Facebook.
+  - Instagram.
+
+<br>
+
+![](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_661b4572e673afb0ce5a419ae78b9ce8.png)
+
+<br>
+
+### Part 2 - Inline Elements
+
+In the second iteration of our exercise, you are going to work with the inline elements you learned. You have seen that we use different tags with different goals. Remember, this is our current project structure:
+
+<br>
+
+![](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_8f778c8cd703db596d5bb22dae089716.jpg)
+
+<br>
+
+You are going to add different inline elements to all the sections we already have.
+
+### Nav
+
+The `<nav>` tag is used to wrap links on our website. Right now, we have just a list of elements. Let's change this, by adding _links_ in each list item.
+
+You have to create three different links, that will be pointing to `#structure`, `#team`, and `#schedule`, respectively:
+
+:bulb: Spoiler: _links_ are _anchor_ tags and represented with `<a>` tag and need to have `href` attribute. :wink:
 
 ```html
-<header>
-  <div>
-    <div>
-      <img class="blackHeart" src="LINK TO IMAGE GOES HERE" alt="black heart" />
-      <span> Nifty Penguin Magic </span>
-    </div>
-    <nav>
-      <ul>
-        <li><a href="#"> npm Enterprise </a></li>
-        <li><a href="#"> Products </a></li>
-        <li><a href="#"> Solutions </a></li>
-        <li><a href="#"> Resources </a></li>
-        <li><a href="#"> Docs </a></li>
-        <li><a href="#"> Support </a></li>
-      </ul>
-    </nav>
-  </div>
-
-  <div>
-    <!-- add logo, search bar and buttons (or links and style them as buttons later) -->
-  </div>
-</header>
+<a href="#structure">Day Structure</a>
 ```
 
-When done, you should get something similar to this:
-![](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_92cd0c6386e916d28cc1621b2eabd35d.png)
+<br>
 
-You're ready to move to the next iteration. :raised_hands:
+![](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_53837d5c2b9d5e3c537a87079080151e.png)
 
-#### HTML 2 | Content Sections
+<br>
 
-Take a look at the image with market HTML elements on it one more time, and you can see we have three sections below the header. Create `section` tags and give each of them `id`s so you can identify them quickly.
+### Header
 
-The content for each of these sections is already in the _index.html_ but you have to organize it properly making sure there are headings, paragraphs, divs, etc.
+The header of the project is incomplete. First, you need to add a logo to the header. Also, add a _testimonial style quote_ where you currently have filler text.
 
-**All images can be found in your `images` folder!**
+**First, the logo.** Add an image inside the `<h1>` that loads the following image:
 
-You can see the final result on the gif at the beginning of this exercise.
+`https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/ironhack-skydive-logo.png`.
 
-The time has come! Let's add some styles and make it pretty! :nail_care:
+Remember to add a descriptive alternative text, just in case the image doesn't load. A good option would be "IronSkydive Logo".
 
-### Part II - CSS/styles
+It is common to find quotes in _italic_ in different places, so this is what we are going to do. Add the quote in italic (using inline elements) inside the `<aside>` element, with the text "The best experience of our lives".
+In a new line, this time using a _block_ level element (`<p>`), add the names of the authors. The names will be "Ariel Quiónes & Gonzalo Manrique, Ironhack Founders".
 
-#### CSS 1 | Setup
+<br>
 
-As you might recall, the first thing we have to do to add styles to our page is to create a `style.css` file and link it to our `index.html`.
+![](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_0f0563ef2d64bd9a7bdf5d401bca9c16.png)
 
-So let's begin by creating a new file, in the same folder as our HTML file, and name it `style.css`. Now, link the file to the _index.html_.
+<br>
 
-_Hint_: In case you need to refresh your memory on how to do this, check _Introduction to CSS_ lesson.
+### Section 1
 
-_Hint2_: You might want to consider adding the following line to your CSS, just to confirm that you have linked it correctly:
+In the first section, we have three different articles. Each has an `<h3>` and a `<p>` tag inside. Let's add a link under each paragraph. This link doesn't need to point anywhere.
 
-```css
-body {
-  background-color: red;
-}
-```
-
-Refresh the page in Chrome, and if your _style.css_ is linked properly, the page should turn red. (*You can delete the *background-color* property we added as a test once you have confirmed it's working.*) :wink:
+<br>
 
 :::info
-Before we move forward, add at the very top of your _style.css_ file the following lines:
+We can create a link without any specific URL by providing a hash in the `href` attribute:
+<br>
 
-```css
-@import url('https://fonts.googleapis.com/css?family=Poppins');
-
-body {
-  font-family: 'Poppins';
-}
+```html
+<a href="#">Link text</a>
 ```
-
 :::
 
-This will be the default font you will be using on the entire webpage.
+<br>
 
-Now we are ready to start adding some styles to our page.
+Add three links, one in each section, in this order:
 
-#### CSS 2 | The Header and the navbar
+- Learn More
+- Watch Video
+- Register
 
-In the first part of this exercise, you created the header and inside it the navbar. Now we have to add some styles to make it more like this:
+<br>
 
-![](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_360ab52dd3d20cff448f14b15df7884d.png)
+![](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_016b92205b14c5a93d86d324547cf86e.png)
 
-We'll help you style the part of the code we previously provided for you - the upper _div_ of the _header_ tag.
+<br>
 
-```css
-header > div {
-  padding: 0 25px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid lightgray;
-}
+### Section 2
 
-nav {
-  width: 600px;
-}
+In this section, we have four different articles that contain information about how a typical day at IronSkydive is structured. Let's add some descriptive icons to each section.
 
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+The different icons, in the correct order, are:
 
-nav a {
-  text-decoration: none;
-  color: black;
-}
+- `https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/ironskydive-training.png`
+- `https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/ironskydive-get-ready.png`
+- `https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/ironskydive-fly.png`
+- `https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/ironskydive-jump.png`
 
-.blackHeart {
-  width: 20px;
-  margin-right: 1rem;
-}
-```
+Remember to add an alternative descriptive text in the `alt` attribute. Each of the sections will have this format with different images:
 
-_Useful information_:
+<br>
 
-- _form label color_: rgba(0,0,0,.05)
-- _form input color_: rgba(0,0,0,.05)
-- _form button background color_: #fb3e44
-- _form button letters color_: white
+![](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_3aa54eab8bec42f35381b704d5c7b06e.png)
 
-As you can see, a lot of _flexbox_ is involved - if needed, revise the lesson again or sneak peek into the official docs (use your Google skills) or use this [resource](https://flexbox.help/) as a help.
+<br>
 
-Make sure to use flexbox at any time where you need to position elements on a specific place - practice as much as possible: the more you understand now, the easier will be later.
+### Section 3
 
-#### CSS 3 | section 1
+Let's add the team information in the section. You should have three different articles without any information. Inside each article, you will add the team member name in the **bold** text (but this is something you will worry about when we come to the styling). You can use _block_ level tag, `<h4>` to wrap each name. Under the name, you will have to add the team member's photo. You can find the images here:
 
-![](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_d8ae51bd44240ddd2c7d75361bb6397d.png)
+- **Harold Rothstein**, `https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_c18b1c463b80090894237a262dfdfbad.jpg`
+- **Susan Phillips**, `https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_a18d6123a7c8e75f7e70a4e59b941093.jpg`
+- **Taylor Roberts**, `https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_7104a331530d1b0611da55093b7dc421.jpg`
 
-In this section, as you can see everything is _centered_. You can add some flexbox rules to the _id_ you attached to this section such is _display: flex;_ and _justify-content: center;_. But this is just the beginning - you still have to set _align-items_ and _flex-direction_.
+Don't forget to add alternative text in case the image doesn't load. These images are quite big, but we will handle this later on through CSS.
 
-_Useful information_:
+<br>
 
-- suggested height for this section: 600px
-- background color: rgba(232,217,217,.3)
-- "See plans" button background color: #FB3B49
-- "See plans" button box shadow: 8px 8px 0 rgba(251,59,73,.2)
+![](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_845dbf46e21d7bb275bdb5b23ff17aa6.gif)
 
-#### CSS 4 | section 2
+<br>
 
-![](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_7a14f0913389dcad5f78e1940267ed85.png)
+To finish this section, let's add a `<hr>` between the paragraph and the team members' information.
 
-This section has pretty much the same layout as the previous - some code to be reused :wink:.
+### Section 4
 
-_Useful information_:
+_Nothing to add_!
 
-- _heading background color_: rgba(255,204,53,.4)
-- to get the transform of the yellow background in the left-hand direction use: _transform: skew(9deg,0deg);_
-- to get it in the opposite direction of the letters, the way we need it on the page, use: _font-style: italic;_
-- to additionally fine-tune the position of each element, use _margin_ property.
+### Footer
 
-Again use a lot of flexbox to get the right position of elements - direction, justify-content, align-items.
+First, let's format the address. Right now, all the information is in one line. Let's use `<br>` tags to separate the different sections of the address.
 
-**Inspect elements to get the right size of the font for each of them**. However, this is not a crucial thing, so don't spend too much time on it - focus on positioning primary.
+<br>
 
-#### CSS 5 | section 3
+![](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_cf1a7806a1a921e018aa46c428d67a17.png)
 
-![](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_7b69fd57e04d20183daed40e39b2001f.png)
+<br>
 
-_Useful information_:
+Finally, add links to all the social networks where the users can follow IronSkydive. You can create empty links (with the hash in the `href` attribute), or add links to the social networks. In both cases, a new tab has to be opened when the users click on the links.
 
-- color of the letters in each heading in this section: #ED1C24
-- "Create an Org" box shadow: 8px 8px 0 rgba(128,83,35,.2)
-- "Create an Org" letters color: white
+<br>
 
-## Submission
+:::info
+:bulb: Use the anchor's [`target`](https://html.com/attributes/a-target/) attribute to open a link in a new tab. (the word _target_ is clickable, so feel free to explore a bit - remember, you don't have to memorize anything, know where to find the answers you need.)
+:::
 
-If you didn't [add, commit and push the changes](https://gist.github.com/ironhack-edu/dd3635de73a6ef07ef337bf184eda985#step-3-add-commit-and-push-the-changes) you made, this is the last call. :smile:
+<br>
 
-And at the same time, if you didn't [create a pull request](https://gist.github.com/ironhack-edu/dd3635de73a6ef07ef337bf184eda985#step-4-create-a-pull-request) this is the time for that as well.
+![](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_27057afe7732d2b6f26ce69eb00a63ec.png)
 
-Your TAs will check up your work and provide feedback.
+<br><br>
 
-**Once again, a friendly reminder**: You don't have to wait to finish everything in order to follow the steps listed in the [guidelines](https://gist.github.com/ironhack-edu/dd3635de73a6ef07ef337bf184eda985). In a moment when you've made a first significant step in working on this assessment, we advise you to make a pull request. Starting from that moment, every change you make will be automatically added to that pull request and will be visible to your TAs for a checkup.
-
-## Summary
-
-In this exercise, you've built a clone of a piece of the npm home page. This site is very complex so if you managed to make it look anything like the original, good job! :trophy:
-
-This concludes the HTML / CSS module. We are proud of you!
-
-_The Ironhack team :heart:_
+:heart: **Happy coding!**
