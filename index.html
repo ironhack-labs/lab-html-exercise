@@ -1,12 +1,16 @@
+<head>
+    <link href="./styles.css/style.css" rel="stylesheet">
+    </head>
 <body>
     <header>
-    <nav>
+    <div>
         <div>
-            <img src ="images/black-heart.png" alt="Black Heart">
+            <img src ="images/black-heart.png" alt="Black Heart" class="blackHeart">
                 <span> Clone Nifty Penguin Magic </span>
         </div>
-        <ul>
-            <li>
+        <nav>
+            <ul>
+                <li>
                 <a href="#npm">npm Enterprise</a>
                 </li>
                 <li>
@@ -25,46 +29,45 @@
                     <a href="#support">Support</a>
                 </li>
         </ul>
-        <article>
-            <img src="images/npm-logo.png" alt="npm logo">
-            </article>
+        </nav>
+        </div>
+
+        <div>
             <article>
-            <img src="images/magnifying-glass.png" alt="magnifying glass">
+            <img src="images/npm-logo.png" alt="npm logo" class="logo">
             </article>
-            <form>
-                <a href="#search">Search</a>
+            <form class="search" action="/search" method="dialog">
+                <article>
+                    <img src="images/magnifying-glass.png" alt="magnifying glass" class="glass">
+                    </article>
+                <label for="search">Search packages</label>
+                <input type="search-bar" id="search">
             </form>
-            <ul>
-            <li>
-                <a href="#" class="link-btn">Join</a>
-            </li>
-            <li>
-                <a href="#" class="link-btn">Log In</a>
-            </li>
-        </ul>
-    </nav>
+                <a href="#search" class="link-btn">Search</a>
+            </form>
+             <article class="buttons">
+                <a href="#" class="buttons">Join</a>
+                <a href="#" class="buttons">Log In</a>
+            </article>
+        </div>
     </header>
         <section id="general-information">
             <h1>Build amazing things</h1>
             <article>
-            <p>Essential JavaScript development tools that help you go to market faster and build powerful applications using
-                modern open source code.
+            <p>Essential JavaScript development tools <br> 
+                help you go to market faster and build powerful<br> 
+                applications using modern open source code.
             </p>
             <div>
-            <ul>
-                <li>
-                    <a href="#" class="link-btn">See plans</a>
-                </li>
-                <li>
-                    <a href="#" class="link-btn">Join for free</a>
-                </li>
-            </ul>
-            </div>
+              <a href="#" class="link-btn">See plans</a>
+              <a href="#" class="link-btn-one">Join for free</a>
+                
+              </div>
             </article>
             </section>
             </header>
             <section id="what-it-is">
-                <img src="images/triangle-hexagon.svg" alt="triangle hexagon">
+                <img src="images/triangle-hexagon.svg" alt="triangle hexagon" class="hexagon">
                 <h2>Bring the best of open source to your company
                 </h2>
                 <article>
@@ -75,26 +78,26 @@
             </section>
             <section id="list">
                 <div>
-                    <article>
-                        <img src="images/zero-configuration.svg" alt="mouse click">
+                    <article class="service-box">
+                        <img src="images/zero-configuration.svg" alt="mouse click" class="click">
                         <h4>Zero configuration</h4>
                         <p>Create an org, add your team, and start collaborating. Nothing to configure, set up, or manage.
                         </p>
                  </article>
-                 <article>
-                    <img src="images/team-management.svg" alt="group of people">
+                 <article class="service-box">
+                    <img src="images/team-management.svg" alt="group of people" class="team">
                     <h4>Team management</h4>
                     <p>Control who has access to what modules within your team namespace using straightforward team management capabilities.
                     </p>
                  </article>
-                 <article>
-                    <img src="images/familiar-features.svg" alt="familiar things">
+                 <article class="service-box">
+                    <img src="images/familiar-features.svg" alt="familiar things" class="familiar">
                     <h4>Familiar features</h4>
                     <p>npm Orgs has 100% parity with all the public npm registry features your developers already use.
                     </p>
                  </article>
-                 <article>
-                    <img src="images/npm-audit.svg" alt="binoculars">
+                 <article class="service-box">
+                    <img src="images/npm-audit.svg" alt="binoculars" class="binoculars">
                     <h4>npm audit</h4>
                     <p>Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer.
         </p>
@@ -103,10 +106,18 @@
             </section>
         <footer>
             <section>
-                <a href="#" >Create an Org</a>
+                <h3>Create an Org</h3>
             </section>
             </footer>
             </body>
+   
+
+
+
+
+
+
+
    
 
 
