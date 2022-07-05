@@ -1,10 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins');
-
 *{
     box-sizing: border-box;
     margin: 0;
 }
-
 
 body {
   font-family: 'Poppins';
@@ -63,13 +60,12 @@ nav a {
     display: block;
 }
 
-
-.glassMagnifying{
+.containerForm__glassMagnifying{
     display: flex;
     white-space: nowrap;
     background-color: #f2f2f2;
-
 }
+
 .container-glassMagnifying__icon{
     padding: .6rem .25rem 0 1rem;
     float: left;
@@ -106,7 +102,6 @@ nav a {
 }
 
 .containerJoinInput{
-
     margin-left: 1rem;
     font-weight: 600;
     flex: 1 1 auto;
@@ -129,3 +124,52 @@ nav a {
     color: #000;
 }
 /* -----------------SECTION-----------------*/
+.sectionTop{
+    background-image: url(https://static.npmjs.com/abf53a31b2da4657a1a004ee9358551c.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sectionTop_container{
+    margin: auto;
+    display: block;
+    text-align: center;
+    padding: 4rem 1rem;
+    max-width: 48rem;
+}
+.sectionTop_container > h1{
+    margin: .67em 0;
+    font-size: 5rem;
+    color: #fff;
+}
+
+.sectionTop_container > div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto;
+    max-width: 28rem;  
+    color: #fff;
+    margin-bottom: 2rem;
+}
+
+.plans{
+    text-decoration: none;
+    color: #fff;
+    background-color: #fb3e44;
+    border: 1px solid #fff;
+    padding: 1rem 0;
+    width: 40%;
+    box-shadow: 10px 10px 0px -3px rgba(251,62,68,.5);
+    font-weight: 600;
+}
+
+.joinFree{
+    text-decoration: none;
+    color: #fb3e44;
+    background-color: #fff;
+    padding: 1rem 0;
+    width: 40%;
+    font-weight: 600;
+}
