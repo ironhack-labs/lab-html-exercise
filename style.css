@@ -1,0 +1,214 @@
+/* @import url("https://fonts.googleapis.com/css?family=Poppins"); */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600&display=swap");
+
+body {
+  font-family: "Poppins";
+  font-weight: normal;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* HEADER  */
+
+header {
+  box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
+}
+
+header > div {
+  padding: 0 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+}
+
+nav {
+  width: 600px;
+  font-weight: 500;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.black-heart {
+  width: 25px;
+  margin-right: 1rem;
+}
+
+.logo {
+  width: 5%;
+}
+
+.search-bar-links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 5px 25px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: stretch;
+  flex: 1;
+  margin: 0 2rem;
+}
+
+.search-icon {
+  width: 17px;
+  height: 17px;
+  background-color: rgb(242, 242, 242);
+  padding: 10px;
+}
+
+form {
+  background-color: rgba(242, 242, 242);
+  width: 100%;
+  padding: 6px 0;
+}
+
+input {
+  background-color: rgba(242, 242, 242);
+  border: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+.search-button {
+  border: none;
+  background-color: #fb3e44;
+  color: white;
+  padding: 0 15px;
+}
+
+.join-login {
+  padding: 10px;
+}
+
+.join-login:hover {
+  border: 1px solid black;
+}
+
+/* HERO SECTION*/
+
+#hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(232, 217, 217, 0.3);
+  height: 600px;
+}
+
+#hero h1 {
+  font-size: 64px;
+  font-weight: 700;
+}
+
+#hero article {
+  text-align: center;
+  line-height: 1.7;
+  width: 30%;
+  font-weight: 400;
+}
+
+.hero-links {
+  margin: 5rem 0;
+}
+
+#hero a {
+  padding: 20px 60px;
+  font-weight: 600;
+}
+
+.see-plans {
+  background-color: #fb3b49;
+  box-shadow: 8px 8px 0 rgba(251, 59, 73, 0.2);
+  color: white;
+}
+
+/* BANNER SECTION*/
+
+#banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 600px;
+  margin: 3rem;
+}
+
+.hexagon {
+  width: 20%;
+}
+
+#banner h2 {
+  background-color: rgba(255, 204, 53, 0.4);
+  transform: skew(9deg, 0deg);
+  font-style: italic;
+  padding: 0 20px;
+}
+
+#banner article {
+  text-align: center;
+  line-height: 2;
+  width: 50%;
+  font-weight: lighter;
+}
+
+/* DETAILS SECTION*/
+
+#details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 600px;
+}
+
+#details h3 {
+  color: #ed1c24;
+  font-weight: 600;
+}
+
+#details p {
+  flex-wrap: wrap;
+}
+
+.details-cards {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.details-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  margin: 2em;
+  width: 15%;
+}
+
+.details-card-icon {
+  width: 30px;
+  height: 30px;
+}
+
+#details button {
+  background-color: black;
+  box-shadow: 8px 8px 0 rgba(128, 83, 35, 0.2);
+  color: white;
+  padding: 20px 30px;
+  width: 30%;
+  font-weight: bolder;
+}
