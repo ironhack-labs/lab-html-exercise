@@ -120,11 +120,16 @@ form button {
 
 #third-section {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    flex-direction: column;
-    height: 600px;
-    margin: 0 0 100px 0;
+    flex-direction: row;
+}
+
+.flex-items {
+    flex: 1;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 0 40px 0 40px;
 }
 
 #third-section h4 {
@@ -132,13 +137,15 @@ form button {
 }
 
 #third-section img {
-    width: 2.5%;
+    width: 10%;
     padding: 10px;
-}   
+}
 
-#third-section p {
+.org-btn {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: center;
+    padding: 40px;
 }
 
 .org-link {
@@ -153,5 +160,6 @@ form button {
     border-right: 50px solid black;
     border-bottom: 20px solid black;
     border-left: 50px solid black;
-    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
