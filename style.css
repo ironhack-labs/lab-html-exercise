@@ -1,0 +1,357 @@
+/* GENERAL */
+
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
+:root {
+  --form-label-letters: rgba(0, 0, 0, 0.05);
+  --form-input-background: rgba(0, 0, 0, 0.05);
+  --form-button-background: #fb3e44;
+  --form-button-letters: white;
+  --section-background: rgba(232, 217, 217, 0.3);
+  --see-plans-link: #fb3b49;
+  --see-plans-link-shadow: 8px 8px 0 rgba(251, 59, 73, 0.2);
+  --see-plans-link-letters: white;
+  --join-for-free-link-background: white;
+  --join-for-free-link-letters: black;
+  --create-org-link-shadow: 8px 8px 0 rgba(128, 83, 35, 0.2);
+  --create-org-link: white;
+  --create-org-link-background: black;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+body {
+  font-family: "Poppins";
+}
+
+section {
+  height: 600px;
+}
+
+@media only screen and (max-width: 992px) {
+  section {
+    height: fit-content;
+  }
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 75px 0;
+}
+
+h1 {
+  font-size: 80px;
+  margin: 0;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 992px) {
+  h1 {
+    font-size: 60px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 40px;
+  }
+}
+
+h2 {
+  font-size: 36px;
+  background-color: rgba(255, 204, 53, 0.4);
+  transform: skew(9deg, 0deg);
+  font-style: italic;
+  padding: 0 3rem;
+  margin-top: 4rem;
+}
+
+@media only screen and (max-width: 992px) {
+  h2 {
+    font-size: 30px;
+    margin: 4rem 1rem 0 1rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  h2 {
+    font-size: 20px;
+    margin: 4rem 1rem 0 1rem;
+  }
+}
+
+h3 {
+  color: #ed1c24;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* UPPER DIV HEADER (NAV) */
+
+header {
+  box-shadow: 0px 5px 10px rgb(211, 211, 211, 0.5);
+}
+
+header > div {
+  padding: 0 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+}
+
+nav {
+  width: 600px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+.blackHeart {
+  width: 20px;
+  margin-right: 1rem;
+}
+
+/* BOOTOM DIV HEADER (SEARCH) */
+
+header #bottom-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem;
+}
+
+header .logo {
+  width: 70px;
+}
+
+/* search bar */
+
+header .search-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  width: 80%;
+  min-width: 60%;
+}
+
+header .search-form input {
+  height: 2.5rem;
+  width: 100%;
+  background-color: var(--form-input-background);
+  border: none;
+}
+
+header .search-form label {
+  color: var(--form-label-letters);
+}
+
+header .search-form .magnifying-glass {
+  width: 1.2rem;
+  background-color: var(--form-label-letters);
+  padding: 0.65rem;
+}
+
+header .search-form button {
+  background-color: var(--form-button-background);
+  color: var(--form-button-letters);
+  border: 1.5px solid #cccccc;
+  padding: 0.8rem 1.5rem;
+  letter-spacing: 0.1rem;
+}
+
+/* header action buttons join and log in */
+
+.header-action-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  min-width: 190px;
+  max-height: 2.5rem;
+  gap: 1rem;
+}
+
+.header-action-links .join-link {
+  color: black;
+  border: 2px solid #cccccc;
+  padding: 0.5rem 1.5rem;
+}
+
+.header-action-links .log-in-link {
+  color: black;
+  padding: 0.5rem 1rem;
+}
+
+@media only screen and (max-width: 992px) {
+  #bottom-header,
+  #upper-header nav ul {
+    flex-wrap: wrap;
+  }
+}
+
+/* SECTION 1 */
+
+/* company mission text content */
+
+#company-mission {
+  background-color: var(--section-background);
+  padding-top: 0;
+}
+
+#company-mission #company-mission-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+#company-mission #company-mission-content article {
+  margin-top: 4rem;
+  width: 30%;
+}
+
+/* company mission links */
+
+#company-mission #company-mission-content .company-mission-action-links {
+  display: flex;
+  flex-direction: row;
+  gap: 5rem;
+  padding: 4rem 1.5rem;
+}
+
+@media only screen and (max-width: 992px) {
+  #company-mission #company-mission-content .company-mission-action-links {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0.5rem;
+  }
+}
+
+#company-mission #company-mission-content .see-plans-link,
+#company-mission #company-mission-content .join-for-free-link {
+  padding: 1rem 5rem;
+  font-weight: bold;
+}
+
+#company-mission #company-mission-content .see-plans-link {
+  background-color: var(--see-plans-link);
+  box-shadow: var(--see-plans-link-shadow);
+  color: var(--see-plans-link-letters);
+}
+
+#company-mission #company-mission-content .join-for-free-link {
+  background-color: var(--join-for-free-link-background);
+  color: var(--join-for-free-link-letters);
+}
+
+/* SECTION 2 */
+
+#product-intro #product-intro-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+#product-intro #product-intro-content article {
+  width: 40%;
+  margin-top: 4rem;
+}
+
+#product-intro #product-intro-content img {
+  width: 209px;
+}
+
+/* responsive section 2 */
+
+@media only screen and (max-width: 992px) {
+  #product-intro #product-intro-content img {
+    max-width: 30%;
+  }
+}
+
+/* SECTION 3 */
+
+/* solutions text content */
+
+#solutions #solutions-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 90%;
+  gap: 1rem;
+}
+
+#solutions #solutions-content img {
+  max-width: 20%;
+}
+
+.solution-item {
+  max-width: 30%;
+  padding: 0 1rem;
+}
+
+/* create org link */
+
+#solutions #create-org-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+}
+
+#solutions #create-org-link a {
+  background-color: var(--create-org-link-background);
+  box-shadow: var(--create-org-link-shadow);
+  color: var(--create-org-link);
+  padding: 1rem 10rem;
+}
+
+/* responsive section 3 */
+
+@media only screen and (max-width: 992px) {
+  #solutions #solutions-content {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #solutions #solutions-content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .solution-item {
+  }
+
+  #solutions #create-org-link a {
+    padding: 1rem;
+  }
+}
