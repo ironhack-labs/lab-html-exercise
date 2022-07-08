@@ -19,6 +19,13 @@ h2 {font-size: 2em;
     font-weight: bold; 
     margin-bottom: 2em; 
 }
+h3 {
+    font-size:1em; 
+    font-weight: bold; 
+    color:#ED3A42;
+    margin-left: 0; 
+    margin-bottom: 2em; 
+}
 /*HEADER STYLE**********************************************************************************/
 
 header {
@@ -189,12 +196,12 @@ form {
     flex-direction: column;
     align-items: stretch; 
     justify-content: center; 
-    margin-bottom: 6em; 
+    margin-bottom: 7em; 
 }
 #hex {
     height: 10em; 
-    width: 10em; 
-    margin-bottom: eem; 
+    width: 10em;
+    margin-bottom: 2em;  
 }
 #highlight {
     position: relative;   
@@ -223,8 +230,34 @@ form {
     flex-direction: row;
     justify-content: space-between;
     align-items: stretch; 
+    flex-wrap: wrap; 
+    margin: 7em auto; 
 }
-/*#icon {
-    height: 2em; 
-    width: 2em; 
-}*/
+.advantage {
+    display: flex; 
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 22%; 
+    margin: 0; 
+}
+.advantage article {
+    margin-left: 0; 
+}
+.icon {
+    display: flex; 
+    flex-direction: row; 
+    width: 3em; 
+    margin: 1em 0; 
+}
+#create {
+    display: flex; 
+    flex-direction: row; 
+    justify-content: center; 
+    background-color:rgb(0 0 0); 
+    color: white; 
+    padding: 0.7em 7em;
+    margin: 4em 20em 2em; 
+    border: none; 
+    box-shadow: 0.5em 0.5em 1px #F8F4F4;;
+
+}
