@@ -22,6 +22,7 @@ html,
 body {
   margin: 0;
   padding: 0;
+  font-size: 16px;
 }
 
 body {
@@ -32,6 +33,24 @@ section {
   height: 600px;
 }
 
+@media only screen and (max-width: 600px) {
+  section {
+    height: fit-content;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  section {
+    height: fit-content;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  section {
+    height: fit-content;
+  }
+}
+
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -40,8 +59,14 @@ section {
 
 h1 {
   font-size: 80px;
-  margin: 5rem 0 0;
+  margin: 0;
   font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 40px;
+  }
 }
 
 h2 {
@@ -50,6 +75,14 @@ h2 {
   transform: skew(9deg, 0deg);
   font-style: italic;
   padding: 0 3rem;
+  margin-top: 4rem;
+}
+
+@media only screen and (max-width: 600px) {
+  h2 {
+    font-size: 20px;
+    margin: 4rem 1rem 0 1rem;
+  }
 }
 
 h3 {
@@ -95,7 +128,7 @@ nav a {
   margin-right: 1rem;
 }
 
-/* BOOTOM DIV (SEARCH) */
+/* BOOTOM DIV HEADER (SEARCH) */
 
 header .logo {
   width: 70px;
@@ -112,11 +145,11 @@ header .search-form {
 }
 
 header .search-form input {
-  height: 40px;
+  height: 2.5rem;
   width: 100%;
   background-color: var(--form-input-background);
   border: none;
-  padding-left: 40px;
+  padding-left: 2.5rem;
   margin: 0.5rem 0;
 }
 
@@ -126,7 +159,6 @@ header .search-form label {
 
 header .search-form .magnifying-glass {
   width: 20px;
-  height: 20px;
   margin: -30px;
 }
 
@@ -142,9 +174,9 @@ header .search-form button {
 .header-action-links {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
-  gap: 1rem;
-  width: 20%;
+  justify-content: flex-end;
+  min-width: 16%;
+  max-height: 2.5rem;
 }
 
 .header-action-links .join-link {
@@ -158,10 +190,29 @@ header .search-form button {
   padding: 0.5rem 1.5rem;
 }
 
+@media only screen and (max-width: 600px) {
+  #bottom-header {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #upper-header nav ul {
+    flex-wrap: wrap;
+  }
+
+  .logo,
+  .magnifying-glass,
+  .header-action-links,
+  .search-form {
+    margin: 2rem;
+  }
+}
+
 /* SECTION 1 */
 
 #company-mission {
   background-color: var(--section-background);
+  padding-top: 0;
 }
 
 #company-mission #company-mission-content {
@@ -170,27 +221,44 @@ header .search-form button {
   justify-content: center;
   align-items: center;
   text-align: center;
-  gap: 5rem;
+  width: 100%;
 }
 
 #company-mission #company-mission-content article {
-  width: 400px;
+  margin-top: 4rem;
+  width: 30%;
+}
+
+#company-mission #company-mission-content .company-mission-action-links {
+  display: flex;
+  flex-direction: row;
+  gap: 5rem;
+  padding: 4rem 1.5rem;
+}
+
+@media only screen and (max-width: 600px) {
+  #company-mission #company-mission-content .company-mission-action-links {
+    padding: 0.5rem;
+    gap: 1rem;
+    flex-direction: column;
+  }
+}
+
+#company-mission #company-mission-content .see-plans-link,
+#company-mission #company-mission-content .join-for-free-link {
+  padding: 1rem 5rem;
+  font-weight: bold;
 }
 
 #company-mission #company-mission-content .see-plans-link {
   background-color: var(--see-plans-link);
   box-shadow: var(--see-plans-link-shadow);
   color: var(--see-plans-link-letters);
-  padding: 1rem 5rem;
-  margin-right: 5rem;
-  font-weight: bold;
 }
 
 #company-mission #company-mission-content .join-for-free-link {
   background-color: var(--join-for-free-link-background);
   color: var(--join-for-free-link-letters);
-  padding: 1rem 5rem;
-  margin-right: 5rem;
 }
 
 /* SECTION 2 */
@@ -201,15 +269,24 @@ header .search-form button {
   justify-content: center;
   align-items: center;
   text-align: center;
+  width: 100%;
 }
 
 #product-intro #product-intro-content article {
-  width: 600px;
+  width: 40%;
+  margin-top: 4rem;
 }
 
 #product-intro #product-intro-content img {
   width: 209px;
-  height: 196px;
+  max-width: 100%;
+  height: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  #product-intro #product-intro-content img {
+    max-width: 30%;
+  }
 }
 
 /* SECTION 3 */
@@ -219,33 +296,50 @@ header .search-form button {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
+  width: 90%;
   gap: 1rem;
 }
 
-#solutions #solutions-content img {
-  width: 38px;
-  height: 38px;
+@media only screen and (max-width: 600px) {
+  #solutions #solutions-content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .solution-item {
+    text-align: center;
+  }
 }
 
-#zero-management,
-#team-management,
-#familiar-features,
-#npm-audit {
-  width: 25%;
+#solutions #solutions-content img {
+  max-width: 20%;
+}
+
+.solution-item {
+  width: 50%;
+  max-width: 30%;
   padding: 0 1rem;
 }
 
 #solutions #create-org-link {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
+  width: 70%;
 }
 
 #solutions #create-org-link a {
   background-color: var(--create-org-link-background);
   box-shadow: var(--create-org-link-shadow);
   color: var(--create-org-link);
-  text-decoration: none;
   padding: 1rem 10rem;
+}
+
+@media only screen and (max-width: 600px) {
+  #solutions #create-org-link a {
+    background-color: var(--create-org-link-background);
+    box-shadow: var(--create-org-link-shadow);
+    color: var(--create-org-link);
+    padding: 1rem;
+  }
 }
