@@ -7,11 +7,11 @@
 <body>
     <header>
         <div>
-            <div>
+            <div class = "topHeader">
                 <img class = "blackHeart" src = "images/black-heart.png" alt = "black heart" />
                 <span>Nifty Penguin Magic</span>
             </div>
-                <nav>
+                <nav class = "topHeader">
                     <ul>
                         <li><a href= "#">npm Enterprise</a></li>
                         <li><a href= "#">Products</a></li>
@@ -22,15 +22,17 @@
                     </ul>
                 </nav>
         </div>
-        <div>
+        <div class = "bottomHeader">
             <img class = "logo" src = "images/npm-logo.png" alt = "logo" />
             <form>
                 <img class = "magnifyingGlass" src = "images/magnifying-glass.png" alt = "magnifying glass" />
                 <input type = "text" placeholder = "Search Packages"> 
-                <button type = "submit">Search</button>
+                <button type = "submit" id = "search">Search</button>
             </form>
-            <a href = "#">Join</a>
-            <a href = "#">Log in</a>
+            <div class = "buttons">
+                <button id = "join">Join</button>
+                <button id = "logIn">Log in</button>
+            </div>
         </div>
     </header>
     <section id = "section1">
@@ -40,7 +42,7 @@
         </article>
         <div class>
             <a href = "#" id="plans">See plans</a>
-            <a href = "#" id="join">Join for free</a>
+            <a href = "#" id="joinForFree">Join for free</a>
         </div>
     </section>
     <section id = "section2">
