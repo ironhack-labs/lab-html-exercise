@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+/* general styles */
+body {
+  font-family: "Poppins";
+  margin: 0;
+}
+
+:root {
+  --bold-red-color: #fb3f45;
+  --soft-pink-grey-color: #f8f4f4;
+}
+
+ul,
+a,
+h1,
+h2 {
+  all: unset;
+}
+
+form {
+  all: unset;
+}
+
+/* header styles */
+
+header {
+  font-size: 0.9rem;
+}
+
+.quote-and-menu {
+  padding: 15px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+}
+
+nav {
+  width: 600px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+.blackHeart {
+  width: 20px;
+  margin-right: 1rem;
+}
+
+.logo-search-and-logging {
+  display: grid;
+  padding: 10px 25px;
+  grid-template-columns: 10% 70% 20%;
+  align-items: center;
+}
+
+.npm-logo {
+  width: 80px;
+  margin-right: 1rem;
+}
+
+header form {
+  display: flex;
+  flex-direction: row;
+}
+
+input[type="search"] {
+  width: 80%;
+  background-color: #f2f2f2;
+  border: none;
+  /* padding: 1rem; */
+}
+
+header button {
+  all: unset;
+  display: grid;
+  place-items: center;
+  background-color: var(--bold-red-color);
+  color: white;
+  padding: 0.4rem;
+}
+
+.search-icon-wrap {
+  display: grid;
+  place-items: center;
+  width: 2rem;
+  background-color: #f2f2f2;
+}
+
+.search-icon {
+  width: 20px;
+}
+
+.logging-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.logging-links a {
+  padding: 0.4rem 1.4rem;
+}
+
+.join-link {
+  border: 1px solid black;
+}
+
+/* section 1 */
+.section-1 {
+  padding: 0 25px;
+  height: 75vh;
+  background-color: var(--soft-pink-grey-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.section-1 article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.section-1 h1 {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.section-1 p {
+  width: 450px;
+  margin: 3rem;
+}
+
+.section-1 a {
+  padding: 1rem 3rem;
+  margin: 2rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.see-plans-link {
+  background-color: var(--bold-red-color);
+  color: white;
+  box-shadow: 8px 8px 0 rgba(251, 59, 73, 0.2);
+}
+
+.join-for-free-link {
+  background-color: white;
+}
+
+/* section 2 */
+
+.section-2 {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.triangle-hexagon {
+  width: 200px;
+}
+
+.section-2 article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.section-2 h2 {
+  font-size: 2rem;
+  margin: 4rem 0 1rem 0;
+  font-weight: 600;
+  background-color: rgba(255, 204, 53, 0.4);
+  transform: skew(9deg, 0deg);
+  font-style: italic;
+}
+
+.section-2 p {
+  width: 50vw;
+}
+
+/* section 3 */
+
+.section-3 img {
+  width: 40px;
+}
+
+.cards-grid {
+  margin: 25px;
+  display: flex;
+  flex-direction: row;
+  align-content: flex-start;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.single-card {
+  margin: 2rem;
+  font-size: 0.9rem;
+}
+
+.single-card h3 {
+  color: var(--bold-red-color);
+}
+
+.create-an-org-link-wrap {
+  margin: 2rem 0 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.create-an-org-link {
+  padding: 1rem 7rem;
+  background-color: black;
+  color: white;
+  box-shadow: 8px 8px 0 rgba(128, 83, 35, 0.2);
+}

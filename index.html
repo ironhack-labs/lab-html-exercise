@@ -5,51 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>npm landing page clone</title>
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <header>
-      <div>
-        <!-- quote and menu -->
-        <div class="quote-and-menu">
-          <div class="quote">
-            <img src="./images/black-heart.png" alt="a black heart" />
-            <span>NPM Clone Nifty Penguin Magic</span>
-          </div>
+      <!-- quote and menu -->
+      <div class="quote-and-menu">
+        <div class="quote">
+          <img
+            src="./images/black-heart.png"
+            alt="a black heart"
+            class="blackHeart"
+          />
+          <span>NPM Clone Nifty Penguin Magic</span>
+        </div>
+
+        <div>
           <nav>
-            <span>npm</span>
             <ul>
-              <li>Enterprise</li>
-              <li>Products</li>
-              <li>Solutions</li>
-              <li>Resources</li>
-              <li>Docs</li>
-              <li>Support</li>
+              <li><a href="#">npm Enterprise</a></li>
+              <li><a href="#">Products</a></li>
+              <li><a href="#">Solutions</a></li>
+              <li><a href="#">Resources</a></li>
+              <li><a href="#">Docs</a></li>
+              <li><a href="#">Support</a></li>
             </ul>
           </nav>
         </div>
-        <!-- logo, search bar and logging links -->
-        <div class="logo-search-and-logging">
-          <img src="./images/npm-logo.png" alt="npm logo" />
-          <form action="/search">
-            <div>
-              <span
-                ><img src="./images/magnifying-glass.png" alt="search icon"
-              /></span>
-              <input type="search" />
-            </div>
-            <button type="submit">Search</button>
-          </form>
-          <div class="logging-links">
-            <a href="#">Join</a>
-            <a href="#">Log In</a>
+      </div>
+      <!-- logo, search bar and logging links -->
+      <div class="logo-search-and-logging">
+        <img src="./images/npm-logo.png" alt="npm logo" class="npm-logo" />
+        <form>
+          <div class="search-icon-wrap">
+            <img
+              src="./images/magnifying-glass.png"
+              alt="search icon"
+              class="search-icon"
+            />
           </div>
+          <input type="search" />
+          <button type="submit">Search</button>
+        </form>
+        <div class="logging-links">
+          <a href="#" class="join-link">Join</a>
+          <a href="#">Log In</a>
         </div>
       </div>
     </header>
     <main>
       <article>
         <!-- section 1 -->
-        <section>
+        <section class="section-1">
           <article>
             <h1>Build amazing things</h1>
             <p>
@@ -57,13 +64,19 @@
               faster and build powerful applications using modern open source
               code.
             </p>
-            <a href="#">See plans</a>
-            <a href="#">Join for free</a>
+            <div>
+              <a href="#" class="see-plans-link">See plans</a>
+              <a href="#" class="join-for-free-link">Join for free</a>
+            </div>
           </article>
         </section>
         <!-- section 2 -->
-        <section>
-          <img src="./images/triangle-hexagon.svg" alt="" />
+        <section class="section-2">
+          <img
+            src="./images/triangle-hexagon.svg"
+            alt="triangle hexagon img"
+            class="triangle-hexagon"
+          />
           <article>
             <h2>Bring the best of open source to your company</h2>
             <p>
@@ -75,7 +88,7 @@
           </article>
         </section>
         <!-- section 3 -->
-        <section>
+        <section class="section-3">
           <div class="cards-grid">
             <div class="single-card">
               <img src="./images/zero-configuration.svg" alt="" />
@@ -122,8 +135,8 @@
               </article>
             </div>
           </div>
-          <div>
-            <a href="#">Create an Org</a>
+          <div class="create-an-org-link-wrap">
+            <a href="#" class="create-an-org-link">Create an Org</a>
           </div>
         </section>
       </article>
