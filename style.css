@@ -22,6 +22,11 @@ header > div {
     justify-content: space-between;
     align-items: center;
   }
+
+  nav a:hover {
+    background-color: #ED3A42;
+    color:white;
+  }
   
   nav a {
     text-decoration: none;
@@ -43,6 +48,7 @@ header > div {
   }
 
   form {
+    display: flex;
     background-color: #F2F2F2;
   }
 
@@ -63,6 +69,7 @@ header > div {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 50px;
   }
 
   h1 {
@@ -71,14 +78,31 @@ header > div {
 
   article {
     width: 400px;
-
+    text-align: center;
+    padding-bottom: 70px;
   }
 
-  .hexagon {
-    padding: 50px;
-    width: 100px;
+  #plans {
+    background-color:#ED3A42;
+    padding: 10px 30px 10px 30px;
+    color: white;
+    text-decoration: none;
+    margin-right: 100px;
   }
 
+  #plans:hover {
+    background-color: white;
+    color:#ED3A42;
+  }
+
+  #join {
+    color: black;
+    text-decoration: none;
+  }
+
+  #join:hover {
+    text-decoration: underline;
+  }
 
   #section2 {
     display: flex;
@@ -87,9 +111,58 @@ header > div {
     align-items: center;
   }
 
+  .hexagon {
+    padding: 30px;
+    width: 100px;
+  }
+
+  h2 {
+    font-style: italic;
+  }
+
+  #article2 {
+    font-size: 12px;
+  }
+
   #section3 {
     display: flex;
-    justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
+
+  }
+
+  .picture {
+    width: 20px;
+  }
+
+  h3 {
+    color:#ED3A42;
+  }
+
+  .lastText {
+    font-size: 12px;
+  }
+
+  .box {
+    flex-basis: 15%;
+  }
+
+  #createOrg {
+    display: flex;
+    justify-content: center;
+  }
+
+  .createOrg1 {
+    margin: 70px;
+    padding: 5px 70px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+  }
+
+  .createOrg1:hover { 
+    background-color:white;
+    color: black;
   }
