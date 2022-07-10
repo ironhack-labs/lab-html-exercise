@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins'); 
+
+/*OVERALL STYLE*****************************************************************************************/
+* {
+    margin: auto; 
+    padding: 0;     
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 1em; 
+    padding: 1em;  
+}
+h1 {
+    font-size: 5em;
+    font-weight: 900;
+}
+h2 {font-size: 2em;
+    font-weight: bold; 
+    margin-bottom: 2em; 
+}
+h3 {
+    font-size:1em; 
+    font-weight: bold; 
+    color:#Ed1c24;
+    margin-left: 0; 
+    margin-bottom: 2em; 
+}
+/*HEADER STYLE**********************************************************************************/
+
+header {
+    display: flexbox; 
+    flex-direction: column;
+}
+
+#top {
+    display: flex;
+    flex-direction: row; 
+    justify-content: flex-end; 
+    align-items: center; 
+    margin-left: 2em; 
+}
+
+#nifty {
+    display: flex; 
+    wrap: no-wrap;
+    width: 22em;  
+    padding: 0; 
+    margin-left: 0; 
+  }
+  #heart {
+    height: 1em; 
+    width: 2em; 
+    padding: 0; 
+    margin: 0; 
+}
+span {
+    padding-left: 0; 
+    margin: 0;
+}
+nav {
+    display: flex; 
+    flex-direction: row; 
+    justify-content: flex-end; 
+    width: 50%;
+    padding: 0;  
+    margin: 0; 
+}
+nav ul {
+    display: flex; 
+    flex-direction: row; 
+}
+nav ul li {
+    font-weight: bold; 
+    list-style: none; 
+    padding: 1em 0 1em 1em; 
+}
+nav ul li a {
+    text-decoration: none;
+    color: rgb(0 0 0); 
+}
+#row2 {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between;
+    margin: 0 3em 1em 2em;
+}
+form {
+    display: flex; 
+    margin: 0;  
+}
+#formular {
+    display: flex;
+    width: 70%;
+    margin: 0; 
+}
+#logo {
+    
+    width: 6em; 
+    height: 2em; 
+    
+}
+#mag {
+    width: 1em; 
+    height: 1em; 
+}
+#search {
+    display: flex;
+    width: 74em;
+    height: 3em; 
+    margin-right: 0.5em;  
+    background-color: #F8F3F3;
+    border: none;     
+}
+/*::placeholder {
+    background-image: url(images/magnifying-glass.png);
+    background-repeat: no-repeat;
+    background-size: 2%;
+    width: 80em; 
+}*/
+#searchbutton {
+    background-color: #ED1c24; 
+    text-transform: capitalize; 
+    border: none; 
+    padding: 0.9em 1em;
+}
+#searchbutton a {
+    color: white;
+    text-decoration: none; 
+}
+#action {
+    display: flex;
+    flex-direction: row;  
+    margin-right: 1.5em; 
+}
+#action a {
+    display: flex; 
+    background-color: white;
+    color: black; 
+    text-decoration: none; 
+    text-transform: capitalize; 
+    padding: 0.5em 1em; 
+    
+}
+#join {
+    font-weight: bolder;
+    border: 1px solid black; 
+}
+#login {
+    font-weight: lighter; 
+}
+
+/* SECTION 1***************************************************************************/
+
+#build {
+    display: flex; 
+    flex-direction: column;
+    align-items: stretch; 
+    justify-content: center;
+    background-color: #F8F4F4;
+    height: 100vh; 
+    margin-bottom: 5em; 
+}
+#description {
+    display: flex; 
+    width: 28em; 
+    justify-content: center;
+    text-align: center;
+    font-weight: bolder;
+   
+}
+#go {
+    display: flex; 
+    margin-bottom: 5em; 
+}
+#go a {
+    padding: 1em 2em; 
+    margin: 1em; 
+    text-decoration: none;
+    font-weight: bold; 
+}
+#plan {
+    background-color: #ED1c24;
+    color: white; 
+    box-shadow: 0.5em 0.5em 1px #FBCDCF;
+}
+#free {
+    background-color: white;
+    color: black; 
+}
+
+/*SECTION 2***********************************************************************************/
+
+#open-source {
+    display: flex; 
+    flex-direction: column;
+    align-items: stretch; 
+    justify-content: center; 
+    margin-bottom: 7em; 
+}
+#hex {
+    height: 10em; 
+    width: 10em;
+    margin-bottom: 2em;  
+}
+#highlight {
+    position: relative;   
+}
+#highlight::before {
+        background-color: #FFEBB5;
+        content: "";
+        position: absolute;
+        width: calc(105%);
+        height: 60%;
+        left: -20px;
+        bottom: 0;
+        z-index: -1;
+    }
+#tool {
+    display: flex; 
+    width: 40em; 
+    justify-content: center;
+    text-align: center;    
+}
+
+/*SECTION 3**********************************************************************************/
+
+#reasons {
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch; 
+    flex-wrap: wrap; 
+    margin: 7em auto; 
+}
+.advantage {
+    display: flex; 
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 22%; 
+    margin: 0; 
+}
+.advantage article {
+    margin-left: 0; 
+}
+.icon {
+    display: flex; 
+    flex-direction: row; 
+    width: 3em; 
+    margin: 1em 0; 
+}
+#create {
+    display: flex; 
+    flex-direction: row; 
+    justify-content: center; 
+    background-color:rgb(0 0 0); 
+    color: white; 
+    padding: 0.7em 7em;
+    margin: 4em 20em 2em; 
+    border: none; 
+    box-shadow: 0.5em 0.5em 1px #F8F4F4;;
+
+}
