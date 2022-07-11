@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins';
+}
+
+header > div{
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+}
+
+nav{
+    width: 600px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+nav a {
+   text-decoration: none;
+   color: black;
+}
+
+.blackHeart{
+   width: 20px;
+   margin-right: 1rem;
+}
+
+.npm-logo{
+    width: 70px;
+    margin-right: 2rem;
+}
+
+/* .sub-header{
+    padding: 10px 0;
+} */
+
+form{
+    display: flex;
+    flex: 1;
+    padding: 0.8rem;
+}
+
+.search-icon{
+    width: 20px;
+    height: 20px;
+}
+
+form > .search-input{
+    display: flex;
+    align-items: center;
+    background-color: rgba(0,0,0,.05);
+    padding: 1em;
+    flex: 1;
+    
+}
+
+.search-input > input{
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 0 1rem;
+}
+
+.search-btn{
+    color: white;
+    background-color: #fb3e44;
+    border: none;
+    padding: 0 2rem;
+}
+
+.btn-join{
+    text-decoration: none;
+    padding: 0.8rem 1.5rem;
+    border: 1px solid #ccc;
+    color: black;
+}
+
+.btn-login, .btn-join-free{
+    text-decoration: none;
+    padding: 12px 28px;
+    color: black;
+}
+
+/* hero section */
+.hero-section{
+    display: flex;
+    background: rgba(232,217,217,.3);
+    height: 450px;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-evenly;
+}
+h1{
+    font-size:3.5em;
+    margin:0;
+}
+.hero-section article{
+    width: 33%;
+    margin: 0 auto;
+}
+.hero-section > .links-block{
+    padding: 2em;
+    width: 33%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+.btn-plans{
+    color: white;
+    background-color: #FB3B49;
+    border: none;
+    text-decoration: none;
+    padding: 12px 36px;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+}
+
+/* about npm section */
+.about-npm{
+    display: flex;
+    height: 450px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.about-npm img{
+    width: 150px;
+}
+
+.section-text{
+    text-align: center;
+    width: 60%;
+    margin: 10px auto;
+}
+
+.section-text h3{
+    font-size: 1.4em;
+    background-color: rgba(255,204,53,.4);
+    margin: 1em 6em;
+    transform: skew(9deg,0deg);
+    font-style: italic;
+}
+
+/* section features */
+.section-features{
+    padding: 4em 6em;
+}
+.features{
+    display: flex;
+}
+
+.features > div{
+    padding: 0 2em;
+}
+.features > div > img{
+    width: 30px;
+}
+.features > div > h3{
+    font-size: 1em;
+    color: #ED1C24;
+}
+.features > div > p{
+    font-size: 0.9em;
+}
+.section-features button{
+    color: white;
+    background-color: #000000;
+    border: none;
+    text-decoration: none;
+    padding: 12px 60px;
+    box-shadow: 8px 8px 0 rgb(128 83 35 / 20%);
+    display: block;
+    text-align: center;
+    margin: 3em auto;
+}
