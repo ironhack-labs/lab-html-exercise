@@ -24,7 +24,7 @@ nav ul {
     align-items: center;
 }
 
-nav a {
+nav > a {
     text-decoration: none;
     color: black;
 }
@@ -34,7 +34,7 @@ nav a {
     margin-right: 1rem;
 }
 
-header div form a {
+header  div form a {
     background-color: #fb3e44;
     text-decoration: none;
     color: white;
@@ -77,10 +77,49 @@ header div form input {
 }
 
 .magnifying-glass {
-    width: 22px;
+    height: 20px;
+    position: absolute;
+    top: 7px;
+    left: 20px;
 }
 
-/*Section-1 practice*/
+
+.searchContainer {
+    display: inline-flex;
+    flex: 1 1 300px;
+    position: relative;
+    border: 1px solid #F2F2F2;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-left: 10px;
+    background-color: #F2F2F2;
+    
+  }
+  
+.searchIcon {
+    padding: 0.5rem;
+    
+  }
+  
+.searchBox {
+    border: 0;
+    padding: 0.5rem 0.5rem 0.5rem 0;
+    flex: 1;
+    padding-left: 50px;
+    background-color: #F2F2F2;
+  }
+  
+.searchButton {
+    background: #FA3E44;
+    border: 0;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 0;
+  }
+
+
 
 .container {
     display: flex;
@@ -150,7 +189,6 @@ header div form input {
     margin-left: 15px;
     font-weight: 900;
 }
-/*Section-2 practice*/
 
 #section-2{
     height: 450px;
