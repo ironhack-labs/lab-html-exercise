@@ -1,0 +1,239 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+  font-family: 'Poppins';
+}
+/* -----------------HEADER-----------------*/
+.headerA {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #d3d3d3;
+    padding: .93rem 1.56rem;
+    align-items: center;
+}
+
+.headerA__blackHeart{
+    width: 20px;
+    margin-right: 1rem;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+nav li{
+    box-sizing: border-box;
+    margin-left: 1.56rem;
+    font-weight: 900;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.headerB {
+    display: flex;
+    padding:.62rem 2rem;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+ 
+.headerB__containerLogo {
+    padding: .8rem 2rem 0 0;
+}
+
+.headerB__logo{
+    width: 70px;
+}
+
+.containerForm{
+    padding: .5rem 0;
+    width: 50%;
+    flex: 1 1 auto;
+    display: block;
+}
+
+.containerForm__glassMagnifying{
+    display: flex;
+    white-space: nowrap;
+    background-color: #f2f2f2;
+}
+
+.container-glassMagnifying__icon{
+    padding: .6rem .25rem 0 1rem;
+    float: left;
+    display: block;
+}
+
+.glassMagnifying__icon{
+    width: 18px;
+    height: 18px;
+    margin-top: 8px;
+}
+
+.glassMagnifying_search{
+    background: none;
+    font-family: "Fira Mono", "Andale Mono", "Consolas", monospace;
+    font-size: 16px;
+    border: none;
+    outline: unset;
+    height: 52px;
+    padding-left: 10px;
+    width: calc(100% - 10px);
+}
+
+.glassMagnifying__button{
+    font-family: 'Poppins';
+    font-weight: bold;
+    font-size: .875rem;
+    line-height: 1.15rem;
+    letter-spacing: 0.3px;
+    color: #fff;
+    padding: .5rem 2rem;
+    border: none;
+    background-color: #fb3e44;
+}
+
+.containerJoinInput{
+    margin-left: 1rem;
+    font-weight: 600;
+    flex: 1 1 auto;
+    flex-grow: 0;
+    text-align: right;
+}
+
+.join{
+    padding: 13px 28px;
+    border: 2px solid #cccccc;
+    text-decoration: none;
+    color: #000;
+    margin: 0 1rem 0 1.5rem;
+}
+
+.logIn{
+    text-decoration: none;
+    margin: 0 1rem;
+    padding: .25rem;
+    color: #000;
+}
+/* -----------------SECTION-----------------*/
+.sectionTop{
+    background-image: url(https://static.npmjs.com/abf53a31b2da4657a1a004ee9358551c.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sectionTop_container{
+    margin: auto;
+    display: block;
+    text-align: center;
+    padding: 4rem 1rem;
+    max-width: 48rem;
+}
+.sectionTop_container > h1{
+    margin: .67em 0;
+    font-size: 5rem;
+    color: #fff;
+}
+
+.sectionTop_container > div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto;
+    max-width: 28rem;  
+    color: #fff;
+    margin-bottom: 2rem;
+}
+
+.plans{
+    text-decoration: none;
+    color: #fff;
+    background-color: #fb3e44;
+    border: 1px solid #fff;
+    padding: 1rem 0;
+    width: 40%;
+    box-shadow: 10px 10px 0px -3px rgba(251,62,68,.5);
+    font-weight: 600;
+}
+
+.joinFree{
+    text-decoration: none;
+    color: #fb3e44;
+    background-color: #fff;
+    padding: 1rem 0;
+    width: 40%;
+    font-weight: 600;
+}
+
+.sectionMid_container{
+    margin: auto;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 4rem 1rem;
+    max-width: 32rem;
+}
+
+.sectionMid_container > h3 {
+    font-size: 2.25rem;
+    font-weight: 600;
+    line-height: 1.25;
+    margin: 2rem 0;
+}
+
+.sectionMid_container-text {
+    font-family: 'Arimo', sans-serif;
+}
+
+.sectionBottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0 100px
+
+}
+
+.sectionBottom_container{
+    display: flex;
+}
+
+.sectionBottom_container > div {
+    width: 300px;
+    padding: 0 1rem 0 2rem;
+    margin: 0 5px;
+
+}
+
+.sectionBottom_container-title{
+    color: red;
+    font-weight: 900;
+    margin: 10px 0 20px 0;
+    
+}
+
+.sectionBottom_container-text{
+    font-size: 16px;
+}
+
+.sectionBottom_button{
+    background-color: #000000;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 900;
+    font-size: 20px;
+    margin: 70px 0 10px;
+    padding: 1rem 3rem;
+    width: 420px;
+    box-shadow: 10px 10px 0px -3px rgba(000,000,000,.1);
+
+}
