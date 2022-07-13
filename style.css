@@ -2,6 +2,7 @@
 
 body {
   font-family: 'Poppins';
+  margin: 0
 }
 
 h1 {
@@ -14,6 +15,7 @@ header > div {
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid lightgray;
+    gap: 20px
 }
 
 #randomizer span {
@@ -36,6 +38,7 @@ nav ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 10px;
 }
 
 nav a {
@@ -61,7 +64,6 @@ nav a {
 
 
 .form-holder {
-    margin: 0 20px;
     padding: 6px 0 6px 10px;
     flex-grow:1;
     display:flex;
@@ -149,6 +151,9 @@ nav a {
 .buttons-holder {
     display:flex;
     gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+
 }
 .hex-logo {
     height:200px;
@@ -204,6 +209,7 @@ nav a {
 .section-one h1 {
     text-align: center;
     margin: 20px auto 20px auto;
+
 }
 .section-one article {
     max-width: 32rem;
