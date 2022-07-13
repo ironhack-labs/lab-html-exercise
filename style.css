@@ -4,6 +4,10 @@ body {
   font-family: 'Poppins';
 }
 
+h1 {
+    font-size: 5em;
+    font-weight: 600;
+}
 header > div {
     padding:0 25px;
     display:flex;
@@ -11,6 +15,18 @@ header > div {
     align-items: center;
     border-bottom: 1px solid lightgray;
 }
+
+#randomizer span {
+    font-weight: 500;
+    font-size: 0.875em;
+}
+
+.lower-row {
+    padding: 5px 25px;
+    flex-wrap: wrap;
+}
+
+
 nav {
     width: 600px;
 
@@ -25,6 +41,8 @@ nav ul {
 nav a {
     text-decoration: none;
     color: black;
+    font-weight: bold;
+    font-size: 0.875em;
 }
 
 .blackHeart {
@@ -38,31 +56,69 @@ nav a {
 
 .button-holder {
     display:flex;
-    gap: 10px;
+    gap: 25px;
 }
-.form-holder {
 
+
+.form-holder {
+    margin: 0 20px;
+    padding: 6px 0 6px 10px;
+    flex-grow:1;
     display:flex;
     background-color: rgba(0,0,0,.05);
     align-items: center;
+    position: relative;
+}
+
+.form-holder form {
+    width: 80%;
+}
+
+.form-holder input {
+    background-color: transparent;
+    border:none;
+    width: calc(100% - 20px);
+    font-family: "Fira Mono", "Andale Mono", "Consolas", monospace;
+    font-size: 16px;
+}
+
+
+.form-holder button {
+    background-color: #fb3e44;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    position:absolute;
+    right: 0;
+    bottom: 0;
+}
+
+
+#join a {
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    border-top: 2px solid black;
+    padding: 2px 15px;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+#sign-in a {
+    text-decoration: none;
+    color: rgb(29, 29, 29);
+    font-size: 0.9em;
+    
 }
 
 
 .looking-glass {
     height:20px;
     width: auto;
+    padding-right: 5px;
 }
 
-.form-holder input {
-    background-color: transparent;
-    border:none;
-}
-.form-holder button {
-    background-color: #fb3e44;
-    border: none;
-    color: white;
-    padding: 10px 15px;
-}
+
 
 .section-one {
     display:flex;
@@ -72,6 +128,22 @@ nav a {
     height: 600px;
     background-color: rgba(232,217,217,.3);
 
+}
+
+#see-plans a{
+    text-decoration: none;
+    background-color: #FB3B49;
+    color: white;
+    font-weight: bold;
+    padding: 0.9em 4em;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+}
+#join-for-free a {
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    padding: 0.9em 4em;
 }
 
 .buttons-holder {
@@ -98,12 +170,60 @@ nav a {
     display:flex;
     flex-direction: column;
     align-items: center;
-    gap: 50px
+    gap: 50px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.section-three a {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 0.9em 8em;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    font-weight: bold;
 }
 
 .article-holder {
     display:flex;
     justify-content: space-between;
-    gap:10px;
+    gap:30px;
     padding: 0 50px 0 50px;
 }
+
+.article-holder .article {
+    max-width: 15rem;
+}
+.article-holder h3 {
+    color:#ED1C24;
+    font-size: 1em;
+}
+
+
+.section-one h1 {
+    text-align: center;
+    margin: 20px auto 20px auto;
+}
+.section-one article {
+    max-width: 32rem;
+    text-align: center;
+    line-height: 1.5;
+    padding-bottom: 50px;
+    
+}
+
+.section-two h2 {
+    margin-top: 60px;
+    font-size: 2em;
+    font-weight: bold;
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+    font-style: italic;
+}
+
+.section-two article {
+    text-align: center;
+    max-width: 50rem;
+    margin-top: 10px;
+}
+
