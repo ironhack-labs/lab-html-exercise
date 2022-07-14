@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>npm</title>
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
 </head>
 
@@ -27,17 +28,15 @@
         </div>
         
 
-        <div>
+        <div class="search-container">
             <img class="logo" src="C:\Users\Usuario\Desktop\Ironhack\lab-html-exercise\images\npm-logo.png" alt="npm logo"/>
-            <div class="search-container">
-                <img class="magnifying glass" src="C:\Users\Usuario\Desktop\Ironhack\lab-html-exercise\images\magnifying-glass.png" alt="search icon"/>
-                <form action="/action_page.php">
-                  <input type="text" placeholder="Search packages" name="search">
-                  <button type="submit">Search</button>
-                </form>
-            </div>
-            <a class="active" href="#join">Join</a>
-            <a href="#login">Log In</a>
+            <form action="/action_page.php">
+                <img class="magnifying-glass" src="C:\Users\Usuario\Desktop\Ironhack\lab-html-exercise\images\magnifying-glass.png" alt="search icon"/>
+                <input type="text" placeholder="Search packages" name="search">
+                <button type="submit">Search</button>
+            </form>
+            <a class="active" href="#">Join</a>
+            <a href="#">Log In</a>
         </div>
     </header>
 
@@ -49,9 +48,10 @@
         <article class="article1">Essential JavaScript development tools that help you go to market faster and build powerful applications using
             modern open source code.
         </article>
-        <a class="selected" href="#see plans">See plans</a>
-        <a href="#join free">Join for free</a>
-
+        <div>
+            <a class="selected" href="#see plans">See plans</a>
+            <a href="#">Join for free</a>
+        </div>
     </section>
     
     
@@ -60,7 +60,7 @@
     <section id="section2">
         <img class="hexagon" src="C:\Users\Usuario\Desktop\Ironhack\lab-html-exercise\images\triangle-hexagon.svg" alt="hexagon"/>
         <h3>Bring the best of open source to your company</h3>
-        <article class="article2">npm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it.
+        <article>npm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it.
             Create an Org and get more out of the tools your team already knows and loves.</article>
     </section>
 
@@ -91,7 +91,7 @@
     </section>
 
 
-    <button type="button">Create an Org</button>
+    <button id="org" type="button" href="#">Create an Org</button>
 
     
 </body>
