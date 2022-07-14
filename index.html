@@ -6,13 +6,13 @@
 		<link rel="stylesheet" href="./style.css"/>
 	</head>
 	<body>
-		<header>
+		<header class="header">
 			<div>
 				<div>
-					<img src="./images/black-heart.png" alt="heart">
-					<span>Clone Nifty Penguin Magic</span>
+					<img class="blackHeart" src="./images/black-heart.png" alt="heart">
+					<span>Nifty Penguin Magic</span>
 				</div>
-				<nav>
+				<nav class="nav">
 					<ul>
 						<li><a href="#">npm Enterprise</a></li>
 						<li><a href="#">Products</a></li>
@@ -23,11 +23,16 @@
 					</ul>
 				</nav>
 			</div>
+			<hr>
 			<div>
-				<img src="./images/npm-logo.png" alt="npm-logo">
-				<img src="./images/magnifying-glass.png" alt="magnifying-glass">
-				<form action="/search" method="get">
-					<input type="submit" value="Search">
+				<img class="logo" src="./images/npm-logo.png" alt="npm-logo">
+				<div >
+					<img class="glass" src="./images/magnifying-glass.png" alt="magnifying-glass">
+				</div>
+				<form action="/search" method="get" class="search-form">
+					<label for="search"></label>
+					<input type="text-area" id="search" placeholder="Search packages">
+					<button type="submit">Search</button>
 				</form>
 				<div>
 					<a href="#">Join</a>
@@ -35,15 +40,16 @@
 				</div>
 			</div>
 		</header>
-		<section>
-			<h1>Building amazing things</h1>
+		<section id="main">
+			<h1>Build amazing things</h1>
 			<article>
 				<p>Essential JavaScript development tools that help you go to market faster and build powerful applications using modern open source code.</p>
-			</article>
+			
 			<div>
-				<a href="#">See plans</a>
-				<a href="#">Join for free</a>
+				<a href="#" class="link-btn1">See plans</a>
+				<a href="#" class="link-btn2">Join for free</a>
 			</div>
+			</article>
 		</section>
 		<section>
 			<article>
