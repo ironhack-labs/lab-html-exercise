@@ -2,6 +2,7 @@
 
 body {
   font-family: 'Poppins';
+  margin: 0 0;
 }
 
 h1,
@@ -21,60 +22,111 @@ h1{
 	border: 2px solid black;
 }
 
+
+
 header > div {
 	padding: 0 25px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	//border-bottom: 1px solid lightgray;
-  }
+	border-bottom: 1px solid lightgray;
+}
   
-  nav {
+
+
+
+nav {
 	width: 600px;
-  }
+}
   
-  nav ul {
+nav ul {
 	list-style: none;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-  }
+}
   
-  nav a {
+nav a {
 	text-decoration: none;
 	color: black;
-  }
+}
   
-  .blackHeart {
+.blackHeart {
 	width: 20px;
 	margin-right: 1rem;
-  }
+}
 
-  .logo {
+
+.bar {
+	display: flex;
+	align-items: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.logo {
 	width: auto;
 	height: 25px;
-  }
+	align-items: center;
+}
 
-  .glass {
+
+
+.search-form {
+	display: flex;
+	align-items: stretch;
+	width: 100%;
+	margin-left: 20px;
+	margin-right: 0px;
+}
+
+.glass {
 	width: auto;
 	height: 25px;
-  }
+	position: absolute;
+	left: 128px;
+	top: 75px;
+}
 
-  .search-form {
-	width: 500px;
-	font-family: 'Poppins';
-  }
-
-  .search-form input {
+.search-form input {
 	font-family: 'Poppins';
 	color: rgba(0,0,0,.05);
-  }
+	padding: 10px 30px 10px;
+	background-color: rgba(232,217,217,.3);
+	width: 90%;
+	display: flex;
+	border: white;
+}
 
-  .search-form button {
+.search-form button {
 	background-color: #fb3e44;
 	color: white;
 	font-family: 'Poppins';
-  }
+	width: 5%;
+	border:  #fb3e44;
+}
+
+.twobuttons {
+	display: flex;
+	align-items: center;
+	padding-left: 50px;
+	margin-left: 0;
+}
+
+.button1 {
+	color: black;
+	text-decoration: none;
+	border: 1px solid black;
+	padding: 5px 20px;
+}
+
+.button2 {
+	color: black;
+	text-decoration: none;
+	padding: 5px 20px;
+	white-space: nowrap;
+}
+
 
 #main {
 	display: flex;
@@ -84,8 +136,6 @@ header > div {
 	flex-direction: column;
 	align-items: center;
 }
-
-
 
 #main article {
 	width: 40%;
