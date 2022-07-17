@@ -32,7 +32,7 @@
             <form action="#" class="form">
                 <img src="./images/magnifying-glass.png" alt="magnifying glass">
                 <input type="search" id="search-bar" name="search-bar" placeholder="Search packages">
-                <button>Search</button>
+                <button type="submit">Search</button>
             </form>
             <div class = "log">
                 <a href="#" id="join">Join</a>
@@ -56,16 +56,18 @@
     </section>
     <!-- section 2 -->
     <section id="presentation">
-        <img src="./images/triangle-hexagon.svg" alt="triangle hexagon">
+        <div>
+            <img src="./images/triangle-hexagon.svg" alt="triangle hexagon">
+        </div>
         <h3>Bring the best of open source to your company</h3>
-        <article>
+        <article class="article">
             <p>npm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers already use it. Your
             company depends on it. Create an Org and get more out of the tools your team already knows and loves.</p>
         </article>
     </section>
     <!-- section 3 -->
     <section id="org">
-        <div>
+        <div id="option">
             <article>
                 <img src="./images/zero-configuration.svg" alt="zero configuration">
                 <h5>Zero configuration</h5>
@@ -87,6 +89,8 @@
                 <p>Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer.</p>
             </article>
         </div>
-        <a href="#">Create an Org</a>
+        <div id="btn-crea">
+            <a href="#">Create an Org</a>
+        </div>
     </section>
 </body>
