@@ -9,14 +9,14 @@
     <body>
         <header id="header">
             <!-- navigation bar -->
-            <div class="header-bar">
-                // heart pic & associated text
-                <div class="bar-side">
+            <div class="header-bars" id="nav-bar">
+                <!-- heart pic & associated text -->
+                <div>
                     <img id="blackHeart" src="./images/black-heart.png" alt="Black Heart" />
                     <span>NPM Clone Nifty Penguin Magic</span>
                 </div>
                 
-                <nav class="bar-side" id="nav-menu">
+                <nav id="nav-menu">
                     <ul>
                         <li><a href="/about-us">npm Enterprise</a></li>
                         <li><a href="/our-products">Products</a></li>
@@ -29,11 +29,11 @@
             </div>
 
             <!-- search bar & identifiers buttons -->
-            <div class="header-bar" id="search-login">
+            <div class="header-bars" id="search-login">
                 <div id="search-bar">
-                    <img id="logo" src="./images/npm-logo.png" alt="npm logo" />
+                    <img id="logo" src="./images/npm-logo.png" alt="npm logo" />                    
                     <form id="search-slot" action="/search_result" method="post">
-                        <label for="search"><img id="magnifying" src="./images/magnifying-glass.png" alt="magnifiyng-glass" /></label>
+                        <img id="magnifying" src="./images/magnifying-glass.png" alt="magnifiyng-glass" />
                         <input type="text" id="search" placeholder="Search pakages">
                         <button type="submit" id="">Search</button>
                     </form>
@@ -61,7 +61,7 @@
         </section>
 
         <!--presentation-->
-        <section class="infos" id="presentation">
+        <section id="presentation">
             <article>
                 <img id="hexagon" src="./images/triangle-hexagon.svg" alt="Stylized Hexagon" />
                 <h2>Bring the best of open source to your company</h2>
@@ -70,7 +70,7 @@
         </section>
 
         <!--features-->
-        <section class="infos" id="features">
+        <section id="features">
             <div>
                 <article class="feature">
                     <img src="./images/zero-configuration.svg" alt="generic button" />
@@ -104,4 +104,4 @@
 
 
     </body>
-<!-- Create an Org -->
+</html>
