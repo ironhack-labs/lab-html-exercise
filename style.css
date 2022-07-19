@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body {
+  font-family: 'Poppins';
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+  }
+
+/* given part - Header */
+header > div {
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+  }
+  
+  nav {
+    width: 600px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .blackHeart {
+    width: 20px;
+    margin-right: 1rem;
+  }
+
+/* functions bar - Header */
+
+.nmp-logo {
+    width: 75px;
+    margin-right:20px;
+}
+
+.search {
+    background-color: rgba(0,0,0,.05);
+    margin: 10px 0;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.search-glass {
+    height: 20px;    
+    padding: 10px;
+}
+
+.search input {
+    height: 20px;
+    outline: none;
+    margin: 5px;
+    width: 100%;
+    border: none;
+    background-color:transparent;
+    font-size: 1em;
+}
+
+.search button {
+    border: none;
+    color: white;
+    background-color: #fb3e44;
+    height: 50px;
+    padding: 10px 15px;
+    font-size: 1em;    
+}
+
+.functions {  
+    display: flex;
+    align-items: center;
+    justify-content:space-between; 
+    margin-left:20px;   
+}
+
+.functions a {
+    font-size: 1em;
+    height: 50px;
+    min-width:fit-content;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    padding: 0 30px;
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+.join {    
+    margin: 0 10px;
+    border: 1px solid black;
+}
+
+/* Intoduction - Section 1 */
+
+
+#intro {
+    background-color: rgba(232,217,217,.3);
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#intro h1{
+    text-align: center;
+    font-size: 4.5em;
+}
+
+.description {
+    font-size: 1.2em;
+    text-align: center;
+    width: 500px;
+}
+
+#intro div {    
+    width: 500px;
+    height: 50px;    
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    margin: 50px 0;
+}
+
+.plan, .join-for-free{
+    font-size: 1.2em;
+    text-align: center;
+    text-decoration: none;    
+    padding: 20px;
+    width: 40%; 
+}
+.plan {  
+    color: white;
+    background-color: #FB3B49;
+    box-sizing: border-box;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+}
+
+.join-for-free {    
+    color: black;
+}
+
+/* Informtions - Section 2 */
+
+#info {
+    background-color: none;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hexagon {
+    height: 200px; 
+    margin-bottom: 30px;
+}
+
+#info h2{
+    text-align: center;
+    font-size: 2em;
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+    font-style: italic;  
+}
+
+.text {
+    font-size: .9em;
+    text-align: center;
+    width: 600px;
+}
+
+
+/* options - Section 3 */
+
+#options {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 200px;
+}
+
+#options > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:stretch;
+    padding: 100px 10% 0 10%; 
+
+}
+.box {
+    width: 25%;    
+    padding: 20px;
+}
+
+.box img  {
+    height: 50px;
+}
+
+.box h3 {
+    text-align: left;
+    font-size: 1.2em;
+    font-weight: 700;
+    color: #ED1C24;
+    margin: 30px 0 ;
+}
+
+.box p {
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+
+.creat {
+    color: white;
+    text-decoration: none;
+    background-color: black;
+    box-shadow:8px 8px 0 rgba(128,83,35,.2);
+    padding: 15px 150px;
+    font-size: 1.3em;
+    margin-top: 100px;    
+}
