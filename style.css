@@ -1,8 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 body, button {
   font-family: 'Poppins';
 }
+
+
+/* Header */
 
 header > div {
     padding: 0 25px;
@@ -68,6 +71,7 @@ nav a {
     padding: 5px 20px;
     font-family: 'Poppins';
     float: right;
+    font-size: 16px;
 }
 
 input[type="text"] {
@@ -93,5 +97,59 @@ input[type="text"] {
 .join-btn {
     border: 2px solid;
 }
+
+
+/* Sections */
+
+.section {
+    padding: 20px;
+}
+
+
+/* Section 1 */
+
+.section1 {
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background: #e5e5e5;
+}
+
+.section1 > * {
+    margin: 10px 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+.section1 p {
+    max-width: 500px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.plans a {
+    font-weight: 500;
+    text-decoration: none;
+    padding: 15px 60px;
+    margin: 0 15px;
+    display: inline-block;
+}
+
+.link-btn.red {
+    background: red;
+    color: white;
+    box-shadow: 6px 6px 0 0 #ffa7a7;
+}
+
+.join-free-btn {
+    color: black;
+    background: white;
+}
+
 
 /* Helpers */
