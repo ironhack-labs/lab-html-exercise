@@ -5,15 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NPM Clone</title>
+    <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
     <header>
         <div>
             <div>
-                <img class="black-heart" src="/images/black-heart.png" alt="black heart">
+                <img class="blackHeart" src="/images/black-heart.png" alt="black heart">
                 <span> Nifty Penguin Magic </span>
             </div>
-            <nav class="nav-bar">
+            <nav>
                 <ul>
                     <li><a href="#">npm Enterprise</a></li>
                     <li><a href="#">Products</a></li>
@@ -26,34 +27,36 @@
         </div>
 
         <div>
-            <img class="npm-logo" src="/images/npm-logo.png" alt="logo npm">
+            <img class="npmLogo" src="/images/npm-logo.png" alt="logo npm">
             <form>
                 <label><img class="glass-icon" src="/images/magnifying-glass.png" alt="icon glass"></label>
-                <input type="search" placeholder="Search packages">
-                <button>Search</button>
+                <input type="search" placeholder="Search packages" size="140">
+                <button type="submit">Search</button>
             </form>
-            <a href="#">Join</a>
-            <a href="#">Log in</a>
+            <div>
+                <a class="buttonJoin" href="#" >Join</a>
+                <a href="#">Log in</a>
+            </div>
         </div>
     </header>
     <!--introduction section-->
-    <section id="introduction-section">
+    <section id="introductionSection">
         <h1>Build amazing things</h1>
         <article>Essential JavaScript development tools that help you go to market faster and build powerful applications using modern open source code.</article>
         <div>
-            <a href="#">See plans</a>
+            <a class="buttonSeePlans" href="#">See plans</a>
             <a href="#">Join for free</a>
         </div>
     </section>
     <!--presentation section-->
-    <section id="presentaction-section">
+    <section id="presentationSection">
         <img src="/images/triangle-hexagon.svg" alt="triangle hexagon">
         <h2>Bring the best of open source to your company</h2>
         <article>npm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it. 
             Create an Org and get more out of the tools your team already knows and loves.</article>
     </section>
     <!--how it works section-->
-    <section id="how-it-works">
+    <section id="howItWorks">
         <div>
             <div>
                 <img src="/images/zero-configuration.svg" alt="zero configuration">
