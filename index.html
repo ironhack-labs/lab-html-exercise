@@ -13,7 +13,7 @@
       <div>
         <div>
           <img
-            class="blackHeart"
+            class="blackHeartImg"
             src="/images/black-heart.png"
             alt="Black Heart"
           />
@@ -32,14 +32,20 @@
       </div>
 
       <div>
-        <img src="/images/npm-logo.png" alt="" />
-        <form action="" method="post">
-          <img class="magnifying" src="/images/magnifying-glass.png" alt="" />
-          <input type="text" placeholder="Search package" />
-          <button type="submit">Search</button>
+        <img class="logoImg" src="/images/npm-logo.png" alt="" />
+        <form class="form" action="index.html" method="post">
+          <div class="mag-div">
+            <img
+              class="magnifyingImg"
+              src="/images/magnifying-glass.png"
+              alt=""
+            />
+            <input type="text" placeholder="Search package" />
+          </div>
+          <button class="searchBtn" type="submit">Search</button>
         </form>
 
-        <div>
+        <div class="joinLogin">
           <a href="#"> Join</a>
           <a href="#">Log in</a>
         </div>
@@ -47,19 +53,21 @@
     </header>
     <!--Section1 Build amazing thing-->
 
-    <section id="first-section">
+    <section id="firstSection">
       <h1>Build amazing things</h1>
       <article>
-        Essential JavaScript development tools that help you go to market faster
-        and build powerful applications using modern open source code.
+        <p>
+          Essential JavaScript development tools that help you go to market
+          faster and build powerful applications using modern open source code.
+        </p>
       </article>
       <div>
-        <a href="#">See plans</a>
-        <a href="#">Join for free</a>
+        <a class="plansBtn" href="#">See plans</a>
+        <a class="joinBtn" href="#">Join for free</a>
       </div>
     </section>
     <!--Section2 Bring the bes of open source-->
-    <section id="second-section">
+    <section id="secondSection">
       <img src="/images/triangle-hexagon.svg" alt="" />
       <h1>Bring the best of open source to your company</h1>
       <article>
@@ -67,11 +75,11 @@
         world. Your developers already use it. Your company depends on it.
         Create an Org and get more out of the tools your team already knows and
         loves.
-      </article
+      </article>
     </section>
 
     <!--Section 3 create org-->
-    <section id="third-section">
+    <section id="thirdSection">
       <div>
         <div>
           <img src="/images/zero-configuration.svg" alt="" />
@@ -106,7 +114,11 @@
           </p>
         </div>
       </div>
-      <span> <a href="#">Create an Org</a></span>
+      <span class="orgSpan">
+        <button class="orgBtn" type="button" name="button">
+          Create an Org
+        </button>
+      </span>
     </section>
   </body>
 </html>
