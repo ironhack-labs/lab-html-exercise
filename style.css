@@ -174,8 +174,21 @@ h1 {
 h2 {
     font-size: 38px;
     font-weight: 600;
-    background: #fcebbb;
     padding: 0 50px;
+}
+
+h2:after {
+    content: '';
+    background: #fcebbb;
+    width: 108%;
+    margin-left: -4%;
+    height: 85%;
+    margin-top: -10px;
+    display: block;
+    position: relative;
+    top: -40px;
+    z-index: -1;
+    transform: skew(9deg,0deg);
 }
 
 .section2 p {
