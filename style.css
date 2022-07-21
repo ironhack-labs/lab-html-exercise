@@ -35,24 +35,24 @@ nav a {
 
 .npmLogo {
     width: 60px;
-    margin-right: 1rem;
 }
 
 form{
     display: flex;
-    justify-content: space-between;
     align-items: center;
     position: relative;
+    width: 84%;
 }
 
 form label {
     color: rgba(0,0,0,.05);
-}
-form label img {
-    width: 15px;
-    height: 15px;
     position: relative;
     left: 30px;
+    top: 3px;
+}
+form label img {
+    width: 20px;
+    height: 20px;
 }
 
 form input {
@@ -61,6 +61,7 @@ form input {
     background-color: #F2F2F2;
     padding: 10px 0px 10px 50px;
     margin: 5px 0;
+    width: 100%;
 }
 
 form button {
@@ -68,16 +69,30 @@ form button {
     color: white;
     border: none;
     padding: 10px 15px;
+    cursor: pointer;
 }
 
+.links {
+    width: 12%;
+}
 header a {
     text-decoration: none;
     color: black;
 }
+
+header a:hover {
+    color: rgb(150, 143, 143);;
+}
+
 .buttonJoin {
     border: 1px solid black;
     padding: 2px 15px;
-    margin: 3px 15px;
+    margin: 1rem;
+}
+
+.buttonJoin:hover{
+    border: 1px solid rgb(150, 143, 143);
+    color: rgb(150, 143, 143);;
 }
 
 #introductionSection {
@@ -89,6 +104,19 @@ header a {
     background-color: rgba(232,217,217,.3);
 }
 
+#introductionSection h1 {
+    font-size: 5em;
+    text-align: center;
+}
+
+#introductionSection article {
+    width: 25em;
+    text-align: center;
+}
+
+#introductionSection > div {
+    margin: 4rem;
+}
 #introductionSection a{
     text-decoration: none;
 }
@@ -97,6 +125,82 @@ header a {
     background-color: #FB3B49;
     box-shadow: 8px 8px 0 rgba(251,59,73,.2);
     color: white;
-    padding: 5px 15px;
-    margin: 50px;
+    padding: 0.8rem 3.5rem;
+    margin-right: 2rem;
+}
+.buttonJoinForFree {
+    background-color:white;
+    color: black;
+    font-weight: bolder;
+    padding: 0.8rem 3.5rem;
+}
+
+#presentationSection {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 600px;
+}
+
+#presentationSection img {
+    width: 218px;
+    height: 192px;
+}
+
+#presentationSection h2 {
+    font-size: 2.15rem;
+    text-align: center;
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+    font-style: italic;
+    padding: 0 2.5rem;
+}
+
+#presentationSection article {
+    width: 48em;
+    text-align: center;
+}
+
+#howItWorksSection {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#howItWorksSection .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+#howItWorksSection img {
+    width: 20px;
+    height: 20px;
+}
+
+#howItWorksSection h3 {
+    color: #ED1C24;
+}
+
+#howItWorksSection p {
+    width: 16em;
+}
+
+.buttonCrateOrg {
+    background-color: black;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 0.5rem 5rem;
+    margin-top: 3rem;
+}
+
+.buttonCrateOrg:hover {
+    box-shadow: none;
+    background-color: #ED1C24;
 }
