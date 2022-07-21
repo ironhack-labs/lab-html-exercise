@@ -4,19 +4,17 @@
 <head>
     <meta charset="utf-8">
     <title>npm Aaron</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
-    <header>
-        <div>
-            <div>
-                <img src='./images/black-heart.png' alt="black-heart">
+    <header class="header">
+        <div class="header-top">
+            <div class="upper-left-logo">
+                <img src='./images/black-heart.png' alt="black-heart" class="heart-logo">
                 <span>Neverending Pun Machine</span>
             </div>
-        </div>
-        <div>
-            <nav>
+            <nav class="nav-bar">
                 <ul>
                     <li><a href="#">npm Enterprise</a></li>
                     <li><a href="#">Products</a></li>
@@ -27,24 +25,25 @@
                 </ul>
             </nav>
         </div>
-        <div>
-            <img src='./images/npm-logo.png' alt='npm-logo' />
+        
+        <div class="header-bottom">
+            <img src='./images/npm-logo.png' alt='npm-logo' class="npm-logo"/>
+            
             <div id="searcher" class="searcher">
-                <div id="search-container" class="search-container">
-                    <form>
-                        <input type="text" placeholder="Search packages" name="Search">
-                        <button type="submit">Search</button>
-                    </form>
-                </div>
-                <div>
-                    <button>Join</button>
-                    <button>Log In</button>
-                </div>
+                <form>
+                    <label for="search-packages"><img src='./images/magnifying-glass.png' alt='magnifying-glass' class="magnifying-glass-icon"/></label>
+                    <input id="search-packages" type="text" placeholder="Search packages" name="Search">
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+            <div class="nav-btn-group">
+                <button class="btn-join">Join</button>
+                <button class="btn-login">Log In</button>
             </div>
         </div>
     </header>
 
-    <section id="wellcome-page">
+    <section id="wellcome-page" class="wellcome-page">
         <h1>Build amazing things</h1>
         <br>
         <article>Essential JavaScript development tools that help you go to market faster and build powerful
@@ -53,14 +52,14 @@
             modern open source code.
         </article>
         <br>
-        <div id="btn-group">
-            <button>See plans</button>
-            <button>Join for free</button>
+        <div id="btn-group" class="wellcome-btn-group">
+            <button class="btn-see-plans">See plans</button>
+            <button class="btn-join-free">Join for free</button>
         </div>
     </section>
 
     <section id="more-about-us">
-        <img src='./images/triangle-hexagon.svg' alt='magnifying-glass' />
+        <img src='./images/triangle-hexagon.svg' alt='triangle-hexagon' class="diamond-logo"/>
         <h2>Bring the best of open source to your company</h2>
         <article>npm is the tool used by
             over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends
@@ -72,25 +71,25 @@
     <section id="features">
         <div id="features-group">
             <article>
-                <img src='./images/zero-configuration.svg' alt='zero-configuration' />
+                <img src='./images/zero-configuration.svg' alt='zero-configuration' class="zero-config-icon"/>
                 <h6>Zero configuration</h6>
                 <p>Create an org, add
                     your team, and start collaborating. Nothing to configure, set up, or manage.</p>
             </article>
             <article>
-                <img src='./images//team-management.svg' alt='team-management' />
+                <img src='./images//team-management.svg' alt='team-management' class="team-management-icon"/>
                 <h6>Team management</h6>
                 <p>Control who has access to
                     what modules within your team namespace using straightforward team management capabilities.</p>
             </article>
             <article>
-                <img src='./images/familiar-features.svg' alt='familiar-features' />
+                <img src='./images/familiar-features.svg' alt='familiar-features' class="familiar-ft-icon"/>
                 <h6>Familiar features</h6>
                 <p>npm Orgs
                     has 100% parity with all the public npm registry features your developers already use.</p>
             </article>
             <article>
-                <img src='./images/npm-audit.svg' alt='npm-audit' />
+                <img src='./images/npm-audit.svg' alt='npm-audit' class="npm-audit-icon"/>
                 <h6>npm audit</h6>
                 <p>Enjoy the security
                     auditing features built into the npm client, a zero-friction way to make open source software safer.
