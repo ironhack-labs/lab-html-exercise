@@ -9,7 +9,7 @@
   </head>
   <body>
     <header>
-      <div id="header">
+      <div class="nav-upper-bar">
         <div>
           <img
             class="blackHeart"
@@ -20,46 +20,53 @@
         </div>
         <nav>
           <ul>
-            <li><a href="#"> npm Enterprise </a></li>
-            <li><a href="#"> Products </a></li>
-            <li><a href="#"> Solutions </a></li>
-            <li><a href="#"> Resources </a></li>
-            <li><a href="#"> Docs </a></li>
-            <li><a href="#"> Support </a></li>
+            <li><a class="nav-bar-item" href="#"> npm Enterprise </a></li>
+            <li><a class="nav-bar-item" href="#"> Products </a></li>
+            <li><a class="nav-bar-item" href="#"> Solutions </a></li>
+            <li><a class="nav-bar-item" href="#"> Resources </a></li>
+            <li><a class="nav-bar-item" href="#"> Docs </a></li>
+            <li><a class="nav-bar-item" href="#"> Support </a></li>
           </ul>
         </nav>
       </div>
+      <div class="nav-lower">
+        <div>
+          <img class="npm-logo" src="images/npm-logo.png" alt="npm logo" /> 
+        </div>
+        <div class="middle">
+          <form class="searchform" action="#">
+            <img
+              class="magnifying-glass"
+              src="images/magnifying-glass.png"
+              alt="magnifying glass"
+            />
+            <input type="text" placeholder="Search packages.." id="search" />
+            <button id="submit-button" type="submit">Search</button>
+          </form>
+        </div>
 
-      <div id="logo">
-        <img class="npm-logo" src="images/npm-logo.png" alt="npm logo" />
-      </div>
-      <div>
-        <img
-          class="magnifying-glass"
-          src="images/magnifying-glass.png"
-          alt="magnifying glass"
-        />
-        <form class="form">
-          <input placeholder="Search packages" />
-          <button>Search</button>
-        </form>
-        <a href="#"> Join </a>
-        <a href="#"> Log In </a>
+     
+
+        <div class="buttons">
+          <a id="join-button" href="#"> Join </a>
+          <a id="login-button" href="#"> Log In </a>
+        </div>
       </div>
     </header>
-    <section id="First">
+
+    <section id="first">
       <h1>Build amazing things</h1>
       <article>
-        Essential JavaScript development tools that help you go to market faster
-        and build powerful applications using modern open source code.
+          Essential JavaScript development tools that help you go to market
+          faster and build powerful applications using modern open source code.
       </article>
-      <div id="First section links">
-        <a href="#">See Plans</a>
-        <a href="#">Join for free</a>
+      <div class="first-section-links">
+        <a target="_blank" id="see-plans-button" href="#">See Plans</a>
+        <a target="_blank" id="join-for-free" href="#">Join for free</a>
       </div>
     </section>
 
-    <section id="Second">
+    <section id="second">
       <img
         class="triangle-hexagon"
         src="images/triangle-hexagon.svg"
@@ -67,17 +74,19 @@
       />
       <h2>Bring the best of open source to your company</h2>
       <article>
-        npm is the tool used by over 11,000,000 JavaScript developers around the
-        world. Your developers already use it. Your company depends on it.
-        Create an Org and get more out of the tools your team already knows and
-        loves.
+        <p>
+          npm is the tool used by over 11,000,000 JavaScript developers around
+          the world. Your developers already use it. Your company depends on it.
+          Create an Org and get more out of the tools your team already knows
+          and loves.
+        </p>
       </article>
     </section>
 
-    <section id="Third">
-      <div>
+    <section id="third">
+      <div class="third-div">
         <img
-          class="zero-configuration"
+          class="section-icon"
           src="images/zero-configuration.svg"
           alt="zero configuration"
         />
@@ -87,9 +96,9 @@
           configure, set up, or manage.
         </p>
       </div>
-      <div>
+      <div class="third-div">
         <img
-          class="team-management"
+          class="section-icon"
           src="images/team-management.svg"
           alt="team management"
         />
@@ -99,9 +108,9 @@
           using straightforward team management capabilities.
         </p>
       </div>
-      <div>
+      <div class="third-div">
         <img
-          class="familiar-features"
+          class="section-icon"
           src="images/familiar-features.svg"
           alt="familiar features"
         />
@@ -111,15 +120,19 @@
           your developers already use.
         </p>
       </div>
-      <div>
-        <img class="npm-audit" src="images/npm-audit.svg" alt="npm audit" />
+      <div class="third-div">
+        <img class="section-icon" src="images/npm-audit.svg" alt="npm audit" />
         <h3>npm audit</h3>
         <p>
           Enjoy the security auditing features built into the npm client, a
           zero-friction way to make open source software safer.
         </p>
-        <a href="#">Create an Org</a>
       </div>
+      
     </section>
+    <div>
+      <button id="create-an-org-button">Create an Org</button>
+      </div>
+    </div>
   </body>
 </html>
