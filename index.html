@@ -24,35 +24,39 @@
           </nav>
         </div>
       
-        <div>
+        <div class="search-div">
           <!-- add logo, search bar and buttons (or links and style them as buttons later) -->
           <img class="logo" src="./images/npm-logo.png" alt="npm Logo" />
-          <form id="searchbar" class="search" method="get" action="/search">
-            <img class="magnifier" src="./images/magnifying-glass.png" alt="magnifying glass" />
-            <input type="search" placeholder="Search packages">
+          <form class="search-wrapper" method="get" action="/search">
+            <img src="./images/magnifying-glass.png" alt="magnifying glass" />
+            <label for="search" ></label>
+            <input type="search"  placeholder="Search packages">
             <button type="submit" form="searchbar" value="search">Search</button>
           </form>
-          
-          <div>
+         
+        <div class="buttons">
             <ul>
-                <li>Join</li>
-                <li>Login</li>
+                <li><a id="join" href="#"> Join</a></li>
+                <li><a id="login" href="#"> Login</a></li>
             </ul>
-          </div>
         </div>
+      </div> 
       </header>
 
       <section id="section-top">
         <h1>Build amazing things</h1>
         <article>
-            <p  >Essential JavaScript development tools that help you go to market faster and build powerful applications using modern open source code.</p>
+            <h2  >Essential JavaScript development tools that help you go to market faster and build powerful applications using modern open source code.</h2>
         </article>
-        <div>
-            <p >See plans</p>
-            <p >Join for free</p>
+        <div >
+          <ul class="ul-plans">
+            <li><a id="plans" href="#">See plans</a></li>
+            <li><a id="join-free" href="#">Join for free</a></li>
+          </ul>
         </div>
       </section>
       <section id="section-middle">
+        <img class="diamond" src="./images/triangle-hexagon.svg" alt="diamond" />
         <h2>Bring the best of open source to your company</h2>
         <article>
             <p>npm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it.
@@ -82,3 +86,5 @@
         </div>
         <p>Create an Org</p>
       </section>
+
+</body>
