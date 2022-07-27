@@ -20,6 +20,7 @@ header > div {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-weight: bold;
   }
   
   nav a {
@@ -72,6 +73,8 @@ header > div {
         width: 1400px;
         margin-top: 20px;
         border-style: none;
+        font-family:monospace ;
+        font-size: 15px;
        }
             
         #button{
@@ -109,7 +112,7 @@ header > div {
     }
 
     #General-information p{
-    text-align: center;
+    
     font-size:x-large;
     margin-top: 50px;
     }
@@ -118,42 +121,58 @@ header > div {
     text-align: center;
     align-content: space-between;
     margin-top: 70px;
+    padding: 50px 0;
     }
 
-  #art{
+    #art{
+    text-align: center;
+    font-size:large;
+    margin-bottom: 50px;
     
-  }
-
-    .link-btn{
-    background-color: #CB3837;
-    color: white;
-    font-size: 2em;
-    letter-spacing: 0.5px;
-    text-align: center;
-    text-decoration: none;
-    display: block;
-    width: 200px;
-    padding: 7px 10px 7px 10px;
-    flex-direction: column;
-    margin: auto;
+    
     }
 
-    .link-btn2{
-    color: black;
-    font-size: 2em;
-    letter-spacing: 0.5px;
-    text-align: center;
-    text-decoration: none;
-    display: block;
-    width: 200px;
-    padding: 14px 20px;
-    flex-direction: column;
-    margin: auto;
+    #links{
+      font-size: 2em;
+      font-weight: 100;
+      text-align: center;
+      display: flex;
+      justify-content: space-evenly;
     }
+
+    #links .plan{
+      background-color: #fb3e44;
+      color: white;
+      font-size: 15px;
+      letter-spacing: 0.5px;
+      text-align: center;
+      border: none;
+      height: 40px;
+      margin: 5px;
+      width: 180px;
+      box-shadow: 8px 8px 0 rgba(251, 59, 73, .2);
+      font-weight: 900;
+      }
+
+      #links .free{
+        font-weight: bold;
+        font-size: 18px;
+        letter-spacing: 0.5px;
+        text-align: center;
+        border: none;
+        height: 40px;
+        margin: 5px;
+        width: 180px;
+        background-color: white;
+       
+      }
+
+
+    
 
 
     #Description{
-    width: 600px;
+    width: 800px;
     margin:auto;
     text-align: center;
     align-content: space-between;
@@ -164,168 +183,81 @@ header > div {
     height:"250px";
     align-items: center;
     margin-top: 170px;
+    margin-bottom: 40px;
     }
 
     #Description h1{
         background-color: rgba(255, 204, 53);
         transform: skew(9deg,0deg);
         font-style: italic;
-        margin: auto;
+        margin: 0px 0px 30px 0px;
+        
         
     }
 
     #Benefits{
-    width: 600px;
+    width: 783px;
     margin:auto;
     text-align: center;
     align-content: space-between;
-    margin-bottom: 10px;
+    margin-top: 10px;
     }
 
- */
-
-
-        
-    
-
-  /* #Searcher{
-    padding: 0 25px;
-    display: flex;
-    justify-content:flex-start;
-    align-items: center;
-    border-bottom: 5px solid  lightgray;
-  }
-
-  #Search .search-line{
-    width:600px;
-    border: none;
-    margin-left: 12px;
-    position: relative;
-    bottom: 5px; 
-  
-    
-  
-
-  .npm{
-    width: 80px;
-    margin-right: 1rem;
-  }
-
-    .glass{
-    width:  15px;
-    height: 15px;
-    
-
-  }
-
-  #Searcher .Search-botton{
-    color: white;
-    background-color: #fb3e44;
-    margin-right: 10px;
-    width: 70px;
-    height: 35px;
-    
-  }
-
-  
-
-    
-   
-   
-   
-
-    .access-join{
-    width: 50px;
-    height: 20px;
-    }
-
-    .access-log-in{
-    border: none;    
-    width: 50px;
-    height: 20px;
-    }  
-
-    #General-information{
-    width: 600px;
-    margin:auto;
-    }
-
-    #General-information h1{
-    text-align: center;
-    margin: 70px 10px 40px 10px;
-    font-size: 40px;
-    font-weight:900
-    }
-
-    #General-information p{
-    text-align: center;
-    font-size:x-large;
-    margin-top: 50px;
-    }
-
-    #General-information a{
-    text-align: center;
-    align-content: space-between;
-    margin-top: 70px;
-    
-    }
-
-    .link-btn{
-    background-color: #CB3837;
-    color: white;
-    font-size: 2em;
-    letter-spacing: 0.5px;
-    text-align: center;
-    text-decoration: none;
-    display: block;
-    width: 200px;
-    padding: 7px 10px 7px 10px;
-    flex-direction: column;
-    margin: auto;
-    }
-
-    .link-btn2{
-    color: black;
-    font-size: 2em;
-    letter-spacing: 0.5px;
-    text-align: center;
-    text-decoration: none;
-    display: block;
-    width: 200px;
-    padding: 14px 20px;
-    flex-direction: column;
-    margin: auto;
-    }
-
-
-    #Description{
-    width: 600px;
+    #last-section{
+    width: 1500px;
     margin:auto;
     text-align: center;
     align-content: space-between;
     }
 
-    .hexagons{
-    width:"100%"; 
-    height:"250px";
-    align-items: center;
-    margin-top: 170px;
+    #container{
+      display: flex;
+      justify-content:center;
+      margin-top: 120px;
+      align-items: center;
     }
 
-    #Description h1{
-        background-color: rgba(255, 204, 53);
-        transform: skew(9deg,0deg);
-        font-style: italic;
-        margin: auto;
-        
+    #container article{
+      margin:  50px;
+    }
+    
+
+    #container p{
+      text-align:left;
     }
 
-    #Benefits{
-    width: 600px;
-    margin:auto;
-    text-align: center;
-    align-content: space-between;
-    margin-bottom: 10px;
+    #container h2{
+      color:#fb3e44;
+      text-align: left;
     }
 
- */
+
+    #last-section img{
+      width: 80px;
+      text-align: left;
+      
+
+    }
+
+    #container .text{
+      text-align: left;
+    }
+
+    #Org{
+      display: flex;
+      justify-content: center;
+    }
+
+    #Org .button-org{
+      background-color:black;
+      color: white;
+      font-size: 15px;
+      letter-spacing: 0.5px;
+      text-align: center;
+      border: none;
+      height: 45px;
+      margin: 5px;
+      width: 300px;
+      box-shadow: 8px 8px 0 rgba(128 , 83, 35, .2);
+      font-weight: 900;
+    }
