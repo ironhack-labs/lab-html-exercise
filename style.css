@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body {
+  font-family: 'Poppins';
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+header > div {
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+  }
+  
+  nav {
+    width: 600px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .blackHeart {
+    width: 20px;
+    margin-right: 1rem;
+  }
+
+#section1 {
+    background-color: rgba(232,217,217,.3);
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#section2 {
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#section3 {
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    text-decoration: none;
+    margin-top: -250px;
+}
+
+
+.logo-content {
+    padding: 0 25px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.npmLogo {
+    width: 50px;
+    margin-right: 1rem;
+}
+
+.magniGlass {
+    max-height: 20px;
+}
+
+
+.nav-bar-ul {
+    width: 160px;
+}
+
+.nav-join {
+    border: 1px solid black;
+    border-spacing: 15px;
+    width: 50px;
+    text-align: center;
+}
+
+
+.search-container {
+    display: flex;
+    flex-direction: row;
+    padding-right: 100px;
+    width: 1000px;
+    
+}
+
+.example {
+    display: flex;
+    flex-direction: row;
+    padding-right: 100px;
+    width: 1000px;
+    align-items: center;
+}
+
+#search {
+    background-color: whitesmoke;
+    background-image: url(images/magnifying-glass.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 20px;
+    border: none;
+    padding: 12px 20px 12px 40px;
+    margin-bottom: 12px;
+    width: 100%;
+}
+
+form.example button {
+    float: left;
+    width: 70px;
+    padding: 10px;
+    background: #FB3B49;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+
+.login-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.section1-body {
+    margin: 0 200px;
+}
+
+.section2-body {
+    margin: 0 200px;
+}
+
+.section3-body {
+    margin: 0 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 5em;
+    font-weight: bold;
+    text-align: center;
+}
+
+/*h3 {
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.3em;
+    color: black;
+    font-style: italic;
+}*/
+
+.section2h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.h3text {
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.3em;
+    color: black;
+    font-style: italic;
+}
+
+.h3bg {
+    /*background-color: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);*/
+    content: " ";
+    width: 900px;
+    height: 80px;
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+    position:relative;
+    bottom:100px;
+    left:10px;
+    margin-bottom: -100px;
+}
+
+article {
+    font-size: 1.5em;
+    line-height: 1.5em;
+    text-align: center;
+}
+
+.articleH3 p {
+    font-size: 1em;
+    line-height: 1.3em;
+    text-align: center;
+}
+
+.button {
+    text-align: center;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding: 24px 0;
+}
+
+.button1 {
+    padding: 0 1em 1em 0;
+}
+
+.button2 {
+    padding: 0 0 1em 1em;
+}
+
+.button-plans {
+    background-color: #FB3B49;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+    border: none;
+    font-size: 1.5em;
+    padding: 15px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    color: white;
+}
+
+.button-join {
+    background-color: white;
+    border: none;
+    border: none;
+    font-size: 1.5em;
+    padding: 15px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+}
+
+
+.triangleHexagon {
+    display: block;
+    max-width: 20%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.services {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        align-content: flex-start;
+        padding: 15px;
+        padding-bottom: 30px;
+  }
+
+.services img {
+    display: block;
+    max-height: 50px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.services h4 {
+    font-size: 1.3em;
+    color: #ED1C24;
+}
+
+.services p {
+    font-size: 1em;
+    align-items: flex-start;
+}
+
+/*
+.service-box {
+    font-size: 1.7em;
+    text-align: center;
+}
+
+.services p {
+    font-size: 1em;
+    text-align: center;
+}
+
+.service-box img {
+    max-width: 125px;
+}
+
+#section3 > div {
+display: flex;
+justify-content: space-between;
+flex-direction: row;
+flex-wrap: wrap;
+}
+*/
+
+.link-button {
+    background-color: black;
+    color: white;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    width: 300px;
+    text-align: center;
+    margin-top: 50px;
+}
