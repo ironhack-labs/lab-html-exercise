@@ -9,7 +9,7 @@ header > div {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid lightgray;
+    /* border-bottom: 1px solid lightgray; */
   }
   
   nav {
@@ -34,35 +34,50 @@ header > div {
   }
 
   #Searcher{
-    margin-top: 15px;
-    margin-bottom: 15px;
+    padding: 0 25px;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    border-bottom: 5px solid  lightgray;
   }
 
-  .npm-logo{
+  #Search .search-line{
+    width:600px;
+    border: none;
+    margin-left: 12px;
+    /* position: relative;
+    bottom: 5px; */
+  
+    
+  }
+
+  .npm{
     width: 80px;
     margin-right: 1rem;
   }
 
-  .glass{
-    width: 15px;
+    .glass{
+    width:  15px;
     height: 15px;
-    overflow: hidden;
+    
+
   }
 
-    #search img{
-    margin:5px;    
-    }
-
-    #button{
+  #Searcher .Search-botton{
     color: white;
     background-color: #fb3e44;
-    border: none;
-    }  
+    margin-right: 10px;
+    width: 70px;
+    height: 35px;
+    
+  }
 
-    #search-line{
-    height: 25px;
-    padding-left: 10px;
-    }
+  
+
+    
+   
+   
+   
 
     .access-join{
     width: 50px;
@@ -82,7 +97,7 @@ header > div {
 
     #General-information h1{
     text-align: center;
-    margin: 20px;
+    margin: 70px 10px 40px 10px;
     font-size: 40px;
     font-weight:900
     }
@@ -97,6 +112,7 @@ header > div {
     text-align: center;
     align-content: space-between;
     margin-top: 70px;
+    
     }
 
     .link-btn{
@@ -144,4 +160,18 @@ header > div {
     #Description h1{
         background-color: rgba(255, 204, 53);
         transform: skew(9deg,0deg);
+        font-style: italic;
+        margin: auto;
+        
     }
+
+    #Benefits{
+    width: 600px;
+    margin:auto;
+    text-align: center;
+    align-content: space-between;
+    margin-bottom: 10px;
+    }
+
+
+    
