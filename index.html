@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="stylesheet" href="/style.css">
+    <title>NPM</title>
 </head>
+
 <body>
     <header>
         <div>
@@ -26,72 +27,54 @@
           </nav>
         </div>
       
-        <div id="npm">
+            <div class="General-Header">
+            <img class="npm-logo" src="/images/npm-logo.png" alt="npm-logo" />
             
-              <img class="npm" src="/images/npm-logo.png" alt="black heart" />
-              <img class="glass" src="/images/magnifying-glass.png" alt="magnifying-glass" />
-              <form action="search" method="get" id="Search">
-              <label for="search"></label>
-            <input type="text" name="search" placeholder="Search Packages" class="search-line">
-            
-            <nav>
-              <ul>
-                <li><a href="#"> npm Enterprise </a></li>
-                <li><a href="#"> Products </a></li>
-                <li><a href="#"> Solutions </a></li>
-                <li><a href="#"> Resources </a></li>
-                <li><a href="#"> Docs </a></li>
-                <li><a href="#"> Support </a></li>
-              </ul>
-            </nav>
-          </div>
+                <div class="line-search">
+                <form id="search" action="search" method="get" >
+                <label for="search"></label>
+                <img class="magnifying-glass" src="/images/magnifying-glass.png" alt="magnifying-glass" />
+                <input type="text" id="long-line" placeholder="Search packages">
+                <input type="submit" value="Search" id="button">
+                
+                </form>
+                </div>
 
+              
+                    
+                    <a href="#"><input type="submit" value="Join" class="Join"></a>
+                     <a href=""> <input type="submit" value="Log in" class="log-in"> </a> 
+               
+                    
+                
+        </div>
+      </header>
 
-
-
-
-
-
-
-
-
-
-            
-            <section id="General-information">
+         <section id="General-information">
                 
                 <h1> 
                 Build amazing things
                 </h1>
-                <article> 
+                <article id="art"> 
                 Essential JavaScript development tools that help you go to market faster and buil a poweful applications using modern open source code.
                 </article>
 
                 <div>
-                <a href='#' class="link-btn">See plans</a>
-                <a href='#' class="link-btn2">Join for free</a>
+                    <input type="submit" value="See plans">
+                    <input type="submit" value="Join for free"> 
+                    
                 </div>
 
             </section>
 
-            <section id="Description">
+                <section id="Description">
                 <img src="/images/triangle-hexagon.svg" alt="hexagon"  width="100%" height="250px" class="hexagons">
-                <h1>Bring the best of open source to your company</h1>
+                <h1 id="Company">Bring the best of open source to your company</h1>
                 <article>
                     npm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it. Create and Org and get more out of the tools your team already knows and loves.                    
                 </article>
             </section>
 
-            
-            
-            
-            
-            
-            
-        
-            
-
-        </div>
-      
     
 </body>
 </html>
