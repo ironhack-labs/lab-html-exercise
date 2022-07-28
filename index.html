@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf">
-        <title>npm</title>
+        <title>NPM Clone</title>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
@@ -27,24 +27,17 @@
 
             <div class="lower">
                 <!--add logo, search bar and buttons (or links and style them as buttons later) -->
-                <div id="logo">
-                    <img class="npmLogo" src="images/npm-logo.png" alt="npm logo">
-                </div>
-                <div class="search-container">
-                    <div>
-                        <img class="magGlass" src="images/magnifying-glass.png" alt="magnifying glass">
+                <img class="npmLogo" src="images/npm-logo.png" alt="npm logo">               
+                <form id="search" action="/search" method="GET">
+                    <label><img src="images/magnifying-glass.png" alt="magnifying glass"></label>
+                    <input type="search" id="query" placeholder="Search packages"/>
+                    <button type="submit"> Search </button>                    
+                </form>
+                <div class="first-link-div">
+                    <div class="first-links">
+                        <a href="#" id="join"> Join </a>
+                        <a href="#" id="log-in"> Log in </a>
                     </div>
-                    <div>
-                        <form class="form" action="/" method="get">
-                            <label for="search"></label>
-                            <input type="search" id="query" placeholder="Search packages"/>
-                            <button> Search </button>                    
-                        </form>
-                    </div>
-                </div>
-                <div class="links-one">
-                    <a href="#"> Join </a>
-                    <a href="#"> Log in </a>
                 </div>
             </div>
         </header>
@@ -56,9 +49,9 @@
                 <p> Essential JavaScript development tools that help you go to market faster and build powerful applications using
                 modern open source code. </p>
             </article>    
-            <div class="links-two">
-                <button><a href="#" id="see-plans"> See plans </a></button>
-                <a href="#"> Join for free </a>
+            <div class="second-links">
+                <a href="#" class="see-plans"> See plans </a>
+                <a href="#" class="join-for-free"> Join for free </a>
             </div>
         </section>
 
@@ -101,7 +94,7 @@
                 </div>
             </div>
             <div id="button">
-                <button><a href="#"> Create an Org </a></button>
+            <a class="createOrg" href="#"> Create an Org </a>
             </div>
         </section>
     </body>

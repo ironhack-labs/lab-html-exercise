@@ -37,46 +37,121 @@ nav a {
 
 /*the header lower div*/
 
-.search-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid lightgray;
-    background-color: lightgray;
-    width: 600px;
-}
-
-.form label, input {
-    color: rgba(0, 0, 0, .05);
-    background-color: lightgray;
-}
-
-.form input {
-    border: none;
-}
-
-.form button {
-    background-color: #fb3e44;
-    color: white;
-    border: 1px solid lightgray;
-}
-
-.lower {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-}
-
 .npmLogo {
     width: 60px;
     margin-left: 20px;
 }
 
-.magGlass {
-    width: 15px;
-    margin-left: 20px;
+form {
+    display: flex;
+    align-items: center;
+    border-color: rgba(0, 0, 0, .1);
+    border-style: none;
+    border-width: 0;
+    padding: 0;
+    background-color: transparent;
+    position: relative;
+    width: 100%;
+}
+
+form label {
+    color: rgba(0, 0, 0, .05);
+    position: relative;
+    left: 30px;
+    width: 10%;
+}
+
+form input {
+    color: rgba(0, 0, 0, .05);
+    border: none;
+    background-color: rgb(236, 236, 236);
+    padding-left: 40px;
+    margin: 5px 0;
+    width: 100%;
+    font-size: 16px;
+    letter-spacing: 0px;
+    height: 40px;
+}
+
+form button {
+    background-color: #fb3e44;
+    color: white;
+    border: none;
+    text-transform: none;
+    line-height: 1.15;
+    margin: 0;
+    padding: 8px 32px;
+    letter-spacing: 0.3px; 
+    font-weight: bold;
+    font-size: .875rem;
+    height: 40px;
+    width: 110px; 
+}
+
+form img {
+    width: 18px;
+    height: 18px;
+    color: #000;
     display: flex;
     justify-content: center;
+    line-height: 1.15;
+}
+
+.lower {
+    display: flex;
+    padding: 10px 0;
+    height: 68px;
+    width: 909px;
+    border: 1px 0 0 0;
+    flex-grow: 1;
+}
+
+.first-link-div {
+    flex-grow: 0;
+    margin-top: 0;
+    padding: 8px 0;
+    order: 2;
+    white-space: nowrap;
+    text-align: right;
+    margin-left: 1rem;
+    position: relative;
+    font-weight: 600;
+    flex: 1 1 auto;
+    min-width: 0;
+    min-height: 0;
+    display: flex;
+}
+
+.first-links {
+    padding-left: 1rem;
+    display: flex;
+    align-self: center;
+    align-items: center;
+}
+
+#join {
+    padding: 13px 28px;
+    border: 1px solid #cccccc;
+    border-radius: 0;
+    font-size: .875rem;
+    text-decoration: none;
+    margin: 10px 60px;
+    color: #000;
+    line-height: 1.5;
+    font-weight: 500;
+    background-color: transparent;
+    
+}
+
+#log-in {
+    margin-right: 1rem;
+    font-size: .875rem;
+    text-decoration: none;
+    padding: 0.25rem;
+    color: #000;
+    line-height: 1.5;
+    font-weight: 500;
+    border-radius: 0.25rem;;
 }
 
 /*section 1*/
@@ -91,8 +166,8 @@ nav a {
 }
 
 #section-one h1 {
-    font-size: 50px;
-    margin-bottom: 0;
+    font-size: 90px;
+    text-align: center;
 }
 
 #section-one p {
@@ -100,11 +175,26 @@ nav a {
     text-align: center;
 }
 
-.links-two #see-plans {
+.second-links {
+    display: flex;
+    align-items: center;
+}
+
+.see-plans {
     background-color: #fb3b49;
     color: white;
     box-shadow: 8px 8px 0 rgba(251, 59, 73, .2);
+    padding: 0.8rem 3.5rem;
+    margin-right: 2rem;
+    text-decoration: none;
+}
 
+.join-for-free {
+    text-decoration: none;
+    color: black;
+    margin-left: 10px;
+    background-color: white;
+    padding: 0.8rem 3.5rem;
 }
 
 /*section 2*/
@@ -117,7 +207,7 @@ nav a {
     background-color: rgba(255, 204, 53, .4);
     transform: skew(9deg, 0deg);
     font-style: italic;
-    margin: 10px;
+    margin: 40px;
 }
 
 #section-two {
@@ -125,11 +215,11 @@ nav a {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 10px;
+    margin: 30px;
 }
 
 #section-two img {
-    width: 100px;
+    width: 150px;
 }
 
 #section-two p {
@@ -151,14 +241,6 @@ nav a {
     color: #ED1C24;
 }
 
-#section-three button {
-    box-shadow: 8px 8px 0 rgba(128, 83, 35, .2);
-    color: white;
-    background-color: black;
-    display: flex;
-    justify-content: center;
-}
-
 #section-three img {
     width: 25px;
 }
@@ -174,3 +256,13 @@ nav a {
     padding: 30px;
 }
 
+#section-three .createOrg {
+    box-shadow: 8px 8px 0 rgba(128, 83, 35, .2);
+    color: white;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    padding: 10px 80px;
+    font-weight: bold;
+}
