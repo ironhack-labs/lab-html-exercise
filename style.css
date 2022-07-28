@@ -44,10 +44,10 @@ header > div {
     }
 
         .npm-logo{
-        width: 70px;
+        width: 80px;
         padding-left:0;
-        padding-right:0;
-        margin-top:1rem;
+        padding: right 20px;;
+        margin-top:0rem;
         margin-right: 2rem;
         min-width: 0;
         min-height: 0;
@@ -67,41 +67,77 @@ header > div {
             height: 17px;
             width: 17px;
             margin-top: 5px;
+            position: relative;
+            bottom: 15px;
         }
+
     
        #long-line{
-        width: 1400px;
+        width: 1402px;
         margin-top: 20px;
         border-style: none;
         font-family:monospace ;
         font-size: 15px;
+        background-color:rgba(191, 191, 191,1);
+        height: 48px;
+        position: relative;
+        bottom: 20px;
+        left: 5px;
        }
             
         #button{
             background-color: #fb3e44;
-            width: auto;
-            height: 40px;
+            width: 120px;
+            height: 53px;
             color: white;
             border: none;
+            position: relative;
+            right: 4px;
+            bottom: 21px;
+            border-radius: 5px;
         }    
             
+
+        #access-button{
+          display: flex;
+          justify-content: space-between;
+          height: 45px;
+         
+        }
        
 
-            #access .join{
+                #access .Join{
                 position: relative;
                 left: 70px;
-                height: 50px;
-            }
+                
+                }
 
-            #access .log-in{
+                #access .log-in{
                 position: relative;
                 left: 30px;
-            }
+                
+                }
 
+
+    
             
     #General-information{
-    width: 600px;
-    margin:auto;
+      background-color:rgba(232,217,217);
+      display: flex;
+      height: 400px;
+      padding: 0 25px;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+ 
+ 
+      
+      
+    }
+
+    #General-information .Background-color{
+      background-color:rgba(232,217,217,.3) ;
+      margin: none;
     }
 
     #General-information h1{
@@ -114,7 +150,8 @@ header > div {
     #General-information p{
     
     font-size:x-large;
-    margin-top: 50px;
+    margin-top: 30px;
+    width: 650px;
     }
 
     #General-information a{
@@ -127,7 +164,7 @@ header > div {
     #art{
     text-align: center;
     font-size:large;
-    margin-bottom: 50px;
+    margin-bottom: 0px;
     
     
     }
@@ -138,6 +175,7 @@ header > div {
       text-align: center;
       display: flex;
       justify-content: space-evenly;
+      width: 550px;
     }
 
     #links .plan{
@@ -182,8 +220,8 @@ header > div {
     width:"100%"; 
     height:"250px";
     align-items: center;
-    margin-top: 170px;
-    margin-bottom: 40px;
+    margin-top: 60px;
+    margin-bottom: 50px;
     }
 
     #Description h1{
@@ -213,7 +251,7 @@ header > div {
     #container{
       display: flex;
       justify-content:center;
-      margin-top: 120px;
+      margin-top: 80px;
       align-items: center;
     }
 
@@ -232,9 +270,11 @@ header > div {
     }
 
 
-    #last-section img{
+    #last-section .icon{
       width: 80px;
       text-align: left;
+      position: relative;
+      right:80px ;
       
 
     }
@@ -260,4 +300,5 @@ header > div {
       width: 300px;
       box-shadow: 8px 8px 0 rgba(128 , 83, 35, .2);
       font-weight: 900;
+      margin-top: 20px;
     }
