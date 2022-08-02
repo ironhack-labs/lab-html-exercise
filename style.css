@@ -93,10 +93,12 @@ nav a {
     margin: 0 5px;
     border: 1px solid black ;
     padding: 0 15px;
+    color: black;
  }
 
  .log-in{
     text-decoration: none;
+    color: black;
  }
 
  #build{
@@ -108,12 +110,13 @@ nav a {
  }
  #build h1{
     font-size: 3.5em;
+    font-weight: bolder;
     margin: 30px 0 0 0;
  }
 
  #build h4{
-    font-size: .75em;
-    width: 30%;
+    font-size: .9em;
+    width: 40%;
     text-align: center;
  }
 
@@ -141,4 +144,76 @@ nav a {
     color: black;
     padding: 10px 40px;
     font-weight: bolder;
+}
+
+.hexagon{
+    width: 20%;
+    margin-bottom: 30px;
+}
+
+#open-source{
+    margin: 80px 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+ #open-source h2{
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+    font-style: italic;
+ }
+
+ #open-source h5{
+    width: 60%;
+    text-align: center;
+ }
+
+#features{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0 30px;
+}
+
+ #features img{
+    width: 35px;
+    height: 35px;
+ }
+
+ #features div{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: flex-start;
+    margin: 0 20px ;
+    height: 240px;
+    width: 25%;
+ }
+
+#features h3{
+    font-size: 1em;
+    color: #ED1C24;
+}
+
+#features h6{
+    font-size: .85em;
+}
+
+.create-an-org{
+    display: flex;
+    justify-content: center;
+    margin: 60px 0;
+}
+
+.create-an-org a{
+    text-decoration: none;
+    border: 1px solid black ;
+    background-color: black;
+    color: white;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    font-weight: bolder;
+    padding: 15px 110px;
 }
