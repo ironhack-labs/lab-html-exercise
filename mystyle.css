@@ -9,6 +9,18 @@ h1 {
     margin: 0;
 }
 
+h2 {
+    font-size: 1.5em;
+    background-color: rgba(255,204,53,.4);
+    font-style: italic;
+    transform: skew(9deg,0deg);
+    padding: 0 25px;
+}
+
+h3 {
+    color: #ED1C24;
+}
+
 header > div {
     padding: 0 25px;
     display: flex;
@@ -54,21 +66,21 @@ nav a {
     justify-content: space-between;
     align-items: center;
     margin: 8px;
-    width: 600px;
+    width: 70%;
 }
 
-header input[type=text] {
+header input {
     background-color: rgba(0,0,0,.0);
-    float: right;
     padding: 6px;
     border: none;
-    margin-right: 10px;
     font-size: 14px;
-    width: 600px;
+    width: 100%;
     height: 20px;
+    display: flex;
+    justify-content:flex-start;
 }
 
-header button[type=button] {
+header button {
     background-color: #fb3e44;
     color: white;
     border: none;
@@ -112,11 +124,10 @@ header button[type=button] {
 #sect1 div {
     width: 400px;
     text-align: center;
-    font-size: 1.3em;
+    font-size: 1em;
     padding-top: 50px;
     display: flex;
     justify-content: space-between;
-    font-size: 18px;
 }
 
 #btn-see-plans {
@@ -140,4 +151,62 @@ header button[type=button] {
     display: flex;
     align-items: center;
     justify-content: center; 
+}
+
+#sect2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+}
+
+.triangle-hexagon {
+    width: 200px;
+    margin-bottom: 50px;
+}
+
+#sect2 article {
+    width: 500px;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+#sect3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 600px;
+}
+
+#sect3 > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 30px;
+    width: 1100px;
+}
+
+#sect3 div {
+    padding: 30px;
+}
+
+.icons {
+    width: 40px;
+}
+
+#sect3 a {
+    background-color:black;
+    text-decoration: none;
+    color: white;
+    width: 300px;
+    height: 50px;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#sect3 p {
+    font-size: 0.8em;
 }
