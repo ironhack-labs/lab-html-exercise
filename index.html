@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="mystyle.css">
-    <title>npm clone</title>
+    <title>NPM Clone</title>
 </head>
 <body>
     <header>
@@ -28,14 +28,14 @@
       
         <div>
             <img class='npm-logo' src="images/npm-logo.png" alt="npm logo">
-            <img class='magnifying-glass' src="images/magnifying-glass.png" alt="magnifying-glass">
-            <form>
+            <form class="search">
+                <img class='magnifying-glass' src="images/magnifying-glass.png" alt="magnifying-glass">
                 <input type="text" class="search-bar" placeholder="Search packages">
-                <button type='submit' class="search-bar">Search</button>
+                <button type='button' class="search-bar">Search</button>
             </form>
             <div>        
-                <a href="#">Join</a>
-                <a href="#">Log in</a>
+                <a id="search-nav-join" href="#">Join</a>
+                <a id="search-nav-log-in" href="#">Log in</a>
             </div>
         </div>
       </header>
@@ -45,8 +45,8 @@
             Essential JavaScript development tools that help you go to market faster and build powerful applications using modern open source code.
         </article>
         <div>
-            <a href="#">See Plans</a>
-            <a href="#">Join for free</a>
+            <a id='btn-see-plans' href="#">See Plans</a>
+            <a id='btn-join-for-free'href="#">Join for free</a>
         </div>
       </section>
       <section id="sect2">
