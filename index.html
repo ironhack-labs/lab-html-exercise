@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <header class="header">
@@ -19,35 +19,36 @@
                 <li><a href="#">Support</a></li>
             </ul>
         </nav>
+        
     </div>
-    <div>
-        <img src="images/npm-logo.png" alt="NPM logo">
+    <div class="shadow">
+        <img src="images/npm-logo.png" alt="NPM logo" class="npmLogo">
         <form action="" method="post" class="search-bar">
-            <img src="images/magnifying-glass.png" alt="">
+            <img src="images/magnifying-glass.png" alt="magnifying-glass" class="magnifying-glass"> 
             <input type="text" placeholder="Search Packages">
-            <input type="submit" value="Search">
+            <button type="submit">Search</button>
         </form>
         <div class="log">
-            <a href="#">Join</a>
+            <a href="#" class="join">Join</a>
             <a href="#">Log in</a>
         </div>
     </div>
 </header>
 
-<section id="plans">
+<section id="plans" class="container">
     <h3>Build amazing things</h3>
     <article>
         <span>Essential JavaScript development tools that help you go to market faster and build powerful applications using
             modern open source code.</span>
     </article>
     <div>
-        <a href="#">See plans</a>
-        <a href="#">Join for free</a>
+        <a href="#" class="see-plans">See plans</a>
+        <a href="#" class="join-free">Join for free</a>
     </div>
 </section>
 
-<section id="general-informations">
-    <img src="images/triangle-hexagon.svg" alt="triangle hexagone">
+<section id="general-informations" class="container">
+    <img src="images/triangle-hexagon.svg" alt="triangle hexagone" class="triangle-hexagone">
     <h3>Bring the best of open source to your company</h3>
     <article>
         <span>npm is the tool used by
@@ -57,31 +58,32 @@
 </section>
 
 <section id="org-creation">
-    <div>
+    
+    <div class="features">
         <img src="images/zero-configuration.svg" alt="zero configuration">
         <h4>Zero configuration</h4>
         <span>Create an org, add
             your team, and start collaborating. Nothing to configure, set up, or manage.</span>
     </div>
-    <div>
+    <div class="features">
         <img src="images/team-management.svg" alt="team management">
         <h4>Team management</h4>
         <span>Control who has access to
             what modules within your team namespace using straightforward team management capabilities.</span>
     </div>
-    <div>
+    <div class="features">
         <img src="images/familiar-features.svg" alt="familiar features">
         <h4>Familiar features</h4>
         <span>npm Orgs
             has 100% parity with all the public npm registry features your developers already use.</span>
     </div>
-    <div>
+    <div class="features">
         <img src="images/npm-audit.svg" alt="npm audit">
         <h4>npm audit</h4>
         <span>Enjoy the security
             auditing features built into the npm client, a zero-friction way to make open source software safer.</span>
     </div>
-    <div>
+    <div class="org-box">
         <a href="#">Create an Org</a>
     </div>
 </section>
