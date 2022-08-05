@@ -7,8 +7,14 @@
 		<header>
 			<div>
 				<div>
-					<img src="./images/black-heart.png" alt="black-heart" />
+					<img
+						src="./images/black-heart.png"
+						alt="black-heart"
+						class="blackHeart"
+					/>
 					<span>Nifty Penguin Magic</span>
+				</div>
+				<div>
 					<nav>
 						<ul>
 							<li><a>npm Enterprise</a></li>
@@ -22,13 +28,18 @@
 				</div>
 			</div>
 			<div>
-				<img src="./images/npm-logo.png" alt="npm logo" />
-				<img src="./images/magnifying-glass.png" alt="magnifying-glass" />
-				<form action="/register" method="post">
-					<input type="text" />
+				<img src="./images/npm-logo.png" alt="npm logo" class="npmLogo" />
+				<form action="/register" method="post" class="searchForm">
+					<label for="search" class="labelMagnifyGlass"
+						><img
+							src="./images/magnifying-glass.png"
+							alt="magnifying-glass"
+							class="magnifyGlass"
+					/></label>
+					<input type="text" id="search" placeholder="Search packages" />
 					<button type="submit">Search</button>
-					<a href="#">Join</a><a href="#">Log In</a>
 				</form>
+				<a href="#" class="joinBtn">Join</a><a href="#" class="logInBtn">Log In</a>
 			</div>
 		</header>
 		<section id="section1">
