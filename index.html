@@ -2,13 +2,14 @@
 <html>
     <head>
         <title>NPM clone</title>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <header class="header">
             <div>
                 <div>
-                    <img class="blackheart"src="images/black-heart.png" alt="black heart">
-                    <span>Null Pointing Magic</span> <!--idk-->
+                    <img class="blackHeart" src="images/black-heart.png" alt="black heart">
+                    <span>Not Playing Minecraft</span> <!--idk-->
                 </div>
                 <nav class="navBar">
                     <ul>
@@ -22,18 +23,19 @@
                 </nav>
             </div>
     <!---------------------------------------------------------------------------------->
-            <div>
-                <img class="npmLogo"src="images/npm-logo.png" alt="npm logo">
-                <img class="magGlass" src="images/magnifying-glass.png" alt="search thing">
+            <div class="nav2">
+                <img class="npmLogo" src="images/npm-logo.png" alt="npm logo">
+                <!--<img class="magGlass" src="images/magnifying-glass.png" alt="search thing">-->
     
-                <form action="/some-url">
+                <form class="searchForm"action="/some-url">
                     <input type="text" id="searchBar" placeholder="Search packages">
+                    <button id="searchButton">Search</button>
                 </form>
-
-                <button id="searchButton">Search</button>
     
-                <a id="joinLogin" href="#">Join</a>
-                <a id="logIn"href="#">Log In</a>
+                <div>
+                    <a class="linkBttn" id="joinLogin" href="#">Join</a>
+                    <a class="linkBttn" id="logIn"href="#">Log In</a>
+                </div>
             </div>
         </header>
 
@@ -42,7 +44,7 @@
             <article>
                 <p>Essential JavaScript development tools that help you go to market faster and build powerful applications using modern open source code.</p>
             </article>
-            <div>
+            <div class="plansBttn">
                 <a id="seePlansLink" href="#">See plans</a>
                 <a id="joinLink" href="#">Join for free</a>
             </div>
@@ -77,7 +79,9 @@
                 <h3>npm audit</h3>
                 <p>Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer.</p>
             </div>
-            <a id="createOrg" href="#">Create an Org</a>
         </section>
+        <div class="createOrg">
+            <a id="createOrg" href="#">Create an Org</a>
+        </div>
     </body>
 </html>
