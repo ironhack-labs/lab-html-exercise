@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
     <body>
         <header>
             <div>
@@ -19,15 +22,15 @@
               </nav>
             </div>
           
-            <div>
+            <div class="sub-nav">
                 <img class="npm-logo" src="images\npm-logo.png" alt="Nifty Penguin Magic">
                 <form class="search-bar">
-                    <img class="search-logo" src="images\magnifying-glass.png" alt="Search package">
-                    <input type="text" id="search" name="search" placeholder="Search packages">
-                    <button>Search</button>
+                    <img id="search-logo" src="images\magnifying-glass.png" alt="Search package">
+                    <input type="text" id="searchBar" name="search" placeholder="Search packages">
+                    <button id="searchButton">Search</button>
                 </form>
-                <a href="">Join</a>
-                <a href="">Log in</a>
+                <a href="" id="joinButton">Join</a>
+                <a href="" id="logInButton">Log in</a>
               <!-- add logo, search bar and buttons (or links and style them as buttons later) -->
             </div>
           </header>
@@ -37,18 +40,19 @@
                 Essential JavaScript development tools that help you go to market faster and build powerful applications using modern open source code.
             </article>
             <div class="first-links">
-                <a href="" class="button-plans">See plans</a>
-                <a href="" class="join-for-free">Join for free</a>
+                <a href="" id="plansButton">See plans</a>
+                <a href="" id="joinForFreeButton">Join for free</a>
             </div>
           </section>
           <section id="second-section">
-            <img src="images\triangle-hexagon.svg" alt="Life is ups and downs">
+            <img id="polygon" src="images\triangle-hexagon.svg" alt="Life is ups and downs">
             <h2>Bring the best of open source to your company</h2>
             <article class="second-article">
                 npm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it. Create an Org and get more out of the tools your team already knows and loves.
             </article>
           </section>
           <section id="third-section">
+            <div id="sosDiv">
             <div class="mosaic">
                 <img src="images\zero-configuration.svg" alt="Zero configuration" class="article-logos">
                 <h4>Zero configuration</h4>
@@ -69,7 +73,8 @@
                 <h4>npm audit</h4>
                 <p>Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer.</p>
             </div>
-            <a href="">Create am Org</a>
+            </div>
+            <a href="" id="linkOrg">Create an Org</a>
           </section>
     </body>
 </html>
