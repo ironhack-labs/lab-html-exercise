@@ -2,7 +2,7 @@
 
 body {
   font-family: 'Poppins';
-  background-color: gray;
+  
 }
 
 header > div {
@@ -34,10 +34,181 @@ header > div {
     margin-right: 1rem;
   }
 
+  #searchBar {
+    display: flex;
+    align-items: center;
+  }
+
   .logo {
     width: 5rem;
   }
 
   .lupa {
-    width: 2rem;
+    width: 1rem;
+    background-color: rgba(0,0,0,.05);
+    
+  }
+
+  header > div > form {
+    display: flex;
+    align-items: center;
+    color:rgba(0,0,0,.05);
+    margin-left:10px ;
+  }
+
+  header > div > input {
+    color: rgba(0,0,0,.05);
+    padding: 1rem;
+    width: 20rem;
+  }
+
+  header button {
+    background-color: #fb3e44;
+    color: white;
+    padding: 1rem;
+    border: none;
+
+  }
+
+  .botonJoin {
+    padding: .5rem;
+    border: 1px solid gray;
+    width: 3rem;
+    text-align: center;
+  }
+
+  #intro {
+    display: flex;
+    justify-content: center;
+    height: 600px;
+    background-color: rgba(232,217,217,.3);
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  #intro > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+
+  }
+
+  #intro span {
+    display: flex;
+    align-items: center;
+    height: 8rem;
+    width: 27rem;
+    margin: 10px;
+  }
+
+  .contenedorBotones {
+    display: flex;
+    align-items: center;
+    height: 8rem;
+    width: 27rem;
+  }
+
+  #intro span {
+    width: 27rem;
+    text-align: center;
+  }
+
+  .botonSeePlans {
+    color: white;
+    font-weight: bold;
+    background-color: #FB3B49;
+    width: 13rem;
+    padding: 1rem;
+    text-align: center;
+    box-shadow:  8px 8px 0 rgba(251,59,73,.2);
+  }
+
+  .botonJoinForFree {
+    color: rgb(0,0,0);
+    font-weight: bold;
+    background-color: white;
+    padding: 1rem;
+    width: 13rem;
+    text-align: center;
+    
+  }
+
+  #central {
+    display: flex;
+    justify-content: center;
+    height: 400px;
+  }
+
+  #central article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .hexagono {
+    width: 11rem;
+  }
+
+  #central h2 {
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+  }
+
+  #central p {
+    font-size: 10px;
+    text-align: center;
+    width: 30rem;
+  }
+
+  #final {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 250px;
+  }
+
+  #footer {
+    width: 50rem;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .icono {
+    width: 30px;
+  }
+
+  #container {
+    display: flex;
+    flex-direction: column;
+    width: 161px;
+    height: 170px;
+  }
+
+  h3 {
+    color: #ED1C24;
+    font-size: small;
+    width: 160px;
+  }
+
+  #final p {
+    font-size: 10px;
+    width: 10rem;
+  }
+
+  .botonCreate {
+    height: 2.5rem;
+    width: 17rem;
+    padding: px;
+    background-color: black;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    color: white;
+    text-align: center;
+    font-size: small;
+    font-weight: bold;
   }
