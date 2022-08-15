@@ -2,7 +2,7 @@
 
 body {
   font-family: 'Poppins';
-  font-weight: 600;
+  box-sizing: border-box;
 }
 header > div {
     padding: 0 25px;
@@ -28,13 +28,14 @@ nav a {
   }
 
 .blackHeart {
-    width: 20px;
+    width: 35px;
     margin-right: 1rem;
   }
 
 .npmLogo {
-    width: 45px;
+    width: 55px;
     padding-right: 15px;
+    height: 20px;
   }
 .searchIcon {
     width: 15px;
@@ -45,7 +46,7 @@ body .searchBar {
    display: flex;
    justify-content: space-between;
    align-items: center;
-   height: 60px;
+   height: 80px;
    box-shadow: 0 3px 3px -2px gray;
    font-weight: normal;
   }
@@ -55,20 +56,20 @@ form .searchBarInput {
     border: 0 solid rgba(0,0,0,.05);
     border-radius: 3px;
     background-color: rgba(0,0,0,.05);
-    height: 25px;
-    padding: 5px;
+    height: 35px;
+    padding: 3px;
     justify-content: space-between;
     margin: 0 auto;
   }
   
 .searchIcon {
     position: absolute;
-    margin: 10px 5px auto;
+    margin: 13px 5px auto;
 }
 
 form button {
     background-color: #fb3e44;
-    height: 35px;
+    height: 40px;
     border: none;
     color: white;
     border-radius: 2px;
@@ -89,11 +90,7 @@ form button {
 header .join {
     border: 1px solid black;
     border-radius: 2px;
-    margin: 0 auto;
     padding: 5px 20px;
-}
-header .join {
-    margin: 15px;
 }
 
 #npmInfo {
@@ -118,6 +115,7 @@ div .plans {
     width: 40%;
     margin: 0 auto;
     font-weight: 600;
+    text-align: center;
 }
 
 #npmInfo div {
@@ -139,4 +137,76 @@ div .joinfree {
     font-weight: 900;
     font-size: larger;
     color: black;
+}
+#npmShare {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.hexagon {
+  width: 300px;
+  margin: 100px;
+}
+
+h2 {
+  background-color: rgba(255,204,53,.4);
+  width: 40%;
+  padding: 5px 0 0 35px;
+  align-items: center;
+  text-align: center;
+  transform: skew(9deg,0deg);
+  margin: 20px auto;
+  font-style: italic;
+}
+
+#npmShare p {
+  width: 630px;
+  align-items: center;
+  text-align: center;
+  margin: 10px 0 50px;
+}
+
+#npmBenefits {
+  display: flex;
+}
+
+#npmBenefits div {
+  display: flex;
+  width: 60%;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  margin: 100px auto;
+}
+
+#npmBenefits img {
+  width: 30px;
+}
+
+#npmBenefits h3 {
+  color: #ED1C24;
+
+  font-size: 10px;
+}
+
+#npmBenefits p {
+  font-size: 10px;
+}
+
+#npmBenefits div > div {
+  width: 150px;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: start;
+}
+
+#npmBenefits a {
+  text-decoration: none;
+  background-color: black;
+  box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+  color: white;
+  padding: 15px 100px;
 }
