@@ -9,10 +9,10 @@
 </head>
 <body>
     <header>
-        <div>
+        <div class="nav-container">
             <div>
                 <img src="/images/black-heart.png" alt="Nifty Penguin Magic Logo" class="blackHeart">
-                <span> Nifty Penguin Magic</span>
+                <span> Nifty Penguin Magic </span>
             </div>
             <nav>
                 <ul>
@@ -25,8 +25,7 @@
                 </ul>
             </nav>
         </div>
-        <div>
-            <!-- add logo, search bar and buttons (or links and style them as buttons later)  -->
+        <div class="search-container">
             <img src="images/npm-logo.png" alt="npm Logo">
             <form action="#">
                 <img src="/images/magnifying-glass.png" alt="magnifying-glass image">
@@ -37,7 +36,7 @@
             <a href="#"> Log In </a>
         </div>
     </header>
-    <section>
+    <section id="first-section">
         <h1> Build amazing things </h1>
         <article>
             <p>
@@ -45,10 +44,12 @@
                 modern open source code.
             </p>
         </article>
-        <button> See plans </button>
-        <button> Join for free </button>
+        <div>
+            <a href="#">See plans</a>
+            <a href="#">Join for free</a>
+        </div>
     </section>
-    <section>
+    <section id="second-section">
         <h2> Bring the best of open source to your company </h2>
         <article>
             <p>
@@ -57,32 +58,34 @@
             </p>
         </article>
     </section>
-    <section>
-        <article>
-            <h3> Zero configuration </h3>
-            <p> 
-                Create an org, add your team, and start collaborating. Nothing to configure, set up, or manage.
-            </p>
-        </article>
-        <article>
-            <h3> Team management </h3>
-            <p>
-                Control who has access to what modules within your team namespace using straightforward team management capabilities.
-            </p>
-        </article>
-        <article>
-            <h3> Familiar features </h3>
-            <p>
-                npm Orgs has 100% parity with all the public npm registry features your developers already use.
-            </p>
-        </article>
-        <article>
-            <h3> npm audit </h3>
-            <p>
-                Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer.
-            </p>
-        </article>
-        <button> Create an Org </button>
+    <section id="third-section">
+        <div class="box-container">
+            <div>
+                <h3> Zero configuration </h3>
+                <p>
+                    Create an org, add your team, and start collaborating. Nothing to configure, set up, or manage.
+                </p>
+            </div>
+            <div>
+                <h3> Team management </h3>
+                <p>
+                    Control who has access to what modules within your team namespace using straightforward team management capabilities.
+                </p>
+            </div>
+            <div>
+                <h3> Familiar features </h3>
+                <p>
+                    npm Orgs has 100% parity with all the public npm registry features your developers already use.
+                </p>
+            </div>
+            <div>
+                <h3> npm audit </h3>
+                <p>
+                    Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer.
+                </p>
+            </div>
+        </div>
+        <a href="#"> Create an Org </a>
     </section>
 </body>
 </html>
