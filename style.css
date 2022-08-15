@@ -2,6 +2,7 @@
 
 body {
   font-family: 'Poppins';
+  font-weight: 600;
 }
 header > div {
     padding: 0 25px;
@@ -10,14 +11,8 @@ header > div {
     align-items: center;
     border-bottom: 1px solid lightgray;
   }
-  
-header .topBar{
-    font-weight: 600;
-}
-
 nav {
     width: 600px;
-    
   }
   
 nav ul {
@@ -46,19 +41,21 @@ nav a {
     margin-top: 8px;
   }
 
-.searchBar {
+body .searchBar {
    display: flex;
    justify-content: space-between;
    align-items: center;
-   height: 40px;
-
+   height: 60px;
+   box-shadow: 0 3px 3px -2px gray;
+   font-weight: normal;
   }
 
 form .searchBarInput {
-    width: 60rem;
+    width: 70rem;
     border: 0 solid rgba(0,0,0,.05);
+    border-radius: 3px;
     background-color: rgba(0,0,0,.05);
-    height: 20px;
+    height: 25px;
     padding: 5px;
     justify-content: space-between;
     margin: 0 auto;
@@ -66,18 +63,19 @@ form .searchBarInput {
   
 .searchIcon {
     position: absolute;
-    margin-left: 5px;
+    margin: 10px 5px auto;
 }
 
 form button {
     background-color: #fb3e44;
-    height: 30px;
+    height: 35px;
     border: none;
     color: white;
     border-radius: 2px;
-    width: 65px;
-    margin: 0 auto;
-    padding-left: 0;
+    margin: 0;
+    padding: 0 15px;
+
+
 }
 .userBar {
     margin: 0 auto;
@@ -90,12 +88,13 @@ form button {
 }
 header .join {
     border: 1px solid black;
+    border-radius: 2px;
     margin: 0 auto;
-    padding: 0 10px;
-    font-weight: 600;
-
+    padding: 5px 20px;
 }
-
+header .join {
+    margin: 15px;
+}
 
 #npmInfo {
     display: flex;
@@ -118,6 +117,7 @@ div .plans {
 #npmInfo p {
     width: 40%;
     margin: 0 auto;
+    font-weight: 600;
 }
 
 #npmInfo div {
@@ -129,12 +129,15 @@ div .plans {
     padding: 20px 70px;
     margin: 25px;
     font-weight: 600;
-    color: black;
+    color: white;
 
 }
 
 div .joinfree {
     background-color: white;
     text-decoration: none;
+    font-weight: 900;
+    font-size: larger;
+    color: black;
 
 }
