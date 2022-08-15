@@ -2,7 +2,6 @@
 
 body {
   font-family: 'Poppins';
-  box-sizing: border-box;
 }
 header > div {
     padding: 0 25px;
@@ -100,6 +99,7 @@ header .join {
     height: 600px;
     background-color: rgba(232,217,217,.3);
     flex-direction: column;
+    padding-bottom: 100px;
 }
 
 div .plans {
@@ -113,7 +113,7 @@ div .plans {
 
 #npmInfo p {
     width: 40%;
-    margin: 0 auto;
+    margin: 50px auto;
     font-weight: 600;
     text-align: center;
 }
@@ -169,11 +169,7 @@ h2 {
   margin: 10px 0 50px;
 }
 
-#npmBenefits {
-  display: flex;
-}
-
-#npmBenefits div {
+body .benefitsBox {
   display: flex;
   width: 60%;
   justify-content: space-around;
@@ -182,17 +178,16 @@ h2 {
   margin: 100px auto;
 }
 
-#npmBenefits img {
+.benefitsBox img {
   width: 30px;
 }
 
-#npmBenefits h3 {
+.benefitsBox h3 {
   color: #ED1C24;
-
-  font-size: 10px;
+  font-size: 13px;
 }
 
-#npmBenefits p {
+.benefitsBox p {
   font-size: 10px;
 }
 
@@ -209,4 +204,10 @@ h2 {
   box-shadow: 8px 8px 0 rgba(128,83,35,.2);
   color: white;
   padding: 15px 100px;
+  display: flex;
+  margin: 50px auto;
+  width: 200px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
