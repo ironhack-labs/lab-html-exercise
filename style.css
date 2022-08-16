@@ -35,7 +35,8 @@ nav a {
   margin-right: 1rem;
 }
 
-.row {
+form {
+  display:flex;
   display: flex;
   flex-direction: row;
   padding: 15px;
@@ -51,6 +52,10 @@ nav a {
   margin-left: 15px;
   border-radius: 2px;
 }
+ .magnifying-glass {
+  position: absolute;
+  margin-left: 80px;
+ }
 
 .search {
   background-color: #fb3e44;
@@ -70,7 +75,6 @@ nav a {
 
 .row a {
   text-decoration: none;
-  font-family: 'Poppins';
 }
 
 .login {
@@ -97,13 +101,13 @@ h1 {
 }
 
 .seeplans {
-background: #fb3e44;
-color: white;
-border-radius: 2px;
-margin-right: 20px;
-border: none;
-padding:20px 70px;
-box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+  background: #fb3e44;
+  color: white;
+  border-radius: 2px;
+  margin-right: 20px;
+  border: none;
+  padding:20px 70px;
+  box-shadow: 8px 8px 0 rgba(251,59,73,.2);
 }
 
 .seeplans a {
@@ -116,11 +120,11 @@ box-shadow: 8px 8px 0 rgba(251,59,73,.2);
 }
 
 .joinforfree {
-background: white;
-color: black;
-border-radius: 2px;
-border: none;
-padding:20px 70px;
+  background: white;
+  color: black;
+  border-radius: 2px;
+  border: none;
+  padding:20px 70px;
 }
 
 .joinforfree a {
@@ -148,14 +152,16 @@ padding:20px 70px;
   display: flex;
   justify-content: space-around;
 }
+
 section3 img {
   padding: 10px;
-  
+ 
 }
 
 .bottom-title {
   color: #ED1C24;
 }
+
 .create-an-org {
   display: flex;
   justify-content: center;
