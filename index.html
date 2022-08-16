@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/triangle-hexagon.svg" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-    <title>NPM Clone</title>
+    <title>npm clone</title>
 </head>
 <body>
     <header>
         <div class="nav-container">
             <div>
-                <img src="/images/black-heart.png" alt="Nifty Penguin Magic Logo" class="blackHeart">
+                <img src="images/black-heart.png" alt="Nifty Penguin Magic Logo" class="blackHeart">
                 <span> Nifty Penguin Magic </span>
             </div>
             <nav>
@@ -26,14 +27,16 @@
             </nav>
         </div>
         <div class="search-container">
-            <img src="images/npm-logo.png" alt="npm Logo">
-            <form action="#">
-                <img src="/images/magnifying-glass.png" alt="magnifying-glass image">
-                <input type="text" placeholder="Search packages">
-                <button> Search </button>
+                <img src="images/npm-logo.png" alt="npm Logo">
+            <form action="#" class="search-form">
+                <img src="images/magnifying-glass.png" alt="magnifying-glass image">
+                <input type="text" placeholder="Search packages" class="search-input">
+                <button class="search-btn"> Search </button>
             </form>
-            <a href="#"> Join </a>
-            <a href="#"> Log In </a>
+            <div class="header-links">
+                <a href="#" class="header-join"> Join </a>
+                <a href="#" class="header-login"> Log In </a>
+            </div>
         </div>
     </header>
     <section id="first-section">
@@ -44,9 +47,9 @@
                 modern open source code.
             </p>
         </article>
-        <div>
-            <a href="#">See plans</a>
-            <a href="#">Join for free</a>
+        <div class="section-links">
+            <a href="#" id="section-plans">See plans</a>
+            <a href="#" id="section-join">Join for free</a>
         </div>
     </section>
     <section id="second-section">
