@@ -1,7 +1,13 @@
+/* The code is a mess but due to miracles it works */
+
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
 body {
   font-family: 'Poppins';
+}
+
+header {
+    box-shadow: 0px 2px lightgray;
 }
 
 header > div {
@@ -73,6 +79,7 @@ nav a {
     padding: 20px;
     font-size: 16px;
     border: none;
+    font-weight: bold;
 }
 
 .header-links {
@@ -100,11 +107,17 @@ nav a {
     align-items: center;
     flex-direction: column;
     height: 600px;
-    background-color: rgba(232,217,217,.3); 
+    background-color: rgba(232,217,217,.3);
+    box-shadow: 0px 3px rgba(251,59,73,.2);
+}
+
+#first-section p {
+    font-weight: bold;
 }
 
 #first-section h1 {
     font-size: 60px;
+    font-weight: bolder;
 }
 
 .section-links {
@@ -123,7 +136,8 @@ nav a {
     margin-top: 40px;
     color: white;
     padding: 20px;
-    width: 100px;
+    width: 150px;
+    font-weight: bold;
     text-decoration: none;
 }
 
@@ -133,7 +147,8 @@ nav a {
     margin-top: 40px;
     color: black;
     padding: 20px;
-    width: 100px;
+    width: 150px;
+    font-weight: bold;
     text-decoration: none;
 }
 
@@ -142,33 +157,54 @@ nav a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* flex-direction, justify-content, align-items */
+    margin-bottom: 40px;
+}
+
+#second-section img {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 300px;
 }
 
 #second-section h2 {
     background-color: rgba(255,204,53,.4);
     transform: skew(9deg,0deg);
     font-style: italic;
-    /* margin: */
+    font-size: 32px;
 }
 
 #third-section {
     display: flex;
-    flex-direction: row;
-    /* align-items: center; */
-    justify-content: center;
-    flex-wrap: wrap;
+    flex-direction: column;
+    margin-bottom: 50px;
 }
 
-#third-section > div {
-    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+.box-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.text-boxes {
+    width: 200px
+}
+.text-boxes img {
+    width: 50px;
+}
+
+.text-boxes h3 {
+    color: #ED1C24;
 }
 
 #third-section a {
-    color: black;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    align-self: center;
+    width: 300px;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: black;
+    text-decoration: none;
     box-shadow: 8px 8px 0 rgba(128,83,35,.2);
-}
-
-.box-container > div > h3 {
-    color: #ED1C24;
 }
