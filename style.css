@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+* {
+  box-sizing: border-box;
+  /* margin: 0;
+  padding: 0; */
+}
+body {
+  font-family: "Poppins";
+}
+
+header > div {
+  padding: 0 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+}
+
+nav {
+  width: 600px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+}
+
+.blackHeart {
+  width: 20px;
+  margin-right: 1rem;
+}
+
+.logo {
+  height: 20px;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: rgb(244, 244, 244);
+  margin: 0 24px 0 16px;
+}
+form img {
+  /* margin: 8px 0 8px 0; */
+  height: 16px;
+  margin-left: 8px;
+}
+
+form input {
+  width: 100%;
+  background-color: transparent;
+  height: 32px;
+  border: 0;
+}
+
+form input:focus {
+  outline: none;
+}
+
+form button {
+  height: 32px;
+  margin: 0;
+  border: 0;
+  background-color: #ed1c24;
+  padding: 0 8px 0 8px;
+  color: white;
+}
+.buttons {
+  font-size: 14px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.buttons a {
+  color: black;
+  text-decoration: none;
+  font-size: 12px;
+  display: block;
+  border: 1px solid lightgrey;
+  padding: 4px 8px 4px 8px;
+  margin-left: 8px;
+}
+
+.buttons .btn-login {
+  border: none;
+  white-space: nowrap;
+}
+
+#section-a {
+  height: 600px;
+  background-color: rgba(232, 217, 217, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#section-a h1 {
+  font-size: 64px;
+  margin-bottom: 16px;
+}
+
+#section-a article {
+  width: 30%;
+  text-align: center;
+}
+
+#section-a div {
+  padding: 24px 0 24px 0;
+  display: flex;
+  flex-direction: row;
+}
+
+#section-a div a {
+  display: block;
+  color: black;
+  height: 56px;
+  padding: 16px 32px 16px 32px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+#section-a div .plans-cta {
+  background-color: #fb3b49;
+  color: white;
+
+  box-shadow: 8px 8px 0 rgba(251, 59, 73, 0.2);
+}
+
+#section-b {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+}
+#section-b h2 {
+  font-size: 32px;
+  background-color: rgba(255, 204, 53, 0.4);
+  transform: skew(9deg, 0deg);
+  font-style: italic;
+}
+
+#section-b article {
+  width: 60%;
+  text-align: center;
+}
+
+#section-c {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+}
+
+#section-c .benefits {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin: 40px;
+}
+
+#section-c .benefits div {
+  padding: 16px;
+}
+
+#section-c .benefits h3 {
+  font-size: 16px;
+  color: #ed1c24;
+}
+
+#section-c .benefits p {
+  font-size: 14px;
+}
+
+#create-org-cta {
+  display: block;
+  background-color: #000000;
+  color: white;
+  height: 56px;
+  padding: 16px 80px 16px 80px;
+  text-decoration: none;
+  font-size: 16px;
+  box-shadow: 8px 8px 0 rgba(128, 83, 35, 0.2);
+}
