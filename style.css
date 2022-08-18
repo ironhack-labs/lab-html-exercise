@@ -28,35 +28,45 @@ nav a {
     color: black;
 }
 
-.blackHeart {
+.black-heart {
     width: 20px;
     margin-right: 1rem;
 }
+
+/*infos da instrucao*/
+
 
 header div form a {
     background-color: #fb3e44;
     text-decoration: none;
     color: white;
-    padding: 10px 10px 12px 10px;
-    margin: 0 auto;
+    padding: 12px 10px 12px 10px;
+    margin-right: 0;
      
 }
 
 header div form input {
     color: rgba(0,0,0,.05);
-    width: 600px;
+    width: 800px;
     height: 32px;
+    background-color: #F0F0F0;
+    border: none;
+    outline: none;
+}
+/*.search-bar{
+    justify-content: space-between;
+    align-items: center;
 }
 
 header div form label {
     color: rgba(0,0,0,.05);
 }
-
+*/
 .join {
     color: black;
     text-decoration: none;
     border: 1px solid lightgrey;
-    padding: 3px 15px;
+    padding: 3px 15px;  
 }
 
 .login {
@@ -73,44 +83,15 @@ header div form label {
 
 .magnifying-glass {
     width: 22px;
+    position: relative;
+    left: 40px;
 }
 
 /*Section 1*/
 
-.container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
 #section1 {
-    
     height: 600px;
     background-color: rgba(232,217,217,.3)
-}
-
-#section1 div , #section1 div h1, .container a {
-    display: flex;
-    justify-content: center;
-}
-
-#section1 div h1 {
-    font-family: "Poppins";
-    font-size: 75px;
-    font-weight: 700;
-    width: 830px;
-    text-align: center;
-}
-#section1 article {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: -25px;;
-}
-#section1 article p {
-    text-align: center;
-    width: 450px;
-    font-weight: 700;
-
 }
 
 .container {
@@ -120,11 +101,32 @@ header div form label {
     padding: 5px 10px;
     margin-top: 50px;
     align-items: center;
+    justify-content: center;
+
 }
 
-.see-plans-btn, .join-btn{
-    text-decoration: none;
-    color: white;
+h1 {
+    font-family: "Poppins";
+    font-size: 80px;
+    font-weight: bolder;
+    width: 880px;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 2rem;
+    padding-top: 6rem;
+}
+
+#section1 article {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#section1 article p {
+    text-align: center;
+    width: 550px;
+    font-size: 20px;
+
 }
 
 .see-plans-btn {
@@ -135,16 +137,18 @@ header div form label {
     padding: 10px 45px;
     margin-right: 15px;
     box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+    font-weight: bolder;
 }
 
-.join-btn{
+.join-free-btn{
     background-color: white;
     text-decoration: none;
     color: black;
     padding: 10px 45px;
     margin-left: 15px;
-    font-weight: 900;
+    font-weight: 700;
 }
+
 /*Section 2*/
 
 #section2{
@@ -154,63 +158,77 @@ header div form label {
 }
 
 #section2 img {
-    margin-top: 20px;
-    width: 180px;
+    margin-top: 6rem;
+    margin-bottom: 1rem;
+    width: 240px;
 }
 
-#section2 h4 {
-    font-size: 30px;
+h2 {
+    font-size: 36px;
     font-weight: 600;
-    transform:skew(9deg,0deg);
+    transform: skew(9deg,0deg);
+    font-style: italic;
     background-color: rgba(255,204,53,.4);
     padding: 0 25px;
 }
 
 #section2 article p {
     text-align: center;
-    width: 650px;
+    width: 790px;
     height: 100px;
+    font-size: 16px;
+    font-weight: 600;
 }
+
 /*Section 3*/
 
 #section3 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: space-evenly;
     height: 500px;
-    border: 1px solid blue;
 }
 
 .section3-images {
-    width: 25px;
+    height: 2rem;
     margin-left: 25px;
 }
+
 .container1 {
     display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
-    margin: 30px 10px;
-}
-
-#section3 .div1, .div2, .div3, .div4 {
-    border: 1px solid blue;
-    height: 300px;
     justify-content: center;
-}
-#section3 div p {
-    text-align: center;
+    flex-direction: row;
+    margin: 30px 30px;
 }
 
-#section3 div h4 {
+h3 {
     margin-left: 25px;
-    color: red;
+    margin-bottom: 1.5rem;
+    color: #ED1C24;
 }
+
+#section3 div p {
+    text-align: left;
+    width: 250px;
+    height: 100px;
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 25px;
+    margin-right: 2.5rem;
+}
+
 
 .create-an-org{
-    border: 1px solid red;
-    display: flex;
-    align-self: flex-end;
-    width: 285px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    width: 375px;
+    height: 4rem;
+    background-color: black;
+    text-decoration: none;
+    color: white;
+    padding: 10px 45px;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    margin: 2rem auto;
+    border: none;
 }
-
