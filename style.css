@@ -9,8 +9,16 @@ body {
   font-family: 'Poppins';
 }
 
-header > div {
+header > #first-line {
     padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+  }
+
+header > #second-line {
+    padding: 25 25px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -39,24 +47,31 @@ header > div {
   }
 
   .npm-logo {
-    width: 60px;
+    width: 80px;
     margin-right: 1rem;
   }
 
   .magnifying-glass {
-    width: 20px;
-    margin-right: 1rem;
+    width: 25px;
+  }
+
+  .search-text {
+    text-align: right;
   }
 
   .search-form {
-    background-color: gray;
+    background-color: rgb(240, 239, 239);
     width: 1200px;
     display: flex;
     justify-content: space-between;
   }
 
   .search-button {
-    background: red;
+    background: #FB3B49;
+    color: white;
+    border-color: white;
+    display: flex;
+    height: 30px;
   }
 
   .join-log-in a {
@@ -66,16 +81,20 @@ header > div {
     border: 2px solid #EEE;
   }
 
+  .join {
+    border-color: black;
+  }
+
   #section-one {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 600px;
+    height: 800px;
     background-color: rgba(232,217,217,.3)
   }
 
-  h1 {
+  #section-one h1 {
     font-size: 6em;
     text-align: center;
   }
@@ -83,17 +102,33 @@ header > div {
   .article-section-one {
     font-size: 1.8em;
     text-align: center;
+    margin: 0px 0px 90px 0px;
+  }
+
+  #section-one a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
   }
   
-
   .see-plans-button {
     background-color: #FB3B49;
     box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+    display: flex;
+    height: 80px;
+    width: 300px;
+    color: white;
   }
 
   .join-for-free-button {
     background-color: white;
     text-decoration: none;
+    display: flex;
+    height: 80px;
+    width: 300px;
+    color: black;
+    text-align: center;
   }
 
   #section-two {
@@ -109,7 +144,7 @@ header > div {
     width: 250px;
   }
 
-  h2 {
+  #section-two h2 {
     font-size: 3em;
     text-align: center;
     background-color: rgba(255,204,53,.4);
@@ -123,12 +158,9 @@ header > div {
     text-align: center;
   }
 
-
-
   #section-three {
     height: 600px;
     background-color: white;
-    
   }
 
   .four-boxes {
@@ -137,7 +169,6 @@ header > div {
     align-items: center;
     flex-direction: row;
     margin: 70px 0px;
-
   }
 
   .zero-configuration-logo {
@@ -156,17 +187,20 @@ header > div {
     width: 50px;
   }
 
-  .section-three h3 {
-    color: #ED1C24;
+  #section-three h3 {
+    color: #FB3B49;
+    font-weight: bold;
   }
 
   .create-an-org-button {
     background-color: black;
     color: white;
+    text-decoration: none;
     box-shadow: 8px 8px 0 rgba(128,83,35,.2);
     display: flex;
+    height: 80px;
+    width: 1890px;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 200;
   }
