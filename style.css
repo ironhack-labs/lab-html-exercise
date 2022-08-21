@@ -31,19 +31,23 @@ header > div {
     width: 20px;
     margin-right: 1rem;
   }
-  #search-bar img {
+  #search-bar {
+    padding: 5px 0;
+  }
+  #search-bar > img {
     height: 25px;
+    padding-left: 20px;
   }
   #search-bar form img {
+    height: 25px;
     position: absolute;
-    margin: 25px 10px 0;
+    margin: 10px 10px 0;
   }
   #search-bar input {
     border-style: hidden;
     background-color: rgb(240,240,240);
     width: 1100px;
     height: 40px;
-    margin: 18px 0 0;
     padding-left: 40px;
   }
   #search-bar button {
@@ -103,24 +107,46 @@ header > div {
     margin: 40px 0;
   }
   #bring img {
-    width: 200px;
-    margin: 40px 0 20px;
+    width: 250px;
+    margin: 65px 0 45px;
   }
-  #bring h2 {
-    font-size: 200%;
+  h2 {
+    font-size: 220%;
     font-style: italic;
     background-color: rgba(255,204,53,.4);
     transform: skew(9deg,0deg);
     padding: 0 20px;
   }
+  h3 {
+    color: #ED1C24;
+    font-weight: bold;
+  }
   #create {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #increate {
+    display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    align-items: baseline;
+    justify-content: space-evenly;
   }
   #create img {
     width: 40px;
   }
-  #create div {
-    width: 300px;
+  #increate div {
+    text-align: left;
+    padding: 40px;
+    width: 250px;
+  }
+  #create button {
+    color: white;
+    background-color: black;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    width: 400px;
+    height: 60px;
+    margin: 40px 0;
+    font-size: 120%;
+    font-weight: bold;
   }
