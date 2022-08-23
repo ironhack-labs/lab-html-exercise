@@ -1,5 +1,5 @@
 /*FONTS*/
-@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,600;0,700;1,300;1,600;1,700&display=swap');
 
 /*form label color: rgba(0,0,0,.05)
 form input color: rgba(0,0,0,.05)
@@ -11,9 +11,20 @@ html,
 body{
     font-size: 10px;
     line-height: 1.2;
+    font-weight: 300;
     font-family: "Poppins", Arial, sans-serif;
     padding: 0;
     margin: 0;
+}
+
+h1{
+    font-weight: 600;
+    font-size: 8rem;
+}
+
+h3{
+    font-weight: 600;
+    font-size: 3rem;
 }
 
 /*HEADER*/
@@ -51,31 +62,52 @@ body{
 
 #bottomBar{
     display: flex;
-    /*justify-content: space-evenly;*/
+    justify-content: space-evenly;
     align-items: center;
-    padding: 2rem 3rem;
+    padding: 1rem 3rem;
+    border-bottom: 1px solid lightgray;
 }
 
-#bottomBar > img{
+#bottomBar .logo{
     width: 7rem;
     margin-right: 2rem;
 }
 
 #bottomBar .search{
     flex-grow: 1;
+    background-color: rgb(242, 242, 242);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search label img{
+    width: 2rem;
+    padding: 0 1rem;
 }
 
 .search .search-bar{
-    background-color: (0,0,0,.05);
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    padding-left: 1rem;
+    font-size: 1.4rem;
+}
+
+.search .search-button{
+    font-size: 1.4rem;
+    background-color: #fb3e44;
+    border: none;
+    color: white;
+    padding: 1rem 2rem;
 }
 
 #bottomBar .menu-button{
     display: flex;
     justify-content: space-evenly;
     font-size: 1.4rem;
-    font-weight: 600;
     list-style: none;
-    margin: 0 3rem;
+    margin-left: 3rem;
 }
 
 .menu-button a{
@@ -84,6 +116,24 @@ body{
     padding: 0.5rem 1.5rem;
 }
 
+.menu-button div:last-child a{
+    padding-right: 0;
+}
+
 .border-button a{
     border: 1px solid black;
+    font-weight: 600;
 }
+
+.centered-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#initialBanner{
+    background-color: rgba(232,217,217,0.3);
+    height: 600px;
+}
+
