@@ -1,11 +1,6 @@
 /*FONTS*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,600;0,700;1,300;1,600;1,700&display=swap');
 
-/*form label color: rgba(0,0,0,.05)
-form input color: rgba(0,0,0,.05)
-form button background color: #fb3e44
-form button letters color: white*/
-
 /*GENERAL*/
 html,
 body{
@@ -20,15 +15,21 @@ body{
 h1{
     font-weight: 600;
     font-size: 8rem;
+    text-align: center;
+    margin: 0;
 }
 
 h3{
     font-weight: 600;
     font-size: 3rem;
+    text-align: center;
+}
+
+.margin-top-medium{
+    margin-top: 5rem;
 }
 
 /*HEADER*/
-
 #topBar{
     display: flex;
     justify-content: space-between;
@@ -75,7 +76,7 @@ h3{
 
 #bottomBar .search{
     flex-grow: 1;
-    background-color: rgb(242, 242, 242);
+    background-color: rgba(242, 242, 242);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -125,15 +126,63 @@ h3{
     font-weight: 600;
 }
 
+/*SECTIONS*/
 .centered-container{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: auto 0;
 }
 
 #initialBanner{
     background-color: rgba(232,217,217,0.3);
     height: 600px;
+    box-sizing: border-box;
 }
 
+.subclaim{
+    font-size: 2rem;
+    text-align: center;
+    max-width: 550px;
+    margin-bottom: 3rem;
+}
+
+.cta-initial-banner{
+    height: 5rem;
+}
+
+#useNpm{
+    height: 600px;
+    box-sizing: border-box;
+}
+
+#useNpm > img{
+    width: 300px;
+}
+
+/*BUTTONS*/
+.button{
+    font-weight: 600;
+    font-size: 2rem;
+    text-decoration: none;
+    padding: 1.5rem 7rem;
+    margin: 0 3rem;
+}
+
+.button-primary{
+    color: white;
+    background-color: #FB3B49;
+    box-shadow: 8px 8px 0 rgba(251,59,73,0.2);
+}
+
+.button-flat{
+    color: black;
+    background-color: white;
+}
+
+.button-secondary{
+    color: white;
+    background-color: black;
+    box-shadow: 8px 8px 0 rgba(255,255,255,0.2);
+}
