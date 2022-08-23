@@ -9,11 +9,11 @@ form button letters color: white*/
 /*GENERAL*/
 html,
 body{
-    font-size: 16px;
+    font-size: 10px;
     line-height: 1.2;
     font-family: "Poppins", Arial, sans-serif;
-    margin: 0;
     padding: 0;
+    margin: 0;
 }
 
 /*HEADER*/
@@ -26,21 +26,64 @@ body{
 }
 
 .left-sentence > img {
-    width: 20px;
-    margin: 0 30px;
+    width: 2.5rem;
+    margin: 0 2rem 0 3rem;
+}
+
+.left-sentence{
+    font-size: 1.4rem;
 }
 
 .right-top-menu ul{
     display: flex;
     justify-content: space-evenly;
-    padding: 0;
+    font-size: 1.4rem;
     font-weight: 600;
     list-style: none;
-    margin-right: 30px;
+    margin-right: 3rem;
 }
 
 .right-top-menu a{
     color: black;
     text-decoration: none;
-    padding-left: 10px;
+    margin-left: 2rem;
+}
+
+#bottomBar{
+    display: flex;
+    /*justify-content: space-evenly;*/
+    align-items: center;
+    padding: 2rem 3rem;
+}
+
+#bottomBar > img{
+    width: 7rem;
+    margin-right: 2rem;
+}
+
+#bottomBar .search{
+    flex-grow: 1;
+}
+
+.search .search-bar{
+    background-color: (0,0,0,.05);
+}
+
+#bottomBar .menu-button{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.4rem;
+    font-weight: 600;
+    list-style: none;
+    margin: 0 3rem;
+}
+
+.menu-button a{
+    color: black;
+    text-decoration: none;
+    padding: 0.5rem 1.5rem;
+}
+
+.border-button a{
+    border: 1px solid black;
 }
