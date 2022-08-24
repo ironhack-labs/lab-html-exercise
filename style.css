@@ -10,6 +10,8 @@ body {
   font-family: 'Poppins';
 }
 
+/* HEADER */
+
 .top-header {
     padding: 0 25px;
     display: flex;
@@ -47,14 +49,14 @@ nav a {
 }
 
 .npm-logo {
-    width: 5em;
+    width: 10vh;
     height: 2rem;
 }
 
 .search-box {
     background-color: rgba(0,0,0,.05);
     border: none;
-    width: 80vh;
+    width: 70vh;
     height: 2em;
     background-image: url(./images/magnifying-glass.png);
     background-size: 15px 15px;
@@ -72,7 +74,9 @@ nav a {
 }
 
 .btn-container {
-    width: 10em;
+    display: flex;
+    justify-content: flex-end;
+    width: 20vh;
     height: 2rem;
 }
 
@@ -88,4 +92,53 @@ nav a {
     height: 1.5rem;
     background-color: white;
     border: none;
+}
+
+/* SECTION 1 */
+
+#section1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(232,217,217,.3);
+    height: 600px;
+}
+
+h1 {
+    font-size: 5rem;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#section1 article {
+    font-size: 1.2em;
+    width: 40%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.plans-container {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.seeplans-btn, .joinforfree-btn{
+   width: 250px;
+   height: 50px;
+   border: none;
+   font-weight: 600;
+   font-size: 1rem;
+}
+
+.seeplans-btn {
+    background-color: #FB3B49;
+    color: white;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+}
+
+.joinforfree-btn {
+    background-color: white;
 }
