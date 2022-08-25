@@ -12,6 +12,7 @@ auditing features built into the npm client, a zero-friction way to make open so
     <head>
         <title>NPM Clone</title>
         <meta />
+        <link rel="stylesheet" href="/style.css" />
     </head>
     <body>
         <header id="header">
@@ -36,68 +37,64 @@ auditing features built into the npm client, a zero-friction way to make open so
                 <div>                    
                     <form action="/some-url" method="get">
                         <img class="magnifyingGlass" src="/images/magnifying-glass.png" alt="magnifying glass" />
-                        <label for="search"></label>
-                        <input type="text" name="search" id="search" placeholder="Search packages">
-                        <input type="button" value="Search">
+                        <label class="label" for="search"></label>
+                        <input class="search-bar" type="text" name="search" id="search" placeholder="Search packages">
+                        <input class="search-button" type="button" value="Search">
                     </form>                    
                 </div>
-                <div>
-                    <a href="#"> Join </a>
-                    <a href="#"> Log In </a>
-                </div>
+                <a class="join" href="#"> Join </a>
+                <a class="login" href="#"> Log In </a>
             </div>
         </header>
         <section id="section1">
-            <h1>Build amazing things</h1>
-            <p>
-                <article>Essential JavaScript development tools that help you go to market faster and build powerful applications using
-                    modern open source code.
-                </article>
-            </p>
-            <a href="#"> See Plans</a>
-            <a href="#"> Join for free</a>
-            <div class="join"></div>
+            <h1 class="build">Build amazing things</h1>
+            <article class="build-article">Essential JavaScript development tools that help you go to market faster and build powerful applications using
+                modern open source code.
+            </article>
+            <div id="section1div">
+                <a class="sp" href="#"> See Plans</a><a class="join2" href="#"> Join for free</a>
+            </div>
         </section>
         <section id="section2">
             <img class="triangleHexagon" src="/images/triangle-hexagon.svg" alt="triangle hexagon" >
-            <h1>Bring the best of open source to your company</h1>
+            <h1 class="headingS2">Bring the best of open source to your company  </h1>
             <p>
-                <article>npm is the tool used by
+                <article class="s2article">npm is the tool used by
                     over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it.
                     Create an Org and get more out of the tools your team already knows and loves.
                 </article>
             </p>
         </section>
         <section id="section3">
-            <div class="bottom">
-                <img class="zeroConfiguration" src="/images/zero-configuration.svg" alt="zero configurations" >
-                <h2>Zero configuration</h2>
-                <p>Create an org, add
-                    your team, and start collaborating. Nothing to configure, set up, or manage.
-                </p>
-            </div>
-            <div class="bottom">
-                <img class="teamManagement" src="/images/team-management.svg" alt="team management" >
-                <h2>Team management</h2>
-                <p>Control who has access to
-                    what modules within your team namespace using straightforward team management capabilities.
-                </p>
-            </div>
-            <div class="bottom">
-                <img class="familiarFeatures" src="/images/familiar-features.svg" alt="familiar features" >
-                <h2>Familiar features</h2>
-                <p>npm Orgs
-                    has 100% parity with all the public npm registry features your developers already use.
-                </p>
-            </div>
-            <div class="bottom">
-                <img class="npmaudit" src="/images/npm-audit.svg" alt="npm audit" >
-                <h2>npm audit</h2>
-                <p>Enjoy the security
-                    auditing features built into the npm client, a zero-friction way to make open source software safer.
-                </p>
-            </div>
-            <a href="#"> Create an Org</a>
+                <div class="bottom">
+                    <img class="zeroConfiguration" src="/images/zero-configuration.svg" alt="zero configurations" >
+                    <h2>Zero configuration</h2>
+                    <p>Create an org, add
+                        your team, and start collaborating. Nothing to configure, set up, or manage.
+                    </p>
+                </div>
+                <div class="bottom">
+                    <img class="teamManagement" src="/images/team-management.svg" alt="team management" >
+                    <h2>Team management</h2>
+                    <p>Control who has access to
+                        what modules within your team namespace using straightforward team management capabilities.
+                    </p>
+                </div>
+                <div class="bottom">
+                    <img class="familiarFeatures" src="/images/familiar-features.svg" alt="familiar features" >
+                    <h2>Familiar features</h2>
+                    <p>npm Orgs
+                        has 100% parity with all the public npm registry features your developers already use.
+                    </p>
+                </div>
+                <div class="bottom">
+                    <img class="npmaudit" src="/images/npm-audit.svg" alt="npm audit" >
+                    <h2>npm audit</h2>
+                    <p>Enjoy the security
+                        auditing features built into the npm client, a zero-friction way to make open source software safer.
+                    </p>
+                </div>
         </section>
+        <a class="org" href="#"> Create an Org</a>
     </body>
 </html>
