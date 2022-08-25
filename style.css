@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins";
+  padding: 0px;
+  margin: 0px;
+  font-size: 16px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0px;
+  padding-bottom: 12px;
+  margin: 0px;
+}
+
+header > div {
+  padding: 0 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+}
+
+nav {
+  width: 600px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+.blackHeart {
+  width: 20px;
+  margin-right: 1rem;
+}
+
+.logo {
+  width: 80px;
+  margin: 16px;
+}
+
+#search-container {
+  display: flex;
+  width: 70%;
+}
+#search-container > form {
+  display: flex;
+  width: 100%;
+}
+#search-container input {
+  font: inherit;
+  padding: 8px 20px 8px 40px;
+  background-color: #eee;
+  border: none;
+  border-radius: 4px 0px 0px 4px;
+  width: 100%;
+}
+#search-container input:focus-visible {
+  border: none;
+  outline: none;
+}
+#magnifier {
+  width: 25px;
+  height: 25px;
+  position: relative;
+  left: 35px;
+  top: 8px;
+}
+
+#system-login-join-btn {
+  display: flex;
+}
+
+.btn {
+  text-decoration: none;
+  text-align: center;
+  padding: 8px;
+
+  border-radius: 2px;
+}
+
+.btn-red-fill-nav {
+  border: none;
+  color: #fff;
+  background-color: #e72145;
+  font-weight: bold;
+  width: 100px;
+  border-radius: 0px 4px 4px 0px;
+}
+
+.btn-white-outline-nav {
+  border: 1px solid #eee;
+  color: #333;
+  width: 100px;
+  background-color: #fff;
+}
+
+#top-section {
+  background-color: #f9f3f3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 450px;
+}
+#top-section h1 {
+  font-size: 5rem;
+}
+#top-section > article {
+  width: 40%;
+  text-align: center;
+}
+
+#top-section > div {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  width: 40%;
+  margin-top: 60px;
+}
+
+.btn-section {
+  padding: 16px 64px 16px 64px;
+  border-radius: 2px;
+  font-weight: bold;
+}
+
+.btn-red {
+  color: #fff;
+  background-color: #e72145;
+}
+
+.btn-white {
+  color: #333;
+  background-color: #fff;
+}
+.btn-black {
+  color: #fff;
+  background-color: #222;
+}
+.btn-red-shadow {
+  box-shadow: 8px 8px 2px 1px #e7214522;
+}
+
+.btn-black-shadow {
+  box-shadow: 12px 8px 8px #888;
+}
+
+#middle-section {
+  margin: 60px 0px 60px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 450px;
+}
+#middle-section h2 {
+  font-size: 2rem;
+}
+#middle-section > article {
+  width: 50%;
+  text-align: center;
+}
+
+#middle-section > img {
+  width: 300px;
+  padding: 40px;
+}
+
+#bottom-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  height: 600px;
+  margin: 60px 0px 60px 0px;
+}
+#bottom-section > div:first-child {
+  display: flex;
+  gap: 20px;
+  width: 80%;
+  justify-content: space-around;
+  align-items: baseline;
+}
+#bottom-section > div:first-child div {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 25%;
+  align-items: flex-start;
+}
+#bottom-section h3 {
+  color: #e72145;
+  font-weight: bold;
+}
+
+#bottom-section img {
+  width: 80px;
+  padding: 8px;
+}
+
+#bottom-section > div:last-child {
+  padding-top: 40px;
+}
