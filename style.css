@@ -1,100 +1,77 @@
-/* font-family: 'Arimo', sans-serif;
-font-family: 'Poppins', sans-serif; */
+@import url('https://fonts.googleapis.com/css?family=Poppins');
 
 body {
 margin: 10px 0;
 padding: 0 auto;
 font-family: 'Poppins', sans-serif;
 }
-p {
-font-family: 'Arimo', sans-serif;  
-}
 
-.nav-bar{
-    padding: 0 32px;
-    margin: 10px 0 20px 0;
-}
-
-.nav-bar img {
-    height: 20px;
-    position: relative;
-    top: 5px;
-}
-.nav-bar b {
-    font-size: 14px;
-    line-height: 16px;
-}
-.nav-bar.list {
-    display: inline;
-}
-.nav-bar ul{
-    padding: 0;
-    display: inline;
-    position: relative;
-    left: 580px;
-}
-.nav-bar li {
-    list-style-type: none;
-    font-size: 14px;
-    line-height: 16px;
-    font-weight: bold;
-    display: inline;
-    text-align: end;
-    padding: 0 10px;
-}
-.nav-bar a {
-    color: black;
+header div {
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+  }
+  
+  nav {
+    width: 600px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav a {
     text-decoration: none;
-}
-.nav-bar div {
-    display: inline;
-}
-hr {
-    opacity: 0.4;
-}
-.form-wrapper {
-    padding: 0 32px;
-    margin: 10px 0;
-    margin-top: 4px;
-}
-
-.npm-logo img {
-    height: 24px;
-    margin: 10px 18px 0 0;
-    position: relative;
-    top: 8px;
-}
-.npm-logo span {
- position: relative;
-}
-.form-wrapper form {
-    display: inline;
-
-}
-.form-search {
-    background-color: #F2F2F2;
-    padding: 14px 760px 18px 5px;
-    display: inline;
-}
-.form-search img {
-    height: 22px;
-    position: relative;
-    top: 4px;
-}
-.form-search .search-area {
+    color: black;
+  }
+  .clone-title {
     border: none;
-    background-color: #F2F2F2;
-    padding: 0;
-    margin: 0;
-    font-size: 18px;
-    line-height: 18px;
-    font-family: 'Arimo', sans-serif; 
+  }
+  
+  .blackHeart {
+    width: 20px;
+    margin-right: 1rem;
+  }
+
+.npm-logo {
+    width: 70px;
+    margin-right: 1em;
+    margin-left: 2em;
 }
+.glass {
+    width: 26px;
+    margin-right: 1em;
+    position: relative;
+    top: 15px;
+    left: 10px;
+}
+form {
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+form label {
+    background-color:  rgba(0,0,0,.05);
+
+}
+form input {
+    border: none;
+    background-color: rgba(0,0,0,.05);
+    width: 880px;
+    font-size: 16px;
+}
+
 .search-button {
-    margin:0;
     padding: 18px 26px 18px 26px;
-    border: red;
-    background-color: red;
+    border: none;
+    background-color: #fb3e44;
     color: white;
     font-size: 16px;
     line-height: 18px;
@@ -106,105 +83,116 @@ hr {
     text-decoration: none;
     padding: 10px 26px 10px 26px;
     border: 1px solid black;
-    margin: 0 20px;
 }
 .login-button a {
     color: rgb(0,0,0,0.6);
     text-decoration: none;
 }
-.header-box {
-    margin: 0 auto;
-    border-top: 1px solid rgb(0,0,0,0.1);
-    background-color: #f4eae7 ;
+
+#npm-enterprize {
+    background-color: rgba(232,217,217,.3);
     height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#npm-enterprize h1 {
+    font-weight: 600;
+    font-size: 80px;
+    margin: 0 auto;
+}
+#npm-enterprize article {
+    font-size: 24px;
+    line-height: 30px;
+    padding: 10px 450px;
+    opacity: 0.8;
     text-align: center;
 }
-.header-box h1 {
-    font-weight: 900;
-    font-size: 80px;
-    padding-top: 24px;
-
+#npm-enterprize div {
+    margin-top: 50px;
 }
-.header-box p {
-    font-size: 24px;
-    line-height: 28px;
-    padding: 10px 430px;
-    opacity: 0.8;
-    margin-bottom: 40px;
-}
-.plans-button a {
+#npm-enterprize a {
     text-decoration: none;
-    background-color: red;
-    color: white;
     font-size: 24px;
     line-height: 28px;
-    font-weight: bolder;
-    border: 1px solid red;
+    padding: 16px 50px;
     border-radius: 3px;
-    padding: 16px 74px;
-    margin-right: 14px;
-    box-shadow: 10px 10px rgb(255,0,0,0.1);
-    
+    margin: 10px;
+    border: none;
 }
-.free-button a {
-    text-decoration: none;
+.seePlans-button {
+    background-color: #FB3B49;
+    color: white;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2)   
+}
+.joinForFree-button {
     background-color: white;
     color: black;
-    font-size: 24px;
-    line-height: 28px;
-    font-weight: 900;
-    border: 1px solid white;
-    border-radius: 3px;
-    padding: 16px 74px;
-    margin-left: 14px;
-    box-shadow: 10px 10px rgb(0,0,0,0.1);
+    box-shadow: 8px 8px 0 rgb(0,0,0,0.1);
 }
-.section-slogan {
-    margin-top: 80px;
+
+#products {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 600px;
-    text-align: center;
 }
-.section-slogan img {
-    max-width: 260px;
+.hexagone {
+    width: 260px;
 }
-.section-slogan h2 {
+#products h2 {
     font-size: 38px;
     line-height: 36px;
-    font-weight: 520;
-    background-color: #FFF28E;
-    margin: 52px 230px 52px 230px;
+    font-weight: 500;
+    font-style: italic;
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+    margin: 30px;
 }
-.section-slogan p {
+#products article {
     font-size: 18px;
     opacity: 0.7;
-    line-height: 20px;
+    line-height: 28px;
     padding: 0 320px;
+    text-align: center;
 }
-.section-products {
-    margin: 0 90px;
+
+#solutions {
+    height: 500px;
+    padding: 50px;
 }
-.section-products td {
-    padding: 0px 40px;
+.solutions {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
 }
-.section-products img {
-    margin: 0;
-    max-width: 42px;
+.solutions div{
+    padding: 0 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
-.section-products b {
-    color: red;
-    margin-bottom: 18px;
+#solutions img {
+    justify-content: none;
+    width: 46px;
+}
+#solutions h5 {
+    color: #ED1C24;
     font-size: 20px;
 }
-.section-products p {
-    font-size: 18px;
+#solutions article {
+    font-size: 16px;
     line-height: 24px;
     opacity: 0.8;
 }
-footer {
-    margin: 70px;
+.createAnOrg {
     text-align: center;
+    margin-top: 80px;
 }
-footer a {
+ a {
     text-decoration: none;
     background-color: black;
     color: white;
@@ -215,7 +203,7 @@ footer a {
     border-radius: 3px;
     padding: 16px 160px;
     margin-left: 14px;
-    box-shadow: 10px 10px 5px rgba(216, 203, 213, 0.9);
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2)
 }
 
 
