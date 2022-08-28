@@ -9,9 +9,9 @@
 </head>
 <body>
     <header>
-        <div>
+        <div class="header-div-top">
             <div>
-                <img src="images/black-heart.png" alt="black heart symbol">
+                <img src="images/black-heart.png" alt="black heart symbol" class="blackHeart">
                 <span>Nifty Penguin Magic</span>
             </div>
             <nav>
@@ -25,18 +25,27 @@
                 </ul>
             </nav>
         </div>
-        
-        <div>
-            <img src="images/npm-logo.png" alt="npm logo">
-            <form action="">
-                <img src="images/magnifying-glass.png" alt="magnifying glass logo">
-                <input type="text" placeholder="Search packages">
-                <button>
-                    Search 
-                </button> 
-            </form>
-            <a href="">Join</a>
-            <a href="">Log In</a>
+        <div class="header-div-bottom">
+            <div>
+                <img src="images/npm-logo.png" alt="npm logo" class="logo-npm">
+                <form action="" class="form-search">
+                    <label for="search"></label>
+                    <img src="images/magnifying-glass.png" alt="magnifying glass logo" class="magnifying-glass">
+                    <input type="text" placeholder="Search packages" name="search">
+                    <button type="button" class="button-red">
+                        Search 
+                    </button> 
+                </form>
+            </div>
+            <div>
+                <a href="">
+                    <button type="button" class="button-white">Join</button>
+                </a>
+                <a href="">
+                    <button type="button" class="button-white no-border">Log In</button>
+                </a>
+            </div>
+            
         </div>
     </header>
     <section id="top-main">
@@ -46,11 +55,18 @@
             you go to market faster and build powerful 
             applications using modern open source code. 
         </article>
-        <a href="">See plans</a>
-        <a href="">Join for free</a>
+        <div class="buttons-top-main">
+            <a href="">
+                <button type="button" class="button-red">See plans</button>
+            </a>
+            <a href="">
+                <button type="button" class="button-white">Join for free</button>
+            </a>
+        </div>
+        
     </section>
     <section id="mid-info">
-        <img src="images/triangle-hexagon.svg" alt="triangle hexagon">
+        <img src="images/triangle-hexagon.svg" alt="triangle hexagon" class="triangle-hexagon">
         <h2>Bring the best of open source to your company</h2>
         <article>
             npm is the tool used by over 11,000,000 JavaScript developers around the world. 
@@ -59,41 +75,53 @@
         </article>
     </section>
     <section id="bottom-features">
-        <div>
-            <img src="images/zero-configuration.svg" alt="mouse symbol">
+        <div class="feature">
+            <img src="images/zero-configuration.svg" alt="mouse symbol" class="symbol-feature">
             <h3>Zero configuration</h3>
-            Create an org, add your team, 
-            and start collaborating. 
-            Nothing to configure, set up, 
-            or manage. 
+            <article>
+                Create an org, add your team, 
+                and start collaborating. 
+                Nothing to configure, set up, 
+                or manage.
+            </article>
         </div>
-        <div>
-            <img src="images/team-management.svg" alt="team symbol">
+        <div class="feature">
+            <img src="images/team-management.svg" alt="team symbol" class="symbol-feature">
             <h3>Team management </h3>
-            Control who has access to 
-            what modules within your 
-            team namespace using 
-            straightforward team 
-            management capabilities. 
+            <article>
+                Control who has access to 
+                what modules within your 
+                team namespace using 
+                straightforward team 
+                management capabilities.
+            </article>
         </div>
-        <div>
-            <img src="images/familiar-features.svg" alt="scales symbol">
+        <div class="feature">
+            <img src="images/familiar-features.svg" alt="scales symbol" class="symbol-feature">
             <h3>Familiar features</h3>
-            npm Orgs has 100% parity with 
-            all the public npm registry 
-            features your developers 
-            already use. 
+            <article>
+                npm Orgs has 100% parity with 
+                all the public npm registry 
+                features your developers 
+                already use.
+            </article>
         </div>
-        <div>
-            <img src="images/npm-audit.svg" alt="binoculars symbol">
+        <div class="feature">
+            <img src="images/npm-audit.svg" alt="binoculars symbol" class="symbol-feature">
             <h3>npm audit</h3>
-            Enjoy the security auditing 
-            features built into the npm 
-            client, a zero-friction way to 
-            make open source software 
-            safer. 
+            <article>
+                Enjoy the security auditing 
+                features built into the npm 
+                client, a zero-friction way to 
+                make open source software 
+                safer. 
+            </article>
         </div>
-        <a href="">Create an Org</a>
     </section>
+    <footer id="footer">
+        <a href="">
+            <button type="button" class="button-black">Create an Org</button>
+        </a>
+    </footer>
 </body>
 </html>
