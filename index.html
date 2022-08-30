@@ -1,7 +1,10 @@
+<head>
+<link rel="stylesheet" href="/Users/saskiapeach/Desktop/ironhack-lab/lab-html-exercise/styles.css">
+</head>
 <header>
     <div>
       <div>
-        <img class="blackHeart" src="http://clipart-library.com/images/dT9Xgpzkc.jpg" alt="black heart" />
+        <img class="blackHeart" src="https://github.com/ironhack-labs/lab-html-exercise/blob/master/images/black-heart.png?raw=true" alt="black heart" />
         <span> Nifty Penguin Magic </span>
       </div>
       <nav>
@@ -15,19 +18,49 @@
         </ul>
       </nav>
     </div>
-    <div>
-      <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Npm%2C_Inc._wordmark.svg/2560px-Npm%2C_Inc._wordmark.svg.png" alt="npm logo"/>
-      <img class="magnifying-glass" src="https://www.pngall.com/wp-content/uploads/4/Magnifying-Glass-Transparent.png" alt="magnifying glass"/>
+    <div class="lowerDiv">
+      <img class="logo" src="https://github.com/ironhack-labs/lab-html-exercise/blob/master/images/npm-logo.png?raw=true" alt="npm logo"/>
+      <img class="magnifyingGlass" src="https://github.com/ironhack-labs/lab-html-exercise/blob/master/images/magnifying-glass.png?raw=true"/>
       <!-- add logo, search bar and buttons (or links and style them as buttons later) -->
-    </div>
-    <div>
       <form action="/register" method="post">
-        <input type="text" name="search" id="search" placeholder="Search packages">
-        <button> Search </button>
+        <input type="text" name="search" id="search" placeholder="Search packages" class="searchBar" size="150">
+        <button class="searchButton"> Search </button>
       </form>
-    </div>
-    <div>
-      <a href="#"> Join</a>
-      <a href="#"> Log in </a>
+      <a href="#" class="joinButton"> Join</a>
+      <a href="#" class="loginButton"> Log in </a>
     </div>
   </header>
+
+  <!--End of nav -->
+  <section id="sectionOne">
+<h1> Build amazing things </h1>
+<article>Essential JavaScript development tools that help you go to market faster and build powerful applications using
+  modern open source code.</article>
+  <div>
+  <a href="#"> See plans </a>
+  <a href='#'> Join for free </a>
+  </div>
+  </section>
+  <section id="sectionTwo">
+    <img src="https://raw.githubusercontent.com/ironhack-labs/lab-html-exercise/3a5dda422dd6e6fc4444645556e2a1ecc05879e9/images/triangle-hexagon.svg" alt="triangle hexagon"/>
+    <h2>Bring the best of open source to your company</h2>
+    <article> npm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it. Create an Org and get more out of the tools your team already knows and loves. </article>
+  </section>
+  <section id="sectionThree">
+    <div>
+      <img src="https://raw.githubusercontent.com/ironhack-labs/lab-html-exercise/3a5dda422dd6e6fc4444645556e2a1ecc05879e9/images/zero-configuration.svg" alt="zero configuration image"/>
+      <h3> Zero configuration </h3>
+      <p> Create an org, add your team, and start collaborating. Nothing to configure, set up, or manage. </p>
+      <img src="https://raw.githubusercontent.com/ironhack-labs/lab-html-exercise/3a5dda422dd6e6fc4444645556e2a1ecc05879e9/images/team-management.svg" alt="team management image"/>
+      <h3> Team Management </h3>
+      <p> Control who has access to what modules within your team namespace using straightforward team management capabilities.</p>
+      <img src="https://raw.githubusercontent.com/ironhack-labs/lab-html-exercise/3a5dda422dd6e6fc4444645556e2a1ecc05879e9/images/familiar-features.svg" alt="familiar features image"/>
+      <h3> Familiar Features </h3>
+      <p> npm Orgs has 100% parity with all the public npm registry features your developers already use.</p>
+      <img src="https://raw.githubusercontent.com/ironhack-labs/lab-html-exercise/3a5dda422dd6e6fc4444645556e2a1ecc05879e9/images/npm-audit.svg" alt="npm audit image"/>
+      <h3> npm audit </h3>
+      <p> Enjoy the security
+        auditing features built into the npm client, a zero-friction way to make open source software safer.</p>
+<a href=#> Create an Org </a>
+
+  </section>
