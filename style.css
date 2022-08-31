@@ -1,3 +1,176 @@
 /*
-
+form label color: rgba(0,0,0,.05)
+form input color: rgba(0,0,0,.05)
+form button background color: #fb3e44
+form button letters color: white
 */
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body {
+  font-family: 'Poppins';
+}
+
+/* HEADER */
+header > div {
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+  }
+  
+  nav {
+    width: 600px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .blackHeart {
+    width: 20px;
+    margin-right: 1rem;
+  }
+
+  form button{
+    color:white;
+    background-color: #fb3e44;
+  }
+
+  form input{
+    color:rgba(0,0,0,.05)
+  }
+  form label{
+    color:(0,0,0,.05)
+  }
+  .subheader{
+    display:flex;
+    justify-content: right;
+  }
+
+  /* SECTION 1 */
+.amazing {
+   
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: space-evenly;
+}
+
+  .Section1 {
+    height:600px;
+    background-color:rgba(232,217,217,.3);
+    
+  }
+  .plans-and-join {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: space-between;
+    height: 100px;
+}
+  #see-plans{
+    background-color: #fb3b49;
+    box-shadow: 8px 8px rgba(251,59,73,.2);
+    color: white;
+    font-weight: 500;
+    height: 50px;
+    width: 175px;
+  }
+
+  #join-free{
+    color:black;
+border:0;
+background-color:rgba(0,0,0,0);
+font-style: bold;
+font-weight: 700;
+  }
+  .Section1 article{
+    display:flex;
+    justify-content: center;
+    width: 500px;
+  }
+  h1 {
+    margin-top:100px;
+    font-size: 72px;
+  }
+
+  /* SECTION 2
+  
+  heading background color: rgba(255,204,53,.4)
+to get the transform of the yellow background in the left-hand direction use: transform: skew(9deg,0deg);
+to get it in the opposite direction of the letters, the way we need it on the page, use: font-style: italic;
+to additionally fine-tune the position of each element, use margin property.
+*/
+.section2{
+    display:flex;
+    justify-content:center;
+    flex-direction: column;
+    flex-wrap: no-wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: space-between;
+}
+.second-section-header{
+    background-color: rgba(255,204,53,.4);
+   font-style: italic;
+   transform: skew(9deg,0deg);
+   border-right:100px;
+   width:600px;
+}
+.section2-article{
+    display:flex;
+    justify-content: center;
+    width: 500px;
+    font-size: 12px;
+    text-align: center;
+}
+
+/* SECTION 3 
+
+Useful information:
+
+color of the letters in each heading in this section: #ED1C24
+"Create an Org" box shadow: 8px 8px 0 rgba(128,83,35,.2)
+"Create an Org" letters color: white */
+
+.section3 div{
+    display:flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap:no-wrap;
+    margin-top: 50px;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    font-size:12px;
+
+
+}
+.section > p{
+    width:200px;
+}
+
+.section3 h4{
+    color: #ED1C24;
+}
+.section3 button{
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    padding: 10px 50px;
+    color: white;
+    background-color: black;
+    display: flex;
+    margin: auto;
+}
