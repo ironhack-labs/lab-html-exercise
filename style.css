@@ -63,14 +63,78 @@ input {
   background-color: #e1383e;
 }
 
+.join-btn,
 .register-btn {
-  border: none;
   background-color: white;
   color: rgb(55, 53, 53);
   padding: 5px 12px;
   cursor: pointer;
 }
 
+.join-btn {
+  border: 1px solid lightgrey;
+}
+
+.register-btn {
+  border: none;
+}
+
 .register-btn:hover {
   border: 1px solid lightgrey;
+}
+
+#main {
+  background: rgba(232, 217, 217, 0.3);
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 80px;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.main-paragraph {
+  margin-top: 5%;
+  font-size: 24px;
+  width: 600px;
+  height: 120px;
+  text-align: center;
+}
+
+.info-buttons {
+  display: block;
+}
+
+.plans-btn,
+.free-btn {
+  border: none;
+  padding: 15px 50px;
+}
+
+.plans-btn {
+  background-color: #fb3e44;
+  color: #ffff;
+  box-shadow: 5px 5px #fad0d2;
+  margin-right: 50px;
+}
+
+.plans-btn:hover {
+  background-color: #e1383e;
+}
+
+.free-btn {
+  background-color: none;
+  border: none;
+  color: black;
+  font-weight: bold;
+}
+
+.free-btn:hover {
+  border: 1px solid lightgrey;
+  padding: 15px 25px;
 }
