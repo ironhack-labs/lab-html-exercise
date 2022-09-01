@@ -2,6 +2,7 @@
 
 body {
     font-family: 'Poppins';
+    box-sizing: border-box;
 }
 
 header>div {
@@ -11,6 +12,7 @@ header>div {
     align-items: center;
     border-bottom: 1px solid lightgray;
 }
+
 
 nav {
     width: 600px;
@@ -33,8 +35,32 @@ nav a {
     margin-right: 1rem;
 }
 
+#navbar {
+    flex-grow: 1;
+    padding: 0 10px;
+    height: 30px;
+}
+
 h1,
 h3,
 article {
     text-align: center;
+    margin: 20px auto;
+    max-width: 50%;
 }
+
+h1 {
+    font-size: 40px;
+}
+
+#flexboxes {
+    margin: auto;
+    width: 75%;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+h4 {
+    color:red;
+}
+
