@@ -47,11 +47,20 @@ nav a:hover {
 
 .form {
   margin-top: 1%;
+  display: flex;
+  flex-direction: row;
 }
 
 .glass {
   width: 20px;
+  height: 20px;
 }
+/* missing size for mag glass
+.search-btn-glass {
+  width: 20px;
+  height: 20px;
+  object-fit: cover; 
+} */
 
 .logo {
   width: 4em;
@@ -87,6 +96,11 @@ input {
 
 .join-btn {
   border: 1px solid lightgrey;
+}
+
+.join-btn:hover {
+  background-color: #000000;
+  color: white;
 }
 
 .register-btn {
@@ -170,8 +184,19 @@ h1 {
 h2 {
   font-size: 28px;
   font-style: italic;
-  background: rgba(255, 204, 53, 0.4);
+  background-color: rgba(255, 204, 53, 0.4);
   transform: skew(9deg, 0deg);
+}
+
+h2:before {
+  content: "";
+  background-color: rgba(255, 204, 53, 0.4);
+  position: absolute;
+  height: 100%;
+  width: 720px;
+  left: -30px;
+  right: -20px;
+  z-index: -1;
 }
 
 .company-info-paragraph {
@@ -180,4 +205,51 @@ h2 {
   width: 560px;
   height: 120px;
   text-align: center;
+}
+
+#features-container {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-evenly;
+}
+
+.features-img {
+  width: 50px;
+  height: 80px;
+}
+
+.features {
+  text-align: center;
+  margin: 25px;
+  text-align: left;
+}
+
+h4 {
+  color: #fb3e44;
+}
+
+h4:hover {
+  color: #971014;
+  cursor: pointer;
+}
+
+.features-parag {
+  text-align: left;
+}
+
+.create-btn {
+  font-weight: bold;
+  font-size: 17px;
+  border: none;
+  padding: 20px 200px;
+  background-color: #000000;
+  color: #ffff;
+  box-shadow: 5px 10px #f0ebcc;
+  margin-bottom: 10%;
+}
+
+.create-btn:hover {
+  background-color: #f5f4f1;
+  color: black;
+  cursor: pointer;
 }
