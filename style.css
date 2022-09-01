@@ -28,9 +28,25 @@ nav a {
   color: black;
 }
 
+nav a:hover {
+  color: grey;
+}
+
 .blackHeart {
   width: 20px;
   margin-right: 1rem;
+}
+
+.blackHeart:hover {
+  color: grey;
+}
+
+#name:hover {
+  color: grey;
+}
+
+.form {
+  margin-top: 1%;
 }
 
 .glass {
@@ -39,11 +55,9 @@ nav a {
 
 .logo {
   width: 4em;
-  margin-right: 1rem;
 }
 
 input {
-  margin-top: 1%;
   border: none;
   padding: 10px 15px;
   width: 1000px;
@@ -137,4 +151,33 @@ h1 {
 .free-btn:hover {
   border: 1px solid lightgrey;
   padding: 15px 25px;
+}
+
+#company-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hexagon {
+  width: 200px;
+  text-align: center;
+  display: block;
+  padding: 40px;
+}
+
+h2 {
+  font-size: 28px;
+  font-style: italic;
+  background: rgba(255, 204, 53, 0.4);
+  transform: skew(9deg, 0deg);
+}
+
+.company-info-paragraph {
+  margin-top: 1%;
+  font-size: 13px;
+  width: 560px;
+  height: 120px;
+  text-align: center;
 }
