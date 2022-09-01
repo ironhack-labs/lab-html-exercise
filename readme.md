@@ -79,7 +79,7 @@ We could try to represent this part of the website with the following:
 <header>
   <div>
     <div>
-      <img class="blackHeart" src="LINK TO IMAGE GOES HERE" alt="black heart" />
+      <img class="blackHeart" src="black-heart.png" alt="black heart" />
       <span> Nifty Penguin Magic </span>
     </div>
     <nav>
