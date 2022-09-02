@@ -1,97 +1,286 @@
 
-/* General*/
+/* --- General --- */
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
-body {
+html, body {
     font-family: 'Poppins' !important;
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+}
+a{
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
 }
 
-
-/* Header */
+/* --- Header --- */
 header > div {
+    height: 60px;
     padding: 0 25px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid lightgray;
-    height: 60px;
-  }
+}
   
-  #headerFirstRow {
+#headerFirstRow {
     font-weight: bold;
-  }
-  #headerSecondRow {
+}
+#headerSecondRow {
     gap: 10px;
-  }
-  nav {
+}
+nav {
     width: 600px;
-  }
-  
-  nav ul {
-    list-style: none;
+} 
+nav ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
+    list-style: none;
+}nav a:hover {
+    color: #fb3b49;
+	border-bottom: 3px dotted #000000;
+}
   
-  nav a,  #userActions a{
-    text-decoration: none;
-    color: black;
-  }
-  nav a:hover, #userActions a:hover{
-    cursor: pointer;
-  }
-  
-  .blackHeart {
+.blackHeart {
     width: 20px;
     margin-right: 1rem;
-  }
+}
 
-  #logo {
-    width: 50px;
-  } 
+#logo {
+    width: 50px;  
+} 
 
-  /*Form search */
+/* --- Form search --- */
 #searchBar, #searchButton{
-  border:none;
-  height: 70%;
+    height: 70%;
+    border:none;
 }
 
 #searchBar{
-  background-color: rgba(0,0,0,.05);
-  width: 100%;
-  padding: 0 3%;
-  font-size: 16px;
-  font-family: 'Poppins';
+    width: 100%;
+    padding: 0 3%;
+    background-color: rgba(0,0,0,.05);
+    font-size: 16px;
+    font-family: 'Poppins';
 }#lupa{
-  width: 25px;
-  position: absolute;
-  left: 5px;
+    width: 25px;
+    position: absolute;
+    left: 5px;
 }
 
 #searchButton{
-  color: white;
-  background-color: #fb3e44;
+    color: white;
+    background-color: #fb3e44;
+    cursor: pointer;
 }
-
-
-
 
 #searchBox {
-  position: relative;
-  height: 100%;
-  align-items: center;
-  display: flex;
-  width: 90%;
-  overflow: hidden;
+    height: 100%;
+    width: 85%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    overflow: hidden;
 }
 
-/* Botones registro*/
+/* ---  Botones registro --- */
 #userActions {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}#join {
-  border: solid 1px;
-  padding: 10px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 10px;
 }
+#join {
+    border: solid 1px;
+    padding: 5px;
+}#join:hover {
+    background-color: #fb3b49;
+    color: white;
+}
+
+
+
+/* --- CONTENT --- */
+section{
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+section article{
+    text-align: center;
+    line-height: 1.5em;
+}
+
+/*Section1*/
+#buildThings{
+    background-color: rgba(232,217,217,.3);
+    gap: 5px;
+}
+
+h1 {
+    font-size: 4em;
+    text-align: center;
+}
+
+#buildThings article {
+    width: 30%;
+}
+
+#buildThings__buttons {
+    width: 30%;
+    height: 10%;
+    padding: 20px 0;
+    display: flex;
+    gap: 15px;
+}#buildThings__buttons  a {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+#plansButton{
+    background-color: #FB3B49;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);  
+    color: #fff;
+}
+#joinButton{
+    font-weight: bold;  
+}
+/*Section2*/
+#openSource {
+    height: 500px;
+    gap: 15px;
+}
+#openSource h2{
+    padding: 5px 15px;
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+    font-style: italic;
+    font-size: 2em;
+}
+#openSource img{
+    height: 30%;
+}
+#openSource article{
+    max-width: 40%;
+}
+
+/*Section 3*/
+#infoElements{
+    padding: 15px 20px;
+    justify-content: unset;
+    gap: 15%;
+}
+#infoElementsContainer{
+    max-width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.boxElement {
+    padding: 10px;
+    align-items: center;
+    height: 200px;
+}
+.boxImage, h3{
+    height: 30px;
+}
+.boxImage{
+    width: 10%;
+}
+h3{
+    color: #ED1C24;
+}
+.boxText{
+    line-height: 1.5;
+}
+
+#createOrg{
+    height: 50px;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    color: white;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+}
+
+
+
+/* --- Mobile --- */
+@media only screen and (max-width: 600px) {
+    /*header*/
+    div#heartBox {
+        display: flex;
+        padding: 10px 0;
+    }
+
+    .blackHeart {
+        height: 20px !important;
+        width: unset;
+        align-self: center;
+    }
+    #lupa {
+        display: none;
+    }
+    #headerFirstRow {
+        flex-direction: column;
+        height: unset !important;
+    }
+
+    nav {
+        width: fit-content !important;
+    }ul {
+        padding: unset !important;
+    }li {
+        font-size: 0.8em;
+        padding: 5px;
+    }
+
+    /*section1*/
+    #infoElementsContainer {
+        flex-direction: column;
+        text-align: center;
+    }
+    h1 {
+        font-size: 3em;
+    }
+    article {    width: 90% !important;
+    }
+
+    #buildThings__buttons {
+        width: 90% !important;
+    }
+    /*Section2*/
+    h2 {
+        font-size: 1.5em !important;
+    }
+
+    #openSource article {
+        max-width: unset;
+    }
+
+    /*Section 3*/
+    .boxElement {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #infoElements {
+        gap: 5%;
+    }
+    #createOrg {
+        width: unset !important;
+        padding: 10px;
+        margin: 10px;
+    }
+  }
