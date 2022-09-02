@@ -22,18 +22,21 @@ header > div {
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid lightgray;
-}
-  
-#headerFirstRow {
-    font-weight: bold;
-}
-#headerSecondRow {
     gap: 10px;
 }
+
+.blackHeart {
+    width: 20px;
+    margin-right: 1rem;
+}
+#heartBox:hover {
+    color: #cccccc;
+}
+
+/*Nav*/
 nav {
     width: 600px;
-} 
-nav ul {
+}nav ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -41,11 +44,6 @@ nav ul {
 }nav a:hover {
     color: #fb3b49;
 	border-bottom: 3px dotted #000000;
-}
-  
-.blackHeart {
-    width: 20px;
-    margin-right: 1rem;
 }
 
 #logo {
@@ -62,18 +60,12 @@ nav ul {
     width: 100%;
     padding: 0 3%;
     background-color: rgba(0,0,0,.05);
-    font-size: 16px;
-    font-family: 'Poppins';
+    font-size: 13px;
+    font-family: monospace;
 }#lupa{
     width: 25px;
     position: absolute;
     left: 5px;
-}
-
-#searchButton{
-    color: white;
-    background-color: #fb3e44;
-    cursor: pointer;
 }
 
 #searchBox {
@@ -84,21 +76,30 @@ nav ul {
     align-items: center;
     justify-content: left;
     overflow: hidden;
+}#searchButton{
+    color: white;
+    background-color: #fb3e44;
+    cursor: pointer;
 }
 
 /* ---  Botones registro --- */
 #userActions {
     display: flex;
-    justify-content: right;
+    justify-content: center;
     align-items: center;
+    align-content: center;
+    justify-items: center;
     gap: 10px;
+    padding: 10px;
+    height: 100%;
+    min-width: 10%;
 }
+
 #join {
     border: solid 1px;
-    padding: 5px;
-}#join:hover {
-    background-color: #fb3b49;
-    color: white;
+    padding: 10px 15px;
+}#join:hover, #login:hover {
+    color: #cccccc;
 }
 
 
@@ -119,22 +120,22 @@ section article{
 /*Section1*/
 #buildThings{
     background-color: rgba(232,217,217,.3);
-    gap: 5px;
 }
 
 h1 {
-    font-size: 4em;
+    font-size: 5rem;
     text-align: center;
 }
 
 #buildThings article {
     width: 30%;
+    font-family: sans-serif;
 }
 
 #buildThings__buttons {
     width: 30%;
     height: 10%;
-    padding: 20px 0;
+    padding: 25px 0;
     display: flex;
     gap: 15px;
 }#buildThings__buttons  a {
@@ -145,6 +146,11 @@ h1 {
     display: flex;
     align-items: center;
 }
+
+#plansButton:hover {
+    background-color: black;
+    box-shadow: 8px 8px 0 rgb(128 83 35 / 20%);
+}
 #plansButton{
     background-color: #FB3B49;
     box-shadow: 8px 8px 0 rgba(251,59,73,.2);  
@@ -152,6 +158,9 @@ h1 {
 }
 #joinButton{
     font-weight: bold;  
+}#joinButton:hover {
+    color:  #FB3B49;
+   
 }
 /*Section2*/
 #openSource {
@@ -163,19 +172,18 @@ h1 {
     background-color: rgba(255,204,53,.4);
     transform: skew(9deg,0deg);
     font-style: italic;
-    font-size: 2em;
+    font-size: 2.25rem;
 }
 #openSource img{
     height: 30%;
 }
 #openSource article{
-    max-width: 40%;
+    max-width: 45%;
+    font-family: sans-serif;
 }
 
 /*Section 3*/
 #infoElements{
-    padding: 15px 20px;
-    justify-content: unset;
     gap: 15%;
 }
 #infoElementsContainer{
@@ -211,6 +219,9 @@ h3{
     background-color: #000;
     color: white;
     box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+}#createOrg:hover {
+    background: #fb3b49;
+    box-shadow: 8px 8px 0 rgb(0 0 0 / 22%);
 }
 
 
@@ -218,7 +229,11 @@ h3{
 /* --- Mobile --- */
 @media only screen and (max-width: 600px) {
     /*header*/
-    div#heartBox {
+    header {
+        overflow: hidden;
+    }
+    
+    #heartBox {
         display: flex;
         padding: 10px 0;
     }
@@ -244,7 +259,10 @@ h3{
         font-size: 0.8em;
         padding: 5px;
     }
-
+    
+    #userActions {
+        min-width: unset !important;
+    }
     /*section1*/
     #infoElementsContainer {
         flex-direction: column;
@@ -277,6 +295,7 @@ h3{
 
     #infoElements {
         gap: 5%;
+        height: unset;
     }
     #createOrg {
         width: unset !important;
