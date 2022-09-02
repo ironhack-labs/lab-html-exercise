@@ -11,7 +11,7 @@ In this exercise, the goal is to apply as many as possible of the concepts you'v
 - how to use flexbox to position elements on the page and
 - how to style the page.
 
-## Getting started
+## Getting started,.
 
 1. [Fork](https://gist.github.com/ironhack-edu/dd3635de73a6ef07ef337bf184eda985#step-1-fork-the-repository) this repo
 2. [Clone](https://gist.github.com/ironhack-edu/dd3635de73a6ef07ef337bf184eda985#step-2-clone-the-repository) this repo
