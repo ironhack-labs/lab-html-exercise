@@ -5,14 +5,23 @@ body {
     box-sizing: border-box;
 }
 
+section {
+    padding: 60px;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+
+}
 header>div {
     padding: 0 25px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: nowrap;
     border-bottom: 1px solid lightgray;
 }
-
 
 nav {
     width: 600px;
@@ -22,7 +31,7 @@ nav ul {
     list-style: none;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+
 }
 
 nav a {
@@ -50,7 +59,8 @@ article {
 }
 
 h1 {
-    font-size: 40px;
+    font-size: 50px;
+    
 }
 
 #flexboxes {
@@ -63,4 +73,37 @@ h1 {
 h4 {
     color:red;
 }
+
+.img_icon {
+    width: 35px;
+    margin-bottom: -10px;
+}
+#first_links{
+    margin: auto;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.black_button{
+    margin: auto;
+    padding: 15px;
+    background-color: black;
+    color: white;
+    width: 150px;
+    text-align: center;
+    box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.399);
+    
+}
+
+.red_button {
+    padding: 15px;
+    background-color: red;
+    color: white;
+    text-align: center;
+    box-shadow: 5px 5px 0px rgba(255, 0, 0, 0.399);
+}
+
+
 
