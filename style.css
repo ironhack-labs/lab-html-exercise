@@ -1,51 +1,51 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url("https://fonts.googleapis.com/css?family=Poppins");
 
 * {
-    box-sizing: border-box;
-  }
+  box-sizing: border-box;
+}
 
 body {
-  font-family: 'Poppins';
+  font-family: "Poppins";
 }
 
 header > div {
-    padding: 0 25px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid lightgray;
-  }
-  
-  nav {
-    width: 600px;
-  }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  nav a {
-    text-decoration: none;
-    color: black;
-  }
-  
-  .blackHeart {
-    width: 20px;
-    margin-right: 1rem;
-  }
+  padding: 0 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+}
 
-   .form {
-    padding: 10px;
-    font-size: 17px;
-    float: left;
-    width: 80%;
-    background: #f1f1f1;
-  }
+nav {
+  width: 600px;
+}
 
-  #searchButton {
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+.blackHeart {
+  width: 20px;
+  margin-right: 1rem;
+}
+
+.form {
+  padding: 10px;
+  font-size: 17px;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+.searchButton {
   float: right;
   width: 7%;
   padding: 10px;
@@ -55,49 +55,101 @@ header > div {
   border: 1px solid grey;
   border-left: none; /* Prevent double borders */
   cursor: pointer;
+}
+
+.joinButton {
+  margin-left: 5px;
+}
+
+#logo {
+  width: 60px;
+  margin-right: 1rem;
+}
+
+.searchIcon {
+  width: 30px;
+  margin-right: 1rem;
+}
+
+.headerLinks {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.firstSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  height: 600px;
+  background-color: rgba(232, 217, 217, 0.3);
+}
+
+article {
+    width: 30%;
+    text-align: center;
+    margin-bottom: 50px;
   }
-
-   .joinButton {
-    margin-left: 5px;
-
+  
+  .firstTitle {
+    font-size: 80px;
+    margin-bottom: 0;
+  }
+  
+  .plansButton {
+      background-color: #FB3B49;
+      text-decoration: none;
+      color: white;
+      width: 70px;
+      padding: 10px;
+      margin-right: 20px;
+      box-shadow:  8px 8px 0 rgba(251,59,73,.2);
+  
+  }
+  
+   .joinFreeButton {
+      text-decoration: none;
+      color: black;
    }
-
-  #logo{
-    width:60px;
-    margin-right: 1rem;
-}
-
- .searchIcon{
-    width:30px;
-    margin-right: 1rem;
-}
-
- #headerLinks{
-    display: flex;
-    justify-content: right;
-    align-items: center;
- }
-
-  .firstSection{
+  
+.secondSection{
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 20px;
     height: 600px;
-    background-color: rgba(232,217,217,.3)
-  }
-
-  article {
-    width: 30%;
+    background-color: white;
     text-align: center;
-    margin-bottom: 50px;
-  }
+    margin-top: 20px;
+}
 
-  .firstTitle{
-    font-size: 80px;
-    margin-bottom: 0;
-  }
+.triangleHexagon{
+    height: 200px;
+    margin-top: 50px;
 
-   .plansButton{
-    
-   }
+}
+
+.secondTitle{
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: rgba(255,204,53,.4);
+    transform:skew(9deg,0deg);
+    font-style: italic
+}
+.secondDescription{
+    width: 30%;
+    font-size: 0.7em;
+}
+
+.thirdSection{
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    margin: 20px;
+    height: 600px;
+    background-color: white;
+    text-align: center;
+    margin-top: 20px;
+}
