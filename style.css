@@ -39,7 +39,7 @@ header > div {
   }
 
   .glass-img {
-    height: 32px;
+    height: 42px;
     background-color: rgba(0,0,0,.05);
 
   }
@@ -51,9 +51,11 @@ header > div {
 
   .search-bar {
     
-    width: 1100px;
+    width: 1500px;
+    height: 50px;
     display: flex;
     align-items: center;
+    margin: 10px;
   
   
   }
@@ -61,12 +63,13 @@ header > div {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    width: 1000px;
+    width: 1500px;
+
 
   }
   .search-bar > form > input{
-   height: 30px;
-   width: 900px;
+   height: 40px;
+   width: 1500px;
    border: none;
   }
 
@@ -75,16 +78,45 @@ header > div {
     color: white;
     border: none;
     width: 100px;
-    height: 30px;
+    height: 42px;
 
   }
 
   .join-login {
     width: 150px;
-    height: 25px; 
+    height: 50px; 
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+  
 
+  }
+
+  .join-button {
+    background-color: transparent;
+    border: 1px solid black;
+    padding: 5px 15px;
+    font-size: 13px;
+    height: 30px;
+    margin: 0 15px;
+  }
+
+  .join-button > a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+
+  .login-button {
+    border: none;
+    background-color: transparent;
+  }
+
+  .login-button > a {
+    text-decoration: none;
+    font-size: 13px;
+    color: black;
+    font-weight: bold;
   }
   
   header > div > div > a {
@@ -98,6 +130,11 @@ header > div {
     width: 60px;
     height: 25px;
   }
+
+  /**/
+    section {
+        margin: 25px;
+    }
 
   #join-plan {
     height: 600px;
@@ -144,14 +181,14 @@ header > div {
     font-weight: bold;
   }
 
-  .join-button {
+  .join-free-button {
     background-color: transparent;
     border: none;
     padding: 15px 32px;
     font-size: 16px;
   }
 
-  .join-button > a {
+  .join-free-button > a {
     text-decoration: none;
     color: black;
     font-weight: bold;
@@ -160,8 +197,9 @@ header > div {
   }
 
   /**/
+
   #quote {
-    height: 600px;
+    height: 400px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -215,17 +253,71 @@ header > div {
     font-weight: bold;
   }
 
-  .join-button {
+  .join-free-button {
     background-color: transparent;
     border: none;
     padding: 15px 32px;
     font-size: 16px;
   }
 
-  .join-button > a {
+  .join-free-button > a {
     text-decoration: none;
     color: black;
     font-weight: bold;
-   
-   
+  }
+
+  /**/
+
+  #footer {
+    height:600px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+  }
+
+   h4 {
+    font-size: 16px;
+    color: red;
+   }
+  #footer > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 25px 500px;
+  }
+
+  #footer > div > div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 25px;
+    font-size: 13px;
+  }
+
+  #footer > div > div > img {
+    width: 40px;
+    margin: 15px 0;
+    
+  }
+
+  #footer > div > div > p {
+    width: 200px;
+    
+    
+  }
+  .org-button {
+    background-color: black;
+    border: none;
+    box-shadow:  8px 8px 0 rgba(128,83,35,.2);
+    width: 300px;
+    height: 50px;
+    padding: 15px 32px;
+    font-size: 16px;
+  }
+  .org-button > a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
   }
