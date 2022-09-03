@@ -1,0 +1,269 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* PLEASE READ: I've added the prints of how I see the website, has I'm almost sure that it will change seeing on a diferent screen size than the one I have made it */
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body {
+  font-family: 'Poppins';
+}
+
+header > div {
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+}
+  
+nav {
+ width: 600px;
+}
+  
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+  
+nav a {
+  text-decoration: none;
+  color: black;
+}
+  
+.blackHeart {
+  width: 20px;
+  margin-right: 1rem;
+}
+
+/*search bar */
+
+.search-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#npm {
+    width: 120px;
+}
+
+#magnifying-glass{
+    position: absolute;
+    width: 20px;
+    padding-left: 160px;
+}
+
+.search-bar input {
+    width: 80%;
+    height: 50px;
+    background-color: rgba(0,0,0,.05);
+    background-image: url(images\magnifying-glass.png); /*this didn't worked and I don't know why :c */
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding-left: 40px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    border: none;
+    border-radius: 5px;
+    margin-right: none;
+}
+
+.search-bar button {
+    background-color: #fb3e44;
+    color: white;
+    border: none;
+    height: 50px;
+    padding: 20px 30px;
+    margin-left: 80.8%;
+    position: absolute;
+    font-size: 20px;
+    text-align: center;
+    vertical-align: middle; /* Can't seem to center the lettering */
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.search-bar #join-btn {
+    color: black;
+    border: 1px solid black;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.search-bar #log-in-btn {
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+/* section intro*/
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgba(232,217,217,.3);
+    height: 600px;
+}
+
+.intro h1 {
+    font-weight: bolder;
+    font-size: 100px;
+    margin-bottom: 0px;
+    margin-top: 60px;
+}
+
+.intro p {
+    width: 750px;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 100px;
+    margin-top: 50px;
+    margin-bottom: 70px;
+}
+
+.intro #see-plans {
+    background-color: #FB3B49;
+    color: white;
+    border: none;
+    padding: 20px 90px;
+    text-decoration: none;
+    font-size: 35px;
+    font-weight: bolder;
+    box-shadow: 10px 10px 0px 0px rgba(251,59,73,0.3);
+    margin-right: 30px;
+    margin-top: 30px;
+}
+
+.intro #join-btn {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 20px 90px;
+    text-decoration: none;
+    font-size: 35px;
+    font-weight: bolder;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+/*section description*/
+
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.description .exagon {
+    margin-top: 100px;
+    width: 300px;
+}
+
+.description h2 {
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+    font-style: italic;
+    font-size: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.description p {
+    font-size: 20px;
+    text-align: center;
+    width: 980px;
+}
+
+/*section features*/
+
+.boxes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.boxes #zero-configuration {
+    width: 250px;
+    padding-right: 70px;
+}
+
+.boxes #team-management {
+    width: 250px;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.boxes #familiar-features {
+    width: 250px;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.boxes #npm-audit {
+    width: 250px;
+    padding-left: 70px;
+    
+}
+
+.boxes img {
+    width: 50px;
+}
+
+.boxes h3 {
+    color: #ED1C24;
+}
+
+.features-section .create-org {
+    
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: baseline;
+	align-content: space-evenly;
+}
+
+.create-org a {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    align-self: center;
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 15px 150px;
+    text-decoration: none;
+    font-weight: bolder;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+}
+
+
+
