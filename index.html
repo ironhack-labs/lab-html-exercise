@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>npm</title>
+        <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
@@ -26,44 +27,65 @@
                 </nav>
             </div>
             <div>
-                <img src="images/npm-logo.png" alt="npm logo">
+                <img id="npm-logo" src="images/npm-logo.png" alt="npm logo">
                 <div>
                     <form>
-                        <img src="images/magnifying-glass.png" alt="magnifying glass">
-                        <input type="text" placeholder="Search packages">
-                        <input type="submit" value="search">
+                        <img id="magnifying-glass" src="images/magnifying-glass.png" alt="magnifying glass">
+                        <input id="search-box" type="text" placeholder="Search packages">
+                        <input id="search-button" type="submit" value="search">
+                        <a class="button" href="#">Join</a>
+                        <a class="button" href="#">Log In</a>
                     </form>
                 </div>
-                <a href="#">Join</a>
-                <a href="#">Log In</a>
+                
             </div>
         </header>
-        <section>
+
+        <section id="section1">
             <h1>Build amazing things</h1>
             <p>Essential JavaScript development tools that help you go to market faster and build powerful applications using modern open source code.</p>
-            <a href="">See plans</a>
-            <a href="">Join for free</a>
+            <div id="sec1-buttons">
+                <button id="plans" href="#">See plans</button>
+                <button id="join" href="#">Join for free</button>
+            </div>
         </section>
-        <section>
-            <img src="images/triangle-hexagon.svg" alt="triangle hexagon">
+
+        <section id="section2">
+            <img id="triangle" src="images/triangle-hexagon.svg" alt="triangle hexagon">
             <h1>Bring the best of open source to your company</h1>
             <p> npm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers already use it. 
             Your company depends on it. Create an Org and get more out of the tools your team already knows and loves.</p>
         </section>
-        <section>
-            <img src="images/zero-configuration.svg" alt="zero configuration">
-            <h1>Zero configuration</h1>
-            <p>Create an org, add your team, and start collaborating. Nothing to configure, set up, or manage.</p>
-            <img src="images/team-management.svg" alt="team management">
-            <h1>Team management</h1>
-            <p>Control who has access to what modules within your team namespace using straightforward team management capabilities.</p>
-            <img src="images/familiar-features.svg" alt="familiar features">
-            <h1>Familiar features</h1>
-            <p>npm Orgs has 100% parity with all the public npm registry features your developers already use.</p>
-            <img src="images/npm-audit.svg" alt="npm audit">
-            <h1>npm audit</h1>
-            <p>Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer.</p>
-            <a href="">Create an Org</a>
+
+        <section id="section3">
+            <div>
+            <article>
+                <img src="images/zero-configuration.svg" alt="zero configuration">
+                <h1>Zero configuration</h1>
+                <p>Create an org, add your team, and start collaborating. Nothing to configure, set up, or manage.</p>
+            </article>
+            <article>
+                <img src="images/team-management.svg" alt="team management">
+                <h1>Team management</h1>
+                <p>Control who has access to what modules within your team namespace using straightforward team management capabilities.</p>
+            </article>
+            <article>
+                <img src="images/familiar-features.svg" alt="familiar features">
+                <h1>Familiar features</h1>
+                <p>npm Orgs has 100% parity with all the public npm registry features your developers already use.</p>
+            </article>
+            <article>
+                <img src="images/npm-audit.svg" alt="npm audit">
+                <h1>npm audit</h1>
+                <p>Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer.</p>
+            </article>
+            
+            </div>
+            <div class="org-button">
+                <button id="org">Create an Org</button>
+            </div>
+
         </section>
+
     </body>
 </html>
