@@ -5,83 +5,87 @@
       <link rel="stylesheet" href="./styles/style.css" />
     </head>
     <body>
-        <header id="main-header">
+        <header>
             <div id="header-nav">
                 <div id="nifty">
-                    <img src="./images/black-heart.png">
-                    <span id="nifty-span">NPM Clone Nifty Penguin Magic</h6>
+                    <img src="./images/black-heart.png" alt="black heart">
+                    <span id="nifty-span">Nifty Penguin Magic</h6>
                 </div>
                 <nav id="nav-bar">
                     <ul>
-                        <li>npm Enterprise</li>
-                        <li>Products</li>
-                        <li>Solutions</li>
-                        <li>Resources</li>
-                        <li>Docs</li>
-                        <li>Support</li>
+                        <li><a href="#">npm Enterprise</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">Solutions</a></li>
+                        <li><a href="#">Resources</a></li>
+                        <li><a href="#">Docs</a></li>
+                        <li><a href="#">Support</a></li>
                     </ul>
                 </nav>
             </div>
             <div id="header-search">
-                <img src="./images/npm-logo.png">
+                <img src="./images/npm-logo.png" alt="npm logo">
                 <div id ="form-container">
-                    <img src="./images/magnifying-glass.png">
-                    <form class="search-form" action="/search" method="get">
-                        <div class="search-form-container">
-                            <input type="text" name="search" value="Search packages" id="search-input">
+                    <img src="./images/magnifying-glass.png" alt="magnifying glass">
+                    <form action="" method="get">
+                        <div id="search-form-input-container">
+                            <input type="text" name="search" placeholder="Search packages" id="search-input">
                         </div>
-                        <div class="search-form-container">
+                        <div id="search-form-button-container">
                             <button type="submit">Search</button>
                         </div>
                    </form>
                 </div>
-                <div>
-                    <a href="#" class= "nav-link-btn">Join</a>
-                    <a href="#" class= "nav-link-btn">Lon in</a>
+                <div id ="link-container">
+                    <div id="join-link-button">
+                        <a href="#" class="nav-link-btn">Join</a>
+                    </div>
+                    <div>
+                        <a href="#" class="nav-link-btn">Log in</a>
+                    </div>
                 </div>
             </div>
         </header>
 
-        <section id="intro-section">
+        <section id="intro-section" class="section-shared-ui">
             <h1>Build amazing things</h1>
             <article>Essential JavaScript development tools that help you go to market faster and build powerful applications using
                 modern open source code.</article>
             <div>
-                <a href="#" class= "intro-link-btn">See plans</a>
+                <a href="#" id="see-plans-btn" class= "intro-link-btn">See plans</a>
                 <a href="#" class= "intro-link-btn">Join for free</a>
             </div>
         </section>
 
-        <section id="intro-section2">
-            <img src="./images/triangle-hexagon.svg">
+        <section id="intro-section2" class="section-shared-ui">
+            <img src="./images/triangle-hexagon.svg" alt="triangle hexagon">
             <h3>Bring the best of open source to your company</h3>
             <article>npm is the tool used by
                 over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it.
                 Create an Org and get more out of the tools your team already knows and loves.</article>
         </section>
 
-        <section id="services">
+        <section id="services" class="section-shared-ui">
             <div class="service-wrapper">
                 <div>
-                    <img src="./images/zero-configuration.svg" id="zero-conf">
+                    <img src="./images/zero-configuration.svg" class="service-svgs" alt="zero configuration">
                     <h4>Zero configuration</h4>
                     <p>Create an org, add
                         your team, and start collaborating. Nothing to configure, set up, or manage.</p>
                 </div>
                 <div>
-                    <img src="./images/team-management.svg" id="team-man">
+                    <img src="./images/team-management.svg" class="service-svgs" alt="team management">
                     <h4>Team management</h4>
                     <p>Control who has access to
                         what modules within your team namespace using straightforward team management capabilities.</p>
                 </div>
                 <div>
-                    <img src="./images/familiar-features.svg" id="fam-feat">
+                    <img src="./images/familiar-features.svg" class="service-svgs" alt="familiar features">
                     <h4>Familiar features</h4>
                     <p>npm Orgs
                         has 100% parity with all the public npm registry features your developers already use.</p>
                 </div>
                 <div>
-                    <img src="./images/npm-audit.svg" id="npm-audit">
+                    <img src="./images/npm-audit.svg" class="service-svgs" alt="npm audit">
                     <h4>npm audit</h4>
                     <p>Enjoy the security
                         auditing features built into the npm client, a zero-friction way to make open source software safer.</p>

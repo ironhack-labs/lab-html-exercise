@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body {
+    font-family: 'Poppins';
+    margin: 0;
+}
+
+header > div {
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+}
+
+#nav-bar {
+    width: 600px;
+}
+
+#nav-bar ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#nav-bar a {
+    text-decoration: none;
+    color: black;
+}
+
+#nifty img {
+    width: 20px;
+    margin-right: 1rem;
+}
+
+#header-search img {
+    width: 4rem;
+    margin-right: .5rem;
+}
+
+#form-container {
+    display: flex;
+    width: 75%;
+    height: 2.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-right: 2rem;
+    align-items: center;
+    background-color: rgba(0,0,0,.05);
+}
+
+#form-container img {
+    width: 20px;
+    height: 30px;
+    margin-right: .5rem;
+    margin-left: .5rem;
+}
+
+#form-container form {
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+#search-form-input-container {
+    width: 100%;
+}
+
+#search-form-input-container input {
+    background-color: transparent;
+    border-style: none;
+    width: 100%;
+}
+
+#search-form-input-container input:focus {
+    outline: none;
+}
+
+#search-form-input-container input::placeholder {
+    font-size: 1rem;
+}
+
+#search-form-button-container{
+    display: flex;
+    width: 5rem;
+    height: 100%;
+    align-items: center;
+}
+
+#search-form-button-container button{
+    width: 100%;
+    height: 100%;
+    border-style: none;
+    background-color: #fb3e44;
+    color: white;
+}
+
+#link-container {
+    display: flex;
+    width: 7rem;
+    height: 2rem;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#link-container > div {
+    height: 2rem;
+    width: 4rem;
+}
+
+.nav-link-btn {
+    height: 2rem;
+    width: 4rem;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    text-decoration: none;
+    color: black;
+}
+
+#join-link-button{
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+}
+
+.section-shared-ui {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(232,217,217,.3);
+    width: 100%;
+    height: 600px;
+}
+
+#intro-section > h1 {
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: 0;
+}
+
+#intro-section > article {
+    width: 30%;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+#intro-section > div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 5rem;
+    width: 30%;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.intro-link-btn {
+    width: 50%;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#see-plans-btn {
+    height: 3rem;
+    background-color: #FB3B49;
+    color: white;
+    box-shadow: 8px 8px 0 rgb(251 59 73 / 20%);
+}
+
+#intro-section2 {
+    background-color: white;
+}
+
+#intro-section2 img {
+    width: 15rem;
+    height: 15rem;
+    margin-bottom: 2rem;
+}
+
+#intro-section2 h3 {
+    background-color: rgba(255,204,53,.4);
+    width: 800px;
+    text-align: center;
+    font-size: 2rem;
+    font-style: italic;
+    transform: skew(9deg,0deg);
+}
+
+#intro-section2 article {
+    width: 650px;
+    font-size: 1rem;
+    text-align: center;
+}
+
+#services {
+    background-color: white;
+}
+
+.service-svgs {
+    width: 2rem;
+    height: 2rem;
+}
+
+.service-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 90%;
+    margin-bottom: 4rem;
+}
+
+.service-wrapper > div {
+    width: 25%;
+    margin-right: .5rem;
+    margin-left: .5rem;
+}
+
+.service-wrapper div > p {
+    font-size: .9rem;
+}
+
+.service-wrapper div > h4 {
+    color: #ED1C24;
+}
+
+#services a {
+    background-color: black;
+    width: 17rem;
+    height: 2.5rem;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+}
