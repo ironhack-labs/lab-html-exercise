@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
+/* RESET */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/*
+html,
+body {
+  height: 100%;
+}
+*/
+
+/* Make images easier to work with */
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+/* MY STYLE */
+
+:root {
+  /* font sizes */
+
+  --fs-small: 0.875rem;
+  --fs-medium: 1rem;
+  --fs-large: 2rem;
+  --fs-x-large: 4.375rem;
+
+  /* colors */
+
+  --clr-accent: #fb3b49;
+  --clr-shadow: rgba(251, 59, 73, 0.2);
+}
+
+/* General styling */
+
+body {
+  font-family: "Poppins";
+  font-size: var(--fs-medium);
+}
+
+header {
+  font-size: var(--fs-small);
+}
+
+/* Utility classes */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.bg-light {
+  background-color: rgba(232, 217, 217, 0.3);
+}
+
+/* Header & Nav */
+
+header > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  border-bottom: 1px solid lightgray;
+}
+
+#nav-quote img,
+#nav-quote p {
+  display: inline-block;
+}
+
+#nav-quote img {
+  width: 20px;
+  margin-right: 1rem;
+}
+
+#nav-quote p {
+  color: gray;
+}
+
+nav {
+  width: 600px; /* cambiar apretando pa la dcha sin fijar width */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+.npm-logo {
+  height: 20px;
+}
+
+header form {
+  width: 100%;
+}
+
+/*
+1. Allow form's children to grow taking advantage of flexbox's behavior
+2. Embed icon within input with absolute pos. (not flex effect since removed from block flow)
+3. Enforce search bar to take all available width
+4. Prevent links from wrapping due to #1 + #3 (e.g. "Log in" from spanning over 2 lines)
+*/
+
+.secondary-navigation form {
+  display: flex;
+  flex-grow: 1;
+  position: relative;
+}
+
+.secondary-navigation form img {
+  position: absolute;
+  height: 18px;
+  left: 3px;
+  top: 3px;
+}
+
+.search-bar {
+  width: 100%;
+  padding-left: 24px;
+}
+
+.secondary-navigation a {
+  white-space: nowrap;
+}
+
+/* Hero section */
+
+#hero *,
+#intro * {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#hero h1 {
+  font-size: var(--fs-x-large);
+  font-weight: bold;
+}
+
+#hero p {
+  max-width: 50ch; /* line length around 50 char */
+}
+
+/* Intro section */
+
+#intro img {
+  height: 200px;
+}
+
+#intro h2 {
+  font-size: var(--fs-large);
+  font-weight: bold;
+}
+
+#intro p {
+  font-size: var(--fs-small);
+  max-width: 80ch; /* comfortable length for readability around 80 char */
+  margin: 0 auto;
+}
+
+/* Features section */
+
+#features > div {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 1.5rem;
+  flex-wrap: wrap; /* not convinced about the layout with just 3 feats/row */
+}
+
+.feature {
+  max-width: 23%; /* clamp and the like? */
+}
+
+.feature img {
+  height: 28px;
+}
+
+.feature h3,
+.feature p {
+  font-size: var(--fs-small);
+  padding: 0.5rem 0;
+}
+
+.feature h3 {
+  color: var(--clr-accent);
+  font-weight: bold;
+}
