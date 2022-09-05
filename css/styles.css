@@ -16,6 +16,7 @@ header > div {
     padding: 0;
     display: flex;
     justify-content: baseline;
+    box-sizing: border-box;
   }
 
   nav {
@@ -43,7 +44,7 @@ header > div {
     width: 60px;
   }
   .lupa {
-    width: 15px;
+    width: 20px;
   }
 
   .title {
@@ -53,6 +54,8 @@ header > div {
   }
 
   form {
+    display: flex;
+    box-sizing: border-box;
     width: 80%;
     margin: 0%;
     padding: 0%;
@@ -60,13 +63,14 @@ header > div {
 
   form > input {
     width: 90%;
-    height: 1.8rem;
-    margin: 0;
+    margin-left: 10px;
     padding: 0;
+    border: none;
+    box-sizing: border-box;
+    font-size: x-large;
   }
 
   form > button {
-    height: 2.4rem;
     width: 7.5%;
     background-color: red;
     color: white;
@@ -75,6 +79,7 @@ header > div {
     padding: 0;
     font-size: large;
     font-weight: bold;
+    height: 50px;
   }
 .hexagono {
     margin: 40px;
