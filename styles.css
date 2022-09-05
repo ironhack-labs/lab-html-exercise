@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
-
+html,
+body {
+	margin: 0;
+}
 body {
 	font-family: 'Poppins';
 }
@@ -20,7 +23,7 @@ nav ul {
 	justify-content: space-between;
 	align-items: center;
 }
-nav a {
+a {
 	text-decoration: none;
 	color: black;
 }
@@ -93,11 +96,10 @@ a#join {
 	height: 600px;
 	background-color: rgba(232, 217, 217, 0.3);
 	gap: 2rem;
+	box-shadow: inset 0 0 0.2rem rgb(0 0 0 / 30%);
 }
 
 #build-things a {
-	text-decoration: none;
-	color: black;
 	padding: 1rem 3rem;
 }
 
@@ -122,4 +124,68 @@ a#plans {
 	width: 25rem;
 	flex-direction: row;
 	justify-content: space-evenly;
+}
+
+#open-source {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 800px;
+	gap: 2rem;
+}
+
+#open-source img {
+	width: 15rem;
+}
+
+#open-source h2 {
+	font-weight: 900;
+	font-size: 32px;
+	line-height: 1em;
+	margin: 2rem 0 0 0;
+	background-color: rgba(255, 204, 53, 0.4);
+	transform: skew(9deg, 0deg);
+	font-style: italic;
+	padding: 0 2rem;
+}
+#open-source article {
+	width: 45rem;
+	text-align: center;
+}
+
+#longbox {
+	display: flex;
+	gap: 2rem;
+	justify-content: space-evenly;
+}
+.card {
+	padding: 0 1.5rem 1.5rem 1.5rem;
+	width: 16rem;
+}
+
+.card img {
+	width: 2rem;
+}
+
+.card h3 {
+	color: #ed1c24;
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+}
+
+#four-boxes {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 600px;
+	gap: 5rem;
+}
+
+#create-org {
+	background-color: black;
+	box-shadow: 8px 8px 0 rgba(128, 83, 35, 0.2);
+	color: white;
+	padding: 1rem 10rem;
+	font-weight: 900;
 }
