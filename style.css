@@ -91,7 +91,7 @@ button {
 
 .btn-primary,
 .btn-secondary {
-  display: inline-block; /* so as to be able to give same widths to both btns */
+  display: inline-block; /* block behavior to be able to give both btns same width */
   min-width: 18ch;
   margin-left: 0.925rem;
   margin-right: 0.925rem;
@@ -109,11 +109,11 @@ button {
 }
 
 .btn-third {
-  display: block; /* center btn w/o extra div + independent of section's left-aligned text */
+  display: block; /* center btn w/o div + independent of section's left-aligned text */
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  max-width: 30ch; /* approx same as btn primary + secondary */
+  max-width: 30ch; /* roughly btn primary + secondary */
   color: white;
   background-color: black;
   box-shadow: 8px 8px 0 rgba(128, 83, 35, 0.2);
@@ -145,7 +145,7 @@ header > div {
 
 #nav-quote img,
 #nav-quote p {
-  display: inline-block; /* display heart + quote side by side */
+  display: inline-block; /* heart icon + quote side by side */
 }
 
 #nav-quote img {
@@ -171,17 +171,17 @@ nav ul {
 
 /*
 1. Allow form's children to grow taking advantage of flexbox's behavior
-2. Embed icon within input with absolute + no flex effect since removed from block flow
+2. Absolute: embed icon within input + remove from block flow (no flex effect)
 3. Enforce search bar to take all available width
 */
 
-.secondary-navigation form {
+.secondary-nav form {
   display: flex;
   flex-grow: 1;
   position: relative;
 }
 
-.secondary-navigation form img {
+.secondary-nav form img {
   position: absolute;
   height: 1.25em;
   left: 0.625em;
@@ -190,7 +190,7 @@ nav ul {
 
 .search-bar {
   width: 100%;
-  padding-left: 2rem; /* accommodate magnifying glass icon w/i the bar */
+  padding-left: 2rem; /* accommodate magnifying glass w/i the input */
   margin-right: 2px;
   border: none;
   background-color: rgba(0, 0, 0, 0.05);
@@ -236,7 +236,7 @@ nav ul {
 #intro h2 {
   font-size: var(--fs-large);
   font-weight: bold;
-  padding-left: 1em; /* give extra side room for colored bg */
+  padding-left: 1em; /* extra side room for colored bg */
   padding-right: 1em;
   margin: 1.5em auto 1em auto;
   background-color: #ffebb5;
@@ -244,7 +244,7 @@ nav ul {
 
 #intro p {
   font-size: var(--fs-small);
-  max-width: 80ch; /* comfortable length for readability around 80 char */
+  max-width: 80ch; /* max comfortable length for readability */
   margin: 0 auto;
 }
 
@@ -256,8 +256,8 @@ nav ul {
 }
 
 /*
-Responsive layout with 3 feats/row is meh! Ideally, it'd go from
-4 feats/row directly to 2 wide feats/row instead of 3 narrow feats/row
+Responsive layout with 3 feats/row is meh! Ideally, it'd go directly
+from 4 feats/row to 2 wide feats/row instead of 3 narrow feats/row
 */
 
 #features > div {
@@ -268,23 +268,23 @@ Responsive layout with 3 feats/row is meh! Ideally, it'd go from
   flex-wrap: wrap;
 }
 
-.feature {
+.feat {
   min-width: 160px;
   max-width: 24%;
-  margin-bottom: 1rem; /* space bw feats when responsive wrapping */
+  margin-bottom: 1rem; /* space bw feats when responsive-wrapping */
 }
 
-.feature img {
+.feat img {
   height: 28px;
 }
 
-.feature h3,
-.feature p {
+.feat h3,
+.feat p {
   font-size: var(--fs-small);
   padding: 0.5rem 0;
 }
 
-.feature h3 {
+.feat h3 {
   color: var(--clr-accent);
   font-weight: bold;
 }
