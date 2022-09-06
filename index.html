@@ -11,11 +11,11 @@
     <header>
         <div id="top-header-bar">
             <div>
-                <img src="images/black-heart.png" alt="black heard icon">
+                <img class="heart-icon" src="images/black-heart.png" alt="black heard icon">
                 <span>Neverending Pun Machine</span>
             </div>
-            <nav class="nav">
-                <ul class="nav-elements">
+            <nav>
+                <ul id="nav-elements">
                     <li><a href="#">Enterprise</a></li>
                     <li><a href="#">Products</a></li>
                     <li><a href="#">Solution</a></li>
@@ -25,13 +25,14 @@
                 </ul>
             </nav>
         </div>
-        <hr>
         <div id="bottom-header-bar">
-            <img src="images/npm-logo.png" alt="npm-logo">
+            <img class="npm-logo" src="images/npm-logo.png" alt="npm-logo">
             <form id="search-bar">
-                <img src="/images/magnifying-glass.png" alt="search icon">
-                <input type="search" placeholder="Search packages">
-                <button type="submit">Search</button>
+                <div class="search-input-bar">
+                        <img class="search-icon" src="images/magnifying-glass.png" alt="search icon">
+                    <input class="search-input" type="search" placeholder="Search packages">
+                </div>
+                <button class="button-search"type="submit">Search</button>
             </form>
             <div id="subscription">
                 <button class="button-join" type="button">Join</button>
@@ -48,7 +49,7 @@
         </div>
     </section>
     <section id="description">
-        <img src="/images/triangle-hexagon.svg" alt="triangle-hexagon">
+        <img class="triangle-icon" src="images/triangle-hexagon.svg" alt="triangle-hexagon">
         <h2>Bring the best of open source to your company </h2>
         <p>npm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it. Create an Org and get more out of the tools your team already knows and loves.</p>
     </section>
