@@ -111,9 +111,9 @@ header > div {
 
 #building{
   display: flex;
-  border: 4px solid brown;
+  /* border: 4px solid brown; */
   padding: 1px;
- justify-content: center;
+  justify-content: center;
   font-size: 66px;
   width:  700px;
   margin: 15px;
@@ -123,13 +123,13 @@ header > div {
   display: flex;
   padding: 10px 20px;
   text-align: center;
-  border: 4px solid yellow;
+  /* border: 4px solid yellow; */
   width: 400px;
 }
 
 .links-section-1{
   width: 440px;
-  border: 4px solid red;
+  /* border: 4px solid red; */
   height: 110px;
   display: flex;
   flex-direction: row;
@@ -151,3 +151,113 @@ header > div {
   padding-right: 55px;
   font-weight: bold
 }
+
+/* SECTION 2 */
+
+#section-2{
+  display: flex;
+  flex-direction: column;
+  justify-content:space-evenly;
+  align-items: center;
+  height: 600px;
+}
+
+#img-hexagon{
+  width: 300px;
+  height: 300px;
+  padding: 28px;
+}
+
+.container-h3{
+  /* border: 3px solid brown; */
+  
+}
+
+#bring-source{
+  display: flex;
+  font-style: italic;
+  line-height: 28px;
+  font-weight: bold;
+  margin: 8px;
+  width: 700px;
+  padding: 1px  1px;
+  justify-content: center;
+  font-size: 28px;
+  background-color:  rgba(255, 204, 53, .4);
+  transform: skew(9deg,0deg);
+}
+
+.art-bringing{
+  /* border: 3px solid yellow; */
+  text-align:center;
+  width: 600px;
+  font-size: 12px;
+  padding: 0px 5px 5px 5px;
+  margin-bottom: 20px;
+  
+}
+
+/* SECTION 3 */
+#section-3{
+  height: 600px;
+}
+
+#four-containers{
+  display: flex;
+  flex-direction: row;
+  height: 400px;
+  align-items: center;
+  justify-content: center;
+}
+
+.info-container{
+  display: flex;
+  /* border: 4px solid red; */
+  width: 200px;
+  height: 200px;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 25px;
+  font-size: 13px;
+}
+
+p{ 
+  font-size: 16px;
+  color: red;
+  border: 1px solid brown;
+  width: 170px;
+  padding-left: 4px;
+}
+
+#four-containers > div > img{
+  width: 30px;
+  height: 30px;
+}
+
+#four-containers > .info-container > div{
+  width: 200px;
+}
+
+.button-container{
+  height: 100px;
+  display: flex;
+  padding: 15px 32px;
+  justify-content: center; 
+  
+}
+button{
+  height: 50px;
+  width: 300px;
+  border: 3px solid black;
+  font-size: 16px;
+  color: white;
+  box-shadow:  8px 8px 0 rgba(128,83,35,.2);
+  background-color: black;
+}
+
+button > a {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  font-family: 'poppins'
+  }
