@@ -1,0 +1,257 @@
+/* --- ESTILOS GENERALES --- */
+
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body {
+  font-family: 'Poppins';
+}
+
+/* --- HEADER --- */
+
+/* --- NAV --- */
+
+header > div {
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+  }
+
+nav {
+    width: 600px;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .blackHeart {
+    width: 20px;
+    margin-right: 1rem;
+  }
+
+/* --- SEARCH --- */
+
+.Busqueda {
+    display: flex;
+    align-items: center;
+}
+
+.npmLogo {
+    height: 25px;
+    
+}
+
+.searchBar {
+    background-color: rgba(0,0,0,.05);
+    display: flex;
+    align-items: center;
+    padding: 0px 0px 0px 10px;
+    margin: 15px;
+    flex-grow: 1;
+}
+
+.searchForm {
+    display: flex;
+    flex-grow: 1; 
+}
+
+.searchForm input {    
+    background-color: transparent;
+    border: 0;
+    font-family: 'Poppins';
+    flex-grow: 1;
+}
+
+.searchBar button {
+    height: 35px;
+    width: 70px;
+    background-color: #fb3e44;
+    border: 0;
+    color: white;
+    font-family: 'Poppins';
+}
+
+.lupa {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}
+
+.joinLogin {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0px 0px 0px 15px;
+}
+
+.join {
+    text-decoration: none;
+    color: black;
+    padding: 4px 20px;
+    border: 1px solid rgb(57, 57, 57);
+    border-radius: 2px;
+}
+
+.login {
+    text-decoration: none;
+    color: black;
+    padding: 4px 0px 4px 20px;
+}
+ 
+
+  /* --- SECCION 1 --- */
+
+.sec1 {
+    background-color: rgba(232,217,217,.3);
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sec1Title {
+    font-size: 5em;
+    font-weight:900;
+    margin-top: 150px;
+}
+
+.article {
+    width: 540px;
+    height: 130px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+}
+
+.sec1-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.25em;
+    margin-bottom: 150px;
+}
+
+.sec1Links {
+    width: 540px;
+    height: 130px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.seePlans, .joinForFree  {
+    text-decoration: none;
+    height: 64px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+
+.seePlans {
+    background-color: #FB3B49;
+    font-weight: bolder;
+    color: white;
+    box-shadow: 8px 8px 0px 0px rgba(251,59,73,.2);
+}
+
+.joinForFree {
+    background-color: white;
+    color: black;
+    font-weight: bolder;
+}
+
+
+  /* --- SECCION 2 --- */
+
+  .sec2 {
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .hexagon {
+    height: 250px;
+    width: 250px;
+    margin-bottom: 20px;   
+  }
+
+  .h2 {
+    font-size: 2.25em;
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+    font-style: italic;
+    padding: 0px 50px 0px 50px;
+  }
+
+  .fondotexto {
+    width: 900px;
+    height: 35px;
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+  }
+
+  .sec2 article{
+    width: 780px;
+    text-align: center;
+  }
+
+    /* --- SECCION 3 --- */
+
+  .sec3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 600px;
+  }
+
+  .sec3Div {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .sec3Div p {
+    font-size: 1.1em;
+  }
+
+  .sec3Div img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .sec3Div div {
+    width: 270px;
+    height: 200px;
+    padding: 30px;
+  }
+
+  .sec3Div h3 {
+    color:#ED1C24  ;
+  }
+
+  .create {
+    background-color: black;
+    color: white;
+    width: 300px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    box-shadow: 8px 8px 0px 0px rgba(128,83,35,.2);
+  }
