@@ -34,17 +34,16 @@ nav a {
 }
 
 form {
-    background-color: rgba(0,0,0,.05);
     display: flex;
     align-items: center;
-    width: 100%;
+    width: 90%;
 }
 
 form input {
     background-color: rgba(0,0,0,.05);
     border: none;
     padding: 8px;
-    width: 100%;
+    width: 90%;
 }
 
 form button {
@@ -64,11 +63,68 @@ form button {
 
 .lupa {
     width: 20px;
-    padding: 5px;
+    padding: 5.5px;
+    background-color: rgba(0,0,0,.05);
+}
+
+.link-join {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .link-join a {
+    text-decoration: none;
+    color: black;
+    font-size: 10px;
+    padding: 4px;
+}
+
+#paymentPlans {
     display: flex;
+    justify-content: center;
     align-items: center;
+    flex-direction: column;
+    height: 600px;
+    background-color: rgba(232,217,217,.3);
+}
+
+#paymentPlans h1 {
+    font-size: 60px;
+    display: flex;
+    font-weight: bold;
+}
+
+#paymentPlans article {
+    display: flex;
+    text-align: center;
+    width: 45%;
+    padding-bottom: 60px;
+    
+}
+
+#paymentPlans button {
+    padding: 10px 40px;
+}
+
+#paymentPlans div {
+    display: flex;
     justify-content: space-between;
+}
+
+.button-plans {
+    color: white;
+    border: none;
+    background-color: #FB3B49;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+.button-join {
+    color: black;
+    border: none;
+    background-color: white;
+    margin-left: 15px;
+    font-weight: bold;
 }
