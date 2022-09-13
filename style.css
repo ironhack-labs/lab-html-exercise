@@ -36,7 +36,7 @@ nav a {
 form {
     display: flex;
     align-items: center;
-    width: 90%;
+    width: 100%;
 }
 
 form input {
@@ -67,17 +67,30 @@ form button {
     background-color: rgba(0,0,0,.05);
 }
 
-.link-join {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
 .link-join button {
     text-decoration: none;
     color: black;
     font-size: 10px;
     padding: 4px;
+}
+
+.link-join {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.link-join-join {
+    background-color: white;
+    border-width: 0.2px;
+    padding: 0 15px;
+    margin-right: 10px;
+}
+
+.link-join-log {
+    background-color: white;
+    border: none;
+    padding: 0 15px;
 }
 
 #paymentPlans {
@@ -159,12 +172,13 @@ form button {
 
 #advantages {
     height: 500px;
+    margin-top: 60px;
 }
 
-.geral {
+#advantages .geral {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-evenly;
+    margin: 10px 40px 40px 5px;
 }
 
 .advantagesSection {
@@ -173,4 +187,31 @@ form button {
 
 #advantages h4 {
     color: #ED1C24;
+    font-size: 20px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+#advantages > div > div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 300px;
+    font-size: 15px;
+}
+
+#advantages .button-advantages {
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    border: none;
+    color: white;
+    background-color: black;
+    padding: 10px 70px;
+    font-size: 15px;
+    text-align: center;
+}
+
+#advantages .button-createorg {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
 }
