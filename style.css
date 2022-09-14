@@ -4,6 +4,28 @@ body {
   font-family: "Poppins";
 }
 
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 70px;
+}
+
+h2 {
+  font-size: 25px;
+  margin: 10;
+  width: 600px;
+  background-color: grey;
+  margin: 20px;
+  padding: 10px;
+}
+
+p {
+  font-size: 20px;
+  letter-spacing: 0;
+}
+
 /*header*/
 header > div {
   padding: 0 25px;
@@ -25,7 +47,6 @@ nav ul {
 }
 
 nav a {
-  text-decoration: none;
   color: black;
 }
 
@@ -33,6 +54,9 @@ nav a {
   width: 20px;
   margin-right: 1rem;
 }
+
+/*section search bar*/
+
 .header-bottom {
   display: flex;
   justify-content: space-evenly;
@@ -81,7 +105,7 @@ input {
   border: 1px solid black;
 }
 
-.without-border{
+.without-border {
   border: 0;
 }
 
@@ -95,4 +119,41 @@ button {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+}
+
+/*section general présentation*/
+
+.general-presentation {
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(232, 217, 217, 0.3);
+}
+
+.general-btn {
+  padding: 10px 50px;
+  margin: 10px;
+}
+
+.btn-div {
+  display: flex;
+  align-items: space-between;
+}
+
+.paragraph {
+  width: 550px;
+  text-align: center;
+  padding: 10px;
+}
+
+.see-plans-btn {
+  background-color: #fb3b49;
+  color: white;
+  box-shadow: 8px 8px 0 rgba(251, 59, 73, 0.2);
+}
+
+.join-btn {
+  color: black;
 }
