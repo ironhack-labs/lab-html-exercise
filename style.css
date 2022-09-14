@@ -35,30 +35,54 @@ nav a {
 }
 .header-bottom {
   display: flex;
+  justify-content: space-evenly;
 }
 
 form {
   display: flex;
-  margin: 0;
+  margin: 0 30px;
   align-items: center;
   flex-grow: 1;
 }
 
-.npm-logo{
-  width: 50 px;
+.npm-logo {
+  width: 20px;
+  margin-right: 1rem;
 }
 
 form img {
-  height: 20px;
-}
-
-input {
+  height: 16px;
   background-color: rgba(0, 0, 0, 0.05);
   margin: 3px 0 3px 3px;
   padding: 15px;
   border: 0;
+}
+
+input {
+  background-color: rgba(0, 0, 0, 0.05);
+  margin: 3px 0;
+  padding: 15px;
+  border: 0;
   font-size: 16px;
-  flex-grow:1
+  flex-grow: 1;
+}
+
+.link-btn {
+  color: black;
+  font-size: 1em;
+  letter-spacing: 0.5px;
+  text-align: center;
+  text-decoration: none;
+  padding: 5px 10px;
+  margin: 0 5px;
+}
+
+.with-border {
+  border: 1px solid black;
+}
+
+.without-border{
+  border: 0;
 }
 
 button {
