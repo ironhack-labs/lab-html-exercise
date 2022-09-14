@@ -1,7 +1,13 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins");
 
-body {
+body,
+h1,
+h2,
+h4,
+h5,
+p {
   font-family: "Poppins";
+  text-align: center;
 }
 
 a {
@@ -13,17 +19,24 @@ h1 {
 }
 
 h2 {
-  font-size: 25px;
-  margin: 10;
-  width: 600px;
-  background-color: grey;
-  margin: 20px;
-  padding: 10px;
+  font-size: 35px;
+  margin: 2px 20px;
+  background-color: rgba(255, 204, 53, 0.4);
+  padding: 10px 50px;
+  transform: skew(9deg, 0deg);
 }
-
-p {
+h3 {
   font-size: 20px;
-  letter-spacing: 0;
+}
+h4 {
+  font-size: 15px;
+  color: #ed1c24;
+}
+h5 {
+  font-size: 15px;
+  display: flex;
+  flex-direction: row;
+  text-align: left;
 }
 
 /*header*/
@@ -70,7 +83,7 @@ form {
 }
 
 .npm-logo {
-  width: 20px;
+  width: 60px;
   margin-right: 1rem;
 }
 
@@ -156,4 +169,62 @@ button {
 
 .join-btn {
   color: black;
+}
+
+/*last section with hexgon*/
+
+.hexagon {
+  height: 100px;
+}
+
+.services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.service-details {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 200px;
+  padding: 10px 20px;
+}
+
+.thumbnails {
+  height: 40px;
+  width: 40px;
+  padding: 10px;
+}
+
+.red-btn {
+  background-color: #fb3e44;
+  border: none;
+  color: white;
+  padding: 15px;
+  margin: 3px 3px 3px 0;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.black-btn {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 15px;
+  margin: 3px 3px 3px 0;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  box-shadow: 8px 8px 0 rgba(128, 83, 35, 0.2);
 }
