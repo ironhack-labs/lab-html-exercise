@@ -10,30 +10,35 @@ p {
   text-align: center;
 }
 
+p {
+  font-size: 20px;
+}
 a {
   text-decoration: none;
 }
 
 h1 {
   font-size: 70px;
+  padding-bottom: 0;
 }
 
 h2 {
   font-size: 35px;
-  margin: 2px 20px;
+  margin: 40px 20px;
   background-color: rgba(255, 204, 53, 0.4);
   padding: 10px 50px;
   transform: skew(9deg, 0deg);
 }
 h3 {
-  font-size: 20px;
+  font-size: 16px;
+  margin: 0 0 70px 0;
 }
 h4 {
-  font-size: 15px;
+  font-size: 12px;
   color: #ed1c24;
 }
 h5 {
-  font-size: 15px;
+  font-size: 12px;
   display: flex;
   flex-direction: row;
   text-align: left;
@@ -100,7 +105,7 @@ input {
   margin: 3px 0;
   padding: 15px;
   border: 0;
-  font-size: 16px;
+  font-size: 15px;
   flex-grow: 1;
 }
 
@@ -114,6 +119,16 @@ input {
   margin: 0 5px;
 }
 
+button {
+  height: 45px;
+  background-color: #fb3e44;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
 .with-border {
   border: 1px solid black;
 }
@@ -122,48 +137,39 @@ input {
   border: 0;
 }
 
-button {
-  background-color: #fb3e44;
-  border: none;
-  color: white;
-  padding: 15px;
-  margin: 3px 3px 3px 0;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-}
-
 /*section general présentation*/
 
 .general-presentation {
   height: 600px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-items: center;
   align-items: center;
   background-color: rgba(232, 217, 217, 0.3);
 }
 
 .general-btn {
-  padding: 10px 50px;
+  padding: 5px 60px;
   margin: 10px;
+  width: 150px;
+  font-size: 16px;
+  padding: 14px 30px;
+  margin: 3px;
 }
 
 .btn-div {
   display: flex;
-  align-items: space-between;
+  flex-direction: row;
+  align-items: space-evenly;
+  margin-top: 40px;
 }
 
 .paragraph {
-  width: 550px;
   text-align: center;
-  padding: 10px;
+  padding-bottom: 10px;
 }
 
 .see-plans-btn {
-  background-color: #fb3b49;
-  color: white;
   box-shadow: 8px 8px 0 rgba(251, 59, 73, 0.2);
 }
 
@@ -175,7 +181,7 @@ button {
 
 .hexagon {
   height: 300px;
-  padding: 30px 0 30px 0;
+  padding: 70px 0;
 }
 
 .services {
@@ -196,7 +202,7 @@ button {
   justify-content: flex-start;
   align-items: flex-start;
   width: 200px;
-  padding: 10px 20px;
+  padding: 10px 30px;
 }
 
 .thumbnails {
@@ -209,12 +215,10 @@ button {
   background-color: #fb3e44;
   border: none;
   color: white;
-  padding: 15px;
-  margin: 3px 3px 3px 0;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  box-shadow: 8px 8px 0 rgba(251, 59, 73, 0.2);
 }
 
 .black-btn {
@@ -226,6 +230,5 @@ button {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
   box-shadow: 8px 8px 0 rgba(128, 83, 35, 0.2);
 }
