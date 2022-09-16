@@ -1,241 +1,189 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:700|Roboto:100,300,700');
-
-html, body {
-	margin: 0;
-	padding: 0;
-}
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 body {
-	font-family: Roboto;
-	font-size: 10px;
-	line-height: 3.5em;
-	font-weight: 300;
+  font-family: 'Poppins';
+  margin: 0px;
 }
-
-h1, h2, h3, h4, h5, h6 {
-	font-family: Roboto Condensed;
+a {
+    text-decoration: none;
+    color: inherit;
 }
-h1 {
-	font-size: 9em;
-	text-align: center;
-	text-transform: uppercase;
+/* 
+form label color: rgba(0,0,0,.05)
+form input color: rgba(0,0,0,.05)
+form button background color: #fb3e44
+form button letters color: white 
+*/
+.btn-red {
+    color: #FFF;
+    background-color: #fb3e44;
 }
-h2 {
-	color: #FFF;
-	font-size: 5em;
-	text-align: center;
-	text-transform: uppercase;
-	line-height: 4em;
-	text-shadow: #020819 8px -20px 9px;
-}
-h3 {
-	margin: 0 auto;
-	font-size: 4.2em;
-	text-align: center;
-	line-height: 1em;
-}
-h4 {
-	margin-bottom: 15px;
-	font-size: 1.5em;
-	letter-spacing: 0.4px;
-	line-height: 1em;
-}
-h5 {
-	margin: 0 auto;
-	font-size: 1.2em;
-	line-height: 1em;
-}
-
-.nav-bar {
-	background-color: rgb(25,33,41);
-	padding-top: 14px;
-	padding-bottom: 14px;
-}
-.nav-bar-ul {
-	display: flex;
-	justify-content: space-evenly;
-	width: 1200px;
-	margin: 0 auto;
-}
-.nav-bar-ul li {
-	list-style-type: none;
-	text-align: center;
-}
-.nav-bar a {
-	color: #FFF;
-	text-decoration: none;
-	font-size: 2em;
+.btn-white {
+    background-color: #FFF;
 }
 .header {
-	position: relative;
-	padding-top: 50px;
-	height: 650px;
-	background-image: url("https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/ironhack-skydive-background.jpg");
-	background-repeat: no-repeat;
-	background-position: 0 0;
-	background-size: cover;
+    font-size: .8em;
 }
 
-.quote {
-	position: absolute;
-	left: 10%;
-	bottom: 100px;
-	font-size: 2.5em;
+header > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px;
+    border-bottom: 1px solid lightgray;
+}
+nav {
+    width: 600px;
+}
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+nav a {
+    text-decoration: none;
+    columns: #000;
+}
+.blackHeart {
+    width: 20px;
+    margin-right: 1rem;
 }
 
-.dark-background {
-	background-color: rgb(25,33,41);
-	color: #FFF;
+.header-search {
+}
+.npm-logo {
+    width: 5%;
+}
+.search-form {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: -webkit-fill-available;
+    height: 45px;
+    margin-left: 15px;
+}
+.search-icon {
+    position: absolute;
+    width: 18px;
+    left: 15px;
+}
+.search-form input {
+    width: 90%;
+    padding: 10px 40px;
+    border: 0px;
+    background-color: rgba(0,0,0,.05);
+}
+.search-form button {
+    width: 10%;
+    padding: 10px 15px;
+    border: 0px;
+}
+.header-user {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 15%;
+}
+.header-user .btn-join {
+    margin-right: 10px;
+    padding: 2px 15px;
+    border: 1px solid rgb(51, 51, 51);
+}
+.header-user .btn-login {
+    padding: 2px 0 2px 15px;
+    color: rgb(51, 51, 51);
 }
 
-/* Section 1 */
-#general-information {
-	display: flex;
-	justify-content: space-evenly;
+/* Section 1 
+"See plans" button background color: #FB3B49
+"See plans" button box shadow: 8px 8px 0 rgba(251,59,73,.2)
+*/
+#join-us {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    background-color: rgba(232,217,217,.3);
+    text-align: center;
 }
-#general-information .text {
-	margin: 20px auto;
-	font-size: 2em;
-	font-weight: 100;
-	text-align: center;
-}
-#general-information .container {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	width: 370px;
-}
-.container {
-	width: 1200px;
-	margin: 0 auto;
-	padding: 75px 0;
+h1 {
+    font-size: 4em;
+    font-weight: 700;
 }
 
-.link-btn {
-	padding: 10px 30px;
-	background-color: rgb(67,163,230);
-	color: #FFF;
-	font-family: Roboto Condensed;
-	font-size: 2em;
-	letter-spacing: 0.5px;
-	text-align: center;
-	text-decoration: none;
+#join-us article, .join-plans {
+    width: 40%;
+}
+.join-plans {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.join-plans a {
+    width: 40%;
+    padding: 10px;
+}
+.join-plans .btn-red {
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
 }
 
-/* Section 2 */
-#structure > div {
-	display: flex;
-	justify-content: space-between;
-	flex-direction: row;
-	flex-wrap: wrap;
+/* Section about us */
+#about-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 500px;
+    text-align: center;
 }
-.service-box {
-	width: 40%;
-	margin: 50px 5% 0 5%;
-	padding: 20px;
-	border: 2px solid #eee;
-	border-radius: 20px;
-	box-sizing: border-box;
-	box-shadow: 2px 2px 10px 0 #eee;
-	font-size: 1.7em;
-	text-align: center;
-}
-.service-box img {
-	width: 125px;;
+#about-us img {
+    width: 200px;
 }
 
-/* Section 3 */
-#team {
-	margin: 0 auto;
-	padding: 75px 0;
+#about-us > div {
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
 }
-#team > div {
-	display: flex;
-	justify-content: space-evenly;
+#about-us h2 {
+    margin: 0;
+    padding: 0px 40px;
+    transform: skew(-9deg,0deg);
 }
-#team > div > article {
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	align-items: center;
-}
-#team .section-text {
-	width: 60%;
-	margin: 10px auto;
-	font-size: 1.9em;
-	text-align: center;
-}
-#team .member-name {
-	font-size: 1.5em;
-	font-weight: 700;
-}
-#team img {
-	width: 250px;
-	height: 180px;
-}
-#team hr {
-	width: 40%;
-	margin: 20px auto 30px;
+#about-us article {
+    width: 45%;
+    font-size: .8em;
 }
 
-/* Section 4 */
-.schedule-table {
-	margin: 0 auto 40px;
-	font-size: 1.5em;
+/* Section features */
+#features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 400px;
 }
-.schedule-table th, td {
-	padding: 5px 10px;
-	text-align: center;
-	border-bottom: 1px solid #000;
-}
-
-.slot-form-container {
-	width: 40%;
-	margin: 18px auto 0;
-	font-size: 1.5em;
-	text-align: center;
-}
-.slot-form-container label {
-	margin: 5px;
-	line-height: 15px;
-}
-.slot-form-container input, .slot-form-container select {
-	width:  100%;
-	height: 20px;
-	padding: 3px;
-	outline: none;
-}
-.slot-form-container button {
-	margin-top: 15px;
-	padding: 9px;
-	color: black;
-	background-color: white;
-	border: 1px solid black;
+#features .features-container{
+    display: flex;
+    width: 80%;
+    margin-bottom: 20px;
+    font-size: .8em;
 }
 
-/* Footer */
-.footer {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	margin-bottom: 25px;
-	padding: 40px 100px;
-	font-size: 1.9em;
-	text-align: center;
+#features img {
+    width: 30px;
 }
-.address {
-	margin-bottom: 30px;;
-	font-size: 0.8em;
-	font-style: normal;
+.features-container article {
+    padding: 0 20px;
 }
-.footer a {
-	color: rgb(67,163,230);
-	text-decoration: none;
+.features-container h3 {
+    margin-bottom: 15px;
+    color: #ED1C24;
 }
-.footer ul {
-	padding: 0;
-	list-style: none;
-}
-.map-frame {
-	width: 60%;
-	height: 375px;;
+#features a {
+    padding: 10px 90px;
+    color: #FFF;
+    background-color: #000;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
 }
