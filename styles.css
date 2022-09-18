@@ -5,9 +5,8 @@ body {
 }
 
   .header {
-  height: 650px;
+  height: 800px;
   padding-top: 50px;
-  position: relative;
   background-color: azure;
 }
 
@@ -55,12 +54,14 @@ body {
     display: block;
     width: 50px;
    }
-  
-  h1 {
-    font-size: 0.9em;
-    text-align: right;
-    text-transform: uppercase;
-    margin-top: 0px;
+   
+   section-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    flex-direction: column;
+    padding: 10%;
    }
 
    h2 {
@@ -71,7 +72,7 @@ body {
    }
 
    h3 {
-    font-size: 10em;
+    font-size: 4em;
     text-align: center;
     text-transform: none;
     font-weight: 100;
@@ -79,10 +80,19 @@ body {
    }
 
    p-up {
-    font-size: 3em;
-    text-align: center;
-    text-transform: none;
-    margin-top: 0px
+    width: 60%;
+    margin: 10px auto;
    }
 
-  
+   link-header {
+   width: 60%;
+   margin: 10px auto;
+   text-align: center;
+   }
+
+   .nav {
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	align-items: right;
+   }
