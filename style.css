@@ -1,0 +1,227 @@
+/* https://developers.google.com/fonts/docs/css2 */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700');
+
+body {
+  margin: 16px 32px 16px;
+  font-family: 'Poppins';
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  margin: 0 0 16px;
+}
+
+.header-top {
+  margin: 8px 16px;
+  padding-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-top span {
+  margin-left: 16px;
+}
+
+.black-heart {
+  width: 20px;
+}
+
+.nav-bar {
+  width: 600px;
+  font-weight: 500;
+}
+
+.nav-bar-ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+}
+
+.nav-bar-ul a {
+  color: black;
+}
+
+.separator {
+  border-bottom: 1px solid lightgray;
+}
+
+.header-bottom {
+  margin: 16px 16px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.npm-logo {
+  width: 70px;
+  height: 20px;
+}
+
+#search {
+  display: flex;
+
+  /* allows flex container to grow and shrink */
+  flex-basis: auto;
+  flex-grow: 1;
+  flex-shrink: 1;
+
+  margin-left: 32px;
+}
+
+.magnifying-glass {
+  width: 20px;
+  height: 20px;
+  background-color: #f2f2f2;
+  padding: 8px 8px;
+}
+
+.header-bottom input {
+  background-color: #f2f2f2;
+  border: 0;
+  padding: 10px 0;
+  margin: 0;
+  font-family: monospace;
+
+  /* flex item will use all the space possible */
+  width: 100%;
+}
+
+.header-bottom button {
+  font-family: monospace;
+  color: white;
+  background-color: #fb3e44;
+  margin: 0;
+  border: none;
+  padding: 10px 10px;
+}
+
+.link-btn-bottom-header-container {
+  margin-left: 32px;
+  display: flex;
+  align-items: center;
+}
+
+.link-btn-bottom-header {
+  display: inline-block;
+  text-align: center;
+  color: black;
+  width: 64px;
+}
+
+.link-btn-join {
+  border: inset 1px black;
+  padding: 4px 8px;
+  margin-right: 8px;
+}
+
+#banner {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  margin: 0 auto 48px;
+  padding-bottom: 64px;
+  background-color: #f8f4f4;
+}
+
+#banner h1 {
+  font-size: 4.5em;
+  padding: 96px 0 48px;
+  margin: 0;
+  font-weight: 700;
+}
+
+#banner article {
+  font-size: 1.25rem;
+  max-width: 34rem;
+  margin-bottom: 16px;
+}
+
+.link-btn-banner-container {
+  margin: 50px 0;
+  display: flex;
+}
+
+.link-btn-banner {
+  padding: 1rem 4rem;
+  background-color: white;
+  color: black;
+}
+
+.link-btn-plans {
+  background-color: #fb3b49;
+  color: white;
+  box-shadow: 5px 5px #fad0d2;
+  margin-right: 25px;
+}
+
+#additional-information {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 64px;
+}
+
+#additional-information img {
+  width: 250px;
+  margin-bottom: 32px;
+}
+
+#additional-information h2 {
+  font-size: 2em;
+  background-color: #ffebb5;
+  padding: 0 32px;
+  font-weight: 500;
+}
+
+#additional-information article {
+  max-width: 42rem;
+  text-align: center;
+}
+
+#features {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+#features h3 {
+  color: #ee2c30;
+  font-weight: 500;
+  margin: 0 0 16px;
+}
+
+#features p {
+  margin: 0 0 8px;
+}
+
+#features div {
+  max-width: 200px;
+}
+
+#features img {
+  height: 30px
+}
+
+footer {
+  margin: 48px auto;
+}
+
+footer a {
+  display: block;
+  font-size: 18px;
+  width: max-content;
+  margin: 0 auto;
+  padding: 16px 128px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  box-shadow: 7px 7px #e4dcd3;
+}
