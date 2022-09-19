@@ -5,13 +5,14 @@
     <head>
         <meta charset="UTF-8">
         <title>NPM Clone</title>
+        <link rel="stylesheet" href="./style.css" />
     </head>
 
     <body>
         <header id="header">
-            <div class="up-header">
-                <div class="blackHeart">
-                    <img src="./images/black-heart.png" alt="black heart" />
+            <div>
+                <div>
+                    <img class="blackHeart" src="./images/black-heart.png" alt="black-heart" />
                     <span> Nifty Penguin Magic </span>
                 </div>
 
@@ -27,16 +28,16 @@
                 </nav>
             </div>
         
-            <div class="down-header">
-                <img class="npm-logo" src="./images/npm-logo.png" alt="npm-logo" />
+            <div>
+                <img class="npmLogo" src="./images/npm-logo.png" alt="npm-logo" />
 
                 <form action="/search" action="get">
-                    <img class="magnifying-glass" src="./images/magnifying-glass.png" alt="magnifying-glass" />
+                    <label for="search-bar"></label>
                     <input type="text" name="search-bar" id="search-bar" placeholder="Search packages">
                     <button type="submit">Search</button>
                 </form>
 
-                <a href="">Join</a>
+                <a class="join" href="">Join</a>
                 <a href="">Log In</a>
             </div>
         </header>
@@ -47,10 +48,10 @@
                     Essential JavaScript development tools that help you go to market faster and build powerful applications using modern open source code.
                 </p>
             </article>
-            
+
             <div class="banner-links">
-                <a href="">See plans</a>
-                <a href="">join for free</a>
+                <a href="#">See plans</a>
+                <a href="#">join for free</a>
              </div>
         </section>
 
@@ -85,7 +86,7 @@
                 <h3>npm audit</h3>
                 <p>Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer.</p>
             </div>
-            <a href="">Create an Org</a>
+            <a href="#">Create an Org</a>
         </section>
     </body>
 </html>
