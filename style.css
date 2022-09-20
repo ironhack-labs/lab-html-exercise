@@ -1,7 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
 body {
-  font-family: 'Poppins';
+    font-family: 'Poppins';
+}
+
+.blackHeart {
+    width: 20px;
+    margin-right: 1rem;
+}
+
+.npmLogo{
+    width: 70px;
+    margin-right: 1rem;
 }
 
 header > div {
@@ -10,6 +20,7 @@ header > div {
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid lightgray;
+    margin: 0 20px;
 }
   
 nav {
@@ -28,20 +39,21 @@ nav a {
     color: black;
 }
 
-div a {
+.join {
+    color: black;
+    text-decoration: none;
+    border: 0.5px solid black; 
+    padding: 3px 15px;  
+}
+
+.log-in {
     color: black;
     text-decoration: none;
 }
 
-.join {
-    border: 1px solid black; 
-    padding: 2px 10px;  
-}
-
-
 div form {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -51,36 +63,143 @@ form label {
 
 form input {
     width: 900px;
-    height: 30px;
+    height: 40px;
     color: rgba(0,0,0,.05);
-    background-image: url("magnifying-glass.png");
+    background-image: url(./images/magnifying-glass.png);
+    background-repeat: no-repeat;
+    background-size: 2%;
+    background-position-y: 10px;
+    background-position-x: 10px;
     background-color: #F2F2F2;
-    padding-left:50px;
+    padding-left: 40px;
     margin: 10px 0;
     border: none;
 }
 
 form button {
-    width: 75px;
-    height: 30px;
+    width: 80px;
+    height: 40px;
     padding: 5px;
     margin: 10px 0;
     border: none;
-    background: #fb3e44;
+    background: #FB3B49;
     color: white;
 }
 
-.blackHeart {
-    width: 20px;
-    margin-right: 1rem;
+#welcome-banner {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    margin: 0 20px;
+    background-color: rgba(232,217,217,.3);
 }
 
-.npmLogo{
-    width: 70px;
-    margin-right: 1rem;
+#welcome-banner h1 {
+    font-size: 5.5rem;
+    letter-spacing: -4px;
+    font-weight: bolder;
 }
-.magnifyingGlass {
-    width: 20px;
-    margin-right: 1rem;
+
+#welcome-banner article {
+    width: 700px;
+    text-align: center;
+    padding: 0 0 50px 0;
+}
+
+#welcome-banner div {
+    width: 700px;
+    text-align: center;
+    padding: 0 0 50px 0;
+}
+
+.banner-links a {
+    font-weight: bold;
+    text-align: center;
+    margin: 25px;
+    padding: 10px 50px;
+    width: 300px;
+    height: 100px; 
+}
+
+.plans {
+    background-color: #FB3B49;
+    color: white;
+    text-decoration: none;
+    background-color: #FB3B49;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+
+}
+
+.join-for-free {
+    background-color: white;
+    color: black;
+    text-decoration: none;
+}
+
+#presentation {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    margin: 0 20px;
+    background-color:white;
+}
+
+#presentation img {
+    width: 200px;
+    padding-bottom: 40px;
+}
+
+#presentation h2 {
+    font-size: 2rem;
+    letter-spacing: -2.5px;
+    font-weight: bolder;
+    font-style: italic;
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+}
+
+#presentation article {
+    width: 780px;
+    text-align: center;
+}
+
+#features {
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    margin: 0 20px;
+    background-color:white;
+}
+
+#features div {
+   text-align: left;
+   padding: 20px;
+}
+
+#features div h4 {
+    color: #ED1C24;
+ }
+
+#features div img {
+    width: 50px;
+}
+
+.create-org { 
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    font-weight: bold;
+    text-align: center;
+    margin: 25px;
+    padding: 50px 50px;
+    width: 600px;
+    height: 100px; 
 }
 
