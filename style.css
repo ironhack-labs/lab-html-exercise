@@ -9,11 +9,6 @@ body {
     margin-right: 1rem;
 }
 
-.npmLogo{
-    width: 70px;
-    margin-right: 1rem;
-}
-
 header > div {
     padding: 0 25px;
     display: flex;
@@ -39,36 +34,27 @@ nav a {
     color: black;
 }
 
-.join {
+.npmLogo {
+    width: 70px;
+    margin-right: 1rem;
+}
+
+div a {
     color: black;
     text-decoration: none;
-    border: 0.5px solid black; 
-    padding: 3px 15px;  
 }
 
-.log-in {
-    color: black;
-    text-decoration: none;
-}
-
-div form {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-form label {
+form {
     color: rgba(0,0,0,.05);
 }
 
 form input {
     width: 900px;
-    height: 40px;
-    color: rgba(0,0,0,.05);
+    height: 50px;
     background-image: url(./images/magnifying-glass.png);
     background-repeat: no-repeat;
-    background-size: 2%;
-    background-position-y: 10px;
+    background-size: 3%;
+    background-position-y: 12px;
     background-position-x: 10px;
     background-color: #F2F2F2;
     padding-left: 40px;
@@ -77,13 +63,17 @@ form input {
 }
 
 form button {
-    width: 80px;
-    height: 40px;
+    width: 90px;
+    height: 50px;
     padding: 5px;
-    margin: 10px 0;
     border: none;
     background: #FB3B49;
     color: white;
+}
+
+.join {
+    border: 0.5px solid black; 
+    padding: 3px 15px;  
 }
 
 #welcome-banner {
@@ -94,6 +84,7 @@ form button {
     height: 600px;
     margin: 0 20px;
     background-color: rgba(232,217,217,.3);
+    text-align: center;
 }
 
 #welcome-banner h1 {
@@ -102,21 +93,13 @@ form button {
     font-weight: bolder;
 }
 
-#welcome-banner article {
-    width: 700px;
-    text-align: center;
+#welcome-banner article, div {
     padding: 0 0 50px 0;
 }
 
-#welcome-banner div {
-    width: 700px;
-    text-align: center;
-    padding: 0 0 50px 0;
-}
-
-.banner-links a {
-    font-weight: bold;
-    text-align: center;
+#welcome-banner a {
+    font-weight: bolder;
+    text-decoration: none;
     margin: 25px;
     padding: 10px 50px;
     width: 300px;
@@ -126,16 +109,12 @@ form button {
 .plans {
     background-color: #FB3B49;
     color: white;
-    text-decoration: none;
-    background-color: #FB3B49;
     box-shadow: 8px 8px 0 rgba(251,59,73,.2);
-
 }
 
 .join-for-free {
     background-color: white;
     color: black;
-    text-decoration: none;
 }
 
 #presentation {
@@ -146,6 +125,7 @@ form button {
     height: 600px;
     margin: 0 20px;
     background-color:white;
+    text-align: center;
 }
 
 #presentation img {
@@ -153,53 +133,59 @@ form button {
     padding-bottom: 40px;
 }
 
-#presentation h2 {
-    font-size: 2rem;
-    letter-spacing: -2.5px;
-    font-weight: bolder;
-    font-style: italic;
+.yellow-background {
+    width: 800px;
     background-color: rgba(255,204,53,.4);
     transform: skew(9deg,0deg);
+    font-size: 2rem;
+    letter-spacing: -2px;
+    font-weight: bolder;
+    font-style: italic;
 }
 
 #presentation article {
     width: 780px;
-    text-align: center;
+    letter-spacing: -0.9px;
 }
 
 #features {
     display: flex; 
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-around;
+    align-content: flex-start;
+    flex-wrap: wrap;
     height: 600px;
     margin: 0 20px;
+    padding: 0 100px;
     background-color:white;
 }
 
 #features div {
-   text-align: left;
-   padding: 20px;
+    flex: 1 0 15%;
+    text-align: left;
+    padding: 20px 40px;
+}
+
+#features div img {
+    width: 40px;
 }
 
 #features div h4 {
     color: #ED1C24;
  }
 
-#features div img {
-    width: 50px;
-}
+ #features div p {
+    letter-spacing: -1px;
+ }
 
-.create-org { 
+#features a { 
     background-color: black;
     color: white;
     text-decoration: none;
     box-shadow: 8px 8px 0 rgba(128,83,35,.2);
     font-weight: bold;
     text-align: center;
-    margin: 25px;
-    padding: 50px 50px;
-    width: 600px;
-    height: 100px; 
+    width: 350px;
+    padding: 15px 25px;
 }
 
