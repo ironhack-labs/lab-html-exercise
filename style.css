@@ -36,23 +36,26 @@ body {
 
 .logo-class{
     display: flex;
-    align-items: center;
-    height: 50px;
+    height: 60px;
+    padding: 0;
+}
+.left{
+  float: left;
+  width: 55px;
 }
 
-
 .logo{
-    width: 55px;
+    width: 50px;
+   margin: 0 15px;
 }
 
 
 .form{
   display: flex;
-  justify-content: flex-end;
   flex-direction: row;
   align-items: stretch;
  position: relative;
-  
+ margin: 0 20px;
 }
 
 .search-bar{
@@ -62,9 +65,15 @@ body {
   border:none
 }
 
+.center{
+  width: 100%;
+}
+
 .input{
   display: flex;
   flex-direction: row;
+  margin-top: 15px;
+  Width:100%;
 }
 
 .search-button{
@@ -78,29 +87,40 @@ body {
 
 
 .magnifying-glass{
-  width:20px;
-  position:absolute;
+  width: 20px;
+  position: absolute;
   padding: 10px;
+  margin-top: 13px;
+  float: left;
 
+}
+
+
+.right{
+  width: 180px;
 }
 
 .join-button{
   text-decoration: none;
   color: black;
   border: 1px solid;
-  padding: 4px 17px;
- font-weight: bold;
- max-height: 25px;
+  padding: 4px 16px;
+  font-weight: bold;
 }
-.log-in-button{
+
+
+.login-button{
   text-decoration: none;
   color:black;
+  padding: 4px 16px;
 }
+
 
 .flex-container{
   display: flex;
-  text-align: center;
+
 }
+
 /*------------------------ first section ------------------------------------------*/
   #first-section{
     background-color: rgba(232,217,217,.3);
@@ -150,39 +170,41 @@ font-weight: bolder;
 
 /*------------------------ second section ------------------------------------------*/
 
-
+.hexagon{
+  padding: 50px;
+  width: 250px;
+}
 #second-section{
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content:space-evenly;
   flex-direction: column;
   margin: 20px;
 }
 h2{
   background-color: rgba(255,204,53,.4);
-  transform:  skew(9deg,0deg);
+  transform: skew(9deg,0deg);
   font-style: italic;
 }
 
 .article{
   padding:0% 23% 10% 23%;
-  text-align: center;
+  text-align:center;
   margin: auto;
 
 }
 
-.hexagon{
-  padding: 50px;
-  width: 250px;
-}
+
+
 /*------------------------ third section ------------------------------------------*/
 
 #third-section{
   display: flex;
   flex-direction: row;
   text-align: left;
-  margin: 0 150px 0 250px;
+  margin: 5px 150px 5px 150px;
   justify-content: space-between;
+  align-items: flex-start;
 }
 
 .container{
@@ -193,8 +215,9 @@ h2{
   text-align: left;
 }
 
+
 .icons{
-  width: 40px;
+  width: 35px;
 }
 
 h4{
