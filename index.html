@@ -6,96 +6,109 @@
   <link href="styles.css" rel="stylesheet" />
 </head>
 
-<nav>
+<body>
+ 
+<header>
+    <div >
     <h1>
-        <img src="/Users/gabimeirellesm/Documents/lab-html-exercise/images/black-heart.png" alt="Black Heart" />
+        <img class="blackHeart" src="/Users/gabimeirellesm/Documents/lab-html-exercise/images/black-heart.png" alt="Black Heart" />
         NPM Clone Nifty Penguin Magic 
     </h1>
+    <nav></nav>
     <ul>
-        <a href="#npm Enterprise">npm Enterprise</a>   
+        <a class="a-text" href="#npm Enterprise">npm Enterprise</a>   
     </ul>
     <ul>
-        <a href="#Products">Products</a>  
+        <a class="a-text" href="#Products">Products</a>  
     </ul>
     <ul>
-        <a href="#Solutions">Solutions</a>  
+        <a class="a-text" href="#Solutions">Solutions</a>  
     </ul>
     <ul>
-        <a href="#Resources">Resources</a>  
+        <a class="a-text" href="#Resources">Resources</a>  
     </ul>
     <ul>
-        <a href="#Docs">Docs</a>  
+        <a class="a-text" href="#Docs">Docs</a>  
     </ul>
     <ul>
-        <a href="#Support">Support</a>  
+        <a class="a-text" href="#Support">Support</a>  
     </ul>
-    <aside>
-        <img src="/Users/gabimeirellesm/Documents/lab-html-exercise/images/npm-logo.png" alt="NPM logo" />
-        <img src="/Users/gabimeirellesm/Documents/lab-html-exercise/images/magnifying-glass.png" alt="magnifying-glass" />  
+    </div>
+    <aside class="aside-bar">
+        <img class="logo" src="/Users/gabimeirellesm/Documents/lab-html-exercise/images/npm-logo.png" alt="NPM logo" />
 
-            <!-- adicionar um botão -->
-
-        <a href="#Search">Search</a>
-        <a href="#Join">Join</a>
-        <a href="#Log In">Log In</a>
+        <form class="slot-form" action="/register" method="post">
+        <span class="slot-form-container"> 
+            <img class="blackHeart" src="/Users/gabimeirellesm/Documents/lab-html-exercise/images/magnifying-glass.png" alt="magnifying-glass" />     
+            <input type="email" placeholder="Search Packages">
+            <button type=""> Search </button>
+        </span> 
+        <a class="a-text" href="#Join">Join</a>
+        <a class="a-text" href="#Log In">Log In</a>
     </aside>
-</nav>
+</header>
 
 <!-- 1 -->
-<section>
+<section class="background">
+    <div>
     <h2>Build amazing things</h2>
-    <p>Essential JavaScript development tools that help you go to market faster and build powerful applications using
+    <p class="p-bar">Essential JavaScript development tools that help you<br> go to market faster and build powerful applications<br> using
         modern open source code.</p>
-  <a href="#See plans">See plans</a>
-   <!-- adicionar um botão --> 
-  <a href="#Join for free">Join for free</a>
-   <!-- adicionar um botão --> s
+        <i>
+  <button type="submit"> See plans </button>   
+</i>
+<b> 
+  <button type="submit"> Join for free </button>  
+</b>
+</div>
 </section>
 
 <!-- 2 -->
-<section>
+<section class="center">
     <img src="/Users/gabimeirellesm/Documents/lab-html-exercise/images/triangle-hexagon.svg" alt="triangle-hexagon" />
     <h3>Bring the best of open source to your company</h3>
-        <p>
-            npm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it.
-            Create an Org and get more out of the tools your team already knows and loves.
+        <p class="p">
+            npm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers<br> already use it. Your company depends on it.
+            Create an Org and get more out of the tools your<br> team already knows and loves.
         </p>
 </section>
 
 <!-- 3 -->
-<section>
+<section class="block" id="structure">
     <div>
+        <article>
     <img src="/Users/gabimeirellesm/Documents/lab-html-exercise/images/zero-configuration.svg" alt="zero configuration" /> 
     <h4>Zero configuration</h4>
         <p>
-        Create an org, add your team, and start collaborating. Nothing to configure, set up, or manage.
+        Create an org, add your team,<br> and start collaborating.<br> Nothing to configure, set up,<br> or manage.
         </p>
-    </div>
-    <div>
+    </article>
+   <article>
     <img src="/Users/gabimeirellesm/Documents/lab-html-exercise/images/team-management.svg" alt="team management" /> 
     <h4>Team management</h4>
         <p>
-        Control who has access to what modules within your team namespace using straightforward team management capabilities.
+        Control who has access to<br> what modules within your<br> team namespace using <br>straightforward team <br>management capabilities.
         </p>
-     </div>
-     <div>
+    </article>
+    <article>
     <img src="/Users/gabimeirellesm/Documents/lab-html-exercise/images/familiar-features.svg" alt="familiar features" /> 
     <h4>Familiar features</h4>
         <p>
-        npm Orgs has 100% parity with all the public npm registry features your developers already use.
+        npm Orgs has 100% parity with<br> all the public npm registry<br> features your developers<br> already use.
         </p>
-    </div>
-     <div>
+    </article>
+    <article>
     <img src="/Users/gabimeirellesm/Documents/lab-html-exercise/images/npm-audit.svg" alt="npm audit" /> 
     <h4>npm audit</h4>
         <p>
-            Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer.
+            Enjoy the security auditing <br>features built into the npm <br>client, a zero-friction way to <br>make open source software <br>safer.
         </p>
+    </article>   
     </div>
 </section>
 <footer>
-    <ul>
-        <a href="#Create an Org">Create an Org</a>   
-    </ul>
-                <!-- adicionar um botão --> 
+    <button type="submit">Create an Org</button>
 </footer>
+
+</body>
+</html>
