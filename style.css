@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins';
+}
+
+/* header complete */
+.header {
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+}
+
+/* upper line with navbar */
+.header .title-navbar {
+  padding: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+  font-size: 14px;
+}
+
+.header .black-heart-title img {
+  height: 12px;
+}
+
+.header .navbar a {
+  margin-right: 5px;
+  color: #000;
+  text-decoration: none;
+}
+
+/* search input line */
+.title-form-input {
+  padding: 25px 25px 25px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* npm logo */
+.title-form-input .npm-logo {
+  width: 8%;
+}
+
+.title-form-input .npm-logo img {
+  width: 40px;
+  height: 22px;
+}
+
+/* input line */
+.title-form-input .form-input {
+  width: 65%;
+  background-color: #f2f2f2;
+  display: flex;
+  align-items: center;
+}
+.title-form-input .form-input .form-input-bar {
+  padding: 5px;
+  display: flex;
+  width: 80%;
+}
+
+.title-form-input .form-input button {
+  width: 20%;
+  height: 50px;
+  background-color: #fb3e44;
+  border: none;
+}
+
+.title-form-input .form-input .form-input-bar img {
+  margin-right: 10px;
+  width: 25px;
+  height: 25px;
+}
+
+.title-form-input .form-input .form-input-bar form {
+  width: 80%;
+}
+
+.title-form-input .form-input .form-input-bar form input {
+  width: 100%;
+  background-color: #f2f2f2;
+  border: none;
+  font-family: 'Poppins';
+  font-size: 14px;
+}
+
+/* buttons */
+.sign-up-buttons {
+  display: flex;
+  width: 20%;
+}
+
+.sign-up-buttons .join-button,
+.sign-up-buttons .log-in-button {
+  width: 50%;
+  height: 48px;
+  background-color: #fff;
+  border: none;
+}
+
+.sign-up-buttons .join-button {
+  border: 1px solid rgb(187, 184, 184);
+}
+
+/* SECTION 1 */
+#introduction {
+  height: 600px;
+  background-color: rgba(232, 217, 217, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#introduction h1 {
+  text-align: center;
+  font-size: 50px;
+  width: 80%;
+}
+
+#introduction article {
+  text-align: center;
+  margin: 10px 0 10px 0;
+  width: 60%;
+}
+
+.introduction-buttons {
+  margin: 10px 0 10px 0;
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+
+#introduction button {
+  height: 40px;
+  width: 160px;
+  border: none;
+}
+
+.see-plans-button {
+  background-color: #fb3b49;
+  box-shadow: 8px 8px 0 rgba(251, 59, 73, 0.2);
+}
+
+.join-free-button {
+  background-color: #fff;
+}
+
+.join-free-button:hover {
+  color: #333;
+  background-color: #fbf5f5;
+}
+
+.see-plans-button:hover {
+  background-color: #cb242f;
+  box-shadow: 8px 8px 0 rgba(251, 59, 73, 0.2);
+}
+
+/* SECTION 2 */
+#description {
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#description .triangle-img {
+  height: 200px;
+  width: 200px;
+  margin-bottom: 10px;
+}
+
+#description h2 {
+  text-align: center;
+  width: 50%;
+  font-style: italic;
+  background-color: rgba(255, 204, 53, 0.4);
+  transform: skew(9deg, 0deg);
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+#description article {
+  text-align: center;
+  width: 40%;
+  margin-top: 10px;
+}
+
+/* SECTION 3 */
+#blocks {
+  margin-top: 20px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.components {
+  display: flex;
+  justify-content: space-around;
+  width: 85%;
+  margin-bottom: 50px;
+}
+
+.component {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+}
+
+.component img {
+  height: 30px;
+  width: 30px;
+  margin-bottom: 10px;
+}
+
+.component h5 {
+  margin-bottom: 10px;
+  color: #ed1c24;
+}
+
+.component p {
+  width: 80%;
+}
+
+#blocks button {
+  width: 36%;
+  height: 40px;
+  background-color: #000;
+  color: #fff;
+  font-size: 15px;
+  border: none;
+  box-shadow: 6px 6px 0 rgba(128, 83, 35, 0.2);
+}
