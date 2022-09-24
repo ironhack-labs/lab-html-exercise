@@ -24,9 +24,12 @@
           
             <div>
                 <img class="Logo" src="C:\Users\lisab\Desktop\ironhack prework\lab-html-exercise\images\npm-logo.png" alt="Logo" />
-                <form> <img class="Search" src="C:\Users\lisab\Desktop\ironhack prework\lab-html-exercise\images\magnifying-glass.png" alt="Search" /> </form>
+                <form id="form"> 
+                    <img class="Search" src="C:\Users\lisab\Desktop\ironhack prework\lab-html-exercise\images\magnifying-glass.png" alt="Search" /> 
+                        <input type="search" id="query" name="q" placeholder="Search packages">
+                        <button id="SearchButton">Search</button>
+                </form>
                 <ul class="ButtonsNav">
-                    <li> <a class="Searchbutton" href="#"> Search </a> </li>
                     <li> <a class="Join" href="#"> Join </a> </li>
                     <li> <a class="LogIn" href="#"> Log in </a></li>
                 </ul>
@@ -45,7 +48,7 @@
             </article>
             <div>
                 <a class="SeePlans" href="#"> See plans </a>
-                <a class="LogIn" href="#"> Join for free </a>
+                <a class="JoinFree" href="#"> Join for free </a>
             </div>
         </section>
         
@@ -54,7 +57,7 @@
             <h2>
                 Bring the best of open source to your company
             </h2>
-            <article class="TextAlign">
+            <article class="TextExplain">
                 <p>
                     npm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it.
                     Create an Org and get more out of the tools your team already knows and loves. 
@@ -64,7 +67,7 @@
          
         <section id="Offer">
             <div>
-                <img class="ZeroConfig" src="C:\Users\lisab\Desktop\ironhack prework\lab-html-exercise\images\zero-configuration.svg" alt="zero config" />
+                <img class="OfferPic" src="C:\Users\lisab\Desktop\ironhack prework\lab-html-exercise\images\zero-configuration.svg" alt="zero config" />
                 <h3>
                     Zero configuration 
                 </h3>
@@ -74,7 +77,7 @@
             </div>
 
             <div>
-                <img class="TeamManag" src="C:\Users\lisab\Desktop\ironhack prework\lab-html-exercise\images\team-management.svg" alt="Team Managment" />
+                <img class="OfferPic" src="C:\Users\lisab\Desktop\ironhack prework\lab-html-exercise\images\team-management.svg" alt="Team Managment" />
                 <h3>
                     Team management
                 </h3>
@@ -84,7 +87,7 @@
             </div> 
 
             <div>
-                <img class="FamiliarFeat" src="C:\Users\lisab\Desktop\ironhack prework\lab-html-exercise\images\familiar-features.svg" alt="Familiar features" />
+                <img class="OfferPic" src="C:\Users\lisab\Desktop\ironhack prework\lab-html-exercise\images\familiar-features.svg" alt="Familiar features" />
                 <h3>
                     Familiar features 
                 </h3>
@@ -94,7 +97,7 @@
             </div>
 
             <div>
-                <img class="npmAudit" src="C:\Users\lisab\Desktop\ironhack prework\lab-html-exercise\images\npm-audit.svg" alt="NPM audit" />
+                <img class="OfferPic" src="C:\Users\lisab\Desktop\ironhack prework\lab-html-exercise\images\npm-audit.svg" alt="NPM audit" />
                 <h3>
                     npm audit 
                 </h3>
@@ -102,9 +105,10 @@
                     Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer.
                 </p>
             </div>
-        
-        <a href="#"> Create an Org </a>
         </section>
+        <div class="lastButton">
+            <a class="Org" href="#"> Create an Org </a>
+        </div>
     </body>
 </html>
 
