@@ -5,22 +5,22 @@ body{
 }
 
 
-/*Upper div of the header tag 
-form label color: rgba(0,0,0,.05)
-form input color: rgba(0,0,0,.05)
-form button background color: #fb3e44
-form button letters color: white*/
+/*Upper div of the header tag*/
 
-header > div {
+  header > div {
     padding: 0 25px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid lightgray;
+ 
+   
+   
   }
-  
+
   nav {
-    width: 600px;
+    width:600px;
+    
   }
   
   nav ul {
@@ -28,11 +28,14 @@ header > div {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
+   
   }
   
   nav a {
     text-decoration: none;
     color: black;
+   
   }
   
   .blackHeart {
@@ -41,70 +44,170 @@ header > div {
   }
 
 
+/* 
+CSS search bar 
+form label color: rgba(0,0,0,.05)
+form input color: rgba(0,0,0,.05)
+form button background color: #fb3e44
+form button letters color: white */
+
   .npmLogo {
+    width:60px;
     display:flex;
-    justify-content:flex-start;
-    align-content:flex-start;
-    width: 80px;
-    height: 20px;
-
-  }
-
-  .magnifyingGlass {
+    margin-right:5px;
+   
+    }
+ 
+  form {
     display:flex;
-    justify-content:flex-start;
-    align-content:flex-start;
-    width: 25px;
-    height: 25px;
-  }
-
-  .form {
-    display:flex;
+    margin: auto 10px;
+    width:1375px;
     
   }
-  .form img {
-    display:inline-flex;
 
-  }
-
-  nav > a {
+  #container-buttons nav {
     display:flex;
-    flex-direction:row;
-    justify-content:flex-end;
+    width:auto;
+   
   }
-
-
-
+  
   #site-search {
     display:flex;
-    flex-direction:center;
-    justify-content:center;
+    width:100%;
+    background-color:rgba(0,0,0,.05);
+    border:none;
+    text-indent:30px;
+    background-image:url(./images/magnifying-glass.png);
+    background-repeat:no-repeat;
+    background-size: 20px 20px;
+    background-position: center;
+    background-position-x:7px;
+   }
+
+  #search-button {
+    
+    display:flex;
+    background-color: #fb3e44;
+    color:white;
+    border:none;
+    padding:20px;
+ 
   }
+  
+
+  .join {
+    display:flex;
+    border:1px solid black;
+    padding: 5px 20px;
+    margin-right:25px;
+  }
+
+
+  
 
 /*CSS Section1*/
 
 #introduction {
-  height: 100px;
+  background-color: rgb(232,217,217,.3);
+  height: 600px;
+  margin:auto;
   display:flex;
   flex-direction:column;
   align-content:center;
+  align-items:center;
   justify-content:center;
+  
   }
+
+h1 {
+  font-size:4em;
+  margin-bottom:20px;
+  text-align:center;
+  text-justify:center;
+}
+
+
+#introduction article p {
+  width:430px;
+  text-align: center;
+  text-justify:center;
+  margin-top: 20px;
+  margin-bottom: 50px;
+
+  }
+
+
+
+
+/*CSS Section1 buttons*/
+
+
+#introduction div ul  {
+  list-style:none;
+  display:flex;
+  flex-direction:row;
+  justify-content: center;
+  
+  }
+
+
+#introduction .see-plans {
+  display:flex;
+  font-size:1.2em;
+  text-decoration:none;
+  text-align: center;
+  color:white;
+  background-color:#FB3B49;
+  box-shadow:8px 8px 0 rgba(251,59,73,.2);
+  padding:10px 40px;
+  margin-right:55px;
+
+  }
+
+#introduction .join-free {
+  display:flex;
+  
+  font-size:1.2em;
+  background-color: ;
+  text-decoration:none;
+  text-align:center;
+  background-color:white;
+  color:black;
+  padding:10px 40px;
+  margin-right:35px;
+  }
+
+
 
 /*CSS Section2*/
 
-#moreInformation {
+#more-information {
+  display:flex;
+  flex-direction: column;
+  align-content:center;
+  align-items: center;
+  justify-content:center;
+  margin:50px 0px;
+  }
 
-height: 100px;
-display:flex;
-align-content:center;
-justify-content:center;
-}
-h2 {
-background-color:rgba(255,204,53,.4);
-transform:skew(9deg,0deg);
+#more-information img {
+  width:200px;
+  height:200px;
+  }
 
-}
+#more-information article p {
+  text-align: center;
+  text-justify: center;
+  width: 780px;
+  }
+
+h3 {
+  background-color:rgba(255,204,53,.4);
+  transform:skew(9deg,0deg);
+  font-style:italic;
+  text-align: center;
+  width:700px;
+  }
 
 
 
@@ -129,7 +232,7 @@ transform:skew(9deg,0deg);
 width: 30px;
 }
 
-h3 {
+h5 {
 color:#ED1C24;
 text-decoration: none;
 }
@@ -137,6 +240,7 @@ text-decoration: none;
 .org-button{
 text-align:center;
 padding-top: 60px;
+padding-bottom: 60px;
 }
 
 .org-button a {
@@ -145,6 +249,7 @@ padding-top: 60px;
   text-decoration:none;
   padding:10px 100px;
   box-shadow: 5px 5px 5px rgba(128,83,35,.2);
+
  
   
   }

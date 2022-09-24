@@ -30,26 +30,29 @@ auditing features built into the npm client, a zero-friction way to make open so
           </nav>
         </div>
 
-        <div>
-          <!-- add logo, search bar and buttons (or links and style them as buttons later) -->
-            <img class="npmLogo" src="./images/npm-logo.png" alt="npm logo"/>
-            <br><br>
-            <img class="npmLogo" src="./images/magnifying-glass.png" alt="magnifying-glass"/>
-            <br><br>
-            <nav>
-            <br><br>
-            <a href="#">Join</a>
-            <br><br>
-            <a href="#">Log in</a>
-            </nav>
+    
+        <!-- add logo, search bar and buttons (or links and style them as buttons later) -->
 
-            <form>
+        <div>
+          <img class="npmlogo" src="./images/npm-logo.png" alt="npm logo"/>
+              <form>
                 <input type="search" id="site-search" placeholder="Search packages">
-                
-                <button type="button">Search</button>
-            </form>
+                <button type="button" id="search-button">Search</button>
+              </form>
+                <div id="container-buttons">
+                  <nav>
+                    <ul>
+                      <li><a href="#" class="join">Join</a></li>
+                      <li><a href="#" class="log-in">Log in</a></li>
+                    </ul>
+                  </nav>
+                </div>
+
         </div>
+        
+
       </header>
+
 
      <!-- SECTION 1 big title,description, see plans and join for free buttons -->
 
@@ -61,16 +64,18 @@ auditing features built into the npm client, a zero-friction way to make open so
             </p>
           </article>
         <div>
-          <a href="#">See plans</a>
-          <a href="#">Join for free</a>
+          <ul>
+            <li><a href="#" class="see-plans">See plans</a></li>
+            <li><a href="#" class="join-free">Join for free</a></li>
+          </ul>
         </div>
       </section>
 
      <!-- SECTION 2 img, smaller title, more information -->
 
-      <section id="moreInformation">
+      <section id="more-information">
         <img class="npmLogo" src="./images/triangle-hexagon.svg" alt="triangle-hexagon"/>
-        <h2>Bring the best of open source to your company</h2>
+        <h3>Bring the best of open source to your company</h3>
           <article>
             <p>npm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it.
             Create an Org and get more out of the tools your team already knows and loves.
@@ -86,7 +91,7 @@ auditing features built into the npm client, a zero-friction way to make open so
 
           <div class="service-box">
             <img src="./images/zero-configuration.svg" alt="zero-configuration"/>
-            <h3>Zero configuration</h3>
+            <h5>Zero configuration</h5>
             <article>
               <p>Create an org, add your team, and start collaborating. Nothing to configure, set up, or manage.
               </p>
@@ -95,7 +100,7 @@ auditing features built into the npm client, a zero-friction way to make open so
 
           <div class="service-box">
           <img src="./images/team-management.svg" alt="team-management"/>
-          <h3>Team management</h3>
+          <h5>Team management</h5>
             <article>
               <p>Control who has access to what modules within your team namespace using straightforward team management capabilities.
               </p>
@@ -104,7 +109,7 @@ auditing features built into the npm client, a zero-friction way to make open so
 
           <div class="service-box">
           <img src="./images/familiar-features.svg" alt="familiar-features"/>
-          <h3>Familiar features</h3>
+          <h5>Familiar features</h5>
             <article>
               <p>npm Orgs has 100% parity with all the public npm registry features your developers already use.
               </p>
@@ -113,7 +118,7 @@ auditing features built into the npm client, a zero-friction way to make open so
 
           <div class="service-box">
           <img src="./images/npm-audit.svg" alt="npm-audit"/>
-          <h3>npm audit</h3>
+          <h5>npm audit</h5>
           <article>
           <p>Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer.
           </p>
