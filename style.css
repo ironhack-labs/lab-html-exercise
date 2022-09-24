@@ -9,10 +9,21 @@ header > div {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+}
+
+.top {
+  border-bottom: 1px solid lightgray;
+  margin-left: 20px;
+  font-size: 14px;
+}
+
+.top2 {
+  margin-top: 5px;
 }
 
 header {
-  border-bottom: 1px solid lightgray;
+  margin-bottom: 10px;
 }
 
 .blackHeart {
@@ -20,18 +31,18 @@ header {
   margin-right: 1rem;
 }
 
-.npm {
-  width: 100px; 
-}
-
   nav ul {
     list-style: none;
     display: flex;
     justify-content: space-between;
+    list-style: none;
+    align-items: center;
   }
 
   nav {
-    width: 500px;  
+    width: 540px;  
+    font-family: "Poppins-bold";
+
   }
 
   nav a {
@@ -41,25 +52,24 @@ header {
     padding: 25px, 20px;
   }
 
+.npm {
+  width: 80px; 
+}
+
   .magnifying-glass {
-    width: 20px; 
-    margin-left: 40px;
+    width: 25px; 
+    margin-left: 10px;
   }
 
   .search-packages { 
-    width: 280px; 
+    width: 300px; 
     margin-right: 30em;
     color: rgba(0,0,0,0.5);
-    border-style:initial;
+    border-style:none;
     font-family: 'Poppins';
     letter-spacing: 1px;
-  }
-
-  .button {
-    font-family: 'Poppins';
-    color:rgba(0,0,0,0.5);
-    min-height:30px;
-    min-width: 70px;
+    min-height:40px;
+    min-width: 300px;
   }
 
   .button1 {
@@ -67,10 +77,26 @@ header {
     border-style: none;
     color: #fff;
     background-color:#fb3e44;
-    min-height:30px;
+    min-height:40px;
     min-width: 100px;
   }
-   
+
+  .buttonJoin {
+    font-family: 'Poppins';
+    margin-left: 25px;
+    min-width: 73px;
+    min-height: 33px;
+    background-color: white ;
+  }
+
+  .buttonLogIn {
+    font-family: 'Poppins';
+    min-width: 73px;
+    min-height: 33px;
+    border-style: none;
+    background-color: white;
+  }
+  
   .section1 {
     height: 600px;
     background-color: rgba(232,217,217,0.3);
@@ -98,11 +124,7 @@ header {
 .buttonsflex1 {
   display: flex;
 	flex-direction: row;
-	align-items: space-around;
-  text-align: center;
-  width: 420px;
   position: relative; top: -100px;
-
 }
 
 .button2 {
@@ -114,14 +136,17 @@ header {
   min-height: 50px;
   min-width: 200px;
   font-size: 16px;
+  margin-right: 20px;
 }
 
 .button3 {
   font-family: 'Poppins-bold';
   border-style: none;
   min-height: 50px;
-  min-width: 260px;
+  min-width: 200px;
   font-size: 16px;
+  margin-left: 20px;
+  background-color: white;
 
 }
 
@@ -136,8 +161,8 @@ header {
 }
 
 .bring {
-  margin-top: 600px;
-  margin-bottom: 100px;
+  margin-top: 350px;
+  margin-bottom: 60px;
   width: 250px; 
 }
 
@@ -155,7 +180,8 @@ header {
   text-align: center;
   margin-left: 160px;
   margin-right: 160px;
-  margin-bottom: 160px;
+  margin-bottom: 140px;
+  width: 800px;
 }
 
 .flexarticles {
