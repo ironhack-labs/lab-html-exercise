@@ -4,12 +4,21 @@ body {
     font-family: 'Poppins';
 }
 
-.blackHeart {
+.little-images {
     width: 20px;
     margin-right: 1rem;
 }
 
-header > div {
+.text-header  {
+    text-decoration: none;
+    color: black;
+}
+
+.header-one{
+    display: inline-flex;
+}
+
+.header-first {
     padding: 0 25px;
     display: flex;
     justify-content: space-between;
@@ -17,22 +26,36 @@ header > div {
     border-bottom: 1px solid lightgray;
 }
 
-nav {
-    width: 300px;
+.logo {
+    width: 80px;
+    margin-right: 1rem;
+    padding-top: 10px;
 }
 
-.slot-form-container input, select {
+.header-second {
+    display: inline-flex;
+    align-items: center;
+    width: 96%;
+    justify-content: space-between;
+    padding: 0 25px;
+}
+.slot-form-search {
+    width: 60vw;
+}
+
+.slot-form-input {
     height: 20px;
-    outline: none;
     outline-color: rgba(0,0,0,.05);
     background-color: rgba(0,0,0,.05);
-    padding: 5px;
-    width: 65%;
+    padding: 15px;
     margin-bottom: 10px;
     border-width: 0;
+    display: inline;
+    width: 50vw;
+
 }
   
-.slot-form-container button {
+.slot-form-search-button {
     border: 1px solid black;
     color: white;
     background-color: #fb3e44;
@@ -40,19 +63,9 @@ nav {
     margin-top: 15px;
     margin-bottom: 10px;
     border-width: 0;
+    display: inline;    
 }
   
-.a-text  {
-    text-decoration: none;
-    color: black;
-}
-
-.logo {
-    width: 100px;
-    margin-right: 1rem;
-    padding-top: 10px;
-    padding-left: 25px;
-}
 
 h2{
     font-size: 80px;
@@ -77,7 +90,7 @@ h2{
     font-size: 25px;
 }
 
-section i button{
+.see-plans button{
     box-shadow: 8px 8px 0 rgba(251,59,73,.2);
     background-color: #FB3B49;
     border-width: 0;
@@ -85,30 +98,28 @@ section i button{
     padding: 20px;
     margin-top: 40px;
     margin-bottom: 20px; 
-    width: 20%;
-    margin-right: 500px;
-    margin-left: 200px;
+    width: 30%;
     align-items: center;
     justify-content: center;
 }
 
-section b button{
+.join-for-free button{
     box-shadow: 8px 8px 0 rgba(251,59,73,.2);
     background-color: white;
     border-width: 0;
     color: black;
     padding: 20px;
-    width: 20%;
-    margin-right: 200px;
-    margin-left: 500px;
+    width: 30%;
     align-items: center;
     justify-content: center;
 }
 
-section button{
+section div{
     justify-content: center;
-    display: flex;
     justify-content: space-between;
+    display: inline;
+    padding: 50px;
+    margin-bottom: 70px;
 }
 
 h3{
@@ -169,10 +180,7 @@ h1{
       font-size: medium;
 }
  
-.aside-bar{
-      padding: 5px;
-      justify-content: space-between;
-}
+
    
 footer button{
     box-shadow: 8px 8px 0 rgba(128,83,35,.2);
