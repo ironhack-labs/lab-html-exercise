@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+:root {
+  --primary: #fb3e44;
+  --lightGrey: #cccccc;
+}
+
+html,
+body {
+  margin: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+}
+
+ul {
+  margin: 0;
+}
+header {
+  box-shadow: 0 5px 15px -5px rgba(0, 0, 0, .1);
+}
+
+header > div {
+  padding: 15px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+  background: white;
+}
+
+.blackHeart {
+  width: 25px;
+  margin-right: .8rem;
+}
+
+.blackHeart-phrase {
+  font-size: .8em;
+}
+
+nav {
+  width: 600px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  font-size: .8em;
+}
+
+.bottom-header {
+  gap: 25px;
+}
+
+.home-link {
+  height: 23px;
+  width: 70px;
+  margin-top: 6px;
+}
+.home-link img{
+  width: 100%;
+}
+
+.search-bar-form {
+  display: flex;
+  flex-grow: 2;
+  position: relative;
+}
+
+.search-icon {
+  background: url(./images/magnifying-glass.png) no-repeat;
+  background-size: 100%;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 10px;
+  left: 15px;
+}
+
+.search-bar {
+  background-color: rgba(0,0,0,.05);
+  border: none;
+  padding: 15px;
+  width: 90%;
+  padding-left: 55px;
+  font-size: 1rem;
+}
+
+.search-button {
+  border: none;
+  background-color:  var(--primary);
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.header-links {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+#section-hero {
+  text-align: center;
+  background-color: #F7F4F4;
+}
+#section-hero h1{
+  font-size: 5rem;
+  font-weight: 600;
+}
+
+/* Buttons and links*/
+
+.btn {
+  text-decoration: none;
+}
+
+nav a:hover,
+.btn:hover {
+  opacity: .5;
+}
+
+.btn-sm {
+  padding: 10px 20px;
+  font-size: .8em;
+}
+
+.btn-outline {
+  border: 1px solid var(--lightGrey);
+  color: black;
+}
+
+.btn-link {
+  color: black;
+  padding: 0;
+}

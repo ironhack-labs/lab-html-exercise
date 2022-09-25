@@ -8,17 +8,20 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <header class="header">
-        <div class="top-header">
-            <div class="fun-link">
-                <img src="./images/black-heart.png" alt="heart icon">
-                <span class="link">Non Programming Manager</span>
+    <header>
+        <div>
+            <div>
+                <img src="./images/black-heart.png" alt="heart icon" class="blackHeart">
+                <span class="blackHeart-phrase">Non Programming Manager</span>
             </div>
-            <nav class="nav-bar">
+            <nav>
                 <ul>
+                    <li><a href="#">npm Enterprise</a></li>
                     <li><a href="#">Products</a></li>
-                    <li><a href="#">Pricing</a></li>
-                    <li><a href="#">Dcumentation</a></li>
+                    <li><a href="#">Solutions</a></li>
+                    <li><a href="#">Resources</a></li>
+                    <li><a href="#">Docs</a></li>
+                    <li><a href="#">Support</a></li>
                 </ul>
             </nav>
         </div>
@@ -26,19 +29,19 @@
             <a href="#" class="home-link">
                 <img src="./images/npm-logo.png" alt="NPM Logo">
             </a>
-            <form action="" class="search-bar">
-                <input type="text">
-                <input type="submit" value="Search">
+            <form action="" class="search-bar-form">
+                <span class="search-icon"></span>
+                <input class="search-bar" type="text" placeholder="Search packages">
+                <input class="search-button" type="submit" value="Search">
             </form>
             <div class="header-links">
-                <a href="#" class="btn btn-outline btn-lg">Join</a>
-                <a href="#" class="btn btn-link btn-lg">Log in</a>
+                <a href="#" class="btn btn-outline btn-sm">Join</a>
+                <a href="#" class="btn btn-link btn-sm">Log in</a>
             </div>      
         </div>
     </header>
 
-    <section class="section-hero">
-        <img src="./images/triangle-hexagon.svg" alt="">
+    <section id="section-hero">
         <h1>Build amazing things</h1>
         <article>Essential JavaScript development tools that help you go to market faster and build powerful applications using modern open source code.</article>
         <div class="hero-actions">
@@ -47,16 +50,17 @@
         </div>
     </section>
 
-    <section>
+    <section id="section-introduction">
+        <img src="./images/triangle-hexagon.svg" alt="">
         <h2>Bring the best of open sourse to your company</h2>
         <article>npm is the tool used by over 11,000,000 JavaScript developers around the world. your developers aready use it. Your company depends on it. Create an Org and get more out of the tools your team already knows and loves.</article>
     </section>
 
-    <section>
+    <section id="section-features">
         <div class="container">
             <div class="features">
                 <div class="single-feature">
-                    <img src="" alt="">
+                    <img src="./images/zero-configuration.svg" alt="">
                     <h3>Zero configuration</h3>
                     <p>Create an org, add your team ad start collaborating. Nothing to configure, set up, or manage.</p>
                 </div>
