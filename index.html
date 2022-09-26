@@ -30,26 +30,28 @@
         </nav>
       </div>
 
-      <div>
+      <div class="search-bar">
         <img
-          class="logo"
+          id="logo"
           src="https://raw.githubusercontent.com/ironhack-labs/lab-html-exercise/master/images/npm-logo.png"
           alt="logo"
         />
-        <br />
 
-        <form class="search-bar" action="text" method="post">
-          <img
-            class="magnifying"
-            src="https://raw.githubusercontent.com/ironhack-labs/lab-html-exercise/master/images/magnifying-glass.png"
-            alt="magnifying glass"
-          />
-          <input id="input" type="search" placeholder="Search packages" />
+        <form action="text" method="post">
+          <i>
+            <img
+              class="magnifying"
+              src="https://raw.githubusercontent.com/ironhack-labs/lab-html-exercise/master/images/magnifying-glass.png"
+              alt="magnifying glass"
+          /></i>
+          <input type="text" placeholder="Search packages" />
           <button type="submit">Search</button>
         </form>
 
-        <a class="join" href="#"> Join </a>
-        <a class="log-in" href="#"> Log In </a>
+        <div>
+          <a class="join" href="#"> Join </a>
+          <a class="log-in" href="#"> Log In </a>
+        </div>
       </div>
     </header>
 
@@ -63,13 +65,14 @@
       </article>
       <br />
       <br />
+      <br />
       <div>
         <a class="see-plans" href="#"> See plans </a>
 
         <a class="join-free" href="#"> Join for free </a>
       </div>
     </section>
-    <br />
+
     <section class="bring">
       <img
         class="triangle-hexagon"
@@ -78,7 +81,7 @@
       />
 
       <h3>Bring the best of open source to your company</h3>
-      <br />
+
       <article id="article-bring">
         npm is the tool used by over 11.000.000 JavaScript developers around the
         world. Your developers <br />
@@ -87,7 +90,7 @@
         team already knows and loves.
       </article>
     </section>
-
+    <br />
     <section class="container" id="blocks">
       <div class="feature-box">
         <img
