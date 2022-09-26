@@ -1,0 +1,259 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+
+/*** HTML - Body ***/
+
+* {
+  margin: 0;
+}
+
+body {
+  font-family: "Poppins";
+  font-size: 16px;
+  padding: 10px 25px;
+}
+
+/*** Header - Nav ***/
+
+header > div {
+  padding: 10px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+}
+
+nav {
+  width: 600px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #333333;
+}
+
+.blackHeart {
+  width: 20px;
+  margin-right: 1rem;
+}
+
+/*** Header - Form ***/
+
+.logo {
+  width: 75px;
+  margin-right: 1rem;
+}
+
+.magnifying-glass {
+  width: 25px;
+}
+
+.form-container {
+  width: 80%;
+}
+
+form input {
+  background-image: url("images/magnifying-glass.png");
+  background-position: 10px 10px;
+  background-size: 25px;
+  background-repeat: no-repeat;
+  background-color: #eeeeee;
+  border: none;
+  color: rgba(0, 0, 0);
+  width: 90%;
+  padding: 15px 50px;
+}
+
+form input:focus-visible {
+  outline: 0px;
+  box-shadow: inset 0 0 1px #000000;
+  background-color: #f3f3f3;
+}
+
+/*** Buttons ***/
+
+.link-btn {
+  font-size: 1em;
+  letter-spacing: 0.5px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-style-search {
+  border: none;
+  background-color: #fb3b44;
+  color: #ffffff;
+  padding: 15px 25px;
+  letter-spacing: 0.5px;
+  text-align: center;
+  text-decoration: none;
+  margin-left: -5px;
+  cursor: pointer;
+}
+
+.btn-style-search:hover {
+  background-color: #fa5661;
+}
+
+.btn-style-1 {
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  color: #000000;
+  padding: 5px 15px;
+  margin: 10px;
+}
+
+.btn-style-1:hover {
+  border: 1px solid #fa5661;
+  color: #fa5661;
+}
+
+.btn-style-2 {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 5px 15px;
+  margin: 10px;
+}
+
+.btn-style-2:hover {
+  color: #fa5661;
+}
+
+.btn-style-3 {
+  background-color: #fb3b49;
+  color: #ffffff;
+  box-shadow: 8px 8px 0 rgba(251, 59, 73, 0.2);
+  padding: 15px 65px;
+  font-weight: bold;
+  margin: 10px;
+}
+
+.btn-style-3:hover {
+  background-color: #fa5661;
+}
+
+.btn-style-4 {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 15px 65px;
+  font-weight: bold;
+  margin: 10px;
+}
+
+.btn-style-4:hover {
+  color: #fa5661;
+}
+
+.btn-style-5 {
+  background-color: #000000;
+  color: #ffffff;
+  box-shadow: 8px 8px 0 rgba(128, 83, 35, 0.2);
+  padding: 15px 115px;
+  font-weight: bold;
+  margin: 10px;
+}
+
+.btn-style-5:hover {
+  background-color: #333333;
+}
+
+/*** Cover Box ***/
+
+#cover-box {
+  background-color: rgba(232, 217, 217, 0.3);
+  box-shadow: inset 0 5px 7px -8px rgb(0 0 0 / 40%);
+  text-align: center;
+  height: 600px;
+  padding-top: 100px;
+}
+
+#cover-box h1 {
+  font-size: 75px;
+  font-weight: 700;
+}
+
+#cover-box article {
+  max-width: 500px;
+  margin: 0px auto;
+  font-size: 18px;
+}
+
+#cover-box .btns-div {
+  padding: 25px;
+}
+
+/*** Info Box ***/
+
+#info-box {
+  background-color: #ffffff;
+  text-align: center;
+  height: 500px;
+  padding-top: 100px;
+}
+
+#info-box h2 {
+  font-size: 35px;
+  font-weight: 700;
+  background-color: rgba(255, 204, 53, 0.4);
+  transform: skew(14deg, 0deg);
+  font-style: italic;
+  margin: 0 15%;
+}
+
+#info-box article {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#info-box .triangle-hexagon {
+  width: 250px;
+  margin-bottom: 50px;
+}
+
+/*** Columns Box ***/
+
+#columns-box {
+  padding: 3% 5%;
+}
+
+#columns-box > div {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#columns-box .service-box {
+  font-size: 1em;
+  padding: 20px;
+  width: 20%;
+}
+
+#columns-box .service-box img {
+  height: 25px;
+}
+
+#columns-box .service-box h3 {
+  color: #ed1c24;
+  margin: 25px 0;
+}
+
+#columns-box .btns-div {
+  padding: 75px 0;
+  display: block;
+  text-align: center;
+}
