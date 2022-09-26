@@ -41,6 +41,8 @@ header > div {
 
 .blackHeart-phrase {
   font-size: .8em;
+  cursor: pointer;
+  transition: all linear .2s;
 }
 
 nav {
@@ -59,6 +61,10 @@ nav a {
   color: black;
   padding: 10px;
   font-size: .8em;
+  transition: all linear .2s;
+}
+nav li:last-child a{
+  padding-right: 0;
 }
 
 .bottom-header {
@@ -142,7 +148,6 @@ nav a {
   gap: 40px;
 }
 
-
 #section-introduction .container {
   display: flex;
   flex-direction: column;
@@ -173,14 +178,44 @@ nav a {
   width: 800px;
 }
 
+#section-features .container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  max-width: 1310px;
+  margin: 0 auto;
+  padding: 50px 0 100px;
+}
+
+.features {
+  display: flex;
+  gap: 60px;
+}
+
+.features .single-feature {
+  flex: 1 1 0px;
+}
+.features .single-feature  h4 {
+  color: var(--primary);
+  margin-bottom: 35px;
+}
+
+.features .single-feature img {
+  width: 45px;
+  margin-bottom: 15px;
+}
+
 /* Buttons and links*/
 
 .btn {
   text-decoration: none;
+  transition: all linear .2s;
 }
 
 nav a:hover,
-.btn:hover {
+.btn:hover,
+.blackHeart-phrase:hover {
   opacity: .5;
 }
 
@@ -204,6 +239,12 @@ nav a:hover,
   background-color: var(--primary);
   color: white;
   box-shadow: 8px 8px 0 rgba(251,59,73,.2)
+}
+
+.btn-secondary {
+  background-color:  black;
+  color: white;
+  box-shadow: 8px 8px 0 rgba(128,83,35,.2)
 }
 
 .btn-terciary {
