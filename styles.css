@@ -94,17 +94,21 @@ header div form button {
     background-color: rgba(0, 0, 0, 0.05);
 }
 
-#plans {
+#plans, #article {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 600px;
+}
+
+#plans {
     background-color: rgba(232, 217, 217, .3);
 }
 
 h1 {
     font-size: 70px;
+    font-weight: 900;
     margin-top: -3rem;
 }
 
@@ -124,10 +128,33 @@ article {
     background-color: #fb3b49;
     box-shadow: 8px 8px 0 rgb(251, 59, 73, .2);
     color: white;
+    margin-right: 15px;
 }
 
 .joinForFreeButton {
     background-color: white;
     color: black;
+    margin-left: 15px;
+}
+
+.triangleHex {
+    width: 220px;
+}
+
+.yellowHeading {
+    background-color: rgb(255, 204, 53, 0.4);
+    transform: skew(9deg,0deg);
+    font-style: italic;
+    width: 780px;
+    height: 38px;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 3rem;
+    margin-top: 4rem;
+}
+
+#article p {
+    font-size: smaller;
+    color: rgb(83, 83, 83);
 }
 
