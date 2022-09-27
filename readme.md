@@ -1,5 +1,7 @@
 ![logo_ironhack_blue 7](https://user-images.githubusercontent.com/23629340/40541063-a07a0a8a-601a-11e8-91b5-2f13e4e6b441.png)
 
+# DISCLAIMER: This clone only contains the desktop-version of the page and has not been optimized for the mobile-version.
+
 # Module Exercise: HTML & CSS
 
 ## Learning Goals
@@ -77,26 +79,26 @@ We could try to represent this part of the website with the following:
 
 ```html
 <header>
-  <div>
-    <div>
-      <img class="blackHeart" src="LINK TO IMAGE GOES HERE" alt="black heart" />
-      <span> Nifty Penguin Magic </span>
-    </div>
-    <nav>
-      <ul>
-        <li><a href="#"> npm Enterprise </a></li>
-        <li><a href="#"> Products </a></li>
-        <li><a href="#"> Solutions </a></li>
-        <li><a href="#"> Resources </a></li>
-        <li><a href="#"> Docs </a></li>
-        <li><a href="#"> Support </a></li>
-      </ul>
-    </nav>
-  </div>
+	<div>
+		<div>
+			<img class="blackHeart" src="LINK TO IMAGE GOES HERE" alt="black heart" />
+			<span> Nifty Penguin Magic </span>
+		</div>
+		<nav>
+			<ul>
+				<li><a href="#"> npm Enterprise </a></li>
+				<li><a href="#"> Products </a></li>
+				<li><a href="#"> Solutions </a></li>
+				<li><a href="#"> Resources </a></li>
+				<li><a href="#"> Docs </a></li>
+				<li><a href="#"> Support </a></li>
+			</ul>
+		</nav>
+	</div>
 
-  <div>
-    <!-- add logo, search bar and buttons (or links and style them as buttons later) -->
-  </div>
+	<div>
+		<!-- add logo, search bar and buttons (or links and style them as buttons later) -->
+	</div>
 </header>
 ```
 
@@ -131,7 +133,7 @@ _Hint2_: You might want to consider adding the following line to your CSS, just 
 
 ```css
 body {
-  background-color: red;
+	background-color: red;
 }
 ```
 
@@ -141,10 +143,10 @@ Refresh the page in Chrome, and if your _style.css_ is linked properly, the page
 Before we move forward, add at the very top of your _style.css_ file the following lines:
 
 ```css
-@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url("https://fonts.googleapis.com/css?family=Poppins");
 
 body {
-  font-family: 'Poppins';
+	font-family: "Poppins";
 }
 ```
 
@@ -164,32 +166,32 @@ We'll help you style the part of the code we previously provided for you - the u
 
 ```css
 header > div {
-  padding: 0 25px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid lightgray;
+	padding: 0 25px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid lightgray;
 }
 
 nav {
-  width: 600px;
+	width: 600px;
 }
 
 nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 nav a {
-  text-decoration: none;
-  color: black;
+	text-decoration: none;
+	color: black;
 }
 
 .blackHeart {
-  width: 20px;
-  margin-right: 1rem;
+	width: 20px;
+	margin-right: 1rem;
 }
 ```
 
