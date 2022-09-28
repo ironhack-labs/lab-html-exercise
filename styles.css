@@ -163,20 +163,20 @@ article {
     height: 35px;
 }
 
-#characteristics .columns {
+.columns {
     margin-bottom: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: left;
     font-size: smaller;
-    width: 900px;
+    width: 200px;
+    margin: 50px;
 }
 
-#characteristics {
+#characteristics > div {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    color: rgb(83, 83, 83);
+    margin-top: -2rem;
 }
 
 #characteristics h3 {
@@ -192,7 +192,15 @@ article {
     box-shadow: 8px 8px 0 rgba(128,83,35,.2);
     padding: 15px 130px;
     font-weight: bolder;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
+    margin-top: 1rem;
+}
+
+#characteristics {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 
