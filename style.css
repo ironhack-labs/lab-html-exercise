@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
 body {
   font-family: 'Poppins';
   margin: 0px;
@@ -20,6 +21,10 @@ form button letters color: white
 }
 .btn-white {
     background-color: #FFF;
+}
+.btn-white:hover {
+    background-color: #FFF5;
+    box-shadow: 8px 8px 0 rgba(116, 116, 116, 0.2);
 }
 .header {
     font-size: .8em;
@@ -124,9 +129,14 @@ h1 {
 .join-plans a {
     width: 40%;
     padding: 10px;
+    transition: ease .4s;
 }
 .join-plans .btn-red {
     box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+}
+.join-plans .btn-red:hover {
+    background-color: #c42e33;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.4);;
 }
 
 /* Section about us */
@@ -186,4 +196,9 @@ h1 {
     color: #FFF;
     background-color: #000;
     box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    transition: ease .4s;
+}
+
+#features a:hover {
+    background-color: #000c;
 }
