@@ -1,47 +1,56 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
 
 body {
     font-family: "Poppins"; 
-    
 }
-header{
+/* --------------HEADER --------------*/
+.header-style{
+   /*---- Prueba de como inmovilizar la barra superior---*/
     position: fixed;
     width: 100%;
-    background-color: whitesmoke;
-    top: 0%;
+    background-color: white;
+    /*---- Prueba de como inmovilizar la barra superior---*/
+    top: 0%;   
     border-bottom: 1px solid lightgray;
-
-   
 }
-header > div {
+
+.header-style > div {
     padding: 0 25px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
-   
 }
-header > div > section {
+
+.header-style > div > section {
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
-header > div > section a{
+
+.header-style > div > section a{
     margin: 5px;
 }
 
-nav{
+.nav{
     width: 600px;
 }
-nav ul{
+
+.nav ul{
     list-style: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: 70%;
 }
-nav a{
+
+.nav a{
     text-decoration: none;
     color: black;
+}
+
+.niffy{
+    font-size: 60%;
 }
 .join-buttom{
 text-decoration: none;
@@ -49,42 +58,31 @@ color: black;
 border: 1px solid rgb(182, 181, 181);
 padding: 1px 15px;
 box-shadow: 0px -5px 5px -4px rgb(187 187 187);
-
 }
+
 .login-buttom{
     text-decoration: none;
     color: black;
 }
-.blackHeart{
-    width: 20px;
-    margin-right: 1rem;;
-}
+
+
+
 .search-Button {
     background-color: #fb3e44;
     color: white;
     border: none;
-    padding: 8.5px 16px;
-    margin-right: 15px;
-
-    
+    padding: 7px 16px;
+    margin-right: 15px;    
 }
-.magnifyinglass{
-    width: 20px;
-   
-}
-.npm-logo{
-    width: 50px;
-    padding: 10px;
-}
+/*  --------------INICIO-------------- */
 #inicio{
     display: flex;
     flex-direction: column;
     align-items: center;   
     padding-bottom: 150px;
     padding-top: 150px;
-
-       
 }
+
 #inicio div{
     align-items: center;
     font-style: italic;
@@ -92,18 +90,23 @@ box-shadow: 0px -5px 5px -4px rgb(187 187 187);
     justify-content: space-between;
        
 }
-#inicio h1{
-    font-size: 5em;
+
+#inicio h1{ 
+    font-family: 'Poppins', sans-serif;
+    Font-size: 3em;
     text-align: center;
     font-weight: 900;
 }
+
 #inicio article{
+    
     text-align: center;
     margin-bottom: 50px;
     font-size: 1.5em;
     width: 650px;
        
 } 
+
 .see-plans{
     background-color:#fb3B49; 
     box-shadow: 8px 8px 2px -1px rgb(252, 191, 191);
@@ -112,50 +115,44 @@ box-shadow: 0px -5px 5px -4px rgb(187 187 187);
     text-decoration: none;
     margin: 20px;
     font-size: 1.2em;
-    
+    font-family: 'Poppins', sans-serif;    
 }
+
 .join-for-free{
     text-decoration: none ;
     color: black;
     margin: 50px;
     text-align: center;
-    font-weight: 900;
-    
+    font-weight: 900;    
 }
+
 #enterprice{
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 400;
     margin-bottom: 150px;
-    margin-top: 50px;
     font-size: 1.5em;
     text-align: center;
-
 }
 
-#enterprice h1 {
+/* --------------ENTERPRICE --------------*/
+#enterprice > header {
     background-color: rgba(255,204,53,.4) ;
     transform: skew(9deg,0deg);
     font-style: italic;
     margin: 15px ;
     padding: 0px 15px;
-    
+    font-weight: 400;    
 }
-#enterprice p{
-    
+
+#enterprice article{    
     width: 700px;
     font-style: italic;
     font-size: 0.75em;
-
+    margin-top: 20px;
 }
-.hexagon-logo{
-    width: 300px;
-    padding: 50px;
-   
-    
-}
-
+/* --------------RESOURCES --------------*/
 #resources section{
     display: flex;
     flex-direction: row;
@@ -170,18 +167,17 @@ box-shadow: 0px -5px 5px -4px rgb(187 187 187);
     padding: 30px;
     
 }
-#resources img{
-    height: 30px;
 
-    
+#resources img{
+    height: 30px;    
 }
-#resources h3{
-    color: #ED1C24
-    
-   
+
+#resources header{
+    color: #ED1C24 ;
+    font-weight: 500;
 }
-#resources a{
-  
+
+#resources a{  
     text-decoration: none;
     color: white;
     background-color: black;
@@ -189,9 +185,27 @@ box-shadow: 0px -5px 5px -4px rgb(187 187 187);
     text-align: center;
     box-shadow: 8px 8px 0px rgba(128,83,35,.2)
 }
+
 .column{
     flex-direction: column;
     align-content: center;
 }
+/* --------------IMG --------------*/
+.hexagon-logo{
+    width: 300px;
+    padding: 50px;    
+}
 
+.magnifyinglass{
+    width: 20px;
+}
 
+.npm-logo{
+    width: 50px;
+    padding: 10px;
+}
+
+.blackHeart{
+    width: 20px;
+    margin-right: 1rem;;
+}
