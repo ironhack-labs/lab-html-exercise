@@ -57,6 +57,7 @@ nav a {
 
 .button1 {
     background-color: white;
+    padding: 5px 20px;
 }
 
 .button2 {
@@ -74,7 +75,7 @@ nav a {
 }
 
 #welcome h1 {
-    font-size: 50px;
+    font-size: 60px;
     font-weight: 900;
 }
 
@@ -131,7 +132,7 @@ nav a {
 
 #introduction h4 {
     background-color: rgba(255, 204, 53, .4);
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bold;
     transform: skew(9deg,0deg);
     font-style: italic;
@@ -145,36 +146,51 @@ nav a {
 }
 
 #introduction article {
-    width: 800px;
+    width: 700px;
     text-align: center;
     padding-bottom: 200px;
+    font-size: 13px;
 }
 
 #create {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    
-    padding: 0 40px 20px 60px;
+    flex-wrap: wrap;
+    margin: 0 80px;
+    justify-content: center;
 }
 
-#create div {
-    padding-left: 30px;
-    width: 100%;
+#create > div {
+    display: flex;
+    gap: 20px;
+    margin: 0px 800px 30px 800px;
+}
+
+#create svg {
+    width: 25px;
 }
 
 #create h5 {
     color: #ED1C24;
+    font-weight: bold;
+}
+
+#create p {
+    font-size: 10px;
+}
+
+.create_item {
+    width: 150px;
+    margin-left: 50px;
 }
 
 #create button {
     box-shadow: 8px 8px 0 rgba(128, 83, 35, .2);
     background-color: black;
-    width: 100%;
     font-weight: bold;
     border: none;
-    padding: 10px 40px;
+    width: 250px;
+    height: 40px;
+    margin-bottom: 40px;
 }
 
 #create a {
@@ -183,10 +199,3 @@ nav a {
     text-decoration: none;
 }
 
-#create p {
-    font-size: 10px;
-}
-
-#create svg {
-    width: 30px;
-}
