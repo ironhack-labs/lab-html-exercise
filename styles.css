@@ -4,6 +4,11 @@ body {
     font-family: 'Poppins';
 }
 
+body > section {
+    height: 600px;
+    flex-direction: column;
+}
+
 a {
     color: black;
     text-decoration: none;
@@ -15,9 +20,6 @@ ul {
 .header > section {
     border-bottom: 1px solid rgb(236, 234, 234);
     padding: 0px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     height: 50px;
 }
 
@@ -35,24 +37,19 @@ ul {
 .header-sec2 {
     padding: 10px 20px !important;
 }
-.header-sec2 img {
+.header-sec2 img {  /* npm logo */
     height: 20px;
     margin-right: 20px;
 }
 .search-form {
     width: 95%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 .search-field {
-    display: flex;
-    align-items: center;
-    border: 0px;
-    background-color:rgba(0,0,0,.05);
     width:100%;
+    background-color:rgba(0,0,0,.05);
+    border: 0px;
 }
-.search-field img {
+.search-field img { /* magnifying glass icon */
     height: 20px;
     padding-left: 20px;
 }
@@ -72,29 +69,19 @@ ul {
     width: 100px;
     font-size: 1em;
 }
-.header-sec2-btns {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+.header-sec2-links {
     width: 20%;
     gap: 20px;
 }
-.header-sec2-btns div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.header-sec2-links div {
     width: 80px;
     height: 40px;
 }
-.join-btn {
+.join-link {
     border: 1px solid #000;
 }
+
 .section1 {
-    height: 600px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     background-color:rgba(232,217,217,.3);
 }
 .section1 h1 {
@@ -107,61 +94,32 @@ ul {
     text-align: center;
     margin: 50px 0;
 }
-.section1 div {
-    /* text-align: center; */
-    width: 500px;
-    /* background-color: brown; */
-    margin: 0 auto;
+.section1 .sec1-links {
+    gap: 30px;
 }
-.section1 div ul {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    list-style: none;
-    /* background-color:yellow; */
-    /* margin: 0; */
-    padding: 0;
-}
-.section1  > div ul li {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 200px;
+.section1 .sec1-links div {
     height: 50px;
-    /* margin-left: 20px; */
+    width: 200px;
 }
-.section1 > div ul a {
-    /* color: black; */
-    text-decoration: none;
-}
-.sec1-btn-plans {
+.sec1-link-plans {
     background-color: rgb(251, 62, 68);
     box-shadow: 8px 8px 0 rgba(251,59,73,.2);
 }
-.sec1-btn-plans a {
+.sec1-link-plans a {
     color: white;
     font-weight: bold;
 }
-.sec1-btn-join {
+.sec1-link-join {
     background-color: white;
-    /* box-shadow: 8px 8px 0 rgba(251,59,73,.2); */
 }
-.sec1-btn-join a {
-    color: black;
+.sec1-link-join a {
     font-weight: bold;
-}
-.section2 {
-    height: 600px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    /* background-color:red; */
-    /* background-color:rgba(232,217,217,.3); */
-
 }
 .section2 > div {
     text-align: center;
+}
+.section2 img {
+    height: 200px;
 }
 .section2 > div > h2 {
     background-color: rgba(255,204,53,.4);
@@ -173,18 +131,10 @@ ul {
     width: 60%;
     text-align: center;
 }
-.section2 img {
-    height: 200px;
-    /* text-align: center; */
-}
 
 .section3 {
-    height: 600px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    justify-content: flex-start !important;
     align-items: center;
-    /* background-color: lightblue; */
     width: 100%;
 }
 .section3 .boxes {
@@ -204,18 +154,30 @@ ul {
 .section3 .boxes > div h5 {
     color:#ED1C24;
     font-weight: bold;
-    /* font-size: 14px; */
 }
 .section3 .btn > div {
     width: 300px;
     border: 1px solid #000;
     height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: #000;
     box-shadow: 8px 8px 0 rgba(128,83,35,.2)
 }
 .section3 .btn a {
     color: white;
+}
+
+.flex-links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex-space-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
