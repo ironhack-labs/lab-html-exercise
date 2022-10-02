@@ -4,6 +4,8 @@ body {
   font-family: "Poppins";
 }
 
+/*HEADER*/
+
 header > div {
   padding: 0 25px;
   display: flex;
@@ -23,7 +25,27 @@ header > div {
   height: 30px;
   background-color: rgba(0, 0, 0, 0.05);
   border: none;
-  border-radius: 1px;
+  outline: none;
+  margin-left: 20px;
+}
+
+.search > button {
+  height: 30px;
+
+  border: none;
+  background-color: #fb3e44;
+  color: white;
+}
+
+.connexion {
+  padding: 0 30px;
+}
+
+.connexion button {
+  border: 1px black solid;
+  background-color: white;
+  height: 30px;
+  width: 60px;
 }
 
 nav {
@@ -45,4 +67,125 @@ nav a {
 .blackHeart {
   width: 20px;
   margin-right: 1rem;
+}
+
+.magnifyingglass {
+  width: 20px;
+}
+
+.logo {
+  width: 60px;
+  padding: 5px;
+}
+
+/* SECTION ONE */
+.sectionone {
+  height: 600px;
+  background-color: rgba(232, 217, 217, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sectionbutton {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+}
+
+.sectionone .buttoncolor {
+  background-color: #fb3b49;
+  box-shadow: 8px 8px 0 rgba(251, 59, 73, 0.2);
+  width: 200px;
+  height: 55px;
+  border: none;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.sectionone .withoutcolor {
+  background-color: white;
+  width: 200px;
+  height: 55px;
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.sectionone h1 {
+  font-size: 90px;
+  font-weight: bold;
+}
+
+.sectionone p {
+  font-size: 25px;
+  text-align: center;
+  width: 50%;
+}
+
+/* SECTION TWO */
+
+.sectiontwo {
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sectiontwo img {
+  width: 350px;
+}
+
+.sectiontwo h1 {
+  font-size: 30px;
+  font-weight: bold;
+  background-color: rgba(255, 204, 53, 0.4);
+  transform: skew(9deg, 0deg);
+  width: 800px;
+  text-align: center;
+}
+
+.sectiontwo p {
+  font-size: 18px;
+  text-align: center;
+  width: 60%;
+}
+
+/* SECTION THREE */
+
+.sectionthree {
+  display: flex;
+  padding: 50px;
+}
+
+.sectionthree div {
+  width: 500px;
+  height: auto;
+  padding: 20px;
+}
+
+.sectionthree p {
+  text-align: left;
+}
+
+.sectionthree h3 {
+  color: #ed1c24;
+}
+
+.containerorg {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+.org {
+  background-color: black;
+  box-shadow: 8px 8px 0 rgba(128, 83, 35, 0.2);
+  color: white;
+  width: 330px;
+  height: 50px;
+  font-size: 20px;
+  font-weight: bold;
 }
