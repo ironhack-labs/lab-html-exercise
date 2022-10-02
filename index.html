@@ -6,59 +6,65 @@
     <title>NPM CLONE</title>
   </head>
   <body>
-    <header class="">
-      <!-- TITLE SECTION -->
-      <div>
+    <header class="header">
+      <section class="header-sec1">
         <div>
           <img src="/images/black-heart.png" alt="black heart" />
-          <h3>Nifty Penguin Magic</h3>
+          <span>Nifty Penguin Magic</span>
         </div>
         <!-- NAVIGATION SECTION -->
-        <nav>
+        <nav class="header-nav-bar">
           <ul>
-            <li><a href="#">npm Enterprise Products</a></li>
-            <li><a href="#">Solutions Resources</a></li>
+            <li><a href="#">npm Enterprise</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Solutions</a></li>
+            <li><a href="#">Resources</a></li>
             <li><a href="#">Docs</a></li>
             <li><a href="#">Support</a></li>
           </ul>
         </nav>
-      </div>
+      </section>
 
       <!-- SEARCH BAR -->
-      <div>
-        <form>
-          <img src="/images/npm-logo.png" alt="npm logo" />
-          <input type="text" />
-          <button type="submit">Search</button>
+      <section class="header-sec2">
+        <img src="/images/npm-logo.png" alt="npm logo" />
+        <form class="search-form">
+          <div class="search-field">
+            <img src="/images/magnifying-glass.png" alt="search icon" />
+            <input type="text" placeholder="Search Packages" />
+            <button type="submit">Search</button>
+          </div>
         </form>
 
         <!-- LINKS -->
-        <div>
-          <a href="#">Join</a>
-          <a href="#">Log-In</a>
+        <div class="header-sec2-btns">
+          <div class="join-btn"><a href="#">Join</a></div>
+          <div class="login-btn"><a href="#">Log-In</a></div>
         </div>
-      </div>
+      </section>
     </header>
 
-    <section>
+    <section class="section1">
       <h1>Build amazing things</h1>
       <article>
-        <p>
+        <span>
           Essential JavaScript development tools that help you go to market
           faster and build powerful applications using modern open source code.
-        </p>
+        </span>
       </article>
       <div>
         <ul>
-          <li>See plans</li>
-          <li>Join for free</li>
+          <li class="sec1-btn-plans"><a href="">See plans</a></li>
+          <li class="sec1-btn-join"><a href="">Join for free</a></li>
         </ul>
       </div>
     </section>
 
-    <section>
-      <img src="" />
-      <h2>Bring the best of open source to your company</h2>
+    <section class="section2">
+      <div>
+        <img src="images/triangle-hexagon.svg" />
+        <h2>Bring the best of open source to your company</h2>
+      </div>
       <article>
         <p>
           npm is the tool used by over 11,000,000 JavaScript developers around
@@ -69,43 +75,43 @@
       </article>
     </section>
 
-    <section>
-      <div>
-        <article>
-          <img src="" />
+    <section class="section3">
+      <div class="boxes">
+        <div>
+          <img src="images/zero-configuration.svg" />
           <h5>Zero configuration</h5>
           <p>
             Create an org, add your team, and start collaborating. Nothing to
             configure, set up, or manage.
           </p>
-        </article>
-        <article>
-          <img src="" />
+        </div>
+        <div>
+          <img src="images/team-management.svg" />
           <h5>Team management</h5>
           <p>
             Control who has access to what modules within your team namespace
             using straightforward team management capabilities.
           </p>
-        </article>
-        <article>
-          <img src="" />
+        </div>
+        <div>
+          <img src="images/familiar-features.svg" />
           <h5>Familiar features</h5>
           <p>
             npm Orgs has 100% parity with all the public npm registry features
             your developers already use.
           </p>
-        </article>
-        <article>
-          <img src="" />
+        </div>
+        <div>
+          <img src="images/npm-audit.svg" />
           <h5>npm audit</h5>
           <p>
             Enjoy the security auditing features built into the npm client, a
             zero-friction way to make open source software safer.
           </p>
-        </article>
+        </div>
       </div>
-      <div>
-        <button>Create an Org</button>
+      <div class="btn">
+        <div><a href="#">Create an Org</a></div>
       </div>
     </section>
   </body>
