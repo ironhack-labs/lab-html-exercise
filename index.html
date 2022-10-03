@@ -23,21 +23,25 @@
                 </ul>
             </nav>
         </div>
-        <div> 
-            <div>
-                <img class="logonpm" src="images/npm-logo.png" alt="npm logo"/>
-            </div>
-            <div>
-                <img class="search-form" src="images/magnifying-glass.png" alt="magnifying glass picture"/>
-                <form action="" method="" id="form"> 
-                    <input type="search" id="query" name="q" placeholder="Search packages">
-                    <button>Search</button>
-                </form>
-                <div>
+        <div class="container-header">
+                 <div>
+                        <img class="logonpm" src="images/npm-logo.png" alt="npm logo"/>
+                </div>
+                <div class="form-container">
+                    <form action="" method="" id="form">
+                        <div class="form-container2">
+                        <span class="glass-input">
+                            <img class="glass" src="images/magnifying-glass.png" alt="magnifying glass picture"/>
+                            <input type="search" id="query" name="q" placeholder="Search packages">
+                        </span>
+                        <button type="submit"> Search </button>
+                    </div>
+                    </form>
+                </div>
+                <div class="header-h-f">
                     <a class="header-button-join" href="#">Join</a>
                     <a class="header-button-log-in" href="#">Log In</a>
-                </div>
-            </div>
+                </div>   
         </div>    
     </header>
 <!------------------------SECTION1-------------------------------->
@@ -60,27 +64,29 @@
 <!------------------------SECTION3-------------------------------->
     <section id="section3"> 
         <div>
-            <div>
+            <div class="features">
                 <img src="images/zero-configuration.svg" alt="Zero configuration picture"/>
                 <h3>Zero configuration </h3>
                 <p> Create an org, add your team, and start collaborating. Nothing to configure, set up, or manage.</p>
             </div>
-            <div>
+            <div class="features">
                 <img src="images/team-management.svg" alt="Team management picture"/>
                 <h3>Team management </h3>
                 <p> Control who has access to what modules within your team namespace using straightforward team management capabilities.</p>
             </div>
-            <div>
+            <div class="features">
                 <img src="images/familiar-features.svg" alt="Familiar features picture"/>
                 <h3> Familiar features</h3>
                 <p>npm Orgs has 100% parity with all the public npm registry features your developers already use. </p>
             </div>
-            <div>
+            <div class="features">
                 <img src="images/npm-audit.svg" alt="NPM audit picture"/>
                 <h3> npm audit</h3>
                 <p> Enjoy the security auditing features hola built into the npm client, a zero-friction way to make open source software safer.</p>
             </div>
-            <a class="button1-section3" href="#">Create an Org </a>
+        </div>
+        <div class="button-1">
+        <a class="button1-section3" href="#">Create an Org </a>
         </div>
     </section>
   </body>
