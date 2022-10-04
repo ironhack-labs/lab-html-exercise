@@ -47,6 +47,8 @@ nav a {
 .container-header {
 border-bottom: 1px solid lightgray;
 box-shadow: 0 5px 5px -5px rgb(137, 137, 137);
+height: 60px;
+
 }
 
 .logonpm {
@@ -55,11 +57,20 @@ box-shadow: 0 5px 5px -5px rgb(137, 137, 137);
     width: 50px; 
 }
 
+.form-container2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 5px 0; 
+}
+
 .glass-input {
+    display: flex;
+    align-items: center;
     background:rgba(0,0,0,.05);
-    padding-top: 10px;
-    padding-bottom: 13px;
     padding-left: 15px;  
+    height: 45px; 
+    margin-top: 8px;  
 }
 
 .glass {
@@ -67,16 +78,10 @@ box-shadow: 0 5px 5px -5px rgb(137, 137, 137);
     height: 15px; 
 }
 
-.form-container {
-    display: flex;
-    flex-direction: row;
-    margin-right: 10px;
-}
-
 form #query {
     background: rgba(0,0,0,.0);
     border: none;
-    width: 930px;
+    width: 900px;
     padding: 15px 10px;
     font-family: "Fira Mono", "Andale Mono", "Consolas", monospace;  
 }
