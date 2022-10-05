@@ -4,11 +4,12 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
         <title>NPM Clone</title>
     </head>
     <body>
         <header id="header">
-            <div>
+            <div class="top-header">
                 <div>
                     <img src="./images/black-heart.png" alt="black heart" class="black-heart">
                     <span>Nifty Penguin Magic</span>
@@ -24,16 +25,16 @@
                     </ul>
                 </nav>
             </div>
-            <div>
+            <div class="bottom-header">
                 <img src="./images/npm-logo.png" alt="npm logo" class="npm-logo">
                 <form action="get" class="search-bar">
-                    <img src="./images/magnifying-glass.png" alt="magnifying-glass" class="magnifying-glass">
-                    <input type="text" name="search" placeholder="Search packages">
-                    <button type="submit">Search</button>
+                    <label for="search"><img src="./images/magnifying-glass.png" alt="magnifying-glass" class="search-icon"></label>
+                    <input type="text" name="search" id="search" placeholder="Search packages">
+                    <button type="submit" class="search-button">Search</button>
                 </form>
-                <div class="header-buttons">
-                    <a href="#">Join</a>
-                    <a href="#">Log In</a>
+                <div>
+                    <a href="#" class="join-button">Join</a>
+                    <a href="#" class="login-button">Log In</a>
                 </div>
             </div>
         </header>
@@ -45,8 +46,8 @@
                     modern open source code.</p>
             </article>
             <div class="initial-info-buttons">
-                <a href="#">See plans</a>
-                <a href="#">Join for free</a>
+                <a href="#" class="see-plans-button">See plans</a>
+                <a href="#" class="join-for-free-button">Join for free</a>
             </div>
         </section>
 
