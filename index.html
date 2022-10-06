@@ -1,78 +1,76 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="style.css">
-        <div id="top-bar">
+    <head><link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
             <div>
-                <h1> <img class="blackHeart" src="C:\Users\Duda\desktop\ironhack-final-prework-assessment\lab-html-exercise\images\black-heart.png" alt="black heart">
-                <span>NPM Clone Nifty Penguin Magic</span>
-                </h1>
-            </div> 
-            <nav>
-                <ul>
-                    <li><a href="#">npm Enterprise</a></li>
-                    <li><a href="#">Products</a></li>
-                    <li><a href="#">Solutions</a></li>
-                    <li><a href="#">Resources</a></li>
-                    <li><a href="#">Docs</a></li>
-                    <li><a href="#">Support</a></li> 
-                </ul>
-            </nav>
-        </div>
-        <div id="search-bar">
-            <div>
-                <img src ="C:\Users\Duda\desktop\ironhack-final-prework-assessment\lab-html-exercise\images\npm-logo.png" alt="Npm logo" class="npm-logo">
+                <div>
+                    <img class="black-heart" src="images/black-heart.png" alt="black heart">
+                    <span>NPM Clone Nifty Penguin Magic</span>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#">npm Enterprise</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">Solutions</a></li>
+                        <li><a href="#">Resources</a></li>
+                        <li><a href="#">Docs</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </nav>
             </div>
-            <div>
+            <div id="header-bottom">
+                <img class="npm-logo" src="images/npm-logo.png" alt="Npm logo">
                 <form action="/some-url" method="post">
-                    <input type="text" id="search" placeholder= "search packages">
-                    <button type="submit">Search</button>
+                    <img class="magnifying-glass" src="images/magnifying-glass.png" alt="magnifying glass">
+                    <input type="text" class="search-bar" placeholder="search packages">
+                    <a href class="search-btn" type="submit">Search</a>
                 </form>
-            </div>
-            <div>
-            <button type="submit">Join</button>
-            <button type="submit">Log In</button>
-            </div> 
-        </div>
-    </head>   
-    <section1 id="sign-up">
-        <div>
-            <h2>Build amazing things</h2>
-            <p>Essential JavaScript development tools that help you go to market faster and build powerful applications using modern open source code.</p>
-            <div id="button">
-                <button type="submit" class="crimson-button">See Plans</button>
-                <button type="submit" class="white-button">Join For Free</button>
+                <a class="join-btn">Join</a>
+                <a class="log-in-btn">Log In</a>
             </div>
         </div>
-    </section1>
-    <section2 id="about">
-        <img src="C:\Users\Duda\desktop\ironhack-final-prework-assessment\lab-html-exercise\images\triangle-hexagon.svg" alt="triangle-hexagon" class="center">
-        <h3>Bring the best of open source to your company.</h3>
-        <p> npm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers <br> already use it. Your company depends on it. Create an Org and get more out of the tools your team <br> already knows and loves.</p>
-    </section2>
-    <section3 id="benefits">
-        <div id="container">
-            <article>
-                <img src="C:\Users\Duda\desktop\ironhack-final-prework-assessment\lab-html-exercise\images\zero-configuration.svg" alt="zero-config">
-                <h4>Zero configuration</h4>
-                <p>Create an org, add your team, and start collaborating. Nothing to configure, set up, or manage.</p>
-            </article>
-            <article>
-                <img src="C:\Users\Duda\desktop\ironhack-final-prework-assessment\lab-html-exercise\images\team-management.svg" alt="team-management">
-                <h4>Team management</h4>
-                <p>Control who has access to what modules within your team namespace using straightforward team management capabilities.</p>
-            </article>
-            <article>
-                <img src="C:\Users\Duda\desktop\ironhack-final-prework-assessment\lab-html-exercise\images\familiar-features.svg" alt="familiar-features">
-                <h4>Familiar features</h4>
-                <p>npm Orgs has 100% parity with all the public npm registry features your developers already use.</p>
-            </article>
-            <article>
-                <img src="C:\Users\Duda\desktop\ironhack-final-prework-assessment\lab-html-exercise\images\npm-audit.svg" alt="npm-audit">
-                <h4>npm audit</h4>
-                <p>Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer.</p>
-            </article>
-            </div>
-            <button type="submit" class="create-button">Create An Org</button>
-    </section3>
+        </header>
+            <section1 id="section1" class="section-background">
+                    <h2>Build amazing things</h2>
+                    <article>Essential JavaScript development tools that help you go to market faster and build powerful applications using modern open source code.
+                    </article>
+                    <div>
+                    <a href class="see-plans-btn">See plans</a>  
+                    <a href class="join-for-free-btn">Join for free</a> 
+                    </div>
+            </section1>
+            <section2 id="section2" class="section-background">
+                <img class="triangle-hexagon" src="C:\Users\Duda\desktop\ironhack-final-prework-assessment\lab-html-exercise\images\triangle-hexagon.svg">
+                <h3>Bring the best of open source to your company.</h3>
+                <article> npm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers already use it. Your companydepends on it. Create an Org and get more out of the tools your team already knows and loves.</article>
+            </section2>
+            <section3 id="section3" class="section-background">
+                <div class="container">
+                    <article>
+                        <img src="C:\Users\Duda\desktop\ironhack-final-prework-assessment\lab-html-exercise\images\zero-configuration.svg">
+                        <h4>Zero configuration</h4>
+                        <p>Create an org, add your team, and start collaborating. Nothing to configure, set up, or manage.</p>
+                    </article>
+                    <article>
+                        <img src="C:\Users\Duda\desktop\ironhack-final-prework-assessment\lab-html-exercise\images\team-management.svg">
+                        <h4>Team management</h4>
+                        <p>Control who has access to what modules within your team namespace using straightforward team management capabilities.</p>
+                    </article>
+                    <article>
+                        <img src="C:\Users\Duda\desktop\ironhack-final-prework-assessment\lab-html-exercise\images\familiar-features.svg">
+                        <h4>Familiar features</h4>
+                        <p>npm Orgs has 100% parity with all the public npm registry features your developers already use.</p>
+                    </article>
+                    <article>
+                        <img src="C:\Users\Duda\desktop\ironhack-final-prework-assessment\lab-html-exercise\images\npm-audit.svg">
+                        <h4>npm audit</h4>
+                        <p> Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer.</p>
+                    </article> 
+                </div>
+                    <a href>Create an Org</a>
+            </section3>
+        </body>
+    </head>
 </html>

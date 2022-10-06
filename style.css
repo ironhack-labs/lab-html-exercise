@@ -1,136 +1,372 @@
-#top-bar{
+/*/////////rest-stylesheet to remove browser defaults////////source.... html5doctor.com Reset Stylesheet v1.6.1 Last Updated: 2010-09-17 Author: Richard Clark - http: //richclarkdesign.com
+Twitter: @rich_clark ///////////////////////////////////////////////////////////////////////*/ 
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body {
+    line-height: 1;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+nav ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color: #ff9;
+    color: #000;
+    text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color: #ff9;
+    color: #000;
+    font-style: italic;
+    font-weight: bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+    border-bottom: 1px dotted;
+    cursor: help;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #cccccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+input,
+select {
+    vertical-align: middle;
+}
+/*////////////////////////////////////////////////////////////////////////////////////////////////
+///////END OF RESET STYLESHEET///////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////general page settings///////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////*/
+
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+ 
+
+body {
+    font-family: 'Poppins';
+}
+
+/*///////////////common section formatting/////////////////////////////////////////////////////*/
+.section-background {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 50px 0px 50px;
+}
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////header/////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+header div{
     display: flex;
     justify-content: space-between;
-}
-/*////////////////////////////////////////////
-////Head/////head////head////head////head////
-//////////////////////////////////////////*/
-
-/*///blackHeart-logo////blackHeart-logo///*/
-.blackHeart{
-    height: 10px;
-}
-#top-bar h1 {
-font-size: 10px;    
-}
-/*////nav-bar////nav-bar////nav-bar////nav-bar////*/
-#top-bar ul {
-  list-style-type: none;
-  display: flex;
-  justify-content: space-between;
-  margin: 0;
+    align-items: center;
+    padding: 0 25px;
 }
 
-#top-bar li {
-  margin: 0 5px 0 5px;
-}
-/*////search////search///search////search////search/*/
-.npm-logo{
-  height: 20px;  
-}
+/*//////////////top line of header////////////////////////////////////////////////////////////////*/
 
-#search-bar {
-    display: flex;
-    justify-content: space-between;
+.black-heart{
+    width: 20px;
+    margin-right: 1rem;
 }
 
-#search-bar input{
-    width: 1250px;
-}
-/*/////////////////////////////////////////////////////////////////////////
-///section1////section1////section1////section1////section1////section1////
-//////////////////////////////////////////////////////////////////////////*/
-
-#sign-up *{
-    background-color: whitesmoke;
-    margin: 0px 20px 0px 20px;
+nav{
+    width: 600px;
 }
 
-#sign-up h2 {
-    font-size: 80px;
-    text-align: center;
-    padding: 50px;
-}
-
-#sign-up p{
-    font-size: 20px;
-    text-align: center;
-    padding: 0 500px 50px 500px;
-}
-
-#button{
-    display: flex;
-    justify-content: center;
-    padding: 0 0 50px 0;
-}
-
-#sign-up .crimson-button{
-    background-color: crimson;
-    border: none;
-}
-
-#sign-up .white-button{
-    background-color: white;
-    border: none;
-}
-/*///////////////////////////////////////////////////////////////////////////////
-////section2////section2////section2////section2////section2////section2/////////
-///////////////////////////////////////////////////////////////////////////////*/
-
-
-#about img{
-    height: 300px;
-    width: 300px;
-    }
-
-#about .center{
-        display: block;
-        margin: 100px auto 100px auto;
-        width: 50%;
-}
-
-#about h3{
-    font-size: 40px;
-    text-align: center;
-    background-color: coral;
-    margin: auto 350px auto 350px;
-}
-
-#about p{
-    font-size: 16px;
-    margin: 50px 300px 50px 300px;
-    text-align: center;
-}
-
-/*//////////////////////////////////////////////////////////////////////////////////////
-////section3////section3////section3////section////section////section3//////////////////
-//////////////////////////////////////////////////////////////////////////////////////*/
-
-#container{
-    margin: 100px 100px 50px 100px;
+nav ul {
+    list-style:none;
     display:flex;
-    justify-content:space-between;
-}
-#container img{
-    height: 50px;
+    justify-content: space-between;
+    align-items: center;
 }
 
-#container h4{
-    color: crimson;
+nav a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+/*//////////////////////bottom line of header////////////////////////////////////////////*/
+#header-bottom{
+  display:flex;
+  justify-content: space-between;
+  margin: 0px 45px 0px 45px;
+}
+#header-bottom *{
+    display: flex;
+    align-items: center;
+    height: 30px;
 }
 
-#container article{
-    margin-right: 20px;
+.npm-logo{
+    width: 35px;
+    margin: 1rem;
 }
 
-#container p{
-    margin-top: 50px;
+.magnifying-glass{
+    background-color: rgb(234, 232, 232);
+    border: 1px solid rgb(234, 232, 232);
 }
 
-.create-button{
-    background-color: black;
-    color:white;
+.search-bar{
+    width: 1100px;
+    background-color: rgb(234, 232, 232);
+    border: none;
+}
+
+.search-btn{
+    background-color: rgb(235, 52, 52);
+    color: rgb(255,255,255);
+    height: 15px;
+    text-decoration: none;
+    font-size: 10px;
+    padding: 1px 10px 1px 10px;
+}
+
+#header-bottom .join-btn{
+    border: solid;
+    height: 15px;
+    text-decoration: none;
+    font-size: 10px;
+    padding: 1px 10px 1px 10px;
+   
+}
+
+ #header-bottom .log-in-btn {
+    height: 15px;
+    text-decoration: none;
+    font-size: 10px;
+    padding: 1px 10px 1px 10px;
+    
+}
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////Section1///////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+#section1 {
+    background-color: rgba(232, 217, 217,.3);
+    border-top: 5px solid rgba(232, 217, 217,.3);
+}
+
+#section1 h2{
+    font-size: 100px;
+    padding: 100px 0px 100px 0px;
+}
+
+#section1 article{
+    text-align: center;
     font-size: 20px;
-    margin-left: 650px;
+    width: 430px;
+    margin-bottom: 100px;
+}
+
+#section1 a{
+    text-decoration: none;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px 60px 10px 60px;
+    border: none;
+}
+
+.see-plans-btn{
+    background-color: #FB3B49;
+    color:rgb(255, 255, 255);
+    margin-right: 10px;
+    box-shadow:  8px 8px 0 rgba(251, 59, 73, .2);
+}
+
+.join-for-free-btn{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    margin-left: 10px;
+}
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////Section2//////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+#section2 .triangle-hexagon{
     width: 200px;
+    padding: 100px 0px 100px 0px;
+}
+
+#section2 h3{
+    font-size: 45px;
+    margin-bottom: 50px;
+}
+
+#section2 article {
+    text-align: center;
+    font-size: 14px;
+    width: 500px;
+    margin-bottom: 100px;
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////Section3////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+section3 img{
+    width: 40px;
+    margin-bottom: 10px;
+}
+
+#section3 .container {
+    display: flex;
+    justify-content: space-around;
+    margin: 100px 100px 100px 100px;
+}
+
+#section3 a{
+    background-color: rgb(0, 0, 0);
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 20px 150px 20px 150px;
+    box-shadow: 8px 8px 0 rgba(128, 83, 35, .2);
+}
+
+#section3 article{
+    margin-right: 80px;
+}
+
+#section3 article h4{
+    margin-bottom: 50px;;
+    color: #ED1C24;
 }
