@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="style.css">
   </head>
+
   <body>
 <header>
     <div>
@@ -24,16 +25,20 @@
       </nav>
     </div>
   
-    <div>
-        <img src="images\npm-logo.png" alt="Npm-logo"> <br>
-        <a href="#">Join</a>
-        <a href="#">Log In</a>
-        <img src="images\magnifying-glass.png" alt="Search-logo">
-        <input type="text" id="search" name="search" placeholder="Search packages">
-        <button type="submit">Search</button>
+    <div class="nav-bar-downside">
+        <img src="images\npm-logo.png" alt="Npm-logo" class="npm-logo"> <br>
+        <form action="" method="get" class="form">
+            <img src="images\magnifying-glass.png" alt="Search-logo">
+            <input type="text" id="search" name="search" placeholder="Search packages">
+            <label for="search"></label>
+            <button type="submit">Search</button>
+            <a href="#">Join</a>
+            <a href="#">Log In</a>
+        </form>
     </div>
   </header>
-  <section id="firstSection">
+
+  <section id="first-section">
     <h1>Build amazing things</h1>
     <article><p>Essential JavaScript development tools that help you go to market faster and build powerful applications using
       modern open source code</p> 
@@ -44,9 +49,9 @@
       <a href="#">Join for free</a>
     </div>
   </section>
-  <section id="secondSection">
+  <section id="second-section">
     <div>
-      <img src="images/triangle-hexagon.svg" alt="Hexagon">
+      <img src="images/triangle-hexagon.svg" alt="Hexagon" class="hexagon">
     </div>
     <h2>
       Bring the best of open source to your company
@@ -59,7 +64,7 @@
     </p>
   </article>
 </section>
-  <section id="thirdSection">
+  <section id="third-section">
     <div>
       <img src="images/zero-configuration.svg" alt="Mouse clicking on a display">
       <h3>Zero configuration</h3>
