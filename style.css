@@ -4,7 +4,7 @@ body {
   font-family: 'Poppins';
 }
 
-#header .top-header {
+.header .top-header {
     padding: 0 25px;
     display: flex;
     justify-content: space-between;
@@ -34,7 +34,7 @@ body {
     margin-right: 1rem;
 }
 
-#header .bottom-header {
+.header .bottom-header {
     padding: 10px 25px;
     display: flex;
     align-items: center;
@@ -44,7 +44,7 @@ body {
 
 .npm-logo {
     height: auto;
-    width: 90px;
+    width: 80px;
 }
 
 .search-bar {
@@ -99,7 +99,7 @@ body {
     font-size: 1em;
 }
 
-#initial-info {
+.initial-info {
     height: 600px;
     background-color: rgba(232,217,217,.3);
     display: flex;
@@ -108,18 +108,18 @@ body {
     justify-content: center;
 }
 
-#initial-info h1 {
+.initial-info h1 {
     font-size: 5em;
     margin: 0;
     margin-bottom: 30px;
 }
 
-#initial-info article {
+.initial-info article {
     width: 525px;
     text-align: center;
 }
 
-#initial-info p {
+.initial-info p {
     font-weight: bold;
     font-size: 1.2em;
 }
@@ -150,5 +150,94 @@ body {
     width: 525px;
 }
 
+.concept {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
+.highlight-box h3 {
+    padding: 0 25px;
+    margin: 0;
+    font-size: 2.3em;
+    position: relative;
+}
 
+.highlight-box {
+    position: relative;
+    margin: 60px 0 5px 0;
+}
+
+.highlight-box .highlight {
+    position: absolute;
+    top: 5px;
+    transform: skew(9deg,0deg);
+    background-color: rgba(255,204,53,.4);
+    height: 40px;
+    width: 100%;
+}
+
+.concept-icon {
+    width: 250px;
+}
+
+.concept article {
+    width: 780px;
+    text-align: center;
+}
+
+.concept p {
+    font-size: 1em;
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feature-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 60px 0 130px 0;
+}
+
+.feature-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0 20px;
+    width: 250px;
+    height: 190px;
+}
+
+.feature-box p {
+    font-size: 1em;
+}
+
+.feature-box .feature-heading {
+    color: #ED1C24;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.feature-box img {
+    width: auto;
+    height: 25px;
+}
+
+.create-org-button {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 20px 140px;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    margin-bottom: 80px;
+}
