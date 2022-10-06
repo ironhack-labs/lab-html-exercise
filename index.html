@@ -1,24 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <pre>
-        NPM Clone Nifty Penguin Magic npm Enterprise Products Solutions Resources Docs Support Search Join Log In Build amazing
-        things Essential JavaScript development tools that help you go to market faster and build powerful applications using
-        modern open source code. See plans Join for free Bring the best of open source to your company npm is the tool used by
-        over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it.
-        Create an Org and get more out of the tools your team already knows and loves. Zero configuration Create an org, add
-        your team, and start collaborating. Nothing to configure, set up, or manage. Team management Control who has access to
-        what modules within your team namespace using straightforward team management capabilities. Familiar features npm Orgs
-        has 100% parity with all the public npm registry features your developers already use. npm audit Enjoy the security
-        auditing features built into the npm client, a zero-friction way to make open source software safer. Create an Org
-        
-    </pre>
-</body>
-</html>
 
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>NPM IronClone</title>
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header>
+      <!-- HEADER TOP -->
+      <div class="header__container">
+        <div class="header__links">
+          <img src="./images/black-heart.png" alt="NPM Black Heart Logo" class="logo-heart">
+          <span>Clone Nifty Penguin Magic</span>as
+        </div>
+        <nav class="nav">
+          <ul class="header__nav">
+            <li>
+              <a href="#" class="link link-nav">npm Enterprise</a>
+            </li>
+            <li>
+              <a href="#" class="link link-nav">Products</a>
+            </li>
+            <li>
+              <a href="#" class="link link-nav">Solutions</a>
+            </li>
+            <li>
+              <a href="#" class="link link-nav">Resources</a>
+            </li>
+            <li>
+              <a href="#" class="link link-nav">Docs</a>
+            </li>
+            <li>
+              <a href="#" class="link link-nav">Support</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- HEADER CONTROLS -->
+      <div>
+        <img src="./images/npm-logo.png" alt="NPM Logo">
+        <form action="#" class="search-form">
+          <input type="text" name="search-input" class="search-form__input" placeholder="Search packages">
+          <button type="submit" class="search-form__btn">Search</button>
+        </form>
+        <a href="#" class="link link-join">Join</a>
+        <a href="#" class="link link-login">Log In</a>
+      </div>
+    </header>
+
+    <!-- SECTION HERO -->
+    <section id="hero">
+      <div class="section__hero">
+        <h1 class="hero-slogan">Build amazing things</h1>
+        <article>
+          <p class="hero-paragraph">
+            Essential JavaScript development tools that help you go to market faster and build powerful applications
+            using modern open source code.
+          </p>
+        </article>
+        <div class="hero-links">
+          <a href="#" class="link link-plans">See plans</a>
+          <a href="#" class="link link-join">Join for free</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION CALLOUT -->
+    <section id="callout">
+      <div class="section__callout">
+        <img src="./images/triangle-hexagon.svg" alt="Hexagon">
+        <h3 class="callout-slogan">
+          Bring best of open source to your company
+        </h3>
+        <article>
+          <p class="callout-paragraph">
+            npm is the tool used by over 11,000,000 JavaScript developers around the world.
+            Your developers already use it. Your company depends on it. Create an Org and get more out of the tools your
+            team already knows and loves.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- SECTION TECH -->
+    <section id="tech-details">
+      <div class="section__tech">
+        <div class="techbox__container">
+          <div class="techbox">
+            <img src="./images/zero-configuration.svg" alt="Icon Zero" class="techbox-icon">
+            <h5 class="techbox__heading">Zero configuration</h5>
+            <p class="techbox__description">
+              Create an or, add your team, and start collaborating. Nothing to configure, set up, or manage.
+            </p>
+          </div>
+          <div class="techbox">
+            <img src="./images/team-management.svg" alt="Icon Team" class="techbox-icon">
+            <h5 class="techbox__heading">Team management</h5>
+            <p class="techbox__description">
+              Contro who has access to what modules within your team namespace using straightforward team management capabilities.
+            </p>
+          </div>
+          <div class="techbox">
+            <img src="./images/familiar-features.svg" alt="Icon Features" class="techbox-icon">
+            <h5 class="techbox__heading">Familiar features</h5>
+            <p class="techbox__description">
+              npm Orgs has 100% parity with all the public npm registry features your developers already use.
+            </p>
+          </div>
+          <div class="techbox">
+            <img src="./images/npm-audit.svg" alt="Icon Audit" class="techbox-icon">
+            <h5 class="techbox__heading">npm audit</h5>
+            <p class="techbox__description">
+              Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer.
+            </p>
+          </div>
+        </div>
+        <div class="techbox__button">
+          <a href="#" class="link link-techbox">
+            Create an Orn
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="footer">
+      <div class="social">
+        <img src="./images/npm.svg" alt="NPM Icon" class="icon__social">
+        <img src="./images/github.svg" alt="GitHub Icon" class="icon__social">
+      </div>
+      <div class="footer-links">
+        <div class="links-box links__support">
+          <h5 class="links-box__heading">Support</h5>
+          <ul>
+            <li><a href="#" class="link">Help</a></li>
+            <li><a href="#" class="link">Advisories</a></li>
+            <li><a href="#" class="link">Status</a></li>
+            <li><a href="#" class="link">Contact npm</a></li>
+          </ul>
+        </div>
+        <div class="links-box links__company">
+          <h5 class="links-box__heading">Company</h5>
+          <ul>
+            <li><a href="#" class="link">About</a></li>
+            <li><a href="#" class="link">Blog</a></li>
+            <li><a href="#" class="link">Press</a></li>
+          </ul>
+        </div>
+        <div class="links-box links__terms">
+          <h5 class="links-box__heading">Terms & Policies</h5>
+          <ul>
+            <li><a href="#" class="link">Policies</a></li>
+            <li><a href="#" class="link">Terms of Use</a></li>
+            <li><a href="#" class="link">Code of Conduct</a></li>
+            <li><a href="#" class="link">Privacy</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
