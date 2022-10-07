@@ -1,6 +1,286 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
+/* Simple CSS Reset */
+html {
+  font-size: 16px;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins";
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Colors */
+:root {
+  --npm-red: rgb(251, 59, 73);
+}
+
 /* Icon for search input field */
-.logo-search {
-  background: url('../images/npm-search.svg') no-repeat scroll 15px 15px;
+
+.icon-input {
+  position: relative;
+}
+
+.icon-search {
+  position: absolute;
+  left: 0.5em;
+  top: 0.4em;
+  width: 0.9em;
+}
+
+/* Header */
+header > div {
+  padding: 0 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+}
+
+/* Header Nav */
+nav {
+  width: 600px;
+}
+
+nav .header__nav {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Header - Second row */
+.search-form {
+  min-width: 70%;
+  box-sizing: border-box;
+}
+
+.search-form__input {
+  padding: 0.8em 0.8em 0.8em 2em;
+  background-color: rgb(242, 242, 242);
+  border: none;
+  box-sizing: border-box;
+  width: 90%;
+}
+
+.search-form__btn {
+  padding: 0.8em 1em;
+  color: white;
+  background-color: var(--npm-red);
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.header__controls {
+  min-height: 50px;
+}
+
+.logo-heart {
+  width: 25px;
+  margin-right: 1rem;
+}
+
+/* Links */
+.header__links {
+  font-size: 0.8rem;
+}
+
+.link {
+  text-decoration: none;
   color: black;
-  padding-left: 15px;
+}
+
+
+.link-signin,
+.link-signup {
+  padding: 0.3em 0.8em;
+  font-size: 0.9em;
+}
+
+.link-signup {
+  border: 1px solid lightgray;
+}
+
+.logo-npm {
+  height: 20px;
+}
+
+/* SECTION HERO */
+#hero,
+#callout {
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+#hero {
+  background-color: rgba(232, 217, 217, 0.3);
+}
+
+#hero h1 {
+  font-size: 4.5em;
+  font-weight: 600;
+}
+
+#hero > article {
+  text-align: center;
+  width: 500px;
+  font-size: 1.2em;
+  line-height: 1.2em;
+}
+
+.hero-links {
+  margin-top: 5em;
+}
+
+.link-plans,
+.link-join {
+  padding: 1em 4em;
+  margin: 0.4em 0.5em;
+}
+
+.link-plans {
+  color: white;
+  background-color: var(--npm-red);
+  box-shadow: 6px 6px 2px 1px rgb(250, 208, 210);
+}
+
+.link-join {
+  background-color: white;
+  font-weight: bold;
+}
+
+/* Section CALLOUT */
+#callout {
+  justify-content: space-around;
+}
+
+#callout img {
+  width: 250px;
+}
+
+#callout h2 {
+  background-color: rgba(255, 204, 53, 0.4);
+  transform: skew(9deg, 0deg);
+  font-style: italic;
+  padding: 0 1em;
+  font-size: 2em;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin: 0 auto;
+}
+
+#callout p {
+  text-align: center;
+  width: 700px;
+  line-height: 1.5em;
+  margin: 0 auto;
+}
+
+/* Section TECHBOX */
+
+#tech-details {
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 9.5em;
+}
+
+.techbox__container {
+  width: 65%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 100px auto 80px auto;
+}
+
+.techbox {
+  width: 20%;
+}
+
+.techbox img {
+  width: 40px;
+}
+
+.techbox h5 {
+  color: #ed1c24;
+  font-size: 1em;
+  font-weight: bold;
+  margin: 0 auto 2em 0;
+}
+
+.techlink__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.link-techbox {
+  padding: 1.1em 9em;
+  font-weight: bold;
+  color: white;
+  background-color: black;
+  box-shadow: 6px 6px 2px 1px rgb(229, 221, 212);
+}
+
+#footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.icon__social {
+  width: 55px;
+  margin-top: 1.5em;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: baseline;
+  padding: 2em;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 70%;
+}
+
+.links-box {
+  width: 25%;
+  padding: 2em;
+  flex: 1;
+}
+
+.links-box ul {
+  padding: 0;
+  list-style: none;
+}
+
+.links-box__heading {
+  font-size: 1em;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+.links-box .link {
+  color: rgba(0, 0, 0, 0.7);
+  line-height: 2.5em;
 }
