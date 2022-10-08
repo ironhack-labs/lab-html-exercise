@@ -12,10 +12,7 @@
         <!--Black Heart and tag line-->
         <div>
           <img
-            class="blackHeart"
-            src="images\black-heart.png"
-            alt="black heart"
-          />
+            class="blackHeart" src="images\black-heart.png" alt="black heart" />
           <span id="tag"> Nifty Penguin Magic</span>
         </div>
         <!--Top nav bar-->
@@ -32,15 +29,15 @@
       </div>
       <!--NPM logo, inline div with flex box to manage layout of site-->
       <div class="inline">
-        <img class="logo" src="images\npm-logo.png" alt="logo" />
+       <a href="#"><img class="logo" src="images\npm-logo.png" alt="logo" /></a>
         <!--Search-->
         <div class="searchWrapper">
-          <img class="magGlass" src="images\magnifying-glass.png" />
+          <img id="magGlass" src="images\magnifying-glass.png" />
           <input id="searchBox" type="search" placeholder="Search packages" />
           <input id="searchButton" type="submit" value="Search" />
         </div>
         <!--Join and Login Buttons-->
-        <div>
+        <div id="navLinks">
           <ul>
             <span id="join"><a href="#">Join</a></span>
             <span id="login"><a href="#">Log in</a></span>
@@ -67,7 +64,7 @@
         </section>
       </div>
       <!--Section 1 named middle-->
-      <div class="contentContainerWhite">
+      <div>
         <section id="middle">
           <img
             class="triHex"
@@ -119,11 +116,12 @@
             </p>
           </div>
         </section>
+
         <!--Create Org Button-->
         <div id="createButton">
           <a href="#">Create an Org</a>
         </div>
-      </div>
+    </div>
     </body>
   </div>
 </html>

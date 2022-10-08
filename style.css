@@ -6,22 +6,18 @@
   align-items: center;
 }
 
-body {
-  font-family: "Poppins";
-}
-
-#top h1 {
-  text-align: center;
-  font-size: 4em;
-  font-style: bold;
-}
-
 header > div {
   padding: 0px 0px 0px 0px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid lightgray;
+  flex-wrap: ;
+}
+
+.blackHeart {
+  width: 20px;
+  margin-right: 1rem;
 }
 
 #tag {
@@ -29,8 +25,8 @@ header > div {
 }
 
 nav {
-  width: 600px;
-}
+  width: 500px;
+  }
 
 nav ul {
   list-style: none;
@@ -50,11 +46,8 @@ nav a {
 .inline {
   display: flex;
   flex-direction: row;
-}
-
-.blackHeart {
-  width: 20px;
-  margin-right: 1rem;
+  width: 100%;
+  flex-wrap: wrap;
 }
 
 .logo {
@@ -62,17 +55,49 @@ nav a {
   margin-right: 1rem;
 }
 
-.magGlass {
+.searchWrapper {
+  position: relative;
+  display: flex;
+  flex-grow: 3;
+  align-items: flex-start;
+  min-width: 600px;
+  height: 30px;
+}
+
+#magGlass {
   position: absolute;
   top: 3px;
   left: 3px;
   width: 20px;
 }
 
-.triHex {
-  width: 200px;
-  align-items: center;
-  margin: 50px;
+#searchBox {
+  border: 0px;
+  height: 20px;
+  width: 100%;
+  padding: 2px 23px 2px 30px;
+  outline: 0;
+  height: 30px;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+#searchButton {
+  background-color: #fb3e44;
+  padding: 2px 15px 2px 15px;
+  height: 30px;
+  color: white;
+  font-size: 0.8em;
+  letter-spacing: 0.5px;
+  text-align: center;
+  text-decoration: none;
+  border: 0px;
+}
+
+#navLinks {
+  width: 190px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 #join {
@@ -103,6 +128,10 @@ nav a {
   text-decoration: none;
 }
 
+body {
+  font-family: "Poppins";
+}
+
 .contentContainer {
   width: 100%;
   background-color: rgba(232, 217, 217, 0.3);
@@ -110,11 +139,18 @@ nav a {
   flex-direction: column;
   align-items: center;
 }
+
 #top {
   height: 450px;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+#top h1 {
+  text-align: center;
+  font-size: 4em;
+  font-style: bold;
 }
 
 #top article {
@@ -123,52 +159,12 @@ nav a {
 }
 
 #topLinks {
-  width: 425px;
+  width: 75%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  padding: 30px;
 }
-
-.contentContainerWhite {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-#middle {
-  height: 600px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-#middle h2 {
-  background-color: rgba(255, 204, 53, 0.4);
-  transform: skew(9deg, 0deg);
-  font-style: italic;
-  padding: 0px 60px;
-}
-#middle article {
-  text-align: center;
-  width: 775px;
-}
-
-#bottom {
-  height: 250px;
-  display: flex;
-  flex-direction: row;
-}
-
-#bottom div {
-  width: 250px;
-  padding: 10px;
-}
-
-#bottom img {
-  width: 40px;
-}
-
 #redButtonShadow {
   background-color: #fb3b49;
   padding: 15px 50px 15px 50px;
@@ -191,35 +187,49 @@ nav a {
   text-decoration: none;
 }
 
-#searchBox {
-  border: 0px;
-  height: 20px;
-  width: 100%;
-  padding: 2px 23px 2px 30px;
-  outline: 0;
-  height: 30px;
-  background-color: rgba(0, 0, 0, 0.05);
-}
-
-.searchWrapper {
-  position: relative;
+#middle {
+  height: 600px;
   display: flex;
-  flex-grow: 3;
-  align-items: flex-start;
-  min-width: 700px;
-  height: 30px;
+  flex-direction: column;
+  align-items: center;
 }
 
-#searchButton {
-  background-color: #fb3e44;
-  padding: 2px 15px 2px 15px;
-  height: 30px;
-  color: white;
-  font-size: 0.8em;
-  letter-spacing: 0.5px;
+.triHex {
+  width: 200px;
+  align-items: center;
+  margin: 50px;
+}
+
+#middle h2 {
+  background-color: rgba(255, 204, 53, 0.4);
+  transform: skew(9deg, 0deg);
+  font-style: italic;
+  padding: 0px 60px;
+}
+#middle article {
   text-align: center;
-  text-decoration: none;
-  border: 0px;
+  width: 775px;
+}
+
+#bottom {
+  height: 250px;
+  display: flex;
+  flex-direction: row;
+}
+
+#bottom div {
+  width: 250px;
+  padding: 10px;
+ 
+}
+
+#bottom img {
+  width: 40px;
+  height: 37.25px;
+}
+  
+#bottom h3 {
+  color: #ed1c24;
 }
 
 #createButton {
@@ -239,15 +249,4 @@ nav a {
   border: 0px;
   width: fit-content;
   box-shadow: 8px 8px 0 rgba(128, 83, 35, 0.2);
-}
-
-#content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-#bottom h3 {
-  color: #ed1c24;
 }
