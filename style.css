@@ -1,7 +1,19 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
 body {
   font-family: 'Poppins';
+}
+
+h1{
+  text-align: center;
+  font-size: 4em;
 }
 
 header > div {
@@ -50,28 +62,62 @@ header > div {
   }
 
   .triHex {
-    width: 106px;
+    width: 200px;
     align-items: center;
+    margin: 50px;
   }
 
-  .center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
+  
+.contentContainer {
+  width: 100%;
+  background-color: rgba(232, 217, 217, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-  #top {
-    align-content: center;
+}
+   #top {
     height: 600px;
-    background-color: rgba(232, 217, 217, .3);
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+   }
 
+  #top article {
+    text-align: center;
+    width: 425px;
+     
+  }
+
+  #topLinks {
+    width: 425px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  
+  .contentContainerWhite {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
   }
 
   #middle {
     height: 600px;
-    background-color: rgba(232, 217, 217, .3);
-
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+      }
+  
+  #middle article {
+    text-align: center;
+    width: 775px;
+     
   }
+
 
   #bottom {
     height: 250px;
@@ -82,19 +128,16 @@ header > div {
   }
 
   #bottom div {
-    width: 400px;
+    width: 250px;
+    padding: 10px;
   }
 
   #bottom img {
     width: 50px;
   }
 
-  
 
-  #section1Links {
-    width: 400px;
-    ;
-  }
+ 
 
   #redButtonShadow {
     background-color: #FB3B49;
@@ -120,6 +163,7 @@ header > div {
   .searchWrapper {
     position: relative;
     display: flex;
+    flex-grow: 3;
     align-items:flex-start;
     min-width: 700px;
   }
