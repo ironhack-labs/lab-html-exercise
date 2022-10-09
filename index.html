@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Npm clone</title>
+    <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
     <header>
         <div>
-            <img src="images/black-heart.png" alt="black heart">
+            <img src="images/black-heart.png" alt="black heart" class="blackHeart">
             <div><span>Nifty Penguin Magic</span></div>
             <nav>
                 <ul>
@@ -24,12 +25,13 @@
         </div>
 
         <div>
-            <img src="images/npm-logo.png" alt="logo-npm">
-            <img src="images/magnifying-glass.png" alt="magnifying-glass">
+            <img src="images/npm-logo.png" alt="logo-npm" class="npm">
+            <img src="images/magnifying-glass.png" alt="magnifying-glass" class="magnifyglass">
             <span>
                 <form action="">
-                    <input type="text" placeholder="Search packages">
-                    <button type="submit">Search</button>
+                    <label for="Search packages" class="formLabelColor"></label>
+                    <input type="text" class="formInputColor">
+                    <button type="submit" class="buttonNav">Search</button>
                 </form>
             </span>
             <div>
@@ -39,22 +41,22 @@
         </div>
     </header>
 
-    <section>
+    <section class="amazingThings">
         <heading><h1>Build amazing things</h1></heading>
         <article><p>Essential JavaScript development tools that help you go to market faster and build powerful applications using modern open source code.</p></article>
         <div>
-            <button><link href="">See plans </link></button>
+            <button class="buttonSeePlans"><link href="">See plans </link></button>
             <button><link href="">Join for free</link></button>
         </div>
     </section>
 
-    <section>
+    <section class="hexagon">
         <img src="images/triangle-hexagon.svg" alt="triangle-hexagon">
         <heading><h2>Bring the best of open source to your company</h2></heading>
         <article><p>npm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it. Create an Org and get more out of the tools your team already knows and loves.</p></article>
     </section>
 
-    <section>
+    <section class="sectionThree">
         <div>
             <img src="images/zero-configuration.svg" alt="zero-config">
             <h2>Zero configuration</h2>
@@ -79,10 +81,13 @@
             <h2> npm audit</h2>
             <p> Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer. </p>
         </div>
-
-        <a href="">Create an Org</a>
+        
+        <button class="buttonOrg"><link href="">Create an Org</link></button>
 
     </section>
+
+
+
 </body>
 </html>
 
