@@ -8,11 +8,14 @@
   <div id="container">
     <!--Header Area-->
     <header>
-      <div>
+      <div id="headerTop">
         <!--Black Heart and tag line-->
         <div>
           <img
-            class="blackHeart" src="images\black-heart.png" alt="black heart" />
+            class="blackHeart"
+            src="images\black-heart.png"
+            alt="black heart"
+          />
           <span id="tag"> Nifty Penguin Magic</span>
         </div>
         <!--Top nav bar-->
@@ -28,8 +31,10 @@
         </nav>
       </div>
       <!--NPM logo, inline div with flex box to manage layout of site-->
-      <div class="inline">
-       <a href="#"><img class="logo" src="images\npm-logo.png" alt="logo" /></a>
+      <div id="headerBottom">
+        <a href="#"
+          ><img class="logo" src="images\npm-logo.png" alt="logo"
+        /></a>
         <!--Search-->
         <div class="searchWrapper">
           <img id="magGlass" src="images\magnifying-glass.png" />
@@ -39,8 +44,12 @@
         <!--Join and Login Buttons-->
         <div id="navLinks">
           <ul>
-            <span id="join"><a href="#">Join</a></span>
-            <span id="login"><a href="#">Log in</a></span>
+            <li>
+              <span id="join"><a href="#">Join</a></span>
+            </li>
+            <li>
+              <span id="login"><a href="#">Log in</a></span>
+            </li>
           </ul>
         </div>
       </div>
@@ -69,6 +78,7 @@
           <img
             class="triHex"
             src="images\triangle-hexagon.svg"
+            1
             alt="triangle hexagon"
           />
           <h2>Bring the best of open source to your company</h2>
@@ -116,12 +126,12 @@
             </p>
           </div>
         </section>
-
         <!--Create Org Button-->
-        <div id="createButton">
-          <a href="#">Create an Org</a>
-        </div>
-    </div>
+      </div>
+
+      <div id="createButton">
+        <div><a href="#">Create an Org</a></div>
+      </div>
     </body>
   </div>
 </html>

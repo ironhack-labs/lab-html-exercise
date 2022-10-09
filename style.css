@@ -4,14 +4,31 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 header > div {
   padding: 0px 0px 0px 0px;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid lightgray;
+  width: 1000px;
+}
+
+#headerTop {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#headerBottom {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .blackHeart {
@@ -22,10 +39,6 @@ header > div {
 #tag {
   font-size: 0.8em;
 }
-
-nav {
-  width: 600px;
-  }
 
 nav ul {
   list-style: none;
@@ -40,13 +53,7 @@ nav a {
   letter-spacing: 0.5px;
   font-weight: 600;
   font-size: 0.75em;
-}
-
-.inline {
-  display: flex;
-  flex-direction: row;
- 
-  flex-wrap: wrap;
+  padding-right: 10px;
 }
 
 .logo {
@@ -55,19 +62,18 @@ nav a {
 }
 
 .searchWrapper {
-  position: relative;
   display: flex;
   flex-grow: 3;
   align-items: flex-start;
-  min-width: 600px;
   height: 30px;
 }
 
 #magGlass {
-  position: absolute;
-  top: 3px;
-  left: 3px;
+  padding-top: 3px;
+  padding-left: 3px;
+  padding-bottom: 7px;
   width: 20px;
+  background-color: rgba(0, 0, 0, 0.05);
 }
 
 #searchBox {
@@ -78,7 +84,7 @@ nav a {
   outline: 0;
   height: 30px;
   background-color: rgba(0, 0, 0, 0.05);
- }
+}
 
 #searchButton {
   background-color: #fb3e44;
@@ -92,14 +98,11 @@ nav a {
   border: 0px;
 }
 
-#navLinks {
-  width: 190px;
+#navLinks ul {
+  list-style: none;
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
-  align-items: flex-end;
-  flex-grow: 1
-  ;
+  align-items: center;
 }
 
 #join {
@@ -128,6 +131,7 @@ nav a {
   font-weight: 600;
   text-align: center;
   text-decoration: none;
+  white-space: nowrap;
 }
 
 body {
@@ -146,13 +150,13 @@ body {
   height: 450px;
   display: flex;
   flex-direction: column;
-  align-items: center;21
+  align-items: center;
 }
 
 #top h1 {
   text-align: center;
   font-size: 4em;
-  font-style: bold;
+  font-weight: 600;
 }
 
 #top article {
@@ -176,17 +180,19 @@ body {
   text-align: center;
   text-decoration: none;
   box-shadow: 8px 8px 0 rgba(251, 59, 73, 0.2);
+  white-space: nowrap;
 }
 
 #joinFree {
   background-color: #ffffff;
-  padding: 2px 20px 2px 20px;
+  padding: 15px 50px 15px 50px;
   color: rgb(0, 0, 0);
   font-size: 1em;
   font-weight: 700;
   letter-spacing: 0.5px;
   text-align: center;
   text-decoration: none;
+  white-space: nowrap;
 }
 
 #middle {
@@ -206,7 +212,9 @@ body {
   background-color: rgba(255, 204, 53, 0.4);
   transform: skew(9deg, 0deg);
   font-style: italic;
-  padding: 0px 60px;
+  padding: 0px 40px;
+  font-size: 2.5em;
+  text-align: center;
 }
 #middle article {
   text-align: center;
@@ -217,33 +225,35 @@ body {
   height: 250px;
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 
 #bottom div {
   width: 250px;
-  padding: 10px;
- 
+  padding: 10px 1px 10px 10px;
 }
 
 #bottom img {
   width: 40px;
   height: 37.25px;
 }
-  
+
 #bottom h3 {
   color: #ed1c24;
 }
 
 #createButton {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
   margin: 75px;
+  font-weight: 600;
 }
 
 #createButton a {
   background-color: black;
-  padding: 5px 100px 5px 100px;
+  padding: 15px 100px 15px 100px;
   color: white;
   letter-spacing: 0.5px;
   text-align: center;
