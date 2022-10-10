@@ -62,15 +62,39 @@ nav a {
     width: 70px;
 }
 
-.search label {
-    color: rgba(0,0,0,.05)
+#nav-second {
+    line-height: 1.5;
+    padding-top: 8px;
+    padding-bottom: 8px;
 }
 
-.search input {
-    color: rgba(0,0,0,.05)
+.search {
+    display: flex;
+    position: relative;
+    flex-grow:1;
 }
 
-.search button {
+.form {
+    display: block;
+    white-space: nowrap;
+    box-sizing: border-box;
+}
+
+.form label {
+    color: rgba(0,0,0,.05);
+    padding: 14px 0.25rem 0 1rem;
+}
+
+.form input {
+    color: rgba(0,0,0,.05);
+    font-size: 14px;
+    border: none;
+    height: 40px;
+    padding-left: 10px;
+    width: calc(100% - 10px);
+}
+
+.form button {
     background-color: #fb3e44;
     color: white;
     padding: 8px 10px;
@@ -93,11 +117,17 @@ nav a {
 .join {
     color: black;
     border: black 1px solid;
-    
+    padding:.25rem 1rem;
+    margin-right: 1rem;
+    font-size: .875rem;
 }
 
 .login {
     color: black;
+    font-size: .875rem;
+    padding: .25rem;
+    line-height: 1.5;
+    font-weight: 500;
 }
 
 section {
@@ -111,6 +141,7 @@ section {
 
 #build {
     background-color: rgba(232,217,217,.3);
+    margin-top: 0px;
 }
 
 #build p{
