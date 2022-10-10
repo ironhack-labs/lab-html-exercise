@@ -36,7 +36,6 @@ header > div {
   #bar1 {
     display: flex;
     flex-wrap: wrap;
-    width: 1454px;
     height: 30px;
     justify-content: space-evenly;
     padding: 10px 0px;
@@ -169,6 +168,17 @@ header > div {
     margin: 1px;
   }
 
+  @media (max-width: 940px) {
+    h1 {
+      font-size: 4em;
+    }
+  }
+  @media (max-width: 690px) {
+    h1 {
+      font-size: 2.8em;
+    }
+  }
+
   #section2 {
     display: flex;
     flex-wrap: wrap;
@@ -184,7 +194,7 @@ header > div {
   }
 
   #section2 h2 {
-    font-size: 2.5em;
+    font-size: 2.2em;
     font-weight: bold;
     font-style: italic;
     background-color: rgba(255,204,53,.4);
@@ -193,8 +203,20 @@ header > div {
     padding: 0px 30px;
   }
 
+  @media (max-width: 910px) {
+    #section2 h2 {
+      font-size: 1.5em;
+    }
+  }
+
+  @media (max-width: 640px) {
+    #section2 h2 {
+      font-size: 1em;
+    }
+  }
+
   #section2 article {
-    width: 780px;
+    max-width: 780px;
     text-align: center;
     margin: 0px 0px 25px;
   }
