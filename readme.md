@@ -262,3 +262,8 @@ This concludes the HTML / CSS module. We are proud of you!
 
 _The Ironhack team :heart:_
 Thanks, Carlos Erroz
+
+Hi,
+I think I could manage most of the exercise
+url: https://codepen.io/CarlosEB/pen/OJZaVyQ?editors=1100
+Thanks for your support
