@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins");
 
+
 /* Simple CSS Reset */
 html {
   font-size: 16px;
@@ -26,7 +27,6 @@ img {
 }
 
 /* Icon for search input field */
-
 .icon-input {
   position: relative;
 }
@@ -59,9 +59,17 @@ nav .header__nav {
   align-items: center;
 }
 
+.form-container {
+  display: block;
+}
+
 /* Header - Second row */
 .search-form {
-  min-width: 70%;
+  clear: both;
+  white-space: nowrap;
+  max-width: 1800px;
+  width: calc(80% - 4em);
+  display: block;
   box-sizing: border-box;
 }
 
@@ -101,11 +109,15 @@ nav .header__nav {
   color: black;
 }
 
+.links-group {
+  min-width: 8em;
+}
 
 .link-signin,
 .link-signup {
   padding: 0.3em 0.8em;
   font-size: 0.9em;
+  box-sizing: border-box;
 }
 
 .link-signup {
@@ -191,7 +203,6 @@ nav .header__nav {
 }
 
 /* Section TECHBOX */
-
 #tech-details {
   border-bottom: 1px solid lightgray;
   padding-bottom: 9.5em;
@@ -283,4 +294,208 @@ nav .header__nav {
 .links-box .link {
   color: rgba(0, 0, 0, 0.7);
   line-height: 2.5em;
+}
+
+@media screen and (max-width: 890px) {
+  .slogan {
+    display: none;
+  }
+
+  .link {
+    font-size: 0.9em;
+  }
+
+  .header__container {
+    align-items: baseline;
+    padding: 0.5em 0.65em;
+  }
+
+  .header__controls {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 12vh;
+    padding: 0.5em 0;
+  }
+
+  #hero {
+    text-align: center;
+  }
+
+  #hero h1 {
+    font-size: 3.5em;
+  }
+
+  #callout h2 {
+    text-align: center;
+    font-size: 1.5em;
+    padding: 0 0.5em;
+  }
+
+  #callout p {
+    width: 400px;
+  }
+
+  .techbox__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .techbox {
+    width: calc(100% - 2em);
+    margin-bottom: 4em;
+  }
+
+  .techlink__container {
+    max-height: 5em;
+  }
+
+  .footer-links {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: baseline;
+  }
+
+  .links-box {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 492px) {
+  header > div {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  nav {
+    width: 100%;
+    max-height: 20vh;
+  }
+
+  .logo-heart {
+    display: none;
+  }
+
+  .header__container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .header__nav {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .header__nav .link {
+    padding: 0.01em 0.6em;
+    color: rgb(75, 75, 75);
+    font-size: 1em;
+  }
+
+  #hero {
+    width: 100%;
+  }
+
+  #hero h1 {
+    font-size: 2.2em;
+  }
+
+  #hero p {
+    font-size: 0.8em;
+    max-width: calc(100% - 4em);
+  }
+
+  #callout {
+    width: 100%;
+  }
+
+  #callout h2 {
+    text-align: center;
+    font-size: 1.2em;
+  }
+
+  #callout p {
+    max-width: 400px;
+    padding-top: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #hero {
+    height: 400px;
+    line-break: auto;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  #hero h1 {
+    line-height: 1;
+    word-wrap: break-word;
+  }
+
+  #hero p {
+    margin: 0 auto;
+  }
+
+  #hero article {
+    width: 100%;
+  }
+
+  .hero-links {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  #callout h2 {
+    width: 80%;
+    font-size: 1.2em;
+    padding: 0.6em 0.2em;
+    letter-spacing: 1;
+  }
+
+  /* TODO: Center Content of Link Boxex [FOOTER] */
+  .link-techbox {
+    padding: 1.1em 6em;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    box-shadow: 6px 6px 2px 1px rgb(229, 221, 212);
+  }
+
+  .social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+  }
+
+  .footer-links {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .links-box {
+    width: 50%;
+    padding: 0.8em 0 0.4em 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .links-box ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    list-style: none;
+  }
 }
