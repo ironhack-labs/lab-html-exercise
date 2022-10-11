@@ -2,6 +2,7 @@
 
 body {
     font-family: 'Poppins';
+    font-size: 16px;
 }
 
 header>div {
@@ -34,24 +35,56 @@ nav a {
 }
 
 #secondline {
-    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-#secondline>form {
-    width: auto;
-}
-
-#secondline>form>input {
-    margin: 0px;
-    border-style: hidden;
-    width: auto;
-}
-
-.npm {
+#npmlogo>img {
     height: 30px;
-    margin-right: 1rem;
+    margin-top: 10px;
 }
 
-.magnify {
+#searchbar {
+    display: flex;
+    border-radius: 0px;
+    justify-self: auto;
+}
+
+#searchbar>label>img {
+    margin: 0px;
+    margin-top: 5px;
+    padding: 0px;
     width: 30px;
+    position: relative;
+    left: 40px;
+}
+
+#search {
+    border: 0px;
+    margin: 0px;
+    height: 40px;
+    background-color: rgba(0,0,0,.05);
+    padding-left: 50px;
+    border-radius: 0px;
+    width: 800px;
+    font-size: 1.2em;
+}
+
+#searchbar>button {
+    background-color: #fb3e44;
+    color: white;
+    border: 0px;
+    padding: 0px 30px;
+    font-size: 1.2em;
+}
+
+.sign {
+    color: black;
+    text-decoration: none;
+    padding: 5px 20px;
+}
+
+#signup {
+    border-style: solid;
+    border-width: 1px;
 }

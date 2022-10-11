@@ -7,7 +7,7 @@
     </header>
     <body>
         <header>
-            <div id="firstline">
+            <div>
               <div>
                 <img class="blackHeart" src="images/black-heart.png" alt="black heart" />
                 <span> Nifty Penguin Magic </span>
@@ -25,17 +25,21 @@
             </div>
             
             <div id="secondline">
-                <img class="npm" src="images/npm-logo.png" alt="npm logo" />
-                
-                <form>
-                    <img class="magnify" src="images/magnifying-glass.png" alt="magnifying glass" />
-                    <input type="text" placeholder="Search packages" />
-                    <button type="submit">Search</button>
-                </form>
-
+                <div id="npmlogo">
+                    <img class="npm" src="images/npm-logo.png" alt="npm logo" />
+                </div>
                 <div>
-                    <a href="/">Sign Up</a>
-                    <a href="/">Sign In</a>
+                    <form id="searchbar">
+                        <label for="search">
+                            <img src="images/magnifying-glass.png" alt="magnifying glass" />
+                        </label>
+                        <input type="text" placeholder="Search packages" id="search" />
+                        <button type="submit">Search</button>
+                    </form>
+                </div>
+                <div>
+                    <a id="signup" class="sign" href="/">Sign Up</a>
+                    <a id="signin" class="sign" href="/">Sign In</a>
                 </div>
             </div>
           </header>
