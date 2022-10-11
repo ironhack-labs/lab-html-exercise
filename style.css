@@ -41,7 +41,8 @@ header > div {
   /*LOWER*/
   
   header .lower-div {
-    height: 50px
+    height: 50px;
+		box-shadow: 0 4px 2px -2px lightgray;
   }
   
   .npm-logo {
@@ -101,5 +102,50 @@ header > div {
 
 
 /* SECTION 1 */
+
+.build {
+	height: 600px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(232,217,217,.3);
+}
+
+	h1 {
+		font-size: 70px;
+		color: black;    
+		text-shadow: 3px 0 black;
+		letter-spacing:1px;
+		font-weight:bold;
+	}
+
+	.build > p {
+		width: 430px;
+		text-align: center;
+	}
+
+	.plans {
+		font-size: 1.2em;
+		font-weight: bolder;
+		text-decoration: none;
+		padding: 12px 60px;
+		background-color: #FB3B49;
+		box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+		color: white;
+		margin:20px
+	}
+
+	.free {
+		font-size: 1.2em;
+		font-weight: bolder;
+		text-shadow: 1px 0 black;
+		text-decoration: none;
+		padding: 12px 60px;
+		background-color: white;
+		color: black;
+		margin:20px
+	}
+
 /* SECTION 2 */
 /* SECTION 3 */
