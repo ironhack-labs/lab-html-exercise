@@ -4,6 +4,10 @@ body {
 	font-family: "Poppins";
 }
 
+a {
+	text-decoration: none;
+}
+
 header > div {
 	padding: 0 25px;
 	display: flex;
@@ -24,7 +28,6 @@ nav ul {
 }
 
 nav a {
-	text-decoration: none;
 	color: black;
 }
 
@@ -75,7 +78,6 @@ form input[type="submit"] {
 
 .bar a {
 	background-color: white;
-	text-decoration: none;
 	color: black;
 }
 
@@ -90,4 +92,39 @@ form input[type="submit"] {
 .sign .join {
 	margin-right: 8px;
 	border: 1px solid black;
+}
+
+#welcome {
+	text-align: center;
+	height: 600px;
+	background-color: rgba(232, 217, 217, 0.3);
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+}
+
+#welcome h1 {
+	font-size: 4rem;
+	font-weight: 600;
+}
+
+#welcome article {
+	width: 650px;
+	margin: 0 auto;
+	font-size: 1.5rem;
+}
+
+#welcome div {
+	margin-top: 3.32rem;
+}
+
+#welcome a {
+	padding: 1rem 6rem;
+	color: black;
+}
+
+#welcome .plans {
+	color: white;
+	background-color: #fb3b49;
+	box-shadow: 8px 8px 0 rgba(251, 59, 73, 0.2);
 }
