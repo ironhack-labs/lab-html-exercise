@@ -4,10 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css">
     <title>NPM Clone</title>
   </head>
   <body>
-    <header>
+    <header class="header">
       <nav class="nav">
         <div class="logo">
           <img src="./images/black-heart.png" alt="heart-ico" />
@@ -21,32 +22,34 @@
           <li><a href="#">Docs</a></li>
           <li><a href="#">Support</a></li>
         </ul>
-    </nav>
+      </nav>
       <div class="search">
         <img src="./images/npm-logo.png" alt="npm-logo">
-        <form action="/search">
-            <div class="input">
-                <img src="./images/magnifying-glass.png"></img>
-                <input type="text" placeholder="Search packages">
-            </div>
-            <button>Search</button>
+        <form action="/">
+          <div class="input">
+              <img src="./images/magnifying-glass.png"></img>
+              <input type="text" placeholder="Search packages">
+          </div>
+          <button>Search</button>
         </form>
-        <a href="#">Join</a>
+        <a href="#" class="outline">Join</a>
         <a href="#">Log In</a>
       </div>
     </header>
-    <section>
+    <section id="intro">
         <h1>Build amazing things</h1>
         <p>Essential JavaScript development tools that help you go to market faster and build powerful applications using modern open source code.</p>
-        <a href="#">See plans</a>
-        <a href="#">Join for free</a>
+        <div class="action">
+          <a href="#" class="red">See plans</a>
+          <a href="#" class="white">Join for free</a>
+        </div>
     </section>
-    <section>
+    <section id="about">
         <img src="./images/triangle-hexagon.svg" alt="hexagon ico">
         <h2>Bring the best of open source to your company</h2>
         <p>npm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it. Create an Org and get more out of the tools your team already knows and loves.</p>
     </section>
-    <section>
+    <section id="features">
         <article>
             <img src="./images/zero-configuration.svg" alt="zero-configuration">
             <h4>Zero configuration</h4>
@@ -67,7 +70,7 @@
             <h4>npm audit</h4>
             <p>Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer.</p>
         </article>
-        <a href="#">Create an Org</a>
     </section>
+    <a href="#" class="black-btn">Create an Org</a>
   </body>
 </html>
