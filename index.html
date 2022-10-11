@@ -3,7 +3,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NPM Clone Challenge</title>
+  <link rel="stylesheet" href="styles.css">
+  <title>NPM Clone</title>
 </head>
 <body>
   <header>
@@ -24,27 +25,29 @@
       </nav>
     </div>
 
-    <div>
-      <img class="logo" src="images/npm-logo.png" alt="npm logo"/>
-      <img class="search-icon" src="images/magnifying-glass.png" alt="search icon"/>
-      <form class="search">
-        <input type="text" placeholder="Search packages">
+    <div class="search-bar">
+      <img class="npm-logo" src="images/npm-logo.png" alt="npm logo"/>
+      <form class="search-form">
+        <input type="text" placeholder="Search packages"></input>
         <button type="submit">Search</button>
       </form>
-      <a href="#">Join</a>
-      <a href="#">Log In</a>
+      <div class="account-btns">
+        <a class="join" href="#">Join</a>
+        <a class="login" href="#">Log In</a>
+      </div>
     </div>
   </header>
 
   <!-- Top Section -->
   <section id="plans">
     <h1>Build amazing things</h1>
-    <p>
+    <article>
       Essential JavaScript development tools that help you go to market faster
-       and build powerful applications using modern open source code.</p>
+      and build powerful applications using modern open source code.
+    </article>
     <div class="plans-btns">
-      <a href="#">See plans</a>
-      <a href="#">Join for free</a>
+      <a class="see-btn" href="#">See plans</a>
+      <a class="free-btn" href="#">Join for free</a>
     </div>
   </section>
 
@@ -52,15 +55,15 @@
   <section id="org">
     <img class="triangle-hexagon" src="images/triangle-hexagon.svg" alt="triangle hexagon"/>
     <h2>Bring the best of open source to your company</h2>
-    <p>
+    <article>
       npm is the tool used by over 11,000,000 JavaScript developers around the
       world. Your developers already use it. Your company depends on it. Create
       an Org and get more out of the tools your team already knows and loves.
-    </p>
+    </article>
   </section>
 
   <!-- Bottom Section -->
-  <section>
+  <section id="orgs">
     <div class="orgs-benefits">
       <article>
         <img class="bot-img" src="images/zero-configuration.svg"/>
