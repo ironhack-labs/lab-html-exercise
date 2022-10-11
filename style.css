@@ -163,23 +163,65 @@ header > div {
 	align-items: center;
 }
 
-h2 {
-	font-size: 1.6em;
-	color: black;
-	font-weight:bold;
-	background-color: rgba(255,204,53,.4);
-	transform: skew(9deg,0deg);
-	font-style: italic;
-	margin: 60px 0 20px 0;
-}
+	h2 {
+		font-size: 1.6em;
+		color: black;
+		font-weight:bold;
+		background-color: rgba(255,204,53,.4);
+		transform: skew(9deg,0deg);
+		font-style: italic;
+		padding: 0 30px;
+		margin: 60px 0 20px 0;
+	}
 
-.open-source img {
-	height: 200px;
-	width: auto;
-}
+	.open-source img {
+		height: 200px;
+		width: auto;
+	}
 
-.open-source p {
-	width: 800px;
-	text-align: center;
+	.open-source p {
+		width: 800px;
+		text-align: center;
+	}
 
 /* SECTION 3 */
+
+.org {
+	height: 400px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	justify-items: center;
+}
+
+	.org-info {
+		display: flex;
+		justify-content: center;
+	}
+
+		.org-info div {
+			width: 250px;
+			margin: 0 20px 70px 20px;
+		}
+
+		.org img {
+			height: 30px;
+			width: auto;
+		}
+
+		.org h3 {
+			font-size: 1em;
+			color: #ED1C24;
+		}
+
+	.org a {
+		display: block;
+		width: 130px;
+		color: white;
+		font-weight: bold;
+		text-decoration: none;
+		background-color: black;
+		box-shadow: 5px 5px lightgray;
+		padding: 12px 80px;
+		margin: 0 auto 40px auto;
+	}
