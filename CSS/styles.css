@@ -17,14 +17,12 @@ header > div {
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid lightgray;
+  font-size: 1.5rem;
 }
 
 header > div > div {
   display: inline-flex;
   margin: 0.5rem;
-  height: 4rem;
-  align-items: center;
-  justify-content: center;
 }
 header > div > div img {
   height: 2vh;
@@ -35,7 +33,7 @@ header span {
 }
 
 nav {
-  width: 600px;
+  width: 40vw;
 }
 
 nav ul {
@@ -49,8 +47,6 @@ nav a {
   text-decoration: none;
   color: black;
   letter-spacing: 0.015625em;
-  font-weight: bolder;
-  font-size: unset;
 }
 
 header > div > img {
@@ -60,21 +56,18 @@ header > div > img {
 
 form {
   display: flex;
-  background-color: rgba (0, 0, 0, 0.05);
 }
 
 form > input {
-  background-image: url(../images/magnifying-glass.png);
+  background: url(../images/magnifying-glass.png) no-repeat rgba(0, 0, 0, 0.05);
   box-sizing: border-box;
   border: 2px solid lightgrey;
   border-radius: 4px;
   font-size: 1.5rem;
-  background-color: rgba (0, 0, 0, 0.05);
-  background-repeat: no-repeat;
   background-size: 4vh;
   text-indent: 47px;
   color: dimgrey;
-  width: 70vw;
+  width: 65vw;
   height: 4vh;
 }
 
@@ -103,8 +96,9 @@ div > a {
   letter-spacing: 0.015625em;
   font-weight: 600;
   font-size: unset;
-  height: 1rem;
-  padding: 1rem;
+  /* height: 1rem; */
+  padding: 0.5rem;
+  margin: -5% 0;
 }
 
 div > a:focus,
@@ -116,10 +110,8 @@ div > a:hover {
 /* ************** FINISH HEADER *************  */
 
 /* *************** START MAIN ***************  */
-.icono {
-  max-height: 4rem;
-}
-/* first section */
+
+/* ----- first section ----- */
 main section:first-child {
   display: flex;
   flex-direction: column;
@@ -160,8 +152,11 @@ h1 {
   color: white;
 }
 
-/* second section */
+/* ----- Second section ----- */
 
+.icono {
+  max-height: 4rem;
+}
 /* *************** FINISH MAIN **************  */
 
 /* *************** START FOOTER ***************  */
