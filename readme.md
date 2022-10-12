@@ -14,7 +14,7 @@ In this exercise, the goal is to apply as many as possible of the concepts you'v
 ## Working progres
 
 <img
-    src="./src/images/Working-progres.png"
+    src="./images/Working-progres.png"
     width="700px"
 />
 
