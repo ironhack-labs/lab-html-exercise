@@ -29,9 +29,8 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 0 30px;
+    padding: 0 25px;
     border-bottom: 2px solid #eee;
-    font-size: 0.9rem;
 }
 
 .logo {
@@ -41,25 +40,21 @@ a {
 
 .logo img {
     width: 20px;
-    margin: 0 20px;
+    margin-right: 1rem;
 }
 
-.logo h3 {
-    font-size: 0.9rem;
-    font-weight: 600;
+nav {
+    width: 600px;
 }
 
-.nav ul {
+nav ul {
+    list-style: none;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.nav li {
-    list-style-type: none;
-    font-weight: 500;
-    margin: 0 7px;
-}
-
-.nav li:hover {
+nav li:hover {
     font-weight: bold;
 }
 
@@ -76,7 +71,7 @@ a {
 }
 
 .search form {
-    background: #eee;
+    background: rgba(0,0,0,.05);
     display: flex;
     flex-grow: 1;
     margin: 0 20px;
@@ -103,7 +98,7 @@ a {
 }
 
 .search form button {
-    background-color: #d00;
+    background-color: #fb3e44;
     color: #fff;
     font-size: 1rem;
     font-weight: 600;
@@ -121,12 +116,12 @@ a {
 }
 
 #intro {
-    height: 500px;
+    height: 600px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #eee;
+    background-color: rgba(232,217,217,.3);
     box-shadow: 0 -1px 2px #ccc;
 }
 
@@ -158,9 +153,9 @@ a.white {
 }
 
 a.red {
-    background: #d00;
+    background: #fb3b49;
     color: #fff;
-    box-shadow: 5px 5px #bbb;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
 }
 
 #about {
@@ -194,8 +189,16 @@ a.red {
 
 #features {
     display: flex;
-    gap: 30px;
+    flex-direction: column;
+    align-items: center;
     margin: 50px 0;
+}
+
+#features .articles {
+    display: flex;
+    gap: 30px;
+    padding: 0 50px;
+    margin-bottom: 30px;
 }
 
 #features article {
@@ -203,7 +206,7 @@ a.red {
 }
 
 #features h4 {
-    color: #d00;
+    color: #ED1C24;
     margin: 10px 0;
 }
 
@@ -222,5 +225,5 @@ a.red {
     font-weight: 600;
     padding: 15px 100px;
     margin: auto;
-    box-shadow: 5px 5px #ccc;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
 }

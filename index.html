@@ -9,26 +9,28 @@
   </head>
   <body>
     <header class="header">
-      <nav class="nav">
+      <div class="nav">
         <div class="logo">
           <img src="./images/black-heart.png" alt="heart-ico" />
-          <h3>Nifty Penguin Magic</h3>
+          <span>Nifty Penguin Magic</span>
         </div>
-        <ul>
-          <li><a href="#">npm Enterprise</a></li>
-          <li><a href="#">Products</a></li>
-          <li><a href="#">Solutions</a></li>
-          <li><a href="#">Resources</a></li>
-          <li><a href="#">Docs</a></li>
-          <li><a href="#">Support</a></li>
-        </ul>
-      </nav>
+        <nav>
+          <ul>
+            <li><a href="#">npm Enterprise</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Solutions</a></li>
+            <li><a href="#">Resources</a></li>
+            <li><a href="#">Docs</a></li>
+            <li><a href="#">Support</a></li>
+          </ul>
+        </nav>
+      </div>
       <div class="search">
         <img src="./images/npm-logo.png" alt="npm-logo">
         <form action="/">
           <div class="input">
-              <img src="./images/magnifying-glass.png"></img>
-              <input type="text" placeholder="Search packages">
+              <label for="search"><img src="./images/magnifying-glass.png"></img></label>
+              <input type="text" id="search" placeholder="Search packages">
           </div>
           <button>Search</button>
         </form>
@@ -50,6 +52,7 @@
         <p>npm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it. Create an Org and get more out of the tools your team already knows and loves.</p>
     </section>
     <section id="features">
+      <div class="articles">
         <article>
             <img src="./images/zero-configuration.svg" alt="zero-configuration">
             <h4>Zero configuration</h4>
@@ -70,7 +73,8 @@
             <h4>npm audit</h4>
             <p>Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer.</p>
         </article>
+      </div>
+      <a href="#" class="black-btn">Create an Org</a>
     </section>
-    <a href="#" class="black-btn">Create an Org</a>
   </body>
 </html>
