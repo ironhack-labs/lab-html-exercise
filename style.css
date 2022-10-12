@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:700|Roboto:100,300,700');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 10px;
+}
+
+body {
+  font-family: Roboto, 'Roboto Condensed', sans-serif;
+  line-height: 3.5em;
+  font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto Condensed';
+}
+
+h1 {
+  font-size: 9rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 5rem;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 4em;
+}
+
+h3 {
+  font-size: 4.2rem;
+  text-align: center;
+}
+
+h4 {
+  font-size: 1.5rem;
+  letter-spacing: 0.4px;
+}
+
+h5 {
+  font-size: 1.2rem;
+}
+
+li {
+  list-style-type: none;
+}
+
+.borders {
+  width: 100%;
+}
+
+section {
+  padding: 2em 0em;
+}
+
+.section-title {
+  margin: 1.5em 0em;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* ========== */
+/* buttons */
+/* ========== */
+
+.btn {
+  background: rgb(67, 163, 230);
+  color: #FFF;  
+  padding: 1em 1.6em;
+  margin: 0 auto;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  font-family: 'Roboto Condensed', Roboto, sans-serif;
+  font-size: 2rem;
+}
+
+.btn-blue {
+  background: rgb(67, 163, 230);
+  color: #FFF;
+}
+
+.nav-bar-ul {
+  display: flex;
+  justify-content: space-evenly;
+  background: rgb(25, 33, 41);
+  padding: 1em 0em;
+}
+
+.nav-bar-link {
+  text-decoration: none;
+  color: #FFF;
+  font-size: 2rem;
+}
+
+.nav-bar-link:hover, .nav-bar-link:focus {
+  color: rgb(67, 163, 230);
+}
+
+.header {
+  background-image: url("https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/ironhack-skydive-background.jpg");
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 650px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.title {
+  font-size: 9rem;
+  margin: 0.5em;
+}
+
+#general-information article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.subtitle {
+  margin: 1em 0em 2em;
+  color: #FFF;
+  text-shadow: #020819 8px -20px 9px;
+}
+
+.quote {
+  position: absolute;
+  left: 10%;
+  bottom: 100px;
+  margin: 3em 0em 0em 3em;
+  font-size: 2.5rem;
+  font-style: italic;
+}
+
+.dark-bg {
+  background: rgb(25, 33, 41);
+  color: #FFF;
+}
+
+#general-information {
+  font-size: 2rem;
+  font-weight: 100;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#general-information p {
+  margin: 1em 2em;
+}
+
+#structure {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+  margin: 5em;
+}
+
+.service-box {
+  font-size: 1.7em;
+  text-align: center;
+  width: 35%;
+  border: 1px solid #F0F0F0;
+  box-shadow: 0 0 20px 1px #D0D0D0;
+  margin: 2em;
+  padding: 2em;
+  border-radius: 1em;
+}
+
+.service-box img {
+  width: 125px;
+}
+
+.p-intro {
+  font-size: 1.5rem;
+  align-self: center;
+  text-align: center;
+  line-height: 3rem;
+  margin: 1em;
+  width: 40%;
+}
+
+.team {
+  display: flex;
+  padding: 5em;
+  flex-direction: column;
+}
+
+.team hr {
+  width: 40%;
+  color: #FFF;
+  align-self: center;
+  margin-bottom: 2em;
+}
+
+.team img {
+  width: 250px;
+  height: 175px;
+  border-radius: 2em;
+}
+
+.team-members {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.team-member {
+  margin: 3rem;
+}
+
+.member-name {
+  margin-bottom: 1.5em;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.schedule {
+  padding: 5em 0em;
+}
+
+.schedule-table {
+  margin: 5em auto;
+}
+
+.schedule-table th, td {
+  margin: 0 auto 40px auto;
+  font-size: 1.5em;
+  border-bottom: 1px solid black;
+  padding: 0.5em 1em;
+  text-align: center;
+}
+
+
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 3em 3em;
+}
+
+.footer h5 {
+  font-size: 2rem;
+  padding: 0em 5em;
+}
+
+.footer ul {
+  list-style: none;
+}
+
+.map-frame {
+  height: 375px;
+  width: 60%;
+  margin: 2em 2em;
+}
+
+.footer a {
+  color: rgb(67, 163, 230);
+  text-decoration: none;
+}
+
+.address {
+  font-style: normal;
+  font-size: 0.8em;
+  line-height: 2.5rem;
+  margin-bottom: 2em;
+}
+
+.slot-form-container {
+  width: 40%;
+  margin: 18px auto 0 auto;
+  font-size: 1.5em;
+  text-align: center;  
+}
+
+.slot-form-container label {
+  display: block;
+  margin-bottom: 5px;
+  line-height: 15px;
+}
+
+.slot-form-container input,
+.slot-form-container select {
+  height: 20px;
+  outline: none;
+  padding: 3px;
+  width: 100%;
+}
+
+.slot-form-container button {
+  color: black;
+  background: white;
+  border: 1px solid black;
+  padding: 9px;
+  margin-top: 15px;
+}
