@@ -1,18 +1,16 @@
-/* all page */
+/* *************** ALL PAGE *************** */
 @import url("https://fonts.googleapis.com/css?family=Poppins");
 
 body {
-  font-family: "Poppins";
+  font-family: Poppins, sans-serif;
   margin: 2vh 2vw;
 }
-.icono {
-  max-height: 4rem;
-}
+
 img {
   max-width: 900px;
 }
 
-/* HEADER */
+/* *************** START HEADER ***************  */
 header > div {
   padding: 0 25px;
   display: flex;
@@ -99,15 +97,11 @@ form > button {
   justify-content: space-evenly;
 }
 
-div > a:first-child {
-  margin-right: 1rem;
-}
-
 div > a {
   text-decoration: none;
   color: black;
   letter-spacing: 0.015625em;
-  font-weight: bolder;
+  font-weight: 600;
   font-size: unset;
   height: 1rem;
   padding: 1rem;
@@ -118,4 +112,58 @@ div > a:hover {
   transition: opacity 0.15s ease-in;
   border: 1px solid lightgrey;
 }
-/* MAIN */
+
+/* ************** FINISH HEADER *************  */
+
+/* *************** START MAIN ***************  */
+.icono {
+  max-height: 4rem;
+}
+/* first section */
+main section:first-child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: hsl(0 100% 97%);
+  padding: 5rem;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 7rem;
+  margin-bottom: 2rem;
+}
+
+.surTitleh1 {
+  width: 50%;
+  font-size: xx-large;
+}
+.surDivh1 {
+  margin-top: 5rem;
+}
+
+.surDivh1 > a {
+  font-size: 1.5rem;
+  color: black;
+  border: 1px solid white;
+  background-color: white;
+  padding: 1.5rem 4rem;
+  margin: 0 5rem;
+}
+
+.surDivh1 :focus,
+.surDivh1 :hover {
+  transition: opacity 0.15s ease-in;
+  border: 1px solid #fb3e44;
+  background-color: #fb3e44;
+  box-shadow: 10px 10px 5px #ffbfaa;
+  color: white;
+}
+
+/* second section */
+
+/* *************** FINISH MAIN **************  */
+
+/* *************** START FOOTER ***************  */
+
+/* *************** FINISH FOOTER **************  */
