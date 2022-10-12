@@ -28,10 +28,10 @@
       
         <div>
             <img class="logo" src="images/npm-logo.png" alt="logo" />
-            <img class="magnify-glass" src="images/magnifying-glass.png" alt="magnifying glass" />
-            <form action="/search" method="post"></form>
+            <img class="magnifyGlass" id="searchBar" src="images/magnifying-glass.png" alt="magnifying glass" />
+            <form action="/search" method="post" id="searchBar"></form>
                 <input type="text" name="search" placeholder="Search packages">
-                <button type="submit">Search</button>
+                <button type="submit" id="search">Search</button>
                 <button type="submit">Join</button>
                 <button type="submit">Log In</button>
         </div>
@@ -44,12 +44,12 @@
         </article>
         <div>
             <form action="/plans" method="post"></form>
-                <button type="submit">See plans</button>
-                <button type="submit">Join for free</button>
+                <button type="submit" id="seePlans">See plans</button>
+                <button type="submit" id="join">Join for free</button>
         </div>
     </section>
 
-    <section id="open-source">
+    <section id="openSource">
         <img src="images/triangle-hexagon.svg" alt="triangle hexagon" />
         <h3>Bring the best of open source to your company</h3>
         <article>
@@ -82,7 +82,7 @@
             <p>Enjoy the security auditing features buil into the npm client, a zero-friction way to make open source software safer.</p>
         </div>
 
-        <div>
+        <div class="createOrg">
             <form action="/create" method="post"></form>
                 <button type="submit">Create an Org</button>
         </div>
