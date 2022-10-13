@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
 body {
-    font-family: 'Poppins';
+  font-family: 'Poppins';
 }
 
 header > div {
@@ -38,17 +38,167 @@ header > div {
     margin-right: 1rem;
   }
 
-  form img {
+  .magnfGlass {
     width: 20px;
-    margin-right: 1rem;
   }
 
   #search-bar {
     display: flex;
     justify-content: space-around;
+    padding: 4px;
+    font-size: 0.9em;
   }
 
   #search-bar form {
     display: flex;
-    width: 100%;
+    align-items: center;
+    width: 85%;
+  }
+
+  #search-bar form input {
+    font-family: inherit;
+    background-color : rgba(0,0,0,.05);
+    border: none;
+    width: 90%;
+    height: 28px;
+  }
+
+  #search-bar form button {
+    font-family: inherit;
+    border: none;
+    background-color: #fb3e44;
+    color : white;
+    width: 80px;
+    height: 32px;
+  }
+
+  #search-bar form div {
+    padding: 5px;
+    background-color: rgba(0,0,0,.05);
+  }
+
+  #search-bar div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  #search-bar div > a {
+    text-decoration: none;
+    width: 50px;
+    color: rgba(0,0,0,.5);
+    text-align: center;
+    padding-top: 3px;
+    padding-bottom: 3px;
+  }
+
+  #search-bar div > a:first-child {
+    border: 1px solid rgba(0,0,0,.5);
+    margin-right: 4px;
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+
+  section h1 {
+    font-size: 4em;
+    font-weight: 600;
+  }
+
+  section > img {
+    width: 180px;
+  }
+
+  #build {
+    background-color:  rgba(232,217,217,.3);
+    text-align: center;
+  }
+
+  #build article {
+    width: 420px;
+    margin-bottom: 20px;
+  }
+
+  #build div{
+    display: flex;
+    width: 420px;
+    justify-content: space-around;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    font-weight: 600;
+  }
+
+  #build div > a {
+    text-decoration: none;
+    width: 180px;
+    color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  #build div > a:first-child {
+    color: white;
+    background-color: #FB3B49;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+    font-weight: 500;
+  }
+
+  #plans h2 {
+    font-size: 1.8em;
+    font-weight: 600;
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+    font-style: italic;
+    margin-top: 60px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  #plans article {
+    width: 620px;
+    text-align: center;
+    font-size: 0.8em;
+  }
+
+  #join {
+    display: flex;
+    flex-direction: column;
+    margin: 0 100px 80px 100px;
+  }
+
+  #join > div {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 100px;
+  }
+
+  #join h4{
+    color: #ED1C24;
+  }
+
+  #join > div > div {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  #join img {
+    width: 40px;
+  }
+
+  #join a {
+    text-decoration: none;
+    text-align: center;
+    width: 280px;
+    padding: 10px;
+    color: white;
+    background-color: black;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
   }
