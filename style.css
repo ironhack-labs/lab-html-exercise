@@ -24,7 +24,10 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid lightgray;
+  }
+
+  .navLow {
+    /*box-shadow: 5px, 0, 0, 0, 10px 10px 0 brown; */
   }
 
   nav {
@@ -65,30 +68,63 @@ body {
   }
 
   #search input{
-    width: 500px;
+    width: 1000px;
     font-size: 1.2em;
     text-align: center;
     height: 20px;
     padding: 3px;
+    color: rgba(0,0,0,.05);
+    border: 1px solid gray;
+    border-radius: 0px;
+    background-color: rgba(0,0,0,.05);
   }
-  
   #searchButton {
     width: 80px;
     height: 30px;
     border: 0px;
     color: white;
-    background-color: red;
-    margin: 15px;
+    background-color: #FB3B49;
+    margin: 15px 0 15px 0;
     font-size: 0.8em;
     text-align: center;
-    border: 2px solid red;
+    border: 0px transparent;
     box-sizing: border-box;
-    box-shadow: 5px 10px 10px 0 brown;
   }
 
+  .user {
+    display: flex;
+  }
+
+  .Join{
+    width: 80px;
+    height: 30px;
+    color: black;
+    background-color: white;
+    border: 1px solid black; /* ???? */
+    font-size: 0.8em;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  .LogIn{
+    width: 80px;
+    height: 30px;
+    border: 0px;
+    color: black;
+    background-color: white;
+    font-size: 0.8em;
+    text-align: center;
+    border: 0px transparent;
+    box-sizing: border-box;
+    
+  }
+  
+
   #section1 {
+    /* height: 600px; */
     text-align: center;
     padding: 5%;
+    background-color: rgba(232,217,217,.3);
   }
 
   #section1 h1{
@@ -108,14 +144,14 @@ body {
     height: 50px;
     border: 0px;
     color: white;
-    background-color: red;
+    background-color: #fb3e44;
     padding: 9px;
     margin: 15px;
     font-size: 1.5em;
     text-align: center;
-    border: 2px solid red;
+    border: 2px solid #fb3e44;
     box-sizing: border-box;
-    box-shadow: 5px 10px 10px 0 brown;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
     /* margin: 50px 5% 0 5%;
     padding: 20px;
     width: 40%; 
@@ -144,17 +180,19 @@ body {
   }
 
   #section2 h2 {
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
     font-style: italic;
+    /* margin: 50px 50px; */
   }
   
   #section2 p {
     display: flex;
     align-items: center;
     margin: 20px 15%;
-    font-style: italic;
   }
   #section3 h3 {
-    color: red;
+    color: #ED1C24;
   }
   #section3 > div {
     display: flex;
@@ -188,5 +226,5 @@ body {
     text-align: center;
     border: 2px solid black;
     box-sizing: border-box;
-    box-shadow: 5px 10px 10px 0 gray;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2)
   }
