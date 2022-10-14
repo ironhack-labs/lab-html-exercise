@@ -129,12 +129,16 @@ header > div {
     margin-bottom: 100px;
     margin: 40px;
   }
-  #section3 div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 800px;
+  .parent {
+    display: block;
     margin: 100px;
+    text-align: center;
+  }
+  .childs {
+    display: inline-block;
+    width: 250px;
+    text-align: left;
+    margin: 20px;
   }
   #section3 h4 {
     color: #ED1C24
@@ -142,12 +146,15 @@ header > div {
   #section3 img {
     height: 35px;
   }
-  #section3 a {
+  #footer {
     display: flex;
     justify-content: center;
+    margin-bottom: 100px;
+  }
+  #footer a {
     text-decoration: none;
     color: white;
     background-color: black;
-    padding: 10px 60px 10px 60px;
+    padding: 10px 90px 10px 90px;
     box-shadow: 8px 8px 0 rgba(128,83,35,.2);
   }
