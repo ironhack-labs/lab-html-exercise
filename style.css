@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body {
+  font-family: 'Poppins';
+}
+
+/*  define o bloco header como container do tipo flex. Tudo dentro será filho e seguirá o modelo flex. 
+    A definição é feita com display: flex;
+    Para estabelecer o main-axis ==> flex-direction
+    Para definir o alinhamento dos itens dentro do container, utilizar justify-content. Aqui se utiliza
+    space-between, para deixar o igual o espaço entre os itens. Note que os itens do canto terão distâncias
+    para margem definidas de outra maneira.
+    Os itens dentro do container são alinhados da seguinte forma:
+        topo (topo dos itens no topo do container) - flex-start
+        fundo (fundo dos itens no fundo do container) - flex-end
+        esticados (topo e fundo dos itens encostando no topo e fundo do container) - stretch
+        centralizados (eixo central do item no eixo central do container. Respeita a dimensao escolhida) - center
+        baseline (os textos dos itens estao alinhados em um mesmo eixo no main axis) - baseline
+
+*/
+header > div {
+    padding: 0 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+}
+
+header a{
+    text-decoration: none;
+    color: black;    
+}
+
+nav {
+    width: 600px;
+}
+  
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+nav a {
+    text-decoration: none;
+    color: black;
+}
+  
+.blackHeart {
+    width: 20px;
+    margin-right: 1rem;
+}
+
+.procura{
+    padding: 8px 30px;
+    border: 0px;
+}
+.logo{
+    width: 70px;
+}
+
+.magnifying-glass{
+    width: 20px;
+    margin-top: 0.5em;
+}  
+
+form{
+    display: flex;
+    background-color: rgba(0, 0, 0, .05);
+    width:80%;
+    
+}
+
+form input{
+    color: black;
+    padding: 0px;
+    width: 90%;
+    padding: 0px;
+    border: 0px;
+    background-color: rgba(0, 0, 0, .05);
+    font-size: 16px;
+}
+
+form button{
+    background-color: #fb3e44;
+    color: white;
+    border: 0;
+    padding: 0px;
+    width: 10%;
+}
+
+form label{
+    padding-right: 10px;
+    border: 0px;
+    background-color: rgba(0, 0, 0, .05);
+}
+
+.links{
+    width: 10%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.join {
+    border: 1px solid lightgray;
+    padding: 0 10px;
+
+}
+
+#build{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    background-color: rgba(232,217,217,.3)
+}
+
+#build article{
+    width: 400px;
+    padding-bottom: 20px;
+}
+
+
+#build >div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    width: 400px;
+}
+
+#build >div >span{
+    padding: 0 30px;
+
+    width: 100px;
+}
+
+
+h1{
+    font-size: 72px;
+    font-weight: 700;
+}
+
+.botao-vermelho{
+    background-color: #fb3e44;
+    color: white;
+    padding: 1em 3em;
+    text-decoration: none;
+    box-shadow: 8px 8px 0 rgba(251, 59, 73, .2);
+}
+
+.botao-transparente{
+    color: black;
+    padding: 1em 3em;
+    text-decoration: none;
+}
+
+#bring{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+}
+
+.hexagon{
+    width: 400px;
+}
+
+#bring h1{
+    background-color: rgba(255, 204, 53, .4);
+    font-size: 36px;
+    transform: skew(9deg, 0deg);
+    font-style: italic;
+    padding: 0 30px;
+}
+
+#bring article{
+    width: 780px;
+    padding-bottom: 20px;
+    text-align: center;
+    
+}
+
+#vantagens{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 600px;
+    margin-top: 5em;
+}
+
+#vantagens >div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 300px;
+}
+
+#vantagens .caixas{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 30px;
+    height: 270px;
+}
+
+.explicativo{
+    width: 250px;
+}
+
+#vantagens h3{
+    color: #ed1c24;
+}
+
+.miniaturas{
+    width: 40px;
+    height: 35px;
+}
+
+.botao-org{
+    background-color: black;
+    color: white;
+    padding: 1em 5em;
+    text-decoration: none;
+    box-shadow: 8px 8px 0 rgba(128, 83, 35, .2);
+    margin-top: 40px;
+}
