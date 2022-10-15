@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
+html,
+body {
+  width: 98vw;
+  margin: 0;
+  padding: 0px 10px 10px 10px;
+}
+
+body {
+  background-color: none;
+  font-family: "Poppins";
+}
+
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+header > div {
+  padding: 0 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+  font-weight: bold;
+}
+nav {
+    width: 600px;
+   
+}
+nav a {
+  text-decoration: none;
+  color: black;
+  
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.textSpan {
+  font-size: 1em;
+  align-items: flex-start;
+}
+
+.blackHeart {
+  width: 40px;
+  margin-right: 1rem;
+}
+
+.logo {
+  width: 125px;
+  margin-right: 1rem;
+}
+
+#search {
+    border: 0px;
+    background-color: #f5efef;
+    font-size: 1.5em;
+  }
+  
+#search input {
+  border: 0px;
+  background-color: #f5efef;
+  font-size: 0.8em;
+}
+
+#search button {
+    background: #fb3b49;
+    width: 120px;
+    outline: none;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    font-family: "Poppins";
+    letter-spacing: 0.3px;
+    outline-offset: 3px;
+    z-index: 1;
+    font-weight: bold;
+    border: 0px;
+  }
+  
+.buttons {
+  width: 160px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:flex-end;
+}
+.joinButton {
+  background-color: white;
+  font-size: 1em;
+  box-shadow: 2px 2px #888888;
+  width: 70px;
+  height: 35px;
+  border-width: 1px;
+}
+
+.logButton {
+  background-color: white;
+  font-size: 1em;
+  border: 0px;
+  width: 70px;
+  height: 35px;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  background: #fff;
+  width: 1500px;
+  height: 55px;
+  display: flex;
+}
+form input {
+  flex: 1;
+  outline: none;
+}
+
+form .fa-search {
+  align-self: center-right;
+  padding: 10px 20px;
+  color: #696969;
+  border: 1px solid #f2f2f2;
+}
+
+h1 {
+  font-size: 6em;
+  text-align: center;
+  line-height: 2em;
+  margin: 200px 0 0 0;
+}
+.firstLine {
+  display: flex;
+  align-items: center;
+}
+
+.textMedium {
+  width: 500px;
+  text-align: center;
+  font-size: 1.2em;
+  margin: 10px 0px 10px 0px;
+  font-weight: bold;
+}
+
+.sectionOne {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgba(232, 217, 217, 0.3);
+  height: 600px;
+}
+
+.seeButton {
+  background-color: #fb3b49;
+  font-size: 30px;
+  box-shadow: 8px 8px 0 rgba(251, 59, 73, 0.2);
+  width: 200px;
+  height: 50px;
+  margin-right: 60px;
+  margin: 50px 0px 200px 0px;
+  border: 0px;
+  color: white;
+  font-weight:700;
+}
+
+.forButton {
+  background-color: white;
+  font-size: 30px;
+  border: 0px;
+  width: 200px;
+  height: 50px;
+  font-weight: 700;
+  margin: 50px 0px 300px 0px;
+}
+#more-information {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-position: 0 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  padding-top: 50px;
+}
+
+.trianguleHexagon {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  width: 350px;
+}
+
+h2 {
+  font-size: 3em;
+  text-align: center;
+  line-height: 2em;
+  background-color: rgba(255, 204, 53, 0.4);
+  transform: skew(9deg, 0deg);
+  font-style: italic;
+  margin-bottom: 10px;
+  width: 1200px;
+}
+
+.textTwo {
+  font-size: 1.2em;
+  text-align: center;
+  width: 1000px;
+}
+
+#last-information {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+/* modified for flexbox */
+#last-information > article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 350px;
+}
+
+article img {
+  height: 50px;
+}
+
+article h3 {
+  width: 350px;
+  margin: 0px;
+  color: #fb3b49;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+article p {
+  width: 300px;
+  line-height: 120%;
+  font-size: 0.9em;
+  text-align: start;
+}
+
+.footerButton {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-around;
+}
+
+
+.orgButton {
+    width: 600px;
+    height: 75px;
+    background-color: black;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    color: white;
+    font-size: 2.5em;
+}
+
+
