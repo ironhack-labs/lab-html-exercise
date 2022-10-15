@@ -1,9 +1,11 @@
 
 <html>
     <head>
+      <link rel="stylesheet" href="style.css"/>
+    </head>
         <body>
           <header>
-            <div>
+            <div class="upper-header">
               <div>
                 <img class="blackHeart" src="images/black-heart.png" alt="black heart" />
                 <span> Nifty Penguin Magic </span>
@@ -20,43 +22,41 @@
               </nav>
             </div>
           
-            <div>
-              <img class="logo" src="images/npm-logo.png" alt="logo">
-              <img class="glass" src="images/magnifying-glass.png" alt="glass">
-              <!-- add logo, search bar and buttons (or links and style them as buttons later) -->
-            </div>
-            <nav>
-              <a href="*"> Join </a> 
-              <a href="*"> Login </a>
-            </nav>
-            <form action="/some-url" mathod="post">
-              <input type="text" id="search-field" placeholder="Search packages">
-              <button type="submit"> Search </button>
+            <div class="lower-header">
+              <img class="logo" src="images/npm-logo.png" alt="logo">            
+              <form action="/some-url" method="post"> 
+                <input type="text" class="search-field" placeholder="Search packages">              
+                <button type="submit"> Search </button> 
             </form>
+              <div class="login">
+                <a href="*"> Join </a> 
+                <a href="*"> Login </a>    
+             </div>           
+            </div>
           </header>
           <section id="join">
             <heading>
               <h1>Build amazing things</h1>
             </heading>
             <article>
-              <p>Essential JavaScript development tools that help you go to market faster and build powerful applications using
+              <p>Essential JavaScript development tools that help you <br>go to market faster and build powerful applications using<br>
                 modern open source code.</p>
             </article>
-            <div>
-              <a href="#"> See plans </a>
-              <a href="#"> Join for free </a>             
+            <div class="container">
+              <a href="#"> <button type="submit"> See plans</button></a>
+              <a href="#" class="joinfree"> Join for free </a>             
             </div>
           </section>
           <section id="information">
             <img class="hexagon" src="images/triangle-hexagon.svg" alt="triangle-hexagon">
-            <heading>
+            <heading class="info-header">
               <h3>Bring the best of open source to your company.</h3>
+            </heading>
               <article>
                 <p>npm is the tool used by
-                  over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it.
-                  Create an Org and get more out of the tools your team already knows and loves.</p>
+                  over 11,000,000 JavaScript developers around the world. Your developers <br>already use it. Your company depends on it.
+                  Create an Org and get more out of the tools your<br> team already knows and loves.</p>
               </article>
-            </heading>
           </section>
           <section id="features">
             <div>
@@ -91,8 +91,7 @@
               <p>Enjoy the security
                 auditing features built into the npm client, a zero-friction way to make open source software safer.</p>
             </div>
-            <a href="*"> Create an Org</a>
           </section>
+          <a href="*" class="lastlink"> Create an Org</a>
         </body>
-    </head>
 </html>
