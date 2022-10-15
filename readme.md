@@ -11,7 +11,7 @@ In this exercise, the goal is to apply as many as possible of the concepts you'v
 - how to use flexbox to position elements on the page and
 - how to style the page.
 
-## Working progres
+## End preview
 
 <img
     src="./images/Working-progres.png"
