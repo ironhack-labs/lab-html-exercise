@@ -1,0 +1,216 @@
+/* *************** ALL PAGE *************** */
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
+body {
+  font-family: Poppins, sans-serif;
+  margin: 2vh 2vw;
+}
+
+img {
+  max-width: 900px;
+}
+
+/* *************** START HEADER ***************  */
+header > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+  font-size: 0.9rem;
+}
+
+header > div > div {
+  display: inline-flex;
+  margin: 0.5rem;
+}
+header > div > div img {
+  height: 2vh;
+}
+
+header span {
+  align-items: center;
+}
+
+nav {
+  width: 40vw;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  letter-spacing: 0.015625em;
+}
+
+header > div > img {
+  width: 8vw;
+  padding: 0.5rem;
+}
+
+form {
+  display: flex;
+}
+
+form > input {
+  background: url(../images/magnifying-glass.png) no-repeat rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
+  border: 2px solid lightgrey;
+  border-radius: 4px;
+  font-size: 1.5rem;
+  background-size: 4vh;
+  text-indent: 47px;
+  color: dimgrey;
+  width: 65vw;
+  height: 4vh;
+}
+
+form > button {
+  background-color: #fb3e44;
+  color: white;
+  border: 2px solid #fb3e44;
+  height: 4vh;
+  font-size: larger;
+}
+
+.surHeader {
+  justify-content: space-between;
+}
+
+.aJoinLogIn {
+  width: 10vw;
+  height: 4rem;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+div > a {
+  text-decoration: none;
+  color: black;
+  letter-spacing: 0.015625em;
+  font-weight: 600;
+  font-size: unset;
+  /* height: 1rem; */
+  padding: 0.5rem;
+  margin: -5% 0;
+}
+
+div > a:focus,
+div > a:hover {
+  transition: opacity 0.15s ease-in;
+  border: 1px solid lightgrey;
+}
+
+/* ************** FINISH HEADER *************  */
+
+/* *************** START MAIN ***************  */
+
+/* ----- first section ----- */
+main section:first-child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: hsl(0 100% 97%);
+  padding: 5rem;
+}
+
+h1 {
+  font-size: 5.5rem;
+  margin-bottom: 2rem;
+}
+
+.surTitleh1 {
+  width: 55%;
+  font-size: x-large;
+  text-align: center;
+}
+.surDivh1 {
+  margin-top: 5rem;
+}
+
+.surDivh1 > a {
+  font-size: 1.5rem;
+  color: black;
+  border: 1px solid white;
+  background-color: white;
+  padding: 1.5rem 4rem;
+  margin: 0 5rem;
+}
+
+.surDivh1 :focus,
+.surDivh1 :hover {
+  transition: opacity 0.15s ease-in;
+  border: 1px solid #fb3e44;
+  background-color: #fb3e44;
+  box-shadow: 10px 10px 5px #ffbfaa;
+  color: white;
+}
+
+/* ----- Second section ----- */
+
+.icono {
+  max-height: 4rem;
+}
+
+main section:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 4rem;
+}
+
+.triangle {
+  width: 15vw;
+  margin-bottom: 2rem;
+}
+
+main h2 {
+  background-color: rgba(255, 204, 53, 0.4);
+  transform: skew(9deg, 0deg);
+  padding: 0 2rem;
+  font-size: 2.2rem;
+  font-style: italic;
+}
+
+section > p {
+  width: 48rem;
+  text-align: center;
+  margin-top: -0.5rem;
+}
+
+/* *************** FINISH MAIN **************  */
+
+/* *************** START FOOTER ***************  */
+footer > section {
+  display: flex;
+  flex-direction: column;
+}
+footer > section > div {
+  display: flex;
+  margin: 1rem 6rem;
+}
+footer > section > div > div {
+  margin: 0.5rem;
+  padding: 0.5rem;
+  font-size: small;
+}
+
+h4 {
+  color: #ed1c24;
+}
+
+footer a {
+  background-color: black;
+  box-shadow: 8px 8px 0 rgb(128 83 35 / 20%);
+  color: white;
+  margin: 0 auto 10rem;
+  text-decoration: none;
+  padding: 1rem 8rem;
+  font-size: x-large;
+}
+/* *************** FINISH FOOTER **************  */
