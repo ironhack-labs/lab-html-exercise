@@ -3,7 +3,7 @@ body {
   font-family: 'Poppins';
 }
 header > div {
-  padding: 0 25px;
+  padding: 3px 25px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -13,12 +13,19 @@ header > div {
 /*
  form label color: rgba(0,0,0,.05) form input color: rgba(0,0,0,.05)*/
 
+.div-search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 input {
-  color: rgba(0, 0, 0, 0.3);
+  width: 150%;
+  color: rgba(0, 0, 0, 0.7);
   background-color: rgba(0, 0, 0, 0.05);
   border: none;
-  padding: 3px;
-  margin-bottom: 2px;
+  padding: 3px 3px 2px 3px;
+  margin-bottom: 0px;
 }
 
 nav {
@@ -49,22 +56,34 @@ header div a {
 
 .logo {
   width: 40px;
-  margin-right: 1rem;
 }
 
 .magnifying-glass {
   width: 10px;
-  margin-right: 1rem;
+
+  /*mover a lupa sobre o search*/
+  font-size: 1px;
+  position: relative;
+  left: 4%;
 }
 
 #button-search {
   background-color: #fb3e44;
   color: white;
-  border-color: #fb3e44;
+  border: none;
   text-decoration: none;
+  font-size: 0.9em;
 }
 
-#link-btn {
+.search-packages {
+  display: flex;
+  width: 80%;
+}
+
+.link-btn {
+  font-size: 0.7em;
+  padding: 1px 4px;
+  border: 1px solid rgb(172, 170, 170, 0.3);
 }
 /* --- section 1 --- */
 
@@ -133,7 +152,7 @@ p {
   background-color: black;
   text-decoration: none;
   padding: 5px 40px;
-  font-size: 0.5em;
+  font-size: 0.7em;
 }
 .section3-flex {
   height: 300px;
