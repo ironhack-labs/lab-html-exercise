@@ -93,9 +93,10 @@ We could try to represent this part of the website with the following:
       </ul>
     </nav>
   </div>
-
   <div>
-    <!-- add logo, search bar and buttons (or links and style them as buttons later) -->
+     <img class="logo" src="images\npm-logo.png" alt="logo" />
+      <img class="search" src="images\magnifying-glass.png" alt="search" />
+
   </div>
 </header>
 ```
