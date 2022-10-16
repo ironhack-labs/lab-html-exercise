@@ -2,22 +2,25 @@
 <html>
   <head>
     <link rel="stylesheet" href="./style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap");
+    </style>
   </head>
   <body>
     <!--todo site tem um background rosa claro rgba(232,217,217,.3)-->
     <header class="white-background header-style">
       <!-- background branco-->
-      <sector id="upper-header-sector"
-        ><!--aqui fica o coração com os links superiores, colocar uma margem abaixo deste elemento--->
-        <div id="upper-right-header">
+      <sector id="upper-header-sector">
+        <!--aqui fica o coração com os links superiores, colocar uma margem abaixo deste elemento--->
+        <div id="upper-left-header">
           <!--aqui fica só o coração e o texto da esquerda, -->
-          <img
+          <img id="black-heart"
             src="images\black-heart.png"
             alt="A black rotten heart, like the one my ex has..."
           />
-          <a href="#"> Clone Nifty Penguin Magic </a>
+          <a href="#"> Clone Nifty Penguin Magic</a>
         </div>
-        <div id="upper-left-header">
+        <div id="upper-right-header">
           <!--aqui ficam os links da direita-->
           <ul>
             <li><a href="#">npm Enterprise</a></li>
@@ -28,66 +31,85 @@
             <li><a href="#">Support</a></li>
           </ul>
         </div>
+      </div>
       </sector>
       <sector id="down-header">
         <!--Aqui fica a barra de busca e botões de Join e Login-->
-        <img class="npm-logo"
-          src="images\npm-logo.png"
-          alt="Wow, that is some awesome imagery... too bad you can't see it"
-        />
-        <div class="searchbarr-exterior">
-        <img src="images\magnifying-glass.png" alt="lollipop" class="lollipop" />
-        <form  action="/search" method="post"></form>
-        <label for="search"></label>
-        <input class="searchbarr"
-          type="text"
-          name="search"
-         placeholder="Search Packages"
-        ></input>
-        <button type="submit" class="search-button">Search</button>
+        <div class="npm-space">
+        <a href="#"
+          ><img
+            class="npm-logo"
+            src="images\npm-logo.png"
+            alt="Wow, that is some awesome imagery... too bad you can't see it"
+          />
+        </a>
+      </div>
+        <div class="searchbarr-exterior no-side-margin">
+          <img
+            src="images\magnifying-glass.png"
+            alt="lollipop"
+            class="lollipop"
+          />
+          <form action="submit" method="get"></form>
+            <label name="search"></label>           
+            <input
+              class="searchbarr"
+              type="name"
+              name="search"
+              placeholder="Search Packages"
+            />
+           <button type="button" class="search-button red-button">Search</button>
+          
         </div>
-        <div class="down-right-header">
         <a href="#" class="join-button">Join</a>
         <a href="#" class="log-in">Log in</a>
-        </div>
+
       </sector>
     </header>
     <sector id="marketing">
       <!--area com background rosa claro padrão, texto e botões-->
       <h1>Build amazing things</h1>
       <p>
-        Essential JavaScript development tools that help you go to market faster
-        and build powerful applications using modern open source code.
+        Essential JavaScript development tools that help you
+      <br>
+          go to market faster and build powerful applications
+        <br>
+          using modern open source code.
       </p>
-      <div>
+      <div class="marketing-buttons">
         <!--os botões do setor ficam aqui-->
-        <a href="#" class="see-plans">See plans</a>
+        <div>
+        <a href="#" class="see-plans red-button">See plans</a>
+        </div>
+        <div>
         <a href="#" class="join-for-free">Join for free</a>
+        </div>
       </div>
     </sector>
     <sector id="features" class="white-background">
       <!--background branco para esse setor, area com grande caixa branca que se divide em duas, uma com logo e texto e otra com varias pequenas caixas com pequenos icones e mais texto,no final grande botão preto -->
-      <div>
         <!--aqui vai a logo rosa grande com o texto-->
-        <img
+        <img class="diamond-logo"
           src="images\triangle-hexagon.svg"
           alt="pink diamond from pink panther"
         /><!--logo rosa hexagono-->
-        <h2><spam>Bring the best of open source to your company</spam></h2>
-        <p>
+        <div class="marca-texto">
+        <h2>Bring the best of open source to your company</h2>
+        </div>
+        <p =box>
           npm is the tool used by over 11,000,000 JavaScript developers around
-          the world. Your developers already use it. Your company depends on it.
-          Create an Org and get more out of the tools your team already knows
+          the world. Your developers<br> already use it. Your company depends on it.
+          Create an Org and get more out of the tools your<br> team already knows
           and loves.
         </p>
-      </div>
-      <div>
+      <div class="four-boxes">
         <!--nessa área temos 4 setores com os icones e texto-->
-        <article>
+        <article class="box">
           <!--caixa 1-->
           <img
             src="images\zero-configuration.svg"
             alt="mouse on empty button"
+            class = "mouse"
           /><!--zero configuration imagem-->
           <h4>Zero configuration</h4>
           <p>
@@ -95,20 +117,21 @@
             configure, set up, or manage.
           </p>
         </article>
-        <article>
+        <article class="box">
           <!--caixa 2-->
-          <img src="images\team-management.svg" alt="people" />
+          <img class="person" src="images\team-management.svg" alt="people" />
           <h4>Team management</h4>
           <p>
             Control who has access to what modules within your team namespace
             using straightforward team management capabilities.
           </p>
         </article>
-        <article>
+        <article class="box">
           <!--caixa 3-->
           <img
             src="images\familiar-features.svg"
             alt="mineiro's cheeses on a scales"
+            class="cheese"
           />
           <h4>Familiar features</h4>
           <p>
@@ -116,9 +139,9 @@
             your developers already use.
           </p>
         </article>
-        <article>
+        <article class="box">
           <!--caixa 4-->
-          <img src="images\npm-audit.svg" alt="two tunnels, side by side" />
+          <img class="binoculars" src="images\npm-audit.svg" alt="two tunnels, side by side" />
           <h4>npm audit</h4>
           <p>
             Enjoy the security auditing features built into the npm client, a
@@ -126,7 +149,7 @@
           </p>
         </article>
       </div>
-      <div>
+      <div class="ultimo-elemento">
         <!--Aqui vai o botão grande-->
         <a href="#" class="create-an-org">Create an Org</a>
       </div>
