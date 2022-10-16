@@ -9,6 +9,7 @@ header > div {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 1px solid lightgray;
  }
   
   nav {
@@ -36,13 +37,10 @@ header > div {
     height: 45px;
 }
 
-.magnifying-glass {
-    background-color: rgb(255, 251, 251);
-}
-
 fieldset {
     border: none;
     display: flex;
+    align-items: center;
 }
   
   form label {
@@ -51,9 +49,10 @@ fieldset {
 
  form input[type=text] {
     color: white;
-    height: 45px;
-    background-color: rgb(255, 251, 251);
+    height: 40px;
+    background-color: rgba(0,0,0,.05);
     border: none;
+    width: 60vw;
   }
 
   input[type=button] {
@@ -67,9 +66,9 @@ fieldset {
   }
 
  #buttonSearch {
-    height: 47px;
+    height: 43px;
     border: none;
-    padding: 0.175rem 0.95rem;
+    padding: 0.175rem 1.15rem;
     
 }  
 
@@ -78,8 +77,9 @@ section[id="buildamazing"] {
     background-color: rgba(232,217,217,.3);
     text-align: center;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    gap: 20px;
 }
 
 section[id="bring"] {
@@ -101,8 +101,6 @@ section[id="plans"] {
 
 
 .fakebutton {
-    margin-top: 10px;
-    padding: .975rem 3.95rem;
     border: 1px solid;
     text-decoration: none;
     font-weight: bold;
@@ -125,6 +123,7 @@ section[id="plans"] {
     border-style: inset;
     margin-left: 30px;
     font-weight: bold;
+    padding: .975rem 3.95rem;
 }
 
 #fakebuttonLogin{
@@ -138,6 +137,7 @@ section[id="plans"] {
     background-color: #FB3B49;
     color: white;
     box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+    padding: .975rem 3.95rem;
 }
 
 #buttonCreateOrg{
@@ -155,10 +155,15 @@ section[id="plans"] {
 
 #divPlans {
     display: flex;
+    margin: 20px 80px;
 }
 
 #divPlans img {
     max-width: 48px;
+}
+
+#divPlans div {
+    margin: 10px;
 }
 
 .triangle-hexagon {
@@ -171,11 +176,13 @@ section[id="plans"] {
 }
 
 .npmlogo {
-    max-width: 80px;
+    max-width: 65px;
 }
 
 .magnifying-glass {
-    max-height: 47px;
+    max-height: 20px;
+    padding: 11px;
+    background-color: rgba(0,0,0,.05);
 }
 
 h1 {
@@ -184,6 +191,11 @@ h1 {
 }
 
 #market {
-    padding-top: 50px;
+    display: flex;
+    justify-content: center;
 }
 
+section[id="buildamazing"] article {
+    width: 52%;
+    text-align: center;
+}
