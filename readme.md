@@ -130,29 +130,29 @@ _Hint_: In case you need to refresh your memory on how to do this, check _Introd
 _Hint2_: You might want to consider adding the following line to your CSS, just to confirm that you have linked it correctly:
 
 ```css
-body {
++ body {
   background-color: red;
 }
 ```
 
-Refresh the page in Chrome, and if your _style.css_ is linked properly, the page should turn red. (*You can delete the *background-color* property we added as a test once you have confirmed it's working.*) :wink:
++Refresh the page in Chrome, and if your _style.css_ is linked properly, the page should turn red. (*You can delete the *background-color* property we added as a test once you have confirmed it's working.*) :wink:
 
 :::info
-Before we move forward, add at the very top of your _style.css_ file the following lines:
++Before we move forward, add at the very top of your _style.css_ file the following lines:
 
 ```css
-@import url('https://fonts.googleapis.com/css?family=Poppins');
++@import url('https://fonts.googleapis.com/css?family=Poppins');
 
-body {
++body {
   font-family: 'Poppins';
 }
 ```
 
 :::
 
-This will be the default font you will be using on the entire webpage.
++This will be the default font you will be using on the entire webpage.
 
-Now we are ready to start adding some styles to our page.
++Now we are ready to start adding some styles to our page.
 
 #### CSS 2 | The Header and the navbar
 
