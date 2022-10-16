@@ -121,7 +121,7 @@ The time has come! Let's add some styles and make it pretty! :nail_care:
 
 #### CSS 1 | Setup
 
-As you might recall, the first thing we have to do to add styles to our page is to create a `style.css` file and link it to our `index.html`.
++As you might recall, the first thing we have to do to add styles to our page is to create a `style.css` file and link it to our `index.html`.
 
 So let's begin by creating a new file, in the same folder as our HTML file, and name it `style.css`. Now, link the file to the _index.html_.
 
@@ -261,3 +261,23 @@ In this exercise, you've built a clone of a piece of the npm home page. This sit
 This concludes the HTML / CSS module. We are proud of you!
 
 _The Ironhack team :heart:_
+
+---
+
+NPM Clone Nifty Penguin Magic npm Enterprise Products Solutions Resources Docs Support Search Join Log In Build amazing things Essential JavaScript development tools that help you go to market faster and build powerful applications using
+modern open source code.
+
+See plans
+Join for free
+
+Bring the best of open source to your company
+
+npm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it.
+Create an Org and get more out of the tools your team already knows and loves.
+
+Zero configuration
+Create an org, add your team, and start collaborating. Nothing to configure, set up, or manage.
+
+Team management
+
+Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer.
