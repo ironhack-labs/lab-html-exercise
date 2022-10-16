@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&family=Fira+Mono');
+
+*{
+    box-sizing: border-box;
+}
+
+body * {
+  font-family: 'Poppins';
+}
+
+header > div {
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+  }
+  
+  nav {
+    width: 600px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .blackHeart {
+    width: 20px;
+    margin-right: 1rem;
+  }
+
+  #npm-logo{
+    width: 70px;
+    height: 20px;
+    align-self: center;
+    margin-right: 15px;
+  }
+
+  header form{
+    display: flex;
+    flex-basis: 100%;
+  }
+
+  header form label {
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: 22px;
+  }
+
+  header input{
+    background-color: rgba(0,0,0,.05);
+    font-family: "Fira Mono", "Andale Mono", "Consolas", monospace;
+    border: none;
+    padding: 6px 8px 6px 30px;
+    flex-grow: 1;
+  }
+
+  header button{
+    padding: 6px 12px;
+    height: 32px;
+    background: white;
+    border: white 1px solid;
+    min-width: fit-content;
+  }
+
+  .join-login-buttons{
+    padding: 5px 0;
+    display: inline-flex;
+    justify-content: flex-end;
+    flex-basis: 20%;
+  }
+
+  #btn-join{
+    border: black 1px solid;
+    margin-right: 5px;
+  }
+  
+  #btn-search{
+    background-color: #fb3e44;
+    color: white;
+    border: #fb3e44 1px solid;
+  }
+
+  section{
+    padding: 4rem 1rem;
+    display: flex;
+  }
+
+  section#intro{
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 600px;
+    background-color: rgba(232,217,217,.3);
+  }
+
+  section#intro heading{
+    font-size: 4rem;
+    font-weight: bolder;
+    margin: 0;
+  }
+
+  section#intro > span{
+    text-align: center;
+    width: 60%;
+  }
+
+  .btn-planos{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .btn-planos button{
+    background-color: white;
+    padding: 15px 60px;
+    font-weight: bolder;
+    color: black;
+    border: none;
+  }
+
+  .btn-planos button:first-child{
+    background-color: #FB3B49;
+    color: white;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+    margin-right: 35px;
+  }
+
+  section#bring-company-section{
+    flex-direction: column;
+    align-items: center;
+    height: 600px;
+    justify-content: space-between;
+  }
+
+  section#bring-company-section .heading-background{
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+    padding: 0 20px;
+  }
+
+  section#bring-company-section heading{
+    font-size: 2rem;
+    font-weight: bold;
+    transform: skew(-9deg,0deg);
+    display: inline-block;
+  }
+
+  section#bring-company-section > span{
+    width: 80%;
+    text-align: center;
+  }
+
+  section#features{
+    flex-direction: column;
+    justify-content: space-between;
+    height: 450px;
+  }
+
+  section#features img{
+    width: 30px;
+  }
+
+  section#features heading{
+    color: #ED1C24;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+  }
+
+  section#features button{
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    color: white;
+    background-color: black;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px 120px;
+    white-space: nowrap;
+    align-self: center;
+  }
+
+  .features-list{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .feature{
+    display: flex;
+    flex-direction: column;
+  }
+
