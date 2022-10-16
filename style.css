@@ -1,9 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
 
 body {
   font-family: 'Poppins';
 }
+
+/*HEADER*/
 
 header > div {
     padding: 0 1em;
@@ -11,17 +13,18 @@ header > div {
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid lightgray;
+    flex-wrap: wrap;
   }
 
-  header span {
+header span {
     font-weight: bold;
-  }
+}
   
-  nav {
+nav {
     width: 50%;
-  }
+}
   
-  nav ul {
+nav ul {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
@@ -29,74 +32,215 @@ header > div {
     column-gap: 20px;
     align-items: center;
     font-weight: bolder;
-  }
+}
   
-  nav a {
+nav a {
     text-decoration: none;
     color: black;
-  }
+}
   
-  .blackHeart {
+.blackHeart {
     width: 25px;
     margin-right: 1rem;
-  }
+}
 
-  .npm-logo {
+.npm-logo {
     width: 5%;
     padding: 15px 0;
-  }
+}
 
-  #search-form {
+#search-form {
     display: flex;
+    flex-wrap: nowrap;
     flex-direction: row;
     justify-content: space-between;
     background-color: rgba(0,0,0,.05);
     width: 85%;
-  }
+}
 
-  #search-form label img {
+#search-form label img {
     width: 20px;
     padding: 3px 10px;
     margin-top: 7px;
-  }
+}
 
-  #search-form input {
+#search-form input {
     width: 100%;
     background-color: rgba(0,0,0,.0);
     border: 0;
     font-family: 'Space Mono', monospace;
     font-size: 1em;
-  }
+}
 
-  #search-form button {
+#search-form button {
     background-color: #fb3e44;
     color: white;
     border: 0;
     padding: 0.5em 1.5em;
     font-size: 14px;
     font-family: 'Poppins';
-  }
+    font-weight: 100;
+    cursor: pointer;
+}
 
-  #enter-options {
+#enter-options {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     font-size: 14px;
     font-family: 'Poppins';
-  }
+}
 
-  #join-button {
+#join-button {
     text-decoration: none;
     color: black;
     font-weight: bold;
     border: 1px solid black;
     padding: 5px 20px;
-  }
+}
   
-  #login-button {
+#login-button {
     text-decoration: none;
     color: black;
     margin: 0 15px;
-  }
+}
+
+/*HEADER ENDS*/
+
+/*PLANS SECTION*/
+
+#plans-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color: rgba(232,217,217,.3);
+    padding: 150px 0;
+}
+
+#plans-section h1 {
+    font-size: 5em;
+    font-weight: 900;
+    margin: 25px 0;
+    text-align: center;
+}
+
+#plans-section article {
+    width: 28%;
+    font-weight: 500;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+#plans-section div {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 2em;
+    margin-top: 3em;
+}
+
+.main-button-red {
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+    background-color: #FB3B49;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+    font-size: 18px;
+    font-weight: 700;
+    padding: 15px 60px;
+}
+
+.secondary-button {
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+    background-color: white;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 15px 60px;
+}
+  
+/*PLANS SECTION ENDS*/
+
+/*CALL TO ACTION SECTION*/
+
+#call-to-action-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 120px 0;
+}
+
+#call-to-action-section img {
+    width: 15%;
+    margin-bottom: 2em;
+}
+
+#call-to-action-section h2 {
+    font-size: 2.5em;
+    font-weight: 700;
+    margin: 25px 0;
+    padding: 0 25px;
+    text-align: center;
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+    font-style: italic;
+}
+
+#call-to-action-section article {
+    width: 46%;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+/*CALL TO ACTION SECTION ENDS*/
+
+/*BENEFITS SECTION*/
+
+.benefits-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 150px;
+    align-items: baseline;
+}
+
+.benefits-row div {
+    padding-right: 10%;
+}
+
+.benefits-row img {
+    width: 20%;
+}
+
+.benefits-row h3 {
+    color: #ED1C24;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.main-button-black {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+.main-button-black a {
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+    background-color: black;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    font-size: 18px;
+    font-weight: 700;
+    padding: 15px 120px;
+}
+
+/*BENEFITS SECTION ENDS*/
+
 
