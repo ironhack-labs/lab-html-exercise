@@ -13,7 +13,6 @@ header > div {
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid lightgray;
-    flex-wrap: wrap;
   }
 
 header span {
@@ -51,11 +50,10 @@ nav a {
 
 #search-form {
     display: flex;
-    flex-wrap: nowrap;
     flex-direction: row;
     justify-content: space-between;
     background-color: rgba(0,0,0,.05);
-    width: 85%;
+    width: 82%;
 }
 
 #search-form label img {
@@ -227,7 +225,7 @@ nav a {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin: 50px 0;
+    margin: 4% 0;
 }
 
 .main-button-black a {
@@ -238,8 +236,15 @@ nav a {
     box-shadow: 8px 8px 0 rgba(128,83,35,.2);
     font-size: 18px;
     font-weight: 700;
-    padding: 15px 120px;
+    padding: 1em 8em;
 }
+
+/* Responsive layout */
+@media (max-width: 800px) {
+    .benefits-row {
+      flex-direction: column;
+    }
+  }
 
 /*BENEFITS SECTION ENDS*/
 
