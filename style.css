@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url("https://fonts.googleapis.com/css?family=Poppins");
 
 body {
-  font-family: 'Poppins';
+  font-family: "Poppins";
 }
 
 header > div {
@@ -33,47 +33,130 @@ nav a {
   margin-right: 1rem;
 }
 
-form input #search {
-  background-image: url(images\magnifying-glass.png);
-  background-size:contain;
-  background-repeat: no-repeat;
-  text-indent: 20px;
-  
+.search {
+  height: 30px;
+  margin: 20px;
+}
+
+.search .search-bar {
+  width: 870px;
+  margin-left: 30px;
+  padding: 10px;
 }
 
 label {
-
-  color: rgba(0,0,0,.05);
+  color: rgba(0, 0, 0, 0.05);
 }
 
 input {
-
-  color:  rgba(0,0,0,.05) ;
+  color: rgba(0, 0, 0, 0.05);
 }
 
 #btn-search {
-background-color: #fb3e44;
-color: white;
-
-
+  background-color: #fb3e44;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-left: 10px;
 }
 
+.btn-header {
+  background-color: white;
+  color: gray;
+  padding: 10px 20px;
+}
 
+.logo {
+  width: 60px;
+  margin-left: 50px;
+}
+
+.bottom-header .search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bottom-header .btns-jl {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
 #sectionOne {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 600px;
+  background-color: rgba(232, 217, 217, 0.3);
+}
 
+#triangleHexagon {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 15%;
+  margin-top: 50px;
+}
+
+#sectionTwo {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
+}
 
+
+#sectionTwo h2 {
+  background-color: rgba(255, 204, 53, 0.4);
+  transform: skew(9deg, 0deg);
+  font-style: italic;
+  margin: 20px;
+  padding: 5px;
+}
+
+article p {
+  width: 400px;
+  text-align: center;
+}
+
+.btn-seePlan {
+  background-color: #fb3b49;
+  color: white;
+  box-shadow: 8px 8px 0 rgba(251, 59, 73, 0.2);
+  border: none;
+  padding: 15px 30px;
+  align-items: center;
+  margin-left: 80px;
+}
+
+.btn-joinForFree {
+  border: none;
+  padding: 15px 30px;
+  margin-right: 80px;
+}
+
+.text-container {
+}
+
+#zero-configuration, #team-management, #familiar-features, #npm-audit {
+
+  display: block;
+  margin-left:3%;
+  margin-right: auto;
+  width: 3%;
+  margin-top: 50px;
 
 }
 
-#triangleHexagon {
-  width: 400px;
-  height: auto;
+#sectionThree {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-direction: column;
 }
+
+
+
+
