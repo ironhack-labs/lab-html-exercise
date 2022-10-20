@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./style.css">
     <title>Document</title>
 </head>
 <body>
@@ -26,33 +27,39 @@
           </nav>
         </div>
       
-        <div>
+        <div class="search">
           
-          <img src="./images/npm-logo.png" alt="npm-logo">
-          <img src="./images/magnifying-glass.png" alt="">
-          <input type="search" value=""  >
-          <input type="submit"value="search">
-          <a href="#">Sign up</a>
-          <a href="#">Sign in</a>
+          <img class="npmLogo" src="./images/npm-logo.png" alt="npm-logo">
+          <div >
+          <img class="glass" src="./images/magnifying-glass.png" alt="">
+          <input  type="search" value=""  >
+          <input class="searchButton" type="submit"value="Search">
+         </div>
+          <div class="sign">
+          <a class="ins" href="#">Sign up</a>
+          <a class="ins" href="#">Sign in</a>
+        </div>
         </div>
       </header>
 
-      <section>
+      <section class="sectionUno">
          <h1>Built amazing things</h1>
           <article> <p>We're npm, Inc., the company behind the npm Registry and npm CLI. We offer those to the community for free, but our day job is building and selling useful tools for developers like you.   </p>   
           </article>
           <div>
-            <a href="#">See plans</a>
-            <a href="#">Join for free</a>
+            <a class="seePlans" href="#">See plans</a>
+            <a class="joinForFree" href="#">Join for free</a>
 
           </div>
 
       </section>
-
-      <section>
-            <img src="./images/triangle-hexagon.svg" alt="">
+     <div class="hexagon">
+  <img src="./images/triangle-hexagon.svg" alt="">
+    </div>
+      <section class="sectionDos">
+            
             <header> 
-                <h3>Bring the best of open source to you, your team, and your company</h3>
+                <h2 class="h3Section">Bring the best of open source to  you, your team, and your company</h2>
             </header>
             <article>
                 <p>
@@ -65,28 +72,32 @@
 
       </section>
 
-      <section> 
+      <section class="sectionTres"> 
+        <div class="carts">
         <div>
             <header> <h5>Zero configuration</h5> </header>
             <p> Bring the best of open source JavaScript development to your own projects. </p>
-           <img src="./images/zero-configuration.svg" alt="">
+           <img class="sectionImgTres" src="./images/zero-configuration.svg" alt="">
         </div>
         <div>
             <header> <h5>Team Managment</h5>  </header>
             <p>Seamlessly integrate public and private packages into your development cycle. </p>
-            <img src="./images/team-management.svg" alt="">
+            <img class="sectionImgTres" src="./images/team-management.svg" alt="">
         </div>
         <div>
             <header> <h5>Familiar features</h5>  </header>
             <p>Add collaborators to work on your public and private packages together.</p>
-            <img src="./images/familiar-features.svg" alt="">
+            <img class="sectionImgTres" src="./images/familiar-features.svg" alt="">
         </div>
         <div>
             <header> <h5>Npm audit</h5>  </header>
             <p>Add collaborators to work on your public and private packages together. </p>
-            <img src="./images/npm-audit.svg" alt="">
+            <img class="sectionImgTres" src="./images/npm-audit.svg" alt="">
         </div>
-        <a href="#">Create an Org</a>
+    </div>
+      <div class="create"> 
+    <a href="#">Create an Org</a>
+     </div> 
       </section>
 
       
