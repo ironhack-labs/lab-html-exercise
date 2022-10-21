@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css"/>
     <body>
 <header id="header">
     <div class="firstbar">
@@ -23,20 +24,19 @@
 
     <div class="secondbar">
         <img src="https://raw.githubusercontent.com/loquearde/lab-html-exercise/master/images/npm-logo.png" alt="npm logo" />
-        <form action="/action_page.php">
+        <form class="form1" action="/action_page.php">
             <img src="https://raw.githubusercontent.com/loquearde/lab-html-exercise/master/images/magnifying-glass.png" alt="magnifying glass">
             <input type="text" placeholder="Search packages" name="search">
-            <button type="submit">Submit</button>
+            <button type="search">Search</button>
           </form>
+          <div class="topnav">
           <a href="#join">Join</a>
           <a href="#login">Log In</a>
-        <div class="topnav">
-            <a class>
         </div>
     </div>
 </header>
 <section id="firstsection">
-    <h1 class="title">
+    <h1>
         Build amazing things
     </h1>
     <article class="intro">
@@ -44,8 +44,8 @@
         modern open source code.
     </article>
     <div>
-        <a href="#seeplans">See plans</a>
-        <a href="#join">Join for free</a>
+        <button class="seeplansbutton" href="#seeplans">See plans</button>
+        <button class= "joinbutton" href="#join">Join for free</button>
     </div>
 </section>
 <section id="secondsection">
