@@ -1,312 +1,234 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:700|Roboto:100,300,700');
+@import url('https://fonts.googleapis.com/css?family=Poppins');
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-:root {
-  font-size: 10px;
+  font-family: 'Poppins';
 }
 
 body {
-  font-family: Roboto, 'Roboto Condensed', sans-serif;
-  line-height: 3.5em;
-  font-weight: 300;
+  margin: 0px;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Roboto Condensed';
-}
-
-h1 {
-  font-size: 9rem;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-h2 {
-  font-size: 5rem;
-  text-align: center;
-  text-transform: uppercase;
-  line-height: 4em;
-}
-
-h3 {
-  font-size: 4.2rem;
-  text-align: center;
-}
-
-h4 {
-  font-size: 1.5rem;
-  letter-spacing: 0.4px;
-}
-
-h5 {
-  font-size: 1.2rem;
-}
-
-li {
-  list-style-type: none;
-}
-
-.borders {
-  width: 100%;
-}
-
-section {
-  padding: 2em 0em;
-}
-
-.section-title {
-  margin: 1.5em 0em;
-}
-
-img {
-  max-width: 100%;
-}
-
-/* ========== */
-/* buttons */
-/* ========== */
-
-.btn {
-  background: rgb(67, 163, 230);
-  color: #FFF;  
-  padding: 1em 1.6em;
-  margin: 0 auto;
-  font-weight: 700;
-  text-align: center;
-  text-decoration: none;
-  letter-spacing: 0.5px;
-  font-family: 'Roboto Condensed', Roboto, sans-serif;
-  font-size: 2rem;
-}
-
-.btn-blue {
-  background: rgb(67, 163, 230);
-  color: #FFF;
-}
-
-.nav-bar-ul {
+header > div {
+  padding: 0 25px;
   display: flex;
-  justify-content: space-evenly;
-  background: rgb(25, 33, 41);
-  padding: 1em 0em;
-}
-
-.nav-bar-link {
-  text-decoration: none;
-  color: #FFF;
-  font-size: 2rem;
-}
-
-.nav-bar-link:hover, .nav-bar-link:focus {
-  color: rgb(67, 163, 230);
-}
-
-.header {
-  background-image: url("https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/ironhack-skydive-background.jpg");
-  position: absolute;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 650px;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-}
-
-.title {
-  font-size: 9rem;
-  margin: 0.5em;
-}
-
-#general-information article {
-  display: flex;
-  flex-direction: column;
   justify-content: space-between;
-}
-
-.subtitle {
-  margin: 1em 0em 2em;
-  color: #FFF;
-  text-shadow: #020819 8px -20px 9px;
-}
-
-.quote {
-  position: absolute;
-  left: 10%;
-  bottom: 100px;
-  margin: 3em 0em 0em 3em;
-  font-size: 2.5rem;
-  font-style: italic;
-}
-
-.dark-bg {
-  background: rgb(25, 33, 41);
-  color: #FFF;
-}
-
-#general-information {
-  font-size: 2rem;
-  font-weight: 100;
-  text-align: center;
-  display: flex;
-  justify-content: space-evenly;
-}
-
-#general-information p {
-  margin: 1em 2em;
-}
-
-#structure {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  flex-direction: row;
-  margin: 5em;
-}
-
-.service-box {
-  font-size: 1.7em;
-  text-align: center;
-  width: 35%;
-  border: 1px solid #F0F0F0;
-  box-shadow: 0 0 20px 1px #D0D0D0;
-  margin: 2em;
-  padding: 2em;
-  border-radius: 1em;
-}
-
-.service-box img {
-  width: 125px;
-}
-
-.p-intro {
-  font-size: 1.5rem;
-  align-self: center;
-  text-align: center;
-  line-height: 3rem;
-  margin: 1em;
-  width: 40%;
-}
-
-.team {
-  display: flex;
-  padding: 5em;
-  flex-direction: column;
-}
-
-.team hr {
-  width: 40%;
-  color: #FFF;
-  align-self: center;
-  margin-bottom: 2em;
-}
-
-.team img {
-  width: 250px;
-  height: 175px;
-  border-radius: 2em;
-}
-
-.team-members {
-  display: flex;
-  margin: 0 auto;
-  flex-direction: row;
-  justify-content: center;
   align-items: center;
+  border-bottom: 1px solid lightgray;
 }
 
-.team-member {
-  margin: 3rem;
+nav {
+  width: 600px;
 }
 
-.member-name {
-  margin-bottom: 1.5em;
-  text-align: center;
-  font-size: 1.5rem;
-}
-
-.schedule {
-  padding: 5em 0em;
-}
-
-.schedule-table {
-  margin: 5em auto;
-}
-
-.schedule-table th, td {
-  margin: 0 auto 40px auto;
-  font-size: 1.5em;
-  border-bottom: 1px solid black;
-  padding: 0.5em 1em;
-  text-align: center;
-}
-
-
-.footer {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  text-align: center;
-  font-size: 1.5rem;
-  padding: 3em 3em;
-}
-
-.footer h5 {
-  font-size: 2rem;
-  padding: 0em 5em;
-}
-
-.footer ul {
+nav ul {
   list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.map-frame {
-  height: 375px;
-  width: 60%;
-  margin: 2em 2em;
-}
-
-.footer a {
-  color: rgb(67, 163, 230);
+nav a {
   text-decoration: none;
-}
-
-.address {
-  font-style: normal;
-  font-size: 0.8em;
-  line-height: 2.5rem;
-  margin-bottom: 2em;
-}
-
-.slot-form-container {
-  width: 40%;
-  margin: 18px auto 0 auto;
-  font-size: 1.5em;
-  text-align: center;  
-}
-
-.slot-form-container label {
-  display: block;
-  margin-bottom: 5px;
-  line-height: 15px;
-}
-
-.slot-form-container input,
-.slot-form-container select {
-  height: 20px;
-  outline: none;
-  padding: 3px;
-  width: 100%;
-}
-
-.slot-form-container button {
   color: black;
-  background: white;
-  border: 1px solid black;
-  padding: 9px;
-  margin-top: 15px;
+}
+
+.sticky {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+  background-color: white;
+}
+
+.blackHeart {
+  width: 20px;
+  margin-right: 1rem;
+}
+
+.npmLogo {
+  width: 3.5%;
+}
+
+.searchBar {
+  position: relative;
+  display: flex;
+  height: 57px;
+  align-items: center;
+  margin-left: 15px;
+  width: 90%;
+}
+
+.searchBar img {
+  position: absolute;
+  width: 20px;
+  margin-left: 10px;
+}
+
+.searchBar input{
+  width: 85%;
+  padding: 10px 30px;
+  border: 0px;
+  background-color: rgba(0,0,0,.05);
+  position: left;
+  font-family: "Fira Mono", "Andale Mono", "Consolas", monospace;
+}
+
+.searchBar button {
+  width: 9.5%;
+  padding: 10px 20px;
+  border: 0px;
+  background-color:#fb3e44;
+  color: white;
+  height: 37px;
+}
+
+.bar-button {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 10%;
+}
+
+.bar-button-join {
+  margin-right: 10px;
+  padding: 2px 15px;
+  border: 1px solid rgb(51, 51, 51);
+  text-decoration: none;
+  color: black;
+}
+
+.bar-button-login {
+  padding: 2px 0 2px 15px;
+  text-decoration: none;
+  color: black;
+}
+
+#intro {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 550px;
+  background-color: rgba(232,217,217,.3);
+  text-align: center;
+  align-items: center;
+}
+
+#intro h1 {
+  font-size: 4.5em;
+  font-weight: bolder;
+}
+
+#intro article, .plans {
+  width: 30%;
+  margin-top: -10px;
+  
+}
+
+.plans {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.plans a {
+  width: 40%;
+  padding: 5px;
+}
+
+.see-plans {
+  background-color: #FB3B49;
+  color: white;
+  font-size: 1.2em;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 50px;
+  box-shadow: 8px 8px 0 rgba(251,59,73,0.2);
+}
+
+.join-free {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+#companyvision {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 450px;
+  text-align: center;
+  align-items: center;
+  padding: 0 20px;
+}
+
+#companyvision h2 {
+  margin-bottom: 20px;
+  background-color: rgb(248, 232, 186);
+  font-size: 2.5em;
+}
+
+#companyvision article {
+  padding: 0 30px;
+  width: 52%;
+}
+
+#companyvision img {
+  width: 15%;
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 550px;
+}
+
+.feature-container {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  margin-bottom: 50px;
+  font-size: .8em;
+  margin-top: 70px;
+  justify-content: center;
+}
+
+#features div {
+  padding: 0px 60px;
+}
+
+#features div p {
+  width: 65%;
+}
+
+#features img {
+  width: 30px;
+}
+
+#features h3 {
+  margin-bottom: 10px;
+  color: #ED1C24;
+}
+
+#features a {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  margin-left: 35%;
+  margin-right: 35%;
+  padding: 10px 100px;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.black-button {
+  box-shadow: 8px 8px 0 rgba(128,83,35,.2);
 }

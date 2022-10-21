@@ -1,176 +1,84 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>npm</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
 <body>
-    <div class="borders">
+  <header class="sticky">
+    <div>
+      <div>
+        <img class="blackHeart" src="./images/black-heart.png" alt="black heart" />
+        <span> Nifty Penguin Magic </span>
+      </div>
       <nav>
-        <ul class="nav-bar-ul">
-          <li><a class="nav-bar-link" href="#structure">Day Structure</a></li>
-          <li><a class="nav-bar-link" href="#team">Team</a></li>
-          <li><a class="nav-bar-link" href="#schedule">Schedule</a></li>
-        </ul>  
+        <ul>
+          <li><a href="#"> npm Enterprise </a></li>
+          <li><a href="#"> Products </a></li>
+          <li><a href="#"> Solutions </a></li>
+          <li><a href="#"> Resources </a></li>
+          <li><a href="#"> Docs </a></li>
+          <li><a href="#"> Support </a></li>
+        </ul>
       </nav>
-  
-      <header class="header">
-        <h1 class="title"><img class="ironskydive-logo"
-            src="https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/ironhack-skydive-logo.png"
-            alt="Iron SkyDive: Let the trip begin!">IronSkydive</h1>
-        <h2 class="subtitle">Let the trip begin</h2>
-        <aside>
-          <quote class="quote">
-            "The best experience of our lives"
-            <p>Ariel Quiónes & Gonzalo Manrique, Ironhack Founders</p>
-          </quote>
-        </aside>
-      </header>
-  
-       <section id="general-information" class="dark-bg container">
-        <article>
-          <h3>Hello!</h3>
-          <p>Welcome to IronSkydive, the best adventure you will ever have.</p>
-          <a class="btn btn-blue" href="#">Learn More</a>
-        </article>
-        <article>
-          <h3>About us</h3>
-          <p>We really like programming websites, but we also to love to play sports.</p>
-          <a class="btn btn-blue" href="#">Watch Video</a>
-        </article>
-        <article>
-          <h3>Wanna join?</h3>
-          <p>Join our fitness program to be in good shape while learning.</p>
-          <a class="btn btn-blue" href="#">Register</a>
-        </article>
-      </section>
-      
-      <section class="container">
-        <h3 class="section-title">How do we structure the day?</h3>
-        <div id="structure">
-          <article class="service-box">
-            <img src="https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/ironskydive-training.png"
-              alt="Iron Skydive Training">
-            <h4>1. Training</h4>
-            <p>We teach all the necessary things to jump from the plane without any kind of problem.</p>
-          </article>
-          <article class="service-box">
-            <img src="https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/ironskydive-get-ready.png" alt="Get Ready!">
-            <h4>2. Get Ready</h4>
-            <p>You are already prepared, you just need the suit and a parachute. All sizes are available.</p>
-          </article>
-          <article class="service-box">
-            <img src="https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/ironskydive-fly.png" alt="Ready to Fly!">
-            <h4>3. Fly</h4>
-            <p>You are raedy, and the plane is waiting for us in the hangar. Let's fly!</p>
-          </article>
-          <article class="service-box">
-            <img src="https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/ironskydive-jump.png" alt="Now jump!">
-            <h4>4. Jump!</h4>
-            <p>You have already done the most complicated parts. Just one step left... jump!</p>
-          </article>
-        </div>
-      </section>
-  
-      <section id="team" class="team dark-bg member-name">
-        <h3>Team</h3>
-        <p>Our team collectively has 75 years of experience. Odds are, when you jump out of the plane with these professionals, you won't go splat!</p>
-        <hr>
-        <div class="team-members">
-          <article class="team-member">
-            <h4 class="member-name">Harold Rothstein</h4>
-              <img src="https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_c18b1c463b80090894237a262dfdfbad.jpg" alt="Photo of Harold Rothstein">
-          </article>
-          <article class="team-member">
-            <h4 class="member-name">Susan Phillips</h4>
-                <img src="https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_a18d6123a7c8e75f7e70a4e59b941093.jpg" alt="Photo of Susan Phillips">
-          </article>
-          <article class="team-member">
-            <h4 class="member-name">Taylor Roberts</h4>
-                <img src="https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_7104a331530d1b0611da55093b7dc421.jpg" alt="Photo of Taylor Roberts">
-          </article>
-        </div>  
-      </section>
-  
-      <section id="schedule">
-        <h3>Schedule</h3>
-        <table class="schedule-table" cellpadding="0" cellspacing="0">
-          <thead>
-            <th>Time</th>
-            <th>Monday</th>
-            <th>Tuesday</th>
-            <th>Wednesday</th>
-            <th>Thursday</th>
-            <th>Friday</th>
-            <th>Saturday</th>     
-          </thead>
-            <tbody>
-              <tr>
-                <td>9:00 - 11:00</td>
-                <td></td>
-                <td></td>
-                <td>X</td>
-                <td></td>
-                <td>X</td>
-                <td>X</td>
-              </tr>
-              <tr>
-                <td>12:00 - 14:00</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>X</td>
-                <td>X</td>
-              </tr>
-              <tr>
-                <td>15:00 - 17:00</td>
-                <td></td>
-                <td></td>
-                <td>X</td>
-                <td>X</td>
-                <td>X</td>
-                <td>X</td>
-              </tr>
-            </tbody> 
-        </table>
-        <h3>Schedule a Time Slot</h3>
-        <form class="slot-form" action="/register" method="post">
-          <div class="slot-form-container">
-            <label for="email">E-Mail</label>
-            <input type="email" id="email" placeholder="Enter your email">
-          </div>
-          <div class="slot-form-container">
-            <label for="participants">Participants</label>
-            <input type="number" id="participants" placeholder="Number of participants">
-          </div>
-          <div class="slot-form-container">
-            <label for="date">Date</label>
-            <input type="date" id="date">
-          </div>
-          <div class="slot-form-container">
-            <label for="time">Time</label>
-            <select id="time">
-              <option value="early">9:00 - 11:00</option>
-              <option value="mid">12:00 - 14:00</option>
-              <option value="late">15:00 - 17:00</option>
-            </select>
-          </div>
-          <div class="slot-form-container">
-            <button type="submit">Reserve your slot</button>
-          </div>
-        </form>  
-      </section>
-  
-      <footer class="dark-bg footer">
-        <div class="contact-info">
-            <h5>Contact Information</h5>
-            <address class="address">IronSkydive<br>33 Rue la Fayette,<br>75009 Paris,<br>France<br>+33 (0) 619 193 088</address>
-            <h5>Follow Us</h5>
-            <ul>
-              <li><a href="#" target="_blank">Twitter</a></li>
-              <li><a href="#" target="_blank">Facebook</a></li>
-              <li><a href="#" target="_blank">Instagram</a></li>
-            </ul>
-          </div>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.142047744348!2d2.3354330160472316!3d48.87456857928921!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e38f817b573%3A0x48d69c30470e7aeb!2sIronhack!5e0!3m2!1sen!2ses!4v1495208746099"
-          class="map-frame" frameborder="0" style="border:0" allowfullscreen></iframe>
-      </footer>
-  </body>
-  </html>
+    </div>
+    <div>
+      <img class="npmLogo" src="./images/npm-logo.png" alt="npmlogo" />
+      <form class="searchBar">
+        <img src="./images/magnifying-glass.png" alt="magnifying-glass" />
+        <input type="text" placeholder="Search packages">
+        <button class="redbutton">Search</button>
+      </form>
+      <div class="bar-button">
+        <a href="#" class="bar-button-join">Join</a>
+        <a href="#" class="bar-button-login">Log in</a>
+      </div>
+    </div>
+  </header>
+  <section id="intro">
+    <h1>Build amazing things</h1>
+    <article>
+      <p>Essential JavaScript development tools that help you go to market faster and build powerful applications using modern open source code.</p>
+    </article>
+    <div class="plans">
+      <a href="#" class="see-plans">See plans</a>
+      <a href="#" class="join-free">Join for free</a>
+    </div>
+  </section>
+  <section id="companyvision">
+    <img src="./images/triangle-hexagon.svg" alt="triangle-hexagon" />
+    <h2>Bring the best of open source to your company</h2>
+    <article>
+      <p>npm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it. Create an Org and get more out of the tools your team already knows and loves.</p>
+    </article>
+  </section>
+  <section id="features">
+    <div class="feature-container">
+      <div>
+        <img src="./images/zero-configuration.svg" alt="zero-configuration" />
+        <h3>Zero Configuration</h3>
+          <p>Create an org, add your team, and start collaborating. Nothing to configure, set up or manage.</p>
+      </div>
+      <div>
+        <img src="./images/team-management.svg" alt="team-management" />
+        <h3>Team Management</h3>
+          <p>Control who has access to what modules within your team namespace using straightforward team management capabilities.</p>
+      </div>
+      <div>
+        <img src="./images/familiar-features.svg" alt="familiar-features" />
+        <h3>Familiar Features</h3>
+          <p>npm Orgs has 100% parity with all the public npm registry features your developers already use.</p>
+      </div>
+      <div>
+        <img src="./images/npm-audit.svg" alt="npm-audit">
+        <h3>npm Audit</h3>
+          <p>Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer.</p>
+      </div>
+    </div>  
+    <a href="#" class="black-button">Create an Org</a>
+  </section>
+</body>
+</html>
