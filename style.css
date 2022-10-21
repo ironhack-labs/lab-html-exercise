@@ -33,27 +33,38 @@ header > div {
     margin-right: 1rem;
   }
 
-  .firstmenulist {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-  }
-
   .topnav {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    align-items: center;
   }
 
-  .secondbar .form1 > input {
-    display: flex;
-    align-content: center;
-    color: rgba (0,0,0,0.5)
+  form input {
+    border: none;
+    width: 400px;
+    margin-left: 8px;
+    background: none;
   }
 
-  .secondbar .form1 > button {
+  .search-button {
+    label-color: rgba(0,0,0,0.05);
+    input-color: rgba (0,0,0,0.05);
     background-color: #fb3e44;
     color: white;
+    padding: 20px;
+  }
+
+  div > a{
+    text-decoration: none;
+    color: black;
+  }
+
+.joinbutton {
+    border: 1px solid grey;
+    align-content: center;
+    padding: 5px 10px;
+    background-color: white;
+    color: black;
   }
 
   #firstsection {
@@ -65,10 +76,41 @@ header > div {
     background-color: rgba(232, 217, 217, 3);
   }
 
+  h1 {
+    font-size: 80px;
+    text-align: center;
+    padding: 50px;
+  }
+
+  .intro {
+    text-align: center;
+    justify-content: center;
+    font-size: 22px;
+    width: 800px;
+    margin-bottom: 75px;
+  }
+
  .seeplansbutton {
     background-color:#fb3b49;
     color: white;
-    box-shadow: 8px 8px 0 rgba(251,59,73,2)
+    box-shadow: 8px 8px 0 rgba(251,59,73,2);
+    font-weight: bold;
+    font-size: 22px;
+    padding: 16px 32px;
+  }
+
+  .joinbutton {
+    color: black;
+    font-size: 22px;
+    font-weight: bold;
+    margin-left: 55px;
+    background-color: white;
+    padding: 16px 32px;
+  }
+
+  .seeplansbutton-joinbutton {
+    display: flex;
+    justify-content: center;
   }
 
   #secondsection {
@@ -76,39 +118,66 @@ header > div {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: 100px, 0, 100px, 0;
   }
 
   h2 {
     background-color: rgba(255,204,53,4);
-    transform: skew(9deg,0deg)
+    transform: skew(9deg,0deg);
+    font-weight: bold;
     font-style: italic;
     margin: 20px;
+    display: flex;
+    text-align: center;
   }
 
-  #thirdsection.advantages {
+  .howitworks {
+    width: 550px;
+    margin-bottom: 60px;
+  }
+
+#thirdsection {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    margin: 150px, 150px, 0, 150px;
+}
+
+  .advantages {
     display: flex;
     flex-direction: row;
     justify-content: center;
   }
 
   #thirdsection div {
-    display: flex;
-    justify-content: center;
+    padding: 15px;
   }
+
+#thirdsection p{
+    display: flex;
+    word-wrap: break-word;
+}
 
   h3 {
     color: #ed1c24;
   }
 
-  #thirdsection button {
+  .button-org {
     background-color: black;
     box-shadow: 8px 8px 0 rgba(128,83,35,.2);
     color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 16px 32px;
   }
 
-  /////// Useful information:
+  #thirdsection img {
+    width: 20px;
+    height: 20px;
+  }
 
-  form label color: rgba(0,0,0,.05)
-  form input color: rgba(0,0,0,.05)
-  form button background color: #fb3e44
-  form button letters color: white
+  #button-position {
+    padding: 0px 100px;
+    justify-content: center;
+    margin: 100px, 0, 40px, 0;
+  }
