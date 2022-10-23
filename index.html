@@ -8,7 +8,7 @@
     <div class="firstbar">
         <div>
             <img class="blackHeart" src="https://raw.githubusercontent.com/loquearde/lab-html-exercise/master/images/black-heart.png" alt="black heart" />
-            <span> Nifty Penguin Magic </span>
+            <span class="nav-title"> Nifty Penguin Magic </span>
         </div>
         <nav>
             <ul>
@@ -21,17 +21,20 @@
             </ul>
         </nav>
     </div>
-
     <div id="secondbar">
+        <div>
         <img src="https://raw.githubusercontent.com/loquearde/lab-html-exercise/master/images/npm-logo.png" alt="npm logo" width="70" height="20" />
+       </div>
         <form action="/action_page.php">
-            <img src="https://raw.githubusercontent.com/loquearde/lab-html-exercise/master/images/magnifying-glass.png" alt="magnifying glass" width="18" height="18">
-            <input type="text" placeholder="Search packages" name="search">
+            <div class="search-input">
+                <img src="https://raw.githubusercontent.com/loquearde/lab-html-exercise/master/images/magnifying-glass.png" alt="magnifying glass" width="18" height="18">
+                <input type="text" placeholder="Search packages" name="search">
+            </div>
             <button class="search-button" type="search">Search</button>
-          </form>
-          <div class="topnav">
-          <button class="joinbutton" href="#join">Join</button>
-          <button class="loginbutton" href="#login">Log In</button>
+        </form>
+            <div class="topnav">
+                <button class="join-button" href="#join">Join</button>
+                <button class="login-button" href="#login">Log In</button>
         </div>
     </div>
 </header>
@@ -45,7 +48,7 @@
     </article>
     <div>
         <button class="seeplansbutton" href="#seeplans">See plans</button>
-        <button class= "joinbutton" href="#join">Join for free</button>
+        <button class= "join-for-free-button" href="#join">Join for free</button>
     </div>
 </section>
 <br>
@@ -87,9 +90,9 @@
                 auditing features built into the npm client, a zero-friction way to make open source software safer.</p>
         </div>
     </section>
-
-        <div id="button-position"></div>
-        <button type="button-org">Create an Org</button>
+        <div id="button-position">
+            <button class="button-org">Create an Org</button>
+        </div>
     </div>
     </body>
 </head>
