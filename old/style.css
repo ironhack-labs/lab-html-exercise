@@ -41,6 +41,11 @@ header > div {
     box-shadow: 0px 7px 5px rgba(0,0,0,.07) ;
   }
 
+  #second-bar form {
+   padding-top: 5px;
+   padding-bottom: 5px;
+  }
+
   #second-bar img {
     width: 50px;
   }
@@ -61,42 +66,38 @@ header > div {
     border: 0px;
   }
 
-  #search-pack {
+  .search-pack {
     display: flex;
     background-color: rgba(0,0,0,.05);
     padding: 0 0 0 5px;
     width: 100em;
+    height: 2em;
     margin: 5px;
     justify-content: space-between;
-    align-items: center;
   }
 
-  #search-objects {
-    display: flex;
-    align-items: center;
+  .search-pack img {
+    /* Selector works fine but transformations doesn't apply */
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      align-items: stretch;
+      align-content: stretch;
   }
 
-  #search-objects img {
-  width: 50%;
-  height: 25px;
-  object-fit: contain;
-  ;
-  
-  }
-
-  #search-pack input {
+  .search-pack input {
     background-color: rgba(0,0,0,0);
     border: 0px;
     font-family: 'consolas';
-    margin: 10px;
   }  
 
-  #search-pack button {
+    .search-pack button {
     display: flex;
     background-color: #fb3e44;
     color: white;
     border: 0px;
-    padding: 8px 15px;
+    padding: 5px 15px;
     font-family: 'Poppins';
   }
 
