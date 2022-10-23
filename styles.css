@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@400;500&display=swap');
 
 * {
     margin: 0px; 
@@ -6,7 +7,7 @@
 }
 
 body {
-    height: fit-content; 
+    height: 100%; 
     width: 100%;
     font-family: "Poppins", sans-serif;
 }
@@ -56,4 +57,189 @@ li a {
 li a:hover {
     cursor: pointer;
     color: #dcdcdc; 
+}
+
+header .header-bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 20px; 
+    padding-block: 5px; 
+    border-bottom: 1px solid #ececec;
+    box-shadow: 0px 4px 2px -2px #ececec;
+    font-size: 14px;
+    font-weight: 500;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+
+.header-bottom .npm-logo {
+    height: auto;
+    width: 60px;
+}
+
+.header-bottom .search-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+}
+
+.search-container .search-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: calc(100% - 4px);
+    width: 100%;
+    margin-left: 20px; 
+    padding-block: 2px;
+    background-color: #ececec;
+}
+
+.search-box img{
+    height: auto;
+    width: 20px;
+    margin-left: 10px;
+}
+
+.search-box input{
+    height: 100%; 
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: #ececec;
+    font-size: 14px;
+    font-weight: 500;
+    padding-left: 10px;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Noto Sans Mono', monospace;
+}
+
+.search-box input:focus{
+    border: none; 
+    outline: none;
+}
+
+.search-box input::placeholder{
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Noto Sans Mono', monospace;
+}
+
+.search-box:focus-within{
+    box-shadow: inset 0px 0px 0px 1px #000;
+}
+
+
+.search-container button {
+    all: unset; 
+    height: 100%;
+    width: fit-content;
+    padding-inline: 10px; 
+    color: #fff; 
+    background-color: #fb3e44;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+}
+
+.header-bottom a {
+    display: flex;
+    text-decoration: none;
+    color: #898989; 
+    font-weight: 600;
+    transition: all 150ms ease-in-out;
+    width: 80px;
+    align-items: center;
+    text-align: center;
+    height: 30px;
+    padding-inline: 10px;
+    margin-left: 20px;
+    white-space: nowrap;
+}
+
+.header-bottom a:hover {
+    cursor: pointer;
+    color: #dcdcdc; 
+}
+
+.header-bottom a button {
+    all: unset;
+    height: 100%;
+    width: 100%;
+    box-shadow: inset 0px 0px 0px 1px #898989;
+}
+
+.first-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 570px;
+    width: 100%;
+    background-color: rgba(232,217,217,.3); 
+}
+
+.first-section h1 {
+    font-size: 70px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.first-section p {
+    width: 40%;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+.first-section div {
+    display: flex;
+    flex-direction: row;
+}
+
+.first-section div button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    border: 0px;
+    outline: 0px;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+}
+
+.first-section div .plans-button {
+    color: #fff; 
+    margin-right: 20px;
+    background-color: #FB3B49;
+    box-shadow: 8px 8px 0px rgba(251,59,73,0.2);
+}
+
+.first-section div .plans-button:hover {
+    box-shadow: 0px 0px 0px; 
+    background-color: #CC0413;
+}
+
+.first-section div .join-button {
+    color: #000; 
+    margin-left: 20px;
+    background-color: #fff;
+}
+
+.first-section div .join-button:hover {
+    background-color: #e9e9e9;
 }
