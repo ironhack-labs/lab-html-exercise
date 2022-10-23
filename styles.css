@@ -4,12 +4,12 @@
 * {
     margin: 0px; 
     padding: 0px; 
+    font-family: "Poppins", sans-serif;
 }
 
 body {
     height: 100%; 
     width: 100%;
-    font-family: "Poppins", sans-serif;
 }
 
 header .header-top{
@@ -253,6 +253,8 @@ header .header-bottom{
     height: 570px;
     width: 100%;
     background-color: #fff;
+    margin-top: 20px; 
+    margin-bottom: 50px;
 }
 
 .second-section img {
@@ -275,16 +277,67 @@ header .header-bottom{
     width: 50%;
     font-size: 16px;
     font-weight: 400;
-    margin-bottom: 40px;
+}
+
+.third-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 50px;
 }
 
 .third-section .row-container {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-around;
+    align-items: flex-start;
     text-align: center;
-    height: 570px;
+    height: fit-content;
+    width: calc(100% - 140px);
+    margin-inline: 70px; 
+    margin-bottom: 100px; 
+    background-color: #fff; 
+}
+.third-section .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+    width: 18%;
+    height: 100%;
+    word-break: keep-all;
+}
+
+.item .icon {
+    height: auto;
+    width: 40px;
+    margin-bottom: 20px;
+}
+
+.item h3 {
     width: 100%;
-    background-color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    color: #ED1C24; 
+    margin-bottom: 20px;
+}
+
+
+.third-section button {
+    border: none; 
+    outline: none; 
+    background-color: #000;
+    box-shadow: 8px 8px 0 rgba(128, 83, 35, 0.2);
+    color: #fff;
+    height: 55px;
+    width: 400px;
+    font-size: 19px;
+    font-weight: 600;
+    transition: all 200ms ease-in-out;
+}
+
+.third-section button:hover {
+    box-shadow: 0px 0px 0px;
 }
