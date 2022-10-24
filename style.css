@@ -1,15 +1,25 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
-body{
-    font-family: poppins;
+/* CSS Reset */
+*{		
+	margin : 0;
+	padding : 0;
 }
 
+body{
+    font-family: "poppins";
+    font-size: 10px;
+}
+
+
+/* HEADER */
 header > div {
     padding: 0 25px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid lightgray;
+    margin: 0 20px;
   }
   
   nav {
@@ -25,10 +35,220 @@ header > div {
   
   nav a {
     text-decoration: none;
-    /* color: black; */
+    color: black;
   }
   
   .blackHeart {
     width: 20px;
-    margin-right: 1rem;
+    margin-right: 1em;
   }
+.inferior{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+	align-content: stretch;
+  margin: 0 20px;
+}
+
+  .logo{
+    width: 40px;
+    margin-right: 1em;
+    padding: 10px 0;
+  }
+  
+.izq{
+  
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.der{
+  display: flex;
+  justify-content: flex-end;}
+
+.der .Join{
+  background-color: #fff;
+  padding: 5px 10px;
+  margin-right: 10px ;
+}
+.der .Log{
+  background-color: #fff;
+  border: none;
+  padding: 5px 10px;
+  margin-right: 10px ;
+}
+
+  form {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: space-between;
+    color: rgba(0,0,0.05);
+    width: auto;
+  }
+  
+  form .img{
+    
+    background-image: url(./images/magnifying-glass.png);
+    background-size: 17px 17px;
+    background-repeat: no-repeat;
+    background-position: 5px center;
+    padding: 5px 25px;
+    text-align: left;
+    width: 1000px;
+
+  }
+  
+  form input{
+    color: rgba(0,0,0.05);
+    /* width: 2200px; */
+  }
+
+  form button{
+    background-color: #fb3e44;
+    color: white;
+    padding: 5px 20px;
+    
+  }
+
+  /* SECCION 1 */
+
+  #s1 {
+    display:flex;
+    flex-wrap: nowrap;
+    justify-content: center; 
+    flex-direction: column; /*convierte en columna*/
+    align-items: center;  /*Alinea al centro de pagina*/
+    background-color: rgba(232,217,217,.3);
+    height: 600px;
+    margin: 0 20px;
+    padding: 0 100px;
+  }
+  #s1 h1{
+    width: 1200px;
+    text-align: center;
+    font-size: 11em;
+    /* margin: 50px; */
+    padding-bottom: 20px;
+  }
+  #s1 article{
+    width: 800px;
+    font-size: 3em;
+    padding: 20px 0;
+  }
+  #s1 .btn-plan{
+    color: white;
+    background-color: #FB3B49;
+    border-color: #FB3B49;
+    padding: 30px 60px;
+    margin: 20px 30px;
+    /* margin: 30px; */
+    /* border-radius: 8px; */
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+    font-size: 2em;
+    font-weight: 800;
+    width: 300px;
+  }
+
+  #s1 .btn-join{
+
+    background-color: white;
+    border-color: white;
+    padding: 30px 60px;
+    /* border-radius: 8px; */
+    margin: 20px 30px;
+    font-size: 2em;
+    font-weight: 800;
+    width: 300px;
+  }
+
+  /* SECCION 2 */
+
+  #s2 {
+    
+    display:flex;
+    justify-content: center; 
+    flex-direction: column; /*convierte en columna*/
+    align-items: center;  /*Alinea al centro de pagina*/
+    /* background-color: rgba(232,217,217,.3); */
+    margin: 50px auto;
+    height: 600px;
+    width: 1200px;
+    
+  }
+  #s2 img{
+    
+    width: 200px;
+    height: 200px;
+    padding: 30px;
+    margin-top: 30px;
+  }
+
+  #s2 h2{
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+    justify-content: center; 
+    font-size: 4.5em;
+    margin: 30px;
+  }
+
+  article {
+    text-align: center;
+    font-size: 1.5em;
+    padding: 40px;
+  }
+
+  #s3 > div {
+    display: flex;
+    
+    justify-content:space-around;
+    /* padding-left: 30px; */
+    margin: 20px;
+    align-items: center;
+    
+  }
+  .n1 .n2 .n3 .n4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 1px solid lightgray;
+    flex-direction: column;
+    width: auto;
+    text-align: left;
+     
+    }
+    #s3 img
+    {
+      width: 50px;
+      height: 50px;
+    }
+  #s3 h3{
+    color: #ED1C24;
+    font-size: 2.5em;
+  }
+  
+  #s3 p{
+    width: 200px;  
+    font-size: 1.5em;
+  }
+  .end{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    
+    text-decoration-line: none ;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    background-color: black;
+    width: 600px;
+    margin: 50px auto;
+    
+    color: white;
+    font-size: 2.5em;
+    padding: 30px;
+  }
+  
+  
