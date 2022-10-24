@@ -1,40 +1,240 @@
-html, body {
-    margin: 0;
-    padding: 0;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap');
 
 
-/* imgs */
-
-.section-upper-header img {
-    width: 25px;
-    
+html,
+body {
+  margin: 0;
+  padding: 0;
 }
 
 /* layout */
 
+/* top part of header */
+
 .section-upper-header {
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
 }
 
 .upper-header-left {
-    display: flex;
-    /* border: 1px solid red; */
-   align-items: center;
-
-  
-    
+  display: flex;
+  align-items: center;
 }
 
 .ul-upper-header-right {
-    display: flex;
-    justify-content: flex-end;
-    /* border: 1px solid red; */
-   
+  display: flex;
+  justify-content: flex-end;
 }
-.ul-upper-header-right li{
-    padding: 0 10px;
-    list-style: none;
+.ul-upper-header-right li {
+  padding: 0 10px;
+  list-style: none;
+}
+
+/* lower part of header */
+
+.section-lower-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  margin-bottom: 0;
+}
+
+.search-input-text {
+  background: rgba(0, 0, 0, 0.05);
+  width: 91%;
+  padding: 0.5rem 0;
+  margin: 0;
+  border: none;
+}
+
+.search-bar-img {
+  background-color: rgba(0, 0, 0, 0.05);
+  margin: 0;
+  padding: 0, 5rem 0;
+  display: flex;
+}
+
+.searchbar {
+  display: flex;
+  align-items: center;
+  width: 88%;
+  margin: 0;
+}
+
+/* section two */
+
+.section-two {
+  background-color: rgba(232, 217, 217, 0.3);
+  height: 600px;
+  margin: 0;
+  padding: 0;
+}
+
+/* section three */
+
+.section-three {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5em;
+}
+
+
+
+/* sec four */
+
+.div-advantages {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.advantage {
+  width: 20%;
+}
+
+/* typo */
+
+body {
+  font-family: "Poppins";
+}
+
+.section-two h1 {
+  font-size: 5rem;
+  font-weight: black;
+  text-align: center;
+  margin: 0;
+  padding: 3rem 0 2rem 0;
+}
+
+.section-two p {
+  width: 30%;
+  margin: 0 auto;
+}
+
+.section-three h2 {
+  background-color: rgb(254, 244, 197);
+  padding: 0.1rem 3rem;
+  clip-path: polygon(0 0, 98% 0, 100% 100%, 3% 100%);
+  margin: 0;
+}
+
+.section-three p {
+  width: 40%;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.advantage p {
+  font-size: 0.9rem;
+}
+
+.advantage h3 {
+  color: #ed1c24;
+  font-size: 1rem;
+  font-weight: 1000;
+}
+
+.section-four {
+  padding-bottom: 5rem;
+  
+}
+/* buttons + links  */
+
+.section-upper-header a {
+  text-decoration: none;
+  color: black;
+}
+
+.see-plans-btn {
+  background-color: #fb3b49;
+  font-weight: 700;
+  text-decoration: none;
+  color: white;
+  padding: 1rem 2rem;
+  box-shadow: 8px 8px 0 rgba(251, 59, 73, 0.2);
+}
+
+.join-for-free-btn {
+  background-color: white;
+  text-decoration: none;
+  color: black;
+  padding: 1rem 2rem;
+  margin-left: 2rem;
+  font-weight: 700;
+}
+
+.buttons-sec-two {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 3rem 0;
+}
+
+.search-btn {
+  width: 7%;
+  min-width: 4rem;
+  background-color: #fb3e44;
+  padding: 0.5rem 0;
+  margin: 0;
+  border: none;
+  color: white;
+}
+
+.join-btn {
+  margin: 0 1rem;
+  padding: 0 1rem;
+  border: 1px solid grey;
+}
+
+.login-btn {
+  padding: 1 1.5rem 0 0;
+  min-width: 3rem;
+  margin: 0;
+}
+
+.section-lower-header a {
+  text-decoration: none;
+  color: grey;
+}
+
+.create-org {
+  display: block;
+  width: 17%;
+  text-align: center;
+  background-color: black;
+  box-shadow: 8px 8px 0 rgba(0,0,0, 0.1);
+  margin: 3rem auto;
+  padding: 1rem 5rem;
+  text-decoration: none;
+  color: white;
+}
+
+/* imgs */
+
+.section-upper-header img {
+  width: 25px;
+  padding: 0 1rem;
+}
+
+.section-lower-header img {
+  width: 50px;
+  margin: 0 1rem 0 0;
+}
+
+.section-three img {
+  width: 200px;
+  padding: 4rem;
+}
+
+.div-advantages img {
+  width: 25px;
+}
+
+.search-bar-img img {
+  width: 20px;
+  padding: 0.375rem 0.5rem;
+  margin: auto;
 }
