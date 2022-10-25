@@ -7,14 +7,14 @@
         <img class="blackHeart" src="/home/berta/lab-html-exercise/images/black-heart.png" alt="black heart">
         <span> Nifty Penguin Magic </span>
       </div>
-      <nav class="nav-bar">
-        <ul class="nav-bar-ul">
-          <li><a class="nav-bar-item" #href="npmEnterprise"> npm Enterprise </a></li>
-          <li><a class="nav-bar-item" #href="products"> Products </a></li>
-          <li><a class="nav-bar-item" #href="solutions"> Solutions </a></li>
-          <li><a class="nav-bar-item" #href="resources"> Resources </a></li>
-          <li><a class="nav-bar-item" #href="docs"> Docs </a></li>
-          <li><a class="nav-bar-item" #href="support"> Support </a></li>
+      <nav>
+        <ul>
+          <li><a href="#"> npm Enterprise </a></li>
+          <li><a href="#"> Products </a></li>
+          <li><a href="#"> Solutions </a></li>
+          <li><a href="#"> Resources </a></li>
+          <li><a href="#"> Docs </a></li>
+          <li><a href="#"> Support </a></li>
         </ul>
       </nav>
     </div>
@@ -37,27 +37,31 @@
     </div>
 </header>
 
-  <section1>
+<!-- section 1 -->
+  <section class="pinkBackground" id="introduction">
     <heading><h1>Build amaizing things</h1></heading>
-    <article><p>Essential JavaScript development tools that help you go to market faster and build powerful applications using</p></article>
-    <div>
-      <img class="redBottom">
-      <span>See plans</span>
-    </div>
-    <div>
-      <img class="whiteBottom">
-      <span>Join for free</span>
-    </div>
-  </section1>
-  <section2>
-    <div>
+    <p>Essential JavaScript development tools that help you go to market faster and build powerful applications using</p>
+    <article>
+      <a class="redBottom" href="#">See plans</a>
+    </article>
+    <article>
+      <a class="whiteBottom" href="#">Join for free</a>
+    </article>
+  </section>
+
+<!-- section 2-->
+  <section class="container" id="structure">
+   <article class="service-box">
       <img src="./images/triangle-hexagon.svg" alt="triangleHexagon">
+    </article>
     </div>
     <heading>Bring the best of open source to your company</heading>
     <article><p>npm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it.
       Create an Org and get more out of the tools your team already knows and loves.</p></article>
-  </section2>
-  <section3>
+  </section>
+
+<!--section 3-->
+  <section class="container" id="createanorg">
     <div>
       <img src="./images/zero-configuration.svg" alt="zeroConfiguration">
       <heading>Zero configuration</heading>
@@ -80,4 +84,4 @@
     </div>
     <img class="blackBottom">
     <heading>Creat an Org</heading>
-  </section3>
+  </section>
