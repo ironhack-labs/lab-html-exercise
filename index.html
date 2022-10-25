@@ -4,12 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Ironhack exercise</title>
   </head>
   <body>
     <header>
       <div>
-        <div><img src="./images/black-heart.png" />Nifty Penguin Magic</div>
+        <div>
+          <img class="blackHeart" src="./images/black-heart.png" />Nifty Penguin
+          Magic
+        </div>
         <nav>
           <ul>
             <li><a href="#">npm Enterprise</a></li>
@@ -22,12 +26,20 @@
         </nav>
       </div>
       <div>
-        <img src="./images/npm-logo.png" />
-        <img src="./images/magnifying-glass.png" />
-        <input type="text" id="search" />
-        <button>Search</button>
-        <a href="#">Join</a>
-        <a href="#">Log In</a>
+        <img class="npm" src="./images/npm-logo.png" />
+
+        <form class="form" action="" method="get">
+          <div class="label-and-icon">
+            <img class="magnifyingGlass" src="./images/magnifying-glass.png" />
+            <label class="searchLabel" for="search">Search packages</label>
+          </div>
+          <input class="searchInput" type="text" id="search" />
+          <button class="searchBtn">Search</button>
+        </form>
+        <div class="loginDiv">
+          <a class="users" href="#">Join</a>
+          <a class="login" href="#">Log In</a>
+        </div>
       </div>
     </header>
     <main>
