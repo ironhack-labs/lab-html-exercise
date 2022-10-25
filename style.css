@@ -3,6 +3,8 @@
 body {
   font-family: 'Poppins';
 }
+
+/*header styles*/
 header > div {
     padding: 0 25px;
     display: flex;
@@ -60,10 +62,12 @@ header > div {
     height: 100%;
     border: none;
     padding: 10px;
+    cursor: pointer;
   }
 
   .loginDiv{
     display: flex;
+    cursor: pointer;
 
   }
   .users{
@@ -72,6 +76,7 @@ header > div {
     padding: 3px 10px;
     height: 100%;
     margin: 0;
+    cursor: pointer;
   }
   .login{
     
@@ -80,3 +85,54 @@ header > div {
     height: 100%;
     margin: 0;
   }
+
+
+  /*section-1 styles*/
+
+  .build{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    background-color: rgba(232,217,217,.3)
+  }
+  .build__title{
+    font-size: 5em;
+  }
+
+  .build__article{
+    font-size: 1.5em;
+    text-align: center;
+    width: 40%;
+    margin: 0 400px;
+}
+.build__div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 120px;
+    width: 40%;
+    margin: 50px 400px;
+    
+}
+.build__div a{
+    text-decoration:none;
+    
+}
+.build__div--plans{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ color: white;
+ background-color: #FB3B49;
+ width: 200px;
+ height: 50px;
+ box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+font-size: 1.5rem;
+}
+
+.build__div--join{
+    color: black;
+    font-size: 1.5em;
+}
