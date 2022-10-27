@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+
+body {
+  font-family: 'Poppins';
+}
+
+header > div {
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+  }
+  
+  nav {
+    width: 600px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .blackHeart {
+    width: 20px;
+    margin-right: 1rem;
+  }
+
+/* Header: Search bar and buttoms */
+
+/*
+form label color: rgba(0,0,0,.05)
+form input color: rgba(0,0,0,.05)
+form button background color: #fb3e44
+form button letters color: white
+*/
+    .search {
+        border-style: none;
+        border-width: 0;
+        margin-right: auto;
+        margin-left: auto;
+        display: flex;
+        list-style: none;
+        display: flex;
+	    flex-direction: row;
+	    flex-wrap: wrap;
+	    justify-content: space-between; 
+    }
+
+  .npmLogo {
+    width: 60px;
+    margin-right: 10px;
+    margin-top: 10px;
+  }
+
+  .search-eng {
+    background-color: rgba(0, 0, 0, .05);
+    margin: 10px;
+    margin-top: 10px;
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .magnifying-glass {
+    width: 20px;
+    margin: 10px;
+  }
+
+  #search-bar {
+    background-color: transparent;
+    color: rgba(0, 0, 0, .05);
+    border: none;
+    width: 90%;
+    margin: 10px;
+  }
+
+  button {
+    background-color: #fb3e44;
+    color: white;
+    border: none;
+    width: 100px;
+  }
+
+  #join {
+    color: #5a5a5a;
+    text-decoration: none;
+    text-align: center;
+    border: 1px solid #5a5a5a;
+    border-radius: 0;
+    margin: 10px;
+    width: 60px;
+    
+  }
+
+  #login {
+    color: #5a5a5a;
+    text-decoration: none;
+    text-align: center;
+    margin: 10px;
+    width: 60px;
+  }
+
+/* section 1 */
+
+/*
+suggested height for this section: 600px
+background color: rgba(232,217,217,.3)
+"See plans" button background color: #FB3B49
+"See plans" button box shadow: 8px 8px 0 rgba(251,59,73,.2)
+*/
+
+    #section1 > div, article {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 0em 1em;
+    }
+
+    #section1 {
+        height: 600px;
+        background-color: rgba(232, 217, 217, .3);
+        margin: auto;
+    }
+
+    h1 {
+        font-size: 5em;
+    }
+
+    article p {
+        text-align: center;
+        width: 35%;
+    }
+
+    .seeplans-join {
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+        width: 30%;
+        padding: 5px;
+        margin-top: 20px;
+    }
+
+    #seeplans {
+        text-decoration: none;
+        background-color: #FB3B49;
+        box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+        color: white;
+        border: none;
+        width: 100%;
+        padding: 10px 7px;
+    }
+
+    #join-forfree {
+        text-decoration: none;
+        color: black;
+        width: 100%;
+        padding: 10px 7px;
+    }
+
+/* section 2 */
+
+/*
+heading background color: rgba(255,204,53,.4)
+*/
+    #section2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 0em 1em;
+        height: 600px;
+        margin: auto;
+    }
+
+    #section2 img {
+        width: 150px;
+    }
+
+    #section2 h2 {
+        text-align: center;
+        background-color: rgba(255, 204, 53, .4);
+        transform: skew(9deg,0deg);
+        width: 50%;
+        padding: 0 10px;
+    }
+
+    #section2 p {
+        text-align: center;
+        width: 50%;
+    }
+
+/* section 3 */
+
+/* 
+color of the letters in each heading in this section: #ED1C24
+"Create an Org" box shadow: 8px 8px 0 rgba(128,83,35,.2)
+"Create an Org" letters color: white
+*/
+    
+    #section3 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+        margin: auto;
+        padding: 10px 20px;
+    }
+
+    .section3 {
+        padding: 0 15px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #section3 img {
+        width: 35px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .section3 h3 {
+        color: #ED1C24;
+        align-items: center;
+    }
+
+    .section3 p {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: left;
+        margin-top: 0;
+    }
+
+    #create-org {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 5em 1em;
+
+    }
+    
+    .create-org {
+            text-align: center;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 30%;
+            padding: 5px;
+            margin-top: 20px;
+        }
+
+    #create-org a {
+        text-decoration: none;
+        background-color: black;
+        box-shadow: 8px 8px 0 rgba(128, 83, 35, .2);
+        color: white;
+        border: none;
+        width: 100%;
+        padding: 10px 7px;
+    }
+
