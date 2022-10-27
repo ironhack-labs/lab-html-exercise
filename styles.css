@@ -2,206 +2,223 @@
 
 body {
   font-family: 'Poppins';
-  margin: 20px
 }
 
-header > div {
+#top-header{
+    display:flex;
+    justify-content: space-between;
     padding: 0 25px;
+    border-bottom: 1px solid lightgrey;
+}
+
+.top-header-left{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid lightgray;
-    font-weight: bold;
-    font-size: 15px;
-  }
-  
-  nav {
-    width: 600px;
-  }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
     align-items: center;
   }
-  
-  nav a {
-    text-decoration: none;
-    color: black;
-  }
-  
-  .blackHeart {
+
+#top-header img{
     width: 20px;
     margin-right: 1rem;
-  }
-
-
-  /*-------------*/
-  .logo-img{
-    width: 70px;
 }
 
-  form {
-    display:flex;
-    flex-direction: row;
-    align-items:flex-end;
-    justify-content: flex-end;
-    padding: 10px;
+nav{
+    width: 600px
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+}
+
+#bottom-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    padding: 30px 25px;
+  }
+.search{
+    flex: 1 1 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+form {
+    background: rgba(0,0,0,.05);
+    /*width:600px;*/
+    margin: auto;
+    height: 40px;
+    display: flex;
+    align-items:center;
+    position: relative;
     box-sizing: border-box;
-  }
+    }
 
-  .search-bar{
-    padding: 20px
-}
-
-.search-img{
-    width:20px;
-    background-color:rgba(0,0,0,.05);
-    padding: 10px;
-}
-
-.search-bar-space{
-    background-color: rgba(0,0,0,.05);
-    color: rgba(0,0,0,.05);
+form input {
+    flex:1;
+    border: none;
+    outline:none;
     font-family: monospace;
-    font-size: 12px;
-    border: none;
-    height: 40px;
-    width:700px;
-}
-
-.search-button{
-    color: white;
-    background-color: #fb3e44;
-    border: none;
-    letter-spacing: 0.4px;
-    height: 40px;
-    width: 100px;
     letter-spacing: 1px;
+    background-color: rgba(0,0,0,.05);
+    height: 40px
 }
 
+form button {
+    background: #fb3e44;
+    color: white;
+    padding: 12px 40px;
+    border: none;
+    outline: none;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
 
-.header-bottom a {
+form img{
+    align-self: center;
+    padding: 13px;
+    width: 15px;
+    height: 15px;
+    background-color: rgba(0,0,0,.05);;
+}
+
+.npm-logo{
+    width: 70px;       
+}
+
+.buttons{
+    display:flex;
+   }
+
+.join-button{
+    background: none;
+    letter-spacing: 1.5px;
+    padding: 10 30px;
+    border-color:rgb(179, 174, 174);
+    border-width: 2px;
+    text-decoration: none;
+}
+
+.login-button{
+    letter-spacing: 1.5px;
+    padding: 10px 20px;
+    background: none;
+    border: none;
+}
+
+.buttons a{
+    text-decoration: none;
     color: black;
-    text-decoration: none;  
-    font-size: 12px;  
-    padding: 10px;
 }
 
-.joinbutton {
-    border: 1px solid black;
-   
-    margin: 10px;
-    color: black;
-    text-decoration: none; 
-}
-/*-------------*/
+/*****first section*********/
 
-
-#firstsection {
+#first-section{
+    height: 600px;
+    background-color:rgba(232,217,217,.3) ;
     display: flex;
     flex-direction: column;
-    align-items:center;
     justify-content: center;
-    height: 600px;
-    background-color: rgba(232,217,217,.3);
-}
+    align-content: center;
+    align-items:center;
+    text-align: center;
+    }
 
 h1{
-    font-size: 80px;
-    text-align: center;
-    font-weight:bolder;
-    margin-bottom: 20px;
+    font-size: 90px;
+    font-weight: bolder;
+    
 }
 
-#firstsection article {
-    font-size: 10px;
-    text-align: center;
-    line-height: 1.5;
-    font-size: 20px;
-    margin-bottom: 50px;
+#first-section article {
     width: 500px;
-}
+    padding-bottom: 80px;
+    font-size: 18px;
+ }
 
-#firstsection a{
-    margin: 50px
-}
+.see-plans-join{
+    width: 450px;
+    display: flex;
+    justify-content: space-between;
+    }
 
-.seeplansbutton {
-    background-color: #FB3B49;
-    color: white;
-    font-weight: bold;
+.see-plans-button{
     text-decoration: none;
-    letter-spacing: 1px;
+    font-weight: bold;
+    color: white;
+    background:  #FB3B49;
     padding: 15px 50px;
     box-shadow: 8px 8px 0 rgba(251,59,73,.2);
-
 }
 
-.joinforfreebutton{
-    color: black;
+.join-free-button{
     text-decoration: none;
-    padding: 15px 50px;
-    background-color: white;
-    letter-spacing: 1px;
     font-weight: bold;
+    color: black;
+    padding: 15px 50px;
+    background: white;
 }
 
-#secondsection{
-    text-align: center;
+#second-section{
+    height: 500px;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    margin: 100px
-}
+    align-content: center;
+    align-items:center;
+    text-align: center;
+    }
 
-.triangle-img{
-    width: 250px;
-    margin-bottom: 50px;
+#second-section img{
+     width: 200px
+ }
+
+#second-section article {
+    width: 700px;
+    display: flex;
+    flex: wrap;
 }
 
 h2{
-    text-align: center;
-    font-weight: bold;
-    font-size:30px;
-    background-color:rgba(255,204,53,.4) ;
+    font-size: 30px;
+    background-color: rgba(255,204,53,.4);
     transform: skew(9deg,0deg);
     font-style: italic;
-    padding-right: 30px;
-    padding-left: 30px;
-    margin-bottom: 30px;
+    padding: 0 50px
 }
 
-#secondsection article {
-    width: 700px;
-    margin-bottom: 60px;
+#third-section {
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: flex-start;
+	align-content: flex-start;
+    margin: 60px auto 80px auto;
+    
+}
+#third-section div{
+    width: 300px
+}
+ #third-section img{
+    width: 40px;
 }
 
-#thirdsection {
-    display:flex;
-    flex-direction:row;
-    align-items:flex-start;
-    justify-content: space-between;
-    text-align: left;
-}
-
-#thirdsection img{
-    width: 40px
-}
-
-#thirdsection div{
-    padding: 20px;
-}
-
-#thirdsection h3 {
+#third-section h3 {
     color: #ED1C24;
     font-weight: bold;
     font-size: 15px;
 }
 
-#thirdsection p{
+#third-section p{
     display:flex;
     word-wrap: break-word;
 }
@@ -219,5 +236,6 @@ h2{
 
 .buttonPosition{
     text-align: center;
-    margin: 20px auto 60px auto;
+    margin-bottom: 60px;
+  
 }
