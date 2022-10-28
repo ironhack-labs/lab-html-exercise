@@ -30,17 +30,22 @@
         </nav>
       </div>
 
-      <div>
+      <div id="bottom-header">
         <img class="logo" src="./images/npm-logo.png" alt="npm-logo" />
-
         <form action="/some-url" method="get">
-          <img class="lupa" src="./images/magnifying-glass.png" alt="lupita" />
-          <input type="text" placeholder="Search packages" />
-          <button type="submit">Search</button>
+          <div class="search-box">
+            <img
+              class="lupa"
+              src="./images/magnifying-glass.png"
+              alt="lupita"
+            />
+            <input type="text" placeholder="Search packages" name="search" />
+          </div>
+          <button type="submit" class="search-btn">Search</button>
         </form>
         <div>
-          <button>Join</button>
-          <button>Log In</button>
+          <button class="btn-join">Join</button>
+          <button class="btn-login">Log In</button>
         </div>
         <!-- add logo, search bar and buttons (or links and style them as buttons later) -->
       </div>

@@ -8,6 +8,10 @@ header > div {
   border-bottom: 1px solid lightgray;
 }
 
+body {
+  font-family: "Poppins";
+}
+
 nav {
   width: 600px;
 }
@@ -31,17 +35,49 @@ nav a {
 
 .lupa {
   width: 20px;
-  margin-right: 1rem;
+  height: 20px;
 }
 
-form > input {
-  color: rgba(0, 0, 0, 0.05);
+form {
+  display: flex;
+  flex: 1;
+  padding: 0.8rem;
+}
+form > .search-box {
+  display: flex;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 1em;
+  flex: 1;
 }
 .logo {
-  width: 80px;
-  margin-right: 1rem;
+  width: 70px;
+  margin-right: 2rem;
 }
 
-body {
-  font-family: "Poppins";
+.search-box > input {
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 0 1rem;
+}
+
+.search-btn {
+  color: white;
+  background-color: #fb3e44;
+  border: none;
+  padding: 0 2rem;
+}
+
+.btn-join {
+  text-decoration: none;
+  padding: 0.8rem 1.5rem;
+  border: 1px solid #ccc;
+  color: black;
+}
+
+.btn-login {
+  text-decoration: none;
+  padding: 12px 28px;
+  color: black;
 }
