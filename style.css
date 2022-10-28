@@ -43,7 +43,7 @@ form {
   flex: 1;
   padding: 0.8rem;
 }
-form > .search-box {
+.search-box {
   display: flex;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.05);
@@ -59,7 +59,7 @@ form > .search-box {
   background: transparent;
   border: none;
   outline: none;
-  padding: 0 1rem;
+  padding: 3px;
 }
 
 .search-btn {
@@ -68,16 +68,26 @@ form > .search-box {
   border: none;
   padding: 0 2rem;
 }
+.btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  min-width: 190px;
+  max-height: 2.5rem;
+  gap: 1rem;
+}
 
 .btn-join {
-  text-decoration: none;
   padding: 0.8rem 1.5rem;
   border: 1px solid #ccc;
-  color: black;
 }
 
 .btn-login {
-  text-decoration: none;
   padding: 12px 28px;
+}
+.btn-join,
+.btn-login {
   color: black;
+  background-color: white;
+  text-decoration: none;
 }
