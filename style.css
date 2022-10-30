@@ -1,33 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
-/* tricks for the beginning
-div {
-  border: red 1px solid;
-}
-nav {
-  border: orange 1px solid;
-}
-section {
-  border: green 1px solid;
-}
-ul {
-  border: purple 1px solid;
-}
-h1, h2, h3 {
-  border: brown 1px solid;
-}
-article {
-  border: yellow 1px solid;
-}
-header {
-  border: blue 1px solid;
-}
-img {
-  border: gray 1px solid;
-}
-*/
-
-
 
 body {
   font-family: 'Poppins';
@@ -48,6 +20,15 @@ h3 {
   font-size: 14px;
 }
 
+a {
+  text-decoration: none;
+}
+
+/*header*/
+header {
+ box-shadow: 0px 3px 3px lightgray;
+ font-size: 12px;
+}
 
 header > div {
   padding: 0 25px ;
@@ -61,16 +42,11 @@ header span {
   font-weight: bold;
 }
 
-header {
- box-shadow: 0px 3px 3px lightgray;
- font-size: 12px;
-}
-
-nav {
+header nav {
   width: 600px;
 }
   
-nav ul {
+header nav ul {
   list-style: none;
   display: flex;
   justify-content: space-between;
@@ -79,8 +55,7 @@ nav ul {
   font-weight: bold;
 }
   
-nav a {
-  text-decoration: none;
+header nav a {
   color: black;
 }
 
@@ -93,9 +68,16 @@ nav a {
   height: 40px;
 }
 
-.search-form-container label {
-  color: rgba(0,0,0,.05);
+.search-form-container img {
+  width: 15px;
+  height: 15px;
+  align-self: center;
+  margin-left: 10px;
 }
+
+/* .search-form-container label {
+  color: rgba(0,0,0,.05);
+} */
 
 .search-form-container input {
   color: rgba(0,0,0,.05);
@@ -113,20 +95,16 @@ nav a {
   font-family: 'Poppins';
 }
 
-.search-form-container img {
-  width: 15px;
-  height: 15px;
-  align-self: center;
-  margin-left: 10px;
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #section-1 {
-  display: flex;
-  justify-content: center;
   height: 600px;
   background-color: rgba(232,217,217,.3);
-  flex-direction: column;
-  align-items: center;
   font-weight: bold;
 }
 
@@ -142,10 +120,6 @@ nav a {
 
 #section-2 {
   height: 500px;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
   
 #section-2 h2 {
@@ -163,10 +137,6 @@ nav a {
  
 #section-3 {
   height: 400px;
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   margin-bottom: 20px;
 }
 
@@ -179,11 +149,11 @@ nav a {
   margin: 20px 40px;
 }
 
-.section-3-containers {
+.section-3-box {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 2rem;
+  margin: 32px;
   width: 220px;
   font-size: 14px;
 }
@@ -191,13 +161,11 @@ nav a {
 /* button styles*/
 .join-btn {
   border: darkgray 1px solid;
-  text-decoration: none;
   color: black;
   padding: 5px 15px;
 }
 
 .log-in-btn {
-  text-decoration: none;
   color: black;
   padding: 5px 20px;
 }
@@ -205,7 +173,6 @@ nav a {
 .see-plans-btn {
   background-color: #FB3B49;
   color: white;
-  text-decoration: none;
   padding: 12px 55px;
   margin: 0 20px;
   box-shadow: 8px 8px 0 rgba(251,59,73,.2);
@@ -215,7 +182,6 @@ nav a {
 .join-for-free-btn {
   background-color: white;
   color: black;
-  text-decoration: none;
   padding: 12px 55px;
   margin: 0 20px;
 }
@@ -223,15 +189,13 @@ nav a {
 .create-an-org-btn {
   background-color: black;
   color: white;  
-  text-decoration: none;
   justify-content: center;
-  margin: 20px;
   padding: 10px 100px;
+  margin: 20px;
   box-shadow: 8px 8px 0 rgba(128,83,35,.2);
 }
 
 /* img classes */
-  
 .blackHeart {
   width: 20px;
   margin-right: 1rem;
@@ -249,4 +213,3 @@ nav a {
 .icons {
   width: 50px;
 }
-  
