@@ -45,24 +45,33 @@ header > div {
 
 .nav-search {
     display: flex;
-    justify-content: space-around;
+    width: 100%;
     margin: auto 0;
 }
 
 form input{
-    width: 1600px;
+    width: 100%;
     color: rgba(0,0,0,.05);
-    background-color: #f2f2f2;
     border: 0;
-    margin: 8px;
+    margin: 8px 0px 8px 8px;
     padding: 8px;
+    background-color: #f2f2f2;
+    background-image: url(images/magnifying-glass.png);
+    background-repeat: no-repeat;
+    background-size: 30px;
+    text-indent: 20px;
+}
+
+.nav-buttons {
+    display: flex;
+    flex: space-around;
 }
 
 .search-button {
     border: 0;
     background-color: #ff0000;
     color: #ffffff;
-    margin: 8px;
+    margin: 8px 8px 8px 0;
     padding: 8px;
 }
 
