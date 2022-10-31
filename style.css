@@ -2,6 +2,9 @@
 
 body {
   font-family: "Poppins";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 header > div {
@@ -25,7 +28,7 @@ nav ul,
   align-items: center;
 }
 
-nav a {
+a {
   text-decoration: none;
   color: black;
 }
@@ -53,19 +56,86 @@ form > input {
 }
 
 .btn {
-  width: 5%;
+  width: 90px;
   height: 30px;
   border: 1px solid rgba(0, 0, 0, 0.295);
   background-color: white;
   color: #333;
 }
-.btn-search {
+.btn-red {
   background-color: #fb3e44;
   color: white;
   border: none;
 }
 
+.btn-red a {
+  color: white;
+}
+
+.btn-join {
+  box-shadow: 8px 8px 0 rgba(251, 59, 73, 0.2);
+  margin-left: 2rem;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 25px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 15px;
+  padding: 10px;
+}
+
+section {
+  padding: 14px;
+  width: 100%;
+}
+
+.section1 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  height: 600px;
+
+  background-color: rgba(232, 217, 217, 0.3);
+}
+.section1 p {
+  width: 50%;
+
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.section2,
+.section3 {
+  width: 30%;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 25px;
+}
 /* form label
 form input color: rgba(0,0,0,.05)
 form button background color: #fb3e44
-form button letters color: white */
+form button letters color: white 
+suggested height for this section: 600px
+background color: rgba(232,217,217,.3)
+"See plans" button background color: #FB3B49
+"See plans" button box shadow: 8px 8px 0 rgba(251,59,73,.2)
+*/
