@@ -44,6 +44,10 @@ a {
   margin-left: 1rem;
 }
 
+form {
+  margin-top: 0.8rem;
+}
+
 form > label {
   color: rgba(0, 0, 0, 0.05);
 }
@@ -68,13 +72,18 @@ form > input {
   border: none;
 }
 
-.btn-red a {
+.btn-create {
+  width: 380px;
+  height: 40px;
+  border: none;
+  background-color: black;
   color: white;
+  margin-top: 3rem;
 }
 
-.btn-join {
-  box-shadow: 8px 8px 0 rgba(251, 59, 73, 0.2);
-  margin-left: 2rem;
+.btn-red a,
+.btn-create a {
+  color: white;
 }
 
 section {
@@ -88,9 +97,9 @@ section {
 main {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  margin: 0 15px;
+  margin: 0 25px 0 25px;
   padding: 10px;
 }
 
@@ -146,17 +155,36 @@ h1 {
 }
 
 .section3 {
-  width: 30%;
-  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
-  margin: 0 25px;
+  margin-top: 2rem;
 }
-/* form label
-form input color: rgba(0,0,0,.05)
-form button background color: #fb3e44
-form button letters color: white 
-suggested height for this section: 600px
-background color: rgba(232,217,217,.3)
-"See plans" button background color: #FB3B49
-"See plans" button box shadow: 8px 8px 0 rgba(251,59,73,.2)
-*/
+.section3 div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: end;
+  align-items: center;
+  width: 33%;
+}
+
+.section3 div img {
+  width: 25px;
+  height: 25px;
+}
+
+.section3 div h3 {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #fb3e44;
+}
+
+.section3 div p {
+  flex-grow: 2;
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: #333;
+  text-align: center;
+}
