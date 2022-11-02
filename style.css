@@ -33,76 +33,118 @@ nav a{
   width: 20px;
   margin-right: 1rem;
 }
-
-.header > div > img {
-height: 20px;
+.nav-search {
+  box-shadow: rgba(0,0,0,.1);
+  display:flex;
+  flex-flow: row nowrap;
+  align-items: space-between;
+  justify-items: center;
+  align-content: center;
 }
 
-.header form button{
+.nav-search > div > img {
+margin: 20px;
+width: 5vh;
+}
+
+#form{
+  background-color: lightgrey;
+  width: 75vh;
+  display: flex;
+  flex-flow: row nowrap;
+}
+.header form input{
+  background-color: lightgrey;
+  border:none;
+  padding: 5px;
+  width:800px;
+  align-items: center;
+}
+#form img{
+  height: 25px;
+  float:left;
+  display: block;
+  background-color: lightgrey;
+  padding: 5px;
+}
+.nav-search a{
+  color: black;
+  text-decoration: none;
+}
+#form button{
   background-color: #fb3e44;
   border-color: #fb3e44;
   color: white;
+  padding: 5px 30px;
+
+}
+
+.nav-buttons {
+width: 15vh;
+}
+
+.join{
+  border:1px solid lightgray;
+  padding:5px 10px;
+  margin-right: 10px;
 }
 
 #presentation {
   height: 600px;
   background-color: rgba(232,217,217,.3);
-  flex-direction: column;
+  display: flex;
+  flex-flow: column wrap;
   justify-content: center;
-  align-items: center;
+  align-content: space-around;
 }
 
 #presentation h1{
   font-size: 80px;
   font-weight: 600;
+  line-height: 70px;
   text-align: center;
-  justify-content: center;
+  justify-items: center;
   align-items: center;
 }
 
 #presentation p{
-  font-size: 1em;
-  line-height: 28px;
+  font-size: 1.2em;
+  line-height: 36px;
   text-align: center;
-  justify-content: center;
-  align-self: center;
-  margin: 100px 0px;
-}
-
-#presentation a{
-  text-decoration: none;
-  color: black;
+  margin: 0px 30%;
 }
 
 .join-login-buttons{
   display: flex;
   justify-content: center;
+  margin-top: 30px;
 
 }
 
 .principal {
+  color: white;
+  text-decoration: none;
   background-color:#FB3B49 ;
   border-color: #FB3B49;
-  padding: 5px 30px;
-  box-shadow: 8px 0px 8px rgba(251 59 73 0.2);
-  margin: 10px;
-}
-
-.principal a{
-  text-decoration: none;
-  color: white;
+  padding: 5px 40px;
+  box-shadow: 8px 8px 0 rgba(251,59,73,0.2);
+  margin: 10px 20px;
 }
 
 .secondary {
+  color: black;
+  text-decoration: none;
   border: none;
   background-color:none ;
   padding: 5px 10px;
-  margin: 10px;
+  margin: 10px 20px;
 }
 
 #introduction{
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 75px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-flow: column wrap;
   justify-content: center;
   align-content: center;
 }
@@ -113,11 +155,21 @@ height: 20px;
   align-items: center;
 }
 
+#introduction div{
+  height:50%;
+  justify-items: center;
+  align-items: center;
+}
+
 #introduction h2{
   font-size: 32px;
   font-style: italic;
   text-align: center;
-  background-color:rgba(255 204 53 0.4);
+  background-color:rgba(255,204,53,0.4);
+  transform: skew(9deg,0deg);
+  justify-items: center;
+  align-items: center;
+  margin:30px 20%;
 }
 
 #introduction p{
@@ -131,21 +183,28 @@ height: 20px;
 .columns {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-
+  align-items: baseline;
+  justify-content: space-evenly;
+  flex-grow: inherit;
 }
 .container{
   display:flex;
   flex-direction: column;
   align-items:flex-start;
   justify-content:space-between;
-  width: 1000px;
+  margin:0px 10px;
+ /* width: 1000px;*/
 }
 
+#resources{
+  display: flex;
+  flex-flow:column wrap;
+  align-items: center;
+}
 #resources h3{
   font-weight: 400;
   color: #ED1C24;
+  line-height: 15px;
 }
 #resources .container img{
   height: 25px;
@@ -153,10 +212,12 @@ height: 20px;
 }
 #resources button{
   background-color: black;
+  box-shadow: 8px 8px 0 rgba(128,83,35,.2);
   color: white;
-  border: none;
-  padding:;
+  width: max-content;
+  border-color: black;
+  padding:5px 70px;
   justify-content: center;
   align-content: center;
+  margin-top: 50px;
 }
-
