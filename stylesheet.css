@@ -1,300 +1,515 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:700|Roboto:100,300,700');
+    @import url("https://fonts.googleapis.com/css?family=Arimo|Poppins:400,600,700&display=swap");
 
-html, body {
-    margin: 0;
-    padding: 0;
+    html, body {
+        margin: 0;
+        padding: 0;
+        font-size: 100%;
+    }
+/*For mobile user downgrade the font size to 97% */
+    @media (max-width:500px) {
+        html, body{
+        font-size: 97%;
+         }   
+    }
+    
+    body {
+        font-family:'Poppins';
+    }
+
+    header > div {
+        padding: 0 25px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid lightgray;
+    }
+
+    @media (max-width:800px){
+        header > div{
+            display:flex; 
+            flex-direction: column;        
+        }
+    }
+    
+    nav {
+        width: 600px;
+    }
+
+    /* For mobile user adjust the navigation menu */    
+    @media (max-width:500px) {
+        nav{
+        width:300px;
+        }        
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+/* For mobile user */
+
+@media (max-width: 500px) {
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        padding:0px;
+        border:#f2f2f2  solid 2px;
+    }
+    
 }
+ 
+    nav a {
+        text-decoration: none;
+        color: black;
+    }
+
+   
+    
+    .blackheart {
+        width: 60px;
+        margin-right: 1rem;
+    }
+
+    @media (max-width: 500px){
+        .blackheart{
+            margin: 0px;
+        }
+    }
+
+/* second part of the header */
+
+.header-container > div{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+}
+
+/* For mobile user */
+
+@media (max-width:500px){
+    .header-container-mobile{
+        display: flex;
+        flex-direction: column;
+        margin-top: 5px;
+    }
+    }
+
+    .logo{
+        width:60px;
+        height:30px;
+        margin-right: 1rem;
+    }
+
+    form.search{
+        display: flex;
+        align-items: center;
+        padding: 8px;
+        height:20px;
+        width: 850px;
+        background-color:#f2f2f2; /* color to be reused grey*/
+    }
   
-body{
-    font-family: "Roboto";
-    font-size: 10px;
-    line-height: 3.5em;
-    font-weight: 300;
-  }
-  
-h1, h2, h3, h4, h5, h6 {
-    font-family: "Roboto Condensed"
-}
 
-h1{
-    font-size: 9em;
-    text-transform: uppercase;
-    text-align:center;
-}
+   /* Adjust the search bar when the windows got smaller */ 
 
-h2{
-    font-size: 5em;
-    text-align: center;
-    text-transform: uppercase;
-    line-height: 4em;
-    color:white;
-    text-shadow: #020819 8px -20px 9px;
-}
+    @media(max-width:1000px) {
+        form.search{
+        width:500px;
+        }
+        
+    }
+    @media(max-width:800px) {
+        form.search{
+        width:200px;
+        }
+        
+    }
 
-h3 {
-    font-size: 4.2em;
-    text-align:center;
-    line-height: 1em;
-}
+    form img{
+        height: 30px;
+    }
 
-h4{
-    font-size:1.5em;
-    letter-spacing:0.4px;
-    line-height: 1em;
-    margin:0 0 15px 0;
-}
+    form input{
+        font-family:'Poppins';
+        padding-left:40px;
+        font-size: 1em;
+        border: none;
+        width: 900px;
+    }
 
-h5{
-    font-size:1.2em;
-    line-height:1em;
-    margin-top: 0;
-    margin-bottom: 0;
-}
-/* menue below */
-.nav-bar{
-    color:white;
-    background-color:#192129; /* ==> darkblue color to be reused */
-}
+    .text{
+        color: #00000080;
+        background-color:#f2f2f2;
+        padding:5px;
+    }
 
-.nav-bar a {
-    font-size: 2em;
-    text-decoration: none;
-    color: white;
-  }
-  
-.nav-bar-ul{
-    width: 1200px;
-    margin: 0 auto;
+    /* For mobile user placeholder text is adjusted */
+    @media (max-width:500px){
+        .text {
+        padding:0;
+        font-size: 1em;
+        font-style: italic;
+        }
+
+    }
+    .submit{
+        border:1px;
+        background-color: #fb3e44; /*color to be reused red */
+        font-family:'Poppins';
+        color:#f2f2f2;/* color to be reused grey*/
+        font-size:1em;
+        padding:6px;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .join{
+        border-color: #00000080; /* color to be reused  grey*/
+        color:#00000080; /* color to be reused  grey*/
+        font-family:'Poppins';
+        text-decoration:none;
+        border-style: solid;
+        border-width: 0.5px;
+        font-size: 1em;
+        padding: 5px 15px;
+        margin-right: 20px;
+        cursor: pointer; 
+    }
+
+    .log{
+        font-family:'Poppins';
+        text-decoration:none;
+        font-size: 1em;
+        color:#00000080;
+        cursor:pointer;      
+    }
+
+    .join-log{
+        display:flex;
+        margin: 3px 0 3px 0px;
+    }
+
+    @media (max-width:500px){
+        .join-log {
+            padding: 3px;
+        }
+    }
+
+    /* Modified button in CSS mouse over and out */
+    .join:hover{
+        color: lightgray
+    }
+
+    .log:hover{
+        color: lightgray
+    }
+
+    /* Section 1 */
+
+    #first-container{
+        height:600px;
+        background-color:#e8d9d94d; /* color of first container */
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    /* For mobile user height is adjusted to 900px */
+
+    @media (max-width:500px){
+        #first-container{
+        height:850px
+        }
+    }
+    
+    .text-first-container{
+        font-size:1.5em;
+        text-align: center;
+        margin-bottom: 5px;
+        word-wrap: break-word;
+        width: 50%;
+        padding-bottom: 50px;
+
+    }
+
+    h1{
+        font-size:4em;
+        font-weight: 600;
+        margin-top: 50px; 
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    @media(max-width:600px){
+        h1{
+             font-size: 2.5em;
+        }
+    }
+    
+    .button-white{
+        text-decoration:none;
+        font-family:"Poppins";
+        color:black;
+        padding: 20px 60px 20px 60px;
+        font-size: 1.1em;
+        background-color: white;
+        text-align: center;
+        font-weight: 400;
+    }
+
+    /*For mobile user adjust the margin between the 2 buttons */
+    
+    @media (max-width:500px){
+        .button-white{
+            margin-top: 30px;
+        }
+    }
+
+    .button-red-shadow{
+        background-color: #FB3B49;
+        box-shadow:#fb3b4933 8px 8px 0; /* color to be reused ligh red shadow*/
+        text-decoration: none;
+        font-family:"Poppins";
+        color:white;
+        padding: 20px 60px 20px 60px;
+        font-size: 1.1em;
+        margin-right: 20px;
+        font-weight: 400;
+    }
+
+    #button-first-container{
     display:flex;
-    justify-content: space-evenly;
-}
+    margin: 40px;
+    }
 
-.nav-bar-ul li{
-    text-align: center;
-    list-style-type: none;
+    @media (max-width:500px){
+        #button-first-container{
+            display: flex;
+            flex-direction: column;
+        }
+    }
 
-}
+    /*Section 2 */
 
+    h2{
+        font-size:3em;
+        background-color:#ffcc3533;
+        transform:skew(9deg,0deg);
+        font-style: italic;
+    }   
 
-header{
-    background-image: url(https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/ironhack-skydive-background.jpg);
-    background-position: 0 0;
-    background-repeat:no-repeat;
-    background-size:cover;
-    height: 650px;
-    padding-top: 50px;
-    position:relative
-}
+    #second-container{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
 
-.quote{
-    font-size: 2.5em;
-    position:absolute;  
-    left: 10%;
-    bottom:100px;
-
-}
-
-/* Section 1 CSS */
-
-.container{
-    width:1200px;
-    margin:auto;
-    padding: 75px 0;
-
-}
-
-.dark-background{
-    background-color:#192129; /* ==> darkblue color to be reused */
-    color:white;
-}
-
-.text{
-    font-size:2em;
-    font-weight: 100;
-    text-align: center;
-    margin: 20px 0;
-}
-
-.link-btn {
-    background-color:#43a2e6;/* ==> blue color to be reused */
-    color: white;
-    font-family:Roboto Condensed;
-    font-size: 2em;
-    letter-spacing: 0.5px;
-    text-align:center;
-    text-decoration:none;
-    padding:10px 30px 10px 30px
-}
-#general-information{
-    display: flex;
-    justify-content: space-evenly;
-
-}
-
-#general-information .container{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    width:370px
-}
-
-/* Section 2 */
-.service-box{
-    font-size: 1.7em;
-    text-align: center;
-    border: 2px of width, solid, and #eee color;
-    border-radius: 20px;
-    box-sizing: border-box;
-    box-shadow: 2px 2px 10px 0 #eee;    
-    Margin: 50px  5% 0 5%;
-    padding: 20px;
-    width: 40% 
-
-}
-
-.service-box img{
-    width: 125px;
-    text-align:  center;
-}
-
-#structure > div{
-    display: flex;
-    justify-content:space-between;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-#structure{
-    position:relative;
-    bottom:10px
-}
+    .hexagone{
+        width: 250px;
+        height:250px;  
+    }
 
 
-/*Section 3 */
+    .second-text-container{
+        font-size:1.5em;
+        text-align: center;
+        margin-bottom: 5px;
+        word-wrap: break-word;
+        width: 50%;
+        padding-bottom: 30px;
+    }
+
+    @media(max-width:650px){
+        .second-text-container{
+            font-size:1em;
+            word-wrap: break-word;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+    }
+
+    /* Section 3*/
+
+    h3{
+        color: #fb3e44;
+
+    }
 
 
+    .box-card p{
+        font-size: 1.2 em;
+        padding-left: 10px;
+        width: 90%;
+    }
 
-#team .section-text {
-    font-size: 1.9em;
-    text-align: center;
-  }
-  
-#team .member-name {
-    font-size: 1.5em;
-    font-weight: 700;
-  }
-  
-#team img {
-    width: 250px;
-    height: 180px;
-  }
-
-#team {
-    padding: 75px 0;
-    margin: 0 auto;
-  }
-  
-#team p {
-    width: 60%;
-    margin: 10px auto;
-  }
-  
-#team hr {
-    margin: 20px auto 30px auto;
-    width: 40%;
-  }
-
-#team > div{
-    display: flex;
-    justify-content:space-evenly;
-}
-
-#team > div >article{
-    display:flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
-
-/*Section 4 */
-
-.schedule-table{
-    margin:0 auto 40px auto;
-    font-size:1.5em;
-}
-
-.schedule-table th,td{
-    font-style:solid;
-    font-weight:1px;
-    color:black;
-    padding:5px 10px 5px 10px;
-    text-align: center;
-
-}
-
-.slot-form-container {
-    width: 40%;
-    margin: 18px auto 0 auto;
-    font-size: 1.5em;
-    text-align: center;
-  }
-  
-.slot-form-container label {
-    line-height: 15px;
-    margin: 5px;
-  }
-
-.slot-form-container input, select {
-    height: 20px;
-    outline-style: none;
-    padding: 3px;
-    width: 100%;
-  }
-
-.slot-form-container button{
-    border: 1px;
-    border: solid;
-    border-color:black;
-    color: black;
-    background-color: white;
-    padding: 9px;
-    margin-top: 15px;
-}
-  
+    .box-card h3{
+        font-size: 1.3em;
+        padding-left: 10px;
+    }
 
 
-/* CSS footer */
+    .box-card img{
+        width: 50px;
+        height:50px;
+        padding-left: 10px;
+    }
+    
+    /* flex div modified */
 
-.footer{
-    text-align: center;
-    font-size: 1.9em;
-    padding: 40px 100px 40px 40px;
-    margin-bottom: 25px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+    #third-container > div{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 30px;
+        margin-top: 40px;
+    }
 
-.address {
-    font-style: normal;
-    font-size: 0.8em;
-    margin-bottom: 30px;
-}
+ /* Moved to column */
+    @media(max-width:500px){
+        #third-container > div{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        }
+    }
 
-.footer a{
-    color:#43a2e6;
-    text-decoration: none;
-}
+    /*Div button outside from section 3 */
 
-.footer ul{
-    list-style: none;
-    padding:0
-}
+    /*
+    .org-button{
+        color:white;
+        font-size:1.2em;
+        background-color: black;
+        box-shadow: #80532333 8px 8px 0;
+        padding:20px 150px 20px 150px;
+        text-decoration: none;
+        position: relative;  
+    } */
 
-.map-frame{
-    height: 375px;
-    width: 60%;
-}
+      .org-button{
+      position: relative;
+      color: black;
+      font-size: 14px;
+      font-family: "Poppins";
+      text-decoration: none;
+      margin: 30px 0;
+      border: 2px solid #fb3e44;
+      padding: 14px 60px;
+      text-transform: uppercase;
+      overflow: hidden;
+      transition: 1s all ease;
+    }
+    .org-button::before{
+      background: #ff7675;
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      z-index: -1;
+      transition: all 0.6s ease;
+    }
+    
+    .org-button1::before{
+      width: 0%;
+      height: 100%;
+    }
+    
+    .org-button1:hover::before{
+      width: 100%;
+    }        
 
+ 
+    #button-direction{
+        margin-top:60px;
+        margin-bottom:60px;
+        text-align: center;
+    }
+    
+/*Footer */
+    
+/* modified by flex Parent File */
+
+    #company-info{
+        display: flex;
+        flex-direction: row;
+        margin-top: 30px;
+    }
+
+
+    @media(max-width: 500px){
+        #company-info{
+        display: flex;
+        flex-direction: column;
+        margin-top:30px
+
+        }
+    }
+
+
+    /*child elements */
+
+    ul li {
+        list-style: none;
+    }
+
+    ul a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .other-logo{
+        height:40px;
+        width: 40px;
+        z-index: 1;
+        margin-top: 22px;
+    }
+
+    .git-logo{
+        height: 40px;
+        width: 40px;
+        z-index: 2;
+        margin-top: 30px;
+    }
+
+    .image-box{
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px
+          
+    }
+
+    @media (max-width:500px) {
+        .image-box{
+            display: flex;
+        }
+        
+    }
+
+    .company-box h4{
+        padding-left: 5px;
+        font-weight: bold;
+        color: #FB3B49;
+        
+    }
+    
+    .company-box ul{
+        font-size:1em;
+        padding-left: 5px;
+
+    }
+
+    /* modified the size of the child's boxes by flex-grow */
+    .company-box{
+        flex-grow: 2;   
+    }
+
+    .image-box{
+        flex-grow:1
+    }
 
 
