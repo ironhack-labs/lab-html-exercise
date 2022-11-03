@@ -27,13 +27,17 @@
   
     <div>
         <img class="npmLogo" src="images\npm-logo.png" alt="npm-logo" />
-       
-        <div class="topnav">
-            <img class="magnifyingGlass" src="images\magnifying-glass.png" alt="magnifying-glass" />
-            <input type="text" placeholder="Search packages">
-            <button type="submit"> Search </button>
-          </div>
-        <li><a href="#"> Join </a><a href="#"> Log In </a></li>
+       <ul>
+            <div class="topnav">
+                <img class="magnifyingGlass" src="images\magnifying-glass.png" alt="magnifying-glass" />
+                <input type="text" placeholder="Search packages">
+                <button type="submit"> Search </button>
+            </div>
+        </ul>
+        <div>
+            <li><a href="#"> Join </a></li>
+            <li><a href="#"> Log In </a></li>
+        </div>
     <!-- add logo, search bar and buttons (or links and style them as buttons later) -->
     </div>
   </header>
@@ -41,7 +45,10 @@
   <section id="firstBlock">
     <heading><h1> Build Amazing Things </h1></heading>
     <article><p> Essential JavaScript development tools that help you go to market faster and build powerful applications using modern open source code </p></article>
-    <li><a href="#"> See plans </a><a href="#"> Join for free </a></li>
+    <div>
+        <li><a href="#"> See plans </a></li>
+        <li><a href="#"> Join for free </a></li>
+    </div>
   </section>
 
   <section id="secondBlock">
@@ -71,8 +78,9 @@
         <h2> npm audit </h2>
         <p> Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer. </p>
     </div>
+    
     <li><a href="#"> Create an Org </a></li>
   </section>
-  
+
   </body>
 </html>
