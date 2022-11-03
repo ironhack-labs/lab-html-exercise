@@ -15,8 +15,9 @@ body {
   }
   
   #firstBlock h1 {
-    font-size: 6.5em;
+    font-size: 6em;
     text-align: center;
+    font-weight: 800;
   }
 
   nav {
@@ -112,7 +113,7 @@ body {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     align-content: stretch;
     
@@ -121,17 +122,26 @@ body {
 .firstBlockButton {
     background-color: #FB3B49;
     box-shadow: 8px 8px 0 rgba(251,59,73,.2);
-    padding: 25px 50px;
-      
-}
-#firstBlock > ul > div a{
-    text-decoration: none;
-    color: white;
+    padding: 15px 50px;
 }
 
-#firstBlock > ul a {
+.firstBlockButton a {
+  color: white;
   text-decoration: none;
+}
+
+.secondBlockButton {
+  background-color: white;
+  padding: 15px 50px;
+}
+
+.secondBlockButton a {
   color: black;
+  text-decoration: none;
+}
+
+#firstBlock h1 {
+  margin-bottom: 120px;
 } 
     
 #firstBlock ul{
@@ -139,15 +149,18 @@ body {
     display: flex;
     flex-direction: row;
     width: 600px;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
-    margin-bottom: 80px;
+    margin-bottom: 140px;
 }
+
 
 #firstBlock > article {
   color: black;
   width: 440px;
  text-align: center;
+ position: absolute;
+ 
 }
 
 #firstBlock > article p{
@@ -208,5 +221,30 @@ align-items: center;
     align-items: center;
     align-content: center;
   
+}
+
+#fourthBlock {
+  height: 200px;
+  display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: stretch;
+}
+
+.org {
+  background-color: black;
+  box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+  margin-bottom: 85px;
+  padding: 20px 40px;
+  width: 200px;
+}
+
+
+.org a {
+  color:white;
+  text-decoration: none;
+  margin: 20px;
 }
 
