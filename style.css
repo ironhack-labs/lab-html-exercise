@@ -14,6 +14,11 @@ body {
     border-bottom: 1px solid lightgray;
   }
   
+  #firstBlock h1 {
+    font-size: 6.5em;
+    text-align: center;
+  }
+
   nav {
     width: 600px;
   }
@@ -84,7 +89,7 @@ body {
     padding: 11px;
     background-color: rgba(207, 207, 207, 0.199);
     border: none;
-    width: 700px;
+    width: 1100px;
 }
 
 .searchBarZone button {
@@ -107,7 +112,7 @@ body {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     align-content: stretch;
     
@@ -117,20 +122,91 @@ body {
     background-color: #FB3B49;
     box-shadow: 8px 8px 0 rgba(251,59,73,.2);
     padding: 25px 50px;
-        
+      
 }
-a{
+#firstBlock > ul > div a{
     text-decoration: none;
-    
+    color: white;
 }
 
+#firstBlock > ul a {
+  text-decoration: none;
+  color: black;
+} 
+    
 #firstBlock ul{
     list-style: none;
     display: flex;
     flex-direction: row;
     width: 600px;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+#firstBlock > article {
+  color: black;
+  width: 440px;
+ text-align: center;
+}
+
+#firstBlock > article p{
+display: flex;
+align-items: center;
+}
+
+
+/* SECOND BLOCK */
+
+#secondBlock {
+  height: 600px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
     justify-content: space-evenly;
     align-items: center;
+    align-content: stretch;
+}
+#secondBlock h1 {
+  background-color: rgba(255,204,53,.4);
+  transform: skew(9deg,0deg);
+  font-style: italic;
+  size: 10px;
+}
 
+.triangleHexagon {
+  width: 17em;
+  margin-top: 30px;
+}
+
+#secondBlock > article {
+  color: black;
+  width: 750px;
+  text-align: center;
+}
+
+                                                  /*THIRD BLOCK*/
+#thirdBlock img {
+  width: 40px;
+}
+
+#thirdBlock h2 {
+  font-size: 15px;
+  color: #ED1C24;
+}
+
+#thirdBlock p {
+  width: 200px;
+}
+
+#thirdBlock {
+  height: 400px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+  
 }
 
