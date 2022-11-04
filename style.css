@@ -1,13 +1,61 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+
+}
+
+*,*:before, *:after {
+    box-sizing: inherit;
+}
 body {
-  font-family: 'Poppins';
+    font-family: 'Poppins';
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+/* Globales */
+.contenedor{
+    max-width: 130rem;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.section {
+    height: 60rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+}
+h1,h2,h3,h4{
+    line-height: 1.2;
+}
+h1{
+    font-size: 4.8rem;
+}
+h2{
+    font-size: 4rem;
+}
+h3{
+    font-size: 3.2rem;
+}
+h4{
+    font-size: 2.8rem;
+}
+img{
+    max-width: 100%;
 }
 
 /* Header */
 
 header > section {
-    padding: 0 25px;
+    padding: 0 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -15,7 +63,7 @@ header > section {
 }
   
 nav {
-    width: 600px;
+    width: 60rem;
 }
   
 nav ul {
@@ -30,116 +78,113 @@ nav a {
     color: black;
 }
 .blackHeart {
-    width: 20px;
+    width: 2rem;
     margin-right: 1rem;
 }
-
 .npmLogo {
-    width: 50px;
+    width: 5rem;
     /* margin-right: 1rem; */
 }
-
 header > section > form {
+
     background-color:  rgba(0,0,0,.05);
-    margin: 10px 16px;
+    margin: 1rem 1.6rem;
+    margin-right: 0;
     display: block;
     width: 90%;
-    padding: 2px 10px;
+    /* padding: 2px 0px; */
+    height: 4rem;
 
 }
-  .search-icon {
-    width: 20px;
+.search-icon {
+    width: 2rem;
     position: relative;
-    top: 5px;
+    top: .7rem;
 }
 #search {
     border-right: 0;
     border-style: none;
     background-color:  rgba(0,0,0,.01);
     background-size: cover;
-    width: 90%;
+    width: 95%;
+    position: relative;
+    top: .2rem;
 }
 .search-button {
     background-color: #fb3e44;
     color: white;
     border: 1px solid #fb3e44;
-    height: 30px;
-    position: absolute;
-    right: 180px;
-    top: 75px;
+    height: 4rem;
+    padding: 0 2rem;
+    margin: 0 3rem 0 0;
+    /* margin-top: 0;
+    margin-left: 0; */
 }
 #join {
     text-decoration: none;
     background-color: white;
     border: 1px solid black;
     color: black;
-    padding: 2px 10px;
+    padding: .02rem 1.5rem;
+    /* margin-right: 1rem; */
 } 
 #log-in {
     text-decoration: none;
     color: rgba(0,0,0,.5);
-    padding: 2px 10px;
-    width: 54.9px;
+    padding: .02rem 0rem .02rem 2rem;
+    width: 8rem;
 }
 
- /* Body */
+/* Body */
 
- .section {
-    height: 600px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-}
- /* Section 1 */
+/* Section 1 */
 
 .section-1 {
-    background-color: rgba(232,217,217,.3);
+   background-color: rgba(232,217,217,.3);
 }
 .section-1 > h1 {
-    font-size: 80px;
-    font-weight: bold;
-    margin: 0px;
+   font-size: 8rem;
+   font-weight: bold;
+   margin: 0;
 }
 .section-1 > article {
-    text-align: center;
-    margin-bottom: 50px;
-    font-size: 20px;
+   text-align: center;
+   margin-bottom: 5rem;
+   font-size: 2rem;
 }
 .section-1 > div {
-    flex-direction: row;
-    margin-bottom: 45px;
+   flex-direction: row;
+   margin-bottom: 4.5rem;
 }
 .join-button,
 .see-plans-button {
-    margin:0 25px;
-    padding: 15px 70px;
-    text-decoration: none;
+   margin:0 2.5rem;
+   padding: 1.5rem 7rem;
+   text-decoration: none;
 }
 .see-plans-button {
-    color: white;
-    background-color: #FB3B49;
-    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
-    width: 100px;
+   color: white;
+   background-color: #FB3B49;
+   box-shadow: .8rem .8rem 0 rgba(251,59,73,.2);
+   width: 10rem;
 }
 .join-button {   
-    background-color: white;
-    color: black;
-    font-weight: bolder;
-    margin:0 30px;
+   background-color: white;
+   color: black;
+   font-weight: bolder;
+   margin:0 3rem;
 }
-
 /* Section 2 */
 
 .section-2 > img {
-    max-height: 210px;
+    max-height: 21rem;
 }
 .section-2 > h2 {
-    font-size: 35px;
+    font-size: 3.5rem;
     font-style: italic;
     background-color: rgba(255,204,53,.4);
     transform: skew(9deg,0deg);
-    padding: 0 50px;
+    padding: 0 5rem;
     margin: 0;
 }
 .section-2 > article {
@@ -148,28 +193,29 @@ header > section > form {
 
 /* Section 3 */
 
-
 .section-3 > div {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin: 100px 0;
+    margin: 10rem 0;
 }
 .section-3 > div > div {
-    max-width: 240px;
+    max-width: 24rem;
 }
 .section-3-icon {
-    max-height: 25px;
+    max-height: 2.5rem;
 }
 h3 {
     color: #ED1C24;
+    font-size: 2rem;
+    font-weight: bold;
 }
 .section-3 a {
     text-decoration: none;
     color: white;
     background-color: black;
-    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
-    padding: 10px 70px;
+    box-shadow: .8rem .8rem 0 rgba(128,83,35,.2);
+    padding: 1rem 10rem;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 5rem;
 }
