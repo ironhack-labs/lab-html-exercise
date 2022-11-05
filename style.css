@@ -4,6 +4,10 @@ body {
   font-family: 'Poppins';
 }
 
+button {
+    font-family: inherit;
+}
+
 header > div {
     padding: 0 25px;
     display: flex;
@@ -55,10 +59,10 @@ nav a {
 }
 
 #topPanel a {
-    padding-left: 0.60rem;
-    padding-right: 0.60rem;
-    padding-top: 0.45rem;
-    padding-bottom: 0.45rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
     width: 60px;
     text-align: center;
     border-style: solid;
@@ -115,7 +119,6 @@ form > input {
 }
 
 form > button {
-    margin-left: 5px;
     background-color: #fb3e44;
     color: white;
     border: 0px solid black;
@@ -137,6 +140,10 @@ section {
     padding: 0 25px;
 }
 
+section article {
+    text-align: center;
+}
+
 section > div {
     display: flex;
     justify-content: space-between;
@@ -149,6 +156,7 @@ section > div > div {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    padding: 0 20px;
 }
 
 section > h1 {
@@ -162,6 +170,10 @@ section h5 {
 
 section p {
     margin-top: 0;
+}
+
+section img {
+    width: 50px;
 }
 
 section input, section button, section a {
@@ -179,11 +191,17 @@ section input, section button, section a {
     height: 600px;
 }
 
-#intro , #intro a {
+#intro a {
     margin-left: 5px;
     background-color: transparent;
     color: black;
     border: 0.5px solid transparent;
+    width: 8em;
+    text-align: center;
+}
+
+#intro article {
+    padding: 0 10em;
 }
 
 #plansButton {
@@ -193,11 +211,38 @@ section input, section button, section a {
     box-shadow: 8px 8px 0 rgba(251,59,73,.2);
 }
 
+#brand {
+    height: 320px;
+}
+
+#brand article {
+    padding: 0 8em;
+}
+
 #brand > img {
-    width: 120px;
+    width: 150px;
+}
+
+#brand > h3 {
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+    font-style: italic;
+    padding: 0 20px;
+    font-size: 1.4em;
+}
+
+#description {
+    height: 400px;
+}
+
+#description h5 {
+    color: #ED1C24;
 }
 
 #description button {
     background-color: black;
     color: white;
+    box-shadow:  8px 8px 0 rgba(128,83,35,.2);
+    width: 16em;
+    text-align: center;
 }
