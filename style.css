@@ -41,13 +41,33 @@ nav a {
     padding: 10px 0;
 }
 
-#topPanel input, #topPanel button {
+#topPanel button, #topPanel a {
+    font-size: small;
+}
+
+#topPanel button {
     padding-left: 2rem;
     padding-right: 2rem;
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
     border-style: solid;
     font-weight: bold;
+}
+
+#topPanel a {
+    padding-left: 0.60rem;
+    padding-right: 0.60rem;
+    padding-top: 0.45rem;
+    padding-bottom: 0.45rem;
+    width: 60px;
+    text-align: center;
+    border-style: solid;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.npmLogo {
+    width: 70px;
 }
 
 #log-wrapper {
@@ -96,7 +116,7 @@ form > input {
 
 form > button {
     margin-left: 5px;
-    background-color: red;
+    background-color: #fb3e44;
     color: white;
     border: 0px solid black;
 }
@@ -108,11 +128,76 @@ form > button {
     background-color: #f2f2f2;
 }
 
-.npmLogo {
-    width: 70px;
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    padding: 0 25px;
 }
 
+section > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 20px 0;
+}
 
-section {
-    padding: 0 25px;
+section > div > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+section > h1 {
+    font-size: 3em;
+    margin-bottom: 0.4em;
+}
+
+section h5 {
+   margin: 1em 0; 
+}
+
+section p {
+    margin-top: 0;
+}
+
+section input, section button, section a {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-style: solid;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#intro {
+    background-color: rgba(232,217,217,.3);
+    height: 600px;
+}
+
+#intro , #intro a {
+    margin-left: 5px;
+    background-color: transparent;
+    color: black;
+    border: 0.5px solid transparent;
+}
+
+#plansButton {
+    background-color: #FB3B49 !important;
+    color: white !important;
+    border: 0.5px solid #FB3B49 !important;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+}
+
+#brand > img {
+    width: 120px;
+}
+
+#description button {
+    background-color: black;
+    color: white;
 }
