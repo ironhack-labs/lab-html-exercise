@@ -9,7 +9,7 @@ has 100% parity with all the public npm registry features your developers alread
 auditing features built into the npm client, a zero-friction way to make open source software safer. Create an Org -->
 <html>
   <head>
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="./style.css">
   </head>
   <body>
         <header>
@@ -32,22 +32,29 @@ auditing features built into the npm client, a zero-friction way to make open so
         
           <div>
             <!-- add logo, search bar and buttons (or links and style them as buttons later) -->
-            <div>
+            <div id="topPanel">
                 <div id="logo-wrapper">
-                    <img src="./images/npm-logo.png" alt="Logo image">
+                    <img class="npmLogo" src="./images/npm-logo.png" alt="Logo image">
                 </div>
                 <div id="search-wrapper">
-                    <img src="./images/magnifying-glass.png" alt="Search image">
+                    <img class="magnifyingGlass" src="./images/magnifying-glass.png" alt="Search image">
+                    <form action="">
+                        <input type="text" placeholder="Search packages..." id="searchBox">
+                        <button>Search</button>
+                        <!-- <input type="submit" value="Search"> -->
+                    </form>
                 </div>
-                <div id="log-wrapper"></div>
+                <div id="log-wrapper">
+                    <button id="joinButton">Join</button>
+                    <input type="button" value="Log in" id="loginButton">
+                </div>
             </div>
           </div>
         </header>
         <section id="intro">
             <h1>Build amazing things</h1>
             <article>
-                Essential JavaScript development tools that help you go to market faster and build powerful applications using
-modern open source code.
+                Essential JavaScript development tools that help you go to market faster and build powerful applications using modern open source code.
             </article>
             <div id="button-wrapper">
                 <button>See plans</button>
