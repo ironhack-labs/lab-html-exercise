@@ -32,23 +32,24 @@ header > div {
     margin-right: 1rem;
   }
   .logo{
-    height: 1.5em;
+    height: 30px;
   }
   .magnifying-glass {
-    height: 1.5em;
+    height: 20px;
     background-color: rgba(0,0,0,0.05);
     padding: 5px;
     margin: 0;
   }
   .search-button {
     background-color: #fb3e44;
-    
     border:1px solid rgba(0,0,0,0.05);
     color:white;
     font-family: "Poppins";
     padding: 5px 10px;
+    margin: 0 0 0 0;
   }
   #join-button {
+    
     text-decoration: none;
     color:grey;
     padding:5px 10px;
@@ -59,30 +60,16 @@ header > div {
     color: grey;
     padding:5px 10px;
   }
-  .search-bar-div {
-    display: flex;
-    align-content: space-around;
-  }
-  .search-bar {
-    display: flex;
-    justify-content:space-between ;
-    align-items:center;
-    flex-wrap: nowrap;
-    width: 70%;
-    height: 2em;
-    background-color: rgba(0,0,0,0.05);
-    
-    padding: 10x 10px 10px 0px;
-    border: none;
-    margin: 12px 12px 12px 0px;
-    
-  }
+
+
 #register {
     display:flex;
-    justify-content: right;
+    flex-direction: row;
     align-items: center;
     flex-wrap: nowrap;
-    width 20%;
+   justify-content: flex-end;
+    width: 30%;
+    
 }
 
 .intro {
@@ -93,17 +80,19 @@ header > div {
     background-color: rgba(232,217,217,.3)
 }
 .intro-article {
-    width:30%;
+    width:35%;
     display: flex;
     justify-content: center;
+    text-align: center;
     
 }
 #intro-buttons {
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
     justify-content: space-between;
     margin-top: 2em;
-    width: 30%;
+    width: 35%;
 }
 #see-plans {
 text-decoration: none;
@@ -146,6 +135,7 @@ h2 {
 #middle-article {
     width: 50%;
     margin-top: 0;
+    text-align: center;
 }
 .features {
   display:flex;
@@ -180,4 +170,26 @@ h3 {
   display: flex;
   justify-content: center;
   margin-bottom:100px;
+}
+.search-bar-div form input {
+  background-color:  rgba(0,0,0,0.05);
+  width: 70%;
+  height: 30px;
+  border: none;
+  
+}
+  .search-bar-div form {
+  display: flex;
+  
+  align-items:center;
+  flex-wrap: nowrap;
+  width: 1200px;
+  margin: 0 0 0 50px;
+}
+.search-bar-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin: 0 2px 0 2px;
+  padding: 10px;
 }
