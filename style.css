@@ -105,10 +105,10 @@ header .bottom-bar {
 }
 
 .join-button {
-  border: 1px solid lightgray;
+  border: 1.5px solid lightgray;
   padding: 4px 9px 4px 9px;
   margin: auto 10px auto auto;
-  box-shadow: inset 0 1px 1px 1px darkgrey;
+  box-shadow: inset 1px 1px 1px 1px darkgrey;
 }
 
 /*-------section-main------*/
@@ -118,7 +118,7 @@ header .bottom-bar {
   justify-content: space-around;
   flex-direction: column;
   align-items: center;
-  height: 350px;
+  height: 400px;
   background-color: rgba(232, 217, 217, 0.3);
   padding: 5px 5px 5px 5px;
 }
@@ -126,11 +126,11 @@ header .bottom-bar {
 #section-main h1 {
   font-family: bold, sans-serif;
   font-weight: bolder;
-  font-size: 40px;
+  font-size: 50px;
   margin-bottom: 0;
 }
 .main-text {
-  width: 360px;
+  width: 460px;
   text-align: center;
   font-family: light, sans-serif;
   font-size: 16px;
@@ -149,7 +149,7 @@ header .bottom-bar {
   border: 0;
   padding: 10px 24px 10px 24px;
   box-shadow: 8px 8px 0 rgba(251, 59, 73, 0.2);
-  margin-right: 10px;
+  margin-right: 12px;
 }
 .main-white-button {
   background-color: white;
@@ -157,7 +157,84 @@ header .bottom-bar {
   color: black;
   border: 0;
   padding: 10px 24px 10px 24px;
-  margin-left: 10px;
+  margin-left: 12px;
 }
 
 /*-------section-info------*/
+
+#section-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 450px;
+  padding: 5px 5px 5px 5px;
+}
+
+.info-logo {
+  width: 160px;
+}
+
+#section-info h2 {
+  font-family: bold, sans-serif;
+  font-weight: bolder;
+  font-size: 24px;
+  background-color: rgba(255, 204, 53, 0.4);
+  transform: skew(9deg, 0deg);
+  font-style: italic;
+  margin: 0 -30px 0 -30px;
+  padding: 0 30px 0 30px;
+}
+
+.info-text {
+  text-align: center;
+  font-family: light, sans-serif;
+  font-size: 14px;
+  width: 580px;
+  margin-top: 0;
+}
+
+/*-------section-boxes------*/
+
+.container-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding: 5em;
+}
+
+.element-box {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  width: 15em;
+  font-size: 14px;
+}
+
+.element-box img {
+  height: 28px;
+}
+
+.element-box h3 {
+  font-family: bold, sans-serif;
+  color: #fb3b49;
+}
+
+.black-button-wrap {
+  display: flex;
+  margin-bottom: 5em;
+  justify-content: center;
+  align-items: center;
+}
+
+.black-button {
+  text-decoration: none;
+  text-align: center;
+  font-weight: bolder;
+  color: white;
+  border: 0;
+  background-color: black;
+  padding: 0.8em 4.6em 0.8em 4.6em;
+  box-shadow: 8px 8px 0 lightgrey;
+}
