@@ -3,7 +3,8 @@
 body {
   font-family: "Poppins";
 }
-/*----Navigation bar----*/
+
+/*-------Navigation bar-------*/
 
 header .upper-bar {
   padding: 0 25px;
@@ -79,12 +80,14 @@ header .bottom-bar {
 }
 
 .red-button {
-  margin: 0;
-}
-
-.red-button {
   background-color: #fb3e44;
   color: white;
+  border: 0;
+  padding: 4px 9px 4px 9px;
+}
+.white-button {
+  background-color: white;
+  color: black;
   border: 0;
   padding: 4px 9px 4px 9px;
 }
@@ -97,22 +100,64 @@ header .bottom-bar {
 }
 
 .login-box a {
-        text-decoration: none;
-        color: black;
+  text-decoration: none;
+  color: black;
 }
 
 .join-button {
-        border: 1px solid lightgray;
-        padding: 4px 9px 4px 9px;
-        margin: auto 10px auto auto;
-        box-shadow: inset 0 1px 1px 1px darkgrey;
+  border: 1px solid lightgray;
+  padding: 4px 9px 4px 9px;
+  margin: auto 10px auto auto;
+  box-shadow: inset 0 1px 1px 1px darkgrey;
 }
 
+/*-------section-main------*/
 
+#section-main {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  height: 350px;
+  background-color: rgba(232, 217, 217, 0.3);
+  padding: 5px 5px 5px 5px;
+}
 
-/*
-    form label color: rgba(0,0,0,.05)
-    form input color: rgba(0,0,0,.05)
-    form button background color: #fb3e44
-    form button letters color: white
-*/
+#section-main h1 {
+  font-family: bold, sans-serif;
+  font-weight: bolder;
+  font-size: 40px;
+  margin-bottom: 0;
+}
+.main-text {
+  width: 360px;
+  text-align: center;
+  font-family: light, sans-serif;
+  font-size: 16px;
+  margin-top: 0;
+}
+
+.main-buttons a {
+  text-decoration: none;
+  text-align: center;
+}
+
+.main-red-button {
+  background-color: #fb3b49;
+  font-weight: bolder;
+  color: white;
+  border: 0;
+  padding: 10px 24px 10px 24px;
+  box-shadow: 8px 8px 0 rgba(251, 59, 73, 0.2);
+  margin-right: 10px;
+}
+.main-white-button {
+  background-color: white;
+  font-weight: bolder;
+  color: black;
+  border: 0;
+  padding: 10px 24px 10px 24px;
+  margin-left: 10px;
+}
+
+/*-------section-info------*/
