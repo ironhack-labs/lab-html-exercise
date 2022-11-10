@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
+body {
+  font-family: "Poppins";
+}
+
+/*-------Navigation bar-------*/
+
+header .upper-bar {
+  padding: 0 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+}
+
+.black-heart {
+  width: 20px;
+  margin-right: 1rem;
+}
+
+/*top navigation bar*/
+nav {
+  width: 600px;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+/*bottom navigation bar*/
+header .bottom-bar {
+  padding: 0.5em 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  align-content: stretch;
+}
+
+.logo-box {
+  width: 80px;
+  flex: 0 0 80px;
+}
+
+.npm-logo {
+  width: 50px;
+}
+
+.search-box. {
+  flex: 1;
+  text-align: center;
+  width: 100%;
+}
+
+.search-box form {
+  background-color: rgba(0, 0, 0, 0.05);
+  background: rgba(0, 0, 0, 0.05)
+    url(https://raw.githubusercontent.com/marnamrs/lab-html-exercise/master/images/magnifying-glass.png?raw=true)
+    no-repeat;
+  background-size: 1.2em;
+  align-items: center;
+  width: 40rem;
+  margin: 0;
+}
+
+.search-box input {
+  border: none;
+  background: transparent;
+  margin: 0;
+  font-size: 14px;
+  color: black;
+  vertical-align: center;
+}
+
+.red-button {
+  background-color: #fb3e44;
+  color: white;
+  border: 0;
+  padding: 4px 9px 4px 9px;
+}
+.white-button {
+  background-color: white;
+  color: black;
+  border: 0;
+  padding: 4px 9px 4px 9px;
+}
+
+.login-box {
+  width: 120px;
+  flex: 0 0 120px;
+  margin: 0 10px 0 0;
+  text-align: center;
+}
+
+.login-box a {
+  text-decoration: none;
+  color: black;
+}
+
+.join-button {
+  border: 1.5px solid lightgray;
+  padding: 4px 9px 4px 9px;
+  margin: auto 10px auto auto;
+  box-shadow: inset 1px 1px 1px 1px darkgrey;
+}
+
+/*-------section-main------*/
+
+#section-main {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  height: 400px;
+  background-color: rgba(232, 217, 217, 0.3);
+  padding: 5px 5px 5px 5px;
+}
+
+#section-main h1 {
+  font-family: bold, sans-serif;
+  font-weight: bolder;
+  font-size: 50px;
+  margin-bottom: 0;
+}
+.main-text {
+  width: 460px;
+  text-align: center;
+  font-family: light, sans-serif;
+  font-size: 16px;
+  margin-top: 0;
+}
+
+.main-buttons a {
+  text-decoration: none;
+  text-align: center;
+}
+
+.main-red-button {
+  background-color: #fb3b49;
+  font-weight: bolder;
+  color: white;
+  border: 0;
+  padding: 10px 24px 10px 24px;
+  box-shadow: 8px 8px 0 rgba(251, 59, 73, 0.2);
+  margin-right: 12px;
+}
+.main-white-button {
+  background-color: white;
+  font-weight: bolder;
+  color: black;
+  border: 0;
+  padding: 10px 24px 10px 24px;
+  margin-left: 12px;
+}
+
+/*-------section-info------*/
+
+#section-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 450px;
+  padding: 5px 5px 5px 5px;
+}
+
+.info-logo {
+  width: 160px;
+}
+
+#section-info h2 {
+  font-family: bold, sans-serif;
+  font-weight: bolder;
+  font-size: 24px;
+  background-color: rgba(255, 204, 53, 0.4);
+  transform: skew(9deg, 0deg);
+  font-style: italic;
+  margin: 0 -30px 0 -30px;
+  padding: 0 30px 0 30px;
+}
+
+.info-text {
+  text-align: center;
+  font-family: light, sans-serif;
+  font-size: 14px;
+  width: 580px;
+  margin-top: 0;
+}
+
+/*-------section-boxes------*/
+
+.container-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding: 5em;
+}
+
+.element-box {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  width: 15em;
+  font-size: 14px;
+}
+
+.element-box img {
+  height: 28px;
+}
+
+.element-box h3 {
+  font-family: bold, sans-serif;
+  color: #fb3b49;
+}
+
+.black-button-wrap {
+  display: flex;
+  margin-bottom: 5em;
+  justify-content: center;
+  align-items: center;
+}
+
+.black-button {
+  text-decoration: none;
+  text-align: center;
+  font-weight: bolder;
+  color: white;
+  border: 0;
+  background-color: black;
+  padding: 0.8em 4.6em 0.8em 4.6em;
+  box-shadow: 8px 8px 0 lightgrey;
+}
