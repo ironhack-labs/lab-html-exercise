@@ -107,7 +107,6 @@ nav a {
 }
 .button {
     display: inline-block;
-    padding: 14px 39px;
     font-weight: bold;
     text-decoration: none;
     font-size: 18px;
@@ -119,11 +118,13 @@ nav a {
     background-color:#FB3B49 ;
     margin-right: 20px;
     box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+    padding: 14px 39px;
 
 }
 .white {
     color: black;
     background-color: white;
+    padding: 14px 39px;
 
 }
 
@@ -152,7 +153,6 @@ nav a {
 }
 .section2-container h2{
     font-family: Poppins;
-    letter-spacing: ;
     font-weight: 600;
     font-style: italic;
     font-size: 31px;
@@ -167,4 +167,45 @@ nav a {
     text-align: center;
     font-size: 14px;
     line-height: 1.25;
+}
+#section3 {
+    height: 600px;
+    display: flex; 
+    justify-content: space-around;  
+    align-items:center;
+    flex-direction:column;
+    padding-bottom: 100px;
+  }
+.benefit-img {
+    width: 30px;
+  }
+  .section3-container{
+    margin: 0 auto; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+.benefits{
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    list-style: none;
+}
+.benefits-item{
+    margin-right: 30px;
+}
+.benefits-item:last-child {
+    margin-right: 0px;
+}
+.benefit-title{
+    color: #ED1C24;
+}
+.benefits-button {
+    padding: 14px 110px;
+    background-color: black;
+    color: white;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
 }
