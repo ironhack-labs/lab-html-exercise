@@ -24,16 +24,19 @@
                     </ul>
                 </nav>
             </div>
-            <div>
+            <div class="sbar">
                 <!--searchbar and join log in links-->
                 <img class="npm-logo" src="/images/npm-logo.png" alt="NPM-logo" >
-                <img class="lupa" src="/images/magnifying-glass.png" alt="Lupa">
-                <form id="searchbar">
+                
+                <form id="searchform">
+                    <img class="lupa" src="/images/magnifying-glass.png" alt="Lupa">
                     <input type="search" id="search-input" name="searchbar" placeholder="Search packages">
-                    <button>Search</button>
+                    <button type="submit">Search</button>
                 </form>
-                <a href="#" class="join">Join</a>
-                <a href="#" class="log-in">Log in</a>
+                <div id="jl">
+                    <a href="#" class="join">Join</a>
+                    <a href="#" class="log-in">Log in</a>
+                </div>
             </div>
         </header>
         <!--section 1-->
@@ -41,8 +44,8 @@
             <h1>Build amazing things</h1>
             <article>Essential JavaScript development tools that help you go to market faster and build powerful applications using modern open source code.</article>
             <div>
-                <a href="#">See plans</a>
-                <a href="#">Join for free</a>
+                <a href="#" class="red-button">See plans</a>
+                <a href="#" class="white-button">Join for free</a>
             </div>
         </section>
         <!--section 2-->
