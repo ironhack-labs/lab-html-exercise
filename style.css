@@ -84,7 +84,7 @@ header > div {
 
   .first-box{
     text-align: center;
-    background-color:rgba(211, 202, 202, 0.3);
+    background-color:rgba(232,217,217,.3);
     padding: 5%;
   }
   .first-box h1{
@@ -107,11 +107,11 @@ header > div {
   }
   .first-box .see-plans{
     margin:10px;
-    background-color: #fb3e44;
+    background-color: #fb3b49;
     color: whitesmoke;
     text-decoration: none;
     padding: 10px 50px;
-    box-shadow: 10px 5px rgb(214, 172, 172);
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
   }
   .first-box .join-for-free{
     margin:10px;
@@ -128,6 +128,58 @@ header > div {
     justify-content: center;
   }
   .second-box img{
+    padding-top: 50px;
+    padding-bottom: 30px;
 
     width: 10rem;
+  }
+  .skewed{
+    transform: skew(9deg,0deg); 
+    background-color:rgba(255,204,53,.4);
+    font-style: italic;
+    margin:10px 40px;
+    padding:1px 30px
+  }
+
+
+  .second-box article{
+    justify-content: center;
+    display: flex;
+    width:60%;
+    text-align: center;
+    padding: 30px 10px 150px 10px;
+  }
+
+  .third-box >div{
+    flex-direction: row;
+    display: flex;
+  }
+  
+  
+  .third-box img{
+    flex-direction: row;
+    display: flex;
+    width: 3rem;
+  }
+
+  .third-box h3{
+    display: flex;
+    color:#ed1c24;
+  }
+  
+  .third-box .create-an-org{
+    display: block;
+    background-color: black;
+    color:white;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    text-decoration: none;
+    width:50px;
+    height: 100px;
+    flex-direction: initial;
+  }
+  .last-piece article{
+    width:10%
+    flex-direction: row;
+    display: flex;
+    text-align: left;
   }
