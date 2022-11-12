@@ -30,20 +30,22 @@
             <div class="npm-logo">
                 <img class="npm-img" src="./images/npm-logo.png" alt="logo">
             </div>
-          <div class="search-form">
-            <form action="/some-url" method="get">
-                <div class="search-container">
-                        <span class="search-img">
+            <div class="search-wrap">
+                 <form action="/some-url" method="get">
+                     <div class="searchbar">
+                        <div class="search-img">
                             <img class="magnifying-img" src="./images/magnifying-glass.png" alt="">
-                        </span>
-                        <input type="text" type="search" placeholder="Search packages" class="search-input">
-                    <button></button>
-                </div>
-              </form>
-          </div>
+                        </div>
+                        <input type="text"  placeholder="Search packages" class="search-input" name="search">
+                        <button type="submit" class="searchbar-button" >
+                            Search
+                        </button>
+                     </div>
+                 </form>
+           </div>
           <div class="join-login">
-            <a   href="#">Join</a>
-            <a   href="#">Log in</a>
+            <a class="btn join"  href="#">Join</a>
+            <a class="btn login"  href="#">Log in</a>
           </div>
         </div>
       </header>

@@ -48,11 +48,28 @@ nav a {
     padding-top: 8px;
     width: 90px;
     margin-right: 1rem;
+    margin-right: 30px;
 }
 .second-header {
     padding: 10px 0;
     padding-left: 2rem;
     padding-right: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.search-wrap{
+ flex-grow: 1;
+ margin-right: 31px;
+}
+.searchbar {
+    width: 100%;
+    max-width: 1044px;
+    height: 52px;
+    display: inline-flex;
+    background-color:rgba(0,0,0,.05) ;
+    align-items: center;
+
 }
 
 .search-input {
@@ -62,14 +79,49 @@ nav a {
     border: none;
     outline: unset;
     height: 40px;
-    padding-left: 10px;
+    padding: 10px;
     border-radius: 0;
     width: calc(100% - 10px);
+    flex-grow: 1;
+    font-family: "Fira Mono", "Andale Mono", "Consolas", monospace;
+    font-size: 16px;
+    letter-spacing: 0px;
+}
+
+.search-img {
+   margin-left: 20px;
+   margin-right: 10px;
+   display: flex;
+   justify-content: center;
 }
 .magnifying-img{
-    height: 18px;
-    width: 18px;
+    height: 21px;
+    width: 21px;
 }
+.searchbar-button {
+    width: 117px;
+    height: 52px;
+    background-color:#FB3B49;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+}
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 13px;
+    padding: 13px 28px;
+    width: 108px;
+    height: 44px;
+    color: black;
+    text-align: center;
+}
+.join {
+    border: 1px solid #ccc;
+}
+
+
 #section1 {
   height: 600px;
   background-color: #f7f4f4;
@@ -118,13 +170,13 @@ nav a {
     background-color:#FB3B49 ;
     margin-right: 20px;
     box-shadow: 8px 8px 0 rgba(251,59,73,.2);
-    padding: 14px 39px;
+    padding: 14px 55px;
 
 }
 .white {
     color: black;
     background-color: white;
-    padding: 14px 39px;
+    padding: 14px 55px;
 
 }
 
