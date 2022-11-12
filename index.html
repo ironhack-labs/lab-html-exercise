@@ -1,10 +1,13 @@
-
-<nav>
+    <head>
+      <link rel="stylesheet" href=./style.css />
+    </head>
     <header>
       <div>
         <div>
-     <img src="./images/black-heart.png"/>
+     <img class="blackHeart" src="./images/black-heart.png" alt="black heart" />
     <span> Nifty Penguin Magic </span>
+        </div>
+        <nav>
     <ul>
       <li><a href="#">npm Enterprise</a></li>
       <li><a href="#">Products</a></li>
@@ -13,52 +16,79 @@
       <li><a href="#">Docs</a></li>
       <li><a href="#">Support</a></li>
     </ul>
-    <div>
+    </nav>
+    <div id="right">
     <img src="./images/npm-logo.png"/>
           </div>
-          <div>
+          <div id="left">
     <img src="./images/magnifying-glass.png"/>
           </div>
           <div>
           <a href="#">Join Log in</a>
           </div>
     </header>
-    <section1>
+    <body>
+    <section class="first-section">
      <h1>Build amazing things</h1>
-     <article>Essential Javascript development tools that help you go to market faster and build powerful applications using modern open source code. </article>       
+     <article>Essential Javascript development tools that help
+       you go to market faster and build powerful
+        applications using modern open source code. </article>       
    <div>
      <a href="#">See Plans  Join for Free</a>
-    </section1>
+    </section class="first-section">
         </div>
-      <section2>
-     <img src="./images/triangle-hexagon.svg"/>
+      <section class="second-section">
+     <img class="triangleHexagon" src="./images/triangle-hexagon.svg"/>
        <h3>Bring the best of open source to your company</h3>
-       <article>npm is the tool used by over 11,000.000 JavaScript developers aroun the world. Your developers already use it. Your company depends on it. Create an Org and get more out of the tools your team already knows and loves. </article> 
-      </section2>
-          <section3>
+       <article class="npm">npm is the tool used by over 11,000.000 JavaScript developers aroun the world. Your developers
+         already use it. Your company depends on it. Create an Org and get more out of the tools your team
+          already knows and loves.</article> 
+      </section class="second-section">
+          <section class="third-section">
+          <div class="first-column">
             <div>
-           <img src="./images/zero-configuration.svg"/>
-           </div>
+           <img class="zeroConfiguration" src="./images/zero-configuration.svg"/>
+          </div>          
            <h4>Zero configuration</h4>
-           <div>
-             <p>Create an org. add your team, and start collaborating.Nothing to configure, set up, or manage.
-           </div>
-           <div>
-             <img src="./images/team-management.svg"/>
+             <p>Create an org. add your team, 
+              and start collaborating.
+              Nothing to configure, set up, or 
+              manage.</p>
+              </div class="first-column">
+              <div class="second-column">
+                <div>
+             <img class="teamManagement src="./images/team-management.svg"/>
            </div>
            <h4>Team management</h4>
-       <p>Control who has acces to what modules within your team namespace using straightforward team management capabilities. 
+       <p>Control who has acces to 
+        what modules within your 
+        team namespace using 
+        straightforward team 
+        management capabilities. </p>
+       </div class=second-column>
+       <div class="third-column"
          <div>
-           <img src="./images/familiar-features.svg"/>
+           <img class="familiarFeatures" src="./images/familiar-features.svg"/>
            </div>
            <h4>Familiar features</h4>
-       <p>npm Orgs has 100% parity with all the public npm registry features your developers already use.
+       <p>npm Orgs has 100% parity with 
+        all the public npm registry 
+        features your developers 
+        already use.</p>
+        </div class="third-column"
+        <div class="fourth-column">
          <div>
-           <img src="./images/npm-audit.svg"/>
+           <img class="npmAudit" src="./images/npm-audit.svg"/>
            </div>
             <h4>npm audit</h4>
-       <p>Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer.
+       <p>Enjoy the security auditing 
+        features built into the npm 
+        client, a zero-friction way to 
+        make open source software 
+        safer.</p>
+        </div class="fourth-column">
+      </section class="third-section">
          <div>
                 <a href="#">Create an Org.</a>
-         </section3>
            </div>
+          </body>
