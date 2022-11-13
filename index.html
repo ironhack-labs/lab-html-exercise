@@ -4,13 +4,13 @@
   <head>
     <meta charset="UTF-8">
     <title>npm</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style.css">
   </head>
 
   <body>
     <header>
-        <div class="upper-header">
-            <div id="funny-button">
+        <div id="upper-header">
+            <div>
                 <img class="black-heart" src="images/black-heart.png" alt="black heart">
                 <span>Nifty Penguin Magic</span>
             </div>
@@ -26,16 +26,20 @@
             </nav>
         </div>
 
-        <div class="bottom-header">
-            <img src="/images/npm-logo.png" alt="npm logo">
-            <img src="/images/magnifying-glass.png" alt="search lens">
-            <form class="search">
-                <label for="searchbar"></label>
-                <input type="search" id="searchbar" name="searchbar" placeholder="Search packages">
-            </form>
-            <button type="button">Search</button>
-            <a href="link to somewhere">Join</a>
-            <a href="link to somewhere">Log In</a>
+        <div id="bottom-header">
+                <img src="/images/npm-logo.png" alt="npm logo">
+                <img class="magnifying-glass" src="/images/magnifying-glass.png" alt="search lens">
+                <form>
+                    <label for="searchbar"></label>
+                    <input class="search" type="search" id="searchbar" name="searchbar" placeholder="Search packages">
+                </form>       
+                <button type="button">Search</button>
+
+            <div class="nav-links">
+                <a href="#">Join</a>
+                <a href="#">Log In</a>        
+            </div>
+
         </div>    
     </header>
 
@@ -46,13 +50,15 @@
         <article>
             Essential JavaScript development tools that help you go to market faster and build powerful applications using modern open source code
         </article>
-        <a href="link to somewhere">See plans</a>
-        <a href="link to somewhere">Join for free</a>
+        <div class="links-section-top">
+            <a class="red-with-border" href="#">See plans</a>
+            <a class="join-for-free" href="#">Join for free</a>
+        </div>
     </section>
 
     <section id="section-middle">
         <img id="triangle-hexagon"src="/images/triangle-hexagon.svg" alt="hexagon made of triangles">
-        <h2>Bring the best of open source to your company</h2>
+        <h2 class="header-section-middle">Bring the best of open source to your company</h2>
         <article>
             npm is the tool used by
 over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it.
@@ -95,7 +101,7 @@ Create an Org and get more out of the tools your team already knows and loves.
             </div>
         </div>
 
-        <a href="link">Create an Org</a>
+        <a class="black-button" href="link">Create an Org</a>
         
     </section>
 
