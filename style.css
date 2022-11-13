@@ -35,26 +35,65 @@ nav a {
 }
 
 .logo {
-  height: 30px;
+  height: 28px;
+  padding-right: 10px;
 }
 
-.magnifying-glass {
-  height: 50px;
+.second-line-header {
+  padding: 10px 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border-bottom: 1px solid lightgray;
 }
 
 .search {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.search img {
-  height: 1rem;
-  align-items: center;
+  width: 950px;
 }
 
-.form input {
-  color-background: lightgray;
+.form {
+  width: 100%;
+  font-size: 1rem;
 }
+
+.search button {
+  background-color: #fb3b49;
+  padding: 6px 20px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-style: none;
+}
+
+.search input {
+  box-sizing: border-box;
+  background-image: url("images/magnifying-glass.png");
+  background-size: 1rem;
+  background-position: 10px;
+  background-repeat: no-repeat;
+  padding: 12px 12px 12px 40px;
+  width: 90%;
+  height: 28px;
+  background-color: rgb(244, 244, 244);
+  border-style: none;
+}
+.link-btn-header-log {
+  text-decoration: none;
+  color: black;
+  font-size: 0.8rem;
+  padding: 5px 12px;
+}
+
+.link-btn-header-join {
+  text-decoration: none;
+  color: black;
+  font-size: 0.8rem;
+  padding: 5px 12px;
+  border-style: solid;
+  border-width: thin;
+}
+
 #join-for-free {
   display: flex;
   flex-direction: column;
@@ -140,7 +179,7 @@ h2 {
 }
 
 h3 {
-  color: #ED1C24;
+  color: #ed1c24;
   text-align: left;
   font-size: 0.8em;
   font-weight: bold;
@@ -162,7 +201,7 @@ h3 {
 .create-an-Org-btn {
   background-color: black;
   color: white;
-  box-shadow: 8px 8px 0 rgba(128, 83, 35, .2);
+  box-shadow: 8px 8px 0 rgba(128, 83, 35, 0.2);
   padding: 12px 80px;
   font-size: 0.9em;
   text-align: center;
