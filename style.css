@@ -4,88 +4,88 @@ body {
   font-family: 'Poppins';
 }
 header > div {
-    padding: 0 25px;
-    display: flex;
-    justify-content: space-between;
-    align-items:center;
-    border-bottom: 1px solid lightgray;
-  }
+  padding: 0 25px;
+  display: flex;
+  justify-content:flex-start;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+}
+
+nav {
+  width: 600px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+.blackHeart {
+  width: 20px;
+  margin-right: 1rem;
+}
+.span-penguin{
+  justify-content: right;
+  float: right;
+}
+
+.NPM{
+  width: 3em;
+}
+.search-bar{
+  margin-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom:;
+}
+.search-button{
+  display: flex;
+  height: 40px;
+  width: 50rem;
+}
+
+.search-button input{
+  padding-left: 30px;
+  background-color:rgb(207, 200, 200) ;
+  border-style: none;
+  text-align: left;
+  width: 100%;
   
-  nav {
-    width: 600px;
-  }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  nav a {
-    text-decoration: none;
-    color: black;
-  }
-  
-  .blackHeart {
-    width: 20px;
-    margin-right: 1rem;
-  }
-  .search-bar{
-    display: flex;
-    justify-content: space-between;
+}
+.search-button button{
 
-  }
-  .NPM{
-    width: 50px;
-    margin-right: 1rem;
-  }
-  .search-button button{
-    display: flex;
-    font-family: 'poppins';
-    color:white;
-    background-color: #fb3e44;
-    border:none;
-    padding:6px;
-
-
-  }
-  .search-bar a{
-    display: flex;
-    padding: auto;
-    width:4rem;
-    
-
-  }
-  .search-bar input[type=text]{
-    display: flex;
-    padding: 6px 70%;
-    border: none;
-    margin-top: 8px;
-    margin-right: 16px;
-    font-size: 17px;
-    background-color: rgb(242, 241, 241);
-  }
-  .search-bar form{
-   
-  }
-
-
-  .search-bar .join-button{ 
-    text-align: center;
-    text-decoration:none;
-    border: 1px solid black;
-    color: black;
-  }
-  .search-bar .button-login{
-    text-decoration: none;
-    color: black;
-  }
-
+  background-color:#fb3e44;
+  color: white;
+  border-style: none;
+  font-weight: lighter;
+  width: 5rem;
+}
+.join-button{
+  border:1px solid black;
+  text-decoration: none;
+  color: black;
+  width: 80px;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.button-login{
+  text-decoration: none;
+  color: black;
+}
   .first-box{
     text-align: center;
     background-color:rgba(232,217,217,.3);
     padding: 5%;
+    padding-bottom: 5em;
   }
   .first-box h1{
     padding-bottom: 0px;
@@ -119,6 +119,7 @@ header > div {
     color: black;
     text-decoration: none;
     padding:10px 50px ;
+    font-weight: bolder;
   }
 
   .second-box{
@@ -153,13 +154,15 @@ header > div {
   .third-box >div{
     flex-direction: row;
     display: flex;
+    justify-content: space-evenly;
+  
   }
   
   
   .third-box img{
     flex-direction: row;
     display: flex;
-    width: 3rem;
+    width: 2rem;
   }
 
   .third-box h3{
@@ -173,13 +176,25 @@ header > div {
     color:white;
     box-shadow: 8px 8px 0 rgba(128,83,35,.2);
     text-decoration: none;
-    width:50px;
-    height: 100px;
-    flex-direction: initial;
+    text-align: center;
+    place-items: center;
+    justify-content: center;
+    width: 20em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 7em;
+    margin-bottom: 7em;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    font-weight: bolder;
   }
   .last-piece article{
-    width:10%
+    width:10%;
     flex-direction: row;
     display: flex;
     text-align: left;
+    
+  }
+  .third-box .little-text{
+    width: 300px;
   }
