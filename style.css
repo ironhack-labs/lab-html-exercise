@@ -36,6 +36,8 @@ header > div {
 .btn {
     background-color: #fb3e44;
     color: white;
+    border:none;
+    padding: 5px 5px;
 }
 .formStyles {
     display: flex;
@@ -46,7 +48,24 @@ header > div {
     width: 80px;
 }
 .label {
-    color: rgba(0,0,0,.05);
+    background-color: rgba(0,0,0,.05);
+}
+.label img {
+    width: 15px;
+}
+.searchField {
+    border:none;
+    background-color: rgba(0,0,0,.05);
+    padding: 5px 5px;
+}
+.secondHeader {
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+.headerLinks a {
+    text-decoration: none;
+    color:black;
 }
 #first {
     height: 600px;
@@ -58,18 +77,28 @@ header > div {
 }
 #first p {
     text-align: center;
+    margin-left: ;
+}
+#first h1 {
+    font-size: 50px;
+}
+#first div {
+    margin: 20px;
 }
 .seePlansBtn {
     text-decoration: none;
     color: white;
     background-color: #FB3B49;
     box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+    padding: 20px;
 }
 .joinLink {
     text-decoration: none;
     color: black;
+    padding: 20px;
 }
 #second {
+    height: 600px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -99,9 +128,21 @@ header > div {
     color: #ED1C24;
 }
 .createAnOrg {
+display: flex;
+justify-content: center;
+}
+.createAnOrg a {
     padding: 20px;
     text-decoration: none;
     background-color: black;
     box-shadow: 8px 8px 0 rgba(128,83,35,.2);
     color: white;
+}
+.boxes {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+.boxes div{
+    margin: 20px;
 }
