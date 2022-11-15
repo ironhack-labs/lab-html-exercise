@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
+body {
+  font-family: "Poppins";
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*--------------------
+     HEADER STYLE
+  ------------------- */
+/* ---header first div ----*/
+header > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid lightgrey;
+  padding: 0px 25px;
+}
+
+nav {
+  width: 600px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+.blackHeart {
+  width: 20px;
+  margin-right: 1rem;
+}
+/* ---header second div ----*/
+
+.searchform {
+  width: 1100px;
+  background-color: rgb(246, 240, 240);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 10px;
+
+  margin: 2px 0;
+}
+.searchform > input {
+  width: 1000px;
+  border: none;
+  background-color: rgb(246, 240, 240);
+  height: 30px;
+}
+.searchform > button {
+  background-color: #ed1c24;
+  color: white;
+  padding: 10px;
+  border: none;
+}
+#joinButton,
+#loginButton {
+  text-decoration: none;
+  color: black;
+}
+#loginButton {
+  margin-left: 10px;
+}
+#joinButton {
+  background-color: rgb(255, 255, 255);
+  border: 1px solid grey;
+  padding: 2px 5px;
+}
+.imageMagnifyingGlass {
+  width: 20px;
+}
+.imagelogo {
+  width: 50px;
+}
+/*--------------------
+  HERO SECTION STYLE
+  ------------------- */
+#hero {
+  height: 600px;
+  background-color: rgba(232, 217, 217, 0.3);
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#hero h1 {
+  font-size: 60px;
+}
+#hero > article {
+  width: 400px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#hero div {
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+}
+#hero div a {
+  text-decoration: none;
+  padding: 10px 40px;
+}
+#plans {
+  background-color: #fb3b49;
+
+  color: white;
+  box-shadow: 8px 8px 0 rgba(251, 59, 73, 0.2);
+}
+#join {
+  color: black;
+}
+/*--------------------------
+  DESCRIPTION SECTION STYLE
+  --------------------------*/
+#description {
+  height: 600px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#imageHexagon {
+  height: 150px;
+}
+#description h2 {
+  font-size: 30px;
+  background-color: rgba(255, 204, 53, 0.4);
+  transform: skew(9deg, 0deg);
+  font-style: italic;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+#description > article {
+  width: 680px;
+  text-align: center;
+}
+/*--------------------------
+DESCRIPTION SECTION STYLE END
+  --------------------------*/
+/*--------------------------
+    FEATURE SECTION STYLE 
+  --------------------------*/
+.cardimage {
+  width: 20px;
+}
+#features {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.featuresCard {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.card {
+  padding: 10px;
+  width: 200px;
+  height: 180px;
+}
+.card h3 {
+  color: #ed1c24;
+  font-size: 15px;
+}
+.card p {
+  font-size: 12px;
+}
+#createbutton {
+  margin-bottom: 50px;
+  background-color: black;
+  display: inline-block;
+  align-self: center;
+  padding: 5px 40px;
+  box-shadow: 8px 8px 0 rgba(128, 83, 35, 0.2);
+  color: white;
+  text-decoration: none;
+}
