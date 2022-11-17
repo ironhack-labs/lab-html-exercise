@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float model</title>
+    <style>
+        #box-1{
+            float: left;
+            width: 45%;
+            border: solid 1px;
+            padding: 20px;
+        }
+        #box-2{
+            float: right;
+            width: 45%;
+            border: solid 1px;
+            padding: 15px;
+        }
+        a:link{
+            color: red;
+            background-color: yellow;
+        }
+        a:visited{
+            background-color: green;
+            color: white;
+        }
+        a:hover{
+            background-color: blueviolet;
+            color:blue;
+        }
+        .section-1{
+             height: 300px;           
+        }   
+        .btn{
+            background-color: blueviolet;
+            color: white;
+            padding: 10px;
+            border-radius: 10px;
+            border:solid 2px black;
+        }
+        .btndiv{
+            display: flex;
+            justify-content: center;
+            margin: 10px;
+        }
+        .btn:hover{
+            background-color: blue;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <section class="section-1">
+            <div class="box" id="box-1">
+                <h3>Html & CSS First Steps</h3>
+                <p> When styling with CSS, its important to know its fundamental structure. Understanding basic CSS syntax will help you to become a better developer and allow you to make better decisions about how you code. The anatomy of CSS can be described using the following concepts:
+                    <ul class="list-1">
+                        <li>Rules or rulesets</li>
+                        <li>Selectors</li>
+                        <li>Declarations</li>
+                        <li>Properties</li>
+                        <li>Values and units</li>
+                    </ul>
+                </p>
+                <a href="" class="link1">Cool link1</a>
+            </div>
+            <div class="box" id="box-2">
+                <h3>Javascript Future Steps</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, voluptate et eaque deleniti, inventore ad recusandae in architecto quisquam excepturi labore, placeat nisi. Eveniet vitae cum eaque recusandae reprehenderit atque?Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam deleniti inventore quae ex dolorem corrupti voluptatem magni, earum quaerat beatae debitis, odit laborum temporibus eius error ullam rerum id! Quibusdam.
+                </p>
+                <a href="" class="link2">Cool link2</a>
+            </div>
+        </section>    
+        <div class="btndiv">
+            <button class="btn">My button</button>
+        </div>
+    </header>
+</body>
+</html>

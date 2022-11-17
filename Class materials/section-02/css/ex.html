@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<head>
+    <style>
+        .form {
+            border: solid 2px black;
+            padding: 20px;
+        }
+        .form h2 {
+             color: green;
+             font-weight: 900;
+        }
+        .formInput #bandname{
+            color:red;
+            font-weight: 900;
+        }
+    </style>
+</head>
+<html>
+<body>
+<form class="form">
+    <h2>Band's registration</h2>
+        <p>Enter your band's details to participate in the contest 2022</p>
+    <div class="formInput">
+        <label 
+        for="bandname" id="bandname"
+        >Enter Bands name</label><br>
+        <input 
+            type="text" 
+            placeholder="Enter the band name" id="bandname"><br><br>
+    </div>
+    <div class="formInputMember">
+        <label 
+        for="bandnamememb">Enter Bands name</label><br>
+        <input 
+            type="text" 
+            placeholder="Enter the band name" id="bandnamememb"><br><br>
+    </div>
+    <div class="formInputEmail">
+        <label 
+        for="emailform" 
+        >Enter Bands name</label><br>
+        <input 
+            type="email" 
+            placeholder="Enter the email's band name" id="emailform"><br><br>
+    </div>
+    <div class="formInputgenre">
+        <label 
+        for="bandgenre" 
+        >Select Band Genre</label><br>
+        <select name="bandgenre" id="bandgenre">
+            <option value="">Select Band Genre</option>
+            <option value="reggaeton">Reggaeton</option>
+            <option value="hiphop">Hiphop</option>
+            <option value="electronic">Electronic</option>
+        </select><br><br>
+    </div>
+    <div class="formradio">
+        <label for="radio" value="">Set times</label><br><br>
+        <input type="radio" name="radio" id="radio">
+        <label for="radio" value="1 song">One song</label><br>
+        <input type="radio" name="radio" id="radio2">
+        <label for="radio2" value="2 songs">Two songs</label><br>
+        <input type="radio" name="radio" id="radio3">
+        <label for="radio3" value="3 songs">Three songs</label><br>
+    </div>
+    <input type="submit" value="Let's Rock!">
+</form>
+<script>
+
+</script>
+</body>
+</html>

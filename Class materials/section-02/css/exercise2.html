@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boxes</title>
+    <style>
+        .contenedor {
+            height: 500px;
+            width: 500px;
+            position: relative;
+            background-color: rgb(0, 213, 255);
+        }
+        div > div:nth-child(1) {
+            position: absolute;
+            right: 0px;
+            bottom: 0px;
+            height: 200px;
+            width: 200px;
+        }
+        div > div:nth-child(2) {
+            position: absolute;
+            height: 200px;
+            width: 200px;
+        }
+        div > div:nth-child(3) {
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            height: 200px;
+            width: 200px;
+        }
+        div > div:nth-child(4){
+            position: absolute;
+            left: 0px;
+            bottom: 0px;
+            height: 200px;
+            width: 200px;
+        }
+        #img{
+            height: 200px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <div id="box-1">
+            <img src="https://hospitalveterinariodonostia.com/wp-content/uploads/2018/12/6-lugares-donde-puedes-ver-animales-exoticos-6.jpg" alt="pelicano" id="img">
+        </div>
+        <div id="box-2">
+            <img src="/Pelikan_Walvis_Bay.jpeg" alt="pelikan" id="img">
+        </div>
+        <div id="box-3">
+            <img src="https://s1.eestatic.com/2022/08/09/enclave-ods/historias/694190820_226335504_1024x576.jpg" alt="panda" id="img">
+        </div>
+        <div id="box-4">
+            <img src="frisona-1280x720.jpeg" alt="vaca" id="img">
+        </div>
+    </div>
+</body>
+</html>

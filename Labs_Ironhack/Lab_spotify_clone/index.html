@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Spotify Clone</title>
+    <link rel="stylesheet" href="/styles/style.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+      @media (max-width: 700px) {
+              #spotify-app-icon{
+                position: fixed;
+                display: none;
+              }
+              header {
+                display: flex !important;
+                justify-content: center !important;
+                flex-direction: column !important;
+                height: 200px !important;
+                align-items: center !important;
+              }
+              .menu {
+                display: flex !important;
+                align-items: center !important;
+                flex-direction: column !important;
+                margin-top: 20px;
+                margin-left: 40px;
+              }
+              #img-logo{
+                display: flex;
+                align-items: center;
+              }
+              #nav-menu{
+                display: flex;
+                justify-content: center;
+              }
+              .section-3{
+                height: 700px;
+              }
+              #icon-section{
+                display: flex !important;
+                flex-direction: column !important;
+                align-items: center !important;
+                height: 600px;
+                margin-bottom: 80px;
+              }
+              .div-icon-section{
+                margin-top: 20px;
+              }
+              #section-3-flex{
+                display: flex !important;
+                flex-wrap: wrap !important;
+                align-items: center !important;
+            }
+            #spotify-icon{
+              margin-top: 60px;
+            }
+            .section-3 hr {
+              width: 300px;
+            }
+            .js-background{
+              background-color: red !important;
+            }
+            .javascript-example{
+              position: fixed;
+              z-index: 1;
+              width: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              background-color: #fff;
+}
+          }
+      
+    </style> 
+  </head>
+  <body>
+    <header class="javascript-example">
+          <img src="/images/spotify-logo.png" alt="logo-spotify" id="img-logo"/>
+        <div class="menu">
+          <a href="#" onclick="myFunction()" >Premium</a>
+          <a href="#" onclick="myFunction()" >Discover</a>
+          <a href="#" onclick="myFunction()" >Help</a>
+          <a href="#" onclick="myFunction()" >Download</a>
+        </div>
+        <script>
+          function myFunction() {
+            alert("Working process dude, thanks for the waiting :) ");
+          }
+          </script>
+    </header>
+    <section class="section-1">
+      <h2>Music for everyone.</h2>
+      <p>
+       Spotify is now free on mobile, tablet and computer. Listen to the
+       right music, wherever you are.
+      </p>
+    </section>
+    <section class="section-2">
+      <div id="section-2-hr">
+        <h4>What’s on Spotify? </h4>
+        <hr />
+      </div>
+      <div id="icon-section">
+        <div class="div-icon-section">
+          <img src="/images/music-icon.png" alt="music-icon" id="icon-img"/>
+          <h5>Millions of Songs</h5>
+          <p>There are millions of songs on Spotify</p>
+        </div>
+        <div class="div-icon-section">
+          <img src="/images/high-quality-icon.png" alt="audio-icon" id="icon-img"/>
+          <h5>HD Music</h5>
+          <p>Listen to music as if you were listening live</p>
+        </div>
+        <div class="div-icon-section">
+         <img src="/images/devices-icon.png" alt="devices-icon" id="icon-img"/>
+         <h5>Stream Everywhere</h5>
+         <p>Stream music on your smartphone, tablet or computer</p> 
+      </div>
+    </div>
+    </section>
+    <section class="section-3">
+        <h4>Its a yeezy as Kanye West</h4>
+         <hr />
+      <div id="section-3-flex">
+        <div id="section-3-paragraph">
+          <h5>Search</h5>
+            <p>Search Know what you want to listen to? Just search and hit play.</p>
+          <h5>Browse</h5>
+            <p> Browse Check out the latest charts, brand new releases and great playlists for right now.</p>
+          <h5>Discover</h5>
+            <p>Discover Enjoy new music every Monday with your own personal playlist. Or sit back and enjoy Radio.</p>
+        </div>
+        <script type="text/javascript">
+          function setNewImage()
+          {
+            document.getElementById("spotify-icon").src = "/images/spotify-icon-black.png";
+          }
+          function setOldImage()
+          {
+            document.getElementById("spotify-icon").src = "/images/spotify-icon-white.png";
+          }
+        </script>
+        <img id="spotify-icon" onmouseover="setNewImage()" onmouseout="setOldImage()" src="/images/spotify-icon-white.png" alt="spotify-icon"/>
+        <img src="/images/spotify-app.jpg" alt="spotify-app-landing" id="spotify-app-icon">
+      </div>  
+        </section> 
+        <script>
+          const changeHeaderColor = document.querySelector(".javascript-example");
+          const changeTextColor = document.querySelector(".menu");
+          window.onscroll = function () {
+            const scroll = window.pageYOffset;
+            if(scroll > 600){
+              changeHeaderColor.classList.add("js-background");
+              changeTextColor.classList.add("js-menu");
+            }
+            else{
+              changeHeaderColor.classList.remove("js-background");
+              changeTextColor.classList.remove("js-menu");
+            }
+          }
+        </script>   
+  </body>
+</html>

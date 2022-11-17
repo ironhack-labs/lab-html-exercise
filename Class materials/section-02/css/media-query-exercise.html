@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+        .media-query{
+            background-color: green;
+        }
+        @media (max-width: 700px) {
+            .media-query{
+                  /* for mobile phones */
+                background-color: red;
+            }
+        }
+        @media (max-width: 900px) and (min-width: 701px) {
+            .media-query{
+                  /* for desktop */
+                background-color: blueviolet;
+            }
+        }
+        @media (min-width:901px) and (max-width: 1200px){
+            .media-query{
+                  /* for small devices as tablets */
+                background-color: blue;
+            } 
+        }
+         @media (min-width: 1201px){
+            .media-query{
+                  /* large laptops */
+                background-color: grey;
+            }
+        } 
+      
+    </style>
+<body class="media-query">
+        <h2>Aprendiendo media query</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim rem praesentium esse sapiente adipisci, incidunt cum? Rem quibusdam, atque laudantium repudiandae consequuntur minima nostrum necessitatibus aliquam sint eum adipisci odit!</p>
+</body>
+</html>

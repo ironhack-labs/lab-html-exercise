@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dom Manipulation 2</title>
+    <style>
+      body {
+        background-color: #037171;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .button {
+        background-color: #c1e736;
+        width: 200px;
+        border: none;
+        font-size: 2rem;
+        padding: 0.5rem;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .box-display {
+        width: 200px;
+        height: 200px;
+        background: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .remove-test {
+        background: #c1e736;
+      }
+      .but{
+        
+      }
+    </style>
+  </head>
+  <body>
+    <div id="parent">
+      <div id="firstchild">I love pizza</div>
+      <p id="secondchild">I like to watch fireship on youtube</p>
+      <h4>I love playing guitar</h4>
+      <h1>C.R.E.A.M</h1>
+      <p>I am the last one on this list....</p>
+    </div>
+    <button id="master">Click me</button>
+    <div class="box-display remove-test">remove test</div>
+    <script src="/dom-manipulation.js">
+    </script>
+  </body>
+</html>

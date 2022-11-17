@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        .form{
+            background-color: lightgrey;
+            border-radius: 10px;
+            padding: 20px;
+        }
+        .formcontainer {
+            color: black;
+            font-weight: 700;
+            line-height: px;
+        }
+       input[type="submit"]{
+         background-color: light;
+         padding: 10px;
+         color: black;  
+         border: solid 1px black;
+         border-radius: 10px;
+         width: 100%;
+       }
+       .formcontainer input[type="file"]{
+            
+       }
+
+    </style>
+
+</head>
+<body>
+    <form class="form">
+        <h2>Completa el formulario</h2>
+        <p>Completa el formulario con tus datos básicos
+        </p>
+        <div class="formcontainer">
+            <label for="name">Name</label><br>
+            <input type="text" id="name" placeholder="Georgina" value="name"><br><br>
+        </div>
+        <div class="formcontainer">
+            <label for="dob">Date of birth</label><br>
+            <input type="date" id="age" value="date"><br><br>
+        </div>
+        <div class="formcontainer">
+            <label for="age">Age</label><br>
+            <input type="number" id="dob" value="age" placeholder="18"><br><br>
+        </div>
+        <div class="formcontainer">
+            <label for="email">Email</label><br>
+            <input type="email" id="email" value="email"><br><br>
+        </div>
+        <div class="formcontainer">
+            <label for="password">Password</label><br>
+            <input type="password" id="password" min= "8" max="15" required><br><br>
+        </div>
+        <div class="formcontainer">
+            <label for="cardnumber">Credit Card Number</label><br>
+            <input type="number" id="cardnumber"><br><br>
+        </div>
+        <div class="formcontainer">
+            <label for="color">Your favourite Color</label><br>
+            <input type="color" id="color" name="color"><br><br>
+        </div>
+        <div class="formcontainer">
+            <label for="direction">Direction</label><br>
+            <input type="text" id="direction"><br><br>
+        </div>
+        <div class="formcontainer">
+            <label for="file">Choose a file</label><br>
+            <input type="file" id="file"><br><br>
+        </div>
+        <input type="submit" id="submit" value="Send the form">
+    </form>
+    <script>
+        var name = $('#name')
+        document.querySelector("#name");
+        if (name === null)
+            alert("")
+    </script>
+</body>
+</html>
