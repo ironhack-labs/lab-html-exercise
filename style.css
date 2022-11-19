@@ -17,7 +17,7 @@ body {
   #head_2 {
     padding: 0 25px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     border-bottom: 1px solid lightgray;
   }
@@ -51,11 +51,12 @@ nav a {
 
 #npm_logo{
   width: 70px;
+  padding-right: 10px;
 }
 
 
 form > input  {
-  width: 1200px;
+  width: 1390px;
   padding: 15px;
   background:none;
   border: none;
@@ -77,14 +78,14 @@ i > img{
 #search_bar{
   background-color :#f2f2f2;
   margin: 10px 0 10px 10px;
-  width:1200px;
+  width:1420px;
 }
 
-button {
+#searchbutton {
   display: flex;
   background-color: #fb3e44;
   color: white;
-  padding: 8px 16px;
+  padding: 11px 16px;
   align-items: flex-start;
   margin: 0;
   font-size: large;
@@ -98,22 +99,24 @@ button {
   font-size: small;
   padding: 8px 16px;
   text-decoration: none;
+  color: black;
 }
 
 #login{
   font-size: small;
   padding: 8px 16px;
   text-decoration: none;
+  color: black;
 }
 
 
 #BuildAmazingThings{
-  margin: 1Opx 0px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color:#f8f4f4 ;
+  background-color:rgba(232,217,217,.3);
+  height: 600px;
 }
 
 h1 {
@@ -142,10 +145,10 @@ h1 {
   font-size: 18px;
   padding: 10px 100px;
   text-decoration: none;
-  background-color: #fb3e44;
+  background-color:#FB3B49;
   color: white;
   padding: 16px 70px;
-  box-shadow: 8px 8px 0 #f8cfd2;
+  box-shadow: 8px 8px 0 rgba(251,59,73,.2);
   font-weight: bolder;
   margin-top: 60px;
   margin-bottom: 40px;
@@ -230,13 +233,18 @@ h2 {
 }
 
 h3{
-  color: #fb3e44;
+  color:#ED1C24;
   font-size:15px;
   font-weight: bolder;
 }
 
-#test{
+#createOrg{
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 50px;
+}
+
+#joinLogin{
+padding-left: 63px;
 }
