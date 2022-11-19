@@ -1,238 +1,157 @@
-:root {
-    --blue: rgb(67, 163, 230);
-    --dark-blue: rgb(25, 33, 41);
-    --text: #000;
-}
-html,
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
 body {
-    margin: 0;
-    padding: 0;
+  font-family: 'Poppins';
 }
-body {
-    font-family: 'Roboto', sans-serif;
-    size: 10px;
-    line-height: 3.5em;
-    font-weight: 300;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: 'Roboto Condensed', sans-serif;
-}
-h1 {
-    font-size: 9em;
-    text-align: center;
-    text-transform: uppercase;
-}
-h2 {
-    color: white;
-    text-shadow: #020819 8px -20px 9px;
-    font-size: 5em;
-    text-align: center;
-    text-transform: uppercase;
-    line-height: 4em;
-}
-h3 {
-    font-size: 4.2em;
-    text-align: center;
-    line-height: 1em;
-}
-h4 {
-    font-size: 1.5em;
-    letter-spacing: 0.4px;
-    line-height: 1em;
-    margin-bottom: 15px;
-}
-h5 {
-    font-size: 1.2em;
-    line-height: 1em;
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
-.nav-bar {
-    background-color: var(--dark-blue);
-    padding: 14px 0;
-}
-.nav-bar a {
-    color: white;
-    text-decoration: none;
-    font-size: 2em;
-}
-.nav-bar ul {
-    list-style: none;
-    width: 1200px;
-    margin: 0 auto;
+header > div {
+    padding: 0 25px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
 }
-.nav-bar ul li {
-    list-style-type: none;
-    text-align: center;
-  }
-.header {
-    background-image: url("https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/ironhack-skydive-background.jpg");
-    background-position: 0 0;
-    background-size: cover;
-    height: 650px;
-    padding-top: 50px;
-    background-repeat: no-repeat;
-    position: relative;
+nav {
+    width: 600px;
 }
-.quote {
-    font-size: 2.5em;
-    position: absolute;
-    left: 10%;
-    bottom: 100px;
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-.dark-background {
-    background-color: var(--dark-blue);
-    color: white;
+nav a {
+    text-decoration: none;
+    color: black;
+}
+.black-heart {
+    width: 20px;
+    margin-right: 1rem;
+}
+.npm-logo {
+    width: 50px;
+    margin-right: 0;
+}
+.glass {
+    width: 15px;
 }
 .text {
-    font-size: 2em;
-    font-weight: 100;
-    text-align: center;
-    margin: 20px 0;
+    width: 900px;
+    background-color: rgba(0,0,0,.05);
 }
-.link-btn {
-    background-color: var(--blue);
-    color: white;
-    font-family: 'Roboto Condensed';
-    font-size: 2em;
-    letter-spacing: 0.5px;
-    text-align: center;
-    text-decoration: none;
-    padding: 10px 30px;
+.search {
+    width: 70px;
+    height: 40px;
+    background-color: #fb3e44;
+    border-color: #fb3e44;
+    border-radius: 5px;
+    color: #fff;
 }
-.service-box {
-    font-size: 1.7em;
-    text-align: center;
-    border: 2px solid #eee;
-    border-radius: 20px;
-    box-sizing: border-box;
-    box-shadow: 2px 2px 10px 0 #eee;
-    margin: 50px 5% 0 5%;
-    padding: 20px;
-    width: 40%;
+.join {
+    width: 50px;
+    height: 30px;
+    padding: 0; 
+    border-color: rgba(0,0,0,.05); 
+    background: none;
+
 }
-.service-box img {
-    width: 125px;
+.login {
+    width: 50px;
+    height: 30px;
+    padding: 0; 
+    border: none; 
+    background: none;
 }
-#team {
-    padding: 75px 0;
+#main {
+    height: 400px;
+    padding: 75px auto;
     margin: 0 auto;
+    background-color: rgba(232,217,217,.3);
 }
-#team p {
-    width: 60%;
+#main > h1 {
+    font-size: 48px;
+    text-align: center;
+}
+#main > p {
+    text-align: center;
+    width: 50%;
     margin: 10px auto;
 }
-#team hr {
-    margin: 20px auto 30px auto;
-    width: 40%;
-}
-#team .section-text {
-    font-size: 1.9;
-    text-align: center;
-}
-#team .member-name {
-    font-size: 1.5;
-    font-weight: 700;
-}
-#team img {
-    width: 250px;
-    height: 180px;
-}
-.footer {
-    font-size: 1.9em;
-    text-align: center;
-    padding: 40px 100px;
-    margin-bottom: 25px;
+#options {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.address {
-    font-style: normal;
-    font-size: 0.8em;
-    margin-bottom: 30px;
-}
-.footer a {
-    color: var(--blue);
-    text-decoration: none;
-}
-.footer ul {
-    list-style: none;
-    padding: 0;
-}
-.container {
-    width: 1200px;
-    margin: 0 auto;
-    padding: 75px 0;
-}
-.schedule-table {
-    margin: 0 auto 40px auto;
-    font-size: 1.5em;
-}
-.schedule-table th,
-td {
-    border-bottom: 1px solid black;
-    padding: 5px 10px;
-    text-align: center;
-}
-#general-information {
-    display: flex;
-    justify-content: space-evenly;
-}
-#general-information .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 370px;
-}
-#structure > div {
-    display: flex;
-    justify-content: space-between;
     flex-direction: row;
-    flex-wrap: wrap;
-}
-#team > div {
-    display: flex;
-    justify-content: space-evenly;
-}
-#team > div > article {
-    display: flex;
     justify-content: center;
+    padding: 30px;
+}
+#see-plans {
+    background-color: #FB3B49;
+    width: 150px;
+    height: 40px;
+    margin-right: 20px;
+}
+#join-free {
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+    width: 150px;
+    height: 40px;
+    margin-left: 20px;
+}
+#intro {
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+
+}
+#intro > article {
+    width: 640px;
+    height: 400px;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 100px;
+}
+#intro > article > h2 {
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+    font-style: italic;
+    width: 600px;
+}
+#triangle {
+    width: 240px;
+}
+#flexboxes {
+    display: flex;
+}
+#flexboxes > div {
+    border-style: solid;
+    border-width: 6px 3px;
+    border-color: #FB3B49;
+    padding: 12px;
+    margin-bottom: 80px;
+}
+
+#boxes {
+    width: 25px;
+}
+#org-button {
+    display: flex;
     flex-direction: column;
     align-items: center;
 }
-.map-frame {
-    height: 375px;
-    width: 60%;
-}
-.slot-form-container {
-    width: 40%;
-    margin: 18px auto 0 auto;
-    font-size: 1.5em;
+.create {
+    background-color: black;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    padding: 10px 30px;
+    width: 240px;
     text-align: center;
 }
-.slot-form-container label {
-    line-height: 15px;
-    margin: 5px;
+h3 {
+    color: #ED1C24;
 }
-.slot-form-container input,
-select {
-    height: 20px;
-    outline: none;
-    padding: 3px;
-    width: 100%;
-}
-.slot-form-container button {
-    border: 1px solid black;
-    color: black;
-    background-color: white;
-    padding: 9px;
-    margin-top: 15px;
-}
+
+
+
+
