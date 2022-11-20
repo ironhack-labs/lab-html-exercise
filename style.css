@@ -4,8 +4,8 @@ body {
 }
 
 header > div {
-    padding: 0 25px;
     display: flex;
+    padding: 0 25px;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid lightgray;
@@ -16,8 +16,8 @@ header > div {
   }
   
   nav ul {
-    list-style: none;
     display: flex;
+    list-style: none;
     justify-content: space-between;
     align-items: center;
   }
@@ -32,6 +32,22 @@ header > div {
     margin-right: 1rem;
   }
 
+.search {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+form {
+    margin-top: 1%;
+}
+
+button {
+    background-color: #fb3e44;
+    color: white;
+}
+
 #S1 {
     display: flex;
     flex-direction: column;
@@ -41,8 +57,44 @@ header > div {
     background-color: rgba(232,217,217,.3);
 }
 
+#S1 h1 {
+    font-size: 4em;
+}
+
+#S1 article {
+    text-align: center;
+    margin: 20 10 20 10;
+    width: 450;
+}
+
+#S1 div {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin: 20 10 20 10;
+    width: 450;
+}
+
+.join-for-free {
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    width: 150;
+}
+
 .center {
     text-align: center;
+}
+
+
+
+.see-plan {
+    text-align: center;
+    background-color: #FB3B49;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+    color: white;
+    text-decoration: none;
+    width: 150;
 }
 
 #S2 {
@@ -50,4 +102,39 @@ header > div {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+#S2 > h2 {
+    background-color: rgba(255,204,53,.4);
+}
+
+#S2 article {
+    text-align: center;
+    margin: 20 10 20 10;
+    width: 750;
+}
+
+#S3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    text-align: left;
+}
+
+#S3 > div {
+    margin: 0 50 0 50;
+    padding: 0 10 0 10;
+}
+
+#S3 h3 {
+    color: #ED1C24;
+}
+
+#S3 a {
+    color: white;
+    background-color: black;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
 }
