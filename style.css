@@ -39,30 +39,40 @@ header > div {
     padding:5px 15px;
     margin:10px;
   }
-
+  #search-login .links .login{
+    margin-right:10px;
+  }
   /* search bar - login links */
 
   #search-login{
     display: flex;
+    padding: 10px;
     flex-direction: row;
     align-items: center;
   }
   #search-login .logo{
-    align-self: auto;
-    width: 75px;
-    margin: 10px;
+    width: 60px;
+    margin-right: 1rem;
   }
-  #search-login form > label,
-  input{
-    background-color: rgba(0,0,0,.05);
+
+  form {
+    height: 30px;
+    width: 80%;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4px 0;
+    padding-left: 10px;
   }
   #search-login form label img{
-    height: 30px;
-    padding: 10px;
+    height: 20px;
   }
   #search-login form input{
     height: 30px;
-    border: 1px solid white;
+    border:none;
+    width: 100%;
+    background-color: rgba(0,0,0,.05);
   }
 
   #search-login .links a{
