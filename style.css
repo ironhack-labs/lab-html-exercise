@@ -16,6 +16,10 @@ nav {
   width: 600px;
 }
 
+.buscador {
+  width: 75%;
+}
+
 nav ul {
   list-style: none;
   display: flex;
@@ -59,11 +63,12 @@ nav a {
 form {
   display: flex;
   flex-direction: row;
-  align-items: space-between;
+  align-items: center;
   justify-content: space-between;
+  margin: 0;
 }
 
-#search {
+form #search {
   margin: 0;
   border: 0;
   padding: 0;
@@ -71,7 +76,7 @@ form {
 }
 
 label {
-  width: 100%;
+  color: rgba(0,0,0,.05);
 }
 
 #button {
@@ -80,16 +85,11 @@ label {
   text-decoration: none;
   text-align: center;
   padding: 10px 20px;
+  margin: 0;
 }
 
-form > input {
+input {
   color: rgba(0,0,0,.05);
-  display: flex;
-  justify-content: space-between;
-}
-
-form > label {
-  color: rgba(0,0,0,.05); 
 }
 
 #intro {
@@ -166,6 +166,7 @@ section > div {
 #services {
   display: flex;
   justify-content: center;
+  margin-top: 50px;
 }
 
 #services div {
@@ -173,6 +174,12 @@ section > div {
   flex-direction: column;
   width: 200px;
   padding: 0 30px;
+  align-items:flex-start;
+  justify-content: flex-start;
+}
+
+#services p {
+  margin: 0;
 }
 
 .zero-configuration {
@@ -193,4 +200,18 @@ section > div {
 
 h4 {
   color: #ED1C24;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}
+
+footer a {
+  color: white;
+  background-color: black;
+  padding: 10px 80px;
+  text-decoration: none;
+  box-shadow: 8px 8px 0 rgba(128,83,35,.2);
 }
