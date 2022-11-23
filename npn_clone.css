@@ -74,6 +74,19 @@ input.site-search {
    
 }
 
+#search-button nav {
+    text-align: right;
+    margin-left: 8px;
+}
+
+#join {
+    background-color: none;
+    border: 1px solid lightgrey;
+    margin: 15px; 
+    padding: 5px 15px 5px 15px;
+}
+
+
 .intro {
     height:600px;
     background-color: rgba(232,217,217,.3);
@@ -88,8 +101,6 @@ input.site-search {
     margin-bottom: 5%;
 }
 
-
-
 .link-intro {
     display: flex;
     flex-direction: row;
@@ -97,15 +108,6 @@ input.site-search {
     gap: 40px;
     margin: 50px 20px 20px 20px;
 }
-
-
-
-
-
-  
-
-
-
 
 .link-btn{
     background-color:#FB3B49;
@@ -124,51 +126,74 @@ input.site-search {
 }
 
 
-
-.container img {
-    width: 20px;
-}
-
 .presentation img {
     width: 180px;
     padding-top: 40px;
+   
 }
 
 .presentation {
+    text-align: center;   
+}
+
+.presentation article{
     text-align: center;
+    margin: 50px auto;
 }
 
-.container {
+.container article {
     display: flex;
-    margin-right: 1rem;
-    margin-left: 1rem;
+    margin-top: 100px;
+    margin-right: 500px;
+    margin-left: 500px;
+    justify-content: center;
+    gap: 50px;
 }
 
-#search-button nav {
-    text-align: right;
-    margin-left: 8px;
+.container img {
+    margin: 50px auto;
+    width: 40px;
 }
 
-#join {
-    background-color: none;
-    border: 1px solid lightgrey;
-    margin: 15px; 
-    padding: 5px 15px 5px 15px;
+.container a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    background-color:black;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    width: 350px;
+    margin: 50px auto;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    text-decoration: none; 
+    font-weight: bold;
 }
 
 h1{
     font-size: 100px;
     font-weight: bold;
-    margin: 20px 20px 20px 20px;  
+    margin: 20px auto;  
 }
 
-h3 {
-    font-size: 30px;
+.titre-presentation {
+    display: table;
+    margin: 0px auto 0px auto;
+    padding: 0px 0px 0px 0px;
     background-color: rgba(255,204,53,.4);
-    
-    transform: skew(9deg,0deg);
-    font-style: italic;
-    
+    transform: skew(9deg,0deg);  
+}
+
+h3{
+    font-size: 30px;
+    margin: 0px auto 0px auto;
+    transform: skew(-9deg,0deg);
+}
+
+h5 {
+    color: #ED1C24;
+    font-weight: bold;
+    font-size: large;
 }
 
 
