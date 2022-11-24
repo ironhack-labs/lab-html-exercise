@@ -12,7 +12,7 @@
         <header>
             <div>
                 <div>
-                    <img class="blackHeart" src="images\black-heart.png" alt="black heart">
+                    <img class="black-heart" src="images\black-heart.png" alt="black heart">
                     <span>Nifty Penguin Magic</span>
                 </div>
                 <nav>
@@ -26,17 +26,18 @@
                     </ul> 
                 </nav>
             </div>
-            <div>
-                <img src="images\npm-logo.png" alt="npm-logo">
-                <img src="images\magnifying-glass.png" alt="magnifying-glass">
+            <div class="search-container">
+                <img class="npm-logo" src="images\npm-logo.png" alt="npm-logo">
 
-                <form action="/url" method="post">
+                <form action="/url" method="get">
+                    <img class="magnifying-glass" src="images\magnifying-glass.png" alt="magnifying-glass">
                     <input type="text" name="search" id="search" placeholder="Search packages"></input>
                     <button type="submit">Search</button>
                 </form> 
+
                 <div>
-                    <a href="#">Join</a>
-                    <a href="#">Log In</a>
+                    <a class="join-link" href="#">Join</a>
+                    <a class="login-link" href="#">Log In</a>
                 </div>
             </div>
 
@@ -47,14 +48,14 @@
             <article>
                 Essential JavaScript development tools that help you go to market faster and build powerful applications using modern open source code.
             </article>
-            <div>
-                <a href="#">See plans</a>
-                <a href="#">Join for free</a>
+            <div class="urls">
+                <a href="#" class="see-plans-link">See plans</a>
+                <a href="#" class="join-free-link">Join for free</a>
             </div>
-            <img src="images\triangle-hexagon.svg" alt="triangle-hexagon">
         </section>
 
         <section id="summary">
+            <img src="images\triangle-hexagon.svg" alt="triangle-hexagon">
             <h2>Bring the best of open source to your company</h2>
             <article>
                 npm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it. 
@@ -82,10 +83,12 @@
                 <img src="images\npm-audit.svg" alt="npm-audit">
                 <h3>npm audit</h3>
                 <p>Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer.</p>
-                <p><a href="#">Create an Org</a></p>
             </div>
         </section>
 
+        <div class="create-org">
+            <a href="#">Create an Org</a>
+        </div>
     </body>
 </html>
 
