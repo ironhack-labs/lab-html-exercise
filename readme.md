@@ -46,7 +46,7 @@ So let's get started!
 
 **The assets we provided contain the `index.html` file with all the necessary text, as well as the `images` folder with all the required images to successfully finish the exercise.**
 
-### Part I - pure HTML (no styles applied)
+### Part I - pure HTML (no styles applied).
 
 It might seem like a joke, but this is our goal in this iteration:
 
