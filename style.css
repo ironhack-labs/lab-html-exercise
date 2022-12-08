@@ -49,18 +49,26 @@ header > div {
     border: none;
     background-color: rgba(0,0,0,.05);
     font-family: 'Poppins';
-    letter-spacing: 0.3px;
     font-size: 16px;
     height: 55px;
-    padding: 30px 35px;
+    padding: 30px 40px;
     background-image: url(images/magnifying-glass.png);
     background-repeat: no-repeat;
     background-position: left 3% top 50%;
     background-size: 1.5em;
     opacity: 0.6;
-      
+    width: 800px;
+    
   }
 
+  .redButton{
+    background-color: #fb3e44;
+    color: white;
+    padding: 20px 35px;
+    border: 0px;
+    text-align: center;
+    font-family: 'Poppins';
+ }
   .join {
     padding: 13px 28px;
     border: 1px solid #cccccc;
@@ -74,20 +82,14 @@ header > div {
     color: black;
   }
 
- .redButton{
-    background-color: #fb3e44;
-    color: white;
-    padding: 20px 35px;
-    border: 0px;
-    text-align: center;
-    font-family: 'Poppins';
- }
+
 
  .menu{
     display: flex;
-    justify-content: space-between;
+    
     align-items: stretch;
     text-align: left;
+    width: 500px;
  }
 
  #capt{
@@ -97,51 +99,125 @@ header > div {
     flex-direction: column;
     height: 600px;
     background-color: rgba(232,217,217,.3);
-    
-    
-
  }
 
 h1{
-    font-size: 60px;
+    font-size: 90px;   
     position: relative;
-    top: 300px;
+    top: -90px;
 }
 
- .planButton{
+.texto{
+    
+  text-align: center;
+  width: 37%;
+  font-size: 1.4em;
+  position: relative;
+  top: -90px;
+}
+
+
+.plan{
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  justify-content: space-between;
+  
+  
+}
+
+.planButton{
     background-color: #FB3B49;
     box-shadow: 8px 8px 0 rgba(251,59,73,.2);
-    padding: 20px 50px;
+    padding: 15px 95px;
     color: white;
-    position: relative;
-    left: 0%;
-    top:240px;
+    position: absolute;
+    left: 32%;
+    top: 600px;
     justify-content: start;
 
- }
+}
 
- .texto{
+.joinButton{
+  padding: 15px 95px;
+  color: black;
+  position: absolute;
+  right: 32%;
+  top:600px;
+  justify-content: end;
+  cursor: pointer;
+  background-color: white;
+}
+
+#description{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+
+}
+
+.triangle{
+  width: 200px;
+  height: 200px;
+}
+ 
+
+.texto2{
     
-    text-align: justify;
-    width: 37%;
-    position: relative;
-    top: 230px;
-    padding: 20px 0px;
+  text-align: center;
+  width: 45%;
+  font-size: 1.4em;
+  
+}
 
- }
+h2{
+  background-color: rgba(255,204,53,.4);
+}
 
- .plan{
-    
-    padding: 20px 50px;
-    width: 37%;
-    justify-content: space-evenly;
- }
 
- .joinButton{
-    padding: 20px 50px;
-    color: black;
-    position: relative;
-    left: 0%;
-    top:225px;
-    justify-content: end;
- }
+h3{
+  color: #ED1C24;
+}
+
+#org-box{
+  
+  padding: 40px 600px;
+  align-items: center;
+    width: 400px;
+  height: 200px;
+}
+
+#org-box a{
+  display: flex;
+  box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+  color: white;
+  background-color: black;
+  padding: 10px 10px;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: 50px;
+}
+
+.atributes{
+  padding: 100px;
+  align-content: center;
+  text-align: left;
+  height: 50px;
+}
+
+
+.atributes img{
+  height: 30px;
+  width: 30px;
+}
+
+#options{
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  
+}
