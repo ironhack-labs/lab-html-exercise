@@ -12,14 +12,16 @@ body {
   font-family: "Poppins", sans-serif;
   line-height: 1;
   font-weight: 400;
-  color: #444;
-  /* background-color: rgba(232, 217, 217, 0.3); */
 }
 
 html,
 body {
   overflow-x: hidden;
 }
+
+/********************/
+/* HEADER */
+/********************/
 
 .header {
   /* max-width: 1200px; */
@@ -54,7 +56,7 @@ body {
   gap: 2.4rem;
 }
 
-.logo {
+.logo-image {
   width: 2rem;
 }
 
@@ -67,14 +69,6 @@ body {
 .form-box {
   padding-top: 1.2rem;
   display: flex;
-  /* width: 100%; */
-  /* margin: 0 auto; */
-  /* position: relative; */
-  /* background-color: rgba(0, 0, 0, 0.05); */
-  /* justify-content: space-evenly;
-  width: 75%;
-  align-items: center;
-  justify-content: center; */
   box-shadow: inset 0 15px 20px -30px;
   padding-left: 2.4rem;
   padding-right: 2.4rem;
@@ -89,23 +83,23 @@ body {
   position: relative;
 }
 
-.image-glass {
-  height: 2.4rem;
+.search-image {
+  height: 1.6rem;
   position: absolute;
   margin-left: auto;
   margin-right: auto;
   left: 1%;
-  top: 10%;
+  top: 25%;
   /* right: 0; */
   text-align: center;
   /* background-color: rgba(0, 0, 0, 0.05); */
 }
 
-.subheader-input-text {
+.search-input {
   width: 750px;
   padding: 1rem 4rem;
-  letter-spacing: 0.2rem;
-  font-weight: bold;
+  letter-spacing: 0.1rem;
+  font-weight: 500;
   border: none;
   background-color: rgba(0, 0, 0, 0.05);
 }
@@ -117,10 +111,11 @@ body {
   background-color: #fb3b49;
   color: white;
   border: #fb3b49;
+  cursor: pointer;
 }
 
 .btn--join {
-  padding: 1rem 1.6rem;
+  padding: 0.75rem 1.6rem;
   text-decoration: none;
   font-weight: bold;
   background-color: white;
@@ -143,10 +138,12 @@ body {
   width: 40px;
   height: 36px;
   border: 1 px solid #ed1c24;
-  background: #cf711f;
 }
 
-/* NAVIGATION */
+/********************/
+/* NAVIGATION SECTION */
+/********************/
+
 .main-nav-list {
   list-style: none;
   display: flex;
@@ -161,33 +158,17 @@ body {
   color: #333;
   font-weight: 500;
   font-size: 1.4rem;
-  transition: all 0.3s;
+  transition: all 0.5s;
 }
 
 .main-nav-link:hover,
 .main-nav-link:active {
-  color: #cf711f;
+  color: #fb3b49;
 }
 
-/* mobile navbar */
-
-/* .toggle-button {
-  position: absolute;
-  top: 5rem;
-  right: 5rem;
-  display: none;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 30px;
-  height: 21px;
-}
-
-.toggle-button .bar {
-  height: 3px;
-  width: 100%;
-  background-color: #ed1c24;
-  border-radius: 10px;
-} */
+/********************/
+/* HERO SECTION */
+/********************/
 
 .hero {
   height: 60rem;
@@ -203,15 +184,15 @@ body {
 }
 
 .hero-description {
-  font-size: 2.4rem;
+  font-size: 1.8rem;
   text-align: center;
-  line-height: 3.2rem;
+  line-height: 2.8rem;
   margin-bottom: 2.4rem;
+  padding: 0 36rem;
 }
 
 .btn-box {
   margin: 0 auto;
-  /* display: inline-block; */
 }
 
 .btn:link,
@@ -221,7 +202,6 @@ body {
   text-decoration: none;
   font-size: 1.8rem;
   padding: 1.6rem 4.8rem;
-  /* put transition on original state */
   transition: background-color 0.3s;
   font-weight: 600;
 }
@@ -230,30 +210,29 @@ body {
 .btn--full:visited {
   background-color: #fb3b49;
   box-shadow: 8px 8px 0 rgba(251, 59, 73, 0.2);
+  margin-right: 1.6rem;
 }
 
-/* .btn--full:hover,
+.btn--full:hover,
 .btn--full:active {
-  /* background-color: #cf711f;
-} */
+  background-color: black;
+}
 
 .btn--outline:link,
 .btn--outline:visited {
   background-color: #fff;
-  color: #555;
-  /* font-weight: 600; */
+  color: black;
 }
 
 .btn--outline:hover,
 .btn--outline:active {
-  background-color: #fdf2e9;
-  /* border: 3px solid white; */
-  box-shadow: inset 0 0 0 3px white;
+  background-color: black;
+  color: white;
 }
 
-/* .sub-hero {
-  background-color: rgba(255, 204, 53, 0.4);
-} */
+/********************/
+/* SUB-HERO SECTION */
+/********************/
 
 .sub-hero {
   background: white;
@@ -276,7 +255,6 @@ body {
   font-size: 2.8rem;
   text-align: center;
   font-style: italic;
-  /* margin-bottom: 2.4rem; */
 }
 
 .sub-hero-description {
@@ -284,10 +262,15 @@ body {
   text-align: center;
   line-height: 2.8rem;
   margin-bottom: 9.6rem;
+  padding: 0 21rem;
 }
 
+/********************/
+/* FEATURES SECTION */
+/********************/
+
 .features {
-  padding: 0 3.2rem;
+  padding: 0 6.9rem;
 }
 
 .features-image {
@@ -314,23 +297,35 @@ body {
   margin-bottom: 5.4rem;
 }
 
-.btn-cta {
+/********************/
+/* CTA SECTION */
+/********************/
+
+.btn-cta,
+.btn-cta:link,
+.bta-cta:visited {
+  color: white;
   background-color: black;
   box-shadow: 8px 8px 0 rgba(128, 83, 35, 0.2);
   display: block;
-  width: 50%;
-  color: white;
+  width: 30%;
   text-decoration: none;
   font-size: 1.8rem;
   padding: 1.6rem 4.8rem;
-  /* put transition on original state */
   transition: background-color 0.3s;
   text-align: center;
   margin: 0 auto;
   margin-bottom: 9.6rem;
 }
 
-/* media queries */
+.btn-cta:hover,
+.bta-cta:active {
+  background-color: #fb3b49;
+}
+
+/********************/
+/* MEDIA QUERIES*/
+/********************/
 @media (max-width: 84em) {
   .hero {
     /* background-color: #fb3b49; */
@@ -344,8 +339,11 @@ body {
   .hero {
     /* background-color: #cf711f; */
   }
-  .subheader-input-text {
+  .search-input {
     width: 500px;
+  }
+  .hero-description {
+    padding: 0 12rem;
   }
 }
 
@@ -356,23 +354,19 @@ body {
   .hero {
     /* background-color: antiquewhite; */
   }
-  .subheader-input-text {
+  .search-input {
     width: 300px;
   }
   .grid--4-cols {
     grid-template-columns: repeat(2, 1fr);
     row-gap: 8rem;
   }
+  .hero-description {
+    padding: 0 9.6rem;
+  }
 }
 
 @media (max-width: 44em) {
-  /* .toggle-button {
-    display: flex;
-  }
-
-  .main-nav {
-    display: none;
-  } */
   .logo,
   .logo-description {
     display: none;
@@ -380,9 +374,9 @@ body {
 
   .hero {
     /* background-color: aliceblue; */
-    height: 40rem;
+    height: 50rem;
   }
-  .subheader-input-text {
+  .search-input {
     width: 150px;
   }
   .hero-title {
@@ -408,6 +402,7 @@ body {
 @media (max-width: 34em) {
   .hero {
     /* background-color: cadetblue; */
+    height: 60rem;
   }
 
   .join-box {
@@ -422,8 +417,22 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
   }
 
+  .logo-image,
   .npm-logo {
     display: none;
+  }
+
+  .hero-description {
+    padding: 0 4rem;
+  }
+
+  .btn-box {
+    padding: 0 2.4rem;
+  }
+
+  .btn:link,
+  .btn:visited {
+    padding: 1.6rem 2.4rem;
   }
 
   .grid--4-cols {
@@ -431,7 +440,20 @@ body {
     row-gap: 5.6rem;
   }
 
+  .sub-hero {
+    padding-top: 4.4rem;
+  }
+
   .sub-hero-image {
     width: 200px;
+  }
+
+  .features {
+    padding: 0 2.4rem;
+  }
+
+  .btn-cta:link,
+  .btn-cta:visited {
+    width: 50%;
   }
 }
