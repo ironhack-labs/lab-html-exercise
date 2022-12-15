@@ -5,7 +5,7 @@ body {
 }
 
 header > div {
-    padding: 0, 25px;
+    margin: auto 35px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -39,14 +39,15 @@ nav a {
 }
 
 form {
-    width: 1425px;
+    width: 1300px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .search-bar {
-    margin-right: 1100px;
+    position: relative;
+    right: 500px;
     border: none;
     color: rgba(0,0,0,.05)
 }
@@ -61,7 +62,7 @@ form button {
     color: white;
     border: none;
     padding: 10px 20px;
-    margin-right: 2rem;
+    margin-right: 10px;
 }
 
 .logo-npm {
@@ -74,7 +75,7 @@ form button {
 }
 
 .nav-bar-2 {
-    width: 125px;
+    width: 145px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -138,10 +139,11 @@ form button {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 30px;
 }
 
 h2 {
-    width: 950px;
+    width: 925px;
     font-size: 35px;
     background-color: rgba(255,204,53,.4);
     transform: skew(9deg,0deg);
@@ -157,4 +159,62 @@ h2 {
     width: 750px;
     text-align: center;
     line-height: 1.75;
+    margin-top: 15px;
+}
+
+.section-3 {
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.img-text {
+    width: 1250px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.img-text div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.img-text div img {
+    width: 40px;
+    padding-left: 5px;
+}
+
+.img-text div h3 {
+    color: #ED1C24;
+    font-weight: bold;
+    padding-left: 5px;
+}
+
+.img-text div p {
+    width: 250px;
+    height: 200px;
+    padding-left: 10px;
+}
+
+.h3-zero {
+    padding-top: 5px;
+}
+
+.h3-familiar {
+    padding-top: 5px;
+}
+
+.h3-audit {
+    padding-top: 3px;
+}
+
+.create-button {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    padding: 20px 150px;
 }
