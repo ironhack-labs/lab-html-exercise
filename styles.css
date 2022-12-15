@@ -42,25 +42,51 @@ nav a {
 
 .npm-logo{
     width:100px;
+    margin:0px 0px 0px 20px;
 }
 
 #search{ /*search div*/
     padding:20px 0 20px 0;
+    display:flex;
+    flex-direction: row;
+    width:100%;
 }
 
-.search{
-    width:10px;
+.search-img{/*search image*/
+    height:25px;
+    position:relative;
+    top:5px;
+    left:5px;
 }
 
-#search form input{
-width:100%;
+#search-form{
+    background-color: #F8F3F3;
+    width:60%;
+    margin:0px 30px;
+}
+
+input{
+    height:30px;
+    background-color:#F8F3F3;
+    border:0px;
+    font-size:1em;
 }
 
 #search a{
     text-decoration:none;
     color:black;
-    padding: 10px 50px;
+    height:30px;
+    padding: 10px 30px;
     border: 1px solid black;
+    font-size:1em;
+    width:10%;
+}
+
+.form-btn{
+   background-color:#FB3B49; 
+   color:white!important;
+   padding:10px 50px;
+   float:right;
 }
 
 #button-container{
@@ -76,11 +102,14 @@ width:100%;
     color:black;
 }
 .red-btn{
-   background-color:#E94046; 
+   background-color:#FB3B49; 
    color:white!important;
-   box-shadow: 2px 5px 2px #F2C6CD;
+   box-shadow: 8px 8px 0 rgba(251,59,73,.2);
     padding:10px 50px;
 }
+
+
+
 
 
 #hero{
@@ -89,8 +118,9 @@ width:100%;
     align-items:center;
     flex-direction: column;
     text-align:center;
-    background:#F8F3F3;
-    padding:70px 0px 100px;;
+    background:rgba(232,217,217,.3);
+    padding:20px 0px 70px;
+    height:600px;
 }
 
 #hero article{
@@ -100,7 +130,7 @@ width:100%;
 h1{
     font-size:4em;
     font-weight:bold;
-    margin:40px 0px 10px;
+    margin:10px 0px 10px;
 }
 
 #quote {
@@ -119,17 +149,27 @@ display:flex;
 
 h2{
     color:black;
+    background-color:rgba(255,204,53,.4);
     font-style:italic;
-    font-size:2em;
+    font-size:1.5em;
+    transform: skew(9deg,0deg);
+    margin: 10px auto;
+    width:600px;
+}
+
+#quote article{
+    width:50%;
+    margin: 40px auto;
 }
 
 h3{
-    color:#E94046;
+    color:#ED1C24;
     font-size:1em;
     margin:20px auto 20px 0;
 }
 #features{
     margin:50px 60px;
+    height:400px;
  
 }
 
@@ -144,16 +184,17 @@ h3{
 
 .features-box{
     width:25%;
-    padding:10px 20px;;
+    padding:10px 20px;
 }
+
 
 .black-btn{
    background-color:black; 
    color:white!important;
-   box-shadow: 2px 5px 2px gray;
-    padding:10px 30px;
+   box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    padding:10px 50px;
     text-decoration:none;
     text-align:center;
     width:125px;
-    margin:10px auto;
+    margin:50px auto;
 }
