@@ -90,14 +90,18 @@ header > div {
   }
 
 
-  #hero{
-    height: 600px;
+  .hero{
     background-color: rgba(232,217,217,.3);
+    padding: 0;
+    gap: 35px;
+  }
+
+  .easysection{
+    height: 600px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 0;
   }
 
   h1{
@@ -106,20 +110,90 @@ header > div {
     margin: 0;
   }
 
-  #hero p {
-    font-size: 1.2em;
+.hero p {
+    font-size: 1.3em;
     width: 40%;
     text-align: center;
+    margin-top: 0 ;
   }
 
   .main-button{
-    font-size: 1.2em;
-    padding: 12px 50px;
+    font-size: 1.1em;
+    padding: 16px 70px;
     font-family: "poppins-semibold";
   }
 
   .plans{
     background-color: #FB3B49;
-    box shadow: 8px 8px 0 rgba(251,59,73,.2);
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
     color:white;
   }
+
+  .join{
+    background-color: white;
+  }
+
+  .hero div {
+    width: 36%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #open-source p{
+  text-align: center;
+  width: 55%;
+  }
+
+  .hexa{
+    width: 250px;
+    
+  }
+
+  h3{
+    font-size: 2.2em;
+    font-family: "poppins medium";
+    font-style: italic;
+    background-color:rgba(255,204,53,.4);
+    transform: skew(9deg,0);
+    padding: 0 40px;
+    margin-top: 70px;
+    line-height: 1.1;
+  
+  }
+#features{
+height: 500px;
+}
+#features > div{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding-top: 50px;
+}
+
+.skills{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+}
+.skill-img{
+    width: 38px;
+}
+
+.skills h4{
+    color: #ED1C24;
+    font-family: "poppins-bold";
+}
+
+.org-container{
+    display: flex;
+    justify-content: center;
+}
+
+.org{
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    color: white;
+    background-color: black;
+    padding-left: 130px;
+    padding-right: 130px;
+   
+}
