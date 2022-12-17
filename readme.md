@@ -91,6 +91,7 @@ We could try to represent this part of the website with the following:
         <li><a href="#"> Docs </a></li>
         <li><a href="#"> Support </a></li>
       </ul>
+      <p>empty paragraph</p>
     </nav>
   </div>
 
