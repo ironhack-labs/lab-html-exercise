@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" />
     <title>Document</title>
  </head>
  <body>
@@ -11,7 +12,7 @@
 <header class="header">
     <div>
         <div class="black-heart-nifty">
-            <img class="black-heart" src="/images/black-heart.png" alt="black-heart">
+            <img  src="/images/black-heart.png" alt="black-heart">
             <span> Nifty Penguin Magic</span>
         </div>
         <nav class="navbar">
@@ -25,59 +26,65 @@
             </ul>
         </nav>
     </div>
-<hr>
-    <div>
-        <img src="/images/npm-logo.png" alt="NPM npm-logo">
-        <img src="/images/magnifying-glass.png" alt=" magnifying-glass">
+
+    <div class="search-bar">
+        <img id="npm-logo"src="/images/npm-logo.png" alt="NPM npm-logo">
+        
         <form action="/some-url" method="post">
-            <input type="text"name="searchbar" placeholder="Search packages">
+            <label for="search-bar-input"><img id="magnifying-glass" src="/images/magnifying-glass.png"
+                    alt=" magnifying-glass"></label>
+            <input type="text"name="searchbar-input" placeholder="Search packages">
+            <button type="submit">Search</button>
+            
         </form>
-        <div id="join-login-btns">
-        <a href="#">Join</a>
-        <a href="#">Log in</a>
+        <div>
+        <a href="#"id="join-btn">Join</a>
+        <a href="#" id="log-in-btn">Log in</a>
         </div>
     </div>
 </header>
 
 <section id="section1-amazing">
 <h1>Build amazing things</h1>
-<article>Essential JavaScript development tools that help you go to market faster and build powerful applications using modern open source code.</article>
-<div class="amazing-btns">
-    <a href="#">See plans</a>
-    <a href="#">Join for free</a>
+<article>Essential JavaScript development tools that help you <br> go to market faster and build powerful applications <br> using modern open source code.</article>
+<div>
+    <a href="#" id="plan-btn">See plans</a>
+    <a href="#" id="join-for-free-btn">Join for free</a>
 </div>
 </section>
+
+
 
 <section id="section2-bring">
     <img src="/images/triangle-hexagon.svg" alt="">
     <h3>Bring the best of open source to your company</h3>
     <article> NPM is the tool used by
-    over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it. Create an Org and get more out of the tools your team already knows and loves.</article>
+    over 11,000,000 JavaScript developers  around the world. Your developers <br> already use it. Your company depends on it. Create an Org and get more out of the tools <br> your team already knows and loves.</article>
 </section>
 
 <section id="section3-advantages">
     <div>
         <div id="zero-configuration">
             <img src="/images/zero-configuration.svg" alt="desktop-image">
-            <h5>Zero configuration</h5>
+            <h4>Zero configuration</h4>
             <p> Create an org, add
             your team, and start collaborating. Nothing to configure, set up, or manage</p>
         </div>
         <div id="team-management">
             <img src="/images/team-management.svg" alt="team-management">
-            <h5>Team management</h5>
+            <h4>Team management</h4>
             <p>Control who has access to
             what modules within your team namespace using straightforward team management capabilities.</p>
         </div>
         <div id="familiar-features">
             <img src="/images/familiar-features.svg" alt="desktop-with-squares">
-            <h5>Familial features</h5>
+            <h4>Familial features</h4>
             <p>npm Orgs
             has 100% parity with all the public npm registry features your developers already use.<p>
         </div>
         <div id="npm-audit">
             <img src="/images/npm-audit.svg" alt="binoculars">
-            <h5>npm audit</h5>
+            <h4>npm audit</h4>
             <p>Enjoy the security
             auditing features built into the npm client, a zero-friction way to make open source software safer.</p>
         </div>
