@@ -5,15 +5,20 @@ body {
 }
 
   header > div {
-    padding: 0 25px;
+    padding: 5px 25px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid lightgray;
+  
   }
   
   nav {
-    width: 600px;
+    width: 700px;
+    margin-top: -20px ;
+    padding-top: px;
+    margin-right: 30px;
+    margin-bottom: -20px;
   }
   
   nav ul {
@@ -21,34 +26,105 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
   }
   
   nav a {
     text-decoration: none;
     color: black;
+    padding-right:15px;
+    font-weight: bold;
+    
+  
   }
   
   .blackHeart {
     width: 20px;
     margin-right: 1rem;
   }
+  .logo{
+    height: 1.5em;
+  
+  }
+  .lupe{
+    padding-top: 5px;
+    padding-left: 20px;
+    height: 1.2em;
+   
+  }
+  form{
+    display:flex;
+    justify-content: space-between;
+    background-color: rgb(239, 239, 239);
+    width: 90%;
+    margin-left: 25px;
+    margin-right:25px ;
+     
+  }
+
+  form img{
+    height: 1.2em;
+    padding-top: 8px ;
+    padding-left: 8px ;
+  }
+  form input{
+    color:rgba(122, 117, 117, 0.05) ;
+    font-size: 15px;
+    height: 30px;
+    border-style: none;
+    background-color: rgb(239, 239, 239);
+    padding-bottom: 5px;
+    margin-right: 60px;
+
+    
+  }
+
+  form button{
+    background-color:#fb3e44 ;
+    color: rgb(249, 231, 231);
+    border-style: none;
+    padding-left: 25px ;
+    padding-right: 25px;
+    font-size: 1.2em;
+  }
   #build-amazing-things {
     background-color:rgba(232,217,217,.3) ;
     height: 600px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-wrap: wrap;
   }
-
+  h1 {
+    font-size: 550% ;
+    font-weight: 900;
+    margin-top: 5px ;
+    margin-bottom: 50px ;
+    font-family: 'Poppins';
+  }
+  article {
+    max-width: 37%;
+    text-align: center;
+    font-size: 140%;
+    margin-bottom: 10px ;
+    margin-top: 5px;
+    
+  }
   .button-section1 {
-   margin-top: 2em;
+   margin-top: 2.5em;
+  
   }
-  .button-section1 > div {
+  div.button-section1 {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
+    align-content: stretch;
+  }
+  div.button-section1 div{
+  width: 200px;
   }
   .see {
      background-color: #FB3B49;
@@ -57,10 +133,11 @@ body {
      font-weight: bold;
      text-decoration: none; 
      box-sizing: border-box;
-     padding-top: 10px;
-     padding-bottom: 10px; 
+     padding-top: 15px;
+     padding-bottom: 15px; 
      padding-left: 50px;
-     padding-right: 50px;   
+     padding-right: 50px; 
+     
   }
   .join {
     background-color: white;
@@ -68,9 +145,140 @@ body {
     font-weight: bold;
      text-decoration: none; 
      box-sizing: border-box;
-     padding-top: 10px;
-     padding-bottom: 10px; 
+     padding-top: 15px;
+     padding-bottom: 15px; 
      padding-left: 50px;
      padding-right: 50px;
   }
+  .hexagon{
+     height: 15em;
+     padding-bottom: 30px;
+     margin-bottom: 8px;
+     margin-right: 5px;
+  }
+  h2{
+    font-size: 210%;
+    font-weight:900px;
+    background-color: rgba(255,204,53,.4) ;
+    transform: skew(9deg,0deg);
+    font-style: italic ;
+    margin-bottom: 30px;
+    margin-right: 30px;
+    margin-left: 10px;
+    margin-right: 50px ;
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 30px;
+   }
+ #bring-the-best { 
+  max-width: 200%;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center;
+  margin-top: 30px;
+  flex-wrap:wrap
+ }
+ #bring-the-best > article {
+  font-weight: 700px;
+  font-size: 18px;
+  margin-left: 30px;
+  margin-right: 30px;
+  max-width: 52%;
+
+  }
+#create-an-org  {
+flex-direction: row;
+justify-content: center;
+align-items: center;
+height: 470px ;
+max-width: 200%;
+}
+.zero {
+  height: 2em;
+}
+.team {
+  height: 2em;
+}
+.familiar {
+  height: 2em;
+}
+.npm-audit {
+height: 2em;
+}
+h3 {
+ color: #ED1C24; 
+ font-weight: 700px;
+}
+.item-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 20px;
+  margin-top: px;
+  height: 600px;
+  padding-top: 5px;
+  padding-bottom: px ;
+  padding-left: 130px;
+  padding-right: 95px;
+ 
+ }
+#create-an-org  p {
+  max-width: 80%;
+ 
+}
+.create {
+  background-color: black;
+  box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+  color: white;
+  font-weight: bold;
+  text-decoration: none; 
+  box-sizing: border-box;
+  padding-top: 15px;
+  padding-bottom: 10px; 
+  padding-left: 130px;
+  padding-right: 130px;  
+  margin-top: 0px;
+  margin-bottom: 90px; 
+  margin-right:20px ;
+  font-size: 20px;
+}
+div.buttonsection2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: stretch;
+}
+.joi{
+  color: black;
+  font-weight: bold;
+   text-decoration: none; 
+   box-sizing: border-box;
+   padding-top: 10px;
+   padding-bottom: 3px; 
+   padding-left: 20px;
+   padding-top: 3px;
+   padding-right: 20px;
+   margin-left: 10px;
+   margin-right:20px ;
+   border-style: solid;
+   border-color: darkgrey;
+
+}
+.login{
+  background-color: white;
+  color: rgb(80, 77, 77);
+  font-weight: bold;
+   text-decoration: none; 
+   box-sizing: border-box;
+   padding-top: 10px;
+   padding-bottom: 10px; 
+   padding-left: 42px;
+   padding-right: 42px;
+   margin-right: 5px;
+
+}
  
