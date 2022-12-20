@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NPM Clone</title>
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <header>
       <div>
-        <img src="./images/black-heart.png" /> NPM Clone Nifty Penguin Magic
+        <img class="blackHeart" src="./images/black-heart.png" /> NPM Clone Nifty Penguin Magic
       </div>
-      <div>
+      <nav>
         <ul>
           <li><a href="#">npm Enterprise</a></li>
           <li><a href="#">Products</a></li>
@@ -20,7 +21,7 @@
           <li><a href="#">Docs</a></li>
           <li><a href="#">Support</a></li>
         </ul>
-      </div>
+    </nav>
       <div>
         <img src="./images/npm-logo.png" />
         <img src="./images/magnifying-glass.png" />
@@ -34,23 +35,22 @@
         </ul>
       </div>
     </header>
-    <section>
+    <section class="section">
       <h1>Build amazing things</h1>
-      <article>
+      <article class="article">
         Essential JavaScript development tools that help you go to market faster
         and build powerful applications using modern open source code.
       </article>
-      <div>
-        <ul>
-          <li><a href="#">See plans</a></li>
-          <li><a href="#">Join for free</a></li>
+      <div id="buttons">
+        <div id="plans-btn"><a href="#">See plans</a></div>
+        <div id="joinFree"><a href="#">Join for free</a></div>
         </ul>
       </div>
     </section>
-    <section>
+    <section class="section">
       <img src="./images/triangle-hexagon.svg" />
       <h2>Bring the best of open source to your company</h2>
-      <article>
+      <article class="article">
         npm is the tool used by over 11,000,000 JavaScript developers around the
         world. Your developers already use it. Your company depends on it.
         Create an Org and get more out of the tools your team already knows and
