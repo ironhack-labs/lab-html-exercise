@@ -4,6 +4,9 @@ form button background color: #fb3e44
 form button letters color: white
  */
 
+/* Found this to be a good learning exercise, 
+ lots to learn but this is just the beginning and im looking forward to continue this journey. */
+
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
 body {
@@ -20,6 +23,8 @@ header>div {
 
 nav {
     width: 600px;
+    min-width: 80px;
+    /* top left nav */
 }
 
 nav ul {
@@ -27,11 +32,21 @@ nav ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    padding: .25px;
+    /* used this to combat the nav overflowing.*/
 }
 
 nav a {
     text-decoration: none;
     color: black;
+    flex-basis: 0;
+    flex-shrink: 2;
+}
+
+ul :hover {
+    color: #FB3B49;
+
 }
 
 .blackheart {
@@ -39,9 +54,134 @@ nav a {
     margin-right: 1rem;
 }
 
+/* bottom nav below */
+
+.nav-bar-bottom {
+    width: inherit;
+    padding: 0 25px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+}
+
+.nav-bottom-ul {
+    /*outter box holding the flex box of search join and login */
+    width: 200em;
+    padding: 0;
+}
+
+.join-log-search {
+    /* flex box holding search join and log */
+    display: flex;
+    width: 100%;
+    flex-direction: row-reverse;
+    padding: 5px;
+    justify-content: space-between;
+}
+
+.logo {
+    /* npm logo */
+    width: 3rem;
+}
+
+.items {
+    /*join and login*/
+    list-style: none;
+    display: inline-flex;
+    justify-content: end;
+    font-size: 10px;
+}
+
+.join {
+    border: 1px solid black;
+    border-radius: .5px;
+    padding: 50px;
+}
+
+.join:hover {
+    background-color: #e6e6e6;
+}
+
+.items a {
+    /* link text join and login */
+    text-decoration: none;
+    font-size: 18px;
+    padding: 0 12px;
+    color: black;
+    font-size: 12px;
+    text-align: center;
+    line-height: 30px;
+}
+
+
+.items a:hover {
+    color: #FB3B49
+}
+
+.search-icon {
+    /*search icon box */
+    height: 30px;
+    width: 100%;
+    margin-right: 20px;
+    display: flex;
+    background-color: rgba(0, 0, 0, .05);
+    border-radius: .5px;
+    border: 1px solid #cccccc;
+}
+
+
+
+.search-icon input {
+    /* inner search bar */
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 0 10px;
+    color: #000;
+    font-size: 11px;
+    font-family: 'poppins';
+    border-radius: .5px 0 0 .5px;
+    background-image: url("./images/magnifying-glass.png");
+    background-size: 13px;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+}
+
+input[type="search"] {
+    background-color: rgba(0, 0, 0, .05);
+    margin: 0;
+    padding: 7px 8px 7px 30px;
+}
+
+.icon {
+    /* red search button */
+    height: 100%;
+    width: 70px;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #fb3e44;
+    text-align: center;
+    font-size: 10px;
+    color: white;
+    font-weight: lighter;
+    font-family: 'poppins';
+}
+
+.search-icon .icon:hover {
+    background: #e6e6e6;
+}
+
+/* end of bottom nav code */
+
+/* section one code below */
+
 h1 {
     font-size: 5rem;
-    font-weight: 600;
+    font-family: 'poppins';
+    justify-content: center;
+    font-weight: 900;
     margin: 0.67em 0;
     margin-bottom: .5rem;
 }
@@ -54,10 +194,13 @@ h1 {
     height: 515px;
     background-color: rgba(232, 217, 217, .3);
     text-align: center;
+    overflow: scroll;
 }
 
 #section-one p {
-    width: 400px;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
     text-align: center;
     line-height: 1.5;
     margin-bottom: auto;
@@ -71,7 +214,6 @@ h1 {
     font-size: 14px;
     font-weight: bolder;
     margin-bottom: 80px;
-
 }
 
 #section-one .see-plans {
@@ -87,7 +229,12 @@ h1 {
     background-color: white;
     text-decoration: none;
     padding: 10px 40px;
+    font-weight: bolder;
 }
+
+/* end of section one */
+
+/* start of section two */
 
 #section-two {
     display: flex;
@@ -99,7 +246,7 @@ h1 {
 #section-two img {
     display: block;
     box-sizing: border-box;
-    max-width: 15em;
+    max-width: 10em;
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 2rem;
@@ -117,8 +264,14 @@ h1 {
 
 #section-two p {
     text-align: center;
-    width: 70rem;
+    max-width: 100px;
+    flex-grow: 1;
+    min-width: 30rem;
 }
+
+/* end of section 2 */
+
+/* start of section three */
 
 #section-three img {
     width: 20px;
@@ -171,11 +324,18 @@ h3 {
     max-width: 20%;
 }
 
+/* end of section three */
+
+/* start of footer */
+
 footer a {
     display: block;
     background-color: black;
-    width: 250px;
-    position: relative;
+    margin: 50px auto 30px auto;
+    padding: 12px;
+    width: 200px;
+    font-size: 10px;
+    font-weight: bold;
     text-decoration: none;
     text-align: center;
     color: white;
