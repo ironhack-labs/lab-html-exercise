@@ -2,9 +2,8 @@
 
 body {
   font-family: 'Poppins';
-  font-size: 12px;
+  font-size: 13px;
   line-height: 3.5em;
-  font-weight: 500;
 }
 html, 
 body {
@@ -17,29 +16,40 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Poppins';
+  font-family: 'Poppins',sans-serif;
 }
 h1 {
-  font-size: 9em;
-  text-align: center;
+  font-size: 6em;
+  text-shadow: 
+    0.3px 0.3px 0, 
+    0.3px -0.3px 0px,
+    -0.3px 0.3px 0,
+    -0.3px -0.3px 0px,
+    0.3px 0px 0px,
+    0px 0.3px 0px,
+    -0.3px 0px 0px,
+    0px -0.3px 0px;
+  margin-bottom: 100px;
 }
 h2 {
-  font-size: 5em;
+  font-size: 4em;
   text-align: center;
 }
 h3 {
-  font-size: 3em;
+  font-size: 2.7em;
   text-align: center;
-  letter-spacing: -1px;
-  font-weight: bold;
+  letter-spacing: 1px;
+  text-shadow: 
+    0.3px 0.3px 0, 
+    0.3px -0.3px 0px,
+    -0.3px 0.3px 0,
+    -0.3px -0.3px 0px,
+    0.3px 0px 0px,
+    0px 0.3px 0px,
+    -0.3px 0px 0px,
+    0px -0.3px 0px;
+}
 
-}
-h4 {
-  font-size: 1.5em;
-  letter-spacing: 0.4px;
-  margin-bottom: 15px;
-  line-height: 1em;
-}
 header > div {
   padding: 0 25px;
   display: flex;
@@ -67,91 +77,102 @@ nav a {
 .npmlogo {
   display:flex;
   justify-content: space-between;
-  height:50px;
+  height:60px;
 }
 .npmlogo img {
   width: 60px;
   height: 20px;
 }
-.search_container img {
-  width: 20px;
-  height: 20px;
-}
 .search_container {
   display: flex;
-  justify-content: flex-start;
-  height: 40px;
+  position: relative;
+  height: 45px;
+  width: 80%;
+}
+.search_container::before {
+  content: ""; 
+  width: 16px;         
+  height: 16px;        
+  background: url(./images/magnifying-glass.png) no-repeat center center / auto 100%;
+  display: inline-block; 
+  position: absolute; 
+  top: 15px; 
+  left: 15px;
+  color: rgba(0,0,0,.05);
 }
 .search_container input {
-    padding:0 10px; 
+    padding: 0 45px; 
     background: rgba(0,0,0,.05);
-    outline: none;
     border: none;
-    width: 500px;
+    width: 100%;
 }
 .search_container .search-submit {
-  width: 70px;
+  width: 90px;
   background-color: #fb3e44;
   color: white;
+  border: none;
 }
 .join-button {
-  display: flex;
-  justify-content: space-evenly;
+  text-align: right;
 }
 .join-button a {
   text-decoration: none;
   color: black;
   font-size: 1.2em;
 }
-.join {
+.join-button .box1 {
   border: 1px solid black;
-  padding: 2px 20px;
-  margin: 3 8px;
-  text-align: center;
+  padding: 5px 15px;
+  font-size: 15px;
 }
-.login {
+.join-button .box2 {
   border: none;
-  padding: 2px 20px;
-  margin: 0;
+  padding: 5px 0 5px 15px;
+  font-size: 15px;
 }
 .container {
-  height: 600px;
+  min-height: 600px;
   text-align: center;
-  width: 0 auto;
+  margin: 0 auto;
+  padding: 75px 0;
+}
+.heading {
+  width: 65%;
+  height: 30%;
+  line-height: 70px;
+  margin: 0 auto;
 }
 #plans {
   background-color:rgba(232,217,217,.3);
-  padding-top: 100px;
 }
-#plans h1 {
-  font-size: 6em;
-  font-weight: bold;
-  letter-spacing: -2px;
-  margin-bottom: 100px;
-}
-
-#plans .article {
-  width: 48%;
+.article {
+  width: 40%;
+  height: 30%;
   margin: 0 auto;
 }
 #plans .text {
-  font-size: 2em;
+  width: 100%;
+  font-size: 1.5em;
   text-align: center;
-  line-height: 32px;
-  margin-bottom: 70px;
+  line-height: 45px;
+  color: black;
+  margin-bottom: 80px;
 }
 #plans > div {
  display: flex;
  justify-content: center;
  align-items: center;
  flex-direction: row;
+ height: 30%;
+ width: 40%;
+ margin: 0 auto;
 }
 #plans > div > .box1 {
   text-decoration: none;
   background-color: #fb3e44;
-  padding: 10px 80px;
+  padding: 10px 75px;
   color: white;
-  font-size: 2em;
+  font-size: 1.5em;
   font-weight: bold;
   box-shadow: 8px 8px 0 rgba(251,59,73,.2);
   margin-right: 20px;
@@ -159,65 +180,88 @@ nav a {
 #plans > div > .box2 {
   text-decoration: none;
   background-color: white;
-  padding: 10px 80px;
+  padding: 10px 75px;
   color: black;
-  font-size: 2em;
+  font-size: 1.5em;
   font-weight: bold;
   margin-left: 20px;
 }
 #aboutnpm {
-  margin: 0 auto 80px auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 #aboutnpm img {
-  margin-top: 80px;
   width: 280px;
   height: 280px;
+  margin-bottom: 40px;
+}
+#aboutnpm .heading h3 {
+  display:inline-block;
+  background-color: rgba(255,204,53,.4);
+  transform: skew(9deg,0deg);
+  padding: 0 25px;
+  font-style:italic;
+  letter-spacing: -0.1px;
+  word-spacing: normal;
+  text-align: center;
 }
 #aboutnpm .text-small {
-  font-size: 1.5em;
+  width: 100%;
+  font-size: 1.4em;
   text-align: center;
   line-height: 32px;
-  margin-bottom: 70px;
-  letter-spacing: -0.3px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  letter-spacing: -0.4px;
 }
 #aboutnpm .article {
-  width: 60%;
-  margin: 0 auto;
+  width: 55%;
 }
+
+/* flexbox */
 .service-box img {
   width: 50px;
   height: 50px;
 }
-#config {
-  margin-top: 200px;
-  margin-bottom: 80px;
+.service-box-container {
   display: flex;
   justify-content: space-evenly;
+  margin-bottom: 80px;
+  width: 100%;
 }
-#config .service-box {
+.service-box-container .service-box {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 200px;
+  width: 16%;
 }
-#config .service-box heading {
+.service-box-container .service-box heading {
   font-size: 1.5em;
   font-weight: bold;
   color:#ED1C24;
 }
-#config .service-box p {
+.service-box-container .service-box p {
   text-align: left;
   font-size: 1.5em;
   line-height: 26px;
   letter-spacing: -0.3px;
 }
-.box3 {
+#config {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#config .box3 {
+  text-align: center;
   text-decoration: none;
   background-color: black;
-  padding: 10px 80px;
-  color: white;
-  font-size: 2em;
-  font-weight: bold;
   box-shadow: 8px 8px 0 rgba(128,83,35,.2);
-  margin-right: 20px;
+  padding: 8px 140px;
+  color: white;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 40px;
 }
