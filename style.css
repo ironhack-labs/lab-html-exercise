@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 
 /* Styles for the whole page */
-body {font-family: 'Poppins'; padding: 10px 30px;font-size: 18px; line-height: 3.5em;}
+body {font-family: 'Poppins'; font-size: 18px; line-height: 3.5em;}
 
 
 
@@ -13,7 +13,7 @@ h1 {font-size: 6em;text-align: center;font-weight:700;}
 
 h3 {font-size: 2.8em;text-align: center;font-weight: 700;}
 
-h4{color:#fb3e44;font-weight:700}
+h4{color:#fb3e44;font-weight:700;margin-block-start: 0%;margin-block-end: 0%;}
 
 article,p {font-weight:400}
 
@@ -23,6 +23,8 @@ article {text-align: center;}
 
 /* Header styles*/
 /*....................................*/
+
+
 header > div {
     padding: 0 25px;
     display: flex;
@@ -34,48 +36,86 @@ header > div {
 
 /* Navbar styles*/
 .navbar {
-    width: 600px;
+    width: 670px;
 }
 
 .navbar ul {
     list-style: none;
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
     align-items: center;
 }
+
 
 .navbar a {
     text-decoration: none;
     color: black;
+    font-weight: 700;
 }
 
 .black-heart-nifty img {
-    width: 20px;
+    width: 30px; height: 20px;
     margin-right: 1rem;
 }
 
+header span {font-weight: 700;}
 
 /* search-bar styles*/
 
 
+.search-bar {padding-top: 8px;padding-bottom: 8px;
+box-shadow:  0 6px 4px -4px  rgb(185, 184, 184);}
 
-.search-bar #npm-logo {height: 30px;position: relative;top:10px;right:5px ;}
+.search-bar > img, form ,div {display: flex;justify-content: space-between;align-items: center;}
 
-.search-bar #magnifying-glass {height: 18px;background-color:rgba(0, 0, 0, .05) ; padding: 16px 5px 16px 15px; position: relative; top: 20px; left: 5px}
+.search-bar #npm-logo {
+    height: 30px;
+}
 
-.search-bar form input {background-color: rgba(0, 0, 0, .05);border:none;width:1300px; padding:15px ;font-size: 17px;margin-right:0;}
+.search-bar #magnifying-glass {
+    background-color: rgba(0, 0, 0, .05);
+    padding: 16px 5px 16px 15px;
+}
 
-.search-bar form button {border:none;
-    color: white;font-size: 17px ;
-    background-color:#fb3e44 ; 
-    padding: 15px 20px; margin-left: 0;position:relative;right: 5px;}
+.search-bar form input {
+    background-color: rgba(0, 0, 0, .05);
+    border: none;
+    width: 1410px;
+    font-size: 17px;
+    padding-top: 14px;
+    padding-bottom: 13px;
+}
 
-.search-bar  #join-btn { color: black; text-decoration: none;padding: 7px 22px ;border: 1px solid black;position:relative;top:8px;left:20px}
+.search-bar form button {
+    border: none;
+    color: white;
+    font-size: 17px;
+    background-color: #fb3e44;
+    padding-left: 18px; padding-right: 18px;
+    padding-top: 14px;
+    padding-bottom: 13px;
+}
+
+
+
+.search-bar #join-btn {
+    color: black;
+    text-decoration: none;
+    height: 20px; line-height: 17px;
+    padding: 8px 22px;
+    border: 1px solid black;
+}
 
 .search-bar #log-in-btn {
     color: black;
     text-decoration: none;
-    padding: 9px 22px;position: relative;top: 8px; left:20px}
+    height: 20px;
+    line-height: 16px;
+    padding-top:8px;padding-bottom: 8px;padding-left: 30px;
+    
+    
+}
+
 
 /*....................................*/
 /* section 1 "build amazing things" styles*/
@@ -87,7 +127,7 @@ header > div {
 
 #section1-amazing  div {margin: 50px}
 
-#plan-btn {font-size: 1.5em; text-decoration:none;font-weight: 900; color:white;background-color: #fb3e44;padding:15px 90px;box-shadow: 10px 5px 5px  #FAD0D2;
+#plan-btn {font-size: 1.5em; text-decoration:none;font-weight: 900; color:white;background-color: #fb3e44;padding:15px 90px;box-shadow: 8px 8px 0  #FAD0D2;
 position: relative; right: 35px;}    
 
 
@@ -118,25 +158,31 @@ position: relative; right: 35px;}
 /*....................................*/
 /* section 3 "section3-advantages" styles*/
 
-#section3-advantages > div { display: flex;
-    justify-content: space-evenly;flex-direction:row; }
-#section3-advantages h5,p {line-height: 1.5em}
 
+#section3-advantages {height:600px;}
+
+
+#section3-advantages > div { display: flex;
+    justify-content: space-evenly;flex-direction:row; padding-top: 50px;align-items:baseline ;} 
+
+.zero-configuration {display: flex;flex-direction: column;}
+.team-management {display: flex;flex-direction: column;}
+.familiar-features {display: flex;flex-direction: column;}
+.npm-audit {display: flex;flex-direction: column;}
+#section3-advantages h5,p {line-height: 1.5em;}
 
 
 #section3-advantages img {width: 50px;}
 
-/* Reste à faire :
-- searchbar: corriger les positions en absolute
-- searchbar: mettre la loupe dans le champ de recherche (voir code source site npm)
-- searchbar: ombre grise sur border-bottom
-- section3-advantages: réduire espace entre image/h5/p
-- section3-advantages: styliser bouton "create an org"
+#create-btn  {text-decoration: none;font-size: 1.5em;font-weight: 900;color:white;background-color: black;box-shadow: 8px 8px 0 rgba(128, 83, 35, .2); padding: 10px 160px; }  
 
 
 
 
 
 
+/* What's left to do? :
+
+- fix searchbar: add a grey shadow on the bottom border
 
 */

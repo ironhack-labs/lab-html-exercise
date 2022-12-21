@@ -1,16 +1,16 @@
- <!DOCTYPE html>
- <html lang="en">
- <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css" />
     <title>Document</title>
- </head>
- <body>
+</head>
+<body>
 
 <header class="header">
-    <div>
+    <div >
         <div class="black-heart-nifty">
             <img  src="/images/black-heart.png" alt="black-heart">
             <span> Nifty Penguin Magic</span>
@@ -28,16 +28,20 @@
     </div>
 
     <div class="search-bar">
-        <img id="npm-logo"src="/images/npm-logo.png" alt="NPM npm-logo">
         
-        <form action="/some-url" method="post">
-            <label for="search-bar-input"><img id="magnifying-glass" src="/images/magnifying-glass.png"
-                    alt=" magnifying-glass"></label>
-            <input type="text"name="searchbar-input" placeholder="Search packages">
-            <button type="submit">Search</button>
-            
+        <img id="npm-logo" src="/images/npm-logo.png" alt="NPM npm-logo" width="90px">
+
+        <form action="/search" method="GET" id="search-container">
+            <div class="searchbar-container">
+                <img id="magnifying-glass" src="/images/magnifying-glass.png"alt=" magnifying-glass" width="15px" height="15px">
+                <input type="text" name="searchbar-input" placeholder="Search packages">
+            </div>
+        
+
+            <button type="submit" id="search-btn">Search</button>
         </form>
-        <div>
+
+        <div class="register">
         <a href="#"id="join-btn">Join</a>
         <a href="#" id="log-in-btn">Log in</a>
         </div>
@@ -65,55 +69,44 @@
 </section>
 
 <section id="section3-advantages">
-    <div>
-        <div class="zero-configuration">
-            <img src="/images/zero-configuration.svg" alt="desktop-image">
-            <h4>Zero configuration</h4>
-            <p> Create an org, add
-            your team,<br> and start collaborating. <br> Nothing to configure, set up, or <br> manage</p>
-        </div>
-        <div class="team-management">
-            <img src="/images/team-management.svg" alt="team-management">
-            <h4>Team management</h4>
-            <p>Control who has access to <br>
-            what modules within your <br> team namespace using <br> straightforward team <br> management capabilities.</p>
-        </div>
-        <div class="familiar-features">
-            <img src="/images/familiar-features.svg" alt="desktop-with-squares">
-            <h4>Familial features</h4>
-            <p>npm Orgs
-            has 100% parity with <br> all the public npm registry <br> features your developers <br>  already use.<p>
-        </div>
-        <div class="npm-audit">
-            <img src="/images/npm-audit.svg" alt="binoculars">
-            <h4>npm audit</h4>
-            <p>Enjoy the security
-            auditing <br> features built into the npm <br> client, a zero-friction way to <br> make open source software <br> safer.</p>
-        </div>
-    </div>
-    <a href="#">Create an org</a>
-</section>
-
-
-
-
-
-
-
     
- </body>
- </html>
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
+<div>
+    <div class="zero-configuration">
+        <img src="/images/zero-configuration.svg" alt="desktop-image">
+        <h4>Zero configuration</h4>
+        <p> Create an org, add
+            your team,<br> and start collaborating. <br> Nothing to configure, set up, or <br> manage</p>
+    </div>
+
+    <div class="team-management">
+        <img src="/images/team-management.svg" alt="team-management">
+        <h4>Team management</h4>
+        <p>Control who has access to <br>
+            what modules within your <br> team namespace using <br> straightforward team <br> management capabilities.
+        </p>
+    </div>
+
+    <div class="familiar-features">
+        <img src="/images/familiar-features.svg" alt="desktop-with-squares">
+        <h4>Familial features</h4>
+        <p>npm Orgs
+            has 100% parity with <br> all the public npm registry <br> features your developers <br> already use.
+        <p>
+    </div>
+
+    <div class="npm-audit">
+        <img src="/images/npm-audit.svg" alt="binoculars">
+        <h4>npm audit</h4>
+        <p>Enjoy the security
+            auditing <br> features built into the npm <br> client, a zero-friction way to <br> make open source software
+            <br> safer.</p>
+    </div>
+</div>
+
+<div>
+<a href="#" id="create-btn">Create an org</a>
+</div>
+
+</section>
+</body>
+</html>
