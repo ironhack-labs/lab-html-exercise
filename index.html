@@ -13,13 +13,14 @@ auditing features built into the npm client, a zero-friction way to make open so
     <head>
         <meta charset="UTF-8">
         <title>NPM</title>
+        <link rel="stylesheet" href="styles.css">
     </head>
 
     <body>
         <header>
-            <div>
+            <div class="top-header">
                 <div>
-                    <img src="images/black-heart.png" alt="black heart">
+                    <img src="images/black-heart.png" alt="black heart" class="blackHeart">
                     <span>Never Ending Pun Machine</span>
                 </div>
                 <nav>
@@ -34,16 +35,16 @@ auditing features built into the npm client, a zero-friction way to make open so
                 </nav>
             </div>
 
-            <div>
-                <img src="images/npm-logo.png" alt="npm logo">
-                <div>
-                    <img src="images/magnifying-glass.png" alt="magnifying glass">
+            <div class="bottom-header">
+                <img src="images/npm-logo.png" alt="npm logo" class="npmLogo">
+                <div class="search-bar">
+                    <img src="images/magnifying-glass.png" alt="magnifying glass" class="magGlass">
                     <form action="" method="post">
-                        <input type="text" id="search" placeholder="Search packages">
-                        <input type="submit" value="Search">
+                        <input type="text" id="search" placeholder="Search packages" class="search-input">
+                        <input type="submit" value="Search" class="search-button">
                     </form>
                 </div>
-                <div>
+                <div class="buttons-header">
                     <a href="">Join</a>
                     <a href="">Log In</a>
                 </div>
