@@ -45,21 +45,24 @@ nav a {
     align-items: center;
     background-color: rgba(0,0,0,.05);
     margin: 7px 40px 7px 20px;
+    flex-grow: 1;
 }
 
 .search-bar form {
     display: flex;
+    flex-grow: 1;
 }
 
 .search-bar form input {
     padding: 10px 15px;
     margin-left: -20px;
+    margin-right: -10px;
 }
 
 .search-input {
-    width: 1000px;
     background-color: transparent;
     border: none;
+    flex-grow: 1;
 }
 
 .search-button {
@@ -79,13 +82,21 @@ nav a {
 }
 
 .buttons-header {
-    width: 200px;
+    width: 140px;
     display: flex;
-    flex-grow: 1;
-    border: 1px solid black;
 }
 
 .buttons-header a {
+    text-align: center;
+    flex-grow: 1;
+    width: 60px;
+    padding: 2px 0;
+    font-size: 13px;
+    text-decoration: none;
+    color: grey;
+}
+
+.header-btn-one {
     border: 1px solid black;
 }
 
