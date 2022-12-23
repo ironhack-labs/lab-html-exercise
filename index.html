@@ -11,7 +11,7 @@
             <div class="nav-container">
                 <div class="nav-heart">
                     <img src="./images/black-heart.png" alt="Black heart NPM" class="blackheart"/>
-                    <span> Nifty Penguin Magic </span>
+                    <p> Nifty Penguin Magic </p>
                 </div>
                 <nav class="nav-bar">
                     <ul>
@@ -25,30 +25,39 @@
                 </nav>
             </div>
             <div class="logo-container">
-                <img src="./images/npm-logo.png" alt="NPM logo" />
+                <img src="./images/npm-logo.png" alt="NPM logo" class="npm-logo"/>
                 <form>
-                    <img src="./images/magnifying-glass.png" alt="Magnifying glass" class="search-glass"/>
-                    <input type="text" id="search-bar" />
+                    <label for="search-bar"><img src="./images/magnifying-glass.png" alt="Magnifying glass" class="search-glass"/></label>
+                    <input type="text" id="search-bar" placeholder="Search packages"/>
                     <button type="submit" class="btn-search">Search</button>
                 </form>
                 <div class="log-in">
-                    <a href="#" target="_blank" class="btn-join">Join</a>
-                    <a href="#" target="_blank" class="btn-log">Log in</a>
+                    <a href="#" target="_blank" class="btn btn-join">Join</a>
+                    <a href="#" target="_blank" class="btn btn-log">Log In</a>
                 </div>
             </div>
         </header>
         <section id="section1">
             <h1>Build amazing things</h1>
-            <article>Essential JavaScript development tools that help you go to market faster and build powerful applications using modern open source code.</article>
+            <article>Essential JavaScript development tools that help you<br>
+                go to market faster and build powerful applications<br> 
+                using modern open source code.</article>
             <div class="join-plans">
-                <a href="#" target="_blank" class="btn-plans">See plans</a>
-                <a href="#" target="_blank" class="btn-join-free">Join for free</a>
+                <a href="#" target="_blank" class="btn btn-plans">See plans</a>
+                <a href="#" target="_blank" class="btn btn-join-free">Join for free</a>
             </div>
         </section>
         <section id="section2">
             <img src="./images/triangle-hexagon.svg" alt="Hexagon image" />
-            <h4>Bring the best of open source to your company</h4>
-            <article>npm is the tool used byover 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it. Create an Org and get more out of the tools your team already knows and loves.</article>  
+            <div class="section-title">
+                <div class="oblique-left"></div>
+                <div class="title"><h2>Bring the best of open source to your company</h2></div>
+                <div class="oblique-right"></div>
+            </div>
+            <article>npm is the tool used byover 11,000,000 JavaScript developers around the world. Your developers<br>
+                already use it. Your company depends on it. Create an Org and get more out of the tools your<br>
+                  team already knows and loves.
+            </article>  
         </section>
         <section id="section3">
             <div class="about">
@@ -73,7 +82,7 @@
                     <p>Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer.</p>
                 </div>
             </div>
-            <a href="#" target="_blank" class="btn-create-org">Create an Org</a>
+            <a href="#" target="_blank" class="btn btn-create-org">Create an Org</a>
         </section>
     </body> 
 </html>
