@@ -11,6 +11,7 @@ label {
 .npm-logo {
   width: 65px;
   margin-right: 1rem;
+  padding-top: 12px;
 }
 
 .subHeader {
@@ -31,15 +32,22 @@ label {
   padding-left: 8px;
 }
 
-.button {
+button {
   text-align: center;
+  padding: 10px;
+  border: 0;
 }
 
 .buttonred {
   background-color: #fb3e44;
   color: white;
-  border: 0;
-  padding: 10px;
+}
+
+.buttonred.shadow {
+  font-weight: bold;
+  width: 150px;
+  height: 40px;
+  box-shadow: 8px 8px 0 rgba(251, 59, 73, 0.2);
 }
 
 .headersecond {
@@ -53,6 +61,28 @@ label {
 .container {
   height: 600px;
   background-color: rgba(232, 217, 217, 0.3);
+  padding-top: 50px;
+}
+
+.container header {
+  font-weight: bold;
+  font-size: 40pt;
+}
+
+.container article {
+  width: 400px;
+  text-align: center;
+  margin: 30px;
+}
+
+.container button {
+  margin: 30px;
+}
+
+.divarticle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 header > div {
