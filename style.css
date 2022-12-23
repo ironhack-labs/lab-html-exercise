@@ -143,6 +143,7 @@ header .join {
     align-items: center;
     justify-content: center;
     height: 400px;
+    padding: 20px;
 }
 
 #description h2{
@@ -150,9 +151,51 @@ header .join {
     transform: skew(9deg,0deg);
     font-style: italic;
     padding: 0 30px;
+    font-size: 2em;
+}
+
+#description article {
+    width: 50%;
+    text-align: center;
+    font-size: 1em;
 }
 
 .hexagon {
     height: 200px;
     margin: 50px;
+}
+
+#features {
+    padding:20px;
+    text-align: center;
+    margin: 0px 200px 20px 200px;
+}
+
+#features > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 50px;
+}
+
+#features h3 {
+    color: #ED1C24;
+    font-size: 1em;
+}
+
+#features p {
+    font-size: .8em;
+    margin: 20px 50px 20px 0px;
+}
+
+#features img {
+    height: 30px;
+}
+
+#features a {
+    text-decoration: none;
+    padding: 10px 100px;
+    color: white;
+    background-color: black;
+    box-shadow: 8px 8px 0 rgba(128, 83, 35, 0.2);
 }
