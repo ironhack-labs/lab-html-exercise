@@ -4,13 +4,8 @@ body {
   font-family: "Poppins";
 }
 
-#app {
-  box-sizing: border-box;
-}
-
 label {
-  label color: rgba(0,0,0,.05);
-  color: rgba(0,0,0,.05)
+  color: rgba(0, 0, 0, 0.05);
 }
 
 .npm-logo {
@@ -18,28 +13,33 @@ label {
   margin-right: 1rem;
 }
 
+.subHeader {
+  display: flex;
+  height: 55px;
+}
 .search {
-  width: 20px;
+  background-color: lightgray;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
 }
 
-.wrapper {
-  margin-right: auto; /* 1 */
-  margin-left:  auto; /* 1 */
-
-  max-width: 960px; /* 2 */
-
-  padding-right: 10px; /* 3 */
-  padding-left:  10px
+.search img {
+  width: 20px;
+  height: 20px;
+  padding-top: 8px;
+  padding-left: 8px;
 }
 
 .button {
   text-align: center;
-  background color: #fb3e44
 }
 
 .buttonred {
   background-color: #fb3e44;
   color: white;
+  border: 0;
+  padding: 10px;
 }
 
 .headersecond {
@@ -52,7 +52,7 @@ label {
 
 .container {
   height: 600px;
-  background color: rgba(232,217,217,.3);
+  background-color: rgba(232, 217, 217, 0.3);
 }
 
 header > div {
