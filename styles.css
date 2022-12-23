@@ -12,6 +12,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     background-color: #fff;
+    margin: 0 auto;
 }
 
 header > div {
@@ -86,7 +87,7 @@ form > label {
 form > input {
     background-color: #ebebeb;
     height: 100%;
-    width: 70vw;
+    width: 40vw;
     border: none;
     padding: 10px;
     outline: unset;
@@ -122,6 +123,72 @@ a, a:hover, a:focus, a:active {
 
 .log-in {
     min-width: max-content;
+}
+
+.dropdown {
+    display: none;
+    font-weight: 700;
+    float: right;
+    transform: rotate(90deg);
+}
+
+@media  screen and (max-width: 720px) {
+
+    .nav-container {
+        height: 40px;
+    }
+
+    .dropdown {
+        display: block;
+    }
+    .dropdown:hover {
+        transform: rotate(0);
+        transition: all .1s ease;
+        cursor: pointer;
+    }
+
+    .dropdown-container {
+        position: relative;
+        display: inline-block;
+        float: right;
+    }
+
+    .nav-bar {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        background-color: #fff;
+        right: 10px;
+        padding: 10px;
+        z-index: 99;
+        min-width: 150px;
+        box-shadow: 1px 1px 3px lightgray;
+        border-radius: 3px;
+    }
+
+    .dropdown-container:hover > ul {
+        display: block;
+        cursor: pointer;
+    }
+
+    nav ul li {
+        border-bottom: 1px solid lightgray;
+        padding: 6px;
+    }
+
+    .logo-container {
+        flex-wrap: wrap;
+    }
+
+    form {
+        order: 1;
+        margin: auto;
+        margin-top: 15px
+    }
+
+    form > input {
+        width: 65vw;
+    }
 }
 
 #section1 {
@@ -165,12 +232,28 @@ a, a:hover, a:focus, a:active {
     width: 14rem;
 }
 
+@media  screen and (max-width: 720px) {
+    #section1 > h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    #section1 > article {
+        width: 20rem;
+    }
+
+    .btn-plans, .btn-join-free {
+        padding: 10px 10px;
+    } 
+}
+
 #section2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 80vh;
+    margin-bottom: 50px;
 }
 
 #section2 > img {
@@ -191,8 +274,8 @@ a, a:hover, a:focus, a:active {
 }
 
 .oblique-left {
-    width: 20px;
-    height: 30px;
+    width: 80px;
+    height: 90px;
     background-color: white;
     transform: skew(15deg, 15deg);
     position: relative;
@@ -200,8 +283,8 @@ a, a:hover, a:focus, a:active {
 }
 
 .oblique-right {
-    width: 20px;
-    height: 30px;
+    width: 80px;
+    height: 90px;
     background-color: white;
     transform: skew(15deg, 15deg);
     position: relative;
@@ -217,6 +300,7 @@ a, a:hover, a:focus, a:active {
     padding: 0;
     margin: 0;
     margin-top: -10px;
+    text-align: center;
 }
 
 #section2 > article {
@@ -268,6 +352,22 @@ a, a:hover, a:focus, a:active {
 
 @media  screen and (max-width: 720px) {
 
+    .oblique-left {
+        left: 15px;
+    }
+
+    .oblique-right {
+        right: 15px;
+    }
+
+    #section2 > article {
+        width: 20rem;
+    }
+
+    #section3 {
+        height: auto;
+    }
+
     #section3 p {
         font-size: .8em;
     }
@@ -280,7 +380,10 @@ a, a:hover, a:focus, a:active {
 
     #section2 h2 {
         font-size: 1.2em;
-        min-width: max-content;
+    }
+
+    .btn-create-org {
+        padding: 10px 30px;
     }
     
 }
