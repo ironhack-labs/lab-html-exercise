@@ -33,22 +33,25 @@
       <div>
         <img src="images/npm-logo.png" alt="npm Logo" class="npm-logo" />
         <form action="/search" method="GET">
-          <label for="search">
-            <img
-              src="images/magnifying-glass.png"
-              alt="Magnifying Glass Icon"
-              class="magnifying-glass"
+          <span class="search-bg">
+            <label for="search">
+              <img
+                src="images/magnifying-glass.png"
+                alt="Magnifying Glass Icon"
+                class="magnifying-glass"
+              />
+            </label>
+            <input
+              type="search"
+              name="search"
+              id="search"
+              placeholder="Search packages"
             />
-          </label>
-          <input
-            type="search"
-            name="search"
-            id="search"
-            placeholder="Search packages"
-          />
+          </span>
+
           <button>Search</button>
         </form>
-        <div>
+        <div class="links">
           <a href="#" class="link-btn join">Join</a>
           <a href="#" class="link-btn">Log In</a>
         </div>

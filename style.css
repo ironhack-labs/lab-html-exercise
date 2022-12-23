@@ -42,27 +42,30 @@ nav a {
 }
 
 header form {
-    flex-basis: 80%;
+    margin: 5px;
+    width: 80%;
 }
 
-header form > input {
-    width: 85%;
-    line-height: 35px;
-    border: none;
+.search-bg {
     background-color:rgba(0,0,0,.05);
-    padding: 0px;
-    
+    padding: 10px;
 }
 
-header form > input:focus {
+header form input {
+    line-height: 2.5rem;
+    width: 80%;
+    border: none;
+    background-color:rgba(0,0,0,0);
+}
+
+header form input:focus {
     outline: none;
 }
 
 header form > label {
-    background-color:rgba(0,0,0,.05);
-    line-height: 35px;
-    padding: 5px;
+    padding: 0px;
     margin-left: 5px;
+    margin-top:5px;
 }
 
 header form > button {
@@ -71,6 +74,12 @@ header form > button {
     border: none;
     padding: 10px 15px;
     margin: 10px 0px;
+    line-height: 1.5em;
+    
+}
+
+.links {
+    width: 150px;
 }
 
 .link-btn {
@@ -83,8 +92,13 @@ header form > button {
 }
 
 header .join {
-    border-style: outset;
+    border-style: inset;
     border-width: thin;
+    font-weight: 900;
+    border-color: lightgray;
+    padding-left: 15px;
+    padding-right: 15px;
+    
 }
 
 .npm-logo {
@@ -92,7 +106,7 @@ header .join {
 }
 
 .magnifying-glass {
-    height: 15px;
+    height: 20px;
 }
 
 #summary {
@@ -132,7 +146,7 @@ header .join {
     color: white;
 }
 
-.join {
+#summary .join {
     color: black;
     font-weight: 700;
 }
@@ -174,22 +188,25 @@ header .join {
 #features > div {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    margin: 50px;
+    justify-content: space-around;
+    margin: 50px 0px;
+    text-align: left;
 }
 
 #features h3 {
     color: #ED1C24;
-    font-size: 1em;
+    font-size: .7em;
+    font-weight: 900;
 }
 
 #features p {
     font-size: .8em;
-    margin: 20px 50px 20px 0px;
+    margin: 20px 20px 20px 0px;
+    text-align: left;
 }
 
 #features img {
-    height: 30px;
+    height: 20px;
 }
 
 #features a {
