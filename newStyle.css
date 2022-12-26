@@ -65,6 +65,7 @@ nav a {
     flex-direction: column;
     align-items: center;
     height: 600px;
+    line-height: 1.5;
 }
 #welcome > h1{
     font-size: 5rem;
@@ -72,22 +73,48 @@ nav a {
     width: 600px;
     margin-bottom: 20px;
 }  
-#welcome > p{
+#welcome > p,
+#welcome > article > p,
+#general-information p {
+    text-align: center;
     width: 600px;
 }
 #welcome > article{
-   
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
-#welcome > article > h4{
+#welcome > article > h4,
+#general-information h3 {
     font-size: 1.8rem;
     width: 400px;
+    margin-bottom: 0;
 }
-.button-register{
+#welcome > div {
+    margin-top: 30px;
+    padding: 10px;
+}
 
+.button-register,
+.button-readme {
+    width: 230px;
+    height: 59px;
+    padding: 15px 35px;
+    border-radius: 50px;
+    border: none;
+    font-size: 1em;
+    font-weight: bold;
+    background-color: #FFC329;
+    text-decoration: none;
+    color: black;
 }
 .button-readme{
-
+    background-color: #FB3B49;
+    color: white;
+    border: 1px solid white;
+    margin-left: 30px;
 }
   
   
@@ -99,10 +126,55 @@ nav a {
     align-items: center;
     background-color: white;
 }
+#general-information h3 {
+    text-align: center;
+    font-weight: 600;
+    color: #333;
+}
+#general-information p {
+    margin-bottom: 100px;
+    color: #333;
+    margin-top: 20px;
+}
+
+#our_target,
+#records {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#our_target h3 {
+    text-align: center;
+    font-size: 2.5em;
+    width: 600px;
+    margin-bottom: 0;
+    color: white;
+}
+#our_target p {
+    width: 600px;
+    text-align: center;
+    color:white;
+}
+
+#records {
+    background-color: white;
+    margin-top: 50px;
+    padding-bottom: 80px;
+    border-bottom: 1px solid #DDDAD9;
+}
+#records h3 {
+    text-align: center;
+    font-size: 2em;
+    width: 450px;
+    color:#333;
+}
+
 
 
 .footer-content {
     display: flex;
     justify-content: space-around;
     align-items: ;
+    background-color: white;
 }
