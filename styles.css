@@ -32,8 +32,9 @@ nav {
 nav ul {
   list-style: none;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content:space-evenly;
+  margin: 10px 10px 10px 10px;
+  padding: 0px 10px;
 }
 
 nav a {
@@ -45,23 +46,34 @@ nav a {
   width: 20px;
   margin-right: 1rem;
 }
-  .logo {
+
+.logo {
     width: 100px;
     margin-right: 1rem;
-  }
+}
 
+.sec-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 /*
 taken from NPM - testing code
+this code was taken from NPM website while inspecting some elements*/
   .test{
     width: 100%;
-    padding: 8px 0;
-    margin: 0 0;
+    padding: 0;
+    margin: 0;
     border-width: 10px 0 0;
     border-top-style: solid;
     border-image: linear-gradient(139deg, #fb8817, #ff4b01, #c12127, #e02aff) 3;
     border-image-source: linear-gradient(139deg, rgb(251, 136, 23), rgb(255, 75, 1), rgb(193, 33, 39), rgb(224, 42, 255));
     border-image-repeat: stretch;
   }
+/*
+end of copied code from external source
+
+ps: images used come from the same source
 */
 
 #header_id{
@@ -74,14 +86,146 @@ taken from NPM - testing code
   align-items: flex-end;
 }
 
-#call-for-action-homepage{
+.search {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 
 }
 
-#call-for-action-homepage h1{
+.search input{
+  height: 20px;
+  outline: none;
+  padding: 3px;
+  width: 100%;
+  flex:1;
+}
+
+.search button {
+  border: 1px solid black;
+  color:white;
+  background-color: black;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.content{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  min-width:500px;
+  max-width:65%;
+}
+
+#section1{
+  background-image: url(https://static.npmjs.com/abf53a31b2da4657a1a004ee9358551c.png);
+  background-repeat: no-repeat;
+  margin: 0 0;
+  padding: 50px 200px 50px 200px;
+  background-size: cover;
+}
+
+#section1 h1{
   font-family: "Poppins";
-  font-size: 100px;
+  text-align: center;
+  color:white;
+  font-size: 80px;
   font-weight:bolder;
-  font-stretch: extra-expanded;
+}
+#section1 h2{
+  font-family: "Poppins";
+  text-align: center;
+  color:white;
+  font-size: 36px;
+  font-weight:bolder;
+}
+#section1 p{
+  font-family: "Poppins";
+  text-align: center;
+  color:white;
+  font-size: 18px;
+  font-weight:lighter;
+}
+
+#section1 button{
+display: flex;
 
 }
+
+#section2{
+  background-color:white;
+  margin: 0 0;
+  padding: 50px 200px 50px 200px;
+  background-size: cover;
+}
+
+#section2 h1{
+  font-family: "Poppins";
+  text-align: center;
+  color:black;
+  font-size: 80px;
+  font-weight:bolder;
+}
+#section2 h2{
+  font-family: "Poppins";
+  text-align: center;
+  color: #333333;
+  font-size: 36px;
+  font-weight:bolder;
+}
+#section2 p{
+  font-family: "Poppins";
+  color:black;
+  font-size: 14px;
+  font-weight: 100;
+  text-align: justify;
+}
+
+#section3{
+  background-image: url(https://static.npmjs.com/3dc2ca3d2e53fc894b904d917cf90015.png);
+  background-repeat: no-repeat;
+  margin: 0 0;
+  padding: 50px 200px 50px 200px;
+  background-size: cover;
+}
+
+#section3 h1{
+  font-family: "Poppins";
+  text-align: center;
+  color:white;
+  font-size: 60px;
+  font-weight:bolder;
+}
+
+#section3 p{
+  font-family: "Poppins";
+  text-align: center;
+  color:white;
+  font-size: 14px;
+  font-weight:lighter;
+  text-align: justify;
+}
+
+.logo-footer {
+  width: 50px;
+}
+
+.footer-container h3{
+  font-family: "Poppins";
+}
+/*revisiting materials --- testing CS*/
+
+.footer-container{
+	display: flex;
+	flex-direction: row;
+	align-items: stretch;
+	align-content: flex-start;
+}
+
+.footer-1 nav ul {
+  list-style: none;
+  flex-direction: column;
+
+}
+
