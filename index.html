@@ -5,37 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NPM Clone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <header>
-      <div>
-        <img class="blackHeart" src="./images/black-heart.png" /> NPM Clone Nifty Penguin Magic
+      <div id="navBar">
+        <div>
+          <img class="blackHeart" src="./images/black-heart.png" />
+          <span> Nifty Penguin Magic </span>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#">npm Enterprise</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Solutions</a></li>
+            <li><a href="#">Resources</a></li>
+            <li><a href="#">Docs</a></li>
+            <li><a href="#">Support</a></li>
+          </ul>
+        </nav>
       </div>
-      <nav>
-        <ul>
-          <li><a href="#">npm Enterprise</a></li>
-          <li><a href="#">Products</a></li>
-          <li><a href="#">Solutions</a></li>
-          <li><a href="#">Resources</a></li>
-          <li><a href="#">Docs</a></li>
-          <li><a href="#">Support</a></li>
-        </ul>
-    </nav>
-      <div>
-        <img src="./images/npm-logo.png" />
-        <img src="./images/magnifying-glass.png" />
+      <div id="searchBar">
+        <img id="npmLogo" src="./images/npm-logo.png" />
+
         <form>
-            <input type="text" placeholder="Search packages">
+          <div id="search">
+            <img id="magGlass" src="./images/magnifying-glass.png" />
+            <input type="text" placeholder="Search packages" />
+          </div>
+          <button id="search-btn" type="submit">Search</button>
         </form>
+
         <ul>
-          <button>Search</button>
-          <li><a href="#">Join</a></li>
+          <li id="join-btn"><a href="#">Join</a></li>
           <li><a href="#">Log In</a></li>
         </ul>
       </div>
     </header>
-    <section class="section">
+    <section id="amazingSection">
       <h1>Build amazing things</h1>
       <article class="article">
         Essential JavaScript development tools that help you go to market faster
@@ -44,7 +57,6 @@
       <div id="buttons">
         <div id="plans-btn"><a href="#">See plans</a></div>
         <div id="joinFree"><a href="#">Join for free</a></div>
-        </ul>
       </div>
     </section>
     <section class="section">
@@ -58,33 +70,33 @@
       </article>
     </section>
     <section>
-      <div>
-        <div>
+      <div id="cards">
+        <div class="card">
           <img src="./images/zero-configuration.svg" />
           <h3>Zero configuration</h3>
           Create an org, add your team, and start collaborating. Nothing to
           configure, set up, or manage.
         </div>
-        <div>
+        <div class="card">
           <img src="./images/team-management.svg" />
           <h3>Team management</h3>
           Control who has access to what modules within your team namespace
           using straightforward team management capabilities.
         </div>
-        <div>
+        <div class="card">
           <img src="./images/familiar-features.svg" />
           <h3>Familiar features</h3>
           npm Orgs has 100% parity with all the public npm registry features
           your developers already use.
         </div>
-        <div>
+        <div class="card">
           <img src="./images/npm-audit.svg" />
           <h3>npm audit</h3>
           Enjoy the security auditing features built into the npm client, a
           zero-friction way to make open source software safer.
         </div>
       </div>
-      <button>Create an Org</button>
+      <button id="org">Create an Org</button>
     </section>
   </body>
 </html>
