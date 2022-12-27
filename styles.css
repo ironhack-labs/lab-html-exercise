@@ -3,40 +3,74 @@ CSS for Ironhack's Prework NPM Clone Lab Project
 */
 
 @import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css?family=Arimo');
+
+
 
 body {
-  font-family: 'Poppins';
+  font-family: "Poppins";
 }
 
 body {
   background-color: red;
 }
 
+h1, h2, h3, h4, h5, h6{
+  font-family: "Arimo";
+  font-weight: 600;
+
+}
+
 header > div {
-    padding: 0 25px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid lightgray;
-  }
-  
-  nav {
-    width: 600px;
-  }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  nav a {
-    text-decoration: none;
-    color: black;
-  }
-  
-  .blackHeart {
-    width: 20px;
+  padding: 0 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+}
+
+nav {
+  width: 600px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+.blackHeart {
+  width: 20px;
+  margin-right: 1rem;
+}
+  .logo {
+    width: 100px;
     margin-right: 1rem;
   }
+
+/* taken from NPM - testing code*/
+  .test{
+    width: 100%;
+    padding: 8px 0;
+    margin: 0 0;
+    border-width: 10px 0 0;
+    border-top-style: solid;
+    border-image: linear-gradient(139deg, #fb8817, #ff4b01, #c12127, #e02aff) 3;
+    border-image-source: linear-gradient(139deg, rgb(251, 136, 23), rgb(255, 75, 1), rgb(193, 33, 39), rgb(224, 42, 255));
+    border-image-repeat: stretch;
+  }
+#header_id{
+  display: flex;
+}
+
+#header_id > div ul {
+  list-style: none;
+  display: flex;
+  align-items: flex-end;
+}
