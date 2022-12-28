@@ -4,91 +4,149 @@ body {
   font-family: 'Poppins';
 }
 
+a {
+    text-decoration: none;
+}
+
 header > div {
     padding: 0 25px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid lightgray;
-  }
+}
   
-  nav {
+nav {
     width: 600px;
-  }
-  
-  nav ul {
+}
+
+nav ul {
     list-style: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-  
-  nav a {
-    text-decoration: none;
-    color: black;
-  }
-  
-  .blackHeart {
+}
+
+.blackHeart {
     width: 20px;
     margin-right: 1rem;
-  }
+}
 
-  .logo {
+.logo {
     width: 50px;
     display: flex;
-  }
+}
 
-  .magnifier {
+.magnifier {
     width: 20px;
-  }
+    vertical-align: middle;
+}
 
-  .search {
+.search {
     display: flex;
-    margin: 5px;
     background-color: rgba(0,0,0,.05);
- }
+    margin: 10px 15px 10px 15px;
+    width: 100%;
+}
 
-  .button {
+.searchForm {
+    width: 100%; 
+    height: 25px;
+    padding: 10px; 
+    display: inline-block;
+    position: relative;
+}
+
+input {
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+    background-color: #eee;
+}
+
+.no-outline:focus {
+    outline: none;
+}
+  
+.no-outline {
+    width: 90%;
+    text-decoration: none !important;
+    border-bottom: none!important;
+    box-shadow: none!important;
+}
+
+.searchButton {
+    width: 90px;
     background-color: #fb3e44;
     color: white;
-  }
+    border: none;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
 
-  .membership a {
+.button {
+    background-color: #fb3e44;
+    color: white;
+}
+
+.membership {
+    width: 15%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.membership a {
     text-decoration: none;
-    color: darkblue
-  }
+    color: black;
+}
+  
+  .headerLogin {
+    display: flex;
+    align-items: center;
+}
 
-  .membership .join {
+.membership .join {
     list-style-type: none;
     border-style: solid;
     border-color: black;
     border-width: thin;
-  }
+    margin-right: 10px;
+    padding: 5px;
+    padding-left: 20px; 
+    padding-right: 20px; 
+}
 
-  #building {
+#building {
     background-color: rgba(232,217,217,.3);
     height: 600px;
-  }
+}
 
-  #building h1 {
+#building h1 {
     display: flex;
     justify-content: center;
     font-size: 3em;
-  }
+}
   
-  #building > article > p {
+#building > article > p {
     width: 25em;
     text-align: center;
     margin: auto;
-  }
+}
 
-  #building > div {
+#building > div {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 25px;
-  }
-  
+}
+
  #building .seePlans {
     display: flex;
     align-items: center;
@@ -97,6 +155,12 @@ header > div {
     padding: 15px 30px 15px 30px;
     background-color: #FB3B49;
     box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+    border: hidden;
+    color: white;
+}
+
+#building .join {
+    color: black;
 }
 
 #source .hexagon {
@@ -121,14 +185,43 @@ header > div {
 
 #source > article {
     width: 48em;
-    justify-content: center;
+justify-content: center;
     text-align: center;
     margin: auto;
     font-size: 0.8em;
 
 }
 
+#four h4 {
+    color: #ED1C24;
+}
+
 #four img {
     width: 20px;
 }
 
+#four {
+    display: flex;
+    justify-content: center;
+	align-items: center;
+	align-content: center;
+    margin-top: 150px;
+    margin-bottom: 50px;
+    padding-right: 250px;
+    padding-left: 250px;
+    font-size: 0.8em;
+    text-align:left;
+}
+
+.org p {
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: black;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    font-size: 1.2em;
+    margin-left: 550px;
+    margin-right: 550px;
+    padding: 15px;
+    
+};
