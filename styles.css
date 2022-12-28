@@ -115,9 +115,18 @@ ps: images used come from the same source
   padding: 10px;
   margin-top: 10px;
   background-color: rgb(232, 232, 232);
-  flex:4;
+  flex:4;/* doesn't work*/
 }
-/*google search how to*/
+.search button {
+  border: none;
+  color:white;
+  background-color: black;
+  padding: 10px;
+  margin-top: 10px;
+}
+/*google search
+for search input/input image
+*/
 input#query {
   background-image: url(images/magnifying-glass.png);
   background-size:25px;
@@ -126,15 +135,7 @@ input#query {
   text-indent: 30px;
 }
 
-
-.search button {
-  border: none;
-  color:white;
-  background-color: black;
-  padding: 10px;
-  margin-top: 10px;
-}
-
+/*end google search*/
 .content{
   margin-left: auto;
   margin-right: auto;
@@ -147,6 +148,12 @@ input#query {
   margin: 0 0;
   padding: 50px 200px 50px 200px;
   background-size: cover;
+}
+
+#section1 .section1-btn form{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 #section1 h1{
@@ -170,10 +177,12 @@ input#query {
   font-size: 18px;
   font-weight:lighter;
 }
-
-#section1 button{
-display: flex;
-
+/*same code from section4*/
+#pair-btn{
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+ 
 }
 
 #section2{
@@ -202,7 +211,6 @@ display: flex;
   color:black;
   font-size: 14px;
   font-weight: 100;
-  text-align: justify;
 }
 
 #section3{
@@ -227,7 +235,6 @@ display: flex;
   color:white;
   font-size: 14px;
   font-weight:lighter;
-  text-align: justify;
 }
 
 #section5{
@@ -258,6 +265,9 @@ display: flex;
   color:white;
   background-color: black;
   padding: 20px;
+  margin:20px 10px;
+  border-style: groove;
+  border-radius: 10rem;
 }
 .create-org-btn :hover{
   width: 300px;
@@ -279,7 +289,11 @@ display: flex;
 .footer-container h3{
   font-family: "Poppins";
 }
-/*revisiting materials --- testing CS*/
+/*
+revisiting materials --- testing CS
+Didn't work... this stretched the space to the right
+and outside the display visible area
+*/
 /*
 .footer-container{
   display: flex;
@@ -324,6 +338,9 @@ Section 5 - four column section from the assignment
 .column-test p{
   text-align:left;
 }
+.column img{
+  height: 200px;
+}
 .column-1{
   padding: 10px 10px;
   flex:1;
@@ -340,7 +357,9 @@ Section 5 - four column section from the assignment
   padding: 10px 10px;
   flex:1;
 }
-
+/*
+new try for four column footer
+*/
 #new-footer{
   width: 80%;
   display: flex;
@@ -393,4 +412,8 @@ Section 5 - four column section from the assignment
 }
 .footer-box-4 h3{
   font-family: "Poppins";
+}
+.logo-columns {
+  height: 50px;
+  margin-right: 1rem;
 }
