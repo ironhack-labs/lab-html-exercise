@@ -60,24 +60,26 @@ header > div {
   }
 
   .npm-logo {
-    width: 50px;
+    width: 70px;
     height: 20px;
-    padding: 9px 20px;
+    margin-left: 10px;
+    margin-right: 0;
   }
 
   .search-bar {
     margin-bottom: 20px;
-    padding-top: 20px;
+    margin-left: 0;
+    padding-top: 10px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
   }
 
   .search-bar input {
-    width: 1500px;
+    width: 1550px;
     border: none;
     padding: 9px;
-    color: rgba(188, 179, 179, 0.932);
+    color: rgba(210, 203, 203, 0.932);
     background-color: rgba(0,0,0,.05);
     font-family: "Poppins";
     font-weight: bolder;
@@ -91,11 +93,6 @@ header > div {
     padding: 9px;
   }
 
-  .logos {
-    display: flex;
-    justify-content: space-evenly;
-  }
-
   .search-bar button {
     color: white;
     background-color: #fb3e44;
@@ -104,30 +101,38 @@ header > div {
     font-family: "Poppins";
     text-align: center;
     margin: 0 auto;
-    padding: 9px 20px;
+    padding: 7px 20px;
   }
 
-  .options {
-    display: flex;
-    justify-content: space-evenly;
-  }
+.options {
+    margin-bottom: 9px;
+}
 
-  .options button {
-    padding: 5px 10px;
-    margin: 0 10px;
-    text-align: right;
+  .login-button {
+    border: none;
     background-color: white;
-    text-align: center;
     font-family: "Poppins";
   }
 
-  .login-button {
-    border: 1px solid white;
+  .join-button {
+    border: 1px solid rgb(222, 218, 218);
+    padding: 5px 15px;
+    background-color: white;
+    font-family: "Poppins";
   }
 
-  .join-button {
-    border: 1px solid gray;
-  }
+.first-div {
+    border-color: white;
+    padding-bottom: 1px;
+}
+
+.second-div {
+    border-color: white;
+    box-shadow: 0 5px 5px rgba(226, 226, 226, 0.915);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 
 #introduction {
     display: flex;
@@ -136,6 +141,7 @@ header > div {
     background-color: rgba(232,217,217,.3);
     align-items: center;
     flex-direction: column;
+    margin-bottom: 30px;
 }
 
 .article-1 {
