@@ -23,6 +23,7 @@ header > div {
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid lightgray;
+  padding: 10px 40px;
 }
 
 nav {
@@ -41,6 +42,20 @@ nav a {
   text-decoration: none;
   color: black;
 }
+/*
+nearly no effect - unable to create new version top nav
+
+*/
+.nav-flex-1 {
+flex:0;
+}
+.nav-flex-2 {
+  flex:2;
+}
+.nav-flex-3 {
+  flex:0;
+}
+
 
 .blackHeart {
   width: 20px;
@@ -95,15 +110,25 @@ ps: images used come from the same source
 }
 
 .search input{
-  height: 20px;
+  border: none;
   outline: none;
-  padding: 3px;
-  width: 100%;
-  flex:1;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: rgb(232, 232, 232);
+  flex:4;
+}
+/*google search how to*/
+input#query {
+  background-image: url(images/magnifying-glass.png);
+  background-size:25px;
+  background-repeat: no-repeat;
+  background-position: 5px;
+  text-indent: 30px;
 }
 
+
 .search button {
-  border: 1px solid black;
+  border: none;
   color:white;
   background-color: black;
   padding: 10px;
@@ -185,7 +210,7 @@ display: flex;
 #section3{
   background-image: url(https://static.npmjs.com/3dc2ca3d2e53fc894b904d917cf90015.png);
   background-repeat: no-repeat;
-  margin: 0 0;
+  margin: 40px 0;
   padding: 50px 200px 50px 200px;
   background-size: cover;
 }
@@ -208,8 +233,9 @@ display: flex;
 }
 
 #section5{
-  background-color: #333333;
-  margin: 0 0;
+  /*background-color: #333333;*/
+  background-image: url(https://static.npmjs.com/abf53a31b2da4657a1a004ee9358551c.png);
+  margin: 50px 0;
   padding: 50px 200px 50px 200px;
   background-size: cover;
 }
@@ -221,6 +247,26 @@ display: flex;
   font-weight:bolder;
 }
 
+.create-org-btn button{
+  width: 300px;
+  font-size: larger;
+  border: none;
+  color:white;
+  background-color: black;
+  padding: 20px;
+}
+.create-org-btn :hover{
+  width: 300px;
+  font-size: larger;
+  border: white;
+  color:black;
+  background-color: white;
+  padding: 20px;
+}
+
+.create-org-btn{
+  text-align: center;
+}
 .logo-footer {
   width: 50px;
 }
@@ -229,15 +275,33 @@ display: flex;
   font-family: "Poppins";
 }
 /*revisiting materials --- testing CS*/
-
+/*
 .footer-container{
-	display: flex;
+  display: flex;
+  max-width: 1240px;
+  font-size: small;
+  text-align: left;
+  line-height: 1.5;
+  margin: 0 auto 0 auto;
+  padding: 20px 50px;
 }
 
 .footer-1 nav ul {
   list-style: none;
   flex-direction: column;
+  justify-content:flex-end;
+  margin: 10px 10px 10px 10px;
+  padding: 0px 10px;
 }
+.footer-1 nav li {
+  list-style: none;
+  flex: 1;
+
+}
+*/
+/*
+Section 5 - four column section from the assignment
+*/
 
 .column-test{
   display: flex;
@@ -245,21 +309,83 @@ display: flex;
   text-align: center;
   line-height: 1.65;
   width: 65%;
-  margin: 0 auto 0 auto;
+  margin: auto;
   padding: 20px 50px;
+  align-content: center;
+}
+.column-test h1{
+  font-size:medium
 }
 .column-test p{
   text-align:left;
 }
 .column-1{
   padding: 10px 10px 10px 10px;
+  flex:1;
 }
 .column-2{
   padding: 10px 10px 10px 10px;
+  flex:1;
 }
 .column-3{
   padding: 10px 10px 10px 10px;
+  flex:1;
 }
 .column-4{
   padding: 10px 10px 10px 10px;
+  flex:1;
+}
+
+#new-footer{
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+}
+
+#new-footer nav ul{
+  flex-direction: column;
+}
+#new-footer img{
+  flex-direction: column;
+}
+.footer-box-1{
+  /*background-color: #fb8817 ;*/
+  height:;
+  width: 20%;
+  padding: 20px 10px;
+  flex:1;
+}
+.footer-box-1 h3{
+  font-family: "Poppins";
+}
+.footer-box-2{
+  /*background-color: #ff4b01 ;*/
+  height:;
+  width: 20%;
+  padding: 0 20px;
+  flex: 3;
+}
+.footer-box-2 h3{
+  font-family: "Poppins";
+}
+.footer-box-3{
+  /*background-color: #c12127 ;*/
+  height:;
+  width: 20%;
+  padding: 0 20px;
+  flex: 3;
+}
+.footer-box-3 h3{
+  font-family: "Poppins";
+}
+.footer-box-4{
+  /*background-color: #e02aff ;*/
+  height:;
+  width: 20%;
+  padding: 0 20px;
+  flex: 3;
+}
+.footer-box-4 h3{
+  font-family: "Poppins";
 }
