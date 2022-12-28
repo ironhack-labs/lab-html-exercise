@@ -3,6 +3,7 @@
 <html lang="en">
 
 <head>
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,30 +11,41 @@
     <link rel="stylesheet" href="style.css">
 
     <title>npm</title>
+
 </head>
 
 <body>
 
     <header>
 
-        <img src="images/black-heart.png" alt="black-heart"> Notorious Puppy Memes
+        <div class="header-top">
 
-        <ul>
-            <li><a href="#"> npm Enterprise</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">Solutions</a></li>
-            <li><a href="#">Resources</a></li>
-            <li><a href="#">Docs</a></li>
-            <li><a href="#">Support</a></li>
-        </ul>
+            <div>
+                <img src="images/black-heart.png" alt="black-heart" class="black-heart">
+                <span>Notorious Puppy Memes</span>
+            </div>
 
-        <div>
+            <nav>
+                <ul class="home-links">
+                    <li><a href="#">npm Enterprise</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Solutions</a></li>
+                    <li><a href="#">Resources</a></li>
+                    <li><a href="#">Docs</a></li>
+                    <li><a href="#">Support</a></li>
+                </ul>
+            </nav>
+
+        </div>
+
+        <div class="header-bottom">
 
             <h1>npm</h1>
 
-            <img src="images/magnifying-glass.png">
 
-            <form>
+
+            <form class="search-bar" action="">
+                <img class="glass" src="images/magnifying-glass.png">
                 <input type="text" name="search" placeholder="Search packages">
                 <button id="search-btn" type="submit">Search</button>
             </form>
@@ -47,19 +59,88 @@
 
     </header>
 
-    <img src="images/triangle-hexagon.svg">
+    <section class="section-1">
 
-    Build Amazing Things
+        <h1>Build Amazing Things</h1>
 
-    We're npm, Inc., the company behind the npm Registry and npm CLI.
-    We offer those to the community for free, but our day
-    job is building and selling useful tools for developers like you.
+        <article>
+            <p>
+                Take your JavaScript development up a notch Get started today
+                for free, or step up to npm Pro to enjoy a premium
+                JavaScript development experience, with features
+                like private packages.
+            </p>
+        </article>
 
-    Take your JavaScript development up a notch
+        <div class="section-1a">
+            <a href="https://www.npmjs.com/signup" class="link-1">Sign up for free</a>
+            <a href="https://www.npmjs.com/products/pro" class="link-2"><b>Learn about Pro</b></a>
+        </div>
 
-    Get started today for free, or step up to npm Pro to enjoy a premium
-    JavaScript development experience, with features
-    like private packages.
+    </section>
+
+    <section class="section-2">
+
+        <img class="triangle-hexagon" src="images/triangle-hexagon.svg" alt="triangle-hexagon">
+
+        <h2>Bring the best of open source to you, your team, and your company</h2>
+
+        <article>
+            <p>
+                Relied upon by more than 11 million developers worldwide,
+                npm is committed to making JavaScript development elegant,
+                productive, and safe. The free npm Registry has become the
+                center of JavaScript code sharing, and with more than one
+                million packages, the largest software registry in the world.
+                Our other tools and services take the Registry, and the
+                work you do around it, to the next level.
+            </p>
+        </article>
+
+    </section>
+
+
+    <section class="section-3">
+
+        <div class="container">
+
+            <div id="zero-configuration">
+                <img src="images/zero-configuration.svg" alt="zero-configuration" />
+                <h3>Zero configuration</h3>
+                <p>
+                    Create an org, add your team, and start collaborating.
+                </p>
+            </div>
+
+            <div id="team-management">
+                <img src="images/team-management.svg" alt="team-management" />
+                <h3>Team management</h3>
+                <p>
+                    Control who has access to what modules within your team namespace.
+                </p>
+            </div>
+
+            <div id="familiar-features">
+                <img src="images/familiar-features.svg" alt="familiar-features" />
+                <h3>Familiar features</h3>
+                <p>
+                    npm has 100% parity with all the public npm registry features.
+                </p>
+            </div>
+
+            <div id="npm-audit">
+                <img src="images/npm-audit.svg" alt="npm-audit" />
+                <h3>npm audit</h3>
+                <p>
+                    Enjoy the security audit features built into the npm client.
+                </p>
+            </div>
+
+        </div>
+
+        <a href="#">Create an Org</a>
+
+    </section>
 
 </body>
 
