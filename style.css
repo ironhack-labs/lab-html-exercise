@@ -4,8 +4,8 @@ body {
   font-family: 'Poppins';
 }
 
-header > div {
-    padding: 0 25px;
+.upperDiv {
+   padding: 0 25px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -38,7 +38,10 @@ header > div {
   }
 
   .searchBar {
-   width: 50px;
+    width: 25px;
+   padding: 8px 8px;
+   border: rgba(0,0,0,.05) ;
+   background-color: rgba(0,0,0,.05);
   
   }
 
@@ -49,13 +52,130 @@ header > div {
     align-items: center;
   }
 
-  .link-Join {
-    text-decoration: none;
-    color: black;
+  .form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
-  .link-LogIn{
+  .downDiv a {
     text-decoration: none;
     color: black;
-
+    margin-right: 20px;
   }
+
+.link-Join {
+  border: 1px solid lightgray;
+  padding: 5px 15px;
+  
+}
+
+  .downDiv form button {
+  background-color: #fb3e44;
+  color: white;
+  height: 40px; 
+  width: 80px;
+  margin: 10 30 0 0;
+  border-color: #fb3e44;
+  }
+
+  .downDiv form label, input {
+    background-color: rgba(0,0,0,.05);
+    width: 650px;
+    height: 40px;
+    border-color: rgba(0,0,0,.05);
+  }
+
+  #sectionOne{
+    display: flex;
+   justify-content:flex-start;
+   flex-direction: column;
+   align-items: center;
+   background-color: rgba(232,217,217,.3);
+   height: 600px;
+  }
+
+  #sectionOne h1 {
+    font-size: 4em;
+    text-align: center; 
+    font-weight: bold;
+    padding-top: 30;
+  }
+
+  .articleSectionOne {
+      width: 425px;
+      text-align: center; 
+     
+      } 
+    
+   
+
+   #sectionOne div {
+      display: flex;
+      flex-direction: row;
+      width: 400px; 
+      justify-content: space-between;
+      margin: 40 0;
+      }
+
+    .link-JoinForFree {
+      text-decoration: none;
+      color: black;
+      background-color: white;
+      padding: 10 45;
+    }
+
+    .link-seePlan {
+      text-decoration: none;
+      color: white;
+      background-color: #FB3B49;
+      box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+      padding: 10 50;
+    }
+
+    #sectionTwo{
+     display: flex;
+     justify-content:flex-start;
+     flex-direction: column;
+     align-items: center;
+     height: 600px;
+    }
+    .triangleHexagon {
+    width: 300;
+    margin-top: 70;
+    }
+
+    #sectionTwo h3 {
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+    font-style: italic;
+    padding: 0 30;
+    margin-top: 60;
+    font-size: 2em; 
+    }
+
+    .articleSectionTwo {
+      width: 800px;
+      text-align: center; 
+    }
+
+    .zeroConfiguration {
+    width: 50px;
+    }
+    .teamManagement {
+    width: 50px;
+    }
+    .familiarFeatures {
+    width: 50px;
+    }
+    .npmAudit {
+    width: 50px;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-around;
+      flex-direction: row;
+      align-items: center;
+   
+    }
