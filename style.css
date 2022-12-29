@@ -10,11 +10,7 @@ header > div {
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid lightgray;
-  }
-  
-  nav {
-    display: flex;
-    align-items: flex-end;
+    font-weight: bold;
   }
   
   nav ul {
@@ -22,6 +18,7 @@ header > div {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
   }
 
   nav > ul > li {
@@ -41,7 +38,7 @@ header > div {
   }
 
 .searchForm {
-    padding: 0 25px;
+    padding: 0 5px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -78,6 +75,10 @@ button {
     text-decoration: none;
 }
 
+.search-button button {
+    text-decoration: none;
+}
+
 .buttons-left {
     display: flex;
     align-items: center;
@@ -91,13 +92,17 @@ button {
   }
 
 .joinLink {
-    padding: 0 10px;
+    padding: 3px 15px;
     border-color: red;
     border: 1px solid darkgray;
+    margin: 0 10px;
+    font-weight: lighter;
 }
 
 .logInLink {
 padding: 10px;
+margin: 0 10px;
+font-weight: lighter;
 }
 
 #section1 {
@@ -111,15 +116,16 @@ padding: 10px;
 
 #section1 > h1 {
     font-weight: bolder;
+    font-weight: 600;
     font-size: 70px;
-    padding: 50px 0 0 0;
+    margin: 0;
 }
 
 #section1 > article {
     text-align: center;
-    padding: 30px;
-    width: 500px;
+    width: 450px;
     font-weight: bold;
+    margin: 20px 0 40px 0;
 }
 
 #section1 > div > a {
@@ -128,7 +134,7 @@ padding: 10px;
 }
 
 .plansLink {
-    padding: 10px 40px;
+    padding: 10px 60px;
     background-color: #FB3B49;
     color: white;
     font-weight: bold;
@@ -137,7 +143,7 @@ padding: 10px;
 }
 
 .joinForFreeLink {
-    padding: 10px 40px;
+    padding: 10px 60px;
     background-color: white;
     color: black;
     font-weight: bold;
@@ -149,12 +155,12 @@ padding: 10px;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-
+    margin: 0 0 80px 0;
 }
 
  .triangleHexagone {
     width: 200px;
-    margin: 40px 0;
+    margin: 80px 0;
 }
 
 #section2 h1 {
@@ -166,6 +172,7 @@ padding: 10px;
     padding: 0 30px;
     height: 40px;
     font-weight: bolder;
+    margin: 0;
 }
 
 #section2 article {
@@ -173,7 +180,7 @@ padding: 10px;
     padding: 30px;
     width: 700px;
     font-weight: bold;
-    margin: 40px 0;
+    margin: 0;
 }
 
 #section3 {
@@ -181,6 +188,12 @@ padding: 10px;
     justify-content: space-evenly;
     flex-direction: row;
     align-items: flex-start;
+    margin: 80px 70px 50px 70px;
+}
+
+#section3 > div {
+    margin: 15px;
+
 }
 
 #section3 img {
@@ -193,17 +206,18 @@ padding: 10px;
 }
 
 .create-org-link {
-    padding: 10px 40px;
+    padding: 10px 100px;
     background-color: black;
     color: white;
     font-weight: bold;
     box-shadow: 8px 8px 0 rgba(128,83,35,.2);
-    
-}
-
-.create-org-link > a {
+    margin: 0 0 100px 0;
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 500px;
     text-decoration: none;
-    color: white;
-    
 }
 
