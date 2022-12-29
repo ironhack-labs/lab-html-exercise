@@ -4,7 +4,7 @@ body {
   font-family: 'Poppins';
 }
 
-.firstNav {
+header > div {
     padding: 0 20px;
     display: flex;
     justify-content: space-between;
@@ -15,7 +15,6 @@ body {
   nav {
     display: flex;
     align-items: flex-end;
-
   }
   
   nav ul {
@@ -45,9 +44,8 @@ body {
     padding: 0 25px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid lightgray;
+    justify-content: flex-start;
   }
 
   .npmLogo {
@@ -57,31 +55,8 @@ body {
 
 .magnifyingGlass {
     width: 20px;
-    margin-right: 1rem;
-    display: flex;
     background-color: rgba(232,217,217,.3);
-}
-
-.buttons-left {
-    display: flex;
-    align-items: flex-end;
-}
-
-.buttons-left a {
-    text-decoration: none;
-    color: black;
-    display: flex;
-    align-items: flex-end;
-  }
-
-.joinLink {
-    padding: 10px;
-    border-color: red;
-
-}
-
-.logInLink {
-padding: 10px;
+    padding: 8px;
 }
 
 input {
@@ -90,15 +65,39 @@ input {
     font-family: 'Poppins' serif;
     padding: 10px;
     border-style: none;
-    padding: 10px 400px;
+    padding: 10px 300px;
+    text-align: left;
 }
 
 button {
     color: white;
     background-color: #fb3e44;
-    padding: 10px 15px;
+    padding: 7px 15px;
     font-family: 'Poppins';
     border-style: none;
+    text-decoration: none;
+}
+
+.buttons-left {
+    display: flex;
+    align-items: center;
+}
+
+.buttons-left a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+  }
+
+.joinLink {
+    padding: 0 10px;
+    border-color: red;
+    border: 1px solid darkgray;
+}
+
+.logInLink {
+padding: 10px;
 }
 
 #section1 {
@@ -199,10 +198,12 @@ button {
     color: white;
     font-weight: bold;
     box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    
 }
 
-#section3 > div > a {
+.create-org-link > a {
     text-decoration: none;
     color: white;
+    
 }
 
