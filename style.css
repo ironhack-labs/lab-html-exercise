@@ -1,3 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body {
+  font-family: 'Poppins';
+}
+
+/*
+-----------------------------------------------------------------------------------------------------
+*/
+
 .header {
   width: 99vw;
   height: 20vh;
@@ -15,7 +25,7 @@
 
 .top-header div {
   display: flex;
-  width: 35%;
+  width: 25%;
   height: 75%;
   margin-left: 1vw;
   justify-content: center;
@@ -26,9 +36,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 75%;
+  width: 60vw;
   height: 75%;
-  margin-left: 30vw;
+  margin-left: 25vw;
 }
 
 .top-header nav ul {
@@ -43,9 +53,9 @@
 }
 
 .top-header nav ul a {
-    text-decoration: none;
-    color: black;
-  }
+  text-decoration: none;
+  color: black;
+}
 
 .top-header div img {
   width: 2em;
@@ -123,32 +133,33 @@
 */
 
 #section1 {
-  background-color: rgb(239, 239, 239);
+  background-color: rgb(245, 242, 242);
   border-top: 3px solid rgb(220, 220, 220);
   margin: -1vh -0.6vw 0;
   border-bottom: 1px solid rgb(239, 239, 239);
-  height: 75vh;
+  height: 80vh;
 }
 
 #section1 h1 {
-  margin: 13vh auto 8vh;
+  margin: 13vh auto 7vh;
   text-align: center;
-  font-size: 5.2rem;
+  font-size: 4.5rem;
+  font-weight: bolder;
 }
 
 #section1 article {
   margin: auto;
   text-align: center;
   width: 40%;
-  font-size: 1.4rem;
+  font-size: 1rem;
 }
 
 #section1 div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 7vh 0;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 7vh 0;
+}
 
 .see-plans-button {
   display: flex;
@@ -158,11 +169,12 @@
   height: 7vh;
   background-color: rgb(255, 52, 52);
   color: white;
-  border: 1px solid rgb(255, 70, 70);
+  border: 1px solid rgb(255, 84, 84);
   border-radius: 1px;
-  font-weight: 550;
+  font-weight: bold;
+  font-size: 1.1em;
   text-decoration: none;
-  box-shadow: 4px 4px rgba(255, 52, 52, 0.3);
+  box-shadow: 4px 4px 2px rgba(255, 52, 52, 0.3);
   margin-right: 2rem;
 }
 
@@ -176,6 +188,84 @@
   color: black;
   background-color: white;
   text-decoration: none;
-  font-weight: 550;
+  font-weight: bold;
+  font-size: 1.1em;
 }
 
+/*
+-----------------------------------------------------------------------------------------------------
+*/
+
+#section2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: white;
+  border: 1px solid white;
+  margin: -1vh -0.6vw 0;
+  height: 160vh;
+}
+
+#section2 > img {
+  margin: 10vh 0 4vh;
+  width: 40%;
+  height: 25%;
+}
+
+#section2 h2 {
+  font-size: 2.3rem;
+  background-color: rgb(255, 255, 149);
+}
+
+.small-text {
+  font-size: 0.85em;
+}
+
+#section2 > article {
+  margin: 3vh auto;
+  text-align: center;
+  width: 58%;
+}
+
+#section2 > div {
+  box-sizing: border-box;
+  padding: 1vh 5vw 0;
+  margin: 8vh 2vw 0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+
+#section2 > div article {
+  box-sizing: border-box;
+  padding: 0 3vw 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+#section2 > div article img {
+  width: 3vw;
+  height: 5vh;
+}
+
+#section2 > div article h3 {
+  color: red;
+  margin: 1vh 0 0;
+}
+
+#section2 > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30vw;
+  height: 10vh;
+  background-color: black;
+  color: white;
+  font-weight: 550;
+  font-size: 1.2rem;
+  text-decoration: none;
+  box-shadow: 5px 5px 2px rgba(115, 71, 71, 0.3);
+  margin-top: 7.5vh;
+}
