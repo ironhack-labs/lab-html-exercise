@@ -1,47 +1,51 @@
 .header {
   width: 99vw;
   height: 20vh;
-  border: 1px solid black;
   margin: -1vh -0.6vw 0;
 }
 
 .top-header {
+  box-sizing: border-box;
   padding: 0;
   display: flex;
-  height: 49%;
-  border: 1px solid blue;
+  height: 33%;
   align-items: center;
+  border-bottom: 2px solid rgba(232, 231, 231, 0.9);
 }
 
 .top-header div {
   display: flex;
-  width: 15%;
+  width: 35%;
   height: 75%;
   margin-left: 1vw;
-  border: 1px solid purple;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
 }
 
 .top-header nav {
   display: flex;
-  width: 50%;
+  justify-content: center;
+  align-items: center;
+  width: 75%;
   height: 75%;
-  margin-left: 40vw;
-  border: 1px solid purple;
-  justify-content: flex-start;
+  margin-left: 30vw;
+}
+
+.top-header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
   align-items: center;
 }
 
-.top-header nav {
-  display: flex;
-  width: 50%;
-  height: 75%;
-  margin-left: 40vw;
-  border: 1px solid purple;
-  justify-content: flex-start;
-  align-items: center;
+.top-header nav ul li {
+  padding: 0 0.8em;
 }
+
+.top-header nav ul a {
+    text-decoration: none;
+    color: black;
+  }
 
 .top-header div img {
   width: 2em;
@@ -49,6 +53,129 @@
 }
 
 .bottom-header {
-  height: 49%;
-  border: 1px solid blue;
+  display: flex;
+  align-items: center;  
+  box-sizing: border-box;
+  height: 65%;
+  padding: 1% 2.5% 1% 5%;
+  border-bottom: 2px solid rgba(232, 231, 231, 0.9);
 }
+
+.small-npm {
+  height: 2em;
+  width: 6em;
+}
+
+.search-icon {
+  box-sizing: border-box;
+  margin-left: 2.5em;
+  margin-top: 5.5%;
+  height: 2.5em;
+  width: 2.5em;
+  padding: 0.3em;
+  background-color: rgb(232, 231, 231);
+  border: 1px solid rgb(232, 231, 231);
+  border-radius: 2px 0 0 2px;
+}
+
+.bottom-header input {
+  height: 2.65em;
+  background-color: rgb(232, 231, 231);
+  border: 1px solid rgb(232, 231, 231);
+  width: 80%;
+}
+
+.bottom-header button {
+  height: 2.9em;
+  background-color: rgb(255, 52, 52);
+  color: white;
+  border: 1px solid rgb(255, 70, 70);
+  padding: 0 1em;
+  border-radius: 1px 2px 2px 1px;
+}
+
+.join-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  border: 1.5px solid black;
+  text-decoration: none;
+  color: black;
+  height: 1.9em;
+  width: 6em;
+  margin-left: 2.5em;
+  text-align: center;
+}
+
+.log-in-button {
+  box-sizing: border-box;
+  text-decoration: none;
+  color: black;
+  height: 1.75em;
+  padding: 0.2em 0;
+  margin-left: 1.74em;
+  width: 6em;
+}
+
+/*
+-----------------------------------------------------------------------------------------------------
+*/
+
+#section1 {
+  background-color: rgb(239, 239, 239);
+  border-top: 3px solid rgb(220, 220, 220);
+  margin: -1vh -0.6vw 0;
+  border-bottom: 1px solid rgb(239, 239, 239);
+  height: 75vh;
+}
+
+#section1 h1 {
+  margin: 13vh auto 8vh;
+  text-align: center;
+  font-size: 5.2rem;
+}
+
+#section1 article {
+  margin: auto;
+  text-align: center;
+  width: 40%;
+  font-size: 1.4rem;
+}
+
+#section1 div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 7vh 0;
+  }
+
+.see-plans-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15vw;
+  height: 7vh;
+  background-color: rgb(255, 52, 52);
+  color: white;
+  border: 1px solid rgb(255, 70, 70);
+  border-radius: 1px;
+  font-weight: 550;
+  text-decoration: none;
+  box-shadow: 4px 4px rgba(255, 52, 52, 0.3);
+  margin-right: 2rem;
+}
+
+.join-for-free-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 2rem;
+  width: 15vw;
+  height: 7vh;
+  color: black;
+  background-color: white;
+  text-decoration: none;
+  font-weight: 550;
+}
+
