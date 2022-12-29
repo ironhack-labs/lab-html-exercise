@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;700&display=swap');
 
 body {
   font-family: 'Poppins';
@@ -39,6 +39,7 @@ nav a {
     justify-content: space-between;
     align-items: center;
     padding: 7px 25px;
+    box-shadow: 0 3px 2px -1px rgb(202, 202, 202);
 }
 
   
@@ -104,3 +105,53 @@ nav a {
     padding: 4px 0;
 }
 
+#main {
+    height: 600px;
+    background-color: rgba(232,217,217,.3);
+    display: flex;
+    justify-content: center;
+}
+
+.main-article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-heading {
+    font-size: 4.5rem;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.main-copy {
+    width: 40%;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin: 2rem 0 4rem;
+}
+
+.main-btns {
+    display: flex;
+    justify-content: space-around;
+}
+
+.main-btns a {
+    text-decoration: none;
+    padding: 1rem 4rem;
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin: 0 1rem;
+}
+
+.main-plans-btn {
+    background-color: #FB3B49;
+    color: white;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+}
+
+.main-register-btn {
+    background-color: white;
+    color: black;
+}
