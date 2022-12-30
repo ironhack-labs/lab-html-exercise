@@ -82,7 +82,7 @@ header > div {
     cursor: pointer;
   }
 
-  #sec-one {
+  .section {
     height: 600px;
     background-color: rgba(232,217,217,.3);
     display: flex;
@@ -115,6 +115,7 @@ header > div {
     padding: 20px;
     width: 50%;
     font-size: 0.95em;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
   }
 
   #see-plans-btn:hover {
@@ -124,7 +125,6 @@ header > div {
   #see-plans-btn a {
     text-decoration: none;
     color: white;
-    
   }
 
   #join-btn a {
@@ -136,17 +136,13 @@ header > div {
   #join-btn {
     height: 50%;
     width: 50%;
-    background-color: #F8F4F4;
+    background-color: white;
     border: none;
+    margin-left: 7%;
   }
 
   #sec-two {
-    height: 600px;
     background-color: white;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
   }
 
   #hex-svg {
@@ -168,5 +164,54 @@ header > div {
     font-size: 0.80em;
     text-align: center;
   }
+
+  #sec-three {
+    background-color: white;
+    justify-content: start;
+  }
+
+  #main-cnt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 25px 50px 0 50px;
+    height: 30%;
+  }
+
+  .tile {
+    height: 100%;
+    padding: 5px 10px;
+  }
+
+  .tile > heading {
+    color: #ED1C24;
+    font-size: .75em;
+    font-weight: bold;
+  }
+
+  .tile > article {
+    font-size: .75em;
+    margin-top: 20px;
+  }
+
+  .title-img {
+    width: 10%;
+  }
+
+  #sec-three > button {
+    margin-top: 5%;
+    background-color: black;
+    width: 30%;
+    height: 10%;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+  }
+
+  #sec-three > button a {
+    color: white;
+    text-decoration: none;
+  }
+
+
+
   
 
