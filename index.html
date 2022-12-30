@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>NPM Clone</title>
+    <link href="./style.css" rel="stylesheet">
 </head>
 <body>
     <header>
-        <div>
+        <div id="header-sec-one">
             <div>
                 <img class="blackHeart" src="./images/black-heart.png" alt="black heart" />
                 <span> Nifty Penguin Magic </span>
@@ -24,25 +25,26 @@
                 </ul>
             </nav>
         </div>
-        <div>
-            <!-- add logo, search bar and buttons (or links and style them as buttons later) -->
-            <img src="./images/npm-logo.png" alt="npm-logo">
+        <div id="header-sec-two">
+            <img id="npm-logo" src="./images/npm-logo.png" alt="npm-logo">
             <form action="#" method="post">
                 <input type="text" placeholder="Search packages" name="search" id="search">
                 <button type="submit">Search</button>
             </form>
-            <div>
-                <li><a href="#">Join</a></li>
-                <li><a href="#">Log in</a></li>
+            <div id="header-sec-two-links-div">
+                <ul><a href="#">Join</a></ul>
+                <ul><a href="#">Log in</a></ul>
             </div>
         </div>
     </header>
     <section id="sec-one">
-        <heading>Build amazing things</heading>
+        <heading>
+            <h1>Build amazing things</h1>
+        </heading>
         <article>Essential Javascript development tools  that help you go to market faster and build powerful applications using modem open source code.</article>
         <div>
-            <button><a href='#'>See Plans</a></button>
-            <a href="#">Join for free</a>
+            <button id="see-plans-btn"><a href='#'>See Plans</a></button>
+            <button id="join-btn"><a href="#">Join for free</a></button>
         </div>
     </section>
     <section id="sec-two">
