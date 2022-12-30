@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NPM Clone</title>
+    <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
     <header>
@@ -24,19 +25,20 @@
                 </ul>
             </nav>
         </div>
-      
-        <div>
+    
+        <div class="bar">
             <img class="logo" src="./images/npm-logo.png" alt="NPM Logo">
-            <img class="glass" src="./images/magnifying-glass.png" alt="Magnifying glass">
+            
+            <form action="" method="post" target="_blank">
+                <input id="searcher" type="search" name="search" placeholder="Search packages">
+                <input type="submit" value="Search">
+            </form>
+            
             <div>
                 <a href="#">Join</a>
                 <a href="#">Log in</a>
             </div>
-            <form action="" method="post" target="_blank">
-                <input type="search" name="search" placeholder="Search packages">
-                <input type="submit" value="Search">
-            </form>
-            <!-- add logo, search bar and buttons (or links and style them as buttons later) -->
+            
         </div>
     </header>
 
