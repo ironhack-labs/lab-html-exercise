@@ -4,12 +4,84 @@ body {
   font-family: 'Poppins';
 }
 
-header > div {
-    padding: 0 25px;
+span {
+    font-size: 0.9em;
+    font-weight: bold
+}
+
+/* header */
+#menu {
     display: flex;
     justify-content: space-between;
-    align-content: center;
-    border-bottom: 1px solid lightgray;
+    align-items: center;
+}
+
+
+#search {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 5px 0;;
+}
+
+#search-menu {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content:space-between;
+    /* border: solid 1px red; */
+    margin-right: 15px;
+}
+
+#search-menu form {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#search-menu form input, label {
+    background-color: rgba(0,0,0,.05);
+    border: none; 
+    height: 38px;
+    font-family: Poppins;
+}
+
+.img-min {
+    width: 50px;
+    /* margin-right: 10px;     */
+}
+
+#lupa {
+    width: 15px;
+}
+
+#login {
+    justify-content: flex-end;
+}
+
+#login a {
+    text-decoration: none;
+    color: black;
+    margin: 10px;
+}
+
+#join {
+    border: solid 1px grey;
+    padding: 0.3em 1em;
+}
+
+
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+header div form button {
+    background-color: #fb3e44;
+    color: white;
+    border: none;
+    padding: 0.8em 1em;
 }
 
 nav {
@@ -26,9 +98,130 @@ nav ul {
 nav a {
     text-decoration: none;
     color: black;
+    font-weight: bold;
 }
 
 .blackHeart {
     width: 20px;
     margin-right: 1rem;
 }
+
+/* ./header */
+
+
+/* section presentation */
+#presentation {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 600px;
+    background-color: rgba(232,217,217,.3);
+}
+
+#presentation a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 35px;
+    margin: 10px;
+}
+
+#presentation div {
+    margin: 15px 0;
+    width: 27%;
+}
+
+#presentation article {
+    margin: 15px;
+    width: 27%;
+    text-align: center;
+}
+
+#see-plans-btn {
+    background-color:  #FB3B49;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 4em;
+    margin: 0;
+}
+/* ./section presentation */
+
+/* section information */
+#information {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0;
+}
+
+#information img {
+    width: 10%;
+    margin-bottom: 25px;
+}
+
+#information h2 {
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+    font-style: italic;
+    font-size: 2.2em;
+    font-weight: bold;
+}
+
+#information article {
+    width: 50%;
+    text-align: center;
+}
+/* ./secction information */
+
+
+
+/* section characteristics */
+
+#characteristics .content-item h3 {
+    color: #ED1C24;
+}
+
+#characteristics {
+    gap: 50px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#characteristics .content {
+    display: flex;
+    justify-content: space-around;
+    width: 86%;
+    gap: 50px;
+
+}
+
+
+#characteristics .content-item {
+    width: 25%;
+    padding: 0 10px;
+   
+}
+
+
+
+#characteristics a {
+    text-decoration: none;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    color: white;
+    background-color: black;
+    padding: 10px 100px; 
+    margin-bottom: 100px; 
+
+}
+
+
+
+
+/* ./section characteristics */
