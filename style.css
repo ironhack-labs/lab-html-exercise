@@ -65,7 +65,7 @@ nav a {
   padding: 0 15px;
 }
 
-#join-button {
+.join-button {
   background-color: white;
   color: black;
   border: 1px solid black;
@@ -77,4 +77,51 @@ nav a {
   color: black;
   padding: 5px 20px;
   text-decoration: none;
+}
+
+#section-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  background-color: rgba(232,217,217,.3);
+}
+
+#section-1 > h1 {
+  font-size: 70px;
+  font-weight: 900;
+  margin: 0px;
+}
+
+#section-1 > article {
+  font-size: 20px;
+  font-weight: 500;
+  max-width: 500px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.primary-button {
+  background-color: #fb3e44;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-decoration: none;
+  box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+}
+
+#section-1 .join-button {
+  background-color: transparent;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+#section-1 > div {
+  display: flex;
+  gap: 20px;
 }
