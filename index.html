@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NPM</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
@@ -26,15 +27,18 @@
       </nav>
     </div>
   
-    <div>
-        <img src="images/npm-logo.png" alt="npm logo" /><img src="images/magnifying-glass.png" alt="magnifying glass" />
-        <form class="search" action="">
-            <input type="text" placeholder="Search packages" name="search">
-            <button type="submit"><i class="seachButton"></i>Search</button>
+    <div class="overlay">
+        <img class="logo" src="images/npm-logo.png" alt="npm logo" />
+        <div class="searchType">
+        <form class="form" action="">
+            <img class="glass" src="images/magnifying-glass.png" alt="magnifying glass" />
+            <input type="text" placeholder="Search packages" name="search" class="searchBox">
+            <button type="submit" class="seachButton">Search</button>
         </form>
+    </div>
         <div class="login">
-            <a href="#">Join</a>
-            <a href="#">Log In</a>
+            <a href="#" id="join">Join</a>
+            <a href="#" id="login">Log In</a>
         </div>
     </div>
 </header>
