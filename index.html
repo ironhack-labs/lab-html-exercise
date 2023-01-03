@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
     <title>Npm Clone</title>
 </head>
 
@@ -24,36 +25,37 @@
                     <li><a href="#"> Support </a></li>
                 </ul>
             </nav>
-            <img class="blackHeart" src="./images/npm-logo.png" alt="npm logo" />
+
         </div>
 
         <div class="searchBar">
-            <img src="./images/magnifying-glass.png" alt="magnifying glass">
-            <form>
-                <input type="text" placeholder="Search packages">
+            <img class="logo" src="./images/npm-logo.png" alt="npm logo" />
+            <form class="formHeader">
+                <img class="glass" src="./images/magnifying-glass.png" alt="magnifying glass">
+                <input class="search" type="text" placeholder="Search packages">
+                <button class="search-btn">Search</button>
             </form>
-            <button id="search-btn">Search</button>
-            <link rel="stylesheet" href="/">Join</link>
-            <link rel="stylesheet" href="/">Log in</link>
+            <a id="join" rel="stylesheet" href="/">Join</a>
+            <a class="login" rel="stylesheet" href="/">Log in</a>
         </div>
     </header>
     <section class="first">
         <h1>Build amazing things</h1>
-        <article>
+        <article class="firstArticle">
             <p>Essential JavaScript development tools that help you go to market faster and build powerful applications
                 using modern open source code.
             </p>
         </article>
         <div class="links">
-            <link rel="stylesheet" href="/">See plans</link>
-            <link rel="stylesheet" href="/">Join for free</link>
+            <a id="plans" rel="stylesheet" href="/">See plans</a>
+            <a id="joiForFree" rel="stylesheet" href="/">Join for free</a>
         </div>
     </section>
 
     <section class="second">
-        <img src="./images/triangle-hexagon.svg" alt="">
+        <img src="./images/triangle-hexagon.svg" alt="triangle hexagon">
         <h2>Bring the best of open source to your company</h2>
-        <article>
+        <article class="secondArticle">
             <p> Relied upon by more than 11 million developers worldwide, npm is committed to making JavaScript
                 development elegant, productive, and safe. The free npm Registry has become the center of JavaScript
                 code sharing, and with more than one million packages, the largest software registry in the world. Our
@@ -62,23 +64,33 @@
     </section>
 
     <section class="third">
-        <div class="configuration">
-            <img src="./images/zero-configuration.svg" alt="zero Configuration">
-            <h3>zero configuration</h3>
+        <div class="activities">
+            <div>
+                <img src="./images/zero-configuration.svg" alt="zero Configuration">
+                <h3>zero configuration</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste voluptas totam reprehenderit sunt ut
+                    praesentium veritatis esse dicta error modi!</p>
+            </div>
+            <div>
+                <img src="./images/team-management.svg" alt="team management">
+                <h3>Team management</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste voluptas totam reprehenderit sunt ut
+                    praesentium veritatis esse dicta error modi!</p>
+            </div>
+            <div>
+                <img src="./images/familiar-features.svg" alt="familiar">
+                <h3>Familiar features</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste voluptas totam reprehenderit sunt ut
+                    praesentium veritatis esse dicta error modi!</p>
+            </div>
+            <div>
+                <img src="./images/npm-audit.svg" alt="npm audit">
+                <h3>npm audit</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste voluptas totam reprehenderit sunt ut
+                    praesentium veritatis esse dicta error modi!</p>
+            </div>
         </div>
-        <div class="team">
-            <img src="./images/team-management.svg" alt="team management">
-            <h3>Team management</h3>
-        </div>
-        <div class="features">
-            <img src="./images/familiar-features.svg" alt="familiar">
-            <h3>Familiar features</h3>
-        </div>
-        <div class="audit">
-            <img src="./images/npm-audit.svg" alt="npm audit">
-            <h3>npm audit</h3>
-        </div>
-        <button>Create an Org</button>
+        <button class="CreateAnOrg">Create an Org</button>
     </section>
 </body>
 
