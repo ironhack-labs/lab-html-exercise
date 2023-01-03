@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body {
+  font-family: 'Poppins';
+  box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+  }
+
+/* Header Part 1 (Title and Nav) */
+
+  header > div {
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+  }
+  
+  nav {
+    width: 600px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .blackHeart {
+    width: 20px;
+    margin-right: 1rem;
+  }
+
+/*   Header Part 2 (Logo, form, buttons) */
+
+.headerBottom {
+    padding: 10px 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+  .logo {
+    width: 5rem;
+    margin-right: 0.5rem;
+  }
+
+  .glass {
+    width: 1.4rem;
+    padding: 0.2rem 0.3rem 0 0; /* Padding: top, right, bottom, left */
+  }
+
+  .headerBottom form {
+    width: 80%;
+    height: 3rem;
+    text-align:left;
+    background-color: rgba(0,0,0,.05);
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+  }
+
+  .headerBottom span {
+    padding-left: 1rem;
+    display: flex;
+    justify-self: flex-start;
+    align-items: center;
+  }
+
+  .headerBottom input {
+    width: inherit;
+    font-size: 1rem;
+    background-color: transparent;
+    border: none;
+    padding-left: 0.5rem;
+  }
+
+  .redBtn {
+    background-color: #fb3e44;
+    padding: 0.5rem 1rem;
+    border: none;
+    align-self: stretch;
+  }
+  
+  .redBtn a {
+    color: white;
+    text-decoration: none;
+    font-size: medium;
+  }
+
+  .regularBtn {
+    padding: 0.5rem 1.5rem;
+    background-color: transparent;
+    border: 1px solid rgb(0,0,0);
+  }
+  .regularBtn a {
+    text-decoration:none;
+    color: black;
+    font-size: medium;
+  }
+
+  .transparentBtn {
+    padding: 0.5rem 1.5rem;
+    background-color: transparent;
+    border: none;
+  }
+
+  .transparentBtn a {
+    text-decoration:none;
+    color: black;
+    font-size: medium;
+  }
+
+/* First Section */
+
+  #firstSection {
+    height: 600px;
+    background-color: rgba(232,217,217,.3);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+  }
+
+  #firstSection h1 {
+    font-size: 5rem;
+    font-weight: bolder;
+    margin: 1rem 1rem 0.5rem 1rem; /*top, right, bottom, left */
+  }
+
+  #firstSection article {
+    font-size: 1.3rem;
+    text-align: center;
+    line-height: 1,5em;
+    margin: 1.5rem auto;
+  }
+
+  #firstSection div {
+    margin: 1.5rem auto;
+    display: flex;
+    justify-content: center;
+  }
+
+#firstSection button {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 1rem 4.5rem;
+    margin: auto 1.2rem;
+}
+.seePlansBtn {
+    box-shadow: 0.5rem 0.5rem 0 rgba(251,59,73,.2);
+    background-color:  #FB3B49;
+}
+
+.joinBtn {
+    transition: 750ms;
+}
+.joinBtn:hover {
+    background-color: white;
+    border: none;
+}
+
+
+
+/* Second Section */
+
+#secondSection {
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+}
+
+    .triHex {
+    width: 20%;
+    margin: 2rem auto;
+    padding-top: 5%;
+    }
+
+    .highlight {
+        font-size: 2.5rem;
+        text-align: center;
+        background-color: rgba(255,204,53,.4);
+        transform: skew(9deg,0deg);
+        font-style: italic;
+        padding:0 2.5rem;
+        margin-top: 2rem;
+    }
+    
+    #secondSection article {
+        font-size: 1.2rem;
+        text-align: center;
+        line-height: 1,5em;
+    }
+
+    /* Third Section */
+
+    #thirdSection {
+        height: 600px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #thirdSection .container {
+        width: 85%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: nowrap;
+        margin: 2rem auto;
+    }
+
+    .container img {
+        width: 2rem;
+        align-items: flex-start;
+        padding: 0 5%;
+    }
+
+    .container h3 {
+        padding: 0 5%;
+        color: #ED1C24;
+    }
+
+    .container article {
+        padding: 0 5%;
+        width: 80%;
+    }
+
+    .blackBtn {
+        padding: 1rem 8rem;
+        background-color: black;
+        border: none;
+        box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+        margin: 3rem auto;
+      }
+
+    .blackBtn a {
+        text-decoration:none;
+        color: white;
+        font-size: large;
+        font-weight: bold;
+      }
