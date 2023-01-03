@@ -1,4 +1,306 @@
-body {
+@import url('https://fonts.googleapis.com/css?family=Poppins');
 
+* {
+    padding: 0;
+    margin: 0;
+  }
+
+body {
+    font-family: 'Poppins';
+  }
+
+  .top-header {
+    padding: 15px 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  nav {
+    width: 600px;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: 900;
+  }
+
+  nav a:hover {
+    color: red;
+  }
+
+  .heart {
+    width: 20px;
+    margin-right: 1rem;
+  }
+
+  .bottom-header {
+    padding: 10px 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .package-search {
+    background-color: rgba(0,0,0,.05);
+    height: 2.3rem;
+    display: flex;
+  }
+
+  form input {
+    background-color: rgba(0,0,0,.001);
+    border: none;
+    width: 70rem;
+    padding: 10px;
+  }
+
+  .package-search button {
+    width: 5.4rem;
+    background-color: #fb3e44;
+    color: white;
+    border: none;
+  }
+
+  .button-pair {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .button-pair a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .join-button {
+    background-color: white;
+    width: 4.5rem;
+    height: 2rem;
+    border: black 1px solid;
+    font-size: 15px;
+    margin-right: 10px;
+  }
+
+  .join-button:hover {
+    background-color: #fb3e44;
+    border: none;
+  }
+
+  .login-button {
+    background-color: white;
+    width: 4rem;
+    height: 2rem;
+    border: none;
+    font-size: 15px;
+  }
+
+  .logo {
+    width: 4.2rem;
+  }
+
+  .magnifying-glass {
+    width: 1.2rem;
+    height: 20px;
+    margin-top: 6px;
+    padding: 4px;
+  }
+
+.break-point-1 {
+    border-bottom: 1px solid lightgray;
+    margin: auto;
+    width: 95%;
 }
+
+.break-point-2 {
+    border-bottom: 1px solid lightgray;
+    margin: auto;
+    width: 95%;
+    margin-bottom: .45px;
+}
+
+.build-things {
+    height: 600px;
+    width: 89.25%;
+    background-color: rgba(232,217,217,.3);
+    margin: 0px 25px;
+    margin: auto;
+    padding: 50px;
+    box-shadow: inset 0px 3px 4px 0px rgba(199,199,199,1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+.build-title {
+    font-size: 5rem;
+    font-weight: 900;
+}
+
+.build-text {
+    text-align: center;
+    width: 28rem;
+    font-weight: 700;
+}
+
+.seePlans-joinFree {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.seePlans-joinFree button {
+    border: none;
+    width: 12rem;
+    height: 3.2rem;
+}
+
+.seePlans-joinFree a {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 17px;
+}
+
+.plans-button {
+    background-color: #fb3e44;
+    box-shadow: 6px 6px 2px 0px rgba(250,162,162,0.75);
+}
+
+.plans-button a {
+    color: white;
+}
+
+.free-button {
+    background-color: white;
+}
+
+.free-button a {
+    color: black;
+}
+
+.open-source {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 4rem;
+}
+
+.open-source-title {
+    background-color: rgba(255,204,53,.4);
+    width: 60%;
+    margin: auto;
+    transform: skew(9deg,0deg);
+    font-style: italic;
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+.open-source-text {
+    text-align: center;
+    width: 49rem;
+    margin: auto;
+}
+
+.hexagon-img {
+    width: 15rem;
+    margin: auto;
+    margin-top: 5rem;
+}
+
+footer {
+    padding: 15px 25px;
+    margin-top: 12rem;
+}
+
+.flex-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10rem;
+}
+
+.flex-footer img{
+    width: 40px;
+}
+
+.flex-footer h4 {
+    color: #fb3e44;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.zero-config {
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+    gap: 20px;
+}
+
+.team-management {
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+    gap: 20px;
+}
+
+.familiar-features {
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+    gap: 20px;
+}
+
+.npm-audit {
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+    gap: 20px;
+}
+
+.flex-footer-p {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 7rem;
+    width: 90rem;
+    margin-left: 10rem;
+}
+
+.final-button {
+    margin: 5rem 0rem 5rem 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.final-button button {
+    background-color: black;
+    border: none;
+    padding: 5px;
+    height: 50px;
+    width: 21rem;
+    font-weight: 900;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+}  
+
+.final-button a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+
+
+  
 
