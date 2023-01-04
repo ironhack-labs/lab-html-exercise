@@ -33,13 +33,23 @@ nav a {
     margin-right: 1rem;
 }
 
-.headerSection{
+.headerSection {
     display:flex;
 }
-.searchbar{
+.searchBar {
     display:flex;
-    justify-content: center;
+    justify-content: flex-start;
 }
+
+.searchBar button{
+    background-color: #fb3e44;
+}
+
+.headerSection button{
+    color: white;
+    text-decoration: none;
+}
+
 .npmlogo {
    width: 80px;
 }
@@ -48,11 +58,11 @@ nav a {
     background-color: rgba(0, 0, 0, .05);
 }
 
-.lensimg{
+.lensimg {
     width: 20px;
 }
 
-.forminput{
+.forminput {
     background-color: rgba(0, 0, 0, .05);
 }
 
@@ -103,7 +113,7 @@ nav a {
     box-shadow: 8px 8px 0 rgba(251, 59, 73, .2);
 }
 
-.joinFree a{
+.joinFree a {
     display: flex;
     color:black;
 }
@@ -112,9 +122,10 @@ nav a {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     align-content: flex-start;
+    margin-bottom: 50px;
 }
 
 .triangleHexagon {
@@ -125,7 +136,6 @@ nav a {
     margin-bottom: -70px;
     height: 400px;
     width: 200px;
-
 }
 
 #section_2 h1 {
@@ -147,10 +157,49 @@ nav a {
     margin-right: 450px;
 }
 
-#section_3 {
-    
+
+ .bottom {
+    display: flex;
+    justify-content: space-between;
 }
 
+.click {
+    display: flex;
+    justify-content: flex-start;
+    width:40px;
+    height: 40px;
+}
+
+#section_3 h1{
+    color: #ED1C24;
+}
+
+#button{
+    display: flex;
+    justify-content: flex-start;
+}
+
+#button button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 600px;
+    color: white;
+    background-color: black;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    font-size: bold;
+    width: 300px;
+    height: 50px;
+}
+
+#button button a{
+    text-decoration: none;
+}
+
+#section_3 p{
+    margin-right: 20px;
+}
 
 
 
