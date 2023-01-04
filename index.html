@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NPM Clone</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -32,11 +33,11 @@
                 <label for="searchBar">
                     <img class="searchLogo" src="images\magnifying-glass.png" alt="search logo">
                     <input class="searchBar" type="text" placeholder="Search packages">
-                    <button class="searchButton">Search</button>
+                    <button class="searchBtn" type="submit">Search</button>
                 </label>
             </form>
-            <div>
-                <a href="/join">Join</a>
+            <div class="headerBtn">
+                <a href="/join" class="joinLink">Join</a>
                 <a href="/log-in">Log In</a>
             </div>
         </div>
@@ -44,13 +45,13 @@
     <section id="introduction">
         <h1 class="h1">Build amazing things</h1>
         <article>
-            <p>Essential JavaScript development tools that help you go to market faster and build powerful
+            <p class="text">Essential JavaScript development tools that help you go to market faster and build powerful
                 applications using
                 modern open source code.</p>
         </article>
-        <div>
-            <a href="/see-plans">See plans</a>
-            <a href="/join">Join for free</a>
+        <div class="introBtn">
+            <a href="/see-plans" class="seePlans">See plans</a>
+            <a href="/join" class="joinFree">Join for free</a>
         </div>
     </section>
     <section id="explanation">
