@@ -4,7 +4,7 @@ body {
   font-family: 'Poppins';
 }
 
-header > div {
+header > .upperheader {
     padding: 0 25px;
     display: flex;
     justify-content: space-between;
@@ -33,30 +33,187 @@ header > div {
     margin-right: 1rem;
   }
 
-  #nmplogo{
-    width: 70px;
+  header .bottomheader {
     display: flex;
     align-items: center;
   }
 
-  #btm-header {
-    padding: 10px 25px;
-    border-bottom: 0;
-    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+  #searchbarform{
+    display:flex;
+    justify-content: flex-start;
+    padding: 10px 0px;
+    border-bottom: none;
   }
 
-  #bottom-header button{
-    background-color: #fb3e44;
+  .npmlogo {
+    display: flex;
+    align-items: left;
+    width: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+  }
+
+  .mag-glass {
+    width: 20px;
+    height: 20px;
+    background-color: #E0E0E0;
+    padding: 10px;
+  }
+
+  .searchBar{
+    width: 1020px;
+    height: 40px;
+    background-color: #E0E0E0;
+    border: none;
+  }
+
+  #search-btn{
+    width: 80px;
+    height: 40px;
+    background-color:#FB3B49 ;
     color: white;
     border: none;
-    padding: 15px 20px;
-    font-size: 16px;
-    text-decoration: none;
+    margin-right: 10px;
   }
 
-  #bottom-header form{
-    width: 80%;
-  }
+  .access #join-btn {
+    box-shadow: none;
+    padding: 8px 20px 8px 20px;
+    margin-left: 20px;
+    border: 1px solid rgb(203, 203, 203);
+    border-radius: 0;
+    text-decoration: none;
+    color: #000;
+    transition: border-color 200ms ease-in-out;
+}
+
+.access #login-btn {
+    box-shadow: none;
+    padding: 8px 20px 8px 12px;
+    border: 1px #ccc;
+    border-radius: 0%;
+    text-decoration: none;
+    color: #000;
+} 
+
+#section1 {
+    background-color: rgba(232,217,217,.3);
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: -100px;
+}
+
+#section1 > h1 {
+    font-size: 60px;
+    margin: 10px;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    line-height: 50px;
+}
+
+#section1 article{
+    text-align: center;
+    width: 400px;
+    margin: 20px;
+}
+
+#section1 .openPlan {
+    background-color: #f83a47;
+    color: white;
+    border: none;
+    margin: 25px;
+    padding: 15px 60px;
+    text-decoration: none;
+    box-shadow: 5px 5px 0px #fbbdc1;
+}
+
+#section1 .joinFree {
+    background-color: rgb(255, 255, 255) ;
+    color: black;
+    border: none;
+    margin: 25px;
+    padding: 15px 60px;
+    text-decoration: none;
+}
+
+#section2 {
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+}
+
+#section2 h2{
+    font-size: 30px;
+    margin: 5px;
+    background-color: rgba(255,204,53,.4);
+    font-style: italic;
+    padding: 0px 25px;
+    border-top-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+#section2 .hexagon {
+    width: 280px;
+    margin: 30px;
+}
+
+#section2 article {
+    justify-content: center;
+    text-align: center;
+    width: 780px;
+}
+
+#section3 {
+    height: 600px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+#section3 img{
+    width: 50px;
+}
+
+#section3 .allFeatures {
+display: flex;
+width: 100%;
+justify-content: space-around;
+align-items: center;
+padding: 55px;
+}
+
+#section3 h3 {
+    color: #ED1C24;
+    font-size: 25px
+}
+
+#section3 p {
+    width: 200px;
+    font-size: 15px;
+    text-align: left; 
+}
+
+.createAnOrg {
+    background-color: #000;
+    color: white;
+    text-decoration: none;
+    box-shadow: 5px 5px rgb(194, 194, 194);
+    margin-top: 20px;
+    padding: 15px 90px;
+}
+
+
+
+
 
 
 
