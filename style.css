@@ -43,7 +43,7 @@ nav a {
 .magnifying-glass{
     width: 50px;
     position: relative;
-        right: 450px;
+        right: 430px;
 
 }
 
@@ -55,7 +55,7 @@ nav a {
         align-items: baseline;
         align-content: center;
     position: relative;
-        right: 900px;
+        right: 850px;
 }
 
 .search button {
@@ -64,6 +64,18 @@ nav a {
     border-color: red;
 }
 
+.join {
+    color: black;
+    border: 1px solid black;
+    position: relative;
+        right: 20px;
+    padding: 1px 10px;
+
+}
+
+.logIn {
+    color: black;
+}
 
 #first {
     height: 600px;
@@ -78,8 +90,7 @@ nav a {
 
 #first h1{
     text-align: center;
-    font-size: 55;
-
+    font-size: 85px;
 }
 
 
@@ -94,16 +105,19 @@ nav a {
 #seePlans {
     background-color: #FB3B49;
     color: white;
-    box-shadow: 8px 8 px;
+    box-shadow: 8px 8px 0 rgba(128, 83, 35, .2);
     position: relative;
-        right: 60px;
+        right: 40px;
+    padding: 8px 50px;
 }
 
 #joinFree {
+    background-color: white;
     color: black;
     position: relative;
-        left: 60px;
-        
+        left: 30px;
+        nav-up: 30px;
+    padding: 8px 50px;
 }
 
 
@@ -138,14 +152,16 @@ nav a {
         left: 280px;
 }
 
-#third {
+#third > div {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    align-content: center;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: center;
+        align-content: flex-start;
     margin-bottom: 300px;
+    position: relative;
+        left: 260px;
 }
 
 .zero-configuration{
@@ -174,5 +190,6 @@ nav a {
     box-shadow: 8px 8px 0 rgba(128, 83, 35, .2);
     position: relative;
         top: 300px;
-        right: 800px;
+        right: 950px;
+    padding: 15px 150px;
 }
