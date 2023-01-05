@@ -11,6 +11,10 @@
   --color-shade-1: lightgrey;
   --color-shade-2: #f2f2f2;
   --color-shade-3: #f8f4f4;
+  --font-size-small: .75rem;
+  --font-size-default: 1rem;
+  --font-size-big: 1.25rem;
+  --font-size-jumbo: 4.5rem;
   --font-weight-light: 200;
   --font-weight-regular: 400;
   --font-weight-bold: 500;
@@ -44,7 +48,7 @@ a:hover {
   position: fixed;
   top: 0;
   width: 100%;
-  font-size: 0.75rem;
+  font-size: var(--font-size-small);
   background-color: var(--color-white);
   box-shadow: 0 10px 5px -5px var(--color-shade-1);
 }
@@ -231,10 +235,14 @@ a:hover {
 .section-cta-heading {
   margin-top: 0;
   font-weight: var(--font-weight-black);
-  font-size: 4.5rem;
+  font-size: var(--font-size-jumbo);
   line-height: 1.2;
   letter-spacing: -0.025rem;
   word-spacing: -0.025rem;
+}
+
+.section-cta-literal {
+  font-size: var(--font-size-big);
 }
 
 .section-container {
@@ -284,7 +292,6 @@ a:hover {
 }
 
 .section-claim-literal {
-  font-size: 0.75rem;
   line-height: 1.7;
 }
 
@@ -314,5 +321,5 @@ a:hover {
   margin-bottom: 2rem;
   color: var(--color-primary);
   font-weight: var(--font-weight-black);
-  font-size: 1rem;
+  font-size: var(--font-weight-regular);
 }
