@@ -10,7 +10,7 @@
   --font-weight-light: 200;
   --font-weight-regular: 400;
   --font-weight-bold: 500;
-  --font-weight-black: 600;
+  --header-height: 110px;
 }
 
 body {
@@ -33,6 +33,11 @@ a:hover {
 }
 
 .header {
+  position: fixed;
+  top:0;
+  width: 100%;
+  font-size: 0.75rem;
+  background-color: var(--color-white);
   box-shadow: 0 10px 5px -5px var(--color-shade-1);
   font-size: .75rem;
 }
@@ -46,6 +51,10 @@ a:hover {
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid var(--color-shade-1);
+}
+
+.main {
+  margin-top: var(--header-height);
 }
 
 .random-literal-container {
