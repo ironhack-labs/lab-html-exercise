@@ -1,15 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700&display=swap");
 
 :root {
   --color-primary: #fb3e44;
   --color-text: black;
   --color-text-grey: grey;
-  --color-button: white;
+  --color-white: white;
+  --color-shade-primary: #FAD6D7;
   --color-shade-1: lightgrey;
   --color-shade-2: #f2f2f2;
+  --color-shade-3: #f8f4f4;
   --font-weight-light: 200;
   --font-weight-regular: 400;
   --font-weight-bold: 500;
+  --font-weight-black: 700;
+  --transition-global: .3s;
   --header-height: 110px;
 }
 
@@ -20,12 +24,13 @@ body {
 
 body * {
   font-family: "Poppins";
+  font-weight: var(--font-weight-regular);
 }
 
 a {
   color: var(--color-text);
   text-decoration: none;
-  transition: 0.3ms;
+  transition: var(--transition-global);
 }
 
 a:hover {
@@ -39,11 +44,10 @@ a:hover {
   font-size: 0.75rem;
   background-color: var(--color-white);
   box-shadow: 0 10px 5px -5px var(--color-shade-1);
-  font-size: .75rem;
 }
 
 .header-block {
-  padding: .5rem 1.5rem;
+  padding: 0.5rem 1.5rem;
 }
 
 .nav-container {
@@ -69,7 +73,7 @@ a:hover {
 }
 
 .random-literal-paragraph {
-  transition: 0.3s;
+  transition: var(--transition-global);
 }
 
 .random-literal-paragraph:hover {
@@ -81,7 +85,6 @@ a:hover {
   display: flex;
   flex-basis: 95%;
   justify-content: flex-end;
-  font-weight: var(--font-weight-bold);
 }
 
 .nav-bar-list {
@@ -92,8 +95,8 @@ a:hover {
 }
 
 .nav-item {
+  font-weight: var(--font-weight-bold);
   padding: 0.75rem;
-  transition: 0.3s;
 }
 
 .logo {
@@ -114,12 +117,12 @@ a:hover {
 .utils-search-container {
   display: flex;
   flex-basis: 80%;
-  margin: 0 .25rem;
+  margin: 0 0.25rem;
 }
 
 .utils-search-input {
   background-image: url(./images/magnifying-glass.png);
-  background-position: .75rem 50%;
+  background-position: 0.75rem 50%;
   background-repeat: no-repeat;
   background-size: 1.25rem;
   background-color: var(--color-shade-2);
@@ -132,7 +135,7 @@ a:hover {
 .button-primary {
   background-color: var(--color-primary);
   border: none;
-  color: var(--color-button);
+  color: var(--color-white);
   font-weight: var(--font-weight-bold);
   padding: 0.5rem 1rem;
 }
@@ -144,14 +147,14 @@ a:hover {
 
 .button-primary:hover {
   cursor: pointer;
-  opacity: .7;
-  transition: 0.3s;
+  opacity: 0.7;
+  transition: var(--transition-global);
 }
 
 .button-ghost {
   border: 1px solid var(--color-text);
   padding: 0.25rem 0.75rem;
-  transition: 0.3s;
+  transition: var(--transition-global);
 }
 
 .button-ghost:hover {
@@ -160,5 +163,60 @@ a:hover {
 
 .button-link {
   padding: 0.25rem 0.75rem;
-  transition: 0.3s;
+  transition: var(--transition-global);
+}
+
+.button-cta-primary,
+.button-cta-secondary {
+  font-weight: var(--font-weight-black);
+  padding: 1rem 4.5rem;
+  transition: .3s;
+}
+
+.button-cta-primary {
+  background-color: var(--color-primary);
+  box-shadow: 8px 8px 0 0 var(--color-shade-primary);
+  color: var(--color-white);  
+}
+
+.button-cta-secondary {
+  background-color: var(--color-white);
+}
+
+.button-cta-primary:hover {
+  color: var(--color-white);
+  opacity: .7; 
+}
+
+.section {
+  padding: 1rem 4rem;
+  text-align: center;
+}
+
+.section-cta {
+  background-color: var(--color-shade-3);
+}
+
+.section-cta-content {
+  margin: 5rem auto;
+  max-width: 1200px;
+}
+
+.section-cta-heading {
+  margin-top: 0;
+  font-weight: var(--font-weight-black);
+  font-size: 4.5rem;
+  line-height: 1.2;
+  letter-spacing: -0.025rem;
+  word-spacing: -0.025rem;
+}
+
+.section-cta-container {
+  max-width: 500px;
+  margin: 0 auto 3rem;
+}
+
+.section-cta-wrapper {
+  display: flex;
+  justify-content: space-between;
 }
