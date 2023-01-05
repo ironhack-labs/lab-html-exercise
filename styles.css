@@ -1,11 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700&display=swap");
 
 :root {
-  --color-primary: #fb3e44;
-  --color-text: black;
-  --color-text-grey: grey;
   --color-white: white;
-  --color-marker: #FFEBB5;
+  --color-black: black;
+  --color-primary: #fb3e44;
+  --color-text: var(--color-black);
+  --color-text-grey: grey;
+  --color-marker: #ffebb5;
   --color-shade-primary: #fad6d7;
   --color-shade-1: lightgrey;
   --color-shade-2: #f2f2f2;
@@ -169,10 +170,18 @@ a:hover {
 }
 
 .button-cta-primary,
-.button-cta-secondary {
+.button-cta-secondary,
+.button-cta-tertiary {
   font-weight: var(--font-weight-black);
-  padding: 1rem 4.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   transition: var(--transition-global);
+}
+
+.button-cta-primary,
+.button-cta-secondary {
+  padding-right: 4.5rem;
+  padding-left: 4.5rem;
 }
 
 .button-cta-primary {
@@ -185,9 +194,19 @@ a:hover {
   background-color: var(--color-white);
 }
 
-.button-cta-primary:hover {
+.button-cta-primary:hover,
+.button-cta-tertiary:hover {
   color: var(--color-white);
   opacity: 0.7;
+}
+
+.button-cta-tertiary {
+  display: inline-block;
+  padding-right: 8.5rem;
+  padding-left: 8.5rem;
+  color: var(--color-white);
+  background-color: var(--color-black);
+  box-shadow: 8px 8px 0 0 var(--color-shade-1);
 }
 
 .section {
@@ -200,7 +219,8 @@ a:hover {
 }
 
 .section-cta-content,
-.section-claim-content {
+.section-claim-content,
+.section-org-content {
   max-width: 75rem;
 }
 
@@ -265,4 +285,33 @@ a:hover {
 .section-claim-literal {
   font-size: 0.75rem;
   line-height: 1.7;
+}
+
+.section-org {
+  margin-bottom: 3rem;
+}
+
+.section-org-content {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto 4rem auto;
+  padding: 0;
+  list-style: none;
+}
+
+.section-org-item {
+  text-align: left;
+  flex-basis: 22%;
+}
+
+.section-org-item-icon {
+  height: 2rem;
+  width: 2rem;
+}
+
+.section-org-item-heading {
+  margin-bottom: 2rem;
+  color: var(--color-primary);
+  font-weight: var(--font-weight-black);
+  font-size: 1rem;
 }
