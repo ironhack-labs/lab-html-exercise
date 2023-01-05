@@ -267,26 +267,12 @@ a:hover {
   position: relative;
 }
 
-.section-claim-heading-wrapper {
-  margin: 0 auto;
-  z-index: 0;
-  position: relative;
-  width: 38rem;
-}
-
 .section-claim-heading {
-  position: relative;
+  max-width: 37rem;
+  margin-right: auto;
+  margin-left: auto;
+  font-style: italic;
   font-weight: var(--font-weight-black);
-}
-
-.section-claim-heading::before {
-  z-index: -1;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 2rem;
-  content: "";
   background-color: var(--color-marker);
   transform: skew(15deg);
 }
