@@ -8,8 +8,8 @@
     <title>lab-html-exercise</title>
   </head>
   <body>
-    <header>
-      <div class="nav-container">
+    <header class="header">
+      <div class="header-block nav-container">
         <div class="random-literal-container">
           <img
             class="random-literal-image"
@@ -17,58 +17,60 @@
             alt="Like this package"
             title="A black heart icon"
           />
-          <p class="random-literal-paragraph is-hoverable-text">
-            Nifty Penguin Magic
-          </p>
+          <p class="random-literal-paragraph">Nifty Penguin Magic</p>
         </div>
         <nav class="nav-bar">
           <ul class="nav-bar-list">
             <li>
-              <a href="#" class="nav-item is-hoverable-text">
-                npm Enterprise
-              </a>
+              <a href="#" class="nav-item"> npm Enterprise </a>
             </li>
             <li>
-              <a href="#" class="nav-item is-hoverable-text"> Products </a>
+              <a href="#" class="nav-item"> Products </a>
             </li>
             <li>
-              <a href="#" class="nav-item is-hoverable-text"> Solutions </a>
+              <a href="#" class="nav-item"> Solutions </a>
             </li>
             <li>
-              <a href="#" class="nav-item is-hoverable-text"> Resources </a>
+              <a href="#" class="nav-item"> Resources </a>
             </li>
             <li>
-              <a href="#" class="nav-item is-hoverable-text"> Docs </a>
+              <a href="#" class="nav-item"> Docs </a>
             </li>
             <li>
-              <a href="#" class="nav-item is-hoverable-text"> Support </a>
+              <a href="#" class="nav-item"> Support </a>
             </li>
           </ul>
         </nav>
       </div>
-      <div>
-        <h1>
+      <div class="header-block utils-bar">
+        <h1 class="utils-heading">
           <a href="#">
             <img
+              class="logo"
               src="./images/npm-logo.png"
               alt="Go to NPM homepage"
               title="NPM logo"
             />
           </a>
         </h1>
-        <form id="search" action="search" method="GET">
-          <div>
-            <img
-              src="./images/magnifying-glass.png"
-              alt="Search packages "
-              title="A magnifying glass icon"
-            />
-            <input type="search" name="search" placeholder="Search packages" />
-            <input type="submit" value="Search" />
-          </div>
+        <form
+          id="search"
+          action="search"
+          method="GET"
+          class="utils-search-container"
+        >
+          <input
+            class="utils-search-input"
+            type="search"
+            name="search"
+            placeholder="Search packages"
+          />
+          <input class="button-primary" type="submit" value="Search" />
         </form>
-        <a href="#">Join</a>
-        <a href="#">Log In</a>
+        <div class="utils-log-container">
+          <a href="#" class="button-ghost">Join</a>
+          <a href="#" class="button-link">Log In</a>
+        </div>
       </div>
     </header>
     <main>

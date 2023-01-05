@@ -1,15 +1,51 @@
-@import url("https://fonts.googleapis.com/css?family=Poppins");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600&display=swap');
+
+:root {
+  --color-primary: #fb3e44;
+  --color-text: black;
+  --color-text-grey: grey;
+  --color-button: white;
+  --color-shade-1: lightgrey;
+  --color-shade-2: #f2f2f2;
+  --font-weight-light: 200;
+  --font-weight-regular: 400;
+  --font-weight-bold: 500;
+  --font-weight-black: 600;
+}
 
 body {
+  font-size: 100%;
+  margin: 0;
+}
+
+body * {
   font-family: "Poppins";
+}
+
+a {
+  color: var(--color-text);
+  text-decoration: none;
+  transition: 0.3ms;
+}
+
+a:hover {
+  color: var(--color-text-grey);
+}
+
+.header {
+  box-shadow: 0 10px 5px -5px var(--color-shade-1);
+  font-size: .75rem;
+}
+
+.header-block {
+  padding: .5rem 1.5rem;
 }
 
 .nav-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 1.5rem;
-  border-bottom: 1px solid lightgrey;
+  border-bottom: 1px solid var(--color-shade-1);
 }
 
 .random-literal-container {
@@ -19,18 +55,24 @@ body {
 }
 
 .random-literal-image {
-  height: 1.25rem;
+  height: 0.75rem;
   padding-right: 1rem;
 }
 
+.random-literal-paragraph {
+  transition: 0.3s;
+}
+
 .random-literal-paragraph:hover {
+  color: var(--color-text-grey);
   cursor: pointer;
 }
 
 .nav-bar {
   display: flex;
-  flex-basis: 75%;
+  flex-basis: 95%;
   justify-content: flex-end;
+  font-weight: var(--font-weight-bold);
 }
 
 .nav-bar-list {
@@ -42,15 +84,72 @@ body {
 
 .nav-item {
   padding: 0.75rem;
-  color: black;
-  text-decoration: none;
   transition: 0.3s;
 }
 
-.is-hoverable-text {
+.logo {
+  height: 1rem;
+}
+
+.utils-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.utils-heading {
+  display: inline-block;
+  margin: 0;
+}
+
+.utils-search-container {
+  display: flex;
+  flex-basis: 80%;
+  margin: 0 .25rem;
+}
+
+.utils-search-input {
+  background-image: url(./images/magnifying-glass.png);
+  background-position: .75rem 50%;
+  background-repeat: no-repeat;
+  background-size: 1.25rem;
+  background-color: var(--color-shade-2);
+  border: none;
+  font-family: monospace;
+  padding: 0.5rem 0 0.5rem 2.75rem;
+  width: 100%;
+}
+
+.button-primary {
+  background-color: var(--color-primary);
+  border: none;
+  color: var(--color-button);
+  font-weight: var(--font-weight-bold);
+  padding: 0.5rem 1rem;
+}
+
+.utils-log-container {
+  display: flex;
+  align-items: center;
+}
+
+.button-primary:hover {
+  cursor: pointer;
+  opacity: .7;
   transition: 0.3s;
 }
 
-.is-hoverable-text:hover {
-  color: grey;
+.button-ghost {
+  border: 1px solid var(--color-text);
+  padding: 0.25rem 0.75rem;
+  transition: 0.3s;
+}
+
+.button-ghost:hover {
+  border: 1px solid var(--color-text-grey);
+}
+
+.button-link {
+  padding: 0.25rem 0.75rem;
+  transition: 0.3s;
 }
