@@ -9,6 +9,7 @@
   <body>
       <header>
         <div>
+
           <div>
             <img class="blackHeart" src="images/black-heart.png" alt="black heart" />
             <span> Nifty Penguin Magic </span>
@@ -25,21 +26,23 @@
           </nav>
         </div>
       
-        <div>
           <!-- add logo, search bar and buttons (or links and style them as buttons later) -->
-          <img src="images/npm-logo.png" alt="NPM logo">
-          
-          <form class="slot-form" action="/register" method="post">
-            <div class="slot-form-container">
-              <label><img src="images/magnifying-glass.png" alt="magnifying-glass"></label>
-              <input type="text" placeholder="Search packages">
-              <button type="submit">Search</button>
+          <div class="slot-form">
+             <img class="picture"src="images/npm-logo.png" alt="NPM logo">
+
+            <form>
+              <span>
+              <img class="m-glass"src="images/magnifying-glass.png" alt="magnifying-glass">
+              <label for="search"> </label>
+              <input id="search" type="text" placeholder="Search packages">
+              </span>
+              <button class="search-btn" type="submit"><a href="#">Search</a></button>
+            </form>
+            
+            <div class="link-head">
+              <a class="link-btn-join" href="#join">Join</a>
+              <a class="link-btn-log" href="#login">Log In</a> 
             </div>
-            <div>
-              <a href="#join">Join</a>
-              <a href="#login">Log In</a>    
-            </div>
-          </form>
         </div>
       </header>
 
