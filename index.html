@@ -17,20 +17,20 @@
       </nav>
     </div>
   
-    <div>
+    <div id="bar">
       <img class="npmLogo" src="./images/npm-logo.png" alt="npm logo"/>
-      <img class="search" src="./images/magnifying-glass.png" alt="search logo"/>
-      <a href="#">Join Log In</a>
       <form> 
-        <input type="search" id="query" name="q" placeholder="Search packages">
-        <button>Search</button>
+        <input id="searchBar" type="search" id="query" name="q" placeholder="Search packages">
+        <button id="searchButton">Search</button>
       </form>
+      <a id="joinButton" href="#">Join</a>
+      <a id="loginButton" href="#">Log In</a>
     </div>
   </header>
   <section id="section1">
       <h1>Build amazing things</h1>
       <article>Essential javascript development tools that help you go to market faster and build powerful applications using modern open source code</article>
-        <div>
+        <div id="links">
           <a id="seePlans" href="#">See plans</a>
           <a id ="joinFree" href="#">Join for free</a>
       </div>
@@ -61,7 +61,7 @@
         <h4 class="h4red" >npm audit</h4>
         <p>Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer</p>
     </div>
+    <a class="createOrg" href="#">Create an Org</a>
   </section>
-<a class="createOrg" href="#">Create an Org</a>
 
 
