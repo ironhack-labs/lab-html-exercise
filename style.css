@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body {
+  font-family: 'Poppins';
+  margin: 0 20px 0 20px;
+}
+
+header > div {
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+  }
+  
+  nav {
+    width: 600px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .blackHeart {
+    width: 20px;
+    margin-right: 1rem;
+  }
+
+  .search-bar {
+    width: 80%;
+    margin: 6px 0 6px 0;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+  }
+
+  .npm-logo {
+    width: 65px;
+  }
+
+  .container {
+    width: 1200px;
+    margin: 8px 0 8px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+  }
+  
+  .container form {
+    color: black;
+    background-color: rgba(0,0,0,.05);
+    display: flex;
+    padding: 2px;
+    border: 0px;
+    border-radius: 0px;
+    margin: 0;
+  }
+
+  input[type="search"] {
+    border: none;
+    background: transparent;
+    margin: 0;
+    padding: 7px 8px;
+    font-size: 14px;
+    color: inherit;
+    border: 0;
+    border-radius: inherit;
+  }
+
+  input[type="search"]::placeholder {
+    color: #bbb;
+  }
+  button[type="submit"] {
+    text-indent: -999px;
+    overflow: hidden;
+    width: 40px;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    border-radius: inherit;
+    background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat center;
+    cursor: pointer;
+    opacity: 0.7;
+  }
+  
+  button[type="submit"]:hover {
+    opacity: 10;
+  }
+  
+  button[type="submit"]:focus,
+  input[type="search"]:focus {
+    box-shadow: 0 0 3px 0 #1183d6;
+    border-color: 0;
+    outline: none;
+  }
+  
+  form.nosubmit {
+   border: none;
+   padding: 0;
+  }
+  
+  input.nosubmit {
+    border: 0;
+    width: 100%;
+    padding: 9px 4px 9px 30px;
+    background: no-repeat left/2% url("images/magnifying-glass.png");
+  }
+  
+  .search-botton {
+    height: 40px;
+    width: 100px;
+    font-weight: 400;
+    background-color: #fb3e44;
+    color: white;
+    border: 0;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+  }
+
+  .join {
+    background-color: white;
+    color: black;
+    font-size: 1em;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 4px 15px 4px 15px;
+    border: 1px solid black;
+    margin-right: 12px;
+  }
+
+  .join-login {
+    display: flex;
+    justify-content: end;
+  }
+
+  h1 {
+    font-size: 95px;
+    font-weight: bold;
+    letter-spacing: 0.4px;
+    margin: 90px 0 50px 0;
+  }
+  h2 {
+    font-size: 40px;
+    font-weight: bold;
+    background-color: rgba(255,204,53,.4);
+    text-align: center;
+    width: 1000px;
+    height: 60px;
+    transform: skew(9deg,0deg);
+    font-style: italic;
+    margin-top: 70px;
+  }
+  h3 {
+    font-size: 23px;
+    font-weight: bold;
+    color: #ED1C24;
+  }
+  
+  .amazingThings {
+    height: 600px;
+    background-color: rgba(232,217,217,.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .amazingThings article {
+    text-align: center;
+    font-size: 1.2em;
+    width: 510px;
+    height: auto;
+    margin-bottom: 70px;
+  }
+
+  .amazingThings a {
+    font-size: 1.2em;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 15px 65px 15px 65px;
+  }
+
+  .plans-joinfree {
+    display: flex;
+    flex-direction:row;
+  }
+
+  .see-plans {
+    margin-right: 30px;
+    background-color: #FB3B49;
+    color: white;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+  }
+
+  .join-free {
+    background-color: white;
+  }
+
+  .open-source-company {
+    height: 640px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .open-source-company img {
+    width: 220px;
+    margin-top: 90px;
+  }
+
+  .open-source-company article {
+    font-size: 1.0em;
+    text-align: center;
+    letter-spacing: 0.4px;
+    width: 830px;
+    height: auto;
+    margin-bottom: 90px;
+  }
+
+  .advantages {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .advantages img {
+    height: 40px;
+  }
+
+  .advantages > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .advantages a {
+    display: flex;
+    justify-content: center;
+  }
+
+  .all-advantages div {
+    width: 300px;
+    margin-right: 30px;
+  }
+
+  .advantages p {
+    font-size: 1.2em;
+  }
+  
+  .advantages a {
+    background-color: black;
+    color: white;
+    font-size: 1.3em;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    width: 200px;
+    padding: 20px 110px 20px 110px;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+  }
