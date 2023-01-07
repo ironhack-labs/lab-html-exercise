@@ -1,9 +1,100 @@
-NPM Clone Nifty Penguin Magic npm Enterprise Products Solutions Resources Docs Support Search Join Log In Build amazing
-things Essential JavaScript development tools that help you go to market faster and build powerful applications using
-modern open source code. See plans Join for free Bring the best of open source to your company npm is the tool used by
-over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it.
-Create an Org and get more out of the tools your team already knows and loves. Zero configuration Create an org, add
-your team, and start collaborating. Nothing to configure, set up, or manage. Team management Control who has access to
-what modules within your team namespace using straightforward team management capabilities. Familiar features npm Orgs
-has 100% parity with all the public npm registry features your developers already use. npm audit Enjoy the security
-auditing features built into the npm client, a zero-friction way to make open source software safer. Create an Org
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>NPM Clone</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+<body>
+<!-- HEADER -->
+    <header>
+        <div>
+          <div>
+            <img class="blackHeart" src="data:image/png;base64,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" alt="black heart" />
+            <span> Nifty Penguin Magic </span>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="#"> npm Enterprise </a></li>
+              <li><a href="#"> Products </a></li>
+              <li><a href="#"> Solutions </a></li>
+              <li><a href="#"> Resources </a></li>
+              <li><a href="#"> Docs </a></li>
+              <li><a href="#"> Support </a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="sub-nav">
+            <div class="sub-nav-left">
+                <img class="npm-logo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQMAAADCCAMAAAB6zFdcAAAAaVBMVEX///8eGBkAAADv7++npabc3NwcFhcsJyh/fX5nZWUSCAoaExUNAAHNzMwYERLJyMi4t7dCPj8iGxwJAADCwcH09PRhXl5/fX2hoKCUk5PT0tI5NTW6ubnh4eFta2va2dp3dXYyLS6vra7nvxIqAAABlklEQVR4nO3c226CQBRAUaV3qbWtWi2tvf3/RzbzUg4mYwCxGrPW63Bg2E8o0dEIAAAAAAAAAAAAAAAAAAAA4FR9Fj2M6/l1n/mvev6lz/wOfRpcFePOHm7q+cse8/NVPX836T6fV07+q0G5Z4P720M1uNZAg7EGiQYaJBpokGigQTJ4g8Zz+DwstGzQmI+32q5B2Zi/jkvz3M6GblCsq+mf6jVcql2DYjEN8/FeWzUo36o4/xwizF/jztZhZ4M3mMbj3sNxLRss4/zqvmODh6fGPmOD4jGuzMIOBm8wi8c9nmyDhQYaaKCBBhpooIEGGmiggQYaaKCBBhpooIEGGmhwPg2qTfDR9T3TWTTY833jeTTI0kADDTTQQAMNNNBAg8EalIdrsOP3TFsN4sN/qwb5M3/V8/nfM3039tlY+mk2iPo0GF1kNQ5bZpZ2fG7cZM+8zJ03f/3c/PZSrwZ7avv9wTnTQINEAw0SDTRINNAg0UCDZMd/QBzl2f0YNotZxuLYWwMAAAAAAAAAAAAAAAAAAABOyi+ehVQja2dNWwAAAABJRU5ErkJggg==">        
+                <form action="/#" method="post" >
+                    <img src="./images/magnifying-glass.png" alt="Search" class="search-icon"  />
+                    <label for="Search" ></label>
+                    <input type="text" name="Search" placeholder="Search packages" class="search-bar"> 
+                    <button type="submit"class="redbutton">Search</button>
+                </form>
+            </div>
+            <div class="sub-nav-right">
+                <button class="whitebutton"> Join </button>
+                <button class="whitebutton"> Log in </button>
+            </div>    
+        </div>
+    </header>
+<!-- Section1 -->
+    <section id="section1">
+        <h1> Build amazing things </h1>
+        <h3>Essential JavaScript development tools that help you go to market faster and build powerful applications using modern open source code.</h3>     
+        <div>
+           <button class="redbutton"> See plans  </button>
+           <button class="whitebutton"> Join for free </button>
+        </div>
+    </section>
+
+<!-- Section2 -->
+    <section id="section2">
+        <img src="./images/triangle-hexagon.svg" class="centralimage" />
+        <h2> Bring the best of open source to your company </h2>
+        <p> Npm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it.
+        Create an Org and get more out of the tools your team already knows and loves. </p>
+    </section id="section1">
+<!-- Section3 -->
+    <section id="section3"> 
+        <div>
+            <article class="s3articles">
+                <div class="small-icon-box">
+                    <img src="./images/zero-configuration.svg" alt="Zero configuration" class="small-icon"/>
+                </div>
+                <h3>Zero configuration</h3>
+                <p>Create an org, add your team, and start collaborating. Nothing to configure, set up, or manage.</p>
+            </article>        
+            
+            <article class="s3articles">
+                <div class="small-icon-box">
+                    <img src="./images/team-management.svg" alt="Team Management" class="small-icon"/>
+                </div>
+                <h3>Team management</h3>
+                <p>Control who has access to what modules within your team namespace using straightforward team management capabilities.</p>
+            </article class="boxedarticles">        
+            
+            <article class="s3articles">
+                <div class="small-icon-box">
+                    <img src="./images/familiar-features.svg" alt="Familiar features" class="small-icon"/>
+                </div>
+                <h3>Familiar features</h3>
+                <p>  npm Orgs has 100% parity with all the public npm registry features your developers already use. </p>
+            </article>        
+            
+            <article class="s3articles">
+                <div class="small-icon-box">
+                    <img src="./images/npm-audit.svg" alt="Npm audit" class="small-icon"/>
+                </div>
+                <h3>npm audit</h3>
+                <p>Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer</p>
+            </article>
+        </div>
+        <button class="blackbutton">Create an org</button>
+    </section>
+
+
+</body>
+</html>
