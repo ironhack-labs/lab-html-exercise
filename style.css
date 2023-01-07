@@ -171,9 +171,11 @@ header #header-top, #header-bottom {
 
 /*-----THIRD SECTION-----*/
 #third-section {
+    height: 500px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 #third-section article {
@@ -181,25 +183,28 @@ header #header-top, #header-bottom {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: center;
+    padding: 20px;
 }
 
 #third-section div {
-    border: 10px solid #ED1C24;
-    width: 1050px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    align-items: baseline;
 }
 
 #third-section img {
     width: 50px;
-    display: flex;
-    
 }
 
 #third-section h3 {
+    width: 200px;
     color: #ED1C24;
-    border: 2px solid #ED1C24;
-    padding: 2px;
+}
+
+#third-section button {
+    width: 200px;
+    height: 50px;
+    color: white;
+    background-color: black;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
 }
