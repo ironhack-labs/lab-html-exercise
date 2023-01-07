@@ -24,18 +24,14 @@ header > div {
     color: black;
   }
 
-  #headerLinks{
-      display: inline;
+  #bar {
+      display: flex;
+      flex-wrap: nowrap;
+     
   }
-
-  #bar{
-    display: flex;
-    flex-direction: row;
-   }
 
   #searchBar{
       background-color: rgba(0,0,0,.05);
-      background-image: url("./images/magnifying-glass.png") top-left no-repeat;
       background-size: 15px;
       color: rgba(0,0,0,.05);
       width: 900px;
@@ -47,9 +43,9 @@ header > div {
       background-color: #fb3e44;
       color: white;
       padding-left: 12px;
+      float: right;
       padding-right: 12px;
       height: 35px;
-      margin-left: 0;
       border: #fb3e44;
       
   }
@@ -67,6 +63,10 @@ header > div {
 
   #loginButton{
     text-decoration: none;
+    white-space: nowrap;
+    color: black;
+    display: flex;
+    flex-wrap: nowrap;
     padding-left: 20px;
     padding-right: 12px;
     padding-top: 12px;
@@ -81,6 +81,7 @@ header > div {
 
   .npmLogo {
       width: 50px;
+      margin-right: 20px;
   }
 
   .search {
@@ -167,14 +168,13 @@ article {
 }
 
 #section2 {
-    height: 600px;
+    margin-bottom: 50px;
     color: black;
     padding: 150px;
     text-align: center;
 }
 
 #section3 {
-    margin-top: 400px;
     margin-bottom: 70px;
     color: black;
     display: flex;
@@ -185,6 +185,11 @@ article {
 .p1 {
     text-align: left;
     margin-right: 40px;
+    width: 225px;
+}
+
+.p2 {
+    width: 220px;
 }
 
 #createOrg, .createOrg:hover {
