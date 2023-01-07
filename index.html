@@ -2,7 +2,7 @@
 <html lang="en">
     <link rel="stylesheet" href="./style.css" />
     <header>
-        <div>
+        <div class="upper-nav">
           <div>
             <img class="blackHeart" src="images/black-heart.png" alt="black heart" />
             <span> Nifty Penguin Magic </span>
@@ -19,15 +19,23 @@
           </nav>
         </div>
       
-        <div>
+        <div class="lower-nav">
           <!-- add logo, search bar and buttons (or links and style them as buttons later) -->
-          <img src="images/npm-logo.png" alt="npm logo">
-          <img src="images/magnifying-glass.png" alt="search icon">
-          <form action="/some-url" method="get"></form>
-            <input type="text" id="search" name="search">
-            <input type="submit" value="Search">
-            <a href="">Join</a>
-            <a href="">Login</a>
+          <img class="npmlogo" src="images/npm-logo.png" alt="npm logo">
+          
+          <div class="search-container">
+            
+            <img class="searchicon" src="images/magnifying-glass.png" alt="search icon">
+            <form action="/some-url" method="get">
+              <label for="searchpackages"></label>
+              <input type="text" id="searchpackages" name="searchpackages" placeholder="Search packages">
+              <button type="submit">Search</button>
+            </form>
+          </div>
+          <div class="link-btn">
+            <a href="" class="link-btn-join">Join</a>
+            <a href="" class="link-btn-login">Login</a>
+          </div>
         </div>
       </header>
     <section id="general-information">
