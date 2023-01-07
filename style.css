@@ -16,10 +16,15 @@ body {
 
 h1 {
   font-size: 5em;
+  margin: 0.67em 0;
+}
+
+h2 {
+  font-size: 2.25rem;
 }
 
 header {
-  border-bottom: 1px solid black;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.356);
 }
 
 header > div {
@@ -110,21 +115,27 @@ header > div {
   }
 
 
-  main .main-top {
+   .container{
     height: 600px;
-    background-color: rgba(232,217,217,.3);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1em;
+    text-align: center;
+    
   }
 
-  main .main-top article {
-    width: 30%;
+   .main-top {
+    background-color: rgba(232,217,217,.3);
+    padding: 2em 0;
   }
 
-  main .main-top button{
+   article {
+    width: 50%;
+    margin-bottom: 4em;
+  }
+
+   .main-top a{
     border: none;
     padding: 1em 5em;
     margin: 0 14px;
@@ -140,4 +151,59 @@ header > div {
 
   #join-for-free {
     background-color: var(--white-bg);
+  }
+
+   .main-down {
+    
+   }
+
+  .main-down img {
+    max-height: 250px;
+    padding-top: 4em;
+  }
+
+
+  .main-down article {
+   font-style: italic;
+  }
+
+
+  .bg-yellow {
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+  }
+
+  .container-services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    margin-bottom: 2em;
+  }
+
+  .services {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: left;
+    gap: 2em;
+  }
+
+  .services > div {
+    width: 250px;
+  }
+
+  .services > div h4 {
+    color: var(--red);
+  }
+
+  .services > div img {
+    width: 30px;
+  }
+
+  .container-services button {
+    padding: 1em 6em;
+    background-color: black;
+    color: var(--white);
+    font-weight: 600;
   }

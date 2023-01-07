@@ -1,92 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>npm</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header>
-        <div class="top-header">
-          <div>
-            <img class="blackHeart" src="./images/black-heart.png"alt="black heart" />
-            <span> Nifty Penguin Magic </span>
-          </div>
-          <nav>
-            <ul>
-              <li><a href="#">npm Enterprise </a></li>
-              <li><a href="#">Products </a></li>
-              <li><a href="#">Solutions </a></li>
-              <li><a href="#">Resources </a></li>
-              <li><a href="#">Docs </a></li>
-              <li><a href="#">Support </a></li>
-            </ul>
-          </nav>
-        </div>
-      
-        <div class="bottom-header">
-            <img src="/images/npm-logo.png" alt="npm logo">
-            <div class="search-container">
-                <div>
-                    <img src="/images/magnifying-glass.png" alt="search icon">
-                    <input type="text" placeholder="Search packages" />
-                    <button>Search</button>
-                </div>
-            </div>
-
-            <div class="auth-container">
-                <button id="join-btn">Join</button>
-                <button>Log in</button>
-            </div>        
-        </div>
-      </header>
-
-    <main>
-        <div class="main-top">
-            <h1>Build amazing thinqs</h1>
-            <article>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe, rerum labore fugiat eius fugit maxime?</article>
-            <div>
-                <button id="see-plans">See plans</button>
-                <button id="join-for-free">Join for free</button>
-            </div>
-        </div>
-        <div  class="main-down">
-            <img src="/images/triangle-hexagon.svg" alt="">
-            <h2>Bring the best of open source to your company</h2>
-            <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Id nostrum distinctio doloribus consectetur tempora, culpa consequuntur maxime 
-                exercitationem laudantium perspiciatis eum similique, error quia ab!</article>
-        </div>
-    </main>
-
-    <section>
+      <div class="top-header">
         <div>
-            <div>
-                <img src="/images/zero-configuration.svg" alt="icon zero configuration">
-                <h4>Zoro configuration</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio nisi maiores, beatae ab tempore rerum.</p>
-            </div>
-            <div>
-                <img src="/images/team-management.svg" alt="icon team management">
-                <h4>Zoro configuration</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio nisi maiores, beatae ab tempore rerum.</p>
-            </div>
-            <div>
-                <img src="/images/familiar-features.svg" alt="icon familiar features">
-                <h4>Zoro configuration</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio nisi maiores, beatae ab tempore rerum.</p>
-            </div>
-            <div>
-                <img src="/images/npm-audit.svg" alt="icon npm audit">
-                <h4>Zoro configuration</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio nisi maiores, beatae ab tempore rerum.</p>
-            </div>
+          <img
+            class="blackHeart"
+            src="./images/black-heart.png"
+            alt="black heart"
+          />
+          <span> Nifty Penguin Magic </span>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#">npm Enterprise </a></li>
+            <li><a href="#">Products </a></li>
+            <li><a href="#">Solutions </a></li>
+            <li><a href="#">Resources </a></li>
+            <li><a href="#">Docs </a></li>
+            <li><a href="#">Support </a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="bottom-header">
+        <img src="/images/npm-logo.png" alt="npm logo" />
+        <div class="search-container">
+          <div>
+            <img src="/images/magnifying-glass.png" alt="search icon" />
+            <input type="text" placeholder="Search packages" />
+            <button>Search</button>
+          </div>
         </div>
 
-        <button>Create an Org</button>
-        
+        <div class="auth-container">
+          <button id="join-btn">Join</button>
+          <button>Log in</button>
+        </div>
+      </div>
+    </header>
+
+    <section class="main-top container">
+      <h1>Build amazing thinqs</h1>
+      <article>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe, rerum
+        labore fugiat eius fugit maxime?
+      </article>
+      <div>
+        <a id="see-plans">See plans</a>
+        <a id="join-for-free">Join for free</a>
+      </div>
     </section>
-</body>
+    <section class="main-down container">
+      <img src="/images/triangle-hexagon.svg" alt="" />
+      <h2 class="bg-yellow">Bring the best of open source to your company</h2>
+      <article>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Id nostrum
+        distinctio doloribus consectetur tempora, culpa consequuntur maxime
+        exercitationem laudantium perspiciatis eum similique, error quia ab!
+      </article>
+    </section>
+
+    <section class="container-services">
+      <div class="services">
+        <div>
+          <img
+            src="/images/zero-configuration.svg"
+            alt="icon zero configuration"
+          />
+          <h4>Zoro configuration</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+            nisi maiores, beatae ab tempore rerum.
+          </p>
+        </div>
+        <div>
+          <img src="/images/team-management.svg" alt="icon team management" />
+          <h4>Zoro configuration</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+            nisi maiores, beatae ab tempore rerum.
+          </p>
+        </div>
+        <div>
+          <img
+            src="/images/familiar-features.svg"
+            alt="icon familiar features"
+          />
+          <h4>Zoro configuration</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+            nisi maiores, beatae ab tempore rerum.
+          </p>
+        </div>
+        <div>
+          <img src="/images/npm-audit.svg" alt="icon npm audit" />
+          <h4>Zoro configuration</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+            nisi maiores, beatae ab tempore rerum.
+          </p>
+        </div>
+      </div>
+
+      <div>
+          <button>Create an Org</button>
+      </div>
+    </section>
+  </body>
 </html>
