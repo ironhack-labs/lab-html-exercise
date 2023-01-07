@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body {
+    font-family: 'Poppins';
+}
+
+/*-----HEADER-----*/
+header #header-top, #header-bottom {
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+}
+
+.black-heart {
+    width: 20px;
+    margin-right: 1rem;
+}
+
+#header-top-logo {
+    display: flex;
+    align-items: center;
+}
+
+#nav-bar {
+    width: 600px;
+}
+  
+#nav-bar ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+#nav-bar a {
+    text-decoration: none;
+    color: black;
+}
+
+.npm-logo {
+    display: flex;
+    align-items: center;
+    width: 60px;
+}
+
+#searchbar {
+    display: flex;
+    align-items: center;
+}
+
+#searchbar button {
+    background-color: #fb3e44;
+    color: white;
+    height: 35px;
+    width: 70px;
+    border: none;
+}
+
+.searchbar-container {
+    background-color: rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 7px 0;
+    height: 35px;
+}
+
+.searchbar-container input {
+    background-color: rgba(0, 0, 0, 0.0);
+    border: none;
+    height: 35px;
+    background: url(./images/magnifying-glass.png);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 10px;
+    padding-left: 40px ;
+}
+
+#extra-buttons .join {
+    height: 30px;
+    width: 70px;
+    background-color: white;
+    border-width: 1px;
+    
+}
+
+#extra-buttons .log-in {
+    height: 30px;
+    width: 70px;
+    border: none;
+    background-color: white;
+}
+
+#extra-buttons {
+    padding-left: 25px;
+}
+
+
+
+/*-----FIRST SECTION-----*/
+#first-section {
+    height: 600px;
+    background-color: rgba(232,217,217,.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 4.2rem;
+}
+
+.paragraph {
+    height: 100px;
+    width: 400px;
+    text-align: center;
+}
+
+.see-plans {
+    color: white;
+    font-size: 1.3rem;
+    border: none;
+    background-color: #FB3B49;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+    width: 220px;
+    height: 60px;
+}
+
+.join-for-free {
+    font-size: 1.3rem;
+    border:none;
+    background-color: rgba(0, 0, 0, 0.0);
+    width: 220px;
+    height: 60px;
+}
+
+
+
+/*-----SECOND SECTION-----*/
+#second-section {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title2 {
+    font-size: 1.8rem;
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+    font-style: italic;
+    padding: 0 35px;
+}
+
+.paragraph2 {
+    height: 70px;
+    width: 700px;
+    text-align: center;
+}
+
+#second-section img {
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+
+
+/*-----THIRD SECTION-----*/
+#third-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#third-section article {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#third-section div {
+    border: 10px solid #ED1C24;
+    width: 1050px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#third-section img {
+    width: 50px;
+    display: flex;
+    
+}
+
+#third-section h3 {
+    color: #ED1C24;
+    border: 2px solid #ED1C24;
+    padding: 2px;
+}
