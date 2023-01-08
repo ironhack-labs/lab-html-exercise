@@ -2,6 +2,8 @@
 
 body {
   font-family: 'Poppins';
+  margin: 0;
+  padding: 0;
 }
 
 header > div {
@@ -10,6 +12,7 @@ header > div {
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid lightgray;
+    
   }
   
   nav {
@@ -26,6 +29,12 @@ header > div {
   nav a {
     text-decoration: none;
     color: black;
+  }
+
+  article {
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 2rem auto;
   }
   
   .blackHeart {
@@ -96,25 +105,24 @@ header > div {
     justify-content: space-between; 
     font-size: medium; 
     color: black;
+    text-align: center;
   }
 
   .link-join {
-   padding: 6px 12px;
+   padding: 6px 10px;
    border: 1px solid rgb(144,144,144);
   }
 
   .link-log {
-   font-size: 1em;
-   letter-spacing: 0.2px;
-   text-align: center;
    text-decoration: none;
-   padding: 6px 10px;
+   padding: 0 12px;
    color: black;
+   padding: 6px 10px;
   }
- .link-log:hover {
+
+  .link-log:hover {
     background-color: #FB3B49;
     color: white;
-
  }
 
   /*first section*/
@@ -132,13 +140,6 @@ header > div {
     font-size: 80px;
     font-weight: bold;
     margin: 16px 16px 5px 16px;
-  }
-
-  #build article p {
-    font-size: 20px;
-    text-align: center;
-    margin: 1.5rem auto;
-   
   }
 
 #build div {
@@ -169,18 +170,24 @@ header > div {
 /*2 section*/
 
 .triangle-img {
-    width: 20%;
-    padding: 5%;
+    width: 25%;
+    padding-top: 5%;
     margin: 2rem auto;
 }
 
   #open-source {
     height: 600px;
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    padding-bottom: 50px;
+  }
+
+  #open-source > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
     align-items: center;
-    padding-bottom: 100px;
+    
   }
 
   .flash-color {
@@ -193,8 +200,54 @@ header > div {
     font-style: italic;
   }
 
-  #open-source article p {
-    font-size: medium;
-    text-align: center;
+  /*3 section*/
 
+  #four-boxes { 
+    height: 600px;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    padding: 50px 0 20px;
+  }
+
+  #four-boxes > div {
+    display: flex;
+    justify-content: center;
+    margin: 3rem;
+  }
+
+  #four-boxes .containers {
+    flex: 1;  
+  }
+  
+  .containers img {
+    width: 32px;
+    height: 32px;
+    padding: 0 5%;
+    
+  }
+  .containers h3 {
+    padding: 0 5%;
+    color: #ED1C24;
+    
+  }
+  
+  .containers p {
+    padding:  0 5%;
+    width: 80%;
+    
+  }
+  .Create-Org-Btn {
+    padding: 1rem 8rem;
+    background-color: black;
+    border: none;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    margin: 3rem auto;
+  }
+
+.Create-Org-Btn a {
+    text-decoration:none;
+    color: white;
+    font-size: large;
+    font-weight: bold;
   }
