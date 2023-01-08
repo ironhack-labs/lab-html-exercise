@@ -9,7 +9,7 @@
 
     <header class="header">
         <div>
-          <div>
+          <div class="div-header-a">
             <img class="blackHeart" src="/images/black-heart.png" alt="black heart" />
             <span> Nifty Penguin Magic </span>
           </div>
@@ -25,16 +25,16 @@
           </nav>
         </div>
       
-        <div>
+        <div class="div-header-b">
             <img class="logo" src="/images/npm-logo.png" alt="logo"/>
-            <form class="slot-form" action="/search" method="post">
+            <form class="slot-form" action="/search" method="post" >
                 <img class="magnifier" src="/images/magnifying-glass.png" alt="magnifier"/>
-                <label for="search">Search</label>
                 <input type="text" id="search" placeholder="Search packages">
+                <button><a class="link-btn" href="#">Search</a></button>
             </form>
             <div>
-                <a class="link-btn" href="#">Join</a>
-                <a class="link-btn" href="#">Log In</a>
+                <button><a class="link-btn" href="#">Join</a></button>
+                <button><a class="link-btn" href="#">Log In</a></button>
             </div>
         </div>
       </header>
@@ -47,8 +47,8 @@
             </p>
         </article>
         <div>
-            <a class="link-btn" href="#">See plans</a>
-            <a class="link-btn" href="#">Join for free</a>
+          <button><a class="link-btn" href="#">See plans</a></button>
+          <button><a class="link-btn" href="#">Join for free</a></button>
         </div>
     </section>
 
@@ -92,6 +92,6 @@
             Enjoy the securityauditing features built into the npm client, a zero-friction way to make open source software safer.
             </p>
         </div>
-        <a class="link-btn" href="#">Create an Org</a>
+        <button><a class="link-btn" href="#">Create an Org</a></button>
     </section>
 </body>
