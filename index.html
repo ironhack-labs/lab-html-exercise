@@ -30,8 +30,10 @@
          placeholder="Search packages">
         <button>Search</button>
       </form>
-      <a href="join">  Join </a>
-      <a href="logIn"> Log In</a>
+      <div class="joinLog">
+      <a id="join" href="join">  Join </a>
+      <a id="login" href="logIn"> Log In</a>
+    </div>
   </div>
 
 </header>
@@ -44,18 +46,19 @@
             <h1>Build amazing things</h1>
             <p>Essential JavaScript development tools that help you go to market faster and build powerful applications using modern open source code.</p>
             <button type="button" id="button1" href="seePlans">See plans</button>
-            <button type="button" id="button2" href="logIn">Join for free</button>
-        </div>
+            <button type="button" id="button2" href="joinFree">Join for free</button>
+            </div>
           </section>
 
           <section id="banner2">
             <div class="section2">
             <img class="hexagon" src="images/triangle-hexagon.svg" alt="triangle hexagon" />
-            <h3>Bring the best of open source to your company</h3>
+            <h3> <span class="italicHighlight">Bring the best of open source to your company</span></h3>
             <p>npm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it. Create an Org and get more out of the tools your team already knows and loves.</p>
-        </div>
+            </div>
           </section>
           <section id ="banner3">
+            <div class="section3">
             <article>
                 <img class="zeroconf" src="images/zero-configuration.svg" alt="zero configuration" />
                 <h4>Zero configuration</h4>
@@ -76,9 +79,9 @@
                 <h4>npm audit</h4>
                 <p>Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer.</p>
             </article>
-            <a href="createOrg"> Create an Org</a>
-
+            </div>
           </section>
+          <button id="buttonOrg"> Create an Org</button>
 
     </main>
     <footer>
