@@ -139,11 +139,49 @@ nav a {
     text-align: center;
 }
 
+#perks-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 50px;
+    margin-bottom: 50px;
+}
+
+#perks-section .perks-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    height: 300px;
+}
+
+#perks-section .perk {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 20px 20px 20px;
+    max-width: 225px;
+}
+
 #perks-section h3 {
     color: #ED1C24;
+    font-size: 1em;
+}
+
+#perks-section p {
+    font-size: .9em;
+}
+#perks-section .perk-icon {
+    height: 30px;
 }
 
 #perks-section .create-org-btn {
     box-shadow: 8px 8px 0 rgba(128,83,35,.2);
     color: white;
+    background-color: black;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 15px 100px;
 }
