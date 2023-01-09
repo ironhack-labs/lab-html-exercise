@@ -41,22 +41,48 @@ nav a {
     margin-right: 1rem;
 }
 
+.utility-bar {
+    padding: 5px 25px;
+}
+
 .npm-logo {
-    height: 30px;
+    height: 20px;
 }
 
 .search-bar {
     display: flex;
     flex-grow: 1;
     justify-content: space-between;
+    margin:0 20px;
+    position: relative;
 }
 
 .search-bar .search-field {
+    background-color: #eee;
+    border: none;
     flex-grow: 1;
+    padding: 1px 50px;
+    font-size: 1em;
 }
 
+
 .search-bar .search-icon {
-    height: 30px;
+    height: 20px;
+    position: absolute;
+    top: 10px;
+    left: 15px;
+}
+
+.search-bar .search-btn {
+    border: none;
+    padding: 10px 15px;
+    background-color: #FB3B49;
+    color:white;
+    font-size: 1em;
+}
+
+.login-container {
+    margin-left: 20px;
 }
 
 .registration-btn,
@@ -64,12 +90,16 @@ nav a {
     text-decoration: none;
     padding: 5px 20px;
     color: black;
+    font-size: .9em;
 }
 
 .registration-btn {
-    border-left: 1px solid rgb(200,200,200.9);
-    border-top: 1px solid rgb(200,200,200);
-    border-right: 1px solid rgba(190,190,190,.4);
+    border: 1px solid rgb(200,200,200);
+    font-weight: bold;
+}
+
+.login-btn {
+    padding-right: 0;
 }
 
 #registration-section {
