@@ -1,15 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
-html, body {
-    margin: 0;
-    padding: 0;
-}
-
 body {
   font-family: 'Poppins';
 }
 
 header > div {
+  font-size: 0.8em;
     padding: 0 25px;
     display: flex;
     justify-content: space-between;
@@ -25,7 +21,7 @@ nav ul {
     list-style: none;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
   }
   
 nav a {
@@ -42,28 +38,156 @@ nav a {
     width: 40px;
     margin-right: 1rem;
   }
-  
-.slot-form {
-      width: 60%;
-      margin: 18px auto 0 auto;
+
+  .magnifier {
+    height: 15px;
+    background-color: lightgray;
+    padding: 10px;
+  }
+
+.form {
+      margin: 20px;
       font-size: 1.5em;
       text-align: center;
+      background-image: url("images/magnifying-glass.png");
+      background-repeat: no-repeat;
+      background-position: left;
 }
 
+.search-btn {
+  background-color: red;
+  font-family: 'Poppins';
+  text-decoration: none;
+  color: white;
+  font-weight: 950;
+  padding: 10px 20px
+}
 header > form label, input {
     color: rgba(0, 0, 0, 0.5)
 }
 
-header > label {
-    background-color: #fb3e44;
-    color: white;
+.join-btn {
+    text-decoration: none;
+    color: black;
     text-align: center;
-    text-decoration: non;
+    font-family: 'Poppins';
 }
 
-#presentation-a {
+#build-section {
     height: 600px;
     background-color: rgba(232, 217, 217, 0.3);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+h1 {
+  font-size: 4em;
+  font-weight: bolder;
+  margin-top: 50px;
+}
+#build-section > article {
+  width: 30%;
+  text-align: center;
+  font-size: 0.9em;
+}
+.see-plans-btn {
+  background-color: #FB3B49;
+  text-decoration: none;
+  font-family: "Poppins";
+  font-weight: 900;
+  padding: 5px 30px;
+  box-shadow: 8px 8px 0 rgba(251, 59, 73, .2);
+  color: white;
+  border: 0;
+  background-color: #fb3e44;
+}
+.join-for-free-btn {
+  text-decoration: none;
+  font-family: "Poppins";
+  font-weight: 900;
+  padding: 5px 20px;
+  color: black;
+  border: 0;
+
+  outline: none;
+border: none;
+}
+#bring-section {
+    height: 600px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
+.hexagon {
+  width: 200px;
+  margin-bottom: 50px;
+}
 
+h2 {
+  font-size: 30px;
+  font-weight: bolder;
+  background-color: rgba(255,204, 53, 0.4);
+  transform: skew(9deg, 0deg);
+  font-style: italic;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+#bring-section > article {
+  width: 60%;
+  text-align: center;
+  font-size: 0.9em;
+}
+
+#informations {
+  height: 300px;
+  font-size: 0.8em;
+  background-color: white;
+  display: flex;
+  flex-direction: center;
+  justify-content: space-between;
+  align-items: center;
+
+  
+}
+.container img {
+  width: 30px;
+  padding: 0 0 0 25px;
+}
+
+#informations p {
+  width: 200px;
+  padding: 0 0 0 25px;
+}
+
+h3 {
+  color: red;
+  font-weight: bolder;
+  padding: 0 0 0 25px;
+}
+
+footer {
+  display: flex;
+  flex-direction: center;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.create-an-org-btn {
+padding:12px 60px;
+outline: none;
+border: none;
+font-family: 'Poppins';
+background-color: black;
+box-shadow: 8px 8px 0 rgba(128,83,35, 0.2);
+color:white;
+text-decoration: none;
+font-weight: 950;
+letter-spacing: 1px;
+height: 40px;
+
+}
