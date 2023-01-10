@@ -15,26 +15,25 @@
           </div>
           <nav class="nav-bar">
             <ul class="nav-bar-ul">
-              <li><a class="nav-bar-item" href="#"> npm Enterprise </a></li>
-              <li><a class="nav-bar-item" href="#"> Products </a></li>
-              <li><a class="nav-bar-item" href="#"> Solutions </a></li>
-              <li><a class="nav-bar-item" href="#"> Resources </a></li>
-              <li><a class="nav-bar-item" href="#"> Docs </a></li>
-              <li><a class="nav-bar-item" href="#"> Support </a></li>
+              <li><a href="#"> npm Enterprise </a></li>
+              <li><a href="#"> Products </a></li>
+              <li><a href="#"> Solutions </a></li>
+              <li><a href="#"> Resources </a></li>
+              <li><a href="#"> Docs </a></li>
+              <li><a href="#"> Support </a></li>
             </ul>
           </nav>
         </div>
       
         <div class="div-header-b">
             <img class="logo" src="/images/npm-logo.png" alt="logo"/>
-            <form class="slot-form" action="/search" method="post" >
-              <label for="text"></label>
-              <input type="text" id="search" placeholder="Search packages">
-              <button><a class="search-btn" href="#">Search</a></button>
+            <form class="slot-form" action="/search" method="get" >
+              <input type="text" name="text" id="search" placeholder="Search packages">
+              <button id="search-btn"><a href="#">Search</a></button>
             </form>
             <div>
-                <button><a class="join-btn" href="#">Join</a></button>
-                <button><a class="join-btn" href="#">Log In</a></button>
+                <button id="join-btn"><a href="#">Join</a></button>
+                <button id="login-btn"><a href="#">Log In</a></button>
             </div>
         </div>
       </header>
@@ -47,8 +46,10 @@
             </p>
         </article>
         <div>
-          <button><a class="see-plans-btn" href="#">See plans</a></button>
-          <button><a class="join-for-free-btn" href="#">Join for free</a></button>
+          <button id="see-plans-btn"><a href= "#"> See plans </a></button>
+          <button id="join-for-free-btn"><a href= "#"> Join for free </a></button>
+          <!--
+          <a class="join-for-free-btn" href="#">Join for free</a> -->
         </div>
     </section>
 
@@ -94,7 +95,7 @@
         </div>
     </section>
     <footer>
-      <button><a class="create-an-org-btn" href="#">Create an Org</a></button>
+      <button id="create-an-org-btn"><a href="#">Create an Org</a></button>
     </footer> 
 </body>
 

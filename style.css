@@ -34,89 +34,146 @@ nav a {
     margin-right: 1rem;
   }
 
-.logo {
-    width: 40px;
-    margin-right: 1rem;
-  }
-
-  .magnifier {
-    height: 15px;
-    background-color: lightgray;
-    padding: 10px;
-  }
-
-.form {
-      margin: 20px;
-      font-size: 1.5em;
-      text-align: center;
-      background-image: url("images/magnifying-glass.png");
-      background-repeat: no-repeat;
-      background-position: left;
+.div-header-b {
+  padding: 10px;
 }
 
-.search-btn {
-  background-color: red;
+.logo {
+    width: 80px;
+    margin-right: 1rem;
+    padding-left: 20px;
+  }
+
+.magnifier {
+  background-color: rgb(240, 235, 235);
+  }
+
+form {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    }
+  
+form > input {
+  background-image: url(/images/magnifying-glass.png);
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: 1%;
+  color: rgb(0,0,0,.05);
+  background-color: rgb(240, 235, 235);
+  border: 0;
+  padding: 8px 18px 8px 18px;
+  width: 920px;
+  font-family: monospace;
+  font-size: 14px;
+  text-indent: 30px;
+}
+
+#search-btn {
+    background-color: #fb3e44;
+    color: white;
+    border: 0;
+    padding: 8px 18px 8px 18px;
+} 
+
+#search-btn a {
+  text-align: center;
   font-family: 'Poppins';
   text-decoration: none;
   color: white;
   font-weight: 950;
-  padding: 10px 20px
 }
 
 header > form label, input {
     color: rgba(0, 0, 0, 0.5)
 }
 
-.join-btn {
-    text-decoration: none;
-    color: black;
-    text-align: center;
-    font-family: 'Poppins';
+#join-btn {
+  color: black;
+  text-decoration: none;
+  border: 1px solid grey;
+  padding: 5px 15px 5px 15px;
+  font-size: 15px;
+  background-color: white;
+}
+
+#join-btn a {
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  margin: 20px 0 20px 0; 
+}
+
+#login-btn {
+  border: none;
+  background-color: white;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  font-family: 'Poppins';
+  padding: 0 20px;
+}
+
+#login-btn a {
+  text-decoration: none;
+  color: black;
+  text-align: center;
 }
 
 #build-section {
     height: 600px;
     background-color: rgba(232, 217, 217, 0.3);
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 50px;
 }
 
 h1 {
-  font-size: 4em;
-  font-weight: bolder;
-  margin-top: 50px;
+  font-size: 5em;
+  font-weight: 999;
+  margin-top: 30px;
 }
 
 #build-section > article {
   width: 30%;
   text-align: center;
-  font-size: 0.9em;
+  font-size: 1em;
+  margin-bottom: 30px;
 }
 
-.see-plans-btn {
+#see-plans-btn {
+  text-align: center;
   background-color: #FB3B49;
-  text-decoration: none;
+  border: none;
   font-family: "Poppins";
-  font-weight: 900;
-  padding: 5px 30px;
+  font-weight: bolder;
+  padding: 6px 40px;
   box-shadow: 8px 8px 0 rgba(251, 59, 73, .2);
-  color: white;
-  border: 0;
-  background-color: #fb3e44;
+  margin-right: 15px;
 }
 
-.join-for-free-btn {
+#see-plans-btn a {
   text-decoration: none;
+  color: white;
+  text-align: center;
+}
+
+#join-for-free-btn {
+  background-color: white;
+  border: none;
   font-family: "Poppins";
   font-weight: 900;
-  padding: 5px 20px;
-  color: black;
-  border: 0;
+  padding: 5px 40px;
+  margin-left: 15px;
+}
 
-  outline: none;
-border: none;
+#join-for-free-btn a {
+  text-decoration: none;
+  color: black;
+  text-align: center;
 }
 
 #bring-section {
@@ -144,7 +201,7 @@ h2 {
 }
 
 #bring-section > article {
-  width: 60%;
+  width: 50%;
   text-align: center;
   font-size: 0.9em;
 }
@@ -155,9 +212,10 @@ h2 {
   background-color: white;
   display: flex;
   flex-direction: center;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
+
 .container img {
   width: 30px;
   padding: 0 0 0 25px;
@@ -182,16 +240,20 @@ footer {
   margin-bottom: 100px;
 }
 
-.create-an-org-btn {
-padding:12px 60px;
-outline: none;
+#create-an-org-btn {
+padding:15px 120px 35px 120px;
 border: none;
 font-family: 'Poppins';
 background-color: black;
 box-shadow: 8px 8px 0 rgba(128,83,35, 0.2);
-color:white;
 text-decoration: none;
-font-weight: 950;
+font-weight: 990;
 letter-spacing: 1px;
-height: 40px;
+height: 30px;
+}
+
+#create-an-org-btn a {
+  text-decoration: none;
+  color: white;
+  text-align: center;
 }
