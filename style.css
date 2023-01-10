@@ -2,6 +2,8 @@
 
 body {
   font-family: 'Poppins';
+  margin:0;
+  padding: 0;
 }
 
 header > div {
@@ -38,21 +40,194 @@ header > div {
 
   .logo{
     width:100px ;
+    position: relative;
+    margin: 0;
   }
   .glass{
     width: 20px;
-  }
-  .search-buttom {
-    background-color: brown;
-
+    position: relative;
+    left: 30px;
+    margin: 0;
   }
   .links a {
     text-decoration: none;
     color: black;
-    border: 1px solid rgb(15, 8, 8);
+
+  }
+  .search-bar{
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+    justify-content: flex-start;
+  }
+  .search-bar a{
+    text-decoration: none;
+    color: black;
+  }
+  #searching{
+    height: 30px;
+    width: 700px;
+    background-color: rgba(0,0,0,.05);
+    border: 0px;
+    padding-left: 50px;
+    margin:0;
+  }
+  .outer{
+    border: 1px solid black;
+    height: 30px;
+    width: 50px;
+    text-align: center;
+    margin-right: 50px;
+  }
+  
+  #look{
+    background-color: #fb3e44;
+    height: 30px;
+    border: 0px;
+    color: white;
+    width: 80px;
+    letter-spacing: 1px;
+    margin-right: 70px;
+  }
+
+
+
+  
+#section-1{
+    background-color: rgba(232,217,217,.3);
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  h1{
+    font-size: 4em;
+    text-align: center;
+    font-weight: bolder;
+    line-height: 1.5em;
+  }
+
+  .single-box {
+    text-align: center;
+    font-size: 1.3em;
+    margin-bottom: 30px;
+  }
+
+  .see-plans-link{
+    text-decoration: none;
+    width: 250px;
+    height: 60px;
+    background-color: #fb3e44;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10%;
+    box-shadow: 5px 5px 0 rgba(128,83,35,.2);
+    
     
   }
-  .links a join-link{
+  .see-plans-link #text{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
     
   }
+
+  .join-for-free-link{
+    text-decoration: none;
+    width: 250px;
+    height: 60px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .join-for-free-link #text{
+    text-decoration: none;
+    color: black;
+    font-size: 1.2em;
+
+  }
+  .two-boxes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+  }
+
+
+
+#section-2{
+  height: 450;
+  display: flex;
+  flex-direction: column;
+}
+  .hexagon{
+    display: flex;
+    justify-content: center;
+  }
+  .hexagon #image{
+    width: 20%;
+    margin-top: 30px;
+  }
+  .back-yellow-title{
+    text-align: center;
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+    font-style: italic;
+    margin: 70px 200px 50px 200px;
+  }
+  .paragraph{
+    text-align: center;
+    margin-bottom: 85px;
+    color: rgb(44, 43, 43);
+  }
+
+
+
+
+#section-3{
+}
+  #tab{
+    display: flex;
+    flex-direction: row;
+    margin: 0 10% 0 10%;
+  }
+  .icons{
+    width: 40px;
+    
+  }
+  .box{
+    display: flex;
+    flex-direction: column;
+    width: px;
+    margin: 3%;
+  }
+  .box a{
+    text-decoration: none;
+    color: #ED1C24;
+    font-weight: bolder;
+    font-size: 0.7;
+    
+  }
+  .org a{
+    text-decoration: none;
+    color: white;
+    
+  }
+  .org{
+    background-color: black;
+    height: 55px;
+    width: 30%;
+    margin:0 0 20% 0;
+    position: relative;
+    left:33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
 
