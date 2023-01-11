@@ -5,7 +5,7 @@ body {
 }
 
 header > div {
-  padding: 0 25px;
+  padding: 0 25px 0 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -14,11 +14,15 @@ header > div {
 
 nav {
   width: 600px;
+  position: relative;
+  top: 0;
+  right: 0;
 }
 
 nav ul {
   list-style: none;
   display: flex;
+  padding-right: 50px;
   justify-content: space-between;
   align-items: center;
 }
@@ -30,5 +34,293 @@ nav a {
 
 .blackHeart {
   width: 20px;
+  padding-left: 60px;
   margin-right: 1rem;
+}
+
+#heart {
+  position: relative;
+}
+
+.NPM-logo {
+  width: 80px;
+  padding-left: 60px;
+  padding-top: 10px;
+}
+
+#searchBox {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-right: 40px;
+}
+
+#magGlass {
+  display: none;
+}
+
+#search {
+  width: 900px;
+  height: 40px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 0;
+  background-color: rgba(0, 0, 0, 0.05);
+  background-image: url(./images/magnifying-glass.png);
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  background-position: 1rem center;
+}
+
+#searchButton {
+  width: 80px;
+  height: 40px;
+  background-color: #fb3e44;
+  color: white;
+  margin-left: 0;
+  border: 0;
+}
+
+#check {
+  list-style: none;
+  display: flex;
+  padding-right: 50px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#join {
+  width: 60px;
+  height: 30px;
+  border-color: black;
+  border: 1px;
+  border-style: solid;
+  background-color: white;
+}
+
+#logIn {
+  width: 60px;
+  height: 30px;
+  border: 0;
+  background-color: white;
+}
+
+#buildArticle {
+  width: auto;
+  height: 500px;
+  position: relative;
+  top: 0px;
+  margin-top: 0px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 0 50px 0 50px;
+  box-shadow: inset;
+  background-color: rgba(232, 217, 217, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 70px;
+  font-weight: 900 !important;
+  text-align: center;
+  position: relative;
+}
+
+#firstArticle {
+  inline-size: 440px;
+  overflow-wrap: break-word;
+  font-size: medium;
+  font-weight: 200;
+  text-align: center;
+  position: relative;
+}
+
+#buttonOpcions {
+  list-style: none;
+  display: flex;
+  position: relative;
+  left: 20px;
+  margin: auto;
+  padding-right: 50px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#seePlans {
+  width: 200px;
+  height: 50px;
+  font-size: large;
+  font-weight: bold;
+  border: 0px;
+  border-style: none;
+  background-color: #fb3b49;
+  box-shadow: 8px 8px 0 rgba(251, 59, 73, 0.2);
+  color: white;
+  margin-right: 30px;
+}
+
+#joinFree {
+  width: 200px;
+  height: 50px;
+  font-size: large;
+  font-weight: bold;
+  border: 0px;
+  border-style: none;
+  background-color: white;
+}
+
+#imgTri {
+  width: 300px;
+  height: 200px;
+  display: flex;
+  position: relative;
+  top: 60px;
+  margin: auto;
+}
+
+#bringArticle {
+  width: auto;
+  height: 400px;
+  position: relative;
+  top: 100px;
+  margin-top: 0px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 0 50px 0 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 900 !important;
+  text-align: center;
+  position: relative;
+  top: auto;
+  background-color: rgba(255, 204, 53, 0.4);
+  transform: skew(9deg, 0deg);
+  font-style: italic;
+}
+
+#secondArticle {
+  inline-size: 600px;
+  overflow-wrap: break-word;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 150;
+  text-align: center;
+  position: relative;
+}
+
+#enlightenment {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/*#firstCollun {
+  box-sizing: inherit;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  padding-right: 20px;
+  padding-left: 20px;
+  font-size: 15px;
+  text-align: left;
+}
+
+#secondCollun {
+  box-sizing: inherit;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  padding-right: 20px;
+  padding-left: 20px;
+  font-size: 15px;
+  text-align: left;
+}
+
+#thirdCollun {
+  box-sizing: inherit;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  padding-right: 20px;
+  padding-left: 20px;
+  font-size: 15px;
+  text-align: left;
+}
+
+#fourthCollun {
+  box-sizing: inherit;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  padding-right: 20px;
+  padding-left: 20px;
+  font-size: 15px;
+  text-align: left;
+}*/
+
+/*#imgConfiguration {
+  width: 40px;
+}
+
+#imgManagement {
+  width: 40px;
+}
+
+#imgFeatures {
+  width: 40px;
+}
+
+#imgAudit {
+  width: 40px;
+}*/
+
+.imgContainer {
+  width: 40px;
+}
+
+.h3 {
+  color: #ed1c24;
+  font-size: 20px;
+}
+
+#collunsArticles {
+  width: 300px;
+  height: 400px;
+  margin: 10px;
+  text-align: center;
+}
+
+#OrgButton {
+  width: 400px;
+  height: 60px;
+  font-size: large;
+  font-weight: bold;
+  border: 0px;
+  border-style: none;
+  background-color: black;
+  box-shadow: 8px 8px 0 rgba(128, 83, 35, 0.2);
+  color: white;
+  display: flex;
+  position: relative;
+  left: 500px;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+  margin-bottom: 40px;
 }
