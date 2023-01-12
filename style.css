@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,300,700');
+
+body {
+  font-family: 'Poppins';
+  font-size: 13px;
+  line-height: 3.5em;
+}
+html, 
+body {
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Poppins',sans-serif;
+}
+h1 {
+  font-family: 'Poppins';
+  font-size: 6em;
+  font-weight: 700;
+  margin-bottom: 100px;
+}
+h2 {
+  font-size: 4em;
+  text-align: center;
+}
+h3 {
+  font-size: 2.7em;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+header > div {
+  padding: 0 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+}
+nav {
+  width: 600px;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+}
+.blackHeart {
+  width: 20px;
+  margin-right: 1rem;
+}
+.npmlogo {
+  display:flex;
+  justify-content: space-between;
+  height:60px;
+}
+.npmlogo img {
+  width: 60px;
+  height: 20px;
+}
+.search_container {
+  display: flex;
+  position: relative;
+  height: 45px;
+  width: 80%;
+}
+.search_container::before {
+  content: ""; 
+  width: 16px;         
+  height: 16px;        
+  background: url(./images/magnifying-glass.png) no-repeat center center / auto 100%;
+  display: inline-block; 
+  position: absolute; 
+  top: 15px; 
+  left: 15px;
+  color: rgba(0,0,0,.05);
+}
+.search_container input {
+    padding: 0 45px; 
+    background: rgba(0,0,0,.05);
+    border: none;
+    width: 100%;
+}
+.search_container .search-submit {
+  width: 90px;
+  background-color: #fb3e44;
+  color: white;
+  border: none;
+}
+.join-button {
+  text-align: right;
+}
+.join-button a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.2em;
+}
+.join-button .box1 {
+  border: 1px solid black;
+  padding: 5px 15px;
+  font-size: 15px;
+}
+.join-button .box2 {
+  border: none;
+  padding: 5px 0 5px 15px;
+  font-size: 15px;
+}
+.container {
+  min-height: 600px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 75px 0;
+}
+.heading {
+  width: 65%;
+  height: 30%;
+  line-height: 70px;
+  margin: 0 auto;
+}
+#plans {
+  background-color:rgba(232,217,217,.3);
+}
+.article {
+  width: 40%;
+  height: 30%;
+  margin: 0 auto;
+}
+#plans .text {
+  width: 100%;
+  font-size: 1.5em;
+  text-align: center;
+  line-height: 45px;
+  color: black;
+  margin-bottom: 80px;
+}
+#plans > div {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: row;
+ height: 30%;
+ width: 40%;
+ margin: 0 auto;
+}
+#plans > div > .box1 {
+  text-decoration: none;
+  background-color: #fb3e44;
+  padding: 10px 75px;
+  color: white;
+  font-size: 1.5em;
+  font-weight: bold;
+  box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+  margin-right: 20px;
+}
+#plans > div > .box2 {
+  text-decoration: none;
+  background-color: white;
+  padding: 10px 75px;
+  color: black;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-left: 20px;
+}
+#aboutnpm {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+#aboutnpm img {
+  width: 280px;
+  height: 280px;
+  margin-bottom: 40px;
+}
+#aboutnpm .heading h3 {
+  display:inline-block;
+  background-color: rgba(255,204,53,.4);
+  transform: skew(9deg,0deg);
+  padding: 0 25px;
+  font-style:italic;
+  letter-spacing: -0.1px;
+  word-spacing: normal;
+  text-align: center;
+}
+#aboutnpm .text-small {
+  width: 100%;
+  font-size: 1.4em;
+  text-align: center;
+  line-height: 32px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  letter-spacing: -0.4px;
+}
+#aboutnpm .article {
+  width: 55%;
+}
+
+/* flexbox */
+.service-box img {
+  width: 50px;
+  height: 50px;
+}
+.service-box-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 80px;
+  width: 100%;
+}
+.service-box-container .service-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 16%;
+}
+.service-box-container .service-box heading {
+  font-size: 1.5em;
+  font-weight: bold;
+  color:#ED1C24;
+}
+.service-box-container .service-box p {
+  text-align: left;
+  font-size: 1.5em;
+  line-height: 26px;
+  letter-spacing: -0.3px;
+}
+#config {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#config .box3 {
+  text-align: center;
+  text-decoration: none;
+  background-color: black;
+  box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+  padding: 8px 140px;
+  color: white;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
