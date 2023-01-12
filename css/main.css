@@ -2,6 +2,7 @@
 
 :root {
     --brand-primary: rgb(248, 62, 78);
+    --brand-primary-hover: #dd081a;
     --brand-primary-transparent: rgba(248, 62, 78, 0.2);
     --black: #000;
     --white: #fff;
@@ -31,17 +32,21 @@ h1, h2, h3 {
 
 h1 {
     font-size: 6rem;
+    margin-bottom: 3rem;
 }
 
 h2 {
-    display: inline-block;
     font-size: 2.5rem;
-    background: var(--yellow);
 }
 
 h3 {
+    font-size: 1rem;
     color: var(--brand-primary);
     line-height: 1.3;
+}
+
+.highlighted {
+    background: var(--yellow);
 }
 
 .bg-pink {
@@ -53,12 +58,14 @@ h3 {
 
 header {
     box-shadow: 0 0 10px var(--grey-medium);
+    font-size: 0.9rem;
     position: relative;
 }
 
 header > div {
     display: flex;
     justify-content: space-between;
+    gap: 30px;
 }
 
 header .top {
@@ -68,7 +75,7 @@ header .top {
 header .bottom {
     align-items: center;
     border-top: 1px solid var(--grey-light);
-    padding: 5px 30px;
+    padding: 7px 30px;
 }
 
 header form.search {
@@ -78,7 +85,6 @@ header form.search {
 
 header form.search input[type="search"] {
     flex: 1 1;
-    font-size: 0.9rem;
 }
 
 form.search button[type="submit"] {
@@ -98,7 +104,6 @@ form.search button[type="submit"] {
 
 .logo {
     display: block;
-    margin-right: 20px;
 }
 
 
@@ -126,7 +131,6 @@ nav a:visited {
 /*--- NAV MAIN---*/
 
 #nav_main ul {
-    font-size: 0.9rem;
     font-weight: 600;
     justify-content: space-between;
 }
@@ -140,6 +144,18 @@ nav a:visited {
 }
 
 
+/*--- NAV LOGIN ---*/
+
+#nav_login {
+    flex: 0 0 130px;
+}
+
+#nav_login ul {
+    display: flex;
+    justify-content: space-between
+}
+
+
 /*--- SECTIONS---*/
 
 main > section {
@@ -147,44 +163,15 @@ main > section {
     text-align: center;
 }
 
-
-/*--- BUTTONS---*/
-
-button {
-    font-family: var(--font-std);
+section.hero article {
+    font-size: 1.2rem;
+    max-width: 540px;
+    margin: 0 auto 5rem;
 }
 
-[class^="btn"] {
-    border: none;
-    color: var(--text-color);
-    cursor: pointer;
-    padding: 20px;
-    text-decoration: none;
-}
-
-main [class^="btn"] {
-    font-weight: bold;
-    padding: 20px 40px;
-    min-width: 250px;
-}
-
-.btn-red {
-    background-color: var(--brand-primary);
-    color: var(--white);
-}
-
-main .btn-red {
-    box-shadow: 10px 10px 0 var(--brand-primary-transparent);
-    margin-right: 10px;
-}
-
-.btn-white {
-    background-color: var(--white);
-}
-
-.btn-black {
-    background-color: var(--black);
-    color: var(--white);
+section.content article {
+    max-width: 780px;
+    margin: 0 auto 5rem;
 }
 
 
@@ -204,11 +191,92 @@ input[type="search"] {
 }
 
 
+/*--- BUTTONS---*/
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+button {
+    font-family: var(--font-std);
+}
+
+[class^="btn"] {
+    border: none;
+    color: var(--text-color);
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+}
+
+[class^="btn"]:hover,
+[class^="btn"]:focus,
+[class^="btn"]:active {
+    color: var(--brand-primary);
+}
+
+header [class^="btn"] {
+    box-sizing: border-box;
+    padding: 6px 14px;
+}
+
+main [class^="btn"] {
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 20px 40px;
+    min-width: 170px;
+}
+
+main [class^="btn"]:only-of-type {
+    min-width: 440px;
+}
+
+.btn-red {
+    background-color: var(--brand-primary);
+    color: var(--white);
+}
+
+.btn-red:hover,
+.btn-red:focus,
+.btn-red:active {
+    background-color: var(--brand-primary-hover);
+    color: var(--white);
+}
+
+main .btn-red {
+    box-shadow: 10px 10px 0 var(--brand-primary-transparent);
+    margin-right: 10px;
+}
+
+.btn-white {
+    background-color: var(--white);
+}
+
+.btn-black {
+    background-color: var(--black);
+    box-shadow: 10px 10px 0 var(--grey-light);
+    color: var(--white);
+}
+
+.btn-outline {
+    border: 1px solid var(--black);
+}
+
+.btn-outline:hover,
+.btn-outline:focus,
+.btn-outline:active {
+    border-color: var(--brand-primary);
+}
+
+
 /*--- TEASERS---*/
 
 .teaser-group {
     display: flex;
-    gap: 2rem;
+    gap: 3rem;
+    margin-bottom: 3rem;
     justify-content: space-around;
 }
 
@@ -217,6 +285,13 @@ input[type="search"] {
 }
 
 .teaser .icon {
-    max-width: 30px;
-    max-height: 30px;
+    margin-bottom: 1rem;
+}
+
+
+/*--- IMAGES---*/
+
+.img-centered {
+    display: block;
+    margin: 0 auto 3rem;
 }
