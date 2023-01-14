@@ -151,6 +151,7 @@ body {
 #description {
     background-color: white;
     height: 500px;
+    margin-bottom: 6%;
 }
 
 #description h1 {
@@ -173,6 +174,32 @@ body {
 }
 
 /*section 3*/
+#features {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0 5%;
+}
+
+.feature {
+    display: flex;
+    flex-direction: column; 
+    width: 20%;
+    align-items: left;
+}
+
 .feature-img { 
-    width: 50px;
+    width: 40px;
+}
+
+.feature-title {
+    color: #ED1C24;
+}
+
+.cta {
+    background-color: black;
+    color: white;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    margin: 5% auto;
+    width: 380px;
 }
