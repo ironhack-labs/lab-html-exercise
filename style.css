@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 body {
   font-family: 'Poppins';
@@ -87,5 +87,59 @@ body {
 .main {
     border: 1px solid black;
     padding: 0.4em 1.2em;
+}
+
+/* section 1 */
+
+#hero {
+    background-color: rgba(232,217,217,.3);
+    box-shadow: inset 0 7px 9px -10px rgba(0,0,0,0.4);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 500px;
+}
+
+#hero h1 {
+    font-size: 70px;
+    font-weight: 700;
+    margin-bottom: 0;
+    margin: 0 auto;
+}
+
+#hero-text {
+    width: 500px;
+    text-align: center;
+    margin: 1em auto;
+}
+
+#hero-buttons {
+    display: flex;
+    width: 500px;
+    justify-content: space-around;
+}
+
+.hero-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 700;
+    width: 200px;
+    height: 50px;
+}
+
+.primary {
+    background-color: #FB3B49;
+    color: white;
+    box-shadow: 8px 8px 0px rgba(251,59,73,.2);
+}
+
+.secondary {
+    background-color: white;
+    color: black;
+
 }
 
