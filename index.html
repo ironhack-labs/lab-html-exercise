@@ -12,43 +12,43 @@
   </head>
   <body>
     <header>
-      <div id="heart-logo">
-        <img
-          src="https://raw.githubusercontent.com/jaeg90/lab-html-exercise/master/images/black-heart.png"
-          alt="Black heart logo"
-        />
-        <span>Nifty Penguin Magic</span>
+      <div class="headerSectionOne">
+        <div id="heart-logo">
+          <img
+            class="blackHeart"
+            src="https://raw.githubusercontent.com/jaeg90/lab-html-exercise/master/images/black-heart.png"
+            alt="Black heart logo"
+          />
+          <span>Nifty Penguin Magic</span>
+        </div>
+        <nav id="nav-section">
+          <ul>
+            <li><a href="#">npm Enterprise</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Solutions</a></li>
+            <li><a href="#">Resources</a></li>
+            <li><a href="#">Docs</a></li>
+            <li><a href="#">Support</a></li>
+          </ul>
+        </nav>
       </div>
-      <nav id="nav-section">
-        <ul>
-          <li><a href="#">npm Enterprise</a></li>
-          <li><a href="#">Products</a></li>
-          <li><a href="#">Solutions</a></li>
-          <li><a href="#">Resources</a></li>
-          <li><a href="#">Docs</a></li>
-          <li><a href="#">Support</a></li>
-        </ul>
-      </nav>
-      <div id="npm-logo">
-        <h1>npm</h1>
-        <img
-          src="https://raw.githubusercontent.com/jaeg90/lab-html-exercise/master/images/npm-logo.png"
-          alt="npm"
-        />
-      </div>
-      <div id="search-bar">
-        <img
-          src="https://raw.githubusercontent.com/jaeg90/lab-html-exercise/master/images/magnifying-glass.png"
-          alt="Magnifying glass"
-        />
-        <form id="search" method="GET" action="/search">
+      <div class="headerSectionTwo">
+        <div>
+          <h1>npm</h1>
+          <img
+            src="https://raw.githubusercontent.com/jaeg90/lab-html-exercise/master/images/npm-logo.png"
+            alt="npm"
+          />
+        </div>
+        <form class="searchBar" id="search" method="GET" action="/search">
           <input type="search" placeholder="Search packages" />
           <button type="submit">Search</button>
         </form>
-      </div>
-      <div id="Access-platform">
-        <a href="#">Join</a>
-        <a href="#">Sign in</a>
+
+        <div>
+          <a class="buttonHeader1" href="#">Join</a>
+          <a class="buttonHeader2" href="#">Sign in</a>
+        </div>
       </div>
     </header>
     <section id="introduction">
