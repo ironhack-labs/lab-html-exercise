@@ -74,6 +74,7 @@ h1 {
   flex: 1;
   display: flex;
   align-items: center;
+  margin: 0;
 }
 
 .searchBar input {
@@ -85,6 +86,11 @@ h1 {
   background-size: 20px;
   padding: 15px 30px;
   background-color: rgba(0, 0, 0, 0.05);
+}
+
+.searchBar input:focus {
+  outline: none !important;
+  border: 1px solid black;
 }
 
 .searchBar button {
@@ -100,6 +106,7 @@ h1 {
   color: black;
   border: thin solid;
   padding: 7px 20px;
+  margin-left: 20px;
 }
 
 .buttonHeader2 {
