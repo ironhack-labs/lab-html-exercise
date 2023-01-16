@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body {
+  font-family: 'Poppins';
+}
+
+header > div {
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+    height: 56px;
+}
+  
+nav {
+    width: 600px;
+}
+  
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+header .blackHeart {
+    width: 20px;
+    margin-right: 1rem;
+}
+
+header #logo{
+    width: 70px;
+}
+
+header form#search{
+    background-color: rgba(0,0,0,.05);
+    width:75%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header form#search svg#lens{
+    width: 15px;
+    height: auto;
+    margin-left: 1rem;
+}
+header form#search input{
+    border: 0;
+    background-color: rgba(0,0,0,.0);
+    width: 85%;
+}
+
+header form#search input:focus-visible{
+    outline: 0;
+}
+
+header form#search button{
+    color: #fff;
+    background-color: #fb3e44;
+    border: 0;
+    height: 40px;
+    cursor: pointer;
+}
+
+header #login-buttons{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+header #login-buttons a{
+    text-decoration:none;
+    color: black;
+    padding: 7px 20px;
+}
+
+header #login-buttons a:first-child{
+    border: 1px solid #cccccc;
+}
