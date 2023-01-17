@@ -110,19 +110,21 @@ section#engage-section p{
     text-align: center;
 }
 
-section#engage-section a{
+section#engage-section button{
     text-decoration:none;
-    padding:16px 32px;
+    padding:16px 60px;
     background-color:white;
     border:0;
     margin: auto 20px;
+    font-weight:700;
+    font-size: 18px;
 }
 
 section#engage-section div{
     margin-top:40px;
 }
 
-section#engage-section a:first-child{
+section#engage-section button:first-child{
     color:white;
     background-color: #FB3B49;
     box-shadow: 8px 8px 0 rgba(251,59,73,.2);
@@ -154,6 +156,8 @@ section#benefits-section p{
 /* SECTION ADVANTAGES */
 section#advantages-section{
     flex-flow: row wrap;
+    justify-content: space-between;
+    align-items:flex-start;
 }
 
 section#advantages-section .advantage{
@@ -163,9 +167,39 @@ section#advantages-section .advantage{
     padding-right: 20px;
     display: flex;
     flex-flow: column nowrap;
-    align-items:flex-start;
+}
+
+section#advantages-section .advantage img{
+    width: 40px;
+    height: 40px;
+}
+
+section#advantages-section .advantage .title{
+    color: #ED1C24;
+    font-weight:700;
+    font-size: 18px;
 }
 
 section#advantages-section #engage{
     width:100%;
+    text-align: center;
+    margin-top: 50px;
+}
+
+section#advantages-section #engage button{
+    color:white;
+    background-color: black;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    padding: 16px 120px;
+    font-weight:700;
+    font-size: 18px;
+}
+
+button.grow{
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+
+button.grow:hover{
+    transform: scale(1.2);
 }
