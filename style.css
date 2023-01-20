@@ -1,0 +1,232 @@
+/*
+Posicionamiento
+Modelo de caja
+Tipografía y texto
+Visual
+Miscelánea
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins";
+}
+
+/*Header*/
+
+header > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid lightgray;
+  padding: 25px;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-black-heart img {
+  width: 20px;
+  height: 13px;
+  margin-right: 1rem;
+}
+
+.search_bar {
+  display: flex;
+  align-items: center;
+}
+
+.search_bar img {
+  width: 70px;
+  height: 23px;
+}
+
+.search_bar form {
+  width: 80%;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.search_bar span {
+  width: 40px;
+  height: 25px;
+  background-image: url("./images/magnifying-glass.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.search_bar form input {
+  width: 100%;
+  border: 0;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.search_bar form input:focus {
+  outline: none;
+}
+
+.search_bar button {
+  height: 100%;
+  padding: 0 32px;
+  border: 0;
+  background-color: #fb3e44;
+  color: white;
+}
+
+.search_bar a {
+  color: black;
+  text-decoration: none;
+}
+
+.search_bar a:nth-child(odd) {
+  padding: 8px 16px;
+  border: 1px solid #cccccc;
+}
+
+/*Hero-Section*/
+
+#hero-section {
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(232, 217, 217, 0.3);
+}
+
+#hero-section h1 {
+  font-weight: 700;
+  font-size: 5rem;
+  line-height: 1.25;
+  margin: 32px;
+}
+
+#hero-section article {
+  width: 410px;
+  text-align: center;
+  line-height: 1.5;
+  margin: 16px 0;
+}
+
+#hero-section div {
+  width: 410px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 16px 0;
+}
+
+#hero-section div a {
+  text-decoration: none;
+}
+
+#hero-section div a:first-child {
+  padding: 8px 36px;
+  color: white;
+  background-color: #fb3b49;
+  box-shadow: 8px 8px 0 rgba(251, 59, 73, 0.2);
+}
+
+#hero-section div a:last-child {
+  padding: 8px 36px;
+  background-color: white;
+  color: black;
+}
+
+/*general_info*/
+
+#general_info {
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#general_info img {
+  width: 200px;
+  margin: 24px;
+}
+
+#general_info h2 {
+  margin: 18px 0;
+  padding: 0 24px;
+  font-size: 28px;
+  font-weight: 600;
+  font-style: italic;
+  background-color: rgba(255, 204, 53, 0.4);
+  transform: skew(9deg, 0deg);
+}
+
+#general_info article {
+  width: 780px;
+  text-align: center;
+  line-height: 1.5;
+  margin: 18px 0;
+  color: #333;
+}
+
+/*service_info*/
+#service_info {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#service_info > div {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+#service_info .services_boxes {
+  width: 250px;
+  padding: 24px 0 48px 0;
+}
+
+#service_info img {
+  width: 35px;
+  height: 35px;
+}
+
+#service_info h3 {
+  padding: 14px 0;
+  color: #ed1c24;
+}
+
+#service_info p {
+  padding: 14px 0;
+  line-height: 1.5;
+}
+
+#service_info button {
+  font-weight: bold;
+  padding: 12px 115px;
+  margin-bottom: 20px;
+  border: 0;
+  background-color: black;
+  box-shadow: 8px 8px 0 rgba(128, 83, 35, 0.2);
+  color: white;
+}
