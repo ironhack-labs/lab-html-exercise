@@ -50,31 +50,38 @@ nav a {
 .lower-header {
   padding: 5px;
   margin: 0 10px;
+  justify-content: space-evenly;
 }
 
 .npm-logo {
   width: 60px;
+  margin: 0 15px;
 }
 .search-bar {
   display: flex;
+  align-items: center;
+  padding: 10px;
 }
 
-.magnifying-glass {
-  width: 15px;
-  height: 15px;
-  align-self: center;
-  padding: 15px 0 15px 10px;
-}
-
-.magnifying-glass,
-#search {
+form {
+  width: 80%;
+  height: 48px;
+  display: flex;
+  align-items: center;
   background-color: rgba(0, 0, 0, 0.05);
 }
+
+#magnifying-glass {
+  width: 10px;
+  height: 10px;
+  align-self: center;
+  padding: 15px 10px 15px 10px;
+}
+
 .search-bar #search {
   border: none;
-  color: lightgrey;
-
-  width: 800px;
+  background-color: rgba(0, 0, 0, 0);
+  width: 100%;
 }
 
 .button-search {
@@ -82,17 +89,19 @@ nav a {
   color: white;
   border: none;
   cursor: pointer;
-  padding: 15px;
-  height: 45px;
+  padding: 0 30px;
+  height: 100%;
 }
 .button-menu-left {
-  padding-right: 20px;
+  display: flex;
+  margin-left: 30px;
 }
 .button-menu-left button {
   background-color: white;
   cursor: pointer;
   padding: 5px 10px;
   height: 35px;
+  width: 75px;
 }
 .button-menu-left .log-in {
   border: none;
@@ -174,14 +183,14 @@ nav a {
 /* SECTION 3 */
 #general-information {
   display: flex;
-  justify-content: center;
+
   flex-direction: column;
   align-items: center;
 }
 #general-information div {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   margin: 25px;
 }

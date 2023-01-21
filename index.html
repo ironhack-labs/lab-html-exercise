@@ -31,15 +31,15 @@
         </nav>
       </div>
       <!-- Search Bar -->
-      <div class="lower-header">
+      <div class="search-bar">
         <img src="./images/npm-logo.png" alt="npm logo" class="npm-logo" />
-        <div class="search-bar">
+        <form action="/search" ">
+        
           <img
             src="./images/magnifying-glass.png"
             alt="magnifying-glass"
-            class="magnifying-glass"
+            id="magnifying-glass"
           />
-          <form action="/search" class="search-bar">
             <input
               type="search"
               name="search"
@@ -48,7 +48,7 @@
             />
             <button type="submit" class="button-search">Search</button>
           </form>
-        </div>
+        
         <div class="button-menu-left">
           <button type="button" class="button-white join">Join</button>
           <button type="button" class="button-white log-in">Log in</button>
