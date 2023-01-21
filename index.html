@@ -15,7 +15,7 @@
           <img
             src="./images/black-heart.png"
             alt="blackheart"
-            class="blackheart"
+            class="blackHeart"
           />
           <span class="npm-name">Nifty Penguin Magic</span>
         </div>
@@ -30,22 +30,28 @@
           </ul>
         </nav>
       </div>
+      <!-- Search Bar -->
       <div class="lower-header">
         <img src="./images/npm-logo.png" alt="npm logo" class="npm-logo" />
-        <img
-          src="./images/magnifying-glass.png"
-          alt="magnifying-glass"
-          class="magnifying-glass"
-        />
-        <form action="/search" class="search-bar">
-          <input type="text" placeholder="Search packages" />
-        </form>
-        <div class="button-menu">
-          <button type="submit" class="button-red">Search</button>
-          <div class="button-menu-left">
-            <button type="button" class="button-white">Join</button>
-            <button type="button" class="button-white">Log in</button>
-          </div>
+        <div class="search-bar">
+          <img
+            src="./images/magnifying-glass.png"
+            alt="magnifying-glass"
+            class="magnifying-glass"
+          />
+          <form action="/search" class="search-bar">
+            <input
+              type="search"
+              name="search"
+              placeholder="Search packages"
+              id="search"
+            />
+            <button type="submit" class="button-search">Search</button>
+          </form>
+        </div>
+        <div class="button-menu-left">
+          <button type="button" class="button-white join">Join</button>
+          <button type="button" class="button-white log-in">Log in</button>
         </div>
       </div>
     </header>
