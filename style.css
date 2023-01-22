@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    line-height: 1.25;
+    font-size: 36px;
+    margin: 30px 0;
+}
+
+p {
+    font-family: 'Arimo', sans-serif;
+    color: black;
+    text-align: center;
+    line-height: 1.5
+}
+
+nav, .top_header_container {
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 32px;
+    border-bottom: solid 1px #f2f2f2;
+}
+
+.heart {
+    width: 20px;
+    margin-right: 1rem;
+}
+
+.heart:hover {
+    opacity: 0.5;
+    transition: opacity .15s ease-in;
+}
+
+.basic_link {
+    display: inline-block;
+    font-size: 14px;
+}
+
+.basic_link:hover {
+    opacity: 0.5;
+    transition: opacity .15s ease-in;
+}
+
+.link_border {
+    border: solid 1px #f2f2f2;
+    padding: 13px 28px;
+    margin-right: 14px ;
+}
+
+.top_links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top_links li {
+    display: inline-block;
+    padding: 10px;
+}
+
+.top_header_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 32px;
+}
+
+.npm_logo {
+    display: flex;
+    align-items: center;
+    width: 70px;
+    margin-right: 32px;
+}
+
+.input_container {
+    display: flex;
+    align-items: center;
+    background-color: #f2f2f2;
+    padding: 10px 0;
+    width: 100%;
+ }
+
+.magnifying_icon_container {
+    height: 18px;
+    width: 18px;
+    margin: 0 10px;
+}
+
+.magnifying_icon_container img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.top_header_input {
+    display: flex;
+    flex: 1;
+}
+
+.input_container input {
+    font-family: "Fira Mono", "Andale Mono", "Consolas", monospace;
+    font-size: 16px;
+    letter-spacing: 0px;
+    border: none;
+    background-color: #f2f2f2;
+    height: 30px;
+    width: 100%;
+}
+
+.search_button{
+    background-color: #fb3e44;
+    font-weight: 700;
+    color: white;
+    padding: 8px 32px;
+    border: none;    
+}
+
+.top_header_account {
+    padding-left: 32px;
+}
+
+.signin_link {
+    display: inline-block;
+    font-size: 14px;
+    padding: 10px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.first_section {
+    background-color: rgba(232,217,217,.3);
+    background-size: cover;
+    background-position: bottom;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.first_section h1 {
+    color: black;
+    width: 736px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 80px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.25;
+    margin: 54px 0;
+}
+
+.first_section_content {
+    max-width: 512px;
+}
+
+.first_section_button {
+    margin: 56px 0;
+    display: flex;
+}
+
+.first_section_button_one {
+    background-color: #fb3e49;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+    font-family:'Poppins',sans-serif;
+    font-weight: 700;
+    color: black;
+    border-width: 0px;
+    margin-right: 32px;
+    padding: 14px 0;
+    flex: 1;
+}
+
+.first_section_button_two {
+    font-family: 'Poppins',sans-serif;
+    background: transparent;
+    color: black;
+    font-weight: 700;
+    border: none;
+    padding: 14px 0;
+    flex: 1;
+}
+
+.second_section {
+    background-size: cover;
+    background-position: bottom;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.second_section img {
+    max-width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    padding: 64px 16px;
+}
+
+.second_section h2 {
+    max-width: 900px;
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+    font-style: italic;    
+}
+
+.second_section p {
+    max-width: 600px;
+}
+
+
+.third_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 200px;
+}
+
+.container_row {
+    display: flex;
+    flex-direction: row;
+    padding: 120px;
+}
+
+.container_row div {
+    padding: 0 30px;
+}
+
+.container_row h1 {
+    color: #ED1C24;
+    padding: 20px 0;
+}
+
+.container_row p {
+    text-align: left;
+}
+
+.thirdSectionImg {
+    width: 40px;
+}
+
+.third_section button {
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: black;
+    padding: 10px 100px;
+}
