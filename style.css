@@ -3,13 +3,40 @@
 body{
     font-family: 'Poppins';
 }
-
 header > div{
     display:flex;
     padding:0 25px;
     justify-content: space-between;
     align-items:center;
     border-bottom:1px solid lightgray;
+}
+header > div:nth-of-type(2){
+    padding:10px;
+}
+header > div:nth-of-type(2) a{
+    text-decoration: none;
+}
+header form > input{
+    background-color:rgba(0,0,0,.05);
+    padding:10px;
+    padding-left:25px;
+    background-image:url('./images/magnifying-glass.png');
+    background-position:left;  
+    background-repeat:no-repeat;   
+    background-size:20px 20px;
+    width:100%;
+}
+header  form{
+    width:80%;
+    max-width:1200px;
+    display:flex;
+    justify-content: space-between;
+}
+header form > button{
+    background-color:#fb3e44;
+    color:white;
+    padding:10px 15px;
+    border:0px;
 }
 nav{
     width:600px;
@@ -27,4 +54,18 @@ nav ul a{
 .blackHeart{
     width:20px;
     margin-right:1rem;
+}
+.npmLogo{
+    width:50px;
+    margin-right:1em;
+}
+.gray{
+    color:grey;
+}
+.btnBorder{
+    border:1px solid grey;
+    padding:5px 10px;
+}
+.btnOutline{
+    padding:5px 10px;
 }
