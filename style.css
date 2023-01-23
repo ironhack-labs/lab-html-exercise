@@ -1,3 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+html {
+    margin-left: 2em;
+    margin-right: 2em;
+}
+body {
+  font-family: 'Poppins';
+}
+
 header > div {
     padding: 0 25px;
     display: flex;
@@ -6,34 +16,28 @@ header > div {
     border-bottom: 1px solid lightgrey;
 }
 
-header div form a {
-    background-color: #fb3e44;
-    text-decoration: none;
-    color: white;
-    padding: 10px 10px 12px 10px;
-    margin: 0 auto;
-     
-}
-
 nav {
     width: 600px;
 }
 
 nav ul {
+    font-size: small;
     list-style: none;
     display: flex;
-    justify-content: space-between;
+    justify-content:flex-end;
     align-items: center;
+    white-space: nowrap;
 }
 
 nav a {
+    margin-left: 1em;
     text-decoration: none;
     color: black;
 }
 
 .blackHeart {
-    width: 25px;
-    height: .75rem;
+    width: 20px;
+    height: .8em;
     margin-right: 1rem;
 }
 
@@ -46,13 +50,19 @@ nav a {
     width: 22px;
 }
 
-#npm_bar {
+#nifty-container {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+    white-space: nowrap;
+}
+
+#npm-bar {
     justify-content: baseline;
 }
 
-#join_wrapper {
-    margin-left: 2em;
-    margin-right: 1em;
+#join-wrapper {
+    margin-left: 3em;
     display: flex;
     justify-content: space-around;
 }
@@ -78,10 +88,85 @@ nav a {
 
 }
 
+#section1 {
+    
+    height: 600px;
+    background-color: rgba(232,217,217,.3)
+}
+
+#section1 div ,#section1 div h1, .container a {
+    display: flex;
+    justify-content: center;
+}
+
+#section1 div h1 {
+    font-family: "Poppins";
+    font-size: 75px;
+    font-weight: 700;
+    width: 830px;
+    text-align: center;
+}
+#section1 article {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -25px;;
+}
+#section1 article p {
+    text-align: center;
+    width: 450px;
+    font-weight: 700;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    padding: 5px 10px;
+    margin-top: 50px;
+    align-items: center;
+}
+
+.plans-btn, .join-btn{
+    text-decoration: none;
+    color: white;
+}
+
+.plans-btn {
+    color: black;
+    background-color: #FB3B49;
+    text-decoration: none;
+    color: white;
+    padding: 10px 45px;
+    margin-right: 15px;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+}
+
+.join-btn{
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    padding: 10px 45px;
+    margin-left: 15px;
+    font-weight: 900;
+}
+header div form a {
+    background-color: #fb3e44;
+    text-decoration: none;
+    color: white;
+    padding: 10px 10px 12px 10px;
+    margin: 0 auto;
+}
+
 header div form input {
     color: rgba(0,0,0,.05);
     width: 100%;
     height: 32px;
+}
+
+span {
+    white-space: nowrap;
 }
 
 form {
