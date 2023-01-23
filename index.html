@@ -8,7 +8,7 @@
   <body>
     <!--Header-->
     <header>
-      <div>
+      <div class="nav-bar">
         <div>
           <img
             class="blackheart"
@@ -31,24 +31,26 @@
       </div>
       <!--Nav Buttons-->
       <div id="search-area">
+        <img class="npm-logo" src="/images/npm-logo.png" alt="npm logo" />
         <div class="form">
-          <img class="npm-logo" src="/images/npm-logo.png" alt="npm logo" />
-          <form action="#" method="post">
-            <label for="search-bar" class="search-bar"></label>
+          <img class="search-icon" src="/images/magnifying-glass.png" alt="search-icon"/>
+          <label>
+            <form action="#" method="post">
             <input
               type="text"
               name="search-bar"
               id="search-bar"
+              class="search-bar"
               placeholder="Search packages"
-            />
+              />
+            </label>
           </form>
-          <input
-            type="button"
-            value="Search"
-            class="search-btn"
-            id="search-btn"
-          />
         </div>
+        <input type="button"
+        value="Search"
+        class="search-btn"
+        id="search-btn"
+        />
       <div class="btns">
         <a href="#" class="join-btn">Join</a>
         <a href="#" class="login-btn">Log In</a>
@@ -98,7 +100,7 @@
           using straightforward team management capabilities.
         </p>
       </article class="container">
-      <article>
+      <article class="container">
         <img class="feature-icon" src="/images/familiar-features.svg" />
         <h4>Familiar features</h4>
         <p class="feature-description">
