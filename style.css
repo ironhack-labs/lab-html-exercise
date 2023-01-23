@@ -39,8 +39,7 @@ header > div {
   }
 
   .magnifying{
-    border-right:0;
-    margin-right:0;
+    margin: 5 auto 0 auto;
     height:25px;
     width: 25px;
     padding:5px 5px 5px 10px;
@@ -52,17 +51,20 @@ header > div {
     width:25px auto 25px auto;
     display:flex;
     justify-content:space-between;
-    align-items: center
+    align-items: center;
+    
+
   }
   .search-bar{
     display:flex;
     justify-content:flex-start;
+
  }
 
- .serch-bar input{
+ .search-bar input{
     height:35px;
-    width:1200px;
-    margin: 0 auto 0 auto;
+    width:1500px;
+    margin: 5 auto 0 auto;
     border:0 0;
     padding-left:5px;
     border:none;
@@ -70,6 +72,7 @@ header > div {
  }
 
  .search-bar button{
+    margin: 5 auto 0 auto;
     height: 35px;
     width:75px;
     background-color:#fb3e44;
@@ -186,4 +189,53 @@ header > div {
     padding: 1em 0;
 }
 
+#options{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+#options img{
+    width: 40px;
+    height: 40px;
+    margin-left: 0px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
 
+.squares {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px 60px; 
+}
+
+.box{
+    width: 250px;
+    margin: 5px 50px;
+ } 
+
+ #options h3{
+    color: #ed1c23;
+    width: 200px;
+    padding: 0px;
+    font-weight: bolder;
+ }
+
+ #section3 p{
+    font-size: 15px;
+    width:240px;
+ }
+
+ #options a{
+    font-size: 20px;
+    color:white;
+    background-color:black;
+    padding:15px 130px 15px 130px;
+    width:5%;
+    text-align: center;
+    text-decoration:none;
+    font-weight:bolder;
+    box-shadow:8px 8px 0 rgba(128,83,35,.2);
+    margin-top: 50px;
+ }
