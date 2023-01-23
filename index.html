@@ -3,6 +3,7 @@
 <head>
 <title>NMP clone</title>
 <meta name="Challenge NPM Clone" content="challenge one">
+<link rel="stylesheet" href="./style.css" />
 </head>
 <body>
     <header>
@@ -23,7 +24,7 @@
           </nav>
         </div>
       
-        <div>
+        <div id="logobar">
           <img class="logo" src="./images/npm-logo.png" alt="NMP logo" />
           <form>
             <img class="search-glass" src="./images/magnifying-glass.png" alt="magnifying glass search" />
@@ -31,7 +32,7 @@
             <button type="submit">Search</button>
           </form>
           <div>
-            <a href="login">Join</a>
+            <a href="join" class="join">Join</a>
             <a href="login">Log in</a>  
           </div>
         </div>
@@ -41,9 +42,9 @@
         <article>Essential JavaScript development tools that help you go to market faster and build powerful applications using
             modern open source code.
         </article>
-        <div>
-            <a href="plans">See plans</a>
-            <a href="join">Join for free</a>
+        <div id="links">
+            <a href="plans" class="plans">See plans</a>
+            <a href="join" class="join">Join for free</a>
         </div>
       </section>
       <section id="intro">
@@ -54,37 +55,41 @@
             Create an Org and get more out of the tools your team already knows and loves.
         </article>
       </section>
-      <section id="bullet-points">
-        <div>
+      <section id="bullets">
+        <div id="bullet-points">
+        <div class="kasten">
             <img class="zero" src="./images/zero-configuration.svg"/>
             <h3>Zero configuration</h3>
             <p>
                 Create an org, add your team, and start collaborating. Nothing to configure, set up, or manage.
             </p>
         </div>
-        <div>
-            <img class="team-management" src="./images/team-management.svg">
+        <div class="kasten">
+            <img class="zero" src="./images/team-management.svg">
             <h3>Team management</h3>
             <p>
                 Control who has access to what modules within your team namespace using straightforward team management capabilities. 
             </p>
         </div>
-        <div>
-            <img class="familiar" src="./images/familiar-features.svg">
+        <div class="kasten">
+            <img class="zero" src="./images/familiar-features.svg">
             <h3>Familiar features</h3>
             <p>
                 npm Orgs has 100% parity with all the public npm registry features your developers already use. 
             </p>
         </div>
-        <div>
-            <img class="audit" src="./images/npm-audit.svg">
+        <div class="kasten">
+            <img class="zero" src="./images/npm-audit.svg">
             <h3>npm audit</h3>
             <p>
                 Enjoy the security
                 auditing features built into the npm client, a zero-friction way to make open source software safer. 
             </p>
         </div>
-        <a href="org">Create an Org</a>
+        </div>
+        <a href="org" class="org">Create an Org</a>
       </section>
+      
+
     </body>
 </html>
