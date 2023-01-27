@@ -16,16 +16,33 @@ header > div {
     border-bottom: 1px solid lightgray;
   }
 
- header > form, label {
+  #searchBar {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+ header > form, label, input {
     background-color: rgba(0,0,0,.05);
+    padding: 10px 10px;
  }
 
- header > form > button {
-    background-color: #fb3e44;
+ 
+
+ body > button {
+    background-color: black;
+    color: white;
+    padding: 15px 100px 15px 100px;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 50px;
+    border: 0;
+    box-shadow: 5px 5px #e4ddd5;
+    
  }
 
  .minifying {
-    width: 15px;
+    width: 14.5px;
     margin-right: 0;
  }
   
@@ -53,18 +70,20 @@ header > div {
   .npmLogo {
     width: 60px;
     margin-right: 1rem;
+    margin-left: 0;
   }
 
   .secondBar {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    align-content: center;
   }
 
   input {
-    width: 400px;
+    width: 600px;
     background-color: #f2f2f2;
     border: 0;
-    padding: 2.5px 50px 2.5px 0;
+    padding: 2.5px 10px 2.5px 0;
   }
 
   section {
@@ -72,39 +91,39 @@ header > div {
   }
 
   .section-text {
-    
+    text-align: center;    
   }
 
   article {
-    width: 75%;
+    width: 55%;
   }
 
   .container {
-    width: 1000px;
+    
     margin: 0 auto;
     padding: 75px 0;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
   }
 
 #topSection {
     background-color: #f7f4f4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-#topSection a {
-    background-color: #e84d50;
-    color: white;
-    padding: 10px 70px;
-    margin-right: 35px;
+#midSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #midSection img {
     width: 200px;
     margin-bottom: 50px;
-}
-
-#midSection p {
-
 }
 
 #botSection {
@@ -116,7 +135,7 @@ header > div {
     width: 30px;
 }
 
-heading h1 {
+h1 {
     font-size: 4.5em;
 }
 
@@ -140,15 +159,7 @@ a {
     font-weight: 700;
 }
 
-button {
-    border-width: 0;
-    background-color: black;
-    color: white;
-    font-style: bold;
-    padding: 10px 100px;
-    margin-left: 15px;
-    margin-bottom: 50px;
-}
+
 
 span {
     padding: 0 25px;
@@ -157,4 +168,48 @@ span {
 .whiteButton {
     background-color: white;
     color: black;
+    border: 1px black solid;
+    padding: 2px 15px;
+    font-size: 0.8em;
+}
+
+.whiteButton2 {
+    color: black;
+    padding: 10px 70px;
+    background-color: #fff;
+    font-weight: 600;
+}
+
+.redButton {
+    color: white;
+    padding: 10px 70px;
+        background-color: #fb3e44;
+        box-shadow: 5px 5px #f4d2d3;
+        font-weight: 600;
+}
+
+.redButton2 {
+    color: white;
+    padding: 10px 10px;
+    border: 0;
+    margin-left: 0;
+    background-color: #fb3e44;
+}
+
+.noButton {
+    background-color: white;
+    color: black;
+    padding: 2px 15px;
+    font-size: 0.8em;
+}
+
+header > div > form {
+    margin-top: 10px;
+    margin-bottom: 7.5px;
+    margin-right: 7.5px;
+}
+
+#packages {
+    background-color: rgba(0,0,0,.05);
+    padding: 10px 10px;
 }
