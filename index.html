@@ -1,9 +1,322 @@
-NPM Clone Nifty Penguin Magic npm Enterprise Products Solutions Resources Docs Support Search Join Log In Build amazing
-things Essential JavaScript development tools that help you go to market faster and build powerful applications using
-modern open source code. See plans Join for free Bring the best of open source to your company npm is the tool used by
-over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it.
-Create an Org and get more out of the tools your team already knows and loves. Zero configuration Create an org, add
-your team, and start collaborating. Nothing to configure, set up, or manage. Team management Control who has access to
-what modules within your team namespace using straightforward team management capabilities. Familiar features npm Orgs
-has 100% parity with all the public npm registry features your developers already use. npm audit Enjoy the security
-auditing features built into the npm client, a zero-friction way to make open source software safer. Create an Org
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Last Assessment</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Poppins');
+        header span{
+            color: black;
+        }
+        header > div {
+            padding: 0 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid lightgray;
+            background-color: white;
+            }
+
+        nav {
+            width: 600px;
+            }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .blackHeart {
+            width: 20px;
+            margin-right: 1rem;
+        }
+        body {
+            font-size: 10px;
+            line-height: 3.5em;
+            font-weight: 300;
+            font-family: 'Poppins';
+            
+        }
+        footer{
+            background-color: white;
+            display: flex;
+            justify-content: center;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 9em;
+            position: relative;
+        }
+        h3{
+            text-align: center;
+            font-size: 3em;
+            background-color:rgba(255,204,53,.4);
+            transform: skew(9deg,0deg);
+            font-style: italic;
+            padding: 0 50px;
+        }
+        h5 {
+            color:#ED1C24;
+            font-weight: 600;
+            font-size: 15px;
+        }
+        .logo {
+            width: 55px;
+            height: 25px;
+            align-items: left;
+            margin-right: 5px;
+            margin-left: 5px;
+        }
+        #intro {
+            display: flex;
+            justify-content: center;
+            background-color: rgba(232,217,217,.3);
+        }
+
+        #intro p{
+            text-align: center;
+            font-size: 20px;
+            width: 60%;
+            margin: 10px auto;
+            font-weight: 500;
+        }
+        .container {
+            width: 1200px;
+            margin: 0 auto;
+            padding: 75px 0;
+            color: black;
+        }
+        #intro div{
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            align-items: center;
+        }
+        .button-red {
+            background-color:#FB3B49;
+            color: white;
+            font-size: 2em;
+            letter-spacing: 0.5px;
+            text-align: center;
+            text-decoration: none;
+            padding: 10px 30px;
+            box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+        }
+        .button-white {
+            background-color: rgb(255, 255, 255);
+            color: black;
+            font-size: 2em;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            text-align: center;
+            text-decoration: none;
+            padding: 10px 30px;
+            margin: 40px;
+        }       
+        .button-login-area1 {
+            background-color: rgb(255, 255, 255);
+            color: black;
+            font-size: 15px;
+            letter-spacing: 0.5px;
+            text-align: center;
+            text-decoration: none;
+            padding: 0 30px;
+            border: 1px solid;
+            margin: 5px 5px;
+        } 
+        .button-login-area2 {
+            background-color: rgb(255, 255, 255);
+            color: black;
+            font-size: 15px;
+            letter-spacing: 0.5px;
+            text-align: center;
+            text-decoration: none;
+            padding: 0 30px;
+            border: none;
+            margin: 5px 5px;
+        } 
+        .button-black {
+            background-color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+            font-size: 2em;
+            letter-spacing: 0.5px;
+            text-align: center;
+            text-decoration: none;
+            padding: 5px 80px;
+            margin: 20px;
+            box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+        }
+        .header {
+            background-position: 0 0;
+            height: 650px;
+            padding-top: 50px;
+            position: relative;
+        }
+        #mid  {
+            display: flex;
+            justify-content: space-evenly;
+            background-color: white;
+            color: black;
+        }
+        #mid img{
+            width: 250px;
+            height: 180px;
+            align-items: center;
+            padding-top: 30px;
+        }
+        #mid > div > article {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            }
+        #mid > div {
+            display: flex;
+            justify-content: space-evenly;
+        }
+        #mid p{
+            text-align: center;
+            font-size: 15px;
+            width: 40%;
+            margin: 10px auto;
+            font-weight: 300;
+        }
+        #end {
+            display: flex;
+            justify-content: space-between;
+            padding: 60px 0;
+            margin: 0 auto;
+            background-color: white;
+            color: black;
+        }
+        #end img{
+            width: 50px;
+            height: 40px;
+            align-items: left;
+            padding-top: 30px;
+        }
+        #end > div > article {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            }
+        #end > div {
+            display: flex;
+            justify-content: space-evenly;
+        }
+        #end p{
+            padding: 0 15px;
+            margin: 0px;
+            line-height: 20px;
+            width: 50%;
+        }
+        .searchbar {
+            padding: 6px;
+            border: 2px solid;
+            margin-top: 8px;
+            margin-bottom: 8px;
+            margin-right: 16px;
+            font-size: 17px;
+            width: 80%;
+        }
+        .login-area {
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row;
+            align-items: center;
+        }
+    </style>
+  </head>
+  <body>
+<header>
+    <div>
+      <div>
+        <img class="blackHeart" src="https://github.com/GuriCz/lab-html-exercise/blob/master/images/black-heart.png?raw=true" alt="black heart" />
+        <span> Never ending pun machine </span>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#"> npm Enterprise </a></li>
+          <li><a href="#"> Products </a></li>
+          <li><a href="#"> Solutions </a></li>
+          <li><a href="#"> Resources </a></li>
+          <li><a href="#"> Docs </a></li>
+          <li><a href="#"> Support </a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="login-area">
+        <img class="logo" src="https://github.com/GuriCz/lab-html-exercise/blob/master/images/npm-logo.png?raw=true" alt="npm-logo" />
+        <input type="text" class="searchbar" placeholder="Search..">
+        <a class="button-login-area1" href="#"> Join </a>
+        <a class="button-login-area2" href="#"> Login </a>
+        </div>
+  </header>
+   <!-- section 1 -->
+  <section id="intro" class="header">
+    <article class="container">
+        <h1>Build amazing things</h1>
+        <p>Essential JavaScript development tools that help you go to market faster and build powerful applications using
+            modern open source code.</p>
+            <div>
+            <a class="button-red" href="#"> See plans </a>
+            <a class="button-white" href="#"> Join for free </a>
+        </div>
+    </article>
+  </section>
+   <!-- section 2 -->
+  <section id="mid">
+    <div>
+    <article>
+        <img src="https://raw.githubusercontent.com/GuriCz/lab-html-exercise/6e3fa2698432439db8a13a1341b646b3aff8b9bf/images/triangle-hexagon.svg" alt="triangle-thing">
+        <h3>Bring the best of open source to your company</h3>
+        <p>npm is the tool used by over 11.000.000 JavaScript developers around the world. Your developers already use it. Your company depends on it. Create an Org and get mor out of the tools your team already knows and loves.</p>
+    </article>
+    </div>
+  </section>
+   <!-- section 3 -->
+  <section id="end">
+        <div>
+            <article>
+                <img src="https://raw.githubusercontent.com/GuriCz/lab-html-exercise/6e3fa2698432439db8a13a1341b646b3aff8b9bf/images/zero-configuration.svg" alt="zero-configuration">
+                <h5>Zero configuration</h5>
+                <p>Create an org, add your team, and start collaborating. Nothing to configure, set up, or manage.</p>
+            </article>
+        </div>
+        <div>
+            <article>
+                <img src="https://raw.githubusercontent.com/GuriCz/lab-html-exercise/6e3fa2698432439db8a13a1341b646b3aff8b9bf/images/team-management.svg" alt="team-management">
+                <h5>Team management</h5>
+                <p>Team management Control who has access to what modules within your team namespace using straightforward team management capabilities.</p>
+            </article>
+        </div>
+        <div>
+            <article>
+                <img src="https://raw.githubusercontent.com/GuriCz/lab-html-exercise/6e3fa2698432439db8a13a1341b646b3aff8b9bf/images/familiar-features.svg" alt="familiar-features">
+                <h5>Familiar features</h5>
+                <p>Familiar features npm Orgs has 100% parity with all the public npm registry features your developers already use.</p>
+            </article>
+        </div>
+        <div>
+            <article>
+                <img src="https://raw.githubusercontent.com/GuriCz/lab-html-exercise/6e3fa2698432439db8a13a1341b646b3aff8b9bf/images/npm-audit.svg" alt="npm-audit">
+                <h5>npm audit</h5>
+                <p>npm audit Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer.</p>
+            </article>
+        </div>
+  </section>
+  <footer>
+    <a class="button-black" href="#Lünk"> Create an org </a>
+  </footer>
+</body>
