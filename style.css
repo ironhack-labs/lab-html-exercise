@@ -31,6 +31,9 @@ nav a {
     width: 75px;
 }
 .search-bar {
+    width: 100%;
+}
+.search-bar {
     background-color: rgba(0,0,0,.05);
     width: 85%;
     padding-left: 10px;
@@ -39,6 +42,7 @@ nav a {
     display: flex;
     align-items: center;
     flex-direction: row;
+    justify-content: space-between;
 }
 .magnifying-glass {
     width: 16px;
@@ -48,8 +52,38 @@ nav a {
     border: 0;
     font-size: 1em;
 }
-.search-bar label {
-    color: rgba(0,0,0,.05);
+
+.search-bar button {
+    background-color: #fb3e44;
+    color: white;
+    border: #fb3e44;
+    height: 40px;
+    padding-left: 17px;
+    padding-right: 17px;
+}
+.bar-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.bar-buttons button {
+    background-color: transparent;
+    margin: 7px;
+    width: 60px;
+    padding: 40px auto 10px auto;
+}
+.bar-join {
+    border-color: rgb(175, 174, 174);
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.bar-submit {
+    border-color: transparent;
+    color: rgb(109, 109, 109);
+    font-weight: 300;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 #main {
