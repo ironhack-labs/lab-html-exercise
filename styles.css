@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+/* minimal css reset from digital ocean */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+/* end of reset */
+
+body {
+  font-family: 'Poppins';
+  margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    
+}
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+header {
+    position: relative;
+    max-width: 100%;
+    -webkit-box-shadow: 0px 4px 12px 0px rgba(0,0,0,0.44);
+    -moz-box-shadow: 0px 4px 12px 0px rgba(0,0,0,0.44);
+    box-shadow: 0px 4px 12px 0px rgba(0,0,0,0.44);
+
+}
+.navbar-container {  
+    padding: 0 25px;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+}
+
+.navbar {
+    width: 600px;
+}
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar a {
+    text-decoration: none;
+    color: black;
+}
+.navbar-img {
+    display: flex;
+    align-items: center;
+}
+.navbar-img > img {
+    width: 20px;
+    margin-right: 1rem;
+}
+.search-login-bar {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 25px;
+    border-bottom: 1px solid lightgrey ;
+}
+.logo {
+    width: 70px;
+}
+#search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 100;
+    margin: 5px 20px 5px 20px;
+}
+#search-bar label{
+    display: flex;
+    align-items: center;
+    background-color: rgb(0,0,0,0.05);
+    height: 50px;    
+    padding: 0 20px;
+}
+#search-bar  label  img {
+    width: 20px;
+    
+}
+#search-bar form {
+    display: flex;
+    flex-grow: 100;
+}
+#search-bar form input{
+    background-color: rgb(0,0,0,0.05);
+    border: none;
+    padding: 0 10px;
+    height: 50px;
+    flex-grow: 100;
+    font-family: Poppins;
+}
+#search-bar form button {
+    color: white;
+    background-color: #fb3e44;
+    font-family: Poppins;
+    border: none;
+    padding: 0 20px;
+}
+.login {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.login a {
+    margin: 0 10px;
+}
+#join {
+    border: solid 1px grey;
+    display: flex;
+    align-items: center;
+    height: 38px;
+    padding: 0 10px;
+}
+#login-button{
+    display: flex;
+    align-items: center;
+    height: 40px;
+    padding: 0 10px;
+}
+#enrolment {
+    height: 600px;
+    background-color: rgba(232,217,217,.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+#enrolment div {
+    width: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#enrolment div a {
+    margin: 40px 0;
+    padding: 15px 60px;
+    font-weight: bold;
+}
+#see-plans {
+    background-color: #FB3B49;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+}
+#free {
+    background-color: white;
+}
+#enrolment h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin: 0;
+}
+#enrolment p {
+    width: 450px;
+    padding: 0 25px;
+}
+
