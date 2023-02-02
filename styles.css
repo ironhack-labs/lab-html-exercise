@@ -1,15 +1,215 @@
-#header{
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body {
+  font-family: 'Poppins';
+}
+
+header > div {
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+}
+
+nav {
+    width: 600px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.blackheart {
+    width: 20px;
+    margin-right: 1rem;
+}
+
+.header-bottom {
+    padding: 10px 25px;
+}
+
+.header-bottom img{
+    height: 1.5rem;
+    padding: 0;
+    border: none;
+}
+
+.header-bottom form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0 1rem;
+}
+
+.header-bottom input[type="text"],
+label {
+    background-color: rgba(0, 0, 0, 0.05);
+    border: none;
+    height: 3rem;
+    padding: 0; 
+}
+
+.header-bottom label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 15px;
+    margin-left: 10px;
 
 }
 
-#build-amazing-things{
+.header-bottom input[type="text"] {
+    width: 100%;
+    font-size: 1.5em;
+}
+
+.header-bottom input[type="submit"] {
+    color: white;
+    background-color: #fb3e44;
+    border: 2px solid lightgray;
+    padding: 15px 20px;
+    font-size: 1em;
+}
+
+.container-link {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 1.5em;
+}
+
+.container-link a {
+    text-decoration: none;
+    color: black;
+    padding: 5px 15px;
+}
+
+.container-link #join {
+    border: 1px solid lightslategrey;
+}
+
+
+#build-amazing-things {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(232,217,217,.3);
+    justify-content: center;
+}
+
+#build-amazing-things h1 {
+    font-size: 5em;
+    font-weight: bolder;
+}
+
+#build-amazing-things article {
+    width: 40%;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+#build-amazing-things div {
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+#build-amazing-things div a {
+    font-size: 1.5em;
+    text-decoration: none;
+    padding: 10px 65px;
+}
+
+#build-amazing-things div #see-plans {
+    color: white;
+    font-weight: bold;
+    background-color: #FB3B49;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+}
+
+#build-amazing-things div #join-free {
+    color: black;
+    font-weight: bold;
+    background-color: white;
+}
+
+
+#company-appeal {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+#company-appeal img {
+    height: 40%;
+    margin-bottom: 50px;
+}
+
+#company-appeal h2 {
+    font-size: 2em;
+    font-weight: bold;
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg, 0deg);
+    font-style: italic;
+}
+
+#company-appeal article {
+    font-size: 1em;
+    width: 45%;
+    text-align: center;
 
 }
 
-#company-appeal{
+#features {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#features img {
+    height: 2em;
+}
+
+#features h3 {
+    color: #ED1C24;
+}
+
+#features > div {
+    display: flex;
+    width: 80%;
 
 }
 
-#features{
+#features > div > div {
+    width: 25%;
+    margin: 20px;
+}
 
+#features a {
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    background-color: black;
+    padding: 15px 125px;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
 }
