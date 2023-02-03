@@ -14,19 +14,25 @@ header>div {
 
 .search-box{
   border: 0;
-  background-color: aqua;
+  color: black;
+  background-color: rgba(0,0,0,.05);
+  display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	align-content: flex-start;
+  padding: 10px 10px;
+  min-width: 800px;
 }
 
 .search-container {
-  display: inline-flex;
-  flex: 1 1 300px;
-  position: relative;
-  border: 1px solid black;
-  border-radius: 5px;
-  overflow: hidden;
-  background: transparent;
-  justify-content: space-between;
-  align-items: stretch;
+  color: rgba(0,0,0,.05);
+  background-color: rgba(0,0,0,.05);
+  display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
 }
 
 .search-btn {
@@ -34,9 +40,31 @@ header>div {
   background-color: #fb3e44;
   color: white;
   letter-spacing: 0.5px;
+  text-align:justify;
+  text-decoration: none;
+  padding: 10px 10px;
+}
+
+.join-btn{
+  border: 1px solid black;
+  padding: 6px 10px;
+  background-color:transparent;
+  color: black;
   text-align: center;
   text-decoration: none;
-  padding: 10px 10p;
+  font-size: 1em;
+  letter-spacing: 0.5px;
+}
+
+.login-btn{
+  border: 1;
+  padding: 10px 10px;
+  background-color:transparent;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1em;
+  letter-spacing: 0.5px;
 }
 
 .magnifying-glass{
@@ -49,23 +77,15 @@ header>div {
   margin-right: 2rem;
 }
 
-/* .search-bar{
-  border: 1px solid #555;
-  background: transparent url("images/magnifying-glass.png");
-} */
-
-  /* 
-form label color: rgba(0,0,0,.05)
-form input color: rgba(0,0,0,.05)
-form button background color: #fb3e44
-form button letters color: white
- */
-
 nav ul {
   list-style: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+nav ul li{
+  margin: 0 10px
 }
 
 nav a {
