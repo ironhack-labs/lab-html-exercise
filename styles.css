@@ -12,9 +12,54 @@ header>div {
   border-bottom: 1px solid lightgray;
 }
 
-nav {
-  width: 600px;
+.search-box{
+  border: 0;
+  background-color: aqua;
 }
+
+.search-container {
+  display: inline-flex;
+  flex: 1 1 300px;
+  position: relative;
+  border: 1px solid black;
+  border-radius: 5px;
+  overflow: hidden;
+  background: transparent;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.search-btn {
+  border: 0;
+  background-color: #fb3e44;
+  color: white;
+  letter-spacing: 0.5px;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 10p;
+}
+
+.magnifying-glass{
+  width: 20px;
+  margin-right: 1rem;
+}
+
+.npm-logo{
+  width: 50px;
+  margin-right: 2rem;
+}
+
+/* .search-bar{
+  border: 1px solid #555;
+  background: transparent url("images/magnifying-glass.png");
+} */
+
+  /* 
+form label color: rgba(0,0,0,.05)
+form input color: rgba(0,0,0,.05)
+form button background color: #fb3e44
+form button letters color: white
+ */
 
 nav ul {
   list-style: none;
@@ -78,6 +123,10 @@ nav a {
   font-weight: bold;
 }
 
+#top-section div a{
+  margin: 10px;
+}
+
 #mid-section {
   display: flex;
   justify-content: center;
@@ -103,8 +152,8 @@ nav a {
   margin: 50px 5% 0 5%;
 }
 
-#mid-section .triangle-hexagon {
-  width: 200px;
+.triangle-hexagon {
+  width: 250px;
   justify-content: center;
 }
 
@@ -125,11 +174,17 @@ nav a {
 
 }
 
+#last-section{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px 0;
+}
+
 #last-section .last-section-img {
   width: 50px;
   justify-content: center;
 }
-
 
 #last-section .container {
   display: flex;
@@ -137,11 +192,13 @@ nav a {
   flex-direction: row;
   width: 1200px;
   margin: 0 auto;
-  padding: 75px 0;
+  padding: 30px 0;
 }
 
 #last-section .container .container {
   display: flex;
   flex-direction: column;
   align-items:flex-start;
+  padding: 10px;
+
 }

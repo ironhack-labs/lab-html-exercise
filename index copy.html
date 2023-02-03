@@ -31,15 +31,25 @@
   </div>
 
   <div>
-    <img class="magnifying-glass" src=images\magnifying-glass.png alt="magnifying-glass" />
+    <img class="npm-logo" src=images\npm-logo.png alt="npm-logo" />
 
-    <input type="text" id="packages" placeholder="search-packages">
-    <button type="searchbar">Search</button>
+    <form class="search-container">
+      <img class="magnifying-glass" src=images\magnifying-glass.png alt="magnifying-glass" />
+      <input class="search-box" type="search" name="search" id="packages" placeholder="search packages">
+      <input type="submit" value="search" class="search-btn">
+      <!-- <button class="search-btn" type="submit">Search</button> -->
+    </form>
     <!-- add logo, search bar and buttons (or links and style them as buttons later) -->
+
+    <div>
+      <button class="join-btn" type="join">Join</button>
+      <button class="login-btn" type="login">Log In</button>
+    </div>
+
   </div>
 
-  <button type="join">Join</button>
-  <button type="login">Log In</button>
+
+
 </header>
 
 <section id="top-section">
