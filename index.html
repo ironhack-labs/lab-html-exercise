@@ -1,41 +1,43 @@
-NPM Clone
+<head>
+    <link rel="stylesheet" href="style.css"/>
+</head>
 
 <body>
     <header>
         <div>
-          <div>
-            <img class="blackHeart" src="images\black-heart.png" alt="black heart"/>
-            <span> Nifty Penguin Magic </span>
-          </div>
-          <nav>
-            <ul>
-              <li><a href="#"> npm Enterprise </a></li>
-              <li><a href="#"> Products </a></li>
-              <li><a href="#"> Solutions </a></li>
-              <li><a href="#"> Resources </a></li>
-              <li><a href="#"> Docs </a></li>
-              <li><a href="#"> Support </a></li>
-            </ul>
-          </nav>
+            <div>
+                <img class="blackHeart" src="images\black-heart.png" alt="black heart"/>
+                <span> Nifty Penguin Magic </span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#"> npm Enterprise </a></li>
+                    <li><a href="#"> Products </a></li>
+                    <li><a href="#"> Solutions </a></li>
+                    <li><a href="#"> Resources </a></li>
+                    <li><a href="#"> Docs </a></li>
+                    <li><a href="#"> Support </a></li>
+                </ul>
+            </nav>
         </div>
 
         <div>
-          <!-- add logo, search bar and buttons (or links and style them as buttons later) -->
-          <img src="images\npm-logo.png" alt="npm logo"/>
+            <!-- add logo, search bar and buttons (or links and style them as buttons later) -->
+            <img id="npm-logo" src="images\npm-logo.png" alt="npm logo"/>
 
-          <form>
-            <img src="images\magnifying-glass.png" alt="search"/>
-            <input type="text" placeholder="Search packages"/>
-            <input type="submit" value="Search"/>
-          </form>
+            <form>
+                <img id="search-img" src="images\magnifying-glass.png" alt="search"/>
+                <input id="form-input" type="text" placeholder="Search packages"/>
+                <input id="form-submit" type="submit" value="Search"/>
+            </form>
 
-          <p><a href="#">Join</a> <a href="#">Log In</a> </p>
+            <p><a class="user-portal" id="join-button" href="#">Join</a> <a class="user-portal" id="login-button" href="#">Log In</a> </p>
 
         </div>
-      </header>
+    </header>
 
 
-      <section id="landing">
+    <section id="landing">
         <h2>Build amazing things</h2>
         <article>
             <p>Essential JavaScript development tools that help you go to
@@ -46,10 +48,10 @@ NPM Clone
         <div>
             <p><a href="#">See plans</a> <a href="#">Join for free</a> </p>
         </div>
-      </section>
+    </section>
 
 
-      <section id="pitch">
+    <section id="pitch">
         <img src="images\triangle-hexagon.svg" alt="triangle hexagon"/>
         <h2>Bring the best of open source to your company</h2>
         <article>
@@ -59,10 +61,10 @@ NPM Clone
                 more out of the tools your team already knows and
                 loves. </p>
         </article>
-      </section>
+    </section>
 
 
-      <section id="features">
+    <section id="features">
         <div>
             <img src="images\zero-configuration.svg" alt="zero configuration"/>
             <h3>Zero configuration</h3>
@@ -93,5 +95,5 @@ NPM Clone
                 safer.</p>
             <p><a href="#">Create an Org</a></p>
         </div>
-      </section>
+    </section>
 </body>
