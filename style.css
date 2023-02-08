@@ -1,26 +1,36 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,300,700');
 
 body {
   font-family: 'Poppins';
 }
 
 h1 {
+    font-weight: bolder;
     font-size: 4em;
     text-align: center;
 }
 h2 {
-    font-size: 2em;
+    font-weight: bolder;
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+    font-size: 1.8em;
     text-align: center;
+    font-style: italic;
+    padding: 0px 40px 0px 40px;
 }
 
 h3 {
-    font-size: 1.5em;
-    text-align: left;
+    color: #ED1C24;
+    font-weight: bold;
+    font-size: 1em;
+    
 }
 
 article {
-    font size: 1.1em;
+    width: 400px;
+    font-size: 1.1em;
     text-align: center;
+    justify-content: center;
 }
 
 header > div {
@@ -31,42 +41,42 @@ header > div {
     border-bottom: 1px solid lightgray;
   }
   
-  nav {
+nav {
     width: 600px;
   }
   
-  nav ul {
+nav ul {
     list-style: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
   
-  nav a {
+nav a {
     text-decoration: none;
     color: black;
   }
   
-  .blackHeart {
+.blackHeart {
     width: 20px;
     margin-right: 1rem;
   }
 
-  .searchField {
+.search-field {
     background-color: rgba(203, 200, 200, 0.4);
     width: 900px;
     height: 30px;
     padding: none;
     border: 4px;
+}
 
-  }
 ::placeholder {
     text-indent: 30px;
     font-size: 0.9em;
     
 }
 
-  .redButton {
+.redButton {
     background-color: #fb3e44;
     color: white;
     font-size: 0.7em;
@@ -74,10 +84,9 @@ header > div {
     width: 60px;
     height: 30px;
     padding: none;
-
   }
   
-  .joinLink {
+.joinLink {
     text-decoration: none;
     color: black;
     font-size: 0.9em;
@@ -85,28 +94,125 @@ header > div {
     padding: 1px 7px 1px 7px;
   }
 
-  .logLink {
+.logLink {
     text-decoration: none;
     color:rgb(77, 76, 76);
     font-size: 0.9em;
   }
-
-  .logoNpm {
+.logoNpm {
     width: 40px;
     margin-right: 1rem;
   }
-  .magnifyingGlass {
+.magnifyingGlass {
     width: 17px;
     position: absolute;
     left: 110px;
   }
 
-  .triangleHexagon {
-    width: 250px;
+.triangleHexagon {
+    width: 220px;
     position: center;
+    margin: 50px;
   }
 
-  section {
+.section1 {
     height: 600px;
-    background-color: rgba(232,217,217,.3)
+    background-color: rgba(232,217,217,.3);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
   }
+.section-buttons {
+    margin-top: 50px;
+    display: flexbox;
+}
+
+.button-see {
+    font-weight: bolder;
+    text-decoration: none;
+    background-color: #FB3B49;
+    color: white;
+    border: none;
+    padding: 10px 40px 10px 40px;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+    margin: 25px;
+  }
+.button-join {
+    font-weight: bolder;
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 10px 40px 10px 40px;
+    margin: 25px;
+  }
+
+.section22 {
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+} 
+
+.art-section2 {
+    font-size: 0.9em;
+    text-align: center;
+    width: 700px;
+}
+
+.zero-configuration {
+    width: 30px;
+    position: left;
+    margin: 10px; 
+}
+.team-managment {
+    width: 30px;
+    position: left;
+    margin: 10px; 
+}
+.familiar-features {
+    width: 30px;
+    position: left;
+    margin: 10px; 
+}
+.npm-audit {
+    width: 30px;
+    position: left;
+    margin: 10px; 
+}
+
+.section3 {
+    background-color: #ED1C24;
+}
+
+.btn-create {
+    text-align: center;
+    font-size: 0.8em;
+    font-weight: bolder;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 120px 10px 120px;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);;
+    margin: 25px;
+}
+.section-3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+text {
+    font-size: 0.8em;
+}
+
+.bottom {
+    width: 200px;
+} 
+.last-button {
+    display: flex;
+    justify-content: center;
+}
