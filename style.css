@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body {
+    font-family: 'Poppins';
+}
+
+/* -------------- HEADER -------------- */
+
+header>div {
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ------- NAV LOG ------- */
+
+.nav-bar {
+    border-bottom: 1px solid lightgray;
+}
+
+nav {
+    width: 600px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.blackHeart {
+    width: 20px;
+    margin-right: 1rem;
+}
+
+/* ------- SEARCH FLEX ------- */
+
+.search-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    margin: 10px auto;
+}
+
+.npmLogo {
+    height: auto;
+    width: 5%;
+    margin-left: 0;
+}
+
+.magnifyingGlass {
+    height: 1.3em;
+    margin: 0 10px;
+}
+
+.search-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    background-color: rgba(0, 0, 0, .05);
+    height: 40px;
+}
+
+.search-form input {
+    width: 100%;
+    padding: 10px;
+    margin-right: 10px;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+}
+
+.search-form button {
+    background-color: #fb3e44;
+    color: white;
+    height: inherit;
+    width: 10%;
+    border: none;
+    cursor: pointer;
+    outline: inherit;
+}
+
+.search-form button:hover{
+    background-color: rgba(201,62,68,.8);
+}
+
+.join-login a {
+    text-decoration: none;
+    padding: 5px 10px;
+    width: 10%;
+}
+
+.join-login a:visited {
+    color: black;
+}
+
+.join-login a:first-child {
+    border: 1px solid black
+}
+
+.join-login a:first-child:hover {
+    transition: 50ms;
+    border-radius: 12px;
+}
+
+/* -------------- PLANS -------------- */
+
+#plans {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 600px;
+    background-color: rgba(232, 217, 217, .3);
+}
+
+#plans h1 {
+    font-size: 3.5em;
+}
+
+#plans article {
+    width: 400px;
+    margin-top: -20px;
+    text-align: center;
+}
+
+.join-plans {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    width: 400px;
+}
+
+.see-plans-btn-see {
+    background-color: rgb(251,62,68);
+    color: white !important;
+    box-shadow: 8px 8px 0 rgba(251, 59, 73, .2);
+}
+
+.see-plans-btn-see:hover{
+    transition:50ms;
+    background-color: rgba(201,62,68,.8);
+    border-radius: 12px;
+}
+.see-plans-btn-join {
+    background-color: white;
+}
+
+.see-plans-btn-join:hover{
+    transition:50ms;
+    background-color: rgba(205,205,205,0.8);
+    border-radius: 12px;
+}
+
+#plans a {
+    text-decoration: none;
+    font-weight: 700;
+    padding: 20px 40px;
+    color: black;
+}
+
+#plans a:visited {
+    color: black;
+}
+
+/* -------------- CONTENT -------------- */
+
+#content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 600px;
+    margin-top: -30px;
+}
+
+#content img {
+    height: 30%;
+}
+
+#content h2 {
+    background-color: rgba(255,204,53,.4);
+    padding: 0 30px;
+    transform: skew(9deg,0deg);
+    font-style: italic;
+    margin: 30px auto;
+}
+
+#content article{
+    width: 800px;
+    text-align: center;
+}
+
+/* -------------- CREATE ORG -------------- */
+
+#create-org{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.create-org-grid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.create-org-item{
+    width: 15%;
+    padding: 40px;
+}
+.create-org-item img {
+    width: 40px;
+}
+.create-org-item h3{
+    color: red;
+}
+
+.create-org-btn{
+    background-color: rgb(41, 47, 54);
+    color: white;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    padding: 20px 130px;
+    text-decoration: none;    
+    margin-top: 40px;
+    font-weight: bold;
+}
+
+.create-org-btn:hover{
+    background-color: rgba(0,0,0,.7);
+    border-radius: 12px;
+}
+.create-org-btn:active{
+    
+}
