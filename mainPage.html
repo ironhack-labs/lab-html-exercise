@@ -23,21 +23,16 @@
       
         <div class="top-section">
           <img class="logo" src="images\npm-logo.png" alt="logo" />
-
-          <form action="/search">
-            <i class="site-search"></i>
-            <label for="site-search"></label>
-            <img class="magnify" src="images\magnifying-glass.png" alt="search"/>
-            <input class="form-search" type="search" placeholder="Search packages" name="q" id="search">
-
-            <button id="search-red">Search</button>
-
+          
+          <form class="search-bar" action="search" method="get">
+            <label for="search"><img class="magnify" src="images/magnifying-glass.png" alt="Magnifying glass"/><input type="text" id="search" placeholder="Search packages"></label>
+            <button type="search"> Search </button>
         </form>
 
-        <div>
-          <button class="join"><a href="#"> Join </a></button>
-          <button class="log-in"><a href="#"> Log in </a></button>
-        </div>
+          <div>
+            <button class="join"><a href="#"> Join </a></button>
+            <button class="log-in"><a href="#"> Log in </a></button>
+          </div>
         </div>
       </header>
 

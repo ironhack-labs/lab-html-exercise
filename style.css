@@ -42,48 +42,47 @@ header > div {
     margin: 10px;
   }
 
-  .top-section img {
+  .logo {
     width: 100px;
   }
 
-  form {
-    background-color: rgb(0, 0, 0, .05);
-    border: none;
-    width: 600px;
-    height: 30px;
-    display: flex;
-    justify-content: flex-start;
-    margin-right: 100px;
-    align-items: center;
+ .magnify {
+    width: 28px;
   }
 
-  form input{
-    background-color: rgb(0, 0, 0, .05);
-    flex: 1;
-    border: none;
+  .search-bar label, input {
+    background-color: rgba(0,0,0,.05);
+    border: lightgray;
+    font-size: 20px;
+    margin: 2px auto;
+    height: 25px;
   }
 
-  form button{
+  .search-bar label {
+    padding: 10px 5px 10px 10px;
+  }
+
+  .search-bar input {
+    padding: 10px 700px 25px 10px;
+    background: rgba(255, 255, 255, 0.3)
+  }
+
+  .search-bar button {
     background-color: #fb3e44;
     color: white;
-    border: none;
-    width: 80px;
-    height: 30px;
+    border: 1px solid lightgray;
+    padding: 15px 20px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin: 5px 0;
   }
 
-  .form site-search {
-    align-content: center;
-    background-color: rgba(0, 0, 0, .05);
-    padding: 8px 5px 8px 10px;
-}
+  .search-bar {
+    display: flex;
+	flex-direction: row;
+	align-items: center;
+  }
 
-.magnify {
-
-}
-
-.form-search {
-    padding: 8px 5px 8px 10px;
-}
 
 .join {
   background-color: white;
