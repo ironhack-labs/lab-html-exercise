@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body {
+  font-family: 'Poppins';
+}
+
+header > div{
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+}
+/* 
+1.子代关系选择器
+子代关系选择器是个大于号（>），只会在选择器选中直接子元素的时候匹配。继承关系上更远的后代则不会匹配。
+2.flex布局
+ justify-content 主轴        space-between 均匀排列每个元素 首个元素放置于起点，末尾元素放置于终点 
+ align-items 交叉轴
+ */
+ nav{
+    width: 600px;
+ }
+ nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+ nav a {
+    text-decoration: none;
+    color: black;
+ }
+ .blackHeart{
+    width: 20px;
+    margin-left: 1rem;
+ }
+ /*
+  相对长度单位
+   em   父元素的字体大小
+   rem  根元素的字体大小
+  */
+/* ----------------------------------------- */
+  .logo{
+    width: 70px;
+    margin-left: 1rem;
+  }
+div > a {
+    text-decoration: none;
+    color: black;
+    
+}
+.links{
+    width: 200px;
+    height: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    
+}
+#join{
+    padding: 13px 28px;;
+    border: 1px solid black;
+}
+label{
+    color: rgba(0, 0, 0, .05);
+}
+input{
+    color: rgba(0, 0, 0, .05);
+}
+form{
+    width: 650px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+
+.img{
+    height: 50px;
+}
+#first{
+    width: 50px;
+
+}
+#search-div {
+    border: 1px solid black;
+    display: inherit;
+    width: 400px;
+    height: 50px;
+}
+#last{
+    height: 50px;
+    width: 350px;
+    
+}
+#search-button{
+    width: 70px;
+    height: 50px;
+    color: white;
+    background-color: red;
+    border: 1px solid red;
+}
+/* ------------------------------------- */
+.section1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 600px;
+    background-color: rgba(232, 217, 217, .3);
+}
+.section1>h1{
+    font-weight: 600;
+    font-size: 5rem;
+}
+.section1>article{
+    width: 550px;
+    line-height: 30px;
+}
+.section1-links{
+    width: 550px;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+.section1-links > a{
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+#see-plans{
+    background-color: #fb3b49;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+    width: 200px;
+    padding: 20px;
+
+}
+/* -------------------------------------- */
+.section2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 600px;
+}
+.section2 > img{
+    width: 300px;
+    height: 300px;
+}
+.section2 > h3{
+    width: 800px;
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+    font-style: italic;
+    border: 3px solid bisque;
+}
+.section2 > article{
+    text-align: center;
+    width:700px  ;
+    border: 3px solid yellow;
+}
+/* ------------------------------ */
+.section3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 600px;
+}
+.tables>div{
+    float: left;
+    width: 350px;
+    
+}
+.tables  > div > img{
+    width: 50px;
+    height: 50px;
+}
+.tables > div >  h4{
+    color: #fb3b49;
+    width: 200px;
+    border: 2px solid burlywood;
+}
+.tables > article{
+    width: 300px;
+}
+.section3 > a{
+    text-decoration: none;
+    box-shadow:  8px 8px 0 rgba(251,59,73,.2);
+    background-color: #fb3b49;
+    padding: 10px 30px;
+    margin-top: 100px;
+}
