@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" />
     <title>Nifty Penguin Magic</title>
 </head>
    
     
 <body>
  <!-- HTML 1 | <header> & <nav> -->
-    <header>
+    <header class="header">
         <div>
             <div>
                 <img class="blackHeart" src="./images/black-heart.png" alt="black heart" />
@@ -30,16 +31,16 @@
         </div>
 
         <div>
-            <img src="./images/npm-logo.png" alt="npm logo"/>
-            <img src="./images/magnifying-glass.png" alt="magnifying glass"/>
-            <form action="/search" method="post">
+            <img src="./images/npm-logo.png" alt="npm logo" class="logo"/>
+            <img src="./images/magnifying-glass.png" alt="magnifying glass" class="magnifying"/>
+            <form class="search-form" action="/search" method="post">
                 <input type="text" placeholder="Search packages" name="search" id="search">
                 <button type="submit">Search</button>
             </form>
 
-            <div>
-                <a href="#join">Join</a>
-                <a href="#log-in">Log In</a>  
+            <div class="header-link">
+                <a href="#join" class="link-btn">Join</a>
+                <a href="#log-in" class="link-btn">Log In</a>  
             </div>
         </div>
     </header>
@@ -98,6 +99,6 @@
 
         <a href="#"> Create an Org </a>
     </section>
-    
+
 </body>
 </html>
