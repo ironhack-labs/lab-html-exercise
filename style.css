@@ -15,6 +15,11 @@ h1 {
     text-align: center;
 }
 
+h3 {
+    font-size: 1.5em;
+    text-align: center;
+  }
+
 .header > div {
     padding: 0 25px;
     display: flex;
@@ -46,6 +51,7 @@ nav a {
 
 .logo {
     width: 50px;
+    padding-right: 30px;
 }
 
 .magnifying {
@@ -58,12 +64,12 @@ nav a {
 }
 
 .search-form input {
-    color: rgba(0,0,0,.05);
-    border: 1px solid #ddd;
+    background-color: rgba(0,0,0,.05);
+    border: none;
     height: 20px;
     outline: none;
     padding: 3px;
-    width: 80%
+    width: 80%;
 }
 
 .search-form button {
@@ -73,15 +79,19 @@ nav a {
     padding: 9px;
 }
 
-.header-link a {
+.btn-group a {
     font-size: 14px;
     color: black;
+    border: 1px solid #e7e7e7;
     background-color: white;
     padding: 5px 15px;
     text-decoration: none;
+    text-align: center;
+    float: left;
+    
 }
 
-.header-link a:hover {
+.btn-group a:hover {
     border: 1px solid black;
 }
 
@@ -93,6 +103,7 @@ nav a {
     flex-direction: column;
     height: 600px;
     background-color: rgba(232,217,217,.3);
+    margin: 0 20px;
 }
 
 #introduction article {
@@ -101,10 +112,92 @@ nav a {
 }
 
 #introduction a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    background-color: white;
+    padding: 10px 30px;
+    margin: 10px;
+}
+
+#introduction a:hover {
     color: white;
     text-decoration: none;
     box-shadow:8px 8px 0 rgba(251,59,73,.2);
     background-color: #FB3B49;
-    padding: 15px;
-    margin: 5px;
+    padding: 10px 30px;
+    margin: 10px;
+}
+
+/* Section 2 */
+#general-information {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 0;
+}
+
+#general-information img {
+    width: 125px;
+}
+
+.skewed {
+    background-color: rgba(255,204,53,.4);
+    transform:skew(9deg,0deg);
+    font-style: italic;
+    width: 40%;
+}
+
+#general-information article {
+    width: 30%;
+    font-size: 12px;
+}
+
+
+
+  /* Section 3 */
+#structure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 50px;
+}
+
+.structure-container {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: row;
+    padding: 50px 150px;
+}
+
+.structure-box {
+    width: 20%;
+    margin: 0 40px;
+}
+
+.structure-box h4 {
+    color: #ED1C24;
+}
+
+.structure-box p {
+    font-size: 14px;
+}
+
+.structure-box img {
+    width: 30px;
+}
+
+#structure a {
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    color: white;
+    text-decoration: none;
+    background-color: black;
+    padding: 10px 100px;
+}
+
+#structure a:hover {
+    background-color: rgba(215, 165, 112, 0.2);
+    color: black;
 }
