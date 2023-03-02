@@ -39,10 +39,21 @@ header > div {
 .search-button {
   background-color: #fb3e44;
   color: white;
+  border-style: none;
+  padding: 10px;
+  margin-left: none;
+  margin-top: 5px;
 }
 
 .input {
-  color: rgba(0,0,0,.05);
+  padding-left: 25px;
+  background: url(./images/magnifying-glass.png) no-repeat left;
+  background-size: 20px;
+  background-color: rgba(0,0,0,.05) ;
+  width: 600px;
+  height: 30px;
+  border-right: 0;
+  border-style: none;
 }
 
   .npm-logo {
@@ -50,6 +61,66 @@ header > div {
     margin-right: 1rem;
   }
 
-.magnifying-glass {
-  width: 50px;
+.join {
+  border-style: solid;
+  border-color: gray;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 5px 20px;
+  color: black;
+}
+
+.log-in {
+  color: black;
+}
+
+
+#first-part {
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(232,217,217,.3);
+}
+
+h1 {
+  font-size: 4em;
+  font-weight: bold;
+}
+
+.essential-tools {
+  text-align: center;
+  width: 450px;
+  margin-bottom: 30px;
+}
+
+.see-plans {
+  font-size: 1.2em;
+  background-color: #FB3B49;
+  box-sizing: border-box;
+  box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+  padding: 10px 30px;
+  border: none;
+  margin-right: 10px;
+}
+
+.see-plans a {
+  color: white;
+}
+
+.join-free {
+  font-size: 1.2em;
+  background-color: white;
+  box-sizing: border-box;
+  box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+  padding: 10px 30px;
+  border: none;
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.join-free a {
+  color: black;
+  font-weight: bold;
 }
