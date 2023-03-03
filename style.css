@@ -28,6 +28,7 @@ body {
 
 #nav {
   border-bottom: 1px solid lightgray;
+  box-shadow: 0 4px 6px -6px #222;
 }
 .upper-nav {
   padding: 0 25px;
@@ -59,11 +60,6 @@ header span:hover {
   color: grey;
 }
 
-header img:hover {
-  filter: invert(54%) sepia(0%) saturate(0%) hue-rotate(261deg) brightness(93%)
-    contrast(85%);
-}
-
 nav ul {
   list-style: none;
   display: flex;
@@ -80,6 +76,9 @@ nav a:hover {
   color: grey;
 }
 
+.logo {
+  cursor: pointer;
+}
 .black-heart {
   width: 20px;
   margin-right: 1rem;
@@ -126,6 +125,7 @@ nav a:hover {
   background-color: #fb3b49;
   color: white;
   padding: 10px 15px;
+  cursor: pointer;
 }
 
 .join-button {
@@ -183,7 +183,8 @@ nav a:hover {
   bottom: 60px;
   right: 0;
   margin: auto;
-  max-width: 600px;
+  max-width: 650px;
+  text-align: center;
 }
 
 #hero ul {
@@ -217,6 +218,41 @@ nav a:hover {
 
 /* Testimonial */
 
+#testimonial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 600px;
+  padding: 100px 50px 50px 50px;
+}
+
+.triangle-hexagon {
+  max-height: 250px;
+  width: auto;
+  padding-bottom: 50px;
+}
+
+#testimonial h2 {
+  background-color: rgba(255, 204, 53, 0.4);
+  transform: skew(9deg, 0deg);
+  font-style: italic;
+  font-weight: bolder;
+  padding: 0 1em;
+  font-size: 2em;
+}
+
+#testimonial p {
+  font-weight: 400px;
+  line-height: 1.6;
+  position: relative;
+  left: 0;
+  bottom: 60px;
+  right: 0;
+  margin: auto;
+  max-width: 650px;
+  text-align: center;
+}
+
 /* Features */
 
-/* Footer */
+/* Footer */ ;
