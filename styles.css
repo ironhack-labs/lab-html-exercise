@@ -189,21 +189,35 @@ header .npm-logo {
 .open-source #middle-photo {
     width: 300px;
     margin-right: 1rem;
+    margin-bottom: 60px;
+}
+
+.tri-bring {
+  display: flex;
+  align-items: center;
 }
 
 .open-source h2 {
     font-size: 1.8em;
-    background-color: #f4e4a7;
-    padding: 0;
+    height: 1.2em;
+    width: 750px;
+    position: absolute;
 }
 
-/* .triangle {
-    width: 0;
-    height: 0;
-    border: 15px solid transparent;
-    border-top: 0;
-    border-bottom: 30px solid red;
-  } */
+.triangle {
+  width: 750px;
+	height: 34.55px;
+	transform: skew(20deg);
+	background: #faecb4;
+  }
+
+  .box {
+    width: 150px;
+    height: 120px;
+    background: #f540a8;
+    margin: 20px;
+    transform: perspective(180px) rotateX(15deg) rotateY(20deg) rotateZ(-3deg);
+  }
 
   .create {
     height: 400px;
