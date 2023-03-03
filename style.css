@@ -11,9 +11,9 @@ Hero box shadow: 8px 8px 0 rgba(251,59,73,.2)
 
 Heading background color: rgba(255,204,53,.4)
 
+Features heading color: #ED1C24;
 
-
-
+Footer box shadow: 8px 8px 0 rgba(128,83,35,.2);
 */
 
 @import url("https://fonts.googleapis.com/css?family=Poppins");
@@ -255,4 +255,51 @@ nav a:hover {
 
 /* Features */
 
-/* Footer */ ;
+#features {
+  height: 300px;
+}
+
+.features-wrapper {
+  display: flex;
+  align-items: space-evenly;
+  flex-direction: row;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+  gap: 2em;
+}
+
+.features-box {
+  flex: 1;
+}
+
+.features-box h4 {
+  color: #ed1c24;
+  font-weight: bolder;
+}
+
+.features-box p {
+  line-height: 1.6;
+}
+
+.features-box img {
+  max-height: 30px;
+}
+
+/* Footer */
+
+#footer {
+  height: 100px;
+  text-align: center;
+}
+
+#footer a {
+  text-decoration: none;
+  cursor: pointer;
+  background-color: black;
+  box-shadow: 8px 8px 0 rgba(128, 83, 35, 0.2);
+  color: white;
+  padding: 1rem 8rem;
+  font-size: 1.4em;
+  font-weight: bolder;
+}
