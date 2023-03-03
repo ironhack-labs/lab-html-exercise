@@ -11,9 +11,13 @@
   <body>
     <!-- Nav -->
     <header id="nav">
-      <div>
+      <div class="upper-nav">
         <div>
-          <img class="blackHeart" src="/lab-html-exercise/images/black-heart.png" alt="black heart" />
+          <img
+            class="black-heart"
+            src="/lab-html-exercise/images/black-heart.png"
+            alt="black heart"
+          />
           <span> Neverending Pun Machine </span>
         </div>
         <nav>
@@ -28,21 +32,26 @@
         </nav>
       </div>
 
-      <div>
-        <img src="/lab-html-exercise/images/npm-logo.png" alt="npm logo" />
-        <form>
-          <img src="/lab-html-exercise/images/magnifying-glass.png" />
-          <input
-            type="text"
-            placeholder="Search"
-            name="search"
-            class="search-window"
+      <div class="lower-nav">
+        <img
+          class="logo"
+          src="/lab-html-exercise/images/npm-logo.png"
+          alt="npm logo"
+        />
+        <label class="search-bar">
+          <img
+            src="/lab-html-exercise/images/magnifying-glass.png"
+            alt="magnifying-glass"
           />
+          <input type="text" placeholder="Search packages" name="search" />
           <button type="submit">Search</button>
-        </form>
-        <a href="#">Join</a>
-        <a href="#">Log In</a>
+        </label>
+        <div class="button-wrapper">
+          <a class="join-button" href="#">Join</a>
+          <a class="login-button" href="#">Log In</a>
+        </div>
       </div>
+    </header>
 
     <!-- Hero -->
     <section id="hero">

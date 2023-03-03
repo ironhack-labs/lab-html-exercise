@@ -19,22 +19,38 @@ Text Search: #9C9C9C
 */
 
 @import url("https://fonts.googleapis.com/css?family=Poppins");
+@import url("https://fonts.googleapis.com/css?family=Fira+Mono");
 
 body {
   font-family: "Poppins";
+  padding: 0 2rem;
 }
 
 /* Nav */
-header > div {
+
+#nav {
+  border-bottom: 1px solid lightgray;
+}
+.upper-nav {
   padding: 0 25px;
+  margin: 10px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid lightgray;
+  font-weight: bold;
+}
+
+.lower-nav {
+  padding: 0 25px;
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 nav {
-  width: 600px;
+  width: 50%;
 }
 
 nav ul {
@@ -49,14 +65,76 @@ nav a {
   color: black;
 }
 
-.blackHeart {
+.black-heart {
   width: 20px;
   margin-right: 1rem;
 }
-/* Search *
 
+/* Search */
 
+.logo {
+  width: auto;
+  height: 1.5em;
+}
 
+.search-bar {
+  position: relative;
+  width: 80%;
+  display: flex;
+}
+
+.search-bar img {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  width: 20px;
+}
+
+.search-bar input {
+  all: unset;
+  width: 100%;
+
+  background-color: #f2f2f2;
+  font-family: "Fira Mono";
+  padding: 10px 40px;
+}
+
+.search-bar button {
+  all: unset;
+  background-color: #fb3b49;
+  color: white;
+  padding: 10px 15px;
+}
+
+.join-button {
+  all: unset;
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+  padding: 4px 20px;
+  cursor: pointer;
+}
+
+.login-button {
+  all: unset;
+  color: black;
+  background-color: white;
+  padding: 5px 20px;
+  cursor: pointer;
+}
+
+.button-wrapper {
+  margin-left: 3rem;
+}
+
+.join-button:hover {
+  color: grey;
+  border: 1px solid grey;
+}
+.login-button:hover {
+  color: grey;
+}
 
 /* Hero */
 
