@@ -32,14 +32,12 @@
 
       <div class="header">
         <img src="./images/npm-logo.png" id="npm-logo" alt="NPM logo" />
-        <div class="search-bar">
-          <form action="" method="get">
-            <img src="./images/magnifying-glass.png" alt="Magnifying glass" />
-            <input type="text" placeholder="Search packages" />
-            <button type="">Search</button>
-          </form>
-        </div>
-        <div>
+        <form action="/search" method="get">
+          <img src="./images/magnifying-glass.png" alt="Magnifying glass" />
+          <input type="text" placeholder="Search packages" class="no-outline" />
+          <button type="submit">Search</button>
+        </form>
+        <div class="access-links">
           <a id="join" href="">Join</a>
           <a id="login" href="">Log In</a>
         </div>
@@ -54,10 +52,10 @@
           faster and build powerful applications using modern open source code.
         </p>
       </article>
-      <div>
+      <article id="build-btns">
         <a id="see-plans-btn" href="">See plans</a>
         <a id="join-btn" href="">Join for free</a>
-      </div>
+      </article>
     </section>
 
     <section id="bring">

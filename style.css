@@ -15,7 +15,7 @@ body {
 }
 
 .border-bottom {
-  border-bottom: 1px solid lightgray;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
 }
 
 #little-heart {
@@ -41,43 +41,50 @@ nav a {
 }
 
 #npm-logo {
-  width: 70px;
+  width: 80px;
 }
 
-.search-bar {
+form {
   display: flex;
-  align-items: center;
 }
 
 form > img {
   width: 20px;
-  padding: 20px 20px;
+  padding: 15px;
   background-color: rgba(0, 0, 0, 0.08);
 }
 
 input {
-  width: 800px;
+  width: 950px;
   background-color: rgba(0, 0, 0, 0.08);
-  padding: 20px 20px;
+  padding: 15px;
   border: 0px;
+}
+
+.no-outline:focus {
+  outline: none;
 }
 
 button {
   background-color: #fb3e44;
   color: white;
   border: 0;
-  padding: 10px;
+  padding: 15px 30px;
 }
 
-.header-bottom a {
+.access-links {
+  display: flex;
+}
+
+.access-links a {
   text-decoration: none;
   background-color: white;
   color: rgba(0, 0, 0, 0.5);
-  padding: 20px 20px;
+  padding: 10px 30px;
 }
 
 #join {
-  border: 1px solid rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 #bild {
@@ -91,22 +98,20 @@ button {
 }
 
 h1 {
-  font-size: 6em;
+  font-size: 8em;
   font-weight: 900;
   margin: 10px auto;
 }
 
 #bild p {
-  font-size: 1.5em;
+  font-size: 2em;
   width: 40%;
   text-align: center;
-  margin: 0px auto;
+  margin: 40px auto;
 }
 
-#bild div {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 30px;
+#build-btns {
+  margin-top: 40px;
 }
 
 #bild a {
@@ -114,6 +119,7 @@ h1 {
   font-size: 1.5em;
   font-weight: 600;
   padding: 10px 60px;
+  margin: 0 20px;
 }
 
 #see-plans-btn {
@@ -132,17 +138,18 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 300px;
+  height: 400px;
   text-align: center;
+  margin-top: 50px;
 }
 
 #bring svg {
-  width: 120px;
+  width: 200px;
 }
 
 h2 {
-  font-size: 2em;
-  margin: 30px auto 10px auto;
+  font-size: 3em;
+  margin: 50px 0 30px 0;
   padding: 0 20px;
   background-color: rgba(255, 204, 53, 0.4);
   transform: skew(9deg, 0deg);
@@ -150,13 +157,14 @@ h2 {
 }
 
 #bring p {
+  font-size: 1.3em;
   width: 40%;
   text-align: center;
-  margin: 0px auto;
+  margin: 0 auto;
 }
 
 #create {
-  margin-top: 50px;
+  margin: 70px 0;
 }
 
 #tools {
@@ -170,8 +178,8 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: start;
-  margin: 0 20px;
-  width: 150px;
+  margin: 0 40px;
+  width: 200px;
 }
 
 #create svg {
@@ -184,10 +192,14 @@ h2 {
   margin: 10px 0 0 0;
 }
 
+#create p {
+  font-size: 1.3em;
+}
+
 #create button {
   display: flex;
   background-color: black;
-  padding: 10px 70px;
+  padding: 15px 90px;
   box-shadow: 8px 8px 0 rgba(128, 83, 35, 0.2);
-  margin: 10px auto 70px auto;
+  margin: 0px auto;
 }
