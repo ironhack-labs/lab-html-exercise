@@ -1,8 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins");
 
 * {
-  border: 1px solid red;
-  
 }
 
 body {
@@ -42,19 +40,58 @@ nav a {
   width: 70px;
 }
 
-.magnifying-glass {
-  width: 18px;
-}
-
 header > div:nth-child(2) {
   display: flex;
   padding: 10px 25px;
   align-items: center;
   justify-content: space-between;
+  border-bottom: 0;
 }
 
 .searchbar {
+  display: flex;
+  height: 50px;
+  flex: 1 1 auto;
+  align-items: stretch;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.05);
+  margin-right: 30px;
+  margin-left: 10px;
+}
+
+.magnifying-glass {
+  padding: 12px;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.search-packages {
+  flex: 1;
+  background-color: rgba(0, 0, 0, 0.05);
+  border: inherit;
+}
+
+.search-button {
+  background-color: #fb3e44;
+  color: white;
+  border: inherit;
+  padding: 0 30px;
+}
+
+.join-login {
+  width: 160px;
+  display: flex;
+  text-align: center;
+}
+
+.login-link,
+.join-link {
+  flex: 1;
+  padding: 5px 0;
+  text-decoration: none;
+  color: black
   
-  
-  
+}
+
+.join-link {
+  border: 1px solid black;
 }
