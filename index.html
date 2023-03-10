@@ -5,14 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NPM Clone</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="header section">
+
         <div class="header-container">
+
             <div class="top-header-container">
                 <img class="blackHeart" src="/images/black-heart.png" alt="black heart">
                 <span>Nifty Penguin Magic</span>
             </div>
+
             <nav class="top-header-container">
                 <ul>
                     <li><a href="#">npm Enterprise</a></li>
@@ -24,16 +28,20 @@
                 </ul>
             </nav>
         </div>
+
         <div class="header-container">
+
             <img class="logo bottom-header-container" src="/images/npm-logo.png" alt="npm logo">
+
             <form action="search" class="bottom-header-container">
-                <label for="search"><img src="/images/magnifying-glass.png" alt="search icon"></label>
-                <input type="text" placehorder="Search packages">
+                <label for="search"><img class="search-icon" src="/images/magnifying-glass.png" alt="search icon"></label>
+                <input type="text" placeholder="Search packages">
                 <button>Search</button>
             </form>
-            <div class="bottom-header-container">
-                <a href="#">Join</a>
-                <a href="#">Log In</a>
+
+            <div class="bottom-header-container" class="join-login-buttons">
+                <a href="#" class="join">Join</a>
+                <a href="#" class="login">Log In</a>
             </div>
         </div>
     </header>
