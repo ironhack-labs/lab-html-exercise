@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;0,800;1,600&display=swap');
+
+:root {
+    font-size: 62.5%; /* 10px = 1.0rem */
+    /* 
+        This way, everything will be scaled according to this percentage set by font-size.
+        62.5% = at this point the font-size will be 10px, which is equal 1.0rem.
+        In body{}, 'rem' will be defined as 1.6rem, which is equal 16px, which is ...the default browser font-size .^.)
+        >> Set it to 80%... everything else scales up.
+        >> Set it to 40%... everything else scales down.
+    */
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400; /* Regular */
+}
+
+/* ---------------------------------------------- GENERAL SETTINGS */
+html,
+body {
+    margin: 0;
+    /* reset */
+    padding: 0;
+    /* reset */
+    font-size: 1.6rem; /* document font-size equal 16px */
+}
+
+h1 {
+    font-weight: 800; /* ExtraBold */
+    font-size: 6.4rem; /* 64px */
+    margin: 0;
+}
+h2 {
+    font-weight: 700; /* SemiBold */
+    font-size: 3.2rem; /* 32px */
+    font-style: italic;
+    margin: 0;
+}
+h3 {
+    font-weight: 600; /* Bold */
+    font-size: 1.6rem; /* 16px */
+    letter-spacing: 0.02rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    margin: 0 1.0rem;
+}
+.a-big {
+    font-weight: 500; /* Medium */
+    width: 15.0rem;
+    padding: 1.5rem 3.0rem;
+    margin: 2.0rem;
+}
+.a-small {
+    font-weight: 400;
+    padding: 0.2rem 1.5rem;
+    border: 0.1rem solid black;
+}
+
+.flex-horizontal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.flex-vertical {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.flex-wrapping {
+    flex-wrap: wrap;
+}
+
+.text-center {
+    text-align: center;
+}
+.item-center {
+    margin: 0 auto;
+}
+.spacing {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.no-border {
+    border: none;
+}
+
+/* -------------------------------------------------------- HEADER */
+.upper-head,
+.lower-head {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.1rem solid lightgray;
+    padding: 0.5rem 2.5rem;
+}
+
+#header {
+    box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.05);
+}
+
+/* ------------------------------------------------- upper HEADER */
+.upper-head {
+    font-size: 1.2rem;
+    font-weight: 500; /* Medium */
+}
+
+.blackHeart {
+    margin-left: -0.2rem;  /* tiny offset, just a feeling */
+    margin-right: 1.0rem;
+    width: 2.0rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+/* ------------------------------------------------ lower HEADER */
+.logo {
+    margin: 0.2rem 0 0;  /* tiny offset, just a feeling */
+    margin-right: 1.5rem;
+    font-size: 1.4rem;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    justify-content: flex-start;
+}
+.logo img {
+    width: 8.0rem;
+}
+
+form {
+    background-color: rgba(0, 0, 0, .05);
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+}
+form .mag-glass {
+    position: absolute;
+    top: 1.0rem;
+    left: 1.0rem;
+    box-sizing: border-box;
+    opacity: 60%;
+    width: 1.5rem;
+}
+form .search-txt {
+    width: 100%;
+    margin-left: calc(3.0rem + 0.1rem); /* tiny offset, just a feeling */
+    background-color: rgba(0, 0, 0, 0);
+    color: rgba(0, 0, 0, .05);
+    font-size: 1.4rem;
+}
+form .search-btn {
+    background-color: #FB3E44;
+    color: white;
+    font-weight: 500; /* Medium */
+    font-size: 1.4rem;
+    padding: 1.0rem;
+    max-width: 8.0rem;
+}
+
+.login-btn {
+    margin-left: 1.5rem;
+    font-size: 1.4rem;
+    font-weight: 500; /* Medium */
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    justify-content: flex-end;
+}
+.login-btn a {
+    margin: 0;
+}
+.login-btn a:last-child {
+    width: 5.0rem;
+    padding: 0.2rem 0 0.2rem calc(1.0rem + 0.1rem); /* tiny offset, just a feeling */
+}
+
+/* ----------------------------------------------------- SECTION 1 */
+#section-1 {
+    height: 60.0rem;
+    background-color: rgba(232, 217, 217, .3);
+    padding: 0 10%;
+}
+.content-sizer {
+    height: 40.0rem;
+}
+
+#section-1 h1 {
+    max-width: 85.0rem;
+}
+#section-1 article {
+    max-width: 55.0rem;
+}
+
+#section-1 .action-btn {
+    max-width: 85.0rem;
+}
+#section-1 a.plans {
+    background-color: #FB3B49;
+    color: white;
+    box-shadow: 0.8rem 0.8rem 0 rgba(251, 59, 73, .2);
+}
+#section-1 a.join {
+    background-color: white;
+}
+
+/* ----------------------------------------------------- SECTION 2 */
+#section-2 {
+    height: 60.0rem;
+    padding: 0 10%;
+    margin-bottom: 10.0rem;
+}
+
+#section-2 img {
+    max-width: 25.0rem;
+    margin-top: 3.0rem;
+    margin-bottom: 1.0rem;
+}
+#section-2 h2 {
+    background-color: rgba(255, 204, 53, .4);
+    transform: skew(9deg, 0deg);
+    max-width: 85.0rem;
+    padding: 0 1.0rem;
+}
+#section-2 article {
+    max-width: 55.0rem;
+}
+
+/* ----------------------------------------------------- SECTION 3 */
+#section-3 {
+    padding: 0 5%;
+}
+
+#section-3 img {
+    width: 3.0rem;
+}
+#section-3 h3 {
+    color: #ED1C24;
+}
+#section-3 p {
+    font-size: 1.4rem;
+}
+
+#section-3 > div > div {
+    width: 20.0rem;
+}
+
+#section-3 a {
+    background-color: black;
+    box-shadow: 0.8rem 0.8rem 0 rgba(128, 83, 35, .2);
+    color: white;
+    width: 30.0rem;
+    margin: 7.0rem auto;
+}
+
+/* ----------------------------------------------------- DEBUGGING 
+* {
+    border: 1px solid red;
+}
+*/
