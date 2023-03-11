@@ -33,18 +33,24 @@ header > div {
     margin-right: 1rem;
   }
 
-  .search-bar-container img,
-  input {
-    border: 1px solid #rgba(0,0,0,.05);
-    color: black;
+  .search-bar-container > form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .search-bar-container img, input {
     background-color: rgba(0,0,0,.05);
-    padding: 9px;
+    border: none;
+    padding: 11px;
+    font-size: 0.8em;
   }
 
   .search-bar-container button {
     border: 1px solid #fb3e44;
     color: white;
     background-color: #fb3e44;
+    font-size: 0.8em;
     padding: 11px;
   }
 
