@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
+*{
+    margin: 0;
+    padding: 0;
+}
 body{
   font-family: 'Poppins';
 }
@@ -16,6 +20,7 @@ nav{
     width: 600px;
 }
 nav ul{
+    padding: 1rem 0;
     list-style: none;
     display: flex;
     justify-content: space-between;
@@ -77,4 +82,39 @@ label{
 #login-link{
     color: rgba(0, 0, 0, 0.5);
     text-decoration: none;
+}
+.section-1{
+    height: 600px;
+    background-color: rgba(232, 217, 217, .3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+h1{
+    font-size: 5rem;
+    text-align: center;
+}
+.section-1 p{
+    font-size: 1.1rem;
+    text-align: center;
+    width: 500px;
+}
+.section-1 .links-container{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.section-1 .links-container a{
+    padding: 1rem 4rem;
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    font-weight: 700;
+}
+.section-1 #see-plans-button{
+    background-color: #Fb3B49;
+    box-shadow: 8px 8px 0 rgba(251, 59, 73, .2);
+    color: white;
 }
