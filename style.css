@@ -39,11 +39,20 @@ header > div {
     justify-content: center;
   }
 
-  .search-bar-container img, input {
+  .search-bar-container img {
     background-color: rgba(0,0,0,.05);
     border: none;
     padding: 11px;
     font-size: 0.8em;
+    margin: 15px 0 0 0;
+  }
+
+  .search-bar-container input {
+    background-color: rgba(0,0,0,.05);
+    border: none;
+    padding: 11px 700px 11px 11px;
+    font-size: 0.8em;
+    margin: 15px 0 0 0;
   }
 
   .search-bar-container button {
@@ -52,6 +61,7 @@ header > div {
     background-color: #fb3e44;
     font-size: 0.8em;
     padding: 11px;
+    margin: 15px 0 0 0;
   }
 
   .join-button {
@@ -160,21 +170,23 @@ header > div {
   }
 
   #create-an-org {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     text-align: center;
+    align-items: center;
     margin-bottom: 75px;
     width: 80%;
   }
 
   #create-an-org > div {
     display: flex;
-    align-items: flex-start;
-    justify-content: left;
+    justify-content: center;
   }
 
   .box {
     text-align: left;
     padding: 20px;
-    width: 40%;
   }
   
   .box img {
