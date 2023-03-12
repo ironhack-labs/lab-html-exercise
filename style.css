@@ -5,6 +5,19 @@ body {
   background-color: white;
 }
 
+h1 {
+    font-size: 5em;
+}
+
+h2 {
+    font-size: 3em;
+}
+
+h3 {
+    font-size: 1em;
+}
+
+
 /* First section of the header */
 header > div {
     padding: 0 25px;
@@ -41,6 +54,7 @@ nav a {
 .secondHeaderDiv {
     padding-top: 0.5em;
     padding-bottom: 0.5em;
+    justify-content: space-between;
 }
 
 .npm-logo{
@@ -51,7 +65,6 @@ nav a {
     display: flex;
     align-items: center;
     justify-content:space-between;
-    margin-left: -6em;
 }
 
 .magnifier {
@@ -74,33 +87,68 @@ input{
     border-radius: 0;
 }
 
-.searchBtn{
+
+input::placeholder { 
+    color:grey;
+    padding-left: 1em;
+}
+
+.CTA{
     text-decoration: none;
     color: white;
     background-color: #fb3e44;
     border-style: none;
-    padding: 1em 2em;
+    padding: 1em 1.5em;
+
 }
 
-/*
-
-.top-right-actions {
+.buttonGroup {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
-
-.joinBtn {
+.outlineBtn {
     text-decoration: none;
     color: black;
-    padding: 0.5em 2em;
+    padding: 0.2em 1.5em;
     outline: 1px solid black;
+    font-weight: 700;
 }
 
-.loginBtn {
+.textBtn {
     text-decoration: none;
     color: black;
-    padding: 0.5em 2em;
+    padding: 0.2em 1.5em;
+    font-weight: 700;
 }
 
-*/
+/* Value prop section*/
+
+.container-Pinkbg {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color:#fb3e4413;
+    height: 80vh;
+}
+
+.container-whitebg {
+    padding: 6em;
+    text-align: center;
+    background-color:white;
+}
+
+
+
+.medium-article-width {
+    max-width: 50%;
+}
+
+#mainMessage div {
+    padding-top: 2em;
+}
+
+/* Third section: explain the 4 core values of the product, providing a "create org" button */
