@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang=en>
-<head></head>
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
 <body>
 <header>
   <div>
@@ -21,51 +23,92 @@
   </div>
   <div>
     <img class="npmLogo" src="npm-logo.png" alt="logo" />
-    <img class="maginifyingGlass" src="magnifying-glass.png" alt="search"/>
-    <form id="form"> 
-      <input type="search" id="query" name="q" placeholder="Search...">
-      <button>Search</button>
+   <img class="magnifyingGlass" src="magnifying-glass.png" alt="search"/>
+    <form>
+      <input type="search" class="query" placeholder= "Search...">
     </form>
-    <a href ="#">Join Login</a>
-  </div>
+      <button class="search">Search</button>
+      <button class="join">Join</button>
+      <a href="#">Login</a>
+    </div>
 </header>
 
-<section class = "buildingAmazingThings">
-  <h1>Build Amazing Things</h1>
+<section id = "buildingAmazingThings">
+  <h1><strong>Build amazing things<strong></h1>
   <article>Essential JavaScript development tools that help you go to market faster and build powerful applications using
     modern open source code.</article>
-    <div><a href ="#">See plans Join for Free</a>
-    <img class="triangle-hexagon" src="triangle-hexagon.svg" alt="triangle-hexagon"/></div>
+  <div class="buttons">
+  <button class="seePlans">See plans</button>
+  <button class="joinForFree">Join for Free</button>
+  </div>
 </section>
 
-<section class ="CompanyOpenSource">
-<h1>Bring the best of open source to your company</h1>
-<article> npm is the tool used by
+<section id ="CompanyOpenSource">
+<img class="triangleHexagon" src="triangle-hexagon.svg" alt="triangle-hexagon"/>
+<h2>Bring the best of open source to your company</h2>
+<article class="tool"> npm is the tool used by
   over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it.
-  Create an Org and get more out of the tools your team already knows and loves. </article>
-  <div></div>
+  Create an Org and get more out of the tools your team already knows and loves.
+</article>
 </section>
-
-<section class ="CreateanOrg">
-  <div>
-  <h1>Zero Configuration</h1>
+<br>
+<br>
+<br>
+<br>
+<br>
+<section id ="CreateanOrg">
+  <div class="zero">
+  <h3>Zero Configuration</h3>
     <article>
-
+      Zero configuration Create an org, add
+      your team, and start collaborating. Nothing to configure, set up, or manage.
     </article>
     <img class="zeroConfiguration" src="zero-configuration.svg" alt="zero-configuration"/>
   </div>
-<div>
-  <h1>Team Management</h1>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+<div class="team">
+  <h4>Team Management</h4>
   <article>
-
+    Control who has access to
+    what modules within your team namespace using straightforward team management capabilities.
   </article>
   <img class="teamManagement" src="team-management.svg" alt="team-management"/>
 </div>
-<div>
-  <h1>Familiar Features</h1>
+<br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+<div class="features">
+  <h5>Familiar Features</h5>
+  <article>
+    npm Orgs
+    has 100% parity with all the public npm registry features your developers already use.
+  </article>
+  <img class="familiarFeatures" src="familiar-features.svg" alt="familiar-features"/>
 </div>  
-<div>
-  <h1>RPM Audit</h1>
+<br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+<div class="audit">
+  <h6>NPM Audit</h6>
+  <article>
+    Enjoy the security
+    auditing features built into the npm client, a zero-friction way to make open source software safer.
+  </article>
+  <img class="npm-audit" src="npm-audit.svg" alt="npm-audit"/>
 </div>
 </section>
 </body>
