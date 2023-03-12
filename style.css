@@ -99,7 +99,6 @@ input::placeholder {
     background-color: #fb3e44;
     border-style: none;
     padding: 1em 1.5em;
-
 }
 
 .buttonGroup {
@@ -131,20 +130,31 @@ input::placeholder {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background-color:#fb3e4413;
-    height: 80vh;
+    background-color:rgba(232,217,217,.3);
+    height: 600px;
 }
 
-.container-whitebg {
-    padding: 6em;
+
+.specialCTA {
+    text-decoration: none;
+    color: white;
+    background-color: #FB3B49;
+    box-shadow: 8px 8px 0 rgba(251,59, 73, .2);
+    padding: 1em 1.5em;
+}
+
+.container-Whitebg {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    background-color:white;
+    height: 600px;
 }
-
 
 
 .medium-article-width {
-    max-width: 50%;
+    max-width: 30%;
 }
 
 #mainMessage div {
@@ -152,3 +162,47 @@ input::placeholder {
 }
 
 /* Third section: explain the 4 core values of the product, providing a "create org" button */
+
+.triangleIcon{
+    height:200px;
+}
+
+#valueProp h2 {
+    background-color:rgba(255,204,53,.4);
+    transform: skew(9deg, 0deg);
+    font-style: italic;
+}
+
+#valueProp article {
+    width: 720px;
+}
+
+.col4-layout{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 10em 20em;
+}
+
+.card {
+    text-align: left;
+    width: 20%;
+}
+
+.configIcon, .teamIcon, .featureIcon, .auditIcon {
+    height:48px;
+}
+
+.card > h3 {
+    color: #ED1C24;
+}
+
+.CTA-reverse {
+    background-color: black;
+    box-shadow:  8px 8px 0 rgba(128,83,35,.2);
+}
+
+.end-section {
+    margin-bottom: 8em;
+}
