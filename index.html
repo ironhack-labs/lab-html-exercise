@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
-    <title>Document</title>
+    <title>npm</title>
   </head>
 
   <body>
@@ -21,7 +21,9 @@
         </div>
         <nav>
           <ul>
-            <li><a href="#"> npm Enterprise </a></li>
+            <li>
+              <a href="https://www.npmjs.com/products/pro"> npm Enterprise </a>
+            </li>
             <li><a href="#"> Products </a></li>
             <li><a href="#"> Solutions </a></li>
             <li><a href="#"> Resources </a></li>
@@ -35,101 +37,127 @@
         <img class="npmLogo" src="./images/npm-logo.png" alt="npm logo" />
 
         <br />
-        <img
-          class="magnifyingGlass"
-          src="./images/magnifying-glass.png"
-          alt="magnifying glass"
-        />
-        <form action="/some-url" method="post">
-          <input
-            type="text"
-            name="search"
-            id="search"
-            placeholder="Search packages"
-          />
-          <button type="submit">Search</button>
+
+        <form class="searchForm" action="/some-url" method="post">
+          <div class="searchPackagesDiv">
+            <img
+              class="searchMagnifyingGlass"
+              src="./images/magnifying-glass.png"
+              alt="magnifying glass"
+            />
+            <input
+              class="searchPackagesInput"
+              type="text"
+              name="search"
+              id="search"
+              placeholder="Search packages"
+            />
+          </div>
+          <button class="searchButton" type="submit">Search</button>
         </form>
-        <li><a href="#join">Join</a></li>
-        <li><a href="#login">Log In</a></li>
+        <input
+          class="searchJoinButton"
+          type="button"
+          onclick="window.location.href='https://www.npmjs.com/signup';"
+          value="Join"
+        />
+        <input
+          class="searchLoginButton"
+          type="button"
+          onclick="window.location.href='https://www.npmjs.com/login';"
+          value="Log In"
+        />
       </div>
     </header>
 
-    <section>
-      <heading><h1>Build amazing things</h1></heading>
-      <article>
-        Essential JavaScript development tools that help you go to market faster
-        and build powerful applications using modern open source code.
+    <section class="buildSection">
+      <heading class="buildHeading"><h1>Build amazing things</h1></heading>
+      <article class="buildArticle">
+        Essential JavaScript development tools that help<br />
+        you go to market faster and build powerful<br />applications using
+        modern open source code.
       </article>
-      <div>
-        <li><a href="#plans">See plans</a></li>
-        <li><a href="#joinForFree">Join for free</a></li>
+      <br />
+      <div class="buildButtons">
+        <input
+          class="buildSeePlansButton"
+          type="button"
+          onclick="window.location.href='https://www.npmjs.com/products/pro';"
+          value="See plans"
+        />
+        <input
+          class="buildJoinButton"
+          type="button"
+          onclick="window.location.href='https://www.npmjs.com/signup';"
+          value="Join for free"
+        />
       </div>
+      <br />
     </section>
 
-    <section>
+    <br />
+
+    <section class="hexSection">
       <img
         class="triangleHexagon"
         src="./images/triangle-hexagon.svg"
         alt="triangle hexagon"
       />
-      <heading><h1>Bring the best of open source to your company</h1></heading>
-      <article>
+      <br />
+      <heading class="hexHeading"
+        ><h1>Bring the best of open source to your company</h1></heading
+      >
+      <article class="hexArticle">
         npm is the tool used by over 11,000,000 JavaScript developers around the
-        world. Your developers already use it. Your company depends on it.
-        Create an Org and get more out of the tools your team already knows and
-        loves.
+        world. Your developers <br />
+        already use it. Your company depends on it. Create an Org and get more
+        out of the tools your <br />
+        team already knows and loves.
       </article>
     </section>
 
-    <section>
+    <br />
+
+    <section class="footerSection">
       <div>
-        <img
-          class="footerImage"
-          src="./images/zero-configuration.svg"
-          alt="zero-configuration"
-        />
+        <img src="./images/zero-configuration.svg" alt="zero-configuration" />
         <heading><h3>Zero configuration</h3></heading>
         <p>
-          Create an org, add your team, and start collaborating. Nothing to
-          configure, set up, or manage.
+          Create an org, add your team,<br />and start collaborating.<br />Nothing
+          to configure, set up, or<br />manage.
         </p>
       </div>
+
       <div>
-        <img
-          class="footerImage"
-          src="./images/team-management.svg"
-          alt="team-management"
-        />
+        <img src="./images/team-management.svg" alt="team-management" />
         <heading><h3>Team management</h3></heading>
         <p>
-          Control who has access to what modules within your team namespace
-          using straightforward team management capabilities.
+          Control who has access to<br />what modules within your<br />team
+          namespace using<br />straightforward team<br />management
+          capabilities.
         </p>
       </div>
+
       <div>
-        <img
-          class="footerImage"
-          src="./images/familiar-features.svg"
-          alt="familiar-features"
-        />
+        <img src="./images/familiar-features.svg" alt="familiar-features" />
         <heading><h3>Familiar features</h3></heading>
         <p>
-          npm Orgs has 100% parity with all the public npm registry features
-          your developers already use.
+          npm Orgs has 100% parity with<br />all the public npm registry<br />features
+          your developers<br />already use.
         </p>
       </div>
+
       <div>
-        <img class="footerImage" src="./images/npm-audit.svg" alt="npm-audit" />
+        <img src="./images/npm-audit.svg" alt="npm-audit" />
         <heading><h3>npm audit</h3></heading>
         <p>
-          Enjoy the security auditing features built into the npm client, a
-          zero-friction way to make open source software safer.
+          Enjoy the security auditing<br />features built into the npm<br />client,
+          a zero-friction way to<br />make open source software<br />safer.
         </p>
       </div>
-
-      <button type="submit">Create an Org</button>
     </section>
-
-    <footer></footer>
   </body>
+  <footer>
+    <button type="submit" class="footerButton">Create an Org</button>
+  </footer>
 </html>
