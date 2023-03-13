@@ -1,11 +1,26 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap');
 
 body {
     font-family: 'Poppins';
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+/*HEADER CSS*/
+
+header {    
+    box-shadow: 0 4px 13px -3px rgb(0 0 0 / 10%);
 }
 
 header > div {
-    padding: 0 25px;
+    padding: 8px 50px 8px 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -21,6 +36,7 @@ nav ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-weight: bolder;
 }
 
 nav a {
@@ -30,5 +46,150 @@ nav a {
 
 .blackheart {
     width: 20px;
-    margin-right: 1rem;
+    margin-right: 2rem;
+}
+
+.npm-logo {
+    width: 80px;
+    height: auto;
+}
+
+.logo {
+    padding: 1% 0 0 0;
+}
+
+/*SEARCH BAR CSS*/
+
+.main-div-search {
+    position: relative;
+    justify-content: center;
+    display: flex;
+    width: 77%;
+    height: 52px;
+}
+
+.div-search-bar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #F2F2F2;
+    width: 1200px;
+    height: 52px;
+    right: 0;
+}
+
+#search-input {
+    border: none;
+    background: none;
+    font-family: 'Fira Mono', monospace;
+    height: 40px;
+    width: 100%;
+    text-align: start;
+    padding-left: 10px;
+    border-radius: 0;
+    font-size: 16px;
+}
+
+#search-icon {
+    height: 21px;
+    margin: 0 .5% 0 1.5%;
+}
+
+#search-btn {
+    background-color: #FB3B49;
+    font-family: 'Poppins';
+    font-weight: bold;
+    font-size: .875rem;
+    color: white;
+    letter-spacing: 0.3px;
+    z-index: 1;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border: none;
+    height: 100%;
+}
+
+.join-user-btn {
+    padding: 13px 28px;
+    border: 1px solid #cccccc;
+    background-color: white;
+    font-family: 'Poppins';
+    font-weight: bold;
+    font-size: .875rem;
+}
+
+.join-user-btn a {
+    text-decoration: none;
+    color: black;
+}
+
+.login-user-btn {
+    padding: 13px 28px;
+    background-color: white;
+    border: none;
+    font-family: 'Poppins';
+    font-weight: bold;
+    font-size: .875rem;
+}
+
+.login-user-btn a{
+    text-decoration: none;
+    color: black;
+}
+
+
+/*TOP SECTION CSS*/
+
+#top-section {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+    height: 600px;
+    background-color: rgba(232,217,217,.3);
+}
+
+.red-btn {
+    background-color: #FB3B49;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+}
+
+#second-section {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+    height: 600px;
+}
+
+#second-section h2 {
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 27px;
+}
+
+#second-section p {
+    text-align: center;
+}
+
+#second-section article {
+    width: 800px;
+}
+
+.hexagon {
+    width: 210px;
+    height: auto;
+}
+
+#third-section h3 {
+    color: #ED1C24;
+}
+
+.ORG-btn {
+    background-color: black;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    color: white;
 }
