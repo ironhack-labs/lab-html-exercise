@@ -10,6 +10,18 @@ body {
 h1, h2, h3, h4, h5, h6, p {
     font-family: 'Poppins', sans-serif;
     text-align: center;  /* To remove pour derniere section */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; 
+    flex-direction: column;
+    height: 600px;
+    width: auto;
+    padding: 10px 100px 50px 100px;
 }
 
 
@@ -151,14 +163,15 @@ h1 {
     font-family: 'Poppins';
     font-weight: black;
     font-size: 4.9rem;
-    margin: 0;
+    position: relative;
+    top: 5%;
 }
 #top-section {
     display: flex;
     justify-content: space-evenly;
     align-items: center; 
     flex-direction: column;
-    max-height: 600px;
+    height: 600px;
     width: auto;
     background-color: rgba(232,217,217,.3);
 }
@@ -210,34 +223,51 @@ h1 {
 }
 
 /*SECOND SECTION CSS*/
-
 #second-section {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center; 
+    flex-direction: column;
+    height: 700px;
+    width: auto;
+}
+
+.second-section-container {
+    display: flex;
+    justify-content: space-evenly;
     align-items: center; 
     flex-direction: column;
     height: 600px;
+    width: auto;
+    padding: 10px 100px 50px 100px;
 }
 
 #second-section h2 {
+    position: relative;
+    bottom: 7%;
     background-color: rgba(255,204,53,.4);
     transform: skew(9deg,0deg);
     font-style: italic;
     font-weight: bolder;
-    font-size: 27px;
+    font-size: 2.2rem;
 }
 
 #second-section p {
     text-align: center;
+    font-size: 0.97rem;
+    bottom: 111%;
 }
 
 #second-section article {
     width: 800px;
+    position: relative;
 }
 
 .hexagon {
+    position :relative;
     width: 210px;
     height: auto;
+    bottom: 5%;
 }
 
 /*THIRD SECTION CSS*/
