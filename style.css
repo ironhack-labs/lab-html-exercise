@@ -12,6 +12,7 @@ h1, h2, h3, h4, h5, h6, p {
     text-align: center;  /* To remove pour derniere section */
     margin: 0;
     padding: 0;
+    line-height: 1.7;
 }
 
 .container {
@@ -245,7 +246,7 @@ h1 {
     flex-direction: column;
     height: 600px;
     width: auto;
-    padding: 10px 100px 50px 100px;
+    padding: 10px 100px 0 100px;
 }
 
 #second-section h2 {
@@ -290,53 +291,65 @@ h1 {
 
 .third-section-container {
     display: flex;
-    flex-wrap: wrap;
     align-items: center; 
     flex-direction: row;
     justify-content: space-between;
+    height: 85%;
     max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 80px 20px 80px;
+    padding-left: 7%;
 }
 
-.third-section-container > div {
+.third-section-container > article {
     width: 25%;
     text-align: center;
-    margin-bottom: 50px;
+    margin-right: 58px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 60%;
+}
+
+.third-section-elements {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 20%;
 }
 
 #third-section h3 {
     color: #ED1C24;
-    font-size: 22px;
+    font-size: 1rem;
     font-weight: 600;
     margin-bottom: 15px;
     text-align: left;
 }
 
+
+
 .third-section-container img {
     height: 30px;
-    margin-bottom: 20px;
+    margin: 20px 0;
 }
 
 .third-section-container p {
-    font-size: 16px;
-    line-height: 1.5;
+    font-size: 0.92rem;
     color: #777;
     text-align: left;
+    width: 93%;
+    height: 100%;
 }
 
 .ORG-btn {
-    background-color: black;
-    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    position: relative;
+    bottom: 10%;
+    font-family: 'Poppins';
+    font-size: 1rem;
+    font-weight: 600;
     color: white;
     border: none;
-    color: #fff;
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 4px;
+    background-color: black;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    padding: 15px 120px;
     cursor: pointer;
-}
-
-.ORG-btn:hover {
-    background-color: #3e8e41;
 }
