@@ -126,6 +126,7 @@ nav a {
     padding-right: 2rem;
     border: none;
     height: 100%;
+    cursor: pointer;
 }
 
 .join-user-btn {
@@ -135,6 +136,7 @@ nav a {
     font-family: 'Poppins';
     font-weight: 500;
     font-size: .875rem;
+    cursor: pointer;
 }
 
 .join-user-btn a {
@@ -149,6 +151,7 @@ nav a {
     font-family: 'Poppins';
     font-weight: 500;
     font-size: .875rem;
+    cursor: pointer;
 }
 
 .login-user-btn a{
@@ -208,6 +211,7 @@ h1 {
     padding: 13px 28px;
     width: 230px;
     height: 55px;
+    cursor: pointer;
 }
 
 .main-light-btn {
@@ -220,15 +224,17 @@ h1 {
     background-color: white;
     width: 230px;
     height: 55px;
+    cursor: pointer;
 }
 
 /*SECOND SECTION CSS*/
+
 #second-section {
     display: flex;
     justify-content: space-evenly;
     align-items: center; 
     flex-direction: column;
-    height: 700px;
+    height: 600px;
     width: auto;
 }
 
@@ -244,7 +250,7 @@ h1 {
 
 #second-section h2 {
     position: relative;
-    bottom: 7%;
+    top: 25px;
     background-color: rgba(255,204,53,.4);
     transform: skew(9deg,0deg);
     font-style: italic;
@@ -253,9 +259,10 @@ h1 {
 }
 
 #second-section p {
+    position: relative;
     text-align: center;
     font-size: 0.97rem;
-    bottom: 111%;
+    top: 5px;
 }
 
 #second-section article {
@@ -265,19 +272,71 @@ h1 {
 
 .hexagon {
     position :relative;
-    width: 210px;
+    width: 222px;
     height: auto;
-    bottom: 5%;
+    top 12px;
 }
 
 /*THIRD SECTION CSS*/
 
+#third-section {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 500px;
+}
+
+.third-section-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; 
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 80px 20px 80px;
+}
+
+.third-section-container > div {
+    width: 25%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
 #third-section h3 {
     color: #ED1C24;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.third-section-container img {
+    height: 30px;
+    margin-bottom: 20px;
+}
+
+.third-section-container p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #777;
+    text-align: left;
 }
 
 .ORG-btn {
     background-color: black;
     box-shadow: 8px 8px 0 rgba(128,83,35,.2);
     color: white;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.ORG-btn:hover {
+    background-color: #3e8e41;
 }
