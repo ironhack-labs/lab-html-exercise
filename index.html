@@ -14,7 +14,7 @@ auditing features built into the npm client, a zero-friction way to make open so
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width", initial-scale="1.0">
         <title>NPM-clone.com</title>
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="styles/style.css">
 
         <!--fonts here-->
 
@@ -38,24 +38,19 @@ auditing features built into the npm client, a zero-friction way to make open so
                     </ul>
                 </nav>
             </div>
-            <div>
-                <div>
+            <div class="sub-nav">
                     <img src="images/npm-logo.png" alt="npm-logo">
-                </div>
-
-                <div>
+                <div class="search-bar-container">
                     <img src="images/magnifying-glass.png" alt="magnifying-glass">
-                </div>
-                
-                <div>
                     <form class="search-bar" action="paste-URL" method="get">
                         <label for="searchbar"></label>
-                        <input type="text" id="searchbar" name="searchbar">
-                        <button class="search-button">Search</button>
+                        <input type="text" id="searchbar" name="searchbar" placeholder="Search packages">
+                        <button class="search-button" type="submit">Search</button>
                     </form>
-                    
-                    <a href="join-URL">Join</a>
-                    <a href="login-URL">Log In</a>
+                </div>
+                <div>
+                    <a class="join-button" href="join-URL">Join</a>
+                    <a class="login-button" href="login-URL">Log In</a>
                 </div>
             </div>
         </header>
