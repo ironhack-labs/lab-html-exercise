@@ -3,36 +3,48 @@
 body {
   font-family: 'Poppins';
 }
-a.button {
-  margin-top: 30px;
-  float: left;
-  font-weight: 400;
-  border-radius: 20px;
-  padding: 7px 26px 8px 26px;
-  font-size: 18px;
-  color: #fff;
-  text-decoration: none;
-  clear: left;
+h1 {
+  text-align: center;
+  font-size: 3em;
+  width: 600px;
+
+}
+
+h2 {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+h4 {
+  text-align: center;
 }
 .container {
-  width: 1160px;
+  width: 600px;
   margin: 0 auto;
   padding-top: 60px;
   padding-bottom: 60px;
 }
 .col-half {
-  width: 50%;
-  margin-left: 48px;
+  width: 80%;
   padding: 0 10px;
+  text-align: center;
 }
 .button-container {
   padding-bottom: 60px;
 }
 nav {
   width: 600px;
+  position: absolute; 
+  top: 0; 
+  right: 100px; 
+  display: block;
+
 }
 nav a {
-  color: rgba(255,255,255,0.8);
+  color: black;
   text-decoration: none;
 }
 .the-top-left {
@@ -45,8 +57,10 @@ nav a {
 .top-links {
   list-style: none;
   display: flex;
+  flex-direction: row-reverse;
   justify-content: space-between;
   align-items: center;
+  padding-right: -5px;
 }
 .top-links a {
   text-decoration: none;
@@ -55,14 +69,6 @@ nav a {
 .blackHeart {
   width: 20px;
   margin-right: 1rem;
-}
-.header {
-  background-color: rgb(32, 101, 136);
-  background-image: url(images/hero-cityscape.svg);
-  background-size: auto;
-  color: #fff;
-  padding-left: 20px;
-  padding-right: 20px;
 }
 .logo-bar {
   padding-top: 20px;
@@ -75,6 +81,7 @@ nav a {
   width: 95%;
   float: left;
   margin-right: 20px;
+  margin-left: 20px;
 }
 .search-bar {
   width: 69%;
@@ -123,16 +130,15 @@ nav a {
   height: 600px;
   background-color: rgba(232,217,217,.3);
 }
-.button-sec1{
+.button-sec1-1{
   background-color: #FB3B49;
   box-shadow: 8px 8px 0 rgba(251,59,73,.2);
 }
 #npm-bring {
  height: 600px;
-  background-color: rgba(232,217,217,.3);
 }
 .npm-text {
-font-position: center, justify-content, align-items;
+ position: center, justify-content, align-items;
 }
 .heading-sec2{
  background-color: rgba(255,204,53,.4);
@@ -144,22 +150,105 @@ font-position: center, justify-content, align-items;
 }
 #about-npm {
  height: 600px;
-  background-color: rgba(232,217,217,.3);
 }
-.container what-is-npm {
-  position: relative;
+.container-what-is-npm {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 75px 0;
 }
 .more-about-npm {
-  position: absolute;
+  position: center;
   left: 60px;
   top: 110px;
-  width: 30%;
+  width: 90%;
 }
 .button-navy {
-  font-color: #ED1C24;
+  color: #ED1C24;
+  position: inherit;
 }
 .button-org {
   box-shadow: 8px 8px 0 rgba(128,83,35,.2);
-  font-color: white;
+  color: white;
   background-color: black;
+  padding: 10px 40px 10px 40px;
+  position: absolute;
+  left: 45%;
+  
+}
+.logo-container img {
+  height: auto;
+  max-width: 40%;
+}
+p {
+  text-align: center;
+}
+#about-npm .container-what-is-npm {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 600px;
+  justify-content: space-between;
+}
+span {
+  position: absolute; 
+  top: 0; 
+  left: 100px; 
+  display: block;
+}
+label {
+  color: rgba(0,0,0,.05);
+}
+input {
+  color: rgba(0,0,0,.05);
+}
+form a {
+  background-color: #fb3e44;
+  color: white;
+}
+a {
+  text-align: center;
+  text-decoration: none;
+}
+.button-sec1-1 {
+  display: flex;
+  flex-direction: row;
+  padding: 5px 5px;
+  text-align: center;
+  color: white;
+  justify-content: space-between;
+}
+.button-sec1-2 {
+  display: flex;
+  flex-direction: row;
+  padding: 5px 5px;
+  background-color: white;
+  color: black;
+  text-align: center; 
+  justify-content: space-between;
+}
+.container-what-is-npm img {
+  width: 50px;
+}
+.more-about-npm h2 {
+  font-size: 12px;
+  color: #ED1C24;
+  text-align: left;
+}
+.user-log a {
+  text-align: center;
+  color: black;
+  justify-content: space-between;
+  padding: 4px;
+}
+.container h2 {
+  text-align: center;
+  width: 500px;
+}
+.col-half img {
+  width: 200px;
+}
+.more-about-npm p {
+  font-size: 12px;
+  text-align: left;
+  padding: 5px;
 }
