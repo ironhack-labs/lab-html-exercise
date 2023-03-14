@@ -57,7 +57,11 @@ header > div {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 400px;
+    float: right;
   }
+
+
   
   nav a {
     text-decoration: none;
@@ -69,17 +73,38 @@ header img {
 }
 
 #form input {
-  width: 300px
+  width: 300px;
+  background-color: rgba(232, 217, 217, .3);
+  border: none;
 }
+
+#form button {
+  
+  background-color: #fb3b49;
+  text-decoration: none;
+  color: white;
+  display:inline-block;
+  font-family: "Poppins";
+  border: none;
+}
+
   .blackHeart {
     width: 20px;
     margin-right: 1rem;
   }
 
-  .pink-background {
+  #pink-background {
     background-color: rgba(232, 217, 217, .3);
-  
+    padding: 50px;
 
+  }
+
+  #pink-background article {
+    text-align: center;
+    padding: 0px 120px;
+  }
+  .wrapper {
+    text-align: center;
   }
 
   .plans-btn {
@@ -89,7 +114,8 @@ header img {
     color: white;
     padding: 10px 30px;
     margin-right: 50px;
-
+    display:inline-block;
+    margin-top: 30px;
   }
 
   .link-btn {
@@ -97,7 +123,10 @@ header img {
     color: black;
     background-color: white;
     padding: 10px 30px;
-
+    display:inline-block;
+    margin-top: 30px;
+    
+    
   }
 
 
@@ -112,13 +141,14 @@ header img {
     background-color: black;
     color: white;
     font-family: "Poppins";
-    font-size: 2em;
+    font-size: 1.5em;
     letter-spacing: 0.5px;
     text-align: center;
     text-decoration: none;
-    padding: 10px 30px;
+    padding: 10px 70px;
     box-shadow: 8px 8px 0 rgba(129, 129, 129, 0.2);
     align-items: center;
+    margin-top: 2em;
  
 
   }
@@ -126,6 +156,7 @@ header img {
   #general-information {
     display: flex;
     justify-content: space-evenly;
+    margin-top: 5em;
   }
   
   #general-information .service-box {
@@ -156,4 +187,10 @@ header img {
 
   #description img {
     width: 200px;
+    margin: 5em
+  }
+
+  #description article {
+    text-align: center;
+    padding: 0px 120px;
   }
