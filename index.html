@@ -1,13 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-    <img src="images/magnifying-glass.png" alt="">
-    <img src="images/black-heart.png" alt="">
+  <nav class="nav-bar">
+    <ul class="nav-bar-ul">
+      <li><a href="#structure">Day Structure</a></li>
+      <li><a href="#team">Team</a></li>
+      <li><a href="#schedule">Schedule</a></li>
+    </ul>
+  </nav>
+  <header class="header">
+    <h1>
+      <img src="img/ironhack-skydive-logo.png" alt="IronSkydive Logo" />
+      IronSkydive
+    </h1>
+    <h2>Let the trip begin</h2>
+    <aside class="quote">
+      <p><em>"The best experience of our lives"</em></p>
+      <p>Ariel Quiónes & Gonzalo Manrique, Ironhack Founders</p>
+    </aside>
+  </header>
+  <section id="general-information">
+    <article class="text container">
+      <h3>HELLO!</h3>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident
+        aliquid sed inventore non, nesciunt nemo!
+      </p>
+      <a href="#" class="link-btn">Learn More</a>
+    </article>
+    <article class="text container">
+      <h3>ABOUT US</h3>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident
+        aliquid sed inventore non, nesciunt nemo!
+      </p>
+      <a href="#" class="link-btn">Watch Video</a>
+    </article>
+    <article class="text container">
+      <h3>WANNA JOIN?</h3>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident
+        aliquid sed inventore non, nesciunt nemo!
+      </p>
+      <a href="#" class="link-btn">Register</a>
+    </article>
+  </section>
+  <section id="structure" class="container">
+    <h3>“How do we structure the day?”</h3>
+    <div>
+      <article class="service-box">
+        <img src="img/ironskydive-training.png" alt="training" />
+        <h3>1. Training.</h3>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident
+          aliquid sed inventore non, nesciunt nemo!
+        </p>
+      </article>
+      <article class="service-box">
+        <img src="img/ironskydive-get-ready.png" alt="get ready" />
+        <h3>2. Get ready</h3>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident
+          aliquid sed inventore non, nesciunt nemo!
+        </p>
+      </article>
+      <article class="service-box">
+        <img src="img/ironskydive-fly.png" alt="fly" />
+        <h3>3. Fly</h3>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident
+          aliquid sed inventore non, nesciunt nemo!
+        </p>
+      </article>
+      <article class="service-box">
+        <img src="img/ironskydive-jump.png" alt="jump" />
+        <a href="img/ironskydive-jump.png"></a>
+        <h3>4.Jump!</h3>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident
+          aliquid sed inventore non, nesciunt nemo!
+        </p>
+      </article>
+    </div>
+  </section>
+  <section id="team" class="dark-background">
+    <article class="section-text">
+      <h3>TEAM</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto at
+        nam obcaecati rem dicta? Reiciendis?
+      </p>
+      <hr>
+    </article>
+    <div>
+      <article>
+        <h4 class="member-name">Harold Rothstein</h4>
+        <img src="img/upload_c18b1c463b80090894237a262dfdfbad.jpeg" alt="Photo" />
+      </article>
+      <article>
+        <h4 class="member-name">Susana Phillips</h4>
+        <img src="img/upload_a18d6123a7c8e75f7e70a4e59b941093.jpeg" alt="Photo" />
+      </article>
+      <article>
+        <h4 class="member-name">Taylor Roberts</h4>
+        <img src="img/upload_7104a331530d1b0611da55093b7dc421.jpeg" alt="Photo" />
+      </article>
+    </div>
+  </section>
+  <section id="schedule" class="container">
+    <h3>Schedule</h3>
+    <table class="schedule-table" cellpadding="0" cellspacing="0">
+      <thead>
+        <th>Time</th>
+        <th>Monday</th>
+        <th>Tuesday</th>
+        <th>Wednesday</th>
+        <th>Thursday</th>
+        <th>Friday</th>
+        <th>Saturday</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>9:00 - 11:00</td>
+          <td></td>
+          <td></td>
+          <td>X</td>
+          <td></td>
+          <td>X</td>
+          <td>X</td>
+        </tr>
+        <tr>
+          <td>12:00 - 14:00</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>X</td>
+          <td>X</td>
+        </tr>
+        <tr>
+          <td>15:00 - 17:00</td>
+          <td></td>
+          <td></td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+        </tr>
+      </tbody>
+    </table>
+    <h3>Schedule a Time Slot</h3>
+    <form class="slot-form" action="/register" method="post">
+      <div class="slot-form-container">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter your email">
+      </div>
+      <div class="slot-form-container">
+        <label for="participants">Participants</label>
+        <input type="number" id="participants" placeholder="Number of participants
+        ">
+      </div>
+      <div class="slot-form-container">
+        <label for="time">Time</label>
+        <select name="time">
+          <option value="early">9:00 - 11:00</option>
+          <option value="mid">12:00 - 14:00</option>
+          <option value="late">15:00 - 17:00</option>
+        </select>
+      </div>
+      <div class="slot-form-container">
+        <button type="submit">Reserve Your Slot!</button>
+      </div>
+    </form>
+  </section>
+  <footer class="footer dark-background">
+    <section>
+      <h5>Contact Information</h5>
+      <address class="address">
+        IronSkydive <br />
+        33 Rue la Fayette, <br>
+        75009 Paris, France <br>
+        +33 (0) 619 193 088 <br>
+      </address>
+      <h5>Follow Us</h5>
+      <ul>
+        <li><a href="#" target="_blank">Twitter</a></li>
+        <li><a href="#" target="_blank">Facebook</a></li>
+        <li><a href="#" target="_blank">Instagram</a></li>
+      </ul>
+    </section>
+    <iframegit 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.142047744348!2d2.3354330160472316!3d48.87456857928921!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e38f817b573%3A0x48d69c30470e7aeb!2sIronhack!5e0!3m2!1sen!2ses!4v1495208746099"
+      class="map-frame" frameborder="0" style="border:0" allowfullscreen></iframegit>
+  </footer>
 </body>
+
 </html>
