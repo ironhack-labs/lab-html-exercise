@@ -3,14 +3,22 @@ body {
     font-family: Arial;
     }
 
-header > div {
-    padding: 0 25px;
+header div {
+    padding: 10px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: center;
+    justify-content: flex-end;
     align-items: center;
     border-bottom: 1px solid lightgray;
+    padding: 10px;
   }
+
+header li {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 25px;
+}
 
 nav {
     width: 600px;
@@ -37,7 +45,7 @@ nav a {
     width: 50px;
     margin-right: 1rem;
     padding: 10px;
-  }
+  } 
 
 .SeeButton {
     background-color: #FB3B49;
@@ -77,6 +85,18 @@ nav a {
     font-size: 15px;
 }
 
+#section2 h2 {
+    background-color: orange;
+    text-align: center;
+    font-size: 30px;
+    padding: 0px 20px;
+    display:inline;
+}
+
+#section2 h2 span {
+    background-color: orange;
+}
+
 .Hexagon {
     width: 200px;
     padding: 20px 20px 20px 20px;
@@ -98,6 +118,8 @@ nav a {
     display: flex;
     flex-direction: column;
     padding: 10px 10px 10px 10px;
+    justify-content: space-between;
+    align-items: center;
 
 }
 
@@ -121,22 +143,22 @@ h2 {
 }
 
 h3 {
-    color: red;
+    color: #ED1C24;
     display: center;
-    padding: 10px 10px 10px 10px;
     font-size: 12px;
 }
 
 h4 {
     display: center;
-    padding: 10px 10px 10px 10px;
     font-size: 12px;
 }
 
 .OrgButton {
     display: center;
     text-align: center;
-    
+    background-color: black;
+    color: white;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
 }
 
 
