@@ -3,43 +3,34 @@ body {
     font-family: Arial;
     }
 
-header div {
-    padding: 10px;
+header > div {
+    padding: 0 25px;
     display: flex;
-    flex-direction: center;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid lightgray;
-    padding: 10px;
-  }
-
-header li {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    padding: 25px;
 }
 
 nav {
     width: 600px;
-  }
-  
+}
+
 nav ul {
     list-style: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-  
+}
+
 nav a {
     text-decoration: none;
     color: black;
-  }
-  
+}
+
 .blackHeart {
     width: 20px;
     margin-right: 1rem;
-  }
+}
 
 .logo {
     width: 50px;
@@ -47,11 +38,19 @@ nav a {
     padding: 10px;
   } 
 
+  .searchButton {
+    background-color: #FB3B49;
+    color: white;
+}
+
+ 
 .SeeButton {
     background-color: #FB3B49;
     box-shadow: 8px 8px 0 rgba(251,59,73,.2);
     color: white;
 }
+
+
 
 .JoinButton {
     background-color: white;
@@ -74,7 +73,7 @@ nav a {
 }
 
 #section2 {
-    height: 600px;
+    height: 400px;
     background-color: white;
     text-align: center;
     display: center;
@@ -104,14 +103,11 @@ nav a {
 }
 
 #section3 {
-    height: 600px;
+    height: 200px;
     background-color: white; 
     display: flex;
-}
-
-#section3 article {
-    flex-direction: row;
-    padding: 10px 10px 10px 10px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #section3 div {
@@ -124,7 +120,8 @@ nav a {
 }
 
 .imgSection3 {
-    width: 20px;
+    width: 40px;
+    float: left;
     padding: 20px 20px 20px 20px;  
 }
 
@@ -132,19 +129,18 @@ nav a {
 h1 {
     text-align: center;
     padding: 50px 30px 5px 30px;
-    font-size: 35px;
-    
+    font-size: 35px;  
 }
 
 h2 {
-    text-align: center;
+    text-align: ;
     font-size: 30px;
     padding: 0px 20px;
 }
 
 h3 {
     color: #ED1C24;
-    display: center;
+    text-align: left;
     font-size: 12px;
 }
 
