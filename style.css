@@ -32,23 +32,27 @@ nav a {
     margin-right: 1rem;
   }
 .form {
+
   display: flex;
 	flex-direction: row;
-	flex-wrap: nowrap;
+	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
 	align-content: space-between;
-
+  padding: auto;
 }
 .form input {
     background-color: rgba(0,0,0,.05);
     border: none;
-    width: 850px;
+    width: 100%;
+    padding: 10px 400px;
+    margin: 10px 0px;
 }
 .form button {
     background-color: #fb3e44;
     color: white;
     border: none;
+    padding: 10px;
 }
 .form form {
   display: flex;
@@ -58,14 +62,21 @@ nav a {
 	align-items: center;
 	align-content: center;
 }
-
+.boton {
+  text-decoration: none;
+  color:black;
+  background-color: rgba(0,0,0,.05);
+  margin: 20px;
+  padding: 10px 30px;
+  border: 1px solid black;
+}
 .img-npm {
-    width: 30px;
+    width: 60px;
     height: 25px;
 }
 .img-search {
     width: 30px;
-    height: 25px;
+    height: 30px;
     display: flex;
     justify-content: flex-end;
     align-content: flex-end;
@@ -129,8 +140,19 @@ nav a {
   font-size: 13px;
 
 }
+#opciones {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 75px 30px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
 
-
+#opciones div {
+  margin: 20px;
+}
 
 #opciones img {
   height: 20px;
@@ -139,11 +161,12 @@ nav a {
 #opciones h3 {
   color: #ED1C24
 }
-#opciones button {
+.create-button {
   height: 40px;
   width: 200px;
   background-color: black;
   color: white;
   box-shadow: 8px 8px 0 rgba(128,83,35,.2);
-
+  margin-left: auto;
+  margin-right: auto;
 }
