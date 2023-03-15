@@ -39,6 +39,7 @@ header > div {
     align-items: center;
   }
 
+
   .search-bar {
     width: 20px;
     margin-right: 1rem;
@@ -50,20 +51,39 @@ header > div {
     background-color: #eeeeee;
     padding: 8px;
     width:40em;
-    height:30px;
+    height:40px;   
+  }
+
+  form input{
+    border:none;
+    width: 375px;
+    margin-left: 8px;
+    background: none;
+    padding-top: 12px;
+    padding-bottom: 12px;
   }
 
   .search-button{
     border-color: rgba(0,0,0,.05);
     lighting-color: rgba(0,0,0,.05);
-    display: flex;
     align-items: center;
+    text-align: center;
     background-color: #fb3e44;
     width: 8em;
-    height: 43px;
+    height: 40px;
     color: white;
-    
   } 
+
+  #see-plans{
+    border-color: rgba(0,0,0,.05);
+    lighting-color: rgba(0,0,0,.05);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: #fb3e44;
+    
+    color: white;
+  }
 
   .join-button{
     border: 1px solid grey;
@@ -77,24 +97,33 @@ header > div {
     height: 600px;
     background-color: rgba(232,217,217,.3);
     align-items: center;
+    display: block;
+    justify-content: center;
+    align-content: center;
+  
+  
   }
 
   h1{
     font-size: 100px;
     text-align: center;
     padding: 50px;
-
+   
   }
 
-  .text {
+  h2 {
+    font-size: 40px;
+    font-style: italic;
     text-align: center;
-    justify-content: center;
-    align-content: center;
+    padding-left: 200px;
+  }
+  #text {
     word-wrap: break-word;
     font-size: 20px;
     width: 560px;
     place-content:center;
     margin: 0 auto;
+    color: black;
   }
 
   .see-plans {
@@ -111,7 +140,8 @@ header > div {
 
   #product-information {
     text-align: center;
-    justify-content: center;
+    display: flex;
+    justify-content: space-around;
     margin-bottom: 130px;
     margin-top: 80px;
     }
@@ -119,16 +149,36 @@ header > div {
   #shape{
     height: 250px;
     width: 250px;
-  }  
+  } 
 
-  h2 {
-    font-size: 40px;
-    font-style: italic;
-  }
-  
- #service-image {
-    width: 300px; 
-    height: 300px;
-    display:block;
-    margin: auto;
+.product-advantages{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+ .service-image {
+    width: 2%; 
+    height: 2%;
+}
+
+.product-advantages{
+    text-align: left;
+    margin-top: 180px;
+    margin-left: 180px;
+    margin-right: 180px;
+    word-wrap: break-word;
+}
+
+h4 {
+    color: #fb3e44;
+    font-weight: bold;
+}
+.orga-button{
+    color: #eeeeee;
+    background: black;
+    text-align: center;
+    box-sizing: border-box;
+    border-color: black;
+    size: 150px;
 }
