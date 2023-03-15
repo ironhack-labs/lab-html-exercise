@@ -7,15 +7,18 @@
     <title>NPM</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
+
+
 <body>
-    <header class="header">
+    <header> 
         <div>
             <div>
-                <img src="images/black-heart.png" alt="black heart" />
+                <img  class="blackHeart" src="images/black-heart.png" alt="black heart"/>
                 <span> Nifty Penguin Magic </span>
             </div>
-            <nav-bar class="nav-bar">
-                <ul class="nav-bar-ul">
+            <nav>
+                <ul>
                     <li class="nav-bar-li"><a href="#enterprise">npm Enterprise</a></li>
                     <li class="nav-bar-li"><a href="#products">Products</a></li>
                     <li class="nav-bar-li"><a href="#solutions">Solutions</a></li>      
@@ -23,35 +26,45 @@
                     <li class="nav-bar-li"><a href="#docs">Docs</a></li>      
                     <li class="nav-bar-li"><a href="#support">Support</a></li>
                 </ul>
-            </nav-bar>
+            </nav>
         </div> 
-
         <div>
-            <div><img src="images/npm-logo.png" alt="npm logo" /></div>
-            <img src="images/magnifying-glass.png" alt="magnifying glass">
-            <form action="/some-url" method="get">
-                <label for="search-bar"></label>
-                <input type="text" id="search-bar" name="name">
-                <input type="submit" value="Search">
-            </form>
-              <a href="#Join">Join</a> <a href="#Log-in">Log In</a>
-        </div>
+            <div>
+                <img class="logo" src="images/npm-logo.png" alt="npm_logo"/>
+            </div>
 
+            <div id="searchbar">
+                <form class="search-tool-bar">
+                    <img class="search-bar" src="images/magnifying-glass.png" alt="magnifying-glass">
+                <input type="text" placeholder="Search-packages">    
+                </form>
+                <button class="search-button">Search</button>
+            </div>
+            <div>
+              <a class="join-button" href="#Join">Join</a> <a href="#Log-in">Log In</a>
+            </div>
     </header>
-</body>
 
-    <section1 id="plans-information">
-        <h1>Build amazing things</h1>
-        <article>Essential JavaScript development tools that help you go to market faster and build powerful applications using
+        <section1 id="plans-information">
+         <div> 
+            <h1>Build amazing things</h1>
+            <article id="text">Essential JavaScript development tools that help you go to market faster and build powerful applications using
             modern open source code.</article>
-        <a href="#See-plans">See Plans</a> <a href="#Join-for-free">Join for free</a>
+        </div>
+        <div class="plan-join">
+        <div id="button-see-plans">
+            <a href="#See-plans">See Plans</a> 
+         
+        <div id="button-join-free">
+            <a href="#Join-for-free">Join for free</a>
+        </div>
     </section1>       
 
     <section2 id="product-information">
         <div>
-            <img src="images/triangle-hexagon.svg"/><br/>
-            <h3>Bring the best of open source to your company</h3>
-            <article>npm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it.
+            <img id="shape" src="images/triangle-hexagon.svg"/>
+            <h2>Bring the best of open source to your company</h2>
+            <article id="text">npm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it.
             Create an Org and get more out of the tools your team already knows and loves.</article>
         </div>    
     </section2>        
@@ -59,7 +72,7 @@
     <section3 id="product-advantages">
         <div> 
             <img class="service-image" src="images/zero-configuration.svg"/>
-            <h4>Zero configuration</h4>
+            <h3>Zero configuration</h3>
             <p class="box-text">Create an org, add your team, and start collaborating. Nothing to configure, set up, or manage.</p>
         </div>
 
@@ -84,8 +97,8 @@
         <form action="Button" method="get">
             <button>Create an Orga</button>
           </form>
-    </section3>  
-
+    </section3> 
+</body>
 </html>
 
 
