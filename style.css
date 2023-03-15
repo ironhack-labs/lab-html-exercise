@@ -1,0 +1,117 @@
+/* STYLES */
+
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body {
+    font-family: 'Poppins';
+    margin: 0;
+}
+
+.header-up {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-bottom: 1px solid lightgray;
+    align-items: center;
+}
+
+.header-up > div {
+    padding: 10px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    width: 600px;
+    margin-right: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-left > img {
+    width: 20px;
+    margin-right: 1rem;
+}
+
+.header-bot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 25px;
+}
+
+.header-bot > img {
+    width: 60px;
+}
+
+.search-bar {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    flex: 1;
+    margin: 0px 25px;
+}
+
+.search-bar img {
+    width: 20px;
+    position: absolute;
+    top: 5px;
+}
+
+form.search-bar .search-space {
+    border-radius: 0;
+    border: 0px solid rgba(0, 0, 0, 0.05);
+    background-color: rgba(0, 0, 0, 0.05);
+    height: 40px;
+    flex: 1;
+    background-image: url(./images/magnifying-glass.png);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: 10px;
+    padding-left: 50px;
+    font-size: 1rem;
+}
+
+.search-btn {
+    border-radius: 0;
+    color: white;
+    background-color: #fb3e44;
+    border: 0px;
+    height: 40px;
+    width: 80px;
+    font-size: 1rem;
+}
+
+.user-auth {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.user-auth a {
+    text-decoration: none;
+    color: black;
+    width: 60px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#join-btn {
+    border: 1px solid lightgrey;
+    box-sizing: border-box;
+}
