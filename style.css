@@ -9,7 +9,7 @@ body {
   }
 
 
-/* Header div1 */
+/* Header */
 
   header > div {
     padding: 0 25px;
@@ -24,6 +24,8 @@ body {
   }
   
   nav ul {
+    font-weight: bold;
+    word-spacing: 5px;
     list-style: none;
     display: flex;
     justify-content: space-between;
@@ -33,6 +35,10 @@ body {
   nav a {
     text-decoration: none;
     color: black;
+  }
+
+  nav li{
+    word-spacing: 10px;
   }
   
   .blackHeart {
@@ -54,9 +60,7 @@ body {
   .slotForm{
     width: 60%;
     margin: 18px auto 0 auto;
-    font-size: 1.5em;
-    text-align: center;
-   
+    font-size: 1.5em; 
   }
 
 
@@ -67,6 +71,22 @@ body {
     background-color:rgba(232,217,217,.3);
   }
 
+  .header1{
+    padding: 80px;
+    width: 100%;
+    text-align: center;
+    font-size: 4em;
+    line-height: 1em;
+  }
+
+  .paragraph{
+  width: 25%;
+  font-size: 1.2em; 
+  position: absolute;
+  left: 40%;
+  text-align: center;
+  }
+
   .seePlans{
     background-color:#FB3B49;
     color: white;
@@ -74,11 +94,26 @@ body {
     box-shadow: 8px 8px 0 rgba(251,59,73,.2);
   }
 
+  .joinF{
+    background-color:white;
+    color: black;
+    padding: 15px 50px;
+  }
+
+  .seeJoin{
+    margin:150px 0 0 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+
 
 /* Section 2 */
 
-
-
+.info{
+    height: 600px;
+}
 .hexagonLogo{
   width: 300px; 
   margin: 100px 50%;
@@ -112,9 +147,13 @@ text-justify:center;
     margin: 10px;
 }
 
+.about p{
+    
+}
+
 .orgBotton{
     background-color:black;
     color: white;
-    padding: 10px 60px;
+    padding: 10px 80px;
     box-shadow: 8px 8px 0 rgba(128,83,35,.2);   
 }
