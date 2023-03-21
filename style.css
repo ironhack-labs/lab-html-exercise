@@ -2,6 +2,34 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 *,
+header > div {
+  padding: 0 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+}
+
+nav {
+  width: 600px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+.blackHeart {
+  width: 20px;
+  margin-right: 1rem;
+}
 html,
 body {
   margin: 0px;
@@ -140,6 +168,8 @@ h6 {
   padding: 10px 50px 10px 50px;
   margin: 20px 15px 5px 20px;
 }
+/*flex-direction: column;
+display:flex;*/
 .second {
   display: flex;
   justify-content: center;

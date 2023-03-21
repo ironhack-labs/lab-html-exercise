@@ -1,6 +1,34 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+header > div {
+  padding: 0 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+}
+
+nav {
+  width: 600px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+.blackHeart {
+  width: 20px;
+  margin-right: 1rem;
+}
 *,
 html,
 body {
@@ -11,9 +39,10 @@ body {
   line-height: 3.5em;
   font-weight: 300;
 }
+
 .nav-1 {
   display: flex;
-  justify-content: left;
+  justify-content: space-between;
   height: 20px;
   margin: 25px 10px 15px 25px;
 }
@@ -21,18 +50,18 @@ h6 {
   font-size: 10px;
   font-weight: 650;
 }
-.Neverending {
+.nifity {
   display: flex;
   font-size: 5px;
-  align-items: center;
+  align-items: left;
   height: 20px;
   width: 61.7pc;
 }
-
 .nav-list {
   display: flex;
   height: 20px;
-  align-items: center;
+  align-items: right  ;
+  justify-content: space-between;
 }
 .nav-item {
   display: flex;
@@ -42,7 +71,6 @@ h6 {
   font-size: 10px;
   font-weight: 650;
 }
-
 .search-bar-submit {
   height: 36px;
   margin: 0;
@@ -56,7 +84,7 @@ h6 {
   display: flex;
   margin: 0px 15px 0px 25px;
   padding-top: 8px;
-  align-items: center;
+  align-items: left;
   border-top: solid lightgray 1px;
   padding-bottom: 15px;
 }
@@ -68,6 +96,7 @@ h6 {
 }
 .two-buts-nav {
   margin-left: 24px;
+  align-items: right;
 }
 .search-box {
   border: 0;
@@ -90,6 +119,7 @@ h6 {
   text-decoration: none;
   color: gray;
   margin-left: 12px;
+  align-items: right;
 }
 .build-amazing {
   display: flex;
@@ -109,10 +139,7 @@ h6 {
   padding: 40px 0px 100px 0px;
 }
 .entry > div {
-  /*
-  display: flex;
-  justify-content: center;*/
-  text-align: center;
+ text-align: center;
   margin: 35px;
 }
 .see-plans {
@@ -239,5 +266,5 @@ h6 {
   height: 15px;
   opacity: 60%;
   position: relative;
-  margin: 0px;
+  margin: -45px;
 }
