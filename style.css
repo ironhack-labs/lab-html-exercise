@@ -70,11 +70,24 @@ nav a {
   border: none;
 }
 
-#search-btn{
+.red-button{
   background-color: #fb3e44;
   color: white;
   border: none;
   padding: 0 20px;
+}
+
+.white-button{
+  display: flex;
+  border: 1px solid black;
+  align-items: center;
+  justify-content: center;
+}
+
+a{
+  color: black;
+  text-decoration: none;
+  text-align: center;
 }
 
 .user-links{
@@ -83,13 +96,14 @@ nav a {
 
 .user-links>div{
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   width: 180px;
 }
 
 .user-links>div>a{
   display: flex;
+  flex: 1 0 auto;
   align-items: center;
   text-decoration: none;
   padding: 0 20px;
@@ -97,10 +111,45 @@ nav a {
   height: 38px;
 }
 
-#join{
+#hero{
   display: flex;
-  border: 1px solid black;
+  flex-direction: column;
   align-items: center;
+  justify-content:center;
+  gap: 50px;
+  height: 600px;
+  background-color: rgba(232,217,217,.3);
+  text-align: center;
 }
 
+#slogan{
+  font-size: 60pt;
+  margin: 0px;
+}
+
+#hero>div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 400px;
+   
+}
+.intro-links{
+  height: 108px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-self: stretch;
+}
+.intro-links>a{
+  display: flex;
+  flex: 1 0 auto;
+  padding: 20px;
+  text-decoration: none;
+  justify-content: center;  
+}
+
+#see-plans-button{
+  box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+}
 
