@@ -1,0 +1,263 @@
+:root {
+  --primary-font: Poppins,sans-serif;
+  --secondary-font: 'Arimo', sans-serif;
+  --red: #fb3c48;
+}
+
+html {
+  font-family: var(--primary-font);
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+
+}
+
+
+/* Typography */
+
+h1 {
+  font-size: 5rem;
+  font-weight: 600;
+  font-family: var(--primary-font);
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+
+/* LAYOUT */
+.container {
+  margin: 0 auto;
+}
+
+
+/* NAV BAR */
+.nav-bar {
+  max-width: 96rem;
+  margin: 0 auto;
+  display: flex; 
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  padding: 20px;
+}
+
+.nav-bar-right {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-bar-right a{
+  padding: 0.5em;
+  text-decoration: none;
+  color: #000;
+}
+
+.nav-bar-left {
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-bar-left button {
+  margin-left: 2em;
+  border: none;
+  background-color: white;
+}
+
+.nav-bar-left i {
+  margin-left: 0.5em;
+}
+
+
+/* TOP BAR */
+
+.top-bar{
+  max-width: 96rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  padding-bottom: 0.5em;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+}
+
+.top-bar a {
+  text-decoration: none;
+  padding: 13px 28px;
+}
+
+.join{
+  border: 1px solid #cccccc;
+  border-radius: 0;
+  margin: -10px;
+}
+
+.logo {
+  width: 70px;
+  height:30px;
+  padding-left: 25px;   
+  padding-top: 5px;
+}
+
+/* search bar */
+
+.search{
+  display: flex;
+  width: 90%;
+  max-width: 900px;
+}
+
+.search-area {
+  /* search icon */
+  background-image: url("/images/magnifying-glass.png");
+  padding-left: 30px;
+  background-size: 18px 18px;
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  /* search icon end */
+  background-color: #f2f2f2;
+  border: none;
+  font-size: 16px;
+  line-height: 1.5;
+  height: 40px;
+  width: calc(100% - 10px);
+} 
+
+.search-area:focus{
+  outline: 1px solid black;
+}
+
+.search-btn{
+  padding: 0 24px;
+}
+
+
+
+/* Main */
+.container {
+  width: 95%;
+  text-align: center;
+}
+
+.inner-container {
+  max-width: 880px;
+  width: 70%;
+  margin: 0 auto;
+  padding: 2em;
+}
+
+.text {
+  max-width: 500px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* Section #1  */
+.hero {
+  background-color: #f8f4f4;
+  min-height: 39vh;
+}
+
+
+.hero-btn {
+  padding: 0.875em 2.5em;
+  margin: 8px;
+  font-weight: 700;
+}
+
+.red-btn {
+  background-color: var(--red);
+  color: white;
+  border: none;
+}
+
+#free-btn {
+  background-color: white;
+}
+
+/* container #2 */
+.product img {
+  max-width: 155px;
+}
+
+.product {
+  min-height: 42vh;
+}
+
+.product .inner-container {
+  padding-top: 7em;
+  padding-bottom: 0;
+}
+
+/* SERVICE */
+
+.service-inner {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  max-width: 1280px;
+}
+
+.service-item {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  width: 20%;
+
+}
+
+.service-item p {
+  text-align: left;
+}
+
+
+
+.service-icon {
+  width: 36px;
+}
+
+.text-red {
+  color: var(--red);
+}
+
+#create-btn {
+  background-color:#000;
+  color: white;
+  font-weight: 600;
+  padding: 1em 7em;
+}
+
+
+.btn-container {
+  padding: 4em;
+  margin-top: 20px;
+}
+
+
+
+/* MEDIA QUERIES */
+
+/* define styles for smaller screens */
+@media only screen and (max-width: 600px) {
+  .search-bar {
+    width: 100%;
+  }
+}
+
+/* define styles for larger screens */
+@media only screen and (min-width: 601px) {
+  .search-bar {
+    width: 50%;
+  }
+}
