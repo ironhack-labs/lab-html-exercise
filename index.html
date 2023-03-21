@@ -26,24 +26,30 @@
         </div>
     
         <div class="header-bottom">
-            <div class="logo">
-            <img class="npm-logo" src="./images/npm-logo.png" alt="NPM Logo">
-            </div>
+            <span class="logo">
+            <img src="./images/npm-logo.png" alt="NPM Logo">
+            </span>
             <div class="search-bar">
-                <img src="./images/magnifying-glass.png" alt="search icon">
-                <form action="#">                
-                    <input type="text" placeholder="Search packages">
+                    <form class="search-form" action="#">
+                    <label><img src="./images/magnifying-glass.png" alt="search icon"></label>              
+                    <input id="search-field" type="text" placeholder="Search packages">
                     <button id="search-btn">Search</button>
                 </form>
             </div>
-            </div>
-            <div class="account-links">
-            <a href="#">Join</a>
-            <a href="#">Log in</a>
+                       
+            <div class="user-links">
+                <div>
+                <a href="#" id="join">Join</a>
+                <a href="#">Log in</a>
+                </div>
             </div>
         </div>
     </header>
 
+
+
+
+    <!--
     <section id="hero">
         <h1>Build amazing things</h1>
         <p>Essential JavaScript development tools that help you go to 
@@ -92,7 +98,7 @@
         </div>
         <button>Create an Org</button>
     </section>
-
+-->
 
 </body>
 </html>

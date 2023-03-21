@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body {
+  font-family: 'Poppins';
+  margin: 0;
+  padding: 0;
+}
+
+header > div {
+  padding: 0 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+}
+
+nav {
+  width: 600px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+.blackHeart {
+  width: 20px;
+  margin-right: 1rem;
+}
+
+.header-bottom{
+  justify-content: space-between;
+  height: 57px;
+}
+
+.logo,.search-bar, .user-links{
+  display: flex;
+  height: 42px;
+  margin: 5px 0;
+}
+
+.logo{
+  margin-right: 15px;
+}
+
+.logo, .user-links{
+  flex-shrink: auto;
+}
+
+.search-bar, .search-form{
+  display:flex;
+  justify-content: flex-end;
+}
+
+.search-form>label{
+  display:flex;
+  background-color: rgba(0,0,0,.01);;
+}
+
+.search-bar,.search-form, #search-field{
+  flex: 1 1 auto;
+  background-color: rgba(0,0,0,.01);
+  border: none;
+}
+
+#search-btn{
+  background-color: #fb3e44;
+  color: white;
+  border: none;
+  padding: 0 20px;
+}
+
+.user-links{
+  margin-left: 20px;
+}
+
+.user-links>div{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 180px;
+}
+
+.user-links>div>a{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 20px;
+  color: black;
+  height: 38px;
+}
+
+#join{
+  display: flex;
+  border: 1px solid black;
+  align-items: center;
+}
+
+
