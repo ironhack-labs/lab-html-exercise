@@ -1,9 +1,16 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family:Roboto;
+}
 /*
 navigation bar
 */
 .nav-bar ul{
     display: flex;
-    flex-direction: row;    
+    width: 100%;
+    flex-direction: row;   
     flex-wrap: wrap;
     margin:0;
     padding:0; 
@@ -20,26 +27,122 @@ navigation bar
     width: 100%;
     display:flex;
     flex-direction: row;
+    margin-bottom:10px;
 }
 .nav-bar > div{
     display:flex;
     flex-direction: row;
-    justify-content: space-around;
+   
     flex-flow: row;    
     
 }
 .left-side{
+    display: flex;
+    justify-content: flex-start;
     width: 15%;
 }
 .right-side{   
     display: flex;
     width: 85%;
+    justify-content: flex-end;
 }
 .left-side img{    
     
-    width:25px;
-  
+    width:25px;  
 }
 
+/*
+search bar
+*/
 
+.search-bar img{
+    width: 5%;
+}
+.search-input{
+    width:80%;
+}
+.search-btn{
+    background-color: red;
+    color:white;
+    border:none;
+    padding:5px 7px;
+    margin-right: 20px;
+}
+.join-btn{
+    background-color: white;
+    border:1px solid gray;
+    border-radius: 2px;
+    padding:3px 10px;
+    margin-right: 5px;
+}
+.log-btn{
+    background-color: white;
+    border: none;
+
+}
+/*
+header 
+information section
+*/
+.header{
+    background-color: #f8eded;
+    height:400px;
+    text-align: center;
+    margin: auto;
+}
+.header h1{
+    margin:5px 0 0 0;
+    padding-top: 30px;   
+    font-size: 50px;
+}
+.header h3{
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    padding:30px 0;
+}
+.see-plans-btn{
+    background-color: red;
+    color:white;
+    padding:10px 35px;
+    border:none;
+    box-shadow: 5px 5px 0px #f6c3c3;
+    font-weight: bold;  
+    margin-right: 20px;
+}
+.join-free-btn{
+    background-color: white;  
+    font-weight: bold;  
+    color:black;
+    padding:10px 35px;
+    border:none;
+}
+
+/*
+
+company-description
+*/
+#company-description{
+    width: 65%;
+    margin:auto;
+    text-align: center;
+}
+#company-description img{
+    margin: 30px 0;
+    width:130px;    
+
+}
+#company-description h2{
+    margin:0 50px;
+    background-color:#ffebb5 ;
+}
+#company-description p{
+    padding:0 70px;
+}
+
+/*
+
+company-info
+
+*/
 
