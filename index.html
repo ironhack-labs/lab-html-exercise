@@ -1,5 +1,6 @@
 <html>
     <head>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
         <link rel="stylesheet" href="css/style.css">
         <title>NPM Clone Nifty Penguin Magic</title>
     </head>
@@ -29,7 +30,7 @@
         </div>
     </div>
         <div class="search-bar">
-            <img src="images/npm-logo.png" > <input type="search" id="site-search" class="search-input"><button class="search-btn">Search</button><button class="join-btn">Join</button><button class="log-btn">Log in</button>
+            <img src="images/npm-logo.png" > <input type="search" id="site-search" class="search-input" placeholder="&#xF002; Search packages"><button class="search-btn">Search</button><button class="join-btn">Join</button><button class="log-btn">Log in</button>
         </div>
         <header class="header">
             <h1>Build amazing things</h1>
@@ -50,7 +51,9 @@
                 </p>
         </section>
         <section id="company-info">
+            <div class="articles">
             <article>
+                <img src="images/zero-configuration.svg">
                 <h5>Zero configuration</h5>
                 <p>
                     Create an org, add
@@ -58,6 +61,7 @@
                 </p>
             </article>
             <article>
+                <img src="images/team-management.svg">
                 <h5>Team management</h5>
                 <p>
                     Control who has access to
@@ -65,20 +69,23 @@
                 </p>
             </article>
             <article>
+                <img src="images/familiar-features.svg">
                 <h5>Familiar features</h5>
                 <p>
                     npm Orgs has 100% parity with all the public npm registry features your developers already use.
                 </p>
             </article>
             <article>
+                <img src="images/npm-audit.svg">
                 <h5>npm audit</h5>
                 <p>
                     Enjoy the security
                     auditing features built into the npm client, a zero-friction way to make open source software safer.
                 </p>
             </article>
+        </div>
             <div class="create-org">
-                <button>Create an Org</button>
+                <button class="create-org-btn">Create an Org</button>
             </div>
 
         </section>
