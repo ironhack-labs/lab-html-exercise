@@ -1,9 +1,13 @@
 
 body {
-    margin: 0;
+    margin: auto;
     padding: 0;
-    font-family:Roboto;
-    
+    font-family: Poppins,sans-serif;
+   
+}
+.center-web{
+    width:80%;
+    margin: auto;
 }
 /*
 navigation bar
@@ -16,6 +20,7 @@ navigation bar
     margin:0;
     padding:0; 
     list-style-type: none;
+    font-size: 0.8em;
 }
 .nav-bar li{
     margin:0 15px;
@@ -28,7 +33,7 @@ navigation bar
     width: 100%;
     display:flex;
     flex-direction: row;
-    margin-bottom:10px;
+    margin-bottom:2px;
 }
 .nav-bar > div{
     display:flex;
@@ -40,7 +45,8 @@ navigation bar
 .left-side{
     display: flex;
     justify-content: flex-start;
-    width: 15%;
+    width: 25%;
+    
 }
 .right-side{   
     display: flex;
@@ -48,20 +54,27 @@ navigation bar
     justify-content: flex-end;
 }
 .left-side img{    
-    
+   padding-top: 5px;
     width:25px;  
 }
 
 /*
 search bar
 */
-
+.search-bar{
+    width: 100%;
+    
+}
 .search-bar img{
+    text-align: center;
+    vertical-align:middle;
+    margin: auto;
     width: 5%;
+ 
 }
 .search-input{
     font-family: FontAwesome;
-    width:80%;
+    width:75%;
     background-color: #f2f2f2;
     border:none;
     height:25px;
@@ -72,6 +85,7 @@ search bar
     border:none;
     padding:8px 10px;
     margin-right: 15px;
+    width: 5%;
 }
 .join-btn{
     background-color: white;
@@ -79,8 +93,10 @@ search bar
     border-radius: 2px;
     padding:5px 15px;
     margin-right: 5px;
+    width: 5%;
 }
 .log-btn{
+    width: 5%;
     background-color: white;
     border: none;
 
@@ -99,6 +115,8 @@ information section
     margin:5px 0 0 0;
     padding-top: 30px;   
     font-size: 50px;
+ 
+   
 }
 .header h3{
     text-align: center;
@@ -111,7 +129,7 @@ information section
     color:white;
     padding:10px 35px;
     border:none;
-    box-shadow: 5px 5px 0px #f6c3c3;
+    box-shadow: 4px 4px 0px #f4d2d3;
     font-weight: bold;  
     margin-right: 20px;
 }
@@ -139,11 +157,16 @@ company-description
 
 }
 #company-description h2{
-    margin:0 50px;
+    margin:0 10px; 
+    
+}
+#company-description h2::before{
     background-color:#ffebb5 ;
+    transform: skew(-15deg);
 }
 #company-description p{
-    padding:0 70px;
+    padding:0 140px;
+    font-size: 0.8em;
 }
 
 /*
@@ -163,9 +186,17 @@ company-info
 #company-info .articles{
     display:flex;
     flex-direction: row;
+    justify-content:space-evenly;
+}
+article{
+    margin-right:  30px;
+}
+.articles{
+    margin: 25px 0;
 }
 .articles p{
-    font-size: 0.8em;
+    font-size: 0.7em;
+   
 }
 .articles h5{
     color:red;
@@ -173,11 +204,14 @@ company-info
 }
 .create-org{
     margin:auto;
-    width: 20%;
+    width: 30%;
+    height:50px;
 }
 .create-org-btn{
     background-color: black;
     color:white;
-    padding: 5px 65px;
+    padding: 10px 85px;
+    border:none;
+    box-shadow: 3px 3px 0px #e4ddd5;
    
 }
