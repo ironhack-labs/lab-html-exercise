@@ -12,7 +12,7 @@ header > div {
     align-items: center;
     border-bottom: 1px solid lightgray;
   }
-  
+
   nav {
     width: 600px;
   }
@@ -36,14 +36,26 @@ header > div {
 
   /* styling lower div of header tag*/
 
+  .nav-join-log {
+    display: flex;
+    justify-content: space-between;
+    width: 180px;
+    align-items: center;
+  }
+
   input {
     width: 1200px;
     background-color: rgba(0,0,0,.05);
     border-color: white;
-}
+  }
+
   label {
     background-color: rgba(0,0,0,.05);
   } 
+
+  #form {
+    display: flex;
+  }
 
   button {
     background-color: #fb3e44;
@@ -52,13 +64,14 @@ header > div {
   }
 
   .npm-logo {
-    width: 40px;
+    width: 60px;
     margin-right: 1rem;
   }
 
   .magnifying-glass {
-    width: 20px;
+    width: 30px;
     margin-right: 1rem;
+    background-color: rgba(0,0,0,.05);
   }
 
   .join {
@@ -106,6 +119,15 @@ header > div {
     padding: 50px
   }
 
+  #section1 div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: 
+  }
+
   .see-plans {
     background-color: #FB3B49;
     color: white;
@@ -113,6 +135,8 @@ header > div {
     text-decoration: none;
     text-align: center;
     box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+    margin-right: 20px;
+    width:  150px;
 
   }
 
@@ -122,6 +146,8 @@ header > div {
     padding: 14px 25px;
     text-decoration: none;
     text-align: center;
+    margin-left: 20px;
+    width: 150px;
   }
 
 /* Styling section2 */
@@ -135,7 +161,7 @@ header > div {
   }
 
   .article-section-2 {
-    font-size: 0.65em;
+    font-size: 0.80em;
     width: 500px;
     text-align: center;  
     padding: 10px
@@ -172,19 +198,20 @@ header > div {
 
   }
 
-  /*
-  .svg1 {
-    width: 40px;
+  button {
+    background-color: black;
+    width: 300px;
+    height: 40px;
   }
 
-  .svg2 {
-    width: 40px;
+  .button-create-org {
+    display: flex;
+    justify-content: center;
+    padding: 80px;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    color: white;
   }
 
-  .svg3 {
-    width: 40px;
-  }
-
-  .svg4 {
-    width: 40px;
+  h3 {
+    color: #ED1C24;
   }
