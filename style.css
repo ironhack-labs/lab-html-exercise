@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+    body {
+    font-family: 'Poppins';
+    }
+
+    /* header: navigation, search bar, logo & some more buttons */
+    header > div {
+        padding: 0 25px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid lightgray;
+    }
+    
+    nav {
+        width: 600px;
+    }
+    
+    nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    nav a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .nav-white-button1 {
+    color:black;
+    background-color: white;
+    border: solid black 1px;
+    font-weight: bolder;
+    font-size: 0.8em;
+    padding: 5px 20px;
+    text-decoration: none;
+    margin:5px;
+
+    }
+
+    .nav-white-button2{
+        color:black;
+        background-color: white;
+        font-weight: bolder;
+        font-size: 0.8em;
+        padding: 5px 20px;
+        text-decoration: none;
+        margin:5px;
+    }
+    
+    .blackHeart {
+        width: 20px;
+        margin-right: 1rem;
+    }
+    .logo{
+        width:50px;
+    }
+    .zoom{
+        width: 16px;
+    }
+
+    .search-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;   
+    }
+
+    .search-container form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .search-container form input {
+        background-color:  rgba(232,217,217,.3);
+        padding: 10px 50px;
+        border: none;
+        width:800px;
+    }
+
+    .search-container button {
+        color:white;
+        border: none;
+        background-color: #FB3B49;
+        font-weight: lighter;
+        font-size: 0.8em;
+        padding: 10px 20px;
+        text-decoration: none;
+        }
+
+.search-container form img{
+    width: 15px;
+    transform: translate(30px)
+}
+.nav-buttons-holder{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap:nowrap;
+}
+
+
+/* section 1: product intro */
+
+.prod-intro {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 600px;
+    background-color: rgba(232,217,217,.3);
+
+}
+
+.intro-h{
+    margin-top:0px; 
+    font-size: 4.5em;
+    font-weight: bold;
+}
+
+.intro-p{
+    width: 400px;
+    text-align:center;
+}
+
+.intro-button-div {
+    width: 400px;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.redbutton {
+color:white;
+background-color: #FB3B49;
+box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+font-weight: bolder;
+font-size: 0.8em;
+padding: 10px 50px;
+text-decoration: none;
+margin:10px;
+}
+
+.whitebutton {
+color:black;
+background-color: white;
+font-weight: bolder;
+font-size: 0.8em;
+padding: 10px 50px;
+text-decoration: none;
+margin:10px;
+}
+
+/* section 2: product pitch */
+
+.prod-pitch {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 600px;
+}
+
+.prod-pitch-img{
+    width: 15%;
+    display: block;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+.prod-pitch-h{
+text-align: center;
+font-size: 2em;
+background-color: rgba(255,204,53,.4);
+transform: skew(9deg, 0deg);
+font-style: italic;
+padding: 0 10px;
+margin-left: 20px;
+margin-right: 20px;
+}
+
+.prod-pitch-p{
+    width: 50%;
+    font-size: 0.8em;
+    text-align:center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+/*section 3: product features*/
+
+.prod-features{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.feature-item{
+    width: 15%;
+    margin: 25px;
+
+    display: flex; 
+    justify-content:baseline;
+    align-items:left;
+    flex-direction: column;
+}
+
+.feature-img{
+width: 40px;
+}
+
+.feature-h{
+    color:#ED1C24;
+    font-weight: bolder;
+    font-size: 0.9em;
+}
+
+.feature-item p{
+    font-size: 0.8em;
+}
+
+.final{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.blackbutton {
+    color:white;
+    background-color: black;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    font-weight: bolder;
+    font-size: 0.8em;
+    padding: 15px 100px;
+    text-decoration: none;
+    margin: 50px;
+    }
