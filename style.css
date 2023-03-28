@@ -1,3 +1,252 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css?family=Inconsolata');
+
 body{
-    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    font-family: 'Poppins';
+    padding: 0px;
+    margin: 0px;
 }
+header{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px 10px 15px #888888;
+}
+#header__navSection{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content:space-between;
+}
+#header__navSection--left{
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+}
+#header__img--blackHeart{
+    width: 40px;
+ }
+#header__span{
+    font-weight: bold;
+}
+#header__navSection--rigth{
+    margin-right: 50px;
+}
+.header__li{
+    list-style: none ;
+}
+.header__a{
+    margin-left: 10px;
+    margin-right: 10px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#header__ul{
+display: flex;
+flex-direction: row;
+}
+
+#header__formSection{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-top: 1px solid rgb(238, 238, 238);
+    padding-right: 40px;
+}
+#header__img--npmLogo{
+   width: 100px;
+   height: 30px;
+   margin-left: 40px;
+}
+form{
+    background-color: rgb(238, 238, 238);
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+}
+#header__formContainer--left{
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+}
+#imgGlass{
+    margin-left: 6px;
+    width: 40px;
+ }
+input{
+    height: 90%;
+    width: 1100px;
+    border: none;
+    padding: 0px;
+    padding-top: 3px;
+    padding-left: 20px;
+    background-color: rgb(238, 238, 238);  
+    display: flex;
+    font-family: 'Inconsolata';
+    font-weight: light;
+    font-size: large;
+    
+}
+#header__button--submitButton{
+    border: none;
+    background-color: #fb3e44;
+    color: white;
+    font-family: 'Inconsolata';
+    font-weight: lighter;
+    font-size: large;
+    width: 10%;
+    cursor: pointer;
+}
+#header__button--rigth1{
+  background-color: white;
+  width: 100px;
+  padding: 15px;
+  margin-right: 20px;
+  font-family: 'Poppins';
+  font-weight: bolder;
+  font-size: large;
+  cursor: pointer;
+}
+#header__button--rigth2{
+    background-color: white;
+    width: 100px;
+    padding: 15px;
+    border:none;
+    font-family: 'Poppins';
+    font-weight: bolder;
+    font-size: large;
+    cursor: pointer;
+}
+
+
+
+
+#buildAmazingThings{
+    background-color: rgba(232,217,217,.3);
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#buildAmazingThings__title{
+  font-weight:bolder;
+  font-size: 100px;
+  margin: 100px;
+  margin-bottom: 50px;
+}
+#buildAmazingThings__article{
+text-align: center;
+width: 40%;
+font-size: x-large;
+font-weight: bold;
+margin-bottom: 60px;
+}
+
+#buildAmazingThings__button--red{
+   margin-right: 30px;
+   width: 300px;
+   height: 80px;
+   border: none;
+   color: white;
+   background-color: #fb3e44;
+   box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+   font-size: x-large;
+   font-weight: bolder;
+   cursor: pointer;
+}
+#buildAmazingThings__button--white{
+   margin-left: 30px;
+   width: 300px;
+   height: 80px;
+   border: none;
+   color: black;
+   background-color: white;
+    font-size: x-large;
+   font-weight: bolder;
+   cursor: pointer;
+}
+
+
+
+
+#bringTheBest{
+    height: 600px;
+    padding: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#bringTheBest__img{
+    width: 300px;
+}
+#bringTheBest__heading--background{
+    margin-top: 80px;
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg, 0deg);
+    height: 55px;
+    width: 1200px;
+    padding-bottom: 10px;
+}
+#bringTheBest__heading{
+   text-align: center;
+   font-weight: bolder;
+   font-style: italic;
+   font-size: 45px;
+   margin: 0px;
+
+}
+#bringTheBest__article{
+    margin-top: 45px;
+    text-align: center;
+    width: 65%;
+    font-size: larger;
+    
+}
+
+
+#advantages{
+   margin: 0px 100px 100px 150px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+#advantages__cardsContainer{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 150px;
+}
+.advantages__card{
+    margin-right: 80px;
+}
+.advantages__title{
+    color: #ED1C24 ;
+}
+.advantages__img{
+    width: 50px;
+}
+#advantages__button{
+    background-color: black;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    border: none;
+    
+    padding: 30px;
+    margin-right: 60px;
+    width: 550px;
+    
+    color: white;
+    font-family: 'Poppins';
+    font-weight: bolder;
+    font-size: 25px;
+    
+    cursor: pointer;
+}
+
+
+
+
+
