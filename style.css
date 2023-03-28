@@ -35,16 +35,13 @@ nav a {
 
 /* Start CS */
 
-.search-connection {
-  padding: 0 25px;
-  display: flex;
-}
-
 .npm-logo {
   width: 60px;
 }
 form {
-  height: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 40px;
   width: 80%;
   color: rgba(0, 0, 0, 0.05);
   background-color: rgba(0, 0, 0, 0.05);
@@ -52,6 +49,8 @@ form {
 
 form img {
   height: 20px;
+  margin-left: 10px;
+  margin-top: 10px;
 }
 
 label {
@@ -61,8 +60,23 @@ label {
 .search-button {
   color: white;
   background-color: #fb3e44;
-  height: 30px;
+  height: 40px;
   width: 80px;
+  margin-left: -100px;
+}
+.join {
+  color: black;
+  text-decoration: none;
+  margin-right: 10px;
+  border: 1px solid;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.login {
+  text-decoration: none;
+  color: black;
 }
 
 /* ####################
@@ -73,24 +87,32 @@ Top section
   height: 600px;
   text-align: center;
   background-color: rgba(232, 217, 217, 0.3);
-  justify-content: center;
 }
 .top-section h1 {
   font-size: 80px;
+  font-weight: bolder;
 }
 .top-section article {
-  margin-left: 40%;
+  margin-left: 35%;
   margin-bottom: 50px;
-  width: 400px;
+  margin-right: 35%;
 }
 .top-section .see-plan {
+  text-decoration: none;
+  font-size: larger;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
   background-color: #fb3e49;
   color: white;
-  width: 50px;
-}
-.top-section .join {
-  color: black;
   box-shadow: 8px 8px 0 rgba(251, 59, 73, 0.2);
+}
+.top-section .join-for-free {
+  text-decoration: none;
+  padding: 50px;
+  margin-left: 50px;
+  color: black;
 }
 /* ####################
 Medium section 
@@ -109,9 +131,14 @@ Medium section
 .medium-section h2 {
   background-color: rgba(255, 204, 53, 0.4);
 }
-
+.medium-section article {
+  padding-left: 100px;
+  padding-right: 100px;
+}
 /* Bottom Section */
-
+.bottom-section {
+  text-align: center;
+}
 .bottom-big {
   width: 90%;
   display: flex;
@@ -129,12 +156,12 @@ Medium section
 }
 
 .bottom-section button {
+  font-size: large;
+  margin-top: 50px;
   margin: 20px;
-  box-sizing: border-box;
   line-height: 40px;
   height: 50px;
   width: 250px;
-  text-align: center;
   color: white;
   background-color: black;
   box-shadow: 8px 8px 0 rgba(128, 83, 35, 0.2);
