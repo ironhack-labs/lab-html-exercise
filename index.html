@@ -19,12 +19,12 @@ auditing features built into the npm client, a zero-friction way to make open so
 <body>
     <header>
         <div>
-          <div>
-            <img class="blackHeart" src="/lab-html-exercise/images/black-heart.png" alt="black heart" />
+          <div id="logo-texto">
+            <img class="blackHeart" src="images/black-heart.png" alt="black heart" />
             <span> Nifty Penguin Magic </span>
           </div>
-          <nav>
-            <ul>
+          <nav id="nav-bar">
+            <ul id="nav-ul">
               <li><a href="#"> npm Enterprise </a></li>
               <li><a href="#"> Products </a></li>
               <li><a href="#"> Solutions </a></li>
@@ -35,8 +35,12 @@ auditing features built into the npm client, a zero-friction way to make open so
           </nav>
         </div>
       
-        <div>
-          <!-- add logo, search bar and buttons (or links and style them as buttons later) -->
+        <div id="logo-buscador">
+          <img src="images/npm-logo.png" alt="">
+          <form id="form"> 
+            <input type="search" id="query" name="q" placeholder="Search packages">
+            <button>Search</button>
+          </form>
         </div>
       </header>
     
