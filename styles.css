@@ -115,8 +115,8 @@ form input {
   }
 
   #general-information h1 {
-    font-weight: 3000;
-    font-size: ;
+    font-size: 3em;
+    font-weight: 1000;
   }
 
   .general-description {
@@ -125,14 +125,89 @@ form input {
     padding: 20px;
   }
 
+  .see-plans-button {
+    background: #fb3e44;
+    color: white;
+    border: 0;
+    text-decoration: none;
+    padding: 10px 30px;
+    margin: 20px;
+    box-shadow: 5px 10px #FBD0D2;
+  }
+
+  .join-free-button {
+    background: white;
+    border: 0;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 30px;
+  }
+
 
 
   /* Section 2 */
-  #company {
 
+  #company {
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  #company img {
+    width: 10%;
+  }
+
+  #company h2 {
+    background-color: rgba(255, 204, 53, .4);
+    transform: skew(9deg,0deg);
+    font-style: italic
+  }
+
+  #company article {
+    width:  50%;
+    text-align: center;
   }
 
   /* Section 3 */
-  #org {
 
+  #org {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
   }
+
+  #org img {
+    width: 40px;
+  }
+
+  .org-options {
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .org-options div {
+    width: 200px;
+    margin: 50px;
+  }
+
+  .org-options div h3 {
+    color: #ED1C24;
+    font-weight: bold;
+  }
+
+  #org button {
+    background-color: black;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    color: white;
+    width: 10%;
+    font-style: bold;
+    padding: 15px 50px;
+  }
+ 
