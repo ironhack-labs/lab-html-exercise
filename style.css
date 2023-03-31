@@ -1,0 +1,278 @@
+/* IMPORT FONT POLICY */
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+/* GENERAL SETTING + DEFAULT BROWSER RESET */
+* {margin: 0; padding: 0; font-size: 10px;}
+body {background-color: white; font-family: Poppins;}
+
+/* @MEDIA CONDITIONAL RULE (QUOTE DISAPPEARANCE IN TOP LEFT CORNER) */
+@media only screen and (max-width: 850px) {#quote-box {display: none;} .nav-item {padding: 0 10px 0 0; text-align: left;}}
+
+/* SECTION 1 - HEADER */
+
+    /* TOP NAVIGATION BAR */
+
+.menu {
+    align-items: flex-start;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;}
+aside {
+    display: flex;
+    height: 20px;
+    justify-content: flex-start;
+    padding: 20px;}
+aside img {
+    height: 20px;}
+aside p {
+    font-size: 1.5em;
+    height: 20px;
+    line-height: 20px;}
+aside p:hover {
+    color: rgb(0,0,0,0.8);
+    font-weight: bolder;}
+nav ul {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    padding: 20px;}
+nav li {
+    height: 20px;
+    line-height: 20px;
+    padding: 0 0 0 20px;
+    text-align: right;}
+nav a {
+    color: black;
+    font-size: 1.5em;
+    text-decoration: none;}
+nav a:hover {
+    color: rgb(0,0,0,0.8);
+    font-weight: bolder;}
+
+    /* LOWER SEARCH-BAR AND SITE-MAP */
+
+.access {
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;}
+.search-box {
+    display: flex;
+    justify-content: flex-start;
+    max-width: 1200px;
+    min-width: 470px;
+    width: 70%;}
+.search-logo {
+    box-sizing: border-box;
+    height: 50px;
+    margin: 10px 0 10px 10px;
+    padding: 15px 15px 15px 0px;}
+.search-line {
+    background: rgb(211, 211, 211,0.3) url("./images/magnifying-glass.png") left 10px top 10px / 25px 25px no-repeat;
+    border: 1px solid black;
+    box-sizing: border-box;
+    color: black;
+    font-family: monospace;
+    font-size: 2.0em;
+    height: 50px;
+    letter-spacing: 0.6px;
+    margin: 10px 0;
+    outline: none;
+    padding-left: 50px;
+    text-align: left;
+    width: 80%;}
+.search-line:placeholder-shown {
+    border: none;}
+.search-button {
+    background-color: black;
+    border: none;
+    color:white;
+    font-size: 1.5em;
+    font-weight: bold;
+    height: 50px;
+    line-height: 50px;
+    margin: 10px 10px 10px 0;
+    max-width: 100px;
+    min-width: 100px;
+    text-align: center;}
+.log-box {
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px 0 10px 10px;}
+.sign {
+    box-sizing: border-box;
+    font-size: 1.5em;
+    height: 50px;
+    line-height: 25px;
+    padding: 10px;
+    text-align: center;
+    width: 120px;}
+.in {
+    border: 1px solid lightgray ;
+    text-decoration: none;}
+.in:hover {
+    color: rgb(0,0,0,0.8);
+    font-weight: bolder;}
+.up {
+    border: none;
+    text-decoration: none;} 
+.up:hover {
+    color: rgb(0,0,0,0.8);
+    font-weight: bolder;}
+
+/* SECTION 2 - MAIN */
+
+main {
+align-items: center;
+background: linear-Gradient(135deg, rgb(206,36,116),rgb(204,49,49) 25%, rgb(238,144,48));
+border-bottom: 1px solid lightgray;
+display: flex;
+flex-direction: column;
+min-height: 500px;}
+main h1 {
+    align-items: center;
+    color: white;
+    display: flex;
+    font-size: 7em;
+    font-weight: bold;
+    justify-content: center;
+    line-height: 1em;
+    max-width: 600px;
+    padding: 60px 0 30px 0;
+    text-align: center;
+    width: 55%;}
+main p {
+    align-items: center;
+    color: white;
+    display: flex;
+    font-size: 2em;
+    justify-content: center;
+    line-height: 1.5em;
+    max-width: 720px;
+    min-width: 450px;
+    padding: 0 0 20px 0;
+    text-align: center;
+    width: 70%;}    
+main div {
+    align-items: center;
+    color: white;
+    display: flex;
+    height: 100px;
+    justify-content: space-around;
+    max-width: 500px;
+    min-width: 400px;
+    padding: 0 0 50px 0;
+    width: 45%;}
+.plan {
+    border-radius: 25px;
+    border: none;
+    font-size: 1.8em;
+    font-weight: 700;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    width: 160px;}
+.pro {
+    background-color:rgb(255,195,41);
+    box-shadow: 10px 5px 9px rgb(204,49,49);
+    color: black;}
+.free {
+    background-color:rgb(204,49,49);
+    border: 2px solid white;
+    color: white;}
+
+/* SECTION 3 - CONTENT*/
+
+.content {
+    align-items: center;
+    background: white;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    flex-direction: column;}
+.content .triangle-img {
+    align-items: center;
+    color: white;
+    display: flex;
+    height: 250px;
+    justify-content: center;
+    margin: 30px auto;
+    width: 250px;}
+.content .underliner {
+    align-items: center;
+    background-color: rgb(255,204,53,.4);
+    color: black;
+    display: flex;
+    height: 60px;
+    justify-content: center;
+    max-width: 500px;
+    min-width: 400px;
+    text-align: center;
+    transform: skew(-15deg,0deg); /* to SKEW background underlining */
+    width: 50%;}
+.content .catchword {
+    font-size: 2em;
+    font-weight: bold;
+    transform: skew(15deg,0deg);} /* to REVERSE SKEWED TEXT on top because of skewed background */
+.content .content-wording {
+    align-items: center;
+    display: flex;
+    font-size: 1.5em;
+    justify-content: center;
+    margin: 25px 0 50px 0;
+    min-width: 400px;
+    text-align: center;
+    width: 60%;}
+.content .features {
+    align-items: center;
+    align-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%}
+.content article {
+    align-items: flex-start;
+    align-content: flex-start;
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 20px 0;
+    width: 20%;}
+.content .art-img {
+    height: 50px;
+    margin-bottom: 10px;
+    width: 40px;}
+.content .art-title {
+    color: #ED1C24;
+    font-size: 1.5em;
+    font-weight: 500;
+    margin-bottom: 10px;}
+.content .art-text {
+    font-size: 1em;
+    text-align: left;
+    margin-bottom: 10px;}
+
+/* FOOTER AND LINER */
+
+footer {
+    background: white;
+    border-bottom: 1px solid lightgray;}
+.closing-action {
+    background-color: black;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 25px auto;
+    min-width: 250px;
+    padding: 10px 5%;
+    text-align: center;
+    width: 20%;}
+.finish-liner {
+    background: linear-Gradient(90deg, rgb(238,144,48) 15% ,rgb(204,49,49) 60%, rgb(206,36,116) 90%);
+    border-bottom: 1px solid lightgray;
+    height: 15px;}
+    
+/* STYLING DONE !!! */
