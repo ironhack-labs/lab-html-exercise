@@ -2,8 +2,10 @@
 
 body {
   font-family: 'Poppins';
+  margin: 0;
+  padding: 0;
 }
-
+/* cabecera - buscador */
 header > div {
     padding: 0 25px;
     display: flex;
@@ -40,24 +42,153 @@ nav a {
     width: 50px;
     margin-left: 15px;
 }
-#buscador form{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
+#barra-buscar{
+    width: 87%;
+    margin: 0;
+    padding: 0;
 }
 
-#buscador form input{
+#barra-buscar input{
     background-image: url('images/magnifying-glass.png');
     background-position:left;
     background-repeat: no-repeat;
     background-size: 25px;
     background-color: rgba(0,0,0,.05); 
-    width: 100%;
-    padding: 10px 50px 10px 10px;
-    margin: 10px;
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0 10px 10px;
     box-sizing: border-box;
+    border: none;  
+}
+#barra-buscar button{
+    background: #fb3e44;
+    color: white;
     border: none;
+    padding: 10px;
+}
+#botones-entrar{
+    display: flex;
+}
+.botones-buscador a{
+    text-decoration: none;
+    color: black;
+}
+.boton1 {
+    border: 1px solid black;
+    width: 50%;
+    padding: 10px;
+}
+.boton2{
+    padding: 10px;
+}
+
+/* section 1 */
+#cabecera {
+    height: 600px;
+    background-color: rgba(232,217,217,.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    font-size: 5em;
+    font-weight: 900;
+}
+#cabecera p{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    line-height: 25px;
+    margin-bottom: 60px;
+}
+.botones{
+    margin-top: 30px;
     
     
+}
+.botones a{ 
+    text-decoration: none;
+    margin: 20px;
+    padding: 15px 40px 15px 40px;
+}
+#boton-plans{
+    background-color: #FB3B49;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+    color: white;
+
+}
+#boton-joinfree{
+    color: black;
+    background: white;
+}
+
+/* section 2 */
+#info{
+    height: 600px;
+    padding-top: 60px;
+    text-align: center;
+    margin: auto;
+}
+#info img{
+    width: 15%;
+    display: block;
+    margin: auto;
+}
+#info h2{
+    background: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+    font-style: italic;
+    margin: auto;
+    width: 45%;
+    margin-top: 60px;
+}
+#info p{
+    width: 50%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+/* section 3 */
+.alto{
+    height: 600px;
+}
+#iconos-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+#iconos-info img {
+    width: 10%;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+#iconos-info div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 20px;
+}
+#iconos-info a{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #ED1C24;
+    text-decoration: none;
+    font-weight: 600;
+}
+#boton-org{
+    background-color: black;
+    box-shadow:  8px 8px 0 rgba(128,83,35,.2);
+    color: white;
+    margin: auto;
+    margin-top: 60px;
+    display: block;
+    width: 20%;
+    padding: 10px 40px 10px 40px;
+    text-decoration: none;
+    text-align: center;
 }
