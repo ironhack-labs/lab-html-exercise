@@ -1,9 +1,111 @@
-NPM Clone Nifty Penguin Magic npm Enterprise Products Solutions Resources Docs Support Search Join Log In Build amazing
-things Essential JavaScript development tools that help you go to market faster and build powerful applications using
-modern open source code. See plans Join for free Bring the best of open source to your company npm is the tool used by
-over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it.
-Create an Org and get more out of the tools your team already knows and loves. Zero configuration Create an org, add
-your team, and start collaborating. Nothing to configure, set up, or manage. Team management Control who has access to
-what modules within your team namespace using straightforward team management capabilities. Familiar features npm Orgs
-has 100% parity with all the public npm registry features your developers already use. npm audit Enjoy the security
-auditing features built into the npm client, a zero-friction way to make open source software safer. Create an Org
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- *** README.TXT ***
+This project tracked a mix [given template + current website] of npmjs.com in order to try exploring a few additional learnings, eg.
+	- .js inline code snippet at bottom of HTML to replicate a "click-to-update" quote-box (@ top left corner) ;
+	- @media conditional rule to hide an element (eg. "quote-box") in case of viewing's width limits ;
+	- icon inserted within input element form ;
+	- icon inserted in title (tab of the browser) ;
+	- linear-gradient and background shorthand syntax.
+Rendering should hopefully be robust enough whatever the horizontal/vertical sizings. Thanks. -->
+
+<head>
+    <meta charset="UTF-8">
+    <title>NPM Clone</title>
+	<link rel="icon" type="image" href="./images/npm-logo-title.png">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+	<div class="finish-liner"></div>
+	<header>
+		<section class="menu">
+			<aside id="quote-box">
+				<img src="./images/black-heart.png" alt="black-heart">
+				<p id="quote" onclick="quote()">Need Package Maintenance</p>
+			</aside>
+			<nav>
+				<ul>
+					<li class="nav-item"><a href="https://www.npmjs.com/about" target="_blank">Company</a></li>
+					<li class="nav-item"><a href="https://www.npmjs.com/products" target="_blank">Products</a></li>
+					<li class="nav-item"><a href="https://docs.npmjs.com/getting-started" target="_blank">Solutions</a></li>
+					<li class="nav-item"><a href="https://docs.npmjs.com/about-npm" target="_blank">Resources</a></li>
+					<li class="nav-item"><a href="https://docs.npmjs.com/" target="_blank">Docs</a></li>
+					<li class="nav-item"><a href="https://www.npmjs.com/support" target="_blank">Support</a></li>
+				</ul> 
+			</nav>
+		</section>
+		<section class="access">
+			<form class="search-box" action="/register" method="post">
+				<img class="search-logo" src="./images/npm-logo.png" alt="npm-logo">
+				<input class="search-line" type="text" name="searchline" placeholder="Search Packages">
+				<button class="search-button" type="submit" value="Search">Search</button>
+			</form>
+			<div class="log-box">
+				<a class="sign in" href="https://www.npmjs.com/login">Sign in</a>
+				<a class="sign up" href="https://www.npmjs.com/signup">Sign up</a>
+			</div>
+		</section>
+  	</header>
+	<main>
+		<h1>Build amazing things</h1>
+		<p>Essential JavaScript development tools that help you go to market faster and build powerful applications using	modern open source code.</p>
+		<div>
+			<a class="plan pro" href="https://www.npmjs.com/products/pro">Learn about Pro</a>
+			<a class="plan free" href="https://www.npmjs.com/signup">Sign up for free</a>
+		</div>
+	</main>
+	<section class="content">
+		<figure class="triangle-img">
+			<img src="./images/triangle-hexagon.svg" alt="triangle-hexagon">
+		</figure>
+		<h3 class="underliner">
+			<span class="catchword">Bring the best of open source to your company</span>
+		</h3>
+		<p class="content-wording">npm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it. Create an Org and get more out of the tools your team already knows and loves.</p>
+		<div class="features">
+			<article>
+				<img class="art-img" src="./images/zero-configuration.svg" alt="zero-configuration">
+				<h5 class="art-title">Zero configuration</h5>
+				<p class="art-text">Create an org, add your team, and start collaborating. Nothing to configure, set up, or manage.</p>
+			</article>
+			<article>
+				<img class="art-img" src="./images/team-management.svg" alt="team-management">
+				<h5 class="art-title">Team management</h5>
+				<p class="art-text">Control who has access to what modules within your team namespace using straightforward team management capabilities.</p>
+			</article>
+			<article>
+				<img class="art-img" src="./images/familiar-features.svg" alt="familiar-features">
+				<h5 class="art-title">Familiar features</h5>
+				<p class="art-text">npm Orgs has 100% parity with all the public npm registry features your developers already use.</p>
+			</article>
+			<article>
+				<img class="art-img" src="./images/npm-audit.svg" alt="npm-audit">
+				<h5 class="art-title">npm audit</h5>
+				<p class="art-text">Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer.</p>
+			</article>
+		</div>
+	</section>
+	<footer>
+		<p class="closing-action">Create an Org</p>
+	</footer>
+	<div class="finish-liner"></div>
+</body>
+
+<script>
+	const expansions = [
+		"Nasty Pirate Macaw",
+		"Naughty Push Message",
+		"Ne pas Manger!",
+		"Nectar of Programming Masses",
+		"Need Package Maintenance",
+		"Never Program Mad",
+		"Nice Poodle, Mister",
+		"Nifty Pinguin Magic",
+		"Nightly Piano Man",  
+		"Novice, Practiced, Mastered"];
+	function quote() {
+		let num = Math.floor(Math.random()*expansions.length);
+  		document.getElementById("quote").innerHTML = expansions[num];
+  	};
+</script>
