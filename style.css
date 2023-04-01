@@ -4,19 +4,28 @@ body {
   font-family: 'Poppins';
 }
 
-h1 {    
-    font-size: 4em;
+h1 {
+    font-size: 5.5em;
     text-align: center;
     font-style: bold;
+    margin-top: 50px;
 }
 
 h2 {
-    font-size: 2em;
+    font-size: 2.4em;
     font-style: italic;
     background-color: rgba(255,204,53,.4);
     transform: skew(9deg,0deg);
-    padding: 0 20px;
+    padding: 0 30px;
 }
+
+h3{
+    font-size: 1em;
+    color:#ED1C24;
+    display: flex;
+    align-items: center;
+}
+
 
 /* header */
 
@@ -27,6 +36,7 @@ header > div {
     align-items: center;
     border-bottom: 1px solid lightgray;
 }
+
 
 /* header up nav-bar */
 
@@ -51,6 +61,7 @@ nav a {
     margin-right: 1rem;
 }
 
+
 /* header down nav-bar */
 
 .npm-icon {
@@ -58,6 +69,7 @@ nav a {
 }
 
 form {
+    width: 75%;
     display: flex;
     align-items: center;
 }
@@ -72,6 +84,7 @@ form img {
 .searching-bar {
     width: 75%;
 }
+
 .down-bar input /*barra de busqueda*/ {
     width: 100%;
     margin: 5px 0;
@@ -109,17 +122,19 @@ form img {
 
 
 
+
 /* sección 1 */
 
 #section1 {    
     height: 600px;
+    margin-bottom: 20px;
 }
 
 #section1 .text {
+    font-size: 1.5em;
     text-align: center;
-    width: 45%;
-    text-align: center;
-    padding: 20px;
+    width: 50%;
+    margin-bottom: 40px;
 }
 
 .container {
@@ -131,9 +146,9 @@ form img {
 }
 
 #section1 > div {
-    align-items: center;
-    padding: 50px;
-    
+    align-items: flex-end;
+    padding: 30px;
+    margin-bottom: 50px;
 }
 
 .plans-button {
@@ -146,10 +161,13 @@ form img {
 }
 
 
+
+
 /* sección 2 */
 
 #section2 {
-    height: 500px; 
+    height: 600px; 
+    margin: 10px 0;
     display: flex;
     flex-direction: column;  
     align-items: center;
@@ -158,18 +176,64 @@ form img {
 
 #section2 img {
     width: 200px;
+    margin-top: 40px;
     margin-bottom: 40px;
 }
 
 #section2 > div {
-    width: 75%;
+    width: 70%;
     display: flex;
     flex-direction: column;  
     align-items: center;
     text-align: center;
 }
 
-#section2 article {
-    font-size: 0.90em;
+
+#section2 p {
+    font-size: 1.1em;
 }
 
+
+
+
+/* sección 3 */
+
+#section3 {
+    height: 500px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+ 
+#section3 img {
+    width: 40px;
+    height: 40px;
+}
+
+.each-article {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    margin-left: 15px;
+}
+
+.articles-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 80%;
+}
+
+#section3 button {
+    font-family: 'Poppins';
+    font-size: 1em;
+    color: white;
+    background-color: black;
+    box-shadow: 8px 8px 0 rgba(128, 83, 35, .2);
+    padding: 10px 100px;
+    border: 0;
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
