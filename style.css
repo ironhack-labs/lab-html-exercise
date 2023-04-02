@@ -16,9 +16,42 @@ header>div {
   border-bottom: 1px solid lightgray;
 }
 
+div {
+  display: flex;
+  align-items: center;
+}
+
 .logo {
-  width: 100px;
-  margin-right: 2rem;
+  width: 80px;
+  margin-right: 10px;
+}
+
+.glass {
+  width: 25px;
+  margin-right: 10px;
+}
+
+form {
+  display: flex;
+  align-items: center;
+}
+
+input[type="text"] {
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+button[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 15px;
+  cursor: pointer;
+  font-size: 16px;
 }
 
 .triangle-hexagon {
@@ -72,6 +105,12 @@ nav a {
   box-shadow: 12px 12px 0 rgba(251, 59, 73, 0.2);
 }
 
+#the-best {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 
 .service-container {
   display: flex;
@@ -89,6 +128,7 @@ nav a {
   margin: 50px 5% 0 5%;
   padding: 20px;
   width: 40%;
+  height: 60%;
   box-sizing: border-box;
 }
 
