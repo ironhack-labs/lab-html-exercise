@@ -8,36 +8,115 @@ body {
 }
 
 
-header > div {
-    padding: 0 25px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid lightgray;
-  }
-  
-  .logo {
-    width: 100px;
-    margin-right: 2rem;
-  }
+header>div {
+  padding: 0 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+}
 
-  nav {
-    width: 600px;
-  }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  nav a {
-    text-decoration: none;
-    color: black;
-  }
-  
-  .blackHeart {
-    width: 20px;
-    margin-right: 1rem;
-  }
+.logo {
+  width: 100px;
+  margin-right: 2rem;
+}
+
+.triangle-hexagon {
+  width: 150px;
+}
+
+nav {
+  width: 600px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+.blackHeart {
+  width: 20px;
+  margin-right: 1rem;
+}
+
+#amazing {
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(232, 217, 217, 0.3);
+}
+
+#amazing a {
+  background-color: #FB3B49;
+  box-shadow: 8px 8px 0 rgba(251, 59, 73, 0.2);
+  color: #fff;
+  display: inline-block;
+  font-size: 20px;
+  padding: 15px 30px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+}
+
+#amazing a:hover {
+  background-color: #f0283a;
+  box-shadow: 12px 12px 0 rgba(251, 59, 73, 0.2);
+}
+
+
+.service-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.service-box {
+  font-size: 1.7em;
+  text-align: center;
+  border: 2px solid #eee;
+  border-radius: 20px;
+  box-sizing: border-box;
+  box-shadow: 2px 2px 10px 0 #eee;
+  margin: 50px 5% 0 5%;
+  padding: 20px;
+  width: 40%;
+  box-sizing: border-box;
+}
+
+.service-box img {
+  width: 100px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.create-org {
+  background-color: #030303;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 20px 40px;
+  border-radius: 30px;
+  box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+  transition: all 0.3s ease;
+  margin: 20px;
+}
+
+.create-org:hover {
+  background-color: #f0283a;
+  box-shadow: 12px 12px 0 rgba(128,83,35,.2);
+}
