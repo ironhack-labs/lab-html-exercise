@@ -1,30 +1,152 @@
-<header>
-    <div>
-        <div>
-            <img class="blackHeart" src="/Users/lourdesgonzaleztellez/Desktop/ironhack/prework/labs/lab-html-exercise/images/black-heart.png" alt="black heart" />
-            <span> Nifty Penguin Magic </span>
+<html>
+    <head>
+    <!--<tittle>npm web</tittle>-->
+    <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <!-- HTML1 header & nav-->
+        <!-- header 2div-->
+        <header>
+        <div class="top-header"> <!-- imagen,texto, etiquetas de menu-->
+                <div class="heart">
+                    <img class="blackHeart" src="./images/black-heart.png" alt="black heart" />
+                    <span> Nifty Penguin Magic </span>
+                </div>
+            <nav>
+                <ul>
+                    <li><a href="#npmEnterprise"> npm Enterprise </a></li>
+                    <li><a href="#Products"> Products </a></li>
+                    <li><a href="#Solutions"> Solutions </a></li>
+                    <li><a href="#Resources"> Resources </a></li>
+                    <li><a href="#Docs"> Docs </a></li>
+                    <li><a href="#Suport"> Support </a></li>
+                </ul>
+            </nav>   
         </div>
-        <nav>
-            <ul>
-            <li><a href="#"> npm Enterprise </a></li>
-            <li><a href="#"> Products </a></li>
-            <li><a href="#"> Solutions </a></li>
-            <li><a href="#"> Resources </a></li>
-            <li><a href="#"> Docs </a></li>
-            <li><a href="#"> Support </a></li>
-          </ul>
-        </nav>   
-    </div>
-        
-    <div>
-        <img class="logo" src="images/npm-logo.png" alt="npm logo" />
-        <div class="search bar">
-            <imput type="text" placeholder="Buscar">
-                <i class="bar search"></i>
-        </div>
-
-        </div>
-<!-- add logo, search bar and buttons (or links and style them as buttons later) -->
-    </div>
+        <div class="bottom-header">
+        <!-- add logo, search bar and buttons (or links and style them as buttons later) -->
+            <!--npm logo-->
+            <img class="logo" src="images/npm-logo.png" alt="npm logo" />
+            <!-- search bar lupa y barra-->
+            <div class="link-btn">
+                <form>
+                    <img class="magnifyingGlass" Src="images/magnifying-glass.png" alt="magnifiying glass image"/>
+                    <input type="text" style="text-indent: 55px;"  placeholder="Search packages"></input>
+                </form>
+            </div>
+                <!-- boton search-->
+            <div class="btn-search">
+                <button type="submit">Search</button>
+            </div>
+                <!-- links join log in-->
+                <nav>
+                <ul>
+                    <li><a href="#Join" class="Join-b">Join</a></li>
+                    <li><a href="#Login" clas= "Login-b">Log In</a></li>
+                </ul>
+                </nav>
+            </div>
 
 </header>
+
+<!-- HTML2 Ssecciones de contenido. Sección 1-->
+    <section id="sect-one">
+<!-- box build-->
+        <h1>Build amazing things</h1>
+    <div class="align">
+ <!-- parrafo-->
+        <article class="article">
+            <p class="text-one">Essential JavaScript development tools that help you go to market faster and build powerful applications using modern open source code.</p>
+        </article>
+ <!-- links-->
+    <div class="links-sect-one">
+        <nav class="links-one">
+        
+        <ul>
+            <li><a href="#Seeplans" class="see">See plans</a></li>
+            <li><a href="#Joinforfree" class="join">Join for free</a></li>
+        </ul>
+        </nav>
+    </div>
+    </div>
+
+    </section>
+
+
+
+<!-- HTML2 Ssecciones de contenido. Sección 2-->
+    <section id="sect-two">
+<!-- imagen figura-->
+        <img class="hexagon" src="images/triangle-hexagon.svg" alt="imagen triangle hexagon"/>
+<!-- Caja texto Bring-->
+        <div class="text-box">
+            <h2>Bring the best of open source to your company</h2>
+        </div>
+<!-- caja con párrafo-->
+        <article class="article">
+            <p class="text-two"> npm is the tool used by over 11.000.000 JavaScript developers 
+                around the world. Your developers already use it. Your company depends on it. Create an Org and get more out of 
+                the tools your<br>team already knows and loves.
+            </p>
+        </article>
+    </section>
+
+<!-- HTML2 Ssecciones de contenido. Sección 3-->
+    <section id="sect-three">
+        <div>
+    <!-- text box 1-->
+        <div class="model-sect">
+            <div class="configuration">
+            <img class="zeroconfiguration">
+            <h5>Zero configuration</h5>
+                <p class="text-three">Create an org add your team, and start collaborating. Nothing to configure, set up or manage.
+
+                </p>
+
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <!-- text box 2-->
+                    <div class="">
+                        <div class="">
+                            <img class=""
+                            <h5>Zero configuration</h5>
+                            <p class="text-three">Create an org add your team, and start collaborating. Nothing to configure, set up or manage.
+        
+                            </p>
+        
+                        </div>
+                    </div>
+                </div>
+
+             <div>
+            <!-- text box 3-->
+                    <div class="">
+                                <div class="">
+                                    <img class=""
+                                    <h5>Zero configuration</h5>
+                                    <p class="text-three">Create an org add your team, and start collaborating. Nothing to configure, set up or manage.
+                
+                                    </p>
+                
+                                </div>
+                            </div>
+                        </div>
+                
+                        <div>
+                            <!-- text box 4-->
+                                    <div class="">
+                                        <div class="">
+                                            <img class=""
+                                            <h5>Zero configuration</h5>
+                                            <p class="text-three">Create an org add your team, and start collaborating. Nothing to configure, set up or manage.
+                        
+                                            </p>
+                        
+                                        </div>
+                                    </div>
+                                </div>
+    </section>
+</html>
