@@ -39,7 +39,7 @@ nav a {
 }
 
 #button {
-  background-color: red;
+  background-color: #fb3e44;
   color: white;
   border: none;
   cursor: pointer;
@@ -68,14 +68,14 @@ form {
   margin-left: 20px;
   margin-right: 20px;
   width: 100%;
-  background-color: rgb(235, 230, 230);
+  background-color: rgba(0,0,0,.05);
 }
 
-form input[type="text"] {
+form input {
   width: 100%;
   box-sizing: border-box;
   border: none;
-  background-color: rgb(235, 230, 230);
+  background-color: rgba(0,0,0,.00);
 }
 
 .search-icon {
@@ -100,4 +100,111 @@ div.links > a {
 
 div.links {
   white-space: nowrap;
+}
+.build {
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(232, 217, 217, .3);
+  text-align: center;
+}
+.build article {
+  margin-top: 30px;
+  margin-bottom: 45px;
+  max-width: 400px;
+}
+.build h2 {
+  margin: 0;
+  font-size: 60px;
+}
+
+.build a:first-of-type {
+  background-color: #FB3B49;
+  padding: 15px 40px;
+  color: white;
+  text-decoration: none;
+  box-shadow: 8px 8px 0 rgba(251, 59, 73, .2);
+}
+
+.build a:last-child {
+  color: black;
+  padding: 0px 30px;
+  text-decoration: none;
+}
+
+.open-source {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  flex-direction: column;
+}
+
+.open-source img {
+  width: 200px;
+  height: 200px;
+  margin-right: 50px;
+}
+
+.open-source h3 {
+  background-color: rgba(255, 204, 53, .4);
+  padding: 10px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  transform: skew(9deg, 0deg);
+  font-style: italic;
+}
+
+.open-source article {
+  max-width: 600px;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+}
+
+.option-case {
+  margin: 20px;
+  width: 350px;
+}
+
+.option-case img {
+  margin: auto;
+  width: 50px;
+}
+
+.option-case h5 {
+  color: #ED1C24;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.option-case p {
+  margin: 0;
+  font-size: 16px;
+}
+.options {
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+}
+.create-org {
+  display: block;
+  text-align: center;
+  background-color: #000000;
+  color: white;
+  text-decoration: none;
+  padding: 10px 90px;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  box-shadow: 8px 8px 0 rgba(128, 83, 35, .2);
+  width: 150px;
 }
