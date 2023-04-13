@@ -137,3 +137,75 @@ nav a {
 }
 
 /* 2nd section styles */
+.info__section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+}
+
+.info__section > img {
+    height: 200px;
+    width: 200px;
+}
+
+.info__section header {
+    font-weight: bold;
+    font-size: larger;
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+    font-style: italic;
+    padding: 0px 50px;
+    margin: 30px 0px 20px 0px ;
+}
+
+.info__section > article {
+    width: 40%;
+    text-align: center;
+    font-size: small;
+}
+
+/* 3rd section styles */
+.mgt__info__section {
+    padding: 0px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info__card img {
+    height: 40px;
+    width: 40px;
+}
+
+.mgt__info {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.info__card {
+    max-width: 20%;
+    text-align: justify;
+    padding: 20px;
+}
+
+.info__card header {
+    color: #ED1C24;
+    margin: 20px 0px;
+    font-weight: bold;
+}
+
+.info__card article {
+    font-size: small;
+}
+
+.mgt__info__section > button {
+    width: 300px;
+    align-self: center;
+    box-shadow:  8px 8px 0 rgba(128,83,35,.2);
+    background-color: black;
+    color: white;
+    padding: 15px 20px;
+    margin: 50px 0px;
+}
