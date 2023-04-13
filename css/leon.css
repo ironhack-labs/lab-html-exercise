@@ -6,13 +6,13 @@ body {
 
 }
 
-header>div {
+header .sub-header,
+header .search {
   padding: 10px 25px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid lightgray;
-
 }
 
 nav {
@@ -52,27 +52,17 @@ form input {
   background-color: #f2f2f2;
 }
 
-
-
 div {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-
-
-
 }
-
-
 
 .box {
   width: 1200px;
   background-color: white;
   display: flex;
-
-
-
 }
 
 .icon {
@@ -95,60 +85,139 @@ div {
 
 .box>button {
   background: red;
-  font-size: 20px;
+  font-size: 16px;
   border: 0;
   color: #fff;
   padding: 0 10px;
 }
 
-
-
+.btn-signup{
+  padding: 8px 20px;
+}
 
 .section {
   text-align: center;
-  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  background-color: #f6f6f6;
+  height: 600px;
 }
 
 .section h1 {
   font-size: 80px;
-
+  margin-top: 100px;
 }
 
 .section p {
   font-size: 20px;
   text-align: center;
-
+  width: 30%;
+  margin-bottom: 80px;
 }
+
+.section .actions {
+  display: flex;
+  gap: 24px;
+}
+
+.section .btn-plans,
+.section .btn-join {
+  padding: 18px 48px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.section .btn-plans {
+  box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+}
+
+
+section.example {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+
+section.example img{
+width: 300px;
+}
+
+section.example h1 {
+  font-size: 48px;
+  background-color:rgba(255,204,53,.4);
+  width: fit-content;
+    padding: 0 36px;
+    transform: skew(9deg,0deg);
+    font-style: italic;
+}
+
+section.example p{
+width: 69%;
+}
+
 
 .features {
   padding-top: 60px;
   padding-bottom: 60px;
-  background-color: #f6f6f6;
+  display: flex;
+  justify-content: center;
 }
 
 .features .container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid-gap: 20px;
+  display: flex;
+  width: 90%;
 }
 
 .features .feat {
   padding: 20px;
-  text-align: center;
+  text-align: left;
 }
 
 .features .feat img {
   color: black;
-  font-size: 35px;
+  width: 48px;
 }
 
 .features .feat h3 {
-  font-weight: 800px;
   margin: 30px 0;
+  color: rgb(231, 14, 14);
+  font-weight: bold;
+
 }
 
 .features .feat p {
   line-height: 1, 8;
   color: #777;
   font-size: 17px;
+}
+
+.btn {
+  border: 0;
+  padding: 0 10px;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.text-black {
+  color: #000;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.bg-red {
+  background-color: #FB3B49;
+}
+.text-decoration-none{
+  text-decoration: none;
+}
+.border {
+  border: 1px solid black;
 }
