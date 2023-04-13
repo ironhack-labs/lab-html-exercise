@@ -1,9 +1,523 @@
-NPM Clone Nifty Penguin Magic npm Enterprise Products Solutions Resources Docs Support Search Join Log In Build amazing
-things Essential JavaScript development tools that help you go to market faster and build powerful applications using
-modern open source code. See plans Join for free Bring the best of open source to your company npm is the tool used by
-over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it.
-Create an Org and get more out of the tools your team already knows and loves. Zero configuration Create an org, add
-your team, and start collaborating. Nothing to configure, set up, or manage. Team management Control who has access to
-what modules within your team namespace using straightforward team management capabilities. Familiar features npm Orgs
-has 100% parity with all the public npm registry features your developers already use. npm audit Enjoy the security
-auditing features built into the npm client, a zero-friction way to make open source software safer. Create an Org
+<html>
+  <head>
+        <style>
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:700|Roboto:100,300,700');
+
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: roboto;
+  font-size: 10px;
+  line-height: 3.5em;
+  font-weight: 300;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: roboto condensed;
+}
+
+h1{
+  font-size: 9em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h2{
+  font-size: 5em;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 4em;
+}
+
+h3{
+  font-size: 4.2em;
+  text-align: center;
+  line-height: 1em;
+}
+
+h4{
+  font-size: 1.5em;
+  letter-spacing: 0.4px;
+  line-height: 1em;
+  margin-bottom: 15px;
+}
+
+h5{
+  font-size: 1.2em;
+  line-height: 1em;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.nav-bar{
+  background: rgb(25 33 41);
+  padding: 14px 0 14px 0;
+  
+}
+
+.nav-bar a {
+  color: white;
+  text-decoration: none;
+  font-size: 2em;
+}
+
+.nav-bar-ul{
+  width: 1200px;
+  margin: 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.nav-bar-ul li {
+  list-style-type: none;
+  text-align: center;
+}
+
+.header{
+  height: 650px;
+  background-image: url('https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/ironhack-skydive-background.jpg');
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 50px;
+  position: relative;
+}
+
+.header h2
+{
+  color: white;
+  text-shadow: #020819 8px -20px 9px;
+}
+
+.quote{
+  font-size: 2.5em;
+  line-height: 0.5em;
+  position-left: absolute;
+  position-bottom: absolute;
+}
+
+#general-information{
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+
+#general-information .container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 370px;
+}
+
+.container{
+  whidt: 1200px;
+  margin: 0;
+  padding: 15px auto;
+}
+
+
+.service-box{
+  font-size: 1.7em;
+  text-align: center;
+  border: 2px solid #eee;
+  border-radius: 20px;
+  box-sizing: border-box;
+  box-shadow: 2px 2px 10px 0 #eee;
+  margin: 50px 5% 0 auto;
+  padding: 20px;
+  width: 40%;
+}
+
+.service-box img {
+  width: 125px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.EquipoClaim{
+  background-color: rgb(25, 33, 41);
+  color: white;
+  padding-top: 5px;
+}
+
+.EquipoClaim p{
+  font-size: 2em;
+  font-weight: 100;
+  text-align: center;
+  padding: 20px 0 20px 0;
+}
+
+.dark-background{
+  background-color: rgb(25, 33, 41);
+  color: white;
+}
+
+.dark-background p{
+  font-size: 2em;
+  font-weight: 100;
+  text-align: center;
+  padding: 20px 0 20px 0;
+}
+
+.dark-background a{
+  background-color: rgb(67, 163, 230);
+  color: white;
+  font-family: roboto condensed;
+  font-size: 2em;
+  letter-spacing: 0.5px;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 30px 10px 30px;
+}
+
+
+#team{
+  padding: 75px 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+
+#team p{
+  font-size: 1.9em;
+  align: center;
+  width: 60%;
+  margin: 10px auto;
+}
+
+#team h4{
+  font-size: 1.5em;
+}
+
+#team img {
+  width: 250px;
+  height: 180px;
+}
+
+#team hr{
+  margin: 20px auto 30px auto;
+  width: 40%;
+}
+
+#team article{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.schedule-table{
+  margin: 0 auto 40px auto;
+  font-size: 1.5em;
+  
+}
+
+.schedule-table th, td{
+  style: solid;
+  border-bottom: 1px solid;
+  weigth; 1px;
+  color: black;
+  padding: 5px 10px 5px 10px;
+  text-align: center;
+}
+
+.dark-background-footer{
+  font-size: 1.9em;
+  text-align: center;
+  padding: 40px 100px 40px 100px;
+  margin-bottom: 15px;
+}
+
+footer adress{
+  font-size: 0.8em;
+  font-style: normal;
+  margin-bottom: 30px;
+  }
+
+.dark-background-footer a{
+  font-size: 1em;
+  color: rgb(67, 163, 230, 50);
+  background-color: rgb(25, 33, 41);
+  text-decoration: none;
+  }
+
+footer ul{
+  list-style: none;
+  padding: 0;
+  margin-left: 30px;
+}
+
+.map-frame{
+  height: 375px;
+  width: 60%;
+  margin: 20px 30px 20px 30px;
+}
+
+footer div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 30px;
+}
+
+.slot-form-container{
+  width: 100%;
+  margin: 18px auto 0 auto;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.slot-form-container label{
+  line-height: 15px;
+  margin: 5px;
+}
+
+.slot-form-container input{
+  height: 20px;
+  outline: none;
+  padding: 3px;
+  width: 100%;
+}
+.slot-form-container select{
+  height: 20px;
+  outline: none;
+  padding: 3px;
+  width: 100%;
+}
+
+.slot-form-container div{
+  border: 1px solid black;
+  color: black;
+  background-color: white;
+  padding: 9px;
+  margin: 15px;
+}
+
+section4 h3{
+  width: 100%;
+  color: red;
+}
+
+.slot-form{
+  margin: 0 35% 0 35%;
+}
+
+        </style>
+    
+  </head>
+  <body> 
+    <nav>
+      <div id="#xxxx" class="nav-bar" alt="barra de navegacion">
+      <ul class="nav-bar-ul">
+        <li><a href="#structure">Estructura del dia</a></li>
+        <li><a href="#team">Equipo</a></li>
+        <li><a href="#schedule">Cronograma</a></li>
+      </ul>
+      </div>
+    </nav>
+    
+    
+    <header>
+      <div id="" class="header" alt="">
+      <h1>IronSkydive<img src="https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/ironhack-skydive-logo.png" alt="IronSkydive Logo"></h1>
+      <h2>Que comience el viaje</h2>
+      <aside>
+        <div id="" class="quote">
+          <em>"La mejor experiencia de nuestras vidas"</em>
+        <p>Ariel Quiñones & Gonzalo Manrique. Ironhack founders.</p>
+        </div>
+      </aside>
+      </div>
+    </header>
+    
+  
+    <section1>
+      <div id="general-information" class="dark-background">
+      <article><div class="container">
+        <h3>Hola!</h3>
+        <p>Bienvanido a IronSkydive, la mejor aventura que viviras jamas.</p>
+        <br><a href="#">Aprende mas</a></br>
+      </div>
+      </article>
+    
+      <article><div class="container">
+        <h3>Sobre nosotros</h3>
+        <p>Nos encanta el desarrolo web, pero tambien los deportes extremos.</p>
+        <br><a href="#">Ver video</a></br>
+    </div>
+      </article>
+
+      <article><div class="container">
+        <h3>Quieres unirte?</h3>
+        <p>Únete a nuestro programa de fitness para estar en buena forma mientras aprendes.</p>
+        <br><a href="#">Registro</a></br>
+              </div>
+      </article>
+      </div>
+    </section1>
+  
+  
+    <h3>¿Cómo estructuramos el día?</h3>
+    <section2 class="container">
+
+        <div id="structure" class="service-box">
+        <article>
+          <img src="https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/ironskydive-training.png" alt="logotipo entrenamiento">
+          <h4>Entrenamiento</h4>
+          <p>Aprenderemos todo lo necesario para hacer un salto correcto sin comlicaciones.</p>
+        </article>
+      </div>
+     
+        <div id="structure" class="service-box">
+        <article>
+          <img src="https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/ironskydive-get-ready.png" alt="logotipo estas listo">
+          <h4>Listo!</h4>
+          <p>Ya sabes todo lo necesario, ahora a buscarte una equipacion adecuada.</p>
+        </article>
+      </div>
+      
+      <div id="structure" class="service-box">
+        <article>
+          <img src="https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/ironskydive-fly.png" alt="logotipo vuela">
+          <h4>Vuela</h4>
+          <p>Ya estas preparado y el avion esta listo para despegar, ¡a volar!.</p>
+        </article>
+      </div>
+
+      <div id="structure" class="service-box">
+        <article>
+          <img src="https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/ironskydive-jump.png" alt="logotipo salta">
+          <h4>Salta</h4>
+          <p>Ahora llega lo mas dificil, dar el primer paso, pisa fuerte con el pie derecho y.. salta!.</p>
+        </article>
+      </div>
+     
+    </section2>
+
+  
+    <section3>
+          <div class="EquipoClaim"><h3>Equipo</h3>
+            <p>El equipo junta entre todos al rededor de 75 años de experiencia. Cuando tu saltas de un avion en movimiento, no quieres terminar aplastado en el suelo y por eso te confias a los profesionales mas expertos.</p><hr></div>
+<div id="team" class="dark-background">
+              <article><h4>Harold Rothstein</h4><img src="https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_c18b1c463b80090894237a262dfdfbad.jpg" alt="Salto de Harold Rothstein"></article>
+            <article><h4>Susana phillips</h4><img src="https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_a18d6123a7c8e75f7e70a4e59b941093.jpg" alt="Salto de susana phillips"></article>
+            <article><h4>Taylor roberts</h4><img src="https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_7104a331530d1b0611da55093b7dc421.jpg" alt="Salto de taylor roberts"></article>
+      </div>
+    </section3>
+
+    
+    <section4>
+      <div id="schedule" class="container">
+      <h3>Cronograma</h3>
+      
+      <table class="schedule-table" cellpadding="0" cellspacing="0">
+        <tr>
+            <th>Horario</th>
+            <th>Lunes</th>
+            <th>Martes</th>
+            <th>Miercoles</th>
+            <th>Jueves</th>
+            <th>Viernes</th>
+            <th>Sabado</th>
+        </tr>
+        
+        <tr>
+          <td>9:00 - 11:00</td>
+          <td></td>
+          <td></td>
+          <td>X</td>
+          <td></td>
+          <td>X</td>
+          <td>X</td>
+        </tr>
+        
+        <tr>
+          <td>12:00 - 14:00</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>X</td>
+          <td>X</td>
+        </tr>
+        
+        <tr>
+          <td>15:00 - 17:00</td>
+          <td></td>
+          <td></td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+        </tr>        
+      </table>
+      
+      <h3>Programa una franja horaria</h3><br>
+        
+        <form action="/register" method="post" class="slot-form">
+           <div class="slot-form-container">
+              <label for="Email">Introduce tu correo electrónico</label>
+              <input type="text" name="correo electronico" id="Email" placeholder="Direccion e-mail">
+          </div>
+          <div class="slot-form-container">
+              <label for="Participatns">Número de participantes</label>
+              <input type="number" name="numero" id="Participatns" placeholder="Numero de participantes"><br>
+          </div>
+          <div class="slot-form-container">
+              <label for="Date">Seleccionar fecha</label>
+              <input type="date" name="fecha" id="Date"><br>
+          </div>
+          <div class="slot-form-container">
+              <label for="Time">Seleccionar horario</label>
+              <select name="seleccionar" id="Time">
+                <option value="early">9:00 - 11:00</option>
+                <option value="mid">12:00 - 14:00</option>
+                <option value="late">15:00 - 17:00</option>
+              </select>
+          </div>
+          <div class="slot-form-container">
+          <button type="submit">¡Reserva tu espacio!</button>
+          </div>
+          
+        </form>
+      </div>
+    </section4>
+    
+    <footer class="dark-background-footer"><div class="dark-background">
+      <section>
+        <h5>Información de contacto</h5>
+        <adress>IronSkydive <br>33 Rue la Fayette,<br>75009 París,<br>Francia<br>+33 (0) 619 193 088</br></adress>
+        <h5>Siguenos</h5>
+        <ul>
+          <li><a href="https://www.google.com" target="blank">Gorjeo</a></li>
+          <li><a href="https://es-es.facebook.com/" target="blank">Facebook</a></li>
+          <li><a href="https://www.instagram.com/" target="blank">Instagram</a></li>
+        </ul>
+      </section>
+      
+                  <iframe src="https://www.google.com/maps/embedpb=!1m18!1m12!1m3!1d2624.142047744348!2d2.3354330160472316!3d48.87456857928921!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e38f817b573%3A0x48d69c30470e7aeb!2sIronhack!5e0!3m2!1sen!2ses!4v1495208746099" class="map-frame" frameborder="0" style="border:0" allowfullscreen>
+                  </iframe>
+      </div>
+    </footer>
+  
+  </body>
+  
+</html>
