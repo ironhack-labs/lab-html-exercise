@@ -4,7 +4,14 @@ html,
 body {
     font-family: 'Poppins';
     margin: 0;
-    padding: 0 10px;
+    padding: 0 20px;
+}
+
+h1,
+h2,
+h3 {
+    padding: 0;
+    margin: 0;
 }
 
 header > div {
@@ -90,4 +97,48 @@ nav a {
     color: black;
     padding: 5px 0 5px 15px;
     font-size: 0.9em;
+}
+
+#first {
+    height: 600px;    
+    background-color: rgba(232,217,217,.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.first-title {
+    font-size: 4em;
+}
+
+#first > article {
+    font-size: 1em;
+    max-width: 425px;
+    text-align: center;
+    margin: 40px 0;
+}
+
+.first-btn {
+    width: 425px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.first-btn > a {
+    text-decoration: none;
+    padding: 10px 55px;
+    font-size: 1em;
+}
+
+.btn-plans {
+    background-color: #FB3B49;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+    color: white;
+}
+
+.btn-join {
+    color: black;
+    background-color: white;
+    font-weight: 700;
 }
