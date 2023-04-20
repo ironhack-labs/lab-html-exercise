@@ -1,3 +1,283 @@
-img {
-    width: 50px;
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
+:root {
+  --form-label-color: rgba(0, 0, 0, 0.95);
+  --form-input-color: rgba(0, 0, 0, 0.05);
+  --form-button-background-color: #fb3e44;
+  --form-button-letters-color: white;
+  --border-black: 1px black solid;
+  --border-transparent: 1px transparent solid;
+  /* --debug-border: 1px pink solid; */
+}
+
+body {
+  font-family: "Poppins";
+  margin: 20px 40px;
+}
+
+section {
+  height: 600px;
+}
+
+/* HEADER */
+
+header {
+  border: var(--debug-border);
+}
+
+header > div {
+  border-bottom: 1px solid lightgray;
+}
+
+/* HEADER top line */
+
+nav {
+  margin-right: 10px;
+}
+
+nav li {
+  list-style: none;
+}
+
+#header-top-line {
+  display: flex;
+  justify-content: space-between;
+}
+
+#header-top-line img {
+  height: 15px;
+  margin: 0 10px;
+}
+
+#heart-box {
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  border: var(--debug-border);
+  margin: 0;
+  display: flex;
+}
+
+nav li {
+  margin: 10px;
+}
+
+header a {
+  text-decoration: none;
+  color: var(--form-button-label-color);
+}
+
+nav a {
+  font-weight: 600;
+}
+
+#header-bottom-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* HEADER bottom line */
+
+#header-bottom-line .logo {
+  margin: auto 10px auto 20px;
+  height: 20px;
+}
+
+#header-bottom-line .search-icon {
+  margin: 10px;
+  height: 20px;
+}
+
+#search-box {
+  border: var(--debug-border);
+  display: flex;
+  width: 90%;
+  margin: 5px 0px;
+  transition-property: width;
+  transition-duration: 1s;
+}
+
+@media (max-width: 1200px) {
+  #search-box {
+    width: 70%;
+    transition-property: width;
+    transition-duration: 1s;
+  }
+}
+
+#search-box * {
+  font-family: "Fira Mono", "Andale Mono", "Consolas", monospace;
+}
+
+#input-search-package {
+  padding-left: 40px;
+  margin-left: -40px;
+  border: var(--border-transparent);
+  background-color: var(--form-input-color);
+  width: 100%;
+}
+
+#input-search-package:focus {
+  border-top: var(--border-black);
+  border-bottom: var(--border-black);
+  border-left: var(--border-black);
+  border-right: var(--border-transparent);
+  outline: none !important;
+}
+
+#search-box button {
+  background-color: var(--form-button-background-color);
+  color: var(--form-button-letters-color);
+  border: var(--border-transparent);
+  padding: 5px 20px;
+  font-size: larger;
+}
+
+#input-search-package:focus + button {
+  border-top: var(--border-black);
+  border-right: var(--border-black);
+  border-bottom: var(--border-black);
+  border-left: var(--border-transparent);
+}
+
+#right-buttons {
+  width: 200px;
+  text-align: end;
+}
+
+#header-bottom-line a {
+  color: var(--form-input-color);
+  padding: 5px 20px;
+  font-weight: 600;
+  color: gray;
+  display: inline-block;
+}
+
+#join-button {
+  border: 1px solid lightgrey;
+}
+
+/* Build amazing things section */
+#build-amazing-things {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f4f4;
+}
+
+#build-amazing-things article {
+  width: 440px;
+  text-align: center;
+}
+
+#build-amazing-things h1 {
+  font-family: "Poppins", "sans-serif";
+  font-weight: 900;
+  font-size: 5rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+@media (max-width: 1000px) {
+  #build-amazing-things h1 {
+    font-size: 3rem;
+  }
+}
+
+#build-amazing-things .buttons {
+  padding: 50px 0;
+  width: 420px;
+  border: var(--debug-border);
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-red {
+  color: white;
+  background-color: var(--form-button-background-color);
+  text-decoration: none;
+  padding: 15px 50px;
+  box-shadow: 8px 8px 0 rgba(251, 59, 73, 0.2);
+  font-weight: bold;
+}
+
+.btn-white {
+  color: black;
+  background-color: white;
+  text-decoration: none;
+  padding: 15px 50px;
+  font-weight: bold;
+}
+
+/* Best open-source section */
+#best-open-source {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#best-open-source img {
+  margin: 40px;
+  width: 250px;
+}
+
+#best-open-source span {
+  width: 800px;
+  text-align: center;
+}
+
+@media (max-width: 1000px) {
+  #best-open-source span {
+    width: 500px;
+  }
+}
+
+#best-open-source h1 {
+  background-color: rgba(255, 204, 53, 0.4);
+  padding: 0 20px;
+  transform: skew(9deg, 0deg);
+  font-style: italic;
+}
+
+/* Features section*/
+#features {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.feature-list {
+  display: flex;
+  justify-content: center;
+}
+
+.feature-list img {
+  height: 30px;
+}
+
+.feature {
+  width: 18%;
+  padding: 30px;
+}
+
+.feature h2 {
+  color: #ed1c24;
+  font-size: smaller;
+}
+
+#features button {
+  color: white;
+  background-color: black;
+  padding: 15px 100px;
+  border: 0;
+  font-weight: bolder;
+  font-size: larger;
+  box-shadow: 8px 8px 0 rgba(128, 83, 35, 0.2);
+  margin-bottom: 70px;
 }
