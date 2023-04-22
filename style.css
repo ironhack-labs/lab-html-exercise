@@ -31,7 +31,8 @@ background-color: #fff;
 }
 
 .header-container {
-  padding: 8px 0;
+  width: 100%;
+  padding: 20px 0;
 }
 
 .header-wrapper {
@@ -42,6 +43,8 @@ background-color: #fff;
   max-width: 96rem;
 
 }
+
+/* brand */
 
 .brand-wrapper {
   display: flex;
@@ -78,8 +81,128 @@ background-color: #fff;
 }
 
 
+/* bottom part of header */
+
+.border-top {
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-color: rgba(0,0,0,.1);
+}
+
+.logo {
+  width: 70px ;
+  margin-top: 1rem;
+  margin-right: 1rem;
+  flex-grow: 0;
+  padding-bottom: 0;
+  padding-top: 8px;
+}
+
+.action-btn {
+  color: #000;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  text-align: center;
+  padding: 13px 28px;
+  border: 1px solid #cccccc;
+  border-radius: 0;
+}
+
+.action-btn:hover {
+  opacity: 0.5;
+}
+
+.search-btn {
+  font-family: 'Poppins';
+    letter-spacing: 0.3px;
+    outline-offset: 3px;
+    z-index: 1;
+    font-weight: bold;
+    background-color: #231f20;
+    border-style: none;
+    border-width: 0;
+    color: #fff;
+    padding: 0.5rem 2rem;
+}
+
+.login-btn{
+  border: none;
+  padding-right: 0;
+}
+
+.flex-auto {
+  flex: 1 1 auto;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.inline {
+  justify-content: space-between;
+}
 
 
+.form-wrapper {
+  flex: 1;
+  padding: 0.5rem 0;
+}
+
+.search-form {
+  display: flex;
+  padding-right: 50px;
+}
+
+.search-box-wrapper {
+  display: flex;
+  flex: 1;
+  border: 1px solid #f2f2f2;
+  background: #f2f2f2;
+  padding: 5px;
+}
+
+.search-box-wrapper svg {
+  height: 18px;
+  width: 18px;
+  color:#000;
+
+}
+
+.svg-wrapper {
+  padding: 10px 0.25rem 0 1rem;
+  float: left;
+}
+
+.search-box {
+  background: none;
+  font-family: 'Fira Mono', 'Andale Mono', 'Consolas', monospace;
+  font-size: 16px;
+  letter-spacing: 0px;
+  border: none;
+  outline: unset;
+  height: 40px;
+  padding-left: 10px;
+  border-radius: 0;
+  width: calc(100% - 10px);
+} 
+
+.search-btn {
+  font-family: 'Poppins';
+    letter-spacing: 0.3px;
+    outline-offset: 3px;
+    z-index: 1;
+    font-weight: bold;
+    background-color: #cb3837;
+    border-style: none;
+    border-width: 0;
+    color: #fff;
+    padding: 15px 2rem;
+}
+
+.search-btn:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
 
 
 
