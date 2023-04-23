@@ -12,6 +12,8 @@ header > div {
   border-bottom: 1px solid lightgray;
 }
 
+/* Top part of the header, navigatio */
+
 nav {
   width: 600px;
 }
@@ -28,11 +30,16 @@ nav a {
   color: black;
 }
 
+nav a:hover {
+  opacity: 0.5;
+}
+
 .blackHeart {
   width: 20px;
   margin-right: 1rem;
 }
 
+/* Bottom part of the header with search and action btns */
 .header-bottom {
   gap: 15px;
   padding-top: 10px;
@@ -42,6 +49,9 @@ nav a {
 .npmLogo {
   width: 45px;
 }
+
+
+/* Search form  */
 
 .search-form {
   flex-grow: 1;
@@ -101,5 +111,61 @@ nav a {
   border: none;
 }
 
+
+
+
+/* Home section  */
+
+#home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: rgba(232,217,217,.3);
+  height: 600px;
+}
+
+#home h1 {
+  font-size: 5rem;
+  margin: 0.67em 0;
+}
+
+#home article p {
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+#home .btns {
+  display: flex;
+  padding: 4rem 2rem;
+  min-width: 240px;
+  padding: 20px;
+  border: none;
+}
+
+.btn {
+  color: #fff;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  text-align: center;
+  padding: 20px;
+  border-radius: 0;
+  min-width: 250px;
+}
+
+.btn:hover {
+  box-shadow: none;
+  opacity: 0.5;
+}
+
+.seePlansBtn {
+  background: #FB3B49;
+  box-shadow:  8px 8px 0 rgba(251,59,73,.2);
+}
+
+.joinBtn {
+  background: #fff;
+  color: #000;
+}
 
 
