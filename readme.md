@@ -60,7 +60,7 @@ The very first step is deciding **how to structure the page and picking the corr
 
 Our recommendation is to try to keep it as simple as possible. Try to identify the different sections, and add `id`'s or `classes` to each `<div>`, `<section>`, `<ul>`, or `<header>` block elements to identify these elements. Here is suggested guideline but you might have something on your mind that is different from this - bring it up.
 
-![](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_b66cd7ffb1375749905516dfc0961979.png)
+![](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_b66cd7ffb137574.9905516dfc0961979.png)
 
 #### HTML 1 | `<header>` & `<nav>`
 
