@@ -1,5 +1,89 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
+body {
+  font-family: "Poppins";
+}
+
+main {
+  position: absolute;
+}
+
 html,
 body {
   margin: 0;
   padding: 0;
+}
+
+header > div {
+  padding: 0 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1500px;
+}
+
+input {
+  width: 80%;
+  border: none;
+  background: #eeee;
+  height: 35px;
+  padding-left: 50px;
+}
+
+nav {
+  width: 600px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+.blackHeart {
+  width: 20px;
+  margin-right: 1rem;
+}
+
+.logo {
+  width: 75px;
+}
+
+.searchIcon {
+  width: 20px;
+  position: relative;
+  left: 40px;
+}
+
+.searchBtn {
+  position: relative;
+  right: 70px;
+  height: 35px;
+  padding: 0 20px;
+  color: white;
+  background: #fb3e44;
+  border: none;
+}
+
+.headerBtn {
+  padding: 5px 15px;
+  font-size: 14px;
+  width: 100px;
+  border: none;
+  background-color: white;
+}
+
+.headerBtn:hover {
+  border: 1px solid black;
 }
