@@ -4,16 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/styles.css" />
     <title>NPM</title>
   </head>
   <body>
     <main>
-      <header>
+      <header class="header">
         <div>
           <img src="images/black-heart.png" alt="black heart" class="heart" />
           <p>Neverending Pun Machines</p>
         </div>
-        <nav>
+        <nav class="nav-bar">
           <ul>
             <li>npm Enterprise</li>
             <li>Products</li>
@@ -23,12 +24,12 @@
             <li>Support</li>
           </ul>
         </nav>
-        <img src="images/npm-logo.png" alt="npm logo" />
-        <img src="images/magnifying-glass.png" alt="magnifying glass" />
+        <img src="images/npm-logo.png" alt="npm logo" class="logo" />
+        <img src="images/magnifying-glass.png" alt="magnifying glass" class="search-icon" />
         <input type="text" name="search" id="search" />
-        <button type="submit" value="submit">Search</button>
-        <button>Join</button>
-        <button>Log in</button>
+        <button type="submit" value="submit" class="search-btn">Search</button>
+        <button class="header-btn">Join</button>
+        <button class="header-btn">Log in</button>
       </header>
 
       <h1>Build amazing things</h1>
@@ -37,7 +38,7 @@
       <button>Join for free</button>
       <section>
         <div>
-          <img src="images/triangle-hexagon.svg" width="100px" />
+          <img src="images/triangle-hexagon.svg" />
           <h2>Bring the best of open source to your company</h2>
           <p>
             npm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it. Create an Org and get more
@@ -47,22 +48,22 @@
       </section>
       <section>
         <div>
-          <img src="" alt="" />
+          <img src="images/zero-configuration.svg" alt="zero configurations icon" />
           <h3>Zero configuration</h3>
           <p>Create an org, add your team, and start collaborating. Nothing to configure, set up, or manage</p>
         </div>
         <div>
-          <img src="" alt="" />
+          <img src="images/team-management.svg" alt="team management icon" />
           <h3>Team management</h3>
           <p>Control who has access to what modules within your team namespace using straightforward team management capabilities.</p>
         </div>
         <div>
-          <img src="" alt="" />
+          <img src="images/familiar-features.svg" alt="familiar features icon" />
           <h3>Familiar features</h3>
           <p>npm Orgs has 100% parity with all the public npm registry features your developers already use.</p>
         </div>
         <div>
-          <img src="" alt="" />
+          <img src="images/npm-audit.svg" alt="npm audit icon" />
           <h3>npm audit</h3>
           <p>Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer.</p>
         </div>
