@@ -21,12 +21,118 @@ nav {
     font-size: 16px;
 }
 
+.nav2 {
+	display: flex;
+	flex-direction: space-between;
+	flex-wrap: nowrap;
+	justify-content: left;
+	align-items: center;
+	align-content: stretch;
+}
+
 nav ul {
     list-style: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
+.lastPart {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    flex-direction: row;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    width: 90%;
+    justify-content: space-between;
+    display: flex;
+    margin-top: 50px;
+    gap: 70px;
+}
+
+.lastPart div {
+    max-width: 250px;
+    margin: auto;
+  }
+
+.h2 {
+    height: 45px;
+}
+
+h3 {
+    font-family: Poppins;
+    color: #ED1C24;
+    font-size: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    font-weight: 700;
+}
+
+.login {
+    display: flex;
+  }
+
+  .login {
+    display: flex;
+  }
+
+  .login a {
+    display: inline-block;
+    padding: 6px 12px;
+    text-decoration: none;
+    color: black;
+    background-color: #ffffff;
+    border: 1px solid #000;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-left: 40px;
+  }
+
+  .login .join {
+    border: none;
+  }
+
+.searchZone {
+    background-color: #f2f2f2;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    width: 80%;
+  }
+
+  .searchLogo {
+    width: 30px;
+    height: 25px;
+    margin-right: 10px;
+    
+  }
+
+  .searchZone form {
+    flex: 1;
+    display: flex;
+  }
+
+  .searchZone input[type="search"] {
+    flex: 1;
+    padding: 8px;
+    font-size: 16px;
+    background-color: #f2f2f2;
+    border: none;
+    font-family: Arial, sans-serif;
+  }
+
+  .searchZone button[type="submit"] {
+    padding: 8px 16px;
+    background-color: #FB3B49;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 0px;
+  }
 
 nav a {
     text-decoration: none;
@@ -39,8 +145,9 @@ nav a {
 }
 
 .npmLogo {
-    width: 150px;
+    width: 100px;
     margin-right: 1rem;
+    margin-top: 15px;
 
 }
 
@@ -53,8 +160,8 @@ nav a {
 }
 
 .searchLogo {
-    width: 40px;
-    
+    width: 25px;
+    align-items: flex-start;
 }
 
 .center {
@@ -69,12 +176,128 @@ nav a {
     line-height: 1.5;
 }
 
+#texto2 {
+    max-width: 34em;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.imagenCentral {
+    width: 250px;
+    align-items: center;
+}
+
 #all_content {
     display: block;
+    background-color: rgba(232,217,217,.3);
+    height: 600px;
+    
+    
 }
+
+#content2 {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: center;
+    background-color: white;
+    margin-top: 60px;
+}
+
+#frasecita {
+    margin-top: 50px;
+    text-decoration: underline;
+    text-decoration-color: rgba(255,204,53,.4);
+    text-align: center;
+    font-size: 2.25rem;
+    font-weight: 600;
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+}
+
+
+
+#frasecita span {
+    font-style: italic;
+    font-weight: bold;
+    color: black;
+}
+
+#frasecita span::before {
+    content: "";
+    position: absolute;
+    width: 108%;
+    height: 100%;
+    z-index: -1;
+    left: -5%;
+    top: -6%;
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg)
+  }
 
 h1 {
     font-size: 5rem;
     text-align: center;
     font-weight: bold;
 }
+
+#botones {
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    padding-left: 23rem;
+    padding-right: 23rem;
+    width: 70%;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.plans {
+    padding-left: 65px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 65px;
+    min-width: 250px;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    background-color: #FB3B49;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+    font-weight: 700;
+    display: inline-block;
+    font-size: 1.25rem;
+    box-sizing: border-box;
+    transition: transform 0.3s ease-in-out;
+}
+
+.plans:hover {
+    transform: scale(0.95);
+  }
+
+.joinFree {
+    box-sizing: border-box;
+    font-weight: 700;
+    display: inline-block;
+    background-color: white;
+    padding-left: 65px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 65px;
+    border: none;
+    font-size: 1.25rem;
+    text-decoration: none;
+    color: black;
+    transition: transform 0.3s ease-in-out;
+}
+
+.joinFree:hover {
+    transform: scale(0.95);
+  }
+
