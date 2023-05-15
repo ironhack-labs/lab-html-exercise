@@ -30,10 +30,12 @@ nav a {
 .blackHeart {
     width: 20px;
     margin-right: 1rem;
+    margin-left: 1rem;
 }
 
 .logo {
     height: 30px;
+    margin-left: 1rem;
 }
 .glass {
     width: 40px;
@@ -61,12 +63,20 @@ nav a {
     color: white;
     border: none;
     font-size: larger;
-    height: 50px;
+    height: 40px;
     margin: 0;
     border: 0;
-    
 }
 
+.join {
+    text-decoration: none;
+    color: black;
+}
+.login {
+    text-decoration: none;
+    color: black;
+    margin-right: 1rem;
+}
 #introduction {
     display: flex;
     flex-direction: column;
@@ -75,6 +85,27 @@ nav a {
     height: 600px;
     background-color: rgba(232, 217, 217, .3)
 }
+#introduction>div {
+    display: flex;
+    flex-direction: row;
+}
+
+.plans{
+    background: #fb3b49;
+    color: white;
+    box-shadow: 8px 8px 0 rgba(251, 59, 73, .2);
+    padding: 10px;
+    margin: 20px;
+}
+
+.freejoin{
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    margin: 20px;
+}
+
+
 h1{
     font-size: 6em;
     font-weight: bolder;
@@ -93,9 +124,60 @@ h1{
     height: 600px;
 }
 h2{
-    background-color: rgba(255, 204, 53, .4)
+    background-color: rgba(255, 204, 53, .4);
+    transform: skew(9deg,0deg);
+    font-style: italic;
+    margin-top: 50px;
+    width: 50%;
+    text-align: center;
 }
 
 .hexagone {
     width: 250px;
 }
+
+#description article{
+    width: 50%;
+    text-align: center;
+}
+
+h3 {
+    color:#ED1C24;
+    margin: 15px;
+}
+
+#features img {
+    width: 100px;
+}
+
+.box{
+    font-size: 1em;
+    box-sizing: border-box;
+    margin: 10px;
+    padding: 10px;
+    width: 40%;
+    text-align: left;
+  }
+
+  #features{
+    display: flex;
+    flex-direction: row;
+  }
+
+.org{
+    background: black;
+    color: white;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    text-decoration: none;
+    padding: 10px;
+    width: 20%;
+    text-align: center;
+  }
+  .final {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    margin: 20px;
+  }
