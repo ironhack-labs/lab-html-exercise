@@ -49,13 +49,42 @@ header > div {
   #css3-section1 {
     height: 600px;
     background-color: rgba(232,217,217);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .headline{
+    font-size:80px; 
+  }
+
+  .css3-textbox{
+    width: 33%;
+    text-align: justify;
+    padding: 10px;
+  }
+
+  .section3-buttons {
+    width: 33%;
+    height: 20%;
+    display: flex;;
+    justify-content: space-between;
+    align-items: center;
+  } 
+
+  .section3-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
   }
 
   .see-plans {
+    height: 10%;
     background-color: #FB3B49;
     box-shadow: 8px 8px 0 rgba(251,59,73,.2);
     padding: 20px;
-    min-width: 250px;
     text-align: center;
     color: #fff;
   }
