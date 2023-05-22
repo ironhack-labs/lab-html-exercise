@@ -1,0 +1,278 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
+/* form label color: rgba(0,0,0,.05)
+form input color: rgba(0,0,0,.05)
+form button background color: #fb3e44
+form button letters color: white */
+
+/* Header */
+
+header > div {
+  padding: 5px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+}
+
+/* Upper div */
+
+/* This was the only way I could make the npm Enterprise list element not wrap */
+.nav-list a {
+  width: 125px;
+}
+
+nav {
+  width: 70%;
+}
+
+nav ul,
+li {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+.blackHeart {
+  width: 20px;
+  margin-right: 1rem;
+}
+
+/* Lower div */
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: right;
+}
+
+.npmLogo {
+  width: 100px;
+  margin-right: 20px;
+}
+
+.search-field {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.search-field img {
+  background-color: rgb(241, 241, 241);
+  width: 20px;
+  padding: 13px;
+}
+
+.search-field input {
+  width: 40rem;
+  background-color: rgb(241, 241, 241);
+  box-sizing: border-box;
+  border: 0;
+  padding: 15px 15px 15px 40px;
+  outline: none;
+}
+
+.search-field button {
+  background-color: #fb3b49;
+  border: 0;
+  border-radius: 0px;
+  color: #ffffff;
+  padding: 15px 20px;
+}
+
+.search-field i {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  font-size: 16px;
+}
+
+.join-button {
+  text-align: center;
+  border: 1px solid grey;
+  text-decoration: none;
+  color: black;
+  margin-right: 25px;
+  padding: 10px;
+}
+
+.login-button {
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+}
+
+/* Body start */
+
+body {
+  font-family: "Poppins";
+  margin-bottom: 100px;
+}
+
+h1 {
+  font-size: 80px;
+  font-weight: 800px;
+  font-style: Bold;
+}
+
+/* Section 1 – Build amazing things etc */
+
+.section-one {
+  height: 600px;
+  background-color: rgba(232, 217, 217, 0.3);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+}
+
+.section-one ul {
+  display: flex;
+  align-items: stretch;
+  text-align: center;
+  justify-content: center;
+}
+
+.section-one div,
+ul,
+li {
+  width: 25em;
+  height: 1em;
+  display: flex;
+  flex-direction: row;
+  padding: 1em 2em 1em 2em;
+  margin: 0 1em 0 1em;
+  font-style: bold;
+  text-align: center;
+  justify-content: center;
+}
+
+.section-one p {
+  text-align: center;
+  width: 33%;
+  margin-bottom: 50px;
+}
+
+.section-one-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.see-plans {
+  background-color: #fb3b49;
+  color: white;
+  text-decoration: none;
+  padding: 16px 32px;
+  text-align: center;
+  box-shadow: 8px 8px rgba(251, 59, 73, 0.2);
+  margin-right: 50px;
+}
+
+.join-free {
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  padding: 16px 32px;
+  text-align: center;
+}
+
+/* Section 2 – Bring the best of open source etc */
+
+.section-two {
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+}
+
+.section-two img {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 30px;
+}
+
+.section-two span {
+  font-style: italic;
+  line-height: 70%;
+  padding: 0 30px 0px 30px;
+  margin: 50px;
+  background-color: rgba(255, 204, 53, 0.4);
+  transform: skew(9deg, 0deg);
+}
+
+.section-two article {
+  width: 600px;
+  text-align: center;
+}
+
+/* Section 3 – info boxes */
+
+#info-box-container {
+  padding: 100px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: left;
+  align-items: center;
+  align-content: space-between;
+  margin: 0 150px 0 150px;
+}
+
+#info-box-container div {
+  padding: 20px;
+}
+
+.section-three infoBox {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 250px;
+}
+
+.section-three h4 {
+  color: #ed1c24;
+}
+
+#section-three p {
+  font-size: 14;
+}
+
+.section-three img {
+  width: 40px;
+  height: 40px;
+}
+
+.create-org-button {
+  padding: 15px 45px 15px 45px;
+  background-color: black;
+
+  font-size: 16;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+.create-org-button-position {
+  padding: 0px 125px;
+  text-align: center;
+  margin-bottom: 100px;
+  margin-top: 50px;
+}
