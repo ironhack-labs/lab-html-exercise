@@ -1,22 +1,28 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
-body {
-  font-family: 'Poppins';
+html, body {
+  margin: 0;
+  padding: 0;
 }
 
-html, body {
-    margin: 0;
-    padding: 0;
-  }
+body {
+  font-family: 'Poppins';
+  background-color: white;
+}
 
-  header > div {
-    padding: 0 25px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid lightgray;
-  }
-  
+.headersize {
+  height: 50px;
+}
+
+header > div {
+  padding: 0 25px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+  justify-content: space-between;
+  font-weight: bold;
+    }
+
   nav {
     width: 600px;
   }
@@ -36,6 +42,30 @@ html, body {
   .blackHeart {
     width: 20px;
     margin-right: 1rem;
+  }
+
+  .npm-logo {
+    height: 30px;
+    margin-right: 10px;
+  }
+
+#secondLine {
+  display: flex;
+  justify-content: flex-start;
+  
+}
+  #form input{
+    background-image: url(images/magnifying-glass.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 35px;
+    text-align: center;
+    }
+
+  #registerButton {
+    display : flex;
+    
   }
 
   /* Useful information:

@@ -13,10 +13,11 @@
 <body>
 
 
-  <!-- logo, search bar and buttons (or links and style them as buttons later) -->
+  <!-- firstLine: logo, nav
+      secondLine: logo search bar and subcription buttons -->
 
   <header>
-    <div>
+    <div id="firstLine" class="headersize">
       <div>
         <img class="blackHeart" src="images/black-heart.png" alt="black heart logo">
         <span> Nifty Penguin Magic </span>
@@ -34,20 +35,19 @@
     </div>
     
     
-    <div>
+    <div id="secondLine" class="headersize">
       <img class="npm-logo" src="images/npm-logo.png" alt="npm site logo" />
-      <form>
-        <img class="magnifyingGlass" src="images/magnifying-glass.png" alt="magnifying glass logo" />
-        <input type="search" id="siteSearch" name="q"
-        placeholder="Search packages" required>
-        <button>Search</button>
-        <span class="validity"></span>
-          <div>
-            <a href="#">Join</a>
-            <a href="#">Log In</a>
-          </div>      
+        <form id="form">          
+          <input type="search" id="siteSearch" name="q" placeholder="Search packages" required>
+         <button>Search</button>
+          <span class="validity"></span>
       </form>
+      <div id="registerButton">
+        <a href="#">Join</a>
+        <a href="#">Log In</a>
+      </div> 
     </div>
+    
   </header>
 
 
