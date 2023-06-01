@@ -6,24 +6,25 @@ html, body {
 }
 
 body {
-  font-family: 'Poppins';
+  font-family: 'Poppins', 'sans-serif';
   background-color: white;
 }
 
-.headersize {
-  height: 50px;
-}
-
 header > div {
+  height: 50px;
   padding: 0 25px;
   display: flex;
   align-items: center;
   border-bottom: 1px solid lightgray;
   justify-content: space-between;
-  font-weight: bold;
+  
     }
 
-  nav {
+#firstLine {
+  font-weight: bold;
+}
+
+ nav {
     width: 600px;
   }
   
@@ -44,32 +45,70 @@ header > div {
     margin-right: 1rem;
   }
 
-  .npm-logo {
-    height: 30px;
-    margin-right: 10px;
-  }
 
-#secondLine {
-  display: flex;
-  justify-content: flex-start;
-  
-}
-  #form input{
-    background-image: url(images/magnifying-glass.png);
-    background-position: left;
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 35px;
-    text-align: center;
+  #secondLine {
+    display: flex;
+    justify-content: flex-start;
     }
 
-  #registerButton {
-    display : flex;
-    
-  }
+  .npm-logo {
+    height: 20px;
+    margin-right: 1rem;
+     }
 
-  /* Useful information:
+    /* Useful Information
 form label color: rgba(0,0,0,.05)
 form input color: rgba(0,0,0,.05)
 form button background color: #fb3e44
 form button letters color: white */
+
+.magnifying-glass{
+  height: 20px;
+  margin: 0;
+  padding: 10px;
+  background-color: rgba(0,0,0,.05);
+}
+
+#form input{
+    color: rgba(0,0,0,.05);
+    height: 40px;
+    width: 800px;
+    border: 0;
+    margin: 0;
+    font-family: 'Poppins';
+    background-color: rgba(0,0,0,.05);
+}
+
+.searchButton {
+    height: 40px;
+    font-size: 1rem;
+    border: 0;
+    margin: 0 25px 0 0;
+    padding: 0 20px 0 20px;
+    font-family: 'Poppins';
+    color: white;
+    background-color: #fb3e44;
+}
+
+  .joinLinkbtn {
+    text-align: center;
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding: 11px 20px 7px 20px;
+    margin:5px;
+    border: 1px solid black;
+    }
+
+  .logInLinkbtn {
+    text-align: center;
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding: 11px 20px 7px 20px;
+    margin:5px;
+    border: 1px solid whitesmoke;
+      }
+
