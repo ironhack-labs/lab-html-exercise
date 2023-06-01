@@ -18,7 +18,7 @@
 
   <header>
     <div id="firstLine">
-      <div>
+      <div class="logoWidth">
         <img class="blackHeart" src="images/black-heart.png" alt="black heart logo">
         <span> Nifty Penguin Magic </span>
       </div>
@@ -37,31 +37,33 @@
     
     <div id="secondLine">
       <img class="npm-logo" src="images/npm-logo.png" alt="npm site logo" />
-      <img class="magnifying-glass" src="images/magnifying-glass.png" alt="magnifying glass" />
-      <form id="form">
+      <div class="allSearchBar">
+        <img class="magnifying-glass" src="images/magnifying-glass.png" alt="magnifying glass" />
+        <form id="form">
         <input type="search" id="siteSearch" name="q" placeholder="Search packages" required>
-        <button class="searchButton">Search</button>
+        </form>
+        <button type="submit" class="searchButton">Search</button>
         <span class="validity"></span>
-      </form>
-      <div>
+      </div>
+      <div class="secondLine-btns">
         <a href="#" class="joinLinkbtn"> Join </a>
         <a href="#" class="logInLinkbtn">Log In</a>
       </div> 
     </div>
-    
   </header>
 
 
-  <!--first main section :Build amazing things-->
+<!--first main section :Build amazing things-->
 
 <section id="main-section">
   <h1>Build amazing things</h1>
-  <article>Essential JavaScript development tools that help you go to market faster and build powerful applications using
-      modern open source code.
+  <article>Essential JavaScript development tools that help you<br>
+    go to market faster and build powerful applications<br>
+    using modern open source code.<br>
   </article>
   <div>
-    <a href="#">see plans</a>
-    <a href="#">Join for free</a>
+    <a href="#" class="see-btn">See plans</a>
+    <a href="#" class="join-btn">Join for free</a>
   </div>
 </section>
 
@@ -70,18 +72,18 @@
 
 <section id="second-section">
   <img class="triangle-hexagon" src="images/triangle-hexagon.svg" alt="triangle hexagon logo" />
-  <h2>Bring the best of open source to your company</h2>
+  <h2 class="skewStyle">Bring the best of open source to your company</h2>
   <article>
-    npm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it.
-      Create an Org and get more out of the tools your team already knows and loves.
+    npm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers<br>
+    already use it. Your company depends on it. Create an Org and get more out of the tools your<br>
+    team already knows and loves.<br>
   </article>
 </section>
 
 
-  <!--Footer :Create an org-->
+  <!--Like a Footer :Create an org-->
 
-  <footer id="footer">
-    <section>
+  <section>
       <article>
       <img class="zero-configuration" src="images/zero-configuration.svg" alt="zero configuration logo">
         <h3>Zero configuration</h3>
@@ -102,11 +104,11 @@
       <h3>npm audit</h3>
       <p>Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer.</p>
       </article>
-    </section>
-    <section>
+     <section>
       <button>Create an Org</button>
     </section>
-  </footer>
+  </section>
+  
 
 
 
