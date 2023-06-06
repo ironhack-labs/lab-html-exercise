@@ -43,24 +43,30 @@ nav a {
 .search{
     display: flex;
     flex-flow:row wrap ;
-    justify-content:space-between;
+    justify-content:space-around;
+    align-items: baseline;
     
 }
-.search form{
-    display: flex;
-    flex-flow:row wrap ;
-    height:20px ;
-    width: 80%;
-    
-}
+
 .search input{
-   width: 900px;
-   height:20px ; 
+   width: 1100px;
+   height:38px ; 
+   border:none;
+   background-color:rgba(197, 197, 197,0.6);
+   color: black;
+   border: rgba(197, 197, 197,0.6);
+}
+.search input:focus{
+outline: none;
 }
 .search button{
-    background-color: rgb(213, 46, 46);
-    color: white;
-    padding: 15px ;
+   background-color: rgb(213, 46, 46);
+   color: white;
+   padding:12px 3px;
+   border:rgb(213, 46, 46);
+   position: relative;
+   right: 3px;  
+
 }
 .search button:hover{
     text-decoration:underline white ;
@@ -71,8 +77,8 @@ nav a {
     text-decoration:none ;
     border: 1px solid rgba(0,0,0,0.5); 
     color:rgba(0,0,0,0.5);
-    padding: 1px 7px;
-    text-transform: ;   
+    padding: 6px 7px;
+     
 }
 .search #join:hover{
 text-decoration:underline gray;
@@ -80,29 +86,28 @@ text-decoration:underline gray;
 .search #log-in{
 color:rgba(0,0,0,0.5);
 text-decoration:none;
-padding-right: 30px;
+
 }
 .search #log-in:hover{
 text-decoration:underline gray;
 }
-#log-in, #join{
-
-}
-
-
-
-
-
 
 
 .search .npm{
-    height:20px ;
-    width: 50px;
-}
- 
+    height:28px ;
+    width: 55px;
+    position: relative;
+    top: 12px;
+}  
+
 .search .lupa{
     width:20px ;
-    height: 30px;
+    height: 40px;
+    position: relative;
+    top:16px;
+    background-color: rgba(197, 197, 197,0.6);
+    position: relative;
+    left:4px ;
 }
 
 
