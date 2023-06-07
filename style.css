@@ -21,15 +21,18 @@ header > #nav-bar {
   flex-flow: row wrap;
   justify-content:space-between;  
 }
+
 nav a {
   text-decoration: none;
   color: black;
   padding: 10px;
 }
+
 #nav-bar img {
   width: 20px;
   height:10px ;
-}
+} 
+
 .navegate{
     display: flex;
     flex-flow:row wrap ;
@@ -56,9 +59,11 @@ nav a {
    color: black;
    border: rgba(197, 197, 197,0.6);
 }
+
 .search input:focus{
 outline: none;
 }
+
 .search button{
    background-color: rgb(251,59,73);
    color: white;
@@ -75,7 +80,7 @@ outline: none;
 }
 
 
-.search #join{
+ #join{
     text-decoration:none ;
     border: 1px solid rgba(0,0,0,0.5); 
     color:rgba(0,0,0,0.5);
@@ -120,13 +125,13 @@ text-decoration:underline gray;
  width: 50px;
 }
 
-#intro{
+#intro, #company{
   height: 600px;
   display: flex;
   flex-flow:column wrap ;
   justify-content: center;
   align-items: center;
-  background-color:  rgba(232,217,217,.3);
+  
 }
 
 #intro article{
@@ -147,7 +152,7 @@ text-align: center;
 }
 
 
-#introlink{
+#introlink1{
   text-decoration: none;
   color:black ;
   display: flex;
@@ -155,6 +160,7 @@ text-align: center;
   align-items: center;
   font-size: 1.5em ;
 }
+
 #introbutton{
   width:200px ;
   height:50px;
@@ -166,4 +172,54 @@ text-align: center;
   justify-content: center;
   align-items: center;
   box-shadow:  8px 8px rgba(251,59,73,.2);
+}
+
+#company h4{
+  font-size :2em; 
+  background-color:rgba(255,204,53,.4);
+  padding:0 20px ;
+}
+
+#company article{
+ font-style: italic;
+ width:600px;
+ text-align: center;
+}
+ 
+.explica{
+  height: 700px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content:space-around ;
+  align-items: center;
+}
+
+#explication{
+  width:100% ;
+  display:flex;
+  flex-flow:row wrap ;
+  justify-content:space-around ;
+}
+
+#explication div{
+  width: 20%;
+ 
+}
+
+.explica  h5{
+  color:#ED1C24;
+  font-size: 20px;
+}
+
+.explica a{
+  width:300px ;
+  height:50px ;
+  background-color: black;
+  color:white;
+  text-decoration: none;
+  box-shadow: 3px 3px rgba(0,0,0,0.5);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
