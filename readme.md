@@ -183,8 +183,8 @@ nav ul {
 }
 
 nav a {
-  text-decoration: none;
-  color: black;
+  text-decoration: sofisticated;
+  color: red;
 }
 
 .blackHeart {
