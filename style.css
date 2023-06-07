@@ -60,13 +60,14 @@ nav a {
 outline: none;
 }
 .search button{
-   background-color: rgb(213, 46, 46);
+   background-color: rgb(251,59,73);
    color: white;
-   padding:12px 10px;
-   border:rgb(213, 46, 46);
+   padding:9px 8px;
+   border:rgb(251,59,73);
    position: relative;
    right: 3px;  
-   font: size 1.5em; ;
+   top:2px ;
+   font-size: 1.2em; 
 
 }
 .search button:hover{
@@ -117,4 +118,52 @@ text-decoration:underline gray;
 }
 #explication img{
  width: 50px;
+}
+
+#intro{
+  height: 600px;
+  display: flex;
+  flex-flow:column wrap ;
+  justify-content: center;
+  align-items: center;
+  background-color:  rgba(232,217,217,.3);
+}
+
+#intro article{
+width:400px ;
+height: 100px;
+text-align: center;
+}
+
+#intro h2{
+  font-size:60px ;
+}
+
+#intro div{
+  width:450px ;
+  display: flex;
+  flex-flow: row-reverse wrap;
+  justify-content: space-around;
+}
+
+
+#introlink{
+  text-decoration: none;
+  color:black ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em ;
+}
+#introbutton{
+  width:200px ;
+  height:50px;
+  text-decoration: none;
+  background-color:rgb(251,59,73);
+  color:white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow:  8px 8px rgba(251,59,73,.2);
 }
