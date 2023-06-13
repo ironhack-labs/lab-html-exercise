@@ -73,10 +73,10 @@ outline: none;
    right: 3px;  
    top:2px ;
    font-size: 1.2em; 
-
 }
 .search button:hover{
     text-decoration:underline white ;
+    cursor: pointer;
 }
 
 
@@ -90,15 +90,16 @@ outline: none;
 .search #join:hover{
 text-decoration:underline gray;
 }
+.search #log-in:hover{
+text-decoration:underline gray;
+}
+
+
 .search #log-in{
 color:rgba(0,0,0,0.5);
 text-decoration:none;
 
 }
-.search #log-in:hover{
-text-decoration:underline gray;
-}
-
 
 .search .npm{
     height:25px ;
@@ -150,7 +151,9 @@ text-align: center;
   flex-flow: row-reverse wrap;
   justify-content: space-around;
 }
-
+#introlink1:hover{
+  text-decoration:underline black ;
+}
 
 #introlink1{
   text-decoration: none;
@@ -159,6 +162,10 @@ text-align: center;
   justify-content: center;
   align-items: center;
   font-size: 1.5em ;
+  text-transform: uppercase;
+}
+#introbutton:hover{
+  text-decoration: underline white;
 }
 
 #introbutton{
@@ -172,6 +179,8 @@ text-align: center;
   justify-content: center;
   align-items: center;
   box-shadow:  8px 8px rgba(251,59,73,.2);
+  text-transform: uppercase;
+  border-radius: 5px;
 }
 
 #company h4{
@@ -259,4 +268,11 @@ box-shadow: 3px 3px rgba(0,0,0,0.5);
 
 #form_login label, input{
   height:20px ;
+}
+
+#buttonorg:hover{
+text-decoration: underline white;
+}
+#buttonorg{
+  border-radius: 10px;
 }

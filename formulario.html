@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registrer</title>
+    <link rel="stylesheet" href="formulario.css">
+</head>
+<body>
+<header>
+<div class="navegate">
+
+  <div id="nav-bar">
+    <img src="../finish_work/images/black-heart.png " alt="black-heart" class="blackheart">
+    <span> Nifty Penguin Magic </span>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="#"> npm Enterprise </a></li>
+      <li><a href="#"> Products </a></li>
+      <li><a href="#"> Solutions </a></li>
+      <li><a href="#"> Resources </a></li>
+      <li><a href="#"> Docs </a></li>
+      <li><a href="#"> Support </a></li>
+    </ul>
+  </nav>
+</div>
+
+<hr>
+</header>
+<img id="logonpm" src="images/npm-logo.png" alt="">
+   <section class="registrer">
+    <form action="" method="post" autocomplete="off">
+      <fieldset>
+        <legend>Check in</legend>
+   
+
+      <label for="name">Name:</label>
+      <input type="text" id="name" required="true" placeholder="pick name here"> 
+
+      <label for="surname">Surname:</label>
+      <input type="text" id="surname"required="true" placeholder="pick surname here"> <br>
+
+      <label for="email">Email:</label>
+      <input type="email" required="true" placeholder="pick you email"><br>
+
+      <label for="age">Age:</label>
+      <input type="number" id="age" min="0" max="100"><br>
+
+      <label for="user">User:</label>
+      <input type="text"required="true" placeholder="pick your users"><br>
+
+      <label for="pasword">Pasword:</label>
+      <input type="pasword" required="true">
+
+      <label for="repeat">Repeat pasword:</label>
+      <input type="password" required="true"><br>
+
+      <div id="gender">
+      <label>Gender:</label>
+      <input type="radio" name="gender">
+      <label for="female">Female</label>
+      <input type="radio" name="gender">
+      <label for="male">Male</label>
+      <input type="radio" name="gender">
+      <label for="nonbinary">Nonbinary</label>
+      </div><br>
+    <div>
+      <label for="os">Operative Sistem:</label>
+      <select name="os" id="os" required="true">
+        <option value=""></option>
+        <option value="linux">Linux</option>
+        <option value="mac">Mac</option>
+        <option value="window">Windows</option>
+      </select>
+      </div><br>
+      <input type="submit" value="Send" id="form_send">
+      </fieldset>
+  </form>
+   
+ </section>
+</body>
+</html>
