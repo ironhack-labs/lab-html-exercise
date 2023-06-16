@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
     <header>
+       
         <div>
             <div>
-                <img class="backHeart" src="./images/black-heart.png" alt="black-heart"/>
+                <img class="blackHeart" src="./images/black-heart.png" alt="black-heart"/>
                 <span>NPM Clone Nifty Penguin Magic</span>
             </div>
             <nav>
@@ -24,22 +26,18 @@
             </nav>
         </div>
         
-        <div>
+        <div class="second-div-header">
             <div>
-                <img src="./images/npm-logo.png"/>
+                <img class="npm-logo" src="./images/npm-logo.png"/>
             </div>
-            <div>
-                <img src="./images/magnifying-glass.png"/>
+            <div class="search-input-button">
+                <input type="text" placeholder="Search packages" class="search-input"/>
+                <button class="search-button">Search</button>
             </div>
-            <div>
-                <a href="#">Join Log In</a>
+            <div class="div-join-button">
+                <a class="join-button" href="#">Join</a>
+                <a class="login-button" href="#">Log In</a>
             </div>
-            <div>
-                <input type="text" placeholder="Search packages">
-                <button>Search</button>
-            </div>
-           
-            
         </div>
     </header>
     <section id="firstsection">
