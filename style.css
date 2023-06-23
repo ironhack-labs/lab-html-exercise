@@ -28,6 +28,18 @@ nav a {
     color: black;
 }
 
+h1{
+    font-size: 80px;
+    font-weight: bold;
+}
+
+h2{
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+    font-style: italic;
+    font-size: 36px;
+}
+
 .blackHeart {
     width: 20px;
     margin-right: 1rem;
@@ -96,4 +108,111 @@ form{
     border: none;
     background-color: transparent;
     cursor: pointer;
+}
+
+#home{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 600px;
+    background-color: rgb(232,217,217,.3);
+}
+
+#home article{
+    display: flex;
+    text-align: center;
+    font-size: 26px;
+    max-width: 26em;
+}
+
+#home > div{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.btn-see-plans {
+    display: flex;
+    align-items: center;
+    background-color: #FB3B49;
+    border: none;
+    box-sizing: border-box;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 30px;
+    height: 50px;
+    padding: 30px 70px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+}
+
+.btn-see-plans:after {
+    background-color: rgba(250, 50, 64, 0.2);
+    content: "";
+    display: block;
+    height: 60px;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    transform: translate(8px, 8px);
+    transition: transform .2s ease-out;
+    z-index: -1;
+}
+
+.btn-see-plans:hover:after {
+    transform: translate(0, 0);
+}
+
+.btn-see-plans:hover {
+    outline: 0;
+    background-color: #e71623;
+}
+
+/* @media (min-width: 768px) {
+  .btn-see-plans {
+    padding: 0 40px;
+  }
+} */
+
+.btn-join-for-free{
+    border: none;
+    background-color: transparent;
+    font-size: 30px;
+    padding: 10px 70px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#information{
+    margin-top: 4rem;
+}
+
+.information-img{
+    display: flex;
+    justify-content: center;
+}
+
+#information svg{
+    max-width: 16rem;
+}
+
+.information-text{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+}
+
+.information-text > article{
+    display: flex;
+    text-align: center;
+    max-width: 44em;
+}
+
+#features{
+    display: flex;
 }
