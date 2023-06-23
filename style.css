@@ -152,8 +152,8 @@ form{
     text-decoration: none;
 }
 
-.btn-see-plans:after {
-    background-color: rgba(250, 50, 64, 0.2);
+.btn-see-plans:after{
+    background-color: rgba(128,83,35,.2);;
     content: "";
     display: block;
     height: 60px;
@@ -237,4 +237,53 @@ form{
 
 .features > article > p{
     text-align: start;
+}
+
+.create-org{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+.btn-create-org{
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    background-color: black;
+    color: white;
+
+    display: flex;
+    align-items: center;
+
+    border: none;
+    box-sizing: border-box;
+
+    cursor: pointer;
+    font-size: 30px;
+    height: 50px;
+    padding: 30px 70px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+}
+
+.btn-create-org:after{
+    content: "";
+    display: block;
+    height: 60px;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    transform: translate(8px, 8px);
+    transition: transform .2s ease-out;
+    z-index: -1;
+}
+
+.btn-create-org:hover:after {
+    transform: translate(0, 0);
+}
+
+.btn-create-org:hover {
+    outline: 0;
+    background-color: #000000be;
 }
