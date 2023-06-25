@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+:root {
+    --form-label-color: rgba(0, 0, 0, .05);
+    --form-input-color: rgba(0, 0, 0, .05);
+    --form-button-background-color: #fb3e44;
+    --form-button-letters-color: white;
+    --second-section-heading: rgba(255, 204, 53, .4);
+}
+
+body {
+  font-family: 'Poppins';
+}
+
+header > div {
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+  }
+  
+  nav {
+    width: 600px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .blackHeart {
+    width: 20px;
+    margin-right: 1rem;
+  }
+
+  .npm-search-log {
+    display: flex;
+  }
+
+  #npm-logo {
+    width: 50px;
+    padding: 20px 0px;
+  }
+
+  #search-logo {
+    width: 20px;
+    padding: 4.5px 5px 5px 5px;
+    margin: 0 -50px 0 0;
+    border: 0;
+    background-color: lightgray;
+  }
+
+  #search-bar {
+    background-color: lightgray;
+    padding: 5px;
+    width: 450px;
+    border-style: solid;
+    border-color: lightgray;
+  }
+
+  #search-button {
+    background-color: var(--form-button-background-color);
+    color: var(--form-button-letters-color);
+    border-style: solid;
+    border-color: var(--form-button-background-color);
+    padding: 5px;
+    margin: 0 0 0 -4px;
+  }
+
+  #join-btn {
+    font-size: 12px;
+    padding: 6px 15px 5px;
+    margin: 0px 10px 0px 0px;
+    border: 1px solid lightgray;
+    text-decoration: none;
+  }
+
+  #log-in-btn {
+    font-size: 12px;
+    text-decoration: none;
+  }
+
+#top-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+    background-color: rgba(232, 217, 217, .3);
+}
+
+    #top-section h1 {
+        text-align: center;
+        font-weight: bolder;
+        font-size: 45px;
+        margin-top: -10px;
+    }
+
+    #top-section article {
+        width: 400px;
+    }
+
+    #top-section article p {
+        text-align: center;
+        padding: 10px;
+    }
+
+    #plans {
+        margin-top: 30px;
+    }
+
+    .see-plans {
+        text-decoration: none;
+        font-weight: bold;
+        color: var(--form-button-letters-color);
+        background-color: var(--form-button-background-color);
+        padding: 8px 36px;
+        box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+        margin-right: 20px;
+    }
+
+    .join-free {
+        text-decoration: none;
+        margin-left: 20px;
+        color: black;
+        padding: 8px 36px;
+        background-color: white;
+        font-weight: bold;
+    }
+
+#middle-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+}
+
+    #middle-section img {
+        width: 200px;
+        margin: 0 0 40px 0;
+    }
+
+    #middle-section h3 {
+        background-color: var(--second-section-heading);
+        transform: skew(9deg, 0deg);
+        font-weight: bolder;
+        font-style: italic;
+        padding: 0 15px;
+    }
+
+    #middle-section article {
+        width: 400px;
+    }
+
+    #middle-section p {
+        text-align: center;
+        font-size: 11px;
+    }
+
+#bottom-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 45px;
+}
+
+    #bottom-section img {
+        width: 25px;
+    }
+
+    #bottom-section div {
+        width: 200px;
+    }
+
+    #bottom-section h5 {
+        align-self: flex-end;
+        font-weight: bolder;
+        color: #ED1C24;
+    }
+
+    /* para alinear headers */
+    
+    #feat-header-1 {
+        margin-top: 25px;
+    }
+
+    #feat-header-3 {
+        margin-top: 25px;
+    }
+
+    #feat-header-4 {
+        margin-top: 24px;
+    }
+    .feat-paragraph {
+        width: 130px;
+        font-size: 11px;
+        text-align: justify;
+    }
+
+footer {
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+}
+
+    footer a {
+        text-decoration: none;
+        font-weight: bold;
+        color: var(--form-button-letters-color);
+        background-color: black;
+        padding: 8px 75px;
+        box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+        margin-right: 10px;
+        font-size: 12px;
+    }
