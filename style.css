@@ -1,4 +1,8 @@
+/*---------Fonts-----------*/
+
 @import url('https://fonts.googleapis.com/css?family=Poppins');
+
+/*---------Main selectors-----------*/
 
 *, body {
   font-family: 'Poppins';
@@ -46,6 +50,8 @@ h3{
     color: #ED1C24;
 }
 
+/*----------Header-----------*/
+
 .blackHeart {
     width: 20px;
     margin-right: 1rem;
@@ -64,6 +70,14 @@ h3{
     margin-right: 15px;
 }
 
+form{
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 260px;
+    margin-right: 30px;
+}
+
 .input-search{
     background:url("images/magnifying-glass.png") no-repeat 1%;
     height: 22px;
@@ -74,20 +88,6 @@ h3{
     background-size: 20px;
     background-color: rgba(0, 0, 0, 0.05);
     border: none;
-}
-
-form{
-    display: flex;
-    flex-grow: 1;
-    flex-shrink: 0;
-    flex-basis: 260px;
-    margin-right: 30px;
-}
-
-.logo-search{
-    position: absolute;
-    width: 20px;
-    left: 29%;
 }
 
 .btn-search{
@@ -121,6 +121,8 @@ form{
     cursor: pointer;
 }
 
+/*--------Home---------*/
+
 #home{
     display: flex;
     justify-content: center;
@@ -130,11 +132,11 @@ form{
     background-color: rgb(232,217,217,.3);
 }
 
-#home article{
+#home > article{
     display: flex;
     text-align: center;
     font-size: 1.25rem;
-    max-width: 26em;
+    max-width: 35rem;
 }
 
 .btns-new-user{
@@ -195,8 +197,11 @@ form{
     font-weight: bold;
 }
 
+/*--------Information---------*/
+
 #information{
     margin-top: 4rem;
+    margin-bottom: 3rem;
 }
 
 .information-img{
@@ -204,7 +209,7 @@ form{
     justify-content: center;
 }
 
-#information svg{
+.information-img > svg{
     max-width: 16rem;
 }
 
@@ -221,6 +226,8 @@ form{
     text-align: center;
     max-width: 44em;
 }
+
+/*--------Features----------*/
 
 .features{
     display: flex;
@@ -248,7 +255,7 @@ form{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
 }
 
 .btn-create-org{
