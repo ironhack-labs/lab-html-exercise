@@ -27,6 +27,13 @@ header > div {
     text-decoration: none;
     color: black;
   }
+
+  h1{
+    font-size: 70px;
+    font-weight: bold;
+    margin-top: -40px;
+    margin-bottom: 15px;
+}
   
   .blackHeart {
     width: 20px;
@@ -46,6 +53,13 @@ header > div {
     padding: 8px 25px;
   }
 
+  .search-form input{
+    background-color: rgba(0,0,0,.05);
+    border: none;
+    line-height: 35px;
+    width: 700px;
+  }
+
   .search-button{
     background-color: #fb3e44;;
     color: white;
@@ -54,9 +68,71 @@ header > div {
     
   }
 
-  .button{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
+  .btn-join{
+    border: none;
+    background-color: white;
+    padding: 10px 20px;
+    margin: -50px;
+  }
 
+  .btn-join:hover{
+    background-color: ghostwhite;
+  }
+
+  .btn-login{
+    border: none;
+    background-color: white;
+    padding: 10px 20px;
+  }
+
+  .btn-login:hover{
+    background-color: ghostwhite;
+  }
+
+  #general-information{
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(232,217,217,.3);
+  }
+
+  #general-information > article{
+    display: flex;
+    text-align: center;
+    font-size: 14px;
+    max-width: 24rem;
+  }
+
+  .home-btn{
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+  }
+
+  .see-btn{
+    display: flex;
+    align-items: center;
+    background-color: #FB3B49;
+    border: none;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+    color: white;
+    padding: 10px 50px;
+    margin: 0 30px;
+    text-decoration: none;
+    position: relative;
+  }
+
+  .join-free-btn{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    font-weight: bolder;
+    border: none;
+    color: black;
+    padding: 10px 50px;
+    margin: 0 30px;
+    text-decoration: none;
+    position: relative;
   }
