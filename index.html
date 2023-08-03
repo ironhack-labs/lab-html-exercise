@@ -4,13 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NPM Clone</title>
+    <link rel="stylesheet" href="./style.css" />
   </head>
 
   <body>
     <header>
       <div class="header-container">
         <div>
-          <img src="./images/black-heart.png" alt="black heart" />
+          <img
+            src="./images/black-heart.png"
+            alt="black heart"
+            id="black-heart"
+          />
           <span>Nifty Penguin Magic</span>
         </div>
         <nav>
@@ -26,14 +31,18 @@
       </div>
 
       <div class="header-container">
-        <img src="./images/npm-logo.png" alt="NPM Logo" />
-        <img src="./images/magnifying-glass.png" alt="magnifying glass" />
-        <form action="" method="get">
-          <input type="text" name="search" placeholder="Search packages" />
+        <img src="./images/npm-logo.png" alt="npm logo" id="npm-logo" />
+        <form class="form-container" action="" method="get">
+          <input
+            class="input"
+            type="text"
+            name="search"
+            placeholder="Search packages"
+          />
           <button type="submit">Search</button>
         </form>
-        <div class="button-container">
-          <a href="#">Join</a>
+        <div class="links-container">
+          <a id="join-link" href="#">Join</a>
           <a href="#">Log in</a>
         </div>
       </div>
