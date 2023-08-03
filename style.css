@@ -1,7 +1,14 @@
-@import url("https://fonts.googleapis.com/css?family=Poppins");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Space+Mono:wght@700&display=swap");
 
 body {
   font-family: "Poppins";
+}
+
+h1 {
+  font-size: 5rem;
+  font-weight: 700;
+  margin: 0;
+  padding: 0 0 40px;
 }
 
 .header-container {
@@ -95,4 +102,45 @@ nav a {
 #join-link {
   border: 1px solid gray;
   padding: 2px 10px;
+}
+
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#section-1 {
+  height: 600px;
+  background-color: rgba(232, 217, 217, 0.3);
+}
+
+#section-1 article {
+  font-size: 1.1rem;
+  text-align: center;
+  width: 30%;
+}
+
+#section-1 .button-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+  width: 30%;
+}
+
+#section-1 .button-container button {
+  font-family: "Poppins";
+  font-size: 1.1rem;
+  color: black;
+  background-color: white;
+  border: none;
+  height: 60px;
+  width: 220px;
+}
+
+#section-1 .button-container #plans-button {
+  color: white;
+  background-color: #fb3b49;
+  box-shadow: 8px 8px 0 rgba(251, 59, 73, 0.2);
 }
