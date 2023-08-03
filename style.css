@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+body{
+    font-family: 'Poppins' ;
+}
+
+header > #nav-bar {
+  padding: 0 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+}
+
+#nav-bar nav {
+  width: 600px;
+}
+
+ nav ul {
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content:space-between;  
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+}
+
+#nav-bar img {
+  width: 20px;
+  height:10px ;
+} 
+
+.navegate{
+    display: flex;
+    flex-flow:row wrap ;
+    justify-content:space-between ;
+    width: 100%;
+    height:40px ;
+    align-items: baseline;
+}
+
+
+.search{
+    display: flex;
+    flex-flow:row wrap ;
+    justify-content:space-around;
+    align-items: baseline;
+    
+}
+
+.search input{
+   width: 1100px;
+   height:38px ; 
+   border:none;
+   background-color:rgba(197, 197, 197,0.6);
+   color: black;
+   border: rgba(197, 197, 197,0.6);
+}
+
+.search input:focus{
+outline: none;
+}
+
+.search button{
+   background-color: rgb(251,59,73);
+   color: white;
+   padding:9px 8px;
+   border:rgb(251,59,73);
+   position: relative;
+   right: 3px;  
+   top:2px ;
+   font-size: 1.2em; 
+}
+.search button:hover{
+    text-decoration:underline white ;
+    cursor: pointer;
+}
+
+
+ #join{
+    text-decoration:none ;
+    border: 1px solid rgba(0,0,0,0.5); 
+    color:rgba(0,0,0,0.5);
+    padding: 2px 10px;
+     
+}
+.search #join:hover{
+text-decoration:underline gray;
+}
+.search #log-in:hover{
+text-decoration:underline gray;
+}
+
+
+.search #log-in{
+color:rgba(0,0,0,0.5);
+text-decoration:none;
+
+}
+
+.search .npm{
+    height:25px ;
+    width: 60px;
+    position: relative;
+    top: 12px;
+}  
+
+.search .lupa{
+    width:24px ;
+    height: 40px;
+    position: relative;
+    top:16px;
+    background-color: rgba(197, 197, 197,0.6);
+    position: relative;
+    left:4px ;
+}
+
+
+#company img{
+    width: 270px;
+}
+#explication img{
+ width: 50px;
+}
+
+#intro, #company{
+  height: 600px;
+  display: flex;
+  flex-flow:column wrap ;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+#intro article{
+width:400px ;
+height: 100px;
+text-align: center;
+}
+
+#intro h2{
+  font-size:60px ;
+}
+
+#intro div{
+  width:450px ;
+  display: flex;
+  flex-flow: row-reverse wrap;
+  justify-content: space-around;
+}
+#introlink1:hover{
+  text-decoration:underline black ;
+}
+
+#introlink1{
+  text-decoration: none;
+  color:black ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em ;
+  text-transform: uppercase;
+}
+#introbutton:hover{
+  text-decoration: underline white;
+}
+
+#introbutton{
+  width:200px ;
+  height:50px;
+  text-decoration: none;
+  background-color:rgb(251,59,73);
+  color:white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow:  8px 8px rgba(251,59,73,.2);
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+
+#company h4{
+  font-size :2em; 
+  background-color:rgba(255,204,53,.4);
+  padding:0 20px ;
+}
+
+#company article{
+ font-style: italic;
+ width:600px;
+ text-align: center;
+}
+ 
+.explica{
+  height: 700px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content:space-around ;
+  align-items: center;
+}
+
+#explication{
+  width:100% ;
+  display:flex;
+  flex-flow:row wrap ;
+  justify-content:space-around ;
+}
+
+#explication div{
+  width: 20%;
+ 
+}
+
+.explica  h5{
+  color:#ED1C24;
+  font-size: 20px;
+}
+
+.explica a{
+  width:300px ;
+  height:50px ;
+  background-color: black;
+  color:white;
+  text-decoration: none;
+  box-shadow: 3px 3px rgba(0,0,0,0.5);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+#form_login{
+  display: flex; 
+  flex-flow: column wrap; 
+  align-items:center; 
+  justify-content: space-around;
+  background:linear-gradient(rgba(255, 255, 255, 0.405),#ffae0056);
+  width: 250px;
+  height: 230px;
+  border: 1px solid black;
+box-shadow: 3px 3px rgba(0,0,0,0.5);
+  position: absolute;
+ left:43%;
+ top:35% ;
+}
+#send_login{
+  width: 90px;
+  height:40px;
+  color: white;
+  background-color: #ED1C24;
+ border-radius:45% ;
+ position: relative;
+ left:30% ;
+ top: 10%;
+ letter-spacing:2px ;
+ text-transform: uppercase;
+}
+#send_login:hover{
+  text-decoration: underline solid rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+#form_login label, input{
+  height:20px ;
+}
+
+#buttonorg:hover{
+text-decoration: underline white;
+}
+#buttonorg{
+  border-radius: 10px;
+}
