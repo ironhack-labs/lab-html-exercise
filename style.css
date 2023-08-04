@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+body {
+  font-family: "Poppins";
+}
+
+h1 {
+  font-size: 5rem;
+  font-weight: 700;
+  margin: 0 0 40px;
+  padding: 0;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-style: italic;
+  font-weight: 600;
+  background-color: rgba(255, 204, 53, 0.4);
+  transform: skew(9deg, 0deg);
+  margin: 0 0 40px;
+  padding: 0 20px;
+}
+
+h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #ed1c24;
+  margin: 10px 0 20px;
+}
+
+/* header and nav styles */
+
+.header-container {
+  padding: 0 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+  height: 58px;
+}
+
+.header-container span {
+  font-weight: 500;
+}
+
+#black-heart {
+  width: 20px;
+  margin-right: 1rem;
+}
+
+nav {
+  width: 600px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  font-weight: 600;
+  text-decoration: none;
+  color: black;
+}
+
+#npm-logo {
+  width: 65px;
+}
+
+#magnifying-glass {
+  height: 25px;
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 0;
+}
+
+.header-container .form-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 25px;
+}
+
+.form-container .input {
+  font-family: monospace;
+  font-size: 1rem;
+  background: url(./images/magnifying-glass.png) rgba(0, 0, 0, 0.05);
+  background-size: 20px 20px;
+  background-position: 10px;
+  background-repeat: no-repeat;
+  width: 1280px;
+  height: 40px;
+  border: none;
+  padding: 0;
+}
+
+.form-container .input::placeholder {
+  padding-left: 40px;
+}
+
+.form-container button {
+  font-family: "Poppins";
+  font-size: 1rem;
+  background-color: #fb3e44;
+  color: white;
+  border: none;
+  margin: 0;
+  height: 40px;
+  width: 90px;
+}
+
+.links-container {
+  width: 140px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.links-container a {
+  text-decoration: none;
+  color: black;
+  padding: 0;
+}
+
+#join-link {
+  font-weight: 500;
+  border: 1px solid gray;
+  padding: 3px 18px;
+}
+
+/* section styles */
+
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* section 1 styles */
+
+#section-1 {
+  background-color: rgba(232, 217, 217, 0.3);
+  height: 600px;
+}
+
+#section-1 article {
+  font-size: 1.1rem;
+  text-align: center;
+  width: 30%;
+}
+
+#section-1 .button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  padding: 0;
+  width: 30%;
+}
+
+#section-1 .button-container button {
+  font-family: "Poppins";
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: black;
+  background-color: white;
+  border: none;
+  height: 60px;
+  width: 220px;
+}
+
+#section-1 .button-container #plans-button {
+  color: white;
+  background-color: #fb3b49;
+  box-shadow: 8px 8px 0 rgba(251, 59, 73, 0.2);
+}
+
+/* section 2 styles */
+
+#section-2 {
+  background-color: white;
+  height: 600px;
+}
+
+#section-2 img {
+  width: 250px;
+  height: auto;
+  margin-bottom: 60px;
+}
+
+#section-2 article {
+  font-size: 1rem;
+  text-align: center;
+  width: 47%;
+}
+
+/* section 3 styles */
+
+#section-3 {
+  background-color: white;
+  height: 500px;
+}
+#section-3 > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 90%;
+}
+
+#section-3 img {
+  height: 2.5rem;
+  width: auto;
+}
+
+#section-3 .section-container {
+  width: 15%;
+}
+
+#section-3 .section-container p {
+  font-size: 1rem;
+}
+
+#section-3 button {
+  font-family: "Poppins";
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: white;
+  background-color: black;
+  border: none;
+  box-shadow: 8px 8px 0 rgba(128, 83, 35, 0.2);
+  width: 460px;
+  height: 65px;
+  margin-top: 60px;
+}
