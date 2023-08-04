@@ -2,6 +2,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="C:\Users\USER\html-css-assesment\lab-html-exercise\style.css" />
 </head>
 
 <body>
@@ -23,37 +24,55 @@
         </div>
 
         <div>
-            <img src="C:\Users\USER\html-css-assesment\lab-html-exercise\images\npm-logo.png" alt="npm-logo"/>
-            <img src="C:\Users\USER\html-css-assesment\lab-html-exercise\images\magnifying-glass.png" alt="serch-logo"/>
-            <form action="/search" method="get">
-                <label for="search-input">Search:</label>
+            <img class="npm-logo" src="C:\Users\USER\html-css-assesment\lab-html-exercise\images\npm-logo.png" alt="npm-logo"/>
+            <img class="glass-logo" src="C:\Users\USER\html-css-assesment\lab-html-exercise\images\magnifying-glass.png" alt="serch-logo"/>
+            <form class="form-search" action="/search" method="get">
+                <label for="search-input"></label>
                 <input type="text" id="search-input" placeholder="Search packages">
                 <button type="submit">Search</button>
             </form>
-            <a href="#" class="link-btn">Join</a>
-            <a href="#" class="link-btn">Log In</a>
+            <a href="#" class="link-join">Join</a>
+            <a href="#" class="link-log-in">Log In</a>
         </div>
     </header>
 
-    <section>
-        <h1></h1>
-        <article></article>
+    <section id="section-first">
+        <h1>Build amazing things</h1>
+        <article>Essential JavaScript development tools that help you go to market faster and build powerful applications using modern open source code.</article>
         <div>
-            <a></a>
-            <a></a>
+            <a href=# class="first-btn">See plans</a>
+            <a href=# class="link-btn">Join for free</a>
         </div>
     </section>
 
-    <section>
-        <h2></h2>
-        <article></article>
+    <section id="section-second">
+        <img src="C:\Users\USER\html-css-assesment\lab-html-exercise\images\triangle-hexagon.svg" alt="hexagon-logo"/>
+        <h2>Bring the best of open source to your company</h2>
+        <article>npm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it. Create an Org and get more out of the tools your team already knows and loves.</article>
     </section>
 
-    <section>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+    <section id="section-third">
+        <div>
+            <img src="C:\Users\USER\html-css-assesment\lab-html-exercise\images\zero-configuration.svg" alt="zero-configuration-logo"/>
+            <h3 class="text-heading">Zero configuration</h3>
+            <p>Create an org, add your team, and start collaborating. Nothing to configure, set up, or manage.</p>
+        </div>
+        <div>
+            <img src="C:\Users\USER\html-css-assesment\lab-html-exercise\images\team-management.svg" alt="team-management-logo"/>
+            <h3 class="text-heading">Team management</h3>
+            <p>Control who has access to what modules within your team namespace using straightforward team management capabilities.</p>
+        </div>
+        <div>
+            <img src="C:\Users\USER\html-css-assesment\lab-html-exercise\images\familiar-features.svg" alt="familiar-features-logo"/>
+            <h3 class="text-heading">Familiar features</h3>
+            <p>npm Orgs has 100% parity with all the public npm registry features your developers already use.</p>        
+        </div>
+        <div>
+            <img src="C:\Users\USER\html-css-assesment\lab-html-exercise\images\npm-audit.svg" alt="npm-audit-logo"/>
+            <h3 class="text-heading">npm audit</h3>
+            <p>Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer.</p>
+        </div>
     </section>
+    <a href=# class="btn-link">Create an Org</a>
 </body>
 </html>
