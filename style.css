@@ -113,7 +113,7 @@ header > div {
     background-color: rgba(232, 217, 217, 0.3);
   }
 
-  .first-btn {
+  #section-first .first-btn {
     background-color: #FB3B49;
     box-shadow: 8px 8px 0 rgba(251, 59, 73, 0.2);
     list-style-type: none;
@@ -121,21 +121,39 @@ header > div {
     text-decoration: none;
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-right: 20px;
-    padding-left: 20px;
+    padding-right: 50px;
+    padding-left: 50px;
   }
 
-  .link-btn {
+  #section-first .link-btn{
     text-decoration: none;
     color: black;
+    list-style-type: none;
+    background-color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 50px;
+    padding-left: 50px;
   }
+
+  #section-first > div > a {
+    margin: 10px 10px;
+    font-weight: bold;
+  } 
 
   h1 {
     font-size: 60px;
+    font-weight: bolder;
+    margin-top:-100px;
   }
 
-  #section-first, article {
-    font-size: 30px;
+  #section-first > article {
+    font-size: 20px;
+    margin-right: 320px;
+    margin-left: 320px;
+    text-align: center;
+    margin-top:-20px;
+    margin-bottom:100px;
   }
 
   #section-second {
@@ -143,11 +161,31 @@ header > div {
     justify-content:center;
     flex-direction:column;
     align-items: center;
+  }
+  
+  #section-second > article {
+    font-size: 15px;
+    line-height: 1.5;
+    margin-right: 80px;
+    margin-left: 80px;
+    text-align: center;
+  }
+
+  #section-second > img {
+    width: 200px;
+    margin-top: 60px;
+  }
+
+  h2 {
     background-color: rgba(255, 204, 53, 0.4);
     transform: skew(9deg, 0deg);
     font-style: italic;
+    font-size: 30px;
+    padding-right:30px;
+    padding-left:30px;
+    margin-top:70px;
+    margin-bottom:20px;
   }
-
 
   #section-third .text-heading {
     color:#ED1C24;
@@ -160,6 +198,16 @@ header > div {
     align-items: center;
   }
 
+ #section-third > div {
+  margin-left:50px;
+  margin-right:50px;
+  margin-top: 80px;
+  margin-bottom: 50px;
+ }
+
+ #section-third > div > img {
+  width: 40px;
+ }
 
   .btn-link {
     list-style-type: none;
@@ -171,5 +219,6 @@ header > div {
     padding-right: 100px;
     padding-left: 100px;
     box-shadow: 8px 8px 0 rgba(128,83,35,.2);
-    margin: center;
+    margin-left: 400px;
+    margin-top: 70px;
   }
