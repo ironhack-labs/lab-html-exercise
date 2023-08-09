@@ -1,6 +1,84 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
 :root {
-    
     --backsec2: #faf3f3;
-    --redletra: #fb3b4a;
+    --redletra: #fb3e44;
     --backbring: #ffebb7;
+    --backheader: lightgray;
+    --black: black;
+    --white: white;
+    --font: 'Poppins';
 }
+
+body {
+    font-family: var(--font);
+}
+
+/***************************** Header ***************************/
+.header > div {
+    padding: 0.5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--backheader);
+}
+
+.nav-bar {
+    width: 600px;
+}
+
+.nav-bar ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+#black-heart {
+    width: 20px;
+    margin-right: 1rem;
+}
+
+.second-bar {
+
+}
+
+#npm-logo {
+    width: 80px;
+    margin: 18px 0;
+}
+
+#glass {
+    width: 20px;
+    position: relative;
+    left: 115px;
+}
+
+.form {
+
+}
+
+.form input {
+    width: 1000px;
+    height: 30px;
+    color: rgba(0,0,0,.05)
+}
+
+.search {
+    padding: 10px;
+    background-color: var(--redletra);
+    color: var(--white);
+    border: none;
+}
+
+#search::placeholder {
+    position: relative;
+    left: 30px;
+}
+
+/***************************** Header ***************************/
