@@ -98,9 +98,50 @@ body {
 
 .log-in a {
     text-decoration: none;
-    border: 0.2px solid black;
-    background-color: white;
+    /* border: 0.2px solid black; */
+    background-color: none;
+    color: var(--black);
     padding: 5px;
-    margin-right: 5px;    
+    margin-right: 0.2em;    
 }
-/***************************** Header ***************************/
+/***************************** Section 1 ***************************/
+.section-one {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 600px;
+    background-color: rgba(232,217,217,.3);
+}
+
+h1 {
+    font-size: 85px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.article-one {
+    width: 430px;
+    text-align: center;
+}
+
+.one-buttons {
+    display: flex;
+    /* justify-content: center; */
+    align-content: stretch;
+    width: 430px;
+}
+
+.one-buttons a {
+    text-decoration: none;
+    color: var(--black);
+    padding:  15px 50px;
+    
+}
+
+#red-button {
+    background-color: #FB3B49;
+    color: var(--white);
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+}
+
+
