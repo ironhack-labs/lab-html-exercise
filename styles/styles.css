@@ -21,7 +21,16 @@ body {
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid var(--backheader);
+    margin: 0 40px;
 }
+
+.nifty {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 255px;
+}
+
 
 .nav-bar {
     width: 600px;
@@ -50,7 +59,7 @@ body {
 
 #npm-logo {
     width: 80px;
-    margin: 18px 0;
+    margin: 18px 20px;
 }
 
 #glass {
@@ -66,6 +75,7 @@ body {
     align-content: flex-start;
     align-items: center;
     position: relative;
+    margin-right: 5px;
 }
 
 .form input {
@@ -75,7 +85,6 @@ body {
     margin: 0 20px 0 0;
     background-color: rgba(122, 122, 122, 0.05);
     border: none;
-
 }
 
 .search {
@@ -93,55 +102,71 @@ body {
 }
 
 .log-in {
-    
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 180px;
 }
 
 .log-in a {
     text-decoration: none;
     /* border: 0.2px solid black; */
     background-color: none;
-    color: var(--black);
-    padding: 5px;
-    margin-right: 0.2em;    
+    color: var(--black); 
 }
+
+#join {
+    border: 1px solid rgb(164, 164, 164);
+    padding: 3px 10px;
+    font-weight: bold;
+}
+
 /***************************** Section 1 ***************************/
 .section-one {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 600px;
+    height: 550px;
     background-color: rgba(232,217,217,.3);
+    margin: 0 40px;
 }
 
 h1 {
     font-size: 85px;
     font-weight: bold;
-    margin-bottom: 0;
+    margin-bottom: 30px;
 }
 
 .article-one {
     width: 430px;
     text-align: center;
+    font-weight: bold;
 }
 
 .one-buttons {
     display: flex;
-    /* justify-content: center; */
+    justify-content: space-evenly;
     align-content: stretch;
-    width: 430px;
+    width: 480px;
+    gap: 25px;
+    margin-top: 50px;
 }
 
 .one-buttons a {
     text-decoration: none;
     color: var(--black);
-    padding:  15px 50px;
-    
+    padding:  10px 50px;
+    font-weight: bold;
 }
 
 #red-button {
     background-color: #FB3B49;
     color: var(--white);
+    text-align: center;
     box-shadow: 8px 8px 0 rgba(251,59,73,.2);
 }
 
+#button-two {
+    background-color: var(--white);
+}
 
