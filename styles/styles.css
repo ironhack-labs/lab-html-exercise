@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&family=Poppins:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600;1,700;1,900&display=swap');
 
 :root {
     --backsec2: #faf3f3;
@@ -28,7 +28,9 @@ body {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    width: 255px;
+    font-weight: bold;
+    width: 275px;
+    gap: 5px;
 }
 
 
@@ -49,17 +51,13 @@ body {
 }
 
 #black-heart {
-    width: 20px;
-    margin-right: 1rem;
+    width: 25px;
 }
 
-.second-bar {
-
-}
 
 #npm-logo {
     width: 80px;
-    margin: 18px 20px;
+    margin: 18px 30px;
 }
 
 #glass {
@@ -80,7 +78,7 @@ body {
 
 .form input {
     width: 100%;
-    height: 30px;
+    height: 45px;
     color: rgba(0,0,0,.05);
     margin: 0 20px 0 0;
     background-color: rgba(122, 122, 122, 0.05);
@@ -88,7 +86,7 @@ body {
 }
 
 .search {
-    padding: 8.5px;
+    padding: 15px 22px;
     background-color: var(--redletra);
     color: var(--white);
     border: none;
@@ -105,7 +103,7 @@ body {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    width: 180px;
+    width: 200px;
 }
 
 .log-in a {
@@ -117,7 +115,7 @@ body {
 
 #join {
     border: 1px solid rgb(164, 164, 164);
-    padding: 3px 10px;
+    padding: 5px 18px;
     font-weight: bold;
 }
 
@@ -133,12 +131,12 @@ body {
 
 h1 {
     font-size: 85px;
-    font-weight: bold;
+    font-weight: 700;
     margin-bottom: 30px;
 }
 
 .article-one {
-    width: 430px;
+    width: 450px;
     text-align: center;
     font-weight: bold;
 }
@@ -155,7 +153,7 @@ h1 {
 .one-buttons a {
     text-decoration: none;
     color: var(--black);
-    padding:  10px 50px;
+    padding:  20px 60px;
     font-weight: bold;
 }
 
@@ -168,5 +166,104 @@ h1 {
 
 #button-two {
     background-color: var(--white);
+    font-weight: bold;
+}
+
+
+/***************************** Section 2 ***************************/
+
+.section-two {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    height: 550px;
+    margin: 0 40px;
+}
+
+.triangle-hexagon {
+    width: 280px;
+    margin: 50px;
+}
+
+.section-two h2 {
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+    font-style: italic;
+    /* line-height: 40px; */
+    width: 880px;
+    height: 40px;
+}
+
+.article-npm {
+    width: 800px;
+    height: 100%;
+    text-align: center;
+
+}
+
+.npm-p {
+    width: 790px;
+}
+
+/***************************** Section 3 ***************************/
+
+.section-three {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 550px;
+    margin: 200px 40px;
+}
+
+.sub-section-three {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 100px;
+}
+
+.sub-section-three h4 {
+    color: #ED1C24;
+    font-weight: 900;
+}
+
+.sub-section-three img {
+    width: 40px;
+}
+
+.zero-configuration,
+.team-management,
+.familiar-features,
+.npm-audit {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+
+.zero-configuration p,
+.team-management p,
+.familiar-features p,
+.npm-audit p {
+    width: 250px;
+    margin-top: 10px;
+}
+
+.team-management img {
+    width: 35px;
+}
+
+.create-org {
+    margin-top: 80px;
+    text-decoration: none;
+    background-color: var(--black);
+    color: var(--white);
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    padding: 20px 150px;
 }
 
