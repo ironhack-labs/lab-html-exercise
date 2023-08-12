@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&family=Poppins:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600;1,700;1,900&display=swap');
+
+:root {
+    --backsec2: #faf3f3;
+    --redletra: #fb3e44;
+    --backbring: #ffebb7;
+    --backheader: lightgray;
+    --black: black;
+    --white: white;
+    --font: 'Poppins';
+}
+
+body {
+    font-family: var(--font);
+}
+
+/***************************** Header ***************************/
+.header > div {
+    padding: 0.5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--backheader);
+    margin: 0 40px;
+}
+
+.nifty {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-weight: bold;
+    width: 275px;
+    gap: 5px;
+}
+
+
+.nav-bar {
+    width: 600px;
+}
+
+.nav-bar ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: var(--black);
+    font-weight: bold;
+}
+
+#black-heart {
+    width: 25px;
+}
+
+
+#npm-logo {
+    width: 80px;
+    margin: 18px 30px;
+}
+
+#glass {
+    width: 20px;
+    position: absolute;
+    left: 8px;
+}
+
+.form {
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-start;
+    align-items: center;
+    position: relative;
+    margin-right: 5px;
+}
+
+.form input {
+    width: 100%;
+    height: 45px;
+    color: rgba(0,0,0,.05);
+    margin: 0 20px 0 0;
+    background-color: rgba(122, 122, 122, 0.05);
+    border: none;
+}
+
+.search {
+    padding: 15px 22px;
+    background-color: var(--redletra);
+    color: var(--white);
+    border: none;
+    position: absolute;
+    right: 0;
+}
+
+#search::placeholder {
+    position: relative;
+    left: 30px;
+}
+
+.log-in {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 200px;
+}
+
+.log-in a {
+    text-decoration: none;
+    /* border: 0.2px solid black; */
+    background-color: none;
+    color: var(--black); 
+}
+
+#join {
+    border: 1px solid rgb(164, 164, 164);
+    padding: 5px 18px;
+    font-weight: bold;
+}
+
+/***************************** Section 1 ***************************/
+.section-one {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 600px;
+    background-color: rgba(232,217,217,.3);
+    margin: 0 40px;
+}
+
+h1 {
+    font-size: 85px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.article-one {
+    width: 450px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.one-buttons {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: stretch;
+    width: 480px;
+    gap: 25px;
+    margin-top: 50px;
+}
+
+.one-buttons a {
+    text-decoration: none;
+    color: var(--black);
+    padding:  20px 60px;
+    font-weight: bold;
+}
+
+#red-button {
+    background-color: #FB3B49;
+    color: var(--white);
+    text-align: center;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+}
+
+#button-two {
+    background-color: var(--white);
+    font-weight: bold;
+}
+
+
+/***************************** Section 2 ***************************/
+
+.section-two {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    height: 550px;
+    margin: 0 40px;
+}
+
+.triangle-hexagon {
+    width: 280px;
+    margin: 50px;
+}
+
+.section-two h2 {
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+    font-style: italic;
+    /* line-height: 40px; */
+    width: 900px;
+    height: 45px;
+}
+
+.article-npm {
+    width: 790px;
+    /* height: 100%; */
+    text-align: center;
+
+}
+
+/***************************** Section 3 ***************************/
+
+.section-three {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 550px;
+    margin: 200px 40px;
+}
+
+.sub-section-three {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 100px;
+}
+
+.sub-section-three h4 {
+    color: #ED1C24;
+    font-weight: 900;
+}
+
+.sub-section-three img {
+    width: 40px;
+}
+
+.zero-configuration,
+.team-management,
+.familiar-features,
+.npm-audit {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+
+.zero-configuration p,
+.team-management p,
+.familiar-features p,
+.npm-audit p {
+    width: 250px;
+    margin-top: 10px;
+}
+
+.team-management img {
+    width: 35px;
+}
+
+.create-org {
+    margin-top: 80px;
+    text-decoration: none;
+    background-color: var(--black);
+    color: var(--white);
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    padding: 15px 130px;
+}
+
