@@ -47,13 +47,14 @@ form{
     background-color: #f2f2f2;
 }
 .search-bar img{
+    padding-left: 10px;
     align-self: center;
     width: 25px;
     height: 25px;
 
 }
 input{
-    width: 700px;
+    min-width: 800px;
     padding: 15px;
     border: none;
     background-color: #f2f2f2;
@@ -102,19 +103,87 @@ h1{
 }
 .section1 article{
     display: flex;
-    
     width: 500px;
     font-size: 1em;
     text-align: center;
 }
 
 .section1-button{
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    padding-top: 25px;
+    text-align: center;
     color: #000000;
-    background-color: #fb3e44;
+    width: 50%;
+    height: 50px;
+}
+.section1-button a{
     text-decoration: none;
-    width: 240px;
+    color: #000000;
+
+}
+.section1-button-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
+.section1-button-seePlans{
+    background-color: #fb3e44;
+    color: white;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+}
+.section1-button-seePlans a{
+    color:#f2f2f2;
+}
+
+.section2{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.section2 img{
+    width: 350px;
+}
+h2{
+    background-color: rgba(225,204,53,.4);
+    transform: skew(9deg,0deg);
+    font-style:italic;
+    
+}
+.section2 article{
+    width: 600px;
+}
+
+.section3 div img{
+    width: 40px;
+}
+.section3 div {
+    width: 250px;
+    padding: 10px;
+}
+.section3{
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+.section3 p{
+    font-size: 0.6em;
+}
+h3{
+    font-size: 0.8em;
+    color: #ed1c24;
+}
+
+h4{
+    text-align: center;
+    margin: 50px auto;
+    width: 400px;
+    height: 33px;
+    background-color: #000000;
+    color: white;
+    padding-top: 10px;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+}
