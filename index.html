@@ -3,6 +3,7 @@
     <head>
         <title>NPM Clone</title>
         <meta charset="UTF-8"/>
+        <link href="style.css" rel="stylesheet"/>
     </head>
     <body>
         <header>
@@ -21,16 +22,22 @@
                     </ul>
                 </nav>
             </div>
-            <div>
-                <a class="logo" href="#"><img src="/images/npm-logo.png" alt="NPM logo"></a>
-                <form action="" method="post">
-                    <img src="/images/magnifying-glass.png" alt="magnifying glass">
-                    <input type="text" id="search-box" name="Search" placeholder="Search packages"/>
-                    <button type="button">Search</button>
-                </form>
-                <div>
-                    <a href="#">Join</a>
-                    <a href="#">Log In</a>
+            <div class="secondBar">
+                <div class="flex-wrap">
+                    <div class="secondBarLogo">
+                        <img class="logo" src="/images/npm-logo.png" alt="NPM logo"/>
+                    </div>
+                    <div class="secondBarForm">
+                        <img class="magnifyingGlass" src="/images/magnifying-glass.png" alt="magnifying glass"/>
+                        <form action="" method="post">
+                            <input type="text" id="search-box" name="Search" placeholder="Search packages"/>
+                            <button type="button">Search</button>
+                        </form>
+                    </div>
+                    <div class="secondBarButtons">
+                        <a class="join" href="#">Join</a>
+                        <a class="logIn" href="#">Log In</a>
+                    </div>
                 </div>
             </div>
         </header>
@@ -43,28 +50,28 @@
                 </div>
             </section>
         <section id="bringArticleSection">
-            <img src="/images/triangle-hexagon.svg" alt="triangle hexagon">
+            <img src="/images/triangle-hexagon.svg" alt="triangle hexagon"/>
             <h2>Bring the best of open source to your company</h2>
             <article>npm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it. Create an Org and get more out of the tools your team already knows and loves.</article>
         </section>
         <section id="featuresSection">
             <div>
-                <img src="/images/zero-configuration.svg" alt="zero configuration icon">
+                <img src="/images/zero-configuration.svg" alt="zero configuration icon"/>
                 <h3>Zero configuration</h3>
                 <p>Create an org, add your team, and start collaborating. Nothing to configure, set up, or manage.</p>
             </div>
             <div>
-                <img src="/images/team-management.svg" alt="team management icon">
+                <img src="/images/team-management.svg" alt="team management icon"/>
                 <h3>Team management</h3>
                 <p>Control who has access to what modules within your team namespace using straightforward team management capabilities.</p>
             </div>
             <div>
-                <img src="/images/familiar-features.svg" alt="familiar features icon">
+                <img src="/images/familiar-features.svg" alt="familiar features icon"/>
                 <h3>Familiar features</h3>
                 <p>npm Orgs has 100% parity with all the public npm registry features your developers already use.</p>
             </div>
             <div>
-                <img src="/images/npm-audit.svg" alt="binoculus icon">
+                <img src="/images/npm-audit.svg" alt="binoculus icon"/>
                 <h3>npm audit</h3>
                 <p>Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer.</p>
                 <p><a href="#">Create an Org</a></p>
