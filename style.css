@@ -1,7 +1,15 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@media screen and (max-width: 650px){
+    .featuresSectionFlex {
+        flex-wrap: wrap;
+    }
+}
 
 body {
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
+    max-width: 1600px;
+    margin: 0 auto;
 }
 
 header > div {
@@ -10,12 +18,20 @@ header > div {
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid lightgray;
+    margin-left: auto;
+    margin-right: auto;
   }
-  
-nav {
-    width: 600px;
+
+.firstBar {
+    display: flex;
+    justify-content: space-between;
+    margin: auto 0;
 }
-  
+
+nav {
+    width: 50%;
+}
+
 nav ul {
     list-style: none;
     display: flex;
@@ -33,22 +49,24 @@ nav a {
     margin-right: 1rem;
 }
 
-.flex-wrap {
+.secondBarFlexWrap {
     display: flex;
+    justify-content: space-between;
     padding: 5px 0;
     width: 100%;
+    margin: auto 0;
 }
 
 .secondBarLogo {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    width: 5%;
 }
 
 .secondBarForm {
     display: flex;
-    width: 85%;
+    width: 75%;
+    height: 45px;
     justify-content: center;
 }
 
@@ -56,7 +74,6 @@ nav a {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    width: 10%;
 }
 
 .logo {
@@ -65,20 +82,19 @@ nav a {
 
 .magnifyingGlass {
     height: 15px;
-    padding: 13.5px 15px;
+    padding: 15px;
     background-color: rgba(0,0,0,.05);
 }
 
 form {
     display: flex;
     flex-wrap: nowrap;
-    width: 90%;
-    height: 40px;
+    width: 85%;
+    height: 45px;
 }
 
 form > input {
     width: 92%;
-    height: 100%;
     border-style: none;
     background-color: rgba(0,0,0,.05);
     letter-spacing: 1px;
@@ -86,8 +102,7 @@ form > input {
 }
 
 form > button {
-    width: 8%;
-    height: 105%;
+    width: 15%;
     color: white;
     background-color: #fb3e44;
     border-style: none;
@@ -105,4 +120,122 @@ form > button {
 
 .secondBarButtons a.logIn {
     padding: 5px 0 5px 15px;
+}
+
+#buildSection {
+    text-align: center;
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(232,217,217,.3);
+    padding: 2% 15% 7% 15%;
+}
+
+#buildSection h1 {
+    font-weight: 800;
+    font-size: 3em;
+}
+
+#buildSection article {
+    width: 58%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 7%;
+    font-size: 0.9em;
+}
+
+.seePlans {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.8em;
+    color: white;
+    background-color: #FB3B49;
+    box-shadow: 6px 6px 0 rgba(251,59,73,.2);
+    padding: 10px 45px;
+    margin-right: 1em;
+}
+
+.joinFree {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 0.8em;
+    background-color: white;
+    padding: 10px 45px;
+    margin-left: 1em;
+}
+
+#bringArticleSection {
+    text-align: center;
+    width: 70%;
+    display: block;
+    margin: 3% auto 6%;
+}
+
+#bringArticleSection img {
+    width: 20%;
+    margin-bottom: 2%;
+}
+
+#bringArticleSection h2 {
+    font-size: 1.4em;
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+    width: 85%;
+    margin: 2% auto 3%;
+}
+
+#bringArticleSection article {
+    width: 75%;
+    font-size: 0.7em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#featuresSection {
+    width: 80%;
+    margin: 0 auto 5%;
+}
+
+#featuresSection img {
+    height: 20px;
+}
+
+#featuresSection h3 {
+    color: #ED1C24;
+}
+
+.featuresSectionFlex {
+    display: flex;
+    margin-bottom: 2%;
+    flex-wrap: nowrap;
+}
+
+.featuresSectionFlex > div {
+    margin: 0 1.5%;
+}
+
+.featuresSectionFlex p {
+    font-size: 0.95em;
+}
+
+.createOrgButton {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.createOrgButton button {
+    background-color: black;
+    border: 0;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    padding: 10px 60px;
+}
+
+.createOrgButton a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 0.95em;
 }
