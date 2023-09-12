@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NPM Clone</title>
-</head>
+    <link rel="stylesheet" href="style.css" </head>
 
 <body>
     <header>
@@ -27,12 +27,19 @@
         </div>
 
         <div>
-            <div><img src="./images/npm-logo.png" alt="npm-logo"></div>
-            <img src="./images/magnifying-glass.png" alt="magnifying-glass">
-            <input type="text" placeholder="Search Packages"> <button id="search-button">Search</button>
-            <a href="#">Join</a>
-            <a href="#">Log In</a>
-        </div>
+            <img src="./images/npm-logo.png" alt="npm-logo" class="npm-logo">
+            <div class="search-container">
+                <form action="/search" method="GET" id="search-form">
+                    <img src="./images/magnifying-glass.png" alt="magnifying-glass" class="magnifying-glass">
+                    <input type="text" name="search" placeholder="Search Package" class="search-input">
+                </form>
+
+            </div>
+            <button type="submit" class="search-button">Search</button>
+            <div class="link-btns">
+                <a class="join" href="#">Join</a>
+                <a class="log" href="#">Log In</a>
+            </div>
     </header>
 
     <section id="home">
