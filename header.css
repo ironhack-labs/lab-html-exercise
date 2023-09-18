@@ -1,18 +1,23 @@
 header {
   box-shadow: 0 4px 13px -3px rgba(0, 0, 0, 0.10196);
-  border-bottom: 1px solid #d2d2d2;
   user-select: none;
+  border-top-width: 3px;
+  border-top-style: solid;
+  border-image: linear-gradient(139deg, #fb8817, #ff4b01, #c12127, #e02aff) 3;
+
 }
 /* TOP BAR Begins */
 header > div.header__topBar {
-  padding: 0 25px;
+  /* padding: 0 25px; */
+  padding: 1rem 2.25rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid lightgray;
-}
+  }
 div.header__charmMessage {
   padding: 0 2rem;
+  padding: 0;
   display: flex;
   align-items: flex-end;
   flex-grow: 1;
@@ -25,7 +30,6 @@ div.header__charmMessage:hover {
 } 
 img.header__charmHeartIcon, 
 span.header__charmMessageIcon {
-  width: 30px;
   height: 14px;
   color: #000;
   line-height: 1.25;
@@ -46,12 +50,17 @@ span.header__charmMessageText {
 /* *** *** *** */
 /* NAV + SEARCH Begins */
 /* -- NAV Begins */
+.header__actionsCont {
+  border-bottom: 1px solid #d2d2d2;
+}
 nav {
-  width: 600px;
+  /* width: 600px; */
 }
 nav ul {
+  margin: 0;
   list-style: none;
   display: flex;
+  gap: 1rem;
   justify-content: space-between;
   align-items: center;
 }
@@ -126,8 +135,10 @@ header h1 {
   width: calc(100% - 10px);
   -webkit-appearance: none;
   background-color: rgba(0,0,0,.05);
+  font-family: "Fira Mono", "Andale Mono", "Consolas", monospace;
 }
 .header__actionElement__searchButton {
+  font-family: "Poppins";
   letter-spacing: 0.3px;
   padding: .5rem 1rem;
   font-size: .875rem;
