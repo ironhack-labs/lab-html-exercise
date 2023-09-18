@@ -3,7 +3,7 @@ header {
   border-bottom: 1px solid #d2d2d2;
   user-select: none;
 }
-
+/* TOP BAR Begins */
 header > div.header__topBar {
   padding: 0 25px;
   display: flex;
@@ -13,8 +13,20 @@ header > div.header__topBar {
 }
 div.header__charmMessage {
   padding: 0 2rem;
+  display: flex;
+  align-items: flex-end;
+  flex-grow: 1;
+  transition: opacity .2s ease-in;
+  cursor: pointer;
 }
+div.header__charmMessage:hover {
+  opacity: .5;
+  transition: opacity .15s ease-in;
+} 
+img.header__charmHeartIcon, 
 span.header__charmMessageIcon {
+  width: 30px;
+  height: 14px;
   color: #000;
   line-height: 1.25;
   letter-spacing: 0.015625em;
@@ -22,40 +34,27 @@ span.header__charmMessageIcon {
   font-size: .875rem;
   margin: 0 1rem 0 0;
   padding: 0 1rem 0 0;
-  transition: opacity .2s ease-in;
-  cursor: auto;
-}
-header span.header__charmMessageIcon:hover {
-  opacity: .5;
-  transition: opacity .15s ease-in;
-}
-div.header__charmMessage {
-  display: flex;
-  flex-grow: 1;
 }
 span.header__charmMessageText {
   font-size: .875rem;
   letter-spacing: 0.015625em;
   text-decoration: none;
-  cursor: pointer;
   flex-grow: 1;
-  transition: opacity .2s ease-in;
 }
-header span.header__charmMessageText:hover {
-  opacity: .5;
-  transition: opacity .15s ease-in;
-}
+/* TOP BAR Ends */
+/* *** *** *** */
+/* *** *** *** */
+/* NAV + SEARCH Begins */
+/* -- NAV Begins */
 nav {
   width: 600px;
 }
-
 nav ul {
   list-style: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
 nav a {
   text-decoration: none;
   color: black;
@@ -68,13 +67,11 @@ nav a {
 nav a:hover {
   transition: all .3.5s ease-in-out;
   scale: 1.08;
-
+  
 }
-.blackHeart {
-  width: 20px;
-  margin-right: 1rem;
-}
-
+/* -- NAV Ends */
+/* *** *** *** */
+/* -- SEARCH Begins */
 header h1 {
   position: absolute !important;
   height: 1px;
@@ -82,10 +79,6 @@ header h1 {
   overflow: hidden;
   clip: rect(1px, 1px, 1px, 1px);
 }
-
-/* .header__actionsCont {
-  border-bottom: 1px solid rgba(0,0,0,.1);
-} */
 .header__actionsWrap {
   max-width: 96rem;
   display: flex;
@@ -93,7 +86,6 @@ header h1 {
   padding-left: 2rem;
   padding-right: 2rem;
 }
-
 .header__actionElement__logoCont {
   padding: 3px 0 0;
   margin: 16px 16px 0 0;
@@ -118,7 +110,6 @@ header h1 {
 .header__actionElement_searchInputCont {
   display: flex;
   flex: 1;
-  /* order: 1; */
 }
 .header__actionElement__searchIcon {
   display: block;
@@ -146,6 +137,9 @@ header h1 {
   border-width: 0;
   cursor: pointer;
 }
+/* -- SEARCH Ends */
+/* *** *** *** */
+/* -- ACCOUNT Begins */
 .header__actionElement__accountCont {
   position: relative;
   margin: 0 0 0 1rem;
@@ -186,3 +180,7 @@ header h1 {
   opacity: .5;
   transition: opacity .15s ease-in;
 }
+/* -- ACCOUNT Ends */
+/* NAV + SEARCH Ends */
+/* *** *** *** */
+/* *** *** *** */
