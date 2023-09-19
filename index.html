@@ -5,11 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ironhack - Replica of NPM</title>
 
-  <link rel="stylesheet" href="root.css">
-  <link rel="stylesheet" href="header.css">
-  <link rel="stylesheet" href="section1.css">
-  <link rel="stylesheet" href="section2.css">
-  <link rel="stylesheet" href="section3.css">
+  <link rel="stylesheet" href="styles/root.css">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/section1.css">
+  <link rel="stylesheet" href="styles/section2.css">
 </head>
 <body>
   <header>
@@ -17,7 +16,7 @@
       <div class="header__charmMessage">
         <img src="/images/black-heart.png" alt="Heart Icon" class="header__charmHeartIcon">
         <!-- <span class="header__charmMessageIcon">❤</span> -->
-        <span class="header__charmMessageText">Nascent Plasticine Materialist</span>
+        <span class="header__charmMessageText">Click here for catching phrases ;)</span>
       </div>
       <nav>
         <ul>
@@ -111,8 +110,44 @@
         </div>
       </div>
       </div>
-      <div class="body__sectionTwo__benefits"></div>
+      <div class="body__sectionTwo__benefitsContent">
+        <div class="body__sectionTwo__benefitsWrap">
+          <div class="body__sectionTwo__benefits body__sectionTwo__benefit1">
+            <img src="images/zero-configuration.svg" alt="Zero configuration">
+            <h3>Zero configuration</h3>
+            <p>
+              Create an org, add your team, and start collaborating. Nothing to configure, set up, or manage.
+            </p>
+          </div>
+          <div class="body__sectionTwo__benefits body__sectionTwo__benefit2">
+            <img src="images/team-management.svg" alt="Team management">
+            <h3>Team management</h3>
+            <p>
+              Control who has access to what modules within your team namespace using straightforward team management capabilities.
+            </p>
+          </div>
+          <div class="body__sectionTwo__benefits body__sectionTwo__benefit3">
+            <img src="images/familiar-features.svg" alt="Familiar features">
+            <h3>Familiar features</h3>
+            <p>
+              npm Orgs has 100% parity with all the public npm registry features your developers already use.
+            </p>
+          </div>
+          <div class="body__sectionTwo__benefits body__sectionTwo__benefit4">
+            <img src="images/npm-audit.svg" alt="npm audit">
+            <h3>npm audit</h3>
+            <p>
+              Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer.
+            </p>
+          </div>
+            
+        </div>
+        <div class="body__sectionTwo__CTACont">
+          <a href="#">Create an Org</a>
+        </div>
+      </div>
     </div>
   </section>
+  <script type="module" src="scripts/index.js"></script>
 </body>
 </html>
