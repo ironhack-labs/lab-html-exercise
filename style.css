@@ -16,6 +16,9 @@ header > div {
     border-bottom: 1px solid lightgray;
     vertical-align: middle;
   }
+  .search-bar-div {
+    gap: 1rem; 
+  }
   
   nav {
     width: 600px;
@@ -43,14 +46,15 @@ header > div {
   .search-bar {
     background-color: lightgrey;
     display: grid;
+    flex-grow: 1;
     grid-template-columns: 2rem auto 8rem;
     align-items: center;
     font-size: 1.25rem;
     margin: 1em;
     height: 50px;
-    width: 85%;
     margin-left: 0;
     padding-left: 0;
+
   }
   .search-bar img {
     height: 20px;
@@ -116,12 +120,12 @@ header > div {
     border: 1px solid;
     background-color: #FB3B49;
     color: white;
-    padding: 20px 15%;
+    padding: 20px 35px;
     font-size: 1.5em;
     box-shadow: 8px 8px 0 rgba(251,59,73,.2);
   }
   .free-join-link {
-   padding: 20px 15%;
+   padding: 20px 35px;
    text-decoration: none;
    font-size: 1.5em;
    color:black
@@ -138,7 +142,7 @@ header > div {
     margin-bottom: 30px;
   }
   .introduction-site h2 {
-    background-color: yellow;
+    background-color: rgba(255,204,53,.4);
     transform: skew(9deg,0deg);
     font-style: italic;
     margin-bottom: 10px;
@@ -156,13 +160,10 @@ header > div {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 10px red solid;
     margin-left: 20px; 
     margin-right: 20px; 
   }
   .container {
-    border-right: 5px red solid;
-    border-left: 5px red solid; 
     height: 200px;
     padding-left: 10px;
     padding-top: 5px;
@@ -177,7 +178,6 @@ header > div {
   }
   .container > h3 {
     color: #ed1c24; 
-    border: 2px brown solid;
     width: fit-content;
     padding: 4px;
   }
