@@ -1,0 +1,198 @@
+header {
+  box-shadow: 0 4px 13px -3px rgba(0, 0, 0, 0.10196);
+  user-select: none;
+  border-top-width: 3px;
+  border-top-style: solid;
+  border-image: linear-gradient(139deg, #fb8817, #ff4b01, #c12127, #e02aff) 3;
+
+}
+/* TOP BAR Begins */
+header > div.header__topBar {
+  /* padding: 0 25px; */
+  padding: 1rem 2.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+  }
+div.header__charmMessage {
+  padding: 0 2rem;
+  padding: 0;
+  display: flex;
+  align-items: flex-end;
+  flex-grow: 1;
+  transition: opacity .2s ease-in;
+  cursor: pointer;
+}
+div.header__charmMessage:hover {
+  opacity: .5;
+  transition: opacity .15s ease-in;
+} 
+img.header__charmHeartIcon, 
+span.header__charmMessageIcon {
+  height: 14px;
+  color: #000;
+  line-height: 1.25;
+  letter-spacing: 0.015625em;
+  display: inline-block;
+  font-size: .875rem;
+  margin: 0 1rem 0 0;
+  padding: 0 1rem 0 0;
+}
+span.header__charmMessageText {
+  font-size: .875rem;
+  letter-spacing: 0.015625em;
+  text-decoration: none;
+  flex-grow: 1;
+}
+/* TOP BAR Ends */
+/* *** *** *** */
+/* *** *** *** */
+/* NAV + SEARCH Begins */
+/* -- NAV Begins */
+.header__actionsCont {
+  border-bottom: 1px solid #d2d2d2;
+}
+nav ul {
+  margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+  transition: all .3s ease-in-out;
+  display: block;
+  font-size: .875rem;
+  letter-spacing: 0.015625em;
+  font-weight: 500;
+}
+nav a:hover {
+  transition: all .3.5s ease-in-out;
+  scale: 1.08;
+  
+}
+/* -- NAV Ends */
+/* *** *** *** */
+/* -- SEARCH Begins */
+header h1 {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+.header__actionsWrap {
+  max-width: 96rem;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.header__actionElement__logoCont {
+  padding: 3px 0 0;
+  margin: 16px 16px 0 0;
+}
+.header__actionElement__logoCont svg {
+  width: 70px;
+}
+.header__actionElement__searchBarCont {
+  position: relative;
+  width: 50%;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  flex: 1 1 auto;
+}
+.header__actionElement__searchBar {
+  position: relative;
+  display: flex;
+  padding: 0;
+  border-style: none;
+  border-width: 0;
+}
+.header__actionElement_searchInputCont {
+  display: flex;
+  flex: 1;
+}
+.header__actionElement__searchIcon {
+  display: block;
+  padding: 14px .25rem 0 1rem;
+  background-color: rgba(0,0,0,.05);
+}
+.header__actionElement__searchInput {
+  font-size: 14px;
+  letter-spacing: 0px;
+  border: none;
+  height: 40px;
+  padding-left: 10px;
+  border-radius: 0;
+  width: calc(100% - 10px);
+  -webkit-appearance: none;
+  background-color: rgba(0,0,0,.05);
+  font-family: "Fira Mono", "Andale Mono", "Consolas", monospace;
+}
+.header__actionElement__searchButton {
+  line-height: 1.15;
+  font-weight: 300;
+  font-family: "Poppins";
+  letter-spacing: 0.3px;
+  padding: .5rem 1rem;
+  font-size: .875rem;
+  color: #fff;
+  background-color: #fb3e44;
+  border-style: none;
+  border-width: 0;
+  cursor: pointer;
+}
+/* -- SEARCH Ends */
+/* *** *** *** */
+/* -- ACCOUNT Begins */
+.header__actionElement__accountCont {
+  position: relative;
+  margin: 0 0 0 1rem;
+  padding: .5rem 0;
+  /* order: 2; */
+}
+.header__actionElement__accountWrap {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  padding: 0.25rem 0 0 1rem;
+}
+.header__actionElement__joinButton {
+  text-decoration: none;
+  border: 1px solid #9a9a9a;
+  border-radius: 0;
+  font-size: 0.875rem;
+  transition: opacity .15s ease-in;
+  padding: .25rem 1rem;
+  color: rgba(0,0,0,.7);
+  line-height: 1.5;
+  font-weight: 600;
+}
+.header__actionElement__joinButton:hover {
+  opacity: .5;
+  transition: opacity .15s ease-in;
+  
+}
+.header__actionElement__loginButton {
+  text-decoration: none;
+  transition: opacity .15s ease-in;
+  font-size: .875rem;
+  padding: 0.25rem;
+  line-height: 1.5;
+  color: #000000b3;
+  font-weight: 500;
+  border-radius: 0.25rem;
+}
+.header__actionElement__loginButton:hover {
+  opacity: .5;
+  transition: opacity .15s ease-in;
+}
+/* -- ACCOUNT Ends */
+/* NAV + SEARCH Ends */
+/* *** *** *** */
+/* *** *** *** */
