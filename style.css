@@ -7,10 +7,7 @@ body {
 
 h1,
 h2,
-h3,
-h4,
-h5,
-h6 {
+h3 {
   margin: 0;
 }
 h1 {
@@ -20,16 +17,17 @@ h1 {
 }
 
 h2 {
-  font-size: 5em;
+  font-size: 2.5em;
   text-align: center;
-  text-transform: uppercase;
-  line-height: 4em;
-  color: white;
-  text-shadow: #020819 8px -20px 9px;
+  margin-top: 1em;
+  padding: 0 1.5em;
+  background-color: rgba(255,204,53,.4);
+  font-style: italic;
+  transform: skew(9deg,0deg);
 }
 
 h3 {
-  font-size: 4.2em;
+  font-size: 1.5em;
   text-align: center;
   line-height: 1em;
 }
@@ -145,13 +143,30 @@ form button {
   padding: 10px 15px;
   font-weight: 700;
 }
-.article-primary-btn{
-  background-color: #fb3e44;
+.article-primary-btn {
+  background-color: #fb3b49;
   color: white;
-  -webkit-box-shadow: 5px 5px 0px 0px rgba(251,62,68,0.3);
--moz-box-shadow: 5px 5px 0px 0px rgba(251,62,68,0.3);
-box-shadow: 5px 5px 0px 0px rgba(251,62,68,0.3);
+  -webkit-box-shadow: 8px 8px 0 rgba(251, 59, 73, 0.2);
+  -moz-box-shadow: 8px 8px 0 rgba(251, 59, 73, 0.2);
+  box-shadow: 8px 8px 0 rgba(251, 59, 73, 0.2);
 }
-.article-secondary-btn{
+.article-secondary-btn {
   color: inherit;
-  }
+}
+
+#open-source {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 3em 0;
+}
+
+#open-source img {
+  max-width: 15em;
+}
+
+#open-source article {
+  width: 60%;
+}
