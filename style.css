@@ -2,6 +2,36 @@
 
 body {
   font-family: "Poppins";
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+h1 {
+  font-size: 5em;
+  font-weight: 700;
+  text-align: center;
+}
+
+h2 {
+  font-size: 5em;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 4em;
+  color: white;
+  text-shadow: #020819 8px -20px 9px;
+}
+
+h3 {
+  font-size: 4.2em;
+  text-align: center;
+  line-height: 1em;
 }
 
 header > div {
@@ -96,3 +126,32 @@ form button {
   width: 18px;
   margin-right: 0.25em;
 }
+
+#build {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  height: 600px;
+  background-color: rgba(232, 217, 217, 0.3);
+}
+#build article {
+  width: 40%;
+  margin-bottom: 2em;
+}
+#build a {
+  text-decoration: none;
+  padding: 10px 15px;
+  font-weight: 700;
+}
+.article-primary-btn{
+  background-color: #fb3e44;
+  color: white;
+  -webkit-box-shadow: 5px 5px 0px 0px rgba(251,62,68,0.3);
+-moz-box-shadow: 5px 5px 0px 0px rgba(251,62,68,0.3);
+box-shadow: 5px 5px 0px 0px rgba(251,62,68,0.3);
+}
+.article-secondary-btn{
+  color: inherit;
+  }
