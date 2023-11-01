@@ -4,13 +4,34 @@ body {
   font-family: 'Poppins';
 }
 
+.button-main {
+    text-decoration: none;
+    color: white;
+    padding: 8px 18px;
+    background-color: #fb3e44;
+    border: none;
+}
+
+.button-secondary {
+    text-decoration: none;
+    color: black;
+    border: 1px solid black; /* #cccccc; */
+    padding: 8px 18px;
+}
+
+.button-transparent {
+    text-decoration: none;
+    color: black;
+    padding: 8px 18px;
+}
+
 header > div {
     padding: 0 25px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid lightgray;
-  }
+}
 
 #website-nav {
     width: 600px;
@@ -32,3 +53,45 @@ header > div {
     width: 20px;
     margin-right: 1rem;
 }
+
+.header-bottom {
+    display: flex;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.header-bottom > img {
+    height: 24px;
+}
+
+.header-bottom > form.search-bar {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    margin: 0;
+    background-color: rgba(0,0,0,.05);
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
+.header-bottom > form.search-bar > button {
+    font-size: 16px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.header-bottom > form.search-bar > img {
+    height: 20px;
+    padding: 10px;
+}
+
+.header-bottom > form.search-bar > input {
+    flex: 1;
+    border: none;
+    outline: none;
+    margin-right: 12px;
+    font-size: 16px;
+    line-height: 28px;
+    background-color: transparent;
+}
+
