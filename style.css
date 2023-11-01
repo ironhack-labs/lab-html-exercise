@@ -2,6 +2,7 @@
 
 body {
   font-family: 'Poppins';
+  margin: 0;
 }
 
 .button-main {
@@ -30,6 +31,25 @@ body {
     color: black;
     padding: 8px 18px;
     background-color: white;
+}
+
+.button-black {
+    text-decoration: none;
+    color: white;
+    padding: 8px 18px;
+    background-color: black;
+}
+
+.large-button {
+    padding: 12px 52px;
+}
+
+.x-large-button {
+    padding: 12px 116px;
+}
+
+header {
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
 }
 
 header > div {
@@ -115,7 +135,7 @@ header > div {
 #build-things h1 {
     text-align: center;
     margin: 0;
-    font-size: 3rem;
+    font-size: 4rem;
 }
 
 #build-things p {
@@ -129,6 +149,7 @@ header > div {
 #build-things .section-buttons{
     display: flex;
     column-gap: 2rem;
+    padding-top: 20px;
 }
 
 #bring-to-company {
@@ -182,15 +203,49 @@ header > div {
     margin-bottom: 28px;
 }
 
+#features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 28px;
+}
 
 #features img {
-    height: 40px;
+    height: 32px;
+}
+
+#features .feature-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    column-gap: 52px;
+    row-gap: 52px;
+    padding-top: 40px;
+    padding-bottom: 56px;
+}
+
+#features .feature-wrapper > div {
+    width: 260px;
+}
+
+#features .feature-wrapper > div > h1 {
+    color: #ED1C24;
+    margin-top: 0.6rem;
+    margin-bottom: 1.5rem;
 }
 
 .red-shadow {
     box-shadow: 8px 8px 0 rgba(251,59,73,.2)
 }
 
+.black-shadow {
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+}
+
 .bold {
     font-weight: bold;
+}
+
+.bolder {
+    font-weight: bolder;
 }
