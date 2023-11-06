@@ -10,7 +10,7 @@ body {
 }
 h1 {
     font-size: 6em;
-    font-weight: 800;  
+    font-weight: 2500;  
 }
 h2 {
     font-size: 3em;
@@ -21,18 +21,19 @@ h3 {
     font-weight: 600;
     line-height: 1.2em;
 }
+p {
+    font-size: 1.6em;
+    font-weight: 600;
+}
 header > div {
-    padding: 0 25px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid lightgray;
     flex-direction: row;
-    
 }
 nav {
-    width: 600px;
-    
+    width: 600px;    
 }
 nav ul{
     list-style-type: none;
@@ -46,17 +47,17 @@ nav a {
     color: black;
 }
 .text {
-    font-size: 1.2em;
     text-align: center;
+    width: 700px;
+    font-weight: 400;
 }
 .blackHeart {
     width: 20px;
     margin-right: 1rem;
 }
-
 .npmLogo {
-    width: 60px;
-    padding: 0 auto;
+    height: 20px;
+    padding: 0 20px 0 10px;
     justify-self: left;
 }
 #search-window {
@@ -65,7 +66,6 @@ nav a {
     background-size: 16px;
     background-repeat: no-repeat;
     background-color: rgb(223, 223, 223);
-    width: 800px;
     padding: 4px 12px;
     border: 1px solid rgb(223, 223, 223);
     color: darkgrey;
@@ -78,17 +78,29 @@ nav a {
     font-size: 1em;
 }
 .search-bar {
+    display: flex;
+    justify-content: space-between;
     background-color: rgb(223, 223, 223);
     padding: 0;
     text-align: center;
     font-size: 1em;
+    margin: 10px;
 }
 .button {
-    padding: 4px 12px;
-    font-weight: 100;
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-around;
 }
 .join {
     border: 1px solid black;
+    padding: 4px 20px;
+    font-weight: 300;
+    margin: 0 20px;
+}
+.login {
+    padding: 4px 20px;
+    font-weight: 300;
+    margin: 0 20px;
 }
 .button a {
     text-decoration: none;
@@ -96,6 +108,7 @@ nav a {
 }
 form {
     align-items: center;
+    width: 70%;
 }
 form label {
     color: rgba(0,0,0,.05);
@@ -132,7 +145,7 @@ form button {
     display: flex;
     justify-content: space-around;
     height: 70px;
-    font-size: 0.5em;
+    font-size: 0.6em;
     font-weight: 600;
 }
 
@@ -149,7 +162,6 @@ form button {
 #seeplans a {
     color: white;
 }
-
 #hexagon {
     height: 600px;
     margin: 10px;
@@ -164,49 +176,48 @@ form button {
     font-style: oblique;
     padding: 10px 50px 0 50px;
     line-height: 0.9em;
-
 }
 .hexagon {
     height: 250px;
-    padding: 10px;
-}
-#hexagon .text {
-    width: 700px;
-    text-align: center;
-}
-#benefits {
-    width: 700px;
+    padding: 18px;
 }
 #benefits h3 {
     color: #ED1C24;
-    font-size: 1em;
+    font-size: 1.6em;
     font-weight: 800;
 }
+#benefits p {
+    font-size: 1.4em;
+    font-weight: 300;
+}
 #benefits img {
-    height: 30px;
+    height: 40px;
 }
 #benefits > div {
     display: flex;
-    align-content: center;
+    align-items: flex-start;
     flex-direction: row;
     justify-content: center;
 }
 .container {
+    width: 200px;
     display: flex;
     flex-direction: column;
-    align-content: flex-start;
+    align-items: flex-start;
     justify-content: space-between;
     padding: 30px;
 }
 .org {
+    font-size: 1.4em;
     display: flex;
     justify-content: center;
+    margin: 40px 0;
     
 }
 .org a {
     text-decoration: none;
     color: white;
     background-color: black;
-    padding: 15px 40px;
+    padding: 25px 90px;
     box-shadow: 8px 8px 0 rgba(232,217,217,.3);
 }
