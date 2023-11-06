@@ -10,7 +10,7 @@ body {
 }
 h1 {
     font-size: 6em;
-    font-weight: 2500;  
+    font-weight: 600;  
 }
 h2 {
     font-size: 3em;
@@ -57,8 +57,24 @@ nav a {
 }
 .npmLogo {
     height: 20px;
-    padding: 0 20px 0 10px;
+    padding: 0 20px;
     justify-self: left;
+}
+form label {
+    color: rgba(0,0,0,.05);
+}
+form input {
+    color: rgba(0,0,0,.05);
+}
+form button {
+    background-color: #fb3e44;
+    color: white;
+}
+.search-bar {
+    background-color: rgb(223, 223, 223);
+    padding: 0;
+    font-size: 1em;
+    margin: 10px;
 }
 #search-window {
     background-image: url(../images/magnifying-glass.png);
@@ -69,6 +85,7 @@ nav a {
     padding: 4px 12px;
     border: 1px solid rgb(223, 223, 223);
     color: darkgrey;
+    width: 70vw;
 }
 #search-button {
     border: 1px solid #fb3e44;
@@ -77,14 +94,8 @@ nav a {
     font-weight: 100;
     font-size: 1em;
 }
-.search-bar {
-    display: flex;
-    justify-content: space-between;
-    background-color: rgb(223, 223, 223);
-    padding: 0;
-    text-align: center;
-    font-size: 1em;
-    margin: 10px;
+form {
+    width:fit-content;
 }
 .button {
     align-items: flex-start;
@@ -106,49 +117,34 @@ nav a {
     text-decoration: none;
     color: black;
 }
-form {
-    align-items: center;
-    width: 70%;
-}
-form label {
-    color: rgba(0,0,0,.05);
-}
-form input {
-    color: rgba(0,0,0,.05);
-}
-form button {
-    background-color: #fb3e44;
-    color: white;
-}
 #intro {
     height: 600px;
     background-color: rgba(232,217,217,.3);
     margin: 10px;
     text-align: center;
     display: flex;
-    align-items: center;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 #intro > div {
     height: auto;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
 }
 #intro > article {
-    width: 500px;
     text-align: center;
+    margin-top: 0;
+    margin-bottom: 40px;
 }
 .intro-buttons {
-    width: 300px;
-    text-align: center;
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     height: 70px;
     font-size: 0.6em;
     font-weight: 600;
 }
-
 #intro a {
     text-decoration: none;
     color: black;
@@ -156,7 +152,7 @@ form button {
 #seeplans {
     background-color: #FB3B49;
     padding: 15px 40px;
-    margin: 0 4px;
+    margin: 0 20px;
     box-shadow: 8px 8px 0 rgba(251,59,73,.2);
 }
 #seeplans a {
@@ -180,6 +176,9 @@ form button {
 .hexagon {
     height: 250px;
     padding: 18px;
+}
+#benefits {
+    margin: 60px;
 }
 #benefits h3 {
     color: #ED1C24;
