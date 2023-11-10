@@ -4,6 +4,8 @@ body {
   font-family: 'Poppins';
 }
 
+  /* header */
+
 header > div {
     padding: 0 25px;
     display: flex;
@@ -81,6 +83,8 @@ nav ul {
     border-color: lightgray;
   }
 
+  /* Section 1 */
+
 #intro {
     display: flex;
     flex-direction: column;
@@ -92,11 +96,13 @@ nav ul {
 #intro h1 {
     font-size: 5em;
     margin:0;
+    font-style: bold;
 }
 
 #intro article {
     width: 400px;
     padding-top: 20px;
+    text-align: center;
 }
 
 .plans-join {
@@ -114,9 +120,75 @@ nav ul {
 .see-plans {
     background-color: #FB3B49;
     color: white;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
 }
 
 .join-free {
     color: black;  
 }
 
+/* Section 2 */
+
+#open-source {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    height: 600px;
+}
+
+#open-source img {
+    width: 250px;
+    margin: 0;
+}
+
+#open-source h2 {
+    font-size: 2.5em;
+    padding: 0px 30px;
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+    font-style: italic;
+    margin: 50px 0 0 0;
+}
+
+#open-source article {
+    width: 750px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+/* Section 3 */
+
+#features-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-container {
+    width: 40px;
+    height: 40px;
+}
+
+.features-container {
+    display: flex;
+    padding: 60px 80px 50px 80px;
+}
+
+.features-container > div {
+    padding: 0px 25px;
+}
+
+.features-container h3 {
+    color: #ED1C24;
+}
+
+.create-org {
+    margin-bottom: 50px;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    padding: 15px 100px;
+}
