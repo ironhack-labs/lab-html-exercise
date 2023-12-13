@@ -33,23 +33,48 @@ nav a {
   margin-right: 1rem;
 }
 
-.search-bar {
-  background-color: rgba(0, 0, 0, 0.05);
-  padding: 8px;
+.search-form-div {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 40px 10px 25px;
 }
 
-.search-bar input {
+.search-form {
+  background-color: rgba(0, 0, 0, 0.05);
+  padding-left: 5px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 65%;
+}
+
+.search-form input {
   border: none;
   background-color: transparent;
-}
-
-.search-bar button {
-  border: none;
+  padding: 8px;
+  width: 100%;
+  border-radius: 4px;
 }
 
 .search-button {
   background-color: #fb3e44;
   color: white;
+  border: none;
+  padding: 8px 12px;
+  margin-left: 8px;
+  display: flex;
+  justify-self: end;
+  cursor: pointer;
+}
+
+.join-button {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 5px;
+}
+
+.join-button:hover {
+  background-color: ##008cba;
+  color: gray;
 }
 
 #intro {
