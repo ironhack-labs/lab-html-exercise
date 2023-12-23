@@ -19,6 +19,6 @@
 
 
 
-# Screen Showcase
+# Showcase
 
 ![Showcase](https://github.com/IanIJmkers/Coinbase-Trading-Bot/blob/master/css/289031730-a9ecf334-6327-458d-b985-c8c0d980fdc9.png?raw=true)
