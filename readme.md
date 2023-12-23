@@ -2,11 +2,6 @@
 
 
 
-### Last update : 22.12.2023
-
-### Works with any crypto wallets! 
-
-
 ### Updated features:
 ```
 - 16-charts layout ✅
