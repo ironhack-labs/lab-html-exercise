@@ -34,11 +34,12 @@ header > div {
   }
 
   .secondHeaderDiv {
-    padding: 10px 20px;
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid lightgray;
+    padding: 0 25px;
   }
 
   .logo {
@@ -52,19 +53,23 @@ header > div {
     margin-right: 10px;
   }
 
+  .search-bar img {
+    padding: 15px;
+  }
+
   .search-bar > form {
-      width: 850px;
       display: flex;
       justify-content: center;
-      border: white;
+      border: 2px solid white;
       align-items: center;
   }
 
   .search-bar input {
     height: 42px;
-    width: 800px;
-    border: white;
-    font-size: 14px;
+    width: 900px;
+    font-size: 16px;
+    border: none;
+    outline: none;
   }
 
   #join, #logIn {
@@ -83,7 +88,7 @@ header > div {
     padding: 12px 25px;
     width: max-content;
     border: white;
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .buttons {
@@ -92,7 +97,7 @@ header > div {
     display: flex;
   }
 
-  #first {
+  #build {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -107,7 +112,7 @@ header > div {
   }
   
 
-  #second {
+  #bring {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -115,7 +120,7 @@ header > div {
     height: 600px;
   }
 
-  #second > img {
+  #bring > img {
     height: 300px;
     width: 300px;
   }
@@ -139,12 +144,23 @@ header > div {
     background-color: rgba(255,204,53,.4);
   }
 
-  #second > article  {
+  #bring > article  {
     width: 780px;
     text-align: center;
   }
 
-  #first > article {
+  #build > article {
     width: 600px;
     text-align: center;
+  }
+
+  #features .container {
+    display: flex;
+    background-color: aquamarine;
+    justify-content: space-between;
+    padding: 50px 50px;
+  }
+
+  #features .container .image {
+    background-color: #fb3e44;
   }
