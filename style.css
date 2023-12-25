@@ -2,6 +2,7 @@
 
 body, button {
   font-family: 'Poppins';
+  font-weight: normal;
 }
 
 header > div {
@@ -108,16 +109,34 @@ header > div {
 
   h1 {
     font-size: 5em;
-    font-weight:900
+    font-weight: bold;
+  }
+
+  article, p {
+    font-size: 20px;
+  }
+
+  .build-buttons > button {
+    font-weight: bold;
+    padding: 20px;
+    font-size: 18px;
+  }
+
+  .build-buttons {
+    display: flex;
+    flex-direction: row;
+    background-color: aqua;
+    margin: 20px;
+    width: 300px;
   }
   
-
   #bring {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     height: 600px;
+    margin-bottom: 80px;
   }
 
   #bring > img {
@@ -135,9 +154,20 @@ header > div {
     height: 70px
   }
 
-  #org {
+  #org a {
     display: flex;
+    background-color: black;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    padding: 20px 100px;
     justify-content: center;
+  }
+
+  #features > button {
+    border: none;
+    width: 500px;
   }
 
   h2 {
@@ -157,10 +187,26 @@ header > div {
   #features .container {
     display: flex;
     background-color: aquamarine;
-    justify-content: space-between;
-    padding: 50px 50px;
+    justify-content: space-evenly;
+    padding: 50px;
   }
 
-  #features .container .image {
-    background-color: #fb3e44;
+  #features {
+    display: flex;
+    background-color: paleturquoise;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding: 50px;
+  }
+
+  .subcontainer  {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 270px;
+    padding: 10px
+  }
+
+  h3 {
+    color: #fb3e44;
   }
