@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+
+body,
+button {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2 {
+  font-weight: bold;
+}
+
+header > div,
+.second-header-div {
+  padding: 0 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header {
+  border-bottom: 1px solid lightgray;
+  box-shadow: 0 6px 0 0 rgba(232, 217, 217, 0.3);
+}
+
+nav {
+  width: 600px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+.black-heart {
+  width: 20px;
+  margin-right: 1rem;
+}
+
+.logo {
+  width: 70px;
+}
+
+.magnifying-glass {
+  width: 30px;
+  height: 30px;
+  align-content: center;
+  margin-right: 10px;
+  padding: 15px;
+}
+
+.search-bar > form {
+  display: flex;
+  justify-content: center;
+  border: 2px solid white;
+  align-items: center;
+}
+
+.search-bar input {
+  height: 42px;
+  width: 800px;
+  max-width: 800px; /*when moving to a smaller screen, the elements will get mashed up together*/
+  font-size: 16px;
+  border: none;
+  outline: none;
+}
+
+#search-button {
+  background-color: #fb3e44;
+  color: white;
+  padding: 12px 25px;
+  width: max-content;
+  border: white;
+  font-size: 16px;
+}
+
+.buttons {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+#join,
+#log-in {
+  text-decoration: none;
+  color: black;
+  padding: 8px 20px;
+}
+
+#join {
+  border: 1px solid black;
+}
+
+#build,
+#bring {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 600px;
+}
+
+#build {
+  background-color: rgba(232, 217, 217, 0.3);/*this color is impossible to see*/
+  margin-top: 20px;
+}
+
+h1 {
+  font-size: 5em;
+}
+
+article,
+p {
+  font-size: 20px;
+}
+
+.build-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#see-plans,
+#join-free {
+  width: 280px;
+  border: none;
+  outline: none;
+  padding: 20px;
+  font-size: 18px;
+  margin: 80px 20px 100px;
+  font-weight: bold;
+}
+
+#see-plans {
+  background-color: #fb3b49;
+  box-shadow: 8px 8px 0 rgba(251, 59, 73, 0.2);
+  color: white;
+}
+
+#bring > img {
+  margin: 80px 0 60px 0;
+  height: 320px;
+  width: 320px;
+}
+
+.image {
+  width: 70px;
+  height: 70px;
+}
+
+h2 {
+  background-color: rgba(255, 204, 53, 0.4);
+  font-size: 32px;
+  padding: 0 20px;
+  margin-bottom: 40px;
+}
+
+#build > article {
+  width: 40%;
+  text-align: center;
+}
+
+#bring > article {
+  width: 50%;
+  text-align: center;
+}
+
+#features .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 50px;
+}
+
+#features {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  padding: 50px;
+  align-items: center;
+}
+
+.subcontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  width: 270px;
+  padding: 30px;
+}
+
+.subcontainer > h3 {
+  color: #fb3e44;
+  font-size: 22px;
+}
+
+#org a {
+  display: flex;
+  background-color: black;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  padding: 20px 110px;
+  justify-content: center;
+  box-shadow: 8px 8px 0 rgba(232, 217, 217, 0.3);
+}
+
+#features > button {
+  border: none;
+  width: 500px;
+}
