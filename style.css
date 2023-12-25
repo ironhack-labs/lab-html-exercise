@@ -1,11 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css?family=Poppins'); 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 
 body, button {
   font-family: 'Poppins';
   font-weight: normal;
 }
 
-header > div {
+header > div, .second-header.div {
     padding: 0 25px;
     display: flex;
     justify-content: space-between;
@@ -32,15 +33,6 @@ header > div {
   .black-heart {
     width: 20px;
     margin-right: 1rem;
-  }
-
-  .second-header-div {
-    
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid lightgray;
-    padding: 0 25px;
   }
 
   .logo {
@@ -98,12 +90,15 @@ header > div {
     display: flex;
   }
 
-  #build {
+  #build, #bring {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     height: 600px;
+  }
+
+  #build {
     background-color: rgba(232,217,217,.3);
   }
 
@@ -130,14 +125,6 @@ header > div {
     width: 300px;
   }
   
-  #bring {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 600px;
-    margin-bottom: 80px;
-  }
 
   #bring > img {
     height: 300px;
@@ -192,7 +179,6 @@ header > div {
   .subcontainer > h3 {
     color: #fb3e44;
     font-size: 22px;
-    font-weight: bold; /*doesnt seem to be doing anything, Why??? */
   }
 
   #org a {
