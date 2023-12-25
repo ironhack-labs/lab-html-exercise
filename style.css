@@ -46,19 +46,25 @@ header > div {
   }
 
   .magnifyingGlass {
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
+    align-content: center;
+    margin-right: 10px;
   }
 
-  .secondHeaderDiv > form {
-    display: flex;
+  .search-bar > form {
+      width: 850px;
+      display: flex;
+      justify-content: center;
+      border: white;
+      align-items: center;
+  }
+
+  .search-bar input {
+    height: 42px;
     width: 800px;
-    color: rgba(0,0,0,.05)
-  }
-
-  .secondHeaderDiv > form > input {
-    display: flex;
-    width: 100%
+    border: white;
+    font-size: 14px;
   }
 
   #join, #logIn {
@@ -71,15 +77,13 @@ header > div {
     border: 1px solid black;
   }
 
-  .secondHeaderDiv > form > input, button {
-    border: none;  
-  }
-
-  #search {
+  #search-button {
     background-color: #fb3e44;
     color: white;
     padding: 12px 25px;
     width: max-content;
+    border: white;
+    font-size: 14px;
   }
 
   .buttons {
