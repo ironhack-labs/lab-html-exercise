@@ -3,48 +3,154 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title> npm | Home</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-</header>
 <body>
-    <header>
-  <div>
+<header>
     <div>
-      <img class="/images/black-heart.png" alt="black heart" />
-      <span> Nifty Penguin Magic </span>
+        <div>
+            <img class="blackHeart" src="/images/black-heart.png" alt="black heart" />
+            <span> Nifty Penguin Magic </span>
+        </div>
+        
+        <!-- menu -->
+        <nav class="menu db w-100 w-auto-ns truncate">
+            <ul id="main-menu" class="list pl0" role="menu">
+                <li role="none" class="dib"> <a href="#"> npm Enterprise </a></li>
+                <li role="none" class="dib"> <a href="#"> Products </a></li>
+                <li role="none" class="dib"> <a href="#"> Solutions </a></li>
+                <li role="none" class="dib"> <a href="#"> Resources </a></li>
+                <li role="none" class="dib"> <a href="#"> Docs </a></li>
+                <li role="none" class="dib"> <a href="#"> Support </a></li>
+            </ul>
+        </nav>
     </div>
-    <nav>
-      <ul>
-        <li><a href="#"> npm Enterprise </a></li>
-        <li><a href="#"> Products </a></li>
-        <li><a href="#"> Solutions </a></li>
-        <li><a href="#"> Resources </a></li>
-        <li><a href="#"> Docs </a></li>
-        <li><a href="#"> Support </a></li>
-      </ul>
-    </nav>
-  </div>
 
-<div class="topnav">
-  <a class="active" href="#home">Home</a>
-  <a href="#about">About</a>
-  <a href="#contact">Contact</a>
-  <div class="search-container">
-    <form action="/action_page.php">
-      <input type="text" placeholder="Search.." name="search">
-      <button type="submit"><i class="fa fa-search"></i></button>
-    </form>
-  </div>
+    <div>
+        <!-- Logo -->
+        <div class="firstlogo order-1">
+            <a href="/" aria-label="Npm">
+                <img class="npm-logo" src="/images/npm-logo.png" alt="npm logo" />
+            </a>
+        </div>
+
+        <!-- Search bar -->
+        <div class="topnav relative flex-auto order-2">
+            <div class="search-container">
+                <form id="search" method="GET" action="/action_page.php" class="searchform relative flex">
+                    <img src="/images/magnifying-glass.png" alt="magnifying glass" class="magnifying-glass">
+                    <input type="text" placeholder="Search..." name="search">
+                    <button type="submit" class="button1">Submit</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Buttons at the right -->
+        <div class="topnav order-3">
+            <button class="button2">
+                <a href="#"> Sign up </a>
+            </button>
+            <button class="button3">
+                <a href="#"> Sign in </a>
+            </button>
+        </div>
+    </div>
+</header>
+
+<div class="mainsection"> 
+    <!-- 1st section -->
+    <div class="firstsection">
+        <div class="main_contents">
+            <div>
+                <h1 class="mainheadline1">Build amazing things</h1>
+            </div>
+            <div class="subheadline1">
+                <span class="subheadlinetext1">Essential JavaScript development tools that help you go to market faster and build powerful applications using modern open source code.</span>
+            </div>
+
+            <div class="container-button4">
+                <button class="button4">
+                    <a href="/web/20191206063722/https://www.npmjs.com/products/" class="">See plans</a>
+                </button>
+                <button class="button5">
+                    <a href="/web/20191206063722/https://www.npmjs.com/signup/" class="">Join for free</a>
+                </button>
+            </div>
+
+            <div class="subheadline2">
+                <span class="subheadline2text">
+                    Open source power, superior safety, and collaboration.<br>
+                </span>
+                <p>
+                    npm Enterprise now offers package filtering, SSO &amp; vulnerability reporting features, making enterprise JavaScript more secure &amp; streamlining the developer experience.
+                </p>
+                                    <a href="/web/20191206063722/https://www.npmjs.com/products/enterprise" class="learnmore">Learn more &gt;&gt;</a>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- 2nd section -->
+    <div id="secondsection" class="second-container">
+        <div>
+            <div>
+                <img src="/images/triangle-hexagon.svg" class="triangle-hexagon">
+            </div>
+
+            <div class="headline3">
+                <div class="firstheadline3">
+                    <h1 class="highlight">Bring the best of open source to your company</h1>
+                </div>
+                <div class="subheadline3">
+                    <p>npm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it. Create an Org and get more out of the tools your team already knows and loves.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 3rd section -->
+    <div class="infotable">
+        <section>
+            <table>
+                <thead>
+                    <tr>
+                        <th>
+                            <p class="iconimg"><img src="/images/zero-configuration.svg" class="icons" alt="Zero configuration Image"></p>
+                            Zero configuration
+                        </th>
+                        <th>
+                            <p class="iconimg"><img src="/images/team-management.svg" class="icons" alt="Team management control Image"></p>
+                            Team management Control
+                        </th>
+                        <th>                      
+                            <p class="iconimg"><img src="/images/familiar-features.svg" class="icons" alt="Familiar features Image"></p>
+                            Familiar features
+                        </th>
+                        <th>
+                            <p class="iconimg"><img src="/images/npm-audit.svg" class="icons" alt="NPM audit Image"></p>
+                            npm audit
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Create an org, add your team, and start collaborating. Nothing to configure, set up, or manage.</td>
+                        <td>Who has access to what modules within your team namespace using straightforward team management capabilities.</td>
+                        <td>npm Orgs has 100% parity with all the public npm registry features your developers already use.</td>
+                        <td>Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
 </div>
+
+<footer>
+    <!-- 3rd section - button -->
+    <div class="container-button6">
+        <button class="button6">Create an Org</button>
+    </div>
+</footer>
 </body>
 </html>
-
-NPM Clone Nifty Penguin Magic npm Enterprise Products Solutions Resources Docs Support Search Join Log In Build amazing
-things Essential JavaScript development tools that help you go to market faster and build powerful applications using
-modern open source code. See plans Join for free Bring the best of open source to your company npm is the tool used by
-over 11,000,000 JavaScript developers around the world. Your developers already use it. Your company depends on it.
-Create an Org and get more out of the tools your team already knows and loves. Zero configuration Create an org, add
-your team, and start collaborating. Nothing to configure, set up, or manage. Team management Control who has access to
-what modules within your team namespace using straightforward team management capabilities. Familiar features npm Orgs
-has 100% parity with all the public npm registry features your developers already use. npm audit Enjoy the security
-auditing features built into the npm client, a zero-friction way to make open source software safer. Create an Org
