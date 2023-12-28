@@ -20,10 +20,56 @@ h1 {
     color: black;
 }
 
+h2 {
+    font-weight: bold;
+    font-family: Poppins, sans-serif;
+    font-size: 25px;
+
+}
+
+h3 {
+    font-family: Poppins, sans-serif;
+    font-size: 20px;
+    color: #FB3B49;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
 p {
     font-family: Poppins, sans-serif;
     font-size: 16px;
     color: black;
+}
+
+.primary-button {
+    background-color: #FB3B49;
+    color: #FFFF;
+    text-decoration: none;
+    padding: 10px 20px;
+    width: 150px;
+    text-align: center;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+    font-weight: bold;
+}
+
+.secondary-button {
+    background-color: #FFFF;
+    color: black;
+    text-decoration: none;
+    padding: 10px 20px;
+    width: 150px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.tertiary-button {
+    background-color: black;
+    color: #FFFF;
+    text-decoration: none;
+    padding: 10px 20px;
+    width: 300px;
+    text-align: center;
+    font-weight: bold;
 }
 
 /* Header */ 
@@ -38,7 +84,7 @@ header {
 
 
 .header-first-part {
-    padding: 10px 32px;
+    padding: 10px 5%;
     display: flex;
     justify-content: space-between;
     border-bottom: solid rgba(0,0,0,.1);
@@ -68,7 +114,7 @@ li {
 /* Header second part */ 
 
 .header-second-part {
-    padding: 0px 32px;
+    padding: 0px 5%;
     display: flex;
     align-items: center
 
@@ -78,14 +124,60 @@ li {
 .logo {
     width: 70px;
     height: 23px;
-    padding: 34px 0px;
+    padding: 34px 15px 34px 0;
+}
+
+form {
+    width: 80%;
+    display: flex;
+}
+
+.container-search-bar {
+    height: 40px;
+    background-color: #F2F2F2;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    width: 100%;
+
 }
 
 form svg {
-    width: 18px;
-    height: 18px;
+    width: 15px;
+    height: 12px;
+    padding-right: 10px;
 }
 
+form input {
+        background-color: transparent;
+        border: none;
+        outline: none;
+        width: 100%;
+}
+
+form button {
+    background: none; 
+    border: none;        
+    padding: 10px 10px;           
+    margin: 0;            
+    outline: none; 
+    background-color: #FB3B49;
+    color: #FFFF;
+
+}
+
+.container-log {
+    padding: 0 0 0 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.join {
+    border: solid black 1px;
+    padding: 5px 10px;
+    font-weight: bold;
+}
 
 /* Hero section */ 
 
@@ -109,20 +201,59 @@ form svg {
     gap: 32px;
 }
 
-.hero-section-links a {
-    text-decoration: none;
-    padding: 10px 20px;
-    width: 150px;
+/* Company section */ 
+
+.company-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 80px 10px;
 }
 
-.plans {
-    background-color: #E74550;
-    color: #FFFF;
+.company-section svg {
+    width: 300px;
+    height: 200px;
+    padding-bottom: 32px;
 }
 
-.join {
-    background-color: #FFFF;
-    color: black;
+.company-section h2 {
+    margin-bottom: 32px;
+    background-color: rgba(255,204,53,.4);
+    font-style: italic;
+    transform: skew(9deg,0deg);
+    
+}
+
+.company-section h2, .company-section p {
+    width: 50%;
 }
 
 
+/* Opportunities section */ 
+
+.opportunities-section {
+    padding: 32px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+}
+
+.container-oppotunity-blocks {
+    padding: 0 15%;
+    display: flex;
+    gap: 30px;
+}
+
+.opportunity-block {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.opportunity-block svg {
+    width: 70px;
+    height: 30px;
+    padding-bottom: 15px;
+}
