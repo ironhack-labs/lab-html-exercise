@@ -3,7 +3,7 @@
   <head>
     <title>NPM Website</title>
     <meta charset="UTF-8" />
-    <!-- <link rel="stylesheet" href="./style.css" /> -->
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <header>
@@ -15,7 +15,7 @@
                 <span>Nifty Penguin Magic</span>
             </div>
             <!-- the nav area -->
-            <nav class="nav-bar">
+            <nav>
                 <ul>
                 <li><a href="#">npm Enterprise</a></li>
                 <li><a href="#">Products</a></li>
@@ -27,19 +27,19 @@
             </nav>
         </div>
 <!-- this will contain the 2nd half of the header with the search etc. -->
-<div>
-    <img src="./images/npm-logo.png" alt="npm-logo" />
+<div class="secondHalfHeader">
+    <img class="npmLogo" src="./images/npm-logo.png" alt="npm-logo" />
     <!-- search bar, can it be a form? -->
-    <form method="GET" action="/search">
-        <img src="./images/magnifying-glass.png" alt="magnifying-glass"/>
+    <form id="search" method="GET" action="/search">
+        <img class="magnify" src="./images/magnifying-glass.png" alt="magnifying-glass"/>
         <input type="search" placeholder="Search packages">
         </input>
         <button>Search</button>
     </form>
     <!-- join/login buttons -->
     <div>
-        <a href="#">Join</a>
-        <a href="#">Log in</a>
+        <a href="#" class="headerLinks" id="join">Join</a>
+        <a href="#" class="headerLinks">Log In</a>
     </div>
 </div>
     </header>
@@ -50,9 +50,9 @@
             <p>Essential JavaScript development tools that help you go to market faster and build powerful applications using
                 modern open source code.</p>
         </article>
-        <div>
-            <a href="#">See plans</a>
-            <a href="#">Join for free</a>
+        <div class="firstSectionCtas">
+            <a href="#" id="seePlans">See plans</a>
+            <a href="#" id="joinForFree">Join for free</a>
         </div>
     </section>
 <!-- 2nd banner area -->
