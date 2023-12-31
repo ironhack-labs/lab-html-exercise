@@ -37,24 +37,20 @@ nav a {
     width: 70px;
 }
 
-
 input {
     border: none;    
     font-family: 'Poppins';
     background: rgba(0,0,0,.05) url('images/magnifying-glass.png') left no-repeat;
     background-size: 20px;
-    /* change this */
-    width: 550px;
+    /* it is not flex this width... */
+    width: 1300px;
     padding-left: 20px;
     line-height: 30px;
 }  
 
 .search-form{
-    
-    /* align-items: stretch; */
     display: flex;
 }
-
 
 .search-form button {
     background-color: #fb3e44;
@@ -65,15 +61,13 @@ input {
 }
 
 .search-part {
-    padding: 10px 0pc;
+    padding: 10px 20px;
 }
-
 
 .search-part a {
     text-decoration: none;
     color: grey;
 }
-
 
 .join-button {
     border: 1px solid black;
@@ -104,14 +98,12 @@ input {
     text-align: center;
     width: 500px;
     margin-bottom: 40px;
-    
 }
 
 .buttons > button {
     width: 200px;
     height: 50px;
     border: none;
-
 }
 
 .see-plans-button {
@@ -127,9 +119,8 @@ input {
     background-color: white;
     font-weight: 800;
     font-size: 17px;
-    
-   
 }
+
 
 /* section 2 */
 
@@ -140,7 +131,6 @@ input {
     flex-direction: column;
     height: 500px;
 }
-
 
 .hexagon-image {
     width: 200px;
@@ -157,42 +147,49 @@ input {
     flex-direction: column;
 }
 
+#section-2 article {
+    width: 520px;
+    font-size: 9px;
+    text-align: center;
+}
+
+#section-2 article h3 {
+    font-weight: 400;
+}
+
 
 /* section 3 */
-/* I dind't create a class for it, is that okay? */
-
-#section-3 {
-   
-}
 
 #section-3 div img {
     width: 30px;
 }
 
-
 .container{    
     display: flex;
     flex-direction:row;
     justify-content:space-evenly;
-   
+    padding: 0px 30px;
 }
 
 .container div {
-    width: 900px;
+    width: 17%;
     margin: 5% 0;
-    
+    font-size: 10px;
 }
 
-.container div p {
-   width: 250px;
-}
 
+.container div h3 {
+    color: #fb3b49;
+    font-weight: 900;
+}
 
 #section-3 button {
     background-color: black;
     color: white;
-    box-shadow: 8px 8px 0px rgba(128, 83, 35, .2);
-    padding: 15px 100px;
+    box-shadow: 5px 5px 0px rgba(128, 83, 35, .2);
+    padding: 9px 75px;
+    font-size: 11px;
+    font-weight: 700;
 }
 
 .create-an-org-button {
