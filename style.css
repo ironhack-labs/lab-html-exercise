@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap');
 
 body {
   font-family: 'Poppins';
@@ -37,45 +37,49 @@ nav a {
     width: 70px;
 }
 
-.search-part {
-  
-    
-}
-
-.search-part a {
-    text-decoration: none;
-    color: grey;
-    
-    
-   
-}
 
 input {
-    border: none;
-    /* I am not sure of this font-family */
+    border: none;    
     font-family: 'Poppins';
     background: rgba(0,0,0,.05) url('images/magnifying-glass.png') left no-repeat;
-    padding-left: 550px;
     background-size: 20px;
+    /* change this */
+    width: 550px;
+    padding-left: 20px;
+    line-height: 30px;
+}  
 
+.search-form{
+    
+    /* align-items: stretch; */
+    display: flex;
 }
-/* I think, but it is not working */
-.search-form {
-    align-items: center;
-}
+
 
 .search-form button {
     background-color: #fb3e44;
     color: white;
     border: none;
-    align-items: flex-start;
-    
+    /* align-items: flex-start; */
+    padding: 10px 20px;
 }
+
+.search-part {
+    padding: 10px 0pc;
+}
+
+
+.search-part a {
+    text-decoration: none;
+    color: grey;
+}
+
 
 .join-button {
     border: 1px solid black;
-    padding: 10px 28px;
+    padding: 0px 8px;
 }
+
 
 /* section 1 */
 
@@ -84,8 +88,30 @@ input {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 600px;
+    height: 500px;
     background-color: rgba(232, 217, 217, .3);
+}
+
+#section-1 h1 {
+    font-size: 70px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+#section-1 article h2 {
+    font-weight: normal;
+    font-size: 18px;
+    text-align: center;
+    width: 500px;
+    margin-bottom: 40px;
+    
+}
+
+.buttons > button {
+    width: 200px;
+    height: 50px;
+    border: none;
+
 }
 
 .see-plans-button {
@@ -93,12 +119,16 @@ input {
     /* this rosa color is not working */
     box-shadow: 8px 8px 0px rgba(251, 59, 73, .2);
     color: white;
-    font-weight: bold;
+    font-weight: bold;    
+    margin-right: 30px;
 }
 
 .join-for-free-button {
     background-color: white;
-    font-weight: bold;
+    font-weight: 800;
+    font-size: 17px;
+    
+   
 }
 
 /* section 2 */
