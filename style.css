@@ -7,13 +7,14 @@ body {
 header > div {
     padding: 0 25px;
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
+    flex-wrap: wrap;
     align-items: center;
     border-bottom: 1px solid lightgray;
   }
-  
+
   nav {
-    width: 600px;
+    max-width: 600px;
   }
   
   nav ul {
@@ -21,14 +22,16 @@ header > div {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
   }
   
   nav a {
     text-decoration: none;
     color: black;
+    margin: 0 0 0 30px;
   }
   
   .blackHeart {
     width: 20px;
-    margin-right: 1rem;
+    margin: 0 1rem 0 0;
   }
