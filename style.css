@@ -5,56 +5,56 @@ body {
 }
 
 header > div {
-    padding: 0 25px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid lightgray;
-  }
-  
-  nav {
-    width: 600px;
-  }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  nav a {
-    text-decoration: none;
-    color: black;
-  }
-  
-  .blackHeart {
-    width: 20px;
-    margin-right: 1rem;
-  }
-  .search-bar {
-    padding: 10px 2rem;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 600px;
-  }
+  padding: 0 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+}
+
+nav {
+  width: 600px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+.blackHeart {
+  width: 20px;
+  margin-right: 1rem;
+}
+.search-bar {
+  padding: 10px 2rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 600px;
+}
 .logo-image {
   width: 50px;
   margin-right: 1rem;
-  padding:1px 1px
+  padding: 1px 1px;
 }
 .search-packages-image {
-    background: url("./images/magnifying-glass.png") no-repeat left;
-    background-position: 15px;
-    background-color: rgb(245, 245, 245);
-    background-size: contain;
-    height: 40px;
-    text-indent: 50px;
-    font-size: 16px;
-    flex-grow: 1;
-  }
+  background: url("./images/magnifying-glass.png") no-repeat left;
+  background-position: 15px;
+  background-color: rgb(245, 245, 245);
+  background-size: contain;
+  height: 40px;
+  text-indent: 50px;
+  font-size: 16px;
+  flex-grow: 1;
+}
 
 .search-button {
   background-color: #fb3e44;
@@ -127,31 +127,64 @@ header > div {
   background-color: white;
 }
 #team .container {
-	display:flex;
-	flex-direction: column;
-  	align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #team h2 {
-    background-color: rgba(255,204,53,.4);
-		font-style: italic;
-		text-align: center;
-		transform: skew(9deg,0deg);
-		margin: 40px 0 30px 0;
-		font-size: 30px;
-
+  background-color: rgba(255, 204, 53, 0.4);
+  font-style: italic;
+  text-align: center;
+  transform: skew(9deg, 0deg);
+  margin: 40px 0 30px 0;
+  font-size: 30px;
 }
 
 #team p {
-    text-align: center;
-    font-size: 13px;
-    width: 630px;
-    padding: 0 0 50px 0;
+  text-align: center;
+  font-size: 13px;
+  width: 630px;
+  padding: 0 0 50px 0;
 }
 
 .triangle-hexagon-image {
-    width: 150px;
-    margin: 40px 0 0 0;
+  width: 150px;
+  margin: 40px 0 0 0;
 }
 
+.products-container {
+  display: flex;
+  flex-direction: wrap;
+  justify-content: space-between;
+  flex-flow: row;
+  align-items: baseline;
+}
 
+.product-image {
+  width: 40px;
+}
+
+#products h3 {
+  color: #ed1c23e7;
+}
+
+#products p {
+  padding-right: 50px;
+  max-width: 300px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+
+.Org-chart-button {
+  color: white;
+  background-color: black;
+  border: none;
+  padding: 15px 200px 15px 200px;
+  align-items: center;
+  box-shadow: 8px 8px 0 rgba(103, 65, 26, 0.2);
+}
