@@ -101,7 +101,7 @@ We could try to represent this part of the website with the following:
 ```
 
 When done, you should get something similar to this:
-![](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_92cd0c6386e916d28cc1621b2eabd35d.png)
+![](https://s3-eu-west-1.amazonaws.c  om/ih-materials/uploads/upload_92cd0c6386e916d28cc1621b2eabd35d.png)
 
 You're ready to move to the next iteration. :raised_hands:
 
