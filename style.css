@@ -37,7 +37,7 @@ nav a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 25px;
+  padding: 5px 25px;
   border-top: 1px solid lightgray;
 }
 
@@ -47,23 +47,38 @@ nav a {
   width: 19px;
 }
 
+#search-form-magnifying-glass {
+  width: 1em;
+  padding: 0.5em 0 0.5em 0.5em;
+}
+
 #search-form {
   display: flex;
   align-items: center;
-  color: rgba(0, 0, 0, 0.5);
-  background-color: #fb3e44;
+  width: 100%;
+  height: 2em;
+}
+
+#search-form-div {
+  display: flex;
+  align-items: center;
+  margin: 0 0 0 1em;
+  background-color: rgba(0, 0, 0, 0.05);
+  width: 100%;
+  height: 2em;
 }
 
 #search-form-input {
+  border: none;
+  background-color: transparent;
   padding: 0.5rem;
-  color: rgba(0, 0, 0, 0.05);
   width: 100%;
 }
 
 #search-form-button {
   border: none;
-  padding: 0.5rem;
-  background-color: transparent;
+  padding: 0.6rem 1.5em;
+  background-color: #fb3e44;
   color: white;
 }
 
@@ -71,4 +86,26 @@ nav a {
   display: flex;
   align-items: center;
   width: 3em;
+}
+
+#join-and-signin {
+  display: flex;
+  align-items: center;
+  margin-left: 1em;
+}
+
+#join-and-signin a {
+  text-decoration: none;
+  color: black;
+  margin-left: 1em;
+  padding: 0.5px 1em 0 1em;
+}
+
+#button-join {
+  color: white;
+  border: 1px solid lightgray;
+}
+
+#button-signin {
+  width: 50px;
 }
