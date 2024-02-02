@@ -4,17 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
 
-  <!-- body -->
+  <!-- BODY -->
   <body>
+    <!-- HEADER -->
     <header>
       <div>
         <div>
-          <img src="/images/black-heart.png" alt="black heart vector" />
-          <span> NPM Clone Nifty Penguin Magic </span>
+          <img
+            src="/images/black-heart.png"
+            alt="black heart vector"
+            class="blackHeart"
+          />
+          <span>Nifty Penguin Magic </span>
         </div>
+
+        <!-- NAVBAR -->
         <nav>
           <ul>
             <li><a href="#">npm Enterprise</a></li>
@@ -27,21 +34,25 @@
         </nav>
       </div>
 
-      <div>
+      <div id="bottom-div">
         <div>
-          <img src="/images/npm-logo.png" alt="npm logo" />
+          <img src="/images/npm-logo.png" alt="npm logo" class="header-img" />
         </div>
+        <img src="/images/magnifying-glass.png" alt="Magnifying glass icon" />
         <form id="search-form">
-          <img src="/images/magnifying-glass.png" alt="Magnifying glass icon" />
-          <input type="text" placeholder="Search packages" />
-          <button type="submit">Search</button>
+          <input
+            type="text"
+            placeholder="Search packages"
+            id="search-form-input"
+          />
+          <button type="submit" id="search-form-button">Search</button>
         </form>
         <a href="">Join</a>
         <a href="">Sign In</a>
       </div>
     </header>
 
-    <!-- Section 1 -->
+    <!-- SECTION 1 -->
     <section id="section1">
       <h1>Build amazing things</h1>
       <article>
@@ -54,7 +65,7 @@
       </div>
     </section>
 
-    <!-- Section 2 -->
+    <!-- SECTION 2 -->
     <section id="section2">
       <img src="/images/triangle-hexagon.svg" alt="Triangle hexagon vector" />
       <h2>Bring the best of open source to your company</h2>
@@ -66,7 +77,7 @@
       </article>
     </section>
 
-    <!-- Section 3 -->
+    <!-- SECTION 3 -->
     <section id="section3">
       <div>
         <img
