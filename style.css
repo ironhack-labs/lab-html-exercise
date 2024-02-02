@@ -5,13 +5,16 @@ body {
 }
 
 h1 {
-  font-size: 3.5em;
+  font-size: 4em;
   margin: 0 0 0.3em 0;
 }
 
 h2 {
   font-size: 2.5em;
-  margin: 0;
+  margin-bottom: 1em;
+  background-color: rgba(255, 204, 53, 0.4);
+  padding: 0 1.5em;
+  clip-path: polygon(0 0, 98% 0, 100% 100%, 2% 100%);
 }
 
 h3 {
@@ -133,16 +136,15 @@ nav a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 100px 25px 0 25px;
-  border-bottom: 1px solid lightgray;
-  height: 500px;
+  padding: 80px 25px 0 25px;
+  height: 350px;
   background-color: rgba(232, 217, 217, 0.3);
 }
 
 #section1-div {
   display: flex;
   flex-direction: column;
-  width: 40%;
+  width: 25%;
 }
 
 #section1-div div {
@@ -166,4 +168,36 @@ nav a {
 
 #section1-see-plan-button:hover {
   background-color: #ff5b5f;
+}
+
+#section2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 25px 0 25px;
+  height: 500px;
+  padding-bottom: 100px;
+}
+
+#section2 article {
+  text-align: center;
+  display: flex;
+  width: 50%;
+}
+
+#hexagon-icon {
+  width: 20em;
+  margin-bottom: 2.5em;
+}
+
+#section3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 25px 0 25px;
+  height: 500px;
+}
+
+#section3 div img {
+  width: 2em;
 }
