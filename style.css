@@ -4,6 +4,21 @@ body {
   font-family: "Poppins";
 }
 
+h1 {
+  font-size: 3.5em;
+  margin: 0 0 0.3em 0;
+}
+
+h2 {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+h3 {
+  font-size: 2em;
+  margin: 0;
+}
+
 header > div {
   padding: 0 25px;
   display: flex;
@@ -82,6 +97,10 @@ nav a {
   color: white;
 }
 
+#search-form-button:hover {
+  background-color: #ff5b5f;
+}
+
 .header-img {
   display: flex;
   align-items: center;
@@ -112,11 +131,39 @@ nav a {
 
 #section1 {
   display: flex;
-  /* justify-content: center; */
   flex-direction: column;
   align-items: center;
-  padding: 0 25px;
+  padding: 100px 25px 0 25px;
   border-bottom: 1px solid lightgray;
-  height: 600px;
+  height: 500px;
   background-color: rgba(232, 217, 217, 0.3);
+}
+
+#section1-div {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+#section1-div div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 2em 0;
+}
+
+#section1-div div a {
+  text-decoration: none;
+  padding: 0.5em 2.5em;
+}
+
+#section1-see-plan-button {
+  border: none;
+  background-color: #fb3e44;
+  color: white;
+  box-shadow: 8px 8px 0 rgba(251, 59, 73, 0.2);
+}
+
+#section1-see-plan-button:hover {
+  background-color: #ff5b5f;
 }
