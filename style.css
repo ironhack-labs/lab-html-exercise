@@ -77,4 +77,42 @@ nav a {
     background-color: transparent;
     color: #FB3B49; 
     box-shadow: none;
-  }
+}
+
+#open-source-section {
+    background-color: #ffffff; 
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#open-source-section .content-container {
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+}
+
+#open-source-section .geometric-shape {
+    width: 250px; 
+    margin-bottom: 30px;
+}
+
+#open-source-section h2 {
+    color: #333;
+    background-color: #fff2a8;  
+    font-size: 2em;
+    margin-bottom: 20px;
+    position: relative; 
+}
+
+#open-source-section h2::after {
+    content: ''; 
+    display: block;
+    width: 100%; 
+    height: 5px;
+    position: absolute; 
+    bottom: -10px; 
+    left: 0; 
+}
