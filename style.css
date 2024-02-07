@@ -79,33 +79,38 @@ nav a {
     box-shadow: none;
   }
 
-  #open-source-section {
-    text-align: center;
-    padding: 50px 0; /* Ajusta el espaciado según sea necesario */
-    position: relative;
+#open-source-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(232, 217, 217, .3); 
   }
   
-  .highlight-background {
-    display: inline-block;
-    background-color: rgba(255, 204, 53, .4); /* Fondo amarillo */
-    padding: 10px; /* Añade espaciado alrededor del texto */
+  #open-source-section .content-wrapper {
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  #open-source-section .geometric-shape {
+    width: 100px; 
+    margin-bottom: -50px; 
+    align-self: center;
   }
   
   #open-source-section h2 {
+    background-color: rgba(255, 204, 53, .4);
+    display: inline;
+    transform: skew(-9deg);
     font-style: italic;
-    transform: skew(-9deg); /* Inclina el texto en la dirección opuesta para anular el skew del fondo */
-    display: inline-block;
-    background-color: rgba(255, 204, 53, .4); /* Fondo amarillo */
-    margin: 0; /* Elimina los márgenes por defecto */
+    margin: 20px 0; 
   }
-  #open-source-section .pink-image{
-    width: 20%; /* Ajusta el ancho como sea necesario */
-    max-width: 200px; /* Ajusta el ancho máximo para mantener la imagen pequeña */
-    position: absolute;
-    top: 50%; 
-    left: 50%;
-    transform: translate(-50%, -50%); /* Centra la imagen */
-    z-index: 2; 
+  
+  #open-source-section p {
+    color: #333;
+    font-size: 1rem;
+    margin: 20px 0;
   }
   
   
