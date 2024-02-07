@@ -2,6 +2,9 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 header > div {
     padding: 0 25px;
@@ -54,7 +57,7 @@ nav a {
   #main-section p {
     color: #666;
     text-align: center;
-    margin: 20px;
+    margin: 50px;
   }
   
   .buttons {
@@ -84,13 +87,15 @@ nav a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: rgba(232, 217, 217, .3); 
+    position: relative;
+
   }
   
   #open-source-section .content-wrapper {
     text-align: center;
     max-width: 800px;
     margin: auto;
+    position: relative;
   }
   
   #open-source-section .geometric-shape {
@@ -112,6 +117,54 @@ nav a {
     font-size: 1rem;
     margin: 20px 0;
   }
+  .geometric-shape{
+    width: 80px;
+    height: auto;
+    justify-content: center;
+  }
   
+
+#features-section {
+    background-color: #ffffff; 
+    display: flex;
+    justify-content: space-around; 
+    padding: 50px 0; 
+  }
   
+  .feature {
+    width: 20%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px; 
+  }
   
+  .feature h3 {
+    color: #ED1C24; 
+  }
+  
+  .create-org button {
+    background-color: #fb3e44; 
+    color: white; 
+    padding: 10px 20px;
+    border: none; 
+    cursor: pointer;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2); 
+    margin-top: 20px; 
+  }
+  .zero-configuration {
+    width: 50px; 
+    height: auto;
+  }
+  .team-management{
+    width: 50px; 
+    height: auto;
+  }
+  .familiar-features{
+    width: 50px; 
+    height: a
+  }
+  .npm-audit{
+    width: 50px; 
+    height: a
+  }
