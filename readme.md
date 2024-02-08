@@ -1,15 +1,4 @@
-![logo_ironhack_blue 7](https://user-images.githubusercontent.com/23629340/40541063-a07a0a8a-601a-11e8-91b5-2f13e4e6b441.png)
 
-# Module Exercise: HTML & CSS
-
-## Learning Goals
-
-In this exercise, the goal is to apply as many as possible of the concepts you've just learned:
-
-- when and how to use different HTML tags,
-- how to structure HTML page and add the content to it using _block and inline elements_,
-- how to use flexbox to position elements on the page and
-- how to style the page.
 
 ## Getting started
 
