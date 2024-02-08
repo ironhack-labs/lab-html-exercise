@@ -1,61 +1,36 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins');
-
-body {
-  font-family: 'Poppins';
-  /*background-color: red;*/
-}
-
-header > div {
-  padding: 0 25px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid lightgray;
-}
-
-nav {
-  width: 600px;
-}
-
-nav ul, #parteUno, #parteTres, #parteDos{
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-nav a {
-  text-decoration: none;
-  color: black;
-}
-
-.blackHeart {
-  width: 20px;
-  margin-right: 1rem;
-}
-
-.npmLogo {
-  width: 100px;
-}
-
-.lupa {
-  width: 18px;
-  position: absolute;
-  z-index: 2;
-}
-
-#parteTres input {
-  background: rgba(0,0,0,.05);
-  border: none;
-}
-
-#parteTres button {
-  background: #fb3e44;
-  color: white;
-  border: none;
-
-}
-
-#parteTres ::placeholder {
-  padding-left: 20px;
-}
+<!DOCTYPE html>
+<html>
+    <header>
+        <section id="parteUno">
+          <div>
+            <img class="blackHeart" src="images/black-heart.png" alt="black heart" />
+            <span> Nifty Penguin Magic </span>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="#"> npm Enterprise </a></li>
+              <li><a href="#"> Products </a></li>
+              <li><a href="#"> Solutions </a></li>
+              <li><a href="#"> Resources </a></li>
+              <li><a href="#"> Docs </a></li>
+              <li><a href="#"> Support </a></li>
+            </ul>
+          </nav>
+        </section>
+      
+        <section id="parteDos">
+          <image class="npmLogo" src="images/npm-logo.png"/>
+          <section id="parteTres">
+            <image class="lupa" src="images/magnifying-glass.png"/>
+            <input type="text" placeholder="Search packages">
+            <button>Search</button>
+            <div>
+            <a href="">Join</a>
+            <a> Log In</a>
+          </div>
+          </section>
+        </section>
+        
+        <link rel="stylesheet" href="index.css">
+      </header>
+</html>
