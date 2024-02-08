@@ -103,9 +103,88 @@ nav a {
 #Section1 {
     height: 600px;
     background: rgba(232,217,217,.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+
 }
 
 h1 {
+    font-size: 3em;
+    margin: 0;
+}
 
+#Section1 > article {
+    display: flex;
+    align-items: center;
+    width: 390px;
+}
+
+#Section1 p {
+    text-align: center;
+}
+
+#Section1 > div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 390px;
+    height: 80px;
+}
+
+
+#Links a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    width: 40%;
+    height: 65%;
+}
+
+#link-sombra {
+    color: white;
+    box-shadow: 8px 8px 0 rgba(251, 59, 73, .2);
+    background: #FB3B49;
+}
+
+#otro-link {
+    color: black;
+}
+
+/* Section2 */
+
+#Section2 {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    height: 600px;
+}
+
+#Section2 img {
+    width: 12em;
+    height: 12em;
+    margin: 2.5em;
+}
+
+h2 {
+    margin: 0;
+    background: rgba(255,204,53,.4);
+    padding-inline: 40px;
+    transform: skew(9deg,0deg);
+    font-style: italic;
+    margin: 10px;
+}
+
+#Article2 {
+    display: flex;
+    align-items: center;
+    width: 580px;
+}
+
+#Article2 > p {
+    font-size: 12px;
+    text-align: center;
 }
 
