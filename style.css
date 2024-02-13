@@ -1,0 +1,270 @@
+/* Utilizar el estilo de fuentes de Google */
+
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body {
+  font-family: 'Poppins';
+}
+
+/* Configuracion de estilo para el encabezado */
+/* ######## HEADER ########## */
+
+header > div {
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+  }
+
+/* PRIMERA BARRA DEL HEADER */
+/* Configuracion de la barra */
+nav {
+  width: 600px;
+}
+
+/* Estilos para la lista y botones */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Imagen del corazon */
+.blackHeart {
+  width: 25px;
+  margin-right: 1rem;
+}
+
+/* SEGUNDA BARRA DEL HEADER */
+/* Estilos barra de busqueda */
+.nav-search {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: flex-start;
+	align-content: stretch;
+  margin-top: 10px;
+}
+
+/* Imagen logo NPM */
+.npm-logo {
+  width: 70px;
+  height: 20px;
+  margin-top: 1rem;
+  margin-right: 1rem;
+  display:inline-block;
+  text-align: center;
+}
+
+/* Imagen de la lupa */
+.magnifying-glass-button {
+  color: #191919;
+  width: 20px;
+  height: 20px;
+  margin-top: 10px;
+  margin-left: 10px;
+ }
+
+/* Contenedor para meter la lupa dentro */
+.magnifying-glass-container {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0,0,0,.05);
+  background-position: center;
+ }
+
+/* Barra de busqueda */
+.input-bar {
+  width: 860px;
+  height: 40px;
+  border:none;
+  background-color: rgba(0,0,0,.05);
+}
+
+/* Configuracion del placeholder de la barra de busqueda */
+input::placeholder {
+  font-size: 14px; 
+  color: #999; 
+}
+
+/* Boton de Search */
+.Search-button {
+  cursor: pointer;
+  width: 80px; 
+  height: 40px;
+  vertical-align: middle;
+  margin-right: 5px;
+  color: white;
+  background-color: #fb3e44;
+  border:none;
+  font-family: 'Poppins';
+  letter-spacing: 0.3px;
+  font-size: .875rem;
+}
+
+/* Boton de Join */
+.join-button {
+  width: 60px; 
+  height: 30px; 
+  background-color: white;
+  font-family: 'Poppins';
+  letter-spacing: 0.3px;
+  font-size: .875rem;
+}
+
+/* Boton de Log In */
+.login-button {
+  width: 60px; 
+  height: 30px;
+  border:white;
+  font-family: 'Poppins';
+  letter-spacing: 0.3px;
+  font-size: .875rem;
+  background-color: white;
+}
+
+
+/* ######## BODY ########## */
+
+/* configuracion del body */
+body > div {
+  padding: 0 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+}
+.section1 {
+  height: 300px;
+  background-color: rgba(232,217,217,.3);
+  text-align: center;
+  border: none;
+}
+.lema{
+  font-size:400%;
+}
+/*division para los botones con link*/
+.botones-link{
+  height: 200px;
+  background-color: rgba(232,217,217,.3);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+a{
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  line-height: 50px;
+}
+.seeplans-link{
+  cursor: pointer;
+  width: 180px; 
+  height: 50px;
+  box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+  vertical-align: middle;
+  margin-right: 5px;
+  color: white;
+  background-color: #fb3e49;
+  border:none;
+  font-family: 'Poppins';
+  letter-spacing: 0.3px;
+  font-size: .875rem;
+}
+.joinforfree-link{
+  cursor: pointer;
+  width: 180px; 
+  height: 50px;
+  vertical-align: middle;
+  margin-right: 5px;
+  color: black;
+  background-color: rgba(0,0,0,0);
+  border:none;
+  font-family: 'Poppins';
+  letter-spacing: 0.3px;
+  font-size: .875rem;
+}
+.section2 {
+  height: 400px;
+  background-color: white;
+  text-align: center;
+  border: none;
+}
+
+.triangle-hexagon {
+  width: 180px; 
+  height: 180px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+/* para que el texto este remarcado*/
+mark {
+  background-color:rgba(255,204,53,.4);
+  transform: skew(9deg,0deg);
+  font-style: italic;
+  margin: auto;
+}
+.section3 {
+  height: 400px;
+  background-color: white;
+  text-align: left;
+  display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: flex-start;
+	align-content: center;
+  border: none;
+}
+.titulo{
+  color:#ED1C24
+}
+.zero-configuration {
+  width: 20px; 
+  height: 20px;
+  vertical-align: top;
+  margin-right: 5px;
+}
+.team-management {
+width: 20px; 
+height: 20px;
+vertical-align: top;
+margin-right: 5px;
+}
+.familiar-features {
+width: 20px; 
+height: 20px;
+vertical-align: top;
+margin-right: 5px;
+}
+.npm-audit {
+width: 20px; 
+height: 20px;
+vertical-align: top;
+margin-right: 5px;
+}
+.row{
+  border: none;
+}
+.CreateanOrg-button {
+cursor: pointer;
+width: 300px; 
+height: 40px;
+box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+vertical-align: middle;
+margin-right: 5px;
+color: white;
+background-color: black;
+border:none
+}
+
+
