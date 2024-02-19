@@ -1,0 +1,282 @@
+/* Estilos generales */
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+/* Estilos para el encabezado */
+header > div {
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+}
+
+nav {
+    width: 600px;
+}
+
+.lema p {
+    text-align: center;
+    line-height: 1.5; /* Ajusta el valor según tu necesidad */
+    max-width: 600px; /* Ajusta el valor según tu necesidad */
+    margin: auto; /* Esto centra el elemento horizontalmente */
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.blackHeart {
+    width: 20px;
+    margin-right: 1rem;
+}
+
+.npmlogo {
+    width: 80px;
+    margin-right: 1rem;
+    height: 20px;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    display:inline-block;
+    text-align: center;
+}
+
+.barranavegacion {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: stretch;
+    margin-top: 10px;
+}
+
+.botonlupa {
+    color: #191919;
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.cajabotonlupa {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0,0,0,.05);
+    background-position: center;
+}
+
+.input-bar {
+    width: 900px;
+    height: 40px;
+    border:none;
+    background-color: rgba(0,0,0,.05);
+}
+
+.Search-button {
+    cursor: pointer;
+    width: 80px; 
+    height: 40px;
+    vertical-align: middle;
+    margin-right: 5px;
+    color: white;
+    background-color: #fb3e44;
+    border:none;
+    font-family: 'Poppins';
+    letter-spacing: 0.3px;
+    font-size: .875rem;
+}
+
+.joinforfree {
+    width: 60px; 
+    height: 30px; 
+    background-color: white;
+    font-family: 'Poppins';
+    letter-spacing: 0.3px;
+    font-size: .875rem;
+}
+
+.leforfree {
+    width: 60px; 
+    height: 30px;
+    border:white;
+    font-family: 'Poppins';
+    letter-spacing: 0.3px;
+    font-size: .875rem;
+    background-color: white;
+}
+
+body > div {
+    padding: 0 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+}
+
+.section1 {
+    height: 300px;
+    background-color: rgba(210,200,215,.3);
+    text-align: center;
+}
+.dark-box {
+    background-color: rgba(210,200,215,.3);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+.content {
+    background-color: lightgray;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Estilos para los elementos de la sección 1 */
+.titulo-grande {
+    font-size: 2em; /* Tamaño de fuente más grande */
+    text-align: center; /* Alineación al centro */
+}
+
+.lema .subtitulo {
+    text-align: center; /* Alineación al centro */
+    font-size: .875rem; /* Mismo tamaño que los botones */
+    margin-bottom: 10px; /* Espacio entre líneas */
+}
+
+.botonesparalink {
+    height: 200px;
+    background-color: rgba(232,217,217,.3);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+
+a {
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    line-height: 50px;
+}
+
+.seeplans {
+    cursor: pointer;
+    width: 180px; 
+    height: 50px;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+    vertical-align: middle;
+    margin-right: 5px;
+    color: white;
+    background-color: #fb3e49;
+    border:none;
+    font-family: 'Poppins';
+    letter-spacing: 0.3px;
+    font-size: .875rem;
+}
+
+.joinforfree {
+    cursor: pointer;
+    width: 180px; 
+    height: 50px;
+    vertical-align: middle;
+    margin-right: 5px;
+    color: black;
+    background-color: rgba(0,0,0,0);
+    border:none;
+    font-family: 'Poppins';
+    letter-spacing: 0.3px;
+    font-size: .875rem;
+}
+
+.section2 {
+    height: 400px;
+    background-color: white;
+    text-align: center;
+    border: none;
+}
+
+.triangle-hexagon {
+    width: 175px; 
+    height: 175px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+
+
+.yellow-box {
+    background-color: rgba(255,204,53,.4);
+    padding: 20px;
+    text-align: center;
+}
+
+
+/* Estilos para la sección 3 */
+section3 {
+    display: flex; /* Utilizar flexbox */
+    justify-content: space-around; /* Distribuir el espacio alrededor de los elementos */
+    align-items: center; /* Alinear los elementos verticalmente */
+    gap: 20px; /* Espacio entre los elementos */
+}
+
+/* Estilo para los artículos */
+section3 > article {
+    flex-basis: calc(20% - 10px); /* Establecer el ancho base del artículo */
+    margin-bottom: 10px; /* Espacio entre los artículos */
+    text-align: center; /* Centrar el contenido */
+
+    
+}
+/* Estilo específico para el artículo npm-audit */
+section3 > article:nth-child(4) .titulo {
+    display: inline; /* Mostrar en línea */
+    margin: 0 auto; /* Centrar horizontalmente */
+}
+
+/* Estilo para el contenido de los artículos */
+.article-content {
+    text-align: center; /* Centrar el contenido */
+}
+
+/* Estilo para los títulos */
+.titulo {
+    color: red; /* Color rojo */
+    text-align: center; /* Alinear el texto al centro */
+}
+}
+.titulo {
+  
+
+/* Estilo para el texto debajo de los títulos */
+.article-text {
+    text-align: justify; /* Alinear el texto en justificado */
+    text-justify: inter-word; /* Justificar el texto utilizando espacios entre palabras */
+    display: -webkit-box; /* Usar un modelo de caja flexible */
+    -webkit-line-clamp: 7; /* Limitar el número de líneas a 4 */
+    -webkit-box-orient: vertical; /* Orientar el contenido en dirección vertical */
+    overflow: hidden; /* Ocultar el contenido que se desborda */
+}
+
+/* Estilo para los iconos */
+.article-content img {
+    display: block; /* Asegurar que el icono esté en una línea separada */
+    margin: 0 auto 10px auto; /* Centrar el icono y agregar espacio debajo */
+}
+
+/* Estilo específico para el artículo 3 */
+section3 > article:nth-child(3) .titulo {
+    display: inline; /* Mostrar en línea */
+}
