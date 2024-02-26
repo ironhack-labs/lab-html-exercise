@@ -23,6 +23,7 @@ header > div {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
   }
   
   nav a {
@@ -45,56 +46,74 @@ header > div {
     form button letters color: white
   */
 
-  .npmLogo {
+  .npm-logo {
     width: 60px;
     margin-right: 1rem;
   }
 
- .searchBar {
+ .search-bar {
     display: flex;
-    align-items: center;
-    width: 900px;
-    padding: 20px 20px;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: center;
+    width: 1100px;
+    margin: 10px 5px 5px;
+
+ }
+    
+  
     /*margin 20px 20px;*/
+    
+ 
+
+ .search-bar input {
+    border: none;
+    background-color: rgba(0,0,0,.05);
+    width: 820px;
+    height: 40px;
+ }
+
+ .magnifying-glass img {
+  background-color: rgba(0,0,0,0.05);
+  width: 12px; 
+  border: 15px solid rgba(0, 0, 0, 0.005);
+  align-items: center;
+}
+
+ .search-bar button {
+    background: #fb3e44;
+    color: white;
+    height: 42px;
+    font-size: 15px;
+    border: none;
+    
     
  }
 
- .searchBar input {
-    border: none;
-    background-color: rgba(0,0,0,.05);
-    width: 1200px;
-    height: 40px;
+ #join-search-links {
+    width: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+
  }
 
- #joinSearchLinks a {
+ #join-search-links a {
     color: black;
     text-decoration: none;
-    flex: display;
-    justify-content: space-between;
+    width: 60px;
+    padding: 4px 4px;
+    font-size: 15px;
  }
 
- .joinLink {
+ .first-join-link {
     border: 1px solid black;
  }
 
- .magnifyingGlass {
-    background-color: rgba(0,0,0,.05);
-    height: 40px;
- }
 
- .searchBar button {
-    background: #fb3e44;
-    color: white;
-    border: none;
-    height: 40px;
- }
+ /*-------------------------           Section 1         ------------------------*/
 
-
-
-
- /*-------------------------           First Section          ------------------------*/
-
-#firstSection {
+#first-section {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -112,7 +131,7 @@ h1 {
 
 }
 
-#firstSection article {
+#first-section article {
     width: 400px;
     text-align: center;
 }
@@ -142,7 +161,7 @@ h1 {
 
 }
 
-#firstSectionLinks {
+#first-section-links {
     display: flex;
     flex-direction: row;
     align-items: flex-end;
