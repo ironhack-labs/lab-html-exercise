@@ -46,23 +46,21 @@ header > div {
     form button letters color: white
   */
 
-  .npm-logo {
+  .npm-logo img {
     width: 60px;
     margin-right: 1rem;
+    padding: 20px 0 10px;
   }
 
  .search-bar {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    align-content: center;
+    align-items: center;
     width: 1100px;
-    margin: 10px 5px 5px;
+    padding: 10px 0;
 
  }
-    
-  
-    /*margin 20px 20px;*/
     
  
 
@@ -73,11 +71,11 @@ header > div {
     height: 40px;
  }
 
- .magnifying-glass img {
+ .magnifying-glass {
   background-color: rgba(0,0,0,0.05);
   width: 12px; 
   border: 15px solid rgba(0, 0, 0, 0.005);
-  align-items: center;
+  
 }
 
  .search-bar button {
@@ -86,6 +84,7 @@ header > div {
     height: 42px;
     font-size: 15px;
     border: none;
+    width: 80px;
     
     
  }
@@ -132,8 +131,9 @@ h1 {
 }
 
 #first-section article {
-    width: 400px;
+    width: 420px;
     text-align: center;
+    font-size: 15px;
 }
 
 #link-plans {
@@ -172,3 +172,81 @@ h1 {
 
 
 
+ /*-------------------------           Section 2         ------------------------*/
+
+
+ #second-section img {
+  width: 200px;
+ }
+
+ h2 {
+  font-size: 32px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  background: rgba(255,204,53,.4);
+  transform: skew(9deg,0deg);
+  font-style: italic;
+  width: 900px;
+  text-align: center;
+  line-height: 1.5;
+  margin: 50px 0;
+ }
+
+ #second-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+ }
+
+ #second-section article {
+  width: 800px;
+  /*font-size: 14px;*/
+  text-align: center;
+ }
+
+/*-------------------------           Section 3         ------------------------*/
+
+#third-section {
+  height: 600px;
+}
+
+.third-section-containers {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.container {
+  width: 250px;
+  margin: 0 auto;
+  padding: 75px 0;
+
+}
+
+.container img {
+  width: 30px;
+}
+
+.container h3 {
+  font-weight: bolder;
+  color: #ED1C24;
+}
+
+.create-btn {
+  display: flex;
+  justify-content: center;
+}
+
+.create-btn a {
+  
+  background: black;
+  color: white;
+  border: none;
+  width: 300px;
+  text-decoration: none;
+  text-align: center;
+  padding: 15px 15px;
+  box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+  
+}
