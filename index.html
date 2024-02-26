@@ -2,7 +2,7 @@
 <html>
 
     <head>
-        <title> NPM-CLONE </title>
+        <title> npm-clone </title>
         <meta charset="UTF-8" />
         <link rel="stylesheet" href="style.css">
     </head>
@@ -29,7 +29,7 @@
               </nav>
             </div>
           
-            <div>
+            <div class="searchBox">
               <!-- add logo, search bar and buttons (or links and style them as buttons later) -->
               <img class="npmLogo" src="/Users/magdadraszczyk/Desktop/html-css-npm/lab-html-exercise/images/npm-logo.png" alt="NPM logo">
               
@@ -39,8 +39,8 @@
                 <button> Search </button>
               </form>
               
-              <div>
-                <a href="#"> Join </a>
+              <div id="joinSearchLinks">
+                <a class=joinLink href="#"> Join </a>
                 <a href="#"> Log In </a>
               </div>
             
@@ -52,17 +52,21 @@
           <section id="firstSection">
 
             <h1> Build amazing things </h1>
-            <article> Essential JavaScript development tools that help you go to market faster and build powerful applications using
+            <article id="article"> Essential JavaScript development tools that help <br /> you go to market faster and build powerful applications using
                 modern open source code. 
             </article>
-            <a href="#"> See plans </a>
-            <a href="#"> Join for free </a>
+            
+            <div id="firstSectionLinks">
+              <a id="link-plans" href="#"> See plans </a>
+              <a id="link-join" href="#"> Join for free </a>
+            </div>
+          
 
           </section>
 
           <!----------------------------       Section 2        ------------------------------->
 
-          <section id="seconSection">
+          <section id="secondSection">
 
             <img src="/Users/magdadraszczyk/Desktop/html-css-npm/lab-html-exercise/images/triangle-hexagon.svg" alt="Triangle hexagon">
             <h2> Bring the best of open source to your company </h2>
