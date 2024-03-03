@@ -36,15 +36,17 @@
                 </nav>
             </div>
             <div>
-                <img src="images/npm-logo.png" alt="npm logo">
-                <img src="images/magnifying-glass.png" alt="magnifying glass">
-                <form action="/search" method="post">
-                    <input type="text" placeholder="Search packages">
-                    <button>Search</button>
-                </form>
-                <div>
-                    <a href="/join">Join</a>
-                    <a href="/login">Log in</a>
+                <img src="images/npm-logo.png" alt="npm logo" class="container" id="npm-logo">
+                <div class="semi-transparent container" id="search-container">
+                    <img src="images/magnifying-glass.png" alt="magnifying glass" class="search-container-elements">
+                    <form action="/search" method="post" id="search-form">
+                        <input type="search" placeholder="Search packages" id="search-bar" class="search-container-elements">
+                        <button class="search-container-elements">Search</button>
+                    </form>
+                </div>
+                <div class="container">
+                    <a href="/join" id="header-join">Join</a>
+                    <a href="/login" id="login">Log in</a>
                 </div>
             </div>
         </header>
