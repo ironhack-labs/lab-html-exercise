@@ -1,0 +1,104 @@
+.header-bar {
+    box-shadow: 0 8px 24px var(--light--grey--less--opacity);
+
+}
+
+/**At line level**/
+.header-line-one-wrapper,
+.header-line-two-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: var(--spacing-s-em);
+    align-items: center;
+    padding-inline: var(--spacing-s-em);
+    font-size: var(--font-s);
+}
+
+.header-line-one-wrapper {
+    padding-block: var(--spacing-xs-em);
+}
+
+.header-line-two-wrapper {
+    padding-block: var(--spacing-xs-em);
+
+    @media screen and (min-width: 30em) {
+        padding-block: var(--spacing-xxs-em);
+    }
+}
+
+/**Spaced groups inside each line**/
+.heart-and-motto,
+.primary-nav__links,
+.home-and-search,
+.access-links {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--spacing-xxs-em) var(--spacing-s-em);
+}
+
+/**
+    1st line
+    **/
+
+.header-bar__heart-icon {
+    flex: 0 0 var(--spacing-m-em);
+    inline-size: var(--spacing-m-em);
+    /*Why doesn't the flex basis value above do the job?*/
+    padding-inline-end: var(--spacing-xxs-em);
+}
+
+
+/**
+    2nd line
+    **/
+
+.home-and-search {
+    flex: 1 1 auto;
+    /*Needed for the search field to grow*/
+}
+
+.primary-nav__home {
+    display: block;
+    flex: 0 0 var(--spacing-xl-em);
+    inline-size: var(--spacing-xl-em);
+    /*Why doesn't the flex basis value above do the job?*/
+}
+
+.primary-nav__search {
+    display: flex;
+    flex: 1 1 auto;
+    /*Needed for the search field to grow*/
+}
+
+.search-field-wrapper {
+    display: flex;
+    flex: 1 1 auto;
+    /*Needed for the search field to grow*/
+    align-items: center;
+    background-color: var(--light-grey);
+}
+
+.search-field-icon-wrapper {
+    background-color: var(--light-grey);
+    padding-inline: var(--spacing-xxs-em);
+}
+
+.primary-nav__search-icon {
+    display: none;
+
+    @media screen and (min-width: 30em) {
+        /*Magnifying glass shown only for tablet and up*/
+        display: block;
+        inline-size: var(--spacing-s-rem);
+        block-size: var(--spacing-s-rem);
+    }
+}
+
+.primary-nav__search-field {
+    all: unset;
+    flex-grow: 1;
+    inline-size: 9.375rem;
+    /*150px - Needed for the search field to not be too wide on small mobile screens.*/
+}

@@ -1,0 +1,92 @@
+@layer reset, variables, elements, reusable-classes, components, override;
+
+@import url(/styles/reset.css) layer(reset);
+@import url(/styles/variables.css) layer(variables);
+@import url(/styles/components/header.css) layer(components.header);
+@import url(/styles/components/buttons.css) layer(components.buttons);
+@import url(/styles/components/landing-hero.css) layer(components.landing-hero);
+@import url(/styles/components/landing-benefits.css) layer(components.landing-benefits);
+
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+
+@layer elements {
+
+    header,
+    section {
+        display: grid;
+        grid-template-columns: 1fr min(95%, 1400px) 1fr;
+        /*Making sure the page doesn't get too wide*/
+
+        &>* {
+            grid-column: 2;
+            /*Putting all the content in the middle*/
+        }
+    }
+
+    section {
+        padding-block: var(--spacing-m-rem) var(--spacing-s-rem);
+
+        /*Media queries are mobile-first*/
+        @media screen and (min-width: 50em) {
+            padding-block: var(--spacing-xl-rem) var(--spacing-l-rem);
+        }
+    }
+
+    body {
+        font-family: var(--body-font);
+    }
+
+    h1 {
+        font-size: var(--font-xl-mobile);
+
+        @media screen and (min-width: 50em) {
+            font-size: var(--font-xl-desktop);
+        }
+    }
+
+    h2 {
+        font-size: var(--font-l-mobile);
+
+        @media screen and (min-width: 50em) {
+            font-size: var(--font-l-desktop);
+        }
+    }
+
+    h3,
+    p {
+        font-size: var(--font-m);
+    }
+}
+
+
+@layer reusable-classes {
+    a.no-link-styles {
+        text-decoration: none;
+        color: var(--default-text-color);
+
+        &:visited {
+            color: var(--default-text-color);
+        }
+
+    }
+
+    ul.no-list-styles {
+        list-style: none;
+        padding-inline-start: 0;
+    }
+
+    .m-l-CTA-wrapper {
+        display: flex;
+        justify-content: center;
+        gap: 0 var(--spacing-m-em);
+        padding-block: var(--spacing-m-em);
+    }
+
+}
+
+@layer override {
+    /* * {
+        border: 1px solid greenyellow;
+    } */
+}

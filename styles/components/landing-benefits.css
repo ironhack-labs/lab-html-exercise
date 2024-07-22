@@ -1,0 +1,70 @@
+.benefits__decorative-image {
+    display: none;
+
+    @media screen and (min-width: 30em) {
+        /*Decorative images shown only on tablet and up*/
+        display: block;
+        margin: 0 auto;
+        inline-size: calc(8*var(--spacing-s-rem));
+        padding-block-end: var(--spacing-m-rem);
+    }
+}
+
+.benefits__title {
+    font-style: italic;
+    padding-inline: var(--spacing-m-rem);
+    background-color: var(--yellow-highlight);
+    transform: skew(9deg, 0deg);
+    margin: 0 auto;
+    text-align: center;
+    max-width: 78ch;
+}
+
+
+.benefits__text {
+    margin: 0 auto;
+    max-width: 78ch;
+    padding-block-start: var(--spacing-s-em);
+    padding-block-end: var(--spacing-l-em);
+
+    /*Text left-aligned in mobile because it looks better as there is just one column below. 
+    There is a range between mobile and tablet where the text is center-aligned and there's just one column below, but ignoring as I'm guessing that there aren't many tablets within that range. */
+    @media screen and (min-width: 30em) {
+        text-align: center;
+    }
+}
+
+
+.benefits__list,
+.benefits-first-two-wrapper,
+.benefits-second-two-wrapper {
+    display: grid;
+    grid-gap: calc(2*var(--spacing-s-em));
+    grid-template-columns: repeat(auto-fit, minmax(30ch, 1fr));
+    /*The nesting of two grids within another grid is to avoid an orphan item (3 above 1 below) when the wrapping starts.*/
+
+    @media screen and (min-width: 50em) {
+        grid-auto-rows: 1fr;
+        /*Since the items have different amounts of text, 
+        this is to ensure rows are equal when we get at a 2x2 grid. Again there is this range between large mobile and tablet that I'm ignoring.*/
+    }
+}
+
+.benefits__list {
+
+    @media screen and (min-width: 50em) {
+        padding-block-start: var(--spacing-xl-em);
+    }
+}
+
+.benefits__decorative-icon {
+    inline-size: var(--spacing-m-rem);
+}
+
+.benefit__title {
+    padding-block-start: var(--spacing-xs-rem);
+}
+
+.benefit__text {
+    padding-block: var(--spacing-s-rem);
+}
