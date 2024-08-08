@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+  font-family: 'Poppins';
+  font-weight: 400;
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+h1{
+    font-size: 4em;
+    font-weight: 700;
+    text-align: center;
+}
+
+h2{
+    font-size: 2em;
+    text-align: center;
+    font-weight: 600;
+}
+
+a{
+    text-decoration: none;
+    color: black
+}
+
+header{
+    width: 90%;
+    margin: auto;
+}
+
+header > div{
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+    font-size: .8em;
+    margin: auto;
+}
+
+.black-heart{
+    width: 20px;
+    margin-right: 1rem;
+}
+
+nav{
+    width: 500px;
+    height: 50px;
+}
+
+nav ul{
+    height: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li{
+    padding: 10px;
+}
+
+.header-logo{
+    width: 60px;
+}
+
+.searchbar{
+    position: relative;
+    background-color: rgba(0,0,0,.05);
+    width: 80%;
+    margin: 5px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+}
+
+.searchbar form{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+#search{
+    background-color: rgba(0,0,0,0);
+    border: 0;
+    padding: 0 10px;
+    height: 50px;
+    width: 100%;
+}
+
+.img-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.searchbar img{
+    width: 20px;
+    margin: 5px;
+    height: auto;
+    padding: 10px 0 10px 10px;
+}
+
+.searchbar button{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    border: none;
+    background-color: #fb3e44;
+    color: white;
+    width: 70px;
+}
+
+.header-links{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.header-links a{
+    margin: 5px;
+}
+
+.button-join{
+    padding: 5px 15px;
+    border: 1px solid black;
+}
+
+#hero{
+    width: 90%;
+    margin: auto;
+    background-color: rgb(248 244 244);
+    background: linear-gradient(to bottom, #D2D2D2 0%, #E4E4E4 .5%, rgb(248 244 244) 2%);
+    text-align: center;
+}
+
+#hero h1{
+    padding: 80px 0 40px;
+}
+
+.article-centered{
+    margin: auto;
+    text-align: center;
+}
+
+#hero article{
+    width: 35%;
+    padding-bottom: 40px;
+}
+
+.hero-buttons{
+    padding: 40px 0 100px;
+    
+}
+
+.btn{
+    padding: 15px 60px;
+    font-weight: 700;
+    margin: 10px;
+}
+
+.btn-red{
+    background-color: #fb3e44;
+    color: white;
+    box-shadow: 5px 5px 1px 1px #fad0d2;
+}
+
+.btn-white{
+    background-color: white;
+}
+
+#why-npm{
+    text-align: center;
+}
+
+#why-npm img{
+    display: block;
+    width: 220px;
+    margin: 60px auto;
+}
+
+/* .inclined-background{
+    background: linear-gradient(75deg, transparent 20%, #ffebb5 20%);
+}
+
+#why-npm h2{
+    line-height: 1.1em;
+    margin-bottom: 20px;
+    padding: 0 30px;
+} */
+
+.inclined-background {
+    position: relative;
+    display: inline-block;
+    background-color: #ffebb5 ;
+    line-height: 1.1em;
+    height: 2.5em;
+    margin-bottom: 30px;
+    padding: 0 20px;
+}
+
+.inclined-background::before, .inclined-background::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 30px;
+    background: inherit;
+    z-index: -1;
+}
+
+.inclined-background::before {
+    left: -20px;
+    transform: skewX(10deg);
+}
+
+.inclined-background::after {
+    right: -20px;
+    transform: skewX(10deg);
+}
+
+.inclined-background h2 {
+    position: relative;
+    line-height: 1.5em;
+    z-index: 1;
+}
+
+#why-npm article{
+    width: 50%;
+    margin: 0 auto 140px;
+    text-align: center;
+}
+
+#boxes{
+    padding-bottom: 30px;
+}
+
+.boxes-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.box{
+    width: 18%;
+    margin: 15px;
+}
+
+.box img{
+    width: 35px;
+    margin-bottom: 10px;
+    
+}
+
+.box h3{
+    color: #fb3e44;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.box p{
+    font-size: .9em;
+}
+
+#boxes .button-container{
+    text-align: center;
+    padding: 70px 0;
+}
+
+.btn-black{
+    background-color: black;
+    color: white;
+    box-shadow: 5px 5px 1px 1px rgba(0,0,0,0.2);
+}
+
+#boxes .btn{
+    padding-left: 120px;
+    padding-right: 120px;
+}
