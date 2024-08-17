@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body {
+  font-family: 'Poppins';
+ background-color: red;
+} 
+
+    header > div {
+        padding: 0 25px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid lightgray;
+    }
+    
+    nav {
+        width: 600px;
+    }
+    
+    nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    nav a {
+        text-decoration: none;
+        color: black;
+    }
+    
+    .blackHeart {
+        width: 20px;
+        margin-right: 1rem;
+    }
+
+    .header-flex {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+    }
+    
+    .logo {
+        height: 30px; /* Adjust as needed */
+    }
+    
+    .search-form {
+        display: flex;
+        flex-grow: 1;
+        margin: 0 20px; /* Adjust for spacing */
+        max-width: 500px;
+    }
+    
+    .search-form input {
+        flex-grow: 1;
+        padding: 8px 8px 8px 40px; /* Add padding on the left for the logo */
+        border: 1px solid #ccc;
+        border-radius: 4px 0 0 4px;
+        border-right: none;
+        background-image: url('images/magnifying-glass.png'); /* Replace with your logo image path */
+        background-position: 10px center; /* Position of the logo in the input field */
+        background-repeat: no-repeat;
+        background-size: 24px 24px; /* Adjust size as needed */
+    }
+    
+    .search-form .search-button {
+        padding: 8px 16px;
+        border: 1px solid #f04e4e;
+        background-color: #f04e4e;
+        color: white;
+        border-radius: 0 4px 4px 0;
+        cursor: pointer;
+    }
+
+    .auth-buttons {
+        display: flex;
+        gap: 10px;
+    }
+
+    .auth-buttons button {
+        padding: 8px 16px;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    
+    .auth-buttons button a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    
+    .auth-buttons .join-button {
+    border: 1px solid #ccc;
+    background-color: white;
+    }
+
+    .auth-buttons .login-button {
+        border: 0px;
+        background-color: transparent;
+        color:white;
+    }
+
+    #section-1-flex{
+        display: flex;
+	    flex-direction: column;
+	    flex-wrap: nowrap;
+	    justify-content: center;
+	    align-items: center;
+	    align-content: center;
+        background-color: rgba(232,217,217);
+        height: 400px;
+    }
+
+    #section-1-flex #see-plans{
+        margin-top: 10px;
+        background-color: #FB3B49;
+        box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+
+    }
+
+    #section-1-flex button{
+        font-size: 20px;
+    }
+
+    #section-1-flex h1 {
+        font-size: 48px;
+    }
+
+    #section-1-flex article {
+        font-size: 24px;
+    }
+
+    #section-2-flex{
+        display: flex;
+	    flex-direction: column;
+	    flex-wrap: nowrap;
+	    justify-content: center;
+	    align-items: center;
+	    align-content: center;
+        background-color: rgba(232,217,217);
+        height: 800px;
+    }
+
+    #section-2-flex img{
+        width: 20%;
+    }
+
+
+    #section-2-flex h2 {
+        background-color: rgba(255,204,53,.4);
+        transform: skew(9deg,0deg);
+        font-style: italic;
+    }
+
+
+    #section-2-flex h1 {
+        font-size: 48px;
+    }
+
+    #section-2-flex article {
+        font-size: 24px;
+        max-width: 50%;
+    }
+
+    #section-3-flex {
+        padding-top: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(232, 217, 217);
+        height: 450px;
+    }
+    
+    #advantages {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    
+    #advantages > div {
+        flex: 0 0 250px;
+        margin: 0 15px;
+    }
+    
+    #advantages img {
+        width: 25%;
+    }
+    
+    #advantages h3 {
+        color: #ED1C24;
+    }
+    
+    #advantages p {
+        font-size: 18px;
+        max-width: 100%;
+    }
+    
+    #section-3-flex button {
+        font-size: 20px;
+        margin-top: 20px;
+    }
+    
+    #section-3-flex button a {
+        color: white;
+        text-decoration: none;
+    }
+    
+    #section-3-flex #create-org {
+        box-shadow: 8px 8px 0 rgba(128, 83, 35, .2);
+        color: #ED1C24;
+        background-color: black;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+    }
