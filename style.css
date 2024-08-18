@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+header > div {
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+}
+
+nav {
+    width: 600px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+nav a.search {
+    background-color: #FB3B49;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+}
+
+nav a.log-in {
+    color: #000; /* Text color */
+    border: 2px solid #000; /* Border color */
+    padding: 5px 15px; /* Padding */
+    border-radius: 5px; /* Rounded corners */
+    background-color: transparent; /* Background color */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+nav a.log-in:hover {
+    background-color: #000; /* Background color on hover */
+    color: #ffffff; /* Text color on hover */
+}
+
+.blackHeart {
+    width: 20px;
+    margin-right: 1rem;
+}
+
+.logo {
+    width: 40px;
+    margin-right: 1rem;
+}
+
+#section1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 50px 20px;
+    background-color: rgba(232,217,217,.3);
+}
+
+#section1 h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    border: 5px solid rgba(128,83,35,.4);
+    padding: 10px 20px;
+}
+
+#section1 p {
+    max-width: 600px;
+    margin: 20px 0;
+    font-size: 1.2rem;
+    border: 2px solid yellow;
+    padding: 10px 20px;
+}
+
+#section1 .buttons {
+    display: flex;
+    gap: 20px;
+}
+
+#section1 .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+#section1 .see-plans {
+    background-color: #FB3B49;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+}
+
+#section1 .join-free {
+    color: #FB3B49; /* Text color */
+    border: 2px solid #FB3B49; /* Border color and thickness */
+    padding: 10px 20px; /* Padding */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #ffffff; /* Background color */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+#section1 .join-free:hover {
+    background-color: #FB3B49; /* Background color on hover */
+    color: #ffffff; /* Text color on hover */
+}
+
+#section1 img {
+    width: 50px;
+    margin-bottom: 20px;
+}
+
+#section2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+#section2 img {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+#section2 h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg, 0deg);
+    margin-bottom: 20px;
+}
+
+#section2 p {
+    max-width: 600px;
+    margin: 20px 0;
+    font-size: 1.2rem;
+    border: 2px solid yellow;
+    padding: 10px 20px;
+}
+
+#section3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+#section3 .feature {
+    width: 250px;
+    border: 2px solid #FB3B49;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#section3 h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ED1C24;
+    margin-bottom: 10px;
+}
+
+#section3 p {
+    font-size: 1rem;
+}
+
+#section3 img {
+    width: 50px;
+    margin-bottom: 20px;
+}
+
+#section4 img {
+    width: 50px;
+    margin-bottom: 20px;
+}
+
+/* General Button Styles */
+.btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    display: inline-block;
+}
+
+/* Specific Button Styles */
+
+/* Base styles for the button */
+.create-org {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #0a0909;
+    color: #f8f7f7;
+    border: 2px solid rgb(243, 240, 240);
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    font-size: 1.2rem;
+    border-radius: 8px;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+/* Hover styles for the button */
+.create-org:hover {
+    background-color: #ED1C24; /* Change background on hover */
+    color: #ffffff; /* Change text color on hover */
+    border-color: #000000; /* Change border color on hover */
+}
+
+.Log-In {
+    background-color: #ffffff;
+    color: rgb(10, 9, 9);
+    border: 2px solid rgb(5, 5, 5);
+}
+
+.Log-In:hover {
+    background-color: rgb(247, 245, 245);
+    color: #030303;
+}
+
+.Join {
+    background-color: #ffffff;
+    color: rgb(10, 9, 9);
+    border: 2px solid rgb(5, 5, 5);
+}
+
+.Join:hover {
+    background-color: rgb(247, 245, 245);
+    color: #030303;
+}
+.search-btn {
+    background-color: #d41414;
+    color: rgb(236, 233, 233);
+    border: 2px solid rgb(250, 246, 246);
+}
+
+.search-btn:hover {
+    background-color: rgb(5, 5, 5);
+    color: #f7f3f3;
+}
+
