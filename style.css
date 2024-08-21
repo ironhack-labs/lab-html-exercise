@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Poppins'; 
+}
+header > div {
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+}
+nav {
+    width: 600px;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav a {
+    text-decoration: none;
+    color: black;
+}
+.blackHeart {
+    width: 20px;
+    margin-right: 1rem;
+}
+.logo{
+    height: 20px;
+    margin-right: 20px;
+}
+.search-form {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+}
+.search-form input {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 8px 16px 8px 40px; /* Padding left for icon space */
+    font-size: 14px;
+    background: url('images/magnifying-glass.png') no-repeat 10px center; /* Path to your icon */
+    background-size: 20px; /* Size of the icon */
+    border: none;
+    background-color: rgba(0,0,0,.05);  
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.search-form button {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fb3e44;
+    color: white;
+    border: none;
+    border-radius: 0%;
+    padding: 10px 20px;
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.auth-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+}
+.auth-buttons a {
+    margin-left: 10px;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #333;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+#section1 {
+    background-color: rgba(232,217,217,.3);
+    display: flex; /* Utiliza flexbox */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    text-align: center;
+}
+h1{
+    font-size: 60px;
+    font-weight:900;
+    justify-content: center;
+    margin: auto;
+}
+.text{
+    display: flex;
+    align-items: center;
+    width: 440px;
+    margin:auto;
+    margin-top: 40px;
+    text-align: center;
+}
+.button-container {
+    display: flex; /*flexbox to aline the buttons*/
+    justify-content: center; /*center the buttons on the line*/
+    gap: 20px; /*space between the buttons*/
+    margin-top: 30px; /*margin on the top to separate the buttons from the text*/
+}
+button {
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+}
+.button-red {
+    background-color: #FB3B49;
+    color: #fff;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+}
+.button-white {
+    background-color: white;
+    color: #000;
+}
+#section2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    text-align: center;
+}
+.triangle {
+    height: 100px;
+}
+h2{
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+    font-style: italic;
+    font-size: 30px;
+}
+.text2{
+    display: flex;
+    align-items: center;
+    width: 790px;
+    margin:auto;
+    /*margin-top: 40px;*/
+    text-align: center;
+}
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+    text-align: left;
+}
+.feature {
+    width: 18%;
+}
+.feature > img{
+    height: 20px;
+    margin-bottom: 30px;
+}
+.link-btn{
+    text-decoration: none;
+    color: #ED1C24;
+    font-weight:bold;
+    margin-bottom: 10px;
+}
+.cta-button {
+    text-align: center;
+    margin: 30px 0;
+}
+.cta-button button {
+    background-color: black;
+    color: white;
+    padding: 15px 30px;
+    font-size: 16px;
+    border: none;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+}
