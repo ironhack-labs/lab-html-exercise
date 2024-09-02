@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body {
+    font-family: 'Poppins';
+    margin: 10px 700px;
+  }
+
+/*--Header top--*/
+.header > div {
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+}
+
+.black-heart {
+    width: 20px;
+    margin-right: 1rem;
+}
+
+/*Nav*/
+.menu-bar {
+    width: 600px;
+}
+
+.menu-ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-bar .menu-item {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+/*--Header Bottom--*/
+.logo {
+    width: 70px;
+    margin: 17px 20px 17px 0;
+}
+
+/*Search bar*/
+.search-form {
+    color: rgba(0,0,0,.05);
+    position: relative;
+    flex-grow: 1;
+    display: flex;
+}
+
+.search-button {
+    background-color: #fb3e44;
+    color: white;
+    font: 1rem 'Poppins';
+    border: 1px solid rgb(202, 202, 202);
+    padding: 0.3em 1.2em;
+    
+}
+
+.search-form > .search-bar {
+    height: 30px;
+    background-color: rgb(235, 235, 235);
+    font: 1rem 'Poppins';
+    border: none;
+    padding: 0.4rem 3rem;
+    flex-grow: 1;
+}
+
+.magnifying-glass {
+    position: absolute;
+    top: 0.7rem;
+    left: 0.7rem;
+    width: 20px;
+}
+
+.user-access {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.user-access > a {
+    text-decoration: none;
+    color: black;
+}
+
+.join-button {
+    border: 1px inset rgb(202, 202, 202);
+    padding: 0.2rem 1rem;
+    margin-left: 2rem;
+    margin-right: 1rem;
+}
+
+
+/*--Section 1: Introduction--*/
+
+#introduction {
+    background-color: rgba(232,217,217,.3);
+    font-size: 1.2em;
+}
+
+.flex-center {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#introduction h1 {
+    font-size: 5rem;
+    font-weight: 600;
+    margin: 0 auto;
+}
+
+#introduction .text-intro {
+    width: 27em;
+    margin: 2rem 0 4rem;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.user-actions > a {
+    text-decoration: none;
+    font-weight: bold;
+    padding: 1rem 4.5rem;
+    font-weight: 700;
+    margin: 1em;
+}
+
+.user-actions .see-plans {
+    background-color: #FB3B49;
+    color: white;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+}
+
+.user-actions .join-free {
+    color: black;
+    background-color: white;
+}
+
+/*--Section 2. Description--*/
+#description .triangle-hexagon {
+    width: 250px;
+    margin: 50px;
+}
+
+#description > h2 {
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg, 0deg);
+    font-style: italic;
+    font-size: 2.1rem;
+    font-weight: 900;
+    letter-spacing: 1px;
+    padding: 0 2.5rem;
+    margin: 15px;
+}
+
+#description .npm-info {
+    width: 780px;
+    text-align: center;
+    line-height: 1.5rem;
+}
+
+/*--Section 3. Features--*/
+#features {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#features .features-container {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+#features .feature-item {
+    margin: 2rem;
+}
+
+#features img {
+    width: 40px;
+}
+
+#features h3 {
+    color: #ED1C24;
+    margin-bottom: 1.5em;
+    font-weight: bold;
+}
+
+.feature-item > p {
+    width: 16em;
+}
+
+/*Button*/
+.create-org {
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+}
+
+#features > .create-org > a {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    display: flex;
+    justify-content: center;
+    padding: 1rem 8rem;
+    align-items: center;
+    width: 10rem;
+}
+
