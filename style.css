@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body {
+  font-family: 'Poppins';
+}
+/* General styling for the header's divs */
+header > div {
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+  }
+  
+  /* Navigation container styling */
+  nav {
+    width: 600px; /* Sets the width of the navigation area */
+  }
+  
+  /* Unordered list in the nav: removing bullets and setting flex layout */
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Styling the links in the nav */
+  nav a {
+    text-decoration: none;
+    color: black; /* Set the link color */
+  }
+  
+  /* Image for the black heart in the top-left corner */
+  .blackHeart {
+    width: 20px;
+    margin-right: 1rem; /* Space between the heart and text */
+  }
+  
+ /* Styling for the logo */
+.bottom-header .logo {
+    width: 100px; /* Control the size of the logo container */
+    padding: 20px; /* Add padding around the logo */
+    margin-right: 0px; /* Add 0px space between the logo and the search bar */
+  }
+  
+  .bottom-header .logo img {
+    width: 90px; /* Set the width of the logo */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  /* Form container: make input and button align side by side */
+  form.search-bar {
+    display: flex; /* Flexbox to align items in a row */
+    align-items: center; /* Vertically align the input and button */
+  }  
+  
+  /* Styling the input field */
+  form input {
+    color: rgba(0, 0, 0, .05); /* Light input text color */
+    width: 900px; /* Adjust the width of the input */
+    height: 40px; /* Adjust the height of the input */
+    padding-left: 40px; /* Add left padding for space for the icon */
+    border: 0px solid lightgray; /* Add a border */
+    border-radius: 0px 0px 0px 0px; /* Rounded corners for the different sides */
+    font-size: 16px; /* Control the font size */
+    background-color: #f5f5f5; /* Light gray background color */
+  
+    /* Add the icon inside the input field */
+    background-image: url('images/magnifying-glass.png'); /* Path to your icon */
+    background-repeat: no-repeat;
+    background-position: 10px center; /* Position icon on the left-center */
+    background-size: 20px; /* Size of the icon */
+    border-right: none; /* Remove right border to attach to button */
+  }
+  
+  /* Styling the Search button */
+  form button {
+    background-color: #fb3e44; /* Red button background */
+    color: white; /* White button text */
+    border: 1px solid #fb3e44; /* Button border matches background */
+    padding: 10px 20px; /* Button padding for size */
+    border-radius: 0px 0px 0px 0px; /* Rounded corners for the different sides */
+    font-size: 16px; /* Font size for readability */
+    cursor: pointer; /* Hand cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth hover transition */
+    height: 40px; /* Ensure the button height matches the input */
+  }
+  
+  form button:hover {
+    background-color: #e03436; /* Darker red on hover */
+  }
+  
+ /* Base styling for both buttons */
+ .header-buttons a {
+    background-color: transparent; /* Transparent background */
+    color: black; /* black text color */
+    padding: 10px 20px; /* Add padding for size */
+    border-radius: 0px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    font-size: 16px; /* Font size */
+    margin-left: 10px; /* Space between Join and Log In buttons */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    border: none; /* No border by default */
+    cursor: pointer; /* Hand cursor on hover */
+  }
+  
+  /* Styling for the Join button */
+  .header-buttons a:first-child {
+    color: black; /* black text color */
+    border: 2px solid  black; /* black for Join button */
+  }
+  
+  .header-buttons a:first-child:hover {
+    background-color:  black; /* black text on hover */
+    color: white; /* black text on hover */
+  }
+  
+  /* Styling for the Log In button */
+  .header-buttons a:nth-child(2) {
+    color: black; /* black text color */
+    border: 0px solid black; /* black border for Log In button */
+  }
+  
+  .header-buttons a:nth-child(2):hover {
+    background-color: black; /* black background on hover */
+    color: white; /* black text on hover */
+  }
+  
+  
+/* Styling for Section 1 */
+#section1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 600px;
+    background-color: rgba(232, 217, 217, .3); /* Light background color */
+    text-align: center;
+  }
+  
+  /* Custom styling for the heading in Section 1 */
+#section1 h1 {
+    font-size: 3rem; /* Large heading size */
+    color: #333; /* Dark text color */
+    margin-bottom: 20px; /* Space below the heading */
+    font-weight: 900; /* Make the heading bold */
+    letter-spacing: 0.1px; /* Slightly increase letter spacing */
+    text-transform: none; /* Ensure the text remains lowercase */
+  }
+  
+ /* Custom styling for the paragraph */
+#section1 p {
+    font-size: 0.8rem; /* Adjust font size */
+    color: #555; /* Medium gray text color */
+    font-weight: bold; /* Bold text */
+    line-height: 1.6; /* Increase line height for readability */
+    max-width: 330px; /* Limit the width of the paragraph */
+    margin: 0 auto 30px auto; /* Center the paragraph and add space below */
+    text-align: center; /* Center the text inside the paragraph */
+  }  
+  
+  /* Centering the buttons */
+  .button-container {
+    display: flex; /* Align buttons side by side */
+    justify-content: center; /* Center the buttons horizontally */
+    gap: 20px; /* Space between the buttons */
+    margin-top: 20px; /* Add some space between the text and the buttons */
+  }
+  
+ /* Styling the 'See plans' button */
+#section1 .btn.see-plans {
+    background-color: #FB3B49; /* Red background */
+    color: white; /* White text */
+    padding: 10px 50px; /* Button padding */
+    border: none; /* Remove default border */
+    font-weight: 900; /* Make the heading bold */
+    border-radius: 0px; /* Rounded corners */
+    box-shadow: 5px 5px 0 rgba(251, 59, 73, .2); /* Button shadow */
+    text-decoration: none; /* Remove underline for links */
+  }
+  
+  #section1 .btn.see-plans:hover {
+    background-color: #e03436; /* Darker red on hover */
+    color: white; /* White text on hover */
+  }
+  
+  /* Styling the 'Join for free' button */
+  #section1 .btn.join-free {
+    background-color:  #fffefe; /* Transparent background */
+    color: #050505; /* Red text color to match 'See plans' */
+    font-weight: 900; /* Make the heading bold */
+    padding: 10px 50px; /* Button padding */
+    border: none; /* No border for Join for free button */
+    border-radius: 0px; /* Rounded corners */
+    cursor: pointer; /* Hand cursor on hover */
+    text-decoration: none; /* Remove underline for links */
+  }
+  
+  #section1 .btn.join-free:hover {
+    background-color: #FB3B49; /* Red background on hover */
+    color: white; /* White text on hover */
+  }  
+
+ /* Styling for Section 2 */
+#section2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0; /* Vertical padding */
+    background-color: rgba(255, 255, 255, .1); /* Light background */
+    text-align: center; /* Center the text */
+  }
+  
+  /* Styling for the section heading */
+  #section2 h2 {
+    background-color: rgba(255, 204, 53, .4); /* Yellow background */
+    transform: skew(9deg, 0deg); /* Skew the background */
+    font-style: italic; /* Italic font */
+    padding: 10px 20px; /* Padding around the heading */
+    margin-bottom: 30px; /* Margin below the heading */
+    display: inline-block; /* So the skew only applies to the heading content */
+  }
+  
+  /* Feature image - Adjust the size */
+  .feature img {
+    width: 200px; /* Adjusted size for the image */
+    height: auto; /* Maintain the aspect ratio */
+    margin-bottom: 20px; /* Space between image and heading */
+  }
+  
+  /* Feature headings */
+  .feature h3 {
+    font-size: 1.5rem; /* Adjust font size */
+    margin-bottom: 5px; /* Space below the heading */
+  }
+  
+  /* Styling for the paragraph */
+#section2 p {
+    font-size: 0.68rem; /* Adjusted font size for better readability */
+    color: #555; /* Medium gray text color */
+    line-height: 1.6; /* Improve line height for readability */
+    max-width: 540px; /* Adjustable max width */
+    margin: 0 auto 30px auto; /* Center the paragraph with auto margins */
+    text-align: center; /* Ensure the text is centered */
+  }  
+
+ /* Styling for Section 3 */
+#section3 {
+    padding: 50px 150px; /* Padding around the section */
+    background-color: rgba(255, 255, 255, .1); /* Optional: Background color */
+    text-align: center; /* Center the button and any text content */
+  }
+  
+  /* Styling the row of info boxes */
+  .info-boxes {
+    display: flex; /* Flexbox to align boxes in a row */
+    justify-content: space-between; /* Space out the info boxes evenly */
+    align-items: flex-start; /* Align items to the top */
+    gap: 20px; /* Space between the boxes */
+    width: 100%; /* Take full width of the container */
+  }
+  
+  /* Styling for each info box */
+  .info-box {
+    flex: 1; /* Allow each box to take equal space */
+    min-width: 250px; /* Ensure a minimum width for smaller screens */
+    max-width: 300px; /* Control the maximum width of the boxes */
+    background-color: white; /* White background for each box */
+    padding: 20px;
+    border-radius: 0px; /* Rounded corners */
+    text-align: left; /* Align content to the left */
+  }
+  
+  /* Styling for images in the info boxes */
+.info-box img {
+    width: 40px; /* Set a fixed width for all images */
+    height: 40px; /* Set a fixed height for all images */
+    object-fit: contain; /* Ensure images maintain aspect ratio */
+    margin-bottom: 2px; /* Reduced space between image and heading */
+  }
+  
+  /* Styling for headings in the info boxes */
+  .info-box h3 {
+    font-size: 0.9rem; /* Font size for the heading */
+    margin-bottom: 10px; /* Space below the heading */
+    color: #ED1C24; /* Red color for the headings */
+    font-weight: 900; /* Extra bold weight */
+  }  
+  
+  /* Styling for paragraphs in the info boxes */
+  .info-box p {
+    font-size: 0.7rem; /* Paragraph font size */
+    color: #555; /* Gray text color */
+    line-height: 1.6; /* Line height for readability */
+    margin-bottom: 20px; /* Space below the paragraph */
+  }
+  
+  /* Centered button under the info boxes */
+  .center-button {
+    margin-top: 40px; /* Add space between the boxes and the button */
+    text-align: center; /* Center the button */
+  }
+  
+  /* Styling for the "Create an Org" button */
+  .center-button .btn {
+    display: inline-block;
+    background-color: black; /* Black background for the button */
+    color: white; /* White text */
+    padding: 10px 110px; /* Button padding */
+    text-decoration: none; /* Remove underline from link */
+    border-radius: 0px; /* Rounded corners */
+    cursor: pointer; /* Hand cursor on hover */
+    box-shadow: 5px 5px 0 rgba(128, 83, 35, .2); /* Button shadow */
+  }
+  
+  .center-button .btn:hover {
+    background-color: #333; /* Darker black on hover */
+  }
+  
+  /* Responsive styling for smaller screens */
+  @media (max-width: 768px) {
+    .info-boxes {
+      flex-direction: column; /* Stack the boxes vertically on smaller screens */
+      gap: 30px; /* Increase the gap between the boxes */
+    }
+  }
+  
+  
