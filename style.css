@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #fff;
+    color: #333;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px;
+    border-bottom: 1px solid lightgray;
+}
+
+.logo img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+nav {
+    width: 600px; 
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: black; 
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #FB3E44;
+}
+
+.blackHeart {
+    width: 20px;
+    margin-right: 1rem;
+}
+
+.header-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 25px;
+    background-color: #f5f5f5;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo-main {
+    max-width: 100px; 
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px 10px;
+    background-color: #fff;
+}
+
+.icon-search {
+    width: 18px;
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    flex-grow: 1;
+    color: rgba(0, 0, 0, 0.05);
+}
+
+.search-bar button {
+    padding: 8px 15px;
+    background-color: #FB3E44;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-bar button:hover {
+    background-color: #d42f3a;
+}
+
+.header-buttons a {
+    padding: 8px 15px;
+    margin-left: 10px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.button-primary {
+    background-color: #FB3E44;
+}
+
+.button-secondary {
+    background-color: #4CAF50;
+}
+
+.button-primary:hover {
+    background-color: #d42f3a;
+}
+
+.button-secondary:hover {
+    background-color: #388E3C;
+}
+
+main {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#intro {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 600px; 
+    background-color: rgba(232, 217, 217, 0.3); 
+    padding: 60px 20px;
+    border-radius: 8px;
+}
+
+#intro h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: bold;
+}
+
+#intro p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #666;
+}
+
+.button-primary, .button-secondary {
+    padding: 15px 30px;
+    margin: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    font-size: 1rem;
+}
+
+.button-primary {
+    background-color: #FB3B49; 
+    box-shadow: 8px 8px 0 rgba(251, 59, 73, 0.2); 
+}
+
+#features {
+    margin-top: 60px;
+    padding: 40px 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+#features h2 {
+    background-color: rgba(255, 204, 53, 0.4); 
+    padding: 10px;
+    font-style: italic; 
+    margin-bottom: 20px;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.feature-item {
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.feature-item img {
+    width: 60px; 
+    margin-bottom: 15px;
+}
+
+.feature-item h3 {
+    color: #ED1C24;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.hexagon-image {
+    width: 150px; 
+    margin: 40px auto;
+    display: block;
+}
+
+#section3 h3 {
+    color: #ED1C24; 
+}
+
+.create-org-button {
+    background-color: black;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 8px 8px 0 rgba(128, 83, 35, 0.2); 
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.create-org-button:hover {
+    background-color: #333;
+}
