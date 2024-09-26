@@ -1,0 +1,303 @@
+/*@import url("node_modules/normalize.css");*/
+
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body {
+    font-family: 'Poppins';
+    margin:0;
+    padding:0;
+}
+
+header{
+    position: fixed;
+    z-index: 20;
+    background-color: white;
+    width: 100%;
+    padding: 5px;
+}
+
+img{
+    width: 30%;
+}
+
+.logo-main svg{
+    width: 120px;
+}
+
+.logo svg{
+    width: 20%;
+}
+
+.logo1{
+    width: 130px;
+}
+
+button[type=submit]{
+    color: white;
+    background-color: #FB3B49;
+    border: none;
+}
+
+input[type=text]{
+    display: flex;
+    width: 100%;
+    -webkit-box-sizing: border-box; // Safari/Chrome, other WebKit
+    -moz-box-sizing: border-box;    // Firefox, other Gecko
+    box-sizing: border-box;
+}
+
+.nav-search-area{
+    border-top: 1px solid lightgray;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 8px 0;
+}
+
+.nav-search-area .logo-main{
+    align-items: center;
+    justify-items: center;
+}
+
+.nav-search-area .search-btn-grp{
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-search-area .search-btn-grp div:first-child{
+    border: 1px solid darkgray;
+}
+
+.nav-search-area .search-btn-grp div{
+    color: darkgray;
+    display: block;
+    border: none;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.nav-search-area .search-btn-grp div a{
+    text-decoration: none;
+    color: black;
+}
+
+.nav-search-area .srch,
+.nav-search-area .srch form{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 0 10px;
+}
+
+.nav-search-area .srch form .svg1{
+    align-content: center;
+    justify-content: center;
+    padding-top: 5px;
+    padding-right: 5px;
+}
+
+.nav-search-area .srch form.search-box{
+    width: 100%;
+}
+
+input[type=search], select, textarea{
+    padding: 12px;
+    border: 1px solid #ccc;
+    background-color: #f8f4f4;
+    border-radius: 0px;
+    box-sizing: border-box;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.nav-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav-bar .intro {
+    align-content: center;
+    justify-content: flex-start;
+}
+
+.nav-bar .icon1{
+    padding: 0 5px;
+}
+
+.nav-bar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-content: center;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+}
+
+.nav-bar ul li{
+    padding: 16px;
+}
+
+.nav-bar ul li a{
+    color: black;
+    margin: 10px;
+    text-decoration: none;
+}
+
+.nav-bar ul li.selected{
+    background: #FB3B49;
+}
+
+.nav-bar ul li a:hover{
+    color: white;
+}
+
+.nav-bar ul li:hover{
+    color: white;
+    background: rgba(259, 78, 53, .4);
+}
+
+.small{
+    width: 25%;
+}
+
+.btn-lg-general-props{
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.block-variation{
+    color: white;
+    background-color: #FB3B49;
+    box-shadow: 10px 10px rgba(259, 78, 53, .4);
+}
+
+.block-vari-wh{
+    background-color: white;
+}
+
+.block-vari-wh a{
+    color: black !important;
+    font-weight: bold;
+}
+
+.block {
+    color: white;
+    display: block;
+    border: none;
+    background-color: black;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 10px 10px lightgray;
+}
+
+#main article.build-amazing-things{
+    padding-top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f8f4f4;
+    width: 100%;
+    height: calc(416px + 50px);
+}
+
+#main article.build-amazing-things section h1{
+    font-size: 65px;
+    text-align: center;
+}
+
+#main article.build-amazing-things section div.button-grp{
+    text-align: center;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5ch;
+    width: 100%;
+    margin: 50px 0;
+}
+
+#main article.build-amazing-things section div.button-grp a{
+    text-decoration: none;
+    color: white;
+}
+
+
+#main article.hexagon section{
+    background: white;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    padding: 50px;
+}
+
+#main article.hexagon section div.highlight{
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    margin: 30px;
+}
+
+
+#main article.hexagon section div.highlight div.skew-c{
+    width: 50%;
+    background: rgba(255,204,53,.4);
+}
+
+#main article.hexagon section div.highlight div.skew-l,
+#main article.hexagon section div.highlight div.skew-r
+{
+    width: 25%;
+    transform: skew(8deg);
+    margin-left: -12px;
+    margin-right: -12px;
+    background: white;
+}
+
+
+#main article.hexagon section div.hex-text{
+    padding: 1rem 20rem;
+    font-size: 18px;
+}
+
+#main article.reasons-to-use section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+#main article.reasons-to-use div h2{
+    color: #FB3B49;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+#main article.reasons-to-use section div{
+    width: 250px;
+}
+
+
+
+#main .button-grp-blk{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 40px 0;
+}
