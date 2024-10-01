@@ -95,7 +95,7 @@ We could try to represent this part of the website with the following:
   </div>
 
   <div>
-    <!-- add logo, search bar and buttons (or links and style them as buttons later) -->
+    <!-- add logo, search bar and buttons (or links and style them as buttons later) --> 
   </div>
 </header>
 ```
@@ -141,7 +141,7 @@ Refresh the page in Chrome, and if your _style.css_ is linked properly, the page
 Before we move forward, add at the very top of your _style.css_ file the following lines:
 
 ```css
-@import url('https://fonts.googleapis.com/css?family=Poppins');
+<link rel="stylesheet" href="style.css">
 
 body {
   font-family: 'Poppins';
