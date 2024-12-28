@@ -49,10 +49,10 @@ So let's get started!
 ### Part I - pure HTML (no styles applied)
 
 It might seem like a joke, but this is our goal in this iteration:
-
-![](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_a00f9aadceb92aed72cd6b1158c3fd01.png)
+https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_a00f9aadceb92aed72cd6b1158c3fd01.png)
 ![](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_abbbad2549a71232f29c725f6ef59731.png)
-![](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_c497a8394cb74b0f576e16c6fd2fb894.png)
+![](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_c497a8394cb74b0f576e16c6fd2fb894.png
+![]()
 
 <br>
 
