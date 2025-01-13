@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body {
+  font-family: 'Poppins';
+}
+
+
+header > div {
+    padding: 0 25px;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	align-content: stretch;
+    border-bottom: 1px solid lightgray;
+  }
+  
+nav {
+    width: 600px;
+  }
+  
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+nav a {
+    text-decoration: none;
+    color: black;
+  }
+  
+.blackHeart {
+    width: 20px;
+    margin-right: 1rem;
+  }
+
+.top-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 10px 25px;
+}
+
+.second-top-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 10px 25px;
+    gap: 20px; 
+}
+
+.second-top-bar div {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.npm-logo {
+    width: 30%; 
+    height: auto;
+}
+
+.search-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    align-items: center; 
+    width: 100%; 
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.search-form .magnifying-glass {
+    width: 20px; 
+    height: auto;
+    margin-right: 10px; 
+}
+
+.search-form input[type="text"] {
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    flex: 1; 
+    margin-right: 10px; 
+    color: rgba(0,0,0,.05); 
+    width: 300px; 
+}
+
+.search-form button[type="submit"] {
+    padding: 5px 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #fb3e44; 
+    color: white; 
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.second-top-bar a button{
+    padding: 5px 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #edeaea; 
+    color: black; 
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.search-form button[type="submit"]:hover {
+    background-color: #d32f2f;
+}
+
+.second-top-bar a button:hover {
+    background-color: #4f4c4d;
+    color: white;
+}
+
+.second-top-bar a {
+    margin-left: 5px;
+    margin-right: 5px; 
+}
+
+.magnifying-glass {
+    width: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+form label {
+    color: rgba(0,0,0,.05);
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+form input {
+    color: rgba(0,0,0,.05);
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 200%;
+}
+
+form button {
+    background-color: #fb3e44;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.build-amazing-things {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 100px 0;
+    background-color: #f9f9f9;
+    height: 600px 0;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.build-amazing-things h1 {
+    font-size: 3.0em;
+    margin-bottom: 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px; 
+}
+
+.build-amazing-things p {
+    font-size: 1.2em;
+    color: #666;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-bottom: 40px; 
+}
+
+.button-container {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.see-plans-button {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #FB3B49;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+    font-size: 1em;
+    display: flexbox;
+    flex-direction: row;
+    margin: 20px auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none;
+}
+
+.see-plans-button:hover {
+    background-color: #d32f2f;
+}
+
+.join-for-free-button {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: #010000;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+    font-size: 1em;
+    display: flexbox;
+    flex-direction: row;
+    margin-top: 50px 0;
+    margin: 20px auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none;
+}
+
+.join-for-free-button:hover {
+    background-color: #4f4c4d;
+    color: white;
+}
+
+
+.bring-open-source {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0;
+    background-color: white;
+    height: 400px 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bring-open-source h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bring-open-source p {
+    font-size: 1.2em;
+    color: #666;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bring-open-source img {
+    width: 100px; 
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.npm-features {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 0;
+    background-color: #f9f9f9;
+    margin-left: auto;
+    margin-right: auto;
+    height: 400px 0;
+}
+
+.npm-features .box {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    justify-content: space-between; 
+    align-items: flex-start;
+    max-width: 25%; 
+    box-sizing: border-box;
+}
+
+.npm-features img {
+    width: 50px; 
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.npm-features h3 {
+    font-size: 1em;
+    color: #FB3B49; 
+    margin-bottom: 10px;
+}
+
+.npm-features p {
+    font-size: 0.7em;
+    color: #666;
+}
+
+.create-org-button {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+    font-size: 1em;
+    display: flexbox;
+    flex-direction: row;
+    margin-top: 50px 0;
+    text-decoration: none;
+    width: fit-content;
+    margin: 50px auto;
+}
+
+.create-org-button:hover {
+    background-color: #4f4c4d;
+    color: white;
+}
+
+.boxes {
+    display: flex;
+    justify-content: space-between; 
+    align-items: stretch; 
+    flex-wrap: wrap;
+    padding: 20px 0;
+    background-color: #f9f9f9;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.final-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+}
