@@ -1,4 +1,4 @@
-![logo_ironhack_blue 7](https://user-images.githubusercontent.com/23629340/40541063-a07a0a8a-601a-11e8-91b5-2f13e4e6b441.png)
+ ![logo_ironhack_blue 7](https://user-images.githubusercontent.com/23629340/40541063-a07a0a8a-601a-11e8-91b5-2f13e4e6b441.png)
 
 # Module Exercise: HTML & CSS
 
@@ -74,6 +74,8 @@ Your task in this iteration will be to create the `header` and `nav`, which are 
 However, remember, on the image above styles are already applied so our final result won't be quite the same.
 
 We could try to represent this part of the website with the following:
+
+test adjustment
 
 ```html
 <header>
