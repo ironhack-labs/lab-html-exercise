@@ -1,0 +1,236 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #fff;
+  color: #1a1a1a;
+  line-height: 1.5;
+}
+
+/* Top bar */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  background: #f9f8f6;
+  padding: 6px 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+.topbar span {
+  font-weight: 600;
+}
+
+.topnav a {
+  margin-left: 18px;
+  color: #666;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.topnav a:hover {
+  color: #000;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 12px 20px;
+  border-bottom: 1px solid #ccc;
+  gap: 10px;
+}
+
+.logo {
+  font-weight: 900;
+  font-size: 22px;
+}
+
+input[type="search"] {
+  flex-grow: 1;
+  padding: 6px 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.search-btn {
+  background: #f04e3e;
+  border: none;
+  color: white;
+  padding: 7px 14px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.btn {
+  border-radius: 3px;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+  padding: 8px 16px;
+}
+
+.join {
+  background: #fff;
+  border: 1px solid #ccc;
+  margin-left: 10px;
+}
+
+.login {
+  background: #fff;
+  border: 1px solid #ccc;
+}
+
+/* Hero */
+.hero {
+  background: #faf7f7;
+  padding: 80px 20px 100px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  max-width: 480px;
+  margin: 0 auto 30px;
+}
+
+.btn-group {
+  display: inline-flex;
+  gap: 10px;
+}
+
+.red {
+  background: #f04e3e;
+  color: white;
+  padding: 14px 40px;
+  font-weight: 700;
+  box-shadow: 6px 6px 0px #d63a2b;
+}
+
+.white {
+  background: #fff;
+  padding: 14px 40px;
+  border: 1px solid #ccc;
+  font-weight: 700;
+}
+
+/* Middle section */
+.middle-section {
+  text-align: center;
+  padding: 60px 20px 80px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.middle-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  background: #fff2b8;
+  display: inline-block;
+  padding: 5px 12px;
+  font-weight: 700;
+  border-radius: 3px;
+}
+
+.middle-text {
+  font-size: 0.9rem;
+  margin-bottom: 50px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333;
+}
+
+/* Hexagon icon placeholder */
+.icon-hexagon {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 20px;
+}
+
+/* Features */
+.features {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto 40px;
+}
+
+.feature {
+  flex: 1 1 180px;
+  text-align: left;
+}
+
+.feature h3 {
+  font-size: 1rem;
+  color: #c6332f;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+/* Icons placeholders */
+.icon {
+  margin-bottom: 10px;
+  width: 26px;
+  height: 20px;
+  background: #ccc;
+  display: inline-block;
+  border-radius: 3px;
+}
+
+.monitor {
+  width: 30px;
+  height: 20px;
+  background: url('data:image/svg+xml;utf8,<svg fill="none" stroke="%23c6332f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="5" width="20" height="14" rx="2" ry="2"/></svg>') no-repeat center;
+  background-size: contain;
+}
+
+.team {
+  width: 26px;
+  height: 20px;
+  background: url('data:image/svg+xml;utf8,<svg fill="%23c6332f" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="7" r="4"/><path fill="%23c6332f" d="M3 21v-2a4 4 0 0 1 8 0v2zM13 21v-2a4 4 0 0 1 8 0v2z"/></svg>') no-repeat center;
+  background-size: contain;
+}
+
+.grid {
+  width: 26px;
+  height: 20px;
+  background: url('data:image/svg+xml;utf8,<svg fill="%23c6332f" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>') no-repeat center;
+  background-size: contain;
+}
+
+.glasses {
+  width: 26px;
+  height: 20px;
+  background: url('data:image/svg+xml;utf8,<svg stroke="%23c6332f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><circle cx="6" cy="12" r="4"/><circle cx="18" cy="12" r="4"/><line x1="10" y1="12" x2="14" y2="12"/></svg>') no-repeat center;
+  background-size: contain;
+}
+
+/* Black button */
+.black-btn {
+  background: #000;
+  color: #fff;
+  border: none;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 14px 60px;
+  cursor: pointer;
+  border-radius: 3px;
+}
