@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body {
+  font-family: 'Poppins';
+}
+
+/* Header layout */
+header {
+  padding: 0 25px;
+  display: flex;
+flex-direction: column;
+    gap: 20px;
+  border-bottom: 1px solid lightgray;
+  background-color: white;
+}
+
+/* top section layout */
+.top-header {
+  display: flex;
+justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Nifty Penguin Magic logo */
+.logo-title {
+  display: flex;
+  align-items: center;
+  
+}
+
+.blackHeart {
+  width: 20px;
+  margin-right: 0.5rem;
+}
+
+/* Nav */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+}
+
+/* bottom section layout */
+.bottom-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.npm-logo {
+  width: 60px;
+}
+
+/* Search form */
+.search-form {
+  display: flex;
+  align-items: center;
+  background-color: #f4f4f4;
+  padding: 6px 10px;
+  border-radius: 4px;
+  flex-grow: 1;
+}
+
+.search-icon {
+  width: 16px;
+  margin-right: 6px;
+  opacity: 0.5;
+}
+
+.search-form input {
+  border: none;
+  background: none;
+  outline: none;
+  padding: 4px 8px;
+  color: black;
+  width: 200px;
+  flex: 1;
+}
+
+.search-form button {
+  background-color: #fb3e44;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 3px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Auth links */
+.auth-links {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.auth-links .btn {
+  font-size: 14px;
+  padding: 6px 14px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Join button – white bg, black text, border */
+.auth-links .join {
+  background-color: white;
+  color: black;
+  border: 1px solid #888;
+}
+
+/* Log in button – transparent, no border */
+.auth-links .login {
+  background: none;
+  color: black;
+  border: none;
+}
+/*Section */
+/* Main section */
+.main-section {
+  
+  text-align: center;
+  margin: 50px auto 0;
+  max-width: 600px;
+  padding: 50px;
+  background-color: rgb(248, 243, 247);
+  flex-grow: 1;
+}
+
+.main-section h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  ;
+  
+}
+
+.main-section p {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+.main-section .btn {
+  margin: 0 10px;
+  padding: 8px 16px;
+  border: 1px solid gray;
+  background-color: white;
+  cursor: pointer;
+}
+.main-section .plans {
+  background-color: rgb(246, 14, 14);
+  color: white;
+}
+.hexa {
+  width: 200px;
+  height: 200px;
+}
+.center-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.section2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+}
+.section2 h2 {
+background-color: rgb(246, 240, 158);
+  padding: 0;
+  width: 50%;
+  border-radius: 5px;
+  margin: 0 0 1.5rem 0;
+  
+}
+.section2 p{
+  font-size: 1rem;
+  margin: 0 auto 1rem;
+  line-height: 1.5;
+  max-width: 600px;
+  
+}
+.section3 {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem; 
+  padding: 40px;
+  flex-wrap: wrap; /* for responsiveness */
+  text-align: center;
+}
+
+.section3 div {
+  flex: 1 1 200px;  /* grow, shrink, base width */
+  max-width: 220px;
+  padding: 1rem;
+}
+
+
+.section3 img {
+  width: 50px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+.section3 h3 {
+  font-size: 1rem;
+  color: crimson;
+  margin-bottom: 0.5rem;
+}
+
+.section3 p {
+  font-size: 0.9rem;
+  color: #444;
+  line-height: 1.4;
+}
+
+.footer {
+  text-align: center;
+}
+.footer .btn-org {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border: none;
+  width: 20%;
+box-shadow: 6px 6px 0 #e8dfd7;
+}
