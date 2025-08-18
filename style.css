@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body {
+  font-family: 'Poppins';
+}
+
+header > div {
+  padding: 0 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+}
+
+nav {
+  width: 600px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+.blackHeart {
+  width: 20px;
+  margin-right: 1rem;
+}
+
+.searchContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* space between items */
+}
+
+.searchBar {
+  position: relative;
+  flex: 1; /* takes all available space between logo and buttons */
+}
+
+.searchBar input {
+  width: 100%;
+  padding: 8px 30px 8px 8px;
+  box-sizing: border-box;
+}
+
+.searchBar .searchIcon {
+  position: absolute;
+  left: 8px;  /* position inside input on the left */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  pointer-events: none; /* clicks go to input */
+}
+
+#searchButton {
+    background-color: #fb3e44;
+    color: white;
+}
+
+section {
+  margin: 50px 0;  /* 50px top & bottom, 0 left & right */
+}
+
+
+
+#amazingThings {
+    display: flex;                 /* enables flexbox */
+    flex-direction: column;        /* stack children vertically */
+    justify-content: center;       /* centers items vertically */
+    align-items: center;           /* centers items horizontally */
+    height: 600px;                 /* suggested section height */
+    text-align: center;            /* keeps text centered inside flex items */
+    position: relative;
+    background-color: rgba(232,217,217,.3)
+    
+}
+
+#plans {
+    background-color: #FB3B49;
+}
+
+#free {
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+
+}
+
+#middle {
+    display: flex;                 /* enables flexbox */
+    flex-direction: column;        /* stack children vertically */
+    justify-content: center;       /* centers items vertically */
+    align-items: center;           /* centers items horizontally */
+    height: 600px;
+
+}
+
+#middle img.triangleHex {
+  width: 20%;       /* scales image relative to section width */
+  height: auto;     /* keeps aspect ratio */
+  margin-top: 20px; /* space above image */
+}
+
+#middle h2 {
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+    font-style: italic;
+}
+
+
+#last {
+    display: flex;                 /* enables flexbox */
+    flex-direction: column;        /* stack children vertically */
+    justify-content: center;       /* centers items vertically */
+    align-items: center;           /* centers items horizontally */
+    position: relative;
+}
+
+
+.squareRow {
+  display: flex;
+  flex-direction: row;   /* horizontal (default anyway) */
+  gap: 10px;             /* space between boxes */
+}
+
+.square {
+  flex: 1;               /* all take equal width */
+  padding: 20px;
+  text-align: center;
+}
+
+.square img {
+  max-width: 5%;   /* never overflow the box */
+  height: auto;      /* keep aspect ratio */
+  display: block;    /* removes the little baseline gap under inline images */
+}
