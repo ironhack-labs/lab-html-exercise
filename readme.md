@@ -2,7 +2,7 @@
 
 # Module Exercise: HTML & CSS
 
-## Learning Goals
+## Learning Goals for IRONHACKERS!
 
 In this exercise, the goal is to apply as many as possible of the concepts you've just learned:
 
