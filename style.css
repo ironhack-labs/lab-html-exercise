@@ -37,8 +37,6 @@ nav a {
 
 .logo {
     width: 90px;
-    padding: 5 px;
-    margin: 5px;
 
 }
 
@@ -48,7 +46,6 @@ nav a {
 }
 
 form {
-  margin: 0 80px;
   padding: 10px;
   display: flex;
   flex-direction: row;
@@ -57,13 +54,18 @@ form {
 
 div > form > label {
     background-color: rgba(0,0,0,.05);
+    border-color: black;
     
 }
 
+/*affects only the search bar>*/
 div > form > input {
     background-color: rgba(0,0,0,.05);
-    padding: 0.5rem;
+    padding: 15.5px;
     border: none;
+    width: 1100px;
+    
+
    
 
 } 
@@ -72,12 +74,16 @@ form > button {
     background-color: #fb3e44;
     color: white;
     border: none;
-    padding: 0.5rem;
+    padding: 15px;
 }
 
 a {
   text-decoration: none;
   color: black;
+}
+
+.join-link {
+  padding: 5px;
 }
 
 #build {
@@ -91,12 +97,13 @@ a {
 
 h1 {
   font-size: 100px;
-  margin-top: 10px 0;
+  margin: 10px 0 10px 0;
   padding: 10px 0;
 }
 
 article {
   text-align: center;
+  margin: 15px 0 35px 0;
 }
 
 .plans-link {
@@ -106,7 +113,8 @@ article {
   padding: 10px 20px;
   margin: 0 10px;
   color: white;
-  box-shadow:  8px 8px 0 rgba(251,59,73,.2);
+  box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+  /*box-shadow:  8px 8px 0 rgba(251,59,73,.2);*/
 }
 
 .join-free {
@@ -114,15 +122,14 @@ article {
   background-color: white;
   border: none;
   padding: 10px 20px;
-  margin: 0 10px;
 }
 
 .build-buttons {
-  margin: 20px;
+  margin: 30px 0 0 0;
 }
 
 #open-source {
-  height: 600px;
+  height: 450px;
   margin: 55px 0;
   display: flex;
   flex-direction: column;
@@ -132,13 +139,16 @@ article {
 
 .triangle-hexagon {
   width: 200px;
+  margin: 0 0 10px 0;
+  
 }
-#open-source h3{
+#open-source h2{
   background-color:  rgba(255,204,53,.4);
   transform: skew(9deg,0deg);
-  font-style: italic
+  font-style: italic;
+  margin: 35px 0 15px 0;
+  
 }
-
 
 
 .content {
@@ -173,13 +183,14 @@ article {
 }
 
 .features button {
-  width: 10%;
+  width: 20%;
   background-color: black;
   border: none;
   box-shadow: 8px 8px 0 rgba(128,83,35,.2);
   padding: 10px 30px;
   margin: 50px;
-  
+  font-weight: 700;
+  font-size: 14px;
 }
 
 
