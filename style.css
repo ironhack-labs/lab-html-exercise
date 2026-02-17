@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins";
+  color: black;
+}
+
+/* CSS 2 | Header and navbar (README snippet) */
+header > div {
+  padding: 0 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+}
+
+nav {
+  width: 600px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+.blackHeart {
+  width: 20px;
+  margin-right: 1rem;
+}
+
+/* Ajustes para que el header se vea como el ejemplo */
+header > div:first-child > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+header > div:last-child {
+  border-bottom: none;
+  gap: 20px;
+  padding: 10px 25px;
+}
+
+header > div:last-child > img {
+  height: 30px;
+}
+
+/* Search form */
+header form {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.05);
+  padding: 6px 10px;
+  gap: 10px;
+}
+
+header form label {
+  display: none;
+}
+
+header form img {
+  width: 18px;
+}
+
+header form input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+header form button {
+  border: none;
+  background: #fb3e44;
+  color: white;
+  padding: 10px 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Join / Log In */
+header > div:last-child > a {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+}
+
+header > div:last-child > a:first-of-type {
+  border: 1px solid #ccc;
+  padding: 6px 12px;
+}
+
+/* CSS 3 | section 1 */
+#section-1 {
+  height: 600px;
+  background: rgba(232, 217, 217, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 22px;
+  text-align: center;
+  padding: 0 20px;
+}
+
+#section-1 h1 {
+  font-size: 70px;
+  font-weight: 700;
+}
+
+#section-1 p {
+  max-width: 650px;
+  color: #555;
+}
+
+#section-1 > div {
+  display: flex;
+  gap: 20px;
+}
+
+#section-1 > div a {
+  text-decoration: none;
+  font-weight: 600;
+  padding: 14px 36px;
+}
+
+#section-1 > div a:first-child {
+  background: #fb3b49;
+  color: white;
+  box-shadow: 8px 8px 0 rgba(251, 59, 73, 0.2);
+}
+
+#section-1 > div a:last-child {
+  background: white;
+  color: black;
+  border: 1px solid #ddd;
+}
+
+/* CSS 4 | section 2 */
+#section-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 22px;
+  text-align: center;
+  padding: 90px 20px;
+}
+
+#section-2 img {
+  width: 150px;
+}
+
+#section-2 h2 {
+  position: relative;
+  display: inline-block;
+  padding: 6px 14px;
+  font-style: italic;
+}
+
+#section-2 h2::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 204, 53, 0.4);
+  transform: skew(9deg, 0deg);
+  z-index: -1;
+}
+
+#section-2 p {
+  max-width: 760px;
+  color: #555;
+  font-size: 14px;
+}
+
+/* CSS 5 | section 3 */
+#section-3 {
+  padding: 90px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 45px;
+  text-align: center;
+}
+
+#section-3 > div {
+  max-width: 1100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+#section-3 article {
+  width: 220px;
+  text-align: left;
+}
+
+#section-3 article img {
+  width: 40px;
+  margin-bottom: 10px;
+}
+
+#section-3 h3 {
+  color: #ed1c24;
+  margin-bottom: 10px;
+}
+
+#section-3 p {
+  color: #555;
+  font-size: 14px;
+}
+
+#section-3 > a {
+  text-decoration: none;
+  background: black;
+  color: white;
+  padding: 16px 50px;
+  font-weight: 600;
+  box-shadow: 8px 8px 0 rgba(128, 83, 35, 0.2);
+}
