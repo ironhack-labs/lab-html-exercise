@@ -74,20 +74,22 @@ nav a {
   display: inline-flex;
   align-items: center;
   box-sizing: border-box;
-  padding: 5px 15px;
+  padding: 7px 15px 5px 35px;
   font-size: 12px;
   font-family: 'Courier New', Courier, monospace;
+  color: rgba(0,0,0,.5);
+  background: url('./images/magnifying-glass.png') 10px 10px / 16px 16px no-repeat #F2F2F2;
 }
 
 .searchForm input::placeholder{
-  color:#858585;
+  color: rgba(0,0,0,.5);
   font-family: 'Courier New', Courier, monospace;
 }
 
 .searchForm button{
   flex: 0 0 auto;
   border: none;
-  background: #E84F4C;
+  background: #fb3e44;
   color: #ffffff;
   height: 34px;
   display: inline-flex;
@@ -123,7 +125,7 @@ nav a {
 
 #hero {
   padding: 70px 100px 100px;
-  background: #F7F4F4;
+  background: rgba(232,217,217,.3);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -132,13 +134,13 @@ nav a {
 }
 
 #hero h1 {
-  font-size: 42px;
+  font-size: 60px;
   font-weight:bold;
   line-height: 1.15;
   margin-bottom: 0;
 }
 
-#hero p {
+#hero article {
   max-width: 440px;
 }
 
@@ -152,7 +154,8 @@ nav a {
   font-weight: bold;
   text-decoration: none;
   color: #ffffff;
-  background: #E84D50;
+  background: #FB3B49;
+  box-shadow: 8px 8px 0 rgba(251,59,73,.2);
 }
 
 .heroJoinLink {
@@ -171,24 +174,27 @@ nav a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 40px;
+  gap: 35px;
   padding: 70px 100px;
   text-align: center;
 }
 
 #banner h2 {
   margin: 0;
-  background: #FCEBBB;
+  background: rgba(255,204,53,.4);
   padding-inline: 25px;
+  transform: skew(9deg,0deg);
+  font-style: italic;
 }
 
-#banner p {
-  margin: 0;
+#banner article {
+  margin: 5px 0 0;
   max-width: 790px;
 }
 
 .triangleHexagon {
-  width: 180px;
+  width: 200px;
+  margin-bottom: 20px;
 }
 
 #features {
@@ -196,7 +202,7 @@ nav a {
   flex-direction: column;
   align-items: center;
   gap: 40px;
-  padding: 40px 100px 40px;
+  padding: 40px 100px 70px;
 }
 
 #features .featuresGrid {
@@ -209,7 +215,7 @@ nav a {
 }
 
 #features h3 {
-  color: #DC3E39;
+  color: #ED1C24;
   font-size: 16px;
   margin-bottom: 26px;
 }
@@ -241,4 +247,5 @@ nav a {
   justify-content: center;
   align-items: center;
   text-decoration: none;
+  box-shadow: 8px 8px 0 rgba(128,83,35,.2);
 }
