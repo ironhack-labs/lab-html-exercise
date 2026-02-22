@@ -167,8 +167,51 @@ nav a {
   color: #000000;
 }
 
+#banner{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding: 70px 100px;
+  text-align: center;
+}
+
+#banner h2 {
+  margin: 0;
+  background: #FCEBBB;
+  padding-inline: 25px;
+}
+
+#banner p {
+  margin: 0;
+  max-width: 790px;
+}
+
 .triangleHexagon {
   width: 180px;
+}
+
+#features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding: 40px 100px 40px;
+}
+
+#features .featuresGrid {
+  display: flex;
+  gap: 50px;
+}
+
+#features .featuresGrid > div {
+  flex: 1;
+}
+
+#features h3 {
+  color: #DC3E39;
+  font-size: 16px;
+  margin-bottom: 26px;
 }
 
 .zeroConfiguration{
@@ -185,4 +228,17 @@ nav a {
 
 .npmAudit{
   width: 30px;
+}
+
+.featuresCreateOrgLink {
+  width: 200px;
+  height: 40px;
+  background: #000;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
 }
