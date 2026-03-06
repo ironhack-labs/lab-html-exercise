@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* Top line */
+
+.top-line{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: baseline;
+    border-bottom: 1px solid rgb(223, 221, 221);
+}
+.left-side-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+#heart{
+    height: 12.5px;
+    margin: 0 20px 0 10px;
+}
+.left-side-top h3 a{
+    text-decoration: none;
+    color: black;
+}
+.top-line ul{
+    display: flex;
+    list-style-type: none;
+}
+.top-line ul li a{
+    text-decoration: none;
+    margin: 0 10px;
+    color: black;
+    font-weight: bold;
+}
+.top-line ul li a:hover{
+    color: rgb(248, 62, 62);
+}
+
+/* Navigation Bar */
+
+.navbar{
+    display: flex;
+    margin: 5px 0;
+    border-bottom: 1px solid rgb(223, 221, 221);
+    padding-bottom: 7.5px;
+    box-shadow: 0px 3px 3px 1px rgb(200, 199, 199);
+}
+#logo{
+    height: 25px;
+    margin: 10px 20px;
+}
+form{
+    background-color: #f6f6f6;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    width: 70%;
+}
+span{
+    margin: 0 15px;
+}
+.search-input{
+    border: none;
+    background-color: #f6f6f6;
+    width: 90%;
+    padding: 10px 0;
+}
+#btn-search{
+    background-color: rgb(248, 62, 62);
+    padding: 14px;
+    border: none;
+    color: white;
+    font-size: 1.1rem
+}
+#btn-search:hover{
+    cursor: pointer;
+}
+#btn-join{
+    padding: 7.5px 15px;
+    background-color: white;
+    border: 1px solid rgb(202, 202, 202);
+    border-top: 1px solid rgb(92, 91, 91);
+    margin: 0 20px;
+    font-size: 0.9rem;
+}
+#btn-join:hover{
+    cursor: pointer;
+}
+#btn-login{
+    border: none;
+    background-color: white;
+    font-size: 0.9rem;
+}
+#btn-login:hover{
+    cursor: pointer;
+}
+
+/* Header */
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 150px;
+    background-color: rgb(238, 238, 238);
+}
+h1{
+    font-size: 4.3rem;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+header p{
+    width: 40%;
+    text-align: justify;
+    text-align: center;
+    margin-bottom: 50px;
+}
+#btn-plans{
+    padding: 15px 45px;
+    font-size: 1.3rem;
+    background-color: rgb(248, 62, 62);
+    color: white;
+    font-weight: bold;
+    border: none;
+    box-shadow: 5px 5px 10px rgb(222, 154, 154);
+    margin-right: 30px;
+}
+#btn-plans:hover{
+    cursor: pointer;
+}
+#btn-joinFree{
+    padding: 15px 45px;
+    font-size: 1.3rem;
+    border: none;
+    background-color: white;
+    font-weight: bold;
+    margin-left: 30px;
+}
+#btn-joinFree:hover{
+    cursor: pointer;
+}
+
+/* Main */
+
+#triangle{
+    height: 220px;
+    margin: 80px;
+}
+main{
+    display: flex;
+    flex-direction: column;
+}
+main h3{
+    text-align: center;
+    font-size: 2rem;
+    background-color: rgba(253, 253, 152, 0.827);
+    width: 60%;
+    padding: 5px 0;
+    margin: auto;
+    margin-bottom: 40px;
+}
+main p{
+    text-align: justify;
+    text-align: center;
+    width: 55%;
+    margin: auto;
+    line-height: 25px;
+    margin-bottom: 100px;
+    font-weight: lighter;
+}
+
+/* Footer */
+
+.part-1{
+    display: flex;
+    width: 85%;
+    justify-content: space-around;
+    margin: auto;
+    margin-bottom: 90px;
+}
+#configuration{
+    height: 30px;
+    margin-bottom: 15px;
+}
+#management{
+    height: 30px;
+    margin-bottom: 15px;
+}
+#features{
+    height: 30px;
+    margin-bottom: 15px;
+}
+#audit{
+    height: 30px;
+    margin-bottom: 15px;
+}
+h4{
+    color: rgb(248, 62, 62);
+    margin-bottom: 25px;
+}
+.footer-art p{
+    line-height: 25px;
+    width: 90%;
+    font-weight: lighter;
+}
+.part-2{
+    display: flex;
+    justify-content: center;
+}
+#btn-create{
+    padding: 20px 120px;
+    margin-bottom: 100px;
+    background-color: black;
+    color: #f6f6f6;
+    font-weight: bold;
+    font-size: 1.3rem;
+    box-shadow: 5px 5px 10px #8a8989;
+}
+#btn-create:hover{
+    color: rgb(248, 62, 62);
+    cursor: pointer;
+}
