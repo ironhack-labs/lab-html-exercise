@@ -1,0 +1,280 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #263238;
+  background: linear-gradient(#8fd8ff 0%, #c7efff 58%, #7fd26a 58%, #64bb58 100%);
+}
+
+.scene {
+  position: relative;
+  width: min(92vw, 760px);
+  height: min(82vh, 520px);
+  display: grid;
+  place-items: end center;
+}
+
+h1 {
+  position: absolute;
+  top: 26px;
+  left: 50%;
+  margin: 0;
+  transform: translateX(-50%);
+  font-size: clamp(2rem, 5vw, 4rem);
+  color: #17324d;
+  text-align: center;
+}
+
+.sun {
+  position: absolute;
+  top: 28px;
+  right: 42px;
+  width: 86px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: #ffd95a;
+  box-shadow: 0 0 38px #ffd95a;
+}
+
+.cloud {
+  position: absolute;
+  width: 120px;
+  height: 36px;
+  border-radius: 999px;
+  background: white;
+  opacity: 0.88;
+}
+
+.cloud::before,
+.cloud::after {
+  content: "";
+  position: absolute;
+  bottom: 12px;
+  border-radius: 50%;
+  background: white;
+}
+
+.cloud::before {
+  left: 18px;
+  width: 48px;
+  height: 48px;
+}
+
+.cloud::after {
+  right: 18px;
+  width: 62px;
+  height: 62px;
+}
+
+.cloud-one {
+  top: 88px;
+  left: 48px;
+  animation: drift 9s ease-in-out infinite;
+}
+
+.cloud-two {
+  top: 146px;
+  right: 92px;
+  transform: scale(0.72);
+  animation: drift 11s ease-in-out infinite reverse;
+}
+
+.stage {
+  position: relative;
+  width: min(88vw, 600px);
+  height: 280px;
+}
+
+.dog {
+  position: absolute;
+  left: 50%;
+  bottom: 58px;
+  width: 190px;
+  height: 140px;
+  transform: translateX(-50%);
+  animation: jump 1.25s ease-in-out infinite;
+}
+
+.body {
+  position: absolute;
+  left: 36px;
+  bottom: 26px;
+  width: 104px;
+  height: 58px;
+  border-radius: 42px 48px 38px 38px;
+  background: #f4b75f;
+}
+
+.spot {
+  position: absolute;
+  top: 10px;
+  left: 42px;
+  width: 30px;
+  height: 22px;
+  border-radius: 50%;
+  background: #ffffff;
+}
+
+.head {
+  position: absolute;
+  right: 8px;
+  bottom: 62px;
+  width: 72px;
+  height: 66px;
+  border-radius: 46% 54% 42% 48%;
+  background: #f4b75f;
+}
+
+.ear {
+  position: absolute;
+  left: 8px;
+  top: -14px;
+  width: 24px;
+  height: 46px;
+  border-radius: 16px 16px 20px 20px;
+  background: #7b4a2a;
+  transform: rotate(18deg);
+  transform-origin: top center;
+  animation: ear-flop 1.25s ease-in-out infinite;
+}
+
+.eye {
+  position: absolute;
+  top: 22px;
+  right: 20px;
+  width: 8px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: #1f1f1f;
+}
+
+.snout {
+  position: absolute;
+  right: -18px;
+  bottom: 12px;
+  width: 38px;
+  height: 26px;
+  border-radius: 18px;
+  background: #fff3dd;
+}
+
+.nose {
+  position: absolute;
+  right: -2px;
+  top: 8px;
+  width: 12px;
+  height: 10px;
+  border-radius: 50%;
+  background: #222222;
+}
+
+.tail {
+  position: absolute;
+  left: 16px;
+  bottom: 72px;
+  width: 56px;
+  height: 16px;
+  border-radius: 999px;
+  background: #f4b75f;
+  transform: rotate(-34deg);
+  transform-origin: right center;
+  animation: wag 0.35s ease-in-out infinite alternate;
+}
+
+.leg {
+  position: absolute;
+  bottom: 8px;
+  width: 20px;
+  height: 46px;
+  border-radius: 999px;
+  background: #d98f43;
+}
+
+.leg-front {
+  right: 48px;
+  transform: rotate(-18deg);
+}
+
+.leg-back {
+  left: 56px;
+  transform: rotate(20deg);
+}
+
+.shadow {
+  position: absolute;
+  left: 50%;
+  bottom: 38px;
+  width: 170px;
+  height: 24px;
+  border-radius: 50%;
+  background: rgb(33 80 39 / 28%);
+  transform: translateX(-50%);
+  animation: shadow-pulse 1.25s ease-in-out infinite;
+}
+
+@keyframes jump {
+  0%,
+  100% {
+    transform: translate(-50%, 0) rotate(-2deg);
+  }
+
+  45% {
+    transform: translate(-50%, -112px) rotate(7deg);
+  }
+
+  60% {
+    transform: translate(-50%, -112px) rotate(7deg);
+  }
+}
+
+@keyframes shadow-pulse {
+  0%,
+  100% {
+    transform: translateX(-50%) scale(1);
+    opacity: 0.55;
+  }
+
+  50% {
+    transform: translateX(-50%) scale(0.55);
+    opacity: 0.2;
+  }
+}
+
+@keyframes wag {
+  from {
+    transform: rotate(-44deg);
+  }
+
+  to {
+    transform: rotate(-18deg);
+  }
+}
+
+@keyframes ear-flop {
+  0%,
+  100% {
+    transform: rotate(18deg);
+  }
+
+  50% {
+    transform: rotate(34deg);
+  }
+}
+
+@keyframes drift {
+  0%,
+  100% {
+    translate: 0 0;
+  }
+
+  50% {
+    translate: 28px 0;
+  }
+}
