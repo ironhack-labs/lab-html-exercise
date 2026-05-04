@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body {
+    font-family: 'Poppins';
+    margin: 0;
+    padding: 0;
+}
+
+/* ---- HEADER ---- */
+
+header > div {
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+}
+
+nav {
+    width: 600px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.blackHeart {
+    width: 20px;
+    margin-right: 1rem;
+}
+
+/* form inside header bottom row */
+header form {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    margin: 0 20px;
+}
+
+header form img {
+    width: 20px;
+    background-color: rgba(0,0,0,.05);
+    padding: 5px;
+}
+
+header form input {
+    background-color: rgba(0,0,0,.05);
+    border: none;
+    padding: 5px 10px;
+    width: 300px;
+    outline: none;
+    font-family: 'Poppins';
+}
+
+header form button {
+    background-color: #fb3e44;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+header .header-buttons a {
+    text-decoration: none;
+    color: black;
+    margin-left: 15px;
+}
+
+/* npm logo in bottom row */
+header > div:last-child > img {
+    width: 60px;
+}
+
+/* ---- SECTION 1: HERO ---- */
+
+#hero {
+    height: 600px;
+    background-color: rgba(232,217,217,.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+#hero h1 {
+    font-size: 40px;
+}
+
+#hero p {
+    font-size: 16px;
+    max-width: 600px;
+}
+
+#hero a {
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 5px;
+}
+
+#hero a:first-of-type {
+    background-color: #FB3B49;
+    color: white;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+}
+
+#hero a:last-of-type {
+    border: 1px solid lightgray;
+    color: black;
+}
+
+/* ---- SECTION 2: ABOUT ---- */
+
+#about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+    text-align: center;
+}
+
+#about img {
+    width: 250px;
+    margin-bottom: 30px;
+}
+
+#about div {
+    max-width: 600px;
+}
+
+#about h2 {
+    background-color: rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+    font-style: italic;
+    display: inline-block;
+    padding: 0 5px;
+    margin-bottom: 20px;
+}
+
+/* ---- SECTION 3: FEATURES ---- */
+
+#features {
+    text-align: center;
+    padding: 60px;
+}
+
+#features > h2 {
+    color: #ED1C24;
+    margin-bottom: 40px;
+}
+
+#features > div {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+#features > div > div {
+    max-width: 200px;
+    text-align: left;
+}
+
+#features h3 {
+    color: #ED1C24;
+}
+
+#features img {
+    width: 60px;
+    margin-bottom: 10px;
+}
+
+#features > a {
+    background-color: #FB3B49;
+    color: white;
+    text-decoration: none;
+    padding: 12px 30px;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+}
