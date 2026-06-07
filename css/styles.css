@@ -1,0 +1,485 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* ==============================
+   Custom Properties
+================================= */
+
+:root {
+    /* Colors */
+    --npm-color-white: #ffffff;
+    --npm-color-black: #000000;
+    --npm-color-primary: #fb3b49;
+    --npm-color-secondary: #ed1c24;
+    --npm-color-hero-bg: rgba(232, 217, 217, 0.3);
+    --npm-color-heading-bg: rgba(255, 204, 53, 0.4);
+    --npm-color-form-bg: rgba(0, 0, 0, 0.05);
+    --npm-color-border: lightgray;
+    --npm-color-shadow-primary: rgba(251, 59, 73, 0.2);
+    --npm-color-shadow-dark: rgba(128, 83, 35, 0.2);
+    --npm-color-text: #000000;
+    --npm-color-text-light: rgba(0, 0, 0, 0.7);
+    --npm-color-text-muted: rgba(0, 0, 0, 0.5);
+
+    /* Typography */
+    --npm-font-family: "Poppins", Arial, Helvetica, sans-serif;
+    --npm-font-size-xs: 12px;
+    --npm-font-size-sm: 14px;
+    --npm-font-size-md: 16px;
+    --npm-font-size-lg: 18px;
+    --npm-font-size-xl: 24px;
+    --npm-font-size-2xl: 32px;
+    --npm-font-size-display: 72px;
+    --npm-font-weight-regular: 400;
+    --npm-font-weight-bold: 700;
+    --npm-font-weight-black: 900;
+
+    /* Layout */
+    --npm-container-width: 1440px;
+    --npm-section-height: 600px;
+
+    /* Spacing */
+    --npm-space-xs: 8px;
+    --npm-space-sm: 16px;
+    --npm-space-md: 24px;
+    --npm-space-lg: 32px;
+    --npm-space-xl: 40px;
+    --npm-space-2xl: 48px;
+    --npm-space-3xl: 64px;
+    --npm-space-4xl: 80px;
+    --npm-space-5xl: 96px;
+}
+
+/* ==============================
+   Base
+================================= */
+
+body {
+    /* Visual */
+    background-color: var(--npm-color-white);
+
+    /* Typography */
+    color: var(--npm-color-text);
+    font-family: var(--npm-font-family);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ==============================
+   Object: Buttons
+================================= */
+
+.npm-button {
+    /* Display */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    /* Box Model */
+    min-width: 180px;
+    min-height: 56px;
+    padding: 0 var(--npm-space-xl);
+
+    /* Typography */
+    font-size: var(--npm-font-size-sm);
+    font-weight: var(--npm-font-weight-bold);
+    line-height: 1;
+}
+    .npm-button:hover {
+        /* Motion UI */
+        transition: .3s all;
+        cursor: pointer;
+    }
+
+.npm-button--primary {
+    /* Visual */
+    background-color: var(--npm-color-primary);
+    box-shadow: var(--npm-space-xs) var(--npm-space-xs) 0 var(--npm-color-shadow-primary);
+
+    /* Typography */
+    color: var(--npm-color-white);
+}
+    .npm-button--primary:hover {
+        /* Visual */
+        background-color: var(--npm-color-white);
+        box-shadow: var(--npm-space-xs) var(--npm-space-xs) 0 var(--npm-color-shadow-dark);
+
+        /* Typography */
+        color: var(--npm-color-black);
+    }
+
+.npm-button--secondary {
+    /* Visual */
+    background-color: var(--npm-color-white);
+
+    /* Typography */
+    color: var(--npm-color-black);
+}
+    .npm-button--secondary:hover {
+        /* Visual */
+        background-color: var(--npm-color-primary);
+        box-shadow: var(--npm-space-xs) var(--npm-space-xs) 0 var(--npm-color-shadow-primary);
+
+        /* Typography */
+        color: var(--npm-color-white);
+    }
+
+.npm-button--search {
+    /* Box Model */
+    min-width: auto;
+    min-height: 40px;
+    padding: 0 var(--npm-space-md);
+    border: 0;
+
+    /* Visual */
+    background-color: var(--npm-color-primary);
+
+    /* Typography */
+    color: var(--npm-color-white);
+}
+    .npm-button--search:hover {
+        /* Visual */
+        background-color: var(--npm-color-shadow-dark);
+
+        /* Typography */
+        color: var(--npm-color-black);
+    }
+
+.npm-button--dark {
+    /* Box Model */
+    min-width: 360px;
+    min-height: 56px;
+
+    /* Visual */
+    background-color: var(--npm-color-black);
+    box-shadow: var(--npm-space-xs) var(--npm-space-xs) 0 var(--npm-color-shadow-dark);
+
+    /* Typography */
+    color: var(--npm-color-white);
+}
+    .npm-button--dark:hover {
+        /* Visual */
+        background-color: var(--npm-color-primary);
+        box-shadow: var(--npm-space-xs) var(--npm-space-xs) 0 var(--npm-color-shadow-primary);
+
+        /* Typography */
+        color: var(--npm-color-white);
+    }
+
+/* ==============================
+   Header
+================================= */
+
+.npm-header {
+    /* Box Model */
+    border-bottom: 1px solid var(--npm-color-border);
+}
+
+.npm-header__top,
+.npm-header__main {
+    /* Display */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    /* Box Model */
+    max-width: var(--npm-container-width);
+    margin: 0 auto;
+    padding: 0 25px;
+}
+
+.npm-header__top {
+    /* Box Model */
+    min-height: 48px;
+    border-bottom: 1px solid var(--npm-color-border);
+}
+
+.npm-header__main {
+    /* Display */
+    gap: var(--npm-space-md);
+
+    /* Box Model */
+    min-height: 56px;
+}
+
+.npm-header__claim {
+    /* Display */
+    display: flex;
+    align-items: center;
+
+    /* Typography */
+    font-size: var(--npm-font-size-xs);
+}
+
+.npm-header__claim-icon {
+    /* Box Model */
+    width: 20px;
+    margin-right: 1rem;
+}
+
+.npm-header__logo img {
+    /* Box Model */
+    width: 76px;
+}
+
+/* ==============================
+   Navigation
+================================= */
+
+.npm-nav {
+    /* Box Model */
+    width: 600px;
+}
+
+.npm-nav__list,
+.npm-user-nav__list {
+    /* Display */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.npm-nav__link,
+.npm-user-nav__link {
+    /* Typography */
+    color: var(--npm-color-black);
+    font-size: var(--npm-font-size-xs);
+    font-weight: var(--npm-font-weight-bold);
+    text-decoration: none;
+}
+
+    .npm-nav__link:hover,
+    .npm-user-nav__link:hover {
+        /* Typography */
+        color: var(--npm-color-primary);
+        
+        /* Motion UI */
+        transition: .3s all;
+    }
+
+
+.npm-user-nav__list {
+    /* Display */
+    gap: var(--npm-space-md);
+}
+
+.npm-user-nav__link--border {
+    /* Box Model */
+    padding: var(--npm-space-xs) var(--npm-space-md);
+    border: 1px solid var(--npm-color-border);
+}
+
+/* ==============================
+   Search
+================================= */
+
+.npm-search {
+    /* Display */
+    display: flex;
+    align-items: center;
+    flex: 1;
+
+    /* Box Model */
+    min-height: 40px;
+
+    /* Visual */
+    background-color: var(--npm-color-form-bg);
+}
+
+.npm-search__icon {
+    /* Box Model */
+    width: 18px;
+    margin-left: var(--npm-space-sm);
+}
+
+.npm-search__input {
+    /* Display */
+    flex: 1;
+
+    /* Box Model */
+    min-height: 40px;
+    padding: 0 var(--npm-space-sm);
+    border: 0;
+
+    /* Visual */
+    background-color: transparent;
+
+    /* Typography */
+    color: var(--npm-color-text-muted);
+    font-size: var(--npm-font-size-xs);
+}
+
+/* ==============================
+   Main
+================================= */
+
+.npm-main {
+    /* Box Model */
+    max-width: var(--npm-container-width);
+    margin: 0 auto;
+    padding: 0 var(--npm-space-lg) var(--npm-space-3xl);
+}
+
+/* ==============================
+   Hero
+================================= */
+
+.npm-hero {
+    /* Display */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    /* Box Model */
+    min-height: var(--npm-section-height);
+    padding: var(--npm-space-5xl) var(--npm-space-lg);
+
+    /* Visual */
+    background-color: var(--npm-color-hero-bg);
+
+    /* Typography */
+    text-align: center;
+}
+
+.npm-hero__title {
+    /* Box Model */
+    margin-bottom: var(--npm-space-2xl);
+
+    /* Typography */
+    font-size: var(--npm-font-size-display);
+    font-weight: var(--npm-font-weight-bold);
+    line-height: 1;
+}
+
+.npm-hero__content {
+    /* Display */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.npm-hero__text {
+    /* Box Model */
+    max-width: 560px;
+    margin-bottom: var(--npm-space-3xl);
+
+    /* Typography */
+    font-size: var(--npm-font-size-lg);
+    line-height: 1.45;
+}
+
+.npm-hero__actions {
+    /* Display */
+    display: flex;
+    gap: var(--npm-space-xl);
+}
+
+/* ==============================
+   Intro
+================================= */
+
+.npm-intro {
+    /* Display */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    /* Box Model */
+    min-height: 520px;
+    padding: var(--npm-space-4xl) var(--npm-space-lg);
+
+    /* Typography */
+    text-align: center;
+}
+
+.npm-intro__image {
+    /* Box Model */
+    width: 220px;
+    margin-bottom: var(--npm-space-3xl);
+}
+
+.npm-intro__title {
+    /* Box Model */
+    margin-bottom: var(--npm-space-md);
+    padding: 0 var(--npm-space-xl);
+
+    /* Visual */
+    background-color: var(--npm-color-heading-bg);
+
+    /* Typography */
+    font-size: var(--npm-font-size-2xl);
+    font-style: italic;
+    font-weight: var(--npm-font-weight-bold);
+    line-height: 1.2;
+    transform: skew(9deg, 0deg);
+}
+
+.npm-intro__text {
+    /* Box Model */
+    max-width: 720px;
+
+    /* Typography */
+    color: var(--npm-color-text-light);
+    font-size: var(--npm-font-size-sm);
+    line-height: 1.45;
+}
+
+/* ==============================
+   Features
+================================= */
+
+.npm-features {
+    /* Display */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: var(--npm-space-3xl);
+
+    /* Box Model */
+    padding: var(--npm-space-4xl) var(--npm-space-5xl) 0;
+}
+
+.npm-feature {
+    /* Display */
+    flex: 0 1 220px;
+
+    /* Box Model */
+    min-width: 220px;
+}
+
+.npm-feature__icon {
+    /* Box Model */
+    width: 32px;
+    height: 32px;
+    margin-bottom: var(--npm-space-md);
+}
+
+.npm-feature__title {
+    /* Box Model */
+    margin-bottom: var(--npm-space-md);
+
+    /* Typography */
+    color: var(--npm-color-secondary);
+    font-size: var(--npm-font-size-sm);
+    font-weight: var(--npm-font-weight-bold);
+}
+
+.npm-feature__text {
+    /* Typography */
+    color: var(--npm-color-text-light);
+    font-size: var(--npm-font-size-sm);
+    line-height: 1.5;
+}
+
+.npm-features>.npm-button {
+    /* Box Model */
+    margin-top: var(--npm-space-3xl);
+}
