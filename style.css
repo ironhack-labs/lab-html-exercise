@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  padding: 0 5%;
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 4.5em;
+}
+
+h2 {
+  font-size: 2.5em;
+}
+
+h4 {
+  font-size: 1.1em;
+}
+
+p {
+  font-size: 1.1em;
+  width: 35%;
+  text-align: center;
+}
+/* HEADER SECTION */
+header > div {
+  padding: 15px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgb(245, 244, 244);
+}
+
+.bottom-header {
+  padding: 10px 25px;
+  box-shadow: 0px 0px 2px rgb(243, 242, 242);
+}
+
+header > div > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  width: 600px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+.blackHeart {
+  width:30px;
+  margin-right: 1rem;
+}
+/* HEADER BOTTOM */
+.logo {
+  width: 70px;
+}
+
+header > div > div{
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.search-bar-container {
+  flex:1;
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-color: rgb(229, 228, 228);
+  padding: 0px 0px 0 10px;
+  margin: 0 20px;
+}
+
+.search-icon{
+  width:20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.search-bar-container input {
+  width: 100%;
+  color: rgba(0,0,0);
+  font-size: 1.2em;
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+
+.search-bar-container input::placeholder {
+  font-size: 16px;
+  font-family: "Space Mono", monospace;
+}
+
+.search-bar-container button {
+  background-color: #fb3e44;
+  color: white;
+  padding: 10px 25px;
+  font-size:1em;
+  outline: none;
+  border: none;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.2em;
+}
+
+header .links a {
+  color: black;
+  font-size: 1em;
+  text-decoration: none;
+  padding: 2px 20px;
+  cursor: pointer;
+}
+
+header .links a:hover {
+  color: grey;
+}
+
+header .links a:first-child {
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid lightgrey;
+  border-bottom: 2px solid lightgrey;
+}
+
+/* HERO SECTION */
+.container {
+  height:600px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2em;
+ 
+}
+#hero {
+  background-color:rgba(232,217,217,.3)
+}
+
+#hero .links {
+gap: 3em;
+}
+
+.btn {
+  text-decoration: none;
+  color: black;
+  font-size: 1.2em;
+  font-weight: 600;
+  padding: 15px 50px;
+  background-color: white;
+  cursor: pointer;
+}
+
+#hero .links a:first-child {
+  color: white;
+  background-color: #FB3B49;
+  box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+}
+
+/* ABOUT SECTION */
+#about {
+  padding: 50px 0;
+  gap: 1.5em;
+}
+
+#about h2 {
+  position: relative;
+  padding: 0 30px;
+  font-style: italic;
+  color: black;
+  margin-top: 30px;
+}
+
+#about h2::after {
+  content: '';
+  position: absolute;
+  top: 7px;
+  left: 0;
+  height: 42px;
+  width: 100%;
+  background-color: rgba(255,204,53,.4);
+  transform: skew(9deg,0deg);
+  z-index: -999;
+}
+
+#about p {
+  width: 60% !important;
+  font-size: 1.1em;
+}
+
+#about img {
+  height: 230px;
+}
+
+/* FEATURE SECTION */
+#feature {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: max-content;
+  padding: 20px 0;
+}
+
+.feature-items-container {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  gap: 1em;
+}
+
+.feature-item {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 1em;
+  max-width: 250px;
+  padding: 1em;
+}
+
+.feature-item h4 {
+  color:  #ED1C24;
+}
+
+.feature-item p {
+  width: 100%;
+  font-size: 1.1em;
+  text-align: left;
+  margin-top: 10px;
+}
+
+.feature-item img {
+  width: 40px;
+}
+
+.create-an-org-btn {
+  padding: 15px 150px;
+  background-color: black;
+  color: white;
+  box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+  margin-top: 30px;
+}
+
