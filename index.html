@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
     <head>
-
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <header>
             <div>
                 <div>
-                    <img class="blackHeart" src="images/black-heart.png" alt="corazón negro">
+                    <img class="blackHeart" src="images/black-heart.png" alt="Black Heart">
                     <span> Nifty Penguin Magic </span>
                 </div>
                 <nav>
@@ -31,8 +31,8 @@
                     <input type="text" id="searchbar" name="search" placeholder="Search packages">
                     <button type="submit"> Search </button>
                 </form>
-                <a href="#">Join</a>
-                <a href="#">Log In</a>
+                <a class="join" href="#">Join</a>
+                <a class="logIn" href="#">Log In</a>
             </div>
         </header>
 
@@ -42,8 +42,8 @@
                     Essential JavaScript development tools that help you go to market faster and build powerful applications using modern open source code.
                 </article>
                 <div>
-                    <a href="#"> See plans </a>
-                    <a href="#"> Join free </a>
+                    <a class="seePlans" href="#"> See plans </a>
+                    <a class="joinFree" href="#"> Join for free </a>
                 </div>
             </section>
 
@@ -56,36 +56,39 @@
             </section>
 
             <section id="menu">
-                <div class="zeroConfiguration">
-                    <img class="zero" src="images/zero-configuration.svg" alt="A screen with a pointer">
-                    <h3> Zero configuration</h3>
-                    <article>
-                        Create an org, add your team, and start collaborating. Nothing to configure, set up, or manage.
-                    </article>
-                </div>
 
-                <div class="teamManagement">
-                    <img class="team" src="images/team-management.svg" alt="Three people forming a team">
-                    <h3> Team management</h3>
-                    <article>
-                        Control who has access to what modules within your team namespace using straightforward team management capabilities.
-                    </article>
-                </div>
+                <div class="options">
+                    <div class="zeroConfiguration">
+                        <img class="zero" src="images/zero-configuration.svg" alt="A screen with a pointer">
+                        <h3> Zero configuration</h3>
+                        <article>
+                            Create an org, add your team, and start collaborating. Nothing to configure, set up, or manage.
+                        </article>
+                    </div>
 
-                <div class="familiarFeatures">
-                    <img class="familiar" src="images/familiar-features.svg" alt="Balance scale with weights on both sides">
-                    <h3> Familiar features</h3>
-                    <article>
-                        npm Orgs has 100% parity with all the public npm registry features your developers already use.
-                    </article>
-                </div>
+                    <div class="teamManagement">
+                        <img class="team" src="images/team-management.svg" alt="Three people forming a team">
+                        <h3> Team management</h3>
+                        <article>
+                            Control who has access to what modules within your team namespace using straightforward team management capabilities.
+                        </article>
+                    </div>
 
-                <div class="npm audit">
-                    <img class="npm" src="images/npm-audit.svg" alt="binoculars">
-                    <h3>npm audit</h3>
-                    <artcile>
-                        Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer.
-                    </artcile>
+                    <div class="familiarFeatures">
+                        <img class="familiar" src="images/familiar-features.svg" alt="Balance scale with weights on both sides">
+                        <h3> Familiar features</h3>
+                        <article>
+                            npm Orgs has 100% parity with all the public npm registry features your developers already use.
+                        </article>
+                    </div>
+
+                    <div class="npm audit">
+                        <img class="npm" src="images/npm-audit.svg" alt="binoculars">
+                        <h3>npm audit</h3>
+                        <article>
+                            Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer.
+                        </article>
+                    </div>
                 </div>
                 <a href="#"> Create an Org</a>
             </section>
