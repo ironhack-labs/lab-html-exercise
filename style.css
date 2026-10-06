@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+
+/* =========================
+   GENERAL
+========================= */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  color: black;
+}
+
+a {
+  color: black;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+  width: 100%;
+}
+
+
+/* TOP BAR */
+
+.top-bar {
+  padding: 0 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+  height: 50px;
+}
+
+.magic {
+  display: flex;
+  align-items: center;
+}
+
+.blackHeart {
+  width: 20px;
+  margin-right: 1rem;
+}
+
+
+/* NAVIGATION */
+
+nav {
+  width: 600px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+}
+
+
+/* MAIN BAR */
+
+.main-bar {
+  padding: 20px 25px;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  border-bottom: 1px solid lightgray;
+}
+
+.npmLogo {
+  width: 80px;
+}
+
+
+/* SEARCH BAR */
+
+.search-form {
+  display: flex;
+  flex: 1;
+  height: 45px;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.magnifyingGlass {
+  width: 20px;
+  height: 20px;
+  margin: 0 15px;
+}
+
+.search-box input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  padding: 0 10px;
+  font-size: 15px;
+}
+
+.search-form button {
+  width: 110px;
+  border: none;
+  background-color: #fb3e44;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+
+/* ACCOUNT LINKS */
+
+.account-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.account-links a {
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.account-links .join {
+  border: 1px solid lightgray;
+  padding: 12px 25px;
+}
+
+
+/* =========================
+   SECTION 1
+========================= */
+
+#section1 {
+  height: 600px;
+  background-color: rgba(232, 217, 217, 0.3);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero {
+  width: 800px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero h1 {
+  font-size: 70px;
+  margin: 0 0 30px;
+  font-weight: bold;
+}
+
+.hero p {
+  font-size: 18px;
+  line-height: 1.7;
+  margin-bottom: 45px;
+}
+
+.hero-buttons {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.see-plans {
+  background-color: #fb3b49;
+  color: white;
+  text-decoration: none;
+  padding: 18px 55px;
+  font-weight: bold;
+  box-shadow: 8px 8px 0 rgba(251, 59, 73, 0.2);
+}
+
+.join-free {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+/* =========================
+   SECTION 2
+========================= */
+
+#section2 {
+  min-height: 600px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: white;
+}
+
+.company-intro {
+  width: 900px;
+
+  display: flex;
+  align-items: center;
+  gap: 80px;
+}
+
+.hexagon {
+  width: 300px;
+}
+
+.company-intro div {
+  flex: 1;
+}
+
+.company-intro h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.company-intro p {
+  line-height: 1.7;
+  margin-bottom: 40px;
+}
+
+.create-org {
+  display: inline-block;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  padding: 18px 45px;
+  font-weight: bold;
+  box-shadow: 8px 8px 0 rgba(128, 83, 35, 0.2);
+}
+
+
+/* =========================
+   SECTION 3
+========================= */
+
+#section3 {
+  min-height: 600px;
+  padding: 80px 60px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  background-color: rgba(255, 204, 53, 0.1);
+}
+
+.feature {
+  width: 30%;
+  text-align: center;
+  padding: 20px;
+}
+
+.feature > img {
+  width: 180px;
+  height: 180px;
+  object-fit: contain;
+}
+
+.feature h2 {
+  color: #ed1c24;
+  font-size: 25px;
+  margin: 30px 0 20px;
+}
+
+.feature p {
+  line-height: 1.7;
+}
+
+.feature .audit {
+  width: 120px;
+  height: 120px;
+  margin-top: 30
